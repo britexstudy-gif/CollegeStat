@@ -35,8 +35,8 @@ try {
   const seeded=await admin.from('comparison_lists').select('university_ids').eq('user_id',credentials.userId);
   assert.equal(seeded.data?.[0]?.university_ids.length,3);
   const request=await fetch('http://127.0.0.1:5173/api/admin',{method:'POST',headers:{'Content-Type':'application/json',Authorization:'Bearer '+login.data.session!.access_token},body:JSON.stringify({action:'save',entity:'universities',record:{name:''}})});
-  assert.equal(request.status,400,'Real admin JWT reaches server validation');
-  console.log('PASS hosted counts, real administrator login, profile data, private note isolation, anonymous write denial, seeded comparison, admin API validation');
+  assert.equal(request.status,403,'A password-only staff session cannot write through the admin API');
+  console.log('PASS hosted counts, real administrator login, profile data, private note isolation, anonymous write denial, seeded comparison, admin API MFA enforcement');
 } finally {
   if(noteId) { const removed=await admin.from('user_notes').delete().eq('id',noteId); assert.ok(!removed.error,'Temporary note cleanup'); }
   await admin.auth.signOut();

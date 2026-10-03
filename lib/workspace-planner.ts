@@ -31,3 +31,18 @@ export function prioritizeTasks(tasks: ChecklistItem[]) {
       );
     });
 }
+export function localPlanDate(date = new Date()) {
+  return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, "0")}-${String(date.getDate()).padStart(2, "0")}`;
+}
+export function plannerWeek(today: string, offset = 0) {
+  if (!validPlanDate(today)) return [];
+  const start = new Date(today + "T00:00:00Z");
+  start.setUTCDate(
+    start.getUTCDate() - ((start.getUTCDay() + 6) % 7) + offset * 7,
+  );
+  return Array.from({ length: 7 }, (_, i) => {
+    const d = new Date(start);
+    d.setUTCDate(d.getUTCDate() + i);
+    return d.toISOString().slice(0, 10);
+  });
+}

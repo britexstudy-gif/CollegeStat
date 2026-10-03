@@ -1,6 +1,7 @@
 import { readJSON } from "@/server/http";
 import { z } from "zod";
-import { authenticate, sameOrigin, serverError } from "@/server/config";
+import { sameOrigin, serverError } from "@/server/config";
+import { adminAccess } from "@/server/admin-access";
 import { entitySchemas, Entity } from "@/services/admin-schema";
 import { observationSchema } from "@/lib/research";
 const requestSchema = z.discriminatedUnion("action", [
@@ -34,28 +35,8 @@ const requestSchema = z.discriminatedUnion("action", [
 ]);
 export async function POST(request: Request) {
   if (!sameOrigin(request)) return new Response(null, { status: 403 });
-  const auth = await authenticate(request);
-  if (!auth)
-    return Response.json({ error: "Sign in required" }, { status: 401 });
-  const { data: profile } = await auth.db
-    .from("profiles")
-    .select("role")
-    .eq("id", auth.user.id)
-    .single();
-  if (profile?.role !== "admin")
-    return Response.json({ error: "Administrator required" }, { status: 403 });
   try {
-    const budget = await auth.db.rpc("consume_admin_limit");
-    if (budget.error)
-      return Response.json(
-        { error: "Administrative rate limiting unavailable" },
-        { status: 503 },
-      );
-    if (!budget.data)
-      return Response.json(
-        { error: "Administrative limit reached" },
-        { status: 429, headers: { "Retry-After": "60" } },
-      );
+    const auth = await adminAccess(request, true);
     const parsed = requestSchema.safeParse(await readJSON(request, 1000000));
     if (!parsed.success)
       return Response.json(

@@ -34,10 +34,12 @@ import { getSupabase } from "@/lib/supabase/client";
 import { universitiesByIds } from "@/lib/supabase/catalogue";
 import { loadWorkspace, emptyWorkspace, Workspace } from "@/services/workspace";
 import { STAFF_PATH } from "@/lib/staff-route";
+import { PlannerWeek } from "@/components/college/planner-week";
 import {
   dueLabel,
   prioritizeTasks,
   validPlanDate,
+  localPlanDate,
 } from "@/lib/workspace-planner";
 export default function WorkspacePage() {
   const s = useCollege(),
@@ -52,7 +54,8 @@ export default function WorkspacePage() {
     [task, setTask] = useState(""),
     [taskDue, setTaskDue] = useState(""),
     [taskBusy, setTaskBusy] = useState(false),
-    [error, setError] = useState("");
+    [error, setError] = useState(""),
+    [focusDay, setFocusDay] = useState("");
   const userId = s.user?.id;
   const revision = useRef(0);
   const data = owner === userId ? storedData : emptyWorkspace;
@@ -181,7 +184,7 @@ export default function WorkspacePage() {
         />
       </div>
     );
-  const today = new Date().toISOString().slice(0, 10);
+  const today = localPlanDate();
   const upcoming = [
     ...data.saved.flatMap((v) =>
       v.deadline
@@ -232,9 +235,11 @@ export default function WorkspacePage() {
       })),
   ]
     .filter((item) => validPlanDate(item.date) && item.date >= today)
-    .sort((a, b) => a.date.localeCompare(b.date))
-    .slice(0, 5);
+    .sort((a, b) => a.date.localeCompare(b.date));
   const priorityTasks = prioritizeTasks(data.checklist);
+  const focusedTasks = focusDay
+    ? priorityTasks.filter((t) => t.due_at === focusDay)
+    : priorityTasks;
   const completed = data.checklist.filter((t) => t.done).length;
   const progress = data.checklist.length
     ? Math.round((completed / data.checklist.length) * 100)
@@ -331,11 +336,25 @@ export default function WorkspacePage() {
           ))}
         </div>
         {dashboard && (
+          <PlannerWeek
+            today={today}
+            dates={[
+              ...upcoming.map((v) => v.date),
+              ...priorityTasks
+                .filter((t) => validPlanDate(t.due_at) && t.due_at < today)
+                .map((t) => t.due_at!),
+            ]}
+            selected={focusDay}
+            onSelect={setFocusDay}
+          />
+        )}
+        {dashboard && (
           <section className="student-summary">
             <div className="planner-progress">
               <div className="planner-heading">
                 <span>
-                  <ListChecks size={18} /> Your next steps
+                  <ListChecks size={18} />{" "}
+                  {focusDay ? "Scheduled tasks" : "Your next steps"}
                 </span>
                 <strong>{progress}%</strong>
               </div>
@@ -360,7 +379,12 @@ export default function WorkspacePage() {
                 />
               </div>
               <div className="planner-priorities">
-                {priorityTasks.slice(0, 3).map((t) => (
+                {focusDay && (
+                  <button className="text-link" onClick={() => setFocusDay("")}>
+                    Show all upcoming tasks
+                  </button>
+                )}
+                {focusedTasks.slice(0, 4).map((t) => (
                   <div key={t.id}>
                     <Checkbox
                       aria-label={"Complete " + t.title}
@@ -389,12 +413,14 @@ export default function WorkspacePage() {
                     </span>
                   </div>
                 ))}
-                {!priorityTasks.length && (
+                {!focusedTasks.length && (
                   <p>
                     <CheckCircle2 size={17} />{" "}
-                    {data.checklist.length
-                      ? "All tasks complete. Ready for the next step?"
-                      : "Add a task to start your application plan."}
+                    {focusDay
+                      ? "No open tasks scheduled for this day."
+                      : data.checklist.length
+                        ? "All tasks complete. Ready for the next step?"
+                        : "Add a task to start your application plan."}
                   </p>
                 )}
               </div>
@@ -430,27 +456,32 @@ export default function WorkspacePage() {
               <h2>
                 <CalendarDays size={18} /> Upcoming dates
               </h2>
-              {upcoming.map((item) => (
-                <Link key={item.id} href={item.href}>
-                  <span className="planner-date">
-                    <time dateTime={item.date}>
-                      {new Intl.DateTimeFormat("en", {
-                        month: "short",
-                        day: "numeric",
-                        timeZone: "UTC",
-                      }).format(new Date(item.date))}
-                    </time>
-                  </span>
-                  <span>
-                    {item.name}
-                    <small>
-                      {item.label} · {dueLabel(item.date, today)}
-                    </small>
-                  </span>
-                  <ArrowRight size={14} />
-                </Link>
-              ))}
-              {!upcoming.length && (
+              {upcoming
+                .filter((item) => !focusDay || item.date === focusDay)
+                .slice(0, 4)
+                .map((item) => (
+                  <Link key={item.id} href={item.href}>
+                    <span className="planner-date">
+                      <time dateTime={item.date}>
+                        {new Intl.DateTimeFormat("en", {
+                          month: "short",
+                          day: "numeric",
+                          timeZone: "UTC",
+                        }).format(new Date(item.date))}
+                      </time>
+                    </span>
+                    <span>
+                      {item.name}
+                      <small>
+                        {item.label} · {dueLabel(item.date, today)}
+                      </small>
+                    </span>
+                    <ArrowRight size={14} />
+                  </Link>
+                ))}
+              {!upcoming.some(
+                (item) => !focusDay || item.date === focusDay,
+              ) && (
                 <p>
                   Save a university or award, or add a dated checklist item to
                   start your plan.

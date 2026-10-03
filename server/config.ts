@@ -5,7 +5,10 @@ export function serverConfig() {
   const e = env as unknown as Record<string, string | undefined>;
   return {
     url: e.SUPABASE_URL || process.env.NEXT_PUBLIC_SUPABASE_URL || "",
-    anon: process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY || process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || "",
+    anon:
+      process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY ||
+      process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY ||
+      "",
     service: e.SUPABASE_SECRET_KEY || e.SUPABASE_SERVICE_ROLE_KEY || "",
     openai: e.OPENAI_API_KEY || "",
     model: e.OPENAI_MODEL || "",
@@ -27,7 +30,7 @@ export async function authenticate(request: Request) {
     auth: { persistSession: false },
   });
   const { data, error } = await db.auth.getUser(token);
-  return error ? null : { user: data.user, db };
+  return error ? null : { user: data.user, db, token };
 }
 export function sameOrigin(request: Request) {
   const origin = request.headers.get("origin");

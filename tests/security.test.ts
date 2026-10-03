@@ -18,6 +18,8 @@ test("Supabase migration: RLS, ownership, role escalation, audit, ranking permis
     await db.exec(`create role anon; create role authenticated; create role service_role bypassrls; create schema auth; create schema storage;
 create table auth.users(id uuid primary key,raw_user_meta_data jsonb default '{}');
 create function auth.uid() returns uuid language sql stable as $$ select nullif(current_setting('request.jwt.claim.sub',true),'')::uuid $$;
+create function auth.role() returns text language sql stable as $$ select nullif(current_setting('request.jwt.claim.role',true),'') $$;
+create function auth.jwt() returns jsonb language sql stable as $$ select jsonb_build_object('sub',auth.uid(),'aal',current_setting('request.jwt.claim.aal',true),'role',auth.role()) $$;
 grant usage on schema public,auth,storage to anon,authenticated,service_role;
 grant execute on function auth.uid() to anon,authenticated,service_role;
 create table storage.buckets(id text primary key,name text,public boolean,file_size_limit bigint,allowed_mime_types text[]);
@@ -26,6 +28,10 @@ grant select,insert,update,delete on storage.objects to anon,authenticated;`);
     for (const file of (await readdir("supabase/migrations")).sort()) {
       await db.exec(await readFile("supabase/migrations/" + file, "utf8"));
     }
+    // Exercise the proposed database MFA policy locally; it is not a hosted migration.
+    await db.exec(
+      await readFile("supabase/proposals/admin-mfa-enforcement.sql", "utf8"),
+    );
     await db.exec(await readFile("supabase/seed.sql", "utf8"));
     await db.exec(await readFile("supabase/seed-evidence.sql", "utf8"));
     await db.exec(await readFile("supabase/seed-intelligence.sql", "utf8"));
@@ -35,7 +41,7 @@ grant select,insert,update,delete on storage.objects to anon,authenticated;`);
     );
     const as = async (id: string, role = "authenticated") => {
       await db.exec(
-        `reset role; set role ${role}; select set_config('request.jwt.claim.sub','${id}',false);`,
+        `reset role; set role ${role}; select set_config('request.jwt.claim.sub','${id}',false); select set_config('request.jwt.claim.role','${role}',false); select set_config('request.jwt.claim.aal','aal2',false);`,
       );
     };
     await as("", "anon");
@@ -50,6 +56,10 @@ grant select,insert,update,delete on storage.objects to anon,authenticated;`);
       ),
     );
     await as(A);
+    await assert.rejects(
+      db.query(`select public.admin_university_coverage('${UNI}')`),
+      /Administrator/,
+    );
     assert.equal(
       (await db.query("select * from public.profiles")).rows.length,
       1,
@@ -95,6 +105,43 @@ grant select,insert,update,delete on storage.objects to anon,authenticated;`);
       `select public.save_comparison(array['${UNI}'::uuid],'My comparison')`,
     );
     await as(ADMIN);
+    await db.exec("select set_config('request.jwt.claim.aal','aal1',false)");
+    assert.equal(
+      (
+        await db.query(
+          `select public.admin_university_coverage('${UNI}') coverage`,
+        )
+      ).rows.length,
+      1,
+    );
+    await assert.rejects(
+      db.exec(
+        `update public.universities set name='MFA bypass' where id='${UNI}'`,
+      ),
+      /MFA/,
+    );
+    const firstSource = (
+      await db.query<{ id: string }>(
+        "select id from public.data_sources limit 1",
+      )
+    ).rows[0].id;
+    await assert.rejects(
+      db.query("select public.stage_observations($1,$2::jsonb)", [
+        firstSource,
+        JSON.stringify([
+          {
+            university_id: UNI,
+            metric: "enrollment",
+            year: 2026,
+            value: 1,
+            unit: "students",
+            source_url: "https://example.edu/students",
+          },
+        ]),
+      ]),
+      /MFA/,
+    );
+    await db.exec("select set_config('request.jwt.claim.aal','aal2',false)");
     await db.exec(
       `insert into public.universities(name,slug,country_code,published) values('Unpublished','unpublished','US',false)`,
     );
@@ -449,7 +496,9 @@ grant select,insert,update,delete on storage.objects to anon,authenticated;`);
       "select slug from public.search_universities('MIT')",
     );
     assert.equal(mitSearch.rows[0].slug, "mit", "Exact acronym ranks first");
-    await db.exec("reset role;");
+    await db.exec(
+      "reset role; select set_config('request.jwt.claim.role','',false);",
+    );
     const parentIDs = new Set([
       ...currentScholarships.flatMap((a) =>
         a.university_scholarships.map((l) => l.university_id),
@@ -540,7 +589,9 @@ grant select,insert,update,delete on storage.objects to anon,authenticated;`);
       precision.rows[0].precise,
       dates.filter((d) => d.due_at.length > 10).length,
     );
-    await db.exec("reset role;");
+    await db.exec(
+      "reset role; select set_config('request.jwt.claim.role','',false);",
+    );
     await assert.rejects(
       db.query(
         "update public.deadlines set due_at='2026-11-30T12:00:00Z' where id=$1",

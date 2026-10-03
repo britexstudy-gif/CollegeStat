@@ -28,7 +28,11 @@ import {
   ScrollText,
   Settings,
   RefreshCw,
+  PlugZap,
+  CircleDashed,
 } from "lucide-react";
+import { AdminWorkbench } from "@/components/college/admin-workbench";
+import { StaffSecurity } from "@/components/college/staff-security";
 import {
   Dialog,
   DialogContent,
@@ -338,26 +342,75 @@ export default function Admin({ section = "Overview" }: { section?: string }) {
           <ShieldCheck size={13} /> Admin workspace
         </div>
         <nav aria-label="Database console">
-          {navigation.map((group) => (
-            <div className="admin-nav-group" key={group.label}>
+          <div className="admin-nav-group admin-primary-nav">
+            {(
+              [
+                ["Overview", LayoutDashboard],
+                ["Coverage", CircleDashed],
+                ["Universities", GraduationCap],
+                ["Review", ClipboardCheck],
+                ["Mcp", PlugZap],
+                ["Security", ShieldCheck],
+              ] as const
+            ).map(([name, Icon]) => (
+              <Link
+                key={name}
+                aria-current={section === name ? "page" : undefined}
+                className={section === name ? "active" : ""}
+                href={
+                  name === "Overview"
+                    ? STAFF_PATH
+                    : STAFF_PATH + "/" + name.toLowerCase()
+                }
+              >
+                <Icon size={16} />
+                {name === "Mcp" ? "AI & MCP" : name}
+              </Link>
+            ))}
+          </div>
+          {navigation.slice(1).map((group) => (
+            <details
+              className="admin-nav-group admin-nav-more"
+              key={group.label}
+              open={group.items.some(([name]) => name === section)}
+            >
+              <summary>{group.label}</summary>
               <span>{group.label}</span>
-              {group.items.map(([name, Icon]) => (
-                <Link
-                  key={name}
-                  aria-current={section === name ? "page" : undefined}
-                  className={section === name ? "active" : ""}
-                  href={
-                    name === "Overview"
-                      ? STAFF_PATH
-                      : STAFF_PATH + "/" + name.toLowerCase()
-                  }
-                >
-                  <Icon size={16} />
-                  {name}
-                </Link>
-              ))}
-            </div>
+              {group.items
+                .filter(([name]) => name !== "Universities")
+                .map(([name, Icon]) => (
+                  <Link
+                    key={name}
+                    aria-current={section === name ? "page" : undefined}
+                    className={section === name ? "active" : ""}
+                    href={
+                      name === "Overview"
+                        ? STAFF_PATH
+                        : STAFF_PATH + "/" + name.toLowerCase()
+                    }
+                  >
+                    <Icon size={16} />
+                    {name}
+                  </Link>
+                ))}
+            </details>
           ))}
+          <details
+            className="admin-nav-group admin-nav-more"
+            open={["Candidates", "Stale"].includes(section)}
+          >
+            <summary>Identity & freshness</summary>
+            {navigation[0].items.slice(2).map(([name, Icon]) => (
+              <Link
+                key={name}
+                href={STAFF_PATH + "/" + name.toLowerCase()}
+                className={section === name ? "active" : ""}
+              >
+                <Icon size={16} />
+                {name}
+              </Link>
+            ))}
+          </details>
         </nav>
         <Link className="text-link" href="/">
           <ArrowLeft size={15} /> Public website
@@ -377,13 +430,21 @@ export default function Admin({ section = "Overview" }: { section?: string }) {
             <div className="eyebrow">CONSOLE / {section.toUpperCase()}</div>
             <h1>
               {section === "Overview"
-                ? "The catalogue, in your control."
-                : section}
+                ? "Catalogue workspace"
+                : section === "Mcp"
+                  ? "AI & MCP"
+                  : section}
             </h1>
             <p>
               {section === "Overview"
-                ? "Maintain the data students rely on. Check gaps, review evidence, and update the published catalogue."
-                : "Edit sourced records in the connected database. Changes are validated and recorded in the audit log."}
+                ? "Check coverage, review sources, and maintain the published catalogue."
+                : section === "Mcp"
+                  ? "Inspect the catalogue and stage evidence with scoped tools."
+                  : section === "Coverage"
+                    ? "Find missing structured evidence and inspect original sources."
+                    : section === "Security"
+                      ? "Protect your account and verify this staff session."
+                      : "Sourced records · Validated changes · Audit history"}
             </p>
           </div>
           <button
@@ -431,19 +492,27 @@ export default function Admin({ section = "Overview" }: { section?: string }) {
             <button onClick={load}>Retry</button>
           </div>
         )}
-        {section === "Overview" ? (
+        {section === "Mcp" || section === "Coverage" ? (
+          <AdminWorkbench
+            key={s.user.id + section}
+            coverageOnly={section === "Coverage"}
+          />
+        ) : section === "Security" ? (
+          <StaffSecurity key={s.user.id} />
+        ) : section === "Overview" ? (
           <>
+            <StaffSecurity compact />
             <div className="admin-quicklinks">
               {[
                 [
-                  "Universities",
-                  "Edit identity, logos and official links",
-                  GraduationCap,
+                  "Coverage",
+                  "Find gaps in verified university evidence",
+                  CircleDashed,
                 ],
                 [
-                  "Requirements",
-                  "Update entry conditions with sources",
-                  FileCheck2,
+                  "Mcp",
+                  "Search, inspect and stage sourced observations",
+                  PlugZap,
                 ],
                 [
                   "Scholarships",

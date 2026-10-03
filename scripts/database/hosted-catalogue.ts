@@ -5,6 +5,7 @@
 import { createHash } from 'node:crypto';
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import { createClient } from '@supabase/supabase-js';
+import { verifyStaffMFA } from './staff-mfa';
 import columnsJSON from './catalogue-columns.json';
 import { globalCatalogue } from '../../server/global-catalogue';
 import { referenceScholarships } from '../../server/catalogue';
@@ -101,6 +102,7 @@ const auth = await db.auth.signInWithPassword({email:credentials.email,password:
 if (auth.error || auth.data.user?.id !== credentials.userId) throw new Error('Review administrator authentication failed.');
 const profile = await db.from('profiles').select('role').eq('id',credentials.userId).single();
 if (profile.error || profile.data.role !== 'admin') throw new Error('A database-assigned administrator role is required.');
+await verifyStaffMFA(db);
 const order = ['data_sources','universities','programs','university_aliases','university_programs',...children,'scholarships','university_scholarships'];
 const from = process.argv.find(a => a.startsWith('--from='))?.slice(7);
 if (from && !order.includes(from)) throw new Error('Unknown resume table.');

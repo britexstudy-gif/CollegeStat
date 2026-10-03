@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element -- Small account avatars use the supplied URL without an image proxy. */
 "use client";
 import { useEffect, useState } from "react";
 import Link from "next/link";
@@ -108,17 +109,26 @@ export function Navbar() {
         </button>
         {s.user ? (
           <>
-            <Link href="/saved" className="nav-saved">
-              <Bookmark size={17} />
-              <span>Saved</span>
-              {s.saved.length > 0 && <small>{s.saved.length}</small>}
+            <Link
+              href="/dashboard"
+              className="nav-dashboard"
+              aria-current={path === "/dashboard" ? "page" : undefined}
+            >
+              <LayoutDashboard size={16} />
+              <span>Dashboard</span>
             </Link>
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
-                <button className="avatar" aria-label="Open profile menu">
-                  {(s.profile?.display_name ||
-                    s.user.email ||
-                    "U")[0].toUpperCase()}
+                <button
+                  className="avatar nav-profile-avatar"
+                  aria-label="Open profile menu"
+                >
+                  <AccountAvatar
+                    url={s.profile?.avatar_url}
+                    label={(s.profile?.display_name ||
+                      s.user.email ||
+                      "U")[0].toUpperCase()}
+                  />
                 </button>
               </DropdownMenuTrigger>
               <DropdownMenuContent align="end" className="liquid-glass">
@@ -154,7 +164,7 @@ export function Navbar() {
               </DropdownMenuContent>
             </DropdownMenu>
           </>
-        ) : (
+        ) : s.authReady ? (
           <Link
             className="sign-in-button"
             href={
@@ -168,9 +178,28 @@ export function Navbar() {
             Sign in
             <ArrowUpRight size={15} />
           </Link>
+        ) : (
+          <span className="nav-auth-loading" aria-label="Restoring account" />
         )}
       </div>
     </header>
+  );
+}
+function AccountAvatar({ url, label }: { url?: string | null; label: string }) {
+  const [failed, setFailed] = useState(false);
+  useEffect(() => setFailed(false), [url]);
+  const safe = !!url && (/^https:\/\//.test(url) || /^\/(?!\/)/.test(url));
+  return safe && !failed ? (
+    <img
+      src={url!}
+      alt=""
+      width={36}
+      height={36}
+      referrerPolicy="no-referrer"
+      onError={() => setFailed(true)}
+    />
+  ) : (
+    <span>{label}</span>
   );
 }
 export function CompareTray() {

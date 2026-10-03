@@ -205,15 +205,16 @@ export function AuthForm() {
               height="800"
             />
             <div>
-              <span>YOUR NEXT STEP</span>
-              <h2>A plan of your own.</h2>
-              <p>Shortlist. Compare. Apply.</p>
+              <h2>
+                Your next step,
+                <br />
+                all in one place.
+              </h2>
+              <p>Save universities. Compare options. Plan applications.</p>
             </div>
           </aside>
           <section className="auth-form" aria-labelledby="auth-title">
-            <span className="eyebrow">
-              {staff ? "COLLEGESTAT · STAFF" : "YOUR COLLEGESTAT ACCOUNT"}
-            </span>
+            {staff && <span className="eyebrow">COLLEGESTAT · STAFF</span>}
             <h1 id="auth-title">
               {reset
                 ? "New password"
@@ -234,21 +235,20 @@ export function AuthForm() {
                     ? "Save your shortlist, comparisons, and application plan."
                     : staff
                       ? "Use your administrator account to open the database workspace."
-                      : "Your universities, funding, and next steps. Together."}
+                      : "Welcome back to your workspace."}
             </p>
             {!forgot && !reset && !staff && (
               <nav className="auth-mode-nav" aria-label="Account access">
+                <span>
+                  {signup ? "Already have an account?" : "New to CollegeStat?"}
+                </span>
                 <Link
-                  aria-current={!signup ? "page" : undefined}
-                  href={"/auth/sign-in?next=" + encodeURIComponent(next)}
+                  href={
+                    (signup ? "/auth/sign-in?next=" : "/auth/sign-up?next=") +
+                    encodeURIComponent(next)
+                  }
                 >
-                  Sign in
-                </Link>
-                <Link
-                  aria-current={signup ? "page" : undefined}
-                  href={"/auth/sign-up?next=" + encodeURIComponent(next)}
-                >
-                  Create account
+                  {signup ? "Sign in" : "Create account"}
                 </Link>
               </nav>
             )}
@@ -269,59 +269,63 @@ export function AuthForm() {
               </div>
             ) : (
               <>
-                {!forgot && !reset && (
-                  <div className="auth-providers">
-                    {(["google", "apple", "telegram"] as const).map(
-                      (provider) => (
-                        <button
-                          key={provider}
-                          className="provider-button"
-                          disabled={busy || !s.configured || !enabled[provider]}
-                          onClick={() =>
-                            oauth(
-                              provider === "telegram"
-                                ? "custom:telegram"
-                                : provider,
-                            )
-                          }
-                          aria-describedby={
-                            !enabled[provider]
-                              ? "provider-availability"
-                              : undefined
-                          }
+                {!forgot &&
+                  !reset &&
+                  (enabled.google || enabled.apple || enabled.telegram) && (
+                    <div className="auth-providers">
+                      {(["google", "apple", "telegram"] as const)
+                        .filter((provider) => enabled[provider])
+                        .map((provider) => (
+                          <button
+                            key={provider}
+                            className="provider-button"
+                            disabled={
+                              busy || !s.configured || !enabled[provider]
+                            }
+                            onClick={() =>
+                              oauth(
+                                provider === "telegram"
+                                  ? "custom:telegram"
+                                  : provider,
+                              )
+                            }
+                            aria-describedby={
+                              !enabled[provider]
+                                ? "provider-availability"
+                                : undefined
+                            }
+                          >
+                            {provider === "google" ? (
+                              <GoogleMark />
+                            ) : provider === "apple" ? (
+                              <AppleMark />
+                            ) : (
+                              <TelegramMark />
+                            )}
+                            <span>
+                              {provider[0].toUpperCase() + provider.slice(1)}
+                            </span>
+                          </button>
+                        ))}
+                      {(!enabled.google ||
+                        !enabled.apple ||
+                        !enabled.telegram) && (
+                        <p
+                          id="provider-availability"
+                          className="provider-availability"
                         >
-                          {provider === "google" ? (
-                            <GoogleMark />
-                          ) : provider === "apple" ? (
-                            <AppleMark />
-                          ) : (
-                            <TelegramMark />
-                          )}
-                          <span>
-                            {provider[0].toUpperCase() + provider.slice(1)}
-                          </span>
-                        </button>
-                      ),
-                    )}
-                    {(!enabled.google ||
-                      !enabled.apple ||
-                      !enabled.telegram) && (
-                      <p
-                        id="provider-availability"
-                        className="provider-availability"
-                      >
-                        {providersChecked
-                          ? "Grey options aren’t enabled yet. Email sign-in is available."
-                          : "Checking sign-in options…"}
-                      </p>
-                    )}
-                    {enabled.email && (
-                      <div className="auth-divider">
-                        <span /> or use your email <span />
-                      </div>
-                    )}
-                  </div>
-                )}
+                          {providersChecked
+                            ? "Email sign-in is also available."
+                            : "Checking sign-in options…"}
+                        </p>
+                      )}
+                      {enabled.email && (
+                        <div className="auth-divider">
+                          <span /> or use your email <span />
+                        </div>
+                      )}
+                    </div>
+                  )}
                 {enabled.email && (
                   <form onSubmit={submit} aria-busy={busy}>
                     {signup && (
@@ -429,7 +433,7 @@ export function AuthForm() {
                             ? "Send reset link"
                             : signup
                               ? "Create account"
-                              : "Sign in"}
+                              : "Continue"}
                       <ArrowRight size={17} />
                     </button>
                   </form>

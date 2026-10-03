@@ -220,7 +220,8 @@ assert.ok(
   signIn.includes('id="auth-title"') && signIn.includes('id="auth-email"'),
 );
 assert.ok(signIn.includes("auth-access-panel") && signIn.includes("auth-art"));
-assert.ok(signIn.includes("Google") && signIn.includes("Telegram"));
+assert.ok(signIn.includes("Email address") && signIn.includes("auth-password"));
+assert.ok(!signIn.includes("Grey options aren’t enabled yet"));
 const providerResponse = await fetch(base + "/api/auth/providers");
 assert.equal(providerResponse.status, 200);
 const available = (await providerResponse.json()).available;

@@ -25,6 +25,8 @@ Open [the local preview](http://127.0.0.1:5173). Environment files are ignored. 
 - Discover university-linked scholarships and official funding programmes. Seven awards and ten scoped application dates are installed. Date-only sources never invent a cutoff time. Closed award cycles are hidden by default and clearly labeled when included.
 - Use application checklists, a preparation timeline, and a funding budget in Resources.
 - Save research and application plans after signing in. Support replaces the former Statistics navigation.
+- The dashboard includes a weekly calendar that filters real tasks and application dates. Signed-in navigation shows Dashboard and the account avatar.
+- Staff use a compact console with Coverage, Review, AI & MCP, and Security. Five scoped MCP tools inspect evidence or stage observations for review; no tool can publish records or run arbitrary SQL. See [staff tools and security](docs/ADMIN-MCP.md).
 
 The catalogue contains **8,985 institutions across 175 countries**. The October identity reconciliation adds 648 active ROR Education identities and restores 1,146 ranking links. Installed publisher tables retain 1,504 QS 2027, 2,191 THE 2026, and 1,000 ARWU 2026 rows, including records not yet matched to profiles. Across installed editions, 4,813 ranking records link to profiles and 384 remain unmatched or ambiguous. Coverage varies substantially by field and institution. Published rank bands and ties remain unchanged; an institution without a publisher ranking is not assigned an invented position.
 
@@ -52,6 +54,7 @@ npm run lint
 npm test
 npm run build
 node tests/http-smoke.mjs # requires the local server
+node tests/staff-http-smoke.mjs # requires the ignored real review account
 ```
 
 ## Setup and data
@@ -65,6 +68,8 @@ The bundle contains `01-schema.sql` (empty projects), `02-directory-identities.s
 The reviewed full catalogue can be installed with `node --import tsx scripts/database/hosted-catalogue.ts --check`, then `--apply`. It uses the database-assigned review administrator's JWT, preserves existing rows, and validates child references before writing. `--from=media` resumes at a named table after fixing an interrupted import. Set `NEXT_PUBLIC_CATALOGUE_SOURCE=supabase` only after the import and `node --import tsx scripts/database/verify-hosted.ts` pass. This includes profile research, reported qualifications, application links and publisher ranking observations as well as relational evidence.
 
 Sign-in is a separate page at `/auth/sign-in`. Staff enter through `/staff/college-console`; `/admin` returns 404. The route is only an entry point: server authentication, the database-assigned role and RLS enforce access.
+
+Staff API writes now require authenticator verification in `/staff/college-console/security`. CLI `--apply` imports also require an enrolled authenticator and a current `COLLEGESTAT_MFA_CODE` supplied ephemerally; never save the code in a file or command argument. Local `--check` remains independent of account credentials. The broader database and logo-bucket MFA policy is validated locally but **not installed**: it awaits explicit owner approval in `supabase/proposals/admin-mfa-enforcement.sql`, outside automatic migrations. The installed coverage RPC is read-only; existing records and permissions are preserved.
 
 Glass controls use a cached SVG displacement map on eligible Chromium desktops and CSS blur elsewhere. Maps are bounded, generated only on size changes, and paused offscreen; reduced motion/transparency, contrast and device constraints disable the enhancement. Phone and tablet layouts use lighter materials. See [the current quality report](docs/PRODUCT-QUALITY-2026-10.md) for verification and remaining coverage gaps.
 
