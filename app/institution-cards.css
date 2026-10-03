@@ -1,0 +1,393 @@
+/* Explicit view variants avoid the former grid/list cascade collision. */
+.institution-card {
+  min-width: 0;
+  background: var(--card);
+  border: 1px solid #8799b624;
+  border-radius: 20px;
+  color: var(--foreground);
+  overflow: hidden;
+}
+.institution-card--grid {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 18px;
+  height: 100%;
+}
+.institution-photo {
+  margin: -20px -20px 0;
+  overflow: hidden;
+}
+.institution-photo .campus-image {
+  margin: 0;
+  border-radius: 0;
+  position: relative;
+}
+.institution-photo .campus-image img {
+  width: 100%;
+  height: 175px;
+  object-fit: cover;
+}
+.institution-photo figcaption {
+  position: relative;
+  padding: 7px 14px;
+  background: var(--card);
+  color: var(--muted-foreground);
+  font-size: 9px;
+  line-height: 1.4;
+}
+.institution-identity {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  min-width: 0;
+}
+.institution-identity > .university-logo {
+  flex: none;
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  box-shadow: none;
+  border-color: #8799b620;
+}
+.institution-heading {
+  flex: 1;
+  min-width: 0;
+}
+.institution-name {
+  display: inline;
+  font-size: 17px;
+  line-height: 1.4;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  color: var(--foreground);
+  overflow-wrap: break-word;
+}
+.institution-name:hover {
+  color: var(--primary);
+}
+.institution-name svg {
+  display: inline;
+  vertical-align: baseline;
+  margin-left: 4px;
+}
+.institution-location {
+  display: flex;
+  align-items: flex-start;
+  gap: 5px;
+  font-size: 11px;
+  line-height: 1.6;
+  color: var(--muted-foreground);
+  margin: 7px 0 0;
+}
+.institution-location svg {
+  flex: none;
+  margin-top: 2px;
+}
+.institution-card .save-compact {
+  min-height: 36px;
+  min-width: 36px;
+  padding: 8px;
+  border: 0;
+  background: transparent;
+  color: #657387;
+  border-radius: 10px;
+  flex: none;
+}
+.institution-card .save-compact[aria-pressed="true"] {
+  color: #1d5cdf;
+  background: #eaf1ff;
+}
+.institution-ranks:empty,
+.institution-facts:empty {
+  display: none;
+}
+.institution-ranks .rank-badges.compact {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  justify-content: flex-start;
+  margin: 0;
+  gap: 12px;
+  border: 0;
+  padding: 0;
+  max-width: 330px;
+}
+.institution-ranks .rank-badge {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  min-width: 0;
+  background: none;
+}
+.institution-ranks .rank-badge > span {
+  display: flex;
+  flex-direction: column;
+}
+.institution-ranks .publisher-mark {
+  width: 43px;
+  height: 21px;
+  object-fit: contain;
+}
+.institution-ranks .rank-badge strong {
+  font-size: 19px;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+}
+.institution-ranks .rank-badge small {
+  display: block !important;
+  font-size: 8px;
+  margin-top: 3px;
+}
+.institution-facts {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin: 0;
+  padding-top: 16px;
+  border-top: 1px solid #8799b620;
+}
+.institution-facts .source-trigger {
+  width: 100%;
+  text-align: left;
+  padding: 0;
+}
+.institution-facts .university-stat {
+  min-width: 0;
+}
+.institution-facts .university-stat > span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 10px;
+  line-height: 1.5;
+  margin-bottom: 7px;
+  color: var(--muted-foreground);
+}
+.institution-facts .university-stat strong {
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: -0.035em;
+  line-height: 1.2;
+}
+.institution-facts .university-stat > small {
+  font-size: 10px;
+  margin-top: 6px;
+}
+.institution-facts .mini-bar {
+  display: none;
+}
+.institution-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding-top: 14px;
+  border-top: 1px solid #8799b620;
+  font-size: 11px;
+  color: var(--muted-foreground);
+  margin-top: auto;
+}
+.institution-actions button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  min-height: 36px;
+  padding: 7px 10px;
+  border-radius: 10px;
+  font-size: 11px;
+  font-weight: 500;
+}
+.institution-actions button:hover {
+  color: #245bd1;
+  background: #eaf1ff;
+}
+.institution-actions button:last-child {
+  background: #edf3ff;
+  color: #245bd1;
+}
+.institution-card--list {
+  display: grid;
+  grid-template-columns: minmax(240px, 1fr) minmax(190px, 290px);
+  align-items: center;
+  gap: 16px 28px;
+  padding: 20px 24px;
+}
+.institution-card--list .institution-identity {
+  grid-column: 1;
+  grid-row: 1;
+  align-items: center;
+}
+.institution-card--list .institution-ranks {
+  grid-column: 1;
+  grid-row: 2;
+  padding-left: 66px;
+}
+.institution-card--list .institution-facts {
+  grid-column: 2;
+  grid-row: 1/3;
+  border: 0;
+  padding: 0;
+}
+.institution-card--list .institution-actions {
+  grid-column: 1/-1;
+  grid-row: 3;
+  margin: 0;
+  padding: 10px 0 0;
+  justify-content: flex-end;
+}
+.institution-card--list .institution-name {
+  font-size: 17px;
+}
+.university-list {
+  gap: 12px;
+}
+.dark .institution-card {
+  border-color: #8799b633;
+}
+.dark .institution-actions button:last-child,
+.dark .institution-card .save-compact[aria-pressed="true"] {
+  color: #c2d6ff;
+  background: #233955;
+}
+@media (max-width: 1320px) {
+  .institution-card--list {
+    grid-template-columns: minmax(210px, 1fr) minmax(165px, 230px);
+    gap: 18px;
+  }
+  .institution-card--list .institution-ranks {
+    grid-column: 1;
+    grid-row: 2;
+    padding-left: 66px;
+  }
+  .institution-card--list .institution-facts {
+    grid-column: 2;
+    grid-row: 1/3;
+  }
+  .institution-card--list .institution-actions {
+    grid-row: 3;
+  }
+}
+@media (max-width: 640px) {
+  .institution-card--list {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 18px;
+    gap: 16px;
+  }
+  .institution-card--list .institution-ranks {
+    padding: 0;
+  }
+  .institution-card--list .institution-facts {
+    padding-top: 14px;
+    border-top: 1px solid #8799b620;
+  }
+  .institution-card--list .institution-identity {
+    align-items: flex-start;
+  }
+  .institution-name,
+  .institution-card--list .institution-name {
+    font-size: 16px;
+  }
+  .institution-card--list .institution-actions {
+    justify-content: space-between;
+  }
+  .institution-identity {
+    gap: 10px;
+  }
+  .institution-identity > .university-logo {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+  }
+  .institution-card--grid {
+    padding: 18px;
+  }
+  .institution-photo {
+    margin: -18px -18px 0;
+  }
+}
+/* Requirement text and numeric thresholds have independent, bounded columns. */
+.entry-policy {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 155px;
+  gap: 28px;
+  align-items: start;
+  padding: 22px 0;
+  border-bottom: 1px solid var(--border);
+}
+.entry-policy-description {
+  min-width: 0;
+}
+.entry-policy h3 {
+  font-size: 17px;
+  line-height: 1.45;
+  margin: 0 0 6px;
+  letter-spacing: -0.025em;
+}
+.entry-policy-description > .caption {
+  font-size: 11px;
+  line-height: 1.6;
+  margin: 0 0 10px;
+}
+.entry-policy-note {
+  color: var(--foreground);
+  font-size: 12px;
+  line-height: 1.75;
+  max-width: 740px;
+  margin: 0 0 12px;
+}
+.entry-policy-status {
+  display: inline-flex;
+  padding: 4px 9px;
+  border-radius: 7px;
+  background: #7c92b110;
+  color: var(--muted-foreground);
+  font-size: 10px;
+}
+.entry-policy-value {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  align-items: flex-end;
+  min-width: 0;
+}
+.entry-policy-value strong {
+  font-size: 28px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+}
+.entry-policy-value small {
+  font-size: 9px;
+  color: var(--muted-foreground);
+  line-height: 1.5;
+}
+.entry-policy-value .source-trigger {
+  font-size: 11px;
+  width: auto;
+  color: var(--primary);
+}
+@media (max-width: 640px) {
+  .entry-policy {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    padding: 20px 0;
+  }
+  .entry-policy-value {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .entry-policy-value strong {
+    font-size: 23px;
+  }
+  .entry-policy-value small:first-child {
+    width: 100%;
+  }
+}

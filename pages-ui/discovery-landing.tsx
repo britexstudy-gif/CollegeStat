@@ -61,7 +61,9 @@ export default function Landing() {
       </section>
       <div className="landing-finder-wrap">
         <form
-          ref={searchGlass} data-glass="rim" className="landing-finder glass-search-capsule home-search-form"
+          ref={searchGlass}
+          data-glass="rim"
+          className="discovery-search"
           role="search"
           onSubmit={(e) => {
             e.preventDefault();
@@ -98,7 +100,7 @@ export default function Landing() {
         </div>
       </div>
       <UniversityCarousel />
-      <HomeScholarships/>
+      <HomeScholarships />
       <FundingDiscovery home />
       <section className="open-steps">
         <div className="editorial-heading">

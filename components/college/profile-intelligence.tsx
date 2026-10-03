@@ -45,7 +45,8 @@ export function ProfileIntelligence({
   university: University;
   tab: string;
 }) {
-  if (tab === "Research" && !u.professors.length && !u.research.length) return null;
+  if (tab === "Research" && !u.professors.length && !u.research.length)
+    return null;
   if (tab === "Research")
     return (
       <section className="evidence-section">
@@ -130,9 +131,7 @@ export function ProfileIntelligence({
               .sort((a, b) => a.due_at.localeCompare(b.due_at))
               .map((d) => (
                 <li key={d.id}>
-                  <time dateTime={d.due_at}>
-                    {deadlineLabel(d)}
-                  </time>
+                  <time dateTime={d.due_at}>{deadlineLabel(d)}</time>
                   <h3>{d.title}</h3>
                   <p className="caption">
                     {d.cycle} · {d.student_category}
@@ -169,7 +168,11 @@ export function ProfileIntelligence({
       <section className="evidence-section">
         <h2>Funding tied to this university.</h2>
         {!u.university_scholarships.some((l) => l.scholarships) ? (
-          <p className="caption">Named institutional awards have not been verified yet. Use the university funding page and external programme directories below to identify options for your degree.</p>
+          <p className="caption">
+            Named institutional awards have not been verified yet. Use the
+            university funding page and external programme directories below to
+            identify options for your degree.
+          </p>
         ) : (
           u.university_scholarships.map(
             ({ scholarships: s }) =>
@@ -207,18 +210,35 @@ export function ProfileIntelligence({
       <section className="evidence-section requirement-section">
         {!!u.requirements.length && <h2>Entry requirements</h2>}
         {u.requirements.map((r) => (
-          <article className="requirement-row" key={r.id}>
-            <div className="requirement-description">
+          <article className="entry-policy" key={r.id}>
+            <div className="entry-policy-description">
               <h3>{r.label}</h3>
-              <p className="caption">
-                {r.student_category}
-              </p>
-              {r.notes && <p className="caption requirement-note">{r.notes}</p>}
-              {r.required !== null && <span className="requirement-status">{r.required ? "Required" : "Optional"}</span>}
+              <p className="caption">{r.student_category}</p>
+              {r.notes && <p className="entry-policy-note">{r.notes}</p>}
+              <span className="entry-policy-status">
+                {r.required === null
+                  ? "See conditions"
+                  : r.required
+                    ? "Required"
+                    : "Optional"}
+              </span>
             </div>
-            <div className="requirement-value">
-              <strong className={r.minimum === null ? "requirement-guidance" : undefined}>{r.minimum ?? "See official guidance"}{r.maximum !== null ? "–" + r.maximum : ""}</strong>
-              <SourceDrawer record={r} label={r.label}>View source ↗</SourceDrawer>
+            <div className="entry-policy-value">
+              {r.minimum !== null && (
+                <>
+                  <small>Published minimum</small>
+                  <strong>
+                    {r.minimum}
+                    {r.maximum !== null ? "–" + r.maximum : ""}
+                  </strong>
+                </>
+              )}
+              <SourceDrawer record={r} label={r.label}>
+                View source ↗
+              </SourceDrawer>
+              {r.verified_at && (
+                <small>Checked {dateLabel(r.verified_at)}</small>
+              )}
             </div>
           </article>
         ))}

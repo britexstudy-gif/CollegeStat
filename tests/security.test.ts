@@ -450,31 +450,156 @@ grant select,insert,update,delete on storage.objects to anon,authenticated;`);
     );
     assert.equal(mitSearch.rows[0].slug, "mit", "Exact acronym ranks first");
     await db.exec("reset role;");
-    const parentIDs = new Set([...currentScholarships.flatMap(a => a.university_scholarships.map(l => l.university_id)), ...requirements.map(r => r.university_id)]);
+    const parentIDs = new Set([
+      ...currentScholarships.flatMap((a) =>
+        a.university_scholarships.map((l) => l.university_id),
+      ),
+      ...requirements.map((r) => r.university_id),
+    ]);
     for (const id of parentIDs) {
-      const u = globalCatalogue.find(u => u.id === id)!;
-      await db.query("insert into public.universities(id,name,slug,country_code,published) values($1,$2,$3,$4,true) on conflict do nothing",[u.id,u.name,u.slug,u.country_code]);
+      const u = globalCatalogue.find((u) => u.id === id)!;
+      await db.query(
+        "insert into public.universities(id,name,slug,country_code,published) values($1,$2,$3,$4,true) on conflict do nothing",
+        [u.id, u.name, u.slug, u.country_code],
+      );
     }
     await db.exec(awardImportSQL());
+    const revised = requirements.find(
+      (r) => r.id === "bb000000-0000-4000-8000-000000000008",
+    )!;
+    assert.equal(
+      (
+        await db.query<{ label: string }>(
+          "select label from public.requirements where id=$1",
+          [revised.id],
+        )
+      ).rows[0].label,
+      revised.label,
+      "Reviewed language policy replaces the older seed without adding a duplicate",
+    );
     await db.exec(awardImportSQL());
+    await db.query(
+      "update public.requirements set label='Newer administrator review',verified_at='2099-01-01' where id=$1",
+      [revised.id],
+    );
+    await db.query(
+      "update public.requirements set verification_status='verified',verified_at='2099-01-01' where id=$1",
+      [revised.id],
+    );
+    await db.exec(awardImportSQL());
+    assert.equal(
+      (
+        await db.query<{ label: string }>(
+          "select label from public.requirements where id=$1",
+          [revised.id],
+        )
+      ).rows[0].label,
+      "Newer administrator review",
+      "A reviewed import cannot overwrite a newer administrator policy",
+    );
     await as("", "anon");
-    assert.equal((await db.query("select id from public.scholarships where id=any($1::uuid[])",[currentScholarships.map(a => a.id)])).rows.length,currentScholarships.length,"Award import is verified, public and repeatable");
-    assert.equal((await db.query("select id from public.deadlines where id=any($1::uuid[])",[dates.map(d => d.id)])).rows.length,dates.length,"Every scoped deadline survives the SQL import");
-    assert.equal((await db.query("select id from public.requirements where id=any($1::uuid[])",[requirements.map(r => r.id)])).rows.length,requirements.length,"Reviewed entry requirements survive import and anonymous publication rules");
-    const precision = await db.query<{ precise:number; date_only:number }>("select count(*) filter(where due_at is not null)::int precise,count(*) filter(where due_date is not null)::int date_only from public.deadlines where id=any($1::uuid[])",[dates.map(d => d.id)]);
-    assert.equal(precision.rows[0].date_only,dates.filter(d => d.due_at.length === 10).length);
-    assert.equal(precision.rows[0].precise,dates.filter(d => d.due_at.length > 10).length);
+    assert.equal(
+      (
+        await db.query(
+          "select id from public.scholarships where id=any($1::uuid[])",
+          [currentScholarships.map((a) => a.id)],
+        )
+      ).rows.length,
+      currentScholarships.length,
+      "Award import is verified, public and repeatable",
+    );
+    assert.equal(
+      (
+        await db.query(
+          "select id from public.deadlines where id=any($1::uuid[])",
+          [dates.map((d) => d.id)],
+        )
+      ).rows.length,
+      dates.length,
+      "Every scoped deadline survives the SQL import",
+    );
+    assert.equal(
+      (
+        await db.query(
+          "select id from public.requirements where id=any($1::uuid[])",
+          [requirements.map((r) => r.id)],
+        )
+      ).rows.length,
+      requirements.length,
+      "Reviewed entry requirements survive import and anonymous publication rules",
+    );
+    const precision = await db.query<{ precise: number; date_only: number }>(
+      "select count(*) filter(where due_at is not null)::int precise,count(*) filter(where due_date is not null)::int date_only from public.deadlines where id=any($1::uuid[])",
+      [dates.map((d) => d.id)],
+    );
+    assert.equal(
+      precision.rows[0].date_only,
+      dates.filter((d) => d.due_at.length === 10).length,
+    );
+    assert.equal(
+      precision.rows[0].precise,
+      dates.filter((d) => d.due_at.length > 10).length,
+    );
     await db.exec("reset role;");
-    await assert.rejects(db.query("update public.deadlines set due_at='2026-11-30T12:00:00Z' where id=$1",[dates.find(d => d.due_at.length===10)!.id]),"A date-only source cannot also carry an invented precise cutoff");
-    await db.query("update public.universities set profile_resources=$1::jsonb,imported_records=$2::jsonb where id=$3",[JSON.stringify({rankings:[{provider:'qs',year:2027,rank:1,url:'https://www.topuniversities.com'}]}),JSON.stringify([{source:'ipeds',metric:'acceptance_rate',value:88,reporting_year:2099,verification_status:'verified',publication_status:'published'},{source:'leiden',metric:'research',value:1,verification_status:'verified',publication_status:'published'}]),UNI]);
-    await as('','anon');
-    const latest=await db.query<{r:{ids:string[]}}>("select public.explore_universities('{\"admission_min\":87,\"admission_max\":89}',1) r");
-    assert.ok(latest.rows[0].r.ids.includes(UNI),'A newer government reporting year supersedes an older canonical admission value');
-    const ranks=await db.query<{r:{id:string;imported_records:{source:string}[]}}>('select public.ranking_profiles() r');
-    const published=ranks.rows.find(row=>row.r.id===UNI)!;
+    await assert.rejects(
+      db.query(
+        "update public.deadlines set due_at='2026-11-30T12:00:00Z' where id=$1",
+        [dates.find((d) => d.due_at.length === 10)!.id],
+      ),
+      "A date-only source cannot also carry an invented precise cutoff",
+    );
+    await db.query(
+      "update public.universities set profile_resources=$1::jsonb,imported_records=$2::jsonb where id=$3",
+      [
+        JSON.stringify({
+          rankings: [
+            {
+              provider: "qs",
+              year: 2027,
+              rank: 1,
+              url: "https://www.topuniversities.com",
+            },
+          ],
+        }),
+        JSON.stringify([
+          {
+            source: "ipeds",
+            metric: "acceptance_rate",
+            value: 88,
+            reporting_year: 2099,
+            verification_status: "verified",
+            publication_status: "published",
+          },
+          {
+            source: "leiden",
+            metric: "research",
+            value: 1,
+            verification_status: "verified",
+            publication_status: "published",
+          },
+        ]),
+        UNI,
+      ],
+    );
+    await as("", "anon");
+    const latest = await db.query<{ r: { ids: string[] } }>(
+      'select public.explore_universities(\'{"admission_min":87,"admission_max":89}\',1) r',
+    );
+    assert.ok(
+      latest.rows[0].r.ids.includes(UNI),
+      "A newer government reporting year supersedes an older canonical admission value",
+    );
+    const ranks = await db.query<{
+      r: { id: string; imported_records: { source: string }[] };
+    }>("select public.ranking_profiles() r");
+    const published = ranks.rows.find((row) => row.r.id === UNI)!;
     assert.ok(published);
-    assert.deepEqual(published.r.imported_records.map(r=>r.source),['leiden'],'Ranking endpoints exclude unrelated imported observations');
-    assert.ok(!ranks.rows.some(row=>row.r.id===draftId));
+    assert.deepEqual(
+      published.r.imported_records.map((r) => r.source),
+      ["leiden"],
+      "Ranking endpoints exclude unrelated imported observations",
+    );
+    assert.ok(!ranks.rows.some((row) => row.r.id === draftId));
   } finally {
     await db.close();
   }

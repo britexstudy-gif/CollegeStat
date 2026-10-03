@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { Bookmark, Check, Plus, ArrowUpRight, Eye } from "lucide-react";
+import { Check, Plus, ArrowUpRight, Eye, MapPin } from "lucide-react";
 import { RankingBadges } from "./ranking-badges";
 import { valueOf } from "@/lib/research";
 import { University, countryName } from "@/lib/domain";
@@ -8,52 +8,49 @@ import { useCollege } from "./provider";
 import { CampusImage } from "./campus-image";
 import { UniversityLogo } from "./primitives";
 import { Metric } from "./metrics";
+import { SaveButton } from "./save-button";
 export function UniversityCard({
   university: u,
   onPreview,
+  layout = "grid",
 }: {
   university: University;
   onPreview?: () => void;
+  layout?: "grid" | "list";
 }) {
   const s = useCollege();
   return (
-    <article className="university-card">
-      {u.media.some((m) => m.kind === "campus") && (
-        <div className="university-card-photo">
+    <article className={"institution-card institution-card--" + layout}>
+      {layout === "grid" && u.media.some((m) => m.kind === "campus") && (
+        <div className="institution-photo">
           <CampusImage media={u.media.find((m) => m.kind === "campus")} />
         </div>
       )}
-      <div className="university-card-top">
+      <div className="institution-identity">
         <UniversityLogo university={u} size="lg" />
-        <button
-          aria-label={(s.saved.includes(u.id) ? "Unsave " : "Save ") + u.name}
-          className={"icon-button " + (s.saved.includes(u.id) ? "active" : "")}
-          disabled={s.busy}
-          onClick={() => s.toggleSaved(u.id)}
-        >
-          <Bookmark
-            size={18}
-            fill={s.saved.includes(u.id) ? "currentColor" : "none"}
-          />
-        </button>
+        <div className="institution-heading">
+          <Link href={"/university/" + u.slug} className="institution-name">
+            {u.name}
+            <ArrowUpRight size={15} />
+          </Link>
+          <p className="institution-location">
+            <MapPin size={13} aria-hidden="true" />
+            {[u.city, countryName(u.country_code)].filter(Boolean).join(" · ")}
+          </p>
+        </div>
+        <SaveButton id={u.id} compact label={u.name} />
       </div>
-      <Link href={"/university/" + u.slug} className="university-name">
-        {u.name}
-        <ArrowUpRight size={15} />
-      </Link>
-      <p className="university-location">
-        {u.city}
-        <span>{countryName(u.country_code)}</span>
-      </p>
-      <RankingBadges university={u} compact />
-      <div className="university-card-stats">
+      <div className="institution-ranks">
+        <RankingBadges university={u} compact />
+      </div>
+      <div className="institution-facts">
         {(["admission", "tuition"] as const)
           .filter((key) => valueOf(u, key).value != null)
           .map((key) => (
             <Metric key={key} university={u} metricKey={key} />
           ))}
       </div>
-      <div className="university-card-bottom">
+      <div className="institution-actions">
         {onPreview ? (
           <button onClick={onPreview}>
             <Eye size={14} />

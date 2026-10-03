@@ -2,8 +2,8 @@ import type { DirectoryRecord as DirectoryRow } from "@/lib/dataset-records";
 import { officialLogo } from "@/lib/official-logos";
 import applicationDates from "@/data/published/application-dates-current.json";
 import currentRequirements from "@/data/published/requirements-current.json";
-import publishedRanks from '@/data/published/ranking-records.json';
-import type { RankHighlight, Publisher } from '@/lib/ranking-highlights';
+import publishedRanks from "@/data/published/ranking-records.json";
+import type { RankHighlight, Publisher } from "@/lib/ranking-highlights";
 import { scholarshipsForUniversity } from "./scholarship-catalogue";
 import { regionForCountry } from "@/lib/regions";
 import admissionsCurrentJSON from "@/data/published/admissions-current.json";
@@ -26,11 +26,11 @@ import {
 } from "@/lib/domain";
 
 const ranksByUniversity = new Map<string, RankHighlight[]>();
-for(const row of publishedRanks) {
+for (const row of publishedRanks) {
   if (!row.university_id) continue;
-  const records=ranksByUniversity.get(row.university_id) || [];
-  records.push({...row,domain:'',provider:row.provider as Publisher});
-  ranksByUniversity.set(row.university_id,records);
+  const records = ranksByUniversity.get(row.university_id) || [];
+  records.push({ ...row, domain: "", provider: row.provider as Publisher });
+  ranksByUniversity.set(row.university_id, records);
 }
 const imageCache = imageCacheJSON as Record<
   string,
@@ -419,9 +419,28 @@ function normalize(row: DirectoryRow): University {
         }))
       : ref?.university_programs || [],
     costs: [...(ref?.costs || []), ...costs],
-    requirements: [...(ref?.requirements || []), ...(currentRequirements as Requirement[]).filter(r => r.university_id === row.id)],
-    deadlines: [...(ref?.deadlines || []), ...(applicationDates as Deadline[]).filter(d => d.university_id === row.id)],
-    university_scholarships: [...(ref?.university_scholarships || []), ...scholarshipsForUniversity(row.id).map(scholarships => ({ scholarships }))],
+    requirements: [
+      ...new Map(
+        [
+          ...(ref?.requirements || []),
+          ...(currentRequirements as Requirement[]).filter(
+            (r) => r.university_id === row.id,
+          ),
+        ].map((r) => [r.id, r]),
+      ).values(),
+    ],
+    deadlines: [
+      ...(ref?.deadlines || []),
+      ...(applicationDates as Deadline[]).filter(
+        (d) => d.university_id === row.id,
+      ),
+    ],
+    university_scholarships: [
+      ...(ref?.university_scholarships || []),
+      ...scholarshipsForUniversity(row.id).map((scholarships) => ({
+        scholarships,
+      })),
+    ],
     admissions: [
       ...primaryAdmissions,
       ...(ref?.admissions || []).filter(

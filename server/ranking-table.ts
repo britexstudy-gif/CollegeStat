@@ -77,7 +77,9 @@ export function rankingTable(p: URLSearchParams) {
           ...(r.u?.aliases || []),
         ]),
     )
-    .sort((a, b) => direction * (a.rank - b.rank) || a.name.localeCompare(b.name));
+    .sort(
+      (a, b) => direction * (a.rank - b.rank) || a.name.localeCompare(b.name),
+    );
   const pages = Math.max(1, Math.ceil(filtered.length / 24));
   const input = Number(p.get("page") || 1);
   const page = Math.min(
@@ -123,6 +125,7 @@ export function rankingTable(p: URLSearchParams) {
             logo_url: r.u.logo_url,
             institution_image_url: r.u.institution_image_url,
             website_icon_url: r.u.website_icon_url,
+            rankings: universityRanks(r.u),
           }
         : null,
     })),

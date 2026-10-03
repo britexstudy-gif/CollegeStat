@@ -1,14 +1,20 @@
-# Production account providers
+# Account providers
 
-Google, Apple and Telegram buttons share Supabase's session, callback and protected workspace. No preview account is created. The current repository has no Supabase credentials; an owner must connect a Supabase project and provider accounts before these flows can be verified end to end.
+The hosted project `yfyqikmanpgnvyfthzwe` has email/password sign-in enabled. Google and Apple are disabled as checked on 3 October 2026. The app fetches provider availability from `/api/auth/providers`; public build flags cannot enable an unconfigured provider.
 
-1. Supply the public Supabase URL and anon key through the environment variables in `.env.example`. Configure the public site origin and `/auth/callback` redirect in Supabase Auth.
-2. Enable Google and Apple in Supabase Auth Providers using the respective account credentials. Register the callback URL shown by Supabase with each provider. Apple requires a Services ID and signing key configuration.
-3. For Telegram, create a bot in BotFather, select OpenID Connect Login and register the Supabase callback URL. Create an OIDC provider in Supabase with identifier `custom:telegram`, issuer `https://oauth.telegram.org`, scopes `openid` and `profile`, and `email_optional: true`. Supply BotFather's Client ID and Client Secret only to Supabase. Do not request the phone or messaging permission for ordinary sign-in.
-4. Set `NEXT_PUBLIC_AUTH_GOOGLE_ENABLED`, `NEXT_PUBLIC_AUTH_APPLE_ENABLED`, and `NEXT_PUBLIC_AUTH_TELEGRAM_ENABLED` to `true` after configuring each provider. The buttons show an availability error until configured.
-5. Verify a new registration, returning login, cancellation, logout, safe redirect, and access to the same private saved-list/dashboard. Telegram accounts can have no email; identify users by Supabase UUID.
+## Configuration
 
-References checked September 26, 2026:
-- https://supabase.com/docs/guides/auth/custom-oauth-providers
-- https://supabase.com/docs/guides/self-hosting/self-hosted-custom-oauth-providers
-- https://core.telegram.org/bots/telegram-login
+1. Set the Supabase public URL and publishable key using `.env.example`. Add each deployed application's `/auth/callback` to Auth's allowed redirect URLs. Use the public site origin for Auth's Site URL.
+2. Configure Google and Apple in Supabase Auth Providers with the owner’s provider credentials. Register the Supabase callback URL shown in the dashboard with each provider. Apple requires its Services ID and signing-key configuration; follow its credential renewal requirements.
+3. For Telegram, configure OpenID Connect Login in BotFather and register the Supabase callback. Create a Supabase OIDC provider with identifier `custom:telegram`, issuer `https://oauth.telegram.org`, scopes `openid profile`, and `email_optional: true`. Supply BotFather's Client ID/Secret to Supabase. The discovery URL is `https://oauth.telegram.org/.well-known/openid-configuration`. Ordinary sign-in does not need phone or messaging permissions.
+4. The public Auth settings expose built-in providers only. To attest to Telegram availability, give the server a secret/service-role key through an ignored server environment (`SUPABASE_SECRET_KEY` or `SUPABASE_SERVICE_ROLE_KEY`). The endpoint returns booleans only; it never returns custom provider credentials. Without server attestation, Telegram stays disabled.
+5. Test new registration, returning login, cancellation, logout, password reset, safe return routes and private workspace access. Telegram accounts may lack email; identify them by Supabase user UUID.
+
+Provider credentials stay in the provider dashboards or server environment. Never place them in `NEXT_PUBLIC_` variables, source files or project notes. Supabase RLS and role checks protect saved data and the staff console regardless of the sign-in provider.
+
+## Official references
+
+- [Supabase Google Auth](https://supabase.com/docs/guides/auth/social-login/auth-google)
+- [Supabase Apple Auth](https://supabase.com/docs/guides/auth/social-login/auth-apple)
+- [Supabase custom OAuth/OIDC providers](https://supabase.com/docs/guides/auth/custom-oauth-providers)
+- [Telegram OpenID Connect login](https://core.telegram.org/bots/telegram-login)

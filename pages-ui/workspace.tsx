@@ -15,6 +15,11 @@ import {
   FolderOpen,
   Settings,
   ArrowRight,
+  CalendarDays,
+  Plus,
+  ShieldCheck,
+  Clock3,
+  CheckCircle2,
 } from "lucide-react";
 import { Checkbox } from "@/components/ui/checkbox";
 import { deadlineDate } from "@/lib/application-dates";
@@ -28,6 +33,12 @@ import { University } from "@/lib/domain";
 import { getSupabase } from "@/lib/supabase/client";
 import { universitiesByIds } from "@/lib/supabase/catalogue";
 import { loadWorkspace, emptyWorkspace, Workspace } from "@/services/workspace";
+import { STAFF_PATH } from "@/lib/staff-route";
+import {
+  dueLabel,
+  prioritizeTasks,
+  validPlanDate,
+} from "@/lib/workspace-planner";
 export default function WorkspacePage() {
   const s = useCollege(),
     dashboard = usePathname() === "/dashboard";
@@ -39,6 +50,8 @@ export default function WorkspacePage() {
     [list, setList] = useState("all"),
     [listName, setListName] = useState(""),
     [task, setTask] = useState(""),
+    [taskDue, setTaskDue] = useState(""),
+    [taskBusy, setTaskBusy] = useState(false),
     [error, setError] = useState("");
   const userId = s.user?.id;
   const revision = useRef(0);
@@ -46,25 +59,52 @@ export default function WorkspacePage() {
   const universities = owner === userId ? storedUniversities : [];
   const reload = useCallback(async () => {
     const current = ++revision.current;
-    if (!userId) { setData(emptyWorkspace); setUniversities([]); setOwner(undefined); setLoading(false); return; }
+    if (!userId) {
+      setData(emptyWorkspace);
+      setUniversities([]);
+      setOwner(undefined);
+      setLoading(false);
+      return;
+    }
     setLoading(true);
     try {
       const d = await loadWorkspace(userId);
-      const institutions = await universitiesByIds([...new Set([...d.saved.map(v => v.university_id), ...d.history.map(v => v.university_id)])]);
+      const institutions = await universitiesByIds([
+        ...new Set([
+          ...d.saved.map((v) => v.university_id),
+          ...d.history.map((v) => v.university_id),
+        ]),
+      ]);
       if (current !== revision.current) return;
-      setData(d); setUniversities(institutions); setOwner(userId); setError("");
+      setData(d);
+      setUniversities(institutions);
+      setOwner(userId);
+      setError("");
     } catch {
-      if (current === revision.current) { setData(emptyWorkspace); setUniversities([]); setOwner(userId); setError("Your research could not be loaded. Please retry."); }
-    } finally { if (current === revision.current) setLoading(false); }
+      if (current === revision.current) {
+        setData(emptyWorkspace);
+        setUniversities([]);
+        setOwner(userId);
+        setError("Your research could not be loaded. Please retry.");
+      }
+    } finally {
+      if (current === revision.current) setLoading(false);
+    }
   }, [userId]);
-  useEffect(() => { void reload(); const counter = revision; return () => { counter.current++; }; }, [reload, s.saved, s.savedScholarships]);
+  useEffect(() => {
+    void reload();
+    const counter = revision;
+    return () => {
+      counter.current++;
+    };
+  }, [reload, s.saved, s.savedScholarships]);
   const write = async (
     table: string,
     payload: Record<string, unknown>,
     conflict?: string,
   ) => {
     const db = getSupabase();
-    if (!db || !s.user) return;
+    if (!db || !s.user) return false;
     const q = conflict
       ? db
           .from(table)
@@ -73,10 +113,29 @@ export default function WorkspacePage() {
     const { error } = await q;
     if (error) {
       toast.error("Could not save your change");
-      return;
+      return false;
     }
     await reload();
     toast.success("Saved");
+    return true;
+  };
+  const addTask = async (event: React.FormEvent) => {
+    event.preventDefault();
+    if (!task.trim() || taskBusy) return;
+    setTaskBusy(true);
+    try {
+      if (
+        await write("user_checklist", {
+          title: task.trim(),
+          due_at: taskDue || null,
+        })
+      ) {
+        setTask("");
+        setTaskDue("");
+      }
+    } finally {
+      setTaskBusy(false);
+    }
   };
   const remove = async (table: string, id: string) => {
     const db = getSupabase();
@@ -122,13 +181,67 @@ export default function WorkspacePage() {
         />
       </div>
     );
-  const today = new Date().toISOString().slice(0,10);
+  const today = new Date().toISOString().slice(0, 10);
   const upcoming = [
-    ...data.saved.flatMap(v => v.deadline ? [{ id:v.id, label:"Your application target", name:universities.find(u => u.id === v.university_id)?.name || "Saved university", date:v.deadline, href:universities.find(u => u.id === v.university_id) ? "/university/" + universities.find(u => u.id === v.university_id)!.slug : "/universities" }] : []),
-    ...universities.filter(u => data.saved.some(v => v.university_id === u.id)).flatMap(u => u.deadlines.map(d => ({ id:d.id, label:d.student_category, name:d.title, date:deadlineDate(d), href:"/university/" + u.slug + "?tab=Admissions" }))),
-    ...s.scholarships.filter(a => s.savedScholarships.includes(a.id) && a.deadline).map(a => ({ id:a.id, label:"Saved scholarship", name:a.name, date:a.deadline!, href:"/scholarships/" + a.slug })),
-    ...data.checklist.filter(t => !t.done && t.due_at).map(t => ({ id:t.id, label:"Your checklist", name:t.title, date:t.due_at!, href:"/dashboard" })),
-  ].filter(item => item.date >= today).sort((a,b) => a.date.localeCompare(b.date)).slice(0,5);
+    ...data.saved.flatMap((v) =>
+      v.deadline
+        ? [
+            {
+              id: v.id,
+              label: "Your application target",
+              name:
+                universities.find((u) => u.id === v.university_id)?.name ||
+                "Saved university",
+              date: v.deadline,
+              href: universities.find((u) => u.id === v.university_id)
+                ? "/university/" +
+                  universities.find((u) => u.id === v.university_id)!.slug
+                : "/universities",
+            },
+          ]
+        : [],
+    ),
+    ...universities
+      .filter((u) => data.saved.some((v) => v.university_id === u.id))
+      .flatMap((u) =>
+        u.deadlines.map((d) => ({
+          id: d.id,
+          label: d.student_category,
+          name: d.title,
+          date: deadlineDate(d),
+          href: "/university/" + u.slug + "?tab=Admissions",
+        })),
+      ),
+    ...s.scholarships
+      .filter((a) => s.savedScholarships.includes(a.id) && a.deadline)
+      .map((a) => ({
+        id: a.id,
+        label: "Saved scholarship",
+        name: a.name,
+        date: a.deadline!,
+        href: "/scholarships/" + a.slug,
+      })),
+    ...data.checklist
+      .filter((t) => !t.done && t.due_at)
+      .map((t) => ({
+        id: t.id,
+        label: "Your checklist",
+        name: t.title,
+        date: t.due_at!,
+        href: "/dashboard",
+      })),
+  ]
+    .filter((item) => validPlanDate(item.date) && item.date >= today)
+    .sort((a, b) => a.date.localeCompare(b.date))
+    .slice(0, 5);
+  const priorityTasks = prioritizeTasks(data.checklist);
+  const completed = data.checklist.filter((t) => t.done).length;
+  const progress = data.checklist.length
+    ? Math.round((completed / data.checklist.length) * 100)
+    : 0;
+  const overdue = priorityTasks.filter(
+    (t) => validPlanDate(t.due_at) && t.due_at < today,
+  ).length;
   const shown = data.saved.filter(
     (v) =>
       list === "all" ||
@@ -169,20 +282,35 @@ export default function WorkspacePage() {
           <Settings size={17} />
           My profile
         </Link>
+        {s.profile?.role === "admin" && (
+          <Link className="workspace-admin-link" href={STAFF_PATH}>
+            <ShieldCheck size={17} /> Admin console
+          </Link>
+        )}
       </aside>
       <div className="student-content">
-        <header className="page-intro">
-          <div className="section-caption">Let’s make progress</div>
-          <h1>
-            {dashboard
-              ? `Hello, ${s.profile?.display_name?.split(" ")[0] || "you"}.`
-              : "Your shortlist."}
-          </h1>
-          <p>
-            A little closer to your next chapter. Here’s where you left off.
-          </p>
+        <header className="page-intro workspace-intro">
+          <div>
+            <div className="section-caption">Let’s make progress</div>
+            <h1>
+              {dashboard
+                ? `Hello, ${s.profile?.display_name?.split(" ")[0] || "you"}.`
+                : "Your shortlist."}
+            </h1>
+            <p>
+              Your saved options and application plan. Choose one next step and
+              keep moving.
+            </p>
+          </div>
+          <Link className="button button-secondary" href="/universities">
+            <Plus size={16} /> Find a university
+          </Link>
         </header>
-        {loading && <p className="workspace-loading" role="status">Updating your workspace…</p>}
+        {loading && (
+          <p className="workspace-loading" role="status">
+            Updating your workspace…
+          </p>
+        )}
         {error && (
           <div className="error-banner">
             {error}
@@ -204,11 +332,18 @@ export default function WorkspacePage() {
         </div>
         {dashboard && (
           <section className="student-summary">
-            <div>
-              <h2>Your application plan</h2>
+            <div className="planner-progress">
+              <div className="planner-heading">
+                <span>
+                  <ListChecks size={18} /> Your next steps
+                </span>
+                <strong>{progress}%</strong>
+              </div>
               <p>
-                {data.checklist.filter((t) => t.done).length} of{" "}
-                {data.checklist.length} steps completed
+                {completed} of {data.checklist.length} tasks completed
+                {overdue > 0 && (
+                  <span className="planner-overdue"> · {overdue} overdue</span>
+                )}
               </p>
               <div
                 className="student-progress-track"
@@ -216,36 +351,113 @@ export default function WorkspacePage() {
                 aria-label="Application checklist progress"
                 aria-valuemin={0}
                 aria-valuemax={100}
-                aria-valuenow={
-                  data.checklist.length
-                    ? Math.round(
-                        (data.checklist.filter((t) => t.done).length /
-                          data.checklist.length) *
-                          100,
-                      )
-                    : 0
-                }
+                aria-valuenow={progress}
               >
                 <span
                   style={{
-                    width: `${data.checklist.length ? (data.checklist.filter((t) => t.done).length / data.checklist.length) * 100 : 0}%`,
+                    width: `${progress}%`,
                   }}
                 />
               </div>
-              <div className="student-next">
-                <button onClick={() => setTab("Checklist")}>
-                  {data.checklist.find((t) => !t.done)?.title ||
-                    "Add your next step"}
-                  <ArrowRight size={15} />
-                </button>
+              <div className="planner-priorities">
+                {priorityTasks.slice(0, 3).map((t) => (
+                  <div key={t.id}>
+                    <Checkbox
+                      aria-label={"Complete " + t.title}
+                      checked={t.done}
+                      onCheckedChange={async (v) => {
+                        const { error } = await getSupabase()!
+                          .from("user_checklist")
+                          .update({ done: !!v })
+                          .eq("id", t.id)
+                          .eq("user_id", s.user!.id);
+                        if (error) toast.error("Could not update task");
+                        else await reload();
+                      }}
+                    />
+                    <span>
+                      {t.title}
+                      {validPlanDate(t.due_at) && (
+                        <small
+                          className={
+                            t.due_at < today ? "planner-overdue" : undefined
+                          }
+                        >
+                          {dueLabel(t.due_at, today)}
+                        </small>
+                      )}
+                    </span>
+                  </div>
+                ))}
+                {!priorityTasks.length && (
+                  <p>
+                    <CheckCircle2 size={17} />{" "}
+                    {data.checklist.length
+                      ? "All tasks complete. Ready for the next step?"
+                      : "Add a task to start your application plan."}
+                  </p>
+                )}
               </div>
+              <form className="planner-add-task" onSubmit={addTask}>
+                <input
+                  aria-label="Next application task"
+                  placeholder="What needs to happen next?"
+                  value={task}
+                  onChange={(e) => setTask(e.target.value)}
+                  maxLength={300}
+                  required
+                  disabled={taskBusy}
+                />
+                <input
+                  type="date"
+                  aria-label="Task due date (optional)"
+                  value={taskDue}
+                  onChange={(e) => setTaskDue(e.target.value)}
+                  disabled={taskBusy}
+                />
+                <button
+                  className="button button-primary"
+                  disabled={taskBusy || !task.trim()}
+                >
+                  <Plus size={16} /> Add
+                </button>
+              </form>
+              <button className="text-link" onClick={() => setTab("Checklist")}>
+                Open all tasks <ArrowRight size={14} />
+              </button>
             </div>
-            <div className="student-next">
-              <h2>Coming up next</h2>
-              {upcoming.map(item => <Link key={item.id} href={item.href}><span>{item.name}<small className="caption">{item.label}</small></span><time dateTime={item.date}>{item.date}</time></Link>)}
-              {!upcoming.length && <p>Save a university or award, or add a dated checklist item to start your plan.</p>}
-              <Link href="/universities">
-                Discover your next university
+            <div className="planner-calendar">
+              <h2>
+                <CalendarDays size={18} /> Upcoming dates
+              </h2>
+              {upcoming.map((item) => (
+                <Link key={item.id} href={item.href}>
+                  <span className="planner-date">
+                    <time dateTime={item.date}>
+                      {new Intl.DateTimeFormat("en", {
+                        month: "short",
+                        day: "numeric",
+                        timeZone: "UTC",
+                      }).format(new Date(item.date))}
+                    </time>
+                  </span>
+                  <span>
+                    {item.name}
+                    <small>
+                      {item.label} · {dueLabel(item.date, today)}
+                    </small>
+                  </span>
+                  <ArrowRight size={14} />
+                </Link>
+              ))}
+              {!upcoming.length && (
+                <p>
+                  Save a university or award, or add a dated checklist item to
+                  start your plan.
+                </p>
+              )}
+              <Link className="text-link" href="/scholarships">
+                Explore funding
                 <ArrowRight size={15} />
               </Link>
             </div>
@@ -262,6 +474,7 @@ export default function WorkspacePage() {
           ].map((v) => (
             <button
               className={tab === v ? "active" : ""}
+              aria-pressed={tab === v}
               key={v}
               onClick={() => setTab(v)}
             >
@@ -426,7 +639,12 @@ export default function WorkspacePage() {
                       <h3>{a.name}</h3>
                       <p>Deadline: {a.deadline || "Not published"}</p>
                     </div>
-                    <Link className="text-link" href={a.slug ? "/scholarships/" + a.slug : "/scholarships"}>
+                    <Link
+                      className="text-link"
+                      href={
+                        a.slug ? "/scholarships/" + a.slug : "/scholarships"
+                      }
+                    >
                       Review award →
                     </Link>
                   </div>
@@ -515,25 +733,32 @@ export default function WorkspacePage() {
         )}
         {tab === "Checklist" && (
           <section className="panel">
-            <h2>The next small step.</h2>
-            <form
-              className="assistant-form"
-              onSubmit={(e) => {
-                e.preventDefault();
-                if (task.trim()) {
-                  void write("user_checklist", { title: task.trim() });
-                  setTask("");
-                }
-              }}
-            >
+            <h2>
+              <ListChecks size={19} /> Application checklist
+            </h2>
+            <form className="assistant-form" onSubmit={addTask}>
               <input
                 aria-label="New checklist task"
                 placeholder="Request transcript, check funding deadline…"
                 value={task}
                 onChange={(e) => setTask(e.target.value)}
                 maxLength={300}
+                required
+                disabled={taskBusy}
               />
-              <button className="button button-primary">Add task</button>
+              <input
+                type="date"
+                aria-label="New task due date (optional)"
+                value={taskDue}
+                onChange={(e) => setTaskDue(e.target.value)}
+                disabled={taskBusy}
+              />
+              <button
+                className="button button-primary"
+                disabled={taskBusy || !task.trim()}
+              >
+                <Plus size={16} /> Add task
+              </button>
             </form>
             {data.checklist.map((t) => (
               <div className="workspace-row" key={t.id}>
@@ -552,9 +777,40 @@ export default function WorkspacePage() {
                       });
                   }}
                 />
-                <div style={{ textDecoration: t.done ? "line-through" : "" }}>
+                <div
+                  className="task-description"
+                  style={{ textDecoration: t.done ? "line-through" : "" }}
+                >
                   {t.title}
+                  {validPlanDate(t.due_at) && (
+                    <small
+                      className={
+                        !t.done && t.due_at < today
+                          ? "planner-overdue"
+                          : undefined
+                      }
+                    >
+                      <Clock3 size={12} />{" "}
+                      {t.done ? "Completed" : dueLabel(t.due_at, today)}
+                    </small>
+                  )}
                 </div>
+                <input
+                  className="task-due-input"
+                  type="date"
+                  aria-label={"Due date for " + t.title}
+                  defaultValue={t.due_at || ""}
+                  key={t.id + (t.due_at || "")}
+                  onChange={async (e) => {
+                    const { error } = await getSupabase()!
+                      .from("user_checklist")
+                      .update({ due_at: e.target.value || null })
+                      .eq("id", t.id)
+                      .eq("user_id", s.user!.id);
+                    if (error) toast.error("Could not save date");
+                    else await reload();
+                  }}
+                />
                 <button onClick={() => remove("user_checklist", t.id)}>
                   Remove
                 </button>

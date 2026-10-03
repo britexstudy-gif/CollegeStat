@@ -30,10 +30,10 @@
     "scope": "First-year undergraduate applicants; confirm programme-specific rules"
   },
   "harvard.edu": {
-    "checked_at": "2026-09-28",
+    "checked_at": "2026-10-03",
     "requirements_source": "https://college.harvard.edu/admissions/apply/application-requirements",
     "requirements": [
-      "Complete the Common Application or Coalition Application by Scoir and the Harvard supplement.",
+      "Complete the Common Application and Harvard questions with the required supporting materials.",
       "Provide school reports, transcripts and teacher recommendations.",
       "Review the current SAT/ACT requirement and the published exceptional-circumstances policy."
     ],

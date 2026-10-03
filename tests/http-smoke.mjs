@@ -207,14 +207,29 @@ console.log("PASS scholarship records render before hydration");
 const invalidGuide = await fetch(base + "/resources/no-such-guide");
 assert.equal(invalidGuide.status, 404);
 console.log("PASS invalid resource route is a real 404");
-assert.ok((await invalidGuide.text()).includes('/images/status/not-found-collage.webp'));
-const statusArtwork=await fetch(base+'/images/status/not-found-collage.webp');
-assert.equal(statusArtwork.status,200);
-assert.ok(statusArtwork.headers.get('content-type')?.includes('image/webp'));
-assert.equal((await fetch(base+'/admin')).status,404);
-assert.ok(signIn.includes('id="auth-title"') && signIn.includes('id="auth-email"'));
-assert.ok(!signIn.includes('Continue with Google'),'Unconfigured OAuth is hidden');
-console.log('PASS illustrated recovery, discreet staff entry and dedicated sign-in');
+assert.ok(
+  (await invalidGuide.text()).includes("/images/status/not-found-collage.webp"),
+);
+const statusArtwork = await fetch(
+  base + "/images/status/not-found-collage.webp",
+);
+assert.equal(statusArtwork.status, 200);
+assert.ok(statusArtwork.headers.get("content-type")?.includes("image/webp"));
+assert.equal((await fetch(base + "/admin")).status, 404);
+assert.ok(
+  signIn.includes('id="auth-title"') && signIn.includes('id="auth-email"'),
+);
+assert.ok(signIn.includes("auth-access-panel") && signIn.includes("auth-art"));
+assert.ok(signIn.includes("Google") && signIn.includes("Telegram"));
+const providerResponse = await fetch(base + "/api/auth/providers");
+assert.equal(providerResponse.status, 200);
+const available = (await providerResponse.json()).available;
+assert.equal(available.email, true);
+assert.equal(available.google, false);
+assert.equal(available.apple, false);
+console.log(
+  "PASS illustrated recovery, discreet staff entry and dedicated sign-in",
+);
 for (const asset of ["common-app", "ucas"]) {
   const response = await fetch(base + "/logos/applications/" + asset + ".svg");
   assert.equal(response.status, 200);
@@ -245,7 +260,12 @@ assert.ok(compareHTML.includes("Application requirements"));
 assert.ok(compareHTML.includes("Comparison category"));
 assert.ok(compareHTML.includes("Only differences"));
 assert.ok(compareHTML.includes("Move Harvard University left"));
-assert.ok(compareHTML.includes("Indexed research works"));
+assert.ok(compareHTML.includes("Essentials"));
+assert.ok(compareHTML.includes("Hide empty rows"));
+assert.ok(
+  !compareHTML.includes("Indexed research works"),
+  "Essentials keeps the initial comparison focused",
+);
 console.log("PASS populated comparison before hydration");
 assert.ok(applyHTML.includes('role="tablist"'));
 assert.ok(!applyHTML.includes("View section"));
@@ -298,28 +318,88 @@ for (const name of [
   assert.ok((await page.text()).includes("QS"));
   console.log("PASS restored ranked profile", name);
 }
-for (const [name,mark,requirement] of [
-  ["University of Toronto","/logos/toronto-wordmark.svg","Senior English course"],
-  ["University of Cambridge","/logos/cambridge-wordmark.svg","normal offer condition"],
-  ["The University of Hong Kong","/logos/hku.svg",null],
+for (const [name, mark, requirement] of [
+  [
+    "University of Toronto",
+    "/logos/toronto-wordmark.svg",
+    "Senior English course",
+  ],
+  [
+    "University of Cambridge",
+    "/logos/cambridge-wordmark.svg",
+    "normal offer condition",
+  ],
+  ["The University of Hong Kong", "/logos/hku.svg", null],
 ]) {
-  const matches=await (await fetch(base+"/api/catalog?mode=search&q="+encodeURIComponent(name))).json();
-  const institution=matches.find(u=>u.name===name);
-  assert.ok(institution,name);
-  const admissions=await (await fetch(base+"/university/"+institution.slug+"?tab=Admissions")).text();
+  const matches = await (
+    await fetch(base + "/api/catalog?mode=search&q=" + encodeURIComponent(name))
+  ).json();
+  const institution = matches.find((u) => u.name === name);
+  assert.ok(institution, name);
+  const admissions = await (
+    await fetch(base + "/university/" + institution.slug + "?tab=Admissions")
+  ).text();
   assert.ok(admissions.includes(mark));
-  if(requirement) assert.ok(admissions.includes(requirement));
-  const image=await fetch(base+mark);
-  assert.equal(image.status,200);
+  if (requirement) assert.ok(admissions.includes(requirement));
+  const image = await fetch(base + mark);
+  assert.equal(image.status, 200);
   assert.ok(image.headers.get("content-type")?.includes("image/svg+xml"));
-  if(name!=="University of Toronto") {
-    const gallery=await (await fetch(base+"/university/"+institution.slug+"?tab=Gallery")).text();
-    assert.ok(gallery.includes("/images/campuses/"+institution.id+".jpg"));
+  if (name !== "University of Toronto") {
+    const gallery = await (
+      await fetch(base + "/university/" + institution.slug + "?tab=Gallery")
+    ).text();
+    assert.ok(gallery.includes("/images/campuses/" + institution.id + ".jpg"));
     assert.ok(gallery.includes("creativecommons.org"));
   }
-  console.log("PASS reviewed institutional media and requirements",name);
+  console.log("PASS reviewed institutional media and requirements", name);
 }
-assert.ok(oxfordApply.includes("TOEFL acceptance policy") && oxfordApply.includes("not accepted while under review"));
-const ranked=await (await fetch(base+"/rankings")).text();
-assert.ok(ranked.includes("/logos/hku.svg") && ranked.includes("View university"));
-console.log("PASS sourced language policy and regional profile links");
+assert.ok(
+  oxfordApply.includes("TOEFL acceptance policy") &&
+    oxfordApply.includes("not accepted while under review"),
+);
+const ranked = await (await fetch(base + "/rankings")).text();
+assert.ok(!ranked.includes("Compare regional positions"));
+const qsRows = await (
+  await fetch(base + "/api/catalog?mode=ranking-table&provider=qs&q=Stanford")
+).json();
+const stanfordRank = qsRows.rows.find(
+  (row) => row.university?.slug === "stanford",
+);
+assert.equal(stanfordRank.rank, "=2");
+assert.equal(
+  stanfordRank.university.rankings.find((row) => row.provider === "qs")
+    .rank_label,
+  "=2",
+);
+assert.ok(
+  applyHTML.includes("entry-policy") &&
+    applyHTML.includes("TOEFL iBT · 1–6 scale"),
+);
+const refreshedMit = await (await fetch(base + "/api/catalog?slug=mit")).json();
+assert.ok(
+  refreshedMit.requirements.some(
+    (row) => row.label === "SAT or ACT" && row.required === true,
+  ),
+);
+const stanfordRequirements = await (
+  await fetch(base + "/api/catalog?slug=stanford")
+).json();
+assert.ok(
+  stanfordRequirements.requirements.some(
+    (row) =>
+      row.label === "English proficiency exams" && row.required === false,
+  ),
+);
+assert.ok(
+  !stanfordRequirements.requirements.some((row) => row.kind === "IELTS"),
+);
+assert.ok(
+  (
+    await (
+      await fetch(base + "/universities?admission_min=10&admission_max=80")
+    ).text()
+  ).includes("Minimum admission rate"),
+);
+console.log(
+  "PASS edition-consistent ranking badges, current language policies and precise percentage controls",
+);

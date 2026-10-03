@@ -62,7 +62,11 @@ export function Navbar() {
     } catch {}
   };
   return (
-    <header ref={glass} data-glass="rim" className={"navbar liquid-glass " + (scrolled ? "scrolled" : "")}>
+    <header
+      ref={glass}
+      data-glass="rim"
+      className={"site-navigation " + (scrolled ? "scrolled" : "")}
+    >
       <Brand />
       <nav aria-label="Main navigation">
         {[
@@ -84,6 +88,16 @@ export function Navbar() {
         ))}
       </nav>
       <div className="navbar-actions">
+        {s.profile?.role === "admin" && (
+          <Link
+            className="staff-entry"
+            href={STAFF_PATH}
+            aria-label="Open admin workspace"
+          >
+            <SlidersHorizontal size={16} />
+            <span>Admin</span>
+          </Link>
+        )}
         <button
           className="nav-search"
           aria-label="Search CollegeStat"
@@ -108,7 +122,12 @@ export function Navbar() {
                 </button>
               </DropdownMenuTrigger>
               <DropdownMenuContent align="end" className="liquid-glass">
-                <DropdownMenuItem asChild><Link href="/dashboard"><LayoutDashboard/>My dashboard</Link></DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link href="/dashboard">
+                    <LayoutDashboard />
+                    My dashboard
+                  </Link>
+                </DropdownMenuItem>
                 <DropdownMenuItem asChild>
                   <Link href="/profile">
                     <User />
@@ -160,7 +179,12 @@ export function CompareTray() {
   const list = s.compare
     .map((id) => s.universities.find((u) => u.id === id))
     .filter(Boolean);
-  if (!list.length || path === "/compare" || isStaffPath(path) || path?.startsWith('/auth/'))
+  if (
+    !list.length ||
+    path === "/compare" ||
+    isStaffPath(path) ||
+    path?.startsWith("/auth/")
+  )
     return null;
   return (
     <div className="compare-tray liquid-glass">
@@ -172,7 +196,9 @@ export function CompareTray() {
         {list.map((u) => (
           <div key={u!.id}>
             <UniversityLogo university={u!} size="sm" />
-            <span>{u!.short_name === "S" ? "Stanford" : u!.short_name || u!.name}</span>
+            <span>
+              {u!.short_name === "S" ? "Stanford" : u!.short_name || u!.name}
+            </span>
             <button
               aria-label={"Remove " + u!.name + " from comparison"}
               onClick={() => s.toggleCompare(u!.id)}
@@ -221,7 +247,6 @@ function Footer() {
           <Link href="/compare">Compare</Link>
           <Link href="/scholarships">Scholarships</Link>
           <Link href="/resources">Resources</Link>
-          <Link href="/rankings#regional-tables">Regional rankings</Link>
           <Link href="/support">Support CollegeStat</Link>
           <Link href="/dashboard">Dashboard</Link>
           <Link href="/sources">Sources</Link>
@@ -230,7 +255,9 @@ function Footer() {
           ) : (
             <button onClick={s.openAuth}>Sign in</button>
           )}
-          {s.profile?.role === "admin" && <Link href={STAFF_PATH}>Staff console</Link>}
+          {s.profile?.role === "admin" && (
+            <Link href={STAFF_PATH}>Staff console</Link>
+          )}
         </div>
       </div>
       <div className="footer-bottom">
@@ -246,6 +273,7 @@ function Footer() {
   );
 }
 export function SiteShell({ children }: { children: React.ReactNode }) {
+  const dockGlass = useLiquidGlass<HTMLElement>();
   const path = usePathname(),
     s = useCollege();
   const admin = isStaffPath(path);
@@ -285,7 +313,9 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
         <>
           <Footer />
           <nav
-            className="mobile-nav liquid-glass" data-glass="rim"
+            ref={dockGlass}
+            className="site-dock"
+            data-glass="rim"
             aria-label="Mobile navigation"
           >
             {(

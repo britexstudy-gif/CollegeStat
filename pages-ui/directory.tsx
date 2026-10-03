@@ -20,7 +20,7 @@ import {
   AccordionContent,
 } from "@/components/ui/accordion";
 import { Checkbox } from "@/components/ui/checkbox";
-import { Slider } from "@/components/ui/slider";
+import { PercentageRange } from "@/components/college/percentage-range";
 import {
   Sheet,
   SheetContent,
@@ -186,7 +186,19 @@ export default function Directory({
           Reset all
         </button>
       </div>
-      <Accordion type="multiple" defaultValue={["Location", "Cost"]}>
+      <Accordion
+        type="multiple"
+        defaultValue={[
+          "Location",
+          "Cost",
+          ...(f.admission_min !== undefined ||
+          f.admission_max !== undefined ||
+          f.ielts_max !== undefined
+            ? ["Admissions"]
+            : []),
+          ...(f.field || f.degree || f.language ? ["Academics"] : []),
+        ]}
+      >
         <AccordionItem value="Location">
           <AccordionTrigger>Location</AccordionTrigger>
           <AccordionContent>
@@ -267,18 +279,10 @@ export default function Directory({
         <AccordionItem value="Admissions">
           <AccordionTrigger>Admissions</AccordionTrigger>
           <AccordionContent>
-            <div className="split-heading caption">
-              <span>Admission rate</span>
-              <span>
-                {f.admission_min ?? 0}–{f.admission_max ?? 100}%
-              </span>
-            </div>
-            <Slider
-              aria-label="Admission rate range"
-              min={0}
-              max={100}
-              value={[f.admission_min ?? 0, f.admission_max ?? 100]}
-              onValueCommit={(v) =>
+            <PercentageRange
+              minimum={f.admission_min ?? 0}
+              maximum={f.admission_max ?? 100}
+              onCommit={(v) =>
                 update({ admission_min: v[0], admission_max: v[1] })
               }
             />
@@ -370,7 +374,7 @@ export default function Directory({
           update(parsed.recognized ? parsed.filters : { q: parsed.filters.q });
         }}
       >
-        <div ref={searchGlass} data-glass="rim" className="directory-search liquid-glass" style={{ flex: 1 }}>
+        <div ref={searchGlass} data-glass="rim" className="catalogue-search">
           <Search size={18} />
           <input
             aria-label="Search universities"
@@ -619,6 +623,7 @@ export default function Directory({
                   <UniversityCard
                     key={u.id}
                     university={u}
+                    layout={view === "list" ? "list" : "grid"}
                     onPreview={() => setQuick(u)}
                   />
                 ))}
@@ -661,7 +666,11 @@ export default function Directory({
         </section>
       </div>
       <Sheet open={open} onOpenChange={setOpen}>
-        <SheetContent side="bottom" className="mobile-filter-sheet" data-glass="panel">
+        <SheetContent
+          side="bottom"
+          className="mobile-filter-sheet"
+          data-glass="panel"
+        >
           <SheetTitle>Refine your research</SheetTitle>
           <SheetDescription>
             Changes update results immediately.

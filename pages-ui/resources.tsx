@@ -231,10 +231,7 @@ export default function Resources({ id }: { id?: string }) {
         <h2>Learn by exploring.</h2>
         <p>See what the data says, then ask what it means for you.</p>
         <div>
-          <Link href="/rankings">Compare ranking perspectives ↗</Link>
-          <Link href="/rankings#regional-tables">
-            Explore regional rankings ↗
-          </Link>
+          <Link href="/rankings">World & regional rankings ↗</Link>
           <Link href="/support">Support CollegeStat ↗</Link>
         </div>
       </section>

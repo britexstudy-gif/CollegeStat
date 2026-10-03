@@ -1,5 +1,4 @@
 "use client";
-import { RegionalRankingLibrary } from "@/components/college/regional-ranking-library";
 import { regions } from "@/lib/regions";
 import { useEffect, useState } from "react";
 import { useSearchParams, useRouter } from "next/navigation";
@@ -9,10 +8,14 @@ import { publicRequest } from "@/lib/supabase/catalogue";
 import { rankingPublishers, type Publisher } from "@/lib/ranking-highlights";
 import type { University } from "@/lib/domain";
 import type { RankingTable } from "@/server/ranking-table";
-import { UniversityLogo, type UniversityIdentity } from "@/components/college/primitives";
+import { UniversityLogo } from "@/components/college/primitives";
+import {
+  regionalRanksForUniversity,
+  regionalRankLabel,
+} from "@/lib/regional-rankings";
 import { RankingBadges } from "@/components/college/ranking-badges";
 import { PublisherMark } from "@/components/college/publisher-mark";
-export default function Rankings({ regionalUniversities = {} }: { regionalUniversities?: Record<string, UniversityIdentity> }) {
+export default function Rankings() {
   const params = useSearchParams(),
     router = useRouter();
   const provider = (
@@ -83,15 +86,8 @@ export default function Rankings({ regionalUniversities = {} }: { regionalUniver
   return (
     <div className="research-page rankings-page">
       <header className="page-intro">
-        <h1>
-          One university.
-          <br />
-          <em>More than one ranking.</em>
-        </h1>
-        <p>
-          Explore each publisher’s perspective, from the first position to the
-          final band.
-        </p>
+        <h1>University rankings</h1>
+        <p>World and regional positions, with each publisher’s source.</p>
       </header>
       <nav className="ranking-provider-tabs" aria-label="Ranking publisher">
         {[
@@ -140,11 +136,23 @@ export default function Rankings({ regionalUniversities = {} }: { regionalUniver
             </option>
           ))}
         </select>
-        <select aria-label="Ranking region" value={region} onChange={e => update({region: e.target.value, country: ""})}>
-          <option value="">All regions</option>{regions.map(r => <option key={r}>{r}</option>)}
+        <select
+          aria-label="Ranking region"
+          value={region}
+          onChange={(e) => update({ region: e.target.value, country: "" })}
+        >
+          <option value="">All regions</option>
+          {regions.map((r) => (
+            <option key={r}>{r}</option>
+          ))}
         </select>
-        <select aria-label="Ranking order" value={sort} onChange={e => update({sort: e.target.value})}>
-          <option value="asc">Top first</option><option value="desc">Bottom first</option>
+        <select
+          aria-label="Ranking order"
+          value={sort}
+          onChange={(e) => update({ sort: e.target.value })}
+        >
+          <option value="asc">Top first</option>
+          <option value="desc">Bottom first</option>
         </select>
         <span>{data?.total.toLocaleString() || "…"} institutions</span>
       </div>
@@ -155,9 +163,16 @@ export default function Rankings({ regionalUniversities = {} }: { regionalUniver
             : "Selected published records · coverage is incomplete"}
         </p>
       )}
-      {(region || country) && <p className="caption">Showing {region || country} within the publisher’s world table. These remain world positions, not a separate regional ranking.</p>}
+      {(region || country) && (
+        <p className="caption">
+          Showing {region || country} within the publisher’s world table. These
+          remain world positions, not a separate regional ranking.
+        </p>
+      )}
       <div className="ranking-list-heading">
-        <span>{provider === "leiden" ? "Publications" : "World rank"}</span>
+        <span>
+          {provider === "leiden" ? "Publications" : "World / regional"}
+        </span>
         <span>University</span>
         <span>Across the rankings</span>
       </div>
@@ -172,15 +187,33 @@ export default function Rankings({ regionalUniversities = {} }: { regionalUniver
       ) : (
         data.rows.map((r) => (
           <article className="ranking-university-row" key={r.key}>
-            <a
-              href={r.url}
-              className={`ranking-position ${provider === "leiden" ? "research-count" : ""}`}
-              target="_blank"
-              rel="noreferrer"
-              aria-label={`${r.name}: ${r.rank}, view source`}
-            >
-              {r.rank}
-            </a>
+            <div className="ranking-position-pair">
+              <a
+                href={r.url}
+                className={`ranking-position ${provider === "leiden" ? "research-count" : ""}`}
+                target="_blank"
+                rel="noreferrer"
+                aria-label={`${r.name}: ${r.rank}, view source`}
+              >
+                {r.rank}
+              </a>
+              {r.university &&
+                regionalRanksForUniversity(r.university).map((regional) => (
+                  <a
+                    className="regional-position"
+                    key={regional.scope}
+                    href={regional.source_url}
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label={`${r.name}: ${regionalRankLabel(regional.rank_label)}, QS ${regional.scope} ${regional.year}`}
+                  >
+                    <strong>{regionalRankLabel(regional.rank_label)}</strong>
+                    <small>
+                      QS {regional.scope} {regional.year}
+                    </small>
+                  </a>
+                ))}
+            </div>
             {r.university ? (
               <Link
                 className="ranking-university-identity"
@@ -272,15 +305,10 @@ export default function Rankings({ regionalUniversities = {} }: { regionalUniver
         </button>
       </nav>
       <p className="ranking-footnote">
-        QS 2027, THE 2026 and ARWU 2026 retain every ranked entry, including
-        universities awaiting a profile match. “=” means a tie; bands remain
-        bands. An absent badge is missing data, not an unranked verdict. Leiden currently contains selected records. Ranking editions are not
-        observation years for all their underlying indicators.
+        “=” marks a tie. Bands retain their published range. Green positions are
+        separately sourced QS regional ranks; coverage is partial. A missing
+        badge means no linked record. Leiden contains selected records.
       </p>
-      <RegionalRankingLibrary universities={regionalUniversities} />
-      <Link href="/rankings?region=Asia" className="text-link">
-        Explore universities in Asia →
-      </Link>
     </div>
   );
 }

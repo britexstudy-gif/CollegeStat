@@ -4,6 +4,7 @@ import { useState } from "react";
 import { officialLogo } from "@/lib/official-logos";
 import { universityMarks } from "@/lib/university-assets";
 import Image from "next/image";
+import { useLiquidGlass } from "./use-liquid-glass";
 import {
   ArrowUpRight,
   ExternalLink,
@@ -45,7 +46,16 @@ export function Brand() {
     </Link>
   );
 }
-export type UniversityIdentity = Pick<University, "name" | "slug" | "website" | "logo_url" | "website_icon_url" | "short_name" | "brand_color">;
+export type UniversityIdentity = Pick<
+  University,
+  | "name"
+  | "slug"
+  | "website"
+  | "logo_url"
+  | "website_icon_url"
+  | "short_name"
+  | "brand_color"
+>;
 export function UniversityLogo({
   university: u,
   size = "md",
@@ -128,9 +138,15 @@ export function Choice({
   label: string;
   className?: string;
 }) {
+  const glass = useLiquidGlass<HTMLButtonElement>();
   return (
     <Select value={value} onValueChange={onChange}>
-      <SelectTrigger aria-label={label} className={"choice " + className}>
+      <SelectTrigger
+        ref={glass}
+        data-glass="rim"
+        aria-label={label}
+        className={"choice filter-choice " + className}
+      >
         <SelectValue />
       </SelectTrigger>
       <SelectContent>

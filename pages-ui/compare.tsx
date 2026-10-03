@@ -45,7 +45,6 @@ import {
   regionalRanksForUniversity,
   regionalRankLabel,
 } from "@/lib/regional-rankings";
-import { useLiquidGlass } from "@/components/college/use-liquid-glass";
 import { comparisonEvidence } from "@/lib/comparison-evidence";
 import { EvidenceBars } from "@/components/college/evidence-bars";
 
@@ -62,6 +61,25 @@ type ComparisonRow = {
   label: string;
   cells: Cell[];
 };
+const essentialRows = new Set([
+  "location",
+  "type",
+  "founded",
+  "application",
+  "requirements",
+  "admission",
+  "tuition",
+  "enrollment",
+  "qs",
+  "the",
+  "arwu",
+  "linked-awards",
+]);
+const inCategory = (row: ComparisonRow, category: string) =>
+  category === "All" ||
+  (category === "Essentials"
+    ? essentialRows.has(row.id)
+    : row.group === category);
 const groups = [
   "All",
   "Overview",
@@ -127,7 +145,6 @@ export default function Compare({
   initialUniversities?: University[];
   initialError?: string;
 }) {
-  const glass = useLiquidGlass<HTMLDivElement>();
   const s = useCollege(),
     params = useSearchParams(),
     router = useRouter();
@@ -145,9 +162,9 @@ export default function Compare({
     [matches, setMatches] = useState<University[]>([]),
     [searching, setSearching] = useState(false),
     [searchError, setSearchError] = useState(""),
-    [focus, setFocus] = useState("All"),
+    [focus, setFocus] = useState("Essentials"),
     [differences, setDifferences] = useState(false),
-    [hideMissing, setHideMissing] = useState(false),
+    [hideMissing, setHideMissing] = useState(true),
     [years, setYears] = useState(true),
     [charts, setCharts] = useState(false),
     [displayCurrency, setDisplayCurrency] = useState("original"),
@@ -303,13 +320,41 @@ export default function Compare({
           brief.checked_at
         : structured ||
           "Planning checklist; confirm exact requirements with the university";
-      return linkCell(
+      const cell = linkCell(
         brief?.requirements.slice(0, 2).join(" ") ||
           structured ||
           "View requirements checklist",
         "/university/" + u.slug + "?tab=Admissions",
         detail,
       );
+      return {
+        ...cell,
+        node: (
+          <>
+            <Link
+              className="comparison-guidance-link"
+              href={"/university/" + u.slug + "?tab=Admissions"}
+            >
+              Application requirements <ArrowUpRight size={13} />
+            </Link>
+            <small>{detail}</small>
+            {(brief?.requirements.length || structured) && (
+              <details className="comparison-detail">
+                <summary>Read checklist</summary>
+                {brief?.requirements.length ? (
+                  <ul>
+                    {brief.requirements.map((item) => (
+                      <li key={item}>{item}</li>
+                    ))}
+                  </ul>
+                ) : (
+                  <p>{structured}</p>
+                )}
+              </details>
+            )}
+          </>
+        ),
+      };
     }),
   );
   addRow(
@@ -526,19 +571,32 @@ export default function Compare({
     ),
   );
   const extraEvidence = rows.map(comparisonEvidence);
-  const evidenceDefinitions = new Map(extraEvidence.flatMap(items => items.map(item => [item.id, item] as const)));
+  const evidenceDefinitions = new Map(
+    extraEvidence.flatMap((items) =>
+      items.map((item) => [item.id, item] as const),
+    ),
+  );
   for (const definition of evidenceDefinitions.values()) {
-    addRow(definition.id, definition.group, definition.label, extraEvidence.map(items => {
-      const evidence = items.find(item => item.id === definition.id);
-      return !evidence ? missing : evidence.url ? linkCell(evidence.text, evidence.url, evidence.detail) : textCell(evidence.text, evidence.detail);
-    }));
+    addRow(
+      definition.id,
+      definition.group,
+      definition.label,
+      extraEvidence.map((items) => {
+        const evidence = items.find((item) => item.id === definition.id);
+        return !evidence
+          ? missing
+          : evidence.url
+            ? linkCell(evidence.text, evidence.url, evidence.detail)
+            : textCell(evidence.text, evidence.detail);
+      }),
+    );
   }
   const ordered = groups
     .slice(1)
     .flatMap((group) => comparisonRows.filter((row) => row.group === group));
   const visibleRows = ordered.filter(
     (row) =>
-      (focus === "All" || row.group === focus) &&
+      inCategory(row, focus) &&
       comparisonRowVisible(
         row.cells.map((c) => c.key),
         { onlyDifferences: differences, hideEmpty: hideMissing },
@@ -585,14 +643,19 @@ export default function Compare({
   return (
     <div className="research-page compare-workspace">
       <header className="page-intro">
-        <div className="eyebrow">SIDE BY SIDE</div>
+        <div className="eyebrow">YOUR DECISION WORKSPACE</div>
         <h1>Compare universities.</h1>
         <p>
-          Add two to five universities. Compare the same questions, with sources
-          and reporting years beside the figures.
+          Bring two to five universities together. Start with the essentials,
+          then explore what matters to you.
         </p>
       </header>
-      <section className="comparison-builder" aria-label="Choose universities">
+      <section
+        className={
+          "comparison-builder" + (selectedIDs.length ? " has-selection" : "")
+        }
+        aria-label="Choose universities"
+      >
         <div className="comparison-builder-heading">
           <h2>Your universities</h2>
           <span>{selectedIDs.length}/5 selected</span>
@@ -674,9 +737,11 @@ export default function Compare({
                   ? "No new matches. Try another name or open the directory."
                   : query.trim()
                     ? "Choose a result to add it."
-                    : "Start with a suggestion or search the full directory.")}
+                    : selectedIDs.length
+                      ? "Search to add another university."
+                      : "Start with a suggestion or search the full directory.")}
         </p>
-        {selectedIDs.length < 5 && (
+        {selectedIDs.length < 5 && (!selectedIDs.length || query.trim()) && (
           <div className="comparison-search-results">
             {suggestions.slice(0, query.trim() ? 8 : 4).map((u) => (
               <button
@@ -731,20 +796,12 @@ export default function Compare({
       )}
       {rows.length > 0 ? (
         <>
-          <div ref={glass} data-glass="rim" className="comparison-toolbar">
-            <label>
-              <SlidersHorizontal size={17} aria-hidden="true" />
-              <span>Compare</span>
-              <select
-                aria-label="Comparison category"
-                value={focus}
-                onChange={(event) => setFocus(event.target.value)}
-              >
-                {groups.map((group) => (
-                  <option key={group}>{group}</option>
-                ))}
-              </select>
-            </label>
+          <div className="comparison-toolbar">
+            <div className="comparison-toolbar-title">
+              <SlidersHorizontal size={16} />
+              <strong>Make it your comparison</strong>
+              <span>{rows.length} universities</span>
+            </div>
             <label>
               <span>Currency</span>
               <select
@@ -785,6 +842,36 @@ export default function Compare({
               </button>
             </div>
           </div>
+          <nav
+            className="comparison-categories"
+            aria-label="Comparison category"
+          >
+            {["Essentials", ...groups].map((group) => (
+              <button
+                key={group}
+                type="button"
+                aria-pressed={focus === group}
+                onClick={() => setFocus(group)}
+              >
+                {group === "All" ? "All information" : group}
+                <span>
+                  {
+                    ordered.filter(
+                      (row) =>
+                        inCategory(row, group) &&
+                        comparisonRowVisible(
+                          row.cells.map((c) => c.key),
+                          {
+                            onlyDifferences: differences,
+                            hideEmpty: hideMissing,
+                          },
+                        ),
+                    ).length
+                  }
+                </span>
+              </button>
+            ))}
+          </nav>
           <div className="comparison-view-options">
             {[
               [differences, setDifferences, "Only differences"],
@@ -820,10 +907,13 @@ export default function Compare({
           )}
           {charts &&
             (focus === "All" ||
+              focus === "Essentials" ||
               focus === "Admissions" ||
               focus === "Students") && (
               <div className="comparison-graphs">
-                {(focus === "All" || focus === "Admissions") && (
+                {(focus === "All" ||
+                  focus === "Essentials" ||
+                  focus === "Admissions") && (
                   <EvidenceBars
                     label="Admission rates · latest reported year"
                     max={100}
@@ -842,7 +932,9 @@ export default function Compare({
                     })}
                   />
                 )}
-                {(focus === "All" || focus === "Students") && (
+                {(focus === "All" ||
+                  focus === "Essentials" ||
+                  focus === "Students") && (
                   <EvidenceBars
                     label="Enrollment · latest reported figures"
                     rows={rows.map((u) => {
@@ -862,8 +954,8 @@ export default function Compare({
               </div>
             )}
           <p className="comparison-scroll-hint">
-            Scroll across to see every university. Sources and reporting years
-            can differ.
+            Each figure opens its source. Missing values mean we have no
+            verified figure, never zero.
           </p>
           <div
             className="table-wrap comparison-table-scroll"
@@ -878,7 +970,12 @@ export default function Compare({
               </caption>
               <thead>
                 <tr>
-                  <th scope="col">What matters</th>
+                  <th scope="col">
+                    <span className="comparison-table-label">
+                      {focus === "All" ? "All information" : focus}
+                    </span>
+                    <small>{visibleRows.length} points to compare</small>
+                  </th>
                   {rows.map((u) => (
                     <th key={u.id} scope="col">
                       <UniversityLogo university={u} size="sm" />
@@ -967,7 +1064,12 @@ function ComparisonTableRow({
       <tr>
         <th scope="row">{row.label}</th>
         {row.cells.map((cell, index) => (
-          <td key={index}>{cell.node}</td>
+          <td
+            key={index}
+            data-availability={cell.key === null ? "missing" : "reported"}
+          >
+            {cell.node}
+          </td>
         ))}
       </tr>
     </>

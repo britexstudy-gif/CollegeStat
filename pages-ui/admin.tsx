@@ -3,6 +3,33 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { toast } from "sonner";
 import {
+  Database,
+  ShieldCheck,
+  ArrowLeft,
+  ArrowUpRight,
+  LayoutDashboard,
+  GraduationCap,
+  BookOpen,
+  Trophy,
+  Wallet,
+  Link2,
+  FileCheck2,
+  CalendarDays,
+  Images,
+  Users,
+  FlaskConical,
+  Upload,
+  ClipboardCheck,
+  Radio,
+  Activity,
+  Fingerprint,
+  UserPlus,
+  Clock,
+  ScrollText,
+  Settings,
+  RefreshCw,
+} from "lucide-react";
+import {
   Dialog,
   DialogContent,
   DialogTitle,
@@ -19,32 +46,47 @@ import {
   entitySchemas,
 } from "@/services/admin-schema";
 type AdminRow = { id: string; [key: string]: unknown };
-const sections = [
-  "Overview",
-  "Universities",
-  "Programs",
-  "Rankings",
-  "Scholarships",
-  "Connections",
-  "Sources",
-  "Imports",
-  "Review",
-  "Users",
-  "Reports",
-  "Settings",
-  "Departments",
-  "Faculty",
-  "Research",
-  "Deadlines",
-  "Requirements",
-  "Aid",
-  "Media",
-  "Feeds",
-  "Jobs",
-  "Identifiers",
-  "Candidates",
-  "Stale",
-];
+const navigation = [
+  {
+    label: "Workspace",
+    items: [
+      ["Overview", LayoutDashboard],
+      ["Review", ClipboardCheck],
+      ["Candidates", UserPlus],
+      ["Stale", Clock],
+    ],
+  },
+  {
+    label: "Catalogue",
+    items: [
+      ["Universities", GraduationCap],
+      ["Programs", BookOpen],
+      ["Requirements", FileCheck2],
+      ["Deadlines", CalendarDays],
+      ["Rankings", Trophy],
+      ["Scholarships", Wallet],
+      ["Connections", Link2],
+      ["Aid", Wallet],
+      ["Media", Images],
+      ["Departments", Users],
+      ["Faculty", Users],
+      ["Research", FlaskConical],
+    ],
+  },
+  {
+    label: "Data operations",
+    items: [
+      ["Sources", Database],
+      ["Imports", Upload],
+      ["Feeds", Radio],
+      ["Jobs", Activity],
+      ["Identifiers", Fingerprint],
+      ["Users", Users],
+      ["Reports", ScrollText],
+      ["Settings", Settings],
+    ],
+  },
+] as const;
 const tableFor: Record<string, string> = {
   Universities: "universities",
   Programs: "programs",
@@ -112,39 +154,114 @@ export default function Admin({ section = "Overview" }: { section?: string }) {
     setPage(1);
     setSearch("");
     setEditing(null);
-    const counter = revision; return () => { counter.current++; };
+    const counter = revision;
+    return () => {
+      counter.current++;
+    };
   }, [section, s.user?.id]);
   const load = useCallback(async () => {
     const db = getSupabase();
     const current = ++revision.current;
-    if (!db || role !== "admin") { setRows([]); setCounts({}); return; }
-    setLoading(true); setError(""); setRows([]);
+    if (!db || role !== "admin") {
+      setRows([]);
+      setCounts({});
+      return;
+    }
+    setLoading(true);
+    setError("");
+    setRows([]);
     try {
       if (table) {
-        const textColumns: Record<string,string> = { universities:"name", programs:"name", scholarships:"name", data_sources:"name", departments:"name", professors:"name", research:"title", deadlines:"title", requirements:"label", financial_aid:"name", profiles:"display_name", ingestion_feeds:"name", ranking_providers:"name" };
-        let request = db.from(table).select("*", { count:"exact" }).order("id").range((page - 1) * 25, page * 25 - 1);
+        const textColumns: Record<string, string> = {
+          universities: "name",
+          programs: "name",
+          scholarships: "name",
+          data_sources: "name",
+          departments: "name",
+          professors: "name",
+          research: "title",
+          deadlines: "title",
+          requirements: "label",
+          financial_aid: "name",
+          profiles: "display_name",
+          ingestion_feeds: "name",
+          ranking_providers: "name",
+        };
+        let request = db
+          .from(table)
+          .select("*", { count: "exact" })
+          .order("id")
+          .range((page - 1) * 25, page * 25 - 1);
         const value = search.trim();
         if (value) {
-          if (/^[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}$/i.test(value)) request = request.eq("id", value);
-          else if (textColumns[table]) request = request.ilike(textColumns[table], "%" + value.replace(/[\\%_]/g, char => "\\" + char) + "%");
-          else { setTotal(0); setError("Search this table with a complete record UUID."); return; }
+          if (
+            /^[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}$/i.test(
+              value,
+            )
+          )
+            request = request.eq("id", value);
+          else if (textColumns[table])
+            request = request.ilike(
+              textColumns[table],
+              "%" + value.replace(/[\\%_]/g, (char) => "\\" + char) + "%",
+            );
+          else {
+            setTotal(0);
+            setError("Search this table with a complete record UUID.");
+            return;
+          }
         }
         const { data, error, count } = await request;
         if (current !== revision.current) return;
         if (error) throw error;
-        setRows((data || []) as AdminRow[]); setTotal(count || 0);
+        setRows((data || []) as AdminRow[]);
+        setTotal(count || 0);
       } else if (section === "Overview") {
-        const names = ["universities", "scholarships", "data_sources", "source_records", "data_quality_checks", "data_imports"];
-        const results = await Promise.all(names.map(t => db.from(t).select("id", { head:true, count:"exact" })));
+        const names = [
+          "universities",
+          "scholarships",
+          "data_sources",
+          "source_records",
+          "data_quality_checks",
+          "data_imports",
+        ];
+        const results = await Promise.all(
+          names.map((t) =>
+            db.from(t).select("id", { head: true, count: "exact" }),
+          ),
+        );
         if (current !== revision.current) return;
-        if (results.some(r => r.error)) throw new Error("Database unavailable");
-        setCounts(Object.fromEntries(names.map((name,i) => [name, results[i].count || 0])));
+        if (results.some((r) => r.error))
+          throw new Error("Database unavailable");
+        setCounts(
+          Object.fromEntries(
+            names.map((name, i) => [name, results[i].count || 0]),
+          ),
+        );
       }
     } catch {
-      if (current === revision.current) { setRows([]); setCounts({}); setTotal(0); setError("Database records could not load. Check that the hosted schema is installed and your account has administrator access."); }
-    } finally { if (current === revision.current) setLoading(false); }
+      if (current === revision.current) {
+        setRows([]);
+        setCounts({});
+        setTotal(0);
+        setError(
+          "Database records could not load. Check that the hosted schema is installed and your account has administrator access.",
+        );
+      }
+    } finally {
+      if (current === revision.current) setLoading(false);
+    }
   }, [role, section, table, page, search]);
-  useEffect(() => { const counter = revision; const timer = setTimeout(() => { void load(); }, 180); return () => { clearTimeout(timer); counter.current++; }; }, [load]);
+  useEffect(() => {
+    const counter = revision;
+    const timer = setTimeout(() => {
+      void load();
+    }, 180);
+    return () => {
+      clearTimeout(timer);
+      counter.current++;
+    };
+  }, [load]);
   if (!s.authReady)
     return (
       <EmptyState
@@ -154,21 +271,32 @@ export default function Admin({ section = "Overview" }: { section?: string }) {
     );
   if (!s.user || role !== "admin")
     return (
-      <div className="site-main">
-        <EmptyState
-          title="Administrator access required"
-          description="Content changes, import review, and audit records require an authorized administrator account."
-          action={
-            <div className="control-row">
-              <button className="button button-primary" onClick={s.openAuth}>
-                Sign in
-              </button>
-              <Link className="text-link" href="/">
-                Return to CollegeStat
-              </Link>
-            </div>
-          }
-        />
+      <div className="staff-gate">
+        <Brand />
+        <section>
+          <div className="staff-lock">
+            <ShieldCheck size={28} />
+          </div>
+          <span className="eyebrow">PRIVATE STAFF WORKSPACE</span>
+          <h1>
+            {s.user
+              ? "This account has no staff access."
+              : "CollegeStat console"}
+          </h1>
+          <p>
+            Manage university records, review sources, and publish verified
+            information. Access requires an administrator role.
+          </p>
+          <Link
+            className="button button-primary"
+            href={"/auth/sign-in?next=" + encodeURIComponent(STAFF_PATH)}
+          >
+            Admin sign-in <ArrowUpRight size={16} />
+          </Link>
+          <Link className="text-link" href="/">
+            <ArrowLeft size={15} /> Return to CollegeStat
+          </Link>
+        </section>
       </div>
     );
   const runImport = async () => {
@@ -206,36 +334,97 @@ export default function Admin({ section = "Overview" }: { section?: string }) {
     <div className="admin-layout">
       <aside className="admin-rail">
         <Brand />
-        <div className="eyebrow" style={{ marginTop: 15 }}>
-          DATA OPERATIONS
+        <div className="staff-badge">
+          <ShieldCheck size={13} /> Admin workspace
         </div>
-        <nav>
-          {sections.map((v) => (
-            <Link
-              className={section === v ? "active" : ""}
-              key={v}
-              href={v === "Overview" ? STAFF_PATH : STAFF_PATH + "/" + v.toLowerCase()}
-            >
-              {v}
-            </Link>
+        <nav aria-label="Database console">
+          {navigation.map((group) => (
+            <div className="admin-nav-group" key={group.label}>
+              <span>{group.label}</span>
+              {group.items.map(([name, Icon]) => (
+                <Link
+                  key={name}
+                  aria-current={section === name ? "page" : undefined}
+                  className={section === name ? "active" : ""}
+                  href={
+                    name === "Overview"
+                      ? STAFF_PATH
+                      : STAFF_PATH + "/" + name.toLowerCase()
+                  }
+                >
+                  <Icon size={16} />
+                  {name}
+                </Link>
+              ))}
+            </div>
           ))}
         </nav>
         <Link className="text-link" href="/">
-          ← Public website
+          <ArrowLeft size={15} /> Public website
         </Link>
       </aside>
-      <main className="admin-content">
+      <div className="admin-content">
+        <div className="admin-topline">
+          <span>
+            <Database size={15} /> Supabase database
+          </span>
+          <Link href="/dashboard">
+            My dashboard <ArrowUpRight size={14} />
+          </Link>
+        </div>
         <header className="page-intro">
-          <div className="eyebrow">COLLEGESTAT / ADMIN</div>
-          <h1>{section}</h1>
-          <p>
-            Canonical records, traceable sources, and an audit trail for every
-            content change.
-          </p>
+          <div>
+            <div className="eyebrow">CONSOLE / {section.toUpperCase()}</div>
+            <h1>
+              {section === "Overview"
+                ? "The catalogue, in your control."
+                : section}
+            </h1>
+            <p>
+              {section === "Overview"
+                ? "Maintain the data students rely on. Check gaps, review evidence, and update the published catalogue."
+                : "Edit sourced records in the connected database. Changes are validated and recorded in the audit log."}
+            </p>
+          </div>
+          <button
+            className="button button-secondary"
+            disabled={loading}
+            onClick={load}
+          >
+            <RefreshCw size={15} /> Refresh
+          </button>
         </header>
-        {table && <div className="admin-record-controls"><input aria-label="Search database records" placeholder="Search name or paste a record UUID" maxLength={120} value={search} onChange={e => { setSearch(e.target.value); setPage(1); }}/><button className="button button-secondary" disabled={loading} onClick={load}>Refresh</button><span className="caption">{loading ? "Loading records…" : total + " records"}</span></div>}
-        {section === "Connections" && <p className="caption">Connect an existing scholarship to a university using their record IDs. Edit award details in Scholarships; each connection appears on the university’s funding page.</p>}
-        {loading && <p role="status" className="caption">Loading the hosted database…</p>}
+        {table && (
+          <div className="admin-record-controls">
+            <input
+              aria-label="Search database records"
+              placeholder="Search name or paste a record UUID"
+              maxLength={120}
+              value={search}
+              onChange={(e) => {
+                setSearch(e.target.value);
+                setPage(1);
+              }}
+            />
+            <span className="caption">
+              {loading
+                ? "Loading records…"
+                : total.toLocaleString() + " records"}
+            </span>
+          </div>
+        )}
+        {section === "Connections" && (
+          <p className="caption">
+            Connect an existing scholarship to a university using their record
+            IDs. Edit award details in Scholarships; each connection appears on
+            the university’s funding page.
+          </p>
+        )}
+        {loading && (
+          <p role="status" className="caption">
+            Loading the hosted database…
+          </p>
+        )}
         {error && (
           <div className="error-banner">
             {error}
@@ -244,13 +433,46 @@ export default function Admin({ section = "Overview" }: { section?: string }) {
         )}
         {section === "Overview" ? (
           <>
+            <div className="admin-quicklinks">
+              {[
+                [
+                  "Universities",
+                  "Edit identity, logos and official links",
+                  GraduationCap,
+                ],
+                [
+                  "Requirements",
+                  "Update entry conditions with sources",
+                  FileCheck2,
+                ],
+                [
+                  "Scholarships",
+                  "Publish awards and connect universities",
+                  Wallet,
+                ],
+                ["Review", "Check evidence before publication", ClipboardCheck],
+              ].map(([name, description, I]) => {
+                const Icon = I as typeof Database;
+                return (
+                  <Link
+                    key={String(name)}
+                    href={STAFF_PATH + "/" + String(name).toLowerCase()}
+                  >
+                    <Icon size={22} />
+                    <strong>{String(name)}</strong>
+                    <span>{String(description)}</span>
+                    <ArrowUpRight size={16} />
+                  </Link>
+                );
+              })}
+            </div>
             <div className="stats-row">
               {Object.entries(counts)
                 .slice(0, 4)
                 .map(([k, v]) => (
                   <div key={k}>
                     <span>{k.replaceAll("_", " ")}</span>
-                    <strong>{v}</strong>
+                    <strong>{v.toLocaleString()}</strong>
                     <small>Live database count</small>
                   </div>
                 ))}
@@ -421,7 +643,14 @@ export default function Admin({ section = "Overview" }: { section?: string }) {
                   </tr>
                 </thead>
                 <tbody>
-                  {!loading && !error && !rows.length && <tr><td colSpan={4}>No records match. Clear your search or create a sourced record.</td></tr>}
+                  {!loading && !error && !rows.length && (
+                    <tr>
+                      <td colSpan={4}>
+                        No records match. Clear your search or create a sourced
+                        record.
+                      </td>
+                    </tr>
+                  )}
                   {rows.map((r) => (
                     <tr key={r.id}>
                       <td>
@@ -556,7 +785,7 @@ export default function Admin({ section = "Overview" }: { section?: string }) {
             void s.refresh();
           }}
         />
-      </main>
+      </div>
     </div>
   );
 }
@@ -614,10 +843,31 @@ function EntityEditor({
               f.type === "requirement" ? (
                 <label className="form-field" key={f.key}>
                   {f.label}
-                  <select value={values[f.key] == null ? 'unspecified' : String(values[f.key])} onChange={e => setValues(old => ({...old,[f.key]:e.target.value === 'unspecified' ? null : e.target.value === 'true'}))}>
-                    <option value="unspecified">Unspecified / conditional</option>
-                    <option value="true">Required for this applicant category</option>
-                    <option value="false">Optional for this applicant category</option>
+                  <select
+                    value={
+                      values[f.key] == null
+                        ? "unspecified"
+                        : String(values[f.key])
+                    }
+                    onChange={(e) =>
+                      setValues((old) => ({
+                        ...old,
+                        [f.key]:
+                          e.target.value === "unspecified"
+                            ? null
+                            : e.target.value === "true",
+                      }))
+                    }
+                  >
+                    <option value="unspecified">
+                      Unspecified / conditional
+                    </option>
+                    <option value="true">
+                      Required for this applicant category
+                    </option>
+                    <option value="false">
+                      Optional for this applicant category
+                    </option>
                   </select>
                 </label>
               ) : f.type === "boolean" ? (
