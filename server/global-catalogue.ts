@@ -1,3 +1,4 @@
+import type { DirectoryRecord as DirectoryRow } from "@/lib/dataset-records";
 import { officialLogo } from "@/lib/official-logos";
 import applicationDates from "@/data/published/application-dates-current.json";
 import currentRequirements from "@/data/published/requirements-current.json";
@@ -26,6 +27,7 @@ import {
 
 const ranksByUniversity = new Map<string, RankHighlight[]>();
 for(const row of publishedRanks) {
+  if (!row.university_id) continue;
   const records=ranksByUniversity.get(row.university_id) || [];
   records.push({...row,domain:'',provider:row.provider as Publisher});
   ranksByUniversity.set(row.university_id,records);
@@ -52,58 +54,6 @@ const officialWeb = officialWebJSON as Record<
 const sourceURL = "https://github.com/Hipo/university-domains-list";
 const ipedsURL =
   "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx?rtid=7&year=2023";
-type DirectoryRow = {
-  id: string;
-  slug: string;
-  name: string;
-  country_code: string;
-  country: string;
-  website: string;
-  state?: string | null;
-  domains: string[];
-  ror?: string;
-  identity_source?: string;
-  identity_release?: string;
-  identity_retrieved_at?: string;
-  founded_year?: number;
-  aliases?: string[];
-  external_ids?: Record<string, string>;
-  application_url?: string;
-  financial_aid_url?: string;
-  net_price_url?: string;
-  address?: string;
-  phone?: string;
-  current_observations?: {
-    metric: string;
-    value: number;
-    unit: string;
-    table: string;
-    year: number;
-    period: string;
-    cohort: string;
-  }[];
-  unitid?: string;
-  city?: string;
-  university_type?: string;
-  latitude?: number;
-  longitude?: number;
-  admissions_url?: string;
-  tuition_in_state?: number;
-  tuition_out_of_state?: number;
-  fees_out_of_state?: number;
-  room_board_on_campus?: number;
-  enrollment_12_month?: number;
-  nonresident_enrollment_12_month?: number;
-  acceptance_rate?: number;
-  applicants?: number;
-  admitted?: number;
-  act_25?: number;
-  act_75?: number;
-  sat_reading_25?: number;
-  sat_reading_75?: number;
-  sat_math_25?: number;
-  sat_math_75?: number;
-};
 const metrics = [
   "tuition_in_state",
   "tuition_out_of_state",

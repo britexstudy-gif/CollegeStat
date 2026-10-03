@@ -32,7 +32,8 @@
       "node",
       "@cloudflare/workers-types",
       "vite/client"
-    ]
+    ],
+    "allowArbitraryExtensions": true
   },
   "include": [
     "next-env.d.ts",
@@ -44,6 +45,12 @@
   ],
   "exclude": [
     "node_modules",
-    "examples"
+    "examples",
+    "outputs",
+    "dist",
+    ".vinext",
+    "data/raw",
+    "data/processed",
+    "work"
   ]
 }
