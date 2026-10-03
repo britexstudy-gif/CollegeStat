@@ -1,0 +1,51 @@
+{
+  "version": "1.0.0",
+  "status": "draft",
+  "minimum_coverage": 0.5,
+  "overall_score": false,
+  "dimensions": {
+    "research": {
+      "label": "Research",
+      "inputs": [
+        { "metric": "cited_by_count", "weight": 0.4, "direction": "higher", "normalization": "log_minmax", "floor": 1, "ceiling": 500000 },
+        { "metric": "works_count", "weight": 0.3, "direction": "higher", "normalization": "log_minmax", "floor": 1, "ceiling": 50000 },
+        { "metric": "international_collaboration_share", "weight": 0.3, "direction": "higher", "normalization": "minmax", "floor": 0, "ceiling": 100 }
+      ]
+    },
+    "affordability": {
+      "label": "Affordability",
+      "inputs": [
+        { "metric": "tuition_out_of_state", "weight": 0.6, "direction": "lower", "normalization": "minmax", "floor": 0, "ceiling": 80000, "currency": "USD", "period": "year" },
+        { "metric": "average_net_price_private", "weight": 0.4, "direction": "lower", "normalization": "minmax", "floor": 0, "ceiling": 50000, "currency": "USD", "period": "year" }
+      ]
+    },
+    "outcomes": {
+      "label": "Outcomes",
+      "inputs": [
+        { "metric": "graduation_rate_150pct", "weight": 0.6, "direction": "higher", "normalization": "minmax", "floor": 0, "ceiling": 100 },
+        { "metric": "earnings_10yr_after_entry", "weight": 0.4, "direction": "higher", "normalization": "minmax", "floor": 20000, "ceiling": 200000, "currency": "USD" }
+      ]
+    },
+    "selectivity": {
+      "label": "Selectivity",
+      "inputs": [
+        { "metric": "admission_rate", "weight": 1, "direction": "lower", "normalization": "minmax", "floor": 0, "ceiling": 100 }
+      ]
+    },
+    "international_accessibility": {
+      "label": "International accessibility",
+      "inputs": [
+        { "metric": "international_student_share", "weight": 0.45, "direction": "higher", "normalization": "minmax", "floor": 0, "ceiling": 60 },
+        { "metric": "international_tuition", "weight": 0.3, "direction": "lower", "normalization": "minmax", "floor": 0, "ceiling": 80000, "currency": "USD", "period": "year" },
+        { "metric": "english_taught_program_share", "weight": 0.25, "direction": "higher", "normalization": "minmax", "floor": 0, "ceiling": 100 }
+      ]
+    },
+    "scholarships": {
+      "label": "Scholarship availability",
+      "inputs": [
+        { "metric": "verified_scholarship_count", "weight": 0.6, "direction": "higher", "normalization": "minmax", "floor": 0, "ceiling": 10 },
+        { "metric": "international_scholarship_count", "weight": 0.4, "direction": "higher", "normalization": "minmax", "floor": 0, "ceiling": 8 }
+      ]
+    }
+  }
+}

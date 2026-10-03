@@ -1,0 +1,340 @@
+/* Shared surfaces: daylight neutrals and a readable, luminous slate night mode. */
+:root {
+  --background: #f7f7f5;
+  --foreground: #20252e;
+  --card: #ffffff;
+  --popover: #ffffff;
+  --muted: #efefed;
+  --muted-foreground: #656d78;
+  --border: #22304718;
+  --accent: #e9eefb;
+  --primary: #4266c6;
+}
+.dark {
+  --background: #111823;
+  --foreground: #edf1f8;
+  --card: #1a2433;
+  --popover: #202c3c;
+  --muted: #253246;
+  --muted-foreground: #b1bed0;
+  --border: #becce524;
+  --accent: #739af01c;
+  --primary: #91b2ff;
+  --cs-faint: #a0aec3;
+}
+.dark body {
+  background:
+    radial-gradient(ellipse 1000px 750px at 85% 0%, #597bb61b, transparent 75%),
+    var(--background);
+}
+.dark .button-primary,
+.dark .engine-search button {
+  color: #132446;
+  background: #a8c2fc;
+}
+.dark .liquid-glass {
+  box-shadow:
+    inset 0 1px 0 #eaf1ff12,
+    0 16px 48px #050d1922;
+}
+.engine-hero {
+  grid-template-columns: 1.12fr 1fr;
+  gap: 48px;
+  min-height: 600px;
+}
+.engine-copy h1 {
+  font-weight: 500;
+  letter-spacing: -0.055em;
+}
+.editorial-hero {
+  position: relative;
+  margin: 0;
+  border-radius: 120px 18px 18px 18px;
+  overflow: hidden;
+  isolation: isolate;
+  aspect-ratio: 1 / 1.07;
+  box-shadow: 0 24px 70px #35424b12;
+}
+.editorial-hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 62% center;
+}
+.editorial-hero::after {
+  content: "";
+  position: absolute;
+  inset: 50% 0 0;
+  background: linear-gradient(transparent, #222a326b);
+  pointer-events: none;
+}
+.editorial-hero figcaption {
+  position: absolute;
+  bottom: 25px;
+  left: 28px;
+  right: 20px;
+  color: white;
+  z-index: 1;
+}
+.editorial-hero figcaption span {
+  display: block;
+  font-size: 17px;
+  letter-spacing: -0.025em;
+}
+.editorial-hero small {
+  display: block;
+  margin-top: 6px;
+  font-size: 10px;
+  opacity: 0.86;
+}
+.dark .editorial-hero {
+  box-shadow: 0 22px 80px #030a182f;
+}
+.dark .editorial-hero img {
+  filter: brightness(0.88) saturate(0.82);
+}
+.world-explorer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 70px;
+}
+.world-explorer h2 {
+  font-size: clamp(32px, 4vw, 48px);
+  letter-spacing: -0.04em;
+  line-height: 1.12;
+  margin: 20px 0;
+}
+.world-explorer p {
+  max-width: 350px;
+  color: var(--muted-foreground);
+  line-height: 1.8;
+}
+.region-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin-top: 24px;
+}
+.region-links a {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 10px 14px;
+  border: 1px solid var(--border);
+  border-radius: 30px;
+  font-size: 12px;
+}
+.region-links a:hover {
+  background: var(--accent);
+  border-color: var(--primary);
+}
+.university-logo,
+.dark .university-logo {
+  background: #fff;
+  border: 1px solid #74829820;
+  color: #66748b;
+}
+.university-logo img {
+  padding: 12%;
+}
+.logo-sm img {
+  padding: 9%;
+}
+.institution-switcher button {
+  transition:
+    background 0.2s,
+    border-color 0.2s,
+    transform 0.22s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.institution-switcher button:hover {
+  transform: translateY(-2px);
+  background: var(--card);
+}
+.engine-search:focus-within {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--primary) 10%, transparent);
+}
+.magic-link-button {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 9px;
+  margin: 18px 0;
+  background: none;
+  border: 0;
+}
+.auth-setup-note {
+  line-height: 1.7;
+}
+@media (max-width: 1000px) {
+  .engine-hero {
+    gap: 25px;
+    min-height: 530px;
+  }
+  .editorial-hero {
+    border-top-left-radius: 80px;
+  }
+  .world-explorer {
+    gap: 35px;
+  }
+}
+@media (max-width: 700px) {
+  .engine-hero {
+    grid-template-columns: 1fr;
+    padding-top: 30px;
+  }
+  .editorial-hero {
+    aspect-ratio: 1.7;
+    border-radius: 60px 14px 14px 14px;
+  }
+  .editorial-hero figcaption {
+    bottom: 20px;
+    left: 22px;
+  }
+  .world-explorer {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .world-explorer .catalogue-globe {
+    max-width: 430px;
+    width: 100%;
+    margin: auto;
+  }
+  .engine-copy h1 {
+    font-size: 44px;
+  }
+}
+@media (max-width: 380px) {
+  .navbar .theme-button {
+    display: inline-flex;
+  }
+  .navbar-actions {
+    gap: 4px;
+  }
+  .navbar .sign-in-button {
+    padding: 8px;
+  }
+  .navbar .sign-in-button svg {
+    display: none;
+  }
+  .engine-copy h1 {
+    font-size: 38px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .institution-switcher button {
+    transition: none;
+  }
+  .institution-switcher button:hover {
+    transform: none;
+  }
+}
+.dataset-register {
+  margin: 48px 0;
+}
+.dataset-register > h2 {
+  margin-top: 16px;
+}
+.dataset-register > p {
+  color: var(--muted-foreground);
+}
+.dataset-register article {
+  display: flex;
+  gap: 20px;
+  padding: 26px 0;
+  border-top: 1px solid var(--border);
+}
+.dataset-register article > svg {
+  color: var(--primary);
+  margin-top: 4px;
+}
+.dataset-register article p {
+  margin: 9px 0;
+  line-height: 1.7;
+}
+.dataset-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.dataset-heading span {
+  font-size: 11px;
+  color: var(--muted-foreground);
+}
+.dataset-register .control-row {
+  margin-top: 16px;
+}
+.candidate-review {
+  min-width: 260px;
+}
+.candidate-review .form-field {
+  margin: 0 0 10px;
+}
+.university-card-photo:empty {
+  display: none;
+}
+.university-card-photo .campus-image {
+  margin: -20px -20px 20px;
+  border-radius: 13px 13px 0 0;
+  overflow: hidden;
+}
+.university-card-photo .campus-image img {
+  height: 150px;
+  width: 100%;
+  object-fit: cover;
+}
+.university-card-photo figcaption {
+  padding: 6px 12px;
+  font-size: 9px;
+  background: var(--muted);
+}
+.logo-oxford img {
+  padding: 5%;
+}
+.recent-exploration {
+  margin: 32px 0 0;
+  padding: 24px 0;
+  border-bottom: 1px solid var(--border);
+}
+.recent-exploration .split-heading {
+  margin-bottom: 16px;
+}
+.recent-exploration .caption {
+  margin-top: 6px;
+}
+.recent-exploration button {
+  background: none;
+  border: 0;
+}
+.recent-strip {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding-bottom: 4px;
+  scroll-snap-type: x proximity;
+}
+.recent-strip > a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 240px;
+  max-width: 310px;
+  padding: 12px 15px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  scroll-snap-align: start;
+}
+.recent-strip > a:hover {
+  border-color: var(--primary);
+}
+.recent-strip > a > span:not(.university-logo) {
+  font-size: 12px;
+  min-width: 0;
+}
+.recent-strip > a > svg {
+  margin-left: auto;
+}

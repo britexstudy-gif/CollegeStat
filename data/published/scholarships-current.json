@@ -1,0 +1,246 @@
+[
+  {
+    "id": "aa83738c-3cc7-56ec-9dd4-3dde151e470b",
+    "slug": "pearson",
+    "name": "Lester B. Pearson International Scholarship",
+    "description": "September 2027 entry. Covers tuition, books, incidental fees and residence for four years. International first-entry applicants need a high-school nomination. School nomination closes 9 October; the Pearson-specific admission application closes 16 October 2026.",
+    "amount": null,
+    "currency": "CAD",
+    "funding_type": "full",
+    "country_code": "CA",
+    "level": "Bachelor",
+    "international": true,
+    "deadline": "2026-11-06",
+    "application_url": "https://future.utoronto.ca/pearson-scholarships",
+    "published": true,
+    "year": 2027,
+    "source_id": "8cfb6a38-ef66-5d6d-bd42-1eb8f4c06cde",
+    "source_url": "https://future.utoronto.ca/pearson-scholarships",
+    "verification_status": "verified",
+    "verified_at": "2026-10-02T00:00:00Z",
+    "notes": "Current 2027 dates follow the main Important dates table; older FAQ text on the page refers to the previous cycle.",
+    "data_sources": {
+      "id": "8cfb6a38-ef66-5d6d-bd42-1eb8f4c06cde",
+      "name": "Lester B. Pearson International Scholarship · official provider",
+      "organization": "University of Toronto",
+      "url": "https://future.utoronto.ca/pearson-scholarships",
+      "source_type": "scholarship",
+      "license_notes": "Paraphrased public application guidance; confirm eligibility with the provider.",
+      "retrieved_at": "2026-10-02T00:00:00Z"
+    },
+    "university_scholarships": [
+      {
+        "university_id": "55555555-5555-4555-8555-555555555555",
+        "universities": {
+          "id": "55555555-5555-4555-8555-555555555555",
+          "name": "University of Toronto",
+          "slug": "toronto"
+        }
+      }
+    ]
+  },
+  {
+    "id": "b57b47b2-c6cc-5cfc-8be8-6e20b5b71759",
+    "slug": "eth-esop",
+    "name": "ETH Excellence Scholarship & Opportunity Programme",
+    "description": "Autumn 2027 entry. Covers study and living costs with a tuition waiver. Apply through eApply in the first window, 1–30 November 2026. Applicants need an excellent bachelor’s result and a thesis pre-proposal; current ETH master’s students and master’s degree holders are ineligible.",
+    "amount": null,
+    "currency": "CHF",
+    "funding_type": "full",
+    "country_code": "CH",
+    "level": "Master",
+    "international": true,
+    "deadline": "2026-11-30",
+    "application_url": "https://ethz.ch/students/en/studies/financial/scholarships/excellencescholarship.html",
+    "published": true,
+    "year": 2027,
+    "source_id": "df094c75-85c0-57e2-a12c-1657b11809ee",
+    "source_url": "https://ethz.ch/students/en/studies/financial/scholarships/excellencescholarship.html",
+    "verification_status": "verified",
+    "verified_at": "2026-10-02T00:00:00Z",
+    "notes": "The source displays conflicting cutoff times (11.59 and 12.59 MEZ); only the closing date is recorded. Confirm the time with ETH. No annual award total is inferred.",
+    "data_sources": {
+      "id": "df094c75-85c0-57e2-a12c-1657b11809ee",
+      "name": "ETH Excellence Scholarship & Opportunity Programme · official provider",
+      "organization": "ETHZ - ETH Zurich",
+      "url": "https://ethz.ch/students/en/studies/financial/scholarships/excellencescholarship.html",
+      "source_type": "scholarship",
+      "license_notes": "Paraphrased public application guidance; confirm eligibility with the provider.",
+      "retrieved_at": "2026-10-02T00:00:00Z"
+    },
+    "university_scholarships": [
+      {
+        "university_id": "6020a2b5-3788-5dd1-b3f2-b9c6c7c6f99b",
+        "universities": {
+          "id": "6020a2b5-3788-5dd1-b3f2-b9c6c7c6f99b",
+          "name": "ETHZ - ETH Zurich",
+          "slug": "ethz-eth-zurich-6020a2b5"
+        }
+      }
+    ]
+  },
+  {
+    "id": "b5d8d659-d713-599f-8ec8-e7e5e64fe85d",
+    "slug": "reach-oxford",
+    "name": "Reach Oxford Scholarship",
+    "description": "2027 entry. Covers course fees, living support and one annual return airfare. For eligible nationals of listed aid-recipient countries who cannot study at home; financial need and an Oxford offer are required. Medicine is excluded. Application details are due in January 2027.",
+    "amount": null,
+    "currency": "GBP",
+    "funding_type": "full",
+    "country_code": "GB",
+    "level": "Bachelor",
+    "international": true,
+    "deadline": "2027-01-26",
+    "application_url": "https://www.ox.ac.uk/admissions/undergraduate/fees-and-funding/oxford-bursaries-and-scholarships/reach-oxford",
+    "published": true,
+    "year": 2027,
+    "source_id": "2d9efc74-82ad-5c60-929b-566ddf414e77",
+    "source_url": "https://www.ox.ac.uk/admissions/undergraduate/fees-and-funding/oxford-bursaries-and-scholarships/reach-oxford",
+    "verification_status": "verified",
+    "verified_at": "2026-10-02T00:00:00Z",
+    "notes": "The award application is not yet open. The university lists 26 January 2027 as the scholarship deadline; applying for admission is a separate earlier step.",
+    "data_sources": {
+      "id": "2d9efc74-82ad-5c60-929b-566ddf414e77",
+      "name": "Reach Oxford Scholarship · official provider",
+      "organization": "University of Oxford",
+      "url": "https://www.ox.ac.uk/admissions/undergraduate/fees-and-funding/oxford-bursaries-and-scholarships/reach-oxford",
+      "source_type": "scholarship",
+      "license_notes": "Paraphrased public application guidance; confirm eligibility with the provider.",
+      "retrieved_at": "2026-10-02T00:00:00Z"
+    },
+    "university_scholarships": [
+      {
+        "university_id": "33333333-3333-4333-8333-333333333333",
+        "universities": {
+          "id": "33333333-3333-4333-8333-333333333333",
+          "name": "University of Oxford",
+          "slug": "oxford"
+        }
+      }
+    ]
+  },
+  {
+    "id": "e8481343-e2c1-5193-a85d-f8337bf913ea",
+    "slug": "ubc-international-scholars",
+    "name": "UBC International Scholars Program",
+    "description": "September 2027 entry. Need-and-merit awards for international students entering their first undergraduate degree from secondary school. Requires strong academics, leadership, documented financial need, a nominator and a teacher referee. Applications open 5 October 2026. Apply to UBC before completing the award application.",
+    "amount": null,
+    "currency": "CAD",
+    "funding_type": "variable",
+    "country_code": "CA",
+    "level": "Bachelor",
+    "international": true,
+    "deadline": "2026-11-15",
+    "application_url": "https://you.ubc.ca/financial-planning/scholarships-awards-international-students/international-scholars",
+    "published": true,
+    "year": 2027,
+    "source_id": "4811e59f-a4f1-5042-b3d6-47283c98509a",
+    "source_url": "https://you.ubc.ca/financial-planning/scholarships-awards-international-students/international-scholars",
+    "verification_status": "verified",
+    "verified_at": "2026-10-02T00:00:00Z",
+    "notes": "Award category and value depend on assessment. Several degrees are excluded; review the official list. Required documents and English-language evidence are due 31 January 2027 for this award route.",
+    "data_sources": {
+      "id": "4811e59f-a4f1-5042-b3d6-47283c98509a",
+      "name": "UBC International Scholars Program · official provider",
+      "organization": "University of British Columbia",
+      "url": "https://you.ubc.ca/financial-planning/scholarships-awards-international-students/international-scholars",
+      "source_type": "scholarship",
+      "license_notes": "Paraphrased public application guidance; confirm eligibility with the provider.",
+      "retrieved_at": "2026-10-02T00:00:00Z"
+    },
+    "university_scholarships": [
+      {
+        "university_id": "276cad09-4a66-51a1-9071-c1ffe923a508",
+        "universities": {
+          "id": "276cad09-4a66-51a1-9071-c1ffe923a508",
+          "name": "University of British Columbia",
+          "slug": "university-of-british-columbia-276cad09"
+        }
+      }
+    ]
+  },
+  {
+    "id": "c30e4c68-ae89-5b23-a780-2459aeef9524",
+    "slug": "knight-hennessy",
+    "name": "Knight-Hennessy Scholars",
+    "description": "2027 cohort. Supports eligible Stanford graduate degrees for up to three years through tuition, living and travel support. Apply separately to the scholarship and the Stanford degree program. Applicants of all nationalities may apply; degree and prior-graduation eligibility rules apply.",
+    "amount": null,
+    "currency": "USD",
+    "funding_type": "full",
+    "country_code": "US",
+    "level": "Graduate",
+    "international": true,
+    "deadline": "2026-10-06",
+    "application_url": "https://knight-hennessy.stanford.edu/admission",
+    "published": true,
+    "year": 2027,
+    "source_id": "bbf3e00e-9946-541d-a0aa-91001646218e",
+    "source_url": "https://knight-hennessy.stanford.edu/admission",
+    "verification_status": "verified",
+    "verified_at": "2026-10-02T00:00:00Z",
+    "notes": "KHS closes 6 October 2026 at 1 pm Pacific Time. The separate degree application is due by the earlier of its KHS program deadline or 1 December 2026. Funding beyond three years depends on the degree program. Funding source: https://knight-hennessy.stanford.edu/program-overview/funding",
+    "data_sources": {
+      "id": "bbf3e00e-9946-541d-a0aa-91001646218e",
+      "name": "Knight-Hennessy Scholars · official provider",
+      "organization": "Stanford University",
+      "url": "https://knight-hennessy.stanford.edu/admission",
+      "source_type": "scholarship",
+      "license_notes": "Paraphrased public application guidance; confirm eligibility with the provider.",
+      "retrieved_at": "2026-10-02T00:00:00Z"
+    },
+    "university_scholarships": [
+      {
+        "university_id": "11111111-1111-4111-8111-111111111111",
+        "universities": {
+          "id": "11111111-1111-4111-8111-111111111111",
+          "name": "Stanford University",
+          "slug": "stanford"
+        }
+      }
+    ]
+  },
+  {
+    "id": "48ff6e9e-8a44-5ab8-b43f-162b5244660d",
+    "slug": "nus-international",
+    "name": "NUS International Undergraduate Scholarship",
+    "provider": "National University of Singapore",
+    "description": "For outstanding international freshmen from countries other than Singapore. Covers subsidised tuition after the MOE Tuition Grant, with annual living and accommodation support and a one-time computer allowance. Admission applicants are considered automatically; no separate scholarship application. The Tuition Grant requires a three-year employment bond with a Singapore-registered company. Renewal requires GPA 3.5 and other conditions.",
+    "amount": null,
+    "currency": "SGD",
+    "funding_type": "full",
+    "country_code": "SG",
+    "level": "Bachelor",
+    "international": true,
+    "deadline": null,
+    "application_url": "https://www.nus.edu.sg/oam/scholarships/scholarships-for-freshmen-international-students/nus-international-undergraduate-scholarship",
+    "published": true,
+    "year": null,
+    "source_id": "372e263c-b450-5fb7-ad70-9436d3f23f63",
+    "source_url": "https://www.nus.edu.sg/oam/scholarships/scholarships-for-freshmen-international-students/nus-international-undergraduate-scholarship",
+    "verification_status": "verified",
+    "verified_at": "2026-10-03T00:00:00Z",
+    "notes": "The published benefits include S$5,800 annual living, S$5,000 annual accommodation and S$1,750 one-time computer support. Medicine/Dentistry conditions differ; confirm the full terms. No deadline is invented.",
+    "tuition_coverage": 100,
+    "renewable": true,
+    "living_stipend": true,
+    "data_sources": {
+      "id": "372e263c-b450-5fb7-ad70-9436d3f23f63",
+      "name": "NUS International Undergraduate Scholarship · official provider",
+      "organization": "National University of Singapore",
+      "url": "https://www.nus.edu.sg/oam/scholarships/scholarships-for-freshmen-international-students/nus-international-undergraduate-scholarship",
+      "source_type": "scholarship",
+      "license_notes": "Paraphrased official award guidance.",
+      "retrieved_at": "2026-10-03T00:00:00Z"
+    },
+    "university_scholarships": [
+      {
+        "university_id": "c66c3755-66a2-57a0-a80e-da984c310d29",
+        "universities": {
+          "id": "c66c3755-66a2-57a0-a80e-da984c310d29",
+          "name": "National University of Singapore",
+          "slug": "national-university-of-singapore-c66c3755"
+        }
+      }
+    ]
+  }
+]

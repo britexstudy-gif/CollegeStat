@@ -1,0 +1,33 @@
+{
+  "arwu_2026_rows": 1000,
+  "retrieved_at": "2026-09-28",
+  "qs_2027_rows": 1504,
+  "linked": 4813,
+  "by_provider": {
+    "qs": 1853,
+    "the": 2017,
+    "arwu": 943
+  },
+  "qs_pdf_rows": 502,
+  "the_ranked_rows": 2191,
+  "unmatched": 384,
+  "matching": "Unique exact normalized registered name or alias in the same country, with active ROR Education reconciliation; ambiguous identities remain unlinked.",
+  "sources": [
+    {
+      "file": "qs-2026.pdf",
+      "sha256": "f224d038132b12245c208c53a090dc3db8bde191fb6e7d7c81329785aa980b5c"
+    },
+    {
+      "file": "qs-2027.xlsx",
+      "sha256": "cf18557a206a75248c921f3b58f4b48ce76463fa5b818de93358913ceda94a7a"
+    },
+    {
+      "file": "the-2026.json",
+      "sha256": "6c49df7f49b9dd69f60bc86b1aac237e69cedb53f1099219687b7a070ca8ffbd"
+    },
+    {
+      "file": "2026.json",
+      "sha256": "b639a5abd6c21fb05a4edbd8da05b2dce3f31fbee6ddb6d2e83ca837b7eb4c45"
+    }
+  ]
+}

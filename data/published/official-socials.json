@@ -1,0 +1,708 @@
+{
+  "ae117645-e24c-5269-8ed1-b5b826e53932": {
+    "socials": [
+      {
+        "label": "Instagram",
+        "url": "https://www.instagram.com/cambridgeuniversity/"
+      },
+      {
+        "label": "YouTube",
+        "url": "https://www.youtube.com/user/CambridgeUniversity"
+      }
+    ],
+    "source_url": "http://www.cam.ac.uk/",
+    "retrieved_at": "2026-09-28"
+  },
+  "39230496-b2fc-53ca-9303-1726c4ac13da": {
+    "socials": [
+      {
+        "label": "YouTube",
+        "url": "https://www.youtube.com/harvard"
+      },
+      {
+        "label": "Facebook",
+        "url": "https://www.facebook.com/Harvard/"
+      },
+      {
+        "label": "LinkedIn",
+        "url": "https://www.linkedin.com/school/harvard-university"
+      },
+      {
+        "label": "TikTok",
+        "url": "https://www.tiktok.com/@harvard"
+      },
+      {
+        "label": "Instagram",
+        "url": "https://www.instagram.com/harvard/"
+      }
+    ],
+    "source_url": "http://www.harvard.edu/",
+    "retrieved_at": "2026-09-28"
+  },
+  "6020a2b5-3788-5dd1-b3f2-b9c6c7c6f99b": {
+    "socials": [
+      {
+        "label": "TikTok",
+        "url": "https://www.tiktok.com/@ethzurich"
+      },
+      {
+        "label": "YouTube",
+        "url": "https://www.youtube.com/user/ethzurich"
+      },
+      {
+        "label": "Facebook",
+        "url": "https://www.facebook.com/eth/"
+      },
+      {
+        "label": "Instagram",
+        "url": "https://www.instagram.com/ethzurich/"
+      },
+      {
+        "label": "LinkedIn",
+        "url": "https://www.linkedin.com/school/eth-zurich/"
+      }
+    ],
+    "source_url": "http://www.ethz.ch/",
+    "retrieved_at": "2026-09-28"
+  },
+  "99fbcf31-606d-5dac-880e-83ca25acd942": {
+    "socials": [
+      {
+        "label": "Instagram",
+        "url": "https://www.instagram.com/caltechedu"
+      },
+      {
+        "label": "LinkedIn",
+        "url": "https://www.linkedin.com/school/california-institute-of-technology/"
+      },
+      {
+        "label": "Bluesky",
+        "url": "https://bsky.app/profile/did:plc:7aieti6cvhymgq24o22g2zdn"
+      }
+    ],
+    "source_url": "http://www.caltech.edu/",
+    "retrieved_at": "2026-09-28"
+  },
+  "e67501b3-2e87-5598-b9e3-e28fe4101f68": {
+    "socials": [
+      {
+        "label": "X",
+        "url": "https://twitter.com/UCBerkeley"
+      },
+      {
+        "label": "YouTube",
+        "url": "https://www.youtube.com/channel/UCZAXKyvvIV4uU4YvP5dmrmA"
+      },
+      {
+        "label": "LinkedIn",
+        "url": "https://www.linkedin.com/school/uc-berkeley/"
+      }
+    ],
+    "source_url": "http://www.berkeley.edu/",
+    "retrieved_at": "2026-09-28"
+  },
+  "0a670c6d-e20a-527f-851b-e2c1306cce70": {
+    "socials": [
+      {
+        "label": "Facebook",
+        "url": "https://www.facebook.com/YaleUniversity"
+      }
+    ],
+    "source_url": "http://www.yale.edu/",
+    "retrieved_at": "2026-09-28"
+  },
+  "b37d730b-421c-5ed6-a807-3d66e7ca21f7": {
+    "socials": [
+      {
+        "label": "YouTube",
+        "url": "https://www.youtube.com/user/abouthku"
+      },
+      {
+        "label": "Instagram",
+        "url": "https://www.instagram.com/hkuniversity/"
+      },
+      {
+        "label": "LinkedIn",
+        "url": "https://www.linkedin.com/school/universityofhongkong"
+      },
+      {
+        "label": "X",
+        "url": "https://twitter.com/HKUniversity"
+      },
+      {
+        "label": "Facebook",
+        "url": "https://www.facebook.com/hkuofficial/"
+      }
+    ],
+    "source_url": "https://www.hku.hk/",
+    "retrieved_at": "2026-09-28"
+  },
+  "894119e1-40c1-5589-8677-e1ed97388e59": {
+    "socials": [
+      {
+        "label": "Instagram",
+        "url": "https://instagram.com/uofpenn"
+      },
+      {
+        "label": "Facebook",
+        "url": "https://www.facebook.com/UnivPennsylvania"
+      },
+      {
+        "label": "Threads",
+        "url": "https://www.threads.net/@uofpenn"
+      },
+      {
+        "label": "LinkedIn",
+        "url": "https://www.linkedin.com/school/university-of-pennsylvania"
+      }
+    ],
+    "source_url": "http://www.upenn.edu/",
+    "retrieved_at": "2026-09-28"
+  },
+  "8488d97e-a227-5fbd-b7b4-33a1194df723": {
+    "socials": [
+      {
+        "label": "LinkedIn",
+        "url": "https://www.linkedin.com/school/cornell-university/"
+      },
+      {
+        "label": "YouTube",
+        "url": "https://www.youtube.com/c/Cornell"
+      },
+      {
+        "label": "Instagram",
+        "url": "https://instagram.com/cornelluniversity"
+      },
+      {
+        "label": "X",
+        "url": "https://twitter.com/Cornell"
+      },
+      {
+        "label": "Facebook",
+        "url": "https://www.facebook.com/Cornell"
+      }
+    ],
+    "source_url": "http://www.cornell.edu/",
+    "retrieved_at": "2026-09-28"
+  },
+  "d5ba03bb-65aa-55a6-8234-265ea05144fc": {
+    "socials": [
+      {
+        "label": "Threads",
+        "url": "https://www.threads.net/@ucla"
+      },
+      {
+        "label": "TikTok",
+        "url": "https://www.tiktok.com/@ucla?lang=en"
+      },
+      {
+        "label": "YouTube",
+        "url": "https://www.youtube.com/user/UCLA"
+      },
+      {
+        "label": "X",
+        "url": "https://twitter.com/ucla"
+      },
+      {
+        "label": "LinkedIn",
+        "url": "https://www.linkedin.com/school/ucla"
+      },
+      {
+        "label": "Instagram",
+        "url": "https://www.instagram.com/ucla/"
+      },
+      {
+        "label": "Facebook",
+        "url": "https://www.facebook.com/UCLA/"
+      }
+    ],
+    "source_url": "http://www.ucla.edu/",
+    "retrieved_at": "2026-09-28"
+  },
+  "b7c4c075-d30e-53b3-80a8-7e7d751a47b7": {
+    "socials": [
+      {
+        "label": "Threads",
+        "url": "https://www.threads.net/@carnegiemellon"
+      },
+      {
+        "label": "Bluesky",
+        "url": "https://bsky.app/profile/cmu.edu"
+      },
+      {
+        "label": "YouTube",
+        "url": "https://www.youtube.com/carnegiemellonu"
+      },
+      {
+        "label": "LinkedIn",
+        "url": "https://www.linkedin.com/company/carnegie-mellon-university"
+      },
+      {
+        "label": "X",
+        "url": "https://x.com/carnegiemellon"
+      },
+      {
+        "label": "Instagram",
+        "url": "https://www.instagram.com/carnegiemellon/"
+      },
+      {
+        "label": "Facebook",
+        "url": "https://www.facebook.com/carnegiemellonu"
+      }
+    ],
+    "source_url": "http://www.cmu.edu/",
+    "retrieved_at": "2026-09-28"
+  },
+  "5d324277-c7c7-52eb-9d99-03367f122d16": {
+    "socials": [
+      {
+        "label": "YouTube",
+        "url": "https://www.youtube.com/user/uwhuskies"
+      },
+      {
+        "label": "Instagram",
+        "url": "https://www.instagram.com/uofwa/"
+      },
+      {
+        "label": "X",
+        "url": "https://x.com/UW"
+      },
+      {
+        "label": "Facebook",
+        "url": "https://www.facebook.com/UofWA"
+      }
+    ],
+    "source_url": "http://www.washington.edu/",
+    "retrieved_at": "2026-09-28"
+  },
+  "11087dc1-5405-5bd2-a5e2-def936b94cf7": {
+    "socials": [
+      {
+        "label": "Instagram",
+        "url": "https://www.instagram.com/utokyo_pr/"
+      },
+      {
+        "label": "YouTube",
+        "url": "https://www.youtube.com/user/UTokyoPR/"
+      },
+      {
+        "label": "X",
+        "url": "https://twitter.com/UTokyo_News"
+      },
+      {
+        "label": "Facebook",
+        "url": "https://www.facebook.com/UTokyo.News"
+      }
+    ],
+    "source_url": "http://www.u-tokyo.ac.jp/",
+    "retrieved_at": "2026-09-28"
+  },
+  "fb08c67d-bb79-53ff-bbfc-1313fa5602e3": {
+    "socials": [
+      {
+        "label": "TikTok",
+        "url": "https://www.tiktok.com/@dukeu?lang=en"
+      },
+      {
+        "label": "YouTube",
+        "url": "https://www.youtube.com/@dukeuniversity"
+      },
+      {
+        "label": "X",
+        "url": "https://x.com/DukeU"
+      },
+      {
+        "label": "LinkedIn",
+        "url": "https://www.linkedin.com/school/duke-university/"
+      },
+      {
+        "label": "Instagram",
+        "url": "https://www.instagram.com/dukeuniversity/"
+      },
+      {
+        "label": "Facebook",
+        "url": "https://www.facebook.com/DukeUniv/"
+      }
+    ],
+    "source_url": "http://www.duke.edu/",
+    "retrieved_at": "2026-09-28"
+  },
+  "e48a723c-68b4-560e-b4a0-09be01682853": {
+    "socials": [
+      {
+        "label": "LinkedIn",
+        "url": "https://www.linkedin.com/school/northwestern-university/"
+      },
+      {
+        "label": "TikTok",
+        "url": "https://www.tiktok.com/@northwestern.u"
+      },
+      {
+        "label": "YouTube",
+        "url": "https://www.youtube.com/user/NorthwesternU"
+      },
+      {
+        "label": "Instagram",
+        "url": "https://instagram.com/northwesternu"
+      },
+      {
+        "label": "X",
+        "url": "https://www.twitter.com/northwesternu"
+      },
+      {
+        "label": "Facebook",
+        "url": "https://www.facebook.com/NorthwesternU"
+      }
+    ],
+    "source_url": "http://www.northwestern.edu/",
+    "retrieved_at": "2026-09-28"
+  },
+  "01649f44-22e4-5b85-adaa-81f3538aa083": {
+    "socials": [
+      {
+        "label": "TikTok",
+        "url": "https://www.tiktok.com/@kingscollegelondon"
+      },
+      {
+        "label": "Bluesky",
+        "url": "https://bsky.app/profile/kingscollegelondon.bsky.social"
+      },
+      {
+        "label": "YouTube",
+        "url": "https://www.youtube.com/user/kingscollegelondon"
+      },
+      {
+        "label": "LinkedIn",
+        "url": "https://www.linkedin.com/company/7198"
+      },
+      {
+        "label": "Instagram",
+        "url": "https://www.instagram.com/lifeatkings"
+      },
+      {
+        "label": "X",
+        "url": "https://www.twitter.com/kingscollegelon"
+      },
+      {
+        "label": "Facebook",
+        "url": "https://www.facebook.com/kingscollegelondon"
+      }
+    ],
+    "source_url": "http://www.kcl.ac.uk/",
+    "retrieved_at": "2026-09-28"
+  },
+  "74996b5e-c39f-52f1-9e01-88f3051f155b": {
+    "socials": [
+      {
+        "label": "X",
+        "url": "https://x.com/hkust"
+      },
+      {
+        "label": "YouTube",
+        "url": "https://www.youtube.com/HKUST"
+      },
+      {
+        "label": "Instagram",
+        "url": "https://www.instagram.com/hkust"
+      },
+      {
+        "label": "Facebook",
+        "url": "https://www.facebook.com/hkust/"
+      }
+    ],
+    "source_url": "https://hkust.edu.hk/",
+    "retrieved_at": "2026-09-28"
+  },
+  "6e2ae583-50c4-53d5-a0ed-d11422c64773": {
+    "socials": [
+      {
+        "label": "Bluesky",
+        "url": "https://bsky.app/profile/manchester.ac.uk"
+      },
+      {
+        "label": "Facebook",
+        "url": "https://www.facebook.com/TheUniversityOfManchester"
+      },
+      {
+        "label": "TikTok",
+        "url": "https://www.tiktok.com/@officialuom/"
+      },
+      {
+        "label": "YouTube",
+        "url": "https://www.youtube.com/universitymanchester"
+      },
+      {
+        "label": "Instagram",
+        "url": "https://instagram.com/officialuom/"
+      },
+      {
+        "label": "LinkedIn",
+        "url": "https://www.linkedin.com/school/university-of-manchester/"
+      }
+    ],
+    "source_url": "http://www.manchester.ac.uk/",
+    "retrieved_at": "2026-09-28"
+  },
+  "6a9e2556-fc5f-56a2-bca0-9364f099818c": {
+    "socials": [
+      {
+        "label": "Instagram",
+        "url": "https://www.instagram.com/snu.official/?igshid=1ja3dei440cnw"
+      },
+      {
+        "label": "YouTube",
+        "url": "https://www.youtube.com/channel/UCJ_3L5ElVq7fI0AAB91tfng"
+      },
+      {
+        "label": "Facebook",
+        "url": "https://www.facebook.com/SeoulNationalUniversity"
+      }
+    ],
+    "source_url": "http://www.snu.ac.kr/",
+    "retrieved_at": "2026-09-28"
+  },
+  "276cad09-4a66-51a1-9071-c1ffe923a508": {
+    "socials": [
+      {
+        "label": "TikTok",
+        "url": "https://www.tiktok.com/@universityofbc"
+      },
+      {
+        "label": "LinkedIn",
+        "url": "https://www.linkedin.com/school/universityofbc"
+      }
+    ],
+    "source_url": "http://www.ubc.ca/",
+    "retrieved_at": "2026-09-28"
+  },
+  "c0386da4-95a0-567a-8f70-81b33c5c7f06": {
+    "socials": [
+      {
+        "label": "TikTok",
+        "url": "https://www.tiktok.com/@uniofqld"
+      },
+      {
+        "label": "Instagram",
+        "url": "https://instagram.com/uniofqld"
+      },
+      {
+        "label": "YouTube",
+        "url": "https://www.youtube.com/user/universityqueensland"
+      },
+      {
+        "label": "X",
+        "url": "https://x.com/uq_news"
+      },
+      {
+        "label": "LinkedIn",
+        "url": "https://www.linkedin.com/school/university-of-queensland"
+      },
+      {
+        "label": "Facebook",
+        "url": "https://www.facebook.com/uniofqld"
+      }
+    ],
+    "source_url": "http://www.uq.edu.au/",
+    "retrieved_at": "2026-09-28"
+  },
+  "72c8eb2c-4178-5106-b3c2-a72e73dc074c": {
+    "socials": [
+      {
+        "label": "YouTube",
+        "url": "https://www.youtube.com/channel/UCFkaWOGpyFBVRf5jEeD_wrA"
+      },
+      {
+        "label": "X",
+        "url": "https://x.com/georgiatech"
+      },
+      {
+        "label": "LinkedIn",
+        "url": "https://www.linkedin.com/edu/school?id=18158&trk=tyah"
+      },
+      {
+        "label": "Instagram",
+        "url": "https://www.instagram.com/georgiatech"
+      },
+      {
+        "label": "Facebook",
+        "url": "https://www.facebook.com/georgiatech"
+      }
+    ],
+    "source_url": "http://www.gatech.edu/",
+    "retrieved_at": "2026-09-28"
+  },
+  "1e3bb7ff-87ca-5331-a3ab-82b0d0b3484d": {
+    "socials": [
+      {
+        "label": "LinkedIn",
+        "url": "https://www.linkedin.com/edu/delft-university-of-technology-15445"
+      },
+      {
+        "label": "YouTube",
+        "url": "https://www.youtube.com/user/tudelft"
+      },
+      {
+        "label": "Instagram",
+        "url": "https://www.instagram.com/tudelft/?hl=en"
+      },
+      {
+        "label": "Facebook",
+        "url": "https://www.facebook.com/tudelft"
+      }
+    ],
+    "source_url": "http://www.tudelft.nl/",
+    "retrieved_at": "2026-09-28"
+  },
+  "8db5368d-e619-5c47-a235-b8d3afff1258": {
+    "socials": [
+      {
+        "label": "Bluesky",
+        "url": "https://bsky.app/profile/ucsandiego.bsky.social"
+      },
+      {
+        "label": "LinkedIn",
+        "url": "https://www.linkedin.com/company/university-of-california-at-san-diego/"
+      },
+      {
+        "label": "TikTok",
+        "url": "https://www.tiktok.com/@ucsandiego"
+      },
+      {
+        "label": "X",
+        "url": "https://twitter.com/ucsandiego/"
+      },
+      {
+        "label": "Instagram",
+        "url": "https://www.instagram.com/ucsandiego/"
+      },
+      {
+        "label": "Facebook",
+        "url": "https://www.facebook.com/UCSanDiego/"
+      }
+    ],
+    "source_url": "http://www.ucsd.edu/",
+    "retrieved_at": "2026-09-28"
+  },
+  "a74d45a9-657e-514c-ac03-c9d2f9200640": {
+    "socials": [
+      {
+        "label": "X",
+        "url": "https://twitter.com/HongKongPolyU"
+      },
+      {
+        "label": "LinkedIn",
+        "url": "https://www.linkedin.com/school/hong-kong-polytechnic-university/"
+      },
+      {
+        "label": "Instagram",
+        "url": "https://www.instagram.com/hongkongpolyu/"
+      },
+      {
+        "label": "YouTube",
+        "url": "https://www.youtube.com/user/HongKongPolyU"
+      },
+      {
+        "label": "Facebook",
+        "url": "https://www.facebook.com/HongKongPolyU"
+      }
+    ],
+    "source_url": "https://www.polyu.edu.hk/",
+    "retrieved_at": "2026-09-28"
+  },
+  "e777849c-7be7-553b-90bf-d99502e7c52d": {
+    "socials": [
+      {
+        "label": "LinkedIn",
+        "url": "https://www.linkedin.com/edu/the-university-of-texas-at-austin-19518"
+      },
+      {
+        "label": "Instagram",
+        "url": "https://instagram.com/utaustintx"
+      },
+      {
+        "label": "X",
+        "url": "https://twitter.com/utaustin"
+      },
+      {
+        "label": "Facebook",
+        "url": "https://www.facebook.com/UTAustinTX"
+      }
+    ],
+    "source_url": "https://www.utexas.edu/",
+    "retrieved_at": "2026-09-28"
+  },
+  "22222222-2222-4222-8222-222222222222": {
+    "socials": [
+      {
+        "label": "Instagram",
+        "url": "https://www.instagram.com/mit/"
+      },
+      {
+        "label": "YouTube",
+        "url": "https://www.youtube.com/mit"
+      },
+      {
+        "label": "Facebook",
+        "url": "https://www.facebook.com/MITnews"
+      },
+      {
+        "label": "X",
+        "url": "https://twitter.com/mit"
+      }
+    ],
+    "source_url": "http://web.mit.edu/",
+    "retrieved_at": "2026-09-28"
+  },
+  "819bd7c2-cc38-5dc4-854d-2d59a8a9f4e5": {
+    "socials": [
+      {
+        "label": "YouTube",
+        "url": "https://www.youtube.com/user/epflnews"
+      },
+      {
+        "label": "X",
+        "url": "https://x.com/epfl_en"
+      },
+      {
+        "label": "LinkedIn",
+        "url": "https://www.linkedin.com/school/epfl/"
+      },
+      {
+        "label": "Instagram",
+        "url": "https://instagram.com/epflcampus"
+      },
+      {
+        "label": "Facebook",
+        "url": "https://www.facebook.com/epflcampus"
+      }
+    ],
+    "source_url": "http://www.epfl.ch/",
+    "retrieved_at": "2026-09-28"
+  },
+  "cc300fc2-3770-5383-a663-b1ec31311b4d": {
+    "socials": [
+      {
+        "label": "YouTube",
+        "url": "https://www.youtube.com/user/nyu"
+      },
+      {
+        "label": "Instagram",
+        "url": "https://www.instagram.com/nyuniversity"
+      },
+      {
+        "label": "X",
+        "url": "https://www.twitter.com/nyuniversity"
+      },
+      {
+        "label": "LinkedIn",
+        "url": "https://www.linkedin.com/school/new-york-university"
+      },
+      {
+        "label": "Facebook",
+        "url": "https://www.facebook.com/NYU"
+      }
+    ],
+    "source_url": "http://www.nyu.edu/",
+    "retrieved_at": "2026-09-28"
+  }
+}

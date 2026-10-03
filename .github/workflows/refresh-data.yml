@@ -1,0 +1,29 @@
+name: Refresh university evidence
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 * * * *'
+permissions:
+  contents: read
+concurrency:
+  group: university-evidence-refresh
+  cancel-in-progress: false
+jobs:
+  ingest:
+    # Enabling feeds and this repository variable are explicit operational steps.
+    if: vars.INGEST_ENABLED == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci --ignore-scripts
+      - run: npm run ingest:run
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          SCORECARD_API_KEY: ${{ secrets.SCORECARD_API_KEY }}
+          INGEST_ALLOWED_HOSTS: ${{ vars.INGEST_ALLOWED_HOSTS }}

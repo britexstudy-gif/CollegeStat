@@ -1,0 +1,43 @@
+{
+  "tool": "built-in image_gen",
+  "date": "2026-09-28",
+  "common": "Use case: stylized-concept. Landscape 3:2 editorial illustration for CollegeStat. Bold contemporary editorial collage; intense cobalt/royal blue backgrounds, black and ivory monochrome cutouts, halftone print dots, subtle grain, sparse pixel motifs. Strong silhouettes, negative space, clear at thumbnail size. No watercolor, words, lettering, brand marks or watermark.",
+  "assets": [
+    {
+      "id": "compare",
+      "source": "/Users/likeanew/.codex/generated_images/01a0dcf0-5a6e-7da1-845d-bbd7208673b4/exec-bc5cec10-f96d-4563-aaf1-bc8242329c5a.png",
+      "scene": "Two grayscale classical marble scholars contemplating two contrasting miniature university buildings with pixel arrows connecting them, concept of choosing a university",
+      "output": "public/images/resources/compare.webp"
+    },
+    {
+      "id": "sat",
+      "source": "/Users/likeanew/.codex/generated_images/01a0dcf0-5a6e-7da1-845d-bbd7208673b4/exec-af3e0198-1db6-4eed-84a9-2aa1ebb7796d.png",
+      "scene": "A grayscale halftone hand holding a pencil over a geometric graph notebook, electric blue pixel mathematics motifs and one small acid yellow accent",
+      "output": "public/images/resources/sat.webp"
+    },
+    {
+      "id": "funding",
+      "source": "/Users/likeanew/.codex/generated_images/01a0dcf0-5a6e-7da1-845d-bbd7208673b4/exec-fba6bcf6-6fef-4c78-b1da-e2e2b0af3757.png",
+      "scene": "A grayscale marble hand holding an open envelope with a globe emerging, cobalt pixel stars and a tiny lime plane, concept of scholarship opportunities",
+      "output": "public/images/resources/funding.webp"
+    },
+    {
+      "id": "ielts",
+      "source": "/Users/likeanew/.codex/generated_images/01a0dcf0-5a6e-7da1-845d-bbd7208673b4/exec-5f836b4d-c143-4be2-b3f8-be1cc97e6d89.png",
+      "scene": "Two grayscale classical sculpture heads facing each other, dotted halftone speech shapes and pixel sound waves, concept of language and conversation",
+      "output": "public/images/resources/ielts.webp"
+    },
+    {
+      "id": "essays",
+      "source": "/Users/likeanew/.codex/generated_images/01a0dcf0-5a6e-7da1-845d-bbd7208673b4/exec-74306ca0-4922-4caf-94b4-69f9b487f094.png",
+      "scene": "Grayscale halftone hands typing on a keyboard with sheets of paper floating upwards, electric blue field, a single small lime cursor shape",
+      "output": "public/images/resources/essays.webp"
+    },
+    {
+      "id": "applications",
+      "source": "/Users/likeanew/.codex/generated_images/01a0dcf0-5a6e-7da1-845d-bbd7208673b4/exec-3f9ef29c-c6ed-4741-be72-d078f2276375.png",
+      "scene": "A small jet silhouette rising through luminous cream and orange trails into an electric cobalt blue sky, abstract forward momentum and new beginnings, crisp conceptual poster",
+      "output": "public/images/resources/applications.webp"
+    }
+  ]
+}

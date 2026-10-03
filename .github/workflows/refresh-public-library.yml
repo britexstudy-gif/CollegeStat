@@ -1,0 +1,40 @@
+name: Refresh public profile library
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '35 3 * * *'
+permissions:
+  contents: read
+concurrency:
+  group: public-profile-library
+  cancel-in-progress: false
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/cache@v4
+        with:
+          path: |
+            data/raw/official-web-profiles
+            data/raw/openalex-current
+          key: profile-cache-${{ github.run_id }}
+          restore-keys: profile-cache-
+      - name: Discover official links and website icons
+        run: python3 scripts/ingestion/official-web-profiles.py --limit 200 --max-age-days 30
+      - name: Refresh recent publications
+        run: python3 scripts/ingestion/expand-papers.py --limit 50 --max-age-days 7
+      - name: Preserve reviewable data and source failures
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: profile-library-${{ github.run_id }}
+          path: |
+            data/published/official-web-profiles.json
+            data/published/openalex-current.json
+            data/raw/openalex-current/refresh-report.json
+          retention-days: 14

@@ -1,0 +1,101 @@
+[
+  {
+    "domain": "uni-ruse.bg",
+    "local": "/logos/ruse.png",
+    "source": "https://www.uni-ruse.bg/en",
+    "download_url": "https://www.uni-ruse.bg/_layouts/15/images/UniRuse/ru-default-logo.png",
+    "surface": "light",
+    "checked_at": "2026-10-01",
+    "sha256": "f4d6fc791447cd021c6883593f074e0d5c6324d8da926f82aad48e51e1f82c17"
+  },
+  {
+    "domain": "wiut.uz",
+    "local": "/logos/wiut-wordmark.svg",
+    "source": "https://www.wiut.uz/",
+    "download_url": "https://www.wiut.uz/images/logo/logo-wiut-25_white_short.svg",
+    "surface": "dark",
+    "checked_at": "2026-10-01",
+    "sha256": "2d89ba0acbb6679d7bb6a461e5b11f59097275578f423032478d9c2b03a0ff6a"
+  },
+  {
+    "domain": "harvard.edu",
+    "local": "/logos/harvard-wordmark.svg",
+    "source": "https://www.harvard.edu/",
+    "download_url": "https://www.harvard.edu/wp-content/themes/core/assets/img/theme/branding-assets/footer-logo.svg",
+    "surface": "dark",
+    "checked_at": "2026-10-01",
+    "sha256": "35cf9b91322b7a04c9ab3d17f02958e9d5acebf89fcf89feaf7418b56d32e104"
+  },
+  {
+    "domain": "uibe.edu.cn",
+    "local": "/logos/uibe.png",
+    "source": "https://english.uibe.edu.cn/",
+    "download_url": "https://english.uibe.edu.cn/images/logo.fw.png",
+    "surface": "dark",
+    "checked_at": "2026-10-01",
+    "sha256": "34bbabc60960049e854cf1435574d246f8ae70b09234dc8ed651c7d2d1678f5b"
+  },
+  {
+    "domain": "ethz.ch",
+    "local": "/logos/eth.svg",
+    "source": "https://ethz.ch/en.html",
+    "surface": "light",
+    "checked_at": "2026-10-01",
+    "sha256": "6a714921b40e095aeb1c806b162ab5dd7d3fae9cd695a6f0ada81d5103c50b33"
+  },
+  {
+    "domain": "kuleuven.be",
+    "local": "/logos/kuleuven.svg",
+    "download_url": "https://stijl.kuleuven.be/releases/latest/img/svg/logo.svg",
+    "source": "https://www.kuleuven.be/english",
+    "surface": "dark",
+    "checked_at": "2026-10-01",
+    "sha256": "e32a6e5e111ea45256a1805f7fa949277a67f9cfb5d0f9e2211984fd44c2bc53"
+  },
+  {
+    "domain": "birmingham.ac.uk",
+    "local": "/logos/birmingham.svg",
+    "download_url": "https://www.birmingham.ac.uk/Images/logos/uob/uob-uk-logo-dark.svg",
+    "source": "https://www.birmingham.ac.uk/",
+    "surface": "dark",
+    "checked_at": "2026-10-01",
+    "sha256": "0f37f690530017d0b4a6fae2d1c92e52ba99ecd0217b0759b68abc01058f28b3"
+  },
+  {
+    "domain": "cam.ac.uk",
+    "local": "/logos/cambridge-wordmark.svg",
+    "source": "https://www.cam.ac.uk/",
+    "download_url": "https://www.cam.ac.uk/themes/custom/fresh/images/interface/university_logo_white-01.svg",
+    "surface": "dark",
+    "checked_at": "2026-10-02",
+    "sha256": "eaed3f80a85dc3564c0706da15ed5eb96b8198f711d537413e5ebaab89b1b7ee"
+  },
+  {
+    "domain": "ntu.edu.sg",
+    "local": "/logos/ntu.png",
+    "source": "https://www.ntu.edu.sg/",
+    "download_url": "https://www.ntu.edu.sg/ResourcePackages/NTU/assets/images/NTU_Logo.png",
+    "surface": "light",
+    "checked_at": "2026-10-02",
+    "sha256": "45535780334a04c2384d82468ab49c2c8f6d5a77f717246dc42f0c6ff6451503"
+  },
+  {
+    "domain": "hku.hk",
+    "local": "/logos/hku.svg",
+    "source": "https://www.hku.hk/",
+    "download_url": "https://www.hku.hk/adobe/dynamicmedia/deliver/dm-aid--afc8d43c-587a-43f0-b93c-26f8bd397e0e/logo-hku.svg.webp?preferwebp=true&width=208",
+    "surface": "light",
+    "checked_at": "2026-10-02",
+    "sha256": "8015f43dbdef80cb7c77f4ad2ec3236abd6c28d912c848702bde7ebada5b02be"
+  },
+  {
+    "domain": "utoronto.ca",
+    "local": "/logos/toronto-wordmark.svg",
+    "source": "https://future.utoronto.ca/",
+    "download_url": "https://future.utoronto.ca/themes/utfs/dist/icons.svg",
+    "surface": "light",
+    "checked_at": "2026-10-02",
+    "sha256": "4280de819b7e3e5b4fb0121fdb9084ac627565903c82d2e77e2d4d535db3cb86",
+    "notes": "Official logo-svg symbol extracted into a standalone SVG; paths retained."
+  }
+]

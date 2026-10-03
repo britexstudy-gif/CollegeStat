@@ -1,0 +1,272 @@
+[
+  {
+    "domain": "hku.hk",
+    "name": "University of Hong Kong",
+    "provider": "QS",
+    "scope": "Asia",
+    "year": 2026,
+    "rank_label": "1",
+    "source_url": "https://www.qs.com/insights/qs-world-university-rankings-asia",
+    "checked_at": "2026-09-30"
+  },
+  {
+    "domain": "pku.edu.cn",
+    "name": "Peking University",
+    "provider": "QS",
+    "scope": "Asia",
+    "year": 2026,
+    "rank_label": "2",
+    "source_url": "https://www.qs.com/insights/qs-world-university-rankings-asia",
+    "checked_at": "2026-09-30"
+  },
+  {
+    "domain": "ntu.edu.sg",
+    "name": "Nanyang Technological University",
+    "provider": "QS",
+    "scope": "Asia",
+    "year": 2026,
+    "rank_label": "=3",
+    "source_url": "https://www.qs.com/insights/qs-world-university-rankings-asia",
+    "checked_at": "2026-09-30"
+  },
+  {
+    "domain": "nus.edu.sg",
+    "name": "National University of Singapore",
+    "provider": "QS",
+    "scope": "Asia",
+    "year": 2026,
+    "rank_label": "=3",
+    "source_url": "https://www.qs.com/insights/qs-world-university-rankings-asia",
+    "checked_at": "2026-09-30"
+  },
+  {
+    "domain": "fudan.edu.cn",
+    "name": "Fudan University",
+    "provider": "QS",
+    "scope": "Asia",
+    "year": 2026,
+    "rank_label": "5",
+    "source_url": "https://www.qs.com/insights/qs-world-university-rankings-asia",
+    "checked_at": "2026-09-30"
+  },
+  {
+    "domain": "hkust.edu.hk",
+    "name": "Hong Kong University of Science and Technology",
+    "provider": "QS",
+    "scope": "Asia",
+    "year": 2026,
+    "rank_label": "6",
+    "source_url": "https://www.qs.com/insights/qs-world-university-rankings-asia",
+    "checked_at": "2026-09-30"
+  },
+  {
+    "domain": "cityu.edu.hk",
+    "name": "City University of Hong Kong",
+    "provider": "QS",
+    "scope": "Asia",
+    "year": 2026,
+    "rank_label": "=7",
+    "source_url": "https://www.qs.com/insights/qs-world-university-rankings-asia",
+    "checked_at": "2026-09-30"
+  },
+  {
+    "domain": "cuhk.edu.hk",
+    "name": "Chinese University of Hong Kong",
+    "provider": "QS",
+    "scope": "Asia",
+    "year": 2026,
+    "rank_label": "=7",
+    "source_url": "https://www.qs.com/insights/qs-world-university-rankings-asia",
+    "checked_at": "2026-09-30"
+  },
+  {
+    "domain": "tsinghua.edu.cn",
+    "name": "Tsinghua University",
+    "provider": "QS",
+    "scope": "Asia",
+    "year": 2026,
+    "rank_label": "9",
+    "source_url": "https://www.qs.com/insights/qs-world-university-rankings-asia",
+    "checked_at": "2026-09-30"
+  },
+  {
+    "domain": "polyu.edu.hk",
+    "name": "Hong Kong Polytechnic University",
+    "provider": "QS",
+    "scope": "Asia",
+    "year": 2026,
+    "rank_label": "10",
+    "source_url": "https://www.qs.com/insights/qs-world-university-rankings-asia",
+    "checked_at": "2026-09-30"
+  },
+  {
+    "domain": "yonsei.ac.kr",
+    "name": "Yonsei University",
+    "provider": "QS",
+    "scope": "Asia",
+    "year": 2026,
+    "rank_label": "11",
+    "source_url": "https://www.qs.com/insights/qs-world-university-rankings-asia",
+    "checked_at": "2026-09-30"
+  },
+  {
+    "domain": "u-tokyo.ac.jp",
+    "name": "University of Tokyo",
+    "provider": "QS",
+    "scope": "Asia",
+    "year": 2026,
+    "rank_label": "26",
+    "source_url": "https://www.qs.com/insights/qs-world-university-rankings-asia",
+    "checked_at": "2026-09-30"
+  },
+  {
+    "domain": "nu.edu.kz",
+    "name": "Nazarbayev University",
+    "provider": "QS",
+    "scope": "Asia",
+    "year": 2026,
+    "rank_label": "=201",
+    "source_url": "https://www.qs.com/insights/qs-world-university-rankings-asia",
+    "checked_at": "2026-09-30"
+  },
+  {
+    "domain": "vlu.edu.vn",
+    "name": "Van Lang University",
+    "provider": "QS",
+    "scope": "Asia",
+    "year": 2026,
+    "rank_label": "=251",
+    "source_url": "https://www.qs.com/insights/qs-world-university-rankings-asia",
+    "checked_at": "2026-09-30"
+  },
+  {
+    "domain": "ox.ac.uk",
+    "name": "University of Oxford",
+    "provider": "QS",
+    "scope": "Europe",
+    "year": 2026,
+    "rank_label": "1",
+    "source_url": "https://www.qs.com/insights/world-university-rankings-europe",
+    "checked_at": "2026-09-30"
+  },
+  {
+    "domain": "ethz.ch",
+    "name": "ETH Zurich",
+    "provider": "QS",
+    "scope": "Europe",
+    "year": 2026,
+    "rank_label": "2",
+    "source_url": "https://www.qs.com/insights/world-university-rankings-europe",
+    "checked_at": "2026-09-30"
+  },
+  {
+    "domain": "imperial.ac.uk",
+    "name": "Imperial College London",
+    "provider": "QS",
+    "scope": "Europe",
+    "year": 2026,
+    "rank_label": "=3",
+    "source_url": "https://www.qs.com/insights/world-university-rankings-europe",
+    "checked_at": "2026-09-30"
+  },
+  {
+    "domain": "ucl.ac.uk",
+    "name": "UCL",
+    "provider": "QS",
+    "scope": "Europe",
+    "year": 2026,
+    "rank_label": "=3",
+    "source_url": "https://www.qs.com/insights/world-university-rankings-europe",
+    "checked_at": "2026-09-30"
+  },
+  {
+    "domain": "cam.ac.uk",
+    "name": "University of Cambridge",
+    "provider": "QS",
+    "scope": "Europe",
+    "year": 2026,
+    "rank_label": "5",
+    "source_url": "https://www.qs.com/insights/world-university-rankings-europe",
+    "checked_at": "2026-09-30"
+  },
+  {
+    "domain": "ed.ac.uk",
+    "name": "University of Edinburgh",
+    "provider": "QS",
+    "scope": "Europe",
+    "year": 2026,
+    "rank_label": "6",
+    "source_url": "https://www.qs.com/insights/world-university-rankings-europe",
+    "checked_at": "2026-09-30"
+  },
+  {
+    "domain": "kcl.ac.uk",
+    "name": "King’s College London",
+    "provider": "QS",
+    "scope": "Europe",
+    "year": 2026,
+    "rank_label": "7",
+    "source_url": "https://www.qs.com/insights/world-university-rankings-europe",
+    "checked_at": "2026-09-30"
+  },
+  {
+    "domain": "psl.eu",
+    "name": "Université PSL",
+    "provider": "QS",
+    "scope": "Europe",
+    "year": 2026,
+    "rank_label": "8",
+    "source_url": "https://www.qs.com/insights/world-university-rankings-europe",
+    "checked_at": "2026-09-30"
+  },
+  {
+    "domain": "manchester.ac.uk",
+    "name": "University of Manchester",
+    "provider": "QS",
+    "scope": "Europe",
+    "year": 2026,
+    "rank_label": "9",
+    "source_url": "https://www.qs.com/insights/world-university-rankings-europe",
+    "checked_at": "2026-09-30"
+  },
+  {
+    "domain": "epfl.ch",
+    "name": "EPFL",
+    "provider": "QS",
+    "scope": "Europe",
+    "year": 2026,
+    "rank_label": "10",
+    "source_url": "https://www.qs.com/insights/world-university-rankings-europe",
+    "checked_at": "2026-09-30"
+  },
+  {
+    "domain": "tudelft.nl",
+    "name": "Delft University of Technology",
+    "provider": "QS",
+    "scope": "Europe",
+    "year": 2026,
+    "rank_label": "11",
+    "source_url": "https://www.qs.com/insights/world-university-rankings-europe",
+    "checked_at": "2026-09-30"
+  },
+  {
+    "domain": "tum.de",
+    "name": "Technical University of Munich",
+    "provider": "QS",
+    "scope": "Europe",
+    "year": 2026,
+    "rank_label": "=12",
+    "source_url": "https://www.qs.com/insights/world-university-rankings-europe",
+    "checked_at": "2026-09-30"
+  },
+  {
+    "domain": "warwick.ac.uk",
+    "name": "University of Warwick",
+    "provider": "QS",
+    "scope": "Europe",
+    "year": 2026,
+    "rank_label": "=17",
+    "source_url": "https://www.qs.com/insights/world-university-rankings-europe",
+    "checked_at": "2026-09-30"
+  }
+]

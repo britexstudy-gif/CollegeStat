@@ -1,0 +1,9 @@
+{
+  "source_url": "https://nces.ed.gov/ipeds/complete-data-files/C2025_A.zip",
+  "dictionary_url": "https://nces.ed.gov/ipeds/complete-data-files/C2025_A_Dict.zip",
+  "period": "July 2024\u2013June 2025",
+  "retrieved_at": "2026-09-28",
+  "institutions": 2731,
+  "program_records": 148432,
+  "sha256": "555c6522ccf011d54b06520b128badb8558aba3d0038c97f231f5efaa7161183"
+}

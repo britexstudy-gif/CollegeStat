@@ -1,0 +1,141 @@
+{
+  "mit.edu": {
+    "checked_at": "2026-09-28",
+    "requirements_source": "https://mitadmissions.org/apply/firstyear/deadlines-requirements/",
+    "requirements": [
+      "Complete the MIT first-year application, including essays, activities and academic history.",
+      "Submit the required recommendations and academic records.",
+      "Submit SAT or ACT results; review the official test-date policy for your application round.",
+      "Check MIT’s English-language testing guidance for your circumstances."
+    ],
+    "scholarships": [
+      {
+        "name": "MIT undergraduate financial aid",
+        "eligibility": "Apply through MIT Student Financial Services. Aid depends on the university’s assessment of financial need and your application documents.",
+        "url": "https://sfs.mit.edu/undergraduate-students/apply-for-aid/"
+      }
+    ],
+    "scope": "First-year undergraduate applicants; confirm programme-specific rules"
+  },
+  "stanford.edu": {
+    "checked_at": "2026-09-28",
+    "requirements_source": "https://admission.stanford.edu/apply/first-year/index.html",
+    "requirements": [
+      "Submit the Common Application and the application fee or a fee-waiver request.",
+      "Submit SAT or ACT results.",
+      "Provide a school report, counselor recommendation and official academic transcripts.",
+      "Provide two academic teacher recommendations and the midyear transcript."
+    ],
+    "scholarships": [],
+    "scope": "First-year undergraduate applicants; confirm programme-specific rules"
+  },
+  "harvard.edu": {
+    "checked_at": "2026-09-28",
+    "requirements_source": "https://college.harvard.edu/admissions/apply/application-requirements",
+    "requirements": [
+      "Complete the Common Application or Coalition Application by Scoir and the Harvard supplement.",
+      "Provide school reports, transcripts and teacher recommendations.",
+      "Review the current SAT/ACT requirement and the published exceptional-circumstances policy."
+    ],
+    "scholarships": [
+      {
+        "name": "Harvard College need-based aid · 2025–26 onward",
+        "eligibility": "Families earning $100,000 or less with typical assets may qualify for coverage of all billed expenses; those earning $200,000 or less with typical assets may qualify for tuition coverage. The university assesses each family’s financial circumstances.",
+        "url": "https://college.harvard.edu/resources/faq/what-harvards-financial-aid-expansion-25-26-school-year"
+      }
+    ],
+    "scope": "First-year undergraduate applicants; confirm programme-specific rules"
+  },
+  "ox.ac.uk": {
+    "checked_at": "2026-09-28",
+    "requirements_source": "https://www.ox.ac.uk/admissions/undergraduate/courses/course-listing",
+    "requirements": [
+      "Choose a course and check its specific qualifications, subject requirements and admissions tests.",
+      "Check the course’s written-work and interview arrangements.",
+      "Apply through UCAS using the published Oxford deadline for your entry year."
+    ],
+    "scholarships": [
+      {
+        "name": "Oxford undergraduate bursaries and scholarships · 2027 entry",
+        "eligibility": "Awards depend on residency, household income, course and scholarship-specific conditions. Use the university’s award list to check your eligibility.",
+        "url": "https://www.ox.ac.uk/admissions/undergraduate/fees-and-funding/oxford-bursaries-and-scholarships"
+      },
+      {
+        "name": "Rhodes Scholarship · Oxford graduate study",
+        "eligibility": "Postgraduate award. Citizenship or residency, age, academic and course-entry criteria vary by constituency; applications in 2026 are for October 2027 entry.",
+        "url": "https://www.rhodeshouse.ox.ac.uk/scholarships/faqs/"
+      },
+      {
+        "name": "Oxford graduate scholarships · 2027–28",
+        "eligibility": "Oxford expects more than 1,200 full or partial awards for new graduate students. Eligibility and application routes vary; many awards use the graduate application.",
+        "url": "https://www.ox.ac.uk/admissions/graduate/fees-and-funding/funding/scholarships"
+      }
+    ],
+    "scope": "First-year undergraduate applicants; confirm programme-specific rules"
+  },
+  "tum.de": {
+    "checked_at": "2026-09-28",
+    "requirements_source": "https://www.tum.de/en/studies/degree-programs",
+    "requirements": [
+      "Choose a degree in the official course directory and check its qualification and language requirements.",
+      "Use the course-specific admissions route and application period.",
+      "Check scholarship and financial-aid conditions separately from admission."
+    ],
+    "scholarships": [
+      {
+        "name": "TUM scholarships and financial support",
+        "eligibility": "Check the university’s listed awards for enrollment, academic, nationality and financial conditions. No general award is guaranteed.",
+        "url": "https://www.tum.de/en/studies/fees-and-financial-aid/scholarships"
+      }
+    ],
+    "scope": "Degree-programme applicants; requirements vary by programme and qualification"
+  },
+  "utoronto.ca": {
+    "checked_at": "2026-10-01",
+    "scope": "Undergraduate applicants; qualification and programme-specific routes",
+    "requirements_source": "https://future.utoronto.ca/requirements",
+    "requirements": [
+      "Use the admission requirements for your completed or current academic curriculum.",
+      "Check the programme’s subject prerequisites and any personal profile or statement of interest.",
+      "Provide English-language evidence unless an exemption applies. Check the university’s accepted tests and exemptions.",
+      "Use the required-documents and supplemental-application instructions for your applicant category."
+    ],
+    "scholarships": []
+  },
+  "uni-ruse.bg": {
+    "checked_at": "2026-10-01",
+    "scope": "International bachelor’s applicants; confirm your citizenship route",
+    "requirements_source": "https://www.uni-ruse.bg/en/directorates/FSD/admissionRequirements/admissionbachelor",
+    "requirements": [
+      "Prepare the application form, secondary-school diploma and mark sheet. The listed relevant-subject average must be at least 62% of the grading scale maximum.",
+      "Provide the document confirming access to higher education and the recognition documents requested by the university.",
+      "Review legalization and certified Bulgarian translation requirements for your documents.",
+      "Check the medical certificate, passport and photograph requirements. Bulgarian B2 evidence is listed for applicants who will not take the preparatory language course.",
+      "The directorate lists 30 September 2026 for the 2026 application process; that cycle has closed. Confirm the next intake directly."
+    ],
+    "scholarships": []
+  },
+  "wiut.uz": {
+    "checked_at": "2026-10-01",
+    "scope": "Undergraduate direct entry or transfer; 2026 instructions are a past-cycle reference",
+    "requirements_source": "https://www.wiut.uz/direct-entry-transfer",
+    "requirements": [
+      "Check your course for an accepted International Foundation qualification or equivalent, English-language evidence and mathematics competence.",
+      "Register in the WIUT Admission System and follow its document instructions.",
+      "The published checklist includes English proficiency, secondary education and mathematics certificates; check the requirements for your course.",
+      "The page lists 17 August 2026 as the undergraduate deadline. This cycle has closed; ask admissions for the next intake."
+    ],
+    "scholarships": []
+  },
+  "ethz.ch": {
+    "checked_at": "2026-10-01",
+    "scope": "Bachelor’s applicants with non-Swiss matriculation certificates",
+    "requirements_source": "https://ethz.ch/en/studies/bachelor/application/non-swiss-matriculation-certificate.html",
+    "requirements": [
+      "Use ETH’s bachelor’s application route for non-Swiss matriculation certificates.",
+      "An ETH entrance examination may be required for some qualifications. Check the rules for your exact certificate before applying.",
+      "Follow the university’s application instructions and country-specific qualification guidance for your intended intake."
+    ],
+    "scholarships": []
+  }
+}

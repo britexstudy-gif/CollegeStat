@@ -1,0 +1,33 @@
+{
+  "tool": "built-in image_gen",
+  "created_at": "2026-09-30",
+  "assets": [
+    {
+      "path": "public/images/hero/world.webp",
+      "prompt": "Landscape 3:2 premium cobalt, ivory and orange editorial halftone collage. Young adult student viewed from behind, paper globe, flight path and university architecture. No text, logos or UI. Conceptual art."
+    },
+    {
+      "path": "public/images/hero/discover.webp",
+      "prompt": "Landscape 3:2 premium cobalt, ivory and orange editorial halftone collage. Two adult students at a library table with a book, campus model and globe. No text, logos or UI. Conceptual art."
+    },
+    {
+      "path": "public/images/hero/research.webp",
+      "prompt": "Landscape 3:2 premium cobalt, ivory and orange editorial halftone collage. Adult researcher at a microscope, library arches, paper stars and distant campus. No text, logos or UI. Conceptual art."
+    },
+    {
+      "path": "public/images/hero/blue-collage.webp",
+      "description": "Original blue student, architecture and plane collage restored at the owner\u2019s request; generated image retained from the earlier design pass.",
+      "source_image": "exec-3f9ef29c-c6ed-4741-be72-d078f2276375.png",
+      "sha256": "40944313962771fd50045879d42b6366c8cfd4384fa143c70814efc0fc7a4016"
+    }
+  ],
+  "animation": {
+    "path": "public/images/hero/blue-collage-loop.mp4",
+    "source": "public/images/hero/blue-collage.webp",
+    "method": "30-second continuous sinusoidal 4.5% camera zoom, 24 fps H.264, silent, seamless loop",
+    "rebuild": "python3 scripts/media/render-hero.py /path/to/ffmpeg",
+    "accessibility": "Pauses offscreen and in background tabs; reduced-motion uses still artwork; user pause control."
+  },
+  "restored_at": "2026-10-01",
+  "active_asset": "public/images/hero/blue-collage.webp"
+}

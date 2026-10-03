@@ -1,0 +1,12 @@
+# Application platform marks
+
+Checked 1 October 2026. These marks identify outbound application guidance; CollegeStat is independent of the listed services. The same platform does not handle every degree or university in a country.
+
+| Local asset                                | Original source                                                                                                                                 | Use                                                                                                                                                                                                          |
+| ------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `public/logos/applications/common-app.svg` | [Common App official homepage](https://www.commonapp.org/), its `/static/common-app-logo-new-caa2e5a827b3660a7e3ea57d35962e8c.svg` header asset | At the owner's request, the white wordmark is changed to `#111827` for legibility on a white card. The cyan symbol and path geometry are preserved. Country guidance still requires membership confirmation. |
+| `public/logos/applications/ucas.svg`       | [UCAS official homepage](https://www.ucas.com/), its inline header wordmark                                                                     | Full UCAS wordmark with original `viewBox="0 0 104.049 30"`; replaces the earlier favicon that displayed only a small icon. Uses black paths on the white application card.                                  |
+
+Other platforms use an ordinary document icon and a text label. [uni-assist's press page](https://www.uni-assist.de/en/about-us/press/) requires prior consent for public logo use, so its logo has not been included. Institution-specific routes use the university's existing mark/fallback.
+
+Keep brand marks separate from the Lucide product icons. Do not generate imitation platform logos or add hover rotation. Preserve the documented contrast correction rather than applying arbitrary filters to the whole mark. Do not label country-level guidance as verified university membership. Asset URLs, SVG structure, and bounds were checked when fetched. Future branding and public-use terms need review before publication.

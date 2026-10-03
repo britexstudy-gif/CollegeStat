@@ -1,0 +1,16 @@
+{
+  "source": "ROR + IPEDS",
+  "retrieved_at": "2026-09-28",
+  "ror_release": "2.13 \u00b7 2026-09-22",
+  "ror_doi": "https://doi.org/10.5281/zenodo.22902037",
+  "ror_license": "CC0",
+  "institutions": 8985,
+  "catalogue_total": 8985,
+  "countries": 175,
+  "ror_linked": 8171,
+  "ipeds_linked": 2820,
+  "ipeds_year": 2025,
+  "admissions_year": 2024,
+  "identity_note": "Active ROR Education records corroborated by exact country and official host or unique exact registered name/alias in a sourced publisher table, plus active IPEDS degree-granting four-year institutions and reviewed reference profiles. Registry inclusion is not accreditation.",
+  "sha256": "fdfb8f4b67c5f4105147c282e1b20f6075b8e26e7c51e4525b4ce05fa71782bc"
+}

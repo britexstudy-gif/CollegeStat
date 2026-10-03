@@ -1,0 +1,35 @@
+[
+  {
+    "university_id": "39230496-b2fc-53ca-9303-1726c4ac13da",
+    "local": "/images/campuses/39230496-b2fc-53ca-9303-1726c4ac13da.jpg",
+    "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Sanders_theater_2009y.JPG/960px-Sanders_theater_2009y.JPG",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Sanders_theater_2009y.JPG",
+    "creator": "chensiyuan",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "checked_at": "2026-10-02",
+    "sha256": "5f2581c65ce2dda7caf6a2b345749d28bbe6137d3c56d46da4626e11d0cc0687"
+  },
+  {
+    "university_id": "ae117645-e24c-5269-8ed1-b5b826e53932",
+    "local": "/images/campuses/ae117645-e24c-5269-8ed1-b5b826e53932.jpg",
+    "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/St_John%27s_College_Second_Court%2C_Cambridge%2C_UK_-_Diliff.jpg/960px-St_John%27s_College_Second_Court%2C_Cambridge%2C_UK_-_Diliff.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:St_John%27s_College_Second_Court,_Cambridge,_UK_-_Diliff.jpg",
+    "creator": "Diliff",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "checked_at": "2026-10-02",
+    "sha256": "b6d776e11410f579e0777bf1ab5a7b346a6b7746973b153a06b094fecc969a04"
+  },
+  {
+    "university_id": "b37d730b-421c-5ed6-a807-3d66e7ca21f7",
+    "local": "/images/campuses/b37d730b-421c-5ed6-a807-3d66e7ca21f7.jpg",
+    "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/The_University_of_Hong_Kong.jpg/960px-The_University_of_Hong_Kong.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:The_University_of_Hong_Kong.jpg",
+    "creator": "Baycrest",
+    "license": "CC BY-SA 2.5",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.5",
+    "checked_at": "2026-10-02",
+    "sha256": "8fa695c9c63ed463c21622b013b7895b03cbfa44c1c74c839fd6e60a16886c08"
+  }
+]

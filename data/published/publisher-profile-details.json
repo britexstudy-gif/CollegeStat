@@ -1,0 +1,25 @@
+[
+  {
+    "domain": "uibe.edu.cn",
+    "publisher": "QS",
+    "source_url": "https://www.topuniversities.com/universities/university-international-business-economics",
+    "checked_at": "2026-09-30",
+    "reporting_year": null,
+    "summary": "UIBE’s QS profile describes strengths in economics, business, finance, law and languages, with undergraduate and postgraduate routes for international students.",
+    "facts": [
+      {"label":"Total students","value":15708,"unit":""},
+      {"label":"International students","value":2611,"unit":""},
+      {"label":"Faculty staff","value":1110,"unit":""},
+      {"label":"Undergraduate share","value":62,"unit":"%"},
+      {"label":"Postgraduate share","value":38,"unit":"%"}
+    ],
+    "rank_history": [
+      {"year":2022,"label":"1001–1200"},
+      {"year":2023,"label":"1201–1400"},
+      {"year":2024,"label":"1201–1400"},
+      {"year":2025,"label":"1201–1400"},
+      {"year":2026,"label":"1201–1400"},
+      {"year":2027,"label":"1401+"}
+    ]
+  }
+]

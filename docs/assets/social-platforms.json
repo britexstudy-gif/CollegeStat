@@ -1,0 +1,42 @@
+[
+  {
+    "name": "instagram",
+    "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/13.21.0/icons/instagram.svg",
+    "sha256": "f53af2d1fc5292ba1433b5c1faf50005ce6a997fa302d1816989929f379a59dc"
+  },
+  {
+    "name": "youtube",
+    "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/13.21.0/icons/youtube.svg",
+    "sha256": "5038808acbbc4e6edda16cbeb1cc6dec80e4e4ee4e227e039c41229fa222aa8c"
+  },
+  {
+    "name": "facebook",
+    "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/13.21.0/icons/facebook.svg",
+    "sha256": "b06d18d844ed621b89faffb1a33440cc0ec4f1ffea9f36191f50db19a47c59a6"
+  },
+  {
+    "name": "linkedin",
+    "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/13.21.0/icons/linkedin.svg",
+    "sha256": "2687ac468d96bd03e748dc8646ef6465cb4cc7f34b96e1d0bc86fcb3dd79121a"
+  },
+  {
+    "name": "x",
+    "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/13.21.0/icons/x.svg",
+    "sha256": "be03adbfce4a46c4e42eae5ee7b5e676b59627fa25e15a317e453bb18153ff5f"
+  },
+  {
+    "name": "tiktok",
+    "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/13.21.0/icons/tiktok.svg",
+    "sha256": "6f54ac8d325faacea8935bdc44cbed60206a6b408641799e5fea1cba7c1a0af7"
+  },
+  {
+    "name": "bluesky",
+    "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/13.21.0/icons/bluesky.svg",
+    "sha256": "f4438b861cae7e4ce890a1de2bd9bafde0541521926420193cbe39da82475c0b"
+  },
+  {
+    "name": "telegram",
+    "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/13.21.0/icons/telegram.svg",
+    "sha256": "147fd8f8923e7e5f463fe98c0eb9913bead6b2ae59935728cda141002ec8a7c9"
+  }
+]
