@@ -20,12 +20,18 @@ if (!Array.isArray(input)) throw new Error("Expected an array of observations");
 const parsed = input.map((row) => observationSchema.safeParse(row));
 const invalid = parsed.flatMap((r, i) => (r.success ? [] : [i]));
 if (invalid.length)
-  throw new Error(`Invalid observation rows: ${invalid.join(", ")}. Nothing was staged.`);
+  throw new Error(
+    `Invalid observation rows: ${invalid.join(", ")}. Nothing was staged.`,
+  );
 const rows = parsed.map((r) => r.data!);
 const universities = new Set(rows.map((r) => r.university_id)).size;
 if (!apply) {
   console.log(
-    JSON.stringify({ mode: "dry-run", observations: rows.length, universities }),
+    JSON.stringify({
+      mode: "dry-run",
+      observations: rows.length,
+      universities,
+    }),
   );
   process.exit(0);
 }
@@ -39,7 +45,9 @@ if (!url?.startsWith("https://") || !key || !token)
     "SUPABASE_URL, the publishable key and a current STAFF_ACCESS_TOKEN are required",
   );
 if (!source || !/^[0-9a-f-]{36}$/i.test(source))
-  throw new Error("--source must be the UUID of a registered official data source");
+  throw new Error(
+    "--source must be the UUID of a registered official data source",
+  );
 // A staff user token keeps is_admin() and audit attribution; the service-role key is not accepted here.
 const db = createClient(url, key, {
   auth: { persistSession: false, autoRefreshToken: false },
