@@ -1,0 +1,154 @@
+[
+ {
+  "university_id": "4257293d-ae04-50f0-a670-a46ee48a8e44",
+  "name": "Universität Zürich",
+  "tuition": [],
+  "english": [],
+  "deadline": [],
+  "type": null,
+  "checked_at": "2026-10-29",
+  "worker_notes": "No fact reported. Fees page gives a per-semester table only: base fee 720 CHF per semester and a 500 CHF per semester surcharge for foreign Bachelor students. No annual total and no academic year are stated, so nothing reported. Language requirements page gives minimums for study programmes taught in English, not Bachelor programmes, so not reported. Deadlines table is undated (visa-required applicants 28 February; others 30 April), so not reported. Fetches used: 4 of 4."
+ },
+ {
+  "university_id": "bb32340f-54ba-5885-82ba-4ae645d93930",
+  "name": "Korea Advanced Institute of Science & Technology",
+  "tuition": [],
+  "english": [],
+  "deadline": [
+   {
+    "title": "Regular Admissions, Fall Track application deadline",
+    "cycle": "2027 entry",
+    "due_at": "2027-01-14",
+    "notes": "Deadline 6:00 PM KST. Early Admissions Spring Track closed 22 October 2026 (before the check date), so not listed. Recommendation letter deadline for the Fall track is 21 January 2027. Quote from summarised fetch.",
+    "source_url": "https://admission.kaist.ac.kr/intl-undergraduate/application/ApplicationGuide/ApplicationTimeline",
+    "quote": "Regular Admissions, Fall Track Only: November 10, 2026 ~ January 14, 2027, 6:00 PM (KST)"
+   }
+  ],
+  "type": null,
+  "checked_at": "2026-10-29",
+  "worker_notes": "Tuition: the essential costs table on https://admission.kaist.ac.kr/intl-undergraduate/support/coa lists KRW 6,866,000 as the yearly total, but the page gives no academic year, so it was left out for review. No TOEFL or IELTS minimum found on the pages read. The admission guide PDF (2023) could not be fetched because robots.txt disallows it. Fetches used: 3 (one failed)."
+ },
+ {
+  "university_id": "1fdfdef5-4d20-57c0-95ee-663973bb97b2",
+  "name": "Wageningen University & Research",
+  "tuition": [
+   {
+    "amount": 18300,
+    "currency": "EUR",
+    "academic_year": "2026/27",
+    "period": "year",
+    "label": "standard",
+    "source_url": "https://www.wur.nl/en/education/bachelor/study-expenses-bachelors/tuition-fees-and-study-finances",
+    "quote": "Then your tuition fee for the academic year 2026-2027 is € 18,300 and € 18.840 for 2027-2028.",
+    "notes": "Non-EU bachelor fee. The page does not say whether it is statutory or institutional, and no 2025/26 figure was found. Quote from summarised fetch."
+   }
+  ],
+  "english": [
+   {
+    "kind": "IELTS",
+    "minimum": 6.0,
+    "notes": "Overall 6.0 with a minimum subscore of 6.0 for speaking. The page also lists TOEFL options (80 with speaking 20, or 4.5 with speaking 4.0) but the scale is not stated, so no TOEFL entry was made. Quote from summarised fetch.",
+    "source_url": "https://www.wur.nl/en/education/bachelor/application-admission-bachelors/apply-bachelors-programme/language-requirements",
+    "quote": "overall grade 6.0, with a minimum subscore of 6.0 for speaking"
+   }
+  ],
+  "deadline": [],
+  "type": null,
+  "checked_at": "2026-10-29",
+  "worker_notes": "Deadline shown as Studielink 15 April and documents 1 May for non-EU applicants, but the page gives no year, so not reported. Fetches used: 3."
+ },
+ {
+  "university_id": "8e191d89-10ba-5f03-913b-836c9c7194a0",
+  "name": "Université Paris-Saclay",
+  "tuition": [],
+  "english": [],
+  "deadline": [],
+  "type": null,
+  "checked_at": "2026-10-29",
+  "worker_notes": "No fact reported. The fee tables for 2024-25 and 2025-26 are PDFs; the fetch could not reliably identify the non-EU licence rate, so nothing was reported. The undergraduate applying page gives only a window (November to January) with no 2027 date and no English requirement. Fetches used: 2."
+ },
+ {
+  "university_id": "4b7a7f67-a5fa-5660-a95b-87588748c8e4",
+  "name": "University of Warwick",
+  "tuition": [
+   {
+    "amount": 27870,
+    "currency": "GBP",
+    "academic_year": "2026/27",
+    "period": "year",
+    "label": "minimum",
+    "source_url": "https://warwick.ac.uk/services/finance/studentfinance/fees/overseasfees/",
+    "quote": "Film Studies (BA) | W620 | Band 1 | £26,290 | £27,870 | £29,260",
+    "notes": "Lowest full-time (Band 1) row among those read; part-time rows excluded. Column-to-year mapping taken from the fetch summary. Quote from summarised fetch. The full table was not read, so this may not be the true minimum."
+   },
+   {
+    "amount": 56660,
+    "currency": "GBP",
+    "academic_year": "2026/27",
+    "period": "year",
+    "label": "maximum",
+    "source_url": "https://warwick.ac.uk/services/finance/studentfinance/fees/overseasfees/",
+    "quote": "Bachelor of Medicine & Bachelor of Surgery (Years 2-4) | A101 | MBChB | £53,460 | £56,660 | £59,495",
+    "notes": "Highest row among those read (MBChB years 2-4). Column-to-year mapping taken from the fetch summary. Quote from summarised fetch. The full table was not read, so this may not be the true maximum."
+   }
+  ],
+  "english": [
+   {
+    "kind": "IELTS",
+    "minimum": 6.0,
+    "notes": "Varies by course. Band A is 6.0 (5.5 minimum per component), Band B 6.5, Band C 7.0; 6.0 is the lowest band. Page applies this IELTS version to tests taken from 1 September 2024 for September 2026 entry. TOEFL bands not included because the scale changed on 21 January 2026. Quote from summarised fetch.",
+    "source_url": "https://warwick.ac.uk/study/undergraduate/applying/english-language-requirements/",
+    "quote": "Band A: 6.0 including minimum 5.5 in each component"
+   }
+  ],
+  "deadline": [
+   {
+    "title": "UCAS undergraduate application deadline",
+    "cycle": "2027 entry",
+    "due_at": "2027-01-13",
+    "notes": "General UCAS deadline at 18:00. The page applies it to international applicants and says a small number of courses may still consider later applications, not guaranteed. Quote from summarised fetch.",
+    "source_url": "https://warwick.ac.uk/study/undergraduate/applying/dates/",
+    "quote": "you must apply by the UCAS deadline at 18:00 on 13 January 2027."
+   }
+  ],
+  "type": null,
+  "checked_at": "2026-10-29",
+  "worker_notes": "Fetches used: 3."
+ },
+ {
+  "university_id": "41845441-b6d6-52d1-9dde-3fde42120676",
+  "name": "Rheinische Friedrich-Wilhelms Universität Bonn",
+  "tuition": [
+   {
+    "amount": 0,
+    "currency": "EUR",
+    "academic_year": null,
+    "period": "year",
+    "label": "standard",
+    "source_url": "https://www.uni-bonn.de/en/studying/international-students/costs-and-financing-for-international-students",
+    "quote": "The University of Bonn does not charge tuition fees.",
+    "notes": "Tuition-free. Students pay only the semester social contribution, which is not reported here. The page gives no academic year and does not say whether this covers every Bachelor programme without exception. Quote from summarised fetch."
+   }
+  ],
+  "english": [
+   {
+    "kind": "IELTS",
+    "minimum": 5.5,
+    "notes": "Overall band score. The page applies this to applicants who must submit an English certificate; applicants taught in English are exempt. Scope to Bachelor programmes is not confirmed. Foreign-certificate applicants also need German DSH 2 or equivalent. Quote from summarised fetch.",
+    "source_url": "https://www.uni-bonn.de/en/studying/application-admission-and-enrollment/english-language-skills-b2",
+    "quote": "IELTS Academic with a minimum score of 5.5 (Overall band score)"
+   },
+   {
+    "kind": "TOEFL",
+    "minimum": 72,
+    "notes": "Internet-based test (iBT). Same scope as the IELTS entry. Quote from summarised fetch.",
+    "source_url": "https://www.uni-bonn.de/en/studying/application-admission-and-enrollment/english-language-skills-b2",
+    "quote": "Internet-based test (iBT): with a minimum score of 72."
+   }
+  ],
+  "deadline": [],
+  "type": null,
+  "checked_at": "2026-10-29",
+  "worker_notes": "Winter semester application period (June until 15 July) is shown without a year, so not reported. Fetches used: 3."
+ }
+]

@@ -1,0 +1,132 @@
+[
+ {
+  "university_id": "2bbd21b7-1de0-5911-ab9b-c954ac504ba6",
+  "name": "Wuhan University",
+  "tuition": [],
+  "english": [
+   {
+    "kind": "IELTS",
+    "minimum": 6.0,
+    "notes": "Stated for English-taught undergraduate programmes only, in the 2026 Admissions Guide for International Applicants (Undergraduate Programs). Quote from summarised fetch.",
+    "source_url": "https://admission.whu.edu.cn/info/1121/5802.htm",
+    "quote": "Applicants for English-taught programs shall hold a TOEFL 80+, TOEFL Essential 8+ or IELTS 6.0+ certificate."
+   },
+   {
+    "kind": "TOEFL",
+    "minimum": 80,
+    "notes": "Stated for English-taught undergraduate programmes only, in the 2026 Admissions Guide. Test format (iBT) not stated in the quote. Quote from summarised fetch.",
+    "source_url": "https://admission.whu.edu.cn/info/1121/5802.htm",
+    "quote": "Applicants for English-taught programs shall hold a TOEFL 80+, TOEFL Essential 8+ or IELTS 6.0+ certificate."
+   }
+  ],
+  "deadline": [],
+  "type": null,
+  "checked_at": "2026-10-29",
+  "worker_notes": "Tuition: the 2026 guide points to a separate 'Tuition and Fees for International Students' attachment that was not reachable. An undated FEES page lists RMB per-year figures (Liberal Arts 20,000 etc.) but gives no academic year, so left out. Deadline on the 2026 guide is for autumn 2026 (past), so none reported. Type not stated on pages read. Fetch budget used: 2 (FEES page, 2024 guide 1011.htm, 2026 guide 5802.htm = 3 fetches). Quotes from summarised fetches."
+ },
+ {
+  "university_id": "c25402df-2dd8-5b86-b4f4-a2bbada8c01d",
+  "name": "Sichuan University",
+  "tuition": [],
+  "english": [
+   {
+    "kind": "IELTS",
+    "minimum": 6.0,
+    "notes": "For English-taught undergraduate majors. The page is undated, so it may not reflect the current cycle. Quote from summarised fetch.",
+    "source_url": "https://global.scu.edu.cn/oso/article/index/1094",
+    "quote": "must provide a TOEFL certificate (scored 80 or above), or IELTS certificate (scored 6.0 or above)"
+   },
+   {
+    "kind": "TOEFL",
+    "minimum": 80,
+    "notes": "For English-taught undergraduate majors. Page undated. Test format not stated. Quote from summarised fetch.",
+    "source_url": "https://global.scu.edu.cn/oso/article/index/1094",
+    "quote": "must provide a TOEFL certificate (scored 80 or above), or IELTS certificate (scored 6.0 or above)"
+   }
+  ],
+  "deadline": [],
+  "type": null,
+  "checked_at": "2026-10-29",
+  "worker_notes": "Tuition: the Undergraduate Program Tuition Fees page (global.scu.edu.cn/oso/article/index/1095) lists annual RMB figures (for example 22,000 for science and engineering) but gives no academic year, so left out. The scupi.scu.edu.cn fees page is for 2016/17 and was not used. Application period page (index/1111) lists 'Nov 1-May 30' for undergraduates with no year, so left out. Type not stated. Fetch budget: 3 used."
+ },
+ {
+  "university_id": "eec543ea-8898-575e-a968-7faa90285317",
+  "name": "KTH Royal Institute of Technology",
+  "tuition": [],
+  "english": [],
+  "deadline": [
+   {
+    "title": "Bachelor's application deadline for non-EU/EEA/Swiss applicants",
+    "cycle": "2027 entry",
+    "due_at": "2027-01-15",
+    "notes": "Listed under the heading 'Application deadlines for studies starting 2027', round 1 (opens 16 October 2026). Quote from summarised fetch.",
+    "source_url": "https://www.kth.se/en/studies/bachelor/how-to-apply-for-bachelor-s-studies-1.450312",
+    "quote": "15 January: Last day to apply"
+   }
+  ],
+  "type": null,
+  "checked_at": "2026-10-29",
+  "worker_notes": "Tuition: the fees page (kth.se/en/studies/bachelor/fees-1.646274) gives SEK 453,000 for the full programme of one BSc ICT programme, with no academic year and not per year, so left out. English: the language-requirements page fetched was for Stockholm Summer School, not bachelor's admission, so no English figure reported. Type not stated on pages read. Fetch budget: 3 used."
+ },
+ {
+  "university_id": "6a32c909-6d47-5097-a8a9-50e39d01408f",
+  "name": "University of Adelaide",
+  "tuition": [],
+  "english": [
+   {
+    "kind": "IELTS",
+    "minimum": 6.0,
+    "notes": "Stated as the undergraduate entry requirement on the general entry-requirements page; degree-specific requirements can be higher. Quote from summarised fetch.",
+    "source_url": "https://adelaide.edu.au/study/how-to-apply/entry-requirements/",
+    "quote": "an International English Language Testing System (IELTS) Academic overall score of 6.0 or equivalent"
+   }
+  ],
+  "deadline": [],
+  "type": null,
+  "checked_at": "2026-10-29",
+  "worker_notes": "Tuition: the official fees pages fetched (international.adelaide.edu.au tuition-fees redirected to adelaide.edu.au/study/international-students/, and adelaide.edu.au/students/student-services/finances/international-students/) say international students pay annual tuition for their programme but give no amount, so none reported. Deadline: NOT CHECKED (fetch budget used up; the application deadlines page international.adelaide.edu.au/admissions/apply/application-deadlines was found in search but not fetched). Type not stated. Fetch budget: 4 used."
+ },
+ {
+  "university_id": "c97243d1-faa0-5fe1-a91c-4fc8f9b867f3",
+  "name": "Xi'an Jiaotong University",
+  "tuition": [],
+  "english": [
+   {
+    "kind": "IELTS",
+    "minimum": 6.0,
+    "notes": "For English-taught international undergraduate programmes, on the page titled '2026 International Undergraduate Programs'. Quote from summarised fetch.",
+    "source_url": "https://sie.xjtu.edu.cn/en/info/1119/2943.htm",
+    "quote": "IELTS 6.0 or TOEFL 80 (or above), or other equivalent English proficiency certificates recognized by our university are accepted."
+   },
+   {
+    "kind": "TOEFL",
+    "minimum": 80,
+    "notes": "For English-taught international undergraduate programmes, on the page titled '2026 International Undergraduate Programs'. Test format not stated. Quote from summarised fetch.",
+    "source_url": "https://sie.xjtu.edu.cn/en/info/1119/2943.htm",
+    "quote": "IELTS 6.0 or TOEFL 80 (or above), or other equivalent English proficiency certificates recognized by our university are accepted."
+   }
+  ],
+  "deadline": [],
+  "type": null,
+  "checked_at": "2026-10-29",
+  "worker_notes": "Tuition: the English-taught brochure (sie.xjtu.edu.cn/XJTUEnglish-taughtUndergraduate.pdf) gives RMB 180,000 per year for four named programmes with no academic year, and the 2026 programmes page gives garbled RMB figures with no mapping to programmes, so none reported. Deadline: the 2026 application window (Nov 2025 to June 2026) is past and no 2027 date was found, so none reported. Type not stated. Fetch budget: 2 used."
+ },
+ {
+  "university_id": "c49a9c6e-8137-52be-a62c-904854573c82",
+  "name": "Aarhus University",
+  "tuition": [],
+  "english": [
+   {
+    "kind": "IELTS",
+    "minimum": 6.5,
+    "notes": "Stated as 'English B' level on the bachelor's language-requirements page, with a minimum subscore of 6.0 in each section. TOEFL figure on the same page was internally inconsistent (4.5), so TOEFL omitted. Quote from summarised fetch.",
+    "source_url": "https://bachelor.au.dk/en/admission/moreinfo/language-requirements",
+    "quote": "English B – Overall score of minimum 6.5 with a minimum subscore of 6.0 in each section"
+   }
+  ],
+  "deadline": [],
+  "type": null,
+  "checked_at": "2026-10-29",
+  "worker_notes": "Tuition: the fees page (bachelor.au.dk/en/international-applicants/moreinfo/tuition-fees-and-application-fee) says non-EU/EEA rates are for 2026/2027 but the amounts are in a PDF that was not reachable, so none reported. Deadline: 'Application and documentation deadline: 15 March at 12.00 noon' is on the page but its year is not stated, so left out. Type not stated. Fetch budget: 3 used."
+ }
+]

@@ -126,6 +126,33 @@
   "notes": "International undergraduate tuition, 2026 (maximum). Quote: \"Bachelor of Medicine and Bachelor of Surgery - Year 2 onwards (for Year 1 see Bachelor of Health Sciences) | NZ$86,561\" Collected 2026-10-29 by an automated assistant from the official site; confirm programme, residency and year before approving."
  },
  {
+  "university_id": "1fdfdef5-4d20-57c0-95ee-663973bb97b2",
+  "metric": "tuition",
+  "year": 2026,
+  "value": 18300,
+  "unit": "EUR",
+  "source_url": "https://www.wur.nl/en/education/bachelor/study-expenses-bachelors/tuition-fees-and-study-finances",
+  "notes": "International undergraduate tuition, 2026/27 (standard). Non-EU bachelor fee. The page does not say whether it is statutory or institutional, and no 2025/26 figure was found. Quote from summarised fetch. Quote: \"Then your tuition fee for the academic year 2026-2027 is € 18,300 and € 18.840 for 2027-2028.\" Collected 2026-10-29 by an automated assistant from the official site; confirm programme, residency and year before approving."
+ },
+ {
+  "university_id": "4b7a7f67-a5fa-5660-a95b-87588748c8e4",
+  "metric": "tuition",
+  "year": 2026,
+  "value": 27870,
+  "unit": "GBP",
+  "source_url": "https://warwick.ac.uk/services/finance/studentfinance/fees/overseasfees/",
+  "notes": "International undergraduate tuition, 2026/27 (minimum). Lowest full-time (Band 1) row among those read; part-time rows excluded. Column-to-year mapping taken from the fetch summary. Quote from summarised fetch. The full table was not read, so this may not be the true minimum. Quote: \"Film Studies (BA) | W620 | Band 1 | £26,290 | £27,870 | £29,260\" Collected 2026-10-29 by an automated assistant from the official site; confirm programme, residency and year before approving."
+ },
+ {
+  "university_id": "4b7a7f67-a5fa-5660-a95b-87588748c8e4",
+  "metric": "tuition",
+  "year": 2026,
+  "value": 56660,
+  "unit": "GBP",
+  "source_url": "https://warwick.ac.uk/services/finance/studentfinance/fees/overseasfees/",
+  "notes": "International undergraduate tuition, 2026/27 (maximum). Highest row among those read (MBChB years 2-4). Column-to-year mapping taken from the fetch summary. Quote from summarised fetch. The full table was not read, so this may not be the true maximum. Quote: \"Bachelor of Medicine & Bachelor of Surgery (Years 2-4) | A101 | MBChB | £53,460 | £56,660 | £59,495\" Collected 2026-10-29 by an automated assistant from the official site; confirm programme, residency and year before approving."
+ },
+ {
   "university_id": "61b5c222-f7d2-5ff7-a546-b186e73b945b",
   "metric": "tuition",
   "year": 2026,
