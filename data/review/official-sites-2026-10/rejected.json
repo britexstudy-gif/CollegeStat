@@ -1260,5 +1260,139 @@
    "source_url": "https://international.ui.ac.id/kki-feb/",
    "quote": "IDR 29,300,000/semester (excluding study abroad)"
   }
+ },
+ {
+  "university_id": "0949633f-4123-57e8-8e3d-8b762d4a588d",
+  "kind": "tuition",
+  "reason": "academic year missing or outside 2025-2027",
+  "item": {
+   "label": "minimum",
+   "amount": 12745,
+   "currency": "USD",
+   "academic_year": null,
+   "period": "year",
+   "source_url": "https://www.adu.ac.ae/admissions/admission-in-adu/international-students/financials/undergraduate-fees-for-international-students",
+   "quote": "BA Mass Communications (English) | 46,515.00 | 12,745.00",
+   "notes": "Programme-level table of 'Average Tution Fee per year' (USD column; AED 46,515 for this programme). Academic year not stated on the page. Page says fees are subject to 5% VAT. Quote from summarised fetch (table flattened)."
+  }
+ },
+ {
+  "university_id": "0949633f-4123-57e8-8e3d-8b762d4a588d",
+  "kind": "tuition",
+  "reason": "academic year missing or outside 2025-2027",
+  "item": {
+   "label": "maximum",
+   "amount": 17665,
+   "currency": "USD",
+   "academic_year": null,
+   "period": "year",
+   "source_url": "https://www.adu.ac.ae/admissions/admission-in-adu/international-students/financials/undergraduate-fees-for-international-students",
+   "quote": "BS Civil Engineering | 64,470.00 | 17,665.00",
+   "notes": "Programme-level table, USD column (AED 64,470 for this programme). Academic year not stated. Excludes accommodation, 5% VAT applies. Quote from summarised fetch (table flattened)."
+  }
+ },
+ {
+  "university_id": "1e6228e0-3144-5716-8af8-2d88e3760934",
+  "kind": "tuition",
+  "reason": "academic year missing or outside 2025-2027",
+  "item": {
+   "label": "minimum",
+   "amount": 22000,
+   "currency": "CNY",
+   "academic_year": null,
+   "period": "year",
+   "source_url": "https://lxs.ecnu.edu.cn/en/feespayment/feelist/",
+   "quote": "Undergraduate Student & Visiting Student 22,000 24,000 28,000 800",
+   "notes": "Figure is for Liberal Arts (first column of the header order). Table is flattened, so the column-to-programme mapping is inferred from header order: Liberal Arts 22,000; Science & Business 24,000; Arts & PE 28,000. Academic year not stated. Quote from summarised fetch. The AEBS BBA fee (54,000) is a separate programme and is not included."
+  }
+ },
+ {
+  "university_id": "1e6228e0-3144-5716-8af8-2d88e3760934",
+  "kind": "tuition",
+  "reason": "academic year missing or outside 2025-2027",
+  "item": {
+   "label": "maximum",
+   "amount": 28000,
+   "currency": "CNY",
+   "academic_year": null,
+   "period": "year",
+   "source_url": "https://lxs.ecnu.edu.cn/en/feespayment/feelist/",
+   "quote": "Undergraduate Student & Visiting Student 22,000 24,000 28,000 800",
+   "notes": "Figure is for Arts & PE (third column, inferred from header order). Academic year not stated. Quote from summarised fetch with flattened table."
+  }
+ },
+ {
+  "university_id": "267f1ea0-3cce-5842-8e31-55e35893b7b2",
+  "kind": "tuition",
+  "reason": "academic year missing or outside 2025-2027",
+  "item": {
+   "amount": 726.72,
+   "currency": "EUR",
+   "academic_year": null,
+   "period": "semester",
+   "label": null,
+   "source_url": "https://www.uibk.ac.at/en/studies/start-of-studies/tuition-fee-and-financial-support/",
+   "quote": "The tuition fee amounts to € 363.36 per semester (AUT, EU/EEA, CH) and for citizens of third countries € 726.72 per semester.",
+   "notes": "Per-semester fee for third-country citizens (non-EEA). Page does not state the academic year for this fee; the only year it gives (2026/2027) applies to the OeH fee. academic_year left null. Quote from summarised fetch."
+  }
+ },
+ {
+  "university_id": "67dfca3c-5823-563f-93e9-bfc3b528e490",
+  "kind": "tuition",
+  "reason": "academic year missing or outside 2025-2027",
+  "item": {
+   "label": null,
+   "amount": 0,
+   "currency": "EUR",
+   "academic_year": null,
+   "period": "year",
+   "source_url": "https://www.uni-potsdam.de/en/studium/studying/financing-funding-housing/costs-at-a-glance",
+   "quote": "we do not charge any tuition fees for all undergraduate programs",
+   "notes": "Page states that no tuition is charged for all undergraduate programmes, so the amount is 0. It is not specific to international students but applies to all undergraduate programmes. Currency is not named on the page; EUR assumed for a zero amount. Quote from summarised fetch."
+  }
+ },
+ {
+  "university_id": "9fbb11d3-b386-51c2-ae49-035d51073a59",
+  "kind": "tuition",
+  "reason": "academic year missing or outside 2025-2027",
+  "item": {
+   "label": null,
+   "amount": 0,
+   "currency": "EUR",
+   "academic_year": null,
+   "period": "year",
+   "source_url": "https://www.studium.uni-mainz.de/en/during-your-studies/organizing-your-studies/financial-matters/",
+   "quote": "You only have to pay tuition fees if you begin your studies after turning 60",
+   "notes": "Conditional: tuition is EUR 700 per semester only for students who begin studying after age 60, so students starting under 60 pay no tuition. The page does not say the rule is specific to international students, although it reads as general. Currency is not named on the page for this statement; EUR assumed. Semester fee (about EUR 366.90 per semester, WS 2026/27) is separate and not tuition. Quote from summarised fetch."
+  }
+ },
+ {
+  "university_id": "b44469a2-84e1-5d33-98af-269d20f2f756",
+  "kind": "tuition",
+  "reason": "academic year missing or outside 2025-2027",
+  "item": {
+   "label": null,
+   "amount": 1500,
+   "currency": "EUR",
+   "academic_year": null,
+   "period": "semester",
+   "source_url": "https://www.uni-mannheim.de/en/academics/during-your-studies/organizing-your-studies/fees/tuition-fees-for-international-students/",
+   "quote": "in the amount of 1,500 euros per semester",
+   "notes": "Page says the fee has applied 'since the fall semester 2017/2018' and does not name a 2025/26 or 2026/27 year, so academic_year is null. Students from EU/EEA and those with a German Abitur are exempt, plus other listed exemptions. Semester fee is separate. Quote from summarised fetch."
+  }
+ },
+ {
+  "university_id": "c12cf89d-30c4-52cb-813c-469eaa0f2aba",
+  "kind": "tuition",
+  "reason": "academic year missing or outside 2025-2027",
+  "item": {
+   "amount": 23300,
+   "currency": "CNY",
+   "academic_year": null,
+   "period": "year",
+   "label": null,
+   "source_url": "https://oice.ustb.edu.cn/English/InternationalStudents/GeneralInformation/index.htm",
+   "quote": "Chinese Taught Program: \"23,300 RMB\" (quote from summarised fetch; page table titled \"Tuition (per person per year)\", undergraduate row)"
+  }
  }
 ]

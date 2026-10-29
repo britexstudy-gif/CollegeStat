@@ -421,5 +421,68 @@
   "unit": "EUR",
   "source_url": "https://www.utwente.nl/en/education/bachelor/tuition-fees/",
   "notes": "International undergraduate tuition, 2026/27 (maximum). Quote: \"€ 16,400 per year\" Collected 2026-10-29 by an automated assistant from the official site; confirm programme, residency and year before approving."
+ },
+ {
+  "university_id": "d1f7e5a5-d181-56b2-bcc9-72e6cb68e118",
+  "metric": "tuition",
+  "year": 2026,
+  "value": 22200,
+  "unit": "GBP",
+  "source_url": "https://le.ac.uk/study/undergraduates/fees-funding/tuition-fees",
+  "notes": "International undergraduate tuition, 2026/27 (minimum). Standard undergraduate courses, international (overseas) fee range. Quote from summarised fetch. Quote: \"between £22,200 and £26,550 per year.\" Collected 2026-10-29 by an automated assistant from the official site; confirm programme, residency and year before approving."
+ },
+ {
+  "university_id": "d1f7e5a5-d181-56b2-bcc9-72e6cb68e118",
+  "metric": "tuition",
+  "year": 2026,
+  "value": 26550,
+  "unit": "GBP",
+  "source_url": "https://le.ac.uk/study/undergraduates/fees-funding/tuition-fees",
+  "notes": "International undergraduate tuition, 2026/27 (maximum). Standard undergraduate courses, international (overseas) fee range. Quote from summarised fetch. Quote: \"between £22,200 and £26,550 per year.\" Collected 2026-10-29 by an automated assistant from the official site; confirm programme, residency and year before approving."
+ },
+ {
+  "university_id": "bd783952-4538-5666-883f-e9c56a60f109",
+  "metric": "tuition",
+  "year": 2026,
+  "value": 25850,
+  "unit": "GBP",
+  "source_url": "https://www.reading.ac.uk/ready-to-study/study/fees-and-funding/fees-and-funding-ug/international-undergraduate-student-fees",
+  "notes": "International undergraduate tuition, 2026/27 (minimum). Non-laboratory courses. Quote from summarised fetch. Quote: \"£25,850 a year for non-laboratory courses\" Collected 2026-10-29 by an automated assistant from the official site; confirm programme, residency and year before approving."
+ },
+ {
+  "university_id": "bd783952-4538-5666-883f-e9c56a60f109",
+  "metric": "tuition",
+  "year": 2026,
+  "value": 30650,
+  "unit": "GBP",
+  "source_url": "https://www.reading.ac.uk/ready-to-study/study/fees-and-funding/fees-and-funding-ug/international-undergraduate-student-fees",
+  "notes": "International undergraduate tuition, 2026/27 (maximum). Subjects with significant laboratory study or workshop content. Quote from summarised fetch. Quote: \"£30,650 a year for subjects with significant laboratory study or workshop content\" Collected 2026-10-29 by an automated assistant from the official site; confirm programme, residency and year before approving."
+ },
+ {
+  "university_id": "2b507cd1-ff70-5c51-8708-28c523a5af24",
+  "metric": "tuition",
+  "year": 2025,
+  "value": 4200,
+  "unit": "EUR",
+  "source_url": "https://www.vub.be/sites/default/files/2025-11/2025_Studiegeld_tarieven_Non_EER_2526_ENG.pdf",
+  "notes": "International undergraduate tuition, 2025/26 (minimum). Non-EEA (Non EER) bachelor fee, Track 1 general bachelors, 60-ECTS annual total. Page does not label min/max itself. Quote from summarised fetch of the PDF. Quote: \"credit contracts except for those mentioned under TRACK 2 & 3 € 1140 € 51 € 4200\" Collected 2026-10-29 by an automated assistant from the official site; confirm programme, residency and year before approving."
+ },
+ {
+  "university_id": "2b507cd1-ff70-5c51-8708-28c523a5af24",
+  "metric": "tuition",
+  "year": 2025,
+  "value": 4960,
+  "unit": "EUR",
+  "source_url": "https://www.vub.be/sites/default/files/2025-11/2025_Studiegeld_tarieven_Non_EER_2526_ENG.pdf",
+  "notes": "International undergraduate tuition, 2025/26 (maximum). Non-EEA bachelor fee, Track 2 (Faculty ES bachelors), 60-ECTS annual total. Quote from summarised fetch of the PDF. Quote: \"BSc in Business Economics EN € 1900 € 51 € 4960\" Collected 2026-10-29 by an automated assistant from the official site; confirm programme, residency and year before approving."
+ },
+ {
+  "university_id": "466b0e36-cfb0-54b5-8e66-f95c2883a34d",
+  "metric": "tuition",
+  "year": 2026,
+  "value": 2900,
+  "unit": "EUR",
+  "source_url": "https://www.unipi.it/tuition-fees",
+  "notes": "International undergraduate tuition, 2026/27 (maximum). Stated maximum for foreign nationals not resident in Italy and similar cases. Page applies flat-rate amounts by country income group (table rows: EUR 290, 580, 1,160, 2,900, plus EUR 140 regional tax and EUR 16 stamp duty). Page does not say 'non-EU' or give a 2025/26 figure. Quote from summarised fetch. Quote: \"The maximum annual tuition contribution is € 2,900 for:\" Collected 2026-10-29 by an automated assistant from the official site; confirm programme, residency and year before approving."
  }
 ]

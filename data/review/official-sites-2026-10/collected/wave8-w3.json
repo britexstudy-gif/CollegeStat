@@ -1,0 +1,121 @@
+[
+  {
+    "university_id": "3b163933-c42b-5be3-a7db-1d43d778b633",
+    "name": "Petronas Technology University",
+    "tuition": [],
+    "english": [],
+    "deadline": [
+      {
+        "title": "International undergraduate application deadline, September 2027 intake",
+        "cycle": "2027 entry",
+        "due_at": "2027-06-30",
+        "notes": "From the 'Application Deadlines' table on the international How To Apply page. January 2027 (31 October 2026) and May 2027 (28 February 2027) deadlines are also listed and not reported here. Quote from summarised fetch; the table row is quoted as it appears.",
+        "source_url": "https://utp.edu.my/Pages/Admission/Undergraduate/International/How-To-Apply.aspx",
+        "quote": "September 2027 | 23 April 2027 | 30 June 2027"
+      }
+    ],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Tuition: the international undergraduate fee table (RM 110,000 to RM 240,000) is labelled 'TOTAL TUITION FEE', so it appears to be a whole-programme total rather than an annual figure, and it has no academic year (it says 'Academic Fees Table - December 2025' and 'effective May 2026'). Left out. No undergraduate IELTS/TOEFL requirement found on the official pages checked. Quote from summarised fetch. Type not stated on the page."
+  },
+  {
+    "university_id": "bb59d10f-a746-5862-ae68-d42e57f6c804",
+    "name": "University of Aberdeen",
+    "tuition": [],
+    "english": [
+      {
+        "kind": "IELTS",
+        "minimum": 6.0,
+        "notes": "General undergraduate minimum: overall 6.0, with Listening 5.5, Reading 5.5, Speaking 5.5 and Writing 6.0. Varies by programme: Medicine (MBChB) overall 7.0. Page does not accept IELTS Indicator, General Training or Online. Quote from summarised fetch.",
+        "source_url": "https://www.abdn.ac.uk/study/international/english/undergraduate-english-requirements/",
+        "quote": "Overall - 6.0"
+      },
+      {
+        "kind": "TOEFL",
+        "minimum": 78,
+        "notes": "For tests taken before 21 January 2026 (component minimums Listening 17, Reading 18, Speaking 20, Writing 21). The page also lists an overall of 4 - 4.5 for tests taken after 21 January 2026, which is not reported here. Medicine requires 100 for tests before that date. Quote from summarised fetch.",
+        "source_url": "https://www.abdn.ac.uk/study/international/english/undergraduate-english-requirements/",
+        "quote": "Overall - 78 or above"
+      }
+    ],
+    "deadline": [
+      {
+        "title": "Undergraduate application deadline for applicants from outside the UK and EU, September 2027 entry",
+        "cycle": "2027 entry",
+        "due_at": "2027-06-30",
+        "notes": "The page also says applications are accepted up to Friday 13 August 2027 for applicants receiving results a little later in August (not reported as the main deadline). Quote from summarised fetch.",
+        "source_url": "https://www.abdn.ac.uk/study/undergraduate/info/key-dates/",
+        "quote": "Applications must be submitted by Wednesday 30 June for September 2027"
+      }
+    ],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Tuition: the only fee schedule found with figures is for 2023/24, which is outside the 2025/26 to 2026/27 range. The 2025/26 Undergraduate Tuition Fee Policy PDF gives no figures. Left out. Type not stated on the pages checked. Budget of 4 fetches used."
+  },
+  {
+    "university_id": "7e066a2b-e773-5bc7-b7f1-4d4c1bc56f44",
+    "name": "University of Surrey",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Tuition: the overseas undergraduate fee table found is for 2027 entry (range GBP 15,200 to 50,300), which is outside the 2025/26 to 2026/27 range, so left out. The 2026-entry page links to the 2027-entry page. English: the official English requirements page gives no general undergraduate minimum ('varies between courses'), so left out. Deadline: no official international undergraduate deadline found within the budget. Budget of 3 fetches used."
+  },
+  {
+    "university_id": "37e007e0-63ca-5a1a-a785-cef05c73ec9b",
+    "name": "University of Milan",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Tuition: the official fees page gives non-EU students a fixed first instalment of EUR 156 and a second instalment based on income bracket, with no annual international tuition figure, so left out. The full fee tables are on a separate unimi.it page that was not fetched (budget). English and deadline: no official undergraduate requirement or non-EU deadline found in search. Type not stated."
+  },
+  {
+    "university_id": "ee0a16d1-b464-5b0a-a817-7efa46e12559",
+    "name": "University of Sussex",
+    "tuition": [],
+    "english": [
+      {
+        "kind": "IELTS",
+        "minimum": 6.0,
+        "notes": "Standard level, the lowest listed: overall 6.0 with at least 5.5 in each of the four components. The page says requirements vary by course, and some degrees require Advanced (7.0 overall); Medicine BMBS requires 7.5. Quote from summarised fetch.",
+        "source_url": "https://www.sussex.ac.uk/study/undergraduate/apply/international-qualifications/english-language-requirements",
+        "quote": "an IELTS score of 6.0 overall, with at least 5.5 in each of the four components."
+      }
+    ],
+    "deadline": [
+      {
+        "title": "Initial application deadline for most courses (all applicants, not international-specific)",
+        "cycle": null,
+        "due_at": "2027-01-13",
+        "notes": "The page does not name the entry year for this date and gives no separate international date. Medicine at Brighton and Sussex Medical School deadline (15 October 2026) is not reported. Quote from summarised fetch.",
+        "source_url": "https://www.sussex.ac.uk/study/undergraduate/apply",
+        "quote": "The initial application deadline for most courses is 6pm on Wednesday 13 January 2027."
+      }
+    ],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Tuition: the official fees page lists only international PhD fees (GBP 23,500 to 27,300 per year), not undergraduate, so left out. Type not stated on the pages checked. Budget of 3 fetches used."
+  },
+  {
+    "university_id": "26c4ebed-4686-5089-864f-6771795bb5d8",
+    "name": "Swinburne University of Technology",
+    "tuition": [],
+    "english": [],
+    "deadline": [
+      {
+        "title": "International (offshore) application closing date, Semester 1 2027 intake",
+        "cycle": "Semester 1 2027",
+        "due_at": "2027-01-08",
+        "notes": "The page says deadlines vary by course and study level, so the bachelor-degree date may differ; check the course page. Onshore date (12 February 2027) not reported. Quote from summarised fetch.",
+        "source_url": "https://www.swinburne.edu.au/courses/intakes/semester-1",
+        "quote": "Offshore international students: Friday 8 January 2027"
+      }
+    ],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Tuition: the 2027 international fee PDF is labelled '2027' but also says '2027 fees are TBA', and the fees page is labelled 'Indicative course fees for 2025 (A$)'. Neither matches 2025/26 or 2026/27 clearly, so left out. No undergraduate IELTS requirement found on the official English requirements page fetched (it covers alternative English routes only). Budget of 4 fetches used."
+  }
+]
