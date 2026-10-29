@@ -113,7 +113,7 @@ export const rpcSchema = z
     jsonrpc: z.literal("2.0"),
     id: z.union([z.string().max(200), z.number().finite()]).optional(),
     method: z.string().max(100),
-    params: z.record(z.unknown()).optional(),
+    params: z.record(z.string(), z.unknown()).optional(),
   })
   .strict();
 export type ToolRunner = (
@@ -141,7 +141,7 @@ export async function dispatchMCP(input: unknown, run: ToolRunner) {
     !z
       .object({
         protocolVersion: z.string().min(1),
-        capabilities: z.record(z.unknown()),
+        capabilities: z.record(z.string(), z.unknown()),
         clientInfo: z
           .object({ name: z.string().min(1), version: z.string() })
           .passthrough(),
@@ -171,7 +171,7 @@ export async function dispatchMCP(input: unknown, run: ToolRunner) {
       error: { code: -32601, message: "Method not found" },
     };
   const call = z
-    .object({ name: z.string(), arguments: z.record(z.unknown()).optional() })
+    .object({ name: z.string(), arguments: z.record(z.string(), z.unknown()).optional() })
     .strict()
     .safeParse(msg.params);
   if (!call.success || !Object.hasOwn(toolSchemas, call.data.name))
