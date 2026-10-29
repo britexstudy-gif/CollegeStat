@@ -63,6 +63,51 @@
   "notes": "International undergraduate tuition, 2026/27 (single). Quote: \"Fiscal residence outside a member State of the Europen Union 19 500 Flat-rate fee with no possible reduction.\" Collected 2026-10-29 by an automated assistant from the official site; confirm programme, residency and year before approving."
  },
  {
+  "university_id": "1e3bb7ff-87ca-5331-a3ab-82b0d0b3484d",
+  "metric": "tuition",
+  "year": 2026,
+  "value": 19906,
+  "unit": "EUR",
+  "source_url": "https://www.tudelft.nl/en/education/study-programme-orientation/practical-matters/tuition-fee-finances",
+  "notes": "International undergraduate tuition, 2026/27 (BSc institutional rate (non-EEA / non-Dutch nationality)). Quote: \"For 2026/2027, the page lists the institutional rate for a bachelor's programme at €19.906. The table cell reads: \"BSc € 19.906\".\" Collected 2026-10-29 by an automated assistant from the official site; confirm programme, residency and year before approving."
+ },
+ {
+  "university_id": "e0088a48-e57b-58d4-bf07-2021931bc1a9",
+  "metric": "tuition",
+  "year": 2025,
+  "value": 12075,
+  "unit": "EUR",
+  "source_url": "https://www.uva.nl/en/education/fees-and-funding/tuition-fees/tuition-fees-2025-2026/tuition-fees-2025-2026.html",
+  "notes": "International undergraduate tuition, 2025/26 (minimum). Non-EEA institutional fee for full-time bachelor students; lowest figure in the faculty list (Economics and Business). Fee depends on faculty. Quote from summarised fetch. 2026/27 figures not found. Quote: \"Bachelor's €12,075\" Collected 2026-10-29 by an automated assistant from the official site; confirm programme, residency and year before approving."
+ },
+ {
+  "university_id": "e0088a48-e57b-58d4-bf07-2021931bc1a9",
+  "metric": "tuition",
+  "year": 2025,
+  "value": 34800,
+  "unit": "EUR",
+  "source_url": "https://www.uva.nl/en/education/fees-and-funding/tuition-fees/tuition-fees-2025-2026/tuition-fees-2025-2026.html",
+  "notes": "International undergraduate tuition, 2025/26 (maximum). Highest figure in the faculty list (Medicine; Dentistry also €34,800). Quote from summarised fetch. Quote: \"Bachelor's in Medicine €34,800\" Collected 2026-10-29 by an automated assistant from the official site; confirm programme, residency and year before approving."
+ },
+ {
+  "university_id": "f9909941-87f9-55cd-bcb7-7c9301d50851",
+  "metric": "tuition",
+  "year": 2026,
+  "value": 26000,
+  "unit": "CNY",
+  "source_url": "https://iso.sysu.edu.cn/en/application/guide/1420575.htm",
+  "notes": "International undergraduate tuition, 2026 (minimum). Quote from summarised fetch. 2026 undergraduate fee per academic year for Humanities and Liberal Arts (RMB per student per academic year, per the page table note). Currency shown as RMB, reported as CNY. Other rows: Natural Science, Engineering and Agricultural Science RMB 33,800; Medical Science RMB 48,000. Quote: \"Humanities and Liberal Arts: RMB 26,000\" Collected 2026-10-29 by an automated assistant from the official site; confirm programme, residency and year before approving."
+ },
+ {
+  "university_id": "f9909941-87f9-55cd-bcb7-7c9301d50851",
+  "metric": "tuition",
+  "year": 2026,
+  "value": 48000,
+  "unit": "CNY",
+  "source_url": "https://iso.sysu.edu.cn/en/application/guide/1420575.htm",
+  "notes": "International undergraduate tuition, 2026 (maximum). Quote from summarised fetch. 2026 undergraduate fee per academic year for Medical Science. Currency shown as RMB, reported as CNY. Quote: \"Medical Science: RMB 48,000\" Collected 2026-10-29 by an automated assistant from the official site; confirm programme, residency and year before approving."
+ },
+ {
   "university_id": "6941fb87-c482-5aa1-9f3c-a5de7cf736dc",
   "metric": "tuition",
   "year": 2026,

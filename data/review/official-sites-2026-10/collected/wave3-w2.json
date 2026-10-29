@@ -1,0 +1,120 @@
+[
+  {
+    "university_id": "0214dadc-625b-5cdb-a2af-cd750bce896d",
+    "name": "KU Leuven",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "NOT FOUND. Both candidate official fee pages (kuleuven.be tuition-fee-breakdown and icts.kuleuven.be/apps/tuitionfees) refused fetch: robots_disallowed. English-requirement and deadline searches returned no official kuleuven.be page. Only third-party sites found; not used."
+  },
+  {
+    "university_id": "1e3bb7ff-87ca-5331-a3ab-82b0d0b3484d",
+    "name": "Delft University of Technology",
+    "tuition": [
+      {
+        "amount": 19906,
+        "currency": "EUR",
+        "academic_year": "2026/27",
+        "period": "year",
+        "label": "BSc institutional rate (non-EEA / non-Dutch nationality)",
+        "source_url": "https://www.tudelft.nl/en/education/study-programme-orientation/practical-matters/tuition-fee-finances",
+        "quote": "For 2026/2027, the page lists the institutional rate for a bachelor's programme at €19.906. The table cell reads: \"BSc € 19.906\"."
+      }
+    ],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Tuition: quote from summarised fetch (table cell shown as 'BSc € 19.906'; the page uses a dot as thousands separator, so amount is entered as 19906). Applies to students without Dutch/EU/EEA/Swiss/Surinamese nationality. Not verified as the only bachelor rate. English requirement not found. Deadline: page only says '1 April All programmes with a non-Dutch (international) diploma' with no year, so left out. Type not stated on a fetched page."
+  },
+  {
+    "university_id": "a74d45a9-657e-514c-ac03-c9d2f9200640",
+    "name": "The Hong Kong Polytechnic University",
+    "tuition": [],
+    "english": [
+      {
+        "kind": "IELTS",
+        "minimum": 6.0,
+        "notes": "Overall band 6.0 in one sitting. Page is for international other-qualification (non-JUPAS) undergraduate entry; page does not name the academic year. Quote from summarised fetch.",
+        "source_url": "https://www.polyu.edu.hk/study/2027/international-other-qualifications-english-language-requirements",
+        "quote": "An overall band score of 6.0 or above in one sitting"
+      },
+      {
+        "kind": "TOEFL",
+        "minimum": 80,
+        "notes": "Total score 80 out of 120 in one sitting, for tests taken before 21 January 2026. For tests on or after that date the page gives a 4.5 out of 6.0 total on the new scale. Quote from summarised fetch.",
+        "source_url": "https://www.polyu.edu.hk/study/2027/international-other-qualifications-english-language-requirements",
+        "quote": "(For tests taken before 21 January 2026) Total Score of 80 or above out of 120 in one sitting"
+      }
+    ],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Tuition: page states HKD240,000 (HK$240,000) per academic year for non-local students but gives no year, so left out. Deadline: key-dates page shows dates only in an image; not readable, so left out. Currency shown with HK$ explicitly. Type not stated."
+  },
+  {
+    "university_id": "ad695799-c6eb-5c4d-901c-a4b7d0b15407",
+    "name": "University of Bristol",
+    "tuition": [],
+    "english": [],
+    "deadline": [
+      {
+        "title": "UCAS equal consideration deadline for undergraduate applications (international)",
+        "cycle": "2027 entry",
+        "due_at": "2027-01-13",
+        "notes": "Quote from summarised fetch. The page also gives a 30 June 'final deadline for all international undergraduate applications' with no year shown, so it is not used.",
+        "source_url": "https://www.bristol.ac.uk/study/undergraduate/apply/international/",
+        "quote": "The equal consideration deadline for undergraduate applications is 13 January 2027 (6 pm, UK time)"
+      }
+    ],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Tuition: overseas 2026/27 fees page (bristol.ac.uk/students/support/finances/tuition-fees/ug/overseas/26-27/) fetched but showed no fee figures, so left out. English: the only Bristol English policy PDF found is dated 2022 for 2023-24 entry and gives no undergraduate overall score, so left out. A current undergraduate English page was not reached within budget."
+  },
+  {
+    "university_id": "3e655a74-c0c7-5a9b-884b-22aebd5e0d1e",
+    "name": "London School of Economics and Political Science, University of London",
+    "tuition": [],
+    "english": [
+      {
+        "kind": "IELTS",
+        "minimum": 7.0,
+        "notes": "Overall 7.0 with 7.0 in each component, all in one sitting. Undergraduate page; no programme variation stated. Quote from summarised fetch.",
+        "source_url": "https://www.lse.ac.uk/study-at-lse/Undergraduate/Prospective-Students/How-to-Apply/English-Language-Requirements",
+        "quote": "7.0 overall"
+      },
+      {
+        "kind": "TOEFL",
+        "minimum": 100,
+        "notes": "Total 100 overall, with minimum 27 Writing, 25 Reading, 24 Listening, 24 Speaking, in one sitting. The page also lists 5.5 overall (5 in each component) for tests from January 2026. Quote from summarised fetch.",
+        "source_url": "https://www.lse.ac.uk/study-at-lse/Undergraduate/Prospective-Students/How-to-Apply/English-Language-Requirements",
+        "quote": "100 overall, with a minimum of:"
+      }
+    ],
+    "deadline": [
+      {
+        "title": "UCAS deadline for international undergraduate applicants (full and equal consideration)",
+        "cycle": "2027 entry",
+        "due_at": "2027-01-13",
+        "notes": "Quote from summarised fetch. Page gives 13 January 2027, 18.00 (GMT) as the final date for full and equal consideration. The deferred 2028 section shows '13 January 2026', which looks like an error and is not used.",
+        "source_url": "https://www.lse.ac.uk/study-at-lse/Undergraduate/Prospective-Students/How-to-Apply",
+        "quote": "ALL applicants are strongly advised to submit their applications to UCAS by 13 January 2027"
+      }
+    ],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Tuition: the 2026-27 Table of Fees PDF lists per-programme overseas fees (e.g. £35,700, £30,700, £28,900 in the fetched rows), but only part of the table was read, so the minimum and maximum could not be confirmed and nothing was reported. Type not stated on a fetched page."
+  },
+  {
+    "university_id": "6d72f6ce-a30c-54a4-8b99-97ae04a68a88",
+    "name": "Korea University",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Tuition: oia2026/Tuition.do gives only approximate per-semester KRW and USD figures per programme ('subject to change'), not a full min/max, so nothing reported. English test minimum not found on fetched or searched pages. Deadline: the admission guide calendar shows a Spring 2027 online application deadline of 31 August 2026, but it is unclear whether this is the undergraduate international calendar, so left out. Type not stated."
+  }
+]

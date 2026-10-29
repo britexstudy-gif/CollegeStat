@@ -28,6 +28,154 @@
   }
  },
  {
+  "university_id": "276cad09-4a66-51a1-9071-c1ffe923a508",
+  "kind": "tuition",
+  "reason": "amount does not appear in the quote",
+  "item": {
+   "amount": 48779.8,
+   "currency": "CAD",
+   "academic_year": "2026/27",
+   "period": "year",
+   "label": "minimum",
+   "source_url": "https://students.ubc.ca/finances/tuition-fees/undergraduate-tuition-fees/",
+   "quote": "| Music | $1,434.70 | 34 | $ 48,779.80 |",
+   "notes": "Table row (Music) on page for international students starting Summer 2026 or later. Page says the figures are for a full first-year course load. Quote from summarised fetch; figures are table cells, not verbatim sentences."
+  }
+ },
+ {
+  "university_id": "276cad09-4a66-51a1-9071-c1ffe923a508",
+  "kind": "tuition",
+  "reason": "amount does not appear in the quote",
+  "item": {
+   "amount": 67237.2,
+   "currency": "CAD",
+   "academic_year": "2026/27",
+   "period": "year",
+   "label": "maximum",
+   "source_url": "https://students.ubc.ca/finances/tuition-fees/undergraduate-tuition-fees/",
+   "quote": "| Medical Laboratory Science | $1,769.40 | 38 | $ 67,237.20 |",
+   "notes": "Table row (Medical Laboratory Science). Quote from summarised fetch; page states all fees are in Canadian dollars."
+  }
+ },
+ {
+  "university_id": "276cad09-4a66-51a1-9071-c1ffe923a508",
+  "kind": "deadline",
+  "reason": "day does not appear in the quote",
+  "item": {
+   "title": "Winter Session application deadline (September 2027 entry)",
+   "cycle": "2027 entry",
+   "due_at": "2027-01-15",
+   "notes": "Applies to all applicants including international. Separate International Scholars Program award deadline for international applicants is 2026-11-15. Quote from summarised fetch.",
+   "source_url": "https://you.ubc.ca/applying-ubc/dates-deadlines/",
+   "quote": "Deadline to apply for Winter Session (September 2027 to April 2028)."
+  }
+ },
+ {
+  "university_id": "b5f25065-0a86-517e-91f0-ff6bbe8c81d3",
+  "kind": "tuition",
+  "reason": "not an annual figure",
+  "item": {
+   "amount": 4556000,
+   "currency": "KRW",
+   "academic_year": "2026",
+   "period": "semester",
+   "label": "minimum",
+   "source_url": "https://www.yonsei.ac.kr/sites/en_sc/down/2026_fee1.pdf",
+   "quote": "College of Social Sciences 2 - 8 4,556,000",
+   "notes": "Per semester, College (Division) Semester Tuition Fee table, for years 2 to 8. Quote from summarised fetch."
+  }
+ },
+ {
+  "university_id": "b5f25065-0a86-517e-91f0-ff6bbe8c81d3",
+  "kind": "tuition",
+  "reason": "not an annual figure",
+  "item": {
+   "amount": 9221000,
+   "currency": "KRW",
+   "academic_year": "2026",
+   "period": "semester",
+   "label": "maximum",
+   "source_url": "https://www.yonsei.ac.kr/sites/en_sc/down/2026_fee1.pdf",
+   "quote": "School of Integrated Technology 1 9,221,000",
+   "notes": "Per semester, year 1 row. Quote from summarised fetch. The document title says 'Undergraduate Tuition Fee for International Students'."
+  }
+ },
+ {
+  "university_id": "e943a9a4-853c-5554-ac7f-9887d0b2a91d",
+  "kind": "tuition",
+  "reason": "academic year missing or outside 2025-2027",
+  "item": {
+   "amount": 535800,
+   "currency": "JPY",
+   "academic_year": null,
+   "period": "year",
+   "label": "annual undergraduate tuition",
+   "source_url": "https://www.iup.kyoto-u.ac.jp/Application_Guidelines_for_October_2027_Enrollment.pdf",
+   "quote": "JPY 535,800 (Annual)",
+   "notes": "Stated in the guidelines for the International Undergraduate Program, October 2027 enrollment. Academic year not stated beyond that. Quote from summarised fetch. The general undergraduate page (kyoto-u.ac.jp) shows the same yen figure but does not say it applies to international students, so it was not used."
+  }
+ },
+ {
+  "university_id": "fe2070ba-9e66-590c-b67f-3cef2d8983b4",
+  "kind": "tuition",
+  "reason": "academic year missing or outside 2025-2027",
+  "item": {
+   "amount": 1500,
+   "currency": "EUR",
+   "academic_year": null,
+   "period": "semester",
+   "label": null,
+   "source_url": "https://www.uni-heidelberg.de/en/study/management-of-studies/semester-fees/tuition-fees-for-international-students",
+   "quote": "will be required to pay a tuition fee of EUR 1500 per semester",
+   "notes": "Quote from summarised fetch. Page states EUR 1500 per semester for non-EU/non-EEA students with a foreign entrance qualification; it names no academic year (page last modified February 2025), so academic_year left null. Tuition is not free for these students."
+  }
+ },
+ {
+  "university_id": "0aeeb18a-3be5-5bb9-9875-0bf4ce24d102",
+  "kind": "tuition",
+  "reason": "academic year missing or outside 2025-2027",
+  "item": {
+   "amount": 21000,
+   "currency": "CNY",
+   "academic_year": null,
+   "period": "year",
+   "label": "minimum",
+   "source_url": "https://hwxy.nju.edu.cn/English/StudyatNJU/Costs/Tuition/index.html",
+   "quote": "| **Undergraduate** | 21000 | 24000 | 42000 |",
+   "notes": "Quote from summarised fetch. Lowest column is humanities and social sciences (RMB 21,000 per academic year). The page does not state the academic year or the entry year, so academic_year left null. Page is an undated table."
+  }
+ },
+ {
+  "university_id": "0aeeb18a-3be5-5bb9-9875-0bf4ce24d102",
+  "kind": "tuition",
+  "reason": "academic year missing or outside 2025-2027",
+  "item": {
+   "amount": 42000,
+   "currency": "CNY",
+   "academic_year": null,
+   "period": "year",
+   "label": "maximum",
+   "source_url": "https://hwxy.nju.edu.cn/English/StudyatNJU/Costs/Tuition/index.html",
+   "quote": "| **Undergraduate** | 21000 | 24000 | 42000 |",
+   "notes": "Quote from summarised fetch. Highest column is medicine (RMB 42,000 per academic year). Currency shown as RMB, reported as CNY. Academic year not stated on the page, so academic_year left null."
+  }
+ },
+ {
+  "university_id": "72d90170-c326-5377-8295-5226875a04a1",
+  "kind": "tuition",
+  "reason": "invalid amount or currency",
+  "item": {
+   "amount": 0,
+   "currency": null,
+   "academic_year": null,
+   "period": "year",
+   "label": null,
+   "source_url": "https://kfupm.edu.sa/study/international-students/fees-and-scholarships",
+   "quote": "your tuition fees are waived.",
+   "notes": "Quote from summarised fetch. Page says undergraduate international students living outside Saudi Arabia receive a full scholarship and their tuition is waived. Academic year not stated, so left null. Currency not applicable for a zero amount, so left null. Reported as 0 per the rule that a waiver counts."
+  }
+ },
+ {
   "university_id": "d445d34a-9eee-5fcf-8175-3cd18d2f9803",
   "kind": "tuition",
   "reason": "academic year missing or outside 2025-2027",
