@@ -1,6 +1,12 @@
 import Compare from "@/pages-ui/compare";
 import { publicUniversities } from "@/server/university";
-export const metadata = { title: "Compare universities | CollegeStat" };
+import { pageMetadata } from "@/lib/seo";
+// Every ?ids= selection canonicalises to the one comparison tool page.
+export const metadata = pageMetadata({
+  title: "Compare universities side by side",
+  description: "Compare universities side by side on tuition, acceptance rates, test scores, rankings, programs, and scholarships, each with its source.",
+  path: "/compare",
+});
 export default async function ComparisonPage({
   searchParams,
 }: {
