@@ -50,6 +50,9 @@ export default defineConfig(async ({ mode }) => {
         "NEXT_PUBLIC_AUTH_TELEGRAM_ENABLED",
         "NEXT_PUBLIC_AUTH_EMAIL_ENABLED",
         "NEXT_PUBLIC_MAP_STYLE_URL",
+        "NEXT_PUBLIC_SITE_URL",
+        "NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION",
+        "NEXT_PUBLIC_BING_SITE_VERIFICATION",
       ].map((key) => [
         `process.env.${key}`,
         JSON.stringify(publicEnv[key] || process.env[key] || ""),
