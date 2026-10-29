@@ -936,6 +936,58 @@
   }
  },
  {
+  "university_id": "1ec3fb1c-3b1e-5326-a4c2-398b46e5ec4e",
+  "kind": "tuition",
+  "reason": "source is not on the official domain",
+  "item": {
+   "amount": 23000,
+   "currency": "CNY",
+   "academic_year": null,
+   "period": "year",
+   "label": "minimum",
+   "source_url": "http://international.zzu.edu.cn/en/article/detail?cid=53&pid=53&detail=101",
+   "quote": "The tuition fee of International Trade/ Tourism Management is 23000RMB per year."
+  }
+ },
+ {
+  "university_id": "1ec3fb1c-3b1e-5326-a4c2-398b46e5ec4e",
+  "kind": "tuition",
+  "reason": "source is not on the official domain",
+  "item": {
+   "amount": 35000,
+   "currency": "CNY",
+   "academic_year": null,
+   "period": "year",
+   "label": "maximum",
+   "source_url": "http://international.zzu.edu.cn/en/article/detail?cid=53&pid=53&detail=101",
+   "quote": "The tuition 35000RMB per year."
+  }
+ },
+ {
+  "university_id": "1ec3fb1c-3b1e-5326-a4c2-398b46e5ec4e",
+  "kind": "english",
+  "reason": "source is not on the official domain",
+  "item": {
+   "kind": "IELTS",
+   "minimum": 6.0,
+   "notes": "From the 2026 International EMI Bachelor Programs page. The page states this for applicants not from an English-speaking country; the same sentence gives TOEFL 82 as the alternative. Quote from summarised fetch.",
+   "source_url": "http://international.zzu.edu.cn/en/article/detail?cid=53&pid=53&detail=101",
+   "quote": "IELTS score reaches 6.0, or TOEFL score reaches 82"
+  }
+ },
+ {
+  "university_id": "1ec3fb1c-3b1e-5326-a4c2-398b46e5ec4e",
+  "kind": "english",
+  "reason": "source is not on the official domain",
+  "item": {
+   "kind": "TOEFL",
+   "minimum": 82,
+   "notes": "From the 2026 International EMI Bachelor Programs page, same sentence as the IELTS entry. Quote from summarised fetch.",
+   "source_url": "http://international.zzu.edu.cn/en/article/detail?cid=53&pid=53&detail=101",
+   "quote": "IELTS score reaches 6.0, or TOEFL score reaches 82"
+  }
+ },
+ {
   "university_id": "3361a926-61e2-5a23-9399-fb6db0dcefe7",
   "kind": "tuition",
   "reason": "academic year missing or outside 2025-2027",
@@ -1041,6 +1093,34 @@
   }
  },
  {
+  "university_id": "6f2bd9a0-2fe1-5216-a34f-cfd1e5fcedd7",
+  "kind": "tuition",
+  "reason": "academic year missing or outside 2025-2027",
+  "item": {
+   "amount": 15000,
+   "currency": "CNY",
+   "academic_year": null,
+   "period": "year",
+   "label": "minimum",
+   "source_url": "https://www-en.hnu.edu.cn/__local/1/D4/C0/0A6AC6A418F491ADEC7EE62655D_437210C1_5304C.pdf",
+   "quote": "15000 17000"
+  }
+ },
+ {
+  "university_id": "6f2bd9a0-2fe1-5216-a34f-cfd1e5fcedd7",
+  "kind": "tuition",
+  "reason": "academic year missing or outside 2025-2027",
+  "item": {
+   "amount": 17000,
+   "currency": "CNY",
+   "academic_year": null,
+   "period": "year",
+   "label": "maximum",
+   "source_url": "https://www-en.hnu.edu.cn/__local/1/D4/C0/0A6AC6A418F491ADEC7EE62655D_437210C1_5304C.pdf",
+   "quote": "15000 17000"
+  }
+ },
+ {
   "university_id": "731c32c4-6abe-59b8-bfe1-c0df705c0612",
   "kind": "tuition",
   "reason": "invalid amount or currency",
@@ -1068,6 +1148,117 @@
    "source_url": "https://www.uni-muenster.de/international/studierende/general-information/cost-and-funding.html",
    "quote": "Für die regulären Studiengänge müssen Sie keine Studiengebühren an der Universität Münster bezahlen",
    "notes": "No tuition for regular degree programmes (quote from summarised fetch). The page gives a semester contribution of about 370 EUR per semester, which is not tuition. The page does not give a bachelor-specific statement or an academic year."
+  }
+ },
+ {
+  "university_id": "ec7e29d9-f6cf-54d0-8a0b-03be7ec16751",
+  "kind": "tuition",
+  "reason": "source is not on the official domain",
+  "item": {
+   "amount": 20000,
+   "currency": "CNY",
+   "academic_year": null,
+   "period": "year",
+   "label": "single",
+   "source_url": "https://admissions.cau.edu.cn/art/2025/10/11/art_48600_1084208.html",
+   "quote": "Tuition fee（per academic year）：20,000 RMB"
+  }
+ },
+ {
+  "university_id": "4f6e18a6-dfa0-5442-88da-6c33630ac6de",
+  "kind": "tuition",
+  "reason": "academic year missing or outside 2025-2027",
+  "item": {
+   "amount": 535800,
+   "currency": "JPY",
+   "academic_year": null,
+   "period": "year",
+   "label": "single",
+   "source_url": "https://www.global.hokudai.ac.jp/admissions/student-fees/",
+   "quote": "Undergraduate Students | ¥17,000 Transfer Students: ¥30,000 | ¥282,000 | ¥535,800/year"
+  }
+ },
+ {
+  "university_id": "a2f62835-d825-5217-8e59-90ad384c3f8c",
+  "kind": "tuition",
+  "reason": "not an annual figure",
+  "item": {
+   "amount": 500000,
+   "currency": "INR",
+   "academic_year": "2026/27",
+   "period": "semester",
+   "label": "single",
+   "source_url": "https://fees.iitm.ac.in/assets/circular/fees_structure_2026_admission_ug_pg.pdf",
+   "quote": "1 Tuition Fee* 100000 500000"
+  }
+ },
+ {
+  "university_id": "b587ad87-cbf6-50e7-b5f8-952030dcf743",
+  "kind": "deadline",
+  "reason": "day does not appear in the quote",
+  "item": {
+   "title": "Deadline to complete upload of electronic documents in Mobility online (non-EU/non-EEA bachelor applicants)",
+   "cycle": "2027 entry",
+   "due_at": "2027-02-28",
+   "notes": "Academic year 2027-2028, applicants not already living in Belgium with a valid residence permit. This is the first (content and level screening) deadline; the page says to complete the electronic admission application before it. A second deadline, 31 May 2027, is for sending legalised/certified documents to the registrar. The date 28 February 2027 does not appear in the quoted text; it comes from the fetch summary, so staff should verify. Quote from summarised fetch.",
+   "source_url": "https://www.uantwerpen.be/en/study/admission-and-enrolment/admission/procedure/",
+   "quote": "Deadline to complete upload of electronic documents in Mobility online"
+  }
+ },
+ {
+  "university_id": "55405d00-ab25-533d-a54d-3e6f9453f6cf",
+  "kind": "tuition",
+  "reason": "academic year missing or outside 2025-2027",
+  "item": {
+   "amount": 0,
+   "currency": "EUR",
+   "academic_year": null,
+   "period": "year",
+   "label": null,
+   "source_url": "https://www.uni-wuerzburg.de/en/international/studying-in-wuerzburg/degree-programmes/before-arrival/costs-and-financing/",
+   "quote": "There are no tuition fees at the University of Würzburg."
+  }
+ },
+ {
+  "university_id": "fb839fd6-8704-5720-a463-2876d775b8f5",
+  "kind": "tuition",
+  "reason": "amount does not appear in the quote",
+  "item": {
+   "amount": 6800.32,
+   "currency": "EUR",
+   "academic_year": "2025/26",
+   "period": "year",
+   "label": "minimum",
+   "source_url": "https://www.upf.edu/web/graus/preus",
+   "quote": "| Law | €1,202.32 | €6.800.32 |"
+  }
+ },
+ {
+  "university_id": "fb839fd6-8704-5720-a463-2876d775b8f5",
+  "kind": "tuition",
+  "reason": "amount does not appear in the quote",
+  "item": {
+   "amount": 7022.3,
+   "currency": "EUR",
+   "academic_year": "2025/26",
+   "period": "year",
+   "label": "maximum",
+   "source_url": "https://www.upf.edu/web/graus/preus",
+   "quote": "| Audiovisual Communication | €1,237.70 | €7,022.30 |"
+  }
+ },
+ {
+  "university_id": "4c7dec1a-d8c5-54e0-a558-6a9d1dd4b823",
+  "kind": "tuition",
+  "reason": "not an annual figure",
+  "item": {
+   "amount": 29300000,
+   "currency": "IDR",
+   "academic_year": "2026/27",
+   "period": "semester",
+   "label": "single",
+   "source_url": "https://international.ui.ac.id/kki-feb/",
+   "quote": "IDR 29,300,000/semester (excluding study abroad)"
   }
  }
 ]

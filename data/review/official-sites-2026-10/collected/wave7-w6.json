@@ -1,0 +1,141 @@
+[
+  {
+    "university_id": "1b35aa93-a1de-5a99-8c88-dd9613317e0f",
+    "name": "Tecnologico de Monterrey",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Checked tec.mx/en/undergraduate/tuition-fees (simulator only; page says international fee figures are available by contacting TECservices, no amounts stated) and studyinmexico.tec.mx/en/how-apply (visiting students only; no English requirement or deadline stated). No official page with amounts, English minimum or 2027 deadline found. NOT FOUND for all fields. Fetches used: 2."
+  },
+  {
+    "university_id": "950f15f4-f20d-5931-8a5c-025e070ede38",
+    "name": "University of Ottawa",
+    "tuition": [],
+    "english": [
+      {
+        "kind": "IELTS",
+        "minimum": 6.5,
+        "notes": "Overall 6.5 and writing section 6.5 for direct entry with no language conditions. No TOEFL requirement stated on the page. Quote from summarised fetch (table row read back as 'IELTS Academic6.56.5').",
+        "source_url": "https://www.uottawa.ca/study/undergraduate-studies/language-requirements",
+        "quote": "IELTS Academic6.56.5"
+      }
+    ],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Tuition page (uottawa.ca/study/fees-financial-support/university-fees/tuition-international) gave no amounts; it says 2026-2027 undergraduate international fees are unchanged from 2025-2026 but the figures are in a table not returned by the fetch. Deadline page says only 'Most programs close in May' for international applicants (fall 2027 entry), no exact day, so not recorded. Fetches used: 4."
+  },
+  {
+    "university_id": "fb839fd6-8704-5720-a463-2876d775b8f5",
+    "name": "Universitat Pompeu Fabra",
+    "tuition": [
+      {
+        "amount": 6800.32,
+        "currency": "EUR",
+        "academic_year": "2025/26",
+        "period": "year",
+        "label": "minimum",
+        "source_url": "https://www.upf.edu/web/graus/preus",
+        "quote": "| Law | €1,202.32 | €6.800.32 |"
+      },
+      {
+        "amount": 7022.30,
+        "currency": "EUR",
+        "academic_year": "2025/26",
+        "period": "year",
+        "label": "maximum",
+        "source_url": "https://www.upf.edu/web/graus/preus",
+        "quote": "| Audiovisual Communication | €1,237.70 | €7,022.30 |"
+      }
+    ],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Figures are the non-EU 'Price for non EU citizens or non residents' column for single-degree programmes, described on the page as approximate prices for ordinary first-year registration (2025-2026). Separators on the page are dots (read as 6,800.32 and 7,022.30). Double-degree fees (page range about 8,798.14 to 12,682.79 EUR) were not recorded because they are a different product. Quotes are from summarised fetches, so verify the table wording. English requirement and 2027 deadline not stated on the requirements page (it gives only the April 2026 ordinary call dates). Fetches used: 3."
+  },
+  {
+    "university_id": "4c7dec1a-d8c5-54e0-a558-6a9d1dd4b823",
+    "name": "Universitas Indonesia",
+    "tuition": [
+      {
+        "amount": 29300000,
+        "currency": "IDR",
+        "academic_year": "2026/27",
+        "period": "semester",
+        "label": "single",
+        "source_url": "https://international.ui.ac.id/kki-feb/",
+        "quote": "IDR 29,300,000/semester (excluding study abroad)"
+      }
+    ],
+    "english": [
+      {
+        "kind": "IELTS",
+        "minimum": 5.5,
+        "notes": "General minimum stated on the undergraduate programme page; scores must be from March 2024 or later; faculty-specific rules may differ. Quote from summarised fetch.",
+        "source_url": "https://international.ui.ac.id/undergraduate-program/",
+        "quote": "TOEFL ITP 500 or TOEFL iBT 61; IELTS (http://ielts.org) with minimum score 5.5"
+      },
+      {
+        "kind": "TOEFL",
+        "minimum": 61,
+        "notes": "TOEFL iBT 61 (TOEFL ITP 500 also accepted) on the same page; general minimum; faculty-specific rules may differ. Quote from summarised fetch.",
+        "source_url": "https://international.ui.ac.id/undergraduate-program/",
+        "quote": "TOEFL ITP 500 or TOEFL iBT 61; IELTS (http://ielts.org) with minimum score 5.5"
+      }
+    ],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "The tuition figure comes from the Faculty of Economics (FEB) KKI programme page, not a university-wide international undergraduate fee table, so it may apply only to that programme. Quote from summarised fetch. The one-time admission fee of IDR 60,000,000 was excluded because the page labels it as an admission fee, not tuition. Page says the deadline is not stated and to contact admission@ui.ac.id. Fetches used: 2."
+  },
+  {
+    "university_id": "fa82b5bb-ddbe-54d1-b218-92fd0acb5f42",
+    "name": "University of Twente",
+    "tuition": [
+      {
+        "amount": 12300,
+        "currency": "EUR",
+        "academic_year": "2026/27",
+        "period": "year",
+        "label": "minimum",
+        "source_url": "https://www.utwente.nl/en/education/bachelor/tuition-fees/",
+        "quote": "€  12,300 per year"
+      },
+      {
+        "amount": 16400,
+        "currency": "EUR",
+        "academic_year": "2026/27",
+        "period": "year",
+        "label": "maximum",
+        "source_url": "https://www.utwente.nl/en/education/bachelor/tuition-fees/",
+        "quote": "€  16,400 per year"
+      }
+    ],
+    "english": [
+      {
+        "kind": "IELTS",
+        "minimum": 6.0,
+        "notes": "Overall band 6.0, with at least 5.5 on each section; certificate not older than two years. TOEFL iBT entries on the page are for the pre-January 2026 format and an unclear post-January 2026 scale ('4,5'), so TOEFL was not recorded. Quote from summarised fetch.",
+        "source_url": "https://www.utwente.nl/en/education/bachelor/admission/language-requirements",
+        "quote": "with an overall band score of at least 6.0, and a minimum score on each section of at least 5.5."
+      }
+    ],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Tuition: the page gives two rates for non-EU/EEA bachelor students, lower-rate programmes (example: Psychology) and higher-rate programmes (example: Mechanical Engineering), for 2026-2027; recorded as minimum and maximum, but other rates may exist. Quotes from summarised fetch. Deadline page gives 'before 1 May' for the September 2027 intake (non-EEA, via Osiris) with no exact day, so not recorded; some programmes differ. Fetches used: 3."
+  },
+  {
+    "university_id": "9f02a56c-9ab8-5777-abaf-de35e9192d5f",
+    "name": "TU Wien",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Tuition page gives 'regular € 363.36 per semester or € 726.72 per semester for non-EU nationals', but the wording is ambiguous about which rate applies to bachelor students and no academic year is stated, so nothing recorded. Bachelor programmes page gives no 2027 international deadline and no English requirement (it refers to a German B2 level for entrance-exam programmes only). Quotes would be from summarised fetches. Fetches used: 2."
+  }
+]

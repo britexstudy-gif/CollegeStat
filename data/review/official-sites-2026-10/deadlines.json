@@ -423,5 +423,22 @@
   "notes": "Date only; confirm the exact cutoff time. Page gives the window 'Beginning of November 2026 to 15 January 2027'. The cycle label is inferred from the page's statement that the next intake is summer semester 2027; verify. Restricted-admission programmes have different dates. Quote from summarised fetch.",
   "quote": "Non-restricted bachelor's / Magister Theology: Beginning of November 2026 to 15 January 2027",
   "collected_at": "2026-10-29"
+ },
+ {
+  "id": "898f0e16-cbaf-538d-81ee-9e7273434bf6",
+  "university_id": "0c842a32-8330-5812-806f-cb6207ddbac3",
+  "title": "UCAS deadline for all other courses (non-Medicine, Dentistry, Veterinary)",
+  "student_category": "International undergraduate applicants",
+  "cycle": "2027 entry",
+  "due_at": "2027-01-13",
+  "timezone": null,
+  "application_url": "https://qub.ac.uk/Study/Undergraduate/How-to-apply",
+  "year": 2027,
+  "source_url": "https://qub.ac.uk/Study/Undergraduate/How-to-apply",
+  "verification_status": "needs_review",
+  "verified_at": null,
+  "notes": "Date only; confirm the exact cutoff time. Time stated as 6PM UK. Page says no separate deadline for international applicants; the UCAS table applies. Medicine, Dentistry and Veterinary have an earlier deadline of 15 Oct 2026. Quote from summarised fetch.",
+  "quote": "13 Jan, 2027 / 6PM UK",
+  "collected_at": "2026-10-29"
  }
 ]

@@ -1,0 +1,135 @@
+[
+  {
+    "university_id": "1bc79b98-d4ac-5440-a8ce-ce936f41608f",
+    "name": "Universidad de Chile",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "No international undergraduate tuition figure found on official pages. The uchile.cl costs page covers visiting students only (USD$250 matriculation fee per semester, variable tuition with no amount). Admission instructivo for foreign applicants gives only 2025 cycle dates (not 2027). Programmes taught in Spanish only; no IELTS/TOEFL requirement stated. admision2027 page blocked by robots.txt, not read. Public/private not stated on pages read."
+  },
+  {
+    "university_id": "587fb194-e2d0-5f15-abba-1c8a183ae142",
+    "name": "University of Dublin, Trinity College",
+    "tuition": [],
+    "english": [
+      {
+        "kind": "IELTS",
+        "minimum": 6.5,
+        "notes": "Overall 6.5 with 6.0 in each band, from TCD Admission Guide 2027 (English requirements section, p.20). Guide does not state explicitly that it is undergraduate-only; some programmes (e.g. Dental, Clinical Speech and Language Studies) have higher requirements. Quote from summarised fetch.",
+        "source_url": "https://www.tcd.ie/study/assets/pdfs/TCD_Admission_Guide_2027.pdf",
+        "quote": "VII. IELTS (academic or indicator): 6.5 (6 in each band)"
+      },
+      {
+        "kind": "TOEFL",
+        "minimum": 4.5,
+        "notes": "Figure applies to tests taken from January 2026 (new TOEFL scale): 4.5 overall with 4.0 in each section. Before January 2026 the requirement was 90 with 21 in each section. Some programmes higher. Quote from summarised fetch.",
+        "source_url": "https://www.tcd.ie/study/assets/pdfs/TCD_Admission_Guide_2027.pdf",
+        "quote": "IX. TOEFL: 90 with 21 in each section (before January 2026); 4.5 with 4.0 in each section (after January 2026)"
+      }
+    ],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Non-EU tuition page (ug-25-26 PDF) is for 2025/26 and lists only per-course examples (EUR 22,070 arts; 28,900 science; Medicine max 57,000), not a full programme range, so no tuition entries were reported; values could be added after staff review of the full schedule. Non-EU June 30 deadline stated on how-to-apply page, but the page only refers to September 2025 admission, so no 2027 deadline was reported. Application deadline for 2027 entry not confirmed in Admission Guide 2027. Public/private not stated on pages read. Quote from summarised fetch for all values."
+  },
+  {
+    "university_id": "0c842a32-8330-5812-806f-cb6207ddbac3",
+    "name": "The Queen's University Belfast",
+    "tuition": [
+      {
+        "amount": 22400,
+        "currency": "GBP",
+        "academic_year": "2026/27",
+        "period": "year",
+        "label": "minimum",
+        "source_url": "https://www.qub.ac.uk/home/Study/Feesandfinance/FileStore/Tuition%20Fee%20and%20Related%20Charges%20Schedule%202026-27.pdf",
+        "quote": "Fee Rate 1 Courses which are essentially classroom based £4,985 £9,790 £22,400"
+      },
+      {
+        "amount": 47000,
+        "currency": "GBP",
+        "academic_year": "2026/27",
+        "period": "year",
+        "label": "maximum",
+        "source_url": "https://www.qub.ac.uk/home/Study/Feesandfinance/FileStore/Tuition%20Fee%20and%20Related%20Charges%20Schedule%202026-27.pdf",
+        "quote": "Fee Rate 4 Clinical elements of medical courses £4,985 £9,790 £47,000"
+      }
+    ],
+    "english": [
+      {
+        "kind": "IELTS",
+        "minimum": 6.5,
+        "notes": "Most Courses column: 6.5 overall with minimum 5.5 in all four elements. Some degree programmes may require higher component scores; check Coursefinder. Quote from summarised fetch.",
+        "source_url": "https://www.qub.ac.uk/Study/international-students/applying/english-language-requirements",
+        "quote": "6.5 minimum of 5.5 in all four elements of the test."
+      },
+      {
+        "kind": "TOEFL",
+        "minimum": 4.5,
+        "notes": "Figure for tests taken from 21 January 2026 (new TOEFL scale): 4.5 overall, no less than 4 in any component. Most Courses column. Quote from summarised fetch.",
+        "source_url": "https://www.qub.ac.uk/Study/international-students/applying/english-language-requirements",
+        "quote": "4.5 overall and no less than 4 in any component."
+      }
+    ],
+    "deadline": [
+      {
+        "title": "UCAS deadline for all other courses (non-Medicine, Dentistry, Veterinary)",
+        "cycle": "2027 entry",
+        "due_at": "2027-01-13",
+        "notes": "Time stated as 6PM UK. Page says no separate deadline for international applicants; the UCAS table applies. Medicine, Dentistry and Veterinary have an earlier deadline of 15 Oct 2026. Quote from summarised fetch.",
+        "source_url": "https://qub.ac.uk/Study/Undergraduate/How-to-apply",
+        "quote": "13 Jan, 2027 / 6PM UK"
+      }
+    ],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Tuition figures are from the 2026/27 fee schedule, column 'International/EU Other' (full-time set fee basis). The column also covers EU Other students (excluding Republic of Ireland), so it may not apply only to non-EU students; min/max are the fee-rate band limits, not a programme-by-programme range. Quotes from summarised fetches. Public/private not stated on pages read."
+  },
+  {
+    "university_id": "4642dac4-82a7-5e31-ba21-c6fef606f411",
+    "name": "Technische Universität Dresden",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "No bachelor tuition statement or semester fee for international students found on official pages. Semesterbeitrag page gives approx. 350-400 EUR per semester with Semesterticket, with no academic year and no statement that bachelor study is tuition-free, so not reported. Information for international applicants page gives no English language requirement (only German proficiency) and no 2027 deadline (annual winter semester window 1 April to 15 July, no year stated). Public/private not stated on pages read. Budget used: 3 fetches."
+  },
+  {
+    "university_id": "b832cec5-3b18-546b-8e02-38fb48413bca",
+    "name": "National Tsing Hua University",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "NOT FOUND: current international undergraduate tuition. The international fees page found is out of date (copyright 2007-2019, exchange rate as of 2014) and gives per-semester NT$ amounts with no academic year; the apply.nthu.edu.tw tuition article is for year 112 with no clear period, so neither was reported. English requirement and 2027 deadline not found: the Office of Global Affairs page fetched was navigation only. Public/private not stated on pages read."
+  },
+  {
+    "university_id": "f069ea61-f5c2-569d-9037-d01f1f53091d",
+    "name": "National Yang Ming Chiao Tung University",
+    "tuition": [],
+    "english": [
+      {
+        "kind": "IELTS",
+        "minimum": 5.5,
+        "notes": "Listed among minimum standards on the international applicants page (undergraduate admission section). Summarised fetch lists TOEFL-iBT 73 and TOEFL-PBT 500 and TOEIC 750 alongside it. Quote from summarised fetch; confirm the page applies to undergraduate applicants.",
+        "source_url": "https://dcat.nycu.edu.tw/en/undergraduate/undergraduate-admission/international-applicants/",
+        "quote": "IELTS (Academic): 5.5 or above"
+      },
+      {
+        "kind": "TOEFL",
+        "minimum": 73,
+        "notes": "TOEFL iBT, listed on the same page as IELTS 5.5 and TOEFL-PBT 500. Quote from summarised fetch; confirm the page applies to undergraduate applicants.",
+        "source_url": "https://dcat.nycu.edu.tw/en/undergraduate/undergraduate-admission/international-applicants/",
+        "quote": "TOEFL-iBT: 73 or above"
+      }
+    ],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Tuition: only undergraduate international fee table found is for the 2023 school year (per semester, NT$ 34,920 to 139,860), outside the 2025/26-2026/27 range, so not reported. Undergraduate application period on the page (Fall: December 20 to March 5; Spring: August 10 to September 30) has no year, so no 2027 deadline reported. Public/private not stated on pages read."
+  }
+]
