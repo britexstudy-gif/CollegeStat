@@ -1,0 +1,155 @@
+[
+  {
+    "university_id": "28c2025e-e310-5fb0-ad88-d419230776ed",
+    "name": "Chongqing University",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Left out: study.cqu.edu.cn/info/2106/2647.htm shows 'Tuition Fee: 14,000-20,000RMB/Year' but gives no academic year, does not clearly state it is for undergraduates, and the page also lists 2025 deadlines and HSK 4 (Chinese-taught context). No undergraduate IELTS/TOEFL requirement found on the official site in the pages read. Fetch budget: 1 of 4 used. Not checked further: the official undergraduate fees and English pages were not located."
+  },
+  {
+    "university_id": "ec7e29d9-f6cf-54d0-8a0b-03be7ec16751",
+    "name": "China Agricultural University",
+    "tuition": [
+      {
+        "amount": 20000,
+        "currency": "CNY",
+        "academic_year": null,
+        "period": "year",
+        "label": "single",
+        "source_url": "https://admissions.cau.edu.cn/art/2025/10/11/art_48600_1084208.html",
+        "quote": "Tuition fee（per academic year）：20,000 RMB"
+      }
+    ],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Tuition: the page is the 2026 international undergraduate admissions page, but it does not state the academic year or programme scope for the 20,000 RMB figure, so academic_year is null. Quote from summarised fetch. English: the page gives only a Chinese requirement (HSK 4 or above); no IELTS/TOEFL minimum found. Deadline skipped: the stated window (March 1 to June 15, 2026) is for the 2026 cycle, and no 2027 date was found. Pages read: admissions.cau.edu.cn/en (no undergraduate data), admissions.cau.edu.cn/art/2025/9/29/art_48604_1083319.html (graduate only, skipped). Fetch budget: 3 of 4 used."
+  },
+  {
+    "university_id": "6f2bd9a0-2fe1-5216-a34f-cfd1e5fcedd7",
+    "name": "Hunan University",
+    "tuition": [
+      {
+        "amount": 15000,
+        "currency": "CNY",
+        "academic_year": null,
+        "period": "year",
+        "label": "minimum",
+        "source_url": "https://www-en.hnu.edu.cn/__local/1/D4/C0/0A6AC6A418F491ADEC7EE62655D_437210C1_5304C.pdf",
+        "quote": "15000 17000"
+      },
+      {
+        "amount": 17000,
+        "currency": "CNY",
+        "academic_year": null,
+        "period": "year",
+        "label": "maximum",
+        "source_url": "https://www-en.hnu.edu.cn/__local/1/D4/C0/0A6AC6A418F491ADEC7EE62655D_437210C1_5304C.pdf",
+        "quote": "15000 17000"
+      }
+    ],
+    "english": [
+      {
+        "kind": "IELTS",
+        "minimum": 6.0,
+        "notes": "Undergraduate self-financed application guidelines (2025 guidelines document). Quote from summarised fetch. Page also states TOEFL 80 or above, valid for 2 years, or a previous-school English proficiency paper.",
+        "source_url": "https://www-en.hnu.edu.cn/__local/1/D4/C0/0A6AC6A418F491ADEC7EE62655D_437210C1_5304C.pdf",
+        "quote": "submit a transcript of IELTS 6.0 or TOEFL 80 or above, valid for 2 years"
+      },
+      {
+        "kind": "TOEFL",
+        "minimum": 80,
+        "notes": "Undergraduate self-financed application guidelines (2025 guidelines document). Quote from summarised fetch. Same sentence as the IELTS entry.",
+        "source_url": "https://www-en.hnu.edu.cn/__local/1/D4/C0/0A6AC6A418F491ADEC7EE62655D_437210C1_5304C.pdf",
+        "quote": "submit a transcript of IELTS 6.0 or TOEFL 80 or above, valid for 2 years"
+      }
+    ],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Tuition: figures 15000 (Arts) and 17000 (Science and Engineering) are from the 2025 Guidelines to Application for Self-financed Programs PDF, the academic year is not stated on the value, so academic_year is null. Quote is from a summarised fetch, so staff should verify the figures in the PDF. The same PDF says English-taught programmes cost 3000 RMB more per year; not included. Deadline skipped: 2025 cycle (July 18, 2025). Official 'Standard Tuition' page (www-en.hnu.edu.cn/info/1039/2247.htm) gives only 2009 figures, so it was not used. Fetch budget: 2 of 4 used."
+  },
+  {
+    "university_id": "0272ce13-5809-543c-b131-9042a9cdcd35",
+    "name": "University of Electronic Science and Technology of China",
+    "tuition": [],
+    "english": [
+      {
+        "kind": "IELTS",
+        "minimum": 5.5,
+        "notes": "Quote from summarised fetch of the 2026 international admission guidebook (page 02). The line lists HSK5 180 for Chinese-taught programmes alongside TOEFL 80 and IELTS 5.5 or equivalent; confirm this applies to undergraduate English-taught entry.",
+        "source_url": "https://en.uestc.edu.cn/UESTC_Admission_Brochure-EN.pdf",
+        "quote": "HSK5≥180 TOEFL≥80, IELTS≥5.5 or equivalent"
+      },
+      {
+        "kind": "TOEFL",
+        "minimum": 80,
+        "notes": "Quote from summarised fetch of the 2026 international admission guidebook (page 02). Same line as the IELTS entry; confirm scope as above.",
+        "source_url": "https://en.uestc.edu.cn/UESTC_Admission_Brochure-EN.pdf",
+        "quote": "HSK5≥180 TOEFL≥80, IELTS≥5.5 or equivalent"
+      }
+    ],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Tuition: the 2026 guidebook (page 07) lists several '/year' amounts (15,000 to 45,000) and one '/semester' amount without mapping them to undergraduate programmes, so nothing was reported. Deadline skipped: the only undergraduate window found (December 1, 2025 to June 30, 2026) is a past cycle. Fetch budget: 1 of 4 used; the official undergraduate fee page was not located."
+  },
+  {
+    "university_id": "1ec3fb1c-3b1e-5326-a4c2-398b46e5ec4e",
+    "name": "Zhengzhou University",
+    "tuition": [
+      {
+        "amount": 23000,
+        "currency": "CNY",
+        "academic_year": null,
+        "period": "year",
+        "label": "minimum",
+        "source_url": "http://international.zzu.edu.cn/en/article/detail?cid=53&pid=53&detail=101",
+        "quote": "The tuition fee of International Trade/ Tourism Management is 23000RMB per year."
+      },
+      {
+        "amount": 35000,
+        "currency": "CNY",
+        "academic_year": null,
+        "period": "year",
+        "label": "maximum",
+        "source_url": "http://international.zzu.edu.cn/en/article/detail?cid=53&pid=53&detail=101",
+        "quote": "The tuition 35000RMB per year."
+      }
+    ],
+    "english": [
+      {
+        "kind": "IELTS",
+        "minimum": 6.0,
+        "notes": "From the 2026 International EMI Bachelor Programs page. The page states this for applicants not from an English-speaking country; the same sentence gives TOEFL 82 as the alternative. Quote from summarised fetch.",
+        "source_url": "http://international.zzu.edu.cn/en/article/detail?cid=53&pid=53&detail=101",
+        "quote": "IELTS score reaches 6.0, or TOEFL score reaches 82"
+      },
+      {
+        "kind": "TOEFL",
+        "minimum": 82,
+        "notes": "From the 2026 International EMI Bachelor Programs page, same sentence as the IELTS entry. Quote from summarised fetch.",
+        "source_url": "http://international.zzu.edu.cn/en/article/detail?cid=53&pid=53&detail=101",
+        "quote": "IELTS score reaches 6.0, or TOEFL score reaches 82"
+      }
+    ],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Tuition: the EMI bachelor page lists only some programmes (23000, 25000 and 35000 RMB per year), so min and max are the lowest and highest figures shown on that page, not for all programmes. The page does not name the academic year, so academic_year is null. Quotes are from a summarised fetch. Deadline skipped: the page says applications run 'from January to June every year' with no 2027 date. Pages read: english.zzu.edu.cn/admissions.html and english.zzu.edu.cn/intlstudents.html (no undergraduate facts). Fetch budget: 3 of 4 used."
+  },
+  {
+    "university_id": "527121f0-0d61-5f23-a515-1f4ed8cdea15",
+    "name": "Chinese Academy of Medical Sciences & Peking Union Medical College",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "NOT FOUND on cams.ac.cn: the homepage and searches gave no undergraduate international tuition, English requirement or deadline. The search turned up the institution's site at pumc.edu.cn, which is outside the batch domain, so it was not used. Fetch budget: 1 of 4 used."
+  }
+]

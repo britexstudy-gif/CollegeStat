@@ -1,0 +1,116 @@
+[
+ {
+  "university_id": "8ea2d1c3-ce48-518f-9417-7c08098cd6d5",
+  "name": "Universidad de Buenos Aires",
+  "tuition": [],
+  "english": [],
+  "deadline": [],
+  "type": null,
+  "checked_at": "2026-10-29",
+  "worker_notes": "No official uba.ar page with international undergraduate fees or English requirements found. Search returned only news articles and third-party sites. The uba.ar homepage has an 'Estudiantes extranjeros' link that was not followed (no URL in the fetched content). NOT CHECKED beyond homepage."
+ },
+ {
+  "university_id": "69452803-31fe-56a8-b2b4-c2a682cf4214",
+  "name": "University of Durham",
+  "tuition": [],
+  "english": [],
+  "deadline": [],
+  "type": null,
+  "checked_at": "2026-10-29",
+  "worker_notes": "Fee pages (tuition-fees, fee-status-and-payment) state that the fee is listed on the course database, with no overseas undergraduate figure on the page. English-language requirements page gives no numeric undergraduate minimum. Application-guidance page gives no 2027 undergraduate deadline. Fetch budget used up (4 fetches); the undergraduate entry-requirements page was not read."
+ },
+ {
+  "university_id": "10ca55e3-9e48-58e7-a474-d1fab4ccccdb",
+  "name": "University of Oslo",
+  "tuition": [],
+  "english": [
+   {
+    "kind": "IELTS",
+    "minimum": 5.0,
+    "notes": "Bachelor's English proficiency page. Quote from summarised fetch. Lists no component minimums.",
+    "source_url": "https://uio.no/english/studies/admission/nora/english-proficiency-bachelor.html",
+    "quote": "Minimum overall band score of 5.0."
+   },
+   {
+    "kind": "TOEFL",
+    "minimum": 60,
+    "notes": "Same page. The page also states '3,5 (from January 21 2026)' after the OR, which is not explained, so it is not reported as a value. Quote from summarised fetch. No component minimums listed.",
+    "source_url": "https://uio.no/english/studies/admission/nora/english-proficiency-bachelor.html",
+    "quote": "Minimum score: 60 points OR 3,5 (from January 21 2026)."
+   }
+  ],
+  "deadline": [],
+  "type": null,
+  "checked_at": "2026-10-29",
+  "worker_notes": "Tuition page says the precise fee is sent with the offer; the year-specific cost table is linked but was not reached. Admission page has no bachelor deadline for international applicants. Fetch budget: 3 used."
+ },
+ {
+  "university_id": "1a7adfa9-9e53-5a4c-888c-8f76fa8e1125",
+  "name": "University of Southampton",
+  "tuition": [],
+  "english": [],
+  "deadline": [],
+  "type": null,
+  "checked_at": "2026-10-29",
+  "worker_notes": "Undergraduate fees page gives overseas fees only for 2027/28 (outside the 2025/26 or 2026/27 scope), so none reported. The international fees page does not give a year-specific figure. English requirements are band-based (A to I) with no numeric undergraduate minimum on the page fetched. The apply page gives no 2027 deadline. Fetch budget: 4 used."
+ },
+ {
+  "university_id": "75f1a39c-5876-5365-a4e5-4f8190028c13",
+  "name": "Uppsala University",
+  "tuition": [],
+  "english": [
+   {
+    "kind": "IELTS",
+    "minimum": 6.5,
+    "notes": "Entry requirements page, route 'English level 2/English 6'. Overall 6.5 with no section below 5.5. Quote from summarised fetch. Programme-specific requirements may differ.",
+    "source_url": "https://www.uu.se/en/study/bachelors-studies/application/entry-requirements",
+    "quote": "IELTS Academic: an overall score of 6.5 and no section below 5.5"
+   },
+   {
+    "kind": "TOEFL",
+    "minimum": 90,
+    "notes": "Same page and route. The written section minimum of 20 (scale 0-30) is also on the page. Quote from summarised fetch.",
+    "source_url": "https://www.uu.se/en/study/bachelors-studies/application/entry-requirements",
+    "quote": "TOEFL iBT: score of 20 (scale 0-30) in written test, total score of 90"
+   }
+  ],
+  "deadline": [
+   {
+    "title": "Bachelor's application round (autumn intake)",
+    "cycle": "2027 entry",
+    "due_at": "2027-01-15",
+    "notes": "Page gives the next application period as opening 16 October 2026 and closing 15 January 2027. The page does not name the intake year; 2027 entry is inferred from the closing date. Staff should confirm. Quote from summarised fetch, with bold markup removed.",
+    "source_url": "https://www.uu.se/en/study/bachelors-studies/application",
+    "quote": "The next application will open 16 October 2026 and close 15 January 2027."
+   }
+  ],
+  "type": null,
+  "checked_at": "2026-10-29",
+  "worker_notes": "Tuition: the only fee wording found is 'one semester of full-time study costs between 49,500 and 90,000 SEK per semester' with no academic year stated, so it was not reported. Samarbetswebb fee page also gives no year or amount. Fetch budget: 4 used."
+ },
+ {
+  "university_id": "eacacd15-de55-5ef0-b874-54d46d92b26c",
+  "name": "University of Technology Sydney",
+  "tuition": [],
+  "english": [
+   {
+    "kind": "IELTS",
+    "minimum": 6.5,
+    "notes": "Table for most undergraduate coursework courses: overall 6.5, writing 6.0. Some courses need more (Bachelor of Nursing, Bachelor of Midwifery, Bachelor of Psychological Science (Honours): overall 7.0, writing 6.5). Quote from summarised fetch: the quote is a table row, not a sentence.",
+    "source_url": "https://www.uts.edu.au/english-language-requirements",
+    "quote": "IELTS (academic/online/OSR): overall 6.5, writing 6.0"
+   },
+   {
+    "kind": "TOEFL",
+    "minimum": 79,
+    "notes": "Table for most undergraduate coursework courses (internet-based/Home Edition, 0-120 scale): overall 79, writing 21. Quote from summarised fetch: the quote is a table row, not a sentence.",
+    "source_url": "https://www.uts.edu.au/english-language-requirements",
+    "quote": "TOEFL (internet-based/Home Edition; 0-120): overall 79, writing 21"
+   }
+  ],
+  "deadline": [],
+  "type": null,
+  "checked_at": "2026-10-29",
+  "worker_notes": "Fees page refers to a course-level fee search tool that was not fetched, and gives no year-specific undergraduate figure. The application-dates page has an international table with an autumn row (30 November / 15 January) but no year, so no 2027 deadline reported. Fetch budget: 3 used."
+ }
+]

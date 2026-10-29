@@ -1,0 +1,101 @@
+[
+  {
+    "university_id": "55f4ba6f-3df3-5ee2-ac3a-d6e9e0a2b2fa",
+    "name": "University of Western Ontario",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Fetched https://welcome.uwo.ca/finances: it gives 'Estimated year 1 international tuition and fees: $48,000 to $64,400' for 2025-26, but the page states no currency code (only '$'), so it was left out rather than guessed. Not a 2026/27 figure. Did not find an English minimum or an application deadline. WebFetch budget ran out before the 2026-27 international fee schedule could be checked."
+  },
+  {
+    "university_id": "b83472eb-1a12-5b42-9769-79e2649e9009",
+    "name": "Technische Universität Berlin",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Fetched https://www.tu.berlin/en/studying: no international bachelor tuition, semester contribution or deadline stated. Search surfaced official pages (semester-fees, dates-deadlines, group-c application) but WebFetch budget ran out before they could be read, so no facts were verified. Nothing reported."
+  },
+  {
+    "university_id": "c73fffe8-a4ac-5cb2-8129-237abf096957",
+    "name": "University of Barcelona",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Fetched a faculty master's page (ub.edu/portal/web/biology/...) which was inactive and stated no fees. Search found the official tuition page https://www.ub.edu/acad/matricula/preus.html but WebFetch budget ran out before it could be read. Nothing verified."
+  },
+  {
+    "university_id": "7aa094cd-7138-5fb0-b290-2242644f4a90",
+    "name": "University of Macau",
+    "tuition": [
+      {
+        "label": "minimum",
+        "amount": 490400,
+        "currency": "MOP",
+        "academic_year": "2026/27",
+        "period": "year",
+        "source_url": "https://reg.um.edu.mo/admissions/general-information/fees",
+        "quote": "Programme Full Tuition Fee within Normal Study Period. Undergraduate non-local (international) tuition, 2026/2027 academic year (MOP): 4-year Bachelor's programmes: 490,400"
+      },
+      {
+        "label": "maximum",
+        "amount": 613000,
+        "currency": "MOP",
+        "academic_year": "2026/27",
+        "period": "year",
+        "source_url": "https://reg.um.edu.mo/admissions/general-information/fees",
+        "quote": "Programme Full Tuition Fee within Normal Study Period. Undergraduate non-local (international) tuition, 2026/2027 academic year (MOP): 5-year Bachelor's programmes: 613,000"
+      }
+    ],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Tuition from the official fee page. The quote strings were taken from the fetch summary, not copied verbatim, so staff should verify them on the page. Figures are for 4-year (490,400 MOP) and 5-year (613,000 MOP) programmes. Fee is stated as 8 installments of MOP 61,300 per semester for 4-year programmes. No English minimum or deadline found, and no public/private statement found. WebFetch budget ran out after this page."
+  },
+  {
+    "university_id": "9d02e057-63ee-5ee9-aeef-4aa112d65d2a",
+    "name": "Khalifa University of Science, Technology and Research",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Not searched: the web-fetch budget for the session was exhausted (403 from proxy) during batch 20 before this university was reached."
+  },
+  {
+    "university_id": "134932db-50b6-573c-a856-474f34c60efc",
+    "name": "University of Cape Town",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Not searched: the web-fetch budget for the session was exhausted (403 from proxy) during batch 20 before this university was reached."
+  },
+  {
+    "university_id": "9bff146e-eafa-54b3-a7b2-9d31faf1642d",
+    "name": "Université de Montréal",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Not searched: the web-fetch budget for the session was exhausted (403 from proxy) during batch 20 before this university was reached."
+  },
+  {
+    "university_id": "6e2f79d8-a01f-5ed1-9d35-b81fdccd16ae",
+    "name": "Vrije Universiteit Amsterdam",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Not searched: the web-fetch budget for the session was exhausted (403 from proxy) during batch 20 before this university was reached."
+  }
+]

@@ -1,0 +1,82 @@
+[
+  {
+    "university_id": "d6b0bfe8-2f2e-5a31-8c8d-97a2c3c31ac2",
+    "name": "Maastricht University",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Official tuition-fees page (maastrichtuniversity.nl/study/admission-enrolment/tuition-fees) was fetched but the text was cut off before any fee tables; the explanation-tuition-fee pages under /support/ could not be retrieved (client error / not returned). No verifiable international tuition, English or deadline facts found."
+  },
+  {
+    "university_id": "cf17178b-4486-5b1c-84d1-1ef2b3ac9e37",
+    "name": "Universiti Putra Malaysia",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Searches returned only third-party aggregators (collegedunia, studyfans, etc.); no official upm.edu.my page was fetched. Nothing reported."
+  },
+  {
+    "university_id": "79f39470-8afd-51a9-b34d-4c1c5c988195",
+    "name": "Universidad Nacional Autónoma de México",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Not checked: the WebFetch budget for the session was exhausted (proxy HTTP 403, 100 fetches per hour shared by all agents) before this university was reached."
+  },
+  {
+    "university_id": "a6433838-97ca-5280-ac8a-2273fb8bab01",
+    "name": "University of Exeter",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Official exeter.ac.uk/undergraduate/money/fees/ lists international fees only for autumn 2027 entry (2027/28), which is outside the 2025/26-2026/27 window, so not reported. English-requirements pages appeared in search results but could not be fetched (WebFetch budget exhausted), so no IELTS/TOEFL minimum was quoted. No deadline page fetched."
+  },
+  {
+    "university_id": "59063bbd-5451-5ae4-8f6b-b04ebf2c2161",
+    "name": "Newcastle University",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Official fee pages say international tuition varies by programme and refer to individual degree pages, which were not fetched. The only amounts found (placement-year fees for 2026/27 and 2027/28) are not tuition and were not reported. English-requirements page appeared in search only; not fetched. WebFetch budget exhausted."
+  },
+  {
+    "university_id": "56162036-b07a-5316-98e1-126e03c794ea",
+    "name": "School of Education Pisa",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Not checked: the WebFetch budget for the session was exhausted before this university was reached."
+  },
+  {
+    "university_id": "d038c396-227a-555b-b91c-9a0e1587e0c6",
+    "name": "University of Liverpool",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Not checked: the WebFetch budget for the session was exhausted before this university was reached."
+  },
+  {
+    "university_id": "835b45a6-e652-5e5e-937b-c365bb1d8e7a",
+    "name": "Eindhoven University of Technology",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Not checked: the WebFetch budget for the session was exhausted before this university was reached."
+  }
+]

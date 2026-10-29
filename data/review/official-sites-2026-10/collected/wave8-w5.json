@@ -1,0 +1,156 @@
+[
+  {
+    "university_id": "0949633f-4123-57e8-8e3d-8b762d4a588d",
+    "name": "Abu Dhabi University",
+    "tuition": [
+      {
+        "label": "minimum",
+        "amount": 12745,
+        "currency": "USD",
+        "academic_year": null,
+        "period": "year",
+        "source_url": "https://www.adu.ac.ae/admissions/admission-in-adu/international-students/financials/undergraduate-fees-for-international-students",
+        "quote": "BA Mass Communications (English) | 46,515.00 | 12,745.00",
+        "notes": "Programme-level table of 'Average Tution Fee per year' (USD column; AED 46,515 for this programme). Academic year not stated on the page. Page says fees are subject to 5% VAT. Quote from summarised fetch (table flattened)."
+      },
+      {
+        "label": "maximum",
+        "amount": 17665,
+        "currency": "USD",
+        "academic_year": null,
+        "period": "year",
+        "source_url": "https://www.adu.ac.ae/admissions/admission-in-adu/international-students/financials/undergraduate-fees-for-international-students",
+        "quote": "BS Civil Engineering | 64,470.00 | 17,665.00",
+        "notes": "Programme-level table, USD column (AED 64,470 for this programme). Academic year not stated. Excludes accommodation, 5% VAT applies. Quote from summarised fetch (table flattened)."
+      }
+    ],
+    "english": [],
+    "deadline": [],
+    "type": {
+      "value": "private",
+      "source_url": "https://www.adu.ac.ae/about-adu/our-profile1/our-profile",
+      "quote": "We are a private, multi-campus university"
+    },
+    "checked_at": "2026-10-29",
+    "worker_notes": "Tuition from the international undergraduate fees page (quote from summarised fetch). English: the undergraduate English-proficiency page appears to list an IELTS overall minimum of 5.0, but I could not get an exact verbatim quote containing that figure, so it is left out. No 2027 deadline stated (page refers to the academic calendar). Fetch budget used: 4."
+  },
+  {
+    "university_id": "760bbbad-61a0-51b9-8109-4ce87740467f",
+    "name": "University of Turin",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "NOT FOUND: the international fees page gives EUR contribution bands based on GDP-per-capita reduction, with no standard annual non-EU tuition figure and no stated maximum amount (page says the maximum is due after 26 February 2027 without giving it). Left out. No English requirement page found. Only the 2026/27 application window (19 Feb to 15 Apr 2026) and a 2026 visa date were found, both past-cycle, so no deadline. Public/private status not stated in the pages read. Fetch budget used: 3."
+  },
+  {
+    "university_id": "b44469a2-84e1-5d33-98af-269d20f2f756",
+    "name": "Universität Mannheim",
+    "tuition": [
+      {
+        "label": null,
+        "amount": 1500,
+        "currency": "EUR",
+        "academic_year": null,
+        "period": "semester",
+        "source_url": "https://www.uni-mannheim.de/en/academics/during-your-studies/organizing-your-studies/fees/tuition-fees-for-international-students/",
+        "quote": "in the amount of 1,500 euros per semester",
+        "notes": "Page says the fee has applied 'since the fall semester 2017/2018' and does not name a 2025/26 or 2026/27 year, so academic_year is null. Students from EU/EEA and those with a German Abitur are exempt, plus other listed exemptions. Semester fee is separate. Quote from summarised fetch."
+      }
+    ],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "English: the bachelor's language-requirements page gives no IELTS or TOEFL minimum for bachelor admission (thresholds listed belong to master's programmes, per the page). Deadline: the only date found for non-EU applicants is a 15 July Studienkolleg proof-of-German deadline with no intake year, so left out. Public/private status not stated. Fetch budget used: 3."
+  },
+  {
+    "university_id": "1e6228e0-3144-5716-8af8-2d88e3760934",
+    "name": "East China Normal University",
+    "tuition": [
+      {
+        "label": "minimum",
+        "amount": 22000,
+        "currency": "CNY",
+        "academic_year": null,
+        "period": "year",
+        "source_url": "https://lxs.ecnu.edu.cn/en/feespayment/feelist/",
+        "quote": "Undergraduate Student & Visiting Student 22,000 24,000 28,000 800",
+        "notes": "Figure is for Liberal Arts (first column of the header order). Table is flattened, so the column-to-programme mapping is inferred from header order: Liberal Arts 22,000; Science & Business 24,000; Arts & PE 28,000. Academic year not stated. Quote from summarised fetch. The AEBS BBA fee (54,000) is a separate programme and is not included."
+      },
+      {
+        "label": "maximum",
+        "amount": 28000,
+        "currency": "CNY",
+        "academic_year": null,
+        "period": "year",
+        "source_url": "https://lxs.ecnu.edu.cn/en/feespayment/feelist/",
+        "quote": "Undergraduate Student & Visiting Student 22,000 24,000 28,000 800",
+        "notes": "Figure is for Arts & PE (third column, inferred from header order). Academic year not stated. Quote from summarised fetch with flattened table."
+      }
+    ],
+    "english": [
+      {
+        "kind": "IELTS",
+        "minimum": 6.0,
+        "notes": "Applies to English-taught programmes for applicants from non-English-speaking countries. Chinese-taught programmes require HSK instead (HSK-4 or HSK-5 at 180+, HSK-6 for School of Communication). Cambridge English B2 also accepted. Quote from summarised fetch; the page spells it 'TOFEL'.",
+        "source_url": "https://lxs.ecnu.edu.cn/en_admission_degree_programs_undergraduate_program/list.htm",
+        "quote": "IELTS (6.0 or above) / TOFEL (85 or above) / Cambridge English (B2 or above) certificate."
+      },
+      {
+        "kind": "TOEFL",
+        "minimum": 85,
+        "notes": "Applies to English-taught programmes for applicants from non-English-speaking countries. Page spells it 'TOFEL'. Quote from summarised fetch; TOEFL type assumed to be iBT as the page does not specify.",
+        "source_url": "https://lxs.ecnu.edu.cn/en_admission_degree_programs_undergraduate_program/list.htm",
+        "quote": "IELTS (6.0 or above) / TOFEL (85 or above) / Cambridge English (B2 or above) certificate."
+      }
+    ],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Deadlines on the undergraduate page are for the 2026 intake only (scholarship deadlines April 30, May 15 and self-financed June 1, 2026), so none is reported for 2027. Public/private status not stated in pages read. Fetch budget used: 2."
+  },
+  {
+    "university_id": "9fbb11d3-b386-51c2-ae49-035d51073a59",
+    "name": "Johannes-Gutenberg Universität Mainz",
+    "tuition": [
+      {
+        "label": null,
+        "amount": 0,
+        "currency": "EUR",
+        "academic_year": null,
+        "period": "year",
+        "source_url": "https://www.studium.uni-mainz.de/en/during-your-studies/organizing-your-studies/financial-matters/",
+        "quote": "You only have to pay tuition fees if you begin your studies after turning 60",
+        "notes": "Conditional: tuition is EUR 700 per semester only for students who begin studying after age 60, so students starting under 60 pay no tuition. The page does not say the rule is specific to international students, although it reads as general. Currency is not named on the page for this statement; EUR assumed. Semester fee (about EUR 366.90 per semester, WS 2026/27) is separate and not tuition. Quote from summarised fetch."
+      }
+    ],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "No English requirement page found for bachelor admission. Deadlines: the general dates page gives non-selective and selective bachelor windows for winter 2027/28 (early June to 1 Sept / 15 July) and summer 2027, but does not say they apply to international applicants, so left out. Public/private status not stated. Fetch budget used: 1."
+  },
+  {
+    "university_id": "67dfca3c-5823-563f-93e9-bfc3b528e490",
+    "name": "Universität Potsdam",
+    "tuition": [
+      {
+        "label": null,
+        "amount": 0,
+        "currency": "EUR",
+        "academic_year": null,
+        "period": "year",
+        "source_url": "https://www.uni-potsdam.de/en/studium/studying/financing-funding-housing/costs-at-a-glance",
+        "quote": "we do not charge any tuition fees for all undergraduate programs",
+        "notes": "Page states that no tuition is charged for all undergraduate programmes, so the amount is 0. It is not specific to international students but applies to all undergraduate programmes. Currency is not named on the page; EUR assumed for a zero amount. Quote from summarised fetch."
+      }
+    ],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "No IELTS or TOEFL minimum for bachelor admission found on the language-skills page. Deadlines: the general application deadlines page lists winter 2027/28 windows (early June to 1 Sept for non-selective, to 15 July for selective) but does not say these apply to international applicants, so left out. Public/private status not stated. Fetch budget used: 3."
+  }
+]

@@ -1,0 +1,88 @@
+[
+  {
+    "university_id": "03c16663-fa14-5df4-9aa7-d48e02ed3846",
+    "name": "Cardiff University",
+    "tuition": [],
+    "english": [
+      {
+        "kind": "IELTS",
+        "minimum": 6.5,
+        "notes": "General undergraduate minimum: 6.5 overall with a minimum of 5.5 in each subskill. Page says requirements vary by programme; Medicine, Dentistry, and several nursing, law and pharmacy courses list different IELTS minimums. TOEFL figures on the page were inconsistent (pre/post January 2026) so not reported. Quote from summarised fetch.",
+        "source_url": "https://www.cardiff.ac.uk/study/international/english-language-requirements/undergraduate",
+        "quote": "At least 6.5 overall with a minimum of 5.5 in each subskill"
+      }
+    ],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Tuition: the overseas undergraduate fees page gives no amount ('Dependant on the course you have chosen', for 2023/24 and 2024/25 entry); not reported. Deadline: the key dates page shows only the 2026 entry closing date (14 January), which is past-cycle; no 2027 date found. Type not stated on fetched pages. Fetch budget used on 4 pages (one fee URL failed)."
+  },
+  {
+    "university_id": "55405d00-ab25-533d-a54d-3e6f9453f6cf",
+    "name": "Bayerische Julius-Maximilians-Universität Würzburg",
+    "tuition": [
+      {
+        "amount": 0,
+        "currency": "EUR",
+        "academic_year": null,
+        "period": "year",
+        "label": null,
+        "source_url": "https://www.uni-wuerzburg.de/en/international/studying-in-wuerzburg/degree-programmes/before-arrival/costs-and-financing/",
+        "quote": "There are no tuition fees at the University of Würzburg."
+      }
+    ],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Tuition: the page states there are no tuition fees and says students pay a recurring enrolment charge each semester, but gives no figure (on a separate Student Affairs page). No academic year is stated and the page does not single out international students, so the amount is reported as 0 with academic_year null. Quote from summarised fetch. English: no general IELTS/TOEFL minimum found; the bachelor page lists only B1 English for two programmes. Deadline NOT reported: the bachelor page gives 'For the Winter Semester: July 15*' and 'For the Summer Semester: January 15*' (deadlines for receipt) with no year stated. Type not stated."
+  },
+  {
+    "university_id": "e5ce9d4b-638a-55b6-adef-1e0c03c8b0ad",
+    "name": "Medical University of Vienna",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Candidate NOT reported: the tuition fees page lists EUR 726.72 per semester 'for third country nationals' with no academic year, and does not say whether it covers undergraduate students only, so it was left out. Candidate NOT reported: the admission periods page gives a non-EU preliminary course deadline 'no later than 5 February for summer semesters' (summer 2027) but the page is about the diploma programme (human medicine), not a bachelor, so the scope is unclear. No bachelor English requirement found on the search results. Type not stated on fetched pages."
+  },
+  {
+    "university_id": "ca928715-59ee-5341-b1fc-ef4f37e4b4bf",
+    "name": "Curtin University",
+    "tuition": [],
+    "english": [
+      {
+        "kind": "IELTS",
+        "minimum": 6.5,
+        "notes": "General undergraduate minimum: overall 6.5 with each component at 6.0. The page says these scores do not satisfy English requirements for courses with specific or higher English requirements. Quote from summarised fetch.",
+        "source_url": "https://www.curtin.edu.au/study/applying/english-language-requirements/accepted-english-qualifications/",
+        "quote": "Listening 6.0 Reading 6.0 Writing 6.0 Speaking 6.0 Overall score 6.5."
+      }
+    ],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Tuition: the fees page gives no international undergraduate amounts (course fees are indicative and shown in the course finder). Deadline NOT reported: the only closing date found is the domestic Semester 1 2027 date (28 January 2027), and the international deadline was not found on the fetched pages. Type not stated."
+  },
+  {
+    "university_id": "98b4e737-130f-504b-9d9c-1198c0270376",
+    "name": "University of Wollongong",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Tuition: the fees page says international fees are 'calculated per credit point for the course of study' and gives no amounts; the course finder and a 2027 fee schedule PDF were not readable. English: no general IELTS minimum on the requirements page (minimums are listed per course in the Course Finder). Deadline: the deadlines page lists only semester exchange dates; the international undergraduate deadline was not found. Type not stated."
+  },
+  {
+    "university_id": "575d5e9a-f98a-5ec3-bea3-7f7b8c05100a",
+    "name": "Louvain School of Management",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Candidate NOT reported (for staff review): the registration fee page (https://uclouvain.be/en/enrolment/registration-fee-amount) gives, for 2026-2027 and pending approval by the Wallonia-Brussels Federation, EUR 1,194 full tuition fee plus a EUR 4,175 non-EU contribution added to it for non-EU bachelor students. Two figures with an approval caveat, and no total was computed, so nothing was reported. The school page cited is for the CEMS master, not bachelor. English: no IELTS/TOEFL minimum found for bachelor admission (only a general French requirement). Deadline: the non-EU deadline shown (13 September 2026) has already passed and no 2027 date was published on the fetched page. Type not stated."
+  }
+]

@@ -1,0 +1,128 @@
+[
+  {
+    "university_id": "2b507cd1-ff70-5c51-8708-28c523a5af24",
+    "name": "Vrije Universiteit Brussel",
+    "tuition": [
+      {
+        "amount": 4200,
+        "currency": "EUR",
+        "academic_year": "2025/26",
+        "period": "year",
+        "label": "minimum",
+        "source_url": "https://www.vub.be/sites/default/files/2025-11/2025_Studiegeld_tarieven_Non_EER_2526_ENG.pdf",
+        "quote": "credit contracts except for those mentioned under TRACK 2 & 3 € 1140 € 51 € 4200",
+        "notes": "Non-EEA (Non EER) bachelor fee, Track 1 general bachelors, 60-ECTS annual total. Page does not label min/max itself. Quote from summarised fetch of the PDF."
+      },
+      {
+        "amount": 4960,
+        "currency": "EUR",
+        "academic_year": "2025/26",
+        "period": "year",
+        "label": "maximum",
+        "source_url": "https://www.vub.be/sites/default/files/2025-11/2025_Studiegeld_tarieven_Non_EER_2526_ENG.pdf",
+        "quote": "BSc in Business Economics EN € 1900 € 51 € 4960",
+        "notes": "Non-EEA bachelor fee, Track 2 (Faculty ES bachelors), 60-ECTS annual total. Quote from summarised fetch of the PDF."
+      }
+    ],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Fees found in 2025/26 non-EEA PDF. No IELTS/TOEFL minimum or 2027 deadline found: the Social Sciences admission page fetched says only 'proof of sufficient proficiency in English' and links to pages not fetched. Fetches used: 2."
+  },
+  {
+    "university_id": "9106d880-ee3e-5919-b900-fd5966b29e47",
+    "name": "Linköping University",
+    "tuition": [],
+    "english": [
+      {
+        "kind": "IELTS",
+        "minimum": 6.5,
+        "notes": "IELTS (Academic modules) overall 6.5 with no section below 5.5, from the bachelor's-level requirements page. Quote from summarised fetch.",
+        "source_url": "https://liu.se/en/article/bachelor-s-level-requirements",
+        "quote": "IELTS (Academic modules) with an overall mark of 6.5 and no section below 5.5"
+      },
+      {
+        "kind": "TOEFL",
+        "minimum": 90,
+        "notes": "TOEFL iBT total 90 (internet-based, written component 20 on 0-30 scale), from the bachelor's-level requirements page. Quote from summarised fetch.",
+        "source_url": "https://liu.se/en/article/bachelor-s-level-requirements",
+        "quote": "TOEFL internet-based score of 20 (scale 0-30) in written test with a total score of 90."
+      }
+    ],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "No bachelor tuition figure for international students found: fees page refers to programme pages and universityadmissions.se; intl programmes 2026 PDF gave only an unlabelled EUR 10,000-20,000 range with no year. Application period shown (16 Oct 2025 to 15 Jan 2026) is a past cycle, so not reported. Fetches used: 3."
+  },
+  {
+    "university_id": "c1ec3e2e-379b-5a56-928d-77bce982bc93",
+    "name": "Ulsan National Institute of Science and Technology",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "2026 Fall undergraduate international guideline (fetched) states no tuition amount and no minimum IELTS/TOEFL score (only that test reports must be within 2 years); its application window (8 Dec 2025 to 23 Jan 2026) is past-cycle. No official 2027 deadline or tuition page found. Fetches used: 1."
+  },
+  {
+    "university_id": "466b0e36-cfb0-54b5-8e66-f95c2883a34d",
+    "name": "University of Pisa",
+    "tuition": [
+      {
+        "amount": 2900,
+        "currency": "EUR",
+        "academic_year": "2026/27",
+        "period": "year",
+        "label": "maximum",
+        "source_url": "https://www.unipi.it/tuition-fees",
+        "quote": "The maximum annual tuition contribution is € 2,900 for:",
+        "notes": "Stated maximum for foreign nationals not resident in Italy and similar cases. Page applies flat-rate amounts by country income group (table rows: EUR 290, 580, 1,160, 2,900, plus EUR 140 regional tax and EUR 16 stamp duty). Page does not say 'non-EU' or give a 2025/26 figure. Quote from summarised fetch."
+      }
+    ],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "No English test requirement or 2027 undergraduate deadline found on unipi.it in search results. Searches for these returned only unofficial or programme-level pages. Fetches used: 1."
+  },
+  {
+    "university_id": "267f1ea0-3cce-5842-8e31-55e35893b7b2",
+    "name": "Universität Innsbruck",
+    "tuition": [
+      {
+        "amount": 726.72,
+        "currency": "EUR",
+        "academic_year": null,
+        "period": "semester",
+        "label": null,
+        "source_url": "https://www.uibk.ac.at/en/studies/start-of-studies/tuition-fee-and-financial-support/",
+        "quote": "The tuition fee amounts to € 363.36 per semester (AUT, EU/EEA, CH) and for citizens of third countries € 726.72 per semester.",
+        "notes": "Per-semester fee for third-country citizens (non-EEA). Page does not state the academic year for this fee; the only year it gives (2026/2027) applies to the OeH fee. academic_year left null. Quote from summarised fetch."
+      }
+    ],
+    "english": [
+      {
+        "kind": "IELTS",
+        "minimum": 6.5,
+        "notes": "General English requirement for English-taught study programmes (B2 level), not stated specifically for bachelor programmes. Overall score 6.5. Quote from summarised fetch.",
+        "source_url": "https://www.uibk.ac.at/en/admission-department/admission/language-certificates-for-admission-to-study-programmes/",
+        "quote": "IELTS: Overall Score of at least 6.5 Points"
+      }
+    ],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "TOEFL line on the same page is inconsistent ('from 87 Scores' and 'since 2026: Overall Score of at least 4.5'), so no TOEFL value reported; staff should confirm. No 2027 deadline found. Fetches used: 2."
+  },
+  {
+    "university_id": "d9f96e91-5b30-58d7-8d3b-3f55e05db849",
+    "name": "University of Naples Federico II",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Engineering department fee page (eeit.dieti.unina.it) describes non-EU tuition only as 'very affordable (almost null)' with EUR 140 regional tax and EUR 16 stamp duty, with no figure or year, so nothing reported as tuition. No official English requirement or 2027 deadline found. Fetches used: 1."
+  }
+]

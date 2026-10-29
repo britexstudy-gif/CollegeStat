@@ -1,0 +1,126 @@
+[
+  {
+    "university_id": "c353b675-c43e-5507-88d6-7a1850a92f27",
+    "name": "Université Paris Cité",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Checked u-paris.fr admission page for independent international students. It gives only a 2024/25 licence fee (175 EUR + 103 EUR CVEC) and says non-European students pay the same as French and European students, so no 2025/26 or 2026/27 international figure was found; left out. No IELTS/TOEFL minimum, and no 2027 deadline found. The candidater page could not be fetched (client_error). Fetch budget used: 2 of 4."
+  },
+  {
+    "university_id": "fe2070ba-9e66-590c-b67f-3cef2d8983b4",
+    "name": "Ruprecht-Karls-Universität Heidelberg",
+    "tuition": [
+      {
+        "amount": 1500,
+        "currency": "EUR",
+        "academic_year": null,
+        "period": "semester",
+        "label": null,
+        "source_url": "https://www.uni-heidelberg.de/en/study/management-of-studies/semester-fees/tuition-fees-for-international-students",
+        "quote": "will be required to pay a tuition fee of EUR 1500 per semester",
+        "notes": "Quote from summarised fetch. Page states EUR 1500 per semester for non-EU/non-EEA students with a foreign entrance qualification; it names no academic year (page last modified February 2025), so academic_year left null. Tuition is not free for these students."
+      }
+    ],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "No official undergraduate IELTS/TOEFL minimum found (the english-language-proficiency page found is for heidelberg.edu, a different university, so not used). The official key-dates page (uni-heidelberg.de/en/node/8426) covers advanced-semester applications only, not first-year international deadlines. Fetch budget used: 2 of 4."
+  },
+  {
+    "university_id": "48429a40-059c-538c-ad95-c91c68b9cb1c",
+    "name": "Utrecht University",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "uu.nl bachelor tuition page (fetch 1) has a 2026-2027 non-EEA row that only links to an institutional fees PDF; that PDF URL was not in the fetched content and was not guessed, so no figure. No bachelor English requirement or deadline page found in search results. Fetch budget used: 1 of 4."
+  },
+  {
+    "university_id": "0aeeb18a-3be5-5bb9-9875-0bf4ce24d102",
+    "name": "Nanjing University",
+    "tuition": [
+      {
+        "amount": 21000,
+        "currency": "CNY",
+        "academic_year": null,
+        "period": "year",
+        "label": "minimum",
+        "source_url": "https://hwxy.nju.edu.cn/English/StudyatNJU/Costs/Tuition/index.html",
+        "quote": "| **Undergraduate** | 21000 | 24000 | 42000 |",
+        "notes": "Quote from summarised fetch. Lowest column is humanities and social sciences (RMB 21,000 per academic year). The page does not state the academic year or the entry year, so academic_year left null. Page is an undated table."
+      },
+      {
+        "amount": 42000,
+        "currency": "CNY",
+        "academic_year": null,
+        "period": "year",
+        "label": "maximum",
+        "source_url": "https://hwxy.nju.edu.cn/English/StudyatNJU/Costs/Tuition/index.html",
+        "quote": "| **Undergraduate** | 21000 | 24000 | 42000 |",
+        "notes": "Quote from summarised fetch. Highest column is medicine (RMB 42,000 per academic year). Currency shown as RMB, reported as CNY. Academic year not stated on the page, so academic_year left null."
+      }
+    ],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "The nju.edu.cn admission page had no fee, English or deadline figures. The hwxy.nju.edu.cn bachelor declaration guide gave no IELTS/TOEFL minimum and only doctoral deadlines; its HSK requirement is for doctoral programmes. Fetch budget used: 3 of 4."
+  },
+  {
+    "university_id": "f9909941-87f9-55cd-bcb7-7c9301d50851",
+    "name": "Sun Yat-Sen University",
+    "tuition": [
+      {
+        "amount": 26000,
+        "currency": "CNY",
+        "academic_year": "2026",
+        "period": "year",
+        "label": "minimum",
+        "source_url": "https://iso.sysu.edu.cn/en/application/guide/1420575.htm",
+        "quote": "Humanities and Liberal Arts: RMB 26,000",
+        "notes": "Quote from summarised fetch. 2026 undergraduate fee per academic year for Humanities and Liberal Arts (RMB per student per academic year, per the page table note). Currency shown as RMB, reported as CNY. Other rows: Natural Science, Engineering and Agricultural Science RMB 33,800; Medical Science RMB 48,000."
+      },
+      {
+        "amount": 48000,
+        "currency": "CNY",
+        "academic_year": "2026",
+        "period": "year",
+        "label": "maximum",
+        "source_url": "https://iso.sysu.edu.cn/en/application/guide/1420575.htm",
+        "quote": "Medical Science: RMB 48,000",
+        "notes": "Quote from summarised fetch. 2026 undergraduate fee per academic year for Medical Science. Currency shown as RMB, reported as CNY."
+      }
+    ],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "The 2026 bachelor guide gives no IELTS/TOEFL minimum; it requires an HSK Level 5 certificate with minimum 180, which is not an IELTS/TOEFL value, so not reported. Its 2026 intake deadlines (1 Jan-28 Feb and 1 Mar-30 Apr 2026) are past and 2027 deadlines are not listed. The sti.sysu.edu.cn fee page dated 2015 was not used. Fetch budget used: 2 of 4."
+  },
+  {
+    "university_id": "72d90170-c326-5377-8295-5226875a04a1",
+    "name": "King Fahd University of Petroleum and Minerals",
+    "tuition": [
+      {
+        "amount": 0,
+        "currency": null,
+        "academic_year": null,
+        "period": "year",
+        "label": null,
+        "source_url": "https://kfupm.edu.sa/study/international-students/fees-and-scholarships",
+        "quote": "your tuition fees are waived.",
+        "notes": "Quote from summarised fetch. Page says undergraduate international students living outside Saudi Arabia receive a full scholarship and their tuition is waived. Academic year not stated, so left null. Currency not applicable for a zero amount, so left null. Reported as 0 per the rule that a waiver counts."
+      }
+    ],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "The apply-as-international-student page gives SAT 1350 or above for the undergraduate track and no IELTS/TOEFL minimum; SAT is not an English test, so not reported. No undergraduate international application deadline was on the official pages (directed to apply.kfupm.edu.sa). Fetch budget used: 2 of 4."
+  }
+]

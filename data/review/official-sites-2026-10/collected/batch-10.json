@@ -1,0 +1,111 @@
+[
+  {
+    "university_id": "9dae6bd4-c65a-5c4a-943b-3831cdbbc4ff",
+    "name": "University of Groningen",
+    "tuition": [
+      {
+        "label": "minimum",
+        "amount": 14000,
+        "currency": "EUR",
+        "academic_year": "2026/27",
+        "period": "year",
+        "source_url": "https://rug.nl/education/application-enrolment-tuition-fees/tuition-fee/bachelor?lang=en",
+        "quote": "Economics and Business | € 14,000 | € 14,400"
+      },
+      {
+        "label": "maximum",
+        "amount": 32000,
+        "currency": "EUR",
+        "academic_year": "2026/27",
+        "period": "year",
+        "source_url": "https://rug.nl/education/application-enrolment-tuition-fees/tuition-fee/bachelor?lang=en",
+        "quote": "Medicine and Dentistry | € 32,000 | € 32,000"
+      }
+    ],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Tuition: 'University tuition fees II' non-EU/EER full-time table for 2026-2027; min and max taken from the first fee column across faculties (14,000 to 32,000). The page lists a second figure per row (e.g. 14,400) that is not explained and was not used. Quotes came from a trimmed page extraction, so staff should verify against the live page. English requirements found in search results only, not read: not reported. Deadline and public/private status not checked (web-fetch budget ran out)."
+  },
+  {
+    "university_id": "5c472dcb-a445-5d54-8c13-70840b7347c5",
+    "name": "Central South University",
+    "tuition": [
+      {
+        "label": "standard",
+        "amount": 69000,
+        "currency": "CNY",
+        "academic_year": "2026/27",
+        "period": "year",
+        "source_url": "https://intl.csu.edu.cn/English/Admission/Undergraduate_Programs/English_taught_Programs.htm",
+        "quote": "Tuition: 69000 CNY/year"
+      }
+    ],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Tuition from the 2026 Application Guide to English-taught Undergraduate Programs (entry 2026, read as 2026/27). Page gives no 2025 figure; other fees are in a separate PDF not read. English requirements, deadline and type not found: web-fetch budget ran out before those pages could be read."
+  },
+  {
+    "university_id": "8ea2d1c3-ce48-518f-9417-7c08098cd6d5",
+    "name": "Universidad de Buenos Aires",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "No official uba.ar tuition page for international undergraduates was read. Web-fetch budget ran out before the uba.ar international guide could be checked. Search results only gave faculty-level postgraduate fee pages, which are out of scope."
+  },
+  {
+    "university_id": "69452803-31fe-56a8-b2b4-c2a682cf4214",
+    "name": "University of Durham",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "The official dur.ac.uk tuition page was fetched but the overseas fee figure was not found on it (it links to a separate page). Web-fetch budget ran out before that page or the English requirements page could be read."
+  },
+  {
+    "university_id": "10ca55e3-9e48-58e7-a474-d1fab4ccccdb",
+    "name": "University of Oslo",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "The official tuition page states that non-EU/EEA students must pay fees but does not give a bachelor's amount for 2026/27 (the figures are in a linked table not read). The English proficiency bachelor page was found in search but not read. Web-fetch budget ran out."
+  },
+  {
+    "university_id": "1a7adfa9-9e53-5a4c-888c-8f76fa8e1125",
+    "name": "University of Southampton",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "The official undergraduate fees page gives per-course fees (minimum GBP 26,800 and maximum GBP 64,900) but only for 2027/28, which is outside the 2025/26 or 2026/27 window, so not reported. English requirements and deadline not read: web-fetch budget ran out."
+  },
+  {
+    "university_id": "75f1a39c-5876-5365-a4e5-4f8190028c13",
+    "name": "Uppsala University",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "The official bachelor's fees page gives a semester range (49,500 to 90,000 SEK) with no academic year, so not reported. Programme-level fees are in the catalogue. Entry requirements page found in search but not read. Web-fetch budget ran out."
+  },
+  {
+    "university_id": "eacacd15-de55-5ef0-b874-54d46d92b26c",
+    "name": "University of Technology Sydney",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "The official fees page was fetched but did not state an international undergraduate fee for 2026 or 2027. English requirements page found in search but not read. Web-fetch budget ran out."
+  }
+]

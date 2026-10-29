@@ -1,0 +1,101 @@
+[
+  {
+    "university_id": "819bd7c2-cc38-5dc4-854d-2d59a8a9f4e5",
+    "name": "EPFL - EPF Lausanne",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Official tuition page (epfl.ch/education/studies/tuition-fee-other-fees/) gives only semester figures and says the CHF 730 semester fee is tripled to CHF 2190 'for some students from fall 2025'; it does not state which students are affected, so no international figure was reported. Admission/English pages (epfl.ch/education/admission/...) were found in search but could not be fetched (WebFetch budget exhausted). Deadline and type not checked."
+  },
+  {
+    "university_id": "d4f88b7a-d026-5860-8906-d9ebdc5df290",
+    "name": "Zhejiang University",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Official ZJUI page (intl.zju.edu.cn/en/node/12497) states 'Tuition fee: 160,000 RMB/academic year' but does not say it applies to undergraduates, so it was not reported. Undergraduate guide on iczu.zju.edu.cn could not be fetched (WebFetch budget exhausted). No English or deadline facts verified."
+  },
+  {
+    "university_id": "c67598f4-8b91-53a9-a98a-ebd185ced219",
+    "name": "University of Sydney",
+    "tuition": [
+      {
+        "amount": 51700,
+        "currency": "AUD",
+        "academic_year": "2027 entry",
+        "period": "year",
+        "label": "minimum",
+        "source_url": "https://www.sydney.edu.au/study/fees-and-loans/international-student-tuition-fees.html",
+        "quote": "Nursing | Undergraduate | A$49,200 | A$51,700 (table row, Full-time fees guide for 2027 entry)"
+      },
+      {
+        "amount": 69200,
+        "currency": "AUD",
+        "academic_year": "2027 entry",
+        "period": "year",
+        "label": "maximum",
+        "source_url": "https://www.sydney.edu.au/study/fees-and-loans/international-student-tuition-fees.html",
+        "quote": "Health sciences | Undergraduate | A$60,600 – A$65,900 | A$63,600 – A$69,200 (table row, Full-time fees guide for 2027 entry)"
+      }
+    ],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Tuition taken from the official international tuition fees page, 2027 entry column; the page calls these figures a guide only and indicative. Quotes are table rows as returned by the fetch tool, not a verbatim copy-paste; please verify. English proficiency PDF (sydney.edu.au) and deadlines were not fetched (WebFetch budget exhausted)."
+  },
+  {
+    "university_id": "5c9532a7-118a-5e2d-ab32-92ade2e776a5",
+    "name": "Fudan University",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Official ISS tuition page (iss.fudan.edu.cn) covers only the International Summer Session fee (22,000 RMB) and gives no bachelor tuition. No undergraduate tuition, English or deadline facts found on official pages."
+  },
+  {
+    "university_id": "11087dc1-5405-5bd2-a5e2-def936b94cf7",
+    "name": "University of Tokyo",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Search returned the official tuition page (u-tokyo.ac.jp/en/prospective-students/tuition_fees.html) but it could not be fetched (WebFetch budget exhausted). No facts verified."
+  },
+  {
+    "university_id": "b48ecdd6-9331-5ee8-a4ad-7f5b046d5356",
+    "name": "McGill University",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Search returned official McGill Student Accounts 2026-27 tuition pages (mcgill.ca/student-accounts/node/59) but they could not be fetched (WebFetch budget exhausted). No facts verified."
+  },
+  {
+    "university_id": "40dc3bce-f456-577e-9003-9c143d3b52bb",
+    "name": "Shanghai Jiaotong University",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Not searched: WebFetch budget exhausted before this university was reached."
+  },
+  {
+    "university_id": "14fa4c62-b910-520b-aa51-0bf334f02b1c",
+    "name": "Australian National University",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Search returned official ANU pages (anu.edu.au/students/program-administration/fees-payments/tuition-fees-summary) but they could not be fetched (WebFetch budget exhausted). No facts verified."
+  }
+]

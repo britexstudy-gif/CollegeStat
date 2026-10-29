@@ -1,0 +1,174 @@
+[
+  {
+    "university_id": "276cad09-4a66-51a1-9071-c1ffe923a508",
+    "name": "University of British Columbia",
+    "tuition": [
+      {
+        "amount": 48779.80,
+        "currency": "CAD",
+        "academic_year": "2026/27",
+        "period": "year",
+        "label": "minimum",
+        "source_url": "https://students.ubc.ca/finances/tuition-fees/undergraduate-tuition-fees/",
+        "quote": "| Music | $1,434.70 | 34 | $ 48,779.80 |",
+        "notes": "Table row (Music) on page for international students starting Summer 2026 or later. Page says the figures are for a full first-year course load. Quote from summarised fetch; figures are table cells, not verbatim sentences."
+      },
+      {
+        "amount": 67237.20,
+        "currency": "CAD",
+        "academic_year": "2026/27",
+        "period": "year",
+        "label": "maximum",
+        "source_url": "https://students.ubc.ca/finances/tuition-fees/undergraduate-tuition-fees/",
+        "quote": "| Medical Laboratory Science | $1,769.40 | 38 | $ 67,237.20 |",
+        "notes": "Table row (Medical Laboratory Science). Quote from summarised fetch; page states all fees are in Canadian dollars."
+      }
+    ],
+    "english": [
+      {
+        "kind": "IELTS",
+        "minimum": 6.5,
+        "notes": "Overall 6.5 with no part less than 6.0. IELTS General, Indicator and One Skill Retake not accepted. Page does not say the minimum varies by programme. Quote from summarised fetch.",
+        "source_url": "https://you.ubc.ca/applying-ubc/requirements/english-language-competency/",
+        "quote": "6.5, with no part less than 6.0."
+      },
+      {
+        "kind": "TOEFL",
+        "minimum": 90,
+        "notes": "TOEFL iBT (0-120 scale) overall 90; component minimums Reading 22, Listening 22, Writing 21, Speaking 21; must be achieved in a single sitting. Quote from summarised fetch, so the quote is not verified verbatim.",
+        "source_url": "https://you.ubc.ca/applying-ubc/requirements/english-language-competency/",
+        "quote": "The minimum overall score is 90"
+      }
+    ],
+    "deadline": [
+      {
+        "title": "Winter Session application deadline (September 2027 entry)",
+        "cycle": "2027 entry",
+        "due_at": "2027-01-15",
+        "notes": "Applies to all applicants including international. Separate International Scholars Program award deadline for international applicants is 2026-11-15. Quote from summarised fetch.",
+        "source_url": "https://you.ubc.ca/applying-ubc/dates-deadlines/",
+        "quote": "Deadline to apply for Winter Session (September 2027 to April 2028)."
+      }
+    ],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Tuition and English from ubc.ca pages; quotes for tuition and TOEFL come from summarised fetches. Not checked: type (public/private not stated on pages read)."
+  },
+  {
+    "university_id": "c0386da4-95a0-567a-8f70-81b33c5c7f06",
+    "name": "University of Queensland",
+    "tuition": [],
+    "english": [
+      {
+        "kind": "IELTS",
+        "minimum": 6.5,
+        "notes": "Overall 6.5 with minimum 6.0 in each sub-band. Page says some programs have higher requirements. IELTS Online not recognised. Tests must be within 2 years of commencing study. No TOEFL minimum stated on the page read. Quote from summarised fetch.",
+        "source_url": "https://study.uq.edu.au/admissions/english-language-requirements",
+        "quote": "overall IELTS of 6.5 and 6.0 in all sub-bands or equivalent, including IELTS One Skill Retake"
+      }
+    ],
+    "deadline": [
+      {
+        "title": "Semester 1 2027 closing date for international applicants (senior schooling outside Australia)",
+        "cycle": "Semester 1 2027",
+        "due_at": "2026-11-30",
+        "notes": "Date derived from the page's rule 'Semester 1: 30 November of the previous year'. Quote from summarised fetch. Some programs have different closing dates.",
+        "source_url": "https://study.uq.edu.au/admissions/undergraduate/submit-your-application",
+        "quote": "Semester 1: 30 November of the previous year"
+      }
+    ],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Tuition not reported: the 2025 international fee schedule gives per-unit rates (not annual) and the currency is shown only as bare $ (no currency named; Australian university, so possibly AUD). Not checked: TOEFL minimum (page gives none), type."
+  },
+  {
+    "university_id": "9f3cf72f-ca1e-5831-b48d-e5747fb631d6",
+    "name": "Institut Polytechnique de Paris",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "NOT FOUND: undergraduate tuition, English minimum and 2027 deadline. Search returned only master's and PhD fee pages. The Bachelor of Science page on ip-paris.fr gives no fee, English or deadline figures and links to polytechnique.edu, which is outside the university's domain and was not used."
+  },
+  {
+    "university_id": "ff20f641-09ff-5746-af91-35acb184e318",
+    "name": "Karolinska Institute Stockholm",
+    "tuition": [],
+    "english": [],
+    "deadline": [
+      {
+        "title": "Application period, non-EU/EEA applicants, first admissions round (studies starting autumn 2027)",
+        "cycle": "2027 entry",
+        "due_at": "2027-01-15",
+        "notes": "Application period 16 October 2026 to 15 January 2027. Deadline for supporting documentation is 1 February 2027. Quote from summarised fetch.",
+        "source_url": "https://education.ki.se/bachelors-masters-studies/apply/apply-for-a-bachelors-programme",
+        "quote": "16 October 2026 to 15 January 2027: Application period for studies starting in autumn 2027."
+      }
+    ],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Tuition not reported: the only bachelor's fee found is 540 000 SEK total for the 3-year Biomedicine programme (instalments of 90 000 SEK), which is not an annual figure. English requirement is 'English 6 / level 2' (Swedish upper secondary standard), not IELTS or TOEFL, so not reported. Quote for deadline from summarised fetch."
+  },
+  {
+    "university_id": "b5f25065-0a86-517e-91f0-ff6bbe8c81d3",
+    "name": "Yonsei University",
+    "tuition": [
+      {
+        "amount": 4556000,
+        "currency": "KRW",
+        "academic_year": "2026",
+        "period": "semester",
+        "label": "minimum",
+        "source_url": "https://www.yonsei.ac.kr/sites/en_sc/down/2026_fee1.pdf",
+        "quote": "College of Social Sciences 2 - 8 4,556,000",
+        "notes": "Per semester, College (Division) Semester Tuition Fee table, for years 2 to 8. Quote from summarised fetch."
+      },
+      {
+        "amount": 9221000,
+        "currency": "KRW",
+        "academic_year": "2026",
+        "period": "semester",
+        "label": "maximum",
+        "source_url": "https://www.yonsei.ac.kr/sites/en_sc/down/2026_fee1.pdf",
+        "quote": "School of Integrated Technology 1 9,221,000",
+        "notes": "Per semester, year 1 row. Quote from summarised fetch. The document title says 'Undergraduate Tuition Fee for International Students'."
+      }
+    ],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "No English minimum found; the 2027 intake guide states no minimum TOEFL or IELTS score. The 2027 intake application window (2026-09-01 to 2026-09-17) has already passed, so it is not reported. Tuition amounts are semester figures, not annual."
+  },
+  {
+    "university_id": "e943a9a4-853c-5554-ac7f-9887d0b2a91d",
+    "name": "Kyoto University",
+    "tuition": [
+      {
+        "amount": 535800,
+        "currency": "JPY",
+        "academic_year": null,
+        "period": "year",
+        "label": "annual undergraduate tuition",
+        "source_url": "https://www.iup.kyoto-u.ac.jp/Application_Guidelines_for_October_2027_Enrollment.pdf",
+        "quote": "JPY 535,800 (Annual)",
+        "notes": "Stated in the guidelines for the International Undergraduate Program, October 2027 enrollment. Academic year not stated beyond that. Quote from summarised fetch. The general undergraduate page (kyoto-u.ac.jp) shows the same yen figure but does not say it applies to international students, so it was not used."
+      }
+    ],
+    "english": [],
+    "deadline": [
+      {
+        "title": "Application period, International Undergraduate Program, October 2027 enrollment",
+        "cycle": "October 2027 enrollment",
+        "due_at": "2026-12-03",
+        "notes": "Application period November 2 to December 3, 2026 (5 p.m. JST). Quote from summarised fetch.",
+        "source_url": "https://www.iup.kyoto-u.ac.jp/Application_Guidelines_for_October_2027_Enrollment.pdf",
+        "quote": "The Online Application System will automatically close at 5 p.m. on December 3, 2026."
+      }
+    ],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "English: the guidelines state there is no specific minimum IELTS or TOEFL score (typical successful scores of IELTS 6.5 and TOEFL 90 are not minimums), so none reported. Quotes for tuition and deadline come from summarised fetches. Type not checked. Budget: 3 WebFetch calls used."
+  }
+]

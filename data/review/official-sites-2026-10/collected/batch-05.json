@@ -1,0 +1,82 @@
+[
+  {
+    "university_id": "0214dadc-625b-5cdb-a2af-cd750bce896d",
+    "name": "KU Leuven",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Not verified. The tuition fee regulation page (kuleuven.be/english/education/student/fees/regulation) was blocked by robots.txt, and the 2026-2027 fees page could not be fetched because the WebFetch budget ran out. Search results only, no quotable values. English requirement and deadline not checked."
+  },
+  {
+    "university_id": "1e3bb7ff-87ca-5331-a3ab-82b0d0b3484d",
+    "name": "Delft University of Technology",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Tuition page tudelft.nl/en/education/study-programme-orientation/practical-matters/tuition-fee-finances was read. It appears to state a 2026-2027 bachelor institutional rate of EUR 19.906 for non-EU/EEA students (also a transitional rate of EUR 18,175 for some continuing students), but I could not confirm a verbatim quote containing the figure, so nothing was reported. Needs a verbatim check. English requirement and deadline not checked."
+  },
+  {
+    "university_id": "a74d45a9-657e-514c-ac03-c9d2f9200640",
+    "name": "The Hong Kong Polytechnic University",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "polyu.edu.hk/study/ug/fees-and-scholarships/fees shows a non-local tuition figure of HKD 240,000 per academic year, but the page does not state which academic year it applies to, so it was not reported. The 2025-26 tuition PDF was not fetched (budget exhausted). English requirement and deadline not checked."
+  },
+  {
+    "university_id": "ad695799-c6eb-5c4d-901c-a4b7d0b15407",
+    "name": "University of Bristol",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "The only 2026/27 overseas fee page found (students/support/finances/tuition-fees/ug/overseas/26-27/2022-starters/) applies only to students who started in 2022/23, so it is not the rate for new international entrants and was not reported. No general 2026/27 new-starter overseas page was fetched (budget exhausted). English requirement and deadline not checked."
+  },
+  {
+    "university_id": "3e655a74-c0c7-5a9b-884b-22aebd5e0d1e",
+    "name": "London School of Economics and Political Science, University of London",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Not checked. The WebFetch budget ran out before this university was reached."
+  },
+  {
+    "university_id": "6d72f6ce-a30c-54a4-8b99-97ae04a68a88",
+    "name": "Korea University",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Not checked. The WebFetch budget ran out before this university was reached."
+  },
+  {
+    "university_id": "c0bf548f-0413-5faa-8378-e3a8e622f80f",
+    "name": "City University of Hong Kong",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Not checked. The WebFetch budget ran out before this university was reached."
+  },
+  {
+    "university_id": "e0088a48-e57b-58d4-bf07-2021931bc1a9",
+    "name": "University of Amsterdam",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Not checked. The WebFetch budget ran out before this university was reached."
+  }
+]

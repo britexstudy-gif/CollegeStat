@@ -1,0 +1,14 @@
+{
+ "batch": "official-sites-2026-10",
+ "checked_at": "2026-10-29",
+ "targets": 240,
+ "returned": 240,
+ "universities_with_facts": 117,
+ "observations": 54,
+ "english_requirements": 137,
+ "deadlines": 30,
+ "institution_types": 2,
+ "rejected": 97,
+ "missing_universities": [],
+ "status": "needs_review · not published"
+}

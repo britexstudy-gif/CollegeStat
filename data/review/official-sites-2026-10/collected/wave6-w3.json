@@ -1,0 +1,117 @@
+[
+  {
+    "university_id": "59063bbd-5451-5ae4-8f6b-b04ebf2c2161",
+    "name": "Newcastle University",
+    "tuition": [],
+    "english": [
+      {
+        "kind": "IELTS",
+        "minimum": 6.5,
+        "notes": "General figure: 'In most cases' overall IELTS 6.5 with at least 5.5 in each sub-skill. Page says individual undergraduate course pages list higher requirements where needed. Quote from summarised fetch.",
+        "source_url": "https://www.ncl.ac.uk/international/language/",
+        "quote": "In most cases you will need an overall score of IELTS 6.5 or equivalent."
+      }
+    ],
+    "deadline": [
+      {
+        "title": "UCAS application deadline (international undergraduate)",
+        "cycle": "2027 entry",
+        "due_at": "2027-06-30",
+        "notes": "Page also lists equal consideration date 13 January 2027 (18:00 UK time) for most courses (not a hard cutoff), and Medicine/Dentistry deadline 15 October 2026. Quote from summarised fetch.",
+        "source_url": "https://www.ncl.ac.uk/undergraduate/applications-offers/international/",
+        "quote": "30 June 2027 (18:00 UK time): UCAS application deadline."
+      }
+    ],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Tuition: the fees page says international fees are only on individual degree pages (not checked; budget used). No official page stating public/private found. Used 4 fetches."
+  },
+  {
+    "university_id": "56162036-b07a-5316-98e1-126e03c794ea",
+    "name": "School of Education Pisa",
+    "tuition": [
+      {
+        "amount": 0,
+        "currency": null,
+        "academic_year": null,
+        "period": "year",
+        "label": null,
+        "source_url": "https://www.sns.it/en/studiare-a-costo-zero",
+        "quote": "In fact, studies at the Normale are free of charge: university tuition fees are fully reimbursed;"
+      }
+    ],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Batch name 'School of Education Pisa' taken as given; the official site (sns.it) is Scuola Normale Superiore. Tuition: the page says studies are free of charge for Normale students, with no currency or academic year stated, so currency and academic_year are null and period is an assumption. It is not stated whether this applies to international students. No English requirement or undergraduate deadline found on official pages (competition call dates not given on the page). Used 2 fetches."
+  },
+  {
+    "university_id": "d038c396-227a-555b-b91c-9a0e1587e0c6",
+    "name": "University of Liverpool",
+    "tuition": [],
+    "english": [
+      {
+        "kind": "IELTS",
+        "minimum": 6.0,
+        "notes": "Not a single general minimum: this is the lowest of three typical undergraduate requirements listed (6.0; 6.5; 7.0, each with sub-score minimums). Varies by programme; some courses (e.g. Dentistry, Medicine, Veterinary Science) are higher. TOEFL iBT total not given on the page. Quote from summarised fetch.",
+        "source_url": "https://www.liverpool.ac.uk/international/applying/entry-requirements/english-language-requirements/international-english-language-tests/",
+        "quote": "IELTS 6.0 overall, with no component less than 5.5, or equivalent"
+      }
+    ],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Tuition: the fees page says international fees are on each course page (not checked). The UCAS deadlines page could not be fetched (blocked by robots rules), so no 2027 deadline reported. No type statement found. Used 3 fetch attempts."
+  },
+  {
+    "university_id": "835b45a6-e652-5e5e-937b-c365bb1d8e7a",
+    "name": "Eindhoven University of Technology",
+    "tuition": [
+      {
+        "amount": 18600,
+        "currency": "EUR",
+        "academic_year": "2026/27",
+        "period": "year",
+        "label": null,
+        "source_url": "https://www.tue.nl/en/education/become-a-tue-student/tuition-fees-and-other-study-costs/tuition-fee",
+        "quote": "Institutional fee for bachelor’s students | € 18,600 | € 22,400"
+      }
+    ],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Tuition: figure is for non-EEA bachelor students in 2026-27 per the page; the 2027-28 figure (EUR 22,400) was not used. Students who started in 2024-25 or earlier may pay a lower rate (EUR 14,200 for 2026-27 per the page); not reported. Quote from summarised fetch; the table row is as the fetch returned it. English: the language page gives one set of thresholds for all TU/e programmes (IELTS 6.5 overall, TOEFL iBT changed on 21 Jan 2026), not specific to bachelor admission, so left out. Deadline: not found on the official pages checked. No type statement found. Used 4 fetches."
+  },
+  {
+    "university_id": "55f4ba6f-3df3-5ee2-ac3a-d6e9e0a2b2fa",
+    "name": "University of Western Ontario",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "NOT FOUND: tuition. The official Tuition & Expenses page gives only an estimated year 1 total of tuition and fees for 2025-26 ($48,000 to $64,400), which is not a tuition-only figure and not 2026/27, so left out. English requirements and deadlines not found on the pages read (requirements and apply pages linked to general steps only). No type statement found. Used 3 fetches."
+  },
+  {
+    "university_id": "b83472eb-1a12-5b42-9769-79e2649e9009",
+    "name": "Technische Universität Berlin",
+    "tuition": [
+      {
+        "amount": 0,
+        "currency": null,
+        "academic_year": null,
+        "period": "year",
+        "label": null,
+        "source_url": "https://www.tu.berlin/en/studying/organizing-your-studies/financing-your-studies",
+        "quote": "There are no tuition fees to pay at TU Berlin."
+      }
+    ],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Tuition: general statement for all students; the page states students pay a semester fee with no amount or currency given. Currency and academic_year are null because the page gives neither. The page does not separately mention international bachelor students. The application-deadline page and the group C admission page were blocked by robots rules, so no deadline was checked. English requirements not checked (budget). No type statement found. Used 3 fetch attempts."
+  }
+]

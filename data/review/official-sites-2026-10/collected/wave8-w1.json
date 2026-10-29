@@ -1,0 +1,119 @@
+[
+  {
+    "university_id": "bd6b20f6-b0b7-5062-b4ac-a403d08eadaf",
+    "name": "National Cheng Kung University",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "NOT FOUND: no international undergraduate tuition, English requirement or undergraduate deadline on official pages read. The OIA factsheet (AY2627) covers exchange students only. The OIA international degree (& dual degree) program page (oia.ncku.edu.tw/p/404-1032-229817.php) lists a Feb 2027 entry deadline of September 15, 2026 but does not say whether it covers undergraduate study, and gives no tuition or language requirement, so it was left out. Fetches used: 2 (exchange factsheet, degree program page)."
+  },
+  {
+    "university_id": "d1f7e5a5-d181-56b2-bcc9-72e6cb68e118",
+    "name": "University of Leicester",
+    "tuition": [
+      {
+        "amount": 22200,
+        "currency": "GBP",
+        "academic_year": "2026/27",
+        "period": "year",
+        "label": "minimum",
+        "source_url": "https://le.ac.uk/study/undergraduates/fees-funding/tuition-fees",
+        "quote": "between £22,200 and £26,550 per year.",
+        "notes": "Standard undergraduate courses, international (overseas) fee range. Quote from summarised fetch."
+      },
+      {
+        "amount": 26550,
+        "currency": "GBP",
+        "academic_year": "2026/27",
+        "period": "year",
+        "label": "maximum",
+        "source_url": "https://le.ac.uk/study/undergraduates/fees-funding/tuition-fees",
+        "quote": "between £22,200 and £26,550 per year.",
+        "notes": "Standard undergraduate courses, international (overseas) fee range. Quote from summarised fetch."
+      }
+    ],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "English: the official English requirements page says every degree page specifies its own IELTS minimum; no figure was given on the general page, so none was reported. Deadline: no 2027 undergraduate international deadline found on official pages read. Foundation year and medicine fees were excluded. Fetches used: 4."
+  },
+  {
+    "university_id": "bd783952-4538-5666-883f-e9c56a60f109",
+    "name": "University of Reading",
+    "tuition": [
+      {
+        "amount": 25850,
+        "currency": "GBP",
+        "academic_year": "2026/27",
+        "period": "year",
+        "label": "minimum",
+        "source_url": "https://www.reading.ac.uk/ready-to-study/study/fees-and-funding/fees-and-funding-ug/international-undergraduate-student-fees",
+        "quote": "£25,850 a year for non-laboratory courses",
+        "notes": "Non-laboratory courses. Quote from summarised fetch."
+      },
+      {
+        "amount": 30650,
+        "currency": "GBP",
+        "academic_year": "2026/27",
+        "period": "year",
+        "label": "maximum",
+        "source_url": "https://www.reading.ac.uk/ready-to-study/study/fees-and-funding/fees-and-funding-ug/international-undergraduate-student-fees",
+        "quote": "£30,650 a year for subjects with significant laboratory study or workshop content",
+        "notes": "Subjects with significant laboratory study or workshop content. Quote from summarised fetch."
+      }
+    ],
+    "english": [
+      {
+        "kind": "IELTS",
+        "minimum": 6.5,
+        "notes": "Overall 6.5 with no component below 5.5. Higher for some courses: 8.0 (no less than 7.5 in each component) for Speech and Language Therapy; 6.5 (no less than 6.0 in each component) for Pharmacy and Nutrition. Quote from summarised fetch.",
+        "source_url": "https://www.reading.ac.uk/ready-to-study/international-and-eu/english-language-requirements",
+        "quote": "6.5 with no lower than 5.5 in each component"
+      },
+      {
+        "kind": "TOEFL",
+        "minimum": 88,
+        "notes": "Section minimums: 17 in Listening and Writing, 18 in Reading, 20 in Speaking. Quote from summarised fetch.",
+        "source_url": "https://www.reading.ac.uk/ready-to-study/international-and-eu/english-language-requirements",
+        "quote": "88 with no less that 17 in Listening and Writing, 18 in Reading and 20 in Speaking"
+      }
+    ],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Deadline: the how-to-apply undergraduate page read shows no dated 2027 international undergraduate deadline (it only says most UG UCAS deadlines are in January and late applications are considered until June); no deadline was reported. Foundation-year fee excluded. Type not stated on pages read. Fetches used: 3. Tuition and English quotes are from summarised fetches (quote from summarised fetch)."
+  },
+  {
+    "university_id": "d569a38c-3ffc-590c-80ed-48b1621394e7",
+    "name": "The Education University of Hong Kong",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "NOT FOUND: the only non-local undergraduate fee found (HK$210,000 per annum) is for 2027/28, outside the 2025/26 or 2026/27 window, so it was left out. The non-JUPAS page (apply.eduhk.hk/ug/nonjupas) states IELTS 6.0 and a TOEFL figure that appears incomplete, and says it is for local applicants, so it was not reported. No 2027 deadline with a date found. Fetches used: 2."
+  },
+  {
+    "university_id": "05ee90cf-19f9-5b65-8bf1-63aa1bb139ff",
+    "name": "Waseda University",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "NOT FOUND: the official fee announcement (waseda.jp/top/en/information/86735) gives no figure. The AO admissions tuition table (waseda.jp/fpse/pse/en/applicants/tuition/) lists yen figures (540,500 per term; 1,081,000 first year) but does not say they apply to international students, so they were not reported. The undergraduate FAQ gives no English score. No deadline found. Fetches used: 3."
+  },
+  {
+    "university_id": "4285e06f-015e-58b3-915e-e4a47128638f",
+    "name": "University of Otago",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "NOT FOUND: the international tuition fees page returned an error and the alternative page gave no figures (it refers to subject-specific schedules that were not reachable). Key dates page shows only past-cycle dates or semester 1 2027 deadlines for general international applications, not an undergraduate deadline, so none was reported. No English requirement found on official pages read. Fetches used: 3."
+  }
+]

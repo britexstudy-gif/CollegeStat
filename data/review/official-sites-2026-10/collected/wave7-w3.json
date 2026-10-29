@@ -1,0 +1,116 @@
+[
+  {
+    "university_id": "cb8de211-5171-53eb-b568-a641f586fa0a",
+    "name": "Al-Farabi Kazakh National University",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "NOT FOUND: undergraduate tuition (the foreign-student page points to a bachelor's fee PDF that could not be read). English minimums: the only IELTS 5.0 / TOEFL 35 figures on the foreign-student page are for the Healthcare programme and are not labelled as undergraduate, so omitted. International application window (May 15 - July 30 fall intake; October 16 - December 5 spring intake) has no stated year, so omitted. The foreign-applicants page was blocked by robots.txt (fetch failed). Fetches used: 2."
+  },
+  {
+    "university_id": "4f6e18a6-dfa0-5442-88da-6c33630ac6de",
+    "name": "Hokkaido University",
+    "tuition": [
+      {
+        "amount": 535800,
+        "currency": "JPY",
+        "academic_year": null,
+        "period": "year",
+        "label": "single",
+        "source_url": "https://www.global.hokudai.ac.jp/admissions/student-fees/",
+        "quote": "Undergraduate Students | ¥17,000 Transfer Students: ¥30,000 | ¥282,000 | ¥535,800/year"
+      }
+    ],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Tuition: figure is from the Undergraduate Students row of the fee table on the student-fees page; the page does not state an academic year, so academic_year is null. Quote from summarised fetch (table row). NOT FOUND: English minimum (page only says two undergraduate programmes are taught in English, with no test scores); application deadline for 2027 entry (the overview page links to 2027 English guidelines, which could not be located in search). Fetches used: 2."
+  },
+  {
+    "university_id": "dd82c608-39f6-5dc0-8362-f4673b6eefcb",
+    "name": "Kyushu University",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Left out: the fee table on the tuition page shows 535,800 Yen in a 'School / Graduate school' row, but the page is marked 'As of April 1, 2020', states no academic year, and the row label is not clearly undergraduate, so it is treated as unclear. NOT FOUND: English minimum on the English-taught undergraduate page; application deadline (an online application window of December 7-11, 2026 appears on the English-taught undergraduate page, but no intake year is stated). Fetches used: 2."
+  },
+  {
+    "university_id": "a2f62835-d825-5217-8e59-90ad384c3f8c",
+    "name": "Indian Institute of Technology, Madras",
+    "tuition": [
+      {
+        "amount": 500000,
+        "currency": "INR",
+        "academic_year": "2026/27",
+        "period": "semester",
+        "label": "single",
+        "source_url": "https://fees.iitm.ac.in/assets/circular/fees_structure_2026_admission_ug_pg.pdf",
+        "quote": "1 Tuition Fee* 100000 500000"
+      }
+    ],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Tuition: foreign-national figure from Annexure I (B.Tech, B.S and Dual Degree), per semester; the first figure (100000) is the Indian-national fee. Foreign nationals with valid PIO/OCI cards issued before 04/03/2021 pay the Indian-national fee. Quote from summarised fetch (table line). NOT FOUND: English requirement and application deadline for international undergraduate applicants (searches returned only research and PG pages). Fetches used: 1."
+  },
+  {
+    "university_id": "b587ad87-cbf6-50e7-b5f8-952030dcf743",
+    "name": "University of Antwerp",
+    "tuition": [
+      {
+        "amount": 4300,
+        "currency": "EUR",
+        "academic_year": "2026/27",
+        "period": "year",
+        "label": "single",
+        "source_url": "https://www.uantwerpen.be/en/study/admission-and-enrolment/enrolment/tuition-fees/tuition-fees-2026-2027/",
+        "quote": "increased rate for students with other nationalities: 1000 euro + 55 euro/credit (4300 euro for 60 credits)"
+      }
+    ],
+    "english": [
+      {
+        "kind": "IELTS",
+        "minimum": 6.5,
+        "notes": "Overall minimum 6.5 with minimum 6.0 on each part, for English-taught bachelor programmes (page: 'taught in English'). Test taken at a test centre. Quote from summarised fetch.",
+        "source_url": "https://www.uantwerpen.be/en/study/admission-and-enrolment/admission/academic-bachelor/admission-requirements/",
+        "quote": "a minimum score of at least 6.5, and on each part minimum 6.0"
+      },
+      {
+        "kind": "TOEFL",
+        "minimum": 4.5,
+        "notes": "Score of 4.5 applies to exams taken on or after 21 January 2026; the minimum was 80 for exams taken before 21 January 2026. Same English-taught bachelor scope as the IELTS entry. Quote from summarised fetch.",
+        "source_url": "https://www.uantwerpen.be/en/study/admission-and-enrolment/admission/academic-bachelor/admission-requirements/",
+        "quote": "a minimum score of 80 (exams before 21 January 2026) or 4.5 (exams on or after 21 January 2026)"
+      }
+    ],
+    "deadline": [
+      {
+        "title": "Deadline to complete upload of electronic documents in Mobility online (non-EU/non-EEA bachelor applicants)",
+        "cycle": "2027 entry",
+        "due_at": "2027-02-28",
+        "notes": "Academic year 2027-2028, applicants not already living in Belgium with a valid residence permit. This is the first (content and level screening) deadline; the page says to complete the electronic admission application before it. A second deadline, 31 May 2027, is for sending legalised/certified documents to the registrar. The date 28 February 2027 does not appear in the quoted text; it comes from the fetch summary, so staff should verify. Quote from summarised fetch.",
+        "source_url": "https://www.uantwerpen.be/en/study/admission-and-enrolment/admission/procedure/",
+        "quote": "Deadline to complete upload of electronic documents in Mobility online"
+      }
+    ],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Tuition: the 4,300 EUR figure is for 60 credits (full academic year) at the increased non-EEA rate, as stated on the page; not computed. Fetches used: 3."
+  },
+  {
+    "university_id": "bb49d73c-e3e8-5fa0-ad66-319e24608e25",
+    "name": "Universitat Autonoma de Barcelona",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "NOT FOUND: annual undergraduate fee for non-EU students. The enrolment-fees page gives only a per-credit price (17,69 EUR, academic year not stated) and links to a 2026-27 fee PDF that was not read. NOT FOUND: English minimum (the academic-requirements page fetched covers CFGS vocational programmes, not undergraduate degrees) and application deadline for international undergraduates. Fetches used: 2."
+  }
+]

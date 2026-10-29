@@ -1,0 +1,119 @@
+[
+  {
+    "university_id": "bfa7cdcc-650a-54d9-baa6-0eaeaa6428a9",
+    "name": "Pohang University of Science and Technology",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "No fact left out with certainty. The undergraduate cost table (KRW 5,580,000 per year, 'as of 2026') does not say it applies to international students, and a note on the same page gives a conflicting first-semester figure, so it was left out. The English-test and deadline material found was graduate-only (the admissions guide PDF covers MS/PhD only). Fetches used: 2."
+  },
+  {
+    "university_id": "2eeda25f-2732-523e-b485-bab01ce33cd6",
+    "name": "Tohoku University",
+    "tuition": [],
+    "english": [
+      {
+        "kind": "TOEFL",
+        "minimum": 79,
+        "notes": "Applies to Japanese-taught programmes only (TOEFL iBT, test-date score). Gateway College (English-taught) gives no numeric minimum. Quote from summarised fetch.",
+        "source_url": "https://www.tohoku.ac.jp/en/admissions/admission_undergraduate.html",
+        "quote": "Submit a TOEFL iBT score of 79 or higher"
+      }
+    ],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Tuition table gives 535,800 yen per year with no academic year and no statement that it applies to international students, so it was left out. The admissions page gives only April and October intake periods, with no 2027 dates. Fetches used: 2."
+  },
+  {
+    "university_id": "3d2122dd-542a-5bad-94e8-33090f53f6ad",
+    "name": "Queen Mary University of London",
+    "tuition": [],
+    "english": [
+      {
+        "kind": "IELTS",
+        "minimum": 6.5,
+        "notes": "School of Economics and Finance: 6.0 in Writing, 5.5 in the other components. Programme-specific, not a general minimum. Quote from summarised fetch.",
+        "source_url": "https://qmul.ac.uk/international-students/englishlanguagerequirements/undergraduate",
+        "quote": "IELTS Academic: 6.5 overall including 6.0 in Writing, and 5.5 in Reading, Listening and Speaking."
+      },
+      {
+        "kind": "TOEFL",
+        "minimum": 92,
+        "notes": "School of Economics and Finance: 21 Writing, 18 Reading, 17 Listening, 20 Speaking. Programme-specific. Quote from summarised fetch.",
+        "source_url": "https://qmul.ac.uk/international-students/englishlanguagerequirements/undergraduate",
+        "quote": "TOEFL: 92 overall including 21 in Writing, 18 in Reading, 17 in Listening and 20 in Speaking."
+      },
+      {
+        "kind": "IELTS",
+        "minimum": 6.0,
+        "notes": "School of Mathematical Sciences: 5.5 in each component. Programme-specific. Quote from summarised fetch.",
+        "source_url": "https://qmul.ac.uk/international-students/englishlanguagerequirements/undergraduate",
+        "quote": "IELTS Academic: 6.0 overall including 5.5 in Writing, Reading, Listening and Speaking."
+      },
+      {
+        "kind": "TOEFL",
+        "minimum": 79,
+        "notes": "School of Mathematical Sciences: 17 Writing and Listening, 18 Reading, 20 Speaking. Programme-specific. Quote from summarised fetch.",
+        "source_url": "https://qmul.ac.uk/international-students/englishlanguagerequirements/undergraduate",
+        "quote": "TOEFL: 79 overall including 17 in Writing and Listening, 18 in Reading, and 20 in Speaking."
+      }
+    ],
+    "deadline": [
+      {
+        "title": "Application deadline for equal consideration (majority of Queen Mary courses)",
+        "cycle": "2027 entry",
+        "due_at": "2027-01-13",
+        "notes": "The page says this date applies to all applicants. It says international applicants have more flexible deadlines but gives no international-specific date. Quote from summarised fetch.",
+        "source_url": "https://qmul.ac.uk/undergraduate/apply/deadlines",
+        "quote": "The application deadline for equal consideration for the majority of Queen Mary courses is 13 January 2027."
+      }
+    ],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Fee amounts are in programme-page images or tables not readable as text. The only international figure found is GBP 25,500 for an integrated foundation programme, which is not standard undergraduate tuition, so it was left out. Fetches used: 3."
+  },
+  {
+    "university_id": "dce3ec59-808e-5353-8d69-da5e8e8e29fe",
+    "name": "King Saud University",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "No official English-test, fee or deadline page for international undergraduates was found. The official overseas admissions page (dar.ksu.edu.sa) gives age, SAT and diploma rules only, with no English, fee or deadline figure. Search results were third-party sites, which were not used. Fetches used: 1."
+  },
+  {
+    "university_id": "1540baf5-79f5-59ed-b687-3979b92f0aae",
+    "name": "Universität Bern",
+    "tuition": [
+      {
+        "amount": 1700,
+        "currency": "CHF",
+        "academic_year": null,
+        "period": "semester",
+        "label": "additional fee for non-Swiss students",
+        "source_url": "https://www.unibe.ch/unibe/portal/content/e1006/e7408/e20292/e175073/e1766093/Fees_fromfall2026_eng.pdf",
+        "quote": "1a* non-Swiss students pay an additional fee of CHF 1’700.-",
+        "notes": "This is a surcharge on top of the regular tuition of CHF 850 per semester, which is not reported here as a separate fact. It applies to non-Swiss students who did not have civil-law residence in Switzerland or Liechtenstein when they obtained their entrance qualification. It is not limited to non-EU students, so it may not match the non-EU definition. The page gives no academic year, only a legal basis dated 'as of November 2025'. The page's total of CHF 2,609 per semester includes a CHF 34 fee and was not reported."
+      }
+    ],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "No IELTS or TOEFL minimum and no international deadline date was found on the fetched pages. The bachelor application page links to a separate deadlines page, which was not reached. Fetches used: 3."
+  },
+  {
+    "university_id": "04cf5b15-066c-5320-848e-44bd11bb8aa8",
+    "name": "University of Qatar",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "The tuition page sets fees by course major, in QR per credit hour, with no international-specific figure, so it was left out. The competency page gives TOEFL 61 and IELTS 5.5 as Foundation Program exemption thresholds rather than undergraduate admission minimums, so it was left out. No deadline page was found. Fetches used: 2."
+  }
+]

@@ -1,0 +1,82 @@
+[
+  {
+    "university_id": "414b011a-c052-5872-b787-f47af96a0c8d",
+    "name": "Polytechnic Institute of Milan",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Fetched polimi.it tuition page (laurea programmes). It gives 2026/27 first instalment EUR 880.04 and a second instalment of EUR 0 to 3,003 that depends on ECTS and ISEE income. These apply to all enrolling students, not specifically international bachelor students, and the second instalment is income-based, so no tuition figure was reported. English requirements and deadlines not checked."
+  },
+  {
+    "university_id": "dba5fd6f-9afd-5011-aab8-7d0e6cb6ac2a",
+    "name": "Sungkyunkwan University",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Only search results were returned (skku.edu fact sheets and faculty pages). No official page was fetched. Not verified: tuition, English requirements, deadlines."
+  },
+  {
+    "university_id": "b7e728a7-1aa5-5bce-badf-5ecb3a6ec992",
+    "name": "Freie Universität Berlin",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "fu-berlin.de Fees and Funding page states: \"Freie Universität Berlin does not charge any tuition fees (except for continuing education programs)\". The page gives no year and does not separate international undergraduates, so it was not recorded as a tuition fact. Staff may want to verify and record it with a year. Semester fees are on a linked page, not checked. English requirements and deadlines not checked."
+  },
+  {
+    "university_id": "d2dff4b3-070b-59d5-a6fb-a12c7095d63b",
+    "name": "Humboldt Universität Berlin",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Only search results were returned. The official fees page was not fetched because the WebFetch budget ran out. Not verified: tuition, English requirements, deadlines."
+  },
+  {
+    "university_id": "5d6f8a4d-f0e1-5547-b5f3-b8115a1d29b7",
+    "name": "Hebrew University of Jerusalem",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Search results found overseas.huji.ac.il BA Degree Tuition page, but it was not fetched because the WebFetch budget ran out. Not verified: tuition, English requirements, deadlines."
+  },
+  {
+    "university_id": "9702e410-fabe-5f00-952b-3f5bcbabb5c5",
+    "name": "Southeast University",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Not searched. The WebFetch budget ran out before this university was reached. Not verified: any fact."
+  },
+  {
+    "university_id": "b186f041-f090-5f21-b68a-5b22175d4b14",
+    "name": "Osaka University",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Search found osaka-u.ac.jp Tuition Fees page (/en/campus/tuition/tuition.html), but it was not fetched because the WebFetch budget ran out. Not verified: tuition, English requirements, deadlines."
+  },
+  {
+    "university_id": "662ab476-2ba7-5439-bb0c-c7bf3f442c8d",
+    "name": "University of Basel",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Fetched unibas.ch Tuition Fees page, but the body returned only navigation. It said only that the university charges fees per the official regulation, with no amounts. Not verified: tuition, English requirements, deadlines."
+  }
+]

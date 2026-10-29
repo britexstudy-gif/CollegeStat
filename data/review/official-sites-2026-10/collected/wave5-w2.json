@@ -1,0 +1,208 @@
+[
+  {
+    "university_id": "35ce761b-adcc-5c73-8bc4-a358b418afa6",
+    "name": "Technical University of Denmark",
+    "tuition": [
+      {
+        "amount": 15000,
+        "currency": "EUR",
+        "academic_year": null,
+        "period": "year",
+        "label": null,
+        "source_url": "https://dtu.dk/english/education/undergraduate/general-engineering/admission-and-deadlines/fees-funding-and-permits",
+        "quote": "The tuition fee at DTU is €15,000 per academic year.",
+        "notes": "Non-EU/EEA bachelor fee on the BSc in General Engineering page. Academic year not stated. Quote from summarised fetch."
+      }
+    ],
+    "english": [
+      {
+        "kind": "IELTS",
+        "minimum": 6.5,
+        "notes": "IELTS Academic minimum on the BSc in General Engineering admission page. Quote from summarised fetch.",
+        "source_url": "https://dtu.dk/english/education/undergraduate/general-engineering/admission-and-deadlines/admission-requirements",
+        "quote": "IELTS Academic: Minimum 6.5 points"
+      },
+      {
+        "kind": "TOEFL",
+        "minimum": 4.5,
+        "notes": "Applies to exams taken after 21 January (new scoring). Older exams: minimum 88. Quote from summarised fetch.",
+        "source_url": "https://dtu.dk/english/education/undergraduate/general-engineering/admission-and-deadlines/admission-requirements",
+        "quote": "TOEFL iBT (including Home and Paper Editions): Minimum score 88 or 4.5 (for exams taken after the 21st of January)"
+      }
+    ],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "No 2027 international application deadline found. The only international date (15 March) is an application-fee deadline and the page does not tie it to 2027. Fee and English values come from summarised fetches, so quotes may not be verbatim."
+  },
+  {
+    "university_id": "ea07bd5a-d5e8-59b9-bfd9-600587605f25",
+    "name": "Universidade de São Paulo",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "NOT FOUND. Pages read: the USP international portal (www5.usp.br/?p=425) states nothing on undergraduate fees; search results gave no English-test requirement or international 2027 undergraduate deadline (Fuvest 2027 registration already closed). 1 WebFetch used."
+  },
+  {
+    "university_id": "ed5b15cb-d889-50df-941c-4764af80621d",
+    "name": "University of Helsinki",
+    "tuition": [
+      {
+        "amount": 13000,
+        "currency": "EUR",
+        "academic_year": null,
+        "period": "year",
+        "label": null,
+        "source_url": "https://www.helsinki.fi/en/studying/tuition-fees",
+        "quote": "The fee for the English-language bachelor's programmes is 13,000 EUR per academic year.",
+        "notes": "Non-EU/EEA students in English-taught bachelor's programmes. The fee sentence does not name a year. Quote from summarised fetch."
+      }
+    ],
+    "english": [
+      {
+        "kind": "IELTS",
+        "minimum": 6.5,
+        "notes": "Overall 6.5 with a minimum of 6.0 in all sections; general requirement. Quote from summarised fetch.",
+        "source_url": "https://www.helsinki.fi/en/admissions-and-education/apply-bachelors-and-masters-programmes/apply-bachelors-programmes/proving-your-english-language-skills",
+        "quote": "Overall score 6.5, with a minimum score of 6.0 in all the sections."
+      },
+      {
+        "kind": "TOEFL",
+        "minimum": 4.5,
+        "notes": "For tests taken on or after 21.1.2026 (new scale): minimum 4 in all sections. Earlier tests: 92 with writing minimum 22. Quote from summarised fetch.",
+        "source_url": "https://www.helsinki.fi/en/admissions-and-education/apply-bachelors-and-masters-programmes/apply-bachelors-programmes/proving-your-english-language-skills",
+        "quote": "TOEFL iBT (Internet-based) 4.5, a minimum score of 4 in all the sections."
+      }
+    ],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "No 2027 bachelor application deadline found on the pages read (only January 2027 joint-application pages surfaced). Quotes from summarised fetches."
+  },
+  {
+    "university_id": "a002ead6-250c-572d-8773-015f9419b016",
+    "name": "Stockholm University",
+    "tuition": [
+      {
+        "amount": 90000,
+        "currency": "SEK",
+        "academic_year": null,
+        "period": "year",
+        "label": "minimum",
+        "source_url": "https://www.su.se/english/education/how-to-apply/costs-fees-and-scholarships",
+        "quote": "The price per academic year for studies within the Humanities/Social Sciences/Law is SEK 90,000",
+        "notes": "Subject-area price for first- or second-cycle education. The page gives no separate bachelor's figure and says some programmes have special prices in the range SEK 90,000-140,000. Academic year not stated. Quote from summarised fetch."
+      },
+      {
+        "amount": 140000,
+        "currency": "SEK",
+        "academic_year": null,
+        "period": "year",
+        "label": "maximum",
+        "source_url": "https://www.su.se/english/education/how-to-apply/costs-fees-and-scholarships",
+        "quote": "within the Sciences SEK 140,000",
+        "notes": "Subject-area price for Sciences, first- or second-cycle education. See minimum entry for caveats. Quote from summarised fetch."
+      }
+    ],
+    "english": [],
+    "deadline": [
+      {
+        "title": "First admissions round, autumn semester 2027",
+        "cycle": "2027 entry",
+        "due_at": "2027-01-15",
+        "notes": "Page says international students are encouraged to use the first round. No separate bachelor's or non-EU date is listed.",
+        "source_url": "https://www.su.se/english/education/how-to-apply/important-dates",
+        "quote": "15 January 2027 | Application deadline at midnight CET"
+      }
+    ],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "English: the page only requires proof of English equivalent to Swedish upper secondary English 6 and gives no IELTS or TOEFL minimum, so nothing was reported. Quotes from summarised fetches."
+  },
+  {
+    "university_id": "ee15105c-6920-52e8-b1a5-c526c7a233ab",
+    "name": "Nagoya University",
+    "tuition": [
+      {
+        "amount": 535800,
+        "currency": "JPY",
+        "academic_year": null,
+        "period": "year",
+        "label": null,
+        "source_url": "https://admissions.g30.nagoya-u.ac.jp/upload/2027_admission_requirements_en.pdf",
+        "quote": "Annual tuition (total of first and second semester payments): JPY 535,800",
+        "notes": "Global 30 International Programs (English-taught undergraduate), 2027 October intake; page says subject to change. Academic year not stated. Quote from summarised PDF fetch. The general undergraduate table gives JPY 267,900 per semester for all undergraduates and is not international-specific, so it was not used."
+      }
+    ],
+    "english": [
+      {
+        "kind": "IELTS",
+        "minimum": 6.0,
+        "notes": "Academic overall band score for Global 30 International Programs. Quote from summarised PDF fetch.",
+        "source_url": "https://admissions.g30.nagoya-u.ac.jp/upload/2027_admission_requirements_en.pdf",
+        "quote": "IELTS (Academic Module): Overall band score of 6.0"
+      },
+      {
+        "kind": "TOEFL",
+        "minimum": 4.0,
+        "notes": "Post-January 2026 scoring system; the pre-January 2026 minimum is 80. Global 30 International Programs. Quote from summarised PDF fetch.",
+        "source_url": "https://admissions.g30.nagoya-u.ac.jp/upload/2027_admission_requirements_en.pdf",
+        "quote": "TOEFL iBT: Overall score of 80 (PreJanuary 2026 scoring system) or 4.0 (Post-January 2026 scoring system)"
+      }
+    ],
+    "deadline": [
+      {
+        "title": "Global 30 International Programs, first round",
+        "cycle": "2027 entry",
+        "due_at": "2026-11-19",
+        "notes": "Global 30 programme dates, not the general undergraduate schedule, which was not checked. Second round is due 2027-01-21.",
+        "source_url": "https://admissions.g30.nagoya-u.ac.jp/upload/2027_admission_requirements_en.pdf",
+        "quote": "First Round: November 19, 2026, 12:00 noon (JST)"
+      },
+      {
+        "title": "Global 30 International Programs, second round",
+        "cycle": "2027 entry",
+        "due_at": "2027-01-21",
+        "notes": "Global 30 programme dates. Quote from summarised PDF fetch.",
+        "source_url": "https://admissions.g30.nagoya-u.ac.jp/upload/2027_admission_requirements_en.pdf",
+        "quote": "Second Round: January 21, 2027, 12:00 noon (JST)"
+      }
+    ],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Facts above come from the Global 30 International Programs requirements PDF, not a general undergraduate page. Quotes from a summarised PDF fetch."
+  },
+  {
+    "university_id": "98208ca6-3d01-5ce9-b57c-d1724f5ebdab",
+    "name": "Tongji University",
+    "tuition": [
+      {
+        "amount": 20000,
+        "currency": "CNY",
+        "academic_year": null,
+        "period": "year",
+        "label": "minimum",
+        "source_url": "https://www.tongji.edu.cn/eng/Admissions/Undergraduate/Tuition_Fees.htm",
+        "quote": "Liberal Arts (Chinese-taught): CNY 20,000/Year",
+        "notes": "Lowest listed international undergraduate fee. Academic year not defined on the page. Insurance of CNY 800/Year is payable on registration, separately. Quote from summarised fetch."
+      },
+      {
+        "amount": 45000,
+        "currency": "CNY",
+        "academic_year": null,
+        "period": "year",
+        "label": "maximum",
+        "source_url": "https://www.tongji.edu.cn/eng/Admissions/Undergraduate/Tuition_Fees.htm",
+        "quote": "Medicine (English-taught): CNY 45,000/Year",
+        "notes": "Highest listed international undergraduate fee. Academic year not defined on the page. Quote from summarised fetch."
+      }
+    ],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "No application deadline for 2027 entry and no English test requirement found on the pages read (application page gives no date; updates page lists only non-degree/exchange dates). 3 WebFetch calls used."
+  }
+]

@@ -1,0 +1,92 @@
+[
+  {
+    "university_id": "05d89845-ecbf-5ed5-af2a-0e599223fa29",
+    "name": "Suzhou University",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Ran out of WebFetch budget before reading the fee or admission pages. The fees page (apply.international.suda.edu.cn/apply_en/28031/list.htm) was refused by robots.txt. Search snippets only showed page titles, so nothing was verified. Not checked: 2026-2027 application notice, English requirements, deadline."
+  },
+  {
+    "university_id": "bfa7cdcc-650a-54d9-baa6-0eaeaa6428a9",
+    "name": "Pohang University of Science and Technology",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Scholarship page (postech.ac.kr/eng/admission-aid/scholarship_information.do) says 'All admitted international students at POSTECH receive full scholarships upon enrollment' but gives no tuition amount or explicit zero tuition, so nothing was reported. No English-proficiency minimum was found on the page read. WebFetch budget ran out before the undergraduate admissions guide could be read."
+  },
+  {
+    "university_id": "2eeda25f-2732-523e-b485-bab01ce33cd6",
+    "name": "Tohoku University",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Fee page (tohoku.ac.jp/en/admissions/tutition_fees.html) shows 'Undergraduate | 17,000 yen | | 282,000 yen | 535,800 yen (per year)' but states no academic year, so it was left out as unclear. The page does not give the year and refers to FY 2026 only in general. English requirements and deadline pages were not read because WebFetch budget ran out."
+  },
+  {
+    "university_id": "3d2122dd-542a-5bad-94e8-33090f53f6ad",
+    "name": "Queen Mary University of London",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Fees page (qmul.ac.uk/undergraduate/feesandfunding/tuitionfees/) says 'Fees for international students vary depending on the course.' and gives no single figure. Only £25,500 for 2026-27 integrated foundation degrees was found, which is not a standard undergraduate degree fee, so it was left out. English requirements page (qmul.ac.uk/international-students/englishlanguagerequirements/undergraduate-and-postgraduate-programmes/) was not read because WebFetch budget ran out."
+  },
+  {
+    "university_id": "39a0a410-8dec-5d39-bba7-99eb9fd534c4",
+    "name": "Lomonosov Moscow State University",
+    "tuition": [
+      {
+        "amount": 539070,
+        "currency": "RUB",
+        "academic_year": "2025/26",
+        "period": "year",
+        "label": null,
+        "source_url": "https://ftv.msu.ru/abitur/for-foreigners.php",
+        "quote": "the tuition fee was 539 070 (five hundred thirty nine thousand and seventy) rubles per year."
+      }
+    ],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "The for-foreigners page gives the undergraduate tuition for foreign applicants. The page names no IELTS or TOEFL minimum; its only language requirement is an interview ('July 15 - Russian (interview for foreign applicants)'), so english is empty. Deadline and public/private status not found. WebFetch budget ran out before further pages were read."
+  },
+  {
+    "university_id": "dce3ec59-808e-5353-8d69-da5e8e8e29fe",
+    "name": "King Saud University",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "The overseas admission page (dar.ksu.edu.sa/en/overseas) gives no tuition fee or English minimum. The page's fee text was only a note that fees are paid after nomination in an 'announced confirmation period'. Search results gave no English-proficiency figure. WebFetch budget ran out before the FAQ page could be read."
+  },
+  {
+    "university_id": "1540baf5-79f5-59ed-b687-3979b92f0aae",
+    "name": "Universität Bern",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Fees page (unibe.ch/studies/organizational_matters/renewal_of_semester_registration/fees/index_eng.html) lists 'CHF 1,700 per semester, in addition to the regular tuition fee' for non-Swiss students. This is a surcharge rather than the tuition fee, and the regular tuition amount was not found, so nothing was reported. Bachelor application page and public/private status were not read because WebFetch budget ran out."
+  },
+  {
+    "university_id": "04cf5b15-066c-5320-848e-44bd11bb8aa8",
+    "name": "University of Qatar",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Tuition page (qu.edu.qa/en-us/students/admission/undergraduate/Pages/tuition-fees.aspx) gives per-credit-hour rates in QAR, for example 1,200 per credit hour for Arts, Education and Law, and 1,400 for Business and Sciences. These are not annual figures and the page does not say they apply only to international students, so nothing was reported. College requirements page (English proficiency) was not read because WebFetch budget ran out."
+  }
+]

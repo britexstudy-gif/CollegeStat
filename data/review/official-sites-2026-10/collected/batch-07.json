@@ -1,0 +1,101 @@
+[
+  {
+    "university_id": "f9909941-87f9-55cd-bcb7-7c9301d50851",
+    "name": "Sun Yat-Sen University",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Only fee table found was on sti.sysu.edu.cn/en/node/387, dated 2015-11-24 (RMB 23,000-48,000 per year), so it is not for 2025/26 or 2026/27 and was left out. No IELTS/TOEFL, deadline or type found. WebFetch budget ran out before the 2026 guidelines page (sysu.edu.cn/sysuen/info/2971/58231.htm) could be read."
+  },
+  {
+    "university_id": "72d90170-c326-5377-8295-5226875a04a1",
+    "name": "King Fahad University of Petroleum and Minerals",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "kfupm.edu.sa/study/international-students/fees-and-scholarships states: \"As an international student living outside Saudi Arabia, your tuition fees are waived.\" It gives no currency or academic year, so it was not reported as a tuition value. No IELTS/TOEFL, deadline or type found. WebFetch budget ran out before the admissions pages could be read."
+  },
+  {
+    "university_id": "6941fb87-c482-5aa1-9f3c-a5de7cf736dc",
+    "name": "University of Auckland",
+    "tuition": [
+      {
+        "amount": 40225,
+        "currency": "NZD",
+        "academic_year": "2026",
+        "period": "year",
+        "label": "minimum",
+        "source_url": "https://auckland.ac.nz/en/study/fees-and-money-matters/tuition-fees/undergraduate-international-fees.html",
+        "quote": "Bachelor of Arts (except performance and science-based courses) | NZ$40,225"
+      },
+      {
+        "amount": 86561,
+        "currency": "NZD",
+        "academic_year": "2026",
+        "period": "year",
+        "label": "maximum",
+        "source_url": "https://auckland.ac.nz/en/study/fees-and-money-matters/tuition-fees/undergraduate-international-fees.html",
+        "quote": "Bachelor of Medicine and Bachelor of Surgery - Year 2 onwards (for Year 1 see Bachelor of Health Sciences) | NZ$86,561"
+      }
+    ],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Tuition values come from the 2026 estimated-fees table on the page; the year is taken from the table heading and the quotes are table rows as returned by the fetch, so staff should check them against the live page. No IELTS/TOEFL or deadline was read: the 2027 English requirements PDF (auckland.ac.nz/assets/study/applications-and-admissions/entry-requirements/undergraduate-entry-requirements/undergraduate-english-language-requirements/2027-Undergraduate-English-language-requirements.pdf) was found in search but WebFetch budget ran out before it could be read."
+  },
+  {
+    "university_id": "4257293d-ae04-50f0-a670-a46ee48a8e44",
+    "name": "Universität Zürich",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "uzh.ch/en/studies/application/fees.html lists only a per-semester surcharge of 500 CHF for foreign bachelor students (base fee 720 CHF per semester). That is not stated as annual international tuition, so it was left out. No language requirement, deadline or type found. WebFetch budget ran out before the language requirements page could be read."
+  },
+  {
+    "university_id": "bb32340f-54ba-5885-82ba-4ae645d93930",
+    "name": "Korea Advanced Institute of Science & Technology",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Not researched: WebFetch budget ran out (proxy limit of 100 per hour shared by all agents) before this university was reached. Nothing reported."
+  },
+  {
+    "university_id": "1fdfdef5-4d20-57c0-95ee-663973bb97b2",
+    "name": "Wageningen University & Research",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Not researched: WebFetch budget ran out before this university was reached. Nothing reported."
+  },
+  {
+    "university_id": "8e191d89-10ba-5f03-913b-836c9c7194a0",
+    "name": "Université Paris-Saclay",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Not researched: WebFetch budget ran out before this university was reached. Nothing reported."
+  },
+  {
+    "university_id": "4b7a7f67-a5fa-5660-a95b-87588748c8e4",
+    "name": "University of Warwick",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Not researched: WebFetch budget ran out before this university was reached. Nothing reported."
+  }
+]

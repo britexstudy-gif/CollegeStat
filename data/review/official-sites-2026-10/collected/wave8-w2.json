@@ -1,0 +1,108 @@
+[
+  {
+    "university_id": "d811ecca-3f36-56dc-a1ac-c1de1544955b",
+    "name": "Universidad Complutense de Madrid",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "NOT FOUND: annual international undergraduate tuition. The precios-de-grado page gives only per-ECTS fourth-enrolment prices (non-resident, non-EU, over 18), which are not an annual figure, so not reported. No English requirement or 2027 international deadline found on the pages read. Fetches used: 3."
+  },
+  {
+    "university_id": "89e1ba5b-fd4e-5292-ab10-dc8500e7f29f",
+    "name": "University of Calgary",
+    "tuition": [],
+    "english": [
+      {
+        "kind": "IELTS",
+        "minimum": 6.5,
+        "notes": "Academic overall score; no component minimums stated. Quote from summarised fetch. TOEFL not reported: the page lists 86 for tests before 21 Jan 2026 and 4.5 for later tests, and 4.5 looks like an error, so staff should check.",
+        "source_url": "https://www.ucalgary.ca/future-students/undergraduate/admissions/how-to-apply/english-language-requirements",
+        "quote": "IELTS (academic) – 6.5"
+      }
+    ],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "NOT FOUND: annual international undergraduate tuition. Calendar P.1.1 and discover pages give no annual international amount (the page says only that international students pay 'the international rate'). Deadline page redirected to an unrelated non-university domain, so it was not followed. Fetches used: 4."
+  },
+  {
+    "university_id": "3b62e054-9fa1-582f-9a31-55f9e392c385",
+    "name": "Deakin University",
+    "tuition": [],
+    "english": [
+      {
+        "kind": "IELTS",
+        "minimum": 6.0,
+        "notes": "Overall score, no band below 6.0. Taken from the Bachelor of Science for international students course page, so it is course-specific and may vary by programme. Quote from summarised fetch.",
+        "source_url": "https://www.deakin.edu.au/course/bachelor-science-international",
+        "quote": "IELTS overall score of 6.0 (with no band score less than 6.0) or equivalent"
+      }
+    ],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "NOT FOUND: annual international undergraduate tuition (course pages show no dollar amount or only 2025 estimates). The general English requirements page and the Bachelor of Business course page could not be fetched (client error). Key-dates pages show no 2027 undergraduate international closing date. Fetches used: 4."
+  },
+  {
+    "university_id": "474dac6f-db67-501b-b2f6-ba59aed7dbea",
+    "name": "Queensland University of Technology",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "NOT REPORTED: the 2027 international quick guide shows bachelor fees in A$ in a table, with a footnote that the fees are 'per year as shown in Australian dollars', but the summarised fetch gave no quotable figure containing the value, so nothing was reported. The guide also shows IELTS 6.5 for most bachelor courses in a table footnote, but no quotable sentence containing 6.5 was retrieved. No 2027 undergraduate international closing date found on the key-dates pages (only July 2026 start dates). Fetches used: 4 (one failed)."
+  },
+  {
+    "university_id": "b544b3bb-c8b8-54da-9086-18baf5a73672",
+    "name": "United Arab Emirates University",
+    "tuition": [],
+    "english": [
+      {
+        "kind": "TOEFL",
+        "minimum": 61,
+        "notes": "iBT 61 (the page also gives TOEFL 500 for paper-based). From the International Student Admission Requirements for Undergraduate Programs document. Quote from summarised fetch.",
+        "source_url": "https://www.uaeu.ac.ae/en/docs/admisssionpolicyinternationalstudents1.pdf",
+        "quote": "Applicants should have achieved scores of TOEFL 500/ iBT 61;Or IELTS 5.0"
+      },
+      {
+        "kind": "IELTS",
+        "minimum": 5.0,
+        "notes": "Alternative to the TOEFL minimum on the same line of the undergraduate international admission document. Quote from summarised fetch.",
+        "source_url": "https://www.uaeu.ac.ae/en/docs/admisssionpolicyinternationalstudents1.pdf",
+        "quote": "Applicants should have achieved scores of TOEFL 500/ iBT 61;Or IELTS 5.0"
+      }
+    ],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "NOT REPORTED: tuition. The international undergraduate fee table has garbled headers and no stated currency, so nothing was reported. No undergraduate 2027 deadline found: the admission deadlines page covers graduate programmes only. Fetches used: 3."
+  },
+  {
+    "university_id": "d9597e4a-75a9-5440-9902-e40d6ef03f13",
+    "name": "Hong Kong Baptist University",
+    "tuition": [],
+    "english": [
+      {
+        "kind": "IELTS",
+        "minimum": 6.0,
+        "notes": "Academic module. From the General Entrance Requirements for Undergraduate Programmes page of the 2025-2026 calendar. Quote from summarised fetch.",
+        "source_url": "https://calendar.ar.hkbu.edu.hk/2025-2026/admission-of-students/undergraduate-admissions/general-entrance-requirements-ug",
+        "quote": "Minimum score of 6.0 in International English Language Testing System (IELTS), Academic Level"
+      },
+      {
+        "kind": "TOEFL",
+        "minimum": 79,
+        "notes": "iBT 79 (paper-delivered 60). TOEFL MyBest scores not accepted. From the same 2025-2026 calendar page. Quote from summarised fetch.",
+        "source_url": "https://calendar.ar.hkbu.edu.hk/2025-2026/admission-of-students/undergraduate-admissions/general-entrance-requirements-ug",
+        "quote": "Minimum score of 60 (paper-delivered test) or 79 (internet-based test (iBT®)"
+      }
+    ],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "NOT REPORTED: the page gives 'Non-local students: HK$240,000' but only for 2027/28, which is outside the 2025/26 or 2026/27 scope, so it was left out. The 2026-27 self-funded range (HKD89,100 to HKD117,810 per year) is not stated as applying to non-local students, so it was left out. Fetches used: 3."
+  }
+]

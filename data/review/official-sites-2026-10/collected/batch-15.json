@@ -1,0 +1,92 @@
+[
+  {
+    "university_id": "6bb7e28d-2e25-5601-995b-224c09630410",
+    "name": "Southern University of Science and Technology",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Official page global.sustech.edu.cn/en/international_students fetched: no tuition, English requirement, deadline or public/private status stated (only a scholarship sentence). Tuition search returned no official page with figures. Not verified: tuition, English, deadline. Run stopped early: WebFetch session budget exhausted (proxy 403)."
+  },
+  {
+    "university_id": "07277532-423a-5f50-815a-c8cc190fdd80",
+    "name": "Technion - Israel Institute of Technology",
+    "tuition": [
+      {
+        "amount": 15254,
+        "currency": "ILS",
+        "academic_year": "2026/27",
+        "period": "year",
+        "label": "single",
+        "source_url": "https://int.technion.ac.il/programs/bsc-in-engineering-1st-year-in-english/costs/",
+        "quote": "Non-citizens: 15,254 NIS*"
+      }
+    ],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Tuition is for 'non-citizens' (the page does not use the term 'international students'); a separate lower rate applies to new immigrants, not reported. The footnote on the page says the fees are for 2026-27 and will be updated for 2027-28. Quote is the fragment as returned by the fetch; verify it on the page before use. English requirement, deadline and public/private status not found on the page fetched. Run stopped early: WebFetch session budget exhausted (proxy 403)."
+  },
+  {
+    "university_id": "d9f134b2-b651-5a68-bacd-32e41dfe8c83",
+    "name": "Nankai University",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Only search results were seen; no official page with tuition, English requirement, deadline or type was opened. Run stopped early: WebFetch session budget exhausted (proxy 403)."
+  },
+  {
+    "university_id": "a96bb2a1-a48d-55fa-8c98-4a3e716e380e",
+    "name": "South China University of Technology",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Official sie.scut.edu.cn fees page fetched: it has no fee amounts, English requirement or deadline. Other official pages were not opened. Run stopped early: WebFetch session budget exhausted (proxy 403)."
+  },
+  {
+    "university_id": "b86e106a-7e3d-534d-9f61-d111d5a49dfa",
+    "name": "Beijing University of Aeronautics and Astronautics",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Not checked: WebFetch session budget exhausted (proxy 403) before this university was reached."
+  },
+  {
+    "university_id": "2e2fd0e8-4ad8-54ef-bf66-74a5ee18876e",
+    "name": "Université de Strasbourg",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Not checked: WebFetch session budget exhausted (proxy 403) before this university was reached."
+  },
+  {
+    "university_id": "5c500bb8-70b8-59a4-8e57-9329a2c38f2f",
+    "name": "Jilin University",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Not checked: WebFetch session budget exhausted (proxy 403) before this university was reached."
+  },
+  {
+    "university_id": "15ff9275-1c2a-5820-9bab-4da296371714",
+    "name": "Albert-Ludwigs-Universität Freiburg",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Not checked: WebFetch session budget exhausted (proxy 403) before this university was reached."
+  }
+]

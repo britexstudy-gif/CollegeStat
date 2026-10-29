@@ -1,0 +1,119 @@
+[
+  {
+    "university_id": "271dbaa2-9f49-59ac-8bf8-e8c7a604c2ae",
+    "name": "Beijing Normal University",
+    "tuition": [
+      {
+        "amount": 24000,
+        "currency": "CNY",
+        "academic_year": null,
+        "period": "year",
+        "label": "minimum",
+        "source_url": "https://admission-is.bnu.edu.cn/english/faq/faq22/bk22/index.html",
+        "quote": "Humanities and Social Sciences majors: ￥12400 /semester, and ￥24000/ year;",
+        "notes": "Currency shown as yen sign (￥) on the Chinese official site, read as RMB. Academic year not stated on the page. Quote from summarised fetch. Same figure appears in the 2025 international brochure (international.bnu.edu.cn/user/sysNews/detail/18), which also gives no academic year."
+      },
+      {
+        "amount": 27700,
+        "currency": "CNY",
+        "academic_year": null,
+        "period": "year",
+        "label": "maximum",
+        "source_url": "https://admission-is.bnu.edu.cn/english/faq/faq22/bk22/index.html",
+        "quote": "Science, Engineering and Art majors: ￥14250 / semester, and ￥27700/ year.",
+        "notes": "Currency shown as yen sign (￥) on the Chinese official site, read as RMB. Academic year not stated on the page. Quote from summarised fetch."
+      }
+    ],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Tuition found on two BNU pages, neither states an academic year. No IELTS/TOEFL minimum for undergraduates found (the page lists HSK Level 5 with score 180 for most majors). No 2027-entry deadline found; the brochure covers 2025 entry only. Type not stated. Fetch budget used: 2."
+  },
+  {
+    "university_id": "613ea0c5-bd28-521a-b255-306fcb8448e3",
+    "name": "Beijing Institute of Technology",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "NOT FOUND: the fee page fetched (isc.bit.edu.cn/admissionsaid/financialaid/tuitionfee/b112918.htm) is for PhD students and has no fee amounts. The undergraduate index page fetched had no figures. The only RMB fee figures seen were for a preparatory programme (2019 dates) and were excluded. No English requirement or deadline found. Fetch budget used: 2."
+  },
+  {
+    "university_id": "6f703309-82ad-5bd4-8075-969d78edb967",
+    "name": "Shandong University",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "NOT FOUND: the only tuition figure found (22000 RMB/year) belongs to a preparatory programme and no academic year was stated, so it was excluded. Scholarship amounts were not reported as tuition. No English requirement or deadline found on the pages checked. Fetch budget used: 1."
+  },
+  {
+    "university_id": "1e9ebf95-a619-5502-ad17-10055b5d49ba",
+    "name": "Xiamen University",
+    "tuition": [
+      {
+        "amount": 24000,
+        "currency": "CNY",
+        "academic_year": null,
+        "period": "year",
+        "label": "minimum",
+        "source_url": "https://admissions.xmu.edu.cn/Admissions/Undergraduate_Students.htm",
+        "quote": "Humanities: RMB 24,000/year.",
+        "notes": "Chinese-medium humanities programmes. Academic year not stated. Quote from summarised fetch. Page says tuition is payable in RMB by academic year."
+      },
+      {
+        "amount": 26000,
+        "currency": "CNY",
+        "academic_year": null,
+        "period": "year",
+        "label": "maximum",
+        "source_url": "https://admissions.xmu.edu.cn/Admissions/Undergraduate_Students.htm",
+        "quote": "Science, Engineering, Medicine, Economics, Management, Law, Arts... RMB 26,000/year.",
+        "notes": "Chinese-medium programmes. Academic year not stated. Quote from summarised fetch and abbreviated with an ellipsis."
+      }
+    ],
+    "english": [
+      {
+        "kind": "TOEFL",
+        "minimum": 80,
+        "notes": "TOEFL iBT overall minimum for English-medium programmes; general minimum as stated. Quote from summarised fetch.",
+        "source_url": "https://admissions.xmu.edu.cn/Admissions/Undergraduate_Students.htm",
+        "quote": "TOEFL iBT Certificate: an overall minimum score of 80"
+      },
+      {
+        "kind": "IELTS",
+        "minimum": 6.0,
+        "notes": "IELTS Academic overall minimum for English-medium programmes; general minimum as stated. Quote from summarised fetch.",
+        "source_url": "https://admissions.xmu.edu.cn/Admissions/Undergraduate_Students.htm",
+        "quote": "an IELTS Academic Certificate: an overall minimum score of 6.0"
+      }
+    ],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Application timeline on the same page is garbled in the fetch (dates cannot be reliably paired with 2027 entry), so no deadline was reported. Type not stated on pages checked. Fetch budget used: 2."
+  },
+  {
+    "university_id": "6bb7e28d-2e25-5601-995b-224c09630410",
+    "name": "Southern University of Science and Technology",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "NOT FOUND: the international students page says only that SUSTech offers full scholarships covering tuition; no fee amount. The scholarship page gives tuition waiver amounts (RMB 30,000 per year), which are scholarship values, not fees, so they were excluded. No English requirement or deadline found. Fetch budget used: 2."
+  },
+  {
+    "university_id": "d9f134b2-b651-5a68-bacd-32e41dfe8c83",
+    "name": "Nankai University",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "NOT FOUND: the official page fetched gives IELTS 6.0 / TOEFL 85 only for English-taught programmes in a PhD-oriented notice, so it was excluded as not undergraduate. Its deadlines are for the 2024-2025 cycle and were excluded. Undergraduate programme pages on the official domain were not fetched within budget. Fetch budget used: 1."
+  }
+]

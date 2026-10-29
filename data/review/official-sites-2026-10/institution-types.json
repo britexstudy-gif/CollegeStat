@@ -1,0 +1,18 @@
+[
+ {
+  "university_id": "3dbd05f9-ee8b-5bda-b461-f1c4bf152698",
+  "university_type": "public",
+  "source_url": "https://www.york.ac.uk/about/",
+  "quote": "The University was created by Royal Charter and is a public higher education institution and exempt charity in England.",
+  "verification_status": "needs_review",
+  "collected_at": "2026-10-29"
+ },
+ {
+  "university_id": "0949633f-4123-57e8-8e3d-8b762d4a588d",
+  "university_type": "private",
+  "source_url": "https://www.adu.ac.ae/about-adu/our-profile1/our-profile",
+  "quote": "We are a private, multi-campus university",
+  "verification_status": "needs_review",
+  "collected_at": "2026-10-29"
+ }
+]

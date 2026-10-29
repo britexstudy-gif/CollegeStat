@@ -1,0 +1,109 @@
+[
+  {
+    "university_id": "b865e086-9fba-5fd2-8b1f-9be60d97baf4",
+    "name": "Universiti Sains Malaysia",
+    "tuition": [
+      {
+        "amount": 1562.5,
+        "currency": "USD",
+        "academic_year": null,
+        "period": "semester",
+        "label": "minimum",
+        "source_url": "https://admission.usm.my/images/00uginternational/fee_2025/UNDERGRADUATE_INTERNATIONAL_TUITION_FEES_PER_SEMESTER.pdf",
+        "quote": "3 US6212001 - BACHELOR OF MUSIC WITH HONOURS 1,562.50",
+        "notes": "Per-semester fee from the 'UNDERGRADUATE TUITION FEES (PER SEMESTER)' table, column 'NON-CITIZEN / USD'. Academic year not stated in the document (file path says fee_2025); left null. Quote from summarised fetch. Medical programmes in the same table (Doctor of Medicine 13,750.00; Doctor of Dental Surgery 11,250.00) were not used as the undergraduate range; offshore International Medical Programme listed at 10,000.00 with no undergraduate label."
+      },
+      {
+        "amount": 3125,
+        "currency": "USD",
+        "academic_year": null,
+        "period": "semester",
+        "label": "maximum",
+        "source_url": "https://admission.usm.my/images/00uginternational/fee_2025/UNDERGRADUATE_INTERNATIONAL_TUITION_FEES_PER_SEMESTER.pdf",
+        "quote": "8 US6526001 - BACHELOR OF SCIENCE IN QUANTITY SURVEYING WITH HONOURS 3,125.00",
+        "notes": "Per-semester, USD, academic year not stated (left null). Quote from summarised fetch; the same value also appears on the Architecture line."
+      }
+    ],
+    "english": [
+      {
+        "kind": "IELTS",
+        "minimum": 5.0,
+        "notes": "General requirement, undergraduate international (overall band). Quote from summarised fetch. Programme-specific requirements not checked.",
+        "source_url": "https://admission.usm.my/index.php/undergraduate/undergraduate-international",
+        "quote": "IELTS/IELTS Online minimum Band 5.0"
+      },
+      {
+        "kind": "TOEFL",
+        "minimum": 40,
+        "notes": "General requirement, undergraduate international (iBT total). Quote from summarised fetch.",
+        "source_url": "https://admission.usm.my/index.php/undergraduate/undergraduate-international",
+        "quote": "TOEFL iBT minimum score of 40"
+      }
+    ],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Tuition found only in a per-semester PDF with no academic year stated. The fee PDF is USD for non-citizens; no deadline found for international applicants for 2027 entry. Used 3 WebFetch calls. The fee-ugi page itself states no amounts."
+  },
+  {
+    "university_id": "f68b940c-61ed-5be0-96e9-d70422a3f8bf",
+    "name": "Indian Institute of Technology, Bombay",
+    "tuition": [
+      {
+        "amount": 328250,
+        "currency": "INR",
+        "academic_year": "2025/26",
+        "period": "semester",
+        "label": null,
+        "source_url": "https://acad.iitb.ac.in/ug-new-entrants-fees",
+        "quote": "Academic fees for the Autumn Semester 2025-26 ... 3,28,250/-",
+        "notes": "Foreign nationals, Autumn Semester 2025-26 academic fees, same figure across the JEE (Advanced), INMO and UCEED admission routes. Page says the fee structure is subject to revision. Page is for UG new entrants, not B.Tech specifically. Quote from summarised fetch (quote joins two separate lines of the page). Foreign nationals with PIO/OCI cards issued before 04/03/2021 pay Indian fees (not applicable here)."
+      }
+    ],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Foreign-national fee found on the UG new-entrants fees page. The IITB foreign-nationals fee structure PDF returned a client error and was not read. No English test requirement or 2027 international deadline found on official pages. Used 2 WebFetch calls."
+  },
+  {
+    "university_id": "d6b0bfe8-2f2e-5a31-8c8d-97a2c3c31ac2",
+    "name": "Maastricht University",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "NOT FOUND: fetched pages (international-business tuition fees, general tuition fees, psychology admission requirements) returned only navigation text and were truncated before the fee and admission sections. Used 4 WebFetch calls, the full budget."
+  },
+  {
+    "university_id": "cf17178b-4486-5b1c-84d1-1ef2b3ac9e37",
+    "name": "Universiti Putra Malaysia",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Per-semester bachelor tuition in MYR is in a bursar PDF (file name says International), but the document states no academic year and does not explicitly say it applies to international students, so it was left out. The how-to-apply page and the international booklet were blocked by robots.txt. Used 3 WebFetch calls."
+  },
+  {
+    "university_id": "79f39470-8afd-51a9-b34d-4c1c5c988195",
+    "name": "Universidad Nacional Autónoma de México",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "NOT FOUND: the international exchange blog lists only visitor-student fees (USD 250 registration, USD 275 per subject) with no academic year and no undergraduate tuition. Its language requirement is SIELE or DELE B2, not IELTS or TOEFL. No 2027 international deadline found. Used 1 WebFetch call."
+  },
+  {
+    "university_id": "a6433838-97ca-5280-ac8a-2273fb8bab01",
+    "name": "University of Exeter",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "International fee table found on the fees page is for autumn 2027 entry, outside the 2025/26 to 2026/27 window, so it was left out. The key-dates page gives only UK/UCAS deadlines, not an international deadline, so none was reported. English requirements are per-course profiles and no single undergraduate minimum was found. Used 3 WebFetch calls."
+  }
+]

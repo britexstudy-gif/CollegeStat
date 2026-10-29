@@ -1,0 +1,159 @@
+[
+  {
+    "university_id": "21e26f0d-fd30-521e-a9f3-fb97b8452d78",
+    "name": "University of Roma \"La Sapienza\"",
+    "tuition": [
+      {
+        "amount": 1000,
+        "currency": "EUR",
+        "academic_year": null,
+        "period": "year",
+        "label": null,
+        "source_url": "https://www.uniroma1.it/sites/default/files/field_file_allegati/internationaladmissions_web.pdf",
+        "quote": "The annual cost for all Bachelors and Masters programmes is €1000 (only tuition fees)."
+      }
+    ],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Tuition figure is from the International Admissions PDF; academic year not stated on the page, so null. The quote came from a summarised fetch. Another Sapienza page (https://www.uniroma1.it/it/pagina/international-admissions-2026-2027) says full tuition for Bachelor's and Master's is EUR 300-1500/year according to country of residence, with no academic year stated; not reported because the range is by residence, not programme. English requirement not found on pages read. The only deadlines shown are for 2026/27 and have passed. Fetch budget used: 3."
+  },
+  {
+    "university_id": "808b96a5-0e59-5215-a2f5-e7c3c5d2785a",
+    "name": "University of Waterloo",
+    "tuition": [
+      {
+        "amount": 23598.00,
+        "currency": "CAD",
+        "academic_year": null,
+        "period": "semester",
+        "label": "minimum",
+        "source_url": "https://uwaterloo.ca/finance/fee-schedule-international-undergraduate-students-fall-2026",
+        "quote": "Environment | \"$4,719.60\" | \"$23,598.00\""
+      },
+      {
+        "amount": 34942.00,
+        "currency": "CAD",
+        "academic_year": null,
+        "period": "semester",
+        "label": "maximum",
+        "source_url": "https://uwaterloo.ca/finance/fee-schedule-international-undergraduate-students-fall-2026",
+        "quote": "Computer Science/Data Science | \"$6,988.40\" | \"$34,942.00\""
+      }
+    ],
+    "english": [
+      {
+        "kind": "IELTS",
+        "minimum": 6.5,
+        "notes": "Overall 6.5, with 6.5 in writing and speaking and 6.0 in reading and listening. Alternative route: overall 7.0 with a minimum band of 6.0 in all components.",
+        "source_url": "https://uwaterloo.ca/future/elr",
+        "quote": "6.5 writing, 6.5 speaking, 6.0 reading, 6.0 listening"
+      },
+      {
+        "kind": "TOEFL",
+        "minimum": 4.5,
+        "notes": "For tests completed as of 21 January 2026: 4.5 overall, 5 writing, 5 speaking (new score scale). Tests completed before 21 January 2026 required 90 overall, 25 writing, 25 speaking. No reading or listening minimums listed.",
+        "source_url": "https://uwaterloo.ca/future/elr",
+        "quote": "Tests completed as of January 21, 2026 require 4.5 overall 5 in writing, 5 in speaking."
+      }
+    ],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Currency shown as bare $ on the uwaterloo.ca fee page; reported as CAD. Fees are per term, Fall 2026 term only, billed per 0.5-unit course with a maximum per term. The minimum and maximum above come only from the rows visible in the fetched table, not the full programme list, so check before relying on them. The fee and English quotes came from a summarised fetch. No undergraduate international deadline found. Fetch budget used: 3."
+  },
+  {
+    "university_id": "dfd28fce-cef1-56e7-bc57-4cffd211a117",
+    "name": "Aalto University",
+    "tuition": [
+      {
+        "amount": 12000,
+        "currency": "EUR",
+        "academic_year": null,
+        "period": "year",
+        "label": "minimum",
+        "source_url": "https://www.aalto.fi/sites/default/files/2025-11/Tuition-fees-at-Aalto-University-2025.pdf",
+        "quote": "Field of Business 12 000 EUR per academic year"
+      },
+      {
+        "amount": 15000,
+        "currency": "EUR",
+        "academic_year": null,
+        "period": "year",
+        "label": "maximum",
+        "source_url": "https://www.aalto.fi/sites/default/files/2025-11/Tuition-fees-at-Aalto-University-2025.pdf",
+        "quote": "Field of Arts and Architecture 15 000 EUR per academic year"
+      }
+    ],
+    "english": [],
+    "deadline": [
+      {
+        "title": "Bachelor's application period, round A (English-taught bachelor's programmes, high school diploma route)",
+        "cycle": "2027 entry",
+        "due_at": "2027-01-22",
+        "notes": "Application period opens 7 January 2027 and ends 22 January 2027 at 3pm (UTC+2). Quote came from a summarised fetch.",
+        "source_url": "https://www.aalto.fi/en/admission-services/english-taught-bachelors-programmes-i-am-applying-with-a-high-school-diploma",
+        "quote": "22 January 2027 at 3pm/15.00 (UTC+2)"
+      }
+    ],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Tuition is for students whose right to study started on or after 1 August 2025; the page does not name the academic year, so null. Min and max are across the three fields the fetch showed (Business and Technology at 12 000 EUR; Arts and Architecture at 15 000 EUR). Quotes from the fee PDF came from a summarised fetch. English: the page says 'You are not required to submit a language test result', so no minimum is reported. The 2024 language requirements PDF was left out because it does not clearly state the level. Fetch budget used: 4."
+  },
+  {
+    "university_id": "29fa6116-cea2-5702-96ea-0f26492434fe",
+    "name": "Indian Institute of Technology Delhi",
+    "tuition": [
+      {
+        "amount": 2000,
+        "currency": "USD",
+        "academic_year": null,
+        "period": "year",
+        "label": null,
+        "source_url": "https://home.iitd.ac.in/uploads/ug/25-26/Fee%20Structure_2025-26_UG%20Entry%20Students.pdf",
+        "quote": "NON-SAARC Countries $ 2000 Rs. 22,400 + Rs 8,600 = Rs 31,000 USD 2000 + Rs. 31,000"
+      }
+    ],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Only the non-SAARC fee is reported. The SAARC figure is USD 1000, not reported as it is not the non-SAARC international rate. The page says '2025 Entry', and the file name says 2025-26, but the page does not state the academic year, so it is null. The period is not stated on the page, so 'year' is unconfirmed. Quote came from a summarised fetch. No English requirement or undergraduate deadline found on official pages. Fetch budget used: 1."
+  },
+  {
+    "university_id": "0271ce81-bdd1-5aa5-923d-fc97549fa720",
+    "name": "Royal Melbourne Institute of Technology",
+    "tuition": [],
+    "english": [
+      {
+        "kind": "IELTS",
+        "minimum": 6.5,
+        "notes": "Overall 6.5 with no band less than 6.0. The page's table covers undergraduate and postgraduate together ('lowest column'); check the course page for exact requirements. General minimum, not programme-specific.",
+        "source_url": "https://www.rmit.edu.au/study-with-us/international-students/apply-to-rmit-international-students/entry-requirements/english-requirements/english-language-proficiency-tests",
+        "quote": "6.5 (no band less than 6.0)"
+      },
+      {
+        "kind": "TOEFL",
+        "minimum": 79,
+        "notes": "Overall 79 with minimum 13 Reading, 12 Listening, 18 Speaking, 21 Writing. Tests taken on or after 21 January 2026 must be the TOEFL iBT Australia test. General minimum, not programme-specific. Quote came from a summarised fetch.",
+        "source_url": "https://www.rmit.edu.au/study-with-us/international-students/apply-to-rmit-international-students/entry-requirements/english-requirements/english-language-proficiency-tests",
+        "quote": "Overall score 79 (with minimum score of 13 in Reading, 12 in Listening, 18 in Speaking and 21 in Writing)"
+      }
+    ],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "The fee pages read give the currency as AUD but no undergraduate figures; the tuition database was not reachable from the pages read. The international key dates page was not fetched (budget). Local 2027 dates were found but are not for international applicants, so omitted. Fetch budget used: 3."
+  },
+  {
+    "university_id": "07cc0745-98d8-50c4-8c7d-88b03da6fa79",
+    "name": "Pontificia Universidad Catolica de Chile",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "No tuition, English requirement or 2027 main undergraduate deadline found on the uc.cl pages read (news and index pages). The only 2027 item seen was a notice for the second period of Admision Especial, a special pathway, so omitted. Fetch budget used: 2."
+  }
+]

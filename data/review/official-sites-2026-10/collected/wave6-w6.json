@@ -1,0 +1,220 @@
+[
+  {
+    "university_id": "a32d9481-0ee7-518c-b118-bf5abdee9f53",
+    "name": "University of Münster",
+    "tuition": [
+      {
+        "amount": 0,
+        "currency": "EUR",
+        "academic_year": null,
+        "period": "year",
+        "label": "single",
+        "source_url": "https://www.uni-muenster.de/international/studierende/general-information/cost-and-funding.html",
+        "quote": "Für die regulären Studiengänge müssen Sie keine Studiengebühren an der Universität Münster bezahlen",
+        "notes": "No tuition for regular degree programmes (quote from summarised fetch). The page gives a semester contribution of about 370 EUR per semester, which is not tuition. The page does not give a bachelor-specific statement or an academic year."
+      }
+    ],
+    "english": [],
+    "deadline": [
+      {
+        "title": "Application deadline, non-restricted bachelor's programmes (non-EU/non-EEA applicants)",
+        "cycle": "Summer semester 2027",
+        "due_at": "2027-01-15",
+        "notes": "Page gives the window 'Beginning of November 2026 to 15 January 2027'. The cycle label is inferred from the page's statement that the next intake is summer semester 2027; verify. Restricted-admission programmes have different dates. Quote from summarised fetch.",
+        "source_url": "https://www.uni-muenster.de/studieninteressierte/en/fristenundtermine/index.html",
+        "quote": "Non-restricted bachelor's / Magister Theology: Beginning of November 2026 to 15 January 2027"
+      }
+    ],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "No IELTS or TOEFL requirement found on the official pages checked (application page and deadlines page). Public or private status not stated on the pages read. Quotes from fetches are summarised, not verbatim."
+  },
+  {
+    "university_id": "828f04bc-48ef-5f99-9ad2-4acf10da27c9",
+    "name": "Université d'Aix-Marseille",
+    "tuition": [
+      {
+        "amount": 2895,
+        "currency": "EUR",
+        "academic_year": "2025/26",
+        "period": "year",
+        "label": "single",
+        "source_url": "https://www.univ-amu.fr/en/etudiants-internationaux/etudiants-internationaux-formation-diplomante/droits-dinscription-differencies-etudiants-union-europeenne",
+        "quote": "2,895 euros for a year in the Bachelor's program",
+        "notes": "Differentiated fees for students from outside the EU. The page states 2025-2026 only; it says the 2026-2027 differentiated fees 'will be updated shortly', so no 2026/27 figure is reported. Quote from summarised fetch."
+      }
+    ],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "No IELTS or TOEFL minimum for bachelor admission found. The exchange-student page gives French level requirements only (TCF/DELF/DALF B1; B2 for law), which I did not report because it is not a degree-admission rule. The law faculty page gives only past-cycle dates, and no 2027 deadline was found on the pages checked."
+  },
+  {
+    "university_id": "cba0bdd3-fa7c-5123-bd32-faf57dfdeb11",
+    "name": "Université de Montpellier",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Checked the 2026-2027 international students page and the 2026 fee-change article. Both say differentiated fees apply to non-EU students, but the amounts are only in a linked PDF that was not reproduced on the page. No IELTS or TOEFL minimum and no 2027 bachelor deadline were found on the official pages read."
+  },
+  {
+    "university_id": "59ce050c-68d5-5716-b96f-418d0f1db0ba",
+    "name": "Shenzhen University",
+    "tuition": [
+      {
+        "amount": 26000,
+        "currency": "CNY",
+        "academic_year": null,
+        "period": "year",
+        "label": "minimum",
+        "source_url": "https://en.szu.edu.cn/info/1023/1903.htm",
+        "quote": "Liberal arts: 26,000 RMB/person/year",
+        "notes": "From the 2026 SZU Admission Brochure for the Bachelor Program of International Students. The fee text gives no academic year. Quote from summarised fetch."
+      },
+      {
+        "amount": 40000,
+        "currency": "CNY",
+        "academic_year": null,
+        "period": "year",
+        "label": "maximum",
+        "source_url": "https://en.szu.edu.cn/info/1023/1903.htm",
+        "quote": "Medicine, Arts, Physical: 40,000 RMB/person/year",
+        "notes": "Same brochure. Science & Engineering is 30,000 RMB/person/year. Quote from summarised fetch."
+      }
+    ],
+    "english": [
+      {
+        "kind": "IELTS",
+        "minimum": 5.5,
+        "notes": "English-taught programme minimum from the bachelor brochure. Page says applicants who cannot provide scores may be assessed by interview or written test.",
+        "source_url": "https://en.szu.edu.cn/info/1023/1903.htm",
+        "quote": "IELTS 5.5 / TOEFL IBT 80 / Duolingo 100 or above"
+      },
+      {
+        "kind": "TOEFL",
+        "minimum": 80,
+        "notes": "English-taught programme minimum from the bachelor brochure (TOEFL iBT). Quote from summarised fetch.",
+        "source_url": "https://en.szu.edu.cn/info/1023/1903.htm",
+        "quote": "IELTS 5.5 / TOEFL IBT 80 / Duolingo 100 or above"
+      }
+    ],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "The brochure's dates are for 2026 entry only (1 Jan to 20 Mar, 20 Mar to 31 May). No 2027 undergraduate deadline was found. Undergraduate admissions page had no fee or language details."
+  },
+  {
+    "university_id": "3dfbc021-a651-5e0b-84b7-da126c795ba5",
+    "name": "Dalian University of Technology",
+    "tuition": [
+      {
+        "amount": 19500,
+        "currency": "CNY",
+        "academic_year": null,
+        "period": "year",
+        "label": "minimum",
+        "source_url": "https://sie.dlut.edu.cn/info/1179/2479.htm",
+        "quote": "Undergraduates (Chinese, Foreign Languages, Humanities & Social Sciences): 19,500",
+        "notes": "Table labelled 'Tuition/Year' for four-year programmes; no academic year stated. Quote from summarised fetch."
+      },
+      {
+        "amount": 25000,
+        "currency": "CNY",
+        "academic_year": null,
+        "period": "year",
+        "label": "maximum",
+        "source_url": "https://sie.dlut.edu.cn/info/1179/2479.htm",
+        "quote": "Undergraduates (Art Design): 25,000",
+        "notes": "Same table. Conflicts with the English-taught figure below (25,500); both are reported as the page states."
+      },
+      {
+        "amount": 25500,
+        "currency": "CNY",
+        "academic_year": null,
+        "period": "year",
+        "label": "English-taught programmes",
+        "source_url": "https://sie.dlut.edu.cn/info/1179/2480.htm",
+        "quote": "tuition is listed as \"25,500\" CNY per year for the four-year English-taught undergraduate programmes",
+        "notes": "From the English-taught bachelor programmes page. No academic year stated. Quote from summarised fetch."
+      }
+    ],
+    "english": [
+      {
+        "kind": "IELTS",
+        "minimum": 5.5,
+        "notes": "Stated 'in principle' on the English-taught bachelor programmes page. Applicants who cannot provide the score may be assessed by interview.",
+        "source_url": "https://sie.dlut.edu.cn/info/1179/2480.htm",
+        "quote": "the IELTS score must be 5.5 or higher"
+      },
+      {
+        "kind": "TOEFL",
+        "minimum": 80,
+        "notes": "Stated 'in principle' on the English-taught bachelor programmes page. Quote from summarised fetch.",
+        "source_url": "https://sie.dlut.edu.cn/info/1179/2480.htm",
+        "quote": "the TOEFL score must be 80 or higher"
+      }
+    ],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Application window stated as 'Applications will be accepted from November 1st 2026 until June of the following year' (sie.dlut.edu.cn/info/1179/2479.htm); no exact due date, so it is not reported as a deadline. The two DLUT fee figures conflict (19,500 to 25,000 in one table, 25,500 for English-taught programmes in another); staff should check."
+  },
+  {
+    "university_id": "3361a926-61e2-5a23-9399-fb6db0dcefe7",
+    "name": "Northwestern Polytechnical University Xi'an",
+    "tuition": [
+      {
+        "amount": 22000,
+        "currency": "CNY",
+        "academic_year": null,
+        "period": "year",
+        "label": "minimum",
+        "source_url": "https://studyat.nwpu.edu.cn/info/1135/3201.htm",
+        "quote": "Chinese medium: 22000 RMB/Year",
+        "notes": "2026 NPU Undergraduate Program Guide. The page does not state an academic year. Quote from summarised fetch."
+      },
+      {
+        "amount": 25000,
+        "currency": "CNY",
+        "academic_year": null,
+        "period": "year",
+        "label": "maximum",
+        "source_url": "https://studyat.nwpu.edu.cn/info/1135/3201.htm",
+        "quote": "English medium: 25000 RMB/Year",
+        "notes": "Same guide. The fees-information page (studyat.nwpu.edu.cn/ADMISSIONS1/Tuition.htm) gives the same 25,000 and 22,000 CNY per year. Quote from summarised fetch."
+      }
+    ],
+    "english": [
+      {
+        "kind": "IELTS",
+        "minimum": 6.0,
+        "notes": "Academic, overall; no less than 5.5 in each sub-section.",
+        "source_url": "https://studyat.nwpu.edu.cn/info/1135/3201.htm",
+        "quote": "IELTS Academic: Overall 6.0 or above (no less than 5.5 in each sub-section)"
+      },
+      {
+        "kind": "TOEFL",
+        "minimum": 80,
+        "notes": "TOEFL iBT / iBT Home Edition / MyBest Scores. Quote from summarised fetch.",
+        "source_url": "https://studyat.nwpu.edu.cn/info/1135/3201.htm",
+        "quote": "TOEFL iBT / iBT Home Edition / TOEFL MyBest Scores: 80 or above"
+      }
+    ],
+    "deadline": [
+      {
+        "title": "Fourth batch application (international undergraduates)",
+        "cycle": "2027 entry",
+        "due_at": "2027-05-20",
+        "notes": "Page lists 'Fourth batch: April 16, 2027 to May 20, 2027' (Beijing time). The page says the portal closes early once a major's quota is filled. Earlier batches were not checked, so this may not be the main deadline. Quote from summarised fetch.",
+        "source_url": "https://studyat.nwpu.edu.cn/info/1135/3201.htm",
+        "quote": "Fourth batch: April 16, 2027 to May 20, 2027"
+      }
+    ],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Public or private status not stated on the pages read. Quotes from fetches are summarised, not verbatim."
+  }
+]

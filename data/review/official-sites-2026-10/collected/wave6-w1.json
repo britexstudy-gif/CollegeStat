@@ -1,0 +1,95 @@
+[
+  {
+    "university_id": "7dbe63be-ec0e-5eb3-8ca2-bd197b4a278f",
+    "name": "University of Göttingen",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "No fact found. Fetched pages were a master's programme page (MINC) and general admission pages. Bachelor programmes require German language skills per the official admission page; no English IELTS/TOEFL requirement stated. Non-EU bachelor application dates on the official page have no year stated, so not reported. Fetch budget used (4). NOT CHECKED: none."
+  },
+  {
+    "university_id": "a75ede9d-f2a9-5169-837d-38e810d35a6b",
+    "name": "University of Bologna",
+    "tuition": [
+      {
+        "label": "minimum",
+        "amount": 157.04,
+        "currency": "EUR",
+        "academic_year": "2026/27",
+        "period": "year",
+        "source_url": "https://www.unibo.it/en/study/enrolment-fees-and-other-procedures/degree-programmes/tuition-fees-and-exemptions",
+        "quote": "the amount to be paid each year ranges from a minimum of €157.04 to a maximum that varies depending on the programme you enrol on.",
+        "notes": "Income-based fee that applies to all degree students (Italian and foreign citizens), not an international-only tuition rate. The page does not state the maximum; it links to a separate Italian-language PDF. Quote from summarised fetch."
+      }
+    ],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Tuition: only the minimum income-based annual amount was stated; maximum not on the page. No undergraduate English requirement found (search returned master's pages only). No 2027 undergraduate international deadline found. Fetch budget used: 1 of 4 (remaining budget not used). Public/private type not stated on fetched pages. Quotes from summarised fetch."
+  },
+  {
+    "university_id": "5b24f3f6-adcb-53fb-a89e-4f25f33f8da2",
+    "name": "Universität Hamburg",
+    "tuition": [
+      {
+        "label": null,
+        "amount": 0,
+        "currency": "EUR",
+        "academic_year": null,
+        "period": "year",
+        "source_url": "https://www.uni-hamburg.de/en/campuscenter/campus-leben/finanzen.html",
+        "quote": "in October 2012 the University of Hamburg abolished tuition fees.",
+        "notes": "Page says tuition fees were abolished for all students and only a semester contribution is charged; the semester contribution amount is not stated on the page. Academic year not stated. Currency not stated on page; EUR is the country's currency and is assumed. Quote from summarised fetch."
+      }
+    ],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Semester contribution amount not found on the official fees page. The general bachelor application windows on the official deadline pages carry no year, so no deadline reported. No English IELTS/TOEFL requirement found. Fetch budget used (4). Public/private type not stated on the fetched pages."
+  },
+  {
+    "university_id": "b719e149-7073-5173-a435-791b55891294",
+    "name": "Université de Lausanne",
+    "tuition": [
+      {
+        "label": null,
+        "amount": 580,
+        "currency": "CHF",
+        "academic_year": null,
+        "period": "semester",
+        "source_url": "https://www.unil.ch/immat/en/home/menuinst/futurs-etudiants/sinscrire/les-taxes-semestrielles.html",
+        "quote": "Tuition fees (exams included) and semester fees: CHF 580.- (per semester)",
+        "notes": "Page gives one rate for all Bachelor students, not an international-only rate. Academic year not stated on the page. Quote from summarised fetch."
+      }
+    ],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Only the per-semester fee was found, and it applies to all Bachelor students. No English IELTS/TOEFL requirement or 2027 international deadline found in searches. Fetch budget used: 1 of 4. Public/private type not stated on the fetched page."
+  },
+  {
+    "university_id": "04c4aef9-ef8e-5981-ba20-50039aeceef5",
+    "name": "Universiti Kebangsaan Malaysia",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "No current fact found. The only undergraduate international fee line found is in an older fee schedule effective from Semester 1, 2017/18 with an unstated currency, so it was not reported. The 2025/26 undergraduate brochure gives fees only in RM for mainstream intake students and refers to the admissions unit for international fees. No IELTS/TOEFL requirement found. Fetch budget used: 3 of 4."
+  },
+  {
+    "university_id": "c770e637-838e-5f90-ae57-425b587061a0",
+    "name": "Macquarie University",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "No annual tuition found. The official page gives fees per credit point and a commencement fee of AU$16,000 to AU$23,500 that is not an annual tuition figure, so it was not reported. The English requirements page did not show the undergraduate IELTS/TOEFL scores (the accepted tests table was empty; IELTS 6.5 appeared only for a Greenwich College pathway). Fetch budget used: 4 (one fetch failed with a client error). Public/private type not stated on fetched pages."
+  }
+]

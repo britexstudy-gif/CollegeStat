@@ -1,0 +1,103 @@
+[
+  {
+    "university_id": "1042123a-851e-532f-9355-fdee1624b0e5",
+    "name": "Universiti Teknologi Malaysia",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Tuition page (admission.utm.my/programme-fees-ug-international/) gives total fees per programme in RM, not annual figures, and states no academic year, so nothing reported. Undergraduate English requirement page (admission.utm.my/?p=44055) gave a table without a clear undergraduate statement; not reported. Undergraduate admission page (admission.utm.my/?p=45332) states no deadline. Ownership not stated on utm.my/about. Fetch result for the fees page was summarised, not verbatim."
+  },
+  {
+    "university_id": "3dbd05f9-ee8b-5bda-b461-f1c4bf152698",
+    "name": "University of York",
+    "tuition": [],
+    "english": [
+      {
+        "kind": "IELTS",
+        "minimum": 6.0,
+        "notes": "Varies by programme, no general minimum stated. 6.0 is the lowest tier listed on the page (with a minimum of 5.5 in each component); the highest tier listed is IELTS 7.0 with 7.0 in each component. Quote from summarised fetch.",
+        "source_url": "https://www.york.ac.uk/study/international/applying/ielts-equivalencies-undergraduate/",
+        "quote": "IELTS: 6.0, with a minimum of 5.5 in each component."
+      }
+    ],
+    "deadline": [],
+    "type": {
+      "value": "public",
+      "source_url": "https://www.york.ac.uk/about/",
+      "quote": "The University was created by Royal Charter and is a public higher education institution and exempt charity in England."
+    },
+    "checked_at": "2026-10-29",
+    "worker_notes": "International undergraduate fees page (york.ac.uk/study/undergraduate/fees-funding/international/) says tuition varies by course, with no figure stated. No 2027 undergraduate deadline found on the official site (UCAS-based). Quotes for english and type are from summarised fetches."
+  },
+  {
+    "university_id": "4905a534-c722-5951-bcd1-2a676a636ead",
+    "name": "Hanyang University",
+    "tuition": [],
+    "english": [
+      {
+        "kind": "IELTS",
+        "minimum": 6.5,
+        "notes": "International Studies track, freshman applicants. Source is the 2024 (1st semester) undergraduate admission guideline. Quote from summarised fetch.",
+        "source_url": "https://oia.hanyang.ac.kr/files/attach/filebox/2024/01/2024-1_undergraduate_en.pdf",
+        "quote": "International Studies : TOEFL IBT 89 and higher or IELTS 6.5 and higher"
+      },
+      {
+        "kind": "IELTS",
+        "minimum": 6.0,
+        "notes": "Other English Tracks, freshman applicants. Source is the 2024 (1st semester) undergraduate admission guideline. Quote from summarised fetch.",
+        "source_url": "https://oia.hanyang.ac.kr/files/attach/filebox/2024/01/2024-1_undergraduate_en.pdf",
+        "quote": "Other English Tracks : TOEFL IBT 80 and higher or IELTS 6.0 and higher"
+      },
+      {
+        "kind": "TOEFL",
+        "minimum": 89,
+        "notes": "International Studies track, freshman applicants. Source is the 2024 (1st semester) undergraduate admission guideline. Quote from summarised fetch.",
+        "source_url": "https://oia.hanyang.ac.kr/files/attach/filebox/2024/01/2024-1_undergraduate_en.pdf",
+        "quote": "International Studies : TOEFL IBT 89 and higher or IELTS 6.5 and higher"
+      },
+      {
+        "kind": "TOEFL",
+        "minimum": 80,
+        "notes": "Other English Tracks, freshman applicants. Source is the 2024 (1st semester) undergraduate admission guideline. Quote from summarised fetch.",
+        "source_url": "https://oia.hanyang.ac.kr/files/attach/filebox/2024/01/2024-1_undergraduate_en.pdf",
+        "quote": "Other English Tracks : TOEFL IBT 80 and higher or IELTS 6.0 and higher"
+      }
+    ],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Only tuition found is per semester in KRW for Fall 2023 (2024 guideline), which is outside the 2025/26-2026/27 window, so not reported. No 2027 deadline found. Ownership not checked: hanyang.ac.kr fetch failed. English figures are from a 2024 guideline, not the current year."
+  },
+  {
+    "university_id": "c414fa04-967d-501f-9db1-3879b0f30bc3",
+    "name": "Lancaster University",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Fees pages (lancaster.ac.uk/study/fees-and-funding and /international-fees) say tuition is shown on each course page; no figure stated. The undergraduate English requirements page gives no general minimum (only a Medicine-specific IELTS 7.0 and pre-sessional tables), so nothing reported. Admissions page says the deadline for 2027 entry has not yet been confirmed. Ownership not checked."
+  },
+  {
+    "university_id": "a7bf2f82-14eb-52f0-8b72-4362dd98bc71",
+    "name": "King Abdulaziz University",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "No official undergraduate tuition, English requirement or deadline found on kau.edu.sa within budget; the English pages found cover graduate or paid programmes only. The about page does not state public or private. Fetch budget used: 3."
+  },
+  {
+    "university_id": "8cf84b5b-4681-54b3-9013-24b55544e10a",
+    "name": "Chalmers University of Technology",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Fees page (chalmers.se/en/education/fees-finance) lists only master's programmes and single-subject courses; bachelor's amount for non-EU/EEA not stated (it says to check the invoice). Bachelor's application page (Swedish-language) states no deadline and no English test score. Foundation page says 'Chalmers is a foundation university' but does not state public or private, so type not reported."
+  }
+]

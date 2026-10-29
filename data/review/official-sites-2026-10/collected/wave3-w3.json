@@ -1,0 +1,130 @@
+[
+  {
+    "university_id": "c0bf548f-0413-5faa-8378-e3a8e622f80f",
+    "name": "City University of Hong Kong",
+    "tuition": [],
+    "english": [
+      {
+        "kind": "IELTS",
+        "minimum": 6.5,
+        "notes": "Overall band score 6.5 or above (Academic Module). Quote from summarised fetch. TOEFL figure on the same page ('4.5 out of 6') not reported: it does not read as an iBT total.",
+        "source_url": "https://www.cityu.edu.hk/international/fees-scholarships/fees",
+        "quote": "IELTS overall band score of 6.5 or above (Academic Module)"
+      }
+    ],
+    "deadline": [
+      {
+        "title": "Main Round application deadline",
+        "cycle": "2027 entry",
+        "due_at": "2027-01-15",
+        "notes": "Early Round deadline 15 November 2026 also listed; main round reported. Quote from summarised fetch.",
+        "source_url": "https://www.cityu.edu.hk/international/fees-scholarships/fees",
+        "quote": "Main Round deadline is 15 January 2027"
+      }
+    ],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Tuition not reported: the non-local fee page (https://www.cityu.edu.hk/admo/fees-and-scholarships?kind=nonlocal) gives HK$240,000 per academic year only for 2027/28 (outside the 2025/26-2026/27 window). Type not stated on checked pages. All quotes are from summarised fetches, not verbatim."
+  },
+  {
+    "university_id": "e0088a48-e57b-58d4-bf07-2021931bc1a9",
+    "name": "University of Amsterdam",
+    "tuition": [
+      {
+        "amount": 12075,
+        "currency": "EUR",
+        "academic_year": "2025/26",
+        "period": "year",
+        "label": "minimum",
+        "source_url": "https://www.uva.nl/en/education/fees-and-funding/tuition-fees/tuition-fees-2025-2026/tuition-fees-2025-2026.html",
+        "quote": "Bachelor's €12,075",
+        "notes": "Non-EEA institutional fee for full-time bachelor students; lowest figure in the faculty list (Economics and Business). Fee depends on faculty. Quote from summarised fetch. 2026/27 figures not found."
+      },
+      {
+        "amount": 34800,
+        "currency": "EUR",
+        "academic_year": "2025/26",
+        "period": "year",
+        "label": "maximum",
+        "source_url": "https://www.uva.nl/en/education/fees-and-funding/tuition-fees/tuition-fees-2025-2026/tuition-fees-2025-2026.html",
+        "quote": "Bachelor's in Medicine €34,800",
+        "notes": "Highest figure in the faculty list (Medicine; Dentistry also €34,800). Quote from summarised fetch."
+      }
+    ],
+    "english": [
+      {
+        "kind": "IELTS",
+        "minimum": 6.5,
+        "notes": "Overall 6.5, each subscore 6; CEFR C1 required. Taken from the Communication Science bachelor international prior education page; may vary by programme. Quote from summarised fetch.",
+        "source_url": "https://uva.nl/en/programmes/bachelors/communication-science/application-and-admission/international-prior-education.html",
+        "quote": "IELTS | 6.5 (each subscore: 6)"
+      },
+      {
+        "kind": "TOEFL",
+        "minimum": 92,
+        "notes": "TOEFL iBT total, each subscore 22. Same page and caveats as the IELTS entry.",
+        "source_url": "https://uva.nl/en/programmes/bachelors/communication-science/application-and-admission/international-prior-education.html",
+        "quote": "TOEFL (iBT*) | 92 (each subscore: 22)"
+      }
+    ],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Tuition is 2025/26 only and faculty-dependent; only the listed faculties reported as min/max. No 2027-entry deadline found (only the 2024-25 application period was shown). Type not stated on checked pages. Quotes from summarised fetches. Bare fee amounts only, no currency conversion."
+  },
+  {
+    "university_id": "8e7965f7-20be-56cb-9233-5daa3414b0fc",
+    "name": "National Taiwan University",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Checked oia.ntu.edu.tw tuition page (redirects to isss.ntu.edu.tw), isss.ntu.edu.tw/?p=720 and intl.ntu.edu.tw/admissions. None states an undergraduate international tuition amount (they refer to an external admissions page, not checked). No IELTS/TOEFL minimum found. Deadlines shown are for the September 2026 entry only, so not reported."
+  },
+  {
+    "university_id": "b3a81d8c-44ec-56d8-aa5f-b58d5fce6bfd",
+    "name": "Sorbonne Université",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Checked the future-international-students page and the modalites-dinscription-et-couts-des-etudes page. The 2026-27 page shows a general licence fee of 178 euros, which is the national rate, not the non-European rate; the page says differentiated fees apply to non-European students but gives no amount, so nothing reported. No English requirement or 2027 deadline found on checked pages."
+  },
+  {
+    "university_id": "26fd17cb-9752-5eab-86f1-9f9768a938b7",
+    "name": "University of Geneva",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Checked the GSEM bachelor admissions page only (plus searches). No IELTS/TOEFL minimum stated; only a French-test exemption for applicants holding a recognised English certificate, with no list. Deadlines given without a year (15 Jan-28 Feb or 15 Jan-30 Apr depending on visa), so not reported. No tuition page for non-Swiss students found."
+  },
+  {
+    "university_id": "ee31891b-8bbc-5fb0-9bc5-e0122f0c55dd",
+    "name": "Universiti Malaya",
+    "tuition": [],
+    "english": [
+      {
+        "kind": "IELTS",
+        "minimum": 5.0,
+        "notes": "Band 5.0 and above in IELTS (Academic) for undergraduate international applicants. Some programmes require higher, not stated. Page last updated 02/12/2021 per the page itself; confirm with the Academic Services Department. Quote from summarised fetch.",
+        "source_url": "https://aasd.um.edu.my/faq-ug-international-admission",
+        "quote": "Band of 5.0 and above in IELTS (Academic)"
+      },
+      {
+        "kind": "TOEFL",
+        "minimum": 60,
+        "notes": "TOEFL iBT. The same page lists 500 (PBT) and 173 (CBT) as equivalents. Same page caveats as the IELTS entry.",
+        "source_url": "https://aasd.um.edu.my/faq-ug-international-admission",
+        "quote": "Score of 500 (PBT), 173 (CBT) or 60 (IBT) and above in TOEFL"
+      }
+    ],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Tuition not reported: the UG International fee structure PDF (2025/2026) shows RM 60,900.00 and RM 673,200.00, but the summary does not confirm the period (annual) or the programme pairing, so left out. Deadlines on the FAQ page have no year (17 June and 11 November), so not reported. Type not stated. Quotes from summarised fetches."
+  }
+]

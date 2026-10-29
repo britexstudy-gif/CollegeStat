@@ -1,0 +1,135 @@
+[
+ {
+  "university_id": "710661ab-60ec-57bf-84bc-aa0b1e256a12",
+  "name": "Leiden University",
+  "tuition": [],
+  "english": [],
+  "deadline": [],
+  "type": null,
+  "checked_at": "2026-10-29",
+  "worker_notes": "NOT FOUND: the bachelor tuition page (universiteitleiden.nl/en/education/admission-and-application/bachelors/tuition-fee) lists only 2027-2028 non-EEA tariffs, outside the 2025/26-2026/27 window, so not reported. General undergraduate English requirement page not found; the only English page read was for one programme (English Language and Culture BA: IELTS 6.5, no band below 6.0, TOEFL iBT 82), which is programme-specific, so not reported. Deadline page gives only '1 April' for visa applicants with no year, so not reported. 3 fetches used."
+ },
+ {
+  "university_id": "bc0bcefc-cf3b-5fc7-bb41-76470ec9ff59",
+  "name": "Lund University",
+  "tuition": [],
+  "english": [
+   {
+    "kind": "IELTS",
+    "minimum": 6.5,
+    "notes": "Page covers degree programmes and courses generally, not undergraduate only. Quote from summarised fetch. Overall 6.5 with no section less than 5.5. Some programmes require higher levels.",
+    "source_url": "https://www.lunduniversity.lu.se/admissions/admission-requirements/english-language-requirements",
+    "quote": "IELTS (Academic) total score 6.5 (with no section less than 5.5)"
+   },
+   {
+    "kind": "TOEFL",
+    "minimum": 90,
+    "notes": "Page covers degree programmes and courses generally, not undergraduate only. Quote from summarised fetch. Written test component minimum 20 out of 30 (internet-based). Some programmes require higher levels.",
+    "source_url": "https://www.lunduniversity.lu.se/admissions/admission-requirements/english-language-requirements",
+    "quote": "TOEFL internet-based score of 20 (scale 0–30) in written test and a total score of 90"
+   }
+  ],
+  "deadline": [],
+  "type": null,
+  "checked_at": "2026-10-29",
+  "worker_notes": "Tuition: the fees page says non-EU/EEA students generally pay fees but gives no amounts; programme pages hold figures (not checked, budget). Deadline: page gives 'Mid-October to 15 January for studies starting in the autumn semester' for international round, with no year stated, so not reported. Quotes from summarised fetches. 3 fetches used."
+ },
+ {
+  "university_id": "8626e12e-d23c-5f35-b13b-88ff7c2e6912",
+  "name": "Weizmann Institute of Science",
+  "tuition": [],
+  "english": [],
+  "deadline": [],
+  "type": null,
+  "checked_at": "2026-10-29",
+  "worker_notes": "NOT FOUND: the undergraduate programmes page on weizmann.ac.il (WSOS) gave no international tuition, IELTS/TOEFL minimum or deadline. Only one fetch used; other pages not checked within budget. Search results were mostly graduate and third-party pages, not used."
+ },
+ {
+  "university_id": "7e74da55-7ed1-58a0-b41c-7eed8b466241",
+  "name": "Huazhong University of Science and Technology",
+  "tuition": [
+   {
+    "amount": 18000,
+    "currency": "CNY",
+    "academic_year": "2026",
+    "period": "year",
+    "label": "minimum",
+    "source_url": "https://iso.hust.edu.cn/info/1194/4638.htm",
+    "quote": "Literature, Education & Law: 18,000"
+   },
+   {
+    "amount": 40000,
+    "currency": "CNY",
+    "academic_year": "2026",
+    "period": "year",
+    "label": "maximum",
+    "source_url": "https://iso.hust.edu.cn/info/1194/4638.htm",
+    "quote": "Clinical Medicine (MBBS): 40,000"
+   }
+  ],
+  "english": [
+   {
+    "kind": "IELTS",
+    "minimum": 5.5,
+    "notes": "For English-medium programmes. Other equivalent certificates accepted by HUST; may be waived for applicants whose previous degree was taught in English. Quote from summarised fetch.",
+    "source_url": "https://iso.hust.edu.cn/info/1194/4638.htm",
+    "quote": "TOEFL (≥80), IELTS (≥5.5)"
+   },
+   {
+    "kind": "TOEFL",
+    "minimum": 80,
+    "notes": "For English-medium programmes. Quote from summarised fetch. Chinese version also lists Duolingo English Test 110 or above, not on the English version.",
+    "source_url": "https://iso.hust.edu.cn/info/1194/4638.htm",
+    "quote": "TOEFL (≥80), IELTS (≥5.5)"
+   }
+  ],
+  "deadline": [],
+  "type": null,
+  "checked_at": "2026-10-29",
+  "worker_notes": "Tuition is from the 2026 HUST Application Guide for International Undergraduate Students (page covers the 2026 intake, term not stated; academic_year set to 2026 not 2026/27). Min and max are across the table rows (Chinese-medium 18,000 to 33,000; English-medium 30,000 to 40,000), so the minimum/maximum labels are for the whole table; check which programmes apply. Quotes from summarised fetch, so exact wording needs checking. Deadline on the page (15 June 2026) is past-cycle, so not reported. 1 fetch used."
+ },
+ {
+  "university_id": "24e7d208-f222-510a-92a9-011aead2e2cc",
+  "name": "University of Western Australia",
+  "tuition": [],
+  "english": [
+   {
+    "kind": "IELTS",
+    "minimum": 6.5,
+    "notes": "Page is the general English language requirements page and does not explicitly label this as undergraduate; labelled 'Minimum standard ELC requirements' in the fetch. No band less than 6.0. Quote from summarised fetch. Check with staff that this applies to undergraduate entry.",
+    "source_url": "https://www.uwa.edu.au/study/How-to-apply/english-language-requirements",
+    "quote": "Minimum standard ELC requirements - a minimum overall score of 6.5 with no band less than 6.0."
+   },
+   {
+    "kind": "TOEFL",
+    "minimum": 82,
+    "notes": "Same caveat as IELTS: page does not explicitly label undergraduate. Quote from summarised fetch. Component minimums: 20 in Speaking and Writing, 17 in Listening and Reading (0-120 scale). Some courses have higher requirements.",
+    "source_url": "https://www.uwa.edu.au/study/How-to-apply/english-language-requirements",
+    "quote": "Minimum standard ELC requirements - a minimum overall score of 82"
+   }
+  ],
+  "deadline": [
+   {
+    "title": "Semester 1 2027 intake, all other countries",
+    "cycle": "2027 entry (semester 1)",
+    "due_at": "2027-01-11",
+    "notes": "Dates for 'All other countries'; a separate earlier date (28 December 2026) applies to countries listed in the table (e.g. India, Nepal, Vietnam). Page says some courses have different dates and dates are subject to change, and does not confirm these are undergraduate-only. Quote from summarised fetch. Semester 2 2027 date is 7 June 2027.",
+    "source_url": "https://www.uwa.edu.au/Study/How-to-apply/International-applicants",
+    "quote": "Semester 1 2027 intake: All other countries: \"11 January 2027\""
+   }
+  ],
+  "type": null,
+  "checked_at": "2026-10-29",
+  "worker_notes": "NOT FOUND: the fees page at uwa.edu.au/study/International-students/fees-and-scholarships and the international student fees page gave no undergraduate tuition amount (page points to a fee calculator). Quotes from summarised fetches. Leeds-style caveat not applicable. 4 fetches used (budget reached)."
+ },
+ {
+  "university_id": "2aa84135-ae94-568c-8721-5c06c836a3f2",
+  "name": "University of Leeds",
+  "tuition": [],
+  "english": [],
+  "deadline": [],
+  "type": null,
+  "checked_at": "2026-10-29",
+  "worker_notes": "NOT FOUND: undergraduate fee pages say international fees are on individual course pages, and the only figure is a placement-year fee (GBP 4,575 for 2027/28, GBP 4,425 for 2026/27), which is not annual tuition so not reported. English requirement page gives standard study-abroad requirements (IELTS 6.0, 5.5 each component; TOEFL 80 old scale), not undergraduate-specific, so not reported. No official undergraduate deadline found. 3 fetches used."
+ }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "university_id": "c12cf89d-30c4-52cb-813c-469eaa0f2aba",
+    "name": "University of Science and Technology Beijing",
+    "tuition": [
+      {
+        "amount": 23300,
+        "currency": "CNY",
+        "academic_year": null,
+        "period": "year",
+        "label": null,
+        "source_url": "https://oice.ustb.edu.cn/English/InternationalStudents/GeneralInformation/index.htm",
+        "quote": "Chinese Taught Program: \"23,300 RMB\" (quote from summarised fetch; page table titled \"Tuition (per person per year)\", undergraduate row)"
+      }
+    ],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Tuition 23,300 RMB per year for the Chinese-taught undergraduate programme found on two official USTB pages (OICE General Information; International Student Center brochure lists 23300/year). Academic year left null: the OICE page was uploaded 2011-10-06 and the brochure says it is for the 2026 intake, neither states 2025/26 or 2026/27. The OICE page lists English-taught undergraduate programmes as 'No English taught course', so the IELTS 5.5 / TOEFL 70 line from the brochure (applies to English-taught programmes) was not reported. The brochure's application window (1 Nov 2026 to 15 Jun 2027) is labelled for the 2026 intake and is not clearly an undergraduate 2027 deadline, so it was not reported. Type not stated on the pages read, so null. All quotes are from summarised WebFetch results, not verbatim page text. Used 2 WebFetch calls and 2 WebSearch calls."
+  }
+]
