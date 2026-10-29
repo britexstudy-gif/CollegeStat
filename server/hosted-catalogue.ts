@@ -4,7 +4,7 @@ import { publicConfig } from './public-config';
 import { normalizeUniversity, type University, type Scholarship } from '@/lib/domain';
 import { readFilters, type Filters, parseResearchQuery } from '@/lib/research';
 import { universitySelect, type Catalogue, type ExplorerResult } from '@/lib/supabase/catalogue';
-import { discoveryPreview } from './explorer';
+import { discoveryPreview } from './discovery-preview';
 
 export function publicDatabase() {
   const config = publicConfig();
@@ -43,7 +43,16 @@ export const hostedCatalogue = cache(async (): Promise<Catalogue & {total:number
   if (featured.error || scholarships.error) throw new Error('The catalogue could not be loaded.');
   return {mode:'supabase',universities:await hostedUniversities(featured.data.ids.slice(0,12)),scholarships:scholarships.data as unknown as Scholarship[],total:featured.data.total,countries:featured.data.countries};
 });
-export async function hostedRankingProfiles() {
+let rankingProfiles: {expires:number;rows:Promise<University[]>} | undefined;
+/** Ranked profiles change only on import, so one isolate reuses them for five minutes. */
+export function hostedRankingProfiles() {
+  if (rankingProfiles && rankingProfiles.expires > Date.now()) return rankingProfiles.rows;
+  const rows = loadRankingProfiles();
+  rankingProfiles = {expires:Date.now()+300_000,rows};
+  rows.catch(() => { rankingProfiles = undefined; });
+  return rows;
+}
+async function loadRankingProfiles() {
   const rows: University[] = [];
   for(let offset=0;offset<10000;offset+=1000) {
     const {data,error} = await publicDatabase().rpc('ranking_profiles',{result_offset:offset,result_limit:1000});

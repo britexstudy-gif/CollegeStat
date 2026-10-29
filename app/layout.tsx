@@ -2,8 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { CollegeProvider } from "@/components/college/provider";
 import { SiteShell } from "@/components/college/shell";
-import { featuredCatalogue } from "@/server/global-catalogue";
-import { referenceScholarships } from "@/server/catalogue";
+import { bundledCatalogue } from "@/server/bundled";
 import { hostedCatalogue } from '@/server/hosted-catalogue';
 export const metadata: Metadata = {
   title: {
@@ -20,7 +19,7 @@ export const metadata: Metadata = {
 export default async function Layout({ children }: { children: React.ReactNode }) {
   const catalogue = process.env.NEXT_PUBLIC_CATALOGUE_SOURCE === 'supabase'
     ? await hostedCatalogue().catch(() => ({universities:[],scholarships:[]}))
-    : {universities:featuredCatalogue,scholarships:referenceScholarships};
+    : await bundledCatalogue().then(b => ({universities:b.featuredCatalogue,scholarships:b.referenceScholarships}));
   return (
     <html lang="en" suppressHydrationWarning>
       <body>

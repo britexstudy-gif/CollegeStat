@@ -1,8 +1,6 @@
-import { exploreCatalogue } from "@/server/explorer";
 import redirects from "@/data/published/identity-redirects.json";
-import { rankingTable } from "@/server/ranking-table";
-import { referenceScholarships } from "@/server/catalogue";
-import { globalCatalogue, featuredCatalogue } from "@/server/global-catalogue";
+import { bundledCatalogue } from "@/server/bundled";
+import { rankingTableFor } from "@/server/ranking-rows";
 import { countryName } from "@/lib/domain";
 import {
   matchesSearch,
@@ -24,7 +22,15 @@ export async function GET(request: Request) {
     Response.json(data, {
       headers: { "Cache-Control": "public, max-age=300" },
     });
-  if (p.get("mode") === "ranking-table") return respond(rankingTable(p));
+  if (p.get("mode") === "ranking-table") {
+    if (!usesHostedCatalogue())
+      return respond((await bundledCatalogue()).rankingTable(p));
+    try {
+      return respond(rankingTableFor(p, await hostedRankingProfiles()));
+    } catch {
+      return Response.json({error:'Rankings could not be loaded. Please retry.'},{status:503,headers:{'Cache-Control':'no-store'}});
+    }
+  }
   const alias = Object.values(redirects).find(
     (r) => r.old_slug === p.get("slug"),
   );
@@ -51,6 +57,8 @@ export async function GET(request: Request) {
       return Response.json({error:'The catalogue could not be loaded. Please retry.'},{status:503,headers:{'Cache-Control':'no-store'}});
     }
   }
+  const { globalCatalogue, featuredCatalogue, referenceScholarships, exploreCatalogue } =
+    await bundledCatalogue();
   if (p.has("slug"))
     return respond(
       globalCatalogue.find((u) => u.slug === p.get("slug")) || null,

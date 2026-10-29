@@ -10,7 +10,7 @@ import {
   sameOrigin,
   serverError,
 } from "@/server/config";
-import { globalCatalogue } from "@/server/global-catalogue";
+import { bundledCatalogue } from "@/server/bundled";
 import { universitySelect } from "@/lib/supabase/catalogue";
 import { normalizeUniversity, University } from "@/lib/domain";
 import {
@@ -135,7 +135,7 @@ export async function POST(request: Request) {
       } else rows = [];
     } else {
       const selected = selectLocalResearch(
-        globalCatalogue,
+        (await bundledCatalogue()).globalCatalogue,
         input,
         interpretation,
       );

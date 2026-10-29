@@ -2,7 +2,7 @@ import redirects from "@/data/published/identity-redirects.json";
 import { cache } from "react";
 import { createClient } from "@supabase/supabase-js";
 import { publicConfig } from "./public-config";
-import { globalCatalogue } from "./global-catalogue";
+import { bundledCatalogue } from "./bundled";
 import { universitySelect } from "@/lib/supabase/catalogue";
 import { normalizeUniversity, University } from "@/lib/domain";
 import { usesHostedCatalogue } from "@/lib/catalogue-mode";
@@ -10,8 +10,10 @@ import { canonicalComparisonIDs } from "@/lib/comparison";
 export async function publicUniversities(ids: string[]) {
   const selected = canonicalComparisonIDs(ids);
   if (!selected.length) return [];
-  if (!usesHostedCatalogue())
+  if (!usesHostedCatalogue()) {
+    const { globalCatalogue } = await bundledCatalogue();
     return selected.flatMap((id) => globalCatalogue.filter((u) => u.id === id));
+  }
   const config = publicConfig();
   if (!config.url || !config.anon)
     throw new Error("Public catalogue is not connected");
@@ -34,7 +36,7 @@ export const publicUniversity = cache(async (slug: string) => {
     Object.values(redirects).find((r) => r.old_slug === slug)?.slug || slug;
   const config = publicConfig();
   if (!usesHostedCatalogue())
-    return globalCatalogue.find((u) => u.slug === slug);
+    return (await bundledCatalogue()).globalCatalogue.find((u) => u.slug === slug);
   if (!config.url || !config.anon)
     throw new Error("Public catalogue is not connected");
   const db = createClient(config.url, config.anon, {
