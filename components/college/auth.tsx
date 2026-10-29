@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element -- Local editorial artwork. */
 "use client";
 import { useEffect, useRef, useState } from "react";
 import { useRouter, useSearchParams, usePathname } from "next/navigation";
@@ -6,11 +5,14 @@ import Link from "next/link";
 import {
   ArrowLeft,
   ArrowRight,
+  Check,
   Mail,
+  Lock,
   CheckCircle2,
   Eye,
   EyeOff,
   ShieldCheck,
+  Sparkles,
 } from "lucide-react";
 import { getSupabase } from "@/lib/supabase/client";
 import { safeNext } from "@/lib/domain";
@@ -187,315 +189,347 @@ export function AuthForm() {
     }
   };
   const staff = isStaffPath(next);
+  const providers = (["google", "apple", "telegram"] as const).filter(
+    (provider) => enabled[provider],
+  );
+  const title = reset
+    ? "Set a new password"
+    : forgot
+      ? "Reset your password"
+      : signup
+        ? "Create your account"
+        : staff
+          ? "Staff sign-in"
+          : "Welcome back";
+  const subtitle = reset
+    ? "Choose a long, unique password to secure your account."
+    : forgot
+      ? "Enter your email and we will send you a reset link."
+      : signup
+        ? "Free to use. Save your shortlist, deadlines and notes."
+        : staff
+          ? "Use your administrator account to open the staff console."
+          : "Sign in to pick up your plan where you left it.";
   return (
-    <div className="auth-workspace">
-      <header className="auth-header">
-        <Brand />
-        <Link className="text-link" href={returnTo}>
-          <ArrowLeft size={16} /> Back to browsing
-        </Link>
-      </header>
-      <div className="auth-layout">
-        <div className="auth-access-panel">
-          <aside className="auth-art" aria-label="Plan your university journey">
-            <img
-              src="/images/hero/blue-collage.webp"
-              alt="Blue editorial collage of a student, university buildings and a plane"
-              width="1200"
-              height="800"
-            />
-            <div>
-              <h2>
-                Your next step,
-                <br />
-                all in one place.
-              </h2>
-              <p>Save universities. Compare options. Plan applications.</p>
+    <div className="au">
+      <div className="au-main">
+        <header className="au-top">
+          <Brand />
+          <Link className="au-back" href={returnTo}>
+            <ArrowLeft size={15} /> Back
+          </Link>
+        </header>
+        <section className="au-form" aria-labelledby="auth-title">
+          {staff && <span className="au-badge">CollegeStat staff</span>}
+          <h1 id="auth-title">{title}</h1>
+          <p className="au-sub">{subtitle}</p>
+          {!forgot && !reset && !staff && (
+            <nav className="au-switch" aria-label="Account access">
+              <Link
+                href={"/auth/sign-in?next=" + encodeURIComponent(next)}
+                aria-current={!signup ? "page" : undefined}
+              >
+                Sign in
+              </Link>
+              <Link
+                href={"/auth/sign-up?next=" + encodeURIComponent(next)}
+                aria-current={signup ? "page" : undefined}
+              >
+                Create account
+              </Link>
+            </nav>
+          )}
+          {sent ? (
+            <div className="au-sent" role="status">
+              <span>
+                <CheckCircle2 size={26} />
+              </span>
+              <h2>Check your inbox</h2>
+              <p>
+                If {email.trim() || "this address"} can receive the link, it
+                will arrive in a minute. Open it in this browser.
+              </p>
+              <button
+                className="au-btn au-btn-quiet"
+                onClick={() => setSent(false)}
+              >
+                Use a different email
+              </button>
             </div>
-          </aside>
-          <section className="auth-form" aria-labelledby="auth-title">
-            {staff && <span className="eyebrow">COLLEGESTAT · STAFF</span>}
-            <h1 id="auth-title">
-              {reset
-                ? "New password"
-                : forgot
-                  ? "Reset password"
-                  : signup
-                    ? "Create an account"
-                    : staff
-                      ? "Admin sign-in"
-                      : "Sign in"}
-            </h1>
-            <p>
-              {reset
-                ? "Choose a unique password to secure your account."
-                : forgot
-                  ? "Enter your email to receive a reset link."
-                  : signup
-                    ? "Save your shortlist, comparisons, and application plan."
-                    : staff
-                      ? "Use your administrator account to open the database workspace."
-                      : "Welcome back to your workspace."}
-            </p>
-            {!forgot && !reset && !staff && (
-              <nav className="auth-mode-nav" aria-label="Account access">
-                <span>
-                  {signup ? "Already have an account?" : "New to CollegeStat?"}
-                </span>
-                <Link
-                  href={
-                    (signup ? "/auth/sign-in?next=" : "/auth/sign-up?next=") +
-                    encodeURIComponent(next)
-                  }
-                >
-                  {signup ? "Sign in" : "Create account"}
-                </Link>
-              </nav>
-            )}
-            {sent ? (
-              <div className="auth-sent" role="status">
-                <CheckCircle2 size={30} />
-                <h3>Check your inbox.</h3>
-                <p>
-                  If this address can receive the requested link, it will arrive
-                  shortly. Open it in this browser.
+          ) : (
+            <>
+              {!forgot && !reset && providers.length > 0 && (
+                <div className={"au-providers au-providers-" + providers.length}>
+                  {providers.map((provider) => (
+                    <button
+                      key={provider}
+                      type="button"
+                      className="au-btn au-btn-quiet"
+                      disabled={busy || !s.configured}
+                      onClick={() =>
+                        oauth(
+                          provider === "telegram" ? "custom:telegram" : provider,
+                        )
+                      }
+                    >
+                      {provider === "google" ? (
+                        <GoogleMark />
+                      ) : provider === "apple" ? (
+                        <AppleMark />
+                      ) : (
+                        <TelegramMark />
+                      )}
+                      <span>
+                        {providers.length === 1 ? "Continue with " : ""}
+                        {provider[0].toUpperCase() + provider.slice(1)}
+                      </span>
+                    </button>
+                  ))}
+                </div>
+              )}
+              {!forgot && !reset && providers.length > 0 && enabled.email && (
+                <div className="au-divider">
+                  <span>or with email</span>
+                </div>
+              )}
+              {!forgot && !reset && !providersChecked && !providers.length && (
+                <p className="au-hint" role="status">
+                  Checking sign-in options…
                 </p>
-                <Link
-                  className="text-link"
-                  href={"/auth/sign-in?next=" + encodeURIComponent(next)}
-                >
-                  Back to sign in <ArrowRight size={15} />
-                </Link>
-              </div>
-            ) : (
-              <>
-                {!forgot &&
-                  !reset &&
-                  (enabled.google || enabled.apple || enabled.telegram) && (
-                    <div className="auth-providers">
-                      {(["google", "apple", "telegram"] as const)
-                        .filter((provider) => enabled[provider])
-                        .map((provider) => (
-                          <button
-                            key={provider}
-                            className="provider-button"
-                            disabled={
-                              busy || !s.configured || !enabled[provider]
-                            }
-                            onClick={() =>
-                              oauth(
-                                provider === "telegram"
-                                  ? "custom:telegram"
-                                  : provider,
-                              )
-                            }
-                            aria-describedby={
-                              !enabled[provider]
-                                ? "provider-availability"
-                                : undefined
-                            }
-                          >
-                            {provider === "google" ? (
-                              <GoogleMark />
-                            ) : provider === "apple" ? (
-                              <AppleMark />
-                            ) : (
-                              <TelegramMark />
-                            )}
-                            <span>
-                              {provider[0].toUpperCase() + provider.slice(1)}
-                            </span>
-                          </button>
-                        ))}
-                      {(!enabled.google ||
-                        !enabled.apple ||
-                        !enabled.telegram) && (
-                        <p
-                          id="provider-availability"
-                          className="provider-availability"
-                        >
-                          {providersChecked
-                            ? "Email sign-in is also available."
-                            : "Checking sign-in options…"}
-                        </p>
-                      )}
-                      {enabled.email && (
-                        <div className="auth-divider">
-                          <span /> or use your email <span />
-                        </div>
-                      )}
+              )}
+              {enabled.email && (
+                <form className="au-fields" onSubmit={submit} aria-busy={busy}>
+                  {signup && (
+                    <div className="au-field">
+                      <label htmlFor="auth-name">
+                        Name <span>optional</span>
+                      </label>
+                      <input
+                        id="auth-name"
+                        autoComplete="name"
+                        value={name}
+                        onChange={(e) => setName(e.target.value)}
+                        maxLength={120}
+                        disabled={busy}
+                        placeholder="What should we call you?"
+                      />
                     </div>
                   )}
-                {enabled.email && (
-                  <form onSubmit={submit} aria-busy={busy}>
-                    {signup && (
-                      <div className="auth-field">
-                        <label htmlFor="auth-name">
-                          Display name <span>(optional)</span>
-                        </label>
+                  {!reset && (
+                    <div className="au-field">
+                      <label htmlFor="auth-email">Email</label>
+                      <div className="au-input">
+                        <Mail size={17} aria-hidden="true" />
                         <input
-                          id="auth-name"
-                          autoComplete="name"
-                          value={name}
-                          onChange={(e) => setName(e.target.value)}
-                          maxLength={120}
+                          id="auth-email"
+                          type="email"
+                          required
+                          autoComplete="email"
+                          value={email}
+                          onChange={(e) => setEmail(e.target.value)}
+                          placeholder="you@example.com"
                           disabled={busy}
                         />
                       </div>
-                    )}
-                    {!reset && (
-                      <div className="auth-field">
-                        <label htmlFor="auth-email">Email address</label>
-                        <div className="auth-input">
-                          <Mail size={18} aria-hidden="true" />
-                          <input
-                            id="auth-email"
-                            type="email"
-                            required
-                            autoComplete="email"
-                            value={email}
-                            onChange={(e) => setEmail(e.target.value)}
-                            placeholder="you@example.com"
-                            disabled={busy}
-                          />
-                        </div>
-                      </div>
-                    )}
-                    {!forgot && (
-                      <div className="auth-field">
+                    </div>
+                  )}
+                  {!forgot && (
+                    <div className="au-field">
+                      <div className="au-label-row">
                         <label htmlFor="auth-password">
                           {reset ? "New password" : "Password"}
                         </label>
-                        <div className="auth-input">
-                          <input
-                            id="auth-password"
-                            type={showPassword ? "text" : "password"}
-                            required
-                            minLength={signup || reset ? 8 : 1}
-                            autoComplete={
-                              signup || reset
-                                ? "new-password"
-                                : "current-password"
+                        {!signup && !reset && (
+                          <Link
+                            href={
+                              "/auth/forgot-password?next=" +
+                              encodeURIComponent(next)
                             }
-                            value={password}
-                            onChange={(e) => setPassword(e.target.value)}
-                            disabled={busy}
-                            aria-describedby={
-                              signup || reset ? "password-hint" : undefined
-                            }
-                          />
-                          <button
-                            type="button"
-                            className="auth-password-toggle"
-                            onClick={() => setShowPassword((v) => !v)}
-                            aria-label={
-                              showPassword ? "Hide password" : "Show password"
-                            }
-                            aria-pressed={showPassword}
                           >
-                            {showPassword ? (
-                              <EyeOff size={18} />
-                            ) : (
-                              <Eye size={18} />
-                            )}
-                          </button>
-                        </div>
-                        {(signup || reset) && (
-                          <small id="password-hint">
-                            At least 8 characters. A long, unique passphrase
-                            works well.
-                          </small>
+                            Forgot password?
+                          </Link>
                         )}
                       </div>
-                    )}
-                    {error && (
-                      <p className="inline-error" role="alert">
-                        {error}
-                      </p>
-                    )}
-                    {signup && !enabled.signup && (
-                      <p className="inline-error" role="status">
-                        New registrations are currently closed. Existing
-                        accounts can still sign in.
-                      </p>
-                    )}
+                      <div className="au-input">
+                        <Lock size={17} aria-hidden="true" />
+                        <input
+                          id="auth-password"
+                          type={showPassword ? "text" : "password"}
+                          required
+                          minLength={signup || reset ? 8 : 1}
+                          autoComplete={
+                            signup || reset ? "new-password" : "current-password"
+                          }
+                          value={password}
+                          onChange={(e) => setPassword(e.target.value)}
+                          disabled={busy}
+                          placeholder={
+                            signup || reset ? "At least 8 characters" : ""
+                          }
+                          aria-describedby={
+                            signup || reset ? "password-hint" : undefined
+                          }
+                        />
+                        <button
+                          type="button"
+                          className="au-eye"
+                          onClick={() => setShowPassword((v) => !v)}
+                          aria-label={
+                            showPassword ? "Hide password" : "Show password"
+                          }
+                          aria-pressed={showPassword}
+                        >
+                          {showPassword ? <EyeOff size={17} /> : <Eye size={17} />}
+                        </button>
+                      </div>
+                      {(signup || reset) && (
+                        <PasswordStrength value={password} />
+                      )}
+                    </div>
+                  )}
+                  {error && (
+                    <p className="au-alert" role="alert">
+                      {error}
+                    </p>
+                  )}
+                  {signup && !enabled.signup && (
+                    <p className="au-alert" role="status">
+                      New registrations are currently closed. Existing accounts
+                      can still sign in.
+                    </p>
+                  )}
+                  <button
+                    className="au-btn au-btn-primary au-submit"
+                    disabled={!s.configured || busy || (signup && !enabled.signup)}
+                  >
+                    {busy ? (
+                      <span className="au-spinner" aria-hidden="true" />
+                    ) : null}
+                    {busy
+                      ? "Please wait…"
+                      : reset
+                        ? "Update password"
+                        : forgot
+                          ? "Send reset link"
+                          : signup
+                            ? "Create account"
+                            : "Sign in"}
+                    {!busy && <ArrowRight size={17} />}
+                  </button>
+                  {s.configured && !reset && !forgot && !signup && (
                     <button
-                      className="button button-primary auth-submit"
-                      disabled={
-                        !s.configured || busy || (signup && !enabled.signup)
-                      }
-                    >
-                      {busy
-                        ? "Please wait…"
-                        : reset
-                          ? "Update password"
-                          : forgot
-                            ? "Send reset link"
-                            : signup
-                              ? "Create account"
-                              : "Continue"}
-                      <ArrowRight size={17} />
-                    </button>
-                  </form>
-                )}
-                {!enabled.email && error && (
-                  <p className="inline-error" role="alert">
-                    {error}
-                  </p>
-                )}
-                {s.configured &&
-                  enabled.email &&
-                  !reset &&
-                  !forgot &&
-                  !signup && (
-                    <button
-                      className="magic-link-button text-link"
+                      type="button"
+                      className="au-btn au-btn-quiet"
                       disabled={
                         busy || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.trim())
                       }
+                      title="Enter your email above first"
                       onClick={(e) => submit(e, true)}
                     >
-                      <Mail size={15} /> Email me a sign-in link
+                      <Sparkles size={16} /> Email me a sign-in link
                     </button>
                   )}
-                {!forgot && !reset && !signup && (
-                  <div className="auth-links">
-                    <Link
-                      className="text-link"
-                      href={
-                        "/auth/forgot-password?next=" + encodeURIComponent(next)
-                      }
-                    >
-                      Forgot password?
-                    </Link>
-                  </div>
-                )}
-              </>
-            )}
-            {!s.configured && (
-              <p className="inline-error" role="status">
-                Sign-in is temporarily unavailable. You can still browse
-                universities and scholarships.
-              </p>
-            )}
-            <div className="auth-privacy">
-              <ShieldCheck size={16} aria-hidden="true" />
-              <span>
-                {staff
-                  ? "Access is checked against your database role."
-                  : "Your saved research stays private to your account."}
-              </span>
-            </div>
+                </form>
+              )}
+              {!enabled.email && error && (
+                <p className="au-alert" role="alert">
+                  {error}
+                </p>
+              )}
+              {forgot && (
+                <Link
+                  className="au-text-link"
+                  href={"/auth/sign-in?next=" + encodeURIComponent(next)}
+                >
+                  <ArrowLeft size={14} /> Back to sign in
+                </Link>
+              )}
+            </>
+          )}
+          {!s.configured && (
+            <p className="au-alert au-alert-info" role="status">
+              Accounts are temporarily unavailable. You can still browse
+              universities and scholarships.
+            </p>
+          )}
+          <footer className="au-foot">
+            <span>
+              <ShieldCheck size={15} aria-hidden="true" />
+              {staff
+                ? "Access is checked against your database role."
+                : "Your saved research stays private to your account."}
+            </span>
             {signup && (
-              <p className="auth-terms">
-                By creating an account, you agree to our{" "}
+              <span>
+                By creating an account you agree to the{" "}
                 <Link href="/terms">Terms</Link> and{" "}
                 <Link href="/privacy">Privacy Policy</Link>.
-              </p>
+              </span>
             )}
-          </section>
-        </div>
+          </footer>
+        </section>
       </div>
+      <aside className="au-aside" aria-hidden="true">
+        <div className="au-aside-inner">
+          <h2>Your university plan, all in one place.</h2>
+          <ul>
+            <li>
+              <Check size={16} /> Shortlist from 8,900+ universities
+            </li>
+            <li>
+              <Check size={16} /> Compare QS, THE and ARWU side by side
+            </li>
+            <li>
+              <Check size={16} /> Track every deadline and task
+            </li>
+          </ul>
+          <div className="au-preview">
+            <div className="au-preview-card">
+              <span className="au-preview-label">Next deadline</span>
+              <strong>Personal statement</strong>
+              <small>In 6 days</small>
+              <div className="au-preview-bar">
+                <span />
+              </div>
+            </div>
+            <div className="au-preview-card au-preview-small">
+              <span className="au-preview-label">Shortlist</span>
+              <div className="au-preview-dots">
+                <i />
+                <i />
+                <i />
+                <i />
+              </div>
+              <small>4 universities · 2 applying</small>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  );
+}
+function PasswordStrength({ value }: { value: string }) {
+  const score = !value
+    ? 0
+    : [
+        value.length >= 8,
+        value.length >= 12,
+        /[a-z]/.test(value) && /[A-Z]/.test(value),
+        /\d/.test(value) || /[^\w\s]/.test(value),
+      ].filter(Boolean).length;
+  const label = ["", "Weak", "Fair", "Good", "Strong"][score];
+  return (
+    <div className="au-strength" data-score={score} id="password-hint">
+      <div aria-hidden="true">
+        {[1, 2, 3, 4].map((n) => (
+          <i key={n} className={n <= score ? "on" : ""} />
+        ))}
+      </div>
+      <small>
+        {value
+          ? `${label} password`
+          : "At least 8 characters. A long passphrase works well."}
+      </small>
     </div>
   );
 }
@@ -581,15 +615,18 @@ export function AuthCallback() {
       );
   }, [params, router]);
   return (
-    <div className="auth-callback">
-      <Brand />
-      <h1>{error ? "Let’s try that again." : "Finishing your sign-in."}</h1>
-      <p>{error || "Restoring your secure session…"}</p>
-      {error && (
-        <Link href="/auth/sign-in" className="button button-primary">
-          Return to sign in
-        </Link>
-      )}
+    <div className="au au-callback">
+      <div className="au-callback-card">
+        <Brand />
+        {!error && <span className="au-spinner au-spinner-lg" aria-hidden="true" />}
+        <h1>{error ? "Let’s try that again" : "Signing you in…"}</h1>
+        <p>{error || "Restoring your secure session."}</p>
+        {error && (
+          <Link href="/auth/sign-in" className="au-btn au-btn-primary">
+            Return to sign in
+          </Link>
+        )}
+      </div>
     </div>
   );
 }

@@ -21,6 +21,7 @@
 @import "./comparison-workspace.css";
 @import "./planner-console.css";
 @import "./staff-workbench.css";
+@import "./redesign.css";
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
