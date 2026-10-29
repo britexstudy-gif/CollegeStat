@@ -59,7 +59,7 @@ node tests/staff-http-smoke.mjs # requires the ignored real review account
 
 ## Setup and data
 
-Read [local setup](docs/LOCAL-SETUP.md), [operations](docs/OPERATIONS.md), [data sources](docs/DATASETS.md), [current data coverage](docs/CURRENT-DATA-2026-09.md), and [the October product pass](docs/PRODUCT-QUALITY-2026-10.md).
+Read [local setup](docs/LOCAL-SETUP.md), [deployment](docs/DEPLOY.md), [operations](docs/OPERATIONS.md), [data sources](docs/DATASETS.md), [current data coverage](docs/CURRENT-DATA-2026-09.md), and [the October product pass](docs/PRODUCT-QUALITY-2026-10.md).
 
 Apply migrations in filename order to a disposable development Supabase project first. `npm run supabase:bundle` creates reproducible SQL imports under ignored `data/exports/`. Use administrative access to apply them; never put service keys in browser configuration.
 

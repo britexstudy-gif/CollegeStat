@@ -14,7 +14,7 @@ const requestSchema = z.discriminatedUnion("action", [
   z.object({
     action: z.literal("save"),
     entity: z.enum(Object.keys(entitySchemas) as [Entity, ...Entity[]]),
-    record: z.record(z.unknown()),
+    record: z.record(z.string(), z.unknown()),
   }),
   z.object({
     action: z.literal("import"),

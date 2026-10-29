@@ -40,7 +40,7 @@ export function normalizeFeed(
     throw new Error("explicit_reporting_year_required");
   const response = z
     .object({
-      results: z.array(z.record(z.unknown())).max(100),
+      results: z.array(z.record(z.string(), z.unknown())).max(100),
       metadata: z.object({ total: z.number().int().nonnegative() }),
     })
     .parse(payload);
