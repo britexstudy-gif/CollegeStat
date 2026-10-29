@@ -243,6 +243,15 @@
   "notes": "International undergraduate tuition, 2026/27 (single). Quote: \"Non-citizens: 15,254 NIS*\" Collected 2026-10-29 by an automated assistant from the official site; confirm programme, residency and year before approving."
  },
  {
+  "university_id": "2e2fd0e8-4ad8-54ef-bf66-74a5ee18876e",
+  "metric": "tuition",
+  "year": 2025,
+  "value": 178,
+  "unit": "EUR",
+  "source_url": "https://www-archives.unistra.fr/fileadmin/upload/unistra/etudes/Droits_differencies/FAQ_25-26-_Droits_differencies_Unistra.pdf",
+  "notes": "International undergraduate tuition, 2025/26 (annual). Non-EU student enrolling in a single licence (first-cycle) programme: national simple fee of 178 EUR for the first registration. Academic year taken from the document title '25-26'. Quote from summarised fetch. Students in the exemption categories listed in the FAQ may pay different amounts. The 2026-27 schema page (de.unistra.fr) gives no licence figure. Second concurrent first-cycle registration is 118 EUR, not reported as tuition. Quote: \"autre Diplôme de 1er cycle 178 €\" Collected 2026-10-29 by an automated assistant from the official site; confirm programme, residency and year before approving."
+ },
+ {
   "university_id": "30573a6d-9a4d-582f-9089-9c360793f28e",
   "metric": "tuition",
   "year": 2026,

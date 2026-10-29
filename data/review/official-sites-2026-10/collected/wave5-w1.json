@@ -1,0 +1,121 @@
+[
+  {
+    "university_id": "1789110d-d2fe-546a-bb76-da8fc3c966d6",
+    "name": "Institute of Science Tokyo",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "NOT FOUND: no official isct.ac.jp page with undergraduate international tuition or English requirement was read. The fee pages led to titech.ac.jp and tmd.ac.jp (predecessor institutions, not the batch domain), which were not used. Undergraduate English requirement not found. Fetches used: 3."
+  },
+  {
+    "university_id": "dcc6acda-25aa-53c1-82a2-29b74ad8734f",
+    "name": "Karlsruher Institut für Technologie",
+    "tuition": [
+      {
+        "amount": 1500,
+        "currency": "EUR",
+        "academic_year": null,
+        "period": "semester",
+        "label": null,
+        "source_url": "https://intl.kit.edu/istudies/12591.php",
+        "quote": "have to pay tuition fees in the amount of EUR 1,500 per semester."
+      }
+    ],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Tuition: the page does not say it applies to bachelor students and gives no academic year; quote from summarised fetch. English: the bachelor page gives no IELTS/TOEFL minimum (only B2 English for one B.A. programme), so none reported. Deadline: the page gives 'Application deadline winter semester: 15th July' for non-EU applicants but no year, so it is not reported (source https://www.intl.kit.edu/istudies/3167.php). Fetches used: 2."
+  },
+  {
+    "university_id": "48224d71-98ac-567c-9c60-733425d09c76",
+    "name": "Universiteit Gent",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "NOT FOUND: the non-EEA fee page covers master's and preparatory programmes only. The bachelor 2026-2027 fee page lists euro amounts under a heading covering EEA and non-EEA students with a diploma contract, which is not clearly the standard bachelor tuition, so nothing was reported. The language page read covers exchange students only (not degree-seeking), so no English minimum was reported. Fetches used: 4."
+  },
+  {
+    "university_id": "04566891-05b0-54be-9472-22d414096201",
+    "name": "Eberhard-Karls-Universität Tübingen",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "NOT CHECKED beyond budget: all fetches of the uni-tuebingen.de fee and admission pages returned only navigation and truncated text, so no fee, English or deadline figure could be quoted. The 1,500 EUR per semester fee appears only in a search-result title, which is not a page read, so it was not reported. Fetch budget was exceeded (5 WebFetch calls, one more than the limit of 4). Fetches used: 5."
+  },
+  {
+    "university_id": "c7885845-c6f9-52dc-afb5-9fb93ba18f70",
+    "name": "Tianjin University",
+    "tuition": [
+      {
+        "amount": 16600,
+        "currency": "RMB",
+        "academic_year": null,
+        "period": "year",
+        "label": "minimum",
+        "source_url": "https://sie.tju.edu.cn/en/xwxm/UNDERGRADUATE/202410/t20241015_323978.html",
+        "quote": "General Major:16,600 RMB (Taught in Chinese) 20,000 RMB (Taught in English)"
+      },
+      {
+        "amount": 26000,
+        "currency": "RMB",
+        "academic_year": null,
+        "period": "year",
+        "label": "maximum",
+        "source_url": "https://sie.tju.edu.cn/en/xwxm/UNDERGRADUATE/202410/t20241015_323978.html",
+        "quote": "Special Major: 26,000 RMB (Architecture/ Software Engineering/Urban and Rural Planning/Landscape Architecture)"
+      }
+    ],
+    "english": [
+      {
+        "kind": "IELTS",
+        "minimum": 6.0,
+        "notes": "Stated as 'IELTS 6.0 or TOEFL 80 is mandatory'; the page does not say whether this is a general or programme-specific minimum. Page refers to the 2025 intake, not a stated academic year. Quote from summarised fetch.",
+        "source_url": "https://sie.tju.edu.cn/en/xwxm/UNDERGRADUATE/202410/t20241015_323978.html",
+        "quote": "IELTS 6.0 or TOEFL 80 is mandatory."
+      },
+      {
+        "kind": "TOEFL",
+        "minimum": 80,
+        "notes": "Stated as 'IELTS 6.0 or TOEFL 80 is mandatory'; the page does not say whether this is a general or programme-specific minimum. Page refers to the 2025 intake, not a stated academic year. Quote from summarised fetch.",
+        "source_url": "https://sie.tju.edu.cn/en/xwxm/UNDERGRADUATE/202410/t20241015_323978.html",
+        "quote": "IELTS 6.0 or TOEFL 80 is mandatory."
+      }
+    ],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Tuition: the page is for the 2025 intake (applications Oct 2024 to May 2025) and gives no academic year for the fees, so academic_year is null; the page says fees are subject to the Admission Notice. Quotes from summarised fetch. Deadline: only the past cycle (Oct 15, 2024 to May 31, 2025) is shown, so skipped. Fetches used: 1."
+  },
+  {
+    "university_id": "35a032fc-f24f-5a50-92ed-b818fca7f222",
+    "name": "University College Dublin",
+    "tuition": [],
+    "english": [
+      {
+        "kind": "IELTS",
+        "minimum": 6.5,
+        "notes": "General table for all applicants and study levels; no undergraduate-specific figure. Overall 6.5 with a minimum of 6.0 in each band (the band minimum is a component minimum). Quote from summarised fetch.",
+        "source_url": "https://www.ucd.ie/registry/prospectivestudents/admissions/policiesandgeneralregulations/generalrequirements/minimumenglishlanguagerequirements/",
+        "quote": "An average score of 6.5 over all components and a minimum of 6.0 in each band."
+      },
+      {
+        "kind": "TOEFL",
+        "minimum": 90,
+        "notes": "General table for all applicants and study levels; no undergraduate-specific figure. Component minimums: no less than 21 in writing and at least 19 in every other section. Quote from summarised fetch.",
+        "source_url": "https://www.ucd.ie/registry/prospectivestudents/admissions/policiesandgeneralregulations/generalrequirements/minimumenglishlanguagerequirements/",
+        "quote": "iBT: 90 (no less than 21 in writing and at least 19 in every other section)"
+      }
+    ],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Tuition: the fees page read (2025/26 non-EU undergraduate) had no fee table in the text, so nothing was reported; only a EUR 5 levy appeared, which is not tuition. Deadline: non-EU applicants apply directly to UCD on a rolling basis with no closing date, so none reported. Fetches used: 4."
+  }
+]

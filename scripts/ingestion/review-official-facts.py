@@ -141,14 +141,16 @@ def main():
                 url, quote = ok
                 kind, minimum = str(e.get("kind") or "").upper(), e.get("minimum")
                 bounds = {"IELTS": (4, 9), "TOEFL": (30, 120)}
-                if kind not in bounds or not isinstance(minimum, (int, float)) or not bounds[kind][0] <= minimum <= bounds[kind][1]:
+                # TOEFL iBT moved to a 1-6 band scale on 21 January 2026; keep both scales distinct.
+                new_scale = kind == "TOEFL" and isinstance(minimum, (int, float)) and 1 <= minimum <= 6
+                if kind not in bounds or not isinstance(minimum, (int, float)) or not (new_scale or bounds[kind][0] <= minimum <= bounds[kind][1]):
                     reject(u, "english", e, "unsupported test or score out of range")
                 elif not in_quote(minimum, quote):
                     reject(u, "english", e, "score does not appear in the quote")
                 else:
                     requirements.append({
-                        "id": str(uuid.uuid5(NS, f"req:{u}:{kind}:{url}")), "university_id": u, "program_id": None,
-                        "kind": kind, "label": ("IELTS Academic · overall" if kind == "IELTS" else "TOEFL iBT · total"),
+                        "id": str(uuid.uuid5(NS, f"req:{u}:{kind}:{minimum}:{url}")), "university_id": u, "program_id": None,
+                        "kind": kind, "label": ("IELTS Academic · overall" if kind == "IELTS" else "TOEFL iBT · current 1–6 scale" if new_scale else "TOEFL iBT · total"),
                         "minimum": minimum, "maximum": None, "student_category": "Undergraduate applicants who need English proficiency evidence",
                         "required": None, "year": None, "source_url": url, "verification_status": "needs_review",
                         "verified_at": None, "notes": (e.get("notes") or "").strip()[:1000], "quote": quote, "collected_at": a.checked_at,

@@ -1,0 +1,141 @@
+[
+  {
+    "university_id": "a96bb2a1-a48d-55fa-8c98-4a3e716e380e",
+    "name": "South China University of Technology",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Checked the international undergraduate programmes page (www2.scut.edu.cn/gzic_en/44830/list.htm) and the application fee page (sie.scut.edu.cn/29037/list.htm). No international undergraduate tuition figure: the page refers to external fee lists. Only the application fee (RMB 450) and insurance (RMB 800 per year) were found, and neither is tuition, so neither is reported. No IELTS or TOEFL requirement for undergraduates was stated. The deadline reads 'June 30 each year' with no year given, so it is not reported. Type not stated."
+  },
+  {
+    "university_id": "b86e106a-7e3d-534d-9f61-d111d5a49dfa",
+    "name": "Beijing University of Aeronautics and Astronautics",
+    "tuition": [
+      {
+        "amount": 25000,
+        "currency": "CNY",
+        "academic_year": null,
+        "period": "year",
+        "label": "minimum",
+        "source_url": "https://is.buaa.edu.cn/lxsq/bks1.htm",
+        "quote": "中文授课项目理工、经管、文法类专业：25,000元/年",
+        "notes": "Chinese-taught programmes (engineering, science, economics/management, humanities/law). Page shows 元 (yuan), coded as CNY. Page says '2026 entry' but does not state an academic year, so academic_year is null. Page is the international undergraduate admissions brochure, linked from global.buaa.edu.cn."
+      },
+      {
+        "amount": 30000,
+        "currency": "CNY",
+        "academic_year": null,
+        "period": "year",
+        "label": "maximum",
+        "source_url": "https://is.buaa.edu.cn/lxsq/bks1.htm",
+        "quote": "英文授课项目所有专业：30,000元/年",
+        "notes": "English-taught programmes, all majors. Same page also lists 30,000 元/年 for Chinese-taught Biological and Medical Engineering and Art majors. Page shows 元 (yuan), coded as CNY. Academic year not stated, so null."
+      }
+    ],
+    "english": [
+      {
+        "kind": "IELTS",
+        "minimum": 6.0,
+        "notes": "For English-taught programmes. The page gives IELTS 6.0 and TOEFL 90 as examples of accepted proof of English ability within the past two years. No separate undergraduate minimum for Chinese-taught programmes was stated.",
+        "source_url": "https://is.buaa.edu.cn/lxsq/bks1.htm",
+        "quote": "IELTS（6.0分及以上）"
+      },
+      {
+        "kind": "TOEFL",
+        "minimum": 90,
+        "notes": "For English-taught programmes. Same example list as the IELTS entry.",
+        "source_url": "https://is.buaa.edu.cn/lxsq/bks1.htm",
+        "quote": "TOEFL（90分及以上）"
+      }
+    ],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Found the 2026 entry fees and English requirements on the admissions brochure page. The 2026 deadline (June 30, 2026) is past, and no 2027 deadline is published, so no deadline is reported. Type not stated."
+  },
+  {
+    "university_id": "2e2fd0e8-4ad8-54ef-bf66-74a5ee18876e",
+    "name": "Université de Strasbourg",
+    "tuition": [
+      {
+        "amount": 178,
+        "currency": "EUR",
+        "academic_year": "2025/26",
+        "period": "year",
+        "label": null,
+        "source_url": "https://www-archives.unistra.fr/fileadmin/upload/unistra/etudes/Droits_differencies/FAQ_25-26-_Droits_differencies_Unistra.pdf",
+        "quote": "autre Diplôme de 1er cycle 178 €",
+        "notes": "Non-EU student enrolling in a single licence (first-cycle) programme: national simple fee of 178 EUR for the first registration. Academic year taken from the document title '25-26'. Quote from summarised fetch. Students in the exemption categories listed in the FAQ may pay different amounts. The 2026-27 schema page (de.unistra.fr) gives no licence figure. Second concurrent first-cycle registration is 118 EUR, not reported as tuition."
+      }
+    ],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Checked the 2026-27 differentiated fees schema (de.unistra.fr) and the 2025-26 FAQ. No English test minimum or 2027 international deadline found on a fetched official page; an English-requirement search returned only third-party sites. Type not checked."
+  },
+  {
+    "university_id": "5c500bb8-70b8-59a4-8e57-9329a2c38f2f",
+    "name": "Jilin University",
+    "tuition": [
+      {
+        "amount": 19000,
+        "currency": "CNY",
+        "academic_year": null,
+        "period": "year",
+        "label": "minimum",
+        "source_url": "https://cie.jlu.edu.cn/info/1079/3655.htm",
+        "quote": "RMB 19,000 / year",
+        "notes": "Lowest of the figures on this page (Humanities/Social Sciences; Sciences/Engineering/Agricultural Sciences). The page does not state an academic year, so academic_year is null. The page does not explicitly say it covers international students. Another official page (cie.jlu.edu.cn/Home/Admission.htm) lists undergraduate tuition in a table with the same kind of figures but no currency, and it gives different figures (e.g. 29,000 for English-taught clinical medicine), so the figures may differ by page. Staff should verify."
+      },
+      {
+        "amount": 36000,
+        "currency": "CNY",
+        "academic_year": null,
+        "period": "year",
+        "label": "maximum",
+        "source_url": "https://cie.jlu.edu.cn/info/1079/3655.htm",
+        "quote": "RMB 36,000 / year",
+        "notes": "Highest figure listed on this page (MBBS). Fetch result listed four categories and may not be the full table. Same caveats as the minimum entry. Quote from summarised fetch."
+      }
+    ],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Admissions page (cie.jlu.edu.cn/Home/Admission.htm) gives an undergraduate tuition table without a currency. The RMB figures come from cie.jlu.edu.cn/info/1079/3655.htm. English requirement: the admissions page says only 'Only for students under English-taught programs' and gives no IELTS or TOEFL score. No undergraduate deadline on the page (it refers to the main site). Type not stated."
+  },
+  {
+    "university_id": "15ff9275-1c2a-5820-9bab-4da296371714",
+    "name": "Albert-Ludwigs-Universität Freiburg",
+    "tuition": [
+      {
+        "amount": 1500,
+        "currency": "EUR",
+        "academic_year": null,
+        "period": "semester",
+        "label": null,
+        "source_url": "https://uni-freiburg.de/en/studies/during-your-studies/tuition-fees-international-students/",
+        "quote": "The tuition fee for international students is 1,500 euros per semester",
+        "notes": "Stated per semester, so period is semester. The page says it is paid in addition to the regular semester fee. Quote from summarised fetch. The page does not state an academic year, and it does not say whether this applies only to undergraduates, so staff should check."
+      }
+    ],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Checked the tuition page on uni-freiburg.de and the English-studies admissions page (anglistik.uni-freiburg.de). The English-studies page requires CEFR B2 with no numeric IELTS or TOEFL minimum, so no english entry is reported. No undergraduate deadline or type found on a fetched page."
+  },
+  {
+    "university_id": "05d89845-ecbf-5ed5-af2a-0e599223fa29",
+    "name": "Suzhou University",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Checked the overseas education page (oversea.suda.edu.cn) and wxy.suda.edu.cn. The overseas page gives no undergraduate tuition or English requirement. The wxy.suda.edu.cn page gives per-semester fees and a deadline from the 2022 cycle, which is outside the target years, so it is not reported. Type not stated."
+  }
+]

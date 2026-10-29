@@ -345,6 +345,437 @@
   }
  },
  {
+  "university_id": "c7885845-c6f9-52dc-afb5-9fb93ba18f70",
+  "kind": "tuition",
+  "reason": "academic year missing or outside 2025-2027",
+  "item": {
+   "amount": 16600,
+   "currency": "RMB",
+   "academic_year": null,
+   "period": "year",
+   "label": "minimum",
+   "source_url": "https://sie.tju.edu.cn/en/xwxm/UNDERGRADUATE/202410/t20241015_323978.html",
+   "quote": "General Major:16,600 RMB (Taught in Chinese) 20,000 RMB (Taught in English)"
+  }
+ },
+ {
+  "university_id": "c7885845-c6f9-52dc-afb5-9fb93ba18f70",
+  "kind": "tuition",
+  "reason": "academic year missing or outside 2025-2027",
+  "item": {
+   "amount": 26000,
+   "currency": "RMB",
+   "academic_year": null,
+   "period": "year",
+   "label": "maximum",
+   "source_url": "https://sie.tju.edu.cn/en/xwxm/UNDERGRADUATE/202410/t20241015_323978.html",
+   "quote": "Special Major: 26,000 RMB (Architecture/ Software Engineering/Urban and Rural Planning/Landscape Architecture)"
+  }
+ },
+ {
+  "university_id": "dcc6acda-25aa-53c1-82a2-29b74ad8734f",
+  "kind": "tuition",
+  "reason": "academic year missing or outside 2025-2027",
+  "item": {
+   "amount": 1500,
+   "currency": "EUR",
+   "academic_year": null,
+   "period": "semester",
+   "label": null,
+   "source_url": "https://intl.kit.edu/istudies/12591.php",
+   "quote": "have to pay tuition fees in the amount of EUR 1,500 per semester."
+  }
+ },
+ {
+  "university_id": "15ff9275-1c2a-5820-9bab-4da296371714",
+  "kind": "tuition",
+  "reason": "academic year missing or outside 2025-2027",
+  "item": {
+   "amount": 1500,
+   "currency": "EUR",
+   "academic_year": null,
+   "period": "semester",
+   "label": null,
+   "source_url": "https://uni-freiburg.de/en/studies/during-your-studies/tuition-fees-international-students/",
+   "quote": "The tuition fee for international students is 1,500 euros per semester",
+   "notes": "Stated per semester, so period is semester. The page says it is paid in addition to the regular semester fee. Quote from summarised fetch. The page does not state an academic year, and it does not say whether this applies only to undergraduates, so staff should check."
+  }
+ },
+ {
+  "university_id": "1e9ebf95-a619-5502-ad17-10055b5d49ba",
+  "kind": "tuition",
+  "reason": "academic year missing or outside 2025-2027",
+  "item": {
+   "amount": 24000,
+   "currency": "CNY",
+   "academic_year": null,
+   "period": "year",
+   "label": "minimum",
+   "source_url": "https://admissions.xmu.edu.cn/Admissions/Undergraduate_Students.htm",
+   "quote": "Humanities: RMB 24,000/year.",
+   "notes": "Chinese-medium humanities programmes. Academic year not stated. Quote from summarised fetch. Page says tuition is payable in RMB by academic year."
+  }
+ },
+ {
+  "university_id": "1e9ebf95-a619-5502-ad17-10055b5d49ba",
+  "kind": "tuition",
+  "reason": "academic year missing or outside 2025-2027",
+  "item": {
+   "amount": 26000,
+   "currency": "CNY",
+   "academic_year": null,
+   "period": "year",
+   "label": "maximum",
+   "source_url": "https://admissions.xmu.edu.cn/Admissions/Undergraduate_Students.htm",
+   "quote": "Science, Engineering, Medicine, Economics, Management, Law, Arts... RMB 26,000/year.",
+   "notes": "Chinese-medium programmes. Academic year not stated. Quote from summarised fetch and abbreviated with an ellipsis."
+  }
+ },
+ {
+  "university_id": "271dbaa2-9f49-59ac-8bf8-e8c7a604c2ae",
+  "kind": "tuition",
+  "reason": "academic year missing or outside 2025-2027",
+  "item": {
+   "amount": 24000,
+   "currency": "CNY",
+   "academic_year": null,
+   "period": "year",
+   "label": "minimum",
+   "source_url": "https://admission-is.bnu.edu.cn/english/faq/faq22/bk22/index.html",
+   "quote": "Humanities and Social Sciences majors: ￥12400 /semester, and ￥24000/ year;",
+   "notes": "Currency shown as yen sign (￥) on the Chinese official site, read as RMB. Academic year not stated on the page. Quote from summarised fetch. Same figure appears in the 2025 international brochure (international.bnu.edu.cn/user/sysNews/detail/18), which also gives no academic year."
+  }
+ },
+ {
+  "university_id": "271dbaa2-9f49-59ac-8bf8-e8c7a604c2ae",
+  "kind": "tuition",
+  "reason": "academic year missing or outside 2025-2027",
+  "item": {
+   "amount": 27700,
+   "currency": "CNY",
+   "academic_year": null,
+   "period": "year",
+   "label": "maximum",
+   "source_url": "https://admission-is.bnu.edu.cn/english/faq/faq22/bk22/index.html",
+   "quote": "Science, Engineering and Art majors: ￥14250 / semester, and ￥27700/ year.",
+   "notes": "Currency shown as yen sign (￥) on the Chinese official site, read as RMB. Academic year not stated on the page. Quote from summarised fetch."
+  }
+ },
+ {
+  "university_id": "35ce761b-adcc-5c73-8bc4-a358b418afa6",
+  "kind": "tuition",
+  "reason": "academic year missing or outside 2025-2027",
+  "item": {
+   "amount": 15000,
+   "currency": "EUR",
+   "academic_year": null,
+   "period": "year",
+   "label": null,
+   "source_url": "https://dtu.dk/english/education/undergraduate/general-engineering/admission-and-deadlines/fees-funding-and-permits",
+   "quote": "The tuition fee at DTU is €15,000 per academic year.",
+   "notes": "Non-EU/EEA bachelor fee on the BSc in General Engineering page. Academic year not stated. Quote from summarised fetch."
+  }
+ },
+ {
+  "university_id": "5c500bb8-70b8-59a4-8e57-9329a2c38f2f",
+  "kind": "tuition",
+  "reason": "academic year missing or outside 2025-2027",
+  "item": {
+   "amount": 19000,
+   "currency": "CNY",
+   "academic_year": null,
+   "period": "year",
+   "label": "minimum",
+   "source_url": "https://cie.jlu.edu.cn/info/1079/3655.htm",
+   "quote": "RMB 19,000 / year",
+   "notes": "Lowest of the figures on this page (Humanities/Social Sciences; Sciences/Engineering/Agricultural Sciences). The page does not state an academic year, so academic_year is null. The page does not explicitly say it covers international students. Another official page (cie.jlu.edu.cn/Home/Admission.htm) lists undergraduate tuition in a table with the same kind of figures but no currency, and it gives different figures (e.g. 29,000 for English-taught clinical medicine), so the figures may differ by page. Staff should verify."
+  }
+ },
+ {
+  "university_id": "5c500bb8-70b8-59a4-8e57-9329a2c38f2f",
+  "kind": "tuition",
+  "reason": "academic year missing or outside 2025-2027",
+  "item": {
+   "amount": 36000,
+   "currency": "CNY",
+   "academic_year": null,
+   "period": "year",
+   "label": "maximum",
+   "source_url": "https://cie.jlu.edu.cn/info/1079/3655.htm",
+   "quote": "RMB 36,000 / year",
+   "notes": "Highest figure listed on this page (MBBS). Fetch result listed four categories and may not be the full table. Same caveats as the minimum entry. Quote from summarised fetch."
+  }
+ },
+ {
+  "university_id": "98208ca6-3d01-5ce9-b57c-d1724f5ebdab",
+  "kind": "tuition",
+  "reason": "academic year missing or outside 2025-2027",
+  "item": {
+   "amount": 20000,
+   "currency": "CNY",
+   "academic_year": null,
+   "period": "year",
+   "label": "minimum",
+   "source_url": "https://www.tongji.edu.cn/eng/Admissions/Undergraduate/Tuition_Fees.htm",
+   "quote": "Liberal Arts (Chinese-taught): CNY 20,000/Year",
+   "notes": "Lowest listed international undergraduate fee. Academic year not defined on the page. Insurance of CNY 800/Year is payable on registration, separately. Quote from summarised fetch."
+  }
+ },
+ {
+  "university_id": "98208ca6-3d01-5ce9-b57c-d1724f5ebdab",
+  "kind": "tuition",
+  "reason": "academic year missing or outside 2025-2027",
+  "item": {
+   "amount": 45000,
+   "currency": "CNY",
+   "academic_year": null,
+   "period": "year",
+   "label": "maximum",
+   "source_url": "https://www.tongji.edu.cn/eng/Admissions/Undergraduate/Tuition_Fees.htm",
+   "quote": "Medicine (English-taught): CNY 45,000/Year",
+   "notes": "Highest listed international undergraduate fee. Academic year not defined on the page. Quote from summarised fetch."
+  }
+ },
+ {
+  "university_id": "a002ead6-250c-572d-8773-015f9419b016",
+  "kind": "tuition",
+  "reason": "academic year missing or outside 2025-2027",
+  "item": {
+   "amount": 90000,
+   "currency": "SEK",
+   "academic_year": null,
+   "period": "year",
+   "label": "minimum",
+   "source_url": "https://www.su.se/english/education/how-to-apply/costs-fees-and-scholarships",
+   "quote": "The price per academic year for studies within the Humanities/Social Sciences/Law is SEK 90,000",
+   "notes": "Subject-area price for first- or second-cycle education. The page gives no separate bachelor's figure and says some programmes have special prices in the range SEK 90,000-140,000. Academic year not stated. Quote from summarised fetch."
+  }
+ },
+ {
+  "university_id": "a002ead6-250c-572d-8773-015f9419b016",
+  "kind": "tuition",
+  "reason": "academic year missing or outside 2025-2027",
+  "item": {
+   "amount": 140000,
+   "currency": "SEK",
+   "academic_year": null,
+   "period": "year",
+   "label": "maximum",
+   "source_url": "https://www.su.se/english/education/how-to-apply/costs-fees-and-scholarships",
+   "quote": "within the Sciences SEK 140,000",
+   "notes": "Subject-area price for Sciences, first- or second-cycle education. See minimum entry for caveats. Quote from summarised fetch."
+  }
+ },
+ {
+  "university_id": "b86e106a-7e3d-534d-9f61-d111d5a49dfa",
+  "kind": "tuition",
+  "reason": "academic year missing or outside 2025-2027",
+  "item": {
+   "amount": 25000,
+   "currency": "CNY",
+   "academic_year": null,
+   "period": "year",
+   "label": "minimum",
+   "source_url": "https://is.buaa.edu.cn/lxsq/bks1.htm",
+   "quote": "中文授课项目理工、经管、文法类专业：25,000元/年",
+   "notes": "Chinese-taught programmes (engineering, science, economics/management, humanities/law). Page shows 元 (yuan), coded as CNY. Page says '2026 entry' but does not state an academic year, so academic_year is null. Page is the international undergraduate admissions brochure, linked from global.buaa.edu.cn."
+  }
+ },
+ {
+  "university_id": "b86e106a-7e3d-534d-9f61-d111d5a49dfa",
+  "kind": "tuition",
+  "reason": "academic year missing or outside 2025-2027",
+  "item": {
+   "amount": 30000,
+   "currency": "CNY",
+   "academic_year": null,
+   "period": "year",
+   "label": "maximum",
+   "source_url": "https://is.buaa.edu.cn/lxsq/bks1.htm",
+   "quote": "英文授课项目所有专业：30,000元/年",
+   "notes": "English-taught programmes, all majors. Same page also lists 30,000 元/年 for Chinese-taught Biological and Medical Engineering and Art majors. Page shows 元 (yuan), coded as CNY. Academic year not stated, so null."
+  }
+ },
+ {
+  "university_id": "ed5b15cb-d889-50df-941c-4764af80621d",
+  "kind": "tuition",
+  "reason": "academic year missing or outside 2025-2027",
+  "item": {
+   "amount": 13000,
+   "currency": "EUR",
+   "academic_year": null,
+   "period": "year",
+   "label": null,
+   "source_url": "https://www.helsinki.fi/en/studying/tuition-fees",
+   "quote": "The fee for the English-language bachelor's programmes is 13,000 EUR per academic year.",
+   "notes": "Non-EU/EEA students in English-taught bachelor's programmes. The fee sentence does not name a year. Quote from summarised fetch."
+  }
+ },
+ {
+  "university_id": "ee15105c-6920-52e8-b1a5-c526c7a233ab",
+  "kind": "tuition",
+  "reason": "source is not on the official domain",
+  "item": {
+   "amount": 535800,
+   "currency": "JPY",
+   "academic_year": null,
+   "period": "year",
+   "label": null,
+   "source_url": "https://admissions.g30.nagoya-u.ac.jp/upload/2027_admission_requirements_en.pdf",
+   "quote": "Annual tuition (total of first and second semester payments): JPY 535,800",
+   "notes": "Global 30 International Programs (English-taught undergraduate), 2027 October intake; page says subject to change. Academic year not stated. Quote from summarised PDF fetch. The general undergraduate table gives JPY 267,900 per semester for all undergraduates and is not international-specific, so it was not used."
+  }
+ },
+ {
+  "university_id": "ee15105c-6920-52e8-b1a5-c526c7a233ab",
+  "kind": "english",
+  "reason": "source is not on the official domain",
+  "item": {
+   "kind": "IELTS",
+   "minimum": 6.0,
+   "notes": "Academic overall band score for Global 30 International Programs. Quote from summarised PDF fetch.",
+   "source_url": "https://admissions.g30.nagoya-u.ac.jp/upload/2027_admission_requirements_en.pdf",
+   "quote": "IELTS (Academic Module): Overall band score of 6.0"
+  }
+ },
+ {
+  "university_id": "ee15105c-6920-52e8-b1a5-c526c7a233ab",
+  "kind": "english",
+  "reason": "source is not on the official domain",
+  "item": {
+   "kind": "TOEFL",
+   "minimum": 4.0,
+   "notes": "Post-January 2026 scoring system; the pre-January 2026 minimum is 80. Global 30 International Programs. Quote from summarised PDF fetch.",
+   "source_url": "https://admissions.g30.nagoya-u.ac.jp/upload/2027_admission_requirements_en.pdf",
+   "quote": "TOEFL iBT: Overall score of 80 (PreJanuary 2026 scoring system) or 4.0 (Post-January 2026 scoring system)"
+  }
+ },
+ {
+  "university_id": "ee15105c-6920-52e8-b1a5-c526c7a233ab",
+  "kind": "deadline",
+  "reason": "source is not on the official domain",
+  "item": {
+   "title": "Global 30 International Programs, first round",
+   "cycle": "2027 entry",
+   "due_at": "2026-11-19",
+   "notes": "Global 30 programme dates, not the general undergraduate schedule, which was not checked. Second round is due 2027-01-21.",
+   "source_url": "https://admissions.g30.nagoya-u.ac.jp/upload/2027_admission_requirements_en.pdf",
+   "quote": "First Round: November 19, 2026, 12:00 noon (JST)"
+  }
+ },
+ {
+  "university_id": "ee15105c-6920-52e8-b1a5-c526c7a233ab",
+  "kind": "deadline",
+  "reason": "source is not on the official domain",
+  "item": {
+   "title": "Global 30 International Programs, second round",
+   "cycle": "2027 entry",
+   "due_at": "2027-01-21",
+   "notes": "Global 30 programme dates. Quote from summarised PDF fetch.",
+   "source_url": "https://admissions.g30.nagoya-u.ac.jp/upload/2027_admission_requirements_en.pdf",
+   "quote": "Second Round: January 21, 2027, 12:00 noon (JST)"
+  }
+ },
+ {
+  "university_id": "1540baf5-79f5-59ed-b687-3979b92f0aae",
+  "kind": "tuition",
+  "reason": "academic year missing or outside 2025-2027",
+  "item": {
+   "amount": 1700,
+   "currency": "CHF",
+   "academic_year": null,
+   "period": "semester",
+   "label": "additional fee for non-Swiss students",
+   "source_url": "https://www.unibe.ch/unibe/portal/content/e1006/e7408/e20292/e175073/e1766093/Fees_fromfall2026_eng.pdf",
+   "quote": "1a* non-Swiss students pay an additional fee of CHF 1’700.-",
+   "notes": "This is a surcharge on top of the regular tuition of CHF 850 per semester, which is not reported here as a separate fact. It applies to non-Swiss students who did not have civil-law residence in Switzerland or Liechtenstein when they obtained their entrance qualification. It is not limited to non-EU students, so it may not match the non-EU definition. The page gives no academic year, only a legal basis dated 'as of November 2025'. The page's total of CHF 2,609 per semester includes a CHF 34 fee and was not reported."
+  }
+ },
+ {
+  "university_id": "21e26f0d-fd30-521e-a9f3-fb97b8452d78",
+  "kind": "tuition",
+  "reason": "academic year missing or outside 2025-2027",
+  "item": {
+   "amount": 1000,
+   "currency": "EUR",
+   "academic_year": null,
+   "period": "year",
+   "label": null,
+   "source_url": "https://www.uniroma1.it/sites/default/files/field_file_allegati/internationaladmissions_web.pdf",
+   "quote": "The annual cost for all Bachelors and Masters programmes is €1000 (only tuition fees)."
+  }
+ },
+ {
+  "university_id": "808b96a5-0e59-5215-a2f5-e7c3c5d2785a",
+  "kind": "tuition",
+  "reason": "academic year missing or outside 2025-2027",
+  "item": {
+   "amount": 23598.0,
+   "currency": "CAD",
+   "academic_year": null,
+   "period": "semester",
+   "label": "minimum",
+   "source_url": "https://uwaterloo.ca/finance/fee-schedule-international-undergraduate-students-fall-2026",
+   "quote": "Environment | \"$4,719.60\" | \"$23,598.00\""
+  }
+ },
+ {
+  "university_id": "808b96a5-0e59-5215-a2f5-e7c3c5d2785a",
+  "kind": "tuition",
+  "reason": "academic year missing or outside 2025-2027",
+  "item": {
+   "amount": 34942.0,
+   "currency": "CAD",
+   "academic_year": null,
+   "period": "semester",
+   "label": "maximum",
+   "source_url": "https://uwaterloo.ca/finance/fee-schedule-international-undergraduate-students-fall-2026",
+   "quote": "Computer Science/Data Science | \"$6,988.40\" | \"$34,942.00\""
+  }
+ },
+ {
+  "university_id": "dfd28fce-cef1-56e7-bc57-4cffd211a117",
+  "kind": "tuition",
+  "reason": "academic year missing or outside 2025-2027",
+  "item": {
+   "amount": 12000,
+   "currency": "EUR",
+   "academic_year": null,
+   "period": "year",
+   "label": "minimum",
+   "source_url": "https://www.aalto.fi/sites/default/files/2025-11/Tuition-fees-at-Aalto-University-2025.pdf",
+   "quote": "Field of Business 12 000 EUR per academic year"
+  }
+ },
+ {
+  "university_id": "dfd28fce-cef1-56e7-bc57-4cffd211a117",
+  "kind": "tuition",
+  "reason": "academic year missing or outside 2025-2027",
+  "item": {
+   "amount": 15000,
+   "currency": "EUR",
+   "academic_year": null,
+   "period": "year",
+   "label": "maximum",
+   "source_url": "https://www.aalto.fi/sites/default/files/2025-11/Tuition-fees-at-Aalto-University-2025.pdf",
+   "quote": "Field of Arts and Architecture 15 000 EUR per academic year"
+  }
+ },
+ {
+  "university_id": "29fa6116-cea2-5702-96ea-0f26492434fe",
+  "kind": "tuition",
+  "reason": "academic year missing or outside 2025-2027",
+  "item": {
+   "amount": 2000,
+   "currency": "USD",
+   "academic_year": null,
+   "period": "year",
+   "label": null,
+   "source_url": "https://home.iitd.ac.in/uploads/ug/25-26/Fee%20Structure_2025-26_UG%20Entry%20Students.pdf",
+   "quote": "NON-SAARC Countries $ 2000 Rs. 22,400 + Rs 8,600 = Rs 31,000 USD 2000 + Rs. 31,000"
+  }
+ },
+ {
   "university_id": "b719e149-7073-5173-a435-791b55891294",
   "kind": "tuition",
   "reason": "academic year missing or outside 2025-2027",
