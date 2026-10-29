@@ -38,3 +38,10 @@ Write ONE JSON file at the output path given in your task, with the Write tool: 
 ```
 
 The file must be valid JSON (no comments, no trailing commas). Then reply with one line: how many universities had at least one fact.
+
+## Wave 2 additions
+
+- Budget: at most 4 WebFetch calls per university (searches are free). The fetch budget is shared by all workers; if WebFetch returns a 403 budget error, stop fetching, write what you have, and mark unread universities "NOT CHECKED" in worker_notes.
+- Prioritise one page per fact: the international undergraduate fees page, the English language requirements page, the international undergraduate deadlines page.
+- Currency: "HK$", "A$", "C$", "NZ$", "S$" are explicit. A bare "$" on the official site of a university in Australia, Canada, New Zealand, Singapore or Hong Kong may be reported in that country's currency; say "currency shown as bare $" in notes.
+- In `quote`, copy the text exactly as the fetch result shows it; if the fetch result looks summarised rather than verbatim, add "quote from summarised fetch" to notes.

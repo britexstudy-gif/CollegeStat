@@ -1,0 +1,120 @@
+[
+  {
+    "university_id": "34f9bd5c-1c24-5d4f-880c-4a342627a148",
+    "name": "UNSW Sydney",
+    "tuition": [],
+    "english": [
+      {
+        "kind": "IELTS",
+        "minimum": 6.5,
+        "notes": "Varies by faculty; 6.5 is the lowest listed overall score (min 6.0 in each subtest). Business and Law & Justice require 7.0 overall (min 6.0 each). Quote from summarised fetch.",
+        "source_url": "https://www.unsw.edu.au/study/how-to-apply/english-language-requirements",
+        "quote": "6.5 overall (min. 6.0 in each subtest)"
+      },
+      {
+        "kind": "TOEFL",
+        "minimum": 90,
+        "notes": "Varies by faculty; 90 is the lowest listed total (min 23 writing, 22 reading/listening/speaking). Business and Law & Justice require 94 (min 25 writing, 23 reading/listening/speaking). Quote from summarised fetch.",
+        "source_url": "https://www.unsw.edu.au/study/how-to-apply/english-language-requirements",
+        "quote": "90 overall (min. 23 in writing, 22 in reading, listening and speaking)"
+      }
+    ],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Tuition: UNSW fee pages state fees per unit of credit (UOC) only; no annual international undergraduate figure was stated, so none was calculated. Deadline: the closing-dates page (apply.c1.adp.unsw.edu.au) was blocked by robots.txt, so no 2027 deadline was read. Type not stated on an official page checked. Web fetches used: 3. Quotes from summarised fetches."
+  },
+  {
+    "university_id": "819bd7c2-cc38-5dc4-854d-2d59a8a9f4e5",
+    "name": "EPFL - EPF Lausanne",
+    "tuition": [],
+    "english": [],
+    "deadline": [
+      {
+        "title": "Bachelor application (general window)",
+        "cycle": "2027 entry",
+        "due_at": "2027-04-30",
+        "notes": "Page gives a general window for studies starting the following September, not a year-specific date; the 2027 year is inferred. Registration form must be submitted by April 30 at the latest. Confirm the year on the official page. Quote from summarised fetch.",
+        "source_url": "https://www.epfl.ch/education/admission/admission-2/bachelor-admission-criteria-and-application/how-to-apply/",
+        "quote": "Applications can be submitted from mid-November to the 30th of April"
+      }
+    ],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Tuition: the study-taxes page gives a CHF 730 base semester fee, which from fall semester 2025 is CHF 2190 per semester for some foreign students; the scope (which students) is unclear, so nothing was reported. English: the admission page names only a French language certificate requirement (except Swiss or francophone education); no IELTS/TOEFL minimum found. Type not stated. Web fetches used: 2."
+  },
+  {
+    "university_id": "d4f88b7a-d026-5860-8906-d9ebdc5df290",
+    "name": "Zhejiang University",
+    "tuition": [
+      {
+        "amount": 200000,
+        "currency": "CNY",
+        "academic_year": "2026 entry (year not stated on page)",
+        "period": "year",
+        "label": "single",
+        "source_url": "https://zje.zju.edu.cn/zje/2023/1130/c81822a2832464/page.htm",
+        "quote": "Tuition fee: CNY 200,000 per year."
+      }
+    ],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "The tuition figure comes from the Zhejiang University-University of Edinburgh Institute (ZJE) undergraduate application guide for international students (2026), so it may apply to ZJE programmes only, not the whole university. The academic year is not stated on the page. Two general ZJU fee pages (intl.zju.edu.cn/en/node/396 and node/17009) show 120,000 RMB per student per academic year without naming the student group, so they were not reported. English: no IELTS/TOEFL minimum stated (page points to another university's requirements). Deadline: only a past cycle (31 May 2026) was shown, so none reported. Web fetches used: 3. Quote from summarised fetch."
+  },
+  {
+    "university_id": "5c9532a7-118a-5e2d-ab32-92ade2e776a5",
+    "name": "Fudan University",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "NOT FOUND: the 2026 list of English-taught undergraduate programmes PDF shows three tuition amounts (100,000 / 80,000 / 75,000 RMB per year) without mapping them to programmes, and says the fee is for reference only, so nothing was reported. No IELTS/TOEFL minimum or 2027 deadline found on the page read. Official undergraduate admission pages were not reached. Type not stated. Web fetches used: 1."
+  },
+  {
+    "university_id": "11087dc1-5405-5bd2-a5e2-def936b94cf7",
+    "name": "University of Tokyo",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "NOT FOUND: the tuition page lists undergraduate tuition as 642,960 yen and another unlabelled annual figure of 535,800 yen, and the school-expenses section is for admission in April 2026, not 2027 entry or international students, so nothing was reported. No TOEFL/IELTS requirement or undergraduate international deadline found; the English-language admission pages read cover graduate programmes only. Type not stated. Web fetches used: 2."
+  },
+  {
+    "university_id": "b48ecdd6-9331-5ee8-a4ad-7f5b046d5356",
+    "name": "McGill University",
+    "tuition": [],
+    "english": [
+      {
+        "kind": "IELTS",
+        "minimum": 6.5,
+        "notes": "General minimum for undergraduate admission; component minimum 6.0 in each band. Quote from summarised fetch.",
+        "source_url": "https://www.mcgill.ca/undergraduate-admissions/apply/english-proficiency",
+        "quote": "A band score of 6.5 or better; individual component scores of 6.0 or better."
+      },
+      {
+        "kind": "TOEFL",
+        "minimum": 90,
+        "notes": "Varies by programme; 90 is the minimum for most programmes on the 120-point scale (tests before 21 Jan 2026), with 21 minimum per component. 100 for Education (TESL) and Management; 79-80 for Music. Page says minima can change. Quote from summarised fetch; the quote field is a paraphrase of the summary.",
+        "source_url": "https://www.mcgill.ca/undergraduate-admissions/apply/english-proficiency",
+        "quote": "the minimum is 90 for most programs"
+      }
+    ],
+    "deadline": [
+      {
+        "title": "Application deadline for Fall 2027 admission to undergraduate programs (overseas or U.S. applicants)",
+        "cycle": "2027 entry",
+        "due_at": "2027-01-15",
+        "notes": "Page listing is titled for applicants from overseas or U.S. high schools, colleges and universities. Quote from summarised fetch.",
+        "source_url": "https://www.mcgill.ca/importantdates/channels/event/application-deadline-fall-2027-admission-undergraduate-programs-applicants-studying-or-who-last-370820",
+        "quote": "Friday, January 15, 2027"
+      }
+    ],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Tuition: the 2026-27 international undergraduate PDF lists per-programme amounts (e.g. 35,561.10; 74,678.31) without a stated currency, and the page does not say whether they are annual or per credit, so nothing was reported. Type not stated on an official page checked. Web fetches used: 4. Quotes from summarised fetches."
+  }
+]

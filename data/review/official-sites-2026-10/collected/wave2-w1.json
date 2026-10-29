@@ -1,0 +1,120 @@
+[
+  {
+    "university_id": "6020a2b5-3788-5dd1-b3f2-b9c6c7c6f99b",
+    "name": "ETHZ - ETH Zurich",
+    "tuition": [
+      {
+        "amount": 2190,
+        "currency": "CHF",
+        "academic_year": "from autumn semester 2025",
+        "period": "semester",
+        "label": "threefold fee",
+        "source_url": "https://ethz.ch/students/en/studies/financial/studiengebuehren.html",
+        "quote": "Threefold tuition fee: CHF 2190 / semester"
+      }
+    ],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Tuition: threefold fee for foreign (non-Swiss, non-EU) students, applies from autumn semester 2025; the page gives no annual total and no academic year label. Non-EU students who meet residence/permit criteria pay CHF 730 per semester (simple fee), not reported here. English: no undergraduate IELTS/TOEFL page found (only master's language page surfaced). Deadline: page says 1 December to 31 March for non-Swiss certificates but does not name the entry year, so not reported. Type not stated on fetched pages. Quotes come from WebFetch output, which is model-summarised; quote from summarised fetch. Fetch budget used (3 of 4)."
+  },
+  {
+    "university_id": "4b7862dc-7567-5f81-af58-c01144412a88",
+    "name": "University College London",
+    "tuition": [],
+    "english": [
+      {
+        "kind": "IELTS",
+        "minimum": 6.5,
+        "notes": "Overall score; minimum 6.0 in each component. Varies by programme: the page lists five levels and says to check each programme; this is the lowest listed level (Level 1). No single general undergraduate minimum on the page.",
+        "source_url": "https://www.ucl.ac.uk/prospective-students/undergraduate/english-language-requirements",
+        "quote": "Level 1: Overall score of 6.5 and a minimum of 6.0 in each component"
+      }
+    ],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Tuition: fee tables for 2026-27 overseas undergraduates were not retrieved (fee pages returned no figures or failed); NOT FOUND. Deadline: not found on fetched pages. TOEFL level 1 not reported because the page gives two different scales (pre and post 21 January 2026). Type not stated. Quote from summarised fetch. Fetch budget used (4 of 4)."
+  },
+  {
+    "university_id": "519c66df-8779-5336-acda-2cba10f95c66",
+    "name": "Tsinghua University",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Pages found are on join-tsinghua.edu.cn (Tsinghua international admissions site), which is not under tsinghua.edu.cn, so none of their facts are reported. Staff should confirm whether that domain counts as official before use. Candidate facts for review: deadline for 2027 intake second round 'from 8:00 AM November 21, 2026 to 5:00 PM February 28, 2027 (Beijing Time)' at https://international.join-tsinghua.edu.cn/Admission1/Schedule.htm; annual tuition 26,000 RMB for some programmes and 100,000 RMB maximum on https://international.join-tsinghua.edu.cn/Admission1/Fees.htm but the page does not state the academic year (copyright 2020). English: FAQ says TOEFL/IELTS accepted, no minimum stated. Type not stated. Fetch budget used (3 of 4)."
+  },
+  {
+    "university_id": "79e1cf8b-6a97-5fef-ac23-aa6012197801",
+    "name": "Peking University",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "NOT FOUND for 2027 entry. Candidate tuition on https://isd.pku.edu.cn/en/campus_detail.php?id=700 lists 'Humanities Subject: 26,000 RMB/Year' and 'Science Subjects: 30,000 RMB/Year' but no academic year is stated, so not reported; staff may verify. Undergraduate tuition, English and deadline pages on isd.pku.edu.cn (undergraduate_program.php, admission.php) returned no figures. Type not stated. Fetch budget used (4 of 4)."
+  },
+  {
+    "university_id": "7deae08f-080e-56cd-8aa8-ca05c941f0cc",
+    "name": "The Chinese University of Hong Kong",
+    "tuition": [
+      {
+        "amount": 214000,
+        "currency": "HKD",
+        "academic_year": "2026/27",
+        "period": "year",
+        "label": "non-local",
+        "source_url": "https://admission.cuhk.edu.hk/fees-financing-your-studies/fees/",
+        "quote": "HK$214,000* (2026-2027 annual tuition fees for non-local students)"
+      }
+    ],
+    "english": [
+      {
+        "kind": "IELTS",
+        "minimum": 6.0,
+        "notes": "Overall band score. No component minimums stated. Page does not separate non-local undergraduate applicants from other groups.",
+        "source_url": "https://admission.cuhk.edu.hk/application/non-jupas/language-requirements/",
+        "quote": "6.0 (Overall Band Score)"
+      },
+      {
+        "kind": "TOEFL",
+        "minimum": 80,
+        "notes": "Total score. For tests taken on or after 21 January 2026 the page gives '4.5 out of 6 / 80 out of 120 (Overall Score)'; for earlier tests it gives 80 (Total Score). No component minimums stated.",
+        "source_url": "https://admission.cuhk.edu.hk/application/non-jupas/language-requirements/",
+        "quote": "4.5 out of 6 / 80 out of 120 (Overall Score)"
+      }
+    ],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Tuition: 'HK$214,000' is the annual figure for non-local students in 2026-27, a single figure with no min/max; the 2026 cohort fee adjustment is capped at 3%. Currency is explicit HK$. Deadline: 2027-entry deadline not published on fetched pages (non-JUPAS pages show 2025/2026 cycle only); NOT FOUND. Type not stated. Quotes come from WebFetch output, which is model-summarised; quote from summarised fetch. Fetch budget used (4 of 4)."
+  },
+  {
+    "university_id": "6f8ca7da-1cba-56f4-89e6-4cffd48126ac",
+    "name": "University of Melbourne",
+    "tuition": [],
+    "english": [
+      {
+        "kind": "IELTS",
+        "minimum": 6.5,
+        "notes": "Overall score (Academic); no band less than 6.0.",
+        "source_url": "https://study.unimelb.edu.au/how-to-apply/english-language-requirements/undergraduate-english-language-requirements",
+        "quote": "total score of at least 6.5 in the Academic International English Language Testing System (IELTS)"
+      },
+      {
+        "kind": "TOEFL",
+        "minimum": 79,
+        "notes": "Total score (iBT) with component minimums: writing 21, speaking 18, reading 13, listening 13.",
+        "source_url": "https://study.unimelb.edu.au/how-to-apply/english-language-requirements/undergraduate-english-language-requirements",
+        "quote": "TOEFL Internet-based test: total score of at least 79"
+      }
+    ],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Tuition: not found for 2025/26 or 2026/27. The indicative undergraduate fee page is for 2024 only (bachelor fees per EFTSL, not reported); the 2026 international fee PDF covers postgraduate courses only. Deadline: not found on fetched pages. Type not stated. Quotes come from WebFetch output, which is model-summarised; quote from summarised fetch. Fetch budget used (4 of 4); tuition and deadline NOT CHECKED beyond these pages."
+  }
+]

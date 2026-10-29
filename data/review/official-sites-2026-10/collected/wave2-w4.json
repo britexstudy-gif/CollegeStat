@@ -1,0 +1,87 @@
+[
+  {
+    "university_id": "3c2d87b3-5b20-5df8-99c0-1353112a63f2",
+    "name": "Ludwig-Maximilians-Universität München",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "NOT FOUND: no international bachelor fee amount, English test minimum or 2027 deadline on lmu.de. Fees page https://www.lmu.de/en/workspace-for-students/abc-study-guide/fees-and-tuition-fees/ (read via summarised fetch) says: 'As of the winter semester 2013/14, no tuition fees are charged.' Not tied to 2025/26 or 2026/27, so not reported; staff may want to confirm. Guidelines page https://lmu.de/en/study/degree-students/applications-for-admission/guidelines-and-faqs/ lists only winter 2026/27 deadlines (already past) and mentions German proficiency, not English test scores. Quotes from summarised fetches. Fetches used: 2."
+  },
+  {
+    "university_id": "e2e9494c-968c-55f4-8889-2ec1ac65fbdd",
+    "name": "University of Copenhagen",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "NOT FOUND: amounts. https://studies.ku.dk/bachelor/admission-requirements/non-eu-eea says non-EU/EEA bachelor applicants 'need to pay tuition fees' but gives no amount, currency or year; directs to faculty. Bachelor admission page https://www.ku.dk/studies/bachelor/admission-requirements states 'The University of Copenhagen only offers bachelor programmes taught in Danish', so English test minimums do not apply to bachelor admission. Deadline '15 March 12 Midday CET' has no year on the page, so not reported. Quotes from summarised fetches. Fetches used: 3."
+  },
+  {
+    "university_id": "c5ca35b6-8983-574d-89ec-d15da6afa1fe",
+    "name": "Université Paris Sciences et Lettres",
+    "tuition": [
+      {
+        "amount": 19500,
+        "currency": "EUR",
+        "academic_year": "2026/27",
+        "period": "year",
+        "label": "single",
+        "source_url": "https://static.psl.eu/sites/default/files/psai_2026_fees_bsai_ven_0.pdf",
+        "quote": "Fiscal residence outside a member State of the Europen Union 19 500 Flat-rate fee with no possible reduction."
+      }
+    ],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Tuition is for the International Bachelor of Science in AI only (PSL fee PDF, 2026/27, non-EU student row, table labelled 'Fee (in euros)'); other PSL bachelor programmes were not checked, so this is not a university-wide figure. Label 'single' because it is one programme figure, not a min/max. Quote from a summarised fetch of the PDF. Pages https://psl.eu/en/education/applying-bachelors-degree and https://psl.eu/en/international-admissions-procedures-psl gave no fee, English minimum or 2027 deadline for international applicants. Fetches used: 3."
+  },
+  {
+    "university_id": "6e2ae583-50c4-53d5-a0ed-d11422c64773",
+    "name": "University of Manchester",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "NOT FOUND: the standard fees page https://www.studentsupport.manchester.ac.uk/finances/tuition-fees/fee-amounts/standard-tuition-fees says international undergraduate fees 'vary by programme and can be found by checking course profile pages' and gives no figure. Language page https://www.manchester.ac.uk/study/international/admissions/undergraduate-application-process/undergraduate-entry-requirements/ says English requirements are 'usually the equivalent of IELTS 6.0–7.0' and 'specified on individual course profiles'; not a stated minimum, so not reported. No 2027 international deadline found. Fetches used: 3."
+  },
+  {
+    "university_id": "6a9e2556-fc5f-56a2-bca0-9364f099818c",
+    "name": "Seoul National University",
+    "tuition": [],
+    "english": [
+      {
+        "kind": "TOEFL",
+        "minimum": 80,
+        "notes": "From the admissions FAQ, which says it was 'Last updated in 2021'. Page does not clearly restrict this to undergraduate programmes; the fetch summary labelled it undergraduate. Quote from a summarised fetch. Component minimums not stated. Official page also accepts TEPS 551 and TOPIK level 3 or higher, not reported as separate entries.",
+        "source_url": "https://en.snu.ac.kr/admission/overview/faq/admission",
+        "quote": "2) English Proficiency: TOEFL iBT 80, TEPS 551, IELTS 6.0 or higher."
+      },
+      {
+        "kind": "IELTS",
+        "minimum": 6.0,
+        "notes": "From the same FAQ (last updated 2021); see TOEFL entry. Quote from a summarised fetch.",
+        "source_url": "https://en.snu.ac.kr/admission/overview/faq/admission",
+        "quote": "2) English Proficiency: TOEFL iBT 80, TEPS 551, IELTS 6.0 or higher."
+      }
+    ],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "NOT FOUND: undergraduate tuition in KRW. The FAQ gives only the application fee (KRW 70,000). Spring 2027 online application period was 6-9 July 2026 (https://en.snu.ac.kr/admission/overview/notice?md=v&bbsidx=170606), already past, so not reported. The 2027 spring guide PDF and the 'Admissions for Undergraduate, Spring 2027' PDF were linked but not read. Fetches used: 3 of 4 budget."
+  },
+  {
+    "university_id": "5f90631a-ee6a-587d-a542-5fb1d07d0705",
+    "name": "University of Science and Technology of China",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "NOT FOUND: no international undergraduate tuition, English minimum or 2027 deadline on the pages read (ic.ustc.edu.cn news index, ic.ustc.edu.cn undergraduate programme page, en.ustc.edu.cn/info/1057/1128.htm). The en.ustc.edu.cn page lists 'TOEFL 79/IELTS 6 for English-taught programs' but it appears to apply to postgraduate study (bachelor's degree required), so not reported. The linked Admission Guide was not reachable from these pages. Fetches used: 3."
+  }
+]

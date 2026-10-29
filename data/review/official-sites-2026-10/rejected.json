@@ -14,6 +14,20 @@
   }
  },
  {
+  "university_id": "6020a2b5-3788-5dd1-b3f2-b9c6c7c6f99b",
+  "kind": "tuition",
+  "reason": "not an annual figure",
+  "item": {
+   "amount": 2190,
+   "currency": "CHF",
+   "academic_year": "from autumn semester 2025",
+   "period": "semester",
+   "label": "threefold fee",
+   "source_url": "https://ethz.ch/students/en/studies/financial/studiengebuehren.html",
+   "quote": "Threefold tuition fee: CHF 2190 / semester"
+  }
+ },
+ {
   "university_id": "d445d34a-9eee-5fcf-8175-3cd18d2f9803",
   "kind": "tuition",
   "reason": "academic year missing or outside 2025-2027",

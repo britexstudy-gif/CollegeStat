@@ -1,0 +1,167 @@
+[
+  {
+    "university_id": "40dc3bce-f456-577e-9003-9c143d3b52bb",
+    "name": "Shanghai Jiaotong University",
+    "tuition": [],
+    "english": [
+      {
+        "kind": "IELTS",
+        "minimum": 6.0,
+        "notes": "Page states IELTS 6 or above for the 2027 intake. Quote from summarised fetch.",
+        "source_url": "https://gc.sjtu.edu.cn/admission/international-undergraduate-admission/application-requirements/",
+        "quote": "IELTS: 6 or above."
+      },
+      {
+        "kind": "TOEFL",
+        "minimum": 90,
+        "notes": "TOEFL iBT, tests taken before 21 Jan 2026 (0-120 scale). The same page gives a minimum of 4.5 for tests taken on or after 21 Jan 2026 (1-6 scale). Quote from summarised fetch.",
+        "source_url": "https://gc.sjtu.edu.cn/admission/international-undergraduate-admission/application-requirements/",
+        "quote": "TOEFL iBT – exams taken before January 21, 2026: minimum 90 (0–120 scale)"
+      }
+    ],
+    "deadline": [
+      {
+        "title": "Regular Application (international undergraduate)",
+        "cycle": "2027 entry",
+        "due_at": "2027-03-31",
+        "notes": "Beijing time (GMT+8). Same page also lists an Early Action deadline of 1 Nov 2026. Quote from summarised fetch.",
+        "source_url": "https://gc.sjtu.edu.cn/admission/international-undergraduate-admission/application-requirements/",
+        "quote": "Regular Application – March 31, 2027 (Beijing Time, GMT+8); Decisions released in or before July 2027"
+      }
+    ],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Tuition: en.sjtu.edu.cn page (degree-programs/387) gives RMB 24,800 per academic year for international undergraduates on Chinese-taught programmes, but the page gives no academic year, so it was not reported. Global Institute of Future Technology fee (RMB 120,000) is programme-specific, not reported. Type not checked. Quotes from summarised fetches."
+  },
+  {
+    "university_id": "14fa4c62-b910-520b-aa51-0bf334f02b1c",
+    "name": "Australian National University",
+    "tuition": [],
+    "english": [],
+    "deadline": [
+      {
+        "title": "Semester 1 2027 application closing date (international)",
+        "cycle": "2027 entry",
+        "due_at": "2026-12-15",
+        "notes": "Page is titled for international undergraduate and postgraduate applicants; the Crawford School has an earlier date (31 Oct 2026) for its programmes. Undergraduate-specific date not confirmed; staff should check. Quote from summarised fetch.",
+        "source_url": "https://study.anu.edu.au/apply/international-applications",
+        "quote": "Applications are now open and will close on the 15 December 2026."
+      }
+    ],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Tuition: fees summary and international tuition fee pages link to course entries and schedule PDFs but give no figures in the fetched text; the schedule PDFs are on a CDN domain, not used. Undergraduate IELTS/TOEFL minimum not found on the pages read (ANU English policy page not fetched, per-university fetch cap). Type not checked."
+  },
+  {
+    "university_id": "f2f2a71c-abeb-5dc7-b18b-aa8b00611b0a",
+    "name": "University of Edinburgh",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Tuition: finance page shows a 2026/27 study-abroad fee of GBP 30,988 for non-exchange students; this is not general international undergraduate tuition, so excluded. The 2026-27 full-time new students page has no overseas figure in the fetched text. English page refers to the degree finder and gives no minimum score. Deadline: per-university fetch cap reached; deadlines page gave no date. NOT CHECKED for deadline. Type not checked."
+  },
+  {
+    "university_id": "01649f44-22e4-5b85-adaa-81f3538aa083",
+    "name": "King's College London, University of London",
+    "tuition": [],
+    "english": [
+      {
+        "kind": "IELTS",
+        "minimum": 7.5,
+        "notes": "Highest undergraduate band: 7.5 overall with at least 7.0 in each skill. The page does not name which programmes fall in each band. Quote from summarised fetch.",
+        "source_url": "https://www.kcl.ac.uk/study/undergraduate/how-to-apply/english-language-requirements",
+        "quote": "7.5 overall with a minimum of 7.0 in each skill"
+      },
+      {
+        "kind": "IELTS",
+        "minimum": 7.0,
+        "notes": "Second undergraduate band: 7.0 overall with at least 6.5 in each skill. Programme mapping not stated. Quote from summarised fetch.",
+        "source_url": "https://www.kcl.ac.uk/study/undergraduate/how-to-apply/english-language-requirements",
+        "quote": "7.0 overall with a minimum of 6.5 in each skill"
+      },
+      {
+        "kind": "TOEFL",
+        "minimum": 109,
+        "notes": "Highest undergraduate band: 109 overall, 27 in writing, at least 25 in each other skill. Results must be sent via King's Apply. Quote from summarised fetch.",
+        "source_url": "https://www.kcl.ac.uk/study/undergraduate/how-to-apply/english-language-requirements",
+        "quote": "109 overall with 27 in writing and a minimum of 25 in each of the other skills."
+      },
+      {
+        "kind": "TOEFL",
+        "minimum": 100,
+        "notes": "Second undergraduate band: 100 overall, at least 25 in writing and 23 in each other skill. Programme mapping not stated. Quote from summarised fetch.",
+        "source_url": "https://www.kcl.ac.uk/study/undergraduate/how-to-apply/english-language-requirements",
+        "quote": "100 overall with a minimum of 25 in writing and 23 in each of the other skills."
+      }
+    ],
+    "deadline": [
+      {
+        "title": "Standard application deadline (full-time undergraduate, UCAS)",
+        "cycle": "2027 entry",
+        "due_at": "2027-01-13",
+        "notes": "Stated as the standard deadline for all full-time undergraduate applicants, including international applicants. King's treats applications received after this date as late. Quote from summarised fetch.",
+        "source_url": "https://www.kcl.ac.uk/study/undergraduate/how-to-apply",
+        "quote": "The standard deadline for applications is 13 January 2027 18:00 (UK time)"
+      }
+    ],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Tuition: fee pages fetched show home fees or refer to course finder; no international undergraduate figure in fetched text. Type not checked. Per-university fetch cap reached."
+  },
+  {
+    "university_id": "66cc3fd0-3055-5d88-b1d0-586a11515643",
+    "name": "Monash University",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Tuition: fees page says tuition varies by course and status but gives no figure in the fetched text. 2027 International Undergraduate Course Guide PDF and Arts course page both returned client errors, so not read. English requirement and deadline not found on pages read. Type not checked."
+  },
+  {
+    "university_id": "74996b5e-c39f-52f1-9e01-88f3051f155b",
+    "name": "The Hong Kong University of Science and Technology",
+    "tuition": [
+      {
+        "amount": 215000,
+        "currency": "HKD",
+        "academic_year": "2026/27",
+        "period": "year",
+        "label": "2026-27 admitted cohort",
+        "source_url": "https://registry.hkust.edu.hk/resource-library/tuition-rates-ug",
+        "quote": "$215,000 per annum"
+      },
+      {
+        "amount": 185000,
+        "currency": "HKD",
+        "academic_year": "2025/26",
+        "period": "year",
+        "label": "2025-26 admitted cohort",
+        "source_url": "https://registry.hkust.edu.hk/resource-library/tuition-rates-ug",
+        "quote": "$185,000 per annum"
+      }
+    ],
+    "english": [
+      {
+        "kind": "IELTS",
+        "minimum": 6.0,
+        "notes": "Academic overall band 6.0. No component minimums listed. Taken from the university English Language Admissions Requirement document; not confirmed as undergraduate-only. Quote from summarised fetch.",
+        "source_url": "https://join.hkust.edu.hk/oas/elar.pdf",
+        "quote": "Academic Overall Band: 6.0"
+      },
+      {
+        "kind": "TOEFL",
+        "minimum": 80,
+        "notes": "Total score in one sitting of 80 for tests before 21 Jan 2026. The same document gives 4.5 for tests from 21 Jan 2026, which does not fit the 80 scale; flagged for staff review. Quote from summarised fetch.",
+        "source_url": "https://join.hkust.edu.hk/oas/elar.pdf",
+        "quote": "Total Score (in one sitting): 80"
+      }
+    ],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Tuition: figures are shown with a bare $ sign on the HKUST registry page and are reported as HKD (Hong Kong). The page text does not show a non-local column heading in the quoted cell; non-local status and the cohort mapping come from the summarised fetch, so staff should verify. HK$260,000 on the join.hkust.edu.hk fees page is for 2027/28, excluded. Deadline: application procedures page lists a priority round of 25 Nov 2026 and close of 30 Jun 2027 but does not state the entry year, so left out. Type not checked. Quotes from summarised fetches."
+  }
+]

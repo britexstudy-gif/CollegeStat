@@ -1,5 +1,23 @@
 [
  {
+  "university_id": "7deae08f-080e-56cd-8aa8-ca05c941f0cc",
+  "metric": "tuition",
+  "year": 2026,
+  "value": 214000,
+  "unit": "HKD",
+  "source_url": "https://admission.cuhk.edu.hk/fees-financing-your-studies/fees/",
+  "notes": "International undergraduate tuition, 2026/27 (non-local). Quote: \"HK$214,000* (2026-2027 annual tuition fees for non-local students)\" Collected 2026-10-29 by an automated assistant from the official site; confirm programme, residency and year before approving."
+ },
+ {
+  "university_id": "d4f88b7a-d026-5860-8906-d9ebdc5df290",
+  "metric": "tuition",
+  "year": 2026,
+  "value": 200000,
+  "unit": "CNY",
+  "source_url": "https://zje.zju.edu.cn/zje/2023/1130/c81822a2832464/page.htm",
+  "notes": "International undergraduate tuition, 2026 entry (year not stated on page) (single). Quote: \"Tuition fee: CNY 200,000 per year.\" Collected 2026-10-29 by an automated assistant from the official site; confirm programme, residency and year before approving."
+ },
+ {
   "university_id": "c67598f4-8b91-53a9-a98a-ebd185ced219",
   "metric": "tuition",
   "year": 2027,
@@ -16,6 +34,33 @@
   "unit": "AUD",
   "source_url": "https://www.sydney.edu.au/study/fees-and-loans/international-student-tuition-fees.html",
   "notes": "International undergraduate tuition, 2027 entry (maximum). Quote: \"Health sciences | Undergraduate | A$60,600 – A$65,900 | A$63,600 – A$69,200 (table row, Full-time fees guide for 2027 entry)\" Collected 2026-10-29 by an automated assistant from the official site; confirm programme, residency and year before approving."
+ },
+ {
+  "university_id": "74996b5e-c39f-52f1-9e01-88f3051f155b",
+  "metric": "tuition",
+  "year": 2026,
+  "value": 215000,
+  "unit": "HKD",
+  "source_url": "https://registry.hkust.edu.hk/resource-library/tuition-rates-ug",
+  "notes": "International undergraduate tuition, 2026/27 (2026-27 admitted cohort). Quote: \"$215,000 per annum\" Collected 2026-10-29 by an automated assistant from the official site; confirm programme, residency and year before approving."
+ },
+ {
+  "university_id": "74996b5e-c39f-52f1-9e01-88f3051f155b",
+  "metric": "tuition",
+  "year": 2025,
+  "value": 185000,
+  "unit": "HKD",
+  "source_url": "https://registry.hkust.edu.hk/resource-library/tuition-rates-ug",
+  "notes": "International undergraduate tuition, 2025/26 (2025-26 admitted cohort). Quote: \"$185,000 per annum\" Collected 2026-10-29 by an automated assistant from the official site; confirm programme, residency and year before approving."
+ },
+ {
+  "university_id": "c5ca35b6-8983-574d-89ec-d15da6afa1fe",
+  "metric": "tuition",
+  "year": 2026,
+  "value": 19500,
+  "unit": "EUR",
+  "source_url": "https://static.psl.eu/sites/default/files/psai_2026_fees_bsai_ven_0.pdf",
+  "notes": "International undergraduate tuition, 2026/27 (single). Quote: \"Fiscal residence outside a member State of the Europen Union 19 500 Flat-rate fee with no possible reduction.\" Collected 2026-10-29 by an automated assistant from the official site; confirm programme, residency and year before approving."
  },
  {
   "university_id": "6941fb87-c482-5aa1-9f3c-a5de7cf736dc",
