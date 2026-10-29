@@ -776,6 +776,36 @@
   }
  },
  {
+  "university_id": "a75ede9d-f2a9-5169-837d-38e810d35a6b",
+  "kind": "tuition",
+  "reason": "collector says the fee is not specific to international students",
+  "item": {
+   "label": "minimum",
+   "amount": 157.04,
+   "currency": "EUR",
+   "academic_year": "2026/27",
+   "period": "year",
+   "source_url": "https://www.unibo.it/en/study/enrolment-fees-and-other-procedures/degree-programmes/tuition-fees-and-exemptions",
+   "quote": "the amount to be paid each year ranges from a minimum of €157.04 to a maximum that varies depending on the programme you enrol on.",
+   "notes": "Income-based fee that applies to all degree students (Italian and foreign citizens), not an international-only tuition rate. The page does not state the maximum; it links to a separate Italian-language PDF. Quote from summarised fetch."
+  }
+ },
+ {
+  "university_id": "5b24f3f6-adcb-53fb-a89e-4f25f33f8da2",
+  "kind": "tuition",
+  "reason": "academic year missing or outside 2025-2027",
+  "item": {
+   "label": null,
+   "amount": 0,
+   "currency": "EUR",
+   "academic_year": null,
+   "period": "year",
+   "source_url": "https://www.uni-hamburg.de/en/campuscenter/campus-leben/finanzen.html",
+   "quote": "in October 2012 the University of Hamburg abolished tuition fees.",
+   "notes": "Page says tuition fees were abolished for all students and only a semester contribution is charged; the semester contribution amount is not stated on the page. Academic year not stated. Currency not stated on page; EUR is the country's currency and is assumed. Quote from summarised fetch."
+  }
+ },
+ {
   "university_id": "b719e149-7073-5173-a435-791b55891294",
   "kind": "tuition",
   "reason": "academic year missing or outside 2025-2027",
@@ -788,6 +818,256 @@
    "source_url": "https://unil.ch/immat/en/home/menuinst/futurs-etudiants/sinscrire/les-taxes-semestrielles.html",
    "quote": "Tuition fees (exams included) and semester fees: CHF 580.- (per semester)",
    "notes": "Per-semester figure for Bachelor students as stated on the page. The page states no separate rate for foreign (non-Swiss) students, so this figure may not be international-specific; staff should confirm. Academic year not stated on the page."
+  }
+ },
+ {
+  "university_id": "b719e149-7073-5173-a435-791b55891294",
+  "kind": "tuition",
+  "reason": "academic year missing or outside 2025-2027",
+  "item": {
+   "label": null,
+   "amount": 580,
+   "currency": "CHF",
+   "academic_year": null,
+   "period": "semester",
+   "source_url": "https://www.unil.ch/immat/en/home/menuinst/futurs-etudiants/sinscrire/les-taxes-semestrielles.html",
+   "quote": "Tuition fees (exams included) and semester fees: CHF 580.- (per semester)",
+   "notes": "Page gives one rate for all Bachelor students, not an international-only rate. Academic year not stated on the page. Quote from summarised fetch."
+  }
+ },
+ {
+  "university_id": "b865e086-9fba-5fd2-8b1f-9be60d97baf4",
+  "kind": "tuition",
+  "reason": "academic year missing or outside 2025-2027",
+  "item": {
+   "amount": 1562.5,
+   "currency": "USD",
+   "academic_year": null,
+   "period": "semester",
+   "label": "minimum",
+   "source_url": "https://admission.usm.my/images/00uginternational/fee_2025/UNDERGRADUATE_INTERNATIONAL_TUITION_FEES_PER_SEMESTER.pdf",
+   "quote": "3 US6212001 - BACHELOR OF MUSIC WITH HONOURS 1,562.50",
+   "notes": "Per-semester fee from the 'UNDERGRADUATE TUITION FEES (PER SEMESTER)' table, column 'NON-CITIZEN / USD'. Academic year not stated in the document (file path says fee_2025); left null. Quote from summarised fetch. Medical programmes in the same table (Doctor of Medicine 13,750.00; Doctor of Dental Surgery 11,250.00) were not used as the undergraduate range; offshore International Medical Programme listed at 10,000.00 with no undergraduate label."
+  }
+ },
+ {
+  "university_id": "b865e086-9fba-5fd2-8b1f-9be60d97baf4",
+  "kind": "tuition",
+  "reason": "academic year missing or outside 2025-2027",
+  "item": {
+   "amount": 3125,
+   "currency": "USD",
+   "academic_year": null,
+   "period": "semester",
+   "label": "maximum",
+   "source_url": "https://admission.usm.my/images/00uginternational/fee_2025/UNDERGRADUATE_INTERNATIONAL_TUITION_FEES_PER_SEMESTER.pdf",
+   "quote": "8 US6526001 - BACHELOR OF SCIENCE IN QUANTITY SURVEYING WITH HONOURS 3,125.00",
+   "notes": "Per-semester, USD, academic year not stated (left null). Quote from summarised fetch; the same value also appears on the Architecture line."
+  }
+ },
+ {
+  "university_id": "f68b940c-61ed-5be0-96e9-d70422a3f8bf",
+  "kind": "tuition",
+  "reason": "not an annual figure",
+  "item": {
+   "amount": 328250,
+   "currency": "INR",
+   "academic_year": "2025/26",
+   "period": "semester",
+   "label": null,
+   "source_url": "https://acad.iitb.ac.in/ug-new-entrants-fees",
+   "quote": "Academic fees for the Autumn Semester 2025-26 ... 3,28,250/-",
+   "notes": "Foreign nationals, Autumn Semester 2025-26 academic fees, same figure across the JEE (Advanced), INMO and UCEED admission routes. Page says the fee structure is subject to revision. Page is for UG new entrants, not B.Tech specifically. Quote from summarised fetch (quote joins two separate lines of the page). Foreign nationals with PIO/OCI cards issued before 04/03/2021 pay Indian fees (not applicable here)."
+  }
+ },
+ {
+  "university_id": "56162036-b07a-5316-98e1-126e03c794ea",
+  "kind": "tuition",
+  "reason": "invalid amount or currency",
+  "item": {
+   "amount": 0,
+   "currency": null,
+   "academic_year": null,
+   "period": "year",
+   "label": null,
+   "source_url": "https://www.sns.it/en/studiare-a-costo-zero",
+   "quote": "In fact, studies at the Normale are free of charge: university tuition fees are fully reimbursed;"
+  }
+ },
+ {
+  "university_id": "b83472eb-1a12-5b42-9769-79e2649e9009",
+  "kind": "tuition",
+  "reason": "invalid amount or currency",
+  "item": {
+   "amount": 0,
+   "currency": null,
+   "academic_year": null,
+   "period": "year",
+   "label": null,
+   "source_url": "https://www.tu.berlin/en/studying/organizing-your-studies/financing-your-studies",
+   "quote": "There are no tuition fees to pay at TU Berlin."
+  }
+ },
+ {
+  "university_id": "9d02e057-63ee-5ee9-aeef-4aa112d65d2a",
+  "kind": "tuition",
+  "reason": "academic year missing or outside 2025-2027",
+  "item": {
+   "amount": 81250,
+   "currency": "AED",
+   "academic_year": null,
+   "period": "year",
+   "label": "estimated annual cost, BSc (4-year normal duration)",
+   "source_url": "https://www.ku.ac.ae/?p=101609",
+   "quote": "The estimated annual figure appears in a table as \"81,250 AED\" for a Bachelor of Science, with a \"Normal Duration of Study\" of \"4 Years.\""
+  }
+ },
+ {
+  "university_id": "134932db-50b6-573c-a856-474f34c60efc",
+  "kind": "deadline",
+  "reason": "date is past or outside the 2027 cycle",
+  "item": {
+   "title": "Undergraduate applications close",
+   "cycle": "2027 entry",
+   "due_at": "2026-07-31",
+   "notes": "General closing date for all undergraduate applicants, not specific to international applicants. Page dates are 2026 dates; '2027 entry' is inferred and not stated verbatim. Later international dates on same page: supporting documents 30 September 2026; deadline for international applicants to attract an offer 15 November 2026. Quote from summarised fetch.",
+   "source_url": "https://uct.ac.za/students/applications/key-dates",
+   "quote": "31 July 2026: \"Undergraduate applications close. We do not consider late application requests.\""
+  }
+ },
+ {
+  "university_id": "3361a926-61e2-5a23-9399-fb6db0dcefe7",
+  "kind": "tuition",
+  "reason": "academic year missing or outside 2025-2027",
+  "item": {
+   "amount": 22000,
+   "currency": "CNY",
+   "academic_year": null,
+   "period": "year",
+   "label": "minimum",
+   "source_url": "https://studyat.nwpu.edu.cn/info/1135/3201.htm",
+   "quote": "Chinese medium: 22000 RMB/Year",
+   "notes": "2026 NPU Undergraduate Program Guide. The page does not state an academic year. Quote from summarised fetch."
+  }
+ },
+ {
+  "university_id": "3361a926-61e2-5a23-9399-fb6db0dcefe7",
+  "kind": "tuition",
+  "reason": "academic year missing or outside 2025-2027",
+  "item": {
+   "amount": 25000,
+   "currency": "CNY",
+   "academic_year": null,
+   "period": "year",
+   "label": "maximum",
+   "source_url": "https://studyat.nwpu.edu.cn/info/1135/3201.htm",
+   "quote": "English medium: 25000 RMB/Year",
+   "notes": "Same guide. The fees-information page (studyat.nwpu.edu.cn/ADMISSIONS1/Tuition.htm) gives the same 25,000 and 22,000 CNY per year. Quote from summarised fetch."
+  }
+ },
+ {
+  "university_id": "3dfbc021-a651-5e0b-84b7-da126c795ba5",
+  "kind": "tuition",
+  "reason": "academic year missing or outside 2025-2027",
+  "item": {
+   "amount": 19500,
+   "currency": "CNY",
+   "academic_year": null,
+   "period": "year",
+   "label": "minimum",
+   "source_url": "https://sie.dlut.edu.cn/info/1179/2479.htm",
+   "quote": "Undergraduates (Chinese, Foreign Languages, Humanities & Social Sciences): 19,500",
+   "notes": "Table labelled 'Tuition/Year' for four-year programmes; no academic year stated. Quote from summarised fetch."
+  }
+ },
+ {
+  "university_id": "3dfbc021-a651-5e0b-84b7-da126c795ba5",
+  "kind": "tuition",
+  "reason": "academic year missing or outside 2025-2027",
+  "item": {
+   "amount": 25000,
+   "currency": "CNY",
+   "academic_year": null,
+   "period": "year",
+   "label": "maximum",
+   "source_url": "https://sie.dlut.edu.cn/info/1179/2479.htm",
+   "quote": "Undergraduates (Art Design): 25,000",
+   "notes": "Same table. Conflicts with the English-taught figure below (25,500); both are reported as the page states."
+  }
+ },
+ {
+  "university_id": "3dfbc021-a651-5e0b-84b7-da126c795ba5",
+  "kind": "tuition",
+  "reason": "academic year missing or outside 2025-2027",
+  "item": {
+   "amount": 25500,
+   "currency": "CNY",
+   "academic_year": null,
+   "period": "year",
+   "label": "English-taught programmes",
+   "source_url": "https://sie.dlut.edu.cn/info/1179/2480.htm",
+   "quote": "tuition is listed as \"25,500\" CNY per year for the four-year English-taught undergraduate programmes",
+   "notes": "From the English-taught bachelor programmes page. No academic year stated. Quote from summarised fetch."
+  }
+ },
+ {
+  "university_id": "59ce050c-68d5-5716-b96f-418d0f1db0ba",
+  "kind": "tuition",
+  "reason": "academic year missing or outside 2025-2027",
+  "item": {
+   "amount": 26000,
+   "currency": "CNY",
+   "academic_year": null,
+   "period": "year",
+   "label": "minimum",
+   "source_url": "https://en.szu.edu.cn/info/1023/1903.htm",
+   "quote": "Liberal arts: 26,000 RMB/person/year",
+   "notes": "From the 2026 SZU Admission Brochure for the Bachelor Program of International Students. The fee text gives no academic year. Quote from summarised fetch."
+  }
+ },
+ {
+  "university_id": "59ce050c-68d5-5716-b96f-418d0f1db0ba",
+  "kind": "tuition",
+  "reason": "academic year missing or outside 2025-2027",
+  "item": {
+   "amount": 40000,
+   "currency": "CNY",
+   "academic_year": null,
+   "period": "year",
+   "label": "maximum",
+   "source_url": "https://en.szu.edu.cn/info/1023/1903.htm",
+   "quote": "Medicine, Arts, Physical: 40,000 RMB/person/year",
+   "notes": "Same brochure. Science & Engineering is 30,000 RMB/person/year. Quote from summarised fetch."
+  }
+ },
+ {
+  "university_id": "731c32c4-6abe-59b8-bfe1-c0df705c0612",
+  "kind": "tuition",
+  "reason": "invalid amount or currency",
+  "item": {
+   "amount": 0,
+   "currency": null,
+   "academic_year": null,
+   "period": "year",
+   "label": null,
+   "source_url": "https://uni-koeln.de/en/international/study-in-cologne/costs-financing",
+   "quote": "The University of Cologne does not charge any tuition fees.",
+   "notes": "Amount stated as no tuition fees (0). Currency and academic year are not stated on the page, so both are null. The page's general statement covers all students, not international students only. Quote from summarised fetch."
+  }
+ },
+ {
+  "university_id": "a32d9481-0ee7-518c-b118-bf5abdee9f53",
+  "kind": "tuition",
+  "reason": "academic year missing or outside 2025-2027",
+  "item": {
+   "amount": 0,
+   "currency": "EUR",
+   "academic_year": null,
+   "period": "year",
+   "label": "single",
+   "source_url": "https://www.uni-muenster.de/international/studierende/general-information/cost-and-funding.html",
+   "quote": "Für die regulären Studiengänge müssen Sie keine Studiengebühren an der Universität Münster bezahlen",
+   "notes": "No tuition for regular degree programmes (quote from summarised fetch). The page gives a semester contribution of about 370 EUR per semester, which is not tuition. The page does not give a bachelor-specific statement or an academic year."
   }
  }
 ]

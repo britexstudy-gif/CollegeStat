@@ -124,6 +124,8 @@ def main():
                     reject(u, "tuition", t, "not an annual figure")
                 elif not in_quote(amount, quote):
                     reject(u, "tuition", t, "amount does not appear in the quote")
+                elif re.search(r"not (an |a )?international|not international-only|not specific to international|all (degree )?students", t.get("notes") or "", re.I):
+                    reject(u, "tuition", t, "collector says the fee is not specific to international students")
                 else:
                     label = t.get("label") or "annual"
                     observations.append({

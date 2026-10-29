@@ -1,0 +1,122 @@
+[
+  {
+    "university_id": "0685b063-ce42-5129-b839-c71e3b46211f",
+    "name": "Tel Aviv University",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "NOT FOUND: no international undergraduate tuition figure. The bachelor's fee page gives 'Base tuition fee for a bachelor's degree is NIS 12,168' for 2026-2027, but does not say it applies to international students, so it was left out. The main regulations say foreign residents pay 25% above the base fee, with no amount given. No IELTS/TOEFL minimum or 2027 deadline found. Official PDFs checked: undergrad.pdf (only the 2014 deadline appears) and the English placement exam text (no IELTS/TOEFL). Web call budget used."
+  },
+  {
+    "university_id": "82ab247b-2fe2-56ce-90a7-292c759b906f",
+    "name": "University of Padua",
+    "tuition": [
+      {
+        "amount": 2790,
+        "currency": "EUR",
+        "academic_year": "2026/27",
+        "period": "year",
+        "label": "minimum",
+        "source_url": "https://www.unipd.it/en/contribuzione-studentesca",
+        "quote": "All-inclusive fee for students with citizenship of countries not belonging to the European Union € 2790",
+        "notes": "Fixed all-inclusive fee for non-EU citizens not resident in Italy, Group A (Humanities). Quote from summarised fetch: the fetch result was truncated, so wording is not confirmed verbatim."
+      },
+      {
+        "amount": 2990,
+        "currency": "EUR",
+        "academic_year": "2026/27",
+        "period": "year",
+        "label": "maximum",
+        "source_url": "https://www.unipd.it/en/contribuzione-studentesca",
+        "quote": "All-inclusive fee for students with citizenship of countries not belonging to the European Union € 2990",
+        "notes": "Fixed all-inclusive fee for non-EU citizens not resident in Italy, Group B (Scientific and Primary Teacher Education). Quote from summarised fetch: the fetch result was truncated, so wording is not confirmed verbatim."
+      }
+    ],
+    "english": [],
+    "deadline": [
+      {
+        "title": "First call for degree programmes (international applicants)",
+        "cycle": "2027/28 entry",
+        "due_at": "2026-11-15",
+        "notes": "Page says applications open 15 September 2026 for most degree programmes. Italian-taught programmes have deadlines that vary by programme, so this is not confirmed for every bachelor's course. Quote from summarised fetch.",
+        "source_url": "https://www.unipd.it/en/ammissione-studenti-internazionali",
+        "quote": "The first call will close on 15 November 2026."
+      }
+    ],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "English requirement is in a separate PDF ('Certificazioni accettate e punteggi minimi', English-taught programmes) that was not reachable in the fetch, so no IELTS/TOEFL figure was recorded. Tuition is for the 2026/27 year only. Web call budget used."
+  },
+  {
+    "university_id": "731c32c4-6abe-59b8-bfe1-c0df705c0612",
+    "name": "Universität Köln",
+    "tuition": [
+      {
+        "amount": 0,
+        "currency": null,
+        "academic_year": null,
+        "period": "year",
+        "label": null,
+        "source_url": "https://uni-koeln.de/en/international/study-in-cologne/costs-financing",
+        "quote": "The University of Cologne does not charge any tuition fees.",
+        "notes": "Amount stated as no tuition fees (0). Currency and academic year are not stated on the page, so both are null. The page's general statement covers all students, not international students only. Quote from summarised fetch."
+      }
+    ],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Winter application deadline 15 July and summer 15 January are stated (Studienstart International page), but no year is given, so they were not recorded. The language requirement for that route is German (DSH-2 or equivalent), not English, so no English entry. No IELTS/TOEFL found. Web call budget used."
+  },
+  {
+    "university_id": "aaa437f6-4cb5-5446-a0d1-de07b20e1fa5",
+    "name": "Radboud University Nijmegen",
+    "tuition": [],
+    "english": [
+      {
+        "kind": "IELTS",
+        "minimum": 6.0,
+        "notes": "General minimum for most English-taught bachelor's programmes: overall 6.0 with all sub-scores at least 6.0 (IELTS Academic, not IELTS Online). Biology, Chemistry, Computing Science, Molecular Life Sciences, Natural Sciences and Philosophy, Politics and Society require overall 6.5 with all sub-scores at least 6.0. Quote from summarised fetch.",
+        "source_url": "https://www.ru.nl/en/education/application-and-admission/language-requirements/english-language-requirements/minimum-test-scores-bachelors",
+        "quote": "IELTS Academic (note: not IELTS Online) with overall score ≥6.0 and all sub-scores ≥6.0"
+      }
+    ],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "TOEFL not recorded: the same page lists TOEFL overall >=4.5 in both tables, which the page itself appears to have wrong; verify before use. Tuition: the non-EEA institutional fee found (EUR 17,701) is for 2027-2028, outside the requested years, and the EUR 2,694 figure is the statutory fee for EU/EEA students, so neither was recorded. Deadline: 1 April for non-EU/EEA students is stated without a year, so it was not recorded. Web call budget used."
+  },
+  {
+    "university_id": "76aa91bc-0527-5b1b-9891-2b4d84037b90",
+    "name": "Johann Wolfgang Goethe Universität Frankfurt am Main",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "NOT FOUND: no international undergraduate tuition, English requirement or 2027 deadline on the pages fetched. The deadlines page had headings with no dates. The international access page says most international applicants apply through uni-assist. Web call budget used."
+  },
+  {
+    "university_id": "d63eb7ed-7d2c-5ce5-8b86-2b85f75101a4",
+    "name": "Université Grenoble Alpes",
+    "tuition": [
+      {
+        "amount": 2902,
+        "currency": "EUR",
+        "academic_year": "2026/27",
+        "period": "year",
+        "label": null,
+        "source_url": "https://etudier.univ-grenoble-alpes.fr/candidater-et-vous-inscrire/cout-des-etudes/droits-d-inscription/le-montant-des-droits-d-inscription-a-l-universite-grenoble-alpes-1615749.kjsp?RH=1752240978269",
+        "quote": "Licence 2 902 €",
+        "notes": "Differentiated fee (droits différenciés) for non-EU students in licence, from the table titled 'Montant des droits d'inscription à l'UGA pour l'année universitaire 2026-2027'. Quote from summarised fetch, so the wording is not verbatim. Figure written as 2902 from '2 902 €'. The 178 EUR national-fee rate applies only to exempt students and was not recorded. A 1 934 EUR rate applies to a second diploma and was not recorded."
+      }
+    ],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "No English requirement found for general licence admission; the search returned only department-level pages (IELTS prep, specific programmes). No 2027 deadline found. The student-portal fee page failed with a client error. Web call budget used."
+  }
+]

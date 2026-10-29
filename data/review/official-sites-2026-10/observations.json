@@ -315,6 +315,15 @@
   "notes": "International undergraduate tuition, 2026/27 (maximum). Overseas fee band 3 for 2026/27. Page also says overseas students should budget for an increase of up to 8% for every year of the course. Quote: \"Band 3: All Science, Engineering, Health, and Psychology courses | £32,000\" Collected 2026-10-29 by an automated assistant from the official site; confirm programme, residency and year before approving."
  },
  {
+  "university_id": "835b45a6-e652-5e5e-937b-c365bb1d8e7a",
+  "metric": "tuition",
+  "year": 2026,
+  "value": 18600,
+  "unit": "EUR",
+  "source_url": "https://www.tue.nl/en/education/become-a-tue-student/tuition-fees-and-other-study-costs/tuition-fee",
+  "notes": "International undergraduate tuition, 2026/27 (annual). Quote: \"Institutional fee for bachelor’s students | € 18,600 | € 22,400\" Collected 2026-10-29 by an automated assistant from the official site; confirm programme, residency and year before approving."
+ },
+ {
   "university_id": "7aa094cd-7138-5fb0-b290-2242644f4a90",
   "metric": "tuition",
   "year": 2026,
@@ -331,5 +340,41 @@
   "unit": "MOP",
   "source_url": "https://reg.um.edu.mo/admissions/general-information/fees",
   "notes": "International undergraduate tuition, 2026/27 (maximum). Quote: \"Programme Full Tuition Fee within Normal Study Period. Undergraduate non-local (international) tuition, 2026/2027 academic year (MOP): 5-year Bachelor's programmes: 613,000\" Collected 2026-10-29 by an automated assistant from the official site; confirm programme, residency and year before approving."
+ },
+ {
+  "university_id": "828f04bc-48ef-5f99-9ad2-4acf10da27c9",
+  "metric": "tuition",
+  "year": 2025,
+  "value": 2895,
+  "unit": "EUR",
+  "source_url": "https://www.univ-amu.fr/en/etudiants-internationaux/etudiants-internationaux-formation-diplomante/droits-dinscription-differencies-etudiants-union-europeenne",
+  "notes": "International undergraduate tuition, 2025/26 (single). Differentiated fees for students from outside the EU. The page states 2025-2026 only; it says the 2026-2027 differentiated fees 'will be updated shortly', so no 2026/27 figure is reported. Quote from summarised fetch. Quote: \"2,895 euros for a year in the Bachelor's program\" Collected 2026-10-29 by an automated assistant from the official site; confirm programme, residency and year before approving."
+ },
+ {
+  "university_id": "82ab247b-2fe2-56ce-90a7-292c759b906f",
+  "metric": "tuition",
+  "year": 2026,
+  "value": 2790,
+  "unit": "EUR",
+  "source_url": "https://www.unipd.it/en/contribuzione-studentesca",
+  "notes": "International undergraduate tuition, 2026/27 (minimum). Fixed all-inclusive fee for non-EU citizens not resident in Italy, Group A (Humanities). Quote from summarised fetch: the fetch result was truncated, so wording is not confirmed verbatim. Quote: \"All-inclusive fee for students with citizenship of countries not belonging to the European Union € 2790\" Collected 2026-10-29 by an automated assistant from the official site; confirm programme, residency and year before approving."
+ },
+ {
+  "university_id": "82ab247b-2fe2-56ce-90a7-292c759b906f",
+  "metric": "tuition",
+  "year": 2026,
+  "value": 2990,
+  "unit": "EUR",
+  "source_url": "https://www.unipd.it/en/contribuzione-studentesca",
+  "notes": "International undergraduate tuition, 2026/27 (maximum). Fixed all-inclusive fee for non-EU citizens not resident in Italy, Group B (Scientific and Primary Teacher Education). Quote from summarised fetch: the fetch result was truncated, so wording is not confirmed verbatim. Quote: \"All-inclusive fee for students with citizenship of countries not belonging to the European Union € 2990\" Collected 2026-10-29 by an automated assistant from the official site; confirm programme, residency and year before approving."
+ },
+ {
+  "university_id": "d63eb7ed-7d2c-5ce5-8b86-2b85f75101a4",
+  "metric": "tuition",
+  "year": 2026,
+  "value": 2902,
+  "unit": "EUR",
+  "source_url": "https://etudier.univ-grenoble-alpes.fr/candidater-et-vous-inscrire/cout-des-etudes/droits-d-inscription/le-montant-des-droits-d-inscription-a-l-universite-grenoble-alpes-1615749.kjsp?RH=1752240978269",
+  "notes": "International undergraduate tuition, 2026/27 (annual). Differentiated fee (droits différenciés) for non-EU students in licence, from the table titled 'Montant des droits d'inscription à l'UGA pour l'année universitaire 2026-2027'. Quote from summarised fetch, so the wording is not verbatim. Figure written as 2902 from '2 902 €'. The 178 EUR national-fee rate applies only to exempt students and was not recorded. A 1 934 EUR rate applies to a second diploma and was not recorded. Quote: \"Licence 2 902 €\" Collected 2026-10-29 by an automated assistant from the official site; confirm programme, residency and year before approving."
  }
 ]

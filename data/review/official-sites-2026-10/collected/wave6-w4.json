@@ -1,0 +1,119 @@
+[
+  {
+    "university_id": "c73fffe8-a4ac-5cb2-8129-237abf096957",
+    "name": "University of Barcelona",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "NOT FOUND: no annual international undergraduate tuition on official pages checked. ub.edu/acad/grau/matricula and ub.edu/acad/matricula/preus.html give only per-credit prices (17,69 EUR standard; 90 EUR per credit for study-abroad/individual applications), which are not annual figures and the page does not say which applies to non-EU degree students. English, deadline and type not checked (fetch budget used on fees pages)."
+  },
+  {
+    "university_id": "9d02e057-63ee-5ee9-aeef-4aa112d65d2a",
+    "name": "Khalifa University of Science, Technology and Research",
+    "tuition": [
+      {
+        "amount": 81250,
+        "currency": "AED",
+        "academic_year": null,
+        "period": "year",
+        "label": "estimated annual cost, BSc (4-year normal duration)",
+        "source_url": "https://www.ku.ac.ae/?p=101609",
+        "quote": "The estimated annual figure appears in a table as \"81,250 AED\" for a Bachelor of Science, with a \"Normal Duration of Study\" of \"4 Years.\""
+      }
+    ],
+    "english": [
+      {
+        "kind": "IELTS",
+        "minimum": 6.5,
+        "notes": "General minimum stated for applicants; page does not separate undergraduate from other levels. Quote from summarised fetch.",
+        "source_url": "https://www.ku.ac.ae/faqs/what-are-the-minimum-english-language-requirements-e-g-toefl-ielts-test-scoresi",
+        "quote": "minimum academic IELTS overall band score of 6.5"
+      },
+      {
+        "kind": "TOEFL",
+        "minimum": 91,
+        "notes": "TOEFL iBT (internet-based) general minimum; same page as IELTS. Quote from summarised fetch.",
+        "source_url": "https://www.ku.ac.ae/faqs/what-are-the-minimum-english-language-requirements-e-g-toefl-ielts-test-scoresi",
+        "quote": "applicants must achieve a minimum iTOEFL (internet-based test) score of 91"
+      }
+    ],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Tuition: page gives AED 2,500 per credit hour for BSc and an estimated annual cost of 81,250 AED; academic year not stated, so null; figure is an estimate on the page, not a fee schedule. Quote from summarised fetch. Deadline: page says 'Applications for Fall 2027 will open soon' with no dates, left out. Type not checked."
+  },
+  {
+    "university_id": "134932db-50b6-573c-a856-474f34c60efc",
+    "name": "University of Cape Town",
+    "tuition": [],
+    "english": [
+      {
+        "kind": "IELTS",
+        "minimum": 6.5,
+        "notes": "Overall band 6.5 with at least 6.0 in each component. Page does not separate undergraduate from postgraduate requirements; programme-specific requirements may differ. Quote from summarised fetch.",
+        "source_url": "https://uct.ac.za/students/applications-admission-requirements/language-requirements",
+        "quote": "an overall score of band 6.5 or above, with at least 6.0 in each component."
+      },
+      {
+        "kind": "TOEFL",
+        "minimum": 88,
+        "notes": "Overall 88 with at least 19 Listening, 19 Writing, 20 Reading, 22 Speaking. Page does not separate undergraduate from postgraduate. Quote from summarised fetch.",
+        "source_url": "https://uct.ac.za/students/applications-admission-requirements/language-requirements",
+        "quote": "with an overall score of 88 or above, with at least 19 in Listening, 19 in Writing, 20 in Reading and 22 in Speaking."
+      }
+    ],
+    "deadline": [
+      {
+        "title": "Undergraduate applications close",
+        "cycle": "2027 entry",
+        "due_at": "2026-07-31",
+        "notes": "General closing date for all undergraduate applicants, not specific to international applicants. Page dates are 2026 dates; '2027 entry' is inferred and not stated verbatim. Later international dates on same page: supporting documents 30 September 2026; deadline for international applicants to attract an offer 15 November 2026. Quote from summarised fetch.",
+        "source_url": "https://uct.ac.za/students/applications/key-dates",
+        "quote": "31 July 2026: \"Undergraduate applications close. We do not consider late application requests.\""
+      }
+    ],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Tuition: the 2026 fees booklet gives ZAR 80,400 for students from outside Africa, but it is described as an International Term Fee charged on top of course fees, not full tuition, and the course fee table was not in the fetched text, so it is left out. Type not checked."
+  },
+  {
+    "university_id": "9bff146e-eafa-54b3-a7b2-9d31faf1642d",
+    "name": "Université de Montréal",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "NOT FOUND: registraire.umontreal.ca/droits-de-scolarite/couts shows a table with 30 772,80 $ for 30 credits (1 025,76 $ per credit) under a heading 'a compter de l'automne 2020'; no academic year for 2026/27 and not stated as annual, so left out. Bare '$' currency is not confirmed. Undergraduate deadline page shows '1er fevrier' for international first-cycle applicants (autumn term) with no year stated, so left out. No English test minimum found on the official pages checked. Type not checked."
+  },
+  {
+    "university_id": "6e2f79d8-a01f-5ed1-9d35-b81fdccd16ae",
+    "name": "Vrije Universiteit Amsterdam",
+    "tuition": [],
+    "english": [
+      {
+        "kind": "IELTS",
+        "minimum": 6.5,
+        "notes": "Standard bachelor's programmes. Selective programmes require more (PPE: 6.5 with at least 6.0 in each component; Law in Society: 6.5 with at least 7.0 for reading). TOEFL omitted: the page gives a new-scale figure (4.5 overall) that is not comparable to the iBT total. Quote from summarised fetch.",
+        "source_url": "https://vu.nl/en/education/more-about/meeting-language-proficiency-requirements",
+        "quote": "IELTS (academic): 6.5 overall."
+      }
+    ],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Tuition: page says non-EEA students pay the institutional tuition fee, and the only 2026-2027 figure on the page is the statutory rate for a different group; the institutional rate is in a separate PDF not fetched, so left out. Deadline: page lists 1 June (visa/residence permit) and 31 August (EU/EEA) for English-test submission but no international bachelor's application deadline for 2027, left out. Type not checked."
+  },
+  {
+    "university_id": "2903e6ed-ff35-58a9-b374-04d315be3094",
+    "name": "Göteborg University",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "NOT FOUND: gu.se tuition page says fees depend on the programme and year of entry, are paid per semester, and are given in SEK, but no amount is shown. Apply page gives a non-EU/EEA application period of 16 October to 15 January and documentation deadline 1 February, with no year stated, so left out. English page says only 'an internationally recognised English test' with no minimum score. Type not checked."
+  }
+]
