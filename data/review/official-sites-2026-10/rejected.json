@@ -1,0 +1,45 @@
+[
+ {
+  "university_id": "6020a2b5-3788-5dd1-b3f2-b9c6c7c6f99b",
+  "kind": "tuition",
+  "reason": "not an annual figure",
+  "item": {
+   "amount": 2190,
+   "currency": "CHF",
+   "academic_year": "2025/26",
+   "period": "semester",
+   "label": "threefold tuition fee for foreign students",
+   "source_url": "https://ethz.ch/students/en/studies/financial/studiengebuehren.html",
+   "quote": "Threefold tuition fee: CHF 2190 / semester. The threefold tuition fee for foreign students will apply from the Autumn Semester 2025."
+  }
+ },
+ {
+  "university_id": "d445d34a-9eee-5fcf-8175-3cd18d2f9803",
+  "kind": "tuition",
+  "reason": "academic year missing or outside 2025-2027",
+  "item": {
+   "amount": 726.72,
+   "currency": "EUR",
+   "academic_year": null,
+   "period": "semester",
+   "label": "tuition (Studienbeitrag) for non-EU/EEA bachelor students",
+   "source_url": "https://studieren.univie.ac.at/studienbeitrag/hoehe-studienbeitrag",
+   "quote": "Studienbeitrag: 726,72 Euro."
+  }
+ },
+ {
+  "university_id": "b719e149-7073-5173-a435-791b55891294",
+  "kind": "tuition",
+  "reason": "academic year missing or outside 2025-2027",
+  "item": {
+   "amount": 580,
+   "currency": "CHF",
+   "academic_year": null,
+   "period": "semester",
+   "label": null,
+   "source_url": "https://unil.ch/immat/en/home/menuinst/futurs-etudiants/sinscrire/les-taxes-semestrielles.html",
+   "quote": "Tuition fees (exams included) and semester fees: CHF 580.- (per semester)",
+   "notes": "Per-semester figure for Bachelor students as stated on the page. The page states no separate rate for foreign (non-Swiss) students, so this figure may not be international-specific; staff should confirm. Academic year not stated on the page."
+  }
+ }
+]

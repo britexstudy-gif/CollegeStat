@@ -1,0 +1,61 @@
+[
+  {
+    "university_id": "21e26f0d-fd30-521e-a9f3-fb97b8452d78",
+    "name": "University of Roma \"La Sapienza\"",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Tuition page (uniroma1.it/en/pagina/tuition-fees-and-benefits) gives no non-EU amounts; it links to a separate foreign-citizenship fee page, which could not be fetched (WebFetch budget exhausted). No English requirement or deadline found."
+  },
+  {
+    "university_id": "accccabf-7374-575c-a90e-2a1b27d4a6ba",
+    "name": "University of St. Andrews",
+    "tuition": [
+      {
+        "amount": 33250,
+        "currency": "GBP",
+        "academic_year": "2026/27",
+        "period": "year",
+        "label": "minimum",
+        "source_url": "https://www.st-andrews.ac.uk/study/undergraduate/fees/world/",
+        "quote": "If you are studying in the Faculty of Arts, Divinity or Science, tuition fees for 2026-2027 will be £33,250."
+      },
+      {
+        "amount": 39620,
+        "currency": "GBP",
+        "academic_year": "2026/27",
+        "period": "year",
+        "label": "maximum",
+        "source_url": "https://www.st-andrews.ac.uk/study/undergraduate/fees/world/",
+        "quote": "If you are studying in the Faculty of Medicine, tuition fees for entrant students in 2026-2027 will be £39,620."
+      }
+    ],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Tuition taken from the 'Rest of the world' fee page: one fixed fee per faculty group (Arts/Divinity/Science vs Medicine); the page does not say which faculties are in between, so the range is labelled min/max by faculty group. IELTS/TOEFL, deadline and type not found (WebFetch budget exhausted before the English-requirements profile page could be read)."
+  },
+  {
+    "university_id": "808b96a5-0e59-5215-a2f5-e7c3c5d2785a",
+    "name": "University of Waterloo",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Fall 2026 international fee schedule lists per-term maximum tuition only ($23,598 to $36,011), with no annual total and no currency stated on the page, so nothing was reported. English requirements page and type not read (WebFetch budget exhausted)."
+  },
+  {
+    "university_id": "dfd28fce-cef1-56e7-bc57-4cffd211a117",
+    "name": "Aalto University",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Paying-the-tuition-fee page gives bachelor's fees (12 000 EUR per year for Business and Technology, 15 000 EUR for Arts and Architecture) but does not state they apply to non-EU/EEA students, only that liability depends on residence permit or nationality, so they were not reported. No English requirement, deadline or type found (WebFetch budget exhausted)."
+  }
+]

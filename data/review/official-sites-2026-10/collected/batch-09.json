@@ -1,0 +1,120 @@
+[
+  {
+    "university_id": "2bbd21b7-1de0-5911-ab9b-c954ac504ba6",
+    "name": "Wuhan University",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Fee table at https://admission.whu.edu.cn/FRESHMEN_RELATED/FEES.htm lists undergraduate RMB figures (standard and English-medium) but states no academic year, so not reported. Language minimum (TOEFL 80+ / IELTS 6.0+) on https://admission.whu.edu.cn/info/1121/1011.htm was not confirmed as undergraduate-only, so not reported. Deadlines on that page are 2023-2024 dates, not usable. Budget ran out before fetching the 2025 undergraduate admissions guide (https://admission.whu.edu.cn/info/1121/5502.htm)."
+  },
+  {
+    "university_id": "c25402df-2dd8-5b86-b4f4-a2bbada8c01d",
+    "name": "Sichuan University",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Fee table at https://global.scu.edu.cn/oso/article/index/1095 shows annual undergraduate tuition in RMB (e.g. humanities 17,500; science and engineering 22,000) but states no academic year, so not reported. The scupi.scu.edu.cn tuition page (https://scupi.scu.edu.cn/en/admission/tuition-fees) only has 2016/17 figures, so not used. Not checked: English requirements, deadlines, type."
+  },
+  {
+    "university_id": "eec543ea-8898-575e-a968-7faa90285317",
+    "name": "KTH Royal Institute of Technology",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "https://www.kth.se/en/studies/bachelor/fees-1.646274 gives a full-programme fee of SEK 453,000 for non-EU/EEA citizens (Information and Communication Technology bachelor). It is a whole-programme total, not an annual figure, and applies to one programme, so not reported. The page does not state an international application deadline or a 2026/27 or 2027 intake. Not checked: English requirements, type."
+  },
+  {
+    "university_id": "61b5c222-f7d2-5ff7-a546-b186e73b945b",
+    "name": "University of Glasgow",
+    "tuition": [
+      {
+        "amount": 27720,
+        "currency": "GBP",
+        "academic_year": "2026/27",
+        "period": "year",
+        "label": "minimum",
+        "source_url": "https://www.gla.ac.uk/undergraduate/fees/eufees",
+        "quote": "Arts and Social Sciences: £27,720"
+      },
+      {
+        "amount": 62730,
+        "currency": "GBP",
+        "academic_year": "2026/27",
+        "period": "year",
+        "label": "maximum",
+        "source_url": "https://www.gla.ac.uk/undergraduate/fees/eufees",
+        "quote": "MBChB and clinical programmes: £62,730"
+      }
+    ],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Tuition is from the 2026/27 international (non-UK, non-EU) fee table. The minimum and maximum quotes were taken from a summarised fetch of the page, not copied verbatim, so staff should confirm the exact wording. The 2026/27 Science and Engineering figure is GBP 33,210. Not checked (budget ran out): IELTS/TOEFL minimum, application deadline, type. Glasgow's entry requirements page (https://www.gla.ac.uk/undergraduate/entryrequirements/englishlanguage/) was not fetched."
+  },
+  {
+    "university_id": "6a32c909-6d47-5097-a8a9-50e39d01408f",
+    "name": "University of Adelaide",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "The international tuition page redirects to https://adelaide.edu.au/study/international-students/, which did not show annual undergraduate fees. The entry requirements page (https://adelaide.edu.au/study/international-students/how-to-apply/entry-requirements/) was not fetched because the budget ran out. Not checked: deadlines, type."
+  },
+  {
+    "university_id": "c97243d1-faa0-5fe1-a91c-4fc8f9b867f3",
+    "name": "Xi'an Jiaotong University",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Search found the 2026 undergraduate programmes page https://sie.xjtu.edu.cn/en/info/1119/2943.htm but it was not fetched because the budget ran out. No facts reported."
+  },
+  {
+    "university_id": "c49a9c6e-8137-52be-a62c-904854573c82",
+    "name": "Aarhus University",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Search returned Aarhus international pages (for example https://international.au.dk/education/meetau/country/for-students-from-eu) but none were fetched because the budget ran out. No facts reported."
+  },
+  {
+    "university_id": "3c3e72ae-5e23-550f-8280-25603d083bb5",
+    "name": "The University of Sheffield",
+    "tuition": [
+      {
+        "amount": 25000,
+        "currency": "GBP",
+        "academic_year": "2026/27",
+        "period": "year",
+        "label": "minimum",
+        "source_url": "https://sheffield.ac.uk/new-students/tuition-fees/undergraduate-overseas",
+        "quote": "will charge new full-time overseas undergraduates, tuition fees between £25,000 and £32,100"
+      },
+      {
+        "amount": 32100,
+        "currency": "GBP",
+        "academic_year": "2026/27",
+        "period": "year",
+        "label": "maximum",
+        "source_url": "https://sheffield.ac.uk/new-students/tuition-fees/undergraduate-overseas",
+        "quote": "will charge new full-time overseas undergraduates, tuition fees between £25,000 and £32,100"
+      }
+    ],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Range excludes Medicine and Dentistry, which the page lists separately and which was not captured. The page gives 2027/28 figures of GBP 27,650 to 34,670, not used because the batch asks for 2025/26 or 2026/27. The page does not state public or private. Not checked (budget ran out): IELTS/TOEFL minimum, 2027 deadline. The quote was taken from a summarised fetch, so staff should confirm the exact wording."
+  }
+]

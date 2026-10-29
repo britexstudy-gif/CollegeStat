@@ -1,0 +1,107 @@
+[
+  {
+    "university_id": "ee15105c-6920-52e8-b1a5-c526c7a233ab",
+    "name": "Nagoya University",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Official tuition page (en.nagoya-u.ac.jp/admissions/financial/tuition/) lists an 'Undergraduate students' figure of JPY 267,900 per semester but no figure under the 'International students' heading and no academic year, so it was not reported. No undergraduate IELTS/TOEFL minimum found on official pages (search returned only G30 graduate PDFs). No deadline or public/private statement found. Web budget ran out before further checks."
+  },
+  {
+    "university_id": "aac099ab-6072-5a41-8179-36214fcf43fa",
+    "name": "McMaster University",
+    "tuition": [],
+    "english": [
+      {
+        "kind": "IELTS",
+        "minimum": 6.5,
+        "notes": "Overall band from the McMaster international undergraduate brochure (April 2024, future.mcmaster.ca). Component minimums not checked. The official language requirements page (future.mcmaster.ca/admission/language/) could not be fetched because the web budget ran out, so this should be confirmed against it.",
+        "source_url": "https://future.mcmaster.ca/wp-content/uploads/2024/04/MCM02_Int-8-pager-Brochure-Pages_April-2024.pdf",
+        "quote": "Minimum overall score of 6.5"
+      },
+      {
+        "kind": "TOEFL",
+        "minimum": 86,
+        "notes": "Total score from the same April 2024 brochure. Confirm against the official language requirements page.",
+        "source_url": "https://future.mcmaster.ca/wp-content/uploads/2024/04/MCM02_Int-8-pager-Brochure-Pages_April-2024.pdf",
+        "quote": "Minimum overall score of 86"
+      }
+    ],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "The only international fee table found (April 2024 brochure) is labelled '2023/24 Estimated International Student Fees', so it was not reported as a 2025/26 or 2026/27 figure. No official 2026/27 international tuition page was checked. No deadline or public/private statement found. Web budget ran out before further checks."
+  },
+  {
+    "university_id": "98208ca6-3d01-5ce9-b57c-d1724f5ebdab",
+    "name": "Tongji University",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Official tuition pages (tongji.edu.cn and study.tongji.edu.cn) show per-programme international undergraduate fees (for example CNY 20,000 to 45,000 per year in one table, and CNY 33,800 per year for an international class), but no academic year is stated and no sentence states the figure, so nothing was reported. No English test minimum found. Web budget ran out before further checks."
+  },
+  {
+    "university_id": "30573a6d-9a4d-582f-9089-9c360793f28e",
+    "name": "Université Libre de Bruxelles",
+    "tuition": [
+      {
+        "label": "minimum",
+        "amount": 1194,
+        "currency": "EUR",
+        "academic_year": "2026/27",
+        "period": "year",
+        "source_url": "https://ulb.be/en/enrolment/tuition-fees",
+        "quote": "listed in Annexes 1, 2 and 3 of the ARES circular: €1,194"
+      }
+    ],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "The EUR 1,194 figure applies to non-EU nationals from countries exempt from the additional fee (ARES circular Annexes 1 to 3). Non-EU nationals from other countries pay EUR 1,194 plus EUR 4,175 in additional fees; that higher amount is not reported as a maximum because the page gives no total. This is the fee for 2026-2027 registration of non-assimilated students of non-European nationality; continuing students keep the previous system. No English test minimum or deadline checked. Web budget ran out before further checks."
+  },
+  {
+    "university_id": "271dbaa2-9f49-59ac-8bf8-e8c7a604c2ae",
+    "name": "Beijing Normal University",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Search returned an official 2025 international undergraduate brochure (international.bnu.edu.cn/user/sysNews/detail/18) but it was not fetched because the web budget ran out. No facts reported."
+  },
+  {
+    "university_id": "613ea0c5-bd28-521a-b255-306fcb8448e3",
+    "name": "Beijing Institute of Technology",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Search returned official BIT International Students Office tuition pages (isc.bit.edu.cn/admissionsaid/financialaid/tuitionfee/) but they were not fetched because the web budget ran out. No facts reported."
+  },
+  {
+    "university_id": "6f703309-82ad-5bd4-8075-969d78edb967",
+    "name": "Shandong University",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Search returned only exchange-programme sheets and third-party pages; no official international undergraduate tuition page was found in results. Web budget ran out. No facts reported."
+  },
+  {
+    "university_id": "1e9ebf95-a619-5502-ad17-10055b5d49ba",
+    "name": "Xiamen University",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Search returned official candidate pages (admissions.xmu.edu.cn/Admissions/Costs.htm, irsea.xmu.edu.cn/info/1005/2044.htm) but they were not fetched because the web budget ran out. Results for xmu.edu.my (Malaysia campus) were excluded as a different institution. No facts reported."
+  }
+]

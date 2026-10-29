@@ -32,3 +32,7 @@ The current adapter maps admissions rate, undergraduate enrollment, and 150%-tim
 ## IPEDS extension
 
 Download the institution directory (HD), admissions (ADM), enrollment (EF), student financial aid (SFA), institutional characteristics/costs (IC), and graduation rate (GR) files for a deliberate survey year. Join by UNITID and inspect the annual dictionary, imputation flags, suppressed values, and cohort definitions before mapping. Do not load arbitrary CSV columns directly into canonical statistics. Feed reviewed mappings through the existing observation staging endpoint.
+
+## Official-site facts for ranked universities
+
+Outside the US the catalogue mostly holds identity data. `data/review/` holds batches of international tuition, English requirements, deadlines and public/private status collected from each university's own website, with a quote and source link for every value. They are review candidates only; see [data/review/README.md](../data/review/README.md) for validation and staging.

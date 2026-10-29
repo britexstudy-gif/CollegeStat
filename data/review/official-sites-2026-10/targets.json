@@ -1,0 +1,1682 @@
+[
+ {
+  "university_id": "6020a2b5-3788-5dd1-b3f2-b9c6c7c6f99b",
+  "name": "ETHZ - ETH Zurich",
+  "country": "Switzerland",
+  "website": "http://www.ethz.ch/",
+  "best_rank": 7
+ },
+ {
+  "university_id": "4b7862dc-7567-5f81-af58-c01144412a88",
+  "name": "University College London",
+  "country": "United Kingdom",
+  "website": "http://www.ucl.ac.uk/",
+  "best_rank": 8
+ },
+ {
+  "university_id": "b37d730b-421c-5ed6-a807-3d66e7ca21f7",
+  "name": "The University of Hong Kong",
+  "country": "Hong Kong",
+  "website": "https://www.hku.hk/",
+  "best_rank": 11
+ },
+ {
+  "university_id": "519c66df-8779-5336-acda-2cba10f95c66",
+  "name": "Tsinghua University",
+  "country": "China",
+  "website": "http://www.tsinghua.edu.cn/",
+  "best_rank": 12
+ },
+ {
+  "university_id": "79e1cf8b-6a97-5fef-ac23-aa6012197801",
+  "name": "Peking University",
+  "country": "China",
+  "website": "http://www.pku.edu.cn/",
+  "best_rank": 13
+ },
+ {
+  "university_id": "7deae08f-080e-56cd-8aa8-ca05c941f0cc",
+  "name": "The Chinese University of Hong Kong",
+  "country": "Hong Kong",
+  "website": "https://www.cuhk.edu.hk/",
+  "best_rank": 18
+ },
+ {
+  "university_id": "6f8ca7da-1cba-56f4-89e6-4cffd48126ac",
+  "name": "University of Melbourne",
+  "country": "Australia",
+  "website": "http://www.unimelb.edu.au/",
+  "best_rank": 19
+ },
+ {
+  "university_id": "34f9bd5c-1c24-5d4f-880c-4a342627a148",
+  "name": "UNSW Sydney",
+  "country": "Australia",
+  "website": "https://www.unsw.edu.au/",
+  "best_rank": 19
+ },
+ {
+  "university_id": "819bd7c2-cc38-5dc4-854d-2d59a8a9f4e5",
+  "name": "EPFL - EPF Lausanne",
+  "country": "Switzerland",
+  "website": "http://www.epfl.ch/",
+  "best_rank": 22
+ },
+ {
+  "university_id": "d4f88b7a-d026-5860-8906-d9ebdc5df290",
+  "name": "Zhejiang University",
+  "country": "China",
+  "website": "http://www.zju.edu.cn/",
+  "best_rank": 24
+ },
+ {
+  "university_id": "c67598f4-8b91-53a9-a98a-ebd185ced219",
+  "name": "University of Sydney",
+  "country": "Australia",
+  "website": "http://sydney.edu.au/",
+  "best_rank": 25
+ },
+ {
+  "university_id": "5c9532a7-118a-5e2d-ab32-92ade2e776a5",
+  "name": "Fudan University",
+  "country": "China",
+  "website": "http://www.fudan.edu.cn/",
+  "best_rank": 26
+ },
+ {
+  "university_id": "11087dc1-5405-5bd2-a5e2-def936b94cf7",
+  "name": "University of Tokyo",
+  "country": "Japan",
+  "website": "http://www.u-tokyo.ac.jp/",
+  "best_rank": 26
+ },
+ {
+  "university_id": "b48ecdd6-9331-5ee8-a4ad-7f5b046d5356",
+  "name": "McGill University",
+  "country": "Canada",
+  "website": "https://www.mcgill.ca",
+  "best_rank": 27
+ },
+ {
+  "university_id": "40dc3bce-f456-577e-9003-9c143d3b52bb",
+  "name": "Shanghai Jiaotong University",
+  "country": "China",
+  "website": "http://www.sjtu.edu.cn/",
+  "best_rank": 27
+ },
+ {
+  "university_id": "14fa4c62-b910-520b-aa51-0bf334f02b1c",
+  "name": "Australian National University",
+  "country": "Australia",
+  "website": "http://www.anu.edu.au/",
+  "best_rank": 29
+ },
+ {
+  "university_id": "f2f2a71c-abeb-5dc7-b18b-aa8b00611b0a",
+  "name": "University of Edinburgh",
+  "country": "United Kingdom",
+  "website": "http://www.ed.ac.uk/",
+  "best_rank": 29
+ },
+ {
+  "university_id": "01649f44-22e4-5b85-adaa-81f3538aa083",
+  "name": "King's College London, University of London",
+  "country": "United Kingdom",
+  "website": "http://www.kcl.ac.uk/",
+  "best_rank": 31
+ },
+ {
+  "university_id": "66cc3fd0-3055-5d88-b1d0-586a11515643",
+  "name": "Monash University",
+  "country": "Australia",
+  "website": "http://www.monash.edu/",
+  "best_rank": 31
+ },
+ {
+  "university_id": "74996b5e-c39f-52f1-9e01-88f3051f155b",
+  "name": "The Hong Kong University of Science and Technology",
+  "country": "Hong Kong",
+  "website": "https://hkust.edu.hk/",
+  "best_rank": 33
+ },
+ {
+  "university_id": "3c2d87b3-5b20-5df8-99c0-1353112a63f2",
+  "name": "Ludwig-Maximilians-Universit\u00e4t M\u00fcnchen",
+  "country": "Germany",
+  "website": "https://www.lmu.de",
+  "best_rank": 34
+ },
+ {
+  "university_id": "e2e9494c-968c-55f4-8889-2ec1ac65fbdd",
+  "name": "University of Copenhagen",
+  "country": "Denmark",
+  "website": "http://www.ku.dk/",
+  "best_rank": 34
+ },
+ {
+  "university_id": "c5ca35b6-8983-574d-89ec-d15da6afa1fe",
+  "name": "Universit\u00e9 Paris Sciences et Lettres",
+  "country": "France",
+  "website": "https://psl.eu",
+  "best_rank": 34
+ },
+ {
+  "university_id": "6e2ae583-50c4-53d5-a0ed-d11422c64773",
+  "name": "University of Manchester",
+  "country": "United Kingdom",
+  "website": "http://www.manchester.ac.uk/",
+  "best_rank": 35
+ },
+ {
+  "university_id": "6a9e2556-fc5f-56a2-bca0-9364f099818c",
+  "name": "Seoul National University",
+  "country": "Korea, Republic of",
+  "website": "http://www.snu.ac.kr/",
+  "best_rank": 38
+ },
+ {
+  "university_id": "5f90631a-ee6a-587d-a542-5fb1d07d0705",
+  "name": "University of Science and Technology of China",
+  "country": "China",
+  "website": "http://www.ustc.edu.cn/",
+  "best_rank": 39
+ },
+ {
+  "university_id": "276cad09-4a66-51a1-9071-c1ffe923a508",
+  "name": "University of British Columbia",
+  "country": "Canada",
+  "website": "http://www.ubc.ca/",
+  "best_rank": 40
+ },
+ {
+  "university_id": "c0386da4-95a0-567a-8f70-81b33c5c7f06",
+  "name": "University of Queensland",
+  "country": "Australia",
+  "website": "http://www.uq.edu.au/",
+  "best_rank": 40
+ },
+ {
+  "university_id": "9f3cf72f-ca1e-5831-b48d-e5747fb631d6",
+  "name": "Institut Polytechnique de Paris",
+  "country": "France",
+  "website": "https://www.ip-paris.fr",
+  "best_rank": 41
+ },
+ {
+  "university_id": "ff20f641-09ff-5746-af91-35acb184e318",
+  "name": "Karolinska Institute Stockholm",
+  "country": "Sweden",
+  "website": "http://www.ki.se/",
+  "best_rank": 41
+ },
+ {
+  "university_id": "b5f25065-0a86-517e-91f0-ff6bbe8c81d3",
+  "name": "Yonsei University",
+  "country": "Korea, Republic of",
+  "website": "http://www.yonsei.ac.kr/",
+  "best_rank": 42
+ },
+ {
+  "university_id": "e943a9a4-853c-5554-ac7f-9887d0b2a91d",
+  "name": "Kyoto University",
+  "country": "Japan",
+  "website": "http://www.kyoto-u.ac.jp/",
+  "best_rank": 43
+ },
+ {
+  "university_id": "0214dadc-625b-5cdb-a2af-cd750bce896d",
+  "name": "KU Leuven",
+  "country": "Belgium",
+  "website": "https://www.kuleuven.be",
+  "best_rank": 46
+ },
+ {
+  "university_id": "1e3bb7ff-87ca-5331-a3ab-82b0d0b3484d",
+  "name": "Delft University of Technology",
+  "country": "Netherlands",
+  "website": "http://www.tudelft.nl/",
+  "best_rank": 47
+ },
+ {
+  "university_id": "a74d45a9-657e-514c-ac03-c9d2f9200640",
+  "name": "The Hong Kong Polytechnic University",
+  "country": "Hong Kong",
+  "website": "https://www.polyu.edu.hk/",
+  "best_rank": 50
+ },
+ {
+  "university_id": "ad695799-c6eb-5c4d-901c-a4b7d0b15407",
+  "name": "University of Bristol",
+  "country": "United Kingdom",
+  "website": "https://www.bristol.ac.uk/",
+  "best_rank": 51
+ },
+ {
+  "university_id": "3e655a74-c0c7-5a9b-884b-22aebd5e0d1e",
+  "name": "London School of Economics and Political Science, University of London",
+  "country": "United Kingdom",
+  "website": "http://www.lse.ac.uk/",
+  "best_rank": 52
+ },
+ {
+  "university_id": "6d72f6ce-a30c-54a4-8b99-97ae04a68a88",
+  "name": "Korea University",
+  "country": "Korea, Republic of",
+  "website": "http://www.korea.ac.kr/",
+  "best_rank": 52
+ },
+ {
+  "university_id": "c0bf548f-0413-5faa-8378-e3a8e622f80f",
+  "name": "City University of Hong Kong",
+  "country": "Hong Kong",
+  "website": "https://www.cityu.edu.hk/",
+  "best_rank": 52
+ },
+ {
+  "university_id": "e0088a48-e57b-58d4-bf07-2021931bc1a9",
+  "name": "University of Amsterdam",
+  "country": "Netherlands",
+  "website": "http://www.uva.nl/",
+  "best_rank": 53
+ },
+ {
+  "university_id": "8e7965f7-20be-56cb-9233-5daa3414b0fc",
+  "name": "National Taiwan University",
+  "country": "Taiwan, Province of China",
+  "website": "http://www.ntu.edu.tw/",
+  "best_rank": 54
+ },
+ {
+  "university_id": "b3a81d8c-44ec-56d8-aa5f-b58d5fce6bfd",
+  "name": "Sorbonne Universit\u00e9",
+  "country": "France",
+  "website": "https://www.sorbonne-universite.fr",
+  "best_rank": 55
+ },
+ {
+  "university_id": "26fd17cb-9752-5eab-86f1-9f9768a938b7",
+  "name": "University of Geneva",
+  "country": "Switzerland",
+  "website": "http://www.unige.ch/",
+  "best_rank": 55
+ },
+ {
+  "university_id": "ee31891b-8bbc-5fb0-9bc5-e0122f0c55dd",
+  "name": "Universiti Malaya",
+  "country": "Malaysia",
+  "website": "http://www.um.edu.my/",
+  "best_rank": 56
+ },
+ {
+  "university_id": "c353b675-c43e-5507-88d6-7a1850a92f27",
+  "name": "Universit\u00e9 Paris Cit\u00e9",
+  "country": "France",
+  "website": "https://u-paris.fr",
+  "best_rank": 57
+ },
+ {
+  "university_id": "fe2070ba-9e66-590c-b67f-3cef2d8983b4",
+  "name": "Ruprecht-Karls-Universit\u00e4t Heidelberg",
+  "country": "Germany",
+  "website": "http://www.uni-heidelberg.de/",
+  "best_rank": 59
+ },
+ {
+  "university_id": "48429a40-059c-538c-ad95-c91c68b9cb1c",
+  "name": "Utrecht University",
+  "country": "Netherlands",
+  "website": "http://www.uu.nl/",
+  "best_rank": 60
+ },
+ {
+  "university_id": "0aeeb18a-3be5-5bb9-9875-0bf4ce24d102",
+  "name": "Nanjing University",
+  "country": "China",
+  "website": "http://www.nju.edu.cn/",
+  "best_rank": 62
+ },
+ {
+  "university_id": "f9909941-87f9-55cd-bcb7-7c9301d50851",
+  "name": "Sun Yat-Sen University",
+  "country": "China",
+  "website": "https://sysu.edu.cn/",
+  "best_rank": 62
+ },
+ {
+  "university_id": "72d90170-c326-5377-8295-5226875a04a1",
+  "name": "King Fahad University of Petroleum and Minerals",
+  "country": "Saudi Arabia",
+  "website": "http://www.kfupm.edu.sa/",
+  "best_rank": 63
+ },
+ {
+  "university_id": "6941fb87-c482-5aa1-9f3c-a5de7cf736dc",
+  "name": "University of Auckland",
+  "country": "New Zealand",
+  "website": "http://www.auckland.ac.nz/",
+  "best_rank": 65
+ },
+ {
+  "university_id": "4257293d-ae04-50f0-a670-a46ee48a8e44",
+  "name": "Universit\u00e4t Z\u00fcrich",
+  "country": "Switzerland",
+  "website": "https://www.uzh.ch/",
+  "best_rank": 65
+ },
+ {
+  "university_id": "bb32340f-54ba-5885-82ba-4ae645d93930",
+  "name": "Korea Advanced Institute of Science & Technology",
+  "country": "Korea, Republic of",
+  "website": "http://www.kaist.ac.kr/",
+  "best_rank": 65
+ },
+ {
+  "university_id": "1fdfdef5-4d20-57c0-95ee-663973bb97b2",
+  "name": "Wageningen University & Research",
+  "country": "The Netherlands",
+  "website": "https://www.wur.nl/",
+  "best_rank": 66
+ },
+ {
+  "university_id": "8e191d89-10ba-5f03-913b-836c9c7194a0",
+  "name": "Universit\u00e9 Paris-Saclay",
+  "country": "France",
+  "website": "https://www.universite-paris-saclay.fr/",
+  "best_rank": 68
+ },
+ {
+  "university_id": "4b7a7f67-a5fa-5660-a95b-87588748c8e4",
+  "name": "University of Warwick",
+  "country": "United Kingdom",
+  "website": "http://www.warwick.ac.uk/",
+  "best_rank": 68
+ },
+ {
+  "university_id": "1a5b82c1-d204-5c75-a433-ef5c17e2a9d2",
+  "name": "University of Birmingham",
+  "country": "United Kingdom",
+  "website": "http://www.birmingham.ac.uk/index.aspx",
+  "best_rank": 68
+ },
+ {
+  "university_id": "41845441-b6d6-52d1-9dde-3fde42120676",
+  "name": "Rheinische Friedrich-Wilhelms Universit\u00e4t Bonn",
+  "country": "Germany",
+  "website": "http://www.uni-bonn.de/",
+  "best_rank": 69
+ },
+ {
+  "university_id": "710661ab-60ec-57bf-84bc-aa0b1e256a12",
+  "name": "Leiden University",
+  "country": "The Netherlands",
+  "website": "http://www.leiden.edu/",
+  "best_rank": 70
+ },
+ {
+  "university_id": "bc0bcefc-cf3b-5fc7-bb41-76470ec9ff59",
+  "name": "Lund University",
+  "country": "Sweden",
+  "website": "http://www.lu.se/",
+  "best_rank": 71
+ },
+ {
+  "university_id": "8626e12e-d23c-5f35-b13b-88ff7c2e6912",
+  "name": "Weizmann Institute of Science",
+  "country": "Israel",
+  "website": "http://www.weizmann.ac.il/",
+  "best_rank": 71
+ },
+ {
+  "university_id": "7e74da55-7ed1-58a0-b41c-7eed8b466241",
+  "name": "Huazhong University of Science and Technology",
+  "country": "China",
+  "website": "http://english.hust.edu.cn/",
+  "best_rank": 72
+ },
+ {
+  "university_id": "24e7d208-f222-510a-92a9-011aead2e2cc",
+  "name": "University of Western Australia",
+  "country": "Australia",
+  "website": "http://www.uwa.edu.au/",
+  "best_rank": 77
+ },
+ {
+  "university_id": "2aa84135-ae94-568c-8721-5c06c836a3f2",
+  "name": "University of Leeds",
+  "country": "United Kingdom",
+  "website": "http://www.leeds.ac.uk/",
+  "best_rank": 77
+ },
+ {
+  "university_id": "2bbd21b7-1de0-5911-ab9b-c954ac504ba6",
+  "name": "Wuhan University",
+  "country": "China",
+  "website": "http://www.whu.edu.cn/",
+  "best_rank": 77
+ },
+ {
+  "university_id": "c25402df-2dd8-5b86-b4f4-a2bbada8c01d",
+  "name": "Sichuan University",
+  "country": "China",
+  "website": "http://www.scu.edu.cn/",
+  "best_rank": 77
+ },
+ {
+  "university_id": "eec543ea-8898-575e-a968-7faa90285317",
+  "name": "KTH Royal Institute of Technology",
+  "country": "Sweden",
+  "website": "http://www.kth.se/",
+  "best_rank": 78
+ },
+ {
+  "university_id": "61b5c222-f7d2-5ff7-a546-b186e73b945b",
+  "name": "University of Glasgow",
+  "country": "United Kingdom",
+  "website": "http://www.gla.ac.uk/",
+  "best_rank": 79
+ },
+ {
+  "university_id": "6a32c909-6d47-5097-a8a9-50e39d01408f",
+  "name": "University of Adelaide",
+  "country": "Australia",
+  "website": "http://www.adelaide.edu.au/",
+  "best_rank": 79
+ },
+ {
+  "university_id": "c97243d1-faa0-5fe1-a91c-4fc8f9b867f3",
+  "name": "Xi'an Jiaotong University",
+  "country": "China",
+  "website": "http://www.xjtu.edu.cn/",
+  "best_rank": 79
+ },
+ {
+  "university_id": "c49a9c6e-8137-52be-a62c-904854573c82",
+  "name": "Aarhus University",
+  "country": "Denmark",
+  "website": "http://www.au.dk/",
+  "best_rank": 81
+ },
+ {
+  "university_id": "3c3e72ae-5e23-550f-8280-25603d083bb5",
+  "name": "The University of Sheffield",
+  "country": "United Kingdom",
+  "website": "https://www.sheffield.ac.uk/",
+  "best_rank": 82
+ },
+ {
+  "university_id": "9dae6bd4-c65a-5c4a-943b-3831cdbbc4ff",
+  "name": "University of Groningen",
+  "country": "Netherlands",
+  "website": "http://www.rug.nl/",
+  "best_rank": 82
+ },
+ {
+  "university_id": "5c472dcb-a445-5d54-8c13-70840b7347c5",
+  "name": "Central South University",
+  "country": "China",
+  "website": "http://www.csu.edu.cn/",
+  "best_rank": 83
+ },
+ {
+  "university_id": "8ea2d1c3-ce48-518f-9417-7c08098cd6d5",
+  "name": "Universidad de Buenos Aires",
+  "country": "Argentina",
+  "website": "http://www.uba.ar/",
+  "best_rank": 84
+ },
+ {
+  "university_id": "69452803-31fe-56a8-b2b4-c2a682cf4214",
+  "name": "University of Durham",
+  "country": "United Kingdom",
+  "website": "http://www.dur.ac.uk/",
+  "best_rank": 85
+ },
+ {
+  "university_id": "10ca55e3-9e48-58e7-a474-d1fab4ccccdb",
+  "name": "University of Oslo",
+  "country": "Norway",
+  "website": "http://www.uio.no/",
+  "best_rank": 86
+ },
+ {
+  "university_id": "1a7adfa9-9e53-5a4c-888c-8f76fa8e1125",
+  "name": "University of Southampton",
+  "country": "United Kingdom",
+  "website": "http://www.southampton.ac.uk/",
+  "best_rank": 87
+ },
+ {
+  "university_id": "75f1a39c-5876-5365-a4e5-4f8190028c13",
+  "name": "Uppsala University",
+  "country": "Sweden",
+  "website": "http://www.uu.se/",
+  "best_rank": 87
+ },
+ {
+  "university_id": "eacacd15-de55-5ef0-b874-54d46d92b26c",
+  "name": "University of Technology Sydney",
+  "country": "Australia",
+  "website": "http://www.uts.edu.au/",
+  "best_rank": 87
+ },
+ {
+  "university_id": "414b011a-c052-5872-b787-f47af96a0c8d",
+  "name": "Polytechnic Institute of Milan",
+  "country": "Italy",
+  "website": "http://www.polimi.it/",
+  "best_rank": 87
+ },
+ {
+  "university_id": "dba5fd6f-9afd-5011-aab8-7d0e6cb6ac2a",
+  "name": "Sungkyunkwan University",
+  "country": "Korea, Republic of",
+  "website": "http://www.skku.edu/",
+  "best_rank": 87
+ },
+ {
+  "university_id": "b7e728a7-1aa5-5bce-badf-5ecb3a6ec992",
+  "name": "Freie Universit\u00e4t Berlin",
+  "country": "Germany",
+  "website": "http://www.fu-berlin.de/",
+  "best_rank": 88
+ },
+ {
+  "university_id": "d2dff4b3-070b-59d5-a6fb-a12c7095d63b",
+  "name": "Humboldt Universit\u00e4t Berlin",
+  "country": "Germany",
+  "website": "http://www.hu-berlin.de/",
+  "best_rank": 89
+ },
+ {
+  "university_id": "5d6f8a4d-f0e1-5547-b5f3-b8115a1d29b7",
+  "name": "Hebrew University of Jerusalem",
+  "country": "Israel",
+  "website": "http://new.huji.ac.il/en",
+  "best_rank": 89
+ },
+ {
+  "university_id": "9702e410-fabe-5f00-952b-3f5bcbabb5c5",
+  "name": "Southeast University",
+  "country": "China",
+  "website": "http://www.seu.edu.cn/",
+  "best_rank": 89
+ },
+ {
+  "university_id": "b186f041-f090-5f21-b68a-5b22175d4b14",
+  "name": "Osaka University",
+  "country": "Japan",
+  "website": "http://www.osaka-u.ac.jp/",
+  "best_rank": 91
+ },
+ {
+  "university_id": "662ab476-2ba7-5439-bb0c-c7bf3f442c8d",
+  "name": "University of Basel",
+  "country": "Switzerland",
+  "website": "http://www.unibas.ch/",
+  "best_rank": 91
+ },
+ {
+  "university_id": "f7aaf172-d973-5248-b3d6-83289c7c7451",
+  "name": "Rheinisch Westf\u00e4lische Technische Hochschule Aachen",
+  "country": "Germany",
+  "website": "http://www.rwth-aachen.de/",
+  "best_rank": 92
+ },
+ {
+  "university_id": "74effccc-395b-52fb-8f50-2523f7897428",
+  "name": "University of Alberta",
+  "country": "Canada",
+  "website": "https://www.ualberta.ca",
+  "best_rank": 94
+ },
+ {
+  "university_id": "d445d34a-9eee-5fcf-8175-3cd18d2f9803",
+  "name": "Universit\u00e4t Vienna",
+  "country": "Austria",
+  "website": "http://www.univie.ac.at/",
+  "best_rank": 95
+ },
+ {
+  "university_id": "0bfd2121-ebb3-562f-ad36-d6a5bf570d8b",
+  "name": "University of Nottingham",
+  "country": "United Kingdom",
+  "website": "http://www.nottingham.ac.uk/",
+  "best_rank": 97
+ },
+ {
+  "university_id": "50725766-5bb6-5387-97f6-a6d69d3c98fb",
+  "name": "Harbin Institute of Technology",
+  "country": "China",
+  "website": "http://www.hit.edu.cn/",
+  "best_rank": 97
+ },
+ {
+  "university_id": "1789110d-d2fe-546a-bb76-da8fc3c966d6",
+  "name": "Institute of Science Tokyo",
+  "country": "Japan",
+  "website": "https://www.isct.ac.jp",
+  "best_rank": 97
+ },
+ {
+  "university_id": "dcc6acda-25aa-53c1-82a2-29b74ad8734f",
+  "name": "Karlsruher Institut f\u00fcr Technologie",
+  "country": "Germany",
+  "website": "http://www.kit.edu/",
+  "best_rank": 98
+ },
+ {
+  "university_id": "48224d71-98ac-567c-9c60-733425d09c76",
+  "name": "Universiteit Gent",
+  "country": "Belgium",
+  "website": "https://www.ugent.be/",
+  "best_rank": 98
+ },
+ {
+  "university_id": "04566891-05b0-54be-9472-22d414096201",
+  "name": "Eberhard-Karls-Universit\u00e4t T\u00fcbingen",
+  "country": "Germany",
+  "website": "http://www.uni-tuebingen.de/",
+  "best_rank": 98
+ },
+ {
+  "university_id": "c7885845-c6f9-52dc-afb5-9fb93ba18f70",
+  "name": "Tianjin University",
+  "country": "China",
+  "website": "http://www.tju.edu.cn/",
+  "best_rank": 98
+ },
+ {
+  "university_id": "35a032fc-f24f-5a50-92ed-b818fca7f222",
+  "name": "University College Dublin",
+  "country": "Ireland",
+  "website": "http://www.ucd.ie/",
+  "best_rank": 100
+ },
+ {
+  "university_id": "35ce761b-adcc-5c73-8bc4-a358b418afa6",
+  "name": "Technical University of Denmark",
+  "country": "Denmark",
+  "website": "http://www.dtu.dk/",
+  "best_rank": 101
+ },
+ {
+  "university_id": "ea07bd5a-d5e8-59b9-bfd9-600587605f25",
+  "name": "Universidade de S\u00e3o Paulo",
+  "country": "Brazil",
+  "website": "https://www5.usp.br",
+  "best_rank": 101
+ },
+ {
+  "university_id": "ed5b15cb-d889-50df-941c-4764af80621d",
+  "name": "University of Helsinki",
+  "country": "Finland",
+  "website": "http://www.helsinki.fi/",
+  "best_rank": 101
+ },
+ {
+  "university_id": "a8fd79a0-46d7-50c9-aa2f-2fc4d85d493e",
+  "name": "Erasmus University Rotterdam",
+  "country": "Netherlands",
+  "website": "http://www.eur.nl/",
+  "best_rank": 101
+ },
+ {
+  "university_id": "a002ead6-250c-572d-8773-015f9419b016",
+  "name": "Stockholm University",
+  "country": "Sweden",
+  "website": "http://www.su.se/",
+  "best_rank": 101
+ },
+ {
+  "university_id": "ee15105c-6920-52e8-b1a5-c526c7a233ab",
+  "name": "Nagoya University",
+  "country": "Japan",
+  "website": "http://en.nagoya-u.ac.jp/",
+  "best_rank": 101
+ },
+ {
+  "university_id": "aac099ab-6072-5a41-8179-36214fcf43fa",
+  "name": "McMaster University",
+  "country": "Canada",
+  "website": "http://www.mcmaster.ca/",
+  "best_rank": 101
+ },
+ {
+  "university_id": "98208ca6-3d01-5ce9-b57c-d1724f5ebdab",
+  "name": "Tongji University",
+  "country": "China",
+  "website": "http://www.tongji.edu.cn/",
+  "best_rank": 101
+ },
+ {
+  "university_id": "30573a6d-9a4d-582f-9089-9c360793f28e",
+  "name": "Universit\u00e9 Libre de Bruxelles",
+  "country": "Belgium",
+  "website": "https://www.ulb.be/",
+  "best_rank": 101
+ },
+ {
+  "university_id": "271dbaa2-9f49-59ac-8bf8-e8c7a604c2ae",
+  "name": "Beijing Normal University",
+  "country": "China",
+  "website": "http://www.bnu.edu.cn/",
+  "best_rank": 101
+ },
+ {
+  "university_id": "613ea0c5-bd28-521a-b255-306fcb8448e3",
+  "name": "Beijing Institute of Technology",
+  "country": "China",
+  "website": "http://www.bit.edu.cn/",
+  "best_rank": 101
+ },
+ {
+  "university_id": "6f703309-82ad-5bd4-8075-969d78edb967",
+  "name": "Shandong University",
+  "country": "China",
+  "website": "http://www.sdu.edu.cn/",
+  "best_rank": 101
+ },
+ {
+  "university_id": "1e9ebf95-a619-5502-ad17-10055b5d49ba",
+  "name": "Xiamen University",
+  "country": "China",
+  "website": "http://www.xmu.edu.cn/",
+  "best_rank": 101
+ },
+ {
+  "university_id": "6bb7e28d-2e25-5601-995b-224c09630410",
+  "name": "Southern University of Science and Technology",
+  "country": "China",
+  "website": "https://sustech.edu.cn",
+  "best_rank": 101
+ },
+ {
+  "university_id": "07277532-423a-5f50-815a-c8cc190fdd80",
+  "name": "Technion - Israel Institute of Technology",
+  "country": "Israel",
+  "website": "http://www.technion.ac.il/",
+  "best_rank": 101
+ },
+ {
+  "university_id": "d9f134b2-b651-5a68-bacd-32e41dfe8c83",
+  "name": "Nankai University",
+  "country": "China",
+  "website": "https://nankai.edu.cn",
+  "best_rank": 101
+ },
+ {
+  "university_id": "a96bb2a1-a48d-55fa-8c98-4a3e716e380e",
+  "name": "South China University of Technology",
+  "country": "China",
+  "website": "http://www.scut.edu.cn/",
+  "best_rank": 101
+ },
+ {
+  "university_id": "b86e106a-7e3d-534d-9f61-d111d5a49dfa",
+  "name": "Beijing University of Aeronautics and Astronautics",
+  "country": "China",
+  "website": "http://www.buaa.edu.cn/",
+  "best_rank": 101
+ },
+ {
+  "university_id": "2e2fd0e8-4ad8-54ef-bf66-74a5ee18876e",
+  "name": "Universit\u00e9 de Strasbourg",
+  "country": "France",
+  "website": "https://www.unistra.fr/",
+  "best_rank": 101
+ },
+ {
+  "university_id": "5c500bb8-70b8-59a4-8e57-9329a2c38f2f",
+  "name": "Jilin University",
+  "country": "China",
+  "website": "http://www.jlu.edu.cn/",
+  "best_rank": 101
+ },
+ {
+  "university_id": "15ff9275-1c2a-5820-9bab-4da296371714",
+  "name": "Albert-Ludwigs-Universit\u00e4t Freiburg",
+  "country": "Germany",
+  "website": "http://www.uni-freiburg.de/",
+  "best_rank": 101
+ },
+ {
+  "university_id": "05d89845-ecbf-5ed5-af2a-0e599223fa29",
+  "name": "Suzhou University",
+  "country": "China",
+  "website": "http://www.suda.edu.cn/",
+  "best_rank": 101
+ },
+ {
+  "university_id": "bfa7cdcc-650a-54d9-baa6-0eaeaa6428a9",
+  "name": "Pohang University of Science and Technology",
+  "country": "Korea, Republic of",
+  "website": "http://www.postech.ac.kr/",
+  "best_rank": 102
+ },
+ {
+  "university_id": "2eeda25f-2732-523e-b485-bab01ce33cd6",
+  "name": "Tohoku University",
+  "country": "Japan",
+  "website": "http://www.tohoku.ac.jp/",
+  "best_rank": 102
+ },
+ {
+  "university_id": "3d2122dd-542a-5bad-94e8-33090f53f6ad",
+  "name": "Queen Mary University of London",
+  "country": "United Kingdom",
+  "website": "https://www.qmul.ac.uk/",
+  "best_rank": 103
+ },
+ {
+  "university_id": "39a0a410-8dec-5d39-bba7-99eb9fd534c4",
+  "name": "Lomonosov Moscow State University",
+  "country": "Russian Federation",
+  "website": "https://www.msu.ru/",
+  "best_rank": 105
+ },
+ {
+  "university_id": "dce3ec59-808e-5353-8d69-da5e8e8e29fe",
+  "name": "King Saud University",
+  "country": "Saudi Arabia",
+  "website": "http://www.ksu.edu.sa/",
+  "best_rank": 107
+ },
+ {
+  "university_id": "1540baf5-79f5-59ed-b687-3979b92f0aae",
+  "name": "Universit\u00e4t Bern",
+  "country": "Switzerland",
+  "website": "http://www.unibe.ch/",
+  "best_rank": 108
+ },
+ {
+  "university_id": "04cf5b15-066c-5320-848e-44bd11bb8aa8",
+  "name": "University of Qatar",
+  "country": "Qatar",
+  "website": "http://www.qu.edu.qa/",
+  "best_rank": 109
+ },
+ {
+  "university_id": "21e26f0d-fd30-521e-a9f3-fb97b8452d78",
+  "name": "University of Roma \"La Sapienza\"",
+  "country": "Italy",
+  "website": "http://www.uniroma1.it/",
+  "best_rank": 111
+ },
+ {
+  "university_id": "accccabf-7374-575c-a90e-2a1b27d4a6ba",
+  "name": "University of St. Andrews",
+  "country": "United Kingdom",
+  "website": "https://www.st-andrews.ac.uk/",
+  "best_rank": 113
+ },
+ {
+  "university_id": "808b96a5-0e59-5215-a2f5-e7c3c5d2785a",
+  "name": "University of Waterloo",
+  "country": "Canada",
+  "website": "https://uwaterloo.ca/",
+  "best_rank": 113
+ },
+ {
+  "university_id": "dfd28fce-cef1-56e7-bc57-4cffd211a117",
+  "name": "Aalto University",
+  "country": "Finland",
+  "website": "https://www.aalto.fi/",
+  "best_rank": 114
+ },
+ {
+  "university_id": "07cc0745-98d8-50c4-8c7d-88b03da6fa79",
+  "name": "Pontificia Universidad Catolica de Chile",
+  "country": "Chile",
+  "website": "https://www.uc.cl/",
+  "best_rank": 116
+ },
+ {
+  "university_id": "29fa6116-cea2-5702-96ea-0f26492434fe",
+  "name": "Indian Institute of Technology Delhi",
+  "country": "India",
+  "website": "https://home.iitd.ac.in",
+  "best_rank": 118
+ },
+ {
+  "university_id": "0271ce81-bdd1-5aa5-923d-fc97549fa720",
+  "name": "Royal Melbourne Institute of Technology",
+  "country": "Australia",
+  "website": "http://www.rmit.edu.au/",
+  "best_rank": 119
+ },
+ {
+  "university_id": "7dbe63be-ec0e-5eb3-8ca2-bd197b4a278f",
+  "name": "University of G\u00f6ttingen",
+  "country": "Germany",
+  "website": "http://www.uni-goettingen.de/en/1.html",
+  "best_rank": 122
+ },
+ {
+  "university_id": "a75ede9d-f2a9-5169-837d-38e810d35a6b",
+  "name": "University of Bologna",
+  "country": "Italy",
+  "website": "http://www.unibo.it/",
+  "best_rank": 123
+ },
+ {
+  "university_id": "d83e0119-d533-524d-a890-6b7c91c8de71",
+  "name": "University of Bath",
+  "country": "United Kingdom",
+  "website": "http://www.bath.ac.uk/",
+  "best_rank": 125
+ },
+ {
+  "university_id": "5b24f3f6-adcb-53fb-a89e-4f25f33f8da2",
+  "name": "Universit\u00e4t Hamburg",
+  "country": "Germany",
+  "website": "http://www.uni-hamburg.de/",
+  "best_rank": 125
+ },
+ {
+  "university_id": "b719e149-7073-5173-a435-791b55891294",
+  "name": "Universit\u00e9 de Lausanne",
+  "country": "Switzerland",
+  "website": "http://www.unil.ch/",
+  "best_rank": 125
+ },
+ {
+  "university_id": "04c4aef9-ef8e-5981-ba20-50039aeceef5",
+  "name": "Universiti Kebangsaan Malaysia",
+  "country": "Malaysia",
+  "website": "http://www.ukm.my/",
+  "best_rank": 126
+ },
+ {
+  "university_id": "c770e637-838e-5f90-ae57-425b587061a0",
+  "name": "Macquarie University",
+  "country": "Australia",
+  "website": "http://www.mq.edu.au/",
+  "best_rank": 126
+ },
+ {
+  "university_id": "b865e086-9fba-5fd2-8b1f-9be60d97baf4",
+  "name": "Universiti Sains Malaysia",
+  "country": "Malaysia",
+  "website": "http://www.usm.my/",
+  "best_rank": 128
+ },
+ {
+  "university_id": "f68b940c-61ed-5be0-96e9-d70422a3f8bf",
+  "name": "Indian Institute of Technology, Bombay",
+  "country": "India",
+  "website": "http://www.iitb.ac.in/",
+  "best_rank": 129
+ },
+ {
+  "university_id": "d6b0bfe8-2f2e-5a31-8c8d-97a2c3c31ac2",
+  "name": "Maastricht University",
+  "country": "The Netherlands",
+  "website": "https://www.maastrichtuniversity.nl",
+  "best_rank": 131
+ },
+ {
+  "university_id": "cf17178b-4486-5b1c-84d1-1ef2b3ac9e37",
+  "name": "Universiti Putra Malaysia",
+  "country": "Malaysia",
+  "website": "http://www.upm.edu.my/",
+  "best_rank": 134
+ },
+ {
+  "university_id": "79f39470-8afd-51a9-b34d-4c1c5c988195",
+  "name": "Universidad Nacional Aut\u00f3noma de M\u00e9xico",
+  "country": "Mexico",
+  "website": "http://www.unam.mx/",
+  "best_rank": 136
+ },
+ {
+  "university_id": "a6433838-97ca-5280-ac8a-2273fb8bab01",
+  "name": "University of Exeter",
+  "country": "United Kingdom",
+  "website": "https://www.exeter.ac.uk",
+  "best_rank": 136
+ },
+ {
+  "university_id": "59063bbd-5451-5ae4-8f6b-b04ebf2c2161",
+  "name": "Newcastle University",
+  "country": "United Kingdom",
+  "website": "https://www.ncl.ac.uk/",
+  "best_rank": 137
+ },
+ {
+  "university_id": "56162036-b07a-5316-98e1-126e03c794ea",
+  "name": "School of Education Pisa",
+  "country": "Italy",
+  "website": "http://www.sns.it/",
+  "best_rank": 137
+ },
+ {
+  "university_id": "d038c396-227a-555b-b91c-9a0e1587e0c6",
+  "name": "University of Liverpool",
+  "country": "United Kingdom",
+  "website": "https://www.liverpool.ac.uk/",
+  "best_rank": 139
+ },
+ {
+  "university_id": "835b45a6-e652-5e5e-937b-c365bb1d8e7a",
+  "name": "Eindhoven University of Technology",
+  "country": "Netherlands",
+  "website": "http://www.tue.nl/",
+  "best_rank": 140
+ },
+ {
+  "university_id": "55f4ba6f-3df3-5ee2-ac3a-d6e9e0a2b2fa",
+  "name": "University of Western Ontario",
+  "country": "Canada",
+  "website": "http://www.uwo.ca/",
+  "best_rank": 142
+ },
+ {
+  "university_id": "b83472eb-1a12-5b42-9769-79e2649e9009",
+  "name": "Technische Universit\u00e4t Berlin",
+  "country": "Germany",
+  "website": "https://www.tu.berlin",
+  "best_rank": 145
+ },
+ {
+  "university_id": "c73fffe8-a4ac-5cb2-8129-237abf096957",
+  "name": "University of Barcelona",
+  "country": "Spain",
+  "website": "https://web.ub.edu/",
+  "best_rank": 145
+ },
+ {
+  "university_id": "7aa094cd-7138-5fb0-b290-2242644f4a90",
+  "name": "University of Macau",
+  "country": "Macao",
+  "website": "http://www.um.edu.mo/",
+  "best_rank": 145
+ },
+ {
+  "university_id": "9d02e057-63ee-5ee9-aeef-4aa112d65d2a",
+  "name": "Khalifa University of Science, Technology and Research",
+  "country": "United Arab Emirates",
+  "website": "http://www.ku.ac.ae/",
+  "best_rank": 147
+ },
+ {
+  "university_id": "134932db-50b6-573c-a856-474f34c60efc",
+  "name": "University of Cape Town",
+  "country": "South Africa",
+  "website": "http://www.uct.ac.za/",
+  "best_rank": 150
+ },
+ {
+  "university_id": "9bff146e-eafa-54b3-a7b2-9d31faf1642d",
+  "name": "Universit\u00e9 de Montr\u00e9al",
+  "country": "Canada",
+  "website": "http://www.umontreal.ca/",
+  "best_rank": 150
+ },
+ {
+  "university_id": "6e2f79d8-a01f-5ed1-9d35-b81fdccd16ae",
+  "name": "Vrije Universiteit Amsterdam",
+  "country": "Netherlands",
+  "website": "http://www.vu.nl/",
+  "best_rank": 151
+ },
+ {
+  "university_id": "2903e6ed-ff35-58a9-b374-04d315be3094",
+  "name": "G\u00f6teborg University",
+  "country": "Sweden",
+  "website": "http://www.gu.se/",
+  "best_rank": 151
+ },
+ {
+  "university_id": "0685b063-ce42-5129-b839-c71e3b46211f",
+  "name": "Tel Aviv University",
+  "country": "Israel",
+  "website": "https://english.tau.ac.il/",
+  "best_rank": 151
+ },
+ {
+  "university_id": "82ab247b-2fe2-56ce-90a7-292c759b906f",
+  "name": "University of Padua",
+  "country": "Italy",
+  "website": "http://www.unipd.it/",
+  "best_rank": 151
+ },
+ {
+  "university_id": "731c32c4-6abe-59b8-bfe1-c0df705c0612",
+  "name": "Universit\u00e4t K\u00f6ln",
+  "country": "Germany",
+  "website": "http://www.uni-koeln.de/",
+  "best_rank": 151
+ },
+ {
+  "university_id": "aaa437f6-4cb5-5446-a0d1-de07b20e1fa5",
+  "name": "Radboud University Nijmegen",
+  "country": "The Netherlands",
+  "website": "https://www.ru.nl",
+  "best_rank": 151
+ },
+ {
+  "university_id": "76aa91bc-0527-5b1b-9891-2b4d84037b90",
+  "name": "Johann Wolfgang Goethe Universit\u00e4t Frankfurt am Main",
+  "country": "Germany",
+  "website": "http://www.uni-frankfurt.de/",
+  "best_rank": 151
+ },
+ {
+  "university_id": "d63eb7ed-7d2c-5ce5-8b86-2b85f75101a4",
+  "name": "Universit\u00e9 Grenoble Alpes",
+  "country": "France",
+  "website": "https://www.univ-grenoble-alpes.fr",
+  "best_rank": 151
+ },
+ {
+  "university_id": "a32d9481-0ee7-518c-b118-bf5abdee9f53",
+  "name": "University of M\u00fcnster",
+  "country": "Germany",
+  "website": "https://www.uni-muenster.de/",
+  "best_rank": 151
+ },
+ {
+  "university_id": "828f04bc-48ef-5f99-9ad2-4acf10da27c9",
+  "name": "Universit\u00e9 d'Aix-Marseille",
+  "country": "France",
+  "website": "http://www.univ-amu.fr/",
+  "best_rank": 151
+ },
+ {
+  "university_id": "cba0bdd3-fa7c-5123-bd32-faf57dfdeb11",
+  "name": "Universit\u00e9 de Montpellier",
+  "country": "France",
+  "website": "https://www.umontpellier.fr/",
+  "best_rank": 151
+ },
+ {
+  "university_id": "59ce050c-68d5-5716-b96f-418d0f1db0ba",
+  "name": "Shenzhen University",
+  "country": "China",
+  "website": "http://www.szu.edu.cn/",
+  "best_rank": 151
+ },
+ {
+  "university_id": "3dfbc021-a651-5e0b-84b7-da126c795ba5",
+  "name": "Dalian University of Technology",
+  "country": "China",
+  "website": "http://www.dlut.edu.cn/",
+  "best_rank": 151
+ },
+ {
+  "university_id": "3361a926-61e2-5a23-9399-fb6db0dcefe7",
+  "name": "Northwest Polytechnical University Xi'an",
+  "country": "China",
+  "website": "http://www.nwpu.edu.cn/",
+  "best_rank": 151
+ },
+ {
+  "university_id": "28c2025e-e310-5fb0-ad88-d419230776ed",
+  "name": "Chongqing University",
+  "country": "China",
+  "website": "http://www.cqu.edu.cn/",
+  "best_rank": 151
+ },
+ {
+  "university_id": "ec7e29d9-f6cf-54d0-8a0b-03be7ec16751",
+  "name": "China Agricultural University",
+  "country": "China",
+  "website": "https://en.cau.edu.cn/",
+  "best_rank": 151
+ },
+ {
+  "university_id": "6f2bd9a0-2fe1-5216-a34f-cfd1e5fcedd7",
+  "name": "Hunan University",
+  "country": "China",
+  "website": "https://www.hnu.edu.cn/",
+  "best_rank": 151
+ },
+ {
+  "university_id": "0272ce13-5809-543c-b131-9042a9cdcd35",
+  "name": "University of Electronic Science and Technology of China",
+  "country": "China",
+  "website": "http://www.uestc.edu.cn/",
+  "best_rank": 151
+ },
+ {
+  "university_id": "1ec3fb1c-3b1e-5326-a4c2-398b46e5ec4e",
+  "name": "Zhengzhou University",
+  "country": "China",
+  "website": "https://www.zzu.edu.cn",
+  "best_rank": 151
+ },
+ {
+  "university_id": "527121f0-0d61-5f23-a515-1f4ed8cdea15",
+  "name": "Chinese Academy of Medical Sciences & Peking Union Medical College",
+  "country": "China",
+  "website": "https://www.cams.ac.cn",
+  "best_rank": 151
+ },
+ {
+  "university_id": "1042123a-851e-532f-9355-fdee1624b0e5",
+  "name": "Universiti Teknologi Malaysia",
+  "country": "Malaysia",
+  "website": "http://www.utm.my/",
+  "best_rank": 153
+ },
+ {
+  "university_id": "3dbd05f9-ee8b-5bda-b461-f1c4bf152698",
+  "name": "University of York",
+  "country": "United Kingdom",
+  "website": "http://www.york.ac.uk/",
+  "best_rank": 154
+ },
+ {
+  "university_id": "4905a534-c722-5951-bcd1-2a676a636ead",
+  "name": "Hanyang University",
+  "country": "Korea, Republic of",
+  "website": "http://www.hanyang.ac.kr/",
+  "best_rank": 155
+ },
+ {
+  "university_id": "c414fa04-967d-501f-9db1-3879b0f30bc3",
+  "name": "Lancaster University",
+  "country": "United Kingdom",
+  "website": "https://www.lancaster.ac.uk",
+  "best_rank": 157
+ },
+ {
+  "university_id": "a7bf2f82-14eb-52f0-8b72-4362dd98bc71",
+  "name": "King Abdulaziz University",
+  "country": "Saudi Arabia",
+  "website": "http://www.kau.edu.sa/",
+  "best_rank": 163
+ },
+ {
+  "university_id": "8cf84b5b-4681-54b3-9013-24b55544e10a",
+  "name": "Chalmers University of Technology",
+  "country": "Sweden",
+  "website": "http://www.chalmers.se/",
+  "best_rank": 165
+ },
+ {
+  "university_id": "cb8de211-5171-53eb-b568-a641f586fa0a",
+  "name": "Al-Farabi Kazakh National University",
+  "country": "Kazakhstan",
+  "website": "https://farabi.university",
+  "best_rank": 166
+ },
+ {
+  "university_id": "4f6e18a6-dfa0-5442-88da-6c33630ac6de",
+  "name": "Hokkaido University",
+  "country": "Japan",
+  "website": "https://www.global.hokudai.ac.jp/",
+  "best_rank": 170
+ },
+ {
+  "university_id": "dd82c608-39f6-5dc0-8362-f4673b6eefcb",
+  "name": "Kyushu University",
+  "country": "Japan",
+  "website": "http://www.kyushu-u.ac.jp/",
+  "best_rank": 170
+ },
+ {
+  "university_id": "a2f62835-d825-5217-8e59-90ad384c3f8c",
+  "name": "Indian Institute of Technology, Madras",
+  "country": "India",
+  "website": "http://www.iitm.ac.in/",
+  "best_rank": 170
+ },
+ {
+  "university_id": "b587ad87-cbf6-50e7-b5f8-952030dcf743",
+  "name": "University of Antwerp",
+  "country": "Belgium",
+  "website": "https://www.uantwerpen.be/en/",
+  "best_rank": 170
+ },
+ {
+  "university_id": "bb49d73c-e3e8-5fa0-ad66-319e24608e25",
+  "name": "Universitat Aut\u00f2noma de Barcelona",
+  "country": "Spain",
+  "website": "https://www.uab.cat",
+  "best_rank": 172
+ },
+ {
+  "university_id": "1bc79b98-d4ac-5440-a8ce-ce936f41608f",
+  "name": "Universidad de Chile",
+  "country": "Chile",
+  "website": "http://www.uchile.cl/",
+  "best_rank": 173
+ },
+ {
+  "university_id": "587fb194-e2d0-5f15-abba-1c8a183ae142",
+  "name": "University of Dublin, Trinity College",
+  "country": "Ireland",
+  "website": "http://www.tcd.ie/",
+  "best_rank": 173
+ },
+ {
+  "university_id": "0c842a32-8330-5812-806f-cb6207ddbac3",
+  "name": "The Queen's University Belfast",
+  "country": "United Kingdom",
+  "website": "http://www.qub.ac.uk/",
+  "best_rank": 174
+ },
+ {
+  "university_id": "4642dac4-82a7-5e31-ba21-c6fef606f411",
+  "name": "Technische Universit\u00e4t Dresden",
+  "country": "Germany",
+  "website": "https://tu-dresden.de",
+  "best_rank": 174
+ },
+ {
+  "university_id": "b832cec5-3b18-546b-8e02-38fb48413bca",
+  "name": "National Tsinghua University",
+  "country": "Taiwan, Province of China",
+  "website": "http://www.nthu.edu.tw/",
+  "best_rank": 176
+ },
+ {
+  "university_id": "f069ea61-f5c2-569d-9037-d01f1f53091d",
+  "name": "National Yang Ming Chiao Tung University",
+  "country": "Taiwan, Province of China",
+  "website": "https://www.nycu.edu.tw/",
+  "best_rank": 177
+ },
+ {
+  "university_id": "03c16663-fa14-5df4-9aa7-d48e02ed3846",
+  "name": "Cardiff University",
+  "country": "United Kingdom",
+  "website": "http://www.cardiff.ac.uk/",
+  "best_rank": 179
+ },
+ {
+  "university_id": "55405d00-ab25-533d-a54d-3e6f9453f6cf",
+  "name": "Bayerische Julius-Maximilians-Universit\u00e4t W\u00fcrzburg",
+  "country": "Germany",
+  "website": "http://www.uni-wuerzburg.de/",
+  "best_rank": 179
+ },
+ {
+  "university_id": "e5ce9d4b-638a-55b6-adef-1e0c03c8b0ad",
+  "name": "Medical University of Vienna",
+  "country": "Austria",
+  "website": "https://www.meduniwien.ac.at",
+  "best_rank": 181
+ },
+ {
+  "university_id": "ca928715-59ee-5341-b1fc-ef4f37e4b4bf",
+  "name": "Curtin University",
+  "country": "Australia",
+  "website": "http://www.curtin.edu.au/",
+  "best_rank": 183
+ },
+ {
+  "university_id": "98b4e737-130f-504b-9d9c-1198c0270376",
+  "name": "University of Wollongong",
+  "country": "Australia",
+  "website": "http://www.uow.edu.au/",
+  "best_rank": 184
+ },
+ {
+  "university_id": "575d5e9a-f98a-5ec3-bea3-7f7b8c05100a",
+  "name": "Louvain School of Management",
+  "country": "Belgium",
+  "website": "https://uclouvain.be/",
+  "best_rank": 184
+ },
+ {
+  "university_id": "1b35aa93-a1de-5a99-8c88-dd9613317e0f",
+  "name": "Tecnologico de Monterrey",
+  "country": "Mexico",
+  "website": "https://www.tec.mx/",
+  "best_rank": 187
+ },
+ {
+  "university_id": "950f15f4-f20d-5931-8a5c-025e070ede38",
+  "name": "University of Ottawa",
+  "country": "Canada",
+  "website": "http://www.uottawa.ca/",
+  "best_rank": 187
+ },
+ {
+  "university_id": "fb839fd6-8704-5720-a463-2876d775b8f5",
+  "name": "Universitat Pompeu Fabra",
+  "country": "Spain",
+  "website": "https://www.upf.edu",
+  "best_rank": 187
+ },
+ {
+  "university_id": "4c7dec1a-d8c5-54e0-a558-6a9d1dd4b823",
+  "name": "Universitas Indonesia",
+  "country": "Indonesia",
+  "website": "http://www.ui.ac.id/",
+  "best_rank": 189
+ },
+ {
+  "university_id": "fa82b5bb-ddbe-54d1-b218-92fd0acb5f42",
+  "name": "University of Twente",
+  "country": "Netherlands",
+  "website": "http://www.utwente.nl/",
+  "best_rank": 190
+ },
+ {
+  "university_id": "9f02a56c-9ab8-5777-abaf-de35e9192d5f",
+  "name": "TU Wien",
+  "country": "Austria",
+  "website": "https://www.tuwien.at",
+  "best_rank": 191
+ },
+ {
+  "university_id": "bd6b20f6-b0b7-5062-b4ac-a403d08eadaf",
+  "name": "National Cheng Kung University",
+  "country": "Taiwan",
+  "website": "https://web.ncku.edu.tw/",
+  "best_rank": 191
+ },
+ {
+  "university_id": "d1f7e5a5-d181-56b2-bcc9-72e6cb68e118",
+  "name": "University of Leicester",
+  "country": "United Kingdom",
+  "website": "http://www.le.ac.uk/",
+  "best_rank": 192
+ },
+ {
+  "university_id": "bd783952-4538-5666-883f-e9c56a60f109",
+  "name": "University of Reading",
+  "country": "United Kingdom",
+  "website": "https://www.reading.ac.uk",
+  "best_rank": 194
+ },
+ {
+  "university_id": "d569a38c-3ffc-590c-80ed-48b1621394e7",
+  "name": "The Education University of Hong Kong",
+  "country": "Hong Kong",
+  "website": "https://www.eduhk.hk/",
+  "best_rank": 195
+ },
+ {
+  "university_id": "05ee90cf-19f9-5b65-8bf1-63aa1bb139ff",
+  "name": "Waseda University",
+  "country": "Japan",
+  "website": "https://www.waseda.jp/top/",
+  "best_rank": 196
+ },
+ {
+  "university_id": "4285e06f-015e-58b3-915e-e4a47128638f",
+  "name": "University of Otago",
+  "country": "New Zealand",
+  "website": "http://www.otago.ac.nz/",
+  "best_rank": 197
+ },
+ {
+  "university_id": "d811ecca-3f36-56dc-a1ac-c1de1544955b",
+  "name": "Universidad Complutense de Madrid",
+  "country": "Spain",
+  "website": "http://www.ucm.es/",
+  "best_rank": 199
+ },
+ {
+  "university_id": "89e1ba5b-fd4e-5292-ab10-dc8500e7f29f",
+  "name": "University of Calgary",
+  "country": "Canada",
+  "website": "http://www.ucalgary.ca/",
+  "best_rank": 200
+ },
+ {
+  "university_id": "3b62e054-9fa1-582f-9a31-55f9e392c385",
+  "name": "Deakin University",
+  "country": "Australia",
+  "website": "http://www.deakin.edu.au/",
+  "best_rank": 201
+ },
+ {
+  "university_id": "474dac6f-db67-501b-b2f6-ba59aed7dbea",
+  "name": "Queensland University of Technology",
+  "country": "Australia",
+  "website": "http://www.qut.edu.au/",
+  "best_rank": 201
+ },
+ {
+  "university_id": "b544b3bb-c8b8-54da-9086-18baf5a73672",
+  "name": "United Arab Emirates University",
+  "country": "United Arab Emirates",
+  "website": "http://www.uaeu.ac.ae/",
+  "best_rank": 201
+ },
+ {
+  "university_id": "d9597e4a-75a9-5440-9902-e40d6ef03f13",
+  "name": "Hong Kong Baptist University",
+  "country": "Hong Kong",
+  "website": "https://www.hkbu.edu.hk/",
+  "best_rank": 201
+ },
+ {
+  "university_id": "3b163933-c42b-5be3-a7db-1d43d778b633",
+  "name": "Petronas Technology University",
+  "country": "Malaysia",
+  "website": "http://www.utp.edu.my/",
+  "best_rank": 201
+ },
+ {
+  "university_id": "bb59d10f-a746-5862-ae68-d42e57f6c804",
+  "name": "University of Aberdeen",
+  "country": "United Kingdom",
+  "website": "http://www.abdn.ac.uk/",
+  "best_rank": 201
+ },
+ {
+  "university_id": "7e066a2b-e773-5bc7-b7f1-4d4c1bc56f44",
+  "name": "University of Surrey",
+  "country": "United Kingdom",
+  "website": "http://www.surrey.ac.uk/",
+  "best_rank": 201
+ },
+ {
+  "university_id": "37e007e0-63ca-5a1a-a785-cef05c73ec9b",
+  "name": "University of Milan",
+  "country": "Italy",
+  "website": "https://www.unimi.it/",
+  "best_rank": 201
+ },
+ {
+  "university_id": "ee0a16d1-b464-5b0a-a817-7efa46e12559",
+  "name": "University of Sussex",
+  "country": "United Kingdom",
+  "website": "http://www.sussex.ac.uk/",
+  "best_rank": 201
+ },
+ {
+  "university_id": "26c4ebed-4686-5089-864f-6771795bb5d8",
+  "name": "Swinburne University of Technology",
+  "country": "Australia",
+  "website": "https://www.swinburne.edu.au/",
+  "best_rank": 201
+ },
+ {
+  "university_id": "2b507cd1-ff70-5c51-8708-28c523a5af24",
+  "name": "Vrije Universiteit Brussel",
+  "country": "Belgium",
+  "website": "https://www.vub.be/",
+  "best_rank": 201
+ },
+ {
+  "university_id": "9106d880-ee3e-5919-b900-fd5966b29e47",
+  "name": "Link\u00f6ping University",
+  "country": "Sweden",
+  "website": "http://www.liu.se/",
+  "best_rank": 201
+ },
+ {
+  "university_id": "c1ec3e2e-379b-5a56-928d-77bce982bc93",
+  "name": "Ulsan National Institute of Science and Technology",
+  "country": "Korea, Republic of",
+  "website": "http://www.unist.ac.kr/",
+  "best_rank": 201
+ },
+ {
+  "university_id": "466b0e36-cfb0-54b5-8e66-f95c2883a34d",
+  "name": "University of Pisa",
+  "country": "Italy",
+  "website": "http://www.unipi.it/",
+  "best_rank": 201
+ },
+ {
+  "university_id": "267f1ea0-3cce-5842-8e31-55e35893b7b2",
+  "name": "Universit\u00e4t Innsbruck",
+  "country": "Austria",
+  "website": "http://www.uibk.ac.at/",
+  "best_rank": 201
+ },
+ {
+  "university_id": "d9f96e91-5b30-58d7-8d3b-3f55e05db849",
+  "name": "University of Naples Federico II",
+  "country": "Italy",
+  "website": "http://www.unina.it/",
+  "best_rank": 201
+ },
+ {
+  "university_id": "0949633f-4123-57e8-8e3d-8b762d4a588d",
+  "name": "Abu Dhabi University",
+  "country": "United Arab Emirates",
+  "website": "http://www.adu.ac.ae/",
+  "best_rank": 201
+ },
+ {
+  "university_id": "760bbbad-61a0-51b9-8109-4ce87740467f",
+  "name": "University of Turin",
+  "country": "Italy",
+  "website": "http://www.unito.it/",
+  "best_rank": 201
+ },
+ {
+  "university_id": "b44469a2-84e1-5d33-98af-269d20f2f756",
+  "name": "Universit\u00e4t Mannheim",
+  "country": "Germany",
+  "website": "http://www.uni-mannheim.de/",
+  "best_rank": 201
+ },
+ {
+  "university_id": "1e6228e0-3144-5716-8af8-2d88e3760934",
+  "name": "East China Normal University",
+  "country": "China",
+  "website": "http://www.ecnu.edu.cn/",
+  "best_rank": 201
+ },
+ {
+  "university_id": "9fbb11d3-b386-51c2-ae49-035d51073a59",
+  "name": "Johannes-Gutenberg Universit\u00e4t Mainz",
+  "country": "Germany",
+  "website": "http://www.uni-mainz.de/",
+  "best_rank": 201
+ },
+ {
+  "university_id": "67dfca3c-5823-563f-93e9-bfc3b528e490",
+  "name": "Universit\u00e4t Potsdam",
+  "country": "Germany",
+  "website": "http://www.uni-potsdam.de/",
+  "best_rank": 201
+ },
+ {
+  "university_id": "c12cf89d-30c4-52cb-813c-469eaa0f2aba",
+  "name": "University of Science and Technology Beijing",
+  "country": "China",
+  "website": "http://www.ustb.edu.cn/",
+  "best_rank": 201
+ }
+]

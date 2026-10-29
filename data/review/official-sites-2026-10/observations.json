@@ -1,0 +1,209 @@
+[
+ {
+  "university_id": "c67598f4-8b91-53a9-a98a-ebd185ced219",
+  "metric": "tuition",
+  "year": 2027,
+  "value": 51700,
+  "unit": "AUD",
+  "source_url": "https://www.sydney.edu.au/study/fees-and-loans/international-student-tuition-fees.html",
+  "notes": "International undergraduate tuition, 2027 entry (minimum). Quote: \"Nursing | Undergraduate | A$49,200 | A$51,700 (table row, Full-time fees guide for 2027 entry)\" Collected 2026-10-29 by an automated assistant from the official site; confirm programme, residency and year before approving."
+ },
+ {
+  "university_id": "c67598f4-8b91-53a9-a98a-ebd185ced219",
+  "metric": "tuition",
+  "year": 2027,
+  "value": 69200,
+  "unit": "AUD",
+  "source_url": "https://www.sydney.edu.au/study/fees-and-loans/international-student-tuition-fees.html",
+  "notes": "International undergraduate tuition, 2027 entry (maximum). Quote: \"Health sciences | Undergraduate | A$60,600 – A$65,900 | A$63,600 – A$69,200 (table row, Full-time fees guide for 2027 entry)\" Collected 2026-10-29 by an automated assistant from the official site; confirm programme, residency and year before approving."
+ },
+ {
+  "university_id": "6941fb87-c482-5aa1-9f3c-a5de7cf736dc",
+  "metric": "tuition",
+  "year": 2026,
+  "value": 40225,
+  "unit": "NZD",
+  "source_url": "https://auckland.ac.nz/en/study/fees-and-money-matters/tuition-fees/undergraduate-international-fees.html",
+  "notes": "International undergraduate tuition, 2026 (minimum). Quote: \"Bachelor of Arts (except performance and science-based courses) | NZ$40,225\" Collected 2026-10-29 by an automated assistant from the official site; confirm programme, residency and year before approving."
+ },
+ {
+  "university_id": "6941fb87-c482-5aa1-9f3c-a5de7cf736dc",
+  "metric": "tuition",
+  "year": 2026,
+  "value": 86561,
+  "unit": "NZD",
+  "source_url": "https://auckland.ac.nz/en/study/fees-and-money-matters/tuition-fees/undergraduate-international-fees.html",
+  "notes": "International undergraduate tuition, 2026 (maximum). Quote: \"Bachelor of Medicine and Bachelor of Surgery - Year 2 onwards (for Year 1 see Bachelor of Health Sciences) | NZ$86,561\" Collected 2026-10-29 by an automated assistant from the official site; confirm programme, residency and year before approving."
+ },
+ {
+  "university_id": "61b5c222-f7d2-5ff7-a546-b186e73b945b",
+  "metric": "tuition",
+  "year": 2026,
+  "value": 27720,
+  "unit": "GBP",
+  "source_url": "https://www.gla.ac.uk/undergraduate/fees/eufees",
+  "notes": "International undergraduate tuition, 2026/27 (minimum). Quote: \"Arts and Social Sciences: £27,720\" Collected 2026-10-29 by an automated assistant from the official site; confirm programme, residency and year before approving."
+ },
+ {
+  "university_id": "61b5c222-f7d2-5ff7-a546-b186e73b945b",
+  "metric": "tuition",
+  "year": 2026,
+  "value": 62730,
+  "unit": "GBP",
+  "source_url": "https://www.gla.ac.uk/undergraduate/fees/eufees",
+  "notes": "International undergraduate tuition, 2026/27 (maximum). Quote: \"MBChB and clinical programmes: £62,730\" Collected 2026-10-29 by an automated assistant from the official site; confirm programme, residency and year before approving."
+ },
+ {
+  "university_id": "3c3e72ae-5e23-550f-8280-25603d083bb5",
+  "metric": "tuition",
+  "year": 2026,
+  "value": 25000,
+  "unit": "GBP",
+  "source_url": "https://sheffield.ac.uk/new-students/tuition-fees/undergraduate-overseas",
+  "notes": "International undergraduate tuition, 2026/27 (minimum). Quote: \"will charge new full-time overseas undergraduates, tuition fees between £25,000 and £32,100\" Collected 2026-10-29 by an automated assistant from the official site; confirm programme, residency and year before approving."
+ },
+ {
+  "university_id": "3c3e72ae-5e23-550f-8280-25603d083bb5",
+  "metric": "tuition",
+  "year": 2026,
+  "value": 32100,
+  "unit": "GBP",
+  "source_url": "https://sheffield.ac.uk/new-students/tuition-fees/undergraduate-overseas",
+  "notes": "International undergraduate tuition, 2026/27 (maximum). Quote: \"will charge new full-time overseas undergraduates, tuition fees between £25,000 and £32,100\" Collected 2026-10-29 by an automated assistant from the official site; confirm programme, residency and year before approving."
+ },
+ {
+  "university_id": "9dae6bd4-c65a-5c4a-943b-3831cdbbc4ff",
+  "metric": "tuition",
+  "year": 2026,
+  "value": 14000,
+  "unit": "EUR",
+  "source_url": "https://rug.nl/education/application-enrolment-tuition-fees/tuition-fee/bachelor?lang=en",
+  "notes": "International undergraduate tuition, 2026/27 (minimum). Quote: \"Economics and Business | € 14,000 | € 14,400\" Collected 2026-10-29 by an automated assistant from the official site; confirm programme, residency and year before approving."
+ },
+ {
+  "university_id": "9dae6bd4-c65a-5c4a-943b-3831cdbbc4ff",
+  "metric": "tuition",
+  "year": 2026,
+  "value": 32000,
+  "unit": "EUR",
+  "source_url": "https://rug.nl/education/application-enrolment-tuition-fees/tuition-fee/bachelor?lang=en",
+  "notes": "International undergraduate tuition, 2026/27 (maximum). Quote: \"Medicine and Dentistry | € 32,000 | € 32,000\" Collected 2026-10-29 by an automated assistant from the official site; confirm programme, residency and year before approving."
+ },
+ {
+  "university_id": "5c472dcb-a445-5d54-8c13-70840b7347c5",
+  "metric": "tuition",
+  "year": 2026,
+  "value": 69000,
+  "unit": "CNY",
+  "source_url": "https://intl.csu.edu.cn/English/Admission/Undergraduate_Programs/English_taught_Programs.htm",
+  "notes": "International undergraduate tuition, 2026/27 (standard). Quote: \"Tuition: 69000 CNY/year\" Collected 2026-10-29 by an automated assistant from the official site; confirm programme, residency and year before approving."
+ },
+ {
+  "university_id": "0bfd2121-ebb3-562f-ad36-d6a5bf570d8b",
+  "metric": "tuition",
+  "year": 2026,
+  "value": 20000,
+  "unit": "GBP",
+  "source_url": "https://www.nottingham.ac.uk/fees/tuitionfees/202627/undergraduate.aspx",
+  "notes": "International undergraduate tuition, 2026/27 (minimum). Quote: \"| CFG0 | MSci Hons | Science with Foundation Year | £9,790 | £20,000 |\" Collected 2026-10-29 by an automated assistant from the official site; confirm programme, residency and year before approving."
+ },
+ {
+  "university_id": "0bfd2121-ebb3-562f-ad36-d6a5bf570d8b",
+  "metric": "tuition",
+  "year": 2026,
+  "value": 47000,
+  "unit": "GBP",
+  "source_url": "https://www.nottingham.ac.uk/fees/tuitionfees/202627/undergraduate.aspx",
+  "notes": "International undergraduate tuition, 2026/27 (maximum). Quote: \"| A101 | BMBS | Graduate Entry Medicine | £9,790 | £47,000 |\" Collected 2026-10-29 by an automated assistant from the official site; confirm programme, residency and year before approving."
+ },
+ {
+  "university_id": "07277532-423a-5f50-815a-c8cc190fdd80",
+  "metric": "tuition",
+  "year": 2026,
+  "value": 15254,
+  "unit": "ILS",
+  "source_url": "https://int.technion.ac.il/programs/bsc-in-engineering-1st-year-in-english/costs/",
+  "notes": "International undergraduate tuition, 2026/27 (single). Quote: \"Non-citizens: 15,254 NIS*\" Collected 2026-10-29 by an automated assistant from the official site; confirm programme, residency and year before approving."
+ },
+ {
+  "university_id": "30573a6d-9a4d-582f-9089-9c360793f28e",
+  "metric": "tuition",
+  "year": 2026,
+  "value": 1194,
+  "unit": "EUR",
+  "source_url": "https://ulb.be/en/enrolment/tuition-fees",
+  "notes": "International undergraduate tuition, 2026/27 (minimum). Quote: \"listed in Annexes 1, 2 and 3 of the ARES circular: €1,194\" Collected 2026-10-29 by an automated assistant from the official site; confirm programme, residency and year before approving."
+ },
+ {
+  "university_id": "a8fd79a0-46d7-50c9-aa2f-2fc4d85d493e",
+  "metric": "tuition",
+  "year": 2026,
+  "value": 13500,
+  "unit": "EUR",
+  "source_url": "https://www.eur.nl/en/education/practical-matters/registration/tuition-fee/tuition-fee-2026-2027",
+  "notes": "International undergraduate tuition, 2026/27 (minimum). Quote: \"Non-EEA Students: €13.500\" Collected 2026-10-29 by an automated assistant from the official site; confirm programme, residency and year before approving."
+ },
+ {
+  "university_id": "39a0a410-8dec-5d39-bba7-99eb9fd534c4",
+  "metric": "tuition",
+  "year": 2025,
+  "value": 539070,
+  "unit": "RUB",
+  "source_url": "https://ftv.msu.ru/abitur/for-foreigners.php",
+  "notes": "International undergraduate tuition, 2025/26 (annual). Quote: \"the tuition fee was 539 070 (five hundred thirty nine thousand and seventy) rubles per year.\" Collected 2026-10-29 by an automated assistant from the official site; confirm programme, residency and year before approving."
+ },
+ {
+  "university_id": "accccabf-7374-575c-a90e-2a1b27d4a6ba",
+  "metric": "tuition",
+  "year": 2026,
+  "value": 33250,
+  "unit": "GBP",
+  "source_url": "https://www.st-andrews.ac.uk/study/undergraduate/fees/world/",
+  "notes": "International undergraduate tuition, 2026/27 (minimum). Quote: \"If you are studying in the Faculty of Arts, Divinity or Science, tuition fees for 2026-2027 will be £33,250.\" Collected 2026-10-29 by an automated assistant from the official site; confirm programme, residency and year before approving."
+ },
+ {
+  "university_id": "accccabf-7374-575c-a90e-2a1b27d4a6ba",
+  "metric": "tuition",
+  "year": 2026,
+  "value": 39620,
+  "unit": "GBP",
+  "source_url": "https://www.st-andrews.ac.uk/study/undergraduate/fees/world/",
+  "notes": "International undergraduate tuition, 2026/27 (maximum). Quote: \"If you are studying in the Faculty of Medicine, tuition fees for entrant students in 2026-2027 will be £39,620.\" Collected 2026-10-29 by an automated assistant from the official site; confirm programme, residency and year before approving."
+ },
+ {
+  "university_id": "d83e0119-d533-524d-a890-6b7c91c8de71",
+  "metric": "tuition",
+  "year": 2026,
+  "value": 25400,
+  "unit": "GBP",
+  "source_url": "https://www.bath.ac.uk/corporate-information/tuition-fees-for-undergraduate-students-starting-in-2026/",
+  "notes": "International undergraduate tuition, 2026/27 (minimum). Overseas fee band 1 for 2026/27. Page says fees are for 2026/27 only. Quote: \"Band 1: Primarily 'library' based courses (Humanities & Social Sciences) | £25,400\" Collected 2026-10-29 by an automated assistant from the official site; confirm programme, residency and year before approving."
+ },
+ {
+  "university_id": "d83e0119-d533-524d-a890-6b7c91c8de71",
+  "metric": "tuition",
+  "year": 2026,
+  "value": 32000,
+  "unit": "GBP",
+  "source_url": "https://www.bath.ac.uk/corporate-information/tuition-fees-for-undergraduate-students-starting-in-2026/",
+  "notes": "International undergraduate tuition, 2026/27 (maximum). Overseas fee band 3 for 2026/27. Page also says overseas students should budget for an increase of up to 8% for every year of the course. Quote: \"Band 3: All Science, Engineering, Health, and Psychology courses | £32,000\" Collected 2026-10-29 by an automated assistant from the official site; confirm programme, residency and year before approving."
+ },
+ {
+  "university_id": "7aa094cd-7138-5fb0-b290-2242644f4a90",
+  "metric": "tuition",
+  "year": 2026,
+  "value": 490400,
+  "unit": "MOP",
+  "source_url": "https://reg.um.edu.mo/admissions/general-information/fees",
+  "notes": "International undergraduate tuition, 2026/27 (minimum). Quote: \"Programme Full Tuition Fee within Normal Study Period. Undergraduate non-local (international) tuition, 2026/2027 academic year (MOP): 4-year Bachelor's programmes: 490,400\" Collected 2026-10-29 by an automated assistant from the official site; confirm programme, residency and year before approving."
+ },
+ {
+  "university_id": "7aa094cd-7138-5fb0-b290-2242644f4a90",
+  "metric": "tuition",
+  "year": 2026,
+  "value": 613000,
+  "unit": "MOP",
+  "source_url": "https://reg.um.edu.mo/admissions/general-information/fees",
+  "notes": "International undergraduate tuition, 2026/27 (maximum). Quote: \"Programme Full Tuition Fee within Normal Study Period. Undergraduate non-local (international) tuition, 2026/2027 academic year (MOP): 5-year Bachelor's programmes: 613,000\" Collected 2026-10-29 by an automated assistant from the official site; confirm programme, residency and year before approving."
+ }
+]

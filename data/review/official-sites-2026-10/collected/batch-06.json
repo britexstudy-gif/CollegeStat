@@ -1,0 +1,82 @@
+[
+  {
+    "university_id": "8e7965f7-20be-56cb-9233-5daa3414b0fc",
+    "name": "National Taiwan University",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Tuition page oia.ntu.edu.tw redirected to isss.ntu.edu.tw/finances/tuition-fees/, which gave no annual international undergraduate figure (only a per-semester reference to an external page). IELTS/TOEFL and deadline not verified: the NTU 116-1 selection guidelines PDF (studyabroad.ntu.edu.tw) was found but not read. Batch WebFetch budget ran out."
+  },
+  {
+    "university_id": "b3a81d8c-44ec-56d8-aa5f-b58d5fce6bfd",
+    "name": "Sorbonne Université",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Enrolment page (sorbonne-universite.fr/en/education/study-sorbonne-university/enrolment-procedures-and-tuition-fees) shows only a national rate, 'Bachelor's degree programmes: €178' for 2026/2027, and says non-EU amounts are not given there. Not reported as international tuition. Registration-procedures page and English requirements not read: WebFetch budget ran out."
+  },
+  {
+    "university_id": "26fd17cb-9752-5eab-86f1-9f9768a938b7",
+    "name": "University of Geneva",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Official bachelor admissions page (unige.ch/gsem) returned an access-denied notice with no content. No tuition, English or deadline facts found. WebFetch budget ran out before other pages were read."
+  },
+  {
+    "university_id": "ee31891b-8bbc-5fb0-9bc5-e0122f0c55dd",
+    "name": "Universiti Malaya",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "UG international fee structure PDF (study.um.edu.my, 2025/2026) lists amounts in RM (lowest 59,400.00, highest 673,200.00) but does not state they are annual; it says they follow the minimum or common period of study, so they were not reported. International applicant guideline (aei.um.edu.my) found but not read: WebFetch budget ran out."
+  },
+  {
+    "university_id": "c353b675-c43e-5507-88d6-7a1850a92f27",
+    "name": "Université Paris Cité",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Only a search was run; no official page was read. WebFetch budget ran out."
+  },
+  {
+    "university_id": "fe2070ba-9e66-590c-b67f-3cef2d8983b4",
+    "name": "Ruprecht-Karls-Universität Heidelberg",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Not searched. Skipped because the WebFetch budget ran out."
+  },
+  {
+    "university_id": "48429a40-059c-538c-ad95-c91c68b9cb1c",
+    "name": "Utrecht University",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Not searched. Skipped because the WebFetch budget ran out."
+  },
+  {
+    "university_id": "0aeeb18a-3be5-5bb9-9875-0bf4ce24d102",
+    "name": "Nanjing University",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Not searched. Skipped because the WebFetch budget ran out."
+  }
+]

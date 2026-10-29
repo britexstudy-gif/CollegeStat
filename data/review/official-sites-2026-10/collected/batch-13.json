@@ -1,0 +1,92 @@
+[
+  {
+    "university_id": "04566891-05b0-54be-9472-22d414096201",
+    "name": "Eberhard-Karls-Universität Tübingen",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Fetched the official 'Tuition fees for international students' page, but the captured text was navigation only and cut off before the fee body (106k chars, only first 100k read). Costs-and-funding page fetch was blocked by the WebFetch budget. No fee, English or deadline value could be quoted."
+  },
+  {
+    "university_id": "c7885845-c6f9-52dc-afb5-9fb93ba18f70",
+    "name": "Tianjin University",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Fetched the official admitted-international-students FAQ: it gives no tuition amounts, English requirements or deadlines (only 420 RMB application fee and 800 RMB insurance, which are not tuition). Undergraduates admissions page fetch was blocked by the WebFetch budget."
+  },
+  {
+    "university_id": "35a032fc-f24f-5a50-92ed-b818fca7f222",
+    "name": "University College Dublin",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "The official Non-EU Undergraduate Fees 2026/27 page was fetched but the fee tables were missing from the captured text. Search found the UCD Minimum English Language Requirements page and 2026 offer pack, but fetching them was blocked by the WebFetch budget, so no IELTS/TOEFL value could be quoted."
+  },
+  {
+    "university_id": "35ce761b-adcc-5c73-8bc4-a358b418afa6",
+    "name": "Technical University of Denmark",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Official DTU page states 'The tuition fee at DTU is €15,000 per academic year.' for non-EU/EEA bachelor students, but the page does not say which academic year this applies to, so it was left out. No 2027 application deadline stated on the page. Fetch of the deadlines page and English requirements was blocked by the WebFetch budget."
+  },
+  {
+    "university_id": "ea07bd5a-d5e8-59b9-bfd9-600587605f25",
+    "name": "Universidade de São Paulo",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Official USP page (iag.usp.br, Mobility for foreign undergraduate students) states 'Undergraduate Programmes at USP do not charge tuition or enrollment fees, for either Brazilian or foreign students.' The page is undated, so no academic_year could be confirmed and no tuition entry was created; staff may wish to confirm and add it. No English test requirement stated on that page."
+  },
+  {
+    "university_id": "ed5b15cb-d889-50df-941c-4764af80621d",
+    "name": "University of Helsinki",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Only the 2017 news item on non-EU/EEA tuition fees was retrieved; it states 'Bachelor's degree programmes remain free of charge for all.' but it is not dated for 2025/26 or 2026/27, so it was left out. Tuition-fees-and-scholarship page fetch was blocked by the WebFetch budget."
+  },
+  {
+    "university_id": "a8fd79a0-46d7-50c9-aa2f-2fc4d85d493e",
+    "name": "Erasmus University Rotterdam",
+    "tuition": [
+      {
+        "amount": 13500,
+        "currency": "EUR",
+        "academic_year": "2026/27",
+        "period": "year",
+        "label": "minimum",
+        "source_url": "https://www.eur.nl/en/education/practical-matters/registration/tuition-fee/tuition-fee-2026-2027",
+        "quote": "Non-EEA Students: €13.500"
+      }
+    ],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Tuition is the lowest bachelor figure on the 2026-2027 page (ESE, ESHPM, ESHCC, ESL, ESPhil, ESSB programmes). The page also lists RSM at €14,000, EUC at €16,300 and Erasmus MC at €32,200, which were not quoted verbatim and so are not reported as a maximum. The page says 'Tuition fees are set per academic year.' Transitional rate of €11,700 applies only to students already enrolled in 2025-2026. No English or deadline values were checked (budget exhausted)."
+  },
+  {
+    "university_id": "a002ead6-250c-572d-8773-015f9419b016",
+    "name": "Stockholm University",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Official costs page gives SEK 90,000 (Humanities/Social Sciences/Law) and SEK 140,000 (Sciences) per academic year for non-EU/EEA students, but the page does not say these are undergraduate-specific (it refers to first- or second-cycle education), so they were left out. Public/private status not stated on the page. English requirements search returned no values and the fetch was blocked by the WebFetch budget."
+  }
+]

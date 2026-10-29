@@ -1,0 +1,101 @@
+[
+  {
+    "university_id": "6020a2b5-3788-5dd1-b3f2-b9c6c7c6f99b",
+    "name": "ETHZ - ETH Zurich",
+    "tuition": [
+      {
+        "amount": 2190,
+        "currency": "CHF",
+        "academic_year": "2025/26",
+        "period": "semester",
+        "label": "threefold tuition fee for foreign students",
+        "source_url": "https://ethz.ch/students/en/studies/financial/studiengebuehren.html",
+        "quote": "Threefold tuition fee: CHF 2190 / semester. The threefold tuition fee for foreign students will apply from the Autumn Semester 2025."
+      }
+    ],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Tuition is stated per semester only, not per year, so no annual figure was reported. The page does not say which degree levels it covers, and the academic year 2025/26 is inferred from the 'from Autumn Semester 2025' wording. Quote text came from a page summary, not a verbatim copy; re-check before publishing. No English requirement or deadline found. Public/private status not stated."
+  },
+  {
+    "university_id": "4b7862dc-7567-5f81-af58-c01144412a88",
+    "name": "University College London",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "The 2026-27 undergraduate fees page (ucl.ac.uk/study/undergraduate-fees-2026-2027) says international fees are shown below but the figures did not come through in the fetch. A second URL for the same page failed. The fetch budget ran out before the figures could be retrieved, so international tuition is missing and should be checked manually. English, deadline and type were not searched."
+  },
+  {
+    "university_id": "b37d730b-421c-5ed6-a807-3d66e7ca21f7",
+    "name": "The University of Hong Kong",
+    "tuition": [],
+    "english": [],
+    "deadline": [
+      {
+        "title": "Undergraduate application deadline for non-local applicants",
+        "cycle": "2027 entry",
+        "due_at": "2027-08-25",
+        "notes": "Final cutoff stated on the page. The page also says applications received by 2026-11-25 (12:00 noon HKT) will be evaluated first, with offers from December 2026, and later applications are accepted on a rolling basis. Document is an admissions general information PDF for NJ 2027.",
+        "source_url": "https://admissions.hku.hk/sites/default/files/2026-09/HKU_General_Information_NJ_2027.pdf",
+        "quote": "Applicants may still submit an application until August 25, 2027 (12:00 noon Hong Kong Time)"
+      }
+    ],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Non-subsidised undergraduate fees on the same PDF (HK$250,000 non-STEM, HK$280,000 STEM, HK$590,000 MBBS/BDS per annum) were not reported. The page applies them to 2027-28 entrants, outside the allowed 2025/26 or 2026/27 window. No IELTS/TOEFL minimum on this document. Type not stated."
+  },
+  {
+    "university_id": "519c66df-8779-5336-acda-2cba10f95c66",
+    "name": "Tsinghua University",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "The international fees page (international.join-tsinghua.edu.cn/Admission1/Fees.htm) lists per-year RMB amounts by programme (for example 26,000 and 30,000 and 40,000 and 100,000) but states no academic year, so none were reported. English, deadline and type not checked."
+  },
+  {
+    "university_id": "79e1cf8b-6a97-5fef-ac23-aa6012197801",
+    "name": "Peking University",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Searches returned only third-party sites and no official PKU fee page was fetched. Nothing was reported. WebFetch budget ran out."
+  },
+  {
+    "university_id": "7deae08f-080e-56cd-8aa8-ca05c941f0cc",
+    "name": "The Chinese University of Hong Kong",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Search found the official page admission.cuhk.edu.hk/fees-financing-your-studies/fees/ but the fetch was blocked by the WebFetch budget limit. Nothing was reported."
+  },
+  {
+    "university_id": "6f8ca7da-1cba-56f4-89e6-4cffd48126ac",
+    "name": "University of Melbourne",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Search found an official 2026 international course tuition fees PDF on students.unimelb.edu.au but the fetch was blocked by the WebFetch budget limit. Nothing was reported. A 2027 figure would need checking."
+  },
+  {
+    "university_id": "34f9bd5c-1c24-5d4f-880c-4a342627a148",
+    "name": "UNSW Sydney",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Search found the official page unsw.edu.au/student/managing-your-studies/fees/international but the fetch was blocked by the WebFetch budget limit. Nothing was reported."
+  }
+]

@@ -1,0 +1,82 @@
+[
+  {
+    "university_id": "6a9e2556-fc5f-56a2-bca0-9364f099818c",
+    "name": "Seoul National University",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Not found. Searches returned only third-party sites; no official snu.ac.kr page was read. WebFetch budget exhausted before fetching any official page."
+  },
+  {
+    "university_id": "5f90631a-ee6a-587d-a542-5fb1d07d0705",
+    "name": "University of Science and Technology of China",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Not found. Searches returned only topuniversities/aggregator results and ic.ustc.edu.cn URLs that were not read. WebFetch budget exhausted."
+  },
+  {
+    "university_id": "276cad09-4a66-51a1-9071-c1ffe923a508",
+    "name": "University of British Columbia",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Official page students.ubc.ca/finances/tuition-fees/undergraduate-tuition-fees was read. It gives 2026/27 international undergraduate tuition by programme, lowest Music row $48,779.80 and highest Medical Laboratory Science row $67,237.20 (per-unit rate x units). Left out because the page shows only '$' and does not name the currency (likely CAD, not confirmed), and the figures are per programme table rows, not a single verified minimum/maximum. Staff should verify currency and the figures on the page. English requirements not checked. WebFetch budget exhausted."
+  },
+  {
+    "university_id": "c0386da4-95a0-567a-8f70-81b33c5c7f06",
+    "name": "University of Queensland",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Official my.uq.edu.au full_fee_paying_2025.pdf was read: international UG fees $43,200 to $87,824 per year for 2025. Left out because it is 2025, not 2025/26 or 2026/27, and the currency is not named (likely AUD, not confirmed). The 2026 fee PDF (my.uq.edu.au/files/37961/full_fee_paying_2026.pdf) was found in search but NOT read because the WebFetch budget ran out. Staff should check that PDF first."
+  },
+  {
+    "university_id": "9f3cf72f-ca1e-5831-b48d-e5747fb631d6",
+    "name": "Institut Polytechnique de Paris",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Not checked. Ran out of WebFetch budget before reaching this university; no searches run for it."
+  },
+  {
+    "university_id": "ff20f641-09ff-5746-af91-35acb184e318",
+    "name": "Karolinska Institute Stockholm",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Not checked. Ran out of WebFetch budget before reaching this university; no searches run for it."
+  },
+  {
+    "university_id": "b5f25065-0a86-517e-91f0-ff6bbe8c81d3",
+    "name": "Yonsei University",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Not checked. Ran out of WebFetch budget before reaching this university; no searches run for it."
+  },
+  {
+    "university_id": "e943a9a4-853c-5554-ac7f-9887d0b2a91d",
+    "name": "Kyoto University",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Not checked. Ran out of WebFetch budget before reaching this university; no searches run for it."
+  }
+]

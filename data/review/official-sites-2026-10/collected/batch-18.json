@@ -1,0 +1,129 @@
+[
+  {
+    "university_id": "a75ede9d-f2a9-5169-837d-38e810d35a6b",
+    "name": "University of Bologna",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Official fees page (unibo.it) gives no international/non-EU undergraduate tuition amount; only a first-year instalment of EUR 157.04 for 2026/27 with no nationality split, so left out. No official undergraduate IELTS/TOEFL minimum found on unibo.it (only programme-level pages). Web-fetch budget ran out before further checks."
+  },
+  {
+    "university_id": "d83e0119-d533-524d-a890-6b7c91c8de71",
+    "name": "University of Bath",
+    "tuition": [
+      {
+        "amount": 25400,
+        "currency": "GBP",
+        "academic_year": "2026/27",
+        "period": "year",
+        "label": "minimum",
+        "source_url": "https://www.bath.ac.uk/corporate-information/tuition-fees-for-undergraduate-students-starting-in-2026/",
+        "quote": "Band 1: Primarily 'library' based courses (Humanities & Social Sciences) | £25,400",
+        "notes": "Overseas fee band 1 for 2026/27. Page says fees are for 2026/27 only."
+      },
+      {
+        "amount": 32000,
+        "currency": "GBP",
+        "academic_year": "2026/27",
+        "period": "year",
+        "label": "maximum",
+        "source_url": "https://www.bath.ac.uk/corporate-information/tuition-fees-for-undergraduate-students-starting-in-2026/",
+        "quote": "Band 3: All Science, Engineering, Health, and Psychology courses | £32,000",
+        "notes": "Overseas fee band 3 for 2026/27. Page also says overseas students should budget for an increase of up to 8% for every year of the course."
+      }
+    ],
+    "english": [
+      {
+        "kind": "IELTS",
+        "minimum": 6.5,
+        "notes": "6.5 overall with 6.0 in each component; applies to Category C undergraduate courses per the English language requirements page.",
+        "source_url": "https://bath.ac.uk/corporate-information/english-language-requirements-for-qualifications-category-c",
+        "quote": "6.5 with 6.0 in each component"
+      },
+      {
+        "kind": "TOEFL",
+        "minimum": 90,
+        "notes": "90 overall with 21 in each component (TOEFL iBT and iBT Home Edition); applies to Category C undergraduate courses. The same page also lists a 4.5 overall row for TOEFL iBT taken after 21 January 2026, which was not explained and is not reported here; staff should check.",
+        "source_url": "https://bath.ac.uk/corporate-information/english-language-requirements-for-qualifications-category-c",
+        "quote": "90 overall with 21 in each component"
+      }
+    ],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "No official 2027-entry international undergraduate application deadline found on bath.ac.uk. Public/private status not stated on fetched pages. Web-fetch budget ran out before checking the rest."
+  },
+  {
+    "university_id": "5b24f3f6-adcb-53fb-a89e-4f25f33f8da2",
+    "name": "Universität Hamburg",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Official contributions page (uni-hamburg.de) says fees generally include a semester contribution and a tuition fee, but gives no figures and no international-specific amount. No official English requirement or deadline found. Web-fetch budget ran out."
+  },
+  {
+    "university_id": "b719e149-7073-5173-a435-791b55891294",
+    "name": "Université de Lausanne",
+    "tuition": [
+      {
+        "amount": 580,
+        "currency": "CHF",
+        "academic_year": null,
+        "period": "semester",
+        "label": null,
+        "source_url": "https://unil.ch/immat/en/home/menuinst/futurs-etudiants/sinscrire/les-taxes-semestrielles.html",
+        "quote": "Tuition fees (exams included) and semester fees: CHF 580.- (per semester)",
+        "notes": "Per-semester figure for Bachelor students as stated on the page. The page states no separate rate for foreign (non-Swiss) students, so this figure may not be international-specific; staff should confirm. Academic year not stated on the page."
+      }
+    ],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Only the semester fee was found on unil.ch. No English requirement or deadline found on official pages. Web-fetch budget ran out."
+  },
+  {
+    "university_id": "04c4aef9-ef8e-5981-ba20-50039aeceef5",
+    "name": "Universiti Kebangsaan Malaysia",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Searches surfaced only programme-level fee PDFs on ukm.my/shape.ukm.my for 2024/25, which are outside the required academic years. Not verified. Web-fetch budget ran out before reading them."
+  },
+  {
+    "university_id": "c770e637-838e-5f90-ae57-425b587061a0",
+    "name": "Macquarie University",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Official international fees page (mq.edu.au) was found but could not be read: web-fetch budget ran out. No facts recorded."
+  },
+  {
+    "university_id": "b865e086-9fba-5fd2-8b1f-9be60d97baf4",
+    "name": "Universiti Sains Malaysia",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Official undergraduate international fee page (admission.usm.my) was found but could not be read: web-fetch budget ran out. No facts recorded."
+  },
+  {
+    "university_id": "f68b940c-61ed-5be0-96e9-d70422a3f8bf",
+    "name": "Indian Institute of Technology, Bombay",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Official UG new-entrant fee page (acad.iitb.ac.in) was found but could not be read: web-fetch budget ran out. No facts recorded."
+  }
+]

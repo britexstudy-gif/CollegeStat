@@ -1,0 +1,19 @@
+[
+ {
+  "id": "4119ab8d-08a5-5118-b7cd-4c2c62e0d687",
+  "university_id": "b37d730b-421c-5ed6-a807-3d66e7ca21f7",
+  "title": "Undergraduate application deadline for non-local applicants",
+  "student_category": "International undergraduate applicants",
+  "cycle": "2027 entry",
+  "due_at": "2027-08-25",
+  "timezone": null,
+  "application_url": "https://admissions.hku.hk/sites/default/files/2026-09/HKU_General_Information_NJ_2027.pdf",
+  "year": 2027,
+  "source_url": "https://admissions.hku.hk/sites/default/files/2026-09/HKU_General_Information_NJ_2027.pdf",
+  "verification_status": "needs_review",
+  "verified_at": null,
+  "notes": "Date only; confirm the exact cutoff time. Final cutoff stated on the page. The page also says applications received by 2026-11-25 (12:00 noon HKT) will be evaluated first, with offers from December 2026, and later applications are accepted on a rolling basis. Document is an admissions general information PDF for NJ 2027.",
+  "quote": "Applicants may still submit an application until August 25, 2027 (12:00 noon Hong Kong Time)",
+  "collected_at": "2026-10-29"
+ }
+]

@@ -1,0 +1,90 @@
+[
+  {
+    "university_id": "1a5b82c1-d204-5c75-a433-ef5c17e2a9d2",
+    "name": "University of Birmingham",
+    "tuition": [],
+    "english": [
+      {
+        "kind": "IELTS",
+        "minimum": 6.0,
+        "notes": "Varies by course group. Group A (e.g. Computer Science, Mathematics, Physics): 6.0 overall, no less than 5.5 in any band. Group B (e.g. Business, Psychology, Law): 6.5 overall, no less than 6.0. Groups C and D (e.g. Pharmacy, Medicine, Nursing): 7.0 overall. Reported minimum is the lowest group figure. Some programmes have higher requirements.",
+        "source_url": "https://birmingham.ac.uk/study/undergraduate/apply/entry-requirements/international-entry-requirements",
+        "quote": "6.0 overall with no less than 5.5 in any band."
+      }
+    ],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "Tuition: the international fees page (birmingham.ac.uk/study/international/fees) gives no figures and points to the offer letter; the undergraduate tuition page gave only UK fees (9,790 for 2026/27), so no international tuition was reported. Deadline: search returned no official 2027 international deadline. English: the quote was taken from a summarised fetch of the official page, so verify wording. TOEFL figures were not reported because they differ by test version and date."
+  },
+  {
+    "university_id": "41845441-b6d6-52d1-9dde-3fde42120676",
+    "name": "Rheinische Friedrich-Wilhelms Universität Bonn",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "NOT CHECKED: the WebFetch budget ran out (proxy HTTP 403, session limit shared by all agents) after the search step, so no official page was read. Searches returned only candidate URLs on uni-bonn.de (costs-and-financing-for-international-students, english-language-skills-b2). Re-run this university later."
+  },
+  {
+    "university_id": "710661ab-60ec-57bf-84bc-aa0b1e256a12",
+    "name": "Leiden University",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "NOT CHECKED: WebFetch budget exhausted (proxy HTTP 403) before this university was reached. Re-run later."
+  },
+  {
+    "university_id": "bc0bcefc-cf3b-5fc7-bb41-76470ec9ff59",
+    "name": "Lund University",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "NOT CHECKED: WebFetch budget exhausted (proxy HTTP 403) before this university was reached. Re-run later."
+  },
+  {
+    "university_id": "8626e12e-d23c-5f35-b13b-88ff7c2e6912",
+    "name": "Weizmann Institute of Science",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "NOT CHECKED: WebFetch budget exhausted (proxy HTTP 403) before this university was reached. Re-run later."
+  },
+  {
+    "university_id": "7e74da55-7ed1-58a0-b41c-7eed8b466241",
+    "name": "Huazhong University of Science and Technology",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "NOT CHECKED: WebFetch budget exhausted (proxy HTTP 403) before this university was reached. Re-run later."
+  },
+  {
+    "university_id": "24e7d208-f222-510a-92a9-011aead2e2cc",
+    "name": "University of Western Australia",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "NOT CHECKED: WebFetch budget exhausted (proxy HTTP 403) before this university was reached. Re-run later."
+  },
+  {
+    "university_id": "2aa84135-ae94-568c-8721-5c06c836a3f2",
+    "name": "University of Leeds",
+    "tuition": [],
+    "english": [],
+    "deadline": [],
+    "type": null,
+    "checked_at": "2026-10-29",
+    "worker_notes": "NOT CHECKED: WebFetch budget exhausted (proxy HTTP 403) before this university was reached. Re-run later."
+  }
+]
