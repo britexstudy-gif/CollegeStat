@@ -1,0 +1,1202 @@
+[
+ {
+  "university_id": "22222222-2222-4222-8222-222222222222",
+  "name": "Massachusetts Institute of Technology",
+  "country": "United States",
+  "website": "http://web.mit.edu/",
+  "unitid": "166683",
+  "best_rank": 1
+ },
+ {
+  "university_id": "39230496-b2fc-53ca-9303-1726c4ac13da",
+  "name": "Harvard University",
+  "country": "United States",
+  "website": "http://www.harvard.edu/",
+  "unitid": "166027",
+  "best_rank": 1
+ },
+ {
+  "university_id": "11111111-1111-4111-8111-111111111111",
+  "name": "Stanford University",
+  "country": "United States",
+  "website": "http://www.stanford.edu/",
+  "unitid": "243744",
+  "best_rank": 2
+ },
+ {
+  "university_id": "6f13f9e9-cf5f-56ad-8384-39a9dc592d58",
+  "name": "Princeton University",
+  "country": "United States",
+  "website": "http://www.princeton.edu/",
+  "unitid": "186131",
+  "best_rank": 3
+ },
+ {
+  "university_id": "e67501b3-2e87-5598-b9e3-e28fe4101f68",
+  "name": "University of California-Berkeley",
+  "country": "United States",
+  "website": "http://www.berkeley.edu/",
+  "unitid": "110635",
+  "best_rank": 5
+ },
+ {
+  "university_id": "99fbcf31-606d-5dac-880e-83ca25acd942",
+  "name": "California Institute of Technology",
+  "country": "United States",
+  "website": "http://www.caltech.edu/",
+  "unitid": "110404",
+  "best_rank": 7
+ },
+ {
+  "university_id": "1ad9abe1-60cd-55ec-b227-5c8001db0475",
+  "name": "Columbia University in the City of New York",
+  "country": "United States",
+  "website": "http://www.columbia.edu/",
+  "unitid": "190150",
+  "best_rank": 8
+ },
+ {
+  "university_id": "7add53a9-8ddf-5e84-bd4d-a7c8638dbb95",
+  "name": "University of Chicago",
+  "country": "United States",
+  "website": "http://www.uchicago.edu/",
+  "unitid": "144050",
+  "best_rank": 9
+ },
+ {
+  "university_id": "0a670c6d-e20a-527f-851b-e2c1306cce70",
+  "name": "Yale University",
+  "country": "United States",
+  "website": "http://www.yale.edu/",
+  "unitid": "130794",
+  "best_rank": 10
+ },
+ {
+  "university_id": "8488d97e-a227-5fbd-b7b4-33a1194df723",
+  "name": "Cornell University",
+  "country": "United States",
+  "website": "http://www.cornell.edu/",
+  "unitid": "190415",
+  "best_rank": 12
+ },
+ {
+  "university_id": "894119e1-40c1-5589-8677-e1ed97388e59",
+  "name": "University of Pennsylvania",
+  "country": "United States",
+  "website": "http://www.upenn.edu/",
+  "unitid": "215062",
+  "best_rank": 14
+ },
+ {
+  "university_id": "d5ba03bb-65aa-55a6-8234-265ea05144fc",
+  "name": "University of California-Los Angeles",
+  "country": "United States",
+  "website": "http://www.ucla.edu/",
+  "unitid": "110662",
+  "best_rank": 14
+ },
+ {
+  "university_id": "f5c17f3c-ac83-5193-8c71-641147ad926c",
+  "name": "Johns Hopkins University",
+  "country": "United States",
+  "website": "http://www.jhu.edu/",
+  "unitid": "162928",
+  "best_rank": 16
+ },
+ {
+  "university_id": "5d324277-c7c7-52eb-9d99-03367f122d16",
+  "name": "University of Washington-Seattle Campus",
+  "country": "United States",
+  "website": "http://www.washington.edu/",
+  "unitid": "236948",
+  "best_rank": 16
+ },
+ {
+  "university_id": "8db5368d-e619-5c47-a235-b8d3afff1258",
+  "name": "University of California-San Diego",
+  "country": "United States",
+  "website": "http://www.ucsd.edu/",
+  "unitid": "110680",
+  "best_rank": 20
+ },
+ {
+  "university_id": "3c648215-2be9-55ee-8a7e-b39bee380c8b",
+  "name": "University of California-San Francisco",
+  "country": "United States",
+  "website": "http://www.ucsf.edu/",
+  "unitid": "110699",
+  "best_rank": 21
+ },
+ {
+  "university_id": "237842a4-aca1-5a19-b961-403c1e2e5381",
+  "name": "University of Michigan-Ann Arbor",
+  "country": "United States",
+  "website": "http://www.umich.edu/",
+  "unitid": "170976",
+  "best_rank": 23
+ },
+ {
+  "university_id": "b7c4c075-d30e-53b3-80a8-7e7d751a47b7",
+  "name": "Carnegie Mellon University",
+  "country": "United States",
+  "website": "http://www.cmu.edu/",
+  "unitid": "211440",
+  "best_rank": 24
+ },
+ {
+  "university_id": "cc300fc2-3770-5383-a663-b1ec31311b4d",
+  "name": "New York University",
+  "country": "United States",
+  "website": "http://www.nyu.edu/",
+  "unitid": "193900",
+  "best_rank": 26
+ },
+ {
+  "university_id": "fb08c67d-bb79-53ff-bbfc-1313fa5602e3",
+  "name": "Duke University",
+  "country": "United States",
+  "website": "http://www.duke.edu/",
+  "unitid": "198419",
+  "best_rank": 28
+ },
+ {
+  "university_id": "26ebf6e5-a612-55f5-bb38-64ba2e059762",
+  "name": "Washington University in St Louis",
+  "country": "United States",
+  "website": "http://www.wustl.edu/",
+  "unitid": "179867",
+  "best_rank": 28
+ },
+ {
+  "university_id": "e48a723c-68b4-560e-b4a0-09be01682853",
+  "name": "Northwestern University",
+  "country": "United States",
+  "website": "http://www.northwestern.edu/",
+  "unitid": "147767",
+  "best_rank": 30
+ },
+ {
+  "university_id": "9de671e1-9f36-5df6-bdd4-ded044e623a3",
+  "name": "The Rockefeller University",
+  "country": "United States",
+  "website": "http://www.rockefeller.edu/",
+  "unitid": "195049",
+  "best_rank": 32
+ },
+ {
+  "university_id": "a3e5ea6a-0e01-58d9-918a-9d90e12e575b",
+  "name": "University of Wisconsin-Madison",
+  "country": "United States",
+  "website": "http://www.wisc.edu/",
+  "unitid": "240444",
+  "best_rank": 35
+ },
+ {
+  "university_id": "50c3f8cc-8595-5c76-b3cc-115e502bb710",
+  "name": "University of North Carolina at Chapel Hill",
+  "country": "United States",
+  "website": "http://www.unc.edu/",
+  "unitid": "199120",
+  "best_rank": 40
+ },
+ {
+  "university_id": "72c8eb2c-4178-5106-b3c2-a72e73dc074c",
+  "name": "Georgia Institute of Technology-Main Campus",
+  "country": "United States",
+  "website": "http://www.gatech.edu/",
+  "unitid": "139755",
+  "best_rank": 41
+ },
+ {
+  "university_id": "f5cd8bb6-027a-504f-bc7e-19d3d4e017c7",
+  "name": "University of Illinois Urbana-Champaign",
+  "country": "United States",
+  "website": "https://illinois.edu/",
+  "unitid": "145637",
+  "best_rank": 46
+ },
+ {
+  "university_id": "e777849c-7be7-553b-90bf-d99502e7c52d",
+  "name": "The University of Texas at Austin",
+  "country": "United States",
+  "website": "https://www.utexas.edu/",
+  "unitid": "228778",
+  "best_rank": 47
+ },
+ {
+  "university_id": "89ed6caa-1b3c-54a8-b6b8-10ce5a8679af",
+  "name": "University of Colorado Boulder",
+  "country": "United States",
+  "website": "http://www.colorado.edu/",
+  "unitid": "126614",
+  "best_rank": 49
+ },
+ {
+  "university_id": "7a69d9a7-0be2-58e0-9cd5-15e9ccb111d9",
+  "name": "University of Minnesota-Twin Cities",
+  "country": "United States",
+  "website": "https://twin-cities.umn.edu/",
+  "unitid": "174066",
+  "best_rank": 52
+ },
+ {
+  "university_id": "9ceb46b3-3d48-51a1-849b-aa46b8a43466",
+  "name": "University of Maryland-College Park",
+  "country": "United States",
+  "website": "http://www.umd.edu/",
+  "unitid": "163286",
+  "best_rank": 57
+ },
+ {
+  "university_id": "94b2dc51-40ef-5c82-846f-1d95690d7cf2",
+  "name": "University of California-Santa Barbara",
+  "country": "United States",
+  "website": "http://www.ucsb.edu/",
+  "unitid": "110705",
+  "best_rank": 61
+ },
+ {
+  "university_id": "5374c3c7-b54c-5f3e-bc82-39b7babedccf",
+  "name": "University of California-Davis",
+  "country": "United States",
+  "website": "http://www.ucdavis.edu/",
+  "unitid": "110644",
+  "best_rank": 64
+ },
+ {
+  "university_id": "4d2b45ea-fc49-5a3b-bc05-8489a4d33316",
+  "name": "University of Texas Southwestern Medical Center",
+  "country": "United States",
+  "website": "https://www.utsouthwestern.edu/",
+  "unitid": "228635",
+  "best_rank": 64
+ },
+ {
+  "university_id": "88fab389-ea96-5377-b015-69d9756ba9a9",
+  "name": "Brown University",
+  "country": "United States",
+  "website": "http://www.brown.edu/",
+  "unitid": "217156",
+  "best_rank": 65
+ },
+ {
+  "university_id": "0ea190f8-7c49-54c5-88a1-9892fd517d9a",
+  "name": "Vanderbilt University",
+  "country": "United States",
+  "website": "http://www.vanderbilt.edu/",
+  "unitid": "221999",
+  "best_rank": 66
+ },
+ {
+  "university_id": "ce0c7503-d037-57dc-98ed-2818fa72fe75",
+  "name": "University of Southern California",
+  "country": "United States",
+  "website": "http://www.usc.edu/",
+  "unitid": "123961",
+  "best_rank": 68
+ },
+ {
+  "university_id": "a13696ab-e8a7-55d8-b39d-e25eba98c101",
+  "name": "University of California-Irvine",
+  "country": "United States",
+  "website": "http://www.uci.edu/",
+  "unitid": "110653",
+  "best_rank": 75
+ },
+ {
+  "university_id": "2ef76bea-f0ec-5124-bd16-bfac73557290",
+  "name": "Boston University",
+  "country": "United States",
+  "website": "http://www.bu.edu/",
+  "unitid": "164988",
+  "best_rank": 76
+ },
+ {
+  "university_id": "0cb61489-37dd-53a3-a9f2-53cbd5f1a0dd",
+  "name": "Pennsylvania State University-Main Campus",
+  "country": "United States",
+  "website": "http://www.psu.edu/",
+  "unitid": "214777",
+  "best_rank": 82
+ },
+ {
+  "university_id": "1830f173-0aec-5d03-aeb2-cbfaa05e1db1",
+  "name": "The University of Texas MD Anderson Cancer Center",
+  "country": "United States",
+  "website": "https://www.mdanderson.org/",
+  "unitid": "416801",
+  "best_rank": 95
+ },
+ {
+  "university_id": "80c3fb62-6c22-5ddf-8fe8-841a0a0219b1",
+  "name": "Rice University",
+  "country": "United States",
+  "website": "http://www.rice.edu/",
+  "unitid": "227757",
+  "best_rank": 101
+ },
+ {
+  "university_id": "9944c4eb-317b-540e-9abc-9c1942c6ae7c",
+  "name": "Emory University",
+  "country": "United States",
+  "website": "http://www.emory.edu/",
+  "unitid": "139658",
+  "best_rank": 101
+ },
+ {
+  "university_id": "4033469f-02ba-5007-89dd-40c796f8a5cb",
+  "name": "University of Pittsburgh-Pittsburgh Campus",
+  "country": "United States",
+  "website": "http://www.pitt.edu/",
+  "unitid": "215293",
+  "best_rank": 101
+ },
+ {
+  "university_id": "239c1745-2874-53f5-ac60-04b54957260e",
+  "name": "Icahn School of Medicine at Mount Sinai",
+  "country": "United States",
+  "website": "http://icahn.mssm.edu/",
+  "unitid": "193405",
+  "best_rank": 101
+ },
+ {
+  "university_id": "42dda1ae-1e6d-537d-956f-c8b16d7d85ed",
+  "name": "Mayo Clinic College of Medicine and Science",
+  "country": "United States",
+  "website": "https://college.mayo.edu/",
+  "unitid": "173957",
+  "best_rank": 101
+ },
+ {
+  "university_id": "63648953-ef3c-59ae-8ed9-b6be0f2c6461",
+  "name": "Michigan State University",
+  "country": "United States",
+  "website": "http://www.msu.edu/",
+  "unitid": "171100",
+  "best_rank": 105
+ },
+ {
+  "university_id": "da0be24d-7bc2-54bf-aceb-f9b40b808c6d",
+  "name": "Ohio State University-Main Campus",
+  "country": "United States",
+  "website": "https://www.osu.edu/",
+  "unitid": "204796",
+  "best_rank": 108
+ },
+ {
+  "university_id": "a0d2f406-7c53-5645-921f-ecb098e0a9be",
+  "name": "University of Rochester",
+  "country": "United States",
+  "website": "http://www.rochester.edu/",
+  "unitid": "195030",
+  "best_rank": 127
+ },
+ {
+  "university_id": "143b0eba-a5e6-54fb-95f9-2de2c7092213",
+  "name": "University of Florida",
+  "country": "United States",
+  "website": "http://www.ufl.edu/",
+  "unitid": "134130",
+  "best_rank": 134
+ },
+ {
+  "university_id": "027e062a-68f8-5a97-b74a-4ad155208f4a",
+  "name": "University of Arizona",
+  "country": "United States",
+  "website": "http://www.arizona.edu/",
+  "unitid": "104179",
+  "best_rank": 138
+ },
+ {
+  "university_id": "6a8b9f04-d032-5a2a-9223-599461b45314",
+  "name": "Texas A&M University-College Station",
+  "country": "United States",
+  "website": "http://www.tamu.edu/",
+  "unitid": "228723",
+  "best_rank": 144
+ },
+ {
+  "university_id": "078c204f-52fa-5af2-94ca-1f9f24faa7d2",
+  "name": "Case Western Reserve University",
+  "country": "United States",
+  "website": "http://www.case.edu/",
+  "unitid": "201645",
+  "best_rank": 145
+ },
+ {
+  "university_id": "1a8e1949-ec0f-54e5-9eb2-c5ce1161f575",
+  "name": "Indiana University-Bloomington",
+  "country": "United States",
+  "website": "https://bloomington.iu.edu/",
+  "unitid": "151351",
+  "best_rank": 151
+ },
+ {
+  "university_id": "0db3b473-2ab8-535c-ae42-cc684c82b872",
+  "name": "Stony Brook University",
+  "country": "United States",
+  "website": "http://www.stonybrook.edu/",
+  "unitid": "196097",
+  "best_rank": 151
+ },
+ {
+  "university_id": "c879c2d2-47b3-56ca-ac1e-6d43a9543e85",
+  "name": "University of California-Santa Cruz",
+  "country": "United States",
+  "website": "http://www.ucsc.edu/",
+  "unitid": "110714",
+  "best_rank": 151
+ },
+ {
+  "university_id": "3af66ea1-1b0f-50c3-a947-7c91e7742a77",
+  "name": "University of Utah",
+  "country": "United States",
+  "website": "http://www.utah.edu/",
+  "unitid": "230764",
+  "best_rank": 151
+ },
+ {
+  "university_id": "43a13b0c-cdfc-5296-bdfb-b33e2904929e",
+  "name": "University of Virginia-Main Campus",
+  "country": "United States",
+  "website": "http://www.virginia.edu/",
+  "unitid": "234076",
+  "best_rank": 166
+ },
+ {
+  "university_id": "0a2ceb2f-9bd6-5ddf-bdfd-593d7ddf1056",
+  "name": "Dartmouth College",
+  "country": "United States",
+  "website": "http://www.dartmouth.edu/",
+  "unitid": "182670",
+  "best_rank": 180
+ },
+ {
+  "university_id": "9d306b12-837c-53c9-b645-24d99801de57",
+  "name": "Tufts University",
+  "country": "United States",
+  "website": "http://www.tufts.edu/",
+  "unitid": "168148",
+  "best_rank": 189
+ },
+ {
+  "university_id": "58793794-34c5-5b71-b013-4388d7cfb907",
+  "name": "University of Notre Dame",
+  "country": "United States",
+  "website": "http://www.nd.edu/",
+  "unitid": "152080",
+  "best_rank": 194
+ },
+ {
+  "university_id": "c6b8935e-0e3b-522a-a5f0-03a1bc6c97e8",
+  "name": "University of Massachusetts-Amherst",
+  "country": "United States",
+  "website": "http://www.umass.edu/",
+  "unitid": "166629",
+  "best_rank": 201
+ },
+ {
+  "university_id": "d8313905-8074-5f4f-9575-92096465d73c",
+  "name": "North Carolina State University at Raleigh",
+  "country": "United States",
+  "website": "http://www.ncsu.edu/",
+  "unitid": "199193",
+  "best_rank": 201
+ },
+ {
+  "university_id": "3421bcac-6559-55ca-8a78-572932409e27",
+  "name": "Georgetown University",
+  "country": "United States",
+  "website": "http://www.georgetown.edu/",
+  "unitid": "131496",
+  "best_rank": 201
+ },
+ {
+  "university_id": "422c21d6-8c2d-55fa-819c-419e4d1b47ac",
+  "name": "University of Illinois Chicago",
+  "country": "United States",
+  "website": "http://www.uic.edu/",
+  "unitid": "145600",
+  "best_rank": 201
+ },
+ {
+  "university_id": "7297ee6e-31d9-5f06-a506-de580b9c5c1d",
+  "name": "George Washington University",
+  "country": "United States",
+  "website": "http://www.gwu.edu/",
+  "unitid": "131469",
+  "best_rank": 201
+ },
+ {
+  "university_id": "0dbf168e-db31-5d11-8535-b9ab25438314",
+  "name": "University of California-Riverside",
+  "country": "United States",
+  "website": "http://www.ucr.edu/",
+  "unitid": "110671",
+  "best_rank": 201
+ },
+ {
+  "university_id": "a55afc1e-9834-5b90-8959-4bf9bedebce0",
+  "name": "Colorado State University-Fort Collins",
+  "country": "United States",
+  "website": "http://www.colostate.edu/",
+  "unitid": "126818",
+  "best_rank": 201
+ },
+ {
+  "university_id": "6e24a4e2-b0f4-5080-94f4-b31ee65b1fa7",
+  "name": "Virginia Polytechnic Institute and State University",
+  "country": "United States",
+  "website": "https://www.vt.edu/",
+  "unitid": "233921",
+  "best_rank": 201
+ },
+ {
+  "university_id": "60ad6112-e752-5e7b-aa97-db274313e0d6",
+  "name": "University of Connecticut",
+  "country": "United States",
+  "website": "http://www.uconn.edu/",
+  "unitid": "129020",
+  "best_rank": 201
+ },
+ {
+  "university_id": "ebae2617-71a7-5490-870f-830bb404f64b",
+  "name": "University of Delaware",
+  "country": "United States",
+  "website": "http://www.udel.edu/",
+  "unitid": "130943",
+  "best_rank": 201
+ },
+ {
+  "university_id": "6f5f16ac-5bb0-5b67-a064-390fb2ded2b3",
+  "name": "Oregon State University",
+  "country": "United States",
+  "website": "http://www.oregonstate.edu/",
+  "unitid": "209542",
+  "best_rank": 201
+ },
+ {
+  "university_id": "5bd28d14-538f-5105-b327-fd4c51fd9625",
+  "name": "University of Missouri-Columbia",
+  "country": "United States",
+  "website": "http://www.missouri.edu/",
+  "unitid": "178396",
+  "best_rank": 201
+ },
+ {
+  "university_id": "c1aa7191-5e5a-5e55-aa12-4900b359adb6",
+  "name": "George Mason University",
+  "country": "United States",
+  "website": "http://www.gmu.edu/",
+  "unitid": "232186",
+  "best_rank": 201
+ },
+ {
+  "university_id": "ea6e9b72-bf54-5849-a13b-a1d1ccdfadbe",
+  "name": "Oregon Health & Science University",
+  "country": "United States",
+  "website": "http://www.ohsu.edu/",
+  "unitid": "209490",
+  "best_rank": 201
+ },
+ {
+  "university_id": "aec7f85c-9fc7-5085-a6a1-2eec660c4ad6",
+  "name": "Baylor College of Medicine",
+  "country": "United States",
+  "website": "http://www.bcm.edu/",
+  "unitid": "223223",
+  "best_rank": 201
+ },
+ {
+  "university_id": "1417525c-9fad-55c5-ac00-0099c503a6df",
+  "name": "The University of Texas Health Science Center at Houston",
+  "country": "United States",
+  "website": "https://www.uth.edu/",
+  "unitid": "229300",
+  "best_rank": 201
+ },
+ {
+  "university_id": "cc7d5f9f-6dbd-5f7e-8714-714d1dcd54ce",
+  "name": "University of Massachusetts Chan Medical School",
+  "country": "United States",
+  "website": "https://www.umassmed.edu/",
+  "unitid": "166708",
+  "best_rank": 201
+ },
+ {
+  "university_id": "61ee643d-d90b-504a-9170-4595e9e045e3",
+  "name": "Boston College",
+  "country": "United States",
+  "website": "http://www.bc.edu/",
+  "unitid": "164924",
+  "best_rank": 251
+ },
+ {
+  "university_id": "ce282cd3-aa7a-59e4-a3fa-3c3eb519b111",
+  "name": "University of Hawaii at Manoa",
+  "country": "United States",
+  "website": "http://manoa.hawaii.edu/",
+  "unitid": "141574",
+  "best_rank": 251
+ },
+ {
+  "university_id": "78f4c065-33e2-5ada-843b-139c16a49170",
+  "name": "Rutgers University-New Brunswick",
+  "country": "United States",
+  "website": "https://newbrunswick.rutgers.edu/",
+  "unitid": "186380",
+  "best_rank": 301
+ },
+ {
+  "university_id": "c9d404fc-68fc-55af-81b2-dd94142c45e9",
+  "name": "University of Kansas",
+  "country": "United States",
+  "website": "http://www.ku.edu/",
+  "unitid": "155317",
+  "best_rank": 301
+ },
+ {
+  "university_id": "994a1270-1ef5-589c-a4ba-d4e1371ec13b",
+  "name": "University of Georgia",
+  "country": "United States",
+  "website": "http://www.uga.edu/",
+  "unitid": "139959",
+  "best_rank": 301
+ },
+ {
+  "university_id": "bdeded4e-d53e-570d-b54b-43b11b32ddff",
+  "name": "Florida State University",
+  "country": "United States",
+  "website": "http://www.fsu.edu/",
+  "unitid": "134097",
+  "best_rank": 301
+ },
+ {
+  "university_id": "55794e72-d126-5126-8f19-b11876695c34",
+  "name": "University of Iowa",
+  "country": "United States",
+  "website": "http://www.uiowa.edu/",
+  "unitid": "153658",
+  "best_rank": 301
+ },
+ {
+  "university_id": "8c5f6e45-2124-5b19-84c5-9aeac14a8001",
+  "name": "Illinois Institute of Technology",
+  "country": "United States",
+  "website": "http://www.iit.edu/",
+  "unitid": "145725",
+  "best_rank": 301
+ },
+ {
+  "university_id": "48f27d17-8aea-5340-8ea0-bfe00685dafc",
+  "name": "The University of Texas at Dallas",
+  "country": "United States",
+  "website": "http://www.utdallas.edu/",
+  "unitid": "228787",
+  "best_rank": 301
+ },
+ {
+  "university_id": "bca436dd-f867-5256-9f52-75e78fb911d8",
+  "name": "The University of Tennessee-Knoxville",
+  "country": "United States",
+  "website": "http://www.utk.edu/",
+  "unitid": "221759",
+  "best_rank": 301
+ },
+ {
+  "university_id": "c190bca2-ab84-5447-8a23-e1e1c2b2c47f",
+  "name": "University of Cincinnati-Main Campus",
+  "country": "United States",
+  "website": "http://www.uc.edu/",
+  "unitid": "201885",
+  "best_rank": 301
+ },
+ {
+  "university_id": "3e93fadb-640e-5071-81a8-85e4db3b6775",
+  "name": "University of Nebraska-Lincoln",
+  "country": "United States",
+  "website": "http://www.unl.edu/",
+  "unitid": "181464",
+  "best_rank": 301
+ },
+ {
+  "university_id": "38d0214d-5512-5b51-b541-eae017597903",
+  "name": "University of Kentucky",
+  "country": "United States",
+  "website": "http://www.uky.edu/",
+  "unitid": "157085",
+  "best_rank": 301
+ },
+ {
+  "university_id": "14c47a79-b87d-511b-b436-245ee5be5e2e",
+  "name": "Virginia Commonwealth University",
+  "country": "United States",
+  "website": "https://www.vcu.edu/",
+  "unitid": "234030",
+  "best_rank": 301
+ },
+ {
+  "university_id": "4a4c6d86-e00b-5af4-a03e-658a6be058f1",
+  "name": "University at Buffalo",
+  "country": "United States",
+  "website": "http://www.buffalo.edu/",
+  "unitid": "196088",
+  "best_rank": 301
+ },
+ {
+  "university_id": "af7ab025-762a-5acc-a7ca-ccfc305e9bb1",
+  "name": "University of South Florida",
+  "country": "United States",
+  "website": "http://www.usf.edu/",
+  "unitid": "137351",
+  "best_rank": 351
+ },
+ {
+  "university_id": "cbaa695b-b170-5259-bdd8-9ff2772f0fc6",
+  "name": "University of Colorado Denver/Anschutz Medical Campus",
+  "country": "United States",
+  "website": "http://www.ucdenver.edu/",
+  "unitid": "126562",
+  "best_rank": 351
+ },
+ {
+  "university_id": "980f6c8a-9f70-51ed-9b35-b702566cb894",
+  "name": "Washington State University",
+  "country": "United States",
+  "website": "http://www.wsu.edu/",
+  "unitid": "236939",
+  "best_rank": 401
+ },
+ {
+  "university_id": "5b41091e-0c04-5123-8ed9-b12e55660663",
+  "name": "Iowa State University",
+  "country": "United States",
+  "website": "http://www.iastate.edu/",
+  "unitid": "153603",
+  "best_rank": 401
+ },
+ {
+  "university_id": "81754530-f8a7-5fa8-b885-e995c8a9ca9f",
+  "name": "Colorado School of Mines",
+  "country": "United States",
+  "website": "http://www.mines.edu/",
+  "unitid": "126775",
+  "best_rank": 401
+ },
+ {
+  "university_id": "2d84e043-c4fc-5b6e-b0dd-87c980af9646",
+  "name": "Tulane University of Louisiana",
+  "country": "United States",
+  "website": "http://www.tulane.edu/",
+  "unitid": "160755",
+  "best_rank": 401
+ },
+ {
+  "university_id": "88df8bcf-4e22-50d1-ad01-4f7bcca25e4b",
+  "name": "Florida International University",
+  "country": "United States",
+  "website": "http://www.fiu.edu/",
+  "unitid": "133951",
+  "best_rank": 401
+ },
+ {
+  "university_id": "e81cf0ac-da1f-5225-995f-0f7f5692d1e2",
+  "name": "University of Oregon",
+  "country": "United States",
+  "website": "http://www.uoregon.edu/",
+  "unitid": "209551",
+  "best_rank": 401
+ },
+ {
+  "university_id": "0e34cab4-4ef1-5814-b1db-44d3ebdb3a9c",
+  "name": "Syracuse University",
+  "country": "United States",
+  "website": "https://www.syracuse.edu/",
+  "unitid": "196413",
+  "best_rank": 401
+ },
+ {
+  "university_id": "140534af-c529-5ff7-badf-e30cf563bf59",
+  "name": "University of Central Florida",
+  "country": "United States",
+  "website": "http://www.ucf.edu/",
+  "unitid": "132903",
+  "best_rank": 401
+ },
+ {
+  "university_id": "10c1979e-94b6-5deb-8817-2840569ea864",
+  "name": "Brandeis University",
+  "country": "United States",
+  "website": "http://www.brandeis.edu/",
+  "unitid": "165015",
+  "best_rank": 401
+ },
+ {
+  "university_id": "210dada7-d1b4-537c-b8ad-8c58326af358",
+  "name": "Temple University",
+  "country": "United States",
+  "website": "http://www.temple.edu/",
+  "unitid": "216339",
+  "best_rank": 401
+ },
+ {
+  "university_id": "2e88a384-b060-56be-bd2d-e89ba22e71ed",
+  "name": "Drexel University",
+  "country": "United States",
+  "website": "http://www.drexel.edu/",
+  "unitid": "212054",
+  "best_rank": 401
+ },
+ {
+  "university_id": "af28832d-c871-559f-9e08-84fad07409b7",
+  "name": "Wake Forest University",
+  "country": "United States",
+  "website": "http://www.wfu.edu/",
+  "unitid": "199847",
+  "best_rank": 401
+ },
+ {
+  "university_id": "304e8ae8-b19b-54ff-9f31-4a6f99675b52",
+  "name": "Auburn University",
+  "country": "United States",
+  "website": "http://www.auburn.edu/",
+  "unitid": "100858",
+  "best_rank": 401
+ },
+ {
+  "university_id": "cd10eb82-19be-52aa-91ed-4bdfa928b074",
+  "name": "University of Alabama at Birmingham",
+  "country": "United States",
+  "website": "http://www.uab.edu/",
+  "unitid": "100663",
+  "best_rank": 401
+ },
+ {
+  "university_id": "b66ef1b3-f1b4-5d09-8421-eb3e384bdb91",
+  "name": "Saint Louis University",
+  "country": "United States",
+  "website": "http://www.slu.edu/",
+  "unitid": "179159",
+  "best_rank": 401
+ },
+ {
+  "university_id": "aac3c8d1-b627-5f75-827c-dd87261f8bcd",
+  "name": "The University of Texas at San Antonio",
+  "country": "United States",
+  "website": "https://www.utsa.edu/",
+  "unitid": "229027",
+  "best_rank": 401
+ },
+ {
+  "university_id": "4c268ba3-213e-5f2c-8098-9206b9800585",
+  "name": "Indiana University-Indianapolis",
+  "country": "United States",
+  "website": "https://indianapolis.iu.edu/",
+  "unitid": "151111",
+  "best_rank": 401
+ },
+ {
+  "university_id": "05540b15-41ef-5b2d-a98d-91534222f23b",
+  "name": "Rush University",
+  "country": "United States",
+  "website": "https://www.rushu.rush.edu/",
+  "unitid": "148511",
+  "best_rank": 401
+ },
+ {
+  "university_id": "741d6a3c-3874-536f-ab45-ad2a64d56437",
+  "name": "University of California-Merced",
+  "country": "United States",
+  "website": "http://www.ucmerced.edu/",
+  "unitid": "445188",
+  "best_rank": 401
+ },
+ {
+  "university_id": "bd069b44-16f4-52bc-af7b-a585fa2d36e3",
+  "name": "University of South Carolina-Columbia",
+  "country": "United States",
+  "website": "http://www.sc.edu/",
+  "unitid": "218663",
+  "best_rank": 401
+ },
+ {
+  "university_id": "c1566743-5ef5-50e2-bb40-8c4103732fee",
+  "name": "Albert Einstein College of Medicine",
+  "country": "United States",
+  "website": "https://www.einsteinmed.edu/",
+  "unitid": "385415",
+  "best_rank": 401
+ },
+ {
+  "university_id": "1e03b33b-43d7-5e15-90f1-d85a680339aa",
+  "name": "CUNY Graduate School and University Center",
+  "country": "United States",
+  "website": "https://www.gc.cuny.edu/",
+  "unitid": "190576",
+  "best_rank": 401
+ },
+ {
+  "university_id": "441a63da-e9cf-55d2-bd38-c1f04ec23ccf",
+  "name": "Rensselaer Polytechnic Institute",
+  "country": "United States",
+  "website": "http://www.rpi.edu/",
+  "unitid": "194824",
+  "best_rank": 501
+ },
+ {
+  "university_id": "d4ff6498-c54d-5dea-a10d-b2be99d28be4",
+  "name": "Stevens Institute of Technology",
+  "country": "United States",
+  "website": "http://www.stevens.edu/",
+  "unitid": "186867",
+  "best_rank": 501
+ },
+ {
+  "university_id": "91244b89-689f-50ef-b817-f44ab49f799e",
+  "name": "New Jersey Institute of Technology",
+  "country": "United States",
+  "website": "http://www.njit.edu/",
+  "unitid": "185828",
+  "best_rank": 501
+ },
+ {
+  "university_id": "f973d34b-aa07-516d-9d50-a071413a3eca",
+  "name": "Missouri University of Science and Technology",
+  "country": "United States",
+  "website": "http://www.mst.edu/",
+  "unitid": "178411",
+  "best_rank": 501
+ },
+ {
+  "university_id": "b0ce8bc2-4735-5ec6-8b96-2fa1b8f11293",
+  "name": "Texas Tech University",
+  "country": "United States",
+  "website": "http://www.ttu.edu/",
+  "unitid": "229115",
+  "best_rank": 501
+ },
+ {
+  "university_id": "e1f4aebd-e257-5f36-b6a9-38a8f411706d",
+  "name": "Georgia State University",
+  "country": "United States",
+  "website": "http://www.gsu.edu/",
+  "unitid": "139940",
+  "best_rank": 501
+ },
+ {
+  "university_id": "2cba49d6-fce3-5dc1-b9f1-43300864a14d",
+  "name": "University of Maryland, Baltimore",
+  "country": "United States",
+  "website": "http://www.umaryland.edu/",
+  "unitid": "163259",
+  "best_rank": 501
+ },
+ {
+  "university_id": "77947cd9-6562-52b3-9037-dc7364e3838e",
+  "name": "Wayne State University",
+  "country": "United States",
+  "website": "http://www.wayne.edu/",
+  "unitid": "172644",
+  "best_rank": 501
+ },
+ {
+  "university_id": "374956b6-617a-56aa-9138-0e660f3d20f1",
+  "name": "Clemson University",
+  "country": "United States",
+  "website": "http://www.clemson.edu/",
+  "unitid": "217882",
+  "best_rank": 501
+ },
+ {
+  "university_id": "164a0926-c139-541b-a900-b1dec095e987",
+  "name": "University at Albany",
+  "country": "United States",
+  "website": "http://www.albany.edu/",
+  "unitid": "196060",
+  "best_rank": 501
+ },
+ {
+  "university_id": "3bc9b2b0-ccf7-522b-9040-6e06064bf5cf",
+  "name": "Northern Arizona University",
+  "country": "United States",
+  "website": "http://www.nau.edu/",
+  "unitid": "105330",
+  "best_rank": 501
+ },
+ {
+  "university_id": "6bbc80eb-8cbe-5e43-bb5d-63f5da0b09bf",
+  "name": "University of Denver",
+  "country": "United States",
+  "website": "http://www.du.edu/",
+  "unitid": "127060",
+  "best_rank": 501
+ },
+ {
+  "university_id": "ef1ca85b-1fcf-5478-abf9-5e03d1ec7c2a",
+  "name": "University of Nevada-Reno",
+  "country": "United States",
+  "website": "http://www.unr.edu/",
+  "unitid": "182290",
+  "best_rank": 501
+ },
+ {
+  "university_id": "1fe1c58f-d532-5ece-a8fc-72d0510c5df1",
+  "name": "University of North Texas",
+  "country": "United States",
+  "website": "http://www.unt.edu/",
+  "unitid": "227216",
+  "best_rank": 501
+ },
+ {
+  "university_id": "21ec832a-fb7b-5633-9c0a-a41322382b25",
+  "name": "University of Missouri-Kansas City",
+  "country": "United States",
+  "website": "http://www.umkc.edu/",
+  "unitid": "178402",
+  "best_rank": 501
+ },
+ {
+  "university_id": "a5aa5750-d3cd-527d-b00a-33dc6c807b41",
+  "name": "University of Toledo",
+  "country": "United States",
+  "website": "http://www.utoledo.edu/",
+  "unitid": "206084",
+  "best_rank": 501
+ },
+ {
+  "university_id": "7cbaf95a-32ce-54a9-91d4-e3ed55be409c",
+  "name": "Utah State University",
+  "country": "United States",
+  "website": "http://www.usu.edu/",
+  "unitid": "230728",
+  "best_rank": 501
+ },
+ {
+  "university_id": "fb5785f6-08c8-508d-901b-c6c59d5c4766",
+  "name": "University of Tulsa",
+  "country": "United States",
+  "website": "http://utulsa.edu/",
+  "unitid": "207971",
+  "best_rank": 501
+ },
+ {
+  "university_id": "0a3cd1f8-7b60-5a13-ae90-93d02098891b",
+  "name": "University of Nebraska Medical Center",
+  "country": "United States",
+  "website": "https://www.unmc.edu/",
+  "unitid": "181428",
+  "best_rank": 501
+ },
+ {
+  "university_id": "9696e870-9704-5042-92bf-e87237c86e6d",
+  "name": "Binghamton University",
+  "country": "United States",
+  "website": "http://www.binghamton.edu/",
+  "unitid": "196079",
+  "best_rank": 501
+ },
+ {
+  "university_id": "8e5b3522-3565-5515-83f1-8f7bdcd595a1",
+  "name": "Medical College of Wisconsin",
+  "country": "United States",
+  "website": "http://www.mcw.edu/",
+  "unitid": "239169",
+  "best_rank": 501
+ },
+ {
+  "university_id": "2f6dab6e-85a2-54ba-bf42-ede600b3b842",
+  "name": "Medical University of South Carolina",
+  "country": "United States",
+  "website": "http://www.musc.edu/",
+  "unitid": "218335",
+  "best_rank": 501
+ },
+ {
+  "university_id": "703f6444-581a-5cfa-8581-ecd4a0fa2bb3",
+  "name": "CUNY City College",
+  "country": "United States",
+  "website": "https://www.ccny.cuny.edu/",
+  "unitid": "190567",
+  "best_rank": 501
+ },
+ {
+  "university_id": "e7ebb253-8bf6-5b29-b722-0a2c170b8eac",
+  "name": "The University of Texas Medical Branch at Galveston",
+  "country": "United States",
+  "website": "http://www.utmb.edu/",
+  "unitid": "228653",
+  "best_rank": 501
+ },
+ {
+  "university_id": "c965b24d-da67-554f-8058-55dbf8a5a6f3",
+  "name": "University of Maine",
+  "country": "United States",
+  "website": "http://www.umaine.edu/",
+  "unitid": "161253",
+  "best_rank": 501
+ },
+ {
+  "university_id": "1708a414-f802-5fc4-8d23-d97774ccc814",
+  "name": "American University",
+  "country": "United States",
+  "website": "http://www.american.edu/",
+  "unitid": "131159",
+  "best_rank": 601
+ },
+ {
+  "university_id": "1f3f2254-6192-55a7-b590-d73da19c6cc1",
+  "name": "Lehigh University",
+  "country": "United States",
+  "website": "http://www.lehigh.edu/",
+  "unitid": "213543",
+  "best_rank": 601
+ },
+ {
+  "university_id": "d55a8b40-0166-55d2-a593-e22dee78cca7",
+  "name": "University of Maryland-Baltimore County",
+  "country": "United States",
+  "website": "http://www.umbc.edu/",
+  "unitid": "163268",
+  "best_rank": 601
+ },
+ {
+  "university_id": "46a1b775-aa6e-57e2-9ee3-fd38a3cf25c9",
+  "name": "Louisiana State University and Agricultural & Mechanical College",
+  "country": "United States",
+  "website": "http://www.lsu.edu/",
+  "unitid": "159391",
+  "best_rank": 601
+ },
+ {
+  "university_id": "becf122b-1d13-5976-9707-f85e8bc6c7fa",
+  "name": "Worcester Polytechnic Institute",
+  "country": "United States",
+  "website": "http://www.wpi.edu/",
+  "unitid": "168421",
+  "best_rank": 601
+ },
+ {
+  "university_id": "d9d6b00c-3d89-582c-83ff-84d5f3f3f86d",
+  "name": "Rochester Institute of Technology",
+  "country": "United States",
+  "website": "http://www.rit.edu/",
+  "unitid": "195003",
+  "best_rank": 601
+ },
+ {
+  "university_id": "117ce57e-bd85-510e-b300-21d9a4eb074f",
+  "name": "University of Alaska Fairbanks",
+  "country": "United States",
+  "website": "http://www.uaf.edu/",
+  "unitid": "102614",
+  "best_rank": 601
+ },
+ {
+  "university_id": "6efcd8a4-6fa7-5c04-bb65-64892e52ba00",
+  "name": "Kansas State University",
+  "country": "United States",
+  "website": "https://www.k-state.edu/",
+  "unitid": "155399",
+  "best_rank": 601
+ }
+]

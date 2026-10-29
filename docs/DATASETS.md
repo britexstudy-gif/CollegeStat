@@ -35,4 +35,4 @@ Download the institution directory (HD), admissions (ADM), enrollment (EF), stud
 
 ## Official-site facts for ranked universities
 
-Outside the US the catalogue mostly holds identity data. `data/review/` holds batches of international tuition, English requirements, deadlines and public/private status collected from each university's own website, with a quote and source link for every value. They are review candidates only; see [data/review/README.md](../data/review/README.md) for validation and staging.
+Outside the US the catalogue mostly holds identity data. `data/review/` holds batches of international tuition, English requirements, deadlines and public/private status collected from each university's own website, with a quote and source link for every value. College Scorecard bulk files (`npm run ingest:scorecard`) and Common Data Set collections land in the same folder. They are review candidates only; see [data/review/README.md](../data/review/README.md) for validation and staging.

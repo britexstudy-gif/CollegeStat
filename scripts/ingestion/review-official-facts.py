@@ -13,6 +13,13 @@ from urllib.parse import urlparse
 ROOT = Path(__file__).resolve().parents[2]
 NS = uuid.UUID("6f1f3f7e-6c1b-5c7e-9a43-2f4f0c3a9e10")
 CURRENCIES = {"GBP", "EUR", "CHF", "AUD", "CAD", "JPY", "CNY", "RMB", "HKD", "SGD", "KRW", "NZD", "SEK", "DKK", "NOK", "USD", "MYR", "TWD", "ILS", "AED", "SAR", "QAR", "INR", "BRL", "MXN", "CZK", "PLN", "HUF", "RUB", "TRY", "ZAR", "THB", "IDR", "PHP", "VND", "CLP", "ARS", "COP", "EGP", "PKR", "KZT", "MOP", "BND"}
+# Generic numeric facts (Common Data Set and similar): metric -> (unit, min, max).
+METRICS = {
+    "applicants": ("students", 1, 500000), "admitted": ("students", 1, 500000), "enrolled_first_year": ("students", 1, 100000),
+    "undergraduate_enrollment": ("students", 1, 1000000), "sat_composite_25": ("points", 400, 1600), "sat_composite_75": ("points", 400, 1600),
+    "act_composite_25": ("points", 1, 36), "act_composite_75": ("points", 1, 36), "student_faculty_ratio": (":1", 1, 100),
+    "retention_rate": ("%", 0, 100), "graduation_rate": ("%", 0, 100), "international_students": ("%", 0, 100),
+}
 # Hosts that are never official university sources even when a collector cites them.
 BLOCKED = re.compile(r"(topuniversities|timeshighereducation|studyportals|mastersportal|bachelorsportal|globalscholarships|collegedunia|shiksha|wikipedia|unipage|leverage|yocket|idp\.com|studyinternational|edurank|usnews|niche\.com)", re.I)
 
@@ -175,6 +182,30 @@ def main():
                 })
                 covered.add(u)
 
+            for m in row.get("metrics") or []:
+                ok = base("metric", m)
+                if not ok:
+                    continue
+                url, quote = ok
+                spec = METRICS.get(m.get("metric"))
+                value, year = m.get("value"), m.get("year")
+                if not spec:
+                    reject(u, "metric", m, "metric is not on the allow list")
+                elif not isinstance(value, (int, float)) or not spec[1] <= value <= spec[2]:
+                    reject(u, "metric", m, "value out of range")
+                elif not isinstance(year, int) or not 2022 <= year <= 2026:
+                    reject(u, "metric", m, "reporting year missing or outside 2022-2026")
+                elif not in_quote(value, quote):
+                    reject(u, "metric", m, "value does not appear in the quote")
+                else:
+                    item = (m.get("item") or "").strip()
+                    observations.append({
+                        "university_id": u, "metric": m["metric"], "year": year, "value": value, "unit": spec[0], "source_url": url,
+                        "notes": f"{(m.get('notes') or '').strip()} {('Common Data Set item ' + item + '. ') if item else ''}Quote: \"{quote}\" "
+                        f"Collected {a.checked_at} by an automated assistant; confirm the cohort and year on the source before approving.".strip()[:2000],
+                    })
+                    covered.add(u)
+
             t = row.get("type")
             if isinstance(t, dict) and t.get("value"):
                 ok = base("type", t)
@@ -195,7 +226,7 @@ def main():
         (out / f"{name}.json").write_text(json.dumps(rows, ensure_ascii=False, indent=1) + "\n")
     summary = {
         "batch": a.batch, "checked_at": a.checked_at, "targets": len(targets), "returned": len(seen_unis),
-        "universities_with_facts": len(covered), "tuition_observations": len(observations),
+        "universities_with_facts": len(covered), "observations": len(observations),
         "english_requirements": len(requirements), "deadlines": len(deadlines), "institution_types": len(types),
         "rejected": len(rejected), "missing_universities": sorted(targets[u]["name"] for u in set(targets) - seen_unis),
         "status": "needs_review · not published",
