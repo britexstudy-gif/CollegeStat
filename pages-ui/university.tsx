@@ -13,6 +13,7 @@ import { rememberUniversity } from "@/components/college/recent-exploration";
 import { UniversityQuickStart } from "@/components/college/university-quickstart";
 import { useChanceProfile } from "@/components/college/admission-chip";
 import { SectionNav, UniversityHeader } from "@/components/college/university-profile-header";
+import { EssentialsCheck } from "@/components/college/essentials-check";
 import {
   ApplyBody, CheckedLine, CostsBody, FaqBody, applyChecked, costsChecked, GuidesBody, SourcesLine, OutcomesBody, OverviewBody, ProfileCard, RankingsBody, ScholarshipsBody, outcomesData,
 } from "@/components/college/university-profile-sections";
@@ -250,6 +251,7 @@ export default function UniversityPage({
     <div className="up-page" data-shell={dashboard ? "dashboard" : "public"}>
       <Link className="up-back" href="/universities">← {t("up.back")}</Link>
       <UniversityHeader university={u} foundedFallback={extras.facts?.founded?.year} typeFallback={extras.facts?.type?.value} />
+      <EssentialsCheck university={u} />
       <UniversityQuickStart university={u} view={view} signedIn={signedIn} />
       {sections.length > 1 && <SectionNav sections={sections} initial={target && sections.includes(target) ? target : null} />}
       <div className="up-sections">

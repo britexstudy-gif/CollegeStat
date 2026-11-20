@@ -205,6 +205,8 @@ export type OfficialVideo = {
   checked_at: string;
 };
 export type University = {
+  /** Verified essentials 0-3, precomputed for card rows (lib/coverage.ts). */
+  coverage?: number;
   official_videos?: OfficialVideo[];
   /** Reviewed background facts (server-attached). */
   history?: UniversityHistory;

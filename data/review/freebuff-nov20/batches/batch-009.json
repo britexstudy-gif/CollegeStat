@@ -1,0 +1,37 @@
+[
+ {
+  "id": "0c725fbe-d8f6-5985-ba7b-5538434ff8a2",
+  "name": "Universitat Ramon Llull",
+  "city": "Barcelona",
+  "country_code": "ES",
+  "website": "https://www.url.edu"
+ },
+ {
+  "id": "c17e90b9-27b3-5cfa-ae44-689fb73156db",
+  "name": "Belarusian State University",
+  "city": "Minsk",
+  "country_code": "BY",
+  "website": "https://bsu.by/"
+ },
+ {
+  "id": "1b1eb340-cc2a-5088-a2dd-a74fdeec85a0",
+  "name": "Jordan University of Science and Technology",
+  "city": "Irbid",
+  "country_code": "JO",
+  "website": "http://www.just.edu.jo/"
+ },
+ {
+  "id": "34ebeddd-9eb9-50cc-8708-3d73ca7b863d",
+  "name": "Amirkabir University of Technology",
+  "city": "Tehran",
+  "country_code": "IR",
+  "website": "http://www.aut.ac.ir/"
+ },
+ {
+  "id": "c729cc19-397a-5cbd-840d-3fa6fcfc58eb",
+  "name": "Novosibirsk State University",
+  "city": "Novosibirsk",
+  "country_code": "RU",
+  "website": "http://www.nsu.ru/"
+ }
+]

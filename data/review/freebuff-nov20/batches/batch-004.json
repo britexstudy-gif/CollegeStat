@@ -1,0 +1,37 @@
+[
+ {
+  "id": "bb49d73c-e3e8-5fa0-ad66-319e24608e25",
+  "name": "Universitat Autònoma de Barcelona",
+  "city": "Cerdanyola del Vallès",
+  "country_code": "ES",
+  "website": "https://www.uab.cat"
+ },
+ {
+  "id": "575d5e9a-f98a-5ec3-bea3-7f7b8c05100a",
+  "name": "Louvain School of Management",
+  "city": "Louvain-la-Neuve",
+  "country_code": "BE",
+  "website": "https://uclouvain.be/"
+ },
+ {
+  "id": "48888524-717e-5143-90bf-457f3f85ba30",
+  "name": "Ecole Normale Supérieure de Lyon",
+  "city": "Lyon",
+  "country_code": "FR",
+  "website": "http://www.ens-lyon.fr/"
+ },
+ {
+  "id": "4ad2abdc-80b7-52ef-ba47-28e6c8e0702b",
+  "name": "Polytechnic Institute of Turin",
+  "city": "Turin",
+  "country_code": "IT",
+  "website": "http://www.polito.it/"
+ },
+ {
+  "id": "fa22ef60-0123-584c-b367-cc48cff224d1",
+  "name": "Indian Institute of Technology, Kanpur",
+  "city": "Kanpur",
+  "country_code": "IN",
+  "website": "http://www.iitk.ac.in/"
+ }
+]

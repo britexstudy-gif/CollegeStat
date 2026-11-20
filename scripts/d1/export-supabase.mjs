@@ -38,6 +38,9 @@ const TABLES = [
   ["university_scholarships", 4000],
   ["scholarships", 2000],
   ["university_aliases", 8000],
+  // Backup-only tables (Nov 20 cleanup): not used by the D1 build.
+  ["source_records", 1500],
+  ["external_identifiers", 8000],
 ];
 
 async function sql(query) {

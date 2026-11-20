@@ -1,0 +1,37 @@
+[
+ {
+  "id": "5ad45ea9-e51c-59e4-9ef7-6d3768be673c",
+  "name": "Imperial College London",
+  "city": "London",
+  "country_code": "GB",
+  "website": "http://www.imperial.ac.uk/"
+ },
+ {
+  "id": "4b7862dc-7567-5f81-af58-c01144412a88",
+  "name": "University College London",
+  "city": "London",
+  "country_code": "GB",
+  "website": "http://www.ucl.ac.uk/"
+ },
+ {
+  "id": "7add53a9-8ddf-5e84-bd4d-a7c8638dbb95",
+  "name": "University of Chicago",
+  "city": "Chicago",
+  "country_code": "US",
+  "website": "http://www.uchicago.edu/"
+ },
+ {
+  "id": "79e1cf8b-6a97-5fef-ac23-aa6012197801",
+  "name": "Peking University",
+  "city": "Beijing",
+  "country_code": "CN",
+  "website": "http://www.pku.edu.cn/"
+ },
+ {
+  "id": "519c66df-8779-5336-acda-2cba10f95c66",
+  "name": "Tsinghua University",
+  "city": "Beijing",
+  "country_code": "CN",
+  "website": "http://www.tsinghua.edu.cn/"
+ }
+]

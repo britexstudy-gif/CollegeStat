@@ -1,0 +1,37 @@
+[
+ {
+  "id": "448df826-796b-515f-97c4-04912c826798",
+  "name": "Universidad de Costa Rica",
+  "city": "San José",
+  "country_code": "CR",
+  "website": "http://www.ucr.ac.cr/"
+ },
+ {
+  "id": "44458433-4eb0-5724-86b1-f75137ac3c17",
+  "name": "Kyungpook National University",
+  "city": "Daegu",
+  "country_code": "KR",
+  "website": "https://knu.ac.kr"
+ },
+ {
+  "id": "6c498d0b-fbdf-59c8-9aa2-776be5789bea",
+  "name": "Duy Tan University",
+  "city": "Da Nang",
+  "country_code": "VN",
+  "website": "https://duytan.edu.vn/"
+ },
+ {
+  "id": "f50f0b72-6c3f-50df-a463-900e49ac8db9",
+  "name": "Universiti Utara Malaysia",
+  "city": "Jitra",
+  "country_code": "MY",
+  "website": "http://www.uum.edu.my/"
+ },
+ {
+  "id": "b2588f6b-9e0a-5529-b0ad-9707090f465e",
+  "name": "Iran University of Science and Technology Tehran",
+  "city": "Tehran",
+  "country_code": "IR",
+  "website": "http://www.iust.ac.ir/"
+ }
+]

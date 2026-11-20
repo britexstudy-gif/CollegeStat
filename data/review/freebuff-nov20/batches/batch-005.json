@@ -1,0 +1,37 @@
+[
+ {
+  "id": "fab44467-aa34-5204-9560-df00c2dec3d1",
+  "name": "Norwegian University of Science and Technology",
+  "city": "Trondheim",
+  "country_code": "NO",
+  "website": "https://www.ntnu.edu"
+ },
+ {
+  "id": "29507709-c065-51f2-a63d-22ecc1ac26e4",
+  "name": "University of Warsaw",
+  "city": "Warsaw",
+  "country_code": "PL",
+  "website": "http://en.uw.edu.pl/"
+ },
+ {
+  "id": "a8cd3652-fbec-510c-85e6-a4c4372cc7a0",
+  "name": "University of Bergen",
+  "city": "Bergen",
+  "country_code": "NO",
+  "website": "http://www.uib.no/"
+ },
+ {
+  "id": "bdb1f2b9-ffd0-5bac-9ba5-ca63a083289b",
+  "name": "Sultan Qaboos University",
+  "city": "Muscat",
+  "country_code": "OM",
+  "website": "http://www.squ.edu.om/"
+ },
+ {
+  "id": "7e74da55-7ed1-58a0-b41c-7eed8b466241",
+  "name": "Huazhong University of Science and Technology",
+  "city": "Wuhan",
+  "country_code": "CN",
+  "website": "http://english.hust.edu.cn/"
+ }
+]

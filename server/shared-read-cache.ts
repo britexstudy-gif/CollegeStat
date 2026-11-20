@@ -18,8 +18,12 @@ function store(): Cache | undefined {
   }
 }
 
+// Each deployment (and preview) gets its own entries, so a new build never reads
+// result shapes stored by an older one.
+const BUILD = process.env.COLLEGESTAT_BUILD_STAMP || "dev";
+
 async function keyUrl(key: string) {
-  const bytes = new TextEncoder().encode(key);
+  const bytes = new TextEncoder().encode(BUILD + ":" + key);
   const digest = await crypto.subtle.digest("SHA-256", bytes);
   const hex = [...new Uint8Array(digest)].map((b) => b.toString(16).padStart(2, "0")).join("");
   return ORIGIN + hex;

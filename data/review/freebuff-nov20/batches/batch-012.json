@@ -1,0 +1,37 @@
+[
+ {
+  "id": "0d308b85-8556-5f87-ae2b-7a4c7abec74a",
+  "name": "Kyrgyz National University",
+  "city": "Bishkek",
+  "country_code": "KG",
+  "website": "https://www.knu.kg/"
+ },
+ {
+  "id": "f2e8e6c7-09ab-5ce1-955b-0215c6aa44f8",
+  "name": "Tashkent State Transport University",
+  "city": "Tashkent",
+  "country_code": "UZ",
+  "website": "https://tstu.uz"
+ },
+ {
+  "id": "dbde1b04-e231-50e5-b825-bed699deab78",
+  "name": "Tashkent State University of Economics",
+  "city": "Tashkent",
+  "country_code": "UZ",
+  "website": "https://tsue.uz"
+ },
+ {
+  "id": "6a0687a3-898f-5c15-bc6b-443388eb105f",
+  "name": "Abylai Khan University",
+  "city": "Almaty",
+  "country_code": "KZ",
+  "website": "http://www.ablaikhan.kz/"
+ },
+ {
+  "id": "2b37715c-42c8-5b71-bcac-de87380cd149",
+  "name": "Yessenov University",
+  "city": "Aktau",
+  "country_code": "KZ",
+  "website": "http://yu.edu.kz/"
+ }
+]

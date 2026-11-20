@@ -1,0 +1,37 @@
+[
+ {
+  "id": "6f13f9e9-cf5f-56ad-8384-39a9dc592d58",
+  "name": "Princeton University",
+  "city": "Princeton",
+  "country_code": "US",
+  "website": "http://www.princeton.edu/"
+ },
+ {
+  "id": "3c2d87b3-5b20-5df8-99c0-1353112a63f2",
+  "name": "Ludwig-Maximilians-Universität München",
+  "city": "Munich",
+  "country_code": "DE",
+  "website": "https://www.lmu.de"
+ },
+ {
+  "id": "8e191d89-10ba-5f03-913b-836c9c7194a0",
+  "name": "Université Paris-Saclay",
+  "city": "Gif-sur-Yvette",
+  "country_code": "FR",
+  "website": "https://www.universite-paris-saclay.fr/"
+ },
+ {
+  "id": "b3a81d8c-44ec-56d8-aa5f-b58d5fce6bfd",
+  "name": "Sorbonne Université",
+  "city": "Paris",
+  "country_code": "FR",
+  "website": "https://www.sorbonne-universite.fr"
+ },
+ {
+  "id": "39a0a410-8dec-5d39-bba7-99eb9fd534c4",
+  "name": "Lomonosov Moscow State University",
+  "city": "Moscow",
+  "country_code": "RU",
+  "website": "https://www.msu.ru/"
+ }
+]

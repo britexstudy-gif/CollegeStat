@@ -1,0 +1,37 @@
+[
+ {
+  "id": "894119e1-40c1-5589-8677-e1ed97388e59",
+  "name": "University of Pennsylvania",
+  "city": "Philadelphia",
+  "country_code": "US",
+  "website": "http://www.upenn.edu/"
+ },
+ {
+  "id": "0a670c6d-e20a-527f-851b-e2c1306cce70",
+  "name": "Yale University",
+  "city": "New Haven",
+  "country_code": "US",
+  "website": "http://www.yale.edu/"
+ },
+ {
+  "id": "6f8ca7da-1cba-56f4-89e6-4cffd48126ac",
+  "name": "University of Melbourne",
+  "city": "Melbourne",
+  "country_code": "AU",
+  "website": "http://www.unimelb.edu.au/"
+ },
+ {
+  "id": "34f9bd5c-1c24-5d4f-880c-4a342627a148",
+  "name": "UNSW Sydney",
+  "city": "Sydney",
+  "country_code": "AU",
+  "website": "https://www.unsw.edu.au/"
+ },
+ {
+  "id": "f5c17f3c-ac83-5193-8c71-641147ad926c",
+  "name": "Johns Hopkins University",
+  "city": "Baltimore",
+  "country_code": "US",
+  "website": "http://www.jhu.edu/"
+ }
+]

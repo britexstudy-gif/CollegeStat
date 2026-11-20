@@ -1,0 +1,37 @@
+[
+ {
+  "id": "5e2c8d0e-394c-543b-9d2e-2176866fd088",
+  "name": "Sharif University of Technology",
+  "city": "Tehran",
+  "country_code": "IR",
+  "website": "https://www.sharif.ir"
+ },
+ {
+  "id": "df1296f4-63d0-57c4-aadc-9fb97656eaf0",
+  "name": "Università Cattolica del Sacro Cuore",
+  "city": "Milan",
+  "country_code": "IT",
+  "website": "https://www.unicatt.eu"
+ },
+ {
+  "id": "dec56bcd-1a03-5b64-8395-d8fe3a330641",
+  "name": "Universidad Politécnica de Cataluna",
+  "city": "Barcelona",
+  "country_code": "ES",
+  "website": "http://www.upc.edu/"
+ },
+ {
+  "id": "06f3243f-8b32-5fd0-afb1-cd34466c9168",
+  "name": "Universitat Politècnica de València",
+  "city": "Valencia",
+  "country_code": "ES",
+  "website": "https://www.upv.es"
+ },
+ {
+  "id": "1a73288e-3c10-56ed-9055-1bc9f486ec07",
+  "name": "Universidad de Valencia",
+  "city": "Valencia",
+  "country_code": "ES",
+  "website": "http://www.uv.es/"
+ }
+]

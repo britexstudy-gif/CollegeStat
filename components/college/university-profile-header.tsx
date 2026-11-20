@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
+import { VerifiedMark } from "./essentials-check";
 import { ArrowUpRight, Check, MapPin, Plus } from "lucide-react";
 import type { University } from "@/lib/domain";
 import { countryName } from "@/lib/domain";
@@ -51,7 +52,7 @@ export function UniversityHeader({ university: u, foundedFallback: founded0, typ
       <div className="up-head-main">
         <UniversityLogo university={u} size="xl" />
         <div className="up-head-id">
-          <h1>{displayName(u.name)}</h1>
+          <h1>{displayName(u.name)} <VerifiedMark university={u} /></h1>
           <p className="up-place">
             <MapPin size={14} aria-hidden="true" />
             <span>

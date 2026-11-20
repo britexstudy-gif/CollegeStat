@@ -16,6 +16,7 @@ import { normalizeUniversity, languageMinimum, countryName, type University } fr
 import { valueOf } from "../../lib/research";
 import { universityRanks, rankingPublishers } from "../../lib/ranking-highlights";
 import { normalizeSearch } from "../../lib/search-text";
+import { coverageCount } from "../../lib/coverage";
 
 type Row = Record<string, unknown> & { id: string };
 const IN = new URL("../../data/d1-export/", import.meta.url);
@@ -51,21 +52,31 @@ function localDocs(): Row[] {
   for (let i = 0; existsSync(new URL(`shard-${String(i).padStart(2, "0")}.json`, CAT)); i++)
     for (const u of Object.values(readJSON(new URL(`shard-${String(i).padStart(2, "0")}.json`, CAT))) as Row[])
       if (u.published !== false) docs.push(u);
-  const gap = readJSON(new URL("../../data/review/codex-gaps-nov18/import/rows.json", import.meta.url)) as Record<string, Row[]>;
-  const gapSources = new Map(gap.data_sources.map((r) => [r.id, r]));
+  // Researched gap-fill packages (scripts/data-ops/codex-gaps-build.py output),
+  // published once reviewed. Later files win on the same row id.
+  const packages = [
+    "../../data/review/codex-gaps-nov18/import/rows.json",
+    "../../data/review/freebuff-nov20/out/import/rows.json",
+  ].filter((f) => existsSync(new URL(f, import.meta.url)));
   const byId = new Map(docs.map((d) => [d.id, d]));
   let added = 0;
-  for (const t of ["requirements", "costs", "deadlines", "admissions"]) {
-    for (const r of gap[t] || []) {
-      const doc = byId.get(r.university_id as string);
-      if (!doc || !verified(r)) continue;
-      const list = ((doc[t] as Row[]) ||= []);
-      if (list.some((x) => x.id === r.id)) continue;
-      list.push({ ...r, data_sources: gapSources.get(r.source_id as string) ?? null });
-      added++;
+  for (const file of packages) {
+    const gap = readJSON(new URL(file, import.meta.url)) as Record<string, Row[]>;
+    const gapSources = new Map(gap.data_sources.map((r) => [r.id, r]));
+    for (const t of ["requirements", "costs", "deadlines", "admissions"]) {
+      for (const r of gap[t] || []) {
+        const doc = byId.get(r.university_id as string);
+        if (!doc || !verified(r)) continue;
+        const list = ((doc[t] as Row[]) ||= []);
+        const at = list.findIndex((x) => x.id === r.id);
+        const row = { ...r, data_sources: gapSources.get(r.source_id as string) ?? null };
+        if (at >= 0) list[at] = row;
+        else list.push(row);
+        added++;
+      }
     }
   }
-  console.log(`local catalogue: ${docs.length} universities, ${added} Nov 18 rows added`);
+  console.log(`local catalogue: ${docs.length} universities, ${added} researched rows from ${packages.length} packages`);
   return docs;
 }
 const universities = LOCAL ? localDocs() : load("universities").filter((u) => u.published === true);
@@ -132,7 +143,7 @@ CREATE TABLE uni_blob (id TEXT NOT NULL, kind TEXT NOT NULL, part INTEGER NOT NU
 CREATE TABLE uni_facts (
   id TEXT PRIMARY KEY, slug TEXT NOT NULL UNIQUE, name TEXT NOT NULL, country_code TEXT, region TEXT, city TEXT, type TEXT,
   search TEXT NOT NULL, aliases TEXT, brand_color TEXT,
-  rank_qs INTEGER, rank_the INTEGER, rank_arwu INTEGER,
+  rank_qs INTEGER, rank_the INTEGER, rank_arwu INTEGER, coverage INTEGER NOT NULL,
   admission REAL, tuition_usd REAL, intl REAL, grad REAL, ielts REAL, aid INTEGER NOT NULL, schol INTEGER NOT NULL,
   subjects TEXT, progs TEXT, reported TEXT
 );
@@ -171,7 +182,7 @@ for (const u of universities) {
     id: n.id, slug: n.slug, name: n.name, country_code: n.country_code, region: n.region ?? null, city: n.city ?? null, type: n.university_type ?? null,
     search: normalizeSearch([n.name, n.short_name, n.city, countryName(n.country_code), n.region, ...(n.aliases || [])].filter(Boolean).join(" ")),
     aliases: JSON.stringify(n.aliases || []), brand_color: (u.brand_color as string) ?? null,
-    rank_qs: rank("qs"), rank_the: rank("the"), rank_arwu: rank("arwu"),
+    rank_qs: rank("qs"), rank_the: rank("the"), rank_arwu: rank("arwu"), coverage: coverageCount(n),
     admission: valueOf(n, "admission").value, tuition_usd: tuition.currency === "USD" ? tuition.value : null,
     intl: valueOf(n, "international_students").value, grad: valueOf(n, "graduation_rate").value, ielts: languageMinimum(n, "IELTS") ?? null,
     aid: aid != null && aid > 0 ? 1 : 0,
@@ -183,7 +194,7 @@ for (const u of universities) {
   if (n.country_code) countries.add(n.country_code);
   const cols = Object.keys(facts);
   emit(`INSERT INTO uni_facts (${cols.join(",")}) VALUES (${cols.map((c) => q((facts as Record<string, unknown>)[c])).join(",")});`);
-  for (const [kind, value] of [["doc", full], ["card", card(u, full)]] as const) {
+  for (const [kind, value] of [["doc", full], ["card", { ...card(u, full), coverage: facts.coverage }]] as const) {
     const body = pack(value);
     docBytes += body.length;
     biggest = Math.max(biggest, body.length);

@@ -1,0 +1,37 @@
+[
+ {
+  "id": "dce3ec59-808e-5353-8d69-da5e8e8e29fe",
+  "name": "King Saud University",
+  "city": "Riyadh",
+  "country_code": "SA",
+  "website": "http://www.ksu.edu.sa/"
+ },
+ {
+  "id": "dba5fd6f-9afd-5011-aab8-7d0e6cb6ac2a",
+  "name": "Sungkyunkwan University",
+  "city": "Suwon",
+  "country_code": "KR",
+  "website": "http://www.skku.edu/"
+ },
+ {
+  "id": "710661ab-60ec-57bf-84bc-aa0b1e256a12",
+  "name": "Leiden University",
+  "city": "Leiden",
+  "country_code": "NL",
+  "website": "http://www.leiden.edu/"
+ },
+ {
+  "id": "c73fffe8-a4ac-5cb2-8129-237abf096957",
+  "name": "University of Barcelona",
+  "city": "Barcelona",
+  "country_code": "ES",
+  "website": "https://web.ub.edu/"
+ },
+ {
+  "id": "a2f62835-d825-5217-8e59-90ad384c3f8c",
+  "name": "Indian Institute of Technology, Madras",
+  "city": "Chennai",
+  "country_code": "IN",
+  "website": "http://www.iitm.ac.in/"
+ }
+]

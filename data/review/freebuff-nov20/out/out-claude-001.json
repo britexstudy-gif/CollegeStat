@@ -1,0 +1,85 @@
+{
+ "universities": [
+  {
+   "id": "4b7862dc-7567-5f81-af58-c01144412a88",
+   "english": [
+    {
+     "test": "IELTS",
+     "minimum": 6.5,
+     "detail": "Level 1: 6.5 overall, 6.0 in each component; many programmes require Level 2-5 (up to 8.0)",
+     "source_url": "https://www.ucl.ac.uk/study/prospective-students/undergraduate/how-apply/english-language-requirements"
+    }
+   ],
+   "tuition": {
+    "amount": 32000,
+    "amount_max": 46700,
+    "currency": "GBP",
+    "period": "year",
+    "academic_year": "2026/27",
+    "detail": "Overseas fee varies by programme (e.g. English BA \u00a332,000; Computer Science BSc \u00a346,700)",
+    "source_url": "https://www.ucl.ac.uk/prospective-students/undergraduate/degrees/english-ba-2026"
+   },
+   "application_fee": null,
+   "deadlines": [],
+   "sat": null,
+   "acceptance_rate": null,
+   "notes": ""
+  },
+  {
+   "id": "0a670c6d-e20a-527f-851b-e2c1306cce70",
+   "english": [],
+   "tuition": {
+    "amount": 72500,
+    "amount_max": null,
+    "currency": "USD",
+    "period": "year",
+    "academic_year": "2026/27",
+    "detail": "Yale College tuition; full cost of attendance about $98,000",
+    "source_url": "https://student-accounts.yale.edu/tuition-and-fees"
+   },
+   "application_fee": null,
+   "deadlines": [
+    {
+     "title": "Regular Decision",
+     "due_at": "2027-01-02",
+     "route": "Common App / Coalition, Regular Decision",
+     "source_url": "https://admissions.yale.edu/timelines"
+    }
+   ],
+   "sat": null,
+   "acceptance_rate": null,
+   "notes": "SAT or ACT required; English test required for non-native speakers without 2 years of English-medium schooling"
+  },
+  {
+   "id": "7add53a9-8ddf-5e84-bd4d-a7c8638dbb95",
+   "english": [],
+   "tuition": {
+    "amount": 75960,
+    "amount_max": null,
+    "currency": "USD",
+    "period": "year",
+    "academic_year": "2026/27",
+    "detail": "College tuition; on-campus cost of attendance $103,821",
+    "source_url": "https://financialaid.uchicago.edu/undergraduate/how-aid-works/undergraduate-costs/"
+   },
+   "application_fee": null,
+   "deadlines": [
+    {
+     "title": "Early Action / Early Decision I",
+     "due_at": "2026-11-02",
+     "route": "Common App / Coalition / QuestBridge",
+     "source_url": "https://collegeadmissions.uchicago.edu/apply/application/"
+    },
+    {
+     "title": "Regular Decision / Early Decision II",
+     "due_at": "2027-01-04",
+     "route": "Common App / Coalition / QuestBridge",
+     "source_url": "https://collegeadmissions.uchicago.edu/apply/application/"
+    }
+   ],
+   "sat": null,
+   "acceptance_rate": null,
+   "notes": "Free tuition from autumn 2027 for families earning up to $250,000"
+  }
+ ]
+}

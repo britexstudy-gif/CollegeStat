@@ -27,6 +27,7 @@ import { WorkspaceLink as Link } from "@/components/college/workspace-link";
 import { useCollege } from "@/components/college/provider";
 import { useT } from "@/components/college/i18n";
 import { UniversityLogo } from "@/components/college/primitives";
+import { VerifiedMark } from "@/components/college/essentials-check";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import {
@@ -757,7 +758,7 @@ function UniversityRow({
             href={"/university/" + u.slug}
             className="block font-semibold leading-snug hover:underline"
           >
-            {u.name}
+            {u.name} <VerifiedMark university={u} />
           </Link>
           {place && <p className="mt-0.5 truncate text-sm text-muted-foreground">{place}</p>}
         </div>

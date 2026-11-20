@@ -1,0 +1,78 @@
+/* "2027 essentials" strip under the university header (essentials-check.tsx). */
+.ess {
+  margin: 16px 0 8px;
+  padding: 16px 18px;
+  border: 1px solid var(--up-line, var(--border));
+  border-radius: 14px;
+  background: var(--card, var(--background));
+}
+.ess-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 12px; }
+.ess-head h2 { margin: 0; font-size: 15px; font-weight: 600; color: var(--foreground); }
+.ess-list { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; margin: 0; padding: 0; list-style: none; }
+.ess-item {
+  display: grid; grid-template-columns: auto 1fr; grid-template-areas: "icon label" "value value" "src src";
+  gap: 4px 8px; padding: 12px; border-radius: 10px; background: var(--up-soft, rgba(127, 127, 127, 0.06));
+}
+.ess-icon { grid-area: icon; display: inline-flex; color: var(--up-muted, var(--muted-foreground)); }
+.ess-item.is-ok .ess-icon { color: var(--up-accent, var(--primary)); }
+.ess-label { grid-area: label; font-size: 12.5px; color: var(--up-muted, var(--muted-foreground)); }
+.ess-value { grid-area: value; font-size: 18px; font-weight: 600; color: var(--foreground); font-variant-numeric: tabular-nums; }
+.ess-src {
+  grid-area: src; display: inline-flex; align-items: center; gap: 4px; min-width: 0;
+  font-size: 12px; color: #15803d; text-decoration: none;
+}
+a.ess-src:hover { text-decoration: underline; }
+.ess-src.is-missing { color: var(--up-muted, var(--muted-foreground)); }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .ess-src:not(.is-missing) { color: #4ade80; }
+}
+:root[data-theme="dark"] .ess-src:not(.is-missing) { color: #4ade80; }
+@media (max-width: 640px) {
+  .ess-list { grid-template-columns: 1fr; }
+  .ess-item { grid-template-columns: auto 1fr auto; grid-template-areas: "icon label value" "src src src"; align-items: center; }
+  .ess-value { font-size: 15px; text-align: right; }
+}
+
+/* Coverage badge + "?" explanation (CoverageBadge). */
+.cov { position: relative; display: inline-flex; align-items: center; gap: 4px; }
+.up-head-id .cov { margin: 4px 0 2px; }
+.cov-badge {
+  display: inline-flex; align-items: center; gap: 5px; padding: 3px 10px; border-radius: 999px;
+  font-size: 12.5px; font-weight: 500; line-height: 1.5; white-space: nowrap;
+}
+.cov-badge.is-full { color: #15803d; background: rgba(22, 163, 74, 0.1); }
+.cov-badge.is-partial { color: #b45309; background: rgba(217, 119, 6, 0.1); }
+.cov-badge.is-none { color: var(--up-muted, var(--muted-foreground)); background: rgba(127, 127, 127, 0.1); }
+.cov-q {
+  display: inline-grid; place-items: center; width: 26px; height: 26px; padding: 0; border: 0; border-radius: 999px;
+  background: transparent; color: var(--up-muted, var(--muted-foreground)); cursor: pointer;
+}
+.cov-q:hover, .cov-q[aria-expanded="true"] { color: var(--foreground); background: rgba(127, 127, 127, 0.1); }
+.cov-pop {
+  position: absolute; z-index: 30; top: calc(100% + 8px); right: 0; width: min(320px, calc(100vw - 32px));
+  display: grid; gap: 8px; padding: 14px 16px; border: 1px solid var(--up-line, var(--border)); border-radius: 12px;
+  background: var(--card, var(--background)); box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+  font-size: 13px; line-height: 1.45; color: var(--foreground); text-align: left;
+}
+.cov-pop strong { font-size: 13.5px; }
+.cov-pop svg { display: inline-block; vertical-align: -2px; margin-right: 2px; }
+.cov-i-ok { color: #15803d; }
+.cov-i-ai { color: #b45309; }
+.cov-pop-note { color: var(--up-muted, var(--muted-foreground)); font-size: 12.5px; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .cov-badge.is-full, :root:not([data-theme="light"]) .cov-i-ok { color: #4ade80; }
+  :root:not([data-theme="light"]) .cov-badge.is-partial, :root:not([data-theme="light"]) .cov-i-ai { color: #fbbf24; }
+}
+:root[data-theme="dark"] .cov-badge.is-full, :root[data-theme="dark"] .cov-i-ok { color: #4ade80; }
+:root[data-theme="dark"] .cov-badge.is-partial, :root[data-theme="dark"] .cov-i-ai { color: #fbbf24; }
+.cov.is-compact { margin-top: 4px; }
+.cov.is-compact .cov-badge { padding: 1px 8px; font-size: 11.5px; }
+.cov.is-compact .cov-badge svg { width: 12px; height: 12px; }
+
+/* Verified seal after a university name (VerifiedMark). */
+.vmark { display: inline-flex; align-items: center; gap: 2px; vertical-align: middle; white-space: nowrap; color: var(--up-muted, var(--muted-foreground)); }
+.vmark svg { width: 0.95em; height: 0.95em; min-width: 16px; min-height: 16px; }
+.vmark.is-full svg { fill: #1d9bf0; stroke: #fff; color: #fff; }
+.vmark-n { font-size: 11px; font-weight: 500; letter-spacing: 0; }
+h1 .vmark svg { width: 0.7em; height: 0.7em; }
+h1 .vmark-n { font-size: 14px; }

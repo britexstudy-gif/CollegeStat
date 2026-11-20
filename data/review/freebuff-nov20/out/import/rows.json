@@ -1,0 +1,181 @@
+{
+ "data_sources": [
+  {
+   "id": "a424152a-c760-5c0b-9949-f060a56a9af1",
+   "name": "University College London · official page",
+   "organization": "University College London",
+   "url": "https://www.ucl.ac.uk/study/prospective-students/undergraduate/how-apply/english-language-requirements",
+   "source_type": "official",
+   "trust_level": "high",
+   "retrieved_at": "2026-11-20"
+  },
+  {
+   "id": "a9c5e47d-5191-56b5-a2eb-2aa2d3c5b99d",
+   "name": "University College London · official page",
+   "organization": "University College London",
+   "url": "https://www.ucl.ac.uk/prospective-students/undergraduate/degrees/english-ba-2026",
+   "source_type": "official",
+   "trust_level": "high",
+   "retrieved_at": "2026-11-20"
+  },
+  {
+   "id": "fe03a4ad-7621-5993-9b42-49602800f20a",
+   "name": "Yale University · official page",
+   "organization": "Yale University",
+   "url": "https://student-accounts.yale.edu/tuition-and-fees",
+   "source_type": "official",
+   "trust_level": "high",
+   "retrieved_at": "2026-11-20"
+  },
+  {
+   "id": "921e6797-2be5-5f99-8b93-4d67e322037d",
+   "name": "Yale University · official page",
+   "organization": "Yale University",
+   "url": "https://admissions.yale.edu/timelines",
+   "source_type": "official",
+   "trust_level": "high",
+   "retrieved_at": "2026-11-20"
+  },
+  {
+   "id": "75630b58-5f80-5396-bd42-353271ca124e",
+   "name": "University of Chicago · official page",
+   "organization": "University of Chicago",
+   "url": "https://financialaid.uchicago.edu/undergraduate/how-aid-works/undergraduate-costs/",
+   "source_type": "official",
+   "trust_level": "high",
+   "retrieved_at": "2026-11-20"
+  },
+  {
+   "id": "55a778bf-959a-57bc-9f2e-829204aecab3",
+   "name": "University of Chicago · official page",
+   "organization": "University of Chicago",
+   "url": "https://collegeadmissions.uchicago.edu/apply/application/",
+   "source_type": "official",
+   "trust_level": "high",
+   "retrieved_at": "2026-11-20"
+  }
+ ],
+ "requirements": [
+  {
+   "university_id": "4b7862dc-7567-5f81-af58-c01144412a88",
+   "verification_status": "verified",
+   "verified_at": "2026-11-20",
+   "notes": "Level 1: 6.5 overall, 6.0 in each component; many programmes require Level 2-5 (up to 8.0) Researched by an AI agent from the official page on 2026-11-20.",
+   "id": "650bc402-0c75-5ffb-9920-f6d5a5bd2899",
+   "source_id": "a424152a-c760-5c0b-9949-f060a56a9af1",
+   "source_url": "https://www.ucl.ac.uk/study/prospective-students/undergraduate/how-apply/english-language-requirements",
+   "year": 2027,
+   "program_id": null,
+   "kind": "IELTS",
+   "label": "IELTS Academic · overall",
+   "minimum": 6.5,
+   "maximum": null,
+   "student_category": "International first-year undergraduate applicants",
+   "required": true
+  }
+ ],
+ "costs": [
+  {
+   "university_id": "4b7862dc-7567-5f81-af58-c01144412a88",
+   "verification_status": "verified",
+   "verified_at": "2026-11-20",
+   "notes": "Overseas fee varies by programme (e.g. English BA £32,000; Computer Science BSc £46,700) Range up to 46700 GBP. Researched by an AI agent from the official page on 2026-11-20.",
+   "id": "4b5e3c08-39b0-5628-9c33-e38ad305a23c",
+   "source_id": "a9c5e47d-5191-56b5-a2eb-2aa2d3c5b99d",
+   "year": 2026,
+   "program_id": null,
+   "category": "tuition",
+   "amount": 32000,
+   "currency": "GBP",
+   "period": "year",
+   "student_category": "international",
+   "confidence": "medium"
+  },
+  {
+   "university_id": "0a670c6d-e20a-527f-851b-e2c1306cce70",
+   "verification_status": "verified",
+   "verified_at": "2026-11-20",
+   "notes": "Yale College tuition; full cost of attendance about $98,000 Researched by an AI agent from the official page on 2026-11-20.",
+   "id": "f9dd5f3f-25a7-599e-8e0a-a09cc9633345",
+   "source_id": "fe03a4ad-7621-5993-9b42-49602800f20a",
+   "year": 2026,
+   "program_id": null,
+   "category": "tuition",
+   "amount": 72500,
+   "currency": "USD",
+   "period": "year",
+   "student_category": "international",
+   "confidence": "medium"
+  },
+  {
+   "university_id": "7add53a9-8ddf-5e84-bd4d-a7c8638dbb95",
+   "verification_status": "verified",
+   "verified_at": "2026-11-20",
+   "notes": "College tuition; on-campus cost of attendance $103,821 Researched by an AI agent from the official page on 2026-11-20.",
+   "id": "abda40ea-7389-5869-8208-5715fc9c1c03",
+   "source_id": "75630b58-5f80-5396-bd42-353271ca124e",
+   "year": 2026,
+   "program_id": null,
+   "category": "tuition",
+   "amount": 75960,
+   "currency": "USD",
+   "period": "year",
+   "student_category": "international",
+   "confidence": "medium"
+  }
+ ],
+ "deadlines": [
+  {
+   "university_id": "0a670c6d-e20a-527f-851b-e2c1306cce70",
+   "verification_status": "verified",
+   "verified_at": "2026-11-20",
+   "notes": "Common App / Coalition, Regular Decision. Researched by an AI agent from the official page on 2026-11-20.",
+   "id": "2356bfde-853d-5c21-9a1f-19c880b4180d",
+   "source_id": "921e6797-2be5-5f99-8b93-4d67e322037d",
+   "source_url": "https://admissions.yale.edu/timelines",
+   "year": 2027,
+   "title": "Regular Decision",
+   "program_id": null,
+   "student_category": "International first-year undergraduate applicants",
+   "cycle": "2027 entry",
+   "due_at": "2027-01-02T23:59:00Z",
+   "timezone": "America/New_York",
+   "application_url": "https://admissions.yale.edu/timelines"
+  },
+  {
+   "university_id": "7add53a9-8ddf-5e84-bd4d-a7c8638dbb95",
+   "verification_status": "verified",
+   "verified_at": "2026-11-20",
+   "notes": "Common App / Coalition / QuestBridge. Researched by an AI agent from the official page on 2026-11-20.",
+   "id": "4ff668ed-985c-5bec-9095-5b9fba0fa182",
+   "source_id": "55a778bf-959a-57bc-9f2e-829204aecab3",
+   "source_url": "https://collegeadmissions.uchicago.edu/apply/application/",
+   "year": 2026,
+   "title": "Early Action / Early Decision I",
+   "program_id": null,
+   "student_category": "International first-year undergraduate applicants",
+   "cycle": "2027 entry",
+   "due_at": "2026-11-02T23:59:00Z",
+   "timezone": "America/New_York",
+   "application_url": "https://collegeadmissions.uchicago.edu/apply/application/"
+  },
+  {
+   "university_id": "7add53a9-8ddf-5e84-bd4d-a7c8638dbb95",
+   "verification_status": "verified",
+   "verified_at": "2026-11-20",
+   "notes": "Common App / Coalition / QuestBridge. Researched by an AI agent from the official page on 2026-11-20.",
+   "id": "84ef04f2-ae7f-577d-8b45-c1586e0f2cb8",
+   "source_id": "55a778bf-959a-57bc-9f2e-829204aecab3",
+   "source_url": "https://collegeadmissions.uchicago.edu/apply/application/",
+   "year": 2027,
+   "title": "Regular Decision / Early Decision II",
+   "program_id": null,
+   "student_category": "International first-year undergraduate applicants",
+   "cycle": "2027 entry",
+   "due_at": "2027-01-04T23:59:00Z",
+   "timezone": "America/New_York",
+   "application_url": "https://collegeadmissions.uchicago.edu/apply/application/"
+  }
+ ],
+ "admissions": []
+}
