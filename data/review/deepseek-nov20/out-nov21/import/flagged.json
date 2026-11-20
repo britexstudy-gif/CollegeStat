@@ -1,0 +1,1421 @@
+[
+ {
+  "university_id": "5b24f3f6-adcb-53fb-a89e-4f25f33f8da2",
+  "university": "Universität Hamburg",
+  "field": "deadline",
+  "value": {
+   "title": "Bachelor application deadline (international applicants)",
+   "due_at": "2026-07-15",
+   "route": "Bachelorstudiengänge",
+   "source_url": "https://www.uni-hamburg.de/campuscenter/bewerbung.html"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "0563c8a6-8542-54aa-8199-f086738910ee",
+  "university": "Central Asian University of Environmental and Climate Change Studies (Green University)",
+  "field": "deadline",
+  "value": {
+   "title": "Bachelor's application deadline (CIFS)",
+   "due_at": "2026-07-15",
+   "route": "international",
+   "source_url": "https://greenuniversity.uz/how-apply"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "0563c8a6-8542-54aa-8199-f086738910ee",
+  "university": "Central Asian University of Environmental and Climate Change Studies (Green University)",
+  "field": "deadline",
+  "value": {
+   "title": "Bachelor's document submission period (1 June – 31 August 2026)",
+   "due_at": "2026-08-31",
+   "route": "international",
+   "source_url": "https://greenuniversity.uz/menu/admission-procedure"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "fae3f069-3d0b-5a89-a364-2aecc4e98d29",
+  "university": "Shanghai University",
+  "field": "deadline",
+  "value": {
+   "title": "Application period (international applicants)",
+   "due_at": "2026-06-30",
+   "route": "Self-funded / general international application via apply.shu.edu.cn",
+   "source_url": "https://apply.shu.edu.cn/application/index"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "fae3f069-3d0b-5a89-a364-2aecc4e98d29",
+  "university": "Shanghai University",
+  "field": "deadline",
+  "value": {
+   "title": "CSC Scholarship (Type B) application submission",
+   "due_at": "2026-02-15",
+   "route": "Scholarship via www.campuschina.org (Type B)",
+   "source_url": "https://apply.shu.edu.cn/application/scholarships"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "be141d50-5df3-5bd2-8b44-744166b2402b",
+  "university": "Middle East Technical University",
+  "field": "deadline",
+  "value": {
+   "title": "International undergraduate application period 2026-2027",
+   "due_at": "2026-07-12",
+   "route": "international first-year undergraduate",
+   "source_url": "http://iso.metu.edu.tr/en/application-dates"
+  },
+  "reason": "not https"
+ },
+ {
+  "university_id": "ef2b9cac-6245-5400-aedc-3211ba80177d",
+  "university": "Tampere University of Applied Sciences",
+  "field": "english",
+  "value": {
+   "test": "TOEFL iBT",
+   "minimum": 78,
+   "detail": "Overall 78, minimum 20 on Writing.",
+   "source_url": "https://www.tuni.fi/en/tau/bachelors-programmes/language-requirements"
+  },
+  "reason": "host differs from the university site: tuni.fi"
+ },
+ {
+  "university_id": "ef2b9cac-6245-5400-aedc-3211ba80177d",
+  "university": "Tampere University of Applied Sciences",
+  "field": "english",
+  "value": {
+   "test": "IELTS",
+   "minimum": 6,
+   "detail": "IELTS Academic overall 6.0, minimum 5.5 on Writing.",
+   "source_url": "https://www.tuni.fi/en/tau/bachelors-programmes/language-requirements"
+  },
+  "reason": "host differs from the university site: tuni.fi"
+ },
+ {
+  "university_id": "ef2b9cac-6245-5400-aedc-3211ba80177d",
+  "university": "Tampere University of Applied Sciences",
+  "field": "english",
+  "value": {
+   "test": "PTE Academic",
+   "minimum": 62,
+   "detail": "Overall 62, minimum 61 on Writing.",
+   "source_url": "https://www.tuni.fi/en/tau/bachelors-programmes/language-requirements"
+  },
+  "reason": "host differs from the university site: tuni.fi"
+ },
+ {
+  "university_id": "ef2b9cac-6245-5400-aedc-3211ba80177d",
+  "university": "Tampere University of Applied Sciences",
+  "field": "tuition",
+  "value": {
+   "amount": 10000,
+   "amount_max": 10000,
+   "currency": "EUR",
+   "period": "year",
+   "academic_year": "2027",
+   "detail": "€10,000 per academic year for non-EU/EEA/Swiss students in English-taught bachelor's programmes (2027 entry).",
+   "source_url": "https://www.tuni.fi/en/tau/financial-matters/tuition-fees-and-scholarships"
+  },
+  "reason": "host differs from the university site: tuni.fi"
+ },
+ {
+  "university_id": "ce664727-b02e-5e0e-8009-a2e8be17f717",
+  "university": "Tamkang University",
+  "field": "deadline",
+  "value": {
+   "title": "Fall semester 2026 Application Submission (I)",
+   "due_at": "2026-03-23",
+   "route": "international undergraduate, round I",
+   "source_url": "https://adms.tku.edu.tw/Front/International/fallsemester/Page.aspx?id=NLMUmsHBkio="
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "ce664727-b02e-5e0e-8009-a2e8be17f717",
+  "university": "Tamkang University",
+  "field": "deadline",
+  "value": {
+   "title": "Fall semester 2026 Application Submission (II)",
+   "due_at": "2026-05-06",
+   "route": "international undergraduate, round II",
+   "source_url": "https://adms.tku.edu.tw/Front/International/fallsemester/Page.aspx?id=NLMUmsHBkio="
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "ce664727-b02e-5e0e-8009-a2e8be17f717",
+  "university": "Tamkang University",
+  "field": "deadline",
+  "value": {
+   "title": "Fall semester 2026 Application Submission (III)",
+   "due_at": "2026-06-04",
+   "route": "international undergraduate, round III",
+   "source_url": "https://adms.tku.edu.tw/Front/International/fallsemester/Page.aspx?id=NLMUmsHBkio="
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "9e20a5d2-bafa-5857-8f5d-4a89874bb2f1",
+  "university": "Inha University in Tashkent",
+  "field": "deadline",
+  "value": {
+   "title": "IELTS certificate submission (for applicants who did not submit IELTS when applying)",
+   "due_at": "2026-08-21",
+   "route": "International/undergraduate applicants who did not submit an IELTS certificate when applying",
+   "source_url": "https://inha.uz/general/important-update-for-applicants-the-deadline-for-ielts-submission-has-been-extended-to-august-21-2026/"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "8e2c3ced-a3bc-5033-a4f4-2efbc1df0488",
+  "university": "University of Wolverhampton",
+  "field": "english",
+  "value": {
+   "test": "IELTS",
+   "minimum": 6,
+   "detail": "Overall Score of 6.0 with no component less than 5.5 for courses requiring IELTS 6.0",
+   "source_url": "http://www.wlv.ac.uk/international/making-an-application/language-entry-requirements/"
+  },
+  "reason": "not https"
+ },
+ {
+  "university_id": "a4a8230d-8ce1-5a29-9884-6cc11c013628",
+  "university": "Islamic University of Technology",
+  "field": "deadline",
+  "value": {
+   "title": "Application closing date",
+   "due_at": "2026-02-17",
+   "route": "International/English Medium applicants",
+   "source_url": "https://admission.iutoic-dhaka.edu/admission-roadmap"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "a4a8230d-8ce1-5a29-9884-6cc11c013628",
+  "university": "Islamic University of Technology",
+  "field": "deadline",
+  "value": {
+   "title": "Submission of attested transcript and grade sheets to Registrar",
+   "due_at": "2026-02-17",
+   "route": "English Medium applicants",
+   "source_url": "https://admission.iutoic-dhaka.edu/information/howtoapply"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "d19cb9ac-ceb5-5f23-8eed-22817deaae2f",
+  "university": "Université Polytechnique Hauts-de-France",
+  "field": "deadline",
+  "value": {
+   "title": "Classes Internationales application deadline (A2 French level)",
+   "due_at": "2026-05-15",
+   "route": "Classes Internationales",
+   "source_url": "https://www.uphf.fr/universite/linternational/classes-internationales"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "9d2187a7-b96c-58ce-9f49-463ba0ab963f",
+  "university": "Universiti Brunei Darussalam",
+  "field": "deadline",
+  "value": {
+   "title": "Undergraduate Degree application (September 2026 intake)",
+   "due_at": "2026-02-28",
+   "route": "Undergraduate Degree",
+   "source_url": "https://apply.ubd.edu.bn/orbeon/uis-welcome/"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "c6e36739-b4eb-5151-bcb6-0bbb2b68f276",
+  "university": "University of Abertay Dundee",
+  "field": "english",
+  "value": {
+   "test": "IELTS",
+   "minimum": 6,
+   "detail": "IELTS 6.0 overall with no component less than 5.5 for most undergraduate courses",
+   "source_url": "https://app-abertay-web-prod-hghnbjcqabcvfjhm.uksouth-01.azurewebsites.net/international/english-language-requirements/"
+  },
+  "reason": "host differs from the university site: app-abertay-web-prod-hghnbjcqabcvfjhm.uksouth-01.azurewebsites.net"
+ },
+ {
+  "university_id": "c6e36739-b4eb-5151-bcb6-0bbb2b68f276",
+  "university": "University of Abertay Dundee",
+  "field": "english",
+  "value": {
+   "test": "Duolingo",
+   "minimum": 105,
+   "detail": "Duolingo English Test: 105 overall with 95 in each element",
+   "source_url": "https://app-abertay-web-prod-hghnbjcqabcvfjhm.uksouth-01.azurewebsites.net/international/english-language-requirements/"
+  },
+  "reason": "host differs from the university site: app-abertay-web-prod-hghnbjcqabcvfjhm.uksouth-01.azurewebsites.net"
+ },
+ {
+  "university_id": "c6e36739-b4eb-5151-bcb6-0bbb2b68f276",
+  "university": "University of Abertay Dundee",
+  "field": "tuition",
+  "value": {
+   "amount": 16950,
+   "amount_max": null,
+   "currency": "GBP",
+   "period": "year",
+   "academic_year": "2027/28",
+   "detail": "International undergraduate fees vary by programme; example gross fee of £16,950 cited",
+   "source_url": "https://app-abertay-web-prod-hghnbjcqabcvfjhm.uksouth-01.azurewebsites.net/study-apply/money-fees-and-funding/tuition-fees/"
+  },
+  "reason": "host differs from the university site: app-abertay-web-prod-hghnbjcqabcvfjhm.uksouth-01.azurewebsites.net"
+ },
+ {
+  "university_id": "79664975-2986-5b68-8323-0dd6094b0674",
+  "university": "University of Rijeka",
+  "field": "deadline",
+  "value": {
+   "title": "Non-EEA candidates document upload deadline",
+   "due_at": "2026-05-01",
+   "route": "Non-EEA applicants",
+   "source_url": "https://uniri.hr/en/yufe/yufes-joint-bachelor-in-urban-sustainability-studies/"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "79664975-2986-5b68-8323-0dd6094b0674",
+  "university": "University of Rijeka",
+  "field": "deadline",
+  "value": {
+   "title": "EEA candidates with a Non-EEA degree document upload deadline",
+   "due_at": "2026-06-01",
+   "route": "EEA applicants with non-EEA degree",
+   "source_url": "https://uniri.hr/en/yufe/yufes-joint-bachelor-in-urban-sustainability-studies/"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "79664975-2986-5b68-8323-0dd6094b0674",
+  "university": "University of Rijeka",
+  "field": "deadline",
+  "value": {
+   "title": "EEA applicants with EEA degree - Summer Term document upload deadline",
+   "due_at": "2026-06-30",
+   "route": "EEA applicants with EEA degree (Summer Term)",
+   "source_url": "https://uniri.hr/en/yufe/yufes-joint-bachelor-in-urban-sustainability-studies/"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "79664975-2986-5b68-8323-0dd6094b0674",
+  "university": "University of Rijeka",
+  "field": "deadline",
+  "value": {
+   "title": "EEA applicants with EEA degree - Autumn Term document upload deadline",
+   "due_at": "2026-08-26",
+   "route": "EEA applicants with EEA degree (Autumn Term)",
+   "source_url": "https://uniri.hr/en/yufe/yufes-joint-bachelor-in-urban-sustainability-studies/"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "ea5349fa-f072-5170-b57f-415dc32e7c56",
+  "university": "University of Wales, Bangor",
+  "field": "english",
+  "value": {
+   "test": "IELTS",
+   "minimum": 6,
+   "detail": "IELTS 6.0 overall with 5.5 in each component for most undergraduate courses; some courses require 6.5 (6.0).",
+   "source_url": "https://bangorunivsite.prod.acquia-sites.com/international/future/englishlanguage"
+  },
+  "reason": "host differs from the university site: bangorunivsite.prod.acquia-sites.com"
+ },
+ {
+  "university_id": "ea5349fa-f072-5170-b57f-415dc32e7c56",
+  "university": "University of Wales, Bangor",
+  "field": "english",
+  "value": {
+   "test": "Duolingo",
+   "minimum": 95,
+   "detail": "Duolingo English Test minimum equivalent score 95 for degree programmes (IELTS 6.0 equivalent).",
+   "source_url": "https://bangorunivsite.prod.acquia-sites.com/international/future/englishlanguage"
+  },
+  "reason": "host differs from the university site: bangorunivsite.prod.acquia-sites.com"
+ },
+ {
+  "university_id": "ea5349fa-f072-5170-b57f-415dc32e7c56",
+  "university": "University of Wales, Bangor",
+  "field": "tuition",
+  "value": {
+   "amount": 18000,
+   "amount_max": 21000,
+   "currency": "GBP",
+   "period": "year",
+   "academic_year": "2026/27",
+   "detail": "International undergraduate fees per year range from £18,000 (Band A) to £21,000 depending on course.",
+   "source_url": "https://bangorunivsite.prod.acquia-sites.com/international/fees"
+  },
+  "reason": "host differs from the university site: bangorunivsite.prod.acquia-sites.com"
+ },
+ {
+  "university_id": "7a0f9cd7-0045-5682-92ae-78b2952c14e1",
+  "university": "South China Normal University",
+  "field": "english",
+  "value": {
+   "test": "IELTS",
+   "minimum": 5.5,
+   "detail": "English program requires IELTS ≥ 5.5; native English speakers exempt.",
+   "source_url": "http://english.scnu.edu.cn/a/20250513/1435.html"
+  },
+  "reason": "not https"
+ },
+ {
+  "university_id": "7a0f9cd7-0045-5682-92ae-78b2952c14e1",
+  "university": "South China Normal University",
+  "field": "tuition",
+  "value": {
+   "amount": 24000,
+   "amount_max": null,
+   "currency": "CNY",
+   "period": "year",
+   "academic_year": "2025",
+   "detail": "Tuition for Humanities, Social Science undergraduate programs: 24,000 CNY/year.",
+   "source_url": "http://english.scnu.edu.cn/a/20250513/1435.html"
+  },
+  "reason": "not https"
+ },
+ {
+  "university_id": "e5598615-7e14-58b4-8137-510b341b2ab5",
+  "university": "Annamalai University",
+  "field": "deadline",
+  "value": {
+   "title": "Online application registration for on-campus programmes (except counselling programmes), 2026-27",
+   "due_at": "2026-08-30",
+   "route": "international",
+   "source_url": "https://www.annamalaiuniversity.ac.in/adm/index.php"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "1b316324-6c95-5e77-ada7-1a9868439705",
+  "university": "PFH Private University of Applied Sciences",
+  "field": "english",
+  "value": {
+   "test": "IELTS",
+   "minimum": 6,
+   "detail": "IELTS 6.0 required for English-taught distance learning programmes",
+   "source_url": "https://www.pfh.de/en/lp/apply-study-germany-ab"
+  },
+  "reason": "host differs from the university site: pfh.de"
+ },
+ {
+  "university_id": "1b316324-6c95-5e77-ada7-1a9868439705",
+  "university": "PFH Private University of Applied Sciences",
+  "field": "tuition",
+  "value": {
+   "amount": 10080,
+   "amount_max": 11760,
+   "currency": "EUR",
+   "period": "year",
+   "academic_year": "2027",
+   "detail": "Tuition from €5,040 per semester (€10,080/year); some programmes €5,880 per semester (€11,760/year)",
+   "source_url": "https://www.pfh.de/en/application"
+  },
+  "reason": "host differs from the university site: pfh.de"
+ },
+ {
+  "university_id": "07b9f31b-fe62-58da-9b2d-bbe2627e152a",
+  "university": "Fairmont State University",
+  "field": "deadline",
+  "value": {
+   "title": "Honors Program priority application deadline (Fall 2026)",
+   "due_at": "2026-03-01",
+   "route": "Honors Program",
+   "source_url": "https://www.fairmontstate.edu/academics/honors/admissions-requirements.aspx"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "47787f61-569b-5eb3-b8c0-e1fc7aec4a27",
+  "university": "Salem Community College",
+  "field": "tuition",
+  "value": {
+   "amount": 365,
+   "amount_max": null,
+   "currency": "USD",
+   "period": "year",
+   "academic_year": "2026-2027",
+   "detail": "International student tuition is $365.00 per credit; no annual full-time figure stated.",
+   "source_url": "http://www.salemcc.edu/admissions/tuition-and-fees"
+  },
+  "reason": "not https"
+ },
+ {
+  "university_id": "47787f61-569b-5eb3-b8c0-e1fc7aec4a27",
+  "university": "Salem Community College",
+  "field": "deadline",
+  "value": {
+   "title": "Fall (September) international student application deadline",
+   "due_at": "2027-07-01",
+   "route": "international",
+   "source_url": "http://www.salemcc.edu/admissions"
+  },
+  "reason": "not https"
+ },
+ {
+  "university_id": "0b60607d-2a59-5d62-8529-8e10ec31fab2",
+  "university": "Wesleyan College",
+  "field": "deadline",
+  "value": {
+   "title": "CEO Women in Leadership Scholarship application",
+   "due_at": "2026-02-02",
+   "route": "International undergraduate scholarship application",
+   "source_url": "https://www.wesleyancollege.edu/admission/undergraduate/international/international-students-program-home.cfm"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "a98b4e94-115c-5ee4-afb7-14d28b7928f2",
+  "university": "University of Applied Sciences for Health Professions Upper Austria",
+  "field": "deadline",
+  "value": {
+   "title": "Online application (general admission period)",
+   "due_at": "2026-03-31",
+   "route": "international",
+   "source_url": "https://www.fh-gesundheitsberufe.at/bewerbung/bachelor-studiengaenge/"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "49efd69e-e4e4-57d7-b30c-4ccf6af3b4d4",
+  "university": "Hampden-Sydney College",
+  "field": "english",
+  "value": {
+   "test": "IELTS",
+   "minimum": 7,
+   "detail": "Minimum IELTS score of 7 required for international applicants.",
+   "source_url": "http://www.hsc.edu/admission-and-financial-aid/apply/international-student-applicant"
+  },
+  "reason": "not https"
+ },
+ {
+  "university_id": "49efd69e-e4e4-57d7-b30c-4ccf6af3b4d4",
+  "university": "Hampden-Sydney College",
+  "field": "tuition",
+  "value": {
+   "amount": 55981,
+   "amount_max": null,
+   "currency": "USD",
+   "period": "year",
+   "academic_year": "2026-2027",
+   "detail": "Tuition for 2026-2027; international health insurance (F-1) $3,300/year extra.",
+   "source_url": "http://www.hsc.edu/admission-and-financial-aid/tuition-and-fees"
+  },
+  "reason": "not https"
+ },
+ {
+  "university_id": "49efd69e-e4e4-57d7-b30c-4ccf6af3b4d4",
+  "university": "Hampden-Sydney College",
+  "field": "deadline",
+  "value": {
+   "title": "Early Decision I (binding)",
+   "due_at": "2026-10-15",
+   "route": "international",
+   "source_url": "http://www.hsc.edu/admission-and-financial-aid/apply/international-student-applicant"
+  },
+  "reason": "not https"
+ },
+ {
+  "university_id": "49efd69e-e4e4-57d7-b30c-4ccf6af3b4d4",
+  "university": "Hampden-Sydney College",
+  "field": "deadline",
+  "value": {
+   "title": "Early Action I (non-binding)",
+   "due_at": "2026-11-02",
+   "route": "international",
+   "source_url": "http://www.hsc.edu/admission-and-financial-aid/apply/international-student-applicant"
+  },
+  "reason": "not https"
+ },
+ {
+  "university_id": "49efd69e-e4e4-57d7-b30c-4ccf6af3b4d4",
+  "university": "Hampden-Sydney College",
+  "field": "deadline",
+  "value": {
+   "title": "Early Action II (non-binding)",
+   "due_at": "2026-12-01",
+   "route": "international",
+   "source_url": "http://www.hsc.edu/admission-and-financial-aid/apply/international-student-applicant"
+  },
+  "reason": "not https"
+ },
+ {
+  "university_id": "49efd69e-e4e4-57d7-b30c-4ccf6af3b4d4",
+  "university": "Hampden-Sydney College",
+  "field": "deadline",
+  "value": {
+   "title": "Early Decision II (binding)",
+   "due_at": "2027-01-15",
+   "route": "international",
+   "source_url": "http://www.hsc.edu/admission-and-financial-aid/apply/international-student-applicant"
+  },
+  "reason": "not https"
+ },
+ {
+  "university_id": "49efd69e-e4e4-57d7-b30c-4ccf6af3b4d4",
+  "university": "Hampden-Sydney College",
+  "field": "deadline",
+  "value": {
+   "title": "Regular Decision",
+   "due_at": "2027-02-01",
+   "route": "international",
+   "source_url": "http://www.hsc.edu/admission-and-financial-aid/apply/international-student-applicant"
+  },
+  "reason": "not https"
+ },
+ {
+  "university_id": "49efd69e-e4e4-57d7-b30c-4ccf6af3b4d4",
+  "university": "Hampden-Sydney College",
+  "field": "sat",
+  "value": {
+   "policy": "optional",
+   "p25": 1020,
+   "p75": 1220,
+   "source_url": "http://www.hsc.edu/apply"
+  },
+  "reason": "not https"
+ },
+ {
+  "university_id": "6bc4089d-3766-546f-aff5-8af31194f4b4",
+  "university": "Burg Giebichenstein University of Art and Design Halle",
+  "field": "deadline",
+  "value": {
+   "title": "Bachelor application deadline (Design Faculty)",
+   "due_at": "2026-03-17",
+   "route": "international first-year bachelor (Design Faculty)",
+   "source_url": "https://www.burg-halle.de/artikel/a/faq-fuer-bewerberinnen"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "6bc4089d-3766-546f-aff5-8af31194f4b4",
+  "university": "Burg Giebichenstein University of Art and Design Halle",
+  "field": "deadline",
+  "value": {
+   "title": "Bachelor/Diploma application deadline (Art Faculty)",
+   "due_at": "2026-02-17",
+   "route": "international first-year bachelor/diploma (Art Faculty)",
+   "source_url": "https://www.burg-halle.de/artikel/a/faq-fuer-bewerberinnen"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "db190a83-eb89-5487-a3c8-cb697bd6f268",
+  "university": "Manav Rachna University",
+  "field": "deadline",
+  "value": {
+   "title": "Undergraduate application deadline",
+   "due_at": "2026-07-02",
+   "route": "international",
+   "source_url": "https://manavrachna.edu.in/admissions/mrnat"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "50a83845-6492-56a1-8249-f282b941cb28",
+  "university": "GD Goenka University",
+  "field": "deadline",
+  "value": {
+   "title": "Last date to apply (UG & PG Programmes)",
+   "due_at": "2026-08-31",
+   "route": "Undergraduate application",
+   "source_url": "https://applications.gdgoenkauniversity.com/"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "ffdcb6d5-c4ac-5bf7-8b13-fe4be6df10c2",
+  "university": "California Institute of Advanced Management",
+  "field": "deadline",
+  "value": {
+   "title": "Spring 2026",
+   "due_at": "2025-12-05",
+   "route": "International undergraduate application",
+   "source_url": "https://ciam.edu/admissions-aid/"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "ffdcb6d5-c4ac-5bf7-8b13-fe4be6df10c2",
+  "university": "California Institute of Advanced Management",
+  "field": "deadline",
+  "value": {
+   "title": "Spring II 2026",
+   "due_at": "2026-01-30",
+   "route": "International undergraduate application",
+   "source_url": "https://ciam.edu/admissions-aid/"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "ffdcb6d5-c4ac-5bf7-8b13-fe4be6df10c2",
+  "university": "California Institute of Advanced Management",
+  "field": "deadline",
+  "value": {
+   "title": "Summer 2026",
+   "due_at": "2026-04-03",
+   "route": "International undergraduate application",
+   "source_url": "https://ciam.edu/admissions-aid/"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "ffdcb6d5-c4ac-5bf7-8b13-fe4be6df10c2",
+  "university": "California Institute of Advanced Management",
+  "field": "deadline",
+  "value": {
+   "title": "Summer II 2026",
+   "due_at": "2026-05-22",
+   "route": "International undergraduate application",
+   "source_url": "https://ciam.edu/admissions-aid/"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "ffdcb6d5-c4ac-5bf7-8b13-fe4be6df10c2",
+  "university": "California Institute of Advanced Management",
+  "field": "deadline",
+  "value": {
+   "title": "Fall 2026",
+   "due_at": "2026-07-31",
+   "route": "International undergraduate application",
+   "source_url": "https://ciam.edu/admissions-aid/"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "5678a8ec-3773-5a52-88ef-c92131d1d9ab",
+  "university": "Potomac State College of West Virginia University",
+  "field": "deadline",
+  "value": {
+   "title": "Fall semester application deadline",
+   "due_at": "2026-06-01",
+   "route": "international",
+   "source_url": "https://admissions.potomacstatecollege.edu/apply/international-student"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "c9cd9177-3964-5580-b9ce-bb6d16c5ce3b",
+  "university": "Chadron State College",
+  "field": "deadline",
+  "value": {
+   "title": "Spring semester deadline for students in the U.S. transferring from a U.S. school",
+   "due_at": "2028-01-02",
+   "route": "international transfer, Spring start",
+   "source_url": "https://www.csc.edu/international/how-to-apply/"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "9c0722ea-96f0-5ff7-adc1-0d22603ce6f0",
+  "university": "Lamar University",
+  "field": "deadline",
+  "value": {
+   "title": "Spring 2026 International Application",
+   "due_at": "2025-12-01",
+   "route": "international",
+   "source_url": "https://www.lamar.edu/admissions/how-to-apply/returning/index.html"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "9c0722ea-96f0-5ff7-adc1-0d22603ce6f0",
+  "university": "Lamar University",
+  "field": "deadline",
+  "value": {
+   "title": "Summer 2026 International Application",
+   "due_at": "2026-04-15",
+   "route": "international",
+   "source_url": "https://www.lamar.edu/admissions/how-to-apply/returning/index.html"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "9c0722ea-96f0-5ff7-adc1-0d22603ce6f0",
+  "university": "Lamar University",
+  "field": "deadline",
+  "value": {
+   "title": "Fall 2026 International Application",
+   "due_at": "2026-07-01",
+   "route": "international",
+   "source_url": "https://www.lamar.edu/admissions/how-to-apply/returning/index.html"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "137f090b-46cd-540a-b67b-53877e6d50c2",
+  "university": "Wilfrid Laurier University",
+  "field": "deadline",
+  "value": {
+   "title": "Spring 2028 application deadline for students studying outside of Ontario",
+   "due_at": "2028-03-15",
+   "route": "Outside Ontario / other applicant type",
+   "source_url": "https://www.wlu.ca/future-students/undergraduate/admissions/index.html"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "f921b926-fd6a-5c02-9d85-6dd32aad075f",
+  "university": "Heinrich Heine University Düsseldorf",
+  "field": "deadline",
+  "value": {
+   "title": "Application deadline for Economics (local admission restrictions, winter semester)",
+   "due_at": "2026-07-15",
+   "route": "local admission restrictions (Orts-NC), direct application",
+   "source_url": "https://www.hhu.de/studium/bewerbung-und-einschreibung/bewerbungsportal/orts-nc-direkt-vor-ort-bewerben"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "f921b926-fd6a-5c02-9d85-6dd32aad075f",
+  "university": "Heinrich Heine University Düsseldorf",
+  "field": "deadline",
+  "value": {
+   "title": "Application period for Economics (local admission restrictions)",
+   "due_at": "2026-01-15",
+   "route": "local admission restrictions (Orts-NC), direct application",
+   "source_url": "https://www.hhu.de/en/studium/bewerbung-und-einschreibung/bewerbungsportal/bachelor-courses-with-local-admission-restrictions-orts-nc"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "f921b926-fd6a-5c02-9d85-6dd32aad075f",
+  "university": "Heinrich Heine University Düsseldorf",
+  "field": "deadline",
+  "value": {
+   "title": "Application deadline for higher semesters, summer semester",
+   "due_at": "2026-03-15",
+   "route": "higher subject semester application",
+   "source_url": "https://www.hhu.de/studium/bewerbung-und-einschreibung/bewerbungsportal/bewerbung-ins-hoehere-fachsemester"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "c59d8d3f-3ce9-5c5f-b1c4-371e98dfa8c7",
+  "university": "Georgia Southern University",
+  "field": "deadline",
+  "value": {
+   "title": "Summer Minimester II application deadline",
+   "due_at": "2026-05-01",
+   "route": "international",
+   "source_url": "https://www.georgiasouthern.edu/admissions-aid/apply/deadlines-requirements"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "792fa545-f5f1-52bb-90ea-bdc62f6f9f59",
+  "university": "The College of Idaho",
+  "field": "deadline",
+  "value": {
+   "title": "Spring 2026 Regular Decision",
+   "due_at": "2026-01-16",
+   "route": "Regular Decision",
+   "source_url": "https://collegeofidaho.edu/apply/international/"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "792fa545-f5f1-52bb-90ea-bdc62f6f9f59",
+  "university": "The College of Idaho",
+  "field": "deadline",
+  "value": {
+   "title": "Fall 2026 Early Action I",
+   "due_at": "2025-11-15",
+   "route": "Early Action I",
+   "source_url": "https://collegeofidaho.edu/apply/international/"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "792fa545-f5f1-52bb-90ea-bdc62f6f9f59",
+  "university": "The College of Idaho",
+  "field": "deadline",
+  "value": {
+   "title": "Fall 2026 Early Action II",
+   "due_at": "2026-01-15",
+   "route": "Early Action II",
+   "source_url": "https://collegeofidaho.edu/apply/international/"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "792fa545-f5f1-52bb-90ea-bdc62f6f9f59",
+  "university": "The College of Idaho",
+  "field": "deadline",
+  "value": {
+   "title": "Fall 2026 Regular Decision",
+   "due_at": "2026-02-15",
+   "route": "Regular Decision",
+   "source_url": "https://collegeofidaho.edu/apply/international/"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "c9afd5ea-ad57-5091-b8f4-9611301adc5a",
+  "university": "FH Kärnten",
+  "field": "english",
+  "value": {
+   "test": "IELTS",
+   "minimum": 6,
+   "detail": "IELTS overall score of at least 6.0 (B2 level) required if no general university entrance qualification",
+   "source_url": "https://www.cu-hochschule-kaernten.at/en/study/bachelor/healthcare-and-nursing/requirements-and-application"
+  },
+  "reason": "host differs from the university site: cu-hochschule-kaernten.at"
+ },
+ {
+  "university_id": "c9afd5ea-ad57-5091-b8f4-9611301adc5a",
+  "university": "FH Kärnten",
+  "field": "deadline",
+  "value": {
+   "title": "Proof of English proficiency submission",
+   "due_at": "2027-03-15",
+   "route": "international",
+   "source_url": "https://www.cu-hochschule-kaernten.at/en/study/bachelor/healthcare-and-nursing/requirements-and-application"
+  },
+  "reason": "host differs from the university site: cu-hochschule-kaernten.at"
+ },
+ {
+  "university_id": "3ac9be18-93db-57ec-b946-d1d56a833585",
+  "university": "Latvian Academy of Music",
+  "field": "deadline",
+  "value": {
+   "title": "Registration of applicants (submission of documents) for studies",
+   "due_at": "2026-06-27",
+   "route": "international",
+   "source_url": "https://www.jvlma.lv/en/studies/application-and-admissions"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "f2ef5012-e222-53d5-a5be-83080da9dc55",
+  "university": "Labette Community College",
+  "field": "english",
+  "value": {
+   "test": "IELTS",
+   "minimum": 6,
+   "detail": "IELTS score of 6 or higher required for applicants whose primary language is not English.",
+   "source_url": "http://www.labette.edu/admissions/international.html"
+  },
+  "reason": "not https"
+ },
+ {
+  "university_id": "f2ef5012-e222-53d5-a5be-83080da9dc55",
+  "university": "Labette Community College",
+  "field": "tuition",
+  "value": {
+   "amount": 6912,
+   "amount_max": null,
+   "currency": "USD",
+   "period": "year",
+   "academic_year": "2027",
+   "detail": "International tuition/fees of 216 per credit; 32 credits per year yields 6,912.",
+   "source_url": "http://www.labette.edu/financialaid/cost.html"
+  },
+  "reason": "not https"
+ },
+ {
+  "university_id": "f2ef5012-e222-53d5-a5be-83080da9dc55",
+  "university": "Labette Community College",
+  "field": "deadline",
+  "value": {
+   "title": "International Student Admissions Application",
+   "due_at": "2027-05-01",
+   "route": "international",
+   "source_url": "http://www.labette.edu/admissions/international.html"
+  },
+  "reason": "not https"
+ },
+ {
+  "university_id": "60d51dd6-267c-56c7-ba69-8a04c0298c3f",
+  "university": "Moreno Valley College",
+  "field": "deadline",
+  "value": {
+   "title": "Summer 2026 international application period",
+   "due_at": "2026-07-30",
+   "route": "international first-year",
+   "source_url": "https://www.mvc.edu/admissions-aid/apply/international-student.php"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "bafece20-0134-5908-912e-141a2165a760",
+  "university": "Seinan Gakuin University",
+  "field": "deadline",
+  "value": {
+   "title": "Summer program application deadline",
+   "due_at": "2026-03-15",
+   "route": "Summer program (not first-year bachelor's degree)",
+   "source_url": "https://www.seinan-gu.ac.jp/international/internationalstudent/application_fee.html"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "53a459cf-a374-5ee7-9ce7-91f6f6d40b5d",
+  "university": "Fukuoka Women's University",
+  "field": "tuition",
+  "value": {
+   "amount": 535800,
+   "amount_max": null,
+   "currency": "JPY",
+   "period": "year",
+   "academic_year": "2027",
+   "detail": "Tuition fee ¥535,800/year (¥267,900/semester); matriculation fee waived for all international students.",
+   "source_url": "http://www.fwu.ac.jp/english/faculties/admission.html"
+  },
+  "reason": "not https"
+ },
+ {
+  "university_id": "02310000-b5fb-5302-9f69-06a4fbbf8252",
+  "university": "Isparta University of Applied Sciences",
+  "field": "deadline",
+  "value": {
+   "title": "International Application",
+   "due_at": "2026-07-05",
+   "route": "international",
+   "source_url": "https://international.isparta.edu.tr/"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "02310000-b5fb-5302-9f69-06a4fbbf8252",
+  "university": "Isparta University of Applied Sciences",
+  "field": "deadline",
+  "value": {
+   "title": "2nd International Application",
+   "due_at": "2026-08-14",
+   "route": "international",
+   "source_url": "https://international.isparta.edu.tr/"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "a2207bf5-85f8-5f06-adb3-57c158cc2ad0",
+  "university": "University of Television and Film Munich",
+  "field": "deadline",
+  "value": {
+   "title": "Application deadline winter semester 2026/27",
+   "due_at": "2026-03-02",
+   "route": "international applicants (uni-assist VPD required)",
+   "source_url": "https://www.hff-muc.de/en_EN/bewerbung"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "acafa69e-5cd3-5d11-8ee2-3bedc41e65e1",
+  "university": "Ilisagvik College",
+  "field": "deadline",
+  "value": {
+   "title": "Fall 2026 admission application deadline",
+   "due_at": "2026-08-03",
+   "route": "Fall Semester 2026",
+   "source_url": "https://catalog.ilisagvik.edu/academic-calendar"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "c7700083-9bf4-500c-a941-a69613125bce",
+  "university": "Phillips Theological Seminary",
+  "field": "deadline",
+  "value": {
+   "title": "Final Admissions Deadline (Fall Semester)",
+   "due_at": "2026-05-01",
+   "route": "Fall semester undergraduate application",
+   "source_url": "https://ptstulsa.edu/prospective-students/apply-now/"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "c7700083-9bf4-500c-a941-a69613125bce",
+  "university": "Phillips Theological Seminary",
+  "field": "deadline",
+  "value": {
+   "title": "Early Admissions Discount Deadline (Fall Semester)",
+   "due_at": "2026-04-01",
+   "route": "Fall semester undergraduate application",
+   "source_url": "https://ptstulsa.edu/prospective-students/apply-now/"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "ca13c37a-bd16-5269-8c1c-daf9e75c4080",
+  "university": "University of Guam",
+  "field": "deadline",
+  "value": {
+   "title": "Fall 2026 application deadline",
+   "due_at": "2026-04-24",
+   "route": "Undergraduate admission (all applicants)",
+   "source_url": "https://www.uog.edu/admissions/undergraduate-students"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "ca13c37a-bd16-5269-8c1c-daf9e75c4080",
+  "university": "University of Guam",
+  "field": "deadline",
+  "value": {
+   "title": "Fall 2026 late application deadline",
+   "due_at": "2026-08-25",
+   "route": "Undergraduate admission (late)",
+   "source_url": "https://www.uog.edu/admissions/undergraduate-students"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "e74b45dc-d631-574c-a45d-85c131d27796",
+  "university": "Fujian Agriculture and Forestry University",
+  "field": "deadline",
+  "value": {
+   "title": "International student application deadline",
+   "due_at": "2026-04-30",
+   "route": "online application via admission.fafu.edu.cn",
+   "source_url": "https://english.fafu.edu.cn/gjxyen/10578/list.htm"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "e74b45dc-d631-574c-a45d-85c131d27796",
+  "university": "Fujian Agriculture and Forestry University",
+  "field": "deadline",
+  "value": {
+   "title": "Chinese Government Scholarship (High-Level Postgraduate Program) application deadline",
+   "due_at": "2026-02-15",
+   "route": "CSC and FAFU online platforms",
+   "source_url": "https://english.fafu.edu.cn/gjxyen/10578/list.htm"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "84829cac-4328-5a47-93e0-e468ddd896af",
+  "university": "Starr King School for the Ministry",
+  "field": "deadline",
+  "value": {
+   "title": "Fall priority application deadline",
+   "due_at": "2026-04-01",
+   "route": "Fall entry (M.Div./MASC)",
+   "source_url": "https://sksm.edu/admissions/how-to-apply"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "84829cac-4328-5a47-93e0-e468ddd896af",
+  "university": "Starr King School for the Ministry",
+  "field": "deadline",
+  "value": {
+   "title": "Spring application deadline",
+   "due_at": "2025-12-01",
+   "route": "Spring entry",
+   "source_url": "https://sksm.edu/admissions"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "84829cac-4328-5a47-93e0-e468ddd896af",
+  "university": "Starr King School for the Ministry",
+  "field": "deadline",
+  "value": {
+   "title": "Fall application deadline",
+   "due_at": "2026-06-01",
+   "route": "Fall entry",
+   "source_url": "https://sksm.edu/admissions"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "8a8f9c1d-6cea-5234-a41c-1bc12cb21185",
+  "university": "University Colleges Leuven-Limburg",
+  "field": "deadline",
+  "value": {
+   "title": "Application deadline for non-EEA nationals requiring a study visa",
+   "due_at": "2026-04-01",
+   "route": "non-EEA nationals requiring a study visa",
+   "source_url": "https://www.ucll.be/en/degree-application"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "8a8f9c1d-6cea-5234-a41c-1bc12cb21185",
+  "university": "University Colleges Leuven-Limburg",
+  "field": "deadline",
+  "value": {
+   "title": "Application deadline for all other applicants (EEA nationals)",
+   "due_at": "2026-08-31",
+   "route": "EEA nationals",
+   "source_url": "https://www.ucll.be/en/degree-application"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "8a8f9c1d-6cea-5234-a41c-1bc12cb21185",
+  "university": "University Colleges Leuven-Limburg",
+  "field": "deadline",
+  "value": {
+   "title": "Application deadline for BME programme (EEA nationals)",
+   "due_at": "2026-06-15",
+   "route": "EEA nationals",
+   "source_url": "https://www.ucll.be/en/degree-application"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "bcb6c87a-cf66-5f58-bd26-9e0677169bd8",
+  "university": "CUNY Borough of Manhattan Community College",
+  "field": "deadline",
+  "value": {
+   "title": "Priority Application Deadline (Fall start)",
+   "due_at": "2026-02-01",
+   "route": "international first-year",
+   "source_url": "https://www.bmcc.cuny.edu/admissions/apply-now/"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "bcb6c87a-cf66-5f58-bd26-9e0677169bd8",
+  "university": "CUNY Borough of Manhattan Community College",
+  "field": "deadline",
+  "value": {
+   "title": "I-20 Application and Supporting Documents Deadline (Fall start)",
+   "due_at": "2026-06-15",
+   "route": "F-1 visa applicants",
+   "source_url": "https://www.bmcc.cuny.edu/admissions/international/after-you-are-accepted/the-i-20-form-applying-for-an-f-1-student-visa/"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "bcb6c87a-cf66-5f58-bd26-9e0677169bd8",
+  "university": "CUNY Borough of Manhattan Community College",
+  "field": "deadline",
+  "value": {
+   "title": "Acceptance and I-20 Application / Supporting Documents Deadline (Fall start, SEVIS transfer)",
+   "due_at": "2026-07-15",
+   "route": "SEVIS transfer students",
+   "source_url": "https://www.bmcc.cuny.edu/admissions/international/after-you-are-accepted/the-i-20-form-applying-for-an-f-1-student-visa/"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "7509f41b-1e1e-5317-9eea-22e36b039f91",
+  "university": "Canadian University of Dubai",
+  "field": "deadline",
+  "value": {
+   "title": "Fall 2026-27 international application deadline",
+   "due_at": "2026-08-21",
+   "route": "international",
+   "source_url": "https://www.cud.ac.ae/prospective-students/deadline-for-admission"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "abf2f103-b775-58d1-8dd0-615ebb4ceb79",
+  "university": "Vardhaman Mahaveer Open University",
+  "field": "deadline",
+  "value": {
+   "title": "Admission last date extended",
+   "due_at": "2026-02-27",
+   "route": "undergraduate",
+   "source_url": "http://www.vmou.ac.in/notices-admission"
+  },
+  "reason": "not https"
+ },
+ {
+  "university_id": "abf2f103-b775-58d1-8dd0-615ebb4ceb79",
+  "university": "Vardhaman Mahaveer Open University",
+  "field": "deadline",
+  "value": {
+   "title": "Admission last date extended",
+   "due_at": "2026-02-15",
+   "route": "undergraduate",
+   "source_url": "http://www.vmou.ac.in/notices-admission"
+  },
+  "reason": "not https"
+ },
+ {
+  "university_id": "bbba824a-96b7-5354-99c6-bd961b9b2264",
+  "university": "Central University of Odisha",
+  "field": "deadline",
+  "value": {
+   "title": "Closing of date for Online Registration",
+   "due_at": "2026-07-20",
+   "route": "Undergraduate admission (online registration)",
+   "source_url": "https://cuo.ac.in/admission_2026_UG.asp?pgid=5"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "17070526-94a1-56be-86a5-c0dbaf87953e",
+  "university": "Coahoma Community College",
+  "field": "tuition",
+  "value": {
+   "amount": 3400,
+   "amount_max": null,
+   "currency": "USD",
+   "period": "year",
+   "academic_year": "2027",
+   "detail": "Tuition $1700.00 per semester plus International Student Fee $1700.00 per semester; per-year tuition = 2 x $1700.",
+   "source_url": "http://www.coahomacc.edu/admissions/tuition-fees/index.html"
+  },
+  "reason": "not https"
+ },
+ {
+  "university_id": "547d2ecd-3b87-5ea3-aa55-e2ee65fcb0c8",
+  "university": "Mae Fah Luang University",
+  "field": "deadline",
+  "value": {
+   "title": "Round 1 application (2/2026 academic year)",
+   "due_at": "2026-07-31",
+   "route": "International undergraduate application, Round 1",
+   "source_url": "https://en.mfu.ac.th/admission/faqs/admission-faqs.html"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "547d2ecd-3b87-5ea3-aa55-e2ee65fcb0c8",
+  "university": "Mae Fah Luang University",
+  "field": "deadline",
+  "value": {
+   "title": "Round 2 application (2/2026 academic year)",
+   "due_at": "2026-08-31",
+   "route": "International undergraduate application, Round 2",
+   "source_url": "https://en.mfu.ac.th/admission/faqs/admission-faqs.html"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "27a24747-a39a-55f2-91a6-57ecdf2a0319",
+  "university": "National Institute of Technology Uttarakhand",
+  "field": "deadline",
+  "value": {
+   "title": "Last date for receiving SII applications",
+   "due_at": "2026-06-14",
+   "route": "Study in India (SII) - 2026-27",
+   "source_url": "https://nituk.ac.in/admissions"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "a5c40dc6-393a-5bf0-86b3-6c0539bb9eef",
+  "university": "North Central Michigan College",
+  "field": "deadline",
+  "value": {
+   "title": "Fall Semester 2026 international application deadline",
+   "due_at": "2026-06-27",
+   "route": "Fall Semester 2026",
+   "source_url": "https://www.ncmich.edu/admissions/international-students.html"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "4a91a210-0fcc-58a5-8552-3bd57d6759d3",
+  "university": "Santa Fe College",
+  "field": "deadline",
+  "value": {
+   "title": "Fall 2026 new international student application deadline",
+   "due_at": "2026-07-01",
+   "route": "new international student",
+   "source_url": "https://www.sfcollege.edu/iss/new-f-1-students/deadlines-and-cost.html"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "6da7f3cc-65a2-5b7b-a018-152c16f2afec",
+  "university": "University of Music Würzburg",
+  "field": "deadline",
+  "value": {
+   "title": "Application deadline for winter semester 26/27",
+   "due_at": "2026-03-15",
+   "route": "international",
+   "source_url": "https://hfm-wuerzburg.de/en/application-process"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "97265a88-2d3b-530c-a763-69fa896db91c",
+  "university": "SUNY College of Technology at Delhi",
+  "field": "deadline",
+  "value": {
+   "title": "Preferred deadline to apply for Financial Aid",
+   "due_at": "2026-02-15",
+   "route": "international",
+   "source_url": "https://www.delhi.edu/admission/apply/index.php"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "97265a88-2d3b-530c-a763-69fa896db91c",
+  "university": "SUNY College of Technology at Delhi",
+  "field": "deadline",
+  "value": {
+   "title": "National Decision Day to submit your tuition deposit (First-Year Students)",
+   "due_at": "2026-05-01",
+   "route": "international",
+   "source_url": "https://www.delhi.edu/admission/apply/index.php"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "89c0d528-b7ba-5984-8368-d0af138c85d3",
+  "university": "Anna University",
+  "field": "deadline",
+  "value": {
+   "title": "Online application deadline for B.E./B.Tech./B.Plan/M.Sc.(5 Years) under Consortium of Industries / Other State Quota / ",
+   "due_at": "2026-06-15",
+   "route": "international",
+   "source_url": "https://cfa.annauniv.edu/cfa/"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "602ebd7b-567a-57dc-bfa4-deb8cc51796a",
+  "university": "Clark Atlanta University",
+  "field": "tuition",
+  "value": {
+   "amount": 27962,
+   "amount_max": null,
+   "currency": "USD",
+   "period": "year",
+   "academic_year": "2026-2027",
+   "detail": "Undergraduate tuition (12-18 hours), annual rate.",
+   "source_url": "https://live-clark-atlanta-university.pantheonsite.io/admissions/tuition-aid-scholarships/tuition-and-fees"
+  },
+  "reason": "host differs from the university site: live-clark-atlanta-university.pantheonsite.io"
+ },
+ {
+  "university_id": "838bdb7a-462b-5332-a3ce-62f175c74129",
+  "university": "Smith College",
+  "field": "tuition",
+  "value": {
+   "amount": 70460,
+   "amount_max": null,
+   "currency": "USD",
+   "period": "year",
+   "academic_year": "2026-27",
+   "detail": "Tuition for 2026-27; billed one-half at the beginning of each semester.",
+   "source_url": "https://live-smithcolleged9-4k.pantheonsite.io/admission-aid/tuition-aid-applicants"
+  },
+  "reason": "host differs from the university site: live-smithcolleged9-4k.pantheonsite.io"
+ },
+ {
+  "university_id": "7f8cc729-0bf8-5b09-88b2-9940e7c39bf9",
+  "university": "Gettysburg College",
+  "field": "tuition",
+  "value": {
+   "amount": 71730,
+   "amount_max": null,
+   "currency": "USD",
+   "period": "year",
+   "academic_year": "2026-27",
+   "detail": "Annual tuition for 2026-27; housing and food $17,340 additional.",
+   "source_url": "http://www.gettysburg.edu/admissions-aid/tuition-fees"
+  },
+  "reason": "not https"
+ }
+]

@@ -41,7 +41,7 @@ export type ApplyModel = {
   steps: ("requirements" | "english" | "route" | "fee" | "deadline")[];
 };
 
-const englishKinds = ["IELTS", "TOEFL", "DUOLINGO"];
+const englishKinds = ["IELTS", "TOEFL", "DUOLINGO", "PTE"];
 function englishTests(u: University, extras?: ProfileExtras): EnglishTest[] {
   const out: EnglishTest[] = [];
   const seen = new Set<string>();
@@ -53,7 +53,8 @@ function englishTests(u: University, extras?: ProfileExtras): EnglishTest[] {
     }
   };
   for (const r of u.requirements as Requirement[]) {
-    const test = r.kind.toUpperCase();
+    // Duolingo and PTE minimums are stored as kind "other" with the test in the label.
+    const test = r.kind === "other" ? (/duolingo/i.test(r.label) ? "DUOLINGO" : /pte academic/i.test(r.label) ? "PTE" : "") : r.kind.toUpperCase();
     if (!englishKinds.includes(test) || !verified(r) || r.minimum == null || r.minimum <= 0) continue;
     add({ test: test === "DUOLINGO" ? "Duolingo" : test, minimum: r.minimum, scope: foundation(r) ? "Foundation" : null, source_url: href(r.source_url) });
   }

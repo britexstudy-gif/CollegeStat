@@ -1,3 +1,4 @@
+import { isLang, LANG_COOKIE } from "@/lib/i18n/languages";
 import { NextRequest, NextResponse } from "next/server";
 import { isStaffPath } from "@/lib/staff-route";
 import {
@@ -17,6 +18,17 @@ export function proxy(request: NextRequest) {
   requestHeaders.set("x-collegestat-request-path", request.nextUrl.pathname);
   // Lets the root layout start a public page's data reads early (server/route-prefetch.ts).
   requestHeaders.set("x-collegestat-request-search", request.nextUrl.search);
+  // ?lang=ru (etc.) renders that language for this request, whatever the cookie
+  // or browser says: search engines index each language at its own URL
+  // (server/seo-languages.ts adds the hreflang links).
+  const urlLang = request.nextUrl.searchParams.get("lang");
+  if (isLang(urlLang)) {
+    const others = (request.headers.get("cookie") || "")
+      .split(";")
+      .map((c) => c.trim())
+      .filter((c) => c && !c.startsWith(LANG_COOKIE + "="));
+    requestHeaders.set("cookie", [...others, LANG_COOKIE + "=" + urlLang].join("; "));
+  }
   // Signed-out visitors to /dashboard or /dashboard/* go to sign-in and come
   // back to the same path afterwards (the return URL is path-only, see safeNext).
   const signIn =

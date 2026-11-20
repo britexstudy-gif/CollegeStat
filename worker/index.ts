@@ -7,6 +7,7 @@ import {
   type EdgeHint,
   type EdgePolicy,
 } from "../server/edge-cache";
+import { localizeSeo } from "../server/seo-languages";
 
 /** Production Worker: the vinext app behind a data-center edge cache for
  * public, user-independent pages (server/edge-cache.ts decides which). */
@@ -108,6 +109,12 @@ function fromCache(entry: Response, state: "HIT" | "STALE") {
 const worker = {
   ...(handler as object),
   async fetch(request: Request, env: unknown, ctx: ExecutionContext) {
+    return localizeSeo(request, await serve(request, env, ctx));
+  },
+};
+
+async function serve(request: Request, env: unknown, ctx: ExecutionContext): Promise<Response> {
+  {
     const policy = edgeCachePolicy(request, BUILD);
     if (!policy || BUILD === "dev" || typeof caches === "undefined")
       return app.fetch(request, env, ctx);
@@ -130,7 +137,7 @@ const worker = {
       );
     }
     return fromCache(entry, "STALE");
-  },
-};
+  }
+}
 
 export default worker;

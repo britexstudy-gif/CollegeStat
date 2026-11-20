@@ -780,6 +780,13 @@ function UniversityRow({
             </Badge>
           </a>
         )}
+        {!rank && u.qs_asia && (
+          <a href={u.qs_asia.url} target="_blank" rel="noreferrer" title={"QS Asia " + u.qs_asia.year}>
+            <Badge variant="outline" className="h-7 rounded-full px-3 text-xs">
+              QS Asia #{u.qs_asia.rank_label.replace(/^#/, "")}
+            </Badge>
+          </a>
+        )}
         {tuition.value != null && tuition.currency && (
           <Fact label={t("uni.list.label.tuition")} value={currency(tuition.value, tuition.currency)} />
         )}

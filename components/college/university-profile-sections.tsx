@@ -164,9 +164,21 @@ export function ApplyBody({ university: u, model: m }: { university: University;
         source_url: b.source_url ?? null,
       })),
   ];
+  const satMin = u.requirements?.find((r) => r.kind === "SAT" && r.minimum != null && !r.program_id);
+  if (satMin) exams.push({ key: "SAT-min", test: "SAT", scope: null, value: t("oc.exams.min", { n: satMin.minimum! }), source_url: satMin.source_url ?? null });
+  // No published SAT range: show the SAT policy when the university states one.
+  const satPolicy = u.requirements?.find((r) => r.kind === "SAT" && r.minimum == null && !r.program_id && /·/.test(r.label || ""));
+  if (satPolicy && !exams.some((e) => e.test === "SAT")) {
+    const p = /optional/.test(satPolicy.label) ? "up.sat.optional" : /not considered/.test(satPolicy.label) ? "up.sat.no" : "up.sat.required";
+    exams.push({ key: "SAT-policy", test: "SAT", scope: null, value: t(p), source_url: satPolicy.source_url ?? null });
+  }
   const notes: { label: string; text: string; url: string | null }[] = [
     m.waivers && { label: t("up.apply.waiver"), text: m.waivers.text, url: m.waivers.source_url },
     m.foundationYear && { label: t("up.apply.foundation"), text: m.foundationYear.text, url: m.foundationYear.source_url },
+    // Certificate rules (e.g. Uzbekistan: SAT 1200+ → state grant), each from its official source.
+    ...(u.requirements || [])
+      .filter((r) => r.kind === "other" && r.minimum == null && !r.program_id && r.verification_status === "verified" && /→/.test(r.label || ""))
+      .map((r) => ({ label: t("up.apply.cert"), text: r.label, url: r.source_url ?? null })),
   ].filter((n): n is { label: string; text: string; url: string | null } => !!n && !!n.text);
   return (
     <div className="up-apply">

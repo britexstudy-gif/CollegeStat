@@ -207,6 +207,8 @@ export type OfficialVideo = {
 export type University = {
   /** Verified essentials 0-3, precomputed for card rows (lib/coverage.ts). */
   coverage?: number;
+  /** QS World University Rankings: Asia (scripts/data-ops/qs-asia-2027.py). */
+  qs_asia?: { rank: number; rank_label: string; year: number; url: string };
   official_videos?: OfficialVideo[];
   /** Reviewed background facts (server-attached). */
   history?: UniversityHistory;

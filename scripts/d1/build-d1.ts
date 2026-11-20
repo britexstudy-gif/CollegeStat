@@ -55,7 +55,18 @@ function localDocs(): Row[] {
   // Researched gap-fill packages (scripts/data-ops/codex-gaps-build.py output),
   // published once reviewed. Later files win on the same row id.
   const packages = [
+    "../../data/review/national-rules-nov20/import/rows.json",
     "../../data/review/codex-gaps-nov18/import/rows.json",
+    "../../data/review/deepseek-nov20/out/import/rows.json",
+    "../../data/review/deepseek-nov20/out-nov21/import/rows.json",
+    "../../data/review/commons-photos-nov20/import/rows.json",
+    "../../data/review/wikidata-nov20/import/rows.json",
+    "../../data/review/scorecard-nov20/import/rows.json",
+    "../../data/review/cricos-nov21/import/rows.json",
+    "../../data/review/commonapp-nov21/import/rows.json",
+    "../../data/review/uz-rules-nov21/import/rows.json",
+    "../../data/review/national-rules-nov21/import/rows.json",
+    "../../data/review/qs-asia-2027/import/rows.json",
     "../../data/review/freebuff-nov20/out/import/rows.json",
   ].filter((f) => existsSync(new URL(f, import.meta.url)));
   const byId = new Map(docs.map((d) => [d.id, d]));
@@ -63,7 +74,7 @@ function localDocs(): Row[] {
   for (const file of packages) {
     const gap = readJSON(new URL(file, import.meta.url)) as Record<string, Row[]>;
     const gapSources = new Map(gap.data_sources.map((r) => [r.id, r]));
-    for (const t of ["requirements", "costs", "deadlines", "admissions"]) {
+    for (const t of ["requirements", "costs", "deadlines", "admissions", "media"]) {
       for (const r of gap[t] || []) {
         const doc = byId.get(r.university_id as string);
         if (!doc || !verified(r)) continue;
@@ -74,6 +85,12 @@ function localDocs(): Row[] {
         else list.push(row);
         added++;
       }
+    }
+    // Field patches (logos, founding years): only where the field is still empty.
+    for (const p of (gap.patches || []) as unknown as { university_id: string; fields: Record<string, unknown> }[]) {
+      const doc = byId.get(p.university_id);
+      if (!doc) continue;
+      for (const [k, v] of Object.entries(p.fields)) if (doc[k] == null || doc[k] === "") ((doc as Record<string, unknown>)[k] = v), added++;
     }
   }
   console.log(`local catalogue: ${docs.length} universities, ${added} researched rows from ${packages.length} packages`);
@@ -153,7 +170,7 @@ CREATE TABLE catalogue_meta (key TEXT PRIMARY KEY, value TEXT NOT NULL);`);
 
 const card = (u: Row, full: Record<string, unknown>) => {
   const pr = (u.profile_resources as Record<string, unknown> | null) ?? null;
-  const pick = ["id", "name", "slug", "short_name", "country_code", "city", "region", "website", "logo_url", "logo_source_url", "logo_usage_notes", "university_type", "aliases"];
+  const pick = ["id", "name", "slug", "short_name", "country_code", "city", "region", "website", "logo_url", "logo_source_url", "logo_usage_notes", "university_type", "aliases", "qs_asia", "founded_year"];
   return {
     ...Object.fromEntries(pick.map((k) => [k, u[k] ?? null])),
     rankings: pr?.rankings ?? u.rankings ?? null,

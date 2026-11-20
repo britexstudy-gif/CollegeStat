@@ -6,11 +6,11 @@
 import { useEffect, useId, useRef, useState } from "react";
 import { BadgeCheck, CalendarDays, CircleDashed, CircleHelp, ExternalLink, Languages, ShieldCheck, ShieldHalf, Wallet } from "lucide-react";
 import { currency, dateLabel, tuition, type Sourced, type University } from "@/lib/domain";
-import { coverageCount, ieltsMinimum, isVerified, nextDeadline, sourceUrl } from "@/lib/coverage";
+import { coverageCount, englishMinimum, isVerified, nextDeadline, sourceUrl } from "@/lib/coverage";
 import { useT } from "./i18n";
 import "./essentials-check.css";
 
-type Fact = { key: "ess.deadline" | "ess.tuition" | "ess.english"; icon: React.ReactNode; value: string | null; record?: Sourced | null };
+type Fact = { key: "ess.deadline" | "ess.tuition" | "ess.english"; icon: React.ReactNode; value: string | null; record?: Sourced | null; expected?: boolean };
 
 const checkedOn = (r: Sourced) =>
   r.verified_at || (r.evidence?.retrieved_at as string | undefined) || r.data_sources?.retrieved_at || null;
@@ -18,11 +18,11 @@ const checkedOn = (r: Sourced) =>
 function essentials(u: University): Fact[] {
   const deadline = nextDeadline(u);
   const fee = tuition(u);
-  const ielts = ieltsMinimum(u);
+  const ielts = englishMinimum(u);
   const facts: Fact[] = [
-    { key: "ess.deadline", icon: <CalendarDays size={16} />, value: deadline ? dateLabel(deadline.due_date) : null, record: deadline },
+    { key: "ess.deadline", icon: <CalendarDays size={16} />, value: deadline ? dateLabel(deadline.due_date) : null, record: deadline, expected: deadline?.expected },
     { key: "ess.tuition", icon: <Wallet size={16} />, value: fee ? (fee.amount === 0 ? "0" : currency(fee.amount, fee.currency)) : null, record: fee },
-    { key: "ess.english", icon: <Languages size={16} />, value: ielts?.minimum != null ? String(ielts.minimum) : null, record: ielts },
+    { key: "ess.english", icon: <Languages size={16} />, value: ielts?.minimum != null ? (ielts.kind === "IELTS" ? "IELTS " : ielts.kind === "TOEFL" ? "TOEFL " : (ielts.label || "").split(" ")[0] + " ") + ielts.minimum : null, record: ielts },
   ];
   return facts;
 }
@@ -106,6 +106,7 @@ export function EssentialsCheck({ university: u }: { university: University }) {
               <span className="ess-icon">{f.icon}</span>
               <span className="ess-label">{t(f.key)}</span>
               <strong className="ess-value">{f.value ?? "—"}</strong>
+              {f.expected ? <span className="ess-expected">{t("ess.expected")}</span> : null}
               {ok && url ? (
                 <a className="ess-src" href={url} target="_blank" rel="noopener noreferrer">
                   <ShieldCheck size={13} />

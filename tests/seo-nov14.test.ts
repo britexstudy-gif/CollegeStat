@@ -104,12 +104,15 @@ test("robots.txt welcomes AI crawlers, keeps private routes closed and lists the
 });
 
 test("sitemap index covers pages, scholarships and chunked universities with lastmod", () => {
-  const universities = Array.from({ length: 10001 }, (_, i) => ({ slug: "u-" + i, lastmod: i === 0 ? "2026-09-26" : undefined }));
+  const universities = Array.from({ length: 2501 }, (_, i) => ({ slug: "u-" + i, lastmod: i === 0 ? "2026-09-26" : undefined }));
   const files = buildSitemaps({ site: "https://example.test", today: "2026-11-14", universities, scholarships: [{ slug: "pearson", lastmod: "2026-10-02T00:00:00Z" }] });
   assert.deepEqual(Object.keys(files).sort(), ["sitemap.xml", "sitemaps/pages.xml", "sitemaps/scholarships.xml", "sitemaps/universities-1.xml", "sitemaps/universities-2.xml"]);
   for (const loc of ["pages", "scholarships", "universities-1", "universities-2"]) assert.match(files["sitemap.xml"], new RegExp(`/sitemaps/${loc}\\.xml`));
   assert.match(files["sitemaps/universities-1.xml"], /<loc>https:\/\/example\.test\/university\/u-0<\/loc><lastmod>2026-09-26<\/lastmod>/);
-  assert.match(files["sitemaps/universities-2.xml"], /u-10000<\/loc><lastmod>2026-11-14/);
+  assert.match(files["sitemaps/universities-2.xml"], /u-2500<\/loc><lastmod>2026-11-14/);
+  // Each page is listed once per language, with hreflang alternates.
+  assert.match(files["sitemaps/universities-1.xml"], /<loc>https:\/\/example\.test\/university\/u-0\?lang=ru<\/loc>/);
+  assert.match(files["sitemaps/universities-1.xml"], /hreflang="x-default" href="https:\/\/example\.test\/university\/u-0"/);
   assert.match(files["sitemaps/scholarships.xml"], /\/scholarships\/pearson<\/loc><lastmod>2026-10-02</);
-  assert.equal((files["sitemaps/universities-1.xml"].match(/<url>/g) || []).length, 10000);
+  assert.equal((files["sitemaps/universities-1.xml"].match(/<url>/g) || []).length, 2500 * 6);
 });

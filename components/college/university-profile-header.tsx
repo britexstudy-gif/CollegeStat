@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
 import { VerifiedMark } from "./essentials-check";
-import { ArrowUpRight, Check, MapPin, Plus } from "lucide-react";
+import { ArrowUpRight, Check, MapPin, Plus, Sparkles } from "lucide-react";
 import type { University } from "@/lib/domain";
 import { countryName } from "@/lib/domain";
 import { displayName } from "@/lib/university-display-name";
@@ -67,6 +67,10 @@ export function UniversityHeader({ university: u, foundedFallback: founded0, typ
             {inCompare ? <Check size={15} aria-hidden="true" /> : <Plus size={15} aria-hidden="true" />}
             {t("up.compare")}
           </button>
+          <a className="up-btn" href={"/dashboard/assistant?ask=" + encodeURIComponent(t("up.askai.q", { name: u.name }))}>
+            <Sparkles size={15} aria-hidden="true" />
+            {t("up.askai")}
+          </a>
           {u.website && (
             <a className="up-btn is-primary" href={u.website} target="_blank" rel="noreferrer">
               {t("uni.next.website")} <ArrowUpRight size={14} aria-hidden="true" />

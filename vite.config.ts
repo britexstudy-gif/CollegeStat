@@ -16,7 +16,7 @@ const localBindingConfig = (mode: string) => ({
   // The public university catalogue (server/d1-catalogue.ts, scripts/d1). Production
   // only: the dev server keeps reading Supabase.
   ...(mode === "production"
-    ? { d1_databases: [{ binding: "CATALOGUE", database_name: process.env.CATALOGUE_D1_NAME || "collegestat-preview", database_id: process.env.CATALOGUE_D1_ID || "068f65a6-6ff0-4cdb-8a6e-fa12775fcc34" }] }
+    ? { d1_databases: [{ binding: "CATALOGUE", database_name: process.env.CATALOGUE_D1_NAME || "collegestat", database_id: process.env.CATALOGUE_D1_ID || "493039e0-d3fc-45e3-9563-09031e04a1df" }] }
     : {}),
   // No Smart Placement: most requests are edge-cache hits, which must stay
   // at the visitor's edge. Fix database latency by moving Supabase closer instead.

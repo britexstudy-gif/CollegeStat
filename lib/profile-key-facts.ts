@@ -23,7 +23,10 @@ const verified = (r: { verification_status?: string | null; canonical?: boolean 
 
 function rankFact(u: University): KeyFact | null {
   const rank = universityRanks(u)[0];
-  if (!rank) return null;
+  if (!rank)
+    return u.qs_asia
+      ? { id: "rank", value: "#" + u.qs_asia.rank_label.replace(/^#/, ""), detail: ["QS Asia " + u.qs_asia.year], href: u.qs_asia.url }
+      : null;
   const publisher = rankingPublishers[rank.provider];
   return {
     id: "rank",

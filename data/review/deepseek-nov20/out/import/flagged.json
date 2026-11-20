@@ -1,0 +1,464 @@
+[
+ {
+  "university_id": "ee31891b-8bbc-5fb0-9bc5-e0122f0c55dd",
+  "university": "Universiti Malaya",
+  "field": "deadline",
+  "value": {
+   "title": "Undergraduate (Bachelor's Degree) - International, Semester I (October) Intake, Academic Session 2026/2027",
+   "due_at": "2026-08-30",
+   "route": "International",
+   "source_url": "https://study.um.edu.my/how-to-apply"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "ee31891b-8bbc-5fb0-9bc5-e0122f0c55dd",
+  "university": "Universiti Malaya",
+  "field": "deadline",
+  "value": {
+   "title": "Bachelor of Medicine and Bachelor of Surgery - International",
+   "due_at": "2026-06-09",
+   "route": "International",
+   "source_url": "https://study.um.edu.my/how-to-apply"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "5b24f3f6-adcb-53fb-a89e-4f25f33f8da2",
+  "university": "Universität Hamburg",
+  "field": "deadline",
+  "value": {
+   "title": "Bachelorstudiengänge Bewerbungsfrist (Wintersemester 2026/27)",
+   "due_at": "2026-07-15",
+   "route": "Bachelor (international applicants via Campus-Center)",
+   "source_url": "https://www.uni-hamburg.de/campuscenter/bewerbung.html"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "70e1a87c-2f12-5f1d-bb22-0fd12687ea0d",
+  "university": "Universidade Estadual de Campinas",
+  "field": "deadline",
+  "value": {
+   "title": "Vestibular Unicamp 2027 registration period",
+   "due_at": "2026-08-31",
+   "route": "International/undergraduate (Vestibular Unicamp)",
+   "source_url": "https://www.fee.unicamp.br/"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "9be52f2e-e5f1-5b79-beb7-1fe59f0021ab",
+  "university": "Heriot-Watt University",
+  "field": "deadline",
+  "value": {
+   "title": "Undergraduate January intake - visa application deadline",
+   "due_at": "2025-12-01",
+   "route": "International (Malaysia campus)",
+   "source_url": "https://www.hw.ac.uk/malaysia/study/apply"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "9be52f2e-e5f1-5b79-beb7-1fe59f0021ab",
+  "university": "Heriot-Watt University",
+  "field": "deadline",
+  "value": {
+   "title": "Undergraduate September intake - visa application deadline",
+   "due_at": "2026-08-03",
+   "route": "International (Malaysia campus)",
+   "source_url": "https://www.hw.ac.uk/malaysia/study/apply"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "89c0d528-b7ba-5984-8368-d0af138c85d3",
+  "university": "Anna University",
+  "field": "deadline",
+  "value": {
+   "title": "Online application deadline for B.E./B.Tech./B.Plan/M.Sc.(5 Years) under Consortium of Industries / Other State Quota / ",
+   "due_at": "2026-06-15",
+   "route": "Foreign Nationals (FN/(LDC/SIDS)) and other international categories",
+   "source_url": "https://cfa.annauniv.edu/cfa/"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "9e20a5d2-bafa-5857-8f5d-4a89874bb2f1",
+  "university": "Inha University in Tashkent",
+  "field": "deadline",
+  "value": {
+   "title": "IELTS certificate submission deadline (extended)",
+   "due_at": "2026-08-21",
+   "route": "International applicants who did not submit an IELTS certificate when applying",
+   "source_url": "https://inha.uz/general/important-update-for-applicants-the-deadline-for-ielts-submission-has-been-extended-to-august-21-2026/"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "43ad546c-245f-5b4d-88f6-dfd96f45f8bc",
+  "university": "Turan International University",
+  "field": "tuition",
+  "value": {
+   "amount": 21500000,
+   "amount_max": 21500000,
+   "currency": "UZS",
+   "period": "year",
+   "academic_year": "2027",
+   "detail": "Bachelor's tuition is 21,500,000 UZS/year for most majors; 18,000,000 UZS/year for others.",
+   "source_url": "https://turan-edu.uz/en/admission/tuition-fees-and-grants/"
+  },
+  "reason": "host differs from the university site: turan-edu.uz"
+ },
+ {
+  "university_id": "43ad546c-245f-5b4d-88f6-dfd96f45f8bc",
+  "university": "Turan International University",
+  "field": "deadline",
+  "value": {
+   "title": "Bachelor's degree admission (offline and online)",
+   "due_at": "2027-08-15",
+   "route": "international",
+   "source_url": "https://turan-edu.uz/en/admission/tuition-fees-and-grants/"
+  },
+  "reason": "host differs from the university site: turan-edu.uz"
+ },
+ {
+  "university_id": "0563c8a6-8542-54aa-8199-f086738910ee",
+  "university": "Central Asian University of Environmental and Climate Change Studies (Green University)",
+  "field": "deadline",
+  "value": {
+   "title": "Bachelor's degree document submission (foreign citizens, state grant)",
+   "due_at": "2026-08-31",
+   "route": "international",
+   "source_url": "https://greenuniversity.uz/menu/admission-procedure"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "ddc5ed63-1b0e-5d80-9f05-1c867cc2f5bf",
+  "university": "Sarsen Amanzholov East Kazakhstan University",
+  "field": "deadline",
+  "value": {
+   "title": "Document submission for bachelor's programs (paid basis)",
+   "due_at": "2026-08-25",
+   "route": "international",
+   "source_url": "https://vku.edu.kz/bachelor-kz/"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "ddc5ed63-1b0e-5d80-9f05-1c867cc2f5bf",
+  "university": "Sarsen Amanzholov East Kazakhstan University",
+  "field": "deadline",
+  "value": {
+   "title": "Document submission start for foreign citizens (paid, interview-based admission)",
+   "due_at": "2026-06-01",
+   "route": "international",
+   "source_url": "https://vku.edu.kz/bachelor-kz/"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "3b974b6b-8241-5edf-9f6a-15aa3e9ccc45",
+  "university": "Kulyab State University named after Abuabdullo Rudaki",
+  "field": "deadline",
+  "value": {
+   "title": "Document submission for admitted applicants (national testing center distribution)",
+   "due_at": "2026-08-05",
+   "route": "international",
+   "source_url": "https://new.kgu.tj/tj"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "f9a06687-d990-568d-974d-d26ffdfd66fe",
+  "university": "Nukus State Teachers Training Institute",
+  "field": "deadline",
+  "value": {
+   "title": "International student application deadline (2025-2026 academic year)",
+   "due_at": "2025-08-10",
+   "route": "International applicants (foreign citizens), documents submitted electronically to admission.nspi@gmail.com",
+   "source_url": "https://ndpi.uz/2020/07/23/11563/"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "9b35883c-d4fc-57c4-88d4-6bd0ba5548f4",
+  "university": "Akhmet Baitursynuly Kostanay Regional University",
+  "field": "deadline",
+  "value": {
+   "title": "Foreign nationals admission (paid basis) application/interview period",
+   "due_at": "2026-08-25",
+   "route": "international",
+   "source_url": "https://ksu.edu.kz/kz/enrollee/reception-of-foreign-nationals/"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "1864081c-b337-55b6-8677-6a2c3828a8df",
+  "university": "Kazakh German University",
+  "field": "deadline",
+  "value": {
+   "title": "Прием заявлений на гранты и стипендии (начало)",
+   "due_at": "2026-06-01",
+   "route": "international_first_year",
+   "source_url": "https://dku.kz/ru/stoimost-obucheniya-i-stipendii"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "1864081c-b337-55b6-8677-6a2c3828a8df",
+  "university": "Kazakh German University",
+  "field": "deadline",
+  "value": {
+   "title": "Последний срок подачи заявлений на гранты и стипендии",
+   "due_at": "2026-08-10",
+   "route": "international_first_year",
+   "source_url": "https://dku.kz/ru/stoimost-obucheniya-i-stipendii"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "ec0b7cd3-c455-5273-8d70-185a82894de2",
+  "university": "Kulyash Bayseyitova Kazakh National University of Arts",
+  "field": "deadline",
+  "value": {
+   "title": "Document submission for bachelor's (paid basis)",
+   "due_at": "2026-07-06",
+   "route": "international",
+   "source_url": "https://kaznui.edu.kz/adm/undergraduate"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "6b3bfd5e-c2de-5d2e-a58e-0f059929a22c",
+  "university": "Tashkent State Medical University",
+  "field": "deadline",
+  "value": {
+   "title": "Applicant registration (Agency for Assessment of Knowledge and Skills)",
+   "due_at": "2026-06-25",
+   "route": "international undergraduate",
+   "source_url": "https://tashmeduni.uz/en/bachelor-degree-programs/"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "505ace3a-ce7a-5d1f-acae-74aebb281332",
+  "university": "Kazak American University",
+  "field": "deadline",
+  "value": {
+   "title": "Application deadline for 2026 admission (international applicants)",
+   "due_at": "2026-08-25",
+   "route": "First-year bachelor's application",
+   "source_url": "https://www.kau.kz/"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "ee9de602-8b76-575b-a7da-f8af732286fd",
+  "university": "Aalborg University",
+  "field": "deadline",
+  "value": {
+   "title": "Kvote 1 application deadline (bachelor and professional bachelor)",
+   "due_at": "2025-07-05",
+   "route": "Kvote 1 via optagelse.dk",
+   "source_url": "https://www.aau.dk/uddannelser/bachelor"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "267f1ea0-3cce-5842-8e31-55e35893b7b2",
+  "university": "Universität Innsbruck",
+  "field": "deadline",
+  "value": {
+   "title": "Application period for non-EEA citizens and stateless persons (Winter Semester 2026/2027)",
+   "due_at": "2026-05-15",
+   "route": "non-EEA citizens and stateless persons",
+   "source_url": "https://www.uibk.ac.at/en/admission-department/application-and-admission-deadlines/"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "2242f82e-8496-5027-bcf4-243aef11c601",
+  "university": "Universiti Tenaga Nasional",
+  "field": "deadline",
+  "value": {
+   "title": "International UG (Foundation, Diploma, Bachelor) application close - January 2027 Intake",
+   "due_at": "2026-12-14",
+   "route": "International undergraduate",
+   "source_url": "http://www.uniten.edu.my/admission/"
+  },
+  "reason": "not https"
+ },
+ {
+  "university_id": "9e91e5d1-3c6e-52a0-88ad-5c88b68cf7ff",
+  "university": "Pakistan Institute of Engineering and Applied Sciences (PIEAS)",
+  "field": "deadline",
+  "value": {
+   "title": "BS and MSNM / MSRMO Foreign Admissions - Application Submission",
+   "due_at": "2026-02-25",
+   "route": "international",
+   "source_url": "https://www.pieas.edu.pk/international-students.cshtml"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "046ea39b-3706-5972-a7d6-be4e67d63b59",
+  "university": "Management and Science University",
+  "field": "deadline",
+  "value": {
+   "title": "SMILE Scholarship application deadline",
+   "due_at": "2025-07-31",
+   "route": "Scholarship (SMILE) application for international applicants",
+   "source_url": "https://www3.msu.edu.my/international-application/YMsmile-scholarship2025/"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "c3d9e620-3450-5a05-8ae6-ba34509d5c21",
+  "university": "National Research Nuclear University MEPhI",
+  "field": "deadline",
+  "value": {
+   "title": "Deadline for applicants taking entrance examinations (main admission stage)",
+   "due_at": "2026-08-09",
+   "route": "Tuition-fee-based Bachelor's and Specialist Programs",
+   "source_url": "https://eng.mephi.ru/academics/admissions/tuition-fee"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "c3d9e620-3450-5a05-8ae6-ba34509d5c21",
+  "university": "National Research Nuclear University MEPhI",
+  "field": "deadline",
+  "value": {
+   "title": "Deadline for applicants not taking entrance examinations (main admission stage)",
+   "due_at": "2026-08-12",
+   "route": "Tuition-fee-based Bachelor's and Specialist Programs",
+   "source_url": "https://eng.mephi.ru/academics/admissions/tuition-fee"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "85a7f5b3-d535-5ffa-8cd1-aedf543909d6",
+  "university": "University of Nicosia",
+  "field": "deadline",
+  "value": {
+   "title": "LLB in Law (English Law Courses) application deadline, Fall 2020",
+   "due_at": "2020-09-23",
+   "route": "LLB in Law (English Law Courses) - undergraduate",
+   "source_url": "https://www.unic.ac.cy/call-for-applications-for-the-llb-in-law-of-the-university-of-nicosia-english-law-courses-fall-2020/"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "ef1d4e2e-352c-5133-8369-3e940ef4857a",
+  "university": "Khazar University",
+  "field": "deadline",
+  "value": {
+   "title": "International Admissions for Academic Year 2025-2026",
+   "due_at": "2026-06-01",
+   "route": "international",
+   "source_url": "http://international.khazar.org/"
+  },
+  "reason": "not https"
+ },
+ {
+  "university_id": "8b9ac3a6-de90-56a1-aad8-5c1d8bf52b51",
+  "university": "University of Stavanger",
+  "field": "deadline",
+  "value": {
+   "title": "Application deadline for students who need to apply for a study permit",
+   "due_at": "2026-06-01",
+   "route": "international_non_eu",
+   "source_url": "https://www.uis.no/en/student-pages/studies/tuition-fees-for-international-students"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "8b9ac3a6-de90-56a1-aad8-5c1d8bf52b51",
+  "university": "University of Stavanger",
+  "field": "deadline",
+  "value": {
+   "title": "Application deadline for other students",
+   "due_at": "2026-08-20",
+   "route": "international_other",
+   "source_url": "https://www.uis.no/en/student-pages/studies/tuition-fees-for-international-students"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "ce664727-b02e-5e0e-8009-a2e8be17f717",
+  "university": "Tamkang University",
+  "field": "deadline",
+  "value": {
+   "title": "Fall semester (Beginning in September 2026) Application Submission (I)",
+   "due_at": "2026-03-23",
+   "route": "international",
+   "source_url": "https://adms.tku.edu.tw/Front/International/fallsemester/Page.aspx?id=NLMUmsHBkio="
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "ce664727-b02e-5e0e-8009-a2e8be17f717",
+  "university": "Tamkang University",
+  "field": "deadline",
+  "value": {
+   "title": "Fall semester (Beginning in September 2026) Application Submission (II)",
+   "due_at": "2026-05-06",
+   "route": "international",
+   "source_url": "https://adms.tku.edu.tw/Front/International/fallsemester/Page.aspx?id=NLMUmsHBkio="
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "ce664727-b02e-5e0e-8009-a2e8be17f717",
+  "university": "Tamkang University",
+  "field": "deadline",
+  "value": {
+   "title": "Fall semester (Beginning in September 2026) Application Submission (III)",
+   "due_at": "2026-06-04",
+   "route": "international",
+   "source_url": "https://adms.tku.edu.tw/Front/International/fallsemester/Page.aspx?id=NLMUmsHBkio="
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "f4d21a94-d65e-5aca-88f5-33b49229c443",
+  "university": "Universitas Negeri Yogyakarta",
+  "field": "deadline",
+  "value": {
+   "title": "Online application (Intake August 2026) - online enrollment end",
+   "due_at": "2026-06-05",
+   "route": "International undergraduate application via pmb.uny.ac.id",
+   "source_url": "https://pmb.uny.ac.id/program/international-students"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "920c2156-a8f3-5537-aa3e-d63286f7fa81",
+  "university": "American International University - Bangladesh",
+  "field": "tuition",
+  "value": {
+   "amount": 8500,
+   "amount_max": null,
+   "currency": "BDT",
+   "period": "year",
+   "academic_year": "2026-27",
+   "detail": "Tuition is charged per credit hour (BDT 5,000-8,500 by program); no yearly total stated.",
+   "source_url": "http://www.aiub.edu/tuition-fee"
+  },
+  "reason": "not https"
+ },
+ {
+  "university_id": "a4a8230d-8ce1-5a29-9884-6cc11c013628",
+  "university": "Islamic University of Technology",
+  "field": "deadline",
+  "value": {
+   "title": "Application deadline for international candidates (extended)",
+   "due_at": "2025-05-30",
+   "route": "international",
+   "source_url": "https://admission.iutoic-dhaka.edu/international-students/general-information"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ }
+]

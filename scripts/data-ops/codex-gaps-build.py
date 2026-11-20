@@ -31,6 +31,9 @@ targets = {t["id"]: t for t in json.load(open(DIR / "targets-all.json"))}
 for _f in ("targets.json", "targets-retry.json"):
     if (DIR / _f).exists():
         targets.update({t["id"]: t for t in json.load(open(DIR / _f))})
+# Extra target lists (colon-separated), e.g. the DeepSeek regional run's.
+for _p in filter(None, os.environ.get("GAPS_TARGETS", "").split(":")):
+    targets.update({t["id"]: {**targets.get(t["id"], {}), **t} for t in json.load(open(ROOT / _p))})
 
 SERVICES = {
     "ucas.com", "commonapp.org", "ouac.on.ca", "uni-assist.de", "hochschulstart.de", "studyinkorea.go.kr",
@@ -209,6 +212,23 @@ for f in files:
 
         sat, rate = r.get("sat"), r.get("acceptance_rate")
         adm = {}
+        if sat and sat.get("policy") in ("required", "optional", "not_considered") and sat.get("source_url"):
+            # The SAT policy itself (many universities publish no score range).
+            if not official(sat["source_url"], uni):
+                label = {"required": "SAT · required", "optional": "SAT · test-optional", "not_considered": "SAT · not considered"}[sat["policy"]]
+                rows["requirements"].append(
+                    dict(base_row, id=rid(uni["id"], "req", "SAT-policy"), source_id=source(sat["source_url"], uni), source_url=sat["source_url"], year=2027,
+                         program_id=None, kind="SAT", label=label, minimum=None, maximum=None,
+                         student_category="International first-year undergraduate applicants", required=sat["policy"] == "required",
+                         notes=NOTE)
+                )
+                counts["sat"] += 1
+                if sat.get("minimum") and 400 <= sat["minimum"] <= 1600:
+                    rows["requirements"].append(
+                        dict(base_row, id=rid(uni["id"], "req", "SAT-min"), source_id=source(sat["source_url"], uni), source_url=sat["source_url"], year=2027,
+                             program_id=None, kind="SAT", label="SAT · minimum", minimum=sat["minimum"], maximum=None,
+                             student_category="International first-year undergraduate applicants", required=sat["policy"] == "required", notes=NOTE)
+                    )
         if sat and sat.get("p25") and sat.get("p75"):
             why = official(sat["source_url"], uni)
             if why or not (400 <= sat["p25"] <= sat["p75"] <= 1600):

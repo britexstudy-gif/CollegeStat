@@ -32,3 +32,5 @@ The current adapter maps admissions rate, undergraduate enrollment, and 150%-tim
 ## IPEDS extension
 
 Download the institution directory (HD), admissions (ADM), enrollment (EF), student financial aid (SFA), institutional characteristics/costs (IC), and graduation rate (GR) files for a deliberate survey year. Join by UNITID and inspect the annual dictionary, imputation flags, suppressed values, and cohort definitions before mapping. Do not load arbitrary CSV columns directly into canonical statistics. Feed reviewed mappings through the existing observation staging endpoint.
+
+See also [DATASET-REGISTER.md](DATASET-REGISTER.md): every source the catalogue uses or could use, with status.

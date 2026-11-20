@@ -13,11 +13,12 @@ import { JsonLd } from "@/components/seo/json-ld";
 import { buildBreadcrumbJsonLd, buildFaqJsonLd, buildUniversityJsonLd } from "@/lib/seo/json-ld";
 import { universityFaqEnglish } from "@/lib/university-faq";
 import { universityDescription, universityMetadata } from "@/lib/seo/metadata";
+import { requestLang } from "@/lib/request-lang";
 type Props = { params: Promise<{ slug: string }>; searchParams?: Promise<Record<string, string | string[] | undefined>>; routeBase?: string };
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const u = await publicUniversityForPage((await params).slug);
   if (!u) return { title: "University not found", robots: { index: false } };
-  return universityMetadata(u);
+  return universityMetadata(u, await requestLang());
 }
 export default async function Page({ params, searchParams, routeBase = "/university" }: Props) {
   const rawSlug = (await params).slug;
