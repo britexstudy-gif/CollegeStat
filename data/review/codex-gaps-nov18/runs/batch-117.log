@@ -1,0 +1,66 @@
+OpenAI Codex v0.169.0
+--------
+workdir: /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+model: gpt-6-luna
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: high
+reasoning summaries: none
+session id: 01a1ee9a-43c3-7731-bda4-d0bc266a193f
+--------
+user
+You are a careful admissions-data researcher. For each university below, find facts for an
+INTERNATIONAL applicant to a FIRST-YEAR BACHELOR'S degree starting in autumn 2027 (or the nearest
+published cycle). Use the live web. Rules:
+
+- Official sources only: the university's own website (its domain or subdomains), the national
+  application service (UCAS, Common App, OUAC, uni-assist, Studyinkorea, etc.) or a government
+  statistics office. Never use rankings sites, forums, agencies, Wikipedia or blogs.
+- Every value needs the exact page URL where you read it (source_url). If you could not verify a
+  value on an official page, leave it out (null or an empty list). Never guess or estimate.
+- english: the lowest overall score accepted for undergraduate entry, per test (IELTS Academic
+  overall, TOEFL iBT total, Duolingo, PTE). If programmes differ, give the general/lowest common
+  university minimum and say so in detail (e.g. "6.5 overall, no band below 6.0; some
+  programmes higher").
+- tuition: the yearly tuition for international (non-EU / overseas) undergraduates in the local
+  currency. If it varies by programme give amount = lowest and amount_max = highest, and the
+  academic_year the fee applies to (e.g. "2026/27"). If tuition is free, amount = 0.
+- application_fee: for international first-year applicants, local currency.
+- deadlines: the main 2027-entry first-year deadlines (ISO date YYYY-MM-DD) with the route
+  (e.g. "Common App, Regular Decision", "UCAS", "university portal"). Only dates actually
+  published; if only the 2026-entry date is published, include it and put "2026 entry" in title.
+- sat: policy for international applicants; p25/p75 total SAT only if the university publishes
+  them (Common Data Set or admissions profile).
+- acceptance_rate: only if officially published (CDS, admissions statistics page).
+- notes: one short line on anything important (e.g. "Foundation year required for 11-year
+  school certificates"), else "".
+
+Spend effort on the facts students need most: English minimum, tuition, deadlines. Keep each
+detail under 160 characters. Return only the JSON that matches the schema; use each
+university's id exactly as given.
+
+Universities:
+- id: b93a484a-b1a0-5b2b-a025-9a067767a56b | Lebanese American University | Beirut, LB | http://www.lau.edu.lb/
+- id: 81c31622-df3c-5354-bb18-612aa79a63cf | Hiroshima University | Hiroshima, JP | http://www.hiroshima-u.ac.jp/
+- id: 44458433-4eb0-5724-86b1-f75137ac3c17 | Kyungpook National University | Daegu, KR | https://knu.ac.kr
+- id: 6c498d0b-fbdf-59c8-9aa2-776be5789bea | Duy Tan University | Da Nang, VN | https://duytan.edu.vn/
+codex
+I’m checking each university’s official admissions and fee pages for the latest published international first-year cycle, then I’ll return only verified fields with direct URLs.
+web search: 
+web search: site:lau.edu.lb undergraduate international admission English proficiency tuition 2026 2027 application deadline ...
+web search: 
+web search: site:lau.edu.lb/apply undergraduate admission requirements IELTS TOEFL Duolingo 2026 application fee ...
+web search: 
+web search: site:en.knu.ac.kr/admission/foreign01 "2026" "Application Period" freshman ...
+web search: 
+web search: site:en.knu.ac.kr/admission/foreign "2026 Fall" freshman admission ...
+web search: 
+web search: site:en.knu.ac.kr/download "2026" "Admission Guide" international undergraduate freshman ...
+web search: 
+web search: '17,000'
+codex
+{"universities":[{"id":"b93a484a-b1a0-5b2b-a025-9a067767a56b","english":[{"test":"IELTS","minimum":5.5,"detail":"IELTS Academic; lower scores place students in intensive English before major courses.","source_url":"https://www.lau.edu.lb/apply/english-exam-scores.php"},{"test":"TOEFL iBT","minimum":55,"detail":"Internet-based TOEFL; lower scores place students in intensive English before major courses.","source_url":"https://www.lau.edu.lb/apply/english-exam-scores.php"},{"test":"Duolingo","minimum":95,"detail":"Lower scores place students in intensive English before major courses.","source_url":"https://www.lau.edu.lb/apply/english-exam-scores.php"}],"tuition":null,"application_fee":null,"deadlines":[{"title":"Fall 2027 Phase I","due_at":"2026-11-01","route":"University portal","source_url":"https://www.lau.edu.lb/apply/sro/"},{"title":"Fall 2027 Phase II","due_at":"2027-01-15","route":"University portal","source_url":"https://www.lau.edu.lb/apply/sro/"}],"sat":null,"acceptance_rate":null,"notes":"Undergraduate tuition is published per term, not as an annual total."},{"id":"81c31622-df3c-5354-bb18-612aa79a63cf","english":[{"test":"IELTS","minimum":5.5,"detail":"Academic Module; 4.0 is accepted for the on-campus November selection route.","source_url":"https://www.hiroshima-u.ac.jp/system/files/287620/Application%20Guide%20for%20Admissions%20in%202027_A_0.pdf"},{"test":"TOEFL iBT","minimum":42,"detail":"The on-campus November selection route accepts 42; overseas routes require 72.","source_url":"https://www.hiroshima-u.ac.jp/index.php/system/files/297533/00_R9_IGS_ApplicationGuide2026_Nov_oncampus.pdf"}],"tuition":{"amount":535800,"amount_max":null,"currency":"JPY","period":"year","academic_year":"2027/28","detail":"Full-year tuition for the Integrated Global Studies undergraduate program; fee stated as valid in April 2026.","source_url":"https://www.hiroshima-u.ac.jp/system/files/287620/Application%20Guide%20for%20Admissions%20in%202027_A_0.pdf"},"application_fee":{"amount":17000,"currency":"JPY","source_url":"https://www.hiroshima-u.ac.jp/system/files/287620/Application%20Guide%20for%20Admissions%20in%202027_A_0.pdf"},"deadlines":[{"title":"April 2027 admission, overseas July selection","due_at":"2026-06-26","route":"UCARO and mailed documents; overseas interview selection","source_url":"https://www.hiroshima-u.ac.jp/system/files/287620/Application%20Guide%20for%20Admissions%20in%202027_A_0.pdf"},{"title":"April 2027 admission, on-campus November selection","due_at":"2026-10-07","route":"UCARO and mailed documents; on-campus interview selection","source_url":"https://www.hiroshima-u.ac.jp/index.php/system/files/297533/00_R9_IGS_ApplicationGuide2026_Nov_oncampus.pdf"}],"sat":null,"acceptance_rate":null,"notes":"IGS requires 12 years of school education or an equivalent qualification."},{"id":"44458433-4eb0-5724-86b1-f75137ac3c17","english":[],"tuition":null,"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"The available official international freshman page contains a 2018 application schedule and tuition rates; current figures were not verified."},{"id":"6c498d0b-fbdf-59c8-9aa2-776be5789bea","english":[],"tuition":null,"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":""}]}
+tokens used
+70,526
+{"universities":[{"id":"b93a484a-b1a0-5b2b-a025-9a067767a56b","english":[{"test":"IELTS","minimum":5.5,"detail":"IELTS Academic; lower scores place students in intensive English before major courses.","source_url":"https://www.lau.edu.lb/apply/english-exam-scores.php"},{"test":"TOEFL iBT","minimum":55,"detail":"Internet-based TOEFL; lower scores place students in intensive English before major courses.","source_url":"https://www.lau.edu.lb/apply/english-exam-scores.php"},{"test":"Duolingo","minimum":95,"detail":"Lower scores place students in intensive English before major courses.","source_url":"https://www.lau.edu.lb/apply/english-exam-scores.php"}],"tuition":null,"application_fee":null,"deadlines":[{"title":"Fall 2027 Phase I","due_at":"2026-11-01","route":"University portal","source_url":"https://www.lau.edu.lb/apply/sro/"},{"title":"Fall 2027 Phase II","due_at":"2027-01-15","route":"University portal","source_url":"https://www.lau.edu.lb/apply/sro/"}],"sat":null,"acceptance_rate":null,"notes":"Undergraduate tuition is published per term, not as an annual total."},{"id":"81c31622-df3c-5354-bb18-612aa79a63cf","english":[{"test":"IELTS","minimum":5.5,"detail":"Academic Module; 4.0 is accepted for the on-campus November selection route.","source_url":"https://www.hiroshima-u.ac.jp/system/files/287620/Application%20Guide%20for%20Admissions%20in%202027_A_0.pdf"},{"test":"TOEFL iBT","minimum":42,"detail":"The on-campus November selection route accepts 42; overseas routes require 72.","source_url":"https://www.hiroshima-u.ac.jp/index.php/system/files/297533/00_R9_IGS_ApplicationGuide2026_Nov_oncampus.pdf"}],"tuition":{"amount":535800,"amount_max":null,"currency":"JPY","period":"year","academic_year":"2027/28","detail":"Full-year tuition for the Integrated Global Studies undergraduate program; fee stated as valid in April 2026.","source_url":"https://www.hiroshima-u.ac.jp/system/files/287620/Application%20Guide%20for%20Admissions%20in%202027_A_0.pdf"},"application_fee":{"amount":17000,"currency":"JPY","source_url":"https://www.hiroshima-u.ac.jp/system/files/287620/Application%20Guide%20for%20Admissions%20in%202027_A_0.pdf"},"deadlines":[{"title":"April 2027 admission, overseas July selection","due_at":"2026-06-26","route":"UCARO and mailed documents; overseas interview selection","source_url":"https://www.hiroshima-u.ac.jp/system/files/287620/Application%20Guide%20for%20Admissions%20in%202027_A_0.pdf"},{"title":"April 2027 admission, on-campus November selection","due_at":"2026-10-07","route":"UCARO and mailed documents; on-campus interview selection","source_url":"https://www.hiroshima-u.ac.jp/index.php/system/files/297533/00_R9_IGS_ApplicationGuide2026_Nov_oncampus.pdf"}],"sat":null,"acceptance_rate":null,"notes":"IGS requires 12 years of school education or an equivalent qualification."},{"id":"44458433-4eb0-5724-86b1-f75137ac3c17","english":[],"tuition":null,"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"The available official international freshman page contains a 2018 application schedule and tuition rates; current figures were not verified."},{"id":"6c498d0b-fbdf-59c8-9aa2-776be5789bea","english":[],"tuition":null,"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":""}]}

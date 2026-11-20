@@ -1,0 +1,626 @@
+[
+  {
+    "tool": "recommend",
+    "arguments": {
+      "brief": "Professional university discovery startup with warm editorial landing, forest green accents, campus photography, compact SaaS dashboard and modern account sign in. Inspiration from AI tools, education technology, software and service companies.",
+      "pageType": "landing",
+      "mode": "light",
+      "detail": "standard",
+      "maxTokens": 3500
+    },
+    "recommendation": {
+      "brief": "Professional university discovery startup with warm editorial landing, forest green accents, campus photography, compact SaaS dashboard and modern account sign in. Inspiration from AI tools, education technology, software and service companies.",
+      "filters": {
+        "pageType": "landing",
+        "mode": "light"
+      },
+      "pick": {
+        "macrostructure": {
+          "slug": "bento-grid",
+          "label": "Bento Grid"
+        },
+        "rationale": "Picked Bento Grid - most common macrostructure (3 of the top hits) among the hybrid-search results for the brief. The shortlist carries the runners-up with their exemplar counts; take one of those instead if it fits the brief better."
+      },
+      "shortlist": [
+        {
+          "slug": "bento-grid",
+          "label": "Bento Grid",
+          "hits": 3,
+          "exemplars": 8
+        },
+        {
+          "slug": "split-studio",
+          "label": "Split Studio",
+          "hits": 3,
+          "exemplars": 5
+        },
+        {
+          "slug": "specimen",
+          "label": "Specimen",
+          "hits": 2,
+          "exemplars": 3
+        }
+      ],
+      "evidence": {
+        "sites": 24,
+        "paperBand": {
+          "consensus": "light",
+          "share": 0.79,
+          "spread": {
+            "light": 0.79,
+            "mid": 0.21
+          }
+        },
+        "displayClass": {
+          "consensus": "grotesk-sans",
+          "share": 0.75,
+          "spread": {
+            "grotesk-sans": 0.75,
+            "geometric-sans": 0.08,
+            "roman-serif": 0.13,
+            "system-native": 0.04
+          }
+        },
+        "accentHue": {
+          "consensus": "cool",
+          "share": 0.38,
+          "spread": {
+            "warm": 0.25,
+            "cool": 0.38,
+            "chromatic-other": 0.33,
+            "neutral": 0.04
+          }
+        },
+        "faces": [
+          {
+            "family": "Youth",
+            "sites": 1
+          },
+          {
+            "family": "Twk Lausanne",
+            "sites": 1
+          },
+          {
+            "family": "FlatfileDiatype",
+            "sites": 1
+          },
+          {
+            "family": "Clarika",
+            "sites": 1
+          },
+          {
+            "family": "Concrette M-TRIAL",
+            "sites": 1
+          },
+          {
+            "family": "PP Kyoto-b14c6ebb315b725b",
+            "sites": 1
+          },
+          {
+            "family": "Roobertvf",
+            "sites": 1
+          },
+          {
+            "family": "NeueHelvetica55Roman",
+            "sites": 1
+          }
+        ],
+        "anchors": [
+          "#fb924d",
+          "#6c3cf2",
+          "#f96b08",
+          "#fb6b26",
+          "#df8c0c",
+          "#70bc84",
+          "#f5d312",
+          "#9c564a"
+        ],
+        "outliers": [
+          {
+            "slug": "hay-com",
+            "axes": "mid / grotesk-sans / chromatic-other",
+            "differsOn": [
+              "paperBand",
+              "accentHue"
+            ]
+          },
+          {
+            "slug": "classcreator-io",
+            "axes": "light / roman-serif / chromatic-other",
+            "differsOn": [
+              "displayClass",
+              "accentHue"
+            ]
+          },
+          {
+            "slug": "geex-arts-com",
+            "axes": "light / roman-serif / neutral",
+            "differsOn": [
+              "displayClass",
+              "accentHue"
+            ]
+          },
+          {
+            "slug": "bandcamp-com",
+            "axes": "light / system-native / warm",
+            "differsOn": [
+              "displayClass",
+              "accentHue"
+            ]
+          },
+          {
+            "slug": "brightful-me",
+            "axes": "light / geometric-sans / warm",
+            "differsOn": [
+              "displayClass",
+              "accentHue"
+            ]
+          }
+        ],
+        "note": "Measured over 24 sites. The category's strongest pull is paper band = light at 79%. This is the gravity to take a position on, with it or against it - not a template to match."
+      },
+      "images": "https://0nme3pk5am3urwa9.public.blob.vercel-storage.com/captures/<slug>/hero.1440.webp (also full.1440, thumb.384, mobile.384; get_screen returns exact URLs)",
+      "exemplars": [
+        {
+          "slug": "canvasapp-com",
+          "title": "Supernova AI (formerly Canvas) - The easiest way to understand your startup",
+          "northstar": "Cool, crisp data visualizations floating in a spacious, subtly shifting digital ether.",
+          "autopsy": "FOLD: Nav: left logo (diamond icon), center links \"Copilot Docs Pricing\", right \"Talk to sales\" text + \"Sign up \u2192\" pill button. Headline: \"Scale your analytics without hiring\", sentence case, centered, ~48px, 1 line. Subhead: \"The first data tool that you'll love. And a team of experts to get you started.\" centered, 2 lines, \"get you started\" in purple. CTA: none visible below subhead. Hero: product screenshot of analytics dashboard (sidebar nav, \"Top customers\" bar chart), occupies bottom ~55% of viewport, centered, floating with subtle shadow. Headline floats in upper ~35%; visual dominates.\n\nTYPE: Sans, geometric, medium weight, slightly condensed (TWK Lausanne). Body: Inter, ~16px. Scale jump ~3:1. Tight tracking on headline.\n\nCOLOR: #9bb4f2 gradient background (top-left to center), #1f3354 text, #6c3cf2 accent on \"get you started\", \"Sign up\" button, \"Share\" button in screenshot.\n\nSIGNATURE: Soft radial blue gradient (#9bb4f2) bleeding from upper-left behind headline, transitioning to white, with product screenshot emerging from bottom edge with rounded corners and shadow.",
+          "palette": [
+            "#6c3cf2",
+            "#9bb4f2",
+            "#1f3354",
+            "#7085a5",
+            "#9db3c9"
+          ],
+          "fonts": [
+            "TWK Lausanne",
+            "Inter"
+          ],
+          "mode": "light",
+          "macro": "bento-grid",
+          "axes": "light / grotesk-sans / cool / Twk Lausanne",
+          "tags": "minimalism, swiss, monochrome \u00b7 saas, ai \u00b7 technical, cold, calm \u00b7 hero-with-cta, sticky-nav, feature-trio"
+        },
+        {
+          "slug": "goodeggs-com",
+          "title": "Organic Grocery Delivery - Meal solutions and grocery items from the Deli, Bakery, Pantry, and more.",
+          "northstar": "Warm ochre and soft cream, humanist sans shaping spacious, airy culinary storytelling.",
+          "autopsy": "FOLD: Nav top bar: logo left, utility links center-left, delivery location + account right. Secondary nav: category pills in horizontal scroll. Hero: full-width carousel of food photography (~60% viewport height), left arrow, pagination dots. Right-side promo card overlays hero edge: \"Customize your Good Eggs experience\" with $15 offer, \"Dismiss\" and \"TAKE THE QUIZ\" pill buttons, \"SHOP SUMMER SIDES\" link below. Headline absent from hero; promo card carries messaging. Below: \"Featured Categories\" left-aligned, 5-column grid of category cards with bottom labels. Balance: image-dominant, promo card as anchored sidebar intrusion.\n\nTYPE: Sans-serif (Graphik) throughout. Body medium weight, tight leading. Promo headline ~24px bold, body ~14px. Category labels ~12px. Minimal scale jump, utilitarian hierarchy.\n\nCOLOR: Background #ffffff; text near-black; accent #a54324 (terracotta) on location pin, promo underline; buttons #0f5a3c dark green fill with white text; #df8c0c (honey) in food imagery; warm neutrals #dbd1bd, #a59574 in UI.\n\nSIGNATURE: Promotional card as persistent overlay panel breaking into hero carousel edge, with dual-dismiss options (text link + green CTA pill) and secondary text link below.",
+          "palette": [
+            "#df8c0c",
+            "#f3d0a0",
+            "#a54324",
+            "#a59574",
+            "#dbd1bd"
+          ],
+          "fonts": [
+            "Concrette M-TRIAL",
+            "Graphik"
+          ],
+          "mode": "light",
+          "macro": "bento-grid",
+          "axes": "light / grotesk-sans / chromatic-other (~68) / Concrette M-TRIAL",
+          "tags": "minimalism, editorial \u00b7 food-beverage, ecommerce \u00b7 warm, calm, soft \u00b7 hero-with-cta, bento-grid, feature-trio, logo-cloud, testimonial-wall, newsletter-signup, blog-grid"
+        },
+        {
+          "slug": "classcreator-io",
+          "title": "Class Creator | Student Placement Software",
+          "northstar": "Warm, muted teal and ochre, clean sans-serif, spacious digital workshop.",
+          "palette": [
+            "#14b494",
+            "#f0b471",
+            "#29b499",
+            "#a68b6e",
+            "#cba490"
+          ],
+          "fonts": [
+            "Inter Sans-serif"
+          ],
+          "mode": "light",
+          "macro": "bento-grid",
+          "axes": "light / roman-serif / chromatic-other (~174) / Inter Sans-serif",
+          "tags": "minimalism, swiss, monochrome \u00b7 saas, education \u00b7 calm, technical, warm \u00b7 hero-with-cta, logo-cloud, feature-trio, sticky-nav"
+        },
+        {
+          "slug": "brightful-me",
+          "title": "Games and activities for remote team building and virtual events",
+          "northstar": "Warm, playful pastels float on a clean, generous white canvas, fostering joyful collaboration.",
+          "palette": [
+            "#f55d2b",
+            "#f29879",
+            "#bc0c0c",
+            "#767a98",
+            "#a2adbc"
+          ],
+          "fonts": [
+            "gilroy__boldbold",
+            "gilroy_regularregular"
+          ],
+          "mode": "light",
+          "macro": "bento-grid",
+          "axes": "light / geometric-sans / warm / gilroy__boldbold",
+          "tags": "playful, minimalism \u00b7 saas, gaming \u00b7 playful, warm, calm \u00b7 hero-with-cta, feature-trio, logo-cloud, sticky-nav"
+        },
+        {
+          "slug": "campaignmonitor-com",
+          "title": "Campaign Monitor: Email Marketing Platform & Services",
+          "northstar": "Cool, geometric blues and muted purples; crisp, clean sans-serif; spacious, purposeful layout.",
+          "palette": [
+            "#7c5be9",
+            "#9c7cfc",
+            "#270f74",
+            "#a59f52",
+            "#b6b1cc"
+          ],
+          "fonts": [
+            "Graphik Web"
+          ],
+          "mode": "light",
+          "macro": "bento-grid",
+          "axes": "light / grotesk-sans / cool / Graphik Web",
+          "tags": "minimalism, swiss, brutalism \u00b7 saas \u00b7 calm, serious, technical \u00b7 hero-with-cta, logo-cloud, feature-trio, sticky-nav"
+        }
+      ],
+      "referenceComponents": [
+        {
+          "id": "bento",
+          "type": "features",
+          "label": "Bento",
+          "macro": "Bento Grid",
+          "note": "Six tiles, irregular spans. The largest carries the lead idea; smaller ones extend it.",
+          "about": "Bento - six tiles, irregular spans. The largest tile carries the lead idea; the smaller ones extend it. Spans break the 3x2 default AI grids reach for. No icons, no emoji decoration - typography supplies the variety."
+        },
+        {
+          "id": "tier-bento",
+          "type": "pricing",
+          "label": "Tier bento",
+          "macro": "Irregular bento",
+          "note": "Lead tier spans 2\u00d72; supporting tiers smaller. Visual hierarchy expresses the recommendation.",
+          "about": "Tiered bento - pricing tiers laid out as a bento grid: the lead tier spans two columns + two rows; supporting tiers are smaller. Breaks the 3-equal-cards default; the visual hierarchy expresses the recommended tier."
+        }
+      ],
+      "paletteSuggestion": [
+        "#6c3cf2",
+        "#9bb4f2",
+        "#1f3354",
+        "#7085a5",
+        "#9db3c9"
+      ],
+      "heroGuidance": "Compose the hero to fit the FIRST VIEWPORT (~1280\u00d7800, min-height:100svh): nav, headline, supporting line, primary CTA and any hero visual must be COMPLETE above the fold. Size display type to 2-3 balanced lines within that height - an oversized wordmark or heading eating the viewport is the single most common failure. Modest top spacing, not a tall empty gap.",
+      "spacingGuidance": "Below the fold, two separate systems. VERTICAL: 80-160px between sections (measured median for the biggest step: 96px); under ~64px two sections read as one crammed block. Pick ONE rhythm (e.g. clamp(72px, 10vw, 140px)) and use it at every seam. HORIZONTAL: a centered max-width column with symmetric padding-inline (24px minimum on mobile) so copy never touches the edge; full-bleed is for backgrounds. Declare them separately - a container's padding SHORTHAND (.wrap{padding:0 32px}) outranks section{padding:96px 0} on the same element and silently zeroes the rhythm, so give the container padding-inline only. Verify: a mid-page section's computed block padding must not be 0px.",
+      "htmlNote": "Writing a standalone HTML file? Include <meta charset=\"utf-8\">. These exemplars lean on typographic glyphs (middle dots, arrows, true quotes) and render as mojibake without it.",
+      "tip": "referenceComponents are archetype notes; get_reference_jsx({type,id}) for one's source. Study each exemplar's autopsy + palette + fonts for palette, type and density - the first two carry a fold-by-fold autopsy, the rest a northstar plus get_screen. Then honour heroGuidance and spacingGuidance. Budget: this call plus one or two searches and get_screen on the 3-5 references you keep is a complete study."
+    }
+  },
+  {
+    "tool": "search_screens",
+    "arguments": {
+      "query": "modern software service product with clean dashboard preview and clear typography",
+      "industry": "saas",
+      "limit": 3,
+      "detail": "full",
+      "maxTokens": 2400
+    },
+    "recommendation": {
+      "query": "modern software service product with clean dashboard preview and clear typography",
+      "filters": {
+        "industry": "saas"
+      },
+      "count": 3,
+      "tip": "Every row carries its fold autopsy. Hero complete inside 1280x800; 80-160px between sections; copy in a centered padded column.",
+      "images": "https://0nme3pk5am3urwa9.public.blob.vercel-storage.com/captures/<slug>/hero.1440.webp (also full.1440, thumb.384, mobile.384; get_screen returns exact URLs)",
+      "results": [
+        {
+          "slug": "cleanshot-com",
+          "title": "Cleanshot",
+          "northstar": "Crisp, cool tech - brutalist geometry, clean sans-serif, expansive white space.",
+          "autopsy": "FOLD: Nav fixed top, logo left (icon + \"CleanShot X\" wordmark), links center-right (Cloud, Changelog, Testimonials, License Manager, FAQ, Log in), pill CTA far right \"Buy now\". Headline left-aligned, 3 lines, sentence case: \"Capture your Mac's / screen like a pro.\" Supporting: blue lozenge above (\"Apple Silicon & macOS Tahoe ready!\"), two CTAs below headline (blue pill \"Buy now\", white pill with play icon \"How it works\"), guarantee link with chevron. Testimonial block: circular avatar, quote, name bold + company. Hero right: MacBook mockup showing app interface with annotations, play button overlay, occupies ~55% width, vertically centered against headline. Left text column ~40%, right visual ~55%, gap between.\n\nTYPE: Display: geometric sans, heavy weight (~800), tight tracking, large scale. Body: same family, regular weight, ~1:5 scale jump. Signature: lozenge badge in blue, all links and primary actions in #0f71fa.\n\nCOLOR: Background white (#ffffff), text near-black, accent #0f71fa (badge fill, primary button, \"Log in\" link, guarantee chevron, annotation markers in hero). No other palette colors visible in first viewport.\n\nSIGNATURE: Play-button CTA as white pill with black text and filled play triangle, paired beside saturated blue primary buy pill - dual-action hierarchy without equal visual weight.",
+          "palette": [
+            "#0f71fa",
+            "#1f7559",
+            "#cddffb",
+            "#4bad9e",
+            "#cdacb4"
+          ],
+          "fonts": [
+            "Inter"
+          ],
+          "mode": "light",
+          "macro": "feature-stack",
+          "axes": "light / grotesk-sans / cool / Inter",
+          "tags": "minimalism, brutalism, swiss \u00b7 saas \u00b7 technical, cold, calm \u00b7 hero-with-cta, logo-cloud, feature-trio"
+        },
+        {
+          "slug": "feedly-com",
+          "title": "Feedly",
+          "northstar": "Cool, spacious digital architecture - crisp sans-serif geometry on a muted, tranquil teal and gray field.",
+          "autopsy": "FOLD: Three equal-width vertical panels (Threat Intelligence black, Market Intelligence mint, News Reader white). Top nav: logo left, three text links center, \"Log in\" pill right. Each panel: small \"Team\"/\"Personal\" lozenge, stacked two-line headline left-aligned, 3-line supporting copy, two buttons (\"Get Started for Free\" filled, \"Learn More\" ghost), product screenshot below. No single hero visual - three panels split viewport. Headline and screenshot stack vertically 50/50 within each panel.\n\nTYPE: Display: geometric sans, medium weight, tight leading, sentence case. Body: same family, lighter weight, smaller. Scale jump ~3:1. No tracking quirks.\n\nCOLOR: #041424 text on #f2f7fc and mint (#b6beba-tinted); white text on black. Accent #35b555 on \"Team\" lozenge, \"Get Started for Free\" buttons, logo mark. #569e67 \"Personal\" lozenge.\n\nSIGNATURE: Three vertical product lanes with inverted color logic - black panel for security, mint for market, white for personal - each with identical structure but distinct palette temperature.",
+          "palette": [
+            "#35b555",
+            "#041424",
+            "#f2f7fc",
+            "#569e67",
+            "#b6beba"
+          ],
+          "fonts": [
+            "Aeonik Pro VF",
+            "InterVariable"
+          ],
+          "mode": "light",
+          "macro": "component-playground",
+          "axes": "light / grotesk-sans / chromatic-other (~148) / Aeonik Pro VF",
+          "tags": "minimalism, swiss, monochrome \u00b7 saas \u00b7 calm, serious, technical \u00b7 hero-with-cta, logo-cloud, feature-trio, sticky-nav"
+        },
+        {
+          "slug": "statsig-com",
+          "title": "Statsig",
+          "northstar": "Cool, spacious data visualization - crisp sans-serif, muted blues on stark, clean white.",
+          "autopsy": "FOLD: Top nav with logo left, dropdown links center, \"Sign In\" pill + \"Book a Live Demo\" dark pill right. Blue announcement bar below. Centered headline: \"Measure what ships. Ship what matters.\" 2 lines, large, sentence case. Supporting copy beneath, centered, 2 lines. Two CTAs: dark filled pill \"Create a free account\" + light outlined pill \"See how it works\". Hero visual: angled floating UI cards showing metrics dashboard with line charts, occupying lower ~45% of viewport, tilted 3D perspective. Headline sits in upper third; visual anchors bottom. Balanced vertical split.\n\nTYPE: Sans-serif display, medium weight, tight tracking, neutral grotesque (Inter-like). Body sans, ~16px. Scale jump ~3:1. Sentence case throughout. No all-caps.\n\nCOLOR: Background #f5f5f5 warm gray. Text near-black. Accent #347cec on announcement bar. Dark pills near #0b3679. No accent in headline.\n\nSIGNATURE: Floating 3D-perspective dashboard cards with soft shadow, rotated ~15\u00b0 backward, overlapping at bottom edge.",
+          "palette": [
+            "#347cec",
+            "#0b3679",
+            "#7bacf4",
+            "#968182",
+            "#c6d2d8"
+          ],
+          "fonts": [
+            "Geist"
+          ],
+          "mode": "light",
+          "macro": "feature-stack",
+          "axes": "light / geometric-sans / cool / Geist",
+          "tags": "minimalism, swiss, brutalism \u00b7 developer-tools, saas \u00b7 technical, cold, calm \u00b7 hero-with-cta, logo-cloud, feature-trio"
+        }
+      ]
+    }
+  },
+  {
+    "tool": "search_screens",
+    "arguments": {
+      "query": "AI productivity tool calm clean editorial interface",
+      "industry": "ai",
+      "mode": "light",
+      "limit": 3,
+      "detail": "full",
+      "maxTokens": 2400
+    },
+    "recommendation": {
+      "query": "AI productivity tool calm clean editorial interface",
+      "filters": {
+        "industry": "ai",
+        "mode": "light"
+      },
+      "count": 3,
+      "tip": "Every row carries its fold autopsy. Hero complete inside 1280x800; 80-160px between sections; copy in a centered padded column.",
+      "images": "https://0nme3pk5am3urwa9.public.blob.vercel-storage.com/captures/<slug>/hero.1440.webp (also full.1440, thumb.384, mobile.384; get_screen returns exact URLs)",
+      "results": [
+        {
+          "slug": "openai-com",
+          "title": "Openai",
+          "northstar": "Soft pastel gradients and clean sans-serifs evoke a serene, technically refined space.",
+          "autopsy": "FOLD: Nav: top edge, left-aligned logo \"OpenAI\" + 6 text links + right-aligned \"Log in\" dropdown + black pill \"Try ChatGPT\". Hero: left 70% is massive soft-focus flower image with \"GPT-5.5\" centered in white sans-serif, ~2 lines tall; below image, left-aligned \"Introducing GPT-5.5\" in black, smaller \"Product\" label + \"15 min read\" metadata. Right 30%: stacked cards - top is magazine cover \"Convergence\" with lizard in hat, labeled \"Introducing ChatGPT Images 2.0\" / \"Product\"; bottom is 2\u00d72 grid of white rounded squares on #d4d4ec blue, each with icon + name (\"Spark\", \"Scout\", \"Angle\", \"Tally\").\n\nTYPE: Display: geometric sans, heavy weight, tight tracking, flat-top \"5\". Body: same family, lighter weight. ~5:1 scale jump.\n\nCOLOR: Background white; text near-black; accent #e37421 on flower, #0f488c on magazine, #d4d4ec card panel. Accent lands on image content, not UI.\n\nSIGNATURE: Product name treated as centered watermark inside photographic hero, not above it.",
+          "palette": [
+            "#e37421",
+            "#0f488c",
+            "#fba48a",
+            "#7c7342",
+            "#d4d4ec"
+          ],
+          "fonts": [
+            "OpenAI Sans"
+          ],
+          "mode": "light",
+          "macro": "marquee-hero",
+          "axes": "light / grotesk-sans / warm / OpenAI Sans",
+          "tags": "minimalism, swiss, editorial \u00b7 ai \u00b7 calm, technical, soft \u00b7 hero-fullbleed, logo-cloud, feature-trio"
+        },
+        {
+          "slug": "chat-openai-com",
+          "title": "Chat Openai",
+          "northstar": "Cool, clean code-cave: subtle monochromatic gradients, crisp sans-serif, vast quiet space.",
+          "autopsy": "FOLD: Nav top-left: OpenAI logo + \"ChatGPT\" dropdown. Top-right: \"Log in\" pill button + \"Sign up for free\" text link. Left sidebar: nav items (New chat, Search chats, Images, Apps, Deep research) with icons, plus bottom links (See plans and pricing, Settings, Help) and \"Get responses tailored to you\" promo with \"Log in\" outline button. Center: headline \"What's on the agenda today?\" centered, single line. Below: wide rounded search input with \"+\" icon, \"Ask anything\" placeholder, microphone icon, \"Voice\" button. No hero visual. Layout split ~20% sidebar, ~80% white space with centered content cluster.\n\nTYPE: Sans-serif throughout, clean geometric. Headline medium weight, ~24px. Body/sidebar small, ~14px. Minimal scale jump, uniform spacing. Sentence case.\n\nCOLOR: Background white #ffffff; text dark #424242; secondary text/ icons #7f7f7f; borders #bcbcbc. Accent: black fill on \"Log in\" pill, green on \"New chat\" active state.\n\nSIGNATURE: Extreme whitespace ratio - vast empty center with single search bar as solitary focal point, sidebar compressed to minimal functional strip.",
+          "palette": [
+            "#7f7f7f",
+            "#424242",
+            "#bcbcbc",
+            "#7c7c7c",
+            "#bcbcbc"
+          ],
+          "fonts": [],
+          "mode": "light",
+          "macro": "specimen",
+          "axes": "light / system-native / neutral",
+          "tags": "minimalism, monochrome \u00b7 ai \u00b7 calm, technical, cold \u00b7 sticky-nav, hero-with-cta, logo-cloud"
+        },
+        {
+          "slug": "e2b-dev",
+          "title": "E2b",
+          "northstar": "Crisp, stark grayscale geometry - modular grids whisper of advanced computation.",
+          "autopsy": "FOLD: Top nav split: left links (PRODUCT, PRICING, RESOURCES, ENTERPRISE, BOOK A CALL), center gear icon logo, right links (CAREERS, social icons, star, SIGN UP black pill, SIGN IN). Below: orange \"NEW\" badge + \"JOIN STARTUPS PROGRAM\" microcopy. Headline \"AI SANDBOXES FOR DEEP RESEARCH AGENTS\" in two lines, black highlight bar behind second line, centered. Subhead: \"Open-source, secure environment with real-world tools for enterprise-grade agents.\" Two CTAs: black filled \"START FOR FREE\" and white outlined \"VIEW DOCS\". Trusted-by logo row. Hero: three wireframe browser windows showing sandbox UI, stacked depth, bottom-cropped, occupying lower ~40%. Headline dominates upper half; visuals anchor lower half.\n\nTYPE: Display: bold condensed sans, all-caps, tight tracking. Body: clean sans, ~16px. Scale jump ~3:1. No lowercase in headline.\n\nCOLOR: Background #ffffff. Text #000000. Accent #fc9720 on NEW badge only. Secondary grays #7c7c7c, #bcbcbc for subhead/borders. Black buttons.\n\nSIGNATURE: Second headline line with full-width black inverse bar (white text on black rectangle), creating stamped/highlighted typographic block.",
+          "palette": [
+            "#fc9720",
+            "#824701",
+            "#fcca9c",
+            "#7c7c7c",
+            "#bcbcbc"
+          ],
+          "fonts": [
+            "Ibm Plex Mono 700",
+            "Arial"
+          ],
+          "mode": "light",
+          "macro": "component-playground",
+          "axes": "light / mono / chromatic-other (~63) / Ibm Plex Mono 700",
+          "tags": "minimalism, monochrome, brutalism, futurist, editorial \u00b7 developer-tools, ai \u00b7 technical, cold, serious \u00b7 hero-fullbleed, logo-cloud, feature-trio, sticky-nav"
+        }
+      ]
+    }
+  },
+  {
+    "tool": "search_screens",
+    "arguments": {
+      "query": "education learning courses student university edtech",
+      "industry": "education",
+      "limit": 3,
+      "detail": "full",
+      "maxTokens": 2400
+    },
+    "recommendation": {
+      "query": "education learning courses student university edtech",
+      "filters": {
+        "industry": "education"
+      },
+      "count": 3,
+      "tip": "Every row carries its fold autopsy. Hero complete inside 1280x800; 80-160px between sections; copy in a centered padded column.",
+      "images": "https://0nme3pk5am3urwa9.public.blob.vercel-storage.com/captures/<slug>/hero.1440.webp (also full.1440, thumb.384, mobile.384; get_screen returns exact URLs)",
+      "results": [
+        {
+          "slug": "classcreator-io",
+          "title": "Class Creator | Student Placement Software",
+          "northstar": "Warm, muted teal and ochre, clean sans-serif, spacious digital workshop.",
+          "autopsy": "FOLD: Nav spans top edge, logo left (teal dot-cluster icon + \"CLASS CREATOR\" stacked wordmark). Center: \"How It Works\", \"Resources\" (both with chevrons), \"Pricing\", \"Contact Us\". Right: \"LOGIN\" in white pill-outline, \"SIGN UP\" in solid teal pill. Headline: \"Hassle Free / Class List Creation\", sentence-case sans, ~48px, 2 lines, left-aligned, with orange rule underline beneath second line. Sub: \"Save time. Reduce stress. Build better classes.\" Two CTAs: teal filled pill \"Watch Demo\" with play-circle icon, white outlined pill \"Free Demo School\". Hero visual: monitor+laptop mockup showing spreadsheet UI, floating over two overlapping organic blobs (teal upper-left, orange lower-right), occupies right ~55% of viewport, vertically centered. Left text block balances right visual at ~45/55.\n\nTYPE: Display: geometric sans, heavy weight, tight tracking, sentence case. Body: same family, light weight, small, loose leading. Scale jump ~4:1.\n\nCOLOR: Background #f4f4f4 warm gray; text near-black; accent #14b494 (buttons, logo, blob); secondary accent #f0b471 (rule, blob). Accent lands on primary CTA fill, logo, upper blob; orange on underline, lower blob.\n\nSIGNATURE: Two organic amorphous blobs (teal behind, orange beneath) as sole decorative elements, cradling device mockups with zero border or shadow container - flat illustration masquerading as depth.",
+          "palette": [
+            "#14b494",
+            "#f0b471",
+            "#29b499",
+            "#a68b6e",
+            "#cba490"
+          ],
+          "fonts": [
+            "Inter Sans-serif"
+          ],
+          "mode": "light",
+          "macro": "bento-grid",
+          "axes": "light / roman-serif / chromatic-other (~174) / Inter Sans-serif",
+          "tags": "minimalism, swiss, monochrome \u00b7 saas, education \u00b7 calm, technical, warm \u00b7 hero-with-cta, logo-cloud, feature-trio, sticky-nav"
+        },
+        {
+          "slug": "babbel-com",
+          "title": "Babbel",
+          "northstar": "Warm, inviting citrus hues meet open, airy typography for a globally curious feel.",
+          "autopsy": "FOLD: Nav: top edge, logo left (+Babbel in orange), center \"For businesses\", language selector, \"Log in\" text link, orange pill \"Sign up\" right. Headline: \"Which language do you want to learn?\" - \"language\" italicized in orange, rest black, ~3 lines, left-aligned, large. Below: two-column grid of 6 language pills (rounded rectangles, flags left, text right): Spanish (Mexico), Spanish (Spain), French, German, Italian, More. Right half: collage of overlapping rounded-corner cards - top large photo of people at outdoor table, smaller cards layered showing coffee culture, weekend plans with picnic basket, airplane wing, \"new\" text on yellow, landscape. Orange trust bar at fold bottom: \"Over 25 million subscriptions sold!\" centered white text. Headline+controls left ~45%, visual collage right ~55%, meeting near vertical center.\n\nTYPE: Headline: high-contrast transitional serif, regular weight, italic for \"language\". Body/pills: clean sans, medium weight. Scale jump: ~4:1 serif display to sans UI. Sentence case throughout.\n\nCOLOR: Background: warm off-white (#fcdc65 tint or neutral cream). Text: near-black. Accent #f94c05: logo, italic \"language\", \"Sign up\" button, trust bar. Secondary accents: #628a9c teal card, #c7abad mauve card, #fcdc65 yellow \"new\" card. #84210c dark rust: small text on mauve card.\n\nSIGNATURE: The language selector pills as rounded rectangles with circular flags - not chips or buttons, but soft oblong lozenges with generous padding, arranged in a neat 2\u00d73 grid that feels like a form already begun rather than a menu to parse.",
+          "palette": [
+            "#f94c05",
+            "#84210c",
+            "#fcdc65",
+            "#628a9c",
+            "#c7abad"
+          ],
+          "fonts": [
+            "Feature Text LC",
+            "Times",
+            "Graphik Babbel LCG"
+          ],
+          "mode": "light",
+          "macro": "feature-stack",
+          "axes": "light / grotesk-sans / warm / Feature Text LC",
+          "tags": "minimalism, editorial, playful \u00b7 education \u00b7 warm, soft, calm \u00b7 bento-grid, hero-with-cta, feature-trio"
+        },
+        {
+          "slug": "codecademy-com",
+          "title": "Codecademy",
+          "northstar": "Warm, structured digital space: clean lines, muted golds, and confident, open sans-serif type.",
+          "autopsy": "FOLD: Top yellow banner with countdown timer left, promo text center, \"Join Pro\" button right, close X far right. Below: dark nav with \"codecademy\" logo left, menu links center, search + \"Log In\" + yellow \"Sign Up\" right. Hero: large rounded card with photo of four people in meeting occupying ~60% width, right side bleeds to edge. Overlaid left: \"Develop your\" in white on dark rounded rectangle, \"/team\" in cyan on black rounded rectangle with cursor. Below card: dark panel with Google sign-up button, \"OR\" divider, yellow \"More ways to sign up\" button, plus body copy right. Small promo modal overlays bottom-right of photo. Headline left, visual right, balanced ~40/60.\n\nTYPE: Sans display, bold, wide, clean; body sans lighter. Large jump: headline ~48px, body ~16px. Cyan monospace slash and pipe for \"/team\" code effect.\n\nCOLOR: #fbd204 yellow banner and CTA buttons; #fbe35c paler yellow \"Sign Up\"; near-black #10162F backgrounds; white text; cyan #4FE0E8 accent on \"/team\" and \"Join Pro\" link.\n\nSIGNATURE: Cyan monospace \"/team\" with blinking cursor pipe inside dark rounded pill, creating live-typing code effect against the warm human photograph.",
+          "palette": [
+            "#fbd204",
+            "#d4b40b",
+            "#fbe35c",
+            "#ae7051",
+            "#d4b69d"
+          ],
+          "fonts": [
+            "Apercu"
+          ],
+          "mode": "dark",
+          "macro": "feature-stack",
+          "axes": "mid / grotesk-sans / chromatic-other (~95) / Apercu",
+          "tags": "minimalism, brutalism, swiss, dark-mode \u00b7 education \u00b7 technical, calm, warm \u00b7 hero-with-cta, sticky-nav, logo-cloud"
+        }
+      ]
+    }
+  },
+  {
+    "tool": "search_screens",
+    "arguments": {
+      "query": "professional service creative studio editorial typography",
+      "industry": "agency",
+      "mode": "light",
+      "limit": 3,
+      "detail": "full",
+      "maxTokens": 2400
+    },
+    "recommendation": {
+      "query": "professional service creative studio editorial typography",
+      "filters": {
+        "industry": "agency",
+        "mode": "light"
+      },
+      "count": 3,
+      "tip": "Every row carries its fold autopsy. Hero complete inside 1280x800; 80-160px between sections; copy in a centered padded column.",
+      "images": "https://0nme3pk5am3urwa9.public.blob.vercel-storage.com/captures/<slug>/hero.1440.webp (also full.1440, thumb.384, mobile.384; get_screen returns exact URLs)",
+      "results": [
+        {
+          "slug": "nbstudio-co-uk--about",
+          "title": "Nbstudio Co Uk \u00b7 About",
+          "northstar": "Cool, structured geometry - muted terracotta and deep charcoal, precise sans serif clarity.",
+          "autopsy": "FOLD: Nav top-left, horizontal: \"NB\" logo, \"WORK\", \"ABOUT\", \"THINK\", \"CONTACT\". Headline H1 left-aligned, 2 lines, ~15% viewport height: \"Defy Convention / Create Change\". Body copy below, ~40% width, 5 lines visible starting \"NB is a team of designers and strategists in London\". No CTA visible in viewport. No hero visual - pure white space dominates right 60%. Headline and text occupy left 40% only. Balance is extreme asymmetry: content cluster vs. void.\n\nTYPE: Display: grotesque sans, heavy weight (~800), tight tracking, tight leading (line-height ~0.9). Body: same family, regular weight, ~14px. Scale jump: ~12:1. All caps nav, sentence case body.\n\nCOLOR: Background #ffffff. Text #000000. Accent palette unused in visible viewport - no buttons, links, or rules shown. Clean monochrome.\n\nSIGNATURE: Aggressive left-margin isolation of all content in exactly 40% width, treating the remaining 60% as deliberate negative space rather than awaiting an image.",
+          "palette": [
+            "#fb745c",
+            "#571c1b",
+            "#f87b6b",
+            "#a65c5c",
+            "#d5b6b1"
+          ],
+          "fonts": [
+            "noigrotesk-light"
+          ],
+          "mode": "light",
+          "macro": "split-studio",
+          "axes": "light / grotesk-sans / warm / noigrotesk-light",
+          "tags": "minimalism, editorial, swiss \u00b7 agency \u00b7 serious, calm, technical \u00b7 sticky-nav, hero-with-cta, logo-cloud"
+        },
+        {
+          "slug": "letude-group",
+          "title": "L'\u00c9tude - Modular Creative Studio",
+          "northstar": "Cool, stark geometry; crisp sans serif, muted crimson and deep indigo.",
+          "autopsy": "FOLD: Top-left logo (abstract E, blue). Top-center vertical image strip (~25% width, full height), showing gloved hands reaching; \"THE WORK\" in white caps overlays center of strip. Giant \"L'\u00c9TUDE\" spans full width, black, centered vertically, with image strip cutting through the letterforms. Top-right: definition text (\"\u00e9tude \u2022 noun \u2022 le \u02c8g\u028ad\") with bullet, plus circular \"INFO\" badge. Bottom: three caps labels (MODULAR / CREATIVE / STUDIO) spaced evenly. Blue paragraph below. Right-edge vertical social icons.\n\nTYPE: Display: geometric sans, ultra-bold, tight tracking, massive scale. Body: same family, medium weight, ~14px. Scale jump ~15:1. All caps signatures throughout. Acute accent on \u00c9.\n\nCOLOR: Background #ec3c2c (coral-red). Text black and #062694 (deep blue). Accent #062694 on paragraph, INFO circle, social icons, definition bullet. No buttons.\n\nSIGNATURE: Vertical image strip bisecting giant headline letterforms, creating physical depth - photographic content literally cuts through typography.",
+          "palette": [
+            "#ec3c2c",
+            "#f48e85",
+            "#062694",
+            "#488490",
+            "#a3a6a7"
+          ],
+          "fonts": [
+            "Indivisible"
+          ],
+          "mode": "light",
+          "macro": "split-studio",
+          "axes": "mid / grotesk-sans / warm / Indivisible",
+          "tags": "minimalism, editorial, swiss \u00b7 agency \u00b7 cold, serious, technical \u00b7 hero-fullbleed, logo-cloud, sticky-nav"
+        },
+        {
+          "slug": "14islands-com",
+          "title": "14islands | Creative design & technology agency",
+          "northstar": "Crisp, stark geometry - cold gray type floats on expansive, echoing white.",
+          "autopsy": "FOLD: Nav left: \"14islands\" wordmark; center: WORK, SERVICES, CULTURE, JOURNAL, AI; right: CONTACT. Headline: \"Design\" (black) / \"&\" (gray, dropped baseline, smaller) / \"Technology\" (black), sentence case, left-aligned, massive ~15vw, 3 lines. Supporting copy: \"CREATIVE AGENCY / WE DESIGN AND BUILD PREMIUM DIGITAL PRODUCTS, BRANDS, AND EXPERIENCES.\" small caps, centered above headline. No CTA visible. Hero visual: dark video/image strip, ~15% viewport height, bottom edge, bleeds full width. Headline dominates upper 60%; visual anchors bottom.\n\nTYPE: BentonSans: display light/regular, wide, geometric; body same family, tiny. ~12:1 scale jump. All caps body; sentence case display.\n\nCOLOR: #c2c2c2 background; #452c1d or near-black text; #c59461 accent (unseen this viewport, palette hint only).\n\nSIGNATURE: The dropped ampersand \"&\" in muted gray, vertically offset between two massive black words, creating a three-line typographic lockup with intentional baseline fracture.",
+          "palette": [
+            "#c59461",
+            "#e4b782",
+            "#452c1d",
+            "#87674e",
+            "#c2c2c2"
+          ],
+          "fonts": [
+            "BentonSans"
+          ],
+          "mode": "light",
+          "macro": "split-studio",
+          "axes": "mid / grotesk-sans / chromatic-other (~67) / BentonSans",
+          "tags": "minimalism, editorial, monochrome, brutalism \u00b7 agency, portfolio \u00b7 serious, cold, technical \u00b7 hero-fullbleed, logo-cloud, sticky-nav"
+        }
+      ]
+    }
+  }
+]

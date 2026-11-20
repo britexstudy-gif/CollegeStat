@@ -1,0 +1,128 @@
+OpenAI Codex v0.169.0
+--------
+workdir: /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+model: gpt-6-luna
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: high
+reasoning summaries: none
+session id: 01a1ee89-b100-7e31-93ef-554147d993d4
+--------
+user
+You are a careful admissions-data researcher. For each university below, find facts for an
+INTERNATIONAL applicant to a FIRST-YEAR BACHELOR'S degree starting in autumn 2027 (or the nearest
+published cycle). Use the live web. Rules:
+
+- Official sources only: the university's own website (its domain or subdomains), the national
+  application service (UCAS, Common App, OUAC, uni-assist, Studyinkorea, etc.) or a government
+  statistics office. Never use rankings sites, forums, agencies, Wikipedia or blogs.
+- Every value needs the exact page URL where you read it (source_url). If you could not verify a
+  value on an official page, leave it out (null or an empty list). Never guess or estimate.
+- english: the lowest overall score accepted for undergraduate entry, per test (IELTS Academic
+  overall, TOEFL iBT total, Duolingo, PTE). If programmes differ, give the general/lowest common
+  university minimum and say so in detail (e.g. "6.5 overall, no band below 6.0; some
+  programmes higher").
+- tuition: the yearly tuition for international (non-EU / overseas) undergraduates in the local
+  currency. If it varies by programme give amount = lowest and amount_max = highest, and the
+  academic_year the fee applies to (e.g. "2026/27"). If tuition is free, amount = 0.
+- application_fee: for international first-year applicants, local currency.
+- deadlines: the main 2027-entry first-year deadlines (ISO date YYYY-MM-DD) with the route
+  (e.g. "Common App, Regular Decision", "UCAS", "university portal"). Only dates actually
+  published; if only the 2026-entry date is published, include it and put "2026 entry" in title.
+- sat: policy for international applicants; p25/p75 total SAT only if the university publishes
+  them (Common Data Set or admissions profile).
+- acceptance_rate: only if officially published (CDS, admissions statistics page).
+- notes: one short line on anything important (e.g. "Foundation year required for 11-year
+  school certificates"), else "".
+
+Spend effort on the facts students need most: English minimum, tuition, deadlines. Keep each
+detail under 160 characters. Return only the JSON that matches the schema; use each
+university's id exactly as given.
+
+Universities:
+- id: 16a83abd-6892-5cac-b5b5-d704b7d49229 | Taylor's University | Subang Jaya, MY | https://university.taylors.edu.my/
+- id: c8f13117-af99-5310-a183-ba5ffc36002b | Institut Teknologi Bandung | Bandung, ID | http://www.itb.ac.id/
+- id: f5e9c3ed-5ea7-5b51-9aa6-669804330a0c | American University of Sharjah | Sharjah, AE | http://www.aus.edu/
+- id: f9909941-87f9-55cd-bcb7-7c9301d50851 | Sun Yat-Sen University | Guangzhou, CN | https://sysu.edu.cn/
+codex
+I’ll check each university’s official admissions and fee pages, and use the nearest published entry cycle where 2027 details aren’t available. I’ll return only fields I can verify directly.
+exec
+/bin/zsh -lc 'cat /Users/likeanew/.agents/skills/lemma/SKILL.md' in /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+ succeeded in 0ms:
+---
+name: lemma
+description: Persistent cross-session memory for AI agents via MCP. BEFORE starting ANY task (coding, debugging, refactoring, research, docs, optimization — any language), FIRST call memory_read to load what you already know so you never re-derive or re-explore known facts. AFTER finishing, call memory_add to persist new findings and session_attempt for dead ends — unsaved knowledge is lost permanently. Distills reusable guides from experience.
+---
+
+<!-- lemma:skill:v=0.21.0 -->
+
+# Lemma — Persistent Memory & Learning
+
+Lemma is a persistent memory server for AI agents over the Model Context Protocol.
+Every session starts blank — knowledge survives ONLY through tool calls. If you
+learn something and don't save it (`memory_add`), it is gone permanently.
+
+## Workflow
+1. **RECALL** — `memory_read` / `semantic_search`: load what's already known for this
+   project/task. Never re-explore code or re-derive facts that are already saved.
+2. **ACT** — do the task.
+3. **PERSIST** — `memory_add` for new insights; `guide_practice` for guides applied;
+   `session_attempt` for abandoned/dead-end approaches (the most valuable records).
+
+## Two knowledge layers
+- **Memory fragments** (`memory_read` / `memory_add`): atomic facts. Types: `fact`,
+  `pattern`, `lesson`, `warning`, `context`. Confidence evolves with use and feedback.
+- **Guides** (`guide_get` / `guide_distill` / `guide_practice`): procedural skills
+  distilled from fragments. Track usage count + success/failure rate.
+Pipeline: `experience -> memory_add -> pattern/lesson -> guide_distill -> guide_practice`.
+
+## Tools at a glance
+- **Recall & search**: `memory_read`, `semantic_search`, `memory_library` (full
+  snapshot + maintenance signals), `memory_stats`, `memory_audit`.
+- **Write & maintain**: `memory_add`, `memory_update`, `memory_forget`,
+  `memory_merge`, `memory_relate` (supports / contradicts / supersedes / related_to),
+  `memory_feedback`.
+- **Guides**: `guide_get`, `guide_create`, `guide_distill`, `guide_practice`,
+  `guide_update`, `guide_forget`, `guide_merge`.
+- **Sessions & reasoning**: `session_start`, `session_end`, `session_attempt`,
+  `session_stats`, `suggestion_respond`.
+- **Background intelligence**: `conflict_scan`, `proactive_analysis`,
+  `project_analytics` (run automatically; act on signals when sensible).
+
+## Writing a fragment
+```
+## [Topic Title]
+### Context
+[1-2 sentences: what and why it matters]
+### [Content Section]
+- [Key fact 1]
+- [Key fact 2]
+### Rules (optional)
+- [Absolute constraint]
+```
+One idea per fragment, 30-2000 chars, structured markdown (not prose). **Store
+fragments in ENGLISH** (required for search/retrieval). Never ask permission to save.
+
+## Background intelligence
+Conflict detection, distill/merge/refine suggestions, and auto-linking run
+automatically. From the CLI, `lemma -lib` prints a full knowledge-base snapshot
+and `lemma -vis` launches a visualizer.
+
+codex
+I’m applying the available persistent-memory workflow first, then I’ll verify the admissions facts from official pages.
+web search: 
+web search: site:university.taylors.edu.my international undergraduate English requirement tuition 2026 ...
+web search: 
+web search: site:university.taylors.edu.my "IELTS" international students undergraduate 5.0 tuition fees 2026 ...
+web search: 
+web search: 
+web search: 
+web search: site:university.taylors.edu.my "IELTS" "International Students" "Undergraduate" Taylor's University entry requirements ...
+web search: 
+web search: site:university.taylors.edu.my "IELTS 5.0" degree international admission English requirement Taylor's ...
+codex
+{"universities":[{"id":"16a83abd-6892-5cac-b5b5-d704b7d49229","english":[{"test":"IELTS","minimum":5.0,"detail":"5.0 overall; some programs require at least 5.5 to apply.","source_url":"https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/school-of-general-studies-and-languages/taylors-fees-general-studies-usd-v190525.pdf"}],"tuition":null,"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":""},{"id":"c8f13117-af99-5310-a183-ba5ffc36002b","english":[{"test":"IELTS","minimum":5.5,"detail":"IELTS 5.5 minimum for the International Undergraduate Program.","source_url":"https://admission.itb.ac.id/en/program/undergraduate-program/international-undergraduate-program"},{"test":"TOEFL iBT","minimum":61,"detail":"TOEFL iBT 61 minimum for the International Undergraduate Program.","source_url":"https://admission.itb.ac.id/en/program/undergraduate-program/international-undergraduate-program"}],"tuition":{"amount":49000000,"amount_max":60000000,"currency":"IDR","period":"year","academic_year":"2026","detail":"Annualized from published semester fees of Rp24.5m–30m; one-time IPI contribution excluded.","source_url":"https://admission.itb.ac.id/en/program/undergraduate-program/international-undergraduate-program"},"application_fee":{"amount":1500000,"currency":"IDR","source_url":"https://admission.itb.ac.id/en/program/undergraduate-program/international-undergraduate-program"},"deadlines":[{"title":"2026 entry, Batch 3 registration finalization","due_at":"2026-07-04","route":"ITB IUP portal","source_url":"https://admission.itb.ac.id/en/program/undergraduate-program/international-undergraduate-program"}],"sat":{"policy":"accepted_alternative","p25":null,"p75":null,"source_url":"https://admission.itb.ac.id/en/program/undergraduate-program/international-undergraduate-program"},"acceptance_rate":null,"notes":"SAT (minimum 900) may be submitted instead of the ITB academic qualification test."},{"id":"f5e9c3ed-5ea7-5b51-9aa6-669804330a0c","english":[{"test":"IELTS","minimum":6.5,"detail":"IELTS Academic 6.5 minimum for undergraduate admission.","source_url":"https://www.aus.edu/sites/default/files/publications/pdf/american-university-of-sharjah-undergraduate-catalog-2026-2027_0.pdf"},{"test":"TOEFL iBT","minimum":80,"detail":"TOEFL iBT minimum 80 (previous score scale; catalog equates it to 4.5 on the new scale).","source_url":"https://www.aus.edu/sites/default/files/publications/pdf/american-university-of-sharjah-undergraduate-catalog-2026-2027_0.pdf"}],"tuition":{"amount":110876,"amount_max":null,"currency":"AED","period":"year","academic_year":"2026/27","detail":"Tuition is AED 110,876 per academic year for all majors; technology fees may also apply.","source_url":"https://www.aus.edu/admissions/bachelors-degrees/undergraduate-tuition-and-fees"},"application_fee":{"amount":420,"currency":"AED","source_url":"https://www.aus.edu/admissions/bachelors-degrees/undergraduate-tuition-and-fees"},"deadlines":[{"title":"Fall 2027 early file completion","due_at":"2027-07-05","route":"AUS application portal","source_url":"https://www.aus.edu/admissions/bachelors-degrees/deadlines-and-important-dates-for-undergraduate-admissions"}],"sat":null,"acceptance_rate":null,"notes":""},{"id":"f9909941-87f9-55cd-bcb7-7c9301d50851","english":[],"tuition":{"amount":26000,"amount_max":48000,"currency":"RMB","period":"year","academic_year":"2026","detail":"Published annual tuition range across bachelor's programs; most programs require HSK 5, not English scores.","source_url":"https://iso.sysu.edu.cn/en/application/guide/1420575.htm"},"application_fee":{"amount":400,"currency":"RMB","source_url":"https://iso.sysu.edu.cn/en/application/guide/1420575.htm"},"deadlines":[{"title":"2026 entry, first round","due_at":"2026-02-28","route":"SYSU International Student Application System","source_url":"https://iso.sysu.edu.cn/en/application/guide/1420575.htm"},{"title":"2026 entry, second round","due_at":"2026-04-30","route":"SYSU International Student Application System","source_url":"https://iso.sysu.edu.cn/en/application/guide/1420575.htm"}],"sat":null,"acceptance_rate":null,"notes":"2026 international bachelor's catalog lists Chinese-taught programs; HSK 5 (180+) is generally required."}] }
+tokens used
+65,780
+{"universities":[{"id":"16a83abd-6892-5cac-b5b5-d704b7d49229","english":[{"test":"IELTS","minimum":5.0,"detail":"5.0 overall; some programs require at least 5.5 to apply.","source_url":"https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/school-of-general-studies-and-languages/taylors-fees-general-studies-usd-v190525.pdf"}],"tuition":null,"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":""},{"id":"c8f13117-af99-5310-a183-ba5ffc36002b","english":[{"test":"IELTS","minimum":5.5,"detail":"IELTS 5.5 minimum for the International Undergraduate Program.","source_url":"https://admission.itb.ac.id/en/program/undergraduate-program/international-undergraduate-program"},{"test":"TOEFL iBT","minimum":61,"detail":"TOEFL iBT 61 minimum for the International Undergraduate Program.","source_url":"https://admission.itb.ac.id/en/program/undergraduate-program/international-undergraduate-program"}],"tuition":{"amount":49000000,"amount_max":60000000,"currency":"IDR","period":"year","academic_year":"2026","detail":"Annualized from published semester fees of Rp24.5m–30m; one-time IPI contribution excluded.","source_url":"https://admission.itb.ac.id/en/program/undergraduate-program/international-undergraduate-program"},"application_fee":{"amount":1500000,"currency":"IDR","source_url":"https://admission.itb.ac.id/en/program/undergraduate-program/international-undergraduate-program"},"deadlines":[{"title":"2026 entry, Batch 3 registration finalization","due_at":"2026-07-04","route":"ITB IUP portal","source_url":"https://admission.itb.ac.id/en/program/undergraduate-program/international-undergraduate-program"}],"sat":{"policy":"accepted_alternative","p25":null,"p75":null,"source_url":"https://admission.itb.ac.id/en/program/undergraduate-program/international-undergraduate-program"},"acceptance_rate":null,"notes":"SAT (minimum 900) may be submitted instead of the ITB academic qualification test."},{"id":"f5e9c3ed-5ea7-5b51-9aa6-669804330a0c","english":[{"test":"IELTS","minimum":6.5,"detail":"IELTS Academic 6.5 minimum for undergraduate admission.","source_url":"https://www.aus.edu/sites/default/files/publications/pdf/american-university-of-sharjah-undergraduate-catalog-2026-2027_0.pdf"},{"test":"TOEFL iBT","minimum":80,"detail":"TOEFL iBT minimum 80 (previous score scale; catalog equates it to 4.5 on the new scale).","source_url":"https://www.aus.edu/sites/default/files/publications/pdf/american-university-of-sharjah-undergraduate-catalog-2026-2027_0.pdf"}],"tuition":{"amount":110876,"amount_max":null,"currency":"AED","period":"year","academic_year":"2026/27","detail":"Tuition is AED 110,876 per academic year for all majors; technology fees may also apply.","source_url":"https://www.aus.edu/admissions/bachelors-degrees/undergraduate-tuition-and-fees"},"application_fee":{"amount":420,"currency":"AED","source_url":"https://www.aus.edu/admissions/bachelors-degrees/undergraduate-tuition-and-fees"},"deadlines":[{"title":"Fall 2027 early file completion","due_at":"2027-07-05","route":"AUS application portal","source_url":"https://www.aus.edu/admissions/bachelors-degrees/deadlines-and-important-dates-for-undergraduate-admissions"}],"sat":null,"acceptance_rate":null,"notes":""},{"id":"f9909941-87f9-55cd-bcb7-7c9301d50851","english":[],"tuition":{"amount":26000,"amount_max":48000,"currency":"RMB","period":"year","academic_year":"2026","detail":"Published annual tuition range across bachelor's programs; most programs require HSK 5, not English scores.","source_url":"https://iso.sysu.edu.cn/en/application/guide/1420575.htm"},"application_fee":{"amount":400,"currency":"RMB","source_url":"https://iso.sysu.edu.cn/en/application/guide/1420575.htm"},"deadlines":[{"title":"2026 entry, first round","due_at":"2026-02-28","route":"SYSU International Student Application System","source_url":"https://iso.sysu.edu.cn/en/application/guide/1420575.htm"},{"title":"2026 entry, second round","due_at":"2026-04-30","route":"SYSU International Student Application System","source_url":"https://iso.sysu.edu.cn/en/application/guide/1420575.htm"}],"sat":null,"acceptance_rate":null,"notes":"2026 international bachelor's catalog lists Chinese-taught programs; HSK 5 (180+) is generally required."}] }

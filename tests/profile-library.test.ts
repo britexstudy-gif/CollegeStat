@@ -3,15 +3,15 @@ import assert from "node:assert/strict";
 import { globalCatalogue } from "../server/global-catalogue";
 import { rankingTable } from "../server/ranking-table";
 import { universityRanks } from "../lib/ranking-highlights";
-test("full ARWU table retains national labels and pagination", () => {
-  const table = rankingTable(new URLSearchParams("provider=arwu"));
+test("full ARWU table retains national labels and pagination", async () => {
+  const table = await rankingTable(new URLSearchParams("provider=arwu"));
   assert.equal(table.total, 1000);
   assert.equal(table.year, 2026);
   assert.equal(table.complete, true);
   assert.equal(table.pages, 42);
   assert.equal(table.rows[0].nationalRank, "1");
   assert.equal(
-    rankingTable(new URLSearchParams("provider=arwu&page=42")).rows.length,
+    (await rankingTable(new URLSearchParams("provider=arwu&page=42"))).rows.length,
     16,
   );
 });

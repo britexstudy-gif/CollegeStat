@@ -1,0 +1,807 @@
+{
+  "schema_version": 1,
+  "reviewed_at": "2026-10-16",
+  "status": "explicit_native_primary_source_review",
+  "records": [
+    {
+      "university_id": "11111111-1111-4111-8111-111111111111",
+      "section": "costs",
+      "fact": {
+        "title": "2026–27 undergraduate budget before aid",
+        "body": "Stanford lists USD 67,731 tuition and USD 97,545 total estimated student budget for 2026–27, with travel varying separately. New first-year and transfer students also pay USD 525 orientation and USD 250 document fees.",
+        "scope": "Typical full-time dependent undergraduate for the academic year; allowances are estimates and the amount is before financial aid.",
+        "reporting_period": "2026–2027",
+        "source_url": "https://financialaid.stanford.edu/undergrad/budget/",
+        "checked_at": "2026-10-16",
+        "verification_status": "verified"
+      },
+      "source_review": {
+        "method": "Supervising agent read the exact primary-source text and checked the value, period, population and limiting conditions; agent output is a research lead, not evidence.",
+        "receipt_file": "data/review/university-enrichment-oct16/agent-fact-source-receipts.json",
+        "receipt_url": "https://financialaid.stanford.edu/undergrad/budget/",
+        "sha256": "718db23185336121f6d073524db9a2c928329a5d21bf94f6973877ca72ca5d51",
+        "retrieved_at": "2026-10-16T03:11:24.342519+00:00",
+        "evidence_terms": [
+          "67,731",
+          "97,545",
+          "2026-2027",
+          "525",
+          "250",
+          "Travel Varies"
+        ]
+      }
+    },
+    {
+      "university_id": "11111111-1111-4111-8111-111111111111",
+      "section": "admissions",
+      "fact": {
+        "title": "English fluency; optional test submission",
+        "body": "Stanford does not require an English proficiency exam. Applicants may submit one voluntarily; fluency in English remains a prerequisite for admission.",
+        "scope": "International undergraduate applicants; separate from ACT/SAT requirements.",
+        "reporting_period": null,
+        "source_url": "https://admission.stanford.edu/apply/international/",
+        "checked_at": "2026-10-16",
+        "verification_status": "verified"
+      },
+      "source_review": {
+        "method": "Supervising agent read the exact primary-source text and checked the value, period, population and limiting conditions; agent output is a research lead, not evidence.",
+        "receipt_file": "data/review/university-enrichment-oct16/agent-fact-source-receipts.json",
+        "receipt_url": "https://admission.stanford.edu/apply/international/",
+        "sha256": "7f8edd2ee3d1a1c03d2e2ed2b4979f2a99a2c4a431ce22c7788377ab4fb6c4c2",
+        "retrieved_at": "2026-10-16T03:11:24.342358+00:00",
+        "evidence_terms": [
+          "English",
+          "not require",
+          "fluency"
+        ]
+      }
+    },
+    {
+      "university_id": "ae117645-e24c-5269-8ed1-b5b826e53932",
+      "section": "admissions",
+      "fact": {
+        "title": "Computer Science: programme-specific offer level",
+        "body": "The Computer Science course lists a minimum A-level offer of A*A*A, or IB 41–42 points with 776 at Higher Level. Mathematics and further-mathematics conditions also apply; a College can set a higher offer.",
+        "scope": "Computer Science undergraduate course for 2027 entry or deferred 2028; these are not university-wide entry grades.",
+        "reporting_period": "2027 entry / deferred 2028",
+        "source_url": "https://www.undergraduate.study.cam.ac.uk/courses/computer-science-ba-hons-meng",
+        "checked_at": "2026-10-16",
+        "verification_status": "verified"
+      },
+      "source_review": {
+        "method": "Supervising agent read the exact primary-source text and checked the value, period, population and limiting conditions; agent output is a research lead, not evidence.",
+        "receipt_file": "data/review/university-enrichment-oct16/agent-fact-source-receipts.json",
+        "receipt_url": "https://www.undergraduate.study.cam.ac.uk/courses/computer-science-ba-hons-meng",
+        "sha256": "27d17377a425e203bf1e3a55bc1320d2cae0d5f3561199a16410fd20560337e0",
+        "retrieved_at": "2026-10-16T03:11:25.274857+00:00",
+        "evidence_terms": [
+          "A*A*A",
+          "41-42",
+          "776",
+          "Mathematics",
+          "Further Mathematics"
+        ]
+      }
+    },
+    {
+      "university_id": "99fbcf31-606d-5dac-880e-83ca25acd942",
+      "section": "costs",
+      "fact": {
+        "title": "2026–27 on-campus undergraduate costs",
+        "body": "Caltech lists USD 68,574 tuition and USD 93,225 direct costs for full-time undergraduates living in Caltech-owned housing. Books and personal-expense estimates add USD 5,397. Health insurance is a separate cost unless comparable coverage qualifies for a waiver.",
+        "scope": "Nine-month 2026–27 undergraduate budget; on-campus scenario, before financial aid.",
+        "reporting_period": "2026–27",
+        "source_url": "https://www.finaid.caltech.edu/costs",
+        "checked_at": "2026-10-16",
+        "verification_status": "verified"
+      },
+      "source_review": {
+        "method": "Supervising agent read the exact primary-source text and checked the value, period, population and limiting conditions; agent output is a research lead, not evidence.",
+        "receipt_file": "data/review/university-enrichment-oct16/agent-fact-source-receipts.json",
+        "receipt_url": "https://www.finaid.caltech.edu/costs",
+        "sha256": "2a4de8da07f0ad3a3d3e447c07ba0ec515f84994896870a406991796877f250a",
+        "retrieved_at": "2026-10-16T03:11:30.336980+00:00",
+        "evidence_terms": [
+          "68,574",
+          "93,225",
+          "1,428",
+          "3,969",
+          "2026-27",
+          "Caltech-owned housing"
+        ]
+      }
+    },
+    {
+      "university_id": "99fbcf31-606d-5dac-880e-83ca25acd942",
+      "section": "admissions",
+      "fact": {
+        "title": "First-year application components",
+        "body": "Caltech’s first-year checklist includes the application, SAT or ACT, recommendations, school report and transcripts. Review the separate academic-preparation and international-applicant rules as well.",
+        "scope": "First-year undergraduate application checklist; programme preparation and language conditions remain separate.",
+        "reporting_period": null,
+        "source_url": "https://www.admissions.caltech.edu/apply/first-year-applicants/application-requirements",
+        "checked_at": "2026-10-16",
+        "verification_status": "verified"
+      },
+      "source_review": {
+        "method": "Supervising agent read the exact primary-source text and checked the value, period, population and limiting conditions; agent output is a research lead, not evidence.",
+        "receipt_file": "data/review/university-enrichment-oct16/agent-fact-source-receipts.json",
+        "receipt_url": "https://www.admissions.caltech.edu/apply/first-year-applicants/application-requirements",
+        "sha256": "014f4d188da0531c5b7b160b0f60ff0220e4512967d9e155b6538f2c0906aca3",
+        "retrieved_at": "2026-10-16T03:11:29.336903+00:00",
+        "evidence_terms": [
+          "SAT",
+          "ACT",
+          "transcript",
+          "Letters of Recommendation"
+        ]
+      }
+    },
+    {
+      "university_id": "b37d730b-421c-5ed6-a807-3d66e7ca21f7",
+      "section": "costs",
+      "fact": {
+        "title": "2026–27 tuition depends on residency and faculty",
+        "body": "HKU lists annual tuition of HKD 47,000 for local students, HKD 224,000 for non-local students in its listed non-STEM faculties, and HKD 249,000 for non-local students in listed STEM faculties and schools, including the STEM fee.",
+        "scope": "2026–27 undergraduate cohort; tuition only, with local status and STEM classification defined by the source.",
+        "reporting_period": "2026–2027 cohort",
+        "source_url": "https://www.hku.hk/en/admission-aid/tuition-fee-scholarships",
+        "checked_at": "2026-10-16",
+        "verification_status": "verified"
+      },
+      "source_review": {
+        "method": "Supervising agent read the exact primary-source text and checked the value, period, population and limiting conditions; agent output is a research lead, not evidence.",
+        "receipt_file": "data/review/university-enrichment-oct16/agent-fact-source-receipts.json",
+        "receipt_url": "https://www.hku.hk/en/admission-aid/tuition-fee-scholarships",
+        "sha256": "ef375bcba2f6a0afff401d82edc1c20b2c7a1aa0034f1bd7b48f5d710cc5ca0b",
+        "retrieved_at": "2026-10-16T03:11:31.274572+00:00",
+        "evidence_terms": [
+          "47,000",
+          "224,000",
+          "249,000",
+          "2026-2027 cohort",
+          "inclusive of STEM Fee"
+        ]
+      }
+    },
+    {
+      "university_id": "894119e1-40c1-5589-8677-e1ed97388e59",
+      "section": "admissions",
+      "fact": {
+        "title": "Required testing has a hardship route",
+        "body": "Penn requires SAT or ACT scores for applicants. Applicants facing hardship can request a testing waiver through the application; self-reported scores are accepted initially, with official scores required if admitted.",
+        "scope": "First-year and transfer applicants; a hardship waiver is distinct from a general test-optional policy.",
+        "reporting_period": null,
+        "source_url": "https://admissions.upenn.edu/how-to-apply/first-year-applicants/application-requirements",
+        "checked_at": "2026-10-16",
+        "verification_status": "verified"
+      },
+      "source_review": {
+        "method": "Supervising agent read the exact primary-source text and checked the value, period, population and limiting conditions; agent output is a research lead, not evidence.",
+        "receipt_file": "data/review/university-enrichment-oct16/agent-fact-source-receipts.json",
+        "receipt_url": "https://admissions.upenn.edu/how-to-apply/first-year-applicants/application-requirements",
+        "sha256": "cd5cb5411ff10e67347aeab100676754ece573b6ee6fd18ba8cb864249f32416",
+        "retrieved_at": "2026-10-16T03:11:33.075813+00:00",
+        "evidence_terms": [
+          "SAT",
+          "ACT",
+          "hardship",
+          "waiver",
+          "self-reported"
+        ]
+      }
+    },
+    {
+      "university_id": "894119e1-40c1-5589-8677-e1ed97388e59",
+      "section": "costs",
+      "fact": {
+        "title": "Plan for billed and indirect costs",
+        "body": "Penn’s cost of attendance includes billed tuition, fees, housing and dining, plus indirect expenses such as books, supplies, transportation and personal expenses. Use the undergraduate budget and financial-aid estimate together.",
+        "scope": "Undergraduate cost-planning framework; this note is not a single tuition or net-price amount.",
+        "reporting_period": null,
+        "source_url": "https://admissions.upenn.edu/affording-penn/understanding-your-costs",
+        "checked_at": "2026-10-16",
+        "verification_status": "verified"
+      },
+      "source_review": {
+        "method": "Supervising agent read the exact primary-source text and checked the value, period, population and limiting conditions; agent output is a research lead, not evidence.",
+        "receipt_file": "data/review/university-enrichment-oct16/agent-fact-source-receipts.json",
+        "receipt_url": "https://admissions.upenn.edu/affording-penn/understanding-your-costs",
+        "sha256": "52616b1ead4dba039b88e128db9acb90ddbe0a5316c5748bab3ea05a7e0091a6",
+        "retrieved_at": "2026-10-16T03:11:33.263153+00:00",
+        "evidence_terms": [
+          "cost of attendance",
+          "direct costs",
+          "indirect costs"
+        ]
+      }
+    },
+    {
+      "university_id": "8488d97e-a227-5fbd-b7b4-33a1194df723",
+      "section": "admissions",
+      "fact": {
+        "title": "First-year SAT or ACT requirement",
+        "body": "Cornell requires first-year applicants to submit SAT or ACT scores. Applicants may self-report them; enrolling students must verify them with official results. Transfer applicants follow a separate testing policy.",
+        "scope": "First-year undergraduate applicants; test scores alone do not determine admission.",
+        "reporting_period": null,
+        "source_url": "https://admissions.cornell.edu/policies/standardized-testing-policy",
+        "checked_at": "2026-10-16",
+        "verification_status": "verified"
+      },
+      "source_review": {
+        "method": "Supervising agent read the exact primary-source text and checked the value, period, population and limiting conditions; agent output is a research lead, not evidence.",
+        "receipt_file": "data/review/university-enrichment-oct16/agent-fact-source-receipts.json",
+        "receipt_url": "https://admissions.cornell.edu/policies/standardized-testing-policy",
+        "sha256": "e51e624a931e6b6ff07eae0f9aa349cf2cca5b469bb2b3df16a5e3dceca5bce3",
+        "retrieved_at": "2026-10-16T03:11:33.998231+00:00",
+        "evidence_terms": [
+          "First-year applicants are required",
+          "SAT or ACT",
+          "self-report",
+          "Transfer Applicants"
+        ]
+      }
+    },
+    {
+      "university_id": "8488d97e-a227-5fbd-b7b4-33a1194df723",
+      "section": "costs",
+      "fact": {
+        "title": "College and residency change the tuition rate",
+        "body": "Cornell distinguishes endowed colleges from New York State contract colleges. Contract-college undergraduate tuition also depends on New York residency, so the applicable college and residency must be selected before using a published budget.",
+        "scope": "Undergraduate tuition classification; this note does not assign one university-wide price.",
+        "reporting_period": null,
+        "source_url": "https://finaid.cornell.edu/cost-to-attend",
+        "checked_at": "2026-10-16",
+        "verification_status": "verified"
+      },
+      "source_review": {
+        "method": "Supervising agent read the exact primary-source text and checked the value, period, population and limiting conditions; agent output is a research lead, not evidence.",
+        "receipt_file": "data/review/university-enrichment-oct16/agent-fact-source-receipts.json",
+        "receipt_url": "https://finaid.cornell.edu/cost-to-attend",
+        "sha256": "77180ca9020b41b55cbb9e0719d4034e24d929f7bb0f24dee7f98aad81f1cd7a",
+        "retrieved_at": "2026-10-16T03:11:34.740925+00:00",
+        "evidence_terms": [
+          "Endowed Colleges",
+          "NY RESIDENTS",
+          "contract college"
+        ]
+      }
+    },
+    {
+      "university_id": "0a670c6d-e20a-527f-851b-e2c1306cce70",
+      "section": "admissions",
+      "fact": {
+        "title": "ACT or SAT is required",
+        "body": "Yale requires first-year and transfer applicants to include ACT or SAT scores. Scores can be self-reported at application stage; admitted students must provide matching official scores before enrolment.",
+        "scope": "First-year and transfer undergraduate applicants, as described on the reviewed testing page.",
+        "reporting_period": null,
+        "source_url": "https://admissions.yale.edu/standardized-testing",
+        "checked_at": "2026-10-16",
+        "verification_status": "verified"
+      },
+      "source_review": {
+        "method": "Supervising agent read the exact primary-source text and checked the value, period, population and limiting conditions; agent output is a research lead, not evidence.",
+        "receipt_file": "data/review/university-enrichment-oct16/agent-fact-source-receipts.json",
+        "receipt_url": "https://admissions.yale.edu/standardized-testing",
+        "sha256": "accee93f6ea5091af65fb3524ab3f170e1e250f14b7a2a7f70a6635df3fc66ac",
+        "retrieved_at": "2026-10-16T03:11:36.326977+00:00",
+        "evidence_terms": [
+          "first-year and transfer applicants",
+          "ACT or SAT",
+          "self-report",
+          "official scores"
+        ]
+      }
+    },
+    {
+      "university_id": "0a670c6d-e20a-527f-851b-e2c1306cce70",
+      "section": "costs",
+      "fact": {
+        "title": "2026–27 undergraduate tuition and living charges",
+        "body": "Yale’s estimated undergraduate cost table lists USD 72,500 tuition, USD 185 student activity fee, USD 12,080 housing and USD 9,520 food, plus books and personal-expense estimates. Eli Whitney students have separate charging rules.",
+        "scope": "2026–27 undergraduate estimated cost of attendance before financial aid; amounts shown are components, not net price.",
+        "reporting_period": "2026–27",
+        "source_url": "https://finaid.yale.edu/coa",
+        "checked_at": "2026-10-16",
+        "verification_status": "verified"
+      },
+      "source_review": {
+        "method": "Supervising agent read the exact primary-source text and checked the value, period, population and limiting conditions; agent output is a research lead, not evidence.",
+        "receipt_file": "data/review/university-enrichment-oct16/agent-fact-source-receipts.json",
+        "receipt_url": "https://finaid.yale.edu/coa",
+        "sha256": "e34efa50b7e0eebcb80c0ab69ae33cb9d6109257c20aafd6bda3592a47d3a673",
+        "retrieved_at": "2026-10-16T03:11:36.511997+00:00",
+        "evidence_terms": [
+          "2026-27",
+          "72,500",
+          "185",
+          "12,080",
+          "9,520",
+          "Eli Whitney"
+        ]
+      }
+    },
+    {
+      "university_id": "7deae08f-080e-56cd-8aa8-ca05c941f0cc",
+      "section": "admissions",
+      "fact": {
+        "title": "General taught-master’s academic standard",
+        "body": "CUHK’s general taught-master’s route normally requires a recognised bachelor’s degree with at least Second Class honours or an average grade of B, or an equivalent professional qualification. Individual programmes may impose further conditions.",
+        "scope": "General taught-master’s programmes other than EMBA; doctoral, research-master’s and professional routes have separate criteria.",
+        "reporting_period": null,
+        "source_url": "https://www.gs.cuhk.edu.hk/admissions/requirements",
+        "checked_at": "2026-10-16",
+        "verification_status": "verified"
+      },
+      "source_review": {
+        "method": "Supervising agent read the exact primary-source text and checked the value, period, population and limiting conditions; agent output is a research lead, not evidence.",
+        "receipt_file": "data/review/university-enrichment-oct16/agent-fact-source-receipts.json",
+        "receipt_url": "https://www.gs.cuhk.edu.hk/admissions/requirements",
+        "sha256": "1f5013354479ed6ec31e70108e06d60880c5527a246e4a89bc78fb197652c56f",
+        "retrieved_at": "2026-10-16T03:11:35.710276+00:00",
+        "evidence_terms": [
+          "Taught Master",
+          "Second Class",
+          "“B”",
+          "Executive Master"
+        ]
+      }
+    },
+    {
+      "university_id": "f5c17f3c-ac83-5193-8c71-641147ad926c",
+      "section": "admissions",
+      "fact": {
+        "title": "First-year applicants submit SAT or ACT",
+        "body": "Johns Hopkins requires first-year applicants to submit SAT or ACT results. The admissions office accepts self-reported scores for review and considers them in the context of the whole application.",
+        "scope": "First-year undergraduate applicants; the source lists required test sections and official-report instructions.",
+        "reporting_period": null,
+        "source_url": "https://apply.jhu.edu/how-to-apply/application-deadlines-requirements/standardized-testing/",
+        "checked_at": "2026-10-16",
+        "verification_status": "verified"
+      },
+      "source_review": {
+        "method": "Supervising agent read the exact primary-source text and checked the value, period, population and limiting conditions; agent output is a research lead, not evidence.",
+        "receipt_file": "data/review/university-enrichment-oct16/agent-fact-source-receipts.json",
+        "receipt_url": "https://apply.jhu.edu/how-to-apply/application-deadlines-requirements/standardized-testing/",
+        "sha256": "00735a0087af986d5eac279c08a393b049c2d68bc088f15265f7f0cca4c2d795",
+        "retrieved_at": "2026-10-16T03:11:39.903707+00:00",
+        "evidence_terms": [
+          "requires first-year applicants",
+          "SAT",
+          "ACT",
+          "self-report",
+          "holistic"
+        ]
+      }
+    },
+    {
+      "university_id": "f5c17f3c-ac83-5193-8c71-641147ad926c",
+      "section": "costs",
+      "fact": {
+        "title": "2026–27 undergraduate tuition",
+        "body": "Johns Hopkins Student Financial Support lists USD 68,670 tuition in its 2026–27 on-campus first-year budget, with a one-time USD 500 matriculation fee. Housing, meals, books, personal expenses and transport are additional budget items.",
+        "scope": "Published on-campus undergraduate first-year budget for 2026–27; tuition is not total cost or net price after aid.",
+        "reporting_period": "2026–27",
+        "source_url": "https://sfs.jhu.edu/cost-tuition/",
+        "checked_at": "2026-10-16",
+        "verification_status": "verified"
+      },
+      "source_review": {
+        "method": "Supervising agent read the exact primary-source text and checked the value, period, population and limiting conditions; agent output is a research lead, not evidence.",
+        "receipt_file": "data/review/university-enrichment-oct16/agent-fact-source-receipts.json",
+        "receipt_url": "https://sfs.jhu.edu/cost-tuition/",
+        "sha256": "2c835248409a073ec5f2d08367f8996e1b6927f804cdaef700656ac8e4957c94",
+        "retrieved_at": "2026-10-16T03:11:40.821489+00:00",
+        "evidence_terms": [
+          "2026-27",
+          "68,670",
+          "500",
+          "On-Campus Living (Freshman)"
+        ]
+      }
+    },
+    {
+      "university_id": "e67501b3-2e87-5598-b9e3-e28fe4101f68",
+      "section": "admissions",
+      "fact": {
+        "title": "UC minimum grades are not an admission guarantee",
+        "body": "Berkeley lists A–G subject requirements and a minimum 3.0 GPA in A–G courses taken in grades 10–11, or 3.4 for non-residents. Berkeley also states that meeting the minimums is often insufficient to be competitive.",
+        "scope": "First-year undergraduate UC minimum requirements; the campus uses a broader selection review.",
+        "reporting_period": null,
+        "source_url": "https://admissions.berkeley.edu/apply-to-berkeley/first-year-applicants-uc-berkeley/freshmen-requirements/",
+        "checked_at": "2026-10-16",
+        "verification_status": "verified"
+      },
+      "source_review": {
+        "method": "Supervising agent read the exact primary-source text and checked the value, period, population and limiting conditions; agent output is a research lead, not evidence.",
+        "receipt_file": "data/review/university-enrichment-oct16/agent-fact-source-receipts.json",
+        "receipt_url": "https://admissions.berkeley.edu/apply-to-berkeley/first-year-applicants-uc-berkeley/freshmen-requirements/",
+        "sha256": "59253f64a718618d7902f93c37b7997e50dd69735dd6841f3b71ab6482b3b4e6",
+        "retrieved_at": "2026-10-16T03:11:38.236904+00:00",
+        "evidence_terms": [
+          "3.0 GPA",
+          "3.4 GPA",
+          "10th and 11th",
+          "competitive"
+        ]
+      }
+    },
+    {
+      "university_id": "e67501b3-2e87-5598-b9e3-e28fe4101f68",
+      "section": "costs",
+      "fact": {
+        "title": "Select entry year and living arrangement",
+        "body": "Berkeley publishes separate undergraduate budgets by entry cohort and living arrangement. Continuing students can have different tuition figures from new entrants; non-resident supplemental tuition and health-insurance conditions also need to be checked.",
+        "scope": "2026–27 cost-of-attendance tables; no single scenario is assigned to every student.",
+        "reporting_period": "2026–27",
+        "source_url": "https://financialaid.berkeley.edu/how-aid-works/student-budgets-cost-of-attendance/",
+        "checked_at": "2026-10-16",
+        "verification_status": "verified"
+      },
+      "source_review": {
+        "method": "Supervising agent read the exact primary-source text and checked the value, period, population and limiting conditions; agent output is a research lead, not evidence.",
+        "receipt_file": "data/review/university-enrichment-oct16/agent-fact-source-receipts.json",
+        "receipt_url": "https://financialaid.berkeley.edu/how-aid-works/student-budgets-cost-of-attendance/",
+        "sha256": "fd84f4ab9e5fb4c417b3e434a7f585d60bd29dcf897330da4bfbae6565fcc57e",
+        "retrieved_at": "2026-10-16T03:11:38.802653+00:00",
+        "evidence_terms": [
+          "2026-27",
+          "New Students",
+          "Continuing Students",
+          "Nonresident"
+        ]
+      }
+    },
+    {
+      "university_id": "819bd7c2-cc38-5dc4-854d-2d59a8a9f4e5",
+      "section": "costs",
+      "fact": {
+        "title": "Semester tuition has two fee classifications",
+        "body": "EPFL lists CHF 730 tuition per semester, or CHF 2,190 for students subject to the higher tuition category introduced in autumn 2025. Including listed semester charges, the published invoice totals are CHF 780 or CHF 2,240. Check the category criteria before budgeting.",
+        "scope": "Bachelor’s and master’s semester fees from autumn 2025; tuition and other semester charges are distinguished.",
+        "reporting_period": "From autumn 2025",
+        "source_url": "https://www.epfl.ch/education/studies/en/rules-and-procedures/tuition-fee/",
+        "checked_at": "2026-10-16",
+        "verification_status": "verified"
+      },
+      "source_review": {
+        "method": "Supervising agent read the exact primary-source text and checked the value, period, population and limiting conditions; agent output is a research lead, not evidence.",
+        "receipt_file": "data/review/university-enrichment-oct16/agent-fact-source-receipts.json",
+        "receipt_url": "https://www.epfl.ch/education/studies/en/rules-and-procedures/tuition-fee/",
+        "sha256": "76c58894b943ebf1bb0231a770109a1a3cc78f470c7feb5bae8dc88b7c90ebf1",
+        "retrieved_at": "2026-10-16T03:11:39.708004+00:00",
+        "evidence_terms": [
+          "CHF 730",
+          "CHF 2190",
+          "CHF 780",
+          "CHF 2240",
+          "2025"
+        ]
+      }
+    },
+    {
+      "university_id": "6f13f9e9-cf5f-56ad-8384-39a9dc592d58",
+      "section": "admissions",
+      "fact": {
+        "title": "Recommended school preparation is guidance",
+        "body": "Princeton recommends four years each of English, mathematics and one language, plus laboratory science and history. Engineering preparation includes calculus, physics and chemistry. These are preparation recommendations, not a universal eligibility cutoff.",
+        "scope": "Suggested secondary-school preparation for undergraduate applicants; check the full application requirements separately.",
+        "reporting_period": null,
+        "source_url": "https://admission.princeton.edu/apply/before-you-apply",
+        "checked_at": "2026-10-16",
+        "verification_status": "verified"
+      },
+      "source_review": {
+        "method": "Supervising agent read the exact primary-source text and checked the value, period, population and limiting conditions; agent output is a research lead, not evidence.",
+        "receipt_file": "data/review/university-enrichment-oct16/agent-fact-source-receipts.json",
+        "receipt_url": "https://admission.princeton.edu/apply/before-you-apply",
+        "sha256": "82133a88c76c519a22b094446dc34ca6cdfaaa7bd91216aedf36a457b7072f1f",
+        "retrieved_at": "2026-10-16T03:11:43.084453+00:00",
+        "evidence_terms": [
+          "Four years of English",
+          "Four years of mathematics",
+          "Four years of one language",
+          "physics and chemistry"
+        ]
+      }
+    },
+    {
+      "university_id": "6f13f9e9-cf5f-56ad-8384-39a9dc592d58",
+      "section": "costs",
+      "fact": {
+        "title": "2026–27 estimated undergraduate budget",
+        "body": "Princeton lists USD 94,624 estimated cost of attendance for 2026–27, including USD 68,140 tuition, housing, food, fees, books and personal-expense estimates. Financial aid changes the amount a family is expected to pay.",
+        "scope": "Undergraduate 2026–27 estimated annual budget before financial aid.",
+        "reporting_period": "2026–27",
+        "source_url": "https://admission.princeton.edu/cost-aid/fees-payment-options",
+        "checked_at": "2026-10-16",
+        "verification_status": "verified"
+      },
+      "source_review": {
+        "method": "Supervising agent read the exact primary-source text and checked the value, period, population and limiting conditions; agent output is a research lead, not evidence.",
+        "receipt_file": "data/review/university-enrichment-oct16/agent-fact-source-receipts.json",
+        "receipt_url": "https://admission.princeton.edu/cost-aid/fees-payment-options",
+        "sha256": "bc288e8fb204c880a516fed4272a6b0d5b78c16eb936d9271548419b4b7d64b1",
+        "retrieved_at": "2026-10-16T03:11:45.503206+00:00",
+        "evidence_terms": [
+          "2026-27",
+          "94,624",
+          "68,140",
+          "Housing",
+          "Food"
+        ]
+      }
+    },
+    {
+      "university_id": "14fa4c62-b910-520b-aa51-0bf334f02b1c",
+      "section": "admissions",
+      "fact": {
+        "title": "Accounting: selection rank and prerequisites",
+        "body": "ANU’s Bachelor of Accounting page lists a minimum unadjusted rank of 70 for consideration and a selection rank of 80 for its guaranteed-entry route, subject to meeting prerequisites. Check English-language and other applicable requirements on the source.",
+        "scope": "Bachelor of Accounting, 2027 academic-year page; not a university-wide threshold.",
+        "reporting_period": "2027",
+        "source_url": "https://programsandcourses.anu.edu.au/program/BACCT",
+        "checked_at": "2026-10-16",
+        "verification_status": "verified"
+      },
+      "source_review": {
+        "method": "Supervising agent read the exact primary-source text and checked the value, period, population and limiting conditions; agent output is a research lead, not evidence.",
+        "receipt_file": "data/review/university-enrichment-oct16/agent-fact-source-receipts.json",
+        "receipt_url": "https://programsandcourses.anu.edu.au/program/BACCT",
+        "sha256": "255a9f0ccc67768d77e45cb6756a02beea214884a89c6ee0fb69949ce0e434d3",
+        "retrieved_at": "2026-10-16T03:11:49.861654+00:00",
+        "evidence_terms": [
+          "Academic Year 2027",
+          "rank of 70",
+          "rank of 80",
+          "subject to meeting any prerequisites"
+        ]
+      }
+    },
+    {
+      "university_id": "14fa4c62-b910-520b-aa51-0bf334f02b1c",
+      "section": "costs",
+      "fact": {
+        "title": "Accounting: indicative international tuition",
+        "body": "ANU lists AUD 57,640 as the annual indicative fee for international students in the Bachelor of Accounting. Actual tuition depends on the courses taken; the services and amenities fee is separate.",
+        "scope": "Bachelor of Accounting, 2027 academic-year page; international annual indicative tuition.",
+        "reporting_period": "2027",
+        "source_url": "https://programsandcourses.anu.edu.au/program/BACCT",
+        "checked_at": "2026-10-16",
+        "verification_status": "verified"
+      },
+      "source_review": {
+        "method": "Supervising agent read the exact primary-source text and checked the value, period, population and limiting conditions; agent output is a research lead, not evidence.",
+        "receipt_file": "data/review/university-enrichment-oct16/agent-fact-source-receipts.json",
+        "receipt_url": "https://programsandcourses.anu.edu.au/program/BACCT",
+        "sha256": "255a9f0ccc67768d77e45cb6756a02beea214884a89c6ee0fb69949ce0e434d3",
+        "retrieved_at": "2026-10-16T03:11:49.861654+00:00",
+        "evidence_terms": [
+          "Academic Year 2027",
+          "57,640.00",
+          "international students",
+          "Services and amenities fee"
+        ]
+      }
+    },
+    {
+      "university_id": "b48ecdd6-9331-5ee8-a4ad-7f5b046d5356",
+      "section": "admissions",
+      "fact": {
+        "title": "Prerequisites depend on educational background",
+        "body": "McGill’s requirements vary by prior educational background and chosen programme. The university warns that previous admission grades can change and that meeting or exceeding them does not guarantee admission.",
+        "scope": "Undergraduate applicants; choose the relevant school-system and programme route on the source.",
+        "reporting_period": null,
+        "source_url": "https://www.mcgill.ca/undergraduate-admissions/apply/requirements",
+        "checked_at": "2026-10-16",
+        "verification_status": "verified"
+      },
+      "source_review": {
+        "method": "Supervising agent read the exact primary-source text and checked the value, period, population and limiting conditions; agent output is a research lead, not evidence.",
+        "receipt_file": "data/review/university-enrichment-oct16/agent-fact-source-receipts.json",
+        "receipt_url": "https://www.mcgill.ca/undergraduate-admissions/apply/requirements",
+        "sha256": "751d4280d43497d09003a96b5721ff766978b6367e9c7d5e530a5e6a2794cf28",
+        "retrieved_at": "2026-10-16T03:11:48.428358+00:00",
+        "evidence_terms": [
+          "educational background",
+          "program(s)",
+          "do not guarantee admission"
+        ]
+      }
+    },
+    {
+      "university_id": "74996b5e-c39f-52f1-9e01-88f3051f155b",
+      "section": "costs",
+      "fact": {
+        "title": "2027–28 tuition: local and non-local rates",
+        "body": "HKUST lists HKD 49,500 annual tuition for eligible local subsidised students and HKD 260,000 for non-local students in 2027–28. The same page’s accommodation figures refer to fall 2026 and should not be treated as confirmed 2027–28 hall charges.",
+        "scope": "Full-time undergraduate tuition for 2027–28; local eligibility, dual-degree exceptions and accommodation have separate conditions.",
+        "reporting_period": "2027/28",
+        "source_url": "https://join.hkust.edu.hk/fees-and-scholarships",
+        "checked_at": "2026-10-16",
+        "verification_status": "verified"
+      },
+      "source_review": {
+        "method": "Supervising agent read the exact primary-source text and checked the value, period, population and limiting conditions; agent output is a research lead, not evidence.",
+        "receipt_file": "data/review/university-enrichment-oct16/agent-fact-source-receipts.json",
+        "receipt_url": "https://join.hkust.edu.hk/fees-and-scholarships",
+        "sha256": "9a6683048f894d8b8154f6aa2dca84fa2e409789409d7789ca5a88104a7e3364",
+        "retrieved_at": "2026-10-16T03:11:52.732506+00:00",
+        "evidence_terms": [
+          "49,500",
+          "260,000",
+          "2027/28",
+          "fall 2026"
+        ]
+      }
+    },
+    {
+      "university_id": "f2f2a71c-abeb-5dc7-b18b-aa8b00611b0a",
+      "section": "costs",
+      "fact": {
+        "title": "2026–27 Edinburgh living-cost estimate",
+        "body": "Edinburgh estimates GBP 1,546 per month for a single undergraduate in 2026–27: GBP 13,914 for a 39-week academic year or GBP 18,552 for 52 weeks. This is a planning estimate, separate from tuition.",
+        "scope": "Single undergraduate living-cost guide for Edinburgh, calculated for 2026–27; individual spending varies.",
+        "reporting_period": "2026–27",
+        "source_url": "https://study.ed.ac.uk/undergraduate/fees-funding/living-costs",
+        "checked_at": "2026-10-16",
+        "verification_status": "verified"
+      },
+      "source_review": {
+        "method": "Supervising agent read the exact primary-source text and checked the value, period, population and limiting conditions; agent output is a research lead, not evidence.",
+        "receipt_file": "data/review/university-enrichment-oct16/agent-fact-source-receipts.json",
+        "receipt_url": "https://study.ed.ac.uk/undergraduate/fees-funding/living-costs",
+        "sha256": "e88ae548df79c8aa1549058a14836b4fab66bada1b764f9be1da91ae84889aaf",
+        "retrieved_at": "2026-10-16T03:11:55.571296+00:00",
+        "evidence_terms": [
+          "1,546",
+          "13,914",
+          "18,552",
+          "2026"
+        ]
+      }
+    },
+    {
+      "university_id": "01649f44-22e4-5b85-adaa-81f3538aa083",
+      "section": "admissions",
+      "fact": {
+        "title": "Law LLB: example academic requirement",
+        "body": "King’s lists A*AA at A-level for the three-year Law LLB beginning September 2027. This is a programme-specific academic requirement; applicants must check the complete course and application conditions.",
+        "scope": "Law LLB undergraduate, September 2027 entry; not the minimum for every King’s course.",
+        "reporting_period": "September 2027",
+        "source_url": "https://www.kcl.ac.uk/study/undergraduate/courses/law-llb",
+        "checked_at": "2026-10-16",
+        "verification_status": "verified"
+      },
+      "source_review": {
+        "method": "Supervising agent read the exact primary-source text and checked the value, period, population and limiting conditions; agent output is a research lead, not evidence.",
+        "receipt_file": "data/review/university-enrichment-oct16/agent-fact-source-receipts.json",
+        "receipt_url": "https://www.kcl.ac.uk/study/undergraduate/courses/law-llb",
+        "sha256": "78567cecb5e4873093be4d7d86c305753ecad1e0e1fdd5cfc0aa41fa9b2f9a2c",
+        "retrieved_at": "2026-10-16T03:11:56.525040+00:00",
+        "evidence_terms": [
+          "A*AA",
+          "Three years",
+          "September 2027",
+          "Law LLB"
+        ]
+      }
+    },
+    {
+      "university_id": "6e2ae583-50c4-53d5-a0ed-d11422c64773",
+      "section": "admissions",
+      "fact": {
+        "title": "General and chosen-course requirements both apply",
+        "body": "Manchester asks international applicants to meet both general entry requirements and the requirements of the chosen course. The university provides country-specific qualification guidance and separate English-language information.",
+        "scope": "International undergraduate and postgraduate applicants; accepted qualifications and grades depend on the course and country.",
+        "reporting_period": null,
+        "source_url": "https://www.manchester.ac.uk/study/international/admissions/",
+        "checked_at": "2026-10-16",
+        "verification_status": "verified"
+      },
+      "source_review": {
+        "method": "Supervising agent read the exact primary-source text and checked the value, period, population and limiting conditions; agent output is a research lead, not evidence.",
+        "receipt_file": "data/review/university-enrichment-oct16/agent-fact-source-receipts.json",
+        "receipt_url": "https://www.manchester.ac.uk/study/international/admissions/",
+        "sha256": "cd38007779b8f2d43b01d81565f2ac7b9d41b543e371ebea27caf6ad85a794a6",
+        "retrieved_at": "2026-10-16T03:11:58.218467+00:00",
+        "evidence_terms": [
+          "general entry requirements",
+          "country",
+          "course"
+        ]
+      }
+    },
+    {
+      "university_id": "6e2ae583-50c4-53d5-a0ed-d11422c64773",
+      "section": "costs",
+      "fact": {
+        "title": "International tuition can rise after the first year",
+        "body": "Manchester publishes international first-year tuition on individual course pages and reserves the right to increase fees by up to 7% in later academic years. Check the chosen course and starting year when comparing costs.",
+        "scope": "International tuition policy; a maximum permitted increase is not a prediction of every student’s actual increase.",
+        "reporting_period": null,
+        "source_url": "https://www.manchester.ac.uk/study/international/finance-and-scholarships/fees/",
+        "checked_at": "2026-10-16",
+        "verification_status": "verified"
+      },
+      "source_review": {
+        "method": "Supervising agent read the exact primary-source text and checked the value, period, population and limiting conditions; agent output is a research lead, not evidence.",
+        "receipt_file": "data/review/university-enrichment-oct16/agent-fact-source-receipts.json",
+        "receipt_url": "https://www.manchester.ac.uk/study/international/finance-and-scholarships/fees/",
+        "sha256": "44052c40e85e36888efb1ab1fea68cf1366c726e7038fc4e92261486b5339d82",
+        "retrieved_at": "2026-10-16T03:11:59.223461+00:00",
+        "evidence_terms": [
+          "7%",
+          "first year",
+          "course"
+        ]
+      }
+    },
+    {
+      "university_id": "c0386da4-95a0-567a-8f70-81b33c5c7f06",
+      "section": "admissions",
+      "fact": {
+        "title": "Arts: published thresholds describe a prior intake",
+        "body": "UQ’s Bachelor of Arts page shows ATAR/rank 70 or IB 26.25 as the lowest adjusted scores offered in Semester 1, 2026. It states that meeting the threshold does not guarantee admission; the 2027 programme page has separate prerequisites and English requirements.",
+        "scope": "Bachelor of Arts, 2027 course page displaying 2026 offer-score context; not a university-wide admissions cutoff.",
+        "reporting_period": "2027 page / Semester 1 2026 score context",
+        "source_url": "https://study.uq.edu.au/study-options/programs/bachelor-arts-2000",
+        "checked_at": "2026-10-16",
+        "verification_status": "verified"
+      },
+      "source_review": {
+        "method": "Supervising agent read the exact primary-source text and checked the value, period, population and limiting conditions; agent output is a research lead, not evidence.",
+        "receipt_file": "data/review/university-enrichment-oct16/agent-fact-source-receipts.json",
+        "receipt_url": "https://study.uq.edu.au/study-options/programs/bachelor-arts-2000",
+        "sha256": "8e273dd9890c4e3e6b856d5f9f7abc58cb5f4bedea1b9d1acc00db62b636e8db",
+        "retrieved_at": "2026-10-16T03:11:59.576964+00:00",
+        "evidence_terms": [
+          "26.25",
+          "Semester 1, 2026",
+          "doesn't guarantee admission",
+          "2027"
+        ]
+      }
+    },
+    {
+      "university_id": "c0386da4-95a0-567a-8f70-81b33c5c7f06",
+      "section": "costs",
+      "fact": {
+        "title": "Arts: indicative international annual fee",
+        "body": "UQ lists AUD 48,080 as the indicative international annual fee for the Bachelor of Arts in 2027. Fees depend on study load and may be reviewed annually; living costs and other charges are separate.",
+        "scope": "Bachelor of Arts at St Lucia, international undergraduate 2027 annual indicative tuition.",
+        "reporting_period": "2027",
+        "source_url": "https://study.uq.edu.au/study-options/programs/bachelor-arts-2000",
+        "checked_at": "2026-10-16",
+        "verification_status": "verified"
+      },
+      "source_review": {
+        "method": "Supervising agent read the exact primary-source text and checked the value, period, population and limiting conditions; agent output is a research lead, not evidence.",
+        "receipt_file": "data/review/university-enrichment-oct16/agent-fact-source-receipts.json",
+        "receipt_url": "https://study.uq.edu.au/study-options/programs/bachelor-arts-2000",
+        "sha256": "8e273dd9890c4e3e6b856d5f9f7abc58cb5f4bedea1b9d1acc00db62b636e8db",
+        "retrieved_at": "2026-10-16T03:11:59.576964+00:00",
+        "evidence_terms": [
+          "A$48080",
+          "2027",
+          "international",
+          "indicative"
+        ]
+      }
+    }
+  ],
+  "rejected_claims": [
+    {
+      "claim": "CHF 804 per semester as universal current ETH tuition",
+      "reason": "Generic financial overview conflicts with reviewed fee-group policy; retained the separately verified existing fee-group note, not the universal amount."
+    },
+    {
+      "claim": "One universal Cornell undergraduate tuition amount",
+      "reason": "Contract/endowed college and residency classifications, plus adjacent-year table headings, require selection before attaching a numeric budget."
+    },
+    {
+      "claim": "Monash and UCL detailed agent facts",
+      "reason": "Direct detail sources returned 403 in this pass; programme and threshold facts remain pending review."
+    }
+  ]
+}

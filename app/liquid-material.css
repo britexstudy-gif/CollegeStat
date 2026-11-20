@@ -387,9 +387,10 @@
   }
 }
 @media (max-width: 640px) {
+  /* Perf: keep mobile blur at 12px (was 18px — higher blur costs GPU on mobile). */
   [data-glass="rim"]::before {
-    backdrop-filter: blur(18px) saturate(115%);
-    -webkit-backdrop-filter: blur(18px) saturate(115%);
+    backdrop-filter: blur(12px) saturate(115%);
+    -webkit-backdrop-filter: blur(12px) saturate(115%);
   }
   .dark [data-glass="rim"]::before {
     background: linear-gradient(135deg, #1d2b40ee, #172338ee);
@@ -534,44 +535,9 @@
     min-width: 36px;
     min-height: 40px;
   }
-  .comparison-toolbar {
-    align-items: stretch;
-    flex-direction: column;
-    gap: 14px;
-  }
-  .comparison-export-actions {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 6px;
-  }
-  .comparison-export-actions .button {
-    min-width: 0;
-    min-height: 44px;
-    font-size: 11px;
-    padding: 9px 7px;
-  }
-  .comparison-view-options {
-    gap: 16px;
-    flex-wrap: wrap;
-  }
-  .comparison-table-scroll {
-    max-height: 70dvh;
-  }
-  .compare-workspace .comparison-table th:first-child {
-    min-width: 136px;
-    width: 136px;
-  }
-  .compare-workspace .comparison-table tbody th[scope="row"] {
-    padding: 14px;
-    font-size: 11px;
-  }
-  .compare-workspace .comparison-table td,
-  .compare-workspace .comparison-table thead th {
-    min-width: 235px;
-    width: 235px;
-    padding: 16px;
-    font-size: 13px;
-  }
+  /* REMOVED duplicate mobile comparison-table rules — canonical lives in
+   * comparison-workspace.css @media (max-width:640px). Kept here would
+   * last-wins-override with divergent widths (136px/235px vs 140px/250px). */
   .mobile-nav[data-glass] {
     left: 10px;
     right: 10px;

@@ -1,0 +1,4714 @@
+[
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "Columbia College",
+  "university_id": "3ab8ee92-9bcb-5bde-9e6c-e26b830d7fa0",
+  "target": false,
+  "detail": "2 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "Columbia College",
+  "university_id": "8fb1c6f3-c3d2-5aeb-9d1f-05df110a0652",
+  "target": false,
+  "detail": "2 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "Hallmark University",
+  "university_id": "fbe8f390-70b6-5f25-90a2-069952d62e9d",
+  "target": false,
+  "detail": "2 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "Hallmark University",
+  "university_id": "7c249bfb-2a84-5ac5-ae1c-afb48368b645",
+  "target": false,
+  "detail": "2 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "Abilene Christian University",
+  "university_id": "f9f16466-c4ba-563a-8c2f-b26ee53a6c87",
+  "target": false,
+  "detail": "2 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "Abilene Christian University",
+  "university_id": "efcd0b52-6611-50e3-9ac7-d9831889822a",
+  "target": false,
+  "detail": "2 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "Bethany College",
+  "university_id": "bca65add-38fc-5a7f-bd09-f6b56fc40f11",
+  "target": false,
+  "detail": "2 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "Bethany College",
+  "university_id": "0d7766aa-0f05-557a-a464-0719a54681cd",
+  "target": false,
+  "detail": "2 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "Bethel University",
+  "university_id": "7db6f95b-f6bb-5372-bcf2-fbe9ca0153a4",
+  "target": false,
+  "detail": "3 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "Bethel University",
+  "university_id": "ff52d1ca-6d4a-5afe-bc96-834b0f9b3383",
+  "target": false,
+  "detail": "3 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "Bethel University",
+  "university_id": "137d9499-50a3-5d8a-8ee1-ec3d52008301",
+  "target": false,
+  "detail": "3 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "Cal Poly Maritime Academy",
+  "university_id": "6fd9aabc-c05d-5c84-9d78-faeddddfe581",
+  "target": false,
+  "detail": "2 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "Cal Poly Maritime Academy",
+  "university_id": "f35d6b1e-c56e-59b7-93e0-ccfb5a1e1b8d",
+  "target": false,
+  "detail": "2 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "College of Saint Benedict",
+  "university_id": "b310404a-0487-5d05-97a9-42229b23dfb2",
+  "target": false,
+  "detail": "2 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "College of Saint Benedict",
+  "university_id": "9a6ae8d3-8f33-59a8-8be7-7016310eae5f",
+  "target": false,
+  "detail": "2 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "Indiana University-South Bend",
+  "university_id": "b4e9c076-eb29-5515-9986-53e93d215a52",
+  "target": false,
+  "detail": "2 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "Indiana University-South Bend",
+  "university_id": "50759d76-f3b9-5218-8502-203e0d66c99d",
+  "target": false,
+  "detail": "2 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "Indiana University-Southeast",
+  "university_id": "2c5a27f6-09f6-5ac8-9c34-bdbbbf5bade2",
+  "target": false,
+  "detail": "2 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "Indiana University-Southeast",
+  "university_id": "29529154-1d63-59e1-abfb-f8fb3f940ac7",
+  "target": false,
+  "detail": "2 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "Indiana Wesleyan University, Marion",
+  "university_id": "bf2bb7e9-5364-5f72-842a-2d135fcb9f7b",
+  "target": false,
+  "detail": "2 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "Indiana Wesleyan University-Marion",
+  "university_id": "fba3a9b3-4ee3-53e5-9d75-a7251045506c",
+  "target": false,
+  "detail": "2 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "Lincoln University",
+  "university_id": "d525b72d-3edc-549e-9e60-1da06aeb83ea",
+  "target": false,
+  "detail": "3 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "Lincoln University",
+  "university_id": "2842627e-7630-52c4-b434-475e7ee01ae6",
+  "target": false,
+  "detail": "3 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "Lincoln University",
+  "university_id": "5c9c4c30-4261-5bc5-b6b8-b8d0b9efe64e",
+  "target": false,
+  "detail": "3 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "Midwestern State University",
+  "university_id": "d665018d-6bf6-58a6-ab26-3627985a0a0c",
+  "target": false,
+  "detail": "2 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "Midwestern State University",
+  "university_id": "17e39da9-94a7-5fcb-8d22-530dbed38281",
+  "target": false,
+  "detail": "2 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "National University",
+  "university_id": "1ae9f9b4-1cb4-5df6-bc51-14aea3b29f61",
+  "target": false,
+  "detail": "2 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "National University",
+  "university_id": "27e3e0b2-ab7e-565f-8835-e7cc6d46c463",
+  "target": false,
+  "detail": "2 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "North Carolina Wesleyan University",
+  "university_id": "918959e7-3164-55fe-8574-79d7ba0eded6",
+  "target": false,
+  "detail": "2 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "North Carolina Wesleyan University",
+  "university_id": "ef1d5468-e91c-5f41-9144-1d200af62f03",
+  "target": false,
+  "detail": "2 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "Northeastern University",
+  "university_id": "5fc62bb7-0198-5a07-8830-2735c17fd1ea",
+  "target": false,
+  "detail": "2 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "Northeastern University",
+  "university_id": "1541038b-91e4-5c1d-aa25-22ad99d3df89",
+  "target": false,
+  "detail": "2 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "Oakwood University",
+  "university_id": "281910af-2a05-5090-8261-79e3b135feef",
+  "target": false,
+  "detail": "2 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "Oakwood University",
+  "university_id": "5e0623f2-7d6c-59c2-b3bd-ec9622698c23",
+  "target": false,
+  "detail": "2 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "Palm Beach State College",
+  "university_id": "eeb9ddf4-9d78-5d3a-ab5c-0fcd9d8704d9",
+  "target": false,
+  "detail": "2 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "Palm Beach State College",
+  "university_id": "20589910-87be-55c8-a2cf-2f32b701b433",
+  "target": false,
+  "detail": "2 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "Southwestern College",
+  "university_id": "07eb1aca-63d1-5d07-9be8-e5e666c27f80",
+  "target": false,
+  "detail": "2 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "Southwestern College",
+  "university_id": "8c2d1eab-ec0d-5b58-aee9-ceb7c9a608f7",
+  "target": false,
+  "detail": "2 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "Spelman College",
+  "university_id": "dd5eb190-1dd0-51cf-952b-68c374dea1da",
+  "target": false,
+  "detail": "2 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "Spelman College",
+  "university_id": "bc17d498-da9c-533a-9fd1-cce3e8aa3722",
+  "target": false,
+  "detail": "2 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "Spring Arbor University",
+  "university_id": "a77030c2-53ee-5817-bb92-c0e521351bc4",
+  "target": false,
+  "detail": "2 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "Spring Arbor University",
+  "university_id": "0c0129a4-e55b-53af-9e98-2b8456f8bd30",
+  "target": false,
+  "detail": "2 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "Trine University",
+  "university_id": "36035a4e-f08d-530d-9860-ea0767be1296",
+  "target": false,
+  "detail": "2 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "Trine University",
+  "university_id": "795a0486-ad7c-5052-9963-88a3fd5fc3d9",
+  "target": false,
+  "detail": "2 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "Trinity Washington University",
+  "university_id": "9107bcf3-7055-5bce-9e09-717c4bd168a1",
+  "target": false,
+  "detail": "2 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "Trinity Washington University",
+  "university_id": "66cd5625-4159-5d54-80b7-f6fc44af662c",
+  "target": false,
+  "detail": "2 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "Trinity University",
+  "university_id": "1b3fd51a-e0f7-54f8-8de0-6f95f7ff3663",
+  "target": false,
+  "detail": "2 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "Trinity University",
+  "university_id": "6f52046a-90f0-529c-b397-a45fdc1b1fc3",
+  "target": false,
+  "detail": "2 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "University of Houston",
+  "university_id": "c73aa8d4-48b0-5ee4-b8a6-5b62bfa1ce65",
+  "target": false,
+  "detail": "2 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "University of Houston",
+  "university_id": "3a39d973-a8b5-5808-9512-eabb05f6fcec",
+  "target": false,
+  "detail": "2 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "University of Miami",
+  "university_id": "3d5e6265-775a-568a-9eb8-1298348c3d3b",
+  "target": false,
+  "detail": "2 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "University of Miami",
+  "university_id": "be1f73c5-cbf3-58d9-9f26-d9e758e306f2",
+  "target": false,
+  "detail": "2 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "University of North Carolina Asheville",
+  "university_id": "90d67088-a135-5fb8-844e-2cb2158327e4",
+  "target": false,
+  "detail": "2 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "University of North Carolina Asheville",
+  "university_id": "4d350bc9-61cb-5aee-8be5-b0e91d5bd86f",
+  "target": false,
+  "detail": "2 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "University of Rhode Island",
+  "university_id": "fa911cdc-25af-5be0-a5b9-4701ee13282e",
+  "target": false,
+  "detail": "2 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "University of Rhode Island",
+  "university_id": "f955216a-59b7-5c34-b69e-6fdd96cdfbfe",
+  "target": false,
+  "detail": "2 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "University of St Thomas",
+  "university_id": "c6e424f8-97ab-5028-9df5-8d1106a16754",
+  "target": false,
+  "detail": "2 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "University of St Thomas",
+  "university_id": "da586e2f-2b25-52d0-8b61-d7e3547ae149",
+  "target": false,
+  "detail": "2 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "Anderson University",
+  "university_id": "acd5cedb-00e2-5619-9d81-3f17d3eea14a",
+  "target": false,
+  "detail": "2 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "Anderson University",
+  "university_id": "c646158a-febe-5abc-8936-eb6d9fbdda1b",
+  "target": false,
+  "detail": "2 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "Washington University in St Louis",
+  "university_id": "26ebf6e5-a612-55f5-bb38-64ba2e059762",
+  "target": false,
+  "detail": "2 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "Washington University in St Louis",
+  "university_id": "dd6e6743-9daf-5e1e-b2de-817f985f30d1",
+  "target": false,
+  "detail": "2 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "Westminster College",
+  "university_id": "fb77aec2-75d3-518d-a937-3df115387d04",
+  "target": false,
+  "detail": "2 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "Westminster College",
+  "university_id": "502d4d30-e540-5862-931d-a5335f062bde",
+  "target": false,
+  "detail": "2 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "Willamette University",
+  "university_id": "d9c77312-bf54-5588-8615-19cfd8e3f2de",
+  "target": false,
+  "detail": "2 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "Willamette University",
+  "university_id": "db279679-e2b1-5f11-b706-e0bdac47ba44",
+  "target": false,
+  "detail": "2 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "San Joaquin Valley College-Visalia",
+  "university_id": "b18b5cf9-45b2-55b1-87fc-e94fb8be57ce",
+  "target": false,
+  "detail": "2 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "San Joaquin Valley College-Visalia",
+  "university_id": "19129f7d-bf2d-5841-9205-1cb76056c979",
+  "target": false,
+  "detail": "2 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "Solano Community College",
+  "university_id": "a0fb5a57-aa68-5de1-844f-6979c6e15984",
+  "target": false,
+  "detail": "2 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "Solano Community College",
+  "university_id": "2b2906bc-fb09-5d3d-a068-21484b7a27ff",
+  "target": false,
+  "detail": "2 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "Tallahassee State College",
+  "university_id": "03789f7a-5e14-535e-b163-7c56ef9f4254",
+  "target": false,
+  "detail": "2 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "Tallahassee State College",
+  "university_id": "30ff4ef9-dd7e-5513-8085-e043aa63e845",
+  "target": false,
+  "detail": "2 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "College of Western Idaho",
+  "university_id": "240c029b-4055-5906-8811-35fd33fad201",
+  "target": false,
+  "detail": "2 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "College of Western Idaho",
+  "university_id": "68f2c887-8ab5-59dc-b286-04ffdd0ebb8b",
+  "target": false,
+  "detail": "2 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "Galen College of Nursing-Louisville",
+  "university_id": "6e65853d-f981-5700-8e42-aa939faa0f24",
+  "target": false,
+  "detail": "2 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "Galen College of Nursing-Louisville",
+  "university_id": "5b3fe16c-9634-5cd1-bca5-02b69a657d7b",
+  "target": false,
+  "detail": "2 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "CUNY Brooklyn College",
+  "university_id": "993d5ef7-0512-5a4f-a94f-0ee28f9959d1",
+  "target": false,
+  "detail": "2 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "CUNY Brooklyn College",
+  "university_id": "98cc1643-a66a-57fc-961d-7ca89bde65e7",
+  "target": false,
+  "detail": "2 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "Davis College",
+  "university_id": "7f31584c-392c-516a-aa0c-f641d263bfbc",
+  "target": false,
+  "detail": "3 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "Davis College",
+  "university_id": "4910c3e0-c0e9-5ee0-8d4f-6a7ffdf24bca",
+  "target": false,
+  "detail": "3 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "Davis College",
+  "university_id": "8c23a995-8007-5ed9-a780-5a8343b18668",
+  "target": false,
+  "detail": "3 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "Washington State College of Ohio",
+  "university_id": "faa84d52-d7db-539b-bd3c-cd9975ceed0a",
+  "target": false,
+  "detail": "2 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "Washington State College of Ohio",
+  "university_id": "57d46ab3-f690-57cc-8c70-045ff130a8ad",
+  "target": false,
+  "detail": "2 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "Sisseton Wahpeton College",
+  "university_id": "ee41798a-de8f-5917-9e4a-56a7063e69fa",
+  "target": false,
+  "detail": "2 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "Sisseton Wahpeton College",
+  "university_id": "a4f4c72c-44d0-55af-ac06-1f4932860a32",
+  "target": false,
+  "detail": "2 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "Bates Technical College",
+  "university_id": "8c1dd70f-a91c-5e5c-ac05-7fa5d68277c8",
+  "target": false,
+  "detail": "2 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "Bates Technical College",
+  "university_id": "021c97c2-9b8c-5186-b871-5456becb9936",
+  "target": false,
+  "detail": "2 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "Spokane Falls Community College",
+  "university_id": "0c622be5-1e88-51b1-9ad8-64ce83d28570",
+  "target": false,
+  "detail": "2 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "Spokane Falls Community College",
+  "university_id": "a2d5d479-ae38-59d0-9599-ba7e236354da",
+  "target": false,
+  "detail": "2 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "Western Technical College",
+  "university_id": "3d0967a6-aa24-5169-8edc-79c8e1769050",
+  "target": false,
+  "detail": "3 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "Western Technical College",
+  "university_id": "45ce9ec6-7bf0-5ff1-bff6-1a6db5701cbc",
+  "target": false,
+  "detail": "3 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "Western Technical College",
+  "university_id": "a93e4ecc-2064-5728-8888-0991b0f3a254",
+  "target": false,
+  "detail": "3 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "Selma University",
+  "university_id": "59aeaa29-1633-5bab-be94-8d432ff3633c",
+  "target": false,
+  "detail": "2 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "Selma University",
+  "university_id": "2c1888b8-55f1-54a3-a258-cf67ed832ec0",
+  "target": false,
+  "detail": "2 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "Bryan University",
+  "university_id": "76ac7e0f-5034-5a84-8805-663e3841583f",
+  "target": false,
+  "detail": "2 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "Bryan University",
+  "university_id": "3cd2c4be-8969-5b22-923b-95029cb8d5f5",
+  "target": false,
+  "detail": "2 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "St. John's College",
+  "university_id": "06cf01f5-752c-5910-bda9-626a0c3f06bf",
+  "target": false,
+  "detail": "3 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "St. John's College",
+  "university_id": "d2e9cf01-fbdb-5147-a03d-c327675a87ea",
+  "target": false,
+  "detail": "3 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "St. John's College",
+  "university_id": "13ad95f1-00bb-50d1-bef2-13c5ac0ebce6",
+  "target": false,
+  "detail": "3 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "Marian University",
+  "university_id": "2b1c79e1-f1ce-59e2-9741-4d2d64681890",
+  "target": false,
+  "detail": "2 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "Marian University",
+  "university_id": "7515e6b3-2252-5448-a7e4-fadb06c7cf8a",
+  "target": false,
+  "detail": "2 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "Sterling College",
+  "university_id": "4ffd8282-a292-5c4f-85a6-d0e0ccc805d6",
+  "target": false,
+  "detail": "2 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "Sterling College",
+  "university_id": "25f5d7a3-5991-577f-b3f4-40614f9e4986",
+  "target": false,
+  "detail": "2 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "North Central University",
+  "university_id": "8b3e2033-417f-50e2-bda7-62aca6f9ab4c",
+  "target": false,
+  "detail": "2 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "Northcentral University",
+  "university_id": "2d664129-67ff-55ec-90f6-cb046a18ab86",
+  "target": false,
+  "detail": "2 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "Centura College-Chesapeake",
+  "university_id": "688b8d1e-311b-507c-8556-23a55ab315ff",
+  "target": false,
+  "detail": "2 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "Centura College-Chesapeake",
+  "university_id": "445951d3-ba2e-5562-928e-e56a8f5a1c33",
+  "target": false,
+  "detail": "2 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "Pacific College of Health and Science",
+  "university_id": "cc68cdf0-0cc9-5af0-b5fd-c030eb2f333b",
+  "target": false,
+  "detail": "3 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "Pacific College of Health and Science",
+  "university_id": "daf71f5d-14af-5a0e-bbd4-ed453758d7cd",
+  "target": false,
+  "detail": "3 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "Pacific College of Health and Science",
+  "university_id": "624a4bc7-7410-576d-8570-fd347edcee17",
+  "target": false,
+  "detail": "3 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "Cambridge College of Healthcare & Technology",
+  "university_id": "d14b434b-1ec9-5fc1-8883-2563c5f8e71c",
+  "target": false,
+  "detail": "2 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "Cambridge College of Healthcare & Technology",
+  "university_id": "c90e843f-bb3b-598a-b987-0363fb2155e7",
+  "target": false,
+  "detail": "2 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "West Coast University-Texas",
+  "university_id": "f7e7058d-db60-5fcd-8fec-62dffcbaf76e",
+  "target": false,
+  "detail": "2 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "West Coast University-Texas",
+  "university_id": "ce4da277-86d6-5ddd-b1db-3b4e9c0a3615",
+  "target": false,
+  "detail": "2 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "The Chicago School at Dallas",
+  "university_id": "77b077be-bf04-5b9d-a8e2-ed39729b7eb4",
+  "target": false,
+  "detail": "2 records share name+country"
+ },
+ {
+  "severity": "medium",
+  "kind": "duplicate_university",
+  "university": "The Chicago School at Dallas",
+  "university_id": "3332165c-cb34-5895-a032-365bd323b2fe",
+  "target": false,
+  "detail": "2 records share name+country"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Abilene Christian University",
+  "university_id": "f9f16466-c4ba-563a-8c2f-b26ee53a6c87",
+  "target": false,
+  "detail": "acu.edu used by 3 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Abilene Christian University",
+  "university_id": "efcd0b52-6611-50e3-9ac7-d9831889822a",
+  "target": false,
+  "detail": "acu.edu used by 3 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Abilene Christian University-Undergraduate Online",
+  "university_id": "f4c5ee56-3aac-50c6-ac6f-cb6311ec240c",
+  "target": false,
+  "detail": "acu.edu used by 3 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Arizona State University",
+  "university_id": "932abd56-f67b-5374-a909-a4faa50aaeb2",
+  "target": false,
+  "detail": "asu.edu used by 3 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Arizona State University Campus Immersion",
+  "university_id": "464a8e83-032d-5d97-a3eb-8482c0850ba3",
+  "target": false,
+  "detail": "asu.edu used by 3 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Arizona State University Digital Immersion",
+  "university_id": "1370305a-b5ff-5bd0-b31d-f18f3899f1d3",
+  "target": false,
+  "detail": "asu.edu used by 3 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Boston University",
+  "university_id": "2ef76bea-f0ec-5124-bd16-bfac73557290",
+  "target": false,
+  "detail": "bu.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Boston University Brussels",
+  "university_id": "ca5150f1-04f1-5df6-8731-5273570c8fff",
+  "target": false,
+  "detail": "bu.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "College of Saint Benedict",
+  "university_id": "b310404a-0487-5d05-97a9-42229b23dfb2",
+  "target": false,
+  "detail": "csbsju.edu used by 3 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "College of Saint Benedict",
+  "university_id": "9a6ae8d3-8f33-59a8-8be7-7016310eae5f",
+  "target": false,
+  "detail": "csbsju.edu used by 3 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Saint Johns University",
+  "university_id": "c088a0a4-3fce-5e67-8513-001a36bb236c",
+  "target": false,
+  "detail": "csbsju.edu used by 3 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "DeVry Institute of Technology",
+  "university_id": "7caef0f5-9849-51a5-80ed-87dc2ae9d3a0",
+  "target": false,
+  "detail": "devry.edu used by 13 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "DeVry University-Administrative Office",
+  "university_id": "7f917e14-3a8d-5f65-a4db-7c4a1a235b96",
+  "target": false,
+  "detail": "devry.edu used by 13 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "DeVry College of New York",
+  "university_id": "21325c84-db52-5a33-9fc6-eb4b679f8c80",
+  "target": false,
+  "detail": "devry.edu used by 13 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "DeVry University-Arizona",
+  "university_id": "641fd170-000e-5875-8d48-222f98112e53",
+  "target": false,
+  "detail": "devry.edu used by 13 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "DeVry University-California",
+  "university_id": "24572563-baab-5589-a826-8cab2add7e17",
+  "target": false,
+  "detail": "devry.edu used by 13 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "DeVry University-Florida",
+  "university_id": "a058ad18-6301-548d-ae7b-ce9218713238",
+  "target": false,
+  "detail": "devry.edu used by 13 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "DeVry University-Georgia",
+  "university_id": "74b5147f-05c4-5611-900b-517a854118e9",
+  "target": false,
+  "detail": "devry.edu used by 13 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "DeVry University-Illinois",
+  "university_id": "b514587b-327e-588f-8bb8-1b02c9d30606",
+  "target": false,
+  "detail": "devry.edu used by 13 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "DeVry University-Nevada",
+  "university_id": "f57fc53d-f37e-58e2-b1bc-1ac2154dcf93",
+  "target": false,
+  "detail": "devry.edu used by 13 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "DeVry University-New Jersey",
+  "university_id": "ffab68fd-530a-5b68-9ad8-eb38ce56dead",
+  "target": false,
+  "detail": "devry.edu used by 13 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "DeVry University-Ohio",
+  "university_id": "b3fe1259-63ec-5788-9ed3-67a96061b09e",
+  "target": false,
+  "detail": "devry.edu used by 13 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "DeVry University-Texas",
+  "university_id": "9bdf5486-fb37-539e-b40f-b95c5d734c03",
+  "target": false,
+  "detail": "devry.edu used by 13 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "DeVry University-Virginia",
+  "university_id": "f019b9da-f5cd-5ea3-9dbe-985745c93c98",
+  "target": false,
+  "detail": "devry.edu used by 13 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Drury College",
+  "university_id": "84ff89fe-44a4-5b84-887e-8ef2e03b8773",
+  "target": false,
+  "detail": "drury.edu used by 3 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Drury University",
+  "university_id": "e3d17c3e-48f2-527d-b1e1-294765fc9e68",
+  "target": false,
+  "detail": "drury.edu used by 3 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Drury University-College of Continuing Professional Studies",
+  "university_id": "899f1f1f-c8b1-54b0-ace7-f678dbcc5704",
+  "target": false,
+  "detail": "drury.edu used by 3 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Fairleigh Dickinson University",
+  "university_id": "952681c5-6d25-5cf0-8558-00da6f7dddd3",
+  "target": false,
+  "detail": "fdu.edu used by 3 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Fairleigh Dickinson University-Metropolitan Campus",
+  "university_id": "4315098f-5af8-58ce-b7f6-c04e3db66d38",
+  "target": false,
+  "detail": "fdu.edu used by 3 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Fairleigh Dickinson University-Florham Campus",
+  "university_id": "1048be80-2c5f-5b51-918b-62ed74d39323",
+  "target": false,
+  "detail": "fdu.edu used by 3 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Indiana Wesleyan University, Marion",
+  "university_id": "bf2bb7e9-5364-5f72-842a-2d135fcb9f7b",
+  "target": false,
+  "detail": "indwes.edu used by 3 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Indiana Wesleyan University-Marion",
+  "university_id": "fba3a9b3-4ee3-53e5-9d75-a7251045506c",
+  "target": false,
+  "detail": "indwes.edu used by 3 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Indiana Wesleyan University-National & Global",
+  "university_id": "e4314c59-579a-505f-986b-4ff1f9ee0417",
+  "target": false,
+  "detail": "indwes.edu used by 3 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Johnson & Wales University",
+  "university_id": "87cd3e08-699f-5c1e-8d0c-c2208e7b6e9f",
+  "target": false,
+  "detail": "jwu.edu used by 3 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Johnson & Wales University-Providence",
+  "university_id": "a04ff9e8-06fe-5f71-a1e2-3afe56458086",
+  "target": false,
+  "detail": "jwu.edu used by 3 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Johnson & Wales University-Charlotte",
+  "university_id": "263eb9d2-b567-522c-968b-d754ab07c84f",
+  "target": false,
+  "detail": "jwu.edu used by 3 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Miami University of Ohio",
+  "university_id": "b9e6ef7c-0381-5731-b82b-8e165fbec588",
+  "target": false,
+  "detail": "miamioh.edu used by 4 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Miami University-Hamilton",
+  "university_id": "740158e1-14d3-540b-ba99-37ae49e4fa25",
+  "target": false,
+  "detail": "miamioh.edu used by 4 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Miami University-Middletown",
+  "university_id": "04171332-b0f7-540b-9935-cd4205750b45",
+  "target": false,
+  "detail": "miamioh.edu used by 4 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Miami University-Oxford",
+  "university_id": "fb867c09-03d2-5623-9f08-d2ba63b032d4",
+  "target": false,
+  "detail": "miamioh.edu used by 4 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "National University",
+  "university_id": "1ae9f9b4-1cb4-5df6-bc51-14aea3b29f61",
+  "target": false,
+  "detail": "nu.edu used by 3 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "National University",
+  "university_id": "27e3e0b2-ab7e-565f-8835-e7cc6d46c463",
+  "target": false,
+  "detail": "nu.edu used by 3 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Northcentral University",
+  "university_id": "2d664129-67ff-55ec-90f6-cb046a18ab86",
+  "target": false,
+  "detail": "nu.edu used by 3 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Northeastern University",
+  "university_id": "5fc62bb7-0198-5a07-8830-2735c17fd1ea",
+  "target": false,
+  "detail": "northeastern.edu used by 3 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Northeastern University",
+  "university_id": "1541038b-91e4-5c1d-aa25-22ad99d3df89",
+  "target": false,
+  "detail": "northeastern.edu used by 3 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Northeastern University Professional Programs",
+  "university_id": "ff2ef63a-842c-568d-b5fb-1adf4d42233e",
+  "target": false,
+  "detail": "northeastern.edu used by 3 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Purdue University-Main Campus",
+  "university_id": "14ed4c16-72dc-554b-92a0-83e1b9f8a224",
+  "target": false,
+  "detail": "purdue.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Purdue University West Lafayette",
+  "university_id": "9a947471-4d80-53e8-a2f1-ee9817b99918",
+  "target": false,
+  "detail": "purdue.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Saint Joseph's University - Philadelphia",
+  "university_id": "b2e6d513-48a7-5017-be3b-2fafc99a49a6",
+  "target": false,
+  "detail": "sju.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Saint Joseph's University - Lancaster",
+  "university_id": "0e1447a8-e059-5fa0-a2a3-394addcdd9c3",
+  "target": false,
+  "detail": "sju.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Saint Louis University",
+  "university_id": "b66ef1b3-f1b4-5d09-8421-eb3e384bdb91",
+  "target": false,
+  "detail": "slu.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Saint Louis University",
+  "university_id": "d38a1a3f-ca40-5744-baa0-9bb0156c30c5",
+  "target": false,
+  "detail": "slu.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "St. Joseph College (CT)",
+  "university_id": "d00adea6-69b2-54dc-a4f0-c12bff3c3a74",
+  "target": false,
+  "detail": "sjc.edu used by 3 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "St. John's College",
+  "university_id": "d2e9cf01-fbdb-5147-a03d-c327675a87ea",
+  "target": false,
+  "detail": "sjc.edu used by 3 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "St. John's College",
+  "university_id": "13ad95f1-00bb-50d1-bef2-13c5ac0ebce6",
+  "target": false,
+  "detail": "sjc.edu used by 3 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Strayer College",
+  "university_id": "0569cfac-07e2-532e-901c-8e7dae505e96",
+  "target": false,
+  "detail": "strayer.edu used by 18 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Strayer University-District of Columbia",
+  "university_id": "3c3c3657-ec2e-5a81-9e16-091cdc9ca86f",
+  "target": false,
+  "detail": "strayer.edu used by 18 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Strayer University-Virginia",
+  "university_id": "cf1f8221-a263-544d-acd0-61acf44bf435",
+  "target": false,
+  "detail": "strayer.edu used by 18 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Strayer University-Maryland",
+  "university_id": "466a1ea4-488c-5323-9bb5-b45408d3a833",
+  "target": false,
+  "detail": "strayer.edu used by 18 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Strayer University-Tennessee",
+  "university_id": "397d73cc-429e-5708-82be-181667edbbc6",
+  "target": false,
+  "detail": "strayer.edu used by 18 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Strayer University-Pennsylvania",
+  "university_id": "80b70a9c-636e-5fd5-ae37-0f0b04d1df54",
+  "target": false,
+  "detail": "strayer.edu used by 18 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Strayer University-Florida",
+  "university_id": "c3974f3b-eb32-5882-9241-3bd045d9f53f",
+  "target": false,
+  "detail": "strayer.edu used by 18 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Strayer University-Delaware",
+  "university_id": "ce8520de-1aed-5300-bba2-68d02804267c",
+  "target": false,
+  "detail": "strayer.edu used by 18 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Strayer University-Alabama",
+  "university_id": "af898397-ca07-5497-939d-ba44644fbd5c",
+  "target": false,
+  "detail": "strayer.edu used by 18 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Strayer University-North Carolina",
+  "university_id": "eb8431fb-63b1-5d39-8133-1cd7c3f518a9",
+  "target": false,
+  "detail": "strayer.edu used by 18 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Strayer University-New Jersey",
+  "university_id": "3789808c-5ece-5378-8c8e-125ac1c47e1a",
+  "target": false,
+  "detail": "strayer.edu used by 18 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Strayer University-West Virginia",
+  "university_id": "548e5f63-7098-5580-85c0-ee6f056f649b",
+  "target": false,
+  "detail": "strayer.edu used by 18 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Strayer University-Arkansas",
+  "university_id": "bc041932-1ec8-5d86-9cb3-416267a78e6f",
+  "target": false,
+  "detail": "strayer.edu used by 18 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Strayer University-Georgia",
+  "university_id": "50995bde-ab8d-5544-a720-7fb1f7bfd88b",
+  "target": false,
+  "detail": "strayer.edu used by 18 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Strayer University-Mississippi",
+  "university_id": "cda77b8c-e4ca-5287-bc51-9180f27d603a",
+  "target": false,
+  "detail": "strayer.edu used by 18 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Strayer University-South Carolina",
+  "university_id": "4d371745-0771-553c-8cc9-8e9bc1499e80",
+  "target": false,
+  "detail": "strayer.edu used by 18 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Strayer University-Texas",
+  "university_id": "10380e10-177f-52c1-a4b4-2d0fbba761b7",
+  "target": false,
+  "detail": "strayer.edu used by 18 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Strayer University-Global Region",
+  "university_id": "a53e8918-666d-56d0-ba78-c92a4f9ea274",
+  "target": false,
+  "detail": "strayer.edu used by 18 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Suffolk University",
+  "university_id": "ce87e222-bd57-5dc0-8e3b-bd64a80b5670",
+  "target": false,
+  "detail": "suffolk.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Suffolk University Madrid",
+  "university_id": "9e591522-618f-533c-b9f8-60ab97c10844",
+  "target": false,
+  "detail": "suffolk.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Trine University",
+  "university_id": "36035a4e-f08d-530d-9860-ea0767be1296",
+  "target": false,
+  "detail": "trine.edu used by 3 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Trine University",
+  "university_id": "795a0486-ad7c-5052-9963-88a3fd5fc3d9",
+  "target": false,
+  "detail": "trine.edu used by 3 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Trine University-Regional/Non-Traditional Campuses",
+  "university_id": "2160de15-87fa-5bda-a7fe-6ed7e310e0c1",
+  "target": false,
+  "detail": "trine.edu used by 3 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "University of Houston",
+  "university_id": "c73aa8d4-48b0-5ee4-b8a6-5b62bfa1ce65",
+  "target": false,
+  "detail": "uh.edu used by 3 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "University of Houston",
+  "university_id": "3a39d973-a8b5-5808-9512-eabb05f6fcec",
+  "target": false,
+  "detail": "uh.edu used by 3 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "University of Houston-System Administration",
+  "university_id": "ab4165b6-5c13-5edc-bdb3-db113b967b5b",
+  "target": false,
+  "detail": "uh.edu used by 3 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "University of Oklahoma-Norman Campus",
+  "university_id": "b7ce30ff-c74b-5fe9-8ae7-961187a3599f",
+  "target": false,
+  "detail": "ou.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "University of Oklahoma",
+  "university_id": "5ba21445-22f5-589d-8971-4fd732ef70dd",
+  "target": false,
+  "detail": "ou.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "University of South Carolina-Columbia",
+  "university_id": "bd069b44-16f4-52bc-af7b-a585fa2d36e3",
+  "target": false,
+  "detail": "sc.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "University of South Carolina",
+  "university_id": "9b9f0adc-7621-5b07-8b61-8b50124fd047",
+  "target": false,
+  "detail": "sc.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "West Coast University",
+  "university_id": "a286f05b-5a9f-53ec-9c03-7e8497273d6c",
+  "target": false,
+  "detail": "westcoastuniversity.edu used by 8 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "West Coast University-Texas",
+  "university_id": "f7e7058d-db60-5fcd-8fec-62dffcbaf76e",
+  "target": false,
+  "detail": "westcoastuniversity.edu used by 8 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "West Coast University-Anaheim-Orange County",
+  "university_id": "c03dcb5e-4f54-5edb-8e48-4cdab6004888",
+  "target": false,
+  "detail": "westcoastuniversity.edu used by 8 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "West Coast University-Ontario",
+  "university_id": "46370aec-ea3c-5dfc-87c2-42043e850a66",
+  "target": false,
+  "detail": "westcoastuniversity.edu used by 8 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "West Coast University-Texas",
+  "university_id": "ce4da277-86d6-5ddd-b1db-3b4e9c0a3615",
+  "target": false,
+  "detail": "westcoastuniversity.edu used by 8 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "West Coast University-Miami",
+  "university_id": "4c56c561-dff4-5a97-bd8b-6fa472217b7f",
+  "target": false,
+  "detail": "westcoastuniversity.edu used by 8 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "West Coast University-Center for Graduate Studies",
+  "university_id": "38321ee2-a4c4-50da-afa9-5e4fc8f37978",
+  "target": false,
+  "detail": "westcoastuniversity.edu used by 8 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "West Coast University-Los Angeles",
+  "university_id": "7aee0475-c598-585f-8bab-aed5a4b488c5",
+  "target": false,
+  "detail": "westcoastuniversity.edu used by 8 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Whitworth College",
+  "university_id": "baffc409-405e-5d22-a2d1-b1a99625866e",
+  "target": false,
+  "detail": "whitworth.edu used by 3 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Whitworth University",
+  "university_id": "c9e9e1fe-65f0-563b-9d80-8b00d4862ba9",
+  "target": false,
+  "detail": "whitworth.edu used by 3 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Whitworth University-Adult Degree Programs",
+  "university_id": "2eff0fe5-1a59-528d-805d-7e7ca73e76c1",
+  "target": false,
+  "detail": "whitworth.edu used by 3 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Willamette University",
+  "university_id": "d9c77312-bf54-5588-8615-19cfd8e3f2de",
+  "target": false,
+  "detail": "willamette.edu used by 3 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Pacific Northwest College of Art",
+  "university_id": "4554116c-6099-566e-afec-7558faa01cf8",
+  "target": false,
+  "detail": "willamette.edu used by 3 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Willamette University",
+  "university_id": "db279679-e2b1-5f11-b706-e0bdac47ba44",
+  "target": false,
+  "detail": "willamette.edu used by 3 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Universidad Albert Einstein",
+  "university_id": "e5d0f0cc-f1f3-5ea4-a1a2-9d532a8b2ee5",
+  "target": false,
+  "detail": "uae.edu.sv used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Universidad Albert Einstein",
+  "university_id": "e1e22a30-8637-59e4-97af-26076aa0e6b7",
+  "target": false,
+  "detail": "uae.edu.sv used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "University of Guam",
+  "university_id": "3c95fb58-50be-5f97-bbb5-bdfeeb60e0b5",
+  "target": false,
+  "detail": "uog.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "University of Guam",
+  "university_id": "ca13c37a-bd16-5269-8c1c-daf9e75c4080",
+  "target": false,
+  "detail": "uog.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Sikkim Manipal University of Health, Medical and Technological Sciences",
+  "university_id": "d839c72d-0208-5c88-bb80-e196646c9c16",
+  "target": false,
+  "detail": "smu.edu.in used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Sikkim Manipal University",
+  "university_id": "dc4e7b98-fd3e-5324-a067-8da09035b161",
+  "target": false,
+  "detail": "smu.edu.in used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Aga Khan University",
+  "university_id": "3d07198a-54ac-5d1a-8501-b3daafaeae7e",
+  "target": false,
+  "detail": "aku.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Aga Khan University",
+  "university_id": "e9455c6a-8e79-5ccc-9a34-0a835a4b6847",
+  "target": false,
+  "detail": "aku.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Caribbean University",
+  "university_id": "9b067fa4-f3bf-5bef-81fd-a3dff1641f9b",
+  "target": false,
+  "detail": "caribbean.edu used by 5 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Caribbean University-Bayamon",
+  "university_id": "ff46cb6a-7c74-5a84-be91-d17ca7975bc8",
+  "target": false,
+  "detail": "caribbean.edu used by 5 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Caribbean University-Carolina",
+  "university_id": "f89ba862-c069-5e2d-bb70-af99bc19a306",
+  "target": false,
+  "detail": "caribbean.edu used by 5 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Caribbean University-Ponce",
+  "university_id": "d250fb5f-672a-532b-9932-f0be39565c55",
+  "target": false,
+  "detail": "caribbean.edu used by 5 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Caribbean University-Vega Baja",
+  "university_id": "a614298a-bb06-5ad6-86b2-bf25aacb4ac9",
+  "target": false,
+  "detail": "caribbean.edu used by 5 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Universidad de Puerto Rico, Cayey",
+  "university_id": "382d6b1a-dc0b-5475-85b6-520c8ae7827d",
+  "target": false,
+  "detail": "cayey.upr.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "University of Puerto Rico at Cayey",
+  "university_id": "ebc9d6cc-021e-5019-aaee-6e7dcf14cef8",
+  "target": false,
+  "detail": "cayey.upr.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Universidad Interamericana de Puerto Rico",
+  "university_id": "0fdf55b6-4413-5607-9b3b-6c75f74eff8a",
+  "target": false,
+  "detail": "inter.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Inter American University of Puerto Rico-Central Office",
+  "university_id": "3b453913-c6df-575f-91e4-b9763a657e39",
+  "target": false,
+  "detail": "inter.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Pontificia Universidad Catolica de Puerto Rico",
+  "university_id": "d38e5fac-24b9-5a23-92c8-6fa55e9ef3e5",
+  "target": false,
+  "detail": "pucpr.edu used by 3 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Pontifical Catholic University of Puerto Rico-Arecibo",
+  "university_id": "ffc44ad2-adb2-5cb1-b5e2-c60a4397780d",
+  "target": false,
+  "detail": "pucpr.edu used by 3 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Pontifical Catholic University of Puerto Rico-Ponce",
+  "university_id": "bce0e32c-0b3f-5d4d-b525-5079864061c7",
+  "target": false,
+  "detail": "pucpr.edu used by 3 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Universidad de Puerto Rico, Ciencias Medicas",
+  "university_id": "c922f8d2-9b5c-5925-b040-4e5c9f2b6f01",
+  "target": false,
+  "detail": "rcm.upr.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "University of Puerto Rico-Medical Sciences",
+  "university_id": "1aedde08-953b-5f2b-b47a-7247bc83d8ad",
+  "target": false,
+  "detail": "rcm.upr.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Universidad del Sagrado Corazon",
+  "university_id": "7a095e32-43a5-5b45-8360-c997af07a1fd",
+  "target": false,
+  "detail": "sagrado.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Universidad del Sagrado Corazon",
+  "university_id": "cf75c9a9-9974-513e-be99-647468731735",
+  "target": false,
+  "detail": "sagrado.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "San Juan Bautista School of Medicine",
+  "university_id": "18ebf1c3-cf95-5bb9-a4ff-b24eaadd8dc3",
+  "target": false,
+  "detail": "sanjuanbautista.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "San Juan Bautista School of Medicine",
+  "university_id": "acc89803-e366-51b3-b659-5abc759674f8",
+  "target": false,
+  "detail": "sanjuanbautista.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Universidad Central de Bayamón",
+  "university_id": "9f06b1a0-6151-5637-ade9-8ad112a8db62",
+  "target": false,
+  "detail": "ucb.edu.pr used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Universidad Central de Bayamon",
+  "university_id": "fd64f331-5dc7-58fa-bef3-cd32cc6cc6df",
+  "target": false,
+  "detail": "ucb.edu.pr used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Universidad Central del Caribe",
+  "university_id": "8756c20e-186f-5193-afaf-98d8da8ba38b",
+  "target": false,
+  "detail": "uccaribe.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Universidad Central Del Caribe",
+  "university_id": "63dce02a-6e47-5bd9-a20a-b649cfbf1e31",
+  "target": false,
+  "detail": "uccaribe.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Universidad de Puerto Rico, Arecibo",
+  "university_id": "2c86859b-0890-5c82-bfd5-a0e86ac39139",
+  "target": false,
+  "detail": "upra.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "University of Puerto Rico-Arecibo",
+  "university_id": "6bc01ad1-81c5-5de9-8b3d-ce0dc273f07d",
+  "target": false,
+  "detail": "upra.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Universidad de Puerto Rico, Aguadilla",
+  "university_id": "8e0460b1-4817-53e9-be7c-f2136c93c306",
+  "target": false,
+  "detail": "uprag.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "University of Puerto Rico-Aguadilla",
+  "university_id": "848d2e3a-574c-5ad9-8be3-9c1a9831f236",
+  "target": false,
+  "detail": "uprag.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Universidad de Puerto Rico, Bayamon",
+  "university_id": "a802168d-e503-51d4-a18d-1fa9b21efa8d",
+  "target": false,
+  "detail": "uprb.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "University of Puerto Rico",
+  "university_id": "6d4e82d8-efbb-55ec-b031-486e6dd6cce6",
+  "target": false,
+  "detail": "uprb.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Universidad de Puerto Rico, Carolina",
+  "university_id": "95bcf431-350c-5785-aa54-ab1c457a6026",
+  "target": false,
+  "detail": "uprc.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "University of Puerto Rico-Carolina",
+  "university_id": "2e7103a9-9958-5184-98ef-02378c43e08f",
+  "target": false,
+  "detail": "uprc.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Universidad de Puerto Rico, Mayaguez",
+  "university_id": "5836a921-2f25-5843-b393-aad9b9236ccc",
+  "target": false,
+  "detail": "uprm.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "University of Puerto Rico-Mayaguez",
+  "university_id": "fe4a81c6-344a-56dd-ab5d-2abb77d59e54",
+  "target": false,
+  "detail": "uprm.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Universidad de Puerto Rico, Rio Pedras",
+  "university_id": "ed00d508-35c8-5ecb-b7d3-e2375d997644",
+  "target": false,
+  "detail": "uprrp.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "University of Puerto Rico-Rio Piedras",
+  "university_id": "aba8eeb4-88a6-58d8-8c27-7ada409c8cc4",
+  "target": false,
+  "detail": "uprrp.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Universidad de Puerto Rico, Utuado",
+  "university_id": "c6712f45-c21a-54f3-902e-924bdfefa6b0",
+  "target": false,
+  "detail": "uprutuado.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "University of Puerto Rico-Utuado",
+  "university_id": "90d167c8-c9c2-5bbc-9487-d7311f5a99c2",
+  "target": false,
+  "detail": "uprutuado.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Plekhanov Russian Academy of Economics",
+  "university_id": "60cd6b2b-4451-50ef-bdd5-d6163b91b889",
+  "target": false,
+  "detail": "rea.ru used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Russian Economic University after G.V. Plekhanov",
+  "university_id": "4c6c3693-a60d-5db2-9474-183c31cec805",
+  "target": true,
+  "detail": "rea.ru used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "University of Glasgow",
+  "university_id": "61b5c222-f7d2-5ff7-a546-b186e73b945b",
+  "target": false,
+  "detail": "gla.ac.uk used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "University of Glasgow Singapore",
+  "university_id": "bc22d913-c102-53c4-a2be-613512133935",
+  "target": false,
+  "detail": "gla.ac.uk used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Heriot-Watt University",
+  "university_id": "9be52f2e-e5f1-5b79-beb7-1fe59f0021ab",
+  "target": false,
+  "detail": "hw.ac.uk used by 3 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Heriot-Watt University Dubai",
+  "university_id": "78fc86fb-8023-5470-9bf6-31033349376c",
+  "target": false,
+  "detail": "hw.ac.uk used by 3 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Heriot-Watt University Malaysia",
+  "university_id": "a2dcafb7-9fce-5468-a0a8-19e98369a8ad",
+  "target": false,
+  "detail": "hw.ac.uk used by 3 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Newcastle University",
+  "university_id": "59063bbd-5451-5ae4-8f6b-b04ebf2c2161",
+  "target": false,
+  "detail": "ncl.ac.uk used by 3 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Newcastle University Singapore",
+  "university_id": "8e1166bb-b231-5756-9fd7-d861b0421788",
+  "target": false,
+  "detail": "ncl.ac.uk used by 3 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Newcastle University Medicine Malaysia",
+  "university_id": "e23333cb-3037-56c0-ad8c-376376153d1c",
+  "target": false,
+  "detail": "ncl.ac.uk used by 3 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Carrington College California-Sacramento",
+  "university_id": "092d099b-0eb1-5940-860c-fa2009f83f26",
+  "target": false,
+  "detail": "carrington.edu used by 3 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Carrington College-Sacramento",
+  "university_id": "b62ccf4a-2707-5909-a4dc-ab818e664196",
+  "target": false,
+  "detail": "carrington.edu used by 3 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Carrington College-Administrative Office",
+  "university_id": "dd5ce019-7fba-5db8-a748-fe4dc966fcd3",
+  "target": false,
+  "detail": "carrington.edu used by 3 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "San Joaquin Valley College-Visalia",
+  "university_id": "b18b5cf9-45b2-55b1-87fc-e94fb8be57ce",
+  "target": false,
+  "detail": "sjvc.edu used by 3 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "San Joaquin Valley College-Visalia",
+  "university_id": "19129f7d-bf2d-5841-9205-1cb76056c979",
+  "target": false,
+  "detail": "sjvc.edu used by 3 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "San Joaquin Valley College-Central Administrative Office",
+  "university_id": "73dbf876-61a9-5a6d-83ff-23a68e25543d",
+  "target": false,
+  "detail": "sjvc.edu used by 3 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Delaware Technical Community College",
+  "university_id": "e5529301-14a5-5da5-b78c-26172a7cf871",
+  "target": false,
+  "detail": "dtcc.edu used by 3 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Delaware Technical Community College-Central Office",
+  "university_id": "519141eb-d083-5bd1-af5d-e172f53ea544",
+  "target": false,
+  "detail": "dtcc.edu used by 3 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Delaware Technical Community College-Terry",
+  "university_id": "8cf7252f-89a4-55d1-b32b-4ad3509ba47e",
+  "target": false,
+  "detail": "dtcc.edu used by 3 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Galen College of Nursing-Louisville",
+  "university_id": "6e65853d-f981-5700-8e42-aa939faa0f24",
+  "target": false,
+  "detail": "galencollege.edu used by 15 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Galen College of Nursing-Louisville",
+  "university_id": "5b3fe16c-9634-5cd1-bca5-02b69a657d7b",
+  "target": false,
+  "detail": "galencollege.edu used by 15 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Galen College of Nursing-Tampa Bay",
+  "university_id": "a1d221b4-9cb3-50a7-b62b-fd2d7a3abaed",
+  "target": false,
+  "detail": "galencollege.edu used by 15 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Galen College of Nursing-San Antonio",
+  "university_id": "f7479982-d2b7-53d6-9cac-57f60c2c07a7",
+  "target": false,
+  "detail": "galencollege.edu used by 15 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Galen College of Nursing-Cincinnati",
+  "university_id": "4f433439-3783-5ae6-a0b6-7d5c14f0c929",
+  "target": false,
+  "detail": "galencollege.edu used by 15 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Galen Health Institutes-Miami Campus",
+  "university_id": "924b8510-def7-5844-9f05-ebfbac24f5a2",
+  "target": false,
+  "detail": "galencollege.edu used by 15 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Galen Health Institutes-Austin Campus",
+  "university_id": "3d67d80b-a1e8-57df-b4cd-f83f6b2c0c59",
+  "target": false,
+  "detail": "galencollege.edu used by 15 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Galen Health Institutes-Nashville Campus",
+  "university_id": "a40ab182-a567-5dce-8972-3a0030bab936",
+  "target": false,
+  "detail": "galencollege.edu used by 15 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Galen Health Institutes-Sarasota",
+  "university_id": "6c549f91-a15c-5428-a490-4d5e4ef5ce23",
+  "target": false,
+  "detail": "galencollege.edu used by 15 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Galen Health Institutes-Gainesville",
+  "university_id": "ff9f216e-8620-5e4b-a696-2949982390ac",
+  "target": false,
+  "detail": "galencollege.edu used by 15 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Galen Health Institutes-Asheville",
+  "university_id": "a650a26b-d904-5628-a311-93b513088961",
+  "target": false,
+  "detail": "galencollege.edu used by 15 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Galen Health Institutes-Houston",
+  "university_id": "8ab3b7a2-d421-5d1e-aa32-a684e6d34415",
+  "target": false,
+  "detail": "galencollege.edu used by 15 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Galen Health Institutes-Dallas",
+  "university_id": "a21d2cd3-12b7-50df-a1ba-ea7e383a4f3b",
+  "target": false,
+  "detail": "galencollege.edu used by 15 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Galen Health Institutes-Las Vegas",
+  "university_id": "9224f5f3-98db-5dd2-b25d-c73eae08cb97",
+  "target": false,
+  "detail": "galencollege.edu used by 15 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Galen Health Institutes-Aurora",
+  "university_id": "18d43dbf-e742-5bb3-afba-8923fa5c82ba",
+  "target": false,
+  "detail": "galencollege.edu used by 15 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Midwestern University",
+  "university_id": "fb58ea49-fc9d-5935-89ae-f1a1de2ae67a",
+  "target": false,
+  "detail": "midwestern.edu used by 3 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Midwestern University-Downers Grove",
+  "university_id": "ae68ec9b-3148-51dd-9019-e94e9be0e727",
+  "target": false,
+  "detail": "midwestern.edu used by 3 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Midwestern University-Glendale",
+  "university_id": "d6740789-473e-5153-b81d-e96465d75943",
+  "target": false,
+  "detail": "midwestern.edu used by 3 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "HULT Business School",
+  "university_id": "cb832de2-cb24-58e9-83b3-b5d783684eed",
+  "target": false,
+  "detail": "hult.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Hult International Business School",
+  "university_id": "c8ea9e28-feb9-5781-96b0-d05d416ce733",
+  "target": false,
+  "detail": "hult.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Berkeley College",
+  "university_id": "8e9bba28-565d-50dd-a2ff-7a6df14d0005",
+  "target": false,
+  "detail": "berkeleycollege.edu used by 3 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Berkeley College-Woodland Park",
+  "university_id": "2a98b3e0-7431-5f3a-95e7-beef94b848e0",
+  "target": false,
+  "detail": "berkeleycollege.edu used by 3 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Berkeley College-New York",
+  "university_id": "805256ac-87b0-5647-96c6-23b2df7f4dbf",
+  "target": false,
+  "detail": "berkeleycollege.edu used by 3 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Schiller International University",
+  "university_id": "d24e2f5d-6aaf-51be-a7ad-5fb445454cbf",
+  "target": false,
+  "detail": "schiller.edu used by 3 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Schiller International University",
+  "university_id": "39064007-358f-5707-86f8-b28989680565",
+  "target": false,
+  "detail": "schiller.edu used by 3 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Schiller International University",
+  "university_id": "d3f48cd0-02ec-52ce-92cd-3bd8ebd7aa2a",
+  "target": false,
+  "detail": "schiller.edu used by 3 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "South University-Montgomery",
+  "university_id": "20ebbd2b-169a-5c5d-8899-54ce97a9bb37",
+  "target": false,
+  "detail": "southuniversity.edu used by 10 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "South University-West Palm Beach",
+  "university_id": "41c6ccb8-1457-53b8-97ac-1284311fc16a",
+  "target": false,
+  "detail": "southuniversity.edu used by 10 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "South University-Savannah",
+  "university_id": "b9d21a26-b4b8-50bb-b778-005b73df7ce8",
+  "target": false,
+  "detail": "southuniversity.edu used by 10 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "South University-Columbia",
+  "university_id": "0ba337b2-8dcd-5f6c-b294-2ba562a4d8da",
+  "target": false,
+  "detail": "southuniversity.edu used by 10 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "South University-Tampa",
+  "university_id": "17688ca8-3665-54b6-b643-b8300b4c2a54",
+  "target": false,
+  "detail": "southuniversity.edu used by 10 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "South University-Richmond",
+  "university_id": "54781821-a0b5-5aef-81a5-0d77f38cc4c8",
+  "target": false,
+  "detail": "southuniversity.edu used by 10 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "South University-Virginia Beach",
+  "university_id": "3b0a089f-11e2-5278-9e43-4553a7918995",
+  "target": false,
+  "detail": "southuniversity.edu used by 10 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "South University-Savannah Online",
+  "university_id": "ffe46a0a-c27d-57b9-8b77-79b9f2ac4e7b",
+  "target": false,
+  "detail": "southuniversity.edu used by 10 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "South University-Austin",
+  "university_id": "aba990c4-c68f-5a9b-8c16-e1ad62b44161",
+  "target": false,
+  "detail": "southuniversity.edu used by 10 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "South University-High Point",
+  "university_id": "849e3582-b7a5-5e82-84a8-aaeeee0f3ec4",
+  "target": false,
+  "detail": "southuniversity.edu used by 10 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Herzing University-Birmingham",
+  "university_id": "cf3088ff-dc25-5d8d-b8d8-1951fb0b6a6a",
+  "target": false,
+  "detail": "herzing.edu used by 12 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Herzing University-Atlanta",
+  "university_id": "d7bfa567-031a-579e-b38d-608731613612",
+  "target": false,
+  "detail": "herzing.edu used by 12 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Herzing University-Minneapolis",
+  "university_id": "b2db7584-93c6-5a2c-8751-208e2141faa2",
+  "target": false,
+  "detail": "herzing.edu used by 12 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Herzing University-Akron",
+  "university_id": "5f0a4f94-22df-5a31-825e-aa159a93115b",
+  "target": false,
+  "detail": "herzing.edu used by 12 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Herzing University-Madison",
+  "university_id": "fffde34b-5755-51bd-b141-a893351b9e87",
+  "target": false,
+  "detail": "herzing.edu used by 12 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Herzing University-Orlando",
+  "university_id": "18735117-8f3b-528d-a4f1-ec4807ab9447",
+  "target": false,
+  "detail": "herzing.edu used by 12 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Herzing University-New Orleans",
+  "university_id": "dbb45909-ca22-5ff7-be06-4f058179c6c7",
+  "target": false,
+  "detail": "herzing.edu used by 12 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Herzing University-Kenosha",
+  "university_id": "25205dec-0ef9-58e1-82e8-584359c4bb4b",
+  "target": false,
+  "detail": "herzing.edu used by 12 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Herzing University-Brookfield",
+  "university_id": "56f7c773-26cd-54ae-9662-5163869379a0",
+  "target": false,
+  "detail": "herzing.edu used by 12 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Herzing University-Tampa",
+  "university_id": "7f28399a-461d-53a9-b400-0fbbaa45e117",
+  "target": false,
+  "detail": "herzing.edu used by 12 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Herzing University-Nashville",
+  "university_id": "739fadb0-489f-56e7-b16b-6f64db549ba3",
+  "target": false,
+  "detail": "herzing.edu used by 12 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Herzing University-Clarksville",
+  "university_id": "893025ea-36cb-5b22-b43b-4e49d6f92911",
+  "target": false,
+  "detail": "herzing.edu used by 12 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Brookline College-Phoenix",
+  "university_id": "81db65dc-1c7f-569e-ac45-b2bad376331e",
+  "target": false,
+  "detail": "brooklinecollege.edu used by 3 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Brookline College-Tucson",
+  "university_id": "d32cf59c-ad02-550f-bc29-2c9aa8bf2d0d",
+  "target": false,
+  "detail": "brooklinecollege.edu used by 3 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Brookline College-Albuquerque",
+  "university_id": "04c67958-afa7-520e-85be-7389120ae453",
+  "target": false,
+  "detail": "brooklinecollege.edu used by 3 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Middlebury Institute of International Studies at Monterey",
+  "university_id": "371a932c-f456-59d6-917c-2cea3f6e3f34",
+  "target": false,
+  "detail": "middlebury.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Middlebury College",
+  "university_id": "62e472e5-32e1-55c3-889f-1d609383ef65",
+  "target": false,
+  "detail": "middlebury.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Trinity Law School",
+  "university_id": "ee82d533-22a2-52ce-a080-e99e3111a669",
+  "target": false,
+  "detail": "tiu.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Trinity International University-Illinois",
+  "university_id": "c6c1f7ab-5f2b-5815-bde9-52aa6048e018",
+  "target": false,
+  "detail": "tiu.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "The Colleges of Law at Ventura",
+  "university_id": "8885f5bd-43c9-5f09-b334-96c87f475c33",
+  "target": false,
+  "detail": "collegesoflaw.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "The Colleges of Law at Santa Barbara",
+  "university_id": "355aa42e-1cd4-5138-8d91-2ad05095f9fe",
+  "target": false,
+  "detail": "collegesoflaw.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Concorde Career College-Aurora",
+  "university_id": "08446b0e-cc32-5bfd-bde7-eddc4e76676a",
+  "target": false,
+  "detail": "concorde.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Concorde Career College-Kansas City",
+  "university_id": "e9d36d42-ef9b-5f5c-b572-197e5d4adf97",
+  "target": false,
+  "detail": "concorde.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Albizu University-Miami",
+  "university_id": "d678c2e2-aca5-54e2-9ff8-a606ca859fba",
+  "target": false,
+  "detail": "albizu.edu used by 3 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Albizu University-San Juan",
+  "university_id": "5ac814aa-4a6f-522e-9a15-174b9ee98ec7",
+  "target": false,
+  "detail": "albizu.edu used by 3 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Carlos Albizu University",
+  "university_id": "08d2e5f4-1610-519a-b9ec-b3dabef5bb88",
+  "target": false,
+  "detail": "albizu.edu used by 3 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Rasmussen University-Florida",
+  "university_id": "6307ef90-35af-54f5-9d21-85f6c5fc5deb",
+  "target": false,
+  "detail": "rasmussen.edu used by 5 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Rasmussen University-Minnesota",
+  "university_id": "ce58e2e8-1b49-5e6e-899d-b12eebcab313",
+  "target": false,
+  "detail": "rasmussen.edu used by 5 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Rasmussen University-North Dakota",
+  "university_id": "dfe48f01-0050-553d-ac24-2fe82ecd631a",
+  "target": false,
+  "detail": "rasmussen.edu used by 5 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Rasmussen University-Wisconsin",
+  "university_id": "b172b6b7-eca9-5a63-83f4-d9dca344c933",
+  "target": false,
+  "detail": "rasmussen.edu used by 5 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Rasmussen University-Kansas",
+  "university_id": "fc25979f-94fd-50cb-b6a8-74482b851678",
+  "target": false,
+  "detail": "rasmussen.edu used by 5 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "The Chicago School at Chicago",
+  "university_id": "0cbeaed2-afde-515f-9781-2e89f96c7847",
+  "target": false,
+  "detail": "thechicagoschool.edu used by 8 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "The Chicago School at Anaheim",
+  "university_id": "cd075eac-1412-511d-9b04-cc2126e14ac9",
+  "target": false,
+  "detail": "thechicagoschool.edu used by 8 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "The Chicago School at Los Angeles",
+  "university_id": "42183b55-2bf2-587d-8f57-f3de2b96dcb1",
+  "target": false,
+  "detail": "thechicagoschool.edu used by 8 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "The Chicago School at Washington DC",
+  "university_id": "0b506ea1-b60f-5bf2-980b-72a2d2465ca2",
+  "target": false,
+  "detail": "thechicagoschool.edu used by 8 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "The Chicago School at Xavier University of Louisiana",
+  "university_id": "0243a1c0-24be-5a68-b978-6a053a28f12b",
+  "target": false,
+  "detail": "thechicagoschool.edu used by 8 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "The Chicago School at San Diego",
+  "university_id": "f7528d47-8c18-5adb-9d40-eff5ec55e82f",
+  "target": false,
+  "detail": "thechicagoschool.edu used by 8 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "The Chicago School at Dallas",
+  "university_id": "77b077be-bf04-5b9d-a8e2-ed39729b7eb4",
+  "target": false,
+  "detail": "thechicagoschool.edu used by 8 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "The Chicago School at Dallas",
+  "university_id": "3332165c-cb34-5895-a032-365bd323b2fe",
+  "target": false,
+  "detail": "thechicagoschool.edu used by 8 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Marian University",
+  "university_id": "2b1c79e1-f1ce-59e2-9741-4d2d64681890",
+  "target": false,
+  "detail": "marian.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Marian University-Ancilla",
+  "university_id": "caaaa7b8-60ea-535e-bcb9-17cb1df11fbd",
+  "target": false,
+  "detail": "marian.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Ottawa University-Ottawa",
+  "university_id": "e810e03e-39cc-58eb-b9f5-a72a6b198c3f",
+  "target": false,
+  "detail": "ottawa.edu used by 5 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Ottawa University-Kansas City",
+  "university_id": "99b67142-f8a4-52f1-aba8-fa6c1e9fa497",
+  "target": false,
+  "detail": "ottawa.edu used by 5 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Ottawa University-Milwaukee",
+  "university_id": "5fb7c2c8-bff3-5b17-ac53-805edb1b1969",
+  "target": false,
+  "detail": "ottawa.edu used by 5 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Ottawa University-Online",
+  "university_id": "4941a8bd-3ddb-58e3-afa6-ef02ee96a2d6",
+  "target": false,
+  "detail": "ottawa.edu used by 5 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Ottawa University-Surprise",
+  "university_id": "9f256e85-ea30-5a32-989d-c45e83f0b925",
+  "target": false,
+  "detail": "ottawa.edu used by 5 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "American National University-Louisville",
+  "university_id": "34d9a8e2-c7cd-55af-8b0b-fa2899fcfae2",
+  "target": false,
+  "detail": "an.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "American National University",
+  "university_id": "8025d4ee-c57b-537f-b01c-94210b109465",
+  "target": false,
+  "detail": "an.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "University System of Maryland",
+  "university_id": "9462e1d9-5bcd-5dab-855b-5b8f4f217e40",
+  "target": false,
+  "detail": "usmd.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "University System of Maryland-Research Centers",
+  "university_id": "6b469eea-75fb-5b87-ab8b-60b8f977d567",
+  "target": false,
+  "detail": "usmd.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Springfield College",
+  "university_id": "b8dfff37-4a5a-5858-b2b1-1d2ae09757b0",
+  "target": false,
+  "detail": "springfield.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Springfield College-Regional, Online, and Continuing Education",
+  "university_id": "231c950b-64c2-5823-b581-d85326424ca8",
+  "target": false,
+  "detail": "springfield.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "University of Minnesota-Twin Cities",
+  "university_id": "7a69d9a7-0be2-58e0-9cd5-15e9ccb111d9",
+  "target": false,
+  "detail": "twin-cities.umn.edu used by 3 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "University of Minnesota System",
+  "university_id": "64d44ad6-b523-5410-ba6a-c208be4b3e1d",
+  "target": false,
+  "detail": "twin-cities.umn.edu used by 3 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "University of Minnesota",
+  "university_id": "4674bd89-775d-556f-b69b-e4671c3ec270",
+  "target": false,
+  "detail": "twin-cities.umn.edu used by 3 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Central Methodist University-College of Liberal Arts and Sciences",
+  "university_id": "7c7c64a9-1ca7-52f3-96c9-5bbd884ff050",
+  "target": false,
+  "detail": "centralmethodist.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Central Methodist University-College of Graduate and Extended Studies",
+  "university_id": "f1fb1e89-b101-52e0-9ed0-dbbd46919492",
+  "target": false,
+  "detail": "centralmethodist.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Evangel University",
+  "university_id": "f1ade667-05e4-5237-9bd6-36e0e59f1083",
+  "target": false,
+  "detail": "evangel.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Evangel University-College of Online Learning",
+  "university_id": "33ba26ee-323a-5d83-8675-cbfea5dc5161",
+  "target": false,
+  "detail": "evangel.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Eastwick College-Hackensack",
+  "university_id": "97b66538-6b27-50cf-9301-6239a9dab044",
+  "target": false,
+  "detail": "eastwickcollege.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Eastwick College-Ramsey",
+  "university_id": "34d9d03d-c1cf-599f-97f5-77d65fc87ef8",
+  "target": false,
+  "detail": "eastwickcollege.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Bryant & Stratton College-Albany",
+  "university_id": "fe9541f3-ae3a-579b-bc58-66185c994162",
+  "target": false,
+  "detail": "bryantstratton.edu used by 8 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Bryant & Stratton College-Syracuse North",
+  "university_id": "ca6fce8d-a0d0-5f63-b75b-a87caea8c5bc",
+  "target": false,
+  "detail": "bryantstratton.edu used by 8 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Bryant & Stratton College-Buffalo",
+  "university_id": "b354bd01-e263-53ce-8e46-26d2405f18b3",
+  "target": false,
+  "detail": "bryantstratton.edu used by 8 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Bryant & Stratton College-Greece",
+  "university_id": "3c3ae5d9-d79a-5dd4-9d0c-4e364d64aa2b",
+  "target": false,
+  "detail": "bryantstratton.edu used by 8 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Bryant & Stratton College-Parma",
+  "university_id": "87dbfbcb-d53e-5f1e-ac61-1f3e9acad2a2",
+  "target": false,
+  "detail": "bryantstratton.edu used by 8 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Bryant & Stratton College-Virginia Beach",
+  "university_id": "f4e6793a-15f6-54fe-b902-bffad568c1e1",
+  "target": false,
+  "detail": "bryantstratton.edu used by 8 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Bryant & Stratton College-Wauwatosa",
+  "university_id": "d5740a23-3bfe-56e5-b02c-11942b4f4d7b",
+  "target": false,
+  "detail": "bryantstratton.edu used by 8 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Bryant & Stratton College-Online",
+  "university_id": "899ed430-cb08-5a6a-896c-b870f0f984ed",
+  "target": false,
+  "detail": "bryantstratton.edu used by 8 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Mesivta Torah Vodaath Rabbinical Seminary",
+  "university_id": "95d6d40f-9379-55b0-988a-32963465db34",
+  "target": false,
+  "detail": "independentrabbinicalcolleges.org used by 3 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Rabbinical College Telshe",
+  "university_id": "f797df59-45a5-56b3-b773-a8dc299b180b",
+  "target": false,
+  "detail": "independentrabbinicalcolleges.org used by 3 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Talmudical Seminary of Bobov",
+  "university_id": "7d9b9d80-ae8d-5397-b447-49e7cb144687",
+  "target": false,
+  "detail": "independentrabbinicalcolleges.org used by 3 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Kent State University at Ashtabula",
+  "university_id": "a3835e74-fdd2-5ee2-bb14-3527c34f8f2b",
+  "target": false,
+  "detail": "kent.edu used by 9 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Kent State University at East Liverpool",
+  "university_id": "e5c000e1-d622-57fe-80ce-fc4d74ac30a2",
+  "target": false,
+  "detail": "kent.edu used by 9 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Kent State University at Stark",
+  "university_id": "25c9f487-194c-5dd8-80e8-a307ce2cd02a",
+  "target": false,
+  "detail": "kent.edu used by 9 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Kent State University at Trumbull",
+  "university_id": "5a5ed79d-af93-5962-b747-efe81249cfb5",
+  "target": false,
+  "detail": "kent.edu used by 9 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Kent State University at Tuscarawas",
+  "university_id": "6ec1e429-e3fa-5f0d-b9af-db8197883601",
+  "target": false,
+  "detail": "kent.edu used by 9 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Kent State University at Salem",
+  "university_id": "577b6063-f525-559e-ae58-30f5c0044c3f",
+  "target": false,
+  "detail": "kent.edu used by 9 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Kent State University at Kent",
+  "university_id": "a8dd360e-50bd-588b-a712-4806e8d0d4ec",
+  "target": false,
+  "detail": "kent.edu used by 9 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Kent State University at Geauga",
+  "university_id": "21eb73c8-5b7b-5b92-b863-08f81a371266",
+  "target": false,
+  "detail": "kent.edu used by 9 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Kent State University",
+  "university_id": "58d2db57-bd83-58a2-9982-da6fad988550",
+  "target": false,
+  "detail": "kent.edu used by 9 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Ohio University-Eastern Campus",
+  "university_id": "8167b79f-b2a0-5337-9038-1daad31c2455",
+  "target": false,
+  "detail": "ohio.edu used by 7 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Ohio University-Chillicothe Campus",
+  "university_id": "10e86575-7b96-547c-bc99-9cbbae928970",
+  "target": false,
+  "detail": "ohio.edu used by 7 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Ohio University-Southern Campus",
+  "university_id": "c2dd430d-3d94-5f8c-a510-4484355d3570",
+  "target": false,
+  "detail": "ohio.edu used by 7 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Ohio University-Lancaster Campus",
+  "university_id": "f0d5a72a-92fe-53fb-a5ad-cd377f213182",
+  "target": false,
+  "detail": "ohio.edu used by 7 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Ohio University-Main Campus",
+  "university_id": "798d1103-cc0e-5192-9c31-4079a5a01ade",
+  "target": false,
+  "detail": "ohio.edu used by 7 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Ohio University-Zanesville Campus",
+  "university_id": "b000be63-cba1-570a-aac9-566649ad3464",
+  "target": false,
+  "detail": "ohio.edu used by 7 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Ohio University",
+  "university_id": "739f1e7e-d441-5a13-8c40-dd7dad956529",
+  "target": false,
+  "detail": "ohio.edu used by 7 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Warner Pacific University",
+  "university_id": "c136e258-fcfb-54c7-911f-9c32ef223a7c",
+  "target": false,
+  "detail": "warnerpacific.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Warner Pacific University Professional and Graduate Studies",
+  "university_id": "f1ec132a-6962-5860-8bc5-a74c8f181b01",
+  "target": false,
+  "detail": "warnerpacific.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Alamo Community College District Central Office",
+  "university_id": "340ecc29-1b58-52f0-bc30-949d05b45455",
+  "target": false,
+  "detail": "alamo.edu used by 5 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "St Philip's College",
+  "university_id": "62831b4f-9431-51f7-b345-76d817aecb65",
+  "target": false,
+  "detail": "alamo.edu used by 5 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "San Antonio College",
+  "university_id": "8fb300b6-7b37-5e3c-8830-ca0872e19b0c",
+  "target": false,
+  "detail": "alamo.edu used by 5 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Palo Alto College",
+  "university_id": "2f9bec8d-d840-5af0-8316-98be61a89501",
+  "target": false,
+  "detail": "alamo.edu used by 5 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Northwest Vista College",
+  "university_id": "aebbeeaa-e6d4-51e9-bc09-f2e928f74c4e",
+  "target": false,
+  "detail": "alamo.edu used by 5 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Remington College-Dallas Campus",
+  "university_id": "7ce3b2ec-d7b4-52a3-a9b6-d16e5082868e",
+  "target": false,
+  "detail": "remingtoncollege.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Remington College-Shreveport Campus",
+  "university_id": "5c76c3d4-3a3d-5751-b7c7-5a01cbfda8de",
+  "target": false,
+  "detail": "remingtoncollege.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Western Technical College",
+  "university_id": "45ce9ec6-7bf0-5ff1-bff6-1a6db5701cbc",
+  "target": false,
+  "detail": "westerntech.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Western Technical College",
+  "university_id": "a93e4ecc-2064-5728-8888-0991b0f3a254",
+  "target": false,
+  "detail": "westerntech.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Eagle Gate College-Murray",
+  "university_id": "2798701d-599c-55f2-9c56-9d1970c2046b",
+  "target": false,
+  "detail": "eaglegatecollege.edu used by 4 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Eagle Gate College-Layton",
+  "university_id": "81f581c0-3aee-5c92-8aaa-6e0e13f803c7",
+  "target": false,
+  "detail": "eaglegatecollege.edu used by 4 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Provo College-Idaho Falls Campus",
+  "university_id": "90413d5f-a694-534f-a4b0-e16473f593ae",
+  "target": false,
+  "detail": "eaglegatecollege.edu used by 4 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Eagle Gate College-Boise Campus",
+  "university_id": "60fd5a9c-0c74-52d3-81fc-0c6cbdc347eb",
+  "target": false,
+  "detail": "eaglegatecollege.edu used by 4 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Centura College-Chesapeake",
+  "university_id": "688b8d1e-311b-507c-8556-23a55ab315ff",
+  "target": false,
+  "detail": "centuracollege.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Centura College-Chesapeake",
+  "university_id": "445951d3-ba2e-5562-928e-e56a8f5a1c33",
+  "target": false,
+  "detail": "centuracollege.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Northwest University",
+  "university_id": "4d736a48-bc99-5af4-8671-6b9a7d27364d",
+  "target": false,
+  "detail": "northwestu.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Northwest University-Center for Online and Extended Education",
+  "university_id": "2c92571a-aaab-531c-b6c8-9881f995c858",
+  "target": false,
+  "detail": "northwestu.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Universidad Adventista de las Antillas",
+  "university_id": "361f7389-e508-5d14-9620-2b403e57a0fc",
+  "target": false,
+  "detail": "uaa.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Antillean Adventist University",
+  "university_id": "afb72cac-ff00-5276-a37f-3803cf80ea0d",
+  "target": false,
+  "detail": "uaa.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Atlantic University",
+  "university_id": "121d9737-4c0e-5b63-b97c-c690ad2877e1",
+  "target": false,
+  "detail": "atlanticu.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Atlantic University College",
+  "university_id": "87005d73-9108-5a5b-88ec-bc189c33f294",
+  "target": false,
+  "detail": "atlanticu.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "CEM College-San Juan",
+  "university_id": "e1881e32-2537-5606-8bac-c8d2e86de90f",
+  "target": false,
+  "detail": "cemcollege.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "CEM College-Humacao",
+  "university_id": "3c5cd1c9-c9b1-5ff9-a6fd-64aebf6c0157",
+  "target": false,
+  "detail": "cemcollege.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Universidad Ana G. Mendez-Cupey Campus",
+  "university_id": "c29dd15a-e82d-5c1d-9b2f-ec5e419af4ea",
+  "target": false,
+  "detail": "uagm.edu used by 4 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Sistema Universitario Ana G. Mendez",
+  "university_id": "ee5a2b5f-7203-5671-889f-9c4a27179622",
+  "target": false,
+  "detail": "uagm.edu used by 4 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Universidad Ana G. Mendez-Carolina Campus",
+  "university_id": "c7c98e43-3b8d-57aa-aac4-93232fc74862",
+  "target": false,
+  "detail": "uagm.edu used by 4 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Universidad Ana G. Mendez-Gurabo Campus",
+  "university_id": "e73d6ff7-4a99-589d-8138-7437228987cc",
+  "target": false,
+  "detail": "uagm.edu used by 4 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "EDP University of Puerto Rico Inc-San Sebastian",
+  "university_id": "1a9d7f7e-1210-51a9-8e12-46095cd2879e",
+  "target": false,
+  "detail": "edpuniversity.edu used by 6 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "EDP University of Puerto Rico Inc-San Juan",
+  "university_id": "9afb0f96-1e6a-55bb-a4cf-0d6335d2e2b9",
+  "target": false,
+  "detail": "edpuniversity.edu used by 6 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "EDP University of Puerto Rico-Villalba",
+  "university_id": "bfeafee6-a389-5274-b38b-44d0d5aa6320",
+  "target": false,
+  "detail": "edpuniversity.edu used by 6 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "EDP University of Puerto Rico-Humacao",
+  "university_id": "02fbc4cd-652b-5638-ac52-dcc38e7fafa8",
+  "target": false,
+  "detail": "edpuniversity.edu used by 6 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "EDP University of Puerto Rico-Manati",
+  "university_id": "17552220-c3d6-503e-9e08-56ee73cdf9a1",
+  "target": false,
+  "detail": "edpuniversity.edu used by 6 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "EDP University of Puerto Rico-Caguas",
+  "university_id": "dfe48d00-bd70-561d-ae4f-f0f8ce483367",
+  "target": false,
+  "detail": "edpuniversity.edu used by 6 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Inter American University of Puerto Rico-Arecibo",
+  "university_id": "ab30138a-9756-5403-8683-008172bdecd8",
+  "target": false,
+  "detail": "arecibo.inter.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Inter American University of Puerto Rico, Arecibo Campus",
+  "university_id": "002ecffe-4b06-58ff-ba87-6854a2eb06b1",
+  "target": false,
+  "detail": "arecibo.inter.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Ponce Health Sciences University",
+  "university_id": "16e4a0fd-9d3d-517e-967c-42ad0105fb21",
+  "target": false,
+  "detail": "phsu.edu used by 4 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Ponce Health Sciences University-St Louis",
+  "university_id": "7fb1e38a-e4c2-51db-bb3b-8eed4a246dd5",
+  "target": false,
+  "detail": "phsu.edu used by 4 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Ponce Health Sciences University-East",
+  "university_id": "b76c9f8b-9a43-52ef-9af5-96251c4ddb8e",
+  "target": false,
+  "detail": "phsu.edu used by 4 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Ponce Health Sciences University",
+  "university_id": "741e332d-a5ff-5c59-9e92-b9a87fcfc50a",
+  "target": false,
+  "detail": "phsu.edu used by 4 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "University of Puerto Rico-Central Administration",
+  "university_id": "2cf2a25d-a3bd-5a09-80ac-69e38ffd940c",
+  "target": false,
+  "detail": "upr.edu used by 3 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "University of Puerto Rico-Humacao",
+  "university_id": "9644f316-7f99-5009-8d22-9cfb9b07a78b",
+  "target": false,
+  "detail": "upr.edu used by 3 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "University of Puerto Rico System",
+  "university_id": "389f0aba-be6c-5ce9-8f84-0d37eb744f0e",
+  "target": false,
+  "detail": "upr.edu used by 3 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Universidad Politecnica de Puerto Rico",
+  "university_id": "5625480a-9469-55bc-9d8e-434aacdf259f",
+  "target": false,
+  "detail": "pupr.edu used by 4 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Polytechnic University of Puerto Rico-Miami",
+  "university_id": "3d12e355-31d4-5bfd-a275-3bc71edffb37",
+  "target": false,
+  "detail": "pupr.edu used by 4 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Polytechnic University of Puerto Rico-Orlando",
+  "university_id": "57e8d7db-52be-58a2-a6bc-51519e88e91d",
+  "target": false,
+  "detail": "pupr.edu used by 4 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Polytechnic University of Puerto Rico",
+  "university_id": "7a7694b8-b742-5114-8cb9-db19894cf766",
+  "target": false,
+  "detail": "pupr.edu used by 4 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "University of the Virgin Islands",
+  "university_id": "ea1fda67-bc51-5a47-83a1-264c9d74c222",
+  "target": false,
+  "detail": "uvi.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "University of the Virgin Islands",
+  "university_id": "9ebac41e-2bd6-526a-90e7-15dfa7c9d705",
+  "target": false,
+  "detail": "uvi.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Antioch University",
+  "university_id": "a0abfc7e-51ee-59fa-bb19-c831af7c5e17",
+  "target": false,
+  "detail": "antioch.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Antioch University-System Administration",
+  "university_id": "38165940-b696-5d99-a7da-5cefb3a0a069",
+  "target": false,
+  "detail": "antioch.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Platt College-Los Angeles",
+  "university_id": "df0f6a41-de5c-5b91-8d76-3b6d8bd20171",
+  "target": false,
+  "detail": "plattcollege.edu used by 4 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Platt College-Ontario",
+  "university_id": "1cd241d0-afdb-5f29-845a-7be8e6ed757a",
+  "target": false,
+  "detail": "plattcollege.edu used by 4 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Platt College-Riverside",
+  "university_id": "8ee397ca-fe1c-5894-99d1-f24af60c7a9d",
+  "target": false,
+  "detail": "plattcollege.edu used by 4 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Platt College-Anaheim",
+  "university_id": "1d7d078a-87a4-52d2-bc69-2a5a21af8813",
+  "target": false,
+  "detail": "plattcollege.edu used by 4 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Pacific College of Health and Science",
+  "university_id": "cc68cdf0-0cc9-5af0-b5fd-c030eb2f333b",
+  "target": false,
+  "detail": "pacificcollege.edu used by 3 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Pacific College of Health and Science",
+  "university_id": "daf71f5d-14af-5a0e-bbd4-ed453758d7cd",
+  "target": false,
+  "detail": "pacificcollege.edu used by 3 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Pacific College of Health and Science",
+  "university_id": "624a4bc7-7410-576d-8570-fd347edcee17",
+  "target": false,
+  "detail": "pacificcollege.edu used by 3 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Midwest College of Oriental Medicine-Racine",
+  "university_id": "efb29797-56a2-5444-ac67-b4cd0c7d4ef7",
+  "target": false,
+  "detail": "acupuncture.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Midwest College of Oriental Medicine-Skokie",
+  "university_id": "603196da-7d9d-5e62-bb02-9836f71eb8e7",
+  "target": false,
+  "detail": "acupuncture.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "University of the Potomac-Washington DC Campus",
+  "university_id": "b14fbf51-d70e-5844-979d-62174b0163e2",
+  "target": false,
+  "detail": "potomac.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "University of the Potomac-VA Campus",
+  "university_id": "d94c7655-d3c7-585c-897d-e87d6d20f49c",
+  "target": false,
+  "detail": "potomac.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Arizona College of Nursing-Tempe",
+  "university_id": "073de84b-3c3f-5d6d-b3a0-d4ccfe174fcb",
+  "target": false,
+  "detail": "arizonacollege.edu used by 18 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Arizona College of Nursing-Las Vegas",
+  "university_id": "ddff9bdf-85ea-5134-a9bd-25e51c725aac",
+  "target": false,
+  "detail": "arizonacollege.edu used by 18 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Arizona College of Nursing-Dallas",
+  "university_id": "c1daf60a-e41a-5105-9f9f-027f0431aa64",
+  "target": false,
+  "detail": "arizonacollege.edu used by 18 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Arizona College of Nursing-Tampa",
+  "university_id": "bd94d99e-dd11-51c5-90a0-f6f04bbfde7b",
+  "target": false,
+  "detail": "arizonacollege.edu used by 18 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Arizona College of Nursing-Fort Lauderdale",
+  "university_id": "2ba734ff-3404-5b62-bec8-d5d562dee219",
+  "target": false,
+  "detail": "arizonacollege.edu used by 18 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Arizona College of Nursing-Tucson",
+  "university_id": "6a2bc1e4-524c-5ff6-9e2b-006ce7973a92",
+  "target": false,
+  "detail": "arizonacollege.edu used by 18 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Arizona College of Nursing-Phoenix",
+  "university_id": "85c4b469-2c71-5c18-a01e-59a6698102a5",
+  "target": false,
+  "detail": "arizonacollege.edu used by 18 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Arizona College of Nursing-Salt Lake City",
+  "university_id": "46af7ebe-2f0d-5854-9317-4d197720d7f0",
+  "target": false,
+  "detail": "arizonacollege.edu used by 18 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Arizona College of Nursing-Southfield",
+  "university_id": "9a1b160e-264b-5df8-9d2c-8bed96ffd41b",
+  "target": false,
+  "detail": "arizonacollege.edu used by 18 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Arizona College of Nursing-Falls Church",
+  "university_id": "b9ed5d20-e15f-5ef0-9577-26c8d725fa5e",
+  "target": false,
+  "detail": "arizonacollege.edu used by 18 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Arizona College of Nursing-Ontario",
+  "university_id": "af16b1fd-e23e-5f29-b6f3-8828670bea01",
+  "target": false,
+  "detail": "arizonacollege.edu used by 18 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Arizona College of Nursing-Sarasota",
+  "university_id": "180fff7d-fbff-5265-a48f-91651202c2c7",
+  "target": false,
+  "detail": "arizonacollege.edu used by 18 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Arizona College of Nursing-Aurora",
+  "university_id": "d1958472-2a41-5151-bb4c-959e979dd0ab",
+  "target": false,
+  "detail": "arizonacollege.edu used by 18 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Arizona College of Nursing-Cincinnati",
+  "university_id": "4fe1b062-d688-5bc5-a3df-8e56719ac5d6",
+  "target": false,
+  "detail": "arizonacollege.edu used by 18 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Arizona College of Nursing-Cleveland",
+  "university_id": "eecd9b71-33ce-5da9-a754-68f65d37f2d6",
+  "target": false,
+  "detail": "arizonacollege.edu used by 18 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Arizona College of Nursing - Chesapeake",
+  "university_id": "75fb02d3-f6eb-514e-9693-b28bc0ad706f",
+  "target": false,
+  "detail": "arizonacollege.edu used by 18 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Arizona College of Nursing - Hartford",
+  "university_id": "f41fdd75-4f8a-5b34-a891-13a4aa234c8a",
+  "target": false,
+  "detail": "arizonacollege.edu used by 18 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Arizona College of Nursing-St Louis",
+  "university_id": "31f04e7f-3750-5ef1-a925-f0477230796c",
+  "target": false,
+  "detail": "arizonacollege.edu used by 18 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Dewey University-Carolina",
+  "university_id": "9b9ba03d-d044-5358-8198-69f877f020bf",
+  "target": false,
+  "detail": "dewey.edu used by 4 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Dewey University-Hato Rey",
+  "university_id": "f1dac858-dc78-5d96-ab88-2855e363c27c",
+  "target": false,
+  "detail": "dewey.edu used by 4 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Dewey University-Juana Díaz",
+  "university_id": "62030ea6-5567-5e0c-be46-75b25dc63f5e",
+  "target": false,
+  "detail": "dewey.edu used by 4 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Dewey University-Manati",
+  "university_id": "8d4b0ca8-f0a7-5074-bd84-1c398932d302",
+  "target": false,
+  "detail": "dewey.edu used by 4 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "American InterContinental University-Atlanta",
+  "university_id": "1dd47a23-67ea-5bdc-8774-46cee7983c73",
+  "target": false,
+  "detail": "aiuniv.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "American InterContinental University-Houston",
+  "university_id": "f1b36735-b4c9-5a35-98e9-9ca865ba9fc2",
+  "target": false,
+  "detail": "aiuniv.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Pacific Islands University",
+  "university_id": "7c83ed51-1a3e-595c-9210-19757067799f",
+  "target": false,
+  "detail": "piu.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Pacific Islands University",
+  "university_id": "af4bbccb-db1e-544d-a85d-e3d37df53b51",
+  "target": false,
+  "detail": "piu.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Cambridge College of Healthcare & Technology",
+  "university_id": "d14b434b-1ec9-5fc1-8883-2563c5f8e71c",
+  "target": false,
+  "detail": "cambridgehealth.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Cambridge College of Healthcare & Technology",
+  "university_id": "c90e843f-bb3b-598a-b987-0363fb2155e7",
+  "target": false,
+  "detail": "cambridgehealth.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Chamberlain University-Administrative Office",
+  "university_id": "e381e3ba-08c4-5e3f-8320-724492a74446",
+  "target": false,
+  "detail": "chamberlain.edu used by 16 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Chamberlain University-Illinois",
+  "university_id": "9c1a4a11-0af8-55c2-a4ec-49ac549aa6d9",
+  "target": false,
+  "detail": "chamberlain.edu used by 16 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Chamberlain University-Ohio",
+  "university_id": "e87018e9-0f30-5d0d-b4bc-1dbb336b5551",
+  "target": false,
+  "detail": "chamberlain.edu used by 16 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Chamberlain University-Arizona",
+  "university_id": "a86bc21f-2015-5d50-b154-0b221619ba0e",
+  "target": false,
+  "detail": "chamberlain.edu used by 16 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Chamberlain University-Florida",
+  "university_id": "efa99443-4780-5c43-9ee5-1da61bec9390",
+  "target": false,
+  "detail": "chamberlain.edu used by 16 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Chamberlain University-Virginia",
+  "university_id": "5e420afe-a02d-5c56-8a51-3d05a87d546d",
+  "target": false,
+  "detail": "chamberlain.edu used by 16 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Chamberlain University-Missouri",
+  "university_id": "d4fbaa67-aca2-576a-8487-0a923e3f7c1e",
+  "target": false,
+  "detail": "chamberlain.edu used by 16 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Chamberlain University-Texas",
+  "university_id": "60fde8e0-ddf1-5b62-a3bd-aaf8e6c9ef45",
+  "target": false,
+  "detail": "chamberlain.edu used by 16 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Chamberlain University-Georgia",
+  "university_id": "2d53b2c9-76ba-5618-8e8c-fe2a31478733",
+  "target": false,
+  "detail": "chamberlain.edu used by 16 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Chamberlain University-Indiana",
+  "university_id": "a36176b0-ebb3-5742-96ed-79fe2984286e",
+  "target": false,
+  "detail": "chamberlain.edu used by 16 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Chamberlain University-Nevada",
+  "university_id": "812d6e4b-38a9-5f50-891e-88a99db7a22d",
+  "target": false,
+  "detail": "chamberlain.edu used by 16 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Chamberlain University-Michigan",
+  "university_id": "9c6da854-4901-562c-9ee1-e8a33ca2c014",
+  "target": false,
+  "detail": "chamberlain.edu used by 16 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Chamberlain University-New Jersey",
+  "university_id": "5c6786f6-2850-5e15-8f55-363cd4fb325c",
+  "target": false,
+  "detail": "chamberlain.edu used by 16 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Chamberlain University-North Carolina",
+  "university_id": "07457a07-7c94-5583-9fbf-5b1886a5dfcf",
+  "target": false,
+  "detail": "chamberlain.edu used by 16 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Chamberlain University-California",
+  "university_id": "d37f77c4-05e1-5652-a7a7-354e840a5e38",
+  "target": false,
+  "detail": "chamberlain.edu used by 16 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Chamberlain University-Louisiana",
+  "university_id": "63af162a-09d4-5cea-9fbe-ad67f386bf58",
+  "target": false,
+  "detail": "chamberlain.edu used by 16 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Denver College of Nursing",
+  "university_id": "e88fa0ff-6407-54de-ace4-b3490dd58f5c",
+  "target": false,
+  "detail": "denvercollegeofnursing.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Denver College of Nursing-Houston",
+  "university_id": "cf584648-b96a-5acc-ae8b-8a2547b9f5a5",
+  "target": false,
+  "detail": "denvercollegeofnursing.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Urshan Graduate School of Theology",
+  "university_id": "80d98fed-9d1d-5571-a058-9705c818bdac",
+  "target": false,
+  "detail": "urshan.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Urshan University",
+  "university_id": "70f4a63a-3a17-5bf1-a694-7423fedaf66b",
+  "target": false,
+  "detail": "urshan.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "University of Wisconsin-Milwaukee Flex",
+  "university_id": "b83cbfa2-5b9b-5317-8991-1e742a62881a",
+  "target": false,
+  "detail": "flex.wisconsin.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "University of Wisconsin-Parkside Flex",
+  "university_id": "f45ab800-a3e7-5080-8c42-0c6b95cbc1d3",
+  "target": false,
+  "detail": "flex.wisconsin.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Amity University",
+  "university_id": "2a8b639f-abff-5ee3-8d3e-d81b07eb9891",
+  "target": false,
+  "detail": "amity.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Amity University Gurugram",
+  "university_id": "1f10eb69-03e2-5520-ad3e-78cbd12cbd5a",
+  "target": false,
+  "detail": "amity.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Ross University School of Medicine",
+  "university_id": "f9471c24-4565-50dc-a33b-05bf6c6f3bc3",
+  "target": false,
+  "detail": "rossu.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Ross University School of Veterinary Medicine",
+  "university_id": "825f4d47-bcc0-5c45-8654-1ca6f3115830",
+  "target": false,
+  "detail": "rossu.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Transnational University Limburg",
+  "university_id": "a85af827-e025-5c43-a1f6-5244647c36ec",
+  "target": false,
+  "detail": "tul.edu used by 2 records"
+ },
+ {
+  "severity": "low",
+  "kind": "shared_website",
+  "university": "Transnational University Limburg",
+  "university_id": "0eff2277-7b7f-5397-a2f3-9506683430e3",
+  "target": false,
+  "detail": "tul.edu used by 2 records"
+ },
+ {
+  "severity": "medium",
+  "kind": "stale_tuition",
+  "university": "University of Massachusetts-Boston",
+  "university_id": "175cb34b-02e2-5db8-8b75-d212fce91b9b",
+  "target": true,
+  "detail": "2023/24 in_state"
+ },
+ {
+  "severity": "medium",
+  "kind": "stale_tuition",
+  "university": "University of Massachusetts-Boston",
+  "university_id": "175cb34b-02e2-5db8-8b75-d212fce91b9b",
+  "target": true,
+  "detail": "2023/24 out_of_state"
+ },
+ {
+  "severity": "medium",
+  "kind": "stale_tuition",
+  "university": "Boston College",
+  "university_id": "61ee643d-d90b-504a-9170-4595e9e045e3",
+  "target": true,
+  "detail": "2023/24 in_state"
+ },
+ {
+  "severity": "medium",
+  "kind": "stale_tuition",
+  "university": "Boston College",
+  "university_id": "61ee643d-d90b-504a-9170-4595e9e045e3",
+  "target": true,
+  "detail": "2023/24 out_of_state"
+ },
+ {
+  "severity": "medium",
+  "kind": "stale_tuition",
+  "university": "California Institute of Technology",
+  "university_id": "99fbcf31-606d-5dac-880e-83ca25acd942",
+  "target": true,
+  "detail": "2023/24 in_state"
+ },
+ {
+  "severity": "medium",
+  "kind": "stale_tuition",
+  "university": "California Institute of Technology",
+  "university_id": "99fbcf31-606d-5dac-880e-83ca25acd942",
+  "target": true,
+  "detail": "2023/24 out_of_state"
+ },
+ {
+  "severity": "medium",
+  "kind": "stale_tuition",
+  "university": "Columbia University in the City of New York",
+  "university_id": "1ad9abe1-60cd-55ec-b227-5c8001db0475",
+  "target": true,
+  "detail": "2023/24 in_state"
+ },
+ {
+  "severity": "medium",
+  "kind": "stale_tuition",
+  "university": "Columbia University in the City of New York",
+  "university_id": "1ad9abe1-60cd-55ec-b227-5c8001db0475",
+  "target": true,
+  "detail": "2023/24 out_of_state"
+ },
+ {
+  "severity": "medium",
+  "kind": "stale_tuition",
+  "university": "Cornell University",
+  "university_id": "8488d97e-a227-5fbd-b7b4-33a1194df723",
+  "target": true,
+  "detail": "2023/24 in_state"
+ },
+ {
+  "severity": "medium",
+  "kind": "stale_tuition",
+  "university": "Cornell University",
+  "university_id": "8488d97e-a227-5fbd-b7b4-33a1194df723",
+  "target": true,
+  "detail": "2023/24 out_of_state"
+ },
+ {
+  "severity": "medium",
+  "kind": "stale_tuition",
+  "university": "DePaul University",
+  "university_id": "eff27116-f29e-5cc0-9d35-ce5bc27b2bad",
+  "target": true,
+  "detail": "2023/24 in_state"
+ },
+ {
+  "severity": "medium",
+  "kind": "stale_tuition",
+  "university": "DePaul University",
+  "university_id": "eff27116-f29e-5cc0-9d35-ce5bc27b2bad",
+  "target": true,
+  "detail": "2023/24 out_of_state"
+ },
+ {
+  "severity": "medium",
+  "kind": "stale_tuition",
+  "university": "Fordham University",
+  "university_id": "99c5a4b8-9a75-5635-8161-85f97f03dc3f",
+  "target": true,
+  "detail": "2023/24 in_state"
+ },
+ {
+  "severity": "medium",
+  "kind": "stale_tuition",
+  "university": "Fordham University",
+  "university_id": "99c5a4b8-9a75-5635-8161-85f97f03dc3f",
+  "target": true,
+  "detail": "2023/24 out_of_state"
+ },
+ {
+  "severity": "medium",
+  "kind": "stale_tuition",
+  "university": "George Washington University",
+  "university_id": "7297ee6e-31d9-5f06-a506-de580b9c5c1d",
+  "target": true,
+  "detail": "2023/24 in_state"
+ },
+ {
+  "severity": "medium",
+  "kind": "stale_tuition",
+  "university": "George Washington University",
+  "university_id": "7297ee6e-31d9-5f06-a506-de580b9c5c1d",
+  "target": true,
+  "detail": "2023/24 out_of_state"
+ },
+ {
+  "severity": "medium",
+  "kind": "stale_tuition",
+  "university": "Harvard University",
+  "university_id": "39230496-b2fc-53ca-9303-1726c4ac13da",
+  "target": true,
+  "detail": "2023/24 in_state"
+ },
+ {
+  "severity": "medium",
+  "kind": "stale_tuition",
+  "university": "Harvard University",
+  "university_id": "39230496-b2fc-53ca-9303-1726c4ac13da",
+  "target": true,
+  "detail": "2023/24 out_of_state"
+ },
+ {
+  "severity": "medium",
+  "kind": "stale_tuition",
+  "university": "Johns Hopkins University",
+  "university_id": "f5c17f3c-ac83-5193-8c71-641147ad926c",
+  "target": true,
+  "detail": "2023/24 in_state"
+ },
+ {
+  "severity": "medium",
+  "kind": "stale_tuition",
+  "university": "Johns Hopkins University",
+  "university_id": "f5c17f3c-ac83-5193-8c71-641147ad926c",
+  "target": true,
+  "detail": "2023/24 out_of_state"
+ },
+ {
+  "severity": "medium",
+  "kind": "stale_tuition",
+  "university": "Massachusetts Institute of Technology",
+  "university_id": "22222222-2222-4222-8222-222222222222",
+  "target": true,
+  "detail": "2023/24 in_state"
+ },
+ {
+  "severity": "medium",
+  "kind": "stale_tuition",
+  "university": "Massachusetts Institute of Technology",
+  "university_id": "22222222-2222-4222-8222-222222222222",
+  "target": true,
+  "detail": "2023/24 out_of_state"
+ },
+ {
+  "severity": "medium",
+  "kind": "stale_tuition",
+  "university": "Missouri University of Science and Technology",
+  "university_id": "f973d34b-aa07-516d-9d50-a071413a3eca",
+  "target": true,
+  "detail": "2023/24 in_state"
+ },
+ {
+  "severity": "medium",
+  "kind": "stale_tuition",
+  "university": "Missouri University of Science and Technology",
+  "university_id": "f973d34b-aa07-516d-9d50-a071413a3eca",
+  "target": true,
+  "detail": "2023/24 out_of_state"
+ },
+ {
+  "severity": "medium",
+  "kind": "stale_tuition",
+  "university": "Northwestern University",
+  "university_id": "e48a723c-68b4-560e-b4a0-09be01682853",
+  "target": true,
+  "detail": "2023/24 in_state"
+ },
+ {
+  "severity": "medium",
+  "kind": "stale_tuition",
+  "university": "Northwestern University",
+  "university_id": "e48a723c-68b4-560e-b4a0-09be01682853",
+  "target": true,
+  "detail": "2023/24 out_of_state"
+ },
+ {
+  "severity": "medium",
+  "kind": "stale_tuition",
+  "university": "Princeton University",
+  "university_id": "6f13f9e9-cf5f-56ad-8384-39a9dc592d58",
+  "target": true,
+  "detail": "2023/24 in_state"
+ },
+ {
+  "severity": "medium",
+  "kind": "stale_tuition",
+  "university": "Princeton University",
+  "university_id": "6f13f9e9-cf5f-56ad-8384-39a9dc592d58",
+  "target": true,
+  "detail": "2023/24 out_of_state"
+ },
+ {
+  "severity": "medium",
+  "kind": "stale_tuition",
+  "university": "Stanford University",
+  "university_id": "11111111-1111-4111-8111-111111111111",
+  "target": true,
+  "detail": "2023/24 in_state"
+ },
+ {
+  "severity": "medium",
+  "kind": "stale_tuition",
+  "university": "Stanford University",
+  "university_id": "11111111-1111-4111-8111-111111111111",
+  "target": true,
+  "detail": "2023/24 out_of_state"
+ },
+ {
+  "severity": "medium",
+  "kind": "stale_tuition",
+  "university": "Temple University",
+  "university_id": "210dada7-d1b4-537c-b8ad-8c58326af358",
+  "target": true,
+  "detail": "2023/24 in_state"
+ },
+ {
+  "severity": "medium",
+  "kind": "stale_tuition",
+  "university": "Temple University",
+  "university_id": "210dada7-d1b4-537c-b8ad-8c58326af358",
+  "target": true,
+  "detail": "2023/24 out_of_state"
+ },
+ {
+  "severity": "medium",
+  "kind": "stale_tuition",
+  "university": "University of Arizona",
+  "university_id": "027e062a-68f8-5a97-b74a-4ad155208f4a",
+  "target": true,
+  "detail": "2023/24 in_state"
+ },
+ {
+  "severity": "medium",
+  "kind": "stale_tuition",
+  "university": "University of Arizona",
+  "university_id": "027e062a-68f8-5a97-b74a-4ad155208f4a",
+  "target": true,
+  "detail": "2023/24 out_of_state"
+ },
+ {
+  "severity": "medium",
+  "kind": "stale_tuition",
+  "university": "University of California-Berkeley",
+  "university_id": "e67501b3-2e87-5598-b9e3-e28fe4101f68",
+  "target": true,
+  "detail": "2023/24 in_state"
+ },
+ {
+  "severity": "medium",
+  "kind": "stale_tuition",
+  "university": "University of California-Berkeley",
+  "university_id": "e67501b3-2e87-5598-b9e3-e28fe4101f68",
+  "target": true,
+  "detail": "2023/24 out_of_state"
+ },
+ {
+  "severity": "medium",
+  "kind": "stale_tuition",
+  "university": "University of California-Irvine",
+  "university_id": "a13696ab-e8a7-55d8-b39d-e25eba98c101",
+  "target": true,
+  "detail": "2023/24 in_state"
+ },
+ {
+  "severity": "medium",
+  "kind": "stale_tuition",
+  "university": "University of California-Irvine",
+  "university_id": "a13696ab-e8a7-55d8-b39d-e25eba98c101",
+  "target": true,
+  "detail": "2023/24 out_of_state"
+ },
+ {
+  "severity": "medium",
+  "kind": "stale_tuition",
+  "university": "University of California-Los Angeles",
+  "university_id": "d5ba03bb-65aa-55a6-8234-265ea05144fc",
+  "target": true,
+  "detail": "2023/24 in_state"
+ },
+ {
+  "severity": "medium",
+  "kind": "stale_tuition",
+  "university": "University of California-Los Angeles",
+  "university_id": "d5ba03bb-65aa-55a6-8234-265ea05144fc",
+  "target": true,
+  "detail": "2023/24 out_of_state"
+ },
+ {
+  "severity": "medium",
+  "kind": "stale_tuition",
+  "university": "University of Chicago",
+  "university_id": "7add53a9-8ddf-5e84-bd4d-a7c8638dbb95",
+  "target": true,
+  "detail": "2023/24 in_state"
+ },
+ {
+  "severity": "medium",
+  "kind": "stale_tuition",
+  "university": "University of Chicago",
+  "university_id": "7add53a9-8ddf-5e84-bd4d-a7c8638dbb95",
+  "target": true,
+  "detail": "2023/24 out_of_state"
+ },
+ {
+  "severity": "medium",
+  "kind": "stale_tuition",
+  "university": "University of Pennsylvania",
+  "university_id": "894119e1-40c1-5589-8677-e1ed97388e59",
+  "target": true,
+  "detail": "2023/24 in_state"
+ },
+ {
+  "severity": "medium",
+  "kind": "stale_tuition",
+  "university": "University of Pennsylvania",
+  "university_id": "894119e1-40c1-5589-8677-e1ed97388e59",
+  "target": true,
+  "detail": "2023/24 out_of_state"
+ },
+ {
+  "severity": "medium",
+  "kind": "stale_tuition",
+  "university": "The University of Texas at Arlington",
+  "university_id": "141123a2-d2ef-52d9-b8f2-f6c881ac0aef",
+  "target": true,
+  "detail": "2023/24 in_state"
+ },
+ {
+  "severity": "medium",
+  "kind": "stale_tuition",
+  "university": "The University of Texas at Arlington",
+  "university_id": "141123a2-d2ef-52d9-b8f2-f6c881ac0aef",
+  "target": true,
+  "detail": "2023/24 out_of_state"
+ },
+ {
+  "severity": "medium",
+  "kind": "stale_tuition",
+  "university": "University of Toledo",
+  "university_id": "a5aa5750-d3cd-527d-b00a-33dc6c807b41",
+  "target": true,
+  "detail": "2023/24 in_state"
+ },
+ {
+  "severity": "medium",
+  "kind": "stale_tuition",
+  "university": "University of Toledo",
+  "university_id": "a5aa5750-d3cd-527d-b00a-33dc6c807b41",
+  "target": true,
+  "detail": "2023/24 out_of_state"
+ },
+ {
+  "severity": "medium",
+  "kind": "stale_tuition",
+  "university": "University of Washington-Seattle Campus",
+  "university_id": "5d324277-c7c7-52eb-9d99-03367f122d16",
+  "target": true,
+  "detail": "2023/24 in_state"
+ },
+ {
+  "severity": "medium",
+  "kind": "stale_tuition",
+  "university": "University of Washington-Seattle Campus",
+  "university_id": "5d324277-c7c7-52eb-9d99-03367f122d16",
+  "target": true,
+  "detail": "2023/24 out_of_state"
+ },
+ {
+  "severity": "medium",
+  "kind": "stale_tuition",
+  "university": "Yale University",
+  "university_id": "0a670c6d-e20a-527f-851b-e2c1306cce70",
+  "target": true,
+  "detail": "2023/24 in_state"
+ },
+ {
+  "severity": "medium",
+  "kind": "stale_tuition",
+  "university": "Yale University",
+  "university_id": "0a670c6d-e20a-527f-851b-e2c1306cce70",
+  "target": true,
+  "detail": "2023/24 out_of_state"
+ },
+ {
+  "severity": "medium",
+  "kind": "stale_tuition",
+  "university": "SUNY Downstate Health Sciences University",
+  "university_id": "9e6672b1-6e90-5460-bf59-91be34e74191",
+  "target": true,
+  "detail": "2023/24 in_state"
+ },
+ {
+  "severity": "medium",
+  "kind": "stale_tuition",
+  "university": "SUNY Downstate Health Sciences University",
+  "university_id": "9e6672b1-6e90-5460-bf59-91be34e74191",
+  "target": true,
+  "detail": "2023/24 out_of_state"
+ },
+ {
+  "severity": "low",
+  "kind": "tuition_no_usd",
+  "university": "Universität Konstanz",
+  "university_id": "3158b0fa-0d63-5ac9-b57c-821510d9b1f8",
+  "target": true,
+  "detail": "1709 EUR"
+ },
+ {
+  "severity": "medium",
+  "kind": "stale_tuition",
+  "university": "Hanyang University",
+  "university_id": "4905a534-c722-5951-bcd1-2a676a636ead",
+  "target": true,
+  "detail": "2023/24 international"
+ },
+ {
+  "severity": "low",
+  "kind": "tuition_no_usd",
+  "university": "Chungbuk National University",
+  "university_id": "f069dcf3-4383-5fe9-9975-58800a95464e",
+  "target": true,
+  "detail": "2029000 KRW"
+ },
+ {
+  "severity": "medium",
+  "kind": "stale_tuition",
+  "university": "Koç University",
+  "university_id": "1848c4c4-1bfb-5ae4-8322-6fda3dca4e50",
+  "target": true,
+  "detail": "2024/25 international"
+ },
+ {
+  "severity": "medium",
+  "kind": "stale_tuition",
+  "university": "Universiti Kebangsaan Malaysia",
+  "university_id": "04c4aef9-ef8e-5981-ba20-50039aeceef5",
+  "target": true,
+  "detail": "2024/25 international"
+ },
+ {
+  "severity": "medium",
+  "kind": "stale_tuition",
+  "university": "Tsinghua University",
+  "university_id": "519c66df-8779-5336-acda-2cba10f95c66",
+  "target": true,
+  "detail": "2020/21 international"
+ },
+ {
+  "severity": "low",
+  "kind": "tuition_no_usd",
+  "university": "Peking University",
+  "university_id": "79e1cf8b-6a97-5fef-ac23-aa6012197801",
+  "target": true,
+  "detail": "26000 RMB"
+ },
+ {
+  "severity": "low",
+  "kind": "tuition_no_usd",
+  "university": "Zhejiang University",
+  "university_id": "d4f88b7a-d026-5860-8906-d9ebdc5df290",
+  "target": true,
+  "detail": "19800 RMB"
+ },
+ {
+  "severity": "low",
+  "kind": "tuition_no_usd",
+  "university": "Zayed University",
+  "university_id": "75014378-84f4-5d64-a3af-e8508a34a447",
+  "target": true,
+  "detail": "2500 AED"
+ },
+ {
+  "severity": "low",
+  "kind": "tuition_no_usd",
+  "university": "The Chinese University of Hong Kong",
+  "university_id": "7deae08f-080e-56cd-8aa8-ca05c941f0cc",
+  "target": true,
+  "detail": "230000 HKD"
+ },
+ {
+  "severity": "low",
+  "kind": "tuition_no_usd",
+  "university": "The Hong Kong University of Science and Technology",
+  "university_id": "74996b5e-c39f-52f1-9e01-88f3051f155b",
+  "target": true,
+  "detail": "260000 HKD"
+ },
+ {
+  "severity": "low",
+  "kind": "tuition_no_usd",
+  "university": "Hong Kong Baptist University",
+  "university_id": "d9597e4a-75a9-5440-9902-e40d6ef03f13",
+  "target": true,
+  "detail": "240000 HKD"
+ },
+ {
+  "severity": "low",
+  "kind": "tuition_no_usd",
+  "university": "Hong Kong Metropolitan University",
+  "university_id": "bd88f517-5e80-5ca3-a470-72037358b8a9",
+  "target": true,
+  "detail": "45020 HKD"
+ },
+ {
+  "severity": "high",
+  "kind": "acceptance_out_of_range",
+  "university": "Alliant International University-San Diego",
+  "university_id": "0635fa65-8403-56f8-a97c-9bc6b608f2a3",
+  "target": false,
+  "detail": "0"
+ }
+]

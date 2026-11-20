@@ -1,0 +1,160 @@
+.ck {
+  position: fixed;
+  left: 16px;
+  bottom: 16px;
+  z-index: 60;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  max-width: min(440px, calc(100vw - 32px));
+  padding: 12px 12px 12px 16px;
+  border: 1px solid var(--cs-border, rgb(0 0 0 / 10%));
+  border-radius: 16px;
+  background: var(--cs-bg, #fff);
+  box-shadow: 0 12px 32px rgb(0 0 0 / 0.12);
+  color: var(--cs-ink, #111);
+  font-size: 13px;
+  line-height: 1.45;
+  animation: ck-in 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.ck > svg {
+  flex: none;
+  width: 18px;
+  height: 18px;
+  color: var(--cs-muted, #666);
+}
+.ck p {
+  flex: 1;
+  margin: 0;
+}
+.ck a {
+  color: var(--cs-accent-text, #2563eb);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.ck button {
+  flex: none;
+  height: 32px;
+  padding: 0 14px;
+  border-radius: 999px;
+  background: var(--cs-ink, #111);
+  color: var(--cs-bg, #fff);
+  font-size: 13px;
+  font-weight: 600;
+}
+@keyframes ck-in {
+  from {
+    opacity: 0;
+    translate: 0 12px;
+  }
+}
+/* Phones: above the bottom dock. */
+@media (max-width: 767px) {
+  .ck {
+    right: 16px;
+    bottom: calc(88px + env(safe-area-inset-bottom));
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .ck {
+    animation: none;
+  }
+}
+
+/* Consent bar (Nov 19): same dock as the old note, with choices. */
+.ck.ck2 {
+  display: grid;
+  align-items: start;
+  gap: 8px;
+  width: min(380px, calc(100vw - 32px));
+  max-width: none;
+  padding: 16px;
+}
+.ck2-head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.ck2-head svg {
+  width: 18px;
+  height: 18px;
+  color: var(--cs-muted, #666);
+}
+.ck.ck2 p {
+  color: var(--cs-muted, #555);
+  font-size: 13px;
+}
+.ck2-rows {
+  display: grid;
+  gap: 10px;
+  margin: 4px 0;
+  padding: 10px 0;
+  border-block: 1px solid var(--cs-border, rgb(0 0 0 / 10%));
+  list-style: none;
+}
+.ck2-rows label {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  min-height: 44px;
+  cursor: pointer;
+}
+.ck2-rows input {
+  flex: none;
+  width: 18px;
+  height: 18px;
+  margin-top: 2px;
+  accent-color: #3b6df0;
+}
+.ck2-rows b {
+  display: block;
+  font-size: 13px;
+}
+.ck2-rows small {
+  display: block;
+  color: var(--cs-muted, #666);
+  font-size: 12px;
+  line-height: 1.4;
+}
+.ck2-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 4px;
+}
+.ck.ck2 .ck2-actions button {
+  height: 40px;
+  padding: 0 14px;
+  border: 1px solid var(--cs-border, rgb(0 0 0 / 14%));
+  background: transparent;
+  color: var(--cs-ink, #111);
+}
+.ck.ck2 .ck2-actions .is-primary {
+  border-color: transparent;
+  background: var(--cs-ink, #111);
+  color: var(--cs-bg, #fff);
+}
+.ck.ck2 .ck2-actions .is-link {
+  border-color: transparent;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+@media (max-width: 767px) {
+  .ck.ck2 {
+    left: 12px;
+    right: 12px;
+    width: auto;
+  }
+}
+
+.footer-cookie-link {
+  padding: 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+}
+.footer-cookie-link:hover {
+  text-decoration: underline;
+}

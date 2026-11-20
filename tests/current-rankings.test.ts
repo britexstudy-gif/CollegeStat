@@ -6,23 +6,27 @@ import { globalCatalogue } from "../server/global-catalogue";
 import { valueOf } from "../lib/research";
 import { universityRanks } from "../lib/ranking-highlights";
 import { searchRelevance } from "../lib/search-text";
-test("complete current publisher tables include unmatched institutions and all pagination boundaries", () => {
-  const qs = rankingTable(new URLSearchParams("provider=qs"));
+test("complete current publisher tables include unmatched institutions and all pagination boundaries", async () => {
+  const qs = await rankingTable(new URLSearchParams("provider=qs"));
   assert.equal(qs.total, 1504);
   assert.equal(qs.year, 2027);
   assert.equal(qs.rows.length, 24);
-  const final = rankingTable(new URLSearchParams("provider=qs&page=99999"));
+  const final = await rankingTable(new URLSearchParams("provider=qs&page=99999"));
   assert.equal(final.page, 63);
   assert.equal(final.rows.length, 16);
-  const all = Array.from(
-    { length: qs.pages },
-    (_, i) =>
-      rankingTable(new URLSearchParams(`provider=qs&page=${i + 1}`)).rows,
+  const all = (
+    await Promise.all(
+      Array.from(
+        { length: qs.pages },
+        async (_, i) =>
+          (await rankingTable(new URLSearchParams(`provider=qs&page=${i + 1}`))).rows,
+      ),
+    )
   ).flat();
   assert.equal(new Set(all.map((r) => r.name + "|" + r.country)).size, 1504);
   assert.ok(all.some((r) => !r.university));
   assert.ok(all.every((r) => r.country_code));
-  assert.equal(rankingTable(new URLSearchParams("provider=the")).total, 2191);
+  assert.equal((await rankingTable(new URLSearchParams("provider=the"))).total, 2191);
   const mit = globalCatalogue.find((u) => u.slug === "mit")!;
   const stanford = globalCatalogue.find((u) => u.slug === "stanford")!;
   assert.equal(

@@ -1,0 +1,95 @@
+{
+ "universities": [
+  {
+   "id": "e67501b3-2e87-5598-b9e3-e28fe4101f68",
+   "english": [
+    {
+     "test": "IELTS",
+     "minimum": 6.5,
+     "detail": "IELTS Academic minimum 6.5 (page does not list band minimums).",
+     "source_url": "https://admissions.berkeley.edu/requirements-for-international-students/"
+    },
+    {
+     "test": "TOEFL iBT",
+     "minimum": 90,
+     "detail": "Minimum 90 (4.5 on the newer 1-6 scale).",
+     "source_url": "https://admissions.berkeley.edu/requirements-for-international-students/"
+    },
+    {
+     "test": "Duolingo",
+     "minimum": 115,
+     "detail": "Duolingo English Test minimum 115.",
+     "source_url": "https://admissions.berkeley.edu/requirements-for-international-students/"
+    }
+   ],
+   "tuition": null,
+   "application_fee": null,
+   "deadlines": [],
+   "sat": null,
+   "acceptance_rate": null,
+   "notes": "English proficiency must be met by Jan 31 per page. Tuition, fee and application deadlines not verified on fetched page."
+  },
+  {
+   "id": "7deae08f-080e-56cd-8aa8-ca05c941f0cc",
+   "english": [
+    {
+     "test": "IELTS",
+     "minimum": 6,
+     "detail": "IELTS Academic overall band 6.0 (no separate band minimum listed).",
+     "source_url": "https://admission.cuhk.edu.hk/application/overseas-other-qualifications-non-local-international-team/requirements/"
+    },
+    {
+     "test": "TOEFL iBT",
+     "minimum": 4.5,
+     "detail": "4.5 out of 6 overall for tests taken on or after 21 Jan 2026 (80 out of 120 for earlier tests). Home Edition and Best Scores not accepted.",
+     "source_url": "https://admission.cuhk.edu.hk/application/overseas-other-qualifications-non-local-international-team/requirements/"
+    }
+   ],
+   "tuition": {
+    "amount": 230000,
+    "amount_max": null,
+    "currency": "HKD",
+    "period": "year",
+    "academic_year": "2027-28",
+    "detail": "Tuition fee for non-local students as stated on FAQ page.",
+    "source_url": "https://admission.cuhk.edu.hk/application/overseas-other-qualifications-non-local-international-team/faq/"
+   },
+   "application_fee": {
+    "amount": 500,
+    "currency": "HKD",
+    "source_url": "https://admission.cuhk.edu.hk/application/overseas-other-qualifications-non-local-international-team/faq/"
+   },
+   "deadlines": [
+    {
+     "title": "Regular Round (2027 entry)",
+     "due_at": "2027-01-07",
+     "route": "CUHK non-local application",
+     "source_url": "https://admission.cuhk.edu.hk/application/overseas-other-qualifications-non-local-international-team/faq/"
+    }
+   ],
+   "sat": null,
+   "acceptance_rate": null,
+   "notes": "Requirements page says TOEFL/IELTS subject to review for 2027 entry. Tuition shown as single figure."
+  },
+  {
+   "id": "6f8ca7da-1cba-56f4-89e6-4cffd48126ac",
+   "english": [],
+   "tuition": null,
+   "application_fee": null,
+   "deadlines": [],
+   "sat": null,
+   "acceptance_rate": null,
+   "notes": "unimelb.edu.au pages returned 403; search excerpts only, omitted."
+  },
+  {
+   "id": "34f9bd5c-1c24-5d4f-880c-4a342627a148",
+   "english": [],
+   "tuition": null,
+   "application_fee": null,
+   "deadlines": [],
+   "sat": null,
+   "acceptance_rate": null,
+   "notes": "UNSW search gave only program-specific IELTS and per-UOC fee excerpts; not verified on fetched page, omitted."
+  }
+ ]
+}

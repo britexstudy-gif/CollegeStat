@@ -1,14 +1,21 @@
 import vinext from "vinext";
 import { defineConfig, loadEnv } from "vite";
 import { datasetJSONGuard } from "./build/dataset-json-plugin";
+import { assetDataDevStub, ssrBrowserOnlyDataStub } from "./build/asset-data-dev-plugin";
 
 // macOS Seatbelt blocks FSEvents, so Codex previews need polling for HMR.
 const isCodexSeatbeltSandbox = process.env.CODEX_SANDBOX === "seatbelt";
 
-const localBindingConfig = {
-  main: "vinext/server/fetch-handler",
+const localBindingConfig = (mode: string) => ({
+  // Production wraps the app in the public-page edge cache (worker/index.ts);
+  // the dev server keeps the plain handler so pages are never cached there.
+  main: mode === "production" ? "./worker/index.ts" : "vinext/server/fetch-handler",
   compatibility_flags: ["nodejs_compat"],
-};
+  // The Worker reads large read-only datasets from its static assets (server/asset-data.ts).
+  assets: { binding: "ASSETS", html_handling: "none" as const },
+  // No Smart Placement: most requests are edge-cache hits, which must stay
+  // at the visitor's edge. Fix database latency by moving Supabase closer instead.
+});
 
 export default defineConfig(async ({ mode }) => {
   const publicEnv = loadEnv(mode, process.cwd(), [
@@ -37,6 +44,8 @@ export default defineConfig(async ({ mode }) => {
   return {
     // Large published datasets stay JSON.parse payloads instead of becoming
     // thousands of individual bindings during server module transformation.
+    // NOTE: public env below is baked at build time via `define`. Changing
+    // NEXT_PUBLIC_* / VITE_SUPABASE_* values requires a rebuild to take effect.
     json: { stringify: true, namedExports: false },
     define: Object.fromEntries(
       [
@@ -50,23 +59,47 @@ export default defineConfig(async ({ mode }) => {
         "NEXT_PUBLIC_AUTH_TELEGRAM_ENABLED",
         "NEXT_PUBLIC_AUTH_EMAIL_ENABLED",
         "NEXT_PUBLIC_MAP_STYLE_URL",
-      ].map((key) => [
-        `process.env.${key}`,
-        JSON.stringify(publicEnv[key] || process.env[key] || ""),
-      ]),
+      ]
+        .map((key) => [
+          `process.env.${key}`,
+          JSON.stringify(publicEnv[key] || process.env[key] || ""),
+        ])
+        // Edge-cache entries are keyed by build so HTML never outlives its scripts.
+        .concat([
+          [
+            "process.env.COLLEGESTAT_BUILD_STAMP",
+            JSON.stringify(mode === "production" ? Date.now().toString(36) : "dev"),
+          ],
+        ]),
     ),
     server: {
-      ...(isCodexSeatbeltSandbox
-        ? { watch: { useFsEvents: false, usePolling: true } }
-        : {}),
+      watch: {
+        // Source files and installed public assets still trigger HMR. Large raw
+        // releases, QA screenshots/logs and tool state are not application code.
+        ignored: [
+          "**/data/raw/**",
+          "**/data/processed/**",
+          "**/data/exports/**",
+          "**/outputs/**",
+          "**/work/**",
+          "**/.wrangler/**",
+          "**/.cache/**",
+          "**/.venv-data/**",
+        ],
+        ...(isCodexSeatbeltSandbox
+          ? { useFsEvents: false, usePolling: true, interval: 400 }
+          : {}),
+      },
     },
     plugins: [
       datasetJSONGuard(),
+      assetDataDevStub(),
+      ssrBrowserOnlyDataStub(),
       vinext(),
       cloudflare({
         viteEnvironment: { name: "rsc", childEnvironments: ["ssr"] },
         inspectorPort: false,
-        config: localBindingConfig,
+        config: localBindingConfig(mode),
       }),
     ],
   };

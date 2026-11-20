@@ -24,7 +24,8 @@
     "requirements",
     "language",
     "deadline",
-    "application_fee"
+    "application_fee",
+    "evidence"
   ],
   "campuses": [
     "id",
@@ -58,7 +59,8 @@
     "amount",
     "currency",
     "period",
-    "student_category"
+    "student_category",
+    "evidence"
   ],
   "data_points": [
     "id",
@@ -77,7 +79,8 @@
     "unit",
     "canonical",
     "source_url",
-    "observation_id"
+    "observation_id",
+    "evidence"
   ],
   "data_sources": [
     "id",
@@ -109,7 +112,8 @@
     "due_at",
     "timezone",
     "application_url",
-    "due_date"
+    "due_date",
+    "evidence"
   ],
   "departments": [
     "id",
@@ -141,7 +145,8 @@
     "eligibility",
     "application_url",
     "amount",
-    "currency"
+    "currency",
+    "evidence"
   ],
   "media": [
     "id",
@@ -163,7 +168,8 @@
     "license_url",
     "reuse_permitted",
     "width",
-    "height"
+    "height",
+    "evidence"
   ],
   "professors": [
     "id",
@@ -207,7 +213,8 @@
     "minimum",
     "maximum",
     "student_category",
-    "required"
+    "required",
+    "evidence"
   ],
   "research": [
     "id",
@@ -262,7 +269,8 @@
     "renewable",
     "tuition_coverage",
     "living_stipend",
-    "travel_coverage"
+    "travel_coverage",
+    "evidence"
   ],
   "universities": [
     "id",
@@ -312,7 +320,13 @@
     "source_id",
     "source_url",
     "verification_status",
-    "verified_at"
+    "verified_at",
+    "evidence",
+    "reporting_year",
+    "duration_months",
+    "campus_id",
+    "intakes",
+    "availability"
   ],
   "university_scholarships": [
     "id",

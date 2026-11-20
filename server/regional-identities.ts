@@ -1,4 +1,7 @@
-import { globalCatalogue } from "./global-catalogue";
+import list from "@/data/generated/catalogue/list.json";
+import type { University as CatalogueRow } from "@/lib/domain";
+// List-weight rows precomputed by scripts/build-catalogue.ts.
+const globalCatalogue = list as CatalogueRow[];
 import records from "@/data/published/regional-rankings.json";
 import type { UniversityIdentity } from "@/components/college/primitives";
 

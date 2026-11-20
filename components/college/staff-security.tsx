@@ -9,9 +9,13 @@ import {
   LoaderCircle,
 } from "lucide-react";
 import { getSupabase } from "@/lib/supabase/client";
+import { useStaffAccount } from "./use-staff-account";
+import { useStaffSession } from "./staff-session-provider";
+import { abortable } from "@/lib/abortable";
 export function StaffSecurity({ compact = false }: { compact?: boolean }) {
-  const [verified, setVerified] = useState(false),
-    [factor, setFactor] = useState(""),
+  const { scope } = useStaffAccount();
+  const session = useStaffSession();
+  const [factor, setFactor] = useState(""),
     [qr, setQr] = useState(""),
     [code, setCode] = useState(""),
     [busy, setBusy] = useState(false),
@@ -20,73 +24,117 @@ export function StaffSecurity({ compact = false }: { compact?: boolean }) {
   const inspect = useCallback(async () => {
     const db = getSupabase();
     if (!db) return;
-    const [aal, factors] = await Promise.all([
-      db.auth.mfa.getAuthenticatorAssuranceLevel(),
-      db.auth.mfa.listFactors(),
-    ]);
+    const owner = scope.capture();
+    let aal,factors;
+    try {
+      [aal,factors]=await abortable(Promise.all([
+        db.auth.mfa.getAuthenticatorAssuranceLevel(),db.auth.mfa.listFactors(),
+      ]),AbortSignal.timeout(10000));
+    } catch {
+      if(scope.isCurrent(owner))setError("Could not check account security. Please retry.");
+      return;
+    }
+    if (!scope.isCurrent(owner)) return;
     if (aal.error || factors.error) {
       setError("Could not check account security. Please retry.");
       return;
     }
-    setVerified(aal.data.currentLevel === "aal2");
     setFactor(factors.data.totp.find((f) => f.status === "verified")?.id || "");
     setLoaded(true);
-  }, []);
+  }, [scope]);
   useEffect(() => {
     void inspect();
+    const client = getSupabase();
+    let timer: ReturnType<typeof setTimeout> | undefined;
+    const changed = client?.auth.onAuthStateChange((event) => {
+      if (
+        [
+          "SIGNED_IN",
+          "TOKEN_REFRESHED",
+          "MFA_CHALLENGE_VERIFIED",
+          "USER_UPDATED",
+        ].includes(event)
+      ) {
+        clearTimeout(timer);
+        timer = setTimeout(() => void inspect(), 0);
+      }
+    });
+    const focused = () => void inspect();
+    window.addEventListener("focus", focused);
+    return () => {
+      clearTimeout(timer);
+      changed?.data.subscription.unsubscribe();
+      window.removeEventListener("focus", focused);
+    };
   }, [inspect]);
   const enroll = async () => {
     const db = getSupabase();
     if (!db) return;
+    const owner = scope.capture();
     setBusy(true);
     setError("");
     try {
+      const signal=AbortSignal.timeout(20000);
       // Resume an abandoned, unverified TOTP enrollment without accumulating factors.
-      const list = await db.auth.mfa.listFactors();
+      const list = await abortable(db.auth.mfa.listFactors(),signal);
+      if (!scope.isCurrent(owner)) return;
       if (list.error) throw list.error;
       for (const f of list.data.all.filter(
         (f) => f.factor_type === "totp" && f.status === "unverified",
       )) {
-        const removed = await db.auth.mfa.unenroll({ factorId: f.id });
+        const removed = await abortable(db.auth.mfa.unenroll({ factorId: f.id }),signal);
+        if (!scope.isCurrent(owner)) return;
         if (removed.error) throw removed.error;
       }
-      const result = await db.auth.mfa.enroll({
+      const result = await abortable(db.auth.mfa.enroll({
         factorType: "totp",
         friendlyName: "CollegeStat staff",
         issuer: "CollegeStat",
-      });
+      }),signal);
+      if (!scope.isCurrent(owner)) return;
       if (result.error) throw result.error;
       setFactor(result.data.id);
       setQr(result.data.totp.qr_code);
     } catch {
+      if (!scope.isCurrent(owner)) return;
       setError(
         "Authenticator setup failed. Retry or check Supabase MFA settings.",
       );
     } finally {
-      setBusy(false);
+      if (scope.isCurrent(owner)) setBusy(false);
     }
   };
   const verify = async (event: React.FormEvent) => {
     event.preventDefault();
     const db = getSupabase();
     if (!db) return;
+    const owner = scope.capture();
     setBusy(true);
     setError("");
     try {
-      const result = await db.auth.mfa.challengeAndVerify({
+      const signal=AbortSignal.timeout(20000);
+      const challenge=await abortable(db.auth.mfa.challenge({factorId:factor}),signal);
+      if(!scope.isCurrent(owner))return;
+      if(challenge.error)throw challenge.error;
+      const result = await abortable(db.auth.mfa.verify({
         factorId: factor,
+        challengeId:challenge.data.id,
         code,
-      });
+      }),signal);
+      if (!scope.isCurrent(owner)) return;
       if (result.error) throw result.error;
       setQr("");
       setCode("");
+      await session.open();
+      if (!scope.isCurrent(owner)) return;
       await inspect();
     } catch {
+      if (!scope.isCurrent(owner)) return;
       setError(
         "That code could not be verified. Use the current six-digit code.",
       );
     } finally {
-      setBusy(false);
+      if (scope.isCurrent(owner)) setBusy(false);
     }
   };
   return (
@@ -95,22 +143,22 @@ export function StaffSecurity({ compact = false }: { compact?: boolean }) {
         <ShieldCheck size={19} />
         <div>
           <h2>
-            {verified ? "Staff session verified" : "Protect catalogue changes"}
+            {session.active ? "Staff session verified" : "Verify admin access"}
           </h2>
           <p>
-            {verified
-              ? "Authenticator verified for this session."
-              : "An authenticator code is required to edit, stage, or publish."}
+            {session.active
+              ? "Admin access is verified. This panel signs out after 15 minutes without activity."
+              : "Connect an authenticator app and verify its code to open the admin panel."}
           </p>
         </div>
-        {verified && <Check size={18} />}
+        {session.active && <Check size={18} />}
       </div>
       {!loaded && !error && (
         <p role="status">
           <LoaderCircle size={14} /> Checking security…
         </p>
       )}
-      {loaded && !verified && !factor && (
+      {loaded && !session.active && !factor && (
         <button
           className="button button-secondary"
           disabled={busy}
@@ -119,7 +167,7 @@ export function StaffSecurity({ compact = false }: { compact?: boolean }) {
           <KeyRound size={15} /> Set up authenticator
         </button>
       )}
-      {loaded && !verified && factor && (
+      {loaded && !session.active && factor && (
         <form onSubmit={verify}>
           {qr && (
             <div className="staff-qr">
@@ -183,8 +231,9 @@ export function StaffSecurity({ compact = false }: { compact?: boolean }) {
           <div>
             <strong>AI & MCP</strong>
             <p>
-              Tools use your session and database permissions. AI only routes
-              read requests. Staff API writes require MFA and are audited.
+              Tools use your verified session and database permissions. All
+              privileged access requires your authenticator. Changes keep their
+              full audit history.
             </p>
           </div>
         </div>

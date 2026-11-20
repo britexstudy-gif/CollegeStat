@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
-import Link from "next/link";
+import { WorkspaceLink as Link } from "@/components/college/workspace-link";
 import { useLiquidGlass } from "@/components/college/use-liquid-glass";
 import { useSearchParams } from "next/navigation";
 import { SaveButton } from "@/components/college/save-button";
@@ -13,10 +13,10 @@ import {
   Search,
   Wallet,
 } from "lucide-react";
-import { FundingDiscovery } from "@/components/college/funding-discovery";
 import { useCollege } from "@/components/college/provider";
 import { Choice } from "@/components/college/primitives";
 import { SourceDrawer } from "@/components/college/metrics";
+import { AwardIdentity } from "@/components/college/award-identity";
 import { getSupabase } from "@/lib/supabase/client";
 import { usesHostedCatalogue } from "@/lib/catalogue-mode";
 import {
@@ -31,7 +31,15 @@ export default function Scholarships({ slug }: { slug?: string }) {
   const params = useSearchParams();
   const selectedUniversity = params.get("university") || "";
   const [university, setUniversity] = useState(selectedUniversity);
-  const institutions = [...new Map(s.scholarships.flatMap(a => a.university_scholarships.flatMap(l => l.universities ? [[l.university_id, l.universities] as const] : []))).values()];
+  const institutions = [
+    ...new Map(
+      s.scholarships.flatMap((a) =>
+        a.university_scholarships.flatMap((l) =>
+          l.universities ? [[l.university_id, l.universities] as const] : [],
+        ),
+      ),
+    ).values(),
+  ];
   const [query, setQuery] = useState(""),
     [funding, setFunding] = useState("all"),
     [level, setLevel] = useState("all");
@@ -39,11 +47,22 @@ export default function Scholarships({ slug }: { slug?: string }) {
     [page, setPage] = useState(0),
     [retry, setRetry] = useState(0);
   const hosted = usesHostedCatalogue();
-  const [remoteRows, setRows] = useState<Scholarship[]>([]),
+  const today = new Date().toISOString().slice(0, 10);
+  // The verified server snapshot renders before hydration; exact remote counts
+  // replace it after fetching. A changed query never displays stale cards.
+  const initialRows = filterScholarships(s.scholarships, {
+    query: "",
+    funding: "all",
+    level: "all",
+    includeClosed: !!slug,
+    slug,
+    today,
+    university: selectedUniversity,
+  }).slice(0, 24);
+  const [remoteRows, setRows] = useState<Scholarship[]>(initialRows),
     [remoteTotal, setTotal] = useState(0),
     [error, setError] = useState(""),
     [loading, setLoading] = useState(hosted);
-  const today = new Date().toISOString().slice(0, 10);
   const local = hosted
     ? []
     : filterScholarships(s.scholarships, {
@@ -70,14 +89,26 @@ export default function Scholarships({ slug }: { slug?: string }) {
     let live = true;
     setLoading(true);
     setError("");
-    setRows([]);
+    const initialQuery =
+      !query &&
+      funding === "all" &&
+      level === "all" &&
+      page === 0 &&
+      includeClosed === !!slug &&
+      university === selectedUniversity;
+    if (!initialQuery) setRows([]);
     setTotal(0);
     const timer = setTimeout(() => {
       let request = db
         .from("scholarships")
-        .select(university ? "*,data_sources(*),university_scholarships!inner(university_id,universities(id,name,slug))" : "*,data_sources(*),university_scholarships(university_id,universities(id,name,slug))", {
-          count: "exact",
-        })
+        .select(
+          university
+            ? "*,data_sources(*),university_scholarships!inner(university_id,universities(id,name,slug))"
+            : "*,data_sources(*),university_scholarships(university_id,universities(id,name,slug))",
+          {
+            count: "exact",
+          },
+        )
         .eq("published", true)
         .eq("verification_status", "verified")
         .order("deadline", { nullsFirst: false })
@@ -87,7 +118,11 @@ export default function Scholarships({ slug }: { slug?: string }) {
       if (query) request = request.ilike("name", "%" + query + "%");
       if (funding !== "all") request = request.eq("funding_type", funding);
       if (level !== "all") request = request.eq("level", level);
-      if (university) request = request.eq("university_scholarships.university_id", university);
+      if (university)
+        request = request.eq(
+          "university_scholarships.university_id",
+          university,
+        );
       if (slug) request = request.eq("slug", slug);
       if (!includeClosed)
         request = request.or("deadline.is.null,deadline.gte." + today);
@@ -110,7 +145,19 @@ export default function Scholarships({ slug }: { slug?: string }) {
       live = false;
       clearTimeout(timer);
     };
-  }, [hosted, query, funding, level, includeClosed, page, retry, slug, today, university]);
+  }, [
+    hosted,
+    query,
+    funding,
+    level,
+    includeClosed,
+    page,
+    retry,
+    slug,
+    today,
+    university,
+    selectedUniversity,
+  ]);
   const track = async (a: Scholarship) => {
     const db = getSupabase();
     if (!db || !s.user) {
@@ -131,11 +178,14 @@ export default function Scholarships({ slug }: { slug?: string }) {
   };
   return (
     <div className="research-page scholarships-page">
-      <header className="page-intro">
-        <h1>Find scholarships.</h1>
-        <p>
-          Check who can apply, what an award covers, and the official deadline.
-        </p>
+      <header className="page-intro scholarship-intro">
+        <div>
+          <h1>Scholarships</h1>
+          <p>
+            Awards with official eligibility, coverage and deadlines. Save the
+            ones that fit and track their deadlines in your plan.
+          </p>
+        </div>
       </header>
       <div ref={glass} data-glass="rim" className="scholarship-filter-bar">
         <label>
@@ -191,7 +241,21 @@ export default function Scholarships({ slug }: { slug?: string }) {
             ]}
           />
         </div>
-        <div className="scholarship-filter-field"><span className="filter-label">University</span><Choice label="University" value={university} onChange={v => { setUniversity(v); setPage(0); }} options={[{ value: "", label: "All universities" }, ...institutions.map(u => ({ value: u.id, label: u.name }))]}/></div>
+        <div className="scholarship-filter-field">
+          <span className="filter-label">University</span>
+          <Choice
+            label="University"
+            value={university}
+            onChange={(v) => {
+              setUniversity(v);
+              setPage(0);
+            }}
+            options={[
+              { value: "", label: "All universities" },
+              ...institutions.map((u) => ({ value: u.id, label: u.name })),
+            ]}
+          />
+        </div>
       </div>
       <div className="scholarship-results-heading">
         <span aria-live="polite">
@@ -220,12 +284,8 @@ export default function Scholarships({ slug }: { slug?: string }) {
         <div className="funding-empty">
           <h2>No award records match yet.</h2>
           <p>
-            Try fewer filters or explore the official programmes below. Each
-            programme lists its own eligibility and current application cycle.
+            Try fewer filters, or include closed cycles to see past awards.
           </p>
-          <Link className="text-link" href="/resources/funding">
-            Build your funding plan →
-          </Link>
         </div>
       ) : (
         <div className="resource-grid">
@@ -233,6 +293,7 @@ export default function Scholarships({ slug }: { slug?: string }) {
             const status = scholarshipDeadline(a, today);
             return (
               <article className="panel scholarship-award" key={a.id}>
+                <AwardIdentity award={a} />
                 <span className={"award-cycle " + status}>
                   <CalendarDays size={14} aria-hidden="true" />
                   {status === "closed"
@@ -267,13 +328,32 @@ export default function Scholarships({ slug }: { slug?: string }) {
                 <SourceDrawer label="Scholarship award" record={a}>
                   <strong className="award-amount">
                     {a.amount == null
-                      ? a.funding_type === "full" ? "Study and living support" : "Award assessed individually"
+                      ? a.funding_type === "full"
+                        ? "Study and living support"
+                        : "Award assessed individually"
                       : currency(a.amount, a.currency)}
                   </strong>
                 </SourceDrawer>
-                <div className="award-universities">{a.university_scholarships.map(link => link.universities && <Link key={link.university_id} href={"/university/" + link.universities.slug}>{link.universities.name} <ArrowUpRight size={13}/></Link>)}</div>
+                <div className="award-universities">
+                  {a.university_scholarships.map(
+                    (link) =>
+                      link.universities && (
+                        <Link
+                          key={link.university_id}
+                          href={"/university/" + link.universities.slug}
+                        >
+                          {link.universities.name} <ArrowUpRight size={13} />
+                        </Link>
+                      ),
+                  )}
+                </div>
                 <p>{a.description}</p>
-                {a.notes && <details className="award-notes"><summary>Cycle and eligibility details</summary><p className="caption">{a.notes}</p></details>}
+                {a.notes && (
+                  <details className="award-notes">
+                    <summary>Cycle and eligibility details</summary>
+                    <p className="caption">{a.notes}</p>
+                  </details>
+                )}
                 <p className="caption">
                   {a.deadline
                     ? "Deadline: " + dateLabel(a.deadline)
@@ -290,7 +370,7 @@ export default function Scholarships({ slug }: { slug?: string }) {
                       Check eligibility <ArrowUpRight size={16} />
                     </a>
                   )}
-                  <SaveButton id={a.id} scholarship/>
+                  <SaveButton id={a.id} scholarship />
                   {status === "upcoming" && (
                     <button className="text-link" onClick={() => track(a)}>
                       <CalendarDays size={16} aria-hidden="true" />
@@ -322,7 +402,6 @@ export default function Scholarships({ slug }: { slug?: string }) {
           </button>
         </nav>
       )}
-      <FundingDiscovery />
     </div>
   );
 }

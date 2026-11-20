@@ -1,6 +1,18 @@
 # Account providers
 
-The hosted project `yfyqikmanpgnvyfthzwe` has email/password sign-in enabled. Google and Apple are disabled as checked on 3 October 2026. The app fetches provider availability from `/api/auth/providers`; public build flags cannot enable an unconfigured provider.
+The hosted project `yfyqikmanpgnvyfthzwe` has email/password sign-in and registration enabled. A read-only request to the local `/api/auth/providers` endpoint on 8 October 2026 returned `google: false`, `apple: false`, `telegram: false`, `email: true`, `signup: true`. Google, Apple and Telegram therefore remain disabled in the UI. This checks availability, not the contents of the owners' provider accounts or secrets.
+
+The public account page shows all three recognizable social options. Confirmed disabled options say **Setup required**; a failed availability request says **Unavailable** instead of claiming a missing configuration. Only a successful server availability response enables provider sign-in. Public build flags cannot enable an unconfigured provider. Staff access keeps its separate email/password form and role/MFA checks.
+
+## Required owner configuration
+
+| Provider | What must be supplied and enabled before a real sign-in works |
+| --- | --- |
+| Google | A Google Cloud web OAuth client ID and secret, consent/branding settings, application origins and the Supabase provider callback URI; enable Google in Supabase Auth. |
+| Apple | An Apple Developer Team ID, App ID with Sign in with Apple, a web Services ID with the Supabase domain/callback, signing key and generated client secret; enable Apple in Supabase Auth. Renew the OAuth secret every six months. |
+| Telegram | A BotFather bot with Login enabled, its client ID/secret and allowed Supabase callback; enable the existing Supabase custom OIDC provider identifier `custom:telegram` using issuer `https://oauth.telegram.org`, scopes `openid profile`, and `email_optional: true`. |
+
+All providers also need the deployed application's `/auth/callback` in Supabase's redirect allowlist. The application callback and the provider's Supabase callback are distinct URLs. The owner must configure credentials in the provider and Supabase dashboards; this UI pass did not change hosted providers or create credentials.
 
 ## Configuration
 

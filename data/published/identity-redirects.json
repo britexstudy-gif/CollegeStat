@@ -3,5 +3,125 @@
     "id": "22222222-2222-4222-8222-222222222222",
     "slug": "mit",
     "old_slug": "massachusetts-institute-of-technology-7430f482"
+  },
+  "a77030c2-53ee-5817-bb92-c0e521351bc4": {
+    "id": "0c0129a4-e55b-53af-9e98-2b8456f8bd30",
+    "slug": "spring-arbor-university-0c0129a4",
+    "old_slug": "spring-arbor-college-a77030c2"
+  },
+  "b18b5cf9-45b2-55b1-87fc-e94fb8be57ce": {
+    "id": "19129f7d-bf2d-5841-9205-1cb76056c979",
+    "slug": "san-joaquin-valley-college-visalia-19129f7d",
+    "old_slug": "san-joaquin-valley-college-visalia-b18b5cf9"
+  },
+  "eeb9ddf4-9d78-5d3a-ab5c-0fcd9d8704d9": {
+    "id": "20589910-87be-55c8-a2cf-2f32b701b433",
+    "slug": "palm-beach-state-college-20589910",
+    "old_slug": "palm-beach-state-college-eeb9ddf4"
+  },
+  "dd6e6743-9daf-5e1e-b2de-817f985f30d1": {
+    "id": "26ebf6e5-a612-55f5-bb38-64ba2e059762",
+    "slug": "washington-university-saint-louis-26ebf6e5",
+    "old_slug": "washington-university-in-st-louis-dd6e6743"
+  },
+  "1ae9f9b4-1cb4-5df6-bc51-14aea3b29f61": {
+    "id": "27e3e0b2-ab7e-565f-8835-e7cc6d46c463",
+    "slug": "national-university-27e3e0b2",
+    "old_slug": "national-university-1ae9f9b4"
+  },
+  "2c5a27f6-09f6-5ac8-9c34-bdbbbf5bade2": {
+    "id": "29529154-1d63-59e1-abfb-f8fb3f940ac7",
+    "slug": "indiana-university-southeast-29529154",
+    "old_slug": "indiana-university-southeast-2c5a27f6"
+  },
+  "03789f7a-5e14-535e-b163-7c56ef9f4254": {
+    "id": "30ff4ef9-dd7e-5513-8085-e043aa63e845",
+    "slug": "tallahassee-state-college-30ff4ef9",
+    "old_slug": "tallahassee-community-college-03789f7a"
+  },
+  "be1f73c5-cbf3-58d9-9f26-d9e758e306f2": {
+    "id": "3d5e6265-775a-568a-9eb8-1298348c3d3b",
+    "slug": "university-of-miami-3d5e6265",
+    "old_slug": "university-of-miami-be1f73c5"
+  },
+  "90d67088-a135-5fb8-844e-2cb2158327e4": {
+    "id": "4d350bc9-61cb-5aee-8be5-b0e91d5bd86f",
+    "slug": "university-of-north-carolina-asheville-4d350bc9",
+    "old_slug": "university-of-north-carolina-at-asheville-90d67088"
+  },
+  "b4e9c076-eb29-5515-9986-53e93d215a52": {
+    "id": "50759d76-f3b9-5218-8502-203e0d66c99d",
+    "slug": "indiana-university-south-bend-50759d76",
+    "old_slug": "indiana-university-at-south-bend-b4e9c076"
+  },
+  "faa84d52-d7db-539b-bd3c-cd9975ceed0a": {
+    "id": "57d46ab3-f690-57cc-8c70-045ff130a8ad",
+    "slug": "washington-state-college-of-ohio-57d46ab3",
+    "old_slug": "washington-state-community-college-faa84d52"
+  },
+  "6e65853d-f981-5700-8e42-aa939faa0f24": {
+    "id": "5b3fe16c-9634-5cd1-bca5-02b69a657d7b",
+    "slug": "galen-college-of-nursing-louisville-5b3fe16c",
+    "old_slug": "galen-college-of-nursing-louisville-6e65853d"
+  },
+  "1541038b-91e4-5c1d-aa25-22ad99d3df89": {
+    "id": "5fc62bb7-0198-5a07-8830-2735c17fd1ea",
+    "slug": "northeastern-university-5fc62bb7",
+    "old_slug": "northeastern-university-1541038b"
+  },
+  "9107bcf3-7055-5bce-9e09-717c4bd168a1": {
+    "id": "66cd5625-4159-5d54-80b7-f6fc44af662c",
+    "slug": "trinity-washington-university-66cd5625",
+    "old_slug": "trinity-college-dc-9107bcf3"
+  },
+  "36035a4e-f08d-530d-9860-ea0767be1296": {
+    "id": "795a0486-ad7c-5052-9963-88a3fd5fc3d9",
+    "slug": "trine-university-795a0486",
+    "old_slug": "trine-university-36035a4e"
+  },
+  "fbe8f390-70b6-5f25-90a2-069952d62e9d": {
+    "id": "7c249bfb-2a84-5ac5-ae1c-afb48368b645",
+    "slug": "hallmark-university-7c249bfb",
+    "old_slug": "hallmark-university-fbe8f390"
+  },
+  "7f31584c-392c-516a-aa0c-f641d263bfbc": {
+    "id": "8c23a995-8007-5ed9-a780-5a8343b18668",
+    "slug": "davis-college-8c23a995",
+    "old_slug": "davis-college-7f31584c"
+  },
+  "993d5ef7-0512-5a4f-a94f-0ee28f9959d1": {
+    "id": "98cc1643-a66a-57fc-961d-7ca89bde65e7",
+    "slug": "cuny-brooklyn-college-98cc1643",
+    "old_slug": "cuny-brooklyn-college-993d5ef7"
+  },
+  "3a39d973-a8b5-5808-9512-eabb05f6fcec": {
+    "id": "c73aa8d4-48b0-5ee4-b8a6-5b62bfa1ce65",
+    "slug": "university-of-houston-c73aa8d4",
+    "old_slug": "university-of-houston-3a39d973"
+  },
+  "d9c77312-bf54-5588-8615-19cfd8e3f2de": {
+    "id": "db279679-e2b1-5f11-b706-e0bdac47ba44",
+    "slug": "willamette-university-db279679",
+    "old_slug": "willamette-university-d9c77312"
+  },
+  "918959e7-3164-55fe-8574-79d7ba0eded6": {
+    "id": "ef1d5468-e91c-5f41-9144-1d200af62f03",
+    "slug": "north-carolina-wesleyan-university-ef1d5468",
+    "old_slug": "north-carolina-wesleyan-college-918959e7"
+  },
+  "f9f16466-c4ba-563a-8c2f-b26ee53a6c87": {
+    "id": "efcd0b52-6611-50e3-9ac7-d9831889822a",
+    "slug": "abilene-christian-university-efcd0b52",
+    "old_slug": "abilene-christian-university-f9f16466"
+  },
+  "6fd9aabc-c05d-5c84-9d78-faeddddfe581": {
+    "id": "f35d6b1e-c56e-59b7-93e0-ccfb5a1e1b8d",
+    "slug": "cal-poly-maritime-academy-f35d6b1e",
+    "old_slug": "california-maritime-academy-6fd9aabc"
+  },
+  "bf2bb7e9-5364-5f72-842a-2d135fcb9f7b": {
+    "id": "fba3a9b3-4ee3-53e5-9d75-a7251045506c",
+    "slug": "indiana-wesleyan-university-marion-fba3a9b3",
+    "old_slug": "indiana-wesleyan-university-marion-bf2bb7e9"
   }
 }

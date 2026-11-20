@@ -1,0 +1,47 @@
+---
+slug: "turkiye-scholarship-direct"
+title: "Türkiye: Türkiye Scholarships and direct university admission"
+category: "money"
+summary: "How to compare the annual Türkiye Scholarships application with direct admission routes that may use TR-YÖS, SAT or other university-set qualifications."
+central_asia: false
+reading_minutes: 2
+sources: [{"title": "Türkiye Scholarships: Application calendar", "url": "https://www.turkiyeburslari.gov.tr/calendar"}, {"title": "Türkiye Scholarships: Full-time programmes", "url": "https://www.turkiyeburslari.gov.tr/fulltimeprograms"}, {"title": "ÖSYM: 2026 TR-YÖS/1 application announcement", "url": "https://www.osym.gov.tr/2026-turkiye-yurt-disindan-ogrenci-kabul-sinavi-2026-tr-yos1-basvurularinin-alinmasi"}, {"title": "Study in Türkiye: Universities", "url": "https://www.studyinturkiye.gov.tr/"}]
+source_url: "https://www.turkiyeburslari.gov.tr/calendar"
+checked_at: "2026-11-14"
+verification_status: "staged"
+status: "draft"
+review_note: "source does not resolve: https://www.osym.gov.tr/TR,29108/2026-tr-yos1.html (HTTP 404); Replaced the obsolete ÖSYM URL with the current 2026 TR-YÖS/1 application announcement and guide link."
+---
+
+## In short
+
+- Check the official pages linked below.
+- Rules can depend on the university, country, course, and application year.
+- Keep the dates and documents you need in one place.
+
+## Türkiye Scholarships
+
+Türkiye Scholarships is a competitive government scholarship with a general application period listed as 10 January–20 February each year on its official calendar. The full-time course page lists university and department placement, tuition, a Turkish language course, housing, health insurance, a once-only flight ticket and a monthly undergraduate stipend. The live year’s call controls who can apply and benefits, so check the calendar and course terms before applying. [Calendar](https://www.turkiyeburslari.gov.tr/calendar) [Full-time courses](https://www.turkiyeburslari.gov.tr/fulltimeprograms)
+
+Prepare the requested identity, school, exam, language and activity proof in the online system, and rank courses only after checking their teaching language and who can apply. Do not treat scholarship selection as guaranteed admission outside the placements described by the course.
+
+## Direct university admission
+
+Applicants may also apply directly to universities. Some universities use the centrally run TR-YÖS, SAT or other international school or exam results. Each university sets which exams and scores it accepts and how it uses them. ÖSYM publishes the TR-YÖS exam and application information for its latest administration. Check the exact university’s international admissions guide and the latest ÖSYM calendar rather than relying on an old score table. [ÖSYM: TR-YÖS](https://www.osym.gov.tr/2026-turkiye-yurt-disindan-ogrenci-kabul-sinavi-2026-tr-yos1-basvurularinin-alinmasi) [Study in Türkiye](https://www.studyinturkiye.gov.tr/)
+
+## A sensible order of work
+
+1. Make a shortlist by major, language of instruction and total cost.
+2. Check if each university uses its own application, TR-YÖS, SAT, national diploma grades, or a combination.
+3. Apply to Türkiye Scholarships during the published window if allowed to apply. Send separate direct applications where useful.
+4. Ask each university which translations and authentication it requires for documents issued in Central Asia.
+5. Budget for costs not covered by a scholarship and check the actual scholarship award terms before accepting.
+
+The official scholarship calendar is updated by year. The dates shown above are the general calendar listed when checked on 14 November 2026. Check the next call when it opens.
+
+## What to do next
+
+- [ ] Read the official pages linked in this guide.
+- [ ] Check the rules and deadline for your exact course and application year.
+- [ ] Gather the documents and ask the university about anything unclear.
+- [ ] Save copies of your forms and official replies.

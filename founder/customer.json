@@ -1,0 +1,39 @@
+{
+  "business": "CollegeStat (collegestat.xyz): online help for Central Asian families whose child applies for a bachelor's abroad",
+  "target": "Parents (and their 16-18-year-old children) in Tashkent, Almaty, Astana, Bishkek and Dushanbe planning a bachelor's abroad for the 2027 intake",
+  "where": "Uzbekistan and Kazakhstan mostly, some Kyrgyzstan and Tajikistan; online, in Russian and Uzbek",
+  "age": [16, 52],
+  "segments": [
+    {"name": "Middle-income parent aiming for low-tuition Europe/Asia (Germany, Korea, Turkey, Poland)", "share": 0.35, "income": [6000, 18000]},
+    {"name": "Upper-middle parent aiming for UK/Europe/Canada with partial scholarship", "share": 0.30, "income": [18000, 45000]},
+    {"name": "Affluent parent aiming for US/UK top universities", "share": 0.15, "income": [45000, 150000]},
+    {"name": "Student doing it alone, parents support but don't manage it", "share": 0.20, "income": [4000, 20000]}
+  ],
+  "behaviours": [
+    {"name": "Trusts a local agency", "share": 0.22, "how": "Already talked to an agency in Tashkent or Almaty that is 'free' because universities pay it commission."},
+    {"name": "Telegram researcher", "share": 0.20, "how": "Reads study-abroad Telegram channels and asks in group chats before paying for anything."},
+    {"name": "Price-sensitive, DIY", "share": 0.18, "how": "Uses free tools (ChatGPT, EducationUSA, university sites) and pays only if clearly worth it."},
+    {"name": "Ambitious, will pay for top results", "share": 0.12, "how": "Considers premium consultants (Crimson-type) and wants the best chance at elite schools."},
+    {"name": "Burned before", "share": 0.10, "how": "Knows someone who paid an agency and got nothing; distrusts online payments and promises."},
+    {"name": "Asks the school or teacher", "share": 0.10, "how": "Relies on a school counsellor, English teacher or relatives who studied abroad."},
+    {"name": "Busy parent, wants it handled", "share": 0.08, "how": "Has little time, wants someone else to manage the process and report back."}
+  ],
+  "objections": [
+    "Local agencies help for free, why pay?",
+    "Is it a real company? We heard of agencies taking money and disappearing",
+    "A website can't replace a person who talks to us",
+    "Our child can do it with ChatGPT and free sites",
+    "We need help in Russian or Uzbek, the forms are English",
+    "Paying online in dollars is hard or risky for us",
+    "We don't know if the data is correct",
+    "It doesn't guarantee admission, so what are we paying for?"
+  ],
+  "habits": [
+    "you read Telegram channels about studying abroad most evenings",
+    "your child takes IELTS prep at a learning centre after school",
+    "you pay for most things by Click/Payme or Kaspi, rarely by international card",
+    "a cousin's son studied in Korea/Germany and you ask his family for advice",
+    "you saw ads from education agencies on Instagram",
+    "your child is in 11th grade and the school says nothing about foreign applications"
+  ]
+}

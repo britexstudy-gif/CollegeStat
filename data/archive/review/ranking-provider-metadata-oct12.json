@@ -1,0 +1,11 @@
+{
+  "retrieved_at": "2026-10-12",
+  "scope": "publisher_identity_and_permission_metadata_only",
+  "providers": [
+    {"slug": "cwur", "url": "https://cwur.org/", "evidence_url": "https://cwur.org/about.php", "edition_reference": "https://cwur.org/2026.php", "license_status": "restricted", "reuse_permission": "not_established"},
+    {"slug": "unirank", "url": "https://www.unirank.org/", "evidence_url": "https://www.unirank.org/terms/", "license_status": "restricted", "reuse_permission": "prior_written_permission_required"}
+  ],
+  "ranking_positions_imported": 0,
+  "university_records_imported": 0,
+  "images_imported": 0
+}

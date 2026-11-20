@@ -1,0 +1,7 @@
+# 7. Verify and finish the platform
+
+Audit CollegeStat's real user journeys after the other tasks: anonymous discovery, search/filter/compare, profiles and provenance, registration, sign-in/reset/callbacks, dashboard/practice/writing/planner, private student profiles, staff login/MFA, data review and analytics. Preserve the approved design and PixelBlast; fix root causes of resize/layout loops rather than suppressing browser errors. Keep light default, neutral black/blue dark, reduced-motion and save-data fallbacks, paused offscreen animation, lazy heavy dependencies and no duplicate scholarship sections.
+
+Run npm run typecheck, npm run lint, npm test, npm run test:data and npm run build. Run HTTP and headless interaction checks with the preview's actual localhost binding. Check 390/768/1440px widths, zoom, keyboard, errors, reduced motion, logout/account changes, read-only anonymous access and authorization boundaries. Do not treat a build as visual verification. Update docs and /Users/likeanew/Downloads/CollegeStat with exact results, deployed/local state and remaining integrations. Never commit credentials, raw caches, session tokens or confidential student data. Report incomplete workflows candidly instead of saying every bug is fixed.
+
+Read docs/UI-WORKSPACE-CHECKPOINT-2026-10-08.md and docs/REQUESTS-AND-STATUS-2026-10-08.md first. Preserve the current implementation and staged data; verify current hosted counts rather than copying a past checkpoint. Report actual changes, source/licence limits, records published, tests and remaining work.

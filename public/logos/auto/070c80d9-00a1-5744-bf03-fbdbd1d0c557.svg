@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- LHÍ myndmerki. Geometry from library/brand/myndmerki-svart.svg:
+       hole/outer 301.08/696.44. Drawn on a 32-unit grid so it lands on
+       whole pixels at 16 and 32.
+       Black on light, white on dark: the brand permits both and nothing else,
+       so the mark stays visible whichever tab strip it sits in. -->
+  <style>
+    /* Light: black mark on white, as the reglur show it.
+       Dark: the reglur's own negative — white mark on BLACK, not on
+       transparent. Transparent was the first attempt and it is fragile: the
+       favicon renders in browser chrome, and a white mark on a transparent
+       ground disappears entirely if that chrome is light while the system is
+       dark. An opaque tile always has its own contrast. */
+    .bg { fill: #fff }
+    .ink { fill: #000 }
+    @media (prefers-color-scheme: dark) {
+      .bg { fill: #000 }
+      .ink { fill: #fff }
+    }
+  </style>
+  <rect class="bg" width="32" height="32"/>
+  <path class="ink" d="M6 6h20v20H6V6Zm6 6v8h8v-8h-8Z"/>
+</svg>

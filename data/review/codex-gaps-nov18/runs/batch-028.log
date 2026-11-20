@@ -1,0 +1,146 @@
+OpenAI Codex v0.169.0
+--------
+workdir: /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+model: gpt-6-luna
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: high
+reasoning summaries: none
+session id: 01a1ee80-7341-7c73-a413-0ca464043305
+--------
+user
+You are a careful admissions-data researcher. For each university below, find facts for an
+INTERNATIONAL applicant to a FIRST-YEAR BACHELOR'S degree starting in autumn 2027 (or the nearest
+published cycle). Use the live web. Rules:
+
+- Official sources only: the university's own website (its domain or subdomains), the national
+  application service (UCAS, Common App, OUAC, uni-assist, Studyinkorea, etc.) or a government
+  statistics office. Never use rankings sites, forums, agencies, Wikipedia or blogs.
+- Every value needs the exact page URL where you read it (source_url). If you could not verify a
+  value on an official page, leave it out (null or an empty list). Never guess or estimate.
+- english: the lowest overall score accepted for undergraduate entry, per test (IELTS Academic
+  overall, TOEFL iBT total, Duolingo, PTE). If programmes differ, give the general/lowest common
+  university minimum and say so in detail (e.g. "6.5 overall, no band below 6.0; some
+  programmes higher").
+- tuition: the yearly tuition for international (non-EU / overseas) undergraduates in the local
+  currency. If it varies by programme give amount = lowest and amount_max = highest, and the
+  academic_year the fee applies to (e.g. "2026/27"). If tuition is free, amount = 0.
+- application_fee: for international first-year applicants, local currency.
+- deadlines: the main 2027-entry first-year deadlines (ISO date YYYY-MM-DD) with the route
+  (e.g. "Common App, Regular Decision", "UCAS", "university portal"). Only dates actually
+  published; if only the 2026-entry date is published, include it and put "2026 entry" in title.
+- sat: policy for international applicants; p25/p75 total SAT only if the university publishes
+  them (Common Data Set or admissions profile).
+- acceptance_rate: only if officially published (CDS, admissions statistics page).
+- notes: one short line on anything important (e.g. "Foundation year required for 11-year
+  school certificates"), else "".
+
+Spend effort on the facts students need most: English minimum, tuition, deadlines. Keep each
+detail under 160 characters. Return only the JSON that matches the schema; use each
+university's id exactly as given.
+
+Universities:
+- id: 5f90631a-ee6a-587d-a542-5fb1d07d0705 | University of Science and Technology of China | Hefei, CN | http://www.ustc.edu.cn/
+- id: cf17178b-4486-5b1c-84d1-1ef2b3ac9e37 | Universiti Putra Malaysia | Seri Kembangan, MY | http://www.upm.edu.my/
+- id: 79f39470-8afd-51a9-b34d-4c1c5c988195 | Universidad Nacional Autónoma de México | Mexico City, MX | http://www.unam.mx/
+- id: a6433838-97ca-5280-ac8a-2273fb8bab01 | University of Exeter | Exeter, GB | https://www.exeter.ac.uk
+codex
+I’ll check the official admissions and fee pages for each university, prioritizing international English requirements, tuition, and published deadlines.
+exec
+/bin/zsh -lc 'cat /Users/likeanew/.agents/skills/lemma/SKILL.md' in /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+ succeeded in 0ms:
+---
+name: lemma
+description: Persistent cross-session memory for AI agents via MCP. BEFORE starting ANY task (coding, debugging, refactoring, research, docs, optimization — any language), FIRST call memory_read to load what you already know so you never re-derive or re-explore known facts. AFTER finishing, call memory_add to persist new findings and session_attempt for dead ends — unsaved knowledge is lost permanently. Distills reusable guides from experience.
+---
+
+<!-- lemma:skill:v=0.21.0 -->
+
+# Lemma — Persistent Memory & Learning
+
+Lemma is a persistent memory server for AI agents over the Model Context Protocol.
+Every session starts blank — knowledge survives ONLY through tool calls. If you
+learn something and don't save it (`memory_add`), it is gone permanently.
+
+## Workflow
+1. **RECALL** — `memory_read` / `semantic_search`: load what's already known for this
+   project/task. Never re-explore code or re-derive facts that are already saved.
+2. **ACT** — do the task.
+3. **PERSIST** — `memory_add` for new insights; `guide_practice` for guides applied;
+   `session_attempt` for abandoned/dead-end approaches (the most valuable records).
+
+## Two knowledge layers
+- **Memory fragments** (`memory_read` / `memory_add`): atomic facts. Types: `fact`,
+  `pattern`, `lesson`, `warning`, `context`. Confidence evolves with use and feedback.
+- **Guides** (`guide_get` / `guide_distill` / `guide_practice`): procedural skills
+  distilled from fragments. Track usage count + success/failure rate.
+Pipeline: `experience -> memory_add -> pattern/lesson -> guide_distill -> guide_practice`.
+
+## Tools at a glance
+- **Recall & search**: `memory_read`, `semantic_search`, `memory_library` (full
+  snapshot + maintenance signals), `memory_stats`, `memory_audit`.
+- **Write & maintain**: `memory_add`, `memory_update`, `memory_forget`,
+  `memory_merge`, `memory_relate` (supports / contradicts / supersedes / related_to),
+  `memory_feedback`.
+- **Guides**: `guide_get`, `guide_create`, `guide_distill`, `guide_practice`,
+  `guide_update`, `guide_forget`, `guide_merge`.
+- **Sessions & reasoning**: `session_start`, `session_end`, `session_attempt`,
+  `session_stats`, `suggestion_respond`.
+- **Background intelligence**: `conflict_scan`, `proactive_analysis`,
+  `project_analytics` (run automatically; act on signals when sensible).
+
+## Writing a fragment
+```
+## [Topic Title]
+### Context
+[1-2 sentences: what and why it matters]
+### [Content Section]
+- [Key fact 1]
+- [Key fact 2]
+### Rules (optional)
+- [Absolute constraint]
+```
+One idea per fragment, 30-2000 chars, structured markdown (not prose). **Store
+fragments in ENGLISH** (required for search/retrieval). Never ask permission to save.
+
+## Background intelligence
+Conflict detection, distill/merge/refine suggestions, and auto-linking run
+automatically. From the CLI, `lemma -lib` prints a full knowledge-base snapshot
+and `lemma -vis` launches a visualizer.
+
+web search: 
+web search: site:ustc.edu.cn international undergraduate admission 2026 tuition English proficiency deadline USTC ...
+web search: 
+web search: site:ic.ustc.edu.cn/en 2027 international undergraduate admission tuition application fee deadline ...
+web search: 
+web search: site:ic.ustc.edu.cn/en/v7info.php "2027" Undergraduate Application USTC international deadline ...
+web search: 
+web search: site:akademik.upm.edu.my/kemasukan_pelajar_antarabangsa/bacelor "Application Deadline" October intake 2026 ...
+web search: 
+web search: site:dgae.unam.mx convocatoria licenciatura 2026 aspirantes extranjeros 150 USD fechas registro examen ...
+web search: 
+web search: 
+web search: 
+web search: site:exeter.ac.uk/study/international/english-language-requirements IELTS undergraduate IELTS 6.5 "University of Exeter" ...
+web search: 
+web search: "Application Deadline" "UPM" "Bachelor" international student "October Intake" ...
+web search: 
+web search: 
+web search: 
+web search: site:akademik.upm.edu.my/kemasukan_pelajar_antarabangsa/bacelor/ "Application Deadline" UPM ...
+web search: 
+web search: 
+web search: 
+web search: site:ic.ustc.edu.cn/en "2027" "October 1" application international students undergraduate ...
+web search: 
+web search: '150 USD'
+web search: 
+web search: site:ucas.com application fee 2027 entry undergraduate fee £2027 ...
+web search: 
+web search: 
+codex
+{"universities":[{"id":"5f90631a-ee6a-587d-a542-5fb1d07d0705","english":[],"tuition":{"amount":26000,"amount_max":null,"currency":"CNY","period":"year","academic_year":"2026/27","detail":"International undergraduate tuition is RMB 26,000 per academic year.","source_url":"https://ic.ustc.edu.cn/en/v7list.php?id=101"},"application_fee":null,"deadlines":[{"title":"2026 entry","due_at":"2026-05-31","route":"USTC online application","source_url":"https://en.business.ustc.edu.cn/_t437/admissions/list.htm"}],"sat":null,"acceptance_rate":null,"notes":"Chinese-language undergraduate programs require HSK 5 or proof of Chinese-medium high-school study."},{"id":"cf17178b-4486-5b1c-84d1-1ef2b3ac9e37","english":[{"test":"IELTS","minimum":5.5,"detail":"5.5 overall.","source_url":"https://akademik.upm.edu.my/upload/dokumen/menul320250417184027Undergraduate_Programmes_Brochure_for_International_Students.pdf"},{"test":"TOEFL iBT","minimum":60,"detail":"60 total.","source_url":"https://akademik.upm.edu.my/upload/dokumen/menul320250417184027Undergraduate_Programmes_Brochure_for_International_Students.pdf"},{"test":"PTE Academic","minimum":43,"detail":"43 overall.","source_url":"https://akademik.upm.edu.my/upload/dokumen/menul320250417184027Undergraduate_Programmes_Brochure_for_International_Students.pdf"},{"test":"Cambridge C1/C2","minimum":154,"detail":"Cambridge English CAE/CPE/Linguaskill: score 154.","source_url":"https://akademik.upm.edu.my/upload/dokumen/menul320250417184027Undergraduate_Programmes_Brochure_for_International_Students.pdf"}],"tuition":{"amount":12000,"amount_max":24000,"currency":"MYR","period":"year","academic_year":"2025/26","detail":"Bachelor program fees range MYR 12,000–24,000 per year; 2025 international student registration guide.","source_url":"https://akademik.upm.edu.my/upload/dokumen/20250430143019Registration_Guidelines_Update_April_2025.pdf"},"application_fee":{"amount":100,"currency":"USD","source_url":"https://akademik.upm.edu.my/kemasukan_pelajar_antarabangsa/bacelor/how_to_apply-66344"},"deadlines":[],"sat":null,"acceptance_rate":null,"notes":""},{"id":"79f39470-8afd-51a9-b34d-4c1c5c988195","english":[],"tuition":null,"application_fee":{"amount":490,"currency":"MXN","source_url":"https://repositorio.dgae.unam.mx/Licenciatura2026/instructivo_licenciatura2026.pdf"},"deadlines":[{"title":"2026 entry registration deadline","due_at":"2026-02-03","route":"UNAM admissions portal","source_url":"https://repositorio.dgae.unam.mx/Licenciatura2026/instructivo_licenciatura2026.pdf"},{"title":"2026 entry exam fee payment deadline","due_at":"2026-02-05","route":"UNAM admissions portal / bank payment","source_url":"https://repositorio.dgae.unam.mx/Licenciatura2026/instructivo_licenciatura2026.pdf"}],"sat":null,"acceptance_rate":null,"notes":""},{"id":"a6433838-97ca-5280-ac8a-2273fb8bab01","english":[{"test":"IELTS","minimum":6,"detail":"Profile A: 6.0 overall, no section below 6.0; requirements vary by course/profile.","source_url":"https://www.exeter.ac.uk/study/englishlanguagerequirements/profile-a/"},{"test":"TOEFL iBT","minimum":4,"detail":"Profile A, tests from 21 Jan 2026: 4.0 overall and in each section; requirements vary by course/profile.","source_url":"https://www.exeter.ac.uk/study/englishlanguagerequirements/profile-a/"},{"test":"Duolingo","minimum":110,"detail":"Profile A: 110 overall and in each integrated subscore; requirements vary by course/profile.","source_url":"https://www.exeter.ac.uk/study/englishlanguagerequirements/profile-a/"},{"test":"PTE Academic","minimum":64,"detail":"Profile A: 64 overall and in all communicative skills; requirements vary by course/profile.","source_url":"https://www.exeter.ac.uk/study/englishlanguagerequirements/profile-a/"}],"tuition":{"amount":25700,"amount_max":49300,"currency":"GBP","period":"year","academic_year":"2027/28","detail":"International fees vary by subject: £25,700–£49,300 per year.","source_url":"https://www.exeter.ac.uk/undergraduate-degrees/fees/"},"application_fee":{"amount":34.5,"currency":"GBP","source_url":"https://www.ucas.com/faqs/what-is-the-application-fee-for-the-2027-cycle"},"deadlines":[{"title":"2027 entry, most undergraduate courses","due_at":"2027-01-13","route":"UCAS","source_url":"https://www.exeter.ac.uk/undergraduate-degrees/apply/key-dates/"},{"title":"2027 entry, BMBS Medicine","due_at":"2026-10-15","route":"UCAS","source_url":"https://www.exeter.ac.uk/undergraduate-degrees/apply/key-dates/"}],"sat":null,"acceptance_rate":null,"notes":""}] }
+tokens used
+129,124
+{"universities":[{"id":"5f90631a-ee6a-587d-a542-5fb1d07d0705","english":[],"tuition":{"amount":26000,"amount_max":null,"currency":"CNY","period":"year","academic_year":"2026/27","detail":"International undergraduate tuition is RMB 26,000 per academic year.","source_url":"https://ic.ustc.edu.cn/en/v7list.php?id=101"},"application_fee":null,"deadlines":[{"title":"2026 entry","due_at":"2026-05-31","route":"USTC online application","source_url":"https://en.business.ustc.edu.cn/_t437/admissions/list.htm"}],"sat":null,"acceptance_rate":null,"notes":"Chinese-language undergraduate programs require HSK 5 or proof of Chinese-medium high-school study."},{"id":"cf17178b-4486-5b1c-84d1-1ef2b3ac9e37","english":[{"test":"IELTS","minimum":5.5,"detail":"5.5 overall.","source_url":"https://akademik.upm.edu.my/upload/dokumen/menul320250417184027Undergraduate_Programmes_Brochure_for_International_Students.pdf"},{"test":"TOEFL iBT","minimum":60,"detail":"60 total.","source_url":"https://akademik.upm.edu.my/upload/dokumen/menul320250417184027Undergraduate_Programmes_Brochure_for_International_Students.pdf"},{"test":"PTE Academic","minimum":43,"detail":"43 overall.","source_url":"https://akademik.upm.edu.my/upload/dokumen/menul320250417184027Undergraduate_Programmes_Brochure_for_International_Students.pdf"},{"test":"Cambridge C1/C2","minimum":154,"detail":"Cambridge English CAE/CPE/Linguaskill: score 154.","source_url":"https://akademik.upm.edu.my/upload/dokumen/menul320250417184027Undergraduate_Programmes_Brochure_for_International_Students.pdf"}],"tuition":{"amount":12000,"amount_max":24000,"currency":"MYR","period":"year","academic_year":"2025/26","detail":"Bachelor program fees range MYR 12,000–24,000 per year; 2025 international student registration guide.","source_url":"https://akademik.upm.edu.my/upload/dokumen/20250430143019Registration_Guidelines_Update_April_2025.pdf"},"application_fee":{"amount":100,"currency":"USD","source_url":"https://akademik.upm.edu.my/kemasukan_pelajar_antarabangsa/bacelor/how_to_apply-66344"},"deadlines":[],"sat":null,"acceptance_rate":null,"notes":""},{"id":"79f39470-8afd-51a9-b34d-4c1c5c988195","english":[],"tuition":null,"application_fee":{"amount":490,"currency":"MXN","source_url":"https://repositorio.dgae.unam.mx/Licenciatura2026/instructivo_licenciatura2026.pdf"},"deadlines":[{"title":"2026 entry registration deadline","due_at":"2026-02-03","route":"UNAM admissions portal","source_url":"https://repositorio.dgae.unam.mx/Licenciatura2026/instructivo_licenciatura2026.pdf"},{"title":"2026 entry exam fee payment deadline","due_at":"2026-02-05","route":"UNAM admissions portal / bank payment","source_url":"https://repositorio.dgae.unam.mx/Licenciatura2026/instructivo_licenciatura2026.pdf"}],"sat":null,"acceptance_rate":null,"notes":""},{"id":"a6433838-97ca-5280-ac8a-2273fb8bab01","english":[{"test":"IELTS","minimum":6,"detail":"Profile A: 6.0 overall, no section below 6.0; requirements vary by course/profile.","source_url":"https://www.exeter.ac.uk/study/englishlanguagerequirements/profile-a/"},{"test":"TOEFL iBT","minimum":4,"detail":"Profile A, tests from 21 Jan 2026: 4.0 overall and in each section; requirements vary by course/profile.","source_url":"https://www.exeter.ac.uk/study/englishlanguagerequirements/profile-a/"},{"test":"Duolingo","minimum":110,"detail":"Profile A: 110 overall and in each integrated subscore; requirements vary by course/profile.","source_url":"https://www.exeter.ac.uk/study/englishlanguagerequirements/profile-a/"},{"test":"PTE Academic","minimum":64,"detail":"Profile A: 64 overall and in all communicative skills; requirements vary by course/profile.","source_url":"https://www.exeter.ac.uk/study/englishlanguagerequirements/profile-a/"}],"tuition":{"amount":25700,"amount_max":49300,"currency":"GBP","period":"year","academic_year":"2027/28","detail":"International fees vary by subject: £25,700–£49,300 per year.","source_url":"https://www.exeter.ac.uk/undergraduate-degrees/fees/"},"application_fee":{"amount":34.5,"currency":"GBP","source_url":"https://www.ucas.com/faqs/what-is-the-application-fee-for-the-2027-cycle"},"deadlines":[{"title":"2027 entry, most undergraduate courses","due_at":"2027-01-13","route":"UCAS","source_url":"https://www.exeter.ac.uk/undergraduate-degrees/apply/key-dates/"},{"title":"2027 entry, BMBS Medicine","due_at":"2026-10-15","route":"UCAS","source_url":"https://www.exeter.ac.uk/undergraduate-degrees/apply/key-dates/"}],"sat":null,"acceptance_rate":null,"notes":""}] }

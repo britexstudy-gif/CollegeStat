@@ -1,0 +1,96 @@
+OpenAI Codex v0.169.0
+--------
+workdir: /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+model: gpt-6-luna
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: high
+reasoning summaries: none
+session id: 01a1eea1-9527-7e11-b723-dd7c43282af1
+--------
+user
+You are a careful admissions-data researcher. For each university below, find facts for an
+INTERNATIONAL applicant to a FIRST-YEAR BACHELOR'S degree starting in autumn 2027 (or the nearest
+published cycle). Use the live web. Rules:
+
+- Official sources only: the university's own website (its domain or subdomains), the national
+  application service (UCAS, Common App, OUAC, uni-assist, Studyinkorea, etc.) or a government
+  statistics office. Never use rankings sites, forums, agencies, Wikipedia or blogs.
+- Every value needs the exact page URL where you read it (source_url). If you could not verify a
+  value on an official page, leave it out (null or an empty list). Never guess or estimate.
+- english: the lowest overall score accepted for undergraduate entry, per test (IELTS Academic
+  overall, TOEFL iBT total, Duolingo, PTE). If programmes differ, give the general/lowest common
+  university minimum and say so in detail (e.g. "6.5 overall, no band below 6.0; some
+  programmes higher").
+- tuition: the yearly tuition for international (non-EU / overseas) undergraduates in the local
+  currency. If it varies by programme give amount = lowest and amount_max = highest, and the
+  academic_year the fee applies to (e.g. "2026/27"). If tuition is free, amount = 0.
+- application_fee: for international first-year applicants, local currency.
+- deadlines: the main 2027-entry first-year deadlines (ISO date YYYY-MM-DD) with the route
+  (e.g. "Common App, Regular Decision", "UCAS", "university portal"). Only dates actually
+  published; if only the 2026-entry date is published, include it and put "2026 entry" in title.
+- sat: policy for international applicants; p25/p75 total SAT only if the university publishes
+  them (Common Data Set or admissions profile).
+- acceptance_rate: only if officially published (CDS, admissions statistics page).
+- notes: one short line on anything important (e.g. "Foundation year required for 11-year
+  school certificates"), else "".
+
+Spend effort on the facts students need most: English minimum, tuition, deadlines. Keep each
+detail under 160 characters. Return only the JSON that matches the schema; use each
+university's id exactly as given.
+
+Universities:
+- id: 34f9bd5c-1c24-5d4f-880c-4a342627a148 | UNSW Sydney | Sydney, AU | https://www.unsw.edu.au/
+- id: f5c17f3c-ac83-5193-8c71-641147ad926c | Johns Hopkins University | Baltimore, US | http://www.jhu.edu/
+- id: 819bd7c2-cc38-5dc4-854d-2d59a8a9f4e5 | EPFL - EPF Lausanne | Lausanne, CH | http://www.epfl.ch/
+ERROR: You’ve hit your usage limit. Upgrade to Plus to continue using Codex (https://chatgpt.com/explore/plus), or try again at Dec 18th, 2026 4:41 PM.
+ERROR: You’ve hit your usage limit. Upgrade to Plus to continue using Codex (https://chatgpt.com/explore/plus), or try again at Dec 18th, 2026 4:41 PM.
+OpenAI Codex v0.169.0
+--------
+workdir: /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+model: gpt-6-luna
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: high
+reasoning summaries: none
+session id: 01a1eea1-ad0a-7861-a1f6-aa5d778b403b
+--------
+user
+You are a careful admissions-data researcher. For each university below, find facts for an
+INTERNATIONAL applicant to a FIRST-YEAR BACHELOR'S degree starting in autumn 2027 (or the nearest
+published cycle). Use the live web. Rules:
+
+- Official sources only: the university's own website (its domain or subdomains), the national
+  application service (UCAS, Common App, OUAC, uni-assist, Studyinkorea, etc.) or a government
+  statistics office. Never use rankings sites, forums, agencies, Wikipedia or blogs.
+- Every value needs the exact page URL where you read it (source_url). If you could not verify a
+  value on an official page, leave it out (null or an empty list). Never guess or estimate.
+- english: the lowest overall score accepted for undergraduate entry, per test (IELTS Academic
+  overall, TOEFL iBT total, Duolingo, PTE). If programmes differ, give the general/lowest common
+  university minimum and say so in detail (e.g. "6.5 overall, no band below 6.0; some
+  programmes higher").
+- tuition: the yearly tuition for international (non-EU / overseas) undergraduates in the local
+  currency. If it varies by programme give amount = lowest and amount_max = highest, and the
+  academic_year the fee applies to (e.g. "2026/27"). If tuition is free, amount = 0.
+- application_fee: for international first-year applicants, local currency.
+- deadlines: the main 2027-entry first-year deadlines (ISO date YYYY-MM-DD) with the route
+  (e.g. "Common App, Regular Decision", "UCAS", "university portal"). Only dates actually
+  published; if only the 2026-entry date is published, include it and put "2026 entry" in title.
+- sat: policy for international applicants; p25/p75 total SAT only if the university publishes
+  them (Common Data Set or admissions profile).
+- acceptance_rate: only if officially published (CDS, admissions statistics page).
+- notes: one short line on anything important (e.g. "Foundation year required for 11-year
+  school certificates"), else "".
+
+Spend effort on the facts students need most: English minimum, tuition, deadlines. Keep each
+detail under 160 characters. Return only the JSON that matches the schema; use each
+university's id exactly as given.
+
+Universities:
+- id: 34f9bd5c-1c24-5d4f-880c-4a342627a148 | UNSW Sydney | Sydney, AU | https://www.unsw.edu.au/
+- id: f5c17f3c-ac83-5193-8c71-641147ad926c | Johns Hopkins University | Baltimore, US | http://www.jhu.edu/
+- id: 819bd7c2-cc38-5dc4-854d-2d59a8a9f4e5 | EPFL - EPF Lausanne | Lausanne, CH | http://www.epfl.ch/
+ERROR: You’ve hit your usage limit. Upgrade to Plus to continue using Codex (https://chatgpt.com/explore/plus), or try again at Dec 18th, 2026 4:41 PM.
+ERROR: You’ve hit your usage limit. Upgrade to Plus to continue using Codex (https://chatgpt.com/explore/plus), or try again at Dec 18th, 2026 4:41 PM.

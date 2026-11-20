@@ -1,0 +1,372 @@
+/* Imkoniyatlar: application simulation (apply-sim.tsx). The portal bar takes the
+   real portal's signature colour; everything inside stays on dashboard tokens. */
+
+/* Pick */
+.as-pick {
+  display: grid;
+  gap: 18px;
+  width: 100%;
+  max-width: 640px;
+  margin: 4vh auto 0;
+}
+.as-coach {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.as-bubble {
+  display: grid;
+  gap: 4px;
+  padding: 16px 18px;
+  border: 1px solid var(--dk-line);
+  border-radius: 16px;
+  background: var(--dk-panel);
+}
+.as-bubble h1 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+.as-bubble p {
+  margin: 0;
+  color: var(--dk-muted);
+  font-size: 14px;
+  line-height: 1.5;
+}
+.as-search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 52px;
+  padding: 0 16px;
+  border: 1px solid var(--dk-line);
+  border-radius: 14px;
+  background: var(--dk-panel);
+}
+.as-search:focus-within {
+  border-color: var(--dk-line-strong, var(--dk-muted));
+}
+.as-search svg {
+  width: 18px;
+  height: 18px;
+  color: var(--dk-muted);
+}
+.as-search input,
+.as-search input:focus,
+.as-search input:focus-visible {
+  flex: 1;
+  min-width: 0;
+  height: 100%;
+  border: 0 !important;
+  outline: none !important;
+  box-shadow: none !important;
+  background: transparent;
+  color: var(--dk-ink);
+  font-size: 15px;
+}
+.as-label {
+  margin: 4px 0 -8px 4px;
+  color: var(--dk-muted);
+  font-size: 13px;
+  font-weight: 500;
+}
+.as-results {
+  display: grid;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.as-results button {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 12px;
+  text-align: left;
+  transition: background 0.15s ease;
+}
+.as-results button:hover {
+  background: var(--dk-hover);
+}
+.as-r-main {
+  display: grid;
+  flex: 1;
+  min-width: 0;
+}
+.as-r-main strong {
+  overflow: hidden;
+  font-size: 14.5px;
+  font-weight: 600;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.as-r-main small {
+  color: var(--dk-muted);
+  font-size: 12.5px;
+}
+.as-r-plat {
+  flex: none;
+  padding: 3px 9px;
+  border: 1px solid var(--dk-line);
+  border-radius: 999px;
+  color: var(--dk-muted);
+  font-size: 12px;
+}
+
+/* Portal */
+.as-portal {
+  --as-brand: #3a3a3a;
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid var(--dk-line);
+  border-radius: 16px;
+  background: var(--dk-panel);
+}
+.as-portal.is-common-app {
+  --as-brand: #0b74b8;
+}
+.as-portal.is-ucas {
+  --as-brand: #7a2582;
+}
+.as-portal.is-uni-assist,
+.as-portal.is-campus-france {
+  --as-brand: #c8102e;
+}
+.as-portal.is-studielink {
+  --as-brand: #e86d1f;
+}
+.as-portal.is-uc,
+.as-portal.is-parcoursup {
+  --as-brand: #2f6fd6;
+}
+.as-portal.is-universitaly {
+  --as-brand: #138a4f;
+}
+.as-portal.is-coalition,
+.as-portal.is-ouac {
+  --as-brand: #a3195b;
+}
+.as-bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 56px;
+  padding: 8px 16px;
+  background: var(--as-brand);
+  color: #fff;
+}
+.as-back {
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  color: #fff;
+}
+.as-back:hover {
+  background: rgb(255 255 255 / 0.14);
+}
+.as-back svg {
+  width: 18px;
+  height: 18px;
+}
+.as-brand {
+  flex: none;
+  white-space: nowrap;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+.as-tag {
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: rgb(255 255 255 / 0.18);
+  font-size: 11.5px;
+  font-weight: 600;
+}
+.as-who {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+  margin-left: auto;
+  font-size: 13.5px;
+  font-weight: 500;
+}
+.as-who > span:last-child {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.as-body {
+  padding: 22px;
+}
+.as-decide {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 20px;
+  padding: 16px 18px;
+  border: 1px solid var(--dk-line);
+  border-radius: 14px;
+  background: var(--dk-subtle, var(--dk-hover));
+}
+.as-decide p {
+  margin: 0;
+  font-weight: 500;
+}
+.as-decide button,
+.as-actions .is-primary {
+  height: 40px;
+  padding: 0 18px;
+  border-radius: 999px;
+  background: var(--dk-ink);
+  color: var(--dk-panel);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* Decision letter */
+.as-letter-wrap {
+  display: grid;
+  gap: 16px;
+  width: 100%;
+  max-width: 680px;
+  margin: 2vh auto 0;
+  animation: as-open 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+@keyframes as-open {
+  from {
+    opacity: 0;
+    transform: translateY(18px) scale(0.98);
+  }
+}
+.as-letter {
+  display: grid;
+  gap: 12px;
+  padding: 36px 40px;
+  border: 1px solid var(--dk-line);
+  border-top: 4px solid #8a8a8a;
+  border-radius: 6px;
+  background: #fffdf8;
+  color: #1a1a1a;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 16px;
+  line-height: 1.65;
+  box-shadow: 0 18px 50px rgb(0 0 0 / 0.12);
+}
+.as-letter.is-admitted {
+  border-top-color: #16a34a;
+}
+.as-letter.is-waitlisted {
+  border-top-color: #d97706;
+}
+.as-letter header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #e7e2d6;
+  font-family: var(--cs-font-body, system-ui, sans-serif);
+}
+.as-letter header div {
+  display: grid;
+}
+.as-letter header strong {
+  font-size: 16px;
+}
+.as-letter header small {
+  color: #6b6b6b;
+  font-size: 12.5px;
+}
+.as-letter h1 {
+  margin: 4px 0 0;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+.as-letter p {
+  margin: 0;
+}
+.as-l-date {
+  color: #6b6b6b;
+  font-size: 14px;
+}
+.as-l-sign {
+  margin-top: 8px !important;
+  font-style: italic;
+}
+.as-why {
+  padding: 16px 18px;
+  border: 1px solid var(--dk-line);
+  border-radius: 14px;
+  background: var(--dk-panel);
+}
+.as-why h2 {
+  margin: 0 0 8px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.as-why ul {
+  display: grid;
+  gap: 6px;
+  margin: 0;
+  padding-left: 18px;
+  color: var(--dk-muted);
+  font-size: 14px;
+}
+.as-note {
+  margin: 0;
+  color: var(--dk-faint, var(--dk-muted));
+  font-size: 12.5px;
+}
+.as-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+}
+.as-actions button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  height: 40px;
+  padding: 0 14px;
+  border-radius: 999px;
+  color: var(--dk-muted);
+  font-size: 14px;
+}
+.as-actions button svg {
+  width: 16px;
+  height: 16px;
+}
+.as-actions .is-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+@media (max-width: 640px) {
+  .as-body {
+    padding: 14px;
+  }
+  .as-tag {
+    display: none;
+  }
+  .as-letter {
+    padding: 24px 20px;
+    font-size: 15px;
+  }
+  .as-letter h1 {
+    font-size: 22px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .as-letter-wrap {
+    animation: none;
+  }
+}

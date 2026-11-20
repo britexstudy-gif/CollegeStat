@@ -1,0 +1,39 @@
+{
+  "slug": "us-need-based-aid-internationals",
+  "title": "Need-based aid in the US: what families in Central Asia should prepare",
+  "summary": "Need-blind versus need-aware, when the CSS Profile applies, and a document checklist for families who do not file US taxes.",
+  "category": "money",
+  "central_asia": false,
+  "sources": [
+    {
+      "title": "Harvard: Prospective students financial aid",
+      "url": "https://college.harvard.edu/financial-aid/apply-financial-aid/prospective-students"
+    },
+    {
+      "title": "Yale: International financial aid",
+      "url": "https://admissions.yale.edu/financial-aid"
+    },
+    {
+      "title": "College Board: CSS Profile for international students",
+      "url": "https://cssprofile.collegeboard.org/international-students"
+    },
+    {
+      "title": "College Board: Getting Started",
+      "url": "https://cssprofile.collegeboard.org/getting-started"
+    },
+    {
+      "title": "College Board: IDOC tax documents",
+      "url": "https://cssprofile.collegeboard.org/help-center/what-do-i-submit-idoc-if-my-parents-do-not-file-us-tax-returns"
+    }
+  ],
+  "checked_at": "2026-11-14",
+  "reading_minutes": 2,
+  "status": "approved",
+  "body": "## In short\n\n- Policies differ by college. Read each college's current international aid page.\n- Aid deadlines are often separate from admission deadlines.\n- Families without US tax returns upload official home-country tax and income documents with English translations.\n- Never estimate or leave out figures to look stronger.\n\n## Need-blind and need-aware\n\n\"Need-blind\" means a college says it does not consider ability to pay in admission decisions under the policy it defines. \"Need-aware\" means finances may be considered. For example, Harvard says international students follow the same aid process and that applying for aid does not affect admission, and Yale describes need-blind admission for all students and meeting full demonstrated need. Do not assume US rules are uniform. [Harvard](https://college.harvard.edu/financial-aid/apply-financial-aid/prospective-students) [Yale](https://admissions.yale.edu/financial-aid)\n\n## CSS Profile and proof\n\nSome colleges use the CSS Profile to collect family income, assets and expenses. College Board says international families can report in their home currency. Check which of your colleges require it and by when. [CSS Profile for international students](https://cssprofile.collegeboard.org/international-students) [Deadlines](https://cssprofile.collegeboard.org/getting-started)\n\nPrepare before you start: parents' income and tax records, employer or business information, bank and investment balances, property or business assets if asked, household details, and notes on unusual income or expenses. If parents do not file US tax returns, College Board asks for the official tax documents required in your home country; non-English documents need English translations, and a statement of non-filing plus wage documents may be needed when no return exists. [IDOC guidance](https://cssprofile.collegeboard.org/help-center/what-do-i-submit-idoc-if-my-parents-do-not-file-us-tax-returns)\n\n> **Example.** A family in Tashkent runs a small shop and receives help from relatives. They collect the official income declaration the tax authority provides, bank statements for the same year, proof of the shop's ownership, and a short note explaining a year when income dropped. They ask a translator for English versions and keep the originals.\n\n## Colleges that meet full need for international students\n\nA small group of US colleges say they admit international students without looking at ability to pay *and* meet their full demonstrated need. Others meet full need but are need-aware for international applicants, and many offer limited aid or only merit scholarships. CollegeStat has pages for several of these policies, each with the official link:\n\n- [MIT](/scholarships/mit-international-aid)\n- [Harvard](/scholarships/harvard-international-aid)\n- [Yale](/scholarships/yale-international-aid)\n- [Princeton](/scholarships/princeton-international-aid)\n- [Dartmouth](/scholarships/dartmouth-international-aid)\n- [Bowdoin](/scholarships/bowdoin-need-blind-aid-international)\n\nThese colleges are among the most selective in the world. Keep them as reach options and pair them with colleges your family can afford.\n\n## Use the net price calculator first\n\nEvery US college must publish a **net price calculator** on its website. Enter your family's real income and assets (converted to US dollars) and it estimates what you would pay after need-based aid. It is an estimate, not a promise, and some calculators handle international families poorly. Still, it is the fastest way to see whether a college could be affordable before you spend time and fees on an application.\n\n## After you are admitted\n\nThe aid offer comes with or shortly after the admission letter. Read it line by line: grants and scholarships do not need to be repaid; work-study is money you earn on campus; loans must be repaid, and many international students cannot borrow in the US without a US co-signer. Compare the **total cost** (tuition, housing, food, insurance, travel) minus grants, not the headline scholarship amount. If your family's situation has changed since you applied, write to the aid office; many will review an offer with new documents.\n\nTo get your I-20 for the visa, the college will also ask you to prove you can pay the part not covered by aid. Plan for that before you accept.\n\n## Workflow\n\n- Mark aid deadlines separately from admission deadlines.\n- Ask each college whether it needs the CSS Profile, its own form, IDOC uploads or a special request.\n- Keep clear translations and the originals. Follow each school's rules for exchange-rate dates and currency.\n- Report all family resources honestly, including relatives' support if the form asks.\n- If a document cannot be obtained, explain why and ask the aid office what it accepts instead.\n\nAwards and formulas vary by college, and each college's aid page is the authority. See the [Common App guide](/articles/common-app-2026-27) for the application side.\n",
+  "review_note": "source does not resolve: https://college.harvard.edu/financial-aid/apply-financial-aid/international-students (HTTP 404); source does not resolve: https://cssprofile.collegeboard.org/deadlines (HTTP 404); Replaced Harvard’s obsolete URL with Prospective students financial aid guidance and the obsolete CSS Profile deadlines URL with Getting Started, which explains institution-specific deadlines.",
+  "source_url": "https://college.harvard.edu/financial-aid/apply-financial-aid/prospective-students",
+  "verification_status": "staged",
+  "featured": false,
+  "updated_at": "2026-11-16",
+  "expanded_at": "2026-11-16"
+}

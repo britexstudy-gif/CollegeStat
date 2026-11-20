@@ -1,7 +1,7 @@
 import type { ImportedRecord } from "./domain";
 
-export const PROFILE_CURRENT_YEAR = 2025;
-export const profileCategories = [
+const PROFILE_CURRENT_YEAR = 2025;
+const profileCategories = [
   "Overview",
   "Admissions",
   "Costs",

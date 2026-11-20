@@ -1,0 +1,12 @@
+/* Personal report (/dashboard/report): built from the dashboard kit
+ * (dash-kit.css); only print rules live here. */
+@media print {
+  .pr-print,
+  .pr-foot {
+    display: none !important;
+  }
+  .pr .dk-panel {
+    break-inside: avoid;
+    border-color: #ddd;
+  }
+}

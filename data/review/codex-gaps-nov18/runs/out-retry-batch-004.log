@@ -1,0 +1,106 @@
+OpenAI Codex v0.169.0
+--------
+workdir: /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+model: gpt-6-luna
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: high
+reasoning summaries: none
+session id: 01a1eea0-8d71-7ff3-9742-872d633c2b45
+--------
+user
+You are a careful admissions-data researcher. For each university below, find facts for an
+INTERNATIONAL applicant to a FIRST-YEAR BACHELOR'S degree starting in autumn 2027 (or the nearest
+published cycle). Use the live web. Rules:
+
+- Official sources only: the university's own website (its domain or subdomains), the national
+  application service (UCAS, Common App, OUAC, uni-assist, Studyinkorea, etc.) or a government
+  statistics office. Never use rankings sites, forums, agencies, Wikipedia or blogs.
+- Every value needs the exact page URL where you read it (source_url). If you could not verify a
+  value on an official page, leave it out (null or an empty list). Never guess or estimate.
+- english: the lowest overall score accepted for undergraduate entry, per test (IELTS Academic
+  overall, TOEFL iBT total, Duolingo, PTE). If programmes differ, give the general/lowest common
+  university minimum and say so in detail (e.g. "6.5 overall, no band below 6.0; some
+  programmes higher").
+- tuition: the yearly tuition for international (non-EU / overseas) undergraduates in the local
+  currency. If it varies by programme give amount = lowest and amount_max = highest, and the
+  academic_year the fee applies to (e.g. "2026/27"). If tuition is free, amount = 0.
+- application_fee: for international first-year applicants, local currency.
+- deadlines: the main 2027-entry first-year deadlines (ISO date YYYY-MM-DD) with the route
+  (e.g. "Common App, Regular Decision", "UCAS", "university portal"). Only dates actually
+  published; if only the 2026-entry date is published, include it and put "2026 entry" in title.
+- sat: policy for international applicants; p25/p75 total SAT only if the university publishes
+  them (Common Data Set or admissions profile).
+- acceptance_rate: only if officially published (CDS, admissions statistics page).
+- notes: one short line on anything important (e.g. "Foundation year required for 11-year
+  school certificates"), else "".
+
+Spend effort on the facts students need most: English minimum, tuition, deadlines. Keep each
+detail under 160 characters. Return only the JSON that matches the schema; use each
+university's id exactly as given.
+
+Universities:
+- id: fa22ef60-0123-584c-b367-cc48cff224d1 | Indian Institute of Technology, Kanpur | Kanpur, IN | http://www.iitk.ac.in/
+- id: 32d95a2a-7d14-572d-8c70-bc04da01f060 | Central European University | Vienna, AT | https://www.ceu.edu
+- id: fab44467-aa34-5204-9560-df00c2dec3d1 | Norwegian University of Science and Technology | Trondheim, NO | https://www.ntnu.edu
+codex
+I’ll check the universities’ official admissions and fee pages, prioritizing undergraduate English requirements, tuition, and published deadlines for the nearest available cycle.
+web search: 
+web search: site:iitk.ac.in international undergraduate admission 2027 tuition English requirement IIT Kanpur ...
+web search: 
+web search: site:ceu.edu "undergraduate" "IELTS" "Tuition" CEU Vienna bachelor admissions ...
+web search: 
+web search: site:ceu.edu "BA in Culture, Politics and Society" tuition 2026 2027 application fee ...
+ERROR: You’ve hit your usage limit. Upgrade to Plus to continue using Codex (https://chatgpt.com/explore/plus), or try again at Dec 18th, 2026 4:41 PM.
+ERROR: You’ve hit your usage limit. Upgrade to Plus to continue using Codex (https://chatgpt.com/explore/plus), or try again at Dec 18th, 2026 4:41 PM.
+tokens used
+27,859
+OpenAI Codex v0.169.0
+--------
+workdir: /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+model: gpt-6-luna
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: high
+reasoning summaries: none
+session id: 01a1eea0-e771-78a3-8b7d-3d7870f178ed
+--------
+user
+You are a careful admissions-data researcher. For each university below, find facts for an
+INTERNATIONAL applicant to a FIRST-YEAR BACHELOR'S degree starting in autumn 2027 (or the nearest
+published cycle). Use the live web. Rules:
+
+- Official sources only: the university's own website (its domain or subdomains), the national
+  application service (UCAS, Common App, OUAC, uni-assist, Studyinkorea, etc.) or a government
+  statistics office. Never use rankings sites, forums, agencies, Wikipedia or blogs.
+- Every value needs the exact page URL where you read it (source_url). If you could not verify a
+  value on an official page, leave it out (null or an empty list). Never guess or estimate.
+- english: the lowest overall score accepted for undergraduate entry, per test (IELTS Academic
+  overall, TOEFL iBT total, Duolingo, PTE). If programmes differ, give the general/lowest common
+  university minimum and say so in detail (e.g. "6.5 overall, no band below 6.0; some
+  programmes higher").
+- tuition: the yearly tuition for international (non-EU / overseas) undergraduates in the local
+  currency. If it varies by programme give amount = lowest and amount_max = highest, and the
+  academic_year the fee applies to (e.g. "2026/27"). If tuition is free, amount = 0.
+- application_fee: for international first-year applicants, local currency.
+- deadlines: the main 2027-entry first-year deadlines (ISO date YYYY-MM-DD) with the route
+  (e.g. "Common App, Regular Decision", "UCAS", "university portal"). Only dates actually
+  published; if only the 2026-entry date is published, include it and put "2026 entry" in title.
+- sat: policy for international applicants; p25/p75 total SAT only if the university publishes
+  them (Common Data Set or admissions profile).
+- acceptance_rate: only if officially published (CDS, admissions statistics page).
+- notes: one short line on anything important (e.g. "Foundation year required for 11-year
+  school certificates"), else "".
+
+Spend effort on the facts students need most: English minimum, tuition, deadlines. Keep each
+detail under 160 characters. Return only the JSON that matches the schema; use each
+university's id exactly as given.
+
+Universities:
+- id: fa22ef60-0123-584c-b367-cc48cff224d1 | Indian Institute of Technology, Kanpur | Kanpur, IN | http://www.iitk.ac.in/
+- id: 32d95a2a-7d14-572d-8c70-bc04da01f060 | Central European University | Vienna, AT | https://www.ceu.edu
+- id: fab44467-aa34-5204-9560-df00c2dec3d1 | Norwegian University of Science and Technology | Trondheim, NO | https://www.ntnu.edu
+ERROR: You’ve hit your usage limit. Upgrade to Plus to continue using Codex (https://chatgpt.com/explore/plus), or try again at Dec 18th, 2026 4:41 PM.
+ERROR: You’ve hit your usage limit. Upgrade to Plus to continue using Codex (https://chatgpt.com/explore/plus), or try again at Dec 18th, 2026 4:41 PM.

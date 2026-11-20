@@ -1,0 +1,226 @@
+/* The landing route guide has real source links and no invented progress. */
+.landing-admissions-routes {
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+  gap: 72px;
+  align-items: center;
+  padding-block: 24px;
+}
+.landing-admissions-routes .admissions-routes-copy {
+  min-width: 0;
+}
+.application-path-illustration {
+  max-width: 390px;
+  margin-top: 28px;
+  color: var(--primary);
+}
+.application-path-illustration svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.application-path-illustration > span {
+  display: block;
+  text-align: center;
+  font-size: 11px;
+  color: var(--muted-foreground);
+  letter-spacing: 0.025em;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .page-motion-enter .application-path-sheet {
+    animation: application-sheet-in 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+  .page-motion-enter .application-path-point {
+    animation: application-point-in 0.8s 0.15s ease both;
+    transform-origin: 289px 61px;
+  }
+  @keyframes application-sheet-in {
+    from {
+      opacity: 0;
+      transform: translateY(12px) rotate(-3deg);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+  @keyframes application-point-in {
+    from {
+      opacity: 0;
+      transform: scale(0.25);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+}
+@media (max-width: 700px) {
+  .application-path-illustration {
+    max-width: 260px;
+    margin: 16px auto 0;
+  }
+}
+.landing-admissions-routes .admissions-routes-copy h2 {
+  margin: 18px 0 24px;
+}
+.landing-admissions-routes .admissions-routes-copy > p {
+  color: var(--muted-foreground);
+  font-size: 16px;
+  line-height: 1.85;
+  margin-bottom: 24px;
+  max-width: 38ch;
+  text-wrap: pretty;
+}
+.landing-admissions-routes .admissions-routes-copy > a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 40px;
+  font-size: 14px;
+}
+.landing-admissions-routes .admissions-routes-workbench {
+  min-width: 0;
+}
+.landing-admissions-routes .admissions-route-picker {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+.landing-admissions-routes .admissions-route-picker button {
+  padding: 9px 13px;
+  min-height: 40px;
+  border: 1px solid var(--border);
+  border-radius: 9px;
+  background: transparent;
+  color: var(--muted-foreground);
+  font-size: 12px;
+  cursor: pointer;
+  transition:
+    background 0.15s,
+    color 0.15s;
+}
+.landing-admissions-routes
+  .admissions-route-picker
+  button[aria-selected="true"] {
+  border-color: color-mix(in srgb, var(--primary) 30%, var(--border));
+  background: color-mix(in srgb, var(--primary) 7%, var(--background));
+  color: var(--primary);
+}
+.landing-admissions-routes .admissions-route-picker button:focus-visible,
+.landing-admissions-routes .admissions-route-detail:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 3px;
+}
+.landing-admissions-routes .admissions-route-detail {
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: var(--card);
+  padding: 26px 28px;
+}
+.landing-admissions-routes .admissions-route-detail header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 17px;
+}
+.landing-admissions-routes .admissions-route-detail header svg {
+  color: var(--primary);
+  flex-shrink: 0;
+}
+.landing-admissions-routes .admissions-route-detail header strong {
+  display: block;
+  font-size: 17px;
+  font-weight: 600;
+}
+.landing-admissions-routes .admissions-route-detail header span {
+  display: block;
+  font-size: 11px;
+  line-height: 1.6;
+  margin-top: 2px;
+  color: var(--muted-foreground);
+}
+.landing-admissions-routes .admissions-route-detail > p {
+  font-size: 13px;
+  line-height: 1.8;
+  margin: 0;
+  color: var(--muted-foreground);
+}
+.landing-admissions-routes .admissions-route-detail ol {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+.landing-admissions-routes .admissions-route-detail li {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  padding: 13px 0;
+  border-top: 1px solid var(--border);
+  font-size: 13px;
+  line-height: 1.6;
+}
+.landing-admissions-routes .admissions-route-detail li > span {
+  font-size: 11px;
+  line-height: 1.9;
+  flex-shrink: 0;
+  font-variant-numeric: tabular-nums;
+  color: var(--muted-foreground);
+}
+.landing-admissions-routes .admissions-route-detail footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  border-top: 1px solid var(--border);
+  padding-top: 18px;
+}
+.landing-admissions-routes .admissions-route-detail footer a {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 12px;
+  min-height: 32px;
+  color: var(--primary);
+}
+.landing-admissions-routes .admissions-route-scope {
+  margin: 12px 5px 0;
+  color: var(--muted-foreground);
+  font-size: 11px;
+  line-height: 1.7;
+}
+@media (max-width: 900px) {
+  .landing-admissions-routes {
+    gap: 34px;
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .landing-admissions-routes .admissions-routes-copy > p {
+    max-width: 56ch;
+    font-size: 15px;
+  }
+}
+@media (max-width: 480px) {
+  .landing-admissions-routes {
+    padding-block: 0;
+    gap: 24px;
+  }
+  .landing-admissions-routes .admissions-route-detail {
+    padding: 20px;
+  }
+  .landing-admissions-routes .admissions-route-picker {
+    gap: 6px;
+  }
+  .landing-admissions-routes .admissions-route-picker button {
+    font-size: 11px;
+    padding-inline: 10px;
+  }
+  .landing-admissions-routes .admissions-route-detail footer {
+    flex-direction: column;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .landing-admissions-routes .admissions-route-picker button {
+    transition: none;
+  }
+}

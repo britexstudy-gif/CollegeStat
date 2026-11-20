@@ -1,0 +1,99 @@
+{
+  "status": "hosted_private_review_only",
+  "project_id": "yfyqikmanpgnvyfthzwe",
+  "reviewed_at": "2026-10-10",
+  "verification": {
+    "sources": 3,
+    "migration": "20261010094202",
+    "pending_rows": [
+      {
+        "id": "1c57f661-3cf1-5bed-a750-6de01f1e232a",
+        "year": 2027,
+        "value": "2027-01-15",
+        "metric": "application_deadline",
+        "status": "pending",
+        "population": "Undergraduate Engineering applicants · excluding Architecture",
+        "source_url": "https://uwaterloo.ca/future-students/admissions/deadlines",
+        "verified_at": null,
+        "target_table": "deadlines",
+        "university_id": "808b96a5-0e59-5215-a2f5-e7c3c5d2785a",
+        "reporting_period": "2027 entry",
+        "verification_status": "needs_review"
+      },
+      {
+        "id": "47a20650-d902-578e-9b0f-3eefd5f79125",
+        "year": 2026,
+        "value": "54600000",
+        "metric": "tuition",
+        "status": "pending",
+        "population": "Undergraduate students · international rate",
+        "source_url": "https://www.wiut.uz/tuition-fees-international",
+        "verified_at": null,
+        "target_table": "costs",
+        "university_id": "66666666-6666-4666-8666-666666666666",
+        "reporting_period": "2026/27 academic year",
+        "verification_status": "needs_review"
+      },
+      {
+        "id": "6ea4dc9b-f16f-59f5-a427-a33b295f55dd",
+        "year": 2027,
+        "value": "2027-02-15",
+        "metric": "documents_deadline",
+        "status": "pending",
+        "population": "Undergraduate applicants · programmes other than Engineering",
+        "source_url": "https://uwaterloo.ca/future-students/admissions/deadlines",
+        "verified_at": null,
+        "target_table": "deadlines",
+        "university_id": "808b96a5-0e59-5215-a2f5-e7c3c5d2785a",
+        "reporting_period": "2027 entry",
+        "verification_status": "needs_review"
+      },
+      {
+        "id": "9e7cfd26-a65a-5653-aa26-76e11bbcf86b",
+        "year": 2026,
+        "value": "38820000",
+        "metric": "tuition",
+        "status": "pending",
+        "population": "Undergraduate students · domestic rate",
+        "source_url": "https://www.wiut.uz/tuition-fees",
+        "verified_at": null,
+        "target_table": "costs",
+        "university_id": "66666666-6666-4666-8666-666666666666",
+        "reporting_period": "2026/27 academic year",
+        "verification_status": "needs_review"
+      },
+      {
+        "id": "c0cc0169-a6a3-5e8d-9c9c-2262ab6b647b",
+        "year": 2027,
+        "value": "2027-02-01",
+        "metric": "application_deadline",
+        "status": "pending",
+        "population": "Undergraduate applicants · programmes other than Engineering",
+        "source_url": "https://uwaterloo.ca/future-students/admissions/deadlines",
+        "verified_at": null,
+        "target_table": "deadlines",
+        "university_id": "808b96a5-0e59-5215-a2f5-e7c3c5d2785a",
+        "reporting_period": "2027 entry",
+        "verification_status": "needs_review"
+      }
+    ],
+    "structured_guard": true,
+    "published_universities": 14003
+  },
+  "source_candidate_sha256": "75ecb9ccf7e55015211b82c0f72765bee863e4c8461261713833393e59e4935b",
+  "staging_sql_sha256": "1b3868ed26b357cb2035da999f5ed9d6262bca26001c836bbe583e31d4e747fb",
+  "public_costs_added": 0,
+  "public_deadlines_added": 0,
+  "held_undated_facts": 7,
+  "review_guard_migration": "20261010094202_structured_review_guard.sql",
+  "reproduce": [
+    "python3 scripts/ingestion/review-official-requirements-oct10.py --out outputs/official-requirements-oct10",
+    "python3 scripts/database/prepare-official-requirements-staging-oct10.py --fetch"
+  ],
+  "notes": [
+    "Tuition populations remain separate; fee period corroborated on dated official fees pages.",
+    "Deadline precision is one day; no timezone cutoff invented.",
+    "Missing reporting years remain null and are not inserted into a year-required source table.",
+    "Approval needs a section-specific review; generic numeric publication is blocked."
+  ]
+}

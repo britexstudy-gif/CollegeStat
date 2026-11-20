@@ -1,0 +1,130 @@
+OpenAI Codex v0.169.0
+--------
+workdir: /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+model: gpt-6-luna
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: high
+reasoning summaries: none
+session id: 01a1ee86-870e-73f0-9dd5-9da8c98cff33
+--------
+user
+You are a careful admissions-data researcher. For each university below, find facts for an
+INTERNATIONAL applicant to a FIRST-YEAR BACHELOR'S degree starting in autumn 2027 (or the nearest
+published cycle). Use the live web. Rules:
+
+- Official sources only: the university's own website (its domain or subdomains), the national
+  application service (UCAS, Common App, OUAC, uni-assist, Studyinkorea, etc.) or a government
+  statistics office. Never use rankings sites, forums, agencies, Wikipedia or blogs.
+- Every value needs the exact page URL where you read it (source_url). If you could not verify a
+  value on an official page, leave it out (null or an empty list). Never guess or estimate.
+- english: the lowest overall score accepted for undergraduate entry, per test (IELTS Academic
+  overall, TOEFL iBT total, Duolingo, PTE). If programmes differ, give the general/lowest common
+  university minimum and say so in detail (e.g. "6.5 overall, no band below 6.0; some
+  programmes higher").
+- tuition: the yearly tuition for international (non-EU / overseas) undergraduates in the local
+  currency. If it varies by programme give amount = lowest and amount_max = highest, and the
+  academic_year the fee applies to (e.g. "2026/27"). If tuition is free, amount = 0.
+- application_fee: for international first-year applicants, local currency.
+- deadlines: the main 2027-entry first-year deadlines (ISO date YYYY-MM-DD) with the route
+  (e.g. "Common App, Regular Decision", "UCAS", "university portal"). Only dates actually
+  published; if only the 2026-entry date is published, include it and put "2026 entry" in title.
+- sat: policy for international applicants; p25/p75 total SAT only if the university publishes
+  them (Common Data Set or admissions profile).
+- acceptance_rate: only if officially published (CDS, admissions statistics page).
+- notes: one short line on anything important (e.g. "Foundation year required for 11-year
+  school certificates"), else "".
+
+Spend effort on the facts students need most: English minimum, tuition, deadlines. Keep each
+detail under 160 characters. Return only the JSON that matches the schema; use each
+university's id exactly as given.
+
+Universities:
+- id: cc589ffd-6f98-5ecd-ba74-bf63ace1108c | Keio University | Tokyo, JP | http://www.keio.ac.jp/
+- id: 263339e0-d190-5260-ba84-c83246377323 | Hamad Bin Khalifa University | Doha, QA | https://www.hbku.edu.qa/
+- id: 04566891-05b0-54be-9472-22d414096201 | Eberhard-Karls-Universität Tübingen | Tübingen, DE | http://www.uni-tuebingen.de/
+- id: 105c95ae-9e57-53d4-be2c-300449d80e35 | Massey University | Palmerston North, NZ | http://www.massey.ac.nz/
+codex
+I’m checking official admissions and fee pages for the nearest published entry cycle, and I’ll leave fields blank where the universities haven’t published them.
+exec
+/bin/zsh -lc 'cat /Users/likeanew/.agents/skills/lemma/SKILL.md' in /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+ succeeded in 0ms:
+---
+name: lemma
+description: Persistent cross-session memory for AI agents via MCP. BEFORE starting ANY task (coding, debugging, refactoring, research, docs, optimization — any language), FIRST call memory_read to load what you already know so you never re-derive or re-explore known facts. AFTER finishing, call memory_add to persist new findings and session_attempt for dead ends — unsaved knowledge is lost permanently. Distills reusable guides from experience.
+---
+
+<!-- lemma:skill:v=0.21.0 -->
+
+# Lemma — Persistent Memory & Learning
+
+Lemma is a persistent memory server for AI agents over the Model Context Protocol.
+Every session starts blank — knowledge survives ONLY through tool calls. If you
+learn something and don't save it (`memory_add`), it is gone permanently.
+
+## Workflow
+1. **RECALL** — `memory_read` / `semantic_search`: load what's already known for this
+   project/task. Never re-explore code or re-derive facts that are already saved.
+2. **ACT** — do the task.
+3. **PERSIST** — `memory_add` for new insights; `guide_practice` for guides applied;
+   `session_attempt` for abandoned/dead-end approaches (the most valuable records).
+
+## Two knowledge layers
+- **Memory fragments** (`memory_read` / `memory_add`): atomic facts. Types: `fact`,
+  `pattern`, `lesson`, `warning`, `context`. Confidence evolves with use and feedback.
+- **Guides** (`guide_get` / `guide_distill` / `guide_practice`): procedural skills
+  distilled from fragments. Track usage count + success/failure rate.
+Pipeline: `experience -> memory_add -> pattern/lesson -> guide_distill -> guide_practice`.
+
+## Tools at a glance
+- **Recall & search**: `memory_read`, `semantic_search`, `memory_library` (full
+  snapshot + maintenance signals), `memory_stats`, `memory_audit`.
+- **Write & maintain**: `memory_add`, `memory_update`, `memory_forget`,
+  `memory_merge`, `memory_relate` (supports / contradicts / supersedes / related_to),
+  `memory_feedback`.
+- **Guides**: `guide_get`, `guide_create`, `guide_distill`, `guide_practice`,
+  `guide_update`, `guide_forget`, `guide_merge`.
+- **Sessions & reasoning**: `session_start`, `session_end`, `session_attempt`,
+  `session_stats`, `suggestion_respond`.
+- **Background intelligence**: `conflict_scan`, `proactive_analysis`,
+  `project_analytics` (run automatically; act on signals when sensible).
+
+## Writing a fragment
+```
+## [Topic Title]
+### Context
+[1-2 sentences: what and why it matters]
+### [Content Section]
+- [Key fact 1]
+- [Key fact 2]
+### Rules (optional)
+- [Absolute constraint]
+```
+One idea per fragment, 30-2000 chars, structured markdown (not prose). **Store
+fragments in ENGLISH** (required for search/retrieval). Never ask permission to save.
+
+## Background intelligence
+Conflict detection, distill/merge/refine suggestions, and auto-linking run
+automatically. From the CLI, `lemma -lib` prints a full knowledge-base snapshot
+and `lemma -vis` launches a visualizer.
+
+web search: 
+web search: site:keio.ac.jp 2027 undergraduate admissions international application English proficiency tuition 2026 ...
+web search: 
+web search: site:keio.ac.jp/en "PEARL" "IELTS" "6.5" tuition application fee 2027 ...
+web search: 
+web search: site:keio.ac.jp/en/admissions/ "Application Fee" PEARL 2027 JPY ...
+web search: 
+web search: site:keio.ac.jp/en/admissions "Academic Fees" "2026" Faculty of Economics PEARL tuition JPY ...
+web search: 
+web search: 
+web search: 
+web search: site:uni-tuebingen.de/en application fee "ALMA" international applicants fee ...
+web search: 
+web search: site:keio.ac.jp/en/admissions/faculty/examinations/ao-giga-sfc-pem 2027 fees tuition "JPY" ...
+codex
+{"universities":[{"id":"cc589ffd-6f98-5ecd-ba74-bf63ace1108c","english":[],"tuition":{"amount":990000,"amount_max":1170000,"currency":"JPY","period":"year","academic_year":"2026/27","detail":"Tuition only: Economics/PEARL JPY 990,000; GIGA faculties JPY 1,170,000. Other annual fees and admission fee are extra.","source_url":"https://www.keio.ac.jp/files/74725a53d22ba2b1b26d1889f8567d82404785eb0003ebc298aa8ae44022f822"},"application_fee":{"amount":35000,"currency":"JPY","source_url":"https://www.keio.ac.jp/en/admissions/faculty/examinations/pearl/"},"deadlines":[{"title":"PEARL September 2027 entry, period I","due_at":"2026-12-02","route":"University portal (TAO)","source_url":"https://www.keio.ac.jp/en/admissions/faculty/examinations/pearl/"},{"title":"PEARL September 2027 entry, period II","due_at":"2027-01-27","route":"University portal (TAO)","source_url":"https://www.keio.ac.jp/en/admissions/faculty/examinations/pearl/"},{"title":"GIGA September 2027 entry, Winter AO","due_at":"2027-01-22","route":"University portal (TAO)","source_url":"https://www.keio.ac.jp/en/admissions/faculty/examinations/ao-giga-sfc-pem/"},{"title":"PEARL September 2027 entry, period III","due_at":"2027-04-07","route":"University portal (TAO)","source_url":"https://www.keio.ac.jp/en/admissions/faculty/examinations/pearl/"}],"sat":{"policy":"accepted_alternative","p25":null,"p75":null,"source_url":"https://www.keio.ac.jp/en/admissions/faculty/examinations/pearl/"},"acceptance_rate":null,"notes":"English-taught undergraduate routes include PEARL and GIGA; PEARL requires TOEFL or IELTS but publishes no cutoff score."},{"id":"263339e0-d190-5260-ba84-c83246377323","english":[{"test":"IELTS","minimum":6.5,"detail":"Minimum 6.5 composite; no band minimum published.","source_url":"https://www.hbku.edu.qa/en/cse/bs-programs/admission-requirements"},{"test":"TOEFL iBT","minimum":79,"detail":"Minimum score 79 under HBKU's undergraduate English proficiency policy.","source_url":"https://hbku.edu.qa/sites/default/files/academics/ac-u-01.v01.pdf"}],"tuition":null,"application_fee":{"amount":250,"currency":"QAR","source_url":"https://www.hbku.edu.qa/en/cse/bs-programs/admission-requirements"},"deadlines":[{"title":"Fall 2027 undergraduate entry","due_at":"2027-03-01","route":"University portal","source_url":"https://www.hbku.edu.qa/en/cse/bs-programs/admission-requirements"}],"sat":{"policy":"optional","p25":null,"p75":null,"source_url":"https://www.hbku.edu.qa/en/cse/bs-programs/admission-requirements"},"acceptance_rate":null,"notes":"Tuition is listed by credit hour and as total program cost; annual billing depends on credits taken."},{"id":"04566891-05b0-54be-9472-22d414096201","english":[],"tuition":{"amount":3000,"amount_max":null,"currency":"EUR","period":"year","academic_year":"2026/27","detail":"Non-EU tuition is €1,500 per semester (€3,000 per year); semester fee is additional.","source_url":"https://uni-tuebingen.de/en/international/study-in-tuebingen/degree-seeking-students/application-and-admission-of-international-students/costs-and-funding/"},"application_fee":null,"deadlines":[{"title":"Winter semester 2027, restricted-admission courses","due_at":"2027-07-15","route":"ALMA university portal","source_url":"https://uni-tuebingen.de/en/international/study-in-tuebingen/degree-seeking-students/application-and-admission-of-international-students/undergraduate-courses/"},{"title":"Winter semester 2027, open-admission courses","due_at":"2027-09-30","route":"ALMA university portal","source_url":"https://uni-tuebingen.de/en/international/study-in-tuebingen/degree-seeking-students/application-and-admission-of-international-students/undergraduate-courses/"}],"sat":null,"acceptance_rate":null,"notes":"Most undergraduate courses require German; English-language programs set their own language requirements."},{"id":"105c95ae-9e57-53d4-be2c-300449d80e35","english":[{"test":"IELTS","minimum":6.0,"detail":"6.0 overall, no band below 5.5; some qualifications require higher scores.","source_url":"https://www.massey.ac.nz/study/entry-requirements-to-study-at-massey/entry-requirements-for-international-students/"},{"test":"TOEFL iBT","minimum":80,"detail":"Overall 80, minimum 19 in Writing; tests from 21 Jan 2026 use the new scale: 4.0 overall and 4.0 Writing.","source_url":"https://www.massey.ac.nz/study/entry-requirements-to-study-at-massey/entry-requirements-for-international-students/"},{"test":"Duolingo","minimum":105,"detail":"105 overall, minimum 95 in each band.","source_url":"https://www.massey.ac.nz/study/entry-requirements-to-study-at-massey/entry-requirements-for-international-students/"},{"test":"PTE Academic","minimum":50,"detail":"50 overall, minimum 42 in each communicative skill.","source_url":"https://www.massey.ac.nz/study/entry-requirements-to-study-at-massey/entry-requirements-for-international-students/"},{"test":"Cambridge C1/C2","minimum":169,"detail":"169 overall, no skill below 162; B2 First, C1 Advanced, and C2 Proficiency are accepted.","source_url":"https://www.massey.ac.nz/study/entry-requirements-to-study-at-massey/entry-requirements-for-international-students/"}],"tuition":{"amount":35250,"amount_max":117780,"currency":"NZD","period":"year","academic_year":"2027","detail":"Estimates for 120 credits: bachelor's fees range from NZ$35,250 to NZ$117,780; program estimates vary.","source_url":"https://www.massey.ac.nz/study/fees-and-funding/tuition-fees-for-international-students/"},"application_fee":null,"deadlines":[{"title":"Semester One 2027 entry, standard qualifications","due_at":"2026-10-31","route":"Massey application portal","source_url":"https://www.massey.ac.nz/study/admission-and-enrolment/key-admission-and-course-enrolment-dates/admission-application-due-dates/"},{"title":"Semester Two 2027 entry, standard qualifications","due_at":"2027-05-01","route":"Massey application portal","source_url":"https://www.massey.ac.nz/study/admission-and-enrolment/key-admission-and-course-enrolment-dates/admission-application-due-dates/"}],"sat":null,"acceptance_rate":null,"notes":"Some selected-entry degrees have application fees, including Aviation and Veterinary Science."}]}
+tokens used
+70,255
+{"universities":[{"id":"cc589ffd-6f98-5ecd-ba74-bf63ace1108c","english":[],"tuition":{"amount":990000,"amount_max":1170000,"currency":"JPY","period":"year","academic_year":"2026/27","detail":"Tuition only: Economics/PEARL JPY 990,000; GIGA faculties JPY 1,170,000. Other annual fees and admission fee are extra.","source_url":"https://www.keio.ac.jp/files/74725a53d22ba2b1b26d1889f8567d82404785eb0003ebc298aa8ae44022f822"},"application_fee":{"amount":35000,"currency":"JPY","source_url":"https://www.keio.ac.jp/en/admissions/faculty/examinations/pearl/"},"deadlines":[{"title":"PEARL September 2027 entry, period I","due_at":"2026-12-02","route":"University portal (TAO)","source_url":"https://www.keio.ac.jp/en/admissions/faculty/examinations/pearl/"},{"title":"PEARL September 2027 entry, period II","due_at":"2027-01-27","route":"University portal (TAO)","source_url":"https://www.keio.ac.jp/en/admissions/faculty/examinations/pearl/"},{"title":"GIGA September 2027 entry, Winter AO","due_at":"2027-01-22","route":"University portal (TAO)","source_url":"https://www.keio.ac.jp/en/admissions/faculty/examinations/ao-giga-sfc-pem/"},{"title":"PEARL September 2027 entry, period III","due_at":"2027-04-07","route":"University portal (TAO)","source_url":"https://www.keio.ac.jp/en/admissions/faculty/examinations/pearl/"}],"sat":{"policy":"accepted_alternative","p25":null,"p75":null,"source_url":"https://www.keio.ac.jp/en/admissions/faculty/examinations/pearl/"},"acceptance_rate":null,"notes":"English-taught undergraduate routes include PEARL and GIGA; PEARL requires TOEFL or IELTS but publishes no cutoff score."},{"id":"263339e0-d190-5260-ba84-c83246377323","english":[{"test":"IELTS","minimum":6.5,"detail":"Minimum 6.5 composite; no band minimum published.","source_url":"https://www.hbku.edu.qa/en/cse/bs-programs/admission-requirements"},{"test":"TOEFL iBT","minimum":79,"detail":"Minimum score 79 under HBKU's undergraduate English proficiency policy.","source_url":"https://hbku.edu.qa/sites/default/files/academics/ac-u-01.v01.pdf"}],"tuition":null,"application_fee":{"amount":250,"currency":"QAR","source_url":"https://www.hbku.edu.qa/en/cse/bs-programs/admission-requirements"},"deadlines":[{"title":"Fall 2027 undergraduate entry","due_at":"2027-03-01","route":"University portal","source_url":"https://www.hbku.edu.qa/en/cse/bs-programs/admission-requirements"}],"sat":{"policy":"optional","p25":null,"p75":null,"source_url":"https://www.hbku.edu.qa/en/cse/bs-programs/admission-requirements"},"acceptance_rate":null,"notes":"Tuition is listed by credit hour and as total program cost; annual billing depends on credits taken."},{"id":"04566891-05b0-54be-9472-22d414096201","english":[],"tuition":{"amount":3000,"amount_max":null,"currency":"EUR","period":"year","academic_year":"2026/27","detail":"Non-EU tuition is €1,500 per semester (€3,000 per year); semester fee is additional.","source_url":"https://uni-tuebingen.de/en/international/study-in-tuebingen/degree-seeking-students/application-and-admission-of-international-students/costs-and-funding/"},"application_fee":null,"deadlines":[{"title":"Winter semester 2027, restricted-admission courses","due_at":"2027-07-15","route":"ALMA university portal","source_url":"https://uni-tuebingen.de/en/international/study-in-tuebingen/degree-seeking-students/application-and-admission-of-international-students/undergraduate-courses/"},{"title":"Winter semester 2027, open-admission courses","due_at":"2027-09-30","route":"ALMA university portal","source_url":"https://uni-tuebingen.de/en/international/study-in-tuebingen/degree-seeking-students/application-and-admission-of-international-students/undergraduate-courses/"}],"sat":null,"acceptance_rate":null,"notes":"Most undergraduate courses require German; English-language programs set their own language requirements."},{"id":"105c95ae-9e57-53d4-be2c-300449d80e35","english":[{"test":"IELTS","minimum":6.0,"detail":"6.0 overall, no band below 5.5; some qualifications require higher scores.","source_url":"https://www.massey.ac.nz/study/entry-requirements-to-study-at-massey/entry-requirements-for-international-students/"},{"test":"TOEFL iBT","minimum":80,"detail":"Overall 80, minimum 19 in Writing; tests from 21 Jan 2026 use the new scale: 4.0 overall and 4.0 Writing.","source_url":"https://www.massey.ac.nz/study/entry-requirements-to-study-at-massey/entry-requirements-for-international-students/"},{"test":"Duolingo","minimum":105,"detail":"105 overall, minimum 95 in each band.","source_url":"https://www.massey.ac.nz/study/entry-requirements-to-study-at-massey/entry-requirements-for-international-students/"},{"test":"PTE Academic","minimum":50,"detail":"50 overall, minimum 42 in each communicative skill.","source_url":"https://www.massey.ac.nz/study/entry-requirements-to-study-at-massey/entry-requirements-for-international-students/"},{"test":"Cambridge C1/C2","minimum":169,"detail":"169 overall, no skill below 162; B2 First, C1 Advanced, and C2 Proficiency are accepted.","source_url":"https://www.massey.ac.nz/study/entry-requirements-to-study-at-massey/entry-requirements-for-international-students/"}],"tuition":{"amount":35250,"amount_max":117780,"currency":"NZD","period":"year","academic_year":"2027","detail":"Estimates for 120 credits: bachelor's fees range from NZ$35,250 to NZ$117,780; program estimates vary.","source_url":"https://www.massey.ac.nz/study/fees-and-funding/tuition-fees-for-international-students/"},"application_fee":null,"deadlines":[{"title":"Semester One 2027 entry, standard qualifications","due_at":"2026-10-31","route":"Massey application portal","source_url":"https://www.massey.ac.nz/study/admission-and-enrolment/key-admission-and-course-enrolment-dates/admission-application-due-dates/"},{"title":"Semester Two 2027 entry, standard qualifications","due_at":"2027-05-01","route":"Massey application portal","source_url":"https://www.massey.ac.nz/study/admission-and-enrolment/key-admission-and-course-enrolment-dates/admission-application-due-dates/"}],"sat":null,"acceptance_rate":null,"notes":"Some selected-entry degrees have application fees, including Aviation and Veterinary Science."}]}

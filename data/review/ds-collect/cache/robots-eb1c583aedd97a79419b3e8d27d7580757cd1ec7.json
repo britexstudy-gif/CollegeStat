@@ -1,0 +1,1 @@
+{"txt":"User-agent: *\nAllow: /\nCrawl-delay: 2\n\n# Disallow certain paths\nDisallow: /api/\nDisallow: /_next/\nDisallow: /static/\n\nSitemap: https://uke.it/sitemap.xml"}

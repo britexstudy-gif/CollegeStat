@@ -1,0 +1,130 @@
+OpenAI Codex v0.169.0
+--------
+workdir: /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+model: gpt-6-luna
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: high
+reasoning summaries: none
+session id: 01a1ee7c-d0a4-7542-9f2c-1136ac007438
+--------
+user
+You are a careful admissions-data researcher. For each university below, find facts for an
+INTERNATIONAL applicant to a FIRST-YEAR BACHELOR'S degree starting in autumn 2027 (or the nearest
+published cycle). Use the live web. Rules:
+
+- Official sources only: the university's own website (its domain or subdomains), the national
+  application service (UCAS, Common App, OUAC, uni-assist, Studyinkorea, etc.) or a government
+  statistics office. Never use rankings sites, forums, agencies, Wikipedia or blogs.
+- Every value needs the exact page URL where you read it (source_url). If you could not verify a
+  value on an official page, leave it out (null or an empty list). Never guess or estimate.
+- english: the lowest overall score accepted for undergraduate entry, per test (IELTS Academic
+  overall, TOEFL iBT total, Duolingo, PTE). If programmes differ, give the general/lowest common
+  university minimum and say so in detail (e.g. "6.5 overall, no band below 6.0; some
+  programmes higher").
+- tuition: the yearly tuition for international (non-EU / overseas) undergraduates in the local
+  currency. If it varies by programme give amount = lowest and amount_max = highest, and the
+  academic_year the fee applies to (e.g. "2026/27"). If tuition is free, amount = 0.
+- application_fee: for international first-year applicants, local currency.
+- deadlines: the main 2027-entry first-year deadlines (ISO date YYYY-MM-DD) with the route
+  (e.g. "Common App, Regular Decision", "UCAS", "university portal"). Only dates actually
+  published; if only the 2026-entry date is published, include it and put "2026 entry" in title.
+- sat: policy for international applicants; p25/p75 total SAT only if the university publishes
+  them (Common Data Set or admissions profile).
+- acceptance_rate: only if officially published (CDS, admissions statistics page).
+- notes: one short line on anything important (e.g. "Foundation year required for 11-year
+  school certificates"), else "".
+
+Spend effort on the facts students need most: English minimum, tuition, deadlines. Keep each
+detail under 160 characters. Return only the JSON that matches the schema; use each
+university's id exactly as given.
+
+Universities:
+- id: 2ef76bea-f0ec-5124-bd16-bfac73557290 | Boston University | Boston, US | http://www.bu.edu/
+- id: b7e728a7-1aa5-5bce-badf-5ecb3a6ec992 | Freie Universität Berlin | Berlin, DE | http://www.fu-berlin.de/
+- id: e2e9494c-968c-55f4-8889-2ec1ac65fbdd | University of Copenhagen | Copenhagen, DK | http://www.ku.dk/
+- id: 0aeeb18a-3be5-5bb9-9875-0bf4ce24d102 | Nanjing University | Nanjing, CN | http://www.nju.edu.cn/
+codex
+I’m checking the saved research context first, then I’ll verify each school’s official admissions and tuition pages for the nearest published cycle.
+exec
+/bin/zsh -lc 'cat /Users/likeanew/.agents/skills/lemma/SKILL.md' in /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+ succeeded in 0ms:
+---
+name: lemma
+description: Persistent cross-session memory for AI agents via MCP. BEFORE starting ANY task (coding, debugging, refactoring, research, docs, optimization — any language), FIRST call memory_read to load what you already know so you never re-derive or re-explore known facts. AFTER finishing, call memory_add to persist new findings and session_attempt for dead ends — unsaved knowledge is lost permanently. Distills reusable guides from experience.
+---
+
+<!-- lemma:skill:v=0.21.0 -->
+
+# Lemma — Persistent Memory & Learning
+
+Lemma is a persistent memory server for AI agents over the Model Context Protocol.
+Every session starts blank — knowledge survives ONLY through tool calls. If you
+learn something and don't save it (`memory_add`), it is gone permanently.
+
+## Workflow
+1. **RECALL** — `memory_read` / `semantic_search`: load what's already known for this
+   project/task. Never re-explore code or re-derive facts that are already saved.
+2. **ACT** — do the task.
+3. **PERSIST** — `memory_add` for new insights; `guide_practice` for guides applied;
+   `session_attempt` for abandoned/dead-end approaches (the most valuable records).
+
+## Two knowledge layers
+- **Memory fragments** (`memory_read` / `memory_add`): atomic facts. Types: `fact`,
+  `pattern`, `lesson`, `warning`, `context`. Confidence evolves with use and feedback.
+- **Guides** (`guide_get` / `guide_distill` / `guide_practice`): procedural skills
+  distilled from fragments. Track usage count + success/failure rate.
+Pipeline: `experience -> memory_add -> pattern/lesson -> guide_distill -> guide_practice`.
+
+## Tools at a glance
+- **Recall & search**: `memory_read`, `semantic_search`, `memory_library` (full
+  snapshot + maintenance signals), `memory_stats`, `memory_audit`.
+- **Write & maintain**: `memory_add`, `memory_update`, `memory_forget`,
+  `memory_merge`, `memory_relate` (supports / contradicts / supersedes / related_to),
+  `memory_feedback`.
+- **Guides**: `guide_get`, `guide_create`, `guide_distill`, `guide_practice`,
+  `guide_update`, `guide_forget`, `guide_merge`.
+- **Sessions & reasoning**: `session_start`, `session_end`, `session_attempt`,
+  `session_stats`, `suggestion_respond`.
+- **Background intelligence**: `conflict_scan`, `proactive_analysis`,
+  `project_analytics` (run automatically; act on signals when sensible).
+
+## Writing a fragment
+```
+## [Topic Title]
+### Context
+[1-2 sentences: what and why it matters]
+### [Content Section]
+- [Key fact 1]
+- [Key fact 2]
+### Rules (optional)
+- [Absolute constraint]
+```
+One idea per fragment, 30-2000 chars, structured markdown (not prose). **Store
+fragments in ENGLISH** (required for search/retrieval). Never ask permission to save.
+
+## Background intelligence
+Conflict detection, distill/merge/refine suggestions, and auto-linking run
+automatically. From the CLI, `lemma -lib` prints a full knowledge-base snapshot
+and `lemma -vis` launches a visualizer.
+
+web search: 
+web search: site:bu.edu admissions international undergraduate English proficiency tuition 2026 2027 first year deadline 2027 ...
+web search: 
+web search: site:bu.edu/admissions first year deadlines fall 2027 January 5 application fee SAT optional 2026 tuition international ...
+web search: 
+web search: site:bu.edu/admissions "IELTS" "Duolingo" "minimum" TOEFL 90 100 ...
+web search: 
+web search: site:studies.ku.dk "Tuition" "Bachelor" "DKK" 2026/27 University of Copenhagen ...
+web search: 
+web search: site:bu.edu/asir "CDS-2025-2026" "admitted" applicants admission rate ...
+web search: 
+web search: site:bu.edu "73,364" tuition 2026 undergraduate ...
+web search: 
+web search: site:uni-assist.de fees 75 euros first application VPD fee ...
+codex
+{"universities":[{"id":"2ef76bea-f0ec-5124-bd16-bfac73557290","english":[{"test":"IELTS","minimum":7,"detail":"A total/overall score of 7 satisfies the undergraduate English proficiency requirement for all programs.","source_url":"https://www.bu.edu/admissions/apply/international/"}],"tuition":{"amount":73024,"amount_max":null,"currency":"USD","period":"year","academic_year":"2026/27","detail":"Full-time undergraduate tuition; tuition and fees may change.","source_url":"https://www.bu.edu/reg/registration/tuition-fees/"},"application_fee":{"amount":80,"currency":"USD","source_url":"https://www.bu.edu/admissions/apply/first-year/"},"deadlines":[{"title":"Regular Decision, Fall 2027 entry","due_at":"2027-01-05","route":"Common Application","source_url":"https://www.bu.edu/admissions/apply/first-year/"}],"sat":{"policy":"optional","p25":null,"p75":null,"source_url":"https://www.bu.edu/asir/files/2026/07/CDS-2025-2026-updated.pdf?draft=live"},"acceptance_rate":{"percent":12.8,"year":"Fall 2025","source_url":"https://www.bu.edu/asir/files/2026/07/CDS-2025-2026-updated.pdf?draft=live"},"notes":""},{"id":"b7e728a7-1aa5-5bce-badf-5ecb3a6ec992","english":[],"tuition":{"amount":0,"amount_max":null,"currency":"EUR","period":"year","academic_year":"2026/27","detail":"No tuition fees; semester fees and contributions are charged separately.","source_url":"https://www.fu-berlin.de/en/studium/studieren/studienorganisation/gebuehren/index.html"},"application_fee":{"amount":75,"currency":"EUR","source_url":"https://www.uni-assist.de/en/how-to-apply/pay-all-fees/handling-fees/?cHash=f46020cfbb598156de6f9fe556c8dc22&pk_campaign%3D176="},"deadlines":[{"title":"Winter semester 2026/27 (2026 entry)","due_at":"2026-07-15","route":"FU application portal; VPD via uni-assist","source_url":"https://www.polsoz.fu-berlin.de/en/kommwiss/studieninteressierte/ba_puk/bewerbung/index.html"}],"sat":null,"acceptance_rate":null,"notes":"Most bachelor's programs are taught in German; applicants with foreign qualifications generally need a uni-assist VPD."},{"id":"e2e9494c-968c-55f4-8889-2ec1ac65fbdd","english":[],"tuition":null,"application_fee":null,"deadlines":[{"title":"Quota 2, 2027 entry","due_at":"2027-03-15","route":"optagelse.dk; quota 2","source_url":"https://www.ku.dk/studies/admission/bachelor/non-eu-eea-and-non-nordic-countries"}],"sat":null,"acceptance_rate":null,"notes":"All bachelor's programs are taught in Danish; non-EU applicants with non-Nordic qualifications apply through quota 2."},{"id":"0aeeb18a-3be5-5bb9-9875-0bf4ce24d102","english":[{"test":"IELTS","minimum":5.5,"detail":"IELTS 5.5 or TOEFL iBT 70 applies to English major applicants; other undergraduate majors are taught in Chinese.","source_url":"https://hwxy.nju.edu.cn/English/StudyatNJU/Admissions/BachelorsPrograms/index.html"},{"test":"TOEFL iBT","minimum":70,"detail":"TOEFL iBT 70 or IELTS 5.5 applies to English major applicants; other undergraduate majors are taught in Chinese.","source_url":"https://hwxy.nju.edu.cn/English/StudyatNJU/Admissions/BachelorsPrograms/index.html"}],"tuition":{"amount":21000,"amount_max":42000,"currency":"CNY","period":"year","academic_year":"2026/27","detail":"Annual fees vary by program: liberal arts 21,000; science/business 24,000; software 32,000; medicine 42,000 CNY.","source_url":"https://hwxy.nju.edu.cn/English/StudyatNJU/Admissions/BachelorsPrograms/index.html"},"application_fee":{"amount":500,"currency":"CNY","source_url":"https://hwxy.nju.edu.cn/English/StudyatNJU/Admissions/BachelorsPrograms/index.html"},"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"Most majors are taught in Chinese; HSK 5 (180) is required, and CSCA is required from 2026/27."}] }
+tokens used
+79,539
+{"universities":[{"id":"2ef76bea-f0ec-5124-bd16-bfac73557290","english":[{"test":"IELTS","minimum":7,"detail":"A total/overall score of 7 satisfies the undergraduate English proficiency requirement for all programs.","source_url":"https://www.bu.edu/admissions/apply/international/"}],"tuition":{"amount":73024,"amount_max":null,"currency":"USD","period":"year","academic_year":"2026/27","detail":"Full-time undergraduate tuition; tuition and fees may change.","source_url":"https://www.bu.edu/reg/registration/tuition-fees/"},"application_fee":{"amount":80,"currency":"USD","source_url":"https://www.bu.edu/admissions/apply/first-year/"},"deadlines":[{"title":"Regular Decision, Fall 2027 entry","due_at":"2027-01-05","route":"Common Application","source_url":"https://www.bu.edu/admissions/apply/first-year/"}],"sat":{"policy":"optional","p25":null,"p75":null,"source_url":"https://www.bu.edu/asir/files/2026/07/CDS-2025-2026-updated.pdf?draft=live"},"acceptance_rate":{"percent":12.8,"year":"Fall 2025","source_url":"https://www.bu.edu/asir/files/2026/07/CDS-2025-2026-updated.pdf?draft=live"},"notes":""},{"id":"b7e728a7-1aa5-5bce-badf-5ecb3a6ec992","english":[],"tuition":{"amount":0,"amount_max":null,"currency":"EUR","period":"year","academic_year":"2026/27","detail":"No tuition fees; semester fees and contributions are charged separately.","source_url":"https://www.fu-berlin.de/en/studium/studieren/studienorganisation/gebuehren/index.html"},"application_fee":{"amount":75,"currency":"EUR","source_url":"https://www.uni-assist.de/en/how-to-apply/pay-all-fees/handling-fees/?cHash=f46020cfbb598156de6f9fe556c8dc22&pk_campaign%3D176="},"deadlines":[{"title":"Winter semester 2026/27 (2026 entry)","due_at":"2026-07-15","route":"FU application portal; VPD via uni-assist","source_url":"https://www.polsoz.fu-berlin.de/en/kommwiss/studieninteressierte/ba_puk/bewerbung/index.html"}],"sat":null,"acceptance_rate":null,"notes":"Most bachelor's programs are taught in German; applicants with foreign qualifications generally need a uni-assist VPD."},{"id":"e2e9494c-968c-55f4-8889-2ec1ac65fbdd","english":[],"tuition":null,"application_fee":null,"deadlines":[{"title":"Quota 2, 2027 entry","due_at":"2027-03-15","route":"optagelse.dk; quota 2","source_url":"https://www.ku.dk/studies/admission/bachelor/non-eu-eea-and-non-nordic-countries"}],"sat":null,"acceptance_rate":null,"notes":"All bachelor's programs are taught in Danish; non-EU applicants with non-Nordic qualifications apply through quota 2."},{"id":"0aeeb18a-3be5-5bb9-9875-0bf4ce24d102","english":[{"test":"IELTS","minimum":5.5,"detail":"IELTS 5.5 or TOEFL iBT 70 applies to English major applicants; other undergraduate majors are taught in Chinese.","source_url":"https://hwxy.nju.edu.cn/English/StudyatNJU/Admissions/BachelorsPrograms/index.html"},{"test":"TOEFL iBT","minimum":70,"detail":"TOEFL iBT 70 or IELTS 5.5 applies to English major applicants; other undergraduate majors are taught in Chinese.","source_url":"https://hwxy.nju.edu.cn/English/StudyatNJU/Admissions/BachelorsPrograms/index.html"}],"tuition":{"amount":21000,"amount_max":42000,"currency":"CNY","period":"year","academic_year":"2026/27","detail":"Annual fees vary by program: liberal arts 21,000; science/business 24,000; software 32,000; medicine 42,000 CNY.","source_url":"https://hwxy.nju.edu.cn/English/StudyatNJU/Admissions/BachelorsPrograms/index.html"},"application_fee":{"amount":500,"currency":"CNY","source_url":"https://hwxy.nju.edu.cn/English/StudyatNJU/Admissions/BachelorsPrograms/index.html"},"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"Most majors are taught in Chinese; HSK 5 (180) is required, and CSCA is required from 2026/27."}] }

@@ -1,0 +1,177 @@
+OpenAI Codex v0.169.0
+--------
+workdir: /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+model: gpt-6-luna
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: high
+reasoning summaries: none
+session id: 01a1ee91-19e3-73d0-a24e-4ecc10e9a65c
+--------
+user
+You are a careful admissions-data researcher. For each university below, find facts for an
+INTERNATIONAL applicant to a FIRST-YEAR BACHELOR'S degree starting in autumn 2027 (or the nearest
+published cycle). Use the live web. Rules:
+
+- Official sources only: the university's own website (its domain or subdomains), the national
+  application service (UCAS, Common App, OUAC, uni-assist, Studyinkorea, etc.) or a government
+  statistics office. Never use rankings sites, forums, agencies, Wikipedia or blogs.
+- Every value needs the exact page URL where you read it (source_url). If you could not verify a
+  value on an official page, leave it out (null or an empty list). Never guess or estimate.
+- english: the lowest overall score accepted for undergraduate entry, per test (IELTS Academic
+  overall, TOEFL iBT total, Duolingo, PTE). If programmes differ, give the general/lowest common
+  university minimum and say so in detail (e.g. "6.5 overall, no band below 6.0; some
+  programmes higher").
+- tuition: the yearly tuition for international (non-EU / overseas) undergraduates in the local
+  currency. If it varies by programme give amount = lowest and amount_max = highest, and the
+  academic_year the fee applies to (e.g. "2026/27"). If tuition is free, amount = 0.
+- application_fee: for international first-year applicants, local currency.
+- deadlines: the main 2027-entry first-year deadlines (ISO date YYYY-MM-DD) with the route
+  (e.g. "Common App, Regular Decision", "UCAS", "university portal"). Only dates actually
+  published; if only the 2026-entry date is published, include it and put "2026 entry" in title.
+- sat: policy for international applicants; p25/p75 total SAT only if the university publishes
+  them (Common Data Set or admissions profile).
+- acceptance_rate: only if officially published (CDS, admissions statistics page).
+- notes: one short line on anything important (e.g. "Foundation year required for 11-year
+  school certificates"), else "".
+
+Spend effort on the facts students need most: English minimum, tuition, deadlines. Keep each
+detail under 160 characters. Return only the JSON that matches the schema; use each
+university's id exactly as given.
+
+Universities:
+- id: 1e616477-ca14-53f6-a70a-fedd8bc44e59 | Peoples' Friendship University of Russia | Moscow, RU | https://www.rudn.ru
+- id: 08d9be02-dd4b-5552-97ea-0017b28c332a | University of Chinese Academy of Sciences | Beijing, CN | https://www.ucas.ac.cn
+- id: c844d277-276d-586d-94aa-aa3ea60306d6 | University of Tartu | Tartu, EE | http://www.ut.ee/
+- id: f1f09b3b-965c-56a5-9b96-dfb54d7483ce | University of Liège | Liège, BE | https://uliege.be/
+codex
+I’m checking official university and national admissions pages for the nearest published entry cycle.
+exec
+/bin/zsh -lc 'cat /Users/likeanew/.agents/skills/agent-toolstack/SKILL.md' in /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+ succeeded in 0ms:
+---
+name: agent-toolstack
+description: Use when working on the user's AI coding setup, or when a task involves OpenCode, MiMoCode, MCP servers, UI/design generation, animation, icons, browser testing, databases, or the CollegeStat project. Loads the verified MCP toolstack, config locations, known gotchas, and project context so you do not re-derive or re-explore what is already known.
+---
+
+# Agent Toolstack — Shared Knowledge (OpenCode + MiMoCode)
+
+Curated facts about this machine's AI coding setup. Read this before designing UI,
+wiring MCP servers, or touching config. Verified = checked against the live system
+(2026-10-17). Unverified = reported by a source, not confirmed here.
+
+## Environment
+
+- macOS (darwin), user `likeanew`, Apple Silicon.
+- Primary project: `/Users/likeanew/Documents/CollegeStat`
+  - `collegestat/` — the main app (48 entries, modified Oct 15).
+  - `AI-Setup/` — scratch workspace (empty as of 2026-10-17).
+- Two coding agents installed side by side: **OpenCode** (`~/.config/opencode`) and
+  **MiMoCode** (`~/.config/mimocode`, binary `~/.mimocode/bin/mimo`, v0.1.15).
+- Other agent configs present: `~/.codex` (Codex, 3.6 GB — large), `~/.cursor`,
+  `~/.gemini`, `~/.copilot`, `~/.agents`.
+
+## MCP config format (identical in OpenCode and MiMoCode)
+
+```jsonc
+{
+  "$schema": "https://opencode.ai/config.json",          // or https://mimo.xiaomi.com/mimocode/config.json
+  "mcp": {
+    "name":  { "type": "local",  "command": ["npx", "-y", "pkg"] },
+    "docs":  { "type": "remote", "url": "https://host/mcp" },
+    "off":   { "enabled": false }                          // disable without deleting
+  }
+}
+```
+
+**Do NOT use `"mcp_servers"` or a `command` string + `args` array.** That format is
+wrong for both tools. The correct key is `"mcp"` and `command` is an array.
+
+## Verified MCP toolstack (installed in both agents)
+
+| Server | What it gives you | When to use |
+|---|---|---|
+| `inspo` | 2,320 real-site captures: palettes, fonts, macrostructures, 68 reference components with copy-pasteable JSX. stdio via `inspo-mcp`; hosted `https://inspomcp.dev/api/mcp` also works. | Any UI/design task — call `recommend(brief)` first |
+| `shadcn` | Browse/view/install real shadcn/ui + any registry component. `npx shadcn@latest mcp`. | Component work — prevents hallucinated component code |
+| `context7` | Up-to-date library docs + code examples. Remote `https://mcp.context7.com/mcp`. | When unsure of an API/version |
+| `animotion` | 745 hand-crafted CSS3 animations + 9,740 real SVG icons (Lucide/Tabler/Heroicons/Bootstrap). `npx animotion-mcp`. | Animation + icons — kills AI-looking generated icons |
+| `gsap-master` | GSAP expert: intent→60fps code, plugins (SplitText, ScrollTrigger, DrawSVG), debugging, perf optimizer. `npx @vinhnguyen/gsap-mcp`. | Complex animation, scroll systems, text reveals |
+| `playwright` | Browser automation, screenshots, accessibility snapshots, speed/QA checks. Runs `--headless --isolated`. | Visual verification, E2E, performance |
+| `sequential-thinking` | Structured step-by-step reasoning. | Complex architecture / debugging |
+| `lemma` | Persistent local memory over MCP (confidence decay, guides, JSONL/SQLite). `npx lemma-mcp`. | Cross-session recall; `memory_read` first, `memory_add` after |
+| `supabase` / `prisma` / `github` | DB + GitHub. Remote, **require OAuth login** (`mimo mcp auth <name>`). | Backend / repo work once authenticated |
+
+### MCP gotchas (verified from the live log)
+
+- The 3 auth-required servers spam ~600 WARN lines per session until logged in.
+  Run `mimo mcp auth supabase` (and `prisma`, `github`) or set `"enabled": false`.
+- `shadcn` logs `MCP error -32601: Method not found` for `resources` — harmless;
+  the server exposes tools only, not the resources method OpenCode/MiMo probe.
+- Local servers spawn via `npx`; first run downloads the package (a few seconds).
+
+## Config & skill locations
+
+**OpenCode**
+- Global config: `~/.config/opencode/opencode.jsonc`
+- Skills: `~/.agents/skills/<name>/SKILL.md`, `~/.config/opencode/skills/<name>/SKILL.md`,
+  `.opencode/skills/`, `.claude/skills/` (project), plus `~/.claude/skills/`
+- Verify: `opencode mcp list`, `opencode debug config`, `opencode reload`
+
+**MiMoCode**
+- Global config: `~/.config/mimocode/mimocode.jsonc` (JSONC, merges over defaults)
+- Project config: `<project>/.mimocode/mimocode.jsonc`
+- Skills: `~/.agents/skills/<name>/SKILL.md` (global), `<project>/.mimocode/skills/`,
+  `.agents/skills/`, `.claude/skills/`, `.codex/skills/` (brand roots opt-in via env)
+- Agents/modes: `~/.config/mimocode/agent/<name>.md` or `<project>/.mimocode/agent/<name>.md`
+- Commands: `.mimocode/command/<name>.md`
+- Memory: `~/.local/share/mimocode/memory/projects/<project>/MEMORY.md`, `.../global/MEMORY.md`
+- Verify: `mimo mcp list`, `mimo debug config`, `mimo debug skill`, `mimo agent list`
+- Default model: `mimo/mimo-auto` (free, 1M context). Models: `mimo models`.
+
+**Shared skill path:** `~/.agents/skills/` is read by BOTH agents — put cross-tool
+knowledge here (this skill lives there).
+
+## Known issues on this machine (2026-10-17)
+
+- **GitLab auth expired** — `GitLabError: 401 Unauthorized` for `gitlab/duo-chat-fable-5`.
+  Re-authenticate GitLab; token last refreshed 2026-10-06.
+- **`.codex` is 3.6 GB** — `sessions/` alone is 2.3 GB (369 rollout `.jsonl.zst`
+  files), `thread_history_1.sqlite` 592 MB. Clean old sessions if disk is tight.
+- **Stale lock files** in `~/.codex` (0-byte `.sqlite-maintenance.lock`, empty
+  `*.sqlite-wal`, empty `AGENTS.md`, `transcription-history.jsonl`). Safe to remove.
+- **`.codex-global-state.json.bak`** is a byte-identical duplicate of the live state file.
+- **No DB corruption**: `opencode.db` (140 MB) and all Codex sqlite files pass
+  `PRAGMA integrity_check` / `quick_check`.
+- **OpenCode log** is 16 MB at `~/.local/share/opencode/log/opencode.log`; rotate if large.
+
+## Tools reported by awesome-opencode but NOT installable as-is
+
+`morph-fast-apply`, `crawlberg`, `harness-memory`, `flowdeck`, `honcho`,
+`opencode-mission-control` are GitHub-only repos, not npm packages — they need manual
+clone + plugin-file placement. `@seos/*` (AISEOS) is GitHub-only and unverified.
+`@inspo/mcp-server` does not exist on npm — the correct package is `inspo-mcp`.
+
+## Working conventions
+
+- Prefer real, verified tools over generated approximations: `inspo` for design,
+  `animotion` for icons/animations, `shadcn` for components, `context7` for APIs.
+- Keep config edits minimal and targeted; preserve JSONC comments and `$schema`.
+- After editing config, reload (`opencode reload`) or restart (`mimo`) before verifying.
+- Treat API keys as secrets: never echo them into logs, diffs, or responses.
+
+web search: 
+web search: site:rudn.ru international applicants bachelor's English proficiency tuition 2026 2027 admission deadline ...
+web search: 
+web search: site:ucas.ac.cn/en undergraduate international admission bachelor tuition UCAS 2026 ...
+web search: 
+web search: site:ut.ee/en tuition fee bachelor's international student 2026 University of Tartu tuition fees 2026/2027 ...
+web search: 
+web search: 
+web search: 
+web search: site:ut.ee/en/english-language-requirements "PTE" "Cambridge" University of Tartu IELTS 6.0 ...
+codex
+{"universities":[{"id":"1e616477-ca14-53f6-a70a-fedd8bc44e59","english":[],"tuition":{"amount":490000,"amount_max":null,"currency":"RUB","period":"year","academic_year":"2026/27","detail":"International bachelor's tuition starts at RUB 490,000 per year.","source_url":"https://international.rudn.ru/undergraduate/"},"application_fee":null,"deadlines":[{"title":"2026 entry: standard application deadline","due_at":"2026-08-10","route":"University portal / ruID","source_url":"https://international.rudn.ru/undergraduate/"},{"title":"2026 entry: additional round","due_at":"2026-10-02","route":"University portal / ruID","source_url":"https://international.rudn.ru/undergraduate/"}],"sat":null,"acceptance_rate":null,"notes":"No university-wide English test minimum published; interview language depends on the chosen programme."},{"id":"08d9be02-dd4b-5552-97ea-0017b28c332a","english":[],"tuition":null,"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"The official international admissions listings show graduate and non-degree programs; no international bachelor's route located."},{"id":"c844d277-276d-586d-94aa-aa3ea60306d6","english":[{"test":"IELTS","minimum":6.0,"detail":"6.0 overall, no part below 5.5.","source_url":"https://ut.ee/en/english-language-requirements"},{"test":"TOEFL iBT","minimum":4,"detail":"Tests from 2026-01-21: total 4 on the 1–6 scale; section minimums also apply.","source_url":"https://ut.ee/en/english-language-requirements"},{"test":"PTE Academic","minimum":59,"detail":"Minimum score 59.","source_url":"https://ut.ee/et/node/73522"},{"test":"Cambridge C1/C2","minimum":169,"detail":"Minimum 169; accepted Cambridge English exams include B2 First, C1 Advanced and C2 Proficiency.","source_url":"https://ut.ee/et/node/73522"}],"tuition":{"amount":4200,"amount_max":13200,"currency":"EUR","period":"year","academic_year":"2026/27","detail":"English-taught bachelor's fees range from €4,200 to €13,200 per year; no bachelor's tuition waivers for non-EU/EEA entrants.","source_url":"https://ut.ee/en/media/79352/download?attachment="},"application_fee":{"amount":100,"currency":"EUR","source_url":"https://ut.ee/en/content/application-fee"},"deadlines":[{"title":"2026 entry: bachelor's application deadline","due_at":"2026-04-15","route":"DreamApply / university portal","source_url":"https://ut.ee/en/curriculum/business-administration"}],"sat":null,"acceptance_rate":null,"notes":"The 2027-entry deadlines are not yet published; the listed date is for 2026 entry."},{"id":"f1f09b3b-965c-56a5-9b96-dfb54d7483ce","english":[{"test":"IELTS","minimum":5.5,"detail":"B2 guidance lists IELTS 5.5–6.5; faculties may set stricter scores.","source_url":"https://www.enseignement.uliege.be/cms/c_9096756/en/access-conditions-to-the-bachelor-outside-eu"},{"test":"TOEFL iBT","minimum":4,"detail":"B2 guidance lists 4 on the scale introduced in 2026; faculties may set stricter scores.","source_url":"https://www.enseignement.uliege.be/cms/c_9096756/en/access-conditions-to-the-bachelor-outside-eu"},{"test":"Cambridge C1/C2","minimum":180,"detail":"The B2 guidance lists CAE above 180; some faculties may set stricter requirements.","source_url":"https://www.enseignement.uliege.be/cms/c_9096756/en/access-conditions-to-the-bachelor-outside-eu"}],"tuition":{"amount":5369,"amount_max":5369,"currency":"EUR","period":"year","academic_year":"2026/27","detail":"Full rate: €1,194 registration fee plus €4,175 non-EU contribution; exceptions may apply.","source_url":"https://www.enseignement.uliege.be/cms/c_17654509/fr/droits-d-inscription"},"application_fee":{"amount":200,"currency":"EUR","source_url":"https://www.enseignement.uliege.be/cms/c_9096756/en/access-conditions-to-the-bachelor-outside-eu"},"deadlines":[{"title":"2026 entry: outside-EU bachelor's application deadline","due_at":"2026-03-31","route":"University online application portal","source_url":"https://www.enseignement.uliege.be/cms/c_9096756/en/access-conditions-to-the-bachelor-outside-eu"}],"sat":null,"acceptance_rate":null,"notes":"English B2 proof applies where required by the programme; most bachelor's programmes are taught in French."}] }
+tokens used
+50,078
+{"universities":[{"id":"1e616477-ca14-53f6-a70a-fedd8bc44e59","english":[],"tuition":{"amount":490000,"amount_max":null,"currency":"RUB","period":"year","academic_year":"2026/27","detail":"International bachelor's tuition starts at RUB 490,000 per year.","source_url":"https://international.rudn.ru/undergraduate/"},"application_fee":null,"deadlines":[{"title":"2026 entry: standard application deadline","due_at":"2026-08-10","route":"University portal / ruID","source_url":"https://international.rudn.ru/undergraduate/"},{"title":"2026 entry: additional round","due_at":"2026-10-02","route":"University portal / ruID","source_url":"https://international.rudn.ru/undergraduate/"}],"sat":null,"acceptance_rate":null,"notes":"No university-wide English test minimum published; interview language depends on the chosen programme."},{"id":"08d9be02-dd4b-5552-97ea-0017b28c332a","english":[],"tuition":null,"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"The official international admissions listings show graduate and non-degree programs; no international bachelor's route located."},{"id":"c844d277-276d-586d-94aa-aa3ea60306d6","english":[{"test":"IELTS","minimum":6.0,"detail":"6.0 overall, no part below 5.5.","source_url":"https://ut.ee/en/english-language-requirements"},{"test":"TOEFL iBT","minimum":4,"detail":"Tests from 2026-01-21: total 4 on the 1–6 scale; section minimums also apply.","source_url":"https://ut.ee/en/english-language-requirements"},{"test":"PTE Academic","minimum":59,"detail":"Minimum score 59.","source_url":"https://ut.ee/et/node/73522"},{"test":"Cambridge C1/C2","minimum":169,"detail":"Minimum 169; accepted Cambridge English exams include B2 First, C1 Advanced and C2 Proficiency.","source_url":"https://ut.ee/et/node/73522"}],"tuition":{"amount":4200,"amount_max":13200,"currency":"EUR","period":"year","academic_year":"2026/27","detail":"English-taught bachelor's fees range from €4,200 to €13,200 per year; no bachelor's tuition waivers for non-EU/EEA entrants.","source_url":"https://ut.ee/en/media/79352/download?attachment="},"application_fee":{"amount":100,"currency":"EUR","source_url":"https://ut.ee/en/content/application-fee"},"deadlines":[{"title":"2026 entry: bachelor's application deadline","due_at":"2026-04-15","route":"DreamApply / university portal","source_url":"https://ut.ee/en/curriculum/business-administration"}],"sat":null,"acceptance_rate":null,"notes":"The 2027-entry deadlines are not yet published; the listed date is for 2026 entry."},{"id":"f1f09b3b-965c-56a5-9b96-dfb54d7483ce","english":[{"test":"IELTS","minimum":5.5,"detail":"B2 guidance lists IELTS 5.5–6.5; faculties may set stricter scores.","source_url":"https://www.enseignement.uliege.be/cms/c_9096756/en/access-conditions-to-the-bachelor-outside-eu"},{"test":"TOEFL iBT","minimum":4,"detail":"B2 guidance lists 4 on the scale introduced in 2026; faculties may set stricter scores.","source_url":"https://www.enseignement.uliege.be/cms/c_9096756/en/access-conditions-to-the-bachelor-outside-eu"},{"test":"Cambridge C1/C2","minimum":180,"detail":"The B2 guidance lists CAE above 180; some faculties may set stricter requirements.","source_url":"https://www.enseignement.uliege.be/cms/c_9096756/en/access-conditions-to-the-bachelor-outside-eu"}],"tuition":{"amount":5369,"amount_max":5369,"currency":"EUR","period":"year","academic_year":"2026/27","detail":"Full rate: €1,194 registration fee plus €4,175 non-EU contribution; exceptions may apply.","source_url":"https://www.enseignement.uliege.be/cms/c_17654509/fr/droits-d-inscription"},"application_fee":{"amount":200,"currency":"EUR","source_url":"https://www.enseignement.uliege.be/cms/c_9096756/en/access-conditions-to-the-bachelor-outside-eu"},"deadlines":[{"title":"2026 entry: outside-EU bachelor's application deadline","due_at":"2026-03-31","route":"University online application portal","source_url":"https://www.enseignement.uliege.be/cms/c_9096756/en/access-conditions-to-the-bachelor-outside-eu"}],"sat":null,"acceptance_rate":null,"notes":"English B2 proof applies where required by the programme; most bachelor's programmes are taught in French."}] }

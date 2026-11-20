@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" width="1000" height="1000"><style>
+    #light-icon {
+      display: inline;
+    }
+    #dark-icon {
+      display: none;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      #light-icon {
+        display: none;
+      }
+      #dark-icon {
+        display: inline;
+      }
+    }
+  </style><g id="light-icon"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" width="1000" height="1000"><g><g transform="matrix(9.10912734560029,0,0,9.10912734560029,5.684341886080802e-14,5.684341886080802e-14)"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" width="109.78" height="109.78"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 109.78 109.78">
+  <!-- Generator: Adobe Illustrator 29.0.1, SVG Export Plug-In . SVG Version: 2.1.0 Build 192)  -->
+  <defs>
+    <style>
+      .st0, .st1 {
+        fill: #fff;
+      }
+
+      .st2 {
+        fill: #128c7e;
+      }
+
+      .st3 {
+        fill: none;
+        stroke: #132737;
+      }
+
+      .st3, .st1 {
+        stroke-miterlimit: 10;
+      }
+
+      .st1 {
+        stroke: #fff;
+        stroke-width: .25px;
+      }
+    </style>
+  </defs>
+  <g id="Ebene_3">
+    <rect class="st2" x="23.3" y="19.2" width="86.48" height="89.2"></rect>
+  </g>
+  <g id="Ebene_1">
+    <path class="st1" d="M29.79,86.48"></path>
+    <path class="st1" d="M29.79,74.73"></path>
+    <path class="st3" d="M23.02,102.32"></path>
+    <path class="st1" d="M30.06,86.42"></path>
+    <path class="st1" d="M30.06,74.67"></path>
+    <path class="st2" d="M39.21,54.99c-4.73,0-11.62,4.13-17.13,7.87-2.76,1.84-5.32,3.48-8.27,5.84h-.2c3.35-9.71,6.5-19.16,9.75-28.87.49-1.31.49-1.9-.49-1.9-1.38,0-6.89,1.71-15.16,2.3l-.49,1.71,2.95.07c3.84.06,4.33.33,3.54,3.02-4.23,13.71-8.66,26.7-13.19,39.89l.59.39c2.36-.53,5.12-.98,7.88-1.31.98-3.61,2.17-7.35,3.45-11.15.89-1.05,2.66-2.3,5.02-3.94,2.36,4.53,4.92,8.73,7.19,12.01,1.79,2.53,3.32,3.71,4.86,4.16v-10.32c-2.11-2.98-4.62-6.95-5.94-9.91,2.76-2.1,7.88-5.12,12.3-5.12,1.67,0,3.05.26,3.94.59.39.13.98,0,1.58-.39,1.08-.72,2.07-1.9,2.07-2.82,0-1.05-1.58-2.1-4.23-2.1Z"></path>
+    <path class="st0" d="M62.66,39.67c-1.12-2.9-2.68-5.22-4.7-6.97-1.73-1.48-3.76-2.54-6.09-3.18-2.33-.64-5.59-.96-9.77-.96h-1.45v8.54-8.54h-.66l.09,8.69h2.79c4.38,0,7.5.91,9.37,2.73,1.87,1.82,2.81,4.8,2.81,8.94s-.88,7.39-2.64,9.25c-1.76,1.85-4.72,2.78-8.88,2.78h-3.45v-.89c-.09,0-.19-.01-.27-.04-.89-.33-2.26-.59-3.94-.59s-3.41.42-5.1,1.06v41.84h9.3v-32.49c.28.03.61.06.99.08.38.02.94.03,1.7.03,7.05,0,12.41-1.75,16.08-5.25,3.67-3.5,5.5-8.62,5.5-15.36,0-3.54-.56-6.75-1.68-9.65Z"></path>
+    <path class="st0" d="M39.98,28.56h-9.22s0,27.66,0,27.66c3.06-1.49,6.04-2.53,8.44-2.53.3,0,.59.02.86.04v-16.82"></path>
+    <rect class="st0" x="38.32" y="28.56" width="3.66" height="8.69" transform="translate(80.3 65.81) rotate(180)"></rect>
+    <path class="st3" d="M23.3,102.26"></path>
+    <g>
+      <rect class="st0" x="81.78" y="49.38" width="9.05" height="31.81" transform="translate(21.02 151.59) rotate(-90)"></rect>
+      <rect class="st0" x="69" y="28.58" width="9.05" height="73.76"></rect>
+      <rect class="st0" x="94.01" y="28.54" width="9.05" height="73.76"></rect>
+    </g>
+  </g>
+  <metadata>
+    <sfw xmlns="http://ns.adobe.com/SaveForWeb/1.0/">
+      <slices></slices>
+      <slicesourcebounds x="-8078" y="-8336" width="16383" height="16383" bottomleftorigin="true"></slicesourcebounds>
+    </sfw>
+  </metadata>
+</svg></svg></g></g></svg></g><g id="dark-icon"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" width="1000" height="1000"><g clip-path="url(#SvgjsClipPath1011)"><rect width="1000" height="1000" fill="#ffffff"></rect><g transform="matrix(6.376389141920204,0,0,6.376389141920204,150,150)"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" width="109.78" height="109.78"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 109.78 109.78">
+  <!-- Generator: Adobe Illustrator 29.0.1, SVG Export Plug-In . SVG Version: 2.1.0 Build 192)  -->
+  <defs>
+    <style>
+      .st0, .st1 {
+        fill: #fff;
+      }
+
+      .st2 {
+        fill: #128c7e;
+      }
+
+      .st3 {
+        fill: none;
+        stroke: #132737;
+      }
+
+      .st3, .st1 {
+        stroke-miterlimit: 10;
+      }
+
+      .st1 {
+        stroke: #fff;
+        stroke-width: .25px;
+      }
+    </style>
+  <clipPath id="SvgjsClipPath1011"><rect width="1000" height="1000" x="0" y="0" rx="350" ry="350"></rect></clipPath></defs>
+  <g id="Ebene_3">
+    <rect class="st2" x="23.3" y="19.2" width="86.48" height="89.2"></rect>
+  </g>
+  <g id="Ebene_1">
+    <path class="st1" d="M29.79,86.48"></path>
+    <path class="st1" d="M29.79,74.73"></path>
+    <path class="st3" d="M23.02,102.32"></path>
+    <path class="st1" d="M30.06,86.42"></path>
+    <path class="st1" d="M30.06,74.67"></path>
+    <path class="st2" d="M39.21,54.99c-4.73,0-11.62,4.13-17.13,7.87-2.76,1.84-5.32,3.48-8.27,5.84h-.2c3.35-9.71,6.5-19.16,9.75-28.87.49-1.31.49-1.9-.49-1.9-1.38,0-6.89,1.71-15.16,2.3l-.49,1.71,2.95.07c3.84.06,4.33.33,3.54,3.02-4.23,13.71-8.66,26.7-13.19,39.89l.59.39c2.36-.53,5.12-.98,7.88-1.31.98-3.61,2.17-7.35,3.45-11.15.89-1.05,2.66-2.3,5.02-3.94,2.36,4.53,4.92,8.73,7.19,12.01,1.79,2.53,3.32,3.71,4.86,4.16v-10.32c-2.11-2.98-4.62-6.95-5.94-9.91,2.76-2.1,7.88-5.12,12.3-5.12,1.67,0,3.05.26,3.94.59.39.13.98,0,1.58-.39,1.08-.72,2.07-1.9,2.07-2.82,0-1.05-1.58-2.1-4.23-2.1Z"></path>
+    <path class="st0" d="M62.66,39.67c-1.12-2.9-2.68-5.22-4.7-6.97-1.73-1.48-3.76-2.54-6.09-3.18-2.33-.64-5.59-.96-9.77-.96h-1.45v8.54-8.54h-.66l.09,8.69h2.79c4.38,0,7.5.91,9.37,2.73,1.87,1.82,2.81,4.8,2.81,8.94s-.88,7.39-2.64,9.25c-1.76,1.85-4.72,2.78-8.88,2.78h-3.45v-.89c-.09,0-.19-.01-.27-.04-.89-.33-2.26-.59-3.94-.59s-3.41.42-5.1,1.06v41.84h9.3v-32.49c.28.03.61.06.99.08.38.02.94.03,1.7.03,7.05,0,12.41-1.75,16.08-5.25,3.67-3.5,5.5-8.62,5.5-15.36,0-3.54-.56-6.75-1.68-9.65Z"></path>
+    <path class="st0" d="M39.98,28.56h-9.22s0,27.66,0,27.66c3.06-1.49,6.04-2.53,8.44-2.53.3,0,.59.02.86.04v-16.82"></path>
+    <rect class="st0" x="38.32" y="28.56" width="3.66" height="8.69" transform="translate(80.3 65.81) rotate(180)"></rect>
+    <path class="st3" d="M23.3,102.26"></path>
+    <g>
+      <rect class="st0" x="81.78" y="49.38" width="9.05" height="31.81" transform="translate(21.02 151.59) rotate(-90)"></rect>
+      <rect class="st0" x="69" y="28.58" width="9.05" height="73.76"></rect>
+      <rect class="st0" x="94.01" y="28.54" width="9.05" height="73.76"></rect>
+    </g>
+  </g>
+  <metadata>
+    <sfw xmlns="http://ns.adobe.com/SaveForWeb/1.0/">
+      <slices></slices>
+      <slicesourcebounds x="-8078" y="-8336" width="16383" height="16383" bottomleftorigin="true"></slicesourcebounds>
+    </sfw>
+  </metadata>
+</svg></svg></g></g></svg></g></svg>

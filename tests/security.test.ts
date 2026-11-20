@@ -8,6 +8,7 @@ import { currentScholarships } from "../server/scholarship-catalogue";
 import requirements from "../data/published/requirements-current.json";
 import { globalCatalogue } from "../server/global-catalogue";
 import dates from "../data/published/application-dates-current.json";
+import { parseAdminToolResult } from "../lib/admin-tool-results";
 const A = "aaaaaaaa-aaaa-4aaa-8aaa-aaaaaaaaaaaa",
   B = "bbbbbbbb-bbbb-4bbb-8bbb-bbbbbbbbbbbb",
   ADMIN = "cccccccc-cccc-4ccc-8ccc-cccccccccccc",
@@ -106,14 +107,12 @@ grant select,insert,update,delete on storage.objects to anon,authenticated;`);
     );
     await as(ADMIN);
     await db.exec("select set_config('request.jwt.claim.aal','aal1',false)");
-    assert.equal(
-      (
-        await db.query(
-          `select public.admin_university_coverage('${UNI}') coverage`,
-        )
-      ).rows.length,
-      1,
+    const coverageResult = await db.query<{ coverage: unknown }>(
+      `select public.admin_university_coverage('${UNI}') coverage`,
     );
+    assert.equal(coverageResult.rows.length, 1);
+    assert.equal(parseAdminToolResult("university_coverage", coverageResult.rows[0].coverage).university.id, UNI,
+      "MCP output contract accepts the actual staff coverage RPC shape");
     await assert.rejects(
       db.exec(
         `update public.universities set name='MFA bypass' where id='${UNI}'`,
@@ -295,7 +294,10 @@ grant select,insert,update,delete on storage.objects to anon,authenticated;`);
         "select public.stage_observations($1,$2::jsonb) r",
         [source, JSON.stringify([{ ...row, value }])],
       );
-    assert.equal((await stage(12345)).rows[0].r.accepted, 1);
+    const firstStagingReceipt = (await stage(12345)).rows[0].r;
+    assert.equal(firstStagingReceipt.accepted, 1);
+    assert.equal(parseAdminToolResult("stage_observations", firstStagingReceipt).accepted, 1,
+      "MCP output contract accepts the actual staging receipt without inventing publication status");
     assert.equal(
       (await stage(12345)).rows[0].r.duplicates,
       1,

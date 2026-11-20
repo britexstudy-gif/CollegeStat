@@ -8,6 +8,7 @@ const nullableText = z.string().max(5000).nullable().optional();
 const institutionURL = z.string().url().refine(v => /^https?:\/\//.test(v));
 const localAsset = z.string().regex(/^\/(?:logos|images)\/[a-zA-Z0-9/_\-.]+$/).refine(v => !v.includes('..'));
 const evidenceFields = {
+  evidence: z.record(z.unknown()).refine(v => JSON.stringify(v).length <= 16000, "Evidence is too large").optional(),
   id: uuid.optional(),
   university_id: uuid,
   source_id: uuid,

@@ -1,0 +1,2102 @@
+[
+ {
+  "university_id": "22222222-2222-4222-8222-222222222222",
+  "university": "Massachusetts Institute of Technology",
+  "field": "english",
+  "value": {
+   "test": "IELTS",
+   "minimum": 7,
+   "detail": "Minimum overall 7.0; recommended 7.5.",
+   "source_url": "https://mitadmissions.org/apply/firstyear/tests-scores/"
+  },
+  "reason": "host differs from the university site: mitadmissions.org"
+ },
+ {
+  "university_id": "22222222-2222-4222-8222-222222222222",
+  "university": "Massachusetts Institute of Technology",
+  "field": "english",
+  "value": {
+   "test": "TOEFL iBT",
+   "minimum": 5,
+   "detail": "Minimum 5.0 on the 1–6 scale for tests from 2026-01-21; earlier tests required 90.",
+   "source_url": "https://mitadmissions.org/apply/firstyear/tests-scores/"
+  },
+  "reason": "host differs from the university site: mitadmissions.org"
+ },
+ {
+  "university_id": "22222222-2222-4222-8222-222222222222",
+  "university": "Massachusetts Institute of Technology",
+  "field": "english",
+  "value": {
+   "test": "Duolingo",
+   "minimum": 120,
+   "detail": "Minimum 120 overall.",
+   "source_url": "https://mitadmissions.org/apply/firstyear/tests-scores/"
+  },
+  "reason": "host differs from the university site: mitadmissions.org"
+ },
+ {
+  "university_id": "22222222-2222-4222-8222-222222222222",
+  "university": "Massachusetts Institute of Technology",
+  "field": "english",
+  "value": {
+   "test": "PTE Academic",
+   "minimum": 65,
+   "detail": "Minimum 65 overall.",
+   "source_url": "https://mitadmissions.org/apply/firstyear/tests-scores/"
+  },
+  "reason": "host differs from the university site: mitadmissions.org"
+ },
+ {
+  "university_id": "22222222-2222-4222-8222-222222222222",
+  "university": "Massachusetts Institute of Technology",
+  "field": "english",
+  "value": {
+   "test": "Cambridge C1/C2",
+   "minimum": 185,
+   "detail": "Minimum 185 overall for C1 Advanced or C2 Proficiency.",
+   "source_url": "https://mitadmissions.org/apply/firstyear/tests-scores/"
+  },
+  "reason": "host differs from the university site: mitadmissions.org"
+ },
+ {
+  "university_id": "22222222-2222-4222-8222-222222222222",
+  "university": "Massachusetts Institute of Technology",
+  "field": "application_fee",
+  "value": {
+   "amount": 75,
+   "currency": "USD",
+   "source_url": "https://mitadmissions.org/apply/firstyear/deadlines-requirements/"
+  },
+  "reason": "host differs from the university site: mitadmissions.org"
+ },
+ {
+  "university_id": "22222222-2222-4222-8222-222222222222",
+  "university": "Massachusetts Institute of Technology",
+  "field": "deadline",
+  "value": {
+   "title": "Early Action",
+   "due_at": "2026-11-01",
+   "route": "MIT application",
+   "source_url": "https://mitadmissions.org/apply/firstyear/deadlines-requirements/"
+  },
+  "reason": "host differs from the university site: mitadmissions.org"
+ },
+ {
+  "university_id": "22222222-2222-4222-8222-222222222222",
+  "university": "Massachusetts Institute of Technology",
+  "field": "deadline",
+  "value": {
+   "title": "Regular Action",
+   "due_at": "2027-01-04",
+   "route": "MIT application",
+   "source_url": "https://mitadmissions.org/apply/firstyear/deadlines-requirements/"
+  },
+  "reason": "host differs from the university site: mitadmissions.org"
+ },
+ {
+  "university_id": "22222222-2222-4222-8222-222222222222",
+  "university": "Massachusetts Institute of Technology",
+  "field": "acceptance_rate",
+  "value": {
+   "percent": 4.6,
+   "year": "Class of 2029",
+   "source_url": "https://mitadmissions.org/apply/process/stats/"
+  },
+  "reason": "host differs from the university site: mitadmissions.org"
+ },
+ {
+  "university_id": "66cc3fd0-3055-5d88-b1d0-586a11515643",
+  "university": "Monash University",
+  "field": "deadline",
+  "value": {
+   "title": "Applications open throughout the year for international students",
+   "due_at": "",
+   "route": "Monash application portal",
+   "source_url": "https://www.monash.edu/admissions/apply/international-ug"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "40dc3bce-f456-577e-9003-9c143d3b52bb",
+  "university": "Shanghai Jiaotong University",
+  "field": "deadline",
+  "value": {
+   "title": "2026 entry Early Action",
+   "due_at": "2025-11-15",
+   "route": "Common App",
+   "source_url": "https://gc.sjtu.edu.cn/wp-content/uploads/2025/09/2026-International-Undergraduate-Admissions-updated.pdf"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "40dc3bce-f456-577e-9003-9c143d3b52bb",
+  "university": "Shanghai Jiaotong University",
+  "field": "deadline",
+  "value": {
+   "title": "2026 entry Regular Decision",
+   "due_at": "2026-03-31",
+   "route": "Common App",
+   "source_url": "https://gc.sjtu.edu.cn/wp-content/uploads/2025/09/2026-International-Undergraduate-Admissions-updated.pdf"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "1ad9abe1-60cd-55ec-b227-5c8001db0475",
+  "university": "Columbia University in the City of New York",
+  "field": "deadline",
+  "value": {
+   "title": "2026 entry Early Decision",
+   "due_at": "2025-11-01",
+   "route": "Common App or Coalition App",
+   "source_url": "https://undergrad.admissions.columbia.edu/sites/default/files/2023-08/Columbia%20Undergraduate%20Admissions%20Viewbook%202023_Web.pdf"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "1ad9abe1-60cd-55ec-b227-5c8001db0475",
+  "university": "Columbia University in the City of New York",
+  "field": "deadline",
+  "value": {
+   "title": "2026 entry Regular Decision",
+   "due_at": "2026-01-01",
+   "route": "Common App or Coalition App",
+   "source_url": "https://undergrad.admissions.columbia.edu/sites/default/files/2023-08/Columbia%20Undergraduate%20Admissions%20Viewbook%202023_Web.pdf"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "6d72f6ce-a30c-54a4-8b99-97ae04a68a88",
+  "university": "Korea University",
+  "field": "deadline",
+  "value": {
+   "title": "Online application, Fall 2026 entry",
+   "due_at": "2026-03-27",
+   "route": "Korea University international admissions portal",
+   "source_url": "https://oia.korea.ac.kr/_res/oia/etc/Application_Guide_for_Fall_2026_Freshman%28ENG%29.pdf"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "6d72f6ce-a30c-54a4-8b99-97ae04a68a88",
+  "university": "Korea University",
+  "field": "deadline",
+  "value": {
+   "title": "Application materials, Fall 2026 entry",
+   "due_at": "2026-03-31",
+   "route": "Postal submission to Korea University",
+   "source_url": "https://oia.korea.ac.kr/_res/oia/etc/Application_Guide_for_Fall_2026_Freshman%28ENG%29.pdf"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "cc300fc2-3770-5383-a663-b1ec31311b4d",
+  "university": "New York University",
+  "field": "deadline",
+  "value": {
+   "title": "Early Decision I, 2026 entry",
+   "due_at": "2025-11-01",
+   "route": "Common App",
+   "source_url": "https://connect.nyu.edu/register/?id=fb396c9b-d471-4d77-8097-fc750f16cc41"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "cc300fc2-3770-5383-a663-b1ec31311b4d",
+  "university": "New York University",
+  "field": "deadline",
+  "value": {
+   "title": "Early Decision II, 2026 entry",
+   "due_at": "2026-01-01",
+   "route": "Common App",
+   "source_url": "https://connect.nyu.edu/register/?id=fb396c9b-d471-4d77-8097-fc750f16cc41"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "ee31891b-8bbc-5fb0-9bc5-e0122f0c55dd",
+  "university": "Universiti Malaya",
+  "field": "deadline",
+  "value": {
+   "title": "2026 entry",
+   "due_at": "2026-08-30",
+   "route": "University application portal, conventional international undergraduate",
+   "source_url": "https://study.um.edu.my/how-to-apply"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "fb08c67d-bb79-53ff-bbfc-1313fa5602e3",
+  "university": "Duke University",
+  "field": "deadline",
+  "value": {
+   "title": "2026 entry Early Decision",
+   "due_at": "2025-11-02",
+   "route": "Common Application",
+   "source_url": "https://admissions.duke.edu/first-year-applicants/"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "fb08c67d-bb79-53ff-bbfc-1313fa5602e3",
+  "university": "Duke University",
+  "field": "deadline",
+  "value": {
+   "title": "2026 entry Regular Decision",
+   "due_at": "2026-01-04",
+   "route": "Common Application",
+   "source_url": "https://admissions.duke.edu/first-year-applicants/"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "6941fb87-c482-5aa1-9f3c-a5de7cf736dc",
+  "university": "University of Auckland",
+  "field": "deadline",
+  "value": {
+   "title": "Semester One 2027 selected programmes (Medical Imaging, Medicine, Optometry, Pharmacy)",
+   "due_at": "2026-07-01",
+   "route": "University online application",
+   "source_url": "https://www.auckland.ac.nz/en/study/applications-and-admissions/how-to-apply/undergraduate-application-closing-dates.html"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "0cb61489-37dd-53a3-a9f2-53cbd5f1a0dd",
+  "university": "Pennsylvania State University-Main Campus",
+  "field": "sat",
+  "value": {
+   "policy": "optional",
+   "p25": 1280,
+   "p75": 1410,
+   "source_url": "https://bpb-us-e1.wpmucdn.com/sites.psu.edu/dist/d/114442/files/2026/06/UniversityPark_CDS_2025_2026.pdf"
+  },
+  "reason": "host differs from the university site: bpb-us-e1.wpmucdn.com"
+ },
+ {
+  "university_id": "0cb61489-37dd-53a3-a9f2-53cbd5f1a0dd",
+  "university": "Pennsylvania State University-Main Campus",
+  "field": "acceptance_rate",
+  "value": {
+   "percent": 55.3,
+   "year": "Fall 2025",
+   "source_url": "https://bpb-us-e1.wpmucdn.com/sites.psu.edu/dist/d/114442/files/2026/06/UniversityPark_CDS_2025_2026.pdf"
+  },
+  "reason": "host differs from the university site: bpb-us-e1.wpmucdn.com"
+ },
+ {
+  "university_id": "b7e728a7-1aa5-5bce-badf-5ecb3a6ec992",
+  "university": "Freie Universität Berlin",
+  "field": "deadline",
+  "value": {
+   "title": "Winter semester 2026/27 (2026 entry)",
+   "due_at": "2026-07-15",
+   "route": "FU application portal; VPD via uni-assist",
+   "source_url": "https://www.polsoz.fu-berlin.de/en/kommwiss/studieninteressierte/ba_puk/bewerbung/index.html"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "1789110d-d2fe-546a-bb76-da8fc3c966d6",
+  "university": "Institute of Science Tokyo",
+  "field": "deadline",
+  "value": {
+   "title": "April 2027 entry, GSEP",
+   "due_at": "2026-08-21",
+   "route": "University online application",
+   "source_url": "https://admissions.isct.ac.jp/en/013/undergraduate/programs/gsep"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "35a032fc-f24f-5a50-92ed-b818fca7f222",
+  "university": "University College Dublin",
+  "field": "deadline",
+  "value": {
+   "title": "2026 entry",
+   "due_at": "2026-07-15",
+   "route": "UCD international application portal",
+   "source_url": "https://www.ucd.ie/global/t4media/UCD%20International%20Prospectus%202026.pdf"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "f7aaf172-d973-5248-b3d6-83289c7c7451",
+  "university": "Rheinisch Westfälische Technische Hochschule Aachen",
+  "field": "deadline",
+  "value": {
+   "title": "2026 entry, winter semester international applicants",
+   "due_at": "2026-07-15",
+   "route": "RWTHonline",
+   "source_url": "https://www.rwth-aachen.de/global/show_document.asp?id=aaaaaaaabphbjaw"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "39a0a410-8dec-5d39-bba7-99eb9fd534c4",
+  "university": "Lomonosov Moscow State University",
+  "field": "deadline",
+  "value": {
+   "title": "Bachelor application deadline (2026 entry)",
+   "due_at": "2026-07-15",
+   "route": "MSU online platform",
+   "source_url": "https://openday.msu.ru/en/admissions"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "ea07bd5a-d5e8-59b9-bfd9-600587605f25",
+  "university": "Universidade de São Paulo",
+  "field": "application_fee",
+  "value": {
+   "amount": 228,
+   "currency": "BRL",
+   "source_url": "https://www.fuvest.br/vestibular-da-usp/"
+  },
+  "reason": "host differs from the university site: fuvest.br"
+ },
+ {
+  "university_id": "ea07bd5a-d5e8-59b9-bfd9-600587605f25",
+  "university": "Universidade de São Paulo",
+  "field": "deadline",
+  "value": {
+   "title": "FUVEST 2027 application deadline",
+   "due_at": "2026-10-09",
+   "route": "FUVEST",
+   "source_url": "https://www.fuvest.br/vestibular-da-usp/"
+  },
+  "reason": "host differs from the university site: fuvest.br"
+ },
+ {
+  "university_id": "dba5fd6f-9afd-5011-aab8-7d0e6cb6ac2a",
+  "university": "Sungkyunkwan University",
+  "field": "deadline",
+  "value": {
+   "title": "2027 Spring first-year application (nearest published cycle)",
+   "due_at": "2026-08-21",
+   "route": "SKKU online application",
+   "source_url": "https://admission-global.skku.edu/eng/etc/bbs_list.html?bbsid=global_notice_re_eng&bltn_seq=53798&ctg_cd=Undergraduate&mode=view"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "04cf5b15-066c-5320-848e-44bd11bb8aa8",
+  "university": "University of Qatar",
+  "field": "deadline",
+  "value": {
+   "title": "2026 entry: international online application",
+   "due_at": "2026-03-25",
+   "route": "Qatar University online admissions application",
+   "source_url": "https://www.qu.edu.qa/en-us/students/admission/undergraduate/Pages/application-timeline.aspx"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "04cf5b15-066c-5320-848e-44bd11bb8aa8",
+  "university": "University of Qatar",
+  "field": "deadline",
+  "value": {
+   "title": "2026 entry: international student visa and admission documents",
+   "due_at": "2026-04-02",
+   "route": "Qatar University; submit documents",
+   "source_url": "https://www.qu.edu.qa/en-us/students/admission/undergraduate/Pages/application-timeline.aspx"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "21e26f0d-fd30-521e-a9f3-fb97b8452d78",
+  "university": "University of Roma \"La Sapienza\"",
+  "field": "deadline",
+  "value": {
+   "title": "2026 entry: visa-seeking international pre-selection",
+   "due_at": "2026-05-15",
+   "route": "MoveIN pre-selection",
+   "source_url": "https://www.uniroma1.it/sites/default/files/field_file_allegati/academic_requirements_movein_2026-2027_web_20260608.pdf"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "710661ab-60ec-57bf-84bc-aa0b1e256a12",
+  "university": "Leiden University",
+  "field": "english",
+  "value": {
+   "test": "IELTS",
+   "minimum": 6,
+   "detail": "Lowest listed bachelor’s threshold; some programmes require 6.5, 7.0 or 7.5.",
+   "source_url": "https://www.universiteitleiden.nl/binaries/content/assets/studentenwerving/scm/admission-and-application/language-requirements/language_requirements_bachelors_programmmes_eng.pdf"
+  },
+  "reason": "host differs from the university site: universiteitleiden.nl"
+ },
+ {
+  "university_id": "710661ab-60ec-57bf-84bc-aa0b1e256a12",
+  "university": "Leiden University",
+  "field": "english",
+  "value": {
+   "test": "TOEFL iBT",
+   "minimum": 80,
+   "detail": "Lowest listed bachelor’s threshold; some programmes require 90, 100 or 113.",
+   "source_url": "https://www.universiteitleiden.nl/binaries/content/assets/studentenwerving/scm/admission-and-application/language-requirements/language_requirements_bachelors_programmmes_eng.pdf"
+  },
+  "reason": "host differs from the university site: universiteitleiden.nl"
+ },
+ {
+  "university_id": "710661ab-60ec-57bf-84bc-aa0b1e256a12",
+  "university": "Leiden University",
+  "field": "english",
+  "value": {
+   "test": "Cambridge C1/C2",
+   "minimum": 169,
+   "detail": "Lowest listed score; programme-specific thresholds vary.",
+   "source_url": "https://www.universiteitleiden.nl/binaries/content/assets/studentenwerving/scm/admission-and-application/language-requirements/language_requirements_bachelors_programmmes_eng.pdf"
+  },
+  "reason": "host differs from the university site: universiteitleiden.nl"
+ },
+ {
+  "university_id": "710661ab-60ec-57bf-84bc-aa0b1e256a12",
+  "university": "Leiden University",
+  "field": "tuition",
+  "value": {
+   "amount": 14300,
+   "amount_max": 30200,
+   "currency": "EUR",
+   "period": "year",
+   "academic_year": "2026/27",
+   "detail": "Non-EEA bachelor’s fees vary by discipline; published range excludes special UAF fees.",
+   "source_url": "https://www.universiteitleiden.nl/binaries/content/assets/algemeen/over-ons/financien/kadernota-2026-2030.pdf"
+  },
+  "reason": "host differs from the university site: universiteitleiden.nl"
+ },
+ {
+  "university_id": "710661ab-60ec-57bf-84bc-aa0b1e256a12",
+  "university": "Leiden University",
+  "field": "application_fee",
+  "value": {
+   "amount": 100,
+   "currency": "EUR",
+   "source_url": "https://www.universiteitleiden.nl/en/education/study-programmes/master/media-studies/film-and-photographic-studies/pdf"
+  },
+  "reason": "host differs from the university site: universiteitleiden.nl"
+ },
+ {
+  "university_id": "b865e086-9fba-5fd2-8b1f-9be60d97baf4",
+  "university": "Universiti Sains Malaysia",
+  "field": "deadline",
+  "value": {
+   "title": "2026 entry, October intake application window closes",
+   "due_at": "2026-07-15",
+   "route": "International@USM portal",
+   "source_url": "https://admission.usm.my/images/00uginternational/download_2025/BOOKLET_INTERNATIONAL_2025-2026.pdf"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "b865e086-9fba-5fd2-8b1f-9be60d97baf4",
+  "university": "Universiti Sains Malaysia",
+  "field": "deadline",
+  "value": {
+   "title": "2026 entry, March intake application window closes",
+   "due_at": "2026-01-15",
+   "route": "International@USM portal",
+   "source_url": "https://admission.usm.my/images/00uginternational/download_2025/BOOKLET_INTERNATIONAL_2025-2026.pdf"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "d2dff4b3-070b-59d5-a6fb-a12c7095d63b",
+  "university": "Humboldt Universität Berlin",
+  "field": "deadline",
+  "value": {
+   "title": "2026 entry (usual application period; dates subject to change)",
+   "due_at": "2026-07-15",
+   "route": "uni-assist",
+   "source_url": "https://www.kunstgeschichte.hu-berlin.de/studium/faq-studium/"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "5f90631a-ee6a-587d-a542-5fb1d07d0705",
+  "university": "University of Science and Technology of China",
+  "field": "deadline",
+  "value": {
+   "title": "2026 entry",
+   "due_at": "2026-05-31",
+   "route": "USTC online application",
+   "source_url": "https://en.business.ustc.edu.cn/_t437/admissions/list.htm"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "79f39470-8afd-51a9-b34d-4c1c5c988195",
+  "university": "Universidad Nacional Autónoma de México",
+  "field": "deadline",
+  "value": {
+   "title": "2026 entry registration deadline",
+   "due_at": "2026-02-03",
+   "route": "UNAM admissions portal",
+   "source_url": "https://repositorio.dgae.unam.mx/Licenciatura2026/instructivo_licenciatura2026.pdf"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "79f39470-8afd-51a9-b34d-4c1c5c988195",
+  "university": "Universidad Nacional Autónoma de México",
+  "field": "deadline",
+  "value": {
+   "title": "2026 entry exam fee payment deadline",
+   "due_at": "2026-02-05",
+   "route": "UNAM admissions portal / bank payment",
+   "source_url": "https://repositorio.dgae.unam.mx/Licenciatura2026/instructivo_licenciatura2026.pdf"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "134932db-50b6-573c-a856-474f34c60efc",
+  "university": "University of Cape Town",
+  "field": "deadline",
+  "value": {
+   "title": "2027 entry undergraduate application deadline",
+   "due_at": "2026-07-31",
+   "route": "UCT online application",
+   "source_url": "https://mig-health.uct.ac.za/sites/default/files/media/documents/ug-directions-for-applicants-2027.pdf"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "c73fffe8-a4ac-5cb2-8129-237abf096957",
+  "university": "University of Barcelona",
+  "field": "deadline",
+  "value": {
+   "title": "2026 entry: June pre-enrolment deadline",
+   "due_at": "2026-06-26",
+   "route": "Catalan university pre-enrolment",
+   "source_url": "https://universitats.gencat.cat/ca/preinscripcions/calendari/"
+  },
+  "reason": "host differs from the university site: universitats.gencat.cat"
+ },
+ {
+  "university_id": "8cf84b5b-4681-54b3-9013-24b55544e10a",
+  "university": "Chalmers University of Technology",
+  "field": "tuition",
+  "value": {
+   "amount": 147000,
+   "amount_max": null,
+   "currency": "SEK",
+   "period": "year",
+   "academic_year": "2027/28",
+   "detail": "Computer Science and AI BSc: full cost 441,000 SEK over 3 years; 147,000 per year.",
+   "source_url": "https://www.gu.se/en/study-gothenburg/bachelors-programme-in-computer-science-and-ai-n1cai"
+  },
+  "reason": "host differs from the university site: gu.se"
+ },
+ {
+  "university_id": "8cf84b5b-4681-54b3-9013-24b55544e10a",
+  "university": "Chalmers University of Technology",
+  "field": "deadline",
+  "value": {
+   "title": "Autumn 2027, international round",
+   "due_at": "2027-01-15",
+   "route": "University Admissions",
+   "source_url": "https://www.gu.se/en/study-gothenburg/bachelors-programme-in-computer-science-and-ai-n1cai"
+  },
+  "reason": "host differs from the university site: gu.se"
+ },
+ {
+  "university_id": "9944c4eb-317b-540e-9abc-9c1942c6ae7c",
+  "university": "Emory University",
+  "field": "deadline",
+  "value": {
+   "title": "Early Decision I, 2026 entry",
+   "due_at": "2025-11-01",
+   "route": "Common App",
+   "source_url": "https://apply.emory.edu/apply/plans-deadlines"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "9944c4eb-317b-540e-9abc-9c1942c6ae7c",
+  "university": "Emory University",
+  "field": "deadline",
+  "value": {
+   "title": "Early Decision II, 2026 entry",
+   "due_at": "2026-01-01",
+   "route": "Common App",
+   "source_url": "https://apply.emory.edu/apply/plans-deadlines"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "9944c4eb-317b-540e-9abc-9c1942c6ae7c",
+  "university": "Emory University",
+  "field": "deadline",
+  "value": {
+   "title": "Regular Decision, 2026 entry",
+   "due_at": "2026-01-01",
+   "route": "Common App",
+   "source_url": "https://apply.emory.edu/apply/plans-deadlines"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "1540baf5-79f5-59ed-b687-3979b92f0aae",
+  "university": "Universität Bern",
+  "field": "deadline",
+  "value": {
+   "title": "Regular fall-semester application, 2026 entry",
+   "due_at": "2026-04-30",
+   "route": "University online application",
+   "source_url": "https://www.unibe.ch/studies/dates/students/fall/index_eng.html"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "1540baf5-79f5-59ed-b687-3979b92f0aae",
+  "university": "Universität Bern",
+  "field": "deadline",
+  "value": {
+   "title": "Late fall-semester application, 2026 entry (visa applicants excluded)",
+   "due_at": "2026-08-31",
+   "route": "University online application",
+   "source_url": "https://www.unibe.ch/studies/dates/students/fall/index_eng.html"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "6e2f79d8-a01f-5ed1-9d35-b81fdccd16ae",
+  "university": "Vrije Universiteit Amsterdam",
+  "field": "tuition",
+  "value": {
+   "amount": 5020,
+   "amount_max": 36890,
+   "currency": "EUR",
+   "period": "year",
+   "academic_year": "2027-2028",
+   "detail": "Non-EEA institutional bachelor rates vary by programme; €5,020–€36,890.",
+   "source_url": "https://assets-eu-01.kc-usercontent.com/ff31ad68-341e-015e-fb52-24df7a00ecea/65a2a571-e01b-4394-b07f-b5fb1b710bf0/2027_Instellingscollegegelden_Bachelor_EN.pdf"
+  },
+  "reason": "host differs from the university site: assets-eu-01.kc-usercontent.com"
+ },
+ {
+  "university_id": "50725766-5bb6-5387-97f6-a6d69d3c98fb",
+  "university": "Harbin Institute of Technology",
+  "field": "deadline",
+  "value": {
+   "title": "September 2026 entry",
+   "due_at": "2026-07-15",
+   "route": "HIT online application system",
+   "source_url": "https://studyathit.hit.edu.cn/18337/list.htm"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "9f02a56c-9ab8-5777-abaf-de35e9192d5f",
+  "university": "TU Wien",
+  "field": "deadline",
+  "value": {
+   "title": "Winter semester 2026/27",
+   "due_at": "2026-07-15",
+   "route": "TU Wien admission application",
+   "source_url": "https://www.tuwien.at/en/studies/admission/academic-calendar"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "bd6b20f6-b0b7-5062-b4ac-a403d08eadaf",
+  "university": "National Cheng Kung University",
+  "field": "deadline",
+  "value": {
+   "title": "Fall 2026 entry (nearest published fall cycle)",
+   "due_at": "2026-03-15",
+   "route": "NCKU international student online application",
+   "source_url": "https://oia.ncku.edu.tw/p/404-1032-229817.php?Lang=en"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "5b24f3f6-adcb-53fb-a89e-4f25f33f8da2",
+  "university": "Universität Hamburg",
+  "field": "deadline",
+  "value": {
+   "title": "Winter semester 2026/27",
+   "due_at": "2026-07-15",
+   "route": "Universität Hamburg STiNE portal",
+   "source_url": "https://www.uni-hamburg.de/en/campuscenter/bewerbung/fristen-termine.html"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "d811ecca-3f36-56dc-a1ac-c1de1544955b",
+  "university": "Universidad Complutense de Madrid",
+  "field": "deadline",
+  "value": {
+   "title": "Early admission, 2026 entry",
+   "due_at": "2026-04-01",
+   "route": "UCM international admissions portal",
+   "source_url": "https://www.ucm.es/early-admission"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "286aa6be-a3ea-54aa-bd17-a50958d97579",
+  "university": "Indian Institute of Technology Kharagpur",
+  "field": "deadline",
+  "value": {
+   "title": "2026 entry (nearest published cycle)",
+   "due_at": "2026-05-02",
+   "route": "JEE Advanced, direct foreign-national registration",
+   "source_url": "https://jeeadv.ac.in/imp_dates.html"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "24ac60cd-23ee-52e3-b391-359849041a9e",
+  "university": "Universitas Gadjah Mada",
+  "field": "deadline",
+  "value": {
+   "title": "2026 entry, Intake I registration window",
+   "due_at": "2026-01-14",
+   "route": "IUP faculty application; first-week-of-January through second-week-of-January window published",
+   "source_url": "https://fisipol.ugm.ac.id/en/academic-2/admission-system/iup-student/"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "24ac60cd-23ee-52e3-b391-359849041a9e",
+  "university": "Universitas Gadjah Mada",
+  "field": "deadline",
+  "value": {
+   "title": "2026 entry, Intake II registration window",
+   "due_at": "2026-04-14",
+   "route": "IUP faculty application; first-week-of-February through second-week-of-April window published",
+   "source_url": "https://fisipol.ugm.ac.id/en/academic-2/admission-system/iup-student/"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "4ad2abdc-80b7-52ef-ba47-28e6c8e0702b",
+  "university": "Polytechnic Institute of Turin",
+  "field": "deadline",
+  "value": {
+   "title": "2026 entry, language requirement deadline for visa-required applicants",
+   "due_at": "2026-05-22",
+   "route": "Apply@polito; non-EU applicants abroad requiring a visa",
+   "source_url": "https://www.polito.it/en/education/applying-studying-graduating/admissions-and-enrolment/bachelor-s-degree-programmes/applicants-with-a-non-italian-qualification"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "5d6f8a4d-f0e1-5547-b5f3-b8115a1d29b7",
+  "university": "Hebrew University of Jerusalem",
+  "field": "deadline",
+  "value": {
+   "title": "2026/27 entry",
+   "due_at": "2026-08-01",
+   "route": "Rothberg International School online application",
+   "source_url": "https://overseas.huji.ac.il/BA/"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "db5390bb-c32c-5f9b-94df-2a1d75c6499d",
+  "university": "Friedrich-Alexander Universität Erlangen-Nürnberg",
+  "field": "english",
+  "value": {
+   "test": "IELTS",
+   "minimum": 5.5,
+   "detail": "Clean Energy Processes B.Sc. minimum; other English-taught bachelor's programs may require higher scores.",
+   "source_url": "https://www.cep.study.fau.eu/prospective-students/bachelor/application-bachelor/"
+  },
+  "reason": "host differs from the university site: cep.study.fau.eu"
+ },
+ {
+  "university_id": "db5390bb-c32c-5f9b-94df-2a1d75c6499d",
+  "university": "Friedrich-Alexander Universität Erlangen-Nürnberg",
+  "field": "english",
+  "value": {
+   "test": "TOEFL iBT",
+   "minimum": 80,
+   "detail": "Clean Energy Processes B.Sc. minimum; other English-taught bachelor's programs may require higher scores.",
+   "source_url": "https://www.cep.study.fau.eu/prospective-students/bachelor/application-bachelor/"
+  },
+  "reason": "host differs from the university site: cep.study.fau.eu"
+ },
+ {
+  "university_id": "db5390bb-c32c-5f9b-94df-2a1d75c6499d",
+  "university": "Friedrich-Alexander Universität Erlangen-Nürnberg",
+  "field": "tuition",
+  "value": {
+   "amount": 2000,
+   "amount_max": 6000,
+   "currency": "EUR",
+   "period": "year",
+   "academic_year": "2027/28",
+   "detail": "Non-EU bachelor's tuition is €1,000–€3,000 per semester; annual amounts cover two semesters.",
+   "source_url": "https://www.fau.eu/studying/international-students/application-and-enrollment-for-international-applicants/tuition-fees-for-students-from-non-eu-states/"
+  },
+  "reason": "host differs from the university site: fau.eu"
+ },
+ {
+  "university_id": "db5390bb-c32c-5f9b-94df-2a1d75c6499d",
+  "university": "Friedrich-Alexander Universität Erlangen-Nürnberg",
+  "field": "deadline",
+  "value": {
+   "title": "Winter 2026/27 entry",
+   "due_at": "2026-07-15",
+   "route": "FAU campo portal, international applicants",
+   "source_url": "https://www.cep.study.fau.eu/prospective-students/bachelor/application-bachelor/"
+  },
+  "reason": "host differs from the university site: cep.study.fau.eu"
+ },
+ {
+  "university_id": "d06467f5-b2a0-5604-9251-677d567e2661",
+  "university": "Indian Institute of Science Bangalore",
+  "field": "deadline",
+  "value": {
+   "title": "2026 entry application deadline",
+   "due_at": "2026-06-07",
+   "route": "IISc admissions portal",
+   "source_url": "https://bs-ug.iisc.ac.in/admissions/news-and-updates"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "386b2a98-83aa-59b2-b6cd-e065eb77b1d8",
+  "university": "Universidade do Porto",
+  "field": "deadline",
+  "value": {
+   "title": "2026/27 Phase 1 deadline",
+   "due_at": "2026-02-06",
+   "route": "University faculty portal",
+   "source_url": "https://www.up.pt/portal/en/study/international-students/special-call-for-applications/"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "386b2a98-83aa-59b2-b6cd-e065eb77b1d8",
+  "university": "Universidade do Porto",
+  "field": "deadline",
+  "value": {
+   "title": "2026/27 Phase 2 deadline",
+   "due_at": "2026-04-02",
+   "route": "University faculty portal",
+   "source_url": "https://www.up.pt/portal/en/study/international-students/special-call-for-applications/"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "386b2a98-83aa-59b2-b6cd-e065eb77b1d8",
+  "university": "Universidade do Porto",
+  "field": "deadline",
+  "value": {
+   "title": "2026/27 Phase 3 deadline",
+   "due_at": "2026-07-22",
+   "route": "University faculty portal",
+   "source_url": "https://www.up.pt/portal/en/study/international-students/special-call-for-applications/"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "2b5447d8-7a31-5dab-96ad-022b870730ff",
+  "university": "Victoria University of Wellington",
+  "field": "tuition",
+  "value": {
+   "amount": 37483.2,
+   "amount_max": 49237.2,
+   "currency": "NZD",
+   "period": "year",
+   "academic_year": "2027",
+   "detail": "International undergraduate estimates for 120 points, calculated from the 2027 per-point rates; fees vary by subject.",
+   "source_url": "https://vuw-web2.matrix.squiz.cloud/__data/assets/pdf_file/0031/181858/Fees-Schedule-2027.pdf"
+  },
+  "reason": "host differs from the university site: vuw-web2.matrix.squiz.cloud"
+ },
+ {
+  "university_id": "9204c954-9d7d-539d-9cde-d30c5beddb24",
+  "university": "Technische Universität Darmstadt",
+  "field": "deadline",
+  "value": {
+   "title": "2026 entry",
+   "due_at": "2026-08-31",
+   "route": "TUCaN university portal",
+   "source_url": "https://www.informatik.tu-darmstadt.de/studium_fb20/im_studium/studiengaenge_liste/informatik_bsc.en.jsp"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "c8f13117-af99-5310-a183-ba5ffc36002b",
+  "university": "Institut Teknologi Bandung",
+  "field": "deadline",
+  "value": {
+   "title": "2026 entry, Batch 3 registration finalization",
+   "due_at": "2026-07-04",
+   "route": "ITB IUP portal",
+   "source_url": "https://admission.itb.ac.id/en/program/undergraduate-program/international-undergraduate-program"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "f9909941-87f9-55cd-bcb7-7c9301d50851",
+  "university": "Sun Yat-Sen University",
+  "field": "deadline",
+  "value": {
+   "title": "2026 entry, first round",
+   "due_at": "2026-02-28",
+   "route": "SYSU International Student Application System",
+   "source_url": "https://iso.sysu.edu.cn/en/application/guide/1420575.htm"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "f9909941-87f9-55cd-bcb7-7c9301d50851",
+  "university": "Sun Yat-Sen University",
+  "field": "deadline",
+  "value": {
+   "title": "2026 entry, second round",
+   "due_at": "2026-04-30",
+   "route": "SYSU International Student Application System",
+   "source_url": "https://iso.sysu.edu.cn/en/application/guide/1420575.htm"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "41a5c110-cdd3-57e4-bad5-8bfe253f3b0a",
+  "university": "Universidad Nacional de Colombia",
+  "field": "deadline",
+  "value": {
+   "title": "Application deadline (2027-01 entry)",
+   "due_at": "2026-08-24",
+   "route": "UNAL admissions portal",
+   "source_url": "https://admisiones.unal.edu.co/pregrado/"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "a8c20c24-0173-5120-abee-6f63ee2944d3",
+  "university": "Singapore University of Technology and Design",
+  "field": "deadline",
+  "value": {
+   "title": "2026 entry",
+   "due_at": "2026-03-02",
+   "route": "SUTD online application, international qualifications except A-level",
+   "source_url": "https://www.sutd.edu.sg/admissions/undergraduate"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "7aa094cd-7138-5fb0-b290-2242644f4a90",
+  "university": "University of Macau",
+  "field": "deadline",
+  "value": {
+   "title": "2026 entry",
+   "due_at": "2026-04-09",
+   "route": "Direct Admission, bachelor’s degree",
+   "source_url": "https://gao.um.edu.mo/wp-content/uploads/2025/11/ay2627-um-international-admission.pdf"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "be141d50-5df3-5bd2-8b44-744166b2402b",
+  "university": "Middle East Technical University",
+  "field": "deadline",
+  "value": {
+   "title": "2026–27 entry",
+   "due_at": "2026-07-12",
+   "route": "METU international student application portal",
+   "source_url": "https://iso.metu.edu.tr/en/application-dates"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "731c32c4-6abe-59b8-bfe1-c0df705c0612",
+  "university": "Universität Köln",
+  "field": "deadline",
+  "value": {
+   "title": "2026 entry",
+   "due_at": "2026-07-15",
+   "route": "uni-assist, winter semester; deadline published for the nearest cycle",
+   "source_url": "https://uni-koeln.de/en/studium-lehre/international/studium-in-koeln/internationale-bewerbungen/bachelor-studium-staatsexamen/bewerbungsverfahren-fuer-nicht-eu-buergerinnen/application-procedure-for-non-eu-citizens-with-formal-university-entrance-qualification-studienstart-international-integrale"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "71e46d0a-bc88-5978-9776-219ca1abddf0",
+  "university": "Universitas Airlangga",
+  "field": "deadline",
+  "value": {
+   "title": "First intake, 2026 entry",
+   "due_at": "2026-04-06",
+   "route": "University portal",
+   "source_url": "https://ppmb.unair.ac.id/en/iup?menu=International-Programs"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "71e46d0a-bc88-5978-9776-219ca1abddf0",
+  "university": "Universitas Airlangga",
+  "field": "deadline",
+  "value": {
+   "title": "Second intake, 2026 entry",
+   "due_at": "2026-06-01",
+   "route": "University portal",
+   "source_url": "https://ppmb.unair.ac.id/en/iup?menu=International-Programs"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "addc1a48-bb2b-5c8e-845b-32ce68f2c3a7",
+  "university": "Istanbul Technical University",
+  "field": "deadline",
+  "value": {
+   "title": "2026 entry, second application round",
+   "due_at": "2026-08-26",
+   "route": "University online portal",
+   "source_url": "https://www.sis.itu.edu.tr/duyuru_ekler/yabanci/202711/EN/202711.php"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "a8cd3652-fbec-510c-85e6-a4c4372cc7a0",
+  "university": "University of Bergen",
+  "field": "deadline",
+  "value": {
+   "title": "2026 entry: most applicants",
+   "due_at": "2026-04-15",
+   "route": "NUCAS",
+   "source_url": "https://www.samordnaopptak.no/english/"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "9e6e1d4a-e604-5b42-8e72-2f62326988c0",
+  "university": "University of Sharjah",
+  "field": "english",
+  "value": {
+   "test": "PTE Academic",
+   "minimum": 29,
+   "detail": "Lowest listed minimum; some programmes require 44 or higher.",
+   "source_url": "https://www.sharjah.ac.ae/Admissions/bachelors-degree"
+  },
+  "reason": "PTE Academic 29 outside 30-90"
+ },
+ {
+  "university_id": "9be52f2e-e5f1-5b79-beb7-1fe59f0021ab",
+  "university": "Heriot-Watt University",
+  "field": "deadline",
+  "value": {
+   "title": "2026 entry",
+   "due_at": "2026-01-14",
+   "route": "UCAS",
+   "source_url": "https://hw.ac.uk/study/how-to-apply/undergraduate-programmes"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "9be52f2e-e5f1-5b79-beb7-1fe59f0021ab",
+  "university": "Heriot-Watt University",
+  "field": "deadline",
+  "value": {
+   "title": "2026 entry overseas direct application deadline",
+   "due_at": "2026-07-24",
+   "route": "Heriot-Watt application portal",
+   "source_url": "https://hw.ac.uk/study/how-to-apply/undergraduate-programmes"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "8743c257-a864-5458-a173-b251417ae7ad",
+  "university": "University of Witwatersrand",
+  "field": "deadline",
+  "value": {
+   "title": "2027 entry: Health Sciences, Architecture, Audiology, Speech-Language Pathology, Film and TV",
+   "due_at": "2026-06-30",
+   "route": "Wits application portal",
+   "source_url": "https://www.wits.ac.za/undergraduate/apply-to-wits/"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "2b507cd1-ff70-5c51-8708-28c523a5af24",
+  "university": "Vrije Universiteit Brussel",
+  "field": "deadline",
+  "value": {
+   "title": "Non-EEA foreign diploma, 2026 entry",
+   "due_at": "2026-03-31",
+   "route": "VUB application portal",
+   "source_url": "https://www.vub.be/en/studying-vub/apply-and-enrol-vub/admission-requirements-and-deadlines/when-can-you-apply"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "f0e04c9e-cb39-51b1-b00e-b40b17466f09",
+  "university": "University of Stellenbosch",
+  "field": "deadline",
+  "value": {
+   "title": "Undergraduate applications, 2027 entry",
+   "due_at": "2026-07-31",
+   "route": "SU online application portal",
+   "source_url": "https://blogs.sun.ac.za/open-day/files/2026/03/How-to-Apply-Undergraduate-programmes-2027-intake.pdf"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "549fb70d-61dc-5bd3-9a44-c0b95be6da05",
+  "university": "Jagiellonian University Cracow",
+  "field": "deadline",
+  "value": {
+   "title": "2026 entry, International Relations and Area Studies round 1",
+   "due_at": "2026-03-09",
+   "route": "IRK, first- and long-cycle programmes for foreigners",
+   "source_url": "https://irk.uj.edu.pl/en-gb/offer/IiJM_C_26/programme/intern.rela.area.stud_s1s_C_en/?from=registration%3AIiJM_C_26"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "09917ea1-c3bc-548b-9542-fa434bec531a",
+  "university": "Kyung Hee University",
+  "field": "deadline",
+  "value": {
+   "title": "Spring 2027 entry, first intake application",
+   "due_at": "2026-08-28",
+   "route": "KHU international admissions portal",
+   "source_url": "https://kmc.khu.ac.kr/gglobalcenter/user/contents/view.do?menuNo=8000031"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "76aa91bc-0527-5b1b-9891-2b4d84037b90",
+  "university": "Johann Wolfgang Goethe Universität Frankfurt am Main",
+  "field": "deadline",
+  "value": {
+   "title": "2026 entry (winter semester; published program date)",
+   "due_at": "2026-07-15",
+   "route": "uni-assist or university portal, depending on program",
+   "source_url": "https://www.wiwi.uni-frankfurt.de/en/study/study-programs/bachelor/bachelor-of-science-in-economics-and-business-administration/study-program-profile"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "4a913ea2-abf9-5107-b6cc-86e5516b9c0f",
+  "university": "L.N. Gumilyov Eurasian National University",
+  "field": "deadline",
+  "value": {
+   "title": "2026 entry application window 1",
+   "due_at": "2026-03-31",
+   "route": "AIS Platonus or in-person; foreign-citizen interview",
+   "source_url": "https://enu.enu.kz/en/page/applicants/for-foreign-citizens"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "4a913ea2-abf9-5107-b6cc-86e5516b9c0f",
+  "university": "L.N. Gumilyov Eurasian National University",
+  "field": "deadline",
+  "value": {
+   "title": "2026 entry application window 2",
+   "due_at": "2026-07-25",
+   "route": "AIS Platonus or in-person; foreign-citizen interview",
+   "source_url": "https://enu.enu.kz/en/page/applicants/for-foreign-citizens"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "cde44782-b14b-5704-89e6-f9454c38e7ef",
+  "university": "University of Delhi",
+  "field": "deadline",
+  "value": {
+   "title": "2026 entry",
+   "due_at": "2026-05-31",
+   "route": "Foreign Students’ Registry portal",
+   "source_url": "https://fsr.du.ac.in/"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "781c34ce-d476-5f86-81dc-b6c451443a05",
+  "university": "University of Pretoria",
+  "field": "deadline",
+  "value": {
+   "title": "2027 entry (most undergraduate programs)",
+   "due_at": "2026-06-30",
+   "route": "University portal",
+   "source_url": "https://drupalwebprod-files.up.ac.za/Public/2026-01/UP_FB%20Education%202027_DevV5_web.pdf?VersionId=VrxYD7NaH5_mCiwaZOCxfkJcpeqkKEUB"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "267f1ea0-3cce-5842-8e31-55e35893b7b2",
+  "university": "Universität Innsbruck",
+  "field": "deadline",
+  "value": {
+   "title": "2026 entry non-EEA application",
+   "due_at": "2026-05-15",
+   "route": "University online application",
+   "source_url": "https://www.uibk.ac.at/en/admission-department/application-and-admission-deadlines/"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "d8d9923e-8437-5166-ab83-1610792d1967",
+  "university": "Indian Institute of Technology Guwahati",
+  "field": "deadline",
+  "value": {
+   "title": "2026 entry JEE Advanced foreign-candidate registration",
+   "due_at": "2026-05-02",
+   "route": "JEE Advanced direct registration",
+   "source_url": "https://jeeadv.ac.in/imp_dates.html"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "d8d9923e-8437-5166-ab83-1610792d1967",
+  "university": "Indian Institute of Technology Guwahati",
+  "field": "deadline",
+  "value": {
+   "title": "2026 entry JEE Advanced fee payment",
+   "due_at": "2026-05-04",
+   "route": "JEE Advanced",
+   "source_url": "https://jeeadv.ac.in/imp_dates.html"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "c219f27f-022b-5a47-b530-1dcb004f48bd",
+  "university": "Universidad Politécnica de Madrid",
+  "field": "deadline",
+  "value": {
+   "title": "2026 entry foreign-education-system pre-registration",
+   "due_at": "2026-07-06",
+   "route": "Madrid public universities pre-registration (SEEx)",
+   "source_url": "https://www.upm.es/gsfs/SFS46737"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "a26a97e6-1728-580f-9b1f-b2813c25c9e5",
+  "university": "University of Coimbra",
+  "field": "deadline",
+  "value": {
+   "title": "2026 entry, 1st call",
+   "due_at": "2026-01-26",
+   "route": "University portal, Special Contest for International Students",
+   "source_url": "https://inforestudante.uc.pt/nonio/util/downloadPublicoFicheiroEdital.do?anoLectivo=2026%2F2027&curId=345&fichId=6613861"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "a26a97e6-1728-580f-9b1f-b2813c25c9e5",
+  "university": "University of Coimbra",
+  "field": "deadline",
+  "value": {
+   "title": "2026 entry, 2nd call",
+   "due_at": "2026-04-15",
+   "route": "University portal, Special Contest for International Students",
+   "source_url": "https://inforestudante.uc.pt/nonio/util/downloadPublicoFicheiroEdital.do?anoLectivo=2026%2F2027&curId=345&fichId=6613861"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "a26a97e6-1728-580f-9b1f-b2813c25c9e5",
+  "university": "University of Coimbra",
+  "field": "deadline",
+  "value": {
+   "title": "2026 entry, 3rd call",
+   "due_at": "2026-07-17",
+   "route": "University portal, Special Contest for International Students",
+   "source_url": "https://inforestudante.uc.pt/nonio/util/downloadPublicoFicheiroEdital.do?anoLectivo=2026%2F2027&curId=345&fichId=6613861"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "a26a97e6-1728-580f-9b1f-b2813c25c9e5",
+  "university": "University of Coimbra",
+  "field": "deadline",
+  "value": {
+   "title": "2026 entry, extra call",
+   "due_at": "2026-08-14",
+   "route": "University portal, Special Contest for International Students",
+   "source_url": "https://inforestudante.uc.pt/nonio/util/downloadPublicoFicheiroEdital.do?anoLectivo=2026%2F2027&curId=345&fichId=6613861"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "406352fa-7fcc-5de9-b98f-2cfaa417848e",
+  "university": "University of Rome Tor Vergata",
+  "field": "deadline",
+  "value": {
+   "title": "2026 entry, first-year bachelor application rounds",
+   "due_at": "2026-05-29",
+   "route": "Delphi, BSc Business Administration and Economics; non-EU applicants needing a visa",
+   "source_url": "https://economia.uniroma2.it/ba/business-administration-economics/call-for-application/"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "a96bb2a1-a48d-55fa-8c98-4a3e716e380e",
+  "university": "South China University of Technology",
+  "field": "deadline",
+  "value": {
+   "title": "2026 entry",
+   "due_at": "2026-06-30",
+   "route": "University portal",
+   "source_url": "https://www.scut.edu.cn/en/2025/1127/c606a58695/page.htm"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "1375fcab-d98a-53ba-af83-3f09558b1ee4",
+  "university": "National Taiwan University of Science and Technology",
+  "field": "deadline",
+  "value": {
+   "title": "2026 entry",
+   "due_at": "2026-03-11",
+   "route": "University portal",
+   "source_url": "https://www.admission.ntust.edu.tw/var/file/52/1052/img/2629/887982575.pdf"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "9d2187a7-b96c-58ce-9f49-463ba0ab963f",
+  "university": "Universiti Brunei Darussalam",
+  "field": "deadline",
+  "value": {
+   "title": "2026 entry undergraduate application",
+   "due_at": "2026-02-28",
+   "route": "UBD online admission portal",
+   "source_url": "https://apply.ubd.edu.bn/orbeon/uis-welcome/"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "e847d6a1-1b09-5113-8aa2-2567e83e57f4",
+  "university": "Boğaziçi University",
+  "field": "deadline",
+  "value": {
+   "title": "2026–2027 entry international undergraduate application",
+   "due_at": "2026-06-05",
+   "route": "University online application",
+   "source_url": "https://globalstudents.bogazici.edu.tr/en/pages/application-process/6014"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "0949633f-4123-57e8-8e3d-8b762d4a588d",
+  "university": "Abu Dhabi University",
+  "field": "deadline",
+  "value": {
+   "title": "Fall 2026 entry registration deadline for newly admitted students",
+   "due_at": "2026-08-28",
+   "route": "ADU portal",
+   "source_url": "https://www.adu.ac.ae/admissions/how-to-apply"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "c2731c00-d254-53a5-bc2d-e7c05197c0f2",
+  "university": "Quaid-i-Azam University",
+  "field": "deadline",
+  "value": {
+   "title": "2026 entry undergraduate deadline",
+   "due_at": "2026-08-10",
+   "route": "QAU online application system",
+   "source_url": "https://qau.edu.pk/admissions-for-undergraduate-bs-ba-llb-pharm-d-morning-programme-on-regular-self-finance-basis-fall-semester-2026/"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "b99788a4-2398-58cc-87a6-db75c8901baa",
+  "university": "Sabanci University",
+  "field": "deadline",
+  "value": {
+   "title": "2026 entry",
+   "due_at": "2026-08-28",
+   "route": "Sabancı online application",
+   "source_url": "https://www.sabanciuniv.edu/en/academic-calendar?b=2027&c=13&d=en"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "1e616477-ca14-53f6-a70a-fedd8bc44e59",
+  "university": "Peoples' Friendship University of Russia",
+  "field": "deadline",
+  "value": {
+   "title": "2026 entry: standard application deadline",
+   "due_at": "2026-08-10",
+   "route": "University portal / ruID",
+   "source_url": "https://international.rudn.ru/undergraduate/"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "c844d277-276d-586d-94aa-aa3ea60306d6",
+  "university": "University of Tartu",
+  "field": "deadline",
+  "value": {
+   "title": "2026 entry: bachelor's application deadline",
+   "due_at": "2026-04-15",
+   "route": "DreamApply / university portal",
+   "source_url": "https://ut.ee/en/curriculum/business-administration"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "f1f09b3b-965c-56a5-9b96-dfb54d7483ce",
+  "university": "University of Liège",
+  "field": "deadline",
+  "value": {
+   "title": "2026 entry: outside-EU bachelor's application deadline",
+   "due_at": "2026-03-31",
+   "route": "University online application portal",
+   "source_url": "https://www.enseignement.uliege.be/cms/c_9096756/en/access-conditions-to-the-bachelor-outside-eu"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "9b94aa66-95e1-5889-b16d-c23510e15161",
+  "university": "University of Luxembourg",
+  "field": "deadline",
+  "value": {
+   "title": "2026 entry",
+   "due_at": "2026-03-24",
+   "route": "University portal, non-EU applicants",
+   "source_url": "https://www.uni.lu/fstm-en/study-programs/bachelor-in-computer-science/admissions/"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "d9f96e91-5b30-58d7-8d3b-3f55e05db849",
+  "university": "University of Naples Federico II",
+  "field": "deadline",
+  "value": {
+   "title": "2026 entry",
+   "due_at": "2026-06-15",
+   "route": "Universitaly pre-enrolment, non-EU applicants residing abroad",
+   "source_url": "https://www.international.unina.it/education/admission-regulation/"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "ad49510e-30fc-58dd-9cd9-0b45edf6758c",
+  "university": "Gwangju Institute of Science and Technology",
+  "field": "deadline",
+  "value": {
+   "title": "Fall 2026 entry",
+   "due_at": "2026-01-23",
+   "route": "GIST online application system",
+   "source_url": "https://ewww.gist.ac.kr/iuadm/img/main/2026_Fall_Undergraduate_Admission_Guideline.pdf"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "df1296f4-63d0-57c4-aadc-9fb97656eaf0",
+  "university": "Università Cattolica del Sacro Cuore",
+  "field": "tuition",
+  "value": {
+   "amount": 8800,
+   "amount_max": null,
+   "currency": "EUR",
+   "period": "year",
+   "academic_year": "2027/28",
+   "detail": "Flat fee for 3-year bachelor's students whose family income is produced outside the EU/associated states.",
+   "source_url": "https://international.unicatt.it/ucscinternational-admission-and-tuition-tuition-fees-and-scholarships-4480"
+  },
+  "reason": "host differs from the university site: international.unicatt.it"
+ },
+ {
+  "university_id": "df1296f4-63d0-57c4-aadc-9fb97656eaf0",
+  "university": "Università Cattolica del Sacro Cuore",
+  "field": "application_fee",
+  "value": {
+   "amount": 75,
+   "currency": "EUR",
+   "source_url": "https://international.unicatt.it/ucscinternational-Brochure%20Undergraduate_WEB.pdf"
+  },
+  "reason": "host differs from the university site: international.unicatt.it"
+ },
+ {
+  "university_id": "df1296f4-63d0-57c4-aadc-9fb97656eaf0",
+  "university": "Università Cattolica del Sacro Cuore",
+  "field": "deadline",
+  "value": {
+   "title": "Round 1, international applicants",
+   "due_at": "2027-02-17",
+   "route": "Cattolica online application",
+   "source_url": "https://international.unicatt.it/ucscinternational-ammissioni-e-tasse-scadenze-per-la-candidatura-online"
+  },
+  "reason": "host differs from the university site: international.unicatt.it"
+ },
+ {
+  "university_id": "df1296f4-63d0-57c4-aadc-9fb97656eaf0",
+  "university": "Università Cattolica del Sacro Cuore",
+  "field": "deadline",
+  "value": {
+   "title": "Round 2, final round for non-EU visa applicants",
+   "due_at": "2027-05-05",
+   "route": "Cattolica online application",
+   "source_url": "https://international.unicatt.it/ucscinternational-ammissioni-e-tasse-scadenze-per-la-candidatura-online"
+  },
+  "reason": "host differs from the university site: international.unicatt.it"
+ },
+ {
+  "university_id": "22f80f4b-b2f0-50d7-a747-c073a4b79913",
+  "university": "University of Athens",
+  "field": "deadline",
+  "value": {
+   "title": "2026 entry, visa and non-visa applicants",
+   "due_at": "2026-08-01",
+   "route": "BA programme application",
+   "source_url": "https://baag.uoa.gr/admission-fees/"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "dec56bcd-1a03-5b64-8395-d8fe3a330641",
+  "university": "Universidad Politécnica de Cataluna",
+  "field": "deadline",
+  "value": {
+   "title": "2026 entry",
+   "due_at": "2026-07-07",
+   "route": "Catalan university pre-enrolment",
+   "source_url": "https://unedasiss.uned.es/paso_6%26idioma%3Des%26idioma%3Den"
+  },
+  "reason": "host differs from the university site: unedasiss.uned.es"
+ },
+ {
+  "university_id": "b4830ed0-6829-5dc7-984e-cb27ac537c47",
+  "university": "Ruhr-Universität Bochum",
+  "field": "deadline",
+  "value": {
+   "title": "2026 entry (winter semester; restricted first-semester programs)",
+   "due_at": "2026-07-15",
+   "route": "RUB application portal",
+   "source_url": "https://studium.ruhr-uni-bochum.de/en/semester-deadlines"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "2aeff5f7-7e4e-5a51-beef-1c624bb2c1fb",
+  "university": "Ajman University",
+  "field": "deadline",
+  "value": {
+   "title": "2026 entry (fall semester application deadline)",
+   "due_at": "2026-08-28",
+   "route": "Ajman University application portal",
+   "source_url": "https://www.ajman.ac.ae/upload/docs/Undergraduate_Student_Catalog_2026-2027.pdf?v=1790850871"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "6d24d40d-0906-5641-8c35-a31d8d55b8ba",
+  "university": "Bogor Agricultural University",
+  "field": "deadline",
+  "value": {
+   "title": "2026 entry",
+   "due_at": "2026-04-03",
+   "route": "IPB international admissions portal, period 1",
+   "source_url": "https://global.ipb.ac.id/admisssion/"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "6d24d40d-0906-5641-8c35-a31d8d55b8ba",
+  "university": "Bogor Agricultural University",
+  "field": "deadline",
+  "value": {
+   "title": "2026 entry",
+   "due_at": "2026-07-03",
+   "route": "IPB international admissions portal, period 2",
+   "source_url": "https://global.ipb.ac.id/admisssion/"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "d24f9c99-cdf9-5656-b3c2-5993e121b72d",
+  "university": "Universidad de Granada",
+  "field": "deadline",
+  "value": {
+   "title": "2026 entry: foreign-student phase application closes",
+   "due_at": "2026-03-19",
+   "route": "Andalusian District Único application",
+   "source_url": "https://www.juntadeandalucia.es/boja/2025/244/52"
+  },
+  "reason": "host differs from the university site: juntadeandalucia.es"
+ },
+ {
+  "university_id": "0967e522-0906-507c-92a8-0ee1820ecd37",
+  "university": "University of Florence",
+  "field": "deadline",
+  "value": {
+   "title": "2026 entry: non-EU visa pre-enrolment",
+   "due_at": "2026-07-31",
+   "route": "Universitaly; unrestricted first-cycle programmes",
+   "source_url": "https://www.unifi.it/en/study-us/your-learning-path/start-your-enrolment/international-students/pre-enrolment-and-study"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "39c78763-9cff-5441-a973-b2761c55438f",
+  "university": "Technische Universität Graz",
+  "field": "deadline",
+  "value": {
+   "title": "2026 entry, winter semester application",
+   "due_at": "2026-08-15",
+   "route": "University portal / international applicant procedure",
+   "source_url": "https://www.tugraz.at/en/studying-and-teaching/studying-at-tu-graz/prospective-students/admission/bachelors-programme-with-an-international-university-entrance-qualification"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "6ba258c1-adba-5e46-9b8c-411b91c4b958",
+  "university": "Bilkent University",
+  "field": "deadline",
+  "value": {
+   "title": "2026 entry",
+   "due_at": "2026-07-12",
+   "route": "Bilkent online application",
+   "source_url": "https://w3.bilkent.edu.tr/international/how-to-apply/"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "55405d00-ab25-533d-a54d-3e6f9453f6cf",
+  "university": "Bayerische Julius-Maximilians-Universität Würzburg",
+  "field": "deadline",
+  "value": {
+   "title": "2026 entry",
+   "due_at": "2026-07-15",
+   "route": "WueStudy; uni-assist VPD required for foreign qualifications",
+   "source_url": "https://www.hw.uni-wuerzburg.de/en/jp-ia/ba-in-diversity-ethics-and-religions/deadlines/"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "b44469a2-84e1-5d33-98af-269d20f2f756",
+  "university": "Universität Mannheim",
+  "field": "deadline",
+  "value": {
+   "title": "2026 entry; selective bachelor's programmes",
+   "due_at": "2026-07-15",
+   "route": "University online application",
+   "source_url": "https://www.uni-mannheim.de/en/academics/dates/application-deadlines/?L=1"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "b44469a2-84e1-5d33-98af-269d20f2f756",
+  "university": "Universität Mannheim",
+  "field": "deadline",
+  "value": {
+   "title": "2026 entry; some bachelor's programmes",
+   "due_at": "2026-08-31",
+   "route": "University online application",
+   "source_url": "https://www.uni-mannheim.de/en/academics/dates/application-deadlines/?L=1"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "59ce050c-68d5-5716-b96f-418d0f1db0ba",
+  "university": "Shenzhen University",
+  "field": "deadline",
+  "value": {
+   "title": "2026 entry, first round",
+   "due_at": "2026-03-20",
+   "route": "SZU online application portal",
+   "source_url": "https://en.szu.edu.cn/info/1023/1903.htm"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "59ce050c-68d5-5716-b96f-418d0f1db0ba",
+  "university": "Shenzhen University",
+  "field": "deadline",
+  "value": {
+   "title": "2026 entry, second round",
+   "due_at": "2026-05-31",
+   "route": "SZU online application portal",
+   "source_url": "https://en.szu.edu.cn/info/1023/1903.htm"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "eafc10bb-c96f-5d93-8dd0-e9f63e8a9564",
+  "university": "University of Aveiro",
+  "field": "deadline",
+  "value": {
+   "title": "2026/27 entry, first phase",
+   "due_at": "2026-01-29",
+   "route": "University of Aveiro application portal",
+   "source_url": "https://api-portal.ua.pt/api/v1/file/89215"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "6bd2e558-06b7-59c7-85bd-d70600429606",
+  "university": "Prince Mohammad Bin Fahd University",
+  "field": "deadline",
+  "value": {
+   "title": "Fall 2026 entry",
+   "due_at": "2026-06-24",
+   "route": "Study in Saudi platform",
+   "source_url": "https://www.pmu.edu.sa/admission/admission_calendar_fs_ro"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "06f3243f-8b32-5fd0-afb1-cd34466c9168",
+  "university": "Universitat Politècnica de València",
+  "field": "deadline",
+  "value": {
+   "title": "2026 entry",
+   "due_at": "2026-07-06",
+   "route": "UNEDasiss / Valencian university pre-registration",
+   "source_url": "https://www.upv.es/admision/internacional/en/carpeta/undergraduate-admission/"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "980f6c8a-9f70-51ed-9b35-b702566cb894",
+  "university": "Washington State University",
+  "field": "deadline",
+  "value": {
+   "title": "2026 entry priority date",
+   "due_at": "2026-03-31",
+   "route": "WSU application or Common App",
+   "source_url": "https://admission.wsu.edu/apply/admissions-dates-deadlines/"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "3158b0fa-0d63-5ac9-b57c-821510d9b1f8",
+  "university": "Universität Konstanz",
+  "field": "deadline",
+  "value": {
+   "title": "2026 entry (restricted programs)",
+   "due_at": "2026-07-15",
+   "route": "University application portal",
+   "source_url": "https://www.uni-konstanz.de/en/study/before-you-study/application-and-enrolment/bachelors-degree-and-first-state-examination-in-law/higher-education-entrance-qualification-earned-in-the-eu-or-in-switzerland-1/"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "1a73288e-3c10-56ed-9055-1bc9f486ec07",
+  "university": "Universidad de Valencia",
+  "field": "deadline",
+  "value": {
+   "title": "International pre-registration deadline (2026-27 entry)",
+   "due_at": "2026-07-07",
+   "route": "Valencian Community pre-enrolment",
+   "source_url": "https://www.uv.es/uvweb/college/en/undergraduate-studies/admission/pre-enrolment/application-1285846109104.html"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "9134064c-dcea-573f-bbc2-42b10215980c",
+  "university": "National Sun Yat-Sen University",
+  "field": "deadline",
+  "value": {
+   "title": "Fall 2026 entry",
+   "due_at": "2026-03-15",
+   "route": "NSYSU online application",
+   "source_url": "https://rpa126.nsysu.edu.tw/static/file/308/1308/img/3667/2026-2027_Admission_Application_Guide_for_International_Degree_Students.pdf"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "cba3d1d1-b796-54bc-9bc4-c0f4f785a54a",
+  "university": "University of Trento",
+  "field": "deadline",
+  "value": {
+   "title": "2026 entry",
+   "due_at": "2026-03-23",
+   "route": "UniTrento portal, first session; non-EU applicants",
+   "source_url": "https://corsi.unitn.it/en/computer-science-bachelor/enrollment/admission-and-enrollment"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "78831e5e-375b-5c37-8e3e-a8c7017b57ef",
+  "university": "Higher School of Economics",
+  "field": "deadline",
+  "value": {
+   "title": "2026 entry",
+   "due_at": "2026-08-03",
+   "route": "Fee-paying international admissions; programmes based on selection events",
+   "source_url": "https://admissions.hse.ru/en/feepaid2026_ba"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "fae3f069-3d0b-5a89-a364-2aecc4e98d29",
+  "university": "Shanghai University",
+  "field": "deadline",
+  "value": {
+   "title": "2026 entry",
+   "due_at": "2026-06-30",
+   "route": "Shanghai University international application portal",
+   "source_url": "https://apply.shu.edu.cn/upload/shangda/2/2/e/Application%20for%20Undergraduate%20Programs%20of%20Shanghai%20University%202026-2027.pdf"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "4c1e0a47-c955-52e2-ad76-93b89e41f7d8",
+  "university": "Universität Bayreuth",
+  "field": "deadline",
+  "value": {
+   "title": "Winter 2026/27 (published cycle)",
+   "due_at": "2026-07-15",
+   "route": "University portal; VPD via uni-assist required for foreign qualifications",
+   "source_url": "https://www.studierendenkanzlei.uni-bayreuth.de/en/prospective-students/international-applicants/degree-students/periods-and-deadlines/periods-and-deadlines-for-bachelors/index.php"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "5834c87a-d39d-5e32-bba0-a256d21ad0c9",
+  "university": "Kazan Federal University",
+  "field": "deadline",
+  "value": {
+   "title": "2026 entry",
+   "due_at": "2026-08-20",
+   "route": "KFU applicant portal, contract study",
+   "source_url": "https://eng.kpfu.ru/bachelor-specialist/programs-and-tuition-fees/"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "9fbb11d3-b386-51c2-ae49-035d51073a59",
+  "university": "Johannes-Gutenberg Universität Mainz",
+  "field": "deadline",
+  "value": {
+   "title": "2026/27 entry, selective undergraduate programs",
+   "due_at": "2026-07-15",
+   "route": "JGU application portal",
+   "source_url": "https://www.studium.uni-mainz.de/en/during-your-studies/dates-and-deadlines/"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "6b31566f-81f9-5ffd-a4ff-cb39b6b4f70e",
+  "university": "Vita-Salute San Raffaele University",
+  "field": "deadline",
+  "value": {
+   "title": "Non-EU application deadline (2026 entry)",
+   "due_at": "2026-02-05",
+   "route": "UniSR Admission Portal",
+   "source_url": "https://www.unisr.it/en/servizi/ammissioni/international-medical-doctor-program"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "448df826-796b-515f-97c4-04912c826798",
+  "university": "Universidad de Costa Rica",
+  "field": "deadline",
+  "value": {
+   "title": "2027 entry application registration closes",
+   "due_at": "2026-03-20",
+   "route": "UCR admission process",
+   "source_url": "https://ori.ucr.ac.cr/inicio/preguntas-frecuentes/admision"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "28c2025e-e310-5fb0-ad88-d419230776ed",
+  "university": "Chongqing University",
+  "field": "deadline",
+  "value": {
+   "title": "2026 entry",
+   "due_at": "2026-05-31",
+   "route": "CQU online application system",
+   "source_url": "https://study.cqu.edu.cn/info/1887/2789.htm"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "e5d95ac8-6709-506a-8203-17f676adaf58",
+  "university": "Universidad de Sevilla",
+  "field": "deadline",
+  "value": {
+   "title": "2026 entry, phase for foreign applicants",
+   "due_at": "2026-03-19",
+   "route": "Andalusian university pre-registration, Fase de Extranjeros",
+   "source_url": "https://www.us.es/comunicaciones-oficiales/admision-en-grados-fase-extranjeros-curso-26-27"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "5c500bb8-70b8-59a4-8e57-9329a2c38f2f",
+  "university": "Jilin University",
+  "field": "deadline",
+  "value": {
+   "title": "2026 entry international undergraduate application",
+   "due_at": "2026-06-30",
+   "route": "Jilin University International Student Service System",
+   "source_url": "https://cie.jlu.edu.cn/info/1079/3655.htm"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "6f2bd9a0-2fe1-5216-a34f-cfd1e5fcedd7",
+  "university": "Hunan University",
+  "field": "deadline",
+  "value": {
+   "title": "2025 entry (nearest published cycle)",
+   "due_at": "2025-07-18",
+   "route": "Hunan University international student portal",
+   "source_url": "https://www-en.hnu.edu.cn/__local/1/D4/C0/0A6AC6A418F491ADEC7EE62655D_437210C1_5304C.pdf"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "81c31622-df3c-5354-bb18-612aa79a63cf",
+  "university": "Hiroshima University",
+  "field": "deadline",
+  "value": {
+   "title": "April 2027 admission, overseas July selection",
+   "due_at": "2026-06-26",
+   "route": "UCARO and mailed documents; overseas interview selection",
+   "source_url": "https://www.hiroshima-u.ac.jp/system/files/287620/Application%20Guide%20for%20Admissions%20in%202027_A_0.pdf"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "7d5328c9-e34e-5d6c-b356-b55163febca7",
+  "university": "Jinan University",
+  "field": "deadline",
+  "value": {
+   "title": "2026 entry, application review admission",
+   "due_at": "2026-05-31",
+   "route": "University application portal",
+   "source_url": "https://zsb.jnu.edu.cn/2026/0113/c40322a849403/page.htm"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "7d5328c9-e34e-5d6c-b356-b55163febca7",
+  "university": "Jinan University",
+  "field": "deadline",
+  "value": {
+   "title": "2026 entry, joint entrance exam registration",
+   "due_at": "2026-03-15",
+   "route": "University application portal",
+   "source_url": "https://zsb.jnu.edu.cn/2026/0113/c40322a849403/page.htm"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "ee88c356-309f-5390-ba9a-0570c89d1810",
+  "university": "Prince Sultan University",
+  "field": "english",
+  "value": {
+   "test": "TOEFL iBT",
+   "minimum": 25,
+   "detail": "25/120 for tests before Jan 21, 2026; 2/6 for tests on or after that date.",
+   "source_url": "https://psu.edu.sa/en/admissions-Undergraduate-Admission"
+  },
+  "reason": "TOEFL iBT 25 outside 30-120"
+ },
+ {
+  "university_id": "0272ce13-5809-543c-b131-9042a9cdcd35",
+  "university": "University of Electronic Science and Technology of China",
+  "field": "deadline",
+  "value": {
+   "title": "2026 entry",
+   "due_at": "2026-06-30",
+   "route": "University portal",
+   "source_url": "https://en.uestc.edu.cn/UESTC_Admission_Brochure-EN.pdf"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "ffe5cb62-1d6c-5165-aab8-15f4da340a25",
+  "university": "Justus-Liebig-Universität Gießen",
+  "field": "deadline",
+  "value": {
+   "title": "2026 entry",
+   "due_at": "2026-08-15",
+   "route": "uni-assist, unrestricted English-taught BSc programmes",
+   "source_url": "https://www.uni-giessen.de/en/faculties/f09/studies/general/getting-started/application-bsc"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "ffe5cb62-1d6c-5165-aab8-15f4da340a25",
+  "university": "Justus-Liebig-Universität Gießen",
+  "field": "deadline",
+  "value": {
+   "title": "2026 entry",
+   "due_at": "2026-07-15",
+   "route": "International applicants, restricted bachelor programmes",
+   "source_url": "https://www.uni-giessen.de/en/international-pages/study/bids/termine"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "9f102218-cb66-55ec-960c-356e75a1c8b6",
+  "university": "Institut Teknologi Sepuluh Nopember",
+  "field": "deadline",
+  "value": {
+   "title": "2026 entry",
+   "due_at": "2026-07-27",
+   "route": "ITS International Undergraduate Program, Batch 4",
+   "source_url": "https://www.its.ac.id/admission/en/iup/"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "08f735b1-c4fe-5f4b-89d7-84d547bdff54",
+  "university": "Almaty Technological University",
+  "field": "deadline",
+  "value": {
+   "title": "Autumn 2026 entry: original documents",
+   "due_at": "2026-08-20",
+   "route": "University applicant portal",
+   "source_url": "https://atu.edu.kz/en/welcome/foreign-students/"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "ece36c8b-699b-5db2-af92-bf6619f5c098",
+  "university": "Kyrgyz-Türkish Manas Üniversity",
+  "field": "deadline",
+  "value": {
+   "title": "2026–2027 entry: application period",
+   "due_at": "2026-07-17",
+   "route": "Manas foreign-applicant registration",
+   "source_url": "https://exams.manas.edu.kg/pages/foreignstudents/"
+  },
+  "reason": "date missing or outside Sep 2026 - Dec 2027"
+ },
+ {
+  "university_id": "2067e5d4-f7a4-5ae7-9d81-4527c0a51317",
+  "university": "Narxoz University",
+  "field": "english",
+  "value": {
+   "test": "IELTS",
+   "minimum": 5.5,
+   "detail": "Equivalent to IELTS 5.5 or above required for full-degree international applicants.",
+   "source_url": "https://en.narxoz.kz/global/en/international/students/apply/"
+  },
+  "reason": "host differs from the university site: en.narxoz.kz"
+ },
+ {
+  "university_id": "2067e5d4-f7a4-5ae7-9d81-4527c0a51317",
+  "university": "Narxoz University",
+  "field": "deadline",
+  "value": {
+   "title": "Early Action for 2027 entry",
+   "due_at": "2026-11-01",
+   "route": "Narxoz international application",
+   "source_url": "https://en.narxoz.kz/global/en/international/students/apply/"
+  },
+  "reason": "host differs from the university site: en.narxoz.kz"
+ },
+ {
+  "university_id": "2067e5d4-f7a4-5ae7-9d81-4527c0a51317",
+  "university": "Narxoz University",
+  "field": "deadline",
+  "value": {
+   "title": "Regular admission for 2027 entry",
+   "due_at": "2027-08-01",
+   "route": "Narxoz international application",
+   "source_url": "https://en.narxoz.kz/global/en/international/students/apply/"
+  },
+  "reason": "host differs from the university site: en.narxoz.kz"
+ }
+]

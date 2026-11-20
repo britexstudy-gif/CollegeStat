@@ -1,0 +1,65 @@
+{
+ "universities": [
+  {
+   "id": "6a9e2556-fc5f-56a2-bca0-9364f099818c",
+   "english": [
+    {
+     "test": "IELTS",
+     "minimum": 6.0,
+     "detail": "Either Korean or English proficiency required; IELTS 6.0 or higher per SNU international admissions FAQ (not stated as undergraduate-only).",
+     "source_url": "https://en.snu.ac.kr/admission/overview/faq/admission"
+    },
+    {
+     "test": "TOEFL iBT",
+     "minimum": 80,
+     "detail": "TOEFL iBT 80 (alternative to IELTS 6.0 per same FAQ; TEPS 551 also accepted).",
+     "source_url": "https://en.snu.ac.kr/admission/overview/faq/admission"
+    }
+   ],
+   "tuition": null,
+   "application_fee": {
+    "amount": 70000,
+    "currency": "KRW",
+    "source_url": "https://en.snu.ac.kr/admission/overview/faq/admission"
+   },
+   "deadlines": [],
+   "sat": null,
+   "acceptance_rate": null,
+   "notes": "Undergrad fee KRW 70,000 per FAQ. International undergrad tuition and 2027 deadlines not found on official pages checked (Spring 2027 guide PDF linked but."
+  },
+  {
+   "id": "8e191d89-10ba-5f03-913b-836c9c7194a0",
+   "english": [],
+   "tuition": null,
+   "application_fee": null,
+   "deadlines": [],
+   "sat": null,
+   "acceptance_rate": null,
+   "notes": "Tuition page says 2026-27 fees 'coming soon'; only 2025-26 national bachelor fee (EUR 178) found, which is not an international rate. Non-EU differentiated."
+  },
+  {
+   "id": "dce3ec59-808e-5353-8d69-da5e8e8e29fe",
+   "english": [],
+   "tuition": null,
+   "application_fee": null,
+   "deadlines": [],
+   "sat": null,
+   "acceptance_rate": null,
+   "notes": "Bachelor admission is fee-based and open to non-Saudi residents with Saudi residency; no bachelor tuition, fee, English minimum or deadline found on."
+  },
+  {
+   "id": "04c4aef9-ef8e-5981-ba20-50039aeceef5",
+   "english": [],
+   "tuition": null,
+   "application_fee": {
+    "amount": 100,
+    "currency": "MYR",
+    "source_url": "https://join.ukm.my/"
+   },
+   "deadlines": [],
+   "sat": null,
+   "acceptance_rate": null,
+   "notes": "International processing fee listed as RM 100 (USD 30) on JOIN UKM. Undergrad English minimum set per programme, not published; no 2027 undergrad closing."
+  }
+ ]
+}

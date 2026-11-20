@@ -1,0 +1,150 @@
+{
+ "note": "Country-level origin statistics for Central Asian applicants (KZ, UZ, KG, TJ), from official datasets. Built by data:merge from data/review/datasets-nov16b.json.",
+ "input": "data/review/datasets-nov16b.json",
+ "rows_read": 922,
+ "fields": "metric, value, year (normalised academic year), period (the source's own wording), university_id/institution when per-provider, source_url, retrieved_at, unit",
+ "destinations": {
+  "GB": {
+   "KZ": [
+    {
+     "metric": "accepted_by_domicile",
+     "value": 270,
+     "year": "2025/26",
+     "period": "2025 cycle (30 June 2025 deadline, end of cycle)",
+     "university_id": null,
+     "institution": null,
+     "source_url": "https://www.ucas.com/data-and-analysis/undergraduate-statistics-and-reports/ucas-undergraduate-end-of-cycle-data-resources-2025",
+     "retrieved_at": "2026-11-16",
+     "unit": "accepted applicants (UCAS undergraduate, rounded per UCAS)"
+    },
+    {
+     "metric": "applicants_by_domicile",
+     "value": 560,
+     "year": "2025/26",
+     "period": "2025 cycle (30 June 2025 deadline, end of cycle)",
+     "university_id": null,
+     "institution": null,
+     "source_url": "https://www.ucas.com/data-and-analysis/undergraduate-statistics-and-reports/ucas-undergraduate-end-of-cycle-data-resources-2025",
+     "retrieved_at": "2026-11-16",
+     "unit": "applicants (UCAS undergraduate, rounded per UCAS)"
+    },
+    {
+     "metric": "study_visas_granted",
+     "value": 428,
+     "year": "2025/26",
+     "period": "2025 calendar year (Q1-Q4 2025); release YE March 2026",
+     "university_id": null,
+     "institution": null,
+     "source_url": "https://www.gov.uk/government/statistical-data-sets/immigration-system-statistics-data-tables",
+     "retrieved_at": "2026-11-16",
+     "unit": "entry clearance student visa grants, course level Bachelors (dataset Data_Edu_D02)"
+    }
+   ],
+   "KG": [
+    {
+     "metric": "accepted_by_domicile",
+     "value": 20,
+     "year": "2025/26",
+     "period": "2025 cycle (30 June 2025 deadline, end of cycle)",
+     "university_id": null,
+     "institution": null,
+     "source_url": "https://www.ucas.com/data-and-analysis/undergraduate-statistics-and-reports/ucas-undergraduate-end-of-cycle-data-resources-2025",
+     "retrieved_at": "2026-11-16",
+     "unit": "accepted applicants (UCAS undergraduate, rounded per UCAS)"
+    },
+    {
+     "metric": "applicants_by_domicile",
+     "value": 45,
+     "year": "2025/26",
+     "period": "2025 cycle (30 June 2025 deadline, end of cycle)",
+     "university_id": null,
+     "institution": null,
+     "source_url": "https://www.ucas.com/data-and-analysis/undergraduate-statistics-and-reports/ucas-undergraduate-end-of-cycle-data-resources-2025",
+     "retrieved_at": "2026-11-16",
+     "unit": "applicants (UCAS undergraduate, rounded per UCAS)"
+    },
+    {
+     "metric": "study_visas_granted",
+     "value": 57,
+     "year": "2025/26",
+     "period": "2025 calendar year (Q1-Q4 2025); release YE March 2026",
+     "university_id": null,
+     "institution": null,
+     "source_url": "https://www.gov.uk/government/statistical-data-sets/immigration-system-statistics-data-tables",
+     "retrieved_at": "2026-11-16",
+     "unit": "entry clearance student visa grants, course level Bachelors (dataset Data_Edu_D02)"
+    }
+   ],
+   "TJ": [
+    {
+     "metric": "accepted_by_domicile",
+     "value": 15,
+     "year": "2025/26",
+     "period": "2025 cycle (30 June 2025 deadline, end of cycle)",
+     "university_id": null,
+     "institution": null,
+     "source_url": "https://www.ucas.com/data-and-analysis/undergraduate-statistics-and-reports/ucas-undergraduate-end-of-cycle-data-resources-2025",
+     "retrieved_at": "2026-11-16",
+     "unit": "accepted applicants (UCAS undergraduate, rounded per UCAS)"
+    },
+    {
+     "metric": "applicants_by_domicile",
+     "value": 65,
+     "year": "2025/26",
+     "period": "2025 cycle (30 June 2025 deadline, end of cycle)",
+     "university_id": null,
+     "institution": null,
+     "source_url": "https://www.ucas.com/data-and-analysis/undergraduate-statistics-and-reports/ucas-undergraduate-end-of-cycle-data-resources-2025",
+     "retrieved_at": "2026-11-16",
+     "unit": "applicants (UCAS undergraduate, rounded per UCAS)"
+    },
+    {
+     "metric": "study_visas_granted",
+     "value": 62,
+     "year": "2025/26",
+     "period": "2025 calendar year (Q1-Q4 2025); release YE March 2026",
+     "university_id": null,
+     "institution": null,
+     "source_url": "https://www.gov.uk/government/statistical-data-sets/immigration-system-statistics-data-tables",
+     "retrieved_at": "2026-11-16",
+     "unit": "entry clearance student visa grants, course level Bachelors (dataset Data_Edu_D02)"
+    }
+   ],
+   "UZ": [
+    {
+     "metric": "accepted_by_domicile",
+     "value": 165,
+     "year": "2025/26",
+     "period": "2025 cycle (30 June 2025 deadline, end of cycle)",
+     "university_id": null,
+     "institution": null,
+     "source_url": "https://www.ucas.com/data-and-analysis/undergraduate-statistics-and-reports/ucas-undergraduate-end-of-cycle-data-resources-2025",
+     "retrieved_at": "2026-11-16",
+     "unit": "accepted applicants (UCAS undergraduate, rounded per UCAS)"
+    },
+    {
+     "metric": "applicants_by_domicile",
+     "value": 480,
+     "year": "2025/26",
+     "period": "2025 cycle (30 June 2025 deadline, end of cycle)",
+     "university_id": null,
+     "institution": null,
+     "source_url": "https://www.ucas.com/data-and-analysis/undergraduate-statistics-and-reports/ucas-undergraduate-end-of-cycle-data-resources-2025",
+     "retrieved_at": "2026-11-16",
+     "unit": "applicants (UCAS undergraduate, rounded per UCAS)"
+    },
+    {
+     "metric": "study_visas_granted",
+     "value": 369,
+     "year": "2025/26",
+     "period": "2025 calendar year (Q1-Q4 2025); release YE March 2026",
+     "university_id": null,
+     "institution": null,
+     "source_url": "https://www.gov.uk/government/statistical-data-sets/immigration-system-statistics-data-tables",
+     "retrieved_at": "2026-11-16",
+     "unit": "entry clearance student visa grants, course level Bachelors (dataset Data_Edu_D02)"
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,64 @@
+OpenAI Codex v0.169.0
+--------
+workdir: /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+model: gpt-6-luna
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: high
+reasoning summaries: none
+session id: 01a1ee99-22c9-7150-9e1d-7eb3ab862021
+--------
+user
+You are a careful admissions-data researcher. For each university below, find facts for an
+INTERNATIONAL applicant to a FIRST-YEAR BACHELOR'S degree starting in autumn 2027 (or the nearest
+published cycle). Use the live web. Rules:
+
+- Official sources only: the university's own website (its domain or subdomains), the national
+  application service (UCAS, Common App, OUAC, uni-assist, Studyinkorea, etc.) or a government
+  statistics office. Never use rankings sites, forums, agencies, Wikipedia or blogs.
+- Every value needs the exact page URL where you read it (source_url). If you could not verify a
+  value on an official page, leave it out (null or an empty list). Never guess or estimate.
+- english: the lowest overall score accepted for undergraduate entry, per test (IELTS Academic
+  overall, TOEFL iBT total, Duolingo, PTE). If programmes differ, give the general/lowest common
+  university minimum and say so in detail (e.g. "6.5 overall, no band below 6.0; some
+  programmes higher").
+- tuition: the yearly tuition for international (non-EU / overseas) undergraduates in the local
+  currency. If it varies by programme give amount = lowest and amount_max = highest, and the
+  academic_year the fee applies to (e.g. "2026/27"). If tuition is free, amount = 0.
+- application_fee: for international first-year applicants, local currency.
+- deadlines: the main 2027-entry first-year deadlines (ISO date YYYY-MM-DD) with the route
+  (e.g. "Common App, Regular Decision", "UCAS", "university portal"). Only dates actually
+  published; if only the 2026-entry date is published, include it and put "2026 entry" in title.
+- sat: policy for international applicants; p25/p75 total SAT only if the university publishes
+  them (Common Data Set or admissions profile).
+- acceptance_rate: only if officially published (CDS, admissions statistics page).
+- notes: one short line on anything important (e.g. "Foundation year required for 11-year
+  school certificates"), else "".
+
+Spend effort on the facts students need most: English minimum, tuition, deadlines. Keep each
+detail under 160 characters. Return only the JSON that matches the schema; use each
+university's id exactly as given.
+
+Universities:
+- id: c729cc19-397a-5cbd-840d-3fa6fcfc58eb | Novosibirsk State University | Novosibirsk, RU | http://www.nsu.ru/
+- id: 99436cc5-b889-56bb-a4d1-8c4075fde773 | Royal Holloway and Bedford New College | Egham, GB | http://www.royalholloway.ac.uk/
+- id: 6b31566f-81f9-5ffd-a4ff-cb39b6b4f70e | Vita-Salute San Raffaele University | Milan, IT | https://www.unisr.it
+- id: 3dfbc021-a651-5e0b-84b7-da126c795ba5 | Dalian University of Technology | Dalian, CN | http://www.dlut.edu.cn/
+codex
+I’m checking official university and application-service pages for the nearest published admissions cycle, prioritizing English requirements, fees, and deadlines.
+web search: 
+web search: site:nsu.ru international undergraduate admission tuition 2026 2027 English proficiency deadline ...
+web search: 
+web search: site:royalholloway.ac.uk "IELTS" "6.5" undergraduate English language requirements Royal Holloway ...
+web search: 
+web search: site:nsu.ru "2026" "bachelor" foreign applicants tuition Novosibirsk State University ...
+web search: 
+web search: 
+web search: 
+web search: site:sie.dlut.edu.cn/info/1179/2480.htm 2027 "English proficiency" "Tuition" ...
+codex
+{"universities":[{"id":"c729cc19-397a-5cbd-840d-3fa6fcfc58eb","english":[],"tuition":null,"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"Official NSU page says foreign-citizen bachelor admissions open June 20 from 2026; no specific 2027 deadline or tuition verified."},{"id":"99436cc5-b889-56bb-a4d1-8c4075fde773","english":[{"test":"IELTS","minimum":6.5,"detail":"6.5 overall; writing 6.0 and each other component at least 5.5 (general undergraduate requirement).","source_url":"https://www.royalholloway.ac.uk/studying-here/international-students/english-language-requirements/"},{"test":"TOEFL iBT","minimum":88,"detail":"88 overall; section minimums vary by course (general undergraduate requirement).","source_url":"https://www.royalholloway.ac.uk/studying-here/international-students/english-language-requirements/"},{"test":"Duolingo","minimum":120,"detail":"120 overall; subscores vary by course (general undergraduate requirement).","source_url":"https://www.royalholloway.ac.uk/studying-here/international-students/english-language-requirements/"},{"test":"PTE Academic","minimum":67,"detail":"67 overall; section minimums vary by course (general undergraduate requirement).","source_url":"https://www.royalholloway.ac.uk/studying-here/international-students/english-language-requirements/"},{"test":"Cambridge C1/C2","minimum":0,"detail":"Cambridge English: Advanced (CAE), grade C; general undergraduate requirement.","source_url":"https://www.royalholloway.ac.uk/studying-here/international-students/english-language-requirements/"}],"tuition":null,"application_fee":null,"deadlines":[{"title":"UCAS equal consideration (2027 entry)","due_at":"2027-01-13","route":"UCAS","source_url":"https://www.royalholloway.ac.uk/studying-here/applying/undergraduate/how-to-apply/"}],"sat":null,"acceptance_rate":null,"notes":"Published 2027/28 international fee page directs applicants to individual course fee details but gives no general amount."},{"id":"6b31566f-81f9-5ffd-a4ff-cb39b6b4f70e","english":[],"tuition":{"amount":20690,"amount_max":null,"currency":"EUR","period":"year","academic_year":"2026/27","detail":"International Medical Doctor Program first-year fee; amount applies to all students regardless of citizenship.","source_url":"https://www.unisr.it/en/servizi/tasse-contributi/corsi-di-laurea-triennale-e-magistrale"},"application_fee":{"amount":200,"currency":"EUR","source_url":"https://www.unisr.it/en/servizi/ammissioni/international-medical-doctor-program"},"deadlines":[{"title":"Non-EU application deadline (2026 entry)","due_at":"2026-02-05","route":"UniSR Admission Portal","source_url":"https://www.unisr.it/en/servizi/ammissioni/international-medical-doctor-program"}],"sat":null,"acceptance_rate":null,"notes":"The first-year English-taught option is a six-year single-cycle Medicine degree; C1 English certification required, with no specific test scores listed."},{"id":"3dfbc021-a651-5e0b-84b7-da126c795ba5","english":[{"test":"IELTS","minimum":5.5,"detail":"5.5 or higher for English-taught bachelor's; high-school English-medium certificate may substitute.","source_url":"https://sie.dlut.edu.cn/info/1179/2480.htm"},{"test":"TOEFL iBT","minimum":80,"detail":"80 or higher for English-taught bachelor's; high-school English-medium certificate may substitute.","source_url":"https://sie.dlut.edu.cn/info/1179/2480.htm"},{"test":"Duolingo","minimum":100,"detail":"100 or higher for English-taught bachelor's; high-school English-medium certificate may substitute.","source_url":"https://sie.dlut.edu.cn/info/1179/2480.htm"}],"tuition":{"amount":25500,"amount_max":null,"currency":"CNY","period":"year","academic_year":"2027","detail":"2027 English-taught undergraduate programs; listed annual tuition.","source_url":"https://sie.dlut.edu.cn/info/1179/2480.htm"},"application_fee":{"amount":800,"currency":"CNY","source_url":"https://sie.dlut.edu.cn/info/1179/2480.htm"},"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"2027 applicants must take the China Scholastic Competency Assessment (CSCA); applications are listed as open until June 2027, without an exact closing date."}] }
+tokens used
+46,318
+{"universities":[{"id":"c729cc19-397a-5cbd-840d-3fa6fcfc58eb","english":[],"tuition":null,"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"Official NSU page says foreign-citizen bachelor admissions open June 20 from 2026; no specific 2027 deadline or tuition verified."},{"id":"99436cc5-b889-56bb-a4d1-8c4075fde773","english":[{"test":"IELTS","minimum":6.5,"detail":"6.5 overall; writing 6.0 and each other component at least 5.5 (general undergraduate requirement).","source_url":"https://www.royalholloway.ac.uk/studying-here/international-students/english-language-requirements/"},{"test":"TOEFL iBT","minimum":88,"detail":"88 overall; section minimums vary by course (general undergraduate requirement).","source_url":"https://www.royalholloway.ac.uk/studying-here/international-students/english-language-requirements/"},{"test":"Duolingo","minimum":120,"detail":"120 overall; subscores vary by course (general undergraduate requirement).","source_url":"https://www.royalholloway.ac.uk/studying-here/international-students/english-language-requirements/"},{"test":"PTE Academic","minimum":67,"detail":"67 overall; section minimums vary by course (general undergraduate requirement).","source_url":"https://www.royalholloway.ac.uk/studying-here/international-students/english-language-requirements/"},{"test":"Cambridge C1/C2","minimum":0,"detail":"Cambridge English: Advanced (CAE), grade C; general undergraduate requirement.","source_url":"https://www.royalholloway.ac.uk/studying-here/international-students/english-language-requirements/"}],"tuition":null,"application_fee":null,"deadlines":[{"title":"UCAS equal consideration (2027 entry)","due_at":"2027-01-13","route":"UCAS","source_url":"https://www.royalholloway.ac.uk/studying-here/applying/undergraduate/how-to-apply/"}],"sat":null,"acceptance_rate":null,"notes":"Published 2027/28 international fee page directs applicants to individual course fee details but gives no general amount."},{"id":"6b31566f-81f9-5ffd-a4ff-cb39b6b4f70e","english":[],"tuition":{"amount":20690,"amount_max":null,"currency":"EUR","period":"year","academic_year":"2026/27","detail":"International Medical Doctor Program first-year fee; amount applies to all students regardless of citizenship.","source_url":"https://www.unisr.it/en/servizi/tasse-contributi/corsi-di-laurea-triennale-e-magistrale"},"application_fee":{"amount":200,"currency":"EUR","source_url":"https://www.unisr.it/en/servizi/ammissioni/international-medical-doctor-program"},"deadlines":[{"title":"Non-EU application deadline (2026 entry)","due_at":"2026-02-05","route":"UniSR Admission Portal","source_url":"https://www.unisr.it/en/servizi/ammissioni/international-medical-doctor-program"}],"sat":null,"acceptance_rate":null,"notes":"The first-year English-taught option is a six-year single-cycle Medicine degree; C1 English certification required, with no specific test scores listed."},{"id":"3dfbc021-a651-5e0b-84b7-da126c795ba5","english":[{"test":"IELTS","minimum":5.5,"detail":"5.5 or higher for English-taught bachelor's; high-school English-medium certificate may substitute.","source_url":"https://sie.dlut.edu.cn/info/1179/2480.htm"},{"test":"TOEFL iBT","minimum":80,"detail":"80 or higher for English-taught bachelor's; high-school English-medium certificate may substitute.","source_url":"https://sie.dlut.edu.cn/info/1179/2480.htm"},{"test":"Duolingo","minimum":100,"detail":"100 or higher for English-taught bachelor's; high-school English-medium certificate may substitute.","source_url":"https://sie.dlut.edu.cn/info/1179/2480.htm"}],"tuition":{"amount":25500,"amount_max":null,"currency":"CNY","period":"year","academic_year":"2027","detail":"2027 English-taught undergraduate programs; listed annual tuition.","source_url":"https://sie.dlut.edu.cn/info/1179/2480.htm"},"application_fee":{"amount":800,"currency":"CNY","source_url":"https://sie.dlut.edu.cn/info/1179/2480.htm"},"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"2027 applicants must take the China Scholastic Competency Assessment (CSCA); applications are listed as open until June 2027, without an exact closing date."}] }

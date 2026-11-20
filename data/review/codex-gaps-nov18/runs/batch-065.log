@@ -1,0 +1,86 @@
+OpenAI Codex v0.169.0
+--------
+workdir: /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+model: gpt-6-luna
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: high
+reasoning summaries: none
+session id: 01a1ee8b-2161-7080-b169-54b5e33468b8
+--------
+user
+You are a careful admissions-data researcher. For each university below, find facts for an
+INTERNATIONAL applicant to a FIRST-YEAR BACHELOR'S degree starting in autumn 2027 (or the nearest
+published cycle). Use the live web. Rules:
+
+- Official sources only: the university's own website (its domain or subdomains), the national
+  application service (UCAS, Common App, OUAC, uni-assist, Studyinkorea, etc.) or a government
+  statistics office. Never use rankings sites, forums, agencies, Wikipedia or blogs.
+- Every value needs the exact page URL where you read it (source_url). If you could not verify a
+  value on an official page, leave it out (null or an empty list). Never guess or estimate.
+- english: the lowest overall score accepted for undergraduate entry, per test (IELTS Academic
+  overall, TOEFL iBT total, Duolingo, PTE). If programmes differ, give the general/lowest common
+  university minimum and say so in detail (e.g. "6.5 overall, no band below 6.0; some
+  programmes higher").
+- tuition: the yearly tuition for international (non-EU / overseas) undergraduates in the local
+  currency. If it varies by programme give amount = lowest and amount_max = highest, and the
+  academic_year the fee applies to (e.g. "2026/27"). If tuition is free, amount = 0.
+- application_fee: for international first-year applicants, local currency.
+- deadlines: the main 2027-entry first-year deadlines (ISO date YYYY-MM-DD) with the route
+  (e.g. "Common App, Regular Decision", "UCAS", "university portal"). Only dates actually
+  published; if only the 2026-entry date is published, include it and put "2026 entry" in title.
+- sat: policy for international applicants; p25/p75 total SAT only if the university publishes
+  them (Common Data Set or admissions profile).
+- acceptance_rate: only if officially published (CDS, admissions statistics page).
+- notes: one short line on anything important (e.g. "Foundation year required for 11-year
+  school certificates"), else "".
+
+Spend effort on the facts students need most: English minimum, tuition, deadlines. Keep each
+detail under 160 characters. Return only the JSON that matches the schema; use each
+university's id exactly as given.
+
+Universities:
+- id: aaa437f6-4cb5-5446-a0d1-de07b20e1fa5 | Radboud University Nijmegen | Nijmegen, NL | https://www.ru.nl
+- id: 4033469f-02ba-5007-89dd-40c796f8a5cb | University of Pittsburgh-Pittsburgh Campus | Pittsburgh, US | http://www.pitt.edu/
+- id: addc1a48-bb2b-5c8e-845b-32ce68f2c3a7 | Istanbul Technical University | Istanbul, TR | http://www.itu.edu.tr/
+- id: c2fcff8e-4c5c-58e7-874e-de983ced8f5c | University of Waikato | Hamilton, NZ | http://www.waikato.ac.nz/
+codex
+I’m checking each university’s official international undergraduate admissions and fee pages, using the nearest published entry cycle when 2027 details aren’t available.
+web search: 
+web search: site:ru.nl international bachelor admission English requirements tuition fees application deadline 2027 Radboud ...
+web search: 
+web search: site:admissions.pitt.edu first year international admission English proficiency IELTS TOEFL Duolingo application fee deadline fall 2027 ...
+web search: 
+web search: site:admissions.pitt.edu/apply/international-students/ English proficiency minimum IELTS Pitt international applicants ...
+web search: 
+web search: site:admissions.pitt.edu "English Proficiency" "IELTS" "Duolingo" undergraduate international ...
+web search: 
+web search: https://admissions.pitt.edu/apply/international-students/
+web search: 
+web search: site:ru.nl/en/education tuition academic year 2027 2028 non-EEA bachelor's fees Radboud University all programmes ...
+web search: 
+web search: University of Pittsburgh undergraduate international first year English IELTS 6.5 TOEFL 80 site:admissions.pitt.edu ...
+web search: 
+web search: site:sis.itu.edu.tr/EN "International students" "tuition fees" 2026-2027 ITU undergraduate TL ...
+web search: 
+web search: site:admissions.pitt.edu "Fall 2027" "SAT" Pitt ...
+web search: 
+web search: site:itu.edu.tr "Valid English Exams and Minimum Scores" TOEFL PTE IELTS ITU undergraduate 2026 ...
+web search: 
+web search: site:admissions.pitt.edu/international "Duolingo" "80" "IELTS" first-year ...
+web search: 
+web search: Pitt Admissions international TOEFL IELTS score minimum undergraduate site:admissions.pitt.edu OR site:ois.pitt.edu ...
+web search: 
+web search: site:admissions.pitt.edu/international "April 1" application deadline fall term ...
+web search: 
+web search: site:ru.nl/en/education/bachelors/tuition "Academic year 2027 - 2028" "Institutional tuition fee non-EEA" ...
+web search: 
+web search: site:sis.itu.edu.tr/duyuru_ekler/yabanci/202611/EN/ 2026 2027 international undergraduate application date ITU ...
+web search: 
+web search: site:sis.itu.edu.tr "Period for Paying Tuition Fees for the Candidates Admitted through International Student Quota" 2026 ...
+codex
+{"universities":[{"id":"aaa437f6-4cb5-5446-a0d1-de07b20e1fa5","english":[{"test":"IELTS","minimum":6,"detail":"IELTS Academic: 6.0 overall, no band below 6.0; some programmes may set higher requirements.","source_url":"https://www.ru.nl/en/education/bachelors/english-language-and-culture/admission-requirements"},{"test":"TOEFL iBT","minimum":80,"detail":"80 total; Reading and Speaking ≥4, Listening and Writing ≥4.5. Home Edition not accepted.","source_url":"https://www.ru.nl/en/education/bachelors/english-language-and-culture/admission-requirements"},{"test":"PTE Academic","minimum":61,"detail":"61 overall, with subscores ≥56; some programmes may set higher requirements.","source_url":"https://www.ru.nl/en/education/bachelors/english-language-and-culture/admission-requirements"},{"test":"Cambridge C1/C2","minimum":169,"detail":"C1 Advanced: 169 overall and subscores ≥169; C2 Proficiency: 180 overall and subscores ≥169.","source_url":"https://www.ru.nl/en/education/bachelors/english-language-and-culture/admission-requirements"}],"tuition":{"amount":13812,"amount_max":17701,"currency":"EUR","period":"year","academic_year":"2027/28","detail":"Non-EEA institutional fees vary by programme; rates shown are subject to change.","source_url":"https://www.ru.nl/en/education/bachelors/psychology/tuition; https://www.ru.nl/en/education/bachelors/natural-sciences/tuition"},"application_fee":{"amount":100,"currency":"EUR","source_url":"https://www.ru.nl/en/education/application-and-admission/application-fee-for-non-dutch-prior-education"},"deadlines":[{"title":"Non-EU/EEA applicants, September 2027","due_at":"2027-04-01","route":"Studielink","source_url":"https://www.ru.nl/en/education/application-and-admission/application-procedure-bachelors/deadlines"},{"title":"Numerus fixus programmes, September 2027","due_at":"2027-01-15","route":"Studielink","source_url":"https://www.ru.nl/en/education/application-and-admission/application-procedure-bachelors/deadlines"}],"sat":null,"acceptance_rate":null,"notes":"International diplomas are assessed for equivalence to Dutch VWO; numerus fixus programmes have an earlier deadline."},{"id":"4033469f-02ba-5007-89dd-40c796f8a5cb","english":[],"tuition":{"amount":43328,"amount_max":55070,"currency":"USD","period":"year","academic_year":"2026/27","detail":"Pittsburgh out-of-state tuition varies by school; full-time international students also pay a $500 per-term International Services Fee.","source_url":"https://www.tuition.pitt.edu/undergraduate/tuition/pittsburgh"},"application_fee":{"amount":55,"currency":"USD","source_url":"https://admissions.pitt.edu/wp-content/uploads/2024/09/InternationalRecruitmentBrochure_Digital-for-website-24-25.pdf"},"deadlines":[],"sat":null,"acceptance_rate":{"percent":58.1,"year":"2024","source_url":"https://www.ir.pitt.edu/sites/default/files/assets/2024-2025%20CDS%20Pittsburgh_2.pdf"},"notes":"First-year admission is rolling; no set application deadline is published."},{"id":"addc1a48-bb2b-5c8e-845b-32ce68f2c3a7","english":[{"test":"TOEFL iBT","minimum":4,"detail":"Minimum for English preparatory exemption: 4.0 on the new scale (or 72 on the pre-2026 scale); accepted center rules apply.","source_url":"https://www.sis.itu.edu.tr/EN/regulations/valid-english-tests-and-minimum-scores.php"},{"test":"PTE Academic","minimum":59,"detail":"Minimum 59 for English preparatory exemption from 2026/27; required score varies by course level.","source_url":"https://www.sis.itu.edu.tr/EN/regulations/valid-english-tests-and-minimum-scores.php"}],"tuition":{"amount":79000,"amount_max":264000,"currency":"TRY","period":"year","academic_year":"2025/26","detail":"Published international-quota rates for 2025/26 entrants vary by faculty; fees are paid in two semester installments.","source_url":"https://www.sis.itu.edu.tr/EN/student/tuition-fee/fees/20261020/tutionfees.php"},"application_fee":null,"deadlines":[{"title":"2026 entry, second application round","due_at":"2026-08-26","route":"University online portal","source_url":"https://www.sis.itu.edu.tr/duyuru_ekler/yabanci/202711/EN/202711.php"}],"sat":{"policy":"accepted_alternative","p25":null,"p75":null,"source_url":"https://www.sis.itu.edu.tr/duyuru_ekler/yabanci/202711/EN/202711.php"},"acceptance_rate":null,"notes":"Students without an accepted English proficiency result must complete ITU's one-year English preparatory programme."},{"id":"c2fcff8e-4c5c-58e7-874e-de983ced8f5c","english":[{"test":"IELTS","minimum":6,"detail":"Bachelor’s degrees: IELTS Academic 6.0 overall, no band below 5.5; some programmes require higher scores.","source_url":"https://www.waikato.ac.nz/study/apply/international/entry-requirements-for-international-students/"},{"test":"TOEFL iBT","minimum":80,"detail":"80 overall with Writing 21; some programmes require higher scores.","source_url":"https://www.waikato.ac.nz/study/apply/international/entry-requirements-for-international-students/"},{"test":"Duolingo","minimum":105,"detail":"105 overall with no band below 95; some programmes require higher scores.","source_url":"https://www.waikato.ac.nz/study/apply/international/entry-requirements-for-international-students/"},{"test":"PTE Academic","minimum":50,"detail":"50 overall, no communicative skills score below 42; some programmes require higher scores.","source_url":"https://www.waikato.ac.nz/study/apply/international/entry-requirements-for-international-students/"}],"tuition":{"amount":34020,"amount_max":52967,"currency":"NZD","period":"year","academic_year":"2027","detail":"Indicative international undergraduate fees vary by programme; estimated fees for 120 points, subject to annual changes.","source_url":"https://www.waikato.ac.nz/study/fees-costs/international-tuition-costs/"},"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":""}] }
+tokens used
+123,762
+{"universities":[{"id":"aaa437f6-4cb5-5446-a0d1-de07b20e1fa5","english":[{"test":"IELTS","minimum":6,"detail":"IELTS Academic: 6.0 overall, no band below 6.0; some programmes may set higher requirements.","source_url":"https://www.ru.nl/en/education/bachelors/english-language-and-culture/admission-requirements"},{"test":"TOEFL iBT","minimum":80,"detail":"80 total; Reading and Speaking ≥4, Listening and Writing ≥4.5. Home Edition not accepted.","source_url":"https://www.ru.nl/en/education/bachelors/english-language-and-culture/admission-requirements"},{"test":"PTE Academic","minimum":61,"detail":"61 overall, with subscores ≥56; some programmes may set higher requirements.","source_url":"https://www.ru.nl/en/education/bachelors/english-language-and-culture/admission-requirements"},{"test":"Cambridge C1/C2","minimum":169,"detail":"C1 Advanced: 169 overall and subscores ≥169; C2 Proficiency: 180 overall and subscores ≥169.","source_url":"https://www.ru.nl/en/education/bachelors/english-language-and-culture/admission-requirements"}],"tuition":{"amount":13812,"amount_max":17701,"currency":"EUR","period":"year","academic_year":"2027/28","detail":"Non-EEA institutional fees vary by programme; rates shown are subject to change.","source_url":"https://www.ru.nl/en/education/bachelors/psychology/tuition; https://www.ru.nl/en/education/bachelors/natural-sciences/tuition"},"application_fee":{"amount":100,"currency":"EUR","source_url":"https://www.ru.nl/en/education/application-and-admission/application-fee-for-non-dutch-prior-education"},"deadlines":[{"title":"Non-EU/EEA applicants, September 2027","due_at":"2027-04-01","route":"Studielink","source_url":"https://www.ru.nl/en/education/application-and-admission/application-procedure-bachelors/deadlines"},{"title":"Numerus fixus programmes, September 2027","due_at":"2027-01-15","route":"Studielink","source_url":"https://www.ru.nl/en/education/application-and-admission/application-procedure-bachelors/deadlines"}],"sat":null,"acceptance_rate":null,"notes":"International diplomas are assessed for equivalence to Dutch VWO; numerus fixus programmes have an earlier deadline."},{"id":"4033469f-02ba-5007-89dd-40c796f8a5cb","english":[],"tuition":{"amount":43328,"amount_max":55070,"currency":"USD","period":"year","academic_year":"2026/27","detail":"Pittsburgh out-of-state tuition varies by school; full-time international students also pay a $500 per-term International Services Fee.","source_url":"https://www.tuition.pitt.edu/undergraduate/tuition/pittsburgh"},"application_fee":{"amount":55,"currency":"USD","source_url":"https://admissions.pitt.edu/wp-content/uploads/2024/09/InternationalRecruitmentBrochure_Digital-for-website-24-25.pdf"},"deadlines":[],"sat":null,"acceptance_rate":{"percent":58.1,"year":"2024","source_url":"https://www.ir.pitt.edu/sites/default/files/assets/2024-2025%20CDS%20Pittsburgh_2.pdf"},"notes":"First-year admission is rolling; no set application deadline is published."},{"id":"addc1a48-bb2b-5c8e-845b-32ce68f2c3a7","english":[{"test":"TOEFL iBT","minimum":4,"detail":"Minimum for English preparatory exemption: 4.0 on the new scale (or 72 on the pre-2026 scale); accepted center rules apply.","source_url":"https://www.sis.itu.edu.tr/EN/regulations/valid-english-tests-and-minimum-scores.php"},{"test":"PTE Academic","minimum":59,"detail":"Minimum 59 for English preparatory exemption from 2026/27; required score varies by course level.","source_url":"https://www.sis.itu.edu.tr/EN/regulations/valid-english-tests-and-minimum-scores.php"}],"tuition":{"amount":79000,"amount_max":264000,"currency":"TRY","period":"year","academic_year":"2025/26","detail":"Published international-quota rates for 2025/26 entrants vary by faculty; fees are paid in two semester installments.","source_url":"https://www.sis.itu.edu.tr/EN/student/tuition-fee/fees/20261020/tutionfees.php"},"application_fee":null,"deadlines":[{"title":"2026 entry, second application round","due_at":"2026-08-26","route":"University online portal","source_url":"https://www.sis.itu.edu.tr/duyuru_ekler/yabanci/202711/EN/202711.php"}],"sat":{"policy":"accepted_alternative","p25":null,"p75":null,"source_url":"https://www.sis.itu.edu.tr/duyuru_ekler/yabanci/202711/EN/202711.php"},"acceptance_rate":null,"notes":"Students without an accepted English proficiency result must complete ITU's one-year English preparatory programme."},{"id":"c2fcff8e-4c5c-58e7-874e-de983ced8f5c","english":[{"test":"IELTS","minimum":6,"detail":"Bachelor’s degrees: IELTS Academic 6.0 overall, no band below 5.5; some programmes require higher scores.","source_url":"https://www.waikato.ac.nz/study/apply/international/entry-requirements-for-international-students/"},{"test":"TOEFL iBT","minimum":80,"detail":"80 overall with Writing 21; some programmes require higher scores.","source_url":"https://www.waikato.ac.nz/study/apply/international/entry-requirements-for-international-students/"},{"test":"Duolingo","minimum":105,"detail":"105 overall with no band below 95; some programmes require higher scores.","source_url":"https://www.waikato.ac.nz/study/apply/international/entry-requirements-for-international-students/"},{"test":"PTE Academic","minimum":50,"detail":"50 overall, no communicative skills score below 42; some programmes require higher scores.","source_url":"https://www.waikato.ac.nz/study/apply/international/entry-requirements-for-international-students/"}],"tuition":{"amount":34020,"amount_max":52967,"currency":"NZD","period":"year","academic_year":"2027","detail":"Indicative international undergraduate fees vary by programme; estimated fees for 120 points, subject to annual changes.","source_url":"https://www.waikato.ac.nz/study/fees-costs/international-tuition-costs/"},"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":""}] }

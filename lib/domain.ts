@@ -1,3 +1,5 @@
+import { withReviewedCampusMedia } from "./reviewed-campus-media";
+import { withReviewedProgrammeOffers } from "./reviewed-programme-offers";
 import type { ReportedProgram, ResearchIdentity } from "./profile-library";
 import directoryCountries from "@/data/published/directory-countries.json";
 export type Verification =
@@ -12,6 +14,21 @@ export type Source = {
   retrieved_at: string | null;
 };
 export type Sourced = {
+  evidence?: {
+    university_wide?: boolean;
+    scope?: string;
+    population?: string;
+    reporting_period?: string;
+    publication_year?: number | null;
+    retrieved_at?: string;
+    source_record_id?: string;
+    raw_field?: string;
+    raw_value?: unknown;
+    dataset_sha256?: string;
+    dictionary_url?: string;
+    license_note?: string;
+    [key: string]: unknown;
+  };
   source_url?: string;
   id: string;
   year: number | null;
@@ -60,6 +77,13 @@ export type Program = {
   subject: string;
   degree_level: string;
   language: string | null;
+};
+export type ProgramOffer = { programs: Program; university_id?: string; reporting_year?: number | null; duration_months?: number | null; campus_id?: string | null; intakes?: string[]; availability?: string } & Partial<Sourced>;
+export type ResearchMetric = {
+  id: string; university_id: string; metric: string; value: number; unit: string | null;
+  period: string; field: string | null; edition: string | null; source_id?: string;
+  source_url: string; retrieved_at: string; last_verified_at?: string; verification_status: Verification;
+  evidence?: Sourced['evidence']; notes?: string | null;
 };
 export type RankingProvider = {
   id: string;
@@ -171,7 +195,32 @@ export type ImportedRecord = {
   publication_status: "published" | "review";
   imputation_flag?: string;
 };
+export type OfficialVideo = {
+  youtube_id: string;
+  title: string;
+  kind: "campus_tour" | "admissions" | "student_life" | "introduction" | string;
+  channel: string;
+  channel_url: string;
+  source_url: string;
+  checked_at: string;
+};
 export type University = {
+  official_videos?: OfficialVideo[];
+  /** Reviewed background facts (server-attached). */
+  history?: UniversityHistory;
+  /** Server-resolved official site icon URL (see server/auto-logos.ts); null = none exists. */
+  auto_logo?: string | null;
+  /** Reviewed founding year (server-attached) so Compare reads what the profile's Established row shows. */
+  reviewed_identity?: { founded_year: number };
+  /** Present on a lite profile: the long lists were left out of the page and
+   * these counts stand in for them until the section is opened (lib/profile-defer.ts). */
+  deferred?: { official_programmes: number; current_programmes: number };
+  us_stats?: USStats;
+  scorecard?: ScorecardFacts;
+  /** Latest US federal figures with their academic year (review/scorecard-2026-11.json). */
+  us_current?: UsCurrentFacts;
+  common_app?: CommonAppProfile;
+  cds?: CommonDataSet;
   rankings?: import('./ranking-highlights').RankHighlight[];
   profile_resources?: Partial<Pick<University, 'reported_programs' | 'research_identity' | 'publisher_students' | 'official_web' | 'application_brief' | 'admission_summary' | 'social_links' | 'contact_email' | 'contact_source_url' | 'social_source_url' | 'institution_image_url'>>;
   reported_programs?: ReportedProgram[];
@@ -210,6 +259,7 @@ export type University = {
   contact_email?: string | null;
   institution_image_url?: string | null;
   publisher_students?: {
+    evidence?: Sourced["evidence"];
     subjects?: string[];
     edition: number;
     source_url: string;
@@ -226,13 +276,14 @@ export type University = {
   research: Research[];
   deadlines: Deadline[];
   requirements: Requirement[];
+  research_metrics?: ResearchMetric[];
   financial_aid: FinancialAid[];
   media: Media[];
   university_scholarships: { scholarships: Scholarship | null }[];
   data_points: DataPoint[];
   costs: Cost[];
   admissions: Admission[];
-  university_programs: ({ programs: Program } & Partial<Sourced>)[];
+  university_programs: ProgramOffer[];
   ranking_entries: RankingEntry[];
   campuses: { id: string; name: string; city: string | null }[];
   imported_records?: ImportedRecord[];
@@ -319,15 +370,27 @@ export const dateLabel = (value: string | null | undefined) =>
         year: "numeric",
       })
     : "Not available";
+/** A same-origin, path-only return URL; anything else becomes /dashboard. */
 export function safeNext(value: string | null) {
   if (
     !value ||
+    value.length > 2048 ||
     !value.startsWith("/") ||
     value.startsWith("//") ||
-    value.includes("\\")
+    value.includes("\\") ||
+    // Browsers drop tabs and newlines inside URLs, so "/\t/evil.com" would become "//evil.com".
+    /[\u0000-\u001f\u007f\s]/.test(value)
   )
-    return "/profile";
-  return value.startsWith("/auth/") ? "/profile" : value;
+    return "/dashboard";
+  try {
+    const base = "https://collegestat.invalid";
+    const url = new URL(value, base);
+    if (url.origin !== base) return "/dashboard";
+    const path = url.pathname + url.search + url.hash;
+    return path.startsWith("/auth/") ? "/dashboard" : path;
+  } catch {
+    return "/dashboard";
+  }
 }
 const publishedEvidence = <T extends Sourced>(rows: T[] | undefined) =>
   (rows ?? []).filter(
@@ -344,10 +407,10 @@ export const normalizeUniversity = (u: Partial<University>): University =>
     data_points: publishedEvidence(u.data_points),
     costs: publishedEvidence(u.costs),
     admissions: publishedEvidence(u.admissions),
-    university_programs: (u.university_programs ?? []).filter(
+    university_programs: withReviewedProgrammeOffers(u.id, (u.university_programs ?? []).filter(
       (p) =>
         p.verification_status === "verified" && p.source_id && p.verified_at,
-    ),
+    )),
     ranking_entries: publishedEvidence(u.ranking_entries),
     campuses: u.campuses ?? [],
     departments: publishedEvidence(u.departments),
@@ -355,8 +418,9 @@ export const normalizeUniversity = (u: Partial<University>): University =>
     research: publishedEvidence(u.research),
     deadlines: publishedEvidence(u.deadlines).map(d => ({ ...d, due_at: d.due_date || d.due_at })),
     requirements: publishedEvidence(u.requirements),
+    research_metrics: (u.research_metrics ?? []).filter(r => r.verification_status === 'verified' && r.source_url?.startsWith('https://') && r.retrieved_at),
     financial_aid: publishedEvidence(u.financial_aid),
-    media: publishedEvidence(u.media).filter((m) => m.reuse_permitted),
+    media: withReviewedCampusMedia(u.id, publishedEvidence(u.media).filter((m) => m.reuse_permitted)),
     university_scholarships: (u.university_scholarships ?? []).filter(
       (l) =>
         l.scholarships?.published &&
@@ -365,7 +429,131 @@ export const normalizeUniversity = (u: Partial<University>): University =>
   }) as University;
 
 export const languageMinimum = (u: University, kind: string) =>
-  latest(u.requirements.filter((r) => r.kind === kind && !r.program_id))
+  latest(u.requirements.filter((r) => r.kind === kind && !r.program_id && r.evidence?.university_wide !== false))
     ?.minimum ??
   (kind === "IELTS" ? admission(u)?.ielts_min : null) ??
   null;
+
+export type USEnrollment = {
+  total: number;
+  men: number | null;
+  women: number | null;
+  race: Record<string, number>;
+};
+/** NCES IPEDS 2023 facts for US universities. */
+export type USStats = {
+  app_fee_ug?: number | null;
+  app_fee_grad?: number | null;
+  tuition_in_state?: number | null;
+  fees_in_state?: number | null;
+  tuition_out_state?: number | null;
+  fees_out_state?: number | null;
+  tuition_grad_in_state?: number | null;
+  tuition_grad_out_state?: number | null;
+  room_board?: number | null;
+  books?: number | null;
+  enrollment?: { all?: USEnrollment; undergraduate?: USEnrollment; graduate?: USEnrollment };
+  student_faculty_ratio?: number | null;
+  retention_full_time?: number | null;
+  programs?: [string, string, number][];
+  program_count?: number;
+};
+/** US Department of Education College Scorecard (most recent release). */
+export type UsCurrentFacts = {
+  academic_year: string;
+  source: string;
+  retrieved_at: string;
+  tuition_fees_in_state?: number | null;
+  tuition_fees_out_of_state?: number | null;
+  cost_of_attendance?: number | null;
+  acceptance_rate?: number | null;
+  sat_reading_25?: number | null;
+  sat_reading_75?: number | null;
+  sat_math_25?: number | null;
+  sat_math_75?: number | null;
+  sat_avg?: number | null;
+  act_25?: number | null;
+  act_75?: number | null;
+  undergrads?: number | null;
+  international_share?: number | null;
+  grad_rate?: number | null;
+  median_earnings_10y?: number | null;
+  net_price_private?: number | null;
+  net_price_public?: number | null;
+  bachelor_fields?: string[];
+};
+export type ScorecardFacts = {
+  net_price?: number;
+  net_price_by_income?: Record<string, number>;
+  cost_of_attendance?: number;
+  earnings_1yr?: number;
+  earnings_6yr?: number;
+  earnings_10yr?: number;
+  earning_above_hs_pct?: number;
+  median_debt?: number;
+  completion_4yr_pct?: number;
+  completion_6yr_pct?: number;
+  retention_pct?: number;
+  pell_pct?: number;
+  federal_loan_pct?: number;
+  international_pct?: number;
+  undergrads?: number;
+  student_faculty_ratio?: number;
+  sat_avg?: number;
+  act_mid?: number;
+  admission_rate_pct?: number;
+  endowment?: number;
+  net_price_calculator?: string;
+};
+/** Public Common App member profile: what applying through Common App needs. */
+export type CommonAppProfile = {
+  url: string;
+  test_flexible: boolean | null;
+  charges_fee: boolean | null;
+  essay_required: boolean | null;
+  recs_required: boolean | null;
+  self_reported_scores: boolean | null;
+  transfer: boolean;
+  need_aid: boolean | null;
+  merit_aid: boolean | null;
+  international_aid: boolean | null;
+  first_year_note?: string;
+  majors?: string[];
+  student_life?: string[];
+  setting?: string;
+  size?: string;
+  designations?: string[];
+};
+type CDSFactor = "very_important" | "important" | "considered" | "not_considered" | null;
+/** Figures copied from the university's own Common Data Set. */
+export type CommonDataSet = {
+  cds_year: string;
+  cds_url: string;
+  applicants?: { men?: number | null; women?: number | null; total?: number | null };
+  admitted?: { men?: number | null; women?: number | null; total?: number | null };
+  enrolled_first_year?: number | null;
+  waitlist?: { offered?: number | null; accepted_place?: number | null; admitted?: number | null };
+  factors?: Record<string, CDSFactor>;
+  test_policy?: string | null;
+  pct_submitting_sat?: number | null;
+  pct_submitting_act?: number | null;
+  sat_composite?: (number | null)[] | null;
+  act_composite?: (number | null)[] | null;
+  class_rank?: { top10_pct?: number | null; top25_pct?: number | null };
+  gpa_distribution?: Record<string, number | null>;
+  avg_gpa?: number | null;
+  application_fee?: number | null;
+  deadlines?: Record<string, string | null>;
+};
+export type UniversityHistory = {
+  founded_year: number | null;
+  type: "public" | "private" | "other" | null;
+  history: string;
+  known_for: string[] | null;
+  students_total: number | null;
+  students_year: string | null;
+  international_students_pct: number | null;
+  campus_setting: "urban" | "suburban" | "rural" | "multiple" | null;
+  motto: string | null;
+  sources: { url: string; label: string }[];
+};

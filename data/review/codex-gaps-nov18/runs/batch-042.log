@@ -1,0 +1,124 @@
+OpenAI Codex v0.169.0
+--------
+workdir: /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+model: gpt-6-luna
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: high
+reasoning summaries: none
+session id: 01a1ee85-3a50-71f1-84e4-d709d4eaebe5
+--------
+user
+You are a careful admissions-data researcher. For each university below, find facts for an
+INTERNATIONAL applicant to a FIRST-YEAR BACHELOR'S degree starting in autumn 2027 (or the nearest
+published cycle). Use the live web. Rules:
+
+- Official sources only: the university's own website (its domain or subdomains), the national
+  application service (UCAS, Common App, OUAC, uni-assist, Studyinkorea, etc.) or a government
+  statistics office. Never use rankings sites, forums, agencies, Wikipedia or blogs.
+- Every value needs the exact page URL where you read it (source_url). If you could not verify a
+  value on an official page, leave it out (null or an empty list). Never guess or estimate.
+- english: the lowest overall score accepted for undergraduate entry, per test (IELTS Academic
+  overall, TOEFL iBT total, Duolingo, PTE). If programmes differ, give the general/lowest common
+  university minimum and say so in detail (e.g. "6.5 overall, no band below 6.0; some
+  programmes higher").
+- tuition: the yearly tuition for international (non-EU / overseas) undergraduates in the local
+  currency. If it varies by programme give amount = lowest and amount_max = highest, and the
+  academic_year the fee applies to (e.g. "2026/27"). If tuition is free, amount = 0.
+- application_fee: for international first-year applicants, local currency.
+- deadlines: the main 2027-entry first-year deadlines (ISO date YYYY-MM-DD) with the route
+  (e.g. "Common App, Regular Decision", "UCAS", "university portal"). Only dates actually
+  published; if only the 2026-entry date is published, include it and put "2026 entry" in title.
+- sat: policy for international applicants; p25/p75 total SAT only if the university publishes
+  them (Common Data Set or admissions profile).
+- acceptance_rate: only if officially published (CDS, admissions statistics page).
+- notes: one short line on anything important (e.g. "Foundation year required for 11-year
+  school certificates"), else "".
+
+Spend effort on the facts students need most: English minimum, tuition, deadlines. Keep each
+detail under 160 characters. Return only the JSON that matches the schema; use each
+university's id exactly as given.
+
+Universities:
+- id: da0be24d-7bc2-54bf-aceb-f9b40b808c6d | Ohio State University-Main Campus | Columbus, US | https://www.osu.edu/
+- id: 50725766-5bb6-5387-97f6-a6d69d3c98fb | Harbin Institute of Technology | Harbin, CN | http://www.hit.edu.cn/
+- id: 575d5e9a-f98a-5ec3-bea3-7f7b8c05100a | Louvain School of Management | Louvain-la-Neuve, BE | https://uclouvain.be/
+- id: 9f02a56c-9ab8-5777-abaf-de35e9192d5f | TU Wien | Vienna, AT | https://www.tuwien.at
+codex
+I’ll check official admissions and fee pages for each institution, prioritizing English requirements, international tuition, and published deadlines. I’ll leave fields empty where an official source doesn’t verify them.
+exec
+/bin/zsh -lc 'cat /Users/likeanew/.agents/skills/lemma/SKILL.md' in /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+ succeeded in 0ms:
+---
+name: lemma
+description: Persistent cross-session memory for AI agents via MCP. BEFORE starting ANY task (coding, debugging, refactoring, research, docs, optimization — any language), FIRST call memory_read to load what you already know so you never re-derive or re-explore known facts. AFTER finishing, call memory_add to persist new findings and session_attempt for dead ends — unsaved knowledge is lost permanently. Distills reusable guides from experience.
+---
+
+<!-- lemma:skill:v=0.21.0 -->
+
+# Lemma — Persistent Memory & Learning
+
+Lemma is a persistent memory server for AI agents over the Model Context Protocol.
+Every session starts blank — knowledge survives ONLY through tool calls. If you
+learn something and don't save it (`memory_add`), it is gone permanently.
+
+## Workflow
+1. **RECALL** — `memory_read` / `semantic_search`: load what's already known for this
+   project/task. Never re-explore code or re-derive facts that are already saved.
+2. **ACT** — do the task.
+3. **PERSIST** — `memory_add` for new insights; `guide_practice` for guides applied;
+   `session_attempt` for abandoned/dead-end approaches (the most valuable records).
+
+## Two knowledge layers
+- **Memory fragments** (`memory_read` / `memory_add`): atomic facts. Types: `fact`,
+  `pattern`, `lesson`, `warning`, `context`. Confidence evolves with use and feedback.
+- **Guides** (`guide_get` / `guide_distill` / `guide_practice`): procedural skills
+  distilled from fragments. Track usage count + success/failure rate.
+Pipeline: `experience -> memory_add -> pattern/lesson -> guide_distill -> guide_practice`.
+
+## Tools at a glance
+- **Recall & search**: `memory_read`, `semantic_search`, `memory_library` (full
+  snapshot + maintenance signals), `memory_stats`, `memory_audit`.
+- **Write & maintain**: `memory_add`, `memory_update`, `memory_forget`,
+  `memory_merge`, `memory_relate` (supports / contradicts / supersedes / related_to),
+  `memory_feedback`.
+- **Guides**: `guide_get`, `guide_create`, `guide_distill`, `guide_practice`,
+  `guide_update`, `guide_forget`, `guide_merge`.
+- **Sessions & reasoning**: `session_start`, `session_end`, `session_attempt`,
+  `session_stats`, `suggestion_respond`.
+- **Background intelligence**: `conflict_scan`, `proactive_analysis`,
+  `project_analytics` (run automatically; act on signals when sensible).
+
+## Writing a fragment
+```
+## [Topic Title]
+### Context
+[1-2 sentences: what and why it matters]
+### [Content Section]
+- [Key fact 1]
+- [Key fact 2]
+### Rules (optional)
+- [Absolute constraint]
+```
+One idea per fragment, 30-2000 chars, structured markdown (not prose). **Store
+fragments in ENGLISH** (required for search/retrieval). Never ask permission to save.
+
+## Background intelligence
+Conflict detection, distill/merge/refine suggestions, and auto-linking run
+automatically. From the CLI, `lemma -lib` prints a full knowledge-base snapshot
+and `lemma -vis` launches a visualizer.
+
+web search: 
+web search: site:osu.edu international first year English proficiency tuition 2026 2027 deadlines 2027 SAT policy ...
+web search: 
+web search: site:osu.edu international undergraduate tuition 2026-2027 Ohio State nonresident cost tuition ...
+web search: 
+web search: site:undergrad.osu.edu application fee international first year $80 ...
+web search: 
+web search: site:undergrad.osu.edu "application fee" "$80" international ...
+codex
+{"universities":[{"id":"da0be24d-7bc2-54bf-aceb-f9b40b808c6d","english":[{"test":"IELTS","minimum":6.5,"detail":"6.5 overall minimum.","source_url":"https://undergrad.osu.edu/apply/international-freshmen/apply-step-by-step"},{"test":"TOEFL iBT","minimum":4,"detail":"4.0+ for tests taken on or after Jan. 21, 2026.","source_url":"https://undergrad.osu.edu/apply/international-freshmen/apply-step-by-step"},{"test":"Duolingo","minimum":120,"detail":"120+ overall.","source_url":"https://undergrad.osu.edu/apply/international-freshmen/apply-step-by-step"}],"tuition":{"amount":47374,"amount_max":null,"currency":"USD","period":"year","academic_year":"2026-2027","detail":"Estimated international undergraduate tuition and fees; varies by program.","source_url":"https://undergrad.osu.edu/cost-and-aid/basic-costs"},"application_fee":null,"deadlines":[{"title":"Autumn 2027 Early Action","due_at":"2026-11-01","route":"Common Application","source_url":"https://undergrad.osu.edu/apply/international-freshmen/apply-step-by-step"},{"title":"Autumn 2027 Regular Decision","due_at":"2027-01-15","route":"Common Application","source_url":"https://undergrad.osu.edu/apply/international-freshmen/apply-step-by-step"}],"sat":{"policy":"required","p25":null,"p75":null,"source_url":"https://undergrad.osu.edu/apply/international-freshmen/apply-step-by-step"},"acceptance_rate":null,"notes":""},{"id":"50725766-5bb6-5387-97f6-a6d69d3c98fb","english":[{"test":"IELTS","minimum":6,"detail":"Academic IELTS 6.0 or higher for English-taught programs.","source_url":"https://studyathit.hit.edu.cn/18337/list.htm"},{"test":"TOEFL iBT","minimum":80,"detail":"TOEFL iBT 80 or higher for English-taught programs.","source_url":"https://studyathit.hit.edu.cn/18337/list.htm"}],"tuition":{"amount":20000,"amount_max":26000,"currency":"CNY","period":"year","academic_year":"2026","detail":"Chinese-taught CNY 20,000; English-taught CNY 26,000 per year.","source_url":"https://studyathit.hit.edu.cn/18337/list.htm"},"application_fee":{"amount":400,"currency":"CNY","source_url":"https://studyathit.hit.edu.cn/18337/list.htm"},"deadlines":[{"title":"September 2026 entry","due_at":"2026-07-15","route":"HIT online application system","source_url":"https://studyathit.hit.edu.cn/18337/list.htm"}],"sat":null,"acceptance_rate":null,"notes":"2027-entry deadline not yet published; 2026 self-financed intake deadline shown."},{"id":"575d5e9a-f98a-5ec3-bea3-7f7b8c05100a","english":[],"tuition":null,"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"Louvain School of Management offers graduate programs; first-year bachelor’s facts do not apply to this school."},{"id":"9f02a56c-9ab8-5777-abaf-de35e9192d5f","english":[],"tuition":{"amount":726.72,"amount_max":null,"currency":"EUR","period":"semester","academic_year":"2026/27","detail":"Standard fee for non-EU nationals per semester, plus the separate ÖH fee.","source_url":"https://www.tuwien.at/en/studies/admission/students-union-fee-and-tuition-fee/tuition-fee"},"application_fee":null,"deadlines":[{"title":"Winter semester 2026/27","due_at":"2026-07-15","route":"TU Wien admission application","source_url":"https://www.tuwien.at/en/studies/admission/academic-calendar"}],"sat":null,"acceptance_rate":null,"notes":"All bachelor’s programs are taught in German; non-native German speakers need German A2 at application and C1 for admission."}]}
+tokens used
+37,026
+{"universities":[{"id":"da0be24d-7bc2-54bf-aceb-f9b40b808c6d","english":[{"test":"IELTS","minimum":6.5,"detail":"6.5 overall minimum.","source_url":"https://undergrad.osu.edu/apply/international-freshmen/apply-step-by-step"},{"test":"TOEFL iBT","minimum":4,"detail":"4.0+ for tests taken on or after Jan. 21, 2026.","source_url":"https://undergrad.osu.edu/apply/international-freshmen/apply-step-by-step"},{"test":"Duolingo","minimum":120,"detail":"120+ overall.","source_url":"https://undergrad.osu.edu/apply/international-freshmen/apply-step-by-step"}],"tuition":{"amount":47374,"amount_max":null,"currency":"USD","period":"year","academic_year":"2026-2027","detail":"Estimated international undergraduate tuition and fees; varies by program.","source_url":"https://undergrad.osu.edu/cost-and-aid/basic-costs"},"application_fee":null,"deadlines":[{"title":"Autumn 2027 Early Action","due_at":"2026-11-01","route":"Common Application","source_url":"https://undergrad.osu.edu/apply/international-freshmen/apply-step-by-step"},{"title":"Autumn 2027 Regular Decision","due_at":"2027-01-15","route":"Common Application","source_url":"https://undergrad.osu.edu/apply/international-freshmen/apply-step-by-step"}],"sat":{"policy":"required","p25":null,"p75":null,"source_url":"https://undergrad.osu.edu/apply/international-freshmen/apply-step-by-step"},"acceptance_rate":null,"notes":""},{"id":"50725766-5bb6-5387-97f6-a6d69d3c98fb","english":[{"test":"IELTS","minimum":6,"detail":"Academic IELTS 6.0 or higher for English-taught programs.","source_url":"https://studyathit.hit.edu.cn/18337/list.htm"},{"test":"TOEFL iBT","minimum":80,"detail":"TOEFL iBT 80 or higher for English-taught programs.","source_url":"https://studyathit.hit.edu.cn/18337/list.htm"}],"tuition":{"amount":20000,"amount_max":26000,"currency":"CNY","period":"year","academic_year":"2026","detail":"Chinese-taught CNY 20,000; English-taught CNY 26,000 per year.","source_url":"https://studyathit.hit.edu.cn/18337/list.htm"},"application_fee":{"amount":400,"currency":"CNY","source_url":"https://studyathit.hit.edu.cn/18337/list.htm"},"deadlines":[{"title":"September 2026 entry","due_at":"2026-07-15","route":"HIT online application system","source_url":"https://studyathit.hit.edu.cn/18337/list.htm"}],"sat":null,"acceptance_rate":null,"notes":"2027-entry deadline not yet published; 2026 self-financed intake deadline shown."},{"id":"575d5e9a-f98a-5ec3-bea3-7f7b8c05100a","english":[],"tuition":null,"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"Louvain School of Management offers graduate programs; first-year bachelor’s facts do not apply to this school."},{"id":"9f02a56c-9ab8-5777-abaf-de35e9192d5f","english":[],"tuition":{"amount":726.72,"amount_max":null,"currency":"EUR","period":"semester","academic_year":"2026/27","detail":"Standard fee for non-EU nationals per semester, plus the separate ÖH fee.","source_url":"https://www.tuwien.at/en/studies/admission/students-union-fee-and-tuition-fee/tuition-fee"},"application_fee":null,"deadlines":[{"title":"Winter semester 2026/27","due_at":"2026-07-15","route":"TU Wien admission application","source_url":"https://www.tuwien.at/en/studies/admission/academic-calendar"}],"sat":null,"acceptance_rate":null,"notes":"All bachelor’s programs are taught in German; non-native German speakers need German A2 at application and C1 for admission."}]}

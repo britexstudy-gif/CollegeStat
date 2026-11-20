@@ -1,0 +1,14 @@
+<svg id="animated-logo" width="479" height="95" viewBox="0 0 479 95" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<rect x="184.613" width="97.2965" height="17.4753" fill="#ED4242" class="svg-elem-1 animated-logo-red"></rect>
+						<rect y="0.134766" width="72.3487" height="17.4753" fill="#ED4242" class="svg-elem-2 animated-logo-red"></rect>
+						<rect x="17.4668" y="25.1001" width="67.4046" height="17.4635" transform="rotate(90 17.4668 25.1001)" fill="#14120D" class="svg-elem-3 animated-logo-black"></rect>
+						<rect x="239.498" y="24.9639" width="67.4046" height="17.4635" transform="rotate(90 239.498 24.9639)" fill="#14120D" class="svg-elem-4 animated-logo-black"></rect>
+						<rect x="99.7949" y="0.134766" width="94.8657" height="17.4635" transform="rotate(90 99.7949 0.134766)" fill="#14120D" class="svg-elem-5 animated-logo-black"></rect>
+						<rect x="304.363" width="94.8657" height="17.4635" transform="rotate(90 304.363 0)" fill="#14120D" class="svg-elem-6 animated-logo-black"></rect>
+						<rect x="177.132" width="94.8657" height="17.4635" transform="rotate(90 177.132 0)" fill="#14120D" class="svg-elem-7 animated-logo-black"></rect>
+						<rect x="381.702" width="94.8657" height="17.4635" transform="rotate(90 381.702 0)" fill="#14120D" class="svg-elem-8 animated-logo-black"></rect>
+						<path d="M154.68 0.134766L122.248 95.0005L104.784 95.0005L137.216 0.134765L154.68 0.134766Z" fill="#ED4242" class="svg-elem-9 animated-logo-red"></path>
+						<path d="M359.248 1.09124e-07L326.816 94.8657L309.352 94.8657L341.785 -7.63867e-07L359.248 1.09124e-07Z" fill="#ED4242" class="svg-elem-10 animated-logo-red"></path>
+						<path d="M458.828 6.86064C452.317 2.70205 444.819 0.346859 437.1 0.0354621C429.381 -0.275935 421.718 1.46761 414.893 5.08814C408.068 8.70867 402.325 14.0765 398.25 20.6439C394.175 27.2112 391.915 34.7428 391.7 42.4699L408.145 42.929C408.279 38.1136 409.688 33.4201 412.227 29.3275C414.766 25.2349 418.345 21.8898 422.599 19.6336C426.852 17.3774 431.627 16.2908 436.437 16.4849C441.247 16.6789 445.92 18.1466 449.978 20.7382L458.828 6.86064Z" fill="#ED4242" class="svg-elem-11 animated-logo-red"></path>
+						<path d="M458.828 88.0056C452.177 92.2535 444.499 94.618 436.611 94.8477C428.724 95.0774 420.922 93.1637 414.034 89.3101C407.147 85.4564 401.432 79.807 397.497 72.9625C393.563 66.1179 391.555 58.3343 391.689 50.4392L408.293 50.7203C408.21 55.6123 409.454 60.4354 411.892 64.6765C414.33 68.9176 417.871 72.4183 422.139 74.8061C426.406 77.194 431.241 78.3798 436.128 78.2375C441.016 78.0951 445.773 76.63 449.895 73.9978L458.828 88.0056Z" fill="#14120D" class="svg-elem-12 animated-logo-black"></path>
+					</svg>

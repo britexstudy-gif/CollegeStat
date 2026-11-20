@@ -1,0 +1,251 @@
+OpenAI Codex v0.169.0
+--------
+workdir: /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+model: gpt-6-luna
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: high
+reasoning summaries: none
+session id: 01a1ee93-1f41-74e1-bc5d-0c767e79f83e
+--------
+user
+You are a careful admissions-data researcher. For each university below, find facts for an
+INTERNATIONAL applicant to a FIRST-YEAR BACHELOR'S degree starting in autumn 2027 (or the nearest
+published cycle). Use the live web. Rules:
+
+- Official sources only: the university's own website (its domain or subdomains), the national
+  application service (UCAS, Common App, OUAC, uni-assist, Studyinkorea, etc.) or a government
+  statistics office. Never use rankings sites, forums, agencies, Wikipedia or blogs.
+- Every value needs the exact page URL where you read it (source_url). If you could not verify a
+  value on an official page, leave it out (null or an empty list). Never guess or estimate.
+- english: the lowest overall score accepted for undergraduate entry, per test (IELTS Academic
+  overall, TOEFL iBT total, Duolingo, PTE). If programmes differ, give the general/lowest common
+  university minimum and say so in detail (e.g. "6.5 overall, no band below 6.0; some
+  programmes higher").
+- tuition: the yearly tuition for international (non-EU / overseas) undergraduates in the local
+  currency. If it varies by programme give amount = lowest and amount_max = highest, and the
+  academic_year the fee applies to (e.g. "2026/27"). If tuition is free, amount = 0.
+- application_fee: for international first-year applicants, local currency.
+- deadlines: the main 2027-entry first-year deadlines (ISO date YYYY-MM-DD) with the route
+  (e.g. "Common App, Regular Decision", "UCAS", "university portal"). Only dates actually
+  published; if only the 2026-entry date is published, include it and put "2026 entry" in title.
+- sat: policy for international applicants; p25/p75 total SAT only if the university publishes
+  them (Common Data Set or admissions profile).
+- acceptance_rate: only if officially published (CDS, admissions statistics page).
+- notes: one short line on anything important (e.g. "Foundation year required for 11-year
+  school certificates"), else "".
+
+Spend effort on the facts students need most: English minimum, tuition, deadlines. Keep each
+detail under 160 characters. Return only the JSON that matches the schema; use each
+university's id exactly as given.
+
+Universities:
+- id: b4830ed0-6829-5dc7-984e-cb27ac537c47 | Ruhr-Universität Bochum | Bochum, DE | http://www.ruhr-uni-bochum.de/
+- id: 83031b3d-bda6-5b21-9cb2-7424d85cadee | University of Pavia | Pavia, IT | https://portale.unipv.it/it
+- id: 44b44522-f76b-5a88-8980-5f47ec7dc442 | University of Kent | Canterbury, GB | https://www.kent.ac.uk
+- id: 2aeff5f7-7e4e-5a51-beef-1c624bb2c1fb | Ajman University | Ajman, AE | http://www.ajman.ac.ae/
+codex
+I’m checking the official admissions and fee pages for each university, prioritizing entry requirements, international tuition, and published deadlines. I’ll use official university or application-service sources only.
+exec
+/bin/zsh -lc 'cat /Users/likeanew/.agents/skills/lemma/SKILL.md && cat /Users/likeanew/.agents/skills/agent-toolstack/SKILL.md' in /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+ succeeded in 0ms:
+---
+name: lemma
+description: Persistent cross-session memory for AI agents via MCP. BEFORE starting ANY task (coding, debugging, refactoring, research, docs, optimization — any language), FIRST call memory_read to load what you already know so you never re-derive or re-explore known facts. AFTER finishing, call memory_add to persist new findings and session_attempt for dead ends — unsaved knowledge is lost permanently. Distills reusable guides from experience.
+---
+
+<!-- lemma:skill:v=0.21.0 -->
+
+# Lemma — Persistent Memory & Learning
+
+Lemma is a persistent memory server for AI agents over the Model Context Protocol.
+Every session starts blank — knowledge survives ONLY through tool calls. If you
+learn something and don't save it (`memory_add`), it is gone permanently.
+
+## Workflow
+1. **RECALL** — `memory_read` / `semantic_search`: load what's already known for this
+   project/task. Never re-explore code or re-derive facts that are already saved.
+2. **ACT** — do the task.
+3. **PERSIST** — `memory_add` for new insights; `guide_practice` for guides applied;
+   `session_attempt` for abandoned/dead-end approaches (the most valuable records).
+
+## Two knowledge layers
+- **Memory fragments** (`memory_read` / `memory_add`): atomic facts. Types: `fact`,
+  `pattern`, `lesson`, `warning`, `context`. Confidence evolves with use and feedback.
+- **Guides** (`guide_get` / `guide_distill` / `guide_practice`): procedural skills
+  distilled from fragments. Track usage count + success/failure rate.
+Pipeline: `experience -> memory_add -> pattern/lesson -> guide_distill -> guide_practice`.
+
+## Tools at a glance
+- **Recall & search**: `memory_read`, `semantic_search`, `memory_library` (full
+  snapshot + maintenance signals), `memory_stats`, `memory_audit`.
+- **Write & maintain**: `memory_add`, `memory_update`, `memory_forget`,
+  `memory_merge`, `memory_relate` (supports / contradicts / supersedes / related_to),
+  `memory_feedback`.
+- **Guides**: `guide_get`, `guide_create`, `guide_distill`, `guide_practice`,
+  `guide_update`, `guide_forget`, `guide_merge`.
+- **Sessions & reasoning**: `session_start`, `session_end`, `session_attempt`,
+  `session_stats`, `suggestion_respond`.
+- **Background intelligence**: `conflict_scan`, `proactive_analysis`,
+  `project_analytics` (run automatically; act on signals when sensible).
+
+## Writing a fragment
+```
+## [Topic Title]
+### Context
+[1-2 sentences: what and why it matters]
+### [Content Section]
+- [Key fact 1]
+- [Key fact 2]
+### Rules (optional)
+- [Absolute constraint]
+```
+One idea per fragment, 30-2000 chars, structured markdown (not prose). **Store
+fragments in ENGLISH** (required for search/retrieval). Never ask permission to save.
+
+## Background intelligence
+Conflict detection, distill/merge/refine suggestions, and auto-linking run
+automatically. From the CLI, `lemma -lib` prints a full knowledge-base snapshot
+and `lemma -vis` launches a visualizer.
+---
+name: agent-toolstack
+description: Use when working on the user's AI coding setup, or when a task involves OpenCode, MiMoCode, MCP servers, UI/design generation, animation, icons, browser testing, databases, or the CollegeStat project. Loads the verified MCP toolstack, config locations, known gotchas, and project context so you do not re-derive or re-explore what is already known.
+---
+
+# Agent Toolstack — Shared Knowledge (OpenCode + MiMoCode)
+
+Curated facts about this machine's AI coding setup. Read this before designing UI,
+wiring MCP servers, or touching config. Verified = checked against the live system
+(2026-10-17). Unverified = reported by a source, not confirmed here.
+
+## Environment
+
+- macOS (darwin), user `likeanew`, Apple Silicon.
+- Primary project: `/Users/likeanew/Documents/CollegeStat`
+  - `collegestat/` — the main app (48 entries, modified Oct 15).
+  - `AI-Setup/` — scratch workspace (empty as of 2026-10-17).
+- Two coding agents installed side by side: **OpenCode** (`~/.config/opencode`) and
+  **MiMoCode** (`~/.config/mimocode`, binary `~/.mimocode/bin/mimo`, v0.1.15).
+- Other agent configs present: `~/.codex` (Codex, 3.6 GB — large), `~/.cursor`,
+  `~/.gemini`, `~/.copilot`, `~/.agents`.
+
+## MCP config format (identical in OpenCode and MiMoCode)
+
+```jsonc
+{
+  "$schema": "https://opencode.ai/config.json",          // or https://mimo.xiaomi.com/mimocode/config.json
+  "mcp": {
+    "name":  { "type": "local",  "command": ["npx", "-y", "pkg"] },
+    "docs":  { "type": "remote", "url": "https://host/mcp" },
+    "off":   { "enabled": false }                          // disable without deleting
+  }
+}
+```
+
+**Do NOT use `"mcp_servers"` or a `command` string + `args` array.** That format is
+wrong for both tools. The correct key is `"mcp"` and `command` is an array.
+
+## Verified MCP toolstack (installed in both agents)
+
+| Server | What it gives you | When to use |
+|---|---|---|
+| `inspo` | 2,320 real-site captures: palettes, fonts, macrostructures, 68 reference components with copy-pasteable JSX. stdio via `inspo-mcp`; hosted `https://inspomcp.dev/api/mcp` also works. | Any UI/design task — call `recommend(brief)` first |
+| `shadcn` | Browse/view/install real shadcn/ui + any registry component. `npx shadcn@latest mcp`. | Component work — prevents hallucinated component code |
+| `context7` | Up-to-date library docs + code examples. Remote `https://mcp.context7.com/mcp`. | When unsure of an API/version |
+| `animotion` | 745 hand-crafted CSS3 animations + 9,740 real SVG icons (Lucide/Tabler/Heroicons/Bootstrap). `npx animotion-mcp`. | Animation + icons — kills AI-looking generated icons |
+| `gsap-master` | GSAP expert: intent→60fps code, plugins (SplitText, ScrollTrigger, DrawSVG), debugging, perf optimizer. `npx @vinhnguyen/gsap-mcp`. | Complex animation, scroll systems, text reveals |
+| `playwright` | Browser automation, screenshots, accessibility snapshots, speed/QA checks. Runs `--headless --isolated`. | Visual verification, E2E, performance |
+| `sequential-thinking` | Structured step-by-step reasoning. | Complex architecture / debugging |
+| `lemma` | Persistent local memory over MCP (confidence decay, guides, JSONL/SQLite). `npx lemma-mcp`. | Cross-session recall; `memory_read` first, `memory_add` after |
+| `supabase` / `prisma` / `github` | DB + GitHub. Remote, **require OAuth login** (`mimo mcp auth <name>`). | Backend / repo work once authenticated |
+
+### MCP gotchas (verified from the live log)
+
+- The 3 auth-required servers spam ~600 WARN lines per session until logged in.
+  Run `mimo mcp auth supabase` (and `prisma`, `github`) or set `"enabled": false`.
+- `shadcn` logs `MCP error -32601: Method not found` for `resources` — harmless;
+  the server exposes tools only, not the resources method OpenCode/MiMo probe.
+- Local servers spawn via `npx`; first run downloads the package (a few seconds).
+
+## Config & skill locations
+
+**OpenCode**
+- Global config: `~/.config/opencode/opencode.jsonc`
+- Skills: `~/.agents/skills/<name>/SKILL.md`, `~/.config/opencode/skills/<name>/SKILL.md`,
+  `.opencode/skills/`, `.claude/skills/` (project), plus `~/.claude/skills/`
+- Verify: `opencode mcp list`, `opencode debug config`, `opencode reload`
+
+**MiMoCode**
+- Global config: `~/.config/mimocode/mimocode.jsonc` (JSONC, merges over defaults)
+- Project config: `<project>/.mimocode/mimocode.jsonc`
+- Skills: `~/.agents/skills/<name>/SKILL.md` (global), `<project>/.mimocode/skills/`,
+  `.agents/skills/`, `.claude/skills/`, `.codex/skills/` (brand roots opt-in via env)
+- Agents/modes: `~/.config/mimocode/agent/<name>.md` or `<project>/.mimocode/agent/<name>.md`
+- Commands: `.mimocode/command/<name>.md`
+- Memory: `~/.local/share/mimocode/memory/projects/<project>/MEMORY.md`, `.../global/MEMORY.md`
+- Verify: `mimo mcp list`, `mimo debug config`, `mimo debug skill`, `mimo agent list`
+- Default model: `mimo/mimo-auto` (free, 1M context). Models: `mimo models`.
+
+**Shared skill path:** `~/.agents/skills/` is read by BOTH agents — put cross-tool
+knowledge here (this skill lives there).
+
+## Known issues on this machine (2026-10-17)
+
+- **GitLab auth expired** — `GitLabError: 401 Unauthorized` for `gitlab/duo-chat-fable-5`.
+  Re-authenticate GitLab; token last refreshed 2026-10-06.
+- **`.codex` is 3.6 GB** — `sessions/` alone is 2.3 GB (369 rollout `.jsonl.zst`
+  files), `thread_history_1.sqlite` 592 MB. Clean old sessions if disk is tight.
+- **Stale lock files** in `~/.codex` (0-byte `.sqlite-maintenance.lock`, empty
+  `*.sqlite-wal`, empty `AGENTS.md`, `transcription-history.jsonl`). Safe to remove.
+- **`.codex-global-state.json.bak`** is a byte-identical duplicate of the live state file.
+- **No DB corruption**: `opencode.db` (140 MB) and all Codex sqlite files pass
+  `PRAGMA integrity_check` / `quick_check`.
+- **OpenCode log** is 16 MB at `~/.local/share/opencode/log/opencode.log`; rotate if large.
+
+## Tools reported by awesome-opencode but NOT installable as-is
+
+`morph-fast-apply`, `crawlberg`, `harness-memory`, `flowdeck`, `honcho`,
+`opencode-mission-control` are GitHub-only repos, not npm packages — they need manual
+clone + plugin-file placement. `@seos/*` (AISEOS) is GitHub-only and unverified.
+`@inspo/mcp-server` does not exist on npm — the correct package is `inspo-mcp`.
+
+## Working conventions
+
+- Prefer real, verified tools over generated approximations: `inspo` for design,
+  `animotion` for icons/animations, `shadcn` for components, `context7` for APIs.
+- Keep config edits minimal and targeted; preserve JSONC comments and `$schema`.
+- After editing config, reload (`opencode reload`) or restart (`mimo`) before verifying.
+- Treat API keys as secrets: never echo them into logs, diffs, or responses.
+
+web search: 
+web search: site:ruhr-uni-bochum.de international prospective students bachelor English language requirement tuition winter semester application deadline ...
+web search: 
+web search: site:studium.ruhr-uni-bochum.de/en "IELTS" B2 TOEFL bachelor language ...
+web search: 
+web search: site:en.unipv.it/en "English language" IELTS bachelor degree Pavia B2 minimum TOEFL ...
+web search: 
+web search: 
+web search: 
+web search: 'Tuition fees for 2027 entry'
+web search: 
+web search: site:en.unipv.it tuition fees non EU flat rate University Pavia 2026/27 4000 euros ...
+web search: 
+web search: site:ajman.ac.ae "Undergraduate" "Application fee" "1300" 5% VAT ...
+web search: 
+web search: site:ajman.ac.ae/upload/docs/Undergraduate_Student_Catalog_2026-2027.pdf "Fees per year" ...
+web search: 
+web search: site:ajman.ac.ae/en/undergraduate/undergraduate-admission-process "application fee" 2026 1300 VAT ...
+web search: 
+web search: site:ucas.com 2027 entry 14 January 2027 equal consideration deadline ...
+web search: 
+web search: 
+web search: 
+web search: site:kent.ac.uk/courses/undergraduate/2027 "Tuition fees for 2027 entry" "Full-time (International)" ...
+web search: 
+web search: 
+codex
+{"universities":[{"id":"b4830ed0-6829-5dc7-984e-cb27ac537c47","english":[{"test":"IELTS","minimum":6.0,"detail":"IT-Engineering only: IELTS Academic 6.0 or higher; other courses may differ.","source_url":"https://etit.ruhr-uni-bochum.de/en/studies/bachelor-it-engineering/application-and-enrollment/"},{"test":"TOEFL iBT","minimum":85,"detail":"IT-Engineering only: TOEFL iBT 85 or higher; other courses may differ.","source_url":"https://etit.ruhr-uni-bochum.de/en/studies/bachelor-it-engineering/application-and-enrollment/"},{"test":"PTE Academic","minimum":55,"detail":"IT-Engineering only: PTE Academic 55 or higher; other courses may differ.","source_url":"https://etit.ruhr-uni-bochum.de/en/studies/bachelor-it-engineering/application-and-enrollment/"}],"tuition":{"amount":0,"amount_max":null,"currency":"EUR","period":"year","academic_year":"2026/27","detail":"No tuition fees; a separate semester contribution applies.","source_url":"https://international.ruhr-uni-bochum.de/en/costs-studying-ruhr-university-bochum"},"application_fee":null,"deadlines":[{"title":"2026 entry (winter semester; restricted first-semester programs)","due_at":"2026-07-15","route":"RUB application portal","source_url":"https://studium.ruhr-uni-bochum.de/en/semester-deadlines"}],"sat":null,"acceptance_rate":null,"notes":"Most bachelor’s programs are taught in German; German proficiency is required."},{"id":"83031b3d-bda6-5b21-9cb2-7424d85cadee","english":[],"tuition":{"amount":390,"amount_max":4550,"currency":"EUR","period":"year","academic_year":"2026/27","detail":"Non-EU students residing abroad: flat rate varies by citizenship and study area.","source_url":"https://portale.unipv.it/en/node/393"},"application_fee":{"amount":35,"currency":"EUR","source_url":"https://en.unipv.it/en/education/bachelors-and-masters-degree-programs/how-apply/how-apply-bachelors-or-single-cycle-masters-degree-programs"},"deadlines":[{"title":"2027/28 first application window closes","due_at":"2026-11-18","route":"University application portal; non-restricted programs","source_url":"https://en.unipv.it/en/education/bachelors-and-masters-degree-programs/how-apply/how-apply-bachelors-or-single-cycle-masters-degree-programs"},{"title":"2027/28 second application window closes","due_at":"2027-01-20","route":"University application portal; non-restricted programs","source_url":"https://en.unipv.it/en/education/bachelors-and-masters-degree-programs/how-apply/how-apply-bachelors-or-single-cycle-masters-degree-programs"},{"title":"2027/28 third window closes; overseas non-EU applicants only if places remain","due_at":"2027-03-22","route":"University application portal; non-restricted programs","source_url":"https://en.unipv.it/en/education/bachelors-and-masters-degree-programs/how-apply/how-apply-bachelors-or-single-cycle-masters-degree-programs"},{"title":"2027/28 fourth window closes; overseas non-EU applicants only if places remain","due_at":"2027-06-12","route":"University application portal; non-restricted programs","source_url":"https://en.unipv.it/en/education/bachelors-and-masters-degree-programs/how-apply/how-apply-bachelors-or-single-cycle-masters-degree-programs"}],"sat":null,"acceptance_rate":null,"notes":"Most bachelor’s programs are taught in Italian; Italian B2 is required for international applicants to Italian-taught programs."},{"id":"44b44522-f76b-5a88-8980-5f47ec7dc442","english":[{"test":"IELTS","minimum":6.0,"detail":"Good level: IELTS Academic 6.0 overall, minimum 5.5 in each component; some courses require higher scores.","source_url":"https://www.kent.ac.uk/courses/english-language-requirements"},{"test":"TOEFL iBT","minimum":80,"detail":"Good level: 80 overall for tests before 21 Jan 2026; from that date, 4 overall and 4 in each component.","source_url":"https://www.kent.ac.uk/courses/english-language-requirements"},{"test":"Duolingo","minimum":110,"detail":"Good level: 110 overall; minimum 110 in speaking, writing and reading, 105 in listening.","source_url":"https://www.kent.ac.uk/courses/english-language-requirements"},{"test":"PTE Academic","minimum":63,"detail":"Good level: 63 overall, minimum 59 in each sub-test.","source_url":"https://www.kent.ac.uk/courses/english-language-requirements"},{"test":"Cambridge C1/C2","minimum":165,"detail":"C1 Advanced or C2 Proficiency: B2 level with minimum 165 in each sub-test.","source_url":"https://www.kent.ac.uk/courses/english-language-requirements"}],"tuition":{"amount":21950,"amount_max":23950,"currency":"GBP","period":"year","academic_year":"2027/28","detail":"International full-time undergraduate fees vary by course; confirmed 2027 listings range from £21,950 to £23,950.","source_url":"https://www.kent.ac.uk/courses/undergraduate/865; https://www.kent.ac.uk/courses/undergraduate/2027/1901/media"},"application_fee":{"amount":0,"currency":"GBP","source_url":"https://www.kent.ac.uk/courses/undergraduate/2027/866/international-business-with-a-year-abroad-bsc"},"deadlines":[{"title":"2027 entry equal consideration deadline","due_at":"2027-01-13","route":"UCAS","source_url":"https://www.ucas.com/events/2027-entry-deadline-for-all-undergraduate-courses-except-those-with-a-15-october-deadline-475546"},{"title":"September 2027 international undergraduate application deadline","due_at":"2027-08-31","route":"UCAS or Kent direct application","source_url":"https://www.kent.ac.uk/international/international-admission-deadlines"}],"sat":null,"acceptance_rate":null,"notes":""},{"id":"2aeff5f7-7e4e-5a51-beef-1c624bb2c1fb","english":[{"test":"IELTS","minimum":5.0,"detail":"English-taught programs: IELTS Academic 5.0; Medicine requires 6.0.","source_url":"https://www.ajman.ac.ae/en/undergraduate/undergraduate-admission-process"},{"test":"TOEFL iBT","minimum":61,"detail":"English-taught programs: TOEFL iBT 61; Medicine requires 79.","source_url":"https://www.ajman.ac.ae/en/undergraduate/undergraduate-admission-process"}],"tuition":null,"application_fee":{"amount":1300,"currency":"AED","source_url":"https://www.ajman.ac.ae/upload/docs/Undergraduate_Student_Catalog_2026-2027.pdf?v=1794400006"},"deadlines":[{"title":"2026 entry (fall semester application deadline)","due_at":"2026-08-28","route":"Ajman University application portal","source_url":"https://www.ajman.ac.ae/upload/docs/Undergraduate_Student_Catalog_2026-2027.pdf?v=1790850871"}],"sat":null,"acceptance_rate":null,"notes":""}]}
+tokens used
+120,133
+{"universities":[{"id":"b4830ed0-6829-5dc7-984e-cb27ac537c47","english":[{"test":"IELTS","minimum":6.0,"detail":"IT-Engineering only: IELTS Academic 6.0 or higher; other courses may differ.","source_url":"https://etit.ruhr-uni-bochum.de/en/studies/bachelor-it-engineering/application-and-enrollment/"},{"test":"TOEFL iBT","minimum":85,"detail":"IT-Engineering only: TOEFL iBT 85 or higher; other courses may differ.","source_url":"https://etit.ruhr-uni-bochum.de/en/studies/bachelor-it-engineering/application-and-enrollment/"},{"test":"PTE Academic","minimum":55,"detail":"IT-Engineering only: PTE Academic 55 or higher; other courses may differ.","source_url":"https://etit.ruhr-uni-bochum.de/en/studies/bachelor-it-engineering/application-and-enrollment/"}],"tuition":{"amount":0,"amount_max":null,"currency":"EUR","period":"year","academic_year":"2026/27","detail":"No tuition fees; a separate semester contribution applies.","source_url":"https://international.ruhr-uni-bochum.de/en/costs-studying-ruhr-university-bochum"},"application_fee":null,"deadlines":[{"title":"2026 entry (winter semester; restricted first-semester programs)","due_at":"2026-07-15","route":"RUB application portal","source_url":"https://studium.ruhr-uni-bochum.de/en/semester-deadlines"}],"sat":null,"acceptance_rate":null,"notes":"Most bachelor’s programs are taught in German; German proficiency is required."},{"id":"83031b3d-bda6-5b21-9cb2-7424d85cadee","english":[],"tuition":{"amount":390,"amount_max":4550,"currency":"EUR","period":"year","academic_year":"2026/27","detail":"Non-EU students residing abroad: flat rate varies by citizenship and study area.","source_url":"https://portale.unipv.it/en/node/393"},"application_fee":{"amount":35,"currency":"EUR","source_url":"https://en.unipv.it/en/education/bachelors-and-masters-degree-programs/how-apply/how-apply-bachelors-or-single-cycle-masters-degree-programs"},"deadlines":[{"title":"2027/28 first application window closes","due_at":"2026-11-18","route":"University application portal; non-restricted programs","source_url":"https://en.unipv.it/en/education/bachelors-and-masters-degree-programs/how-apply/how-apply-bachelors-or-single-cycle-masters-degree-programs"},{"title":"2027/28 second application window closes","due_at":"2027-01-20","route":"University application portal; non-restricted programs","source_url":"https://en.unipv.it/en/education/bachelors-and-masters-degree-programs/how-apply/how-apply-bachelors-or-single-cycle-masters-degree-programs"},{"title":"2027/28 third window closes; overseas non-EU applicants only if places remain","due_at":"2027-03-22","route":"University application portal; non-restricted programs","source_url":"https://en.unipv.it/en/education/bachelors-and-masters-degree-programs/how-apply/how-apply-bachelors-or-single-cycle-masters-degree-programs"},{"title":"2027/28 fourth window closes; overseas non-EU applicants only if places remain","due_at":"2027-06-12","route":"University application portal; non-restricted programs","source_url":"https://en.unipv.it/en/education/bachelors-and-masters-degree-programs/how-apply/how-apply-bachelors-or-single-cycle-masters-degree-programs"}],"sat":null,"acceptance_rate":null,"notes":"Most bachelor’s programs are taught in Italian; Italian B2 is required for international applicants to Italian-taught programs."},{"id":"44b44522-f76b-5a88-8980-5f47ec7dc442","english":[{"test":"IELTS","minimum":6.0,"detail":"Good level: IELTS Academic 6.0 overall, minimum 5.5 in each component; some courses require higher scores.","source_url":"https://www.kent.ac.uk/courses/english-language-requirements"},{"test":"TOEFL iBT","minimum":80,"detail":"Good level: 80 overall for tests before 21 Jan 2026; from that date, 4 overall and 4 in each component.","source_url":"https://www.kent.ac.uk/courses/english-language-requirements"},{"test":"Duolingo","minimum":110,"detail":"Good level: 110 overall; minimum 110 in speaking, writing and reading, 105 in listening.","source_url":"https://www.kent.ac.uk/courses/english-language-requirements"},{"test":"PTE Academic","minimum":63,"detail":"Good level: 63 overall, minimum 59 in each sub-test.","source_url":"https://www.kent.ac.uk/courses/english-language-requirements"},{"test":"Cambridge C1/C2","minimum":165,"detail":"C1 Advanced or C2 Proficiency: B2 level with minimum 165 in each sub-test.","source_url":"https://www.kent.ac.uk/courses/english-language-requirements"}],"tuition":{"amount":21950,"amount_max":23950,"currency":"GBP","period":"year","academic_year":"2027/28","detail":"International full-time undergraduate fees vary by course; confirmed 2027 listings range from £21,950 to £23,950.","source_url":"https://www.kent.ac.uk/courses/undergraduate/865; https://www.kent.ac.uk/courses/undergraduate/2027/1901/media"},"application_fee":{"amount":0,"currency":"GBP","source_url":"https://www.kent.ac.uk/courses/undergraduate/2027/866/international-business-with-a-year-abroad-bsc"},"deadlines":[{"title":"2027 entry equal consideration deadline","due_at":"2027-01-13","route":"UCAS","source_url":"https://www.ucas.com/events/2027-entry-deadline-for-all-undergraduate-courses-except-those-with-a-15-october-deadline-475546"},{"title":"September 2027 international undergraduate application deadline","due_at":"2027-08-31","route":"UCAS or Kent direct application","source_url":"https://www.kent.ac.uk/international/international-admission-deadlines"}],"sat":null,"acceptance_rate":null,"notes":""},{"id":"2aeff5f7-7e4e-5a51-beef-1c624bb2c1fb","english":[{"test":"IELTS","minimum":5.0,"detail":"English-taught programs: IELTS Academic 5.0; Medicine requires 6.0.","source_url":"https://www.ajman.ac.ae/en/undergraduate/undergraduate-admission-process"},{"test":"TOEFL iBT","minimum":61,"detail":"English-taught programs: TOEFL iBT 61; Medicine requires 79.","source_url":"https://www.ajman.ac.ae/en/undergraduate/undergraduate-admission-process"}],"tuition":null,"application_fee":{"amount":1300,"currency":"AED","source_url":"https://www.ajman.ac.ae/upload/docs/Undergraduate_Student_Catalog_2026-2027.pdf?v=1794400006"},"deadlines":[{"title":"2026 entry (fall semester application deadline)","due_at":"2026-08-28","route":"Ajman University application portal","source_url":"https://www.ajman.ac.ae/upload/docs/Undergraduate_Student_Catalog_2026-2027.pdf?v=1790850871"}],"sat":null,"acceptance_rate":null,"notes":""}]}

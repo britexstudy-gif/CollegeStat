@@ -24,6 +24,7 @@ jobs:
           NODE_OPTIONS: --max-old-space-size=2048
       - run: npm run lint
       - run: npm test
+      - run: npm run test:data
       - run: npm run build
         env:
           NEXT_PUBLIC_CATALOGUE_SOURCE: bundled

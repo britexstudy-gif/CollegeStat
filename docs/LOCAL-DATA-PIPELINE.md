@@ -1,5 +1,7 @@
 # Local data pipeline
 
+Update, 6 October: [the new data checkpoint](DATA-DEEPENING-OCT05.md) documents implemented OpenAlex, Leiden, IPEDS aid and scoped application adapters, reproducible commands and current limitations. The October 1 overview and pending-mapping notes below describe the earlier pipeline.
+
 As of 1 October 2026, the bundled public catalogue contains 8,985 university profiles across 175 countries. It combines the reviewed reference profiles with ROR/IPEDS identities and source-linked program, ranking and research records. Coverage of current requirements, logos and admissions remains incomplete. Identity evidence does not establish accreditation or current intake availability. Raw provider releases are not bundled.
 
 ## Layout

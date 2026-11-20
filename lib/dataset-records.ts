@@ -52,6 +52,13 @@ export type DirectoryRecord = {
   sat_reading_75?: number;
   sat_math_25?: number;
   sat_math_75?: number;
+  /** Scorecard TUITIONFEE_OUT (tuition + required fees); see field_sources for its year. */
+  tuition_fees_out_of_state?: number;
+  /** Per-field provenance for values refreshed after IPEDS 2023 (e.g. Scorecard 2025/26). */
+  field_sources?: Record<string, { academic_year: string; source: string; source_url: string; retrieved_at: string }>;
+  /** false = hidden (excluded by data-ops; kept, never deleted). Absent = published. */
+  published?: boolean;
+  exclusion?: { reason: string; detail: string; decided_at: string; merged_into?: string };
 };
 
 export type PublishedRankingRecord = Omit<RankHighlight, "domain"> & {

@@ -1,0 +1,124 @@
+/* Settings (profile) refresh: quiet header, single-layer fields. */
+html body .student-profile-page .profile-settings-intro h1 {
+  font-size: 28px;
+  font-weight: 650;
+  letter-spacing: -0.02em;
+}
+html body .student-profile-page .profile-settings-intro p {
+  font-size: 14px;
+}
+html body .student-profile-page .profile-back {
+  display: none;
+}
+html body .student-profile-page .profile-setting-card {
+  border-radius: 16px;
+  box-shadow: none;
+}
+html body .student-profile-page input:not([type="checkbox"]):not([type="radio"]),
+html body .student-profile-page select,
+html body .student-profile-page textarea,
+html body .student-profile-page [data-slot="select-trigger"] {
+  height: 44px;
+  padding: 0 14px;
+  border: 1px solid transparent !important;
+  border-radius: 11px !important;
+  background: #f4f4f5 !important;
+  box-shadow: none !important;
+  outline: none !important;
+  font-size: 14.5px;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+html.dark body .student-profile-page input:not([type="checkbox"]):not([type="radio"]),
+html.dark body .student-profile-page select,
+html.dark body .student-profile-page textarea,
+html.dark body .student-profile-page [data-slot="select-trigger"] {
+  background: #171717 !important;
+  color: #fafafa;
+}
+html body .student-profile-page input:not([type="checkbox"]):not([type="radio"]):focus,
+html body .student-profile-page select:focus,
+html body .student-profile-page textarea:focus {
+  border-color: #2563eb !important;
+  box-shadow: 0 0 0 4px rgb(37 99 235 / 15%) !important;
+}
+/* A search field wrapped in a label keeps only the outer surface. */
+html body .student-profile-page .profile-country-search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 44px;
+  padding: 0 14px;
+  border: 1px solid transparent;
+  border-radius: 11px;
+  background: #f4f4f5;
+}
+html.dark body .student-profile-page .profile-country-search {
+  background: #171717;
+}
+html body .student-profile-page .profile-country-search:focus-within {
+  border-color: #2563eb;
+}
+html body .student-profile-page .profile-country-search input {
+  flex: 1;
+  height: 100% !important;
+  padding: 0 !important;
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+html body .student-profile-page .profile-country-options {
+  max-height: 260px;
+  overflow-y: auto;
+  padding: 6px;
+  border: 1px solid #ececec;
+  border-radius: 12px;
+}
+html.dark body .student-profile-page .profile-country-options {
+  border-color: #262626;
+}
+html body .student-profile-page .profile-settings-sidebar nav button {
+  border-radius: 10px;
+}
+.profile-plan-link {
+  justify-self: start;
+}
+.profile-theme-options {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+.profile-theme-options button {
+  display: grid;
+  gap: 10px;
+  padding: 12px;
+  border: 1px solid #e7e7e7;
+  border-radius: 14px;
+  background: transparent;
+  color: inherit;
+  font-size: 13.5px;
+  font-weight: 600;
+  text-align: left;
+  cursor: pointer;
+}
+html.dark .profile-theme-options button {
+  border-color: #262626;
+}
+.profile-theme-options button[aria-checked="true"] {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgb(37 99 235 / 15%);
+}
+.profile-theme-swatch {
+  display: block;
+  height: 70px;
+  border-radius: 10px;
+  border: 1px solid rgb(0 0 0 / 8%);
+}
+.profile-theme-swatch.is-light {
+  background: linear-gradient(180deg, #ffffff 0 30%, #f4f4f5 30%);
+}
+.profile-theme-swatch.is-dark {
+  background: linear-gradient(180deg, #000000 0 30%, #171717 30%);
+}
+.profile-theme-swatch.is-system {
+  background: linear-gradient(90deg, #ffffff 0 50%, #000000 50%);
+}

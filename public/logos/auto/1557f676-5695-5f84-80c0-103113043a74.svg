@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="24.5 -9.4 68 68">
+<!-- Favicon EMI : symbole des trois triangles du logo officiel, sans texte
+     (retours client 15/10/2026, point 13). Mode clair : noir + bleu
+     #102BA2 du logo ; mode sombre : blanc + bleu éclairci, lisibles sur
+     un onglet foncé. -->
+<style>
+.k{fill:#000}.b{fill:#102BA2}
+@media (prefers-color-scheme:dark){.k{fill:#fff}.b{fill:#889EF3}}
+</style>
+<path d="M61.9838 35.37L64.4793 31.1851L66.9462 35.37H61.9838Z" class="k"/>
+<path d="M69.9114 24.6045H74.7763L72.3438 28.7295L69.9114 24.6045Z" class="k"/>
+<path d="M90.8496 35.3689H76.2432L73.0337 29.9144H81.2533L70.3262 11.378L66.2135 18.3546L64.7834 15.9331L64.0503 14.6877L62.9868 12.887L70.3167 0.538097L90.8496 35.3689Z" class="k"/>
+<path d="M52.9785 37.2406L55.7986 42.0239H50.1604L52.9804 37.2406H52.9785Z" class="b"/>
+<path d="M62.4332 32.0896L60.8599 34.7598L59.2828 32.0896H62.4332Z" class="b"/>
+<path d="M61.8901 36.592L65.0901 42.0204H78.7266L58.3693 7.49803L51.5473 19.0485L54.7645 24.5068L58.3941 18.351L69.1398 36.5939H61.8901V36.592Z" class="b"/>
+<path d="M44.9858 38.1929L50.9868 38.1704L47.9968 43.2454H57.9692L46.9142 24.4902L32.64 48.6719H26.23L46.897 13.6054L67.5694 48.6719H38.6029L44.9858 38.1929Z" class="k"/>
+</svg>

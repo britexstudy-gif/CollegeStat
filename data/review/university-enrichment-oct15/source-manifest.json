@@ -1,0 +1,381 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-15",
+  "sources": [
+    {
+      "url": "https://majors.stanford.edu/majors",
+      "university_id": "11111111-1111-4111-8111-111111111111",
+      "kind": "programmes"
+    },
+    {
+      "url": "https://admission.stanford.edu/apply/first-year/index.html",
+      "university_id": "11111111-1111-4111-8111-111111111111",
+      "kind": "admissions"
+    },
+    {
+      "url": "https://financialaid.stanford.edu/undergrad/budget/",
+      "university_id": "11111111-1111-4111-8111-111111111111",
+      "kind": "costs"
+    },
+    {
+      "url": "https://visit.stanford.edu/tours/virtual",
+      "university_id": "11111111-1111-4111-8111-111111111111",
+      "kind": "visit"
+    },
+    {
+      "url": "https://www.stanford.edu/about/history",
+      "university_id": "11111111-1111-4111-8111-111111111111",
+      "kind": "history"
+    },
+    {
+      "url": "https://admission.stanford.edu/student/",
+      "university_id": "11111111-1111-4111-8111-111111111111",
+      "kind": "student_stories"
+    },
+    {
+      "url": "https://catalog.mit.edu/degree-charts/",
+      "university_id": "22222222-2222-4222-8222-222222222222",
+      "kind": "programmes"
+    },
+    {
+      "url": "https://mitadmissions.org/apply/firstyear/deadlines-requirements/",
+      "university_id": "22222222-2222-4222-8222-222222222222",
+      "kind": "admissions"
+    },
+    {
+      "url": "https://sfs.mit.edu/undergraduate-students/the-cost-of-attendance/coa/",
+      "university_id": "22222222-2222-4222-8222-222222222222",
+      "kind": "costs"
+    },
+    {
+      "url": "https://www.mit.edu/visit/",
+      "university_id": "22222222-2222-4222-8222-222222222222",
+      "kind": "visit"
+    },
+    {
+      "url": "https://facts.mit.edu/origins/",
+      "university_id": "22222222-2222-4222-8222-222222222222",
+      "kind": "history"
+    },
+    {
+      "url": "https://mitadmissions.org/blogs/entry/meet-the-2026-bloggers/",
+      "university_id": "22222222-2222-4222-8222-222222222222",
+      "kind": "student_stories"
+    },
+    {
+      "url": "https://www.ox.ac.uk/admissions/undergraduate/courses/course-listing",
+      "university_id": "33333333-3333-4333-8333-333333333333",
+      "kind": "programmes"
+    },
+    {
+      "url": "https://www.ox.ac.uk/admissions/undergraduate/applying-to-oxford",
+      "university_id": "33333333-3333-4333-8333-333333333333",
+      "kind": "admissions"
+    },
+    {
+      "url": "https://www.ox.ac.uk/admissions/undergraduate/fees-and-funding/course-fees",
+      "university_id": "33333333-3333-4333-8333-333333333333",
+      "kind": "costs"
+    },
+    {
+      "url": "https://www.ox.ac.uk/admissions/undergraduate/visiting-and-outreach/virtual-tour",
+      "university_id": "33333333-3333-4333-8333-333333333333",
+      "kind": "visit"
+    },
+    {
+      "url": "https://future.utoronto.ca/undergraduate-programs",
+      "university_id": "55555555-5555-4555-8555-555555555555",
+      "kind": "programmes"
+    },
+    {
+      "url": "https://future.utoronto.ca/requirements",
+      "university_id": "55555555-5555-4555-8555-555555555555",
+      "kind": "admissions"
+    },
+    {
+      "url": "https://future.utoronto.ca/finances/fees",
+      "university_id": "55555555-5555-4555-8555-555555555555",
+      "kind": "costs"
+    },
+    {
+      "url": "https://future.utoronto.ca/virtual-campus-tour",
+      "university_id": "55555555-5555-4555-8555-555555555555",
+      "kind": "visit"
+    },
+    {
+      "url": "https://www.tum.de/en/studies/degree-programs",
+      "university_id": "44444444-4444-4444-8444-444444444444",
+      "kind": "programmes"
+    },
+    {
+      "url": "https://www.tum.de/en/studies/application",
+      "university_id": "44444444-4444-4444-8444-444444444444",
+      "kind": "admissions"
+    },
+    {
+      "url": "https://www.tum.de/en/studies/fees/tuition",
+      "university_id": "44444444-4444-4444-8444-444444444444",
+      "kind": "costs"
+    },
+    {
+      "url": "https://www.tum.de/en/about-tum/locations",
+      "university_id": "44444444-4444-4444-8444-444444444444",
+      "kind": "visit"
+    },
+    {
+      "url": "https://www.wiut.uz/undergraduate",
+      "university_id": "66666666-6666-4666-8666-666666666666",
+      "kind": "programmes"
+    },
+    {
+      "url": "https://www.wiut.uz/direct-entry-transfer",
+      "university_id": "66666666-6666-4666-8666-666666666666",
+      "kind": "admissions"
+    },
+    {
+      "url": "https://www.wiut.uz/tuition-fees",
+      "university_id": "66666666-6666-4666-8666-666666666666",
+      "kind": "costs"
+    },
+    {
+      "url": "https://www.wiut.uz/photo-gallery",
+      "university_id": "66666666-6666-4666-8666-666666666666",
+      "kind": "visit"
+    },
+    {
+      "url": "https://www.wiut.uz/about-wiut",
+      "university_id": "66666666-6666-4666-8666-666666666666",
+      "kind": "history"
+    },
+    {
+      "url": "https://www.harvard.edu/programs/",
+      "university_id": "39230496-b2fc-53ca-9303-1726c4ac13da",
+      "kind": "programmes"
+    },
+    {
+      "url": "https://college.harvard.edu/admissions/apply/application-requirements",
+      "university_id": "39230496-b2fc-53ca-9303-1726c4ac13da",
+      "kind": "admissions"
+    },
+    {
+      "url": "https://college.harvard.edu/financial-aid/how-aid-works",
+      "university_id": "39230496-b2fc-53ca-9303-1726c4ac13da",
+      "kind": "costs"
+    },
+    {
+      "url": "https://college.harvard.edu/admissions/explore-harvard/virtual-tour",
+      "university_id": "39230496-b2fc-53ca-9303-1726c4ac13da",
+      "kind": "visit"
+    },
+    {
+      "url": "https://college.harvard.edu/student-life/meet-our-students",
+      "university_id": "39230496-b2fc-53ca-9303-1726c4ac13da",
+      "kind": "stories"
+    },
+    {
+      "url": "https://www.harvard.edu/programs/computer-science/",
+      "university_id": "39230496-b2fc-53ca-9303-1726c4ac13da",
+      "kind": "programmes"
+    },
+    {
+      "url": "https://www.harvard.edu/programs/economics/",
+      "university_id": "39230496-b2fc-53ca-9303-1726c4ac13da",
+      "kind": "programmes"
+    },
+    {
+      "url": "https://www.harvard.edu/about/history/",
+      "university_id": "39230496-b2fc-53ca-9303-1726c4ac13da",
+      "kind": "history"
+    },
+    {
+      "url": "https://www.undergraduate.study.cam.ac.uk/courses",
+      "university_id": "ae117645-e24c-5269-8ed1-b5b826e53932",
+      "kind": "programmes"
+    },
+    {
+      "url": "https://www.undergraduate.study.cam.ac.uk/apply/before/entry-requirements",
+      "university_id": "ae117645-e24c-5269-8ed1-b5b826e53932",
+      "kind": "admissions"
+    },
+    {
+      "url": "https://www.undergraduate.study.cam.ac.uk/fees-and-finance/tuition-fees",
+      "university_id": "ae117645-e24c-5269-8ed1-b5b826e53932",
+      "kind": "costs"
+    },
+    {
+      "url": "https://www.undergraduate.study.cam.ac.uk/events/virtual-tour",
+      "university_id": "ae117645-e24c-5269-8ed1-b5b826e53932",
+      "kind": "visit"
+    },
+    {
+      "url": "https://www.trin.cam.ac.uk/about/historical-overview/",
+      "university_id": "ae117645-e24c-5269-8ed1-b5b826e53932",
+      "kind": "history"
+    },
+    {
+      "url": "https://www.imperial.ac.uk/study/courses/",
+      "university_id": "5ad45ea9-e51c-59e4-9ef7-6d3768be673c",
+      "kind": "programmes"
+    },
+    {
+      "url": "https://www.imperial.ac.uk/study/apply/undergraduate/entry-requirements/",
+      "university_id": "5ad45ea9-e51c-59e4-9ef7-6d3768be673c",
+      "kind": "admissions"
+    },
+    {
+      "url": "https://www.imperial.ac.uk/study/fees-and-funding/undergraduate/tuition-fees/",
+      "university_id": "5ad45ea9-e51c-59e4-9ef7-6d3768be673c",
+      "kind": "costs"
+    },
+    {
+      "url": "https://www.imperial.ac.uk/visit/campuses/",
+      "university_id": "5ad45ea9-e51c-59e4-9ef7-6d3768be673c",
+      "kind": "visit"
+    },
+    {
+      "url": "https://catalog.caltech.edu/current/general-information/education-and-research/",
+      "university_id": "99fbcf31-606d-5dac-880e-83ca25acd942",
+      "kind": "programmes"
+    },
+    {
+      "url": "https://www.admissions.caltech.edu/apply/first-year-applicants",
+      "university_id": "99fbcf31-606d-5dac-880e-83ca25acd942",
+      "kind": "admissions"
+    },
+    {
+      "url": "https://www.finaid.caltech.edu/costs",
+      "university_id": "99fbcf31-606d-5dac-880e-83ca25acd942",
+      "kind": "costs"
+    },
+    {
+      "url": "https://www.admissions.caltech.edu/visit",
+      "university_id": "99fbcf31-606d-5dac-880e-83ca25acd942",
+      "kind": "visit"
+    },
+    {
+      "url": "https://www.caltech.edu/about/legacy/history-milestones",
+      "university_id": "99fbcf31-606d-5dac-880e-83ca25acd942",
+      "kind": "history"
+    },
+    {
+      "url": "https://ethz.ch/en/studies/bachelor/bachelors-degree-programmes.html",
+      "university_id": "6020a2b5-3788-5dd1-b3f2-b9c6c7c6f99b",
+      "kind": "programmes"
+    },
+    {
+      "url": "https://ethz.ch/en/studies/bachelor/application/non-swiss-matriculation-certificate.html",
+      "university_id": "6020a2b5-3788-5dd1-b3f2-b9c6c7c6f99b",
+      "kind": "admissions"
+    },
+    {
+      "url": "https://ethz.ch/en/studies/financial/tuition-fees.html",
+      "university_id": "6020a2b5-3788-5dd1-b3f2-b9c6c7c6f99b",
+      "kind": "costs"
+    },
+    {
+      "url": "https://ethz.ch/en/campus/access.html",
+      "university_id": "6020a2b5-3788-5dd1-b3f2-b9c6c7c6f99b",
+      "kind": "visit"
+    },
+    {
+      "url": "https://www.nus.edu.sg/oam/undergraduate-programmes",
+      "university_id": "c66c3755-66a2-57a0-a80e-da984c310d29",
+      "kind": "programmes"
+    },
+    {
+      "url": "https://www.nus.edu.sg/oam/admissions/admissions",
+      "university_id": "c66c3755-66a2-57a0-a80e-da984c310d29",
+      "kind": "admissions"
+    },
+    {
+      "url": "https://nus.edu.sg/oam/financial-matters/tuition-fees",
+      "university_id": "c66c3755-66a2-57a0-a80e-da984c310d29",
+      "kind": "costs"
+    },
+    {
+      "url": "https://nus.edu.sg/oam/virtual-open-house",
+      "university_id": "c66c3755-66a2-57a0-a80e-da984c310d29",
+      "kind": "visit"
+    },
+    {
+      "url": "https://newuu.uz/en/undergraduate-program",
+      "university_id": "225b05b5-3c2b-5910-a8a9-6946b0fe9820",
+      "kind": "programmes"
+    },
+    {
+      "url": "https://newuu.uz/en/undergraduate-admissions",
+      "university_id": "225b05b5-3c2b-5910-a8a9-6946b0fe9820",
+      "kind": "admissions"
+    },
+    {
+      "url": "https://newuu.uz/en/scholarships/tuition-fees-overview",
+      "university_id": "225b05b5-3c2b-5910-a8a9-6946b0fe9820",
+      "kind": "costs"
+    },
+    {
+      "url": "https://newuu.uz/en/visit-discover-newuu",
+      "university_id": "225b05b5-3c2b-5910-a8a9-6946b0fe9820",
+      "kind": "visit"
+    },
+    {
+      "url": "https://inha.uz/program-overview-kor/",
+      "university_id": "9e20a5d2-bafa-5857-8f5d-4a89874bb2f1",
+      "kind": "programmes"
+    },
+    {
+      "url": "https://inha.uz/prospective-students/admissions/application-guideline/",
+      "university_id": "9e20a5d2-bafa-5857-8f5d-4a89874bb2f1",
+      "kind": "admissions"
+    },
+    {
+      "url": "https://inha.uz/prospective-students/admissions/tuitions/",
+      "university_id": "9e20a5d2-bafa-5857-8f5d-4a89874bb2f1",
+      "kind": "costs"
+    },
+    {
+      "url": "https://inha.uz/undergraduate/successful-students/",
+      "university_id": "9e20a5d2-bafa-5857-8f5d-4a89874bb2f1",
+      "kind": "student_stories"
+    },
+    {
+      "url": "https://polito.uz/",
+      "university_id": "9485c68f-a900-55f2-870b-a072bed954a8",
+      "kind": "programmes"
+    },
+    {
+      "url": "https://polito.uz/en/admission/",
+      "university_id": "9485c68f-a900-55f2-870b-a072bed954a8",
+      "kind": "admissions"
+    },
+    {
+      "url": "https://isa.nuu.uz/",
+      "university_id": "83647167-92a6-5f42-9507-1a7a62aebe83",
+      "kind": "programmes"
+    },
+    {
+      "url": "https://qabul.nuu.uz/en",
+      "university_id": "83647167-92a6-5f42-9507-1a7a62aebe83",
+      "kind": "admissions"
+    },
+    {
+      "url": "https://360.nuu.uz/",
+      "university_id": "83647167-92a6-5f42-9507-1a7a62aebe83",
+      "kind": "visit"
+    },
+    {
+      "url": "https://tuit.uz/en",
+      "university_id": "ce210bba-ca93-56fb-9456-51b8212c60f4",
+      "kind": "programmes"
+    },
+    {
+      "url": "https://admission.tuit.uz/meyoriy-hujjatlar.html",
+      "university_id": "ce210bba-ca93-56fb-9456-51b8212c60f4",
+      "kind": "admissions"
+    },
+    {
+      "url": "https://tuit.uz/en/iqtidorli-talabalarimiz",
+      "university_id": "ce210bba-ca93-56fb-9456-51b8212c60f4",
+      "kind": "student_stories"
+    }
+  ]
+}

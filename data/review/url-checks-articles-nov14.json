@@ -1,0 +1,578 @@
+{
+ "https://bigfuture.collegeboard.org/college-search": {
+  "url": "https://bigfuture.collegeboard.org/college-search",
+  "status": 200,
+  "finalUrl": "https://bigfuture.collegeboard.org/college-search",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.commonapp.org/apply/first-year-students": {
+  "url": "https://www.commonapp.org/apply/first-year-students",
+  "status": 200,
+  "finalUrl": "https://www.commonapp.org/apply/first-year-students/",
+  "ok": true,
+  "reason": "redirect to https://www.commonapp.org/apply/first-year-students/",
+  "checkedAt": "2026-11-14"
+ },
+ "https://studentaid.gov/complete-aid-process/how-calculated": {
+  "url": "https://studentaid.gov/complete-aid-process/how-calculated",
+  "status": 403,
+  "finalUrl": "https://studentaid.gov/complete-aid-process/how-calculated",
+  "ok": false,
+  "reason": "HTTP 403",
+  "checkedAt": "2026-11-14"
+ },
+ "https://collegescorecard.ed.gov/": {
+  "url": "https://collegescorecard.ed.gov/",
+  "status": 200,
+  "finalUrl": "https://collegescorecard.ed.gov/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.ucas.com/undergraduate/what-and-where-to-study/choosing-course": {
+  "url": "https://www.ucas.com/undergraduate/what-and-where-to-study/choosing-course",
+  "status": 404,
+  "finalUrl": "https://www.ucas.com/undergraduate/what-and-where-to-study/choosing-course",
+  "ok": false,
+  "reason": "HTTP 404",
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.daad.de/en/studying-in-germany/living-in-germany/finance/": {
+  "url": "https://www.daad.de/en/studying-in-germany/living-in-germany/finance/",
+  "status": 403,
+  "finalUrl": "https://www.daad.de/en/studying-in-germany/living-in-germany/finance/",
+  "ok": false,
+  "reason": "HTTP 403",
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.commonapp.org/blog/common-app-opens-application-launch-2026-27-season/": {
+  "url": "https://www.commonapp.org/blog/common-app-opens-application-launch-2026-27-season/",
+  "status": 200,
+  "finalUrl": "https://www.commonapp.org/blog/common-app-opens-application-launch-2026-27-season/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.gov.uk/student-visa/money": {
+  "url": "https://www.gov.uk/student-visa/money",
+  "status": 200,
+  "finalUrl": "https://www.gov.uk/student-visa/money",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://bigfuture.collegeboard.org/pay-for-college/college-costs": {
+  "url": "https://bigfuture.collegeboard.org/pay-for-college/college-costs",
+  "status": 200,
+  "finalUrl": "https://bigfuture.collegeboard.org/pay-for-college/get-started",
+  "ok": true,
+  "reason": "redirect to https://bigfuture.collegeboard.org/pay-for-college/get-started",
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.commonapp.org/blog/announcing-2026-2027-common-app-essay-prompts/": {
+  "url": "https://www.commonapp.org/blog/announcing-2026-2027-common-app-essay-prompts/",
+  "status": 200,
+  "finalUrl": "https://www.commonapp.org/blog/announcing-2026-2027-common-app-essay-prompts/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.make-it-in-germany.com/en/visa-recognition/visa-types/studying": {
+  "url": "https://www.make-it-in-germany.com/en/visa-recognition/visa-types/studying",
+  "status": 200,
+  "finalUrl": "https://www.make-it-in-germany.com/en/visa-recognition/visa-types/studying",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://ielts.org/test-centres": {
+  "url": "https://ielts.org/test-centres",
+  "status": 200,
+  "finalUrl": "https://ielts.org/test-centres",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://admissions.yale.edu/essay-topics": {
+  "url": "https://admissions.yale.edu/essay-topics",
+  "status": 200,
+  "finalUrl": "https://admissions.yale.edu/essay-topics",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.ets.org/toefl/test-takers/ibt/schedule.html": {
+  "url": "https://www.ets.org/toefl/test-takers/ibt/schedule.html",
+  "status": 200,
+  "finalUrl": "https://www.ets.org/toefl/test-takers/ibt/schedule.html",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://ielts.org/test-centres/idp-ielts-kazakhstan-almaty-test-room": {
+  "url": "https://ielts.org/test-centres/idp-ielts-kazakhstan-almaty-test-room",
+  "status": 200,
+  "finalUrl": "https://ielts.org/test-centres/idp-ielts-kazakhstan-almaty-test-room",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://ielts.org/test-centres/british-council-american-university-of-technology": {
+  "url": "https://ielts.org/test-centres/british-council-american-university-of-technology",
+  "status": 200,
+  "finalUrl": "https://ielts.org/test-centres/british-council-american-university-of-technology",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://englishtest.duolingo.com/institutions": {
+  "url": "https://englishtest.duolingo.com/institutions",
+  "status": 200,
+  "finalUrl": "https://englishtest.duolingo.com/institutions",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://appsupport.commonapp.org/": {
+  "url": "https://appsupport.commonapp.org/",
+  "status": 200,
+  "finalUrl": "https://appsupport.commonapp.org/applicantsupport/s/",
+  "ok": true,
+  "reason": "redirect to https://appsupport.commonapp.org/applicantsupport/s/",
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.ets.org/toefl/test-takers/ibt/where-to-test/country-list.html": {
+  "url": "https://www.ets.org/toefl/test-takers/ibt/where-to-test/country-list.html",
+  "status": 200,
+  "finalUrl": "https://www.ets.org/toefl/test-takers/ibt/where-to-test/country-list.html",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.ucas.com/international/international-students/english-language-requirements": {
+  "url": "https://www.ucas.com/international/international-students/english-language-requirements",
+  "status": 404,
+  "finalUrl": "https://www.ucas.com/international/international-students/english-language-requirements",
+  "ok": false,
+  "reason": "HTTP 404",
+  "checkedAt": "2026-11-14"
+ },
+ "https://ielts.org/test-centres/british-council-academia-education-center": {
+  "url": "https://ielts.org/test-centres/british-council-academia-education-center",
+  "status": 200,
+  "finalUrl": "https://ielts.org/test-centres/british-council-academia-education-center",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://ielts.org/test-centres/edu-action-dushanbe": {
+  "url": "https://ielts.org/test-centres/edu-action-dushanbe",
+  "status": 200,
+  "finalUrl": "https://ielts.org/test-centres/edu-action-dushanbe",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.daad.de/en/studying-in-germany/requirements/overview/": {
+  "url": "https://www.daad.de/en/studying-in-germany/requirements/overview/",
+  "status": 403,
+  "finalUrl": "https://www.daad.de/en/studying-in-germany/requirements/overview/",
+  "ok": false,
+  "reason": "HTTP 403",
+  "checkedAt": "2026-11-14"
+ },
+ "https://ielts.org/take-a-test/why-choose-ielts/ways-to-take-ielts": {
+  "url": "https://ielts.org/take-a-test/why-choose-ielts/ways-to-take-ielts",
+  "status": 200,
+  "finalUrl": "https://ielts.org/take-a-test/why-choose-ielts/ways-to-take-ielts",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.uni-assist.de/en/tools/info-country-by-country/details-country/country/uz/": {
+  "url": "https://www.uni-assist.de/en/tools/info-country-by-country/details-country/country/uz/",
+  "status": 200,
+  "finalUrl": "https://www.uni-assist.de/en/tools/info-country-by-country/details-country/country/uz/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.uni-assist.de/en/tools/info-country-by-country/details-country/country/kz/": {
+  "url": "https://www.uni-assist.de/en/tools/info-country-by-country/details-country/country/kz/",
+  "status": 200,
+  "finalUrl": "https://www.uni-assist.de/en/tools/info-country-by-country/details-country/country/kz/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.auswaertiges-amt.de/en/visa-service/visabestimmungen-node/sperrkonto-seite": {
+  "url": "https://www.auswaertiges-amt.de/en/visa-service/visabestimmungen-node/sperrkonto-seite",
+  "status": 200,
+  "finalUrl": "https://www.auswaertiges-amt.de/en/visa-service/visabestimmungen-node/sperrkonto-seite",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.uni-assist.de/en/tools/check-university-admission/": {
+  "url": "https://www.uni-assist.de/en/tools/check-university-admission/",
+  "status": 200,
+  "finalUrl": "https://www.uni-assist.de/en/tools/check-university-admission/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.uni-assist.de/en/how-to-apply/assemble-your-documents/educational-certificates/": {
+  "url": "https://www.uni-assist.de/en/how-to-apply/assemble-your-documents/educational-certificates/",
+  "status": 200,
+  "finalUrl": "https://www.uni-assist.de/en/how-to-apply/plan-your-application/educational-certificates-translations/",
+  "ok": true,
+  "reason": "redirect to https://www.uni-assist.de/en/how-to-apply/plan-your-application/educational-certificates-translations/",
+  "checkedAt": "2026-11-14"
+ },
+ "https://aps-india.de/faqs/": {
+  "url": "https://aps-india.de/faqs/",
+  "status": 200,
+  "finalUrl": "https://aps-india.de/faqs/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.ucas.com/applying/applying-to-university/references": {
+  "url": "https://www.ucas.com/applying/applying-to-university/references",
+  "status": 404,
+  "finalUrl": "https://www.ucas.com/applying/applying-to-university/references",
+  "ok": false,
+  "reason": "HTTP 404",
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.uni-assist.de/en/how-to-apply/plan-your-application/educational-certificates-translations/": {
+  "url": "https://www.uni-assist.de/en/how-to-apply/plan-your-application/educational-certificates-translations/",
+  "status": 200,
+  "finalUrl": "https://www.uni-assist.de/en/how-to-apply/plan-your-application/educational-certificates-translations/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.gov.uk/get-document-legalised": {
+  "url": "https://www.gov.uk/get-document-legalised",
+  "status": 200,
+  "finalUrl": "https://www.gov.uk/get-document-legalised",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.nis.edu.kz/en/": {
+  "url": "https://www.nis.edu.kz/en/",
+  "status": 200,
+  "finalUrl": "https://www.nis.edu.kz/en/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://satsuite.collegeboard.org/sat/test-center-search": {
+  "url": "https://satsuite.collegeboard.org/sat/test-center-search",
+  "status": 200,
+  "finalUrl": "https://satsuite.collegeboard.org/sat/test-center-search",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.hcch.net/en/instruments/conventions/status-table/?cid=41": {
+  "url": "https://www.hcch.net/en/instruments/conventions/status-table/?cid=41",
+  "status": 200,
+  "finalUrl": "https://www.hcch.net/en/instruments/conventions/status-table/?cid=41",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://satsuite.collegeboard.org/sat/registration/international-testing/fees": {
+  "url": "https://satsuite.collegeboard.org/sat/registration/international-testing/fees",
+  "status": 200,
+  "finalUrl": "https://satsuite.collegeboard.org/sat/registration/international-testing/fees",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://satsuite.collegeboard.org/sat/registration": {
+  "url": "https://satsuite.collegeboard.org/sat/registration",
+  "status": 200,
+  "finalUrl": "https://satsuite.collegeboard.org/sat/registration",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://satsuite.collegeboard.org/sat/dates-deadlines": {
+  "url": "https://satsuite.collegeboard.org/sat/dates-deadlines",
+  "status": 200,
+  "finalUrl": "https://satsuite.collegeboard.org/sat/dates-deadlines",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://international.collegeboard.org/students/sat/taking-sat-around-world": {
+  "url": "https://international.collegeboard.org/students/sat/taking-sat-around-world",
+  "status": 200,
+  "finalUrl": "https://international.collegeboard.org/students/sat/taking-sat-around-world",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://bolashak.gov.kz/en/": {
+  "url": "https://bolashak.gov.kz/en/",
+  "status": 200,
+  "finalUrl": "https://bolashak.gov.kz/en/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://satsuite.collegeboard.org/sat/scores/send-scores-to-colleges": {
+  "url": "https://satsuite.collegeboard.org/sat/scores/send-scores-to-colleges",
+  "status": 200,
+  "finalUrl": "https://satsuite.collegeboard.org/scores/sending-sat-scores",
+  "ok": true,
+  "reason": "redirect to https://satsuite.collegeboard.org/scores/sending-sat-scores",
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.studyinkorea.go.kr/ko/plan/gksNoticeRead.do?bbsId=BBSMSTR_000000000461&nttId=4385": {
+  "url": "https://www.studyinkorea.go.kr/ko/plan/gksNoticeRead.do?bbsId=BBSMSTR_000000000461&nttId=4385",
+  "status": 200,
+  "finalUrl": "https://www.studyinkorea.go.kr/ko/plan/gksNoticeRead.do?bbsId=BBSMSTR_000000000461&nttId=4385",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.studyinkorea.go.kr/ko/plan/scholarship.do": {
+  "url": "https://www.studyinkorea.go.kr/ko/plan/scholarship.do",
+  "status": 200,
+  "finalUrl": "https://www.studyinkorea.go.kr/ko/plan/scholarship.do",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://stipendiumhungaricum.hu/wp-content/uploads/2025/10/BA_MA_OTM_Call_for_Applications_2026_27.pdf": {
+  "url": "https://stipendiumhungaricum.hu/wp-content/uploads/2025/10/BA_MA_OTM_Call_for_Applications_2026_27.pdf",
+  "status": 200,
+  "finalUrl": "https://stipendiumhungaricum.hu/wp-content/uploads/2025/10/BA_MA_OTM_Call_for_Applications_2026_27.pdf",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.niied.go.kr/web/niied/contents/niied_eng_2024": {
+  "url": "https://www.niied.go.kr/web/niied/contents/niied_eng_2024",
+  "status": 200,
+  "finalUrl": "https://www.niied.go.kr/web/niied/contents/niied_eng_2024",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://stipendiumhungaricum.hu/wp-content/uploads/2025/11/Application_Guide_for_the_Stipendium_Hungaricum_Programme_2026_27_final.pdf": {
+  "url": "https://stipendiumhungaricum.hu/wp-content/uploads/2025/11/Application_Guide_for_the_Stipendium_Hungaricum_Programme_2026_27_final.pdf",
+  "status": 200,
+  "finalUrl": "https://stipendiumhungaricum.hu/wp-content/uploads/2025/11/Application_Guide_for_the_Stipendium_Hungaricum_Programme_2026_27_final.pdf",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://stipendiumhungaricum.hu/partners/": {
+  "url": "https://stipendiumhungaricum.hu/partners/",
+  "status": 200,
+  "finalUrl": "https://stipendiumhungaricum.hu/partners/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://travel.state.gov/content/travel/en/us-visas/study/student-visa.html": {
+  "url": "https://travel.state.gov/content/travel/en/us-visas/study/student-visa.html",
+  "status": 403,
+  "finalUrl": "https://travel.state.gov/content/travel/en/us-visas/study/student-visa.html",
+  "ok": false,
+  "reason": "HTTP 403",
+  "checkedAt": "2026-11-14"
+ },
+ "https://travel.state.gov/content/travel/en/us-visas/visa-information-resources/fees/fees-visa-services.html": {
+  "url": "https://travel.state.gov/content/travel/en/us-visas/visa-information-resources/fees/fees-visa-services.html",
+  "status": 403,
+  "finalUrl": "https://travel.state.gov/content/travel/en/us-visas/visa-information-resources/fees/fees-visa-services.html",
+  "ok": false,
+  "reason": "HTTP 403",
+  "checkedAt": "2026-11-14"
+ },
+ "https://stipendiumhungaricum.hu/apply/": {
+  "url": "https://stipendiumhungaricum.hu/apply/",
+  "status": 200,
+  "finalUrl": "https://stipendiumhungaricum.hu/apply/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.studyinkorea.go.kr/ko/search/universityInfo.do": {
+  "url": "https://www.studyinkorea.go.kr/ko/search/universityInfo.do",
+  "status": 200,
+  "finalUrl": "https://www.studyinkorea.go.kr/ko/main.do;jsessionid=fv0_bgsE6KyoTNfUrAPMcVl0UqywHayViJGo2Z0N.studyinkorea10?message=",
+  "ok": true,
+  "reason": "redirect to https://www.studyinkorea.go.kr/ko/main.do;jsessionid=fv0_bgsE6KyoTNfUrAPMcVl0UqywHayViJGo2Z0N.studyinkorea10?message=",
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.gov.uk/student-visa/documents-you-must-provide": {
+  "url": "https://www.gov.uk/student-visa/documents-you-must-provide",
+  "status": 200,
+  "finalUrl": "https://www.gov.uk/student-visa/documents-you-must-provide",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.gov.uk/healthcare-immigration-application/how-much-pay": {
+  "url": "https://www.gov.uk/healthcare-immigration-application/how-much-pay",
+  "status": 200,
+  "finalUrl": "https://www.gov.uk/healthcare-immigration-application/how-much-pay",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.gov.uk/student-visa/overview": {
+  "url": "https://www.gov.uk/student-visa/overview",
+  "status": 200,
+  "finalUrl": "https://www.gov.uk/student-visa/overview",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.auswaertiges-amt.de/en/visa-service/215870-215870": {
+  "url": "https://www.auswaertiges-amt.de/en/visa-service/215870-215870",
+  "status": 200,
+  "finalUrl": "https://www.auswaertiges-amt.de/en/visa-service/215870-215870",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.turkiyeburslari.gov.tr/calendar": {
+  "url": "https://www.turkiyeburslari.gov.tr/calendar",
+  "status": 200,
+  "finalUrl": "https://www.turkiyeburslari.gov.tr/calendar",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.ice.gov/sevis/i901": {
+  "url": "https://www.ice.gov/sevis/i901",
+  "status": 200,
+  "finalUrl": "https://www.ice.gov/sevis/i901",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.osym.gov.tr/TR,29108/2026-tr-yos1.html": {
+  "url": "https://www.osym.gov.tr/TR,29108/2026-tr-yos1.html",
+  "status": 404,
+  "finalUrl": "https://www.osym.gov.tr/TR,29108/2026-tr-yos1.html",
+  "ok": false,
+  "reason": "HTTP 404",
+  "checkedAt": "2026-11-14"
+ },
+ "https://cdn.studyinkorea.go.kr/public/v3/download/gks_undergraduate_user_guide.pdf": {
+  "url": "https://cdn.studyinkorea.go.kr/public/v3/download/gks_undergraduate_user_guide.pdf",
+  "status": 200,
+  "finalUrl": "https://cdn.studyinkorea.go.kr/public/v3/download/gks_undergraduate_user_guide.pdf",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.ucas.com/events/2027-entry-deadline-for-all-undergraduate-courses-except-those-with-a-15-october-deadline-475546": {
+  "url": "https://www.ucas.com/events/2027-entry-deadline-for-all-undergraduate-courses-except-those-with-a-15-october-deadline-475546",
+  "status": 200,
+  "finalUrl": "https://www.ucas.com/events/2027-entry-deadline-for-all-undergraduate-courses-except-those-with-a-15-october-deadline-475546",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.turkiyeburslari.gov.tr/fulltimeprograms": {
+  "url": "https://www.turkiyeburslari.gov.tr/fulltimeprograms",
+  "status": 200,
+  "finalUrl": "https://www.turkiyeburslari.gov.tr/fulltimeprograms",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.ucas.com/applying/applying-to-university/dates-and-deadlines-for-uni-applications": {
+  "url": "https://www.ucas.com/applying/applying-to-university/dates-and-deadlines-for-uni-applications",
+  "status": 200,
+  "finalUrl": "https://www.ucas.com/applying/applying-to-university/dates-and-deadlines-for-uni-applications",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.ucas.com/applying/applying-to-university/writing-your-personal-statement/how-to-write-your-personal-statement-for-2026-entry-onwards": {
+  "url": "https://www.ucas.com/applying/applying-to-university/writing-your-personal-statement/how-to-write-your-personal-statement-for-2026-entry-onwards",
+  "status": 200,
+  "finalUrl": "https://www.ucas.com/applying/applying-to-university/writing-your-personal-statement/how-to-write-your-personal-statement",
+  "ok": true,
+  "reason": "redirect to https://www.ucas.com/applying/applying-to-university/writing-your-personal-statement/how-to-write-your-personal-statement",
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.studyinturkiye.gov.tr/": {
+  "url": "https://www.studyinturkiye.gov.tr/",
+  "status": 200,
+  "finalUrl": "https://www.studyinturkiye.gov.tr/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.ucas.com/applying/applying-to-university": {
+  "url": "https://www.ucas.com/applying/applying-to-university",
+  "status": 200,
+  "finalUrl": "https://www.ucas.com/applying/applying-university",
+  "ok": true,
+  "reason": "redirect to https://www.ucas.com/applying/applying-university",
+  "checkedAt": "2026-11-14"
+ },
+ "https://cssprofile.collegeboard.org/international-students": {
+  "url": "https://cssprofile.collegeboard.org/international-students",
+  "status": 200,
+  "finalUrl": "https://cssprofile.collegeboard.org/international-students",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://cssprofile.collegeboard.org/help-center/what-do-i-submit-idoc-if-my-parents-do-not-file-us-tax-returns": {
+  "url": "https://cssprofile.collegeboard.org/help-center/what-do-i-submit-idoc-if-my-parents-do-not-file-us-tax-returns",
+  "status": 200,
+  "finalUrl": "https://cssprofile.collegeboard.org/help-center/what-do-i-submit-idoc-if-my-parents-do-not-file-us-tax-returns",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://admissions.yale.edu/financial-aid": {
+  "url": "https://admissions.yale.edu/financial-aid",
+  "status": 200,
+  "finalUrl": "https://admissions.yale.edu/affordability",
+  "ok": true,
+  "reason": "redirect to https://admissions.yale.edu/affordability",
+  "checkedAt": "2026-11-14"
+ },
+ "https://cssprofile.collegeboard.org/deadlines": {
+  "url": "https://cssprofile.collegeboard.org/deadlines",
+  "status": 404,
+  "finalUrl": "https://cssprofile.collegeboard.org/deadlines",
+  "ok": false,
+  "reason": "HTTP 404",
+  "checkedAt": "2026-11-14"
+ },
+ "https://college.harvard.edu/financial-aid/apply-financial-aid/international-students": {
+  "url": "https://college.harvard.edu/financial-aid/apply-financial-aid/international-students",
+  "status": 404,
+  "finalUrl": "https://college.harvard.edu/financial-aid/apply-financial-aid/international-students",
+  "ok": false,
+  "reason": "HTTP 404",
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.enic.org.uk/": {
+  "url": "https://www.enic.org.uk/",
+  "status": 200,
+  "finalUrl": "https://www.enic.org.uk/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ }
+}

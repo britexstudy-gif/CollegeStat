@@ -1,4 +1,6 @@
 import { createClient, SupabaseClient } from "@supabase/supabase-js";
+// NOTE: NEXT_PUBLIC_* env is baked at build time (see vite.config.ts `define`).
+// Changing Supabase URL/keys requires a rebuild; a server restart alone is not enough.
 const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
 const key = process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY || process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
 export const supabaseConfigured = Boolean(

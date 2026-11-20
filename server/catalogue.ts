@@ -14,7 +14,7 @@ export const referenceCatalogue = reference.map((u) => {
       openalex: identity.openalex,
       wikidata: identity.wikidata,
       ipeds: identity.unitid,
-      opeid: "opeid" in identity ? identity.opeid : null,
+      opeid: identity.opeid ?? null,
     } : {},
     imported_records: imported.records.filter(
       (r) => r.university_id === u.id,

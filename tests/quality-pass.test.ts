@@ -20,6 +20,9 @@ import { createElement } from "react";
 import { renderToStaticMarkup } from "react-dom/server";
 import { HistoryChart } from "../charts/research-charts";
 import requirements from "../data/published/requirements-current.json";
+import reviewedRequirements from "../data/published/reviewed-requirements-oct05.json";
+import { originalSourceURL, SourceEvidenceDetails } from "../components/college/primitives";
+import type { Sourced } from "../lib/domain";
 const mit = globalCatalogue.find(u => u.slug === "mit")!;
 const toronto = globalCatalogue.find(u => u.slug === "toronto")!;
 test("lens maps bend only the rim and keep memory bounded", () => {
@@ -114,13 +117,29 @@ test("one-year and conflicting historical populations still expose switching and
   assert.ok(html.includes("10") && html.includes("20"));
 });
 test("reviewed requirements retain alternatives, conditional scope and test-date-specific scales", () => {
+  const reviewed = new Map(reviewedRequirements.records.map(r => [r.id, r]));
   for(const r of requirements) {
     const u=globalCatalogue.find(u=>u.id===r.university_id)!;
     assert.ok(u.requirements.some(row=>row.id===r.id));
     assert.equal(r.source_id,r.data_sources.id);
     assert.ok(r.source_url.startsWith("https://"));
-    assert.equal(r.year,null,"A verification date does not invent an intake year");
+    if (r.source_url === "https://inha.uz/prospective-students/admissions/application-guideline/") {
+      assert.equal(r.year, 2026, "The official guideline explicitly names the 2026–2027 intake");
+      assert.ok(r.student_category.includes("Korean track") && r.notes.includes("2026–2027"));
+    } else {
+      const receipt = reviewed.get(r.id);
+      if (receipt) {
+        assert.equal(r.year, receipt.year, "Installed intake year must match its reviewed official policy");
+        if (receipt.year !== null) {
+          assert.ok("reporting_period" in receipt.evidence && receipt.evidence.reporting_period?.includes(String(receipt.year)), "Only an explicitly announced admission cycle can supply an intake year");
+        }
+      } else assert.equal(r.year,null,"A verification date does not invent an intake year");
+    }
   }
+  assert.equal(requirements.find(r => r.id === "07ea0577-51a2-5915-9d4a-0fee7dfb70ed")!.year, 2026, "UCA announces the 2026 admission cycle");
+  assert.equal(requirements.find(r => r.id === "79de29c0-c97a-5a88-b037-83d464956760")!.year, 2027, "Aalto announces 2027 entry despite its 2026 verification date");
+  assert.equal(requirements.find(r => r.id === "9bc3cd06-0977-5040-8093-33408d9be2a4")!.year, null, "Toronto's undated policy must retain an unspecified intake year");
+  assert.equal(requirements.find(r => r.id === "3f7b8e23-4ab6-5936-a0f2-6e6e105aa0d1")!.year, null, "The Nazarbayev policy's publication date does not announce an intake cohort");
   const toefl=toronto.requirements.find(r=>r.kind==="TOEFL")!;
   assert.equal(toefl.minimum,4.5);
   assert.ok(toefl.label.includes("1–6") && toefl.student_category.includes("21 January 2026"));
@@ -130,4 +149,23 @@ test("reviewed requirements retain alternatives, conditional scope and test-date
   const oxford=globalCatalogue.find(u=>u.slug==="oxford")!;
   assert.ok(!oxford.requirements.some(r=>r.kind==="TOEFL"));
   assert.ok(oxford.requirements.some(r=>r.notes?.includes("not accepted while under review")));
+});
+
+test("evidence views retain population, period, scope, retrieval and safe dictionary links", () => {
+  const record: Sourced = {
+    id: "survey", year: 2024, source_id: "source", verification_status: "verified", verified_at: "2026-10-05", notes: null,
+    source_url: "https://nces.ed.gov/ipeds/use-the-data/download-access-database",
+    evidence: { population: "Full-time, first-time undergraduates", reporting_period: "2023–24 academic year", scope: "Pell Grant recipients", retrieved_at: "2026-09-26", dictionary_url: "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx?gotoReportId=7&surveyNumber=7" },
+  };
+  const html = renderToStaticMarkup(createElement(SourceEvidenceDetails, { record }));
+  for (const value of ["Population", "Full-time, first-time undergraduates", "2023–24 academic year", "Pell Grant recipients", "Sep 26, 2026", "View field definitions"]) assert.ok(html.includes(value));
+  assert.equal(originalSourceURL(record), record.source_url, "A figure with an exact source URL needs no joined source to remain traceable");
+  assert.equal(renderToStaticMarkup(createElement(SourceEvidenceDetails, { record: { ...record, evidence: { population: "  ", scope: "", dictionary_url: "javascript:alert(1)", retrieved_at: "invalid date" } } })), "");
+  const fallback = renderToStaticMarkup(createElement(SourceEvidenceDetails, { record: { ...record, evidence: { ...record.evidence, retrieved_at: undefined, source_snapshot_retrieved_at: "2026-09-25T08:18:02Z" } } }));
+  assert.ok(fallback.includes("Sep 25, 2026"));
+  const joinedSource = { id: "source", name: "IPEDS", organization: "NCES", url: "https://nces.ed.gov/ipeds/", source_type: "government", license_notes: null, retrieved_at: "2026-09-24" };
+  const sourceDate = renderToStaticMarkup(createElement(SourceEvidenceDetails, { record: { ...record, data_sources: joinedSource } }));
+  assert.ok(sourceDate.includes("Sep 24, 2026") && !sourceDate.includes("Sep 26, 2026"), "Joined source retrieval remains authoritative when supplied");
+  assert.equal(originalSourceURL({ ...record, source_url: undefined, data_sources: joinedSource }), joinedSource.url);
+  assert.equal(originalSourceURL({ ...record, source_url: "javascript:alert(1)" }), undefined);
 });

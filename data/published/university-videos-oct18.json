@@ -1,0 +1,1528 @@
+{
+ "checked_at": "2026-10-18",
+ "method": "Videos published by each university's official YouTube channel (channel linked from the university's own website); each re-verified through YouTube oEmbed author_url.",
+ "records": {
+  "22222222-2222-4222-8222-222222222222": [
+   {
+    "youtube_id": "cLJko7J4T4E",
+    "title": "This is MIT",
+    "kind": "introduction",
+    "channel": "Massachusetts Institute of Technology (MIT)",
+    "channel_url": "https://www.youtube.com/@mit",
+    "source_url": "https://www.youtube.com/watch?v=cLJko7J4T4E",
+    "checked_at": "2026-10-18"
+   },
+   {
+    "youtube_id": "K1iTqjGDmbE",
+    "title": "Welcome to MIT",
+    "kind": "introduction",
+    "channel": "Massachusetts Institute of Technology (MIT)",
+    "channel_url": "https://www.youtube.com/@mit",
+    "source_url": "https://www.youtube.com/watch?v=K1iTqjGDmbE",
+    "checked_at": "2026-10-18"
+   }
+  ],
+  "5ad45ea9-e51c-59e4-9ef7-6d3768be673c": [
+   {
+    "youtube_id": "rAKRo8lXHDA",
+    "title": "Vijay's tour of South Kensington Campus | Imperial College London",
+    "kind": "campus_tour",
+    "channel": "Imperial College London",
+    "channel_url": "https://www.youtube.com/@imperialcollegevideo",
+    "source_url": "https://www.youtube.com/watch?v=rAKRo8lXHDA",
+    "checked_at": "2026-10-18"
+   },
+   {
+    "youtube_id": "fCOJVr6gN0w",
+    "title": "Undergraduate Admissions Overview",
+    "kind": "admissions",
+    "channel": "Imperial College London",
+    "channel_url": "https://www.youtube.com/@imperialcollegevideo",
+    "source_url": "https://www.youtube.com/watch?v=fCOJVr6gN0w",
+    "checked_at": "2026-10-18"
+   },
+   {
+    "youtube_id": "jPG_MtSHL9c",
+    "title": "Welcome to Imperial - 2025",
+    "kind": "introduction",
+    "channel": "Imperial College London",
+    "channel_url": "https://www.youtube.com/@imperialcollegevideo",
+    "source_url": "https://www.youtube.com/watch?v=jPG_MtSHL9c",
+    "checked_at": "2026-10-18"
+   }
+  ],
+  "11111111-1111-4111-8111-111111111111": [
+   {
+    "youtube_id": "Z05jgHx58TE",
+    "title": "Tour Stanford University by bike",
+    "kind": "campus_tour",
+    "channel": "Stanford",
+    "channel_url": "https://www.youtube.com/@stanford",
+    "source_url": "https://www.youtube.com/watch?v=Z05jgHx58TE",
+    "checked_at": "2026-10-18"
+   },
+   {
+    "youtube_id": "95N_spFNEkY",
+    "title": "Welcome to Stanford",
+    "kind": "introduction",
+    "channel": "Stanford",
+    "channel_url": "https://www.youtube.com/@stanford",
+    "source_url": "https://www.youtube.com/watch?v=95N_spFNEkY",
+    "checked_at": "2026-10-18"
+   },
+   {
+    "youtube_id": "ceTRIRbUwRY",
+    "title": "What our international students brought to campus 🌎",
+    "kind": "student_life",
+    "channel": "Stanford",
+    "channel_url": "https://www.youtube.com/@stanford",
+    "source_url": "https://www.youtube.com/watch?v=ceTRIRbUwRY",
+    "checked_at": "2026-10-18"
+   }
+  ],
+  "33333333-3333-4333-8333-333333333333": [
+   {
+    "youtube_id": "zcScv_MVj2Y",
+    "title": "Oxford Colleges  –  what exactly are they?",
+    "kind": "introduction",
+    "channel": "University of Oxford",
+    "channel_url": "https://www.youtube.com/@oxforduniversity",
+    "source_url": "https://www.youtube.com/watch?v=zcScv_MVj2Y",
+    "checked_at": "2026-10-18"
+   },
+   {
+    "youtube_id": "OxdNHZCIjYM",
+    "title": "Five top tips for getting into Oxford University",
+    "kind": "admissions",
+    "channel": "University of Oxford",
+    "channel_url": "https://www.youtube.com/@oxforduniversity",
+    "source_url": "https://www.youtube.com/watch?v=OxdNHZCIjYM",
+    "checked_at": "2026-10-18"
+   },
+   {
+    "youtube_id": "9STLeUcGslM",
+    "title": "Life when you study at Oxford University",
+    "kind": "student_life",
+    "channel": "University of Oxford",
+    "channel_url": "https://www.youtube.com/@oxforduniversity",
+    "source_url": "https://www.youtube.com/watch?v=9STLeUcGslM",
+    "checked_at": "2026-10-18"
+   }
+  ],
+  "39230496-b2fc-53ca-9303-1726c4ac13da": [
+   {
+    "youtube_id": "t5akgsQsOSk",
+    "title": "Take a student-led tour of Harvard University",
+    "kind": "campus_tour",
+    "channel": "Harvard University",
+    "channel_url": "https://www.youtube.com/@harvard",
+    "source_url": "https://www.youtube.com/watch?v=t5akgsQsOSk",
+    "checked_at": "2026-10-18"
+   },
+   {
+    "youtube_id": "41yqshrNJ7E",
+    "title": "The Class of 2030 is moving in! Welcome to Harvard",
+    "kind": "student_life",
+    "channel": "Harvard University",
+    "channel_url": "https://www.youtube.com/@harvard",
+    "source_url": "https://www.youtube.com/watch?v=41yqshrNJ7E",
+    "checked_at": "2026-10-18"
+   },
+   {
+    "youtube_id": "LwEiMbL8PJs",
+    "title": "A quick peek at life on campus #Harvard #HarvardUniversity",
+    "kind": "student_life",
+    "channel": "Harvard University",
+    "channel_url": "https://www.youtube.com/@harvard",
+    "source_url": "https://www.youtube.com/watch?v=LwEiMbL8PJs",
+    "checked_at": "2026-10-18"
+   }
+  ],
+  "ae117645-e24c-5269-8ed1-b5b826e53932": [
+   {
+    "youtube_id": "037EDsLImmA",
+    "title": "College tour at the 2023 Cambridge Open Days | #CamOpenDay23",
+    "kind": "campus_tour",
+    "channel": "Cambridge University",
+    "channel_url": "https://www.youtube.com/@cambridgeuniversity",
+    "source_url": "https://www.youtube.com/watch?v=037EDsLImmA",
+    "checked_at": "2026-10-18"
+   },
+   {
+    "youtube_id": "73qyBnsUi8A",
+    "title": "The Undergraduate Application Process at Cambridge University | #GoingToCambridge",
+    "kind": "admissions",
+    "channel": "Cambridge University",
+    "channel_url": "https://www.youtube.com/@cambridgeuniversity",
+    "source_url": "https://www.youtube.com/watch?v=73qyBnsUi8A",
+    "checked_at": "2026-10-18"
+   },
+   {
+    "youtube_id": "526XZvbCv2c",
+    "title": "International Applicants: How to Apply for Undergraduate Study | #GoingToCambridge",
+    "kind": "admissions",
+    "channel": "Cambridge University",
+    "channel_url": "https://www.youtube.com/@cambridgeuniversity",
+    "source_url": "https://www.youtube.com/watch?v=526XZvbCv2c",
+    "checked_at": "2026-10-18"
+   }
+  ],
+  "6020a2b5-3788-5dd1-b3f2-b9c6c7c6f99b": [
+   {
+    "youtube_id": "s_awnXxt17U",
+    "title": "Campus Tour: ETH Zurich, Hönggerberg (English)",
+    "kind": "campus_tour",
+    "channel": "ETH Zürich",
+    "channel_url": "https://www.youtube.com/@ethzurich",
+    "source_url": "https://www.youtube.com/watch?v=s_awnXxt17U",
+    "checked_at": "2026-10-18"
+   },
+   {
+    "youtube_id": "OeQf-eXBbzE",
+    "title": "Campus Tour: ETH Zurich, Zentrum (English)",
+    "kind": "campus_tour",
+    "channel": "ETH Zürich",
+    "channel_url": "https://www.youtube.com/@ethzurich",
+    "source_url": "https://www.youtube.com/watch?v=OeQf-eXBbzE",
+    "checked_at": "2026-10-18"
+   },
+   {
+    "youtube_id": "Kr6uyVFkjZg",
+    "title": "Herzlich Willkommen an der ETH Zürich! Welcome to ETH Zurich!",
+    "kind": "introduction",
+    "channel": "ETH Zürich",
+    "channel_url": "https://www.youtube.com/@ethzurich",
+    "source_url": "https://www.youtube.com/watch?v=Kr6uyVFkjZg",
+    "checked_at": "2026-10-18"
+   }
+  ],
+  "b37d730b-421c-5ed6-a807-3d66e7ca21f7": [
+   {
+    "youtube_id": "KGoMpPW_y0Q",
+    "title": "the University of Hong Kong (HKU) campus tour",
+    "kind": "campus_tour",
+    "channel": "The University of Hong Kong",
+    "channel_url": "https://www.youtube.com/@abouthku",
+    "source_url": "https://www.youtube.com/watch?v=KGoMpPW_y0Q",
+    "checked_at": "2026-10-18"
+   },
+   {
+    "youtube_id": "FWecEwwbWIg",
+    "title": "IDAY 2025 | Admissions Talk for Students with International Qualifications (English)",
+    "kind": "admissions",
+    "channel": "The University of Hong Kong",
+    "channel_url": "https://www.youtube.com/@abouthku",
+    "source_url": "https://www.youtube.com/watch?v=FWecEwwbWIg",
+    "checked_at": "2026-10-18"
+   },
+   {
+    "youtube_id": "_BvKh2EIfhw",
+    "title": "HKU International Admissions Talk (2026 Undergraduate Intake)",
+    "kind": "admissions",
+    "channel": "The University of Hong Kong",
+    "channel_url": "https://www.youtube.com/@abouthku",
+    "source_url": "https://www.youtube.com/watch?v=_BvKh2EIfhw",
+    "checked_at": "2026-10-18"
+   }
+  ],
+  "f5a6d73a-5fd2-55de-83af-3da2c25e18ef": [
+   {
+    "youtube_id": "LxeEmJPxJVg",
+    "title": "360-degree tour of beautiful NTU smart campus from an open-top bus in under 3 minutes",
+    "kind": "campus_tour",
+    "channel": "NTUsg",
+    "channel_url": "https://www.youtube.com/@NTUsg",
+    "source_url": "https://www.youtube.com/watch?v=LxeEmJPxJVg",
+    "checked_at": "2026-10-18"
+   },
+   {
+    "youtube_id": "GOyA6SfP5UA",
+    "title": "Life at #NTUsg – Living on Campus",
+    "kind": "student_life",
+    "channel": "NTUsg",
+    "channel_url": "https://www.youtube.com/@NTUsg",
+    "source_url": "https://www.youtube.com/watch?v=GOyA6SfP5UA",
+    "checked_at": "2026-10-18"
+   },
+   {
+    "youtube_id": "xlc_VQbuaPQ",
+    "title": "#WhyNTU (part 2)",
+    "kind": "introduction",
+    "channel": "NTUsg",
+    "channel_url": "https://www.youtube.com/@NTUsg",
+    "source_url": "https://www.youtube.com/watch?v=xlc_VQbuaPQ",
+    "checked_at": "2026-10-18"
+   }
+  ],
+  "7add53a9-8ddf-5e84-bd4d-a7c8638dbb95": [
+   {
+    "youtube_id": "vueeZd2tWTc",
+    "title": "The historic, iconic, and innovative architecture of the University of Chicago",
+    "kind": "campus_tour",
+    "channel": "The University of Chicago",
+    "channel_url": "https://www.youtube.com/@UChicago",
+    "source_url": "https://www.youtube.com/watch?v=vueeZd2tWTc",
+    "checked_at": "2026-10-18"
+   },
+   {
+    "youtube_id": "lSiZpVEgsuc",
+    "title": "UChicago Study With Me | Main Quadrangles",
+    "kind": "student_life",
+    "channel": "The University of Chicago",
+    "channel_url": "https://www.youtube.com/@UChicago",
+    "source_url": "https://www.youtube.com/watch?v=lSiZpVEgsuc",
+    "checked_at": "2026-10-18"
+   },
+   {
+    "youtube_id": "JkywcJ7Cesc",
+    "title": "Welcome to UChicago: 2019-2020",
+    "kind": "introduction",
+    "channel": "The University of Chicago",
+    "channel_url": "https://www.youtube.com/@UChicago",
+    "source_url": "https://www.youtube.com/watch?v=JkywcJ7Cesc",
+    "checked_at": "2026-10-18"
+   }
+  ],
+  "8488d97e-a227-5fbd-b7b4-33a1194df723": [
+   {
+    "youtube_id": "mDWzc6hPJdk",
+    "title": "Experience Cornell: Main Campus Video Tours",
+    "kind": "campus_tour",
+    "channel": "Cornell University",
+    "channel_url": "https://www.youtube.com/@Cornell",
+    "source_url": "https://www.youtube.com/watch?v=mDWzc6hPJdk",
+    "checked_at": "2026-10-18"
+   },
+   {
+    "youtube_id": "PPaCGXPeXH4",
+    "title": "Get to know Cornell: Exploring Campus",
+    "kind": "campus_tour",
+    "channel": "Cornell University",
+    "channel_url": "https://www.youtube.com/@Cornell",
+    "source_url": "https://www.youtube.com/watch?v=PPaCGXPeXH4",
+    "checked_at": "2026-10-18"
+   },
+   {
+    "youtube_id": "XJT5MTwErmo",
+    "title": "Get to know Cornell: Finding Community",
+    "kind": "student_life",
+    "channel": "Cornell University",
+    "channel_url": "https://www.youtube.com/@Cornell",
+    "source_url": "https://www.youtube.com/watch?v=XJT5MTwErmo",
+    "checked_at": "2026-10-18"
+   }
+  ],
+  "e67501b3-2e87-5598-b9e3-e28fe4101f68": [
+   {
+    "youtube_id": "0KM4SRygSJ8",
+    "title": "This is Berkeley!",
+    "kind": "introduction",
+    "channel": "UC Berkeley",
+    "channel_url": "https://www.youtube.com/@BerkeleyNews",
+    "source_url": "https://www.youtube.com/watch?v=0KM4SRygSJ8",
+    "checked_at": "2026-10-18"
+   },
+   {
+    "youtube_id": "1H7TwDNHB7U",
+    "title": "Welcome back to another groundbreaking year of research, excellence, and change! #ucberkeley",
+    "kind": "student_life",
+    "channel": "UC Berkeley",
+    "channel_url": "https://www.youtube.com/@BerkeleyNews",
+    "source_url": "https://www.youtube.com/watch?v=1H7TwDNHB7U",
+    "checked_at": "2026-10-18"
+   }
+  ],
+  "7deae08f-080e-56cd-8aa8-ca05c941f0cc": [
+   {
+    "youtube_id": "kZr-VE8r88U",
+    "title": "Discover CUHK (English)",
+    "kind": "introduction",
+    "channel": "CUHK Channel",
+    "channel_url": "https://www.youtube.com/@CUHKchannel",
+    "source_url": "https://www.youtube.com/watch?v=kZr-VE8r88U",
+    "checked_at": "2026-10-18"
+   },
+   {
+    "youtube_id": "u9Q8w9Wv9RA",
+    "title": "360º CUHK Virtual Campus Tour (English Version) 360º中大校園遊 (英文版)",
+    "kind": "campus_tour",
+    "channel": "CUHK Channel",
+    "channel_url": "https://www.youtube.com/@CUHKchannel",
+    "source_url": "https://www.youtube.com/watch?v=u9Q8w9Wv9RA",
+    "checked_at": "2026-10-18"
+   },
+   {
+    "youtube_id": "_Q5TOCT3B3I",
+    "title": "CUHK Experience Tour",
+    "kind": "campus_tour",
+    "channel": "CUHK Channel",
+    "channel_url": "https://www.youtube.com/@CUHKchannel",
+    "source_url": "https://www.youtube.com/watch?v=_Q5TOCT3B3I",
+    "checked_at": "2026-10-18"
+   }
+  ],
+  "34f9bd5c-1c24-5d4f-880c-4a342627a148": [
+   {
+    "youtube_id": "efpUpU55s5A",
+    "title": "UNSW Campus Tour",
+    "kind": "campus_tour",
+    "channel": "UNSW",
+    "channel_url": "https://www.youtube.com/@UNSW",
+    "source_url": "https://www.youtube.com/watch?v=efpUpU55s5A",
+    "checked_at": "2026-10-18"
+   },
+   {
+    "youtube_id": "1pvptVUA5HM",
+    "title": "Meet our student: Shadman | What is it like to study at UNSW Sydney as an international student?",
+    "kind": "student_life",
+    "channel": "UNSW",
+    "channel_url": "https://www.youtube.com/@UNSW",
+    "source_url": "https://www.youtube.com/watch?v=1pvptVUA5HM",
+    "checked_at": "2026-10-18"
+   },
+   {
+    "youtube_id": "SX7BFWMC0jI",
+    "title": "Australia’s #1 university - UNSW Sydney",
+    "kind": "introduction",
+    "channel": "UNSW",
+    "channel_url": "https://www.youtube.com/@UNSW",
+    "source_url": "https://www.youtube.com/watch?v=SX7BFWMC0jI",
+    "checked_at": "2026-10-18"
+   }
+  ],
+  "f5c17f3c-ac83-5193-8c71-641147ad926c": [
+   {
+    "youtube_id": "ufFzVyoOxCE",
+    "title": "Exploring a future at Hopkins",
+    "kind": "introduction",
+    "channel": "Johns Hopkins University",
+    "channel_url": "https://www.youtube.com/@JohnsHopkins",
+    "source_url": "https://www.youtube.com/watch?v=ufFzVyoOxCE",
+    "checked_at": "2026-10-18"
+   },
+   {
+    "youtube_id": "iVSKSl4bdHI",
+    "title": "Welcome Hopkins Class of 2028!",
+    "kind": "student_life",
+    "channel": "Johns Hopkins University",
+    "channel_url": "https://www.youtube.com/@JohnsHopkins",
+    "source_url": "https://www.youtube.com/watch?v=iVSKSl4bdHI",
+    "checked_at": "2026-10-18"
+   },
+   {
+    "youtube_id": "DW1b_MOeefY",
+    "title": "Johns Hopkins University's Student Center | July 2025",
+    "kind": "campus_tour",
+    "channel": "Johns Hopkins University",
+    "channel_url": "https://www.youtube.com/@JohnsHopkins",
+    "source_url": "https://www.youtube.com/watch?v=DW1b_MOeefY",
+    "checked_at": "2026-10-18"
+   }
+  ],
+  "819bd7c2-cc38-5dc4-854d-2d59a8a9f4e5": [
+   {
+    "youtube_id": "y6o_SSoWlEQ",
+    "title": "First day at EPFL (Welcome Day 2025)",
+    "kind": "student_life",
+    "channel": "EPFL",
+    "channel_url": "https://www.youtube.com/@epfl",
+    "source_url": "https://www.youtube.com/watch?v=y6o_SSoWlEQ",
+    "checked_at": "2026-10-18"
+   },
+   {
+    "youtube_id": "bv-fpr8p1uE",
+    "title": "EPFL From Above - Cinematic Showreel",
+    "kind": "campus_tour",
+    "channel": "EPFL",
+    "channel_url": "https://www.youtube.com/@epfl",
+    "source_url": "https://www.youtube.com/watch?v=bv-fpr8p1uE",
+    "checked_at": "2026-10-18"
+   }
+  ],
+  "44444444-4444-4444-8444-444444444444": [
+   {
+    "youtube_id": "ktWQU0mg0Xk",
+    "title": "Portrait: Technical University of Munich",
+    "kind": "introduction",
+    "channel": "TUMuenchen",
+    "channel_url": "https://www.youtube.com/@TUMuenchen1",
+    "source_url": "https://www.youtube.com/watch?v=ktWQU0mg0Xk",
+    "checked_at": "2026-10-18"
+   },
+   {
+    "youtube_id": "aLBL1pX59BA",
+    "title": "How to apply for a bachelor's degree program | A TUMonline Tutorial",
+    "kind": "admissions",
+    "channel": "TUMuenchen",
+    "channel_url": "https://www.youtube.com/@TUMuenchen1",
+    "source_url": "https://www.youtube.com/watch?v=aLBL1pX59BA",
+    "checked_at": "2026-10-18"
+   },
+   {
+    "youtube_id": "0rNK9U944eY",
+    "title": "Exchange at TUM: Study. Explore. Belong.",
+    "kind": "student_life",
+    "channel": "TUMuenchen",
+    "channel_url": "https://www.youtube.com/@TUMuenchen1",
+    "source_url": "https://www.youtube.com/watch?v=0rNK9U944eY",
+    "checked_at": "2026-10-18"
+   }
+  ],
+  "6f13f9e9-cf5f-56ad-8384-39a9dc592d58": [
+   {
+    "youtube_id": "dHufIT6DsDs",
+    "title": "This is Princeton University",
+    "kind": "introduction",
+    "channel": "Princeton University",
+    "channel_url": "https://www.youtube.com/@princeton",
+    "source_url": "https://www.youtube.com/watch?v=dHufIT6DsDs",
+    "checked_at": "2026-10-18"
+   },
+   {
+    "youtube_id": "rXDhNPaRRcA",
+    "title": "Welcome to the Princeton University Class of 2029!",
+    "kind": "student_life",
+    "channel": "Princeton University",
+    "channel_url": "https://www.youtube.com/@princeton",
+    "source_url": "https://www.youtube.com/watch?v=rXDhNPaRRcA",
+    "checked_at": "2026-10-18"
+   }
+  ],
+  "c67598f4-8b91-53a9-a98a-ebd185ced219": [
+   {
+    "youtube_id": "k6-VxRCxH5s",
+    "title": "A Walk Through History - The University of Sydney Campus Heritage Tour",
+    "kind": "campus_tour",
+    "channel": "The University of Sydney",
+    "channel_url": "https://www.youtube.com/@sydney_uni",
+    "source_url": "https://www.youtube.com/watch?v=k6-VxRCxH5s",
+    "checked_at": "2026-10-18"
+   },
+   {
+    "youtube_id": "cE51Iu_DyqQ",
+    "title": "International Students answer Instagram questions: student life at University of Sydney (USYD)",
+    "kind": "student_life",
+    "channel": "The University of Sydney",
+    "channel_url": "https://www.youtube.com/@sydney_uni",
+    "source_url": "https://www.youtube.com/watch?v=cE51Iu_DyqQ",
+    "checked_at": "2026-10-18"
+   },
+   {
+    "youtube_id": "wuUK-mmpiZY",
+    "title": "Welcome to the University of Sydney – Campus Tour",
+    "kind": "campus_tour",
+    "channel": "The University of Sydney",
+    "channel_url": "https://www.youtube.com/@sydney_uni",
+    "source_url": "https://www.youtube.com/watch?v=wuUK-mmpiZY",
+    "checked_at": "2026-10-18"
+   }
+  ],
+  "b48ecdd6-9331-5ee8-a4ad-7f5b046d5356": [
+   {
+    "youtube_id": "XxcTgReXAus",
+    "title": "McGill Speed Tour!",
+    "kind": "campus_tour",
+    "channel": "McGill University",
+    "channel_url": "https://www.youtube.com/@mcgillu",
+    "source_url": "https://www.youtube.com/watch?v=XxcTgReXAus",
+    "checked_at": "2026-10-18"
+   },
+   {
+    "youtube_id": "_YA0FMupZlU",
+    "title": "Applying to McGill: Undergraduate Studies and the School of Continuing Studies",
+    "kind": "admissions",
+    "channel": "McGill University",
+    "channel_url": "https://www.youtube.com/@mcgillu",
+    "source_url": "https://www.youtube.com/watch?v=_YA0FMupZlU",
+    "checked_at": "2026-10-18"
+   },
+   {
+    "youtube_id": "Jr4GyBOhWrI",
+    "title": "Why Montreal is the best student city | Hear it from McGill students",
+    "kind": "student_life",
+    "channel": "McGill University",
+    "channel_url": "https://www.youtube.com/@mcgillu",
+    "source_url": "https://www.youtube.com/watch?v=Jr4GyBOhWrI",
+    "checked_at": "2026-10-18"
+   }
+  ],
+  "c5ca35b6-8983-574d-89ec-d15da6afa1fe": [
+   {
+    "youtube_id": "43BIBc14PNs",
+    "title": "Campus Tour I Université PSL I 4K",
+    "kind": "campus_tour",
+    "channel": "Université PSL",
+    "channel_url": "https://www.youtube.com/@PSL-Universite",
+    "source_url": "https://www.youtube.com/watch?v=43BIBc14PNs",
+    "checked_at": "2026-10-18"
+   },
+   {
+    "youtube_id": "Z4WjiemlL74",
+    "title": "Meet PSL's students",
+    "kind": "student_life",
+    "channel": "Université PSL",
+    "channel_url": "https://www.youtube.com/@PSL-Universite",
+    "source_url": "https://www.youtube.com/watch?v=Z4WjiemlL74",
+    "checked_at": "2026-10-18"
+   }
+  ],
+  "14fa4c62-b910-520b-aa51-0bf334f02b1c": [
+   {
+    "youtube_id": "LrByokzunww",
+    "title": "The Australian National University",
+    "kind": "introduction",
+    "channel": "ANU TV",
+    "channel_url": "https://www.youtube.com/@ANUchannel",
+    "source_url": "https://www.youtube.com/watch?v=LrByokzunww",
+    "checked_at": "2026-10-18"
+   },
+   {
+    "youtube_id": "vxafkWnrvEs",
+    "title": "Welcome to ANU",
+    "kind": "introduction",
+    "channel": "ANU TV",
+    "channel_url": "https://www.youtube.com/@ANUchannel",
+    "source_url": "https://www.youtube.com/watch?v=vxafkWnrvEs",
+    "checked_at": "2026-10-18"
+   },
+   {
+    "youtube_id": "Eoah8b2jGX0",
+    "title": "The ANU Chancellor’s International Scholarships",
+    "kind": "admissions",
+    "channel": "ANU TV",
+    "channel_url": "https://www.youtube.com/@ANUchannel",
+    "source_url": "https://www.youtube.com/watch?v=Eoah8b2jGX0",
+    "checked_at": "2026-10-18"
+   }
+  ],
+  "01649f44-22e4-5b85-adaa-81f3538aa083": [
+   {
+    "youtube_id": "Qbciag5oBfg",
+    "title": "Strand Campus tour | King's College London",
+    "kind": "campus_tour",
+    "channel": "King's College London",
+    "channel_url": "https://www.youtube.com/@kingscollegelondon",
+    "source_url": "https://www.youtube.com/watch?v=Qbciag5oBfg",
+    "checked_at": "2026-10-18"
+   },
+   {
+    "youtube_id": "8-TMFgboUVo",
+    "title": "Undergraduate Admissions 101 | King's College London",
+    "kind": "admissions",
+    "channel": "King's College London",
+    "channel_url": "https://www.youtube.com/@kingscollegelondon",
+    "source_url": "https://www.youtube.com/watch?v=8-TMFgboUVo",
+    "checked_at": "2026-10-18"
+   },
+   {
+    "youtube_id": "RL_9XML2bnQ",
+    "title": "My first few months as international student studying Nursing BSc | King's College London",
+    "kind": "student_life",
+    "channel": "King's College London",
+    "channel_url": "https://www.youtube.com/@kingscollegelondon",
+    "source_url": "https://www.youtube.com/watch?v=RL_9XML2bnQ",
+    "checked_at": "2026-10-18"
+   }
+  ],
+  "74996b5e-c39f-52f1-9e01-88f3051f155b": [
+   {
+    "youtube_id": "y4ZJdt5dI9k",
+    "title": "HKUST 2024 Undergraduate Admissions for Students Holding International Qualifications",
+    "kind": "admissions",
+    "channel": "HKUST",
+    "channel_url": "https://www.youtube.com/@hkust",
+    "source_url": "https://www.youtube.com/watch?v=y4ZJdt5dI9k",
+    "checked_at": "2026-10-18"
+   },
+   {
+    "youtube_id": "2zw-6dHSF9Q",
+    "title": "Welcome to HKUST: Where Miracles Happen",
+    "kind": "introduction",
+    "channel": "HKUST",
+    "channel_url": "https://www.youtube.com/@hkust",
+    "source_url": "https://www.youtube.com/watch?v=2zw-6dHSF9Q",
+    "checked_at": "2026-10-18"
+   },
+   {
+    "youtube_id": "Y1jz6ttW54M",
+    "title": "HKUST SSA Video Series - Our Life at HKUST",
+    "kind": "student_life",
+    "channel": "HKUST",
+    "channel_url": "https://www.youtube.com/@hkust",
+    "source_url": "https://www.youtube.com/watch?v=Y1jz6ttW54M",
+    "checked_at": "2026-10-18"
+   }
+  ],
+  "6e2ae583-50c4-53d5-a0ed-d11422c64773": [
+   {
+    "youtube_id": "jyWC890nP5w",
+    "title": "The University of Manchester Campus Tour in under 2 minutes! | Student Tim on a whistle-stop tour",
+    "kind": "campus_tour",
+    "channel": "The University of Manchester",
+    "channel_url": "https://www.youtube.com/@universitymanchester",
+    "source_url": "https://www.youtube.com/watch?v=jyWC890nP5w",
+    "checked_at": "2026-10-18"
+   },
+   {
+    "youtube_id": "qWHMvLLpEek",
+    "title": "The University application process | Ep 21: Manchester Voices",
+    "kind": "admissions",
+    "channel": "The University of Manchester",
+    "channel_url": "https://www.youtube.com/@universitymanchester",
+    "source_url": "https://www.youtube.com/watch?v=qWHMvLLpEek",
+    "checked_at": "2026-10-18"
+   },
+   {
+    "youtube_id": "oA7KSmBVF2I",
+    "title": "International students: Advice and tips for coming to The University of Manchester to study",
+    "kind": "student_life",
+    "channel": "The University of Manchester",
+    "channel_url": "https://www.youtube.com/@universitymanchester",
+    "source_url": "https://www.youtube.com/watch?v=oA7KSmBVF2I",
+    "checked_at": "2026-10-18"
+   }
+  ],
+  "11087dc1-5405-5bd2-a5e2-def936b94cf7": [
+   {
+    "youtube_id": "oknlDjUio0Y",
+    "title": "Introduction to The University of Tokyo for Prospective Students",
+    "kind": "introduction",
+    "channel": "東京大学 / The University of Tokyo",
+    "channel_url": "https://www.youtube.com/@UTokyoPR",
+    "source_url": "https://www.youtube.com/watch?v=oknlDjUio0Y",
+    "checked_at": "2026-10-18"
+   },
+   {
+    "youtube_id": "fEwlDIofgck",
+    "title": "Experience Excellence at UTokyo - Graduates Discuss UTokyo at UTokyo NY Office",
+    "kind": "student_life",
+    "channel": "東京大学 / The University of Tokyo",
+    "channel_url": "https://www.youtube.com/@UTokyoPR",
+    "source_url": "https://www.youtube.com/watch?v=fEwlDIofgck",
+    "checked_at": "2026-10-18"
+   }
+  ],
+  "1ad9abe1-60cd-55ec-b227-5c8001db0475": [
+   {
+    "youtube_id": "3aycj0i5KwI",
+    "title": "Welcome to Columbia University",
+    "kind": "introduction",
+    "channel": "Columbia University",
+    "channel_url": "https://www.youtube.com/@columbia",
+    "source_url": "https://www.youtube.com/watch?v=3aycj0i5KwI",
+    "checked_at": "2026-10-18"
+   },
+   {
+    "youtube_id": "vsui5c_ZNVs",
+    "title": "Take a Tour of Columbia’s New Campus in Manhattanville",
+    "kind": "campus_tour",
+    "channel": "Columbia University",
+    "channel_url": "https://www.youtube.com/@columbia",
+    "source_url": "https://www.youtube.com/watch?v=vsui5c_ZNVs",
+    "checked_at": "2026-10-18"
+   }
+  ],
+  "6a9e2556-fc5f-56a2-bca0-9364f099818c": [
+   {
+    "youtube_id": "8Rgn-TskeQI",
+    "title": "Seoul National University Official Video - A new tomorrow begins",
+    "kind": "introduction",
+    "channel": "서울대학교 Seoul National University",
+    "channel_url": "https://www.youtube.com/@SeoulNationalUniversity",
+    "source_url": "https://www.youtube.com/watch?v=8Rgn-TskeQI",
+    "checked_at": "2026-10-18"
+   },
+   {
+    "youtube_id": "qNR0vv65Cuc",
+    "title": "A Guideline for SNU Undergraduate Applicants",
+    "kind": "admissions",
+    "channel": "서울대학교 Seoul National University",
+    "channel_url": "https://www.youtube.com/@SeoulNationalUniversity",
+    "source_url": "https://www.youtube.com/watch?v=qNR0vv65Cuc",
+    "checked_at": "2026-10-18"
+   }
+  ],
+  "c0386da4-95a0-567a-8f70-81b33c5c7f06": [
+   {
+    "youtube_id": "7aHk4Ln_HXw",
+    "title": "How to accept your offer?  Explainer for our International students.",
+    "kind": "admissions",
+    "channel": "The University of Queensland",
+    "channel_url": "https://www.youtube.com/@universityqueensland",
+    "source_url": "https://www.youtube.com/watch?v=7aHk4Ln_HXw",
+    "checked_at": "2026-10-18"
+   },
+   {
+    "youtube_id": "ViMYZ8PRAjQ",
+    "title": "What makes studying in Australia and at UQ unforgettable?",
+    "kind": "student_life",
+    "channel": "The University of Queensland",
+    "channel_url": "https://www.youtube.com/@universityqueensland",
+    "source_url": "https://www.youtube.com/watch?v=ViMYZ8PRAjQ",
+    "checked_at": "2026-10-18"
+   },
+   {
+    "youtube_id": "BQVGBTc0zi8",
+    "title": "Meet Neeharika, a UQ Master of International Economics and Finance student from India",
+    "kind": "student_life",
+    "channel": "The University of Queensland",
+    "channel_url": "https://www.youtube.com/@universityqueensland",
+    "source_url": "https://www.youtube.com/watch?v=BQVGBTc0zi8",
+    "checked_at": "2026-10-18"
+   }
+  ],
+  "9f3cf72f-ca1e-5831-b48d-e5747fb631d6": [
+   {
+    "youtube_id": "XTe2HHzSO38",
+    "title": "Join Institut Polytechnique de Paris",
+    "kind": "introduction",
+    "channel": "IP Paris",
+    "channel_url": "https://www.youtube.com/@institutpolytechniquedeparis",
+    "source_url": "https://www.youtube.com/watch?v=XTe2HHzSO38",
+    "checked_at": "2026-10-18"
+   },
+   {
+    "youtube_id": "HtT4-zXFr3w",
+    "title": "Master & PhD Track Admissions 2022-2023",
+    "kind": "admissions",
+    "channel": "IP Paris",
+    "channel_url": "https://www.youtube.com/@institutpolytechniquedeparis",
+    "source_url": "https://www.youtube.com/watch?v=HtT4-zXFr3w",
+    "checked_at": "2026-10-18"
+   },
+   {
+    "youtube_id": "rdhOaeO6_xA",
+    "title": "Une journée sur le campus - A day on campus",
+    "kind": "campus_tour",
+    "channel": "IP Paris",
+    "channel_url": "https://www.youtube.com/@institutpolytechniquedeparis",
+    "source_url": "https://www.youtube.com/watch?v=rdhOaeO6_xA",
+    "checked_at": "2026-10-18"
+   }
+  ],
+  "e48a723c-68b4-560e-b4a0-09be01682853": [
+   {
+    "youtube_id": "mjZ5N2XVlPo",
+    "title": "a winter walk through campus ❄️🚶",
+    "kind": "campus_tour",
+    "channel": "Northwestern University",
+    "channel_url": "https://www.youtube.com/@NorthwesternU",
+    "source_url": "https://www.youtube.com/watch?v=mjZ5N2XVlPo",
+    "checked_at": "2026-10-18"
+   },
+   {
+    "youtube_id": "1tAcgeFXU-0",
+    "title": "March through the Arch! 2026",
+    "kind": "student_life",
+    "channel": "Northwestern University",
+    "channel_url": "https://www.youtube.com/@NorthwesternU",
+    "source_url": "https://www.youtube.com/watch?v=1tAcgeFXU-0",
+    "checked_at": "2026-10-18"
+   },
+   {
+    "youtube_id": "pLgLmfqfmVQ",
+    "title": "New Student Convocation 2022",
+    "kind": "student_life",
+    "channel": "Northwestern University",
+    "channel_url": "https://www.youtube.com/@NorthwesternU",
+    "source_url": "https://www.youtube.com/watch?v=pLgLmfqfmVQ",
+    "checked_at": "2026-10-18"
+   }
+  ],
+  "d5ba03bb-65aa-55a6-8234-265ea05144fc": [
+   {
+    "youtube_id": "1WhILEsWSv0",
+    "title": "THIS IS UCLA",
+    "kind": "introduction",
+    "channel": "UCLA",
+    "channel_url": "https://www.youtube.com/@UCLA",
+    "source_url": "https://www.youtube.com/watch?v=1WhILEsWSv0",
+    "checked_at": "2026-10-18"
+   },
+   {
+    "youtube_id": "jvCMJJsWpbQ",
+    "title": "Welcome to UCLA, Bruins!",
+    "kind": "student_life",
+    "channel": "UCLA",
+    "channel_url": "https://www.youtube.com/@UCLA",
+    "source_url": "https://www.youtube.com/watch?v=jvCMJJsWpbQ",
+    "checked_at": "2026-10-18"
+   },
+   {
+    "youtube_id": "EGN4qCVflgQ",
+    "title": "Welcome, Class of 2030!",
+    "kind": "student_life",
+    "channel": "UCLA",
+    "channel_url": "https://www.youtube.com/@UCLA",
+    "source_url": "https://www.youtube.com/watch?v=EGN4qCVflgQ",
+    "checked_at": "2026-10-18"
+   }
+  ],
+  "1e3bb7ff-87ca-5331-a3ab-82b0d0b3484d": [
+   {
+    "youtube_id": "WfdsLFc9CQ0",
+    "title": "TU Delft - HBO en WO Campus Tour",
+    "kind": "campus_tour",
+    "channel": "TU Delft",
+    "channel_url": "https://www.youtube.com/@tudelft",
+    "source_url": "https://www.youtube.com/watch?v=WfdsLFc9CQ0",
+    "checked_at": "2026-10-18"
+   },
+   {
+    "youtube_id": "HoUNEpVB0WE",
+    "title": "Bachelor Aerospace Engineering | TU Delft",
+    "kind": "introduction",
+    "channel": "TU Delft",
+    "channel_url": "https://www.youtube.com/@tudelft",
+    "source_url": "https://www.youtube.com/watch?v=HoUNEpVB0WE",
+    "checked_at": "2026-10-18"
+   }
+  ],
+  "a74d45a9-657e-514c-ac03-c9d2f9200640": [
+   {
+    "youtube_id": "DvtouBxnqfU",
+    "title": "This is PolyU – where Excellence and Innovation Create Impact",
+    "kind": "introduction",
+    "channel": "The Hong Kong Polytechnic University",
+    "channel_url": "https://www.youtube.com/@HongKongPolyU",
+    "source_url": "https://www.youtube.com/watch?v=DvtouBxnqfU",
+    "checked_at": "2026-10-18"
+   },
+   {
+    "youtube_id": "OWLvKyZyaFs",
+    "title": "PolyU Undergraduate Programmes (International Qualifications & Local Non-JUPAS) Open for Application",
+    "kind": "admissions",
+    "channel": "The Hong Kong Polytechnic University",
+    "channel_url": "https://www.youtube.com/@HongKongPolyU",
+    "source_url": "https://www.youtube.com/watch?v=OWLvKyZyaFs",
+    "checked_at": "2026-10-18"
+   },
+   {
+    "youtube_id": "frfiL4_fjsw",
+    "title": "理大助留學生築夢未來 Building Global Dreams at PolyU",
+    "kind": "student_life",
+    "channel": "The Hong Kong Polytechnic University",
+    "channel_url": "https://www.youtube.com/@HongKongPolyU",
+    "source_url": "https://www.youtube.com/watch?v=frfiL4_fjsw",
+    "checked_at": "2026-10-18"
+   }
+  ],
+  "ad695799-c6eb-5c4d-901c-a4b7d0b15407": [
+   {
+    "youtube_id": "YcMtyo2pYXo",
+    "title": "Your life in Bristol: discover the city at the heart of our university",
+    "kind": "student_life",
+    "channel": "University of Bristol",
+    "channel_url": "https://www.youtube.com/@UniversityOfBristol",
+    "source_url": "https://www.youtube.com/watch?v=YcMtyo2pYXo",
+    "checked_at": "2026-10-18"
+   },
+   {
+    "youtube_id": "ft42fIka-qc",
+    "title": "Welcome to the University of Bristol!",
+    "kind": "introduction",
+    "channel": "University of Bristol",
+    "channel_url": "https://www.youtube.com/@UniversityOfBristol",
+    "source_url": "https://www.youtube.com/watch?v=ft42fIka-qc",
+    "checked_at": "2026-10-18"
+   },
+   {
+    "youtube_id": "oE3UQ0XNfyo",
+    "title": "Contextual Offers at the University of Bristol",
+    "kind": "admissions",
+    "channel": "University of Bristol",
+    "channel_url": "https://www.youtube.com/@UniversityOfBristol",
+    "source_url": "https://www.youtube.com/watch?v=oE3UQ0XNfyo",
+    "checked_at": "2026-10-18"
+   }
+  ],
+  "b7c4c075-d30e-53b3-80a8-7e7d751a47b7": [
+   {
+    "youtube_id": "qM43gnigKgQ",
+    "title": "Carnegie Mellon University 2024 Commercial",
+    "kind": "introduction",
+    "channel": "Carnegie Mellon University",
+    "channel_url": "https://www.youtube.com/@cmu",
+    "source_url": "https://www.youtube.com/watch?v=qM43gnigKgQ",
+    "checked_at": "2026-10-18"
+   },
+   {
+    "youtube_id": "Fjeh9g2Qj6M",
+    "title": "Welcome to Carnegie Mellon, Class of 2029+",
+    "kind": "student_life",
+    "channel": "Carnegie Mellon University",
+    "channel_url": "https://www.youtube.com/@cmu",
+    "source_url": "https://www.youtube.com/watch?v=Fjeh9g2Qj6M",
+    "checked_at": "2026-10-18"
+   },
+   {
+    "youtube_id": "MDezl8rhA5g",
+    "title": "Welcome to CMU! Class of 2030+ Orientation Week Highlights",
+    "kind": "student_life",
+    "channel": "Carnegie Mellon University",
+    "channel_url": "https://www.youtube.com/@cmu",
+    "source_url": "https://www.youtube.com/watch?v=MDezl8rhA5g",
+    "checked_at": "2026-10-18"
+   }
+  ],
+  "6d72f6ce-a30c-54a4-8b99-97ae04a68a88": [
+   {
+    "youtube_id": "TOz0_r7CcZA",
+    "title": "[ENG] 2024 Korea University Promotional Video (Main Ver.)",
+    "kind": "introduction",
+    "channel": "고려대학교 Korea University",
+    "channel_url": "https://www.youtube.com/@koreauniv",
+    "source_url": "https://www.youtube.com/watch?v=TOz0_r7CcZA",
+    "checked_at": "2026-10-18"
+   },
+   {
+    "youtube_id": "y2sYq2Wh8HA",
+    "title": "[고려대학교 Korea University] Korea University Promotional Video 'Welcome to KU'",
+    "kind": "introduction",
+    "channel": "고려대학교 Korea University",
+    "channel_url": "https://www.youtube.com/@koreauniv",
+    "source_url": "https://www.youtube.com/watch?v=y2sYq2Wh8HA",
+    "checked_at": "2026-10-18"
+   }
+  ],
+  "e0088a48-e57b-58d4-bf07-2021931bc1a9": [
+   {
+    "youtube_id": "-EbrMtwsljo",
+    "title": "University of Amsterdam | Campus Tour - Science Park",
+    "kind": "campus_tour",
+    "channel": "University of Amsterdam",
+    "channel_url": "https://www.youtube.com/@uvaamsterdam",
+    "source_url": "https://www.youtube.com/watch?v=-EbrMtwsljo",
+    "checked_at": "2026-10-18"
+   },
+   {
+    "youtube_id": "i99zRuiCgIU",
+    "title": "Making a difference: A Day at the University of Amsterdam",
+    "kind": "student_life",
+    "channel": "University of Amsterdam",
+    "channel_url": "https://www.youtube.com/@uvaamsterdam",
+    "source_url": "https://www.youtube.com/watch?v=i99zRuiCgIU",
+    "checked_at": "2026-10-18"
+   },
+   {
+    "youtube_id": "vuN9rWuR-VU",
+    "title": "Life in Amsterdam: Expectation vs Reality? | University of Amsterdam",
+    "kind": "student_life",
+    "channel": "University of Amsterdam",
+    "channel_url": "https://www.youtube.com/@uvaamsterdam",
+    "source_url": "https://www.youtube.com/watch?v=vuN9rWuR-VU",
+    "checked_at": "2026-10-18"
+   }
+  ],
+  "8e7965f7-20be-56cb-9233-5daa3414b0fc": [
+   {
+    "youtube_id": "3bLmQaTH3mc",
+    "title": "2024 National Taiwan University",
+    "kind": "introduction",
+    "channel": "NTU Campus 校園．臺灣大學 EDU 頻道",
+    "channel_url": "https://www.youtube.com/@ntutw",
+    "source_url": "https://www.youtube.com/watch?v=3bLmQaTH3mc",
+    "checked_at": "2026-10-18"
+   },
+   {
+    "youtube_id": "3ZO9Yft8G94",
+    "title": "NTU - Degree Program for Int'l Students (國立臺灣大學外國學生學位學程英文版)",
+    "kind": "admissions",
+    "channel": "NTU Campus 校園．臺灣大學 EDU 頻道",
+    "channel_url": "https://www.youtube.com/@ntutw",
+    "source_url": "https://www.youtube.com/watch?v=3ZO9Yft8G94",
+    "checked_at": "2026-10-18"
+   }
+  ],
+  "cc300fc2-3770-5383-a663-b1ec31311b4d": [
+   {
+    "youtube_id": "bm6oKTxGyAo",
+    "title": "NYU Class of 2030 Moves In",
+    "kind": "student_life",
+    "channel": "New York University",
+    "channel_url": "https://www.youtube.com/@newyorkuniversity",
+    "source_url": "https://www.youtube.com/watch?v=bm6oKTxGyAo",
+    "checked_at": "2026-10-18"
+   },
+   {
+    "youtube_id": "s5FTHafc-WA",
+    "title": "NYU Early Decision 2022!",
+    "kind": "admissions",
+    "channel": "New York University",
+    "channel_url": "https://www.youtube.com/@newyorkuniversity",
+    "source_url": "https://www.youtube.com/watch?v=s5FTHafc-WA",
+    "checked_at": "2026-10-18"
+   },
+   {
+    "youtube_id": "YtXetiX2jvM",
+    "title": "Welcome back, NYU!",
+    "kind": "student_life",
+    "channel": "New York University",
+    "channel_url": "https://www.youtube.com/@newyorkuniversity",
+    "source_url": "https://www.youtube.com/watch?v=YtXetiX2jvM",
+    "checked_at": "2026-10-18"
+   }
+  ],
+  "3e655a74-c0c7-5a9b-884b-22aebd5e0d1e": [
+   {
+    "youtube_id": "FwFLb8y96OQ",
+    "title": "Welcome to LSE: Our official campus tour video 2024",
+    "kind": "campus_tour",
+    "channel": "LSE",
+    "channel_url": "https://www.youtube.com/@theLondonSchoolofEconomics",
+    "source_url": "https://www.youtube.com/watch?v=FwFLb8y96OQ",
+    "checked_at": "2026-10-18"
+   },
+   {
+    "youtube_id": "BsxUzSXZZDs",
+    "title": "10 Things I Wish I Knew Before Coming to London | LSE Student Vlog",
+    "kind": "student_life",
+    "channel": "LSE",
+    "channel_url": "https://www.youtube.com/@theLondonSchoolofEconomics",
+    "source_url": "https://www.youtube.com/watch?v=BsxUzSXZZDs",
+    "checked_at": "2026-10-18"
+   },
+   {
+    "youtube_id": "gngJ-fDAahQ",
+    "title": "A Day in the Life of an International Relations Student | LSE Student Vlog",
+    "kind": "student_life",
+    "channel": "LSE",
+    "channel_url": "https://www.youtube.com/@theLondonSchoolofEconomics",
+    "source_url": "https://www.youtube.com/watch?v=gngJ-fDAahQ",
+    "checked_at": "2026-10-18"
+   }
+  ],
+  "ee31891b-8bbc-5fb0-9bc5-e0122f0c55dd": [
+   {
+    "youtube_id": "2tlXQHKGmJc",
+    "title": "UNIVERSITI MALAYA",
+    "kind": "introduction",
+    "channel": "Universiti Malaya",
+    "channel_url": "https://www.youtube.com/@UniMalaya",
+    "source_url": "https://www.youtube.com/watch?v=2tlXQHKGmJc",
+    "checked_at": "2026-10-18"
+   },
+   {
+    "youtube_id": "GVhTZusy1ZQ",
+    "title": "WELCOME TO UNIVERSITI MALAYA, FRESHIES 2021/22",
+    "kind": "student_life",
+    "channel": "Universiti Malaya",
+    "channel_url": "https://www.youtube.com/@UniMalaya",
+    "source_url": "https://www.youtube.com/watch?v=GVhTZusy1ZQ",
+    "checked_at": "2026-10-18"
+   },
+   {
+    "youtube_id": "A5WJ8LAM5OE",
+    "title": "Why Do International Students Choose to Study at UM?",
+    "kind": "student_life",
+    "channel": "Universiti Malaya",
+    "channel_url": "https://www.youtube.com/@UniMalaya",
+    "source_url": "https://www.youtube.com/watch?v=A5WJ8LAM5OE",
+    "checked_at": "2026-10-18"
+   }
+  ],
+  "e943a9a4-853c-5554-ac7f-9887d0b2a91d": [
+   {
+    "youtube_id": "1RyQjF7cH2Y",
+    "title": "京都大学紹介動画　Introducing Kyoto University",
+    "kind": "introduction",
+    "channel": "Kyoto University / 京都大学",
+    "channel_url": "https://www.youtube.com/@KyotoUniversityOfficial",
+    "source_url": "https://www.youtube.com/watch?v=1RyQjF7cH2Y",
+    "checked_at": "2026-10-18"
+   },
+   {
+    "youtube_id": "PIbV8ux2FkA",
+    "title": "Kyoto University: Our Research Life",
+    "kind": "student_life",
+    "channel": "Kyoto University / 京都大学",
+    "channel_url": "https://www.youtube.com/@KyotoUniversityOfficial",
+    "source_url": "https://www.youtube.com/watch?v=PIbV8ux2FkA",
+    "checked_at": "2026-10-18"
+   }
+  ],
+  "fb08c67d-bb79-53ff-bbfc-1313fa5602e3": [
+   {
+    "youtube_id": "CZkfflH-wLs",
+    "title": "This is Duke",
+    "kind": "introduction",
+    "channel": "Duke University",
+    "channel_url": "https://www.youtube.com/@dukeuniversity",
+    "source_url": "https://www.youtube.com/watch?v=CZkfflH-wLs",
+    "checked_at": "2026-10-18"
+   },
+   {
+    "youtube_id": "mxUX3m4H-Js",
+    "title": "So THIS Is What Orientation Feels Like at Duke University",
+    "kind": "student_life",
+    "channel": "Duke University",
+    "channel_url": "https://www.youtube.com/@dukeuniversity",
+    "source_url": "https://www.youtube.com/watch?v=mxUX3m4H-Js",
+    "checked_at": "2026-10-18"
+   },
+   {
+    "youtube_id": "P7ecvxfNjyQ",
+    "title": "[4K] Duke West Campus Walking Tour",
+    "kind": "campus_tour",
+    "channel": "Duke University",
+    "channel_url": "https://www.youtube.com/@dukeuniversity",
+    "source_url": "https://www.youtube.com/watch?v=P7ecvxfNjyQ",
+    "checked_at": "2026-10-18"
+   }
+  ],
+  "6941fb87-c482-5aa1-9f3c-a5de7cf736dc": [
+   {
+    "youtube_id": "wZ1SSZP3w0w",
+    "title": "Take a virtual tour of the University of Auckland",
+    "kind": "campus_tour",
+    "channel": "University of Auckland | Waipapa Taumata Rau",
+    "channel_url": "https://www.youtube.com/@universityofauckland",
+    "source_url": "https://www.youtube.com/watch?v=wZ1SSZP3w0w",
+    "checked_at": "2026-10-18"
+   },
+   {
+    "youtube_id": "REJqL1fDJtg",
+    "title": "Entry requirements for the University of Auckland",
+    "kind": "admissions",
+    "channel": "University of Auckland | Waipapa Taumata Rau",
+    "channel_url": "https://www.youtube.com/@universityofauckland",
+    "source_url": "https://www.youtube.com/watch?v=REJqL1fDJtg",
+    "checked_at": "2026-10-18"
+   },
+   {
+    "youtube_id": "mLVTLiJdBbs",
+    "title": "🇮🇳 Moving countries is tough, but Shardul from India is thriving at UoA!",
+    "kind": "student_life",
+    "channel": "University of Auckland | Waipapa Taumata Rau",
+    "channel_url": "https://www.youtube.com/@universityofauckland",
+    "source_url": "https://www.youtube.com/watch?v=mLVTLiJdBbs",
+    "checked_at": "2026-10-18"
+   }
+  ],
+  "bb32340f-54ba-5885-82ba-4ae645d93930": [
+   {
+    "youtube_id": "XFFgvWwcptk",
+    "title": "KAIST 새내기 캠퍼스투어🍯 교KAI서에서 필수 코스 정복😄 (Eng Sub)",
+    "kind": "campus_tour",
+    "channel": "KAIST",
+    "channel_url": "https://www.youtube.com/@KAISTofficial",
+    "source_url": "https://www.youtube.com/watch?v=XFFgvWwcptk",
+    "checked_at": "2026-10-18"
+   },
+   {
+    "youtube_id": "tO0HlWpxV8M",
+    "title": "(4K) 2025 상반기 KAIST 브랜드 필름 / 2025 1H Brand Film of KAIST (2min)",
+    "kind": "introduction",
+    "channel": "KAIST",
+    "channel_url": "https://www.youtube.com/@KAISTofficial",
+    "source_url": "https://www.youtube.com/watch?v=tO0HlWpxV8M",
+    "checked_at": "2026-10-18"
+   }
+  ],
+  "88fab389-ea96-5377-b015-69d9756ba9a9": [
+   {
+    "youtube_id": "tm0mM6mzroA",
+    "title": "2023-2024 Virtual Information Session - The Open Curriculum & Application Process",
+    "kind": "admissions",
+    "channel": "Brown University",
+    "channel_url": "https://www.youtube.com/@brownuniversity",
+    "source_url": "https://www.youtube.com/watch?v=tm0mM6mzroA",
+    "checked_at": "2026-10-18"
+   },
+   {
+    "youtube_id": "yL_4bcUPlCA",
+    "title": "Chapter 5: Admission Process and Special Programs",
+    "kind": "admissions",
+    "channel": "Brown University",
+    "channel_url": "https://www.youtube.com/@brownuniversity",
+    "source_url": "https://www.youtube.com/watch?v=yL_4bcUPlCA",
+    "checked_at": "2026-10-18"
+   },
+   {
+    "youtube_id": "4GUMiPmRSeo",
+    "title": "Brown University Day in the Life: Simone Dunbar '26",
+    "kind": "student_life",
+    "channel": "Brown University",
+    "channel_url": "https://www.youtube.com/@brownuniversity",
+    "source_url": "https://www.youtube.com/watch?v=4GUMiPmRSeo",
+    "checked_at": "2026-10-18"
+   }
+  ],
+  "4b7a7f67-a5fa-5660-a95b-87588748c8e4": [
+   {
+    "youtube_id": "zc2h2kYzY1Y",
+    "title": "Destination Warwick | Campus Tour | University of Warwick",
+    "kind": "campus_tour",
+    "channel": "University of Warwick",
+    "channel_url": "https://www.youtube.com/@uniofwarwick",
+    "source_url": "https://www.youtube.com/watch?v=zc2h2kYzY1Y",
+    "checked_at": "2026-10-18"
+   },
+   {
+    "youtube_id": "i8RYjMYj1CI",
+    "title": "Welcome to Warwick",
+    "kind": "introduction",
+    "channel": "University of Warwick",
+    "channel_url": "https://www.youtube.com/@uniofwarwick",
+    "source_url": "https://www.youtube.com/watch?v=i8RYjMYj1CI",
+    "checked_at": "2026-10-18"
+   },
+   {
+    "youtube_id": "8Rr-r_vHsCA",
+    "title": "Day in the Life of an International Student at Warwick Uni",
+    "kind": "student_life",
+    "channel": "University of Warwick",
+    "channel_url": "https://www.youtube.com/@uniofwarwick",
+    "source_url": "https://www.youtube.com/watch?v=8Rr-r_vHsCA",
+    "checked_at": "2026-10-18"
+   }
+  ],
+  "1a5b82c1-d204-5c75-a433-ef5c17e2a9d2": [
+   {
+    "youtube_id": "4XGgo3zRzko",
+    "title": "Find your place, in a place like no other | Campus tour | University of Birmingham",
+    "kind": "campus_tour",
+    "channel": "University of Birmingham",
+    "channel_url": "https://www.youtube.com/@unibirmingham",
+    "source_url": "https://www.youtube.com/watch?v=4XGgo3zRzko",
+    "checked_at": "2026-10-18"
+   },
+   {
+    "youtube_id": "U2Baxnfg9bY",
+    "title": "How to write a great Personal Statement | University of Birmingham",
+    "kind": "admissions",
+    "channel": "University of Birmingham",
+    "channel_url": "https://www.youtube.com/@unibirmingham",
+    "source_url": "https://www.youtube.com/watch?v=U2Baxnfg9bY",
+    "checked_at": "2026-10-18"
+   },
+   {
+    "youtube_id": "xY40bFZEKq0",
+    "title": "Welcome Week | International Students | University of Birmingham",
+    "kind": "student_life",
+    "channel": "University of Birmingham",
+    "channel_url": "https://www.youtube.com/@unibirmingham",
+    "source_url": "https://www.youtube.com/watch?v=xY40bFZEKq0",
+    "checked_at": "2026-10-18"
+   }
+  ],
+  "8e191d89-10ba-5f03-913b-836c9c7194a0": [
+   {
+    "youtube_id": "PWIheAkwCj0",
+    "title": "Bienvenue à l'Université Paris-Saclay - rentrée 2025",
+    "kind": "introduction",
+    "channel": "Université Paris-Saclay",
+    "channel_url": "https://www.youtube.com/@Universit%C3%A9Paris-Saclay",
+    "source_url": "https://www.youtube.com/watch?v=PWIheAkwCj0",
+    "checked_at": "2026-10-18"
+   },
+   {
+    "youtube_id": "77vHAqI72Ig",
+    "title": "International students: welcome to Université Paris-Saclay",
+    "kind": "student_life",
+    "channel": "Université Paris-Saclay",
+    "channel_url": "https://www.youtube.com/@Universit%C3%A9Paris-Saclay",
+    "source_url": "https://www.youtube.com/watch?v=77vHAqI72Ig",
+    "checked_at": "2026-10-18"
+   }
+  ],
+  "bc0bcefc-cf3b-5fc7-bb41-76470ec9ff59": [
+   {
+    "youtube_id": "ckAwNx5XBhQ",
+    "title": "Lund University campus tour (main campus in Lund)",
+    "kind": "campus_tour",
+    "channel": "Lund University",
+    "channel_url": "https://www.youtube.com/@LundUniversity",
+    "source_url": "https://www.youtube.com/watch?v=ckAwNx5XBhQ",
+    "checked_at": "2026-10-18"
+   },
+   {
+    "youtube_id": "9VBViRA0PcY",
+    "title": "How to apply for Master's studies (Study at Lund University | Part 5)",
+    "kind": "admissions",
+    "channel": "Lund University",
+    "channel_url": "https://www.youtube.com/@LundUniversity",
+    "source_url": "https://www.youtube.com/watch?v=9VBViRA0PcY",
+    "checked_at": "2026-10-18"
+   },
+   {
+    "youtube_id": "6PVN6FmJpWA",
+    "title": "A day in the life of an international student",
+    "kind": "student_life",
+    "channel": "Lund University",
+    "channel_url": "https://www.youtube.com/@LundUniversity",
+    "source_url": "https://www.youtube.com/watch?v=6PVN6FmJpWA",
+    "checked_at": "2026-10-18"
+   }
+  ],
+  "b3a81d8c-44ec-56d8-aa5f-b58d5fce6bfd": [
+   {
+    "youtube_id": "SVOEX5balmo",
+    "title": "LA VRAIE VIE DES ÉTUDIANTS À SORBONNE UNIVERSITÉ !",
+    "kind": "student_life",
+    "channel": "Sorbonne Université",
+    "channel_url": "https://www.youtube.com/@SorbonneUniversit%C3%A9",
+    "source_url": "https://www.youtube.com/watch?v=SVOEX5balmo",
+    "checked_at": "2026-10-18"
+   },
+   {
+    "youtube_id": "1fYXNEY4JDY",
+    "title": "Pourquoi faire sa licence à Sorbonne Université ?",
+    "kind": "admissions",
+    "channel": "Sorbonne Université",
+    "channel_url": "https://www.youtube.com/@SorbonneUniversit%C3%A9",
+    "source_url": "https://www.youtube.com/watch?v=1fYXNEY4JDY",
+    "checked_at": "2026-10-18"
+   }
+  ],
+  "f5cd8bb6-027a-504f-bc7e-19d3d4e017c7": [
+   {
+    "youtube_id": "qxOxqBjfnAw",
+    "title": "Change the World at Illinois",
+    "kind": "introduction",
+    "channel": "University of Illinois Urbana-Champaign",
+    "channel_url": "https://www.youtube.com/@Illinois1867",
+    "source_url": "https://www.youtube.com/watch?v=qxOxqBjfnAw",
+    "checked_at": "2026-10-18"
+   },
+   {
+    "youtube_id": "FLrm7ydTM_M",
+    "title": "Allen Hall tour with Dakota",
+    "kind": "campus_tour",
+    "channel": "University of Illinois Urbana-Champaign",
+    "channel_url": "https://www.youtube.com/@Illinois1867",
+    "source_url": "https://www.youtube.com/watch?v=FLrm7ydTM_M",
+    "checked_at": "2026-10-18"
+   }
+  ],
+  "24e7d208-f222-510a-92a9-011aead2e2cc": [
+   {
+    "youtube_id": "IOtYcaT81Jw",
+    "title": "Get ready for UWA Open Day!",
+    "kind": "admissions",
+    "channel": "The University of Western Australia",
+    "channel_url": "https://www.youtube.com/@universitywa",
+    "source_url": "https://www.youtube.com/watch?v=IOtYcaT81Jw",
+    "checked_at": "2026-10-18"
+   },
+   {
+    "youtube_id": "zElfi_ocFT8",
+    "title": "UWA International student experience: Anna Luo",
+    "kind": "student_life",
+    "channel": "The University of Western Australia",
+    "channel_url": "https://www.youtube.com/@universitywa",
+    "source_url": "https://www.youtube.com/watch?v=zElfi_ocFT8",
+    "checked_at": "2026-10-18"
+   }
+  ],
+  "2aa84135-ae94-568c-8721-5c06c836a3f2": [
+   {
+    "youtube_id": "EBM2wxw_834",
+    "title": "Campus tour of the University of Leeds",
+    "kind": "campus_tour",
+    "channel": "University of Leeds",
+    "channel_url": "https://www.youtube.com/@universityofleeds",
+    "source_url": "https://www.youtube.com/watch?v=EBM2wxw_834",
+    "checked_at": "2026-10-18"
+   },
+   {
+    "youtube_id": "MfVGC7Bq_ZA",
+    "title": "Student life at the University of Leeds, a world top-100 university",
+    "kind": "student_life",
+    "channel": "University of Leeds",
+    "channel_url": "https://www.youtube.com/@universityofleeds",
+    "source_url": "https://www.youtube.com/watch?v=MfVGC7Bq_ZA",
+    "checked_at": "2026-10-18"
+   }
+  ],
+  "61b5c222-f7d2-5ff7-a546-b186e73b945b": [
+   {
+    "youtube_id": "pEPLWygiRJk",
+    "title": "University of Glasgow Campus Tour",
+    "kind": "campus_tour",
+    "channel": "University of Glasgow",
+    "channel_url": "https://www.youtube.com/@UofGlasgow",
+    "source_url": "https://www.youtube.com/watch?v=pEPLWygiRJk",
+    "checked_at": "2026-10-18"
+   },
+   {
+    "youtube_id": "9JxXF7ysw9U",
+    "title": "Best advice for international students coming to #universityofglasgow",
+    "kind": "student_life",
+    "channel": "University of Glasgow",
+    "channel_url": "https://www.youtube.com/@UofGlasgow",
+    "source_url": "https://www.youtube.com/watch?v=9JxXF7ysw9U",
+    "checked_at": "2026-10-18"
+   },
+   {
+    "youtube_id": "XQI3rmaOOww",
+    "title": "Arrival checklist for international students ✈📋 // University of Glasgow Student Vlog",
+    "kind": "student_life",
+    "channel": "University of Glasgow",
+    "channel_url": "https://www.youtube.com/@UofGlasgow",
+    "source_url": "https://www.youtube.com/watch?v=XQI3rmaOOww",
+    "checked_at": "2026-10-18"
+   }
+  ],
+  "6a32c909-6d47-5097-a8a9-50e39d01408f": [
+   {
+    "youtube_id": "KcUcjlPaidM",
+    "title": "Open Day 2026 - Adelaide City Campus",
+    "kind": "campus_tour",
+    "channel": "Adelaide University",
+    "channel_url": "https://www.youtube.com/@AdelaideUniAustralia",
+    "source_url": "https://www.youtube.com/watch?v=KcUcjlPaidM",
+    "checked_at": "2026-10-18"
+   },
+   {
+    "youtube_id": "vgx1VR3XHQ4",
+    "title": "Adelaide University - Corporate Film",
+    "kind": "introduction",
+    "channel": "Adelaide University",
+    "channel_url": "https://www.youtube.com/@AdelaideUniAustralia",
+    "source_url": "https://www.youtube.com/watch?v=vgx1VR3XHQ4",
+    "checked_at": "2026-10-18"
+   },
+   {
+    "youtube_id": "J_BExsmV2wY",
+    "title": "How to enrol at Adelaide University",
+    "kind": "admissions",
+    "channel": "Adelaide University",
+    "channel_url": "https://www.youtube.com/@AdelaideUniAustralia",
+    "source_url": "https://www.youtube.com/watch?v=J_BExsmV2wY",
+    "checked_at": "2026-10-18"
+   }
+  ],
+  "fe2070ba-9e66-590c-b67f-3cef2d8983b4": [
+   {
+    "youtube_id": "wJ3eqaoz7k4",
+    "title": "Universität Heidelberg: Campustour",
+    "kind": "campus_tour",
+    "channel": "UniHeidelberg",
+    "channel_url": "https://www.youtube.com/@UniHeidelberg",
+    "source_url": "https://www.youtube.com/watch?v=wJ3eqaoz7k4",
+    "checked_at": "2026-10-18"
+   }
+  ],
+  "5d324277-c7c7-52eb-9d99-03367f122d16": [
+   {
+    "youtube_id": "QGQv8vv4KQg",
+    "title": "Why come to the University of Washington?",
+    "kind": "introduction",
+    "channel": "UW (University of Washington)",
+    "channel_url": "https://www.youtube.com/@universityofwashington",
+    "source_url": "https://www.youtube.com/watch?v=QGQv8vv4KQg",
+    "checked_at": "2026-10-18"
+   },
+   {
+    "youtube_id": "AGD6rTFmwfs",
+    "title": "Ask UW Admissions! Six frequent admissions questions answered",
+    "kind": "admissions",
+    "channel": "UW (University of Washington)",
+    "channel_url": "https://www.youtube.com/@universityofwashington",
+    "source_url": "https://www.youtube.com/watch?v=AGD6rTFmwfs",
+    "checked_at": "2026-10-18"
+   }
+  ]
+ }
+}

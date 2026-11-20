@@ -109,7 +109,7 @@ test("MCP notifications never stage records and tool errors have MCP result fram
   assert.equal(
     (failure as { result: { content: { text: string }[] } }).result.content[0]
       .text,
-    "Verify your authenticator",
+    "Tool failed. Retry or inspect the record in the staff console.",
   );
 });
 test("staging validates evidence, percentage bounds and mandatory original HTTPS URL", () => {

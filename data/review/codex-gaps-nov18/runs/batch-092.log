@@ -1,0 +1,132 @@
+OpenAI Codex v0.169.0
+--------
+workdir: /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+model: gpt-6-luna
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: high
+reasoning summaries: none
+session id: 01a1ee92-a3a7-7841-9d8f-cc048e2e840b
+--------
+user
+You are a careful admissions-data researcher. For each university below, find facts for an
+INTERNATIONAL applicant to a FIRST-YEAR BACHELOR'S degree starting in autumn 2027 (or the nearest
+published cycle). Use the live web. Rules:
+
+- Official sources only: the university's own website (its domain or subdomains), the national
+  application service (UCAS, Common App, OUAC, uni-assist, Studyinkorea, etc.) or a government
+  statistics office. Never use rankings sites, forums, agencies, Wikipedia or blogs.
+- Every value needs the exact page URL where you read it (source_url). If you could not verify a
+  value on an official page, leave it out (null or an empty list). Never guess or estimate.
+- english: the lowest overall score accepted for undergraduate entry, per test (IELTS Academic
+  overall, TOEFL iBT total, Duolingo, PTE). If programmes differ, give the general/lowest common
+  university minimum and say so in detail (e.g. "6.5 overall, no band below 6.0; some
+  programmes higher").
+- tuition: the yearly tuition for international (non-EU / overseas) undergraduates in the local
+  currency. If it varies by programme give amount = lowest and amount_max = highest, and the
+  academic_year the fee applies to (e.g. "2026/27"). If tuition is free, amount = 0.
+- application_fee: for international first-year applicants, local currency.
+- deadlines: the main 2027-entry first-year deadlines (ISO date YYYY-MM-DD) with the route
+  (e.g. "Common App, Regular Decision", "UCAS", "university portal"). Only dates actually
+  published; if only the 2026-entry date is published, include it and put "2026 entry" in title.
+- sat: policy for international applicants; p25/p75 total SAT only if the university publishes
+  them (Common Data Set or admissions profile).
+- acceptance_rate: only if officially published (CDS, admissions statistics page).
+- notes: one short line on anything important (e.g. "Foundation year required for 11-year
+  school certificates"), else "".
+
+Spend effort on the facts students need most: English minimum, tuition, deadlines. Keep each
+detail under 160 characters. Return only the JSON that matches the schema; use each
+university's id exactly as given.
+
+Universities:
+- id: 9318afbb-e22b-5e0d-a59f-e47c1f802c32 | University of Limerick | Limerick, IE | http://www.ul.ie/
+- id: df1296f4-63d0-57c4-aadc-9fb97656eaf0 | Università Cattolica del Sacro Cuore | Milan, IT | https://www.unicatt.eu
+- id: 22f80f4b-b2f0-50d7-a747-c073a4b79913 | University of Athens | Athens, GR | https://www.uoa.gr/
+- id: 174e9c62-769f-50e7-aac8-550690cdbe35 | Lappeenranta University of Technology | Lappeenranta, FI | http://www.lut.fi/
+codex
+I’m checking the required research context first, then I’ll verify each university’s current official admissions and fee pages and return only the requested JSON.
+exec
+/bin/zsh -lc 'cat /Users/likeanew/.agents/skills/lemma/SKILL.md' in /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+ succeeded in 0ms:
+---
+name: lemma
+description: Persistent cross-session memory for AI agents via MCP. BEFORE starting ANY task (coding, debugging, refactoring, research, docs, optimization — any language), FIRST call memory_read to load what you already know so you never re-derive or re-explore known facts. AFTER finishing, call memory_add to persist new findings and session_attempt for dead ends — unsaved knowledge is lost permanently. Distills reusable guides from experience.
+---
+
+<!-- lemma:skill:v=0.21.0 -->
+
+# Lemma — Persistent Memory & Learning
+
+Lemma is a persistent memory server for AI agents over the Model Context Protocol.
+Every session starts blank — knowledge survives ONLY through tool calls. If you
+learn something and don't save it (`memory_add`), it is gone permanently.
+
+## Workflow
+1. **RECALL** — `memory_read` / `semantic_search`: load what's already known for this
+   project/task. Never re-explore code or re-derive facts that are already saved.
+2. **ACT** — do the task.
+3. **PERSIST** — `memory_add` for new insights; `guide_practice` for guides applied;
+   `session_attempt` for abandoned/dead-end approaches (the most valuable records).
+
+## Two knowledge layers
+- **Memory fragments** (`memory_read` / `memory_add`): atomic facts. Types: `fact`,
+  `pattern`, `lesson`, `warning`, `context`. Confidence evolves with use and feedback.
+- **Guides** (`guide_get` / `guide_distill` / `guide_practice`): procedural skills
+  distilled from fragments. Track usage count + success/failure rate.
+Pipeline: `experience -> memory_add -> pattern/lesson -> guide_distill -> guide_practice`.
+
+## Tools at a glance
+- **Recall & search**: `memory_read`, `semantic_search`, `memory_library` (full
+  snapshot + maintenance signals), `memory_stats`, `memory_audit`.
+- **Write & maintain**: `memory_add`, `memory_update`, `memory_forget`,
+  `memory_merge`, `memory_relate` (supports / contradicts / supersedes / related_to),
+  `memory_feedback`.
+- **Guides**: `guide_get`, `guide_create`, `guide_distill`, `guide_practice`,
+  `guide_update`, `guide_forget`, `guide_merge`.
+- **Sessions & reasoning**: `session_start`, `session_end`, `session_attempt`,
+  `session_stats`, `suggestion_respond`.
+- **Background intelligence**: `conflict_scan`, `proactive_analysis`,
+  `project_analytics` (run automatically; act on signals when sensible).
+
+## Writing a fragment
+```
+## [Topic Title]
+### Context
+[1-2 sentences: what and why it matters]
+### [Content Section]
+- [Key fact 1]
+- [Key fact 2]
+### Rules (optional)
+- [Absolute constraint]
+```
+One idea per fragment, 30-2000 chars, structured markdown (not prose). **Store
+fragments in ENGLISH** (required for search/retrieval). Never ask permission to save.
+
+## Background intelligence
+Conflict detection, distill/merge/refine suggestions, and auto-linking run
+automatically. From the CLI, `lemma -lib` prints a full knowledge-base snapshot
+and `lemma -vis` launches a visualizer.
+
+web search: 
+web search: site:ul.ie international undergraduate fees 2026 2027 English language requirements application deadline 2027 University of Limerick ...
+web search: 
+web search: site:unicatt.eu "International" "Bachelor" tuition fee 2026/27 Cattolica application fee deadline ...
+web search: 
+web search: site:international.unicatt.it/ucscinternational-undergraduate-programmes 2027 "tuition" application fee ...
+web search: 
+web search: site:ul.ie "IELTS" "TOEFL" "Duolingo" "Undergraduate" "Non-EU" English language 6.5 ...
+web search: 
+web search: 
+web search: 
+web search: site:ul.ie/study "English Language Requirements" IELTS Academic TOEFL iBT undergraduate 6.5 Duolingo ...
+web search: 
+web search: site:lut.fi/en/studies/apply-lut "IELTS" "Bachelor" English language requirements ...
+web search: 
+web search: 
+codex
+{"universities":[{"id":"9318afbb-e22b-5e0d-a59f-e47c1f802c32","english":[{"test":"IELTS","minimum":0,"detail":"6.5 overall, no band below 6.0; some programmes require higher scores.","source_url":"https://www.ul.ie/global/incoming-students/before-you-arrive/english-language-requirements"},{"test":"TOEFL iBT","minimum":0,"detail":"90 internet-based.","source_url":"https://www.ul.ie/global/incoming-students/before-you-arrive/english-language-requirements"},{"test":"Duolingo","minimum":0,"detail":"120 overall, no component below 110.","source_url":"https://www.ul.ie/global/incoming-students/before-you-arrive/english-language-requirements"},{"test":"PTE Academic","minimum":0,"detail":"61 overall, no section below 59.","source_url":"https://www.ul.ie/global/incoming-students/before-you-arrive/english-language-requirements"},{"test":"Cambridge C1/C2","minimum":0,"detail":"CPE grade C or above; CAE grade A or above.","source_url":"https://www.ul.ie/global/incoming-students/before-you-arrive/english-language-requirements"}],"tuition":{"amount":17500,"amount_max":22700,"currency":"EUR","period":"year","academic_year":"2026/27","detail":"Non-EU undergraduate course fees vary by programme; listed range.","source_url":"https://www.ul.ie/fees/course-fees/undergraduate-fees/undergraduate-fees-2026-2027"},"application_fee":{"amount":50,"currency":"EUR","source_url":"https://www.ul.ie/academic-registry/applying-directly-to-ul"},"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"September 2027 applications are open until early July 2027; exact day not published. International applicants apply directly to UL."},{"id":"df1296f4-63d0-57c4-aadc-9fb97656eaf0","english":[{"test":"IELTS","minimum":0,"detail":"6.0 overall minimum for English-taught undergraduate programmes (B2).","source_url":"https://international.unicatt.it/ucscinternational-undergraduate-programmes-english-language-proficiency-requirement-undergraduate-degree-programmes"},{"test":"TOEFL iBT","minimum":0,"detail":"84 or 4.5 on the new scale; minimum B2 level.","source_url":"https://international.unicatt.it/ucscinternational-undergraduate-programmes-english-language-proficiency-requirement-undergraduate-degree-programmes"},{"test":"PTE Academic","minimum":0,"detail":"65 minimum for English-taught undergraduate programmes (B2).","source_url":"https://international.unicatt.it/ucscinternational-undergraduate-programmes-english-language-proficiency-requirement-undergraduate-degree-programmes"},{"test":"Cambridge C1/C2","minimum":0,"detail":"173 minimum; Cambridge First, Advanced and Proficiency accepted.","source_url":"https://international.unicatt.it/ucscinternational-undergraduate-programmes-english-language-proficiency-requirement-undergraduate-degree-programmes"}],"tuition":{"amount":8800,"amount_max":null,"currency":"EUR","period":"year","academic_year":"2027/28","detail":"Flat fee for 3-year bachelor's students whose family income is produced outside the EU/associated states.","source_url":"https://international.unicatt.it/ucscinternational-admission-and-tuition-tuition-fees-and-scholarships-4480"},"application_fee":{"amount":75,"currency":"EUR","source_url":"https://international.unicatt.it/ucscinternational-Brochure%20Undergraduate_WEB.pdf"},"deadlines":[{"title":"Round 1, international applicants","due_at":"2027-02-17","route":"Cattolica online application","source_url":"https://international.unicatt.it/ucscinternational-ammissioni-e-tasse-scadenze-per-la-candidatura-online"},{"title":"Round 2, final round for non-EU visa applicants","due_at":"2027-05-05","route":"Cattolica online application","source_url":"https://international.unicatt.it/ucscinternational-ammissioni-e-tasse-scadenze-per-la-candidatura-online"}],"sat":null,"acceptance_rate":null,"notes":"English tests and published fee are for English-taught 3-year bachelor's programmes; deadlines may vary by programme."},{"id":"22f80f4b-b2f0-50d7-a747-c073a4b79913","english":[{"test":"IELTS","minimum":0,"detail":"6.5 overall, minimum 5.5 in each component (BA in Archaeology, History and Literature of Ancient Greece).","source_url":"https://baag.uoa.gr/admission-fees/"},{"test":"TOEFL iBT","minimum":0,"detail":"88 overall; minimum L17, W17, R18, S20 (BA in Archaeology, History and Literature of Ancient Greece).","source_url":"https://baag.uoa.gr/admission-fees/"}],"tuition":{"amount":6000,"amount_max":null,"currency":"EUR","period":"year","academic_year":"2026/27","detail":"Annual tuition for the English-taught BA in Archaeology, History and Literature of Ancient Greece.","source_url":"https://baag.uoa.gr/admission-fees/"},"application_fee":null,"deadlines":[{"title":"2026 entry, visa and non-visa applicants","due_at":"2026-08-01","route":"BA programme application","source_url":"https://baag.uoa.gr/admission-fees/"}],"sat":null,"acceptance_rate":null,"notes":"English-language admission and fee data refer to the university's international BA in Archaeology, History and Literature of Ancient Greece."},{"id":"174e9c62-769f-50e7-aac8-550690cdbe35","english":[],"tuition":{"amount":12000,"amount_max":null,"currency":"EUR","period":"year","academic_year":"2026/27","detail":"Non-EU/EEA fee for English-language bachelor's programmes.","source_url":"https://www.lut.fi/en/studies/apply-lut/applying-bachelors-programmes/international-rolling-admission-bachelors-studies"},"application_fee":{"amount":100,"currency":"EUR","source_url":"https://www.lut.fi/en/studies/bachelors-programmes"},"deadlines":[{"title":"2027 entry, rolling admission","due_at":"2027-04-30","route":"LUT online application","source_url":"https://www.lut.fi/en/studies/apply-lut/applying-bachelors-programmes/international-rolling-admission-bachelors-studies"}],"sat":null,"acceptance_rate":null,"notes":"Rolling applications close earlier if the chosen programme fills."}] }
+tokens used
+77,427
+{"universities":[{"id":"9318afbb-e22b-5e0d-a59f-e47c1f802c32","english":[{"test":"IELTS","minimum":0,"detail":"6.5 overall, no band below 6.0; some programmes require higher scores.","source_url":"https://www.ul.ie/global/incoming-students/before-you-arrive/english-language-requirements"},{"test":"TOEFL iBT","minimum":0,"detail":"90 internet-based.","source_url":"https://www.ul.ie/global/incoming-students/before-you-arrive/english-language-requirements"},{"test":"Duolingo","minimum":0,"detail":"120 overall, no component below 110.","source_url":"https://www.ul.ie/global/incoming-students/before-you-arrive/english-language-requirements"},{"test":"PTE Academic","minimum":0,"detail":"61 overall, no section below 59.","source_url":"https://www.ul.ie/global/incoming-students/before-you-arrive/english-language-requirements"},{"test":"Cambridge C1/C2","minimum":0,"detail":"CPE grade C or above; CAE grade A or above.","source_url":"https://www.ul.ie/global/incoming-students/before-you-arrive/english-language-requirements"}],"tuition":{"amount":17500,"amount_max":22700,"currency":"EUR","period":"year","academic_year":"2026/27","detail":"Non-EU undergraduate course fees vary by programme; listed range.","source_url":"https://www.ul.ie/fees/course-fees/undergraduate-fees/undergraduate-fees-2026-2027"},"application_fee":{"amount":50,"currency":"EUR","source_url":"https://www.ul.ie/academic-registry/applying-directly-to-ul"},"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"September 2027 applications are open until early July 2027; exact day not published. International applicants apply directly to UL."},{"id":"df1296f4-63d0-57c4-aadc-9fb97656eaf0","english":[{"test":"IELTS","minimum":0,"detail":"6.0 overall minimum for English-taught undergraduate programmes (B2).","source_url":"https://international.unicatt.it/ucscinternational-undergraduate-programmes-english-language-proficiency-requirement-undergraduate-degree-programmes"},{"test":"TOEFL iBT","minimum":0,"detail":"84 or 4.5 on the new scale; minimum B2 level.","source_url":"https://international.unicatt.it/ucscinternational-undergraduate-programmes-english-language-proficiency-requirement-undergraduate-degree-programmes"},{"test":"PTE Academic","minimum":0,"detail":"65 minimum for English-taught undergraduate programmes (B2).","source_url":"https://international.unicatt.it/ucscinternational-undergraduate-programmes-english-language-proficiency-requirement-undergraduate-degree-programmes"},{"test":"Cambridge C1/C2","minimum":0,"detail":"173 minimum; Cambridge First, Advanced and Proficiency accepted.","source_url":"https://international.unicatt.it/ucscinternational-undergraduate-programmes-english-language-proficiency-requirement-undergraduate-degree-programmes"}],"tuition":{"amount":8800,"amount_max":null,"currency":"EUR","period":"year","academic_year":"2027/28","detail":"Flat fee for 3-year bachelor's students whose family income is produced outside the EU/associated states.","source_url":"https://international.unicatt.it/ucscinternational-admission-and-tuition-tuition-fees-and-scholarships-4480"},"application_fee":{"amount":75,"currency":"EUR","source_url":"https://international.unicatt.it/ucscinternational-Brochure%20Undergraduate_WEB.pdf"},"deadlines":[{"title":"Round 1, international applicants","due_at":"2027-02-17","route":"Cattolica online application","source_url":"https://international.unicatt.it/ucscinternational-ammissioni-e-tasse-scadenze-per-la-candidatura-online"},{"title":"Round 2, final round for non-EU visa applicants","due_at":"2027-05-05","route":"Cattolica online application","source_url":"https://international.unicatt.it/ucscinternational-ammissioni-e-tasse-scadenze-per-la-candidatura-online"}],"sat":null,"acceptance_rate":null,"notes":"English tests and published fee are for English-taught 3-year bachelor's programmes; deadlines may vary by programme."},{"id":"22f80f4b-b2f0-50d7-a747-c073a4b79913","english":[{"test":"IELTS","minimum":0,"detail":"6.5 overall, minimum 5.5 in each component (BA in Archaeology, History and Literature of Ancient Greece).","source_url":"https://baag.uoa.gr/admission-fees/"},{"test":"TOEFL iBT","minimum":0,"detail":"88 overall; minimum L17, W17, R18, S20 (BA in Archaeology, History and Literature of Ancient Greece).","source_url":"https://baag.uoa.gr/admission-fees/"}],"tuition":{"amount":6000,"amount_max":null,"currency":"EUR","period":"year","academic_year":"2026/27","detail":"Annual tuition for the English-taught BA in Archaeology, History and Literature of Ancient Greece.","source_url":"https://baag.uoa.gr/admission-fees/"},"application_fee":null,"deadlines":[{"title":"2026 entry, visa and non-visa applicants","due_at":"2026-08-01","route":"BA programme application","source_url":"https://baag.uoa.gr/admission-fees/"}],"sat":null,"acceptance_rate":null,"notes":"English-language admission and fee data refer to the university's international BA in Archaeology, History and Literature of Ancient Greece."},{"id":"174e9c62-769f-50e7-aac8-550690cdbe35","english":[],"tuition":{"amount":12000,"amount_max":null,"currency":"EUR","period":"year","academic_year":"2026/27","detail":"Non-EU/EEA fee for English-language bachelor's programmes.","source_url":"https://www.lut.fi/en/studies/apply-lut/applying-bachelors-programmes/international-rolling-admission-bachelors-studies"},"application_fee":{"amount":100,"currency":"EUR","source_url":"https://www.lut.fi/en/studies/bachelors-programmes"},"deadlines":[{"title":"2027 entry, rolling admission","due_at":"2027-04-30","route":"LUT online application","source_url":"https://www.lut.fi/en/studies/apply-lut/applying-bachelors-programmes/international-rolling-admission-bachelors-studies"}],"sat":null,"acceptance_rate":null,"notes":"Rolling applications close earlier if the chosen programme fills."}] }

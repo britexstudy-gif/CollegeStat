@@ -1,7 +1,12 @@
 import type { DirectoryRecord as DirectoryRow } from "@/lib/dataset-records";
 import { officialLogo } from "@/lib/official-logos";
 import applicationDates from "@/data/published/application-dates-current.json";
+import applicationFees from "@/data/published/application-fees-current.json";
 import currentRequirements from "@/data/published/requirements-current.json";
+import segmentApplicationDates from "@/data/published/application-dates-segment-nov14.json";
+import segmentApplicationFees from "@/data/published/application-fees-segment-nov14.json";
+import segmentRequirements from "@/data/published/requirements-segment-nov14.json";
+import { dedupeBy, dedupeRequirements } from "@/lib/requirements-merge";
 import publishedRanks from "@/data/published/ranking-records.json";
 import type { RankHighlight, Publisher } from "@/lib/ranking-highlights";
 import { scholarshipsForUniversity } from "./scholarship-catalogue";
@@ -11,7 +16,11 @@ import applicationBriefsJSON from "@/data/published/application-briefs.json";
 import officialWebJSON from "@/data/published/official-web-profiles.json";
 import officialProgramsJSON from "@/data/published/official-programs.json";
 import imageCacheJSON from "@/data/published/institution-image-cache.json";
-import { reportedPrograms, researchLibrary } from "./profile-library";
+import {
+  reportedPrograms,
+  researchLibrary,
+  institutionResearchMetrics,
+} from "./profile-library";
 import publisherStudentsJSON from "@/data/published/publisher-students.json";
 import directory from "@/data/published/global-directory.json";
 import officialSocialsJSON from "@/data/published/official-socials.json";
@@ -118,7 +127,11 @@ function normalize(row: DirectoryRow): University {
           university_id: row.id,
           program_id: null,
           acceptance_rate:
-            (100 * admissionSnapshot.admitted) / admissionSnapshot.applicants,
+            Number.isFinite(admissionSnapshot.applicants) &&
+            admissionSnapshot.applicants > 0 &&
+            Number.isFinite(admissionSnapshot.admitted)
+              ? (100 * admissionSnapshot.admitted) / admissionSnapshot.applicants
+              : null,
           sat_min: null,
           sat_max: null,
           ielts_min: null,
@@ -157,6 +170,15 @@ function normalize(row: DirectoryRow): University {
           level: string;
           url: string;
           checked_at: string;
+          language?: string;
+          subject?: string;
+          source_url?: string;
+          source_id?: string;
+          university_program_id?: string;
+          reporting_year?: number | null;
+          availability?: string;
+          evidence?: Requirement["evidence"];
+          notes?: string;
         }[]
       >
     )[host] || [];
@@ -347,7 +369,6 @@ function normalize(row: DirectoryRow): University {
     city: row.city || null,
     region: regionForCountry(row.country_code),
     website: row.website,
-    university_type: row.university_type || null,
     founded_year: row.founded_year || null,
     description: `${row.name}${row.city ? ` in ${row.city}` : ""}, ${row.country}.${row.founded_year ? ` Established in ${row.founded_year}.` : ""} Explore its admissions, published research and official application resources.`,
     latitude: row.latitude ?? null,
@@ -359,6 +380,7 @@ function normalize(row: DirectoryRow): University {
       ? row.admissions_url
       : web?.links.admissions?.url || null,
     ...ref,
+    university_type: row.university_type || ref?.university_type || null,
     institution_image_url:
       imageCache[row.id]?.url || researchLibrary[row.id]?.logo_url || null,
     logo_url:
@@ -393,6 +415,7 @@ function normalize(row: DirectoryRow): University {
     reported_programs: reportedPrograms(row.id),
     rankings: ranksByUniversity.get(row.id) || [],
     research_identity: researchLibrary[row.id] || null,
+    research_metrics: institutionResearchMetrics(row.id),
     social_source_url:
       officialSocials[row.id]?.source_url || extra?.source_url || null,
     application_url: row.application_url || null,
@@ -404,27 +427,60 @@ function normalize(row: DirectoryRow): University {
     identity_release: row.identity_release || null,
     university_programs: courses.length
       ? courses.map((c) => ({
-          source_url: c.url,
-          source_id: "official-course-" + host,
+          id: c.university_program_id,
+          university_program_id: c.university_program_id,
+          source_url: /^[\da-f]{8}(?:-[\da-f]{4}){3}-[\da-f]{12}$/i.test(c.id)
+            ? c.source_url || c.url
+            : c.url,
+          source_id: c.source_id || "official-course-" + host,
           verified_at: c.checked_at,
           verification_status: "verified" as const,
-          year: 2026,
+          year: c.reporting_year === undefined ? 2026 : c.reporting_year,
+          reporting_year: c.reporting_year,
+          availability: c.availability,
+          evidence: c.evidence,
+          notes: c.notes,
           programs: {
-            id: host + ":" + c.id,
+            id: /^[\da-f]{8}(?:-[\da-f]{4}){3}-[\da-f]{12}$/i.test(c.id)
+              ? c.id
+              : host + ":" + c.id,
             name: c.name,
-            subject: c.name,
+            subject: c.subject || c.name,
             degree_level: c.level,
-            language: null,
+            language: c.language || null,
           },
         }))
       : ref?.university_programs || [],
-    costs: [...(ref?.costs || []), ...costs],
+    costs: [
+      ...(ref?.costs || []),
+      ...costs,
+      ...(applicationFees as University["costs"]).filter(
+        (fee) => fee.university_id === row.id,
+      ),
+      ...dedupeBy(
+        (applicationFees as University["costs"]).filter((fee) => fee.university_id === row.id),
+        (segmentApplicationFees as University["costs"]).filter((fee) => fee.university_id === row.id),
+        (fee) => String(fee.category),
+      ),
+    ],
     requirements: [
       ...new Map(
         [
           ...(ref?.requirements || []),
           ...(currentRequirements as Requirement[]).filter(
             (r) => r.university_id === row.id,
+          ),
+          // 14 Nov segment research: only test kinds the university does not already have.
+          ...dedupeRequirements(
+            [
+              ...(ref?.requirements || []),
+              ...(currentRequirements as Requirement[]).filter(
+                (r) => r.university_id === row.id,
+              ),
+            ],
+            (segmentRequirements as Requirement[]).filter(
+              (r) => r.university_id === row.id,
+            ),
           ),
         ].map((r) => [r.id, r]),
       ).values(),
@@ -433,6 +489,11 @@ function normalize(row: DirectoryRow): University {
       ...(ref?.deadlines || []),
       ...(applicationDates as Deadline[]).filter(
         (d) => d.university_id === row.id,
+      ),
+      ...dedupeBy(
+        (applicationDates as Deadline[]).filter((d) => d.university_id === row.id),
+        (segmentApplicationDates as Deadline[]).filter((d) => d.university_id === row.id),
+        (d) => d.due_at.slice(0, 10),
       ),
     ],
     university_scholarships: [

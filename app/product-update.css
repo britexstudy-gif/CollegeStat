@@ -15,14 +15,11 @@
   margin: 10px 0;
 }
 .admissions-heading p,
-.admissions-cards p,
-.support-page p {
+.admissions-cards p {
   color: var(--muted-foreground);
   line-height: 1.8;
 }
-.admissions-cards,
-.support-contributions,
-.support-impact {
+.admissions-cards {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 22px;
@@ -33,8 +30,7 @@
   padding: 26px;
   background: color-mix(in srgb, var(--background) 88%, #fff);
 }
-.admissions-cards article > svg,
-.support-contributions article > svg {
+.admissions-cards article > svg {
   color: var(--primary);
   margin-bottom: 20px;
 }
@@ -103,77 +99,6 @@
 .application-route-card li {
   line-height: 1.8;
   padding: 8px 0 8px 8px;
-}
-.support-mission {
-  padding: 56px 0;
-  border-top: 1px solid var(--border);
-}
-.support-mission h2 {
-  font-size: clamp(30px, 4vw, 45px);
-  letter-spacing: -0.05em;
-  margin: 14px 0 35px;
-}
-.support-impact strong {
-  color: var(--primary);
-  font-size: 15px;
-}
-.support-impact h3 {
-  font-size: 21px;
-  margin: 20px 0 12px;
-}
-.support-contributions {
-  scroll-margin-top: 120px;
-  margin: 20px 0 60px;
-}
-.support-contributions article {
-  padding: 30px;
-  border: 1px solid var(--border);
-  border-radius: 18px;
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-}
-.support-contributions h2 {
-  font-size: 23px;
-  letter-spacing: -0.04em;
-  margin: 0 0 14px;
-}
-.support-contributions p {
-  font-size: 14px;
-  margin-bottom: 26px;
-  flex: 1;
-}
-.support-donate {
-  display: flex;
-  align-items: center;
-  gap: 30px;
-  border-radius: 24px;
-  padding: 38px;
-  background: color-mix(in srgb, var(--primary) 6%, var(--background));
-}
-.support-donate > svg {
-  color: var(--primary);
-  flex-shrink: 0;
-}
-.support-donate > div {
-  flex: 1;
-}
-.support-donate h2 {
-  font-size: 27px;
-  margin-bottom: 10px;
-}
-.support-donate p {
-  max-width: 670px;
-}
-.support-help {
-  margin-top: 64px;
-}
-.ranking-filter-row {
-  flex-wrap: wrap;
-  gap: 12px;
-}
-.ranking-filter-row select {
-  max-width: 230px;
 }
 .directory-sort-note {
   margin: 10px 0 22px;
@@ -259,13 +184,10 @@
 }
 @media (max-width: 900px) {
   .admissions-cards,
-  .support-contributions,
-  .support-impact,
   .people-grid {
     grid-template-columns: 1fr;
   }
-  .admissions-heading,
-  .support-donate {
+  .admissions-heading {
     align-items: flex-start;
     flex-direction: column;
   }
@@ -820,31 +742,6 @@
   }
 }
 /* Plain controls and predictable reading order for the main research flows. */
-.home-search-form input {
-  flex: 1;
-  min-width: 0;
-  background: transparent;
-  border: 0;
-  padding: 0 12px;
-  font-size: clamp(17px, 2.8vw, 29px);
-  color: var(--foreground);
-  outline-offset: 8px;
-}
-.home-search-form .home-search-submit {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  padding: 14px 22px;
-  background: var(--primary);
-  color: white;
-  border-radius: 32px;
-  font-size: 14px;
-  flex-shrink: 0;
-}
-.home-search-form .home-search-submit:focus-visible {
-  outline: 3px solid var(--primary);
-  outline-offset: 4px;
-}
 .scholarship-filter-bar {
   display: flex;
   flex-wrap: wrap;
@@ -920,17 +817,6 @@ textarea:focus-visible {
   outline-offset: 3px;
 }
 @media (max-width: 600px) {
-  .home-search-form input {
-    font-size: 17px;
-    padding-left: 0;
-  }
-  .home-search-form .home-search-submit {
-    padding: 12px;
-    gap: 5px;
-  }
-  .home-search-form .home-search-submit svg {
-    display: none;
-  }
   .scholarship-results-heading {
     align-items: flex-start;
     flex-direction: column;
@@ -1207,11 +1093,6 @@ textarea:focus-visible {
 .funding-route-grid .product-icon {
   margin-bottom: 22px;
 }
-.home-search-icon {
-  flex-shrink: 0;
-  color: var(--muted-foreground);
-  margin-left: 4px;
-}
 .scholarship-filter-bar {
   display: grid;
   grid-template-columns: minmax(220px, 2fr) repeat(2, minmax(170px, 1fr));
@@ -1313,9 +1194,6 @@ textarea:focus-visible {
   }
   .application-preparation {
     gap: 22px 18px;
-  }
-  .home-search-icon {
-    display: none;
   }
   .scholarships-page .panel.scholarship-award {
     padding: 22px;
@@ -1871,8 +1749,8 @@ textarea:focus-visible {
   height: auto;
 }
 .university-logo.logo-surface-dark {
-  background: #18202b;
-  border-color: #18202b;
+  background: #1f1f1f;
+  border-color: #1f1f1f;
 }
 :is(
     .profile-section-filter,

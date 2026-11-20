@@ -1,0 +1,249 @@
+/* Sidebar v2: quieter, flatter, Linear-like. Scoped by .sb2 so the older
+   layered workspace rules lose without !important. */
+html body .workspace-studio .oneprep-workspace__sidebar.sb2 {
+  --sb-bg: #fbfbfd;
+  --sb-ink: #1a2233;
+  --sb-muted: #677189;
+  --sb-hover: #f0f2f7;
+  --sb-active: #ffffff;
+  --sb-line: #e7e9f0;
+  --sb-accent: #2a5ff0;
+  background: var(--sb-bg);
+  border-right: 1px solid var(--sb-line);
+}
+html.dark body .workspace-studio .oneprep-workspace__sidebar.sb2 {
+  --sb-bg: #131313;
+  --sb-ink: #e8ebf2;
+  --sb-muted: #8d96a8;
+  --sb-hover: #1d1d1d;
+  --sb-active: #242424;
+  --sb-line: #252525;
+  --sb-accent: #4d8dff;
+}
+html body .workspace-studio .sb2 .oneprep-brand strong {
+  font-size: 15.5px;
+  letter-spacing: -0.02em;
+}
+html body .workspace-studio .sb2 .oneprep-brand small {
+  font-size: 11.5px;
+  color: var(--sb-muted);
+}
+html body .workspace-studio .sb2 .studio-sidebar-search {
+  height: 34px;
+  border-radius: 9px;
+  border-color: var(--sb-line);
+  background: transparent;
+  color: var(--sb-muted);
+  font-size: 13px;
+}
+html body .workspace-studio .sb2 .studio-sidebar-search:hover {
+  background: var(--sb-hover);
+}
+html body .workspace-studio .sb2 .studio-nav-group {
+  display: grid;
+  gap: 1px;
+  margin-top: 14px;
+}
+html body .workspace-studio .sb2 .studio-nav-group:first-child {
+  margin-top: 6px;
+}
+html body .workspace-studio .sb2 .studio-nav-label {
+  margin: 0 0 4px;
+  padding: 0 10px;
+  color: var(--sb-muted);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  opacity: 0.85;
+}
+html body .workspace-studio .sb2 .oneprep-nav--primary .oneprep-nav__item {
+  position: relative;
+  min-height: 36px;
+  padding: 0 10px;
+  gap: 11px;
+  border: 0;
+  border-radius: 9px;
+  background: transparent;
+  box-shadow: none;
+  color: var(--sb-muted);
+  font-size: 14px;
+  font-weight: 500;
+  transition: background 0.15s, color 0.15s;
+}
+html body .workspace-studio .sb2 .oneprep-nav--primary .oneprep-nav__item svg {
+  color: currentColor;
+  opacity: 0.9;
+}
+html body .workspace-studio .sb2 .oneprep-nav--primary .oneprep-nav__item:hover {
+  background: var(--sb-hover);
+  color: var(--sb-ink);
+}
+html body .workspace-studio .sb2 .oneprep-nav--primary .oneprep-nav__item.is-active {
+  background: var(--sb-active);
+  color: var(--sb-ink);
+  font-weight: 600;
+  box-shadow:
+    0 0 0 1px var(--sb-line),
+    0 1px 2px #0f172a0d;
+}
+html body .workspace-studio .sb2 .oneprep-nav--primary .oneprep-nav__item.is-active svg {
+  color: var(--sb-accent);
+  opacity: 1;
+}
+html body .workspace-studio .sb2 .oneprep-nav--primary .oneprep-nav__item.is-active::before {
+  display: none;
+}
+html body .workspace-studio .sb2 .oneprep-nav__count {
+  margin-left: auto;
+  min-width: 20px;
+  height: 20px;
+  padding: 0 6px;
+  border-radius: 99px;
+  background: color-mix(in srgb, var(--sb-accent) 12%, transparent);
+  color: var(--sb-accent);
+  font-size: 11px;
+  font-weight: 650;
+}
+
+/* Progress chip */
+html body .workspace-studio .sb2 .sb2-progress {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: auto 0 10px;
+  padding: 10px 12px;
+  border: 1px solid var(--sb-line);
+  border-radius: 12px;
+  background: var(--sb-active);
+  color: var(--sb-ink);
+  text-decoration: none;
+  transition: border-color 0.15s;
+}
+html body .workspace-studio .sb2 .sb2-progress:hover {
+  border-color: color-mix(in srgb, var(--sb-accent) 35%, var(--sb-line));
+}
+.sb2-flame {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  padding: 4px 8px;
+  border-radius: 99px;
+  background: color-mix(in srgb, #8d96a8 14%, transparent);
+  color: #8d96a8;
+  font-size: 13px;
+}
+.sb2-flame.is-lit {
+  background: #ff7a1a1f;
+  color: #ff7a1a;
+}
+.sb2-flame.is-lit svg {
+  fill: #ffb366;
+}
+.sb2-level {
+  display: grid;
+  flex: 1;
+  gap: 5px;
+  min-width: 0;
+}
+.sb2-level small {
+  overflow: hidden;
+  font-size: 12px;
+  font-weight: 600;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.sb2-level i {
+  display: block;
+  height: 4px;
+  border-radius: 99px;
+  background: color-mix(in srgb, #8d96a8 22%, transparent);
+  overflow: hidden;
+}
+.sb2-level em {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: #16a34a;
+}
+html body .workspace-studio .sb2 .oneprep-sidebar__foot {
+  border-top-color: var(--sb-line);
+}
+/* Rail mode: keep only the flame. */
+@media (min-width: 901px) {
+  html body .workspace-studio.is-sidebar-auto .sb2:not(:hover, :focus-within) .sb2-level {
+    display: none;
+  }
+  html body .workspace-studio.is-sidebar-auto .sb2:not(:hover, :focus-within) .sb2-progress {
+    padding: 8px 4px;
+    justify-content: center;
+    border-color: transparent;
+    background: transparent;
+  }
+}
+
+/* Workspace canvas: the sidebar sits on a soft grey canvas and the page
+   content lives on one raised panel (desktop). */
+html body .workspace-studio.oneprep-workspace {
+  --ws-canvas: #f1f2f5;
+  --ws-panel: #fcfcfd;
+  --ws-panel-line: #e4e6ec;
+  background: var(--ws-canvas);
+}
+html.dark body .workspace-studio.oneprep-workspace {
+  --ws-canvas: #000000;
+  --ws-panel: #0a0a0a;
+  --ws-panel-line: #1f1f1f;
+}
+html body .workspace-studio .oneprep-workspace__sidebar.sb2 {
+  --sb-bg: var(--ws-canvas);
+  border-right-color: transparent;
+}
+html body .workspace-studio .sb2 .oneprep-nav-link.is-active,
+html body .workspace-studio .sb2 [aria-current="page"] {
+  box-shadow: 0 1px 2px rgb(16 24 40 / 6%);
+}
+@media (min-width: 901px) {
+  html body .workspace-studio .oneprep-workspace__main {
+    background: var(--ws-panel);
+    border: 1px solid var(--ws-panel-line);
+    border-radius: 16px;
+    margin: 8px 8px 8px 0;
+    min-height: calc(100vh - 16px);
+    box-shadow: 0 1px 3px rgb(16 24 40 / 5%);
+    overflow: clip;
+  }
+}
+
+/* Minimal search trigger */
+html body .workspace-studio .studio-topbar-search {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  width: 260px;
+  height: 36px;
+  padding: 0 10px 0 12px;
+  border: 1px solid var(--ws-panel-line, #e5e7eb);
+  border-radius: 10px;
+  background: transparent;
+  color: #737373;
+  font-size: 13.5px;
+  box-shadow: none;
+  transition: border-color 0.15s, background 0.15s;
+}
+html body .workspace-studio .studio-topbar-search:hover {
+  background: color-mix(in srgb, currentColor 5%, transparent);
+}
+html body .workspace-studio .studio-topbar-search span {
+  flex: 1;
+  text-align: left;
+}
+html body .workspace-studio .studio-topbar-search kbd {
+  padding: 1px 6px;
+  border: 1px solid var(--ws-panel-line, #e5e7eb);
+  border-radius: 6px;
+  background: transparent;
+  font-size: 11px;
+  font-family: inherit;
+  color: #8a8a8a;
+}

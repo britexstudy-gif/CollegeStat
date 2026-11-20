@@ -1,0 +1,5378 @@
+{
+  "generated": "2026-11-16",
+  "records": [
+    {
+      "id": "34f9bd5c-1c24-5d4f-880c-4a342627a148",
+      "slug": "unsw-sydney-34f9bd5c",
+      "name": "UNSW Sydney",
+      "country_code": "AU",
+      "tuition": {
+        "amount": null,
+        "currency": "AUD",
+        "academic_year": "2027",
+        "usd": null,
+        "fx_rate_usd_per_unit": null,
+        "fx_date": null,
+        "mandatory_fees": {
+          "value": "Student Services & Amenities Fee (SSAF) charged in addition to tuition; amount not read on fetched page"
+        },
+        "living_cost": null,
+        "note": "Official 2027 international fees are quoted per unit of credit (UOC): about A$955 to A$2,175 per UOC by discipline; standard full-time year = 48 UOC. No single undergraduate annual figure was stated on the fetched page.",
+        "source_url": "https://www.unsw.edu.au/student/managing-your-studies/fees/international",
+        "retrieved_at": "2026-11-16"
+      },
+      "deadlines": {
+        "value": null,
+        "note": "Not retrieved from official page",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "platform": {
+        "value": null,
+        "note": "Not verified",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "english": {
+        "ielts": null,
+        "toefl_ibt": null,
+        "duolingo": null,
+        "note": "Not found on official pages reached; official 2027 international entry requirements PDF listed but not read",
+        "source_url": "https://www.unsw.edu.au/content/dam/pdfs/future-students/2027-int-ug-entry-table.pdf",
+        "retrieved_at": null
+      },
+      "sat_act": {
+        "value": null,
+        "note": "Not verified",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "acceptance_rate": {
+        "value": null,
+        "note": "not published on pages reached"
+      },
+      "documents": {
+        "value": null,
+        "note": "Not verified",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "programmes": {
+        "value": null,
+        "note": "Not collected",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "notes": [
+        "Official UNSW fee page fetched (2027 per-UOC tables). Page 1 of 2 read only (103k chars, 100k read).",
+        "Fee-pages-only pass; entry requirements and deadlines not yet collected."
+      ]
+    },
+    {
+      "id": "14fa4c62-b910-520b-aa51-0bf334f02b1c",
+      "slug": "australian-national-university-14fa4c62",
+      "name": "Australian National University",
+      "country_code": "AU",
+      "tuition": {
+        "amount": null,
+        "currency": "AUD",
+        "academic_year": "2027",
+        "usd": null,
+        "fx_rate_usd_per_unit": null,
+        "fx_date": null,
+        "mandatory_fees": {
+          "value": "Services and Amenities fee (amount not read)"
+        },
+        "living_cost": null,
+        "note": "Official fee page links to a 'Schedule of Tuition Fees 2027' PDF that was not read; no figure obtained from official pages. Third-party indicative programme fees (e.g. Engineering A$57,640/yr) are NOT used.",
+        "source_url": "https://www.anu.edu.au/students/program-administration/fees-payments/international-tuition-fees",
+        "retrieved_at": "2026-11-16"
+      },
+      "deadlines": {
+        "value": null,
+        "note": "Not retrieved from official page; third-party snippet only",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "platform": {
+        "value": null,
+        "note": "Not verified",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "english": {
+        "ielts": null,
+        "toefl_ibt": null,
+        "duolingo": null,
+        "note": "Not collected",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "sat_act": {
+        "value": null,
+        "note": "Not verified",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "acceptance_rate": {
+        "value": null,
+        "note": "not published on pages reached"
+      },
+      "documents": {
+        "value": null,
+        "note": "Not verified",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "programmes": {
+        "value": null,
+        "note": "Not collected",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "notes": [
+        "Official fee page fetched; schedule PDF not read.",
+        "Application fee A$150 and Semester 1 2028 close date only seen in third-party listing, unverified."
+      ]
+    },
+    {
+      "id": "237842a4-aca1-5a19-b961-403c1e2e5381",
+      "slug": "university-of-michigan-ann-arbor-237842a4",
+      "name": "University of Michigan-Ann Arbor",
+      "country_code": "US",
+      "tuition": {
+        "amount": null,
+        "currency": "USD",
+        "academic_year": null,
+        "usd": null,
+        "fx_rate_usd_per_unit": null,
+        "fx_date": null,
+        "mandatory_fees": null,
+        "living_cost": null,
+        "note": "Not collected: admissions.umich.edu returned HTTP 403 (bot protection), skipped per rules",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "deadlines": {
+        "value": null,
+        "note": "Official page 403. Third-party snippets only (ED/EA 1 Nov 2026, RD 1 Feb 2027) - unverified, NOT recorded as values",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "platform": {
+        "value": "Common App (not verified)",
+        "note": "Unverified; left null",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "english": {
+        "ielts": "6.5 (search snippet - verify)",
+        "toefl_ibt": "88-100 (search snippet - verify)",
+        "duolingo": null,
+        "method": "search snippet - verify",
+        "source_url": "https://admissions.umich.edu/apply/international-applicants/requirements-deadlines/requirements-country",
+        "retrieved_at": "2026-11-16",
+        "note": "Page itself returned 403 on fetch; figures came from a search snippet of umich.edu"
+      },
+      "sat_act": {
+        "value": null,
+        "note": "Not verified (third-party says test-optional for Fall 2027, unconfirmed)",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "acceptance_rate": {
+        "value": null,
+        "note": "not verified"
+      },
+      "documents": {
+        "value": null,
+        "note": "Not verified (official page 403)",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "programmes": {
+        "value": null,
+        "note": "Not collected",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "notes": [
+        "admissions.umich.edu/apply/international-applicants returned 403 (bot protection) - skipped.",
+        "requirements-country page also 403 on fetch.",
+        "Snippet-only English values; verify before use."
+      ]
+    },
+    {
+      "id": "e0088a48-e57b-58d4-bf07-2021931bc1a9",
+      "slug": "university-of-amsterdam-e0088a48",
+      "name": "University of Amsterdam",
+      "country_code": "NL",
+      "tuition": {
+        "amount": null,
+        "currency": "EUR",
+        "academic_year": "2027-2028",
+        "usd": null,
+        "fx_rate_usd_per_unit": null,
+        "fx_date": null,
+        "mandatory_fees": null,
+        "living_cost": null,
+        "note": "Non-EEA full-time bachelor fees 2027-28 range EUR 15,730 (Economics and Business) to EUR 34,500 (Medicine); PPLE example EUR 19,200. Indexation 2.85% for 2027-28. No single figure given, so amount null.",
+        "source_url": "https://www.uva.nl/en/education/fees-and-funding/tuition-fees/tuition-fees.html",
+        "retrieved_at": "2026-11-16"
+      },
+      "deadlines": {
+        "value": null,
+        "note": "Fee page has no application deadlines. Search snippets mention a 15 Jan 2027 early deadline for English-track Business Administration (numerus fixus) and 1 Mar / 1 Apr 2027 scholarship/visa dates - not verified on official application pages",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "platform": {
+        "value": null,
+        "note": "Not verified",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "english": {
+        "ielts": null,
+        "toefl_ibt": null,
+        "duolingo": null,
+        "note": "Search snippet: CEFR C1 required per UvA admissions page; test score minimums not verified",
+        "source_url": null,
+        "retrieved_at": null,
+        "method": "search snippet - verify"
+      },
+      "sat_act": {
+        "value": "Not used",
+        "note": "Not verified; Dutch university, no SAT/ACT in normal admission",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "acceptance_rate": {
+        "value": null,
+        "note": "not published on pages reached"
+      },
+      "documents": {
+        "value": null,
+        "note": "Not verified",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "programmes": {
+        "value": null,
+        "note": "Not collected",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "notes": [
+        "Fee page fetched. Application pages not yet fetched."
+      ]
+    },
+    {
+      "id": "fb08c67d-bb79-53ff-bbfc-1313fa5602e3",
+      "slug": "duke-university-fb08c67d",
+      "name": "Duke University",
+      "country_code": "US",
+      "tuition": {
+        "amount": null,
+        "currency": "USD",
+        "academic_year": "2026-2027",
+        "usd": null,
+        "fx_rate_usd_per_unit": null,
+        "fx_date": null,
+        "mandatory_fees": null,
+        "living_cost": null,
+        "note": "Tuition not on fetched pages; site links to a cost-of-attendance page (not read)",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "deadlines": {
+        "value": [
+          {
+            "round": "Early Decision I",
+            "date": "2026-11-02",
+            "cycle": "Class of 2031"
+          },
+          {
+            "round": "Regular Decision",
+            "date": "2027-01-04",
+            "cycle": "Class of 2031"
+          }
+        ],
+        "source_url": "https://admissions.duke.edu/apply/",
+        "retrieved_at": "2026-11-16",
+        "note": "Early Decision II not found"
+      },
+      "platform": {
+        "value": null,
+        "note": "Not verified",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "english": {
+        "ielts": "7.0 (band score)",
+        "toefl_ibt": "5.0 on/after 21 Jan 2026 (100 for earlier tests)",
+        "duolingo": "130",
+        "source_url": "https://admissions.duke.edu/apply/",
+        "retrieved_at": "2026-11-16",
+        "note": "Duke recommends (not requires) tests for non-native speakers; minimums as listed on page"
+      },
+      "sat_act": {
+        "value": "Test-optional (first-year, 2026-27 cycle)",
+        "source_url": "https://admissions.duke.edu/apply/",
+        "retrieved_at": "2026-11-16"
+      },
+      "acceptance_rate": {
+        "value": null,
+        "note": "First-year overall not found; transfer 6.5% (2025-26) only"
+      },
+      "documents": {
+        "value": null,
+        "note": "Not verified",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "programmes": {
+        "value": null,
+        "note": "Not collected",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "notes": [
+        "Deadlines and English minimums from fetched official admissions page."
+      ]
+    },
+    {
+      "id": "88fab389-ea96-5377-b015-69d9756ba9a9",
+      "slug": "brown-university-88fab389",
+      "name": "Brown University",
+      "country_code": "US",
+      "tuition": {
+        "amount": null,
+        "currency": "USD",
+        "academic_year": null,
+        "usd": null,
+        "fx_rate_usd_per_unit": null,
+        "fx_date": null,
+        "mandatory_fees": null,
+        "living_cost": null,
+        "note": "Tuition not collected (financial aid pages fetched only)",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "deadlines": {
+        "value": [
+          {
+            "round": "Financial aid (CSS Profile) - Early Decision",
+            "date": "2026-11-02",
+            "cycle": "Fall 2027 entry (aid materials)"
+          },
+          {
+            "round": "Financial aid (CSS Profile) - Regular Decision",
+            "date": "2027-02-01",
+            "cycle": "Fall 2027 entry (aid materials)"
+          }
+        ],
+        "source_url": "https://finaid.brown.edu/apply/first-year-international",
+        "retrieved_at": "2026-11-16",
+        "note": "Aid deadlines only; application (admissions) deadlines not collected"
+      },
+      "platform": {
+        "value": null,
+        "note": "Not verified",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "english": {
+        "value": null,
+        "note": "Not collected",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "sat_act": {
+        "value": null,
+        "note": "Not collected",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "acceptance_rate": {
+        "value": null,
+        "note": "not collected"
+      },
+      "documents": {
+        "value": null,
+        "note": "Not collected",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "programmes": {
+        "value": null,
+        "note": "Not collected",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "notes": [
+        "Brown need-blind statement on page covers fall 2025 entry only; Fall 2027 policy not found."
+      ]
+    },
+    {
+      "id": "8e191d89-10ba-5f03-913b-836c9c7194a0",
+      "slug": "universite-paris-saclay-8e191d89",
+      "name": "Université Paris-Saclay",
+      "country_code": "FR",
+      "tuition": {
+        "amount": null,
+        "currency": "EUR",
+        "academic_year": "2026-2027",
+        "usd": null,
+        "fx_rate_usd_per_unit": null,
+        "fx_date": null,
+        "mandatory_fees": null,
+        "living_cost": null,
+        "note": "Official fee page: 2026-27 bachelor fees 'coming soon'; the 2025-26 national bachelor rate was EUR 178. Not a complete international fee figure.",
+        "source_url": "https://www.universite-paris-saclay.fr/en/admission/tuition-fees",
+        "retrieved_at": "2026-11-16"
+      },
+      "deadlines": {
+        "value": null,
+        "note": "Not collected",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "platform": {
+        "value": null,
+        "note": "Not verified (Campus France / direct portal not checked)",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "english": {
+        "ielts": null,
+        "toefl_ibt": null,
+        "duolingo": null,
+        "note": "Search snippet only: CEFR B2 for AFL / language tracks (exchange B2 recommended). Not verified on official admissions page.",
+        "source_url": null,
+        "retrieved_at": "2026-11-16",
+        "method": "search snippet - verify"
+      },
+      "sat_act": {
+        "value": null,
+        "note": "Not applicable to French bachelor; not checked",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "acceptance_rate": {
+        "value": null,
+        "note": "not published"
+      },
+      "documents": {
+        "value": null,
+        "note": "Not collected",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "programmes": {
+        "value": null,
+        "note": "Not collected",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "notes": [
+        "Tuition page fetched; 2026-27 figures not yet published on it."
+      ]
+    },
+    {
+      "id": "24e7d208-f222-510a-92a9-011aead2e2cc",
+      "slug": "university-of-western-australia-24e7d208",
+      "name": "University of Western Australia",
+      "country_code": "AU",
+      "tuition": {
+        "amount": null,
+        "currency": "AUD",
+        "academic_year": "2027",
+        "usd": null,
+        "fx_rate_usd_per_unit": null,
+        "fx_date": null,
+        "mandatory_fees": null,
+        "living_cost": null,
+        "note": "2027 per-course figures are in the Fee Calculator (fees.uwa.edu.au), not read. Tuition capped at +7.5% annual increase (handbook). Not a single figure.",
+        "source_url": "https://www.uwa.edu.au/study/scholarships-and-fees/international-student-fees",
+        "retrieved_at": "2026-11-16"
+      },
+      "deadlines": {
+        "value": null,
+        "note": "Not collected",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "platform": {
+        "value": null,
+        "note": "Not verified",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "english": {
+        "value": null,
+        "note": "Not collected",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "sat_act": {
+        "value": null,
+        "note": "Not applicable (Australian) - not checked",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "acceptance_rate": {
+        "value": null,
+        "note": "not published on pages reached"
+      },
+      "documents": {
+        "value": null,
+        "note": "Not collected",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "programmes": {
+        "value": null,
+        "note": "Not collected",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "notes": [
+        "Application fee A$150 (non-refundable) per official international fees page."
+      ]
+    },
+    {
+      "id": "6a32c909-6d47-5097-a8a9-50e39d01408f",
+      "slug": "university-of-adelaide-6a32c909",
+      "name": "University of Adelaide",
+      "country_code": "AU",
+      "tuition": {
+        "amount": null,
+        "currency": "AUD",
+        "academic_year": "2027",
+        "usd": null,
+        "fx_rate_usd_per_unit": null,
+        "fx_date": null,
+        "mandatory_fees": null,
+        "living_cost": null,
+        "note": "Official page: fees vary by programme; based on standard 48 units/year. Indicative examples from 2027 International Student Guide PDF (search snippet only, not fetched): Arts/International Relations A$45,100; Social Science A$43,400; Science A$55,400 - verify.",
+        "source_url": "https://adelaide.edu.au/students/student-services/finances/international-students/",
+        "retrieved_at": "2026-11-16"
+      },
+      "deadlines": {
+        "value": null,
+        "note": "Not collected",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "platform": {
+        "value": null,
+        "note": "Not verified",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "english": {
+        "value": null,
+        "note": "Not collected",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "sat_act": {
+        "value": null,
+        "note": "Not applicable (Australian) - not checked",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "acceptance_rate": {
+        "value": null,
+        "note": "not published on pages reached"
+      },
+      "documents": {
+        "value": null,
+        "note": "Not collected",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "programmes": {
+        "value": null,
+        "note": "Not collected",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "notes": [
+        "Deposit: 50% of annual programme fee payable on offer acceptance (fetched)."
+      ]
+    },
+    {
+      "id": "1a7adfa9-9e53-5a4c-888c-8f76fa8e1125",
+      "slug": "university-of-southampton-1a7adfa9",
+      "name": "University of Southampton",
+      "country_code": "GB",
+      "tuition": {
+        "amount": null,
+        "currency": "GBP",
+        "academic_year": "2027/28",
+        "usd": null,
+        "fx_rate_usd_per_unit": null,
+        "fx_date": null,
+        "mandatory_fees": null,
+        "living_cost": null,
+        "note": "Overseas undergraduate fee range GBP 26,800 to 34,100 per year for most courses (fetched). Medicine BMBS GBP 35,900 (clinical years GBP 64,900 as shown). Not a single figure, so amount null.",
+        "source_url": "https://www.southampton.ac.uk/courses/fees/undergraduate/tuition-fees.page",
+        "retrieved_at": "2026-11-16"
+      },
+      "deadlines": {
+        "value": null,
+        "note": "Not collected",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "platform": {
+        "value": null,
+        "note": "Not verified",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "english": {
+        "value": null,
+        "note": "IELTS requirement not found on fetched page; course-level pages hold scores",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "sat_act": {
+        "value": null,
+        "note": "Not applicable (UK) - not checked",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "acceptance_rate": {
+        "value": null,
+        "note": "not published on pages reached"
+      },
+      "documents": {
+        "value": null,
+        "note": "Not collected",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "programmes": {
+        "value": null,
+        "note": "Not collected",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "notes": [
+        "Annual increase note not found on the fee page."
+      ]
+    },
+    {
+      "id": "b7e728a7-1aa5-5bce-badf-5ecb3a6ec992",
+      "slug": "freie-universitat-berlin-b7e728a7",
+      "name": "Freie Universität Berlin",
+      "country_code": "DE",
+      "tuition": {
+        "amount": 0,
+        "currency": "EUR",
+        "academic_year": null,
+        "usd": null,
+        "fx_rate_usd_per_unit": null,
+        "fx_date": null,
+        "mandatory_fees": {
+          "value": "Semester fees and contributions (amount not found on fetched page)"
+        },
+        "living_cost": null,
+        "note": "Search snippet: FU does not charge tuition for regular degree programmes; only semester fees. Not verified on official fee page.",
+        "source_url": null,
+        "retrieved_at": "2026-11-16",
+        "method": "search snippet - verify"
+      },
+      "deadlines": {
+        "value": null,
+        "note": "Fetched page covers Direct Exchange only. Snippets reference uni-assist VPD step and limited/unrestricted winter deadlines (1 Jun-15 Jul and 1 Sep 2026 for WS 2026/27) - not verified, not recorded as values",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "platform": {
+        "value": "uni-assist (VPD preliminary review) - search snippet - verify",
+        "source_url": null,
+        "retrieved_at": "2026-11-16"
+      },
+      "english": {
+        "value": null,
+        "note": "Not collected",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "sat_act": {
+        "value": "Not used",
+        "note": "German university, not checked against source",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "acceptance_rate": {
+        "value": null,
+        "note": "not published on pages reached"
+      },
+      "documents": {
+        "value": null,
+        "note": "Not collected",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "programmes": {
+        "value": null,
+        "note": "Not collected",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "notes": [
+        "Official deadlines page fetched but it contains only exchange deadlines."
+      ]
+    },
+    {
+      "id": "dcc6acda-25aa-53c1-82a2-29b74ad8734f",
+      "slug": "karlsruher-institut-fur-technologie-dcc6acda",
+      "name": "Karlsruher Institut für Technologie",
+      "country_code": "DE",
+      "tuition": {
+        "amount": 1500,
+        "currency": "EUR",
+        "academic_year": null,
+        "usd": null,
+        "fx_rate_usd_per_unit": null,
+        "fx_date": null,
+        "mandatory_fees": {
+          "value": "Semester fee (about EUR 184 per snippet, unverified)"
+        },
+        "living_cost": null,
+        "note": "Amount is EUR 1,500 PER SEMESTER for non-EU bachelor students (fetched official page; page states it applies from 2017/18 WS, current year not confirmed). Not an annual figure.",
+        "source_url": "https://www.intl.kit.edu/istudies/12606.php",
+        "retrieved_at": "2026-11-16"
+      },
+      "deadlines": {
+        "value": null,
+        "note": "Snippet only: applications to 15 July (non-EU) and 30 April (Mechanical Engineering B.Sc.) - not verified on fetched pages",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "platform": {
+        "value": null,
+        "note": "Not verified (KIT/uni-assist not checked)",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "english": {
+        "value": null,
+        "note": "Not collected",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "sat_act": {
+        "value": "Not used",
+        "note": "German university, not checked against source",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "acceptance_rate": {
+        "value": null,
+        "note": "not published on pages reached"
+      },
+      "documents": {
+        "value": null,
+        "note": "Not collected",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "programmes": {
+        "value": null,
+        "note": "Not collected",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "notes": [
+        "Tuition page fetched; deadlines on older KIT pages per snippet."
+      ]
+    },
+    {
+      "id": "48429a40-059c-538c-ad95-c91c68b9cb1c",
+      "slug": "utrecht-university-48429a40",
+      "name": "Utrecht University",
+      "country_code": "NL",
+      "tuition": {
+        "amount": 2771,
+        "currency": "EUR",
+        "academic_year": "2027-2028",
+        "usd": null,
+        "fx_rate_usd_per_unit": null,
+        "fx_date": null,
+        "mandatory_fees": null,
+        "living_cost": null,
+        "note": "Fetched: statutory EU/EEA fee EUR 2,771 full time (part-time 2,462). Non-EEA institutional fee NOT found on fetched page (PDF linked, not read); snippet cites EUR 15,100 for English Language and Culture - unverified.",
+        "source_url": "https://www.uu.nl/en/bachelors/general-information/how-to-apply/fees/tuition-fees",
+        "retrieved_at": "2026-11-16"
+      },
+      "deadlines": {
+        "value": null,
+        "note": "Snippet only: non-EU applications by 1 Apr 2027, EU 1 May 2027; PPE 14 Jan 2027; UCU early 1 Dec 2026 / regular 1 Feb 2027 - unverified",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "platform": {
+        "value": null,
+        "note": "Not verified (Studielink not checked)",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "english": {
+        "ielts": null,
+        "toefl_ibt": null,
+        "duolingo": null,
+        "note": "Programme-specific EMI levels per snippet; tests not verified",
+        "source_url": null,
+        "retrieved_at": "2026-11-16",
+        "method": "search snippet - verify"
+      },
+      "sat_act": {
+        "value": "Not used",
+        "note": "Dutch university, not checked against source",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "acceptance_rate": {
+        "value": null,
+        "note": "not published on pages reached"
+      },
+      "documents": {
+        "value": null,
+        "note": "Not collected",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "programmes": {
+        "value": null,
+        "note": "Not collected",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "notes": [
+        "Statutory fee page fetched."
+      ]
+    },
+    {
+      "id": "ea07bd5a-d5e8-59b9-bfd9-600587605f25",
+      "slug": "universidade-de-sao-paulo-ea07bd5a",
+      "name": "Universidade de São Paulo",
+      "country_code": "BR",
+      "tuition": {
+        "amount": 0,
+        "currency": "BRL",
+        "academic_year": null,
+        "usd": null,
+        "fx_rate_usd_per_unit": null,
+        "fx_date": null,
+        "mandatory_fees": null,
+        "living_cost": null,
+        "note": "Search snippet: USP charges no tuition for public undergraduate study; not verified on official page (fetch returned 503)",
+        "source_url": "https://internationaloffice.usp.br/new/en/incoming/undergraduate-student/",
+        "retrieved_at": "2026-11-16",
+        "method": "search snippet - verify"
+      },
+      "deadlines": {
+        "value": null,
+        "note": "Official page 503. Exchange deadlines seen only in snippet; full-degree (FUVEST) dates not collected",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "platform": {
+        "value": "FUVEST (full degree, per snippet) - verify",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "english": {
+        "ielts": null,
+        "toefl_ibt": null,
+        "duolingo": null,
+        "note": "Full degree: CELPE-Bras Portuguese certificate for non-CPLP applicants (snippet, verify). Exchange: B1 Portuguese recommended",
+        "source_url": null,
+        "retrieved_at": "2026-11-16",
+        "method": "search snippet - verify"
+      },
+      "sat_act": {
+        "value": "Not used",
+        "note": "Brazilian system; not checked",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "acceptance_rate": {
+        "value": null,
+        "note": "not published on pages reached"
+      },
+      "documents": {
+        "value": null,
+        "note": "Not collected",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "programmes": {
+        "value": null,
+        "note": "Not collected",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "notes": [
+        "Official USP page returned 503 (skipped; not retried)."
+      ]
+    },
+    {
+      "id": "808b96a5-0e59-5215-a2f5-e7c3c5d2785a",
+      "slug": "university-of-waterloo-808b96a5",
+      "name": "University of Waterloo",
+      "country_code": "CA",
+      "tuition": {
+        "amount": null,
+        "currency": "CAD",
+        "academic_year": "Winter 2027",
+        "usd": null,
+        "fx_rate_usd_per_unit": null,
+        "fx_date": null,
+        "mandatory_fees": {
+          "value": "Incidental fees listed separately; UHIP compulsory (about CAD 948/yr per snippet, unverified)"
+        },
+        "living_cost": null,
+        "note": "Fetched Winter 2027 international undergrad schedule: per 0.5-unit course CAD 4,719.60 to 6,988.40; per-term maximum CAD 23,598 to 34,942 by faculty (e.g. Science/Health 25,296; Arts 27,010; Computer Science 34,942). Currency inferred as CAD from the $ sign and Waterloo, ON address; not stated on page.",
+        "source_url": "https://uwaterloo.ca/finance/fee-schedule-international-undergraduate-students-winter-5",
+        "retrieved_at": "2026-11-16"
+      },
+      "deadlines": {
+        "value": null,
+        "note": "Not collected",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "platform": {
+        "value": null,
+        "note": "Not verified (OUAC/direct not checked)",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "english": {
+        "value": null,
+        "note": "Not found in this pass",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "sat_act": {
+        "value": "Not used",
+        "note": "Not verified",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "acceptance_rate": {
+        "value": null,
+        "note": "not published on pages reached"
+      },
+      "documents": {
+        "value": null,
+        "note": "Not collected",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "programmes": {
+        "value": null,
+        "note": "Not collected",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "notes": [
+        "Fee schedule values are per term, not per year; figures on the page conflict for some faculties."
+      ]
+    },
+    {
+      "id": "ed5b15cb-d889-50df-941c-4764af80621d",
+      "slug": "university-of-helsinki-ed5b15cb",
+      "name": "University of Helsinki",
+      "country_code": "FI",
+      "tuition": {
+        "amount": 13000,
+        "currency": "EUR",
+        "academic_year": "2027-2028",
+        "usd": null,
+        "fx_rate_usd_per_unit": null,
+        "fx_date": null,
+        "mandatory_fees": null,
+        "living_cost": null,
+        "note": "Fetched: EUR 13,000 per academic year for non-EU/EEA students in English-taught bachelor's programmes (joint programmes may differ)",
+        "source_url": "https://www.helsinki.fi/en/admissions-and-education/apply-bachelors-and-masters-programmes/tuition-fees-and-scholarship-programme",
+        "retrieved_at": "2026-11-16"
+      },
+      "deadlines": {
+        "value": null,
+        "note": "Search snippet only (not on fetched page): Group 1 (no Finnish matriculation/IB/EB) 5-19 Jan 2027 with SAT/ACT; Group 2 (with those diplomas) 9-23 Mar 2027; enclosure dates 26 Jan and 1 Apr 2027 - verify",
+        "source_url": null,
+        "retrieved_at": null,
+        "method": "search snippet - verify"
+      },
+      "platform": {
+        "value": "University of Helsinki application portal (not verified)",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "english": {
+        "value": null,
+        "note": "Not collected in this pass",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "sat_act": {
+        "value": "Group 1 admission based on SAT or ACT (snippet, verify)",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "acceptance_rate": {
+        "value": null,
+        "note": "not published on pages reached"
+      },
+      "documents": {
+        "value": null,
+        "note": "Not collected",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "programmes": {
+        "value": null,
+        "note": "Not collected",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "notes": [
+        "Application fee EUR 100 for non-EU/EEA applicants (snippet, verify)."
+      ]
+    },
+    {
+      "id": "10ca55e3-9e48-58e7-a474-d1fab4ccccdb",
+      "slug": "university-of-oslo-10ca55e3",
+      "name": "University of Oslo",
+      "country_code": "NO",
+      "tuition": {
+        "amount": null,
+        "currency": "NOK",
+        "academic_year": null,
+        "usd": null,
+        "fx_rate_usd_per_unit": null,
+        "fx_date": null,
+        "mandatory_fees": null,
+        "living_cost": null,
+        "note": "Only a snippet for a single non-bachelor programme (NOK 218,000 for 2027/28); not a bachelor-level general fee, not used",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "deadlines": {
+        "value": null,
+        "note": "Snippet covers general Søknadsweb (15 Oct to 1 Dec) but is from a master's page; not verified for bachelor",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "platform": {
+        "value": "Søknadsweb (per snippet)",
+        "source_url": null,
+        "retrieved_at": null,
+        "note": "search snippet - verify"
+      },
+      "english": {
+        "value": null,
+        "note": "Not collected",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "sat_act": {
+        "value": "Not used",
+        "note": "Norwegian system; not checked",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "acceptance_rate": {
+        "value": null,
+        "note": "not published on pages reached"
+      },
+      "documents": {
+        "value": null,
+        "note": "Not collected",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "programmes": {
+        "value": null,
+        "note": "Not collected",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "notes": [
+        "No official bachelor-level page was fetched for this record."
+      ]
+    },
+    {
+      "id": "c770e637-838e-5f90-ae57-425b587061a0",
+      "slug": "macquarie-university-c770e637",
+      "name": "Macquarie University",
+      "country_code": "AU",
+      "tuition": {
+        "amount": null,
+        "currency": "AUD",
+        "academic_year": null,
+        "usd": null,
+        "fx_rate_usd_per_unit": null,
+        "fx_date": null,
+        "mandatory_fees": null,
+        "living_cost": null,
+        "note": "Official fee page 403 (skipped). Snippet only: commencement fee typically A$16,000-23,500; set per credit point - verify",
+        "source_url": null,
+        "retrieved_at": null,
+        "method": "search snippet - verify"
+      },
+      "deadlines": {
+        "value": null,
+        "note": "Not collected",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "platform": {
+        "value": null,
+        "note": "Not verified",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "english": {
+        "ielts": "6.5 overall, 6.0 each band (most undergraduate courses; snippet)",
+        "toefl_ibt": null,
+        "duolingo": null,
+        "note": "English requirements page returned 403 (skipped); figures from search snippet of mq.edu.au - verify",
+        "source_url": "https://www.mq.edu.au/study/admissions-and-entry/apply/international/english-language-requirements",
+        "retrieved_at": "2026-11-16",
+        "method": "search snippet - verify"
+      },
+      "sat_act": {
+        "value": "Not applicable (Australian)",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "acceptance_rate": {
+        "value": null,
+        "note": "not published on pages reached"
+      },
+      "documents": {
+        "value": null,
+        "note": "Not collected",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "programmes": {
+        "value": null,
+        "note": "Not collected",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "notes": [
+        "mq.edu.au fees and English pages both returned 403 (bot protection), skipped per rules."
+      ]
+    },
+    {
+      "id": "a6433838-97ca-5280-ac8a-2273fb8bab01",
+      "slug": "university-of-exeter-a6433838",
+      "name": "University of Exeter",
+      "country_code": "GB",
+      "tuition": {
+        "amount": null,
+        "range": {
+          "min": 25700,
+          "max": 49300
+        },
+        "currency": "GBP",
+        "academic_year": "2027 entry (autumn 2027)",
+        "usd": null,
+        "fx_rate_usd_per_unit": null,
+        "fx_date": null,
+        "note": "Official range by subject, per year: Medicine 49,300; Biosciences/Psychology 32,150; Computing/Engineering/Sciences/Nursing 31,500; Arts/Social Sciences/Law/Business/Economics 25,700. No dedicated 2026/27 undergraduate figure found on the page. USD not converted: no dated 16 Nov 2026 rate found.",
+        "mandatory_fees": {
+          "value": null,
+          "note": "None listed; page says other course costs such as lab equipment or field trips may apply"
+        },
+        "living_cost": {
+          "value": "Visa funds requirement GBP 1,171/month for 9 months (GBP 10,539 minimum), not a university fee"
+        },
+        "source_url": "https://www.exeter.ac.uk/undergraduate-degrees/fees/",
+        "retrieved_at": "2026-11-16"
+      },
+      "deadlines": {
+        "value": [
+          {
+            "round": "UCAS January equal consideration",
+            "date": null,
+            "cycle": "2027 entry",
+            "note": "Page says applications should reach UCAS between 1 Sep and the UCAS January equal consideration date; exact date not read (key dates page not accessible). No separate international deadline stated."
+          }
+        ],
+        "source_url": "https://exeter.ac.uk/undergraduate/applying",
+        "retrieved_at": "2026-11-16"
+      },
+      "platform": {
+        "value": "UCAS",
+        "source_url": "https://exeter.ac.uk/undergraduate/applying",
+        "retrieved_at": "2026-11-16"
+      },
+      "english": {
+        "ielts": null,
+        "toefl_ibt": null,
+        "duolingo": null,
+        "note": "Not stated on the official English requirements/entry pages reached; course-level requirement not read. Third-party sources cite 6.5 overall: unverified.",
+        "source_url": "https://www.exeter.ac.uk/international-students/entry-requirements/",
+        "retrieved_at": "2026-11-16"
+      },
+      "sat_act": {
+        "value": null,
+        "note": "Not verified"
+      },
+      "acceptance_rate": {
+        "value": null,
+        "note": "not published on pages reached"
+      },
+      "documents": {
+        "value": null,
+        "note": "Not collected in this pass"
+      },
+      "programmes": {
+        "value": null,
+        "note": "Not collected in this pass"
+      },
+      "notes": [
+        "Fees: official 2027-entry table. Entry requirements: undergraduate course pages not read."
+      ]
+    },
+    {
+      "id": "a8fd79a0-46d7-50c9-aa2f-2fc4d85d493e",
+      "slug": "erasmus-university-rotterdam-a8fd79a0",
+      "name": "Erasmus University Rotterdam",
+      "country_code": "NL",
+      "tuition": {
+        "amount": null,
+        "currency": "EUR",
+        "academic_year": "2026/27",
+        "usd": null,
+        "fx_rate_usd_per_unit": null,
+        "fx_date": null,
+        "mandatory_fees": null,
+        "living_cost": null,
+        "note": "Main EUR non-EU bachelor fee NOT read from an official EUR page (EUR tuition URL not reached). Snippet sources cite about EUR 13,500-14,000 (third-party). Erasmus University College page (college-specific, not the university-wide fee): non-EU/EEA EUR 17,800 for 2027-28. USD not converted.",
+        "source_url": "https://www.eur.nl/en/euc/application-admissions/costs",
+        "retrieved_at": "2026-11-16"
+      },
+      "deadlines": {
+        "value": null,
+        "note": "Official EUR international deadlines not read. Not verified.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "platform": {
+        "value": null,
+        "note": "Not verified on official page (Studielink for Dutch HBO/WO applications is expected but not confirmed by fetch)",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "english": {
+        "ielts": null,
+        "toefl_ibt": null,
+        "duolingo": null,
+        "note": "Not read from official page",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "sat_act": {
+        "value": null,
+        "note": "Not verified"
+      },
+      "acceptance_rate": {
+        "value": null,
+        "note": "not published on pages reached"
+      },
+      "documents": {
+        "value": null,
+        "note": "Not collected in this pass"
+      },
+      "programmes": {
+        "value": null,
+        "note": "Not collected in this pass"
+      },
+      "notes": [
+        "Official EUR pages not reached in this pass; tuition figure left null rather than using third-party snippets."
+      ]
+    },
+    {
+      "id": "b83472eb-1a12-5b42-9769-79e2649e9009",
+      "slug": "technische-universitat-berlin-b83472eb",
+      "name": "Technische Universität Berlin",
+      "country_code": "DE",
+      "tuition": {
+        "amount": null,
+        "currency": "EUR",
+        "academic_year": null,
+        "usd": null,
+        "fx_rate_usd_per_unit": null,
+        "fx_date": null,
+        "mandatory_fees": {
+          "value": null,
+          "note": "Semester contribution: snippets conflict (about EUR 300-400 per semester; one source EUR 379.06 for WS 2026/27). Not confirmed on official page."
+        },
+        "living_cost": null,
+        "note": "Official TU Berlin pages returned 404 for guessed URLs. Germany generally charges no tuition at public universities for bachelor's; not verified on TU Berlin page.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "deadlines": {
+        "value": [
+          {
+            "round": "Winter 2027/28, restricted-admission (NC) programmes",
+            "date": null,
+            "cycle": "WS 2027/28",
+            "note": "Third-party summary says 1 Jun to 15 Jul 2027 - search snippet - verify"
+          },
+          {
+            "round": "Winter 2027/28, open-admission programmes",
+            "date": null,
+            "cycle": "WS 2027/28",
+            "note": "Third-party summary says 1 Jun to 31 Aug 2027 - search snippet - verify"
+          }
+        ],
+        "source_url": null,
+        "retrieved_at": null,
+        "method": "search snippet - verify"
+      },
+      "platform": {
+        "value": "uni-assist (VPD preliminary review), then TU Berlin application portal",
+        "method": "search snippet - verify",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "english": {
+        "ielts": null,
+        "toefl_ibt": null,
+        "duolingo": null,
+        "note": "German language requirement cited by third-party source (DSH-2 level). English-taught programmes not verified. Not read from official page.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "sat_act": {
+        "value": null,
+        "note": "Not used in Germany; not verified"
+      },
+      "acceptance_rate": {
+        "value": null,
+        "note": "not published on pages reached"
+      },
+      "documents": {
+        "value": null,
+        "note": "Not collected in this pass"
+      },
+      "programmes": {
+        "value": null,
+        "note": "Not collected in this pass"
+      },
+      "notes": [
+        "Official TU Berlin pages unreachable (404) in this pass. Deadline and platform values are third-party snippets, flagged for verification."
+      ]
+    },
+    {
+      "id": "134932db-50b6-573c-a856-474f34c60efc",
+      "slug": "university-of-cape-town-134932db",
+      "name": "University of Cape Town",
+      "country_code": "ZA",
+      "tuition": {
+        "amount": null,
+        "currency": null,
+        "academic_year": null,
+        "usd": null,
+        "fx_rate_usd_per_unit": null,
+        "fx_date": null,
+        "mandatory_fees": null,
+        "living_cost": null,
+        "note": "Official 2026 fees booklet PDF (uct.ac.za) fetched but is a binary image with no text; international undergraduate fee not readable. Third-party Studyportals ZAR figures are not official and are not used.",
+        "source_url": "https://uct.ac.za/sites/default/files/media/documents/uct_ac_za/49/2026-fees-booklet.pdf",
+        "retrieved_at": "2026-11-16"
+      },
+      "deadlines": {
+        "value": null,
+        "note": "Not found on official pages reached (2027 prospectus not fetched).",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "platform": {
+        "value": null,
+        "note": "Not verified. UCT uses its own online application (per third-party snippet).",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "english": {
+        "ielts": null,
+        "toefl_ibt": null,
+        "duolingo": null,
+        "note": "Not read from official page.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "sat_act": {
+        "value": null,
+        "note": "Not verified",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "acceptance_rate": {
+        "value": null,
+        "note": "not published on pages reached"
+      },
+      "documents": {
+        "value": null,
+        "note": "Not collected in this pass",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "programmes": {
+        "value": null,
+        "note": "Not collected in this pass",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "notes": [
+        "Application fee per 2027 prospectus (via third-party summary): ZAR 300 for non-SADC international applicants; not verified on official page."
+      ]
+    },
+    {
+      "id": "26fd17cb-9752-5eab-86f1-9f9768a938b7",
+      "slug": "university-of-geneva-26fd17cb",
+      "name": "University of Geneva",
+      "country_code": "CH",
+      "tuition": {
+        "amount": null,
+        "currency": null,
+        "academic_year": null,
+        "usd": null,
+        "fx_rate_usd_per_unit": null,
+        "fx_date": null,
+        "mandatory_fees": null,
+        "living_cost": null,
+        "note": "unige.ch admissions page blocked by site security system (access denied). Skipped, not bypassed. Only third-party-cited figure is CHF 500 per semester for one specific programme (BARI), not applicable generally: not used.",
+        "source_url": "https://www.unige.ch/immatriculations/conditions",
+        "retrieved_at": "2026-11-16"
+      },
+      "deadlines": {
+        "value": null,
+        "note": "Official page blocked; search snippets give 28 Feb 2026 / 30 Apr 2026 for the 2026 cycle only. Not used for 2027.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "platform": {
+        "value": null,
+        "note": "Not verified",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "english": {
+        "ielts": null,
+        "toefl_ibt": null,
+        "duolingo": null,
+        "note": "Official page blocked; not verified.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "sat_act": {
+        "value": null,
+        "note": "Not verified",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "acceptance_rate": {
+        "value": null,
+        "note": "not published on pages reached"
+      },
+      "documents": {
+        "value": null,
+        "note": "Not collected in this pass",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "programmes": {
+        "value": null,
+        "note": "Not collected in this pass",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "notes": [
+        "Bot protection on unige.ch: 403-style block. Skipped per rules; retry from another source needed."
+      ]
+    },
+    {
+      "id": "c73fffe8-a4ac-5cb2-8129-237abf096957",
+      "slug": "university-of-barcelona-c73fffe8",
+      "name": "University of Barcelona",
+      "country_code": "ES",
+      "tuition": {
+        "amount": null,
+        "currency": "EUR",
+        "academic_year": "2026/27",
+        "usd": null,
+        "fx_rate_usd_per_unit": null,
+        "fx_date": null,
+        "mandatory_fees": {
+          "value": "Per-enrolment: academic record management EUR 54.54 (quarterly), EUR 69.80 (annual), EUR 27.27 (changes); specific and learning-support services EUR 70.00; school insurance EUR 1.12 (under 28 only)"
+        },
+        "living_cost": null,
+        "note": "UB official prices page (Decree 96/2026): public Grau price is EUR 17.69 per credit; the page does not give a separate non-EU grau rate in the text read. Study-abroad / individual exchange students pay EUR 90 per credit unless agreements say otherwise. Non-EU bachelor tariff NOT confirmed.",
+        "source_url": "https://www.ub.edu/acad/matricula/preus.html",
+        "retrieved_at": "2026-11-16"
+      },
+      "deadlines": {
+        "value": null,
+        "note": "Not read on an official page in this pass.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "platform": {
+        "value": null,
+        "note": "Not verified. Spanish public university; application via the national/Catalan system not confirmed.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "english": {
+        "ielts": null,
+        "toefl_ibt": null,
+        "duolingo": null,
+        "note": "Not read on an official page; English-taught grau programmes not checked.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "sat_act": {
+        "value": null,
+        "note": "Not verified",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "acceptance_rate": {
+        "value": null,
+        "note": "not published on pages reached"
+      },
+      "documents": {
+        "value": null,
+        "note": "Not collected in this pass",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "programmes": {
+        "value": null,
+        "note": "Not collected in this pass",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "notes": [
+        "Prices and enrolment fees from official page. Non-EU rate needs the GIGA fee table (ub.edu/portal/web/gigadoc/fixacio-de-preus), not fetched."
+      ]
+    },
+    {
+      "id": "a7bf2f82-14eb-52f0-8b72-4362dd98bc71",
+      "slug": "king-abdulaziz-university-a7bf2f82",
+      "name": "King Abdulaziz University",
+      "country_code": "SA",
+      "tuition": {
+        "amount": null,
+        "currency": null,
+        "academic_year": null,
+        "usd": null,
+        "fx_rate_usd_per_unit": null,
+        "fx_date": null,
+        "mandatory_fees": null,
+        "living_cost": null,
+        "note": "Official KAU undergraduate admission page: no tuition amount for non-Saudis; it lists a card 'Admission of Non-Saudis with a Financial Fee' with no amounts. Third-party claim that undergraduate tuition is waived for international students is unverified.",
+        "source_url": "https://www.kau.edu.sa/en/page/undergraduate-admission",
+        "retrieved_at": "2026-11-16"
+      },
+      "deadlines": {
+        "value": null,
+        "note": "Not found on official page. Third-party snippet gives a 2026 Study in Saudi window (16 Sep to 6 Oct 2026), closed; no 2027 dates found.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "platform": {
+        "value": null,
+        "note": "Official page does not name the application platform. Study in Saudi platform per third-party snippet - verify.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "english": {
+        "ielts": null,
+        "toefl_ibt": null,
+        "duolingo": null,
+        "note": "Not found on official page.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "sat_act": {
+        "value": null,
+        "note": "Not verified",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "acceptance_rate": {
+        "value": null,
+        "note": "not published on pages reached"
+      },
+      "documents": {
+        "value": null,
+        "note": "Not collected in this pass",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "programmes": {
+        "value": null,
+        "note": "Not collected in this pass",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "notes": [
+        "Official page fetched; requirements sub-page not reached."
+      ]
+    },
+    {
+      "id": "4f6e18a6-dfa0-5442-88da-6c33630ac6de",
+      "slug": "hokkaido-university-4f6e18a6",
+      "name": "Hokkaido University",
+      "country_code": "JP",
+      "tuition": {
+        "amount": 535800,
+        "currency": "JPY",
+        "academic_year": "Year not stated on page (latest found)",
+        "usd": null,
+        "fx_rate_usd_per_unit": null,
+        "fx_date": null,
+        "mandatory_fees": {
+          "value": "Admission fee JPY 282,000 (payable post-offer); examination/application fee JPY 17,000 (JPY 30,000 transfer)"
+        },
+        "living_cost": null,
+        "note": "Annual tuition for privately financed undergraduates JPY 535,800 (JPSS listing of Law faculty, April 2026 intake; official Hokkaido fee page states the annual figure with no year). Paid in two instalments in May and November. USD not converted: no dated rate.",
+        "source_url": "https://www.global.hokudai.ac.jp/?p=741",
+        "retrieved_at": "2026-11-16"
+      },
+      "deadlines": {
+        "value": null,
+        "note": "2027 April-intake application dates not found on official page. Third-party JPSS timeline is for the April 2026 intake only, not used.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "platform": {
+        "value": null,
+        "note": "Not verified on official page (direct application to Hokkaido presumed; not confirmed).",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "english": {
+        "ielts": null,
+        "toefl_ibt": null,
+        "duolingo": null,
+        "note": "Not read on official page.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "sat_act": {
+        "value": null,
+        "note": "Not verified",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "acceptance_rate": {
+        "value": null,
+        "note": "not published on pages reached"
+      },
+      "documents": {
+        "value": null,
+        "note": "Not collected in this pass",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "programmes": {
+        "value": null,
+        "note": "Not collected in this pass",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "notes": [
+        "Tuition figure from official fee page; year label uncertain."
+      ]
+    },
+    {
+      "id": "932abd56-f67b-5374-a909-a4faa50aaeb2",
+      "slug": "arizona-state-university-932abd56",
+      "name": "Arizona State University",
+      "country_code": "US",
+      "tuition": {
+        "amount": 39062,
+        "currency": "USD",
+        "academic_year": "2026-27",
+        "usd": 39062,
+        "fx_rate_usd_per_unit": 1,
+        "fx_date": null,
+        "mandatory_fees": {
+          "value": "Per semester at 12+ hours: Student-initiated fee USD 404; Advanced Technology Fee USD 100 (new Fall 2026); Undergraduate College Fee USD 0-1,095 by college; tuition surcharge USD 175 (7+ hours). Totals per semester USD 20,210-21,305. Separate Student Health Insurance and International Student Fee not included."
+        },
+        "living_cost": null,
+        "note": "Metro Phoenix campuses; tuition charged per enrolled hour. Official catalog (Fall 2026, 'as currently proposed for 2026-2027'): 12+ hours = USD 19,531 per semester; annual = 2 x 19,531 = 39,062 (matches ASU base figure cited on ASU admission/tuition pages). Lower loads charged per hour (USD 1,628 at 1 hour). USD. No FX needed.",
+        "source_url": "https://catalog.asu.edu/tuitionandfees/fall26international",
+        "retrieved_at": "2026-11-16"
+      },
+      "deadlines": {
+        "value": null,
+        "note": "Not collected in this pass (ASU admission pages not fetched).",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "platform": {
+        "value": null,
+        "note": "Not verified.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "english": {
+        "ielts": null,
+        "toefl_ibt": null,
+        "duolingo": null,
+        "note": "Not collected in this pass.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "sat_act": {
+        "value": null,
+        "note": "Not verified",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "acceptance_rate": {
+        "value": null,
+        "note": "not published on pages reached"
+      },
+      "documents": {
+        "value": null,
+        "note": "Not collected in this pass",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "programmes": {
+        "value": null,
+        "note": "Not collected in this pass",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "notes": [
+        "Tuition per official 2026-27 catalog (proposed); the 'Fall 2026' page is the latest official source found."
+      ]
+    },
+    {
+      "id": "f069ea61-f5c2-569d-9037-d01f1f53091d",
+      "slug": "national-yang-ming-chiao-tung-university-f069ea61",
+      "name": "National Yang Ming Chiao Tung University",
+      "country_code": "TW",
+      "tuition": {
+        "amount": null,
+        "currency": null,
+        "academic_year": null,
+        "usd": null,
+        "fx_rate_usd_per_unit": null,
+        "fx_date": null,
+        "mandatory_fees": null,
+        "living_cost": null,
+        "note": "Official NYCU homepage fetched (no fee content; links to Overseas Students office oia.nycu.edu.tw, not fetched). Only fee document found is 2022 schedule (outdated). Third-party TWD range not used.",
+        "source_url": "https://www.nycu.edu.tw/en/",
+        "retrieved_at": "2026-11-16"
+      },
+      "deadlines": {
+        "value": null,
+        "note": "Not found on official pages reached. Third-party guides only.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "platform": {
+        "value": null,
+        "note": "Not verified.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "english": {
+        "ielts": null,
+        "toefl_ibt": null,
+        "duolingo": null,
+        "note": "Not found on official pages reached.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "sat_act": {
+        "value": null,
+        "note": "Not verified",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "acceptance_rate": {
+        "value": null,
+        "note": "not published on pages reached"
+      },
+      "documents": {
+        "value": null,
+        "note": "Not collected in this pass",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "programmes": {
+        "value": null,
+        "note": "Not collected in this pass",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "notes": [
+        "Next step: fetch the OIA overseas-students pages (oia.nycu.edu.tw/oia/en/index)."
+      ]
+    },
+    {
+      "id": "1540baf5-79f5-59ed-b687-3979b92f0aae",
+      "slug": "universitat-bern-1540baf5",
+      "name": "Universität Bern",
+      "country_code": "CH",
+      "tuition": {
+        "amount": null,
+        "currency": null,
+        "academic_year": null,
+        "usd": null,
+        "fx_rate_usd_per_unit": null,
+        "fx_date": null,
+        "mandatory_fees": null,
+        "living_cost": null,
+        "note": "Official unibe.ch fees page returned 404 for guessed URL. Cantonal tuition rise (2025 decision, effective autumn 2026) confirmed for BFH, not for Universität Bern figures. Third-party CHF 2,550/semester not used.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "deadlines": {
+        "value": null,
+        "note": "Not found on official page.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "platform": {
+        "value": null,
+        "note": "Not verified (Swiss uni-assist / direct application not confirmed).",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "english": {
+        "ielts": null,
+        "toefl_ibt": null,
+        "duolingo": null,
+        "note": "Not found.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "sat_act": {
+        "value": null,
+        "note": "Not verified",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "acceptance_rate": {
+        "value": null,
+        "note": "not published on pages reached"
+      },
+      "documents": {
+        "value": null,
+        "note": "Not collected in this pass",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "programmes": {
+        "value": null,
+        "note": "Not collected in this pass",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "notes": []
+    },
+    {
+      "id": "1b35aa93-a1de-5a99-8c88-dd9613317e0f",
+      "slug": "tecnologico-de-monterrey-1b35aa93",
+      "name": "Tecnologico de Monterrey",
+      "country_code": "MX",
+      "tuition": {
+        "amount": null,
+        "currency": null,
+        "academic_year": null,
+        "usd": null,
+        "fx_rate_usd_per_unit": null,
+        "fx_date": null,
+        "mandatory_fees": null,
+        "living_cost": null,
+        "note": "Official tec.mx undergraduate page: no tuition amount. Third-party Studyportals USD 14,800/yr for one programme not used. Official cost estimator referenced.",
+        "source_url": "https://tec.mx/en/undergraduate",
+        "retrieved_at": "2026-11-16"
+      },
+      "deadlines": {
+        "value": null,
+        "note": "Official page: dates for 2027 admission 'will be available soon'. Not published at time of fetch.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "platform": {
+        "value": "Direct application to Tec de Monterrey (official admissions portal; not confirmed by name on page)",
+        "note": "Partially verified (page describes its own admission process).",
+        "source_url": "https://tec.mx/en/undergraduate",
+        "retrieved_at": "2026-11-16"
+      },
+      "english": {
+        "ielts": null,
+        "toefl_ibt": "Accepted (no minimum score stated on page)",
+        "duolingo": null,
+        "note": "IELTS not found on official page; third-party IELTS site says 6.0 undergraduate (not used). Official page also accepts B2 First, Pearson Placement/Level test and an institutional EUC exam.",
+        "source_url": "https://tec.mx/en/undergraduate",
+        "retrieved_at": "2026-11-16"
+      },
+      "sat_act": {
+        "value": null,
+        "note": "Not verified",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "acceptance_rate": {
+        "value": null,
+        "note": "not published on pages reached"
+      },
+      "documents": {
+        "value": null,
+        "note": "Not collected in this pass",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "programmes": {
+        "value": null,
+        "note": "Not collected in this pass",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "notes": []
+    },
+    {
+      "id": "575d5e9a-f98a-5ec3-bea3-7f7b8c05100a",
+      "slug": "louvain-school-of-management-575d5e9a",
+      "name": "Louvain School of Management",
+      "country_code": "BE",
+      "tuition": {
+        "amount": null,
+        "currency": "EUR",
+        "academic_year": "2026-2027",
+        "usd": null,
+        "fx_rate_usd_per_unit": null,
+        "fx_date": null,
+        "mandatory_fees": null,
+        "living_cost": null,
+        "note": "UCLouvain official minerval page: EUR 1,194 full minerval for Belgian/European/assimilated students. Non-EU bachelor fee NOT stated on fetched page (the EUR 5,369 figure seen is for other cases, not used as non-EU bachelor fee). Non-EU amount unconfirmed.",
+        "source_url": "https://uclouvain.be/en/enrolment/uclouvain-tuition-fees",
+        "retrieved_at": "2026-11-16",
+        "range_note": "EUR 1,194 is the EU/Belgian rate, not applicable to the 2027 non-EU applicant."
+      },
+      "deadlines": {
+        "value": null,
+        "note": "Application dates not found on official pages; 1 Feb 2026 is a payment deadline for registration fees only.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "platform": {
+        "value": null,
+        "note": "Not verified.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "english": {
+        "ielts": null,
+        "toefl_ibt": null,
+        "duolingo": null,
+        "note": "Not found on official pages reached.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "sat_act": {
+        "value": null,
+        "note": "Not verified",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "acceptance_rate": {
+        "value": null,
+        "note": "not published on pages reached"
+      },
+      "documents": {
+        "value": null,
+        "note": "Not collected in this pass",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "programmes": {
+        "value": null,
+        "note": "Not collected in this pass",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "notes": [
+        "Louvain School of Management is a UCLouvain faculty; UCLouvain's own bachelor pages were not reached for the non-EU rate."
+      ]
+    },
+    {
+      "id": "bd783952-4538-5666-883f-e9c56a60f109",
+      "slug": "university-of-reading-bd783952",
+      "name": "University of Reading",
+      "country_code": "GB",
+      "tuition": {
+        "amount": 25850,
+        "currency": "GBP",
+        "academic_year": "2026/27",
+        "usd": null,
+        "fx_rate_usd_per_unit": null,
+        "fx_date": null,
+        "mandatory_fees": null,
+        "living_cost": null,
+        "note": "Non-lab courses GBP 25,850/year; lab/workshop subjects GBP 30,650/year (from search snippet of Reading fees material; official fees page reached but figures not in fetched text: verify). Tuition rises up to 4% CPI-linked annually. Official page links to fees page; 2027/28 tab not read.",
+        "source_url": "https://www.reading.ac.uk/international/fees-and-scholarships",
+        "retrieved_at": "2026-11-16",
+        "method": "search snippet - verify"
+      },
+      "deadlines": {
+        "value": null,
+        "note": "Not found on official page reached.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "platform": {
+        "value": null,
+        "note": "UCAS (per official UCAS course listing context; not confirmed on fetched page).",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "english": {
+        "ielts": null,
+        "toefl_ibt": null,
+        "duolingo": null,
+        "note": "Not stated on fetched official page (links to English requirements page, not read).",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "sat_act": {
+        "value": null,
+        "note": "Not verified",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "acceptance_rate": {
+        "value": null,
+        "note": "not published on pages reached"
+      },
+      "documents": {
+        "value": null,
+        "note": "Not collected in this pass",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "programmes": {
+        "value": null,
+        "note": "Not collected in this pass",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "notes": []
+    },
+    {
+      "id": "2903e6ed-ff35-58a9-b374-04d315be3094",
+      "slug": "goteborg-university-2903e6ed",
+      "name": "Göteborg University",
+      "country_code": "SE",
+      "tuition": {
+        "amount": null,
+        "currency": null,
+        "academic_year": null,
+        "usd": null,
+        "fx_rate_usd_per_unit": null,
+        "fx_date": null,
+        "mandatory_fees": null,
+        "living_cost": null,
+        "note": "Official gu.se tuition-fees page: fetch blocked by domain-verification error (network/policy restriction). Not retried via other routes. Only third-party figures seen; not used.",
+        "source_url": "https://gu.se/en/study-gothenburg/apply/tuition-fees",
+        "retrieved_at": "2026-11-16"
+      },
+      "deadlines": {
+        "value": null,
+        "note": "Not read: official page blocked.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "platform": {
+        "value": null,
+        "note": "Not verified (Swedish national bachelor route not confirmed on official page).",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "english": {
+        "ielts": null,
+        "toefl_ibt": null,
+        "duolingo": null,
+        "note": "Not read: official page blocked.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "sat_act": {
+        "value": null,
+        "note": "Not verified",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "acceptance_rate": {
+        "value": null,
+        "note": "not published on pages reached"
+      },
+      "documents": {
+        "value": null,
+        "note": "Not collected in this pass",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "programmes": {
+        "value": null,
+        "note": "Not collected in this pass",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "notes": [
+        "gu.se fetch blocked by a domain-verification error; retry needed."
+      ]
+    },
+    {
+      "id": "286aa6be-a3ea-54aa-bd17-a50958d97579",
+      "slug": "indian-institute-of-technology-kharagpur-286aa6be",
+      "name": "Indian Institute of Technology Kharagpur",
+      "country_code": "IN",
+      "tuition": {
+        "amount": null,
+        "currency": null,
+        "academic_year": null,
+        "usd": null,
+        "fx_rate_usd_per_unit": null,
+        "fx_date": null,
+        "mandatory_fees": null,
+        "living_cost": null,
+        "note": "Official international.iitkgp.ac.in admission page: fetch blocked by domain-verification error. Third-party fee pages not used.",
+        "source_url": "https://international.iitkgp.ac.in/admission",
+        "retrieved_at": "2026-11-16"
+      },
+      "deadlines": {
+        "value": null,
+        "note": "Not read: official page blocked.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "platform": {
+        "value": null,
+        "note": "Not verified (national JEE-based route, expected, not confirmed).",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "english": {
+        "ielts": null,
+        "toefl_ibt": null,
+        "duolingo": null,
+        "note": "Not read: official page blocked.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "sat_act": {
+        "value": null,
+        "note": "Not verified",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "acceptance_rate": {
+        "value": null,
+        "note": "not published on pages reached"
+      },
+      "documents": {
+        "value": null,
+        "note": "Not collected in this pass",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "programmes": {
+        "value": null,
+        "note": "Not collected in this pass",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "notes": [
+        "Official international admission page blocked; retry needed."
+      ]
+    },
+    {
+      "id": "3b62e054-9fa1-582f-9a31-55f9e392c385",
+      "slug": "deakin-university-3b62e054",
+      "name": "Deakin University",
+      "country_code": "AU",
+      "tuition": {
+        "amount": null,
+        "currency": null,
+        "academic_year": null,
+        "usd": null,
+        "fx_rate_usd_per_unit": null,
+        "fx_date": null,
+        "mandatory_fees": null,
+        "living_cost": null,
+        "note": "Official Deakin international fees page returned 403 (bot protection). Skipped, not bypassed. Third-party HotCoursesAbroad fee listings not used.",
+        "source_url": "https://www.deakin.edu.au/students/enrolment-and-fees/fees/international-students",
+        "retrieved_at": "2026-11-16"
+      },
+      "deadlines": {
+        "value": null,
+        "note": "Not read: official page 403.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "platform": {
+        "value": null,
+        "note": "Not verified.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "english": {
+        "ielts": null,
+        "toefl_ibt": null,
+        "duolingo": null,
+        "note": "Not read.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "sat_act": {
+        "value": null,
+        "note": "Not verified",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "acceptance_rate": {
+        "value": null,
+        "note": "not published on pages reached"
+      },
+      "documents": {
+        "value": null,
+        "note": "Not collected in this pass",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "programmes": {
+        "value": null,
+        "note": "Not collected in this pass",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "notes": [
+        "Deakin official fee page blocked by bot protection (403)."
+      ]
+    },
+    {
+      "id": "89e1ba5b-fd4e-5292-ab10-dc8500e7f29f",
+      "slug": "university-of-calgary-89e1ba5b",
+      "name": "University of Calgary",
+      "country_code": "CA",
+      "tuition": {
+        "amount": null,
+        "currency": null,
+        "academic_year": null,
+        "usd": null,
+        "fx_rate_usd_per_unit": null,
+        "fx_date": null,
+        "mandatory_fees": null,
+        "living_cost": null,
+        "note": "Official ucalgary.ca cost estimator page: fetch blocked by domain-verification error. Third-party listings not used.",
+        "source_url": "https://www.ucalgary.ca/registrar/finances/understanding-your-fees/undergraduate-student-cost-estimator",
+        "retrieved_at": "2026-11-16"
+      },
+      "deadlines": {
+        "value": null,
+        "note": "Not read: official page blocked.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "platform": {
+        "value": null,
+        "note": "Not verified.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "english": {
+        "ielts": null,
+        "toefl_ibt": null,
+        "duolingo": null,
+        "note": "Not read: official page blocked.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "sat_act": {
+        "value": null,
+        "note": "Not verified",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "acceptance_rate": {
+        "value": null,
+        "note": "not published on pages reached"
+      },
+      "documents": {
+        "value": null,
+        "note": "Not collected in this pass",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "programmes": {
+        "value": null,
+        "note": "Not collected in this pass",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "notes": [
+        "ucalgary.ca fetch blocked by domain-verification error; retry needed."
+      ]
+    },
+    {
+      "id": "263339e0-d190-5260-ba84-c83246377323",
+      "slug": "hamad-bin-khalifa-university-263339e0",
+      "name": "Hamad Bin Khalifa University",
+      "country_code": "QA",
+      "tuition": {
+        "amount": null,
+        "currency": null,
+        "academic_year": null,
+        "usd": null,
+        "fx_rate_usd_per_unit": null,
+        "fx_date": null,
+        "mandatory_fees": null,
+        "living_cost": null,
+        "note": "Official hbku.edu.qa financial-information page: fetch blocked by domain-verification error. Third-party fee listings not used.",
+        "source_url": "https://hbku.edu.qa/en/node/16207",
+        "retrieved_at": "2026-11-16"
+      },
+      "deadlines": {
+        "value": null,
+        "note": "Not read: official page blocked.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "platform": {
+        "value": null,
+        "note": "Not verified.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "english": {
+        "ielts": null,
+        "toefl_ibt": null,
+        "duolingo": null,
+        "note": "Not read: official page blocked.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "sat_act": {
+        "value": null,
+        "note": "Not verified",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "acceptance_rate": {
+        "value": null,
+        "note": "not published on pages reached"
+      },
+      "documents": {
+        "value": null,
+        "note": "Not collected in this pass",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "programmes": {
+        "value": null,
+        "note": "Not collected in this pass",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "notes": [
+        "hbku.edu.qa fetch blocked by domain-verification error; retry needed."
+      ]
+    },
+    {
+      "id": "d06467f5-b2a0-5604-9251-677d567e2661",
+      "slug": "indian-institute-of-science-bangalore-d06467f5",
+      "name": "Indian Institute of Science Bangalore",
+      "country_code": "IN",
+      "tuition": {
+        "amount": null,
+        "currency": null,
+        "academic_year": null,
+        "usd": null,
+        "fx_rate_usd_per_unit": null,
+        "fx_date": null,
+        "mandatory_fees": null,
+        "living_cost": null,
+        "note": "Official IISc admissions page: no fee amount for undergraduates found.",
+        "source_url": "https://www.iisc.ac.in/admissions/",
+        "retrieved_at": "2026-11-16"
+      },
+      "deadlines": {
+        "value": null,
+        "note": "Not found on official page (OIR link not readable). Mentions BS-Research 2026 cut-off (SAT 1500 / JEE Advanced 2203 / IAT 54) only.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "platform": {
+        "value": null,
+        "note": "Not verified.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "english": {
+        "ielts": null,
+        "toefl_ibt": null,
+        "duolingo": null,
+        "note": "Not found.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "sat_act": {
+        "value": null,
+        "note": "Not verified",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "acceptance_rate": {
+        "value": null,
+        "note": "not published on pages reached"
+      },
+      "documents": {
+        "value": null,
+        "note": "Not collected in this pass",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "programmes": {
+        "value": null,
+        "note": "Not collected in this pass",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "notes": [
+        "OCI/international link found on IISc site: oir.iisc.ac.in (fetched homepage only)."
+      ]
+    },
+    {
+      "id": "474dac6f-db67-501b-b2f6-ba59aed7dbea",
+      "slug": "queensland-university-of-technology-474dac6f",
+      "name": "Queensland University of Technology",
+      "country_code": "AU",
+      "tuition": {
+        "amount": null,
+        "currency": null,
+        "academic_year": null,
+        "usd": null,
+        "fx_rate_usd_per_unit": null,
+        "fx_date": null,
+        "mandatory_fees": null,
+        "living_cost": null,
+        "note": "Official QUT 2027 International Quick Guide PDF: fetch returned 403 (bot protection). Skipped. Third-party summary (A$46,800/yr Business; A$46,700/yr IT) is not official and not used.",
+        "source_url": "https://cms.qut.edu.au/__data/assets/pdf_file/0008/1566476/international-quick-gide-2027.pdf",
+        "retrieved_at": "2026-11-16"
+      },
+      "deadlines": {
+        "value": null,
+        "note": "Not read (official PDF blocked).",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "platform": {
+        "value": null,
+        "note": "Not verified.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "english": {
+        "ielts": null,
+        "toefl_ibt": null,
+        "duolingo": null,
+        "note": "Not read.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "sat_act": {
+        "value": null,
+        "note": "Not verified",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "acceptance_rate": {
+        "value": null,
+        "note": "not published on pages reached"
+      },
+      "documents": {
+        "value": null,
+        "note": "Not collected in this pass",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "programmes": {
+        "value": null,
+        "note": "Not collected in this pass",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "notes": [
+        "QUT official PDF blocked (403). Retry needed."
+      ]
+    },
+    {
+      "id": "1f9fe762-1dd7-5522-b76a-59b57ae2b6d4",
+      "slug": "griffith-university-1f9fe762",
+      "name": "Griffith University",
+      "country_code": "AU",
+      "tuition": {
+        "amount": null,
+        "currency": null,
+        "academic_year": null,
+        "usd": null,
+        "fx_rate_usd_per_unit": null,
+        "fx_date": null,
+        "mandatory_fees": null,
+        "living_cost": null,
+        "note": "Official griffith.edu.au homepage returned 403 (bot protection). Skipped, not bypassed.",
+        "source_url": "https://www.griffith.edu.au/",
+        "retrieved_at": "2026-11-16"
+      },
+      "deadlines": {
+        "value": null,
+        "note": "Not read.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "platform": {
+        "value": null,
+        "note": "Not verified.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "english": {
+        "ielts": null,
+        "toefl_ibt": null,
+        "duolingo": null,
+        "note": "Not read.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "sat_act": {
+        "value": null,
+        "note": "Not verified",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "acceptance_rate": {
+        "value": null,
+        "note": "not published on pages reached"
+      },
+      "documents": {
+        "value": null,
+        "note": "Not collected in this pass",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "programmes": {
+        "value": null,
+        "note": "Not collected in this pass",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "notes": [
+        "Griffith homepage blocked (403)."
+      ]
+    },
+    {
+      "id": "a7b217c5-bb66-5ad7-8c78-da5f37cbdfe6",
+      "slug": "universidad-de-los-andes-a7b217c5",
+      "name": "Universidad de Los Andes",
+      "country_code": "CO",
+      "tuition": {
+        "amount": null,
+        "currency": null,
+        "academic_year": null,
+        "usd": null,
+        "fx_rate_usd_per_unit": null,
+        "fx_date": null,
+        "mandatory_fees": null,
+        "living_cost": null,
+        "note": "Official 2026 'Derechos pecuniarios' document (uniandes.edu.co) returned a binary PDF with no readable text. Figures not extracted.",
+        "source_url": "https://www.uniandes.edu.co/es/descargar/documento-derechos-pecuniarios-2026",
+        "retrieved_at": "2026-11-16"
+      },
+      "deadlines": {
+        "value": null,
+        "note": "Not read on an official page.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "platform": {
+        "value": null,
+        "note": "Not verified.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "english": {
+        "ielts": null,
+        "toefl_ibt": null,
+        "duolingo": null,
+        "note": "Not read on an official page.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "sat_act": {
+        "value": null,
+        "note": "Not verified",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "acceptance_rate": {
+        "value": null,
+        "note": "not published on pages reached"
+      },
+      "documents": {
+        "value": null,
+        "note": "Not collected in this pass",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "programmes": {
+        "value": null,
+        "note": "Not collected in this pass",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "notes": [
+        "Official 'aspirantes internacionales' page links found: aspirantes.uniandes.edu.co/es/aspirantes-internacionales (not fetched)."
+      ]
+    },
+    {
+      "id": "271dbaa2-9f49-59ac-8bf8-e8c7a604c2ae",
+      "slug": "beijing-normal-university-271dbaa2",
+      "name": "Beijing Normal University",
+      "country_code": "CN",
+      "tuition": {
+        "amount": null,
+        "currency": null,
+        "academic_year": null,
+        "usd": null,
+        "fx_rate_usd_per_unit": null,
+        "fx_date": null,
+        "mandatory_fees": null,
+        "living_cost": null,
+        "note": "BNU international admission page fetched: no undergraduate tuition figure found (fee info not on that page).",
+        "source_url": "https://admission-is.bnu.edu.cn/",
+        "retrieved_at": "2026-11-16"
+      },
+      "deadlines": {
+        "value": null,
+        "note": "Official BNU admission page (admission-is.bnu.edu.cn) shows only the 2025 online application window (15 Nov 2024 to 15 Mar 2025). 2027 deadline not found.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "platform": {
+        "value": null,
+        "note": "Not verified.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "english": {
+        "ielts": null,
+        "toefl_ibt": null,
+        "duolingo": null,
+        "note": "No language requirement found on fetched page.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "sat_act": {
+        "value": null,
+        "note": "Not verified",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "acceptance_rate": {
+        "value": null,
+        "note": "not published on pages reached"
+      },
+      "documents": {
+        "value": null,
+        "note": "Not collected in this pass",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "programmes": {
+        "value": null,
+        "note": "Not collected in this pass",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "notes": [
+        "Only the 2025 window was found; treat as outdated."
+      ]
+    },
+    {
+      "id": "7dbe63be-ec0e-5eb3-8ca2-bd197b4a278f",
+      "slug": "university-of-gottingen-7dbe63be",
+      "name": "University of Göttingen",
+      "country_code": "DE",
+      "tuition": {
+        "amount": null,
+        "currency": "EUR",
+        "academic_year": "2026/27",
+        "usd": 535.12,
+        "fx_rate_usd_per_unit": 1.1052,
+        "fx_date": "2026-11-13",
+        "mandatory_fees": {
+          "value": "Semester contribution EUR 484.18 (winter 2026/27)"
+        },
+        "living_cost": null,
+        "note": "Bachelor's programmes: no tuition fee (third-party VisaFlow/MyGermanUniversity, consistent across sources; official Göttingen fee page not reached). Semester contribution EUR 484.18 for winter 2026/27 (third-party GradGermany, also consistent). Reduced rate about EUR 409-411 for exchange/public-funding holders. USD: EUR 484.18 x 1.1052 = 535.12 (ECB 2026-11-13).",
+        "source_url": null,
+        "retrieved_at": "2026-11-16",
+        "method": "search snippet - verify"
+      },
+      "deadlines": {
+        "value": [
+          {
+            "round": "Restricted-admission bachelor (winter intake), non-EU",
+            "date": "2027-04-30",
+            "cycle": "WS 2027/28",
+            "note": "third-party; verify"
+          },
+          {
+            "round": "Open-admission bachelor, non-EU",
+            "date": "2027-09-30",
+            "cycle": "WS 2027/28",
+            "note": "third-party; verify"
+          }
+        ],
+        "note": "Not verified",
+        "source_url": null,
+        "retrieved_at": null,
+        "method": "search snippet - verify"
+      },
+      "platform": {
+        "value": null,
+        "note": "Not verified on official page.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "english": {
+        "ielts": null,
+        "toefl_ibt": null,
+        "duolingo": null,
+        "note": "Not collected. Most bachelor's taught in German (third-party).",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "sat_act": {
+        "value": null,
+        "note": "Not verified",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "acceptance_rate": {
+        "value": null,
+        "note": "not published on pages reached"
+      },
+      "documents": {
+        "value": null,
+        "note": "Not collected in this pass",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "programmes": {
+        "value": null,
+        "note": "Not collected in this pass",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "notes": [
+        "Official Göttingen pages not reached; all values third-party, flagged for verification."
+      ]
+    },
+    {
+      "id": "7e066a2b-e773-5bc7-b7f1-4d4c1bc56f44",
+      "slug": "university-of-surrey-7e066a2b",
+      "name": "University of Surrey",
+      "country_code": "GB",
+      "tuition": {
+        "amount": null,
+        "currency": "GBP",
+        "academic_year": "2027 entry",
+        "usd": null,
+        "fx_rate_usd_per_unit": 1.322658,
+        "fx_date": "2026-11-13",
+        "mandatory_fees": null,
+        "living_cost": null,
+        "note": "Official Surrey 2027-entry overseas fee page: typical rates GBP 28,100 (most engineering, science, computing, psychology); GBP 15,200 (International Airline and Airport Management) to GBP 50,300 (Medicine Graduate Entry). Subject groupings on page (e.g. Economics/Maths GBP 22,700 is from another group; not used). Range shown across the list of course-level fees.",
+        "source_url": "https://www.surrey.ac.uk/fees-and-funding/tuition-fees/undergraduate-2027-entry",
+        "retrieved_at": "2026-11-16",
+        "range": {
+          "min": 15200,
+          "max": 50300
+        },
+        "usd_range": {
+          "min": 20104,
+          "max": 66530
+        }
+      },
+      "deadlines": {
+        "value": null,
+        "note": "Not collected in this pass.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "platform": {
+        "value": null,
+        "note": "Not verified on official page (UCAS presumed, not confirmed).",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "english": {
+        "ielts": null,
+        "toefl_ibt": null,
+        "duolingo": null,
+        "note": "Not collected in this pass.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "sat_act": {
+        "value": null,
+        "note": "Not verified",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "acceptance_rate": {
+        "value": null,
+        "note": "not published on pages reached"
+      },
+      "documents": {
+        "value": null,
+        "note": "Not collected in this pass",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "programmes": {
+        "value": null,
+        "note": "Not collected in this pass",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "notes": [
+        "usd_range converted at ECB 2026-11-13: 1 GBP = 1.32266 USD."
+      ]
+    },
+    {
+      "id": "9204c954-9d7d-539d-9cde-d30c5beddb24",
+      "slug": "technische-universitat-darmstadt-9204c954",
+      "name": "Technische Universität Darmstadt",
+      "country_code": "DE",
+      "tuition": {
+        "amount": null,
+        "currency": null,
+        "academic_year": null,
+        "usd": null,
+        "fx_rate_usd_per_unit": null,
+        "fx_date": null,
+        "mandatory_fees": null,
+        "living_cost": null,
+        "note": "Official TU Darmstadt bachelor-application page returned 404. Third-party only: public German universities generally charge no bachelor tuition; semester contribution not confirmed. Not used.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "deadlines": {
+        "value": null,
+        "note": "Official not reached. Route uncertain: one source says TUCaN own system, not uni-assist (unverified). Deadlines per programme in TUCaN.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "platform": {
+        "value": null,
+        "note": "Unverified: conflicting third-party claims (TUCaN vs uni-assist).",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "english": {
+        "ielts": null,
+        "toefl_ibt": null,
+        "duolingo": null,
+        "note": "Not collected.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "sat_act": {
+        "value": null,
+        "note": "Not verified",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "acceptance_rate": {
+        "value": null,
+        "note": "not published on pages reached"
+      },
+      "documents": {
+        "value": null,
+        "note": "Not collected in this pass",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "programmes": {
+        "value": null,
+        "note": "Not collected in this pass",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "notes": [
+        "Official TU Darmstadt bachelor page 404; retry on another official URL needed."
+      ]
+    },
+    {
+      "id": "f5e9c3ed-5ea7-5b51-9aa6-669804330a0c",
+      "slug": "american-university-of-sharjah-f5e9c3ed",
+      "name": "American University of Sharjah",
+      "country_code": "AE",
+      "tuition": {
+        "amount": 55438,
+        "currency": "AED",
+        "academic_year": "Fall 2026 (2026-27)",
+        "usd": null,
+        "fx_rate_usd_per_unit": null,
+        "fx_date": null,
+        "mandatory_fees": {
+          "value": "Compulsory activity fee AED 422 + 5% VAT (per snippet, verify)"
+        },
+        "living_cost": null,
+        "note": "Per semester, 12-16 credits: AED 55,438 (from search snippet of official AUS Fall 2026 payment-of-fees guide; PDF body not decodable, so verify). Part-time: AED 4,825 per credit under 12 credits. Annual approx 110,876 at full load (snippet, verify). USD not converted: AED is not in the cited ECB feed.",
+        "source_url": "https://www.aus.edu/sites/default/files/fall-2026-payment-of-fees-guide-undergraduate-students.pdf",
+        "retrieved_at": "2026-11-16",
+        "method": "search snippet - verify"
+      },
+      "deadlines": {
+        "value": null,
+        "note": "Not collected. A Fall 2026 fact sheet lists application dates TBA.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "platform": {
+        "value": null,
+        "note": "Not verified.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "english": {
+        "ielts": null,
+        "toefl_ibt": null,
+        "duolingo": null,
+        "note": "IELTS not found in this pass.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "sat_act": {
+        "value": null,
+        "note": "Not verified",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "acceptance_rate": {
+        "value": null,
+        "note": "not published on pages reached"
+      },
+      "documents": {
+        "value": null,
+        "note": "Not collected in this pass",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "programmes": {
+        "value": null,
+        "note": "Not collected in this pass",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "notes": [
+        "Fee guide PDF is binary; figures are from a search snippet and need a text-readable check."
+      ]
+    },
+    {
+      "id": "bb59d10f-a746-5862-ae68-d42e57f6c804",
+      "slug": "university-of-aberdeen-bb59d10f",
+      "name": "University of Aberdeen",
+      "country_code": "GB",
+      "tuition": {
+        "amount": null,
+        "currency": "GBP",
+        "academic_year": "2026/27",
+        "usd": null,
+        "fx_rate_usd_per_unit": null,
+        "fx_date": null,
+        "mandatory_fees": null,
+        "living_cost": null,
+        "note": "Official 2026-27 UG fee PDF (abdn.ac.uk) is not decodable. A search snippet cites GBP 20,800 (Arts & Social Sciences) and GBP 24,800 (Sciences) for 2026/27; NOT verified. Left null. ISC pathway fees separate.",
+        "source_url": "https://www.abdn.ac.uk/media/site/students/documents/UG--Full-time-Tuition-Fees-2026-27.pdf",
+        "retrieved_at": "2026-11-16"
+      },
+      "deadlines": {
+        "value": null,
+        "note": "Not collected.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "platform": {
+        "value": null,
+        "note": "Not verified.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "english": {
+        "ielts": null,
+        "toefl_ibt": null,
+        "duolingo": null,
+        "note": "Not confirmed; course-specific per snippets.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "sat_act": {
+        "value": null,
+        "note": "Not verified",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "acceptance_rate": {
+        "value": null,
+        "note": "not published on pages reached"
+      },
+      "documents": {
+        "value": null,
+        "note": "Not collected in this pass",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "programmes": {
+        "value": null,
+        "note": "Not collected in this pass",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "notes": [
+        "Official PDF unreadable via WebFetch; retry with a readable fees page on abdn.ac.uk."
+      ]
+    },
+    {
+      "id": "7aa094cd-7138-5fb0-b290-2242644f4a90",
+      "slug": "university-of-macau-7aa094cd",
+      "name": "University of Macau",
+      "country_code": "MO",
+      "tuition": {
+        "amount": null,
+        "currency": null,
+        "academic_year": null,
+        "usd": null,
+        "fx_rate_usd_per_unit": null,
+        "fx_date": null,
+        "mandatory_fees": null,
+        "living_cost": null,
+        "note": "Official UM undergraduate fee schedule not reached (only postgraduate 2024/25 fee appendix found). Third-party Studyportals MOP 122,600/yr non-local (no year) not used. Not verified.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "deadlines": {
+        "value": null,
+        "note": "Not collected.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "platform": {
+        "value": null,
+        "note": "Not verified.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "english": {
+        "ielts": null,
+        "toefl_ibt": null,
+        "duolingo": null,
+        "note": "Not collected.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "sat_act": {
+        "value": null,
+        "note": "Not verified",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "acceptance_rate": {
+        "value": null,
+        "note": "not published on pages reached"
+      },
+      "documents": {
+        "value": null,
+        "note": "Not collected in this pass",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "programmes": {
+        "value": null,
+        "note": "Not collected in this pass",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "notes": [
+        "Only older (2024/25) official fee data found, postgraduate-only: not used."
+      ]
+    },
+    {
+      "id": "d8313905-8074-5f4f-9575-92096465d73c",
+      "slug": "north-carolina-state-university-d8313905",
+      "name": "North Carolina State University at Raleigh",
+      "country_code": "US",
+      "tuition": {
+        "amount": null,
+        "currency": null,
+        "academic_year": null,
+        "usd": null,
+        "fx_rate_usd_per_unit": null,
+        "fx_date": null,
+        "mandatory_fees": null,
+        "living_cost": null,
+        "note": "Official NC State 2026-27 catalog tuition page (ncsu-preview.courseleaf.com) returned 503 on fetch. Aggregator figures (USD 33,034; 27,140) not used. System-wide UNC nonresident figure (USD 23,208) not attributed to NC State: not verified.",
+        "source_url": "https://ncsu-preview.courseleaf.com/about/admission-enrollment/tuition-fees-ug/",
+        "retrieved_at": "2026-11-16"
+      },
+      "deadlines": {
+        "value": null,
+        "note": "Not collected.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "platform": {
+        "value": null,
+        "note": "Not verified.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "english": {
+        "ielts": null,
+        "toefl_ibt": null,
+        "duolingo": null,
+        "note": "Not collected.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "sat_act": {
+        "value": null,
+        "note": "Not verified",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "acceptance_rate": {
+        "value": null,
+        "note": "not published on pages reached"
+      },
+      "documents": {
+        "value": null,
+        "note": "Not collected in this pass",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "programmes": {
+        "value": null,
+        "note": "Not collected in this pass",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "notes": [
+        "Catalog application fee for international applicants USD 100 per search snippet (not verified on fetched page)."
+      ]
+    },
+    {
+      "id": "b587ad87-cbf6-50e7-b5f8-952030dcf743",
+      "slug": "university-of-antwerp-b587ad87",
+      "name": "University of Antwerp",
+      "country_code": "BE",
+      "tuition": {
+        "amount": 4300,
+        "currency": "EUR",
+        "academic_year": "2026-2027",
+        "usd": 4752.36,
+        "fx_rate_usd_per_unit": 1.1052,
+        "fx_date": "2026-11-13",
+        "mandatory_fees": null,
+        "living_cost": null,
+        "note": "Official UAntwerp 2026-27 tuition page: non-EEA ('other nationalities') rate EUR 1,000 + EUR 55 per credit = EUR 4,300 for 60 credits (one academic year). USD = 4300 x 1.1052 (ECB reference rate 2026-11-13).",
+        "source_url": "https://www.uantwerpen.be/en/study/admission-and-enrolment/enrolment/tuition-fees/tuition-fees-2026-2027/",
+        "retrieved_at": "2026-11-16"
+      },
+      "deadlines": {
+        "value": null,
+        "note": "Official general bachelor deadlines not found; deadlines vary by programme (snippets only). Not used.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "platform": {
+        "value": null,
+        "note": "Not verified (Flemish system; direct application to university expected, not confirmed).",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "english": {
+        "ielts": null,
+        "toefl_ibt": null,
+        "duolingo": null,
+        "note": "Not collected.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "sat_act": {
+        "value": null,
+        "note": "Not verified",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "acceptance_rate": {
+        "value": null,
+        "note": "not published on pages reached"
+      },
+      "documents": {
+        "value": null,
+        "note": "Not collected in this pass",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "programmes": {
+        "value": null,
+        "note": "Not collected in this pass",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "notes": [
+        "Application/registration fee not listed on the official 2026-27 fee page."
+      ]
+    },
+    {
+      "id": "c8d8878d-de01-555a-815a-26fbd0bd1d4b",
+      "slug": "dalhousie-university-c8d8878d",
+      "name": "Dalhousie University",
+      "country_code": "CA",
+      "tuition": {
+        "amount": null,
+        "currency": null,
+        "academic_year": null,
+        "usd": null,
+        "fx_rate_usd_per_unit": null,
+        "fx_date": null,
+        "mandatory_fees": null,
+        "living_cost": null,
+        "note": "Official 2026-27 UG fee PDF returned 404 on the cdn.dal.ca URL from search. Indicative snippet CAD 33,814 (HotCoursesAbroad, BA) not used. Official fixed international tuition guarantee exists (per official page snippet); amount not read.",
+        "source_url": "https://www.dal.ca/admissions/cost-and-payment/fees.html",
+        "retrieved_at": "2026-11-16"
+      },
+      "deadlines": {
+        "value": null,
+        "note": "Not confirmed.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "platform": {
+        "value": null,
+        "note": "Not verified.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "english": {
+        "ielts": null,
+        "toefl_ibt": null,
+        "duolingo": null,
+        "note": "IELTS 6.5 cited on a third-party listing for one programme, not official: not used.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "sat_act": {
+        "value": null,
+        "note": "Not verified",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "acceptance_rate": {
+        "value": null,
+        "note": "not published on pages reached"
+      },
+      "documents": {
+        "value": null,
+        "note": "Not collected in this pass",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "programmes": {
+        "value": null,
+        "note": "Not collected in this pass",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "notes": [
+        "Retry dal.ca fee schedule with a current URL."
+      ]
+    },
+    {
+      "id": "9be52f2e-e5f1-5b79-beb7-1fe59f0021ab",
+      "slug": "heriot-watt-university-9be52f2e",
+      "name": "Heriot-Watt University",
+      "country_code": "GB",
+      "tuition": {
+        "amount": null,
+        "currency": null,
+        "academic_year": null,
+        "usd": null,
+        "fx_rate_usd_per_unit": null,
+        "fx_date": null,
+        "mandatory_fees": null,
+        "living_cost": null,
+        "note": "Official HW undergraduate tuition page: only UK fee (GBP 9,790, 2026 entry) listed; international fees defer to per-programme finder (not readable). Third-party GBP ranges (18,432-26,296; 25,808) not used.",
+        "source_url": "https://www.hw.ac.uk/study/fees-and-funding/tuition-fees/undergraduate-tuition-fees",
+        "retrieved_at": "2026-11-16"
+      },
+      "deadlines": {
+        "value": null,
+        "note": "Not collected.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "platform": {
+        "value": null,
+        "note": "Not verified (UCAS presumed for UK undergraduate; not confirmed).",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "english": {
+        "ielts": null,
+        "toefl_ibt": null,
+        "duolingo": null,
+        "note": "Official page does not state IELTS; third-party sources disagree (5.5 to 6.0): not used.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "sat_act": {
+        "value": null,
+        "note": "Not verified",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "acceptance_rate": {
+        "value": null,
+        "note": "not published on pages reached"
+      },
+      "documents": {
+        "value": null,
+        "note": "Not collected in this pass",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "programmes": {
+        "value": null,
+        "note": "Not collected in this pass",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "notes": [
+        "Official programme finder needed for overseas fees."
+      ]
+    },
+    {
+      "id": "52da1293-7388-563d-b51c-f34b66f55ba3",
+      "slug": "university-of-johannesburg-52da1293",
+      "name": "University of Johannesburg",
+      "country_code": "ZA",
+      "tuition": {
+        "amount": null,
+        "currency": null,
+        "academic_year": null,
+        "usd": null,
+        "fx_rate_usd_per_unit": null,
+        "fx_date": null,
+        "mandatory_fees": null,
+        "living_cost": null,
+        "note": "Official UJ applicant page fetch returned 403 earlier; 2027 fees not published (UJ says to request the final 2027 fees from November 2026). Third-party ZAR 69,920 (non-resident, year unclear) not used. Upfront payment of 40% of tuition per official applicant page (snippet, not re-read).",
+        "source_url": "https://www.uj.ac.za/internationalstudents/applying-to-uj/Pages/default.aspx",
+        "retrieved_at": "2026-11-16"
+      },
+      "deadlines": {
+        "value": null,
+        "note": "Not collected (official page 403).",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "platform": {
+        "value": null,
+        "note": "Not verified.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "english": {
+        "ielts": null,
+        "toefl_ibt": null,
+        "duolingo": null,
+        "note": "Official snippet: IELTS overall 6 or TOEFL 80-104 for undergraduate (not re-read from official page).",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "sat_act": {
+        "value": null,
+        "note": "Not verified",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "acceptance_rate": {
+        "value": null,
+        "note": "not published on pages reached"
+      },
+      "documents": {
+        "value": null,
+        "note": "Not collected in this pass",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "programmes": {
+        "value": null,
+        "note": "Not collected in this pass",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "notes": [
+        "Official UJ applying page blocked (403) in this pass."
+      ]
+    },
+    {
+      "id": "f0e04c9e-cb39-51b1-b00e-b40b17466f09",
+      "slug": "university-of-stellenbosch-f0e04c9e",
+      "name": "University of Stellenbosch",
+      "country_code": "ZA",
+      "tuition": {
+        "amount": null,
+        "currency": null,
+        "academic_year": null,
+        "usd": null,
+        "fx_rate_usd_per_unit": null,
+        "fx_date": null,
+        "mandatory_fees": null,
+        "living_cost": null,
+        "note": "Official 2026 international fee information PDF (files.su.ac.za) is binary; not decodable. Search snippet cites a 2026 bachelor tuition of ZAR 45,000 plus ITF ZAR 38,260 or 76,520 by region (total 83,260 / 121,520). Not verified, so left null. No 2027 figure published yet.",
+        "source_url": "https://files.su.ac.za/public/su-international/documents/2025-10/2026-international-students-fee-information.pdf",
+        "retrieved_at": "2026-11-16"
+      },
+      "deadlines": {
+        "value": null,
+        "note": "Application fee per snippet: ZAR 400 for international (2026), not verified.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "platform": {
+        "value": null,
+        "note": "Not verified.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "english": {
+        "ielts": null,
+        "toefl_ibt": null,
+        "duolingo": null,
+        "note": "Not collected.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "sat_act": {
+        "value": null,
+        "note": "Not verified",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "acceptance_rate": {
+        "value": null,
+        "note": "not published on pages reached"
+      },
+      "documents": {
+        "value": null,
+        "note": "Not collected in this pass",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "programmes": {
+        "value": null,
+        "note": "Not collected in this pass",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "notes": [
+        "2026 figures are the latest official-year data found; they were not readable in this pass."
+      ]
+    },
+    {
+      "id": "c353b675-c43e-5507-88d6-7a1850a92f27",
+      "slug": "universite-paris-cite-c353b675",
+      "name": "Université Paris Cité",
+      "country_code": "FR",
+      "tuition": {
+        "amount": 178,
+        "currency": "EUR",
+        "academic_year": "2026-2027",
+        "usd": 196.73,
+        "fx_rate_usd_per_unit": 1.1052,
+        "fx_date": "2026-11-13",
+        "mandatory_fees": null,
+        "living_cost": null,
+        "note": "Official u-paris.fr page: licence registration fee 2026-27 EUR 178 for extra-EU students under the partial exemption from differentiated fees (moratorium extended by the Board, 17 Oct 2025). Eligibility depends on the 2026 national decree (exemption cap, transitional rules): the full differentiated national rate (about EUR 2,895 cited by other universities) may apply to students not covered. Use EUR 178 only for exempt students. USD = 178 x 1.1052 (ECB 2026-11-13).",
+        "source_url": "https://u-paris.fr/droits-dinscription/",
+        "retrieved_at": "2026-11-16"
+      },
+      "deadlines": {
+        "value": null,
+        "note": "Not collected.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "platform": {
+        "value": null,
+        "note": "Not verified (French national APB/Parcoursup-type route not confirmed).",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "english": {
+        "ielts": null,
+        "toefl_ibt": null,
+        "duolingo": null,
+        "note": "Not collected.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "sat_act": {
+        "value": null,
+        "note": "Not verified",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "acceptance_rate": {
+        "value": null,
+        "note": "not published on pages reached"
+      },
+      "documents": {
+        "value": null,
+        "note": "Not collected in this pass",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "programmes": {
+        "value": null,
+        "note": "Not collected in this pass",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "notes": [
+        "Tuition status uncertain for non-exempt extra-EU students; flagged."
+      ]
+    },
+    {
+      "id": "ee9de602-8b76-575b-a7da-f8af732286fd",
+      "slug": "aalborg-university-ee9de602",
+      "name": "Aalborg University",
+      "country_code": "DK",
+      "tuition": {
+        "amount": 115700,
+        "currency": "DKK",
+        "academic_year": "2026 (two semesters; 2026/27 not published)",
+        "usd": 17105.2,
+        "fx_rate_usd_per_unit": 0.147841,
+        "fx_date": "2026-11-13",
+        "mandatory_fees": null,
+        "living_cost": null,
+        "note": "Official AAU bachelor finance page: non-EU/EEA rate DKK 115,700 per academic year for Applied Industrial Electronics, Chemical Engineering and Biotechnology, Energy Engineering; Economics and Business Administration DKK 55,600. No bachelor tuition waivers or scholarships. Latest published year on page is 2026 (not 2026/27). USD = 115,700 x (1.1052/7.4756) (ECB 2026-11-13).",
+        "source_url": "https://www.en.aau.dk/education/apply/bachelor/finance-and-fees",
+        "retrieved_at": "2026-11-16"
+      },
+      "deadlines": {
+        "value": [
+          {
+            "round": "Bachelor application (application fee must be received)",
+            "date": "2027-03-15",
+            "cycle": "2027 intake (date pattern as stated; year not explicitly in official text, verify)",
+            "note": "Official page says 15 March (12:00 noon CET). Year inferred from pattern; verify."
+          }
+        ],
+        "note": "Not verified",
+        "source_url": null,
+        "retrieved_at": null,
+        "method": "official page; year inferred - verify"
+      },
+      "platform": {
+        "value": null,
+        "note": "Not verified (Danish national Quota 2 route not confirmed on fetched page).",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "english": {
+        "ielts": null,
+        "toefl_ibt": null,
+        "duolingo": null,
+        "note": "Not collected.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "sat_act": {
+        "value": null,
+        "note": "Not verified",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "acceptance_rate": {
+        "value": null,
+        "note": "not published on pages reached"
+      },
+      "documents": {
+        "value": null,
+        "note": "Not collected in this pass",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "programmes": {
+        "value": null,
+        "note": "Not collected in this pass",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "notes": []
+    },
+    {
+      "id": "d88c7d81-10cb-52cc-9a90-1102d954fafc",
+      "slug": "simon-fraser-university-d88c7d81",
+      "name": "Simon Fraser University",
+      "country_code": "CA",
+      "tuition": {
+        "amount": 18943.2,
+        "currency": "CAD",
+        "academic_year": "2026/27 (per term)",
+        "usd": 13285.97,
+        "fx_rate_usd_per_unit": 0.701358,
+        "fx_date": "2026-11-13",
+        "mandatory_fees": {
+          "value": "Not itemised on fetched page"
+        },
+        "living_cost": null,
+        "note": "Official SFU Typical Costs page: international tuition CAD 18,943.20 per term (4 months) for 5 courses / 15 units; upper-level Business, Computing Science, Engineering Science courses cost more. Annual total not stated on page (three terms implied, not confirmed). Annual fee may rise up to 6% per year per official calendar. USD per term = 18,943.20 x 0.70131 (ECB 2026-11-13).",
+        "source_url": "https://www.sfu.ca/students/financialaid/costs/international-students.html",
+        "retrieved_at": "2026-11-16"
+      },
+      "deadlines": {
+        "value": null,
+        "note": "Deadlines section not read (linked from costs page).",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "platform": {
+        "value": null,
+        "note": "Not verified (SFU application route not confirmed).",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "english": {
+        "ielts": null,
+        "toefl_ibt": null,
+        "duolingo": null,
+        "note": "Not found in this pass.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "sat_act": {
+        "value": null,
+        "note": "Not verified",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "acceptance_rate": {
+        "value": null,
+        "note": "not published on pages reached"
+      },
+      "documents": {
+        "value": null,
+        "note": "Not collected in this pass",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "programmes": {
+        "value": null,
+        "note": "Not collected in this pass",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "notes": []
+    },
+    {
+      "id": "242cc455-5ee6-592e-9553-f0d47583a53b",
+      "slug": "city-st-george-s-university-of-london-242cc455",
+      "name": "City St George's, University of London",
+      "country_code": "GB",
+      "tuition": {
+        "amount": null,
+        "currency": null,
+        "academic_year": null,
+        "usd": null,
+        "fx_rate_usd_per_unit": null,
+        "fx_date": null,
+        "mandatory_fees": null,
+        "living_cost": null,
+        "note": "Official City St George's fee pages not reached. Third-party listings (GBP 22,340 to 28,000; 27,000 for BSc Finance) not used.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "deadlines": {
+        "value": null,
+        "note": "Not collected.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "platform": {
+        "value": null,
+        "note": "Not verified (UCAS presumed, not confirmed).",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "english": {
+        "ielts": null,
+        "toefl_ibt": null,
+        "duolingo": null,
+        "note": "Not confirmed: third-party listings give 6.0 to 6.5 by course; not used.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "sat_act": {
+        "value": null,
+        "note": "Not verified",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "acceptance_rate": {
+        "value": null,
+        "note": "not published on pages reached"
+      },
+      "documents": {
+        "value": null,
+        "note": "Not collected in this pass",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "programmes": {
+        "value": null,
+        "note": "Not collected in this pass",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "notes": [
+        "Official site not reached; retry with citystgeorges.ac.uk fee page."
+      ]
+    },
+    {
+      "id": "78f4c065-33e2-5ada-843b-139c16a49170",
+      "slug": "rutgers-university-new-brunswick-78f4c065",
+      "name": "Rutgers University-New Brunswick",
+      "country_code": "US",
+      "tuition": {
+        "amount": null,
+        "currency": null,
+        "academic_year": null,
+        "usd": null,
+        "fx_rate_usd_per_unit": null,
+        "fx_date": null,
+        "mandatory_fees": null,
+        "living_cost": null,
+        "note": "Official Rutgers 2026-27 undergraduate non-resident rate not reached. Third-party only: USD 36,831 non-resident (2026-27, before fees, not verified); a Rutgers form cites 40,839 for 2027-28 (different year, not used).",
+        "source_url": "https://newbrunswickgrad.rutgers.edu/sites/default/files/2026-01/OGA_Intl_Requirements_Jan2026_Updated.pdf",
+        "retrieved_at": "2026-11-16"
+      },
+      "deadlines": {
+        "value": [
+          {
+            "round": "Early Action (Fall 2027 first-year)",
+            "date": "2026-11-01",
+            "cycle": "Fall 2027",
+            "note": "third-party summary - verify"
+          },
+          {
+            "round": "Regular Decision (Fall 2027 first-year)",
+            "date": "2026-12-01",
+            "cycle": "Fall 2027",
+            "note": "third-party summary - verify"
+          }
+        ],
+        "note": "Not verified",
+        "source_url": null,
+        "retrieved_at": null,
+        "method": "search snippet - verify"
+      },
+      "platform": {
+        "value": null,
+        "note": "Not verified (Common App / Rutgers direct not confirmed).",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "english": {
+        "ielts": null,
+        "toefl_ibt": null,
+        "duolingo": null,
+        "note": "Conflicting third-party values (TOEFL 79 / IELTS 6.5 common); official Rutgers requirements PDF is unreadable and may be graduate-only. Not used.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "sat_act": {
+        "value": null,
+        "note": "Not verified",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "acceptance_rate": {
+        "value": null,
+        "note": "not published on pages reached"
+      },
+      "documents": {
+        "value": null,
+        "note": "Not collected in this pass",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "programmes": {
+        "value": null,
+        "note": "Not collected in this pass",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "notes": [
+        "Official English-requirement PDF was unreadable via WebFetch."
+      ]
+    },
+    {
+      "id": "6bb7e28d-2e25-5601-995b-224c09630410",
+      "slug": "southern-university-of-science-and-technology-6bb7e28d",
+      "name": "Southern University of Science and Technology",
+      "country_code": "CN",
+      "tuition": {
+        "amount": null,
+        "currency": null,
+        "academic_year": null,
+        "usd": null,
+        "fx_rate_usd_per_unit": null,
+        "fx_date": null,
+        "mandatory_fees": null,
+        "living_cost": null,
+        "note": "Official SUSTech international students page: no undergraduate fee amount. States that outstanding international students may receive full scholarships covering tuition, accommodation, insurance and living expenses (no amounts; eligibility not stated). Third-party CNY 30,000/yr and USD 4,425 not used (no academic year).",
+        "source_url": "https://global.sustech.edu.cn/en/international_students",
+        "retrieved_at": "2026-11-16"
+      },
+      "deadlines": {
+        "value": null,
+        "note": "Not found on official page; no 2027 deadline listed.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "platform": {
+        "value": null,
+        "note": "Online application portal (sustech.at0086.cn, not fetched); platform not confirmed.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "english": {
+        "ielts": null,
+        "toefl_ibt": null,
+        "duolingo": null,
+        "note": "No English requirement stated on official page; 'courses taught in English' only.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "sat_act": {
+        "value": null,
+        "note": "Not verified",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "acceptance_rate": {
+        "value": null,
+        "note": "not published on pages reached"
+      },
+      "documents": {
+        "value": null,
+        "note": "Not collected in this pass",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "programmes": {
+        "value": null,
+        "note": "Not collected in this pass",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "notes": [
+        "Official pages: global.sustech.edu.cn/en/international_students and infoadmin.sustech.edu.cn."
+      ]
+    },
+    {
+      "id": "f951261f-1498-5510-9a26-1b64120fa020",
+      "slug": "university-of-jordan-f951261f",
+      "name": "University of Jordan",
+      "country_code": "JO",
+      "tuition": {
+        "amount": null,
+        "currency": null,
+        "academic_year": null,
+        "usd": null,
+        "fx_rate_usd_per_unit": null,
+        "fx_date": null,
+        "mandatory_fees": null,
+        "living_cost": null,
+        "note": "Official ipmd.ju.edu.jo undergraduate entry page: request rejected (bot/security block). Skipped, not bypassed. Official AI B.Sc. page (per search snippet): international fee USD 215 per credit; not fetched directly, not used.",
+        "source_url": "https://ipmd.ju.edu.jo/Pages/Undergraduate_Entry_requirements.aspx",
+        "retrieved_at": "2026-11-16"
+      },
+      "deadlines": {
+        "value": null,
+        "note": "Not found on fetched official pages.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "platform": {
+        "value": null,
+        "note": "Not verified.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "english": {
+        "ielts": null,
+        "toefl_ibt": null,
+        "duolingo": null,
+        "note": "Not found.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "sat_act": {
+        "value": null,
+        "note": "Not verified",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "acceptance_rate": {
+        "value": null,
+        "note": "not published on pages reached"
+      },
+      "documents": {
+        "value": null,
+        "note": "Not collected in this pass",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "programmes": {
+        "value": null,
+        "note": "Not collected in this pass",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "notes": [
+        "Official entry-requirements page blocked by security rejection (support id on page)."
+      ]
+    },
+    {
+      "id": "e541a3fa-23bd-51c1-a0a5-46f9234ac222",
+      "slug": "satbayev-university-e541a3fa",
+      "name": "Satbayev University",
+      "country_code": "KZ",
+      "tuition": {
+        "amount": null,
+        "currency": null,
+        "academic_year": null,
+        "usd": null,
+        "fx_rate_usd_per_unit": null,
+        "fx_date": null,
+        "mandatory_fees": null,
+        "living_cost": null,
+        "note": "Official satbayev.university fetch failed (TLS certificate error). Third-party Studyportals figures (KZT 1,111,380/yr; USD 4,400/yr non-resident, no year) not used.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "deadlines": {
+        "value": null,
+        "note": "Not collected.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "platform": {
+        "value": null,
+        "note": "Not verified.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "english": {
+        "ielts": null,
+        "toefl_ibt": null,
+        "duolingo": null,
+        "note": "Not collected.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "sat_act": {
+        "value": null,
+        "note": "Not verified",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "acceptance_rate": {
+        "value": null,
+        "note": "not published on pages reached"
+      },
+      "documents": {
+        "value": null,
+        "note": "Not collected in this pass",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "programmes": {
+        "value": null,
+        "note": "Not collected in this pass",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "notes": [
+        "Official site could not be verified (certificate error). Retry needed."
+      ]
+    },
+    {
+      "id": "c219f27f-022b-5a47-b530-1dcb004f48bd",
+      "slug": "universidad-politecnica-de-madrid-c219f27f",
+      "name": "Universidad Politécnica de Madrid",
+      "country_code": "ES",
+      "tuition": {
+        "amount": null,
+        "currency": null,
+        "academic_year": null,
+        "usd": null,
+        "fx_rate_usd_per_unit": null,
+        "fx_date": null,
+        "mandatory_fees": null,
+        "living_cost": null,
+        "note": "UPM admission page (admision.upm.es/grado) fetched: non-EU tuition not stated. Official route for applicants with foreign university studies exists (curso 2026-2027). Public per-credit prices from search snippets (EUR 20.68 first enrolment, etc.) are general, not confirmed as the non-EU rate: not used.",
+        "source_url": "https://admision.upm.es/grado",
+        "retrieved_at": "2026-11-16"
+      },
+      "deadlines": {
+        "value": null,
+        "note": "2026-27 calendar for foreign-education applicants referenced (linked PDF not read). Resolution date 13 May 2026. No 2027-28 dates.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "platform": {
+        "value": null,
+        "note": "Official UPM application route for foreign-education applicants (admision.upm.es); exact platform not confirmed.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "english": {
+        "ielts": null,
+        "toefl_ibt": null,
+        "duolingo": null,
+        "note": "Language requirement PDF linked but not read.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "sat_act": {
+        "value": null,
+        "note": "Not verified",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "acceptance_rate": {
+        "value": null,
+        "note": "not published on pages reached"
+      },
+      "documents": {
+        "value": null,
+        "note": "Not collected in this pass",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "programmes": {
+        "value": null,
+        "note": "Not collected in this pass",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "notes": [
+        "Next step: read the linked 2026-2027 requirements and calendar PDFs."
+      ]
+    },
+    {
+      "id": "9702e410-fabe-5f00-952b-3f5bcbabb5c5",
+      "slug": "southeast-university-9702e410",
+      "name": "Southeast University",
+      "country_code": "CN",
+      "tuition": {
+        "amount": null,
+        "currency": null,
+        "academic_year": null,
+        "usd": null,
+        "fx_rate_usd_per_unit": null,
+        "fx_date": null,
+        "mandatory_fees": null,
+        "living_cost": null,
+        "note": "Official SEU PDF returned 404 on the URL from search. Third-party guide gives CNY 16,000-19,000/yr for Chinese-taught programmes and CNY 32,000 for English-taught medicine (no academic year). Not used.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "deadlines": {
+        "value": null,
+        "note": "Third-party guide lists 22 Nov 2025 - 15 May 2026 (previous cycle; 2027 not confirmed). Not used as 2027 deadline.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "platform": {
+        "value": null,
+        "note": "Not verified.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "english": {
+        "ielts": null,
+        "toefl_ibt": null,
+        "duolingo": null,
+        "note": "Not collected.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "sat_act": {
+        "value": null,
+        "note": "Not verified",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "acceptance_rate": {
+        "value": null,
+        "note": "not published on pages reached"
+      },
+      "documents": {
+        "value": null,
+        "note": "Not collected in this pass",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "programmes": {
+        "value": null,
+        "note": "Not collected in this pass",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "notes": [
+        "Official SEU international admissions contact: admission@seu.edu.cn (contact only, not fee data)."
+      ]
+    },
+    {
+      "id": "a26a97e6-1728-580f-9b1f-b2813c25c9e5",
+      "slug": "university-of-coimbra-a26a97e6",
+      "name": "University of Coimbra",
+      "country_code": "PT",
+      "tuition": {
+        "amount": null,
+        "currency": null,
+        "academic_year": null,
+        "usd": null,
+        "fx_rate_usd_per_unit": null,
+        "fx_date": null,
+        "mandatory_fees": null,
+        "living_cost": null,
+        "note": "Official UC international brochure returned 403 (bot protection). Skipped. Only third-party or earlier data found (EUR 7,000 reference for 2025/26 and EUR 7,000 for 2020/21 blog). Per owner rule: older data -> null. Public 2026/27 cap EUR 697 applies to nationals/EU only.",
+        "source_url": "https://www.uc.pt/site/assets/files/2037633/brochura_internacional_ptbr_v4b.pdf",
+        "retrieved_at": "2026-11-16"
+      },
+      "deadlines": {
+        "value": null,
+        "note": "Not collected.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "platform": {
+        "value": null,
+        "note": "Not verified.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "english": {
+        "ielts": null,
+        "toefl_ibt": null,
+        "duolingo": null,
+        "note": "Not collected.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "sat_act": {
+        "value": null,
+        "note": "Not verified",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "acceptance_rate": {
+        "value": null,
+        "note": "not published on pages reached"
+      },
+      "documents": {
+        "value": null,
+        "note": "Not collected in this pass",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "programmes": {
+        "value": null,
+        "note": "Not collected in this pass",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "notes": [
+        "Official brochure blocked (403). Only older data found (2025/26 and 2020/21)."
+      ]
+    },
+    {
+      "id": "616ecdd9-cfd4-5f87-b011-c31c83ef8265",
+      "slug": "mahidol-university-616ecdd9",
+      "name": "Mahidol University",
+      "country_code": "TH",
+      "tuition": {
+        "amount": null,
+        "currency": null,
+        "academic_year": null,
+        "usd": null,
+        "fx_rate_usd_per_unit": null,
+        "fx_date": null,
+        "mandatory_fees": null,
+        "living_cost": null,
+        "note": "Official Faculty of Science TCAS notice covers Thai applicants (THB 600,000 for four years of SCBE/SCME/SCIN/SCCT). International programme tuition not on the official page read. Aggregator THB figures (e.g. 320,025/yr) not used.",
+        "source_url": "https://sim.sc.mahidol.ac.th/wp-content/uploads/2026/08/TCAS1-1-TCAS-1-2-2570-EN.pdf",
+        "retrieved_at": "2026-11-16"
+      },
+      "deadlines": {
+        "value": null,
+        "note": "Official portfolio round for the International Program: 15 Dec 2026 to 15 Jan 2027 (Faculty of Science notice, academic year 2027). Applies to that faculty's programme; other faculties not checked.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "platform": {
+        "value": null,
+        "note": "Portfolio/TCAS route per official Faculty of Science notice.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "english": {
+        "ielts": null,
+        "toefl_ibt": null,
+        "duolingo": null,
+        "note": "Official notice: English proficiency by TOEFL iBT, MU-GRAD Test, MU-GRAD Test Plus or MU-ELT, as specified by the programme (scores not stated in the snippet).",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "sat_act": {
+        "value": null,
+        "note": "Not verified",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "acceptance_rate": {
+        "value": null,
+        "note": "not published on pages reached"
+      },
+      "documents": {
+        "value": null,
+        "note": "Not collected in this pass",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "programmes": {
+        "value": null,
+        "note": "Not collected in this pass",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "notes": [
+        "Deadline is for one faculty's international programme only."
+      ]
+    },
+    {
+      "id": "b86e106a-7e3d-534d-9f61-d111d5a49dfa",
+      "slug": "beijing-university-of-aeronautics-and-astronautics-b86e106a",
+      "name": "Beijing University of Aeronautics and Astronautics",
+      "country_code": "CN",
+      "tuition": {
+        "amount": null,
+        "currency": null,
+        "academic_year": null,
+        "usd": null,
+        "fx_rate_usd_per_unit": null,
+        "fx_date": null,
+        "mandatory_fees": null,
+        "living_cost": null,
+        "note": "Official BUAA English undergraduate page: 'Tuition Fees: 30,000 Yuan/Yr', but the page is undated and its listed application deadline is June 30, 2025. Per owner rule (only older data found, 2025 cycle), tuition is null. Third-party data not used.",
+        "source_url": "https://is.buaa.edu.cn/en/info/1028/2893.htm",
+        "retrieved_at": "2026-11-16"
+      },
+      "deadlines": {
+        "value": null,
+        "note": "Official page lists 'Application Deadline: June 30, 2025' (older cycle; 2027 not found). Null.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "platform": {
+        "value": null,
+        "note": "Not verified; applications via BUAA International Student Application System (per 2026 brochure snippet).",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "english": {
+        "ielts": null,
+        "toefl_ibt": null,
+        "duolingo": null,
+        "note": "Official English page: TOEFL 90+, IELTS 6+, Duolingo 105+ (page undated; treated as current pending verification).",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "sat_act": {
+        "value": null,
+        "note": "Not verified",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "acceptance_rate": {
+        "value": null,
+        "note": "not published on pages reached"
+      },
+      "documents": {
+        "value": null,
+        "note": "Not collected in this pass",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "programmes": {
+        "value": null,
+        "note": "Not collected in this pass",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "notes": [
+        "Only older (2025 cycle) official data found: tuition left null. Application fee 400 RMB, non-refundable (official page, undated)."
+      ]
+    },
+    {
+      "id": "c2731c00-d254-53a5-bc2d-e7c05197c0f2",
+      "slug": "quaid-i-azam-university",
+      "name": "Quaid-i-Azam University",
+      "country_code": "PK",
+      "tuition": {
+        "amount": null,
+        "currency": null,
+        "academic_year": null,
+        "usd": null,
+        "fx_rate_usd_per_unit": null,
+        "fx_date": null,
+        "mandatory_fees": null,
+        "living_cost": null,
+        "note": "qau.edu.pk bachelor fee-structure and international-students pages returned HTTP 403 to WebFetch; not bypassed. Search snippet says foreign-student fees are listed in USD or PKR equivalent 'w.e.f Fall 2026' but figures were not read. No figure recorded.",
+        "source_url": "https://qau.edu.pk/bachelor-fee-structure/",
+        "retrieved_at": "2026-11-16"
+      },
+      "deadlines": {
+        "value": null,
+        "note": "Pages returned 403. Search snippet only: bachelor intakes announced yearly, process usually starts in June for Fall. Not verified; null.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "platform": {
+        "value": null,
+        "note": "Not verified (pages returned 403). Search snippet mentions Kuickpay/1-Bill for the PKR application fee only.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "english": {
+        "ielts": null,
+        "toefl_ibt": null,
+        "duolingo": null,
+        "note": "Not collected: official international-students page returned 403.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "sat_act": {
+        "value": null,
+        "note": "Search snippet only says foreign applicants must take SAT-I / University Admission Test. Not verified on official page; null.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "acceptance_rate": {
+        "value": null,
+        "note": "not published on pages reached"
+      },
+      "documents": {
+        "value": null,
+        "note": "Not verified (403). Snippet says foreign applicants need IBCC and HEC certificate evaluation plus an HEC NOC; unverified, not recorded.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "programmes": {
+        "value": null,
+        "note": "Not collected (403).",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "notes": [
+        "Blocked: qau.edu.pk returns HTTP 403 on homepage, fee page and international page. Skipped per rule, not bypassed.",
+        "Search results (qau.edu.pk domain) suggest foreign-student fees are in USD and that undergraduate intakes start in June, but no figures were read, so none are recorded."
+      ]
+    },
+    {
+      "id": "08d9be02-dd4b-5552-97ea-0017b28c332a",
+      "slug": "university-of-chinese-academy-of-sciences-08d9be02",
+      "name": "University of Chinese Academy of Sciences",
+      "country_code": "CN",
+      "tuition": {
+        "amount": null,
+        "currency": null,
+        "academic_year": null,
+        "usd": null,
+        "fx_rate_usd_per_unit": null,
+        "fx_date": null,
+        "mandatory_fees": null,
+        "living_cost": null,
+        "note": "Official ucas.ac.cn English site and Chinese international-student admissions page fetched: no international undergraduate (本科) tuition published. Pages list graduate/doctoral programmes and scholarships only.",
+        "source_url": "https://www.ucas.ac.cn/zsjy/gjxszs/index.htm",
+        "retrieved_at": "2026-11-16"
+      },
+      "deadlines": {
+        "value": null,
+        "note": "No international undergraduate deadlines on official pages fetched. Undergraduate items shown are domestic (2026 charter dated 2026-05-29, Chinese-only registration via bm.chsi.com.cn).",
+        "source_url": "https://www.ucas.ac.cn",
+        "retrieved_at": "2026-11-16"
+      },
+      "platform": {
+        "value": null,
+        "note": "Not verified for international undergraduates. Domestic undergraduate registration uses bm.chsi.com.cn (Chinese platform).",
+        "source_url": "https://www.ucas.ac.cn",
+        "retrieved_at": "2026-11-16"
+      },
+      "english": {
+        "ielts": null,
+        "toefl_ibt": null,
+        "duolingo": null,
+        "note": "Not published on pages reached.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "sat_act": {
+        "value": null,
+        "note": "Not verified.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "acceptance_rate": {
+        "value": null,
+        "note": "not published on pages reached"
+      },
+      "documents": {
+        "value": null,
+        "note": "Not published on pages reached.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "programmes": {
+        "value": null,
+        "note": "No English undergraduate programmes listed on pages reached.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "notes": [
+        "Official site confirms the institution recruits master's and doctoral students worldwide; no international bachelor's admissions data found.",
+        "Chinese-site page 'zsjy/gjxszs' covers graduate and visiting students only. The English site has no undergraduate international page."
+      ]
+    },
+    {
+      "id": "6e24a4e2-b0f4-5080-94f4-b31ee65b1fa7",
+      "slug": "virginia-polytechnic-institute-and-state-university-6e24a4e2",
+      "name": "Virginia Polytechnic Institute and State University",
+      "country_code": "US",
+      "tuition": {
+        "amount": 40180,
+        "currency": "USD",
+        "academic_year": "2026/27",
+        "usd": 40180,
+        "fx_rate_usd_per_unit": 1,
+        "fx_date": "2026-11-16",
+        "mandatory_fees": {
+          "value": "Included in $40,180 (out-of-state tuition plus mandatory fees, per Board of Visitors figure)"
+        },
+        "living_cost": {
+          "value": "Room and board $15,032 per year (2026-27, on-campus)"
+        },
+        "note": "Official VT news release: out-of-state undergraduate tuition + mandatory fees $40,180/yr for 2026-27 (up $1,203). Non-resident rate applies to international undergraduates per older catalog; resident/non-resident split not confirmed on the bursar page (not reachable: 404). Application fee $70 seen in search snippet only, not on official page.",
+        "source_url": "https://news.vt.edu/articles/2026/04/cm-bovtuition-041426.html",
+        "retrieved_at": "2026-11-16"
+      },
+      "deadlines": {
+        "value": [
+          {
+            "round": "Early Action (academic materials and English test results)",
+            "date": "2026-12-01",
+            "cycle": "Fall 2027 entry (date as listed on undated requirements page; confirm year)"
+          },
+          {
+            "round": "Regular Decision (academic materials and English test results)",
+            "date": "2027-01-24",
+            "cycle": "Fall 2027 entry (date as listed on undated requirements page; confirm year)"
+          }
+        ],
+        "source_url": "https://www.vt.edu/admissions/international/requirements.html",
+        "retrieved_at": "2026-11-16"
+      },
+      "platform": {
+        "value": "Common App or Virginia Tech applicant portal (page does not require one specific platform)",
+        "source_url": "https://www.vt.edu/admissions/international/requirements.html",
+        "retrieved_at": "2026-11-16"
+      },
+      "english": {
+        "ielts": "6.5 overall, no sub-score below 6.5 (tests taken within past 2 years)",
+        "toefl_ibt": "80 overall with no section below 16 (for exams taken on or after 2026-01-21); second threshold 4.5/4.0 listed without test named",
+        "duolingo": "115",
+        "source_url": "https://www.vt.edu/admissions/international/requirements.html",
+        "retrieved_at": "2026-11-16"
+      },
+      "sat_act": {
+        "value": "Optional (not required for international applicants)",
+        "source_url": "https://www.vt.edu/admissions/international/requirements.html",
+        "retrieved_at": "2026-11-16"
+      },
+      "acceptance_rate": {
+        "value": null,
+        "note": "not published on pages reached"
+      },
+      "documents": {
+        "value": [
+          "Academic records: STARS self-reported transcript or copies of secondary transcripts and exam results (years 9-11, current year 12/13, predicted results)",
+          "Official English test report sent from testing body (CEEB code 5859)",
+          "If admitted: official transcripts, proof of in-progress coursework, verification of high-school completion",
+          "Translations and financial certification not addressed on requirements page (confirm with admissions@vt.edu)"
+        ],
+        "source_url": "https://www.vt.edu/admissions/international/requirements.html",
+        "retrieved_at": "2026-11-16"
+      },
+      "programmes": {
+        "value": null,
+        "note": "Not collected within fetch budget."
+      },
+      "notes": [
+        "Tuition figure is out-of-state tuition plus mandatory fees from the official VT news release; treat as the non-resident figure applying to international undergraduates (per older catalog).",
+        "Admissions.vt.edu pages redirected to an error page; the requirements page on www.vt.edu was used instead.",
+        "Deadline years are inferred from the undated requirements page; confirm the Fall 2027 cycle directly with admissions.",
+        "Application fee $70 comes from search snippet only (not verified on an official page)."
+      ]
+    },
+    {
+      "id": "d3cb59ef-f04f-531e-8ec8-718bfa9bda5a",
+      "slug": "oxford-brookes-university-d3cb59ef",
+      "name": "Oxford Brookes University",
+      "country_code": "GB",
+      "tuition": {
+        "amount": 18500,
+        "currency": "GBP",
+        "academic_year": "2027/28",
+        "usd": null,
+        "fx_rate_usd_per_unit": null,
+        "fx_date": null,
+        "mandatory_fees": null,
+        "living_cost": null,
+        "note": "Course-level figure: International Relations, full-time international, 2027/28 (fetched course page, also lists 2026/27 at £17,250). Fees vary by course; search snippets show £19,300-£20,800 for other courses (not fetched). Main fees page (fetched) says 2026/27 rates only. USD not converted: FX rate not fetched.",
+        "source_url": "https://www.brookes.ac.uk/courses/undergraduate/international-relations",
+        "retrieved_at": "2026-11-16"
+      },
+      "deadlines": {
+        "value": [
+          {
+            "round": "UCAS equal consideration (most undergraduate courses)",
+            "date": "2027-01-13",
+            "cycle": "2027 entry"
+          },
+          {
+            "round": "UCAS final date for 2027 entry applications",
+            "date": "2027-09-23",
+            "cycle": "2027 entry"
+          }
+        ],
+        "source_url": "https://www.ucas.com/applying/applying-to-university/dates-and-deadlines-for-uni-applications",
+        "retrieved_at": "2026-11-16",
+        "note": "UCAS dates; Oxford Brookes-specific deadlines not published on pages reached (its 'How to apply' page returned 404)."
+      },
+      "platform": {
+        "value": "UCAS (standard UK undergraduate route; not explicitly stated on pages reached)",
+        "source_url": "https://www.ucas.com/applying/applying-to-university/dates-and-deadlines-for-uni-applications",
+        "retrieved_at": "2026-11-16",
+        "note": "Inferred from UCAS tariff entry requirements on course page; not explicitly stated by the university."
+      },
+      "english": {
+        "ielts": null,
+        "toefl_ibt": null,
+        "duolingo": null,
+        "note": "Not stated on the course page fetched; applicant pages returned 404.",
+        "source_url": null,
+        "retrieved_at": null
+      },
+      "sat_act": {
+        "value": null,
+        "note": "Not verified."
+      },
+      "acceptance_rate": {
+        "value": null,
+        "note": "not published on pages reached"
+      },
+      "documents": {
+        "value": null,
+        "note": "Not verified (applicant pages 404)."
+      },
+      "programmes": {
+        "value": [
+          {
+            "name": "BA (Hons) International Relations",
+            "faculty": null,
+            "years": 3,
+            "requires": "UCAS tariff 112-120 and BBC/BBB A-levels (or equivalent), depending on joint honours subject"
+          }
+        ],
+        "source_url": "https://www.brookes.ac.uk/courses/undergraduate/international-relations",
+        "retrieved_at": "2026-11-16",
+        "note": "Only one course page fetched; other Brookes course titles seen in search (Law LLB, Electronic Engineering BEng, Economics Finance and International Business, Medical Sciences) not fetched."
+      },
+      "notes": [
+        "Fees page on brookes.ac.uk still shows 2026/27 rates; 2027/28 values from course page.",
+        "Applicant guidance pages (international applicants, international fees) returned 404 and were not replaced by guessed URLs."
+      ]
+    },
+    {
+      "id": "15368572-190f-5082-b4cf-93f10bca9dcb",
+      "slug": "university-of-saskatchewan-15368572",
+      "name": "University of Saskatchewan",
+      "country_code": "CA",
+      "tuition": {
+        "amount": null,
+        "currency": "CAD",
+        "academic_year": "2026/27",
+        "usd": null,
+        "fx_rate_usd_per_unit": null,
+        "fx_date": null,
+        "mandatory_fees": {
+          "value": "Student fees for on-campus students: Fall 2026 $585.30 full-time; Winter 2027 $746.36; Spring 2027 $151.90; Summer 2027 $151.90 (full-time). Other terms and part-time listed on page."
+        },
+        "living_cost": null,
+        "note": "Official tuition page gives per 3-credit-unit class rates: Arts (Cat. 1) $3,865.20; Science (Cat. 8) $4,100.40; Biology/Chemistry/Geology/Physics (Cat. 14) $4,219.50; Engineering (Cat. 7) $4,926.60. Annual total not published as a single figure, so amount is null. Search snippet's Arts 'about $39,007' not used (not on fetched page).",
+        "source_url": "https://students.usask.ca/money/tuition-fees/undergraduate-tuition.php",
+        "retrieved_at": "2026-11-16"
+      },
+      "deadlines": {
+        "value": [
+          {
+            "round": "Winter 2027 (international) - application deadline",
+            "date": "2026-09-01",
+            "cycle": "Winter 2027 start; documents due 2026-10-01"
+          },
+          {
+            "round": "Spring 2027 (international) - application deadline",
+            "date": "2027-02-01",
+            "cycle": "Spring 2027 start; documents due 2027-03-01"
+          },
+          {
+            "round": "Fall 2027 (international) - application deadline",
+            "date": "2027-05-01",
+            "cycle": "Fall 2027 start; documents due 2027-06-01"
+          }
+        ],
+        "source_url": "https://admissions.usask.ca/international-studies.php",
+        "retrieved_at": "2026-11-16",
+        "note": "Program-specific deadlines can differ (e.g. Education page lists Fall 2027 regular 2027-02-15 and early 2026-12-01 - not fetched)."
+      },
+      "platform": {
+        "value": null,
+        "note": "Not verified: 'How to apply' page surfaced in search but not fetched; applicant pages returned 404 earlier."
+      },
+      "english": {
+        "ielts": "6.5 overall, minimum 6.0 in each band (single test date, valid 2 years)",
+        "toefl_ibt": null,
+        "duolingo": "120 overall, minimum 100 in each area (effective 2026-01-01)",
+        "note": "TOEFL page text is inconsistent ('4.5' overall with 4 per section, alongside legacy 86/19); not recorded as reliable.",
+        "source_url": "https://admissions.usask.ca/requirements/english-language-proficiency.php",
+        "retrieved_at": "2026-11-16"
+      },
+      "sat_act": {
+        "value": null,
+        "note": "Not verified."
+      },
+      "acceptance_rate": {
+        "value": null,
+        "note": "not published on pages reached"
+      },
+      "documents": {
+        "value": null,
+        "note": "Not verified: international requirements page not read."
+      },
+      "programmes": {
+        "value": null,
+        "note": "Not collected within fetch budget."
+      },
+      "notes": [
+        "Application fee CAD 120 (non-refundable) and a CAD 1,000 tuition deposit for most international students per USask pages (deposit page from search, not fetched). Application fee from admissions.usask.ca/international-studies.php fetch.",
+        "Tuition PDF factsheet unreadable (binary); used HTML page instead."
+      ]
+    },
+    {
+      "id": "fa9a3fbb-6893-59cf-917b-668bd1099861",
+      "slug": "university-of-east-anglia-fa9a3fbb",
+      "name": "University of East Anglia",
+      "country_code": "GB",
+      "tuition": {
+        "amount": 24250,
+        "currency": "GBP",
+        "academic_year": "2027/28",
+        "usd": null,
+        "fx_rate_usd_per_unit": null,
+        "fx_date": null,
+        "mandatory_fees": null,
+        "living_cost": {
+          "value": "Estimated £1,171/month (course page, search snippet)"
+        },
+        "note": "Figure is from a UEA course page seen in search snippet (BA Education with a Year Abroad, international 2027/28), NOT fetched. Snippet also shows £29,300 for BEng Engineering with a Year Abroad. Fees fixed per course. Fees page and tuition table fetched but showed no figures. USD not converted (FX not fetched).",
+        "source_url": "https://www.uea.ac.uk/course/undergraduate/ba-education-with-a-year-abroad",
+        "retrieved_at": "2026-11-16"
+      },
+      "deadlines": {
+        "value": [
+          {
+            "round": "UCAS equal consideration (most undergraduate courses)",
+            "date": "2027-01-13",
+            "cycle": "2027 entry"
+          }
+        ],
+        "source_url": "https://www.ucas.com/applying/applying-to-university/dates-and-deadlines-for-uni-applications",
+        "retrieved_at": "2026-11-16",
+        "note": "UCAS date; UEA-specific deadline not verified (UEA how-to-apply page returned 404)."
+      },
+      "platform": {
+        "value": "UCAS (not explicitly confirmed on UEA pages reached)",
+        "source_url": "https://www.ucas.com/applying/applying-to-university/dates-and-deadlines-for-uni-applications",
+        "retrieved_at": "2026-11-16",
+        "note": "Inferred from standard UK route; not stated by UEA on pages fetched."
+      },
+      "english": {
+        "ielts": "6.0 overall, minimum 5.5 in all components (course-page search snippet - verify)",
+        "toefl_ibt": null,
+        "duolingo": null,
+        "note": "Snippet only; applicant page 404.",
+        "source_url": "https://www.uea.ac.uk/course/undergraduate/ba-geography",
+        "retrieved_at": "2026-11-16",
+        "method": "search snippet - verify"
+      },
+      "sat_act": {
+        "value": null,
+        "note": "Not verified."
+      },
+      "acceptance_rate": {
+        "value": null,
+        "note": "not published on pages reached"
+      },
+      "documents": {
+        "value": null,
+        "note": "Not verified."
+      },
+      "programmes": {
+        "value": [
+          {
+            "name": "BA (Hons) Education with a Year Abroad",
+            "faculty": null,
+            "years": null,
+            "requires": "Not verified (name from course-page search result)"
+          },
+          {
+            "name": "BEng (Hons) Engineering with a Year Abroad",
+            "faculty": null,
+            "years": null,
+            "requires": "Not verified"
+          },
+          {
+            "name": "BSc (Hons) Computing Science with Software Development (Final Year Entry)",
+            "faculty": null,
+            "years": null,
+            "requires": "Not verified"
+          },
+          {
+            "name": "BA (Hons) International Relations",
+            "faculty": null,
+            "years": null,
+            "requires": "Not verified (course page returned title only)"
+          },
+          {
+            "name": "BA (Hons) English Literature and Philosophy",
+            "faculty": null,
+            "years": null,
+            "requires": "Not verified"
+          },
+          {
+            "name": "BA (Hons) Geography",
+            "faculty": null,
+            "years": null,
+            "requires": "Not verified"
+          }
+        ],
+        "source_url": "https://www.uea.ac.uk/study/fees-and-funding/fees",
+        "retrieved_at": "2026-11-16",
+        "note": "Names from search results only; course details not fetched."
+      },
+      "notes": [
+        "UEA states international fee increases up to 4% or RPI-X (whichever is higher) per year; fee tables on the fees page did not render amounts.",
+        "International Undergraduate Merit Scholarship £5,000-£10,000/yr (search snippet, not fetched)."
+      ]
+    },
+    {
+      "id": "22f80f4b-b2f0-50d7-a747-c073a4b79913",
+      "slug": "university-of-athens-22f80f4b",
+      "name": "University of Athens",
+      "country_code": "GR",
+      "tuition": {
+        "amount": 17000,
+        "currency": "EUR",
+        "academic_year": "2027-2028",
+        "usd": null,
+        "fx_rate_usd_per_unit": null,
+        "fx_date": null,
+        "mandatory_fees": null,
+        "living_cost": null,
+        "note": "Applies only to the English Medical Degree Programme at Medicen (a University of Athens unit), fetched on medicen.uoa.gr: EUR 17,000 per academic year for EU and non-EU citizens; EUR 5,000 deposit deducted from tuition, balance in two instalments. Other English-taught UoA bachelor programmes: no official 2027 fee schedule found on pages reached. USD not converted (FX not fetched).",
+        "source_url": "https://medicen.uoa.gr/tuition-fees/",
+        "retrieved_at": "2026-11-16"
+      },
+      "deadlines": {
+        "value": [
+          {
+            "round": "English Medical Degree application deadline (per Medicen FAQ, from search snippet - verify)",
+            "date": "2027-03-31",
+            "cycle": "2027 intake (next intake September 2027 per Medicen overview)"
+          }
+        ],
+        "source_url": "https://medicen.uoa.gr/faqs/",
+        "retrieved_at": "2026-11-16",
+        "method": "search snippet - verify",
+        "note": "Medicen application-process page links to a separate 'Important Dates' page that was not fetched. General UoA admission dates not found: nkua pages 404."
+      },
+      "platform": {
+        "value": "Direct online portal (Medicen application platform, cloud-solutions.anova.gr/MEDICEN)",
+        "source_url": "https://medicen.uoa.gr/application-process/",
+        "retrieved_at": "2026-11-16"
+      },
+      "english": {
+        "ielts": null,
+        "toefl_ibt": null,
+        "duolingo": null,
+        "note": "Medicen page: certificate at least B2 level; accepted tests IELTS, TOEFL, FCE. Exact IELTS/TOEFL cut-offs not stated on page.",
+        "source_url": "https://medicen.uoa.gr/application-process/",
+        "retrieved_at": "2026-11-16"
+      },
+      "sat_act": {
+        "value": null,
+        "note": "Not verified."
+      },
+      "acceptance_rate": {
+        "value": null,
+        "note": "not published on pages reached"
+      },
+      "documents": {
+        "value": [
+          "Identification (passport or national ID)",
+          "High school diploma, or prior-year transcript plus enrolment statement for final-year students",
+          "Official transcripts in original language with English translation",
+          "Qualification from accepted list (IB, European Baccalaureate, A-levels, UCAT, MCAT)",
+          "English certificate at B2 or higher",
+          "Short CV and personal statement",
+          "Optional referee letters",
+          "Diplomas/transcripts apostilled or notarised (or certified by Hellenic consulate if not Hague member)",
+          "Non-EU applicants need a national D-type student visa"
+        ],
+        "source_url": "https://medicen.uoa.gr/application-process/",
+        "retrieved_at": "2026-11-16"
+      },
+      "programmes": {
+        "value": [
+          {
+            "name": "Medical Degree English Programme (Medicen)",
+            "faculty": "Medicine, National and Kapodistrian University of Athens",
+            "years": null,
+            "requires": "English B2 certificate, a qualification from the accepted list (IB, A-levels, European Baccalaureate, UCAT or MCAT), with transcripts translated and apostilled"
+          }
+        ],
+        "source_url": "https://medicen.uoa.gr/application-process/",
+        "retrieved_at": "2026-11-16",
+        "note": "Only the English medical degree was examined; other English-taught UoA bachelor's programmes not collected (no official pages reached)."
+      },
+      "notes": [
+        "Main UoA admissions/undergraduate pages returned 404 and were not replaced by guessed URLs.",
+        "Search snippet pointed to an older English BA (School of Philosophy, 2021 page, EUR 6,000/yr) which is not used (outdated, not verified)."
+      ]
+    },
+    {
+      "id": "8892c819-57b7-5b66-bd14-c02448f8adf5",
+      "slug": "aston-university-8892c819",
+      "name": "Aston University",
+      "country_code": "GB",
+      "tuition": {
+        "amount": 22575,
+        "currency": "GBP",
+        "academic_year": "2027/28",
+        "usd": null,
+        "fx_rate_usd_per_unit": null,
+        "fx_date": null,
+        "mandatory_fees": null,
+        "living_cost": null,
+        "note": "First-year international tuition for 2027/28 on fetched course pages (BSc Biomedicine and BA English Language; same figure on both). Placement year £2,500 is for Sept 2026 entry; 2027 placement fee to be posted by 31 July 2026. Fees may rise by up to 6% per year. USD not converted (FX not fetched).",
+        "source_url": "https://www.aston.ac.uk/study/courses/biomedicine-bsc",
+        "retrieved_at": "2026-11-16"
+      },
+      "deadlines": {
+        "value": [
+          {
+            "round": "UCAS equal consideration (most undergraduate courses)",
+            "date": "2027-01-13",
+            "cycle": "2027 entry"
+          }
+        ],
+        "source_url": "https://www.ucas.com/applying/applying-to-university/dates-and-deadlines-for-uni-applications",
+        "retrieved_at": "2026-11-16",
+        "note": "UCAS date. Aston course pages state entry via UCAS and September 2027 start but give no Aston-specific deadline. Aston's fee-page and international-applicant pages returned 404."
+      },
+      "platform": {
+        "value": "UCAS",
+        "source_url": "https://www.aston.ac.uk/study/courses/biomedicine-bsc",
+        "retrieved_at": "2026-11-16",
+        "note": "Course page: 'Apply through UCAS'."
+      },
+      "english": {
+        "ielts": null,
+        "toefl_ibt": null,
+        "duolingo": null,
+        "note": "Course pages say international applicants must provide an English qualification and link to a separate page not fetched. Exact IELTS values not recorded.",
+        "source_url": "https://www.aston.ac.uk/study/courses/biomedicine-bsc",
+        "retrieved_at": "2026-11-16"
+      },
+      "sat_act": {
+        "value": null,
+        "note": "Not verified."
+      },
+      "acceptance_rate": {
+        "value": null,
+        "note": "not published on pages reached"
+      },
+      "documents": {
+        "value": null,
+        "note": "Not verified (international applicant page not reached)."
+      },
+      "programmes": {
+        "value": [
+          {
+            "name": "BSc Biomedicine",
+            "faculty": "Life and Health Sciences",
+            "years": "3 or 4",
+            "requires": "A-levels BBC including Biology (standard); CCC including Biology (contextual offer)"
+          },
+          {
+            "name": "BA English Language",
+            "faculty": "Languages and Social Sciences (course page)",
+            "years": "3 or 4",
+            "requires": "A-levels BBC (standard), BCC (contextual), BCC with EPQ grade B minimum"
+          }
+        ],
+        "source_url": "https://www.aston.ac.uk/study/courses/english-language-ba",
+        "retrieved_at": "2026-11-16",
+        "note": "Two course pages fetched; faculty for Biomedicine is from course-page context and not explicitly quoted. Other programmes not collected."
+      },
+      "notes": [
+        "Aston fees-page and international-applicant URLs returned 404 and were not replaced by guessed URLs.",
+        "Aston Online (online.aston.ac.uk) fee of £22,590 for 2027/28 is a separate online programme and not used for the on-campus figure."
+      ]
+    },
+    {
+      "id": "2aeff5f7-7e4e-5a51-beef-1c624bb2c1fb",
+      "slug": "ajman-university-2aeff5f7",
+      "name": "Ajman University",
+      "country_code": "AE",
+      "tuition": {
+        "amount": null,
+        "currency": null,
+        "academic_year": "2026/27",
+        "usd": null,
+        "fx_rate_usd_per_unit": null,
+        "fx_date": null,
+        "mandatory_fees": null,
+        "living_cost": null,
+        "note": "Official tuition page lists 'AU Fee for Academic Year 2026-2027 (Summary)' only as PDF brochures, which were not read. No figure recorded. Application and admission fees are non-refundable and not part of tuition (per international-students page). 2027 intake fees not published on pages reached.",
+        "source_url": "https://www.ajman.ac.ae/en/admissions/tuition-fees",
+        "retrieved_at": "2026-11-16"
+      },
+      "deadlines": {
+        "value": null,
+        "note": "No deadlines or intake dates stated on the international-students page; 2027 deadline not found. Undergraduate admission policy PDF not read."
+      },
+      "platform": {
+        "value": "Direct online application (Ellucian CRM Recruit portal)",
+        "source_url": "https://www.ajman.ac.ae/en/admissions/undergraduate/international-students",
+        "retrieved_at": "2026-11-16"
+      },
+      "english": {
+        "ielts": "5.0 IELTS Academic overall for English-taught programmes (alternatively 80% in Grade 12 English); MBBS/MD 6.0; dental 5.0",
+        "toefl_ibt": "61 (IBT) for English-taught programmes; 79 IBT for MD",
+        "duolingo": null,
+        "note": "Per the international-students page. Search snippet also cites a 4.5-IELTS threshold for certain colleges (not on fetched page, not recorded).",
+        "source_url": "https://www.ajman.ac.ae/en/admissions/undergraduate/international-students",
+        "retrieved_at": "2026-11-16"
+      },
+      "sat_act": {
+        "value": null,
+        "note": "Not verified (admission requirements page 404)."
+      },
+      "acceptance_rate": {
+        "value": null,
+        "note": "not published on pages reached"
+      },
+      "documents": {
+        "value": [
+          "Official secondary school certificate / transcripts certified by the authorised educational authority",
+          "Valid passport copy with valid residence permit",
+          "Medical report on the university form (reports from outside UAE not accepted)"
+        ],
+        "source_url": "https://www.ajman.ac.ae/en/admissions/undergraduate/international-students",
+        "retrieved_at": "2026-11-16"
+      },
+      "programmes": {
+        "value": null,
+        "note": "Not collected."
+      },
+      "notes": [
+        "Fee figures are in PDF brochures not readable through WebFetch.",
+        "Medicine admission requirements conflict between pages (IELTS 6.0 vs 6.5); both mentioned, not resolved."
+      ]
+    },
+    {
+      "id": "eeaff72d-4092-57d9-bb1b-4ed463749cec",
+      "slug": "umea-university-eeaff72d",
+      "name": "Umea University",
+      "country_code": "SE",
+      "tuition": {
+        "amount": null,
+        "currency": "SEK",
+        "academic_year": "2025/26",
+        "usd": null,
+        "fx_rate_usd_per_unit": null,
+        "fx_date": null,
+        "mandatory_fees": {
+          "value": "Application fee SEK 900 (non-EU/EEA/Swiss), payable before processing; fee deadline not stated"
+        },
+        "living_cost": null,
+        "note": "stale: 2025/26. Umeå 2025/26 guide (search snippet, not fetched) gives tuition for non-EU/EEA students of SEK 96,600 to SEK 395,700 per year depending on field. Tuition-fees page on umu.se returned 404. No 2026/27 or 2027 fee figure found. USD not converted.",
+        "source_url": "https://www.umu.se/en/education/application-and-admission/how-to-apply/application-guide/",
+        "retrieved_at": "2026-11-16"
+      },
+      "deadlines": {
+        "value": [
+          {
+            "round": "Round 1 (Swedish national, international applicants advised to use this round)",
+            "date": "15 January (year not stated on page)",
+            "cycle": "autumn or spring 2027 (year to confirm)"
+          },
+          {
+            "round": "Round 1 (second date)",
+            "date": "15 August (year not stated on page)",
+            "cycle": "confirm year"
+          },
+          {
+            "round": "Round 2",
+            "date": "15 April (year not stated on page)",
+            "cycle": "confirm year"
+          },
+          {
+            "round": "Round 2 (second date)",
+            "date": "15 October (year not stated on page)",
+            "cycle": "confirm year"
+          }
+        ],
+        "source_url": "https://www.umu.se/en/education/application-and-admission/how-to-apply/application-guide/",
+        "retrieved_at": "2026-11-16",
+        "note": "Umeå's guide points to a 'Key dates and deadlines' page for exact dates; that page was not reached. Dates kept without an asserted year."
+      },
+      "platform": {
+        "value": "University Admissions Sweden (universityadmissions.se)",
+        "source_url": "https://www.umu.se/en/education/application-and-admission/how-to-apply/application-guide/",
+        "retrieved_at": "2026-11-16"
+      },
+      "english": {
+        "ielts": "6.5 overall, no section below 5.5 (general bachelor's requirement, search snippet - verify)",
+        "toefl_ibt": "90 (search snippet - verify)",
+        "duolingo": null,
+        "note": "Alternatives: upper-secondary English 6 or university studies. From search snippet of umu.se; not on fetched page.",
+        "source_url": "https://www.umu.se/en/education/application-and-admission/how-to-apply/application-guide/",
+        "retrieved_at": "2026-11-16",
+        "method": "search snippet - verify"
+      },
+      "sat_act": {
+        "value": "Not used (Sweden does not use SAT/ACT)",
+        "source_url": "https://www.umu.se/en/education/application-and-admission/how-to-apply/application-guide/",
+        "retrieved_at": "2026-11-16",
+        "note": "General Swedish system; SAT/ACT not mentioned on pages fetched, so this is inferred - treat as unverified."
+      },
+      "acceptance_rate": {
+        "value": null,
+        "note": "not published on pages reached"
+      },
+      "documents": {
+        "value": [
+          "Previous studies documentation (transcripts/diploma) uploaded to University Admissions or sent in hard copy per country instructions",
+          "Proof of English proficiency",
+          "Application fee receipt SEK 900 (non-EU/EEA/Swiss)"
+        ],
+        "source_url": "https://www.umu.se/en/education/application-and-admission/how-to-apply/application-guide/",
+        "retrieved_at": "2026-11-16"
+      },
+      "programmes": {
+        "value": null,
+        "note": "Umeå offers four bachelor's programmes, all taught in English (page). Names not listed on pages reached."
+      },
+      "notes": [
+        "umu.se tuition-fees and programme-search pages returned 404 or no names; not guessed.",
+        "Sweden's national deadline rounds shown without year, so dates are not asserted for 2027."
+      ]
+    },
+    {
+      "id": "4780798a-9a67-5765-a85f-86a0a1501d14",
+      "slug": "insa-lyon-4780798a",
+      "name": "Institut National des Sciences Appliquées de Lyon",
+      "country_code": "FR",
+      "tuition": {
+        "amount": 2895,
+        "currency": "EUR",
+        "academic_year": "2026/27",
+        "usd": null,
+        "fx_rate_usd_per_unit": null,
+        "fx_date": null,
+        "mandatory_fees": {
+          "value": "CVEC 105 EUR (per year). Total with tuition EUR 3,000 for years 1-2"
+        },
+        "living_cost": null,
+        "note": "Official INSA page (fr): non-EU students in engineering cursus, years 1-2: tuition 2,895 EUR + CVEC 105 EUR = 3,000 EUR. Years 3-5 are 3,941 EUR + CVEC. These are standard engineering-cursus rates; the International Bachelor's fee is not stated on the page fetched. USD not converted.",
+        "source_url": "https://www.insa-lyon.fr/fr/le-cursus-ingenieur/droits-dinscription-et-contribution-vie-etudiante-et-de-campus",
+        "retrieved_at": "2026-11-16"
+      },
+      "deadlines": {
+        "value": [
+          {
+            "round": "International Bachelor's Degree (Mechanical, Materials and Aerospace Engineering) - application deadline; selection committees in April and June",
+            "date": "2027-05-31",
+            "cycle": "2027 entry"
+          }
+        ],
+        "source_url": "https://www.insa-lyon.fr/en/formations-insa-lyon/bachelors/international-bachelors-degree-mechanical-materials-and-aerospace",
+        "retrieved_at": "2026-11-16",
+        "note": "Only the International Bachelor track was checked; other INSA bachelor tracks not verified."
+      },
+      "platform": {
+        "value": "Email: download application form and send to ibeng@insa-lyon.fr (no online portal mentioned)",
+        "source_url": "https://www.insa-lyon.fr/en/formations-insa-lyon/bachelors/international-bachelors-degree-mechanical-materials-and-aerospace",
+        "retrieved_at": "2026-11-16"
+      },
+      "english": {
+        "ielts": "C1-level proof required; examples listed: IELTS 7-8 (exact minimum not stated)",
+        "toefl_ibt": null,
+        "duolingo": null,
+        "note": "Page lists TOEFL iBT '5' as a C1 example, which looks like a typo (TOEFL iBT is out of 120); not recorded. Accepted tests also include CAE, TOEIC 880, PTE General Level 4.",
+        "source_url": "https://www.insa-lyon.fr/en/formations-insa-lyon/bachelors/international-bachelors-degree-mechanical-materials-and-aerospace",
+        "retrieved_at": "2026-11-16"
+      },
+      "sat_act": {
+        "value": null,
+        "note": "Page mentions SAT Math 730+ only for US diploma holders with AP Calculus/Physics grade 4 (not a general requirement). No SAT requirement stated as general rule."
+      },
+      "acceptance_rate": {
+        "value": null,
+        "note": "not published on pages reached"
+      },
+      "documents": {
+        "value": null,
+        "note": "Not verified (page lists academic entry requirements only)."
+      },
+      "programmes": {
+        "value": [
+          {
+            "name": "International Bachelor's Degree in Mechanical, Materials and Aerospace Engineering",
+            "faculty": "INSA Lyon Engineering",
+            "years": 3,
+            "requires": "A-levels AAB incl. Maths and Physics; or IB 32 incl. Maths and Physics HL5; or French Bac 13+ with Maths and Physics; or US diploma with SAT Math 730+ and AP Calculus/Physics grade 4; or India XII 85%"
+          }
+        ],
+        "source_url": "https://www.insa-lyon.fr/en/formations-insa-lyon/bachelors/international-bachelors-degree-mechanical-materials-and-aerospace",
+        "retrieved_at": "2026-11-16",
+        "note": "Only the International Bachelor track was checked. Other INSA programmes not collected."
+      },
+      "notes": [
+        "Fee figures are from the standard engineering-cursus page, not the International Bachelor page.",
+        "Application deadline is for the International Bachelor only."
+      ]
+    },
+    {
+      "id": "631a34e8-40b9-5489-95b0-3a6fb6d26764",
+      "slug": "dublin-city-university-631a34e8",
+      "name": "Dublin City University",
+      "country_code": "IE",
+      "tuition": {
+        "amount": 19450,
+        "currency": "EUR",
+        "academic_year": "2027-2028",
+        "usd": null,
+        "fx_rate_usd_per_unit": null,
+        "fx_date": null,
+        "mandatory_fees": {
+          "value": "Student Contribution about EUR 2,393 per year for most full-time programmes (separate column on fee page; mandatory status not stated explicitly)"
+        },
+        "living_cost": null,
+        "note": "Non-EU fee by faculty 2027-28 from official DCU fees page: Humanities & Social Sciences (most programmes, incl. International Relations) EUR 19,450 (figure shown); Business School EUR 19,500; Institute of Education EUR 17,750; Engineering & Computing EUR 23,800; Science & Health EUR 23,850. Fees subject to annual increase. USD not converted (FX not fetched).",
+        "source_url": "https://www.dcu.ie/fees/undergraduate-fees-2027-2028",
+        "retrieved_at": "2026-11-16"
+      },
+      "deadlines": {
+        "value": null,
+        "note": "Non-EU applicants apply via CAO and applications for BA Business Studies International accepted on an ongoing basis up to 1 July (year not stated on page). EU deadlines 1 Feb and 1 May. Exact 2027 CAO dates not confirmed."
+      },
+      "platform": {
+        "value": "CAO (Central Applications Office)",
+        "source_url": "https://www.dcu.ie/courses/undergraduate/business-school/business-studies-international",
+        "retrieved_at": "2026-11-16",
+        "note": "Stated on the BA Business Studies International page."
+      },
+      "english": {
+        "ielts": null,
+        "toefl_ibt": null,
+        "duolingo": null,
+        "note": "Course page defers to DCU's English language requirements page (not fetched; 404 on the guessed URL). Search snippet's IELTS 5.0 applies to the International Foundation Year, not the degree."
+      },
+      "sat_act": {
+        "value": null,
+        "note": "Not verified."
+      },
+      "acceptance_rate": {
+        "value": null,
+        "note": "not published on pages reached"
+      },
+      "documents": {
+        "value": null,
+        "note": "Not verified."
+      },
+      "programmes": {
+        "value": [
+          {
+            "name": "BA Business Studies International",
+            "faculty": "DCU Business School",
+            "years": 4,
+            "requires": "Leaving Certificate O4/H6 Maths and minimum H4 in a language other than English or Irish, or an equivalent international qualification"
+          }
+        ],
+        "source_url": "https://www.dcu.ie/courses/undergraduate/business-school/business-studies-international",
+        "retrieved_at": "2026-11-16",
+        "note": "One programme checked. Non-EU fee for this programme is the Business School rate (EUR 19,500) rather than the 19,450 figure stored in amount."
+      },
+      "notes": [
+        "amount stores the Humanities figure; the Business School programme fee on the same page is EUR 19,500 for 2027-28.",
+        "DCU general applicant pages returned 404 and were not replaced by guessed URLs."
+      ]
+    },
+    {
+      "id": "55405d00-ab25-533d-a54d-3e6f9453f6cf",
+      "slug": "julius-maximilians-universitat-wurzburg-55405d00",
+      "name": "Bayerische Julius-Maximilians-Universität Würzburg",
+      "country_code": "DE",
+      "tuition": {
+        "amount": null,
+        "currency": "EUR",
+        "academic_year": null,
+        "usd": null,
+        "fx_rate_usd_per_unit": null,
+        "fx_date": null,
+        "mandatory_fees": null,
+        "living_cost": null,
+        "note": "Not stated on the bachelor application or FAQ pages fetched. The 'Enrolment & Semester Fees' subpage was linked but not fetched. Public German universities charge no tuition for most bachelor programmes; this is not recorded as fact (semester fee not read).",
+        "source_url": "https://www.uni-wuerzburg.de/en/studying-at-jmu/studienangelegenheiten/application-and-enrolment/international-degree-seeking-students/faqs/",
+        "retrieved_at": "2026-11-16"
+      },
+      "deadlines": {
+        "value": [
+          {
+            "round": "Bachelor - summer semester application deadline",
+            "date": "15 January (year not stated on FAQ page)",
+            "cycle": "Summer semester 2027 (to confirm)"
+          },
+          {
+            "round": "Bachelor - winter semester application deadline",
+            "date": "15 July (year not stated on FAQ page)",
+            "cycle": "Winter semester 2027/28 (to confirm)"
+          }
+        ],
+        "source_url": "https://www.uni-wuerzburg.de/en/studying-at-jmu/studienangelegenheiten/application-and-enrolment/international-degree-seeking-students/faqs/",
+        "retrieved_at": "2026-11-16",
+        "note": "Year not stated on page, so 2027 mapping is unconfirmed. Dates differ for some programmes (page says so). A 27 January / 27 July variant in an older search snippet was not used."
+      },
+      "platform": {
+        "value": "uni-assist (preliminary review documentation, VPD) plus WueStudy online application",
+        "source_url": "https://www.uni-wuerzburg.de/en/studying-at-jmu/studienangelegenheiten/application-and-enrolment/international-degree-seeking-students/application/",
+        "retrieved_at": "2026-11-16",
+        "note": "VPD must be requested at uni-assist before applying to Würzburg; uni-assist does not replace the WueStudy application."
+      },
+      "english": {
+        "ielts": null,
+        "toefl_ibt": null,
+        "duolingo": null,
+        "note": "Not stated for bachelor applicants on pages reached. Snippets mention B2 levels only for Master's programmes."
+      },
+      "sat_act": {
+        "value": "Not used (German system; no SAT/ACT requirement on pages reached)",
+        "source_url": "https://www.uni-wuerzburg.de/en/studying-at-jmu/studienangelegenheiten/application-and-enrolment/international-degree-seeking-students/faqs/",
+        "retrieved_at": "2026-11-16",
+        "note": "Inferred from absence on pages fetched; not explicitly stated. Medicine/dentistry TestAS from summer 2027 (search snippet) noted, not used."
+      },
+      "acceptance_rate": {
+        "value": null,
+        "note": "not published on pages reached"
+      },
+      "documents": {
+        "value": [
+          "Preliminary review documentation (VPD) from uni-assist for most international applicants"
+        ],
+        "source_url": "https://www.uni-wuerzburg.de/en/studying-at-jmu/studienangelegenheiten/application-and-enrolment/international-degree-seeking-students/application/",
+        "retrieved_at": "2026-11-16",
+        "note": "Other documents not read."
+      },
+      "programmes": {
+        "value": null,
+        "note": "Not collected: bachelor programme list not reached within budget."
+      },
+      "notes": [
+        "Bachelor application page is a landing page that links to sub-pages; deadlines, English rules and fee details were on linked pages not fetched.",
+        "Search snippets for 27 Jan/27 Jul (older page) not used."
+      ]
+    }
+  ]
+}

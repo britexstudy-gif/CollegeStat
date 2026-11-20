@@ -1,29 +1,5 @@
 [
   {
-    "name": "Nanyang Technological University, Singapore (NTU Singapore)",
-    "country": "Singapore",
-    "provider": "qs",
-    "year": 2026,
-    "rank_label": "12",
-    "url": "https://www.econ.muni.cz/do/econ/soubory/oddeleni/ozs/admissions/2026_QS_World_University_Rankings_1.2__For_qs.com__11.2025.pdf",
-    "country_code": "SG",
-    "national_rank": null,
-    "logo_url": null,
-    "reason": "unmatched or ambiguous"
-  },
-  {
-    "name": "PSL University",
-    "country": "France",
-    "provider": "qs",
-    "year": 2026,
-    "rank_label": "28",
-    "url": "https://www.econ.muni.cz/do/econ/soubory/oddeleni/ozs/admissions/2026_QS_World_University_Rankings_1.2__For_qs.com__11.2025.pdf",
-    "country_code": "FR",
-    "national_rank": null,
-    "logo_url": null,
-    "reason": "unmatched or ambiguous"
-  },
-  {
     "name": "University of Illinois at Urbana-Champaign",
     "country": "United States of America",
     "provider": "qs",
@@ -295,30 +271,6 @@
     "rank_label": "=499",
     "url": "https://www.econ.muni.cz/do/econ/soubory/oddeleni/ozs/admissions/2026_QS_World_University_Rankings_1.2__For_qs.com__11.2025.pdf",
     "country_code": "AU",
-    "national_rank": null,
-    "logo_url": null,
-    "reason": "unmatched or ambiguous"
-  },
-  {
-    "name": "Nanyang Technological University, Singapore (NTU Singapore)",
-    "country": "Singapore",
-    "provider": "qs",
-    "year": 2027,
-    "rank_label": "12",
-    "url": "https://insights.qs.com/hubfs/Rankings%20Excel%20Reports/2027%20QS%20World%20University%20Rankings%201.1%20%28For%20qs.com%29.xlsx",
-    "country_code": "SG",
-    "national_rank": null,
-    "logo_url": null,
-    "reason": "unmatched or ambiguous"
-  },
-  {
-    "name": "EPFL – École polytechnique fédérale de Lausanne",
-    "country": "Switzerland",
-    "provider": "qs",
-    "year": 2027,
-    "rank_label": "=22",
-    "url": "https://insights.qs.com/hubfs/Rankings%20Excel%20Reports/2027%20QS%20World%20University%20Rankings%201.1%20%28For%20qs.com%29.xlsx",
-    "country_code": "CH",
     "national_rank": null,
     "logo_url": null,
     "reason": "unmatched or ambiguous"
@@ -1836,18 +1788,6 @@
     "reason": "unmatched or ambiguous"
   },
   {
-    "name": "Nanyang Technological University, Singapore",
-    "country": "Singapore",
-    "provider": "the",
-    "year": 2026,
-    "rank_label": "=31",
-    "url": "https://www.timeshighereducation.com/world-university-rankings/nanyang-technological-university-singapore",
-    "country_code": "SG",
-    "national_rank": null,
-    "logo_url": null,
-    "reason": "unmatched or ambiguous"
-  },
-  {
     "name": "University of Illinois at Urbana-Champaign",
     "country": "United States",
     "provider": "the",
@@ -1855,18 +1795,6 @@
     "rank_label": "=41",
     "url": "https://www.timeshighereducation.com/world-university-rankings/university-illinois-urbana-champaign",
     "country_code": "US",
-    "national_rank": null,
-    "logo_url": null,
-    "reason": "unmatched or ambiguous"
-  },
-  {
-    "name": "Paris Sciences et Lettres – PSL Research University Paris",
-    "country": "France",
-    "provider": "the",
-    "year": 2026,
-    "rank_label": "48",
-    "url": "https://www.timeshighereducation.com/world-university-rankings/paris-sciences-et-lettres-psl-research-university-paris",
-    "country_code": "FR",
     "national_rank": null,
     "logo_url": null,
     "reason": "unmatched or ambiguous"
@@ -3932,18 +3860,6 @@
     "url": "https://www.shanghairanking.com/institution/paris-saclay-university",
     "country_code": "FR",
     "national_rank": "1",
-    "logo_url": null,
-    "reason": "unmatched or ambiguous"
-  },
-  {
-    "name": "PSL University",
-    "country": "France",
-    "provider": "arwu",
-    "year": 2026,
-    "rank_label": "33",
-    "url": "https://www.shanghairanking.com/institution/psl-university",
-    "country_code": "FR",
-    "national_rank": "2",
     "logo_url": null,
     "reason": "unmatched or ambiguous"
   },

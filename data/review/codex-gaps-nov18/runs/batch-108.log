@@ -1,0 +1,136 @@
+OpenAI Codex v0.169.0
+--------
+workdir: /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+model: gpt-6-luna
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: high
+reasoning summaries: none
+session id: 01a1ee97-750e-76c3-8e9a-9504bf5365a7
+--------
+user
+You are a careful admissions-data researcher. For each university below, find facts for an
+INTERNATIONAL applicant to a FIRST-YEAR BACHELOR'S degree starting in autumn 2027 (or the nearest
+published cycle). Use the live web. Rules:
+
+- Official sources only: the university's own website (its domain or subdomains), the national
+  application service (UCAS, Common App, OUAC, uni-assist, Studyinkorea, etc.) or a government
+  statistics office. Never use rankings sites, forums, agencies, Wikipedia or blogs.
+- Every value needs the exact page URL where you read it (source_url). If you could not verify a
+  value on an official page, leave it out (null or an empty list). Never guess or estimate.
+- english: the lowest overall score accepted for undergraduate entry, per test (IELTS Academic
+  overall, TOEFL iBT total, Duolingo, PTE). If programmes differ, give the general/lowest common
+  university minimum and say so in detail (e.g. "6.5 overall, no band below 6.0; some
+  programmes higher").
+- tuition: the yearly tuition for international (non-EU / overseas) undergraduates in the local
+  currency. If it varies by programme give amount = lowest and amount_max = highest, and the
+  academic_year the fee applies to (e.g. "2026/27"). If tuition is free, amount = 0.
+- application_fee: for international first-year applicants, local currency.
+- deadlines: the main 2027-entry first-year deadlines (ISO date YYYY-MM-DD) with the route
+  (e.g. "Common App, Regular Decision", "UCAS", "university portal"). Only dates actually
+  published; if only the 2026-entry date is published, include it and put "2026 entry" in title.
+- sat: policy for international applicants; p25/p75 total SAT only if the university publishes
+  them (Common Data Set or admissions profile).
+- acceptance_rate: only if officially published (CDS, admissions statistics page).
+- notes: one short line on anything important (e.g. "Foundation year required for 11-year
+  school certificates"), else "".
+
+Spend effort on the facts students need most: English minimum, tuition, deadlines. Keep each
+detail under 160 characters. Return only the JSON that matches the schema; use each
+university's id exactly as given.
+
+Universities:
+- id: 1b1eb340-cc2a-5088-a2dd-a74fdeec85a0 | Jordan University of Science and Technology | Irbid, JO | http://www.just.edu.jo/
+- id: 2816fd44-0c83-51d8-bd8b-f4ef1620c529 | Pusan National University | Busan, KR | http://www.pusan.ac.kr/
+- id: 5834c87a-d39d-5e32-bba0-a256d21ad0c9 | Kazan Federal University | Kazan’, RU | https://kpfu.ru
+- id: 350e7c7b-3acc-5ddb-90cc-f0309feb3dce | Universidade Estadual Paulista (Unesp) | São Paulo, BR | https://www2.unesp.br
+codex
+I’ll check the available memory guidance, then verify each university’s admissions facts on official pages and return only the requested JSON.
+exec
+/bin/zsh -lc 'cat /Users/likeanew/.agents/skills/lemma/SKILL.md' in /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+ succeeded in 0ms:
+---
+name: lemma
+description: Persistent cross-session memory for AI agents via MCP. BEFORE starting ANY task (coding, debugging, refactoring, research, docs, optimization — any language), FIRST call memory_read to load what you already know so you never re-derive or re-explore known facts. AFTER finishing, call memory_add to persist new findings and session_attempt for dead ends — unsaved knowledge is lost permanently. Distills reusable guides from experience.
+---
+
+<!-- lemma:skill:v=0.21.0 -->
+
+# Lemma — Persistent Memory & Learning
+
+Lemma is a persistent memory server for AI agents over the Model Context Protocol.
+Every session starts blank — knowledge survives ONLY through tool calls. If you
+learn something and don't save it (`memory_add`), it is gone permanently.
+
+## Workflow
+1. **RECALL** — `memory_read` / `semantic_search`: load what's already known for this
+   project/task. Never re-explore code or re-derive facts that are already saved.
+2. **ACT** — do the task.
+3. **PERSIST** — `memory_add` for new insights; `guide_practice` for guides applied;
+   `session_attempt` for abandoned/dead-end approaches (the most valuable records).
+
+## Two knowledge layers
+- **Memory fragments** (`memory_read` / `memory_add`): atomic facts. Types: `fact`,
+  `pattern`, `lesson`, `warning`, `context`. Confidence evolves with use and feedback.
+- **Guides** (`guide_get` / `guide_distill` / `guide_practice`): procedural skills
+  distilled from fragments. Track usage count + success/failure rate.
+Pipeline: `experience -> memory_add -> pattern/lesson -> guide_distill -> guide_practice`.
+
+## Tools at a glance
+- **Recall & search**: `memory_read`, `semantic_search`, `memory_library` (full
+  snapshot + maintenance signals), `memory_stats`, `memory_audit`.
+- **Write & maintain**: `memory_add`, `memory_update`, `memory_forget`,
+  `memory_merge`, `memory_relate` (supports / contradicts / supersedes / related_to),
+  `memory_feedback`.
+- **Guides**: `guide_get`, `guide_create`, `guide_distill`, `guide_practice`,
+  `guide_update`, `guide_forget`, `guide_merge`.
+- **Sessions & reasoning**: `session_start`, `session_end`, `session_attempt`,
+  `session_stats`, `suggestion_respond`.
+- **Background intelligence**: `conflict_scan`, `proactive_analysis`,
+  `project_analytics` (run automatically; act on signals when sensible).
+
+## Writing a fragment
+```
+## [Topic Title]
+### Context
+[1-2 sentences: what and why it matters]
+### [Content Section]
+- [Key fact 1]
+- [Key fact 2]
+### Rules (optional)
+- [Absolute constraint]
+```
+One idea per fragment, 30-2000 chars, structured markdown (not prose). **Store
+fragments in ENGLISH** (required for search/retrieval). Never ask permission to save.
+
+## Background intelligence
+Conflict detection, distill/merge/refine suggestions, and auto-linking run
+automatically. From the CLI, `lemma -lib` prints a full knowledge-base snapshot
+and `lemma -vis` launches a visualizer.
+
+web search: 
+web search: site:just.edu.jo international undergraduate admission English IELTS tuition 2026 2027 Jordan University Science Technology ...
+web search: 
+web search: site:kpfu.ru international undergraduate admission tuition 2026 English language bachelor fee deadline ...
+web search: 
+web search: 
+web search: 
+web search: site:international.pusan.ac.kr/bbs/international/2089 "2027 Spring Semester" Undergraduate Program Admissions Guide IELTS application fee tuition ...
+web search: 
+web search: 
+web search: 
+web search: 
+web search: 
+web search: 
+web search: 
+web search: 'Application fee'
+web search: 
+web search: 
+web search: 
+web search: site:just.edu.jo/Admission "Application Fee for non-Jordanian" ...
+codex
+{"universities":[{"id":"1b1eb340-cc2a-5088-a2dd-a74fdeec85a0","english":[],"tuition":null,"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"International applications use the unified portal; published dates for the 2027-entry cycle were not found."},{"id":"2816fd44-0c83-51d8-bd8b-f4ef1620c529","english":[{"test":"IELTS","minimum":5.5,"detail":"5.5 overall for International Studies; most other majors require Korean proficiency.","source_url":"https://international.pusan.ac.kr/bbs/international/2089/1533745/download.do"},{"test":"TOEFL iBT","minimum":80,"detail":"80 (or 4 on the new scale) for International Studies; most other majors require Korean proficiency.","source_url":"https://international.pusan.ac.kr/bbs/international/2089/1533745/download.do"}],"tuition":{"amount":4138000,"amount_max":6394000,"currency":"KRW","period":"year","academic_year":"2027","detail":"Annualized from 2027 per-semester undergraduate rates of KRW 2,069,000–3,197,000.","source_url":"https://international.pusan.ac.kr/bbs/international/2089/1533745/download.do"},"application_fee":{"amount":144000,"currency":"KRW","source_url":"https://international.pusan.ac.kr/bbs/international/2089/1533745/download.do"},"deadlines":[{"title":"2027 Spring entry application","due_at":"2026-10-23","route":"JINHAK online application","source_url":"https://international.pusan.ac.kr/bbs/international/2089/1533745/download.do"}],"sat":null,"acceptance_rate":null,"notes":"Most courses are taught in Korean; International Studies is taught in English."},{"id":"5834c87a-d39d-5e32-bba0-a256d21ad0c9","english":[],"tuition":{"amount":245688,"amount_max":420720,"currency":"RUB","period":"year","academic_year":"2026/27","detail":"Published first-year full-time bachelor's prices vary by programme; rates shown are for visa-country international students.","source_url":"https://eng.kpfu.ru/wp-content/uploads/2026/05/dalnee-zarubezhe-2-1.pdf"},"application_fee":null,"deadlines":[{"title":"2026 entry","due_at":"2026-08-20","route":"KFU applicant portal, contract study","source_url":"https://eng.kpfu.ru/bachelor-specialist/programs-and-tuition-fees/"}],"sat":null,"acceptance_rate":null,"notes":""},{"id":"350e7c7b-3acc-5ddb-90cc-f0309feb3dce","english":[],"tuition":{"amount":0,"amount_max":0,"currency":"BRL","period":"year","academic_year":"2027","detail":"Unesp describes the university as public and free; no undergraduate tuition is charged.","source_url":"https://vestibular.unesp.br/pagina/0p4f71/vestibular-unesp"},"application_fee":{"amount":225,"currency":"BRL","source_url":"https://vestibular.unesp.br/sharer.php?post=253"},"deadlines":[{"title":"Vestibular 2027 application deadline","due_at":"2026-10-20","route":"Vestibular Unesp via Vunesp","source_url":"https://vestibular.unesp.br/sharer.php?post=253"}],"sat":null,"acceptance_rate":null,"notes":""}] }
+tokens used
+78,723
+{"universities":[{"id":"1b1eb340-cc2a-5088-a2dd-a74fdeec85a0","english":[],"tuition":null,"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"International applications use the unified portal; published dates for the 2027-entry cycle were not found."},{"id":"2816fd44-0c83-51d8-bd8b-f4ef1620c529","english":[{"test":"IELTS","minimum":5.5,"detail":"5.5 overall for International Studies; most other majors require Korean proficiency.","source_url":"https://international.pusan.ac.kr/bbs/international/2089/1533745/download.do"},{"test":"TOEFL iBT","minimum":80,"detail":"80 (or 4 on the new scale) for International Studies; most other majors require Korean proficiency.","source_url":"https://international.pusan.ac.kr/bbs/international/2089/1533745/download.do"}],"tuition":{"amount":4138000,"amount_max":6394000,"currency":"KRW","period":"year","academic_year":"2027","detail":"Annualized from 2027 per-semester undergraduate rates of KRW 2,069,000–3,197,000.","source_url":"https://international.pusan.ac.kr/bbs/international/2089/1533745/download.do"},"application_fee":{"amount":144000,"currency":"KRW","source_url":"https://international.pusan.ac.kr/bbs/international/2089/1533745/download.do"},"deadlines":[{"title":"2027 Spring entry application","due_at":"2026-10-23","route":"JINHAK online application","source_url":"https://international.pusan.ac.kr/bbs/international/2089/1533745/download.do"}],"sat":null,"acceptance_rate":null,"notes":"Most courses are taught in Korean; International Studies is taught in English."},{"id":"5834c87a-d39d-5e32-bba0-a256d21ad0c9","english":[],"tuition":{"amount":245688,"amount_max":420720,"currency":"RUB","period":"year","academic_year":"2026/27","detail":"Published first-year full-time bachelor's prices vary by programme; rates shown are for visa-country international students.","source_url":"https://eng.kpfu.ru/wp-content/uploads/2026/05/dalnee-zarubezhe-2-1.pdf"},"application_fee":null,"deadlines":[{"title":"2026 entry","due_at":"2026-08-20","route":"KFU applicant portal, contract study","source_url":"https://eng.kpfu.ru/bachelor-specialist/programs-and-tuition-fees/"}],"sat":null,"acceptance_rate":null,"notes":""},{"id":"350e7c7b-3acc-5ddb-90cc-f0309feb3dce","english":[],"tuition":{"amount":0,"amount_max":0,"currency":"BRL","period":"year","academic_year":"2027","detail":"Unesp describes the university as public and free; no undergraduate tuition is charged.","source_url":"https://vestibular.unesp.br/pagina/0p4f71/vestibular-unesp"},"application_fee":{"amount":225,"currency":"BRL","source_url":"https://vestibular.unesp.br/sharer.php?post=253"},"deadlines":[{"title":"Vestibular 2027 application deadline","due_at":"2026-10-20","route":"Vestibular Unesp via Vunesp","source_url":"https://vestibular.unesp.br/sharer.php?post=253"}],"sat":null,"acceptance_rate":null,"notes":""}] }

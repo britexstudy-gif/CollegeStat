@@ -1,0 +1,2525 @@
+[
+  {
+    "university_id": "74effccc-395b-52fb-8f50-2523f7897428",
+    "name": "University of Alberta",
+    "country": "Canada",
+    "english": {
+      "value": {
+        "IELTS Academic": "6.5 overall reported for English Language Proficiency; band floor not extracted from official undergraduate table",
+        "TOEFL iBT": null,
+        "Duolingo": null,
+        "waivers": "Yes; alternative accepted English-language study/courses and recognized exemptions; conditions apply"
+      },
+      "source_url": "https://www.ualberta.ca/en/admissions/how-to-apply/admission-requirements/language-requirements/index.html",
+      "checked_at": "2026-11-14"
+    },
+    "application_route_and_fee": {
+      "value": "Direct through UAlberta Launchpad; CAD 150 for new applicants.",
+      "source_url": "https://www.ualberta.ca/en/admissions/how-to-apply/international-admission-requirements/index.html",
+      "checked_at": "2026-11-14"
+    },
+    "deadlines": {
+      "value": null,
+      "source_url": "https://www.ualberta.ca/en/admissions/how-to-apply/admission-requirements/language-requirements/index.html",
+      "checked_at": "2026-11-14"
+    },
+    "international_tuition_per_year": {
+      "value": null,
+      "source_url": "https://www.ualberta.ca/en/admissions/how-to-apply/dates-deadlines/index.html",
+      "checked_at": "2026-11-14"
+    },
+    "international_aid": {
+      "value": null,
+      "source_url": "https://www.ualberta.ca/en/admissions/tuition-and-scholarships/index.html",
+      "checked_at": "2026-11-14"
+    },
+    "foundation_for_11_year_certificate": {
+      "value": {
+        "available": true,
+        "note": "Year One Foundation Program is offered to international applicants missing requirements such as required courses; intended to lead into degree study in second year."
+      },
+      "source_url": "https://www.ualberta.ca/en/admissions/how-to-apply/admission-requirements/language-requirements/index.html",
+      "checked_at": "2026-11-14"
+    },
+    "sources": [
+      "https://www.ualberta.ca/en/admissions/how-to-apply/admission-requirements/language-requirements/index.html",
+      "https://www.ualberta.ca/en/admissions/how-to-apply/international-admission-requirements/index.html",
+      "https://www.ualberta.ca/en/admissions/how-to-apply/dates-deadlines/index.html",
+      "https://www.ualberta.ca/en/admissions/tuition-and-scholarships/index.html"
+    ],
+    "verification_status": "staged"
+  },
+  {
+    "university_id": "aac099ab-6072-5a41-8179-36214fcf43fa",
+    "name": "McMaster University",
+    "country": "Canada",
+    "english": {
+      "value": {
+        "IELTS Academic": "6.5 overall, minimum 6.0 each component",
+        "TOEFL iBT": "For tests from 2026-01-21: 4.5 overall, reading/writing/speaking 4.0, listening 4.5; earlier tests 86 overall, 20 each",
+        "Duolingo": null,
+        "waivers": "Discretionary exemption may apply after four years full-time non-ESL study at an English-speaking secondary or postsecondary school."
+      },
+      "source_url": "https://future.mcmaster.ca/apply/requirements/english-proficiency/",
+      "checked_at": "2026-11-14"
+    },
+    "application_route_and_fee": {
+      "value": null,
+      "source_url": "https://future.mcmaster.ca/apply/deadlines/",
+      "checked_at": "2026-11-14"
+    },
+    "deadlines": {
+      "value": null,
+      "source_url": "https://future.mcmaster.ca/apply/requirements/english-proficiency/",
+      "checked_at": "2026-11-14"
+    },
+    "international_tuition_per_year": {
+      "value": null,
+      "source_url": "https://future.mcmaster.ca/finances/cost-estimator/",
+      "checked_at": "2026-11-14"
+    },
+    "international_aid": {
+      "value": {
+        "available": true,
+        "note": "MELD / STEP English-bridging pathways described; they address English proficiency rather than an 11-year school credential."
+      },
+      "source_url": "https://future.mcmaster.ca/internationalawards/",
+      "checked_at": "2026-11-14"
+    },
+    "foundation_for_11_year_certificate": {
+      "value": null,
+      "source_url": "https://future.mcmaster.ca/apply/requirements/english-proficiency/",
+      "checked_at": "2026-11-14"
+    },
+    "sources": [
+      "https://future.mcmaster.ca/apply/requirements/english-proficiency/",
+      "https://future.mcmaster.ca/apply/deadlines/",
+      "https://future.mcmaster.ca/finances/cost-estimator/",
+      "https://future.mcmaster.ca/internationalawards/"
+    ],
+    "verification_status": "staged"
+  },
+  {
+    "university_id": "950f15f4-f20d-5931-8a5c-025e070ede38",
+    "name": "University of Ottawa",
+    "country": "Canada",
+    "english": {
+      "value": null,
+      "source_url": "https://www.uottawa.ca/study/undergraduate-studies/application-deadlines",
+      "checked_at": "2026-11-14"
+    },
+    "application_route_and_fee": {
+      "value": "OUAC undergraduate application; CAD 156 (fee effective from Sep 1, 2026).",
+      "source_url": "https://www.uottawa.ca/study/fees-financial-support/university-fees/administrative-fees",
+      "checked_at": "2026-11-14"
+    },
+    "deadlines": {
+      "value": {
+        "cycle": 2027,
+        "fall": "Application opens 2026-09-17; international applicants: most programs close in May 2027; recommended to apply by Jan 15, 2027 and submit outstanding documents by Feb 15 or within 30 days of applying. Program-specific dates vary."
+      },
+      "source_url": "https://www.uottawa.ca/study/undergraduate-studies/application-deadlines",
+      "checked_at": "2026-11-14"
+    },
+    "international_tuition_per_year": {
+      "value": null,
+      "source_url": "https://www.uottawa.ca/study/undergraduate-studies/tuition-fees",
+      "checked_at": "2026-11-14"
+    },
+    "international_aid": {
+      "value": null,
+      "source_url": "https://www.uottawa.ca/study/undergraduate-studies/tuition-fees",
+      "checked_at": "2026-11-14"
+    },
+    "foundation_for_11_year_certificate": {
+      "value": null,
+      "source_url": "https://www.uottawa.ca/study/undergraduate-studies/application-deadlines",
+      "checked_at": "2026-11-14"
+    },
+    "sources": [
+      "https://www.uottawa.ca/study/undergraduate-studies/application-deadlines",
+      "https://www.uottawa.ca/study/fees-financial-support/university-fees/administrative-fees",
+      "https://www.uottawa.ca/study/undergraduate-studies/tuition-fees"
+    ],
+    "verification_status": "staged"
+  },
+  {
+    "university_id": "03761e91-07fb-5f9e-85dc-9aff4d5239a2",
+    "name": "York University",
+    "country": "Canada",
+    "english": {
+      "value": null,
+      "source_url": "https://futurestudents.yorku.ca/requirements/deadlines",
+      "checked_at": "2026-11-14"
+    },
+    "application_route_and_fee": {
+      "value": {
+        "routes": [
+          "OUAC: CAD 156 for up to three Ontario program choices",
+          "York direct application: CAD 140 for up to two York program choices"
+        ]
+      },
+      "source_url": "https://futurestudents.yorku.ca/financing-your-degree/international-scholarships",
+      "checked_at": "2026-11-14"
+    },
+    "deadlines": {
+      "value": {
+        "cycle": 2027,
+        "winter": "2026-11-18",
+        "summer": "2027-04-01",
+        "fall": "2027-03-24 (guaranteed consideration, international applicants)"
+      },
+      "source_url": "https://futurestudents.yorku.ca/requirements/deadlines",
+      "checked_at": "2026-11-14"
+    },
+    "international_tuition_per_year": {
+      "value": null,
+      "source_url": "https://www.futurestudents.yorku.ca/sites/futurestudents/files/viewbooks/YorkU-2027-28-INTL-handbook.pdf",
+      "checked_at": "2026-11-14"
+    },
+    "international_aid": {
+      "value": {
+        "available": true,
+        "note": "Automatic international entrance scholarships for Fall 2027/Winter 2028, CAD 2,500–37,500 based on final admission average; competitive application awards also available."
+      },
+      "source_url": "https://www.futurestudents.yorku.ca/sites/futurestudents/files/viewbooks/YorkU-2027-28-INTL-handbook.pdf",
+      "checked_at": "2026-11-14"
+    },
+    "foundation_for_11_year_certificate": {
+      "value": null,
+      "source_url": "https://futurestudents.yorku.ca/requirements/deadlines",
+      "checked_at": "2026-11-14"
+    },
+    "sources": [
+      "https://futurestudents.yorku.ca/requirements/deadlines",
+      "https://futurestudents.yorku.ca/financing-your-degree/international-scholarships",
+      "https://www.futurestudents.yorku.ca/sites/futurestudents/files/viewbooks/YorkU-2027-28-INTL-handbook.pdf"
+    ],
+    "verification_status": "staged"
+  },
+  {
+    "university_id": "7d9b3d9d-5db9-5d70-a8b5-bc37f5bbf9a4",
+    "name": "Carleton University",
+    "country": "Canada",
+    "english": {
+      "value": null,
+      "source_url": "https://admissions.carleton.ca/apply-now-international-students/",
+      "checked_at": "2026-11-14"
+    },
+    "application_route_and_fee": {
+      "value": {
+        "routes": [
+          "Direct via Carleton 360, CAD 100",
+          "OUAC, CAD 166 for up to three Ontario choices"
+        ]
+      },
+      "source_url": "https://admissions.carleton.ca/information-for-international-guidance-counsellors/",
+      "checked_at": "2026-11-14"
+    },
+    "deadlines": {
+      "value": {
+        "cycle": 2027,
+        "fall": "Most international applicants with transcripts outside Canada/US: 2027-04-01; some programs have earlier deadlines."
+      },
+      "source_url": "https://admissions.carleton.ca/apply-now-international-students/",
+      "checked_at": "2026-11-14"
+    },
+    "international_tuition_per_year": {
+      "value": {
+        "amount": "CAD 39,000–55,000",
+        "academic_years": "2027–28 and 2028–29; Carleton states Fall 2026 international tuition rates are locked for these years."
+      },
+      "source_url": "https://admissions.carleton.ca/scholarships/usa-and-international-costs/",
+      "checked_at": "2026-11-14"
+    },
+    "international_aid": {
+      "value": {
+        "available": true,
+        "note": "Automatic entrance scholarships and President’s Welcome Award for Sep 2027 entrants (CAD 2,000–5,000); Prestige scholarships require application."
+      },
+      "source_url": "https://admissions.carleton.ca/scholarships/usa-and-international-costs/",
+      "checked_at": "2026-11-14"
+    },
+    "foundation_for_11_year_certificate": {
+      "value": null,
+      "source_url": "https://admissions.carleton.ca/apply-now-international-students/",
+      "checked_at": "2026-11-14"
+    },
+    "sources": [
+      "https://admissions.carleton.ca/apply-now-international-students/",
+      "https://admissions.carleton.ca/information-for-international-guidance-counsellors/",
+      "https://admissions.carleton.ca/scholarships/usa-and-international-costs/"
+    ],
+    "verification_status": "staged"
+  },
+  {
+    "university_id": "27a82309-f5a0-55c2-ad79-a6428b30e2ee",
+    "name": "Ontario Tech University",
+    "country": "Canada",
+    "english": {
+      "value": {
+        "IELTS Academic": "6.5 overall, no subscore below 6.0 (Education and Nursing require 7.0 overall)",
+        "TOEFL iBT": "83 total; minimum Listening 20, Reading 20, Speaking 19, Writing 20 (Education and Nursing require 87 total)",
+        "Duolingo": "120 (Education and Nursing require 130)",
+        "waivers": null
+      },
+      "source_url": "https://admissions.ontariotechu.ca/applicant-information/international-applicants.php",
+      "checked_at": "2026-11-14"
+    },
+    "application_route_and_fee": {
+      "value": {
+        "routes": [
+          "OUAC",
+          "Ontario Tech direct international application, CAD 100 for up to three programs"
+        ]
+      },
+      "source_url": "https://registrar.ontariotechu.ca/fees-and-payment/international-student-tuition/undergraduate-international-tuition-2026-2027.php",
+      "checked_at": "2026-11-14"
+    },
+    "deadlines": {
+      "value": null,
+      "source_url": "https://admissions.ontariotechu.ca/applicant-information/international-applicants.php",
+      "checked_at": "2026-11-14"
+    },
+    "international_tuition_per_year": {
+      "value": {
+        "academic_year": "2026–27",
+        "currency": "CAD",
+        "tuition_by_program_per_year": {
+          "BA/BASc/BA/BEd/BHSc/BSc/BSc & Management": "34,148.27",
+          "Computer Science": "37,831.43",
+          "Nursing/Health Administration": "34,821.14",
+          "BCom": "37,877.47",
+          "Information Technology": "42,143.13",
+          "Engineering/Technology": "46,561.31"
+        }
+      },
+      "source_url": "https://ontariotechu.ca/digital-viewbook/admissions.php",
+      "checked_at": "2026-11-14"
+    },
+    "international_aid": {
+      "value": null,
+      "source_url": "https://ontariotechu.ca/digital-viewbook/admissions.php",
+      "checked_at": "2026-11-14"
+    },
+    "foundation_for_11_year_certificate": {
+      "value": null,
+      "source_url": "https://admissions.ontariotechu.ca/applicant-information/international-applicants.php",
+      "checked_at": "2026-11-14"
+    },
+    "sources": [
+      "https://admissions.ontariotechu.ca/applicant-information/international-applicants.php",
+      "https://registrar.ontariotechu.ca/fees-and-payment/international-student-tuition/undergraduate-international-tuition-2026-2027.php",
+      "https://ontariotechu.ca/digital-viewbook/admissions.php"
+    ],
+    "verification_status": "staged"
+  },
+  {
+    "university_id": "709e7cf7-4306-55a5-8868-e7ae0f7852b2",
+    "name": "University of Northern British Columbia",
+    "country": "Canada",
+    "english": {
+      "value": null,
+      "source_url": "https://www.unbc.ca/programs-and-admissions/undergraduate/undergraduate-application-deadlines",
+      "checked_at": "2026-11-14"
+    },
+    "application_route_and_fee": {
+      "value": "EducationPlannerBC application route; application fee not confirmed on pages fetched.",
+      "source_url": "https://www.unbc.ca/calendar/undergraduate/international-admissions",
+      "checked_at": "2026-11-14"
+    },
+    "deadlines": {
+      "value": {
+        "cycle": 2027,
+        "fall": "General-entry international: July 11, 2027; Engineering: March 1, 2027; Health Sciences: May 15, 2027; several other competitive programs have earlier dates."
+      },
+      "source_url": "https://www.unbc.ca/programs-and-admissions/undergraduate/undergraduate-application-deadlines",
+      "checked_at": "2026-11-14"
+    },
+    "international_tuition_per_year": {
+      "value": null,
+      "source_url": "https://www.unbc.ca/finance/accounts-receivable/tuition-and-fees",
+      "checked_at": "2026-11-14"
+    },
+    "international_aid": {
+      "value": null,
+      "source_url": "https://www.unbc.ca/finance/accounts-receivable/tuition-and-fees",
+      "checked_at": "2026-11-14"
+    },
+    "foundation_for_11_year_certificate": {
+      "value": null,
+      "source_url": "https://www.unbc.ca/programs-and-admissions/undergraduate/undergraduate-application-deadlines",
+      "checked_at": "2026-11-14"
+    },
+    "sources": [
+      "https://www.unbc.ca/programs-and-admissions/undergraduate/undergraduate-application-deadlines",
+      "https://www.unbc.ca/calendar/undergraduate/international-admissions",
+      "https://www.unbc.ca/finance/accounts-receivable/tuition-and-fees"
+    ],
+    "verification_status": "staged"
+  },
+  {
+    "university_id": "39a0a410-8dec-5d39-bba7-99eb9fd534c4",
+    "name": "Lomonosov Moscow State University",
+    "country": "Russia",
+    "english": {
+      "value": null,
+      "source_url": "https://www.openday.msu.ru/en/admissions",
+      "checked_at": "2026-11-14"
+    },
+    "application_route_and_fee": {
+      "value": "MSU online platform / webanketa; application fee not specified on page",
+      "source_url": "https://www.openday.msu.ru/en/admissions",
+      "checked_at": "2026-11-14"
+    },
+    "deadlines": {
+      "value": {
+        "cycle": 2026,
+        "first_year_foreign_applicants": "documents accepted from 2026-06-20 to 2026-07-15; exact dates vary by program"
+      },
+      "source_url": "https://www.openday.msu.ru/en/admissions",
+      "checked_at": "2026-11-14"
+    },
+    "international_tuition_per_year": {
+      "value": {
+        "amount": 586130,
+        "currency": "RUB",
+        "year": "2026–27",
+        "note": "Faculty of Global Studies cited; fees differ by faculty"
+      },
+      "source_url": "https://www.openday.msu.ru/en/admissions",
+      "checked_at": "2026-11-14"
+    },
+    "international_aid": {
+      "value": null,
+      "source_url": "https://fgp.msu.ru/admission/eng",
+      "checked_at": "2026-11-14"
+    },
+    "foundation_for_11_year_certificate": {
+      "value": null,
+      "source_url": "https://fgp.msu.ru/admission/eng",
+      "checked_at": "2026-11-14"
+    },
+    "sources": [
+      "https://www.openday.msu.ru/en/admissions",
+      "https://fgp.msu.ru/admission/eng"
+    ],
+    "verification_status": "staged"
+  },
+  {
+    "university_id": "0991bacc-e0e4-576f-b984-074ecc122260",
+    "name": "Bauman Moscow State Technical University",
+    "country": "Russia",
+    "english": {
+      "value": null,
+      "source_url": "https://eng.mf.bmstu.ru/fcec/",
+      "checked_at": "2026-11-14"
+    },
+    "application_route_and_fee": {
+      "value": "The fetched page describes admission assistance through BMSTU’s Mytishchi Branch international cooperation department only; this route should not be generalized to the Moscow main campus. Application fee for the main campus is unknown.",
+      "source_url": "https://eng.mf.bmstu.ru/fcec/",
+      "checked_at": "2026-11-14"
+    },
+    "deadlines": {
+      "value": null,
+      "source_url": "https://eng.mf.bmstu.ru/fcec/docs/information-for-international-applicants.pdf",
+      "checked_at": "2026-11-14"
+    },
+    "international_tuition_per_year": {
+      "value": null,
+      "source_url": "https://eng.mf.bmstu.ru/fcec/",
+      "checked_at": "2026-11-14"
+    },
+    "international_aid": {
+      "value": null,
+      "source_url": "https://eng.mf.bmstu.ru/fcec/docs/information-for-international-applicants.pdf",
+      "checked_at": "2026-11-14"
+    },
+    "foundation_for_11_year_certificate": {
+      "value": {
+        "available": true,
+        "note": "Mytishchi Branch offers Russian-language and subject preparatory courses for foreign applicants; a main-campus foundation year for 11-year certificates was not verified."
+      },
+      "source_url": "https://eng.mf.bmstu.ru/fcec/",
+      "checked_at": "2026-11-14"
+    },
+    "sources": [
+      "https://eng.mf.bmstu.ru/fcec/",
+      "https://eng.mf.bmstu.ru/fcec/docs/information-for-international-applicants.pdf"
+    ],
+    "verification_status": "staged"
+  },
+  {
+    "university_id": "2b0bdfdf-5884-5b91-a635-14a8d0ab2169",
+    "name": "Moscow Institute of Physics and Technology",
+    "country": "Russia",
+    "english": {
+      "value": null,
+      "source_url": "https://eng.mipt.ru/faq/",
+      "checked_at": "2026-11-14"
+    },
+    "application_route_and_fee": {
+      "value": null,
+      "source_url": "https://eng.mipt.ru/faq/",
+      "checked_at": "2026-11-14"
+    },
+    "deadlines": {
+      "value": null,
+      "source_url": "https://eng.mipt.ru/faq/",
+      "checked_at": "2026-11-14"
+    },
+    "international_tuition_per_year": {
+      "value": {
+        "amounts": {
+          "Russian-taught": "250000 RUB/year",
+          "English-taught": "400000 RUB/year"
+        },
+        "academic_year": null,
+        "note": "Official international FAQ gives annual rates but no applicable academic year on the fetched page."
+      },
+      "source_url": "https://eng.mipt.ru/faq/",
+      "checked_at": "2026-11-14"
+    },
+    "international_aid": {
+      "value": null,
+      "source_url": "https://eng.mipt.ru/faq/",
+      "checked_at": "2026-11-14"
+    },
+    "foundation_for_11_year_certificate": {
+      "value": null,
+      "source_url": "https://eng.mipt.ru/faq/",
+      "checked_at": "2026-11-14"
+    },
+    "sources": [
+      "https://eng.mipt.ru/faq/"
+    ],
+    "verification_status": "staged"
+  },
+  {
+    "university_id": "1e616477-ca14-53f6-a70a-fedd8bc44e59",
+    "name": "Peoples' Friendship University of Russia",
+    "country": "Russia",
+    "english": {
+      "value": null,
+      "source_url": "https://international.rudn.ru/",
+      "checked_at": "2026-11-14"
+    },
+    "application_route_and_fee": {
+      "value": "For fee-paying applicants, contact intstudent@rudn.ru or use RUDN personal account for international applicants; fee not specified.",
+      "source_url": "https://international.rudn.ru/",
+      "checked_at": "2026-11-14"
+    },
+    "deadlines": {
+      "value": null,
+      "source_url": "https://international.rudn.ru/",
+      "checked_at": "2026-11-14"
+    },
+    "international_tuition_per_year": {
+      "value": null,
+      "source_url": "https://international.rudn.ru/",
+      "checked_at": "2026-11-14"
+    },
+    "international_aid": {
+      "value": null,
+      "source_url": "https://international.rudn.ru/undergraduate/classical/",
+      "checked_at": "2026-11-14"
+    },
+    "foundation_for_11_year_certificate": {
+      "value": {
+        "available": true,
+        "note": "Classical Preparatory Faculty offers 2-semester (opens Sep 1, 2026) and 3-semester (opens Dec 1, 2026) programmes. For CIS citizens, preparatory tuition equals the chosen subsequent degree programme."
+      },
+      "source_url": "https://international.rudn.ru/undergraduate/classical/",
+      "checked_at": "2026-11-14"
+    },
+    "sources": [
+      "https://international.rudn.ru/",
+      "https://international.rudn.ru/undergraduate/classical/"
+    ],
+    "verification_status": "staged"
+  },
+  {
+    "university_id": "d827b4d9-5b8a-506f-abac-df3437f6347a",
+    "name": "St. Petersburg State University",
+    "country": "Russia",
+    "english": {
+      "value": {
+        "IELTS Academic": null,
+        "TOEFL iBT": null,
+        "Duolingo": null,
+        "waivers": "For most programmes in the 2026 foreign-applicant route, Russian-language proficiency at TRKI-I (B1) is specified; no English-test score is listed in the checked official undergraduate foreign-applicant page."
+      },
+      "source_url": "https://phys.spbu.ru/bac_inostr",
+      "checked_at": "2026-11-14"
+    },
+    "application_route_and_fee": {
+      "value": "Foreign applicants apply through the SPbU applicant personal account; participation in the foreign-student olympiad route is free. Application fee for contract admission not found.",
+      "source_url": "https://phys.spbu.ru/bac_inostr",
+      "checked_at": "2026-11-14"
+    },
+    "deadlines": {
+      "value": {
+        "cycle": 2026,
+        "budget_route": "Foreign student olympiad registration/portfolio 2025-11-02 to 2026-02-06; page does not establish dates for contract applicants."
+      },
+      "source_url": "https://phys.spbu.ru/bac_inostr",
+      "checked_at": "2026-11-14"
+    },
+    "international_tuition_per_year": {
+      "value": null,
+      "source_url": "https://english.spbu.ru/",
+      "checked_at": "2026-11-14"
+    },
+    "international_aid": {
+      "value": {
+        "available": true,
+        "note": "Official 2026 information describes budget places for international applicants via the Open International Olympiad; government quota route also applies. No first-year need-based or merit scholarship terms confirmed."
+      },
+      "source_url": "https://phys.spbu.ru/bac_inostr",
+      "checked_at": "2026-11-14"
+    },
+    "foundation_for_11_year_certificate": {
+      "value": null,
+      "source_url": "https://english.spbu.ru/",
+      "checked_at": "2026-11-14"
+    },
+    "sources": [
+      "https://english.spbu.ru/",
+      "https://phys.spbu.ru/bac_inostr",
+      "https://cabinet.spbu.ru/Lists/ForeignersLists/bak/index_comp_groups.html"
+    ],
+    "verification_status": "staged"
+  },
+  {
+    "university_id": "9d5b6d21-7033-5a8b-859c-5f37e71f312d",
+    "name": "Ural Federal University",
+    "country": "Russia",
+    "english": {
+      "value": null,
+      "source_url": "https://urfu.ru/ru/international/int-admission/",
+      "checked_at": "2026-11-14"
+    },
+    "application_route_and_fee": {
+      "value": "Russian-language official admissions notice says foreign applicants submit via ruID mobile app from 2026; fee not found.",
+      "source_url": "https://urfu.ru/ru/international/int-admission/",
+      "checked_at": "2026-11-14"
+    },
+    "deadlines": {
+      "value": null,
+      "source_url": "https://urfu.ru/ru/international/int-admission/",
+      "checked_at": "2026-11-14"
+    },
+    "international_tuition_per_year": {
+      "value": null,
+      "source_url": "https://urfu.ru/ru/international/int-admission/",
+      "checked_at": "2026-11-14"
+    },
+    "international_aid": {
+      "value": null,
+      "source_url": "https://priem.urfu.ru/",
+      "checked_at": "2026-11-14"
+    },
+    "foundation_for_11_year_certificate": {
+      "value": null,
+      "source_url": "https://priem.urfu.ru/",
+      "checked_at": "2026-11-14"
+    },
+    "sources": [
+      "https://urfu.ru/ru/international/int-admission/",
+      "https://priem.urfu.ru/"
+    ],
+    "verification_status": "staged"
+  },
+  {
+    "university_id": "6e6859a3-38b6-5b10-965b-3f24ad7f40a1",
+    "name": "N. I. Lobachevsky State University of Nizhny Novgorod",
+    "country": "Russia",
+    "english": {
+      "value": null,
+      "source_url": "https://eng.unn.ru/academic-programmes/degree-programmes-in-english-2",
+      "checked_at": "2026-11-14"
+    },
+    "application_route_and_fee": {
+      "value": null,
+      "source_url": "https://eng.unn.ru/academic-programmes/degree-programmes-in-english-2",
+      "checked_at": "2026-11-14"
+    },
+    "deadlines": {
+      "value": null,
+      "source_url": "https://eng.unn.ru/academic-programmes/degree-programmes-in-english-2",
+      "checked_at": "2026-11-14"
+    },
+    "international_tuition_per_year": {
+      "value": {
+        "academic_year": "2026–27",
+        "currency": "RUB/year",
+        "program_amounts": {
+          "Fundamental Computer Science & IT": "280000",
+          "Economics – International Economics": "300000",
+          "International Relations": "310000"
+        },
+        "note": "English-taught bachelor options; programme-dependent."
+      },
+      "source_url": "https://eng.unn.ru/academic-programmes/degree-programmes-in-english-2",
+      "checked_at": "2026-11-14"
+    },
+    "international_aid": {
+      "value": {
+        "available": true,
+        "note": "University reports state scholarships and tuition-fee discounts for outstanding international students; Open Doors Olympiad route also offers tuition-free study."
+      },
+      "source_url": "https://eng.unn.ru/admissions/faq",
+      "checked_at": "2026-11-14"
+    },
+    "foundation_for_11_year_certificate": {
+      "value": {
+        "available": true,
+        "note": "Pre-university Russian language training/foundation course available; page describes preparatory language and subject study."
+      },
+      "source_url": "https://eng.unn.ru/admissions/faq",
+      "checked_at": "2026-11-14"
+    },
+    "sources": [
+      "https://eng.unn.ru/academic-programmes/degree-programmes-in-english-2",
+      "https://eng.unn.ru/admissions/costs-and-scholarships/bachelor-s-track",
+      "https://eng.unn.ru/admissions/faq"
+    ],
+    "verification_status": "staged"
+  },
+  {
+    "university_id": "87920010-d9b3-5a17-a6a3-91ec2e4736f9",
+    "name": "MIREA - Russian Technological University",
+    "country": "Russia",
+    "english": {
+      "value": null,
+      "source_url": "https://english.mirea.ru/",
+      "checked_at": "2026-11-14"
+    },
+    "application_route_and_fee": {
+      "value": null,
+      "source_url": "https://english.mirea.ru/",
+      "checked_at": "2026-11-14"
+    },
+    "deadlines": {
+      "value": null,
+      "source_url": "https://english.mirea.ru/",
+      "checked_at": "2026-11-14"
+    },
+    "international_tuition_per_year": {
+      "value": null,
+      "source_url": "https://english.mirea.ru/",
+      "checked_at": "2026-11-14"
+    },
+    "international_aid": {
+      "value": null,
+      "source_url": "https://english.mirea.ru/",
+      "checked_at": "2026-11-14"
+    },
+    "foundation_for_11_year_certificate": {
+      "value": null,
+      "source_url": "https://english.mirea.ru/",
+      "checked_at": "2026-11-14"
+    },
+    "sources": [
+      "https://english.mirea.ru/"
+    ],
+    "verification_status": "staged"
+  },
+  {
+    "university_id": "99bb5a9f-16ee-5a11-9d09-107f319ddf43",
+    "name": "Omsk State Technical University",
+    "country": "Russia",
+    "english": {
+      "value": null,
+      "source_url": "https://www.omgtu.ru/",
+      "checked_at": "2026-11-14"
+    },
+    "application_route_and_fee": {
+      "value": {
+        "route": "Apply online through the Russian “Postupление в вуз онлайн” portal or through an authorized representative; application fee not stated.",
+        "international_application": "Foreign applicants submit translated school certificate and passport documents, pass entrance exams if required, then sign a tuition contract.",
+        "fee": null
+      },
+      "source_url": "https://omgtu.ru/entrant/inostrannomu-abiturientu/",
+      "checked_at": "2026-11-14"
+    },
+    "deadlines": {
+      "value": null,
+      "source_url": "https://www.omgtu.ru/",
+      "checked_at": "2026-11-14"
+    },
+    "international_tuition_per_year": {
+      "value": null,
+      "source_url": "https://www.omgtu.ru/",
+      "checked_at": "2026-11-14"
+    },
+    "international_aid": {
+      "value": {
+        "available": true,
+        "note": "Foreign citizens may apply for state-funded places under applicable agreements; the page names Belarus, Kazakhstan, Kyrgyzstan and Tajikistan. Uzbekistan applicants may apply for paid study, or as eligible compatriots under Russian law. No separate university merit/need award was verified."
+      },
+      "source_url": "https://omgtu.ru/entrant/inostrannomu-abiturientu/",
+      "checked_at": "2026-11-14"
+    },
+    "foundation_for_11_year_certificate": {
+      "value": null,
+      "source_url": "https://www.omgtu.ru/",
+      "checked_at": "2026-11-14"
+    },
+    "sources": [
+      "https://www.omgtu.ru/",
+      "https://omgtu.ru/entrant/inostrannomu-abiturientu/"
+    ],
+    "verification_status": "staged"
+  },
+  {
+    "university_id": "9eafdb74-529f-5b4a-b092-09a6594d14b2",
+    "name": "Tula State University",
+    "country": "Russia",
+    "english": {
+      "value": {
+        "IELTS Academic": null,
+        "TOEFL iBT": null,
+        "Duolingo": null,
+        "waivers": "For Russian-taught programmes the official page states Russian B1; no English test requirement is stated. An English-medium medicine specialist programme is listed elsewhere, but not an undergraduate bachelor programme."
+      },
+      "source_url": "https://tulsu.ru/en/international-candidates",
+      "checked_at": "2026-11-14"
+    },
+    "application_route_and_fee": {
+      "value": {
+        "route": "International applicants apply via the university admissions portal abitur71.tsu.tula.ru/international-applicants or contact the Institute of International Education.",
+        "application_fee": null
+      },
+      "source_url": "https://tulsu.ru/en/international-candidates",
+      "checked_at": "2026-11-14"
+    },
+    "deadlines": {
+      "value": null,
+      "source_url": "https://tulsu.ru/en/international-candidates",
+      "checked_at": "2026-11-14"
+    },
+    "international_tuition_per_year": {
+      "value": null,
+      "source_url": "https://tulsu.ru/scholarship",
+      "checked_at": "2026-11-14"
+    },
+    "international_aid": {
+      "value": {
+        "available": true,
+        "note": "Official scholarship page is available, but the fetched English/root-linked page did not establish eligibility for international first-year applicants."
+      },
+      "source_url": "https://tulsu.ru/scholarship",
+      "checked_at": "2026-11-14"
+    },
+    "foundation_for_11_year_certificate": {
+      "value": {
+        "available": true,
+        "note": "Pre-university Russian course offered in five subject tracks; source does not state it is specifically for 11-year school certificates."
+      },
+      "source_url": "https://tulsu.ru/en/international-candidates",
+      "checked_at": "2026-11-14"
+    },
+    "sources": [
+      "https://tulsu.ru/scholarship",
+      "https://tulsu.ru/en/international-candidates"
+    ],
+    "verification_status": "staged"
+  },
+  {
+    "university_id": "9d02e057-63ee-5ee9-aeef-4aa112d65d2a",
+    "name": "Khalifa University of Science, Technology and Research",
+    "country": "United Arab Emirates",
+    "english": {
+      "value": {
+        "IELTS Academic": "6.0",
+        "TOEFL iBT": "79",
+        "Duolingo": null,
+        "waivers": "No waiver stated; test required for all applicants."
+      },
+      "source_url": "https://www.ku.ac.ae/undergraduate-admissions",
+      "checked_at": "2026-11-14"
+    },
+    "application_route_and_fee": {
+      "value": "Direct online application. International applicants apply via KU online application; fee not found.",
+      "source_url": "https://www.ku.ac.ae/undergraduate-admissions",
+      "checked_at": "2026-11-14"
+    },
+    "deadlines": {
+      "value": {
+        "cycle": 2027,
+        "fall": "Application opens 2026-11-02 and closes 2027-02-01"
+      },
+      "source_url": "https://www.ku.ac.ae/undergraduate-admissions",
+      "checked_at": "2026-11-14"
+    },
+    "international_tuition_per_year": {
+      "value": null,
+      "source_url": "https://ugapply.ku.ac.ae/portal/ug_landing",
+      "checked_at": "2026-11-14"
+    },
+    "international_aid": {
+      "value": {
+        "available": true,
+        "note": "International students evaluated automatically for merit-based scholarship tiers; full/partial tuition coverage may be offered."
+      },
+      "source_url": "https://www.ku.ac.ae/undergraduate-scholarships",
+      "checked_at": "2026-11-14"
+    },
+    "foundation_for_11_year_certificate": {
+      "value": null,
+      "source_url": "https://www.ku.ac.ae/undergraduate-admissions",
+      "checked_at": "2026-11-14"
+    },
+    "sources": [
+      "https://www.ku.ac.ae/undergraduate-admissions",
+      "https://ugapply.ku.ac.ae/portal/ug_landing",
+      "https://www.ku.ac.ae/undergraduate-scholarships"
+    ],
+    "verification_status": "staged"
+  },
+  {
+    "university_id": "0949633f-4123-57e8-8e3d-8b762d4a588d",
+    "name": "Abu Dhabi University",
+    "country": "United Arab Emirates",
+    "english": {
+      "value": null,
+      "source_url": "https://cdn.adu.ac.ae/images-container/docs/default-source/admissions-financials/all-tuition-fees-english.pdf",
+      "checked_at": "2026-11-14"
+    },
+    "application_route_and_fee": {
+      "value": "Direct university application; official 2027–28 schedule lists non-refundable AED 300 application fee.",
+      "source_url": "https://cdn.adu.ac.ae/images-container/docs/default-source/admissions-financials/all-tuition-fees-english.pdf",
+      "checked_at": "2026-11-14"
+    },
+    "deadlines": {
+      "value": null,
+      "source_url": "https://cdn.adu.ac.ae/images-container/docs/default-source/admissions-financials/all-tuition-fees-english.pdf",
+      "checked_at": "2026-11-14"
+    },
+    "international_tuition_per_year": {
+      "value": {
+        "year": "2027–28",
+        "currency": "AED per credit hour",
+        "program_rates": {
+          "BA International Relations": "1715",
+          "BA Psychology": "1715",
+          "BBA": "1800",
+          "Engineering": "2000",
+          "Law": "1620"
+        }
+      },
+      "source_url": "https://cdn.adu.ac.ae/images-container/docs/default-source/admissions-financials/all-tuition-fees-english.pdf",
+      "checked_at": "2026-11-14"
+    },
+    "international_aid": {
+      "value": null,
+      "source_url": "https://cdn.adu.ac.ae/images-container/docs/default-source/admissions-financials/all-tuition-fees-english.pdf",
+      "checked_at": "2026-11-14"
+    },
+    "foundation_for_11_year_certificate": {
+      "value": null,
+      "source_url": "https://cdn.adu.ac.ae/images-container/docs/default-source/admissions-financials/all-tuition-fees-english.pdf",
+      "checked_at": "2026-11-14"
+    },
+    "sources": [
+      "https://cdn.adu.ac.ae/images-container/docs/default-source/admissions-financials/all-tuition-fees-english.pdf"
+    ],
+    "verification_status": "staged"
+  },
+  {
+    "university_id": "b544b3bb-c8b8-54da-9086-18baf5a73672",
+    "name": "United Arab Emirates University",
+    "country": "United Arab Emirates",
+    "english": {
+      "value": {
+        "IELTS Academic": "5.5",
+        "TOEFL iBT": "70",
+        "Duolingo": null,
+        "waivers": "English-medium private-school graduates under specified UAE curricula may be exempt from separate test."
+      },
+      "source_url": "https://www.uaeu.ac.ae/en/admission/international-students-and-children-of-uaeu-employees.shtml",
+      "checked_at": "2026-11-14"
+    },
+    "application_route_and_fee": {
+      "value": "Apply via UAEU official website during announced application periods; fee unknown.",
+      "source_url": "https://www.uaeu.ac.ae/en/admission/international-students-and-children-of-uaeu-employees.shtml",
+      "checked_at": "2026-11-14"
+    },
+    "deadlines": {
+      "value": null,
+      "source_url": "https://www.uaeu.ac.ae/en/admission/international-students-and-children-of-uaeu-employees.shtml",
+      "checked_at": "2026-11-14"
+    },
+    "international_tuition_per_year": {
+      "value": null,
+      "source_url": "https://www.uaeu.ac.ae/en/admission/undergraduate-scholarships.shtml",
+      "checked_at": "2026-11-14"
+    },
+    "international_aid": {
+      "value": {
+        "available": true,
+        "note": "International students eligible for scholarships, including competitive 75%/100% tuition discounts; high school grade and English/test criteria apply."
+      },
+      "source_url": "https://www.uaeu.ac.ae/en/admission/undergraduate-scholarships.shtml",
+      "checked_at": "2026-11-14"
+    },
+    "foundation_for_11_year_certificate": {
+      "value": null,
+      "source_url": "https://www.uaeu.ac.ae/en/admission/international-students-and-children-of-uaeu-employees.shtml",
+      "checked_at": "2026-11-14"
+    },
+    "sources": [
+      "https://www.uaeu.ac.ae/en/admission/international-students-and-children-of-uaeu-employees.shtml",
+      "https://www.uaeu.ac.ae/en/admission/undergraduate-scholarships.shtml"
+    ],
+    "verification_status": "staged"
+  },
+  {
+    "university_id": "9e6e1d4a-e604-5b42-8e72-2f62326988c0",
+    "name": "University of Sharjah",
+    "country": "United Arab Emirates",
+    "english": {
+      "value": {
+        "IELTS Academic": "Program-specific; IELTS 5.5 exempts from remedial English courses (not necessarily minimum for admission)",
+        "TOEFL iBT": null,
+        "Duolingo": null,
+        "waivers": "Program / prior English-medium qualification specifics not verified."
+      },
+      "source_url": "https://www.sharjah.ac.ae/Admissions/Bachelors-Degree",
+      "checked_at": "2026-11-14"
+    },
+    "application_route_and_fee": {
+      "value": null,
+      "source_url": "https://www.sharjah.ac.ae/Admissions/Bachelors-Degree",
+      "checked_at": "2026-11-14"
+    },
+    "deadlines": {
+      "value": null,
+      "source_url": "https://www.sharjah.ac.ae/Admissions/Bachelors-Degree",
+      "checked_at": "2026-11-14"
+    },
+    "international_tuition_per_year": {
+      "value": null,
+      "source_url": "https://www.sharjah.ac.ae/en/Admissions/Undergraduate-Admission-FAQs",
+      "checked_at": "2026-11-14"
+    },
+    "international_aid": {
+      "value": null,
+      "source_url": "https://www.sharjah.ac.ae/en/Admissions/Undergraduate-Admission-FAQs",
+      "checked_at": "2026-11-14"
+    },
+    "foundation_for_11_year_certificate": {
+      "value": {
+        "available": false,
+        "note": "University FAQ states formal 12 years of education are required."
+      },
+      "source_url": "https://www.sharjah.ac.ae/Admissions/Bachelors-Degree",
+      "checked_at": "2026-11-14"
+    },
+    "sources": [
+      "https://www.sharjah.ac.ae/Admissions/Bachelors-Degree",
+      "https://www.sharjah.ac.ae/en/Admissions/Undergraduate-Admission-FAQs"
+    ],
+    "verification_status": "staged"
+  },
+  {
+    "university_id": "75014378-84f4-5d64-a3af-e8508a34a447",
+    "name": "Zayed University",
+    "country": "United Arab Emirates",
+    "english": {
+      "value": {
+        "IELTS Academic": null,
+        "TOEFL iBT": "Program-specific (current admission criteria page lists 72 or 79 for some majors)",
+        "Duolingo": null,
+        "waivers": null
+      },
+      "source_url": "https://www.zu.ac.ae/main/en/undergraduate-programs/admission-criteria",
+      "checked_at": "2026-11-14"
+    },
+    "application_route_and_fee": {
+      "value": "International applicants use Zayed University e-services application; fee not found.",
+      "source_url": "https://www.zu.ac.ae/main/en/undergraduate-programs/admission-criteria",
+      "checked_at": "2026-11-14"
+    },
+    "deadlines": {
+      "value": null,
+      "source_url": "https://www.zu.ac.ae/main/en/undergraduate-programs/admission-criteria",
+      "checked_at": "2026-11-14"
+    },
+    "international_tuition_per_year": {
+      "value": {
+        "amount": 2500,
+        "currency": "AED per credit hour",
+        "approx_annual_AED": 80000,
+        "academic_year": null
+      },
+      "source_url": "https://www.zu.ac.ae/main/en/undergraduate-programs/undergraduate-application",
+      "checked_at": "2026-11-14"
+    },
+    "international_aid": {
+      "value": {
+        "available": true,
+        "note": "Limited merit scholarships for international undergraduates; 50% tuition coverage stated, with other scholarship forms also available."
+      },
+      "source_url": "https://www.zu.ac.ae/main/en/undergraduate-programs/_images/tuition-scholarship",
+      "checked_at": "2026-11-14"
+    },
+    "foundation_for_11_year_certificate": {
+      "value": null,
+      "source_url": "https://www.zu.ac.ae/main/en/undergraduate-programs/admission-criteria",
+      "checked_at": "2026-11-14"
+    },
+    "sources": [
+      "https://www.zu.ac.ae/main/en/undergraduate-programs/admission-criteria",
+      "https://www.zu.ac.ae/main/en/undergraduate-programs/undergraduate-application",
+      "https://www.zu.ac.ae/main/en/undergraduate-programs/_images/tuition-scholarship"
+    ],
+    "verification_status": "staged"
+  },
+  {
+    "university_id": "497e221c-585c-5579-be55-9d69e8db8ffb",
+    "name": "American University in Dubai",
+    "country": "United Arab Emirates",
+    "english": {
+      "value": {
+        "IELTS Academic": "6.5; 6.0 can be accepted with developmental English course",
+        "TOEFL iBT": "79; 68 can be accepted with developmental English",
+        "Duolingo": null,
+        "waivers": "Equivalent transferred credit / advanced high school curricula may exempt testing."
+      },
+      "source_url": "https://www.aud.edu/admissions/undergraduate/",
+      "checked_at": "2026-11-14"
+    },
+    "application_route_and_fee": {
+      "value": "Direct AUD application; AED 420 non-refundable application fee.",
+      "source_url": "https://www.aud.edu/admissions/undergraduate/",
+      "checked_at": "2026-11-14"
+    },
+    "deadlines": {
+      "value": null,
+      "source_url": "https://www.aud.edu/admissions/undergraduate/",
+      "checked_at": "2026-11-14"
+    },
+    "international_tuition_per_year": {
+      "value": null,
+      "source_url": "https://www.aud.edu/university-overview/administrative-offices/office-of-finance/tuition-and-fees/",
+      "checked_at": "2026-11-14"
+    },
+    "international_aid": {
+      "value": {
+        "available": true,
+        "note": "AUD scholarship page describes scholarships; eligibility for international first-year applicants and award details need confirming."
+      },
+      "source_url": "https://www.aud.edu/admissions/scholarships/",
+      "checked_at": "2026-11-14"
+    },
+    "foundation_for_11_year_certificate": {
+      "value": null,
+      "source_url": "https://www.aud.edu/admissions/undergraduate/",
+      "checked_at": "2026-11-14"
+    },
+    "sources": [
+      "https://www.aud.edu/admissions/undergraduate/",
+      "https://www.aud.edu/university-overview/administrative-offices/office-of-finance/tuition-and-fees/",
+      "https://www.aud.edu/admissions/scholarships/"
+    ],
+    "verification_status": "staged"
+  },
+  {
+    "university_id": "c66c3755-66a2-57a0-a80e-da984c310d29",
+    "name": "National University of Singapore",
+    "country": "Singapore",
+    "english": {
+      "value": {
+        "IELTS Academic": "6.5 overall, Reading and Writing components",
+        "TOEFL iBT": "4.5 overall, Reading and Writing components for 2026+ scale; earlier results assessed on prior scale",
+        "Duolingo": null,
+        "waivers": "NUS says English test score is required for certain qualifications; depends on qualification (some qualifications do not require score)."
+      },
+      "source_url": "https://www.nus.edu.sg/oam/docs/default-source/default-document-library/english-test-scores.pdf",
+      "checked_at": "2026-11-14"
+    },
+    "application_route_and_fee": {
+      "value": {
+        "route": "Direct online application via NUS Office of Admissions",
+        "application_fee": "SGD 20 for international students with international qualifications"
+      },
+      "source_url": "https://www.nus.edu.sg/oam/admissions/admissions",
+      "checked_at": "2026-11-14"
+    },
+    "deadlines": {
+      "value": null,
+      "source_url": "https://www.nus.edu.sg/",
+      "checked_at": "2026-11-14"
+    },
+    "international_tuition_per_year": {
+      "value": null,
+      "source_url": "https://nus.edu.sg/registrar/docs/default-source/administrative-policies-procedures/ugtuitioncurrent.pdf",
+      "checked_at": "2026-11-14"
+    },
+    "international_aid": {
+      "value": null,
+      "source_url": "https://nus.edu.sg/oam/apply-to-nus/international-qualifications",
+      "checked_at": "2026-11-14"
+    },
+    "foundation_for_11_year_certificate": {
+      "value": null,
+      "source_url": "https://www.nus.edu.sg/",
+      "checked_at": "2026-11-14"
+    },
+    "sources": [
+      "https://www.nus.edu.sg/",
+      "https://nus.edu.sg/oam/apply-to-nus/international-qualifications",
+      "https://www.nus.edu.sg/oam/docs/default-source/default-document-library/english-test-scores.pdf",
+      "https://www.nus.edu.sg/oam/admissions/admissions",
+      "https://nus.edu.sg/registrar/docs/default-source/administrative-policies-procedures/ugtuitioncurrent.pdf"
+    ],
+    "verification_status": "staged"
+  },
+  {
+    "university_id": "f5a6d73a-5fd2-55de-83af-3da2c25e18ef",
+    "name": "Nanyang Technological University",
+    "country": "Singapore",
+    "english": {
+      "value": null,
+      "source_url": "https://www.ntu.edu.sg/admissions/undergraduate/important-links/important-dates",
+      "checked_at": "2026-11-14"
+    },
+    "application_route_and_fee": {
+      "value": {
+        "route": "Direct online NTU application",
+        "application_fee": "SGD 25 for international applicant (official 2027 applicant information)"
+      },
+      "source_url": "https://www.ntu.edu.sg/media/docs/default-source/undergraduate-admissions/international/app_bahasa.pdf",
+      "checked_at": "2026-11-14"
+    },
+    "deadlines": {
+      "value": {
+        "cycle": "2027 entry",
+        "Kazakhstan/high-school national qualification": "2026-10-15 to 2027-01-20; application periods vary by qualification",
+        "other international qualifications": "2026-10-15 to 2027-03-19 per NTU important dates"
+      },
+      "source_url": "https://www.ntu.edu.sg/media/docs/default-source/undergraduate-admissions/msr/emsr_intnl.pdf",
+      "checked_at": "2026-11-14"
+    },
+    "international_tuition_per_year": {
+      "value": {
+        "academic_year": "2026 published schedule (2027 rates to be announced May–June 2027)",
+        "currency": "SGD per year",
+        "all programmes except specified": "18,050 subsidised tuition grant for ASEAN students; 40,600 lab-based or 36,350 non-lab-based without grant",
+        "business degrees": "20,700 subsidised grant; 45,600 without grant",
+        "note": "Uzbekistan/Kazakhstan/Kyrgyzstan/Tajikistan applicants are non-ASEAN; non-subsidised amounts shown are applicable unless selected and awarded Tuition Grant."
+      },
+      "source_url": "https://www.ntu.edu.sg/media/docs/default-source/undergraduate-admissions/international/app_bahasa.pdf",
+      "checked_at": "2026-11-14"
+    },
+    "international_aid": {
+      "value": null,
+      "source_url": "https://www.ntu.edu.sg/admissions/undergraduate/fees-and-funding/tuition-fees",
+      "checked_at": "2026-11-14"
+    },
+    "foundation_for_11_year_certificate": {
+      "value": null,
+      "source_url": "https://www.ntu.edu.sg/admissions/undergraduate/important-links/important-dates",
+      "checked_at": "2026-11-14"
+    },
+    "sources": [
+      "https://www.ntu.edu.sg/admissions/undergraduate/important-links/important-dates",
+      "https://www.ntu.edu.sg/admissions/undergraduate/fees-and-funding/tuition-fees",
+      "https://www.ntu.edu.sg/media/docs/default-source/undergraduate-admissions/international/app_bahasa.pdf",
+      "https://www.ntu.edu.sg/media/docs/default-source/undergraduate-admissions/msr/emsr_intnl.pdf"
+    ],
+    "verification_status": "staged"
+  },
+  {
+    "university_id": "a8c20c24-0173-5120-abee-6f63ee2944d3",
+    "name": "Singapore University of Technology and Design",
+    "country": "Singapore",
+    "english": {
+      "value": null,
+      "source_url": "https://www.sutd.edu.sg/admissions/undergraduate/",
+      "checked_at": "2026-11-14"
+    },
+    "application_route_and_fee": {
+      "value": {
+        "route": "Direct online SUTD Admissions System",
+        "application_fee": null
+      },
+      "source_url": "https://www.sutd.edu.sg/admissions/undergraduate/application-guide/",
+      "checked_at": "2026-11-14"
+    },
+    "deadlines": {
+      "value": null,
+      "source_url": "https://www.sutd.edu.sg/admissions/undergraduate/",
+      "checked_at": "2026-11-14"
+    },
+    "international_tuition_per_year": {
+      "value": {
+        "academic_year": "2026 (latest published)",
+        "currency": "SGD/year",
+        "non-ASEAN international": "31,600 with Tuition Grant; 62,076 without grant"
+      },
+      "source_url": "https://www.sutd.edu.sg/admissions/undergraduate/education-expenses/fees/tuition-fees/",
+      "checked_at": "2026-11-14"
+    },
+    "international_aid": {
+      "value": {
+        "available": true,
+        "note": "SUTD application allows applicants to request scholarships/financial aid. International students may compete for limited MOE Tuition Grants; grant carries three-year Singapore work bond."
+      },
+      "source_url": "https://www.sutd.edu.sg/admissions/undergraduate/education-expenses/fees/tuition-fees/",
+      "checked_at": "2026-11-14"
+    },
+    "foundation_for_11_year_certificate": {
+      "value": null,
+      "source_url": "https://www.sutd.edu.sg/admissions/undergraduate/",
+      "checked_at": "2026-11-14"
+    },
+    "sources": [
+      "https://www.sutd.edu.sg/admissions/undergraduate/",
+      "https://www.sutd.edu.sg/admissions/undergraduate/fees-and-financial-aid/",
+      "https://www.sutd.edu.sg/admissions/undergraduate/education-expenses/fees/tuition-fees/",
+      "https://www.sutd.edu.sg/admissions/undergraduate/application-guide/"
+    ],
+    "verification_status": "staged"
+  },
+  {
+    "university_id": "5c15139b-369f-521f-9ea2-4ef8ae5fdcc3",
+    "name": "Singapore Management University",
+    "country": "Singapore",
+    "english": {
+      "value": {
+        "IELTS Academic": "7.0 overall, reading 7.0 and writing 6.5 for non-law applicants",
+        "TOEFL iBT": "Old scale: 100 with reading/writing 24; new scale from Jan 21 2026: 5.5 overall, reading 5.5 and writing 5.0",
+        "Duolingo": null,
+        "waivers": null
+      },
+      "source_url": "https://admissions.smu.edu.sg/admissions-requirements/international-and-other-qualifications",
+      "checked_at": "2026-11-14"
+    },
+    "application_route_and_fee": {
+      "value": "Direct online application; SGD 15 non-refundable application fee.",
+      "source_url": "https://admissions.smu.edu.sg/admissions-requirements/international-and-other-qualifications",
+      "checked_at": "2026-11-14"
+    },
+    "deadlines": {
+      "value": {
+        "cycle": "AY2027–28",
+        "open": "2026-11-16",
+        "close": "2027-03-19"
+      },
+      "source_url": "https://admissions.smu.edu.sg/admissions-requirements/international-and-other-qualifications",
+      "checked_at": "2026-11-14"
+    },
+    "international_tuition_per_year": {
+      "value": null,
+      "source_url": "https://admissions.smu.edu.sg/faq/Admissions%20and%20applications",
+      "checked_at": "2026-11-14"
+    },
+    "international_aid": {
+      "value": {
+        "available": true,
+        "note": "Applicants may apply for scholarships within admission application; no separate scholarship form."
+      },
+      "source_url": "https://admissions.smu.edu.sg/faq/Admissions%20and%20applications",
+      "checked_at": "2026-11-14"
+    },
+    "foundation_for_11_year_certificate": {
+      "value": null,
+      "source_url": "https://admissions.smu.edu.sg/admissions-requirements/international-and-other-qualifications",
+      "checked_at": "2026-11-14"
+    },
+    "sources": [
+      "https://admissions.smu.edu.sg/admissions-requirements/international-and-other-qualifications",
+      "https://admissions.smu.edu.sg/faq/Admissions%20and%20applications"
+    ],
+    "verification_status": "staged"
+  },
+  {
+    "university_id": "b37d730b-421c-5ed6-a807-3d66e7ca21f7",
+    "name": "The University of Hong Kong",
+    "country": "Hong Kong",
+    "english": {
+      "value": {
+        "IELTS Academic": "6.5 overall; no less than 6.0 in Writing and Speaking, same attempt",
+        "TOEFL iBT": "From 2026-01-21: 5.0 overall and 5.0 Writing/Speaking; earlier tests: 95 overall and 25 Writing/Speaking",
+        "Duolingo": null,
+        "waivers": "Some qualifications or English-medium study may satisfy the language requirement; the official page gives qualification-specific alternatives."
+      },
+      "source_url": "https://www.admissions.hku.hk/apply/international-qualifications/english-language-requirement",
+      "checked_at": "2026-11-14"
+    },
+    "application_route_and_fee": {
+      "value": "Direct International/Non-JUPAS application; HKD 780 fee for 2027 intake.",
+      "source_url": "https://www.admissions.hku.hk/apply/international-qualifications",
+      "checked_at": "2026-11-14"
+    },
+    "deadlines": {
+      "value": {
+        "cycle": 2027,
+        "open": "2026-09-23",
+        "first_round": "2026-11-25",
+        "rolling_after_first_round": true,
+        "close": "2027-08-25"
+      },
+      "source_url": "https://www.admissions.hku.hk/apply/international-qualifications",
+      "checked_at": "2026-11-14"
+    },
+    "international_tuition_per_year": {
+      "value": {
+        "academic_year": "2027/28",
+        "currency": "HKD/year",
+        "non-local programmes": "250,000 non-STEM; 280,000 STEM; MBBS/BDS 590,000"
+      },
+      "source_url": "https://www.admissions.hku.hk/fees-and-scholarships/fees",
+      "checked_at": "2026-11-14"
+    },
+    "international_aid": {
+      "value": {
+        "available": true,
+        "note": "International applicants automatically considered for entrance scholarships; 2027 details subject to change. Top awards may cover tuition and accommodation/living support."
+      },
+      "source_url": "https://www.admissions.hku.hk/fees-and-scholarships/fees",
+      "checked_at": "2026-11-14"
+    },
+    "foundation_for_11_year_certificate": {
+      "value": null,
+      "source_url": "https://www.admissions.hku.hk/apply/international-qualifications",
+      "checked_at": "2026-11-14"
+    },
+    "sources": [
+      "https://www.admissions.hku.hk/apply/international-qualifications",
+      "https://www.admissions.hku.hk/faqs/international",
+      "https://www.admissions.hku.hk/apply/international-qualifications/english-language-requirement",
+      "https://www.admissions.hku.hk/fees-and-scholarships/fees"
+    ],
+    "verification_status": "staged"
+  },
+  {
+    "university_id": "7deae08f-080e-56cd-8aa8-ca05c941f0cc",
+    "name": "The Chinese University of Hong Kong",
+    "country": "Hong Kong",
+    "english": {
+      "value": {
+        "IELTS Academic": "6.0 overall",
+        "TOEFL iBT": "80/120 before 2026-01-21; 4.5/6 from 2026-01-21",
+        "Duolingo": "Not accepted to fulfill requirement (may be submitted for programme reference)",
+        "waivers": "Some qualifications (e.g. GCE/IB) may meet English admission standard without test; programme rules apply."
+      },
+      "source_url": "https://admission.cuhk.edu.hk/application/overseas-other-qualifications-non-local-international-team/requirements/",
+      "checked_at": "2026-11-14"
+    },
+    "application_route_and_fee": {
+      "value": "Direct online application; HKD 500 for 2027 entry.",
+      "source_url": "https://admission.cuhk.edu.hk/application/overseas-other-qualifications-non-local-international-team/faq/",
+      "checked_at": "2026-11-14"
+    },
+    "deadlines": {
+      "value": {
+        "cycle": 2027,
+        "advance_offer_deadline": "2026-11-12",
+        "regular_deadline": "2027-01-07"
+      },
+      "source_url": "https://admission.cuhk.edu.hk/application/overseas-other-qualifications-non-local-international-team/faq/",
+      "checked_at": "2026-11-14"
+    },
+    "international_tuition_per_year": {
+      "value": {
+        "academic_year": "2027/28",
+        "amount": 230000,
+        "currency": "HKD/year for non-local students"
+      },
+      "source_url": "https://admission.cuhk.edu.hk/fees-financing-your-studies/fees/",
+      "checked_at": "2026-11-14"
+    },
+    "international_aid": {
+      "value": {
+        "available": true,
+        "note": "Automatic admission scholarship consideration for non-local undergraduate students; awards range HKD 5,000 to full tuition, some up to HKD 66,000 annual allowance. Belt and Road Scholarship covers tuition; Kazakhstan is an eligible designated country, with other-region awards also offered."
+      },
+      "source_url": "https://admission.cuhk.edu.hk/fees-financing-your-studies/scholarships/admission-scholarships-for-undergraduates-only/",
+      "checked_at": "2026-11-14"
+    },
+    "foundation_for_11_year_certificate": {
+      "value": null,
+      "source_url": "https://admission.cuhk.edu.hk/application/overseas-other-qualifications-non-local-international-team/faq/",
+      "checked_at": "2026-11-14"
+    },
+    "sources": [
+      "https://admission.cuhk.edu.hk/application/overseas-other-qualifications-non-local-international-team/faq/",
+      "https://admission.cuhk.edu.hk/wp-content/uploads/2026/11/CUHK-NJL-2027.pdf",
+      "https://admission.cuhk.edu.hk/application/overseas-other-qualifications-non-local-international-team/requirements/",
+      "https://admission.cuhk.edu.hk/fees-financing-your-studies/fees/",
+      "https://admission.cuhk.edu.hk/fees-financing-your-studies/scholarships/admission-scholarships-for-undergraduates-only/"
+    ],
+    "verification_status": "staged"
+  },
+  {
+    "university_id": "74996b5e-c39f-52f1-9e01-88f3051f155b",
+    "name": "The Hong Kong University of Science and Technology",
+    "country": "Hong Kong",
+    "english": {
+      "value": null,
+      "source_url": "https://join.hkust.edu.hk/admissions/international-qualifications",
+      "checked_at": "2026-11-14"
+    },
+    "application_route_and_fee": {
+      "value": "Direct online application for international qualifications; HKD 600 application fee.",
+      "source_url": "https://join.hkust.edu.hk/admissions/international-qualifications",
+      "checked_at": "2026-11-14"
+    },
+    "deadlines": {
+      "value": {
+        "cycle": "2027/28",
+        "open": "2026-10-02",
+        "priority": "2026-11-25",
+        "rolling_from": "2026-11-26",
+        "close": "2027-06-30"
+      },
+      "source_url": "https://join.hkust.edu.hk/admissions/international-qualifications",
+      "checked_at": "2026-11-14"
+    },
+    "international_tuition_per_year": {
+      "value": {
+        "academic_year": "2027/28",
+        "amount": 260000,
+        "currency": "HKD/year"
+      },
+      "source_url": "https://www.join.hkust.edu.hk/fees-and-scholarships",
+      "checked_at": "2026-11-14"
+    },
+    "international_aid": {
+      "value": {
+        "available": true,
+        "note": "Entrance scholarships for other qualifications and international/Asian Olympiad medalists; financial aid also available."
+      },
+      "source_url": "https://join.hkust.edu.hk/oas/elar.pdf",
+      "checked_at": "2026-11-14"
+    },
+    "foundation_for_11_year_certificate": {
+      "value": null,
+      "source_url": "https://join.hkust.edu.hk/admissions/international-qualifications",
+      "checked_at": "2026-11-14"
+    },
+    "sources": [
+      "https://join.hkust.edu.hk/admissions/international-qualifications",
+      "https://www.join.hkust.edu.hk/fees-and-scholarships",
+      "https://join.hkust.edu.hk/oas/elar.pdf"
+    ],
+    "verification_status": "staged"
+  },
+  {
+    "university_id": "c0bf548f-0413-5faa-8378-e3a8e622f80f",
+    "name": "City University of Hong Kong",
+    "country": "Hong Kong",
+    "english": {
+      "value": null,
+      "source_url": "https://www.cityu.edu.hk/admo/faq",
+      "checked_at": "2026-11-14"
+    },
+    "application_route_and_fee": {
+      "value": "Direct online international application; HKD 600 fee; up to two programme choices.",
+      "source_url": "https://www.cityu.edu.hk/admo/faq",
+      "checked_at": "2026-11-14"
+    },
+    "deadlines": {
+      "value": {
+        "cycle": "2027/28",
+        "opens": "2026-09-24",
+        "priority": "2026-11-15",
+        "main_round": "2027-01-15"
+      },
+      "source_url": "https://www.cityu.edu.hk/admo/faq",
+      "checked_at": "2026-11-14"
+    },
+    "international_tuition_per_year": {
+      "value": null,
+      "source_url": "https://www.cityu.edu.hk/admo/admissions/international-admissions",
+      "checked_at": "2026-11-14"
+    },
+    "international_aid": {
+      "value": {
+        "available": true,
+        "note": "International/non-local bachelor applicants automatically considered for entrance scholarships; details included in offer."
+      },
+      "source_url": "https://www.cityu.edu.hk/admo/admissions/international-admissions",
+      "checked_at": "2026-11-14"
+    },
+    "foundation_for_11_year_certificate": {
+      "value": null,
+      "source_url": "https://www.cityu.edu.hk/admo/faq",
+      "checked_at": "2026-11-14"
+    },
+    "sources": [
+      "https://www.cityu.edu.hk/admo/faq",
+      "https://www.cityu.edu.hk/admo/admissions/international-admissions"
+    ],
+    "verification_status": "staged"
+  },
+  {
+    "university_id": "d9597e4a-75a9-5440-9902-e40d6ef03f13",
+    "name": "Hong Kong Baptist University",
+    "country": "Hong Kong",
+    "english": {
+      "value": {
+        "IELTS Academic": "6.0 overall",
+        "TOEFL iBT": null,
+        "Duolingo": null,
+        "waivers": "Potentially English-medium first degree (not applicable to school applicants), details by programme."
+      },
+      "source_url": "https://admissions.hkbu.edu.hk/admissions/international-qualifications.html",
+      "checked_at": "2026-11-14"
+    },
+    "application_route_and_fee": {
+      "value": null,
+      "source_url": "https://admissions.hkbu.edu.hk/admissions/international-qualifications.html",
+      "checked_at": "2026-11-14"
+    },
+    "deadlines": {
+      "value": null,
+      "source_url": "https://admissions.hkbu.edu.hk/admissions/international-qualifications.html",
+      "checked_at": "2026-11-14"
+    },
+    "international_tuition_per_year": {
+      "value": {
+        "academic_year": "2027/28",
+        "amount": 240000,
+        "currency": "HKD/year for non-local students"
+      },
+      "source_url": "https://admissions.hkbu.edu.hk/fees-and-scholarships.html",
+      "checked_at": "2026-11-14"
+    },
+    "international_aid": {
+      "value": {
+        "available": true,
+        "note": "Admission Scholarship Scheme for Overseas Applicants listed; award details depend on eligibility."
+      },
+      "source_url": "https://admissions.hkbu.edu.hk/fees-and-scholarships.html",
+      "checked_at": "2026-11-14"
+    },
+    "foundation_for_11_year_certificate": {
+      "value": null,
+      "source_url": "https://admissions.hkbu.edu.hk/admissions/international-qualifications.html",
+      "checked_at": "2026-11-14"
+    },
+    "sources": [
+      "https://admissions.hkbu.edu.hk/admissions/international-qualifications.html",
+      "https://admissions.hkbu.edu.hk/fees-and-scholarships.html"
+    ],
+    "verification_status": "staged"
+  },
+  {
+    "university_id": "bd88f517-5e80-5ca3-a470-72037358b8a9",
+    "name": "Hong Kong Metropolitan University",
+    "country": "Hong Kong",
+    "english": {
+      "value": null,
+      "source_url": "https://admissions.hkmu.edu.hk/ug/overseas/",
+      "checked_at": "2026-11-14"
+    },
+    "application_route_and_fee": {
+      "value": "Direct application for non-local students; fee HKD 515 per official FAQ.",
+      "source_url": "https://admissions.hkmu.edu.hk/ug/overseas/",
+      "checked_at": "2026-11-14"
+    },
+    "deadlines": {
+      "value": {
+        "cycle": 2027,
+        "first_round_deadline": "2027-03-31",
+        "second_round_deadline": "2027-05-31 for overseas applicants"
+      },
+      "source_url": "https://admissions.hkmu.edu.hk/ug/overseas/",
+      "checked_at": "2026-11-14"
+    },
+    "international_tuition_per_year": {
+      "value": {
+        "amount": "45020",
+        "currency": "HKD",
+        "basis": "first-year programme fee; webpage individual program fee selector; academic year unclear"
+      },
+      "source_url": "https://admissions.hkmu.edu.hk/ug/faq/",
+      "checked_at": "2026-11-14"
+    },
+    "international_aid": {
+      "value": {
+        "available": true,
+        "note": "Merit admission scholarship for outstanding new students; automatic consideration."
+      },
+      "source_url": "https://admissions.hkmu.edu.hk/ug/programmes/",
+      "checked_at": "2026-11-14"
+    },
+    "foundation_for_11_year_certificate": {
+      "value": null,
+      "source_url": "https://admissions.hkmu.edu.hk/ug/overseas/",
+      "checked_at": "2026-11-14"
+    },
+    "sources": [
+      "https://admissions.hkmu.edu.hk/ug/overseas/",
+      "https://admissions.hkmu.edu.hk/ug/faq/",
+      "https://admissions.hkmu.edu.hk/ug/programmes/"
+    ],
+    "verification_status": "staged"
+  },
+  {
+    "university_id": "66666666-6666-4666-8666-666666666666",
+    "name": "Westminster International University in Tashkent",
+    "country": "Uzbekistan",
+    "english": {
+      "value": {
+        "IELTS Academic": "6.0 overall; writing minimum 5.0 (CIFS/Foundation requirements)",
+        "TOEFL iBT": null,
+        "Duolingo": null,
+        "waivers": null
+      },
+      "source_url": "https://www.wiut.uz/certificate-international-foundation-studies",
+      "checked_at": "2026-11-14"
+    },
+    "application_route_and_fee": {
+      "value": "Apply through WIUT Admissions Portal (admission.wiut.uz); application fee not found in fetched official page.",
+      "source_url": "https://www.wiut.uz/certificate-international-foundation-studies",
+      "checked_at": "2026-11-14"
+    },
+    "deadlines": {
+      "value": null,
+      "source_url": "https://www.wiut.uz/certificate-international-foundation-studies",
+      "checked_at": "2026-11-14"
+    },
+    "international_tuition_per_year": {
+      "value": {
+        "academic_year": "2026/27",
+        "currency": "UZS",
+        "amount_per_year": 54600000,
+        "basis": "Undergraduate courses, 120 credits/year; approx USD 4,484 per official page"
+      },
+      "source_url": "https://joomla4.wiut.uz/tuition-fees-international",
+      "checked_at": "2026-11-14"
+    },
+    "international_aid": {
+      "value": {
+        "available": true,
+        "note": "100% WIUT scholarship for citizens of Uzbekistan entering CIFS/Foundation; separate; not explicitly stated for international applicants."
+      },
+      "source_url": "https://admission.wiut.uz/",
+      "checked_at": "2026-11-14"
+    },
+    "foundation_for_11_year_certificate": {
+      "value": {
+        "available": true,
+        "note": "Certificate in International Foundation Studies (CIFS), one-year, two-semester pathway; appropriate for 11-year certificate holders."
+      },
+      "source_url": "https://www.wiut.uz/certificate-international-foundation-studies",
+      "checked_at": "2026-11-14"
+    },
+    "sources": [
+      "https://www.wiut.uz/certificate-international-foundation-studies",
+      "https://joomla4.wiut.uz/tuition-fees-international",
+      "https://www.wiut.uz/index.php/scholarship",
+      "https://admission.wiut.uz/"
+    ],
+    "verification_status": "staged"
+  },
+  {
+    "university_id": "9e20a5d2-bafa-5857-8f5d-4a89874bb2f1",
+    "name": "Inha University in Tashkent",
+    "country": "Uzbekistan",
+    "english": {
+      "value": {
+        "IELTS Academic": "Regular undergraduate admission: thresholds vary by track: Computer/Software Engineering 5.0; Business/Logistics 5.5",
+        "TOEFL iBT": "Computer/Software Engineering 50; Business/Logistics 71",
+        "Duolingo": null,
+        "waivers": "English-medium prior schooling may exempt, subject to approval."
+      },
+      "source_url": "https://inha.uz/prospective-students/admissions/application-guideline/",
+      "checked_at": "2026-11-14"
+    },
+    "application_route_and_fee": {
+      "value": "Direct through university admissions portal; application fee not found.",
+      "source_url": "https://inha.uz/prospective-students/admissions/application-guideline/",
+      "checked_at": "2026-11-14"
+    },
+    "deadlines": {
+      "value": {
+        "cycle": "2026–27",
+        "note": "Guideline gives several rounds; international applications/exam results align with rounds. Exact dates in 2026 guideline; future 2027–28 not published."
+      },
+      "source_url": "https://inha.uz/prospective-students/admissions/application-guideline/",
+      "checked_at": "2026-11-14"
+    },
+    "international_tuition_per_year": {
+      "value": {
+        "academic_year": "2026–27",
+        "currency": "USD/year",
+        "amount": "4000",
+        "programmes": "SOCIE and School of Business and Logistics for international students"
+      },
+      "source_url": "https://inha.uz/prospective-students/admissions/scholarships/",
+      "checked_at": "2026-11-14"
+    },
+    "international_aid": {
+      "value": {
+        "available": true,
+        "note": "Academic performance scholarships and government grants; the 100% government grant is for Korean Programme contract students and is awarded via post-enrolment competition. No explicit Central Asian/CIS award identified."
+      },
+      "source_url": "https://inha.uz/uz/abiturient/qabul/oqish-uchun-tolov/",
+      "checked_at": "2026-11-14"
+    },
+    "foundation_for_11_year_certificate": {
+      "value": {
+        "available": true,
+        "note": "Foundation Programme, 2026–27; international tuition to be announced. Secondary completion/equivalent is eligibility requirement."
+      },
+      "source_url": "https://inha.uz/prospective-students/admissions/application-guideline/",
+      "checked_at": "2026-11-14"
+    },
+    "sources": [
+      "https://inha.uz/prospective-students/admissions/application-guideline/",
+      "https://inha.uz/prospective-students/admissions/scholarships/",
+      "https://inha.uz/foundation/admissions-guidelines-foundation/",
+      "https://inha.uz/uz/abiturient/qabul/oqish-uchun-tolov/"
+    ],
+    "verification_status": "staged"
+  },
+  {
+    "university_id": "9485c68f-a900-55f2-870b-a072bed954a8",
+    "name": "Turin Polytechnic University In Tashkent",
+    "country": "Uzbekistan",
+    "english": {
+      "value": {
+        "IELTS Academic": "4.5 for Preparatory Year entry; 5.5 to progress to first level (official admission text includes outdated COVID exception text; cycle unspecified)",
+        "TOEFL iBT": null,
+        "Duolingo": null,
+        "waivers": "Equivalent certificates may be considered; details linked to Politecnico di Torino language center."
+      },
+      "source_url": "https://polito.uz/undergraduate-admission/",
+      "checked_at": "2026-11-14"
+    },
+    "application_route_and_fee": {
+      "value": "Admissions page describes entrance examination and paper documents; fee not located.",
+      "source_url": "https://polito.uz/undergraduate-admission/",
+      "checked_at": "2026-11-14"
+    },
+    "deadlines": {
+      "value": {
+        "cycle": "Latest page located is undated/legacy; registration deadline information elsewhere refers to 2023–24 only."
+      },
+      "source_url": "https://polito.uz/undergraduate-admission/",
+      "checked_at": "2026-11-14"
+    },
+    "international_tuition_per_year": {
+      "value": {
+        "amount": 28500000,
+        "currency": "UZS/year",
+        "academic_year": "not stated on current page; page text is legacy and may not reflect 2026–27"
+      },
+      "source_url": "https://polito.uz/admission-info/",
+      "checked_at": "2026-11-14"
+    },
+    "international_aid": {
+      "value": {
+        "available": true,
+        "note": "Official page says up to 100 full tuition sponsorships annually plus discounted tuition; cycle and international applicant eligibility not specified."
+      },
+      "source_url": "https://polito.uz/admission-info/",
+      "checked_at": "2026-11-14"
+    },
+    "foundation_for_11_year_certificate": {
+      "value": {
+        "available": true,
+        "note": "Preparatory Year (Foundation) exists for BSc; legacy official admissions content."
+      },
+      "source_url": "https://polito.uz/undergraduate-admission/",
+      "checked_at": "2026-11-14"
+    },
+    "sources": [
+      "https://polito.uz/undergraduate-admission/",
+      "https://polito.uz/admission-info/"
+    ],
+    "verification_status": "staged"
+  },
+  {
+    "university_id": "64e76836-ffb6-571c-8465-4a1b62caec45",
+    "name": "Ajou University in Tashkent",
+    "country": "Uzbekistan",
+    "english": {
+      "value": {
+        "IELTS Academic": "6.5 listed as international qualification for an admission scholarship (not verified as minimum admission score)",
+        "TOEFL iBT": "86 at same scholarship tier",
+        "Duolingo": null,
+        "waivers": "Applicants with IELTS 5.0 / TOEFL 50 / CEFR B1 / SAT 800 / TOPIK 3 can qualify for admission without exam; not an English-test waiver."
+      },
+      "source_url": "https://info.ajou.uz/en",
+      "checked_at": "2026-11-14"
+    },
+    "application_route_and_fee": {
+      "value": "Ajou Tashkent application route shown on official 2026/27 admission portal; application fee not stated.",
+      "source_url": "https://info.ajou.uz/en",
+      "checked_at": "2026-11-14"
+    },
+    "deadlines": {
+      "value": {
+        "cycle": "2026/27",
+        "note": "Dates not available in the official information page fetched."
+      },
+      "source_url": "https://info.ajou.uz/en",
+      "checked_at": "2026-11-14"
+    },
+    "international_tuition_per_year": {
+      "value": null,
+      "source_url": "https://www.ajou.uz/en/page/48",
+      "checked_at": "2026-11-14"
+    },
+    "international_aid": {
+      "value": {
+        "available": true,
+        "note": "Merit entrance scholarships range from 10% to 100% tuition coverage by certificates, olympiad results or entrance exam performance."
+      },
+      "source_url": "https://www.ajou.uz/en/page/48",
+      "checked_at": "2026-11-14"
+    },
+    "foundation_for_11_year_certificate": {
+      "value": null,
+      "source_url": "https://info.ajou.uz/en",
+      "checked_at": "2026-11-14"
+    },
+    "sources": [
+      "https://info.ajou.uz/en",
+      "https://www.ajou.uz/en/page/48"
+    ],
+    "verification_status": "staged"
+  },
+  {
+    "university_id": "8b58712b-c508-53b2-9265-0be62b0cf121",
+    "name": "British Management University in Tashkent",
+    "country": "Uzbekistan",
+    "english": {
+      "value": {
+        "IELTS Academic": "6.0 overall, no component below 5.5 for foundation / degree progression",
+        "TOEFL iBT": null,
+        "Duolingo": null,
+        "waivers": "English-medium secondary education with GCSE English C/equivalent or recognised foundation Academic English pass can satisfy English requirement."
+      },
+      "source_url": "https://bmu-edu.uz/page/admission-requirements-tuition-fees",
+      "checked_at": "2026-11-14"
+    },
+    "application_route_and_fee": {
+      "value": "Direct BMU application; fee not located.",
+      "source_url": "https://bmu-edu.uz/page/admission-requirements-tuition-fees",
+      "checked_at": "2026-11-14"
+    },
+    "deadlines": {
+      "value": null,
+      "source_url": "https://bmu-edu.uz/page/admission-requirements-tuition-fees",
+      "checked_at": "2026-11-14"
+    },
+    "international_tuition_per_year": {
+      "value": {
+        "amount": 42000000,
+        "currency": "UZS/year",
+        "academic_year": null,
+        "international_citizen_rate": "42000000 UZS; domestic listed 40000000 UZS"
+      },
+      "source_url": "https://www.bmu-edu.uz/page/bsc-management-information-systems-with-business-analytics",
+      "checked_at": "2026-11-14"
+    },
+    "international_aid": {
+      "value": {
+        "available": true,
+        "note": "BMU academic grants cover 20% or 50%; 50% grant table lists up to 100 students, IELTS 7.0 (minimum 6.0 each) or Aptis C2 plus math requirement."
+      },
+      "source_url": "https://www.bmu-edu.uz/page/bsc-management-information-systems-with-business-analytics",
+      "checked_at": "2026-11-14"
+    },
+    "foundation_for_11_year_certificate": {
+      "value": {
+        "available": true,
+        "note": "BMU Foundation Programme is one year; admissions pages list entry after foundation and foundation annual fee."
+      },
+      "source_url": "https://bmu-edu.uz/page/admission-requirements-tuition-fees",
+      "checked_at": "2026-11-14"
+    },
+    "sources": [
+      "https://bmu-edu.uz/page/admission-requirements-tuition-fees",
+      "https://www.bmu-edu.uz/page/bsc-management-information-systems-with-business-analytics"
+    ],
+    "verification_status": "staged"
+  },
+  {
+    "university_id": "4c6c3693-a60d-5db2-9474-183c31cec805",
+    "name": "Russian Economic University after G.V. Plekhanov",
+    "country": "Uzbekistan",
+    "english": {
+      "value": null,
+      "source_url": "https://www.rea.ru/mejdunarodnaya-deyatelnost/inostrannyim-abiturientam-i-studentam/inostrannyim-abiturientam-postupayuschim-v-reu/-poryadok-oformleniya-dlya-postupayuschih-na-byudjetnoy-osnove",
+      "checked_at": "2026-11-14"
+    },
+    "application_route_and_fee": {
+      "value": "International applicants use REU international admissions process; for state-funded seats, Russian government quota or general competition described. Fee not found.",
+      "source_url": "https://www.rea.ru/mejdunarodnaya-deyatelnost/inostrannyim-abiturientam-i-studentam/inostrannyim-abiturientam-postupayuschim-v-reu/-poryadok-oformleniya-dlya-postupayuschih-na-byudjetnoy-osnove",
+      "checked_at": "2026-11-14"
+    },
+    "deadlines": {
+      "value": {
+        "cycle": 2026,
+        "note": "Latest located international-admissions page addresses 2026 process; exact deadlines not extracted."
+      },
+      "source_url": "https://www.rea.ru/mejdunarodnaya-deyatelnost/inostrannyim-abiturientam-i-studentam/inostrannyim-abiturientam-postupayuschim-v-reu/-poryadok-oformleniya-dlya-postupayuschih-na-byudjetnoy-osnove",
+      "checked_at": "2026-11-14"
+    },
+    "international_tuition_per_year": {
+      "value": null,
+      "source_url": "https://rea.ru/mnt/sveden-filial/Tashkent/paid_edu/paidSt/stoimost_obucheniya_2026.pdf",
+      "checked_at": "2026-11-14"
+    },
+    "international_aid": {
+      "value": {
+        "available": true,
+        "note": "Foreign citizens may apply for Russian-government quota-funded places; Tashkent branch has a 2026 tuition-fee order, but no university scholarship/aid details verified."
+      },
+      "source_url": "https://rea.ru/mnt/sveden-filial/Tashkent/paid_edu/paidSt/stoimost_obucheniya_2026.pdf",
+      "checked_at": "2026-11-14"
+    },
+    "foundation_for_11_year_certificate": {
+      "value": null,
+      "source_url": "https://www.rea.ru/mejdunarodnaya-deyatelnost/inostrannyim-abiturientam-i-studentam/inostrannyim-abiturientam-postupayuschim-v-reu/-poryadok-oformleniya-dlya-postupayuschih-na-byudjetnoy-osnove",
+      "checked_at": "2026-11-14"
+    },
+    "sources": [
+      "https://www.rea.ru/mejdunarodnaya-deyatelnost/inostrannyim-abiturientam-i-studentam/inostrannyim-abiturientam-postupayuschim-v-reu/-poryadok-oformleniya-dlya-postupayuschih-na-byudjetnoy-osnove",
+      "https://rea.ru/mnt/sveden-filial/Tashkent/paid_edu/paidSt/stoimost_obucheniya_2026.pdf"
+    ],
+    "verification_status": "staged"
+  },
+  {
+    "university_id": "69434102-e5f5-5311-9294-2f101f81906f",
+    "name": "Nazarbayev University",
+    "country": "Kazakhstan",
+    "english": {
+      "value": {
+        "IELTS Academic": "NUFYP Foundation 5.5 overall, writing/reading 5.5, listening/speaking 5.0. First-year undergraduate minimum not separately verified in the fetched source.",
+        "TOEFL iBT": "Equivalent ETS score for Foundation; UG threshold not confirmed.",
+        "Duolingo": null,
+        "waivers": "NU website states applicants completing at least one English-medium university semester can be exempt from IELTS/TOEFL; chiefly described in transfer section."
+      },
+      "source_url": "https://nu.edu.kz/admissions/how-to-apply/foundation-undergraduate/regular-admissions/",
+      "checked_at": "2026-11-14"
+    },
+    "application_route_and_fee": {
+      "value": "Direct application through NU personal application portal; Foundation/Bachelor application fee for Uzbek applicants is 10,000 KZT (higher late fee noted).",
+      "source_url": "https://nu.edu.kz/admissions/how-to-apply/foundation-undergraduate/regular-admissions/",
+      "checked_at": "2026-11-14"
+    },
+    "deadlines": {
+      "value": {
+        "cycle": "2027–28",
+        "undergraduate/foundation": "Applications Oct 2026–Aug 2027 for Kazakhstan/visa-on-arrival nationalities; visa-required applicant dates pending. English test deadline June 1, 2027."
+      },
+      "source_url": "https://nu.edu.kz/admissions/how-to-apply/foundation-undergraduate/regular-admissions/",
+      "checked_at": "2026-11-14"
+    },
+    "international_tuition_per_year": {
+      "value": {
+        "academic_year": "2026/27",
+        "currency": "USD/year",
+        "undergraduate": 15000,
+        "foundation": 12000
+      },
+      "source_url": "https://nu.edu.kz/admissions/how-to-apply/foundation-undergraduate/financial-aid-end-scholarships/",
+      "checked_at": "2026-11-14"
+    },
+    "international_aid": {
+      "value": {
+        "available": true,
+        "note": "Abay Kunanbayev scholarship for top international students: tuition, medical insurance and monthly stipend; separate application deadline earlier than general admission. No specific Central Asian restriction."
+      },
+      "source_url": "https://apply.nu.edu.kz/international-uzbekistan",
+      "checked_at": "2026-11-14"
+    },
+    "foundation_for_11_year_certificate": {
+      "value": {
+        "available": true,
+        "note": "NU Foundation Year Program, one-year intensive pathway to undergraduate study. Uzbek school certificate explicitly accepted (GPA conversion)."
+      },
+      "source_url": "https://nu.edu.kz/admissions/how-to-apply/foundation-undergraduate/regular-admissions/",
+      "checked_at": "2026-11-14"
+    },
+    "sources": [
+      "https://nu.edu.kz/admissions/how-to-apply/foundation-undergraduate/regular-admissions/",
+      "https://nu.edu.kz/admissions/how-to-apply/foundation-undergraduate/financial-aid-end-scholarships/",
+      "https://apply.nu.edu.kz/international-uzbekistan"
+    ],
+    "verification_status": "staged"
+  },
+  {
+    "university_id": "3a93f754-56b1-5f5b-82c8-a50ea6d994e7",
+    "name": "Kazakhstan Institute of Management, Economics, and Strategic Research",
+    "country": "Kazakhstan",
+    "english": {
+      "value": {
+        "IELTS Academic": "6.5 or higher gives direct placement into academic English-taught courses; lower English scores require placement pathway; exact minimum test score not confirmed in fetched guideline.",
+        "TOEFL iBT": null,
+        "Duolingo": null,
+        "waivers": null
+      },
+      "source_url": "https://www.kimep.kz/prospective-students/files/2026/02/HowToApplyENGUgrad_2026-27.pdf",
+      "checked_at": "2026-11-14"
+    },
+    "application_route_and_fee": {
+      "value": "Direct online KIMEP undergraduate application; fee not verified from 2026/27 guideline.",
+      "source_url": "https://www.kimep.kz/prospective-students/files/2026/02/HowToApplyENGUgrad_2026-27.pdf",
+      "checked_at": "2026-11-14"
+    },
+    "deadlines": {
+      "value": null,
+      "source_url": "https://www.kimep.kz/prospective-students/files/2026/02/HowToApplyENGUgrad_2026-27.pdf",
+      "checked_at": "2026-11-14"
+    },
+    "international_tuition_per_year": {
+      "value": null,
+      "source_url": "https://www.kimep.kz/prospective-students/files/2026/04/HowToApplyENGUgradINL.pdf",
+      "checked_at": "2026-11-14"
+    },
+    "international_aid": {
+      "value": {
+        "available": true,
+        "note": "KIMEP financial aid/scholarships are available but admission does not guarantee financial aid; international applicant applicability and specific current awards not confirmed."
+      },
+      "source_url": "https://www.kimep.kz/prospective-students/files/2026/04/HowToApplyENGUgradINL.pdf",
+      "checked_at": "2026-11-14"
+    },
+    "foundation_for_11_year_certificate": {
+      "value": null,
+      "source_url": "https://www.kimep.kz/prospective-students/files/2026/02/HowToApplyENGUgrad_2026-27.pdf",
+      "checked_at": "2026-11-14"
+    },
+    "sources": [
+      "https://www.kimep.kz/prospective-students/files/2026/02/HowToApplyENGUgrad_2026-27.pdf",
+      "https://www.kimep.kz/prospective-students/files/2026/04/HowToApplyENGUgradINL.pdf"
+    ],
+    "verification_status": "staged"
+  },
+  {
+    "university_id": "f0e54c4c-797b-5d73-ba3f-7f0483425c17",
+    "name": "Kazakh British Technical University",
+    "country": "Kazakhstan",
+    "english": {
+      "value": {
+        "IELTS Academic": "5.5",
+        "TOEFL iBT": "46",
+        "Duolingo": "Accepted (minimum score not stated on retrieved official page)",
+        "waivers": null
+      },
+      "source_url": "https://kbtu.edu.kz/en/internationalization/international-admissions-internationalization",
+      "checked_at": "2026-11-14"
+    },
+    "application_route_and_fee": {
+      "value": "Direct KBTU portal admissions.kbtu.kz/apply; no international application fee stated.",
+      "source_url": "https://kbtu.edu.kz/en/internationalization/international-admissions-internationalization",
+      "checked_at": "2026-11-14"
+    },
+    "deadlines": {
+      "value": {
+        "latest_published_cycle": "2026 international admissions page gives document period Mar 1–May 1 and interviews May 2–May 31 for internal grants; this may not cover all international direct-admission dates."
+      },
+      "source_url": "https://kbtu.edu.kz/en/internationalization/international-admissions-internationalization",
+      "checked_at": "2026-11-14"
+    },
+    "international_tuition_per_year": {
+      "value": null,
+      "source_url": "https://kbtu.edu.kz/en/schools/school-of-information-technology-and-engineering/bachelor-s-educational-programs-of-the-school-of-information-technology-and-engineering",
+      "checked_at": "2026-11-14"
+    },
+    "international_aid": {
+      "value": {
+        "available": true,
+        "note": "Internal grants/discounts available to citizens of CIS, including Uzbekistan, Kyrgyzstan, Tajikistan; additionally Kazakhstan government scholarship described for foreign applicants."
+      },
+      "source_url": "https://kbtu.edu.kz/en/schools/school-of-information-technology-and-engineering/bachelor-s-educational-programs-of-the-school-of-information-technology-and-engineering",
+      "checked_at": "2026-11-14"
+    },
+    "foundation_for_11_year_certificate": {
+      "value": null,
+      "source_url": "https://kbtu.edu.kz/en/internationalization/international-admissions-internationalization",
+      "checked_at": "2026-11-14"
+    },
+    "sources": [
+      "https://kbtu.edu.kz/en/internationalization/international-admissions-internationalization",
+      "https://kbtu.edu.kz/en/schools/school-of-information-technology-and-engineering/bachelor-s-educational-programs-of-the-school-of-information-technology-and-engineering"
+    ],
+    "verification_status": "staged"
+  },
+  {
+    "university_id": "1864081c-b337-55b6-8677-6a2c3828a8df",
+    "name": "Kazakh German University",
+    "country": "Kazakhstan",
+    "english": {
+      "value": {
+        "IELTS Academic": null,
+        "TOEFL iBT": null,
+        "Duolingo": null,
+        "waivers": "No IELTS minimum stated; international undergraduate applicants need Russian B2 and English Pre-Intermediate/Intermediate."
+      },
+      "source_url": "https://dku.kz/en/inostrannym-abiturientam",
+      "checked_at": "2026-11-14"
+    },
+    "application_route_and_fee": {
+      "value": "International applicants contact DKU admissions; entrance test and oral interview; fee not specified.",
+      "source_url": "https://dku.kz/en/inostrannym-abiturientam",
+      "checked_at": "2026-11-14"
+    },
+    "deadlines": {
+      "value": null,
+      "source_url": "https://dku.kz/en/inostrannym-abiturientam",
+      "checked_at": "2026-11-14"
+    },
+    "international_tuition_per_year": {
+      "value": {
+        "amount": 2500000,
+        "currency": "KZT/year",
+        "academic_year": null,
+        "note": "Official tuition page; year applicability not specified."
+      },
+      "source_url": "https://dku.kz/en/stoimost-obucheniya-i-stipendii",
+      "checked_at": "2026-11-14"
+    },
+    "international_aid": {
+      "value": {
+        "available": true,
+        "note": "State grants and competitive DAAD / German Ministry of Interior internal awards; page says about 40% of students receive grants/scholarships, but non-local eligibility depends on grant."
+      },
+      "source_url": "https://dku.kz/en/stoimost-obucheniya-i-stipendii",
+      "checked_at": "2026-11-14"
+    },
+    "foundation_for_11_year_certificate": {
+      "value": {
+        "available": false,
+        "note": "Official international admissions page requires full completion of previous education and does not identify a foundation year; 12-year requirement not expressly stated on fetched page."
+      },
+      "source_url": "https://dku.kz/en/inostrannym-abiturientam",
+      "checked_at": "2026-11-14"
+    },
+    "sources": [
+      "https://dku.kz/en/inostrannym-abiturientam",
+      "https://dku.kz/en/stoimost-obucheniya-i-stipendii"
+    ],
+    "verification_status": "staged"
+  },
+  {
+    "university_id": "48bb7649-d12f-5854-b7d9-f586e7b81d72",
+    "name": "American University of Central Asia",
+    "country": "Kyrgyzstan",
+    "english": {
+      "value": {
+        "IELTS Academic": "IELTS 4.0 equivalent to minimum English admission score; 4.0–5.0 scores entail Intensive English during first year",
+        "TOEFL iBT": "old scale 39 minimum; new scale 2.5",
+        "Duolingo": "95 minimum",
+        "waivers": "Applicants may use an AUCA English test or recognized TOEFL/IELTS/Duolingo scores instead of AUCA English proficiency test."
+      },
+      "source_url": "https://www.auca.kg/en/apply_international/",
+      "checked_at": "2026-11-14"
+    },
+    "application_route_and_fee": {
+      "value": "Online AUCA application or submit form/documents to Admissions; application fee not located.",
+      "source_url": "https://www.auca.kg/en/apply_international/",
+      "checked_at": "2026-11-14"
+    },
+    "deadlines": {
+      "value": {
+        "latest_on_site": "Admissions and financial aid for Spring 2027: apply by Nov 19, 2026 (some pages show 2026 academic cycle; Fall 2027 dates not yet located)."
+      },
+      "source_url": "https://www.auca.kg/en/apply_international/",
+      "checked_at": "2026-11-14"
+    },
+    "international_tuition_per_year": {
+      "value": null,
+      "source_url": "https://www.auca.kg/en/auca_exams_scoring/",
+      "checked_at": "2026-11-14"
+    },
+    "international_aid": {
+      "value": {
+        "available": true,
+        "note": "Need- and merit-based aid; incoming CIS applicants eligible. Need-based aid up to 40% of tuition. This is explicitly open to CIS students including Central Asia."
+      },
+      "source_url": "https://auca.kg/eng/need-based/",
+      "checked_at": "2026-11-14"
+    },
+    "foundation_for_11_year_certificate": {
+      "value": null,
+      "source_url": "https://www.auca.kg/en/financial_aid/",
+      "checked_at": "2026-11-14"
+    },
+    "sources": [
+      "https://www.auca.kg/en/apply_international/",
+      "https://www.auca.kg/en/auca_exams_scoring/",
+      "https://www.auca.kg/en/financial_aid/",
+      "https://auca.kg/eng/need-based/"
+    ],
+    "verification_status": "staged"
+  },
+  {
+    "university_id": "b99019e6-e35f-57b0-8522-f934f7ee60e5",
+    "name": "University of Central Asia",
+    "country": "Kyrgyzstan",
+    "english": {
+      "value": {
+        "IELTS Academic": "Preparatory Programme: 6.0–6.5; direct entry: 7.0+",
+        "TOEFL iBT": "Preparatory: 79–95; direct entry: 96+",
+        "Duolingo": null,
+        "waivers": "Accepted IELTS/TOEFL/Cambridge may exempt applicant from English component of UCA admissions test (math test remains required)."
+      },
+      "source_url": "https://www.ucentralasia.org/admissions/undergraduate/undergraduate-programmes",
+      "checked_at": "2026-11-14"
+    },
+    "application_route_and_fee": {
+      "value": "Direct UCA online application; Admissions Test fee USD 15, plus USD 38 online proctoring for online test.",
+      "source_url": "https://www.ucentralasia.org/admissions/undergraduate/undergraduate-programmes",
+      "checked_at": "2026-11-14"
+    },
+    "deadlines": {
+      "value": {
+        "latest_cycle_found": "Official pages exposed prior 2026 admission dates; 2027 deadlines not yet published in fetched content."
+      },
+      "source_url": "https://www.ucentralasia.org/admissions/undergraduate/undergraduate-programmes",
+      "checked_at": "2026-11-14"
+    },
+    "international_tuition_per_year": {
+      "value": {
+        "value": null,
+        "note": "Official page gives USD 8,000 total annual cost of studying and living (tuition, materials, accommodation and meals bundled); tuition-only amount not separated."
+      },
+      "source_url": "https://www.ucentralasia.org/schools/school-of-arts-and-sciences/undergraduate-programme",
+      "checked_at": "2026-11-14"
+    },
+    "international_aid": {
+      "value": {
+        "available": true,
+        "note": "Financial aid up to USD 6,500; full scholarships explicitly for meritorious students from Tajikistan, Kyrgyzstan and Kazakhstan."
+      },
+      "source_url": "https://ucentralasia.org/admissions/undergraduate/undergraduate-programmes",
+      "checked_at": "2026-11-14"
+    },
+    "foundation_for_11_year_certificate": {
+      "value": {
+        "available": true,
+        "note": "Five-year undergraduate program begins with an embedded Preparatory Programme; pathway is part of undergraduate degree, not a separate 11-year certificate-specific foundation."
+      },
+      "source_url": "https://www.ucentralasia.org/schools/school-of-arts-and-sciences/undergraduate-programme",
+      "checked_at": "2026-11-14"
+    },
+    "sources": [
+      "https://www.ucentralasia.org/admissions/undergraduate/undergraduate-programmes",
+      "https://www.ucentralasia.org/schools/school-of-arts-and-sciences/undergraduate-programme",
+      "https://ucentralasia.org/admissions/undergraduate/undergraduate-programmes"
+    ],
+    "verification_status": "staged"
+  },
+  {
+    "university_id": "ece36c8b-699b-5db2-af92-bf6619f5c098",
+    "name": "Kyrgyz-Türkish Manas Üniversity",
+    "country": "Kyrgyzstan",
+    "english": {
+      "value": null,
+      "source_url": "https://www.manas.edu.kg/en/students/admission",
+      "checked_at": "2026-11-14"
+    },
+    "application_route_and_fee": {
+      "value": "University-run selection and placement examination / agreed national exams; foreign candidates submit documents to international relations office. No application fee found.",
+      "source_url": "https://www.manas.edu.kg/en/students/admission",
+      "checked_at": "2026-11-14"
+    },
+    "deadlines": {
+      "value": {
+        "latest_date_found": "2024: international application June 10–July 17, written exam July 23, interview July 24–25. Current cycle dates not published on fetched page."
+      },
+      "source_url": "https://www.manas.edu.kg/en/students/admission",
+      "checked_at": "2026-11-14"
+    },
+    "international_tuition_per_year": {
+      "value": {
+        "value": null,
+        "note": "Rector’s official page describes education as free at KTMU; no 2026/27 international undergraduate tuition schedule located."
+      },
+      "source_url": "https://www.manas.edu.kg/en/about_manas/leadership",
+      "checked_at": "2026-11-14"
+    },
+    "international_aid": {
+      "value": {
+        "available": true,
+        "note": "Official university page says KTMU provides free education and scholarships to students; countries listed include Uzbekistan, Kazakhstan and Tajikistan. Award conditions not found."
+      },
+      "source_url": "https://www.manas.edu.kg/en/about_manas/leadership",
+      "checked_at": "2026-11-14"
+    },
+    "foundation_for_11_year_certificate": {
+      "value": null,
+      "source_url": "https://www.manas.edu.kg/en/students/admission",
+      "checked_at": "2026-11-14"
+    },
+    "sources": [
+      "https://www.manas.edu.kg/en/students/admission",
+      "https://www.manas.edu.kg/en/about_manas/leadership"
+    ],
+    "verification_status": "staged"
+  },
+  {
+    "university_id": "be81cb5c-6657-5124-bc3c-945fa7d4b724",
+    "name": "Kyrgyz Russian Slavic University",
+    "country": "Kyrgyzstan",
+    "english": {
+      "value": null,
+      "source_url": "https://www.krsu.kg/en/postupayushhim/xod-priema/",
+      "checked_at": "2026-11-14"
+    },
+    "application_route_and_fee": {
+      "value": "Foreign applicants use Kyrgyz Ministry of Education portal edugate.ilim.gov.kg for contract applications; KRSU / study.krsu.kg used for Russian budget and Kyrgyz grant pathways. Fee not found.",
+      "source_url": "https://www.krsu.kg/en/postupayushhim/xod-priema/",
+      "checked_at": "2026-11-14"
+    },
+    "deadlines": {
+      "value": {
+        "cycle": "2026/27",
+        "opens": "2026-06-20",
+        "note": "2026 admission underway; program-specific closing date not extracted."
+      },
+      "source_url": "https://www.krsu.kg/en/postupayushhim/xod-priema/",
+      "checked_at": "2026-11-14"
+    },
+    "international_tuition_per_year": {
+      "value": null,
+      "source_url": "https://www.krsu.kg/en/postupayushhim/bakalavriat-specialitet/osobennosti-postupleniya-na-bakalavriat-specialitet/",
+      "checked_at": "2026-11-14"
+    },
+    "international_aid": {
+      "value": {
+        "available": true,
+        "note": "Russian budget places and Kyrgyz grant places described for eligible foreign/CIS applicants, including Tajikistan and Kazakhstan for Kyrgyz grant category."
+      },
+      "source_url": "https://www.krsu.kg/en/mezhdunarodnaya-deyatelnost/otdel-po-rabote-s-inostrannymi-studentami/",
+      "checked_at": "2026-11-14"
+    },
+    "foundation_for_11_year_certificate": {
+      "value": {
+        "available": true,
+        "note": "Foreign-student office provides preparatory courses in Russian as a foreign language; certificate-specific foundation route not identified."
+      },
+      "source_url": "https://www.krsu.kg/en/postupayushhim/bakalavriat-specialitet/osobennosti-postupleniya-na-bakalavriat-specialitet/",
+      "checked_at": "2026-11-14"
+    },
+    "sources": [
+      "https://www.krsu.kg/en/postupayushhim/xod-priema/",
+      "https://www.krsu.kg/en/postupayushhim/bakalavriat-specialitet/osobennosti-postupleniya-na-bakalavriat-specialitet/",
+      "https://www.krsu.kg/en/mezhdunarodnaya-deyatelnost/otdel-po-rabote-s-inostrannymi-studentami/"
+    ],
+    "verification_status": "staged"
+  },
+  {
+    "university_id": "85061c78-c1ee-5e28-ac6b-b92da2ed3ab6",
+    "name": "Moscow State University",
+    "country": "Tajikistan",
+    "english": {
+      "value": null,
+      "source_url": "https://msu.tj/ru/entrance",
+      "checked_at": "2026-11-14"
+    },
+    "application_route_and_fee": {
+      "value": "Direct branch admissions; documents submitted to branch. Application/committee fee not specified in source.",
+      "source_url": "https://msu.tj/ru/entrance",
+      "checked_at": "2026-11-14"
+    },
+    "deadlines": {
+      "value": {
+        "cycle": 2026,
+        "dates": "2026-06-10 to 2026-06-30 for applicants at Dushanbe branch."
+      },
+      "source_url": "https://msu.tj/ru/entrance",
+      "checked_at": "2026-11-14"
+    },
+    "international_tuition_per_year": {
+      "value": {
+        "academic_year": "2026/27",
+        "currency": "TJS/year",
+        "CIS_rates_by_program": {
+          "Applied Mathematics & Informatics": 16000,
+          "Chemistry/Physics/Materials": 16000,
+          "Geology": 16000,
+          "Public and Municipal Administration": 19000,
+          "International Relations": 19000,
+          "Linguistics": 16000
+        },
+        "note": "Latest fee schedule also lists non-CIS foreign rates, higher than rates shown."
+      },
+      "source_url": "https://msu.tj/file/pk/stoimost_obucheniya.pdf",
+      "checked_at": "2026-11-14"
+    },
+    "international_aid": {
+      "value": {
+        "available": true,
+        "note": "State-funded budget places are offered; Russian-government-funded quota exists for eligible foreign applicants (specific eligibility rules apply)."
+      },
+      "source_url": "https://msu.tj/file/pk/pravila_priema_v_2026_godu.pdf",
+      "checked_at": "2026-11-14"
+    },
+    "foundation_for_11_year_certificate": {
+      "value": {
+        "available": true,
+        "note": "Preparatory courses listed in the 2026/27 tuition order; not specifically described as a pathway for 11-year school certificates."
+      },
+      "source_url": "https://msu.tj/file/pk/stoimost_obucheniya.pdf",
+      "checked_at": "2026-11-14"
+    },
+    "sources": [
+      "https://msu.tj/ru/entrance",
+      "https://msu.tj/file/pk/stoimost_obucheniya.pdf",
+      "https://msu.tj/file/pk/pravila_priema_v_2026_godu.pdf"
+    ],
+    "verification_status": "staged"
+  },
+  {
+    "university_id": "b34c4f2c-caf0-55a8-844e-b5e3426102de",
+    "name": "Russian-Tajik Slavonic University",
+    "country": "Tajikistan",
+    "english": {
+      "value": null,
+      "source_url": "https://rtsu.tj/abitur/commission/",
+      "checked_at": "2026-11-14"
+    },
+    "application_route_and_fee": {
+      "value": "International applicants can use Russian/Tajik admissions procedures, with information on official foreign-student admissions page; fee not extracted.",
+      "source_url": "https://rtsu.tj/abitur/commission/",
+      "checked_at": "2026-11-14"
+    },
+    "deadlines": {
+      "value": {
+        "cycle": "2026/27",
+        "note": "Current official admissions page lists 2026–27 rules; specific foreign undergraduate deadlines not extracted."
+      },
+      "source_url": "https://rtsu.tj/abitur/commission/",
+      "checked_at": "2026-11-14"
+    },
+    "international_tuition_per_year": {
+      "value": null,
+      "source_url": "https://rtsu.tj/international_activity/informatsiya-dlya-abiturientov-inostrantsev/",
+      "checked_at": "2026-11-14"
+    },
+    "international_aid": {
+      "value": null,
+      "source_url": "https://rtsu.tj/sveden/files/rim/Summa_oplaty_za_obuchenie_1_studenta%2C_magistranta_postupayuschego_v_dogovornuyu_gruppu_na_2026-2027_uchebnyi_god_raspoznan.pdf",
+      "checked_at": "2026-11-14"
+    },
+    "foundation_for_11_year_certificate": {
+      "value": {
+        "available": true,
+        "note": "One-year preparatory Russian-language courses for foreign citizens are advertised; separate from direct degree admission."
+      },
+      "source_url": "https://rtsu.tj/news/?ELEMENT_CODE=2029",
+      "checked_at": "2026-11-14"
+    },
+    "sources": [
+      "https://rtsu.tj/abitur/commission/",
+      "https://rtsu.tj/international_activity/informatsiya-dlya-abiturientov-inostrantsev/",
+      "https://rtsu.tj/news/?ELEMENT_CODE=2029",
+      "https://rtsu.tj/sveden/files/rim/Summa_oplaty_za_obuchenie_1_studenta%2C_magistranta_postupayuschego_v_dogovornuyu_gruppu_na_2026-2027_uchebnyi_god_raspoznan.pdf"
+    ],
+    "verification_status": "staged"
+  }
+]

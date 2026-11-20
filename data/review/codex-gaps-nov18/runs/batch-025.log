@@ -1,0 +1,124 @@
+OpenAI Codex v0.169.0
+--------
+workdir: /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+model: gpt-6-luna
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: high
+reasoning summaries: none
+session id: 01a1ee80-0c47-7882-bac7-86e48f6e26cd
+--------
+user
+You are a careful admissions-data researcher. For each university below, find facts for an
+INTERNATIONAL applicant to a FIRST-YEAR BACHELOR'S degree starting in autumn 2027 (or the nearest
+published cycle). Use the live web. Rules:
+
+- Official sources only: the university's own website (its domain or subdomains), the national
+  application service (UCAS, Common App, OUAC, uni-assist, Studyinkorea, etc.) or a government
+  statistics office. Never use rankings sites, forums, agencies, Wikipedia or blogs.
+- Every value needs the exact page URL where you read it (source_url). If you could not verify a
+  value on an official page, leave it out (null or an empty list). Never guess or estimate.
+- english: the lowest overall score accepted for undergraduate entry, per test (IELTS Academic
+  overall, TOEFL iBT total, Duolingo, PTE). If programmes differ, give the general/lowest common
+  university minimum and say so in detail (e.g. "6.5 overall, no band below 6.0; some
+  programmes higher").
+- tuition: the yearly tuition for international (non-EU / overseas) undergraduates in the local
+  currency. If it varies by programme give amount = lowest and amount_max = highest, and the
+  academic_year the fee applies to (e.g. "2026/27"). If tuition is free, amount = 0.
+- application_fee: for international first-year applicants, local currency.
+- deadlines: the main 2027-entry first-year deadlines (ISO date YYYY-MM-DD) with the route
+  (e.g. "Common App, Regular Decision", "UCAS", "university portal"). Only dates actually
+  published; if only the 2026-entry date is published, include it and put "2026 entry" in title.
+- sat: policy for international applicants; p25/p75 total SAT only if the university publishes
+  them (Common Data Set or admissions profile).
+- acceptance_rate: only if officially published (CDS, admissions statistics page).
+- notes: one short line on anything important (e.g. "Foundation year required for 11-year
+  school certificates"), else "".
+
+Spend effort on the facts students need most: English minimum, tuition, deadlines. Keep each
+detail under 160 characters. Return only the JSON that matches the schema; use each
+university's id exactly as given.
+
+Universities:
+- id: 80c3fb62-6c22-5ddf-8fe8-841a0a0219b1 | Rice University | Houston, US | http://www.rice.edu/
+- id: 10ca55e3-9e48-58e7-a474-d1fab4ccccdb | University of Oslo | Oslo, NO | http://www.uio.no/
+- id: 0271ce81-bdd1-5aa5-923d-fc97549fa720 | Royal Melbourne Institute of Technology | Melbourne, AU | http://www.rmit.edu.au/
+- id: 72c8eb2c-4178-5106-b3c2-a72e73dc074c | Georgia Institute of Technology-Main Campus | Atlanta, US | http://www.gatech.edu/
+codex
+I’m checking each university’s official admissions and fee pages, using 2027 entry where published and the nearest published cycle otherwise.
+exec
+/bin/zsh -lc 'cat /Users/likeanew/.agents/skills/lemma/SKILL.md' in /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+ succeeded in 0ms:
+---
+name: lemma
+description: Persistent cross-session memory for AI agents via MCP. BEFORE starting ANY task (coding, debugging, refactoring, research, docs, optimization — any language), FIRST call memory_read to load what you already know so you never re-derive or re-explore known facts. AFTER finishing, call memory_add to persist new findings and session_attempt for dead ends — unsaved knowledge is lost permanently. Distills reusable guides from experience.
+---
+
+<!-- lemma:skill:v=0.21.0 -->
+
+# Lemma — Persistent Memory & Learning
+
+Lemma is a persistent memory server for AI agents over the Model Context Protocol.
+Every session starts blank — knowledge survives ONLY through tool calls. If you
+learn something and don't save it (`memory_add`), it is gone permanently.
+
+## Workflow
+1. **RECALL** — `memory_read` / `semantic_search`: load what's already known for this
+   project/task. Never re-explore code or re-derive facts that are already saved.
+2. **ACT** — do the task.
+3. **PERSIST** — `memory_add` for new insights; `guide_practice` for guides applied;
+   `session_attempt` for abandoned/dead-end approaches (the most valuable records).
+
+## Two knowledge layers
+- **Memory fragments** (`memory_read` / `memory_add`): atomic facts. Types: `fact`,
+  `pattern`, `lesson`, `warning`, `context`. Confidence evolves with use and feedback.
+- **Guides** (`guide_get` / `guide_distill` / `guide_practice`): procedural skills
+  distilled from fragments. Track usage count + success/failure rate.
+Pipeline: `experience -> memory_add -> pattern/lesson -> guide_distill -> guide_practice`.
+
+## Tools at a glance
+- **Recall & search**: `memory_read`, `semantic_search`, `memory_library` (full
+  snapshot + maintenance signals), `memory_stats`, `memory_audit`.
+- **Write & maintain**: `memory_add`, `memory_update`, `memory_forget`,
+  `memory_merge`, `memory_relate` (supports / contradicts / supersedes / related_to),
+  `memory_feedback`.
+- **Guides**: `guide_get`, `guide_create`, `guide_distill`, `guide_practice`,
+  `guide_update`, `guide_forget`, `guide_merge`.
+- **Sessions & reasoning**: `session_start`, `session_end`, `session_attempt`,
+  `session_stats`, `suggestion_respond`.
+- **Background intelligence**: `conflict_scan`, `proactive_analysis`,
+  `project_analytics` (run automatically; act on signals when sensible).
+
+## Writing a fragment
+```
+## [Topic Title]
+### Context
+[1-2 sentences: what and why it matters]
+### [Content Section]
+- [Key fact 1]
+- [Key fact 2]
+### Rules (optional)
+- [Absolute constraint]
+```
+One idea per fragment, 30-2000 chars, structured markdown (not prose). **Store
+fragments in ENGLISH** (required for search/retrieval). Never ask permission to save.
+
+## Background intelligence
+Conflict detection, distill/merge/refine suggestions, and auto-linking run
+automatically. From the CLI, `lemma -lib` prints a full knowledge-base snapshot
+and `lemma -vis` launches a visualizer.
+
+web search: 
+web search: site:admission.rice.edu international first year English proficiency tuition 2026-2027 application fee deadline 2027 Rice ...
+web search: 
+web search: site:admission.rice.edu 2026-2027 tuition cost attendance Rice undergraduate tuition 2026-27 ...
+web search: 
+web search: site:rice.edu 2026-2027 tuition undergraduate 2026-27 Rice tuition $ ...
+web search: 
+web search: site:usg.edu "IELTS" "TOEFL" 7.0 90 English proficiency international admissions University System Georgia ...
+codex
+{"universities":[{"id":"80c3fb62-6c22-5ddf-8fe8-841a0a0219b1","english":[{"test":"IELTS","minimum":7.0,"detail":"IELTS Academic overall 7.0.","source_url":"https://admission.rice.edu/apply/first-year-international-applicants"},{"test":"TOEFL iBT","minimum":100,"detail":"100 for tests before 2026-01-21; for tests on/after that date, minimum 5.0 on updated scale.","source_url":"https://admission.rice.edu/apply/first-year-international-applicants"},{"test":"Duolingo","minimum":130,"detail":"130 overall.","source_url":"https://admission.rice.edu/apply/first-year-international-applicants"},{"test":"Cambridge C1/C2","minimum":185,"detail":"Cambridge English C1 Advanced or C2 Proficiency: 185.","source_url":"https://admission.rice.edu/apply/first-year-international-applicants"}],"tuition":{"amount":71140,"amount_max":null,"currency":"USD","period":"year","academic_year":"2026/27","detail":"Undergraduate tuition for first-, second- and third-year students.","source_url":"https://ga.rice.edu/undergraduate-students/student-services-organizations/tuition-fees-expenses/"},"application_fee":{"amount":75,"currency":"USD","source_url":"https://admission.rice.edu/apply/first-year-international-applicants"},"deadlines":[{"title":"Early Decision I, 2027 entry","due_at":"2026-11-01","route":"Common App","source_url":"https://admission.rice.edu/apply/first-year-international-applicants"},{"title":"Early Decision II and Regular Decision, 2027 entry","due_at":"2027-01-04","route":"Common App","source_url":"https://admission.rice.edu/apply/first-year-international-applicants"}],"sat":{"policy":"optional","p25":1510,"p75":1560,"source_url":"https://admission.rice.edu/apply/class-profile"},"acceptance_rate":{"percent":8.0,"year":"2024-2025","source_url":"https://admission.rice.edu/apply/class-profile"},"notes":"Applicants whose first language is not English may meet proficiency through two years of full-time study in an English-language curriculum."},{"id":"10ca55e3-9e48-58e7-a474-d1fab4ccccdb","english":[],"tuition":{"amount":218000,"amount_max":null,"currency":"NOK","period":"year","academic_year":"2027/28","detail":"Technology Systems: Science and Engineering, the university's English-taught bachelor's programme.","source_url":"https://www.uio.no/english/studies/programmes/technology-systems/admission/admission-no-norwegian.html"},"application_fee":null,"deadlines":[{"title":"2027 entry, applicants without Norwegian proficiency","due_at":"2026-12-01","route":"UiO Søknadsweb","source_url":"https://www.uio.no/english/studies/programmes/technology-systems/admission/admission-no-norwegian.html"},{"title":"2027 entry, applicants with Norwegian proficiency","due_at":"2027-04-15","route":"Samordna opptak (NUCAS)","source_url":"https://www.uio.no/english/studies/programmes/technology-systems/admission/admission-norwegian.html"}],"sat":null,"acceptance_rate":null,"notes":"UiO currently has one bachelor's programme taught in English; applicants without Norwegian proficiency apply by 1 December."},{"id":"0271ce81-bdd1-5aa5-923d-fc97549fa720","english":[{"test":"IELTS","minimum":6.5,"detail":"Undergraduate general minimum: 6.5 overall, no band below 6.0; some programmes require higher scores.","source_url":"https://www.rmit.edu.au/study-with-us/international-students/apply-to-rmit-international-students/application-methods/vtac-for-international-students"},{"test":"TOEFL iBT","minimum":79,"detail":"Undergraduate general minimum: 79 total, with section minimums; some programmes require higher scores.","source_url":"https://www.rmit.edu.au/study-with-us/international-students/apply-to-rmit-international-students/application-methods/vtac-for-international-students"},{"test":"PTE Academic","minimum":58,"detail":"Undergraduate general minimum: 58 overall, no communication band below 50; some programmes require higher scores.","source_url":"https://www.rmit.edu.au/study-with-us/international-students/apply-to-rmit-international-students/application-methods/vtac-for-international-students"},{"test":"Cambridge C1/C2","minimum":176,"detail":"Undergraduate general minimum: 176, no component below 169; some programmes require higher scores.","source_url":"https://www.rmit.edu.au/study-with-us/international-students/apply-to-rmit-international-students/application-methods/vtac-for-international-students"}],"tuition":{"amount":36000,"amount_max":56000,"currency":"AUD","period":"year","academic_year":"2026","detail":"RMIT's indicative annual tuition range for international students; varies by course and study level.","source_url":"https://www.rmit.edu.au/study-with-us/international-students/study/cost-of-studying-in-australia"},"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"Application fee applies only to applicants from select countries; amount varies by country."},{"id":"72c8eb2c-4178-5106-b3c2-a72e73dc074c","english":[{"test":"IELTS","minimum":6,"detail":"University System of Georgia minimum IELTS Academic score; Georgia Tech may set a higher requirement.","source_url":"https://www.usg.edu/international-education/esl-programs/english-proficiency-requirements/"},{"test":"TOEFL iBT","minimum":3.5,"detail":"USG minimum on the updated scale (69 before 2026); Georgia Tech may set a higher requirement.","source_url":"https://www.usg.edu/international-education/esl-programs/english-proficiency-requirements/"}],"tuition":{"amount":35610,"amount_max":null,"currency":"USD","period":"year","academic_year":"2026/27","detail":"Out-of-country first-year tuition for two semesters; mandatory student fees are additional.","source_url":"https://finaid.gatech.edu/costs/undergraduate-costs/"},"application_fee":{"amount":85,"currency":"USD","source_url":"https://admission.gatech.edu/first-year/application-fees"},"deadlines":[{"title":"Early Action 1, 2027 entry","due_at":"2026-10-15","route":"Common App","source_url":"https://admission.gatech.edu/first-year/deadlines/"},{"title":"Early Action 2, 2027 entry","due_at":"2026-11-02","route":"Common App","source_url":"https://admission.gatech.edu/first-year/deadlines/"},{"title":"Regular Decision, 2027 entry","due_at":"2027-01-06","route":"Common App","source_url":"https://admission.gatech.edu/first-year/deadlines/"}],"sat":{"policy":"required","p25":null,"p75":null,"source_url":"https://admission.gatech.edu/first-year/standardized-tests"},"acceptance_rate":null,"notes":"First-year applicants must submit SAT or ACT; international applicants must also demonstrate English proficiency."}] }
+tokens used
+52,793
+{"universities":[{"id":"80c3fb62-6c22-5ddf-8fe8-841a0a0219b1","english":[{"test":"IELTS","minimum":7.0,"detail":"IELTS Academic overall 7.0.","source_url":"https://admission.rice.edu/apply/first-year-international-applicants"},{"test":"TOEFL iBT","minimum":100,"detail":"100 for tests before 2026-01-21; for tests on/after that date, minimum 5.0 on updated scale.","source_url":"https://admission.rice.edu/apply/first-year-international-applicants"},{"test":"Duolingo","minimum":130,"detail":"130 overall.","source_url":"https://admission.rice.edu/apply/first-year-international-applicants"},{"test":"Cambridge C1/C2","minimum":185,"detail":"Cambridge English C1 Advanced or C2 Proficiency: 185.","source_url":"https://admission.rice.edu/apply/first-year-international-applicants"}],"tuition":{"amount":71140,"amount_max":null,"currency":"USD","period":"year","academic_year":"2026/27","detail":"Undergraduate tuition for first-, second- and third-year students.","source_url":"https://ga.rice.edu/undergraduate-students/student-services-organizations/tuition-fees-expenses/"},"application_fee":{"amount":75,"currency":"USD","source_url":"https://admission.rice.edu/apply/first-year-international-applicants"},"deadlines":[{"title":"Early Decision I, 2027 entry","due_at":"2026-11-01","route":"Common App","source_url":"https://admission.rice.edu/apply/first-year-international-applicants"},{"title":"Early Decision II and Regular Decision, 2027 entry","due_at":"2027-01-04","route":"Common App","source_url":"https://admission.rice.edu/apply/first-year-international-applicants"}],"sat":{"policy":"optional","p25":1510,"p75":1560,"source_url":"https://admission.rice.edu/apply/class-profile"},"acceptance_rate":{"percent":8.0,"year":"2024-2025","source_url":"https://admission.rice.edu/apply/class-profile"},"notes":"Applicants whose first language is not English may meet proficiency through two years of full-time study in an English-language curriculum."},{"id":"10ca55e3-9e48-58e7-a474-d1fab4ccccdb","english":[],"tuition":{"amount":218000,"amount_max":null,"currency":"NOK","period":"year","academic_year":"2027/28","detail":"Technology Systems: Science and Engineering, the university's English-taught bachelor's programme.","source_url":"https://www.uio.no/english/studies/programmes/technology-systems/admission/admission-no-norwegian.html"},"application_fee":null,"deadlines":[{"title":"2027 entry, applicants without Norwegian proficiency","due_at":"2026-12-01","route":"UiO Søknadsweb","source_url":"https://www.uio.no/english/studies/programmes/technology-systems/admission/admission-no-norwegian.html"},{"title":"2027 entry, applicants with Norwegian proficiency","due_at":"2027-04-15","route":"Samordna opptak (NUCAS)","source_url":"https://www.uio.no/english/studies/programmes/technology-systems/admission/admission-norwegian.html"}],"sat":null,"acceptance_rate":null,"notes":"UiO currently has one bachelor's programme taught in English; applicants without Norwegian proficiency apply by 1 December."},{"id":"0271ce81-bdd1-5aa5-923d-fc97549fa720","english":[{"test":"IELTS","minimum":6.5,"detail":"Undergraduate general minimum: 6.5 overall, no band below 6.0; some programmes require higher scores.","source_url":"https://www.rmit.edu.au/study-with-us/international-students/apply-to-rmit-international-students/application-methods/vtac-for-international-students"},{"test":"TOEFL iBT","minimum":79,"detail":"Undergraduate general minimum: 79 total, with section minimums; some programmes require higher scores.","source_url":"https://www.rmit.edu.au/study-with-us/international-students/apply-to-rmit-international-students/application-methods/vtac-for-international-students"},{"test":"PTE Academic","minimum":58,"detail":"Undergraduate general minimum: 58 overall, no communication band below 50; some programmes require higher scores.","source_url":"https://www.rmit.edu.au/study-with-us/international-students/apply-to-rmit-international-students/application-methods/vtac-for-international-students"},{"test":"Cambridge C1/C2","minimum":176,"detail":"Undergraduate general minimum: 176, no component below 169; some programmes require higher scores.","source_url":"https://www.rmit.edu.au/study-with-us/international-students/apply-to-rmit-international-students/application-methods/vtac-for-international-students"}],"tuition":{"amount":36000,"amount_max":56000,"currency":"AUD","period":"year","academic_year":"2026","detail":"RMIT's indicative annual tuition range for international students; varies by course and study level.","source_url":"https://www.rmit.edu.au/study-with-us/international-students/study/cost-of-studying-in-australia"},"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"Application fee applies only to applicants from select countries; amount varies by country."},{"id":"72c8eb2c-4178-5106-b3c2-a72e73dc074c","english":[{"test":"IELTS","minimum":6,"detail":"University System of Georgia minimum IELTS Academic score; Georgia Tech may set a higher requirement.","source_url":"https://www.usg.edu/international-education/esl-programs/english-proficiency-requirements/"},{"test":"TOEFL iBT","minimum":3.5,"detail":"USG minimum on the updated scale (69 before 2026); Georgia Tech may set a higher requirement.","source_url":"https://www.usg.edu/international-education/esl-programs/english-proficiency-requirements/"}],"tuition":{"amount":35610,"amount_max":null,"currency":"USD","period":"year","academic_year":"2026/27","detail":"Out-of-country first-year tuition for two semesters; mandatory student fees are additional.","source_url":"https://finaid.gatech.edu/costs/undergraduate-costs/"},"application_fee":{"amount":85,"currency":"USD","source_url":"https://admission.gatech.edu/first-year/application-fees"},"deadlines":[{"title":"Early Action 1, 2027 entry","due_at":"2026-10-15","route":"Common App","source_url":"https://admission.gatech.edu/first-year/deadlines/"},{"title":"Early Action 2, 2027 entry","due_at":"2026-11-02","route":"Common App","source_url":"https://admission.gatech.edu/first-year/deadlines/"},{"title":"Regular Decision, 2027 entry","due_at":"2027-01-06","route":"Common App","source_url":"https://admission.gatech.edu/first-year/deadlines/"}],"sat":{"policy":"required","p25":null,"p75":null,"source_url":"https://admission.gatech.edu/first-year/standardized-tests"},"acceptance_rate":null,"notes":"First-year applicants must submit SAT or ACT; international applicants must also demonstrate English proficiency."}] }

@@ -1,0 +1,124 @@
+OpenAI Codex v0.169.0
+--------
+workdir: /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+model: gpt-6-luna
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: high
+reasoning summaries: none
+session id: 01a1ee99-291b-77f3-8119-62fb5a686370
+--------
+user
+You are a careful admissions-data researcher. For each university below, find facts for an
+INTERNATIONAL applicant to a FIRST-YEAR BACHELOR'S degree starting in autumn 2027 (or the nearest
+published cycle). Use the live web. Rules:
+
+- Official sources only: the university's own website (its domain or subdomains), the national
+  application service (UCAS, Common App, OUAC, uni-assist, Studyinkorea, etc.) or a government
+  statistics office. Never use rankings sites, forums, agencies, Wikipedia or blogs.
+- Every value needs the exact page URL where you read it (source_url). If you could not verify a
+  value on an official page, leave it out (null or an empty list). Never guess or estimate.
+- english: the lowest overall score accepted for undergraduate entry, per test (IELTS Academic
+  overall, TOEFL iBT total, Duolingo, PTE). If programmes differ, give the general/lowest common
+  university minimum and say so in detail (e.g. "6.5 overall, no band below 6.0; some
+  programmes higher").
+- tuition: the yearly tuition for international (non-EU / overseas) undergraduates in the local
+  currency. If it varies by programme give amount = lowest and amount_max = highest, and the
+  academic_year the fee applies to (e.g. "2026/27"). If tuition is free, amount = 0.
+- application_fee: for international first-year applicants, local currency.
+- deadlines: the main 2027-entry first-year deadlines (ISO date YYYY-MM-DD) with the route
+  (e.g. "Common App, Regular Decision", "UCAS", "university portal"). Only dates actually
+  published; if only the 2026-entry date is published, include it and put "2026 entry" in title.
+- sat: policy for international applicants; p25/p75 total SAT only if the university publishes
+  them (Common Data Set or admissions profile).
+- acceptance_rate: only if officially published (CDS, admissions statistics page).
+- notes: one short line on anything important (e.g. "Foundation year required for 11-year
+  school certificates"), else "".
+
+Spend effort on the facts students need most: English minimum, tuition, deadlines. Keep each
+detail under 160 characters. Return only the JSON that matches the schema; use each
+university's id exactly as given.
+
+Universities:
+- id: 448df826-796b-515f-97c4-04912c826798 | Universidad de Costa Rica | San José, CR | http://www.ucr.ac.cr/
+- id: 89c0d528-b7ba-5984-8368-d0af138c85d3 | Anna University | Chennai, IN | http://www.annauniv.edu/
+- id: 68b56559-017a-5e4d-bc19-355cb4b82282 | Concordia University | Montreal, CA | http://www.concordia.ca/
+- id: c9d404fc-68fc-55af-81b2-dd94142c45e9 | University of Kansas | Lawrence, US | http://www.ku.edu/
+codex
+I’ll verify the admissions facts against official university or application-service pages, prioritizing English requirements, tuition, and published deadlines.
+exec
+/bin/zsh -lc 'cat /Users/likeanew/.agents/skills/lemma/SKILL.md' in /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+ succeeded in 0ms:
+---
+name: lemma
+description: Persistent cross-session memory for AI agents via MCP. BEFORE starting ANY task (coding, debugging, refactoring, research, docs, optimization — any language), FIRST call memory_read to load what you already know so you never re-derive or re-explore known facts. AFTER finishing, call memory_add to persist new findings and session_attempt for dead ends — unsaved knowledge is lost permanently. Distills reusable guides from experience.
+---
+
+<!-- lemma:skill:v=0.21.0 -->
+
+# Lemma — Persistent Memory & Learning
+
+Lemma is a persistent memory server for AI agents over the Model Context Protocol.
+Every session starts blank — knowledge survives ONLY through tool calls. If you
+learn something and don't save it (`memory_add`), it is gone permanently.
+
+## Workflow
+1. **RECALL** — `memory_read` / `semantic_search`: load what's already known for this
+   project/task. Never re-explore code or re-derive facts that are already saved.
+2. **ACT** — do the task.
+3. **PERSIST** — `memory_add` for new insights; `guide_practice` for guides applied;
+   `session_attempt` for abandoned/dead-end approaches (the most valuable records).
+
+## Two knowledge layers
+- **Memory fragments** (`memory_read` / `memory_add`): atomic facts. Types: `fact`,
+  `pattern`, `lesson`, `warning`, `context`. Confidence evolves with use and feedback.
+- **Guides** (`guide_get` / `guide_distill` / `guide_practice`): procedural skills
+  distilled from fragments. Track usage count + success/failure rate.
+Pipeline: `experience -> memory_add -> pattern/lesson -> guide_distill -> guide_practice`.
+
+## Tools at a glance
+- **Recall & search**: `memory_read`, `semantic_search`, `memory_library` (full
+  snapshot + maintenance signals), `memory_stats`, `memory_audit`.
+- **Write & maintain**: `memory_add`, `memory_update`, `memory_forget`,
+  `memory_merge`, `memory_relate` (supports / contradicts / supersedes / related_to),
+  `memory_feedback`.
+- **Guides**: `guide_get`, `guide_create`, `guide_distill`, `guide_practice`,
+  `guide_update`, `guide_forget`, `guide_merge`.
+- **Sessions & reasoning**: `session_start`, `session_end`, `session_attempt`,
+  `session_stats`, `suggestion_respond`.
+- **Background intelligence**: `conflict_scan`, `proactive_analysis`,
+  `project_analytics` (run automatically; act on signals when sensible).
+
+## Writing a fragment
+```
+## [Topic Title]
+### Context
+[1-2 sentences: what and why it matters]
+### [Content Section]
+- [Key fact 1]
+- [Key fact 2]
+### Rules (optional)
+- [Absolute constraint]
+```
+One idea per fragment, 30-2000 chars, structured markdown (not prose). **Store
+fragments in ENGLISH** (required for search/retrieval). Never ask permission to save.
+
+## Background intelligence
+Conflict detection, distill/merge/refine suggestions, and auto-linking run
+automatically. From the CLI, `lemma -lib` prints a full knowledge-base snapshot
+and `lemma -vis` launches a visualizer.
+
+web search: 
+web search: site:ucr.ac.cr international undergraduate admission English requirements tuition fees 2026 2027 UCR ...
+web search: 
+web search: site:annauniv.edu "international" "undergraduate" admission Anna University foreign students ...
+web search: 
+web search: site:concordia.ca "Application fee" "undergraduate" "$" Concordia 2026 ...
+web search: 
+web search: site:ku.edu international undergraduate tuition 2026-2027 cost attendance nonresident undergraduate ...
+codex
+{"universities":[{"id":"448df826-796b-515f-97c4-04912c826798","english":[],"tuition":null,"application_fee":null,"deadlines":[{"title":"2027 entry application registration closes","due_at":"2026-03-20","route":"UCR admission process","source_url":"https://ori.ucr.ac.cr/inicio/preguntas-frecuentes/admision"}],"sat":null,"acceptance_rate":null,"notes":"Applicants take UCR's admission aptitude test; instruction and degree study are in Spanish."},{"id":"89c0d528-b7ba-5984-8368-d0af138c85d3","english":[],"tuition":{"amount":3750,"amount_max":7500,"currency":"USD","period":"year","academic_year":"2026/27","detail":"Foreign-student UG annual fee for two semesters; Computer Science, IT and ECE cost $7,500.","source_url":"https://www.annauniv.edu/cir/rules.html"},"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":""},{"id":"68b56559-017a-5e4d-bc19-355cb4b82282","english":[{"test":"IELTS","minimum":6,"detail":"Academic overall 6.0; no component below 5.5. Some programs require higher scores.","source_url":"https://www.concordia.ca/admissions/undergraduate/requirements/english-language-proficiency.html?print=1"},{"test":"TOEFL iBT","minimum":70,"detail":"70 total; tests from Jan 2026 use new scale: 4.0, no section below 3.5. Some programs require higher scores.","source_url":"https://www.concordia.ca/admissions/undergraduate/requirements/english-language-proficiency.html?print=1"},{"test":"Duolingo","minimum":105,"detail":"105 overall, no subscore below 90. Some programs require higher scores.","source_url":"https://www.concordia.ca/admissions/undergraduate/requirements/english-language-proficiency.html?print=1"},{"test":"PTE Academic","minimum":50,"detail":"50 overall, minimum 46 in speaking and writing. Some programs require higher scores.","source_url":"https://www.concordia.ca/admissions/undergraduate/requirements/english-language-proficiency.html?print=1"}],"tuition":{"amount":30300,"amount_max":42000,"currency":"CAD","period":"year","academic_year":"2026/27","detail":"Tuition only, estimated at 30 credits/year using Fall 2026 rates: $1,010–$1,400 per credit by program.","source_url":"https://www.concordia.ca/students/financial/tuition-fees/rates/undergrad.html"},"application_fee":{"amount":100,"currency":"CAD","source_url":"https://www.concordia.ca/students/financial/tuition-fees/university-fees.html"},"deadlines":[{"title":"Fall 2027 international applicant deadline","due_at":"2027-02-01","route":"Concordia application portal","source_url":"https://www.concordia.ca/academics/undergraduate/calendar/current/section-13-admission-regulations/section-13-5-applying-for-admission.html"}],"sat":{"policy":"optional","p25":null,"p75":null,"source_url":"https://www.concordia.ca/admissions/undergraduate/international/usa.html"},"acceptance_rate":null,"notes":"International tuition varies by faculty/program; per-credit rates used for annual estimate."},{"id":"c9d404fc-68fc-55af-81b2-dd94142c45e9","english":[{"test":"IELTS","minimum":6.5,"detail":"6.5 Academic; minimum 6.0 in each subscore for full-time degree coursework.","source_url":"https://world.ku.edu/english-proficiency"},{"test":"TOEFL iBT","minimum":79,"detail":"79 on outgoing scale, minimum 18 subscores; tests from Jan. 21, 2026: 4.5, minimum 4 subscores.","source_url":"https://world.ku.edu/english-proficiency"},{"test":"PTE Academic","minimum":53,"detail":"53 overall; minimum 48 subscore for full-time degree coursework.","source_url":"https://world.ku.edu/english-proficiency"}],"tuition":{"amount":31779,"amount_max":null,"currency":"USD","period":"year","academic_year":"2026/27","detail":"Nonresident undergraduate tuition estimate for 30 credit hours; course fees may apply.","source_url":"https://financialaid.ku.edu/estimated-cost-of-attendance"},"application_fee":{"amount":90,"currency":"USD","source_url":"https://world.ku.edu/apply"},"deadlines":[{"title":"Fall 2027 application deadline","due_at":"2027-05-01","route":"KU International Admissions portal","source_url":"https://world.ku.edu/apply"}],"sat":{"policy":"optional","p25":null,"p75":null,"source_url":"https://admissions.ku.edu/apply"},"acceptance_rate":null,"notes":"Applicants below full English proficiency may be admitted with required English coursework."}] }
+tokens used
+41,977
+{"universities":[{"id":"448df826-796b-515f-97c4-04912c826798","english":[],"tuition":null,"application_fee":null,"deadlines":[{"title":"2027 entry application registration closes","due_at":"2026-03-20","route":"UCR admission process","source_url":"https://ori.ucr.ac.cr/inicio/preguntas-frecuentes/admision"}],"sat":null,"acceptance_rate":null,"notes":"Applicants take UCR's admission aptitude test; instruction and degree study are in Spanish."},{"id":"89c0d528-b7ba-5984-8368-d0af138c85d3","english":[],"tuition":{"amount":3750,"amount_max":7500,"currency":"USD","period":"year","academic_year":"2026/27","detail":"Foreign-student UG annual fee for two semesters; Computer Science, IT and ECE cost $7,500.","source_url":"https://www.annauniv.edu/cir/rules.html"},"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":""},{"id":"68b56559-017a-5e4d-bc19-355cb4b82282","english":[{"test":"IELTS","minimum":6,"detail":"Academic overall 6.0; no component below 5.5. Some programs require higher scores.","source_url":"https://www.concordia.ca/admissions/undergraduate/requirements/english-language-proficiency.html?print=1"},{"test":"TOEFL iBT","minimum":70,"detail":"70 total; tests from Jan 2026 use new scale: 4.0, no section below 3.5. Some programs require higher scores.","source_url":"https://www.concordia.ca/admissions/undergraduate/requirements/english-language-proficiency.html?print=1"},{"test":"Duolingo","minimum":105,"detail":"105 overall, no subscore below 90. Some programs require higher scores.","source_url":"https://www.concordia.ca/admissions/undergraduate/requirements/english-language-proficiency.html?print=1"},{"test":"PTE Academic","minimum":50,"detail":"50 overall, minimum 46 in speaking and writing. Some programs require higher scores.","source_url":"https://www.concordia.ca/admissions/undergraduate/requirements/english-language-proficiency.html?print=1"}],"tuition":{"amount":30300,"amount_max":42000,"currency":"CAD","period":"year","academic_year":"2026/27","detail":"Tuition only, estimated at 30 credits/year using Fall 2026 rates: $1,010–$1,400 per credit by program.","source_url":"https://www.concordia.ca/students/financial/tuition-fees/rates/undergrad.html"},"application_fee":{"amount":100,"currency":"CAD","source_url":"https://www.concordia.ca/students/financial/tuition-fees/university-fees.html"},"deadlines":[{"title":"Fall 2027 international applicant deadline","due_at":"2027-02-01","route":"Concordia application portal","source_url":"https://www.concordia.ca/academics/undergraduate/calendar/current/section-13-admission-regulations/section-13-5-applying-for-admission.html"}],"sat":{"policy":"optional","p25":null,"p75":null,"source_url":"https://www.concordia.ca/admissions/undergraduate/international/usa.html"},"acceptance_rate":null,"notes":"International tuition varies by faculty/program; per-credit rates used for annual estimate."},{"id":"c9d404fc-68fc-55af-81b2-dd94142c45e9","english":[{"test":"IELTS","minimum":6.5,"detail":"6.5 Academic; minimum 6.0 in each subscore for full-time degree coursework.","source_url":"https://world.ku.edu/english-proficiency"},{"test":"TOEFL iBT","minimum":79,"detail":"79 on outgoing scale, minimum 18 subscores; tests from Jan. 21, 2026: 4.5, minimum 4 subscores.","source_url":"https://world.ku.edu/english-proficiency"},{"test":"PTE Academic","minimum":53,"detail":"53 overall; minimum 48 subscore for full-time degree coursework.","source_url":"https://world.ku.edu/english-proficiency"}],"tuition":{"amount":31779,"amount_max":null,"currency":"USD","period":"year","academic_year":"2026/27","detail":"Nonresident undergraduate tuition estimate for 30 credit hours; course fees may apply.","source_url":"https://financialaid.ku.edu/estimated-cost-of-attendance"},"application_fee":{"amount":90,"currency":"USD","source_url":"https://world.ku.edu/apply"},"deadlines":[{"title":"Fall 2027 application deadline","due_at":"2027-05-01","route":"KU International Admissions portal","source_url":"https://world.ku.edu/apply"}],"sat":{"policy":"optional","p25":null,"p75":null,"source_url":"https://admissions.ku.edu/apply"},"acceptance_rate":null,"notes":"Applicants below full English proficiency may be admitted with required English coursework."}] }

@@ -1,0 +1,530 @@
+{
+ "https://www.campuschina.org/": {
+  "url": "https://www.campuschina.org/",
+  "status": 0,
+  "finalUrl": "https://www.campuschina.org/",
+  "ok": false,
+  "reason": "no response (curl: (6) Could not resolve host: www.campuschina.org)",
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.studyinjapan.go.jp/en/smap-stopj-applications-undergraduate.html": {
+  "url": "https://www.studyinjapan.go.jp/en/smap-stopj-applications-undergraduate.html",
+  "status": 200,
+  "finalUrl": "https://www.studyinjapan.go.jp/en/smap-stopj-applications-undergraduate.html",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://stipendiumhungaricum.hu/apply/": {
+  "url": "https://stipendiumhungaricum.hu/apply/",
+  "status": 200,
+  "finalUrl": "https://stipendiumhungaricum.hu/apply/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.studyinkorea.go.kr/en/plan/gksNoticeRead.do?bbsId=BBSMSTR_000000000461&nttId=4527": {
+  "url": "https://www.studyinkorea.go.kr/en/plan/gksNoticeRead.do?bbsId=BBSMSTR_000000000461&nttId=4527",
+  "status": 200,
+  "finalUrl": "https://www.studyinkorea.go.kr/en/plan/gksNoticeRead.do?bbsId=BBSMSTR_000000000461&nttId=4527",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://scholarships.studyinromania.gov.ro/scholarship-about": {
+  "url": "https://scholarships.studyinromania.gov.ro/scholarship-about",
+  "status": 200,
+  "finalUrl": "https://scholarships.studyinromania.gov.ro/scholarship-about",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.moe.gov.bn/blog/2026/10/17/surat-pemberitahuan-ministry-of-education-for-his-majesty-the-sultan-and-yang-di-pertuan-negara-brunei-darussalam-governments-scholarship-scheme-general-for-the-academic-session-2027-2028/": {
+  "url": "https://www.moe.gov.bn/blog/2026/10/17/surat-pemberitahuan-ministry-of-education-for-his-majesty-the-sultan-and-yang-di-pertuan-negara-brunei-darussalam-governments-scholarship-scheme-general-for-the-academic-session-2027-2028/",
+  "status": 200,
+  "finalUrl": "https://www.moe.gov.bn/blog/2026/10/17/surat-pemberitahuan-ministry-of-education-for-his-majesty-the-sultan-and-yang-di-pertuan-negara-brunei-darussalam-governments-scholarship-scheme-general-for-the-academic-session-2027-2028/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://education-in-russia.com/": {
+  "url": "https://education-in-russia.com/",
+  "status": 200,
+  "finalUrl": "https://education-in-russia.com/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://erasmus-plus.ec.europa.eu/opportunities/opportunities-for-individuals/students/studying-abroad": {
+  "url": "https://erasmus-plus.ec.europa.eu/opportunities/opportunities-for-individuals/students/studying-abroad",
+  "status": 200,
+  "finalUrl": "https://erasmus-plus.ec.europa.eu/opportunities/individuals/students/studying-abroad",
+  "ok": true,
+  "reason": "redirect to https://erasmus-plus.ec.europa.eu/opportunities/individuals/students/studying-abroad",
+  "checkedAt": "2026-11-14"
+ },
+ "https://studyinkorea.go.kr/ko/plan/gksNoticeRead.do?bbsId=BBSMSTR_000000000461&nttId=4522": {
+  "url": "https://studyinkorea.go.kr/ko/plan/gksNoticeRead.do?bbsId=BBSMSTR_000000000461&nttId=4522",
+  "status": 200,
+  "finalUrl": "https://studyinkorea.go.kr/ko/plan/gksNoticeRead.do?bbsId=BBSMSTR_000000000461&nttId=4522",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.turkiyeburslari.gov.tr/fulltimeprograms": {
+  "url": "https://www.turkiyeburslari.gov.tr/fulltimeprograms",
+  "status": 200,
+  "finalUrl": "https://www.turkiyeburslari.gov.tr/fulltimeprograms",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://admissions.yale.edu/international": {
+  "url": "https://admissions.yale.edu/international",
+  "status": 200,
+  "finalUrl": "https://admissions.yale.edu/international",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://sfs.mit.edu/undergraduate-students/types-of-aid/mit-scholarships-grants/": {
+  "url": "https://sfs.mit.edu/undergraduate-students/types-of-aid/mit-scholarships-grants/",
+  "status": 200,
+  "finalUrl": "https://sfs.mit.edu/undergraduate-students/types-of-aid/mit-scholarships-grants/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://admission.princeton.edu/apply/international-students": {
+  "url": "https://admission.princeton.edu/apply/international-students",
+  "status": 200,
+  "finalUrl": "https://admission.princeton.edu/apply/international-students",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.cambridgetrust.org/find-a-scholarship/": {
+  "url": "https://www.cambridgetrust.org/find-a-scholarship/",
+  "status": 200,
+  "finalUrl": "https://www.cambridgetrust.org/find-a-scholarship/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.cambridgetrust.org/scholarship/cambridge-trust-global-impact-scholarship/": {
+  "url": "https://www.cambridgetrust.org/scholarship/cambridge-trust-global-impact-scholarship/",
+  "status": 200,
+  "finalUrl": "https://www.cambridgetrust.org/scholarship/cambridge-trust-global-impact-scholarship/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.ox.ac.uk/admissions/undergraduate/fees-and-funding/oxford-bursaries-and-scholarships": {
+  "url": "https://www.ox.ac.uk/admissions/undergraduate/fees-and-funding/oxford-bursaries-and-scholarships",
+  "status": 403,
+  "finalUrl": "https://www.ox.ac.uk/admissions/undergraduate/fees-and-funding/oxford-bursaries-and-scholarships",
+  "ok": false,
+  "reason": "HTTP 403",
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.ucl.ac.uk/scholarships/ucl-global-undergraduate-scholarship": {
+  "url": "https://www.ucl.ac.uk/scholarships/ucl-global-undergraduate-scholarship",
+  "status": 403,
+  "finalUrl": "https://www.ucl.ac.uk/scholarships/ucl-global-undergraduate-scholarship",
+  "ok": false,
+  "reason": "HTTP 403",
+  "checkedAt": "2026-11-14"
+ },
+ "https://you.ubc.ca/financial-planning/scholarships-awards-international-students/international-scholars/": {
+  "url": "https://you.ubc.ca/financial-planning/scholarships-awards-international-students/international-scholars/",
+  "status": 200,
+  "finalUrl": "https://you.ubc.ca/financial-planning/scholarships-awards-international-students/international-scholars/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://oia.korea.ac.kr/oia2026/KU-Scholarships.do": {
+  "url": "https://oia.korea.ac.kr/oia2026/KU-Scholarships.do",
+  "status": 200,
+  "finalUrl": "https://oia.korea.ac.kr/oia2026/KU-Scholarships.do",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://you.ubc.ca/financial-planning/scholarships-awards-international-students/international-entrance-scholarships": {
+  "url": "https://you.ubc.ca/financial-planning/scholarships-awards-international-students/international-entrance-scholarships",
+  "status": 200,
+  "finalUrl": "https://you.ubc.ca/financial-planning/scholarships-awards-international-students/international-entrance-scholarships",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://en.snu.ac.kr/admission/undergraduate/scholarships/after_admission": {
+  "url": "https://en.snu.ac.kr/admission/undergraduate/scholarships/after_admission",
+  "status": 200,
+  "finalUrl": "https://en.snu.ac.kr/admission/undergraduate/scholarships/after_admission",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://ss.china-embassy.gov.cn/eng/zytx/202610/t20261023_12046188.htm": {
+  "url": "https://ss.china-embassy.gov.cn/eng/zytx/202610/t20261023_12046188.htm",
+  "status": 200,
+  "finalUrl": "https://ss.china-embassy.gov.cn/eng/zytx/202610/t20261023_12046188.htm",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.ntu.edu.sg/admissions/undergraduate/scholarships-and-awards/scholarship-opportunities/detail/asean-undergraduate-scholarship": {
+  "url": "https://www.ntu.edu.sg/admissions/undergraduate/scholarships-and-awards/scholarship-opportunities/detail/asean-undergraduate-scholarship",
+  "status": 200,
+  "finalUrl": "https://www.ntu.edu.sg/admissions/undergraduate/scholarships-and-awards/scholarship-opportunities/detail/asean-undergraduate-scholarship",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.nus.edu.sg/oam/scholarships": {
+  "url": "https://www.nus.edu.sg/oam/scholarships",
+  "status": 200,
+  "finalUrl": "https://www.nus.edu.sg/oam/scholarships",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://financialaid.stanford.edu/undergrad/how/international.html": {
+  "url": "https://financialaid.stanford.edu/undergrad/how/international.html",
+  "status": 200,
+  "finalUrl": "https://financialaid.stanford.edu/undergrad/how/international.html",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://my.gov.uz/en/life-situations/82c89d3d-0e93-4ef9-b04c-d8b67cec66ba": {
+  "url": "https://my.gov.uz/en/life-situations/82c89d3d-0e93-4ef9-b04c-d8b67cec66ba",
+  "status": 200,
+  "finalUrl": "https://my.gov.uz/en/life-situations/82c89d3d-0e93-4ef9-b04c-d8b67cec66ba",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.studyinjapan.go.jp/en/planning/scholarships/mext-scholarships/": {
+  "url": "https://www.studyinjapan.go.jp/en/planning/scholarships/mext-scholarships/",
+  "status": 200,
+  "finalUrl": "https://www.studyinjapan.go.jp/en/planning/scholarships/mext-scholarships/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://college.harvard.edu/financial-aid/how-aid-works": {
+  "url": "https://college.harvard.edu/financial-aid/how-aid-works",
+  "status": 200,
+  "finalUrl": "https://college.harvard.edu/financial-aid/how-aid-works",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.unipd.it/en/borse-studio-regionali": {
+  "url": "https://www.unipd.it/en/borse-studio-regionali",
+  "status": 200,
+  "finalUrl": "https://www.unipd.it/en/borse-studio-regionali",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www2.daad.de/deutschland/stipendium/datenbank/en/21148-scholarship-database.pdf?daad=&detail=10000207&intention=1&origin=4&page=1&q=&status=&subjectGrps=D": {
+  "url": "https://www2.daad.de/deutschland/stipendium/datenbank/en/21148-scholarship-database.pdf?daad=&detail=10000207&intention=1&origin=4&page=1&q=&status=&subjectGrps=D",
+  "status": 403,
+  "finalUrl": "https://www2.daad.de/deutschland/stipendium/datenbank/en/21148-scholarship-database.pdf?daad=&detail=10000207&intention=1&origin=4&page=1&q=&status=&subjectGrps=D",
+  "ok": false,
+  "reason": "HTTP 403",
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.unipd.it/en/padua-international-excellence-scholarship-programme": {
+  "url": "https://www.unipd.it/en/padua-international-excellence-scholarship-programme",
+  "status": 200,
+  "finalUrl": "https://www.unipd.it/en/padua-international-excellence-scholarship-programme",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://iro.sabanciuniv.edu/en/scholarships": {
+  "url": "https://iro.sabanciuniv.edu/en/scholarships",
+  "status": 200,
+  "finalUrl": "https://iro.sabanciuniv.edu/en/scholarships",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://iso2.metu.edu.tr/en/scholarship-opportunities": {
+  "url": "https://iso2.metu.edu.tr/en/scholarship-opportunities",
+  "status": 200,
+  "finalUrl": "https://iso2.metu.edu.tr/en/scholarship-opportunities",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://w3.bilkent.edu.tr/en/international-and-other-students-tuition-fees/": {
+  "url": "https://w3.bilkent.edu.tr/en/international-and-other-students-tuition-fees/",
+  "status": 200,
+  "finalUrl": "https://w3.bilkent.edu.tr/en/international-and-other-students-tuition-fees/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.bristol.ac.uk/students/support/finances/scholarships/think-big-scholarships/": {
+  "url": "https://www.bristol.ac.uk/students/support/finances/scholarships/think-big-scholarships/",
+  "status": 200,
+  "finalUrl": "https://www.bristol.ac.uk/students/support/finances/scholarships/think-big-scholarships/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.international.ncc.metu.edu.tr/en/tuition-scholarships": {
+  "url": "https://www.international.ncc.metu.edu.tr/en/tuition-scholarships",
+  "status": 0,
+  "finalUrl": "https://www.international.ncc.metu.edu.tr/en/tuition-scholarships",
+  "ok": false,
+  "reason": "no response (curl: (60) SSL: no alternative certificate subject name matches target host name)",
+  "checkedAt": "2026-11-14"
+ },
+ "https://isd.pku.edu.cn/en/detail.php?id=873": {
+  "url": "https://isd.pku.edu.cn/en/detail.php?id=873",
+  "status": 200,
+  "finalUrl": "https://isd.pku.edu.cn/en/detail.php?id=873",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://isd.pku.edu.cn/en/detail.php?id=835": {
+  "url": "https://isd.pku.edu.cn/en/detail.php?id=835",
+  "status": 200,
+  "finalUrl": "https://isd.pku.edu.cn/en/detail.php?id=835",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://admission.cuhk.edu.hk/fees-financing-your-studies/scholarships/admission-scholarships-for-undergraduates-only/": {
+  "url": "https://admission.cuhk.edu.hk/fees-financing-your-studies/scholarships/admission-scholarships-for-undergraduates-only/",
+  "status": 200,
+  "finalUrl": "https://admission.cuhk.edu.hk/fees-financing-your-studies/scholarships/admission-scholarships-for-undergraduates-only/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.ntu.edu.sg/admissions/undergraduate/scholarships-and-awards/scholarship-opportunities": {
+  "url": "https://www.ntu.edu.sg/admissions/undergraduate/scholarships-and-awards/scholarship-opportunities",
+  "status": 200,
+  "finalUrl": "https://www.ntu.edu.sg/admissions/undergraduate/scholarships-and-awards/scholarship-opportunities",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.admissions.hku.hk/fees-and-scholarships/scholarships": {
+  "url": "https://www.admissions.hku.hk/fees-and-scholarships/scholarships",
+  "status": 200,
+  "finalUrl": "https://www.admissions.hku.hk/fees-and-scholarships/scholarships",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.cityu.edu.hk/admo/faq": {
+  "url": "https://www.cityu.edu.hk/admo/faq",
+  "status": 200,
+  "finalUrl": "https://www.cityu.edu.hk/admo/faq",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.studyinkorea.go.kr/ko/search/universityInfo.do?courseCd=08003&majorCd=74960&tab=univ-departments&univCd=100400": {
+  "url": "https://www.studyinkorea.go.kr/ko/search/universityInfo.do?courseCd=08003&majorCd=74960&tab=univ-departments&univCd=100400",
+  "status": 200,
+  "finalUrl": "https://www.studyinkorea.go.kr/ko/search/universityInfo.do?courseCd=08003&majorCd=74960&tab=univ-departments&univCd=100400",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://admission.kaist.ac.kr/intl-undergraduate/support/coa": {
+  "url": "https://admission.kaist.ac.kr/intl-undergraduate/support/coa",
+  "status": 200,
+  "finalUrl": "https://admission.kaist.ac.kr/intl-undergraduate/support/coa",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.ntu.edu.sg/media/docs/default-source/undergraduate-admissions/scholarships/ntu_undergraduate_scholarships_brochure.pdf": {
+  "url": "https://www.ntu.edu.sg/media/docs/default-source/undergraduate-admissions/scholarships/ntu_undergraduate_scholarships_brochure.pdf",
+  "status": 200,
+  "finalUrl": "https://www.ntu.edu.sg/media/docs/default-source/undergraduate-admissions/scholarships/ntu_undergraduate_scholarships_brochure.pdf",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://admissions.dartmouth.edu/glossary-question/will-my-financial-need-be-part-admissions-decision-made-college-if-i-am-not-us": {
+  "url": "https://admissions.dartmouth.edu/glossary-question/will-my-financial-need-be-part-admissions-decision-made-college-if-i-am-not-us",
+  "status": 200,
+  "finalUrl": "https://admissions.dartmouth.edu/glossary-question/will-my-financial-need-be-part-admissions-decision-made-college-if-i-am-not-us",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://admission.brown.edu/international/financial-aid": {
+  "url": "https://admission.brown.edu/international/financial-aid",
+  "status": 200,
+  "finalUrl": "https://admission.brown.edu/international/financial-aid",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.admissions.caltech.edu/apply/first-year-applicants/international-applicants": {
+  "url": "https://www.admissions.caltech.edu/apply/first-year-applicants/international-applicants",
+  "status": 200,
+  "finalUrl": "https://www.admissions.caltech.edu/apply/first-year-applicants/international-applicants",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://isd.pku.edu.cn/en/detail.php?id=525": {
+  "url": "https://isd.pku.edu.cn/en/detail.php?id=525",
+  "status": 200,
+  "finalUrl": "https://isd.pku.edu.cn/en/detail.php?id=525",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.amherst.edu/offices/financialaid/apply/international": {
+  "url": "https://www.amherst.edu/offices/financialaid/apply/international",
+  "status": 404,
+  "finalUrl": "https://www.amherst.edu/offices/financialaid/apply/international",
+  "ok": false,
+  "reason": "HTTP 404",
+  "checkedAt": "2026-11-14"
+ },
+ "https://admissions.cornell.edu/how-to-apply/first-year-applicants": {
+  "url": "https://admissions.cornell.edu/how-to-apply/first-year-applicants",
+  "status": 200,
+  "finalUrl": "https://admissions.cornell.edu/how-to-apply/first-year-applicants",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.nus.edu.sg/oam/scholarships/scholarships-for-freshmen-international-students/science-technology-undergraduate-scholarship": {
+  "url": "https://www.nus.edu.sg/oam/scholarships/scholarships-for-freshmen-international-students/science-technology-undergraduate-scholarship",
+  "status": 200,
+  "finalUrl": "https://www.nus.edu.sg/oam/scholarships/scholarships-for-freshmen-international-students/science-technology-undergraduate-scholarship",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://en.snu.ac.kr/admission/overview/faq/scholarships": {
+  "url": "https://en.snu.ac.kr/admission/overview/faq/scholarships",
+  "status": 200,
+  "finalUrl": "https://en.snu.ac.kr/admission/overview/faq/scholarships",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.gov.kz/situations/8/intro?lang=en": {
+  "url": "https://www.gov.kz/situations/8/intro?lang=en",
+  "status": 200,
+  "finalUrl": "https://www.gov.kz/situations/8/intro?lang=en",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.jasso.go.jp/en/ryugaku/scholarship_j/ukeire.html": {
+  "url": "https://www.jasso.go.jp/en/ryugaku/scholarship_j/ukeire.html",
+  "status": 200,
+  "finalUrl": "https://www.jasso.go.jp/en/ryugaku/scholarship_j/ukeire.html",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.jasso.go.jp/en/ryugaku/scholarship_j/shoreihi/about.html": {
+  "url": "https://www.jasso.go.jp/en/ryugaku/scholarship_j/shoreihi/about.html",
+  "status": 200,
+  "finalUrl": "https://www.jasso.go.jp/en/ryugaku/scholarship_j/shoreihi/about.html",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://nawa.gov.pl/en/students/foreign-students/the-gen-anders-programme/calls-for-proposals-2026/bachelor-studies": {
+  "url": "https://nawa.gov.pl/en/students/foreign-students/the-gen-anders-programme/calls-for-proposals-2026/bachelor-studies",
+  "status": 200,
+  "finalUrl": "https://nawa.gov.pl/en/students/foreign-students/the-gen-anders-programme/calls-for-proposals-2026/bachelor-studies",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.nus.edu.sg/oam/scholarships/scholarships-for-freshmen-international-students": {
+  "url": "https://www.nus.edu.sg/oam/scholarships/scholarships-for-freshmen-international-students",
+  "status": 200,
+  "finalUrl": "https://www.nus.edu.sg/oam/scholarships/scholarships-for-freshmen-international-students",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.globalugrad.org/apply/": {
+  "url": "https://www.globalugrad.org/apply/",
+  "status": 200,
+  "finalUrl": "https://www.globalugrad.org/apply/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://maorif.tj/index.php/ads/diqat-elon": {
+  "url": "https://maorif.tj/index.php/ads/diqat-elon",
+  "status": 200,
+  "finalUrl": "https://maorif.tj/index.php/ads/diqat-elon",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://dynamicpoli.polimi.it/en/prospective-students/how-much-does-it-cost/scholarships": {
+  "url": "https://dynamicpoli.polimi.it/en/prospective-students/how-much-does-it-cost/scholarships",
+  "status": 200,
+  "finalUrl": "https://dynamicpoli.polimi.it/en/prospective-students/how-much-does-it-cost/scholarships",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://international.ku.edu.tr/wp-content/uploads/2024/08/KU-UGRD-INT-Fall-2024-Leaflet-A4-ENG-merged_compressed.pdf": {
+  "url": "https://international.ku.edu.tr/wp-content/uploads/2024/08/KU-UGRD-INT-Fall-2024-Leaflet-A4-ENG-merged_compressed.pdf",
+  "status": 200,
+  "finalUrl": "https://international.ku.edu.tr/wp-content/uploads/2024/08/KU-UGRD-INT-Fall-2024-Leaflet-A4-ENG-merged_compressed.pdf",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://international.join-tsinghua.edu.cn/Admission1/Freshmen_Scholarships1.htm": {
+  "url": "https://international.join-tsinghua.edu.cn/Admission1/Freshmen_Scholarships1.htm",
+  "status": 200,
+  "finalUrl": "https://international.join-tsinghua.edu.cn/Admission1/Freshmen_Scholarships1.htm",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://future.utoronto.ca/pearson-scholarships": {
+  "url": "https://future.utoronto.ca/pearson-scholarships",
+  "status": 0,
+  "finalUrl": "https://future.utoronto.ca/pearson-scholarships",
+  "ok": false,
+  "reason": "no response (curl: (28) Resolving timed out after 30002 milliseconds)",
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.utsc.utoronto.ca/admissions/scholarships": {
+  "url": "https://www.utsc.utoronto.ca/admissions/scholarships",
+  "status": 0,
+  "finalUrl": "https://www.utsc.utoronto.ca/admissions/scholarships",
+  "ok": false,
+  "reason": "no response (curl: (28) Resolving timed out after 30004 milliseconds)",
+  "checkedAt": "2026-11-14"
+ },
+ "https://future.utoronto.ca/scholarships-international-students": {
+  "url": "https://future.utoronto.ca/scholarships-international-students",
+  "status": 0,
+  "finalUrl": "https://future.utoronto.ca/scholarships-international-students",
+  "ok": false,
+  "reason": "no response (curl: (28) Resolving timed out after 30002 milliseconds)",
+  "checkedAt": "2026-11-14"
+ }
+}

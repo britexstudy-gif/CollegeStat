@@ -1,0 +1,64 @@
+OpenAI Codex v0.169.0
+--------
+workdir: /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+model: gpt-6-luna
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: high
+reasoning summaries: none
+session id: 01a1ee7b-61db-7281-be46-a1a8b3681ffc
+--------
+user
+You are a careful admissions-data researcher. For each university below, find facts for an
+INTERNATIONAL applicant to a FIRST-YEAR BACHELOR'S degree starting in autumn 2027 (or the nearest
+published cycle). Use the live web. Rules:
+
+- Official sources only: the university's own website (its domain or subdomains), the national
+  application service (UCAS, Common App, OUAC, uni-assist, Studyinkorea, etc.) or a government
+  statistics office. Never use rankings sites, forums, agencies, Wikipedia or blogs.
+- Every value needs the exact page URL where you read it (source_url). If you could not verify a
+  value on an official page, leave it out (null or an empty list). Never guess or estimate.
+- english: the lowest overall score accepted for undergraduate entry, per test (IELTS Academic
+  overall, TOEFL iBT total, Duolingo, PTE). If programmes differ, give the general/lowest common
+  university minimum and say so in detail (e.g. "6.5 overall, no band below 6.0; some
+  programmes higher").
+- tuition: the yearly tuition for international (non-EU / overseas) undergraduates in the local
+  currency. If it varies by programme give amount = lowest and amount_max = highest, and the
+  academic_year the fee applies to (e.g. "2026/27"). If tuition is free, amount = 0.
+- application_fee: for international first-year applicants, local currency.
+- deadlines: the main 2027-entry first-year deadlines (ISO date YYYY-MM-DD) with the route
+  (e.g. "Common App, Regular Decision", "UCAS", "university portal"). Only dates actually
+  published; if only the 2026-entry date is published, include it and put "2026 entry" in title.
+- sat: policy for international applicants; p25/p75 total SAT only if the university publishes
+  them (Common Data Set or admissions profile).
+- acceptance_rate: only if officially published (CDS, admissions statistics page).
+- notes: one short line on anything important (e.g. "Foundation year required for 11-year
+  school certificates"), else "".
+
+Spend effort on the facts students need most: English minimum, tuition, deadlines. Keep each
+detail under 160 characters. Return only the JSON that matches the schema; use each
+university's id exactly as given.
+
+Universities:
+- id: 1a5b82c1-d204-5c75-a433-ef5c17e2a9d2 | University of Birmingham | Birmingham, GB | http://www.birmingham.ac.uk/index.aspx
+- id: 8e191d89-10ba-5f03-913b-836c9c7194a0 | Université Paris-Saclay | Gif-sur-Yvette, FR | https://www.universite-paris-saclay.fr/
+- id: bc0bcefc-cf3b-5fc7-bb41-76470ec9ff59 | Lund University | Lund, SE | http://www.lu.se/
+- id: b3a81d8c-44ec-56d8-aa5f-b58d5fce6bfd | Sorbonne Université | Paris, FR | https://www.sorbonne-universite.fr
+codex
+I’ll check each university’s official admissions, language, fees, and deadline pages, using the nearest published cycle where 2027 details aren’t available.
+web search: 
+web search: site:birmingham.ac.uk international undergraduate English language requirements tuition fees 2026 2027 deadline ...
+web search: 
+web search: site:birmingham.ac.uk/study/undergraduate/fees international fees 2026 2027 Birmingham undergraduate ...
+web search: 
+web search: site:birmingham.ac.uk "International tuition fees" "2026" undergraduate £ ...
+web search: 
+web search: 
+web search: 
+web search: site:universityadmissions.se English 6 IELTS 6.5 TOEFL 90 PTE Academic 62 Duolingo Sweden ...
+codex
+{"universities":[{"id":"1a5b82c1-d204-5c75-a433-ef5c17e2a9d2","english":[{"test":"IELTS","minimum":6.0,"detail":"Group A minimum; 5.5 minimum per band. Higher requirements for some courses.","source_url":"https://www.birmingham.ac.uk/study/undergraduate/apply/entry-requirements/international-entry-requirements"},{"test":"TOEFL iBT","minimum":80,"detail":"Group A minimum for tests before Jan 2026; from Jan 2026, 4.5 overall with at least 4 in each skill.","source_url":"https://www.birmingham.ac.uk/study/undergraduate/apply/entry-requirements/international-entry-requirements"},{"test":"PTE Academic","minimum":64,"detail":"Group A minimum, with at least 59 in each skill; some courses require more.","source_url":"https://www.birmingham.ac.uk/study/undergraduate/apply/entry-requirements/international-entry-requirements"},{"test":"Cambridge C1/C2","minimum":169,"detail":"Group A Cambridge Advanced minimum; 162 minimum in each component. Some courses require more.","source_url":"https://www.birmingham.ac.uk/study/undergraduate/apply/entry-requirements/international-entry-requirements"}],"tuition":null,"application_fee":{"amount":34.5,"currency":"GBP","source_url":"https://www.ucas.com/faqs/what-is-the-application-fee-for-the-2027-cycle"},"deadlines":[{"title":"Equal consideration deadline, 2027 entry","due_at":"2027-01-13","route":"UCAS","source_url":"https://www.ucas.com/applying/applying-to-university/dates-and-deadlines-for-uni-applications"}],"sat":null,"acceptance_rate":null,"notes":"International tuition varies by course; the university confirms the yearly fee in each offer."},{"id":"8e191d89-10ba-5f03-913b-836c9c7194a0","english":[],"tuition":null,"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"For non-EU applicants without a French or European baccalaureate, first-year Licence applications use DAP; dates vary by country and route."},{"id":"bc0bcefc-cf3b-5fc7-bb41-76470ec9ff59","english":[{"test":"IELTS","minimum":6.5,"detail":"English 6 minimum; no section below 5.5. Check each programme for higher requirements.","source_url":"https://www.universityadmissions.se/en/entry-requirements/english-language-requirements/"},{"test":"TOEFL iBT","minimum":90,"detail":"English 6 minimum for tests through 20 Jan 2026; for tests from 21 Jan 2026, 4.5 overall, no section below 4.","source_url":"https://www.universityadmissions.se/en/entry-requirements/english-language-requirements/"},{"test":"PTE Academic","minimum":62,"detail":"English 6 minimum; writing score at least 61.","source_url":"https://www.universityadmissions.se/en/entry-requirements/english-language-requirements/"},{"test":"Cambridge C1/C2","minimum":180,"detail":"C1 Advanced minimum overall score for English 6.","source_url":"https://www.universityadmissions.se/en/entry-requirements/english-language-requirements/"}],"tuition":{"amount":125000,"amount_max":205000,"currency":"SEK","period":"year","academic_year":"2026/27","detail":"Published 2026/27 prospectus fees for English-taught Bachelor's programmes; varies by programme.","source_url":"https://www.lunduniversity.lu.se/sites/www.lunduniversity.lu.se/files/2025-08/Lund-university-international-student-prospectus-26-27.pdf"},"application_fee":{"amount":900,"currency":"SEK","source_url":"https://www.universityadmissions.se/en/fees-scholarships-residence-permit/pay-your-application-fee/"},"deadlines":[{"title":"Autumn 2027, international first admissions round","due_at":"2027-01-15","route":"University Admissions in Sweden","source_url":"https://www.universityadmissions.se/en/key-dates-and-deadlines/autumn-semester-dates/"}],"sat":null,"acceptance_rate":null,"notes":"English-taught Bachelor's programmes generally require English 6; applicants can also meet this through qualifying prior studies."},{"id":"b3a81d8c-44ec-56d8-aa5f-b58d5dce6bfd","english":[],"tuition":null,"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"Non-EU students may apply for exemption from differentiated tuition; approval depends on the university's criteria."}] }
+tokens used
+80,071
+{"universities":[{"id":"1a5b82c1-d204-5c75-a433-ef5c17e2a9d2","english":[{"test":"IELTS","minimum":6.0,"detail":"Group A minimum; 5.5 minimum per band. Higher requirements for some courses.","source_url":"https://www.birmingham.ac.uk/study/undergraduate/apply/entry-requirements/international-entry-requirements"},{"test":"TOEFL iBT","minimum":80,"detail":"Group A minimum for tests before Jan 2026; from Jan 2026, 4.5 overall with at least 4 in each skill.","source_url":"https://www.birmingham.ac.uk/study/undergraduate/apply/entry-requirements/international-entry-requirements"},{"test":"PTE Academic","minimum":64,"detail":"Group A minimum, with at least 59 in each skill; some courses require more.","source_url":"https://www.birmingham.ac.uk/study/undergraduate/apply/entry-requirements/international-entry-requirements"},{"test":"Cambridge C1/C2","minimum":169,"detail":"Group A Cambridge Advanced minimum; 162 minimum in each component. Some courses require more.","source_url":"https://www.birmingham.ac.uk/study/undergraduate/apply/entry-requirements/international-entry-requirements"}],"tuition":null,"application_fee":{"amount":34.5,"currency":"GBP","source_url":"https://www.ucas.com/faqs/what-is-the-application-fee-for-the-2027-cycle"},"deadlines":[{"title":"Equal consideration deadline, 2027 entry","due_at":"2027-01-13","route":"UCAS","source_url":"https://www.ucas.com/applying/applying-to-university/dates-and-deadlines-for-uni-applications"}],"sat":null,"acceptance_rate":null,"notes":"International tuition varies by course; the university confirms the yearly fee in each offer."},{"id":"8e191d89-10ba-5f03-913b-836c9c7194a0","english":[],"tuition":null,"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"For non-EU applicants without a French or European baccalaureate, first-year Licence applications use DAP; dates vary by country and route."},{"id":"bc0bcefc-cf3b-5fc7-bb41-76470ec9ff59","english":[{"test":"IELTS","minimum":6.5,"detail":"English 6 minimum; no section below 5.5. Check each programme for higher requirements.","source_url":"https://www.universityadmissions.se/en/entry-requirements/english-language-requirements/"},{"test":"TOEFL iBT","minimum":90,"detail":"English 6 minimum for tests through 20 Jan 2026; for tests from 21 Jan 2026, 4.5 overall, no section below 4.","source_url":"https://www.universityadmissions.se/en/entry-requirements/english-language-requirements/"},{"test":"PTE Academic","minimum":62,"detail":"English 6 minimum; writing score at least 61.","source_url":"https://www.universityadmissions.se/en/entry-requirements/english-language-requirements/"},{"test":"Cambridge C1/C2","minimum":180,"detail":"C1 Advanced minimum overall score for English 6.","source_url":"https://www.universityadmissions.se/en/entry-requirements/english-language-requirements/"}],"tuition":{"amount":125000,"amount_max":205000,"currency":"SEK","period":"year","academic_year":"2026/27","detail":"Published 2026/27 prospectus fees for English-taught Bachelor's programmes; varies by programme.","source_url":"https://www.lunduniversity.lu.se/sites/www.lunduniversity.lu.se/files/2025-08/Lund-university-international-student-prospectus-26-27.pdf"},"application_fee":{"amount":900,"currency":"SEK","source_url":"https://www.universityadmissions.se/en/fees-scholarships-residence-permit/pay-your-application-fee/"},"deadlines":[{"title":"Autumn 2027, international first admissions round","due_at":"2027-01-15","route":"University Admissions in Sweden","source_url":"https://www.universityadmissions.se/en/key-dates-and-deadlines/autumn-semester-dates/"}],"sat":null,"acceptance_rate":null,"notes":"English-taught Bachelor's programmes generally require English 6; applicants can also meet this through qualifying prior studies."},{"id":"b3a81d8c-44ec-56d8-aa5f-b58d5dce6bfd","english":[],"tuition":null,"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"Non-EU students may apply for exemption from differentiated tuition; approval depends on the university's criteria."}] }

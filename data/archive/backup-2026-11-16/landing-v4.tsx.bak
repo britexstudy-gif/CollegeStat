@@ -1,0 +1,349 @@
+"use client";
+import Link from "next/link";
+import { ArrowRight, ArrowUpRight, Check, Plus, Sparkle } from "@phosphor-icons/react";
+import { useEffect, useRef, useState } from "react";
+import dynamic from "next/dynamic";
+// WebGL backdrop, purely decorative: loads after the page is interactive.
+const Aurora = dynamic(() => import("@/components/react-bits/Aurora"), { ssr: false });
+import DotGrid from "@/components/react-bits/DotGrid";
+import { HeroFinder } from "./hero-finder";
+import { Publishers } from "./landing-publishers";
+import { Rich, useT } from "./i18n";
+import { PLANS, type PlanId } from "@/lib/plans";
+import { workspaceSectionHref } from "@/lib/workspace-navigation";
+import type { MessageKey } from "@/lib/i18n/messages";
+import shots from "./landing-shots.json";
+import "./landing-v4.css";
+
+/* Landing page, one idea per screen:
+ *   hero (search + publishers) → chances → what to apply and where → AI counsellor
+ *   → application kit → scholarships → plans → FAQ → closing call to action.
+ * Product pictures are real captures of the current app (public/images/landing,
+ * sizes in landing-shots.json, retaken with scratchpad b2-capture.mjs). Light and
+ * dark captures are both in the markup; the theme class on <html> shows one. */
+
+type ShotName = keyof typeof shots;
+
+export type LandingStats = {
+  /** Universities on the Central Asia target list (data/segment/targets.json). */
+  universities: number;
+  /** Countries those universities are in. */
+  countries: number;
+  /** Listed scholarships open to students from UZ, KZ, KG or TJ. */
+  scholarships: number;
+};
+
+/** A real product capture, centred on its stage. Width/height come from the manifest, so nothing shifts on load. */
+function Shot({ name, alt, priority }: { name: ShotName; alt: string; priority?: boolean }) {
+  const [width, height] = shots[name];
+  return (
+    <>
+      {(["light", "dark"] as const).map((theme) => (
+        // eslint-disable-next-line @next/next/no-img-element -- fixed-size local capture with 1x/2x srcset
+        <img
+          key={theme}
+          className={"lp-img is-" + theme}
+          src={`/images/landing/${name}-${theme}-1x.webp`}
+          srcSet={`/images/landing/${name}-${theme}-1x.webp 1x, /images/landing/${name}-${theme}-2x.webp 2x`}
+          width={width}
+          height={height}
+          alt={theme === "light" ? alt : ""}
+          aria-hidden={theme === "dark" ? true : undefined}
+          loading={priority ? "eager" : "lazy"}
+          decoding="async"
+        />
+      ))}
+    </>
+  );
+}
+
+function Stage({ name, alt, className = "" }: { name: ShotName; alt: string; className?: string }) {
+  return (
+    <div className={"lp-stage " + className}>
+      <Shot name={name} alt={alt} />
+    </div>
+  );
+}
+
+/** Section heading: a small accent label, a two-tone h2 and an optional lede. */
+function Head({ id, label, title, text, center }: { id: string; label: string; title: string; text?: string; center?: boolean }) {
+  return (
+    <header className={"lp-head" + (center ? " is-center" : "")}>
+      <p className="lp-label">{label}</p>
+      <h2 id={id}>
+        <Rich text={title} />
+      </h2>
+      {text && <p className="lp-lede">{text}</p>}
+    </header>
+  );
+}
+
+function Cta({ href, children, primary }: { href: string; children: React.ReactNode; primary?: boolean }) {
+  return (
+    <Link className={"lp-btn" + (primary ? " is-primary" : "")} href={href}>
+      {children} {primary ? <ArrowRight size={16} aria-hidden="true" /> : <ArrowUpRight size={16} aria-hidden="true" />}
+    </Link>
+  );
+}
+
+/** Signed-in tools send visitors through sign-up first. */
+const gate = (href: string, signedIn: boolean) => (signedIn ? href : "/auth/sign-up?next=" + encodeURIComponent(href));
+
+function HeroBackdrop() {
+  return (
+    <div className="lp-backdrop" aria-hidden="true">
+      <DotGrid className="lp-dotgrid" />
+    </div>
+  );
+}
+
+export function Hero({ onSearch, stats, signedIn }: { onSearch: (query: string) => void; stats: LandingStats; signedIn: boolean }) {
+  const t = useT();
+  return (
+    <section className="lp-hero" aria-labelledby="lp-title">
+      <HeroBackdrop />
+      <div className="lp-hero-copy" data-enter>
+        <p className="lp-pill">{t("land.hero.kicker")}</p>
+        <h1 id="lp-title">
+          <Rich text={t("land.hero.title")} />
+        </h1>
+        <p className="lp-lede">
+          <Rich text={t("land.hero.lede", { n: stats.universities })} />
+        </p>
+        <HeroFinder onSearch={onSearch} />
+        <Link className="lp-link" href={gate("/dashboard/welcome", signedIn)}>
+          <Sparkle size={15} weight="fill" aria-hidden="true" /> {t("land.hero.plan")} <ArrowRight size={14} aria-hidden="true" />
+        </Link>
+      </div>
+      <Publishers />
+    </section>
+  );
+}
+
+/** Chances: one centred showcase. */
+export function Chances({ signedIn }: { signedIn: boolean }) {
+  const t = useT();
+  return (
+    <section className="lp-section lp-showcase" aria-labelledby="lp-ch">
+      <Head id="lp-ch" center label={t("land.ch.label")} title={t("land.ch.title")} text={t("land.ch.text")} />
+      <div className="lp-actions">
+        <Cta primary href={gate("/dashboard/admissions-check", signedIn)}>
+          {t("land.ch.cta")}
+        </Cta>
+      </div>
+      <Stage name="chances" alt={t("land.ch.label")} className="is-wide" />
+    </section>
+  );
+}
+
+/** What to apply and where: two cards, each a capture under its own title. */
+export function Where({ signedIn }: { signedIn: boolean }) {
+  const t = useT();
+  const cards: [ShotName, MessageKey, MessageKey][] = [
+    ["where", "land.wh.a.title", "land.wh.a.text"],
+    ["next", "land.wh.b.title", "land.wh.b.text"],
+  ];
+  return (
+    <section className="lp-section" aria-labelledby="lp-wh">
+      <Head id="lp-wh" label={t("land.wh.label")} title={t("land.wh.title")} />
+      <div className="lp-bento">
+        {cards.map(([shot, title, text]) => (
+          <article className="lp-card" key={shot}>
+            <div className="lp-card-copy">
+              <h3>{t(title)}</h3>
+              <p>{t(text)}</p>
+            </div>
+            <Stage name={shot} alt={t(title)} />
+          </article>
+        ))}
+      </div>
+      <div className="lp-actions is-start">
+        <Cta href={gate("/dashboard/universities", signedIn)}>{t("land.wh.cta")}</Cta>
+      </div>
+    </section>
+  );
+}
+
+/** AI counsellor: copy and sample questions beside its written plan. */
+export function Counsellor({ signedIn }: { signedIn: boolean }) {
+  const t = useT();
+  return (
+    <section className="lp-section lp-split" aria-labelledby="lp-ai">
+      <div className="lp-split-copy">
+        <Head id="lp-ai" label={t("land.ai.label")} title={t("land.ai.title")} text={t("land.ai.text")} />
+        <ul className="lp-asks">
+          {(["land.ai.q1", "land.ai.q2", "land.ai.q3"] as const).map((k) => (
+            <li key={k}>{t(k)}</li>
+          ))}
+        </ul>
+        <Cta primary href={gate("/dashboard/assistant", signedIn)}>
+          {t("land.ai.cta")}
+        </Cta>
+      </div>
+      <Stage name="counsellor" alt={t("land.ai.label")} />
+    </section>
+  );
+}
+
+/** Application kit: the writing desk and the application simulator. */
+export function Kit({ signedIn }: { signedIn: boolean }) {
+  const t = useT();
+  const cards: [ShotName, MessageKey, MessageKey, MessageKey, string][] = [
+    ["writing", "land.kit.w.title", "land.kit.w.text", "land.kit.w.cta", workspaceSectionHref("Writing")],
+    ["forms", "land.kit.f.title", "land.kit.f.text", "land.kit.f.cta", "/dashboard/application-practice"],
+  ];
+  return (
+    <section className="lp-section" aria-labelledby="lp-kit">
+      <Head id="lp-kit" label={t("land.kit.label")} title={t("land.kit.title")} />
+      <div className="lp-bento">
+        {cards.map(([shot, title, text, cta, href]) => (
+          <article className="lp-card" key={shot}>
+            <div className="lp-card-copy">
+              <h3>{t(title)}</h3>
+              <p>{t(text)}</p>
+              <Link className="lp-link" href={gate(href, signedIn)}>
+                {t(cta)} <ArrowUpRight size={15} aria-hidden="true" />
+              </Link>
+            </div>
+            <Stage name={shot} alt={t(title)} />
+          </article>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+/** Scholarships: the count, counted from our data, beside the directory. */
+export function Scholarships({ stats }: { stats: LandingStats }) {
+  const t = useT();
+  return (
+    <section className="lp-section lp-split is-reverse" aria-labelledby="lp-sch">
+      <div className="lp-split-copy">
+        <Head id="lp-sch" label={t("land.sch.label")} title={t("land.sch.title")} text={t("land.sch.text")} />
+        <p className="lp-stat">
+          <b>{stats.scholarships}</b> <span>{t("land.sch.stat")}</span>
+        </p>
+        <Cta href="/scholarships">{t("land.sch.cta")}</Cta>
+      </div>
+      <Stage name="scholarships" alt={t("land.sch.label")} />
+    </section>
+  );
+}
+
+/** Plans teaser: prices from lib/plans.ts, the full table on /pricing. */
+export function Plans() {
+  const t = useT();
+  return (
+    <section className="lp-section" aria-labelledby="lp-plans">
+      <Head id="lp-plans" center label={t("land.plans.label")} title={t("land.plans.title")} />
+      <ul className="lp-plans">
+        {PLANS.map((plan) => {
+          const id = plan.id as PlanId;
+          return (
+            <li key={id} className={"lp-plan" + (plan.highlight ? " is-highlight" : "")}>
+              <div className="lp-plan-top">
+                <h3>{t(`land.plans.${id}` as MessageKey)}</h3>
+                {plan.highlight && <span className="lp-badge">{t("land.plans.recommended")}</span>}
+              </div>
+              <p className="lp-price">
+                <b>${plan.monthly}</b>
+                {plan.monthly > 0 && <span>{t("land.plans.month")}</span>}
+              </p>
+              <p className="lp-season">{plan.season > 0 ? t("land.plans.season", { p: plan.season }) : " "}</p>
+              <p className="lp-plan-text">
+                <Check size={16} weight="bold" aria-hidden="true" />
+                {t(`land.plans.${id}.text` as MessageKey)}
+              </p>
+            </li>
+          );
+        })}
+      </ul>
+      <div className="lp-actions">
+        <p className="lp-note">{t("land.plans.early")}</p>
+        <Cta href="/pricing">{t("land.plans.cta")}</Cta>
+      </div>
+    </section>
+  );
+}
+
+// app/page.tsx builds the FAQPage JSON-LD from the same five keys.
+const QUESTIONS = [1, 2, 3, 4, 5] as const;
+
+export function Faq({ stats }: { stats: LandingStats }) {
+  const t = useT();
+  return (
+    <section className="lp-section lp-faq" aria-labelledby="lp-faq-title">
+      <header className="lp-head">
+        <h2 id="lp-faq-title">
+          <Rich text={t("land.faq.title")} />
+        </h2>
+        <Link className="lp-link" href="/support">
+          {t("land.faq.help")} <ArrowUpRight size={15} aria-hidden="true" />
+        </Link>
+      </header>
+      <div className="lp-faq-list">
+        {QUESTIONS.map((n) => (
+          <details key={n}>
+            <summary>
+              {t(`land.faq.q${n}` as MessageKey)}
+              <Plus size={18} aria-hidden="true" />
+            </summary>
+            <p>{t(`land.faq.a${n}` as MessageKey, { n: stats.universities })}</p>
+          </details>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+/** Animated aurora over a faint dot field; the aurora only runs while the panel is on screen. */
+function ClosingBackdrop() {
+  const ref = useRef<HTMLDivElement>(null);
+  const [onScreen, setOnScreen] = useState(false);
+  useEffect(() => {
+    const node = ref.current;
+    if (!node || typeof IntersectionObserver === "undefined") return;
+    const io = new IntersectionObserver(([entry]) => setOnScreen(entry.isIntersecting), { rootMargin: "120px" });
+    io.observe(node);
+    return () => io.disconnect();
+  }, []);
+  return (
+    <div ref={ref} className="lp-close-bg" aria-hidden="true">
+      <DotGrid className="lp-close-dots" gap={22} period={60} />
+      {onScreen && (
+        <Aurora
+          className="lp-close-aurora"
+          colorStops={["#0a2a7a", "#0061fc", "#1d4ed8"]}
+          amplitude={1.05}
+          blend={0.6}
+          speed={0.5}
+          height={0.62}
+          layers={2}
+        />
+      )}
+    </div>
+  );
+}
+
+export function Closing({ href }: { href: string }) {
+  const t = useT();
+  return (
+    <section className="lp-section lp-close" aria-labelledby="lp-close-title">
+      <div className="lp-close-box">
+        <ClosingBackdrop />
+        <div className="lp-close-copy">
+          <h2 id="lp-close-title">
+            <Rich text={t("land.cta.title")} />
+          </h2>
+          <p>{t("land.cta.text")}</p>
+          <div className="lp-actions">
+            <Cta primary href={href}>
+              {t("land.cta.primary")}
+            </Cta>
+            <Cta href="/universities">{t("land.cta.secondary")}</Cta>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}

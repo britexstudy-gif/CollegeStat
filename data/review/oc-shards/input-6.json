@@ -1,0 +1,689 @@
+[
+ {
+  "id": "39230496-b2fc-53ca-9303-1726c4ac13da",
+  "slug": "harvard-university-39230496",
+  "name": "Harvard University",
+  "country_code": "US",
+  "website": "http://www.harvard.edu/",
+  "missing": []
+ },
+ {
+  "id": "22222222-2222-4222-8222-222222222222",
+  "slug": "mit",
+  "name": "Massachusetts Institute of Technology",
+  "country_code": "US",
+  "website": "http://web.mit.edu/",
+  "missing": []
+ },
+ {
+  "id": "11111111-1111-4111-8111-111111111111",
+  "slug": "stanford",
+  "name": "Stanford University",
+  "country_code": "US",
+  "website": "http://www.stanford.edu/",
+  "missing": []
+ },
+ {
+  "id": "6f13f9e9-cf5f-56ad-8384-39a9dc592d58",
+  "slug": "princeton-university-6f13f9e9",
+  "name": "Princeton University",
+  "country_code": "US",
+  "website": "http://www.princeton.edu/",
+  "missing": []
+ },
+ {
+  "id": "e67501b3-2e87-5598-b9e3-e28fe4101f68",
+  "slug": "university-of-california-berkeley-e67501b3",
+  "name": "University of California-Berkeley",
+  "country_code": "US",
+  "website": "http://www.berkeley.edu/",
+  "missing": []
+ },
+ {
+  "id": "99fbcf31-606d-5dac-880e-83ca25acd942",
+  "slug": "california-institute-of-technology-99fbcf31",
+  "name": "California Institute of Technology",
+  "country_code": "US",
+  "website": "http://www.caltech.edu/",
+  "missing": []
+ },
+ {
+  "id": "1ad9abe1-60cd-55ec-b227-5c8001db0475",
+  "slug": "columbia-university-1ad9abe1",
+  "name": "Columbia University in the City of New York",
+  "country_code": "US",
+  "website": "http://www.columbia.edu/",
+  "missing": []
+ },
+ {
+  "id": "7add53a9-8ddf-5e84-bd4d-a7c8638dbb95",
+  "slug": "university-of-chicago-7add53a9",
+  "name": "University of Chicago",
+  "country_code": "US",
+  "website": "http://www.uchicago.edu/",
+  "missing": []
+ },
+ {
+  "id": "0a670c6d-e20a-527f-851b-e2c1306cce70",
+  "slug": "yale-university-0a670c6d",
+  "name": "Yale University",
+  "country_code": "US",
+  "website": "http://www.yale.edu/",
+  "missing": []
+ },
+ {
+  "id": "8488d97e-a227-5fbd-b7b4-33a1194df723",
+  "slug": "cornell-university-8488d97e",
+  "name": "Cornell University",
+  "country_code": "US",
+  "website": "http://www.cornell.edu/",
+  "missing": []
+ },
+ {
+  "id": "d5ba03bb-65aa-55a6-8234-265ea05144fc",
+  "slug": "university-of-california-los-angeles-d5ba03bb",
+  "name": "University of California-Los Angeles",
+  "country_code": "US",
+  "website": "http://www.ucla.edu/",
+  "missing": []
+ },
+ {
+  "id": "894119e1-40c1-5589-8677-e1ed97388e59",
+  "slug": "university-of-pennsylvania-894119e1",
+  "name": "University of Pennsylvania",
+  "country_code": "US",
+  "website": "http://www.upenn.edu/",
+  "missing": []
+ },
+ {
+  "id": "f5c17f3c-ac83-5193-8c71-641147ad926c",
+  "slug": "johns-hopkins-university-f5c17f3c",
+  "name": "Johns Hopkins University",
+  "country_code": "US",
+  "website": "http://www.jhu.edu/",
+  "missing": []
+ },
+ {
+  "id": "5d324277-c7c7-52eb-9d99-03367f122d16",
+  "slug": "university-of-washington-5d324277",
+  "name": "University of Washington-Seattle Campus",
+  "country_code": "US",
+  "website": "http://www.washington.edu/",
+  "missing": []
+ },
+ {
+  "id": "e48a723c-68b4-560e-b4a0-09be01682853",
+  "slug": "northwestern-university-e48a723c",
+  "name": "Northwestern University",
+  "country_code": "US",
+  "website": "http://www.northwestern.edu/",
+  "missing": []
+ },
+ {
+  "id": "a13696ab-e8a7-55d8-b39d-e25eba98c101",
+  "slug": "university-of-california-irvine-a13696ab",
+  "name": "University of California-Irvine",
+  "country_code": "US",
+  "website": "http://www.uci.edu/",
+  "missing": []
+ },
+ {
+  "id": "027e062a-68f8-5a97-b74a-4ad155208f4a",
+  "slug": "university-of-arizona-027e062a",
+  "name": "University of Arizona",
+  "country_code": "US",
+  "website": "http://www.arizona.edu/",
+  "missing": []
+ },
+ {
+  "id": "7297ee6e-31d9-5f06-a506-de580b9c5c1d",
+  "slug": "george-washington-university-7297ee6e",
+  "name": "George Washington University",
+  "country_code": "US",
+  "website": "http://www.gwu.edu/",
+  "missing": []
+ },
+ {
+  "id": "61ee643d-d90b-504a-9170-4595e9e045e3",
+  "slug": "boston-college-61ee643d",
+  "name": "Boston College",
+  "country_code": "US",
+  "website": "http://www.bc.edu/",
+  "missing": []
+ },
+ {
+  "id": "14c47a79-b87d-511b-b436-245ee5be5e2e",
+  "slug": "virginia-commonwealth-university-14c47a79",
+  "name": "Virginia Commonwealth University",
+  "country_code": "US",
+  "website": "https://www.vcu.edu/",
+  "missing": []
+ },
+ {
+  "id": "210dada7-d1b4-537c-b8ad-8c58326af358",
+  "slug": "temple-university-210dada7",
+  "name": "Temple University",
+  "country_code": "US",
+  "website": "http://www.temple.edu/",
+  "missing": []
+ },
+ {
+  "id": "f973d34b-aa07-516d-9d50-a071413a3eca",
+  "slug": "missouri-university-of-science-and-technology-f973d34b",
+  "name": "Missouri University of Science and Technology",
+  "country_code": "US",
+  "website": "http://www.mst.edu/",
+  "missing": [
+   "platform"
+  ]
+ },
+ {
+  "id": "a5aa5750-d3cd-527d-b00a-33dc6c807b41",
+  "slug": "university-of-toledo-a5aa5750",
+  "name": "University of Toledo",
+  "country_code": "US",
+  "website": "http://www.utoledo.edu/",
+  "missing": [
+   "platform"
+  ]
+ },
+ {
+  "id": "141123a2-d2ef-52d9-b8f2-f6c881ac0aef",
+  "slug": "university-of-texas-at-arlington-141123a2",
+  "name": "The University of Texas at Arlington",
+  "country_code": "US",
+  "website": "http://www.uta.edu/",
+  "missing": [
+   "tuition"
+  ]
+ },
+ {
+  "id": "9e6672b1-6e90-5460-bf59-91be34e74191",
+  "slug": "suny-downstate-health-sciences-university-9e6672b1",
+  "name": "SUNY Downstate Health Sciences University",
+  "country_code": "US",
+  "website": "https://www.downstate.edu/",
+  "missing": [
+   "tuition",
+   "deadlines",
+   "english",
+   "platform"
+  ]
+ },
+ {
+  "id": "175cb34b-02e2-5db8-8b75-d212fce91b9b",
+  "slug": "university-of-massachusetts-boston-175cb34b",
+  "name": "University of Massachusetts-Boston",
+  "country_code": "US",
+  "website": "https://www.umb.edu/",
+  "missing": [
+   "tuition",
+   "platform"
+  ]
+ },
+ {
+  "id": "99c5a4b8-9a75-5635-8161-85f97f03dc3f",
+  "slug": "fordham-university-99c5a4b8",
+  "name": "Fordham University",
+  "country_code": "US",
+  "website": "http://www.fordham.edu/",
+  "missing": []
+ },
+ {
+  "id": "eff27116-f29e-5cc0-9d35-ce5bc27b2bad",
+  "slug": "depaul-university-eff27116",
+  "name": "DePaul University",
+  "country_code": "US",
+  "website": "http://www.depaul.edu/",
+  "missing": [
+   "platform"
+  ]
+ },
+ {
+  "id": "33333333-3333-4333-8333-333333333333",
+  "slug": "oxford",
+  "name": "University of Oxford",
+  "country_code": "GB",
+  "website": "http://www.ox.ac.uk/",
+  "missing": []
+ },
+ {
+  "id": "5ad45ea9-e51c-59e4-9ef7-6d3768be673c",
+  "slug": "imperial-college-london-5ad45ea9",
+  "name": "Imperial College London",
+  "country_code": "GB",
+  "website": "http://www.imperial.ac.uk/",
+  "missing": []
+ },
+ {
+  "id": "ae117645-e24c-5269-8ed1-b5b826e53932",
+  "slug": "university-of-cambridge-ae117645",
+  "name": "University of Cambridge",
+  "country_code": "GB",
+  "website": "http://www.cam.ac.uk/",
+  "missing": []
+ },
+ {
+  "id": "4b7862dc-7567-5f81-af58-c01144412a88",
+  "slug": "university-college-london-4b7862dc",
+  "name": "University College London",
+  "country_code": "GB",
+  "website": "http://www.ucl.ac.uk/",
+  "missing": []
+ },
+ {
+  "id": "f2f2a71c-abeb-5dc7-b18b-aa8b00611b0a",
+  "slug": "university-of-edinburgh-f2f2a71c",
+  "name": "University of Edinburgh",
+  "country_code": "GB",
+  "website": "http://www.ed.ac.uk/",
+  "missing": [
+   "tuition"
+  ]
+ },
+ {
+  "id": "01649f44-22e4-5b85-adaa-81f3538aa083",
+  "slug": "king-s-college-london-university-of-london-01649f44",
+  "name": "King's College London, University of London",
+  "country_code": "GB",
+  "website": "http://www.kcl.ac.uk/",
+  "missing": [
+   "tuition"
+  ]
+ },
+ {
+  "id": "6e2ae583-50c4-53d5-a0ed-d11422c64773",
+  "slug": "university-of-manchester-6e2ae583",
+  "name": "University of Manchester",
+  "country_code": "GB",
+  "website": "http://www.manchester.ac.uk/",
+  "missing": []
+ },
+ {
+  "id": "3e655a74-c0c7-5a9b-884b-22aebd5e0d1e",
+  "slug": "london-school-of-economics-and-political-science-university-of-london-3e655a74",
+  "name": "London School of Economics and Political Science, University of London",
+  "country_code": "GB",
+  "website": "http://www.lse.ac.uk/",
+  "missing": []
+ },
+ {
+  "id": "ad695799-c6eb-5c4d-901c-a4b7d0b15407",
+  "slug": "university-of-bristol-ad695799",
+  "name": "University of Bristol",
+  "country_code": "GB",
+  "website": "https://www.bristol.ac.uk/",
+  "missing": []
+ },
+ {
+  "id": "69452803-31fe-56a8-b2b4-c2a682cf4214",
+  "slug": "university-of-durham-69452803",
+  "name": "University of Durham",
+  "country_code": "GB",
+  "website": "http://www.dur.ac.uk/",
+  "missing": []
+ },
+ {
+  "id": "0c842a32-8330-5812-806f-cb6207ddbac3",
+  "slug": "the-queen-s-university-belfast-0c842a32",
+  "name": "The Queen's University Belfast",
+  "country_code": "GB",
+  "website": "http://www.qub.ac.uk/",
+  "missing": []
+ },
+ {
+  "id": "765d7982-ec3a-5780-99b0-8929c72036d5",
+  "slug": "birkbeck-college-university-of-london-765d7982",
+  "name": "Birkbeck College, University of London",
+  "country_code": "GB",
+  "website": "http://www.bbk.ac.uk/",
+  "missing": []
+ },
+ {
+  "id": "2fdb419f-cca6-514b-9904-7315a3d9670f",
+  "slug": "school-of-oriental-and-african-studies-university-of-london-2fdb419f",
+  "name": "School of Oriental and African Studies, University of London",
+  "country_code": "GB",
+  "website": "http://www.soas.ac.uk/",
+  "missing": []
+ },
+ {
+  "id": "73764183-bb00-5def-9c6c-689678c79e06",
+  "slug": "university-of-hull-73764183",
+  "name": "University of Hull",
+  "country_code": "GB",
+  "website": "http://www.hull.ac.uk/",
+  "missing": []
+ },
+ {
+  "id": "abe14bf9-6f11-555e-ad0b-7608d17c8534",
+  "slug": "nottingham-trent-university-abe14bf9",
+  "name": "Nottingham Trent University",
+  "country_code": "GB",
+  "website": "http://www.ntu.ac.uk/",
+  "missing": []
+ },
+ {
+  "id": "b2142fd1-7928-59df-808b-647d03a0b6c8",
+  "slug": "birmingham-city-university-b2142fd1",
+  "name": "Birmingham City University",
+  "country_code": "GB",
+  "website": "https://www.bcu.ac.uk",
+  "missing": []
+ },
+ {
+  "id": "e53f5fef-5c56-5863-9d18-b59c4819d7b4",
+  "slug": "cardiff-metropolitan-university-e53f5fef",
+  "name": "Cardiff Metropolitan University",
+  "country_code": "GB",
+  "website": "https://www.cardiffmet.ac.uk",
+  "missing": []
+ },
+ {
+  "id": "a322a7f8-c77a-5b01-94f6-330f0714b0ef",
+  "slug": "university-of-west-london-a322a7f8",
+  "name": "University of West London",
+  "country_code": "GB",
+  "website": "https://www.uwl.ac.uk",
+  "missing": [
+   "tuition"
+  ]
+ },
+ {
+  "id": "44444444-4444-4444-8444-444444444444",
+  "slug": "tum",
+  "name": "Technical University of Munich",
+  "country_code": "DE",
+  "website": "http://www.tum.de/",
+  "missing": []
+ },
+ {
+  "id": "3c2d87b3-5b20-5df8-99c0-1353112a63f2",
+  "slug": "ludwig-maximilians-universitat-munchen-3c2d87b3",
+  "name": "Ludwig-Maximilians-Universität München",
+  "country_code": "DE",
+  "website": "https://www.lmu.de",
+  "missing": []
+ },
+ {
+  "id": "fe2070ba-9e66-590c-b67f-3cef2d8983b4",
+  "slug": "ruprecht-karls-universitat-heidelberg-fe2070ba",
+  "name": "Ruprecht-Karls-Universität Heidelberg",
+  "country_code": "DE",
+  "website": "http://www.uni-heidelberg.de/",
+  "missing": [
+   "platform"
+  ]
+ },
+ {
+  "id": "41845441-b6d6-52d1-9dde-3fde42120676",
+  "slug": "rheinische-friedrich-wilhelms-universitat-bonn-41845441",
+  "name": "Rheinische Friedrich-Wilhelms Universität Bonn",
+  "country_code": "DE",
+  "website": "http://www.uni-bonn.de/",
+  "missing": []
+ },
+ {
+  "id": "d2dff4b3-070b-59d5-a6fb-a12c7095d63b",
+  "slug": "humboldt-universitat-berlin-d2dff4b3",
+  "name": "Humboldt Universität Berlin",
+  "country_code": "DE",
+  "website": "http://www.hu-berlin.de/",
+  "missing": [
+   "tuition"
+  ]
+ },
+ {
+  "id": "f7aaf172-d973-5248-b3d6-83289c7c7451",
+  "slug": "rheinisch-westfalische-technische-hochschule-aachen-f7aaf172",
+  "name": "Rheinisch Westfälische Technische Hochschule Aachen",
+  "country_code": "DE",
+  "website": "http://www.rwth-aachen.de/",
+  "missing": []
+ },
+ {
+  "id": "04566891-05b0-54be-9472-22d414096201",
+  "slug": "eberhard-karls-universitat-tubingen-04566891",
+  "name": "Eberhard-Karls-Universität Tübingen",
+  "country_code": "DE",
+  "website": "http://www.uni-tuebingen.de/",
+  "missing": [
+   "english",
+   "platform"
+  ]
+ },
+ {
+  "id": "76aa91bc-0527-5b1b-9891-2b4d84037b90",
+  "slug": "johann-wolfgang-goethe-universitat-frankfurt-am-main-76aa91bc",
+  "name": "Johann Wolfgang Goethe Universität Frankfurt am Main",
+  "country_code": "DE",
+  "website": "http://www.uni-frankfurt.de/",
+  "missing": []
+ },
+ {
+  "id": "db5390bb-c32c-5f9b-94df-2a1d75c6499d",
+  "slug": "friedrich-alexander-universitat-erlangen-nurnberg-db5390bb",
+  "name": "Friedrich-Alexander Universität Erlangen-Nürnberg",
+  "country_code": "DE",
+  "website": "https://www.fau.de/",
+  "missing": []
+ },
+ {
+  "id": "3158b0fa-0d63-5ac9-b57c-821510d9b1f8",
+  "slug": "universitat-konstanz-3158b0fa",
+  "name": "Universität Konstanz",
+  "country_code": "DE",
+  "website": "http://www.uni-konstanz.de/",
+  "missing": []
+ },
+ {
+  "id": "c7351cbe-4440-5eda-afe1-ec99b332fbcc",
+  "slug": "universitat-hannover-c7351cbe",
+  "name": "Universität Hannover",
+  "country_code": "DE",
+  "website": "http://www.uni-hannover.de/",
+  "missing": []
+ },
+ {
+  "id": "d5073301-45d5-536d-a8ae-432cda22fa82",
+  "slug": "rheinland-pfalzische-technische-universitat-kaiserslautern-landau-d5073301",
+  "name": "Rheinland-Pfälzische Technische Universität Kaiserslautern-Landau",
+  "country_code": "DE",
+  "website": "https://rptu.de",
+  "missing": [
+   "english"
+  ]
+ },
+ {
+  "id": "fa57b1bc-e7b1-52a9-8a4f-c13c80c4ce70",
+  "slug": "universitat-augsburg-fa57b1bc",
+  "name": "Universität Augsburg",
+  "country_code": "DE",
+  "website": "http://www.uni-augsburg.de/",
+  "missing": [
+   "english"
+  ]
+ },
+ {
+  "id": "216baefb-01e2-5251-86f0-b97b52adb6ed",
+  "slug": "phillips-universitat-marburg-216baefb",
+  "name": "Phillips-Universität Marburg",
+  "country_code": "DE",
+  "website": "http://www.uni-marburg.de/",
+  "missing": [
+   "tuition"
+  ]
+ },
+ {
+  "id": "6a9e2556-fc5f-56a2-bca0-9364f099818c",
+  "slug": "seoul-national-university-6a9e2556",
+  "name": "Seoul National University",
+  "country_code": "KR",
+  "website": "http://www.snu.ac.kr/",
+  "missing": [
+   "tuition"
+  ]
+ },
+ {
+  "id": "b5f25065-0a86-517e-91f0-ff6bbe8c81d3",
+  "slug": "yonsei-university-b5f25065",
+  "name": "Yonsei University",
+  "country_code": "KR",
+  "website": "http://www.yonsei.ac.kr/",
+  "missing": []
+ },
+ {
+  "id": "6d72f6ce-a30c-54a4-8b99-97ae04a68a88",
+  "slug": "korea-university-6d72f6ce",
+  "name": "Korea University",
+  "country_code": "KR",
+  "website": "http://www.korea.ac.kr/",
+  "missing": []
+ },
+ {
+  "id": "bb32340f-54ba-5885-82ba-4ae645d93930",
+  "slug": "korea-advanced-institute-of-science-technology-bb32340f",
+  "name": "Korea Advanced Institute of Science & Technology",
+  "country_code": "KR",
+  "website": "http://www.kaist.ac.kr/",
+  "missing": []
+ },
+ {
+  "id": "dba5fd6f-9afd-5011-aab8-7d0e6cb6ac2a",
+  "slug": "sungkyunkwan-university-dba5fd6f",
+  "name": "Sungkyunkwan University",
+  "country_code": "KR",
+  "website": "http://www.skku.edu/",
+  "missing": [
+   "tuition"
+  ]
+ },
+ {
+  "id": "bfa7cdcc-650a-54d9-baa6-0eaeaa6428a9",
+  "slug": "pohang-university-of-science-and-technology-bfa7cdcc",
+  "name": "Pohang University of Science and Technology",
+  "country_code": "KR",
+  "website": "http://www.postech.ac.kr/",
+  "missing": []
+ },
+ {
+  "id": "4905a534-c722-5951-bcd1-2a676a636ead",
+  "slug": "hanyang-university-4905a534",
+  "name": "Hanyang University",
+  "country_code": "KR",
+  "website": "http://www.hanyang.ac.kr/",
+  "missing": [
+   "deadlines"
+  ]
+ },
+ {
+  "id": "51820d13-7d29-5698-a7aa-4284497d2a3e",
+  "slug": "sejong-university-51820d13",
+  "name": "Sejong University",
+  "country_code": "KR",
+  "website": "http://www.sejong.ac.kr/",
+  "missing": []
+ },
+ {
+  "id": "2816fd44-0c83-51d8-bd8b-f4ef1620c529",
+  "slug": "pusan-national-university-2816fd44",
+  "name": "Pusan National University",
+  "country_code": "KR",
+  "website": "http://www.pusan.ac.kr/",
+  "missing": []
+ },
+ {
+  "id": "e35bbbf8-981e-5933-92bc-577864b48785",
+  "slug": "university-of-ulsan-e35bbbf8",
+  "name": "University of Ulsan",
+  "country_code": "KR",
+  "website": "http://en.ulsan.ac.kr/contents/main/",
+  "missing": [
+   "deadlines"
+  ]
+ },
+ {
+  "id": "f069dcf3-4383-5fe9-9975-58800a95464e",
+  "slug": "chungbuk-national-university-f069dcf3",
+  "name": "Chungbuk National University",
+  "country_code": "KR",
+  "website": "http://www.cbnu.ac.kr/site/english/main.do",
+  "missing": []
+ },
+ {
+  "id": "9a78fb5f-7d20-52c4-a5f0-300b10478988",
+  "slug": "university-of-seoul-9a78fb5f",
+  "name": "University of Seoul",
+  "country_code": "KR",
+  "website": "http://english.uos.ac.kr/",
+  "missing": [
+   "tuition"
+  ]
+ },
+ {
+  "id": "f7630121-7518-5453-a60d-413b847dbaa0",
+  "slug": "seoul-national-university-of-science-and-technology-f7630121",
+  "name": "Seoul National University of Science and Technology",
+  "country_code": "KR",
+  "website": "http://www.seoultech.ac.kr/",
+  "missing": []
+ },
+ {
+  "id": "154701f8-0abc-5d4e-877c-72c6d80c501f",
+  "slug": "woosong-university-154701f8",
+  "name": "Woosong University",
+  "country_code": "KR",
+  "website": "http://english.wsu.ac.kr/",
+  "missing": []
+ },
+ {
+  "id": "addc1a48-bb2b-5c8e-845b-32ce68f2c3a7",
+  "slug": "istanbul-technical-university-addc1a48",
+  "name": "Istanbul Technical University",
+  "country_code": "TR",
+  "website": "http://www.itu.edu.tr/",
+  "missing": [
+   "tuition"
+  ]
+ },
+ {
+  "id": "1848c4c4-1bfb-5ae4-8322-6fda3dca4e50",
+  "slug": "koc-university-1848c4c4",
+  "name": "Koç University",
+  "country_code": "TR",
+  "website": "http://www.ku.edu.tr/",
+  "missing": []
+ },
+ {
+  "id": "be141d50-5df3-5bd2-8b44-744166b2402b",
+  "slug": "middle-east-technical-university-be141d50",
+  "name": "Middle East Technical University",
+  "country_code": "TR",
+  "website": "http://www.metu.edu.tr/",
+  "missing": []
+ },
+ {
+  "id": "e847d6a1-1b09-5113-8aa2-2567e83e57f4",
+  "slug": "bogazici-university-e847d6a1",
+  "name": "Boğaziçi University",
+  "country_code": "TR",
+  "website": "https://www.bogazici.edu.tr/",
+  "missing": []
+ },
+ {
+  "id": "b99788a4-2398-58cc-87a6-db75c8901baa",
+  "slug": "sabanci-university-b99788a4",
+  "name": "Sabanci University",
+  "country_code": "TR",
+  "website": "https://www.sabanciuniv.edu/",
+  "missing": []
+ },
+ {
+  "id": "6ba258c1-adba-5e46-9b8c-411b91c4b958",
+  "slug": "bilkent-university-6ba258c1",
+  "name": "Bilkent University",
+  "country_code": "TR",
+  "website": "https://w3.bilkent.edu.tr/bilkent",
+  "missing": []
+ }
+]

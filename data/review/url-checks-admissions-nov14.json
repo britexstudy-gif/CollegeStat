@@ -1,0 +1,4714 @@
+{
+ "https://mitadmissions.org/apply/firstyear/tests-scores/": {
+  "url": "https://mitadmissions.org/apply/firstyear/tests-scores/",
+  "status": 200,
+  "finalUrl": "https://mitadmissions.org/apply/firstyear/tests-scores/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://mitadmissions.org/apply/firstyear/deadlines-requirements/": {
+  "url": "https://mitadmissions.org/apply/firstyear/deadlines-requirements/",
+  "status": 200,
+  "finalUrl": "https://mitadmissions.org/apply/firstyear/deadlines-requirements/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://college.harvard.edu/sites/default/files/2026-08/Harvard_FY_supplement_2026-2027.pdf": {
+  "url": "https://college.harvard.edu/sites/default/files/2026-08/Harvard_FY_supplement_2026-2027.pdf",
+  "status": 200,
+  "finalUrl": "https://college.harvard.edu/sites/default/files/2026-08/Harvard_FY_supplement_2026-2027.pdf",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://college.harvard.edu/admissions/apply/first-year-applicants": {
+  "url": "https://college.harvard.edu/admissions/apply/first-year-applicants",
+  "status": 200,
+  "finalUrl": "https://college.harvard.edu/admissions/apply/first-year-applicants",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://college.harvard.edu/admissions/apply/international-applicants": {
+  "url": "https://college.harvard.edu/admissions/apply/international-applicants",
+  "status": 200,
+  "finalUrl": "https://college.harvard.edu/admissions/apply/international-applicants",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://college.harvard.edu/alternate-application-financial-aid": {
+  "url": "https://college.harvard.edu/alternate-application-financial-aid",
+  "status": 200,
+  "finalUrl": "https://college.harvard.edu/alternate-application-financial-aid",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://sfs.mit.edu/undergraduate-students/financial-aid-basics/": {
+  "url": "https://sfs.mit.edu/undergraduate-students/financial-aid-basics/",
+  "status": 404,
+  "finalUrl": "https://sfs.mit.edu/undergraduate-students/financial-aid-basics/",
+  "ok": false,
+  "reason": "HTTP 404",
+  "checkedAt": "2026-11-14"
+ },
+ "https://sfs.mit.edu/wp-content/uploads/2026/03/MIT-AYME-2026.pdf": {
+  "url": "https://sfs.mit.edu/wp-content/uploads/2026/03/MIT-AYME-2026.pdf",
+  "status": 200,
+  "finalUrl": "https://sfs.mit.edu/wp-content/uploads/2026/03/MIT-AYME-2026.pdf",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://sfs.mit.edu/wp-content/uploads/2025/05/MIT-AYME-Student-Guide-2025.pdf": {
+  "url": "https://sfs.mit.edu/wp-content/uploads/2025/05/MIT-AYME-Student-Guide-2025.pdf",
+  "status": 200,
+  "finalUrl": "https://sfs.mit.edu/wp-content/uploads/2025/05/MIT-AYME-Student-Guide-2025.pdf",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://admission.stanford.edu/apply/first-year/fee.html": {
+  "url": "https://admission.stanford.edu/apply/first-year/fee.html",
+  "status": 200,
+  "finalUrl": "https://admission.stanford.edu/apply/first-year/fee.html",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://admission.stanford.edu/apply/international/": {
+  "url": "https://admission.stanford.edu/apply/international/",
+  "status": 200,
+  "finalUrl": "https://admission.stanford.edu/apply/international/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://admission.stanford.edu/apply/first-year/": {
+  "url": "https://admission.stanford.edu/apply/first-year/",
+  "status": 200,
+  "finalUrl": "https://admission.stanford.edu/apply/first-year/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://financialaid.stanford.edu/undergrad/budget/": {
+  "url": "https://financialaid.stanford.edu/undergrad/budget/",
+  "status": 200,
+  "finalUrl": "https://financialaid.stanford.edu/undergrad/budget/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://financialaid.stanford.edu/undergrad/how/international.html": {
+  "url": "https://financialaid.stanford.edu/undergrad/how/international.html",
+  "status": 200,
+  "finalUrl": "https://financialaid.stanford.edu/undergrad/how/international.html",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://admission.princeton.edu/apply/international-students": {
+  "url": "https://admission.princeton.edu/apply/international-students",
+  "status": 200,
+  "finalUrl": "https://admission.princeton.edu/apply/international-students",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://admission.princeton.edu/apply/first-year-application-dates-deadlines": {
+  "url": "https://admission.princeton.edu/apply/first-year-application-dates-deadlines",
+  "status": 200,
+  "finalUrl": "https://admission.princeton.edu/apply/first-year-application-dates-deadlines",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://admission.princeton.edu/cost-aid/fees-payment-options": {
+  "url": "https://admission.princeton.edu/cost-aid/fees-payment-options",
+  "status": 200,
+  "finalUrl": "https://admission.princeton.edu/cost-aid/fees-payment-options",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://admission.princeton.edu/apply/application-checklist": {
+  "url": "https://admission.princeton.edu/apply/application-checklist",
+  "status": 200,
+  "finalUrl": "https://admission.princeton.edu/apply/application-checklist",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://admissions.berkeley.edu/apply-to-berkeley/international-students/requirements-for-international-students/": {
+  "url": "https://admissions.berkeley.edu/apply-to-berkeley/international-students/requirements-for-international-students/",
+  "status": 200,
+  "finalUrl": "https://admissions.berkeley.edu/apply-to-berkeley/international-students/requirements-for-international-students/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://admission.princeton.edu/cost-aid": {
+  "url": "https://admission.princeton.edu/cost-aid",
+  "status": 200,
+  "finalUrl": "https://admission.princeton.edu/cost-aid",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://admissions.berkeley.edu/apply-to-berkeley/": {
+  "url": "https://admissions.berkeley.edu/apply-to-berkeley/",
+  "status": 200,
+  "finalUrl": "https://admissions.berkeley.edu/apply-to-berkeley/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://admissions.berkeley.edu/apply-to-berkeley/dates-deadlines/": {
+  "url": "https://admissions.berkeley.edu/apply-to-berkeley/dates-deadlines/",
+  "status": 200,
+  "finalUrl": "https://admissions.berkeley.edu/apply-to-berkeley/dates-deadlines/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://financialaid.berkeley.edu/types-of-aid-at-berkeley/scholarships/regents-and-chancellors-scholarship/international-student-scholarships/": {
+  "url": "https://financialaid.berkeley.edu/types-of-aid-at-berkeley/scholarships/regents-and-chancellors-scholarship/international-student-scholarships/",
+  "status": 200,
+  "finalUrl": "https://financialaid.berkeley.edu/types-of-aid-at-berkeley/scholarships/regents-and-chancellors-scholarship/international-student-scholarships/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://financialaid.berkeley.edu/how-aid-works/newly-admitted-students-faqs/": {
+  "url": "https://financialaid.berkeley.edu/how-aid-works/newly-admitted-students-faqs/",
+  "status": 200,
+  "finalUrl": "https://financialaid.berkeley.edu/how-aid-works/newly-admitted-students-faqs/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.admissions.caltech.edu/apply/first-year-applicants/deadlines": {
+  "url": "https://www.admissions.caltech.edu/apply/first-year-applicants/deadlines",
+  "status": 200,
+  "finalUrl": "https://www.admissions.caltech.edu/apply/first-year-applicants/deadlines",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://registrar.berkeley.edu/tuition-fees/fee-schedule/": {
+  "url": "https://registrar.berkeley.edu/tuition-fees/fee-schedule/",
+  "status": 200,
+  "finalUrl": "https://registrar.berkeley.edu/tuition-fees/fee-schedule/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.admissions.caltech.edu/apply/first-year-applicants/supplemental-application-essays": {
+  "url": "https://www.admissions.caltech.edu/apply/first-year-applicants/supplemental-application-essays",
+  "status": 200,
+  "finalUrl": "https://www.admissions.caltech.edu/apply/first-year-applicants/supplemental-application-essays",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.admissions.caltech.edu/apply/first-year-applicants/international-applicants": {
+  "url": "https://www.admissions.caltech.edu/apply/first-year-applicants/international-applicants",
+  "status": 200,
+  "finalUrl": "https://www.admissions.caltech.edu/apply/first-year-applicants/international-applicants",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.admissions.caltech.edu/documents/6959/International_Financial_Aid_Statement_of_Intent.pdf": {
+  "url": "https://www.admissions.caltech.edu/documents/6959/International_Financial_Aid_Statement_of_Intent.pdf",
+  "status": 200,
+  "finalUrl": "https://www.admissions.caltech.edu/documents/6959/International_Financial_Aid_Statement_of_Intent.pdf",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://admissions.uci.edu/apply/index.php": {
+  "url": "https://admissions.uci.edu/apply/index.php",
+  "status": 200,
+  "finalUrl": "https://admissions.uci.edu/apply/index.php",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://admissions.uci.edu/": {
+  "url": "https://admissions.uci.edu/",
+  "status": 200,
+  "finalUrl": "https://admissions.uci.edu/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://admissions.uci.edu/apply/how-to-apply/index.php": {
+  "url": "https://admissions.uci.edu/apply/how-to-apply/index.php",
+  "status": 200,
+  "finalUrl": "https://admissions.uci.edu/apply/how-to-apply/index.php",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://admissions.uci.edu/apply/applicant-portal.php": {
+  "url": "https://admissions.uci.edu/apply/applicant-portal.php",
+  "status": 200,
+  "finalUrl": "https://admissions.uci.edu/apply/applicant-portal.php",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.uni-konstanz.de/en/study/before-you-study/application-and-enrolment/bachelors-degree-and-first-state-examination-in-law/higher-education-entrance-qualification-earned-in-the-eu-or-in-switzerland-1/": {
+  "url": "https://www.uni-konstanz.de/en/study/before-you-study/application-and-enrolment/bachelors-degree-and-first-state-examination-in-law/higher-education-entrance-qualification-earned-in-the-eu-or-in-switzerland-1/",
+  "status": 200,
+  "finalUrl": "https://www.uni-konstanz.de/en/study/before-you-study/application-and-enrolment/bachelors-degree-and-first-state-examination-in-law/higher-education-entrance-qualification-earned-in-the-eu-or-in-switzerland-1/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.tum.de/studium/bewerbung/infoportal-bewerbung/bewerbung-international": {
+  "url": "https://www.tum.de/studium/bewerbung/infoportal-bewerbung/bewerbung-international",
+  "status": 200,
+  "finalUrl": "https://www.tum.de/studium/bewerbung/infoportal-bewerbung/bewerbung-international",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.uni-konstanz.de/en/study/before-you-study/application-and-enrolment/faq-application-process/": {
+  "url": "https://www.uni-konstanz.de/en/study/before-you-study/application-and-enrolment/faq-application-process/",
+  "status": 200,
+  "finalUrl": "https://www.uni-konstanz.de/en/study/before-you-study/application-and-enrolment/faq-application-process/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.tum.de": {
+  "url": "https://www.tum.de",
+  "status": 200,
+  "finalUrl": "https://www.tum.de/",
+  "ok": true,
+  "reason": "redirect to https://www.tum.de/",
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.uni-konstanz.de/en/international-office/study-in-konstanz/degree-studies/fees-and-scholarships/": {
+  "url": "https://www.uni-konstanz.de/en/international-office/study-in-konstanz/degree-studies/fees-and-scholarships/",
+  "status": 200,
+  "finalUrl": "https://www.uni-konstanz.de/en/international-office/study-in-konstanz/degree-studies/fees-and-scholarships/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.tum.de/studium/internationale-studierende/tutoren-undbuddy-programme": {
+  "url": "https://www.tum.de/studium/internationale-studierende/tutoren-undbuddy-programme",
+  "status": 200,
+  "finalUrl": "https://www.tum.de/studium/internationale-studierende/tutoren-undbuddy-programme",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.uni-konstanz.de/en/study/before-you-study/application-and-enrolment/bachelors-degree-and-first-state-examination-in-the-law/higher-education-entrance-qualification-earned-in-the-eu-or-in-switzerland-1/": {
+  "url": "https://www.uni-konstanz.de/en/study/before-you-study/application-and-enrolment/bachelors-degree-and-first-state-examination-in-the-law/higher-education-entrance-qualification-earned-in-the-eu-or-in-switzerland-1/",
+  "status": 404,
+  "finalUrl": "https://www.uni-konstanz.de/en/study/before-you-study/application-and-enrolment/bachelors-degree-and-first-state-examination-in-the-law/higher-education-entrance-qualification-earned-in-the-eu-or-in-switzerland-1/",
+  "ok": false,
+  "reason": "HTTP 404",
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.uni-hannover.de/en/studium/vor-dem-studium/bewerbung-zulassung/voraussetzungen-zum-studium/sprachnachweise": {
+  "url": "https://www.uni-hannover.de/en/studium/vor-dem-studium/bewerbung-zulassung/voraussetzungen-zum-studium/sprachnachweise",
+  "status": 200,
+  "finalUrl": "https://www.uni-hannover.de/en/studium/vor-dem-studium/bewerbung-zulassung/voraussetzungen-zum-studium/sprachnachweise",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.uni-hannover.de/en/studium/vor-dem-studium/bewerbung-zulassung/voraussetzungen-zum-studium/zulassungsarten": {
+  "url": "https://www.uni-hannover.de/en/studium/vor-dem-studium/bewerbung-zulassung/voraussetzungen-zum-studium/zulassungsarten",
+  "status": 200,
+  "finalUrl": "https://www.uni-hannover.de/en/studium/vor-dem-studium/bewerbung-zulassung/voraussetzungen-zum-studium/zulassungsarten",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.uni-hannover.de/en/studium/finanzierung-foerderung/studienkosten/": {
+  "url": "https://www.uni-hannover.de/en/studium/finanzierung-foerderung/studienkosten/",
+  "status": 200,
+  "finalUrl": "https://www.uni-hannover.de/en/studium/finanzierung-foerderung/studienkosten/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://rptu.de/en/studies/prior-to-studies/application": {
+  "url": "https://rptu.de/en/studies/prior-to-studies/application",
+  "status": 200,
+  "finalUrl": "https://rptu.de/en/studies/prior-to-studies/application",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://rptu.de/en/studies/during-studies/re-registration": {
+  "url": "https://rptu.de/en/studies/during-studies/re-registration",
+  "status": 200,
+  "finalUrl": "https://rptu.de/en/studies/during-studies/re-registration",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.uni-augsburg.de/en/studium/studieren-augsburg/stipendien/": {
+  "url": "https://www.uni-augsburg.de/en/studium/studieren-augsburg/stipendien/",
+  "status": 200,
+  "finalUrl": "https://www.uni-augsburg.de/en/studium/studieren-augsburg/stipendien/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.uni-marburg.de/en/studying/before-studying/application-admission-deadlines/deadlines": {
+  "url": "https://www.uni-marburg.de/en/studying/before-studying/application-admission-deadlines/deadlines",
+  "status": 200,
+  "finalUrl": "https://www.uni-marburg.de/en/studying/before-studying/application-admission-deadlines/deadlines",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.uni-marburg.de/en/fb10/languages-literatures/studying": {
+  "url": "https://www.uni-marburg.de/en/fb10/languages-literatures/studying",
+  "status": 200,
+  "finalUrl": "https://www.uni-marburg.de/en/fb10/languages-literatures/studying",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.uni-augsburg.de/en/studium/bewerbung/bewerbung/internationale-bewerber/": {
+  "url": "https://www.uni-augsburg.de/en/studium/bewerbung/bewerbung/internationale-bewerber/",
+  "status": 200,
+  "finalUrl": "https://www.uni-augsburg.de/en/studium/bewerbung/bewerbung/internationale-bewerber/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.uni-marburg.de/en/studying/before-studying/application-admission-deadlines/undergraduate-application/admissions-process": {
+  "url": "https://www.uni-marburg.de/en/studying/before-studying/application-admission-deadlines/undergraduate-application/admissions-process",
+  "status": 200,
+  "finalUrl": "https://www.uni-marburg.de/en/studying/before-studying/application-admission-deadlines/undergraduate-application/admissions-process",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://admission.yonsei.ac.kr/seoul/admission/html/counsel/noticeView.asp?BBS_NO=3520&s_data=2027": {
+  "url": "https://admission.yonsei.ac.kr/seoul/admission/html/counsel/noticeView.asp?BBS_NO=3520&s_data=2027",
+  "status": 200,
+  "finalUrl": "https://admission.yonsei.ac.kr/seoul/admission/html/counsel/noticeView.asp?BBS_NO=3520&s_data=2027",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://en.snu.ac.kr/admission/overview/notice?bbsidx=170606&md=v": {
+  "url": "https://en.snu.ac.kr/admission/overview/notice?bbsidx=170606&md=v",
+  "status": 200,
+  "finalUrl": "https://en.snu.ac.kr/admission/overview/notice?bbsidx=170606&md=v",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://en.snu.ac.kr/admission/undergraduate/application": {
+  "url": "https://en.snu.ac.kr/admission/undergraduate/application",
+  "status": 200,
+  "finalUrl": "https://en.snu.ac.kr/admission/undergraduate/application",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://en.snu.ac.kr/admission/undergraduate/scholarships/before_admission": {
+  "url": "https://en.snu.ac.kr/admission/undergraduate/scholarships/before_admission",
+  "status": 200,
+  "finalUrl": "https://en.snu.ac.kr/admission/undergraduate/scholarships/before_admission",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://admission.kaist.ac.kr/intl-undergraduate/before/sub02": {
+  "url": "https://admission.kaist.ac.kr/intl-undergraduate/before/sub02",
+  "status": 200,
+  "finalUrl": "https://admission.kaist.ac.kr/intl-undergraduate/before/sub02",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://admission.kaist.ac.kr/intl-undergraduate/support/scholarships/kaist/": {
+  "url": "https://admission.kaist.ac.kr/intl-undergraduate/support/scholarships/kaist/",
+  "status": 200,
+  "finalUrl": "https://admission.kaist.ac.kr/intl-undergraduate/support/scholarships/kaist/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://admission.kaist.ac.kr/intl-undergraduate/application/ApplicationGuide/ApplicationTimeline": {
+  "url": "https://admission.kaist.ac.kr/intl-undergraduate/application/ApplicationGuide/ApplicationTimeline",
+  "status": 200,
+  "finalUrl": "https://admission.kaist.ac.kr/intl-undergraduate/application/ApplicationGuide/ApplicationTimeline",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.tum.de/studium/internationale-studierende": {
+  "url": "https://www.tum.de/studium/internationale-studierende",
+  "status": 200,
+  "finalUrl": "https://www.tum.de/studium/internationale-studierende",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://oiss.skku.edu/oiss/admission_undergraduate.do?articleNo=227492&mode=view": {
+  "url": "https://oiss.skku.edu/oiss/admission_undergraduate.do?articleNo=227492&mode=view",
+  "status": 404,
+  "finalUrl": "https://oiss.skku.edu/oiss/admission_undergraduate.do?articleNo=227492&mode=view",
+  "ok": false,
+  "reason": "HTTP 404",
+  "checkedAt": "2026-11-14"
+ },
+ "https://admission-global.skku.edu/eng/etc/bbs_list.html?ctg_cd=Undergraduate": {
+  "url": "https://admission-global.skku.edu/eng/etc/bbs_list.html?ctg_cd=Undergraduate",
+  "status": 404,
+  "finalUrl": "https://admission-global.skku.edu/eng/etc/bbs_list.html?ctg_cd=Undergraduate",
+  "ok": false,
+  "reason": "HTTP 404",
+  "checkedAt": "2026-11-14"
+ },
+ "https://oiss.skku.edu/oiss/admission_undergraduate.do?articleNo=227497&attachNo=204362&mode=download": {
+  "url": "https://oiss.skku.edu/oiss/admission_undergraduate.do?articleNo=227497&attachNo=204362&mode=download",
+  "status": 404,
+  "finalUrl": "https://oiss.skku.edu/oiss/admission_undergraduate.do?articleNo=227497&attachNo=204362&mode=download",
+  "ok": false,
+  "reason": "HTTP 404",
+  "checkedAt": "2026-11-14"
+ },
+ "https://oiss.skku.edu/oiss/scholarship.do": {
+  "url": "https://oiss.skku.edu/oiss/scholarship.do",
+  "status": 200,
+  "finalUrl": "https://oiss.skku.edu/oiss/scholarship.do",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://adm-iu.postech.ac.kr/user/comm/menu/e2afb97fa1b8f43c574be0dabef78f87/content/index.do": {
+  "url": "https://adm-iu.postech.ac.kr/user/comm/menu/e2afb97fa1b8f43c574be0dabef78f87/content/index.do",
+  "status": 200,
+  "finalUrl": "https://adm-iu.postech.ac.kr/user/comm/menu/e2afb97fa1b8f43c574be0dabef78f87/content/index.do",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://adm-iu.postech.ac.kr/user/comm/menu/3317587a17a23d4dacdb9ffc4762bf4a/content/index.do": {
+  "url": "https://adm-iu.postech.ac.kr/user/comm/menu/3317587a17a23d4dacdb9ffc4762bf4a/content/index.do",
+  "status": 200,
+  "finalUrl": "https://adm-iu.postech.ac.kr/user/comm/menu/3317587a17a23d4dacdb9ffc4762bf4a/content/index.do",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://skb.skku.edu/oiss/admission_undergraduate.do?articleNo=227497&attachNo=204363&mode=download": {
+  "url": "https://skb.skku.edu/oiss/admission_undergraduate.do?articleNo=227497&attachNo=204363&mode=download",
+  "status": 503,
+  "finalUrl": "https://skb.skku.edu/oiss/admission_undergraduate.do?articleNo=227497&attachNo=204363&mode=download",
+  "ok": false,
+  "reason": "HTTP 503",
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.postech.ac.kr/eng/admission-aid/scholarship_information.do": {
+  "url": "https://www.postech.ac.kr/eng/admission-aid/scholarship_information.do",
+  "status": 200,
+  "finalUrl": "https://www.postech.ac.kr/eng/admission-aid/scholarship_information.do",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://en.sejong.ac.kr/eng/academics/Undergraduate_School.do": {
+  "url": "https://en.sejong.ac.kr/eng/academics/Undergraduate_School.do",
+  "status": 200,
+  "finalUrl": "https://en.sejong.ac.kr/eng/academics/Undergraduate_School.do",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://oia.hanyang.ac.kr/": {
+  "url": "https://oia.hanyang.ac.kr/",
+  "status": 200,
+  "finalUrl": "https://oia.hanyang.ac.kr/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://oia.korea.ac.kr/_res/oia/etc/Application_Guide_for_Fall_2026_Freshman%28ENG%29.pdf": {
+  "url": "https://oia.korea.ac.kr/_res/oia/etc/Application_Guide_for_Fall_2026_Freshman%28ENG%29.pdf",
+  "status": 200,
+  "finalUrl": "https://oia.korea.ac.kr/_res/oia/etc/Application_Guide_for_Fall_2026_Freshman%28ENG%29.pdf",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://international.pusan.ac.kr/sites/international/download/brochure/005-Admissons%20For%20International%20Student%28English%29.pdf": {
+  "url": "https://international.pusan.ac.kr/sites/international/download/brochure/005-Admissons%20For%20International%20Student%28English%29.pdf",
+  "status": 404,
+  "finalUrl": "https://international.pusan.ac.kr/sites/international/download/brochure/005-Admissons%20For%20International%20Student%28English%29.pdf",
+  "ok": false,
+  "reason": "HTTP 404",
+  "checkedAt": "2026-11-14"
+ },
+ "https://international.pusan.ac.kr/bbs/international/2089/1459481/artclView.do": {
+  "url": "https://international.pusan.ac.kr/bbs/international/2089/1459481/artclView.do",
+  "status": 200,
+  "finalUrl": "https://international.pusan.ac.kr/bbs/international/2089/1459481/artclView.do",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://en.sejong.ac.kr/cms/etcResourceDown.do?key=%24cms%24OIGw9gRghiAECyBTAJgSyrKA7ZsDCYAtoQK5aoDGUALqmFrAPoBMADM8wHSsBs3A7JwAOyAGZA&site=%24cms%24KYOw5kA": {
+  "url": "https://en.sejong.ac.kr/cms/etcResourceDown.do?key=%24cms%24OIGw9gRghiAECyBTAJgSyrKA7ZsDCYAtoQK5aoDGUALqmFrAPoBMADM8wHSsBs3A7JwAOyAGZA&site=%24cms%24KYOw5kA",
+  "status": 200,
+  "finalUrl": "https://en.sejong.ac.kr/cms/etcResourceDown.do?key=%24cms%24OIGw9gRghiAECyBTAJgSyrKA7ZsDCYAtoQK5aoDGUALqmFrAPoBMADM8wHSsBs3A7JwAOyAGZA&site=%24cms%24KYOw5kA",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://international.pusan.ac.kr/international/15218/subview.do": {
+  "url": "https://international.pusan.ac.kr/international/15218/subview.do",
+  "status": 200,
+  "finalUrl": "https://international.pusan.ac.kr/international/15218/subview.do",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://iphak.ulsan.ac.kr/upload/board/2025/10/20/960c8cc2-352d-48eb-9e68-125d49605641.pdf": {
+  "url": "https://iphak.ulsan.ac.kr/upload/board/2025/10/20/960c8cc2-352d-48eb-9e68-125d49605641.pdf",
+  "status": 0,
+  "finalUrl": "https://iphak.ulsan.ac.kr/upload/board/2025/10/20/960c8cc2-352d-48eb-9e68-125d49605641.pdf",
+  "ok": false,
+  "reason": "no response (curl: (28) Connection timed out after 20004 milliseconds)",
+  "checkedAt": "2026-11-14"
+ },
+ "https://oia.cbnu.ac.kr/home/sub.do?menukey=7676": {
+  "url": "https://oia.cbnu.ac.kr/home/sub.do?menukey=7676",
+  "status": 200,
+  "finalUrl": "https://oia.cbnu.ac.kr/home/sub.do?menukey=7676",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://oia.cbnu.ac.kr/home/sub.do?menukey=7867": {
+  "url": "https://oia.cbnu.ac.kr/home/sub.do?menukey=7867",
+  "status": 200,
+  "finalUrl": "https://oia.cbnu.ac.kr/home/sub.do?menukey=7867",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://international.ulsan.ac.kr/international/397": {
+  "url": "https://international.ulsan.ac.kr/international/397",
+  "status": 200,
+  "finalUrl": "https://international.ulsan.ac.kr/international/397",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://oia.uos.ac.kr/oia/web/contents/OIA_Admission_01": {
+  "url": "https://oia.uos.ac.kr/oia/web/contents/OIA_Admission_01",
+  "status": 200,
+  "finalUrl": "https://oia.uos.ac.kr/oia/web/contents/OIA_Admission_01",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://uos.ac.kr/eng/web/bbs/uosen_faq01/list": {
+  "url": "https://uos.ac.kr/eng/web/bbs/uosen_faq01/list",
+  "status": 200,
+  "finalUrl": "https://uos.ac.kr/eng/web/bbs/uosen_faq01/list",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://uos.ac.kr/eng/web/contents/UOS_CampusLife_03_03": {
+  "url": "https://uos.ac.kr/eng/web/contents/UOS_CampusLife_03_03",
+  "status": 200,
+  "finalUrl": "https://uos.ac.kr/eng/web/contents/UOS_CampusLife_03_03",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://global.seoultech.ac.kr/notice/notice?bidx=895056&bnum=58432&do=commonview": {
+  "url": "https://global.seoultech.ac.kr/notice/notice?bidx=895056&bnum=58432&do=commonview",
+  "status": 200,
+  "finalUrl": "https://global.seoultech.ac.kr/notice/notice?bidx=895056&bnum=58432&do=commonview",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://global.seoultech.ac.kr/apply/undergraduate": {
+  "url": "https://global.seoultech.ac.kr/apply/undergraduate",
+  "status": 200,
+  "finalUrl": "https://global.seoultech.ac.kr/apply/undergraduate",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://english.wsu.ac.kr/page/index.jsp?code=eng0301": {
+  "url": "https://english.wsu.ac.kr/page/index.jsp?code=eng0301",
+  "status": 200,
+  "finalUrl": "https://english.wsu.ac.kr/page/index.jsp?code=eng0301",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://english.wsu.ac.kr/page/index.jsp?code=eng0303": {
+  "url": "https://english.wsu.ac.kr/page/index.jsp?code=eng0303",
+  "status": 200,
+  "finalUrl": "https://english.wsu.ac.kr/page/index.jsp?code=eng0303",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://english.wsu.ac.kr/page/index.jsp?code=eng0302": {
+  "url": "https://english.wsu.ac.kr/page/index.jsp?code=eng0302",
+  "status": 200,
+  "finalUrl": "https://english.wsu.ac.kr/page/index.jsp?code=eng0302",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://global.seoultech.ac.kr/apply/scholar": {
+  "url": "https://global.seoultech.ac.kr/apply/scholar",
+  "status": 200,
+  "finalUrl": "https://global.seoultech.ac.kr/apply/scholar",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://english.wsu.ac.kr/site/main_eng/images/Application%20Guide%20Booklets_en_2026_v2.pdf": {
+  "url": "https://english.wsu.ac.kr/site/main_eng/images/Application%20Guide%20Booklets_en_2026_v2.pdf",
+  "status": 200,
+  "finalUrl": "https://english.wsu.ac.kr/site/main_eng/images/Application%20Guide%20Booklets_en_2026_v2.pdf",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.sis.itu.edu.tr/EN/student/tuition-fee/fees/20271020/tutionfees.php": {
+  "url": "https://www.sis.itu.edu.tr/EN/student/tuition-fee/fees/20271020/tutionfees.php",
+  "status": 200,
+  "finalUrl": "https://www.sis.itu.edu.tr/EN/student/tuition-fee/fees/20271020/tutionfees.php",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.sis.itu.edu.tr/EN/student/intenational-students/application.php": {
+  "url": "https://www.sis.itu.edu.tr/EN/student/intenational-students/application.php",
+  "status": 200,
+  "finalUrl": "https://www.sis.itu.edu.tr/EN/student/intenational-students/application.php",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.sis.itu.edu.tr/EN/regulations/valid-english-tests-and-minimum-scores.php": {
+  "url": "https://www.sis.itu.edu.tr/EN/regulations/valid-english-tests-and-minimum-scores.php",
+  "status": 200,
+  "finalUrl": "https://www.sis.itu.edu.tr/EN/regulations/valid-english-tests-and-minimum-scores.php",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.sis.itu.edu.tr/duyuru_ekler/yabanci/202711/EN/202711.php": {
+  "url": "https://www.sis.itu.edu.tr/duyuru_ekler/yabanci/202711/EN/202711.php",
+  "status": 200,
+  "finalUrl": "https://www.sis.itu.edu.tr/duyuru_ekler/yabanci/202711/EN/202711.php",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://international.ku.edu.tr/wp-content/uploads/2020/05/Ko%C3%A7-University-Need-Based-and-Merit-Based-Undergraduate-Scholarships-for-International-Students-2020-21.pdf": {
+  "url": "https://international.ku.edu.tr/wp-content/uploads/2020/05/Ko%C3%A7-University-Need-Based-and-Merit-Based-Undergraduate-Scholarships-for-International-Students-2020-21.pdf",
+  "status": 404,
+  "finalUrl": "https://international.ku.edu.tr/wp-content/uploads/2020/05/Ko%C3%A7-University-Need-Based-and-Merit-Based-Undergraduate-Scholarships-for-International-Students-2020-21.pdf",
+  "ok": false,
+  "reason": "HTTP 404",
+  "checkedAt": "2026-11-14"
+ },
+ "https://international.ku.edu.tr/wp-content/uploads/2024/08/KU-UGRD-INT-Fall-2024-Leaflet-A4-ENG-merged_compressed.pdf": {
+  "url": "https://international.ku.edu.tr/wp-content/uploads/2024/08/KU-UGRD-INT-Fall-2024-Leaflet-A4-ENG-merged_compressed.pdf",
+  "status": 200,
+  "finalUrl": "https://international.ku.edu.tr/wp-content/uploads/2024/08/KU-UGRD-INT-Fall-2024-Leaflet-A4-ENG-merged_compressed.pdf",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://registrar.ku.edu.tr/wp-content/uploads/2024/03/Entry-Qualifications.pdf": {
+  "url": "https://registrar.ku.edu.tr/wp-content/uploads/2024/03/Entry-Qualifications.pdf",
+  "status": 200,
+  "finalUrl": "https://registrar.ku.edu.tr/wp-content/uploads/2024/03/Entry-Qualifications.pdf",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://iso.metu.edu.tr/en/node/47": {
+  "url": "https://iso.metu.edu.tr/en/node/47",
+  "status": 200,
+  "finalUrl": "https://iso.metu.edu.tr/en/node/47",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://iso.metu.edu.tr/en/application-dates": {
+  "url": "https://iso.metu.edu.tr/en/application-dates",
+  "status": 200,
+  "finalUrl": "https://iso.metu.edu.tr/en/application-dates",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://iso.metu.edu.tr/en/scholarship-opportunities": {
+  "url": "https://iso.metu.edu.tr/en/scholarship-opportunities",
+  "status": 200,
+  "finalUrl": "https://iso.metu.edu.tr/en/scholarship-opportunities",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://iso.metu.edu.tr/en/system/files/pre-arrival_guideline_2026.pdf": {
+  "url": "https://iso.metu.edu.tr/en/system/files/pre-arrival_guideline_2026.pdf",
+  "status": 200,
+  "finalUrl": "https://iso.metu.edu.tr/en/system/files/pre-arrival_guideline_2026.pdf",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://oidb.metu.edu.tr/en/fees": {
+  "url": "https://oidb.metu.edu.tr/en/fees",
+  "status": 200,
+  "finalUrl": "https://oidb.metu.edu.tr/en/fees",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://adaylar.bogazici.edu.tr/en-EN/Home": {
+  "url": "https://adaylar.bogazici.edu.tr/en-EN/Home",
+  "status": 200,
+  "finalUrl": "https://adaylar.bogazici.edu.tr/en-EN/Home",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://iro.sabanciuniv.edu/en/how-to-apply": {
+  "url": "https://iro.sabanciuniv.edu/en/how-to-apply",
+  "status": 200,
+  "finalUrl": "https://iro.sabanciuniv.edu/en/how-to-apply",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://iro.sabanciuniv.edu/en/application-requirements": {
+  "url": "https://iro.sabanciuniv.edu/en/application-requirements",
+  "status": 200,
+  "finalUrl": "https://iro.sabanciuniv.edu/en/application-requirements",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://iro.sabanciuniv.edu/en/tuition-fee": {
+  "url": "https://iro.sabanciuniv.edu/en/tuition-fee",
+  "status": 200,
+  "finalUrl": "https://iro.sabanciuniv.edu/en/tuition-fee",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://intl.bogazici.edu.tr/required-documents-undergraduate-application": {
+  "url": "https://intl.bogazici.edu.tr/required-documents-undergraduate-application",
+  "status": 200,
+  "finalUrl": "https://bogazici.edu.tr/",
+  "ok": true,
+  "reason": "redirect to https://bogazici.edu.tr/",
+  "checkedAt": "2026-11-14"
+ },
+ "https://iro.sabanciuniv.edu/en/degree-students/frequently-asked-questions/admission-applications": {
+  "url": "https://iro.sabanciuniv.edu/en/degree-students/frequently-asked-questions/admission-applications",
+  "status": 200,
+  "finalUrl": "https://iro.sabanciuniv.edu/en/degree-students/frequently-asked-questions/admission-applications",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://w3.bilkent.edu.tr/international/english-language-proficiency/": {
+  "url": "https://w3.bilkent.edu.tr/international/english-language-proficiency/",
+  "status": 200,
+  "finalUrl": "https://w3.bilkent.edu.tr/international/english-language-proficiency/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://w3.bilkent.edu.tr/international/how-to-apply/": {
+  "url": "https://w3.bilkent.edu.tr/international/how-to-apply/",
+  "status": 200,
+  "finalUrl": "https://w3.bilkent.edu.tr/international/how-to-apply/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://w3.bilkent.edu.tr/international/scholarships-for-international-students/": {
+  "url": "https://w3.bilkent.edu.tr/international/scholarships-for-international-students/",
+  "status": 200,
+  "finalUrl": "https://w3.bilkent.edu.tr/international/scholarships-for-international-students/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://w3.bilkent.edu.tr/bilkent/international-and-other-students-tuition-fees/": {
+  "url": "https://w3.bilkent.edu.tr/bilkent/international-and-other-students-tuition-fees/",
+  "status": 200,
+  "finalUrl": "https://w3.bilkent.edu.tr/en/international-and-other-students-tuition-fees/",
+  "ok": true,
+  "reason": "redirect to https://w3.bilkent.edu.tr/en/international-and-other-students-tuition-fees/",
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.sabanciuniv.edu/en/academic-calendar?b=2027&c=16&d=en": {
+  "url": "https://www.sabanciuniv.edu/en/academic-calendar?b=2027&c=16&d=en",
+  "status": 200,
+  "finalUrl": "https://www.sabanciuniv.edu/en/academic-calendar?b=2027&c=16&d=en",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://internationalstudents.hacettepe.edu.tr/en/application?section=required-documents": {
+  "url": "https://internationalstudents.hacettepe.edu.tr/en/application?section=required-documents",
+  "status": 200,
+  "finalUrl": "https://internationalstudents.hacettepe.edu.tr/en/application?section=required-documents",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://internationalstudents.hacettepe.edu.tr/file/70a8bd57-14fb-4a1b-8a75-301fb5178ecb": {
+  "url": "https://internationalstudents.hacettepe.edu.tr/file/70a8bd57-14fb-4a1b-8a75-301fb5178ecb",
+  "status": 200,
+  "finalUrl": "https://internationalstudents.hacettepe.edu.tr/file/70a8bd57-14fb-4a1b-8a75-301fb5178ecb",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://int.bau.edu.tr/admission/tuition-fees/": {
+  "url": "https://int.bau.edu.tr/admission/tuition-fees/",
+  "status": 200,
+  "finalUrl": "https://int.bau.edu.tr/admission/tuition-fees/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://exchange.bau.edu.tr/future-students/frequently-asked-questions/": {
+  "url": "https://exchange.bau.edu.tr/future-students/frequently-asked-questions/",
+  "status": 200,
+  "finalUrl": "https://exchange.bau.edu.tr/future-students/frequently-asked-questions/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://internationalstudent.hacettepe.edu.tr/en/home": {
+  "url": "https://internationalstudent.hacettepe.edu.tr/en/home",
+  "status": 200,
+  "finalUrl": "https://internationalstudent.hacettepe.edu.tr/en/home",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://oia.uos.ac.kr/oia/web/file/download/uu/183d1cc283af4ac5bd619e46fbf4bfd6": {
+  "url": "https://oia.uos.ac.kr/oia/web/file/download/uu/183d1cc283af4ac5bd619e46fbf4bfd6",
+  "status": 200,
+  "finalUrl": "https://oia.uos.ac.kr/oia/web/file/download/uu/183d1cc283af4ac5bd619e46fbf4bfd6",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://international.istinye.edu.tr/en/language-exam-exemption-criteria": {
+  "url": "https://international.istinye.edu.tr/en/language-exam-exemption-criteria",
+  "status": 200,
+  "finalUrl": "https://international.istinye.edu.tr/en/language-exam-exemption-criteria",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://international.istinye.edu.tr/en/application-calendar": {
+  "url": "https://international.istinye.edu.tr/en/application-calendar",
+  "status": 200,
+  "finalUrl": "https://international.istinye.edu.tr/en/application-calendar",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://international.istinye.edu.tr/en/how-apply-isu": {
+  "url": "https://international.istinye.edu.tr/en/how-apply-isu",
+  "status": 200,
+  "finalUrl": "https://international.istinye.edu.tr/en/how-apply-isu",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://international.istinye.edu.tr/en/quotas-and-tuition-fees": {
+  "url": "https://international.istinye.edu.tr/en/quotas-and-tuition-fees",
+  "status": 200,
+  "finalUrl": "https://international.istinye.edu.tr/en/quotas-and-tuition-fees",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.etu.edu.tr/en/sayfa/frequently-asked-questions": {
+  "url": "https://www.etu.edu.tr/en/sayfa/frequently-asked-questions",
+  "status": 200,
+  "finalUrl": "https://www.etu.edu.tr/en/sayfa/frequently-asked-questions",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.etu.edu.tr/en/uluslararasi/sayfa/tuition-fees-and-scholarship-opportunities": {
+  "url": "https://www.etu.edu.tr/en/uluslararasi/sayfa/tuition-fees-and-scholarship-opportunities",
+  "status": 200,
+  "finalUrl": "https://www.etu.edu.tr/en/uluslararasi/sayfa/tuition-fees-and-scholarship-opportunities",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.beykent.edu.tr/en/exchange/international-students/application-and-registration/candidate-student-for-associate-and-bachelor-degree": {
+  "url": "https://www.beykent.edu.tr/en/exchange/international-students/application-and-registration/candidate-student-for-associate-and-bachelor-degree",
+  "status": 200,
+  "finalUrl": "https://www.beykent.edu.tr/en/exchange/international-students/application-and-registration/candidate-student-for-associate-and-bachelor-degree",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.etu.edu.tr/en/ogrenci-isleri/sayfa/international-student-apply-now": {
+  "url": "https://www.etu.edu.tr/en/ogrenci-isleri/sayfa/international-student-apply-now",
+  "status": 200,
+  "finalUrl": "https://www.etu.edu.tr/en/ogrenci-isleri/sayfa/international-student-apply-now",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.beykent.edu.tr/en/exchange/international-students/application-and-registration/international-student-tuition-calculator": {
+  "url": "https://www.beykent.edu.tr/en/exchange/international-students/application-and-registration/international-student-tuition-calculator",
+  "status": 200,
+  "finalUrl": "https://www.beykent.edu.tr/en/exchange/international-students/application-and-registration/international-student-tuition-calculator",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://iso.gop.edu.tr/Icerik.aspx?d=en-us&m=basvuru_ve_kayit&mk=37055": {
+  "url": "https://iso.gop.edu.tr/Icerik.aspx?d=en-us&m=basvuru_ve_kayit&mk=37055",
+  "status": 200,
+  "finalUrl": "https://iso.gop.edu.tr/Icerik.aspx?d=en-us&m=basvuru_ve_kayit&mk=37055",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://iso.gop.edu.tr/TumDuyurular.aspx?d=en-US&mk=36065&m=duyuru_tum_idari": {
+  "url": "https://iso.gop.edu.tr/TumDuyurular.aspx?d=en-US&mk=36065&m=duyuru_tum_idari",
+  "status": 200,
+  "finalUrl": "https://iso.gop.edu.tr/TumDuyurular.aspx?d=en-US&mk=36065&m=duyuru_tum_idari",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://iso.gop.edu.tr/duyuruDetay.aspx?d=en-US&id=52017&m=duyuru_detay&mk=36044": {
+  "url": "https://iso.gop.edu.tr/duyuruDetay.aspx?d=en-US&id=52017&m=duyuru_detay&mk=36044",
+  "status": 200,
+  "finalUrl": "https://iso.gop.edu.tr/duyuruDetay.aspx?d=en-US&id=52017&m=duyuru_detay&mk=36044",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://iro.dpu.edu.tr/en/index/sayfa/20376/tuition-fees": {
+  "url": "https://iro.dpu.edu.tr/en/index/sayfa/20376/tuition-fees",
+  "status": 200,
+  "finalUrl": "https://iro.dpu.edu.tr/en/index/sayfa/20376/tuition-fees",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://iro.dpu.edu.tr/en/index/sayfa/20031/international-students": {
+  "url": "https://iro.dpu.edu.tr/en/index/sayfa/20031/international-students",
+  "status": 200,
+  "finalUrl": "https://iro.dpu.edu.tr/",
+  "ok": true,
+  "reason": "redirect to https://iro.dpu.edu.tr/",
+  "checkedAt": "2026-11-14"
+ },
+ "https://oia.hanyang.ac.kr/files/attach/filebox/2026/01/22/84577760f898a555afede08054809e43.pdf": {
+  "url": "https://oia.hanyang.ac.kr/files/attach/filebox/2026/01/22/84577760f898a555afede08054809e43.pdf",
+  "status": 200,
+  "finalUrl": "https://oia.hanyang.ac.kr/files/attach/filebox/2026/01/22/84577760f898a555afede08054809e43.pdf",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://student-en.trakya.edu.tr/pages/application-and-admission": {
+  "url": "https://student-en.trakya.edu.tr/pages/application-and-admission",
+  "status": 200,
+  "finalUrl": "https://student-en.trakya.edu.tr/pages/application-and-admission",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://aasd.um.edu.my/faq-ug-international-admission": {
+  "url": "https://aasd.um.edu.my/faq-ug-international-admission",
+  "status": 200,
+  "finalUrl": "https://aasd.um.edu.my/faq-ug-international-admission",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://admission.usm.my/undergraduate/undergraduate-international": {
+  "url": "https://admission.usm.my/undergraduate/undergraduate-international",
+  "status": 500,
+  "finalUrl": "https://admission.usm.my/undergraduate/undergraduate-international",
+  "ok": false,
+  "reason": "HTTP 500",
+  "checkedAt": "2026-11-14"
+ },
+ "https://admission.usm.my/index.php/undergraduate/undergraduate-international/how-to-apply-international": {
+  "url": "https://admission.usm.my/index.php/undergraduate/undergraduate-international/how-to-apply-international",
+  "status": 200,
+  "finalUrl": "https://admission.usm.my/index.php/undergraduate/undergraduate-international/how-to-apply-international",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://admission.usm.my/course-ug-international": {
+  "url": "https://admission.usm.my/course-ug-international",
+  "status": 200,
+  "finalUrl": "https://admission.usm.my/course-ug-international",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://admission.usm.my/undergraduate/undergraduate-international/fee-ugi": {
+  "url": "https://admission.usm.my/undergraduate/undergraduate-international/fee-ugi",
+  "status": 200,
+  "finalUrl": "https://admission.usm.my/undergraduate/undergraduate-international/fee-ugi",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://study.um.edu.my/how-to-apply": {
+  "url": "https://study.um.edu.my/how-to-apply",
+  "status": 200,
+  "finalUrl": "https://study.um.edu.my/how-to-apply",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://smp.ukm.my/kemasukan/bwarga/dokumen/REQUIREMENTS.pdf": {
+  "url": "https://smp.ukm.my/kemasukan/bwarga/dokumen/REQUIREMENTS.pdf",
+  "status": 500,
+  "finalUrl": "https://smp.ukm.my/kemasukan/bwarga/dokumen/REQUIREMENTS.pdf",
+  "ok": false,
+  "reason": "HTTP 500",
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.ukm.my/portal/undergraduate-programmes/": {
+  "url": "https://www.ukm.my/portal/undergraduate-programmes/",
+  "status": 200,
+  "finalUrl": "https://www.ukm.my/portal/undergraduate-programmes/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://smp.upm.edu.my/smp/action/applicant/international/b4register": {
+  "url": "https://smp.upm.edu.my/smp/action/applicant/international/b4register",
+  "status": 200,
+  "finalUrl": "https://smp.upm.edu.my/smp/action/applicant/international/b4register",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://admission.utm.my/undergraduate-international/": {
+  "url": "https://admission.utm.my/undergraduate-international/",
+  "status": 200,
+  "finalUrl": "https://admission.utm.my/undergraduate-international/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://admission.utm.my/programme-fees-ug-international/": {
+  "url": "https://admission.utm.my/programme-fees-ug-international/",
+  "status": 200,
+  "finalUrl": "https://admission.utm.my/programme-fees-ug-international/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://admission.utm.my/international-undergraduate-foundation-fees/": {
+  "url": "https://admission.utm.my/international-undergraduate-foundation-fees/",
+  "status": 200,
+  "finalUrl": "https://admission.utm.my/international-undergraduate-foundation-fees/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.ucsiuniversity.edu.my/sites/default/files/ucsi_international_fee_structures.pdf": {
+  "url": "https://www.ucsiuniversity.edu.my/sites/default/files/ucsi_international_fee_structures.pdf",
+  "status": 403,
+  "finalUrl": "https://www.ucsiuniversity.edu.my/sites/default/files/ucsi_international_fee_structures.pdf",
+  "ok": false,
+  "reason": "HTTP 403",
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.msu.edu.my/faculty-information-sciences-engineering/bachelor-computer-engineering.php": {
+  "url": "https://www.msu.edu.my/faculty-information-sciences-engineering/bachelor-computer-engineering.php",
+  "status": 200,
+  "finalUrl": "https://www.msu.edu.my/faculty-information-sciences-engineering/bachelor-computer-engineering.php",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.mmu.edu.my/wp-content/uploads/2025/04/General-Guide-International.pdf": {
+  "url": "https://www.mmu.edu.my/wp-content/uploads/2025/04/General-Guide-International.pdf",
+  "status": 404,
+  "finalUrl": "https://www.mmu.edu.my/wp-content/uploads/2025/04/General-Guide-International.pdf",
+  "ok": false,
+  "reason": "HTTP 404",
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.mmu.edu.my/fee-structure-international/financial-assistance/": {
+  "url": "https://www.mmu.edu.my/fee-structure-international/financial-assistance/",
+  "status": 200,
+  "finalUrl": "https://www.mmu.edu.my/fee-structure-international/financial-assistance/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://akademik.upm.edu.my/upload/dokumen/menul320250417184027Undergraduate_Programmes_Brochure_for_International_Students.pdf": {
+  "url": "https://akademik.upm.edu.my/upload/dokumen/menul320250417184027Undergraduate_Programmes_Brochure_for_International_Students.pdf",
+  "status": 200,
+  "finalUrl": "https://akademik.upm.edu.my/upload/dokumen/menul320250417184027Undergraduate_Programmes_Brochure_for_International_Students.pdf",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://fke.utm.my/undergraduate/apply-for-undergraduate-admission-international-student/": {
+  "url": "https://fke.utm.my/undergraduate/apply-for-undergraduate-admission-international-student/",
+  "status": 200,
+  "finalUrl": "https://fke.utm.my/undergraduate/apply-for-undergraduate-admission-international-student/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://study.um.edu.my/doc/brochures/UG%20International%202024.pdf": {
+  "url": "https://study.um.edu.my/doc/brochures/UG%20International%202024.pdf",
+  "status": 200,
+  "finalUrl": "https://study.um.edu.my/doc/brochures/UG%20International%202024.pdf",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://study.um.edu.my/doc/tution-fee/Fee%20Structure%2C%20UG%2C%20Local%2C%20SATU%20-%20Updated%2022%20Oct%202025.pdf?_t=1761184221": {
+  "url": "https://study.um.edu.my/doc/tution-fee/Fee%20Structure%2C%20UG%2C%20Local%2C%20SATU%20-%20Updated%2022%20Oct%202025.pdf?_t=1761184221",
+  "status": 200,
+  "finalUrl": "https://study.um.edu.my/doc/tution-fee/Fee%20Structure%2C%20UG%2C%20Local%2C%20SATU%20-%20Updated%2022%20Oct%202025.pdf?_t=1761184221",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://study.um.edu.my/doc/brochures/brochure-foundation-03.05.2026.pdf": {
+  "url": "https://study.um.edu.my/doc/brochures/brochure-foundation-03.05.2026.pdf",
+  "status": 200,
+  "finalUrl": "https://study.um.edu.my/doc/brochures/brochure-foundation-03.05.2026.pdf",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.unimap.edu.my/images/admission/TUITION_FEE_SCHEDULE_FOR_INTERNATIONAL_STUDENTS.pdf": {
+  "url": "https://www.unimap.edu.my/images/admission/TUITION_FEE_SCHEDULE_FOR_INTERNATIONAL_STUDENTS.pdf",
+  "status": 200,
+  "finalUrl": "https://www.unimap.edu.my/images/admission/TUITION_FEE_SCHEDULE_FOR_INTERNATIONAL_STUDENTS.pdf",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.unimap.edu.my/images/admission/International_guidelineFORM/ENTRY%20REQUIREMENTS%20FOR%20ACADEMIC.pdf": {
+  "url": "https://www.unimap.edu.my/images/admission/International_guidelineFORM/ENTRY%20REQUIREMENTS%20FOR%20ACADEMIC.pdf",
+  "status": 200,
+  "finalUrl": "https://www.unimap.edu.my/images/admission/International_guidelineFORM/ENTRY%20REQUIREMENTS%20FOR%20ACADEMIC.pdf",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://international.join-tsinghua.edu.cn/Admission1/Eligibility.htm": {
+  "url": "https://international.join-tsinghua.edu.cn/Admission1/Eligibility.htm",
+  "status": 200,
+  "finalUrl": "https://international.join-tsinghua.edu.cn/Admission1/Eligibility.htm",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.unikl.edu.my/entry-requirement-international-student-2/": {
+  "url": "https://www.unikl.edu.my/entry-requirement-international-student-2/",
+  "status": 200,
+  "finalUrl": "https://www.unikl.edu.my/entry-requirement-international-student-2/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://isd.pku.edu.cn/en/undergraduate_program.php": {
+  "url": "https://isd.pku.edu.cn/en/undergraduate_program.php",
+  "status": 200,
+  "finalUrl": "https://isd.pku.edu.cn/en/undergraduate_program.php",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.isd.pku.edu.cn/en/detail.php?id=818": {
+  "url": "https://www.isd.pku.edu.cn/en/detail.php?id=818",
+  "status": 200,
+  "finalUrl": "https://www.isd.pku.edu.cn/en/detail.php?id=818",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.isd.pku.edu.cn/en/campus_detail.php?id=700": {
+  "url": "https://www.isd.pku.edu.cn/en/campus_detail.php?id=700",
+  "status": 200,
+  "finalUrl": "https://www.isd.pku.edu.cn/en/campus_detail.php?id=700",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://iczu.zju.edu.cn/_upload/article/files/c9/7e/7814085c40f2a430addf18fd4553/291c6d13-dfab-41be-9d98-116e62a17387.pdf": {
+  "url": "https://iczu.zju.edu.cn/_upload/article/files/c9/7e/7814085c40f2a430addf18fd4553/291c6d13-dfab-41be-9d98-116e62a17387.pdf",
+  "status": 200,
+  "finalUrl": "https://iczu.zju.edu.cn/_upload/article/files/c9/7e/7814085c40f2a430addf18fd4553/291c6d13-dfab-41be-9d98-116e62a17387.pdf",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://iczu.zju.edu.cn/admissions/2026/1027/c94185a3219716/page.htm": {
+  "url": "https://iczu.zju.edu.cn/admissions/2026/1027/c94185a3219716/page.htm",
+  "status": 200,
+  "finalUrl": "https://iczu.zju.edu.cn/admissions/2026/1027/c94185a3219716/page.htm",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://iczu.zju.edu.cn/admissionsen/95568/list.htm": {
+  "url": "https://iczu.zju.edu.cn/admissionsen/95568/list.htm",
+  "status": 200,
+  "finalUrl": "https://iczu.zju.edu.cn/admissionsen/95568/list.htm",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://iso.fudan.edu.cn/isoenglish/2c/a9/c51327a797865/page.htm": {
+  "url": "https://iso.fudan.edu.cn/isoenglish/2c/a9/c51327a797865/page.htm",
+  "status": 200,
+  "finalUrl": "https://iso.fudan.edu.cn/isoenglish/2c/a9/c51327a797865/page.htm",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.unikl.edu.my/international-admission/": {
+  "url": "https://www.unikl.edu.my/international-admission/",
+  "status": 0,
+  "finalUrl": "https://www.unikl.edu.my/international-admission/",
+  "ok": false,
+  "reason": "no response (curl: (28) Connection timed out after 20004 milliseconds)",
+  "checkedAt": "2026-11-14"
+ },
+ "https://iso.fudan.edu.cn/isoenglish/16199/list.htm": {
+  "url": "https://iso.fudan.edu.cn/isoenglish/16199/list.htm",
+  "status": 200,
+  "finalUrl": "https://iso.fudan.edu.cn/isoenglish/16199/list.htm",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://iso.fudan.edu.cn/_upload/article/files/07/37/45fe56074904993107db5420bf54/13a71a09-184f-49a7-8915-08d51320a358.pdf": {
+  "url": "https://iso.fudan.edu.cn/_upload/article/files/07/37/45fe56074904993107db5420bf54/13a71a09-184f-49a7-8915-08d51320a358.pdf",
+  "status": 200,
+  "finalUrl": "https://iso.fudan.edu.cn/_upload/article/files/07/37/45fe56074904993107db5420bf54/13a71a09-184f-49a7-8915-08d51320a358.pdf",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://international.join-tsinghua.edu.cn/Admission1/Freshmen_Scholarships1.htm": {
+  "url": "https://international.join-tsinghua.edu.cn/Admission1/Freshmen_Scholarships1.htm",
+  "status": 200,
+  "finalUrl": "https://international.join-tsinghua.edu.cn/Admission1/Freshmen_Scholarships1.htm",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.unikl.edu.my/wp-content/uploads/2023/08/UniKL-International-Booklet-UG-PG-2023.pdf": {
+  "url": "https://www.unikl.edu.my/wp-content/uploads/2023/08/UniKL-International-Booklet-UG-PG-2023.pdf",
+  "status": 0,
+  "finalUrl": "https://www.unikl.edu.my/wp-content/uploads/2023/08/UniKL-International-Booklet-UG-PG-2023.pdf",
+  "ok": false,
+  "reason": "no response (curl: (28) Connection timed out after 20004 milliseconds)",
+  "checkedAt": "2026-11-14"
+ },
+ "https://isc.sjtu.edu.cn/CN/show.aspx?info_id=1671&info_lb=133": {
+  "url": "https://isc.sjtu.edu.cn/CN/show.aspx?info_id=1671&info_lb=133",
+  "status": 404,
+  "finalUrl": "https://isc.sjtu.edu.cn/CN/show.aspx?info_id=1671&info_lb=133",
+  "ok": false,
+  "reason": "HTTP 404",
+  "checkedAt": "2026-11-14"
+ },
+ "https://isc.sjtu.edu.cn/": {
+  "url": "https://isc.sjtu.edu.cn/",
+  "status": 200,
+  "finalUrl": "https://isc.sjtu.edu.cn/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://isc.sjtu.edu.cn/kindeditor/Upload/file/20250806/20250806155110_0171.pdf": {
+  "url": "https://isc.sjtu.edu.cn/kindeditor/Upload/file/20250806/20250806155110_0171.pdf",
+  "status": 404,
+  "finalUrl": "https://isc.sjtu.edu.cn/kindeditor/Upload/file/20250806/20250806155110_0171.pdf",
+  "ok": false,
+  "reason": "HTTP 404",
+  "checkedAt": "2026-11-14"
+ },
+ "https://admission.unimap.edu.my/eppp.php": {
+  "url": "https://admission.unimap.edu.my/eppp.php",
+  "status": 0,
+  "finalUrl": "https://admission.unimap.edu.my/eppp.php",
+  "ok": false,
+  "reason": "no response (curl: (28) Connection timed out after 20006 milliseconds)",
+  "checkedAt": "2026-11-14"
+ },
+ "https://isa.ustc.edu.cn/xs/list.asp?menu1=02&menu2=02": {
+  "url": "https://isa.ustc.edu.cn/xs/list.asp?menu1=02&menu2=02",
+  "status": 404,
+  "finalUrl": "https://isa.ustc.edu.cn/xs/list.asp?menu1=02&menu2=02",
+  "ok": false,
+  "reason": "HTTP 404",
+  "checkedAt": "2026-11-14"
+ },
+ "https://isa.ustc.edu.cn/xs/disp.asp?degree=0&menu1=07&menu2=01&ucode=195": {
+  "url": "https://isa.ustc.edu.cn/xs/disp.asp?degree=0&menu1=07&menu2=01&ucode=195",
+  "status": 404,
+  "finalUrl": "https://isa.ustc.edu.cn/xs/disp.asp?degree=0&menu1=07&menu2=01&ucode=195",
+  "ok": false,
+  "reason": "HTTP 404",
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.unikl.edu.my/programme/bachelor-of-information-technology-hons-in-computer-system-security/": {
+  "url": "https://www.unikl.edu.my/programme/bachelor-of-information-technology-hons-in-computer-system-security/",
+  "status": 0,
+  "finalUrl": "https://www.unikl.edu.my/programme/bachelor-of-information-technology-hons-in-computer-system-security/",
+  "ok": false,
+  "reason": "no response (curl: (28) Connection timed out after 20006 milliseconds)",
+  "checkedAt": "2026-11-14"
+ },
+ "https://study.tongji.edu.cn/en/info/1010/1224.htm": {
+  "url": "https://study.tongji.edu.cn/en/info/1010/1224.htm",
+  "status": 200,
+  "finalUrl": "https://study.tongji.edu.cn/en/info/1010/1224.htm",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://study.tongji.edu.cn/__local/3/31/29/5548C243E9F9B76ACEB35E3A6BC_C30B8827_37323.pdf": {
+  "url": "https://study.tongji.edu.cn/__local/3/31/29/5548C243E9F9B76ACEB35E3A6BC_C30B8827_37323.pdf",
+  "status": 200,
+  "finalUrl": "https://study.tongji.edu.cn/__local/3/31/29/5548C243E9F9B76ACEB35E3A6BC_C30B8827_37323.pdf",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://study.tongji.edu.cn/en/CURRENT_STUDENTS/Free_Costs.htm": {
+  "url": "https://study.tongji.edu.cn/en/CURRENT_STUDENTS/Free_Costs.htm",
+  "status": 200,
+  "finalUrl": "https://study.tongji.edu.cn/en/CURRENT_STUDENTS/Free_Costs.htm",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://oec.fjmu.edu.cn/": {
+  "url": "https://oec.fjmu.edu.cn/",
+  "status": 200,
+  "finalUrl": "https://oec.fjmu.edu.cn/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://en.fjmu.edu.cn/": {
+  "url": "https://en.fjmu.edu.cn/",
+  "status": 200,
+  "finalUrl": "https://en.fjmu.edu.cn/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.fjmu.edu.cn/": {
+  "url": "https://www.fjmu.edu.cn/",
+  "status": 200,
+  "finalUrl": "https://www.fjmu.edu.cn/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://sie.ntu.edu.cn/ntu_web/html/enrollment-information/enrollment-information.html?Hid=information&lang=en&timid=63": {
+  "url": "https://sie.ntu.edu.cn/ntu_web/html/enrollment-information/enrollment-information.html?Hid=information&lang=en&timid=63",
+  "status": 200,
+  "finalUrl": "https://sie.ntu.edu.cn/ntu_web/html/enrollment-information/enrollment-information.html?Hid=information&lang=en&timid=63",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://en.ntu.edu.cn/Admission/": {
+  "url": "https://en.ntu.edu.cn/Admission/",
+  "status": 200,
+  "finalUrl": "https://en.ntu.edu.cn/Admission/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "http://www.fjmu.edu.cn/": {
+  "url": "http://www.fjmu.edu.cn/",
+  "status": 200,
+  "finalUrl": "https://www.fjmu.edu.cn/",
+  "ok": true,
+  "reason": "redirect to https://www.fjmu.edu.cn/",
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.ntu.edu.cn": {
+  "url": "https://www.ntu.edu.cn",
+  "status": 200,
+  "finalUrl": "https://www.ntu.edu.cn/",
+  "ok": true,
+  "reason": "redirect to https://www.ntu.edu.cn/",
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.eitech.edu.cn/en/623/list.htm": {
+  "url": "https://www.eitech.edu.cn/en/623/list.htm",
+  "status": 200,
+  "finalUrl": "https://www.eitech.edu.cn/en/623/list.htm",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://admission.eitech.edu.cn/": {
+  "url": "https://admission.eitech.edu.cn/",
+  "status": 200,
+  "finalUrl": "https://admission.eitech.edu.cn/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.eitech.edu.cn": {
+  "url": "https://www.eitech.edu.cn",
+  "status": 200,
+  "finalUrl": "https://www.eitech.edu.cn/",
+  "ok": true,
+  "reason": "redirect to https://www.eitech.edu.cn/",
+  "checkedAt": "2026-11-14"
+ },
+ "https://english.jmu.edu.cn/index.htm": {
+  "url": "https://english.jmu.edu.cn/index.htm",
+  "status": 200,
+  "finalUrl": "https://english.jmu.edu.cn/index.htm",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://english.jmu.edu.cn/": {
+  "url": "https://english.jmu.edu.cn/",
+  "status": 200,
+  "finalUrl": "https://english.jmu.edu.cn/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.jmu.edu.cn/": {
+  "url": "https://www.jmu.edu.cn/",
+  "status": 200,
+  "finalUrl": "https://www.jmu.edu.cn/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.wust.edu.cn": {
+  "url": "https://www.wust.edu.cn",
+  "status": 200,
+  "finalUrl": "https://www.wust.edu.cn/",
+  "ok": true,
+  "reason": "redirect to https://www.wust.edu.cn/",
+  "checkedAt": "2026-11-14"
+ },
+ "http://www.u-tokyo.ac.jp/ja/admissions/index.html": {
+  "url": "http://www.u-tokyo.ac.jp/ja/admissions/index.html",
+  "status": 200,
+  "finalUrl": "https://www.u-tokyo.ac.jp/ja/admissions/index.html",
+  "ok": true,
+  "reason": "redirect to https://www.u-tokyo.ac.jp/ja/admissions/index.html",
+  "checkedAt": "2026-11-14"
+ },
+ "http://www.jmu.edu.cn/": {
+  "url": "http://www.jmu.edu.cn/",
+  "status": 200,
+  "finalUrl": "https://www.jmu.edu.cn/",
+  "ok": true,
+  "reason": "redirect to https://www.jmu.edu.cn/",
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.s.u-tokyo.ac.jp/GSC/admissions/costandaid.html": {
+  "url": "https://www.s.u-tokyo.ac.jp/GSC/admissions/costandaid.html",
+  "status": 200,
+  "finalUrl": "https://www.s.u-tokyo.ac.jp/GSC/admissions/costandaid.html",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.u-tokyo.ac.jp/en/prospective-students/tuition_fees.html?ad=semD": {
+  "url": "https://www.u-tokyo.ac.jp/en/prospective-students/tuition_fees.html?ad=semD",
+  "status": 200,
+  "finalUrl": "https://www.u-tokyo.ac.jp/en/prospective-students/tuition_fees.html?ad=semD",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.u-tokyo.ac.jp/en/": {
+  "url": "https://www.u-tokyo.ac.jp/en/",
+  "status": 200,
+  "finalUrl": "https://www.u-tokyo.ac.jp/en/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.kyoto-u.ac.jp/en/education-campus/education-and-admissions/undergraduate-degree-programs/how-to-apply": {
+  "url": "https://www.kyoto-u.ac.jp/en/education-campus/education-and-admissions/undergraduate-degree-programs/how-to-apply",
+  "status": 200,
+  "finalUrl": "https://www.kyoto-u.ac.jp/en/education-campus/education-and-admissions/undergraduate-degree-programs/how-to-apply",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.kyoto-u.ac.jp/en/education-campus/faq/2-2": {
+  "url": "https://www.kyoto-u.ac.jp/en/education-campus/faq/2-2",
+  "status": 200,
+  "finalUrl": "https://www.kyoto-u.ac.jp/en/education-campus/faq/2-2",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "http://www.kyoto-u.ac.jp/ja/admissions": {
+  "url": "http://www.kyoto-u.ac.jp/ja/admissions",
+  "status": 200,
+  "finalUrl": "https://www.kyoto-u.ac.jp/ja/admissions",
+  "ok": true,
+  "reason": "redirect to https://www.kyoto-u.ac.jp/ja/admissions",
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.u-tokyo.ac.jp/en/about/applications_admissions.html": {
+  "url": "https://www.u-tokyo.ac.jp/en/about/applications_admissions.html",
+  "status": 200,
+  "finalUrl": "https://www.u-tokyo.ac.jp/en/about/applications_admissions.html",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.kyoto-u.ac.jp/ja/admissions/international": {
+  "url": "https://www.kyoto-u.ac.jp/ja/admissions/international",
+  "status": 200,
+  "finalUrl": "https://www.kyoto-u.ac.jp/ja/admissions/international",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.kyoto-u.ac.jp/ja/admissions/examination-fee": {
+  "url": "https://www.kyoto-u.ac.jp/ja/admissions/examination-fee",
+  "status": 200,
+  "finalUrl": "https://www.kyoto-u.ac.jp/ja/admissions/examination-fee",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.kyoto-u.ac.jp/ja": {
+  "url": "https://www.kyoto-u.ac.jp/ja",
+  "status": 200,
+  "finalUrl": "https://www.kyoto-u.ac.jp/ja",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.kyoto-u.ac.jp/ja/international/students1": {
+  "url": "https://www.kyoto-u.ac.jp/ja/international/students1",
+  "status": 200,
+  "finalUrl": "https://www.kyoto-u.ac.jp/ja/international/students1",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.kyoto-u.ac.jp/ja/prospective": {
+  "url": "https://www.kyoto-u.ac.jp/ja/prospective",
+  "status": 200,
+  "finalUrl": "https://www.kyoto-u.ac.jp/ja/prospective",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.osaka-u.ac.jp/en/campus/tuition/tuition.html": {
+  "url": "https://www.osaka-u.ac.jp/en/campus/tuition/tuition.html",
+  "status": 200,
+  "finalUrl": "https://www.osaka-u.ac.jp/en/campus/tuition/tuition.html",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "http://www.osaka-u.ac.jp/ja/admissions": {
+  "url": "http://www.osaka-u.ac.jp/ja/admissions",
+  "status": 200,
+  "finalUrl": "https://www.osaka-u.ac.jp/ja/admissions",
+  "ok": true,
+  "reason": "redirect to https://www.osaka-u.ac.jp/ja/admissions",
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.sci.osaka-u.ac.jp/en/admissions/undergraduate-programs/": {
+  "url": "https://www.sci.osaka-u.ac.jp/en/admissions/undergraduate-programs/",
+  "status": 200,
+  "finalUrl": "https://www.sci.osaka-u.ac.jp/en/admissions/undergraduate-programs/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://iudp.hus.osaka-u.ac.jp/admissions/": {
+  "url": "https://iudp.hus.osaka-u.ac.jp/admissions/",
+  "status": 200,
+  "finalUrl": "https://iudp.hus.osaka-u.ac.jp/admissions/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.osaka-u.ac.jp/ja": {
+  "url": "https://www.osaka-u.ac.jp/ja",
+  "status": 200,
+  "finalUrl": "https://www.osaka-u.ac.jp/ja",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.osaka-u.ac.jp/ja/admissions": {
+  "url": "https://www.osaka-u.ac.jp/ja/admissions",
+  "status": 200,
+  "finalUrl": "https://www.osaka-u.ac.jp/ja/admissions",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.osaka-u.ac.jp/ja/international": {
+  "url": "https://www.osaka-u.ac.jp/ja/international",
+  "status": 200,
+  "finalUrl": "https://www.osaka-u.ac.jp/ja/international",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.osaka-u.ac.jp/en": {
+  "url": "https://www.osaka-u.ac.jp/en",
+  "status": 200,
+  "finalUrl": "https://www.osaka-u.ac.jp/en",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://admissions.isct.ac.jp/en": {
+  "url": "https://admissions.isct.ac.jp/en",
+  "status": 200,
+  "finalUrl": "https://admissions.isct.ac.jp/en",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.isct.ac.jp/en": {
+  "url": "https://www.isct.ac.jp/en",
+  "status": 200,
+  "finalUrl": "https://www.isct.ac.jp/en",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.isct.ac.jp/en/news/9hyt14iqyfe8": {
+  "url": "https://www.isct.ac.jp/en/news/9hyt14iqyfe8",
+  "status": 200,
+  "finalUrl": "https://www.isct.ac.jp/en/news/9hyt14iqyfe8",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.isct.ac.jp/en/news/ktns17wfa3l2": {
+  "url": "https://www.isct.ac.jp/en/news/ktns17wfa3l2",
+  "status": 200,
+  "finalUrl": "https://www.isct.ac.jp/en/news/ktns17wfa3l2",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.isct.ac.jp": {
+  "url": "https://www.isct.ac.jp",
+  "status": 200,
+  "finalUrl": "https://www.isct.ac.jp/en",
+  "ok": true,
+  "reason": "redirect to https://www.isct.ac.jp/en",
+  "checkedAt": "2026-11-14"
+ },
+ "https://admissions.g30.nagoya-u.ac.jp/": {
+  "url": "https://admissions.g30.nagoya-u.ac.jp/",
+  "status": 200,
+  "finalUrl": "https://admissions.g30.nagoya-u.ac.jp/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.isct.ac.jp/en/news/n4mco6tbv1iy": {
+  "url": "https://www.isct.ac.jp/en/news/n4mco6tbv1iy",
+  "status": 200,
+  "finalUrl": "https://www.isct.ac.jp/en/news/n4mco6tbv1iy",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "http://en.nagoya-u.ac.jp/": {
+  "url": "http://en.nagoya-u.ac.jp/",
+  "status": 200,
+  "finalUrl": "http://en.nagoya-u.ac.jp/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://en.nagoya-u.ac.jp/news/articles/advance-notice-nagoya-university-to-change-the-privately-financed-international-student-admissions-category-for-april-entry-undergraduate-admissions-effective-ay2028/": {
+  "url": "https://en.nagoya-u.ac.jp/news/articles/advance-notice-nagoya-university-to-change-the-privately-financed-international-student-admissions-category-for-april-entry-undergraduate-admissions-effective-ay2028/",
+  "status": 200,
+  "finalUrl": "https://en.nagoya-u.ac.jp/news/articles/advance-notice-nagoya-university-to-change-the-privately-financed-international-student-admissions-category-for-april-entry-undergraduate-admissions-effective-ay2028/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://en.nagoya-u.ac.jp/news/articles/admissions-requirements-released-for-g30-undergraduate-programs-2027/": {
+  "url": "https://en.nagoya-u.ac.jp/news/articles/admissions-requirements-released-for-g30-undergraduate-programs-2027/",
+  "status": 200,
+  "finalUrl": "https://en.nagoya-u.ac.jp/news/articles/admissions-requirements-released-for-g30-undergraduate-programs-2027/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://en.nagoya-u.ac.jp/news/events/g30-international-programs-admissions-webinar-summer-2026/": {
+  "url": "https://en.nagoya-u.ac.jp/news/events/g30-international-programs-admissions-webinar-summer-2026/",
+  "status": 200,
+  "finalUrl": "https://en.nagoya-u.ac.jp/news/events/g30-international-programs-admissions-webinar-summer-2026/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.omu.ac.jp/admissions/": {
+  "url": "https://www.omu.ac.jp/admissions/",
+  "status": 200,
+  "finalUrl": "https://www.omu.ac.jp/admissions/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.omu.ac.jp": {
+  "url": "https://www.omu.ac.jp",
+  "status": 200,
+  "finalUrl": "https://www.omu.ac.jp/",
+  "ok": true,
+  "reason": "redirect to https://www.omu.ac.jp/",
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.omu.ac.jp/academic/undergraduate/": {
+  "url": "https://www.omu.ac.jp/academic/undergraduate/",
+  "status": 200,
+  "finalUrl": "https://www.omu.ac.jp/academic/undergraduate/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.omu.ac.jp/en/admissions/apply/": {
+  "url": "https://www.omu.ac.jp/en/admissions/apply/",
+  "status": 404,
+  "finalUrl": "https://www.omu.ac.jp/en/admissions/apply/",
+  "ok": false,
+  "reason": "HTTP 404",
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.omu.ac.jp/en/admissions/tuitionfees/": {
+  "url": "https://www.omu.ac.jp/en/admissions/tuitionfees/",
+  "status": 404,
+  "finalUrl": "https://www.omu.ac.jp/en/admissions/tuitionfees/",
+  "ok": false,
+  "reason": "HTTP 404",
+  "checkedAt": "2026-11-14"
+ },
+ "https://en.nagoya-u.ac.jp/admissions/undergraduate/": {
+  "url": "https://en.nagoya-u.ac.jp/admissions/undergraduate/",
+  "status": 200,
+  "finalUrl": "https://en.nagoya-u.ac.jp/admissions/undergraduate/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.omu.ac.jp/en/admissions/financial-aid/": {
+  "url": "https://www.omu.ac.jp/en/admissions/financial-aid/",
+  "status": 404,
+  "finalUrl": "https://www.omu.ac.jp/en/admissions/financial-aid/",
+  "ok": false,
+  "reason": "HTTP 404",
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.tmu.ac.jp/international/organization.html": {
+  "url": "https://www.tmu.ac.jp/international/organization.html",
+  "status": 200,
+  "finalUrl": "https://www.tmu.ac.jp/international/organization.html",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.tmu.ac.jp/international/new-initiatives/message_2.html": {
+  "url": "https://www.tmu.ac.jp/international/new-initiatives/message_2.html",
+  "status": 200,
+  "finalUrl": "https://www.tmu.ac.jp/international/new-initiatives/message_2.html",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.tmu.ac.jp/international/new-initiatives/message_1.html": {
+  "url": "https://www.tmu.ac.jp/international/new-initiatives/message_1.html",
+  "status": 200,
+  "finalUrl": "https://www.tmu.ac.jp/international/new-initiatives/message_1.html",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.tmu.ac.jp": {
+  "url": "https://www.tmu.ac.jp",
+  "status": 200,
+  "finalUrl": "https://www.tmu.ac.jp/",
+  "ok": true,
+  "reason": "redirect to https://www.tmu.ac.jp/",
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.tmu.ac.jp/international/new-initiatives/curriculum-framework.html": {
+  "url": "https://www.tmu.ac.jp/international/new-initiatives/curriculum-framework.html",
+  "status": 200,
+  "finalUrl": "https://www.tmu.ac.jp/international/new-initiatives/curriculum-framework.html",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.tmu.ac.jp/english/university/11355/11356.html?d=assets%2Ffiles%2Fdownload%2Fguidebook2026%2FTMUpamphlet2026_EN.pdf": {
+  "url": "https://www.tmu.ac.jp/english/university/11355/11356.html?d=assets%2Ffiles%2Fdownload%2Fguidebook2026%2FTMUpamphlet2026_EN.pdf",
+  "status": 200,
+  "finalUrl": "https://www.tmu.ac.jp/english/university/11355/11356.html?d=assets%2Ffiles%2Fdownload%2Fguidebook2026%2FTMUpamphlet2026_EN.pdf",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.doshisha.ac.jp/international/foreign_english/index.html": {
+  "url": "https://www.doshisha.ac.jp/international/foreign_english/index.html",
+  "status": 200,
+  "finalUrl": "https://www.doshisha.ac.jp/international/foreign_english/index.html",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.doshisha.ac.jp/": {
+  "url": "https://www.doshisha.ac.jp/",
+  "status": 200,
+  "finalUrl": "https://www.doshisha.ac.jp/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.doshisha.ac.jp/en/admissions/undergrad_procedure/payment/index.html": {
+  "url": "https://www.doshisha.ac.jp/en/admissions/undergrad_procedure/payment/index.html",
+  "status": 200,
+  "finalUrl": "https://www.doshisha.ac.jp/en/admissions/undergrad_procedure/payment/index.html",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.doshisha.ac.jp/international/from_abroad_scholarships/index.html": {
+  "url": "https://www.doshisha.ac.jp/international/from_abroad_scholarships/index.html",
+  "status": 200,
+  "finalUrl": "https://www.doshisha.ac.jp/international/from_abroad_scholarships/index.html",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.doshisha.ac.jp/student_life/scholarships/index.html": {
+  "url": "https://www.doshisha.ac.jp/student_life/scholarships/index.html",
+  "status": 200,
+  "finalUrl": "https://www.doshisha.ac.jp/student_life/scholarships/index.html",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.nagaokaut.ac.jp/e/admissions/tuition/index.html": {
+  "url": "https://www.nagaokaut.ac.jp/e/admissions/tuition/index.html",
+  "status": 200,
+  "finalUrl": "https://www.nagaokaut.ac.jp/e/admissions/tuition/index.html",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.nagaokaut.ac.jp/student/tuition/admission-fee-waiver-b/index.html": {
+  "url": "https://www.nagaokaut.ac.jp/student/tuition/admission-fee-waiver-b/index.html",
+  "status": 200,
+  "finalUrl": "https://www.nagaokaut.ac.jp/student/tuition/admission-fee-waiver-b/index.html",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "http://www.nagaokaut.ac.jp/student/tuition/admission-fee-waiver-a/": {
+  "url": "http://www.nagaokaut.ac.jp/student/tuition/admission-fee-waiver-a/",
+  "status": 200,
+  "finalUrl": "https://www.nagaokaut.ac.jp/student/tuition/admission-fee-waiver-a/index.html",
+  "ok": true,
+  "reason": "redirect to https://www.nagaokaut.ac.jp/student/tuition/admission-fee-waiver-a/index.html",
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.nagaokaut.ac.jp/student/tuition/admission-fee-waiver-a/index.html": {
+  "url": "https://www.nagaokaut.ac.jp/student/tuition/admission-fee-waiver-a/index.html",
+  "status": 200,
+  "finalUrl": "https://www.nagaokaut.ac.jp/student/tuition/admission-fee-waiver-a/index.html",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.nagaokaut.ac.jp/index.html": {
+  "url": "https://www.nagaokaut.ac.jp/index.html",
+  "status": 200,
+  "finalUrl": "https://www.nagaokaut.ac.jp/index.html",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://international.doshisha.ac.jp/oia/": {
+  "url": "https://international.doshisha.ac.jp/oia/",
+  "status": 200,
+  "finalUrl": "https://international.doshisha.ac.jp/oia/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.ic.tmu.ac.jp/english/study_abroad/scholarship_pv_tmu.html": {
+  "url": "https://www.ic.tmu.ac.jp/english/study_abroad/scholarship_pv_tmu.html",
+  "status": 200,
+  "finalUrl": "https://www.ic.tmu.ac.jp/english/study_abroad/scholarship_pv_tmu.html",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.nagaokaut.ac.jp/student/tuition/tuition-fee-waiver-b/index.html": {
+  "url": "https://www.nagaokaut.ac.jp/student/tuition/tuition-fee-waiver-b/index.html",
+  "status": 200,
+  "finalUrl": "https://www.nagaokaut.ac.jp/student/tuition/tuition-fee-waiver-b/index.html",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.nagaokaut.ac.jp/student/tuition/tuition-fee-waiver-a/index.html": {
+  "url": "https://www.nagaokaut.ac.jp/student/tuition/tuition-fee-waiver-a/index.html",
+  "status": 200,
+  "finalUrl": "https://www.nagaokaut.ac.jp/student/tuition/tuition-fee-waiver-a/index.html",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.kaiyodai.ac.jp/": {
+  "url": "https://www.kaiyodai.ac.jp/",
+  "status": 200,
+  "finalUrl": "https://www.kaiyodai.ac.jp/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.kaiyodai.ac.jp/news/campuslife/detail/8_notice_of_tuition_fee_payment_2nd_semester_of_fy2026.html": {
+  "url": "https://www.kaiyodai.ac.jp/news/campuslife/detail/8_notice_of_tuition_fee_payment_2nd_semester_of_fy2026.html",
+  "status": 200,
+  "finalUrl": "https://www.kaiyodai.ac.jp/news/campuslife/detail/8_notice_of_tuition_fee_payment_2nd_semester_of_fy2026.html",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.kaiyodai.ac.jp/international/studyabroad/": {
+  "url": "https://www.kaiyodai.ac.jp/international/studyabroad/",
+  "status": 200,
+  "finalUrl": "https://www.kaiyodai.ac.jp/international/studyabroad/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "http://www.kaiyodai.ac.jp/": {
+  "url": "http://www.kaiyodai.ac.jp/",
+  "status": 200,
+  "finalUrl": "https://www.kaiyodai.ac.jp/",
+  "ok": true,
+  "reason": "redirect to https://www.kaiyodai.ac.jp/",
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.kaiyodai.ac.jp/en/campuslife/fee/": {
+  "url": "https://www.kaiyodai.ac.jp/en/campuslife/fee/",
+  "status": 200,
+  "finalUrl": "https://www.kaiyodai.ac.jp/en/campuslife/fee/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.kaiyodai.ac.jp/en/entranceexamination/undergraduate/docs/international-students.html": {
+  "url": "https://www.kaiyodai.ac.jp/en/entranceexamination/undergraduate/docs/international-students.html",
+  "status": 200,
+  "finalUrl": "https://www.kaiyodai.ac.jp/en/entranceexamination/undergraduate/docs/international-students.html",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.kaiyodai.ac.jp/admission-cms/sp/mt/index.html": {
+  "url": "https://www.kaiyodai.ac.jp/admission-cms/sp/mt/index.html",
+  "status": 200,
+  "finalUrl": "https://www.kaiyodai.ac.jp/admission-cms/sp/mt/index.html",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.polimi.it/en/prospective-students/how-to-apply/admission-to-laurea-programmes/students-with-non-italian-qualification/documents": {
+  "url": "https://www.polimi.it/en/prospective-students/how-to-apply/admission-to-laurea-programmes/students-with-non-italian-qualification/documents",
+  "status": 200,
+  "finalUrl": "https://www.polimi.it/en/prospective-students/how-to-apply/admission-to-laurea-programmes/students-with-non-italian-qualification/documents",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.polimi.it/fileadmin/user_upload/futuri_studenti/Call_for_scholarships_for_international_BSc_programs_a.y._26-27.pdf": {
+  "url": "https://www.polimi.it/fileadmin/user_upload/futuri_studenti/Call_for_scholarships_for_international_BSc_programs_a.y._26-27.pdf",
+  "status": 200,
+  "finalUrl": "https://www.polimi.it/fileadmin/user_upload/futuri_studenti/Call_for_scholarships_for_international_BSc_programs_a.y._26-27.pdf",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.kaiyodai.ac.jp/news/e_undergraduate/detail/8_9.html": {
+  "url": "https://www.kaiyodai.ac.jp/news/e_undergraduate/detail/8_9.html",
+  "status": 200,
+  "finalUrl": "https://www.kaiyodai.ac.jp/news/e_undergraduate/detail/8_9.html",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "http://www.polimi.it/": {
+  "url": "http://www.polimi.it/",
+  "status": 200,
+  "finalUrl": "https://www.polimi.it/",
+  "ok": true,
+  "reason": "redirect to https://www.polimi.it/",
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.polimi.it/": {
+  "url": "https://www.polimi.it/",
+  "status": 200,
+  "finalUrl": "https://www.polimi.it/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.uniroma1.it/en/pagina/tuition-fees-and-benefits": {
+  "url": "https://www.uniroma1.it/en/pagina/tuition-fees-and-benefits",
+  "status": 200,
+  "finalUrl": "https://www.uniroma1.it/en/pagina/tuition-fees-and-benefits",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.uniroma1.it/en/pagina/applying-sapienza-international-student": {
+  "url": "https://www.uniroma1.it/en/pagina/applying-sapienza-international-student",
+  "status": 200,
+  "finalUrl": "https://www.uniroma1.it/en/pagina/applying-sapienza-international-student",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.uniroma1.it/en/node/24774": {
+  "url": "https://www.uniroma1.it/en/node/24774",
+  "status": 200,
+  "finalUrl": "https://www.uniroma1.it/en/node/24774",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.uniroma1.it/it/": {
+  "url": "https://www.uniroma1.it/it/",
+  "status": 200,
+  "finalUrl": "https://www.uniroma1.it/it/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://corsidilaurea.uniroma1.it/it/home?fulltext=&_bachelor_class=&field_access_procedure=&field_seat=&field_type=09feef21-348b-45db-8218-a811f6f8605e&_language=&field_lesson_mode=&field_joint_ownership=&form_build_id=form-dDba_6yjPNmI85djWInoC_W_PnQlMY5CzktRwpuIlno&form_id=cdl_homepage_filters_form": {
+  "url": "https://corsidilaurea.uniroma1.it/it/home?fulltext=&_bachelor_class=&field_access_procedure=&field_seat=&field_type=09feef21-348b-45db-8218-a811f6f8605e&_language=&field_lesson_mode=&field_joint_ownership=&form_build_id=form-dDba_6yjPNmI85djWInoC_W_PnQlMY5CzktRwpuIlno&form_id=cdl_homepage_filters_form",
+  "status": 200,
+  "finalUrl": "https://corsidilaurea.uniroma1.it/it/home?fulltext=&_bachelor_class=&field_access_procedure=&field_seat=&field_type=09feef21-348b-45db-8218-a811f6f8605e&_language=&field_lesson_mode=&field_joint_ownership=&form_build_id=form-dDba_6yjPNmI85djWInoC_W_PnQlMY5CzktRwpuIlno&form_id=cdl_homepage_filters_form",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://corsidilaurea.uniroma1.it/it/home?fulltext=&_bachelor_class=&field_access_procedure=&field_seat=&field_type=07e56f44-ff27-43f0-80bc-63f8afb70a18&_language=&field_lesson_mode=&field_joint_ownership=&form_build_id=form-gCsMOwf0GAhEWhkGPEqsl6qkdzEq5GzR4XdW9TZxMtk&form_id=cdl_homepage_filters_form": {
+  "url": "https://corsidilaurea.uniroma1.it/it/home?fulltext=&_bachelor_class=&field_access_procedure=&field_seat=&field_type=07e56f44-ff27-43f0-80bc-63f8afb70a18&_language=&field_lesson_mode=&field_joint_ownership=&form_build_id=form-gCsMOwf0GAhEWhkGPEqsl6qkdzEq5GzR4XdW9TZxMtk&form_id=cdl_homepage_filters_form",
+  "status": 200,
+  "finalUrl": "https://corsidilaurea.uniroma1.it/it/home?fulltext=&_bachelor_class=&field_access_procedure=&field_seat=&field_type=07e56f44-ff27-43f0-80bc-63f8afb70a18&_language=&field_lesson_mode=&field_joint_ownership=&form_build_id=form-gCsMOwf0GAhEWhkGPEqsl6qkdzEq5GzR4XdW9TZxMtk&form_id=cdl_homepage_filters_form",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.uniroma1.it/it/pagina/erasmus-international-credit-mobility-icm-ka171-incoming": {
+  "url": "https://www.uniroma1.it/it/pagina/erasmus-international-credit-mobility-icm-ka171-incoming",
+  "status": 200,
+  "finalUrl": "https://www.uniroma1.it/it/pagina/erasmus-international-credit-mobility-icm-ka171-incoming",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "http://www.sns.it/": {
+  "url": "http://www.sns.it/",
+  "status": 404,
+  "finalUrl": "http://www.sns.it/",
+  "ok": false,
+  "reason": "HTTP 404",
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.unibo.it/it": {
+  "url": "https://www.unibo.it/it",
+  "status": 200,
+  "finalUrl": "https://www.unibo.it/it",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.unibo.it/en/study/enrolment-fees-and-other-procedures/degree-programmes/tuition-fees-and-exemptions/fees-and-exemptions-amounts-deadlines": {
+  "url": "https://www.unibo.it/en/study/enrolment-fees-and-other-procedures/degree-programmes/tuition-fees-and-exemptions/fees-and-exemptions-amounts-deadlines",
+  "status": 200,
+  "finalUrl": "https://www.unibo.it/en/study/enrolment-fees-and-other-procedures/degree-programmes/tuition-fees-and-exemptions/fees-and-exemptions-amounts-deadlines",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "http://www.unibo.it/": {
+  "url": "http://www.unibo.it/",
+  "status": 200,
+  "finalUrl": "https://www.unibo.it/it",
+  "ok": true,
+  "reason": "redirect to https://www.unibo.it/it",
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.sns.it/en/concorso-ordinario": {
+  "url": "https://www.sns.it/en/concorso-ordinario",
+  "status": 200,
+  "finalUrl": "https://www.sns.it/en/concorso-ordinario",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.sns.it/en/studiare-a-costo-zero": {
+  "url": "https://www.sns.it/en/studiare-a-costo-zero",
+  "status": 403,
+  "finalUrl": "https://www.sns.it/en/studiare-a-costo-zero",
+  "ok": false,
+  "reason": "HTTP 403",
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.unipd.it/en/ammissione-studenti-internazionali": {
+  "url": "https://www.unipd.it/en/ammissione-studenti-internazionali",
+  "status": 200,
+  "finalUrl": "https://www.unipd.it/en/ammissione-studenti-internazionali",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.unipd.it/en/borse-studio-agevolazioni-studenti-internazionali": {
+  "url": "https://www.unipd.it/en/borse-studio-agevolazioni-studenti-internazionali",
+  "status": 200,
+  "finalUrl": "https://www.unipd.it/en/borse-studio-agevolazioni-studenti-internazionali",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.unipd.it/en/requisito-linguistico-ammissione-corsi-studio-ateneo": {
+  "url": "https://www.unipd.it/en/requisito-linguistico-ammissione-corsi-studio-ateneo",
+  "status": 200,
+  "finalUrl": "https://www.unipd.it/en/requisito-linguistico-ammissione-corsi-studio-ateneo",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.unipd.it/en/borse-studio-contribuzione": {
+  "url": "https://www.unipd.it/en/borse-studio-contribuzione",
+  "status": 200,
+  "finalUrl": "https://www.unipd.it/en/borse-studio-contribuzione",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "http://www.unipd.it/": {
+  "url": "http://www.unipd.it/",
+  "status": 200,
+  "finalUrl": "https://www.unipd.it/",
+  "ok": true,
+  "reason": "redirect to https://www.unipd.it/",
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.unipd.it/": {
+  "url": "https://www.unipd.it/",
+  "status": 200,
+  "finalUrl": "https://www.unipd.it/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.hunimed.eu/admissions-med-schools/": {
+  "url": "https://www.hunimed.eu/admissions-med-schools/",
+  "status": 200,
+  "finalUrl": "https://www.hunimed.eu/admissions-med-schools/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.hunimed.eu/fees-scholarships-med-schools/": {
+  "url": "https://www.hunimed.eu/fees-scholarships-med-schools/",
+  "status": 200,
+  "finalUrl": "https://www.hunimed.eu/fees-scholarships-med-schools/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.hunimed.eu/wp-content/uploads/2026/01/NONEU_ENG_Scholarship-Rules-and-Regulation-26.27.pdf": {
+  "url": "https://www.hunimed.eu/wp-content/uploads/2026/01/NONEU_ENG_Scholarship-Rules-and-Regulation-26.27.pdf",
+  "status": 200,
+  "finalUrl": "https://www.hunimed.eu/wp-content/uploads/2026/01/NONEU_ENG_Scholarship-Rules-and-Regulation-26.27.pdf",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.hunimed.eu": {
+  "url": "https://www.hunimed.eu",
+  "status": 200,
+  "finalUrl": "https://www.hunimed.eu/",
+  "ok": true,
+  "reason": "redirect to https://www.hunimed.eu/",
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.hunimed.eu/study-path/": {
+  "url": "https://www.hunimed.eu/study-path/",
+  "status": 200,
+  "finalUrl": "https://www.hunimed.eu/study-path/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.hunimed.eu/news/from-robotic-surgery-to-research-camilla-dottas-international-experience-in-ghent/": {
+  "url": "https://www.hunimed.eu/news/from-robotic-surgery-to-research-camilla-dottas-international-experience-in-ghent/",
+  "status": 200,
+  "finalUrl": "https://www.hunimed.eu/news/from-robotic-surgery-to-research-camilla-dottas-international-experience-in-ghent/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.hunimed.eu/international/outgoing/": {
+  "url": "https://www.hunimed.eu/international/outgoing/",
+  "status": 200,
+  "finalUrl": "https://www.hunimed.eu/international/outgoing/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://aws.unibz.it/exup/": {
+  "url": "https://aws.unibz.it/exup/",
+  "status": 200,
+  "finalUrl": "https://aws.unibz.it/exup/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.unibz.it/": {
+  "url": "https://www.unibz.it/",
+  "status": 200,
+  "finalUrl": "https://www.unibz.it/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "http://www.unibz.it/": {
+  "url": "http://www.unibz.it/",
+  "status": 200,
+  "finalUrl": "https://www.unibz.it/",
+  "ok": true,
+  "reason": "redirect to https://www.unibz.it/",
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.hunimed.eu/faqs/": {
+  "url": "https://www.hunimed.eu/faqs/",
+  "status": 200,
+  "finalUrl": "https://www.hunimed.eu/faqs/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.unibz.it/en/applicants/studying-at-unibz": {
+  "url": "https://www.unibz.it/en/applicants/studying-at-unibz",
+  "status": 200,
+  "finalUrl": "https://www.unibz.it/en/applicants/studying-at-unibz",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.unibz.it/en/services/orientation/studying-without-barriers": {
+  "url": "https://www.unibz.it/en/services/orientation/studying-without-barriers",
+  "status": 200,
+  "finalUrl": "https://www.unibz.it/en/services/orientation/studying-without-barriers",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.unibz.it/en/services/orientation/studying-with-children": {
+  "url": "https://www.unibz.it/en/services/orientation/studying-with-children",
+  "status": 200,
+  "finalUrl": "https://www.unibz.it/en/services/orientation/studying-with-children",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.unibz.it/assets/CoursesPDF/bachelor-in-computer-science_admission-information_en_GB.pdf?v=56": {
+  "url": "https://www.unibz.it/assets/CoursesPDF/bachelor-in-computer-science_admission-information_en_GB.pdf?v=56",
+  "status": 200,
+  "finalUrl": "https://www.unibz.it/assets/CoursesPDF/bachelor-in-computer-science_admission-information_en_GB.pdf?v=56",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.hunimed.eu/international/incoming/": {
+  "url": "https://www.hunimed.eu/international/incoming/",
+  "status": 200,
+  "finalUrl": "https://www.hunimed.eu/international/incoming/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.unipa.it/strutture/cla/Self-Study/corso-b1-english-e-learning/": {
+  "url": "https://www.unipa.it/strutture/cla/Self-Study/corso-b1-english-e-learning/",
+  "status": 200,
+  "finalUrl": "https://www.unipa.it/strutture/cla/Self-Study/corso-b1-english-e-learning/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.unipa.it/mobilita/en/new-students/new-students---enrolment/enrolment-procedures-for-extra-eu-foreign-students/index.html": {
+  "url": "https://www.unipa.it/mobilita/en/new-students/new-students---enrolment/enrolment-procedures-for-extra-eu-foreign-students/index.html",
+  "status": 200,
+  "finalUrl": "https://www.unipa.it/mobilita/en/new-students/new-students---enrolment/enrolment-procedures-for-extra-eu-foreign-students/index.html",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "http://www.unipa.it/": {
+  "url": "http://www.unipa.it/",
+  "status": 200,
+  "finalUrl": "https://www.unipa.it/",
+  "ok": true,
+  "reason": "redirect to https://www.unipa.it/",
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.unipa.it/mobilita/en/": {
+  "url": "https://www.unipa.it/mobilita/en/",
+  "status": 200,
+  "finalUrl": "https://www.unipa.it/mobilita/en/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.unipa.it/": {
+  "url": "https://www.unipa.it/",
+  "status": 200,
+  "finalUrl": "https://www.unipa.it/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.unipa.it/mobilita/en/useful-information/faq-international-students/faq-international-students-p2/before-applying/index.html": {
+  "url": "https://www.unipa.it/mobilita/en/useful-information/faq-international-students/faq-international-students-p2/before-applying/index.html",
+  "status": 200,
+  "finalUrl": "https://www.unipa.it/mobilita/en/useful-information/faq-international-students/faq-international-students-p2/before-applying/index.html",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.unipr.it/en/students-and-students-extra-ue": {
+  "url": "https://www.unipr.it/en/students-and-students-extra-ue",
+  "status": 200,
+  "finalUrl": "https://www.unipr.it/en/students-and-students-extra-ue",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.unipr.it/": {
+  "url": "https://www.unipr.it/",
+  "status": 200,
+  "finalUrl": "https://www.unipr.it/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.unipr.it/en/node/107075": {
+  "url": "https://www.unipr.it/en/node/107075",
+  "status": 200,
+  "finalUrl": "https://www.unipr.it/en/node/107075",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "http://www.unipr.it/": {
+  "url": "http://www.unipr.it/",
+  "status": 200,
+  "finalUrl": "https://www.unipr.it/",
+  "ok": true,
+  "reason": "redirect to https://www.unipr.it/",
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.unipr.it/en/node/112079": {
+  "url": "https://www.unipr.it/en/node/112079",
+  "status": 200,
+  "finalUrl": "https://www.unipr.it/en/node/112079",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.unibz.it/en/faculties/agricultural-environmental-food-sciences/bachelor-food-enogastronomy-sciences": {
+  "url": "https://www.unibz.it/en/faculties/agricultural-environmental-food-sciences/bachelor-food-enogastronomy-sciences",
+  "status": 200,
+  "finalUrl": "https://www.unibz.it/en/faculties/agricultural-environmental-food-sciences/bachelor-food-enogastronomy-sciences",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://semmelweis.hu/registrar/files/2025/12/Admission_Rules_2027.pdf": {
+  "url": "https://semmelweis.hu/registrar/files/2025/12/Admission_Rules_2027.pdf",
+  "status": 200,
+  "finalUrl": "https://semmelweis.hu/registrar/files/2025/12/Admission_Rules_2027.pdf",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://semmelweis.hu/admission/process/faq-for-medicine-dentistry-and-pharmaceutical-sciences/": {
+  "url": "https://semmelweis.hu/admission/process/faq-for-medicine-dentistry-and-pharmaceutical-sciences/",
+  "status": 200,
+  "finalUrl": "https://semmelweis.hu/admission/process/faq-for-medicine-dentistry-and-pharmaceutical-sciences/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "http://www.unikore.it/": {
+  "url": "http://www.unikore.it/",
+  "status": 200,
+  "finalUrl": "https://uke.it/en",
+  "ok": false,
+  "reason": "redirects to a different organisation (uke.it)",
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.unipa.it/mobilita/.content/documenti/discovering-26-27.pdf": {
+  "url": "https://www.unipa.it/mobilita/.content/documenti/discovering-26-27.pdf",
+  "status": 200,
+  "finalUrl": "https://www.unipa.it/mobilita/.content/documenti/discovering-26-27.pdf",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://apply.semmelweis.hu/index.php?aktival=1&lang=en": {
+  "url": "https://apply.semmelweis.hu/index.php?aktival=1&lang=en",
+  "status": 200,
+  "finalUrl": "https://apply.semmelweis.hu/index.php?aktival=1&lang=en",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "http://www.elte.hu/": {
+  "url": "http://www.elte.hu/",
+  "status": 200,
+  "finalUrl": "https://www.elte.hu/",
+  "ok": true,
+  "reason": "redirect to https://www.elte.hu/",
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.elte.hu/en/applications-open-for-september-2027": {
+  "url": "https://www.elte.hu/en/applications-open-for-september-2027",
+  "status": 200,
+  "finalUrl": "https://www.elte.hu/en/applications-open-for-september-2027",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://semmelweis.hu/": {
+  "url": "https://semmelweis.hu/",
+  "status": 200,
+  "finalUrl": "https://semmelweis.hu/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://semmelweis.hu/admission/": {
+  "url": "https://semmelweis.hu/admission/",
+  "status": 200,
+  "finalUrl": "https://semmelweis.hu/admission/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://tatk.elte.hu/en/studies/ba": {
+  "url": "https://tatk.elte.hu/en/studies/ba",
+  "status": 200,
+  "finalUrl": "https://tatk.elte.hu/en/studies/ba",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.elte.hu/": {
+  "url": "https://www.elte.hu/",
+  "status": 200,
+  "finalUrl": "https://www.elte.hu/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://arts.u-szeged.hu/english/education/application-procedure/application-procedure": {
+  "url": "https://arts.u-szeged.hu/english/education/application-procedure/application-procedure",
+  "status": 200,
+  "finalUrl": "https://arts.u-szeged.hu/english/education/application-procedure/application-procedure",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://u-szeged.hu/english": {
+  "url": "https://u-szeged.hu/english",
+  "status": 200,
+  "finalUrl": "https://u-szeged.hu/english",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://semmelweis.hu/english/": {
+  "url": "https://semmelweis.hu/english/",
+  "status": 200,
+  "finalUrl": "https://semmelweis.hu/english/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://u-szeged.hu/": {
+  "url": "https://u-szeged.hu/",
+  "status": 200,
+  "finalUrl": "https://u-szeged.hu/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://edu.unideb.hu/page.php?id=application-and-admission": {
+  "url": "https://edu.unideb.hu/page.php?id=application-and-admission",
+  "status": 200,
+  "finalUrl": "https://edu.unideb.hu/page.php?id=application-and-admission",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "http://www.u-szeged.hu/": {
+  "url": "http://www.u-szeged.hu/",
+  "status": 200,
+  "finalUrl": "https://u-szeged.hu/",
+  "ok": true,
+  "reason": "redirect to https://u-szeged.hu/",
+  "checkedAt": "2026-11-14"
+ },
+ "https://mad-hatter.it.unideb.hu/promo/studyversity/index.html": {
+  "url": "https://mad-hatter.it.unideb.hu/promo/studyversity/index.html",
+  "status": 200,
+  "finalUrl": "https://mad-hatter.it.unideb.hu/promo/studyversity/index.html",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://unideb.hu/": {
+  "url": "https://unideb.hu/",
+  "status": 200,
+  "finalUrl": "https://unideb.hu/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "http://www.unideb.hu/": {
+  "url": "http://www.unideb.hu/",
+  "status": 200,
+  "finalUrl": "https://unideb.hu/",
+  "ok": true,
+  "reason": "redirect to https://unideb.hu/",
+  "checkedAt": "2026-11-14"
+ },
+ "https://mad-hatter.it.unideb.hu/promo/studyversity/": {
+  "url": "https://mad-hatter.it.unideb.hu/promo/studyversity/",
+  "status": 200,
+  "finalUrl": "https://mad-hatter.it.unideb.hu/promo/studyversity/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://edu.unideb.hu/p/tuition-fee-application-entrance-fee": {
+  "url": "https://edu.unideb.hu/p/tuition-fee-application-entrance-fee",
+  "status": 200,
+  "finalUrl": "https://edu.unideb.hu/p/tuition-fee-application-entrance-fee",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://u-szeged.hu/sztehirek/2026-november/sanghajban-tartotta-eves?objectParentFolderId=19355": {
+  "url": "https://u-szeged.hu/sztehirek/2026-november/sanghajban-tartotta-eves?objectParentFolderId=19355",
+  "status": 200,
+  "finalUrl": "https://u-szeged.hu/sztehirek/2026-november/sanghajban-tartotta-eves?objectParentFolderId=19355",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://edu.unideb.hu/p/faq-stipendium-hungaricum-scholarship": {
+  "url": "https://edu.unideb.hu/p/faq-stipendium-hungaricum-scholarship",
+  "status": 200,
+  "finalUrl": "https://edu.unideb.hu/p/faq-stipendium-hungaricum-scholarship",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://internationaloffice.unideb.hu/kari-es-intezetitanszeki-erasmus-koordinatorok": {
+  "url": "https://internationaloffice.unideb.hu/kari-es-intezetitanszeki-erasmus-koordinatorok",
+  "status": 200,
+  "finalUrl": "https://internationaloffice.unideb.hu/kari-es-intezetitanszeki-erasmus-koordinatorok",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://internationaloffice.unideb.hu": {
+  "url": "https://internationaloffice.unideb.hu",
+  "status": 200,
+  "finalUrl": "https://internationaloffice.unideb.hu/",
+  "ok": true,
+  "reason": "redirect to https://internationaloffice.unideb.hu/",
+  "checkedAt": "2026-11-14"
+ },
+ "https://u-szeged.hu/download.php?docID=178151": {
+  "url": "https://u-szeged.hu/download.php?docID=178151",
+  "status": 200,
+  "finalUrl": "https://u-szeged.hu/download.php?docID=178151",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "http://www.bme.hu/": {
+  "url": "http://www.bme.hu/",
+  "status": 200,
+  "finalUrl": "https://www.bme.hu/",
+  "ok": true,
+  "reason": "redirect to https://www.bme.hu/",
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.bme.hu/": {
+  "url": "https://www.bme.hu/",
+  "status": 200,
+  "finalUrl": "https://www.bme.hu/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://uni.sze.hu": {
+  "url": "https://uni.sze.hu",
+  "status": 200,
+  "finalUrl": "https://uni.sze.hu/",
+  "ok": true,
+  "reason": "redirect to https://uni.sze.hu/",
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.uni-mate.hu": {
+  "url": "https://www.uni-mate.hu",
+  "status": 200,
+  "finalUrl": "https://www.uni-mate.hu/",
+  "ok": true,
+  "reason": "redirect to https://www.uni-mate.hu/",
+  "checkedAt": "2026-11-14"
+ },
+ "https://uni-mate.hu/en/web/mate-directorate-of-education/tuition-fees": {
+  "url": "https://uni-mate.hu/en/web/mate-directorate-of-education/tuition-fees",
+  "status": 200,
+  "finalUrl": "https://uni-mate.hu/en/web/mate-directorate-of-education/tuition-fees",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://xplore.bme.hu/": {
+  "url": "https://xplore.bme.hu/",
+  "status": 200,
+  "finalUrl": "https://xplore.bme.hu/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://en.uni-mate.hu/": {
+  "url": "https://en.uni-mate.hu/",
+  "status": 200,
+  "finalUrl": "https://en.uni-mate.hu/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://ppke.hu/newsletter-english": {
+  "url": "https://ppke.hu/newsletter-english",
+  "status": 200,
+  "finalUrl": "https://ppke.hu/newsletter-english",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "http://www.ppke.hu/": {
+  "url": "http://www.ppke.hu/",
+  "status": 200,
+  "finalUrl": "https://ppke.hu/",
+  "ok": true,
+  "reason": "redirect to https://ppke.hu/",
+  "checkedAt": "2026-11-14"
+ },
+ "https://xplore.bme.hu/admission/": {
+  "url": "https://xplore.bme.hu/admission/",
+  "status": 200,
+  "finalUrl": "https://xplore.bme.hu/admission/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://ppke.hu/newsletter-hungarian": {
+  "url": "https://ppke.hu/newsletter-hungarian",
+  "status": 200,
+  "finalUrl": "https://ppke.hu/newsletter-hungarian",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://ppke.hu/": {
+  "url": "https://ppke.hu/",
+  "status": 200,
+  "finalUrl": "https://ppke.hu/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://ppke.hu/international-canon-law-history-research-center-2": {
+  "url": "https://ppke.hu/international-canon-law-history-research-center-2",
+  "status": 200,
+  "finalUrl": "https://ppke.hu/international-canon-law-history-research-center-2",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "http://en.uw.edu.pl/": {
+  "url": "http://en.uw.edu.pl/",
+  "status": 200,
+  "finalUrl": "https://en.uw.edu.pl/",
+  "ok": true,
+  "reason": "redirect to https://en.uw.edu.pl/",
+  "checkedAt": "2026-11-14"
+ },
+ "https://en.uw.edu.pl/": {
+  "url": "https://en.uw.edu.pl/",
+  "status": 200,
+  "finalUrl": "https://en.uw.edu.pl/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://en.uw.edu.pl/warsaw-the-academic-city/": {
+  "url": "https://en.uw.edu.pl/warsaw-the-academic-city/",
+  "status": 200,
+  "finalUrl": "https://en.uw.edu.pl/warsaw-the-academic-city/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://en.uw.edu.pl/support-for-international-members-of-the-community/": {
+  "url": "https://en.uw.edu.pl/support-for-international-members-of-the-community/",
+  "status": 200,
+  "finalUrl": "https://en.uw.edu.pl/support-for-international-members-of-the-community/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://en.uw.edu.pl/working-together-to-keep-our-university-safe/": {
+  "url": "https://en.uw.edu.pl/working-together-to-keep-our-university-safe/",
+  "status": 200,
+  "finalUrl": "https://en.uw.edu.pl/working-together-to-keep-our-university-safe/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://en.uw.edu.pl/events-and-workshops-for-international-uw-employees/": {
+  "url": "https://en.uw.edu.pl/events-and-workshops-for-international-uw-employees/",
+  "status": 200,
+  "finalUrl": "https://en.uw.edu.pl/events-and-workshops-for-international-uw-employees/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://irk.uw.edu.pl/en-gb/offer/FY_2024/programme/FY_B/": {
+  "url": "https://irk.uw.edu.pl/en-gb/offer/FY_2024/programme/FY_B/",
+  "status": 200,
+  "finalUrl": "https://irk.uw.edu.pl/en-gb/offer/FY_2024/programme/FY_B/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://irk.uj.edu.pl/en-gb/offer/IiJM_P_26/programme/global.deve.stud_s1s_P_en/": {
+  "url": "https://irk.uj.edu.pl/en-gb/offer/IiJM_P_26/programme/global.deve.stud_s1s_P_en/",
+  "status": 200,
+  "finalUrl": "https://irk.uj.edu.pl/en-gb/offer/IiJM_P_26/programme/global.deve.stud_s1s_P_en/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "http://www.uj.edu.pl/": {
+  "url": "http://www.uj.edu.pl/",
+  "status": 200,
+  "finalUrl": "https://www.uj.edu.pl/",
+  "ok": true,
+  "reason": "redirect to https://www.uj.edu.pl/",
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.uj.edu.pl/kalendarz/-/journal_content/56_INSTANCE_5De61CKaqzOl/10172/161682481": {
+  "url": "https://www.uj.edu.pl/kalendarz/-/journal_content/56_INSTANCE_5De61CKaqzOl/10172/161682481",
+  "status": 200,
+  "finalUrl": "https://www.uj.edu.pl/kalendarz/-/journal_content/56_INSTANCE_5De61CKaqzOl/10172/161682481",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://internationalstudents.uj.edu.pl/en/studenci/oplaty": {
+  "url": "https://internationalstudents.uj.edu.pl/en/studenci/oplaty",
+  "status": 200,
+  "finalUrl": "https://internationalstudents.uj.edu.pl/en/studenci/oplaty",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.uj.edu.pl/": {
+  "url": "https://www.uj.edu.pl/",
+  "status": 200,
+  "finalUrl": "https://www.uj.edu.pl/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://rekrutacja.uj.edu.pl/en/jezyk-studiow": {
+  "url": "https://rekrutacja.uj.edu.pl/en/jezyk-studiow",
+  "status": 200,
+  "finalUrl": "https://rekrutacja.uj.edu.pl/en/jezyk-studiow",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.umw.edu.pl/pl/kierunek-lekarsko-dentystyczny-english": {
+  "url": "https://www.umw.edu.pl/pl/kierunek-lekarsko-dentystyczny-english",
+  "status": 200,
+  "finalUrl": "https://www.umw.edu.pl/pl/kierunek-lekarsko-dentystyczny-english",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://internationalstudents.uj.edu.pl/": {
+  "url": "https://internationalstudents.uj.edu.pl/",
+  "status": 200,
+  "finalUrl": "https://internationalstudents.uj.edu.pl/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://admission.umw.edu.pl/warunki-rekrutacji/": {
+  "url": "https://admission.umw.edu.pl/warunki-rekrutacji/",
+  "status": 200,
+  "finalUrl": "https://admission.umw.edu.pl/warunki-rekrutacji/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://admission.umw.edu.pl/rejestracja/": {
+  "url": "https://admission.umw.edu.pl/rejestracja/",
+  "status": 200,
+  "finalUrl": "https://admission.umw.edu.pl/rejestracja/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://ces.uj.edu.pl/prospective-students/admissions": {
+  "url": "https://ces.uj.edu.pl/prospective-students/admissions",
+  "status": 200,
+  "finalUrl": "https://ces.uj.edu.pl/prospective-students/admissions",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://rekrutacja.umw.edu.pl/terminy-rekrutacji-na-rok-akademicki-2027-2028/": {
+  "url": "https://rekrutacja.umw.edu.pl/terminy-rekrutacji-na-rok-akademicki-2027-2028/",
+  "status": 200,
+  "finalUrl": "https://rekrutacja.umw.edu.pl/terminy-rekrutacji-na-rok-akademicki-2027-2028/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://international.iro.uj.edu.pl": {
+  "url": "https://international.iro.uj.edu.pl",
+  "status": 200,
+  "finalUrl": "https://international.iro.uj.edu.pl/",
+  "ok": true,
+  "reason": "redirect to https://international.iro.uj.edu.pl/",
+  "checkedAt": "2026-11-14"
+ },
+ "https://admission.umw.edu.pl/wp-content/uploads/2026/04/The-Rectors-Ordinance-No.-57.XVI-R.2026-on-determining-the-amount-and-deadlines-for-payment-of-tuition-fees-since-the-academic-year-2026-2027.pdf": {
+  "url": "https://admission.umw.edu.pl/wp-content/uploads/2026/04/The-Rectors-Ordinance-No.-57.XVI-R.2026-on-determining-the-amount-and-deadlines-for-payment-of-tuition-fees-since-the-academic-year-2026-2027.pdf",
+  "status": 200,
+  "finalUrl": "https://admission.umw.edu.pl/wp-content/uploads/2026/04/The-Rectors-Ordinance-No.-57.XVI-R.2026-on-determining-the-amount-and-deadlines-for-payment-of-tuition-fees-since-the-academic-year-2026-2027.pdf",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.umw.edu.pl/pl": {
+  "url": "https://www.umw.edu.pl/pl",
+  "status": 200,
+  "finalUrl": "https://www.umw.edu.pl/pl",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.umw.edu.pl/pl/kierunek-pielegniarstwo-ed-nursinged": {
+  "url": "https://www.umw.edu.pl/pl/kierunek-pielegniarstwo-ed-nursinged",
+  "status": 200,
+  "finalUrl": "https://www.umw.edu.pl/pl/kierunek-pielegniarstwo-ed-nursinged",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.umw.edu.pl/pl/kierunek-lekarski-english": {
+  "url": "https://www.umw.edu.pl/pl/kierunek-lekarski-english",
+  "status": 200,
+  "finalUrl": "https://www.umw.edu.pl/pl/kierunek-lekarski-english",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.pw.edu.pl/": {
+  "url": "https://www.pw.edu.pl/",
+  "status": 200,
+  "finalUrl": "https://www.pw.edu.pl/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://eng.pw.edu.pl/engpw/Academics/Academic-Regulations?cookiedec=r": {
+  "url": "https://eng.pw.edu.pl/engpw/Academics/Academic-Regulations?cookiedec=r",
+  "status": 200,
+  "finalUrl": "https://eng.pw.edu.pl/engpw/Academics/Academic-Regulations?cookiedec=r",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://is.pw.edu.pl/en/programme-offer/": {
+  "url": "https://is.pw.edu.pl/en/programme-offer/",
+  "status": 200,
+  "finalUrl": "https://is.pw.edu.pl/en/programme-offer/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.umw.edu.pl/pl/kierunek-pielegniarstwo-ed-nursinged/news": {
+  "url": "https://www.umw.edu.pl/pl/kierunek-pielegniarstwo-ed-nursinged/news",
+  "status": 200,
+  "finalUrl": "https://www.umw.edu.pl/pl/kierunek-pielegniarstwo-ed-nursinged/news",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://en.ug.edu.pl/strona/96968/application-deadlines": {
+  "url": "https://en.ug.edu.pl/strona/96968/application-deadlines",
+  "status": 200,
+  "finalUrl": "https://en.ug.edu.pl/strona/96968/application-deadlines",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://ug.edu.pl": {
+  "url": "https://ug.edu.pl",
+  "status": 200,
+  "finalUrl": "https://ug.edu.pl/",
+  "ok": true,
+  "reason": "redirect to https://ug.edu.pl/",
+  "checkedAt": "2026-11-14"
+ },
+ "https://bip.ug.edu.pl/akty_normatywne/120355/uchwala_nr_3026_senatu_uniwersytetu_gdanskiego_z_dnia_12_czerwca_2026_roku_w_sprawie_warunkow_i_trybu_rekrutacji_kandydatow_na_studia_stacjonarne_i": {
+  "url": "https://bip.ug.edu.pl/akty_normatywne/120355/uchwala_nr_3026_senatu_uniwersytetu_gdanskiego_z_dnia_12_czerwca_2026_roku_w_sprawie_warunkow_i_trybu_rekrutacji_kandydatow_na_studia_stacjonarne_i",
+  "status": 200,
+  "finalUrl": "https://bip.ug.edu.pl/akty_normatywne/120355/uchwala_nr_3026_senatu_uniwersytetu_gdanskiego_z_dnia_12_czerwca_2026_roku_w_sprawie_warunkow_i_trybu_rekrutacji_kandydatow_na_studia_stacjonarne_i",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://swps.pl/": {
+  "url": "https://swps.pl/",
+  "status": 403,
+  "finalUrl": "https://swps.pl/",
+  "ok": false,
+  "reason": "HTTP 403",
+  "checkedAt": "2026-11-14"
+ },
+ "https://swps.pl/images/DOKUMENTY/REKRUTACJA/2026/Uniwersytet-SWPS-Szczegolowe-zasady-rekrutacji-na-kierunki-w-jezyku-angielskim-2026.pdf": {
+  "url": "https://swps.pl/images/DOKUMENTY/REKRUTACJA/2026/Uniwersytet-SWPS-Szczegolowe-zasady-rekrutacji-na-kierunki-w-jezyku-angielskim-2026.pdf",
+  "status": 403,
+  "finalUrl": "https://swps.pl/images/DOKUMENTY/REKRUTACJA/2026/Uniwersytet-SWPS-Szczegolowe-zasady-rekrutacji-na-kierunki-w-jezyku-angielskim-2026.pdf",
+  "ok": false,
+  "reason": "HTTP 403",
+  "checkedAt": "2026-11-14"
+ },
+ "http://www.uni.lodz.pl/": {
+  "url": "http://www.uni.lodz.pl/",
+  "status": 200,
+  "finalUrl": "https://www.uni.lodz.pl/",
+  "ok": true,
+  "reason": "redirect to https://www.uni.lodz.pl/",
+  "checkedAt": "2026-11-14"
+ },
+ "https://rekrutacja.ug.edu.pl/en/recrutation/tuition-fees/": {
+  "url": "https://rekrutacja.ug.edu.pl/en/recrutation/tuition-fees/",
+  "status": 200,
+  "finalUrl": "https://rekrutacja.ug.edu.pl/en/recrutation/tuition-fees/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.uni.lodz.pl/en/candidate-zone/information-for-candidates-without-polish-citizenship/how-to-apply-for-ba-bachelors-for-candidates-who-do-not-hold-polish-citizenship": {
+  "url": "https://www.uni.lodz.pl/en/candidate-zone/information-for-candidates-without-polish-citizenship/how-to-apply-for-ba-bachelors-for-candidates-who-do-not-hold-polish-citizenship",
+  "status": 200,
+  "finalUrl": "https://www.uni.lodz.pl/en/candidate-zone/information-for-candidates-without-polish-citizenship/how-to-apply-for-ba-bachelors-for-candidates-who-do-not-hold-polish-citizenship",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://english.swps.pl/images/DOKUMENTY/ADMISSIONS/2026/Agreement_on_the_payment_terms_conditions_for_studies_2026-2027_v2.pdf": {
+  "url": "https://english.swps.pl/images/DOKUMENTY/ADMISSIONS/2026/Agreement_on_the_payment_terms_conditions_for_studies_2026-2027_v2.pdf",
+  "status": 403,
+  "finalUrl": "https://english.swps.pl/images/DOKUMENTY/ADMISSIONS/2026/Agreement_on_the_payment_terms_conditions_for_studies_2026-2027_v2.pdf",
+  "ok": false,
+  "reason": "HTTP 403",
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.math.uni.lodz.pl/en/prospective-student-zone/admission": {
+  "url": "https://www.math.uni.lodz.pl/en/prospective-student-zone/admission",
+  "status": 200,
+  "finalUrl": "https://www.math.uni.lodz.pl/en/prospective-student-zone/admission",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "http://www.pw.edu.pl/": {
+  "url": "http://www.pw.edu.pl/",
+  "status": 200,
+  "finalUrl": "https://www.pw.edu.pl/",
+  "ok": true,
+  "reason": "redirect to https://www.pw.edu.pl/",
+  "checkedAt": "2026-11-14"
+ },
+ "https://up.lublin.pl/en/admission/bachelor-programmes/": {
+  "url": "https://up.lublin.pl/en/admission/bachelor-programmes/",
+  "status": 200,
+  "finalUrl": "https://up.lublin.pl/en/admission/bachelor-programmes/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://up.lublin.pl/en/admission/": {
+  "url": "https://up.lublin.pl/en/admission/",
+  "status": 200,
+  "finalUrl": "https://up.lublin.pl/en/admission/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://up.lublin.pl/en/admission/how-to-apply/": {
+  "url": "https://up.lublin.pl/en/admission/how-to-apply/",
+  "status": 200,
+  "finalUrl": "https://up.lublin.pl/en/admission/how-to-apply/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://up.lublin.pl/en/admission/faq-health-insurance/": {
+  "url": "https://up.lublin.pl/en/admission/faq-health-insurance/",
+  "status": 200,
+  "finalUrl": "https://up.lublin.pl/en/admission/faq-health-insurance/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://cuni.cz/UK-1.html": {
+  "url": "https://cuni.cz/UK-1.html",
+  "status": 200,
+  "finalUrl": "https://cuni.cz/UK-1.html",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.mff.cuni.cz/en/admissions/admission-requirements-for-bachelor-s-programmes-in-english/2027-2028": {
+  "url": "https://www.mff.cuni.cz/en/admissions/admission-requirements-for-bachelor-s-programmes-in-english/2027-2028",
+  "status": 200,
+  "finalUrl": "https://www.mff.cuni.cz/en/admissions/admission-requirements-for-bachelor-s-programmes-in-english/2027-2028",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://up.lublin.pl": {
+  "url": "https://up.lublin.pl",
+  "status": 200,
+  "finalUrl": "https://up.lublin.pl/",
+  "ok": true,
+  "reason": "redirect to https://up.lublin.pl/",
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.econ.muni.cz/en/admissions/bachelor-studies/application-requirements": {
+  "url": "https://www.econ.muni.cz/en/admissions/bachelor-studies/application-requirements",
+  "status": 200,
+  "finalUrl": "https://www.econ.muni.cz/en/admissions/bachelor-studies/application-requirements",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.muni.cz/en": {
+  "url": "https://www.muni.cz/en",
+  "status": 200,
+  "finalUrl": "https://www.muni.cz/en",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.muni.cz/": {
+  "url": "https://www.muni.cz/",
+  "status": 200,
+  "finalUrl": "https://www.muni.cz/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "http://www.cuni.cz/": {
+  "url": "http://www.cuni.cz/",
+  "status": 200,
+  "finalUrl": "https://cuni.cz/UK-1.html",
+  "ok": true,
+  "reason": "redirect to https://cuni.cz/UK-1.html",
+  "checkedAt": "2026-11-14"
+ },
+ "https://fjfi.cvut.cz/en/applicants/bachelors-degree/admission-procedure-bachelors-studies-and-follow-masters-studies": {
+  "url": "https://fjfi.cvut.cz/en/applicants/bachelors-degree/admission-procedure-bachelors-studies-and-follow-masters-studies",
+  "status": 200,
+  "finalUrl": "https://fjfi.cvut.cz/en/applicants/bachelors-degree/admission-procedure-bachelors-studies-and-follow-masters-studies",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "http://www.cvut.cz/": {
+  "url": "http://www.cvut.cz/",
+  "status": 200,
+  "finalUrl": "https://www.cvut.cz/",
+  "ok": true,
+  "reason": "redirect to https://www.cvut.cz/",
+  "checkedAt": "2026-11-14"
+ },
+ "https://fjfi.cvut.cz/en/applicants/bachelors-studies": {
+  "url": "https://fjfi.cvut.cz/en/applicants/bachelors-studies",
+  "status": 200,
+  "finalUrl": "https://fjfi.cvut.cz/en/applicants/bachelors-studies",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.fss.muni.cz/en/faculty-of-social-studies/admissions-and-study-programs/bachelors-studies": {
+  "url": "https://www.fss.muni.cz/en/faculty-of-social-studies/admissions-and-study-programs/bachelors-studies",
+  "status": 200,
+  "finalUrl": "https://www.fss.muni.cz/en/faculty-of-social-studies/admissions-and-study-programs/bachelors-studies",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.cvut.cz/": {
+  "url": "https://www.cvut.cz/",
+  "status": 200,
+  "finalUrl": "https://www.cvut.cz/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.cvut.cz/en": {
+  "url": "https://www.cvut.cz/en",
+  "status": 200,
+  "finalUrl": "https://www.cvut.cz/en",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://international.cvut.cz/": {
+  "url": "https://international.cvut.cz/",
+  "status": 200,
+  "finalUrl": "https://international.cvut.cz/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://international.cvut.cz": {
+  "url": "https://international.cvut.cz",
+  "status": 200,
+  "finalUrl": "https://international.cvut.cz/",
+  "ok": true,
+  "reason": "redirect to https://international.cvut.cz/",
+  "checkedAt": "2026-11-14"
+ },
+ "https://study.vscht.cz/studying-at-uct/tuition-fees": {
+  "url": "https://study.vscht.cz/studying-at-uct/tuition-fees",
+  "status": 200,
+  "finalUrl": "https://study.vscht.cz/studying-at-uct/tuition-fees",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://study.vscht.cz/": {
+  "url": "https://study.vscht.cz/",
+  "status": 200,
+  "finalUrl": "https://study.vscht.cz/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://study.vscht.cz/admission-proceedings": {
+  "url": "https://study.vscht.cz/admission-proceedings",
+  "status": 200,
+  "finalUrl": "https://study.vscht.cz/admission-proceedings",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://study.vscht.cz": {
+  "url": "https://study.vscht.cz",
+  "status": 200,
+  "finalUrl": "https://study.vscht.cz/",
+  "ok": true,
+  "reason": "redirect to https://study.vscht.cz/",
+  "checkedAt": "2026-11-14"
+ },
+ "https://kalendar.vscht.cz/Udalost.aspx?u=8152": {
+  "url": "https://kalendar.vscht.cz/Udalost.aspx?u=8152",
+  "status": 200,
+  "finalUrl": "https://kalendar.vscht.cz/Udalost.aspx?u=8152",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.vscht.cz/": {
+  "url": "https://www.vscht.cz/",
+  "status": 200,
+  "finalUrl": "https://www.vscht.cz/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "http://www.vscht.cz/": {
+  "url": "http://www.vscht.cz/",
+  "status": 200,
+  "finalUrl": "https://www.vscht.cz/",
+  "ok": true,
+  "reason": "redirect to https://www.vscht.cz/",
+  "checkedAt": "2026-11-14"
+ },
+ "https://international.vscht.cz/": {
+  "url": "https://international.vscht.cz/",
+  "status": 200,
+  "finalUrl": "https://international.vscht.cz/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.uhk.cz/en/faculty-of-science/admissions/admitting-procedures": {
+  "url": "https://www.uhk.cz/en/faculty-of-science/admissions/admitting-procedures",
+  "status": 200,
+  "finalUrl": "https://www.uhk.cz/en/faculty-of-science/admissions/admitting-procedures",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.uhk.cz/en": {
+  "url": "https://www.uhk.cz/en",
+  "status": 200,
+  "finalUrl": "https://www.uhk.cz/en",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.uhk.cz": {
+  "url": "https://www.uhk.cz",
+  "status": 200,
+  "finalUrl": "https://www.uhk.cz/",
+  "ok": true,
+  "reason": "redirect to https://www.uhk.cz/",
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.uhk.cz/cs/univerzita-hradec-kralove/uhk/aktualne/university-international-day-2026": {
+  "url": "https://www.uhk.cz/cs/univerzita-hradec-kralove/uhk/aktualne/university-international-day-2026",
+  "status": 200,
+  "finalUrl": "https://www.uhk.cz/cs/univerzita-hradec-kralove/uhk/aktualne/university-international-day-2026",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.osu.cz/": {
+  "url": "https://www.osu.cz/",
+  "status": 200,
+  "finalUrl": "https://www.osu.cz/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "http://www.osu.cz/": {
+  "url": "http://www.osu.cz/",
+  "status": 200,
+  "finalUrl": "https://www.osu.cz/",
+  "ok": true,
+  "reason": "redirect to https://www.osu.cz/",
+  "checkedAt": "2026-11-14"
+ },
+ "https://dokumenty.osu.cz/ff/prijimacky2027/podminky-pr-2027-2028.pdf": {
+  "url": "https://dokumenty.osu.cz/ff/prijimacky2027/podminky-pr-2027-2028.pdf",
+  "status": 200,
+  "finalUrl": "https://dokumenty.osu.cz/ff/prijimacky2027/podminky-pr-2027-2028.pdf",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.vscht.cz/?jazyk=en": {
+  "url": "https://www.vscht.cz/?jazyk=en",
+  "status": 200,
+  "finalUrl": "https://www.vscht.cz/?jazyk=en",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://future.utoronto.ca/english-language-requirements": {
+  "url": "https://future.utoronto.ca/english-language-requirements",
+  "status": 0,
+  "finalUrl": "https://future.utoronto.ca/english-language-requirements",
+  "ok": false,
+  "reason": "no response (curl: (28) Resolving timed out after 20004 milliseconds)",
+  "checkedAt": "2026-11-14"
+ },
+ "https://future.utoronto.ca/applications": {
+  "url": "https://future.utoronto.ca/applications",
+  "status": 0,
+  "finalUrl": "https://future.utoronto.ca/applications",
+  "ok": false,
+  "reason": "no response (curl: (28) Resolving timed out after 20005 milliseconds)",
+  "checkedAt": "2026-11-14"
+ },
+ "https://future.utoronto.ca/how-to-apply/": {
+  "url": "https://future.utoronto.ca/how-to-apply/",
+  "status": 0,
+  "finalUrl": "https://future.utoronto.ca/how-to-apply/",
+  "ok": false,
+  "reason": "no response (curl: (28) Resolving timed out after 20005 milliseconds)",
+  "checkedAt": "2026-11-14"
+ },
+ "https://future.utoronto.ca/deadlines": {
+  "url": "https://future.utoronto.ca/deadlines",
+  "status": 0,
+  "finalUrl": "https://future.utoronto.ca/deadlines",
+  "ok": false,
+  "reason": "no response (curl: (28) Resolving timed out after 20000 milliseconds)",
+  "checkedAt": "2026-11-14"
+ },
+ "https://future.utoronto.ca/finances/tuition-fees/": {
+  "url": "https://future.utoronto.ca/finances/tuition-fees/",
+  "status": 0,
+  "finalUrl": "https://future.utoronto.ca/finances/tuition-fees/",
+  "ok": false,
+  "reason": "no response (curl: (28) Resolving timed out after 20002 milliseconds)",
+  "checkedAt": "2026-11-14"
+ },
+ "https://future.utoronto.ca/pearson-scholarships": {
+  "url": "https://future.utoronto.ca/pearson-scholarships",
+  "status": 0,
+  "finalUrl": "https://future.utoronto.ca/pearson-scholarships",
+  "ok": false,
+  "reason": "no response (curl: (28) Resolving timed out after 20005 milliseconds)",
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.mcgill.ca/undergraduate-admissions/apply/english-proficiency": {
+  "url": "https://www.mcgill.ca/undergraduate-admissions/apply/english-proficiency",
+  "status": 200,
+  "finalUrl": "https://www.mcgill.ca/undergraduate-admissions/apply/english-proficiency",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.mcgill.ca/undergraduate-admissions/apply": {
+  "url": "https://www.mcgill.ca/undergraduate-admissions/apply",
+  "status": 200,
+  "finalUrl": "https://www.mcgill.ca/undergraduate-admissions/apply",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.mcgill.ca": {
+  "url": "https://www.mcgill.ca",
+  "status": 200,
+  "finalUrl": "https://www.mcgill.ca/",
+  "ok": true,
+  "reason": "redirect to https://www.mcgill.ca/",
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.mcgill.ca/undergraduate-admissions/files/undergraduate-admissions/insert-row-2027_final_oct_15.pdf": {
+  "url": "https://www.mcgill.ca/undergraduate-admissions/files/undergraduate-admissions/insert-row-2027_final_oct_15.pdf",
+  "status": 200,
+  "finalUrl": "https://www.mcgill.ca/undergraduate-admissions/files/undergraduate-admissions/insert-row-2027_final_oct_15.pdf",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.mcgill.ca/undergraduate-admissions/why-mcgill/discover-montreal": {
+  "url": "https://www.mcgill.ca/undergraduate-admissions/why-mcgill/discover-montreal",
+  "status": 200,
+  "finalUrl": "https://www.mcgill.ca/undergraduate-admissions/why-mcgill/discover-montreal",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.mcgill.ca/undergraduate-admissions/meet-mcgill/campus-tours": {
+  "url": "https://www.mcgill.ca/undergraduate-admissions/meet-mcgill/campus-tours",
+  "status": 200,
+  "finalUrl": "https://www.mcgill.ca/undergraduate-admissions/meet-mcgill/campus-tours",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.mcgill.ca/undergraduate-admissions/programs": {
+  "url": "https://www.mcgill.ca/undergraduate-admissions/programs",
+  "status": 200,
+  "finalUrl": "https://www.mcgill.ca/undergraduate-admissions/programs",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.mcgill.ca/undergraduate-admissions/": {
+  "url": "https://www.mcgill.ca/undergraduate-admissions/",
+  "status": 200,
+  "finalUrl": "https://www.mcgill.ca/undergraduate-admissions/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.mcgill.ca/studentaid/scholarships-aid/future-undergrads": {
+  "url": "https://www.mcgill.ca/studentaid/scholarships-aid/future-undergrads",
+  "status": 200,
+  "finalUrl": "https://www.mcgill.ca/studentaid/scholarships-aid/future-undergrads",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://you.ubc.ca/applying-ubc/requirements/english-language-competency/": {
+  "url": "https://you.ubc.ca/applying-ubc/requirements/english-language-competency/",
+  "status": 200,
+  "finalUrl": "https://you.ubc.ca/applying-ubc/requirements/english-language-competency/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://you.ubc.ca/financial-planning/tuition-fees/": {
+  "url": "https://you.ubc.ca/financial-planning/tuition-fees/",
+  "status": 200,
+  "finalUrl": "https://you.ubc.ca/financial-planning/tuition-fees/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://you.ubc.ca/applying-ubc/dates-deadlines/": {
+  "url": "https://you.ubc.ca/applying-ubc/dates-deadlines/",
+  "status": 200,
+  "finalUrl": "https://you.ubc.ca/applying-ubc/dates-deadlines/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://you.ubc.ca/apply/": {
+  "url": "https://you.ubc.ca/apply/",
+  "status": 200,
+  "finalUrl": "https://you.ubc.ca/apply/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.ubc.ca/": {
+  "url": "https://www.ubc.ca/",
+  "status": 200,
+  "finalUrl": "https://www.ubc.ca/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.ubc.ca/undergraduate-students/": {
+  "url": "https://www.ubc.ca/undergraduate-students/",
+  "status": 200,
+  "finalUrl": "https://www.ubc.ca/undergraduate-students/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.ubc.ca/prospective-students/": {
+  "url": "https://www.ubc.ca/prospective-students/",
+  "status": 200,
+  "finalUrl": "https://www.ubc.ca/prospective-students/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.ubc.ca/admissions/": {
+  "url": "https://www.ubc.ca/admissions/",
+  "status": 200,
+  "finalUrl": "https://www.ubc.ca/admissions/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.med.ubc.ca/news/ubc-joins-eurolife-network-strengthening-international-collaboration-on-biomedical-research-and-training/": {
+  "url": "https://www.med.ubc.ca/news/ubc-joins-eurolife-network-strengthening-international-collaboration-on-biomedical-research-and-training/",
+  "status": 200,
+  "finalUrl": "https://www.med.ubc.ca/news/ubc-joins-eurolife-network-strengthening-international-collaboration-on-biomedical-research-and-training/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.ualberta.ca/en/admissions/how-to-apply/admission-requirements/language-requirements/index.html": {
+  "url": "https://www.ualberta.ca/en/admissions/how-to-apply/admission-requirements/language-requirements/index.html",
+  "status": 200,
+  "finalUrl": "https://www.ualberta.ca/en/admissions/how-to-apply/admission-requirements/language-requirements/index.html",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.ualberta.ca/en/admissions/how-to-apply/international-admission-requirements/index.html": {
+  "url": "https://www.ualberta.ca/en/admissions/how-to-apply/international-admission-requirements/index.html",
+  "status": 200,
+  "finalUrl": "https://www.ualberta.ca/en/admissions/how-to-apply/international-admission-requirements/index.html",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.ualberta.ca/en/admissions/how-to-apply/dates-deadlines/index.html": {
+  "url": "https://www.ualberta.ca/en/admissions/how-to-apply/dates-deadlines/index.html",
+  "status": 200,
+  "finalUrl": "https://www.ualberta.ca/en/admissions/how-to-apply/dates-deadlines/index.html",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://you.ubc.ca/financial-planning/scholarships-awards-international-students/international-scholars": {
+  "url": "https://you.ubc.ca/financial-planning/scholarships-awards-international-students/international-scholars",
+  "status": 200,
+  "finalUrl": "https://you.ubc.ca/financial-planning/scholarships-awards-international-students/international-scholars",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.ualberta.ca/en/admissions/tuition-and-scholarships/index.html": {
+  "url": "https://www.ualberta.ca/en/admissions/tuition-and-scholarships/index.html",
+  "status": 200,
+  "finalUrl": "https://www.ualberta.ca/en/admissions/tuition-and-scholarships/index.html",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://future.mcmaster.ca/apply/requirements/english-proficiency/": {
+  "url": "https://future.mcmaster.ca/apply/requirements/english-proficiency/",
+  "status": 200,
+  "finalUrl": "https://future.mcmaster.ca/apply/requirements/english-proficiency/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://future.mcmaster.ca/apply/deadlines/": {
+  "url": "https://future.mcmaster.ca/apply/deadlines/",
+  "status": 200,
+  "finalUrl": "https://future.mcmaster.ca/apply/deadlines/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://you.ubc.ca/financial-planning/tuition-fees-cost/": {
+  "url": "https://you.ubc.ca/financial-planning/tuition-fees-cost/",
+  "status": 404,
+  "finalUrl": "https://you.ubc.ca/financial-planning/tuition-fees-cost/",
+  "ok": false,
+  "reason": "HTTP 404",
+  "checkedAt": "2026-11-14"
+ },
+ "https://future.mcmaster.ca/finances/cost-estimator/": {
+  "url": "https://future.mcmaster.ca/finances/cost-estimator/",
+  "status": 200,
+  "finalUrl": "https://future.mcmaster.ca/finances/cost-estimator/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.uottawa.ca/study/undergraduate-studies/application-deadlines": {
+  "url": "https://www.uottawa.ca/study/undergraduate-studies/application-deadlines",
+  "status": 200,
+  "finalUrl": "https://www.uottawa.ca/study/undergraduate-studies/application-deadlines",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://future.mcmaster.ca/internationalawards/": {
+  "url": "https://future.mcmaster.ca/internationalawards/",
+  "status": 200,
+  "finalUrl": "https://future.mcmaster.ca/internationalawards/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.uottawa.ca/study/fees-financial-support/university-fees/administrative-fees": {
+  "url": "https://www.uottawa.ca/study/fees-financial-support/university-fees/administrative-fees",
+  "status": 200,
+  "finalUrl": "https://www.uottawa.ca/study/fees-financial-support/university-fees/administrative-fees",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.uottawa.ca/study/undergraduate-studies/tuition-fees": {
+  "url": "https://www.uottawa.ca/study/undergraduate-studies/tuition-fees",
+  "status": 404,
+  "finalUrl": "https://www.uottawa.ca/study/undergraduate-studies/tuition-fees",
+  "ok": false,
+  "reason": "HTTP 404",
+  "checkedAt": "2026-11-14"
+ },
+ "https://futurestudents.yorku.ca/financing-your-degree/international-scholarships": {
+  "url": "https://futurestudents.yorku.ca/financing-your-degree/international-scholarships",
+  "status": 200,
+  "finalUrl": "https://futurestudents.yorku.ca/financing-your-degree/international-scholarships",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://futurestudents.yorku.ca/requirements/deadlines": {
+  "url": "https://futurestudents.yorku.ca/requirements/deadlines",
+  "status": 200,
+  "finalUrl": "https://futurestudents.yorku.ca/requirements/deadlines",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.futurestudents.yorku.ca/sites/futurestudents/files/viewbooks/YorkU-2027-28-INTL-handbook.pdf": {
+  "url": "https://www.futurestudents.yorku.ca/sites/futurestudents/files/viewbooks/YorkU-2027-28-INTL-handbook.pdf",
+  "status": 0,
+  "finalUrl": "https://www.futurestudents.yorku.ca/sites/futurestudents/files/viewbooks/YorkU-2027-28-INTL-handbook.pdf",
+  "ok": false,
+  "reason": "no response (curl: (60) SSL: no alternative certificate subject name matches target host name)",
+  "checkedAt": "2026-11-14"
+ },
+ "https://admissions.carleton.ca/apply-now-international-students/": {
+  "url": "https://admissions.carleton.ca/apply-now-international-students/",
+  "status": 200,
+  "finalUrl": "https://admissions.carleton.ca/apply-now-international-students/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://admissions.carleton.ca/scholarships/usa-and-international-costs/": {
+  "url": "https://admissions.carleton.ca/scholarships/usa-and-international-costs/",
+  "status": 200,
+  "finalUrl": "https://admissions.carleton.ca/scholarships/usa-and-international-costs/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://admissions.carleton.ca/information-for-international-guidance-counsellors/": {
+  "url": "https://admissions.carleton.ca/information-for-international-guidance-counsellors/",
+  "status": 200,
+  "finalUrl": "https://admissions.carleton.ca/information-for-international-guidance-counsellors/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://admissions.ontariotechu.ca/applicant-information/international-applicants.php": {
+  "url": "https://admissions.ontariotechu.ca/applicant-information/international-applicants.php",
+  "status": 200,
+  "finalUrl": "https://admissions.ontariotechu.ca/applicant-information/international-applicants.php",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://ontariotechu.ca/digital-viewbook/admissions.php": {
+  "url": "https://ontariotechu.ca/digital-viewbook/admissions.php",
+  "status": 200,
+  "finalUrl": "https://ontariotechu.ca/future-students/viewbooks.php",
+  "ok": true,
+  "reason": "redirect to https://ontariotechu.ca/future-students/viewbooks.php",
+  "checkedAt": "2026-11-14"
+ },
+ "https://registrar.ontariotechu.ca/fees-and-payment/international-student-tuition/undergraduate-international-tuition-2026-2027.php": {
+  "url": "https://registrar.ontariotechu.ca/fees-and-payment/international-student-tuition/undergraduate-international-tuition-2026-2027.php",
+  "status": 200,
+  "finalUrl": "https://registrar.ontariotechu.ca/fees-and-payment/international-student-tuition/undergraduate-international-tuition-2026-2027.php",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.unbc.ca/programs-and-admissions/undergraduate/undergraduate-application-deadlines": {
+  "url": "https://www.unbc.ca/programs-and-admissions/undergraduate/undergraduate-application-deadlines",
+  "status": 200,
+  "finalUrl": "https://www.unbc.ca/programs-and-admissions/undergraduate/undergraduate-application-deadlines",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.unbc.ca/calendar/undergraduate/international-admissions": {
+  "url": "https://www.unbc.ca/calendar/undergraduate/international-admissions",
+  "status": 200,
+  "finalUrl": "https://www.unbc.ca/calendar/undergraduate/international-admissions",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.unbc.ca/finance/accounts-receivable/tuition-and-fees": {
+  "url": "https://www.unbc.ca/finance/accounts-receivable/tuition-and-fees",
+  "status": 200,
+  "finalUrl": "https://www.unbc.ca/finance/accounts-receivable/tuition-and-fees",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.openday.msu.ru/en/admissions": {
+  "url": "https://www.openday.msu.ru/en/admissions",
+  "status": 200,
+  "finalUrl": "https://www.openday.msu.ru/en/admissions",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://fgp.msu.ru/admission/eng": {
+  "url": "https://fgp.msu.ru/admission/eng",
+  "status": 200,
+  "finalUrl": "https://fgp.msu.ru/admission/eng",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://eng.mf.bmstu.ru/fcec/": {
+  "url": "https://eng.mf.bmstu.ru/fcec/",
+  "status": 200,
+  "finalUrl": "https://eng.mf.bmstu.ru/fcec/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://eng.mipt.ru/faq/": {
+  "url": "https://eng.mipt.ru/faq/",
+  "status": 200,
+  "finalUrl": "https://eng.mipt.ru/faq/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://eng.mf.bmstu.ru/fcec/docs/information-for-international-applicants.pdf": {
+  "url": "https://eng.mf.bmstu.ru/fcec/docs/information-for-international-applicants.pdf",
+  "status": 200,
+  "finalUrl": "https://eng.mf.bmstu.ru/fcec/docs/information-for-international-applicants.pdf",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://international.rudn.ru/undergraduate/classical/": {
+  "url": "https://international.rudn.ru/undergraduate/classical/",
+  "status": 200,
+  "finalUrl": "https://international.rudn.ru/undergraduate/classical/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://international.rudn.ru/": {
+  "url": "https://international.rudn.ru/",
+  "status": 200,
+  "finalUrl": "https://international.rudn.ru/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://english.spbu.ru/": {
+  "url": "https://english.spbu.ru/",
+  "status": 200,
+  "finalUrl": "https://english.spbu.ru/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://phys.spbu.ru/bac_inostr": {
+  "url": "https://phys.spbu.ru/bac_inostr",
+  "status": 200,
+  "finalUrl": "https://phys.spbu.ru/bac_inostr",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://cabinet.spbu.ru/Lists/ForeignersLists/bak/index_comp_groups.html": {
+  "url": "https://cabinet.spbu.ru/Lists/ForeignersLists/bak/index_comp_groups.html",
+  "status": 200,
+  "finalUrl": "https://cabinet.spbu.ru/Lists/ForeignersLists/bak/index_comp_groups.html",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://urfu.ru/ru/international/int-admission/": {
+  "url": "https://urfu.ru/ru/international/int-admission/",
+  "status": 200,
+  "finalUrl": "https://urfu.ru/ru/international/int-admission/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://priem.urfu.ru/": {
+  "url": "https://priem.urfu.ru/",
+  "status": 200,
+  "finalUrl": "https://priem.urfu.ru/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://eng.unn.ru/admissions/faq": {
+  "url": "https://eng.unn.ru/admissions/faq",
+  "status": 200,
+  "finalUrl": "http://eng.unn.ru/admissions/faq",
+  "ok": true,
+  "reason": "redirect to http://eng.unn.ru/admissions/faq",
+  "checkedAt": "2026-11-14"
+ },
+ "https://eng.unn.ru/academic-programmes/degree-programmes-in-english-2": {
+  "url": "https://eng.unn.ru/academic-programmes/degree-programmes-in-english-2",
+  "status": 200,
+  "finalUrl": "http://eng.unn.ru/academic-programmes/degree-programmes-in-english-2",
+  "ok": true,
+  "reason": "redirect to http://eng.unn.ru/academic-programmes/degree-programmes-in-english-2",
+  "checkedAt": "2026-11-14"
+ },
+ "https://eng.unn.ru/admissions/costs-and-scholarships/bachelor-s-track": {
+  "url": "https://eng.unn.ru/admissions/costs-and-scholarships/bachelor-s-track",
+  "status": 200,
+  "finalUrl": "http://eng.unn.ru/admissions/costs-and-scholarships/bachelor-s-track",
+  "ok": true,
+  "reason": "redirect to http://eng.unn.ru/admissions/costs-and-scholarships/bachelor-s-track",
+  "checkedAt": "2026-11-14"
+ },
+ "https://future.utoronto.ca/international-foundation-program": {
+  "url": "https://future.utoronto.ca/international-foundation-program",
+  "status": 0,
+  "finalUrl": "https://future.utoronto.ca/international-foundation-program",
+  "ok": false,
+  "reason": "no response (curl: (28) Resolving timed out after 20005 milliseconds)",
+  "checkedAt": "2026-11-14"
+ },
+ "https://future.utoronto.ca/international-student-financial-aid": {
+  "url": "https://future.utoronto.ca/international-student-financial-aid",
+  "status": 0,
+  "finalUrl": "https://future.utoronto.ca/international-student-financial-aid",
+  "ok": false,
+  "reason": "no response (curl: (28) Resolving timed out after 20001 milliseconds)",
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.omgtu.ru/": {
+  "url": "https://www.omgtu.ru/",
+  "status": 403,
+  "finalUrl": "https://www.omgtu.ru/",
+  "ok": false,
+  "reason": "HTTP 403",
+  "checkedAt": "2026-11-14"
+ },
+ "https://omgtu.ru/entrant/inostrannomu-abiturientu/": {
+  "url": "https://omgtu.ru/entrant/inostrannomu-abiturientu/",
+  "status": 403,
+  "finalUrl": "https://omgtu.ru/entrant/inostrannomu-abiturientu/",
+  "ok": false,
+  "reason": "HTTP 403",
+  "checkedAt": "2026-11-14"
+ },
+ "https://future.utoronto.ca/english-language-transition-programs": {
+  "url": "https://future.utoronto.ca/english-language-transition-programs",
+  "status": 0,
+  "finalUrl": "https://future.utoronto.ca/english-language-transition-programs",
+  "ok": false,
+  "reason": "no response (curl: (28) Resolving timed out after 20005 milliseconds)",
+  "checkedAt": "2026-11-14"
+ },
+ "https://ugapply.ku.ac.ae/portal/ug_landing": {
+  "url": "https://ugapply.ku.ac.ae/portal/ug_landing",
+  "status": 200,
+  "finalUrl": "https://ugapply.ku.ac.ae/portal/ug_landing",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://tulsu.ru/en/international-candidates": {
+  "url": "https://tulsu.ru/en/international-candidates",
+  "status": 200,
+  "finalUrl": "https://tulsu.ru/en/international-candidates",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://tulsu.ru/scholarship": {
+  "url": "https://tulsu.ru/scholarship",
+  "status": 200,
+  "finalUrl": "https://tulsu.ru/scholarship",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://cdn.adu.ac.ae/images-container/docs/default-source/admissions-financials/all-tuition-fees-english.pdf": {
+  "url": "https://cdn.adu.ac.ae/images-container/docs/default-source/admissions-financials/all-tuition-fees-english.pdf",
+  "status": 200,
+  "finalUrl": "https://cdn.adu.ac.ae/images-container/docs/default-source/admissions-financials/all-tuition-fees-english.pdf",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.ku.ac.ae/undergraduate-scholarships": {
+  "url": "https://www.ku.ac.ae/undergraduate-scholarships",
+  "status": 200,
+  "finalUrl": "https://www.ku.ac.ae/undergraduate-scholarships",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.ku.ac.ae/undergraduate-admissions": {
+  "url": "https://www.ku.ac.ae/undergraduate-admissions",
+  "status": 200,
+  "finalUrl": "https://www.ku.ac.ae/undergraduate-admissions",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.uaeu.ac.ae/en/admission/international-students-and-children-of-uaeu-employees.shtml": {
+  "url": "https://www.uaeu.ac.ae/en/admission/international-students-and-children-of-uaeu-employees.shtml",
+  "status": 200,
+  "finalUrl": "https://www.uaeu.ac.ae/en/admission/international-students-and-children-of-uaeu-employees.shtml",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.zu.ac.ae/main/en/undergraduate-programs/admission-criteria": {
+  "url": "https://www.zu.ac.ae/main/en/undergraduate-programs/admission-criteria",
+  "status": 200,
+  "finalUrl": "https://www.zu.ac.ae/main/en/undergraduate-programs/admission-criteria",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.sharjah.ac.ae/en/Admissions/Undergraduate-Admission-FAQs": {
+  "url": "https://www.sharjah.ac.ae/en/Admissions/Undergraduate-Admission-FAQs",
+  "status": 200,
+  "finalUrl": "https://www.sharjah.ac.ae/en/Admissions/Undergraduate-Admission-FAQs",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.zu.ac.ae/main/en/undergraduate-programs/undergraduate-application": {
+  "url": "https://www.zu.ac.ae/main/en/undergraduate-programs/undergraduate-application",
+  "status": 200,
+  "finalUrl": "https://www.zu.ac.ae/main/en/undergraduate-programs/undergraduate-application",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.uaeu.ac.ae/en/admission/undergraduate-scholarships.shtml": {
+  "url": "https://www.uaeu.ac.ae/en/admission/undergraduate-scholarships.shtml",
+  "status": 200,
+  "finalUrl": "https://www.uaeu.ac.ae/en/admission/undergraduate-scholarships.shtml",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.zu.ac.ae/main/en/undergraduate-programs/_images/tuition-scholarship": {
+  "url": "https://www.zu.ac.ae/main/en/undergraduate-programs/_images/tuition-scholarship",
+  "status": 200,
+  "finalUrl": "https://www.zu.ac.ae/main/en/undergraduate-programs/_images/tuition-scholarship",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.nus.edu.sg/oam/admissions/admissions": {
+  "url": "https://www.nus.edu.sg/oam/admissions/admissions",
+  "status": 200,
+  "finalUrl": "https://www.nus.edu.sg/oam/admissions/admissions",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.nus.edu.sg/": {
+  "url": "https://www.nus.edu.sg/",
+  "status": 200,
+  "finalUrl": "https://www.nus.edu.sg/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.nus.edu.sg/oam/docs/default-source/default-document-library/english-test-scores.pdf": {
+  "url": "https://www.nus.edu.sg/oam/docs/default-source/default-document-library/english-test-scores.pdf",
+  "status": 200,
+  "finalUrl": "https://www.nus.edu.sg/oam/docs/default-source/default-document-library/english-test-scores.pdf",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://nus.edu.sg/oam/apply-to-nus/international-qualifications": {
+  "url": "https://nus.edu.sg/oam/apply-to-nus/international-qualifications",
+  "status": 200,
+  "finalUrl": "https://nus.edu.sg/oam/apply-to-nus/international-qualifications",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.aud.edu/admissions/scholarships/": {
+  "url": "https://www.aud.edu/admissions/scholarships/",
+  "status": 200,
+  "finalUrl": "https://www.aud.edu/admissions/scholarships/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.ntu.edu.sg/admissions/undergraduate/important-links/important-dates": {
+  "url": "https://www.ntu.edu.sg/admissions/undergraduate/important-links/important-dates",
+  "status": 200,
+  "finalUrl": "https://www.ntu.edu.sg/admissions/undergraduate/important-links/important-dates",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.aud.edu/university-overview/administrative-offices/office-of-finance/tuition-and-fees/": {
+  "url": "https://www.aud.edu/university-overview/administrative-offices/office-of-finance/tuition-and-fees/",
+  "status": 200,
+  "finalUrl": "https://www.aud.edu/university-overview/administrative-offices/office-of-finance/tuition-and-fees/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://nus.edu.sg/registrar/docs/default-source/administrative-policies-procedures/ugtuitioncurrent.pdf": {
+  "url": "https://nus.edu.sg/registrar/docs/default-source/administrative-policies-procedures/ugtuitioncurrent.pdf",
+  "status": 200,
+  "finalUrl": "https://nus.edu.sg/registrar/docs/default-source/administrative-policies-procedures/ugtuitioncurrent.pdf",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.ntu.edu.sg/admissions/undergraduate/fees-and-funding/tuition-fees": {
+  "url": "https://www.ntu.edu.sg/admissions/undergraduate/fees-and-funding/tuition-fees",
+  "status": 200,
+  "finalUrl": "https://www.ntu.edu.sg/admissions/undergraduate/fees-and-funding/tuition-fees",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.aud.edu/admissions/undergraduate/": {
+  "url": "https://www.aud.edu/admissions/undergraduate/",
+  "status": 200,
+  "finalUrl": "https://www.aud.edu/admissions/undergraduate/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.ntu.edu.sg/media/docs/default-source/undergraduate-admissions/international/app_bahasa.pdf": {
+  "url": "https://www.ntu.edu.sg/media/docs/default-source/undergraduate-admissions/international/app_bahasa.pdf",
+  "status": 200,
+  "finalUrl": "https://www.ntu.edu.sg/media/docs/default-source/undergraduate-admissions/international/app_bahasa.pdf",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.ntu.edu.sg/media/docs/default-source/undergraduate-admissions/msr/emsr_intnl.pdf": {
+  "url": "https://www.ntu.edu.sg/media/docs/default-source/undergraduate-admissions/msr/emsr_intnl.pdf",
+  "status": 200,
+  "finalUrl": "https://www.ntu.edu.sg/media/docs/default-source/undergraduate-admissions/msr/emsr_intnl.pdf",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://admissions.smu.edu.sg/admissions-requirements/international-and-other-qualifications": {
+  "url": "https://admissions.smu.edu.sg/admissions-requirements/international-and-other-qualifications",
+  "status": 200,
+  "finalUrl": "https://admissions.smu.edu.sg/admissions-requirements/international-and-other-qualifications",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.sutd.edu.sg/admissions/undergraduate/education-expenses/fees/tuition-fees/": {
+  "url": "https://www.sutd.edu.sg/admissions/undergraduate/education-expenses/fees/tuition-fees/",
+  "status": 200,
+  "finalUrl": "https://www.sutd.edu.sg/admissions/undergraduate/education-expenses/fees/tuition-fees/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.sutd.edu.sg/admissions/undergraduate/fees-and-financial-aid/": {
+  "url": "https://www.sutd.edu.sg/admissions/undergraduate/fees-and-financial-aid/",
+  "status": 404,
+  "finalUrl": "https://www.sutd.edu.sg/admissions/undergraduate/fees-and-financial-aid/",
+  "ok": false,
+  "reason": "HTTP 404",
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.sutd.edu.sg/admissions/undergraduate/": {
+  "url": "https://www.sutd.edu.sg/admissions/undergraduate/",
+  "status": 200,
+  "finalUrl": "https://www.sutd.edu.sg/admissions/undergraduate/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://admissions.smu.edu.sg/faq/Admissions%20and%20applications": {
+  "url": "https://admissions.smu.edu.sg/faq/Admissions%20and%20applications",
+  "status": 200,
+  "finalUrl": "https://admissions.smu.edu.sg/faq/Admissions%20and%20applications",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.sutd.edu.sg/admissions/undergraduate/application-guide/": {
+  "url": "https://www.sutd.edu.sg/admissions/undergraduate/application-guide/",
+  "status": 200,
+  "finalUrl": "https://www.sutd.edu.sg/admissions/undergraduate/application-guide/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.admissions.hku.hk/fees-and-scholarships/fees": {
+  "url": "https://www.admissions.hku.hk/fees-and-scholarships/fees",
+  "status": 200,
+  "finalUrl": "https://www.admissions.hku.hk/fees-and-scholarships/fees",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.admissions.hku.hk/apply/international-qualifications/english-language-requirement": {
+  "url": "https://www.admissions.hku.hk/apply/international-qualifications/english-language-requirement",
+  "status": 200,
+  "finalUrl": "https://www.admissions.hku.hk/apply/international-qualifications/english-language-requirement",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.admissions.hku.hk/apply/international-qualifications": {
+  "url": "https://www.admissions.hku.hk/apply/international-qualifications",
+  "status": 200,
+  "finalUrl": "https://www.admissions.hku.hk/apply/international-qualifications",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.admissions.hku.hk/faqs/international": {
+  "url": "https://www.admissions.hku.hk/faqs/international",
+  "status": 200,
+  "finalUrl": "https://www.admissions.hku.hk/faqs/international",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://admission.cuhk.edu.hk/fees-financing-your-studies/fees/": {
+  "url": "https://admission.cuhk.edu.hk/fees-financing-your-studies/fees/",
+  "status": 200,
+  "finalUrl": "https://admission.cuhk.edu.hk/fees-financing-your-studies/fees/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://admission.cuhk.edu.hk/fees-financing-your-studies/scholarships/admission-scholarships-for-undergraduates-only/": {
+  "url": "https://admission.cuhk.edu.hk/fees-financing-your-studies/scholarships/admission-scholarships-for-undergraduates-only/",
+  "status": 200,
+  "finalUrl": "https://admission.cuhk.edu.hk/fees-financing-your-studies/scholarships/admission-scholarships-for-undergraduates-only/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://admission.cuhk.edu.hk/application/overseas-other-qualifications-non-local-international-team/faq/": {
+  "url": "https://admission.cuhk.edu.hk/application/overseas-other-qualifications-non-local-international-team/faq/",
+  "status": 200,
+  "finalUrl": "https://admission.cuhk.edu.hk/application/overseas-other-qualifications-non-local-international-team/faq/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://admission.cuhk.edu.hk/application/overseas-other-qualifications-non-local-international-team/requirements/": {
+  "url": "https://admission.cuhk.edu.hk/application/overseas-other-qualifications-non-local-international-team/requirements/",
+  "status": 200,
+  "finalUrl": "https://admission.cuhk.edu.hk/application/overseas-other-qualifications-non-local-international-team/requirements/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://admission.cuhk.edu.hk/wp-content/uploads/2026/11/CUHK-NJL-2027.pdf": {
+  "url": "https://admission.cuhk.edu.hk/wp-content/uploads/2026/11/CUHK-NJL-2027.pdf",
+  "status": 200,
+  "finalUrl": "https://admission.cuhk.edu.hk/wp-content/uploads/2026/11/CUHK-NJL-2027.pdf",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.cityu.edu.hk/admo/faq": {
+  "url": "https://www.cityu.edu.hk/admo/faq",
+  "status": 200,
+  "finalUrl": "https://www.cityu.edu.hk/admo/faq",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.cityu.edu.hk/admo/admissions/international-admissions": {
+  "url": "https://www.cityu.edu.hk/admo/admissions/international-admissions",
+  "status": 200,
+  "finalUrl": "https://www.cityu.edu.hk/admo/admissions/international-admissions",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://join.hkust.edu.hk/admissions/international-qualifications": {
+  "url": "https://join.hkust.edu.hk/admissions/international-qualifications",
+  "status": 200,
+  "finalUrl": "https://join.hkust.edu.hk/admissions/international-qualifications",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://join.hkust.edu.hk/oas/elar.pdf": {
+  "url": "https://join.hkust.edu.hk/oas/elar.pdf",
+  "status": 200,
+  "finalUrl": "https://join.hkust.edu.hk/oas/elar.pdf",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.join.hkust.edu.hk/fees-and-scholarships": {
+  "url": "https://www.join.hkust.edu.hk/fees-and-scholarships",
+  "status": 200,
+  "finalUrl": "https://www.join.hkust.edu.hk/fees-and-scholarships",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://admissions.hkbu.edu.hk/fees-and-scholarships.html": {
+  "url": "https://admissions.hkbu.edu.hk/fees-and-scholarships.html",
+  "status": 200,
+  "finalUrl": "https://admissions.hkbu.edu.hk/fees-and-scholarships.html",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.wiut.uz/certificate-international-foundation-studies": {
+  "url": "https://www.wiut.uz/certificate-international-foundation-studies",
+  "status": 200,
+  "finalUrl": "https://www.wiut.uz/certificate-international-foundation-studies",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://joomla4.wiut.uz/tuition-fees-international": {
+  "url": "https://joomla4.wiut.uz/tuition-fees-international",
+  "status": 503,
+  "finalUrl": "https://joomla4.wiut.uz/tuition-fees-international",
+  "ok": false,
+  "reason": "HTTP 503",
+  "checkedAt": "2026-11-14"
+ },
+ "https://admission.wiut.uz/": {
+  "url": "https://admission.wiut.uz/",
+  "status": 200,
+  "finalUrl": "https://admission.wiut.uz/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.wiut.uz/index.php/scholarship": {
+  "url": "https://www.wiut.uz/index.php/scholarship",
+  "status": 200,
+  "finalUrl": "https://www.wiut.uz/index.php/scholarship",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://admissions.hkbu.edu.hk/admissions/international-qualifications.html": {
+  "url": "https://admissions.hkbu.edu.hk/admissions/international-qualifications.html",
+  "status": 200,
+  "finalUrl": "https://admissions.hkbu.edu.hk/admissions/international-qualifications.html",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://inha.uz/prospective-students/admissions/scholarships/": {
+  "url": "https://inha.uz/prospective-students/admissions/scholarships/",
+  "status": 200,
+  "finalUrl": "https://inha.uz/prospective-students/admissions/scholarships/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://inha.uz/prospective-students/admissions/application-guideline/": {
+  "url": "https://inha.uz/prospective-students/admissions/application-guideline/",
+  "status": 200,
+  "finalUrl": "https://inha.uz/prospective-students/admissions/application-guideline/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://inha.uz/foundation/admissions-guidelines-foundation/": {
+  "url": "https://inha.uz/foundation/admissions-guidelines-foundation/",
+  "status": 200,
+  "finalUrl": "https://inha.uz/foundation/admissions-guidelines-foundation/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://inha.uz/uz/abiturient/qabul/oqish-uchun-tolov/": {
+  "url": "https://inha.uz/uz/abiturient/qabul/oqish-uchun-tolov/",
+  "status": 200,
+  "finalUrl": "https://inha.uz/uz/abiturient/qabul/oqish-uchun-tolov/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://polito.uz/undergraduate-admission/": {
+  "url": "https://polito.uz/undergraduate-admission/",
+  "status": 200,
+  "finalUrl": "https://polito.uz/undergraduate-admission/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://polito.uz/admission-info/": {
+  "url": "https://polito.uz/admission-info/",
+  "status": 200,
+  "finalUrl": "https://polito.uz/admission-info/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://info.ajou.uz/en": {
+  "url": "https://info.ajou.uz/en",
+  "status": 200,
+  "finalUrl": "https://info.ajou.uz/en",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.ajou.uz/en/page/48": {
+  "url": "https://www.ajou.uz/en/page/48",
+  "status": 200,
+  "finalUrl": "https://www.ajou.uz/en/page/48",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.sharjah.ac.ae/Admissions/Bachelors-Degree": {
+  "url": "https://www.sharjah.ac.ae/Admissions/Bachelors-Degree",
+  "status": 200,
+  "finalUrl": "https://www.sharjah.ac.ae/Admissions/Bachelors-Degree",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://bmu-edu.uz/page/admission-requirements-tuition-fees": {
+  "url": "https://bmu-edu.uz/page/admission-requirements-tuition-fees",
+  "status": 200,
+  "finalUrl": "https://bmu-edu.uz/page/admission-requirements-tuition-fees",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.bmu-edu.uz/page/bsc-management-information-systems-with-business-analytics": {
+  "url": "https://www.bmu-edu.uz/page/bsc-management-information-systems-with-business-analytics",
+  "status": 200,
+  "finalUrl": "https://www.bmu-edu.uz/page/bsc-management-information-systems-with-business-analytics",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.rea.ru/mejdunarodnaya-deyatelnost/inostrannyim-abiturientam-i-studentam/inostrannyim-abiturientam-postupayuschim-v-reu/-poryadok-oformleniya-dlya-postupayuschih-na-byudjetnoy-osnove": {
+  "url": "https://www.rea.ru/mejdunarodnaya-deyatelnost/inostrannyim-abiturientam-i-studentam/inostrannyim-abiturientam-postupayuschim-v-reu/-poryadok-oformleniya-dlya-postupayuschih-na-byudjetnoy-osnove",
+  "status": 200,
+  "finalUrl": "https://www.rea.ru/mejdunarodnaya-deyatelnost/inostrannyim-abiturientam-i-studentam/inostrannyim-abiturientam-postupayuschim-v-reu/-poryadok-oformleniya-dlya-postupayuschih-na-byudjetnoy-osnove",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://nu.edu.kz/admissions/how-to-apply/foundation-undergraduate/regular-admissions/": {
+  "url": "https://nu.edu.kz/admissions/how-to-apply/foundation-undergraduate/regular-admissions/",
+  "status": 200,
+  "finalUrl": "https://nu.edu.kz/admissions/how-to-apply/foundation-undergraduate/regular-admissions/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://rea.ru/mnt/sveden-filial/Tashkent/paid_edu/paidSt/stoimost_obucheniya_2026.pdf": {
+  "url": "https://rea.ru/mnt/sveden-filial/Tashkent/paid_edu/paidSt/stoimost_obucheniya_2026.pdf",
+  "status": 404,
+  "finalUrl": "https://rea.ru/mnt/sveden-filial/Tashkent/paid_edu/paidSt/stoimost_obucheniya_2026.pdf",
+  "ok": false,
+  "reason": "HTTP 404",
+  "checkedAt": "2026-11-14"
+ },
+ "https://nu.edu.kz/admissions/how-to-apply/foundation-undergraduate/financial-aid-end-scholarships/": {
+  "url": "https://nu.edu.kz/admissions/how-to-apply/foundation-undergraduate/financial-aid-end-scholarships/",
+  "status": 200,
+  "finalUrl": "https://nu.edu.kz/admissions/how-to-apply/foundation-undergraduate/financial-aid-end-scholarships/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://apply.nu.edu.kz/international-uzbekistan": {
+  "url": "https://apply.nu.edu.kz/international-uzbekistan",
+  "status": 200,
+  "finalUrl": "https://apply.nu.edu.kz/international-uzbekistan",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.kimep.kz/prospective-students/files/2026/02/HowToApplyENGUgrad_2026-27.pdf": {
+  "url": "https://www.kimep.kz/prospective-students/files/2026/02/HowToApplyENGUgrad_2026-27.pdf",
+  "status": 200,
+  "finalUrl": "https://www.kimep.kz/prospective-students/files/2026/02/HowToApplyENGUgrad_2026-27.pdf",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://kbtu.edu.kz/en/internationalization/international-admissions-internationalization": {
+  "url": "https://kbtu.edu.kz/en/internationalization/international-admissions-internationalization",
+  "status": 200,
+  "finalUrl": "https://kbtu.edu.kz/en/internationalization/international-admissions-internationalization",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.kimep.kz/prospective-students/files/2026/04/HowToApplyENGUgradINL.pdf": {
+  "url": "https://www.kimep.kz/prospective-students/files/2026/04/HowToApplyENGUgradINL.pdf",
+  "status": 200,
+  "finalUrl": "https://www.kimep.kz/prospective-students/files/2026/04/HowToApplyENGUgradINL.pdf",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://kbtu.edu.kz/en/schools/school-of-information-technology-and-engineering/bachelor-s-educational-programs-of-the-school-of-information-technology-and-engineering": {
+  "url": "https://kbtu.edu.kz/en/schools/school-of-information-technology-and-engineering/bachelor-s-educational-programs-of-the-school-of-information-technology-and-engineering",
+  "status": 200,
+  "finalUrl": "https://kbtu.edu.kz/en/schools/school-of-information-technology-and-engineering/bachelor-s-educational-programs-of-the-school-of-information-technology-and-engineering",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://dku.kz/en/inostrannym-abiturientam": {
+  "url": "https://dku.kz/en/inostrannym-abiturientam",
+  "status": 200,
+  "finalUrl": "https://dku.kz/en/inostrannym-abiturientam",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://dku.kz/en/stoimost-obucheniya-i-stipendii": {
+  "url": "https://dku.kz/en/stoimost-obucheniya-i-stipendii",
+  "status": 200,
+  "finalUrl": "https://dku.kz/en/stoimost-obucheniya-i-stipendii",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://auca.kg/eng/need-based/": {
+  "url": "https://auca.kg/eng/need-based/",
+  "status": 200,
+  "finalUrl": "https://auca.kg/eng/need-based/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.auca.kg/en/apply_international/": {
+  "url": "https://www.auca.kg/en/apply_international/",
+  "status": 200,
+  "finalUrl": "https://www.auca.kg/en/apply_international/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.auca.kg/en/auca_exams_scoring/": {
+  "url": "https://www.auca.kg/en/auca_exams_scoring/",
+  "status": 200,
+  "finalUrl": "https://www.auca.kg/en/auca_exams_scoring/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.auca.kg/en/financial_aid/": {
+  "url": "https://www.auca.kg/en/financial_aid/",
+  "status": 200,
+  "finalUrl": "https://www.auca.kg/en/financial_aid/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://ucentralasia.org/admissions/undergraduate/undergraduate-programmes": {
+  "url": "https://ucentralasia.org/admissions/undergraduate/undergraduate-programmes",
+  "status": 200,
+  "finalUrl": "https://ucentralasia.org/admissions/undergraduate/undergraduate-programmes",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.ucentralasia.org/admissions/undergraduate/undergraduate-programmes": {
+  "url": "https://www.ucentralasia.org/admissions/undergraduate/undergraduate-programmes",
+  "status": 200,
+  "finalUrl": "https://www.ucentralasia.org/admissions/undergraduate/undergraduate-programmes",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.manas.edu.kg/en/students/admission": {
+  "url": "https://www.manas.edu.kg/en/students/admission",
+  "status": 200,
+  "finalUrl": "https://www.manas.edu.kg/en/students/admission",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.manas.edu.kg/en/about_manas/leadership": {
+  "url": "https://www.manas.edu.kg/en/about_manas/leadership",
+  "status": 200,
+  "finalUrl": "https://www.manas.edu.kg/en/about_manas/leadership",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.krsu.kg/en/postupayushhim/bakalavriat-specialitet/osobennosti-postupleniya-na-bakalavriat-specialitet/": {
+  "url": "https://www.krsu.kg/en/postupayushhim/bakalavriat-specialitet/osobennosti-postupleniya-na-bakalavriat-specialitet/",
+  "status": 200,
+  "finalUrl": "https://www.krsu.kg/en/postupayushhim/bakalavriat-specialitet/osobennosti-postupleniya-na-bakalavriat-specialitet/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.ucentralasia.org/schools/school-of-arts-and-sciences/undergraduate-programme": {
+  "url": "https://www.ucentralasia.org/schools/school-of-arts-and-sciences/undergraduate-programme",
+  "status": 200,
+  "finalUrl": "https://www.ucentralasia.org/schools/school-of-arts-and-sciences/undergraduate-programme",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://msu.tj/ru/entrance": {
+  "url": "https://msu.tj/ru/entrance",
+  "status": 200,
+  "finalUrl": "https://msu.tj/ru/entrance",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://admissions.hkmu.edu.hk/ug/overseas/": {
+  "url": "https://admissions.hkmu.edu.hk/ug/overseas/",
+  "status": 200,
+  "finalUrl": "https://admissions.hkmu.edu.hk/ug/overseas/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://admissions.hkmu.edu.hk/ug/faq/": {
+  "url": "https://admissions.hkmu.edu.hk/ug/faq/",
+  "status": 200,
+  "finalUrl": "https://admissions.hkmu.edu.hk/ug/faq/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://admissions.hkmu.edu.hk/ug/programmes/": {
+  "url": "https://admissions.hkmu.edu.hk/ug/programmes/",
+  "status": 200,
+  "finalUrl": "https://admissions.hkmu.edu.hk/ug/programmes/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://msu.tj/file/pk/stoimost_obucheniya.pdf": {
+  "url": "https://msu.tj/file/pk/stoimost_obucheniya.pdf",
+  "status": 200,
+  "finalUrl": "https://msu.tj/file/pk/stoimost_obucheniya.pdf",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://rtsu.tj/sveden/files/rim/Summa_oplaty_za_obuchenie_1_studenta%2C_magistranta_postupayuschego_v_dogovornuyu_gruppu_na_2026-2027_uchebnyi_god_raspoznan.pdf": {
+  "url": "https://rtsu.tj/sveden/files/rim/Summa_oplaty_za_obuchenie_1_studenta%2C_magistranta_postupayuschego_v_dogovornuyu_gruppu_na_2026-2027_uchebnyi_god_raspoznan.pdf",
+  "status": 200,
+  "finalUrl": "https://rtsu.tj/sveden/files/rim/Summa_oplaty_za_obuchenie_1_studenta%2C_magistranta_postupayuschego_v_dogovornuyu_gruppu_na_2026-2027_uchebnyi_god_raspoznan.pdf",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://rtsu.tj/news/?ELEMENT_CODE=2029": {
+  "url": "https://rtsu.tj/news/?ELEMENT_CODE=2029",
+  "status": 200,
+  "finalUrl": "https://rtsu.tj/news/?ELEMENT_CODE=2029",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.krsu.kg/en/postupayushhim/xod-priema/": {
+  "url": "https://www.krsu.kg/en/postupayushhim/xod-priema/",
+  "status": 200,
+  "finalUrl": "https://www.krsu.kg/en/postupayushhim/xod-priema/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://www.krsu.kg/en/mezhdunarodnaya-deyatelnost/otdel-po-rabote-s-inostrannymi-studentami/": {
+  "url": "https://www.krsu.kg/en/mezhdunarodnaya-deyatelnost/otdel-po-rabote-s-inostrannymi-studentami/",
+  "status": 200,
+  "finalUrl": "https://www.krsu.kg/en/mezhdunarodnaya-deyatelnost/otdel-po-rabote-s-inostrannymi-studentami/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://msu.tj/file/pk/pravila_priema_v_2026_godu.pdf": {
+  "url": "https://msu.tj/file/pk/pravila_priema_v_2026_godu.pdf",
+  "status": 200,
+  "finalUrl": "https://msu.tj/file/pk/pravila_priema_v_2026_godu.pdf",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://rtsu.tj/international_activity/informatsiya-dlya-abiturientov-inostrantsev/": {
+  "url": "https://rtsu.tj/international_activity/informatsiya-dlya-abiturientov-inostrantsev/",
+  "status": 200,
+  "finalUrl": "https://rtsu.tj/international_activity/informatsiya-dlya-abiturientov-inostrantsev/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ },
+ "https://rtsu.tj/abitur/commission/": {
+  "url": "https://rtsu.tj/abitur/commission/",
+  "status": 200,
+  "finalUrl": "https://rtsu.tj/abitur/commission/",
+  "ok": true,
+  "reason": null,
+  "checkedAt": "2026-11-14"
+ }
+}

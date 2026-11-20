@@ -1,0 +1,330 @@
+/* Plans (PricingTable): landing #pricing, /dashboard/plans and the onboarding paywall.
+   Pattern from Linear/Vercel pricing: one panel split into three equal columns by hairlines,
+   no boxes inside boxes, an icon per feature, Monthly / Yearly with the real saving.
+   No "most popular" plan. Brand tokens only (app/brand-tokens.css). */
+
+.pc-wrap {
+  display: grid;
+  justify-items: center;
+  gap: 28px;
+  width: 100%;
+}
+
+/* ---- Monthly / Yearly switch with a sliding pill ---- */
+.pc-toggle {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 4px;
+  border: 1px solid var(--cs-line);
+  border-radius: 999px;
+  background: var(--cs-surface-2);
+}
+.pc-toggle-pill {
+  position: absolute;
+  inset: 4px auto 4px 4px;
+  width: calc(50% - 4px);
+  border-radius: 999px;
+  background: var(--cs-surface);
+  box-shadow:
+    0 1px 2px rgb(15 23 42 / 8%),
+    0 0 0 1px var(--cs-line);
+  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.pc-toggle[data-on="yearly"] .pc-toggle-pill {
+  transform: translateX(100%);
+}
+.pc-toggle button {
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-width: 128px;
+  height: 44px;
+  padding: 0 18px;
+  border-radius: 999px;
+  color: var(--cs-muted);
+  font-size: 14px;
+  font-weight: 600;
+  transition: color var(--cs-dur-fast, 140ms);
+}
+.pc-toggle button[aria-checked="true"],
+.pc-toggle button:hover {
+  color: var(--cs-ink);
+}
+.pc-save {
+  padding: 2px 7px;
+  border-radius: 999px;
+  background: var(--cs-accent-soft);
+  color: var(--cs-accent-text);
+  font-size: 11.5px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ---- One panel, three columns ---- */
+.pc-panel {
+  display: grid;
+  width: 100%;
+  max-width: 1152px;
+  overflow: hidden;
+  border: 1px solid var(--cs-line);
+  border-radius: 24px;
+  background: var(--cs-surface);
+}
+.pc-panel.is-compact {
+  max-width: 1024px;
+}
+.pc-col {
+  --mx: 50%;
+  --my: 0%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 28px;
+  isolation: isolate;
+}
+.pc-col + .pc-col {
+  border-top: 1px solid var(--cs-line);
+}
+.is-compact .pc-col {
+  gap: 16px;
+  padding: 22px;
+}
+/* Same rows in every column (head, tagline, price, button, key number, list), so they align. */
+@media (min-width: 900px) {
+  .pc-panel {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-rows: repeat(6, auto);
+  }
+  .pc-col {
+    display: grid;
+    grid-row: span 6;
+    grid-template-rows: subgrid;
+    row-gap: 20px;
+  }
+  .is-compact .pc-col {
+    row-gap: 16px;
+  }
+  .pc-col + .pc-col {
+    border-top: 0;
+    border-left: 1px solid var(--cs-line);
+  }
+}
+/* Spotlight that follows the cursor (pricing.tsx). */
+.pc-col::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: radial-gradient(360px circle at var(--mx) var(--my), color-mix(in srgb, var(--cs-accent) 7%, transparent), transparent 70%);
+  opacity: 0;
+  transition: opacity var(--cs-dur, 220ms);
+}
+.pc-col:hover::before {
+  opacity: 1;
+}
+.pc-col.is-current {
+  box-shadow: inset 0 3px 0 var(--cs-accent);
+}
+
+/* ---- Head ---- */
+.pc-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.pc-head h3 {
+  font-family: var(--cs-font-display);
+  font-size: 19px;
+  font-weight: 650;
+  letter-spacing: -0.015em;
+}
+.pc-icon {
+  display: grid;
+  flex: none;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  border: 1px solid var(--cs-line);
+  border-radius: 10px;
+  background: var(--cs-surface-2);
+  color: var(--cs-ink);
+}
+.is-plus .pc-icon {
+  border-color: color-mix(in srgb, var(--cs-accent) 25%, var(--cs-line));
+  background: var(--cs-accent-soft);
+  color: var(--cs-accent-text);
+}
+.is-pro .pc-icon {
+  border-color: transparent;
+  background: var(--cs-accent);
+  color: var(--cs-on-accent, #fff);
+}
+.pc-icon svg {
+  width: 16px;
+  height: 16px;
+  stroke-width: 2;
+}
+.pc-tagline {
+  margin-top: -8px;
+  color: var(--cs-muted);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* ---- Price ---- */
+.pc-price {
+  display: grid;
+  gap: 6px;
+}
+.pc-price > p:first-child {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+}
+.pc-price strong {
+  font-family: var(--cs-font-display);
+  font-size: 48px;
+  font-weight: 650;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  font-variant-numeric: tabular-nums;
+}
+@media (prefers-reduced-motion: no-preference) {
+  /* Re-keyed on the billing switch, so the number settles in. */
+  .pc-price strong {
+    animation: pc-price-in 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+}
+@keyframes pc-price-in {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+}
+.pc-price span {
+  color: var(--cs-muted);
+  font-size: 15px;
+}
+.pc-bill {
+  color: var(--cs-muted);
+  font-size: 13px;
+  font-variant-numeric: tabular-nums;
+}
+.pc-bill s {
+  margin-right: 2px;
+  text-decoration-thickness: 1px;
+}
+.is-compact .pc-price strong {
+  font-size: 38px;
+}
+
+/* ---- Button ---- */
+.pc-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  height: 44px;
+  border: 1px solid var(--cs-line-strong, var(--cs-line));
+  border-radius: 999px;
+  background: var(--cs-surface);
+  color: var(--cs-ink);
+  font-size: 14px;
+  font-weight: 600;
+  transition:
+    background var(--cs-dur-fast, 140ms),
+    border-color var(--cs-dur-fast, 140ms),
+    color var(--cs-dur-fast, 140ms),
+    transform var(--cs-dur-fast, 140ms);
+}
+.pc-btn svg {
+  width: 16px;
+  height: 16px;
+  transition: transform var(--cs-dur-fast, 140ms);
+}
+.pc-btn:hover:not(:disabled) {
+  border-color: var(--cs-ink);
+  background: var(--cs-ink);
+  color: var(--cs-bg);
+}
+.pc-btn:hover:not(:disabled) svg {
+  transform: translateX(3px);
+}
+.pc-btn:active:not(:disabled) {
+  transform: scale(0.98);
+}
+.pc-btn:disabled {
+  color: var(--cs-muted);
+  cursor: default;
+}
+.is-current .pc-btn:disabled {
+  border-color: var(--cs-accent);
+  background: var(--cs-accent-soft);
+  color: var(--cs-accent-text);
+}
+
+/* ---- Key number (AI messages a day) ---- */
+.pc-key {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  padding-top: 20px;
+  border-top: 1px solid var(--cs-line);
+}
+.pc-key strong {
+  font-family: var(--cs-font-display);
+  font-size: 28px;
+  font-weight: 650;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  font-variant-numeric: tabular-nums;
+}
+.pc-key span {
+  color: var(--cs-muted);
+  font-size: 14px;
+}
+
+/* ---- Features: label + list with an icon per line ---- */
+.pc-features {
+  display: grid;
+  align-content: start;
+  gap: 14px;
+}
+.pc-inc {
+  color: var(--cs-muted);
+  font-size: 13px;
+  font-weight: 500;
+}
+.pc-features ul {
+  display: grid;
+  gap: 12px;
+}
+.pc-features li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 14px;
+  line-height: 1.45;
+}
+.pc-features li svg {
+  flex: none;
+  width: 16px;
+  height: 16px;
+  margin-top: 2px;
+  color: var(--cs-muted);
+  stroke-width: 1.8;
+}
+
+.pc-note {
+  max-width: 560px;
+  color: var(--cs-muted);
+  font-size: 13px;
+  line-height: 1.6;
+  text-align: center;
+}

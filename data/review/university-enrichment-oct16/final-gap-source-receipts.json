@@ -1,0 +1,2081 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-16",
+  "status": "candidates_require_review",
+  "receipts": [
+    {
+      "task": "009",
+      "university_id": "4b7862dc-7567-5f81-af58-c01144412a88",
+      "kind": "programmes",
+      "url": "https://www.ucl.ac.uk/study/prospective-students/undergraduate/courses",
+      "candidate_origin": "Exact public primary-source search or source link, pending receipt and review",
+      "retrieved_at": "2026-10-16T03:04:03.183782+00:00",
+      "status": "error",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "task": "036",
+      "university_id": "40dc3bce-f456-577e-9003-9c143d3b52bb",
+      "kind": "admissions",
+      "url": "https://global.sjtu.edu.cn/en/study-sjtu/prospective/degree-programs/387",
+      "candidate_origin": "Exact public primary-source search or source link, pending receipt and review",
+      "retrieved_at": "2026-10-16T03:04:03.184082+00:00",
+      "status": 200,
+      "final_url": "https://global.sjtu.edu.cn/en/study-sjtu/prospective/degree-programs/387",
+      "content_type": "text/html",
+      "title": "Study@SJTU - Shanghai Jiao Tong University",
+      "bytes": 181692,
+      "sha256": "6393ebfc9e3d0fc5e13c0d317c2939cbdddd022987073d05562a6d1b7f8af5b6",
+      "cache_file": "/var/folders/s7/l14g78kx35z66lhftvjc1qk80000gn/T/collegestat-university-enrichment-oct15/bade5ffb55efccfe93.html",
+      "youtube_ids_in_official_page": [],
+      "candidate_links": [
+        {
+          "url": "https://global.sjtu.edu.cn/en/study-sjtu/prospective/degree-programs/387",
+          "label": "\n                                                                                Students\n                                        \n                                    ",
+          "tag": "a"
+        },
+        {
+          "url": "https://global.sjtu.edu.cn/en/home-top/26",
+          "label": "Prospective Students",
+          "tag": "a"
+        },
+        {
+          "url": "https://global.sjtu.edu.cn/en/home-top/73",
+          "label": "Current Students",
+          "tag": "a"
+        },
+        {
+          "url": "https://global.sjtu.edu.cn/en/study-sjtu/prospective/degree-programs/387",
+          "label": "\n                                                                                \n                                                                                En\n                                        \n                                    ",
+          "tag": "a"
+        },
+        {
+          "url": "https://global.sjtu.edu.cn/en/study-sjtu/prospective",
+          "label": "\n                                                                                    Prospective International Students\n                                                                                ",
+          "tag": "a"
+        },
+        {
+          "url": "https://global.sjtu.edu.cn/en/study-sjtu/prospective/degree-programs/387",
+          "label": "Degree Programs",
+          "tag": "a"
+        },
+        {
+          "url": "https://global.sjtu.edu.cn/en/study-sjtu/prospective/non-degree-programs/281",
+          "label": "Non-Degree Programs",
+          "tag": "a"
+        },
+        {
+          "url": "https://global.sjtu.edu.cn/en/study-sjtu/current",
+          "label": "\n                                                                                    Current International Students\n                                                                                ",
+          "tag": "a"
+        },
+        {
+          "url": "https://global.sjtu.edu.cn/en/study-sjtu/current/administration-directory",
+          "label": "Administration Directory",
+          "tag": "a"
+        },
+        {
+          "url": "https://global.sjtu.edu.cn/en/news-events/meet-sjtu/students-campus",
+          "label": "Students & Campus",
+          "tag": "a"
+        },
+        {
+          "url": "https://global.sjtu.edu.cn/en/about-us/leadership-governance/university-department",
+          "label": "University Administration",
+          "tag": "a"
+        },
+        {
+          "url": "https://global.sjtu.edu.cn/en/study-sjtu/prospective",
+          "label": "Prospective International Students",
+          "tag": "a"
+        },
+        {
+          "url": "https://global.sjtu.edu.cn/en/study-sjtu/prospective",
+          "label": "Prospective International Students ",
+          "tag": "a"
+        },
+        {
+          "url": "https://global.sjtu.edu.cn/en/study-sjtu/prospective/degree-programs/387",
+          "label": "Degree Programs",
+          "tag": "a"
+        },
+        {
+          "url": "https://global.sjtu.edu.cn/en/study-sjtu/prospective/non-degree-programs/281",
+          "label": "Non-Degree Programs",
+          "tag": "a"
+        },
+        {
+          "url": "https://global.sjtu.edu.cn/en/study-sjtu/current",
+          "label": "Current International Students",
+          "tag": "a"
+        },
+        {
+          "url": "https://global.sjtu.edu.cn/en/study-sjtu/current",
+          "label": "Current International Students ",
+          "tag": "a"
+        },
+        {
+          "url": "https://global.sjtu.edu.cn/en/study-sjtu/current/administration-directory",
+          "label": "Administration Directory",
+          "tag": "a"
+        },
+        {
+          "url": "https://global.sjtu.edu.cn/en/news-events/meet-sjtu/students-campus",
+          "label": "Students & Campus",
+          "tag": "a"
+        },
+        {
+          "url": "https://global.sjtu.edu.cn/en/about-us/leadership-governance/university-department",
+          "label": "University Administration",
+          "tag": "a"
+        },
+        {
+          "url": "https://global.sjtu.edu.cn/en/study-sjtu/prospective",
+          "label": "Prospective International Students",
+          "tag": "a"
+        },
+        {
+          "url": "https://global.sjtu.edu.cn/en/study-sjtu/prospective/degree-programs/387",
+          "label": "Degree Programs",
+          "tag": "a"
+        },
+        {
+          "url": "https://global.sjtu.edu.cn/en/study-sjtu/prospective/degree-programs/825",
+          "label": "School of Medicine",
+          "tag": "a"
+        },
+        {
+          "url": "https://global.sjtu.edu.cn/en/study-sjtu/prospective/degree-programs/387",
+          "label": "Chinese-Taught",
+          "tag": "a"
+        },
+        {
+          "url": "https://global.sjtu.edu.cn/en/study-sjtu/prospective/degree-programs/278",
+          "label": "English-Taught (Engineering Cluster)",
+          "tag": "a"
+        },
+        {
+          "url": "https://global.sjtu.edu.cn/en/study-sjtu/prospective/degree-programs/778",
+          "label": "English-Taught (Civil Engineering)",
+          "tag": "a"
+        },
+        {
+          "url": "https://global.sjtu.edu.cn/en/study-sjtu/prospective/degree-programs/794",
+          "label": "English-Taught (Sustainable Energy, Health Science and Technology)",
+          "tag": "a"
+        },
+        {
+          "url": "https://global.sjtu.edu.cn/en/study-sjtu/prospective/degree-programs/279",
+          "label": "French-Taught (Engineering Cluster)",
+          "tag": "a"
+        },
+        {
+          "url": "https://global.sjtu.edu.cn/en/study-sjtu/prospective/degree-programs/267",
+          "label": "Master's Degree",
+          "tag": "a"
+        },
+        {
+          "url": "https://global.sjtu.edu.cn/en/study-sjtu/prospective/degree-programs/270",
+          "label": "Ph.D",
+          "tag": "a"
+        },
+        {
+          "url": "https://global.sjtu.edu.cn/en/study-sjtu/prospective/non-degree-programs/281",
+          "label": "Semester Exchange Program",
+          "tag": "a"
+        },
+        {
+          "url": "https://global.sjtu.edu.cn/en/study-sjtu/prospective/non-degree-programs/282",
+          "label": "Visiting Student Program",
+          "tag": "a"
+        },
+        {
+          "url": "https://global.sjtu.edu.cn/en/study-sjtu/prospective/non-degree-programs/522",
+          "label": "SJTU Global Summer School, Winter School",
+          "tag": "a"
+        },
+        {
+          "url": "https://global.sjtu.edu.cn/en/summer-program/",
+          "label": "SJTU Summer Research Internship Program",
+          "tag": "a"
+        },
+        {
+          "url": "https://ichinese.sjtu.edu.cn/en/programs?page_id=3",
+          "label": "\n                                                    Chinese Language Programs\n                                                    \n                                                                                                    ",
+          "tag": "a"
+        },
+        {
+          "url": "https://liuxue.sjtu.edu.cn/pre-university/",
+          "label": "\n                                                    Pre-University Programs\n                                                    \n                                                                                                    ",
+          "tag": "a"
+        },
+        {
+          "url": "https://global.sjtu.edu.cn/en/study-sjtu/prospective/degree-programs/387",
+          "label": "\n                                                        Undergraduate Programs \n                                                    ",
+          "tag": "a"
+        },
+        {
+          "url": "https://global.sjtu.edu.cn/en/study-sjtu/prospective/degree-programs/798",
+          "label": "\n                                                        International Chinese Language Teachers Scholarship \n                                                    ",
+          "tag": "a"
+        },
+        {
+          "url": "https://isc.sjtu.edu.cn/kindeditor/Upload/file/20251124/20251124165651_6651.pdf",
+          "label": "List of 2026 SJTU Undergraduate Program in Chinese for International Students",
+          "tag": "a"
+        },
+        {
+          "url": "https://isc.sjtu.edu.cn/kindeditor/Upload/file/20251124/20251124165651_6651.pdf",
+          "label": "List of 2026 SJTU Undergraduate Program in Chinese for International Students",
+          "tag": "a"
+        },
+        {
+          "url": "https://isc.sjtu.edu.cn/kindeditor/Upload/file/20241112/20241112110151_6034.pdf",
+          "label": "Application Form for One Year of Chinese Language Courses",
+          "tag": "a"
+        },
+        {
+          "url": "https://isc.sjtu.edu.cn/kindeditor/Upload/file/20251124/20251124165651_6651.pdf",
+          "label": "List of 2026 SJTU Undergraduate Program in Chinese for International Students",
+          "tag": "a"
+        },
+        {
+          "url": "https://gaj.sh.gov.cn/crj/homeZ",
+          "label": "Shanghai Exit-Entry Administration",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.youtube.com/@ShanghaiJiaoTongUniversity",
+          "label": "\n                                        \n                                    ",
+          "tag": "a"
+        },
+        {
+          "url": "https://global.sjtu.edu.cn/en/study-sjtu/prospective/degree-programs/387",
+          "label": "",
+          "tag": "a"
+        }
+      ]
+    },
+    {
+      "task": "042",
+      "university_id": "b5f25065-0a86-517e-91f0-ff6bbe8c81d3",
+      "kind": "programmes",
+      "url": "https://uic.yonsei.ac.kr/main/major.php?mid=m02_02_03",
+      "candidate_origin": "Exact public primary-source search or source link, pending receipt and review",
+      "retrieved_at": "2026-10-16T03:04:03.184279+00:00",
+      "status": 200,
+      "final_url": "https://uic.yonsei.ac.kr/undergraduate.php?mid=m02_01_03",
+      "content_type": "text/html",
+      "title": "Underwood International College, Yonsei University | 연세대학교 언더우드국제대학",
+      "bytes": 68075,
+      "sha256": "3687c1a0199b58840a7f895fe52f6c8b523b14775dc5e8568e032106e03bb82b",
+      "cache_file": "/var/folders/s7/l14g78kx35z66lhftvjc1qk80000gn/T/collegestat-university-enrichment-oct15/51ba4ba34c243671a5.html",
+      "youtube_ids_in_official_page": [],
+      "candidate_links": [
+        {
+          "url": "https://uic.yonsei.ac.kr/admission.php?mid=m04_02_02",
+          "label": "APPLY",
+          "tag": "a"
+        },
+        {
+          "url": "https://uic.yonsei.ac.kr/undergraduate.php?mid=m02_01_02",
+          "label": "Economics (ECON)",
+          "tag": "a"
+        },
+        {
+          "url": "https://uic.yonsei.ac.kr/undergraduate.php?mid=m02_08_01",
+          "label": "Exclusive Programs ",
+          "tag": "a"
+        },
+        {
+          "url": "https://uic.yonsei.ac.kr/undergraduate.php?mid=m02_08_02",
+          "label": "Global/STEM Career Tour",
+          "tag": "a"
+        },
+        {
+          "url": "https://uic.yonsei.ac.kr/undergraduate.php?mid=m02_08_08",
+          "label": "Exchange Program",
+          "tag": "a"
+        },
+        {
+          "url": "https://uic.yonsei.ac.kr/admission.php?mid=m04_01_01",
+          "label": "ADMISSIONS",
+          "tag": "a"
+        },
+        {
+          "url": "https://uic.yonsei.ac.kr/admission.php?mid=m04_01_01",
+          "label": "Why UIC ",
+          "tag": "a"
+        },
+        {
+          "url": "https://uic.yonsei.ac.kr/admission.php?mid=m04_01_01",
+          "label": "The UIC Advantage",
+          "tag": "a"
+        },
+        {
+          "url": "https://uic.yonsei.ac.kr/admission.php?mid=m04_01_02",
+          "label": "Academic Life at UIC",
+          "tag": "a"
+        },
+        {
+          "url": "https://uic.yonsei.ac.kr/admission.php?mid=m04_01_03",
+          "label": "UIC Course Sampler",
+          "tag": "a"
+        },
+        {
+          "url": "https://uic.yonsei.ac.kr/admission.php?mid=m04_01_01",
+          "label": "How to Apply ",
+          "tag": "a"
+        },
+        {
+          "url": "https://uic.yonsei.ac.kr/admission.php?mid=m04_02_01",
+          "label": "Overview",
+          "tag": "a"
+        },
+        {
+          "url": "https://uic.yonsei.ac.kr/admission.php?mid=m04_02_02",
+          "label": "First Year Students (International)",
+          "tag": "a"
+        },
+        {
+          "url": "https://uic.yonsei.ac.kr/admission.php?mid=m04_02_03",
+          "label": "Transfer Students (International)",
+          "tag": "a"
+        },
+        {
+          "url": "https://uic.yonsei.ac.kr/admission.php?mid=m04_02_04",
+          "label": "Korean Students",
+          "tag": "a"
+        },
+        {
+          "url": "https://uic.yonsei.ac.kr/admission.php?mid=m04_03",
+          "label": "Tuition fee & Scholarship",
+          "tag": "a"
+        },
+        {
+          "url": "https://gosc.yonsei.ac.kr/gosc/gettingstarted/overview01.do",
+          "label": "Information for Intl' Admittees ",
+          "tag": "a"
+        },
+        {
+          "url": "https://uic.yonsei.ac.kr/admission.php?mid=m04_05",
+          "label": "FAQ",
+          "tag": "a"
+        },
+        {
+          "url": "https://uic.yonsei.ac.kr/student.php?mid=m05_01",
+          "label": "STUDENT LIFE",
+          "tag": "a"
+        },
+        {
+          "url": "https://uic.yonsei.ac.kr/student.php?mid=m05_01",
+          "label": "UIC Student Council",
+          "tag": "a"
+        },
+        {
+          "url": "https://uic.yonsei.ac.kr/student.php?mid=m05_02",
+          "label": "Student Clubs",
+          "tag": "a"
+        },
+        {
+          "url": "https://uic.yonsei.ac.kr/student.php?mid=m05_03",
+          "label": "Student Ambassadors(SAM)",
+          "tag": "a"
+        },
+        {
+          "url": "https://uic.yonsei.ac.kr/student.php?mid=m05_05_01",
+          "label": "Health and Counseling ",
+          "tag": "a"
+        },
+        {
+          "url": "https://uic.yonsei.ac.kr/student.php?mid=m05_05_01",
+          "label": "Student Health Aid Association",
+          "tag": "a"
+        },
+        {
+          "url": "https://uic.yonsei.ac.kr/student.php?mid=m05_05_02",
+          "label": "Health Service Center",
+          "tag": "a"
+        },
+        {
+          "url": "https://uic.yonsei.ac.kr/student.php?mid=m05_05_03",
+          "label": "Counseling Center",
+          "tag": "a"
+        },
+        {
+          "url": "https://uic.yonsei.ac.kr/news.php?mid=m07_01_03",
+          "label": "Student Services",
+          "tag": "a"
+        },
+        {
+          "url": "https://uic.yonsei.ac.kr/undergraduate.php?mid=m02_01_03",
+          "label": "ECONECONOMICS",
+          "tag": "a"
+        },
+        {
+          "url": "https://uic.yonsei.ac.kr/undergraduate.php?mid=m02_08_01",
+          "label": "Exclusive Programs",
+          "tag": "a"
+        },
+        {
+          "url": "https://uic.yonsei.ac.kr/admission.php?mid=m04_01_01",
+          "label": "ADMISSIONS",
+          "tag": "a"
+        },
+        {
+          "url": "https://uic.yonsei.ac.kr/admission.php?mid=m04_01_01",
+          "label": "Why UIC",
+          "tag": "a"
+        },
+        {
+          "url": "https://uic.yonsei.ac.kr/admission.php?mid=m04_01_01",
+          "label": "How to Apply",
+          "tag": "a"
+        },
+        {
+          "url": "https://uic.yonsei.ac.kr/admission.php?mid=m04_03",
+          "label": "Tuition fee & Scholarship",
+          "tag": "a"
+        },
+        {
+          "url": "https://gosc.yonsei.ac.kr/gosc/gettingstarted/overview01.do",
+          "label": "Information for Intl' Admittees",
+          "tag": "a"
+        },
+        {
+          "url": "https://uic.yonsei.ac.kr/admission.php?mid=m04_05",
+          "label": "FAQ",
+          "tag": "a"
+        },
+        {
+          "url": "https://uic.yonsei.ac.kr/student.php?mid=m05_01",
+          "label": "STUDENT LIFE",
+          "tag": "a"
+        },
+        {
+          "url": "https://uic.yonsei.ac.kr/student.php?mid=m05_01",
+          "label": "UIC Student Council",
+          "tag": "a"
+        },
+        {
+          "url": "https://uic.yonsei.ac.kr/student.php?mid=m05_02",
+          "label": "Student Clubs",
+          "tag": "a"
+        },
+        {
+          "url": "https://uic.yonsei.ac.kr/student.php?mid=m05_03",
+          "label": "Student Ambassadors(SAM)",
+          "tag": "a"
+        },
+        {
+          "url": "https://uic.yonsei.ac.kr/student.php?mid=m05_05_01",
+          "label": "Health and Counseling",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.youtube.com/@uicyonsei",
+          "label": "",
+          "tag": "a"
+        }
+      ]
+    },
+    {
+      "task": "058",
+      "university_id": "cc300fc2-3770-5383-a663-b1ec31311b4d",
+      "kind": "programmes",
+      "url": "https://bulletins.nyu.edu/undergraduate/",
+      "candidate_origin": "Exact public primary-source search or source link, pending receipt and review",
+      "retrieved_at": "2026-10-16T03:04:03.184409+00:00",
+      "status": 200,
+      "final_url": "https://bulletins.nyu.edu/undergraduate/",
+      "content_type": "text/html",
+      "title": "Undergraduate | NYU Bulletins",
+      "bytes": 16913,
+      "sha256": "10fdee10c5363ac9b3de1fbeb9eb9271410fd6e7cf126e2c1c05cbca58598fb7",
+      "cache_file": "/var/folders/s7/l14g78kx35z66lhftvjc1qk80000gn/T/collegestat-university-enrichment-oct15/21f2c939056340bf28.html",
+      "youtube_ids_in_official_page": [],
+      "candidate_links": [
+        {
+          "url": "https://bulletins.nyu.edu/programs/",
+          "label": "Programs",
+          "tag": "a"
+        },
+        {
+          "url": "https://bulletins.nyu.edu/courses/",
+          "label": "Courses A-Z",
+          "tag": "a"
+        },
+        {
+          "url": "https://bulletins.nyu.edu/programs/",
+          "label": "Programs",
+          "tag": "a"
+        },
+        {
+          "url": "https://bulletins.nyu.edu/courses/",
+          "label": "Courses",
+          "tag": "a"
+        }
+      ]
+    },
+    {
+      "task": "071",
+      "university_id": "bc0bcefc-cf3b-5fc7-bb41-76470ec9ff59",
+      "kind": "programmes",
+      "url": "https://www.lunduniversity.lu.se/study/courses-programmes",
+      "candidate_origin": "Exact public primary-source search or source link, pending receipt and review",
+      "retrieved_at": "2026-10-16T03:04:03.184540+00:00",
+      "status": 200,
+      "final_url": "https://www.lunduniversity.lu.se/study/courses-programmes",
+      "content_type": "text/html",
+      "title": "Search programmes and courses | Lund University",
+      "bytes": 131578,
+      "sha256": "bf5e8022601e28643bfb2a824b8150edf00969f10c6996a579e8d6f740d8af76",
+      "cache_file": "/var/folders/s7/l14g78kx35z66lhftvjc1qk80000gn/T/collegestat-university-enrichment-oct15/0b199b88538c635b4c.html",
+      "youtube_ids_in_official_page": [],
+      "candidate_links": [
+        {
+          "url": "https://www.lunduniversity.lu.se/study/courses-programmes#main-content",
+          "label": "\n        Skip to main content\n      ",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.lunduniversity.lu.se/study/courses-programmes#main-content",
+          "label": "\n        Skip to main content\n      ",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.lunduniversity.lu.se/current-students-0",
+          "label": "\n          \n\n    \n\n  \n  \n\n    \n        Current students\n      \n",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.lunduniversity.lu.se/current-students/new-students",
+          "label": "\n      \n        New students\n      \n",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.lunduniversity.lu.se/current-students/student-services-and-support",
+          "label": "\n      \n        Student services and support\n      \n",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.lunduniversity.lu.se/current-students/if-something-happens",
+          "label": "\n      \n        If something happens\n      \n",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.lunduniversity.lu.se/current-students/get-involved-student-life",
+          "label": "\n      \n        Get involved in student life\n      \n",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.lunduniversity.lu.se/current-students/international-opportunities",
+          "label": "\n      \n        International opportunities\n      \n",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.lunduniversity.lu.se/current-students/financial-matters",
+          "label": "\n      \n        Financial matters\n      \n",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.lunduniversity.lu.se/current-students/healthcare",
+          "label": "\n      \n        Healthcare\n      \n",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.lunduniversity.lu.se/current-students/student-rights-and-responsibilities",
+          "label": "\n      \n        Rights and responsibilities\n      \n",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.lunduniversity.lu.se/current-students/when-leaving-lund-university",
+          "label": "\n      \n        When leaving Lund University\n      \n",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.lunduniversity.lu.se/study/admission-degree-studies",
+          "label": "\n      \n        Admission to degree studies\n      \n",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.lunduniversity.lu.se/student-life",
+          "label": "\n      \n        Student life\n      \n",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.lunduniversity.lu.se/student-life/lund-student-city",
+          "label": "\n      \n        Lund as a student city\n      \n",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.lunduniversity.lu.se/student-life/before-you-arrive",
+          "label": "\n      \n        Before you arrive\n      \n",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.lunduniversity.lu.se/student-life/housing",
+          "label": "\n      \n        Housing\n      \n",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.lunduniversity.lu.se/student-life/student-organisations",
+          "label": "\n      \n        Student organisations\n      \n",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.lunduniversity.lu.se/student-life/sport-and-exercise",
+          "label": "\n      \n        Sport and exercise\n      \n",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.lunduniversity.lu.se/student-life/cultural-activities",
+          "label": "\n      \n        Cultural activities\n      \n",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.lunduniversity.lu.se/student-life/faith-and-spirituality",
+          "label": "\n      \n        Faith and spirituality\n      \n",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.lunduniversity.lu.se/student-life/student-services",
+          "label": "\n      \n        Student services\n      \n",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.lunduniversity.lu.se/student-life",
+          "label": "\n      \n        Student life\n      \n",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.lunduniversity.lu.se/current-students-0",
+          "label": "\n      \n        Current students\n      \n",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.lunduniversity.lu.se/study/courses-programmes#hits-list-result",
+          "label": "\n    Skip to search result\n\n  ",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.lunduniversity.lu.se/study/courses-programmes/%2A/educations/1/undefined",
+          "label": "\n    Degree programmes (1152)\n  ",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.lunduniversity.lu.se/study/data-analytics-and-business-economics-masters-programme-EAGDA",
+          "label": "\n            \n              Data Analytics and Business Economics - Master's Programme\n          ",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.lunduniversity.lu.se/study/disaster-risk-management-and-climate-change-adaptation-masters-programme-TAKAK",
+          "label": "\n            \n              Disaster Risk Management and Climate Change Adaptation - Master's Programme\n          ",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.lunduniversity.lu.se/study/international-development-and-management-master-of-science-programme-SAMDE",
+          "label": "\n            \n              International Development and Management - Master of Science programme\n          ",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.lunduniversity.lu.se/study/performing-arts-as-critical-practice-master-programme-KASKP",
+          "label": "\n            \n              Performing Arts as Critical Practice - Master Programme\n          ",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.lunduniversity.lu.se/study/management-masters-programme-one-year-EAGMA",
+          "label": "\n            \n              Management - Master's Programme (One Year)\n          ",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.lunduniversity.lu.se/study/fine-arts-master-programme-KAFKO",
+          "label": "\n            \n              Fine Arts - Master Programme\n          ",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.lunduniversity.lu.se/study/economics-masters-programme-two-years-EAECO",
+          "label": "\n            \n              Economics - Master's Programme (Two Years)\n          ",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.lunduniversity.lu.se/study/strategic-communication-master-of-science-programme-SASKO",
+          "label": "\n            \n              Strategic Communication - Master of Science programme\n          ",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.lunduniversity.lu.se/study/international-marketing-brand-management-masters-programme-one-year-EAGIB",
+          "label": "\n            \n              International Marketing & Brand Management - Master's Programme (One Year)\n          ",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.lunduniversity.lu.se/study/church-music-bachelors-programme-KGKYM",
+          "label": "\n            \n              Church Music - Bachelor's Programme\n          ",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.lunduniversity.lu.se/study/geology-master-programme-NAGEL",
+          "label": "\n            \n              Geology - Master Programme\n          ",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.lunduniversity.lu.se/study/international-strategic-management-masters-programme-one-year-EAGIS",
+          "label": "\n            \n              International Strategic Management - Master's Programme (One Year)\n          ",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.lunduniversity.lu.se/study/biomedical-engineering-masters-programme-TABMT",
+          "label": "\n            \n              Biomedical Engineering - Master's Programme\n          ",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.lunduniversity.lu.se/study/public-health-masters-programme-VAPHE",
+          "label": "\n            \n              Public Health - Master's Programme\n          ",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.lunduniversity.lu.se/study/master-of-science-programme-in-human-geography-SASGE",
+          "label": "\n            \n              Master of Science Programme in Human Geography\n          ",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.lunduniversity.lu.se/study/economy-and-society-bachelors-programme-EGESO",
+          "label": "\n            \n              Economy and Society - Bachelor's Programme\n          ",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.lunduniversity.lu.se/study/industrial-design-masters-programme-TAIDE",
+          "label": "\n            \n              Industrial Design - Master's Programme\n          ",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.lunduniversity.lu.se/study/machine-learning-systems-and-control-masters-programme-TAMSR",
+          "label": "\n            \n              Machine Learning, Systems and Control - Master's Programme\n          ",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.lunduniversity.lu.se/study/food-technology-and-nutrition-masters-programme-TALIV",
+          "label": "\n            \n              Food Technology and Nutrition - Master's Programme\n          ",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.lunduniversity.lu.se/study/sociology-master-of-science-programme-SASCO",
+          "label": "\n            \n              Sociology - Master of Science programme\n          ",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.lunduniversity.lu.se/study/courses-programmes/%2A/educations/1/undefined",
+          "label": "\n            \n             First\n\n          ",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.lunduniversity.lu.se/study/courses-programmes/%2A/educations/2/undefined",
+          "label": "2",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.lunduniversity.lu.se/study/courses-programmes/%2A/educations/58/undefined",
+          "label": "\n            Last\n             \n          ",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.youtube.com/user/LundUniversity",
+          "label": "\n              \n\n\n\n\n\n            YouTube\n          ",
+          "tag": "a"
+        }
+      ]
+    },
+    {
+      "task": "084",
+      "university_id": "69452803-31fe-56a8-b2b4-c2a682cf4214",
+      "kind": "programmes",
+      "url": "https://prospectus.webspace.durham.ac.uk/my-prospectus/",
+      "candidate_origin": "Exact public primary-source search or source link, pending receipt and review",
+      "retrieved_at": "2026-10-16T03:04:03.184656+00:00",
+      "status": 200,
+      "final_url": "https://prospectus.webspace.durham.ac.uk/my-prospectus/",
+      "content_type": "text/html",
+      "title": "My Digital Prospectus – Durham University – My Digital Prospectus",
+      "bytes": 465904,
+      "sha256": "f6b33f8e0604055233b87f8825584913cd88a3aca0fdb834c5dc34d9eebc9260",
+      "cache_file": "/var/folders/s7/l14g78kx35z66lhftvjc1qk80000gn/T/collegestat-university-enrichment-oct15/def278403897bf31b3.html",
+      "youtube_ids_in_official_page": [],
+      "candidate_links": [
+        {
+          "url": "https://prospectus.webspace.durham.ac.uk/content-pages/dsu/",
+          "label": "Durham Students’ Union",
+          "tag": "a"
+        },
+        {
+          "url": "https://prospectus.webspace.durham.ac.uk/content-pages/wellbeing/",
+          "label": "Student Support",
+          "tag": "a"
+        },
+        {
+          "url": "https://prospectus.webspace.durham.ac.uk/my-prospectus/",
+          "label": "\n\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\tFeedback\n\t\t\t\t\t\n\t\t\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://prospectus.webspace.durham.ac.uk/my-prospectus/",
+          "label": "Student Experience",
+          "tag": "a"
+        }
+      ]
+    },
+    {
+      "task": "088",
+      "university_id": "0aeeb18a-3be5-5bb9-9875-0bf4ce24d102",
+      "kind": "admissions",
+      "url": "https://hwxy.nju.edu.cn/English/StudyatNJU/Admissions/BachelorsPrograms/index.html",
+      "candidate_origin": "Exact public primary-source search or source link, pending receipt and review",
+      "retrieved_at": "2026-10-16T03:04:03.828434+00:00",
+      "status": 200,
+      "final_url": "https://hwxy.nju.edu.cn/English/StudyatNJU/Admissions/BachelorsPrograms/index.html",
+      "content_type": "text/html",
+      "title": "Bachelor’s Programs",
+      "bytes": 43942,
+      "sha256": "aef8f2b6536b3e3f2daf916d725328f6b858a49c0ea1472a537b8ede69638625",
+      "cache_file": "/var/folders/s7/l14g78kx35z66lhftvjc1qk80000gn/T/collegestat-university-enrichment-oct15/e63633625f864e715d.html",
+      "youtube_ids_in_official_page": [],
+      "candidate_links": [
+        {
+          "url": "https://hwxy.nju.edu.cn/English/StudyatNJU/Admissions/index.html",
+          "label": "Admissions",
+          "tag": "a"
+        },
+        {
+          "url": "https://hwxy.nju.edu.cn/English/StudyatNJU/Admissions/ChineseLanguageTraining/index.html",
+          "label": "Chinese Language Training",
+          "tag": "a"
+        },
+        {
+          "url": "https://hwxy.nju.edu.cn/English/StudyatNJU/Admissions/BachelorsPrograms/index.html",
+          "label": "Bachelor’s Programs",
+          "tag": "a"
+        },
+        {
+          "url": "https://hwxy.nju.edu.cn/English/StudyatNJU/Admissions/MastersPrograms/index.html",
+          "label": "Master’s Programs",
+          "tag": "a"
+        },
+        {
+          "url": "https://hwxy.nju.edu.cn/English/StudyatNJU/Admissions/DoctoratePrograms/index.html",
+          "label": "Doctorate Programs",
+          "tag": "a"
+        },
+        {
+          "url": "https://hwxy.nju.edu.cn/English/StudyatNJU/Admissions/DegreeProgramsTaughtinEnglish/index.html",
+          "label": "Degree Programs Taught in English",
+          "tag": "a"
+        },
+        {
+          "url": "https://hwxy.nju.edu.cn/English/StudyatNJU/Admissions/FeaturedPrograms/index.html",
+          "label": "Featured Programs",
+          "tag": "a"
+        },
+        {
+          "url": "https://hwxy.nju.edu.cn/English/StudyatNJU/Costs/RegistrationFee/index.html",
+          "label": "Registration Fee",
+          "tag": "a"
+        },
+        {
+          "url": "https://hwxy.nju.edu.cn/English/StudyatNJU/Costs/Tuition/index.html",
+          "label": "Tuition",
+          "tag": "a"
+        },
+        {
+          "url": "https://hwxy.nju.edu.cn/English/StudyatNJU/Scholarships/ConfuciusChinaStudiesProgram/index.html",
+          "label": "Confucius China Studies Program",
+          "tag": "a"
+        },
+        {
+          "url": "https://hwxy.nju.edu.cn/English/StudyatNJU/Admissions/index.html",
+          "label": "Admissions",
+          "tag": "a"
+        },
+        {
+          "url": "https://hwxy.nju.edu.cn/English/StudyatNJU/Admissions/ChineseLanguageTraining/index.html",
+          "label": "Chinese Language Training",
+          "tag": "a"
+        },
+        {
+          "url": "https://hwxy.nju.edu.cn/English/StudyatNJU/Admissions/ChineseLanguageTraining/LongtermTrainings/index.html",
+          "label": "Long-term Trainings",
+          "tag": "a"
+        },
+        {
+          "url": "https://hwxy.nju.edu.cn/English/StudyatNJU/Admissions/ChineseLanguageTraining/ShorttermSessions/index.html",
+          "label": "Short-term Sessions",
+          "tag": "a"
+        },
+        {
+          "url": "https://hwxy.nju.edu.cn/English/StudyatNJU/Admissions/BachelorsPrograms/index.html",
+          "label": "Bachelor’s Programs",
+          "tag": "a"
+        },
+        {
+          "url": "https://hwxy.nju.edu.cn/English/StudyatNJU/Admissions/MastersPrograms/index.html",
+          "label": "Master’s Programs",
+          "tag": "a"
+        },
+        {
+          "url": "https://hwxy.nju.edu.cn/English/StudyatNJU/Admissions/DoctoratePrograms/index.html",
+          "label": "Doctorate Programs",
+          "tag": "a"
+        },
+        {
+          "url": "https://hwxy.nju.edu.cn/English/StudyatNJU/Admissions/DegreeProgramsTaughtinEnglish/index.html",
+          "label": "Degree Programs Taught in English",
+          "tag": "a"
+        },
+        {
+          "url": "https://hwxy.nju.edu.cn/English/StudyatNJU/Admissions/FeaturedPrograms/index.html",
+          "label": "Featured Programs",
+          "tag": "a"
+        },
+        {
+          "url": "https://hwxy.nju.edu.cn/English/StudyatNJU/Costs/RegistrationFee/index.html",
+          "label": "Registration Fee",
+          "tag": "a"
+        },
+        {
+          "url": "https://hwxy.nju.edu.cn/English/StudyatNJU/Costs/Tuition/index.html",
+          "label": "Tuition",
+          "tag": "a"
+        },
+        {
+          "url": "https://hwxy.nju.edu.cn/English/StudyatNJU/Scholarships/ConfuciusChinaStudiesProgram/index.html",
+          "label": "Confucius China Studies Program",
+          "tag": "a"
+        },
+        {
+          "url": "https://hwxy.nju.edu.cn/English/StudyatNJU/Admissions/BachelorsPrograms/index.html",
+          "label": "Bachelor’s Programs",
+          "tag": "a"
+        },
+        {
+          "url": "https://hwxy.nju.edu.cn/English/StudyatNJU/Admissions/index.html",
+          "label": "\n                            Admissions\n                        ",
+          "tag": "a"
+        },
+        {
+          "url": "https://hwxy.nju.edu.cn/English/StudyatNJU/Admissions/ChineseLanguageTraining/index.html",
+          "label": "\n                                    Chinese Language Training\n                                ",
+          "tag": "a"
+        },
+        {
+          "url": "https://hwxy.nju.edu.cn/English/StudyatNJU/Admissions/BachelorsPrograms/index.html",
+          "label": "\n                                    Bachelor’s Programs\n                                ",
+          "tag": "a"
+        },
+        {
+          "url": "https://hwxy.nju.edu.cn/English/StudyatNJU/Admissions/MastersPrograms/index.html",
+          "label": "\n                                    Master’s Programs\n                                ",
+          "tag": "a"
+        },
+        {
+          "url": "https://hwxy.nju.edu.cn/English/StudyatNJU/Admissions/DoctoratePrograms/index.html",
+          "label": "\n                                    Doctorate Programs\n                                ",
+          "tag": "a"
+        },
+        {
+          "url": "https://hwxy.nju.edu.cn/English/StudyatNJU/Admissions/DegreeProgramsTaughtinEnglish/index.html",
+          "label": "\n                                    Degree Programs Taught in English\n                                ",
+          "tag": "a"
+        },
+        {
+          "url": "https://hwxy.nju.edu.cn/English/StudyatNJU/Admissions/FeaturedPrograms/index.html",
+          "label": "\n                                    Featured Programs\n                                ",
+          "tag": "a"
+        }
+      ]
+    },
+    {
+      "task": "089",
+      "university_id": "e2e9494c-968c-55f4-8889-2ec1ac65fbdd",
+      "kind": "programmes",
+      "url": "https://www.ku.dk/studies/masters",
+      "candidate_origin": "Exact public primary-source search or source link, pending receipt and review",
+      "retrieved_at": "2026-10-16T03:04:04.712944+00:00",
+      "status": 200,
+      "final_url": "https://www.ku.dk/studies/masters",
+      "content_type": "text/html",
+      "title": "Master's degree programmes - University of Copenhagen",
+      "bytes": 149607,
+      "sha256": "8890176ed0e974c1be060bcc422b4e9ae25bf841474c4f3080e3f41aa3190cfa",
+      "cache_file": "/var/folders/s7/l14g78kx35z66lhftvjc1qk80000gn/T/collegestat-university-enrichment-oct15/7118f22d9200dafed6.html",
+      "youtube_ids_in_official_page": [],
+      "candidate_links": [
+        {
+          "url": "https://www.ku.dk/studies/bachelor",
+          "label": "Bachelor's degree programmes",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.ku.dk/studies/masters",
+          "label": "Master's degree programmes",
+          "tag": "a"
+        },
+        {
+          "url": "https://continuing-education.ku.dk/course/",
+          "label": "Courses",
+          "tag": "a"
+        },
+        {
+          "url": "https://continuing-education.ku.dk/programmes/",
+          "label": "Programmes",
+          "tag": "a"
+        },
+        {
+          "url": "https://continuing-education.ku.dk/customised-courses/",
+          "label": "Customised courses",
+          "tag": "a"
+        },
+        {
+          "url": "https://phd.ku.dk/english/",
+          "label": "PhD programmes",
+          "tag": "a"
+        },
+        {
+          "url": "https://phd.ku.dk/english/the-phd-programme/",
+          "label": "The PhD process",
+          "tag": "a"
+        },
+        {
+          "url": "https://innovation.ku.dk/english/for-students/",
+          "label": "For students",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.ku.dk/studies/bachelor/all-programmes",
+          "label": "\n                            Find all programmes\n                        ",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.ku.dk/studies/masters/all-programmes",
+          "label": "\n                            Find all programmes\n                        ",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.ku.dk/studies/masters/application-and-admission/new-opportunities-for-masters-degrees",
+          "label": "\n                            New opportunities for master's degrees\n                        ",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.ku.dk/studies/admission",
+          "label": "Admission",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.ku.dk/studies/admission/bachelor",
+          "label": "\n                            Bachelor: Apply for admission\n                        ",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.ku.dk/studies/admission/masters",
+          "label": "\n                            Master's: Apply for admission\n                        ",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.ku.dk/studies/admission/statistics-and-figures",
+          "label": "\n                            Statistics and figures\n                        ",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.ku.dk/studies/admission/important-dates-and-deadlines",
+          "label": "\n                            Important dates and deadlines\n                        ",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.ku.dk/studies/student-life",
+          "label": "Student life",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.ku.dk/studies/student-life/student-life-at-ucph",
+          "label": "\n                            Student life at UCPH\n                        ",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.ku.dk/studies/student-life/campus-life",
+          "label": "\n                            Campus life\n                        ",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.ku.dk/studies/student-life/transcript-of-records",
+          "label": "\n                            Transcript of records\n                        ",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.ku.dk/studies/student-life/student-data-processing",
+          "label": "\n                            Student data processing at UCPH\n                        ",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.ku.dk/studies/student-life/study-structure",
+          "label": "\n                            Study Structure\n                        ",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.ku.dk/studies/student-life/student-counselling",
+          "label": "\n                            Student counselling\n                        ",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.ku.dk/studies/student-life/onboarding-at-ucph",
+          "label": "\n                            Onboarding at UCPH\n                        ",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.ku.dk/studies/student-life/university-chaplains",
+          "label": "\n                            University chaplains\n                        ",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.ku.dk/studies/student-life/housing",
+          "label": "\n                            Housing\n                        ",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.ku.dk/studies/student-life/living-in-copenhagen",
+          "label": "\n                            Living in Copenhagen\n                        ",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.ku.dk/studies/student-life/elite-sport",
+          "label": "\n                            Elite sport at UCPH\n                        ",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.ku.dk/studies/student-life/state-educational-grant",
+          "label": "\n                            State Educational Grant\n                        ",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.ku.dk/studies/exchange/exchange-students",
+          "label": "\n                            Incoming exchange students\n                        ",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.ku.dk/studies/exchange/exchange-students-from-ucph",
+          "label": "\n                            Outgoing exchange students\n                        ",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.ku.dk/studies/exchange/credit-students",
+          "label": "\n                            Credit students (from Danish universities)\n                        ",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.ku.dk/studies/masters/agricultural-economics",
+          "label": "Agricultural Economics",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.ku.dk/studies/admission/masters#c16131",
+          "label": "\r\n                    Master's, study start February\r\n                \r\n                15 October at 23:59 (CEST)\r\n            \r\n                    Application deadline for all applicants.\r\n                ",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.ku.dk/studies/admission/masters#c16131",
+          "label": "\r\n                    Master's, study start September\r\n                \r\n                15 January at 23:59 (CET)\r\n            \r\n                    Application deadline for applicants from outside EU/EEA/Switzerland.\r\n                ",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.ku.dk/studies/admission/masters#c283",
+          "label": "\r\n                    Master's, study start September\r\n                \r\n                1 March at 23:59 (CET)\r\n            \r\n                    Application deadline for applicants from EU/EEA/Switzerland.\r\n                ",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.ku.dk/studies/masters/entrance-qualifications",
+          "label": "\r\n                Entrance qualifications\r\n            \r\n                    To apply for a master's programme at the University of Copenhagen, you must have a qualifying bachelor’s degree or similar.\r\n                ",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.ku.dk/studies/admission/masters",
+          "label": "\r\n                Application and admission\r\n            \r\n                    Read all about application, admission, deadlines and tuition fee on master's degrees.\r\n                ",
+          "tag": "a"
+        },
+        {
+          "url": "https://studies.ku.dk/study-abroad/",
+          "label": "\r\n                Study abroad programmes at UCPH\r\n            \r\n                    Want to take 1 or 2 semesters at UCPH? We offer a wide range of individual master's degree courses taught in English.\r\n                ",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.ku.dk/studies/study-choice/areas-of-interest",
+          "label": "\r\n                Find areas of interest\r\n            \r\n                    Find the right master's degree programme for you with the interest wheel.\r\n                ",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.ku.dk/studies/masters/studystart",
+          "label": "\r\n                What happens during study start?\r\n            \r\n                    Read about what you can expect from the start of your studies in a master's program at UCPH.\r\n                ",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.ku.dk/studies/student-life",
+          "label": "\r\n                Student life\r\n            \r\n                    Be part of a strong international environment with 5,500 international students out of a student body of 39,000.\r\n                ",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.ku.dk/studies/student-life/housing",
+          "label": "\r\n                Living in Copenhagen\r\n            \r\n                    Need a place to live for your studies at the University of Copenhagen? Get good advice on finding housing.\r\n                ",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.ku.dk/studies/bachelor",
+          "label": "See all 78 programmes",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.ku.dk/studies/admission/bachelor",
+          "label": "Application and admission",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.ku.dk/studies/contact#c24296",
+          "label": "Contact student counselling",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.ku.dk/studies/masters",
+          "label": "See all 120 programmes",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.ku.dk/studies/admission/masters",
+          "label": "Application and admission",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.ku.dk/studies/contact#master",
+          "label": "Contact student counselling",
+          "tag": "a"
+        },
+        {
+          "url": "https://about.ku.dk/organisation/administration/",
+          "label": "Administration",
+          "tag": "a"
+        },
+        {
+          "url": "https://about.ku.dk/organisation/administration/it/",
+          "label": "IT-support",
+          "tag": "a"
+        },
+        {
+          "url": "https://ucph.jobteaser.com",
+          "label": "Jobs for students",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.youtube.com/user/CopenhagenUniversity",
+          "label": "",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.coursera.org/ucph",
+          "label": "",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.ku.dk/studies/bachelor/all-programmes",
+          "label": "Find all programmes",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.ku.dk/studies/masters/all-programmes",
+          "label": "Find all programmes",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.ku.dk/studies/masters/application-and-admission/new-opportunities-for-masters-degrees",
+          "label": "New opportunities for master's degrees",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.ku.dk/studies/admission",
+          "label": "Admission",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.ku.dk/studies/admission/bachelor",
+          "label": "Bachelor: Apply for admission",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.ku.dk/studies/admission/bachelor/non-eu-eea-and-non-nordic-countries",
+          "label": "Non-EU EEA and Non-Nordic Countries",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.ku.dk/studies/admission/bachelor/ib-and-other-international-diplomas",
+          "label": "IB and other international diplomas",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.ku.dk/studies/admission/bachelor/diplomas-from-eu-eea-countries",
+          "label": "Diplomas from EU-EEA countries",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.ku.dk/studies/admission/masters",
+          "label": "Master's: Apply for admission",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.ku.dk/studies/admission/masters/students-and-former-students",
+          "label": "How to apply as a student or a former student",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.ku.dk/studies/admission/masters/ects-credits",
+          "label": "ECTS credits",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.ku.dk/studies/admission/masters/self-assessment-form",
+          "label": "Self-assessment forms",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.ku.dk/studies/admission/masters/guide-to-the-application-portal-for-masters-programmes",
+          "label": "Guide to the Application Portal",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.ku.dk/studies/admission/masters/grading-scale",
+          "label": "Grading scale",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.ku.dk/studies/admission/masters/legal-right-of-admission",
+          "label": "Legal right of admission",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.ku.dk/studies/admission/masters/language-requirements",
+          "label": "Language requirements",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.ku.dk/studies/admission/masters/degree-programmes-with-study-start-in-february",
+          "label": "Degree programmes with study start in February",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.ku.dk/studies/admission/statistics-and-figures",
+          "label": "Statistics and figures",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.ku.dk/studies/masters/statistics-and-figures/admission-statistics-2024",
+          "label": "Admission statistics 2024 for master's programmes",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.ku.dk/studies/masters/statistics-and-figures/admission-statistics-2025",
+          "label": "Admission statistics 2025 for master's programmes",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.ku.dk/studies/masters/statistics-and-figures/admission-statistics-2026",
+          "label": "Admission statistics 2026 for master's programmes",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.ku.dk/studies/admission/important-dates-and-deadlines",
+          "label": "Important dates and deadlines",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.ku.dk/studies/admission/masters-important-dates-and-deadlines",
+          "label": "Master's: Important dates and deadlines",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.ku.dk/studies/admission/masters-important-dates-and-deadlines",
+          "label": "Important dates – citizens from countries outside the EU/EEA...",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.ku.dk/studies/admission/masters-important-dates-and-deadlines",
+          "label": "Important dates – citizens from the EU/EEA and Switzerland",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.ku.dk/studies/student-life",
+          "label": "Student life",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.ku.dk/studies/student-life/student-life-at-ucph",
+          "label": "Student life at UCPH",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.ku.dk/studies/student-life/campus-life",
+          "label": "Campus life",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.ku.dk/studies/student-life/campus-life/city-campus",
+          "label": "City Campus",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.ku.dk/studies/student-life/campus-life/frederiksberg-campus",
+          "label": "Frederiksberg Campus",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.ku.dk/studies/student-life/campus-life/north-campus",
+          "label": "North Campus",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.ku.dk/studies/student-life/campus-life/south-campus",
+          "label": "South Campus",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.ku.dk/studies/student-life/transcript-of-records",
+          "label": "Transcript of records",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.ku.dk/studies/student-life/student-data-processing",
+          "label": "Student data processing at UCPH",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.ku.dk/studies/student-life/study-structure",
+          "label": "Study Structure",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.ku.dk/studies/student-life/student-counselling",
+          "label": "Student counselling",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.ku.dk/studies/student-life/onboarding-at-ucph",
+          "label": "Onboarding at UCPH",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.ku.dk/studies/student-life/university-chaplains",
+          "label": "University chaplains",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.ku.dk/studies/student-life/housing",
+          "label": "Housing",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.ku.dk/studies/student-life/living-in-copenhagen",
+          "label": "Living in Copenhagen",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.ku.dk/studies/student-life/living-in-copenhagen/leaving-denmark",
+          "label": "Leaving Denmark",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.ku.dk/studies/student-life/living-in-copenhagen/health-and-safety-in-denmark",
+          "label": "Health and safety in Denmark",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.ku.dk/studies/student-life/living-in-copenhagen/danish-residence-permit",
+          "label": "Danish residence permit",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.ku.dk/studies/student-life/elite-sport",
+          "label": "Elite sport at UCPH",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.ku.dk/studies/student-life/state-educational-grant",
+          "label": "State Educational Grant",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.ku.dk/studies/exchange/exchange-students",
+          "label": "Incoming exchange students",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.ku.dk/studies/exchange/exchange-students/4eu-students",
+          "label": "4EU+",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.ku.dk/studies/exchange/exchange-students-from-ucph",
+          "label": "Outgoing exchange students",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.ku.dk/studies/exchange/credit-students",
+          "label": "Credit students (from Danish universities)",
+          "tag": "a"
+        }
+      ]
+    },
+    {
+      "task": "098",
+      "university_id": "35a032fc-f24f-5a50-92ed-b818fca7f222",
+      "kind": "programmes",
+      "url": "https://hub.ucd.ie/usis/%21W_HU_MENU.P_PUBLISH?p_tag=COURSECATALOGUE",
+      "candidate_origin": "Exact public primary-source search or source link, pending receipt and review",
+      "retrieved_at": "2026-10-16T03:04:04.889142+00:00",
+      "status": 200,
+      "final_url": "https://hub.ucd.ie/usis/%21W_HU_MENU.P_PUBLISH?p_tag=COURSECATALOGUE",
+      "content_type": "text/html",
+      "title": "UCD Course Catalogue",
+      "bytes": 152714,
+      "sha256": "bffae5436d92364a9903f47e71348ac585e4a3fa525673693560170a838baf29",
+      "cache_file": "/var/folders/s7/l14g78kx35z66lhftvjc1qk80000gn/T/collegestat-university-enrichment-oct15/7dc2963ff7a4b82aa1.html",
+      "youtube_ids_in_official_page": [],
+      "candidate_links": [
+        {
+          "url": "https://hub.ucd.ie/usis/!W_HU_MENU.P_PUBLISH?p_tag=COURSECATALOGUE",
+          "label": "\r\n                \r\n                    \r\n                    \r\n                         UCD Course CatalogueCatalóg Chúrsaí UCD\r\n                    \r\n                \r\n            ",
+          "tag": "a"
+        },
+        {
+          "url": "https://hub.ucd.ie/usis/!W_HU_MENU.P_PUBLISH?p_tag=COURSES",
+          "label": "\r\n                \r\n                    \r\n                        \r\n                            \r\n                        \r\n                        \r\n                            \r\n                                \r\n                            \r\n                        \r\n                    \r\n                \r\n                Course Search \r\n         ",
+          "tag": "a"
+        },
+        {
+          "url": "https://hub.ucd.ie/usis/!W_HU_MENU.P_PUBLISH?p_tag=COURSES&SPECIAL=Y",
+          "label": "\r\n                \r\n                    \r\n                        \r\n                            \r\n                        \r\n                        \r\n                            \r\n                                \r\n                            \r\n                        \r\n                    \r\n                \r\n                Special Groups Search \r\n         ",
+          "tag": "a"
+        },
+        {
+          "url": "https://hub.ucd.ie/usis/!W_HU_MENU.P_PUBLISH?p_tag=COURSESCURRENT",
+          "label": "\r\n                \r\n                    \r\n                        \r\n                            \r\n                        \r\n                        \r\n                            \r\n                                \r\n                            \r\n                        \r\n                    \r\n                \r\n                Course Search \r\n         ",
+          "tag": "a"
+        },
+        {
+          "url": "https://hub.ucd.ie/usis/!W_HU_MENU.P_PUBLISH?p_tag=COURSECAODEGREES",
+          "label": "\r\n                \r\n                    \r\n                        \r\n                            \r\n                        \r\n                        \r\n                            \r\n                                \r\n                            \r\n                        \r\n                    \r\n                \r\n                Degrees by CAO Code \r\n         ",
+          "tag": "a"
+        },
+        {
+          "url": "https://hub.ucd.ie/usis/!W_HU_MENU.P_PUBLISH?p_tag=COURSEUGPROGS",
+          "label": "\r\n                \r\n                    \r\n                        \r\n                            \r\n                        \r\n                        \r\n                            \r\n                                \r\n                            \r\n                        \r\n                    \r\n                \r\n                Undergraduate Programmes \r\n         ",
+          "tag": "a"
+        },
+        {
+          "url": "https://hub.ucd.ie/usis/!W_HU_MENU.P_PUBLISH?p_tag=COURSECERTSDIPS",
+          "label": "\r\n                \r\n                    \r\n                        \r\n                            \r\n                        \r\n                        \r\n                            \r\n                                \r\n                            \r\n                        \r\n                    \r\n                \r\n                Certificates & Diplomas \r\n         ",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.ucd.ie/students/registration/structuredelectives/#d.en.503031",
+          "label": "\r\n                \r\n                    \r\n                        \r\n                            \r\n                        \r\n                        \r\n                            \r\n                                \r\n                            \r\n                        \r\n                    \r\n                \r\n                Structured Electives \r\n         ",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.ucd.ie/students/",
+          "label": "\r\n                \r\n                    \r\n                        \r\n                            \r\n                        \r\n                        \r\n                            \r\n                                \r\n                            \r\n                        \r\n                    \r\n                \r\n                UCD Current Students \r\n         ",
+          "tag": "a"
+        },
+        {
+          "url": "https://hub.ucd.ie/usis/!W_HU_MENU.P_PUBLISH?p_tag=COURSESARCHIVE&ACYR=2025",
+          "label": "\r\n                \r\n                    \r\n                        \r\n                            \r\n                        \r\n                        \r\n                            \r\n                                \r\n                            \r\n                        \r\n                    \r\n                \r\n                Courses Archive \r\n         ",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.ucd.ie/courses/catalogue",
+          "label": "Course Catalogue",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.ucd.ie/students/",
+          "label": "Current Students",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.ucd.ie/global/studentexperience/",
+          "label": "International Student Experience",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.ucd.ie/careers/students/",
+          "label": "Careers Network",
+          "tag": "a"
+        },
+        {
+          "url": "https://societies.ucd.ie/",
+          "label": "Student Societies",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.youtube.com/user/myucd",
+          "label": "YouTube",
+          "tag": "a"
+        },
+        {
+          "url": "https://hub.ucd.ie/usis/!W_HU_MENU.P_PUBLISH?p_tag=COURSES",
+          "label": "Advanced Search",
+          "tag": "a"
+        },
+        {
+          "url": "https://hub.ucd.ie/usis/!W_HU_MENU.P_PUBLISH?p_tag=DISCIPLINE&DISP=SCI&LEVL=UG",
+          "label": "Science, Computer Science & Actuarial Science\r\n                                    \r\n                                ",
+          "tag": "a"
+        },
+        {
+          "url": "https://hub.ucd.ie/usis/!W_HU_MENU.P_PUBLISH?p_tag=COURSES&AREA=AGF&LEVEL=GT",
+          "label": "Agriculture, Food & Nutrition\r\n                                    \r\n                                ",
+          "tag": "a"
+        },
+        {
+          "url": "https://hub.ucd.ie/usis/!W_HU_MENU.P_PUBLISH?p_tag=COURSES&AREA=ARD&LEVEL=GT",
+          "label": "Architecture, Planning & Urban Studies\r\n                                    \r\n                                ",
+          "tag": "a"
+        },
+        {
+          "url": "https://hub.ucd.ie/usis/!W_HU_MENU.P_PUBLISH?p_tag=COURSES&AREA=BBS&LEVEL=GT",
+          "label": "Biotechnology, Biomedical Sciences, Chemical Sciences & Pharmaceutical\r\n                                    \r\n                                ",
+          "tag": "a"
+        },
+        {
+          "url": "https://hub.ucd.ie/usis/!W_HU_MENU.P_PUBLISH?p_tag=COURSES&AREA=BAF&LEVEL=GT",
+          "label": "Business & Management\r\n                                    \r\n                                ",
+          "tag": "a"
+        },
+        {
+          "url": "https://hub.ucd.ie/usis/!W_HU_MENU.P_PUBLISH?p_tag=COURSES&AREA=CSC&LEVEL=GT",
+          "label": "Computer Science, Information Technology, Artificial Intelligence & Data Science\r\n                                    \r\n                                ",
+          "tag": "a"
+        },
+        {
+          "url": "https://hub.ucd.ie/usis/!W_HU_MENU.P_PUBLISH?p_tag=COURSES&AREA=CUL&LEVEL=GT",
+          "label": "Culture, Ethnicity & Identity \r\n                                    \r\n                                ",
+          "tag": "a"
+        },
+        {
+          "url": "https://hub.ucd.ie/usis/!W_HU_MENU.P_PUBLISH?p_tag=COURSES&AREA=DHA&LEVEL=GT",
+          "label": "Development & Humanitarian Action\r\n                                    \r\n                                ",
+          "tag": "a"
+        },
+        {
+          "url": "https://hub.ucd.ie/usis/!W_HU_MENU.P_PUBLISH?p_tag=COURSES&AREA=EDU&LEVEL=GT",
+          "label": "Education\r\n                                    \r\n                                ",
+          "tag": "a"
+        },
+        {
+          "url": "https://hub.ucd.ie/usis/!W_HU_MENU.P_PUBLISH?p_tag=COURSES&AREA=EGR&LEVEL=GT",
+          "label": "Energy\r\n                                    \r\n                                ",
+          "tag": "a"
+        },
+        {
+          "url": "https://hub.ucd.ie/usis/!W_HU_MENU.P_PUBLISH?p_tag=COURSES&AREA=ENG&LEVEL=GT",
+          "label": "Engineering\r\n                                    \r\n                                ",
+          "tag": "a"
+        },
+        {
+          "url": "https://hub.ucd.ie/usis/!W_HU_MENU.P_PUBLISH?p_tag=COURSES&AREA=ECO&LEVEL=GT",
+          "label": "Finance, Economics & Accounting\r\n                                    \r\n                                ",
+          "tag": "a"
+        },
+        {
+          "url": "https://hub.ucd.ie/usis/!W_HU_MENU.P_PUBLISH?p_tag=COURSES&AREA=GPE&LEVEL=GT",
+          "label": "Geography & Climate\r\n                                    \r\n                                ",
+          "tag": "a"
+        },
+        {
+          "url": "https://hub.ucd.ie/usis/!W_HU_MENU.P_PUBLISH?p_tag=COURSES&AREA=GES&LEVEL=GT",
+          "label": "Geology & Earth Sciences\r\n                                    \r\n                                ",
+          "tag": "a"
+        },
+        {
+          "url": "https://hub.ucd.ie/usis/!W_HU_MENU.P_PUBLISH?p_tag=COURSES&AREA=MED&LEVEL=GT",
+          "label": "Health & Medicine\r\n                                    \r\n                                ",
+          "tag": "a"
+        },
+        {
+          "url": "https://hub.ucd.ie/usis/!W_HU_MENU.P_PUBLISH?p_tag=COURSES&AREA=HIS&LEVEL=GT",
+          "label": "History & Archaeology \r\n                                    \r\n                                ",
+          "tag": "a"
+        },
+        {
+          "url": "https://hub.ucd.ie/usis/!W_HU_MENU.P_PUBLISH?p_tag=COURSES&AREA=SPW&LEVEL=GT",
+          "label": "Human Rights & Social Justice \r\n                                    \r\n                                ",
+          "tag": "a"
+        },
+        {
+          "url": "https://hub.ucd.ie/usis/!W_HU_MENU.P_PUBLISH?p_tag=COURSES&AREA=LIB&LEVEL=GT",
+          "label": "Information & Library Studies\r\n                                    \r\n                                ",
+          "tag": "a"
+        },
+        {
+          "url": "https://hub.ucd.ie/usis/!W_HU_MENU.P_PUBLISH?p_tag=COURSES&AREA=IND&LEVEL=GT",
+          "label": "International Relations & Conflict \r\n                                    \r\n                                ",
+          "tag": "a"
+        },
+        {
+          "url": "https://hub.ucd.ie/usis/!W_HU_MENU.P_PUBLISH?p_tag=COURSES&AREA=JOU&LEVEL=GT",
+          "label": "Journalism\r\n                                    \r\n                                ",
+          "tag": "a"
+        },
+        {
+          "url": "https://hub.ucd.ie/usis/!W_HU_MENU.P_PUBLISH?p_tag=COURSES&AREA=LAN&LEVEL=GT",
+          "label": "Languages & Linguistics\r\n                                    \r\n                                ",
+          "tag": "a"
+        },
+        {
+          "url": "https://hub.ucd.ie/usis/!W_HU_MENU.P_PUBLISH?p_tag=COURSES&AREA=LAW&LEVEL=GT",
+          "label": "Law & Criminal Justice\r\n                                    \r\n                                ",
+          "tag": "a"
+        },
+        {
+          "url": "https://hub.ucd.ie/usis/!W_HU_MENU.P_PUBLISH?p_tag=COURSES&AREA=LIT&LEVEL=GT",
+          "label": "Literature, Drama & Film  \r\n                                    \r\n                                ",
+          "tag": "a"
+        },
+        {
+          "url": "https://hub.ucd.ie/usis/!W_HU_MENU.P_PUBLISH?p_tag=COURSES&AREA=MIS&LEVEL=GT",
+          "label": "Management Information Systems\r\n                                    \r\n                                ",
+          "tag": "a"
+        },
+        {
+          "url": "https://hub.ucd.ie/usis/!W_HU_MENU.P_PUBLISH?p_tag=COURSES&AREA=MAT&LEVEL=GT",
+          "label": "Mathematics, Statistics & Actuarial Science\r\n                                    \r\n                                ",
+          "tag": "a"
+        },
+        {
+          "url": "https://hub.ucd.ie/usis/!W_HU_MENU.P_PUBLISH?p_tag=COURSES&AREA=PEA&LEVEL=GT",
+          "label": "Music\r\n                                    \r\n                                ",
+          "tag": "a"
+        },
+        {
+          "url": "https://hub.ucd.ie/usis/!W_HU_MENU.P_PUBLISH?p_tag=COURSES&AREA=ONM&LEVEL=GT",
+          "label": "Nursing & Midwifery\r\n                                    \r\n                                ",
+          "tag": "a"
+        },
+        {
+          "url": "https://hub.ucd.ie/usis/!W_HU_MENU.P_PUBLISH?p_tag=COURSES&AREA=PHI&LEVEL=GT",
+          "label": "Philosophy\r\n                                    \r\n                                ",
+          "tag": "a"
+        },
+        {
+          "url": "https://hub.ucd.ie/usis/!W_HU_MENU.P_PUBLISH?p_tag=COURSES&AREA=CCB&LEVEL=GT",
+          "label": "Physics, Nanotechnology & Space Science\r\n                                    \r\n                                ",
+          "tag": "a"
+        },
+        {
+          "url": "https://hub.ucd.ie/usis/!W_HU_MENU.P_PUBLISH?p_tag=COURSES&AREA=PIR&LEVEL=GT",
+          "label": "Politics & Public Policy \r\n                                    \r\n                                ",
+          "tag": "a"
+        },
+        {
+          "url": "https://hub.ucd.ie/usis/!W_HU_MENU.P_PUBLISH?p_tag=COURSES&AREA=PSY&LEVEL=GT",
+          "label": "Psychology\r\n                                    \r\n                                ",
+          "tag": "a"
+        },
+        {
+          "url": "https://hub.ucd.ie/usis/!W_HU_MENU.P_PUBLISH?p_tag=COURSES&AREA=SCI&LEVEL=GT",
+          "label": "Science, Computer Science & Actuarial Science\r\n                                    \r\n                                ",
+          "tag": "a"
+        },
+        {
+          "url": "https://hub.ucd.ie/usis/!W_HU_MENU.P_PUBLISH?p_tag=COURSES&AREA=SOC&LEVEL=GT",
+          "label": "Sociology, Social Work & Social Policy\r\n                                    \r\n                                ",
+          "tag": "a"
+        },
+        {
+          "url": "https://hub.ucd.ie/usis/!W_HU_MENU.P_PUBLISH?p_tag=COURSES&AREA=OSE&LEVEL=GT",
+          "label": "Sports & Exercise\r\n                                    \r\n                                ",
+          "tag": "a"
+        },
+        {
+          "url": "https://hub.ucd.ie/usis/!W_HU_MENU.P_PUBLISH?p_tag=COURSES&AREA=BES&LEVEL=GT",
+          "label": "Sustainability & Environment\r\n                                    \r\n                                ",
+          "tag": "a"
+        },
+        {
+          "url": "https://hub.ucd.ie/usis/!W_HU_MENU.P_PUBLISH?p_tag=COURSES&AREA=VET&LEVEL=GT",
+          "label": "Veterinary Medicine & Animal Science\r\n                                    \r\n                                ",
+          "tag": "a"
+        },
+        {
+          "url": "https://hub.ucd.ie/usis/!W_HU_MENU.P_PUBLISH?p_tag=COURSES&AREA=AGF&LEVEL=GR",
+          "label": "Agriculture, Food & Nutrition\r\n                                    \r\n                                ",
+          "tag": "a"
+        },
+        {
+          "url": "https://hub.ucd.ie/usis/!W_HU_MENU.P_PUBLISH?p_tag=COURSES&AREA=ARD&LEVEL=GR",
+          "label": "Architecture, Planning & Urban Studies\r\n                                    \r\n                                ",
+          "tag": "a"
+        },
+        {
+          "url": "https://hub.ucd.ie/usis/!W_HU_MENU.P_PUBLISH?p_tag=COURSES&AREA=BBS&LEVEL=GR",
+          "label": "Biotechnology, Biomedical Sciences, Chemical Sciences & Pharmaceutical\r\n                                    \r\n                                ",
+          "tag": "a"
+        },
+        {
+          "url": "https://hub.ucd.ie/usis/!W_HU_MENU.P_PUBLISH?p_tag=COURSES&AREA=BAF&LEVEL=GR",
+          "label": "Business & Management\r\n                                    \r\n                                ",
+          "tag": "a"
+        },
+        {
+          "url": "https://hub.ucd.ie/usis/!W_HU_MENU.P_PUBLISH?p_tag=COURSES&AREA=CSC&LEVEL=GR",
+          "label": "Computer Science, Information Technology, Artificial Intelligence & Data Science\r\n                                    \r\n                                ",
+          "tag": "a"
+        },
+        {
+          "url": "https://hub.ucd.ie/usis/!W_HU_MENU.P_PUBLISH?p_tag=COURSES&AREA=CUL&LEVEL=GR",
+          "label": "Culture, Ethnicity & Identity \r\n                                    \r\n                                ",
+          "tag": "a"
+        },
+        {
+          "url": "https://hub.ucd.ie/usis/!W_HU_MENU.P_PUBLISH?p_tag=COURSES&AREA=DHA&LEVEL=GR",
+          "label": "Development & Humanitarian Action\r\n                                    \r\n                                ",
+          "tag": "a"
+        },
+        {
+          "url": "https://hub.ucd.ie/usis/!W_HU_MENU.P_PUBLISH?p_tag=COURSES&AREA=EDU&LEVEL=GR",
+          "label": "Education\r\n                                    \r\n                                ",
+          "tag": "a"
+        },
+        {
+          "url": "https://hub.ucd.ie/usis/!W_HU_MENU.P_PUBLISH?p_tag=COURSES&AREA=ENG&LEVEL=GR",
+          "label": "Engineering\r\n                                    \r\n                                ",
+          "tag": "a"
+        },
+        {
+          "url": "https://hub.ucd.ie/usis/!W_HU_MENU.P_PUBLISH?p_tag=COURSES&AREA=ECO&LEVEL=GR",
+          "label": "Finance, Economics & Accounting\r\n                                    \r\n                                ",
+          "tag": "a"
+        },
+        {
+          "url": "https://hub.ucd.ie/usis/!W_HU_MENU.P_PUBLISH?p_tag=COURSES&AREA=GPE&LEVEL=GR",
+          "label": "Geography & Climate\r\n                                    \r\n                                ",
+          "tag": "a"
+        },
+        {
+          "url": "https://hub.ucd.ie/usis/!W_HU_MENU.P_PUBLISH?p_tag=COURSES&AREA=GES&LEVEL=GR",
+          "label": "Geology & Earth Sciences\r\n                                    \r\n                                ",
+          "tag": "a"
+        },
+        {
+          "url": "https://hub.ucd.ie/usis/!W_HU_MENU.P_PUBLISH?p_tag=COURSES&AREA=MED&LEVEL=GR",
+          "label": "Health & Medicine\r\n                                    \r\n                                ",
+          "tag": "a"
+        },
+        {
+          "url": "https://hub.ucd.ie/usis/!W_HU_MENU.P_PUBLISH?p_tag=COURSES&AREA=HIS&LEVEL=GR",
+          "label": "History & Archaeology \r\n                                    \r\n                                ",
+          "tag": "a"
+        },
+        {
+          "url": "https://hub.ucd.ie/usis/!W_HU_MENU.P_PUBLISH?p_tag=COURSES&AREA=SPW&LEVEL=GR",
+          "label": "Human Rights & Social Justice \r\n                                    \r\n                                ",
+          "tag": "a"
+        },
+        {
+          "url": "https://hub.ucd.ie/usis/!W_HU_MENU.P_PUBLISH?p_tag=COURSES&AREA=LIB&LEVEL=GR",
+          "label": "Information & Library Studies\r\n                                    \r\n                                ",
+          "tag": "a"
+        },
+        {
+          "url": "https://hub.ucd.ie/usis/!W_HU_MENU.P_PUBLISH?p_tag=COURSES&AREA=LAN&LEVEL=GR",
+          "label": "Languages & Linguistics\r\n                                    \r\n                                ",
+          "tag": "a"
+        },
+        {
+          "url": "https://hub.ucd.ie/usis/!W_HU_MENU.P_PUBLISH?p_tag=COURSES&AREA=LAW&LEVEL=GR",
+          "label": "Law & Criminal Justice\r\n                                    \r\n                                ",
+          "tag": "a"
+        },
+        {
+          "url": "https://hub.ucd.ie/usis/!W_HU_MENU.P_PUBLISH?p_tag=COURSES&AREA=LIT&LEVEL=GR",
+          "label": "Literature, Drama & Film  \r\n                                    \r\n                                ",
+          "tag": "a"
+        },
+        {
+          "url": "https://hub.ucd.ie/usis/!W_HU_MENU.P_PUBLISH?p_tag=COURSES&AREA=MAT&LEVEL=GR",
+          "label": "Mathematics, Statistics & Actuarial Science\r\n                                    \r\n                                ",
+          "tag": "a"
+        },
+        {
+          "url": "https://hub.ucd.ie/usis/!W_HU_MENU.P_PUBLISH?p_tag=COURSES&AREA=PEA&LEVEL=GR",
+          "label": "Music\r\n                                    \r\n                                ",
+          "tag": "a"
+        },
+        {
+          "url": "https://hub.ucd.ie/usis/!W_HU_MENU.P_PUBLISH?p_tag=COURSES&AREA=ONM&LEVEL=GR",
+          "label": "Nursing & Midwifery\r\n                                    \r\n                                ",
+          "tag": "a"
+        },
+        {
+          "url": "https://hub.ucd.ie/usis/!W_HU_MENU.P_PUBLISH?p_tag=COURSES&AREA=PHI&LEVEL=GR",
+          "label": "Philosophy\r\n                                    \r\n                                ",
+          "tag": "a"
+        },
+        {
+          "url": "https://hub.ucd.ie/usis/!W_HU_MENU.P_PUBLISH?p_tag=COURSES&AREA=CCB&LEVEL=GR",
+          "label": "Physics, Nanotechnology & Space Science\r\n                                    \r\n                                ",
+          "tag": "a"
+        },
+        {
+          "url": "https://hub.ucd.ie/usis/!W_HU_MENU.P_PUBLISH?p_tag=COURSES&AREA=PIR&LEVEL=GR",
+          "label": "Politics & Public Policy \r\n                                    \r\n                                ",
+          "tag": "a"
+        },
+        {
+          "url": "https://hub.ucd.ie/usis/!W_HU_MENU.P_PUBLISH?p_tag=COURSES&AREA=PSY&LEVEL=GR",
+          "label": "Psychology\r\n                                    \r\n                                ",
+          "tag": "a"
+        },
+        {
+          "url": "https://hub.ucd.ie/usis/!W_HU_MENU.P_PUBLISH?p_tag=COURSES&AREA=SOC&LEVEL=GR",
+          "label": "Sociology, Social Work & Social Policy\r\n                                    \r\n                                ",
+          "tag": "a"
+        },
+        {
+          "url": "https://hub.ucd.ie/usis/!W_HU_MENU.P_PUBLISH?p_tag=COURSES&AREA=BES&LEVEL=GR",
+          "label": "Sustainability & Environment\r\n                                    \r\n                                ",
+          "tag": "a"
+        },
+        {
+          "url": "https://hub.ucd.ie/usis/!W_HU_MENU.P_PUBLISH?p_tag=COURSES&AREA=VET&LEVEL=GR",
+          "label": "Veterinary Medicine & Animal Science\r\n                                    \r\n                                ",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.ucd.ie/global/learningabroad/exchanges/inboundexchange-students/",
+          "label": "UCD Global for Study Abroad",
+          "tag": "a"
+        },
+        {
+          "url": "https://hub.ucd.ie/usis/!W_HU_MENU.P_PUBLISH?p_tag=COURSES&AUDIENCE=Int&SPECIAL=IN-ERAS",
+          "label": "Erasmus\r\n                                    \r\n                                ",
+          "tag": "a"
+        },
+        {
+          "url": "https://hub.ucd.ie/usis/!W_HU_MENU.P_PUBLISH?p_tag=COURSES&AUDIENCE=Int&SPECIAL=IN-NONEXC",
+          "label": "Non EU Exchange\r\n                                    \r\n                                ",
+          "tag": "a"
+        },
+        {
+          "url": "https://hub.ucd.ie/usis/!W_HU_MENU.P_PUBLISH?p_tag=COURSES&AUDIENCE=Int&SPECIAL=IN-STAB",
+          "label": "Study Abroad\r\n                                    \r\n                                ",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.dublinisc.com/programmes/international-foundation-year",
+          "label": "International Foundation Programme (IFY) Pathway\r\n                                    \r\n                                ",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.ucd.ie/cegl/programmes/pathways/int%20pmp/",
+          "label": "Masters Partnership Pathway\r\n                                    \r\n                                ",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.ucd.ie/alc/programmes/pathways/pathways-presessional/",
+          "label": "English Language Preparatory Programmes\r\n                                    \r\n                                ",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.ucd.ie/quinn/courses/internationalcampusdegrees/",
+          "label": "UCD Business International Campus - Singapore, Hong Kong\r\n                                    \r\n                                ",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.youtube.com/user/myucd",
+          "label": "\r\n                                    \r\n                                    YouTube\r\n                                ",
+          "tag": "a"
+        },
+        {
+          "url": "https://hub.ucd.ie/usis/%21W_HU_MENU.P_PUBLISH?p_tag=COURSECATALOGUE",
+          "label": "\r\n        \r\n    ",
+          "tag": "a"
+        }
+      ]
+    },
+    {
+      "task": "003",
+      "university_id": "11111111-1111-4111-8111-111111111111",
+      "kind": "costs",
+      "url": "https://financialaid.stanford.edu/undergrad/budget/",
+      "candidate_origin": "Exact public primary-source search or source link, pending receipt and review",
+      "retrieved_at": "2026-10-16T03:04:05.210718+00:00",
+      "status": 200,
+      "final_url": "https://financialaid.stanford.edu/undergrad/budget/",
+      "content_type": "text/html",
+      "title": "The Student Budget : Stanford University",
+      "bytes": 27857,
+      "sha256": "718db23185336121f6d073524db9a2c928329a5d21bf94f6973877ca72ca5d51",
+      "cache_file": "/var/folders/s7/l14g78kx35z66lhftvjc1qk80000gn/T/collegestat-university-enrichment-oct15/dcb4c55638723a97cb.html",
+      "youtube_ids_in_official_page": [
+        "1z4vdKKDFu8",
+        "39L6boNt-ZI",
+        "3Gn5gHoCc94",
+        "TZogmvLpZ4E",
+        "_H2h8hqQuxs",
+        "qTHIGwbjhHQ"
+      ],
+      "candidate_links": [
+        {
+          "url": "https://bulletin.stanford.edu/academic-polices/tuition-fees/fees",
+          "label": "University Bulletin",
+          "tag": "a"
+        },
+        {
+          "url": "https://financialaid.stanford.edu/site/forms/computer-expense/",
+          "label": "Computer Expense Request",
+          "tag": "a"
+        },
+        {
+          "url": "https://news.stanford.edu/news/2009/march4/undergraduate-scholarship-students.html",
+          "label": "Meet Five Extraordinary Stanford Scholarship Recipients",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.youtube.com/c/StanfordFinancialAid",
+          "label": "",
+          "tag": "a"
+        },
+        {
+          "url": "https://admission.stanford.edu/",
+          "label": "Undergraduate Admission",
+          "tag": "a"
+        },
+        {
+          "url": "https://gradadmissions.stanford.edu/",
+          "label": "Graduate Admission",
+          "tag": "a"
+        },
+        {
+          "url": "https://vpge.stanford.edu/gateways/new-students",
+          "label": "Gateway for New Grad Students",
+          "tag": "a"
+        },
+        {
+          "url": "https://studentservices.stanford.edu/",
+          "label": "Student Services Center",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.gsb.stanford.edu/programs/mba/financial-aid",
+          "label": "Graduate School of Business",
+          "tag": "a"
+        },
+        {
+          "url": "https://adminguide.stanford.edu/chapter-1/subchapter-5/policy-1-5-4",
+          "label": "Trademarks",
+          "tag": "a"
+        }
+      ]
+    }
+  ]
+}

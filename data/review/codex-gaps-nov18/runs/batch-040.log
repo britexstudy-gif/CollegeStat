@@ -1,0 +1,70 @@
+OpenAI Codex v0.169.0
+--------
+workdir: /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+model: gpt-6-luna
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: high
+reasoning summaries: none
+session id: 01a1ee84-6412-7542-a1cc-c6ca1d677e65
+--------
+user
+You are a careful admissions-data researcher. For each university below, find facts for an
+INTERNATIONAL applicant to a FIRST-YEAR BACHELOR'S degree starting in autumn 2027 (or the nearest
+published cycle). Use the live web. Rules:
+
+- Official sources only: the university's own website (its domain or subdomains), the national
+  application service (UCAS, Common App, OUAC, uni-assist, Studyinkorea, etc.) or a government
+  statistics office. Never use rankings sites, forums, agencies, Wikipedia or blogs.
+- Every value needs the exact page URL where you read it (source_url). If you could not verify a
+  value on an official page, leave it out (null or an empty list). Never guess or estimate.
+- english: the lowest overall score accepted for undergraduate entry, per test (IELTS Academic
+  overall, TOEFL iBT total, Duolingo, PTE). If programmes differ, give the general/lowest common
+  university minimum and say so in detail (e.g. "6.5 overall, no band below 6.0; some
+  programmes higher").
+- tuition: the yearly tuition for international (non-EU / overseas) undergraduates in the local
+  currency. If it varies by programme give amount = lowest and amount_max = highest, and the
+  academic_year the fee applies to (e.g. "2026/27"). If tuition is free, amount = 0.
+- application_fee: for international first-year applicants, local currency.
+- deadlines: the main 2027-entry first-year deadlines (ISO date YYYY-MM-DD) with the route
+  (e.g. "Common App, Regular Decision", "UCAS", "university portal"). Only dates actually
+  published; if only the 2026-entry date is published, include it and put "2026 entry" in title.
+- sat: policy for international applicants; p25/p75 total SAT only if the university publishes
+  them (Common Data Set or admissions profile).
+- acceptance_rate: only if officially published (CDS, admissions statistics page).
+- notes: one short line on anything important (e.g. "Foundation year required for 11-year
+  school certificates"), else "".
+
+Spend effort on the facts students need most: English minimum, tuition, deadlines. Keep each
+detail under 160 characters. Return only the JSON that matches the schema; use each
+university's id exactly as given.
+
+Universities:
+- id: 9944c4eb-317b-540e-9abc-9c1942c6ae7c | Emory University | Atlanta, US | http://www.emory.edu/
+- id: ca928715-59ee-5341-b1fc-ef4f37e4b4bf | Curtin University | Perth, AU | http://www.curtin.edu.au/
+- id: 1540baf5-79f5-59ed-b687-3979b92f0aae | Universität Bern | Bern, CH | http://www.unibe.ch/
+- id: 98b4e737-130f-504b-9d9c-1198c0270376 | University of Wollongong | Wollongong, AU | http://www.uow.edu.au/
+codex
+I’ll check official admissions and fee pages for each university, prioritizing published entry requirements, tuition, and dates. I’ll leave any field blank when I can’t verify it on an official source.
+codex
+The memory skill is listed for this workspace, but its memory tools aren’t available in this session. I’ll proceed using the official sources I can verify directly.
+web search: 
+web search: site:apply.emory.edu international undergraduate English proficiency IELTS TOEFL 2027 application fee deadlines Emory 2027 ...
+web search: 
+web search: site:curtin.edu.au "IELTS" "undergraduate" "6.0" international English Curtin ...
+web search: 
+web search: site:curtin.edu.au/study/international-students fees "2026 International" undergraduate annual fee ...
+web search: 
+web search: site:unibe.ch fees tuition bachelor semester CHF 2026 international application deadline fall semester ...
+web search: 
+web search: site:emory.edu "2026-2027" undergraduate tuition 2026 Emory cost attendance tuition ...
+web search: 
+web search: 
+web search: 
+web search: 
+codex
+{"universities":[{"id":"9944c4eb-317b-540e-9abc-9c1942c6ae7c","english":[{"test":"IELTS","minimum":7.5,"detail":"Expected overall score; Emory says this is not a strict cutoff.","source_url":"https://apply.emory.edu/apply/requirements/exams"},{"test":"TOEFL iBT","minimum":100,"detail":"Expected score on the 0–120 scale; 5.5+ recommended on the new 1–6 scale; not a strict cutoff.","source_url":"https://apply.emory.edu/apply/requirements/exams"}],"tuition":{"amount":70300,"amount_max":null,"currency":"USD","period":"year","academic_year":"2026/27","detail":"Undergraduate tuition; published rate for the nearest available cycle.","source_url":"https://studentaccounts.emory.edu/_includes/documents/2026-2027-tuition-and-fee-schedule_final-3.pdf"},"application_fee":{"amount":75,"currency":"USD","source_url":"https://apply.emory.edu/apply/how-to-apply"},"deadlines":[{"title":"Early Decision I, 2026 entry","due_at":"2025-11-01","route":"Common App","source_url":"https://apply.emory.edu/apply/plans-deadlines"},{"title":"Early Decision II, 2026 entry","due_at":"2026-01-01","route":"Common App","source_url":"https://apply.emory.edu/apply/plans-deadlines"},{"title":"Regular Decision, 2026 entry","due_at":"2026-01-01","route":"Common App","source_url":"https://apply.emory.edu/apply/plans-deadlines"}],"sat":{"policy":"optional","p25":null,"p75":null,"source_url":"https://apply.emory.edu/apply/missing-items"},"acceptance_rate":null,"notes":"International applicants must demonstrate English proficiency; Emory lists expectations rather than strict score cutoffs."},{"id":"ca928715-59ee-5341-b1fc-ef4f37e4b4bf","english":[{"test":"IELTS","minimum":6.5,"detail":"General minimum overall; no band below 6.0. Some courses require higher scores.","source_url":"https://www.curtin.edu.au/study/applying/english-language-requirements/accepted-english-qualifications/"},{"test":"TOEFL iBT","minimum":81,"detail":"General minimum equivalent; course-specific English requirements may be higher.","source_url":"https://publications.curtin.edu.au/curtin-international-students-guide/page/46-47"},{"test":"PTE Academic","minimum":58,"detail":"General minimum overall; course-specific English requirements may be higher.","source_url":"https://publications.curtin.edu.au/curtin-international-students-guide/page/46-47"}],"tuition":null,"application_fee":{"amount":0,"currency":"AUD","source_url":"https://www.curtin.edu.au/study/help-support/app/answers/list/kw/application%20fees/"},"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"Course fees and application deadlines vary by programme; consult the international course listing."},{"id":"1540baf5-79f5-59ed-b687-3979b92f0aae","english":[],"tuition":{"amount":5100,"amount_max":null,"currency":"CHF","period":"year","academic_year":"2026/27","detail":"CHF 850 regular tuition plus CHF 1,700 international supplement per semester; annualized for two semesters.","source_url":"https://www.unibe.ch/studies/organizational_matters/renewal_of_semester_registration/fees/index_eng.html"},"application_fee":{"amount":150,"currency":"CHF","source_url":"https://www.unibe.ch/unibe/portal/content/e1006/e7408/e20292/e175073/e1766093/Fees_abHS2026_eng.pdf"},"deadlines":[{"title":"Regular fall-semester application, 2026 entry","due_at":"2026-04-30","route":"University online application","source_url":"https://www.unibe.ch/studies/dates/students/fall/index_eng.html"},{"title":"Late fall-semester application, 2026 entry (visa applicants excluded)","due_at":"2026-08-31","route":"University online application","source_url":"https://www.unibe.ch/studies/dates/students/fall/index_eng.html"}],"sat":null,"acceptance_rate":null,"notes":"Bachelor’s teaching is generally in German; applicants whose native language is not German need C1 proof or the university test."},{"id":"98b4e737-130f-504b-9d9c-1198c0270376","english":[{"test":"IELTS","minimum":6,"detail":"University minimum overall; course-specific score requirements may be higher.","source_url":"https://www.uow.edu.au/study/international/requirements/english/"},{"test":"Duolingo","minimum":115,"detail":"Equivalent to IELTS 6.0 overall; component minimums apply.","source_url":"https://www.uow.edu.au/study/international/requirements/english/"},{"test":"PTE Academic","minimum":54,"detail":"Equivalent to IELTS 6.0 overall; component minimums apply.","source_url":"https://www.uow.edu.au/study/international/requirements/english/"},{"test":"TOEFL iBT","minimum":70,"detail":"Equivalent to IELTS 6.0 overall on the pre-2026 0–120 scale; component minimums apply.","source_url":"https://www.uow.edu.au/study/international/requirements/english/"}],"tuition":null,"application_fee":{"amount":0,"currency":"AUD","source_url":"https://documents.uow.edu.au/content/groups/public/documents/doc/uow279851.pdf"},"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"Course tuition varies; UOW recommends applying at least four months before the intended intake."}] }
+tokens used
+50,217
+{"universities":[{"id":"9944c4eb-317b-540e-9abc-9c1942c6ae7c","english":[{"test":"IELTS","minimum":7.5,"detail":"Expected overall score; Emory says this is not a strict cutoff.","source_url":"https://apply.emory.edu/apply/requirements/exams"},{"test":"TOEFL iBT","minimum":100,"detail":"Expected score on the 0–120 scale; 5.5+ recommended on the new 1–6 scale; not a strict cutoff.","source_url":"https://apply.emory.edu/apply/requirements/exams"}],"tuition":{"amount":70300,"amount_max":null,"currency":"USD","period":"year","academic_year":"2026/27","detail":"Undergraduate tuition; published rate for the nearest available cycle.","source_url":"https://studentaccounts.emory.edu/_includes/documents/2026-2027-tuition-and-fee-schedule_final-3.pdf"},"application_fee":{"amount":75,"currency":"USD","source_url":"https://apply.emory.edu/apply/how-to-apply"},"deadlines":[{"title":"Early Decision I, 2026 entry","due_at":"2025-11-01","route":"Common App","source_url":"https://apply.emory.edu/apply/plans-deadlines"},{"title":"Early Decision II, 2026 entry","due_at":"2026-01-01","route":"Common App","source_url":"https://apply.emory.edu/apply/plans-deadlines"},{"title":"Regular Decision, 2026 entry","due_at":"2026-01-01","route":"Common App","source_url":"https://apply.emory.edu/apply/plans-deadlines"}],"sat":{"policy":"optional","p25":null,"p75":null,"source_url":"https://apply.emory.edu/apply/missing-items"},"acceptance_rate":null,"notes":"International applicants must demonstrate English proficiency; Emory lists expectations rather than strict score cutoffs."},{"id":"ca928715-59ee-5341-b1fc-ef4f37e4b4bf","english":[{"test":"IELTS","minimum":6.5,"detail":"General minimum overall; no band below 6.0. Some courses require higher scores.","source_url":"https://www.curtin.edu.au/study/applying/english-language-requirements/accepted-english-qualifications/"},{"test":"TOEFL iBT","minimum":81,"detail":"General minimum equivalent; course-specific English requirements may be higher.","source_url":"https://publications.curtin.edu.au/curtin-international-students-guide/page/46-47"},{"test":"PTE Academic","minimum":58,"detail":"General minimum overall; course-specific English requirements may be higher.","source_url":"https://publications.curtin.edu.au/curtin-international-students-guide/page/46-47"}],"tuition":null,"application_fee":{"amount":0,"currency":"AUD","source_url":"https://www.curtin.edu.au/study/help-support/app/answers/list/kw/application%20fees/"},"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"Course fees and application deadlines vary by programme; consult the international course listing."},{"id":"1540baf5-79f5-59ed-b687-3979b92f0aae","english":[],"tuition":{"amount":5100,"amount_max":null,"currency":"CHF","period":"year","academic_year":"2026/27","detail":"CHF 850 regular tuition plus CHF 1,700 international supplement per semester; annualized for two semesters.","source_url":"https://www.unibe.ch/studies/organizational_matters/renewal_of_semester_registration/fees/index_eng.html"},"application_fee":{"amount":150,"currency":"CHF","source_url":"https://www.unibe.ch/unibe/portal/content/e1006/e7408/e20292/e175073/e1766093/Fees_abHS2026_eng.pdf"},"deadlines":[{"title":"Regular fall-semester application, 2026 entry","due_at":"2026-04-30","route":"University online application","source_url":"https://www.unibe.ch/studies/dates/students/fall/index_eng.html"},{"title":"Late fall-semester application, 2026 entry (visa applicants excluded)","due_at":"2026-08-31","route":"University online application","source_url":"https://www.unibe.ch/studies/dates/students/fall/index_eng.html"}],"sat":null,"acceptance_rate":null,"notes":"Bachelor’s teaching is generally in German; applicants whose native language is not German need C1 proof or the university test."},{"id":"98b4e737-130f-504b-9d9c-1198c0270376","english":[{"test":"IELTS","minimum":6,"detail":"University minimum overall; course-specific score requirements may be higher.","source_url":"https://www.uow.edu.au/study/international/requirements/english/"},{"test":"Duolingo","minimum":115,"detail":"Equivalent to IELTS 6.0 overall; component minimums apply.","source_url":"https://www.uow.edu.au/study/international/requirements/english/"},{"test":"PTE Academic","minimum":54,"detail":"Equivalent to IELTS 6.0 overall; component minimums apply.","source_url":"https://www.uow.edu.au/study/international/requirements/english/"},{"test":"TOEFL iBT","minimum":70,"detail":"Equivalent to IELTS 6.0 overall on the pre-2026 0–120 scale; component minimums apply.","source_url":"https://www.uow.edu.au/study/international/requirements/english/"}],"tuition":null,"application_fee":{"amount":0,"currency":"AUD","source_url":"https://documents.uow.edu.au/content/groups/public/documents/doc/uow279851.pdf"},"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"Course tuition varies; UOW recommends applying at least four months before the intended intake."}] }

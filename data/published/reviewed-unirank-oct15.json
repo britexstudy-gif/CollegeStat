@@ -1,0 +1,53 @@
+{
+  "status": "reviewed_published",
+  "reviewed_at": "2026-10-15",
+  "provider": "unirank",
+  "year": 2026,
+  "edition": "2026 · university-reported positions",
+  "complete": false,
+  "coverage": "Five individual positions reported by three universities on their official websites. This is not an imported uniRank table. No uniRank directory, images, descriptions or bulk data are republished.",
+  "records": [
+    {
+      "university_id": "cdd45fd7-5000-55b1-8139-5f69c450c109",
+      "slug": "visayas-state-university-cdd45fd7",
+      "name": "Visayas State University",
+      "country_code": "PH",
+      "domain": "vsu.edu.ph",
+      "ror": "https://ror.org/00rt3cy21",
+      "world_rank": 6242,
+      "country_rank": 25,
+      "source_url": "https://www.vsu.edu.ph/articles/news/2963-back-on-top-vsu-climbs-national-ranking-returns-top-spot-in-ev-in-2026-unirank",
+      "source_name": "Visayas State University",
+      "source_published_at": "2026-04-08",
+      "identity_method": "exact_official_domain_and_country"
+    },
+    {
+      "university_id": "03dfc232-f674-5bdc-bdb9-595790b4412c",
+      "slug": "tshwane-university-of-technology-03dfc232",
+      "name": "Tshwane University of Technology",
+      "country_code": "ZA",
+      "domain": "tut.ac.za",
+      "ror": "https://ror.org/037mrss42",
+      "world_rank": 1202,
+      "country_rank": 9,
+      "source_url": "https://www.tut.ac.za/newsroom/all-news/2026/tut-secures-9th-spot-nationally-and-rises-higher-in-global-unirank-digital-rankings.php",
+      "source_name": "Tshwane University of Technology",
+      "source_published_at": "2026-06-24",
+      "identity_method": "exact_official_domain_and_country"
+    },
+    {
+      "university_id": "09196ffc-43a2-5020-aeb2-04dc72945a14",
+      "slug": "universitas-muhammadiyah-surabaya-09196ffc",
+      "name": "Universitas Muhammadiyah Surabaya",
+      "country_code": "ID",
+      "domain": "um-surabaya.ac.id",
+      "ror": "https://ror.org/05cn2wc35",
+      "world_rank": null,
+      "country_rank": 26,
+      "source_url": "https://www.um-surabaya.ac.id/news/umsura-peringkat-1-pts-terbaik-di-jatim-versi-unirank-2026-masuk-26-nasional",
+      "source_name": "Universitas Muhammadiyah Surabaya",
+      "source_published_at": "2026-04-07",
+      "identity_method": "exact_official_domain_and_country"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 449 448" width="449" height="448" role="img" aria-label="HdWM – University of Applied Management Studies">
+  <defs>
+    <linearGradient id="hdwm-grad" gradientUnits="userSpaceOnUse" x1="-0.18" y1="223.75" x2="448.55" y2="223.75">
+      <stop offset="0%" stop-color="#942B69"/>
+      <stop offset="6.25%" stop-color="#9D2A66"/>
+      <stop offset="12.5%" stop-color="#A62863"/>
+      <stop offset="18.75%" stop-color="#AF275F"/>
+      <stop offset="25%" stop-color="#B8255C"/>
+      <stop offset="31.25%" stop-color="#BF2459"/>
+      <stop offset="37.5%" stop-color="#C82256"/>
+      <stop offset="43.75%" stop-color="#CF2153"/>
+      <stop offset="50%" stop-color="#D51F50"/>
+      <stop offset="56.25%" stop-color="#DC1D4D"/>
+      <stop offset="62.5%" stop-color="#E31B4B"/>
+      <stop offset="68.75%" stop-color="#E81A48"/>
+      <stop offset="75%" stop-color="#ED1847"/>
+      <stop offset="81.25%" stop-color="#EE243F"/>
+      <stop offset="87.5%" stop-color="#EE3036"/>
+      <stop offset="93.75%" stop-color="#EF392C"/>
+      <stop offset="100%" stop-color="#EF4024"/>
+    </linearGradient>
+  </defs>
+  <!-- Opaque white base so the bar cutouts stay white on dark browser tabs -->
+  <circle cx="224.18" cy="223.75" r="224.37" fill="#FFFFFF"/>
+  <path fill="url(#hdwm-grad)" fill-rule="evenodd" d="M448.55 223.75A224.37 224.37 0 0 1 137.5 430.69L137.5 224.5L105.83 224.5L105.83 414.36A224.37 224.37 0 0 1 87.17 401.42L87.17 290L55.5 290L55.5 371.69A224.37 224.37 0 0 1 206.5 0.08L206.5 289.83L238.17 289.83L238.17 -0.18A224.37 224.37 0 0 1 357.5 43.28L357.5 224.17L389.17 224.17L389.17 71.69A224.37 224.37 0 0 1 448.55 223.75ZM156.17 115.5H187.83V330.83H156.17ZM256.83 149.83H288.5V366.5H256.83ZM307.17 77.17H338.83V258.83H307.17Z"/>
+</svg>

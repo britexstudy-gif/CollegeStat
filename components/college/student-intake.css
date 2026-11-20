@@ -1,0 +1,235 @@
+.si-dialog {
+  --si-line: color-mix(in srgb, var(--foreground, #20252e) 12%, transparent);
+  --si-muted: color-mix(in srgb, var(--foreground, #20252e) 62%, transparent);
+  --si-accent: #245fe8;
+  --si-soft: #eaf0fe;
+  width: min(640px, calc(100vw - 24px)) !important;
+  max-width: none !important;
+  padding: 24px !important;
+  border-radius: 22px !important;
+  gap: 16px !important;
+}
+.dark .si-dialog {
+  --si-accent: #8ab3ff;
+  --si-soft: #1d2a45;
+}
+.si-top {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.si-step-icon {
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background: var(--si-soft);
+  color: var(--si-accent);
+  flex: none;
+}
+.si-top > div {
+  flex: 1;
+}
+.si-kicker {
+  margin: 0;
+  font-size: 11px;
+  font-weight: 650;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--si-accent);
+}
+.si-title {
+  font-size: 20px !important;
+  font-weight: 650 !important;
+  letter-spacing: -0.02em;
+}
+.si-skip {
+  border: 0;
+  background: none;
+  color: var(--si-muted);
+  font-size: 13px;
+  cursor: pointer;
+}
+.si-skip:hover {
+  color: inherit;
+  text-decoration: underline;
+}
+.si-progress {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 6px;
+}
+.si-progress i {
+  height: 5px;
+  border-radius: 99px;
+  background: var(--si-line);
+  transition: background 0.3s ease;
+}
+.si-progress i[data-done] {
+  background: var(--si-accent);
+}
+.si-body {
+  display: grid;
+  gap: 18px;
+  max-height: min(62vh, 520px);
+  overflow-y: auto;
+  padding: 2px;
+  animation: si-in 0.3s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+.si-body fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  min-width: 0;
+}
+.si-body legend,
+.si-body label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.si-body small {
+  font-weight: 450;
+  color: var(--si-muted);
+}
+.si-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.si-suggest {
+  margin-top: -6px;
+}
+.si-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 36px;
+  padding: 0 14px;
+  border: 1px solid var(--si-line);
+  border-radius: 999px;
+  background: transparent;
+  color: inherit;
+  font-size: 13px;
+  cursor: pointer;
+  transition:
+    background 0.15s ease,
+    border-color 0.15s ease,
+    transform 0.15s ease;
+}
+.si-chip:hover {
+  border-color: var(--si-accent);
+}
+.si-chip:active {
+  transform: scale(0.97);
+}
+.si-chip[aria-pressed="true"] {
+  background: var(--si-soft);
+  border-color: var(--si-accent);
+  color: var(--si-accent);
+  font-weight: 600;
+}
+.si-row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+.si-body input:not([type="checkbox"]),
+.si-body select {
+  display: block;
+  width: 100%;
+  min-height: 42px;
+  margin-top: 6px;
+  padding: 0 12px;
+  border: 1px solid var(--si-line);
+  border-radius: 12px;
+  background: var(--background, #fff);
+  color: inherit;
+  font-size: 14px;
+  font-weight: 450;
+}
+.si-body input:focus,
+.si-body select:focus {
+  outline: none;
+  border-color: var(--si-accent);
+  box-shadow: 0 0 0 3px var(--si-soft);
+}
+.si-toggle {
+  display: flex !important;
+  align-items: center;
+  gap: 10px;
+  font-weight: 500 !important;
+}
+.si-toggle input {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--si-accent);
+}
+.si-hint {
+  margin: 10px 0 0;
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--si-muted);
+}
+.si-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding-top: 4px;
+}
+.si-back,
+.si-next {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 42px;
+  padding: 0 18px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.si-back {
+  border: 1px solid var(--si-line);
+  background: transparent;
+  color: inherit;
+}
+.si-back:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+.si-next {
+  border: 0;
+  background: var(--si-accent);
+  color: #fff;
+}
+.dark .si-next {
+  color: #0b1220;
+}
+.si-next:disabled {
+  opacity: 0.6;
+}
+@keyframes si-in {
+  from {
+    opacity: 0;
+    transform: translateX(14px);
+  }
+}
+@media (max-width: 560px) {
+  .si-row {
+    grid-template-columns: 1fr;
+  }
+  .si-dialog {
+    padding: 18px !important;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .si-body,
+  .si-chip,
+  .si-progress i {
+    animation: none;
+    transition: none;
+  }
+}

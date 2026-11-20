@@ -1,0 +1,7 @@
+# CollegeStat bounded research task 49: licensed-media
+
+Research official Wikimedia Commons per-file licence and attribution rules for university campus photographs and institution logos. Inspect only public/images/campuses/ATTRIBUTION.md if present and public/images/landing/ARTWORK.md. Give a deduplication and review checklist plus safe official retrieval routes. No Google-image harvesting, downloads or DB work.
+
+Use the requested Muse Spark 1.3 xhigh model. This is read-only research/presentation review. The existing repository and approved centred search hero/floating navbar remain in place. Owner asks for useful landing sections and folders, a compact student workspace, simpler staff navigation, accurate evidence and current data.
+
+You may write only your report at `outputs/muse-licensed-media-oct11.md`. Read only the explicitly named public files (if none are named, use primary web sources only). Do not read or transmit .env, credentials, account files, account deletion/export, private APIs/services, Obsidian vault, browser sessions, customer/student data or hosted rows. Do not run git mutations, install packages, SQL, migrations, server changes, scripts that read environment secrets or other agents. Never automatically approve a tool request. If a tool is unavailable or denied, report the limit; do not bypass it. Clearly distinguish research/recommendation from shipped features or installed data. Cite direct primary URLs, not search snippets.

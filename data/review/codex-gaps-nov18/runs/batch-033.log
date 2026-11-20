@@ -1,0 +1,128 @@
+OpenAI Codex v0.169.0
+--------
+workdir: /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+model: gpt-6-luna
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: high
+reasoning summaries: none
+session id: 01a1ee81-e7dd-7d60-b71a-14b69a71cc25
+--------
+user
+You are a careful admissions-data researcher. For each university below, find facts for an
+INTERNATIONAL applicant to a FIRST-YEAR BACHELOR'S degree starting in autumn 2027 (or the nearest
+published cycle). Use the live web. Rules:
+
+- Official sources only: the university's own website (its domain or subdomains), the national
+  application service (UCAS, Common App, OUAC, uni-assist, Studyinkorea, etc.) or a government
+  statistics office. Never use rankings sites, forums, agencies, Wikipedia or blogs.
+- Every value needs the exact page URL where you read it (source_url). If you could not verify a
+  value on an official page, leave it out (null or an empty list). Never guess or estimate.
+- english: the lowest overall score accepted for undergraduate entry, per test (IELTS Academic
+  overall, TOEFL iBT total, Duolingo, PTE). If programmes differ, give the general/lowest common
+  university minimum and say so in detail (e.g. "6.5 overall, no band below 6.0; some
+  programmes higher").
+- tuition: the yearly tuition for international (non-EU / overseas) undergraduates in the local
+  currency. If it varies by programme give amount = lowest and amount_max = highest, and the
+  academic_year the fee applies to (e.g. "2026/27"). If tuition is free, amount = 0.
+- application_fee: for international first-year applicants, local currency.
+- deadlines: the main 2027-entry first-year deadlines (ISO date YYYY-MM-DD) with the route
+  (e.g. "Common App, Regular Decision", "UCAS", "university portal"). Only dates actually
+  published; if only the 2026-entry date is published, include it and put "2026 entry" in title.
+- sat: policy for international applicants; p25/p75 total SAT only if the university publishes
+  them (Common Data Set or admissions profile).
+- acceptance_rate: only if officially published (CDS, admissions statistics page).
+- notes: one short line on anything important (e.g. "Foundation year required for 11-year
+  school certificates"), else "".
+
+Spend effort on the facts students need most: English minimum, tuition, deadlines. Keep each
+detail under 160 characters. Return only the JSON that matches the schema; use each
+university's id exactly as given.
+
+Universities:
+- id: 1042123a-851e-532f-9355-fdee1624b0e5 | Universiti Teknologi Malaysia | Johor Bahru, MY | http://www.utm.my/
+- id: 1fdfdef5-4d20-57c0-95ee-663973bb97b2 | Wageningen University & Research | Wageningen, NL | https://www.wur.nl/
+- id: 26fd17cb-9752-5eab-86f1-9f9768a938b7 | University of Geneva | Geneva, CH | http://www.unige.ch/
+- id: 4905a534-c722-5951-bcd1-2a676a636ead | Hanyang University | Seoul, KR | http://www.hanyang.ac.kr/
+codex
+I’ll check each university’s official admissions and fee pages, prioritizing current undergraduate English requirements, tuition, and published deadlines.
+exec
+/bin/zsh -lc 'cat /Users/likeanew/.agents/skills/lemma/SKILL.md' in /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+ succeeded in 0ms:
+---
+name: lemma
+description: Persistent cross-session memory for AI agents via MCP. BEFORE starting ANY task (coding, debugging, refactoring, research, docs, optimization — any language), FIRST call memory_read to load what you already know so you never re-derive or re-explore known facts. AFTER finishing, call memory_add to persist new findings and session_attempt for dead ends — unsaved knowledge is lost permanently. Distills reusable guides from experience.
+---
+
+<!-- lemma:skill:v=0.21.0 -->
+
+# Lemma — Persistent Memory & Learning
+
+Lemma is a persistent memory server for AI agents over the Model Context Protocol.
+Every session starts blank — knowledge survives ONLY through tool calls. If you
+learn something and don't save it (`memory_add`), it is gone permanently.
+
+## Workflow
+1. **RECALL** — `memory_read` / `semantic_search`: load what's already known for this
+   project/task. Never re-explore code or re-derive facts that are already saved.
+2. **ACT** — do the task.
+3. **PERSIST** — `memory_add` for new insights; `guide_practice` for guides applied;
+   `session_attempt` for abandoned/dead-end approaches (the most valuable records).
+
+## Two knowledge layers
+- **Memory fragments** (`memory_read` / `memory_add`): atomic facts. Types: `fact`,
+  `pattern`, `lesson`, `warning`, `context`. Confidence evolves with use and feedback.
+- **Guides** (`guide_get` / `guide_distill` / `guide_practice`): procedural skills
+  distilled from fragments. Track usage count + success/failure rate.
+Pipeline: `experience -> memory_add -> pattern/lesson -> guide_distill -> guide_practice`.
+
+## Tools at a glance
+- **Recall & search**: `memory_read`, `semantic_search`, `memory_library` (full
+  snapshot + maintenance signals), `memory_stats`, `memory_audit`.
+- **Write & maintain**: `memory_add`, `memory_update`, `memory_forget`,
+  `memory_merge`, `memory_relate` (supports / contradicts / supersedes / related_to),
+  `memory_feedback`.
+- **Guides**: `guide_get`, `guide_create`, `guide_distill`, `guide_practice`,
+  `guide_update`, `guide_forget`, `guide_merge`.
+- **Sessions & reasoning**: `session_start`, `session_end`, `session_attempt`,
+  `session_stats`, `suggestion_respond`.
+- **Background intelligence**: `conflict_scan`, `proactive_analysis`,
+  `project_analytics` (run automatically; act on signals when sensible).
+
+## Writing a fragment
+```
+## [Topic Title]
+### Context
+[1-2 sentences: what and why it matters]
+### [Content Section]
+- [Key fact 1]
+- [Key fact 2]
+### Rules (optional)
+- [Absolute constraint]
+```
+One idea per fragment, 30-2000 chars, structured markdown (not prose). **Store
+fragments in ENGLISH** (required for search/retrieval). Never ask permission to save.
+
+## Background intelligence
+Conflict detection, distill/merge/refine suggestions, and auto-linking run
+automatically. From the CLI, `lemma -lib` prints a full knowledge-base snapshot
+and `lemma -vis` launches a visualizer.
+
+web search: 
+web search: site:utm.my international undergraduate admission English IELTS TOEFL tuition fee 2026 2027 deadline ...
+web search: 
+web search: site:admission.utm.my undergraduate international tuition fee structure 2026 RM application fee ...
+web search: 
+web search: site:unige.ch/admissions bachelor 2026 30 avril fee 500 semester admission fee ...
+web search: 
+web search: 
+web search: 
+web search: 
+web search: 
+web search: site:wur.nl application fee bachelor international student 100 euro application fee ...
+codex
+{"universities":[{"id":"1042123a-851e-532f-9355-fdee1624b0e5","english":[{"test":"IELTS","minimum":5.5,"detail":"Undergraduate minimum, except TESL; TESL requires 6.5.","source_url":"https://admission.utm.my/english-language-requirements-3/"},{"test":"TOEFL iBT","minimum":46,"detail":"Undergraduate minimum, except TESL; TESL requires 79.","source_url":"https://admission.utm.my/english-language-requirements-3/"},{"test":"PTE Academic","minimum":51,"detail":"Undergraduate minimum, except TESL; TESL requires 63.","source_url":"https://admission.utm.my/english-language-requirements-3/"}],"tuition":null,"application_fee":{"amount":450,"currency":"MYR","source_url":"https://admission.utm.my/1faqs/"},"deadlines":[{"title":"February 2027 intake application closes","due_at":"2026-12-31","route":"UTM application portal","source_url":"https://admission.utm.my/undergraduate-international/"}],"sat":null,"acceptance_rate":null,"notes":"The published international fee schedule lists first-semester and full-programme fees, not annual tuition; February 2027 is the nearest published intake."},{"id":"1fdfdef5-4d20-57c0-95ee-663973bb97b2","english":[{"test":"IELTS","minimum":6,"detail":"IELTS Academic overall 6.0; speaking minimum 6.0.","source_url":"https://www.wur.nl/en/education/bachelor/application-admission-bachelors/apply-bachelors-programme/language-requirements"},{"test":"TOEFL iBT","minimum":80,"detail":"Overall 80; speaking minimum 20.","source_url":"https://www.wur.nl/en/education/bachelor/application-admission-bachelors/apply-bachelors-programme/language-requirements"},{"test":"PTE Academic","minimum":61,"detail":"Overall 61; speaking minimum 56.","source_url":"https://www.wur.nl/en/education/bachelor/application-admission-bachelors/apply-bachelors-programme/language-requirements"},{"test":"Cambridge C1/C2","minimum":169,"detail":"C1 Advanced: score 169–210; C2 Proficiency: 180–230.","source_url":"https://www.wur.nl/en/education/bachelor/application-admission-bachelors/apply-bachelors-programme/language-requirements"}],"tuition":{"amount":18840,"amount_max":null,"currency":"EUR","period":"year","academic_year":"2027/28","detail":"Non-EU bachelor's tuition; official published fee.","source_url":"https://www.wur.nl/en/education/bachelor/study-expenses-bachelors/tuition-fees-and-study-finances"},"application_fee":null,"deadlines":[{"title":"Non-EU application in Studielink, 2027 entry","due_at":"2027-04-15","route":"Studielink","source_url":"https://www.wur.nl/en/education/bachelor/application-admission-bachelors/apply-bachelors-programme"},{"title":"Non-EU documents in Osiris, 2027 entry","due_at":"2027-05-01","route":"WUR Osiris application portal","source_url":"https://www.wur.nl/en/education/bachelor/application-admission-bachelors/apply-bachelors-programme"}],"sat":null,"acceptance_rate":null,"notes":""},{"id":"26fd17cb-9752-5eab-86f1-9f9768a938b7","english":[],"tuition":{"amount":1000,"amount_max":null,"currency":"CHF","period":"year","academic_year":"2027/28","detail":"CHF 500 per semester; annual amount reflects two semesters. Same fee regardless of nationality.","source_url":"https://vie-de-campus.unige.ch/campus-life/administrative-procedures/taxes/semestre"},"application_fee":{"amount":65,"currency":"CHF","source_url":"https://www.unige.ch/immatriculations/application/files/2417/6842/8163/Conditions_dimmatriculation_2026-2027.pdf"},"deadlines":[{"title":"Bachelor application, 2027 entry","due_at":"2027-04-30","route":"UNIGE admissions portal","source_url":"https://www.unige.ch/bachelor-master/application/files/2317/8836/2975/UNIGE_BROCHURE_2026.pdf"},{"title":"Bachelor application for applicants requiring a visa, 2027 entry","due_at":"2027-02-28","route":"UNIGE admissions portal","source_url":"https://www.unige.ch/bachelor-master/application/files/2317/8836/2975/UNIGE_BROCHURE_2026.pdf"}],"sat":null,"acceptance_rate":null,"notes":"Bachelor's studies generally require French at B2 level; English test minimums are not published as a general bachelor requirement."},{"id":"4905a534-c722-5951-bcd1-2a676a636ead","english":[{"test":"IELTS","minimum":6,"detail":"English-track Data Science and Business requires 6.0; International Studies requires 6.5.","source_url":"https://oia.hanyang.ac.kr/files/attach/filebox/2026/08/24/4bad55cf33436519f06a243547ec2a6e.pdf"},{"test":"TOEFL iBT","minimum":80,"detail":"English-track Data Science and Business requires 80; International Studies requires 89.","source_url":"https://oia.hanyang.ac.kr/files/attach/filebox/2026/08/24/4bad55cf33436519f06a243547ec2a6e.pdf"}],"tuition":{"amount":10558000,"amount_max":15640000,"currency":"KRW","period":"year","academic_year":"2026/27","detail":"Annualized from Fall 2026 per-semester fees; field range Humanities/Social Science to Music; subject to change.","source_url":"https://oia.hanyang.ac.kr/files/attach/filebox/2026/08/24/4bad55cf33436519f06a243547ec2a6e.pdf"},"application_fee":{"amount":142000,"currency":"KRW","source_url":"https://oia.hanyang.ac.kr/files/attach/filebox/2026/08/24/4bad55cf33436519f06a243547ec2a6e.pdf"},"deadlines":[{"title":"2027 Spring online application closes","due_at":"2026-09-18","route":"Hanyang OIA portal","source_url":"https://oia.hanyang.ac.kr/files/attach/filebox/2026/08/24/4bad55cf33436519f06a243547ec2a6e.pdf"},{"title":"2027 Spring document submission closes","due_at":"2026-09-30","route":"Postal submission to Hanyang OIA","source_url":"https://oia.hanyang.ac.kr/files/attach/filebox/2026/08/24/4bad55cf33436519f06a243547ec2a6e.pdf"}],"sat":null,"acceptance_rate":null,"notes":"Fall 2027 deadlines were not published in the located guide; Spring 2027 is the nearest published cycle. Korean-track students must meet Korean proficiency before starting."}] }
+tokens used
+74,854
+{"universities":[{"id":"1042123a-851e-532f-9355-fdee1624b0e5","english":[{"test":"IELTS","minimum":5.5,"detail":"Undergraduate minimum, except TESL; TESL requires 6.5.","source_url":"https://admission.utm.my/english-language-requirements-3/"},{"test":"TOEFL iBT","minimum":46,"detail":"Undergraduate minimum, except TESL; TESL requires 79.","source_url":"https://admission.utm.my/english-language-requirements-3/"},{"test":"PTE Academic","minimum":51,"detail":"Undergraduate minimum, except TESL; TESL requires 63.","source_url":"https://admission.utm.my/english-language-requirements-3/"}],"tuition":null,"application_fee":{"amount":450,"currency":"MYR","source_url":"https://admission.utm.my/1faqs/"},"deadlines":[{"title":"February 2027 intake application closes","due_at":"2026-12-31","route":"UTM application portal","source_url":"https://admission.utm.my/undergraduate-international/"}],"sat":null,"acceptance_rate":null,"notes":"The published international fee schedule lists first-semester and full-programme fees, not annual tuition; February 2027 is the nearest published intake."},{"id":"1fdfdef5-4d20-57c0-95ee-663973bb97b2","english":[{"test":"IELTS","minimum":6,"detail":"IELTS Academic overall 6.0; speaking minimum 6.0.","source_url":"https://www.wur.nl/en/education/bachelor/application-admission-bachelors/apply-bachelors-programme/language-requirements"},{"test":"TOEFL iBT","minimum":80,"detail":"Overall 80; speaking minimum 20.","source_url":"https://www.wur.nl/en/education/bachelor/application-admission-bachelors/apply-bachelors-programme/language-requirements"},{"test":"PTE Academic","minimum":61,"detail":"Overall 61; speaking minimum 56.","source_url":"https://www.wur.nl/en/education/bachelor/application-admission-bachelors/apply-bachelors-programme/language-requirements"},{"test":"Cambridge C1/C2","minimum":169,"detail":"C1 Advanced: score 169–210; C2 Proficiency: 180–230.","source_url":"https://www.wur.nl/en/education/bachelor/application-admission-bachelors/apply-bachelors-programme/language-requirements"}],"tuition":{"amount":18840,"amount_max":null,"currency":"EUR","period":"year","academic_year":"2027/28","detail":"Non-EU bachelor's tuition; official published fee.","source_url":"https://www.wur.nl/en/education/bachelor/study-expenses-bachelors/tuition-fees-and-study-finances"},"application_fee":null,"deadlines":[{"title":"Non-EU application in Studielink, 2027 entry","due_at":"2027-04-15","route":"Studielink","source_url":"https://www.wur.nl/en/education/bachelor/application-admission-bachelors/apply-bachelors-programme"},{"title":"Non-EU documents in Osiris, 2027 entry","due_at":"2027-05-01","route":"WUR Osiris application portal","source_url":"https://www.wur.nl/en/education/bachelor/application-admission-bachelors/apply-bachelors-programme"}],"sat":null,"acceptance_rate":null,"notes":""},{"id":"26fd17cb-9752-5eab-86f1-9f9768a938b7","english":[],"tuition":{"amount":1000,"amount_max":null,"currency":"CHF","period":"year","academic_year":"2027/28","detail":"CHF 500 per semester; annual amount reflects two semesters. Same fee regardless of nationality.","source_url":"https://vie-de-campus.unige.ch/campus-life/administrative-procedures/taxes/semestre"},"application_fee":{"amount":65,"currency":"CHF","source_url":"https://www.unige.ch/immatriculations/application/files/2417/6842/8163/Conditions_dimmatriculation_2026-2027.pdf"},"deadlines":[{"title":"Bachelor application, 2027 entry","due_at":"2027-04-30","route":"UNIGE admissions portal","source_url":"https://www.unige.ch/bachelor-master/application/files/2317/8836/2975/UNIGE_BROCHURE_2026.pdf"},{"title":"Bachelor application for applicants requiring a visa, 2027 entry","due_at":"2027-02-28","route":"UNIGE admissions portal","source_url":"https://www.unige.ch/bachelor-master/application/files/2317/8836/2975/UNIGE_BROCHURE_2026.pdf"}],"sat":null,"acceptance_rate":null,"notes":"Bachelor's studies generally require French at B2 level; English test minimums are not published as a general bachelor requirement."},{"id":"4905a534-c722-5951-bcd1-2a676a636ead","english":[{"test":"IELTS","minimum":6,"detail":"English-track Data Science and Business requires 6.0; International Studies requires 6.5.","source_url":"https://oia.hanyang.ac.kr/files/attach/filebox/2026/08/24/4bad55cf33436519f06a243547ec2a6e.pdf"},{"test":"TOEFL iBT","minimum":80,"detail":"English-track Data Science and Business requires 80; International Studies requires 89.","source_url":"https://oia.hanyang.ac.kr/files/attach/filebox/2026/08/24/4bad55cf33436519f06a243547ec2a6e.pdf"}],"tuition":{"amount":10558000,"amount_max":15640000,"currency":"KRW","period":"year","academic_year":"2026/27","detail":"Annualized from Fall 2026 per-semester fees; field range Humanities/Social Science to Music; subject to change.","source_url":"https://oia.hanyang.ac.kr/files/attach/filebox/2026/08/24/4bad55cf33436519f06a243547ec2a6e.pdf"},"application_fee":{"amount":142000,"currency":"KRW","source_url":"https://oia.hanyang.ac.kr/files/attach/filebox/2026/08/24/4bad55cf33436519f06a243547ec2a6e.pdf"},"deadlines":[{"title":"2027 Spring online application closes","due_at":"2026-09-18","route":"Hanyang OIA portal","source_url":"https://oia.hanyang.ac.kr/files/attach/filebox/2026/08/24/4bad55cf33436519f06a243547ec2a6e.pdf"},{"title":"2027 Spring document submission closes","due_at":"2026-09-30","route":"Postal submission to Hanyang OIA","source_url":"https://oia.hanyang.ac.kr/files/attach/filebox/2026/08/24/4bad55cf33436519f06a243547ec2a6e.pdf"}],"sat":null,"acceptance_rate":null,"notes":"Fall 2027 deadlines were not published in the located guide; Spring 2027 is the nearest published cycle. Korean-track students must meet Korean proficiency before starting."}] }

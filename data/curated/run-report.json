@@ -1,0 +1,553 @@
+{
+ "as_of": "2026-11-16",
+ "validation": {
+  "warning tuition-jump": 195,
+  "warning admit-gap": 5,
+  "error impossible": 4,
+  "warning sat-gap": 1
+ },
+ "target_trust": {
+  "acceptance_rate": {
+   "verified": 25,
+   "likely": 0,
+   "check": 2
+  },
+  "act_scores": {
+   "verified": 21,
+   "likely": 0,
+   "check": 0
+  },
+  "admitted": {
+   "verified": 23,
+   "likely": 0,
+   "check": 0
+  },
+  "applicants": {
+   "verified": 23,
+   "likely": 0,
+   "check": 0
+  },
+  "application_fee": {
+   "verified": 50,
+   "likely": 0,
+   "check": 3
+  },
+  "bachelor_fields": {
+   "verified": 28,
+   "likely": 0,
+   "check": 0
+  },
+  "cost_of_attendance": {
+   "verified": 27,
+   "likely": 0,
+   "check": 0
+  },
+  "deadlines": {
+   "verified": 81,
+   "likely": 22,
+   "check": 58
+  },
+  "documents": {
+   "verified": 21,
+   "likely": 0,
+   "check": 5
+  },
+  "duolingo": {
+   "verified": 19,
+   "likely": 0,
+   "check": 25
+  },
+  "founded_year": {
+   "verified": 0,
+   "likely": 201,
+   "check": 0
+  },
+  "gpa_avg": {
+   "verified": 2,
+   "likely": 0,
+   "check": 0
+  },
+  "grad_rate": {
+   "verified": 27,
+   "likely": 0,
+   "check": 0
+  },
+  "ielts": {
+   "verified": 63,
+   "likely": 1,
+   "check": 79
+  },
+  "international_share": {
+   "verified": 28,
+   "likely": 0,
+   "check": 0
+  },
+  "intl_aid": {
+   "verified": 1,
+   "likely": 0,
+   "check": 0
+  },
+  "living_cost": {
+   "verified": 11,
+   "likely": 0,
+   "check": 10
+  },
+  "mandatory_fees": {
+   "verified": 3,
+   "likely": 0,
+   "check": 21
+  },
+  "median_earnings_10y": {
+   "verified": 28,
+   "likely": 0,
+   "check": 0
+  },
+  "net_price": {
+   "verified": 16,
+   "likely": 0,
+   "check": 0
+  },
+  "platform": {
+   "verified": 152,
+   "likely": 0,
+   "check": 43
+  },
+  "programmes": {
+   "verified": 35,
+   "likely": 0,
+   "check": 0
+  },
+  "room_board": {
+   "verified": 1,
+   "likely": 0,
+   "check": 0
+  },
+  "sat_act": {
+   "verified": 2,
+   "likely": 0,
+   "check": 14
+  },
+  "sat_scores": {
+   "verified": 21,
+   "likely": 0,
+   "check": 0
+  },
+  "student_count": {
+   "verified": 0,
+   "likely": 125,
+   "check": 0
+  },
+  "toefl": {
+   "verified": 51,
+   "likely": 1,
+   "check": 39
+  },
+  "tuition": {
+   "verified": 85,
+   "likely": 2,
+   "check": 55
+  },
+  "undergrads": {
+   "verified": 28,
+   "likely": 0,
+   "check": 0
+  }
+ },
+ "adapters": {
+  "oc-shards": {
+   "inputs": [
+    "data/review/oc-shards/output-1.json",
+    "data/review/oc-shards/output-2.json",
+    "data/review/oc-shards/output-3.json",
+    "data/review/oc-shards/output-4.json",
+    "data/review/oc-shards/output-5.json",
+    "data/review/oc-shards/output-6.json",
+    "data/review/ds-collect/output-101.json"
+   ],
+   "observations": 783,
+   "rejected": 115,
+   "unmatched": 0
+  },
+  "targets-latest": {
+   "inputs": [
+    "data/review/targets-latest-nov15.json"
+   ],
+   "observations": 776,
+   "rejected": 0,
+   "unmatched": 0
+  },
+  "nov14-merged": {
+   "inputs": [
+    "data/review/segment-admissions-nov14-merged.json"
+   ],
+   "observations": 410,
+   "rejected": 0,
+   "unmatched": 0
+  },
+  "programmes-latest": {
+   "inputs": [
+    "data/review/programmes-latest-nov15.json"
+   ],
+   "observations": 20,
+   "rejected": 0,
+   "unmatched": 0
+  },
+  "programmes-costs-nov14": {
+   "inputs": [
+    "data/review/programmes-costs-nov14.json"
+   ],
+   "observations": 47,
+   "rejected": 0,
+   "unmatched": 0
+  },
+  "published": {
+   "inputs": [
+    "data/published/application-dates-current.json",
+    "data/published/application-dates-segment-nov14.json",
+    "data/published/application-fees-current.json",
+    "data/published/application-fees-segment-nov14.json",
+    "data/published/requirements-current.json",
+    "data/published/requirements-segment-nov14.json"
+   ],
+   "observations": 135,
+   "rejected": 0,
+   "unmatched": 0
+  },
+  "scorecard": {
+   "inputs": [
+    "data/review/scorecard-2026-11.json"
+   ],
+   "observations": 21635,
+   "rejected": 1,
+   "unmatched": 0
+  },
+  "us-history": {
+   "inputs": [
+    "data/review/us-history-pre-2026-11.json"
+   ],
+   "observations": 3469,
+   "rejected": 1,
+   "unmatched": 0
+  },
+  "ipeds": {
+   "inputs": [
+    "data/published/ipeds-admissions-2023.json",
+    "data/published/ipeds-fees-2023.json"
+   ],
+   "observations": 6755,
+   "rejected": 3,
+   "unmatched": 0
+  },
+  "wikidata": {
+   "inputs": [
+    "data/published/wikidata-facts-nov14.json"
+   ],
+   "observations": 16273,
+   "rejected": 1,
+   "unmatched": 0
+  },
+  "cds": {
+   "inputs": [
+    "data/review/cds-2025-26.json"
+   ],
+   "observations": 159,
+   "rejected": 0,
+   "unmatched": 0
+  },
+  "cricos-duo": {
+   "inputs": [
+    "data/review/datasets-nov16.json"
+   ],
+   "observations": 118,
+   "rejected": 0,
+   "unmatched": 0
+  },
+  "datasets-nov16b": {
+   "inputs": [
+    "data/review/datasets-nov16b.json"
+   ],
+   "observations": 420,
+   "rejected": 0,
+   "unmatched": 0
+  }
+ },
+ "universities": {
+  "current": 13887,
+  "excluded": 116,
+  "targets_current": 204
+ },
+ "exclusions": {
+  "duplicate": 24,
+  "no-bachelors": 74,
+  "closed": 18
+ },
+ "duplicate_groups": 24,
+ "rejects": {
+  "total": 129,
+  "by_reason": {
+   "missing-source: deadlines": 8,
+   "missing-source: ielts": 4,
+   "missing-source: toefl": 2,
+   "missing-source: duolingo": 1,
+   "missing-source: platform": 57,
+   "missing-source: tuition": 7,
+   "missing-source: mandatory_fees": 9,
+   "missing-source: sat_act": 118,
+   "missing-source: documents": 2,
+   "schema: deadlines": 3,
+   "range: acceptance_rate": 5,
+   "schema: founded_year": 1,
+   "impossible: applicants": 4,
+   "impossible: admitted": 4
+  }
+ },
+ "unmatched": 0,
+ "conflicts": {
+  "total": 92,
+  "tie": 34,
+  "by_rule": {
+   "fetched>snippet": 3,
+   "newer-academic-year": 41,
+   "verified-dataset>research": 14
+  }
+ },
+ "history": {
+  "older academic year ; owner rule: latest only": 10249,
+  "lost conflict": 58,
+  "older intake ; newest is 2027": 6
+ },
+ "current_years": {
+  "2025/26": 21398,
+  "2026/27": 5795,
+  "2027/28": 78,
+  "timeless": 11994
+ },
+ "coverage": {
+  "targets": {
+   "total": 204,
+   "before": {
+    "tuition": 119,
+    "deadlines": 152,
+    "platform": 178,
+    "ielts": 139,
+    "toefl": 85,
+    "duolingo": 44,
+    "sat_act": 16,
+    "application_fee": 0,
+    "acceptance_rate": 0,
+    "documents": 3,
+    "programmes": 0,
+    "sat_scores": 0,
+    "bachelor_fields": 0,
+    "intl_aid": 0,
+    "applicants": 0,
+    "gpa_avg": 0,
+    "c7_factors": 0,
+    "room_board": 0,
+    "intl_students": 0
+   },
+   "after": {
+    "tuition": 142,
+    "deadlines": 161,
+    "platform": 195,
+    "ielts": 143,
+    "toefl": 91,
+    "duolingo": 44,
+    "sat_act": 16,
+    "application_fee": 53,
+    "acceptance_rate": 27,
+    "documents": 26,
+    "programmes": 35,
+    "sat_scores": 21,
+    "bachelor_fields": 28,
+    "intl_aid": 1,
+    "applicants": 23,
+    "gpa_avg": 2,
+    "c7_factors": 0,
+    "room_board": 1,
+    "intl_students": 0
+   }
+  },
+  "us": {
+   "total": 3466,
+   "before": {
+    "tuition": 1859,
+    "acceptance_rate": 1673,
+    "sat_scores": 681,
+    "act_scores": 686
+   },
+   "after": {
+    "tuition": 2262,
+    "acceptance_rate": 1697,
+    "sat_scores": 1027,
+    "act_scores": 913
+   }
+  },
+  "all": {
+   "total": 13887,
+   "after": {
+    "tuition": 2670,
+    "deadlines": 266,
+    "platform": 292,
+    "ielts": 191,
+    "toefl": 119,
+    "duolingo": 57,
+    "sat_act": 28,
+    "application_fee": 55,
+    "acceptance_rate": 1697,
+    "documents": 41,
+    "programmes": 123,
+    "sat_scores": 1027,
+    "bachelor_fields": 2367,
+    "intl_aid": 1,
+    "applicants": 162,
+    "gpa_avg": 2,
+    "c7_factors": 0,
+    "room_board": 1,
+    "intl_students": 0
+   }
+  }
+ },
+ "spot_check": [
+  {
+   "id": "eeb0f2d2-e86e-533d-8558-25ddf9674fff",
+   "name": "Anna Maria College",
+   "country_code": "US",
+   "reason": "closed",
+   "detail": "Scorecard UNITID 164492: CURROPER=0, PREDDEG=3, HIGHDEG=4"
+  },
+  {
+   "id": "1f72a710-d76c-5525-84eb-af1a7e555551",
+   "name": "Memphis Theological Seminary",
+   "country_code": "US",
+   "reason": "closed",
+   "detail": "Scorecard UNITID 220871: CURROPER=0, PREDDEG=4, HIGHDEG=4"
+  },
+  {
+   "id": "3d12e355-31d4-5bfd-a275-3bc71edffb37",
+   "name": "Polytechnic University of Puerto Rico-Miami",
+   "country_code": "US",
+   "reason": "closed",
+   "detail": "Scorecard UNITID 456481: CURROPER=0, PREDDEG=3, HIGHDEG=4"
+  },
+  {
+   "id": "f9f16466-c4ba-563a-8c2f-b26ee53a6c87",
+   "name": "Abilene Christian University",
+   "country_code": "US",
+   "reason": "duplicate",
+   "detail": "merged into efcd0b52-6611-50e3-9ac7-d9831889822a (Abilene Christian University); shared ROR https://ror.org/004srrf86"
+  },
+  {
+   "id": "b4e9c076-eb29-5515-9986-53e93d215a52",
+   "name": "Indiana University-South Bend",
+   "country_code": "US",
+   "reason": "duplicate",
+   "detail": "merged into 50759d76-f3b9-5218-8502-203e0d66c99d (Indiana University-South Bend); shared IPEDS unitid 151342"
+  },
+  {
+   "id": "eeb9ddf4-9d78-5d3a-ab5c-0fcd9d8704d9",
+   "name": "Palm Beach State College",
+   "country_code": "US",
+   "reason": "duplicate",
+   "detail": "merged into 20589910-87be-55c8-a2cf-2f32b701b433 (Palm Beach State College); shared IPEDS unitid 136358"
+  },
+  {
+   "id": "3a39d973-a8b5-5808-9512-eabb05f6fcec",
+   "name": "University of Houston",
+   "country_code": "US",
+   "reason": "duplicate",
+   "detail": "merged into c73aa8d4-48b0-5ee4-b8a6-5b62bfa1ce65 (University of Houston); shared name + country + domain (uh.edu)"
+  },
+  {
+   "id": "d33b1f2e-a6f5-5cd5-a106-c5f49498d514",
+   "name": "Advance Science International College",
+   "country_code": "US",
+   "reason": "no-bachelors",
+   "detail": "Scorecard UNITID 444334: CURROPER=1, PREDDEG=2, HIGHDEG=2"
+  },
+  {
+   "id": "ef276c99-d786-557d-b04e-c439f4a8cf34",
+   "name": "Bais Binyomin Academy",
+   "country_code": "US",
+   "reason": "no-bachelors",
+   "detail": "Scorecard UNITID 128586: CURROPER=1, PREDDEG=2, HIGHDEG=2"
+  },
+  {
+   "id": "614f7e8a-67cb-5c9b-bacc-b6ed46e416f6",
+   "name": "Cerritos College",
+   "country_code": "US",
+   "reason": "no-bachelors",
+   "detail": "Scorecard UNITID 111887: CURROPER=1, PREDDEG=1, HIGHDEG=2"
+  },
+  {
+   "id": "f4f0b06f-ffa6-53ff-8960-fa32aa35de26",
+   "name": "College of the Canyons",
+   "country_code": "US",
+   "reason": "no-bachelors",
+   "detail": "Scorecard UNITID 111461: CURROPER=1, PREDDEG=2, HIGHDEG=2"
+  },
+  {
+   "id": "8c23a995-8007-5ed9-a780-5a8343b18668",
+   "name": "Davis College",
+   "country_code": "US",
+   "reason": "no-bachelors",
+   "detail": "Scorecard UNITID 202435: CURROPER=1, PREDDEG=1, HIGHDEG=2"
+  },
+  {
+   "id": "8dd11fb1-8993-5e45-b9b0-644ad8131e03",
+   "name": "East Los Angeles College",
+   "country_code": "US",
+   "reason": "no-bachelors",
+   "detail": "Scorecard UNITID 113856: CURROPER=1, PREDDEG=1, HIGHDEG=2"
+  },
+  {
+   "id": "a650a26b-d904-5628-a311-93b513088961",
+   "name": "Galen Health Institutes-Asheville",
+   "country_code": "US",
+   "reason": "no-bachelors",
+   "detail": "Scorecard UNITID 498119: CURROPER=1, PREDDEG=2, HIGHDEG=2"
+  },
+  {
+   "id": "2ebd3c7f-0825-59af-b82b-2196ef06b951",
+   "name": "Guam Community College",
+   "country_code": "US",
+   "reason": "no-bachelors",
+   "detail": "Scorecard UNITID 240745: CURROPER=1, PREDDEG=2, HIGHDEG=2"
+  },
+  {
+   "id": "acbac6c9-d34e-5054-a532-4f6fab95f6d7",
+   "name": "Los Angeles Mission College",
+   "country_code": "US",
+   "reason": "no-bachelors",
+   "detail": "Scorecard UNITID 117867: CURROPER=1, PREDDEG=2, HIGHDEG=2"
+  },
+  {
+   "id": "94b5895d-7587-5885-a618-0604b8442a63",
+   "name": "Nebraska Indian Community College",
+   "country_code": "US",
+   "reason": "no-bachelors",
+   "detail": "Scorecard UNITID 181419: CURROPER=1, PREDDEG=2, HIGHDEG=2"
+  },
+  {
+   "id": "59269fdb-a17e-5290-ab49-a4ac8f05a528",
+   "name": "Phoenix College",
+   "country_code": "US",
+   "reason": "no-bachelors",
+   "detail": "Scorecard UNITID 105428: CURROPER=1, PREDDEG=1, HIGHDEG=2"
+  },
+  {
+   "id": "236a6f22-b0dc-5301-a1a8-0a3a30638d62",
+   "name": "San Diego Miramar College",
+   "country_code": "US",
+   "reason": "no-bachelors",
+   "detail": "Scorecard UNITID 122384: CURROPER=1, PREDDEG=2, HIGHDEG=2"
+  },
+  {
+   "id": "562144c2-31cc-52ae-a272-ed5a8bccfcbe",
+   "name": "Stark State College",
+   "country_code": "US",
+   "reason": "no-bachelors",
+   "detail": "Scorecard UNITID 205841: CURROPER=1, PREDDEG=1, HIGHDEG=2"
+  }
+ ]
+}

@@ -1,0 +1,7 @@
+# University profile refinement — Muse Spark 1.3 xhigh
+
+Continue CollegeStat in this existing checkout. FIRST inspect pages-ui/university.tsx, its profile components, current styles, lib/domain.ts, and docs. Improve genuine university-page usability and fix concrete UI bugs: source/date clarity, section navigation, responsive action buttons, tab overflow, readable two-theme content, honest empty states and comfortable data comparison. Preserve URLs, profile facts/history, official ranking ties/bands, functioning save/compare and all working sections. Never fabricate logos, programs, admissions or rank data.
+
+Own ONLY pages-ui/university.tsx, new university-specific helper/component files, app/university-refinement-oct09.css and meaningful scoped tests. Do not edit existing shared components, globals.css, landing, dashboards, auth/provider, API/server/data/migrations/dependencies. Root will import new CSS. Inspect prior edits before changing your owned file. No hosted writes, credentials, model substitution, account creation or external messages. Never read .env or outputs/review-account.json. Do not run the full build, restart servers or touch other agents' files.
+
+Deliver functioning targeted refinements, not another full redesign. Use existing icons and CSS, keyboard/touch accessible controls and reduced-motion handling. Run scoped checks and report files, actual fixes and remaining limitations in outputs/muse-university-pages-oct09-report.md.

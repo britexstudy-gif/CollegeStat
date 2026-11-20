@@ -1,0 +1,64 @@
+OpenAI Codex v0.169.0
+--------
+workdir: /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+model: gpt-6-luna
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: high
+reasoning summaries: none
+session id: 01a1ee7e-06bf-72f2-97f8-a600ce170604
+--------
+user
+You are a careful admissions-data researcher. For each university below, find facts for an
+INTERNATIONAL applicant to a FIRST-YEAR BACHELOR'S degree starting in autumn 2027 (or the nearest
+published cycle). Use the live web. Rules:
+
+- Official sources only: the university's own website (its domain or subdomains), the national
+  application service (UCAS, Common App, OUAC, uni-assist, Studyinkorea, etc.) or a government
+  statistics office. Never use rankings sites, forums, agencies, Wikipedia or blogs.
+- Every value needs the exact page URL where you read it (source_url). If you could not verify a
+  value on an official page, leave it out (null or an empty list). Never guess or estimate.
+- english: the lowest overall score accepted for undergraduate entry, per test (IELTS Academic
+  overall, TOEFL iBT total, Duolingo, PTE). If programmes differ, give the general/lowest common
+  university minimum and say so in detail (e.g. "6.5 overall, no band below 6.0; some
+  programmes higher").
+- tuition: the yearly tuition for international (non-EU / overseas) undergraduates in the local
+  currency. If it varies by programme give amount = lowest and amount_max = highest, and the
+  academic_year the fee applies to (e.g. "2026/27"). If tuition is free, amount = 0.
+- application_fee: for international first-year applicants, local currency.
+- deadlines: the main 2027-entry first-year deadlines (ISO date YYYY-MM-DD) with the route
+  (e.g. "Common App, Regular Decision", "UCAS", "university portal"). Only dates actually
+  published; if only the 2026-entry date is published, include it and put "2026 entry" in title.
+- sat: policy for international applicants; p25/p75 total SAT only if the university publishes
+  them (Common Data Set or admissions profile).
+- acceptance_rate: only if officially published (CDS, admissions statistics page).
+- notes: one short line on anything important (e.g. "Foundation year required for 11-year
+  school certificates"), else "".
+
+Spend effort on the facts students need most: English minimum, tuition, deadlines. Keep each
+detail under 160 characters. Return only the JSON that matches the schema; use each
+university's id exactly as given.
+
+Universities:
+- id: 39a0a410-8dec-5d39-bba7-99eb9fd534c4 | Lomonosov Moscow State University | Moscow, RU | https://www.msu.ru/
+- id: 35ce761b-adcc-5c73-8bc4-a358b418afa6 | Technical University of Denmark | Kongens Lyngby, DK | http://www.dtu.dk/
+- id: dce3ec59-808e-5353-8d69-da5e8e8e29fe | King Saud University | Riyadh, SA | http://www.ksu.edu.sa/
+- id: ea07bd5a-d5e8-59b9-bfd9-600587605f25 | Universidade de São Paulo | São Paulo, BR | https://www5.usp.br
+codex
+I’m checking each university’s official admissions and fee pages, prioritizing entry English requirements, international tuition, and published deadlines.
+web search: 
+web search: site:msu.ru international applicants undergraduate tuition 2026 admission English language deadline 2027 ...
+web search: 
+web search: site:dtu.dk "tuition fee" "Bachelor" non-EU DTU 2026 ...
+web search: 
+web search: site:dtu.dk/english/education/undergraduate "tuition fee" ...
+web search: 
+web search: site:dtu.dk/english/education/undergraduate/general-engineering "application fee" ...
+web search: 
+web search: 
+codex
+{"universities":[{"id":"39a0a410-8dec-5d39-bba7-99eb9fd534c4","english":[],"tuition":null,"application_fee":null,"deadlines":[{"title":"Bachelor application deadline (2026 entry)","due_at":"2026-07-15","route":"MSU online platform","source_url":"https://openday.msu.ru/en/admissions"}],"sat":null,"acceptance_rate":null,"notes":"Tuition and exact deadlines vary by faculty; most programmes are taught in Russian."},{"id":"35ce761b-adcc-5c73-8bc4-a358b418afa6","english":[{"test":"IELTS","minimum":6.5,"detail":"IELTS Academic; General Engineering requirement for international applicants.","source_url":"https://www.dtu.dk/english/education/undergraduate/general-engineering/admission-and-deadlines/admission-requirements"},{"test":"TOEFL iBT","minimum":94,"detail":"General Engineering: 94 for tests before 2026-01-21 for 2027 admission; new scale minimum 4.5.","source_url":"https://www.dtu.dk/uddannelse/ansoegning-og-optagelse/diplomingenioer-bachelor-optagelse/adgangskrav/specifikke-adgangskrav"},{"test":"Cambridge C1/C2","minimum":180,"detail":"C1 Advanced or C2 Proficiency; General Engineering requirement.","source_url":"https://www.dtu.dk/english/education/undergraduate/general-engineering/admission-and-deadlines/admission-requirements"}],"tuition":{"amount":15000,"amount_max":null,"currency":"EUR","period":"year","academic_year":"Current published fee; year not stated","detail":"Non-EU/EEA BSc General Engineering; €7,500 per semester.","source_url":"https://dtu.dk/english/education/undergraduate/general-engineering/admission-and-deadlines/fees-funding-and-permits"},"application_fee":{"amount":100,"currency":"EUR","source_url":"https://dtu.dk/english/education/undergraduate/general-engineering/admission-and-deadlines/fees-funding-and-permits"},"deadlines":[{"title":"International application deadline (2027 entry)","due_at":"2027-03-15","route":"Optagelse.dk","source_url":"https://www.dtu.dk/english/education/undergraduate/general-engineering/admission-and-deadlines/deadlines-and-important-dates"}],"sat":null,"acceptance_rate":null,"notes":"International bachelor admission applies to the English-taught General Engineering programme."},{"id":"dce3ec59-808e-5353-8d69-da5e8e8e29fe","english":[],"tuition":null,"application_fee":null,"deadlines":[],"sat":{"policy":"required","p25":null,"p75":null,"source_url":"https://dar.ksu.edu.sa/en/overseas"},"acceptance_rate":null,"notes":"Overseas applicants apply for external scholarships or fee-based Health Sciences; external scholarship applicants need SAT 1010+."},{"id":"ea07bd5a-d5e8-59b9-bfd9-600587605f25","english":[],"tuition":{"amount":0,"amount_max":null,"currency":"BRL","period":"year","academic_year":"2027 entry","detail":"USP undergraduate programmes do not charge tuition or enrollment fees for Brazilian or foreign students.","source_url":"https://www.iag.usp.br/en/internacional/graduacao-estrangeiros"},"application_fee":{"amount":228,"currency":"BRL","source_url":"https://www.fuvest.br/vestibular-da-usp/"},"deadlines":[{"title":"FUVEST 2027 application deadline","due_at":"2026-10-09","route":"FUVEST","source_url":"https://www.fuvest.br/vestibular-da-usp/"}],"sat":null,"acceptance_rate":null,"notes":"Undergraduate classes are in Portuguese; foreign degree applicants may apply through regular entrance processes."}] }
+tokens used
+48,532
+{"universities":[{"id":"39a0a410-8dec-5d39-bba7-99eb9fd534c4","english":[],"tuition":null,"application_fee":null,"deadlines":[{"title":"Bachelor application deadline (2026 entry)","due_at":"2026-07-15","route":"MSU online platform","source_url":"https://openday.msu.ru/en/admissions"}],"sat":null,"acceptance_rate":null,"notes":"Tuition and exact deadlines vary by faculty; most programmes are taught in Russian."},{"id":"35ce761b-adcc-5c73-8bc4-a358b418afa6","english":[{"test":"IELTS","minimum":6.5,"detail":"IELTS Academic; General Engineering requirement for international applicants.","source_url":"https://www.dtu.dk/english/education/undergraduate/general-engineering/admission-and-deadlines/admission-requirements"},{"test":"TOEFL iBT","minimum":94,"detail":"General Engineering: 94 for tests before 2026-01-21 for 2027 admission; new scale minimum 4.5.","source_url":"https://www.dtu.dk/uddannelse/ansoegning-og-optagelse/diplomingenioer-bachelor-optagelse/adgangskrav/specifikke-adgangskrav"},{"test":"Cambridge C1/C2","minimum":180,"detail":"C1 Advanced or C2 Proficiency; General Engineering requirement.","source_url":"https://www.dtu.dk/english/education/undergraduate/general-engineering/admission-and-deadlines/admission-requirements"}],"tuition":{"amount":15000,"amount_max":null,"currency":"EUR","period":"year","academic_year":"Current published fee; year not stated","detail":"Non-EU/EEA BSc General Engineering; €7,500 per semester.","source_url":"https://dtu.dk/english/education/undergraduate/general-engineering/admission-and-deadlines/fees-funding-and-permits"},"application_fee":{"amount":100,"currency":"EUR","source_url":"https://dtu.dk/english/education/undergraduate/general-engineering/admission-and-deadlines/fees-funding-and-permits"},"deadlines":[{"title":"International application deadline (2027 entry)","due_at":"2027-03-15","route":"Optagelse.dk","source_url":"https://www.dtu.dk/english/education/undergraduate/general-engineering/admission-and-deadlines/deadlines-and-important-dates"}],"sat":null,"acceptance_rate":null,"notes":"International bachelor admission applies to the English-taught General Engineering programme."},{"id":"dce3ec59-808e-5353-8d69-da5e8e8e29fe","english":[],"tuition":null,"application_fee":null,"deadlines":[],"sat":{"policy":"required","p25":null,"p75":null,"source_url":"https://dar.ksu.edu.sa/en/overseas"},"acceptance_rate":null,"notes":"Overseas applicants apply for external scholarships or fee-based Health Sciences; external scholarship applicants need SAT 1010+."},{"id":"ea07bd5a-d5e8-59b9-bfd9-600587605f25","english":[],"tuition":{"amount":0,"amount_max":null,"currency":"BRL","period":"year","academic_year":"2027 entry","detail":"USP undergraduate programmes do not charge tuition or enrollment fees for Brazilian or foreign students.","source_url":"https://www.iag.usp.br/en/internacional/graduacao-estrangeiros"},"application_fee":{"amount":228,"currency":"BRL","source_url":"https://www.fuvest.br/vestibular-da-usp/"},"deadlines":[{"title":"FUVEST 2027 application deadline","due_at":"2026-10-09","route":"FUVEST","source_url":"https://www.fuvest.br/vestibular-da-usp/"}],"sat":null,"acceptance_rate":null,"notes":"Undergraduate classes are in Portuguese; foreign degree applicants may apply through regular entrance processes."}] }

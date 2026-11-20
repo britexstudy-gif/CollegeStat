@@ -1,0 +1,548 @@
+{
+ "schemaVersion": 1,
+ "checked_at": "2026-11-16",
+ "purpose": "Article overlay: drafts approved after fact checks, small copy fixes, verified official videos (oEmbed), our own summaries of outside articles, and outside articles we no longer list (dead, bot-blocked, off-topic or thin).",
+ "approve": [
+  "balanced-university-list",
+  "common-app-2026-27",
+  "common-app-essay-practical",
+  "english-tests-central-asia",
+  "germany-studienkolleg",
+  "kazakhstan-11-year-certificate",
+  "sat-central-asia",
+  "stipendium-hungaricum-central-asia",
+  "student-visa-basics",
+  "ucas-2027",
+  "us-need-based-aid-internationals",
+  "uzbekistan-11-year-certificate"
+ ],
+ "author": "CollegeStat editors",
+ "fixes": {},
+ "videos": {
+  "common-app-2026-27": {
+   "id": "rM2x2j03haU",
+   "title": "How to fill out the Common App (2026–2027): first-year application tutorial",
+   "channel": "Common App"
+  },
+  "sat-central-asia": {
+   "id": "a7LUE8EQSLM",
+   "title": "What to expect from the digital SAT",
+   "channel": "College Board"
+  },
+  "stipendium-hungaricum-central-asia": {
+   "id": "8Bkqt08pBH0",
+   "title": "Study in Hungary: the place to be, the place to study",
+   "channel": "Study in Hungary"
+  }
+ },
+ "external": {
+  "mit-college-essay": {
+   "summary": "An MIT admissions officer explains why many college essays sound the same and how to write one that sounds like you: plain words, one real story, no borrowed phrases.",
+   "points": [
+    "Write plainly. Short, direct words beat clever phrases and clichés.",
+    "Books of “winning essays” tend to make essays bland. Use them carefully, if at all.",
+    "One specific, true story says more than general claims about your goals or character.",
+    "Cut anything that does not help the essay.",
+    "Imagine telling the story to a relative at dinner, honestly and without trying to impress."
+   ],
+   "note": "Archived MIT post from 2012. The advice still holds; check mitadmissions.org for current rules.",
+   "checked_at": "2026-11-16"
+  },
+  "mit-applying-sideways": {
+   "summary": "An MIT admissions officer argues that there is no single achievement that gets you in, so stop chasing one. Do well in class, be kind and follow real interests; admission chances follow from that.",
+   "points": [
+    "Take hard classes and learn deeply, because the learning has value whatever happens.",
+    "Be kind and help people around you; teachers who write references notice it.",
+    "Choose activities you enjoy, not ones picked only to impress a university.",
+    "Activities done for appearances often show, and they make your years less happy."
+   ],
+   "note": "Archived MIT post from 2010.",
+   "checked_at": "2026-11-16"
+  },
+  "gatech-essay-all-about-you": {
+   "summary": "Georgia Tech's dean of admission tells students to stop guessing what colleges want and write about what they really think and care about, in their own voice.",
+   "points": [
+    "There is no “right” topic. Choose something you actually think about.",
+    "Keep your own voice: no forced quotes, no inflated vocabulary.",
+    "Use the essay to think about your values and explain them clearly.",
+    "AI tools can help you brainstorm, but the final words should be yours.",
+    "Too many editors, or paying someone, can erase the voice colleges want to hear."
+   ],
+   "checked_at": "2026-11-16"
+  },
+  "usc-requesting-teacher-recommendations": {
+   "summary": "A school counsellor writing for USC explains how to ask teachers for recommendation letters that show more than grades, and how to thank them.",
+   "points": [
+    "A teacher from a class where you struggled and improved can write a strong letter.",
+    "Follow your school's process and ask early; letters are usually uploaded online.",
+    "Recent teachers who know you well are better than teachers from years ago.",
+    "Give each teacher a short note: why you chose them, a project you are proud of, anything they should know.",
+    "Thank them, and tell them later where you decided to go."
+   ],
+   "checked_at": "2026-11-16"
+  },
+  "cambridge-interview-what-to-expect": {
+   "summary": "Cambridge's official guide to undergraduate interviews: when they happen, how long they last and what they are like. They are academic conversations about your subject.",
+   "points": [
+    "Everyone who gets an offer has been interviewed, but not everyone interviewed gets an offer.",
+    "For 2027 entry the main interviews run from 7 to 18 December 2026; dates usually cannot be moved.",
+    "Your college decides whether the interview is online or in person.",
+    "Most applicants have one or two interviews, 35 minutes to an hour in total.",
+    "Cambridge's guidance is free and it does not endorse paid interview coaching."
+   ],
+   "checked_at": "2026-11-16"
+  },
+  "harvard-application-tips": {
+   "summary": "Harvard's own walkthrough of the Common App and the Harvard supplement, section by section, with notes on fee waivers, test scores and the short-answer questions.",
+   "points": [
+    "Your application is complete only after the Harvard supplement is submitted.",
+    "Use your legal name the same way on every document.",
+    "If the fee is a hardship, ask for a waiver; applying for aid does not hurt your chances.",
+    "Self-report only official test scores, not practice scores.",
+    "Quality of activities matters more than filling every slot; the supplement has five short answers of up to 150 words."
+   ],
+   "checked_at": "2026-11-16"
+  },
+  "ubc-personal-profile-student-tips": {
+   "summary": "Current UBC students share how they wrote the personal profile, the required short-answer part of the UBC application.",
+   "points": [
+    "List your activities first, then note what you learned from each.",
+    "Look for a thread that links your choices and interests.",
+    "Draft in a separate document, start early and leave time to revise.",
+    "Be honest; small personal stories count.",
+    "The profile is one part of the application, next to grades and activities."
+   ],
+   "checked_at": "2026-11-16"
+  },
+  "ielts-speaking-dont-overdo-it": {
+   "summary": "Official IELTS advice for the Speaking test: be natural, talk about real experiences and do not recite memorised answers.",
+   "points": [
+    "The Speaking test is a face-to-face talk with an examiner, about 15 minutes long.",
+    "Made-up stories do not raise your score; real experiences are easier to talk about.",
+    "Examiners notice memorised answers.",
+    "If your mind goes blank, a phrase like “I'm not sure, but…” still shows good English.",
+    "Accents are not marked down. Focus on fluency, grammar and pronunciation."
+   ],
+   "checked_at": "2026-11-16"
+  },
+  "ielts-10-steps-high-scoring-essays": {
+   "summary": "Official IELTS advice on Writing Task 2: how essays are marked and a simple plan for planning, writing and checking in 40 minutes.",
+   "points": [
+    "Four things are marked equally: answering the task, linking ideas, vocabulary and grammar.",
+    "Spend about 5–10 minutes planning, 15–20 writing and 10 checking.",
+    "Use a clear shape: introduction, two or three body paragraphs with one idea each, conclusion.",
+    "Use linking words only where they help.",
+    "In the final check, fix long sentences, repeated words and paragraphs with two ideas."
+   ],
+   "checked_at": "2026-11-16"
+  },
+  "toefl-common-mistakes": {
+   "summary": "ETS, the maker of the TOEFL iBT, lists eight common mistakes test takers make before and during the test, section by section.",
+   "points": [
+    "General English practice is not enough; learn the TOEFL question types and timing.",
+    "Practise each section with a timer.",
+    "Learn how the Reading questions work and stay focused in Listening.",
+    "Do not memorise Speaking answers; speak at a clear, steady pace.",
+    "Use a simple structure in Writing and check grammar and small errors."
+   ],
+   "checked_at": "2026-11-16"
+  },
+  "duolingo-english-test-prep-guide": {
+   "summary": "The Duolingo English Test team explains how to get ready: know the format, practise English every day and set up a quiet room for test day.",
+   "points": [
+    "The test measures your current English, so cramming the night before changes little.",
+    "It is adaptive: questions get harder or easier based on your answers.",
+    "Take the free practice test to learn the format and see your likely score range.",
+    "On test day you need a quiet, well-lit room, a webcam, a microphone, stable internet and your ID; no headphones.",
+    "Results usually arrive within two days."
+   ],
+   "checked_at": "2026-11-16"
+  },
+  "college-board-digital-sat-tips": {
+   "summary": "College Board's own test-day tips for the digital SAT in Bluebook: pacing, the built-in tools and how to practise.",
+   "points": [
+    "You can show or hide the timer; flag a hard question and come back to it.",
+    "Use the annotation tool to highlight and take notes on passages.",
+    "Answers have no pattern; use the eliminator to cross out wrong options.",
+    "Never leave a question blank. There is no penalty for guessing.",
+    "Take a full practice test in Bluebook, then work on your weakest areas."
+   ],
+   "checked_at": "2026-11-16"
+  },
+  "usc-submit-test-scores": {
+   "summary": "USC admissions explains how it treats SAT and ACT scores while testing is optional, and how to decide whether to send yours.",
+   "points": [
+    "Sending scores is your choice; send them if you are proud of them.",
+    "Your school transcript matters more than test scores.",
+    "If you do not send scores, USC does not assume you are hiding something.",
+    "If you test more than once, USC uses your best section scores."
+   ],
+   "note": "Policies change by year and by university. Check each university's current testing rule.",
+   "checked_at": "2026-11-16"
+  },
+  "ucas-choosing-right-uk-course": {
+   "summary": "UCAS's guide for international students applying to UK universities: entry and English requirements, visas, and the new document upload service.",
+   "points": [
+    "Each university sets its own entry requirements, so they differ between courses.",
+    "English requirements can differ even between courses at the same university.",
+    "You will need a Student visa; the page explains when and how to apply.",
+    "For 2027 entry UCAS adds a document upload service, for example for English certificates and passport details."
+   ],
+   "checked_at": "2026-11-16"
+  },
+  "tufts-college-search-right-fit": {
+   "summary": "Tufts admissions explains what “fit” means and what to think about when choosing where to apply, beyond reputation.",
+   "points": [
+    "Choose for your own goals, not only for a famous name or family pressure.",
+    "City, suburb or countryside changes daily life; think about distance from home too.",
+    "Large and small universities feel very different.",
+    "Research universities and liberal arts colleges have different strengths; check your subject is offered.",
+    "Ask current students and admissions staff questions."
+   ],
+   "checked_at": "2026-11-16"
+  },
+  "jhu-stay-organized-college-search": {
+   "summary": "Johns Hopkins admissions shares simple ways to keep a college search organised: a balanced list, one tracking sheet and tidy email.",
+   "points": [
+    "Apply to about 8–10 universities, mixing reach, target and safer choices.",
+    "Name the few things that matter most to you and use them to narrow the list.",
+    "Keep one spreadsheet with location, size, deadlines, programmes and student life.",
+    "Make an email folder per university and unsubscribe from those you dropped."
+   ],
+   "checked_at": "2026-11-16"
+  },
+  "usc-faqs-international-families": {
+   "summary": "A USC international admissions officer answers common questions from families abroad about documents, testing, review and money.",
+   "points": [
+    "International applicants send nearly the same materials, plus an English test if needed and translated transcripts.",
+    "USC has no country quotas; each application is read on its own.",
+    "SAT and ACT are optional, unless you use them to meet the English requirement.",
+    "Merit scholarships for international students are limited and have their own deadlines.",
+    "USC does not offer need-based aid to international students."
+   ],
+   "checked_at": "2026-11-16"
+  },
+  "study-in-nl-bachelors": {
+   "summary": "The official Study in NL site explains the two kinds of bachelor's degrees in the Netherlands and how they differ.",
+   "points": [
+    "Universities of applied sciences: usually 4 years (240 credits), practical, with internships.",
+    "Research universities: usually 3 years (180 credits), academic, with a thesis.",
+    "Degrees include BSc, BA and LLB.",
+    "After either one you can work or continue to a master's."
+   ],
+   "checked_at": "2026-11-16"
+  },
+  "study-australia-understanding-qualifications": {
+   "summary": "Study Australia, the government's site, explains the levels of Australian qualifications and how long each takes.",
+   "points": [
+    "The Australian Qualifications Framework (AQF) sets one standard for all levels.",
+    "Vocational courses (certificates, diplomas) teach job skills at TAFE and colleges.",
+    "A bachelor's degree takes 3–5 years; honours usually adds a year.",
+    "You can move up between levels as you study."
+   ],
+   "checked_at": "2026-11-16"
+  },
+  "waterloo-choosing-career": {
+   "summary": "A University of Waterloo guide for school students on choosing a career: know yourself, define success, research, and do not rush.",
+   "points": [
+    "List your strengths, favourite subjects and tasks you want to avoid.",
+    "Decide what success means to you: pay, travel, flexibility or independence.",
+    "Check the education needed, salary and daily routine; talk to people in the job.",
+    "Co-op programmes let you try a career through paid work during your degree."
+   ],
+   "checked_at": "2026-11-16"
+  },
+  "ukcisa-opening-bank-account": {
+   "summary": "UKCISA, the UK council for international students, explains which bank accounts students can open in the UK and what checks banks make.",
+   "points": [
+    "Basic bank accounts are usually free and have no overdraft.",
+    "Some banks offer international student accounts and Sharia-compliant accounts.",
+    "Banks must check your identity and immigration status.",
+    "Your university can often give a letter confirming you are a student.",
+    "Tell your bank when your address changes or you travel for a long time."
+   ],
+   "checked_at": "2026-11-16"
+  },
+  "campus-france-where-to-live": {
+   "summary": "Campus France, the French government agency, explains student housing in France, typical rents and how the rental process works.",
+   "points": [
+    "CROUS student residences cost about €450 a month in Paris and €350 elsewhere, but places are scarce.",
+    "Private flats start around €800 in Paris and €400 elsewhere.",
+    "No French guarantor? The free VISALE guarantee can help; start before you arrive.",
+    "The deposit is usually one month's rent. Never pay before you sign a lease."
+   ],
+   "checked_at": "2026-11-16"
+  }
+ },
+ "hidden": [
+  "bath-budget-university",
+  "bath-gold-scholarship",
+  "bath-international-moving-uk",
+  "campus-france-where-to-live",
+  "chevening-assessor-tips",
+  "college-board-digital-sat-tips",
+  "daad-costs-education-living",
+  "daad-right-university-germany",
+  "duolingo-english-test-prep-guide",
+  "educanada-scholarships-international",
+  "educationusa-apply-student-visa",
+  "educationusa-finance-undergraduate",
+  "educationusa-search-undergraduate-college",
+  "erasmus-mundus-joint-masters-students",
+  "fulbright-foreign-student-program",
+  "harvard-application-tips",
+  "harvard-applying-financial-aid-experience",
+  "harvard-choosing-college",
+  "harvard-dear-homesick-international-student",
+  "harvard-first-year-advice",
+  "harvard-first-year-finding-community",
+  "harvard-going-to-be-fine",
+  "harvard-study-abroad-careers",
+  "ielts-speaking-dont-overdo-it",
+  "jhu-stay-organized-college-search",
+  "jhu-supplemental-essay-advice",
+  "lincoln-oxford-interviews-really-like",
+  "lse-london-student-budget",
+  "mit-applying-sideways",
+  "mit-beyond-admissions",
+  "mit-college-essay",
+  "mit-reinstating-sat-act",
+  "study-australia-rental-application-tips",
+  "study-australia-understanding-qualifications",
+  "toefl-3-month-study-plan-2026",
+  "tufts-beginning-college-search",
+  "tufts-college-search-right-fit",
+  "tufts-essay-writing-tips",
+  "tufts-jumbo-in-room",
+  "ubc-personal-profile-student-tips",
+  "ubc-study-permit-student-tips",
+  "ucas-choosing-right-uk-course",
+  "ucas-personal-statement-multiple-courses",
+  "unimelb-college-life-international-student",
+  "usc-faqs-international-families",
+  "usc-requesting-teacher-recommendations",
+  "usc-submit-test-scores",
+  "waterloo-choosing-career"
+ ],
+ "covers": {
+  "balanced-university-list": {
+   "src": "/images/articles/balanced-university-list.webp",
+   "alt": "People are walking over the footbridges at the campus Roeterseiland; free photo Amsterdam, 10-2021",
+   "credit": "Fons Heijnsbroek",
+   "licence": "CC0",
+   "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "source_url": "https://commons.wikimedia.org/wiki/File:People_are_walking_over_the_footbridges_at_the_campus_Roeterseiland;_free_photo_Amsterdam,_10-2021.jpg"
+  },
+  "common-app-2026-27": {
+   "src": "/images/articles/common-app-2026-27.webp",
+   "alt": "Study Areas on 3rd Floor at the HCC",
+   "credit": "D00264450",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Study_Areas_on_3rd_Floor_at_the_HCC.jpg"
+  },
+  "common-app-essay-practical": {
+   "src": "/images/articles/common-app-essay-practical.webp",
+   "alt": "Smiling Student Working on Assignments at Desk",
+   "credit": "Heidy Garcia",
+   "licence": "CC BY 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by/4.0",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Smiling_Student_Working_on_Assignments_at_Desk.jpg"
+  },
+  "kazakhstan-11-year-certificate": {
+   "src": "/images/articles/kazakhstan-11-year-certificate.webp",
+   "alt": "Shymbulak, Almaty",
+   "credit": "Matti Blume",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Shymbulak,_Almaty_(P1180200).jpg"
+  },
+  "sat-central-asia": {
+   "src": "/images/articles/sat-central-asia.webp",
+   "alt": "Tashkent City at Night",
+   "credit": "Drksll",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Tashkent_City_at_Night.jpg"
+  },
+  "stipendium-hungaricum-central-asia": {
+   "src": "/images/articles/stipendium-hungaricum-central-asia.webp",
+   "alt": "Széchenyi Chain Bridge in Budapest at night",
+   "credit": "Wilfredor",
+   "licence": "CC0",
+   "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Sz%C3%A9chenyi_Chain_Bridge_in_Budapest_at_night.jpg"
+  },
+  "student-visa-basics": {
+   "src": "/images/articles/student-visa-basics.webp",
+   "alt": "DN Int'l Airport Jetstar Check-in",
+   "credit": "Dragfyre",
+   "licence": "CC BY-SA 3.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "source_url": "https://commons.wikimedia.org/wiki/File:DN_Int%27l_Airport_Jetstar_Check-in.jpg"
+  },
+  "ucas-2027": {
+   "src": "/images/articles/ucas-2027.webp",
+   "alt": "20130808 Kings College Chapel 01",
+   "credit": "Dmitry Tonkonog",
+   "licence": "CC BY-SA 3.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "source_url": "https://commons.wikimedia.org/wiki/File:20130808_Kings_College_Chapel_01.jpg"
+  },
+  "uzbekistan-11-year-certificate": {
+   "src": "/images/articles/uzbekistan-11-year-certificate.webp",
+   "alt": "Registan Samarkand Uzbekistan",
+   "credit": "Stomac",
+   "licence": "CC BY-SA 2.0 fr",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/2.0/fr/deed.en",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Registan_Samarkand_Uzbekistan.JPG"
+  },
+  "south-korea-gks-direct": {
+   "src": "/images/articles/south-korea-gks-direct.webp",
+   "alt": "Gyeonghoeru (Royal Banquet Hall) at Gyeongbokgung Palace, Seoul",
+   "credit": "Frank Schulenburg",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Gyeonghoeru_(Royal_Banquet_Hall)_at_Gyeongbokgung_Palace,_Seoul.jpg"
+  },
+  "english-tests-central-asia": {
+   "src": "/images/articles/english-tests-central-asia.webp",
+   "alt": "Mathematics lecture at the Helsinki University of Technology",
+   "credit": "Tungsten",
+   "licence": "Public domain",
+   "licence_url": null,
+   "source_url": "https://commons.wikimedia.org/wiki/File:Mathematics_lecture_at_the_Helsinki_University_of_Technology.jpg"
+  },
+  "us-need-based-aid-internationals": {
+   "src": "/images/articles/us-need-based-aid-internationals.webp",
+   "alt": "Harvard Yard im Sommer",
+   "credit": "Marco Almbauer",
+   "licence": "Public domain",
+   "licence_url": null,
+   "source_url": "https://commons.wikimedia.org/wiki/File:Harvard_Yard_im_Sommer.jpg"
+  },
+  "germany-studienkolleg": {
+   "src": "/images/articles/germany-studienkolleg.webp",
+   "alt": "Aerial image of Ludwig-Maximilians-Universität München (view from the southeast)",
+   "credit": "Carsten Steger",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Aerial_image_of_Ludwig-Maximilians-Universit%C3%A4t_M%C3%BCnchen_(view_from_the_southeast).jpg"
+  }
+ },
+ "unlisted": [
+  "south-korea-gks-direct"
+ ],
+ "links": {
+  "balanced-university-list": {
+   "scholarships": [
+    "mit-international-aid",
+    "turkiye-burslari-bachelor",
+    "stipendium-hungaricum-bachelor"
+   ]
+  },
+  "common-app-2026-27": {
+   "universities": [
+    {
+     "name": "Massachusetts Institute of Technology",
+     "slug": "mit"
+    },
+    {
+     "name": "Harvard University",
+     "slug": "harvard-university-39230496"
+    }
+   ],
+   "scholarships": [
+    "harvard-international-aid",
+    "yale-international-aid"
+   ]
+  },
+  "common-app-essay-practical": {
+   "scholarships": [
+    "yale-international-aid"
+   ]
+  },
+  "english-tests-central-asia": {
+   "universities": [
+    {
+     "name": "University of Oxford",
+     "slug": "oxford"
+    }
+   ]
+  },
+  "germany-studienkolleg": {
+   "scholarships": [
+    "deutschlandstipendium"
+   ]
+  },
+  "kazakhstan-11-year-certificate": {
+   "scholarships": [
+    "bolashak-bachelor-olympiad-2027",
+    "stipendium-hungaricum-bachelor"
+   ]
+  },
+  "sat-central-asia": {
+   "universities": [
+    {
+     "name": "Massachusetts Institute of Technology",
+     "slug": "mit"
+    }
+   ],
+   "scholarships": [
+    "mit-international-aid"
+   ]
+  },
+  "stipendium-hungaricum-central-asia": {
+   "scholarships": [
+    "stipendium-hungaricum-bachelor",
+    "czech-government-scholarships-developing-countries"
+   ]
+  },
+  "student-visa-basics": {
+   "scholarships": [
+    "chevening-scholarships",
+    "fulbright-foreign-student-program"
+   ]
+  },
+  "ucas-2027": {
+   "universities": [
+    {
+     "name": "University of Oxford",
+     "slug": "oxford"
+    },
+    {
+     "name": "University of Cambridge",
+     "slug": "university-of-cambridge-ae117645"
+    }
+   ],
+   "scholarships": [
+    "reach-oxford",
+    "exeter-excellence-scholarships"
+   ]
+  },
+  "us-need-based-aid-internationals": {
+   "universities": [
+    {
+     "name": "Harvard University",
+     "slug": "harvard-university-39230496"
+    },
+    {
+     "name": "Yale University",
+     "slug": "yale-university-0a670c6d"
+    }
+   ],
+   "scholarships": [
+    "mit-international-aid",
+    "harvard-international-aid",
+    "yale-international-aid",
+    "princeton-international-aid"
+   ]
+  },
+  "uzbekistan-11-year-certificate": {
+   "scholarships": [
+    "el-yurt-umidi-bachelor",
+    "turkiye-burslari-bachelor"
+   ]
+  }
+ }
+}

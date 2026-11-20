@@ -1,0 +1,209 @@
+[
+ {
+  "id": "5ad45ea9-e51c-59e4-9ef7-6d3768be673c",
+  "slug": "imperial-college-london-5ad45ea9",
+  "name": "Imperial College London",
+  "city": "London",
+  "website": "http://www.imperial.ac.uk/",
+  "country_code": "GB",
+  "qs": 2
+ },
+ {
+  "id": "99fbcf31-606d-5dac-880e-83ca25acd942",
+  "slug": "california-institute-of-technology-99fbcf31",
+  "name": "California Institute of Technology",
+  "city": "Pasadena",
+  "website": "http://www.caltech.edu/",
+  "country_code": "US",
+  "qs": 7
+ },
+ {
+  "id": "c66c3755-66a2-57a0-a80e-da984c310d29",
+  "slug": "national-university-of-singapore-c66c3755",
+  "name": "National University of Singapore",
+  "city": "Singapore",
+  "website": "https://www.nus.edu.sg/",
+  "country_code": "SG",
+  "qs": 8
+ },
+ {
+  "id": "4b7862dc-7567-5f81-af58-c01144412a88",
+  "slug": "university-college-london-4b7862dc",
+  "name": "University College London",
+  "city": "London",
+  "website": "http://www.ucl.ac.uk/",
+  "country_code": "GB",
+  "qs": 8
+ },
+ {
+  "id": "b37d730b-421c-5ed6-a807-3d66e7ca21f7",
+  "slug": "the-university-of-hong-kong-b37d730b",
+  "name": "The University of Hong Kong",
+  "city": "Pok Fu Lam",
+  "website": "https://www.hku.hk/",
+  "country_code": "HK",
+  "qs": 11
+ },
+ {
+  "id": "f5a6d73a-5fd2-55de-83af-3da2c25e18ef",
+  "slug": "nanyang-technological-university-f5a6d73a",
+  "name": "Nanyang Technological University",
+  "city": "Singapore",
+  "website": "https://www.ntu.edu.sg",
+  "country_code": "SG",
+  "qs": 12
+ },
+ {
+  "id": "7add53a9-8ddf-5e84-bd4d-a7c8638dbb95",
+  "slug": "university-of-chicago-7add53a9",
+  "name": "University of Chicago",
+  "city": "Chicago",
+  "website": "http://www.uchicago.edu/",
+  "country_code": "US",
+  "qs": 13
+ },
+ {
+  "id": "79e1cf8b-6a97-5fef-ac23-aa6012197801",
+  "slug": "peking-university-79e1cf8b",
+  "name": "Peking University",
+  "city": "Beijing",
+  "website": "http://www.pku.edu.cn/",
+  "country_code": "CN",
+  "qs": 13
+ },
+ {
+  "id": "519c66df-8779-5336-acda-2cba10f95c66",
+  "slug": "tsinghua-university-519c66df",
+  "name": "Tsinghua University",
+  "city": "Beijing",
+  "website": "http://www.tsinghua.edu.cn/",
+  "country_code": "CN",
+  "qs": 14
+ },
+ {
+  "id": "894119e1-40c1-5589-8677-e1ed97388e59",
+  "slug": "university-of-pennsylvania-894119e1",
+  "name": "University of Pennsylvania",
+  "city": "Philadelphia",
+  "website": "http://www.upenn.edu/",
+  "country_code": "US",
+  "qs": 15
+ },
+ {
+  "id": "8488d97e-a227-5fbd-b7b4-33a1194df723",
+  "slug": "cornell-university-8488d97e",
+  "name": "Cornell University",
+  "city": "Ithaca",
+  "website": "http://www.cornell.edu/",
+  "country_code": "US",
+  "qs": 16
+ },
+ {
+  "id": "0a670c6d-e20a-527f-851b-e2c1306cce70",
+  "slug": "yale-university-0a670c6d",
+  "name": "Yale University",
+  "city": "New Haven",
+  "website": "http://www.yale.edu/",
+  "country_code": "US",
+  "qs": 16
+ },
+ {
+  "id": "e67501b3-2e87-5598-b9e3-e28fe4101f68",
+  "slug": "university-of-california-berkeley-e67501b3",
+  "name": "University of California-Berkeley",
+  "city": "Berkeley",
+  "website": "http://www.berkeley.edu/",
+  "country_code": "US",
+  "qs": 17
+ },
+ {
+  "id": "7deae08f-080e-56cd-8aa8-ca05c941f0cc",
+  "slug": "the-chinese-university-of-hong-kong-7deae08f",
+  "name": "The Chinese University of Hong Kong",
+  "city": "Hong Kong",
+  "website": "https://www.cuhk.edu.hk/",
+  "country_code": "HK",
+  "qs": 18
+ },
+ {
+  "id": "6f8ca7da-1cba-56f4-89e6-4cffd48126ac",
+  "slug": "university-of-melbourne-6f8ca7da",
+  "name": "University of Melbourne",
+  "city": "Melbourne",
+  "website": "http://www.unimelb.edu.au/",
+  "country_code": "AU",
+  "qs": 19
+ },
+ {
+  "id": "34f9bd5c-1c24-5d4f-880c-4a342627a148",
+  "slug": "unsw-sydney-34f9bd5c",
+  "name": "UNSW Sydney",
+  "city": "Sydney",
+  "website": "https://www.unsw.edu.au/",
+  "country_code": "AU",
+  "qs": 19
+ },
+ {
+  "id": "f5c17f3c-ac83-5193-8c71-641147ad926c",
+  "slug": "johns-hopkins-university-f5c17f3c",
+  "name": "Johns Hopkins University",
+  "city": "Baltimore",
+  "website": "http://www.jhu.edu/",
+  "country_code": "US",
+  "qs": 20
+ },
+ {
+  "id": "819bd7c2-cc38-5dc4-854d-2d59a8a9f4e5",
+  "slug": "epfl-epf-lausanne-819bd7c2",
+  "name": "EPFL - EPF Lausanne",
+  "city": "Lausanne",
+  "website": "http://www.epfl.ch/",
+  "country_code": "CH",
+  "qs": 22
+ },
+ {
+  "id": "44444444-4444-4444-8444-444444444444",
+  "slug": "tum",
+  "name": "Technical University of Munich",
+  "city": "Munich",
+  "website": "https://www.tum.de",
+  "country_code": "DE",
+  "qs": 22
+ },
+ {
+  "id": "6f13f9e9-cf5f-56ad-8384-39a9dc592d58",
+  "slug": "princeton-university-6f13f9e9",
+  "name": "Princeton University",
+  "city": "Princeton",
+  "website": "http://www.princeton.edu/",
+  "country_code": "US",
+  "qs": 25
+ },
+ {
+  "id": "01649f44-22e4-5b85-adaa-81f3538aa083",
+  "slug": "king-s-college-london-university-of-london-01649f44",
+  "name": "King's College London, University of London",
+  "city": "London",
+  "website": "http://www.kcl.ac.uk/",
+  "country_code": "GB",
+  "qs": 31
+ },
+ {
+  "id": "74996b5e-c39f-52f1-9e01-88f3051f155b",
+  "slug": "the-hong-kong-university-of-science-and-technology-74996b5e",
+  "name": "The Hong Kong University of Science and Technology",
+  "city": "Hong Kong",
+  "website": "https://hkust.edu.hk/",
+  "country_code": "HK",
+  "qs": 33
+ },
+ {
+  "id": "3c2d87b3-5b20-5df8-99c0-1353112a63f2",
+  "slug": "ludwig-maximilians-universitat-munchen-3c2d87b3",
+  "name": "Ludwig-Maximilians-Universität München",
+  "city": "Munich",
+  "website": "https://www.lmu.de",
+  "country_code": "DE",
+  "qs": 58
+ }
+]

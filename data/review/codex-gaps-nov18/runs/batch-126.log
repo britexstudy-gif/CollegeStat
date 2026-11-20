@@ -1,0 +1,126 @@
+OpenAI Codex v0.169.0
+--------
+workdir: /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+model: gpt-6-luna
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: high
+reasoning summaries: none
+session id: 01a1ee9c-1b49-75c3-b7ea-7cf8008e82be
+--------
+user
+You are a careful admissions-data researcher. For each university below, find facts for an
+INTERNATIONAL applicant to a FIRST-YEAR BACHELOR'S degree starting in autumn 2027 (or the nearest
+published cycle). Use the live web. Rules:
+
+- Official sources only: the university's own website (its domain or subdomains), the national
+  application service (UCAS, Common App, OUAC, uni-assist, Studyinkorea, etc.) or a government
+  statistics office. Never use rankings sites, forums, agencies, Wikipedia or blogs.
+- Every value needs the exact page URL where you read it (source_url). If you could not verify a
+  value on an official page, leave it out (null or an empty list). Never guess or estimate.
+- english: the lowest overall score accepted for undergraduate entry, per test (IELTS Academic
+  overall, TOEFL iBT total, Duolingo, PTE). If programmes differ, give the general/lowest common
+  university minimum and say so in detail (e.g. "6.5 overall, no band below 6.0; some
+  programmes higher").
+- tuition: the yearly tuition for international (non-EU / overseas) undergraduates in the local
+  currency. If it varies by programme give amount = lowest and amount_max = highest, and the
+  academic_year the fee applies to (e.g. "2026/27"). If tuition is free, amount = 0.
+- application_fee: for international first-year applicants, local currency.
+- deadlines: the main 2027-entry first-year deadlines (ISO date YYYY-MM-DD) with the route
+  (e.g. "Common App, Regular Decision", "UCAS", "university portal"). Only dates actually
+  published; if only the 2026-entry date is published, include it and put "2026 entry" in title.
+- sat: policy for international applicants; p25/p75 total SAT only if the university publishes
+  them (Common Data Set or admissions profile).
+- acceptance_rate: only if officially published (CDS, admissions statistics page).
+- notes: one short line on anything important (e.g. "Foundation year required for 11-year
+  school certificates"), else "".
+
+Spend effort on the facts students need most: English minimum, tuition, deadlines. Keep each
+detail under 160 characters. Return only the JSON that matches the schema; use each
+university's id exactly as given.
+
+Universities:
+- id: dbde1b04-e231-50e5-b825-bed699deab78 | Tashkent State University of Economics | Tashkent, UZ | https://tsue.uz
+- id: 6a0687a3-898f-5c15-bc6b-443388eb105f | Abylai Khan University | Almaty, KZ | http://www.ablaikhan.kz/
+- id: a35e9e4f-d23a-5344-bde7-3b36b9f8a28f | Toraighyrov University | Pavlodar, KZ | https://tou.edu.kz
+- id: 2b37715c-42c8-5b71-bcac-de87380cd149 | Yessenov University | Aktau, KZ | http://yu.edu.kz/
+codex
+I’m checking the official admissions and fee pages for each university, prioritizing the current published cycle where 2027 details are not yet available.
+exec
+/bin/zsh -lc 'cat /Users/likeanew/.agents/skills/lemma/SKILL.md' in /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+ succeeded in 0ms:
+---
+name: lemma
+description: Persistent cross-session memory for AI agents via MCP. BEFORE starting ANY task (coding, debugging, refactoring, research, docs, optimization — any language), FIRST call memory_read to load what you already know so you never re-derive or re-explore known facts. AFTER finishing, call memory_add to persist new findings and session_attempt for dead ends — unsaved knowledge is lost permanently. Distills reusable guides from experience.
+---
+
+<!-- lemma:skill:v=0.21.0 -->
+
+# Lemma — Persistent Memory & Learning
+
+Lemma is a persistent memory server for AI agents over the Model Context Protocol.
+Every session starts blank — knowledge survives ONLY through tool calls. If you
+learn something and don't save it (`memory_add`), it is gone permanently.
+
+## Workflow
+1. **RECALL** — `memory_read` / `semantic_search`: load what's already known for this
+   project/task. Never re-explore code or re-derive facts that are already saved.
+2. **ACT** — do the task.
+3. **PERSIST** — `memory_add` for new insights; `guide_practice` for guides applied;
+   `session_attempt` for abandoned/dead-end approaches (the most valuable records).
+
+## Two knowledge layers
+- **Memory fragments** (`memory_read` / `memory_add`): atomic facts. Types: `fact`,
+  `pattern`, `lesson`, `warning`, `context`. Confidence evolves with use and feedback.
+- **Guides** (`guide_get` / `guide_distill` / `guide_practice`): procedural skills
+  distilled from fragments. Track usage count + success/failure rate.
+Pipeline: `experience -> memory_add -> pattern/lesson -> guide_distill -> guide_practice`.
+
+## Tools at a glance
+- **Recall & search**: `memory_read`, `semantic_search`, `memory_library` (full
+  snapshot + maintenance signals), `memory_stats`, `memory_audit`.
+- **Write & maintain**: `memory_add`, `memory_update`, `memory_forget`,
+  `memory_merge`, `memory_relate` (supports / contradicts / supersedes / related_to),
+  `memory_feedback`.
+- **Guides**: `guide_get`, `guide_create`, `guide_distill`, `guide_practice`,
+  `guide_update`, `guide_forget`, `guide_merge`.
+- **Sessions & reasoning**: `session_start`, `session_end`, `session_attempt`,
+  `session_stats`, `suggestion_respond`.
+- **Background intelligence**: `conflict_scan`, `proactive_analysis`,
+  `project_analytics` (run automatically; act on signals when sensible).
+
+## Writing a fragment
+```
+## [Topic Title]
+### Context
+[1-2 sentences: what and why it matters]
+### [Content Section]
+- [Key fact 1]
+- [Key fact 2]
+### Rules (optional)
+- [Absolute constraint]
+```
+One idea per fragment, 30-2000 chars, structured markdown (not prose). **Store
+fragments in ENGLISH** (required for search/retrieval). Never ask permission to save.
+
+## Background intelligence
+Conflict detection, distill/merge/refine suggestions, and auto-linking run
+automatically. From the CLI, `lemma -lib` prints a full knowledge-base snapshot
+and `lemma -vis` launches a visualizer.
+
+web search: 
+web search: site:tsue.uz international admission tuition 2026 2027 English TSUE ...
+web search: 
+web search: site:ablaikhan.kz/en international students admission fee tuition 2025 2026 IELTS ...
+web search: 
+web search: site:global.tou.edu.kz "Tuition fee" international "Bachelor" 2025 2026 ...
+web search: 
+web search: 
+web search: 
+web search: site:yu.edu.kz/en "international students" admission interview Yessenov ...
+codex
+{"universities":[{"id":"dbde1b04-e231-50e5-b825-bed699deab78","english":[],"tuition":null,"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"International applicants may be interviewed on mathematics and foreign-language proficiency; fees and deadlines are not published on the international page. [Source](https://innmanagement.tsue.uz/en/pages/international-applicants)"},{"id":"6a0687a3-898f-5c15-bc6b-443388eb105f","english":[],"tuition":null,"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"Foreign bachelor's applicants are assessed by interview; the page gives an application period but does not specify its year. [Source](https://www.ablaikhan.kz/en/for-applicants/for-applicants/international_students.html)"},{"id":"a35e9e4f-d23a-5344-bde7-3b36b9f8a28f","english":[],"tuition":{"amount":650000,"amount_max":null,"currency":"KZT","period":"year","academic_year":"2025/26","detail":"International bachelor's tuition starts at 650,000 KZT; valid for 2025/26 only.","source_url":"https://global.tou.edu.kz/community/students"},"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"Applicants may be admitted without a language certificate based on interview results. [Source](https://global.tou.edu.kz/faq)"},{"id":"2b37715c-42c8-5b71-bcac-de87380cd149","english":[],"tuition":null,"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"Foreign applicants seeking paid study are admitted by interview during the calendar year. [Source](https://yu.edu.kz/wp-content/uploads/2026/01/pravila-priema-10.06.2022.pdf)"}]}
+tokens used
+48,604
+{"universities":[{"id":"dbde1b04-e231-50e5-b825-bed699deab78","english":[],"tuition":null,"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"International applicants may be interviewed on mathematics and foreign-language proficiency; fees and deadlines are not published on the international page. [Source](https://innmanagement.tsue.uz/en/pages/international-applicants)"},{"id":"6a0687a3-898f-5c15-bc6b-443388eb105f","english":[],"tuition":null,"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"Foreign bachelor's applicants are assessed by interview; the page gives an application period but does not specify its year. [Source](https://www.ablaikhan.kz/en/for-applicants/for-applicants/international_students.html)"},{"id":"a35e9e4f-d23a-5344-bde7-3b36b9f8a28f","english":[],"tuition":{"amount":650000,"amount_max":null,"currency":"KZT","period":"year","academic_year":"2025/26","detail":"International bachelor's tuition starts at 650,000 KZT; valid for 2025/26 only.","source_url":"https://global.tou.edu.kz/community/students"},"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"Applicants may be admitted without a language certificate based on interview results. [Source](https://global.tou.edu.kz/faq)"},{"id":"2b37715c-42c8-5b71-bcac-de87380cd149","english":[],"tuition":null,"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"Foreign applicants seeking paid study are admitted by interview during the calendar year. [Source](https://yu.edu.kz/wp-content/uploads/2026/01/pravila-priema-10.06.2022.pdf)"}]}

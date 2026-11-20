@@ -1,0 +1,335 @@
+/* Home, AI-driven parts (home-foryou.tsx): the ask bar, the AI's picks and scholarships.
+ * Dashboard tokens, so light and dark follow the theme (neutral greys in dark, no navy). */
+
+/* Ask the AI */
+.fy-ask {
+  display: grid;
+  gap: 10px;
+}
+.fy-ask form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 54px;
+  padding: 0 8px 0 16px;
+  border: 1px solid var(--dk-line);
+  border-radius: 16px;
+  background: var(--dk-panel);
+  box-shadow: 0 1px 2px rgb(0 0 0 / 0.03);
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+.fy-ask form:focus-within {
+  border-color: var(--dk-line-strong, var(--dk-muted));
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--dk-accent, #2563eb) 10%, transparent);
+}
+.fy-ask-mark {
+  flex: none;
+  color: var(--dk-accent, #2563eb);
+}
+.fy-ask input,
+.fy-ask input:focus,
+.fy-ask input:focus-visible {
+  border: 0 !important;
+  outline: none !important;
+  box-shadow: none !important;
+  background: transparent !important;
+}
+.fy-ask input {
+  flex: 1;
+  min-width: 0;
+  height: 100%;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: var(--dk-ink);
+  font-size: 15px;
+}
+.fy-ask input::placeholder {
+  color: var(--dk-faint, var(--dk-muted));
+}
+.fy-ask button[type="submit"] {
+  display: grid;
+  flex: none;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 11px;
+  background: var(--dk-ink);
+  color: var(--dk-panel);
+  transition: opacity 0.15s ease, transform 0.15s ease;
+}
+.fy-ask button[type="submit"]:disabled {
+  opacity: 0.25;
+}
+.fy-ask button[type="submit"]:not(:disabled):hover {
+  transform: translateY(-1px);
+}
+.fy-ask button svg {
+  width: 17px;
+  height: 17px;
+}
+.fy-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.fy-chips button {
+  padding: 6px 12px;
+  border: 1px solid var(--dk-line);
+  border-radius: 999px;
+  background: var(--dk-panel);
+  color: var(--dk-muted);
+  font-size: 13px;
+  transition: color 0.15s ease, border-color 0.15s ease, transform 0.15s ease;
+}
+.fy-chips button:hover {
+  border-color: var(--dk-line-strong, var(--dk-muted));
+  color: var(--dk-ink);
+  transform: translateY(-1px);
+}
+
+/* Two cards side by side */
+.fy-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1.75fr) minmax(0, 1fr);
+  gap: 18px;
+  align-items: start;
+}
+.fy-card .h6-card-head h2 {
+  gap: 7px;
+}
+.fy-spark {
+  width: 15px;
+  height: 15px;
+  color: var(--dk-accent, #2563eb);
+}
+.fy-grow {
+  display: grid;
+  flex: 1;
+  gap: 1px;
+  min-width: 0;
+}
+.fy-grow strong {
+  overflow: hidden;
+  font-size: 14px;
+  font-weight: 600;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.fy-grow > span {
+  overflow: hidden;
+  color: var(--dk-muted);
+  font-size: 12.5px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* AI picks: two columns of rows */
+.fy-recs,
+.fy-sch {
+  display: grid;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.fy-recs {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 4px 18px;
+}
+.fy-rec,
+.fy-sch-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0 -8px;
+  padding: 9px 8px;
+  border-radius: 10px;
+  transition: background 0.15s ease;
+}
+.fy-rec:hover,
+.fy-sch-row:hover {
+  background: var(--dk-hover, var(--dk-subtle));
+}
+.fy-tier {
+  flex: none;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 11.5px;
+  font-weight: 600;
+}
+.fy-tier.is-reach {
+  background: color-mix(in srgb, #e8590c 12%, transparent);
+  color: #c2410c;
+}
+.fy-tier.is-target {
+  background: color-mix(in srgb, var(--dk-accent, #2563eb) 12%, transparent);
+  color: var(--dk-accent, #2563eb);
+}
+.fy-tier.is-safety {
+  background: color-mix(in srgb, #16a34a 12%, transparent);
+  color: #15803d;
+}
+html.dark .fy-tier.is-reach {
+  color: #fb923c;
+}
+html.dark .fy-tier.is-safety {
+  color: #4ade80;
+}
+
+/* Scholarships */
+.fy-sch {
+  gap: 2px;
+}
+.fy-flag {
+  display: grid;
+  flex: none;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 9px;
+  background: var(--dk-subtle, var(--dk-hover));
+  font-size: 17px;
+}
+.fy-days {
+  flex: none;
+  color: var(--dk-muted);
+  font-size: 12.5px;
+  white-space: nowrap;
+}
+.fy-days.is-soon {
+  color: #e8590c;
+  font-weight: 600;
+}
+.fy-muted {
+  color: var(--dk-muted);
+  font-size: 13.5px;
+}
+.fy-skel {
+  height: 180px;
+  border-radius: 12px;
+  background: linear-gradient(90deg, var(--dk-subtle, var(--dk-hover)) 0%, var(--dk-hover, var(--dk-line)) 50%, var(--dk-subtle, var(--dk-hover)) 100%);
+  background-size: 200% 100%;
+  animation: fy-shimmer 1.4s linear infinite;
+}
+@keyframes fy-shimmer {
+  to {
+    background-position: -200% 0;
+  }
+}
+
+/* Empty AI picks: one line and a button */
+.fy-empty {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 18px;
+  border: 1px dashed var(--dk-line);
+  border-radius: 12px;
+}
+.fy-empty p {
+  max-width: 46ch;
+  color: var(--dk-muted);
+  font-size: 13.5px;
+}
+.fy-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  height: 36px;
+  padding: 0 14px;
+  border-radius: 999px;
+  background: var(--dk-ink);
+  color: var(--dk-panel);
+  font-size: 13px;
+  font-weight: 600;
+}
+.fy-btn svg {
+  width: 14px;
+  height: 14px;
+}
+
+@media (max-width: 1100px) {
+  .fy-row {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+@media (max-width: 640px) {
+  .fy-recs {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .fy-ask form {
+    height: 50px;
+  }
+  .fy-chips {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  .fy-chips button {
+    flex: none;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .fy-skel {
+    animation: none;
+  }
+}
+
+/* Recently viewed (shown only with personalization consent). */
+.fy-recent {
+  display: grid;
+  gap: 10px;
+}
+.fy-recent-head {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+.fy-recent-head h2 {
+  font-size: 14px;
+  font-weight: 600;
+}
+.fy-recent-head span {
+  color: var(--dk-faint, var(--dk-muted));
+  font-size: 12.5px;
+}
+.fy-recent-head button {
+  margin-left: auto;
+  min-height: 32px;
+  padding: 0 8px;
+  color: var(--dk-muted);
+  font-size: 12.5px;
+}
+.fy-recent ul {
+  display: flex;
+  gap: 8px;
+  margin: 0;
+  padding: 0 0 2px;
+  overflow-x: auto;
+  list-style: none;
+  scrollbar-width: none;
+}
+.fy-recent-chip {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  max-width: 260px;
+  padding: 4px 14px 4px 6px;
+  border: 1px solid var(--dk-line);
+  border-radius: 999px;
+  background: var(--dk-panel);
+  color: var(--dk-ink);
+  font-size: 13px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.fy-recent-chip span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.fy-recent-chip:hover {
+  border-color: var(--dk-line-strong, var(--dk-muted));
+}

@@ -1,0 +1,122 @@
+# Common App 2026–27: step by step for applicants from Central Asia
+
+## In short
+
+- The Common App is one shared form. Every college still has its own deadline, supplement, testing rule and aid forms.
+- The 2026–27 season opened on 1 August 2026 with more than 1,200 member colleges. Use a 2026–27 account, not last year's.
+- Your school counselor sends the transcript and school report. If your school writes in Russian, Kazakh or Uzbek, ask early how it will provide English versions.
+- Submitting to one college does not send your application to the others, and you cannot remove a college from your list after you submit to it.
+
+## 1. Account and college list
+
+Create (or roll over) your account for the 2026–27 cycle, then add only colleges that use the Common App. Common App says the 2026–27 season launched on 1 August with more than 1,200 colleges and universities. [Common App: 2026–27 season](https://www.commonapp.org/blog/common-app-opens-application-launch-2026-27-season/)
+
+You can add up to 20 colleges to My Colleges. You can change the list at any time, but once you submit to a college you cannot remove it. [First-year students](https://www.commonapp.org/apply/first-year-students)
+
+For each college, write down the deadline, the entry term, the writing supplement, the testing policy, the recommendation rules and the financial-aid forms. The Common App is a platform, not an admissions office, so it sets no single deadline for all colleges. Each college's information page, the Explore Colleges profile and the requirements grid (a PDF listing every member's requirements) show these details. [First-year students](https://www.commonapp.org/apply/first-year-students)
+
+If you opened an account last year, your answers in My Common Application, including the personal essay, are kept when the new season opens. [Essay prompts announcement](https://www.commonapp.org/blog/announcing-2026-2027-common-app-essay-prompts/) In earlier cycles, Common App's counselor guidance said that college-specific answers, the FERPA release and recommender invitations do not roll over, so redo those in the new account. [Common App: What's new 2025–26 (PDF)](https://www.commonapp.org/files/Whats-New-25-26.pdf)
+
+## 2. The shared application
+
+Fill in profile, family, education, testing, activities and writing. Copy names and dates from your passport and school documents so they match everywhere. Enter your school's official name and its grading system as exactly as you can. In 2026–27 the activities section is called "activities and experiences". [Common App: 2026–27 season](https://www.commonapp.org/blog/common-app-opens-application-launch-2026-27-season/)
+
+In the testing section you can type in your own scores, and each college decides whether it requires tests, is test-optional or is flexible. [First-year students](https://www.commonapp.org/apply/first-year-students)
+
+The writing section also has an optional additional-information question. In 2025–26 Common App cut its limit from 650 to 300 words. [What's new 2025–26 (PDF)](https://www.commonapp.org/files/Whats-New-25-26.pdf) Use it for facts a reader needs, such as how your school's grading works or why a grade dropped. Do not use it for a second essay.
+
+> **Example.** Madina studies at a school in Tashkent that issues transcripts in Uzbek and Russian. In September she asks her counselor three things: who uploads the transcript, whether the school can provide an English version, and which grading scale the report should explain. She enters the answers in the education section in the same words her counselor will use.
+
+## 3. Recommendations and essay
+
+Invite your counselor first, because the transcript and school report depend on them. Common App describes the recommender types like this: counselors submit the school report and transcript, teachers describe your work in class, "other recommenders" are usually non-academic (a coach or employer), and advisors only follow your progress and submit nothing. Parents fill in a form only if you apply Early Decision. [First-year students](https://www.commonapp.org/apply/first-year-students)
+
+Before you can invite recommenders you complete the FERPA release authorization, under a college's "Recommenders and FERPA" page. Teachers and other recommenders get the email invitation only after you assign them to a college. If your school uses Naviance or another partner platform, you invite your counselor and teachers there, not in the Common App. [First-year students](https://www.commonapp.org/apply/first-year-students)
+
+Invite teachers only where a college asks for or allows teacher recommendations, and check each college separately: one may need two teacher letters, another none.
+
+The seven personal-essay prompts are the same for 2026–27 as last year. [Essay prompts](https://www.commonapp.org/blog/announcing-2026-2027-common-app-essay-prompts/) Each college decides whether the personal essay is required or optional for its applicants. [First-year students](https://www.commonapp.org/apply/first-year-students) Write the essay yourself and revise it for a clear, specific account, not a résumé in paragraph form.
+
+Our guide to the essay: [Writing a Common App essay](/articles/common-app-essay-practical).
+
+## 4. Submit one college at a time
+
+Submitting has three steps for each college: review the application, pay the fee if there is one, and submit. [First-year students](https://www.commonapp.org/apply/first-year-students) Read the preview PDF slowly, because what you see in the preview is what the college receives.
+
+Then check each university's portal or confirmation email to see that your recommendations, records and test scores arrived. Follow each university's rules for official score reports; scores you type in yourself do not replace official reports at every college.
+
+## Early or regular?
+
+Most US colleges on the Common App offer two rounds. Early deadlines usually fall in early or mid November, with decisions in December. Regular deadlines usually fall in early January, with decisions in March or early April. Some colleges also have a second early round in January. Check the exact dates on each college's page, because they differ.
+
+Early Decision is **binding**: if you are admitted, you agree to attend and withdraw your other applications. Only apply Early Decision if the college is your clear first choice *and* you have used its net price calculator, because you will not be able to compare aid offers. Early Action and Restrictive Early Action are not binding, but some limit where else you can apply early. Read each college's rules before you click submit.
+
+If you are reading this in late November, most first early deadlines have passed. You can still apply in the regular round and, at colleges that offer it, in a second Early Decision round. Spend the next weeks on regular-round supplements, not on regret.
+
+## Fees and fee waivers
+
+Using the Common App itself is free; some colleges charge an application fee and others do not. [First-year students](https://www.commonapp.org/apply/first-year-students) In 2024–25, Common App reported that more than 600 of its members charged no application fee. [What's new 2025–26 (PDF)](https://www.commonapp.org/files/Whats-New-25-26.pdf)
+
+There are two kinds of fee waiver: the Common App fee waiver, which your counselor must confirm, and a college's own fee waiver. [First-year students](https://www.commonapp.org/apply/first-year-students) The Common App waiver asks about indicators of economic need, so read its questions in the profile section with your counselor before you tick it. Many colleges also have their own waiver route for international students. Look for "fee waiver" on each admissions page, or email the admissions office before the deadline. Never pay an agent to "unlock" a fee waiver.
+
+## A month-by-month plan for 2026–27
+
+- **August–September:** create your 2026–27 account, finalise your list, ask your counselor and teachers in person, start the essay.
+- **October:** finish the shared sections, complete the FERPA release, send recommendation invitations, take or retake the SAT or English test if your colleges need them.
+- **Early November:** submit any early applications. Check the portals a week later to see that documents arrived.
+- **Late November–December:** finish supplements for the regular round; read early decisions and adjust your list.
+- **Early January:** submit regular applications at least two days before each deadline, not on the last evening.
+- **January–March:** answer document requests and make sure your counselor sends any mid-year report your colleges ask for.
+
+## What your school needs to give you
+
+Colleges expect three things from your school, usually uploaded by your counselor: a **school report** (a short form about your school and its grading), your **transcript** for grades 9–11 (and 12 when available) and a **counselor recommendation**. Schools in Central Asia often have never done this. Help your counselor with a one-page note: the deadlines, a link to Common App's [recommender guide](https://www.commonapp.org/counselors-and-recommenders/recommender-guide), and a copy of your grade pages in English. If nobody at school can act as counselor, ask the admissions office what it accepts instead; many have a route for this.
+
+## Organise your documents
+
+Keep one folder on your computer and one copy in cloud storage. A simple structure:
+
+1. **Identity:** passport scan, with your name spelled exactly as in the passport.
+2. **School:** transcript in the original language, the English version, the school's grading scale explained in one paragraph.
+3. **Tests:** score reports and the dates you sent them.
+4. **Writing:** the final personal essay and one file per college for supplements, named with the college and date.
+5. **Submitted:** the PDF of each submitted application.
+
+Name files in English, for example *Transcript_Grades9-11_EN.pdf*. When a college asks for a document, you will find it in a minute instead of an evening.
+
+## Questions to ask your counselor
+
+- Will you submit the school report and transcript through the Common App, or does our school use another platform?
+- Can the school issue the transcript in English, or should I arrange a translation, and who certifies it?
+- How will you describe our grading scale and the number of students in my grade?
+- Can you send a mid-year report in January or February if a college asks?
+- When do you need my list and deadlines to be on time without rushing?
+
+## Final check
+
+- Match the entry term and deadline for each school.
+- Ask your counselor whether records can go up in English or need a translation.
+- Save a copy of every submitted application and supplement.
+- Mark financial-aid deadlines separately. The admission deadline is not automatically the aid deadline. See [need-based aid for international families](/articles/us-need-based-aid-internationals).
+
+## Mistakes to avoid
+
+- Starting in a 2025–26 account because it was already on your phone.
+- Waiting until the week of the deadline to invite your counselor.
+- Assuming one "Submit" covers all colleges.
+- Adding a college "just in case" and submitting before you are sure; you cannot take it off your list afterwards.
+- Spelling your name differently in the application, the passport and the test registration.
+
+## Questions students often ask
+
+**Can I apply to universities outside the US through the Common App?** Some members are outside the US, but most UK universities use UCAS and many European universities have their own portals. Check the college search inside the Common App for each name. See [UCAS 2027](/articles/ucas-2027).
+
+**Do I need the SAT?** It depends on each college's testing policy, which you will find on its information page. See [SAT from Central Asia](/articles/sat-central-asia).
+
+**My school has no "counselor". Who do I invite?** The person who can speak for the school and send official records, often a deputy director or class teacher. Explain the role to them with the one-page note above.
+
+## Next
+
+- [Writing a Common App essay](/articles/common-app-essay-practical)
+- [Recommendations and school documents](/articles/recommendations-school-documents)
+- [The activities list](/articles/common-app-activities-list)

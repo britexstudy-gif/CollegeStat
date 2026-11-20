@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <circle cx="100" cy="100" r="97" fill="#fff" stroke="#1b6fb5" stroke-width="5"/>
+  <circle cx="100" cy="100" r="72" fill="#1b6fb5"/>
+  <defs>
+    <path id="arcTop" d="M 100,100 m -84,0 a 84,84 0 1,1 168,0"/>
+    <path id="arcBot" d="M 100,100 m -84,0 a 84,84 0 1,0 168,0"/>
+  </defs>
+  <text font-family="Arial, sans-serif" font-size="11.5" font-weight="bold" fill="#1b6fb5" letter-spacing="1.5">
+    <textPath href="#arcTop" startOffset="50%" text-anchor="middle">ANDIJON DAVLAT UNIVERSITETI</textPath>
+  </text>
+  <text font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#1b6fb5" letter-spacing="4">
+    <textPath href="#arcBot" startOffset="50%" text-anchor="middle">O'ZBEKISTON</textPath>
+  </text>
+  <g fill="#fff">
+    <polygon points="100,52 138,74 62,74"/>
+    <rect x="66" y="77" width="68" height="5" rx="1"/>
+    <rect x="70" y="86" width="7" height="38"/>
+    <rect x="83" y="86" width="7" height="38"/>
+    <rect x="96.5" y="86" width="7" height="38"/>
+    <rect x="110" y="86" width="7" height="38"/>
+    <rect x="123" y="86" width="7" height="38"/>
+    <rect x="64" y="127" width="72" height="5" rx="1"/>
+    <rect x="60" y="135" width="80" height="5" rx="1"/>
+  </g>
+  <text x="100" y="158" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#fff" text-anchor="middle">1931</text>
+</svg>

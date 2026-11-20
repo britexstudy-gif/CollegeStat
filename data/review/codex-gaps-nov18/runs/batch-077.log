@@ -1,0 +1,62 @@
+OpenAI Codex v0.169.0
+--------
+workdir: /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+model: gpt-6-luna
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: high
+reasoning summaries: none
+session id: 01a1ee8d-f7cc-7c11-92b5-67897865f90f
+--------
+user
+You are a careful admissions-data researcher. For each university below, find facts for an
+INTERNATIONAL applicant to a FIRST-YEAR BACHELOR'S degree starting in autumn 2027 (or the nearest
+published cycle). Use the live web. Rules:
+
+- Official sources only: the university's own website (its domain or subdomains), the national
+  application service (UCAS, Common App, OUAC, uni-assist, Studyinkorea, etc.) or a government
+  statistics office. Never use rankings sites, forums, agencies, Wikipedia or blogs.
+- Every value needs the exact page URL where you read it (source_url). If you could not verify a
+  value on an official page, leave it out (null or an empty list). Never guess or estimate.
+- english: the lowest overall score accepted for undergraduate entry, per test (IELTS Academic
+  overall, TOEFL iBT total, Duolingo, PTE). If programmes differ, give the general/lowest common
+  university minimum and say so in detail (e.g. "6.5 overall, no band below 6.0; some
+  programmes higher").
+- tuition: the yearly tuition for international (non-EU / overseas) undergraduates in the local
+  currency. If it varies by programme give amount = lowest and amount_max = highest, and the
+  academic_year the fee applies to (e.g. "2026/27"). If tuition is free, amount = 0.
+- application_fee: for international first-year applicants, local currency.
+- deadlines: the main 2027-entry first-year deadlines (ISO date YYYY-MM-DD) with the route
+  (e.g. "Common App, Regular Decision", "UCAS", "university portal"). Only dates actually
+  published; if only the 2026-entry date is published, include it and put "2026 entry" in title.
+- sat: policy for international applicants; p25/p75 total SAT only if the university publishes
+  them (Common Data Set or admissions profile).
+- acceptance_rate: only if officially published (CDS, admissions statistics page).
+- notes: one short line on anything important (e.g. "Foundation year required for 11-year
+  school certificates"), else "".
+
+Spend effort on the facts students need most: English minimum, tuition, deadlines. Keep each
+detail under 160 characters. Return only the JSON that matches the schema; use each
+university's id exactly as given.
+
+Universities:
+- id: cde44782-b14b-5704-89e6-f9454c38e7ef | University of Delhi | New Delhi, IN | http://www.du.ac.in/
+- id: 03761e91-07fb-5f9e-85dc-9aff4d5239a2 | York University | Toronto, CA | http://www.yorku.ca/
+- id: 1848c4c4-1bfb-5ae4-8322-6fda3dca4e50 | Koç University | Istanbul, TR | http://www.ku.edu.tr/
+- id: f951261f-1498-5510-9a26-1b64120fa020 | University of Jordan | Amman, JO | http://www.ju.edu.jo/
+codex
+I’ll check official admissions and fee pages for each university, prioritizing undergraduate English requirements, international tuition, and published entry deadlines. I’ll return only verified facts with their page URLs.
+web search: 
+web search: site:admission.uod.ac.in international undergraduate admission 2026 2027 University of Delhi fee foreign students ...
+web search: 
+web search: site:futurestudents.yorku.ca "IELTS" "Duolingo" "PTE" Undergraduate language proficiency requirements ...
+web search: 
+web search: site:ku.edu.tr undergraduate international admissions tuition fee application fee 2026 Koç University ...
+web search: 
+web search: site:international.ku.edu.tr undergraduate admissions English proficiency TOEFL minimum 2026 Koç ...
+codex
+{"universities":[{"id":"cde44782-b14b-5704-89e6-f9454c38e7ef","english":[{"test":"IELTS","minimum":6,"detail":"Academic IELTS minimum 6.0; official FSR guidance also accepts a TOEFL score of 70 or higher.","source_url":"https://fsr.du.ac.in/pdf/Guidelines_FSR-15-02-2018.pdf"},{"test":"TOEFL iBT","minimum":70,"detail":"TOEFL minimum 70; official FSR guidance also accepts Academic IELTS 6.0 or higher.","source_url":"https://fsr.du.ac.in/pdf/Guidelines_FSR-15-02-2018.pdf"}],"tuition":null,"application_fee":null,"deadlines":[{"title":"2026 entry","due_at":"2026-05-31","route":"Foreign Students’ Registry portal","source_url":"https://fsr.du.ac.in/"}],"sat":null,"acceptance_rate":null,"notes":"Foreign nationals are exempt from CUET UG; eligibility and admission are based on merit."},{"id":"03761e91-07fb-5f9e-85dc-9aff4d5239a2","english":[{"test":"IELTS","minimum":6.5,"detail":"IELTS Academic 6.5; some programs require higher scores.","source_url":"https://futurestudents.yorku.ca/requirements/language-tests"},{"test":"TOEFL iBT","minimum":4.5,"detail":"Minimum 4.5 for tests taken January 2026 onward; some programs require higher scores.","source_url":"https://futurestudents.yorku.ca/requirements/language-tests"},{"test":"Duolingo","minimum":120,"detail":"Minimum 120; some programs require higher scores.","source_url":"https://futurestudents.yorku.ca/requirements/language-tests"},{"test":"PTE Academic","minimum":60,"detail":"Minimum 60; some programs require higher scores.","source_url":"https://futurestudents.yorku.ca/requirements/language-tests"}],"tuition":{"amount":38000,"amount_max":47000,"currency":"CAD","period":"year","academic_year":"2026/27","detail":"Estimated annual tuition: CAD 38,000–47,000 across listed program groups; fees vary by program.","source_url":"https://futurestudents.yorku.ca/financing-your-degree/tuition-fees"},"application_fee":{"amount":140,"currency":"CAD","source_url":"https://www.futurestudents.yorku.ca/sites/futurestudents/files/viewbooks/YorkU-2027-28-INTL-handbook.pdf"},"deadlines":[{"title":"Fall 2027 entry","due_at":"2027-03-24","route":"York University application or OUAC; international applicants","source_url":"https://future.studentsv3.uit.yorku.ca/requirements/deadlines"},{"title":"Fall 2027 BBA regular application","due_at":"2027-01-15","route":"OUAC; Schulich BBA","source_url":"https://schulich.yorku.ca/programs/bba/"}],"sat":null,"acceptance_rate":null,"notes":""},{"id":"1848c4c4-1bfb-5ae4-8322-6fda3dca4e50","english":[],"tuition":null,"application_fee":null,"deadlines":[],"sat":{"policy":"accepted_alternative","p25":null,"p75":null,"source_url":"https://international.ku.edu.tr/wp-content/uploads/2024/08/KU-UGRD-INT-Fall-2024-Leaflet-A4-ENG-merged_compressed.pdf"},"acceptance_rate":null,"notes":"International applicants need an eligible standardized admission exam score or diploma; the 2024 leaflet lists TOEFL iBT and PTE as English tests."},{"id":"f951261f-1498-5510-9a26-1b64120fa020","english":[],"tuition":null,"application_fee":{"amount":140,"currency":"USD","source_url":"https://registration.ju.edu.jo/en/english/Documents/english_proscript.pdf"},"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"International tuition is charged per credit and varies by major; foreign certificates require Jordanian Ministry of Education equivalency."}] }
+tokens used
+55,271
+{"universities":[{"id":"cde44782-b14b-5704-89e6-f9454c38e7ef","english":[{"test":"IELTS","minimum":6,"detail":"Academic IELTS minimum 6.0; official FSR guidance also accepts a TOEFL score of 70 or higher.","source_url":"https://fsr.du.ac.in/pdf/Guidelines_FSR-15-02-2018.pdf"},{"test":"TOEFL iBT","minimum":70,"detail":"TOEFL minimum 70; official FSR guidance also accepts Academic IELTS 6.0 or higher.","source_url":"https://fsr.du.ac.in/pdf/Guidelines_FSR-15-02-2018.pdf"}],"tuition":null,"application_fee":null,"deadlines":[{"title":"2026 entry","due_at":"2026-05-31","route":"Foreign Students’ Registry portal","source_url":"https://fsr.du.ac.in/"}],"sat":null,"acceptance_rate":null,"notes":"Foreign nationals are exempt from CUET UG; eligibility and admission are based on merit."},{"id":"03761e91-07fb-5f9e-85dc-9aff4d5239a2","english":[{"test":"IELTS","minimum":6.5,"detail":"IELTS Academic 6.5; some programs require higher scores.","source_url":"https://futurestudents.yorku.ca/requirements/language-tests"},{"test":"TOEFL iBT","minimum":4.5,"detail":"Minimum 4.5 for tests taken January 2026 onward; some programs require higher scores.","source_url":"https://futurestudents.yorku.ca/requirements/language-tests"},{"test":"Duolingo","minimum":120,"detail":"Minimum 120; some programs require higher scores.","source_url":"https://futurestudents.yorku.ca/requirements/language-tests"},{"test":"PTE Academic","minimum":60,"detail":"Minimum 60; some programs require higher scores.","source_url":"https://futurestudents.yorku.ca/requirements/language-tests"}],"tuition":{"amount":38000,"amount_max":47000,"currency":"CAD","period":"year","academic_year":"2026/27","detail":"Estimated annual tuition: CAD 38,000–47,000 across listed program groups; fees vary by program.","source_url":"https://futurestudents.yorku.ca/financing-your-degree/tuition-fees"},"application_fee":{"amount":140,"currency":"CAD","source_url":"https://www.futurestudents.yorku.ca/sites/futurestudents/files/viewbooks/YorkU-2027-28-INTL-handbook.pdf"},"deadlines":[{"title":"Fall 2027 entry","due_at":"2027-03-24","route":"York University application or OUAC; international applicants","source_url":"https://future.studentsv3.uit.yorku.ca/requirements/deadlines"},{"title":"Fall 2027 BBA regular application","due_at":"2027-01-15","route":"OUAC; Schulich BBA","source_url":"https://schulich.yorku.ca/programs/bba/"}],"sat":null,"acceptance_rate":null,"notes":""},{"id":"1848c4c4-1bfb-5ae4-8322-6fda3dca4e50","english":[],"tuition":null,"application_fee":null,"deadlines":[],"sat":{"policy":"accepted_alternative","p25":null,"p75":null,"source_url":"https://international.ku.edu.tr/wp-content/uploads/2024/08/KU-UGRD-INT-Fall-2024-Leaflet-A4-ENG-merged_compressed.pdf"},"acceptance_rate":null,"notes":"International applicants need an eligible standardized admission exam score or diploma; the 2024 leaflet lists TOEFL iBT and PTE as English tests."},{"id":"f951261f-1498-5510-9a26-1b64120fa020","english":[],"tuition":null,"application_fee":{"amount":140,"currency":"USD","source_url":"https://registration.ju.edu.jo/en/english/Documents/english_proscript.pdf"},"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"International tuition is charged per credit and varies by major; foreign certificates require Jordanian Ministry of Education equivalency."}] }

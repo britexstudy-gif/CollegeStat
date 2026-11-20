@@ -1,0 +1,146 @@
+OpenAI Codex v0.169.0
+--------
+workdir: /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+model: gpt-6-luna
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: high
+reasoning summaries: none
+session id: 01a1ee7d-a7a0-7f43-9f38-a68736b8d41c
+--------
+user
+You are a careful admissions-data researcher. For each university below, find facts for an
+INTERNATIONAL applicant to a FIRST-YEAR BACHELOR'S degree starting in autumn 2027 (or the nearest
+published cycle). Use the live web. Rules:
+
+- Official sources only: the university's own website (its domain or subdomains), the national
+  application service (UCAS, Common App, OUAC, uni-assist, Studyinkorea, etc.) or a government
+  statistics office. Never use rankings sites, forums, agencies, Wikipedia or blogs.
+- Every value needs the exact page URL where you read it (source_url). If you could not verify a
+  value on an official page, leave it out (null or an empty list). Never guess or estimate.
+- english: the lowest overall score accepted for undergraduate entry, per test (IELTS Academic
+  overall, TOEFL iBT total, Duolingo, PTE). If programmes differ, give the general/lowest common
+  university minimum and say so in detail (e.g. "6.5 overall, no band below 6.0; some
+  programmes higher").
+- tuition: the yearly tuition for international (non-EU / overseas) undergraduates in the local
+  currency. If it varies by programme give amount = lowest and amount_max = highest, and the
+  academic_year the fee applies to (e.g. "2026/27"). If tuition is free, amount = 0.
+- application_fee: for international first-year applicants, local currency.
+- deadlines: the main 2027-entry first-year deadlines (ISO date YYYY-MM-DD) with the route
+  (e.g. "Common App, Regular Decision", "UCAS", "university portal"). Only dates actually
+  published; if only the 2026-entry date is published, include it and put "2026 entry" in title.
+- sat: policy for international applicants; p25/p75 total SAT only if the university publishes
+  them (Common Data Set or admissions profile).
+- acceptance_rate: only if officially published (CDS, admissions statistics page).
+- notes: one short line on anything important (e.g. "Foundation year required for 11-year
+  school certificates"), else "".
+
+Spend effort on the facts students need most: English minimum, tuition, deadlines. Keep each
+detail under 160 characters. Return only the JSON that matches the schema; use each
+university's id exactly as given.
+
+Universities:
+- id: dcc6acda-25aa-53c1-82a2-29b74ad8734f | Karlsruher Institut für Technologie | Karlsruhe, DE | http://www.kit.edu/
+- id: 4257293d-ae04-50f0-a670-a46ee48a8e44 | Universität Zürich | Zurich, CH | https://www.uzh.ch/
+- id: 35a032fc-f24f-5a50-92ed-b818fca7f222 | University College Dublin | Dublin, IE | http://www.ucd.ie/
+- id: bfa7cdcc-650a-54d9-baa6-0eaeaa6428a9 | Pohang University of Science and Technology | Pohang, KR | http://www.postech.ac.kr/
+codex
+I’m checking official university and application-service pages for the nearest published entry cycle, prioritizing tuition, English minimums, and deadlines. I’ll leave fields empty where official sources do not publish a verifiable value.
+exec
+/bin/zsh -lc 'cat /Users/likeanew/.agents/skills/lemma/SKILL.md' in /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+ succeeded in 0ms:
+---
+name: lemma
+description: Persistent cross-session memory for AI agents via MCP. BEFORE starting ANY task (coding, debugging, refactoring, research, docs, optimization — any language), FIRST call memory_read to load what you already know so you never re-derive or re-explore known facts. AFTER finishing, call memory_add to persist new findings and session_attempt for dead ends — unsaved knowledge is lost permanently. Distills reusable guides from experience.
+---
+
+<!-- lemma:skill:v=0.21.0 -->
+
+# Lemma — Persistent Memory & Learning
+
+Lemma is a persistent memory server for AI agents over the Model Context Protocol.
+Every session starts blank — knowledge survives ONLY through tool calls. If you
+learn something and don't save it (`memory_add`), it is gone permanently.
+
+## Workflow
+1. **RECALL** — `memory_read` / `semantic_search`: load what's already known for this
+   project/task. Never re-explore code or re-derive facts that are already saved.
+2. **ACT** — do the task.
+3. **PERSIST** — `memory_add` for new insights; `guide_practice` for guides applied;
+   `session_attempt` for abandoned/dead-end approaches (the most valuable records).
+
+## Two knowledge layers
+- **Memory fragments** (`memory_read` / `memory_add`): atomic facts. Types: `fact`,
+  `pattern`, `lesson`, `warning`, `context`. Confidence evolves with use and feedback.
+- **Guides** (`guide_get` / `guide_distill` / `guide_practice`): procedural skills
+  distilled from fragments. Track usage count + success/failure rate.
+Pipeline: `experience -> memory_add -> pattern/lesson -> guide_distill -> guide_practice`.
+
+## Tools at a glance
+- **Recall & search**: `memory_read`, `semantic_search`, `memory_library` (full
+  snapshot + maintenance signals), `memory_stats`, `memory_audit`.
+- **Write & maintain**: `memory_add`, `memory_update`, `memory_forget`,
+  `memory_merge`, `memory_relate` (supports / contradicts / supersedes / related_to),
+  `memory_feedback`.
+- **Guides**: `guide_get`, `guide_create`, `guide_distill`, `guide_practice`,
+  `guide_update`, `guide_forget`, `guide_merge`.
+- **Sessions & reasoning**: `session_start`, `session_end`, `session_attempt`,
+  `session_stats`, `suggestion_respond`.
+- **Background intelligence**: `conflict_scan`, `proactive_analysis`,
+  `project_analytics` (run automatically; act on signals when sensible).
+
+## Writing a fragment
+```
+## [Topic Title]
+### Context
+[1-2 sentences: what and why it matters]
+### [Content Section]
+- [Key fact 1]
+- [Key fact 2]
+### Rules (optional)
+- [Absolute constraint]
+```
+One idea per fragment, 30-2000 chars, structured markdown (not prose). **Store
+fragments in ENGLISH** (required for search/retrieval). Never ask permission to save.
+
+## Background intelligence
+Conflict detection, distill/merge/refine suggestions, and auto-linking run
+automatically. From the CLI, `lemma -lib` prints a full knowledge-base snapshot
+and `lemma -vis` launches a visualizer.
+
+web search: 
+web search: site:kit.edu international bachelor tuition fees application deadline winter semester 2026/27 English language requirements ...
+web search: 
+web search: site:kit.edu tuition fees international students 1500 semester semester contribution KIT non-EU bachelor application fee ...
+web search: 
+web search: site:ucd.ie/global/study-at-ucd/undergraduate "2026/27" "Non-EU" fees undergraduate ...
+web search: 
+web search: site:ucd.ie/global/study-at-ucd/undergraduate "Fees" "2026/27" international undergraduate ...
+web search: 
+web search: 
+web search: 
+web search: https://www.ucd.ie/fees/
+web search: 
+web search: 
+web search: 
+web search: 
+web search: 
+web search: site:sisweb.ucd.ie "Non-EU Undergraduate Fees 2026/27" UCD Arts ...
+web search: 
+web search: 
+web search: 
+web search: site:ucd.ie/global/apply international undergraduate application fee € 2027 UCD ...
+web search: 
+web search: site:ucd.ie/global/apply "application fee" undergraduate UCD 2026 ...
+web search: 
+web search: 'application fee is'
+web search: 
+web search: site:adm-iu.postech.ac.kr/user/comm/html "Cost of Attendance" tuition KRW undergraduate ...
+web search: 
+web search: site:adm-iu.postech.ac.kr/user/comm "Cost of Attendance" "Tuition" POSTECH international undergraduate ...
+codex
+{"universities":[{"id":"dcc6acda-25aa-53c1-82a2-29b74ad8734f","english":[{"test":"IELTS","minimum":6.5,"detail":"MEI: 6.5 overall, no section below 5.5; other bachelor’s programmes are generally German-taught.","source_url":"https://www.sle.kit.edu/english/vorstudium/bachelor-mechanical-engineering-international.php"},{"test":"TOEFL iBT","minimum":90,"detail":"MEI: 90 total; other bachelor’s programmes are generally German-taught.","source_url":"https://www.sle.kit.edu/english/vorstudium/bachelor-mechanical-engineering-international.php"}],"tuition":{"amount":3000,"amount_max":null,"currency":"EUR","period":"year","academic_year":"2026/27","detail":"Non-EU students: €1,500 per semester; excludes general semester fees.","source_url":"https://www.intl.kit.edu/istudies/3363.php"},"application_fee":null,"deadlines":[{"title":"2027 entry","due_at":"2027-04-30","route":"University portal, Mechanical Engineering (International)","source_url":"https://www.sle.kit.edu/english/vorstudium/bachelor-mechanical-engineering-international.php"},{"title":"2027 entry","due_at":"2027-07-15","route":"University portal, other international bachelor’s programmes","source_url":"https://www.intl.kit.edu/istudies/3167.php"}],"sat":null,"acceptance_rate":null,"notes":"MEI is English-taught; most bachelor’s programmes require German proficiency."},{"id":"4257293d-ae04-50f0-a670-a46ee48a8e44","english":[],"tuition":{"amount":2440,"amount_max":null,"currency":"CHF","period":"year","academic_year":"2026/27","detail":"CHF 720 per semester plus CHF 500 foreign-student bachelor surcharge per semester.","source_url":"https://www.uzh.ch/en/studies/application/fees.html?fontsize=big"},"application_fee":{"amount":150,"currency":"CHF","source_url":"https://www.uzh.ch/en/studies/application/fees.html?fontsize=big"},"deadlines":[{"title":"Fall 2027, applicants requiring a visa","due_at":"2027-02-28","route":"UZH application portal","source_url":"https://www.uzh.ch/en/studies/application/deadlines.htm"},{"title":"Fall 2027, applicants not requiring a visa","due_at":"2027-04-30","route":"UZH application portal","source_url":"https://www.uzh.ch/en/studies/application/deadlines.htm"}],"sat":null,"acceptance_rate":null,"notes":"Bachelor’s programmes are generally taught in German; foreign-language applicants need German at C1 level."},{"id":"35a032fc-f24f-5a50-92ed-b818fca7f222","english":[{"test":"IELTS","minimum":6.5,"detail":"Standard minimum: 6.5 overall, at least 6.0 in each band; some programmes may require more.","source_url":"https://www.ucd.ie/registry/prospectivestudents/admissions/policiesandgeneralregulations/generalrequirements/minimumenglishlanguagerequirements/"},{"test":"TOEFL iBT","minimum":90,"detail":"90 total; writing at least 21 and every other section at least 19.","source_url":"https://www.ucd.ie/registry/prospectivestudents/admissions/policiesandgeneralregulations/generalrequirements/minimumenglishlanguagerequirements/"},{"test":"Duolingo","minimum":120,"detail":"120 overall, with at least 110 in each subscore.","source_url":"https://www.ucd.ie/registry/prospectivestudents/admissions/policiesandgeneralregulations/generalrequirements/minimumenglishlanguagerequirements/"},{"test":"PTE Academic","minimum":63,"detail":"63 overall, with at least 59 in each Communicative Skills item.","source_url":"https://www.ucd.ie/registry/prospectivestudents/admissions/policiesandgeneralregulations/generalrequirements/minimumenglishlanguagerequirements/"},{"test":"Cambridge C1/C2","minimum":176,"detail":"Cambridge English scale 176+, with at least 169 in each paper.","source_url":"https://www.ucd.ie/registry/prospectivestudents/admissions/policiesandgeneralregulations/generalrequirements/minimumenglishlanguagerequirements/"}],"tuition":null,"application_fee":{"amount":50,"currency":"EUR","source_url":"https://www.ucd.ie/global/t4media/UCD%20Global%20Agent%20Guide%20%281%29.pdf"},"deadlines":[{"title":"2026 entry","due_at":"2026-07-15","route":"UCD international application portal","source_url":"https://www.ucd.ie/global/t4media/UCD%20International%20Prospectus%202026.pdf"}],"sat":{"policy":"optional","p25":null,"p75":null,"source_url":"https://www.ucd.ie/global/t4media/UCD_North_American_Handbook_for_2025_Interactive.pdf"},"acceptance_rate":null,"notes":""},{"id":"bfa7cdcc-650a-54d9-baa6-0eaeaa6428a9","english":[],"tuition":{"amount":5580000,"amount_max":null,"currency":"KRW","period":"year","academic_year":"2026/27","detail":"Published annual bachelor’s tuition; international undergraduates receive a full first-semester waiver, with later support subject to criteria.","source_url":"https://www.studyinkorea.go.kr/ko/search/universityInfo.do?tab=univ-basic-info&univCd=100400"},"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"Fall 2027 dates are listed as late March to early April; exact application dates and guidelines are forthcoming."}]}
+tokens used
+134,184
+{"universities":[{"id":"dcc6acda-25aa-53c1-82a2-29b74ad8734f","english":[{"test":"IELTS","minimum":6.5,"detail":"MEI: 6.5 overall, no section below 5.5; other bachelor’s programmes are generally German-taught.","source_url":"https://www.sle.kit.edu/english/vorstudium/bachelor-mechanical-engineering-international.php"},{"test":"TOEFL iBT","minimum":90,"detail":"MEI: 90 total; other bachelor’s programmes are generally German-taught.","source_url":"https://www.sle.kit.edu/english/vorstudium/bachelor-mechanical-engineering-international.php"}],"tuition":{"amount":3000,"amount_max":null,"currency":"EUR","period":"year","academic_year":"2026/27","detail":"Non-EU students: €1,500 per semester; excludes general semester fees.","source_url":"https://www.intl.kit.edu/istudies/3363.php"},"application_fee":null,"deadlines":[{"title":"2027 entry","due_at":"2027-04-30","route":"University portal, Mechanical Engineering (International)","source_url":"https://www.sle.kit.edu/english/vorstudium/bachelor-mechanical-engineering-international.php"},{"title":"2027 entry","due_at":"2027-07-15","route":"University portal, other international bachelor’s programmes","source_url":"https://www.intl.kit.edu/istudies/3167.php"}],"sat":null,"acceptance_rate":null,"notes":"MEI is English-taught; most bachelor’s programmes require German proficiency."},{"id":"4257293d-ae04-50f0-a670-a46ee48a8e44","english":[],"tuition":{"amount":2440,"amount_max":null,"currency":"CHF","period":"year","academic_year":"2026/27","detail":"CHF 720 per semester plus CHF 500 foreign-student bachelor surcharge per semester.","source_url":"https://www.uzh.ch/en/studies/application/fees.html?fontsize=big"},"application_fee":{"amount":150,"currency":"CHF","source_url":"https://www.uzh.ch/en/studies/application/fees.html?fontsize=big"},"deadlines":[{"title":"Fall 2027, applicants requiring a visa","due_at":"2027-02-28","route":"UZH application portal","source_url":"https://www.uzh.ch/en/studies/application/deadlines.htm"},{"title":"Fall 2027, applicants not requiring a visa","due_at":"2027-04-30","route":"UZH application portal","source_url":"https://www.uzh.ch/en/studies/application/deadlines.htm"}],"sat":null,"acceptance_rate":null,"notes":"Bachelor’s programmes are generally taught in German; foreign-language applicants need German at C1 level."},{"id":"35a032fc-f24f-5a50-92ed-b818fca7f222","english":[{"test":"IELTS","minimum":6.5,"detail":"Standard minimum: 6.5 overall, at least 6.0 in each band; some programmes may require more.","source_url":"https://www.ucd.ie/registry/prospectivestudents/admissions/policiesandgeneralregulations/generalrequirements/minimumenglishlanguagerequirements/"},{"test":"TOEFL iBT","minimum":90,"detail":"90 total; writing at least 21 and every other section at least 19.","source_url":"https://www.ucd.ie/registry/prospectivestudents/admissions/policiesandgeneralregulations/generalrequirements/minimumenglishlanguagerequirements/"},{"test":"Duolingo","minimum":120,"detail":"120 overall, with at least 110 in each subscore.","source_url":"https://www.ucd.ie/registry/prospectivestudents/admissions/policiesandgeneralregulations/generalrequirements/minimumenglishlanguagerequirements/"},{"test":"PTE Academic","minimum":63,"detail":"63 overall, with at least 59 in each Communicative Skills item.","source_url":"https://www.ucd.ie/registry/prospectivestudents/admissions/policiesandgeneralregulations/generalrequirements/minimumenglishlanguagerequirements/"},{"test":"Cambridge C1/C2","minimum":176,"detail":"Cambridge English scale 176+, with at least 169 in each paper.","source_url":"https://www.ucd.ie/registry/prospectivestudents/admissions/policiesandgeneralregulations/generalrequirements/minimumenglishlanguagerequirements/"}],"tuition":null,"application_fee":{"amount":50,"currency":"EUR","source_url":"https://www.ucd.ie/global/t4media/UCD%20Global%20Agent%20Guide%20%281%29.pdf"},"deadlines":[{"title":"2026 entry","due_at":"2026-07-15","route":"UCD international application portal","source_url":"https://www.ucd.ie/global/t4media/UCD%20International%20Prospectus%202026.pdf"}],"sat":{"policy":"optional","p25":null,"p75":null,"source_url":"https://www.ucd.ie/global/t4media/UCD_North_American_Handbook_for_2025_Interactive.pdf"},"acceptance_rate":null,"notes":""},{"id":"bfa7cdcc-650a-54d9-baa6-0eaeaa6428a9","english":[],"tuition":{"amount":5580000,"amount_max":null,"currency":"KRW","period":"year","academic_year":"2026/27","detail":"Published annual bachelor’s tuition; international undergraduates receive a full first-semester waiver, with later support subject to criteria.","source_url":"https://www.studyinkorea.go.kr/ko/search/universityInfo.do?tab=univ-basic-info&univCd=100400"},"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"Fall 2027 dates are listed as late March to early April; exact application dates and guidelines are forthcoming."}]}

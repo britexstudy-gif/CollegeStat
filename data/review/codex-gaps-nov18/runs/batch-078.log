@@ -1,0 +1,68 @@
+OpenAI Codex v0.169.0
+--------
+workdir: /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+model: gpt-6-luna
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: high
+reasoning summaries: none
+session id: 01a1ee8e-5919-7502-bd85-570db0bf0738
+--------
+user
+You are a careful admissions-data researcher. For each university below, find facts for an
+INTERNATIONAL applicant to a FIRST-YEAR BACHELOR'S degree starting in autumn 2027 (or the nearest
+published cycle). Use the live web. Rules:
+
+- Official sources only: the university's own website (its domain or subdomains), the national
+  application service (UCAS, Common App, OUAC, uni-assist, Studyinkorea, etc.) or a government
+  statistics office. Never use rankings sites, forums, agencies, Wikipedia or blogs.
+- Every value needs the exact page URL where you read it (source_url). If you could not verify a
+  value on an official page, leave it out (null or an empty list). Never guess or estimate.
+- english: the lowest overall score accepted for undergraduate entry, per test (IELTS Academic
+  overall, TOEFL iBT total, Duolingo, PTE). If programmes differ, give the general/lowest common
+  university minimum and say so in detail (e.g. "6.5 overall, no band below 6.0; some
+  programmes higher").
+- tuition: the yearly tuition for international (non-EU / overseas) undergraduates in the local
+  currency. If it varies by programme give amount = lowest and amount_max = highest, and the
+  academic_year the fee applies to (e.g. "2026/27"). If tuition is free, amount = 0.
+- application_fee: for international first-year applicants, local currency.
+- deadlines: the main 2027-entry first-year deadlines (ISO date YYYY-MM-DD) with the route
+  (e.g. "Common App, Regular Decision", "UCAS", "university portal"). Only dates actually
+  published; if only the 2026-entry date is published, include it and put "2026 entry" in title.
+- sat: policy for international applicants; p25/p75 total SAT only if the university publishes
+  them (Common Data Set or admissions profile).
+- acceptance_rate: only if officially published (CDS, admissions statistics page).
+- notes: one short line on anything important (e.g. "Foundation year required for 11-year
+  school certificates"), else "".
+
+Spend effort on the facts students need most: English minimum, tuition, deadlines. Keep each
+detail under 160 characters. Return only the JSON that matches the schema; use each
+university's id exactly as given.
+
+Universities:
+- id: 781c34ce-d476-5f86-81dc-b6c451443a05 | University of Pretoria | Pretoria, ZA | http://www.up.ac.za/
+- id: fcbd953c-7b98-5226-beb5-4082969d9350 | Universidade Nova de Lisboa | Lisbon, PT | http://www.unl.pt/
+- id: d9f134b2-b651-5a68-bacd-32e41dfe8c83 | Nankai University | Tianjin, CN | https://nankai.edu.cn
+- id: e541a3fa-23bd-51c1-a0a5-46f9234ac222 | Satbayev University | Almaty, KZ | https://satbayev.university
+codex
+I’ll check each university’s official admissions and fee pages for the nearest published cycle, then return only verified values with direct URLs.
+web search: 
+web search: site:up.ac.za international undergraduate English proficiency tuition 2027 application fee 2027 University of Pretoria ...
+web search: 
+web search: site:up.ac.za "IELTS" "TOEFL" "2027" international undergraduate University Pretoria English requirement ...
+web search: 
+web search: 
+web search: 
+web search: site:up.ac.za/media "International undergraduate prospectus 2027" IELTS 6.5 TOEFL ...
+web search: 
+web search: "Tuition Fees for Bachelor's Programs for International Students" Satbayev 2026 2027 ...
+web search: 
+web search: site:ensie.nankai.edu.cn "Tuition" "400RMB" "2027" undergraduate international Nankai ...
+web search: 
+web search: "International undergraduate prospectus 2027" "TOEFL TEST SCORE" ...
+codex
+{"universities":[{"id":"781c34ce-d476-5f86-81dc-b6c451443a05","english":[{"test":"IELTS","minimum":6,"detail":"6.0 overall; language test may be required by specific faculties.","source_url":"https://www.up.ac.za/media/shared/368/2025/up_international-undergraduate-prospectus-2026_devv4_web.zp260599.pdf"},{"test":"TOEFL iBT","minimum":80,"detail":"80 overall; language test may be required by specific faculties.","source_url":"https://www.up.ac.za/media/shared/368/2025/up_international-undergraduate-prospectus-2026_devv4_web.zp260599.pdf"}],"tuition":null,"application_fee":{"amount":300,"currency":"ZAR","source_url":"https://www.up.ac.za/online-application/application-fee"},"deadlines":[{"title":"2027 entry (most undergraduate programs)","due_at":"2026-06-30","route":"University portal","source_url":"https://drupalwebprod-files.up.ac.za/Public/2026-01/UP_FB%20Education%202027_DevV5_web.pdf?VersionId=VrxYD7NaH5_mCiwaZOCxfkJcpeqkKEUB"}],"sat":null,"acceptance_rate":null,"notes":"English scores are from the 2026 international prospectus; Veterinary Science applications close 2026-05-31 for 2027 entry."},{"id":"fcbd953c-7b98-5226-beb5-4082969d9350","english":[],"tuition":{"amount":7000,"amount_max":null,"currency":"EUR","period":"year","academic_year":"2026/27","detail":"International undergraduate tuition at NOVA FCT.","source_url":"https://www.fct.unl.pt/en/international/international-student-admission"},"application_fee":{"amount":70,"currency":"EUR","source_url":"https://www.fct.unl.pt/en/international/international-student-admission"},"deadlines":[{"title":"2027/28 entry, NOVA IMS","due_at":"2026-11-24","route":"NOVA IMS application portal","source_url":"https://novaims.unl.pt/en/education/programs/bachelor-s-degrees/international-students/international-students-access/"}],"sat":null,"acceptance_rate":null,"notes":"NOVA schools publish separate fees and calendars; tuition and fee shown are NOVA FCT, and the deadline is for NOVA IMS."},{"id":"d9f134b2-b651-5a68-bacd-32e41dfe8c83","english":[],"tuition":{"amount":20000,"amount_max":35000,"currency":"CNY","period":"year","academic_year":"2027/28","detail":"Annual tuition varies by undergraduate program; programs are taught in Chinese.","source_url":"https://ensie.nankai.edu.cn/info/1089/1357.htm"},"application_fee":{"amount":400,"currency":"CNY","source_url":"https://ensie.nankai.edu.cn/info/1089/1357.htm"},"deadlines":[{"title":"2027 entry","due_at":"2027-06-04","route":"Nankai International Students Application System","source_url":"https://ensie.nankai.edu.cn/info/1089/1357.htm"}],"sat":null,"acceptance_rate":null,"notes":"All 46 listed undergraduate programs are taught in Chinese; applicants need HSK 4 with a score of at least 180."},{"id":"e541a3fa-23bd-51c1-a0a5-46f9234ac222","english":[{"test":"IELTS","minimum":5,"detail":"At least 5.0 for English-medium programs.","source_url":"https://satbayev.university/en/foreignApplicants-guide"},{"test":"TOEFL iBT","minimum":35,"detail":"At least 35 for English-medium programs.","source_url":"https://satbayev.university/en/foreignApplicants-guide"},{"test":"Duolingo","minimum":80,"detail":"At least 80 for English-medium programs.","source_url":"https://satbayev.university/en/foreignApplicants-guide"}],"tuition":null,"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"International entrants may enroll year-round; published tuition starts at USD 4,000, not local currency."}] }
+tokens used
+80,009
+{"universities":[{"id":"781c34ce-d476-5f86-81dc-b6c451443a05","english":[{"test":"IELTS","minimum":6,"detail":"6.0 overall; language test may be required by specific faculties.","source_url":"https://www.up.ac.za/media/shared/368/2025/up_international-undergraduate-prospectus-2026_devv4_web.zp260599.pdf"},{"test":"TOEFL iBT","minimum":80,"detail":"80 overall; language test may be required by specific faculties.","source_url":"https://www.up.ac.za/media/shared/368/2025/up_international-undergraduate-prospectus-2026_devv4_web.zp260599.pdf"}],"tuition":null,"application_fee":{"amount":300,"currency":"ZAR","source_url":"https://www.up.ac.za/online-application/application-fee"},"deadlines":[{"title":"2027 entry (most undergraduate programs)","due_at":"2026-06-30","route":"University portal","source_url":"https://drupalwebprod-files.up.ac.za/Public/2026-01/UP_FB%20Education%202027_DevV5_web.pdf?VersionId=VrxYD7NaH5_mCiwaZOCxfkJcpeqkKEUB"}],"sat":null,"acceptance_rate":null,"notes":"English scores are from the 2026 international prospectus; Veterinary Science applications close 2026-05-31 for 2027 entry."},{"id":"fcbd953c-7b98-5226-beb5-4082969d9350","english":[],"tuition":{"amount":7000,"amount_max":null,"currency":"EUR","period":"year","academic_year":"2026/27","detail":"International undergraduate tuition at NOVA FCT.","source_url":"https://www.fct.unl.pt/en/international/international-student-admission"},"application_fee":{"amount":70,"currency":"EUR","source_url":"https://www.fct.unl.pt/en/international/international-student-admission"},"deadlines":[{"title":"2027/28 entry, NOVA IMS","due_at":"2026-11-24","route":"NOVA IMS application portal","source_url":"https://novaims.unl.pt/en/education/programs/bachelor-s-degrees/international-students/international-students-access/"}],"sat":null,"acceptance_rate":null,"notes":"NOVA schools publish separate fees and calendars; tuition and fee shown are NOVA FCT, and the deadline is for NOVA IMS."},{"id":"d9f134b2-b651-5a68-bacd-32e41dfe8c83","english":[],"tuition":{"amount":20000,"amount_max":35000,"currency":"CNY","period":"year","academic_year":"2027/28","detail":"Annual tuition varies by undergraduate program; programs are taught in Chinese.","source_url":"https://ensie.nankai.edu.cn/info/1089/1357.htm"},"application_fee":{"amount":400,"currency":"CNY","source_url":"https://ensie.nankai.edu.cn/info/1089/1357.htm"},"deadlines":[{"title":"2027 entry","due_at":"2027-06-04","route":"Nankai International Students Application System","source_url":"https://ensie.nankai.edu.cn/info/1089/1357.htm"}],"sat":null,"acceptance_rate":null,"notes":"All 46 listed undergraduate programs are taught in Chinese; applicants need HSK 4 with a score of at least 180."},{"id":"e541a3fa-23bd-51c1-a0a5-46f9234ac222","english":[{"test":"IELTS","minimum":5,"detail":"At least 5.0 for English-medium programs.","source_url":"https://satbayev.university/en/foreignApplicants-guide"},{"test":"TOEFL iBT","minimum":35,"detail":"At least 35 for English-medium programs.","source_url":"https://satbayev.university/en/foreignApplicants-guide"},{"test":"Duolingo","minimum":80,"detail":"At least 80 for English-medium programs.","source_url":"https://satbayev.university/en/foreignApplicants-guide"}],"tuition":null,"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"International entrants may enroll year-round; published tuition starts at USD 4,000, not local currency."}] }

@@ -1,0 +1,128 @@
+OpenAI Codex v0.169.0
+--------
+workdir: /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+model: gpt-6-luna
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: high
+reasoning summaries: none
+session id: 01a1ee78-6d86-7d73-957c-97a2b890e3e1
+--------
+user
+You are a careful admissions-data researcher. For each university below, find facts for an
+INTERNATIONAL applicant to a FIRST-YEAR BACHELOR'S degree starting in autumn 2027 (or the nearest
+published cycle). Use the live web. Rules:
+
+- Official sources only: the university's own website (its domain or subdomains), the national
+  application service (UCAS, Common App, OUAC, uni-assist, Studyinkorea, etc.) or a government
+  statistics office. Never use rankings sites, forums, agencies, Wikipedia or blogs.
+- Every value needs the exact page URL where you read it (source_url). If you could not verify a
+  value on an official page, leave it out (null or an empty list). Never guess or estimate.
+- english: the lowest overall score accepted for undergraduate entry, per test (IELTS Academic
+  overall, TOEFL iBT total, Duolingo, PTE). If programmes differ, give the general/lowest common
+  university minimum and say so in detail (e.g. "6.5 overall, no band below 6.0; some
+  programmes higher").
+- tuition: the yearly tuition for international (non-EU / overseas) undergraduates in the local
+  currency. If it varies by programme give amount = lowest and amount_max = highest, and the
+  academic_year the fee applies to (e.g. "2026/27"). If tuition is free, amount = 0.
+- application_fee: for international first-year applicants, local currency.
+- deadlines: the main 2027-entry first-year deadlines (ISO date YYYY-MM-DD) with the route
+  (e.g. "Common App, Regular Decision", "UCAS", "university portal"). Only dates actually
+  published; if only the 2026-entry date is published, include it and put "2026 entry" in title.
+- sat: policy for international applicants; p25/p75 total SAT only if the university publishes
+  them (Common Data Set or admissions profile).
+- acceptance_rate: only if officially published (CDS, admissions statistics page).
+- notes: one short line on anything important (e.g. "Foundation year required for 11-year
+  school certificates"), else "".
+
+Spend effort on the facts students need most: English minimum, tuition, deadlines. Keep each
+detail under 160 characters. Return only the JSON that matches the schema; use each
+university's id exactly as given.
+
+Universities:
+- id: 40dc3bce-f456-577e-9003-9c143d3b52bb | Shanghai Jiaotong University | Shanghai, CN | http://www.sjtu.edu.cn/
+- id: 1ad9abe1-60cd-55ec-b227-5c8001db0475 | Columbia University in the City of New York | New York, US | http://www.columbia.edu/
+- id: 6a9e2556-fc5f-56a2-bca0-9364f099818c | Seoul National University | Seoul, KR | http://www.snu.ac.kr/
+- id: 276cad09-4a66-51a1-9071-c1ffe923a508 | University of British Columbia | Vancouver, CA | http://www.ubc.ca/
+codex
+I’ll verify each field against official admissions, tuition, and testing pages, prioritizing the published 2027 cycle and using 2026 dates only where 2027 dates are not yet posted.
+exec
+/bin/zsh -lc 'cat /Users/likeanew/.agents/skills/lemma/SKILL.md' in /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+ succeeded in 0ms:
+---
+name: lemma
+description: Persistent cross-session memory for AI agents via MCP. BEFORE starting ANY task (coding, debugging, refactoring, research, docs, optimization — any language), FIRST call memory_read to load what you already know so you never re-derive or re-explore known facts. AFTER finishing, call memory_add to persist new findings and session_attempt for dead ends — unsaved knowledge is lost permanently. Distills reusable guides from experience.
+---
+
+<!-- lemma:skill:v=0.21.0 -->
+
+# Lemma — Persistent Memory & Learning
+
+Lemma is a persistent memory server for AI agents over the Model Context Protocol.
+Every session starts blank — knowledge survives ONLY through tool calls. If you
+learn something and don't save it (`memory_add`), it is gone permanently.
+
+## Workflow
+1. **RECALL** — `memory_read` / `semantic_search`: load what's already known for this
+   project/task. Never re-explore code or re-derive facts that are already saved.
+2. **ACT** — do the task.
+3. **PERSIST** — `memory_add` for new insights; `guide_practice` for guides applied;
+   `session_attempt` for abandoned/dead-end approaches (the most valuable records).
+
+## Two knowledge layers
+- **Memory fragments** (`memory_read` / `memory_add`): atomic facts. Types: `fact`,
+  `pattern`, `lesson`, `warning`, `context`. Confidence evolves with use and feedback.
+- **Guides** (`guide_get` / `guide_distill` / `guide_practice`): procedural skills
+  distilled from fragments. Track usage count + success/failure rate.
+Pipeline: `experience -> memory_add -> pattern/lesson -> guide_distill -> guide_practice`.
+
+## Tools at a glance
+- **Recall & search**: `memory_read`, `semantic_search`, `memory_library` (full
+  snapshot + maintenance signals), `memory_stats`, `memory_audit`.
+- **Write & maintain**: `memory_add`, `memory_update`, `memory_forget`,
+  `memory_merge`, `memory_relate` (supports / contradicts / supersedes / related_to),
+  `memory_feedback`.
+- **Guides**: `guide_get`, `guide_create`, `guide_distill`, `guide_practice`,
+  `guide_update`, `guide_forget`, `guide_merge`.
+- **Sessions & reasoning**: `session_start`, `session_end`, `session_attempt`,
+  `session_stats`, `suggestion_respond`.
+- **Background intelligence**: `conflict_scan`, `proactive_analysis`,
+  `project_analytics` (run automatically; act on signals when sensible).
+
+## Writing a fragment
+```
+## [Topic Title]
+### Context
+[1-2 sentences: what and why it matters]
+### [Content Section]
+- [Key fact 1]
+- [Key fact 2]
+### Rules (optional)
+- [Absolute constraint]
+```
+One idea per fragment, 30-2000 chars, structured markdown (not prose). **Store
+fragments in ENGLISH** (required for search/retrieval). Never ask permission to save.
+
+## Background intelligence
+Conflict detection, distill/merge/refine suggestions, and auto-linking run
+automatically. From the CLI, `lemma -lib` prints a full knowledge-base snapshot
+and `lemma -vis` launches a visualizer.
+
+web search: 
+web search: site:admission.sjtu.edu.cn undergraduate international students 2026 tuition English IELTS deadline ...
+web search: 
+web search: site:admission.sjtu.edu.cn "2026" "International Undergraduate" tuition IELTS ...
+web search: 
+web search: Columbia undergraduate admissions English proficiency requirements TOEFL IELTS Duolingo official Columbia 2026 ...
+web search: 
+web search: site:you.ubc.ca/applying-ubc/requirements/english-language-competency IELTS 6.5 TOEFL UBC 2027 ...
+web search: 
+web search: 
+web search: 
+web search: site:undergrad.admissions.columbia.edu 2027-2028 testing policy Columbia standardized tests ...
+codex
+{"universities":[{"id":"40dc3bce-f456-577e-9003-9c143d3b52bb","english":[{"test":"IELTS","minimum":6.5,"detail":"IELTS Academic minimum; 2026 Global College admissions guide lists IELTS and TOEFL requirements.","source_url":"https://gc.sjtu.edu.cn/admission/international-undergraduate-admission/application-requirements/"},{"test":"TOEFL iBT","minimum":90,"detail":"Minimum 90 on the pre-Jan 21, 2026 scale; the page also gives the new 1–6 scale minimum.","source_url":"https://gc.sjtu.edu.cn/admission/international-undergraduate-admission/application-requirements/"}],"tuition":{"amount":120000,"amount_max":null,"currency":"CNY","period":"year","academic_year":"2026","detail":"Global College estimated tuition; subject to change.","source_url":"https://gc.sjtu.edu.cn/wp-content/uploads/2025/09/2026-International-Undergraduate-Admissions-updated.pdf"},"application_fee":{"amount":75,"currency":"USD","source_url":"https://gc.sjtu.edu.cn/wp-content/uploads/2025/09/2026-International-Undergraduate-Admissions-updated.pdf"},"deadlines":[{"title":"2026 entry Early Action","due_at":"2025-11-15","route":"Common App","source_url":"https://gc.sjtu.edu.cn/wp-content/uploads/2025/09/2026-International-Undergraduate-Admissions-updated.pdf"},{"title":"2026 entry Regular Decision","due_at":"2026-03-31","route":"Common App","source_url":"https://gc.sjtu.edu.cn/wp-content/uploads/2025/09/2026-International-Undergraduate-Admissions-updated.pdf"}],"sat":null,"acceptance_rate":null,"notes":"2026 guide and fee data are for SJTU Global College; 2027 figures not found."},{"id":"1ad9abe1-60cd-55ec-b227-5c8001db0475","english":[],"tuition":null,"application_fee":null,"deadlines":[{"title":"2026 entry Early Decision","due_at":"2025-11-01","route":"Common App or Coalition App","source_url":"https://undergrad.admissions.columbia.edu/sites/default/files/2023-08/Columbia%20Undergraduate%20Admissions%20Viewbook%202023_Web.pdf"},{"title":"2026 entry Regular Decision","due_at":"2026-01-01","route":"Common App or Coalition App","source_url":"https://undergrad.admissions.columbia.edu/sites/default/files/2023-08/Columbia%20Undergraduate%20Admissions%20Viewbook%202023_Web.pdf"}],"sat":{"policy":"optional","p25":1510,"p75":1560,"source_url":"https://undergrad.admissions.columbia.edu/sites/default/files/2025-08/Columbia%20Class%20of%202029%20Profile.pdf"},"acceptance_rate":null,"notes":"Current admissions profile reports test optional and submitted-score middle 50%; 2027–28 policy and dates not verified."},{"id":"6a9e2556-fc5f-56a2-bca0-9364f099818c","english":[],"tuition":null,"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"Official international first-year page currently posts the Fall 2026 guide; values were not verified from its linked guide."},{"id":"276cad09-4a66-51a1-9071-c1ffe923a508","english":[{"test":"IELTS","minimum":6.5,"detail":"Academic IELTS 6.5 overall, no part below 6.0.","source_url":"https://you.ubc.ca/applying-ubc/requirements/english-language-competency/"},{"test":"TOEFL iBT","minimum":90,"detail":"Overall 90; minimum section scores apply. New TOEFL scale overall minimum 4.5.","source_url":"https://you.ubc.ca/applying-ubc/requirements/english-language-competency/"},{"test":"Duolingo","minimum":125,"detail":"Overall 125; minimum component scores apply.","source_url":"https://you.ubc.ca/applying-ubc/requirements/english-language-competency/"},{"test":"PTE Academic","minimum":65,"detail":"Overall 65; minimum component scores apply.","source_url":"https://you.ubc.ca/applying-ubc/requirements/english-language-competency/"}],"tuition":null,"application_fee":{"amount":173.25,"currency":"CAD","source_url":"https://you.ubc.ca/applying-ubc/how-to-apply/application/"},"deadlines":[{"title":"Winter Session (September 2027 entry) application deadline","due_at":"2027-01-15","route":"UBC online application","source_url":"https://you.ubc.ca/applying-ubc/dates-deadlines/"}],"sat":{"policy":"optional","p25":null,"p75":null,"source_url":"https://you.ubc.ca/applying-ubc/applied/submit-documents/"},"acceptance_rate":null,"notes":""}] }
+tokens used
+89,735
+{"universities":[{"id":"40dc3bce-f456-577e-9003-9c143d3b52bb","english":[{"test":"IELTS","minimum":6.5,"detail":"IELTS Academic minimum; 2026 Global College admissions guide lists IELTS and TOEFL requirements.","source_url":"https://gc.sjtu.edu.cn/admission/international-undergraduate-admission/application-requirements/"},{"test":"TOEFL iBT","minimum":90,"detail":"Minimum 90 on the pre-Jan 21, 2026 scale; the page also gives the new 1–6 scale minimum.","source_url":"https://gc.sjtu.edu.cn/admission/international-undergraduate-admission/application-requirements/"}],"tuition":{"amount":120000,"amount_max":null,"currency":"CNY","period":"year","academic_year":"2026","detail":"Global College estimated tuition; subject to change.","source_url":"https://gc.sjtu.edu.cn/wp-content/uploads/2025/09/2026-International-Undergraduate-Admissions-updated.pdf"},"application_fee":{"amount":75,"currency":"USD","source_url":"https://gc.sjtu.edu.cn/wp-content/uploads/2025/09/2026-International-Undergraduate-Admissions-updated.pdf"},"deadlines":[{"title":"2026 entry Early Action","due_at":"2025-11-15","route":"Common App","source_url":"https://gc.sjtu.edu.cn/wp-content/uploads/2025/09/2026-International-Undergraduate-Admissions-updated.pdf"},{"title":"2026 entry Regular Decision","due_at":"2026-03-31","route":"Common App","source_url":"https://gc.sjtu.edu.cn/wp-content/uploads/2025/09/2026-International-Undergraduate-Admissions-updated.pdf"}],"sat":null,"acceptance_rate":null,"notes":"2026 guide and fee data are for SJTU Global College; 2027 figures not found."},{"id":"1ad9abe1-60cd-55ec-b227-5c8001db0475","english":[],"tuition":null,"application_fee":null,"deadlines":[{"title":"2026 entry Early Decision","due_at":"2025-11-01","route":"Common App or Coalition App","source_url":"https://undergrad.admissions.columbia.edu/sites/default/files/2023-08/Columbia%20Undergraduate%20Admissions%20Viewbook%202023_Web.pdf"},{"title":"2026 entry Regular Decision","due_at":"2026-01-01","route":"Common App or Coalition App","source_url":"https://undergrad.admissions.columbia.edu/sites/default/files/2023-08/Columbia%20Undergraduate%20Admissions%20Viewbook%202023_Web.pdf"}],"sat":{"policy":"optional","p25":1510,"p75":1560,"source_url":"https://undergrad.admissions.columbia.edu/sites/default/files/2025-08/Columbia%20Class%20of%202029%20Profile.pdf"},"acceptance_rate":null,"notes":"Current admissions profile reports test optional and submitted-score middle 50%; 2027–28 policy and dates not verified."},{"id":"6a9e2556-fc5f-56a2-bca0-9364f099818c","english":[],"tuition":null,"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"Official international first-year page currently posts the Fall 2026 guide; values were not verified from its linked guide."},{"id":"276cad09-4a66-51a1-9071-c1ffe923a508","english":[{"test":"IELTS","minimum":6.5,"detail":"Academic IELTS 6.5 overall, no part below 6.0.","source_url":"https://you.ubc.ca/applying-ubc/requirements/english-language-competency/"},{"test":"TOEFL iBT","minimum":90,"detail":"Overall 90; minimum section scores apply. New TOEFL scale overall minimum 4.5.","source_url":"https://you.ubc.ca/applying-ubc/requirements/english-language-competency/"},{"test":"Duolingo","minimum":125,"detail":"Overall 125; minimum component scores apply.","source_url":"https://you.ubc.ca/applying-ubc/requirements/english-language-competency/"},{"test":"PTE Academic","minimum":65,"detail":"Overall 65; minimum component scores apply.","source_url":"https://you.ubc.ca/applying-ubc/requirements/english-language-competency/"}],"tuition":null,"application_fee":{"amount":173.25,"currency":"CAD","source_url":"https://you.ubc.ca/applying-ubc/how-to-apply/application/"},"deadlines":[{"title":"Winter Session (September 2027 entry) application deadline","due_at":"2027-01-15","route":"UBC online application","source_url":"https://you.ubc.ca/applying-ubc/dates-deadlines/"}],"sat":{"policy":"optional","p25":null,"p75":null,"source_url":"https://you.ubc.ca/applying-ubc/applied/submit-documents/"},"acceptance_rate":null,"notes":""}] }

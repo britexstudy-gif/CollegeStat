@@ -82,9 +82,9 @@ test("validators reject malformed observations and flag large changes", () => {
   assert.equal(qualityWarnings(6500, 65000).length, 1);
 });
 test("callback only restores safe local destinations", () => {
-  assert.equal(safeNext("//evil.example"), "/profile");
-  assert.equal(safeNext("https://evil.example"), "/profile");
-  assert.equal(safeNext("/\\evil.example"), "/profile");
+  assert.equal(safeNext("//evil.example"), "/dashboard");
+  assert.equal(safeNext("https://evil.example"), "/dashboard");
+  assert.equal(safeNext("/\\evil.example"), "/dashboard");
   assert.equal(safeNext("/saved"), "/saved");
 });
 

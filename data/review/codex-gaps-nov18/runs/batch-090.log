@@ -1,0 +1,62 @@
+OpenAI Codex v0.169.0
+--------
+workdir: /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+model: gpt-6-luna
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: high
+reasoning summaries: none
+session id: 01a1ee91-f62e-7b20-adb6-e254d75b1cfa
+--------
+user
+You are a careful admissions-data researcher. For each university below, find facts for an
+INTERNATIONAL applicant to a FIRST-YEAR BACHELOR'S degree starting in autumn 2027 (or the nearest
+published cycle). Use the live web. Rules:
+
+- Official sources only: the university's own website (its domain or subdomains), the national
+  application service (UCAS, Common App, OUAC, uni-assist, Studyinkorea, etc.) or a government
+  statistics office. Never use rankings sites, forums, agencies, Wikipedia or blogs.
+- Every value needs the exact page URL where you read it (source_url). If you could not verify a
+  value on an official page, leave it out (null or an empty list). Never guess or estimate.
+- english: the lowest overall score accepted for undergraduate entry, per test (IELTS Academic
+  overall, TOEFL iBT total, Duolingo, PTE). If programmes differ, give the general/lowest common
+  university minimum and say so in detail (e.g. "6.5 overall, no band below 6.0; some
+  programmes higher").
+- tuition: the yearly tuition for international (non-EU / overseas) undergraduates in the local
+  currency. If it varies by programme give amount = lowest and amount_max = highest, and the
+  academic_year the fee applies to (e.g. "2026/27"). If tuition is free, amount = 0.
+- application_fee: for international first-year applicants, local currency.
+- deadlines: the main 2027-entry first-year deadlines (ISO date YYYY-MM-DD) with the route
+  (e.g. "Common App, Regular Decision", "UCAS", "university portal"). Only dates actually
+  published; if only the 2026-entry date is published, include it and put "2026 entry" in title.
+- sat: policy for international applicants; p25/p75 total SAT only if the university publishes
+  them (Common Data Set or admissions profile).
+- acceptance_rate: only if officially published (CDS, admissions statistics page).
+- notes: one short line on anything important (e.g. "Foundation year required for 11-year
+  school certificates"), else "".
+
+Spend effort on the facts students need most: English minimum, tuition, deadlines. Keep each
+detail under 160 characters. Return only the JSON that matches the schema; use each
+university's id exactly as given.
+
+Universities:
+- id: 5e2c8d0e-394c-543b-9d2e-2176866fd088 | Sharif University of Technology | Tehran, IR | https://www.sharif.ir
+- id: 9b94aa66-95e1-5889-b16d-c23510e15161 | University of Luxembourg | Luxembourg, LU | https://www.uni.lu
+- id: 15368572-190f-5082-b4cf-93f10bca9dcb | University of Saskatchewan | Saskatoon, CA | http://www.usask.ca/
+- id: d9f96e91-5b30-58d7-8d3b-3f55e05db849 | University of Naples Federico II | Naples, IT | http://www.unina.it/
+codex
+I’ll check each university’s official admissions and fee pages, then return only the requested JSON. For 2027 entry, I’ll use published dates where available and label any verified 2026 dates clearly.
+web search: 
+web search: site:sharif.ir international undergraduate admission English tuition 2026 ...
+web search: 
+web search: site:admissions.usask.ca international undergraduate English language proficiency IELTS TOEFL Duolingo tuition 2026-2027 ...
+web search: 
+web search: site:sharif.ir "international" "undergraduate" Sharif admission ...
+web search: 
+web search: site:admissions.usask.ca "International students" "Tuition" "2026-2027" undergraduate tuition estimate ...
+codex
+{"universities":[{"id":"5e2c8d0e-394c-543b-9d2e-2176866fd088","english":[],"tuition":null,"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":""},{"id":"9b94aa66-95e1-5889-b16d-c23510e15161","english":[],"tuition":{"amount":800,"amount_max":null,"currency":"EUR","period":"year","academic_year":"2026/27","detail":"Examples list €400 per semester; fees can vary by programme.","source_url":"https://www.uni.lu/fstm-en/study-programs/bachelor-in-computer-science/admissions/"},"application_fee":null,"deadlines":[{"title":"2026 entry","due_at":"2026-03-24","route":"University portal, non-EU applicants","source_url":"https://www.uni.lu/fstm-en/study-programs/bachelor-in-computer-science/admissions/"}],"sat":null,"acceptance_rate":null,"notes":"Foreign secondary diplomas require equivalence recognition by Luxembourg’s Ministry of Education."},{"id":"15368572-190f-5082-b4cf-93f10bca9dcb","english":[{"test":"IELTS","minimum":6.5,"detail":"6.5 overall; minimum 6.0 in each component.","source_url":"https://admissions.usask.ca/requirements/english-language-proficiency.php"},{"test":"TOEFL iBT","minimum":4.5,"detail":"Current scale: 4.5 overall, minimum 4 in each component; pre-2026 scores: 86 overall, 19 each.","source_url":"https://admissions.usask.ca/requirements/english-language-proficiency.php"},{"test":"Duolingo","minimum":120,"detail":"120 overall, minimum 100 in each area.","source_url":"https://admissions.usask.ca/requirements/english-language-proficiency.php"},{"test":"PTE Academic","minimum":63,"detail":"63 overall, minimum 59 in each skill.","source_url":"https://admissions.usask.ca/requirements/english-language-proficiency.php"},{"test":"Cambridge C1/C2","minimum":176,"detail":"Cambridge C1 Advanced: 176 overall.","source_url":"https://admissions.usask.ca/requirements/english-language-proficiency.php"}],"tuition":{"amount":39007,"amount_max":59383,"currency":"CAD","period":"year","academic_year":"2026/27","detail":"Typical full-load first-year tuition estimates across direct-entry undergraduate colleges; rates may change.","source_url":"https://admissions.usask.ca/documents/brochures/international.pdf"},"application_fee":{"amount":120,"currency":"CAD","source_url":"https://admissions.usask.ca/requirements/apply.php"},"deadlines":[{"title":"Fall 2027 international deadline","due_at":"2027-05-01","route":"University application","source_url":"https://admissions.usask.ca/english.php"}],"sat":null,"acceptance_rate":null,"notes":""},{"id":"d9f96e91-5b30-58d7-8d3b-3f55e05db849","english":[],"tuition":{"amount":0,"amount_max":null,"currency":"EUR","period":"year","academic_year":"2026/27","detail":"Non-EU fee listing gives regional tax (€140/year) and stamp (€16); it lists no university tuition charge.","source_url":"https://www.international.unina.it/education/admission-regulation/"},"application_fee":null,"deadlines":[{"title":"2026 entry","due_at":"2026-06-15","route":"Universitaly pre-enrolment, non-EU applicants residing abroad","source_url":"https://www.international.unina.it/education/admission-regulation/"}],"sat":null,"acceptance_rate":null,"notes":"Admission and language requirements depend on the degree programme; Italian-taught degrees require Italian B2."}] }
+tokens used
+35,662
+{"universities":[{"id":"5e2c8d0e-394c-543b-9d2e-2176866fd088","english":[],"tuition":null,"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":""},{"id":"9b94aa66-95e1-5889-b16d-c23510e15161","english":[],"tuition":{"amount":800,"amount_max":null,"currency":"EUR","period":"year","academic_year":"2026/27","detail":"Examples list €400 per semester; fees can vary by programme.","source_url":"https://www.uni.lu/fstm-en/study-programs/bachelor-in-computer-science/admissions/"},"application_fee":null,"deadlines":[{"title":"2026 entry","due_at":"2026-03-24","route":"University portal, non-EU applicants","source_url":"https://www.uni.lu/fstm-en/study-programs/bachelor-in-computer-science/admissions/"}],"sat":null,"acceptance_rate":null,"notes":"Foreign secondary diplomas require equivalence recognition by Luxembourg’s Ministry of Education."},{"id":"15368572-190f-5082-b4cf-93f10bca9dcb","english":[{"test":"IELTS","minimum":6.5,"detail":"6.5 overall; minimum 6.0 in each component.","source_url":"https://admissions.usask.ca/requirements/english-language-proficiency.php"},{"test":"TOEFL iBT","minimum":4.5,"detail":"Current scale: 4.5 overall, minimum 4 in each component; pre-2026 scores: 86 overall, 19 each.","source_url":"https://admissions.usask.ca/requirements/english-language-proficiency.php"},{"test":"Duolingo","minimum":120,"detail":"120 overall, minimum 100 in each area.","source_url":"https://admissions.usask.ca/requirements/english-language-proficiency.php"},{"test":"PTE Academic","minimum":63,"detail":"63 overall, minimum 59 in each skill.","source_url":"https://admissions.usask.ca/requirements/english-language-proficiency.php"},{"test":"Cambridge C1/C2","minimum":176,"detail":"Cambridge C1 Advanced: 176 overall.","source_url":"https://admissions.usask.ca/requirements/english-language-proficiency.php"}],"tuition":{"amount":39007,"amount_max":59383,"currency":"CAD","period":"year","academic_year":"2026/27","detail":"Typical full-load first-year tuition estimates across direct-entry undergraduate colleges; rates may change.","source_url":"https://admissions.usask.ca/documents/brochures/international.pdf"},"application_fee":{"amount":120,"currency":"CAD","source_url":"https://admissions.usask.ca/requirements/apply.php"},"deadlines":[{"title":"Fall 2027 international deadline","due_at":"2027-05-01","route":"University application","source_url":"https://admissions.usask.ca/english.php"}],"sat":null,"acceptance_rate":null,"notes":""},{"id":"d9f96e91-5b30-58d7-8d3b-3f55e05db849","english":[],"tuition":{"amount":0,"amount_max":null,"currency":"EUR","period":"year","academic_year":"2026/27","detail":"Non-EU fee listing gives regional tax (€140/year) and stamp (€16); it lists no university tuition charge.","source_url":"https://www.international.unina.it/education/admission-regulation/"},"application_fee":null,"deadlines":[{"title":"2026 entry","due_at":"2026-06-15","route":"Universitaly pre-enrolment, non-EU applicants residing abroad","source_url":"https://www.international.unina.it/education/admission-regulation/"}],"sat":null,"acceptance_rate":null,"notes":"Admission and language requirements depend on the degree programme; Italian-taught degrees require Italian B2."}] }

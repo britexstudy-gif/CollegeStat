@@ -1,0 +1,353 @@
+[
+  {
+    "url": "https://www.ox.ac.uk/admissions/undergraduate/courses/course-listing",
+    "provider": "research_browser",
+    "checked_at": "2026-10-15",
+    "title": "Undergraduate course listing",
+    "evidence_pointer": "University web page opened with research browser; course-listing introduction and catalogue navigation.",
+    "review_status": "verified"
+  },
+  {
+    "url": "https://www.ox.ac.uk/admissions/undergraduate/applying",
+    "provider": "research_browser",
+    "checked_at": "2026-10-15",
+    "title": "Applying",
+    "evidence_pointer": "University web page opened with research browser; Understanding our admissions process, course-specific assessment.",
+    "review_status": "verified"
+  },
+  {
+    "url": "https://www.ox.ac.uk/admissions/undergraduate/fees-and-funding/course-fees",
+    "provider": "research_browser",
+    "checked_at": "2026-10-15",
+    "title": "Course fees for 2027 entry",
+    "evidence_pointer": "University web page opened with research browser; Home, Overseas and clinical medicine sections.",
+    "review_status": "verified"
+  },
+  {
+    "url": "https://www.nus.edu.sg/oam/undergraduate-programmes",
+    "provider": "research_browser",
+    "checked_at": "2026-10-15",
+    "title": "Undergraduate Programmes",
+    "evidence_pointer": "Primary-source search result and official undergraduate-programmes page: Business Administration and Common Computer Science Programmes.",
+    "review_status": "verified"
+  },
+  {
+    "url": "https://www.nus.edu.sg/oam/admissions/admissions",
+    "provider": "research_browser",
+    "checked_at": "2026-10-15",
+    "title": "Admissions",
+    "evidence_pointer": "Primary-source search result: check requirements and prerequisites for the relevant applicant group.",
+    "review_status": "verified"
+  },
+  {
+    "url": "https://admission.stanford.edu/apply/first-year/testing.html",
+    "provider": "research_browser",
+    "checked_at": "2026-10-15",
+    "title": "Standardized Testing",
+    "evidence_pointer": "Primary-source search result: ACT or SAT required; no minimum or guaranteed-admission score. Updated 2025-12-04.",
+    "review_status": "verified"
+  },
+  {
+    "url": "https://www.virtualtour.study.cam.ac.uk/",
+    "provider": "research_browser",
+    "checked_at": "2026-10-15",
+    "title": "University of Cambridge Virtual Tour",
+    "evidence_pointer": "Primary-source research-browser result: subjects, colleges and accommodation, student life and 360-degree map.",
+    "review_status": "verified"
+  },
+  {
+    "url": "https://new.polito.uz/undergraduate-bachelor/",
+    "provider": "research_browser",
+    "checked_at": "2026-10-15",
+    "title": "Undergraduate (Italian Track)",
+    "evidence_pointer": "Primary-source research-browser result: named Bachelor of Science and Italian-track programmes.",
+    "review_status": "verified"
+  },
+  {
+    "url": "https://www.ox.ac.uk/admissions/undergraduate/courses/course-listing/computer-science",
+    "title": "Computer Science",
+    "provider": "research_browser",
+    "checked_at": "2026-10-15",
+    "review_status": "verified",
+    "evidence_pointer": "Official course result: BA or MCompSci, duration 3 or 4 years, 2027 entry."
+  },
+  {
+    "url": "https://future.utoronto.ca/undergraduate-programs",
+    "title": "Undergraduate Programs",
+    "provider": "research_browser",
+    "checked_at": "2026-10-15",
+    "review_status": "verified",
+    "evidence_pointer": "Official programme table: Computer Science campus variants, Civil Engineering, Computer Engineering and Commerce UTM; degree labels kept separate."
+  },
+  {
+    "url": "https://mitadmissions.org/blogs/entry/25-stories-of-getting-accepted-to-mit/",
+    "title": "25 Stories of Getting Accepted to MIT",
+    "provider": "research_browser",
+    "checked_at": "2026-10-15",
+    "review_status": "verified",
+    "evidence_pointer": "Official university-hosted page opened and read: author Yuliya K. ’18, published 2018-03-21. Story scope retained as Undergraduate acceptance stories · historical. No private records or images imported."
+  },
+  {
+    "url": "https://mitadmissions.org/blogs/entry/because_one_story_just_isnt_en/",
+    "title": "Because one story just isn’t enough",
+    "provider": "research_browser",
+    "checked_at": "2026-10-15",
+    "review_status": "verified",
+    "evidence_pointer": "Official university-hosted page opened and read: author Keri G. ’10, published 2006-12-14. Story scope retained as Undergraduate acceptance story · historical. No private records or images imported."
+  },
+  {
+    "url": "https://oge.mit.edu/fitting-into-mit/",
+    "title": "Fitting into MIT",
+    "provider": "research_browser",
+    "checked_at": "2026-10-15",
+    "review_status": "verified",
+    "evidence_pointer": "Official university-hosted page opened and read: author Kristan H., published 2020-04-13. Story scope retained as Graduate admitted-student perspective. No private records or images imported."
+  },
+  {
+    "url": "https://oge.mit.edu/all-in-on-mit-as-a-1st-gen-phd/",
+    "title": "All in on MIT as a 1st-gen PhD",
+    "provider": "research_browser",
+    "checked_at": "2026-10-15",
+    "review_status": "verified",
+    "evidence_pointer": "Official university-hosted page opened and read: author Annabel G., published 2025-04-09. Story scope retained as Graduate student journey. No private records or images imported."
+  },
+  {
+    "url": "https://college.harvard.edu/student-life/student-stories/first-gen-support-harvard",
+    "title": "First Gen Support at Harvard",
+    "provider": "research_browser",
+    "checked_at": "2026-10-15",
+    "review_status": "verified",
+    "evidence_pointer": "Official university-hosted page opened and read: author Emily, Class of ’24, published 2022-11-04. Story scope retained as Student experience · historical. No private records or images imported."
+  },
+  {
+    "url": "https://college.harvard.edu/student-life/student-stories/my-top-tips-applying-harvard",
+    "title": "My Top Tips for Applying to Harvard",
+    "provider": "research_browser",
+    "checked_at": "2026-10-15",
+    "review_status": "verified",
+    "evidence_pointer": "Official university-hosted page opened and read: author Emily, Class of ’24, published 2022-04-12. Story scope retained as Student reflection on applying · historical. No private records or images imported."
+  },
+  {
+    "url": "https://college.harvard.edu/student-life/student-stories/open-letter-incoming-pre-frosh",
+    "title": "An Open Letter to Incoming Pre-Frosh",
+    "provider": "research_browser",
+    "checked_at": "2026-10-15",
+    "review_status": "verified",
+    "evidence_pointer": "Official university-hosted page opened and read: author Emily, Class of ’24, published 2021-07-06. Story scope retained as Advice for admitted undergraduates · historical. No private records or images imported."
+  },
+  {
+    "university_id": "4b7862dc-7567-5f81-af58-c01144412a88",
+    "url": "https://www.ucl.ac.uk/study/prospective-students/undergraduate/courses",
+    "title": "Undergraduate Degrees | Study at UCL",
+    "checked_at": "2026-10-16",
+    "review_method": "Primary university page read through web browser/search service",
+    "review_scope": "Directory/resource metadata only, no substantive article import",
+    "review_notes": "Primary-source open returned the undergraduate degree finder and programme links. Replaces the obsolete /further-info-pre-arrival URL, which returned 404."
+  },
+  {
+    "university_id": "6f8ca7da-1cba-56f4-89e6-4cffd48126ac",
+    "url": "https://study.unimelb.edu.au/how-to-apply/undergraduate-study",
+    "title": "How to apply for undergraduate study",
+    "checked_at": "2026-10-16",
+    "review_method": "Primary university page read through web browser/search service",
+    "review_scope": "Directory/resource metadata only, no substantive article import",
+    "review_notes": "Primary-source open returned current undergraduate application guidance with separate domestic and international sections."
+  },
+  {
+    "university_id": "6f13f9e9-cf5f-56ad-8384-39a9dc592d58",
+    "url": "https://www.princeton.edu/academics/areas-of-study",
+    "title": "Areas of Study | Princeton University",
+    "checked_at": "2026-10-16",
+    "review_method": "Primary university page read through web browser/search service",
+    "review_scope": "Directory/resource metadata only, no substantive article import",
+    "review_notes": "Primary-source open returned the searchable areas-of-study directory and level/degree labels."
+  },
+  {
+    "university_id": "66cc3fd0-3055-5d88-b1d0-586a11515643",
+    "url": "https://www.monash.edu/study/how-to-apply",
+    "title": "How to apply – study at Monash University Melbourne",
+    "checked_at": "2026-10-16",
+    "review_method": "Primary university page read through web browser/search service",
+    "review_scope": "Directory/resource metadata only, no substantive article import",
+    "review_notes": "Primary-source open returned Monash application-route guidance, not just a menu or HTTP response."
+  },
+  {
+    "university_id": "237842a4-aca1-5a19-b961-403c1e2e5381",
+    "url": "https://admissions.umich.edu/costs-aid/costs",
+    "title": "Costs | University of Michigan Office of Undergraduate Admissions",
+    "checked_at": "2026-10-16",
+    "review_method": "Primary university page read through web browser/search service",
+    "review_scope": "Directory/resource metadata only, no substantive article import",
+    "review_notes": "Primary-source open returned the full budget tables and cost-scope notes. Review retained the source conflict rather than inferring a single university tuition amount."
+  },
+  {
+    "university_id": "c0bf548f-0413-5faa-8378-e3a8e622f80f",
+    "url": "https://www.cityu.edu.hk/admo/apply-now",
+    "title": "Apply Now | CityUHK Admission",
+    "checked_at": "2026-10-16",
+    "review_method": "Primary university page read through web browser/search service",
+    "review_scope": "Directory/resource metadata only, no substantive article import",
+    "review_notes": "Primary-source search returned the actual indexed Apply Now page text: 2027 bachelor applications, local HKDSE JUPAS route and local/non-local links. Direct bounded fetch is blocked; metadata link only, no fee or threshold imported."
+  },
+  {
+    "university_id": "74effccc-395b-52fb-8f50-2523f7897428",
+    "url": "https://www.ualberta.ca/en/undergraduate-programs/index.html",
+    "title": "Undergraduate Programs | University of Alberta",
+    "checked_at": "2026-10-16",
+    "review_method": "Primary university page read through web browser/search service",
+    "review_scope": "Directory/resource metadata only, no substantive article import",
+    "review_notes": "Primary-source open returned the programme finder and bachelor programme entries."
+  },
+  {
+    "university_id": "22222222-2222-4222-8222-222222222222",
+    "url": "https://ras.mit.edu/grant-and-contract-administration/mit-facts-and-profile-information",
+    "title": "MIT Facts and Profile Information",
+    "checked_at": "2026-10-16",
+    "review_method": "Supervising agent primary-source history review",
+    "review_scope": "Incorporation on April 10, 1861. The first classes in 1865 are a separate event.",
+    "review_notes": "Primary-source browser open: institutional profile lists Date of incorporation: April 10, 1861."
+  },
+  {
+    "university_id": "11111111-1111-4111-8111-111111111111",
+    "url": "https://www.stanford.edu/about/history",
+    "title": "Our History | Stanford University",
+    "checked_at": "2026-10-16",
+    "review_method": "Supervising agent primary-source history review",
+    "review_scope": "Founding grant in 1885; the university opened in 1891.",
+    "review_notes": "Fetched official history explicitly states Stanford University was founded in 1885 by Leland and Jane Stanford."
+  },
+  {
+    "university_id": "39230496-b2fc-53ca-9303-1726c4ac13da",
+    "url": "https://www.harvard.edu/about/history/",
+    "title": "The history of Harvard University",
+    "checked_at": "2026-10-16",
+    "review_method": "Supervising agent primary-source history review",
+    "review_scope": "Founded October 28, 1636 by a vote of the Massachusetts Bay Colony legislature. John Harvard was the first major benefactor, not the founder.",
+    "review_notes": "Fetched official history FAQ gives the foundation date and distinguishes John Harvard from the founding legislative body."
+  },
+  {
+    "university_id": "99fbcf31-606d-5dac-880e-83ca25acd942",
+    "url": "https://www.caltech.edu/about/legacy/history-milestones",
+    "title": "History & Milestones | Caltech",
+    "checked_at": "2026-10-16",
+    "review_method": "Supervising agent primary-source history review",
+    "review_scope": "Established as Throop University in 1891; later renamed California Institute of Technology.",
+    "review_notes": "Fetched official history describes Amos Throop establishing Throop University in 1891, and its opening that November."
+  },
+  {
+    "university_id": "ae117645-e24c-5269-8ed1-b5b826e53932",
+    "url": "https://www.cam.ac.uk/about-the-university/history",
+    "title": "History | University of Cambridge",
+    "checked_at": "2026-10-16",
+    "review_method": "Supervising agent primary-source history review",
+    "review_scope": "Establishment of the University of Cambridge, not the founding date of an individual college.",
+    "review_notes": "Fetched official university history states Established in 1209 and describes scholars congregating in Cambridge that year."
+  },
+  {
+    "university_id": "5ad45ea9-e51c-59e4-9ef7-6d3768be673c",
+    "url": "https://www.imperial.ac.uk/about/history/college-developments/",
+    "title": "A timeline of Imperial developments",
+    "checked_at": "2026-10-16",
+    "review_method": "Supervising agent primary-source history review",
+    "review_scope": "Royal Charter forming Imperial College in 1907; predecessor colleges have earlier dates.",
+    "review_notes": "Official primary timeline browser search states 1907: Signing of the Charter forming Imperial College."
+  },
+  {
+    "university_id": "6020a2b5-3788-5dd1-b3f2-b9c6c7c6f99b",
+    "url": "https://ethz.ch/en/the-eth-zurich/portrait/history.html",
+    "title": "History of ETH Zurich: Leading the way since 1855",
+    "checked_at": "2026-10-16",
+    "review_method": "Supervising agent primary-source history review",
+    "review_scope": "Founded under the name Polytechnikum in 1855.",
+    "review_notes": "Fetched official history explicitly states founded under the name Polytechnikum back in 1855."
+  },
+  {
+    "university_id": "44444444-4444-4444-8444-444444444444",
+    "url": "https://www.tum.de/en/about-tum/facts-and-figures/history",
+    "title": "History of Technical University of Munich",
+    "checked_at": "2026-10-16",
+    "review_method": "Supervising agent primary-source history review",
+    "review_scope": "King Ludwig II founded the New Polytechnic School in Munich in 1868; later known as TUM.",
+    "review_notes": "Fetched official TUM history gives the 1868 founding, founder and predecessor name."
+  },
+  {
+    "university_id": "55555555-5555-4555-8555-555555555555",
+    "url": "https://governingcouncil.utoronto.ca/secretariat/policies/institutional-purpose-statement",
+    "title": "Statement of Institutional Purpose | University of Toronto",
+    "checked_at": "2026-10-16",
+    "review_method": "Supervising agent primary-source history review",
+    "review_scope": "Founded as King’s College in 1827; distinct from University of Trinity College.",
+    "review_notes": "Official Governing Council policy primary-source search contains A Brief History: University of Toronto was founded as King’s College in 1827."
+  },
+  {
+    "university_id": "66666666-6666-4666-8666-666666666666",
+    "url": "https://wiut.uz/about-us",
+    "title": "About us | WIUT",
+    "checked_at": "2026-10-16",
+    "review_method": "Supervising agent primary-source history review",
+    "review_scope": "Establishment of Westminster International University in Tashkent in 2002.",
+    "review_notes": "Official About Us primary-source search explicitly states WIUT was established in 2002 and describes its first classes that January."
+  },
+  {
+    "university_id": "225b05b5-3c2b-5910-a8a9-6946b0fe9820",
+    "url": "https://www.newuu.uz/en/news/new-uzbekistan-university-marks-five-years-of-excellence",
+    "title": "New Uzbekistan University Marks Five Years of Excellence",
+    "checked_at": "2026-10-16",
+    "review_method": "Supervising agent primary-source history review",
+    "review_scope": "New Uzbekistan University established in 2021; the anniversary report is dated 2026.",
+    "review_notes": "Official university fifth-anniversary report primary-source search explicitly says Established in 2021."
+  },
+  {
+    "university_id": "9e20a5d2-bafa-5857-8f5d-4a89874bb2f1",
+    "url": "https://inha.uz/about/introduction/",
+    "title": "Introduction to Inha University in Tashkent",
+    "checked_at": "2026-10-16",
+    "review_method": "Supervising agent primary-source history review",
+    "review_scope": "Foundation of Inha University in Tashkent, distinct from the older Inha University in Korea.",
+    "review_notes": "Official Introduction primary-source search states IUT founded in 2014 and created in cooperation with Inha University in Korea."
+  },
+  {
+    "university_id": "9485c68f-a900-55f2-870b-a072bed954a8",
+    "url": "https://polito.uz/about-ttpu/",
+    "title": "About TTPU | Turin Polytechnic University in Tashkent",
+    "checked_at": "2026-10-16",
+    "review_method": "Supervising agent primary-source history review",
+    "review_scope": "Established April 27, 2009 in Tashkent; distinct from Politecnico di Torino in Italy.",
+    "review_notes": "Official About TTPU primary-source search specifies April 27, 2009, Presidential Decree PP-1106 and the institutional agreement."
+  },
+  {
+    "university_id": "ce210bba-ca93-56fb-9456-51b8212c60f4",
+    "url": "https://admission.tuit.uz/",
+    "title": "TUIT admissions",
+    "checked_at": "2026-10-16",
+    "review_method": "Supervising agent primary-source history review",
+    "review_scope": "Institutional origin as Tashkent Electrotechnical Institute of Communications in 1955; later renamed TUIT.",
+    "review_notes": "Official admission site states university has operated since 1955. Official 2026 TUIT prospectus separately specifies the predecessor institute."
+  },
+  {
+    "university_id": "83647167-92a6-5f42-9507-1a7a62aebe83",
+    "url": "https://new.nuu.uz/en/universitet/universitet-tarixi/",
+    "title": "University history | National University of Uzbekistan",
+    "checked_at": "2026-10-16",
+    "review_method": "Supervising agent primary-source history review",
+    "review_scope": "Institutional foundation in 1918, as stated by the university’s own history.",
+    "review_notes": "Official university history primary-source search explicitly says since its founding in 1918."
+  },
+  {
+    "university_id": "c66c3755-66a2-57a0-a80e-da984c310d29",
+    "url": "https://nus.edu.sg/about/founded-by-the-community",
+    "title": "Founded by the community | NUS",
+    "checked_at": "2026-10-16",
+    "review_method": "Supervising agent primary-source history review",
+    "review_scope": "Current National University of Singapore established by merger in 1980; predecessor medical-school origins date to 1905.",
+    "review_notes": "Primary-source browser open, timeline: National University of Singapore established with merger of University of Singapore and Nanyang University in 1980. The same page separately records medical-school origins in 1905."
+  },
+  {
+    "university_id": "33333333-3333-4333-8333-333333333333",
+    "url": "https://www.ox.ac.uk/about/the-university/history",
+    "title": "Our history | University of Oxford",
+    "checked_at": "2026-10-16",
+    "review_method": "Primary-source university history browser search review",
+    "review_notes": "The university states that no clear foundation date is known; teaching existed in 1096. The teaching date is not imported as a founding year."
+  }
+]

@@ -1,0 +1,126 @@
+OpenAI Codex v0.169.0
+--------
+workdir: /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+model: gpt-6-luna
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: high
+reasoning summaries: none
+session id: 01a1ee93-638d-75f0-84cc-c73ff1943157
+--------
+user
+You are a careful admissions-data researcher. For each university below, find facts for an
+INTERNATIONAL applicant to a FIRST-YEAR BACHELOR'S degree starting in autumn 2027 (or the nearest
+published cycle). Use the live web. Rules:
+
+- Official sources only: the university's own website (its domain or subdomains), the national
+  application service (UCAS, Common App, OUAC, uni-assist, Studyinkorea, etc.) or a government
+  statistics office. Never use rankings sites, forums, agencies, Wikipedia or blogs.
+- Every value needs the exact page URL where you read it (source_url). If you could not verify a
+  value on an official page, leave it out (null or an empty list). Never guess or estimate.
+- english: the lowest overall score accepted for undergraduate entry, per test (IELTS Academic
+  overall, TOEFL iBT total, Duolingo, PTE). If programmes differ, give the general/lowest common
+  university minimum and say so in detail (e.g. "6.5 overall, no band below 6.0; some
+  programmes higher").
+- tuition: the yearly tuition for international (non-EU / overseas) undergraduates in the local
+  currency. If it varies by programme give amount = lowest and amount_max = highest, and the
+  academic_year the fee applies to (e.g. "2026/27"). If tuition is free, amount = 0.
+- application_fee: for international first-year applicants, local currency.
+- deadlines: the main 2027-entry first-year deadlines (ISO date YYYY-MM-DD) with the route
+  (e.g. "Common App, Regular Decision", "UCAS", "university portal"). Only dates actually
+  published; if only the 2026-entry date is published, include it and put "2026 entry" in title.
+- sat: policy for international applicants; p25/p75 total SAT only if the university publishes
+  them (Common Data Set or admissions profile).
+- acceptance_rate: only if officially published (CDS, admissions statistics page).
+- notes: one short line on anything important (e.g. "Foundation year required for 11-year
+  school certificates"), else "".
+
+Spend effort on the facts students need most: English minimum, tuition, deadlines. Keep each
+detail under 160 characters. Return only the JSON that matches the schema; use each
+university's id exactly as given.
+
+Universities:
+- id: bb74ece9-2329-5fa0-863c-98366c703d69 | Macau University of Science and Technology | Macao, MO | http://www.must.edu.mo/
+- id: 0dbf168e-db31-5d11-8535-b9ab25438314 | University of California-Riverside | Riverside, US | http://www.ucr.edu/
+- id: 6d24d40d-0906-5641-8c35-a31d8d55b8ba | Bogor Agricultural University | Bogor, ID | http://www.ipb.ac.id/
+- id: eeaff72d-4092-57d9-bb1b-4ed463749cec | Umea University | Umeå, SE | http://www.umu.se/
+codex
+I’ll verify each item against official university or application-service pages and return only the requested JSON. I’ll prioritize current international-entry requirements and use the nearest published cycle when 2027 details are not yet available.
+exec
+/bin/zsh -lc 'cat /Users/likeanew/.agents/skills/lemma/SKILL.md' in /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+ succeeded in 0ms:
+---
+name: lemma
+description: Persistent cross-session memory for AI agents via MCP. BEFORE starting ANY task (coding, debugging, refactoring, research, docs, optimization — any language), FIRST call memory_read to load what you already know so you never re-derive or re-explore known facts. AFTER finishing, call memory_add to persist new findings and session_attempt for dead ends — unsaved knowledge is lost permanently. Distills reusable guides from experience.
+---
+
+<!-- lemma:skill:v=0.21.0 -->
+
+# Lemma — Persistent Memory & Learning
+
+Lemma is a persistent memory server for AI agents over the Model Context Protocol.
+Every session starts blank — knowledge survives ONLY through tool calls. If you
+learn something and don't save it (`memory_add`), it is gone permanently.
+
+## Workflow
+1. **RECALL** — `memory_read` / `semantic_search`: load what's already known for this
+   project/task. Never re-explore code or re-derive facts that are already saved.
+2. **ACT** — do the task.
+3. **PERSIST** — `memory_add` for new insights; `guide_practice` for guides applied;
+   `session_attempt` for abandoned/dead-end approaches (the most valuable records).
+
+## Two knowledge layers
+- **Memory fragments** (`memory_read` / `memory_add`): atomic facts. Types: `fact`,
+  `pattern`, `lesson`, `warning`, `context`. Confidence evolves with use and feedback.
+- **Guides** (`guide_get` / `guide_distill` / `guide_practice`): procedural skills
+  distilled from fragments. Track usage count + success/failure rate.
+Pipeline: `experience -> memory_add -> pattern/lesson -> guide_distill -> guide_practice`.
+
+## Tools at a glance
+- **Recall & search**: `memory_read`, `semantic_search`, `memory_library` (full
+  snapshot + maintenance signals), `memory_stats`, `memory_audit`.
+- **Write & maintain**: `memory_add`, `memory_update`, `memory_forget`,
+  `memory_merge`, `memory_relate` (supports / contradicts / supersedes / related_to),
+  `memory_feedback`.
+- **Guides**: `guide_get`, `guide_create`, `guide_distill`, `guide_practice`,
+  `guide_update`, `guide_forget`, `guide_merge`.
+- **Sessions & reasoning**: `session_start`, `session_end`, `session_attempt`,
+  `session_stats`, `suggestion_respond`.
+- **Background intelligence**: `conflict_scan`, `proactive_analysis`,
+  `project_analytics` (run automatically; act on signals when sensible).
+
+## Writing a fragment
+```
+## [Topic Title]
+### Context
+[1-2 sentences: what and why it matters]
+### [Content Section]
+- [Key fact 1]
+- [Key fact 2]
+### Rules (optional)
+- [Absolute constraint]
+```
+One idea per fragment, 30-2000 chars, structured markdown (not prose). **Store
+fragments in ENGLISH** (required for search/retrieval). Never ask permission to save.
+
+## Background intelligence
+Conflict detection, distill/merge/refine suggestions, and auto-linking run
+automatically. From the CLI, `lemma -lib` prints a full knowledge-base snapshot
+and `lemma -vis` launches a visualizer.
+
+web search: 
+web search: site:must.edu.mo international undergraduate admission 2026 2027 English requirement tuition application fee deadline ...
+web search: 
+web search: site:admissions.ucr.edu international freshman TOEFL IELTS Duolingo 2027 application deadline UCR ...
+web search: 
+web search: site:studentaccounts.ucr.edu 2026-27 nonresident undergraduate tuition fee UCR ...
+web search: 
+web search: site:universityadmissions.se "IELTS Academic" "English 6" 6.5 ...
+web search: 
+web search: site:finance.ucr.edu "2026-27" undergraduate nonresident tuition ...
+codex
+{"universities":[{"id":"bb74ece9-2329-5fa0-863c-98366c703d69","english":[{"test":"IELTS","minimum":6.0,"detail":"6.0 overall; MBBS requires 6.5.","source_url":"https://wm-fs2.must.edu.mo/group1/M00/0A/18/rBCDpGloQWKATWPWABu55JQ4dGQ656.pdf"},{"test":"TOEFL iBT","minimum":79,"detail":"79 total; MBBS requires 93.","source_url":"https://wm-fs2.must.edu.mo/group1/M00/0A/18/rBCDpGloQWKATWPWABu55JQ4dGQ656.pdf"}],"tuition":{"amount":163000,"amount_max":258000,"currency":"HKD","period":"year","academic_year":"2026/27","detail":"Non-Macau undergraduate fees: HKD 163,000–206,000; MBBS is HKD 258,000.","source_url":"https://www.must.edu.mo/images/Admission/files/ENG_FAQs_for_admission.pdf"},"application_fee":{"amount":300,"currency":"HKD","source_url":"https://www.must.edu.mo/en/tisd/938-admissions/international-student/6159-international-student-e"},"deadlines":[{"title":"2027 entry","due_at":"2027-04-20","route":"University online application system (OAS)","source_url":"https://ugadmissions.must.edu.mo/id-2828/article/view/id-22633.html?locale=en_US"}],"sat":null,"acceptance_rate":null,"notes":""},{"id":"0dbf168e-db31-5d11-8535-b9ab25438314","english":[{"test":"IELTS","minimum":6.5,"detail":"Minimum overall 6.5.","source_url":"https://admissions.ucr.edu/international"},{"test":"TOEFL iBT","minimum":4.5,"detail":"Minimum 4.5 on the new scale (effective Jan 2026); pre-2026 scale minimum was 80.","source_url":"https://admissions.ucr.edu/international"},{"test":"Duolingo","minimum":115,"detail":"Minimum 115.","source_url":"https://admissions.ucr.edu/international"}],"tuition":{"amount":53472,"amount_max":null,"currency":"USD","period":"year","academic_year":"2026/27","detail":"New undergraduates: $14,202 tuition plus $39,270 nonresident supplemental tuition; excludes campus fees.","source_url":"https://www.ucop.edu/operating-budget/_files/fees/202627/2026-27.pdf"},"application_fee":{"amount":80,"currency":"USD","source_url":"https://admissions.ucr.edu/international"},"deadlines":[{"title":"Fall 2027 entry","due_at":"2026-11-30","route":"UC application","source_url":"https://admissions.ucr.edu/"}],"sat":{"policy":"not_considered","p25":null,"p75":null,"source_url":"https://admissions.ucr.edu/international"},"acceptance_rate":null,"notes":""},{"id":"6d24d40d-0906-5641-8c35-a31d8d55b8ba","english":[{"test":"IELTS","minimum":5.5,"detail":"Minimum 5.5 overall; applicants without a certificate may take IPB's English proficiency test.","source_url":"https://admisi.ipb.ac.id/warga-negara-asing-wna/"},{"test":"TOEFL iBT","minimum":53,"detail":"Minimum 53.","source_url":"https://admisi.ipb.ac.id/warga-negara-asing-wna/"},{"test":"Duolingo","minimum":80,"detail":"Minimum 80.","source_url":"https://admisi.ipb.ac.id/warga-negara-asing-wna/"}],"tuition":{"amount":50000000,"amount_max":50000000,"currency":"IDR","period":"year","academic_year":"2026/27","detail":"IDR 25,000,000 per semester for listed international undergraduate programmes.","source_url":"https://global.ipb.ac.id/admisssion/"},"application_fee":{"amount":3000000,"currency":"IDR","source_url":"https://global.ipb.ac.id/admisssion/"},"deadlines":[{"title":"2026 entry","due_at":"2026-04-03","route":"IPB international admissions portal, period 1","source_url":"https://global.ipb.ac.id/admisssion/"},{"title":"2026 entry","due_at":"2026-07-03","route":"IPB international admissions portal, period 2","source_url":"https://global.ipb.ac.id/admisssion/"}],"sat":null,"acceptance_rate":null,"notes":"Applicants must have completed 12 years of schooling; maximum age 25."},{"id":"eeaff72d-4092-57d9-bb1b-4ed463749cec","english":[{"test":"IELTS","minimum":6.5,"detail":"English 6 equivalent: IELTS 6.5 overall, no section below 5.5.","source_url":"https://www.universityadmissions.se/en/entry-requirements/english-language-requirements/"},{"test":"TOEFL iBT","minimum":4.5,"detail":"English 6 equivalent: total 4.5 on tests from 21 Jan 2026, no section below 4.","source_url":"https://www.universityadmissions.se/en/entry-requirements/english-language-requirements/"},{"test":"PTE Academic","minimum":62,"detail":"English 6 equivalent: 62 overall, writing 61.","source_url":"https://www.universityadmissions.se/en/entry-requirements/english-language-requirements/"}],"tuition":{"amount":96600,"amount_max":395700,"currency":"SEK","period":"year","academic_year":"2026/27","detail":"Full-time degree programme fees vary by field; published range is SEK 96,600–395,700 per year.","source_url":"https://www.umu.se/en/education/application-and-admission/tuition-fees/new-student/"},"application_fee":{"amount":900,"currency":"SEK","source_url":"https://www.umu.se/en/education/programmes/international-business-and-economics-programme/"},"deadlines":[{"title":"Autumn 2027 entry","due_at":"2027-01-15","route":"University Admissions (Sweden)","source_url":"https://www.umu.se/en/education/application-and-admission/key-dates-and-deadlines/"}],"sat":null,"acceptance_rate":null,"notes":"English-taught bachelor's programmes require English 6; programme-specific academic prerequisites may also apply."}] }
+tokens used
+46,141
+{"universities":[{"id":"bb74ece9-2329-5fa0-863c-98366c703d69","english":[{"test":"IELTS","minimum":6.0,"detail":"6.0 overall; MBBS requires 6.5.","source_url":"https://wm-fs2.must.edu.mo/group1/M00/0A/18/rBCDpGloQWKATWPWABu55JQ4dGQ656.pdf"},{"test":"TOEFL iBT","minimum":79,"detail":"79 total; MBBS requires 93.","source_url":"https://wm-fs2.must.edu.mo/group1/M00/0A/18/rBCDpGloQWKATWPWABu55JQ4dGQ656.pdf"}],"tuition":{"amount":163000,"amount_max":258000,"currency":"HKD","period":"year","academic_year":"2026/27","detail":"Non-Macau undergraduate fees: HKD 163,000–206,000; MBBS is HKD 258,000.","source_url":"https://www.must.edu.mo/images/Admission/files/ENG_FAQs_for_admission.pdf"},"application_fee":{"amount":300,"currency":"HKD","source_url":"https://www.must.edu.mo/en/tisd/938-admissions/international-student/6159-international-student-e"},"deadlines":[{"title":"2027 entry","due_at":"2027-04-20","route":"University online application system (OAS)","source_url":"https://ugadmissions.must.edu.mo/id-2828/article/view/id-22633.html?locale=en_US"}],"sat":null,"acceptance_rate":null,"notes":""},{"id":"0dbf168e-db31-5d11-8535-b9ab25438314","english":[{"test":"IELTS","minimum":6.5,"detail":"Minimum overall 6.5.","source_url":"https://admissions.ucr.edu/international"},{"test":"TOEFL iBT","minimum":4.5,"detail":"Minimum 4.5 on the new scale (effective Jan 2026); pre-2026 scale minimum was 80.","source_url":"https://admissions.ucr.edu/international"},{"test":"Duolingo","minimum":115,"detail":"Minimum 115.","source_url":"https://admissions.ucr.edu/international"}],"tuition":{"amount":53472,"amount_max":null,"currency":"USD","period":"year","academic_year":"2026/27","detail":"New undergraduates: $14,202 tuition plus $39,270 nonresident supplemental tuition; excludes campus fees.","source_url":"https://www.ucop.edu/operating-budget/_files/fees/202627/2026-27.pdf"},"application_fee":{"amount":80,"currency":"USD","source_url":"https://admissions.ucr.edu/international"},"deadlines":[{"title":"Fall 2027 entry","due_at":"2026-11-30","route":"UC application","source_url":"https://admissions.ucr.edu/"}],"sat":{"policy":"not_considered","p25":null,"p75":null,"source_url":"https://admissions.ucr.edu/international"},"acceptance_rate":null,"notes":""},{"id":"6d24d40d-0906-5641-8c35-a31d8d55b8ba","english":[{"test":"IELTS","minimum":5.5,"detail":"Minimum 5.5 overall; applicants without a certificate may take IPB's English proficiency test.","source_url":"https://admisi.ipb.ac.id/warga-negara-asing-wna/"},{"test":"TOEFL iBT","minimum":53,"detail":"Minimum 53.","source_url":"https://admisi.ipb.ac.id/warga-negara-asing-wna/"},{"test":"Duolingo","minimum":80,"detail":"Minimum 80.","source_url":"https://admisi.ipb.ac.id/warga-negara-asing-wna/"}],"tuition":{"amount":50000000,"amount_max":50000000,"currency":"IDR","period":"year","academic_year":"2026/27","detail":"IDR 25,000,000 per semester for listed international undergraduate programmes.","source_url":"https://global.ipb.ac.id/admisssion/"},"application_fee":{"amount":3000000,"currency":"IDR","source_url":"https://global.ipb.ac.id/admisssion/"},"deadlines":[{"title":"2026 entry","due_at":"2026-04-03","route":"IPB international admissions portal, period 1","source_url":"https://global.ipb.ac.id/admisssion/"},{"title":"2026 entry","due_at":"2026-07-03","route":"IPB international admissions portal, period 2","source_url":"https://global.ipb.ac.id/admisssion/"}],"sat":null,"acceptance_rate":null,"notes":"Applicants must have completed 12 years of schooling; maximum age 25."},{"id":"eeaff72d-4092-57d9-bb1b-4ed463749cec","english":[{"test":"IELTS","minimum":6.5,"detail":"English 6 equivalent: IELTS 6.5 overall, no section below 5.5.","source_url":"https://www.universityadmissions.se/en/entry-requirements/english-language-requirements/"},{"test":"TOEFL iBT","minimum":4.5,"detail":"English 6 equivalent: total 4.5 on tests from 21 Jan 2026, no section below 4.","source_url":"https://www.universityadmissions.se/en/entry-requirements/english-language-requirements/"},{"test":"PTE Academic","minimum":62,"detail":"English 6 equivalent: 62 overall, writing 61.","source_url":"https://www.universityadmissions.se/en/entry-requirements/english-language-requirements/"}],"tuition":{"amount":96600,"amount_max":395700,"currency":"SEK","period":"year","academic_year":"2026/27","detail":"Full-time degree programme fees vary by field; published range is SEK 96,600–395,700 per year.","source_url":"https://www.umu.se/en/education/application-and-admission/tuition-fees/new-student/"},"application_fee":{"amount":900,"currency":"SEK","source_url":"https://www.umu.se/en/education/programmes/international-business-and-economics-programme/"},"deadlines":[{"title":"Autumn 2027 entry","due_at":"2027-01-15","route":"University Admissions (Sweden)","source_url":"https://www.umu.se/en/education/application-and-admission/key-dates-and-deadlines/"}],"sat":null,"acceptance_rate":null,"notes":"English-taught bachelor's programmes require English 6; programme-specific academic prerequisites may also apply."}] }

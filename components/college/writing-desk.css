@@ -1,0 +1,521 @@
+/* Writing desk, Nov 19 (v3): type icons in tinted tiles, a small hero
+ * drawing, recent essays as cards, a word-count ring and icon tooltips.
+ * One accent (brand blue). Loaded after writing-notion.css. */
+.wt {
+  --wd-blue: var(--cs-accent, #5b8cff);
+  --wd-blue-text: var(--cs-accent-text, #3b6cf0);
+  --wd-tint: color-mix(in srgb, var(--wd-blue) 11%, transparent);
+  --wd-panel: var(--dk-panel, var(--wd-card));
+  --wd-rule: var(--dk-line, var(--wd-line));
+  --wd-hover: var(--dk-hover, var(--wd-soft));
+}
+html.dark .wt {
+  --wd-tint: color-mix(in srgb, var(--wd-blue) 18%, transparent);
+}
+
+/* ---------- Shared pieces ---------- */
+.wd-tile {
+  display: inline-grid;
+  flex: none;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: var(--wd-tint);
+  color: var(--wd-blue-text);
+}
+.wd-tile.is-sm {
+  width: 26px;
+  height: 26px;
+  border-radius: 8px;
+}
+.wd-tip {
+  max-width: 260px;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+/* ---------- Launcher ---------- */
+.wt .wl {
+  max-width: 880px;
+  margin: 0 auto;
+  gap: 36px;
+}
+.wl-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 24px;
+  padding: 8px 0 0;
+}
+.wl-hero-text {
+  display: grid;
+  justify-items: start;
+  gap: 8px;
+}
+.wt .wl-hero h2 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+.wl-hero p {
+  max-width: 520px;
+  margin: 0 0 6px;
+  color: var(--wd-muted);
+  font-size: 15px;
+  line-height: 1.55;
+}
+.wl-art {
+  width: 200px;
+  height: auto;
+}
+.wd-art-sheet {
+  fill: var(--wd-panel);
+  stroke: var(--wd-rule);
+  stroke-width: 1.2;
+}
+.wd-art-sheet.is-back {
+  fill: var(--wd-hover);
+}
+.wd-art-line {
+  fill: color-mix(in srgb, var(--wd-ink) 12%, transparent);
+}
+.wd-art-ink {
+  fill: color-mix(in srgb, var(--wd-ink) 70%, transparent);
+}
+.wd-art-note {
+  fill: var(--wd-panel);
+  stroke: color-mix(in srgb, var(--wd-blue) 55%, var(--wd-rule));
+  stroke-width: 1.2;
+}
+.wd-art-band {
+  fill: color-mix(in srgb, #fff 55%, transparent);
+}
+.wd-art-nib {
+  fill: color-mix(in srgb, var(--wd-ink) 78%, transparent);
+}
+.wd-art-tip {
+  fill: var(--wd-blue);
+}
+
+/* Section headings */
+.wl-sec {
+  display: grid;
+  gap: 14px;
+}
+.wl-sec-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 10px;
+}
+.wl-sec-head h3 {
+  margin: 0;
+  font-family: var(--cs-font-display, inherit);
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+.wl-sec-head > span {
+  color: var(--wd-faint);
+  font-size: 13px;
+  font-variant-numeric: tabular-nums;
+}
+.wl-sec-head p {
+  flex-basis: 100%;
+  margin: 0;
+  color: var(--wd-muted);
+  font-size: 13.5px;
+}
+
+/* Recent essays: cards */
+.wl-docs,
+.wl-tpls,
+.wl-unis {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.wl-docs {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 12px;
+}
+.wl-doc {
+  display: grid;
+  align-content: start;
+  gap: 10px;
+  width: 100%;
+  height: 100%;
+  padding: 16px;
+  border: 1px solid var(--wd-rule);
+  border-radius: 14px;
+  background: var(--wd-panel);
+  color: var(--wd-ink);
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+  transition:
+    border-color 0.15s ease,
+    box-shadow 0.15s ease;
+}
+.wl-doc:hover {
+  border-color: color-mix(in srgb, var(--wd-blue) 45%, var(--wd-rule));
+  box-shadow: 0 6px 18px rgb(0 0 0 / 5%);
+}
+.wl-doc-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.wl-doc strong {
+  overflow: hidden;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.3;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.wl-doc-bar {
+  position: relative;
+  height: 4px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: var(--wd-hover);
+}
+.wl-doc-bar i {
+  position: absolute;
+  inset: 0 auto 0 0;
+  border-radius: inherit;
+  background: var(--wd-blue);
+}
+.wl-doc-bar i.is-over {
+  background: #dc2626;
+}
+.wl-doc small {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2px 10px;
+  color: var(--wd-muted);
+  font-size: 12.5px;
+  font-variant-numeric: tabular-nums;
+}
+.wl-doc small span + span {
+  color: var(--wd-faint);
+}
+
+/* Universities: one row each, essays as chips */
+.wl-unis {
+  overflow: hidden;
+  border: 1px solid var(--wd-rule);
+  border-radius: 14px;
+  background: var(--wd-panel);
+}
+.wl-unis > li {
+  display: grid;
+  gap: 10px;
+  padding: 14px 16px;
+}
+.wl-unis > li + li {
+  border-top: 1px solid var(--wd-rule);
+}
+.wl-uni-name {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 2px 8px;
+}
+.wl-uni-name strong {
+  font-size: 15px;
+  font-weight: 600;
+}
+.wl-uni-name small {
+  color: var(--wd-muted);
+  font-size: 12.5px;
+}
+.wl-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.wl-chips button {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  min-height: 32px;
+  padding: 0 12px 0 10px;
+  border: 1px solid var(--wd-rule);
+  border-radius: 999px;
+  background: none;
+  color: var(--wd-ink);
+  font: inherit;
+  font-size: 13px;
+  cursor: pointer;
+}
+.wl-chips button > svg {
+  color: var(--wd-blue-text);
+}
+.wl-chips button:hover {
+  background: var(--wd-hover);
+}
+.wl-chips button.is-started {
+  border-color: color-mix(in srgb, var(--wd-blue) 40%, var(--wd-rule));
+}
+.wl-chips em {
+  color: var(--wd-faint);
+  font-size: 11.5px;
+  font-style: normal;
+}
+
+/* Templates: two columns of compact cards */
+.wl-tpl-group {
+  display: grid;
+  gap: 10px;
+}
+.wl-tpl-group + .wl-tpl-group {
+  margin-top: 10px;
+}
+.wl-tpl-group h4 {
+  margin: 0;
+  color: var(--wd-muted);
+  font-size: 12.5px;
+  font-weight: 600;
+}
+.wl-tpls {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+.wl-tpl {
+  position: relative;
+}
+.wl-tpl-main {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  width: 100%;
+  height: 100%;
+  padding: 14px 14px 14px 14px;
+  border: 1px solid var(--wd-rule);
+  border-radius: 14px;
+  background: var(--wd-panel);
+  color: var(--wd-ink);
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+  transition: border-color 0.15s ease;
+}
+.wl-tpl-main:hover {
+  border-color: color-mix(in srgb, var(--wd-blue) 45%, var(--wd-rule));
+}
+.wl-tpl-text {
+  display: grid;
+  gap: 3px;
+  min-width: 0;
+  padding-right: 34px;
+}
+.wl-tpl-text strong {
+  font-size: 14.5px;
+  font-weight: 600;
+}
+.wl-tpl-text small {
+  display: -webkit-box;
+  overflow: hidden;
+  color: var(--wd-muted);
+  font-size: 13px;
+  line-height: 1.45;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.wl-tpl-text em {
+  margin-top: 3px;
+  color: var(--wd-faint);
+  font-size: 12px;
+  font-style: normal;
+  font-variant-numeric: tabular-nums;
+}
+.wl-tpl-ai {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: inline-grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  background: none;
+  color: var(--wd-faint);
+  cursor: pointer;
+  transition:
+    color 0.15s ease,
+    background 0.15s ease;
+}
+.wl-tpl-ai span {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+.wl-tpl-ai:hover,
+.wl-tpl-ai:focus-visible {
+  background: var(--wd-tint);
+  color: var(--wd-blue-text);
+}
+
+@media (max-width: 720px) {
+  .wt .wl {
+    gap: 30px;
+  }
+  .wl-hero {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 4px;
+  }
+  .wl-art {
+    order: -1;
+    width: 132px;
+    margin-left: -10px;
+  }
+  .wt .wl-hero h2 {
+    font-size: 24px;
+  }
+  .wl-tpls {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .wl-docs {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+/* ---------- Editor: count with ring ---------- */
+.wd-count {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+}
+.wd-count-text {
+  display: grid;
+  min-width: 0;
+  line-height: 1.25;
+}
+.wd-count-text > span,
+.wd-count-text small {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.wd-count-text small {
+  color: var(--wd-faint);
+  font-size: 11.5px;
+}
+.wd-ring {
+  flex: none;
+  fill: none;
+}
+.wd-ring-track {
+  stroke: color-mix(in srgb, var(--wd-ink) 12%, transparent);
+  stroke-width: 2.6;
+}
+.wd-ring-fill {
+  stroke: var(--wd-blue);
+  stroke-width: 2.6;
+  stroke-linecap: round;
+  transition: stroke-dasharray 0.25s ease;
+}
+.wd-ring.is-over .wd-ring-fill {
+  stroke: #dc2626;
+}
+.wd-ring-min {
+  fill: var(--wd-ink);
+  opacity: 0.45;
+}
+.wd-ring.is-ok .wd-ring-min {
+  fill: var(--wd-blue);
+  opacity: 1;
+}
+@media (prefers-reduced-motion: reduce) {
+  .wd-ring-fill {
+    transition: none;
+  }
+}
+/* Focus mode: the count stays, quieter. */
+.wn.is-focus .wd-count-text small {
+  display: none;
+}
+@media (max-width: 600px) {
+  .wd-count-text {
+    display: flex;
+    gap: 6px;
+  }
+}
+
+/* The AI review button: the one accent action in the toolbar. */
+.wn .wn-check {
+  background: var(--wd-blue);
+  color: #fff;
+}
+html.dark .wn .wn-check {
+  background: color-mix(in srgb, var(--wd-blue) 85%, #000);
+}
+.wn .wn-check small {
+  background: rgb(255 255 255 / 22%);
+  color: #fff;
+}
+
+/* ---------- Review panel: icon per criterion ---------- */
+.wr-crit-icon {
+  display: inline-grid;
+  flex: none;
+  place-items: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 6px;
+  background: var(--wd-tint);
+  color: var(--wd-blue-text);
+}
+.wr-intro li {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 3px 10px 3px 4px;
+}
+.wr-crit-name {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  min-width: 0;
+  white-space: nowrap;
+}
+.wt .wr-criteria summary {
+  grid-template-columns: 128px minmax(0, 1fr) 20px;
+}
+.wt .wr-comments .wr-kind,
+.wt .wr-fixes .wr-kind {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: var(--wd-ink);
+  font-size: 12px;
+  font-weight: 600;
+}
+.wr-kind-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin-left: auto;
+  color: var(--wr-kind, var(--wd-muted));
+  font-size: 11px;
+  font-weight: 600;
+}
+.wr .wr-block h4 {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.wr .wr-block h4 > svg {
+  color: var(--wd-muted);
+}

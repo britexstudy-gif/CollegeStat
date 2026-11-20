@@ -1,0 +1,269 @@
+OpenAI Codex v0.169.0
+--------
+workdir: /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+model: gpt-6-luna
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: high
+reasoning summaries: none
+session id: 01a1ee7c-634d-7430-a0c4-923f2a1d3b8c
+--------
+user
+You are a careful admissions-data researcher. For each university below, find facts for an
+INTERNATIONAL applicant to a FIRST-YEAR BACHELOR'S degree starting in autumn 2027 (or the nearest
+published cycle). Use the live web. Rules:
+
+- Official sources only: the university's own website (its domain or subdomains), the national
+  application service (UCAS, Common App, OUAC, uni-assist, Studyinkorea, etc.) or a government
+  statistics office. Never use rankings sites, forums, agencies, Wikipedia or blogs.
+- Every value needs the exact page URL where you read it (source_url). If you could not verify a
+  value on an official page, leave it out (null or an empty list). Never guess or estimate.
+- english: the lowest overall score accepted for undergraduate entry, per test (IELTS Academic
+  overall, TOEFL iBT total, Duolingo, PTE). If programmes differ, give the general/lowest common
+  university minimum and say so in detail (e.g. "6.5 overall, no band below 6.0; some
+  programmes higher").
+- tuition: the yearly tuition for international (non-EU / overseas) undergraduates in the local
+  currency. If it varies by programme give amount = lowest and amount_max = highest, and the
+  academic_year the fee applies to (e.g. "2026/27"). If tuition is free, amount = 0.
+- application_fee: for international first-year applicants, local currency.
+- deadlines: the main 2027-entry first-year deadlines (ISO date YYYY-MM-DD) with the route
+  (e.g. "Common App, Regular Decision", "UCAS", "university portal"). Only dates actually
+  published; if only the 2026-entry date is published, include it and put "2026 entry" in title.
+- sat: policy for international applicants; p25/p75 total SAT only if the university publishes
+  them (Common Data Set or admissions profile).
+- acceptance_rate: only if officially published (CDS, admissions statistics page).
+- notes: one short line on anything important (e.g. "Foundation year required for 11-year
+  school certificates"), else "".
+
+Spend effort on the facts students need most: English minimum, tuition, deadlines. Keep each
+detail under 160 characters. Return only the JSON that matches the schema; use each
+university's id exactly as given.
+
+Universities:
+- id: 0cb61489-37dd-53a3-a9f2-53cbd5f1a0dd | Pennsylvania State University-Main Campus | University Park, US | http://www.psu.edu/
+- id: 3c3e72ae-5e23-550f-8280-25603d083bb5 | The University of Sheffield | Sheffield, GB | https://www.sheffield.ac.uk/
+- id: 8ea2d1c3-ce48-518f-9417-7c08098cd6d5 | Universidad de Buenos Aires | Buenos Aires, AR | http://www.uba.ar/
+- id: 69452803-31fe-56a8-b2b4-c2a682cf4214 | University of Durham | Durham, GB | http://www.dur.ac.uk/
+codex
+I’m checking the university and application-service pages for the nearest published entry cycle, prioritizing official English requirements, international fees, and dated deadlines.
+exec
+/bin/zsh -lc 'cat /Users/likeanew/.agents/skills/lemma/SKILL.md && cat /Users/likeanew/.agents/skills/agent-toolstack/SKILL.md' in /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+ succeeded in 0ms:
+---
+name: lemma
+description: Persistent cross-session memory for AI agents via MCP. BEFORE starting ANY task (coding, debugging, refactoring, research, docs, optimization — any language), FIRST call memory_read to load what you already know so you never re-derive or re-explore known facts. AFTER finishing, call memory_add to persist new findings and session_attempt for dead ends — unsaved knowledge is lost permanently. Distills reusable guides from experience.
+---
+
+<!-- lemma:skill:v=0.21.0 -->
+
+# Lemma — Persistent Memory & Learning
+
+Lemma is a persistent memory server for AI agents over the Model Context Protocol.
+Every session starts blank — knowledge survives ONLY through tool calls. If you
+learn something and don't save it (`memory_add`), it is gone permanently.
+
+## Workflow
+1. **RECALL** — `memory_read` / `semantic_search`: load what's already known for this
+   project/task. Never re-explore code or re-derive facts that are already saved.
+2. **ACT** — do the task.
+3. **PERSIST** — `memory_add` for new insights; `guide_practice` for guides applied;
+   `session_attempt` for abandoned/dead-end approaches (the most valuable records).
+
+## Two knowledge layers
+- **Memory fragments** (`memory_read` / `memory_add`): atomic facts. Types: `fact`,
+  `pattern`, `lesson`, `warning`, `context`. Confidence evolves with use and feedback.
+- **Guides** (`guide_get` / `guide_distill` / `guide_practice`): procedural skills
+  distilled from fragments. Track usage count + success/failure rate.
+Pipeline: `experience -> memory_add -> pattern/lesson -> guide_distill -> guide_practice`.
+
+## Tools at a glance
+- **Recall & search**: `memory_read`, `semantic_search`, `memory_library` (full
+  snapshot + maintenance signals), `memory_stats`, `memory_audit`.
+- **Write & maintain**: `memory_add`, `memory_update`, `memory_forget`,
+  `memory_merge`, `memory_relate` (supports / contradicts / supersedes / related_to),
+  `memory_feedback`.
+- **Guides**: `guide_get`, `guide_create`, `guide_distill`, `guide_practice`,
+  `guide_update`, `guide_forget`, `guide_merge`.
+- **Sessions & reasoning**: `session_start`, `session_end`, `session_attempt`,
+  `session_stats`, `suggestion_respond`.
+- **Background intelligence**: `conflict_scan`, `proactive_analysis`,
+  `project_analytics` (run automatically; act on signals when sensible).
+
+## Writing a fragment
+```
+## [Topic Title]
+### Context
+[1-2 sentences: what and why it matters]
+### [Content Section]
+- [Key fact 1]
+- [Key fact 2]
+### Rules (optional)
+- [Absolute constraint]
+```
+One idea per fragment, 30-2000 chars, structured markdown (not prose). **Store
+fragments in ENGLISH** (required for search/retrieval). Never ask permission to save.
+
+## Background intelligence
+Conflict detection, distill/merge/refine suggestions, and auto-linking run
+automatically. From the CLI, `lemma -lib` prints a full knowledge-base snapshot
+and `lemma -vis` launches a visualizer.
+---
+name: agent-toolstack
+description: Use when working on the user's AI coding setup, or when a task involves OpenCode, MiMoCode, MCP servers, UI/design generation, animation, icons, browser testing, databases, or the CollegeStat project. Loads the verified MCP toolstack, config locations, known gotchas, and project context so you do not re-derive or re-explore what is already known.
+---
+
+# Agent Toolstack — Shared Knowledge (OpenCode + MiMoCode)
+
+Curated facts about this machine's AI coding setup. Read this before designing UI,
+wiring MCP servers, or touching config. Verified = checked against the live system
+(2026-10-17). Unverified = reported by a source, not confirmed here.
+
+## Environment
+
+- macOS (darwin), user `likeanew`, Apple Silicon.
+- Primary project: `/Users/likeanew/Documents/CollegeStat`
+  - `collegestat/` — the main app (48 entries, modified Oct 15).
+  - `AI-Setup/` — scratch workspace (empty as of 2026-10-17).
+- Two coding agents installed side by side: **OpenCode** (`~/.config/opencode`) and
+  **MiMoCode** (`~/.config/mimocode`, binary `~/.mimocode/bin/mimo`, v0.1.15).
+- Other agent configs present: `~/.codex` (Codex, 3.6 GB — large), `~/.cursor`,
+  `~/.gemini`, `~/.copilot`, `~/.agents`.
+
+## MCP config format (identical in OpenCode and MiMoCode)
+
+```jsonc
+{
+  "$schema": "https://opencode.ai/config.json",          // or https://mimo.xiaomi.com/mimocode/config.json
+  "mcp": {
+    "name":  { "type": "local",  "command": ["npx", "-y", "pkg"] },
+    "docs":  { "type": "remote", "url": "https://host/mcp" },
+    "off":   { "enabled": false }                          // disable without deleting
+  }
+}
+```
+
+**Do NOT use `"mcp_servers"` or a `command` string + `args` array.** That format is
+wrong for both tools. The correct key is `"mcp"` and `command` is an array.
+
+## Verified MCP toolstack (installed in both agents)
+
+| Server | What it gives you | When to use |
+|---|---|---|
+| `inspo` | 2,320 real-site captures: palettes, fonts, macrostructures, 68 reference components with copy-pasteable JSX. stdio via `inspo-mcp`; hosted `https://inspomcp.dev/api/mcp` also works. | Any UI/design task — call `recommend(brief)` first |
+| `shadcn` | Browse/view/install real shadcn/ui + any registry component. `npx shadcn@latest mcp`. | Component work — prevents hallucinated component code |
+| `context7` | Up-to-date library docs + code examples. Remote `https://mcp.context7.com/mcp`. | When unsure of an API/version |
+| `animotion` | 745 hand-crafted CSS3 animations + 9,740 real SVG icons (Lucide/Tabler/Heroicons/Bootstrap). `npx animotion-mcp`. | Animation + icons — kills AI-looking generated icons |
+| `gsap-master` | GSAP expert: intent→60fps code, plugins (SplitText, ScrollTrigger, DrawSVG), debugging, perf optimizer. `npx @vinhnguyen/gsap-mcp`. | Complex animation, scroll systems, text reveals |
+| `playwright` | Browser automation, screenshots, accessibility snapshots, speed/QA checks. Runs `--headless --isolated`. | Visual verification, E2E, performance |
+| `sequential-thinking` | Structured step-by-step reasoning. | Complex architecture / debugging |
+| `lemma` | Persistent local memory over MCP (confidence decay, guides, JSONL/SQLite). `npx lemma-mcp`. | Cross-session recall; `memory_read` first, `memory_add` after |
+| `supabase` / `prisma` / `github` | DB + GitHub. Remote, **require OAuth login** (`mimo mcp auth <name>`). | Backend / repo work once authenticated |
+
+### MCP gotchas (verified from the live log)
+
+- The 3 auth-required servers spam ~600 WARN lines per session until logged in.
+  Run `mimo mcp auth supabase` (and `prisma`, `github`) or set `"enabled": false`.
+- `shadcn` logs `MCP error -32601: Method not found` for `resources` — harmless;
+  the server exposes tools only, not the resources method OpenCode/MiMo probe.
+- Local servers spawn via `npx`; first run downloads the package (a few seconds).
+
+## Config & skill locations
+
+**OpenCode**
+- Global config: `~/.config/opencode/opencode.jsonc`
+- Skills: `~/.agents/skills/<name>/SKILL.md`, `~/.config/opencode/skills/<name>/SKILL.md`,
+  `.opencode/skills/`, `.claude/skills/` (project), plus `~/.claude/skills/`
+- Verify: `opencode mcp list`, `opencode debug config`, `opencode reload`
+
+**MiMoCode**
+- Global config: `~/.config/mimocode/mimocode.jsonc` (JSONC, merges over defaults)
+- Project config: `<project>/.mimocode/mimocode.jsonc`
+- Skills: `~/.agents/skills/<name>/SKILL.md` (global), `<project>/.mimocode/skills/`,
+  `.agents/skills/`, `.claude/skills/`, `.codex/skills/` (brand roots opt-in via env)
+- Agents/modes: `~/.config/mimocode/agent/<name>.md` or `<project>/.mimocode/agent/<name>.md`
+- Commands: `.mimocode/command/<name>.md`
+- Memory: `~/.local/share/mimocode/memory/projects/<project>/MEMORY.md`, `.../global/MEMORY.md`
+- Verify: `mimo mcp list`, `mimo debug config`, `mimo debug skill`, `mimo agent list`
+- Default model: `mimo/mimo-auto` (free, 1M context). Models: `mimo models`.
+
+**Shared skill path:** `~/.agents/skills/` is read by BOTH agents — put cross-tool
+knowledge here (this skill lives there).
+
+## Known issues on this machine (2026-10-17)
+
+- **GitLab auth expired** — `GitLabError: 401 Unauthorized` for `gitlab/duo-chat-fable-5`.
+  Re-authenticate GitLab; token last refreshed 2026-10-06.
+- **`.codex` is 3.6 GB** — `sessions/` alone is 2.3 GB (369 rollout `.jsonl.zst`
+  files), `thread_history_1.sqlite` 592 MB. Clean old sessions if disk is tight.
+- **Stale lock files** in `~/.codex` (0-byte `.sqlite-maintenance.lock`, empty
+  `*.sqlite-wal`, empty `AGENTS.md`, `transcription-history.jsonl`). Safe to remove.
+- **`.codex-global-state.json.bak`** is a byte-identical duplicate of the live state file.
+- **No DB corruption**: `opencode.db` (140 MB) and all Codex sqlite files pass
+  `PRAGMA integrity_check` / `quick_check`.
+- **OpenCode log** is 16 MB at `~/.local/share/opencode/log/opencode.log`; rotate if large.
+
+## Tools reported by awesome-opencode but NOT installable as-is
+
+`morph-fast-apply`, `crawlberg`, `harness-memory`, `flowdeck`, `honcho`,
+`opencode-mission-control` are GitHub-only repos, not npm packages — they need manual
+clone + plugin-file placement. `@seos/*` (AISEOS) is GitHub-only and unverified.
+`@inspo/mcp-server` does not exist on npm — the correct package is `inspo-mcp`.
+
+## Working conventions
+
+- Prefer real, verified tools over generated approximations: `inspo` for design,
+  `animotion` for icons/animations, `shadcn` for components, `context7` for APIs.
+- Keep config edits minimal and targeted; preserve JSONC comments and `$schema`.
+- After editing config, reload (`opencode reload`) or restart (`mimo`) before verifying.
+- Treat API keys as secrets: never echo them into logs, diffs, or responses.
+
+web search: 
+web search: site:admissions.psu.edu international undergraduate English proficiency tuition 2026 2027 application fee deadline fall 2027 SAT ...
+web search: 
+web search: site:admissions.psu.edu/apply/international English proficiency IELTS TOEFL Duolingo undergraduate Penn State ...
+web search: 
+web search: Penn State international undergraduate admissions English proficiency minimum Duolingo IELTS TOEFL PTE site:psu.edu ...
+web search: 
+web search: site:durham.ac.uk/study/undergraduate/apply "15 January 2027" ...
+web search: 
+web search: site:durham.ac.uk/study/international/entry-requirements/english-language-requirements IELTS undergraduate Standard 6.5 TOEFL PTE ...
+web search: 
+web search: https://www.durham.ac.uk/study/international/entry-requirements/english-language-requirements/
+web search: 
+web search: site:sheffield.ac.uk/international/fees-and-funding/tuition-fees 2027 undergraduate overseas tuition fees ...
+web search: 
+web search: site:sheffield.ac.uk/eltc "TOEFL iBT" undergraduate English language requirements Sheffield 88 ...
+web search: 
+web search: "English Language Proficiency of Candidates" Durham IELTS 6.5 site:durham.ac.uk/media ...
+web search: 
+web search: site:durham.ac.uk "2026/27" "Undergraduate" "International" "£" tuition fees Durham ...
+web search: 
+web search: "2026/27" "Durham University" "International fees" ...
+web search: 
+web search: site:dur.ac.uk/study/courses "International (full-time): £" "2027" "Tuition Fees" ...
+web search: 
+web search: site:dur.ac.uk/study/courses/ "September 2027" "International (full-time): £27,000 per year" ...
+web search: 
+web search: site:dur.ac.uk/study/courses/medicine "International (full-time)" 2027 ...
+web search: 
+web search: site:ucas.com 2027 entry application fee £28.95 ...
+web search: 
+web search: site:psu.edu/resources "Fall 2027" "November 1" Penn State first-year ...
+web search: 
+web search: 
+web search: 
+web search: site:opair.psu.edu/files/2025/04/CDS_2024_2025_University_Park1.pdf "Admit Rate" ...
+web search: 
+web search: 'First-Time, First-Year Student Applicants'
+web search: 
+web search: 
+web search: 
+web search: https://duracuk-www01-production.terminalfour.net/study/international/entry-requirements/english-language-requirements/direct-entry-band-b/
+web search: 
+web search: site:duracuk-www01-production.terminalfour.net/study/international/entry-requirements/english-language-requirements/direct-entry-band-b ...
+codex
+{"universities":[{"id":"0cb61489-37dd-53a3-a9f2-53cbd5f1a0dd","english":[{"test":"IELTS","minimum":6.5,"detail":"6.5 overall; academic test.","source_url":"https://www.psu.edu/resources/international-students/admission-requirements"},{"test":"TOEFL iBT","minimum":4.5,"detail":"4.5 minimum for tests taken from Jan 21, 2026; score scale changed.","source_url":"https://www.psu.edu/resources/international-students/admission-requirements"},{"test":"Duolingo","minimum":120,"detail":"Minimum score 120.","source_url":"https://www.psu.edu/resources/international-students/admission-requirements"}],"tuition":{"amount":44574,"amount_max":null,"currency":"USD","period":"year","academic_year":"2026/27","detail":"University Park first-year non-Pennsylvania rate; international students are included in non-PA rates.","source_url":"https://tuition.psu.edu/rates-effective-2026-fall-semester"},"application_fee":{"amount":75,"currency":"USD","source_url":"https://www.psu.edu/resources/faq/general"},"deadlines":[{"title":"Fall 2027 Early Action","due_at":"2026-11-01","route":"Common App or MyPennState","source_url":"https://www.psu.edu/resources/international-students/deadlines"}],"sat":{"policy":"optional","p25":1280,"p75":1410,"source_url":"https://bpb-us-e1.wpmucdn.com/sites.psu.edu/dist/d/114442/files/2026/06/UniversityPark_CDS_2025_2026.pdf"},"acceptance_rate":{"percent":55.3,"year":"Fall 2025","source_url":"https://bpb-us-e1.wpmucdn.com/sites.psu.edu/dist/d/114442/files/2026/06/UniversityPark_CDS_2025_2026.pdf"},"notes":""},{"id":"3c3e72ae-5e23-550f-8280-25603d083bb5","english":[{"test":"IELTS","minimum":6.5,"detail":"6.5 overall, minimum 6.0 each component; some courses require higher scores.","source_url":"https://sheffield.ac.uk/undergraduate/apply/english-language"},{"test":"TOEFL iBT","minimum":4.5,"detail":"From Jan 2026 scoring: 4.5 overall, minimum 4.5 L/S and 4.0 R/W; courses may require higher.","source_url":"https://sheffield.ac.uk/undergraduate/apply/english-language"},{"test":"PTE Academic","minimum":61,"detail":"61 overall, minimum 56 each component; some courses require higher scores.","source_url":"https://sheffield.ac.uk/undergraduate/apply/english-language"},{"test":"Cambridge C1/C2","minimum":176,"detail":"C1 Advanced 176 overall, minimum 169 each component; some courses require higher.","source_url":"https://sheffield.ac.uk/undergraduate/apply/english-language"}],"tuition":{"amount":27650,"amount_max":55000,"currency":"GBP","period":"year","academic_year":"2027/28","detail":"Overseas undergraduate fees: £27,650–£34,670 generally; Medicine £51,380 and Dentistry £55,000.","source_url":"https://sheffield.ac.uk/new-students/tuition-fees/undergraduate-overseas"},"application_fee":{"amount":34.5,"currency":"GBP","source_url":"https://www.ucas.com/faqs/what-is-the-application-fee-for-the-2027-cycle"},"deadlines":[{"title":"2027 entry equal consideration","due_at":"2027-01-13","route":"UCAS","source_url":"https://sheffield.ac.uk/undergraduate/apply/application"},{"title":"2027 entry later consideration closes","due_at":"2027-06-30","route":"UCAS","source_url":"https://sheffield.ac.uk/undergraduate/apply/application"},{"title":"2027 entry Medicine and Dentistry","due_at":"2026-10-15","route":"UCAS","source_url":"https://sheffield.ac.uk/undergraduate/apply/application"}],"sat":null,"acceptance_rate":null,"notes":""},{"id":"8ea2d1c3-ce48-518f-9417-7c08098cd6d5","english":[],"tuition":{"amount":0,"amount_max":0,"currency":"ARS","period":"year","academic_year":"Current; 2027 not separately dated","detail":"UBA states undergraduate degree courses have no tuition charge for enrollment, study or examinations.","source_url":"https://www.uba.ar/preguntasfrecuentes"},"application_fee":{"amount":0,"currency":"ARS","source_url":"https://www.uba.ar/preguntasfrecuentes"},"deadlines":[{"title":"2027 first semester foreign applicants without Argentine DNI","due_at":"2026-11-26","route":"CBC pre-registration","source_url":"https://www4.cbc.uba.ar/inscripciones/nodniarg.php"}],"sat":null,"acceptance_rate":null,"notes":"Foreign applicants enter through the CBC, the first year of all degrees; applicants with non-Spanish-country diplomas need Spanish C1 certification."},{"id":"69452803-31fe-56a8-b2b4-c2a682cf4214","english":[{"test":"IELTS","minimum":6.5,"detail":"Band B: 6.5 overall, no component below 6.0; some courses require higher scores.","source_url":"https://dur.ac.uk/study/international/entry-requirements/english-language-requirements/direct-entry-band-b/"},{"test":"TOEFL iBT","minimum":4.5,"detail":"Band B: 4.5 overall, no component below 4 for tests from Jan 21, 2026; some courses require higher.","source_url":"https://dur.ac.uk/study/international/entry-requirements/english-language-requirements/direct-entry-band-b/"},{"test":"Duolingo","minimum":120,"detail":"Band B: 120 overall, minimum 110 in each subscore; some courses require higher.","source_url":"https://dur.ac.uk/study/international/entry-requirements/english-language-requirements/direct-entry-band-b/"},{"test":"PTE Academic","minimum":62,"detail":"Band B: 62 overall, minimum 59 each communicative skill; some courses require higher.","source_url":"https://dur.ac.uk/study/international/entry-requirements/english-language-requirements/direct-entry-band-b/"},{"test":"Cambridge C1/C2","minimum":176,"detail":"Band B: C1 Advanced or C2 Proficiency 176 overall, minimum 169 each component.","source_url":"https://dur.ac.uk/study/international/entry-requirements/english-language-requirements/direct-entry-band-b/"}],"tuition":{"amount":28000,"amount_max":36000,"currency":"GBP","period":"year","academic_year":"2027/28","detail":"Published 2027-entry undergraduate examples range from £28,000 (Education Studies) to £36,000 (Biochemistry).","source_url":"https://dur.ac.uk/study/courses/education-studies-x305/; https://dur.ac.uk/study/courses/biochemistry-c702/"},"application_fee":{"amount":34.5,"currency":"GBP","source_url":"https://www.ucas.com/faqs/what-is-the-application-fee-for-the-2027-cycle"},"deadlines":[{"title":"2027 entry equal consideration","due_at":"2027-01-13","route":"UCAS","source_url":"https://dur.ac.uk/study/scholarships/international/durham-inspiring-excellence-scholarships/undergraduate/"}],"sat":null,"acceptance_rate":null,"notes":""}]}
+tokens used
+178,218
+{"universities":[{"id":"0cb61489-37dd-53a3-a9f2-53cbd5f1a0dd","english":[{"test":"IELTS","minimum":6.5,"detail":"6.5 overall; academic test.","source_url":"https://www.psu.edu/resources/international-students/admission-requirements"},{"test":"TOEFL iBT","minimum":4.5,"detail":"4.5 minimum for tests taken from Jan 21, 2026; score scale changed.","source_url":"https://www.psu.edu/resources/international-students/admission-requirements"},{"test":"Duolingo","minimum":120,"detail":"Minimum score 120.","source_url":"https://www.psu.edu/resources/international-students/admission-requirements"}],"tuition":{"amount":44574,"amount_max":null,"currency":"USD","period":"year","academic_year":"2026/27","detail":"University Park first-year non-Pennsylvania rate; international students are included in non-PA rates.","source_url":"https://tuition.psu.edu/rates-effective-2026-fall-semester"},"application_fee":{"amount":75,"currency":"USD","source_url":"https://www.psu.edu/resources/faq/general"},"deadlines":[{"title":"Fall 2027 Early Action","due_at":"2026-11-01","route":"Common App or MyPennState","source_url":"https://www.psu.edu/resources/international-students/deadlines"}],"sat":{"policy":"optional","p25":1280,"p75":1410,"source_url":"https://bpb-us-e1.wpmucdn.com/sites.psu.edu/dist/d/114442/files/2026/06/UniversityPark_CDS_2025_2026.pdf"},"acceptance_rate":{"percent":55.3,"year":"Fall 2025","source_url":"https://bpb-us-e1.wpmucdn.com/sites.psu.edu/dist/d/114442/files/2026/06/UniversityPark_CDS_2025_2026.pdf"},"notes":""},{"id":"3c3e72ae-5e23-550f-8280-25603d083bb5","english":[{"test":"IELTS","minimum":6.5,"detail":"6.5 overall, minimum 6.0 each component; some courses require higher scores.","source_url":"https://sheffield.ac.uk/undergraduate/apply/english-language"},{"test":"TOEFL iBT","minimum":4.5,"detail":"From Jan 2026 scoring: 4.5 overall, minimum 4.5 L/S and 4.0 R/W; courses may require higher.","source_url":"https://sheffield.ac.uk/undergraduate/apply/english-language"},{"test":"PTE Academic","minimum":61,"detail":"61 overall, minimum 56 each component; some courses require higher scores.","source_url":"https://sheffield.ac.uk/undergraduate/apply/english-language"},{"test":"Cambridge C1/C2","minimum":176,"detail":"C1 Advanced 176 overall, minimum 169 each component; some courses require higher.","source_url":"https://sheffield.ac.uk/undergraduate/apply/english-language"}],"tuition":{"amount":27650,"amount_max":55000,"currency":"GBP","period":"year","academic_year":"2027/28","detail":"Overseas undergraduate fees: £27,650–£34,670 generally; Medicine £51,380 and Dentistry £55,000.","source_url":"https://sheffield.ac.uk/new-students/tuition-fees/undergraduate-overseas"},"application_fee":{"amount":34.5,"currency":"GBP","source_url":"https://www.ucas.com/faqs/what-is-the-application-fee-for-the-2027-cycle"},"deadlines":[{"title":"2027 entry equal consideration","due_at":"2027-01-13","route":"UCAS","source_url":"https://sheffield.ac.uk/undergraduate/apply/application"},{"title":"2027 entry later consideration closes","due_at":"2027-06-30","route":"UCAS","source_url":"https://sheffield.ac.uk/undergraduate/apply/application"},{"title":"2027 entry Medicine and Dentistry","due_at":"2026-10-15","route":"UCAS","source_url":"https://sheffield.ac.uk/undergraduate/apply/application"}],"sat":null,"acceptance_rate":null,"notes":""},{"id":"8ea2d1c3-ce48-518f-9417-7c08098cd6d5","english":[],"tuition":{"amount":0,"amount_max":0,"currency":"ARS","period":"year","academic_year":"Current; 2027 not separately dated","detail":"UBA states undergraduate degree courses have no tuition charge for enrollment, study or examinations.","source_url":"https://www.uba.ar/preguntasfrecuentes"},"application_fee":{"amount":0,"currency":"ARS","source_url":"https://www.uba.ar/preguntasfrecuentes"},"deadlines":[{"title":"2027 first semester foreign applicants without Argentine DNI","due_at":"2026-11-26","route":"CBC pre-registration","source_url":"https://www4.cbc.uba.ar/inscripciones/nodniarg.php"}],"sat":null,"acceptance_rate":null,"notes":"Foreign applicants enter through the CBC, the first year of all degrees; applicants with non-Spanish-country diplomas need Spanish C1 certification."},{"id":"69452803-31fe-56a8-b2b4-c2a682cf4214","english":[{"test":"IELTS","minimum":6.5,"detail":"Band B: 6.5 overall, no component below 6.0; some courses require higher scores.","source_url":"https://dur.ac.uk/study/international/entry-requirements/english-language-requirements/direct-entry-band-b/"},{"test":"TOEFL iBT","minimum":4.5,"detail":"Band B: 4.5 overall, no component below 4 for tests from Jan 21, 2026; some courses require higher.","source_url":"https://dur.ac.uk/study/international/entry-requirements/english-language-requirements/direct-entry-band-b/"},{"test":"Duolingo","minimum":120,"detail":"Band B: 120 overall, minimum 110 in each subscore; some courses require higher.","source_url":"https://dur.ac.uk/study/international/entry-requirements/english-language-requirements/direct-entry-band-b/"},{"test":"PTE Academic","minimum":62,"detail":"Band B: 62 overall, minimum 59 each communicative skill; some courses require higher.","source_url":"https://dur.ac.uk/study/international/entry-requirements/english-language-requirements/direct-entry-band-b/"},{"test":"Cambridge C1/C2","minimum":176,"detail":"Band B: C1 Advanced or C2 Proficiency 176 overall, minimum 169 each component.","source_url":"https://dur.ac.uk/study/international/entry-requirements/english-language-requirements/direct-entry-band-b/"}],"tuition":{"amount":28000,"amount_max":36000,"currency":"GBP","period":"year","academic_year":"2027/28","detail":"Published 2027-entry undergraduate examples range from £28,000 (Education Studies) to £36,000 (Biochemistry).","source_url":"https://dur.ac.uk/study/courses/education-studies-x305/; https://dur.ac.uk/study/courses/biochemistry-c702/"},"application_fee":{"amount":34.5,"currency":"GBP","source_url":"https://www.ucas.com/faqs/what-is-the-application-fee-for-the-2027-cycle"},"deadlines":[{"title":"2027 entry equal consideration","due_at":"2027-01-13","route":"UCAS","source_url":"https://dur.ac.uk/study/scholarships/international/durham-inspiring-excellence-scholarships/undergraduate/"}],"sat":null,"acceptance_rate":null,"notes":""}]}

@@ -12,9 +12,12 @@ function catalogueClient() {
   return client;
 }
 export const universitySelect =
-  "*,data_points(*,data_sources(*)),costs(*,data_sources(*)),admissions(*,data_sources(*)),university_programs(*,programs(*),data_sources(*)),ranking_entries(*,data_sources(*),ranking_editions(*,ranking_providers(*))),campuses(*),departments(*,data_sources(*)),professors(*,data_sources(*)),research(*,data_sources(*)),deadlines(*,data_sources(*)),requirements(*,data_sources(*)),financial_aid(*,data_sources(*)),media(*,data_sources(*)),university_scholarships(scholarships(*,data_sources(*)))";
-export async function publicRequest<T>(query: string): Promise<T> {
-  const r = await fetch("/api/catalog?" + query);
+  "*,data_points(*,data_sources(*)),costs(*,data_sources(*)),admissions(*,data_sources(*)),university_programs(*,programs(*),data_sources(*)),ranking_entries(*,data_sources(*),ranking_editions(*,ranking_providers(*))),campuses(*),departments(*,data_sources(*)),professors(*,data_sources(*)),research(*,data_sources(*)),research_metrics(*),deadlines(*,data_sources(*)),requirements(*,data_sources(*)),financial_aid(*,data_sources(*)),media(*,data_sources(*)),university_scholarships(scholarships(*,data_sources(*)))";
+// Discovery cards must not download the full course, paper and profile libraries.
+export const discoverySelect =
+  "id,name,slug,short_name,country_code,city,region,website,logo_url,logo_source_url,logo_usage_notes,university_type,aliases,rankings:profile_resources->rankings,institution_image_url:profile_resources->>institution_image_url,imported_records,data_points(*,data_sources(*)),costs(*,data_sources(*)),admissions(*,data_sources(*)),ranking_entries(*,data_sources(*),ranking_editions(*,ranking_providers(*))),media(*,data_sources(*))";
+export async function publicRequest<T>(query: string, signal?: AbortSignal): Promise<T> {
+  const r = await fetch("/api/catalog?" + query, { signal });
   if (!r.ok) throw new Error("Catalogue unavailable");
   return r.json() as Promise<T>;
 }
@@ -42,21 +45,23 @@ export async function fetchCatalogue(): Promise<Catalogue> {
   return references();
 }
 
-export async function searchCatalogue(query: string) {
-  return publicRequest<University[]>('mode=search&q=' + encodeURIComponent(query));
+export async function searchCatalogue(query: string, signal?: AbortSignal) {
+  return publicRequest<University[]>('mode=search&q=' + encodeURIComponent(query), signal);
 }
 
-export async function universitiesByIds(ids: string[]) {
+export async function universitiesByIds(ids: string[], signal?: AbortSignal) {
   if (!ids.length) return [];
   const client = catalogueClient();
   if (!client)
     return publicRequest<University[]>(
       "ids=" + encodeURIComponent(ids.join(",")),
+      signal,
     );
   const { data, error } = await client
     .from("universities")
     .select(universitySelect)
-    .in("id", ids.slice(0, 24));
+    .in("id", ids.slice(0, 24))
+    .abortSignal(signal || new AbortController().signal);
   if (error) throw error;
   return (data as unknown as University[]).map(normalizeUniversity);
 }
@@ -76,6 +81,16 @@ export async function universityBySlug(slug: string) {
   if (error) throw error;
   return data ? normalizeUniversity(data as unknown as University) : undefined;
 }
+/** A few universities by slug (e.g. the AI's picks), in one request; missing slugs are skipped. */
+export async function universitiesBySlugs(slugs: string[]) {
+  const list = [...new Set(slugs)].slice(0, 12);
+  if (!list.length) return [] as University[];
+  const client = catalogueClient();
+  if (!client) return (await Promise.all(list.map((x) => universityBySlug(x).catch(() => undefined)))).filter((u): u is University => !!u);
+  const { data, error } = await client.from("universities").select(universitySelect).in("slug", list);
+  if (error) throw error;
+  return (data as unknown as University[]).map(normalizeUniversity);
+}
 export type ExplorerResult = {
   suggestions?: { name: string; slug: string }[];
   universities: University[];
@@ -85,6 +100,6 @@ export type ExplorerResult = {
   medianAdmission: number | null;
   countries: number;
 };
-export async function exploreUniversities(f: Filters): Promise<ExplorerResult> {
-  return publicRequest<ExplorerResult>('mode=explore&' + new URLSearchParams(Object.entries(f).filter(([,v]) => v !== undefined).map(([k,v]) => [k,String(v)])).toString());
+export async function exploreUniversities(f: Filters, signal?: AbortSignal): Promise<ExplorerResult> {
+  return publicRequest<ExplorerResult>('mode=explore&' + new URLSearchParams(Object.entries(f).filter(([,v]) => v !== undefined).map(([k,v]) => [k,String(v)])).toString(), signal);
 }

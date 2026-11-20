@@ -1,0 +1,1315 @@
+{
+ "generated": "2026-11-16",
+ "status": "STAGED for review - not published",
+ "note": "Programme lists: carried from programmes-costs-nov14 plus nov15 additions. description/requirements null where not researched.",
+ "universities": {
+  "birkbeck-college-university-of-london-765d7982": {
+   "id": "765d7982-ec3a-5780-99b0-8929c72036d5",
+   "name": "Birkbeck College, University of London",
+   "country_code": "GB",
+   "origin": "programmes-costs-nov14 (staged, carried)",
+   "programmes": [
+    {
+     "name": "Liberal Arts",
+     "faculty": "liberal arts",
+     "degree": "BA",
+     "duration_years": 3,
+     "language": "English",
+     "description": null,
+     "requirements": null,
+     "source_url": "https://www.bbk.ac.uk/courses/undergraduate/liberal-arts",
+     "retrieved_at": "2026-11-14"
+    }
+   ]
+  },
+  "tum": {
+   "id": "44444444-4444-4444-8444-444444444444",
+   "name": "Technical University of Munich",
+   "country_code": "DE",
+   "origin": "programmes-costs-nov14 (staged, carried)",
+   "programmes": [
+    {
+     "name": "Aerospace",
+     "faculty": "aerospace engineering",
+     "degree": "BSc",
+     "duration_years": 3,
+     "language": "English",
+     "description": null,
+     "requirements": null,
+     "source_url": "https://www.tum.de/en/studies/degree-programs/detail/aerospace-bachelor-of-science-bsc",
+     "retrieved_at": "2026-11-14"
+    },
+    {
+     "name": "Management and Technology (Computer Engineering specialization)",
+     "faculty": "management/engineering",
+     "degree": "BSc",
+     "duration_years": 3,
+     "language": "English",
+     "description": null,
+     "requirements": null,
+     "source_url": "https://www.tum.de/en/studies/degree-programs/detail/management-and-technology-bachelor-of-science-bsc",
+     "retrieved_at": "2026-11-14"
+    }
+   ]
+  },
+  "ruprecht-karls-universitat-heidelberg-fe2070ba": {
+   "id": "fe2070ba-9e66-590c-b67f-3cef2d8983b4",
+   "name": "Ruprecht-Karls-Universität Heidelberg",
+   "country_code": "DE",
+   "origin": "programmes-costs-nov14 (staged, carried)",
+   "programmes": [
+    {
+     "name": "American Studies",
+     "faculty": "American studies",
+     "degree": "BA",
+     "duration_years": 3,
+     "language": "English",
+     "description": null,
+     "requirements": null,
+     "source_url": "https://www.uni-heidelberg.de/en/study/all-subjects/american-studies/american-studies-bachelor-100",
+     "retrieved_at": "2026-11-14"
+    },
+    {
+     "name": "English Studies (50%)",
+     "faculty": "English studies",
+     "degree": "BA",
+     "duration_years": 3,
+     "language": "English",
+     "description": null,
+     "requirements": null,
+     "source_url": "https://www.uni-heidelberg.de/en/study/all-subjects/english-studies/english-studies-bachelor-50",
+     "retrieved_at": "2026-11-14"
+    }
+   ]
+  },
+  "n-i-lobachevsky-state-university-of-nizhny-novgorod-6e6859a3": {
+   "id": "6e6859a3-38b6-5b10-965b-3f24ad7f40a1",
+   "name": "N. I. Lobachevsky State University of Nizhny Novgorod",
+   "country_code": "RU",
+   "origin": "programmes-costs-nov14 (staged, carried)",
+   "programmes": [
+    {
+     "name": "Fundamental Computer Science and Information Technology",
+     "faculty": "computer science/information technology",
+     "degree": "BSc",
+     "duration_years": 4,
+     "language": "English",
+     "description": null,
+     "requirements": null,
+     "source_url": "https://eng.unn.ru/academic-programmes/degree-programmes-in-english-2",
+     "retrieved_at": "2026-11-14"
+    },
+    {
+     "name": "International Economics",
+     "faculty": "economics",
+     "degree": "BA",
+     "duration_years": 4,
+     "language": "English",
+     "description": null,
+     "requirements": null,
+     "source_url": "https://eng.unn.ru/academic-programmes/degree-programmes-in-english-2",
+     "retrieved_at": "2026-11-14"
+    },
+    {
+     "name": "International Relations",
+     "faculty": "international relations",
+     "degree": "BA",
+     "duration_years": 4,
+     "language": "English",
+     "description": null,
+     "requirements": null,
+     "source_url": "https://eng.unn.ru/academic-programmes/degree-programmes-2/bachelor-s-programmes/international-relations",
+     "retrieved_at": "2026-11-14"
+    }
+   ]
+  },
+  "khalifa-university-of-science-technology-and-research-9d02e057": {
+   "id": "9d02e057-63ee-5ee9-aeef-4aa112d65d2a",
+   "name": "Khalifa University of Science, Technology and Research",
+   "country_code": "AE",
+   "origin": "programmes-costs-nov14 (staged, carried)",
+   "programmes": [
+    {
+     "name": "Aerospace Engineering",
+     "faculty": "engineering/science",
+     "degree": null,
+     "duration_years": null,
+     "language": "English",
+     "description": null,
+     "requirements": null,
+     "source_url": "https://www.ku.ac.ae/academics/undergraduate-programs",
+     "retrieved_at": "2026-11-14"
+    },
+    {
+     "name": "Chemical Engineering",
+     "faculty": "engineering/science",
+     "degree": null,
+     "duration_years": null,
+     "language": "English",
+     "description": null,
+     "requirements": null,
+     "source_url": "https://www.ku.ac.ae/academics/undergraduate-programs",
+     "retrieved_at": "2026-11-14"
+    },
+    {
+     "name": "Civil Engineering",
+     "faculty": "engineering/science",
+     "degree": null,
+     "duration_years": null,
+     "language": "English",
+     "description": null,
+     "requirements": null,
+     "source_url": "https://www.ku.ac.ae/academics/undergraduate-programs",
+     "retrieved_at": "2026-11-14"
+    },
+    {
+     "name": "Electrical Engineering",
+     "faculty": "engineering/science",
+     "degree": null,
+     "duration_years": null,
+     "language": "English",
+     "description": null,
+     "requirements": null,
+     "source_url": "https://www.ku.ac.ae/academics/undergraduate-programs",
+     "retrieved_at": "2026-11-14"
+    },
+    {
+     "name": "Engineering Systems and Management",
+     "faculty": "engineering/science",
+     "degree": null,
+     "duration_years": null,
+     "language": "English",
+     "description": null,
+     "requirements": null,
+     "source_url": "https://www.ku.ac.ae/academics/undergraduate-programs",
+     "retrieved_at": "2026-11-14"
+    },
+    {
+     "name": "Mechanical Engineering",
+     "faculty": "engineering/science",
+     "degree": null,
+     "duration_years": null,
+     "language": "English",
+     "description": null,
+     "requirements": null,
+     "source_url": "https://www.ku.ac.ae/academics/undergraduate-programs",
+     "retrieved_at": "2026-11-14"
+    },
+    {
+     "name": "Energy Engineering",
+     "faculty": "engineering/science",
+     "degree": null,
+     "duration_years": null,
+     "language": "English",
+     "description": null,
+     "requirements": null,
+     "source_url": "https://www.ku.ac.ae/academics/undergraduate-programs",
+     "retrieved_at": "2026-11-14"
+    },
+    {
+     "name": "Petroleum Engineering",
+     "faculty": "engineering/science",
+     "degree": null,
+     "duration_years": null,
+     "language": "English",
+     "description": null,
+     "requirements": null,
+     "source_url": "https://www.ku.ac.ae/academics/undergraduate-programs",
+     "retrieved_at": "2026-11-14"
+    },
+    {
+     "name": "Earth and Planetary Sciences",
+     "faculty": "engineering/science",
+     "degree": null,
+     "duration_years": null,
+     "language": "English",
+     "description": null,
+     "requirements": null,
+     "source_url": "https://www.ku.ac.ae/academics/undergraduate-programs",
+     "retrieved_at": "2026-11-14"
+    },
+    {
+     "name": "Computer Engineering",
+     "faculty": "engineering/science",
+     "degree": null,
+     "duration_years": null,
+     "language": "English",
+     "description": null,
+     "requirements": null,
+     "source_url": "https://www.ku.ac.ae/academics/undergraduate-programs",
+     "retrieved_at": "2026-11-14"
+    },
+    {
+     "name": "Robotics and Artificial Intelligence",
+     "faculty": "engineering/science",
+     "degree": null,
+     "duration_years": null,
+     "language": "English",
+     "description": null,
+     "requirements": null,
+     "source_url": "https://www.ku.ac.ae/academics/undergraduate-programs",
+     "retrieved_at": "2026-11-14"
+    },
+    {
+     "name": "Computer Science",
+     "faculty": "engineering/science",
+     "degree": null,
+     "duration_years": null,
+     "language": "English",
+     "description": null,
+     "requirements": null,
+     "source_url": "https://www.ku.ac.ae/academics/undergraduate-programs",
+     "retrieved_at": "2026-11-14"
+    },
+    {
+     "name": "Applied Mathematics and Statistics and Data Science",
+     "faculty": "engineering/science",
+     "degree": null,
+     "duration_years": null,
+     "language": "English",
+     "description": null,
+     "requirements": null,
+     "source_url": "https://www.ku.ac.ae/academics/undergraduate-programs",
+     "retrieved_at": "2026-11-14"
+    }
+   ]
+  },
+  "abu-dhabi-university-0949633f": {
+   "id": "0949633f-4123-57e8-8e3d-8b762d4a588d",
+   "name": "Abu Dhabi University",
+   "country_code": "AE",
+   "origin": "programmes-costs-nov14 (staged, carried)",
+   "programmes": [
+    {
+     "name": "Undergraduate programmes (official international catalogue; see finder)",
+     "faculty": "varies",
+     "degree": null,
+     "duration_years": null,
+     "language": "English",
+     "description": null,
+     "requirements": null,
+     "source_url": "https://www.adu.ac.ae/admissions/admission-in-adu/international-students/financials/undergraduate-fees-for-international-students",
+     "retrieved_at": "2026-11-14"
+    }
+   ]
+  },
+  "national-university-of-singapore-c66c3755": {
+   "id": "c66c3755-66a2-57a0-a80e-da984c310d29",
+   "name": "National University of Singapore",
+   "country_code": "SG",
+   "origin": "programmes-costs-nov14 (staged, carried)",
+   "programmes": [
+    {
+     "name": "Undergraduate programmes (see official finder; list capped pending extraction)",
+     "faculty": "varies",
+     "degree": null,
+     "duration_years": null,
+     "language": "English",
+     "description": null,
+     "requirements": null,
+     "source_url": "https://www.nus.edu.sg/oam/undergraduate-programmes",
+     "retrieved_at": "2026-11-14"
+    }
+   ]
+  },
+  "nanyang-technological-university-f5a6d73a": {
+   "id": "f5a6d73a-5fd2-55de-83af-3da2c25e18ef",
+   "name": "Nanyang Technological University",
+   "country_code": "SG",
+   "origin": "programmes-costs-nov14 (staged, carried)",
+   "programmes": [
+    {
+     "name": "Undergraduate degree programmes (see official finder; list capped pending extraction)",
+     "faculty": "varies",
+     "degree": null,
+     "duration_years": null,
+     "language": "English",
+     "description": null,
+     "requirements": null,
+     "source_url": "https://www.ntu.edu.sg/admissions/undergraduate-programmes",
+     "retrieved_at": "2026-11-14"
+    }
+   ]
+  },
+  "singapore-university-of-technology-and-design-a8c20c24": {
+   "id": "a8c20c24-0173-5120-abee-6f63ee2944d3",
+   "name": "Singapore University of Technology and Design",
+   "country_code": "SG",
+   "origin": "programmes-costs-nov14 (staged, carried)",
+   "programmes": [
+    {
+     "name": "Undergraduate degree programmes",
+     "faculty": "design/technology",
+     "degree": "Bachelor",
+     "duration_years": null,
+     "language": "English",
+     "description": null,
+     "requirements": null,
+     "source_url": "https://www.sutd.edu.sg/programme-listing/",
+     "retrieved_at": "2026-11-14"
+    }
+   ]
+  },
+  "singapore-management-university-5c15139b": {
+   "id": "5c15139b-369f-521f-9ea2-4ef8ae5fdcc3",
+   "name": "Singapore Management University",
+   "country_code": "SG",
+   "origin": "programmes-costs-nov14 (staged, carried)",
+   "programmes": [
+    {
+     "name": "Undergraduate degree programmes (official list; individual programme extraction pending)",
+     "faculty": "varies",
+     "degree": null,
+     "duration_years": null,
+     "language": "English",
+     "description": null,
+     "requirements": null,
+     "source_url": "https://admissions.smu.edu.sg/programmes",
+     "retrieved_at": "2026-11-14"
+    }
+   ]
+  },
+  "wiut": {
+   "id": "66666666-6666-4666-8666-666666666666",
+   "name": "Westminster International University in Tashkent",
+   "country_code": "UZ",
+   "origin": "programmes-costs-nov14 (staged, carried)",
+   "programmes": [
+    {
+     "name": "BA (Hons) in International Relations and Law",
+     "faculty": "international relations/law",
+     "degree": "BA (Hons)",
+     "duration_years": 3,
+     "language": "English",
+     "description": null,
+     "requirements": null,
+     "source_url": "https://www.wiut.uz/undergraduate-programmes",
+     "retrieved_at": "2026-11-14"
+    },
+    {
+     "name": "BSc (Hons) in Economics and its Pathways",
+     "faculty": "economics",
+     "degree": "BSc (Hons)",
+     "duration_years": 3,
+     "language": "English",
+     "description": null,
+     "requirements": null,
+     "source_url": "https://wiut.uz/economics",
+     "retrieved_at": "2026-11-14"
+    },
+    {
+     "name": "BSc (Hons) in Computer Science",
+     "faculty": "computer science",
+     "degree": "BSc (Hons)",
+     "duration_years": 3,
+     "language": "English",
+     "description": null,
+     "requirements": null,
+     "source_url": "https://www.wiut.uz/undergraduate-programmes",
+     "retrieved_at": "2026-11-14"
+    },
+    {
+     "name": "BA (Hons) in Commercial Law",
+     "faculty": "law",
+     "degree": "BA (Hons)",
+     "duration_years": 3,
+     "language": "English",
+     "description": null,
+     "requirements": null,
+     "source_url": "https://www.wiut.uz/undergraduate-programmes",
+     "retrieved_at": "2026-11-14"
+    },
+    {
+     "name": "BSc (Hons) in Finance",
+     "faculty": "finance",
+     "degree": "BSc (Hons)",
+     "duration_years": 3,
+     "language": "English",
+     "description": null,
+     "requirements": null,
+     "source_url": "https://www.wiut.uz/undergraduate-programmes",
+     "retrieved_at": "2026-11-14"
+    },
+    {
+     "name": "BA (Hons) in Business Management and its Pathways",
+     "faculty": "business/management",
+     "degree": "BA (Hons)",
+     "duration_years": 3,
+     "language": "English",
+     "description": null,
+     "requirements": null,
+     "source_url": "https://www.wiut.uz/undergraduate-programmes",
+     "retrieved_at": "2026-11-14"
+    },
+    {
+     "name": "BSc (Hons) in Business Information Systems",
+     "faculty": "information systems",
+     "degree": "BSc (Hons)",
+     "duration_years": 3,
+     "language": "English",
+     "description": null,
+     "requirements": null,
+     "source_url": "https://www.wiut.uz/undergraduate-programmes",
+     "retrieved_at": "2026-11-14"
+    }
+   ]
+  },
+  "inha-university-in-tashkent-9e20a5d2": {
+   "id": "9e20a5d2-bafa-5857-8f5d-4a89874bb2f1",
+   "name": "Inha University in Tashkent",
+   "country_code": "UZ",
+   "origin": "programmes-costs-nov14 (staged, carried)",
+   "programmes": [
+    {
+     "name": "Computer and Software Engineering",
+     "faculty": "computer science/software engineering",
+     "degree": "BSc",
+     "duration_years": 4,
+     "language": "English",
+     "description": null,
+     "requirements": null,
+     "source_url": "https://inha.uz/undergraduate/",
+     "retrieved_at": "2026-11-14"
+    },
+    {
+     "name": "Information and Communication Engineering",
+     "faculty": "information and communications engineering",
+     "degree": "BSc",
+     "duration_years": 4,
+     "language": "English",
+     "description": null,
+     "requirements": null,
+     "source_url": "https://inha.uz/undergraduate/",
+     "retrieved_at": "2026-11-14"
+    },
+    {
+     "name": "Business and Logistics (Artificial Intelligence specialization)",
+     "faculty": "business/logistics/artificial intelligence",
+     "degree": "Bachelor",
+     "duration_years": 4,
+     "language": "English",
+     "description": null,
+     "requirements": null,
+     "source_url": "https://inha.uz/undergraduate/",
+     "retrieved_at": "2026-11-14"
+    },
+    {
+     "name": "Business and Logistics (Cyber Security specialization)",
+     "faculty": "business/logistics/cybersecurity",
+     "degree": "Bachelor",
+     "duration_years": 4,
+     "language": "English",
+     "description": null,
+     "requirements": null,
+     "source_url": "https://inha.uz/undergraduate/",
+     "retrieved_at": "2026-11-14"
+    },
+    {
+     "name": "Business and Logistics (Data Engineering specialization)",
+     "faculty": "business/logistics/data engineering",
+     "degree": "Bachelor",
+     "duration_years": 4,
+     "language": "English",
+     "description": null,
+     "requirements": null,
+     "source_url": "https://inha.uz/undergraduate/",
+     "retrieved_at": "2026-11-14"
+    },
+    {
+     "name": "Business Management",
+     "faculty": "business/management",
+     "degree": "Bachelor",
+     "duration_years": 4,
+     "language": "English",
+     "description": null,
+     "requirements": null,
+     "source_url": "https://inha.uz/undergraduate/",
+     "retrieved_at": "2026-11-14"
+    },
+    {
+     "name": "Computer Engineering (Data Science)",
+     "faculty": "computer engineering/data science",
+     "degree": "Bachelor",
+     "duration_years": 4,
+     "language": "English",
+     "description": null,
+     "requirements": null,
+     "source_url": "https://inha.uz/undergraduate/",
+     "retrieved_at": "2026-11-14"
+    }
+   ]
+  },
+  "turin-polytechnic-university-in-tashkent-9485c68f": {
+   "id": "9485c68f-a900-55f2-870b-a072bed954a8",
+   "name": "Turin Polytechnic University In Tashkent",
+   "country_code": "UZ",
+   "origin": "programmes-costs-nov14 (staged, carried)",
+   "programmes": [
+    {
+     "name": "Mechanical Engineering",
+     "faculty": "mechanical engineering",
+     "degree": "BSc",
+     "duration_years": 4,
+     "language": "English",
+     "description": null,
+     "requirements": null,
+     "source_url": "https://polito.uz/course-catalog/",
+     "retrieved_at": "2026-11-14"
+    },
+    {
+     "name": "Information and Communication Technology",
+     "faculty": "information technology/industrial automation",
+     "degree": "BSc",
+     "duration_years": 4,
+     "language": "English",
+     "description": null,
+     "requirements": null,
+     "source_url": "https://polito.uz/course-catalog/",
+     "retrieved_at": "2026-11-14"
+    },
+    {
+     "name": "Civil Engineering and Architecture",
+     "faculty": "civil engineering/architecture",
+     "degree": "BSc",
+     "duration_years": 4,
+     "language": "English",
+     "description": null,
+     "requirements": null,
+     "source_url": "https://polito.uz/course-catalog/",
+     "retrieved_at": "2026-11-14"
+    },
+    {
+     "name": "Mechatronics",
+     "faculty": "mechatronics",
+     "degree": "BSc",
+     "duration_years": 4,
+     "language": "English",
+     "description": null,
+     "requirements": null,
+     "source_url": "https://polito.uz/course-catalog/",
+     "retrieved_at": "2026-11-14"
+    }
+   ]
+  },
+  "ajou-university-in-tashkent-64e76836": {
+   "id": "64e76836-ffb6-571c-8465-4a1b62caec45",
+   "name": "Ajou University in Tashkent",
+   "country_code": "UZ",
+   "origin": "programmes-costs-nov14 (staged, carried)",
+   "programmes": [
+    {
+     "name": "Architecture",
+     "faculty": "architecture",
+     "degree": "Bachelor",
+     "duration_years": 4,
+     "language": "English",
+     "description": null,
+     "requirements": null,
+     "source_url": "https://info.ajou.uz/en",
+     "retrieved_at": "2026-11-14"
+    },
+    {
+     "name": "Civil Systems Engineering",
+     "faculty": "civil engineering",
+     "degree": "Bachelor",
+     "duration_years": 4,
+     "language": "English",
+     "description": null,
+     "requirements": null,
+     "source_url": "https://info.ajou.uz/en",
+     "retrieved_at": "2026-11-14"
+    },
+    {
+     "name": "Electrical and Computer Engineering",
+     "faculty": "electrical/computer engineering",
+     "degree": "Bachelor",
+     "duration_years": 4,
+     "language": "English",
+     "description": null,
+     "requirements": null,
+     "source_url": "https://info.ajou.uz/en",
+     "retrieved_at": "2026-11-14"
+    },
+    {
+     "name": "AI Software",
+     "faculty": "computer science/artificial intelligence",
+     "degree": "Bachelor",
+     "duration_years": 4,
+     "language": "English",
+     "description": null,
+     "requirements": null,
+     "source_url": "https://info.ajou.uz/en",
+     "retrieved_at": "2026-11-14"
+    },
+    {
+     "name": "Interior Design",
+     "faculty": "design",
+     "degree": "Bachelor",
+     "duration_years": 4,
+     "language": "English",
+     "description": null,
+     "requirements": null,
+     "source_url": "https://info.ajou.uz/en",
+     "retrieved_at": "2026-11-14"
+    },
+    {
+     "name": "IT Business",
+     "faculty": "business/information technology",
+     "degree": "Bachelor",
+     "duration_years": 4,
+     "language": "English",
+     "description": null,
+     "requirements": null,
+     "source_url": "https://info.ajou.uz/en",
+     "retrieved_at": "2026-11-14"
+    },
+    {
+     "name": "Business Administration",
+     "faculty": "business administration",
+     "degree": "Bachelor",
+     "duration_years": 4,
+     "language": "English",
+     "description": null,
+     "requirements": null,
+     "source_url": "https://info.ajou.uz/en",
+     "retrieved_at": "2026-11-14"
+    },
+    {
+     "name": "English Philology and Management",
+     "faculty": "English/language studies/management",
+     "degree": "Bachelor",
+     "duration_years": 4,
+     "language": "English",
+     "description": null,
+     "requirements": null,
+     "source_url": "https://info.ajou.uz/en",
+     "retrieved_at": "2026-11-14"
+    },
+    {
+     "name": "Korean Philology and Management",
+     "faculty": "Korean/language studies/management",
+     "degree": "Bachelor",
+     "duration_years": 4,
+     "language": "English",
+     "description": null,
+     "requirements": null,
+     "source_url": "https://info.ajou.uz/en",
+     "retrieved_at": "2026-11-14"
+    }
+   ]
+  },
+  "british-management-university-in-tashkent-8b58712b": {
+   "id": "8b58712b-c508-53b2-9265-0be62b0cf121",
+   "name": "British Management University in Tashkent",
+   "country_code": "UZ",
+   "origin": "programmes-costs-nov14 (staged, carried)",
+   "programmes": [
+    {
+     "name": "BSc in Accounting and Finance",
+     "faculty": "accounting/finance",
+     "degree": "BSc",
+     "duration_years": null,
+     "language": "English",
+     "description": null,
+     "requirements": null,
+     "source_url": "https://www.bmu-edu.uz/page/undergraduate-programmes",
+     "retrieved_at": "2026-11-14"
+    },
+    {
+     "name": "BSc in Management Information Systems",
+     "faculty": "information systems/business analytics",
+     "degree": "BSc",
+     "duration_years": null,
+     "language": "English",
+     "description": null,
+     "requirements": null,
+     "source_url": "https://www.bmu-edu.uz/page/undergraduate-programmes",
+     "retrieved_at": "2026-11-14"
+    },
+    {
+     "name": "BSc in Banking and Finance",
+     "faculty": "banking/finance",
+     "degree": "BSc",
+     "duration_years": null,
+     "language": "English",
+     "description": null,
+     "requirements": null,
+     "source_url": "https://www.bmu-edu.uz/page/undergraduate-programmes",
+     "retrieved_at": "2026-11-14"
+    },
+    {
+     "name": "BBA with Project Management",
+     "faculty": "business/project management",
+     "degree": "BBA",
+     "duration_years": null,
+     "language": "English",
+     "description": null,
+     "requirements": null,
+     "source_url": "https://www.bmu-edu.uz/page/undergraduate-programmes",
+     "retrieved_at": "2026-11-14"
+    },
+    {
+     "name": "BBA with Digital Marketing and e-Business",
+     "faculty": "marketing/e-business",
+     "degree": "BBA",
+     "duration_years": null,
+     "language": "English",
+     "description": null,
+     "requirements": null,
+     "source_url": "https://www.bmu-edu.uz/page/undergraduate-programmes",
+     "retrieved_at": "2026-11-14"
+    },
+    {
+     "name": "BBA with Logistics and Supply Chain Management",
+     "faculty": "logistics/supply chain",
+     "degree": "BBA",
+     "duration_years": null,
+     "language": "English",
+     "description": null,
+     "requirements": null,
+     "source_url": "https://www.bmu-edu.uz/page/undergraduate-programmes",
+     "retrieved_at": "2026-11-14"
+    },
+    {
+     "name": "BBA with Economics and Sustainable Development",
+     "faculty": "economics/sustainability",
+     "degree": "BBA",
+     "duration_years": null,
+     "language": "English",
+     "description": null,
+     "requirements": null,
+     "source_url": "https://www.bmu-edu.uz/page/undergraduate-programmes",
+     "retrieved_at": "2026-11-14"
+    },
+    {
+     "name": "BBA with Communication and Public Relations",
+     "faculty": "communications/public relations",
+     "degree": "BBA",
+     "duration_years": null,
+     "language": "English",
+     "description": null,
+     "requirements": null,
+     "source_url": "https://www.bmu-edu.uz/page/undergraduate-programmes",
+     "retrieved_at": "2026-11-14"
+    }
+   ]
+  },
+  "nazarbayev-university-69434102": {
+   "id": "69434102-e5f5-5311-9294-2f101f81906f",
+   "name": "Nazarbayev University",
+   "country_code": "KZ",
+   "origin": "programmes-costs-nov14 (staged, carried)",
+   "programmes": [
+    {
+     "name": "Anthropology",
+     "faculty": "anthropology",
+     "degree": "BA",
+     "duration_years": 4,
+     "language": "English",
+     "description": null,
+     "requirements": null,
+     "source_url": "https://openday.nu.edu.kz/undergraduate_studyportals",
+     "retrieved_at": "2026-11-14"
+    },
+    {
+     "name": "Biological Sciences",
+     "faculty": "biology",
+     "degree": "BSc",
+     "duration_years": 4,
+     "language": "English",
+     "description": null,
+     "requirements": null,
+     "source_url": "https://openday.nu.edu.kz/undergraduate_studyportals",
+     "retrieved_at": "2026-11-14"
+    },
+    {
+     "name": "Chemistry",
+     "faculty": "chemistry",
+     "degree": "BSc",
+     "duration_years": 4,
+     "language": "English",
+     "description": null,
+     "requirements": null,
+     "source_url": "https://openday.nu.edu.kz/undergraduate_studyportals",
+     "retrieved_at": "2026-11-14"
+    },
+    {
+     "name": "Computer Science",
+     "faculty": "computer science",
+     "degree": "BSc",
+     "duration_years": 4,
+     "language": "English",
+     "description": null,
+     "requirements": null,
+     "source_url": "https://openday.nu.edu.kz/undergraduate_studyportals",
+     "retrieved_at": "2026-11-14"
+    },
+    {
+     "name": "Chemical and Materials Engineering",
+     "faculty": "chemical/materials engineering",
+     "degree": "BSc",
+     "duration_years": 4,
+     "language": "English",
+     "description": null,
+     "requirements": null,
+     "source_url": "https://openday.nu.edu.kz/undergraduate_studyportals",
+     "retrieved_at": "2026-11-14"
+    },
+    {
+     "name": "Civil and Environmental Engineering",
+     "faculty": "civil/environmental engineering",
+     "degree": "BSc",
+     "duration_years": 4,
+     "language": "English",
+     "description": null,
+     "requirements": null,
+     "source_url": "https://openday.nu.edu.kz/undergraduate_studyportals",
+     "retrieved_at": "2026-11-14"
+    },
+    {
+     "name": "Economics",
+     "faculty": "economics",
+     "degree": "BA",
+     "duration_years": 4,
+     "language": "English",
+     "description": null,
+     "requirements": null,
+     "source_url": "https://openday.nu.edu.kz/undergraduate_studyportals",
+     "retrieved_at": "2026-11-14"
+    },
+    {
+     "name": "Electrical and Computer Engineering",
+     "faculty": "electrical/computer engineering",
+     "degree": "BSc",
+     "duration_years": 4,
+     "language": "English",
+     "description": null,
+     "requirements": null,
+     "source_url": "https://openday.nu.edu.kz/undergraduate_studyportals",
+     "retrieved_at": "2026-11-14"
+    },
+    {
+     "name": "Geology",
+     "faculty": "geology",
+     "degree": "BSc",
+     "duration_years": 4,
+     "language": "English",
+     "description": null,
+     "requirements": null,
+     "source_url": "https://openday.nu.edu.kz/undergraduate_studyportals",
+     "retrieved_at": "2026-11-14"
+    },
+    {
+     "name": "History",
+     "faculty": "history",
+     "degree": "BA",
+     "duration_years": 4,
+     "language": "English",
+     "description": null,
+     "requirements": null,
+     "source_url": "https://openday.nu.edu.kz/undergraduate_studyportals",
+     "retrieved_at": "2026-11-14"
+    },
+    {
+     "name": "Mathematics",
+     "faculty": "mathematics",
+     "degree": "BSc",
+     "duration_years": 4,
+     "language": "English",
+     "description": null,
+     "requirements": null,
+     "source_url": "https://openday.nu.edu.kz/undergraduate_studyportals",
+     "retrieved_at": "2026-11-14"
+    },
+    {
+     "name": "Mechanical and Aerospace Engineering",
+     "faculty": "mechanical/aerospace engineering",
+     "degree": "BSc",
+     "duration_years": 4,
+     "language": "English",
+     "description": null,
+     "requirements": null,
+     "source_url": "https://openday.nu.edu.kz/undergraduate_studyportals",
+     "retrieved_at": "2026-11-14"
+    },
+    {
+     "name": "Mining Engineering",
+     "faculty": "mining engineering",
+     "degree": "BEng",
+     "duration_years": 4,
+     "language": "English",
+     "description": null,
+     "requirements": null,
+     "source_url": "https://openday.nu.edu.kz/undergraduate_studyportals",
+     "retrieved_at": "2026-11-14"
+    },
+    {
+     "name": "Nursing",
+     "faculty": "nursing",
+     "degree": "BSN",
+     "duration_years": 4,
+     "language": "English",
+     "description": null,
+     "requirements": null,
+     "source_url": "https://openday.nu.edu.kz/undergraduate_studyportals",
+     "retrieved_at": "2026-11-14"
+    },
+    {
+     "name": "Petroleum Engineering",
+     "faculty": "petroleum engineering",
+     "degree": "BEng",
+     "duration_years": 4,
+     "language": "English",
+     "description": null,
+     "requirements": null,
+     "source_url": "https://openday.nu.edu.kz/undergraduate_studyportals",
+     "retrieved_at": "2026-11-14"
+    },
+    {
+     "name": "Physics",
+     "faculty": "physics",
+     "degree": "BSc",
+     "duration_years": 4,
+     "language": "English",
+     "description": null,
+     "requirements": null,
+     "source_url": "https://openday.nu.edu.kz/undergraduate_studyportals",
+     "retrieved_at": "2026-11-14"
+    },
+    {
+     "name": "Political Science and International Relations",
+     "faculty": "political science/international relations",
+     "degree": "BA",
+     "duration_years": 4,
+     "language": "English",
+     "description": null,
+     "requirements": null,
+     "source_url": "https://openday.nu.edu.kz/undergraduate_studyportals",
+     "retrieved_at": "2026-11-14"
+    },
+    {
+     "name": "Robotics and Mechatronics",
+     "faculty": "robotics/mechatronics",
+     "degree": "BSc",
+     "duration_years": 4,
+     "language": "English",
+     "description": null,
+     "requirements": null,
+     "source_url": "https://openday.nu.edu.kz/undergraduate_studyportals",
+     "retrieved_at": "2026-11-14"
+    },
+    {
+     "name": "Sociology",
+     "faculty": "sociology",
+     "degree": "BA",
+     "duration_years": 4,
+     "language": "English",
+     "description": null,
+     "requirements": null,
+     "source_url": "https://openday.nu.edu.kz/undergraduate_studyportals",
+     "retrieved_at": "2026-11-14"
+    },
+    {
+     "name": "World Languages, Literature and Culture",
+     "faculty": "languages/literature/culture",
+     "degree": "BA",
+     "duration_years": 4,
+     "language": "English",
+     "description": null,
+     "requirements": null,
+     "source_url": "https://openday.nu.edu.kz/undergraduate_studyportals",
+     "retrieved_at": "2026-11-14"
+    }
+   ]
+  },
+  "american-university-of-central-asia-48bb7649": {
+   "id": "48bb7649-d12f-5854-b7d9-f586e7b81d72",
+   "name": "American University of Central Asia",
+   "country_code": "KG",
+   "origin": "programmes-costs-nov14 (staged, carried)",
+   "programmes": [
+    {
+     "name": "Anthropology and International Development",
+     "faculty": "broad subject",
+     "degree": null,
+     "duration_years": null,
+     "language": "English",
+     "description": null,
+     "requirements": null,
+     "source_url": "https://auca.kg/en/ap/",
+     "retrieved_at": "2026-11-14"
+    },
+    {
+     "name": "Applied Mathematics and Informatics",
+     "faculty": "broad subject",
+     "degree": null,
+     "duration_years": null,
+     "language": "English",
+     "description": null,
+     "requirements": null,
+     "source_url": "https://auca.kg/en/ap/",
+     "retrieved_at": "2026-11-14"
+    },
+    {
+     "name": "Business Administration",
+     "faculty": "broad subject",
+     "degree": null,
+     "duration_years": null,
+     "language": "English",
+     "description": null,
+     "requirements": null,
+     "source_url": "https://auca.kg/en/ap/",
+     "retrieved_at": "2026-11-14"
+    },
+    {
+     "name": "Economics",
+     "faculty": "broad subject",
+     "degree": null,
+     "duration_years": null,
+     "language": "English",
+     "description": null,
+     "requirements": null,
+     "source_url": "https://auca.kg/en/ap/",
+     "retrieved_at": "2026-11-14"
+    },
+    {
+     "name": "Environmental Sustainability and Climate Science",
+     "faculty": "broad subject",
+     "degree": null,
+     "duration_years": null,
+     "language": "English",
+     "description": null,
+     "requirements": null,
+     "source_url": "https://auca.kg/en/ap/",
+     "retrieved_at": "2026-11-14"
+    },
+    {
+     "name": "International and Business Law",
+     "faculty": "broad subject",
+     "degree": null,
+     "duration_years": null,
+     "language": "English",
+     "description": null,
+     "requirements": null,
+     "source_url": "https://auca.kg/en/ap/",
+     "retrieved_at": "2026-11-14"
+    },
+    {
+     "name": "International and Comparative Politics",
+     "faculty": "broad subject",
+     "degree": null,
+     "duration_years": null,
+     "language": "English",
+     "description": null,
+     "requirements": null,
+     "source_url": "https://auca.kg/en/ap/",
+     "retrieved_at": "2026-11-14"
+    },
+    {
+     "name": "Journalism and Mass Communication",
+     "faculty": "broad subject",
+     "degree": null,
+     "duration_years": null,
+     "language": "English",
+     "description": null,
+     "requirements": null,
+     "source_url": "https://auca.kg/en/ap/",
+     "retrieved_at": "2026-11-14"
+    },
+    {
+     "name": "Liberal Arts and Sciences",
+     "faculty": "broad subject",
+     "degree": null,
+     "duration_years": null,
+     "language": "English",
+     "description": null,
+     "requirements": null,
+     "source_url": "https://auca.kg/en/ap/",
+     "retrieved_at": "2026-11-14"
+    },
+    {
+     "name": "Psychology",
+     "faculty": "broad subject",
+     "degree": null,
+     "duration_years": null,
+     "language": "English",
+     "description": null,
+     "requirements": null,
+     "source_url": "https://auca.kg/en/ap/",
+     "retrieved_at": "2026-11-14"
+    },
+    {
+     "name": "Sociology",
+     "faculty": "broad subject",
+     "degree": null,
+     "duration_years": null,
+     "language": "English",
+     "description": null,
+     "requirements": null,
+     "source_url": "https://auca.kg/en/ap/",
+     "retrieved_at": "2026-11-14"
+    },
+    {
+     "name": "Software Engineering",
+     "faculty": "broad subject",
+     "degree": null,
+     "duration_years": null,
+     "language": "English",
+     "description": null,
+     "requirements": null,
+     "source_url": "https://auca.kg/en/ap/",
+     "retrieved_at": "2026-11-14"
+    },
+    {
+     "name": "Television, Cinema and Media Arts",
+     "faculty": "broad subject",
+     "degree": null,
+     "duration_years": null,
+     "language": "English",
+     "description": null,
+     "requirements": null,
+     "source_url": "https://auca.kg/en/ap/",
+     "retrieved_at": "2026-11-14"
+    }
+   ]
+  },
+  "university-of-central-asia-b99019e6": {
+   "id": "b99019e6-e35f-57b0-8522-f934f7ee60e5",
+   "name": "University of Central Asia",
+   "country_code": "KG",
+   "origin": "programmes-costs-nov14 (staged, carried)",
+   "programmes": [
+    {
+     "name": "Computer Science",
+     "faculty": "computer science",
+     "degree": "BSc",
+     "duration_years": 5,
+     "language": "English",
+     "description": null,
+     "requirements": null,
+     "source_url": "https://ucentralasia.org/admissions/undergraduate/undergraduate-programmes",
+     "retrieved_at": "2026-11-14"
+    },
+    {
+     "name": "Communications and Media",
+     "faculty": "communications/media",
+     "degree": "BA",
+     "duration_years": 5,
+     "language": "English",
+     "description": null,
+     "requirements": null,
+     "source_url": "https://ucentralasia.org/admissions/undergraduate/undergraduate-programmes",
+     "retrieved_at": "2026-11-14"
+    },
+    {
+     "name": "Earth and Environmental Sciences",
+     "faculty": "earth/environmental sciences",
+     "degree": "BSc",
+     "duration_years": 5,
+     "language": "English",
+     "description": null,
+     "requirements": null,
+     "source_url": "https://ucentralasia.org/schools/school-of-arts-and-sciences/undergraduate-programme/earth-and-environmental-science",
+     "retrieved_at": "2026-11-14"
+    },
+    {
+     "name": "Global Economics",
+     "faculty": "economics",
+     "degree": "BA",
+     "duration_years": 5,
+     "language": "English",
+     "description": null,
+     "requirements": null,
+     "source_url": "https://ucentralasia.org/admissions/undergraduate/undergraduate-programmes",
+     "retrieved_at": "2026-11-14"
+    }
+   ]
+  },
+  "nagoya-university-ee15105c": {
+   "id": "ee15105c-6920-52e8-b1a5-c526c7a233ab",
+   "name": "Nagoya University",
+   "country_code": "JP",
+   "origin": "nov15-research",
+   "programmes": [
+    {
+     "name": "Automotive Engineering (Mechanical / Electrical, Electronic & Information Eng.)",
+     "faculty": "School of Engineering",
+     "degree": "B.Eng.",
+     "duration_years": 4,
+     "language": "English (G30)",
+     "description": "Engineering degree taught in English with a focus on vehicles. Admission includes an oral exam mainly on mathematics and physics; English test required; SAT/ACT/EJU recommended.",
+     "source_url": "https://admissions.g30.nagoya-u.ac.jp/admissions/undergraduate/",
+     "retrieved_at": "2026-11-16"
+    },
+    {
+     "name": "Physics",
+     "faculty": "School of Science",
+     "degree": "B.Sc.",
+     "duration_years": 4,
+     "language": "English (G30)",
+     "description": "Physics degree in English. Oral exam on mathematics and physics; referee must complete a Physics Learning Checklist.",
+     "source_url": "https://admissions.g30.nagoya-u.ac.jp/admissions/undergraduate/",
+     "retrieved_at": "2026-11-16"
+    },
+    {
+     "name": "Chemistry",
+     "faculty": "School of Science / School of Engineering",
+     "degree": "B.Sc./B.Eng.",
+     "duration_years": 4,
+     "language": "English (G30)",
+     "description": "Chemistry degree in English. Oral exam mainly on chemistry, biology and mathematics.",
+     "source_url": "https://admissions.g30.nagoya-u.ac.jp/admissions/undergraduate/",
+     "retrieved_at": "2026-11-16"
+    },
+    {
+     "name": "Biological Science",
+     "faculty": "School of Science (Biology) / School of Agricultural Sciences (Applied Bioscience)",
+     "degree": "B.Sc.",
+     "duration_years": 4,
+     "language": "English (G30)",
+     "description": "Biology or applied bioscience in English. Oral exam mainly on biology, chemistry and mathematics.",
+     "source_url": "https://admissions.g30.nagoya-u.ac.jp/admissions/undergraduate/",
+     "retrieved_at": "2026-11-16"
+    },
+    {
+     "name": "Social Science (Law / Economics & Business Administration)",
+     "faculty": "School of Law / School of Economics",
+     "degree": "B.A.",
+     "duration_years": 4,
+     "language": "English (G30)",
+     "description": "Law or economics taught in English. English test required; subject details in programme PDF.",
+     "source_url": "https://admissions.g30.nagoya-u.ac.jp/admissions/undergraduate/",
+     "retrieved_at": "2026-11-16"
+    },
+    {
+     "name": "Japan-in-Asia Cultural Studies (JACS)",
+     "faculty": "School of Humanities",
+     "degree": "B.A.",
+     "duration_years": 4,
+     "language": "English (G30)",
+     "description": "Humanities degree on Japanese and Asian culture taught in English. English test required.",
+     "source_url": "https://admissions.g30.nagoya-u.ac.jp/admissions/undergraduate/",
+     "retrieved_at": "2026-11-16"
+    }
+   ]
+  },
+  "doshisha-university-43fbc6ab": {
+   "id": "43fbc6ab-a5b4-5515-97d5-4b28d409070b",
+   "name": "Doshisha University",
+   "country_code": "JP",
+   "origin": "nov15-research",
+   "programmes": [
+    {
+     "name": "B.A. in the Liberal Arts (areas: Japanese Society & Global Culture; Japanese Business & Global Economy; Japanese Politics & Global Studies)",
+     "faculty": "Institute for the Liberal Arts (ILA)",
+     "degree": "B.A.",
+     "duration_years": 4,
+     "language": "English",
+     "description": "Liberal-arts degree with three study areas. Requires 12 years of schooling, English proof (IELTS 6.5 / Duolingo 120 / TOEFL, or ACT English 22 / SAT R&W 560) and a statement of purpose.",
+     "source_url": "https://ila.doshisha.ac.jp/ila/en/admissions/requirements.html",
+     "retrieved_at": "2026-11-16"
+    }
+   ]
+  }
+ }
+}

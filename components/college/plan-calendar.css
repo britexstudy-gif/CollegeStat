@@ -1,0 +1,175 @@
+/* Plan (calendar) on the dashboard kit: hairlines, neutral surfaces, brand accent.
+ * The workspace doesn't load the shadcn base layer, so borders get an explicit colour. */
+html body .plan-calendar {
+  --plan-line: var(--dk-line);
+  gap: 12px;
+  font-size: 13.5px;
+}
+html body .plan-calendar,
+html body .plan-calendar * {
+  border-color: var(--plan-line);
+}
+/* Month title sits under the page title: section size, not a second h1. */
+html body .plan-calendar h2 {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  text-transform: capitalize;
+}
+html body .plan-calendar [data-slot="card"] {
+  border-radius: var(--dk-r);
+  background: var(--dk-panel);
+  box-shadow: none;
+}
+html body .plan-calendar [data-slot="button"] {
+  height: 32px;
+  border-radius: var(--dk-r-sm);
+  box-shadow: none;
+  font-size: 13px;
+  font-weight: 500;
+}
+html body .plan-calendar [data-slot="button"][data-variant="outline"] {
+  border-color: var(--dk-line-strong);
+  background: var(--dk-panel);
+}
+html body .plan-calendar [data-slot="button"][data-variant="outline"]:hover,
+html body .plan-calendar [data-slot="button"][data-variant="ghost"]:hover {
+  background: var(--dk-hover);
+}
+html body .plan-calendar [role="group"][aria-label="Calendar view"] {
+  padding: 2px;
+  gap: 2px;
+  border-radius: 8px;
+  background: var(--dk-subtle);
+}
+html body .plan-calendar [role="group"][aria-label="Calendar view"] [data-slot="button"] {
+  height: 28px;
+  color: var(--dk-muted);
+}
+html body .plan-calendar [role="group"][aria-label="Calendar view"] [aria-pressed="true"] {
+  background: var(--dk-panel);
+  color: var(--dk-ink);
+  box-shadow: 0 0 0 1px var(--dk-line);
+}
+html body .plan-calendar input[data-slot="input"] {
+  height: 32px;
+  border-color: var(--dk-line-strong);
+  border-radius: var(--dk-r-sm);
+  box-shadow: none;
+  font-size: 13px;
+}
+/* Event chips: calm, one size. */
+html body .plan-calendar [role="button"] > div.rounded {
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+/* Undated tasks */
+.plan-check {
+  width: 16px;
+  height: 16px;
+  flex: none;
+  accent-color: var(--cs-accent);
+}
+.plan-date {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 28px;
+  padding: 0 8px;
+  border: 1px solid var(--dk-line-strong);
+  border-radius: var(--dk-r-sm);
+  color: var(--dk-muted);
+}
+.plan-date svg {
+  width: 14px;
+  height: 14px;
+}
+.plan-date input {
+  width: 7.5rem;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  font-size: 12.5px;
+}
+.plan-date input:focus-visible {
+  outline: none;
+}
+.plan-date:focus-within {
+  box-shadow: var(--dk-ring);
+}
+
+/* Nov 19: calmer month grid. No search or filter row, soft chips with a colour
+   dot instead of solid bars, quiet weekday header and out-of-month days. */
+html body .plan-calendar [data-em-tools] {
+  display: none;
+}
+html body .plan-calendar [data-em-new] {
+  background: var(--dk-ink);
+  color: var(--dk-panel);
+}
+html body .plan-calendar [data-em-new]:hover {
+  opacity: 0.88;
+}
+html body .plan-calendar [data-slot="card"] {
+  border-radius: 14px;
+}
+html body .plan-calendar [data-em-dow] {
+  padding: 10px 12px;
+  border-right: 0;
+  color: var(--dk-muted);
+  font-size: 11.5px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-align: left;
+  text-transform: uppercase;
+}
+html body .plan-calendar [data-em-cell] {
+  min-height: 104px;
+  padding: 8px;
+}
+html body .plan-calendar [data-em-cell]:hover {
+  background: var(--dk-hover);
+}
+html body .plan-calendar [data-em-cell="out"] {
+  background: transparent;
+  color: var(--dk-faint, var(--dk-muted));
+  opacity: 0.55;
+}
+html body .plan-calendar [data-em-cell] > div:first-child > div:first-child {
+  font-size: 12.5px;
+  font-weight: 500;
+}
+html body .plan-calendar [data-em-chip] {
+  background: var(--dk-subtle, var(--dk-hover));
+  color: var(--dk-ink);
+  font-weight: 500;
+}
+html body .plan-calendar [data-em-chip]:hover {
+  background: var(--dk-hover);
+  box-shadow: 0 0 0 1px var(--dk-line);
+}
+@media (max-width: 640px) {
+  html body .plan-calendar [data-em-cell] {
+    min-height: 64px;
+    padding: 4px;
+  }
+  html body .plan-calendar [data-em-dow] {
+    padding: 8px 4px;
+    text-align: center;
+  }
+  html body .plan-calendar [data-em-chip] {
+    width: fit-content;
+    padding: 3px;
+    background: none;
+  }
+  html body .plan-calendar [data-em-chip] > span:last-child {
+    display: none;
+  }
+  html body .plan-calendar [data-em-chip] > span:first-child {
+    width: 8px;
+    height: 8px;
+  }
+}

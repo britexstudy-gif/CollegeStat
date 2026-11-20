@@ -1,0 +1,13 @@
+{
+  "id": "P007",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "The agency in Tashkent already told us they will help for free and they sit with us in person. I don't know who is behind this website, and $99 by card to strangers online is real money for my family.",
+  "objection": "Local agencies help for free, why pay an unknown website? And how do I know the refund will really come back to my card from abroad?",
+  "would_change_my_mind": "If another parent I know, or my child's school, told me it caught a mistake the agency made, or a cheaper first payment so I can try it before giving the full $99.",
+  "price_too_cheap": 5,
+  "price_cheap": 20,
+  "price_expensive": 50,
+  "price_too_expensive": 99
+}

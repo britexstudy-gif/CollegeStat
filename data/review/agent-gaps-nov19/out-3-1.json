@@ -1,0 +1,103 @@
+{
+ "universities": [
+  {
+   "id": "5ad45ea9-e51c-59e4-9ef7-6d3768be673c",
+   "english": [],
+   "tuition": null,
+   "application_fee": null,
+   "deadlines": [],
+   "sat": null,
+   "acceptance_rate": null,
+   "notes": "Official imperial.ac.uk pages returned HTTP 403 to fetch; only search excerpts seen, not verified, so omitted."
+  },
+  {
+   "id": "99fbcf31-606d-5dac-880e-83ca25acd942",
+   "english": [
+    {
+     "test": "IELTS",
+     "minimum": 7,
+     "detail": "Overall 7 with 7 in each section (first-year international applicants).",
+     "source_url": "https://www.admissions.caltech.edu/apply/first-year-applicants/international-applicants"
+    },
+    {
+     "test": "TOEFL iBT",
+     "minimum": 5,
+     "detail": "Page lists 5 total and 5 per section for tests taken on or after 2026-01-21 (older tests: 100 total, 25 per section). Scale unclear, verify.",
+     "source_url": "https://www.admissions.caltech.edu/apply/first-year-applicants/international-applicants"
+    },
+    {
+     "test": "Duolingo",
+     "minimum": 130,
+     "detail": "Overall 130, 130 in each area.",
+     "source_url": "https://www.admissions.caltech.edu/apply/first-year-applicants/international-applicants"
+    }
+   ],
+   "tuition": {
+    "amount": 68574,
+    "amount_max": null,
+    "currency": "USD",
+    "period": "year",
+    "academic_year": "2026-27",
+    "detail": "Undergraduate tuition only; mandatory student fees $2,655 listed separately.",
+    "source_url": "https://www.finaid.caltech.edu/costs"
+   },
+   "application_fee": null,
+   "deadlines": [
+    {
+     "title": "Regular Decision",
+     "due_at": "2027-01-04",
+     "route": "Caltech first-year application",
+     "source_url": "https://www.admissions.caltech.edu/apply/first-year-applicants/international-applicants"
+    }
+   ],
+   "sat": null,
+   "acceptance_rate": null,
+   "notes": "Application fee not stated on fetched page. Tuition excludes mandatory fees."
+  },
+  {
+   "id": "c66c3755-66a2-57a0-a80e-da984c310d29",
+   "english": [
+    {
+     "test": "IELTS",
+     "minimum": 6.5,
+     "detail": "6.5 overall with 6.5 in Reading and Writing. IELTS Indicator not accepted.",
+     "source_url": "https://www.nus.edu.sg/oam/docs/default-source/international-qualifications/english-test-scores.pdf"
+    },
+    {
+     "test": "TOEFL iBT",
+     "minimum": 92,
+     "detail": "Listed as 92-93 (NUS institution code 0786; single test date only).",
+     "source_url": "https://www.nus.edu.sg/oam/docs/default-source/international-qualifications/english-test-scores.pdf"
+    },
+    {
+     "test": "PTE Academic",
+     "minimum": 62,
+     "detail": "62 overall with 62 in Reading and Writing.",
+     "source_url": "https://www.nus.edu.sg/oam/docs/default-source/international-qualifications/english-test-scores.pdf"
+    },
+    {
+     "test": "Cambridge C1/C2",
+     "minimum": 180,
+     "detail": "C1 Advanced minimum 180.",
+     "source_url": "https://www.nus.edu.sg/oam/docs/default-source/international-qualifications/english-test-scores.pdf"
+    }
+   ],
+   "tuition": null,
+   "application_fee": null,
+   "deadlines": [],
+   "sat": null,
+   "acceptance_rate": null,
+   "notes": "Tuition varies by faculty and nationality (ASEAN vs other); fee PDF not readable, omitted. Dates page returned empty."
+  },
+  {
+   "id": "4b7862dc-7567-5f81-af58-c01144412a88",
+   "english": [],
+   "tuition": null,
+   "application_fee": null,
+   "deadlines": [],
+   "sat": null,
+   "acceptance_rate": null,
+   "notes": "ucl.ac.uk English and UCAS pages returned 403/reset; search excerpts only, not verified, omitted."
+  }
+ ]
+}

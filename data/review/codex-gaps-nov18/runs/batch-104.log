@@ -1,0 +1,154 @@
+OpenAI Codex v0.169.0
+--------
+workdir: /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+model: gpt-6-luna
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: high
+reasoning summaries: none
+session id: 01a1ee96-2d1a-7000-bfde-17090b4a2f79
+--------
+user
+You are a careful admissions-data researcher. For each university below, find facts for an
+INTERNATIONAL applicant to a FIRST-YEAR BACHELOR'S degree starting in autumn 2027 (or the nearest
+published cycle). Use the live web. Rules:
+
+- Official sources only: the university's own website (its domain or subdomains), the national
+  application service (UCAS, Common App, OUAC, uni-assist, Studyinkorea, etc.) or a government
+  statistics office. Never use rankings sites, forums, agencies, Wikipedia or blogs.
+- Every value needs the exact page URL where you read it (source_url). If you could not verify a
+  value on an official page, leave it out (null or an empty list). Never guess or estimate.
+- english: the lowest overall score accepted for undergraduate entry, per test (IELTS Academic
+  overall, TOEFL iBT total, Duolingo, PTE). If programmes differ, give the general/lowest common
+  university minimum and say so in detail (e.g. "6.5 overall, no band below 6.0; some
+  programmes higher").
+- tuition: the yearly tuition for international (non-EU / overseas) undergraduates in the local
+  currency. If it varies by programme give amount = lowest and amount_max = highest, and the
+  academic_year the fee applies to (e.g. "2026/27"). If tuition is free, amount = 0.
+- application_fee: for international first-year applicants, local currency.
+- deadlines: the main 2027-entry first-year deadlines (ISO date YYYY-MM-DD) with the route
+  (e.g. "Common App, Regular Decision", "UCAS", "university portal"). Only dates actually
+  published; if only the 2026-entry date is published, include it and put "2026 entry" in title.
+- sat: policy for international applicants; p25/p75 total SAT only if the university publishes
+  them (Common Data Set or admissions profile).
+- acceptance_rate: only if officially published (CDS, admissions statistics page).
+- notes: one short line on anything important (e.g. "Foundation year required for 11-year
+  school certificates"), else "".
+
+Spend effort on the facts students need most: English minimum, tuition, deadlines. Keep each
+detail under 160 characters. Return only the JSON that matches the schema; use each
+university's id exactly as given.
+
+Universities:
+- id: cba0bdd3-fa7c-5123-bd32-faf57dfdeb11 | Université de Montpellier | Montpellier, FR | https://www.umontpellier.fr/
+- id: 33fb7c2f-2430-5f64-a7cf-362dd319aca7 | Chung-Ang University | Seoul, KR | https://neweng.cau.ac.kr/
+- id: c7351cbe-4440-5eda-afe1-ec99b332fbcc | Universität Hannover | Hanover, DE | http://www.uni-hannover.de/
+- id: 0c725fbe-d8f6-5985-ba7b-5538434ff8a2 | Universitat Ramon Llull | Barcelona, ES | https://www.url.edu
+codex
+I’m checking each university’s official international admissions and fee pages, plus the relevant national application services, and will leave any unpublished or unverifiable values blank.
+exec
+/bin/zsh -lc 'cat /Users/likeanew/.agents/skills/lemma/SKILL.md' in /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+ succeeded in 0ms:
+---
+name: lemma
+description: Persistent cross-session memory for AI agents via MCP. BEFORE starting ANY task (coding, debugging, refactoring, research, docs, optimization — any language), FIRST call memory_read to load what you already know so you never re-derive or re-explore known facts. AFTER finishing, call memory_add to persist new findings and session_attempt for dead ends — unsaved knowledge is lost permanently. Distills reusable guides from experience.
+---
+
+<!-- lemma:skill:v=0.21.0 -->
+
+# Lemma — Persistent Memory & Learning
+
+Lemma is a persistent memory server for AI agents over the Model Context Protocol.
+Every session starts blank — knowledge survives ONLY through tool calls. If you
+learn something and don't save it (`memory_add`), it is gone permanently.
+
+## Workflow
+1. **RECALL** — `memory_read` / `semantic_search`: load what's already known for this
+   project/task. Never re-explore code or re-derive facts that are already saved.
+2. **ACT** — do the task.
+3. **PERSIST** — `memory_add` for new insights; `guide_practice` for guides applied;
+   `session_attempt` for abandoned/dead-end approaches (the most valuable records).
+
+## Two knowledge layers
+- **Memory fragments** (`memory_read` / `memory_add`): atomic facts. Types: `fact`,
+  `pattern`, `lesson`, `warning`, `context`. Confidence evolves with use and feedback.
+- **Guides** (`guide_get` / `guide_distill` / `guide_practice`): procedural skills
+  distilled from fragments. Track usage count + success/failure rate.
+Pipeline: `experience -> memory_add -> pattern/lesson -> guide_distill -> guide_practice`.
+
+## Tools at a glance
+- **Recall & search**: `memory_read`, `semantic_search`, `memory_library` (full
+  snapshot + maintenance signals), `memory_stats`, `memory_audit`.
+- **Write & maintain**: `memory_add`, `memory_update`, `memory_forget`,
+  `memory_merge`, `memory_relate` (supports / contradicts / supersedes / related_to),
+  `memory_feedback`.
+- **Guides**: `guide_get`, `guide_create`, `guide_distill`, `guide_practice`,
+  `guide_update`, `guide_forget`, `guide_merge`.
+- **Sessions & reasoning**: `session_start`, `session_end`, `session_attempt`,
+  `session_stats`, `suggestion_respond`.
+- **Background intelligence**: `conflict_scan`, `proactive_analysis`,
+  `project_analytics` (run automatically; act on signals when sensible).
+
+## Writing a fragment
+```
+## [Topic Title]
+### Context
+[1-2 sentences: what and why it matters]
+### [Content Section]
+- [Key fact 1]
+- [Key fact 2]
+### Rules (optional)
+- [Absolute constraint]
+```
+One idea per fragment, 30-2000 chars, structured markdown (not prose). **Store
+fragments in ENGLISH** (required for search/retrieval). Never ask permission to save.
+
+## Background intelligence
+Conflict detection, distill/merge/refine suggestions, and auto-linking run
+automatically. From the CLI, `lemma -lib` prints a full knowledge-base snapshot
+and `lemma -vis` launches a visualizer.
+
+web search: 
+web search: site:umontpellier.fr international students tuition fees English language proficiency bachelor 2026 2027 application deadline ...
+web search: 
+web search: site:neweng.cau.ac.kr admission undergraduate international admission guide tuition 2026 Chung-Ang University pdf ...
+web search: 
+web search: site:oia.cau.ac.kr "Fall 2026" undergraduate admission guide tuition fee Chung-Ang ...
+web search: 
+web search: 
+web search: 
+web search: 
+web search: 
+web search: 
+web search: 
+web search: site:umontpellier.fr 2027 first year licence international application deadline DAP 2027 Montpellier ...
+web search: 
+web search: 
+web search: 
+web search: 'Application Fee'
+web search: 
+web search: 
+web search: 
+web search: "2026 Fall Semester Undergraduate Admission Guide" "Tuition fee" CAU ...
+web search: 
+web search: site:oia.cau.ac.kr/cauoie/under/notice.do "2027 Spring Semester Undergraduate Admission Guide" ...
+web search: 
+web search: 
+web search: 
+web search: 
+web search: 
+web search: 'TOEFL iBT'
+web search: 
+web search: site:oia.cau.ac.kr/cauoie/under/notice.do?articleNo=51004 "Application Fee" "2027" ...
+web search: 
+web search: 
+web search: 
+web search: site:uni-hannover.de/en "no tuition fees" semester contribution tuition fee ...
+web search: 
+web search: 
+codex
+{"universities":[{"id":"cba0bdd3-fa7c-5123-bd32-faf57dfdeb11","english":[],"tuition":{"amount":2902,"amount_max":null,"currency":"EUR","period":"year","academic_year":"2026/27","detail":"Differentiated Licence fee for a standard new non-EU student; some statuses and programs may differ.","source_url":"https://www.umontpellier.fr/wp-content/uploads/2026/07/droits-differencies.pdf"},"application_fee":null,"deadlines":[{"title":"2027 entry, first-year Licence (DAP)","due_at":"2026-12-15","route":"Études en France or DAP white form, depending on residence country","source_url":"https://sciences.edu.umontpellier.fr/en/relations-internationales/etudiants-hors-programmes-dechanges-en-individual-enrolment/"}],"sat":null,"acceptance_rate":null,"notes":"Most first-year courses require French proficiency; the University of Montpellier page gives B2 TCF or equivalent for Science applicants."},{"id":"33fb7c2f-2430-5f64-a7cf-362dd319aca7","english":[{"test":"IELTS","minimum":5.5,"detail":"IELTS 5.5 or TOEFL iBT 60 is required for the English-taught Global Interactive Convergence Contents program.","source_url":"https://oia.cau.ac.kr/cauoie/under/notice.do?articleNo=51004&attachNo=62966&mode=download"},{"test":"TOEFL iBT","minimum":60,"detail":"TOEFL iBT 60 or IELTS 5.5 is required for the English-taught Global Interactive Convergence Contents program.","source_url":"https://oia.cau.ac.kr/cauoie/under/notice.do?articleNo=51004&attachNo=62966&mode=download"}],"tuition":{"amount":10444000,"amount_max":16740000,"currency":"KRW","period":"year","academic_year":"2026","detail":"First-year estimate from published incoming-student first-semester and continuing-student second-semester rates; varies by college. 2027 rates unpublished.","source_url":"https://oia.cau.ac.kr/cauoie/under/notice.do?articleNo=51004&attachNo=62966&mode=download"},"application_fee":{"amount":150000,"currency":"KRW","source_url":"https://oia.cau.ac.kr/cauoie/under/recruitment-guidelines.do?articleNo=51303&attachNo=63275&mode=download"},"deadlines":[{"title":"2027 spring entry, first round (nearest published cycle)","due_at":"2026-09-18","route":"CAU international application portal","source_url":"https://oia.cau.ac.kr/cauoie/under/notice.do?articleNo=51004&attachNo=62966&mode=download"},{"title":"2027 spring entry, second round (nearest published cycle)","due_at":"2026-11-27","route":"CAU international application portal","source_url":"https://oia.cau.ac.kr/cauoie/under/notice.do?articleNo=51314&mode=view"}],"sat":null,"acceptance_rate":null,"notes":"2027 fall dates are not yet published; 2027 spring is the nearest published cycle. Most departments use Korean-language requirements."},{"id":"c7351cbe-4440-5eda-afe1-ec99b332fbcc","english":[],"tuition":{"amount":0,"amount_max":null,"currency":"EUR","period":"year","academic_year":"2026/27","detail":"No tuition fees in Lower Saxony; semester contribution is separate.","source_url":"https://www.naturwissenschaften.uni-hannover.de/en/studies/during-your-studies/service-for-students"},"application_fee":{"amount":75,"currency":"EUR","source_url":"https://www.uni-assist.de/en/how-to-apply/pay-all-fees/handling-fees/"},"deadlines":[{"title":"2027 winter entry, restricted-admission bachelor's","due_at":"2027-07-15","route":"LUH application portal; non-EU applicants need a uni-assist VPD","source_url":"https://www.uni-hannover.de/studium/vor-dem-studium/bewerbung-zulassung/voraussetzungen-zum-studium/bewerbungszeiten"}],"sat":null,"acceptance_rate":null,"notes":"All bachelor's programs require German: B1 for application and C1 for enrollment."},{"id":"0c725fbe-d8f6-5985-ba7b-5538434ff8a2","english":[],"tuition":null,"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"Non-EU applicants with non-European school credentials are directed to the chosen faculty for admissions procedures."}]}
+tokens used
+113,448
+{"universities":[{"id":"cba0bdd3-fa7c-5123-bd32-faf57dfdeb11","english":[],"tuition":{"amount":2902,"amount_max":null,"currency":"EUR","period":"year","academic_year":"2026/27","detail":"Differentiated Licence fee for a standard new non-EU student; some statuses and programs may differ.","source_url":"https://www.umontpellier.fr/wp-content/uploads/2026/07/droits-differencies.pdf"},"application_fee":null,"deadlines":[{"title":"2027 entry, first-year Licence (DAP)","due_at":"2026-12-15","route":"Études en France or DAP white form, depending on residence country","source_url":"https://sciences.edu.umontpellier.fr/en/relations-internationales/etudiants-hors-programmes-dechanges-en-individual-enrolment/"}],"sat":null,"acceptance_rate":null,"notes":"Most first-year courses require French proficiency; the University of Montpellier page gives B2 TCF or equivalent for Science applicants."},{"id":"33fb7c2f-2430-5f64-a7cf-362dd319aca7","english":[{"test":"IELTS","minimum":5.5,"detail":"IELTS 5.5 or TOEFL iBT 60 is required for the English-taught Global Interactive Convergence Contents program.","source_url":"https://oia.cau.ac.kr/cauoie/under/notice.do?articleNo=51004&attachNo=62966&mode=download"},{"test":"TOEFL iBT","minimum":60,"detail":"TOEFL iBT 60 or IELTS 5.5 is required for the English-taught Global Interactive Convergence Contents program.","source_url":"https://oia.cau.ac.kr/cauoie/under/notice.do?articleNo=51004&attachNo=62966&mode=download"}],"tuition":{"amount":10444000,"amount_max":16740000,"currency":"KRW","period":"year","academic_year":"2026","detail":"First-year estimate from published incoming-student first-semester and continuing-student second-semester rates; varies by college. 2027 rates unpublished.","source_url":"https://oia.cau.ac.kr/cauoie/under/notice.do?articleNo=51004&attachNo=62966&mode=download"},"application_fee":{"amount":150000,"currency":"KRW","source_url":"https://oia.cau.ac.kr/cauoie/under/recruitment-guidelines.do?articleNo=51303&attachNo=63275&mode=download"},"deadlines":[{"title":"2027 spring entry, first round (nearest published cycle)","due_at":"2026-09-18","route":"CAU international application portal","source_url":"https://oia.cau.ac.kr/cauoie/under/notice.do?articleNo=51004&attachNo=62966&mode=download"},{"title":"2027 spring entry, second round (nearest published cycle)","due_at":"2026-11-27","route":"CAU international application portal","source_url":"https://oia.cau.ac.kr/cauoie/under/notice.do?articleNo=51314&mode=view"}],"sat":null,"acceptance_rate":null,"notes":"2027 fall dates are not yet published; 2027 spring is the nearest published cycle. Most departments use Korean-language requirements."},{"id":"c7351cbe-4440-5eda-afe1-ec99b332fbcc","english":[],"tuition":{"amount":0,"amount_max":null,"currency":"EUR","period":"year","academic_year":"2026/27","detail":"No tuition fees in Lower Saxony; semester contribution is separate.","source_url":"https://www.naturwissenschaften.uni-hannover.de/en/studies/during-your-studies/service-for-students"},"application_fee":{"amount":75,"currency":"EUR","source_url":"https://www.uni-assist.de/en/how-to-apply/pay-all-fees/handling-fees/"},"deadlines":[{"title":"2027 winter entry, restricted-admission bachelor's","due_at":"2027-07-15","route":"LUH application portal; non-EU applicants need a uni-assist VPD","source_url":"https://www.uni-hannover.de/studium/vor-dem-studium/bewerbung-zulassung/voraussetzungen-zum-studium/bewerbungszeiten"}],"sat":null,"acceptance_rate":null,"notes":"All bachelor's programs require German: B1 for application and C1 for enrollment."},{"id":"0c725fbe-d8f6-5985-ba7b-5538434ff8a2","english":[],"tuition":null,"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"Non-EU applicants with non-European school credentials are directed to the chosen faculty for admissions procedures."}]}

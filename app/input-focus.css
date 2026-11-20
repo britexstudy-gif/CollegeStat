@@ -1,0 +1,56 @@
+/* One focus style for every text field (Nov 17).
+   1. A field inside a box that already shows focus (:focus-within on the wrapper) draws nothing
+      itself, so there is never a ring inside a ring (the hero search fix, now app-wide).
+   2. Every other field gets an accent border and a soft halo instead of the global offset outline
+      (app/product-update.css forces `outline: 2px … !important` on input:focus-visible). */
+
+html body :is(input, select, textarea):not([type="checkbox"], [type="radio"], [type="range"], [type="color"], [type="file"]):focus-visible {
+  outline: none !important;
+  border-color: var(--cs-accent, #2563eb);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--cs-accent, #2563eb) 18%, transparent);
+}
+
+html body
+  :is(
+    .lp-find-form,
+    .auth-input,
+    .discovery-field,
+    .discovery-search,
+    .catalogue-search,
+    .spotlight-input,
+    .recovery-search,
+    .engine-search,
+    .profile-country-search,
+    .mcp-search,
+    .al-search,
+    .oneprep-search__row,
+    .sim-search,
+    .sd-search,
+    .hc-search,
+    .up-search,
+    .plan-date,
+    .oct09-search-row,
+    .oct09-admin-search-row,
+    .sb-search-row,
+    .percentage-filter-values label > div,
+    .fy-ask,
+    [data-field-frame],
+    [data-slot="input-group"]
+  )
+  :is(input, select, textarea):is(:focus, :focus-visible) {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* Writing surfaces are a page, not a form field: no border or ring at all while typing. */
+html body :is(.wt-area, .wt-paper, .wt-section) :is(textarea, input):is(:focus, :focus-visible) {
+  outline: none !important;
+  border-color: transparent !important;
+  box-shadow: none !important;
+}
+/* The AI chat box: its rounded frame already shows focus, so the textarea inside stays plain. */
+html body .asx-composer :is(textarea, input):is(:focus, :focus-visible) {
+  outline: none !important;
+  border-color: transparent !important;
+  box-shadow: none !important;
+}

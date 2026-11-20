@@ -1,0 +1,93 @@
+{
+  "source_url": "https://doi.org/10.6084/m9.figshare.33062150.v3",
+  "license": {
+    "value": 1,
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "source_md5": "41e9d92956b3d0998e550704bb763cd3",
+  "counts": {
+    "country_coded_source_records": 2250,
+    "excluded_source_records": 14,
+    "countries": 220,
+    "profile_matches": 1776,
+    "identity_methods": {
+      "exact_ror_and_country": 1770,
+      "unmatched": 474,
+      "exact_domain_and_country": 6
+    }
+  },
+  "excluded_records": [
+    {
+      "page": 37,
+      "raw_row": "3862 1 V I Vernadsky Crimean Federal University / Крымский федеральный университет имени В.И Вернадского https://ror.org/05erbjx97 EU cfuv.ru",
+      "reason": "Country code absent or international reporting unit"
+    },
+    {
+      "page": 46,
+      "raw_row": "5929 2 Sevastopol National Technical University / Севастопольский государственный университет https://ror.org/053mxw461 EU sevsu.ru",
+      "reason": "Country code absent or international reporting unit"
+    },
+    {
+      "page": 47,
+      "raw_row": "6203 1 Facultad Latinoamericana de Ciencias Sociales int IBC flacso.org",
+      "reason": "Country code absent or international reporting unit"
+    },
+    {
+      "page": 51,
+      "raw_row": "6942 2 ESCP Europe Business School https://ror.org/040hhjv66 int EU escp.eu",
+      "reason": "Country code absent or international reporting unit"
+    },
+    {
+      "page": 52,
+      "raw_row": "7256 3 Le Cordon Bleu https://ror.org/01pfpr664 int INT cordonbleu.edu",
+      "reason": "Country code absent or international reporting unit"
+    },
+    {
+      "page": 56,
+      "raw_row": "8274 4 University of the Arctic https://ror.org/04zy9j617 int EU uarctic.org",
+      "reason": "Country code absent or international reporting unit"
+    },
+    {
+      "page": 57,
+      "raw_row": "8748 5 University of Central Asia https://ror.org/04rrs4x54 int AS ucentralasia.org",
+      "reason": "Country code absent or international reporting unit"
+    },
+    {
+      "page": 59,
+      "raw_row": "10339 6 Istituto Europeo di Design int EU ied.edu",
+      "reason": "Country code absent or international reporting unit"
+    },
+    {
+      "page": 62,
+      "raw_row": "12368 7 African Leadership University https://ror.org/040n04m36 int AF alueducation.com",
+      "reason": "Country code absent or international reporting unit"
+    },
+    {
+      "page": 65,
+      "raw_row": "14046 8 IFA Paris Fashion School int INT ifaparis.com",
+      "reason": "Country code absent or international reporting unit"
+    },
+    {
+      "page": 66,
+      "raw_row": "14966 1 Ukrainian Free University https://ror.org/02ywmkj38 de/ua EU ufu-muenchen.de",
+      "reason": "Country code absent or international reporting unit"
+    },
+    {
+      "page": 72,
+      "raw_row": "20402 9 Institute of Development Management Botswana Lesotho Swaziland https://ror.org/02kbq5n70 int AF idmbls.com",
+      "reason": "Country code absent or international reporting unit"
+    },
+    {
+      "page": 73,
+      "raw_row": "21863 10 St Clements University int INT stclements.edu",
+      "reason": "Country code absent or international reporting unit"
+    },
+    {
+      "page": 75,
+      "raw_row": "24289 5 Rushmore University KY IBC rushmore.edu",
+      "reason": "Country code absent or international reporting unit"
+    }
+  ],
+  "identity_policy": "Unique exact ROR plus country, or unique exact domain plus country without a conflicting ROR. Ambiguity stays unlinked. No fuzzy matching."
+}

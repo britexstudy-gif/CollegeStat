@@ -1,0 +1,136 @@
+OpenAI Codex v0.169.0
+--------
+workdir: /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+model: gpt-6-luna
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: high
+reasoning summaries: none
+session id: 01a1ee9b-788e-7153-8739-05fa6ec03557
+--------
+user
+You are a careful admissions-data researcher. For each university below, find facts for an
+INTERNATIONAL applicant to a FIRST-YEAR BACHELOR'S degree starting in autumn 2027 (or the nearest
+published cycle). Use the live web. Rules:
+
+- Official sources only: the university's own website (its domain or subdomains), the national
+  application service (UCAS, Common App, OUAC, uni-assist, Studyinkorea, etc.) or a government
+  statistics office. Never use rankings sites, forums, agencies, Wikipedia or blogs.
+- Every value needs the exact page URL where you read it (source_url). If you could not verify a
+  value on an official page, leave it out (null or an empty list). Never guess or estimate.
+- english: the lowest overall score accepted for undergraduate entry, per test (IELTS Academic
+  overall, TOEFL iBT total, Duolingo, PTE). If programmes differ, give the general/lowest common
+  university minimum and say so in detail (e.g. "6.5 overall, no band below 6.0; some
+  programmes higher").
+- tuition: the yearly tuition for international (non-EU / overseas) undergraduates in the local
+  currency. If it varies by programme give amount = lowest and amount_max = highest, and the
+  academic_year the fee applies to (e.g. "2026/27"). If tuition is free, amount = 0.
+- application_fee: for international first-year applicants, local currency.
+- deadlines: the main 2027-entry first-year deadlines (ISO date YYYY-MM-DD) with the route
+  (e.g. "Common App, Regular Decision", "UCAS", "university portal"). Only dates actually
+  published; if only the 2026-entry date is published, include it and put "2026 entry" in title.
+- sat: policy for international applicants; p25/p75 total SAT only if the university publishes
+  them (Common Data Set or admissions profile).
+- acceptance_rate: only if officially published (CDS, admissions statistics page).
+- notes: one short line on anything important (e.g. "Foundation year required for 11-year
+  school certificates"), else "".
+
+Spend effort on the facts students need most: English minimum, tuition, deadlines. Keep each
+detail under 160 characters. Return only the JSON that matches the schema; use each
+university's id exactly as given.
+
+Universities:
+- id: 048d1b0e-b24f-5b2f-8645-d5f7692aa859 | Kazakh National Agrarian Research University | Almaty, KZ | https://www.kaznaru.edu.kz
+- id: 48bb7649-d12f-5854-b7d9-f586e7b81d72 | American University of Central Asia | Bishkek, KG | http://www.auca.kg/
+- id: be81cb5c-6657-5124-bc3c-945fa7d4b724 | Kyrgyz Russian Slavic University | Bishkek, KG | http://www.krsu.edu.kg/
+- id: e631a508-8395-58b2-a288-951e3f03d1ed | Karaganda State Technical University | Karaganda, KZ | http://www.kstu.kz/
+codex
+I’ll check the official university and application pages for the published cycle closest to autumn 2027, and leave any unverified fields empty.
+exec
+/bin/zsh -lc 'cat /Users/likeanew/.agents/skills/lemma/SKILL.md' in /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+ succeeded in 0ms:
+---
+name: lemma
+description: Persistent cross-session memory for AI agents via MCP. BEFORE starting ANY task (coding, debugging, refactoring, research, docs, optimization — any language), FIRST call memory_read to load what you already know so you never re-derive or re-explore known facts. AFTER finishing, call memory_add to persist new findings and session_attempt for dead ends — unsaved knowledge is lost permanently. Distills reusable guides from experience.
+---
+
+<!-- lemma:skill:v=0.21.0 -->
+
+# Lemma — Persistent Memory & Learning
+
+Lemma is a persistent memory server for AI agents over the Model Context Protocol.
+Every session starts blank — knowledge survives ONLY through tool calls. If you
+learn something and don't save it (`memory_add`), it is gone permanently.
+
+## Workflow
+1. **RECALL** — `memory_read` / `semantic_search`: load what's already known for this
+   project/task. Never re-explore code or re-derive facts that are already saved.
+2. **ACT** — do the task.
+3. **PERSIST** — `memory_add` for new insights; `guide_practice` for guides applied;
+   `session_attempt` for abandoned/dead-end approaches (the most valuable records).
+
+## Two knowledge layers
+- **Memory fragments** (`memory_read` / `memory_add`): atomic facts. Types: `fact`,
+  `pattern`, `lesson`, `warning`, `context`. Confidence evolves with use and feedback.
+- **Guides** (`guide_get` / `guide_distill` / `guide_practice`): procedural skills
+  distilled from fragments. Track usage count + success/failure rate.
+Pipeline: `experience -> memory_add -> pattern/lesson -> guide_distill -> guide_practice`.
+
+## Tools at a glance
+- **Recall & search**: `memory_read`, `semantic_search`, `memory_library` (full
+  snapshot + maintenance signals), `memory_stats`, `memory_audit`.
+- **Write & maintain**: `memory_add`, `memory_update`, `memory_forget`,
+  `memory_merge`, `memory_relate` (supports / contradicts / supersedes / related_to),
+  `memory_feedback`.
+- **Guides**: `guide_get`, `guide_create`, `guide_distill`, `guide_practice`,
+  `guide_update`, `guide_forget`, `guide_merge`.
+- **Sessions & reasoning**: `session_start`, `session_end`, `session_attempt`,
+  `session_stats`, `suggestion_respond`.
+- **Background intelligence**: `conflict_scan`, `proactive_analysis`,
+  `project_analytics` (run automatically; act on signals when sensible).
+
+## Writing a fragment
+```
+## [Topic Title]
+### Context
+[1-2 sentences: what and why it matters]
+### [Content Section]
+- [Key fact 1]
+- [Key fact 2]
+### Rules (optional)
+- [Absolute constraint]
+```
+One idea per fragment, 30-2000 chars, structured markdown (not prose). **Store
+fragments in ENGLISH** (required for search/retrieval). Never ask permission to save.
+
+## Background intelligence
+Conflict detection, distill/merge/refine suggestions, and auto-linking run
+automatically. From the CLI, `lemma -lib` prints a full knowledge-base snapshot
+and `lemma -vis` launches a visualizer.
+
+web search: 
+web search: site:kaznaru.edu.kz admission international students tuition English IELTS 2026 ...
+web search: 
+web search: site:kaznaru.edu.kz "foreign" applicants admission tuition fee bachelor 2026 ...
+web search: 
+web search: site:krsu.edu.kg "2026" "Стоимость обучения" бакалавриат ...
+web search: 
+web search: site:auca.kg/en "2026-2027" "tuition" undergraduate ...
+web search: 
+web search: site:auca.kg "2026-2027" tuition KGS undergraduate ...
+web search: 
+web search: 
+web search: 
+web search: 
+web search: 
+web search: 
+web search: 
+web search: "прейскурант цен 2026-2027 учебгод новый прием из дальнего зарубежья" ...
+web search: 
+web search: 
+codex
+{"universities":[{"id":"048d1b0e-b24f-5b2f-8645-d5f7692aa859","english":[],"tuition":null,"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"International tuition differs for CIS and far-abroad applicants; the applicant’s country is unspecified."},{"id":"48bb7649-d12f-5854-b7d9-f586e7b81d72","english":[{"test":"IELTS","minimum":4.0,"detail":"Minimum accepted score; scores 4.0–5.0 require first-year Intensive English.","source_url":"https://auca.kg/en/auca_exams_scoring/"},{"test":"TOEFL iBT","minimum":2.5,"detail":"Minimum on the new TOEFL scale; old iBT minimum 39. Scores at this level require first-year Intensive English.","source_url":"https://auca.kg/en/auca_exams_scoring/"},{"test":"Duolingo","minimum":95,"detail":"Minimum accepted score; scores 95–105 require first-year Intensive English.","source_url":"https://auca.kg/en/auca_exams_scoring/"}],"tuition":null,"application_fee":null,"deadlines":[{"title":"1st Cohort application deadline, 2027 entry","due_at":"2027-04-09","route":"AUCA admissions","source_url":"https://www.auca.kg/en/undergrad/"},{"title":"2nd Cohort application deadline, 2027 entry","due_at":"2027-06-11","route":"AUCA admissions","source_url":"https://www.auca.kg/en/undergrad/"}],"sat":{"policy":"accepted_alternative","p25":null,"p75":null,"source_url":"https://www.auca.kg/en/aae/"},"acceptance_rate":null,"notes":"Applicants with foreign diplomas need Ministry approval confirming equivalency."},{"id":"be81cb5c-6657-5124-bc3c-945fa7d4b724","english":[],"tuition":null,"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":""},{"id":"e631a508-8395-58b2-a288-951e3f03d1ed","english":[],"tuition":{"amount":588500,"amount_max":715000,"currency":"KZT","period":"year","academic_year":"2025/26","detail":"Annual full-time bachelor’s fees for 2025 entrants; rates vary by program and include non-residents.","source_url":"https://www.kstu.kz/wp-content/uploads/2025/06/Price-list-of-tuition-fees-for-the-2025-2026-academic-year.pdf"},"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"International bachelor’s applicants are admitted by interview."}] }
+tokens used
+77,085
+{"universities":[{"id":"048d1b0e-b24f-5b2f-8645-d5f7692aa859","english":[],"tuition":null,"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"International tuition differs for CIS and far-abroad applicants; the applicant’s country is unspecified."},{"id":"48bb7649-d12f-5854-b7d9-f586e7b81d72","english":[{"test":"IELTS","minimum":4.0,"detail":"Minimum accepted score; scores 4.0–5.0 require first-year Intensive English.","source_url":"https://auca.kg/en/auca_exams_scoring/"},{"test":"TOEFL iBT","minimum":2.5,"detail":"Minimum on the new TOEFL scale; old iBT minimum 39. Scores at this level require first-year Intensive English.","source_url":"https://auca.kg/en/auca_exams_scoring/"},{"test":"Duolingo","minimum":95,"detail":"Minimum accepted score; scores 95–105 require first-year Intensive English.","source_url":"https://auca.kg/en/auca_exams_scoring/"}],"tuition":null,"application_fee":null,"deadlines":[{"title":"1st Cohort application deadline, 2027 entry","due_at":"2027-04-09","route":"AUCA admissions","source_url":"https://www.auca.kg/en/undergrad/"},{"title":"2nd Cohort application deadline, 2027 entry","due_at":"2027-06-11","route":"AUCA admissions","source_url":"https://www.auca.kg/en/undergrad/"}],"sat":{"policy":"accepted_alternative","p25":null,"p75":null,"source_url":"https://www.auca.kg/en/aae/"},"acceptance_rate":null,"notes":"Applicants with foreign diplomas need Ministry approval confirming equivalency."},{"id":"be81cb5c-6657-5124-bc3c-945fa7d4b724","english":[],"tuition":null,"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":""},{"id":"e631a508-8395-58b2-a288-951e3f03d1ed","english":[],"tuition":{"amount":588500,"amount_max":715000,"currency":"KZT","period":"year","academic_year":"2025/26","detail":"Annual full-time bachelor’s fees for 2025 entrants; rates vary by program and include non-residents.","source_url":"https://www.kstu.kz/wp-content/uploads/2025/06/Price-list-of-tuition-fees-for-the-2025-2026-academic-year.pdf"},"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"International bachelor’s applicants are admitted by interview."}] }

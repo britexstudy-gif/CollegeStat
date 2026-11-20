@@ -1,0 +1,150 @@
+{
+  "status": "prepared",
+  "source_sha256": "6c49df7f49b9dd69f60bc86b1aac237e69cedb53f1099219687b7a070ca8ffbd",
+  "records": [
+    {
+      "id": "3f15a83c-c1d9-50da-85e9-4cfa84fe5c04",
+      "name": "University of Education, Lahore",
+      "website": "http://www.ue.edu.pk/",
+      "before_md5": "ea9f6e8c1f2b49fe8bebc4d2458d0b4a",
+      "rankings": [
+        {
+          "name": "University of Education, Lahore",
+          "country": "Pakistan",
+          "provider": "the",
+          "year": 2026,
+          "rank_label": "1001–1200",
+          "url": "https://www.timeshighereducation.com/world-university-rankings/university-education-lahore",
+          "country_code": "PK",
+          "national_rank": null,
+          "logo_url": null,
+          "university_id": "3f15a83c-c1d9-50da-85e9-4cfa84fe5c04",
+          "rank": 1001,
+          "tied": false,
+          "band": true,
+          "score": "32.1–35.4",
+          "scores": {
+            "overall": "32.1–35.4",
+            "teaching": "13.6",
+            "research": "8.8",
+            "citations": "70.3",
+            "industry_income": "16.4",
+            "international_outlook": "50.5"
+          },
+          "country_position": "25-34",
+          "country_total": 48
+        }
+      ],
+      "publisher_students": {
+        "edition": 2026,
+        "subjects": [
+          "Education",
+          "Art",
+          "Performing Arts & Design",
+          "History",
+          "Philosophy & Theology",
+          "Business & Management",
+          "Computer Science",
+          "Economics & Econometrics",
+          "Archaeology",
+          "Accounting & Finance",
+          "Chemistry",
+          "Agriculture & Forestry",
+          "Physics & Astronomy",
+          "Languages",
+          "Literature & Linguistics",
+          "Mathematics & Statistics"
+        ],
+        "source_url": "https://www.timeshighereducation.com/world-university-rankings/university-education-lahore",
+        "students": 29744.0,
+        "student_staff_ratio": 17.4,
+        "international_percent": 0.0,
+        "female_male_ratio": "57 : 43",
+        "evidence": {
+          "provider": "Times Higher Education",
+          "retrieved_at": "2026-09-28",
+          "raw_snapshot_sha256": "6c49df7f49b9dd69f60bc86b1aac237e69cedb53f1099219687b7a070ca8ffbd",
+          "scope": "Publisher institution snapshot; student census year not specified",
+          "source_name": "University of Education, Lahore",
+          "verification_status": "verified_source_identity",
+          "identity_reviewed_at": "2026-10-10T18:51:00Z"
+        }
+      }
+    },
+    {
+      "id": "fcd1cd76-2c2e-526f-acd6-38a74eb5954d",
+      "name": "University of Okara",
+      "website": "https://www.uo.edu.pk",
+      "before_md5": "92a2b5e2803c7dcf69b527b4235bdabb",
+      "rankings": [
+        {
+          "name": "University of Okara",
+          "country": "Pakistan",
+          "provider": "the",
+          "year": 2026,
+          "rank_label": "1001–1200",
+          "url": "https://www.timeshighereducation.com/world-university-rankings/university-okara",
+          "country_code": "PK",
+          "national_rank": null,
+          "logo_url": null,
+          "university_id": "fcd1cd76-2c2e-526f-acd6-38a74eb5954d",
+          "rank": 1001,
+          "tied": false,
+          "band": true,
+          "score": "32.1–35.4",
+          "scores": {
+            "overall": "32.1–35.4",
+            "teaching": "8.6",
+            "research": "16.5",
+            "citations": "73.4",
+            "industry_income": "16.8",
+            "international_outlook": "49.6"
+          },
+          "country_position": "25-34",
+          "country_total": 48
+        }
+      ],
+      "publisher_students": {
+        "edition": 2026,
+        "subjects": [
+          "Chemistry",
+          "Art",
+          "Performing Arts & Design",
+          "Education",
+          "Politics & International Studies (incl Development Studies)",
+          "Languages",
+          "Literature & Linguistics",
+          "Geology",
+          "Environmental",
+          "Earth & Marine Sciences",
+          "Communication & Media Studies",
+          "Economics & Econometrics",
+          "Accounting & Finance",
+          "Sport Science",
+          "Law",
+          "Mathematics & Statistics",
+          "Computer Science",
+          "Psychology",
+          "Sociology",
+          "Business & Management",
+          "General Engineering"
+        ],
+        "source_url": "https://www.timeshighereducation.com/world-university-rankings/university-okara",
+        "students": 19640.0,
+        "student_staff_ratio": 145.5,
+        "international_percent": 0.0,
+        "female_male_ratio": "36 : 64",
+        "evidence": {
+          "provider": "Times Higher Education",
+          "retrieved_at": "2026-09-28",
+          "raw_snapshot_sha256": "6c49df7f49b9dd69f60bc86b1aac237e69cedb53f1099219687b7a070ca8ffbd",
+          "scope": "Publisher institution snapshot; student census year not specified",
+          "source_name": "University of Okara",
+          "verification_status": "verified_source_identity",
+          "identity_reviewed_at": "2026-10-11"
+        }
+      }
+    }
+  ],
+  "scope": "Two existing public profile caches only; original ranking and source tables unchanged"
+}

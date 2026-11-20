@@ -132,7 +132,8 @@
   display: none;
 }
 .site-main {
-  max-width: 1480px;
+  /* Canonical width is 1280px (see open-design.css). Was 1480px — unified. */
+  max-width: 1280px;
   margin: 0 auto;
   padding: 36px 40px 60px;
 }
@@ -339,22 +340,6 @@
   font-size: 11px;
   margin: 0 0 22px;
 }
-.ranking-list-heading,
-.ranking-university-row {
-  grid-template-columns: 160px minmax(0, 1fr) 230px;
-  gap: 22px;
-}
-.ranking-position-pair {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  min-width: 0;
-}
-.ranking-position-pair .ranking-position {
-  font-size: 30px;
-  font-weight: 600;
-  letter-spacing: -0.04em;
-}
 .regional-position {
   display: flex;
   flex-direction: column;
@@ -371,41 +356,6 @@
   font-size: 9px;
   line-height: 1.4;
   color: #448369;
-}
-.ranking-university-row {
-  padding: 22px 0;
-}
-.ranking-university-identity .university-logo {
-  width: 42px;
-  height: 42px;
-  border-radius: 12px;
-}
-.ranking-university-name strong {
-  font-size: 15px;
-  line-height: 1.5;
-}
-.ranking-university-name small {
-  font-size: 11px;
-}
-.ranking-university-row .rank-badges.compact {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 12px;
-  justify-items: center;
-}
-.ranking-university-row .rank-badge {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  align-items: center;
-}
-.ranking-university-row .rank-badge strong {
-  font-size: 17px;
-}
-.ranking-university-row .rank-badge small {
-  display: block;
-  font-size: 8px;
-  line-height: 1.3;
 }
 .spotlight-window.search-dialog[data-slot="dialog-content"] {
   width: min(650px, calc(100vw - 28px));
@@ -455,20 +405,10 @@
 }
 .directory-filters input:focus-visible,
 .directory-filters [data-slot="select-trigger"]:focus-visible,
-.ranking-filter-row input:focus-visible,
-.ranking-filter-row select:focus-visible,
 .program-filter-bar input:focus-visible,
 .program-filter-bar select:focus-visible {
   outline: 1.5px solid #60748b;
   outline-offset: 2px;
-  box-shadow: none;
-}
-.ranking-filter-row label:focus-within {
-  border-color: #78899e;
-  box-shadow: 0 0 0 2px #64748b12;
-}
-.ranking-filter-row label input:focus-visible {
-  outline: none;
   box-shadow: none;
 }
 .profile-page > .campus-image {
@@ -607,22 +547,6 @@
   }
 }
 @media (max-width: 640px) {
-  .ranking-list-heading,
-  .ranking-university-row {
-    grid-template-columns: 90px minmax(0, 1fr);
-    gap: 12px;
-  }
-  .ranking-list-heading > span:last-child {
-    display: none;
-  }
-  .ranking-position-pair {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 6px;
-  }
-  .ranking-position-pair .ranking-position {
-    font-size: 26px;
-  }
   .regional-position {
     flex-direction: row;
     align-items: center;
@@ -635,17 +559,6 @@
   .regional-position small {
     max-width: 46px;
     font-size: 8px;
-  }
-  .ranking-university-row > .rank-badges {
-    grid-column: 2;
-    justify-self: start;
-    width: min(220px, 100%);
-  }
-  .ranking-university-row .ranking-university-name strong {
-    font-size: 13px;
-  }
-  .ranking-university-row .ranking-university-identity {
-    gap: 10px;
   }
   .site-navigation {
     top: 10px;
@@ -907,4 +820,106 @@
   .percentage-filter-values input {
     font-size: 16px;
   }
+}
+
+/* Preserve the earlier approved navbar, adding access to every route on phones. */
+.site-navigation.navigation-restored-oct09.scrolled {
+  --glass-fill: rgba(246, 248, 251, 0.96);
+  --glass-blur: 16px;
+}
+.dark .site-navigation.navigation-restored-oct09.scrolled {
+  --glass-fill: rgba(13, 15, 19, 0.96);
+}
+.site-navigation.navigation-restored-oct09 .navbar-appearance { display:inline-flex; }
+.site-navigation.navigation-restored-oct09 .navbar-mobile-trigger { display:none; }
+.navbar-mobile-sheet[data-slot="sheet-content"] {
+  width: min(360px, 90vw);
+  background: var(--background);
+  border-color: var(--border);
+  gap: 0;
+  overflow-y: auto;
+}
+.navbar-mobile-sheet [data-slot="sheet-header"] {
+  padding: 28px 24px 20px;
+}
+.navbar-mobile-sheet [data-slot="sheet-title"] {
+  font-size: 21px;
+  letter-spacing: -0.035em;
+}
+.navbar-mobile-sheet [data-slot="sheet-description"] {
+  font-size: 12px;
+  margin-top: 8px;
+  line-height: 1.7;
+  color: var(--muted-foreground);
+}
+.navbar-mobile-sheet .navbar-mobile-links {
+  display: flex;
+  flex-direction: column;
+  padding: 0 16px;
+}
+.navbar-mobile-sheet .navbar-mobile-links a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 50px;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  color: var(--foreground);
+}
+.navbar-mobile-sheet .navbar-mobile-links a:hover,
+.navbar-mobile-sheet .navbar-mobile-links a[aria-current="page"] {
+  background: var(--muted);
+  color: var(--primary);
+}
+.navbar-mobile-sheet .navbar-mobile-appearance {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 16px 24px;
+  border-top: 1px solid var(--border);
+  padding-top: 18px;
+  font-size: 13px;
+  color: var(--muted-foreground);
+}
+@media(max-width:1099px) {
+ .site-navigation.navigation-restored-oct09 .navbar-mobile-trigger { display:inline-flex; align-items:center; justify-content:center; width:36px; height:36px; border:1px solid var(--border); border-radius:9px; background:transparent; color:var(--foreground); }
+}
+@media(max-width:640px) {
+ .site-navigation.navigation-restored-oct09 .navbar-appearance { display:none; }
+ .site-navigation.navigation-restored-oct09 .navbar-actions { gap:5px; }
+ .site-navigation.navigation-restored-oct09 .sign-in-button { padding-inline:10px; }
+}
+
+/* Keep public navigation inside its glass container on narrow phones. */
+@media (max-width: 360px) {
+ .site-navigation.navigation-restored-oct09 { padding-inline: 10px; gap: 5px; }
+ .site-navigation.navigation-restored-oct09 .brand { font-size: 16px; gap: 6px; }
+ .site-navigation.navigation-restored-oct09 .brand-mark { width: 32px; }
+ .site-navigation.navigation-restored-oct09 .navbar-actions { gap: 3px; }
+ .site-navigation.navigation-restored-oct09 .sign-in-button { font-size: 11px; padding-inline: 8px; }
+}
+
+/* Navbar actions render as plain controls: no filled pills, no outlined chips. */
+.site-navigation.navigation-restored-oct09 .navbar-actions .sign-in-button,
+.dark .site-navigation.navigation-restored-oct09 .navbar-actions .sign-in-button {
+  background: transparent;
+  color: var(--foreground);
+  border-color: transparent;
+  box-shadow: none;
+}
+.site-navigation.navigation-restored-oct09 .navbar-actions .sign-in-button:hover,
+.dark .site-navigation.navigation-restored-oct09 .navbar-actions .sign-in-button:hover {
+  background: #718bb414;
+  color: var(--foreground);
+}
+.site-navigation.navigation-restored-oct09 .navbar-actions .appearance-button,
+.dark .site-navigation.navigation-restored-oct09 .navbar-actions .appearance-button {
+  border: 0;
+  background: transparent;
+}
+.site-navigation.navigation-restored-oct09 .navbar-actions .appearance-button:hover,
+.dark .site-navigation.navigation-restored-oct09 .navbar-actions .appearance-button:hover {
+  background: #718bb414;
 }

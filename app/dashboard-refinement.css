@@ -1,0 +1,564 @@
+/* The dashboards share catalogue tokens and retain their existing workflows. */
+.student-workspace .workspace-tabs {
+  display: none;
+}
+.student-content .application-stages > button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-width: auto;
+  min-height: 38px;
+  padding: 8px 12px;
+  border-radius: 11px;
+}
+.student-content .application-stages > button span {
+  font-size: 12px;
+}
+.student-content .application-stages > button strong {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 550;
+}
+.student-content .application-stages > button[aria-pressed="true"] {
+  border-color: color-mix(in srgb, var(--primary) 24%, var(--border));
+}
+.student-content .error-banner {
+  border-radius: 12px;
+  font-size: 13px;
+}
+.student-content .workspace-loading {
+  font-size: 12px;
+  color: var(--muted-foreground);
+}
+.student-workspace {
+  grid-template-columns: 184px minmax(0, 1fr);
+  gap: 28px;
+  padding-top: 22px;
+}
+.student-sidebar {
+  align-self: start;
+  position: sticky;
+  top: 112px;
+  padding-right: 18px;
+}
+.student-sidebar .section-caption {
+  margin: 8px 0 16px;
+}
+.student-sidebar button,
+.student-sidebar > a {
+  min-height: 42px;
+  border-radius: 11px;
+  transition:
+    color 160ms ease,
+    background-color 160ms ease;
+}
+.student-sidebar button.active {
+  color: var(--primary);
+  background: color-mix(in srgb, var(--primary) 8%, var(--card));
+}
+.student-sidebar .sidebar-settings {
+  margin-top: 16px;
+  padding-top: 11px;
+}
+.student-content .workspace-intro {
+  align-items: center;
+  margin-bottom: 24px;
+}
+.student-content .workspace-intro h1 {
+  font-size: clamp(28px, 3vw, 36px);
+}
+.student-content .workspace-intro p {
+  font-size: 13px;
+  color: var(--muted-foreground);
+}
+.dashboard-statistics {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+  margin: 0 0 24px;
+}
+.dashboard-statistics > button,
+.dashboard-statistics > a {
+  position: relative;
+  display: grid;
+  grid-template-columns: 20px minmax(0, 1fr);
+  gap: 12px 10px;
+  align-items: center;
+  min-width: 0;
+  min-height: 104px;
+  padding: 18px;
+  text-align: left;
+  color: var(--foreground);
+  background: var(--card);
+  border: 0.5px solid var(--border);
+  border-radius: 16px;
+  transition:
+    border-color 160ms ease,
+    box-shadow 160ms ease;
+}
+.dashboard-statistics > button:hover,
+.dashboard-statistics > a:hover {
+  border-color: color-mix(in srgb, var(--primary) 35%, var(--border));
+  box-shadow: 0 3px 15px #00000005;
+}
+.dashboard-statistics svg:first-child {
+  color: var(--primary);
+}
+.dashboard-statistics span {
+  color: var(--muted-foreground);
+  font-size: 11px;
+  line-height: 1.45;
+}
+.dashboard-statistics strong {
+  grid-column: 1 / -1;
+  font-size: 28px;
+  font-weight: 550;
+  line-height: 1;
+  letter-spacing: -0.04em;
+}
+.dashboard-statistics svg:last-child {
+  position: absolute;
+  right: 17px;
+  bottom: 18px;
+  color: var(--muted-foreground);
+}
+.student-summary {
+  gap: 18px;
+  padding-bottom: 0;
+  border: 0;
+  margin-bottom: 26px;
+}
+.student-summary > div {
+  min-width: 0;
+  border: 0.5px solid var(--border);
+  border-radius: 18px;
+  background: var(--card);
+  padding: 20px;
+}
+.student-content .planner-calendar h2 {
+  font-size: 14px;
+}
+.student-content .planner-progress > .text-link,
+.student-content .planner-calendar > .text-link {
+  margin-top: 17px;
+}
+.student-content .planner-add-task {
+  gap: 8px;
+}
+.student-content .planner-add-task input,
+.student-content .assistant-form input {
+  min-height: 42px;
+  color: var(--foreground);
+  background: var(--background);
+  border: 0.5px solid var(--border);
+  border-radius: 10px;
+}
+.student-content .planner-add-task .button {
+  min-height: 42px;
+}
+.student-content .student-progress-track {
+  height: 5px;
+  background: var(--muted);
+}
+.student-content .workspace-row {
+  align-items: flex-start;
+  padding: 20px 0;
+}
+.student-content .workspace-row textarea {
+  min-height: 62px;
+  background: var(--card);
+  color: var(--foreground);
+  border: 0.5px solid var(--border);
+}
+.student-content .workspace-row .choice {
+  max-width: 220px;
+}
+.student-content .workspace-row .text-link,
+.student-content .workspace-row > button {
+  min-height: 40px;
+}
+.student-content .application-stages {
+  flex-wrap: nowrap;
+  max-width: 100%;
+  overflow-x: auto;
+  scrollbar-width: thin;
+  padding-bottom: 8px;
+}
+.student-content .application-stages > button {
+  flex: none;
+  min-height: 38px;
+  white-space: nowrap;
+}
+.dashboard-empty-hint {
+  margin: 18px 0;
+  font-size: 13px;
+  line-height: 1.7;
+  color: var(--muted-foreground);
+}
+.dashboard-gate {
+  gap: clamp(28px, 5vw, 76px);
+  grid-template-columns: 1.1fr 1fr;
+  min-height: 60vh;
+  max-width: 1140px;
+  margin: auto;
+}
+.dashboard-gate h1 {
+  font-size: clamp(36px, 4vw, 54px);
+  max-width: 540px;
+}
+.dashboard-gate > div > p {
+  font-size: 15px;
+  max-width: 450px;
+}
+.dashboard-gate-guide {
+  background: var(--card);
+  border: 0.5px solid var(--border);
+  border-radius: 22px;
+  padding: 26px;
+}
+.dashboard-gate-guide > .section-caption {
+  display: block;
+  margin-bottom: 13px;
+}
+.dashboard-gate-guide > a {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  min-height: 82px;
+  padding: 15px 0;
+  border-bottom: 0.5px solid var(--border);
+}
+.dashboard-gate-guide > a > svg:first-child {
+  color: var(--primary);
+  flex: none;
+}
+.dashboard-gate-guide > a > span {
+  flex: 1;
+}
+.dashboard-gate-guide strong,
+.dashboard-gate-guide small {
+  display: block;
+}
+.dashboard-gate-guide strong {
+  font-size: 14px;
+  font-weight: 550;
+  margin-bottom: 6px;
+}
+.dashboard-gate-guide small,
+.dashboard-gate-guide > p {
+  font-size: 12px;
+  line-height: 1.65;
+  color: var(--muted-foreground);
+}
+.dashboard-gate-guide > p {
+  margin: 19px 0 0;
+}
+.admin-layout {
+  grid-template-columns: 204px minmax(0, 1fr);
+}
+.admin-rail {
+  display: flex;
+  flex-direction: column;
+  padding: 24px 14px;
+  height: 100dvh;
+  min-height: 0;
+}
+.admin-rail > .brand {
+  padding-left: 6px;
+}
+.admin-rail > nav {
+  min-height: 0;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+  margin: 24px 0 18px;
+  flex: 1;
+}
+.admin-rail nav a {
+  min-height: 40px;
+  border-radius: 10px;
+}
+.admin-rail nav a.active {
+  color: var(--primary);
+  background: color-mix(in srgb, var(--primary) 8%, var(--card));
+}
+.admin-content .page-intro p,
+.admin-content .caption {
+  color: var(--muted-foreground);
+}
+.admin-content .admin-live-statistics {
+  margin-top: 20px;
+}
+.admin-content .detail-grid {
+  gap: 16px;
+}
+.admin-content .detail-grid > .panel {
+  padding: 22px;
+  border: 0.5px solid var(--border);
+  border-radius: 17px;
+  background: var(--card);
+}
+.admin-content .detail-grid h2 {
+  font-size: 15px;
+  margin-bottom: 16px;
+}
+.admin-content .research-table th {
+  font-size: 11px;
+}
+.admin-content .research-table td {
+  font-size: 12px;
+  line-height: 1.65;
+}
+.admin-content .research-table td:first-child .caption {
+  overflow-wrap: anywhere;
+  font-size: 10px;
+}
+.admin-content .research-table td pre {
+  overflow-wrap: anywhere;
+}
+.admin-content .admin-overview-status {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+  margin: 20px 0 18px;
+  color: var(--muted-foreground);
+  font-size: 11px;
+}
+.admin-content .admin-overview-status > :is(span, a) {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+.admin-content .admin-overview-status > span:first-child {
+  color: var(--foreground);
+}
+.admin-content .admin-overview-status a {
+  margin-left: auto;
+  color: var(--primary);
+}
+.admin-content .admin-metric-notice {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 9px;
+  padding: 14px 16px;
+  margin-bottom: 20px;
+  border: 0.5px solid var(--border);
+  border-radius: 12px;
+  background: var(--card);
+  color: var(--muted-foreground);
+  font-size: 12px;
+  line-height: 1.65;
+}
+.admin-content .admin-metric-notice > svg {
+  flex: none;
+  margin-top: 2px;
+}
+.admin-content .admin-metric-notice > span {
+  flex: 1;
+  min-width: 200px;
+}
+.admin-content .admin-metric-notice summary {
+  cursor: pointer;
+  color: var(--primary);
+}
+.admin-content .admin-metric-notice p {
+  max-width: 320px;
+  margin: 9px 0 0;
+}
+.admin-content .admin-quicklinks > a {
+  padding: 20px;
+  border-width: 0.5px;
+  gap: 10px;
+}
+.admin-content .admin-quicklinks > a > svg:first-child {
+  padding: 9px;
+  width: 39px;
+  height: 39px;
+  border-radius: 12px;
+  background: color-mix(in srgb, var(--primary) 9%, var(--card));
+  color: var(--primary);
+}
+.admin-content .admin-quicklinks strong {
+  font-size: 14px;
+  font-weight: 550;
+}
+.admin-content .admin-quicklinks span {
+  font-size: 11px;
+  line-height: 1.7;
+}
+.admin-content .admin-record-controls input {
+  font-size: 14px;
+  color: var(--foreground);
+}
+.admin-content .table-wrap {
+  border: 0.5px solid var(--border);
+  border-radius: 14px;
+}
+.admin-content .research-table {
+  margin: 0;
+}
+.admin-content .research-table th {
+  background: color-mix(in srgb, var(--muted) 60%, var(--card));
+  color: var(--muted-foreground);
+  font-weight: 500;
+}
+.admin-content .research-table tbody tr:last-child td {
+  border-bottom: 0;
+}
+.dark .student-workspace,
+.dark .admin-layout,
+.dark .dashboard-gate {
+  color: var(--foreground);
+}
+.dark .student-sidebar button.active,
+.dark .admin-rail nav a.active {
+  color: #8db5ff;
+  background: #2068ee1c;
+}
+.dark .student-content .planner-week-days button[aria-pressed="true"] {
+  color: #a9c8ff;
+  background: #2264df26;
+}
+@media (max-width: 1100px) {
+  .student-workspace {
+    grid-template-columns: 168px minmax(0, 1fr);
+    gap: 22px;
+  }
+  .dashboard-statistics {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .student-summary {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 760px) {
+  .student-workspace,
+  .admin-layout {
+    grid-template-columns: 1fr;
+  }
+  .student-sidebar {
+    position: static;
+    flex-direction: row;
+    overflow-x: auto;
+    border-right: 0;
+    border-bottom: 0.5px solid var(--border);
+    padding: 0 0 8px;
+    gap: 4px;
+  }
+  .student-sidebar button,
+  .student-sidebar > a {
+    flex: none;
+    white-space: nowrap;
+    min-height: 42px;
+    font-size: 12px;
+  }
+  .student-sidebar .section-caption,
+  .student-sidebar .sidebar-settings {
+    display: none;
+  }
+  .student-content .workspace-intro {
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  .dashboard-statistics {
+    gap: 9px;
+    margin-bottom: 18px;
+  }
+  .dashboard-statistics > button,
+  .dashboard-statistics > a {
+    padding: 15px;
+    min-height: 98px;
+  }
+  .dashboard-statistics span {
+    font-size: 11px;
+  }
+  .dashboard-gate {
+    grid-template-columns: 1fr;
+    padding: 32px 0;
+    gap: 26px;
+  }
+  .dashboard-gate-guide {
+    padding: 22px;
+  }
+  .dashboard-gate .gate-actions {
+    flex-wrap: wrap;
+    gap: 18px;
+  }
+  .admin-rail {
+    position: static;
+    height: auto;
+    display: block;
+    border-right: 0;
+    border-bottom: 0.5px solid var(--border);
+    padding: 16px;
+  }
+  .admin-rail > nav {
+    margin: 15px 0;
+    overflow: visible;
+  }
+  .admin-rail .admin-primary-nav {
+    display: flex;
+    overflow-x: auto;
+    gap: 4px;
+  }
+  .admin-rail .admin-primary-nav a {
+    flex: none;
+    white-space: nowrap;
+  }
+  .admin-content .page-intro {
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+  .admin-content .admin-overview-status {
+    gap: 12px;
+  }
+  .admin-content .admin-overview-status a {
+    margin-left: 0;
+    flex-basis: 100%;
+  }
+  .admin-content .admin-record-controls input {
+    min-width: 0;
+    font-size: 16px;
+  }
+  .admin-content .admin-quicklinks {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .admin-content .admin-quicklinks > a {
+    padding: 16px;
+  }
+  .admin-content .control-row {
+    flex-wrap: wrap;
+    gap: 9px;
+  }
+}
+@media (max-width: 480px) {
+  .student-summary > div {
+    padding: 17px;
+  }
+  .student-content .planner-add-task input,
+  .student-content .assistant-form input,
+  .student-content .workspace-row textarea {
+    font-size: 16px;
+  }
+  .student-content .workspace-row {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .student-content .workspace-row > .university-logo + div {
+    flex-basis: calc(100% - 72px);
+  }
+  .student-content .workspace-row .choice {
+    max-width: 100%;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .student-sidebar button,
+  .student-sidebar > a,
+  .dashboard-statistics > button,
+  .dashboard-statistics > a {
+    transition: none;
+  }
+}

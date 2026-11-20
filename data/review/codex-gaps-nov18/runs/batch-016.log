@@ -1,0 +1,124 @@
+OpenAI Codex v0.169.0
+--------
+workdir: /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+model: gpt-6-luna
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: high
+reasoning summaries: none
+session id: 01a1ee7c-ac8f-7252-a1f6-b897cb4b8335
+--------
+user
+You are a careful admissions-data researcher. For each university below, find facts for an
+INTERNATIONAL applicant to a FIRST-YEAR BACHELOR'S degree starting in autumn 2027 (or the nearest
+published cycle). Use the live web. Rules:
+
+- Official sources only: the university's own website (its domain or subdomains), the national
+  application service (UCAS, Common App, OUAC, uni-assist, Studyinkorea, etc.) or a government
+  statistics office. Never use rankings sites, forums, agencies, Wikipedia or blogs.
+- Every value needs the exact page URL where you read it (source_url). If you could not verify a
+  value on an official page, leave it out (null or an empty list). Never guess or estimate.
+- english: the lowest overall score accepted for undergraduate entry, per test (IELTS Academic
+  overall, TOEFL iBT total, Duolingo, PTE). If programmes differ, give the general/lowest common
+  university minimum and say so in detail (e.g. "6.5 overall, no band below 6.0; some
+  programmes higher").
+- tuition: the yearly tuition for international (non-EU / overseas) undergraduates in the local
+  currency. If it varies by programme give amount = lowest and amount_max = highest, and the
+  academic_year the fee applies to (e.g. "2026/27"). If tuition is free, amount = 0.
+- application_fee: for international first-year applicants, local currency.
+- deadlines: the main 2027-entry first-year deadlines (ISO date YYYY-MM-DD) with the route
+  (e.g. "Common App, Regular Decision", "UCAS", "university portal"). Only dates actually
+  published; if only the 2026-entry date is published, include it and put "2026 entry" in title.
+- sat: policy for international applicants; p25/p75 total SAT only if the university publishes
+  them (Common Data Set or admissions profile).
+- acceptance_rate: only if officially published (CDS, admissions statistics page).
+- notes: one short line on anything important (e.g. "Foundation year required for 11-year
+  school certificates"), else "".
+
+Spend effort on the facts students need most: English minimum, tuition, deadlines. Keep each
+detail under 160 characters. Return only the JSON that matches the schema; use each
+university's id exactly as given.
+
+Universities:
+- id: 1a7adfa9-9e53-5a4c-888c-8f76fa8e1125 | University of Southampton | Southampton, GB | http://www.southampton.ac.uk/
+- id: 75f1a39c-5876-5365-a4e5-4f8190028c13 | Uppsala University | Uppsala, SE | http://www.uu.se/
+- id: eacacd15-de55-5ef0-b874-54d46d92b26c | University of Technology Sydney | Sydney, AU | http://www.uts.edu.au/
+- id: 414b011a-c052-5872-b787-f47af96a0c8d | Polytechnic Institute of Milan | Milan, IT | http://www.polimi.it/
+codex
+I’m checking the universities’ current official admissions and fee pages, prioritizing English requirements, international tuition, and published deadlines.
+exec
+/bin/zsh -lc 'cat /Users/likeanew/.agents/skills/lemma/SKILL.md' in /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+ succeeded in 0ms:
+---
+name: lemma
+description: Persistent cross-session memory for AI agents via MCP. BEFORE starting ANY task (coding, debugging, refactoring, research, docs, optimization — any language), FIRST call memory_read to load what you already know so you never re-derive or re-explore known facts. AFTER finishing, call memory_add to persist new findings and session_attempt for dead ends — unsaved knowledge is lost permanently. Distills reusable guides from experience.
+---
+
+<!-- lemma:skill:v=0.21.0 -->
+
+# Lemma — Persistent Memory & Learning
+
+Lemma is a persistent memory server for AI agents over the Model Context Protocol.
+Every session starts blank — knowledge survives ONLY through tool calls. If you
+learn something and don't save it (`memory_add`), it is gone permanently.
+
+## Workflow
+1. **RECALL** — `memory_read` / `semantic_search`: load what's already known for this
+   project/task. Never re-explore code or re-derive facts that are already saved.
+2. **ACT** — do the task.
+3. **PERSIST** — `memory_add` for new insights; `guide_practice` for guides applied;
+   `session_attempt` for abandoned/dead-end approaches (the most valuable records).
+
+## Two knowledge layers
+- **Memory fragments** (`memory_read` / `memory_add`): atomic facts. Types: `fact`,
+  `pattern`, `lesson`, `warning`, `context`. Confidence evolves with use and feedback.
+- **Guides** (`guide_get` / `guide_distill` / `guide_practice`): procedural skills
+  distilled from fragments. Track usage count + success/failure rate.
+Pipeline: `experience -> memory_add -> pattern/lesson -> guide_distill -> guide_practice`.
+
+## Tools at a glance
+- **Recall & search**: `memory_read`, `semantic_search`, `memory_library` (full
+  snapshot + maintenance signals), `memory_stats`, `memory_audit`.
+- **Write & maintain**: `memory_add`, `memory_update`, `memory_forget`,
+  `memory_merge`, `memory_relate` (supports / contradicts / supersedes / related_to),
+  `memory_feedback`.
+- **Guides**: `guide_get`, `guide_create`, `guide_distill`, `guide_practice`,
+  `guide_update`, `guide_forget`, `guide_merge`.
+- **Sessions & reasoning**: `session_start`, `session_end`, `session_attempt`,
+  `session_stats`, `suggestion_respond`.
+- **Background intelligence**: `conflict_scan`, `proactive_analysis`,
+  `project_analytics` (run automatically; act on signals when sensible).
+
+## Writing a fragment
+```
+## [Topic Title]
+### Context
+[1-2 sentences: what and why it matters]
+### [Content Section]
+- [Key fact 1]
+- [Key fact 2]
+### Rules (optional)
+- [Absolute constraint]
+```
+One idea per fragment, 30-2000 chars, structured markdown (not prose). **Store
+fragments in ENGLISH** (required for search/retrieval). Never ask permission to save.
+
+## Background intelligence
+Conflict detection, distill/merge/refine suggestions, and auto-linking run
+automatically. From the CLI, `lemma -lib` prints a full knowledge-base snapshot
+and `lemma -vis` launches a visualizer.
+
+web search: 
+web search: site:southampton.ac.uk international undergraduate English IELTS tuition 2027 entry deadline 2027 ...
+web search: 
+web search: site:southampton.ac.uk/study/undergraduate international fees 2026 2027 IELTS 6.5 deadline UCAS 2027 ...
+web search: 
+web search: site:southampton.ac.uk/study/undergraduate/courses "International" "2026/27" tuition fees ...
+web search: 
+web search: site:ucas.com 2027 entry equal consideration deadline 13 January 2027 ...
+codex
+{"universities":[{"id":"1a7adfa9-9e53-5a4c-888c-8f76fa8e1125","english":[{"test":"IELTS","minimum":6,"detail":"Lowest listed entry band; required band varies by course.","source_url":"https://www.southampton.ac.uk/international/english-language-requirements/test-band-scores"}],"tuition":null,"application_fee":null,"deadlines":[{"title":"2027 entry equal consideration deadline","due_at":"2027-01-13","route":"UCAS","source_url":"https://www.ucas.com/events/2027-entry-deadline-for-all-undergraduate-courses-except-those-with-a-15-october-deadline-475546"}],"sat":null,"acceptance_rate":null,"notes":""},{"id":"75f1a39c-5876-5365-a4e5-4f8190028c13","english":[{"test":"IELTS","minimum":6.5,"detail":"Meets Sweden's general English 6/English Level 2 requirement for bachelor's programmes.","source_url":"https://www.universityadmissions.se/en/entry-requirements/english-language-requirements/"}],"tuition":null,"application_fee":{"amount":900,"currency":"SEK","source_url":"https://www.universityadmissions.se/en/apply-to-bachelors/pay-your-application-fee-non-eu-eea-bachelors/"},"deadlines":[{"title":"Autumn 2027 application deadline","due_at":"2027-01-15","route":"Universityadmissions.se","source_url":"https://www.uu.se/en/study/bachelors-studies/application/application-guide"},{"title":"Autumn 2027 supporting documents and fee deadline","due_at":"2027-02-01","route":"Universityadmissions.se","source_url":"https://www.uu.se/4.41391c7218529c3085a70e.html"}],"sat":null,"acceptance_rate":null,"notes":"Tuition varies by programme; check the chosen programme's fee."},{"id":"eacacd15-de55-5ef0-b874-54d46d92b26c","english":[{"test":"IELTS","minimum":6.5,"detail":"General undergraduate minimum; writing 6.0. Some courses require higher scores.","source_url":"https://www.uts.edu.au/for-students/admissions-entry/eligibility/english-language-requirements"},{"test":"TOEFL iBT","minimum":79,"detail":"General undergraduate minimum; writing 21. Some courses require higher scores.","source_url":"https://www.uts.edu.au/for-students/admissions-entry/eligibility/english-language-requirements"},{"test":"PTE Academic","minimum":58,"detail":"General undergraduate minimum; writing 50. Some courses require higher scores.","source_url":"https://www.uts.edu.au/for-students/admissions-entry/eligibility/english-language-requirements"}],"tuition":null,"application_fee":{"amount":100,"currency":"AUD","source_url":"https://www.uts.edu.au/undergraduate-application-form-international-students"},"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"Tuition varies by course."},{"id":"414b011a-c052-5872-b787-f47af96a0c8d","english":[],"tuition":null,"application_fee":null,"deadlines":[{"title":"2027/28 engineering enrolment preference deadline","due_at":"2027-07-22","route":"University portal","source_url":"https://www.polimi.it/en/prospective-students/how-to-apply/admission-to-laurea-programmes/engineering/enrolment"}],"sat":null,"acceptance_rate":null,"notes":"Admission and enrolment dates vary by programme and school."}]}
+tokens used
+53,230
+{"universities":[{"id":"1a7adfa9-9e53-5a4c-888c-8f76fa8e1125","english":[{"test":"IELTS","minimum":6,"detail":"Lowest listed entry band; required band varies by course.","source_url":"https://www.southampton.ac.uk/international/english-language-requirements/test-band-scores"}],"tuition":null,"application_fee":null,"deadlines":[{"title":"2027 entry equal consideration deadline","due_at":"2027-01-13","route":"UCAS","source_url":"https://www.ucas.com/events/2027-entry-deadline-for-all-undergraduate-courses-except-those-with-a-15-october-deadline-475546"}],"sat":null,"acceptance_rate":null,"notes":""},{"id":"75f1a39c-5876-5365-a4e5-4f8190028c13","english":[{"test":"IELTS","minimum":6.5,"detail":"Meets Sweden's general English 6/English Level 2 requirement for bachelor's programmes.","source_url":"https://www.universityadmissions.se/en/entry-requirements/english-language-requirements/"}],"tuition":null,"application_fee":{"amount":900,"currency":"SEK","source_url":"https://www.universityadmissions.se/en/apply-to-bachelors/pay-your-application-fee-non-eu-eea-bachelors/"},"deadlines":[{"title":"Autumn 2027 application deadline","due_at":"2027-01-15","route":"Universityadmissions.se","source_url":"https://www.uu.se/en/study/bachelors-studies/application/application-guide"},{"title":"Autumn 2027 supporting documents and fee deadline","due_at":"2027-02-01","route":"Universityadmissions.se","source_url":"https://www.uu.se/4.41391c7218529c3085a70e.html"}],"sat":null,"acceptance_rate":null,"notes":"Tuition varies by programme; check the chosen programme's fee."},{"id":"eacacd15-de55-5ef0-b874-54d46d92b26c","english":[{"test":"IELTS","minimum":6.5,"detail":"General undergraduate minimum; writing 6.0. Some courses require higher scores.","source_url":"https://www.uts.edu.au/for-students/admissions-entry/eligibility/english-language-requirements"},{"test":"TOEFL iBT","minimum":79,"detail":"General undergraduate minimum; writing 21. Some courses require higher scores.","source_url":"https://www.uts.edu.au/for-students/admissions-entry/eligibility/english-language-requirements"},{"test":"PTE Academic","minimum":58,"detail":"General undergraduate minimum; writing 50. Some courses require higher scores.","source_url":"https://www.uts.edu.au/for-students/admissions-entry/eligibility/english-language-requirements"}],"tuition":null,"application_fee":{"amount":100,"currency":"AUD","source_url":"https://www.uts.edu.au/undergraduate-application-form-international-students"},"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"Tuition varies by course."},{"id":"414b011a-c052-5872-b787-f47af96a0c8d","english":[],"tuition":null,"application_fee":null,"deadlines":[{"title":"2027/28 engineering enrolment preference deadline","due_at":"2027-07-22","route":"University portal","source_url":"https://www.polimi.it/en/prospective-students/how-to-apply/admission-to-laurea-programmes/engineering/enrolment"}],"sat":null,"acceptance_rate":null,"notes":"Admission and enrolment dates vary by programme and school."}]}

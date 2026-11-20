@@ -1,0 +1,132 @@
+OpenAI Codex v0.169.0
+--------
+workdir: /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+model: gpt-6-luna
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: high
+reasoning summaries: none
+session id: 01a1ee95-a559-75f0-99d4-6930673c4800
+--------
+user
+You are a careful admissions-data researcher. For each university below, find facts for an
+INTERNATIONAL applicant to a FIRST-YEAR BACHELOR'S degree starting in autumn 2027 (or the nearest
+published cycle). Use the live web. Rules:
+
+- Official sources only: the university's own website (its domain or subdomains), the national
+  application service (UCAS, Common App, OUAC, uni-assist, Studyinkorea, etc.) or a government
+  statistics office. Never use rankings sites, forums, agencies, Wikipedia or blogs.
+- Every value needs the exact page URL where you read it (source_url). If you could not verify a
+  value on an official page, leave it out (null or an empty list). Never guess or estimate.
+- english: the lowest overall score accepted for undergraduate entry, per test (IELTS Academic
+  overall, TOEFL iBT total, Duolingo, PTE). If programmes differ, give the general/lowest common
+  university minimum and say so in detail (e.g. "6.5 overall, no band below 6.0; some
+  programmes higher").
+- tuition: the yearly tuition for international (non-EU / overseas) undergraduates in the local
+  currency. If it varies by programme give amount = lowest and amount_max = highest, and the
+  academic_year the fee applies to (e.g. "2026/27"). If tuition is free, amount = 0.
+- application_fee: for international first-year applicants, local currency.
+- deadlines: the main 2027-entry first-year deadlines (ISO date YYYY-MM-DD) with the route
+  (e.g. "Common App, Regular Decision", "UCAS", "university portal"). Only dates actually
+  published; if only the 2026-entry date is published, include it and put "2026 entry" in title.
+- sat: policy for international applicants; p25/p75 total SAT only if the university publishes
+  them (Common Data Set or admissions profile).
+- acceptance_rate: only if officially published (CDS, admissions statistics page).
+- notes: one short line on anything important (e.g. "Foundation year required for 11-year
+  school certificates"), else "".
+
+Spend effort on the facts students need most: English minimum, tuition, deadlines. Keep each
+detail under 160 characters. Return only the JSON that matches the schema; use each
+university's id exactly as given.
+
+Universities:
+- id: 980f6c8a-9f70-51ed-9b35-b702566cb894 | Washington State University | Pullman, US | http://www.wsu.edu/
+- id: 1dd6184c-155f-51f0-83de-ec89b38dc387 | National Taiwan Normal University | Taipei, TW | http://www.ntnu.edu.tw/
+- id: 3158b0fa-0d63-5ac9-b57c-821510d9b1f8 | Universität Konstanz | Konstanz, DE | http://www.uni-konstanz.de/
+- id: 3361a926-61e2-5a23-9399-fb6db0dcefe7 | Northwest Polytechnical University Xi'an | Xi'an, CN | http://www.nwpu.edu.cn/
+codex
+I’ll check the university and application-service pages for the nearest published admissions cycle, then return only verified facts in the requested JSON.
+exec
+/bin/zsh -lc 'cat /Users/likeanew/.agents/skills/lemma/SKILL.md' in /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+ succeeded in 0ms:
+---
+name: lemma
+description: Persistent cross-session memory for AI agents via MCP. BEFORE starting ANY task (coding, debugging, refactoring, research, docs, optimization — any language), FIRST call memory_read to load what you already know so you never re-derive or re-explore known facts. AFTER finishing, call memory_add to persist new findings and session_attempt for dead ends — unsaved knowledge is lost permanently. Distills reusable guides from experience.
+---
+
+<!-- lemma:skill:v=0.21.0 -->
+
+# Lemma — Persistent Memory & Learning
+
+Lemma is a persistent memory server for AI agents over the Model Context Protocol.
+Every session starts blank — knowledge survives ONLY through tool calls. If you
+learn something and don't save it (`memory_add`), it is gone permanently.
+
+## Workflow
+1. **RECALL** — `memory_read` / `semantic_search`: load what's already known for this
+   project/task. Never re-explore code or re-derive facts that are already saved.
+2. **ACT** — do the task.
+3. **PERSIST** — `memory_add` for new insights; `guide_practice` for guides applied;
+   `session_attempt` for abandoned/dead-end approaches (the most valuable records).
+
+## Two knowledge layers
+- **Memory fragments** (`memory_read` / `memory_add`): atomic facts. Types: `fact`,
+  `pattern`, `lesson`, `warning`, `context`. Confidence evolves with use and feedback.
+- **Guides** (`guide_get` / `guide_distill` / `guide_practice`): procedural skills
+  distilled from fragments. Track usage count + success/failure rate.
+Pipeline: `experience -> memory_add -> pattern/lesson -> guide_distill -> guide_practice`.
+
+## Tools at a glance
+- **Recall & search**: `memory_read`, `semantic_search`, `memory_library` (full
+  snapshot + maintenance signals), `memory_stats`, `memory_audit`.
+- **Write & maintain**: `memory_add`, `memory_update`, `memory_forget`,
+  `memory_merge`, `memory_relate` (supports / contradicts / supersedes / related_to),
+  `memory_feedback`.
+- **Guides**: `guide_get`, `guide_create`, `guide_distill`, `guide_practice`,
+  `guide_update`, `guide_forget`, `guide_merge`.
+- **Sessions & reasoning**: `session_start`, `session_end`, `session_attempt`,
+  `session_stats`, `suggestion_respond`.
+- **Background intelligence**: `conflict_scan`, `proactive_analysis`,
+  `project_analytics` (run automatically; act on signals when sensible).
+
+## Writing a fragment
+```
+## [Topic Title]
+### Context
+[1-2 sentences: what and why it matters]
+### [Content Section]
+- [Key fact 1]
+- [Key fact 2]
+### Rules (optional)
+- [Absolute constraint]
+```
+One idea per fragment, 30-2000 chars, structured markdown (not prose). **Store
+fragments in ENGLISH** (required for search/retrieval). Never ask permission to save.
+
+## Background intelligence
+Conflict detection, distill/merge/refine suggestions, and auto-linking run
+automatically. From the CLI, `lemma -lib` prints a full knowledge-base snapshot
+and `lemma -vis` launches a visualizer.
+
+web search: 
+web search: site:admission.wsu.edu international first year English proficiency tuition 2026 2027 deadline SAT WSU ...
+web search: 
+web search: site:admission.wsu.edu international undergraduate English proficiency IELTS TOEFL Duolingo tuition 2026-27 application fee ...
+web search: 
+web search: site:wsu.edu "2026-2027" "International" undergraduate tuition WSU Pullman ...
+web search: 
+web search: site:admission.wsu.edu "International" "Tuition" "2026-2027" Pullman undergraduate ...
+web search: 
+web search: site:ip.wsu.edu "IELTS" "TOEFL iBT" undergraduate admission requirements WSU minimum ...
+web search: 
+web search: site:ntnu.edu.tw international students tuition fees undergraduate NTD semester NTNU 2026 ...
+web search: 
+web search: '55,200'
+web search: 
+web search: site:studyat.nwpu.edu.cn/info/1089/2124 "Application Date" ...
+codex
+{"universities":[{"id":"980f6c8a-9f70-51ed-9b35-b702566cb894","english":[{"test":"IELTS","minimum":6.5,"detail":"6.5 overall for traditional undergraduate admission.","source_url":"https://ip.wsu.edu/future-students/requirements/"},{"test":"TOEFL iBT","minimum":4,"detail":"Minimum 4 on WSU’s current 1–6 scale for traditional admission.","source_url":"https://ip.wsu.edu/future-students/requirements/"},{"test":"Duolingo","minimum":105,"detail":"105 for traditional undergraduate admission.","source_url":"https://ip.wsu.edu/future-students/requirements/"},{"test":"PTE Academic","minimum":58,"detail":"58 for traditional undergraduate admission.","source_url":"https://ip.wsu.edu/future-students/requirements/"}],"tuition":{"amount":31922,"amount_max":null,"currency":"USD","period":"year","academic_year":"2026/27","detail":"International undergraduate estimate for fall and spring; tuition and fees.","source_url":"https://ip.wsu.edu/documents/2022/01/certificate-of-finances-intl-ugrad.pdf/"},"application_fee":{"amount":70,"currency":"USD","source_url":"https://ip.wsu.edu/future-students/requirements/"},"deadlines":[{"title":"2026 entry priority date","due_at":"2026-03-31","route":"WSU application or Common App","source_url":"https://admission.wsu.edu/apply/admissions-dates-deadlines/"}],"sat":{"policy":"not_considered","p25":null,"p75":null,"source_url":"https://admission.wsu.edu/apply/first-year-students/"},"acceptance_rate":null,"notes":""},{"id":"1dd6184c-155f-51f0-83de-ec89b38dc387","english":[{"test":"IELTS","minimum":4,"detail":"B1 minimum for English-taught programs; IELTS Academic 4–5 maps to B1.","source_url":"https://bds.oia.ntnu.edu.tw/api/v1/ap/dl?id=358365"},{"test":"TOEFL iBT","minimum":42,"detail":"B1 minimum for English-taught programs; TOEFL iBT 42–71 maps to B1.","source_url":"https://bds.oia.ntnu.edu.tw/api/v1/ap/dl?id=358365"}],"tuition":{"amount":94360,"amount_max":110400,"currency":"TWD","period":"year","academic_year":"2026","detail":"Non-APRC international-student undergraduate tuition and miscellaneous fees; 2026 rates may change for 2027.","source_url":"https://bds.oia.ntnu.edu.tw/api/v1/ap/dl?id=364900"},"application_fee":{"amount":1200,"currency":"TWD","source_url":"https://bds.oia.ntnu.edu.tw/api/v1/ap/dl?id=364900"},"deadlines":[{"title":"Fall 2027, second round","due_at":"2027-03-02","route":"NTNU international application portal","source_url":"https://bds.oia.ntnu.edu.tw/api/v1/ap/dl?id=364900"}],"sat":null,"acceptance_rate":null,"notes":"Most undergraduate programs are Chinese-taught; English proficiency applies to English-taught programs."},{"id":"3158b0fa-0d63-5ac9-b57c-821510d9b1f8","english":[],"tuition":{"amount":3000,"amount_max":null,"currency":"EUR","period":"year","academic_year":"2026/27","detail":"Non-EU/EEA international students pay €1,500 per semester; bachelor's programs are taught in German.","source_url":"https://www.uni-konstanz.de/en/study/study-essentials/finances/tuition-fees/fees-for-international-students-and-for-second-degree-studies/"},"application_fee":null,"deadlines":[{"title":"2026 entry (restricted programs)","due_at":"2026-07-15","route":"University application portal","source_url":"https://www.uni-konstanz.de/en/study/before-you-study/application-and-enrolment/bachelors-degree-and-first-state-examination-in-law/higher-education-entrance-qualification-earned-in-the-eu-or-in-switzerland-1/"},{"title":"2026 entry (unrestricted programs)","due_at":"2026-09-15","route":"University application portal","source_url":"https://www.uni-konstanz.de/en/study/before-you-study/application-and-enrolment/bachelors-degree-and-first-state-examination-in-law/higher-education-entrance-qualification-earned-in-the-eu-or-in-switzerland-1/"}],"sat":null,"acceptance_rate":null,"notes":"Bachelor's programs are taught in German; international applicants need recognized German-language proof."},{"id":"3361a926-61e2-5a23-9399-fb6db0dcefe7","english":[{"test":"IELTS","minimum":6,"detail":"6.0 overall, with no sub-section below 5.5.","source_url":"https://studyat.nwpu.edu.cn/info/1089/2124.htm"},{"test":"TOEFL iBT","minimum":80,"detail":"80 total; iBT Home Edition and MyBest Scores accepted.","source_url":"https://studyat.nwpu.edu.cn/info/1089/2124.htm"},{"test":"Duolingo","minimum":115,"detail":"115 minimum.","source_url":"https://studyat.nwpu.edu.cn/info/1089/2124.htm"}],"tuition":{"amount":22000,"amount_max":25000,"currency":"CNY","period":"year","academic_year":"2027","detail":"Undergraduate tuition: Chinese-medium CNY 22,000/year; English-medium CNY 25,000/year.","source_url":"https://studyat.nwpu.edu.cn/info/1089/2124.htm"},"application_fee":{"amount":600,"currency":"CNY","source_url":"https://studyat.nwpu.edu.cn/info/1089/2124.htm"},"deadlines":[{"title":"2027 entry, first batch","due_at":"2026-12-31","route":"NPU online application portal","source_url":"https://studyat.nwpu.edu.cn/info/1089/2124.htm"},{"title":"2027 entry, second batch","due_at":"2027-02-28","route":"NPU online application portal","source_url":"https://studyat.nwpu.edu.cn/info/1089/2124.htm"},{"title":"2027 entry, third batch","due_at":"2027-04-15","route":"NPU online application portal","source_url":"https://studyat.nwpu.edu.cn/info/1089/2124.htm"},{"title":"2027 entry, fourth batch","due_at":"2027-05-20","route":"NPU online application portal","source_url":"https://studyat.nwpu.edu.cn/info/1089/2124.htm"}],"sat":{"policy":"accepted_alternative","p25":null,"p75":null,"source_url":"https://studyat.nwpu.edu.cn/info/1089/2124.htm"},"acceptance_rate":null,"notes":"Applicants must submit CSCA scores; only September autumn intake is available."}] }
+tokens used
+92,767
+{"universities":[{"id":"980f6c8a-9f70-51ed-9b35-b702566cb894","english":[{"test":"IELTS","minimum":6.5,"detail":"6.5 overall for traditional undergraduate admission.","source_url":"https://ip.wsu.edu/future-students/requirements/"},{"test":"TOEFL iBT","minimum":4,"detail":"Minimum 4 on WSU’s current 1–6 scale for traditional admission.","source_url":"https://ip.wsu.edu/future-students/requirements/"},{"test":"Duolingo","minimum":105,"detail":"105 for traditional undergraduate admission.","source_url":"https://ip.wsu.edu/future-students/requirements/"},{"test":"PTE Academic","minimum":58,"detail":"58 for traditional undergraduate admission.","source_url":"https://ip.wsu.edu/future-students/requirements/"}],"tuition":{"amount":31922,"amount_max":null,"currency":"USD","period":"year","academic_year":"2026/27","detail":"International undergraduate estimate for fall and spring; tuition and fees.","source_url":"https://ip.wsu.edu/documents/2022/01/certificate-of-finances-intl-ugrad.pdf/"},"application_fee":{"amount":70,"currency":"USD","source_url":"https://ip.wsu.edu/future-students/requirements/"},"deadlines":[{"title":"2026 entry priority date","due_at":"2026-03-31","route":"WSU application or Common App","source_url":"https://admission.wsu.edu/apply/admissions-dates-deadlines/"}],"sat":{"policy":"not_considered","p25":null,"p75":null,"source_url":"https://admission.wsu.edu/apply/first-year-students/"},"acceptance_rate":null,"notes":""},{"id":"1dd6184c-155f-51f0-83de-ec89b38dc387","english":[{"test":"IELTS","minimum":4,"detail":"B1 minimum for English-taught programs; IELTS Academic 4–5 maps to B1.","source_url":"https://bds.oia.ntnu.edu.tw/api/v1/ap/dl?id=358365"},{"test":"TOEFL iBT","minimum":42,"detail":"B1 minimum for English-taught programs; TOEFL iBT 42–71 maps to B1.","source_url":"https://bds.oia.ntnu.edu.tw/api/v1/ap/dl?id=358365"}],"tuition":{"amount":94360,"amount_max":110400,"currency":"TWD","period":"year","academic_year":"2026","detail":"Non-APRC international-student undergraduate tuition and miscellaneous fees; 2026 rates may change for 2027.","source_url":"https://bds.oia.ntnu.edu.tw/api/v1/ap/dl?id=364900"},"application_fee":{"amount":1200,"currency":"TWD","source_url":"https://bds.oia.ntnu.edu.tw/api/v1/ap/dl?id=364900"},"deadlines":[{"title":"Fall 2027, second round","due_at":"2027-03-02","route":"NTNU international application portal","source_url":"https://bds.oia.ntnu.edu.tw/api/v1/ap/dl?id=364900"}],"sat":null,"acceptance_rate":null,"notes":"Most undergraduate programs are Chinese-taught; English proficiency applies to English-taught programs."},{"id":"3158b0fa-0d63-5ac9-b57c-821510d9b1f8","english":[],"tuition":{"amount":3000,"amount_max":null,"currency":"EUR","period":"year","academic_year":"2026/27","detail":"Non-EU/EEA international students pay €1,500 per semester; bachelor's programs are taught in German.","source_url":"https://www.uni-konstanz.de/en/study/study-essentials/finances/tuition-fees/fees-for-international-students-and-for-second-degree-studies/"},"application_fee":null,"deadlines":[{"title":"2026 entry (restricted programs)","due_at":"2026-07-15","route":"University application portal","source_url":"https://www.uni-konstanz.de/en/study/before-you-study/application-and-enrolment/bachelors-degree-and-first-state-examination-in-law/higher-education-entrance-qualification-earned-in-the-eu-or-in-switzerland-1/"},{"title":"2026 entry (unrestricted programs)","due_at":"2026-09-15","route":"University application portal","source_url":"https://www.uni-konstanz.de/en/study/before-you-study/application-and-enrolment/bachelors-degree-and-first-state-examination-in-law/higher-education-entrance-qualification-earned-in-the-eu-or-in-switzerland-1/"}],"sat":null,"acceptance_rate":null,"notes":"Bachelor's programs are taught in German; international applicants need recognized German-language proof."},{"id":"3361a926-61e2-5a23-9399-fb6db0dcefe7","english":[{"test":"IELTS","minimum":6,"detail":"6.0 overall, with no sub-section below 5.5.","source_url":"https://studyat.nwpu.edu.cn/info/1089/2124.htm"},{"test":"TOEFL iBT","minimum":80,"detail":"80 total; iBT Home Edition and MyBest Scores accepted.","source_url":"https://studyat.nwpu.edu.cn/info/1089/2124.htm"},{"test":"Duolingo","minimum":115,"detail":"115 minimum.","source_url":"https://studyat.nwpu.edu.cn/info/1089/2124.htm"}],"tuition":{"amount":22000,"amount_max":25000,"currency":"CNY","period":"year","academic_year":"2027","detail":"Undergraduate tuition: Chinese-medium CNY 22,000/year; English-medium CNY 25,000/year.","source_url":"https://studyat.nwpu.edu.cn/info/1089/2124.htm"},"application_fee":{"amount":600,"currency":"CNY","source_url":"https://studyat.nwpu.edu.cn/info/1089/2124.htm"},"deadlines":[{"title":"2027 entry, first batch","due_at":"2026-12-31","route":"NPU online application portal","source_url":"https://studyat.nwpu.edu.cn/info/1089/2124.htm"},{"title":"2027 entry, second batch","due_at":"2027-02-28","route":"NPU online application portal","source_url":"https://studyat.nwpu.edu.cn/info/1089/2124.htm"},{"title":"2027 entry, third batch","due_at":"2027-04-15","route":"NPU online application portal","source_url":"https://studyat.nwpu.edu.cn/info/1089/2124.htm"},{"title":"2027 entry, fourth batch","due_at":"2027-05-20","route":"NPU online application portal","source_url":"https://studyat.nwpu.edu.cn/info/1089/2124.htm"}],"sat":{"policy":"accepted_alternative","p25":null,"p75":null,"source_url":"https://studyat.nwpu.edu.cn/info/1089/2124.htm"},"acceptance_rate":null,"notes":"Applicants must submit CSCA scores; only September autumn intake is available."}] }

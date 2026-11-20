@@ -1,270 +1,94 @@
 "use client";
-import { useLiquidGlass } from "./use-liquid-glass";
-import { useState } from "react";
-import { ArrowUpRight, GraduationCap, Search } from "lucide-react";
+import { useMemo, useState } from "react";
+import { ArrowUpRight, Search } from "lucide-react";
 import type { University } from "@/lib/domain";
-import {
-  discoverPrograms,
-  programLetter,
-  programListings,
-} from "@/lib/program-discovery";
+import { universityEnrichment } from "@/lib/university-enrichment";
+import { discoverPrograms, programListings, type ProgramListing } from "@/lib/program-discovery";
+import type { ExtraProgramme } from "@/server/profile-extras";
+import { useT } from "./i18n";
 
-export function ProgramLibrary({ university: u }: { university: University }) {
-  const glass = useLiquidGlass<HTMLDivElement>();
-  const all = programListings(u);
-  const [query, setQuery] = useState(""),
-    [degree, setDegree] = useState(""),
-    [origin, setOrigin] = useState(
-      all.some((p) => p.origin === "official") ? "official" : "",
-    ),
-    [letter, setLetter] = useState(""),
-    [page, setPage] = useState(1);
-  const filtered = discoverPrograms(all, { query, degree, origin, letter: "" });
-  const letters = [
-    ...new Set(filtered.map((p) => programLetter(p.name))),
-  ].sort();
-  const rows = discoverPrograms(filtered, {
-    query: "",
-    degree: "",
-    origin: "",
-    letter,
-  });
-  const pages = Math.max(1, Math.ceil(rows.length / 24));
-  const current = Math.min(page, pages);
-  const shown = rows.slice((current - 1) * 24, current * 24);
-  const directory = u.official_web?.links.programs?.url || u.website;
-  const reset = () => {
-    setQuery("");
-    setDegree("");
-    setOrigin("");
-    setLetter("");
-    setPage(1);
-  };
+const PAGE = 12;
+
+/** Programmes: the official listings, the reviewed extras and the reported
+ * qualifications in one searchable list, filtered by degree level. */
+export function ProgramLibrary({ university: u, extras }: { university: University; extras: ExtraProgramme[] }) {
+  const t = useT();
+  const [query, setQuery] = useState("");
+  const [level, setLevel] = useState("");
+  const [limit, setLimit] = useState(PAGE);
+  const all = useMemo(() => {
+    const listings = programListings(u, universityEnrichment(u)?.programmes);
+    const known = new Set(listings.map((p) => p.name.toLowerCase()));
+    const added: ProgramListing[] = extras
+      .filter((p) => !known.has(p.name.toLowerCase()))
+      .map((p, i) => ({
+        id: "extra:" + i + p.name, name: p.name, level: p.level, qualification: p.level, origin: "official",
+        url: p.url, checked: p.checked_at ?? undefined, duration: p.years ? t("up.prog.years", { n: p.years }) : undefined, language: p.language,
+      }));
+    const merged = [...listings, ...added];
+    // A generic level ("Undergraduate major") next to a named one for the same programme is a duplicate.
+    const named = new Set(merged.filter((p) => /^(Bachelor|Master|Doctoral|Associate|Certificate)/.test(p.level)).map((p) => p.name.toLowerCase()));
+    return merged.filter((p) => /^(Bachelor|Master|Doctoral|Associate|Certificate)/.test(p.level) || !named.has(p.name.toLowerCase()));
+  }, [u, extras, t]);
+  const levels = useMemo(() => [...new Set(all.map((p) => p.level))].sort(), [all]);
+  const rows = useMemo(() => {
+    const found = discoverPrograms(all, { query, degree: level, origin: "", letter: "" });
+    // Current listings first, then reported awards by size.
+    return [...found.filter((p) => p.origin === "official"), ...found.filter((p) => p.origin === "reported").sort((a, b) => (b.completions ?? 0) - (a.completions ?? 0))];
+  }, [all, query, level]);
+  if (!all.length) return null;
   return (
-    <section
-      className="profile-library program-library"
-      aria-labelledby="program-library-heading"
-    >
-      <div className="program-library-heading">
-        <div>
-          <h2 id="program-library-heading">Programs</h2>
-          <p>
-            Find a subject and degree level, then open the university’s listing
-            for requirements and intake details.
-          </p>
-        </div>
-        {directory && (
-          <a
-            className="button button-secondary"
-            href={directory}
-            target="_blank"
-            rel="noreferrer"
-          >
-            University directory <ArrowUpRight size={15} />
-          </a>
+    <div className="up-programmes">
+      <div className="up-prog-tools">
+        <label className="up-search">
+          <Search size={15} aria-hidden="true" />
+          <input type="search" value={query} placeholder={t("up.prog.search")} aria-label={t("up.prog.search")} onChange={(e) => { setQuery(e.target.value); setLimit(PAGE); }} />
+        </label>
+        {levels.length > 1 && (
+          <div className="up-chips" role="group" aria-label={t("up.prog.level")}>
+            {["", ...levels].map((l) => (
+              <button key={l || "all"} type="button" aria-pressed={level === l} onClick={() => { setLevel(l); setLimit(PAGE); }}>
+                {l || t("up.prog.all")}
+              </button>
+            ))}
+          </div>
         )}
       </div>
-      {all.length ? (
-        <>
-          <div ref={glass} data-glass="rim" className="program-filter-bar">
-            <label>
-              <span>
-                <Search size={15} aria-hidden="true" />
-                Search programs
-              </span>
-              <input
-                className="filter-input"
-                placeholder="Program or qualification"
-                value={query}
-                onChange={(e) => {
-                  setQuery(e.target.value);
-                  setLetter("");
-                  setPage(1);
-                }}
-              />
-            </label>
-            <label>
-              <span>Degree level</span>
-              <select
-                value={degree}
-                onChange={(e) => {
-                  setDegree(e.target.value);
-                  setLetter("");
-                  setPage(1);
-                }}
-              >
-                <option value="">All degree levels</option>
-                {[...new Set(all.map((p) => p.level))].sort().map((level) => (
-                  <option key={level}>{level}</option>
-                ))}
-              </select>
-            </label>
-            <label>
-              <span>Listing type</span>
-              <select
-                value={origin}
-                onChange={(e) => {
-                  setOrigin(e.target.value);
-                  setLetter("");
-                  setPage(1);
-                }}
-              >
-                <option value="">All records</option>
-                <option value="official">Official program listings</option>
-                <option value="reported">Reported qualifications</option>
-              </select>
-            </label>
-          </div>
-          <p className="program-result-count" role="status">
-            {rows.length.toLocaleString()} matching records · A–Z order
-          </p>
-          <nav
-            className="program-alphabet"
-            aria-label="Filter programs by first letter"
-          >
-            <button
-              aria-pressed={!letter}
-              onClick={() => {
-                setLetter("");
-                setPage(1);
-              }}
-            >
-              All
-            </button>
-            {letters.map((l) => (
-              <button
-                key={l}
-                aria-pressed={letter === l}
-                onClick={() => {
-                  setLetter(l);
-                  setPage(1);
-                }}
-              >
-                {l}
-              </button>
-            ))}
-          </nav>
-          {origin !== "official" &&
-            all.some((p) => p.origin === "reported") && (
-              <p className="reference-note">
-                Reported qualifications describe completed awards in the
-                installed IPEDS release. They do not confirm current
-                availability. Check the university directory for open intakes.
-              </p>
-            )}
-          <div className="program-results">
-            {[...new Set(shown.map((p) => programLetter(p.name)))].map((l) => (
-              <section
-                key={l}
-                className="program-letter-group"
-                aria-label={"Programs starting with " + l}
-              >
-                <h3>{l}</h3>
-                <ul>
-                  {shown
-                    .filter((p) => programLetter(p.name) === l)
-                    .map((p) => (
-                      <li key={p.id}>
-                        <div className="program-row-title">
-                          <GraduationCap size={18} aria-hidden="true" />
-                          <div>
-                            {p.url ? (
-                              <a href={p.url} target="_blank" rel="noreferrer">
-                                {p.name}
-                                <ArrowUpRight size={14} aria-hidden="true" />
-                              </a>
-                            ) : (
-                              <strong>{p.name}</strong>
-                            )}
-                            <span>
-                              {p.level}
-                              {p.qualification !== p.level
-                                ? " · " + p.qualification
-                                : ""}
-                            </span>
-                          </div>
-                        </div>
-                        <div className="program-record-detail">
-                          <span>
-                            {p.origin === "official"
-                              ? "Official listing"
-                              : "Reported qualification"}
-                          </span>
-                          <small>
-                            {p.origin === "official"
-                              ? "Checked " + (p.checked || "date not supplied")
-                              : p.year +
-                                " · " +
-                                p.completions?.toLocaleString() +
-                                " completions"}
-                          </small>
-                          <span>
-                            {p.origin === "official"
-                              ? "Confirm intake on program page"
-                              : "Current availability not confirmed"}
-                          </span>
-                          {p.sourceURL && (
-                            <a
-                              href={p.sourceURL}
-                              target="_blank"
-                              rel="noreferrer"
-                            >
-                              IPEDS source file{" "}
-                              <ArrowUpRight size={12} aria-hidden="true" />
-                            </a>
-                          )}
-                        </div>
-                      </li>
-                    ))}
-                </ul>
-              </section>
-            ))}
-          </div>
-          {!rows.length && (
-            <div className="program-empty">
-              <h3>No programs match these filters.</h3>
-              <p>Try another name, degree level or listing type.</p>
-              <button className="text-link" onClick={reset}>
-                Reset program filters
-              </button>
-            </div>
-          )}
-          {pages > 1 && (
-            <nav
-              className="library-pagination"
-              aria-label="Program result pages"
-            >
-              <button
-                className="button button-secondary"
-                disabled={current <= 1}
-                onClick={() => setPage(current - 1)}
-              >
-                ← Previous
-              </button>
-              <span>
-                {current} / {pages}
-              </span>
-              <button
-                className="button button-secondary"
-                disabled={current >= pages}
-                onClick={() => setPage(current + 1)}
-              >
-                Next →
-              </button>
-            </nav>
-          )}
-        </>
+      <p className="up-count" role="status">{t("up.prog.count", { n: rows.length.toLocaleString("en-US") })}</p>
+      {rows.length ? (
+        <ul className="up-prog-list">
+          {rows.slice(0, limit).map((p) => (
+            <li key={p.id}>
+              <div>
+                {p.url ? (
+                  <a href={p.url} target="_blank" rel="noreferrer">{p.name}<ArrowUpRight size={13} aria-hidden="true" /></a>
+                ) : (
+                  <strong>{p.name}</strong>
+                )}
+                <span>
+                  {[
+                    p.level,
+                    p.origin === "reported" && p.completions ? t("up.prog.graduates", { n: p.completions.toLocaleString("en-US"), year: p.year ?? "" }) : null,
+                    p.durationMonths ? (p.durationMonths % 12 === 0 ? t("up.prog.years", { n: p.durationMonths / 12 }) : null) : p.duration,
+                    p.language,
+                    p.intakes?.length ? p.intakes.join(", ") : null,
+                  ].filter(Boolean).join(" · ")}
+                </span>
+              </div>
+              {p.url && p.origin === "official" && (
+                <a className="up-src" href={p.sourceURL || p.url} target="_blank" rel="noreferrer">{t("up.source")}</a>
+              )}
+            </li>
+          ))}
+        </ul>
       ) : (
-        <div className="program-empty">
-          <GraduationCap size={24} aria-hidden="true" />
-          <h3>Start with the university’s program directory.</h3>
-          <p>
-            A named program list has not been linked here yet. Use the official
-            directory to check available bachelor’s, master’s and doctoral
-            programs, teaching language and application dates.
-          </p>
-        </div>
+        <p className="up-empty">{t("up.prog.none")}</p>
       )}
-    </section>
+      {rows.length > limit && (
+        <button type="button" className="up-more" onClick={() => setLimit((n) => n + PAGE * 2)}>
+          {t("up.prog.more")}
+        </button>
+      )}
+    </div>
   );
 }

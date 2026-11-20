@@ -3,7 +3,7 @@
 Unmatched and ambiguous rows remain in an audit file; never use fuzzy matches.
 Requires pypdf for the QS publisher PDF.
 """
-import collections, datetime, hashlib, html, json, pathlib, re, unicodedata
+import collections, datetime, hashlib, html, json, pathlib, re, unicodedata, runpy
 from pypdf import PdfReader
 from openpyxl import load_workbook
 ROOT=pathlib.Path(__file__).resolve().parents[2]; OUT=ROOT/'data/published'; RAW=ROOT/'data/raw/rankings'
@@ -60,6 +60,15 @@ arwu_ties=collections.Counter(r['ranking'] for r in arwu)
 for r in arwu:
  rank=r['ranking'];rank='='+rank if rank.isdigit() and arwu_ties[rank]>1 else rank
  add(r['univNameEn'],r['region'],'arwu',rank,'https://www.shanghairanking.com/institution/'+r['univUp'],r.get('score'),{name:r.get(code) for code,name in [('171','alumni'),('172','award'),('173','highly_cited_researchers'),('174','nature_science'),('175','publications'),('176','per_capita_performance')]},year=2026,national_rank=r['regionRanking'])
+# Current institutions can be incorrectly collapsed by a historical registry
+# alias. Apply only independently reviewed, exact source/identity corrections;
+# preserve every publisher fact and the original registry release.
+identity_review=json.loads((OUT/'reviewed-ranking-identities-oct10.json').read_text())
+reconcile_identity=runpy.run_path(str(ROOT/'scripts/ingestion/apply-reviewed-ranking-identities-oct10.py'))['reconcile']
+all_entries,_=reconcile_identity(all_entries,rows,identity_review)
+# Keep linked records as references to these corrected observations, so the
+# derived country positions below also reach the linked bundle on direct runs.
+entries=[r for r in all_entries if r['university_id'] is not None]
 # Publisher student snapshots have an edition, not a verified census year.
 matched_the={(r['name'],r['country']):r for r in entries if r['provider']=='the'}
 def numeric(v):
@@ -71,6 +80,8 @@ for r in the:
  if not match:continue
  intl=numeric(r.get('stats_pc_intl_students'))
  snapshots[match['university_id']]={'edition':2026,'subjects':[v.strip() for v in r.get('subjects_offered','').split(',') if v.strip()],'source_url':match['url'],'students':numeric(r.get('stats_number_students')),'student_staff_ratio':numeric(r.get('stats_student_staff_ratio')),'international_percent':intl if intl is not None and 0<=intl<=100 else None,'female_male_ratio':r.get('stats_female_male_ratio') if re.fullmatch(r'\d+\s*:\s*\d+',str(r.get('stats_female_male_ratio',''))) else None}
+reconcile_snapshots=runpy.run_path(str(ROOT/'scripts/ingestion/apply-reviewed-ranking-identities-oct10.py'))['reconcile_snapshots']
+snapshots,_=reconcile_snapshots(snapshots,the,entries,identity_review,'2026-09-28',hashlib.sha256((RAW/'the-2026.json').read_bytes()).hexdigest())
 (OUT/'publisher-students.json').write_text(json.dumps(snapshots,ensure_ascii=False,separators=(',',':'))+'\n')
 assert len(qs)>=490, f'QS parser lost rows: {len(qs)}'
 assert len(entries)>1000, f'Too few linked records: {len(entries)}'

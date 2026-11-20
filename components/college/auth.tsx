@@ -1,35 +1,60 @@
-/* eslint-disable @next/next/no-img-element -- Local editorial artwork. */
 "use client";
+import "./workspace-studio.css";
 import { useEffect, useRef, useState } from "react";
 import { useRouter, useSearchParams, usePathname } from "next/navigation";
 import Link from "next/link";
 import {
-  ArrowLeft,
   ArrowRight,
   Mail,
-  CheckCircle2,
   Eye,
   EyeOff,
   ShieldCheck,
+  ArrowLeft,
+  LockKeyhole,
+  LoaderCircle,
+  Database,
 } from "lucide-react";
 import { getSupabase } from "@/lib/supabase/client";
 import { safeNext } from "@/lib/domain";
 import { useCollege } from "./provider";
 import { Brand } from "./primitives";
-import { isStaffPath } from "@/lib/staff-route";
+import { isStaffPath, STAFF_PATH } from "@/lib/staff-route";
+import { isDashboardPath, postAuthDestination, writeSessionHint } from "@/lib/auth-navigation";
+import { authErrorKey } from "@/lib/auth-errors";
+import { AuthCodeStep } from "./auth-code-step";
+import { useI18n, useT } from "./i18n";
+import { HOME_FIRST, HOME_OTHER } from "./onboarding-steps";
+import { regionName } from "@/lib/region-name";
+import { AppearanceButton } from "./appearance-button";
+import "./auth-v2.css";
+import dynamic from "next/dynamic";
+// WebGL backdrop, purely decorative: loads after the page is interactive.
+const Aurora = dynamic(() => import("@/components/react-bits/Aurora"), { ssr: false });
 import type { AuthAvailability } from "@/lib/auth-availability";
-export function AuthForm() {
+export function AuthForm({ staffOnly = false }: { staffOnly?: boolean } = {}) {
   const s = useCollege(),
+    t = useT(),
     params = useSearchParams(),
     path = usePathname(),
     router = useRouter();
   const [email, setEmail] = useState(""),
     [password, setPassword] = useState(""),
-    [name, setName] = useState(""),
     [busy, setBusy] = useState(false),
     [error, setError] = useState(""),
-    [sent, setSent] = useState(false);
+    [codeFor, setCodeFor] = useState<{ kind: "email" | "signup" | "recovery"; email: string } | null>(null);
   const [showPassword, setShowPassword] = useState(false);
+  const [name, setName] = useState(""),
+    [country, setCountry] = useState(""),
+    // Sign-in is email + a 6-digit code by default; a password stays one click away.
+    [usePassword, setUsePassword] = useState(false);
+  const { lang } = useI18n();
+  const [capsLock, setCapsLock] = useState(false);
+  const submitting = useRef(false);
+  const awaitingNavigation = useRef(false);
+  const [authenticatedDestination, setAuthenticatedDestination] = useState<{
+    userId: string;
+    href: string;
+  } | null>(null);
   const [availability, setAvailability] = useState<AuthAvailability | null>(
     null,
   );
@@ -43,6 +68,8 @@ export function AuthForm() {
   };
   useEffect(() => {
     const controller = new AbortController();
+    let live = true;
+    const timeout = setTimeout(() => controller.abort(), 10000);
     fetch("/api/auth/providers", { signal: controller.signal })
       .then(async (response) => {
         if (response.ok)
@@ -53,9 +80,14 @@ export function AuthForm() {
       })
       .catch(() => {})
       .finally(() => {
-        if (!controller.signal.aborted) setProvidersChecked(true);
+        clearTimeout(timeout);
+        if (live) setProvidersChecked(true);
       });
-    return () => controller.abort();
+    return () => {
+      live = false;
+      clearTimeout(timeout);
+      controller.abort();
+    };
   }, []);
   const [returnTo, setReturnTo] = useState("/");
   useEffect(() => {
@@ -75,56 +107,122 @@ export function AuthForm() {
   const signup = path === "/auth/sign-up",
     forgot = path === "/auth/forgot-password",
     reset = path === "/auth/reset-password";
+  const codeMode = !signup && !forgot && !reset && !staffOnly && !usePassword;
   const next = safeNext(
-    params.get("next") ||
-      (!path?.startsWith("/auth/")
-        ? path + (params.toString() ? "?" + params.toString() : "")
-        : "/dashboard"),
+    staffOnly
+      ? isStaffPath(params.get("next")) &&
+        !params.get("next")?.includes("/sign-in")
+        ? params.get("next")!
+        : STAFF_PATH
+      : params.get("next") ||
+          (!path?.startsWith("/auth/")
+            ? path + (params.toString() ? "?" + params.toString() : "")
+            : "/dashboard"),
   );
   useEffect(() => {
-    setSent(false);
+    setCodeFor(null);
     setError("");
     setPassword("");
     setShowPassword(false);
+    setUsePassword(false);
+    setCapsLock(false);
+    setAuthenticatedDestination(null);
+    awaitingNavigation.current = false;
   }, [path]);
+  useEffect(() => {
+    if (
+      authenticatedDestination &&
+      s.authReady &&
+      s.user?.id === authenticatedDestination.userId
+    ) {
+      // Commit the signed-in context before the protected page renders. Navigating
+      // straight from the Auth response can race its anonymous-page redirect.
+      router.replace(authenticatedDestination.href);
+      setAuthenticatedDestination(null);
+    }
+  }, [authenticatedDestination, s.authReady, s.user?.id, router]);
+  // The proxy sends signed-out dashboard visits here. A visitor whose session
+  // was only missing its routing cookie is already signed in: send them back.
+  useEffect(() => {
+    if (
+      staffOnly ||
+      path !== "/auth/sign-in" ||
+      !s.authReady ||
+      !s.user ||
+      awaitingNavigation.current ||
+      !isDashboardPath(next.split(/[?#]/)[0])
+    )
+      return;
+    router.replace(next);
+  }, [staffOnly, path, s.authReady, s.user, next, router]);
+  const navigateAuthenticated = (userId: string, href: string) => {
+    awaitingNavigation.current = true;
+    setAuthenticatedDestination({ userId, href });
+  };
+  useEffect(() => {
+    if (!authenticatedDestination) return;
+    const timeout = setTimeout(() => {
+      awaitingNavigation.current = false;
+      submitting.current = false;
+      setAuthenticatedDestination(null);
+      setBusy(false);
+      setCodeFor(null);
+      setError(t("au.err.session"));
+    }, 10000);
+    return () => clearTimeout(timeout);
+  }, [authenticatedDestination, t]);
   const callback = () =>
     location.origin + "/auth/callback?next=" + encodeURIComponent(next);
-  const oauth = async (provider: "google" | "apple" | "custom:telegram") => {
+  const oauth = async (provider: "google" | "github" | "apple" | "custom:telegram") => {
+    if (submitting.current) return;
     const key = provider === "custom:telegram" ? "telegram" : provider;
-    if (!enabled[key]) {
-      setError(
-        `${key[0].toUpperCase() + key.slice(1)} sign-in is not available yet. Please use another sign-in method.`,
-      );
+    // GitHub is not in the availability report: it is tried, and "not enabled" is shown kindly.
+    if (key !== "github" && !enabled[key]) {
+      setError(t("au.err.unavailable"));
       return;
     }
     const db = getSupabase();
     if (!db) {
-      setError("Sign-in is temporarily unavailable. Please try again later.");
+      setError(t("au.err.unavailable"));
       return;
     }
     setBusy(true);
+    submitting.current = true;
     setError("");
     try {
-      const { error } = await db.auth.signInWithOAuth({
+      const { data, error } = await db.auth.signInWithOAuth({
         provider: provider as Parameters<
           typeof db.auth.signInWithOAuth
         >[0]["provider"],
-        options: { redirectTo: callback() },
+        options: { redirectTo: callback(), skipBrowserRedirect: provider === "github" },
       });
       if (error) throw error;
-    } catch {
-      setError("Could not start provider sign-in. Please try again.");
+      if (provider === "github" && data?.url) {
+        // Supabase answers a disabled provider with a JSON error page, so look first.
+        const probe = await fetch(data.url, { redirect: "manual" }).catch(() => null);
+        if (probe && probe.type !== "opaqueredirect" && probe.status === 400) {
+          const body = await probe.text().catch(() => "");
+          if (/not enabled|unsupported provider/i.test(body)) throw new Error("provider is not enabled");
+        }
+        location.assign(data.url);
+      }
+    } catch (err) {
+      const soon = key === "github" && /not enabled|unsupported provider/i.test(String((err as Error)?.message || ""));
+      setError(soon ? t("gh.soon") : t("au.err.provider", { name: key === "github" ? "GitHub" : key[0].toUpperCase() + key.slice(1) }));
       setBusy(false);
+      submitting.current = false;
     }
   };
   const submit = async (e: React.FormEvent, magic = false) => {
     e.preventDefault();
+    if (submitting.current) return;
     const db = getSupabase();
     if (!db) {
-      setError("Sign-in is temporarily unavailable. Please try again later.");
+      setError(t("au.err.unavailable"));
       return;
     }
     setBusy(true);
+    submitting.current = true;
     setError("");
     try {
       if (reset) {
@@ -137,34 +235,55 @@ export function AuthForm() {
             location.origin + "/auth/callback?next=/auth/reset-password",
         });
         if (error) throw error;
-        setSent(true);
-      } else if (magic) {
+        setCodeFor({ kind: "recovery", email: email.trim() });
+      } else if (magic || codeMode) {
+        // The email carries a 6-digit code and a link. New students are created
+        // here when sign-ups are open; the welcome questions follow.
         const { error } = await db.auth.signInWithOtp({
           email: email.trim(),
-          options: { emailRedirectTo: callback(), shouldCreateUser: false },
+          options: { emailRedirectTo: callback(), shouldCreateUser: enabled.signup },
         });
         if (error) throw error;
-        setSent(true);
+        setCodeFor({ kind: "email", email: email.trim() });
       } else if (signup) {
         const { data, error } = await db.auth.signUp({
           email: email.trim(),
           password,
           options: {
-            data: { full_name: name.trim() || null },
+            // The welcome questions start from these (profiles.display_name via the auth trigger).
+            data: { full_name: name.trim().slice(0, 120) || null, country: country || null },
             emailRedirectTo: callback(),
           },
         });
         if (error) throw error;
         if (data.session) {
-          router.replace(next);
-        } else setSent(true);
+          navigateAuthenticated(data.user!.id, next);
+        } else setCodeFor({ kind: "signup", email: email.trim() });
       } else {
-        const { error } = await db.auth.signInWithPassword({
+        const { data, error } = await db.auth.signInWithPassword({
           email: email.trim(),
           password,
         });
         if (error) throw error;
-        router.replace(next);
+        if (staffOnly) {
+          const profile = await db
+            .from("profiles")
+            .select("role")
+            .eq("id", data.user.id)
+            .abortSignal(AbortSignal.timeout(10000))
+            .single();
+          if (profile.error) {
+            setError("Staff access could not be checked. Please retry.");
+            return;
+          }
+          if (profile.data?.role !== "admin") {
+            setError(
+              "You are signed in to a student account. Open your dashboard, or switch to your assigned staff account.",
+            );
+            return;
+          }
+        }
+        navigateAuthenticated(data.user.id, next);
       }
     } catch (cause) {
       const code =
@@ -173,115 +292,147 @@ export function AuthForm() {
           : "";
       setError(
         code === "invalid_credentials"
-          ? "Email or password is incorrect. Try again or reset your password."
-          : code === "email_not_confirmed"
-            ? "Confirm your email first. Check your inbox for the sign-up link."
-            : code.includes("rate_limit")
-              ? "Too many attempts. Wait a minute before trying again."
-              : code === "weak_password"
-                ? "Choose a longer password with a mix of letters, numbers, and symbols."
-                : "Unable to complete this request. Check your connection and try again.",
+          ? t("au.err.credentials")
+          : code === "weak_password"
+            ? t("au.err.weak")
+            : t(authErrorKey(cause)),
       );
     } finally {
-      setBusy(false);
+      if (!awaitingNavigation.current) {
+        setBusy(false);
+        submitting.current = false;
+      }
     }
   };
-  const staff = isStaffPath(next);
-  return (
-    <div className="auth-workspace">
-      <header className="auth-header">
-        <Brand />
-        <Link className="text-link" href={returnTo}>
-          <ArrowLeft size={16} /> Back to browsing
-        </Link>
-      </header>
-      <div className="auth-layout">
-        <div className="auth-access-panel">
-          <aside className="auth-art" aria-label="Plan your university journey">
-            <img
-              src="/images/hero/blue-collage.webp"
-              alt="Blue editorial collage of a student, university buildings and a plane"
-              width="1200"
-              height="800"
-            />
-            <div>
-              <h2>
-                Your next step,
-                <br />
-                all in one place.
-              </h2>
-              <p>Save universities. Compare options. Plan applications.</p>
-            </div>
-          </aside>
+  const verifyCode = async (code: string) => {
+    const db = getSupabase();
+    if (!db || !codeFor) throw Object.assign(new Error("offline"), { name: "AuthRetryableFetchError" });
+    const { data, error } = await db.auth.verifyOtp({ email: codeFor.email, token: code, type: codeFor.kind });
+    if (error) throw error;
+    if (!data.user || !data.session) throw Object.assign(new Error("no session"), { code: "unexpected_failure" });
+    // The proxy reads this hint on the very next navigation; do not wait for the provider's auth event.
+    writeSessionHint(true);
+    navigateAuthenticated(data.user.id, postAuthDestination(next, data.user, { recovery: codeFor.kind === "recovery" }));
+  };
+  const resendCode = async () => {
+    const db = getSupabase();
+    if (!db || !codeFor) throw Object.assign(new Error("offline"), { name: "AuthRetryableFetchError" });
+    const result =
+      codeFor.kind === "signup"
+        ? await db.auth.resend({ type: "signup", email: codeFor.email, options: { emailRedirectTo: callback() } })
+        : codeFor.kind === "recovery"
+          ? await db.auth.resetPasswordForEmail(codeFor.email, { redirectTo: location.origin + "/auth/callback?next=/auth/reset-password" })
+          : await db.auth.signInWithOtp({ email: codeFor.email, options: { emailRedirectTo: callback(), shouldCreateUser: enabled.signup } });
+    if (result.error) throw result.error;
+  };
+  const staff = staffOnly;
+  const formSection = (
           <section className="auth-form" aria-labelledby="auth-title">
-            {staff && <span className="eyebrow">COLLEGESTAT · STAFF</span>}
+            {staffOnly && (
+              <div className="staff-auth-brand">
+                <Brand />
+                <span>
+                  <LockKeyhole size={16} /> Staff access
+                </span>
+              </div>
+            )}
+            {codeFor ? (
+              <AuthCodeStep
+                email={codeFor.email}
+                verify={verifyCode}
+                resend={resendCode}
+                onChangeEmail={() => setCodeFor(null)}
+              />
+            ) : (
+              <>
+            {staff && <span className="auth-kicker">COLLEGESTAT · STAFF</span>}
             <h1 id="auth-title">
               {reset
-                ? "New password"
+                ? t("au.title.reset")
                 : forgot
-                  ? "Reset password"
+                  ? t("au.title.forgot")
                   : signup
-                    ? "Create an account"
+                    ? t("au.title.signup")
                     : staff
-                      ? "Admin sign-in"
-                      : "Sign in"}
+                      ? "Staff sign in"
+                      : t("au.title.signin")}
             </h1>
             <p>
               {reset
-                ? "Choose a unique password to secure your account."
+                ? t("au.sub.reset")
                 : forgot
-                  ? "Enter your email to receive a reset link."
+                  ? t("au.sub.forgot")
                   : signup
-                    ? "Save your shortlist, comparisons, and application plan."
+                    ? t("au3.signup.sub")
                     : staff
-                      ? "Use your administrator account to open the database workspace."
-                      : "Welcome back to your workspace."}
+                      ? "Your catalogue, sources, and review workspace."
+                      : codeMode
+                        ? t("au3.signin.sub")
+                        : t("au3.signin.sub.pw")}
             </p>
-            {!forgot && !reset && !staff && (
-              <nav className="auth-mode-nav" aria-label="Account access">
+            {staffOnly && (
+              <div className="staff-auth-scope">
                 <span>
-                  {signup ? "Already have an account?" : "New to CollegeStat?"}
+                  <Database size={14} /> Catalogue management
                 </span>
+                <span>
+                  <ShieldCheck size={14} /> Role verified access
+                </span>
+              </div>
+            )}
+            {!forgot && !reset && !staff && (
+              <nav className="ax-toggle" aria-label={t("au.tabs.label")}>
                 <Link
-                  href={
-                    (signup ? "/auth/sign-in?next=" : "/auth/sign-up?next=") +
-                    encodeURIComponent(next)
-                  }
+                  href={"/auth/sign-up?next=" + encodeURIComponent(next)}
+                  aria-current={signup ? "page" : undefined}
                 >
-                  {signup ? "Sign in" : "Create account"}
+                  {t("au.tab.signup")}
+                </Link>
+                <Link
+                  href={"/auth/sign-in?next=" + encodeURIComponent(next)}
+                  aria-current={!signup ? "page" : undefined}
+                >
+                  {t("au.tab.signin")}
                 </Link>
               </nav>
             )}
-            {sent ? (
-              <div className="auth-sent" role="status">
-                <CheckCircle2 size={30} />
-                <h3>Check your inbox.</h3>
-                <p>
-                  If this address can receive the requested link, it will arrive
-                  shortly. Open it in this browser.
-                </p>
-                <Link
-                  className="text-link"
-                  href={"/auth/sign-in?next=" + encodeURIComponent(next)}
-                >
-                  Back to sign in <ArrowRight size={15} />
-                </Link>
-              </div>
-            ) : (
+            {forgot && (
+              <Link
+                className="auth-back-link"
+                href={"/auth/sign-in?next=" + encodeURIComponent(next)}
+              >
+                {t("au.back.signin")}
+              </Link>
+            )}
+            {(
               <>
+                {staffOnly && s.user && s.profile?.role === "student" && (
+                  <div className="staff-account-recovery" role="status">
+                    <Link className="text-link" href="/dashboard">
+                      Open your student dashboard
+                    </Link>
+                    <button
+                      type="button"
+                      className="text-link"
+                      onClick={() => void s.signOut()}
+                      disabled={busy}
+                    >
+                      Switch account
+                    </button>
+                  </div>
+                )}
                 {!forgot &&
                   !reset &&
-                  (enabled.google || enabled.apple || enabled.telegram) && (
+                  !staff && (
                     <div className="auth-providers">
-                      {(["google", "apple", "telegram"] as const)
-                        .filter((provider) => enabled[provider])
+                      {(["google", "github", "apple", "telegram"] as const)
+                        .filter((provider) => provider === "google" || provider === "github" || enabled[provider])
                         .map((provider) => (
                           <button
+                            type="button"
                             key={provider}
                             className="provider-button"
-                            disabled={
-                              busy || !s.configured || !enabled[provider]
-                            }
+                            disabled={busy || !s.authReady || !s.configured}
                             onClick={() =>
                               oauth(
                                 provider === "telegram"
@@ -289,70 +440,95 @@ export function AuthForm() {
                                   : provider,
                               )
                             }
-                            aria-describedby={
-                              !enabled[provider]
-                                ? "provider-availability"
-                                : undefined
-                            }
                           >
                             {provider === "google" ? (
                               <GoogleMark />
+                            ) : provider === "github" ? (
+                              <GitHubMark />
                             ) : provider === "apple" ? (
                               <AppleMark />
                             ) : (
                               <TelegramMark />
                             )}
                             <span>
-                              {provider[0].toUpperCase() + provider.slice(1)}
+                              {t(signup ? "au.provider.signup" : "au.provider.signin", {
+                                name: provider === "github" ? "GitHub" : provider[0].toUpperCase() + provider.slice(1),
+                              })}
                             </span>
                           </button>
                         ))}
-                      {(!enabled.google ||
-                        !enabled.apple ||
-                        !enabled.telegram) && (
-                        <p
-                          id="provider-availability"
-                          className="provider-availability"
-                        >
-                          {providersChecked
-                            ? "Email sign-in is also available."
-                            : "Checking sign-in options…"}
-                        </p>
-                      )}
                       {enabled.email && (
                         <div className="auth-divider">
-                          <span /> or use your email <span />
+                          <span /> {t("au.or")} <span />
                         </div>
                       )}
                     </div>
                   )}
-                {enabled.email && (
+                {(enabled.email || reset) && (
                   <form onSubmit={submit} aria-busy={busy}>
                     {signup && (
-                      <div className="auth-field">
-                        <label htmlFor="auth-name">
-                          Display name <span>(optional)</span>
-                        </label>
-                        <input
-                          id="auth-name"
-                          autoComplete="name"
-                          value={name}
-                          onChange={(e) => setName(e.target.value)}
-                          maxLength={120}
-                          disabled={busy}
-                        />
+                      <div className="auth-row">
+                        <div className="auth-field">
+                          <label htmlFor="auth-name">{t("au3.field.name")}</label>
+                          <div className="auth-input">
+                            <input
+                              id="auth-name"
+                              name="name"
+                              required
+                              autoComplete="name"
+                              maxLength={120}
+                              value={name}
+                              onChange={(e) => setName(e.target.value)}
+                              placeholder={t("au3.name.ph")}
+                              disabled={busy}
+                            />
+                          </div>
+                        </div>
+                        <div className="auth-field">
+                          <label htmlFor="auth-country">{t("au3.field.country")}</label>
+                          <div className="auth-input is-select">
+                            <select
+                              id="auth-country"
+                              name="country"
+                              required
+                              autoComplete="country"
+                              value={country}
+                              onChange={(e) => setCountry(e.target.value)}
+                              disabled={busy}
+                            >
+                              <option value="" disabled>
+                                {t("au3.country.choose")}
+                              </option>
+                              {HOME_FIRST.map((c) => (
+                                <option key={c} value={c}>
+                                  {regionName(c, lang)}
+                                </option>
+                              ))}
+                              <optgroup label={t("au3.country.other")}>
+                                {HOME_OTHER.map((c) => (
+                                  <option key={c} value={c}>
+                                    {regionName(c, lang)}
+                                  </option>
+                                ))}
+                              </optgroup>
+                            </select>
+                          </div>
+                        </div>
                       </div>
                     )}
                     {!reset && (
                       <div className="auth-field">
-                        <label htmlFor="auth-email">Email address</label>
+                        <label htmlFor="auth-email">{t("au.field.email")}</label>
                         <div className="auth-input">
                           <Mail size={18} aria-hidden="true" />
                           <input
                             id="auth-email"
+                            name="email"
                             type="email"
                             required
                             autoComplete="email"
+                            autoCapitalize="none"
+                            spellCheck={false}
                             value={email}
                             onChange={(e) => setEmail(e.target.value)}
                             placeholder="you@example.com"
@@ -361,14 +537,26 @@ export function AuthForm() {
                         </div>
                       </div>
                     )}
-                    {!forgot && (
+                    {!forgot && !codeMode && (
                       <div className="auth-field">
                         <label htmlFor="auth-password">
-                          {reset ? "New password" : "Password"}
+                          {reset ? t("au.title.reset") : t("au.field.password")}
                         </label>
+                        {!reset && !signup && (
+                          <Link
+                            className="auth-recovery"
+                            href={
+                              "/auth/forgot-password?next=" +
+                              encodeURIComponent(next)
+                            }
+                          >
+                            {t("au.forgot.link")}
+                          </Link>
+                        )}
                         <div className="auth-input">
                           <input
                             id="auth-password"
+                            name="password"
                             type={showPassword ? "text" : "password"}
                             required
                             minLength={signup || reset ? 8 : 1}
@@ -380,6 +568,13 @@ export function AuthForm() {
                             value={password}
                             onChange={(e) => setPassword(e.target.value)}
                             disabled={busy}
+                            onKeyUp={(e) =>
+                              setCapsLock(e.getModifierState("CapsLock"))
+                            }
+                            onKeyDown={(e) =>
+                              setCapsLock(e.getModifierState("CapsLock"))
+                            }
+                            onBlur={() => setCapsLock(false)}
                             aria-describedby={
                               signup || reset ? "password-hint" : undefined
                             }
@@ -387,9 +582,10 @@ export function AuthForm() {
                           <button
                             type="button"
                             className="auth-password-toggle"
+                            disabled={busy || !s.authReady}
                             onClick={() => setShowPassword((v) => !v)}
                             aria-label={
-                              showPassword ? "Hide password" : "Show password"
+                              showPassword ? t("au.pw.hide") : t("au.pw.show")
                             }
                             aria-pressed={showPassword}
                           >
@@ -402,8 +598,12 @@ export function AuthForm() {
                         </div>
                         {(signup || reset) && (
                           <small id="password-hint">
-                            At least 8 characters. A long, unique passphrase
-                            works well.
+                            {t("au.pw.hint")}
+                          </small>
+                        )}
+                        {capsLock && (
+                          <small className="auth-caps-lock" role="status">
+                            {t("au.caps")}
                           </small>
                         )}
                       </div>
@@ -415,67 +615,71 @@ export function AuthForm() {
                     )}
                     {signup && !enabled.signup && (
                       <p className="inline-error" role="status">
-                        New registrations are currently closed. Existing
-                        accounts can still sign in.
+                        {t("au.closed")}
                       </p>
                     )}
                     <button
                       className="button button-primary auth-submit"
                       disabled={
-                        !s.configured || busy || (signup && !enabled.signup)
+                        !s.configured ||
+                        !s.authReady ||
+                        busy ||
+                        (signup && !enabled.signup)
                       }
                     >
                       {busy
-                        ? "Please wait…"
+                        ? t("au.btn.wait")
                         : reset
-                          ? "Update password"
+                          ? t("au.btn.reset")
                           : forgot
-                            ? "Send reset link"
+                            ? t("au.btn.sendreset")
                             : signup
-                              ? "Create account"
-                              : "Continue"}
-                      <ArrowRight size={17} />
+                              ? t("au.btn.signup")
+                              : codeMode
+                                ? t("au3.btn.code")
+                                : t("au.btn.signin")}
+                      {busy ? (
+                        <LoaderCircle className="auth-loading" size={17} />
+                      ) : (
+                        <ArrowRight size={17} />
+                      )}
                     </button>
                   </form>
                 )}
-                {!enabled.email && error && (
+                {!enabled.email && !reset && error && (
                   <p className="inline-error" role="alert">
                     {error}
                   </p>
                 )}
-                {s.configured &&
-                  enabled.email &&
+                {providersChecked &&
                   !reset &&
-                  !forgot &&
-                  !signup && (
-                    <button
-                      className="magic-link-button text-link"
-                      disabled={
-                        busy || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.trim())
-                      }
-                      onClick={(e) => submit(e, true)}
-                    >
-                      <Mail size={15} /> Email me a sign-in link
-                    </button>
+                  !enabled.email &&
+                  !(enabled.google || enabled.apple || enabled.telegram) &&
+                  s.configured && (
+                    <p className="inline-error" role="status">
+                      {t("au.err.unavailable")}
+                    </p>
                   )}
-                {!forgot && !reset && !signup && (
-                  <div className="auth-links">
-                    <Link
-                      className="text-link"
-                      href={
-                        "/auth/forgot-password?next=" + encodeURIComponent(next)
-                      }
-                    >
-                      Forgot password?
-                    </Link>
-                  </div>
+                {s.configured && enabled.email && !reset && !forgot && !signup && !staff && (
+                  <button
+                    type="button"
+                    className="auth-mode-switch"
+                    disabled={busy}
+                    onClick={() => {
+                      setError("");
+                      setPassword("");
+                      setUsePassword((v) => !v);
+                    }}
+                  >
+                    {usePassword ? <Mail size={15} aria-hidden="true" /> : <LockKeyhole size={15} aria-hidden="true" />}
+                    {t(usePassword ? "au3.use.code" : "au3.use.password")}
+                  </button>
                 )}
               </>
             )}
             {!s.configured && (
               <p className="inline-error" role="status">
-                Sign-in is temporarily unavailable. You can still browse
-                universities and scholarships.
+                {t("au.unavailable")}
               </p>
             )}
             <div className="auth-privacy">
@@ -483,20 +687,104 @@ export function AuthForm() {
               <span>
                 {staff
                   ? "Access is checked against your database role."
-                  : "Your saved research stays private to your account."}
+                  : t("au.privacy")}
               </span>
             </div>
             {signup && (
               <p className="auth-terms">
-                By creating an account, you agree to our{" "}
-                <Link href="/terms">Terms</Link> and{" "}
-                <Link href="/privacy">Privacy Policy</Link>.
+                {t("au.terms.lead")} <Link href="/terms">{t("au.terms.terms")}</Link>{" "}
+                {t("au.terms.and")} <Link href="/privacy">{t("au.terms.privacy")}</Link>
+                {t("au.terms.tail")}
               </p>
             )}
+            {staffOnly && (
+              <nav
+                className="staff-auth-return"
+                aria-label="Return from staff access"
+              >
+                <Link href="/">
+                  <ArrowLeft size={14} /> Public website
+                </Link>
+                <Link href="/auth/sign-in">
+                  Student sign in <ArrowRight size={14} />
+                </Link>
+              </nav>
+            )}
+              </>
+            )}
           </section>
+  );
+  if (!staffOnly)
+    return (
+      <div className="ax">
+        <div className="ax-main">
+          <header className="ax-top">
+            <Brand />
+            <div>
+              <AppearanceButton />
+              <Link className="ax-back" href={returnTo}>
+                <ArrowLeft size={14} aria-hidden="true" /> {t("au.back.site")}
+              </Link>
+            </div>
+          </header>
+          {formSection}
+          <footer className="ax-foot">
+            <span>© {new Date().getFullYear()} CollegeStat</span>
+            <Link href="/terms">{t("au.foot.terms")}</Link>
+            <Link href="/privacy">{t("au.foot.privacy")}</Link>
+            <Link href="/support">{t("au.foot.help")}</Link>
+          </footer>
+        </div>
+        <AuthShowcase signup={signup} />
+      </div>
+    );
+  return (
+    <div className="auth-workspace auth-reference oct12-auth auth-studio staff-auth">
+      <div className="auth-appearance">
+        <AppearanceButton />
+      </div>
+      <div className="auth-layout">
+        <div className="auth-access-panel">
+          {formSection}
         </div>
       </div>
     </div>
+  );
+}
+/** Quiet brand panel beside the form: an animated aurora and one line. */
+function AuthShowcase({ signup }: { signup: boolean }) {
+  const t = useT();
+  const mode = signup ? "signup" : "signin";
+  return (
+    <aside className="ax-show" aria-label={t("au.show.label")}>
+      <div className="ax-aurora" aria-hidden="true">
+        <Aurora
+          colorStops={["#1e40af", "#3b82f6", "#1d4ed8"]}
+          amplitude={1.1}
+          blend={0.55}
+          speed={0.6}
+          height={0.55}
+          layers={2}
+          mouseInteraction
+        />
+      </div>
+      <div className="ax-show-copy">
+        <span className="ax-brand-row">
+          <strong>CollegeStat</strong>
+          <em>Admissions</em>
+        </span>
+        <h2>{t(`au.show.${mode}.title`)}</h2>
+        <p>{t(`au.show.${mode}.body`)}</p>
+        <ol className="ax-steps">
+          {([1, 2, 3] as const).map((n, i) => (
+            <li key={n} className={i === 0 ? "is-on" : undefined}>
+              <span>{n}</span>
+              {t(`au.show.${mode}.s${n}`)}
+            </li>
+          ))}
+        </ol>
+      </div>
+    </aside>
   );
 }
 function GoogleMark() {
@@ -518,6 +806,13 @@ function GoogleMark() {
         fill="#34A853"
         d="M24 48c6.48 0 11.93-2.13 15.9-5.8l-7.73-6C30.02 37.65 27.25 38.5 24 38.5c-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48Z"
       />
+    </svg>
+  );
+}
+function GitHubMark() {
+  return (
+    <svg width="18" height="18" viewBox="0 0 16 16" aria-hidden="true" fill="currentColor">
+      <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8Z" />
     </svg>
   );
 }
@@ -546,9 +841,11 @@ function TelegramMark() {
   );
 }
 
+/** Magic-link and OAuth return: exchange the code, then go where the code step would have gone. */
 export function AuthCallback() {
   const router = useRouter(),
     params = useSearchParams(),
+    t = useT(),
     ran = useRef(false);
   const [error, setError] = useState("");
   useEffect(() => {
@@ -557,37 +854,36 @@ export function AuthCallback() {
     const db = getSupabase(),
       code = params.get("code");
     if (params.get("error") || !db || !code) {
-      setError(
-        "This sign-in link is incomplete or expired. Request a new link.",
-      );
+      setError(t("au.cb.expired"));
       return;
     }
     db.auth
       .exchangeCodeForSession(code)
-      .then(({ error }) => {
-        if (error)
-          setError(
-            "The sign-in link could not be used. Request a fresh link in this browser.",
-          );
-        else
-          router.replace(
-            params.get("next") === "/auth/reset-password"
-              ? "/auth/reset-password"
-              : safeNext(params.get("next")),
-          );
+      .then(({ data, error }) => {
+        if (error || !data.session) {
+          // PKCE keeps its verifier in this browser's storage: a link opened in a
+          // mail app's own browser cannot finish, but the code in the email can.
+          const lost = /verifier|flow state/i.test(error?.message || "") || error?.code === "flow_state_not_found";
+          setError(t(lost ? "au.cb.browser" : "au.cb.expired"));
+          return;
+        }
+        writeSessionHint(true);
+        router.replace(
+          postAuthDestination(params.get("next"), data.session.user, {
+            recovery: params.get("next") === "/auth/reset-password",
+          }),
+        );
       })
-      .catch(() =>
-        setError("Sign-in could not be completed. Please try again."),
-      );
-  }, [params, router]);
+      .catch(() => setError(t("au.err.network")));
+  }, [params, router, t]);
   return (
     <div className="auth-callback">
       <Brand />
-      <h1>{error ? "Let’s try that again." : "Finishing your sign-in."}</h1>
-      <p>{error || "Restoring your secure session…"}</p>
+      <h1>{error ? t("au.cb.failed") : t("au.cb.working")}</h1>
+      <p>{error || t("au.cb.working.body")}</p>
       {error && (
         <Link href="/auth/sign-in" className="button button-primary">
-          Return to sign in
+          {t("au.cb.retry")}
         </Link>
       )}
     </div>

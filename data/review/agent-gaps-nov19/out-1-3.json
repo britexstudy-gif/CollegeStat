@@ -1,0 +1,48 @@
+{
+ "universities": [
+  {
+   "id": "1b35aa93-a1de-5a99-8c88-dd9613317e0f",
+   "english": [],
+   "tuition": null,
+   "application_fee": null,
+   "deadlines": [],
+   "sat": null,
+   "acceptance_rate": null,
+   "notes": "tec.mx undergrad page accepts TOEFL iBT, B2 First, PET and Pearson tests with no minimum scores; fee amounts and 2027 dates say 'available soon'. Nothing."
+  },
+  {
+   "id": "575d5e9a-f98a-5ec3-bea3-7f7b8c05100a",
+   "english": [],
+   "tuition": null,
+   "application_fee": null,
+   "deadlines": [],
+   "sat": null,
+   "acceptance_rate": null,
+   "notes": "UCLouvain official pages show only 2026-entry non-EU deadlines and conflicting application fees (EUR 200 vs 300); LSM IB page is stale. Nothing verified for."
+  },
+  {
+   "id": "48888524-717e-5143-90bf-457f3f85ba30",
+   "english": [],
+   "tuition": null,
+   "application_fee": null,
+   "deadlines": [],
+   "sat": null,
+   "acceptance_rate": null,
+   "notes": "Non-EU direct-entry route not open for 2025-26; fee and language pages not verified; 2026 pre-registration dates only (not 2027)."
+  },
+  {
+   "id": "b719e149-7073-5173-a435-791b55891294",
+   "english": [],
+   "tuition": null,
+   "application_fee": {
+    "amount": 200,
+    "currency": "CHF",
+    "source_url": "https://www.unil.ch/unil/en/home/menuinst/etudier/immatriculations-et-inscriptions/bachelor-avec-diplome-etranger.html"
+   },
+   "deadlines": [],
+   "sat": null,
+   "acceptance_rate": null,
+   "notes": "CHF 200 non-refundable administrative fee for bachelor with foreign diploma. Deadlines are day/month only under 'academic year 2026/2027' with no year, so."
+  }
+ ]
+}

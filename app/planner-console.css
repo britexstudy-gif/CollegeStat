@@ -523,7 +523,7 @@
   background: var(--background);
 }
 .dark .staff-badge {
-  background: #1d3b2b;
+  background: #282828;
   color: #a8dabb;
 }
 .dark .student-sidebar button.active,

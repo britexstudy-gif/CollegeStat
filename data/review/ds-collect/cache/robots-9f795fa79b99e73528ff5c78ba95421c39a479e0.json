@@ -1,0 +1,1 @@
+{"txt":"User-agent: *\nDisallow: /api/\n\nSitemap: https://www.omu.ac.jp/sitemap.xml\nSitemap: https://www.omu.ac.jp/ct/sitemap.xml\nSitemap: https://www.omu.ac.jp/hosp/sitemap.xml\nSitemap: https://www.omu.ac.jp/medcity21/sitemap.xml\n"}

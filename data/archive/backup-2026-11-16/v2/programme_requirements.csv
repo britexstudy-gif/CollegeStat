@@ -1,0 +1,2 @@
+id,programme_id,kind,status,label,minimum,component_minimum,note,source_id,provenance
+7ca0c62c-6b96-5672-81c8-90955c9d1e8f,d8ff7f6d-1255-55cc-9cda-0f38627fef4f,INTERVIEW,required,Not verified; aggregator says C1 English and remote interview in English for shortlisted applicants,,,,448cc2dd-acf7-5921-a460-0cbfd47fc74a,"{""minimum"":{""source_id"":""448cc2dd-acf7-5921-a460-0cbfd47fc74a"",""origin"":""programmes-latest-nov15""}}"

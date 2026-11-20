@@ -1,0 +1,368 @@
+/* Report (report-v2.tsx): a Notion-like AI document. One reading column (~720px), big title,
+ * quiet h2s, one calm callout, plain tables, optional thin contents list on wide screens.
+ * Dashboard tokens, so dark mode follows. Print: A4, no chrome, a page break per section. */
+.r3 {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  justify-content: center;
+  gap: 48px;
+  width: 100%;
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 40px 24px 112px;
+  color: var(--dk-ink);
+  font-size: 15.5px;
+  line-height: 1.65;
+}
+@media (min-width: 1180px) {
+  .r3 {
+    grid-template-columns: 176px minmax(0, 720px);
+    max-width: none;
+  }
+  .r3-page {
+    grid-column: 2;
+  }
+}
+.r3-toc {
+  display: none;
+}
+@media (min-width: 1180px) {
+  .r3-toc {
+    display: block;
+    position: sticky;
+    top: 72px;
+    align-self: start;
+    font-size: 13px;
+  }
+}
+.r3-toc p {
+  margin-bottom: 8px;
+  color: var(--dk-faint);
+  font-size: 12px;
+}
+.r3-toc ol {
+  display: grid;
+  gap: 1px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-left: 1px solid var(--dk-line);
+}
+.r3-toc a {
+  display: block;
+  padding: 3px 0 3px 12px;
+  margin-left: -1px;
+  border-left: 1px solid transparent;
+  color: var(--dk-muted);
+  text-decoration: none;
+}
+.r3-toc a:hover {
+  color: var(--dk-ink);
+  border-left-color: var(--dk-ink);
+}
+.r3-page {
+  display: grid;
+  gap: 36px;
+  min-width: 0;
+}
+.r3-head {
+  display: grid;
+  gap: 10px;
+}
+.r3-head h1 {
+  font-family: var(--cs-font-display);
+  font-size: clamp(32px, 5vw, 46px);
+  font-weight: 700;
+  letter-spacing: -0.035em;
+  line-height: 1.08;
+  text-wrap: balance;
+}
+.r3-meta {
+  color: var(--dk-muted);
+  font-size: 13.5px;
+}
+.r3-tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 14px;
+  margin-top: 4px;
+}
+.r3-tools button {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 32px;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--dk-muted);
+  font: inherit;
+  font-size: 13.5px;
+  cursor: pointer;
+}
+.r3-tools button:hover:not(:disabled) {
+  color: var(--dk-ink);
+}
+.r3-tools button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+.r3-tools svg {
+  width: 14px;
+  height: 14px;
+}
+.r3-tools .is-spin {
+  animation: r3-spin 1s linear infinite;
+}
+@keyframes r3-spin {
+  to {
+    rotate: 360deg;
+  }
+}
+.r3-error {
+  color: var(--dk-danger, #dc2626);
+  font-size: 14px;
+}
+.r3-note {
+  color: var(--dk-muted);
+  font-size: 13.5px;
+}
+
+/* Sections */
+.r3-sec {
+  display: grid;
+  gap: 14px;
+  scroll-margin-top: 72px;
+}
+.r3-sec h2 {
+  margin-top: 4px;
+  font-size: 22px;
+  font-weight: 650;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+}
+.r3-sec p {
+  overflow-wrap: anywhere;
+}
+.r3-sec ul {
+  display: grid;
+  gap: 6px;
+  margin: 0;
+  padding-left: 22px;
+  list-style: disc;
+}
+.r3-sec li::marker {
+  color: var(--dk-faint);
+}
+.r3-callout {
+  display: flex;
+  gap: 12px;
+  padding: 14px 16px;
+  border-radius: 8px;
+  background: var(--dk-subtle, var(--dk-hover));
+}
+.r3-callout svg {
+  flex: none;
+  width: 17px;
+  height: 17px;
+  margin-top: 4px;
+  color: var(--dk-accent, #5b8cff);
+}
+.r3-callout p {
+  font-size: 15px;
+}
+.r3-table {
+  overflow-x: auto;
+  margin: 2px 0;
+  border-top: 1px solid var(--dk-line);
+}
+.r3-table table {
+  width: 100%;
+  min-width: 460px;
+  border-collapse: collapse;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.r3-table th,
+.r3-table td {
+  padding: 9px 14px 9px 0;
+  border-bottom: 1px solid var(--dk-line);
+  text-align: left;
+  vertical-align: top;
+}
+.r3-table th {
+  color: var(--dk-muted);
+  font-size: 12.5px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+.r3-table td:first-child {
+  font-weight: 550;
+}
+.r3-foot {
+  color: var(--dk-faint);
+  font-size: 12.5px;
+}
+
+/* Empty and waiting */
+.r3-empty,
+.r3-wait-head {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+.r3-empty {
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 8px 0 0;
+}
+.r3-empty p {
+  max-width: 54ch;
+  color: var(--dk-muted);
+}
+.r3-go {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 40px;
+  padding: 0 18px;
+  border: 0;
+  border-radius: 10px;
+  background: var(--dk-ink);
+  color: var(--dk-bg, #fff);
+  font: inherit;
+  font-size: 14.5px;
+  font-weight: 550;
+  cursor: pointer;
+}
+.r3-go:disabled {
+  opacity: 0.5;
+}
+.r3-go svg {
+  width: 15px;
+  height: 15px;
+}
+.r3-wait {
+  display: grid;
+  gap: 28px;
+}
+.r3-wait-head p {
+  display: grid;
+  gap: 2px;
+}
+.r3-wait-head span {
+  color: var(--dk-muted);
+  font-size: 13.5px;
+}
+.r3-skel {
+  display: grid;
+  gap: 10px;
+}
+.r3-sk-h {
+  width: 34%;
+  height: 24px;
+  margin-bottom: 4px;
+}
+.r3-sk-l {
+  height: 14px;
+}
+.r3-sk-box {
+  height: 76px;
+  margin-top: 4px;
+}
+
+@media (max-width: 640px) {
+  .r3 {
+    padding: 24px 16px 96px;
+    font-size: 15px;
+  }
+  .r3-sec h2 {
+    font-size: 20px;
+  }
+}
+
+/* Print: only the document, A4, one section per page-ish. */
+@page {
+  size: A4;
+  margin: 18mm 16mm;
+}
+@media print {
+  html:has(.r3),
+  html:has(.r3) body,
+  html:has(.r3) .db,
+  html:has(.r3) .db-main,
+  html:has(.r3) .db-content {
+    display: block !important;
+    height: auto !important;
+    min-height: 0 !important;
+    overflow: visible !important;
+    background: #fff !important;
+  }
+  .r3 {
+    display: block;
+    max-width: none;
+    padding: 0;
+    color: #000;
+    font-size: 11pt;
+    line-height: 1.55;
+  }
+  .r3-toc,
+  .r3-tools,
+  .r3-note,
+  .r3-error {
+    display: none !important;
+  }
+  .r3-page {
+    display: block;
+  }
+  .r3-head {
+    margin-bottom: 8mm;
+  }
+  .r3-head h1 {
+    font-size: 26pt;
+  }
+  .r3-meta,
+  .r3-foot {
+    color: #555;
+  }
+  .r3-sec {
+    display: block;
+    break-before: page;
+    break-inside: auto;
+  }
+  .r3-sec:first-of-type {
+    break-before: auto;
+  }
+  .r3-sec > * + * {
+    margin-top: 3mm;
+  }
+  .r3-sec h2 {
+    font-size: 16pt;
+    break-after: avoid;
+  }
+  .r3-callout {
+    break-inside: avoid;
+    background: #f2f2f2 !important;
+    print-color-adjust: exact;
+  }
+  .r3-callout svg {
+    display: none;
+  }
+  .r3-table {
+    overflow: visible;
+    border-color: #bbb;
+  }
+  .r3-table table {
+    min-width: 0;
+  }
+  .r3-table tr {
+    break-inside: avoid;
+  }
+  .r3-table th,
+  .r3-table td {
+    border-color: #ccc;
+  }
+  .r3-foot {
+    margin-top: 8mm;
+  }
+}

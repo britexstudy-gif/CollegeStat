@@ -1,0 +1,66 @@
+OpenAI Codex v0.169.0
+--------
+workdir: /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+model: gpt-6-luna
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: high
+reasoning summaries: none
+session id: 01a1ee99-7ee7-7aa1-8ad0-848f0b69bda2
+--------
+user
+You are a careful admissions-data researcher. For each university below, find facts for an
+INTERNATIONAL applicant to a FIRST-YEAR BACHELOR'S degree starting in autumn 2027 (or the nearest
+published cycle). Use the live web. Rules:
+
+- Official sources only: the university's own website (its domain or subdomains), the national
+  application service (UCAS, Common App, OUAC, uni-assist, Studyinkorea, etc.) or a government
+  statistics office. Never use rankings sites, forums, agencies, Wikipedia or blogs.
+- Every value needs the exact page URL where you read it (source_url). If you could not verify a
+  value on an official page, leave it out (null or an empty list). Never guess or estimate.
+- english: the lowest overall score accepted for undergraduate entry, per test (IELTS Academic
+  overall, TOEFL iBT total, Duolingo, PTE). If programmes differ, give the general/lowest common
+  university minimum and say so in detail (e.g. "6.5 overall, no band below 6.0; some
+  programmes higher").
+- tuition: the yearly tuition for international (non-EU / overseas) undergraduates in the local
+  currency. If it varies by programme give amount = lowest and amount_max = highest, and the
+  academic_year the fee applies to (e.g. "2026/27"). If tuition is free, amount = 0.
+- application_fee: for international first-year applicants, local currency.
+- deadlines: the main 2027-entry first-year deadlines (ISO date YYYY-MM-DD) with the route
+  (e.g. "Common App, Regular Decision", "UCAS", "university portal"). Only dates actually
+  published; if only the 2026-entry date is published, include it and put "2026 entry" in title.
+- sat: policy for international applicants; p25/p75 total SAT only if the university publishes
+  them (Common Data Set or admissions profile).
+- acceptance_rate: only if officially published (CDS, admissions statistics page).
+- notes: one short line on anything important (e.g. "Foundation year required for 11-year
+  school certificates"), else "".
+
+Spend effort on the facts students need most: English minimum, tuition, deadlines. Keep each
+detail under 160 characters. Return only the JSON that matches the schema; use each
+university's id exactly as given.
+
+Universities:
+- id: 5c500bb8-70b8-59a4-8e57-9329a2c38f2f | Jilin University | Changchun, CN | http://www.jlu.edu.cn/
+- id: 36d03831-409e-5d01-a2a6-d5c7ada75de3 | Universita della Svizzera Italiana | Lugano, CH | http://www.usi.ch/
+- id: 7fbc2092-2cde-54b2-9fb9-80b30e5b7b15 | Imam Abdulrahman Bin Faisal University | Dammam, SA | https://iau.edu.sa/
+- id: 2b0bdfdf-5884-5b91-a635-14a8d0ab2169 | Moscow Institute of Physics and Technology | Dolgoprudny, RU | http://www.mipt.ru/
+codex
+I’m checking official admissions and fee pages for each school, prioritizing first-year international requirements and the nearest published entry cycle.
+web search: 
+web search: site:cie.jlu.edu.cn international undergraduate admission 2026 tuition English Jilin University ...
+web search: 
+web search: site:usi.ch/en/education/bachelor tuition fee application fee CHF bachelor international students 2027 2026 ...
+web search: 
+web search: site:iau.edu.sa "International students" admission bachelor IAU application fee tuition ...
+web search: 
+web search: 
+web search: 
+web search: 
+web search: 
+web search: site:cie.jlu.edu.cn/info/1079/3655 IELTS TOEFL pharmacy MBBS English 2026 ...
+codex
+{"universities":[{"id":"5c500bb8-70b8-59a4-8e57-9329a2c38f2f","english":[{"test":"IELTS","minimum":6.0,"detail":"6.0 overall; English-taught bachelor's programs. MBBS requires at least 5.0 in each section.","source_url":"https://cie.jlu.edu.cn/jldxhy/info/1100/1167.htm"},{"test":"TOEFL iBT","minimum":70,"detail":"70 total; English-taught bachelor's programs. MBBS requires at least 15 in each section.","source_url":"https://cie.jlu.edu.cn/jldxhy/info/1100/1167.htm"}],"tuition":{"amount":19000,"amount_max":36000,"currency":"CNY","period":"year","academic_year":"2026/27","detail":"Published 2026/27 undergraduate range: RMB 19,000–36,000 per year by major.","source_url":"https://cie.jlu.edu.cn/info/1079/3655.htm"},"application_fee":{"amount":600,"currency":"CNY","source_url":"https://cie.jlu.edu.cn/info/1079/3655.htm"},"deadlines":[{"title":"2026 entry international undergraduate application","due_at":"2026-06-30","route":"Jilin University International Student Service System","source_url":"https://cie.jlu.edu.cn/info/1079/3655.htm"}],"sat":null,"acceptance_rate":null,"notes":"The 2026/27 guide lists 35 Chinese-taught and 2 English-taught undergraduate majors."},{"id":"36d03831-409e-5d01-a2a6-d5c7ada75de3","english":[{"test":"IELTS","minimum":5.5,"detail":"IELTS 5.5 is accepted for the English-taught Economics bachelor's track; Informatics and Data Science require no official certificate.","source_url":"https://www.desk.usi.ch/en/english-language-courses-faq"},{"test":"TOEFL iBT","minimum":70,"detail":"TOEFL iBT 70 is accepted for the English-taught Economics bachelor's track; Informatics and Data Science require no official certificate.","source_url":"https://www.desk.usi.ch/en/english-language-courses-faq"}],"tuition":{"amount":10000,"amount_max":10000,"currency":"CHF","period":"year","academic_year":"2027/28","detail":"CHF 5,000 per semester for new international enrollments; annual amount is two semesters.","source_url":"https://www.usi.ch/en/education/bachelor/organising-your-studies"},"application_fee":{"amount":100,"currency":"CHF","source_url":"https://www.usi.ch/en/education-application"},"deadlines":[{"title":"2027 entry, international non-EU/EFTA applicants","due_at":"2027-04-30","route":"USI online application","source_url":"https://www.usi.ch/en/education/bachelor/data-science/admission"}],"sat":null,"acceptance_rate":null,"notes":"Some applicants are exempt from the CHF 100 application fee; Architecture charges CHF 200."},{"id":"7fbc2092-2cde-54b2-9fb9-80b30e5b7b15","english":[],"tuition":{"amount":18400,"amount_max":18400,"currency":"SAR","period":"year","academic_year":"Cycle not stated","detail":"Non-Saudi applicants pay SAR 9,200 per semester; annualized as two semesters. Health colleges are restricted.","source_url":"https://admitportal.iau.edu.sa/web/Faqs/"},"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"Non-Saudi applicants use the Ministry scholarship system; health colleges are limited to Saudis and children of Saudi mothers."},{"id":"2b0bdfdf-5884-5b91-a635-14a8d0ab2169","english":[],"tuition":{"amount":554000,"amount_max":554000,"currency":"RUB","period":"year","academic_year":"Current listing; cycle not stated","detail":"The published undergraduate table lists two English-taught bachelor's programs, each at RUB 554,000 per year.","source_url":"https://eng.mipt.ru/programs/undergraduate/"},"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"English proficiency at B2 or equivalent is listed as optional; the English-taught bachelor's programs start in October."}] }
+tokens used
+51,234
+{"universities":[{"id":"5c500bb8-70b8-59a4-8e57-9329a2c38f2f","english":[{"test":"IELTS","minimum":6.0,"detail":"6.0 overall; English-taught bachelor's programs. MBBS requires at least 5.0 in each section.","source_url":"https://cie.jlu.edu.cn/jldxhy/info/1100/1167.htm"},{"test":"TOEFL iBT","minimum":70,"detail":"70 total; English-taught bachelor's programs. MBBS requires at least 15 in each section.","source_url":"https://cie.jlu.edu.cn/jldxhy/info/1100/1167.htm"}],"tuition":{"amount":19000,"amount_max":36000,"currency":"CNY","period":"year","academic_year":"2026/27","detail":"Published 2026/27 undergraduate range: RMB 19,000–36,000 per year by major.","source_url":"https://cie.jlu.edu.cn/info/1079/3655.htm"},"application_fee":{"amount":600,"currency":"CNY","source_url":"https://cie.jlu.edu.cn/info/1079/3655.htm"},"deadlines":[{"title":"2026 entry international undergraduate application","due_at":"2026-06-30","route":"Jilin University International Student Service System","source_url":"https://cie.jlu.edu.cn/info/1079/3655.htm"}],"sat":null,"acceptance_rate":null,"notes":"The 2026/27 guide lists 35 Chinese-taught and 2 English-taught undergraduate majors."},{"id":"36d03831-409e-5d01-a2a6-d5c7ada75de3","english":[{"test":"IELTS","minimum":5.5,"detail":"IELTS 5.5 is accepted for the English-taught Economics bachelor's track; Informatics and Data Science require no official certificate.","source_url":"https://www.desk.usi.ch/en/english-language-courses-faq"},{"test":"TOEFL iBT","minimum":70,"detail":"TOEFL iBT 70 is accepted for the English-taught Economics bachelor's track; Informatics and Data Science require no official certificate.","source_url":"https://www.desk.usi.ch/en/english-language-courses-faq"}],"tuition":{"amount":10000,"amount_max":10000,"currency":"CHF","period":"year","academic_year":"2027/28","detail":"CHF 5,000 per semester for new international enrollments; annual amount is two semesters.","source_url":"https://www.usi.ch/en/education/bachelor/organising-your-studies"},"application_fee":{"amount":100,"currency":"CHF","source_url":"https://www.usi.ch/en/education-application"},"deadlines":[{"title":"2027 entry, international non-EU/EFTA applicants","due_at":"2027-04-30","route":"USI online application","source_url":"https://www.usi.ch/en/education/bachelor/data-science/admission"}],"sat":null,"acceptance_rate":null,"notes":"Some applicants are exempt from the CHF 100 application fee; Architecture charges CHF 200."},{"id":"7fbc2092-2cde-54b2-9fb9-80b30e5b7b15","english":[],"tuition":{"amount":18400,"amount_max":18400,"currency":"SAR","period":"year","academic_year":"Cycle not stated","detail":"Non-Saudi applicants pay SAR 9,200 per semester; annualized as two semesters. Health colleges are restricted.","source_url":"https://admitportal.iau.edu.sa/web/Faqs/"},"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"Non-Saudi applicants use the Ministry scholarship system; health colleges are limited to Saudis and children of Saudi mothers."},{"id":"2b0bdfdf-5884-5b91-a635-14a8d0ab2169","english":[],"tuition":{"amount":554000,"amount_max":554000,"currency":"RUB","period":"year","academic_year":"Current listing; cycle not stated","detail":"The published undergraduate table lists two English-taught bachelor's programs, each at RUB 554,000 per year.","source_url":"https://eng.mipt.ru/programs/undergraduate/"},"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"English proficiency at B2 or equivalent is listed as optional; the English-taught bachelor's programs start in October."}] }

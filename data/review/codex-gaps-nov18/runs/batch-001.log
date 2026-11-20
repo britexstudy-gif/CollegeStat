@@ -1,0 +1,138 @@
+OpenAI Codex v0.169.0
+--------
+workdir: /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+model: gpt-6-luna
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: high
+reasoning summaries: none
+session id: 01a1ee78-6d86-7c92-bc70-b42eb9aaea2c
+--------
+user
+You are a careful admissions-data researcher. For each university below, find facts for an
+INTERNATIONAL applicant to a FIRST-YEAR BACHELOR'S degree starting in autumn 2027 (or the nearest
+published cycle). Use the live web. Rules:
+
+- Official sources only: the university's own website (its domain or subdomains), the national
+  application service (UCAS, Common App, OUAC, uni-assist, Studyinkorea, etc.) or a government
+  statistics office. Never use rankings sites, forums, agencies, Wikipedia or blogs.
+- Every value needs the exact page URL where you read it (source_url). If you could not verify a
+  value on an official page, leave it out (null or an empty list). Never guess or estimate.
+- english: the lowest overall score accepted for undergraduate entry, per test (IELTS Academic
+  overall, TOEFL iBT total, Duolingo, PTE). If programmes differ, give the general/lowest common
+  university minimum and say so in detail (e.g. "6.5 overall, no band below 6.0; some
+  programmes higher").
+- tuition: the yearly tuition for international (non-EU / overseas) undergraduates in the local
+  currency. If it varies by programme give amount = lowest and amount_max = highest, and the
+  academic_year the fee applies to (e.g. "2026/27"). If tuition is free, amount = 0.
+- application_fee: for international first-year applicants, local currency.
+- deadlines: the main 2027-entry first-year deadlines (ISO date YYYY-MM-DD) with the route
+  (e.g. "Common App, Regular Decision", "UCAS", "university portal"). Only dates actually
+  published; if only the 2026-entry date is published, include it and put "2026 entry" in title.
+- sat: policy for international applicants; p25/p75 total SAT only if the university publishes
+  them (Common Data Set or admissions profile).
+- acceptance_rate: only if officially published (CDS, admissions statistics page).
+- notes: one short line on anything important (e.g. "Foundation year required for 11-year
+  school certificates"), else "".
+
+Spend effort on the facts students need most: English minimum, tuition, deadlines. Keep each
+detail under 160 characters. Return only the JSON that matches the schema; use each
+university's id exactly as given.
+
+Universities:
+- id: ae117645-e24c-5269-8ed1-b5b826e53932 | University of Cambridge | Cambridge, GB | http://www.cam.ac.uk/
+- id: 6020a2b5-3788-5dd1-b3f2-b9c6c7c6f99b | ETHZ - ETH Zurich | Zurich, CH | http://www.ethz.ch/
+- id: c67598f4-8b91-53a9-a98a-ebd185ced219 | University of Sydney | Sydney, AU | http://sydney.edu.au/
+- id: 5c9532a7-118a-5e2d-ab32-92ade2e776a5 | Fudan University | Shanghai, CN | http://www.fudan.edu.cn/
+codex
+I’m checking the current official admissions and fee pages for each university, prioritizing 2027 entry where dates and fees have been published.
+exec
+/bin/zsh -lc 'cat /Users/likeanew/.agents/skills/lemma/SKILL.md' in /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+ succeeded in 0ms:
+---
+name: lemma
+description: Persistent cross-session memory for AI agents via MCP. BEFORE starting ANY task (coding, debugging, refactoring, research, docs, optimization — any language), FIRST call memory_read to load what you already know so you never re-derive or re-explore known facts. AFTER finishing, call memory_add to persist new findings and session_attempt for dead ends — unsaved knowledge is lost permanently. Distills reusable guides from experience.
+---
+
+<!-- lemma:skill:v=0.21.0 -->
+
+# Lemma — Persistent Memory & Learning
+
+Lemma is a persistent memory server for AI agents over the Model Context Protocol.
+Every session starts blank — knowledge survives ONLY through tool calls. If you
+learn something and don't save it (`memory_add`), it is gone permanently.
+
+## Workflow
+1. **RECALL** — `memory_read` / `semantic_search`: load what's already known for this
+   project/task. Never re-explore code or re-derive facts that are already saved.
+2. **ACT** — do the task.
+3. **PERSIST** — `memory_add` for new insights; `guide_practice` for guides applied;
+   `session_attempt` for abandoned/dead-end approaches (the most valuable records).
+
+## Two knowledge layers
+- **Memory fragments** (`memory_read` / `memory_add`): atomic facts. Types: `fact`,
+  `pattern`, `lesson`, `warning`, `context`. Confidence evolves with use and feedback.
+- **Guides** (`guide_get` / `guide_distill` / `guide_practice`): procedural skills
+  distilled from fragments. Track usage count + success/failure rate.
+Pipeline: `experience -> memory_add -> pattern/lesson -> guide_distill -> guide_practice`.
+
+## Tools at a glance
+- **Recall & search**: `memory_read`, `semantic_search`, `memory_library` (full
+  snapshot + maintenance signals), `memory_stats`, `memory_audit`.
+- **Write & maintain**: `memory_add`, `memory_update`, `memory_forget`,
+  `memory_merge`, `memory_relate` (supports / contradicts / supersedes / related_to),
+  `memory_feedback`.
+- **Guides**: `guide_get`, `guide_create`, `guide_distill`, `guide_practice`,
+  `guide_update`, `guide_forget`, `guide_merge`.
+- **Sessions & reasoning**: `session_start`, `session_end`, `session_attempt`,
+  `session_stats`, `suggestion_respond`.
+- **Background intelligence**: `conflict_scan`, `proactive_analysis`,
+  `project_analytics` (run automatically; act on signals when sensible).
+
+## Writing a fragment
+```
+## [Topic Title]
+### Context
+[1-2 sentences: what and why it matters]
+### [Content Section]
+- [Key fact 1]
+- [Key fact 2]
+### Rules (optional)
+- [Absolute constraint]
+```
+One idea per fragment, 30-2000 chars, structured markdown (not prose). **Store
+fragments in ENGLISH** (required for search/retrieval). Never ask permission to save.
+
+## Background intelligence
+Conflict detection, distill/merge/refine suggestions, and auto-linking run
+automatically. From the CLI, `lemma -lib` prints a full knowledge-base snapshot
+and `lemma -vis` launches a visualizer.
+
+web search: 
+web search: site:undergraduate.study.cam.ac.uk international English language requirements IELTS TOEFL Cambridge undergraduate 2027 ...
+web search: 
+web search: site:ethz.ch bachelor tuition fees semester 2026 international 2027 language requirements German B2 application deadline foreign school certificate ...
+web search: 
+web search: site:iso.fudan.edu.cn 2026 undergraduate international students admission application fee tuition deadline Fudan English taught ...
+web search: 
+web search: 
+web search: 
+web search: '53,000'
+web search: 
+web search: site:sydney.edu.au/study/applying/how-to-apply/international-students application fee deadline undergraduate semester 1 2027 Sydney ...
+web search: 
+web search: 
+web search: 
+web search: site:undergraduate.study.cam.ac.uk SAT test score international applicants Cambridge US qualifications 2027 ...
+web search: 
+web search: '51,700'
+web search: 
+web search: 'B Veterinary Biology'
+web search: 
+web search: site:undergraduate.study.cam.ac.uk/apply/before/entry-requirements TOEFL iBT IELTS minimum Cambridge 2027 ...
+codex
+{"universities":[{"id":"ae117645-e24c-5269-8ed1-b5b826e53932","english":[{"test":"IELTS","minimum":7.5,"detail":"Normally 7.5 overall, usually no band below 7.0.","source_url":"https://www.undergraduate.study.cam.ac.uk/apply/before/entry-requirements"},{"test":"Cambridge C1/C2","minimum":193,"detail":"C1 Advanced: 193 overall, no element below 185; C2 Proficiency: 200 overall, no element below 185.","source_url":"https://www.undergraduate.study.cam.ac.uk/apply/before/entry-requirements"}],"tuition":{"amount":30798,"amount_max":70554,"currency":"GBP","period":"year","academic_year":"2027/28","detail":"2027-entry course fees; varies by subject. Annual College fee is additional.","source_url":"https://www.undergraduate.study.cam.ac.uk/international-students/international-fees-and-costs"},"application_fee":{"amount":60,"currency":"GBP","source_url":"https://www.undergraduate.study.cam.ac.uk/international-students/international-applications"},"deadlines":[{"title":"2027 entry UCAS deadline","due_at":"2026-10-15","route":"UCAS","source_url":"https://www.undergraduate.study.cam.ac.uk/apply/application-dates-deadlines"},{"title":"2027 entry My Cambridge Application deadline","due_at":"2026-10-22","route":"University portal","source_url":"https://www.undergraduate.study.cam.ac.uk/apply/application-dates-deadlines"}],"sat":{"policy":"accepted_alternative","p25":null,"p75":null,"source_url":"https://www.undergraduate.study.cam.ac.uk/international-students/international-entry-requirements"},"acceptance_rate":{"percent":16.3,"year":"2025","source_url":"https://www.undergraduate.study.cam.ac.uk/sites/default/files/2026-05/ug_admissions_statistics_2025_cycle.pdf"},"notes":"2025 overall success rate includes all domiciles; most international applicants pay the £60 fee, with listed exceptions."},{"id":"6020a2b5-3788-5dd1-b3f2-b9c6c7c6f99b","english":[],"tuition":{"amount":4380,"amount_max":null,"currency":"CHF","period":"year","academic_year":"2027/28","detail":"CHF 2,190 per semester for most foreign students; semester fees included.","source_url":"https://ethz.ch/students/en/studies/financial/studiengebuehren.html"},"application_fee":{"amount":150,"currency":"CHF","source_url":"https://ethz.ch/en/studies/bachelor/application/non-swiss-matriculation-certificate/how-to-apply.html"},"deadlines":[{"title":"Autumn 2027 entry; foreign school-leaving certificate","due_at":"2027-03-31","route":"ETH eApply","source_url":"https://www.lehrbetrieb.ethz.ch/eApply/ealogin.view?lang=en"}],"sat":null,"acceptance_rate":null,"notes":"Bachelor's teaching is mainly in German; German C1 is required and entrance exams depend on the school-leaving certificate."},{"id":"c67598f4-8b91-53a9-a98a-ebd185ced219","english":[{"test":"IELTS","minimum":6.5,"detail":"Standard minimum 6.5 overall, no band below 6.0; some courses require more.","source_url":"https://www.sydney.edu.au/study/applying/how-to-apply/international-students/english-language-requirements.html"},{"test":"TOEFL iBT","minimum":85,"detail":"85 overall equivalent to IELTS 6.5; some courses require more. TOEFL Home Edition not accepted.","source_url":"https://www.sydney.edu.au/content/dam/corporate/documents/about-us/governance-and-structure/academic-board/english-language-concordance-table-july-2026.pdf"},{"test":"PTE Academic","minimum":64,"detail":"64 overall equivalent to IELTS 6.5; some courses require more.","source_url":"https://www.sydney.edu.au/content/dam/corporate/documents/about-us/governance-and-structure/academic-board/english-language-concordance-table-july-2026.pdf"},{"test":"Cambridge C1/C2","minimum":176,"detail":"176 overall equivalent to IELTS 6.5; test acceptance can vary by course.","source_url":"https://www.sydney.edu.au/content/dam/corporate/documents/about-us/governance-and-structure/academic-board/english-language-concordance-table-july-2026.pdf"}],"tuition":{"amount":51700,"amount_max":69200,"currency":"AUD","period":"year","academic_year":"2027","detail":"Indicative first-year full-time international undergraduate fees; varies by course.","source_url":"https://www.sydney.edu.au/dam/corporate/documents/study/how-to-apply/international-admission-guide.pdf"},"application_fee":{"amount":150,"currency":"AUD","source_url":"https://www.sydney.edu.au/content/dam/corporate/documents/study/guides/usyd-international-guide-2026.pdf.coredownload.pdf"},"deadlines":[{"title":"Semester 1 (February) 2027 international applications","due_at":"2026-12-01","route":"University portal","source_url":"https://www.sydney.edu.au/study/applying/application-dates.html"}],"sat":{"policy":"accepted_alternative","p25":null,"p75":null,"source_url":"https://www.sydney.edu.au/dam/corporate/documents/study/how-to-apply/international-admission-guide.pdf"},"acceptance_rate":null,"notes":"Application dates vary by course, and applications may close when places fill."},{"id":"5c9532a7-118a-5e2d-ab32-92ade2e776a5","english":[{"test":"IELTS","minimum":6.5,"detail":"For 2027 English-taught undergraduate programs.","source_url":"https://www.fudan.edu.cn/_upload/article/files/b8/c4/9ccff9ad4f0c9dd9fac3ff4a99e7/abca3d5a-1e5d-4299-9ebf-896802486b00.pdf"},{"test":"TOEFL iBT","minimum":90,"detail":"90 total; new TOEFL scale minimum 4.5. For 2027 English-taught programs.","source_url":"https://www.fudan.edu.cn/_upload/article/files/b8/c4/9ccff9ad4f0c9dd9fac3ff4a99e7/abca3d5a-1e5d-4299-9ebf-896802486b00.pdf"},{"test":"Duolingo","minimum":110,"detail":"For 2027 English-taught undergraduate programs.","source_url":"https://www.fudan.edu.cn/_upload/article/files/b8/c4/9ccff9ad4f0c9dd9fac3ff4a99e7/abca3d5a-1e5d-4299-9ebf-896802486b00.pdf"},{"test":"PTE Academic","minimum":61,"detail":"For 2027 English-taught undergraduate programs.","source_url":"https://www.fudan.edu.cn/_upload/article/files/b8/c4/9ccff9ad4f0c9dd9fac3ff4a99e7/abca3d5a-1e5d-4299-9ebf-896802486b00.pdf"}],"tuition":{"amount":75000,"amount_max":140000,"currency":"RMB","period":"year","academic_year":"2027/28","detail":"2027 English-taught programs; annual rates vary by program and final fees are set at enrollment.","source_url":"https://iso.fudan.edu.cn/_upload/article/files/07/37/45fe56074904993107db5420bf54/13a71a09-184f-49a7-8915-08d51320a358.pdf"},"application_fee":{"amount":800,"currency":"RMB","source_url":"https://www.fudan.edu.cn/_upload/article/files/b8/c4/9ccff9ad4f0c9dd9fac3ff4a99e7/abca3d5a-1e5d-4299-9ebf-896802486b00.pdf"},"deadlines":[{"title":"2027 entry Round 1","due_at":"2027-02-26","route":"University portal","source_url":"https://www.fudan.edu.cn/_upload/article/files/b8/c4/9ccff9ad4f0c9dd9fac3ff4a99e7/abca3d5a-1e5d-4299-9ebf-896802486b00.pdf"},{"title":"2027 entry Round 2","due_at":"2027-04-15","route":"University portal","source_url":"https://www.fudan.edu.cn/_upload/article/files/b8/c4/9ccff9ad4f0c9dd9fac3ff4a99e7/abca3d5a-1e5d-4299-9ebf-896802486b00.pdf"}],"sat":null,"acceptance_rate":null,"notes":"These 2027 facts are for English-taught programs; CSCA is required."}] }
+tokens used
+119,324
+{"universities":[{"id":"ae117645-e24c-5269-8ed1-b5b826e53932","english":[{"test":"IELTS","minimum":7.5,"detail":"Normally 7.5 overall, usually no band below 7.0.","source_url":"https://www.undergraduate.study.cam.ac.uk/apply/before/entry-requirements"},{"test":"Cambridge C1/C2","minimum":193,"detail":"C1 Advanced: 193 overall, no element below 185; C2 Proficiency: 200 overall, no element below 185.","source_url":"https://www.undergraduate.study.cam.ac.uk/apply/before/entry-requirements"}],"tuition":{"amount":30798,"amount_max":70554,"currency":"GBP","period":"year","academic_year":"2027/28","detail":"2027-entry course fees; varies by subject. Annual College fee is additional.","source_url":"https://www.undergraduate.study.cam.ac.uk/international-students/international-fees-and-costs"},"application_fee":{"amount":60,"currency":"GBP","source_url":"https://www.undergraduate.study.cam.ac.uk/international-students/international-applications"},"deadlines":[{"title":"2027 entry UCAS deadline","due_at":"2026-10-15","route":"UCAS","source_url":"https://www.undergraduate.study.cam.ac.uk/apply/application-dates-deadlines"},{"title":"2027 entry My Cambridge Application deadline","due_at":"2026-10-22","route":"University portal","source_url":"https://www.undergraduate.study.cam.ac.uk/apply/application-dates-deadlines"}],"sat":{"policy":"accepted_alternative","p25":null,"p75":null,"source_url":"https://www.undergraduate.study.cam.ac.uk/international-students/international-entry-requirements"},"acceptance_rate":{"percent":16.3,"year":"2025","source_url":"https://www.undergraduate.study.cam.ac.uk/sites/default/files/2026-05/ug_admissions_statistics_2025_cycle.pdf"},"notes":"2025 overall success rate includes all domiciles; most international applicants pay the £60 fee, with listed exceptions."},{"id":"6020a2b5-3788-5dd1-b3f2-b9c6c7c6f99b","english":[],"tuition":{"amount":4380,"amount_max":null,"currency":"CHF","period":"year","academic_year":"2027/28","detail":"CHF 2,190 per semester for most foreign students; semester fees included.","source_url":"https://ethz.ch/students/en/studies/financial/studiengebuehren.html"},"application_fee":{"amount":150,"currency":"CHF","source_url":"https://ethz.ch/en/studies/bachelor/application/non-swiss-matriculation-certificate/how-to-apply.html"},"deadlines":[{"title":"Autumn 2027 entry; foreign school-leaving certificate","due_at":"2027-03-31","route":"ETH eApply","source_url":"https://www.lehrbetrieb.ethz.ch/eApply/ealogin.view?lang=en"}],"sat":null,"acceptance_rate":null,"notes":"Bachelor's teaching is mainly in German; German C1 is required and entrance exams depend on the school-leaving certificate."},{"id":"c67598f4-8b91-53a9-a98a-ebd185ced219","english":[{"test":"IELTS","minimum":6.5,"detail":"Standard minimum 6.5 overall, no band below 6.0; some courses require more.","source_url":"https://www.sydney.edu.au/study/applying/how-to-apply/international-students/english-language-requirements.html"},{"test":"TOEFL iBT","minimum":85,"detail":"85 overall equivalent to IELTS 6.5; some courses require more. TOEFL Home Edition not accepted.","source_url":"https://www.sydney.edu.au/content/dam/corporate/documents/about-us/governance-and-structure/academic-board/english-language-concordance-table-july-2026.pdf"},{"test":"PTE Academic","minimum":64,"detail":"64 overall equivalent to IELTS 6.5; some courses require more.","source_url":"https://www.sydney.edu.au/content/dam/corporate/documents/about-us/governance-and-structure/academic-board/english-language-concordance-table-july-2026.pdf"},{"test":"Cambridge C1/C2","minimum":176,"detail":"176 overall equivalent to IELTS 6.5; test acceptance can vary by course.","source_url":"https://www.sydney.edu.au/content/dam/corporate/documents/about-us/governance-and-structure/academic-board/english-language-concordance-table-july-2026.pdf"}],"tuition":{"amount":51700,"amount_max":69200,"currency":"AUD","period":"year","academic_year":"2027","detail":"Indicative first-year full-time international undergraduate fees; varies by course.","source_url":"https://www.sydney.edu.au/dam/corporate/documents/study/how-to-apply/international-admission-guide.pdf"},"application_fee":{"amount":150,"currency":"AUD","source_url":"https://www.sydney.edu.au/content/dam/corporate/documents/study/guides/usyd-international-guide-2026.pdf.coredownload.pdf"},"deadlines":[{"title":"Semester 1 (February) 2027 international applications","due_at":"2026-12-01","route":"University portal","source_url":"https://www.sydney.edu.au/study/applying/application-dates.html"}],"sat":{"policy":"accepted_alternative","p25":null,"p75":null,"source_url":"https://www.sydney.edu.au/dam/corporate/documents/study/how-to-apply/international-admission-guide.pdf"},"acceptance_rate":null,"notes":"Application dates vary by course, and applications may close when places fill."},{"id":"5c9532a7-118a-5e2d-ab32-92ade2e776a5","english":[{"test":"IELTS","minimum":6.5,"detail":"For 2027 English-taught undergraduate programs.","source_url":"https://www.fudan.edu.cn/_upload/article/files/b8/c4/9ccff9ad4f0c9dd9fac3ff4a99e7/abca3d5a-1e5d-4299-9ebf-896802486b00.pdf"},{"test":"TOEFL iBT","minimum":90,"detail":"90 total; new TOEFL scale minimum 4.5. For 2027 English-taught programs.","source_url":"https://www.fudan.edu.cn/_upload/article/files/b8/c4/9ccff9ad4f0c9dd9fac3ff4a99e7/abca3d5a-1e5d-4299-9ebf-896802486b00.pdf"},{"test":"Duolingo","minimum":110,"detail":"For 2027 English-taught undergraduate programs.","source_url":"https://www.fudan.edu.cn/_upload/article/files/b8/c4/9ccff9ad4f0c9dd9fac3ff4a99e7/abca3d5a-1e5d-4299-9ebf-896802486b00.pdf"},{"test":"PTE Academic","minimum":61,"detail":"For 2027 English-taught undergraduate programs.","source_url":"https://www.fudan.edu.cn/_upload/article/files/b8/c4/9ccff9ad4f0c9dd9fac3ff4a99e7/abca3d5a-1e5d-4299-9ebf-896802486b00.pdf"}],"tuition":{"amount":75000,"amount_max":140000,"currency":"RMB","period":"year","academic_year":"2027/28","detail":"2027 English-taught programs; annual rates vary by program and final fees are set at enrollment.","source_url":"https://iso.fudan.edu.cn/_upload/article/files/07/37/45fe56074904993107db5420bf54/13a71a09-184f-49a7-8915-08d51320a358.pdf"},"application_fee":{"amount":800,"currency":"RMB","source_url":"https://www.fudan.edu.cn/_upload/article/files/b8/c4/9ccff9ad4f0c9dd9fac3ff4a99e7/abca3d5a-1e5d-4299-9ebf-896802486b00.pdf"},"deadlines":[{"title":"2027 entry Round 1","due_at":"2027-02-26","route":"University portal","source_url":"https://www.fudan.edu.cn/_upload/article/files/b8/c4/9ccff9ad4f0c9dd9fac3ff4a99e7/abca3d5a-1e5d-4299-9ebf-896802486b00.pdf"},{"title":"2027 entry Round 2","due_at":"2027-04-15","route":"University portal","source_url":"https://www.fudan.edu.cn/_upload/article/files/b8/c4/9ccff9ad4f0c9dd9fac3ff4a99e7/abca3d5a-1e5d-4299-9ebf-896802486b00.pdf"}],"sat":null,"acceptance_rate":null,"notes":"These 2027 facts are for English-taught programs; CSCA is required."}] }

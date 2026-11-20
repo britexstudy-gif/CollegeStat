@@ -1,0 +1,144 @@
+OpenAI Codex v0.169.0
+--------
+workdir: /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+model: gpt-6-luna
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: high
+reasoning summaries: none
+session id: 01a1ee8d-e475-73e0-a26e-b4dd0739a608
+--------
+user
+You are a careful admissions-data researcher. For each university below, find facts for an
+INTERNATIONAL applicant to a FIRST-YEAR BACHELOR'S degree starting in autumn 2027 (or the nearest
+published cycle). Use the live web. Rules:
+
+- Official sources only: the university's own website (its domain or subdomains), the national
+  application service (UCAS, Common App, OUAC, uni-assist, Studyinkorea, etc.) or a government
+  statistics office. Never use rankings sites, forums, agencies, Wikipedia or blogs.
+- Every value needs the exact page URL where you read it (source_url). If you could not verify a
+  value on an official page, leave it out (null or an empty list). Never guess or estimate.
+- english: the lowest overall score accepted for undergraduate entry, per test (IELTS Academic
+  overall, TOEFL iBT total, Duolingo, PTE). If programmes differ, give the general/lowest common
+  university minimum and say so in detail (e.g. "6.5 overall, no band below 6.0; some
+  programmes higher").
+- tuition: the yearly tuition for international (non-EU / overseas) undergraduates in the local
+  currency. If it varies by programme give amount = lowest and amount_max = highest, and the
+  academic_year the fee applies to (e.g. "2026/27"). If tuition is free, amount = 0.
+- application_fee: for international first-year applicants, local currency.
+- deadlines: the main 2027-entry first-year deadlines (ISO date YYYY-MM-DD) with the route
+  (e.g. "Common App, Regular Decision", "UCAS", "university portal"). Only dates actually
+  published; if only the 2026-entry date is published, include it and put "2026 entry" in title.
+- sat: policy for international applicants; p25/p75 total SAT only if the university publishes
+  them (Common Data Set or admissions profile).
+- acceptance_rate: only if officially published (CDS, admissions statistics page).
+- notes: one short line on anything important (e.g. "Foundation year required for 11-year
+  school certificates"), else "".
+
+Spend effort on the facts students need most: English minimum, tuition, deadlines. Keep each
+detail under 160 characters. Return only the JSON that matches the schema; use each
+university's id exactly as given.
+
+Universities:
+- id: 78f4c065-33e2-5ada-843b-139c16a49170 | Rutgers University-New Brunswick | New Brunswick, US | https://newbrunswick.rutgers.edu/
+- id: 76aa91bc-0527-5b1b-9891-2b4d84037b90 | Johann Wolfgang Goethe Universität Frankfurt am Main | Frankfurt am Main, DE | http://www.uni-frankfurt.de/
+- id: 4a913ea2-abf9-5107-b6cc-86e5516b9c0f | L.N. Gumilyov Eurasian National University | Astana, KZ | http://www.enu.kz/
+- id: 7fe37c11-dd76-528e-a67e-1b0746335f03 | Universidade Federal do Rio de Janeiro | Rio de Janeiro, BR | http://www.ufrj.br/
+codex
+I’ll check the saved research context first, then verify each school’s admissions details on official pages and return only the requested JSON.
+exec
+/bin/zsh -lc 'cat /Users/likeanew/.agents/skills/lemma/SKILL.md' in /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+ succeeded in 0ms:
+---
+name: lemma
+description: Persistent cross-session memory for AI agents via MCP. BEFORE starting ANY task (coding, debugging, refactoring, research, docs, optimization — any language), FIRST call memory_read to load what you already know so you never re-derive or re-explore known facts. AFTER finishing, call memory_add to persist new findings and session_attempt for dead ends — unsaved knowledge is lost permanently. Distills reusable guides from experience.
+---
+
+<!-- lemma:skill:v=0.21.0 -->
+
+# Lemma — Persistent Memory & Learning
+
+Lemma is a persistent memory server for AI agents over the Model Context Protocol.
+Every session starts blank — knowledge survives ONLY through tool calls. If you
+learn something and don't save it (`memory_add`), it is gone permanently.
+
+## Workflow
+1. **RECALL** — `memory_read` / `semantic_search`: load what's already known for this
+   project/task. Never re-explore code or re-derive facts that are already saved.
+2. **ACT** — do the task.
+3. **PERSIST** — `memory_add` for new insights; `guide_practice` for guides applied;
+   `session_attempt` for abandoned/dead-end approaches (the most valuable records).
+
+## Two knowledge layers
+- **Memory fragments** (`memory_read` / `memory_add`): atomic facts. Types: `fact`,
+  `pattern`, `lesson`, `warning`, `context`. Confidence evolves with use and feedback.
+- **Guides** (`guide_get` / `guide_distill` / `guide_practice`): procedural skills
+  distilled from fragments. Track usage count + success/failure rate.
+Pipeline: `experience -> memory_add -> pattern/lesson -> guide_distill -> guide_practice`.
+
+## Tools at a glance
+- **Recall & search**: `memory_read`, `semantic_search`, `memory_library` (full
+  snapshot + maintenance signals), `memory_stats`, `memory_audit`.
+- **Write & maintain**: `memory_add`, `memory_update`, `memory_forget`,
+  `memory_merge`, `memory_relate` (supports / contradicts / supersedes / related_to),
+  `memory_feedback`.
+- **Guides**: `guide_get`, `guide_create`, `guide_distill`, `guide_practice`,
+  `guide_update`, `guide_forget`, `guide_merge`.
+- **Sessions & reasoning**: `session_start`, `session_end`, `session_attempt`,
+  `session_stats`, `suggestion_respond`.
+- **Background intelligence**: `conflict_scan`, `proactive_analysis`,
+  `project_analytics` (run automatically; act on signals when sensible).
+
+## Writing a fragment
+```
+## [Topic Title]
+### Context
+[1-2 sentences: what and why it matters]
+### [Content Section]
+- [Key fact 1]
+- [Key fact 2]
+### Rules (optional)
+- [Absolute constraint]
+```
+One idea per fragment, 30-2000 chars, structured markdown (not prose). **Store
+fragments in ENGLISH** (required for search/retrieval). Never ask permission to save.
+
+## Background intelligence
+Conflict detection, distill/merge/refine suggestions, and auto-linking run
+automatically. From the CLI, `lemma -lib` prints a full knowledge-base snapshot
+and `lemma -vis` launches a visualizer.
+
+web search: 
+web search: site:admissions.rutgers.edu international first year English proficiency minimum tuition 2026 2027 application fee deadline SAT ...
+web search: 
+web search: site:admissions.rutgers.edu first year 2027 application dates November 1 2026 Rutgers ...
+web search: 
+web search: 
+web search: 
+web search: site:uni-frankfurt.de "15 July" "international" bachelor winter semester application Goethe foreign certificates ...
+web search: 
+web search: 
+web search: 
+web search: 
+web search: 
+web search: site:uni-frankfurt.de/en/studium "July 15, 2026" international applicants winter semester bachelor's ...
+web search: 
+web search: site:uni-frankfurt.de/en/studium "tuition fees" "semester fee" Goethe University international undergraduate ...
+web search: 
+web search: "2026 year admission" "foreign citizens" "ENU" "tuition" bachelor USD ...
+web search: 
+web search: 
+web search: 
+web search: site:admissions.rutgers.edu "middle 50%" SAT 2025 New Brunswick profile ...
+web search: 
+web search: site:admissions.rutgers.edu "First-Year Class of 2025" applications admitted Rutgers-New Brunswick admit rate ...
+web search: 
+web search: site:uni-assist.de fees 75 euros first application 30 each additional 2026 ...
+web search: 
+web search: site:uni-frankfurt.de/en "No tuition fees" "Bachelor" Frankfurt University ...
+codex
+{"universities":[{"id":"78f4c065-33e2-5ada-843b-139c16a49170","english":[{"test":"IELTS","minimum":6.5,"detail":"6.5 overall for New Brunswick; some programs require higher scores.","source_url":"https://infopacket.admissions.rutgers.edu/apply/international-applicants"},{"test":"TOEFL iBT","minimum":4.5,"detail":"Minimum 4.5 on the revised TOEFL iBT scale for tests from January 22, 2026.","source_url":"https://infopacket.admissions.rutgers.edu/apply/international-applicants"},{"test":"Duolingo","minimum":115,"detail":"Minimum 115; Pharmacy and Nursing require 130.","source_url":"https://infopacket.admissions.rutgers.edu/apply/international-applicants"},{"test":"PTE Academic","minimum":53,"detail":"Minimum 53 for New Brunswick.","source_url":"https://infopacket.admissions.rutgers.edu/apply/international-applicants"}],"tuition":{"amount":36831,"amount_max":null,"currency":"USD","period":"year","academic_year":"2026/27","detail":"Non-New Jersey tuition; mandatory fees are additional and vary by school.","source_url":"https://www.admissions.rutgers.edu/costs-and-aid/tuition-fees"},"application_fee":{"amount":70,"currency":"USD","source_url":"https://www.admissions.rutgers.edu/apply/first-year-applicants"},"deadlines":[{"title":"Fall 2027 first-year Early Action","due_at":"2026-11-01","route":"Common App or Rutgers Application","source_url":"https://admissions.rutgers.edu/apply/dates-deadlines/new-brunswick"},{"title":"Fall 2027 first-year Regular Decision","due_at":"2026-12-01","route":"Common App or Rutgers Application","source_url":"https://admissions.rutgers.edu/apply/dates-deadlines/new-brunswick"}],"sat":{"policy":"optional","p25":null,"p75":null,"source_url":"https://admissions.rutgers.edu/apply/first-year-applicants"},"acceptance_rate":{"percent":70.7,"year":"Fall 2023 international first-year applicants","source_url":"https://oirap.rutgers.edu/CDS/2023/New%20Brunswick%20CDS_2023-2024_final_V1.pdf"},"notes":""},{"id":"76aa91bc-0527-5b1b-9891-2b4d84037b90","english":[],"tuition":{"amount":0,"amount_max":null,"currency":"EUR","period":"year","academic_year":"2026/27","detail":"No tuition; semester contribution is charged separately.","source_url":"https://www.wiwi.uni-frankfurt.de/en/study/study-programs/master/master-in-money-macro-and-finance/tuition-fees-and-scholarships"},"application_fee":{"amount":75,"currency":"EUR","source_url":"https://www.uni-assist.de/en/how-to-apply/pay-all-fees/handling-fees/"},"deadlines":[{"title":"2026 entry (winter semester; published program date)","due_at":"2026-07-15","route":"uni-assist or university portal, depending on program","source_url":"https://www.wiwi.uni-frankfurt.de/en/study/study-programs/bachelor/bachelor-of-science-in-economics-and-business-administration/study-program-profile"}],"sat":null,"acceptance_rate":null,"notes":"Foreign school diplomas may require a preparatory Studienkolleg; most bachelor's programs require German."},{"id":"4a913ea2-abf9-5107-b6cc-86e5516b9c0f","english":[],"tuition":{"amount":4400,"amount_max":5000,"currency":"USD","period":"year","academic_year":"2026/27","detail":"Published annual foreign-citizen bachelor fees vary by program; ENU lists fees in USD/EUR.","source_url":"https://smart.enu.kz/api/serve?path=/general/files/e53356b4-7e47-44d8-9f61-9003edc46ada.pdf"},"application_fee":null,"deadlines":[{"title":"2026 entry application window 1","due_at":"2026-03-31","route":"AIS Platonus or in-person; foreign-citizen interview","source_url":"https://enu.enu.kz/en/page/applicants/for-foreign-citizens"},{"title":"2026 entry application window 2","due_at":"2026-07-25","route":"AIS Platonus or in-person; foreign-citizen interview","source_url":"https://enu.enu.kz/en/page/applicants/for-foreign-citizens"}],"sat":null,"acceptance_rate":null,"notes":""},{"id":"7fe37c11-dd76-528e-a67e-1b0746335f03","english":[],"tuition":{"amount":0,"amount_max":null,"currency":"BRL","period":"year","academic_year":"2026/27","detail":"PEC-G full-degree placements are tuition-free.","source_url":"https://xn--graduao-2wa9a.ufrj.br/index.php/organograma/628-divisao-de-integracao-academica/pec-g"},"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"PEC-G requires Portuguese proficiency and is limited to eligible foreign nationals; 2027 enrollment dates are not yet published."}] }
+tokens used
+108,988
+{"universities":[{"id":"78f4c065-33e2-5ada-843b-139c16a49170","english":[{"test":"IELTS","minimum":6.5,"detail":"6.5 overall for New Brunswick; some programs require higher scores.","source_url":"https://infopacket.admissions.rutgers.edu/apply/international-applicants"},{"test":"TOEFL iBT","minimum":4.5,"detail":"Minimum 4.5 on the revised TOEFL iBT scale for tests from January 22, 2026.","source_url":"https://infopacket.admissions.rutgers.edu/apply/international-applicants"},{"test":"Duolingo","minimum":115,"detail":"Minimum 115; Pharmacy and Nursing require 130.","source_url":"https://infopacket.admissions.rutgers.edu/apply/international-applicants"},{"test":"PTE Academic","minimum":53,"detail":"Minimum 53 for New Brunswick.","source_url":"https://infopacket.admissions.rutgers.edu/apply/international-applicants"}],"tuition":{"amount":36831,"amount_max":null,"currency":"USD","period":"year","academic_year":"2026/27","detail":"Non-New Jersey tuition; mandatory fees are additional and vary by school.","source_url":"https://www.admissions.rutgers.edu/costs-and-aid/tuition-fees"},"application_fee":{"amount":70,"currency":"USD","source_url":"https://www.admissions.rutgers.edu/apply/first-year-applicants"},"deadlines":[{"title":"Fall 2027 first-year Early Action","due_at":"2026-11-01","route":"Common App or Rutgers Application","source_url":"https://admissions.rutgers.edu/apply/dates-deadlines/new-brunswick"},{"title":"Fall 2027 first-year Regular Decision","due_at":"2026-12-01","route":"Common App or Rutgers Application","source_url":"https://admissions.rutgers.edu/apply/dates-deadlines/new-brunswick"}],"sat":{"policy":"optional","p25":null,"p75":null,"source_url":"https://admissions.rutgers.edu/apply/first-year-applicants"},"acceptance_rate":{"percent":70.7,"year":"Fall 2023 international first-year applicants","source_url":"https://oirap.rutgers.edu/CDS/2023/New%20Brunswick%20CDS_2023-2024_final_V1.pdf"},"notes":""},{"id":"76aa91bc-0527-5b1b-9891-2b4d84037b90","english":[],"tuition":{"amount":0,"amount_max":null,"currency":"EUR","period":"year","academic_year":"2026/27","detail":"No tuition; semester contribution is charged separately.","source_url":"https://www.wiwi.uni-frankfurt.de/en/study/study-programs/master/master-in-money-macro-and-finance/tuition-fees-and-scholarships"},"application_fee":{"amount":75,"currency":"EUR","source_url":"https://www.uni-assist.de/en/how-to-apply/pay-all-fees/handling-fees/"},"deadlines":[{"title":"2026 entry (winter semester; published program date)","due_at":"2026-07-15","route":"uni-assist or university portal, depending on program","source_url":"https://www.wiwi.uni-frankfurt.de/en/study/study-programs/bachelor/bachelor-of-science-in-economics-and-business-administration/study-program-profile"}],"sat":null,"acceptance_rate":null,"notes":"Foreign school diplomas may require a preparatory Studienkolleg; most bachelor's programs require German."},{"id":"4a913ea2-abf9-5107-b6cc-86e5516b9c0f","english":[],"tuition":{"amount":4400,"amount_max":5000,"currency":"USD","period":"year","academic_year":"2026/27","detail":"Published annual foreign-citizen bachelor fees vary by program; ENU lists fees in USD/EUR.","source_url":"https://smart.enu.kz/api/serve?path=/general/files/e53356b4-7e47-44d8-9f61-9003edc46ada.pdf"},"application_fee":null,"deadlines":[{"title":"2026 entry application window 1","due_at":"2026-03-31","route":"AIS Platonus or in-person; foreign-citizen interview","source_url":"https://enu.enu.kz/en/page/applicants/for-foreign-citizens"},{"title":"2026 entry application window 2","due_at":"2026-07-25","route":"AIS Platonus or in-person; foreign-citizen interview","source_url":"https://enu.enu.kz/en/page/applicants/for-foreign-citizens"}],"sat":null,"acceptance_rate":null,"notes":""},{"id":"7fe37c11-dd76-528e-a67e-1b0746335f03","english":[],"tuition":{"amount":0,"amount_max":null,"currency":"BRL","period":"year","academic_year":"2026/27","detail":"PEC-G full-degree placements are tuition-free.","source_url":"https://xn--graduao-2wa9a.ufrj.br/index.php/organograma/628-divisao-de-integracao-academica/pec-g"},"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"PEC-G requires Portuguese proficiency and is limited to eligible foreign nationals; 2027 enrollment dates are not yet published."}] }

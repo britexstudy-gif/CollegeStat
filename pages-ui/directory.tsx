@@ -1,372 +1,493 @@
 "use client";
-import { useLiquidGlass } from "@/components/college/use-liquid-glass";
-import { useEffect, useState } from "react";
-import { useRouter, useSearchParams } from "next/navigation";
+import { AdmissionChip } from "@/components/college/admission-chip";
+import { MoreResults, nextPageHref, useMoreResults } from "@/components/college/more-results";
+import { workspaceHref } from "@/lib/workspace-navigation";
 import {
-  Search,
-  SlidersHorizontal,
+  useCallback,
+  useEffect,
+  useRef,
+  useState,
+  useSyncExternalStore,
+} from "react";
+import { useRouter, useSearchParams, usePathname } from "next/navigation";
+import {
+  ArrowRight,
+  Bookmark,
+  BookmarkCheck,
+  Check,
   Grid2X2,
   List,
-  Table2,
-  Map,
-  Bookmark,
+  Plus,
+  Search,
+  SlidersHorizontal,
   X,
-  ArrowRight,
 } from "lucide-react";
+import { toast } from "sonner";
+import { WorkspaceLink as Link } from "@/components/college/workspace-link";
+import { useCollege } from "@/components/college/provider";
+import { useT } from "@/components/college/i18n";
+import { UniversityLogo } from "@/components/college/primitives";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 import {
-  Accordion,
-  AccordionItem,
-  AccordionTrigger,
-  AccordionContent,
-} from "@/components/ui/accordion";
-import { Checkbox } from "@/components/ui/checkbox";
-import { PercentageRange } from "@/components/college/percentage-range";
+  Empty,
+  EmptyContent,
+  EmptyDescription,
+  EmptyHeader,
+  EmptyTitle,
+} from "@/components/ui/empty";
+import { Input } from "@/components/ui/input";
+import {
+  InputGroup,
+  InputGroupAddon,
+  InputGroupButton,
+  InputGroupInput,
+} from "@/components/ui/input-group";
+import {
+  NativeSelect,
+  NativeSelectOptGroup,
+  NativeSelectOption,
+} from "@/components/ui/native-select";
 import {
   Sheet,
   SheetContent,
-  SheetTitle,
   SheetDescription,
+  SheetFooter,
+  SheetHeader,
+  SheetTitle,
 } from "@/components/ui/sheet";
 import { Skeleton } from "@/components/ui/skeleton";
-import {
-  DropdownMenu,
-  DropdownMenuTrigger,
-  DropdownMenuContent,
-  DropdownMenuCheckboxItem,
-} from "@/components/ui/dropdown-menu";
-import { toast } from "sonner";
-import { useCollege } from "@/components/college/provider";
-import { UniversityCard } from "@/components/college/university-card";
-import {
-  Choice,
-  EmptyState,
-  UniversityLogo,
-} from "@/components/college/primitives";
-import { UniversityMap } from "@/components/college/university-map";
-import { QuickView } from "@/components/college/quick-view";
-import { formatMetric, SourceDrawer } from "@/components/college/metrics";
-import { countryName, countries, University } from "@/lib/domain";
+import { Slider } from "@/components/ui/slider";
+import { Toggle } from "@/components/ui/toggle";
+import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
+import { countries, countryName, currency, type University } from "@/lib/domain";
 import {
   Filters,
   readFilters,
   filterURL,
+  filterSchema,
   defaultFilters,
   parseResearchQuery,
-  metricDefinitions,
   valueOf,
-  MetricKey,
 } from "@/lib/research";
 import { exploreUniversities, ExplorerResult } from "@/lib/supabase/catalogue";
 import { filterLabel } from "@/lib/filter-labels";
-import { getSupabase } from "@/lib/supabase/client";
+import { rankLabel, rankingPublishers, universityRanks, type Publisher } from "@/lib/ranking-highlights";
+import { saveProviderSearch } from "@/services/provider-account";
+
+const ALLOWED_VIEWS = ["grid", "list"] as const;
+export type DirectoryView = (typeof ALLOWED_VIEWS)[number];
+const DIRECTORY_DEBOUNCE_MS = 220;
+const DIRECTORY_TIMEOUT_MS = 8000;
+const DIRECTORY_TIMEOUT_MESSAGE =
+  "University results took too long to load. Please retry.";
+const DIRECTORY_ERROR_MESSAGE =
+  "University results could not be loaded. Please retry.";
+function directoryView(value: string | null): DirectoryView {
+  return (ALLOWED_VIEWS as readonly string[]).includes(value ?? "")
+    ? (value as DirectoryView)
+    : "list";
+}
+
+const HEADING = "font-[family-name:Poppins,Montserrat,Inter,system-ui,sans-serif]";
+const MAX_COMPARE = 4;
+const CENTRAL_ASIA = ["UZ", "KZ", "KG", "TJ", "TM"];
+/** Foundation is not offered until programme data carries that level (no dead filters). */
+const LEVELS = [
+  ["Bachelor", "uni.list.level.bachelor"],
+  ["Master", "uni.list.level.master"],
+  ["Doctorate", "uni.list.level.phd"],
+] as const;
+const CENTRAL_ASIA_VALUE = CENTRAL_ASIA.join(",");
+/** Broad subject areas published with the student data (THE subject tables). */
+const SUBJECTS = [
+  "Accounting & Finance", "Agriculture & Forestry", "Archaeology", "Architecture", "Art",
+  "Biological Sciences", "Business & Management", "Chemical Engineering", "Chemistry",
+  "Civil Engineering", "Communication & Media Studies", "Computer Science",
+  "Earth & Marine Sciences", "Economics & Econometrics", "Education",
+  "Electrical & Electronic Engineering", "Environmental", "General Engineering", "Geography",
+  "Geology", "History", "Languages", "Law", "Literature & Linguistics",
+  "Mathematics & Statistics", "Mechanical & Aerospace Engineering", "Medicine & Dentistry",
+  "Other Health", "Performing Arts & Design", "Philosophy & Theology", "Physics & Astronomy",
+  "Politics & International Studies (incl Development Studies)", "Psychology", "Sociology",
+  "Sport Science", "Veterinary Science",
+];
+/** The hosted explorer (a SQL function) orders by QS only; THE and ARWU ordering exists in the bundled explorer. */
+const HOSTED = process.env.NEXT_PUBLIC_CATALOGUE_SOURCE === "supabase";
+const SORTS = [
+  ["rank", "uni.list.sort.qs"],
+  ...(HOSTED
+    ? []
+    : ([
+        ["rank_the", "uni.list.sort.the"],
+        ["rank_arwu", "uni.list.sort.arwu"],
+      ] as const)),
+  ["tuition", "uni.list.sort.tuition"],
+  ["admission", "uni.list.sort.admission"],
+] as const;
+const TUITION_MIN = 2000;
+const TUITION_MAX = 60000;
+/** Filters the bar does not show; when set from a link or a query they appear as removable chips. */
+const CHIP_KEYS = [
+  "region", "city", "language", "type", "ielts_max", "admission_min", "admission_max",
+  "intl_min", "graduation_min", "aid",
+] as const;
+
+function bestRank(u: University, sort: Filters["sort"]) {
+  const ranks = universityRanks(u);
+  const wanted: Publisher | undefined =
+    sort === "rank_the" ? "the" : sort === "rank_arwu" ? "arwu" : sort === "rank" ? "qs" : undefined;
+  return (
+    (wanted && ranks.find((r) => r.provider === wanted)) ||
+    (["qs", "the", "arwu"] as const).map((p) => ranks.find((r) => r.provider === p)).find(Boolean)
+  );
+}
+
 export default function Directory({
   initialResult,
   initialQuery = "",
+  initialError = "",
 }: {
   initialResult?: ExplorerResult;
   initialQuery?: string;
+  initialError?: string;
 }) {
-  const searchGlass = useLiquidGlass<HTMLDivElement>();
+  const t = useT();
+  const [hydrated, setHydrated] = useState(false);
   const s = useCollege(),
+    pathname = usePathname(),
     router = useRouter(),
     params = useSearchParams(),
-    query = params.toString(),
-    f = readFilters(new URLSearchParams(query));
+    query = hydrated ? params.toString() : initialQuery,
+    f = readFilters(new URLSearchParams(query)),
+    filterKey = filterURL(f),
+    view = directoryView(new URLSearchParams(query).get("view"));
+  const accountGeneration = useSyncExternalStore(
+    useCallback(
+      (listener) => s.accountScope.subscribe(listener),
+      [s.accountScope],
+    ),
+    () => s.accountScope.capture().generation,
+    () => 0,
+  );
+  const renderedAccount = {
+    owner: s.user?.id || null,
+    generation: accountGeneration,
+  };
+  const searchDraft = useRef<{ fingerprint: string; id: string } | null>(null);
+  const searchPending = useRef<string | null>(null);
+  const [pendingSearch, setPendingSearch] = useState<string | null>(null);
+  const accountKey = `${renderedAccount.owner}:${accountGeneration}`;
+  useEffect(() => setHydrated(true), []);
   const [retry, setRetry] = useState(0);
   const [result, setResult] = useState<ExplorerResult | null>(
       initialResult || null,
     ),
-    [busy, setBusy] = useState(!initialResult),
-    [error, setError] = useState(""),
-    [unparsed, setUnparsed] = useState(params.get("unresolved") || ""),
-    [view, setView] = useState(params.get("view") || "list"),
-    [open, setOpen] = useState(false),
-    [quick, setQuick] = useState<University | null>(null),
-    [search, setSearch] = useState(f.q),
-    [columns, setColumns] = useState<MetricKey[]>([
-      "admission",
-      "tuition",
-      "aid_recipients",
-      "international_students",
-    ]);
+    [busy, setBusy] = useState(!initialResult && !initialError),
+    [error, setError] = useState(initialError),
+    [unparsed, setUnparsed] = useState(
+      new URLSearchParams(query).get("unresolved") || "",
+    ),
+    [sheet, setSheet] = useState(false),
+    [more, setMore] = useState(false),
+    [search, setSearch] = useState(f.q);
   const update = (patch: Partial<Filters>) => {
+    const next = new URLSearchParams(query);
+    for (const key of Object.keys(filterSchema.shape)) next.delete(key);
+    for (const [key, value] of new URLSearchParams(
+      filterURL({ ...f, ...patch, page: patch.page ?? 1 }),
+    ))
+      next.set(key, value);
     router.replace(
-      "/universities?" + filterURL({ ...f, ...patch, page: patch.page ?? 1 }),
+      workspaceHref("/universities?" + next + window.location.hash, pathname),
+      { scroll: false },
+    );
+  };
+  const setViewParam = (name: DirectoryView) => {
+    const next = new URLSearchParams(query);
+    next.set("view", name);
+    router.replace(
+      workspaceHref("/universities?" + next + window.location.hash, pathname),
       { scroll: false },
     );
   };
   useEffect(() => {
-    if (initialResult && query === initialQuery && retry === 0) {
+    const initialKey = filterURL(
+      readFilters(new URLSearchParams(initialQuery)),
+    );
+    if (initialError && filterKey === initialKey && retry === 0) {
+      setBusy(false);
+      return;
+    }
+    if (initialResult && filterKey === initialKey && retry === 0) {
       setResult(initialResult);
       setBusy(false);
       setError("");
       return;
     }
     let live = true;
+    const controller = new AbortController();
+    let timeout: ReturnType<typeof setTimeout> | undefined;
+    let timedOut = false;
     setBusy(true);
-    exploreUniversities(readFilters(new URLSearchParams(query)))
-      .then((r) => {
-        if (live) {
-          setResult(r);
-          setError("");
-        }
-      })
-      .catch(() => {
-        if (live)
-          setError("University results could not be loaded. Please retry.");
-      })
-      .finally(() => {
-        if (live) setBusy(false);
-      });
+    const timer = setTimeout(() => {
+      timeout = setTimeout(() => {
+        timedOut = true;
+        controller.abort();
+      }, DIRECTORY_TIMEOUT_MS);
+      exploreUniversities(
+        readFilters(new URLSearchParams(filterKey)),
+        controller.signal,
+      )
+        .then((r) => {
+          if (live) {
+            setResult(r);
+            setError("");
+          }
+        })
+        .catch(() => {
+          if (!live) return;
+          if (controller.signal.aborted && !timedOut) return;
+          setError(
+            timedOut ? DIRECTORY_TIMEOUT_MESSAGE : DIRECTORY_ERROR_MESSAGE,
+          );
+        })
+        .finally(() => {
+          if (timeout !== undefined) clearTimeout(timeout);
+          if (live) setBusy(false);
+        });
+    }, DIRECTORY_DEBOUNCE_MS);
     return () => {
       live = false;
+      clearTimeout(timer);
+      if (timeout !== undefined) clearTimeout(timeout);
+      controller.abort();
     };
-  }, [query, retry, initialResult, initialQuery]);
+  }, [filterKey, retry, initialResult, initialQuery, initialError]);
   useEffect(() => {
     setSearch(f.q);
   }, [f.q]);
   const saveSearch = async () => {
-    const db = getSupabase();
-    if (!db || !s.user) {
+    const token = { ...renderedAccount };
+    if (!token.owner) {
       s.openAuth();
       return;
     }
-    const { error } = await db.from("saved_searches").insert({
-      user_id: s.user.id,
-      name:
-        search ||
-        [f.country && countryName(f.country), f.field, f.region]
-          .filter(Boolean)
-          .join(" · ") ||
-        "University research",
-      filters: f,
-    });
-    toast[error ? "error" : "success"](
-      error ? "Could not save search" : "Search saved to your workspace",
-    );
+    if (
+      !s.accountScope.isCurrent(token) ||
+      searchPending.current === accountKey
+    )
+      return;
+    const name =
+      search ||
+      [f.country && (f.country === CENTRAL_ASIA_VALUE ? t("uni.list.country.ca") : countryName(f.country)), f.field, f.region]
+        .filter(Boolean)
+        .join(" · ") ||
+      t("uni.list.title");
+    const fingerprint = JSON.stringify([accountKey, name, f]);
+    if (searchDraft.current?.fingerprint !== fingerprint)
+      searchDraft.current = { fingerprint, id: crypto.randomUUID() };
+    const draft = searchDraft.current;
+    searchPending.current = accountKey;
+    setPendingSearch(accountKey);
+    try {
+      await saveProviderSearch(s.accountScope, name, f, draft.id, token);
+      if (!s.accountScope.isCurrent(token)) return;
+      if (searchDraft.current === draft) searchDraft.current = null;
+      toast.success(t("uni.list.saved"));
+    } catch {
+      if (s.accountScope.isCurrent(token)) toast.error(t("uni.list.save_failed"));
+    } finally {
+      if (s.accountScope.isCurrent(token)) {
+        if (searchPending.current === accountKey) searchPending.current = null;
+        setPendingSearch(null);
+      }
+    }
   };
-  const active = Object.entries(f).filter(
-    ([key, value]) =>
-      key !== "page" &&
-      key !== "sort" &&
-      value !== undefined &&
-      value !== "" &&
-      value !== defaultFilters[key as keyof Filters],
-  );
-  const choice = (key: keyof Filters, label: string, options: string[]) => (
-    <Choice
-      label={label}
-      value={String(f[key] || "all")}
-      onChange={(v) => update({ [key]: v === "all" ? "" : v })}
-      options={[
-        { value: "all", label: "Any " + label.toLowerCase() },
-        ...options,
-      ]}
-    />
-  );
-  const field = (key: keyof Filters, label: string) => (
-    <label className="form-field">
-      {label}
-      <input
-        className="filter-input"
-        defaultValue={String(f[key] || "")}
-        key={String(f[key])}
-        onBlur={(e) => update({ [key]: e.target.value })}
-        onKeyDown={(e) => {
-          if (e.key === "Enter") e.currentTarget.blur();
-        }}
-      />
-    </label>
-  );
-  const filters = (
-    <>
-      <div className="filter-heading">
-        <span>FILTERS</span>
-        <button onClick={() => router.replace("/universities")}>
-          Reset all
-        </button>
-      </div>
-      <Accordion
-        type="multiple"
-        defaultValue={[
-          "Location",
-          "Cost",
-          ...(f.admission_min !== undefined ||
-          f.admission_max !== undefined ||
-          f.ielts_max !== undefined
-            ? ["Admissions"]
-            : []),
-          ...(f.field || f.degree || f.language ? ["Academics"] : []),
-        ]}
+  const chips = CHIP_KEYS.flatMap((key) => {
+    const value = f[key];
+    return value !== undefined && value !== "" && value !== defaultFilters[key]
+      ? [[key, value] as const]
+      : [];
+  });
+  const filterCount =
+    [f.country, f.degree, f.field, f.scholarships].filter(Boolean).length +
+    (f.cost_max != null ? 1 : 0) +
+    chips.length;
+  const reset = () => router.replace(workspaceHref("/universities", pathname));
+  const total = result?.total ?? 0;
+  const pages = useMoreResults(filterKey, busy ? null : result);
+  const [tuitionDraft, setTuitionDraft] = useState(f.cost_max ?? TUITION_MAX);
+  useEffect(() => setTuitionDraft(f.cost_max ?? TUITION_MAX), [f.cost_max]);
+  const countries_ = Object.entries(countries).sort((a, b) => a[1].localeCompare(b[1]));
+  const sortValue = SORTS.some(([v]) => v === f.sort) ? f.sort : "rank";
+  const subjects = f.field && !SUBJECTS.includes(f.field) ? [f.field, ...SUBJECTS] : SUBJECTS;
+
+  const fields = (inSheet: boolean) => (
+    <div
+      className={
+        inSheet
+          ? "flex flex-col gap-5 [&_[data-slot=native-select-wrapper]]:w-full"
+          : "flex flex-wrap items-center gap-2"
+      }
+    >
+      <Field label={t("uni.list.country")} show={inSheet}>
+        <NativeSelect
+          aria-label={t("uni.list.country")}
+          value={f.country}
+          onChange={(e) => update({ country: e.target.value })}
+          className={inSheet ? "w-full" : ""}
+        >
+          <NativeSelectOption value="">{t("uni.list.country.all")}</NativeSelectOption>
+          <NativeSelectOptGroup label={t("uni.list.country.ca")}>
+            <NativeSelectOption value={CENTRAL_ASIA_VALUE}>{t("uni.list.country.ca")}</NativeSelectOption>
+            {CENTRAL_ASIA.filter((c) => countries[c]).map((c) => (
+              <NativeSelectOption key={c} value={c}>{countries[c]}</NativeSelectOption>
+            ))}
+          </NativeSelectOptGroup>
+          <NativeSelectOptGroup label={t("uni.list.country.all")}>
+            {countries_.filter(([c]) => !CENTRAL_ASIA.includes(c)).map(([c, name]) => (
+              <NativeSelectOption key={c} value={c}>{name}</NativeSelectOption>
+            ))}
+          </NativeSelectOptGroup>
+        </NativeSelect>
+      </Field>
+      <Toggle
+        variant="outline"
+        pressed={f.country === CENTRAL_ASIA_VALUE}
+        onPressedChange={(v) => update({ country: v ? CENTRAL_ASIA_VALUE : "" })}
+        className={inSheet ? "w-full justify-start" : ""}
       >
-        <AccordionItem value="Location">
-          <AccordionTrigger>Location</AccordionTrigger>
-          <AccordionContent>
-            <Choice
-              label="Country"
-              value={f.country || "all"}
-              onChange={(v) => update({ country: v === "all" ? "" : v })}
-              options={[
-                { value: "all", label: "All countries" },
-                ...Object.entries(countries).map(([value, label]) => ({
-                  value,
-                  label,
-                })),
-              ]}
-            />
-            <div style={{ marginTop: 12 }}>
-              {choice("region", "Region", [
-                "Europe",
-                "North America",
-                "Asia",
-                "Oceania",
-                "Africa",
-                "South America",
-              ])}
-            </div>
-            {field("city", "City")}
-          </AccordionContent>
-        </AccordionItem>
-        <AccordionItem value="Academics">
-          <AccordionTrigger>Academics</AccordionTrigger>
-          <AccordionContent>
-            {field("field", "Field or program")}
-            {choice("degree", "Degree", ["Bachelor", "Master", "Doctorate"])}
-            <div style={{ marginTop: 12 }}>
-              {choice("language", "Language", ["English", "German", "French"])}
-            </div>
-          </AccordionContent>
-        </AccordionItem>
-        <AccordionItem value="Cost">
-          <AccordionTrigger>Cost & aid</AccordionTrigger>
-          <AccordionContent>
-            <label className="caption">Maximum annual tuition (USD)</label>
-            <input
-              aria-label="Maximum tuition in USD"
-              className="filter-input"
-              type="number"
-              min="0"
-              value={f.cost_max ?? ""}
-              placeholder="Any amount"
-              onChange={(e) =>
-                update({
-                  cost_max: e.target.value ? Number(e.target.value) : undefined,
-                })
-              }
-            />
-            <label className="filter-checkbox">
-              <Checkbox
-                checked={f.aid === "yes"}
-                onCheckedChange={(v) => update({ aid: v ? "yes" : "" })}
-              />
-              Aid recipients reported
-            </label>
-            <label className="check-label">
-              <Checkbox
-                checked={f.scholarships === "yes"}
-                onCheckedChange={(v) =>
-                  update({ scholarships: v ? "yes" : "" })
-                }
-              />{" "}
-              Verified scholarships available
-            </label>
-            <p className="caption" style={{ marginTop: 12 }}>
-              Original USD figures only. Missing costs are excluded when a
-              budget is set.
-            </p>
-          </AccordionContent>
-        </AccordionItem>
-        <AccordionItem value="Admissions">
-          <AccordionTrigger>Admissions</AccordionTrigger>
-          <AccordionContent>
-            <PercentageRange
-              minimum={f.admission_min ?? 0}
-              maximum={f.admission_max ?? 100}
-              onCommit={(v) =>
-                update({ admission_min: v[0], admission_max: v[1] })
-              }
-            />
-            <label className="form-field" style={{ marginTop: 20 }}>
-              Maximum IELTS requirement
-              <input
-                type="number"
-                min="0"
-                max="9"
-                step=".5"
-                value={f.ielts_max ?? ""}
-                onChange={(e) =>
-                  update({
-                    ielts_max: e.target.value
-                      ? Number(e.target.value)
-                      : undefined,
-                  })
-                }
-              />
-            </label>
-          </AccordionContent>
-        </AccordionItem>
-        <AccordionItem value="University">
-          <AccordionTrigger>University & students</AccordionTrigger>
-          <AccordionContent>
-            {choice("type", "Type", ["Public", "Private"])}
-            <label className="form-field">
-              Minimum international students %
-              <input
-                type="number"
-                min="0"
-                max="100"
-                value={f.intl_min ?? ""}
-                onChange={(e) =>
-                  update({
-                    intl_min: e.target.value
-                      ? Number(e.target.value)
-                      : undefined,
-                  })
-                }
-              />
-            </label>
-          </AccordionContent>
-        </AccordionItem>
-        <AccordionItem value="Outcomes">
-          <AccordionTrigger>Outcomes</AccordionTrigger>
-          <AccordionContent>
-            <label className="form-field">
-              Minimum graduation rate %
-              <input
-                type="number"
-                min="0"
-                max="100"
-                value={f.graduation_min ?? ""}
-                onChange={(e) =>
-                  update({
-                    graduation_min: e.target.value
-                      ? Number(e.target.value)
-                      : undefined,
-                  })
-                }
-              />
-            </label>
-          </AccordionContent>
-        </AccordionItem>
-      </Accordion>
-      <p className="filter-footnote">
-        A filter is a constraint, not a recommendation. Unknown values never
-        count as zero.
-      </p>
-    </>
+        {f.country === CENTRAL_ASIA_VALUE && <Check />}
+        {t("uni.list.country.ca")}
+      </Toggle>
+      <Field label={t("uni.list.level")} show={inSheet}>
+        <ToggleGroup
+          type="single"
+          variant="outline"
+          aria-label={t("uni.list.level")}
+          value={f.degree}
+          onValueChange={(v) => update({ degree: v })}
+          className={inSheet ? "w-full flex-wrap" : ""}
+        >
+          {LEVELS.map(([value, key]) => (
+            <ToggleGroupItem key={value} value={value} className={inSheet ? "flex-1" : ""}>
+              {t(key)}
+            </ToggleGroupItem>
+          ))}
+        </ToggleGroup>
+      </Field>
+      <Field label={t("uni.list.subject")} show={inSheet}>
+        <NativeSelect
+          aria-label={t("uni.list.subject")}
+          value={f.field}
+          onChange={(e) => update({ field: e.target.value })}
+          className={inSheet ? "w-full" : "max-w-44"}
+        >
+          <NativeSelectOption value="">{t("uni.list.subject")}</NativeSelectOption>
+          {subjects.map((name) => (
+            <NativeSelectOption key={name} value={name}>
+              {name.replace(" (incl Development Studies)", "")}
+            </NativeSelectOption>
+          ))}
+        </NativeSelect>
+      </Field>
+      <div
+          className={
+            "flex h-9 items-center gap-3 rounded-md border border-input px-3 text-sm " +
+            (inSheet ? "w-full" : "")
+          }
+        >
+          <span className="shrink-0 text-muted-foreground">{t("uni.list.tuition")}</span>
+          <Slider
+            aria-label={t("uni.list.tuition")}
+            className={inSheet ? "flex-1" : "w-24"}
+            min={TUITION_MIN}
+            max={TUITION_MAX}
+            step={1000}
+            value={[Math.min(Math.max(tuitionDraft, TUITION_MIN), TUITION_MAX)]}
+            onValueChange={([v]) => setTuitionDraft(v)}
+            onValueCommit={([v]) => update({ cost_max: v >= TUITION_MAX ? undefined : v })}
+          />
+          <span className="w-16 shrink-0 text-right font-medium tabular-nums">
+            {tuitionDraft >= TUITION_MAX ? t("uni.list.any") : currency(tuitionDraft, "USD", true)}
+          </span>
+      </div>
+      <Toggle
+        variant="outline"
+        pressed={f.scholarships === "yes"}
+        onPressedChange={(v) => update({ scholarships: v ? "yes" : "" })}
+        className={inSheet ? "w-full justify-start" : ""}
+      >
+        {f.scholarships === "yes" && <Check />}
+        {t("uni.list.scholarships")}
+      </Toggle>
+      <Button
+        type="button"
+        variant="ghost"
+        aria-expanded={more}
+        onClick={() => setMore((v) => !v)}
+        className={inSheet ? "w-full justify-start" : ""}
+      >
+        <SlidersHorizontal />
+        {t("uni.list.more")}
+      </Button>
+      {more && (
+        <div className={"grid gap-2 " + (inSheet ? "w-full" : "w-full grid-cols-2 pt-1 md:grid-cols-4")}>
+          <NativeSelect
+            aria-label={t("uni.list.type")}
+            value={f.type}
+            onChange={(e) => update({ type: e.target.value })}
+            className="w-full"
+          >
+            <NativeSelectOption value="">{t("uni.list.type.any")}</NativeSelectOption>
+            <NativeSelectOption value="Public">{t("uni.list.type.public")}</NativeSelectOption>
+            <NativeSelectOption value="Private">{t("uni.list.type.private")}</NativeSelectOption>
+          </NativeSelect>
+          <NativeSelect
+            aria-label={t("uni.list.language")}
+            value={f.language}
+            onChange={(e) => update({ language: e.target.value })}
+            className="w-full"
+          >
+            <NativeSelectOption value="">{t("uni.list.language.any")}</NativeSelectOption>
+            {["English", "German", "French"].map((l) => (
+              <NativeSelectOption key={l} value={l}>{l}</NativeSelectOption>
+            ))}
+          </NativeSelect>
+          <NativeSelect
+            aria-label={t("uni.list.ielts")}
+            value={f.ielts_max ?? ""}
+            onChange={(e) =>
+              update({ ielts_max: e.target.value ? Number(e.target.value) : undefined })
+            }
+            className="w-full"
+          >
+            <NativeSelectOption value="">{t("uni.list.ielts")}</NativeSelectOption>
+            {[5.5, 6, 6.5, 7].map((n) => (
+              <NativeSelectOption key={n} value={n}>{n.toFixed(1)}</NativeSelectOption>
+            ))}
+          </NativeSelect>
+          <Input
+            aria-label={t("uni.list.city")}
+            placeholder={t("uni.list.city")}
+            defaultValue={f.city}
+            key={f.city}
+            onBlur={(e) => update({ city: e.target.value.trim() })}
+            onKeyDown={(e) => e.key === "Enter" && e.currentTarget.blur()}
+          />
+        </div>
+      )}
+    </div>
   );
+
   return (
-    <div className="research-page directory-page">
-      <header className="page-intro">
-        <div className="eyebrow">UNIVERSITY INTELLIGENCE</div>
-        <h1>Find universities.</h1>
-        <p>
-          Search by name, country, or subject. Use the filters to narrow your
-          choices.
-        </p>
-      </header>
+    <div className="mx-auto w-full max-w-[1200px] pb-24 pt-6 md:pt-10">
+      <h1 className={`${HEADING} text-[clamp(32px,4vw,48px)] font-semibold leading-[1.08] tracking-[-0.035em]`}>
+        {t("uni.list.title")}
+      </h1>
       <form
-        className="directory-search-row control-row"
+        className="mt-6 flex gap-2"
         onSubmit={(e) => {
           e.preventDefault();
           const parsed = parseResearchQuery(search);
@@ -374,317 +495,324 @@ export default function Directory({
           update(parsed.recognized ? parsed.filters : { q: parsed.filters.q });
         }}
       >
-        <div ref={searchGlass} data-glass="rim" className="catalogue-search">
-          <Search size={18} />
-          <input
-            aria-label="Search universities"
-            placeholder="Try “universities in Germany under $20k”"
+        <InputGroup className="h-12 rounded-full bg-card px-1">
+          <InputGroupAddon>
+            <Search />
+          </InputGroupAddon>
+          <InputGroupInput
+            aria-label={t("uni.list.search.label")}
+            placeholder={t("uni.list.search.placeholder")}
             value={search}
             onChange={(e) => setSearch(e.target.value)}
+            className="text-base"
           />
-          <button
-            className="icon-button"
-            type="submit"
-            aria-label="Apply search"
-          >
-            <ArrowRight size={17} />
-          </button>
-        </div>
-        <button
+          <InputGroupAddon align="inline-end">
+            <InputGroupButton
+              type="submit"
+              variant="default"
+              size="icon-sm"
+              className="rounded-full"
+              aria-label={t("uni.list.search.apply")}
+            >
+              <ArrowRight />
+            </InputGroupButton>
+          </InputGroupAddon>
+        </InputGroup>
+        <Button
           type="button"
-          className="button button-secondary mobile-filters-button"
-          onClick={() => setOpen(true)}
+          variant="outline"
+          className="h-12 shrink-0 rounded-full px-4 md:hidden"
+          onClick={() => setSheet(true)}
         >
-          <SlidersHorizontal size={16} />
-          Filters
-        </button>
-        <button
-          type="button"
-          className="button button-secondary"
-          onClick={saveSearch}
-        >
-          <Bookmark size={15} />
-          Save these filters
-        </button>
+          <SlidersHorizontal />
+          <span className="sr-only">{t("uni.list.filters")}</span>
+          {filterCount > 0 && <Badge className="rounded-full px-1.5">{filterCount}</Badge>}
+        </Button>
       </form>
+      <div className="mt-4 hidden md:block">{fields(false)}</div>
       {unparsed && (
-        <p className="reference-note" role="status">
-          Not applied: {unparsed}. Refine your query or use the filters below.
+        <p className="mt-3 text-sm text-muted-foreground" role="status">
+          {t("uni.list.unparsed", { text: unparsed })}
         </p>
       )}
-      <div className="directory-workspace">
-        <aside className="directory-filters">{filters}</aside>
-        <section>
-          <div className="directory-toolbar">
-            <span aria-live="polite">
-              {busy
-                ? "Updating…"
-                : `${result?.total ?? 0} ${(result?.total ?? 0) === 1 ? "university matches" : "universities match"}`}
-            </span>
-            <div>
-              <Choice
-                label="Sort results"
-                value={f.sort}
-                onChange={(v) => update({ sort: v as Filters["sort"] })}
-                options={[
-                  { value: "rank", label: "QS rank: top first" },
-                  { value: "rank_desc", label: "QS rank: bottom first" },
-                  { value: "tuition", label: "Tuition: low to high" },
-                  { value: "tuition_desc", label: "Tuition: high to low" },
-                  { value: "admission", label: "Admission %: low to high" },
-                  {
-                    value: "admission_desc",
-                    label: "Admission %: high to low",
-                  },
-                  {
-                    value: "international",
-                    label: "International %: high to low",
-                  },
-                  {
-                    value: "international_asc",
-                    label: "International %: low to high",
-                  },
-                ]}
-              />
-              <div className="view-switch">
-                {(
-                  [
-                    [Grid2X2, "grid"],
-                    [List, "list"],
-                    [Table2, "table"],
-                    [Map, "map"],
-                  ] as const
-                ).map(([Icon, name]) => (
-                  <button
-                    key={name}
-                    className={view === name ? "active" : ""}
-                    aria-label={name + " view"}
-                    aria-pressed={view === name}
-                    onClick={() => setView(name)}
-                  >
-                    <Icon size={16} />
-                  </button>
-                ))}
-              </div>
-            </div>
-          </div>
-          <p className="directory-sort-note caption">
-            {f.sort.startsWith("rank")
-              ? "QS 2027 world positions. Universities without a linked position appear last."
-              : "Reported values only; missing values appear last. Open a figure to see its year and source."}
-          </p>
-          {active.length > 0 && (
-            <div className="active-filters">
-              {active.map(([key, value]) => (
-                <button
-                  key={key}
-                  onClick={() =>
-                    update({ [key]: defaultFilters[key as keyof Filters] })
-                  }
-                >
-                  {filterLabel(key, value)}
-                  <X size={12} />
-                </button>
-              ))}
-            </div>
-          )}
-          {!!result?.suggestions?.length && !busy && (
-            <div className="search-suggestions" role="status">
-              <h3>Did you mean one of these?</h3>
-              <p>Your other filters are still applied.</p>
-              {result.suggestions.map((u) => (
-                <button
-                  key={u.slug}
-                  className="text-link"
-                  onClick={() => update({ q: u.name })}
-                >
-                  {u.name} →
-                </button>
-              ))}
-            </div>
-          )}
-          {error ? (
-            <EmptyState
-              title="Results are unavailable"
-              description={error}
-              action={
-                <button
-                  className="button button-primary"
-                  onClick={() => setRetry((n) => n + 1)}
-                >
-                  Retry
-                </button>
-              }
-            />
-          ) : busy && !result ? (
-            <div className="university-grid">
-              {[1, 2, 3, 4].map((i) => (
-                <Skeleton key={i} className="h-72 rounded-xl" />
-              ))}
-            </div>
-          ) : result?.universities.length ? (
-            view === "map" ? (
-              <UniversityMap
-                universities={result.universities}
-                onSelect={setQuick}
-              />
-            ) : view === "table" ? (
-              <>
-                <DropdownMenu>
-                  <DropdownMenuTrigger
-                    className="text-link"
-                    style={{ marginBottom: 14 }}
-                  >
-                    Customize columns
-                  </DropdownMenuTrigger>
-                  <DropdownMenuContent>
-                    {metricDefinitions.map((m) => (
-                      <DropdownMenuCheckboxItem
-                        checked={columns.includes(m.key)}
-                        key={m.key}
-                        onCheckedChange={(v) =>
-                          setColumns((old) =>
-                            v
-                              ? [...old, m.key]
-                              : old.filter((k) => k !== m.key),
-                          )
-                        }
-                      >
-                        {m.label}
-                      </DropdownMenuCheckboxItem>
-                    ))}
-                  </DropdownMenuContent>
-                </DropdownMenu>
-                <div className="table-wrap">
-                  <table className="research-table">
-                    <thead>
-                      <tr>
-                        <th>Compare</th>
-                        <th className="resizable">University</th>
-                        {columns.map((key) => (
-                          <th className="resizable" key={key}>
-                            {
-                              metricDefinitions.find((m) => m.key === key)!
-                                .label
-                            }
-                          </th>
-                        ))}
-                      </tr>
-                    </thead>
-                    <tbody>
-                      {result.universities.map((u) => (
-                        <tr key={u.id}>
-                          <td>
-                            <Checkbox
-                              aria-label={"Compare " + u.name}
-                              checked={s.compare.includes(u.id)}
-                              onCheckedChange={() => s.toggleCompare(u.id)}
-                            />
-                          </td>
-                          <td>
-                            <button
-                              className="table-school"
-                              onClick={() => setQuick(u)}
-                            >
-                              <UniversityLogo university={u} size="sm" />
-                              <span>
-                                {u.name}
-                                <small>{countryName(u.country_code)}</small>
-                              </span>
-                            </button>
-                          </td>
-                          {columns.map((key) => (
-                            <td key={key}>
-                              <SourceDrawer
-                                label={
-                                  metricDefinitions.find((m) => m.key === key)!
-                                    .label
-                                }
-                                record={valueOf(u, key).record}
-                              >
-                                {formatMetric(u, key)}
-                              </SourceDrawer>
-                            </td>
-                          ))}
-                        </tr>
-                      ))}
-                    </tbody>
-                  </table>
-                </div>
-              </>
-            ) : (
-              <div
-                className={
-                  "university-grid " +
-                  (view === "list" ? "university-list" : "")
-                }
-              >
-                {result.universities.map((u) => (
-                  <UniversityCard
-                    key={u.id}
-                    university={u}
-                    layout={view === "list" ? "list" : "grid"}
-                    onPreview={() => setQuick(u)}
-                  />
-                ))}
-              </div>
-            )
-          ) : (
-            <EmptyState
-              title={`No universities match all ${active.length || "your"} filters.`}
-              description="Increase your tuition limit, remove an admission constraint, or explore another country. Unreported figures are excluded from numeric filters."
-              action={
-                <button
-                  className="button button-primary"
-                  onClick={() => router.replace("/universities")}
-                >
-                  Clear filters
-                </button>
-              }
-            />
-          )}
-          <div className="pagination-row">
-            <button
-              disabled={(result?.page ?? f.page) === 1 || busy}
-              onClick={() => update({ page: (result?.page ?? f.page) - 1 })}
+      {chips.length > 0 && (
+        <div className="mt-3 flex flex-wrap gap-2">
+          {chips.map(([key, value]) => (
+            <Button
+              key={key}
+              size="sm"
+              variant="secondary"
+              className="rounded-full"
+              onClick={() => update({ [key]: defaultFilters[key] })}
             >
-              ← Previous
-            </button>
-            <span>
-              Page {result?.page ?? f.page} of{" "}
-              {Math.max(1, Math.ceil((result?.total ?? 0) / 24))}
-            </span>
-            <button
-              disabled={
-                (result?.page ?? f.page) * 24 >= (result?.total ?? 0) || busy
-              }
-              onClick={() => update({ page: (result?.page ?? f.page) + 1 })}
+              {filterLabel(key, value)}
+              <X />
+            </Button>
+          ))}
+        </div>
+      )}
+
+      <div className="mt-8 flex flex-wrap items-center justify-between gap-3 border-t border-border pt-5">
+        <p className="text-sm font-medium" aria-live="polite">
+          {busy
+            ? t("uni.list.updating")
+            : total === 1
+              ? t("uni.list.count_one")
+              : t("uni.list.count", { n: total.toLocaleString("en") })}
+        </p>
+        <div className="flex items-center gap-2">
+          {s.user && (
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={saveSearch}
+              disabled={pendingSearch === accountKey}
             >
-              Next →
-            </button>
-          </div>
-        </section>
-      </div>
-      <Sheet open={open} onOpenChange={setOpen}>
-        <SheetContent
-          side="bottom"
-          className="mobile-filter-sheet"
-          data-glass="panel"
-        >
-          <SheetTitle>Refine your research</SheetTitle>
-          <SheetDescription>
-            Changes update results immediately.
-          </SheetDescription>
-          {filters}
-          <button
-            className="button button-primary"
-            onClick={() => setOpen(false)}
+              <Bookmark />
+              {t("uni.list.save_search")}
+            </Button>
+          )}
+          <NativeSelect
+            size="sm"
+            aria-label={t("uni.list.sort.qs")}
+            value={sortValue}
+            onChange={(e) => update({ sort: e.target.value as Filters["sort"] })}
           >
-            Show {result?.total ?? 0} results
-          </button>
+            {SORTS.map(([value, key]) => (
+              <NativeSelectOption key={value} value={value}>{t(key)}</NativeSelectOption>
+            ))}
+          </NativeSelect>
+          <ToggleGroup
+            type="single"
+            variant="outline"
+            size="sm"
+            value={view}
+            onValueChange={(v) => v && setViewParam(v as DirectoryView)}
+            className="hidden sm:flex"
+          >
+            <ToggleGroupItem value="list" aria-label={t("uni.list.view.list")}>
+              <List />
+            </ToggleGroupItem>
+            <ToggleGroupItem value="grid" aria-label={t("uni.list.view.grid")}>
+              <Grid2X2 />
+            </ToggleGroupItem>
+          </ToggleGroup>
+        </div>
+      </div>
+      {(f.degree || f.field || f.cost_max != null) && (
+        <p className="mt-2 text-xs text-muted-foreground">{t("uni.list.note")}</p>
+      )}
+      {!!result?.suggestions?.length && !busy && (
+        <p className="mt-4 text-sm text-muted-foreground" role="status">
+          {t("uni.list.didyoumean")}{" "}
+          {result.suggestions.map((u, i) => (
+            <span key={u.slug}>
+              {i > 0 && ", "}
+              <button className="text-primary underline-offset-4 hover:underline" onClick={() => update({ q: u.name })}>
+                {u.name}
+              </button>
+            </span>
+          ))}
+          ?
+        </p>
+      )}
+
+      <div className="mt-5" aria-busy={busy}>
+        {error ? (
+          <Empty className="rounded-2xl border border-border">
+            <EmptyHeader>
+              <EmptyTitle>
+                {error === DIRECTORY_TIMEOUT_MESSAGE
+                  ? t("uni.list.err.timeout")
+                  : t("uni.list.err.failed")}
+              </EmptyTitle>
+            </EmptyHeader>
+            <EmptyContent>
+              <Button onClick={() => setRetry((n) => n + 1)}>{t("uni.list.retry")}</Button>
+            </EmptyContent>
+          </Empty>
+        ) : busy && !result ? (
+          <div className="grid gap-3">
+            {[1, 2, 3, 4, 5].map((i) => (
+              <Skeleton key={i} className="h-[88px] rounded-2xl" />
+            ))}
+          </div>
+        ) : result?.universities.length ? (
+          <div
+            className={
+              (view === "grid" ? "grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3" : "grid grid-cols-1 gap-3") +
+              (busy ? " opacity-60 transition-opacity" : "")
+            }
+          >
+            {result.universities.map((u) => (
+              <UniversityRow key={u.id} university={u} layout={view} sort={f.sort} />
+            ))}
+            {!busy && pages.rows.map((u) => (
+              <UniversityRow key={u.id} university={u} layout={view} sort={f.sort} />
+            ))}
+          </div>
+        ) : (
+          <Empty className="rounded-2xl border border-border">
+            <EmptyHeader>
+              <EmptyTitle>{t("uni.list.empty")}</EmptyTitle>
+              <EmptyDescription>{t("uni.list.empty_hint")}</EmptyDescription>
+            </EmptyHeader>
+            <EmptyContent>
+              <Button onClick={reset}>{t("uni.list.clear")}</Button>
+            </EmptyContent>
+          </Empty>
+        )}
+      </div>
+      {!error && !busy && result?.universities.length ? (
+        <MoreResults more={pages} href={workspaceHref(nextPageHref(filterKey, pages.next, "/universities"), pathname)} />
+      ) : null}
+      {s.compare.length > 0 && (
+        <div className="fixed inset-x-0 bottom-20 z-40 flex justify-center px-4 md:bottom-6">
+          <Button asChild size="lg" className="rounded-full shadow-lg">
+            <Link href={"/compare?ids=" + s.compare.slice(0, MAX_COMPARE).join(",")}>
+              {t("uni.list.compare_go", { n: Math.min(s.compare.length, MAX_COMPARE) })}
+              <ArrowRight />
+            </Link>
+          </Button>
+        </div>
+      )}
+      <Sheet open={sheet} onOpenChange={setSheet}>
+        <SheetContent side="bottom" className="max-h-[88dvh] overflow-y-auto rounded-t-2xl">
+          <SheetHeader>
+            <SheetTitle>{t("uni.list.filters")}</SheetTitle>
+            <SheetDescription>{t("uni.list.sheet_desc")}</SheetDescription>
+          </SheetHeader>
+          <div className="px-4">{fields(true)}</div>
+          <SheetFooter className="sticky bottom-0 flex-row gap-2 border-t border-border bg-background">
+            <Button variant="outline" onClick={reset}>
+              {t("uni.list.reset")}
+            </Button>
+            <Button className="flex-1" onClick={() => setSheet(false)}>
+              {t("uni.list.show", { n: total.toLocaleString("en") })}
+            </Button>
+          </SheetFooter>
         </SheetContent>
       </Sheet>
-      <QuickView university={quick} onClose={() => setQuick(null)} />
     </div>
+  );
+}
+
+function Field({
+  label,
+  show,
+  children,
+}: {
+  label: string;
+  show: boolean;
+  children: React.ReactNode;
+}) {
+  return show && label ? (
+    <div className="grid gap-1.5">
+      <span className="text-sm font-medium">{label}</span>
+      {children}
+    </div>
+  ) : (
+    <>{children}</>
+  );
+}
+
+function Fact({ label, value }: { label: string; value: string }) {
+  return (
+    <div className="min-w-[72px]">
+      <div className="text-[11px] uppercase tracking-wide text-muted-foreground">{label}</div>
+      <div className="text-sm font-semibold tabular-nums">{value}</div>
+    </div>
+  );
+}
+
+function UniversityRow({
+  university: u,
+  layout,
+  sort,
+}: {
+  university: University;
+  layout: DirectoryView;
+  sort: Filters["sort"];
+}) {
+  const t = useT();
+  const s = useCollege();
+  const rank = bestRank(u, sort);
+  const tuition = valueOf(u, "tuition");
+  const admit = valueOf(u, "admission").value;
+  const saved = s.saved.includes(u.id);
+  const selected = s.compare.includes(u.id);
+  const full = !selected && s.compare.length >= MAX_COMPARE;
+  const place = [u.city, countryName(u.country_code)].filter(Boolean).join(", ");
+  return (
+    <article
+      className={
+        "flex min-w-0 gap-4 rounded-2xl border border-border bg-card p-4 transition duration-200 hover:-translate-y-px hover:border-foreground/25 " +
+        (layout === "grid" ? "flex-col" : "flex-col md:flex-row md:items-center")
+      }
+    >
+      <div className="flex min-w-0 flex-1 items-center gap-4">
+        <UniversityLogo university={u} size="lg" />
+        <div className="min-w-0">
+          <Link
+            href={"/university/" + u.slug}
+            className="block font-semibold leading-snug hover:underline"
+          >
+            {u.name}
+          </Link>
+          {place && <p className="mt-0.5 truncate text-sm text-muted-foreground">{place}</p>}
+        </div>
+      </div>
+      <div className="flex flex-wrap items-center gap-x-6 gap-y-2">
+        <AdmissionChip university={u} />
+        {rank && (
+          <a
+            href={rank.url}
+            target="_blank"
+            rel="noreferrer"
+            title={t("uni.list.rank_title", {
+              publisher: rankingPublishers[rank.provider].name,
+              year: rank.year,
+            })}
+          >
+            <Badge variant="outline" className="h-7 rounded-full px-3 text-xs">
+              {rankingPublishers[rank.provider].name} {rankLabel(rank)}
+            </Badge>
+          </a>
+        )}
+        {tuition.value != null && tuition.currency && (
+          <Fact label={t("uni.list.label.tuition")} value={currency(tuition.value, tuition.currency)} />
+        )}
+        {admit != null && (
+          <Fact
+            label={t("uni.list.label.admit")}
+            value={admit.toLocaleString("en", { maximumFractionDigits: 1 }) + "%"}
+          />
+        )}
+      </div>
+      <div className="flex items-center gap-1">
+        <Button
+          variant="ghost"
+          size="icon"
+          aria-pressed={saved}
+          aria-label={t(saved ? "uni.list.unsave" : "uni.list.save", { name: u.name })}
+          onClick={() => void s.toggleSaved(u.id)}
+          disabled={s.busy}
+        >
+          {saved ? <BookmarkCheck className="text-primary" /> : <Bookmark />}
+        </Button>
+        <Button
+          variant={selected ? "secondary" : "outline"}
+          size="sm"
+          aria-pressed={selected}
+          disabled={full}
+          title={full ? t("uni.list.compare_full") : undefined}
+          aria-label={t(selected ? "uni.list.compare_remove" : "uni.list.compare", { name: u.name })}
+          onClick={() => s.toggleCompare(u.id)}
+        >
+          {selected ? <Check /> : <Plus />}
+          {selected ? t("uni.list.compare_added") : t("uni.list.compare_btn")}
+        </Button>
+      </div>
+    </article>
   );
 }

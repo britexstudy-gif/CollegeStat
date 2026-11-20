@@ -1,0 +1,111 @@
+{
+  "status": "published_verified",
+  "reviewed_at": "2026-10-11",
+  "scope": "Two derived profile caches; original ranking/source tables and all unrelated profile keys preserved.",
+  "source": "data/raw/rankings/the-2026.json",
+  "source_sha256": "6c49df7f49b9dd69f60bc86b1aac237e69cedb53f1099219687b7a070ca8ffbd",
+  "core_signature_after": "3766cd60a4d0ac0dd5c060d8ba90b351",
+  "idempotent_repeat": true,
+  "new_universities": 0,
+  "new_ranks": 0,
+  "records": [
+    {
+      "id": "3f15a83c-c1d9-50da-85e9-4cfa84fe5c04",
+      "name": "University of Education",
+      "resources_md5": "c7ce43a12306055ceb424dd5e5caf4f0",
+      "source_name": "University of Education, Lahore",
+      "rank_label": "1001–1200",
+      "edition": 2026,
+      "url": "https://www.timeshighereducation.com/world-university-rankings/university-education-lahore",
+      "publisher_students": {
+        "edition": 2026,
+        "evidence": {
+          "scope": "Publisher institution snapshot; student census year not specified",
+          "provider": "Times Higher Education",
+          "source_name": "University of Education, Lahore",
+          "retrieved_at": "2026-09-28",
+          "raw_snapshot_sha256": "6c49df7f49b9dd69f60bc86b1aac237e69cedb53f1099219687b7a070ca8ffbd",
+          "verification_status": "verified_source_identity",
+          "identity_reviewed_at": "2026-10-10T18:51:00Z"
+        },
+        "students": 29744,
+        "subjects": [
+          "Education",
+          "Art",
+          "Performing Arts & Design",
+          "History",
+          "Philosophy & Theology",
+          "Business & Management",
+          "Computer Science",
+          "Economics & Econometrics",
+          "Archaeology",
+          "Accounting & Finance",
+          "Chemistry",
+          "Agriculture & Forestry",
+          "Physics & Astronomy",
+          "Languages",
+          "Literature & Linguistics",
+          "Mathematics & Statistics"
+        ],
+        "source_url": "https://www.timeshighereducation.com/world-university-rankings/university-education-lahore",
+        "female_male_ratio": "57 : 43",
+        "student_staff_ratio": 17.4,
+        "international_percent": 0
+      }
+    },
+    {
+      "id": "fcd1cd76-2c2e-526f-acd6-38a74eb5954d",
+      "name": "University of Okara",
+      "resources_md5": "e85304c568ef2ece7f2654b8a0073349",
+      "source_name": "University of Okara",
+      "rank_label": "1001–1200",
+      "edition": 2026,
+      "url": "https://www.timeshighereducation.com/world-university-rankings/university-okara",
+      "publisher_students": {
+        "edition": 2026,
+        "evidence": {
+          "scope": "Publisher institution snapshot; student census year not specified",
+          "provider": "Times Higher Education",
+          "source_name": "University of Okara",
+          "retrieved_at": "2026-09-28",
+          "raw_snapshot_sha256": "6c49df7f49b9dd69f60bc86b1aac237e69cedb53f1099219687b7a070ca8ffbd",
+          "verification_status": "verified_source_identity",
+          "identity_reviewed_at": "2026-10-11"
+        },
+        "students": 19640,
+        "subjects": [
+          "Chemistry",
+          "Art",
+          "Performing Arts & Design",
+          "Education",
+          "Politics & International Studies (incl Development Studies)",
+          "Languages",
+          "Literature & Linguistics",
+          "Geology",
+          "Environmental",
+          "Earth & Marine Sciences",
+          "Communication & Media Studies",
+          "Economics & Econometrics",
+          "Accounting & Finance",
+          "Sport Science",
+          "Law",
+          "Mathematics & Statistics",
+          "Computer Science",
+          "Psychology",
+          "Sociology",
+          "Business & Management",
+          "General Engineering"
+        ],
+        "source_url": "https://www.timeshighereducation.com/world-university-rankings/university-okara",
+        "female_male_ratio": "36 : 64",
+        "student_staff_ratio": 145.5,
+        "international_percent": 0
+      }
+    }
+  ],
+  "verification": {
+    "postgres_atomic_conflict_and_idempotency_test": "tests/profile-ranking-cache-repair.test.ts",
+    "public_read_only_browser_checks": 9,
+    "browser_receipt": "outputs/public-identities-programmes-browser-oct11.json"
+  }
+}

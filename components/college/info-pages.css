@@ -1,0 +1,218 @@
+/* Support, About, Method and Sources: one calm reading layout (.ip). Uses the shared app tokens. */
+.ip {
+  max-width: 920px;
+  margin: 0 auto 96px;
+  padding: clamp(104px, 12vw, 136px) 24px 0;
+  color: var(--foreground);
+  --ip-display: var(--l4-display, "Poppins", "Montserrat", system-ui, sans-serif);
+}
+.ip :is(a, button, summary, input, textarea, select):focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+.ip-head h1 {
+  margin: 0;
+  font-family: var(--ip-display);
+  font-size: clamp(32px, 4.6vw, 48px);
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  line-height: 1.08;
+}
+.ip-head p {
+  margin: 14px 0 0;
+  max-width: 58ch;
+  font-size: 18px;
+  line-height: 1.55;
+  color: var(--muted-foreground);
+}
+.ip-mail {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 24px;
+  height: 46px;
+  padding: 0 20px;
+  border-radius: 12px;
+  background: var(--primary);
+  color: var(--primary-foreground);
+  font-weight: 550;
+  text-decoration: none;
+  transition: transform 0.15s, filter 0.15s;
+}
+.ip-mail:hover {
+  filter: brightness(1.08);
+  transform: translateY(-1px);
+}
+.ip-section {
+  margin-top: 64px;
+}
+.ip-section > h2 {
+  margin: 0 0 20px;
+  font-family: var(--ip-display);
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+.ip-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin: 40px 0 0;
+  padding: 0;
+  list-style: none;
+}
+.ip-cards li,
+.ip-steps li {
+  padding: 20px;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: var(--card);
+}
+.ip-cards h3,
+.ip-steps h3 {
+  margin: 0 0 6px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.ip-cards p,
+.ip-steps p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.55;
+  color: var(--muted-foreground);
+}
+.ip-steps {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: ip;
+}
+.ip-steps li::before {
+  counter-increment: ip;
+  content: counter(ip);
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  margin-bottom: 12px;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--primary) 12%, var(--card));
+  color: var(--primary);
+  font-size: 13px;
+  font-weight: 600;
+}
+.ip-more {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+  margin-top: 20px;
+}
+.ip-more a,
+.ip-prose a,
+.ip-faq a {
+  color: var(--primary);
+  text-underline-offset: 3px;
+}
+.ip-faq {
+  border-top: 1px solid var(--border);
+}
+.ip-faq details {
+  border-bottom: 1px solid var(--border);
+}
+.ip-faq summary {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 18px 0;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: 550;
+  list-style: none;
+}
+.ip-faq summary::-webkit-details-marker {
+  display: none;
+}
+.ip-faq summary::after {
+  content: "+";
+  flex: none;
+  color: var(--muted-foreground);
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1;
+}
+.ip-faq details[open] summary::after {
+  content: "–";
+}
+.ip-faq p {
+  margin: 0 0 20px;
+  max-width: 64ch;
+  line-height: 1.65;
+  color: var(--muted-foreground);
+}
+.ip-contact {
+  display: grid;
+  grid-template-columns: minmax(0, 0.7fr) minmax(0, 1.3fr);
+  gap: 40px;
+  align-items: start;
+}
+.ip-contact p {
+  margin: 0;
+  line-height: 1.6;
+  color: var(--muted-foreground);
+}
+.ip-prose section {
+  margin-top: 40px;
+}
+.ip-prose h2 {
+  margin: 0 0 8px;
+  font-family: var(--ip-display);
+  font-size: 20px;
+  font-weight: 600;
+}
+.ip-prose p,
+.ip-prose li {
+  max-width: 66ch;
+  line-height: 1.7;
+  color: var(--muted-foreground);
+}
+.ip-sources {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.ip-sources li {
+  padding: 14px 16px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--card);
+}
+@media (max-width: 820px) {
+  .ip-cards,
+  .ip-steps {
+    grid-template-columns: 1fr 1fr;
+  }
+  .ip-contact {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
+@media (max-width: 520px) {
+  .ip-cards,
+  .ip-steps {
+    grid-template-columns: 1fr;
+  }
+  .ip-section {
+    margin-top: 48px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .ip-mail {
+    transition: none;
+  }
+}

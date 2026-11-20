@@ -1,0 +1,5 @@
+.footer .footer-wordmark{position:relative;width:100%;height:clamp(130px,24vw,360px);margin:30px 0 16px;overflow:hidden;color:var(--foreground)}
+.footer .footer-wordmark .wordmark-placeholder {display:flex;align-items:center;justify-content:center;height:100%;font-size:clamp(64px,18vw,290px);line-height:1;font-weight:700;letter-spacing:-.07em;white-space:nowrap}
+.footer{max-width:1480px}
+.footer .footer-bottom{margin-top:0}
+@media(max-width:850px){.footer .footer-wordmark{margin-top:22px}}

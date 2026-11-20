@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="99.78" height="99.5"><svg xmlns="http://www.w3.org/2000/svg" id="SvgjsSvg1006" data-name="Ebene 2" viewBox="0 0 99.78 99.5">
+  <defs>
+    <style>
+      .cls-1{fill:#88c2e2}.cls-2{fill:#9dc53e}.cls-3{fill:#006376}
+    </style>
+  </defs>
+  <path d="M55.2 0h17.2v17.2H55.2z" class="cls-1"></path>
+  <path d="M55.2 27.4h17.2v17.2H55.2z" class="cls-2"></path>
+  <path d="M82.5 0h17.2v17.2H82.5z" class="cls-3"></path>
+  <path d="M27.5 0h17.2v17.2H27.5zm0 54.8h17.2V72H27.5z" class="cls-2"></path>
+  <path d="M0 54.8h17.2V72H0zm27.5-27.4h17.2v17.2H27.5z" class="cls-1"></path>
+  <path d="M0 27.4h17.2v17.2H0z" class="cls-2"></path>
+  <path d="M0 82.3h17.2v17.2H0zm67.79-20.81h31.42v8.1H79.54v6.03h18.24v7.74H79.54v7.48h20.24v8.59H67.79V61.49Z" class="cls-3"></path>
+</svg><style>@media (prefers-color-scheme: light) { :root { filter: none; } }
+@media (prefers-color-scheme: dark) { :root { filter: contrast(0.3846153846153846) brightness(4.5); } }
+</style></svg>

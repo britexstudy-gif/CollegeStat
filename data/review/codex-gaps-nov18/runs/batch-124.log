@@ -1,0 +1,130 @@
+OpenAI Codex v0.169.0
+--------
+workdir: /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+model: gpt-6-luna
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: high
+reasoning summaries: none
+session id: 01a1ee9b-ad63-74f0-8242-36069a087ec9
+--------
+user
+You are a careful admissions-data researcher. For each university below, find facts for an
+INTERNATIONAL applicant to a FIRST-YEAR BACHELOR'S degree starting in autumn 2027 (or the nearest
+published cycle). Use the live web. Rules:
+
+- Official sources only: the university's own website (its domain or subdomains), the national
+  application service (UCAS, Common App, OUAC, uni-assist, Studyinkorea, etc.) or a government
+  statistics office. Never use rankings sites, forums, agencies, Wikipedia or blogs.
+- Every value needs the exact page URL where you read it (source_url). If you could not verify a
+  value on an official page, leave it out (null or an empty list). Never guess or estimate.
+- english: the lowest overall score accepted for undergraduate entry, per test (IELTS Academic
+  overall, TOEFL iBT total, Duolingo, PTE). If programmes differ, give the general/lowest common
+  university minimum and say so in detail (e.g. "6.5 overall, no band below 6.0; some
+  programmes higher").
+- tuition: the yearly tuition for international (non-EU / overseas) undergraduates in the local
+  currency. If it varies by programme give amount = lowest and amount_max = highest, and the
+  academic_year the fee applies to (e.g. "2026/27"). If tuition is free, amount = 0.
+- application_fee: for international first-year applicants, local currency.
+- deadlines: the main 2027-entry first-year deadlines (ISO date YYYY-MM-DD) with the route
+  (e.g. "Common App, Regular Decision", "UCAS", "university portal"). Only dates actually
+  published; if only the 2026-entry date is published, include it and put "2026 entry" in title.
+- sat: policy for international applicants; p25/p75 total SAT only if the university publishes
+  them (Common Data Set or admissions profile).
+- acceptance_rate: only if officially published (CDS, admissions statistics page).
+- notes: one short line on anything important (e.g. "Foundation year required for 11-year
+  school certificates"), else "".
+
+Spend effort on the facts students need most: English minimum, tuition, deadlines. Keep each
+detail under 160 characters. Return only the JSON that matches the schema; use each
+university's id exactly as given.
+
+Universities:
+- id: 08f735b1-c4fe-5f4b-89d7-84d547bdff54 | Almaty Technological University | Almaty, KZ | https://atu.edu.kz
+- id: ece36c8b-699b-5db2-af92-bf6619f5c098 | Kyrgyz-Türkish Manas Üniversity | Bishkek, KG | https://www.manas.edu.kg
+- id: 2067e5d4-f7a4-5ae7-9d81-4527c0a51317 | Narxoz University | Almaty, KZ | https://narxoz.edu.kz
+- id: 4f7295b4-d2b0-5d33-afc9-6019dc8ac60c | Samarkand State University | Samarkand, UZ | http://www.samdu.uz/
+codex
+I’ll verify each item against the universities’ own admissions and tuition pages, and use the national application service only where it publishes the relevant deadline.
+exec
+/bin/zsh -lc 'cat /Users/likeanew/.agents/skills/lemma/SKILL.md' in /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+ succeeded in 0ms:
+---
+name: lemma
+description: Persistent cross-session memory for AI agents via MCP. BEFORE starting ANY task (coding, debugging, refactoring, research, docs, optimization — any language), FIRST call memory_read to load what you already know so you never re-derive or re-explore known facts. AFTER finishing, call memory_add to persist new findings and session_attempt for dead ends — unsaved knowledge is lost permanently. Distills reusable guides from experience.
+---
+
+<!-- lemma:skill:v=0.21.0 -->
+
+# Lemma — Persistent Memory & Learning
+
+Lemma is a persistent memory server for AI agents over the Model Context Protocol.
+Every session starts blank — knowledge survives ONLY through tool calls. If you
+learn something and don't save it (`memory_add`), it is gone permanently.
+
+## Workflow
+1. **RECALL** — `memory_read` / `semantic_search`: load what's already known for this
+   project/task. Never re-explore code or re-derive facts that are already saved.
+2. **ACT** — do the task.
+3. **PERSIST** — `memory_add` for new insights; `guide_practice` for guides applied;
+   `session_attempt` for abandoned/dead-end approaches (the most valuable records).
+
+## Two knowledge layers
+- **Memory fragments** (`memory_read` / `memory_add`): atomic facts. Types: `fact`,
+  `pattern`, `lesson`, `warning`, `context`. Confidence evolves with use and feedback.
+- **Guides** (`guide_get` / `guide_distill` / `guide_practice`): procedural skills
+  distilled from fragments. Track usage count + success/failure rate.
+Pipeline: `experience -> memory_add -> pattern/lesson -> guide_distill -> guide_practice`.
+
+## Tools at a glance
+- **Recall & search**: `memory_read`, `semantic_search`, `memory_library` (full
+  snapshot + maintenance signals), `memory_stats`, `memory_audit`.
+- **Write & maintain**: `memory_add`, `memory_update`, `memory_forget`,
+  `memory_merge`, `memory_relate` (supports / contradicts / supersedes / related_to),
+  `memory_feedback`.
+- **Guides**: `guide_get`, `guide_create`, `guide_distill`, `guide_practice`,
+  `guide_update`, `guide_forget`, `guide_merge`.
+- **Sessions & reasoning**: `session_start`, `session_end`, `session_attempt`,
+  `session_stats`, `suggestion_respond`.
+- **Background intelligence**: `conflict_scan`, `proactive_analysis`,
+  `project_analytics` (run automatically; act on signals when sensible).
+
+## Writing a fragment
+```
+## [Topic Title]
+### Context
+[1-2 sentences: what and why it matters]
+### [Content Section]
+- [Key fact 1]
+- [Key fact 2]
+### Rules (optional)
+- [Absolute constraint]
+```
+One idea per fragment, 30-2000 chars, structured markdown (not prose). **Store
+fragments in ENGLISH** (required for search/retrieval). Never ask permission to save.
+
+## Background intelligence
+Conflict detection, distill/merge/refine suggestions, and auto-linking run
+automatically. From the CLI, `lemma -lib` prints a full knowledge-base snapshot
+and `lemma -vis` launches a visualizer.
+
+web search: 
+web search: site:atu.edu.kz international admission tuition English IELTS foreign applicants 2026 ...
+web search: 
+web search: site:atu.edu.kz/en tuition cost 2025 2026 bachelor foreign tuition fee ...
+web search: 
+web search: site:narxoz.edu.kz/en "tuition" bachelor's admissions Narxoz ...
+web search: 
+web search: Narxoz University admissions international students tuition fee 2026 site:narxoz.edu.kz ...
+web search: 
+web search: 
+web search: 
+web search: site:en.narxoz.kz/global/en/international "English" "IELTS" Narxoz undergraduate admission ...
+web search: 
+web search: site:narxoz.edu.kz/stoimost-obucheniya 2026 2027 бакалавриат стоимость ...
+codex
+{"universities":[{"id":"08f735b1-c4fe-5f4b-89d7-84d547bdff54","english":[],"tuition":{"amount":920000,"amount_max":null,"currency":"KZT","period":"year","academic_year":"not stated","detail":"Published bachelor program fee; page does not specify a separate international rate or fee year.","source_url":"https://atu.edu.kz/en/welcome/bachelor/datascience/"},"application_fee":null,"deadlines":[{"title":"Autumn 2026 entry: original documents","due_at":"2026-08-20","route":"University applicant portal","source_url":"https://atu.edu.kz/en/welcome/foreign-students/"}],"sat":null,"acceptance_rate":null,"notes":"International applicants complete an individual interview."},{"id":"ece36c8b-699b-5db2-af92-bf6619f5c098","english":[],"tuition":{"amount":0,"amount_max":null,"currency":"KGS","period":"year","academic_year":"not stated","detail":"Education is free except for the Faculty of Medicine.","source_url":"https://oidb.manas.edu.kg/en/faq/1"},"application_fee":null,"deadlines":[{"title":"2026–2027 entry: application period","due_at":"2026-07-17","route":"Manas foreign-applicant registration","source_url":"https://exams.manas.edu.kg/pages/foreignstudents/"}],"sat":null,"acceptance_rate":null,"notes":"Applicants unfamiliar with Kyrgyz or Turkish take a one-year preparatory language course."},{"id":"2067e5d4-f7a4-5ae7-9d81-4527c0a51317","english":[{"test":"IELTS","minimum":5.5,"detail":"Equivalent to IELTS 5.5 or above required for full-degree international applicants.","source_url":"https://en.narxoz.kz/global/en/international/students/apply/"}],"tuition":null,"application_fee":null,"deadlines":[{"title":"Early Action for 2027 entry","due_at":"2026-11-01","route":"Narxoz international application","source_url":"https://en.narxoz.kz/global/en/international/students/apply/"},{"title":"Regular admission for 2027 entry","due_at":"2027-08-01","route":"Narxoz international application","source_url":"https://en.narxoz.kz/global/en/international/students/apply/"}],"sat":null,"acceptance_rate":null,"notes":"English-proficiency waiver may be requested if the applicant's most recent education was entirely in English."},{"id":"4f7295b4-d2b0-5d33-afc9-6019dc8ac60c","english":[],"tuition":{"amount":10317000,"amount_max":null,"currency":"UZS","period":"year","academic_year":"2025/26","detail":"First-year foreign bachelor's students; contract study without scholarship.","source_url":"https://www.samdu.uz/uz/pages/talaba_xorijiy_kontrakt"},"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":""}]}
+tokens used
+56,639
+{"universities":[{"id":"08f735b1-c4fe-5f4b-89d7-84d547bdff54","english":[],"tuition":{"amount":920000,"amount_max":null,"currency":"KZT","period":"year","academic_year":"not stated","detail":"Published bachelor program fee; page does not specify a separate international rate or fee year.","source_url":"https://atu.edu.kz/en/welcome/bachelor/datascience/"},"application_fee":null,"deadlines":[{"title":"Autumn 2026 entry: original documents","due_at":"2026-08-20","route":"University applicant portal","source_url":"https://atu.edu.kz/en/welcome/foreign-students/"}],"sat":null,"acceptance_rate":null,"notes":"International applicants complete an individual interview."},{"id":"ece36c8b-699b-5db2-af92-bf6619f5c098","english":[],"tuition":{"amount":0,"amount_max":null,"currency":"KGS","period":"year","academic_year":"not stated","detail":"Education is free except for the Faculty of Medicine.","source_url":"https://oidb.manas.edu.kg/en/faq/1"},"application_fee":null,"deadlines":[{"title":"2026–2027 entry: application period","due_at":"2026-07-17","route":"Manas foreign-applicant registration","source_url":"https://exams.manas.edu.kg/pages/foreignstudents/"}],"sat":null,"acceptance_rate":null,"notes":"Applicants unfamiliar with Kyrgyz or Turkish take a one-year preparatory language course."},{"id":"2067e5d4-f7a4-5ae7-9d81-4527c0a51317","english":[{"test":"IELTS","minimum":5.5,"detail":"Equivalent to IELTS 5.5 or above required for full-degree international applicants.","source_url":"https://en.narxoz.kz/global/en/international/students/apply/"}],"tuition":null,"application_fee":null,"deadlines":[{"title":"Early Action for 2027 entry","due_at":"2026-11-01","route":"Narxoz international application","source_url":"https://en.narxoz.kz/global/en/international/students/apply/"},{"title":"Regular admission for 2027 entry","due_at":"2027-08-01","route":"Narxoz international application","source_url":"https://en.narxoz.kz/global/en/international/students/apply/"}],"sat":null,"acceptance_rate":null,"notes":"English-proficiency waiver may be requested if the applicant's most recent education was entirely in English."},{"id":"4f7295b4-d2b0-5d33-afc9-6019dc8ac60c","english":[],"tuition":{"amount":10317000,"amount_max":null,"currency":"UZS","period":"year","academic_year":"2025/26","detail":"First-year foreign bachelor's students; contract study without scholarship.","source_url":"https://www.samdu.uz/uz/pages/talaba_xorijiy_kontrakt"},"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":""}]}

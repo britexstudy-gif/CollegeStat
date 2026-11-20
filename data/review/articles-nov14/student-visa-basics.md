@@ -1,0 +1,119 @@
+# Student visa basics: US F-1, UK Student visa and Germany
+
+## In short
+
+- Get your admission paperwork first. Each route needs it before you can apply.
+- Use your embassy's or mission's official page, not a third-party checklist.
+- Fees below were read on official pages in November 2026 and change, so re-check when you apply.
+- Do not buy non-refundable travel before you understand the visa conditions.
+
+## United States: F-1
+
+After you are admitted to a school authorised to enrol international students, the school issues Form I-20. Pay the SEVIS fee, complete the DS-160 and follow the embassy's appointment and interview instructions. New F and M students may be issued a visa up to 365 days before the course starts but cannot enter more than 30 days before it. The visa application fee is $185 and the SEVIS I-901 fee is $350, two separate charges. [Student visa](https://travel.state.gov/content/travel/en/us-visas/study/student-visa.html) [Visa fees](https://travel.state.gov/content/travel/en/us-visas/visa-information-resources/fees/fees-visa-services.html) [SEVIS fee](https://www.ice.gov/sevis/i901)
+
+The SEVIS fee must be paid before a visa can be issued, and you show proof of payment at the interview. ICE says you pay online at fmjfee.com (or by other listed methods) and print your own payment confirmation, because receipts are no longer mailed. [Study in the States: paying the SEVIS fee](https://studyinthestates.dhs.gov/students/prepare/paying-the-i-901-sevis-fee) [SEVIS fee](https://www.ice.gov/sevis/i901)
+
+The State Department says visa applicants should book their interview at the embassy or consulate in their country of nationality or residence. Applying somewhere else can make it harder to qualify, and fees paid there are not refunded or transferred. [State Department: applying in your country of residence](https://travel.state.gov/content/travel/en/News/visas-news/adjudicating-niv-applicants-in-their-country-of-residence.html)
+
+## United Kingdom: Student visa
+
+You generally need a Confirmation of Acceptance for Studies (CAS) from a licensed sponsor and proof that you meet the route's requirements. GOV.UK lists an application fee of £558 from outside the UK and an immigration health surcharge of £776 per year for students. [Overview](https://www.gov.uk/student-visa) [Documents](https://www.gov.uk/student-visa/documents-you-must-provide) [Health surcharge](https://www.gov.uk/healthcare-immigration-application/how-much-pay)
+
+The health surcharge depends on the length of your visa, not only your course. For example, GOV.UK charges the yearly amount plus half for a visa of more than one year up to 18 months, and two full years for a visa of more than 18 months but under two years. Use the official calculator on GOV.UK with your CAS dates. [Health surcharge](https://www.gov.uk/healthcare-immigration-application/how-much-pay)
+
+Timing, as listed by GOV.UK: [Student visa](https://www.gov.uk/student-visa) [Apply](https://www.gov.uk/student-visa/apply)
+
+- The earliest you can apply from outside the UK is six months before your course starts.
+- You usually get a decision within three weeks. A faster service may be offered when you apply.
+- For a course longer than six months, you can arrive up to one month before it starts, but not before the start date on your visa.
+
+If you are under 18, you also need written consent from both parents or legal guardians (or one with sole responsibility) covering the application, your care in the UK and your travel, plus proof of your relationship to them, such as a birth certificate showing your parents' names. [Documents](https://www.gov.uk/student-visa/documents-you-must-provide)
+
+## Germany: national study visa
+
+Check the German mission that serves where you live for the current application method, appointment availability and documents. "Make it in Germany" lists a blocked account of at least €11,904 for 2026 as one way to prove funds; a scholarship or a declaration of commitment may also be accepted. The standard national visa fee is €75, and €37.50 for minors. These amounts are separate from tuition and bank fees. [Study visa](https://www.make-it-in-germany.com/en/visa-recognition/visa-types/studying) [Visa fees](https://www.auswaertiges-amt.de/en/visa-service/215870-215870)
+
+The Federal Foreign Office says many national visas can now be applied for online through its Consular Services Portal, but you still need an in-person appointment at the mission for fingerprints and photo, the fee and the check of original documents. If your mission does not yet offer your visa type online, you apply on paper. Do not apply online at a mission that is not responsible for you. [Visa fees and online applications](https://www.auswaertiges-amt.de/en/visa-service/215870-215870)
+
+## UK: the tuberculosis test
+
+You need a TB test for a UK visa if you are coming for six months or more and you have lived in a listed country for six months or more, recently. Kazakhstan, Tajikistan and Uzbekistan are on the list and have Home Office approved clinics. Kyrgyzstan is also on the list but is marked "get tested in another country", so students living there need to book an approved clinic abroad. [GOV.UK: TB tests](https://www.gov.uk/tb-test-visa) [Countries list](https://www.gov.uk/tb-test-visa/countries-where-you-need-a-tb-test-to-enter-the-uk)
+
+The certificate is valid for six months from the date of your x-ray. Book it close enough to your visa application that it is still valid when you apply. [GOV.UK: TB tests](https://www.gov.uk/tb-test-visa)
+
+## The US visa interview
+
+Most F-1 applicants have a short interview at the US embassy or consulate. The officer wants to understand three things: that you are a genuine student with a real study plan, that you can pay for your studies, and that your plans are clear. Prepare to answer simply:
+
+- Why this university and this course?
+- How will you pay for tuition and living costs? (Bring the same financial documents the university used for your I-20.)
+- What do you plan to do after graduating?
+
+Answer in your own words, briefly and honestly. Do not memorise a script. Bring your passport, I-20, DS-160 confirmation, SEVIS fee receipt, appointment confirmation, admission letter and financial documents. Appointment availability differs between Tashkent, Astana, Almaty, Bishkek and Dushanbe, and some posts have limited services, so check the embassy page for where you can apply.
+
+## Compare at a glance
+
+- **US:** I-20, SEVIS fee, DS-160, interview. Visa fee $185, SEVIS $350.
+- **UK:** CAS, document checklist, TB certificate, visa fee £558, health surcharge £776 per year.
+- **Germany:** admission, proof of funds (for example €11,904 blocked account), visa fee €75.
+
+> **Example.** Madina from Tashkent has offers from a UK and a German university. She lists each route's steps with the date she can start each, books the earliest visa appointment the mission allows, and checks that her course start date leaves a margin if processing takes longer than expected.
+
+## Money: what each country wants to see
+
+All three routes check that you can pay, in different ways:
+
+- **US:** the university asks for proof of funds before it issues the I-20, usually bank statements and a sponsor letter covering at least one year of costs. The consular officer may ask about the same documents.
+- **UK:** you must show your first year's course fees (up to nine months, as shown on your CAS) plus living costs of £1,529 a month in London or £1,171 a month elsewhere, for up to nine months. The money must have been held for at least 28 days in a row, and that period must end within 31 days of your application. If a sponsor paid your fees or living costs in the last 12 months, you need their written consent. [GOV.UK: money](https://www.gov.uk/student-visa/money)
+- **Germany:** most students use the blocked account; the bank releases a fixed monthly amount after you arrive.
+
+Translations of bank statements, sponsor letters and birth certificates (to prove the sponsor is your parent) are often needed. Prepare them early, and ask the university or mission whether a translation must be certified, notarised or apostilled before you pay a translator.
+
+> **Worked example (UK, illustrative).** A student whose parents will pay plans to apply on 1 August. The 28-day period must end on or after 1 July. So the full amount should sit in the account from early June at the latest, and the statement should show each day of that period. Moving money in and out during those days can break the rule.
+
+## A simple timeline after you accept an offer
+
+- **Week 1:** accept the offer, pay any deposit the university requires, and ask what you need for the visa document (I-20 or CAS) or admission letter.
+- **Weeks 2–4:** gather financial documents and translations; book any TB test or medical check.
+- **As soon as the visa document arrives:** pay fees and book the earliest appointment allowed.
+- **After approval:** buy travel, arrange housing and insurance, and keep digital copies of everything.
+
+## Month by month for a September 2027 start
+
+This is a planning guide, not a rule. Check each date against the official pages above.
+
+- **January to March 2027:** offers arrive. Start a folder for each country with your passport copy, school certificate, translations and parents' documents.
+- **March to May:** choose your university. For the US, send financial documents so the school can issue the I-20. For the UK, make sure the money you will show is in place in good time for the 28-day rule. For Germany, open the blocked account if you use one.
+- **May to June:** pay the SEVIS fee, complete the DS-160 and book the US interview. Book the UK TB test if you need it, timing it for its six-month validity.
+- **June to July:** apply for the UK visa once you have your CAS, from six months before the course start. Attend the German mission appointment.
+- **August:** collect your visa, then book travel. Check your earliest allowed entry date.
+
+## Organise your documents
+
+- Keep one folder per country, with a checklist on the first page copied from the official page.
+- Scan every document as a clear PDF and name it plainly, such as "passport-main-page.pdf".
+- Keep originals in one envelope you carry to appointments.
+- Make sure your name is spelled the same on the passport, admission letter, I-20 or CAS, bank documents and test results.
+
+## Common mistakes
+
+- Booking flights before the visa is approved.
+- Showing money that has been in the account for fewer than 28 days (UK).
+- Applying at an embassy outside your country of nationality or residence (US).
+- Letting a TB certificate expire before the UK application.
+- Paying unofficial agents for appointments or "guaranteed" visas.
+
+## Questions to ask the university
+
+- When will you issue my I-20 or CAS, and what do you need from me first?
+- Which financial documents do you accept, and in which currency?
+- Do my documents need certified translations?
+- Is there a deposit, and is it refundable if my visa is refused?
+
+## Checklist
+
+- Apply only after you have the sponsor or university documents the route requires.
+- Compare visa timelines with your course start and travel date.
+- Keep originals and copies of admission, finances, identity and study documents.
+- For Germany specifically, read [Studienkolleg, uni-assist and proof of funds](/articles/germany-studienkolleg).
+- For the UK application steps before the visa, read [UCAS 2027 entry](/articles/ucas-2027).

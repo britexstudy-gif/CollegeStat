@@ -1,0 +1,6 @@
+{"universities":[
+{"id":"2a168154-1f87-5939-a46e-bd246659e517","english":[],"tuition":null,"application_fee":{"amount":50,"currency":"USD","source_url":"https://shooliniuniversity.com/frequently-asked-questions"},"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"Tuition withheld: fee table gives USD per semester but no academic year on the page. No English minimum found on official page."},
+{"id":"34ebeddd-9eb9-50cc-8708-3d73ca7b863d","english":[],"tuition":null,"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":""},
+{"id":"c729cc19-397a-5cbd-840d-3fa6fcfc58eb","english":[],"tuition":null,"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":""},
+{"id":"44458433-4eb0-5724-86b1-f75137ac3c17","english":[],"tuition":null,"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":""}
+]}

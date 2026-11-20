@@ -1,0 +1,24 @@
+{
+  "status": "verified_identity_correction",
+  "reviewed_at": "2026-10-10T18:51:00Z",
+  "scope": "Institution identity only; source ranks, bands, ties, scores, years and URLs unchanged",
+  "corrections": [
+    {
+      "provider": "the",
+      "year": 2026,
+      "source_name": "University of Education, Lahore",
+      "country_code": "PK",
+      "source_url": "https://www.timeshighereducation.com/world-university-rankings/university-education-lahore",
+      "original_university_id": "fcd1cd76-2c2e-526f-acd6-38a74eb5954d",
+      "university_id": "3f15a83c-c1d9-50da-85e9-4cfa84fe5c04",
+      "ror": "https://ror.org/052z7nw84",
+      "official_domain": "ue.edu.pk",
+      "official_city": "Lahore",
+      "identity_sources": ["https://ue.edu.pk/", "https://ue.edu.pk/contactus.php", "https://uo.edu.pk/", "https://ror.org/052z7nw84", "https://ror.org/02fmg6q11"],
+      "registry_release": "ROR 2.13 · 2026-09-22",
+      "registry_archive_sha256": "476988542f1bdd185f779386f90149371f58cb4ebdba326db3b7b428a468d4a5",
+      "evidence": "Independent root review of official domains/cities and both active records in the installed ROR archive. Okara's historical alias names University of Education, Lahore, but current UE is headquartered in Lahore at ue.edu.pk; Okara operates at uo.edu.pk. Reuse the existing exact Lahore identity. No institution or rank is created.",
+      "verification_status": "verified"
+    }
+  ]
+}

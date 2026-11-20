@@ -1,0 +1,175 @@
+/* CollegeStat brand tokens: the one source for colour, type, spacing, radii,
+ * shadows and motion. Loaded last by app/layout.tsx so it wins over the legacy
+ * stylesheets; `html:root` matches their highest token specificity.
+ *
+ * Use the --cs-* names in new CSS. The shadcn names (--primary, --border, ...)
+ * and the legacy aliases (--blue, --cs-blue, --ink, --line, ...) are mapped
+ * below so older components follow the same palette without edits.
+ *
+ * Accent: the logo blue (#0061fc, public/brand/collegestat-mark.svg).
+ * Light: white text on it is 5.1:1. Dark: the fill steps to #2a66f5 (white
+ * text 4.9:1) and accent text on the dark page uses #7ca5ff (7.6:1). */
+
+html:root {
+  /* Colour: one accent, neutral greys. */
+  --cs-accent: #0061fc;
+  --cs-accent-hover: #0052d6;
+  --cs-accent-press: #0047ba;
+  --cs-accent-text: #0058e6;
+  --cs-accent-soft: #eef4ff;
+  --cs-accent-soft-hover: #e1ebff;
+  --cs-on-accent: #ffffff;
+  /* The logo's own blue; brighter on dark pages. */
+  --cs-logo: #0061fc;
+
+  --cs-bg: #ffffff;
+  --cs-surface: #ffffff;
+  --cs-surface-2: #f6f6f5;
+  --cs-surface-3: #efefed;
+  --cs-hover: #f3f3f2;
+  --cs-ink: #141414;
+  --cs-ink-2: #3d3f44;
+  --cs-muted: #63666d;
+  --cs-faint: #8a8d93;
+  --cs-line: #e6e6e3;
+  --cs-line-strong: #d3d3cf;
+
+  --cs-success: #13804b;
+  --cs-warning: #a55a06;
+  --cs-danger: #d23b3b;
+
+  /* Type. Poppins has Latin only: Cyrillic falls to Montserrat, Chinese to the system CJK sans. */
+  --cs-font-sans: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --cs-font-display: Poppins, Montserrat, Inter, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei",
+    "Noto Sans CJK SC", system-ui, sans-serif;
+  --cs-text-xs: 12px;
+  --cs-text-sm: 13.5px;
+  --cs-text-base: 15px;
+  --cs-text-md: 17px;
+  --cs-text-lg: 20px;
+  --cs-text-xl: clamp(22px, 2.2vw, 28px);
+  --cs-text-2xl: clamp(26px, 2.8vw, 38px);
+  --cs-text-3xl: clamp(34px, 4.4vw, 58px);
+  --cs-text-4xl: clamp(40px, 5.6vw, 76px);
+
+  /* Spacing: a 4px base. */
+  --cs-space-1: 4px;
+  --cs-space-2: 8px;
+  --cs-space-3: 12px;
+  --cs-space-4: 16px;
+  --cs-space-5: 24px;
+  --cs-space-6: 32px;
+  --cs-space-7: 48px;
+  --cs-space-8: 64px;
+  --cs-space-9: 96px;
+  --cs-space-10: 144px;
+
+  /* Radii. */
+  --cs-radius-xs: 6px;
+  --cs-radius-sm: 8px;
+  --cs-radius-md: 12px;
+  --cs-radius-lg: 16px;
+  --cs-radius-xl: 24px;
+  --cs-radius-2xl: 32px;
+  --cs-radius-pill: 999px;
+
+  /* Shadows. */
+  --cs-shadow-sm: 0 1px 2px rgb(16 24 40 / 6%);
+  --cs-shadow-md: 0 8px 24px -12px rgb(16 24 40 / 18%);
+  --cs-shadow-lg: 0 30px 70px -28px rgb(20 50 120 / 40%);
+  --cs-focus-ring: 0 0 0 3px color-mix(in srgb, var(--cs-accent) 32%, transparent);
+
+  /* Motion. */
+  --cs-ease: cubic-bezier(0.16, 1, 0.3, 1);
+  --cs-ease-standard: cubic-bezier(0.2, 0, 0, 1);
+  --cs-dur-fast: 140ms;
+  --cs-dur: 220ms;
+  --cs-dur-slow: 600ms;
+
+  /* shadcn tokens. */
+  --font-sans: var(--cs-font-sans);
+  --background: var(--cs-bg);
+  --foreground: var(--cs-ink);
+  --card: var(--cs-surface);
+  --card-foreground: var(--cs-ink);
+  --popover: var(--cs-surface);
+  --popover-foreground: var(--cs-ink);
+  --primary: var(--cs-accent);
+  --primary-foreground: var(--cs-on-accent);
+  --secondary: var(--cs-surface-2);
+  --secondary-foreground: var(--cs-ink);
+  --muted: var(--cs-surface-2);
+  --muted-foreground: var(--cs-muted);
+  --accent: var(--cs-accent-soft);
+  --accent-foreground: var(--cs-ink);
+  --border: var(--cs-line);
+  --input: var(--cs-line);
+  --ring: var(--cs-accent);
+
+  /* Legacy aliases still read by older stylesheets. */
+  --cs-font: var(--cs-font-sans);
+  --l4-display: var(--cs-font-display);
+  --page: var(--cs-bg);
+  --ink: var(--cs-ink);
+  --soft-ink: var(--cs-muted);
+  --line: var(--cs-line);
+  --blue: var(--cs-accent);
+  --cs-blue: var(--cs-accent);
+  --cs-blue-ink: var(--cs-accent-text);
+  --cs-blue-soft: var(--cs-accent-soft);
+  --cs-secondary: var(--cs-muted);
+  --cs-border: var(--cs-line);
+  --cs-border-strong: var(--cs-line-strong);
+}
+
+html:root.dark {
+  --cs-accent: #2a66f5;
+  --cs-accent-hover: #3b74ff;
+  --cs-accent-press: #2358d8;
+  --cs-accent-text: #7ca5ff;
+  --cs-accent-soft: #1c1c1e; /* neutral, not navy: dark mode stays black and grey (Nov 18) */
+  --cs-accent-soft-hover: #262628;
+  --cs-on-accent: #ffffff;
+  --cs-logo: #4d8dff;
+
+  --cs-bg: #0b0b0b;
+  --cs-surface: #141414;
+  --cs-surface-2: #1b1b1b;
+  --cs-surface-3: #232323;
+  --cs-hover: #1f1f1f;
+  --cs-ink: #f2f2f2;
+  --cs-ink-2: #d4d4d4;
+  --cs-muted: #a0a0a0;
+  --cs-faint: #808080;
+  --cs-line: #2a2a2a;
+  --cs-line-strong: #3d3d3d;
+
+  --cs-success: #4cc38a;
+  --cs-warning: #e3a33b;
+  --cs-danger: #f06a6a;
+
+  --cs-shadow-sm: 0 1px 2px rgb(0 0 0 / 50%);
+  --cs-shadow-md: 0 10px 28px -12px rgb(0 0 0 / 70%);
+  --cs-shadow-lg: 0 30px 70px -24px rgb(0 0 0 / 80%);
+  --cs-focus-ring: 0 0 0 3px color-mix(in srgb, var(--cs-accent-text) 40%, transparent);
+
+  --input: #303030;
+  --ring: var(--cs-accent-text);
+}
+
+/* Keyboard focus: one visible ring everywhere, never on mouse click. */
+:where(a, button, [role="button"], input, select, textarea, summary, [tabindex]):focus-visible {
+  outline: 2px solid var(--cs-accent);
+  outline-offset: 2px;
+}
+html.dark :where(a, button, [role="button"], input, select, textarea, summary, [tabindex]):focus-visible {
+  outline-color: var(--cs-accent-text);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:root {
+    --cs-dur-fast: 0ms;
+    --cs-dur: 0ms;
+    --cs-dur-slow: 0ms;
+  }
+}

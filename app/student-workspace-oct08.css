@@ -1,0 +1,564 @@
+/* Focused learning and private student settings use the shared light / black-blue tokens. */
+.student-workspace .sidebar-group-label {
+  color: var(--muted-foreground);
+  font-size: 10px;
+  font-weight: 550;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin: 18px 0 7px;
+  padding-left: 11px;
+}
+.student-workspace.focused-study .workspace-intro {
+  margin-bottom: 30px;
+}
+.student-workspace.focused-study .workspace-intro > .button {
+  font-size: 12px;
+  min-height: 40px;
+}
+.student-workspace .student-content {
+  min-width: 0;
+}
+.student-workspace .student-studio .studio-heading {
+  margin-bottom: 25px;
+}
+.student-workspace .studio-track-grid > button {
+  min-height: 180px;
+}
+.student-workspace .practice-question,
+.student-workspace .practice-results {
+  max-width: none;
+}
+.practice-session-map {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 22px;
+}
+.practice-session-map > span {
+  width: 29px;
+  height: 29px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  border: 0.5px solid var(--border);
+  border-radius: 8px;
+  color: var(--muted-foreground);
+}
+.practice-session-map > .current {
+  color: var(--primary);
+  border-color: var(--primary);
+  background: color-mix(in srgb, var(--primary) 9%, var(--card));
+}
+.practice-session-map > .answered {
+  color: var(--primary);
+  background: var(--muted);
+}
+.practice-session-map > small {
+  margin-left: auto;
+  color: var(--muted-foreground);
+  font-size: 11px;
+}
+.practice-question h3:focus {
+  outline: none;
+}
+.practice-option.incorrect {
+  border-color: color-mix(in srgb, #c75050 65%, var(--border));
+  background: color-mix(in srgb, #c75050 6%, var(--card));
+}
+.writing-desk > small svg {
+  display: inline;
+  vertical-align: -2px;
+}
+.writing-check-progress {
+  color: var(--muted-foreground);
+  font-size: 10px;
+  margin: -9px 0 22px;
+}
+.writing-check-progress > div,
+.profile-priority-progress > div {
+  height: 4px;
+  background: var(--muted);
+  border-radius: 8px;
+  margin-top: 10px;
+  overflow: hidden;
+}
+.writing-check-progress > div > span,
+.profile-priority-progress > div > span {
+  height: 100%;
+  display: block;
+  background: var(--primary);
+  transition: width 0.2s;
+}
+.guide-step-row {
+  padding: 17px 0;
+  border-top: 0.5px solid var(--border);
+}
+.guide-step-row > a {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.guide-step-row > a > span {
+  color: var(--primary);
+  font-size: 12px;
+}
+.guide-step-row > a > div {
+  flex: 1;
+}
+.guide-step-row > a > svg {
+  flex: none;
+  color: var(--muted-foreground);
+}
+.guide-step-row > button {
+  margin: 10px 0 0 32px;
+  font-size: 10px;
+}
+.guide-step-row > button:disabled {
+  color: var(--muted-foreground);
+  cursor: default;
+}
+.student-profile-page {
+  padding-top: 25px;
+}
+.profile-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 12px;
+  margin-bottom: 24px;
+}
+.profile-settings-intro {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+.profile-settings-intro h1 {
+  font-size: clamp(32px, 4vw, 46px);
+  letter-spacing: -0.045em;
+  line-height: 1.15;
+  margin: 12px 0;
+}
+.profile-settings-intro p {
+  color: var(--muted-foreground);
+  font-size: 13px;
+  line-height: 1.8;
+}
+.profile-private-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 11px;
+  color: var(--muted-foreground);
+  background: var(--card);
+  padding: 8px 11px;
+  border: 0.5px solid var(--border);
+  border-radius: 8px;
+  flex: none;
+}
+.profile-settings-layout {
+  display: grid;
+  grid-template-columns: 245px minmax(0, 1fr);
+  gap: 34px;
+}
+.profile-settings-sidebar {
+  align-self: start;
+  position: sticky;
+  top: 118px;
+  min-width: 0;
+}
+.student-profile-identity {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding-bottom: 24px;
+  border-bottom: 0.5px solid var(--border);
+  margin-bottom: 18px;
+}
+.student-profile-identity > span {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 43px;
+  height: 43px;
+  color: var(--primary);
+  background: color-mix(in srgb, var(--primary) 10%, var(--card));
+  border-radius: 13px;
+  font-size: 17px;
+}
+.student-profile-identity > div {
+  min-width: 0;
+}
+.student-profile-identity strong,
+.student-profile-identity small {
+  display: block;
+  overflow-wrap: anywhere;
+}
+.student-profile-identity strong {
+  font-size: 13px;
+  font-weight: 550;
+}
+.student-profile-identity small {
+  margin-top: 5px;
+  font-size: 10px;
+  color: var(--muted-foreground);
+}
+.profile-settings-sidebar nav {
+  display: grid;
+  gap: 5px;
+}
+.profile-settings-sidebar nav button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  min-height: 44px;
+  padding: 10px 12px;
+  background: transparent;
+  color: var(--muted-foreground);
+  border: 0;
+  border-radius: 10px;
+  text-align: left;
+}
+.profile-settings-sidebar nav button svg:last-child {
+  margin-left: auto;
+}
+.profile-settings-sidebar nav button.active {
+  color: var(--primary);
+  background: color-mix(in srgb, var(--primary) 8%, var(--card));
+}
+.profile-priority-progress {
+  background: var(--card);
+  border: 0.5px solid var(--border);
+  border-radius: 13px;
+  margin: 25px 0;
+  padding: 17px;
+}
+.profile-priority-progress strong {
+  font-size: 11px;
+  font-weight: 550;
+}
+.profile-priority-progress p {
+  font-size: 11px;
+  color: var(--muted-foreground);
+  line-height: 1.7;
+  margin-top: 11px;
+}
+.profile-settings-sidebar > .text-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+}
+.profile-settings-content {
+  min-width: 0;
+}
+.profile-settings-content [hidden] {
+  display: none;
+}
+.profile-priorities-form {
+  display: grid;
+  gap: 18px;
+}
+.profile-setting-card {
+  padding: 26px;
+  border: 0.5px solid var(--border);
+  border-radius: 18px;
+  background: var(--card);
+}
+.profile-card-heading {
+  display: flex;
+  align-items: flex-start;
+  gap: 13px;
+  margin-bottom: 22px;
+}
+.profile-card-heading > svg {
+  color: var(--primary);
+  margin-top: 2px;
+  flex: none;
+}
+.profile-card-heading h2 {
+  margin: 0 0 7px;
+  font-size: 18px;
+  font-weight: 550;
+  letter-spacing: -0.02em;
+}
+.profile-card-heading p {
+  margin: 0;
+  color: var(--muted-foreground);
+  font-size: 12px;
+  line-height: 1.75;
+}
+.student-profile-page .form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+.student-profile-page .form-field {
+  color: var(--foreground);
+  font-size: 12px;
+  gap: 9px;
+}
+.student-profile-page .form-field input {
+  background: var(--background);
+  border: 0.5px solid var(--border);
+  border-radius: 10px;
+  min-height: 45px;
+  color: var(--foreground);
+  padding: 11px 13px;
+  width: 100%;
+  font-size: 13px;
+}
+.student-profile-page .form-field .choice {
+  width: 100%;
+}
+.profile-selected-countries {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-bottom: 16px;
+}
+.profile-selected-countries > button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 0.5px solid var(--border);
+  border-radius: 7px;
+  padding: 6px 9px;
+  color: var(--primary);
+  font-size: 11px;
+  background: color-mix(in srgb, var(--primary) 5%, var(--card));
+}
+.profile-selected-countries > button span {
+  font-size: 15px;
+}
+.profile-country-search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 44px;
+  border: 0.5px solid var(--border);
+  border-radius: 10px;
+  padding: 0 13px;
+  color: var(--muted-foreground);
+  background: var(--background);
+}
+.profile-country-search input {
+  border: none;
+  border-radius: 0;
+  outline: none;
+  padding: 10px 0;
+  width: 100%;
+  min-width: 0;
+  font-size: 13px;
+  background: transparent;
+  color: var(--foreground);
+}
+.profile-country-search:focus-within {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--primary) 14%, transparent);
+}
+.profile-country-options {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 18px;
+  row-gap: 5px;
+  max-height: 205px;
+  overflow-y: auto;
+  margin-top: 13px;
+  padding: 2px 8px 2px 2px;
+  overscroll-behavior: contain;
+}
+.profile-country-options .filter-checkbox {
+  position: relative;
+  padding: 9px 0;
+  margin: 0;
+  font-size: 12px;
+  align-items: center;
+  line-height: 1.6;
+}
+.profile-country-options > p {
+  font-size: 12px;
+  color: var(--muted-foreground);
+  grid-column: 1 / -1;
+}
+.profile-aid-check {
+  font-size: 12px;
+  margin: 22px 0 0;
+}
+.profile-weight-settings {
+  border-top: 0.5px solid var(--border);
+  padding-top: 20px;
+  margin-top: 24px;
+}
+.profile-weight-settings summary {
+  cursor: pointer;
+  font-size: 12px;
+  color: var(--foreground);
+}
+.profile-weight-settings p {
+  color: var(--muted-foreground);
+  font-size: 11px;
+  line-height: 1.8;
+  margin: 14px 0 18px;
+}
+.profile-save-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 17px 0 28px;
+}
+.profile-save-bar > span {
+  font-size: 11px;
+  line-height: 1.7;
+  color: var(--muted-foreground);
+  max-width: 410px;
+}
+.profile-save-bar > .button {
+  font-size: 12px;
+  min-height: 44px;
+  flex: none;
+}
+.profile-privacy-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  border-top: 0.5px solid var(--border);
+  padding: 23px 0;
+}
+.profile-privacy-row > span {
+  min-width: 0;
+  max-width: 450px;
+}
+.profile-privacy-row strong {
+  font-size: 13px;
+  font-weight: 550;
+  display: block;
+}
+.profile-privacy-row small {
+  display: block;
+  font-size: 11px;
+  line-height: 1.8;
+  color: var(--muted-foreground);
+  margin-top: 6px;
+}
+.profile-privacy-row .button {
+  flex: none;
+  font-size: 11px;
+  min-height: 40px;
+  padding: 10px 14px;
+}
+.profile-delete-row {
+  padding-bottom: 0;
+}
+.profile-delete-row strong,
+.profile-delete-row > .button {
+  color: #c95353;
+}
+.profile-recovery-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+@media (max-width: 950px) {
+  .profile-settings-layout {
+    grid-template-columns: 205px minmax(0, 1fr);
+    gap: 22px;
+  }
+  .profile-setting-card {
+    padding: 22px;
+  }
+}
+@media (max-width: 760px) {
+  .student-workspace .sidebar-group-label {
+    display: none;
+  }
+  .student-workspace.focused-study .workspace-intro {
+    margin-bottom: 22px;
+  }
+  .profile-settings-layout {
+    grid-template-columns: 1fr;
+    gap: 23px;
+  }
+  .profile-settings-sidebar {
+    position: static;
+  }
+  .profile-settings-sidebar nav {
+    grid-template-columns: 1fr 1fr;
+  }
+  .profile-settings-sidebar .profile-priority-progress,
+  .profile-settings-sidebar > .text-link {
+    display: none;
+  }
+  .student-profile-identity {
+    padding-bottom: 17px;
+    margin-bottom: 14px;
+  }
+  .profile-settings-intro {
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 25px;
+  }
+  .profile-settings-intro h1 {
+    font-size: 34px;
+  }
+  .profile-settings-intro p {
+    font-size: 12px;
+  }
+  .profile-setting-card {
+    padding: 20px;
+    border-radius: 15px;
+  }
+  .profile-country-options {
+    max-height: 240px;
+  }
+  .profile-privacy-row {
+    align-items: flex-start;
+  }
+  .profile-privacy-row .button {
+    font-size: 11px;
+  }
+}
+@media (max-width: 480px) {
+  .student-profile-page .form-grid {
+    grid-template-columns: 1fr;
+    gap: 17px;
+  }
+  .profile-country-options {
+    grid-template-columns: 1fr;
+  }
+  .profile-privacy-row {
+    flex-wrap: wrap;
+    gap: 13px;
+  }
+  .profile-save-bar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .student-profile-page .form-field input,
+  .profile-country-search input {
+    font-size: 16px;
+  }
+  .practice-session-map {
+    gap: 6px;
+  }
+  .practice-session-map > small {
+    font-size: 10px;
+  }
+  .student-workspace .studio-track-grid > button {
+    min-height: 140px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .writing-check-progress > div > span,
+  .profile-priority-progress > div > span {
+    transition: none;
+  }
+}

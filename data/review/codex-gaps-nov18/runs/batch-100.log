@@ -1,0 +1,66 @@
+OpenAI Codex v0.169.0
+--------
+workdir: /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+model: gpt-6-luna
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: high
+reasoning summaries: none
+session id: 01a1ee95-9ece-7bc1-bdc2-12f042f39e44
+--------
+user
+You are a careful admissions-data researcher. For each university below, find facts for an
+INTERNATIONAL applicant to a FIRST-YEAR BACHELOR'S degree starting in autumn 2027 (or the nearest
+published cycle). Use the live web. Rules:
+
+- Official sources only: the university's own website (its domain or subdomains), the national
+  application service (UCAS, Common App, OUAC, uni-assist, Studyinkorea, etc.) or a government
+  statistics office. Never use rankings sites, forums, agencies, Wikipedia or blogs.
+- Every value needs the exact page URL where you read it (source_url). If you could not verify a
+  value on an official page, leave it out (null or an empty list). Never guess or estimate.
+- english: the lowest overall score accepted for undergraduate entry, per test (IELTS Academic
+  overall, TOEFL iBT total, Duolingo, PTE). If programmes differ, give the general/lowest common
+  university minimum and say so in detail (e.g. "6.5 overall, no band below 6.0; some
+  programmes higher").
+- tuition: the yearly tuition for international (non-EU / overseas) undergraduates in the local
+  currency. If it varies by programme give amount = lowest and amount_max = highest, and the
+  academic_year the fee applies to (e.g. "2026/27"). If tuition is free, amount = 0.
+- application_fee: for international first-year applicants, local currency.
+- deadlines: the main 2027-entry first-year deadlines (ISO date YYYY-MM-DD) with the route
+  (e.g. "Common App, Regular Decision", "UCAS", "university portal"). Only dates actually
+  published; if only the 2026-entry date is published, include it and put "2026 entry" in title.
+- sat: policy for international applicants; p25/p75 total SAT only if the university publishes
+  them (Common Data Set or admissions profile).
+- acceptance_rate: only if officially published (CDS, admissions statistics page).
+- notes: one short line on anything important (e.g. "Foundation year required for 11-year
+  school certificates"), else "".
+
+Spend effort on the facts students need most: English minimum, tuition, deadlines. Keep each
+detail under 160 characters. Return only the JSON that matches the schema; use each
+university's id exactly as given.
+
+Universities:
+- id: 59ce050c-68d5-5716-b96f-418d0f1db0ba | Shenzhen University | Shenzhen, CN | http://www.szu.edu.cn/
+- id: eafc10bb-c96f-5d93-8dd0-e9f63e8a9564 | University of Aveiro | Aveiro, PT | https://www.ua.pt
+- id: ddf921d4-c1cb-5e8c-825b-2aee80062067 | National Taipei University of Technology | Taipei, TW | http://www.ntut.edu.tw/
+- id: 2e2fd0e8-4ad8-54ef-bf66-74a5ee18876e | Université de Strasbourg | Strasbourg, FR | https://www.unistra.fr/
+codex
+I’ll check each university’s official international admissions and fee pages, using the nearest published entry cycle where 2027 details aren’t available.
+web search: 
+web search: site:szu.edu.cn international undergraduate admission 2026 tuition English requirements Shenzhen University ...
+web search: 
+web search: site:ua.pt international students 2026 2027 tuition fee undergraduate 3000 English language University Aveiro ...
+web search: 
+web search: 
+web search: 
+web search: site:oia.ntut.edu.tw international student tuition application fee NT$ 2026 undergraduate NTUT ...
+web search: 
+web search: 
+web search: 
+web search: 
+codex
+{"universities":[{"id":"59ce050c-68d5-5716-b96f-418d0f1db0ba","english":[{"test":"IELTS","minimum":5.5,"detail":"Overall 5.5 for English-taught programs.","source_url":"https://en.szu.edu.cn/info/1023/1903.htm"},{"test":"TOEFL iBT","minimum":80,"detail":"Total 80 for English-taught programs.","source_url":"https://en.szu.edu.cn/info/1023/1903.htm"},{"test":"Duolingo","minimum":100,"detail":"100 or above for English-taught programs.","source_url":"https://en.szu.edu.cn/info/1023/1903.htm"}],"tuition":{"amount":26000,"amount_max":40000,"currency":"CNY","period":"year","academic_year":"2026","detail":"2026 international undergraduate fees: liberal arts ¥26,000; science/engineering ¥30,000; medicine, arts, physical education ¥40,000.","source_url":"https://en.szu.edu.cn/info/1023/1903.htm"},"application_fee":{"amount":400,"currency":"CNY","source_url":"https://en.szu.edu.cn/info/1023/1903.htm"},"deadlines":[{"title":"2026 entry, first round","due_at":"2026-03-20","route":"SZU online application portal","source_url":"https://en.szu.edu.cn/info/1023/1903.htm"},{"title":"2026 entry, second round","due_at":"2026-05-31","route":"SZU online application portal","source_url":"https://en.szu.edu.cn/info/1023/1903.htm"}],"sat":null,"acceptance_rate":null,"notes":"Applicants must be 18–25; Chinese-taught programs have HSK requirements."},{"id":"eafc10bb-c96f-5d93-8dd0-e9f63e8a9564","english":[],"tuition":{"amount":3500,"amount_max":5000,"currency":"EUR","period":"year","academic_year":"2026/27","detail":"International undergraduate fees range from €3,500 to €5,000 annually by degree.","source_url":"https://api-portal.ua.pt/api/v1/file/90554"},"application_fee":{"amount":70,"currency":"EUR","source_url":"https://api-portal.ua.pt/api/v1/file/89215"},"deadlines":[{"title":"2026/27 entry, first phase","due_at":"2026-01-29","route":"University of Aveiro application portal","source_url":"https://api-portal.ua.pt/api/v1/file/89215"}],"sat":{"policy":"accepted_alternative","p25":null,"p75":null,"source_url":"https://api-portal.ua.pt/api/v1/file/89215"},"acceptance_rate":null,"notes":"Most degrees are taught in Portuguese; international applicants generally need Portuguese B1."},{"id":"ddf921d4-c1cb-5e8c-825b-2aee80062067","english":[],"tuition":{"amount":94756,"amount_max":109674,"currency":"TWD","period":"year","academic_year":"2026/27","detail":"Annualized from the handbook’s NT$47,378–54,837 per semester for bachelor’s programs (two semesters).","source_url":"https://oia.ntut.edu.tw/var/file/32/1032/img/2026FallAdmissionHandbook_provisional.pdf"},"application_fee":{"amount":0,"currency":"TWD","source_url":"https://oia.ntut.edu.tw/var/file/32/1032/img/2026FallAdmissionHandbook.pdf"},"deadlines":[{"title":"2027 fall entry","due_at":"2027-03-10","route":"NTUT international student online application","source_url":"https://oia.ntut.edu.tw/p/412-1032-13828.php?Lang=en"}],"sat":null,"acceptance_rate":null,"notes":"Language requirements vary by department; check the admission handbook for the intended program."},{"id":"2e2fd0e8-4ad8-54ef-bf66-74a5ee18876e","english":[],"tuition":{"amount":2902,"amount_max":2902,"currency":"EUR","period":"year","academic_year":"2026/27","detail":"Standard differentiated undergraduate fee for most non-EU students; exemptions may apply.","source_url":"https://en.unistra.fr/en/node/1781/tuition-fees"},"application_fee":null,"deadlines":[{"title":"2027/28 entry","due_at":"2026-12-15","route":"DAP (Demande d’admission préalable)","source_url":"https://med.unistra.fr/formations/acces-aux-etudes-de-sante/etudiants-hors-ue/"}],"sat":null,"acceptance_rate":null,"notes":"DAP is required for many non-EU first-year applicants with foreign secondary diplomas."}]}
+tokens used
+53,750
+{"universities":[{"id":"59ce050c-68d5-5716-b96f-418d0f1db0ba","english":[{"test":"IELTS","minimum":5.5,"detail":"Overall 5.5 for English-taught programs.","source_url":"https://en.szu.edu.cn/info/1023/1903.htm"},{"test":"TOEFL iBT","minimum":80,"detail":"Total 80 for English-taught programs.","source_url":"https://en.szu.edu.cn/info/1023/1903.htm"},{"test":"Duolingo","minimum":100,"detail":"100 or above for English-taught programs.","source_url":"https://en.szu.edu.cn/info/1023/1903.htm"}],"tuition":{"amount":26000,"amount_max":40000,"currency":"CNY","period":"year","academic_year":"2026","detail":"2026 international undergraduate fees: liberal arts ¥26,000; science/engineering ¥30,000; medicine, arts, physical education ¥40,000.","source_url":"https://en.szu.edu.cn/info/1023/1903.htm"},"application_fee":{"amount":400,"currency":"CNY","source_url":"https://en.szu.edu.cn/info/1023/1903.htm"},"deadlines":[{"title":"2026 entry, first round","due_at":"2026-03-20","route":"SZU online application portal","source_url":"https://en.szu.edu.cn/info/1023/1903.htm"},{"title":"2026 entry, second round","due_at":"2026-05-31","route":"SZU online application portal","source_url":"https://en.szu.edu.cn/info/1023/1903.htm"}],"sat":null,"acceptance_rate":null,"notes":"Applicants must be 18–25; Chinese-taught programs have HSK requirements."},{"id":"eafc10bb-c96f-5d93-8dd0-e9f63e8a9564","english":[],"tuition":{"amount":3500,"amount_max":5000,"currency":"EUR","period":"year","academic_year":"2026/27","detail":"International undergraduate fees range from €3,500 to €5,000 annually by degree.","source_url":"https://api-portal.ua.pt/api/v1/file/90554"},"application_fee":{"amount":70,"currency":"EUR","source_url":"https://api-portal.ua.pt/api/v1/file/89215"},"deadlines":[{"title":"2026/27 entry, first phase","due_at":"2026-01-29","route":"University of Aveiro application portal","source_url":"https://api-portal.ua.pt/api/v1/file/89215"}],"sat":{"policy":"accepted_alternative","p25":null,"p75":null,"source_url":"https://api-portal.ua.pt/api/v1/file/89215"},"acceptance_rate":null,"notes":"Most degrees are taught in Portuguese; international applicants generally need Portuguese B1."},{"id":"ddf921d4-c1cb-5e8c-825b-2aee80062067","english":[],"tuition":{"amount":94756,"amount_max":109674,"currency":"TWD","period":"year","academic_year":"2026/27","detail":"Annualized from the handbook’s NT$47,378–54,837 per semester for bachelor’s programs (two semesters).","source_url":"https://oia.ntut.edu.tw/var/file/32/1032/img/2026FallAdmissionHandbook_provisional.pdf"},"application_fee":{"amount":0,"currency":"TWD","source_url":"https://oia.ntut.edu.tw/var/file/32/1032/img/2026FallAdmissionHandbook.pdf"},"deadlines":[{"title":"2027 fall entry","due_at":"2027-03-10","route":"NTUT international student online application","source_url":"https://oia.ntut.edu.tw/p/412-1032-13828.php?Lang=en"}],"sat":null,"acceptance_rate":null,"notes":"Language requirements vary by department; check the admission handbook for the intended program."},{"id":"2e2fd0e8-4ad8-54ef-bf66-74a5ee18876e","english":[],"tuition":{"amount":2902,"amount_max":2902,"currency":"EUR","period":"year","academic_year":"2026/27","detail":"Standard differentiated undergraduate fee for most non-EU students; exemptions may apply.","source_url":"https://en.unistra.fr/en/node/1781/tuition-fees"},"application_fee":null,"deadlines":[{"title":"2027/28 entry","due_at":"2026-12-15","route":"DAP (Demande d’admission préalable)","source_url":"https://med.unistra.fr/formations/acces-aux-etudes-de-sante/etudiants-hors-ue/"}],"sat":null,"acceptance_rate":null,"notes":"DAP is required for many non-EU first-year applicants with foreign secondary diplomas."}]}

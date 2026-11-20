@@ -1,0 +1,103 @@
+{
+  "reviewed_at": "2026-10-05",
+  "aliases": [
+    {
+      "country": "CH",
+      "ror": "https://ror.org/02s376052",
+      "names": [
+        "EPFL – École polytechnique fédérale de Lausanne"
+      ],
+      "source_url": "https://www.epfl.ch/about/overview/"
+    },
+    {
+      "country": "SG",
+      "ror": "https://ror.org/02e7b5302",
+      "names": [
+        "Nanyang Technological University, Singapore (NTU Singapore)",
+        "Nanyang Technological University, Singapore"
+      ],
+      "source_url": "https://www.ntu.edu.sg/about-us"
+    },
+    {
+      "country": "FR",
+      "ror": "https://ror.org/013cjyk83",
+      "names": [
+        "PSL University",
+        "Paris Sciences et Lettres – PSL Research University Paris"
+      ],
+      "source_url": "https://psl.eu/en/university"
+    }
+  ],
+  "restored": [
+    {
+      "provider": "qs",
+      "year": 2027,
+      "name": "EPFL – École polytechnique fédérale de Lausanne",
+      "university_id": "819bd7c2-cc38-5dc4-854d-2d59a8a9f4e5",
+      "ror": "https://ror.org/02s376052",
+      "identity_source": "https://www.epfl.ch/about/overview/",
+      "ranking_source": "https://insights.qs.com/hubfs/Rankings%20Excel%20Reports/2027%20QS%20World%20University%20Rankings%201.1%20%28For%20qs.com%29.xlsx",
+      "checked_at": "2026-10-05"
+    },
+    {
+      "provider": "qs",
+      "year": 2026,
+      "name": "Nanyang Technological University, Singapore (NTU Singapore)",
+      "university_id": "f5a6d73a-5fd2-55de-83af-3da2c25e18ef",
+      "ror": "https://ror.org/02e7b5302",
+      "identity_source": "https://www.ntu.edu.sg/about-us",
+      "ranking_source": "https://www.econ.muni.cz/do/econ/soubory/oddeleni/ozs/admissions/2026_QS_World_University_Rankings_1.2__For_qs.com__11.2025.pdf",
+      "checked_at": "2026-10-05"
+    },
+    {
+      "provider": "qs",
+      "year": 2027,
+      "name": "Nanyang Technological University, Singapore (NTU Singapore)",
+      "university_id": "f5a6d73a-5fd2-55de-83af-3da2c25e18ef",
+      "ror": "https://ror.org/02e7b5302",
+      "identity_source": "https://www.ntu.edu.sg/about-us",
+      "ranking_source": "https://insights.qs.com/hubfs/Rankings%20Excel%20Reports/2027%20QS%20World%20University%20Rankings%201.1%20%28For%20qs.com%29.xlsx",
+      "checked_at": "2026-10-05"
+    },
+    {
+      "provider": "the",
+      "year": 2026,
+      "name": "Nanyang Technological University, Singapore",
+      "university_id": "f5a6d73a-5fd2-55de-83af-3da2c25e18ef",
+      "ror": "https://ror.org/02e7b5302",
+      "identity_source": "https://www.ntu.edu.sg/about-us",
+      "ranking_source": "https://www.timeshighereducation.com/world-university-rankings/nanyang-technological-university-singapore",
+      "checked_at": "2026-10-05"
+    },
+    {
+      "provider": "qs",
+      "year": 2026,
+      "name": "PSL University",
+      "university_id": "c5ca35b6-8983-574d-89ec-d15da6afa1fe",
+      "ror": "https://ror.org/013cjyk83",
+      "identity_source": "https://psl.eu/en/university",
+      "ranking_source": "https://www.econ.muni.cz/do/econ/soubory/oddeleni/ozs/admissions/2026_QS_World_University_Rankings_1.2__For_qs.com__11.2025.pdf",
+      "checked_at": "2026-10-05"
+    },
+    {
+      "provider": "the",
+      "year": 2026,
+      "name": "Paris Sciences et Lettres – PSL Research University Paris",
+      "university_id": "c5ca35b6-8983-574d-89ec-d15da6afa1fe",
+      "ror": "https://ror.org/013cjyk83",
+      "identity_source": "https://psl.eu/en/university",
+      "ranking_source": "https://www.timeshighereducation.com/world-university-rankings/paris-sciences-et-lettres-psl-research-university-paris",
+      "checked_at": "2026-10-05"
+    },
+    {
+      "provider": "arwu",
+      "year": 2026,
+      "name": "PSL University",
+      "university_id": "c5ca35b6-8983-574d-89ec-d15da6afa1fe",
+      "ror": "https://ror.org/013cjyk83",
+      "identity_source": "https://psl.eu/en/university",
+      "ranking_source": "https://www.shanghairanking.com/institution/psl-university",
+      "checked_at": "2026-10-05"
+    }
+  ]
+}

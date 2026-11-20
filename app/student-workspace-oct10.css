@@ -1,0 +1,267 @@
+/* The student workspace has four primary destinations. Discovery reuses the
+   existing sourced views inside this shell, with a compact shared scale. */
+.oneprep-workspace .oneprep-workspace__sidebar {
+  width: 208px;
+  padding: 22px 14px 16px;
+}
+.oneprep-workspace .oneprep-nav--primary {
+  display: grid;
+  gap: 5px;
+  padding-top: 15px;
+}
+.oneprep-workspace .oneprep-nav--primary .oneprep-nav__item {
+  min-height: 42px;
+  padding: 10px 12px;
+  font-size: 13px;
+  gap: 12px;
+  border-radius: 8px;
+}
+.workspace-sidebar-note {
+  margin: 32px 12px 0;
+  color: var(--op-muted);
+}
+.workspace-drawer-close {
+  display: none;
+}
+@media (max-width: 900px) {
+  .workspace-drawer-close {
+    display: grid;
+    place-items: center;
+    width: 32px;
+    height: 32px;
+    margin: -10px 0 4px auto;
+    border: 1px solid var(--op-line);
+    border-radius: 7px;
+    color: var(--op-ink);
+    background: var(--op-surface);
+    cursor: pointer;
+  }
+  .workspace-drawer-close:focus-visible {
+    outline: 2px solid var(--op-blue-ink);
+    outline-offset: 2px;
+  }
+}
+.workspace-sidebar-note > span {
+  font-size: 9px;
+  letter-spacing: 0.13em;
+  font-weight: 600;
+}
+.workspace-sidebar-note p {
+  font-size: 11px;
+  line-height: 1.7;
+  margin-top: 9px;
+}
+.oneprep-sidebar__foot > button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  padding: 10px 12px;
+  background: transparent;
+  color: var(--op-muted);
+  border: 0;
+  border-radius: 7px;
+  font: inherit;
+  font-size: 11px;
+  cursor: pointer;
+}
+.oneprep-sidebar__foot > button:hover {
+  background: var(--op-blue-soft);
+  color: var(--op-blue-ink);
+}
+.oneprep-sidebar__foot > button:focus-visible {
+  outline: 2px solid var(--op-blue-ink);
+  outline-offset: 2px;
+}
+.oneprep-workspace .oneprep-workspace__content {
+  max-width: 1360px;
+  padding: 28px 36px 50px;
+}
+.workspace-subnav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 5px;
+  border-bottom: 1px solid var(--op-line);
+  padding: 0 0 15px;
+  margin: 0 0 28px;
+}
+.workspace-subnav > a,
+.workspace-subnav > button.oneprep-nav__item {
+  display: inline-flex;
+  align-items: center;
+  flex: none;
+  width: auto;
+  gap: 6px;
+  min-height: 34px;
+  padding: 7px 11px;
+  border-radius: 6px;
+  font-size: 12px;
+  color: var(--op-muted);
+  text-decoration: none;
+}
+.workspace-subnav [aria-current="page"],
+.workspace-subnav > button.oneprep-nav__item.is-active {
+  color: var(--op-blue-ink);
+  background: var(--op-blue-soft);
+  font-weight: 600;
+}
+.workspace-subnav > a:hover {
+  background: var(--op-blue-soft);
+  color: var(--op-blue-ink);
+}
+.workspace-subnav .oneprep-nav__item svg {
+  display: none;
+}
+.workspace-route-content[hidden] {
+  display: none !important;
+}
+.workspace-discovery-view {
+  min-width: 0;
+}
+.workspace-discovery-view > .research-page,
+.workspace-discovery-view > .university-page {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
+.workspace-discovery-view .page-intro {
+  padding: 0 0 24px;
+  margin-bottom: 22px;
+}
+.workspace-discovery-view .page-intro h1,
+.workspace-discovery-view .resource-hero h1 {
+  font-size: clamp(26px, 3vw, 38px);
+  line-height: 1.16;
+  letter-spacing: -0.04em;
+}
+.workspace-discovery-view .page-intro > p,
+.workspace-discovery-view .resource-hero p {
+  font-size: 14px;
+  line-height: 1.7;
+  max-width: 740px;
+}
+.workspace-discovery-view .page-intro .eyebrow {
+  font-size: 11px;
+  margin-bottom: 12px;
+}
+.workspace-discovery-view .directory-search-row {
+  margin-top: 18px;
+}
+.workspace-discovery-view .comparison-builder {
+  margin-top: 16px;
+}
+.workspace-discovery-view .resource-hero {
+  margin-top: 0;
+}
+.workspace-discovery-view .profile-cover {
+  max-height: 270px;
+}
+@media (max-width: 1100px) {
+  .oneprep-workspace .oneprep-workspace__content {
+    padding: 24px;
+  }
+}
+@media (max-width: 900px) {
+  .oneprep-workspace .oneprep-workspace__sidebar {
+    width: 224px;
+  }
+}
+@media (max-width: 640px) {
+  .oneprep-workspace .oneprep-workspace__content {
+    padding: 20px 16px 36px;
+  }
+  .workspace-subnav {
+    gap: 4px;
+    margin-bottom: 22px;
+  }
+  .workspace-subnav > a,
+  .workspace-subnav > button.oneprep-nav__item {
+    font-size: 11px;
+    padding: 7px 9px;
+  }
+  .workspace-discovery-view .page-intro h1 {
+    font-size: 28px;
+  }
+}
+
+/* Explicit-save private notes and target dates keep failed edits recoverable. */
+.workspace-draft-field {
+  min-width: 0;
+  margin-top: 12px;
+}
+.workspace-draft-field > label {
+  display: block;
+  font-size: 11px;
+  font-weight: 550;
+  line-height: 1.6;
+}
+.workspace-draft-field > p {
+  color: var(--muted-foreground);
+  font-size: 11px;
+  line-height: 1.6;
+  margin: 4px 0 7px;
+}
+.workspace-draft-field textarea {
+  width: 100%;
+  resize: vertical;
+  min-height: 74px;
+}
+.workspace-draft-field input {
+  min-width: 0;
+  max-width: 100%;
+  width: 160px;
+  min-height: 36px;
+  padding: 7px 9px;
+  border: 1px solid var(--border);
+  background: var(--background);
+  color: var(--foreground);
+  border-radius: 7px;
+  font-size: 11px;
+}
+.workspace-draft-field textarea:focus-visible,
+.workspace-draft-field input:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+.workspace-draft-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px 12px;
+  align-items: center;
+  margin-top: 6px;
+}
+.workspace-draft-actions button {
+  min-height: 30px;
+  font-size: 11px;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+.workspace-draft-actions button:disabled {
+  cursor: default;
+  opacity: 0.55;
+}
+.workspace-draft-actions > span {
+  font-size: 11px;
+  line-height: 1.6;
+  color: var(--muted-foreground);
+  max-width: 280px;
+}
+.workspace-draft-field--date {
+  margin-top: 0;
+}
+@media (max-width: 640px) {
+  .workspace-row .workspace-draft-field--date {
+    width: 100%;
+  }
+  .workspace-draft-field input {
+    width: 100%;
+  }
+}
+
+.oneprep-workspace .workspace-row > .university-logo {
+  align-self: flex-start;
+  margin-top: 4px;
+}

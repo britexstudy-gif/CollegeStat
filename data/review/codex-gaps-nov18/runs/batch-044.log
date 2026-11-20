@@ -1,0 +1,134 @@
+OpenAI Codex v0.169.0
+--------
+workdir: /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+model: gpt-6-luna
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: high
+reasoning summaries: none
+session id: 01a1ee85-adc5-7d63-a70a-d696bdce3c5e
+--------
+user
+You are a careful admissions-data researcher. For each university below, find facts for an
+INTERNATIONAL applicant to a FIRST-YEAR BACHELOR'S degree starting in autumn 2027 (or the nearest
+published cycle). Use the live web. Rules:
+
+- Official sources only: the university's own website (its domain or subdomains), the national
+  application service (UCAS, Common App, OUAC, uni-assist, Studyinkorea, etc.) or a government
+  statistics office. Never use rankings sites, forums, agencies, Wikipedia or blogs.
+- Every value needs the exact page URL where you read it (source_url). If you could not verify a
+  value on an official page, leave it out (null or an empty list). Never guess or estimate.
+- english: the lowest overall score accepted for undergraduate entry, per test (IELTS Academic
+  overall, TOEFL iBT total, Duolingo, PTE). If programmes differ, give the general/lowest common
+  university minimum and say so in detail (e.g. "6.5 overall, no band below 6.0; some
+  programmes higher").
+- tuition: the yearly tuition for international (non-EU / overseas) undergraduates in the local
+  currency. If it varies by programme give amount = lowest and amount_max = highest, and the
+  academic_year the fee applies to (e.g. "2026/27"). If tuition is free, amount = 0.
+- application_fee: for international first-year applicants, local currency.
+- deadlines: the main 2027-entry first-year deadlines (ISO date YYYY-MM-DD) with the route
+  (e.g. "Common App, Regular Decision", "UCAS", "university portal"). Only dates actually
+  published; if only the 2026-entry date is published, include it and put "2026 entry" in title.
+- sat: policy for international applicants; p25/p75 total SAT only if the university publishes
+  them (Common Data Set or admissions profile).
+- acceptance_rate: only if officially published (CDS, admissions statistics page).
+- notes: one short line on anything important (e.g. "Foundation year required for 11-year
+  school certificates"), else "".
+
+Spend effort on the facts students need most: English minimum, tuition, deadlines. Keep each
+detail under 160 characters. Return only the JSON that matches the schema; use each
+university's id exactly as given.
+
+Universities:
+- id: 4285e06f-015e-58b3-915e-e4a47128638f | University of Otago | Dunedin, NZ | http://www.otago.ac.nz/
+- id: d811ecca-3f36-56dc-a1ac-c1de1544955b | Universidad Complutense de Madrid | Madrid, ES | http://www.ucm.es/
+- id: 2903e6ed-ff35-58a9-b374-04d315be3094 | Göteborg University | Gothenburg, SE | http://www.gu.se/
+- id: fa82b5bb-ddbe-54d1-b218-92fd0acb5f42 | University of Twente | Enschede, NL | http://www.utwente.nl/
+codex
+I’m checking the current official admissions pages for each university and will return only verified values with their page URLs. I’ll use the required project memory lookup first, then verify each field against university or national-service sources.
+exec
+/bin/zsh -lc 'cat /Users/likeanew/.agents/skills/lemma/SKILL.md' in /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+ succeeded in 0ms:
+---
+name: lemma
+description: Persistent cross-session memory for AI agents via MCP. BEFORE starting ANY task (coding, debugging, refactoring, research, docs, optimization — any language), FIRST call memory_read to load what you already know so you never re-derive or re-explore known facts. AFTER finishing, call memory_add to persist new findings and session_attempt for dead ends — unsaved knowledge is lost permanently. Distills reusable guides from experience.
+---
+
+<!-- lemma:skill:v=0.21.0 -->
+
+# Lemma — Persistent Memory & Learning
+
+Lemma is a persistent memory server for AI agents over the Model Context Protocol.
+Every session starts blank — knowledge survives ONLY through tool calls. If you
+learn something and don't save it (`memory_add`), it is gone permanently.
+
+## Workflow
+1. **RECALL** — `memory_read` / `semantic_search`: load what's already known for this
+   project/task. Never re-explore code or re-derive facts that are already saved.
+2. **ACT** — do the task.
+3. **PERSIST** — `memory_add` for new insights; `guide_practice` for guides applied;
+   `session_attempt` for abandoned/dead-end approaches (the most valuable records).
+
+## Two knowledge layers
+- **Memory fragments** (`memory_read` / `memory_add`): atomic facts. Types: `fact`,
+  `pattern`, `lesson`, `warning`, `context`. Confidence evolves with use and feedback.
+- **Guides** (`guide_get` / `guide_distill` / `guide_practice`): procedural skills
+  distilled from fragments. Track usage count + success/failure rate.
+Pipeline: `experience -> memory_add -> pattern/lesson -> guide_distill -> guide_practice`.
+
+## Tools at a glance
+- **Recall & search**: `memory_read`, `semantic_search`, `memory_library` (full
+  snapshot + maintenance signals), `memory_stats`, `memory_audit`.
+- **Write & maintain**: `memory_add`, `memory_update`, `memory_forget`,
+  `memory_merge`, `memory_relate` (supports / contradicts / supersedes / related_to),
+  `memory_feedback`.
+- **Guides**: `guide_get`, `guide_create`, `guide_distill`, `guide_practice`,
+  `guide_update`, `guide_forget`, `guide_merge`.
+- **Sessions & reasoning**: `session_start`, `session_end`, `session_attempt`,
+  `session_stats`, `suggestion_respond`.
+- **Background intelligence**: `conflict_scan`, `proactive_analysis`,
+  `project_analytics` (run automatically; act on signals when sensible).
+
+## Writing a fragment
+```
+## [Topic Title]
+### Context
+[1-2 sentences: what and why it matters]
+### [Content Section]
+- [Key fact 1]
+- [Key fact 2]
+### Rules (optional)
+- [Absolute constraint]
+```
+One idea per fragment, 30-2000 chars, structured markdown (not prose). **Store
+fragments in ENGLISH** (required for search/retrieval). Never ask permission to save.
+
+## Background intelligence
+Conflict detection, distill/merge/refine suggestions, and auto-linking run
+automatically. From the CLI, `lemma -lib` prints a full knowledge-base snapshot
+and `lemma -vis` launches a visualizer.
+
+web search: 
+web search: site:otago.ac.nz international undergraduate English language requirements tuition fees 2027 application deadline international 2027 ...
+web search: 
+web search: site:otago.ac.nz "2027" "International tuition fees" undergraduate fees University of Otago ...
+web search: 
+web search: site:ucm.es "admisión" estudiantes internacionales grado 2026 2027 precios públicos tasas extranjeros UCM ...
+web search: 
+web search: 
+web search: 
+web search: site:otago.ac.nz "application fee" "international" undergraduate Otago application ...
+web search: 
+web search: 
+web search: 
+web search: 
+web search: 
+web search: site:gu.se "Bachelor's programmes" "Tuition" 2027 SEK Göteborg 2027 fees all bachelor programmes ...
+web search: 
+web search: site:otago.ac.nz/international "2027 international tuition fees" undergraduate NZD per year ...
+codex
+{"universities":[{"id":"4285e06f-015e-58b3-915e-e4a47128638f","english":[{"test":"IELTS","minimum":0,"detail":"6.0 overall; no band below 5.5.","source_url":"https://www.otago.ac.nz/future-students/entry-requirements/language-requirements"},{"test":"TOEFL iBT","minimum":0,"detail":"For tests from 21 Jan 2026: 4 overall, writing 4 (new scale). Earlier tests: 80 overall, writing 20.","source_url":"https://www.otago.ac.nz/future-students/entry-requirements/language-requirements"},{"test":"Duolingo","minimum":0,"detail":"105 overall; no subscore below 95.","source_url":"https://www.otago.ac.nz/future-students/entry-requirements/language-requirements"},{"test":"PTE Academic","minimum":0,"detail":"50 overall; no communicative skill below 42.","source_url":"https://www.otago.ac.nz/future-students/entry-requirements/language-requirements"},{"test":"Cambridge C1/C2","minimum":0,"detail":"C1 Advanced or C2 Proficiency: 169 overall; no band below 162.","source_url":"https://www.otago.ac.nz/future-students/entry-requirements/language-requirements"}],"tuition":{"amount":39700,"amount_max":102690,"currency":"NZD","period":"year","academic_year":"2027","detail":"Published annual degree fees vary; BA is NZ$39,700 and MB ChB is NZ$102,690. MB ChB direct entry is generally for applicants with prior study.","source_url":"https://www.otago.ac.nz/study/qualifications/bachelor-of-arts"},"application_fee":{"amount":0,"currency":"NZD","source_url":"https://www.otago.ac.nz/__data/assets/pdf_file/0022/323545/2026-2027-Manaaki-Subjects-at-Otago-updated-16-Feb-2026.pdf"},"deadlines":[{"title":"Semester 1, 2027 international applications","due_at":"2026-11-15","route":"University eVision portal","source_url":"https://www.otago.ac.nz/international/future-students/how-to-apply"}],"sat":null,"acceptance_rate":null,"notes":"Semester 1 starts 1 March 2027; available first-year entry route and fee depend on the degree."},{"id":"d811ecca-3f36-56dc-a1ac-c1de1544955b","english":[],"tuition":{"amount":6822.6,"amount_max":8186.4,"currency":"EUR","period":"year","academic_year":"2026/27","detail":"Estimate for 60 ECTS at 4th-enrolment rates, charged to nonresident non-EU students over 18; excludes admin fees.","source_url":"https://www.ucm.es/informacion/precios-de-grado/"},"application_fee":null,"deadlines":[{"title":"Early admission, 2026 entry","due_at":"2026-04-01","route":"UCM international admissions portal","source_url":"https://www.ucm.es/early-admission"}],"sat":null,"acceptance_rate":null,"notes":"Non-Spanish-speaking applicants to Spanish-taught degrees generally need Spanish B2; English-taught degrees are exempt."},{"id":"2903e6ed-ff35-58a9-b374-04d315be3094","english":[{"test":"IELTS","minimum":0,"detail":"IELTS Academic: 6.5 overall; no section below 5.5 (English 6 equivalent).","source_url":"https://www.universityadmissions.se/en/entry-requirements/english-language-requirements/"},{"test":"TOEFL iBT","minimum":0,"detail":"For tests from 21 Jan 2026: total 4.5 (new scale), no section below 4. Earlier: 90 total, writing 20.","source_url":"https://www.universityadmissions.se/en/entry-requirements/english-language-requirements/"},{"test":"PTE Academic","minimum":0,"detail":"62 overall; writing 61 (English 6 equivalent).","source_url":"https://www.universityadmissions.se/en/entry-requirements/english-language-requirements/"},{"test":"Cambridge C1/C2","minimum":0,"detail":"C1 Advanced: 180 overall; C2 Proficiency: 200 overall (English 6 equivalent).","source_url":"https://www.universityadmissions.se/en/entry-requirements/english-language-requirements/"}],"tuition":{"amount":97000,"amount_max":634000,"currency":"SEK","period":"year","academic_year":"2027/28","detail":"For English-taught bachelor's programs; annualized from 3-year total fees of SEK 291,000 to SEK 1,902,000.","source_url":"https://www.gu.se/en/study-gothenburg/bachelors-programme-in-international-relations-s1int ; https://www.gu.se/en/study-gothenburg/opera-bachelors-program-k1ope"},"application_fee":{"amount":900,"currency":"SEK","source_url":"https://www.gu.se/en/study-in-gothenburg/apply/apply-for-bachelors-program"},"deadlines":[{"title":"Autumn 2027 international round","due_at":"2027-01-15","route":"Universityadmissions.se","source_url":"https://www.gu.se/en/study-in-gothenburg/apply/apply-for-bachelors-program"},{"title":"Autumn 2027 supporting documents","due_at":"2027-02-01","route":"Universityadmissions.se","source_url":"https://www.gu.se/en/study-in-gothenburg/apply/apply-for-bachelors-program"}],"sat":null,"acceptance_rate":null,"notes":"The opera bachelor's program requires an admission test."},{"id":"fa82b5bb-ddbe-54d1-b218-92fd0acb5f42","english":[{"test":"IELTS","minimum":0,"detail":"Academic: 6.0 overall; minimum 5.5 in each section.","source_url":"https://www.utwente.nl/en/education/bachelor/application-admission/admission/language-requirements/"},{"test":"TOEFL iBT","minimum":0,"detail":"For tests after Jan 2026: 4.5 overall; 4.5 reading, listening, writing and 4 speaking (new scale).","source_url":"https://www.utwente.nl/en/education/bachelor/application-admission/admission/language-requirements/"},{"test":"PTE Academic","minimum":0,"detail":"61 overall; minimum 56 in each section.","source_url":"https://www.utwente.nl/en/education/bachelor/application-admission/admission/language-requirements/"},{"test":"Cambridge C1/C2","minimum":0,"detail":"C1 Advanced: 169 overall, minimum 162 each section; C2 Proficiency: grade A–C, same scores.","source_url":"https://www.utwente.nl/en/education/bachelor/application-admission/admission/language-requirements/"}],"tuition":{"amount":12652,"amount_max":16869,"currency":"EUR","period":"year","academic_year":"2027/28","detail":"Non-EU/EEA institutional fee: lower-rate programs €12,652; higher-rate programs €16,869.","source_url":"https://www.utwente.nl/en/education/bachelor/tuition-fees/"},"application_fee":{"amount":100,"currency":"EUR","source_url":"https://www.utwente.nl/en/education/bachelor/application-admission/application/application-fee/"},"deadlines":[{"title":"September 2027 intake, non-EEA visa applicants (submit before 1 May)","due_at":"2027-05-01","route":"University Osiris portal","source_url":"https://www.utwente.nl/en/education/bachelor/application-admission/bachelor-deadlines/"}],"sat":null,"acceptance_rate":null,"notes":"Psychology and some other programs have earlier deadlines; deadline depends on nationality and program."}] }
+tokens used
+84,531
+{"universities":[{"id":"4285e06f-015e-58b3-915e-e4a47128638f","english":[{"test":"IELTS","minimum":0,"detail":"6.0 overall; no band below 5.5.","source_url":"https://www.otago.ac.nz/future-students/entry-requirements/language-requirements"},{"test":"TOEFL iBT","minimum":0,"detail":"For tests from 21 Jan 2026: 4 overall, writing 4 (new scale). Earlier tests: 80 overall, writing 20.","source_url":"https://www.otago.ac.nz/future-students/entry-requirements/language-requirements"},{"test":"Duolingo","minimum":0,"detail":"105 overall; no subscore below 95.","source_url":"https://www.otago.ac.nz/future-students/entry-requirements/language-requirements"},{"test":"PTE Academic","minimum":0,"detail":"50 overall; no communicative skill below 42.","source_url":"https://www.otago.ac.nz/future-students/entry-requirements/language-requirements"},{"test":"Cambridge C1/C2","minimum":0,"detail":"C1 Advanced or C2 Proficiency: 169 overall; no band below 162.","source_url":"https://www.otago.ac.nz/future-students/entry-requirements/language-requirements"}],"tuition":{"amount":39700,"amount_max":102690,"currency":"NZD","period":"year","academic_year":"2027","detail":"Published annual degree fees vary; BA is NZ$39,700 and MB ChB is NZ$102,690. MB ChB direct entry is generally for applicants with prior study.","source_url":"https://www.otago.ac.nz/study/qualifications/bachelor-of-arts"},"application_fee":{"amount":0,"currency":"NZD","source_url":"https://www.otago.ac.nz/__data/assets/pdf_file/0022/323545/2026-2027-Manaaki-Subjects-at-Otago-updated-16-Feb-2026.pdf"},"deadlines":[{"title":"Semester 1, 2027 international applications","due_at":"2026-11-15","route":"University eVision portal","source_url":"https://www.otago.ac.nz/international/future-students/how-to-apply"}],"sat":null,"acceptance_rate":null,"notes":"Semester 1 starts 1 March 2027; available first-year entry route and fee depend on the degree."},{"id":"d811ecca-3f36-56dc-a1ac-c1de1544955b","english":[],"tuition":{"amount":6822.6,"amount_max":8186.4,"currency":"EUR","period":"year","academic_year":"2026/27","detail":"Estimate for 60 ECTS at 4th-enrolment rates, charged to nonresident non-EU students over 18; excludes admin fees.","source_url":"https://www.ucm.es/informacion/precios-de-grado/"},"application_fee":null,"deadlines":[{"title":"Early admission, 2026 entry","due_at":"2026-04-01","route":"UCM international admissions portal","source_url":"https://www.ucm.es/early-admission"}],"sat":null,"acceptance_rate":null,"notes":"Non-Spanish-speaking applicants to Spanish-taught degrees generally need Spanish B2; English-taught degrees are exempt."},{"id":"2903e6ed-ff35-58a9-b374-04d315be3094","english":[{"test":"IELTS","minimum":0,"detail":"IELTS Academic: 6.5 overall; no section below 5.5 (English 6 equivalent).","source_url":"https://www.universityadmissions.se/en/entry-requirements/english-language-requirements/"},{"test":"TOEFL iBT","minimum":0,"detail":"For tests from 21 Jan 2026: total 4.5 (new scale), no section below 4. Earlier: 90 total, writing 20.","source_url":"https://www.universityadmissions.se/en/entry-requirements/english-language-requirements/"},{"test":"PTE Academic","minimum":0,"detail":"62 overall; writing 61 (English 6 equivalent).","source_url":"https://www.universityadmissions.se/en/entry-requirements/english-language-requirements/"},{"test":"Cambridge C1/C2","minimum":0,"detail":"C1 Advanced: 180 overall; C2 Proficiency: 200 overall (English 6 equivalent).","source_url":"https://www.universityadmissions.se/en/entry-requirements/english-language-requirements/"}],"tuition":{"amount":97000,"amount_max":634000,"currency":"SEK","period":"year","academic_year":"2027/28","detail":"For English-taught bachelor's programs; annualized from 3-year total fees of SEK 291,000 to SEK 1,902,000.","source_url":"https://www.gu.se/en/study-gothenburg/bachelors-programme-in-international-relations-s1int ; https://www.gu.se/en/study-gothenburg/opera-bachelors-program-k1ope"},"application_fee":{"amount":900,"currency":"SEK","source_url":"https://www.gu.se/en/study-in-gothenburg/apply/apply-for-bachelors-program"},"deadlines":[{"title":"Autumn 2027 international round","due_at":"2027-01-15","route":"Universityadmissions.se","source_url":"https://www.gu.se/en/study-in-gothenburg/apply/apply-for-bachelors-program"},{"title":"Autumn 2027 supporting documents","due_at":"2027-02-01","route":"Universityadmissions.se","source_url":"https://www.gu.se/en/study-in-gothenburg/apply/apply-for-bachelors-program"}],"sat":null,"acceptance_rate":null,"notes":"The opera bachelor's program requires an admission test."},{"id":"fa82b5bb-ddbe-54d1-b218-92fd0acb5f42","english":[{"test":"IELTS","minimum":0,"detail":"Academic: 6.0 overall; minimum 5.5 in each section.","source_url":"https://www.utwente.nl/en/education/bachelor/application-admission/admission/language-requirements/"},{"test":"TOEFL iBT","minimum":0,"detail":"For tests after Jan 2026: 4.5 overall; 4.5 reading, listening, writing and 4 speaking (new scale).","source_url":"https://www.utwente.nl/en/education/bachelor/application-admission/admission/language-requirements/"},{"test":"PTE Academic","minimum":0,"detail":"61 overall; minimum 56 in each section.","source_url":"https://www.utwente.nl/en/education/bachelor/application-admission/admission/language-requirements/"},{"test":"Cambridge C1/C2","minimum":0,"detail":"C1 Advanced: 169 overall, minimum 162 each section; C2 Proficiency: grade A–C, same scores.","source_url":"https://www.utwente.nl/en/education/bachelor/application-admission/admission/language-requirements/"}],"tuition":{"amount":12652,"amount_max":16869,"currency":"EUR","period":"year","academic_year":"2027/28","detail":"Non-EU/EEA institutional fee: lower-rate programs €12,652; higher-rate programs €16,869.","source_url":"https://www.utwente.nl/en/education/bachelor/tuition-fees/"},"application_fee":{"amount":100,"currency":"EUR","source_url":"https://www.utwente.nl/en/education/bachelor/application-admission/application/application-fee/"},"deadlines":[{"title":"September 2027 intake, non-EEA visa applicants (submit before 1 May)","due_at":"2027-05-01","route":"University Osiris portal","source_url":"https://www.utwente.nl/en/education/bachelor/application-admission/bachelor-deadlines/"}],"sat":null,"acceptance_rate":null,"notes":"Psychology and some other programs have earlier deadlines; deadline depends on nationality and program."}] }

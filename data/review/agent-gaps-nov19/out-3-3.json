@@ -1,0 +1,51 @@
+{
+ "universities": [
+  {
+   "id": "519c66df-8779-5336-acda-2cba10f95c66",
+   "english": [],
+   "tuition": null,
+   "application_fee": null,
+   "deadlines": [],
+   "sat": null,
+   "acceptance_rate": null,
+   "notes": "Official undergraduate International Students page gives no tuition, English score or deadline; referred to admissions office."
+  },
+  {
+   "id": "894119e1-40c1-5589-8677-e1ed97388e59",
+   "english": [],
+   "tuition": null,
+   "application_fee": null,
+   "deadlines": [],
+   "sat": null,
+   "acceptance_rate": null,
+   "notes": "Official upenn.edu undergraduate English pages not reachable (404); search returned only LPS/summer program rules, omitted."
+  },
+  {
+   "id": "8488d97e-a227-5fbd-b7b4-33a1194df723",
+   "english": [],
+   "tuition": null,
+   "application_fee": null,
+   "deadlines": [
+    {
+     "title": "Regular Decision required materials (2027 entry)",
+     "due_at": "2027-01-19",
+     "route": "Common Application",
+     "source_url": "https://admissions.cornell.edu/resources/submit-english-language-proficiency"
+    }
+   ],
+   "sat": null,
+   "acceptance_rate": null,
+   "notes": "Page wording is 'minimum competitive score' and 'deadline for required materials'; these are not hard minimums or application cutoffs. Application fee not found."
+  },
+  {
+   "id": "0a670c6d-e20a-527f-851b-e2c1306cce70",
+   "english": [],
+   "tuition": null,
+   "application_fee": null,
+   "deadlines": [],
+   "sat": null,
+   "acceptance_rate": null,
+   "notes": "Yale says it publishes no minimum; only 'most competitive applicants' benchmarks (TOEFL 5 new scale, IELTS 7, DET 120), omitted. No deadlines found."
+  }
+ ]
+}

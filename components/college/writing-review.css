@@ -1,0 +1,329 @@
+/* Writing desk: structured AI review panel and comment marks. */
+.wr {
+  --wr-strong: #12865a;
+  --wr-solid: var(--wd-accent);
+  --wr-developing: #c27c0e;
+  --wr-early: #c2410c;
+  gap: 14px;
+}
+html.dark .wr {
+  --wr-strong: #3ccf8e;
+  --wr-developing: #f0b54a;
+  --wr-early: #fb8a5c;
+}
+.wr h3 svg,
+.wr h4 svg {
+  color: var(--wd-accent);
+}
+.wr-intro {
+  display: grid;
+  gap: 10px;
+  font-size: 13.5px;
+  line-height: 1.55;
+}
+.wr-intro p {
+  margin: 0;
+  color: var(--wd-muted);
+}
+.wr-intro ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.wr-intro li {
+  padding: 2px 9px;
+  border-radius: 99px;
+  background: var(--wd-soft);
+  font-size: 12px;
+}
+.wr .wr-run {
+  width: 100%;
+  height: 40px;
+  border-color: transparent;
+  background: var(--wd-accent);
+  color: #fff;
+}
+html.dark .wr .wr-run {
+  color: #0b1020;
+}
+.wr .wr-again {
+  justify-self: start;
+}
+.wr-busy {
+  display: grid;
+  gap: 12px;
+}
+.wr-busy p {
+  margin: 0;
+}
+.wr-skel {
+  display: grid;
+  gap: 8px;
+}
+.wr-skel i {
+  display: block;
+  height: 12px;
+  border-radius: 6px;
+  background: var(--wd-soft);
+}
+.wr-skel i:nth-child(2) {
+  width: 80%;
+}
+.wr-skel i:nth-child(3) {
+  width: 60%;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .wr-skel i {
+    animation: wr-pulse 1.4s ease-in-out infinite;
+  }
+}
+@keyframes wr-pulse {
+  50% {
+    opacity: 0.45;
+  }
+}
+.wr-body {
+  display: grid;
+  gap: 16px;
+  font-size: 13.5px;
+  line-height: 1.55;
+}
+.wr-body p {
+  margin: 0;
+}
+.wr-score {
+  display: grid;
+  grid-template-columns: 58px minmax(0, 1fr);
+  gap: 12px;
+  align-items: center;
+}
+.wr-score strong {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 2px;
+}
+.wr-ring {
+  display: grid;
+  place-items: center;
+  align-content: center;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  border: 3px solid currentColor;
+  line-height: 1;
+}
+.wr-ring b {
+  font-size: 20px;
+  font-weight: 650;
+  font-variant-numeric: tabular-nums;
+}
+.wr-ring small {
+  font-size: 10.5px;
+  color: var(--wd-muted);
+}
+.wr-ring.is-strong {
+  color: var(--wr-strong);
+}
+.wr-ring.is-solid {
+  color: var(--wr-solid);
+}
+.wr-ring.is-developing {
+  color: var(--wr-developing);
+}
+.wr-ring.is-early {
+  color: var(--wr-early);
+}
+.wr-ring b {
+  color: var(--wd-ink);
+}
+.wr-changed {
+  padding: 8px 10px;
+  border-radius: 9px;
+  background: var(--wd-soft);
+  font-size: 12.5px;
+  color: var(--wd-muted);
+}
+.wr-criteria {
+  display: grid;
+  gap: 2px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.wr-criteria summary {
+  display: grid;
+  grid-template-columns: 96px minmax(0, 1fr) 20px;
+  gap: 10px;
+  align-items: center;
+  padding: 6px 4px;
+  border-radius: 8px;
+  cursor: pointer;
+  list-style: none;
+  font-size: 13px;
+}
+.wr-criteria summary::-webkit-details-marker {
+  display: none;
+}
+.wr-criteria summary:hover {
+  background: var(--wd-soft);
+}
+.wr-criteria summary b {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  font-weight: 620;
+}
+.wr-criteria details p {
+  padding: 2px 4px 8px;
+  color: var(--wd-muted);
+  font-size: 12.5px;
+}
+.wr-bar {
+  height: 6px;
+  border-radius: 99px;
+  background: var(--wd-soft);
+  overflow: hidden;
+}
+.wr-bar i {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+}
+.wr-bar i.is-strong {
+  background: var(--wr-strong);
+}
+.wr-bar i.is-solid {
+  background: var(--wr-solid);
+}
+.wr-bar i.is-developing {
+  background: var(--wr-developing);
+}
+.wr-bar i.is-early {
+  background: var(--wr-early);
+}
+.wr-block {
+  display: grid;
+  gap: 6px;
+}
+.wr-block h4 {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin: 0;
+  font-size: 12.5px;
+  font-weight: 650;
+  color: var(--wd-muted);
+}
+.wr-block ul,
+.wr-block ol {
+  margin: 0;
+  padding-left: 18px;
+  list-style: disc;
+  display: grid;
+  gap: 4px;
+}
+.wr-officer {
+  padding: 12px;
+  border-radius: 12px;
+  background: var(--wd-soft);
+}
+.wr-next strong {
+  font-weight: 620;
+}
+.wr .wr-comments {
+  list-style: none;
+  padding: 0;
+  gap: 6px;
+}
+.wr-comments button {
+  width: 100%;
+  display: grid;
+  gap: 4px;
+  padding: 10px 12px;
+  border: 1px solid var(--wd-line);
+  border-left: 3px solid var(--wr-kind, var(--wd-line));
+  border-radius: 10px;
+  background: var(--wd-card);
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
+  font: inherit;
+}
+.wr-comments button:hover,
+.wr-comments button.is-on {
+  background: var(--wd-soft);
+}
+.wr-comments button.is-gone {
+  opacity: 0.55;
+  cursor: default;
+}
+.wr-comments q {
+  font-style: italic;
+  font-size: 12.5px;
+  color: var(--wd-muted);
+}
+.wr-text {
+  font-size: 13px;
+}
+.wr-comments small {
+  font-size: 11.5px;
+  color: var(--wd-faint);
+}
+.wr-kind {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 11px;
+  font-weight: 650;
+  color: var(--wr-kind);
+}
+.wr-comments .k-praise,
+.wt-backdrop mark.k-praise {
+  --wr-kind: #12865a;
+}
+.wr-comments .k-question,
+.wt-backdrop mark.k-question {
+  --wr-kind: #7c5cf0;
+}
+.wr-comments .k-suggestion,
+.wt-backdrop mark.k-suggestion {
+  --wr-kind: var(--wd-accent);
+}
+.wr-comments .k-fix,
+.wt-backdrop mark.k-fix {
+  --wr-kind: #d9480f;
+}
+html.dark .wr-comments .k-praise,
+html.dark .wt-backdrop mark.k-praise {
+  --wr-kind: #3ccf8e;
+}
+html.dark .wr-comments .k-question,
+html.dark .wt-backdrop mark.k-question {
+  --wr-kind: #a58bff;
+}
+html.dark .wr-comments .k-fix,
+html.dark .wt-backdrop mark.k-fix {
+  --wr-kind: #ff8a5c;
+}
+/* Comment anchors in the editor: a soft underline, stronger when selected. */
+.wt-backdrop mark.k-praise,
+.wt-backdrop mark.k-question,
+.wt-backdrop mark.k-suggestion,
+.wt-backdrop mark.k-fix {
+  text-decoration-color: color-mix(in srgb, var(--wr-kind) 70%, transparent);
+  background: color-mix(in srgb, var(--wr-kind) 7%, transparent);
+}
+.wt-backdrop mark.is-on {
+  background: color-mix(in srgb, var(--wr-kind) 20%, transparent);
+  text-decoration-color: var(--wr-kind);
+}
+.wr-block ol {
+  list-style: decimal;
+}
+/* Focus mode is distraction-free: comment marks rest until it ends. */
+.wn.is-focus .wt-backdrop mark {
+  background: transparent;
+  text-decoration: none;
+}

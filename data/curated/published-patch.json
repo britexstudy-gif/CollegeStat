@@ -1,0 +1,1263 @@
+{
+ "target": "data/published/global-directory.json",
+ "status": "PROPOSED — not applied. Apply only after owner approval.",
+ "notes": [
+  "tuition_fees_out_of_state is Scorecard TUITIONFEE_OUT (tuition + required fees, 2025/26) — a new key; existing tuition_* keys (IPEDS tuition only) stay as history.",
+  "Exclusions hide records (set published=false or move to an excluded list); nothing is deleted."
+ ],
+ "counts": {
+  "updates": 16,
+  "exclusions": 116,
+  "duplicate_merges": 24
+ },
+ "updates": [
+  {
+   "id": "0ea190f8-7c49-54c5-88a1-9892fd517d9a",
+   "name": "Vanderbilt University",
+   "changes": {
+    "tuition_fees_out_of_state": {
+     "from": null,
+     "to": 71226
+    }
+   },
+   "source": "College Scorecard (file dated 2026-11-02)",
+   "academic_year": "2025/26"
+  },
+  {
+   "id": "1ad9abe1-60cd-55ec-b227-5c8001db0475",
+   "name": "Columbia University in the City of New York",
+   "changes": {
+    "tuition_fees_out_of_state": {
+     "from": null,
+     "to": 74180
+    }
+   },
+   "source": "College Scorecard (file dated 2026-11-02)",
+   "academic_year": "2025/26"
+  },
+  {
+   "id": "210dada7-d1b4-537c-b8ad-8c58326af358",
+   "name": "Temple University",
+   "changes": {
+    "tuition_fees_out_of_state": {
+     "from": null,
+     "to": 36887
+    }
+   },
+   "source": "College Scorecard (file dated 2026-11-02)",
+   "academic_year": "2025/26"
+  },
+  {
+   "id": "5d324277-c7c7-52eb-9d99-03367f122d16",
+   "name": "University of Washington-Seattle Campus",
+   "changes": {
+    "tuition_fees_out_of_state": {
+     "from": null,
+     "to": 44640
+    }
+   },
+   "source": "College Scorecard (file dated 2026-11-02)",
+   "academic_year": "2025/26"
+  },
+  {
+   "id": "5fc62bb7-0198-5a07-8830-2735c17fd1ea",
+   "name": "Northeastern University",
+   "changes": {
+    "tuition_fees_out_of_state": {
+     "from": null,
+     "to": 69289
+    }
+   },
+   "source": "College Scorecard (file dated 2026-11-02)",
+   "academic_year": "2025/26"
+  },
+  {
+   "id": "63648953-ef3c-59ae-8ed9-b6be0f2c6461",
+   "name": "Michigan State University",
+   "changes": {
+    "tuition_fees_out_of_state": {
+     "from": null,
+     "to": 44640
+    }
+   },
+   "source": "College Scorecard (file dated 2026-11-02)",
+   "academic_year": "2025/26"
+  },
+  {
+   "id": "7add53a9-8ddf-5e84-bd4d-a7c8638dbb95",
+   "name": "University of Chicago",
+   "changes": {
+    "tuition_fees_out_of_state": {
+     "from": null,
+     "to": 73962
+    }
+   },
+   "source": "College Scorecard (file dated 2026-11-02)",
+   "academic_year": "2025/26"
+  },
+  {
+   "id": "99c5a4b8-9a75-5635-8161-85f97f03dc3f",
+   "name": "Fordham University",
+   "changes": {
+    "tuition_fees_out_of_state": {
+     "from": null,
+     "to": 67897
+    }
+   },
+   "source": "College Scorecard (file dated 2026-11-02)",
+   "academic_year": "2025/26"
+  },
+  {
+   "id": "99fbcf31-606d-5dac-880e-83ca25acd942",
+   "name": "California Institute of Technology",
+   "changes": {
+    "tuition_fees_out_of_state": {
+     "from": null,
+     "to": 68208
+    }
+   },
+   "source": "College Scorecard (file dated 2026-11-02)",
+   "academic_year": "2025/26"
+  },
+  {
+   "id": "9ceb46b3-3d48-51a1-849b-aa46b8a43466",
+   "name": "University of Maryland-College Park",
+   "changes": {
+    "tuition_fees_out_of_state": {
+     "from": null,
+     "to": 42053
+    }
+   },
+   "source": "College Scorecard (file dated 2026-11-02)",
+   "academic_year": "2025/26"
+  },
+  {
+   "id": "a0d2f406-7c53-5645-921f-ecb098e0a9be",
+   "name": "University of Rochester",
+   "changes": {
+    "tuition_fees_out_of_state": {
+     "from": null,
+     "to": 70306
+    }
+   },
+   "source": "College Scorecard (file dated 2026-11-02)",
+   "academic_year": "2025/26"
+  },
+  {
+   "id": "a13696ab-e8a7-55d8-b39d-e25eba98c101",
+   "name": "University of California-Irvine",
+   "changes": {
+    "tuition_fees_out_of_state": {
+     "from": null,
+     "to": 53837
+    }
+   },
+   "source": "College Scorecard (file dated 2026-11-02)",
+   "academic_year": "2025/26"
+  },
+  {
+   "id": "b7c4c075-d30e-53b3-80a8-7e7d751a47b7",
+   "name": "Carnegie Mellon University",
+   "changes": {
+    "tuition_fees_out_of_state": {
+     "from": null,
+     "to": 68776
+    }
+   },
+   "source": "College Scorecard (file dated 2026-11-02)",
+   "academic_year": "2025/26"
+  },
+  {
+   "id": "ce0c7503-d037-57dc-98ed-2818fa72fe75",
+   "name": "University of Southern California",
+   "changes": {
+    "tuition_fees_out_of_state": {
+     "from": null,
+     "to": 75162
+    }
+   },
+   "source": "College Scorecard (file dated 2026-11-02)",
+   "academic_year": "2025/26"
+  },
+  {
+   "id": "e48a723c-68b4-560e-b4a0-09be01682853",
+   "name": "Northwestern University",
+   "changes": {
+    "tuition_fees_out_of_state": {
+     "from": null,
+     "to": 70589
+    }
+   },
+   "source": "College Scorecard (file dated 2026-11-02)",
+   "academic_year": "2025/26"
+  },
+  {
+   "id": "eff27116-f29e-5cc0-9d35-ce5bc27b2bad",
+   "name": "DePaul University",
+   "changes": {
+    "tuition_fees_out_of_state": {
+     "from": null,
+     "to": 47676
+    }
+   },
+   "source": "College Scorecard (file dated 2026-11-02)",
+   "academic_year": "2025/26"
+  }
+ ],
+ "exclusions": [
+  {
+   "id": "006adf1a-4f0b-52c9-98d3-93185f7f9142",
+   "name": "Elyon College",
+   "reason": "no-bachelors",
+   "detail": "Scorecard UNITID 490346: CURROPER=1, PREDDEG=2, HIGHDEG=2",
+   "in_directory": true
+  },
+  {
+   "id": "01146857-ef31-5bc1-b1ca-87570ddb3714",
+   "name": "Paradise Valley Community College",
+   "reason": "no-bachelors",
+   "detail": "Scorecard UNITID 364016: CURROPER=1, PREDDEG=1, HIGHDEG=2",
+   "in_directory": true
+  },
+  {
+   "id": "021c97c2-9b8c-5186-b871-5456becb9936",
+   "name": "Bates Technical College",
+   "reason": "no-bachelors",
+   "detail": "Scorecard UNITID 235671: CURROPER=1, PREDDEG=1, HIGHDEG=2",
+   "in_directory": true
+  },
+  {
+   "id": "02fbc4cd-652b-5638-ac52-dcc38e7fafa8",
+   "name": "EDP University of Puerto Rico-Humacao",
+   "reason": "no-bachelors",
+   "detail": "Scorecard UNITID 494278: CURROPER=1, PREDDEG=2, HIGHDEG=2",
+   "in_directory": true
+  },
+  {
+   "id": "03789f7a-5e14-535e-b163-7c56ef9f4254",
+   "name": "Tallahassee State College",
+   "reason": "duplicate",
+   "detail": "merged into 30ff4ef9-dd7e-5513-8085-e043aa63e845 (Tallahassee State College); shared IPEDS unitid 137759",
+   "in_directory": true
+  },
+  {
+   "id": "09bded75-e2e4-5116-a91d-50921b86f577",
+   "name": "Chattanooga College Medical Dental and & Technical Careers",
+   "reason": "no-bachelors",
+   "detail": "Scorecard UNITID 220118: CURROPER=1, PREDDEG=1, HIGHDEG=2",
+   "in_directory": true
+  },
+  {
+   "id": "0c4979ea-f364-5d04-8290-ba20f5448fb9",
+   "name": "Summit Christian College",
+   "reason": "no-bachelors",
+   "detail": "Scorecard UNITID 181543: CURROPER=1, PREDDEG=2, HIGHDEG=2",
+   "in_directory": true
+  },
+  {
+   "id": "1541038b-91e4-5c1d-aa25-22ad99d3df89",
+   "name": "Northeastern University",
+   "reason": "duplicate",
+   "detail": "merged into 5fc62bb7-0198-5a07-8830-2735c17fd1ea (Northeastern University); shared name + country + domain (northeastern.edu)",
+   "in_directory": true
+  },
+  {
+   "id": "17552220-c3d6-503e-9e08-56ee73cdf9a1",
+   "name": "EDP University of Puerto Rico-Manati",
+   "reason": "no-bachelors",
+   "detail": "Scorecard UNITID 494287: CURROPER=1, PREDDEG=2, HIGHDEG=2",
+   "in_directory": true
+  },
+  {
+   "id": "18d43dbf-e742-5bb3-afba-8923fa5c82ba",
+   "name": "Galen Health Institutes-Aurora",
+   "reason": "no-bachelors",
+   "detail": "Scorecard UNITID 500944: CURROPER=1, PREDDEG=2, HIGHDEG=0",
+   "in_directory": true
+  },
+  {
+   "id": "18e228fd-964f-5cc8-a1c8-7c256c31704f",
+   "name": "Saint Louis Community College",
+   "reason": "no-bachelors",
+   "detail": "Scorecard UNITID 179308: CURROPER=1, PREDDEG=2, HIGHDEG=2",
+   "in_directory": true
+  },
+  {
+   "id": "19352419-cf0f-5877-a75d-e67a0ceb2065",
+   "name": "Pennsylvania Institute of Technology",
+   "reason": "no-bachelors",
+   "detail": "Scorecard UNITID 214582: CURROPER=1, PREDDEG=1, HIGHDEG=2",
+   "in_directory": true
+  },
+  {
+   "id": "1ae9f9b4-1cb4-5df6-bc51-14aea3b29f61",
+   "name": "National University",
+   "reason": "duplicate",
+   "detail": "merged into 27e3e0b2-ab7e-565f-8835-e7cc6d46c463 (National University); shared ROR https://ror.org/01zjrck77",
+   "in_directory": true
+  },
+  {
+   "id": "1b26fb08-9599-562f-a049-4f9dfaf73805",
+   "name": "South Mountain Community College",
+   "reason": "no-bachelors",
+   "detail": "Scorecard UNITID 105792: CURROPER=1, PREDDEG=1, HIGHDEG=2",
+   "in_directory": true
+  },
+  {
+   "id": "1c90ab13-a4d0-5b53-b41f-78e771f324c0",
+   "name": "Maine College of Health Professions",
+   "reason": "closed",
+   "detail": "Scorecard UNITID 161022: CURROPER=0, PREDDEG=2, HIGHDEG=3",
+   "in_directory": true
+  },
+  {
+   "id": "1f72a710-d76c-5525-84eb-af1a7e555551",
+   "name": "Memphis Theological Seminary",
+   "reason": "closed",
+   "detail": "Scorecard UNITID 220871: CURROPER=0, PREDDEG=4, HIGHDEG=4",
+   "in_directory": true
+  },
+  {
+   "id": "236a6f22-b0dc-5301-a1a8-0a3a30638d62",
+   "name": "San Diego Miramar College",
+   "reason": "no-bachelors",
+   "detail": "Scorecard UNITID 122384: CURROPER=1, PREDDEG=2, HIGHDEG=2",
+   "in_directory": true
+  },
+  {
+   "id": "266fb45c-8873-5e2d-b552-170b8e14faa1",
+   "name": "Edison State Community College",
+   "reason": "no-bachelors",
+   "detail": "Scorecard UNITID 202648: CURROPER=1, PREDDEG=1, HIGHDEG=2",
+   "in_directory": true
+  },
+  {
+   "id": "26834427-35c4-5011-97f0-5413c1a6f397",
+   "name": "The Modern College of Design",
+   "reason": "closed",
+   "detail": "Scorecard UNITID 205391: CURROPER=0, PREDDEG=2, HIGHDEG=3",
+   "in_directory": true
+  },
+  {
+   "id": "26fdc37b-068e-5323-b02d-08f5a408ba4d",
+   "name": "Mesa Community College",
+   "reason": "no-bachelors",
+   "detail": "Scorecard UNITID 105154: CURROPER=1, PREDDEG=1, HIGHDEG=2",
+   "in_directory": true
+  },
+  {
+   "id": "27c02981-99d6-5d15-8ef7-1e2217ec76f5",
+   "name": "Compu-Med Vocational Careers Corp",
+   "reason": "no-bachelors",
+   "detail": "Scorecard UNITID 423120: CURROPER=1, PREDDEG=1, HIGHDEG=2",
+   "in_directory": true
+  },
+  {
+   "id": "2c5a27f6-09f6-5ac8-9c34-bdbbbf5bade2",
+   "name": "Indiana University-Southeast",
+   "reason": "duplicate",
+   "detail": "merged into 29529154-1d63-59e1-abfb-f8fb3f940ac7 (Indiana University-Southeast); shared IPEDS unitid 151379",
+   "in_directory": true
+  },
+  {
+   "id": "2cce0fde-97a6-5b4b-a687-a8ce68382e36",
+   "name": "Eisek Hatorah DRachmistrivka",
+   "reason": "no-bachelors",
+   "detail": "Scorecard UNITID 500759: CURROPER=1, PREDDEG=2, HIGHDEG=2",
+   "in_directory": true
+  },
+  {
+   "id": "2ebd3c7f-0825-59af-b82b-2196ef06b951",
+   "name": "Guam Community College",
+   "reason": "no-bachelors",
+   "detail": "Scorecard UNITID 240745: CURROPER=1, PREDDEG=2, HIGHDEG=2",
+   "in_directory": true
+  },
+  {
+   "id": "2fa31ae5-f134-5e45-b28f-6efda2f1d511",
+   "name": "Lourdes University",
+   "reason": "closed",
+   "detail": "Scorecard UNITID 203757: CURROPER=0, PREDDEG=3, HIGHDEG=4",
+   "in_directory": true
+  },
+  {
+   "id": "355cb6b7-e42d-5538-adfa-79e88023fd02",
+   "name": "Andrew College",
+   "reason": "no-bachelors",
+   "detail": "Scorecard UNITID 138761: CURROPER=1, PREDDEG=2, HIGHDEG=2",
+   "in_directory": true
+  },
+  {
+   "id": "36035a4e-f08d-530d-9860-ea0767be1296",
+   "name": "Trine University",
+   "reason": "duplicate",
+   "detail": "merged into 795a0486-ad7c-5052-9963-88a3fd5fc3d9 (Trine University); shared ROR https://ror.org/038e0dv78",
+   "in_directory": true
+  },
+  {
+   "id": "3a39d973-a8b5-5808-9512-eabb05f6fcec",
+   "name": "University of Houston",
+   "reason": "duplicate",
+   "detail": "merged into c73aa8d4-48b0-5ee4-b8a6-5b62bfa1ce65 (University of Houston); shared name + country + domain (uh.edu)",
+   "in_directory": true
+  },
+  {
+   "id": "3d12e355-31d4-5bfd-a275-3bc71edffb37",
+   "name": "Polytechnic University of Puerto Rico-Miami",
+   "reason": "closed",
+   "detail": "Scorecard UNITID 456481: CURROPER=0, PREDDEG=3, HIGHDEG=4",
+   "in_directory": true
+  },
+  {
+   "id": "4e68b17b-2023-57db-bf33-50825279975d",
+   "name": "Saint Augustine's University",
+   "reason": "closed",
+   "detail": "Scorecard UNITID 199582: CURROPER=0, PREDDEG=3, HIGHDEG=4",
+   "in_directory": true
+  },
+  {
+   "id": "5026bba1-2e5f-5755-af0a-37475eb38298",
+   "name": "Eastern Arizona College",
+   "reason": "no-bachelors",
+   "detail": "Scorecard UNITID 104577: CURROPER=1, PREDDEG=1, HIGHDEG=2",
+   "in_directory": true
+  },
+  {
+   "id": "52493e47-4b87-5364-96fc-fe48a149b145",
+   "name": "Community College of Aurora",
+   "reason": "no-bachelors",
+   "detail": "Scorecard UNITID 126863: CURROPER=1, PREDDEG=2, HIGHDEG=2",
+   "in_directory": true
+  },
+  {
+   "id": "532c4e48-a779-5e56-8371-3a7bb4f1bea4",
+   "name": "Siena Heights University",
+   "reason": "closed",
+   "detail": "Scorecard UNITID 172264: CURROPER=0, PREDDEG=3, HIGHDEG=4",
+   "in_directory": true
+  },
+  {
+   "id": "562144c2-31cc-52ae-a272-ed5a8bccfcbe",
+   "name": "Stark State College",
+   "reason": "no-bachelors",
+   "detail": "Scorecard UNITID 205841: CURROPER=1, PREDDEG=1, HIGHDEG=2",
+   "in_directory": true
+  },
+  {
+   "id": "59269fdb-a17e-5290-ab49-a4ac8f05a528",
+   "name": "Phoenix College",
+   "reason": "no-bachelors",
+   "detail": "Scorecard UNITID 105428: CURROPER=1, PREDDEG=1, HIGHDEG=2",
+   "in_directory": true
+  },
+  {
+   "id": "5a3a933f-0999-51fc-989c-59a2ac861d83",
+   "name": "Los Angeles Valley College",
+   "reason": "no-bachelors",
+   "detail": "Scorecard UNITID 117733: CURROPER=1, PREDDEG=1, HIGHDEG=2",
+   "in_directory": true
+  },
+  {
+   "id": "5f79847b-9366-57b3-a5b9-3ea2bb01bf2b",
+   "name": "Yeshiva of the Telshe Alumni",
+   "reason": "no-bachelors",
+   "detail": "Scorecard UNITID 431983: CURROPER=1, PREDDEG=2, HIGHDEG=2",
+   "in_directory": true
+  },
+  {
+   "id": "612d73ef-b3c5-52db-b599-59f081193a3e",
+   "name": "Lane Community College",
+   "reason": "no-bachelors",
+   "detail": "Scorecard UNITID 209038: CURROPER=1, PREDDEG=2, HIGHDEG=2",
+   "in_directory": true
+  },
+  {
+   "id": "614f7e8a-67cb-5c9b-bacc-b6ed46e416f6",
+   "name": "Cerritos College",
+   "reason": "no-bachelors",
+   "detail": "Scorecard UNITID 111887: CURROPER=1, PREDDEG=1, HIGHDEG=2",
+   "in_directory": true
+  },
+  {
+   "id": "62831b4f-9431-51f7-b345-76d817aecb65",
+   "name": "St Philip's College",
+   "reason": "no-bachelors",
+   "detail": "Scorecard UNITID 227854: CURROPER=1, PREDDEG=1, HIGHDEG=2",
+   "in_directory": true
+  },
+  {
+   "id": "67503c0a-466c-5433-83be-e16e765d17d5",
+   "name": "Integrity College of Health",
+   "reason": "no-bachelors",
+   "detail": "Scorecard UNITID 483373: CURROPER=1, PREDDEG=1, HIGHDEG=2",
+   "in_directory": true
+  },
+  {
+   "id": "686395db-e167-52ba-8ce2-820359d6a01c",
+   "name": "College of Eastern Idaho",
+   "reason": "no-bachelors",
+   "detail": "Scorecard UNITID 142179: CURROPER=1, PREDDEG=2, HIGHDEG=2",
+   "in_directory": true
+  },
+  {
+   "id": "68b1e69e-4695-5b8e-8cf8-1b95600119d0",
+   "name": "Phoenix Institute of Herbal Medicine & Acupuncture",
+   "reason": "closed",
+   "detail": "Scorecard UNITID 447698: CURROPER=0, PREDDEG=4, HIGHDEG=4",
+   "in_directory": true
+  },
+  {
+   "id": "68f2c887-8ab5-59dc-b286-04ffdd0ebb8b",
+   "name": "College of Western Idaho",
+   "reason": "no-bachelors",
+   "detail": "Scorecard UNITID 455114: CURROPER=1, PREDDEG=2, HIGHDEG=2",
+   "in_directory": true
+  },
+  {
+   "id": "6d207495-6156-599e-9998-32012d178fe6",
+   "name": "Shoreline College",
+   "reason": "no-bachelors",
+   "detail": "Scorecard UNITID 236610: CURROPER=1, PREDDEG=2, HIGHDEG=2",
+   "in_directory": true
+  },
+  {
+   "id": "6e65853d-f981-5700-8e42-aa939faa0f24",
+   "name": "Galen College of Nursing-Louisville",
+   "reason": "duplicate",
+   "detail": "merged into 5b3fe16c-9634-5cd1-bca5-02b69a657d7b (Galen College of Nursing-Louisville); shared ROR https://ror.org/055hzkr52",
+   "in_directory": true
+  },
+  {
+   "id": "6fd9aabc-c05d-5c84-9d78-faeddddfe581",
+   "name": "Cal Poly Maritime Academy",
+   "reason": "duplicate",
+   "detail": "merged into f35d6b1e-c56e-59b7-93e0-ccfb5a1e1b8d (Cal Poly Maritime Academy); shared IPEDS unitid 111188",
+   "in_directory": true
+  },
+  {
+   "id": "76b70e20-b97a-5fa9-85d1-d73194fee3a6",
+   "name": "Ambria College of Nursing",
+   "reason": "no-bachelors",
+   "detail": "Scorecard UNITID 457527: CURROPER=1, PREDDEG=2, HIGHDEG=2",
+   "in_directory": true
+  },
+  {
+   "id": "78b1529d-8d7e-586b-8d22-68f130851f16",
+   "name": "University of Valley Forge",
+   "reason": "closed",
+   "detail": "Scorecard UNITID 216542: CURROPER=0, PREDDEG=3, HIGHDEG=4",
+   "in_directory": true
+  },
+  {
+   "id": "7e437b27-8fa4-5761-a5ba-d0cfc0ffcef6",
+   "name": "South Puget Sound Community College",
+   "reason": "no-bachelors",
+   "detail": "Scorecard UNITID 236656: CURROPER=1, PREDDEG=2, HIGHDEG=2",
+   "in_directory": true
+  },
+  {
+   "id": "7f31584c-392c-516a-aa0c-f641d263bfbc",
+   "name": "Davis College",
+   "reason": "duplicate",
+   "detail": "merged into 8c23a995-8007-5ed9-a780-5a8343b18668 (Davis College); shared IPEDS unitid 202435",
+   "in_directory": true
+  },
+  {
+   "id": "861b832d-95f2-5795-b319-3b329134fd18",
+   "name": "Central Arizona College",
+   "reason": "no-bachelors",
+   "detail": "Scorecard UNITID 104346: CURROPER=1, PREDDEG=1, HIGHDEG=2",
+   "in_directory": true
+  },
+  {
+   "id": "8770035e-070e-5a1f-bf33-0e6b2626af47",
+   "name": "Cuyahoga Community College District",
+   "reason": "no-bachelors",
+   "detail": "Scorecard UNITID 202356: CURROPER=1, PREDDEG=1, HIGHDEG=2",
+   "in_directory": true
+  },
+  {
+   "id": "8c23a995-8007-5ed9-a780-5a8343b18668",
+   "name": "Davis College",
+   "reason": "no-bachelors",
+   "detail": "Scorecard UNITID 202435: CURROPER=1, PREDDEG=1, HIGHDEG=2",
+   "in_directory": true
+  },
+  {
+   "id": "8dd11fb1-8993-5e45-b9b0-644ad8131e03",
+   "name": "East Los Angeles College",
+   "reason": "no-bachelors",
+   "detail": "Scorecard UNITID 113856: CURROPER=1, PREDDEG=1, HIGHDEG=2",
+   "in_directory": true
+  },
+  {
+   "id": "9039838f-797b-57da-b28f-5853fcb2e17d",
+   "name": "Yeshivath Beth Moshe",
+   "reason": "no-bachelors",
+   "detail": "Scorecard UNITID 217040: CURROPER=1, PREDDEG=2, HIGHDEG=2",
+   "in_directory": true
+  },
+  {
+   "id": "90d67088-a135-5fb8-844e-2cb2158327e4",
+   "name": "University of North Carolina Asheville",
+   "reason": "duplicate",
+   "detail": "merged into 4d350bc9-61cb-5aee-8be5-b0e91d5bd86f (University of North Carolina Asheville); shared IPEDS unitid 199111",
+   "in_directory": true
+  },
+  {
+   "id": "9107bcf3-7055-5bce-9e09-717c4bd168a1",
+   "name": "Trinity Washington University",
+   "reason": "duplicate",
+   "detail": "merged into 66cd5625-4159-5d54-80b7-f6fc44af662c (Trinity Washington University); shared IPEDS unitid 131876",
+   "in_directory": true
+  },
+  {
+   "id": "91651e2a-2257-53a7-b211-934bc8916e96",
+   "name": "Fresno City College",
+   "reason": "no-bachelors",
+   "detail": "Scorecard UNITID 114789: CURROPER=1, PREDDEG=1, HIGHDEG=2",
+   "in_directory": true
+  },
+  {
+   "id": "918959e7-3164-55fe-8574-79d7ba0eded6",
+   "name": "North Carolina Wesleyan University",
+   "reason": "duplicate",
+   "detail": "merged into ef1d5468-e91c-5f41-9144-1d200af62f03 (North Carolina Wesleyan University); shared IPEDS unitid 199209",
+   "in_directory": true
+  },
+  {
+   "id": "9224f5f3-98db-5dd2-b25d-c73eae08cb97",
+   "name": "Galen Health Institutes-Las Vegas",
+   "reason": "no-bachelors",
+   "detail": "Scorecard UNITID 499671: CURROPER=1, PREDDEG=2, HIGHDEG=0",
+   "in_directory": true
+  },
+  {
+   "id": "922fbccc-46a6-585a-abf1-f257024fc457",
+   "name": "Rio Salado College",
+   "reason": "no-bachelors",
+   "detail": "Scorecard UNITID 105668: CURROPER=1, PREDDEG=1, HIGHDEG=2",
+   "in_directory": true
+  },
+  {
+   "id": "94b5895d-7587-5885-a618-0604b8442a63",
+   "name": "Nebraska Indian Community College",
+   "reason": "no-bachelors",
+   "detail": "Scorecard UNITID 181419: CURROPER=1, PREDDEG=2, HIGHDEG=2",
+   "in_directory": true
+  },
+  {
+   "id": "97daaf08-d113-594f-8d71-367c28ee1334",
+   "name": "Latin American Bible Institute",
+   "reason": "no-bachelors",
+   "detail": "Scorecard UNITID 117283: CURROPER=1, PREDDEG=2, HIGHDEG=2",
+   "in_directory": true
+  },
+  {
+   "id": "982cfd7e-0798-5700-94dd-c47b91ac00e1",
+   "name": "GateWay Community College",
+   "reason": "no-bachelors",
+   "detail": "Scorecard UNITID 105145: CURROPER=1, PREDDEG=1, HIGHDEG=2",
+   "in_directory": true
+  },
+  {
+   "id": "993d5ef7-0512-5a4f-a94f-0ee28f9959d1",
+   "name": "CUNY Brooklyn College",
+   "reason": "duplicate",
+   "detail": "merged into 98cc1643-a66a-57fc-961d-7ca89bde65e7 (CUNY Brooklyn College); shared IPEDS unitid 190549",
+   "in_directory": true
+  },
+  {
+   "id": "9ab59305-7e55-586e-92e2-a45aed3c8de2",
+   "name": "Culinary Institute Inc",
+   "reason": "no-bachelors",
+   "detail": "Scorecard UNITID 444565: CURROPER=1, PREDDEG=2, HIGHDEG=2",
+   "in_directory": true
+  },
+  {
+   "id": "9cf6db37-d7a3-578f-9b39-f1e446be4334",
+   "name": "Cochise County Community College District",
+   "reason": "no-bachelors",
+   "detail": "Scorecard UNITID 104425: CURROPER=1, PREDDEG=2, HIGHDEG=2",
+   "in_directory": true
+  },
+  {
+   "id": "a1252512-3615-5ad0-883f-4c30ef9e3c33",
+   "name": "Madison Area Technical College",
+   "reason": "no-bachelors",
+   "detail": "Scorecard UNITID 238263: CURROPER=1, PREDDEG=1, HIGHDEG=2",
+   "in_directory": true
+  },
+  {
+   "id": "a32f429c-d22c-5a29-931f-dd0ec77b14d0",
+   "name": "Northpoint Bible College",
+   "reason": "closed",
+   "detail": "Scorecard UNITID 217606: CURROPER=0, PREDDEG=3, HIGHDEG=4",
+   "in_directory": true
+  },
+  {
+   "id": "a559336b-f2f5-5f29-b680-7b13f84ef09b",
+   "name": "Pacific States University",
+   "reason": "closed",
+   "detail": "Scorecard UNITID 120838: CURROPER=0, PREDDEG=3, HIGHDEG=4",
+   "in_directory": true
+  },
+  {
+   "id": "a571678a-2827-572f-9adb-5e5ddaa77ff8",
+   "name": "HCI College",
+   "reason": "no-bachelors",
+   "detail": "Scorecard UNITID 490054: CURROPER=1, PREDDEG=2, HIGHDEG=2",
+   "in_directory": true
+  },
+  {
+   "id": "a59dae44-66ed-5f4e-98e5-b7e4ada3eb23",
+   "name": "Northern Wyoming Community College District",
+   "reason": "no-bachelors",
+   "detail": "Scorecard UNITID 240666: CURROPER=1, PREDDEG=2, HIGHDEG=2",
+   "in_directory": true
+  },
+  {
+   "id": "a650a26b-d904-5628-a311-93b513088961",
+   "name": "Galen Health Institutes-Asheville",
+   "reason": "no-bachelors",
+   "detail": "Scorecard UNITID 498119: CURROPER=1, PREDDEG=2, HIGHDEG=2",
+   "in_directory": true
+  },
+  {
+   "id": "a77030c2-53ee-5817-bb92-c0e521351bc4",
+   "name": "Spring Arbor University",
+   "reason": "duplicate",
+   "detail": "merged into 0c0129a4-e55b-53af-9e98-2b8456f8bd30 (Spring Arbor University); shared IPEDS unitid 172334",
+   "in_directory": true
+  },
+  {
+   "id": "acbac6c9-d34e-5054-a532-4f6fab95f6d7",
+   "name": "Los Angeles Mission College",
+   "reason": "no-bachelors",
+   "detail": "Scorecard UNITID 117867: CURROPER=1, PREDDEG=2, HIGHDEG=2",
+   "in_directory": true
+  },
+  {
+   "id": "aebbeeaa-e6d4-51e9-bc09-f2e928f74c4e",
+   "name": "Northwest Vista College",
+   "reason": "no-bachelors",
+   "detail": "Scorecard UNITID 420398: CURROPER=1, PREDDEG=2, HIGHDEG=2",
+   "in_directory": true
+  },
+  {
+   "id": "b18b5cf9-45b2-55b1-87fc-e94fb8be57ce",
+   "name": "San Joaquin Valley College-Visalia",
+   "reason": "duplicate",
+   "detail": "merged into 19129f7d-bf2d-5841-9205-1cb76056c979 (San Joaquin Valley College-Visalia); shared ROR https://ror.org/04rkf8c04",
+   "in_directory": true
+  },
+  {
+   "id": "b4e9c076-eb29-5515-9986-53e93d215a52",
+   "name": "Indiana University-South Bend",
+   "reason": "duplicate",
+   "detail": "merged into 50759d76-f3b9-5218-8502-203e0d66c99d (Indiana University-South Bend); shared IPEDS unitid 151342",
+   "in_directory": true
+  },
+  {
+   "id": "b7ce986e-c9c5-5774-9e53-2520c45aa5bb",
+   "name": "Moorpark College",
+   "reason": "no-bachelors",
+   "detail": "Scorecard UNITID 119137: CURROPER=1, PREDDEG=2, HIGHDEG=2",
+   "in_directory": true
+  },
+  {
+   "id": "bb0476a3-c3be-57be-9d51-a3e170e351d3",
+   "name": "De Anza College",
+   "reason": "no-bachelors",
+   "detail": "Scorecard UNITID 113333: CURROPER=1, PREDDEG=2, HIGHDEG=2",
+   "in_directory": true
+  },
+  {
+   "id": "bb36ffd1-85de-59b6-9884-6997e9eb5560",
+   "name": "Providence Christian College",
+   "reason": "closed",
+   "detail": "Scorecard UNITID 455770: CURROPER=0, PREDDEG=3, HIGHDEG=3",
+   "in_directory": true
+  },
+  {
+   "id": "be1f73c5-cbf3-58d9-9f26-d9e758e306f2",
+   "name": "University of Miami",
+   "reason": "duplicate",
+   "detail": "merged into 3d5e6265-775a-568a-9eb8-1298348c3d3b (University of Miami); shared name + country + domain (miami.edu)",
+   "in_directory": true
+  },
+  {
+   "id": "bf2bb7e9-5364-5f72-842a-2d135fcb9f7b",
+   "name": "Indiana Wesleyan University, Marion",
+   "reason": "duplicate",
+   "detail": "merged into fba3a9b3-4ee3-53e5-9d75-a7251045506c (Indiana Wesleyan University-Marion); shared ROR https://ror.org/04hrnch96",
+   "in_directory": true
+  },
+  {
+   "id": "c0ef540c-7612-5915-bd40-b9d9051eab35",
+   "name": "Scottsdale Community College",
+   "reason": "no-bachelors",
+   "detail": "Scorecard UNITID 105747: CURROPER=1, PREDDEG=1, HIGHDEG=2",
+   "in_directory": true
+  },
+  {
+   "id": "c18d220d-d700-583a-b458-bb130868820c",
+   "name": "Mt Hood Community College",
+   "reason": "no-bachelors",
+   "detail": "Scorecard UNITID 209250: CURROPER=1, PREDDEG=2, HIGHDEG=2",
+   "in_directory": true
+  },
+  {
+   "id": "c337b031-6de9-56a0-9d14-b6f49c3eff07",
+   "name": "San Diego City College",
+   "reason": "no-bachelors",
+   "detail": "Scorecard UNITID 122339: CURROPER=1, PREDDEG=2, HIGHDEG=2",
+   "in_directory": true
+  },
+  {
+   "id": "c6995a3a-23ce-5236-8dec-7b92f7f36c33",
+   "name": "Glendale Community College",
+   "reason": "no-bachelors",
+   "detail": "Scorecard UNITID 104708: CURROPER=1, PREDDEG=1, HIGHDEG=2",
+   "in_directory": true
+  },
+  {
+   "id": "c9740a1f-0e1a-578a-bb8b-43cd396e8f92",
+   "name": "Rose State College",
+   "reason": "no-bachelors",
+   "detail": "Scorecard UNITID 207670: CURROPER=1, PREDDEG=2, HIGHDEG=2",
+   "in_directory": true
+  },
+  {
+   "id": "cb2a3e42-cae1-5481-9885-de29f8b8b461",
+   "name": "Lake Forest Graduate School of Management",
+   "reason": "closed",
+   "detail": "Scorecard UNITID 146490: CURROPER=0, PREDDEG=4, HIGHDEG=4",
+   "in_directory": true
+  },
+  {
+   "id": "cc68cdf0-0cc9-5af0-b5fd-c030eb2f333b",
+   "name": "Pacific College of Health and Science",
+   "reason": "closed",
+   "detail": "Scorecard UNITID 378576: CURROPER=0, PREDDEG=1, HIGHDEG=4",
+   "in_directory": true
+  },
+  {
+   "id": "cd9479b0-0a01-5e22-863b-946a0bdead52",
+   "name": "Chandler-Gilbert Community College",
+   "reason": "no-bachelors",
+   "detail": "Scorecard UNITID 364025: CURROPER=1, PREDDEG=1, HIGHDEG=2",
+   "in_directory": true
+  },
+  {
+   "id": "d14b434b-1ec9-5fc1-8883-2563c5f8e71c",
+   "name": "Cambridge College of Healthcare & Technology",
+   "reason": "no-bachelors",
+   "detail": "Scorecard UNITID 446109: CURROPER=1, PREDDEG=1, HIGHDEG=2",
+   "in_directory": true
+  },
+  {
+   "id": "d32cf59c-ad02-550f-bc29-2c9aa8bf2d0d",
+   "name": "Brookline College-Tucson",
+   "reason": "no-bachelors",
+   "detail": "Scorecard UNITID 438179: CURROPER=1, PREDDEG=1, HIGHDEG=2",
+   "in_directory": true
+  },
+  {
+   "id": "d33b1f2e-a6f5-5cd5-a106-c5f49498d514",
+   "name": "Advance Science International College",
+   "reason": "no-bachelors",
+   "detail": "Scorecard UNITID 444334: CURROPER=1, PREDDEG=2, HIGHDEG=2",
+   "in_directory": true
+  },
+  {
+   "id": "d755692f-c234-508f-8bf0-08b1c1df13dd",
+   "name": "Taft College",
+   "reason": "no-bachelors",
+   "detail": "Scorecard UNITID 124113: CURROPER=1, PREDDEG=2, HIGHDEG=2",
+   "in_directory": true
+  },
+  {
+   "id": "d9c77312-bf54-5588-8615-19cfd8e3f2de",
+   "name": "Willamette University",
+   "reason": "duplicate",
+   "detail": "merged into db279679-e2b1-5f11-b706-e0bdac47ba44 (Willamette University); shared ROR https://ror.org/04g9e0f44",
+   "in_directory": true
+  },
+  {
+   "id": "daf71f5d-14af-5a0e-bbd4-ed453758d7cd",
+   "name": "Pacific College of Health and Science",
+   "reason": "closed",
+   "detail": "Scorecard UNITID 414595: CURROPER=0, PREDDEG=2, HIGHDEG=4",
+   "in_directory": true
+  },
+  {
+   "id": "db191af2-2fb9-5978-92e1-eeecb7b771f5",
+   "name": "Care Hope College",
+   "reason": "no-bachelors",
+   "detail": "Scorecard UNITID 501406: CURROPER=1, PREDDEG=2, HIGHDEG=2",
+   "in_directory": true
+  },
+  {
+   "id": "dd6e6743-9daf-5e1e-b2de-817f985f30d1",
+   "name": "Washington University in St Louis",
+   "reason": "duplicate",
+   "detail": "merged into 26ebf6e5-a612-55f5-bb38-64ba2e059762 (Washington University in St Louis); shared IPEDS unitid 179867",
+   "in_directory": true
+  },
+  {
+   "id": "dfe48d00-bd70-561d-ae4f-f0f8ce483367",
+   "name": "EDP University of Puerto Rico-Caguas",
+   "reason": "no-bachelors",
+   "detail": "Scorecard UNITID 499635: CURROPER=1, PREDDEG=2, HIGHDEG=2",
+   "in_directory": true
+  },
+  {
+   "id": "e022acd8-6b2f-51fb-bff0-5b61cb09ffb7",
+   "name": "Daytona College",
+   "reason": "no-bachelors",
+   "detail": "Scorecard UNITID 447014: CURROPER=1, PREDDEG=1, HIGHDEG=2",
+   "in_directory": true
+  },
+  {
+   "id": "e80328a1-2c43-5722-85fd-9f4fca55b7be",
+   "name": "Associated Beth Rivkah Schools",
+   "reason": "no-bachelors",
+   "detail": "Scorecard UNITID 188942: CURROPER=1, PREDDEG=1, HIGHDEG=2",
+   "in_directory": true
+  },
+  {
+   "id": "ebd659e7-6813-5e8b-9997-f03c3a084b24",
+   "name": "Ricketts Great Books College",
+   "reason": "no-bachelors",
+   "detail": "Scorecard UNITID 499811: CURROPER=1, PREDDEG=2, HIGHDEG=0",
+   "in_directory": true
+  },
+  {
+   "id": "eeb0f2d2-e86e-533d-8558-25ddf9674fff",
+   "name": "Anna Maria College",
+   "reason": "closed",
+   "detail": "Scorecard UNITID 164492: CURROPER=0, PREDDEG=3, HIGHDEG=4",
+   "in_directory": true
+  },
+  {
+   "id": "eeb9ddf4-9d78-5d3a-ab5c-0fcd9d8704d9",
+   "name": "Palm Beach State College",
+   "reason": "duplicate",
+   "detail": "merged into 20589910-87be-55c8-a2cf-2f32b701b433 (Palm Beach State College); shared IPEDS unitid 136358",
+   "in_directory": true
+  },
+  {
+   "id": "ef276c99-d786-557d-b04e-c439f4a8cf34",
+   "name": "Bais Binyomin Academy",
+   "reason": "no-bachelors",
+   "detail": "Scorecard UNITID 128586: CURROPER=1, PREDDEG=2, HIGHDEG=2",
+   "in_directory": true
+  },
+  {
+   "id": "f4f0b06f-ffa6-53ff-8960-fa32aa35de26",
+   "name": "College of the Canyons",
+   "reason": "no-bachelors",
+   "detail": "Scorecard UNITID 111461: CURROPER=1, PREDDEG=2, HIGHDEG=2",
+   "in_directory": true
+  },
+  {
+   "id": "f57fc53d-f37e-58e2-b1bc-1ac2154dcf93",
+   "name": "DeVry University-Nevada",
+   "reason": "closed",
+   "detail": "Scorecard UNITID 482547: CURROPER=0, PREDDEG=3, HIGHDEG=3",
+   "in_directory": true
+  },
+  {
+   "id": "f649b4bb-567f-5d78-851e-3c71517ee739",
+   "name": "Victor Valley College",
+   "reason": "no-bachelors",
+   "detail": "Scorecard UNITID 125091: CURROPER=1, PREDDEG=2, HIGHDEG=2",
+   "in_directory": true
+  },
+  {
+   "id": "f9b5b376-f49b-59e6-ae00-b07d94b0b0bf",
+   "name": "California College of ASU",
+   "reason": "closed",
+   "detail": "Scorecard UNITID 112570: CURROPER=0, PREDDEG=3, HIGHDEG=3",
+   "in_directory": true
+  },
+  {
+   "id": "f9f16466-c4ba-563a-8c2f-b26ee53a6c87",
+   "name": "Abilene Christian University",
+   "reason": "duplicate",
+   "detail": "merged into efcd0b52-6611-50e3-9ac7-d9831889822a (Abilene Christian University); shared ROR https://ror.org/004srrf86",
+   "in_directory": true
+  },
+  {
+   "id": "faa84d52-d7db-539b-bd3c-cd9975ceed0a",
+   "name": "Washington State College of Ohio",
+   "reason": "duplicate",
+   "detail": "merged into 57d46ab3-f690-57cc-8c70-045ff130a8ad (Washington State College of Ohio); shared IPEDS unitid 206446",
+   "in_directory": true
+  },
+  {
+   "id": "fbe8f390-70b6-5f25-90a2-069952d62e9d",
+   "name": "Hallmark University",
+   "reason": "duplicate",
+   "detail": "merged into 7c249bfb-2a84-5ac5-ae1c-afb48368b645 (Hallmark University); shared IPEDS unitid 225201",
+   "in_directory": true
+  },
+  {
+   "id": "fcf662eb-b5ea-5110-930d-944e6f581912",
+   "name": "Lamar Community College",
+   "reason": "no-bachelors",
+   "detail": "Scorecard UNITID 127389: CURROPER=1, PREDDEG=2, HIGHDEG=2",
+   "in_directory": true
+  },
+  {
+   "id": "fe204377-8494-579d-bd36-9e5efcabeee3",
+   "name": "Alvin Community College",
+   "reason": "no-bachelors",
+   "detail": "Scorecard UNITID 222567: CURROPER=1, PREDDEG=2, HIGHDEG=2",
+   "in_directory": true
+  }
+ ],
+ "duplicate_merges": [
+  {
+   "keep": "0c0129a4-e55b-53af-9e98-2b8456f8bd30",
+   "keep_name": "Spring Arbor University",
+   "merge": [
+    {
+     "id": "a77030c2-53ee-5817-bb92-c0e521351bc4",
+     "name": "Spring Arbor University"
+    }
+   ]
+  },
+  {
+   "keep": "19129f7d-bf2d-5841-9205-1cb76056c979",
+   "keep_name": "San Joaquin Valley College-Visalia",
+   "merge": [
+    {
+     "id": "b18b5cf9-45b2-55b1-87fc-e94fb8be57ce",
+     "name": "San Joaquin Valley College-Visalia"
+    }
+   ]
+  },
+  {
+   "keep": "20589910-87be-55c8-a2cf-2f32b701b433",
+   "keep_name": "Palm Beach State College",
+   "merge": [
+    {
+     "id": "eeb9ddf4-9d78-5d3a-ab5c-0fcd9d8704d9",
+     "name": "Palm Beach State College"
+    }
+   ]
+  },
+  {
+   "keep": "26ebf6e5-a612-55f5-bb38-64ba2e059762",
+   "keep_name": "Washington University in St Louis",
+   "merge": [
+    {
+     "id": "dd6e6743-9daf-5e1e-b2de-817f985f30d1",
+     "name": "Washington University in St Louis"
+    }
+   ]
+  },
+  {
+   "keep": "27e3e0b2-ab7e-565f-8835-e7cc6d46c463",
+   "keep_name": "National University",
+   "merge": [
+    {
+     "id": "1ae9f9b4-1cb4-5df6-bc51-14aea3b29f61",
+     "name": "National University"
+    }
+   ]
+  },
+  {
+   "keep": "29529154-1d63-59e1-abfb-f8fb3f940ac7",
+   "keep_name": "Indiana University-Southeast",
+   "merge": [
+    {
+     "id": "2c5a27f6-09f6-5ac8-9c34-bdbbbf5bade2",
+     "name": "Indiana University-Southeast"
+    }
+   ]
+  },
+  {
+   "keep": "30ff4ef9-dd7e-5513-8085-e043aa63e845",
+   "keep_name": "Tallahassee State College",
+   "merge": [
+    {
+     "id": "03789f7a-5e14-535e-b163-7c56ef9f4254",
+     "name": "Tallahassee State College"
+    }
+   ]
+  },
+  {
+   "keep": "3d5e6265-775a-568a-9eb8-1298348c3d3b",
+   "keep_name": "University of Miami",
+   "merge": [
+    {
+     "id": "be1f73c5-cbf3-58d9-9f26-d9e758e306f2",
+     "name": "University of Miami"
+    }
+   ]
+  },
+  {
+   "keep": "4d350bc9-61cb-5aee-8be5-b0e91d5bd86f",
+   "keep_name": "University of North Carolina Asheville",
+   "merge": [
+    {
+     "id": "90d67088-a135-5fb8-844e-2cb2158327e4",
+     "name": "University of North Carolina Asheville"
+    }
+   ]
+  },
+  {
+   "keep": "50759d76-f3b9-5218-8502-203e0d66c99d",
+   "keep_name": "Indiana University-South Bend",
+   "merge": [
+    {
+     "id": "b4e9c076-eb29-5515-9986-53e93d215a52",
+     "name": "Indiana University-South Bend"
+    }
+   ]
+  },
+  {
+   "keep": "57d46ab3-f690-57cc-8c70-045ff130a8ad",
+   "keep_name": "Washington State College of Ohio",
+   "merge": [
+    {
+     "id": "faa84d52-d7db-539b-bd3c-cd9975ceed0a",
+     "name": "Washington State College of Ohio"
+    }
+   ]
+  },
+  {
+   "keep": "5b3fe16c-9634-5cd1-bca5-02b69a657d7b",
+   "keep_name": "Galen College of Nursing-Louisville",
+   "merge": [
+    {
+     "id": "6e65853d-f981-5700-8e42-aa939faa0f24",
+     "name": "Galen College of Nursing-Louisville"
+    }
+   ]
+  },
+  {
+   "keep": "5fc62bb7-0198-5a07-8830-2735c17fd1ea",
+   "keep_name": "Northeastern University",
+   "merge": [
+    {
+     "id": "1541038b-91e4-5c1d-aa25-22ad99d3df89",
+     "name": "Northeastern University"
+    }
+   ]
+  },
+  {
+   "keep": "66cd5625-4159-5d54-80b7-f6fc44af662c",
+   "keep_name": "Trinity Washington University",
+   "merge": [
+    {
+     "id": "9107bcf3-7055-5bce-9e09-717c4bd168a1",
+     "name": "Trinity Washington University"
+    }
+   ]
+  },
+  {
+   "keep": "795a0486-ad7c-5052-9963-88a3fd5fc3d9",
+   "keep_name": "Trine University",
+   "merge": [
+    {
+     "id": "36035a4e-f08d-530d-9860-ea0767be1296",
+     "name": "Trine University"
+    }
+   ]
+  },
+  {
+   "keep": "7c249bfb-2a84-5ac5-ae1c-afb48368b645",
+   "keep_name": "Hallmark University",
+   "merge": [
+    {
+     "id": "fbe8f390-70b6-5f25-90a2-069952d62e9d",
+     "name": "Hallmark University"
+    }
+   ]
+  },
+  {
+   "keep": "8c23a995-8007-5ed9-a780-5a8343b18668",
+   "keep_name": "Davis College",
+   "merge": [
+    {
+     "id": "7f31584c-392c-516a-aa0c-f641d263bfbc",
+     "name": "Davis College"
+    }
+   ]
+  },
+  {
+   "keep": "98cc1643-a66a-57fc-961d-7ca89bde65e7",
+   "keep_name": "CUNY Brooklyn College",
+   "merge": [
+    {
+     "id": "993d5ef7-0512-5a4f-a94f-0ee28f9959d1",
+     "name": "CUNY Brooklyn College"
+    }
+   ]
+  },
+  {
+   "keep": "c73aa8d4-48b0-5ee4-b8a6-5b62bfa1ce65",
+   "keep_name": "University of Houston",
+   "merge": [
+    {
+     "id": "3a39d973-a8b5-5808-9512-eabb05f6fcec",
+     "name": "University of Houston"
+    }
+   ]
+  },
+  {
+   "keep": "db279679-e2b1-5f11-b706-e0bdac47ba44",
+   "keep_name": "Willamette University",
+   "merge": [
+    {
+     "id": "d9c77312-bf54-5588-8615-19cfd8e3f2de",
+     "name": "Willamette University"
+    }
+   ]
+  },
+  {
+   "keep": "ef1d5468-e91c-5f41-9144-1d200af62f03",
+   "keep_name": "North Carolina Wesleyan University",
+   "merge": [
+    {
+     "id": "918959e7-3164-55fe-8574-79d7ba0eded6",
+     "name": "North Carolina Wesleyan University"
+    }
+   ]
+  },
+  {
+   "keep": "efcd0b52-6611-50e3-9ac7-d9831889822a",
+   "keep_name": "Abilene Christian University",
+   "merge": [
+    {
+     "id": "f9f16466-c4ba-563a-8c2f-b26ee53a6c87",
+     "name": "Abilene Christian University"
+    }
+   ]
+  },
+  {
+   "keep": "f35d6b1e-c56e-59b7-93e0-ccfb5a1e1b8d",
+   "keep_name": "Cal Poly Maritime Academy",
+   "merge": [
+    {
+     "id": "6fd9aabc-c05d-5c84-9d78-faeddddfe581",
+     "name": "Cal Poly Maritime Academy"
+    }
+   ]
+  },
+  {
+   "keep": "fba3a9b3-4ee3-53e5-9d75-a7251045506c",
+   "keep_name": "Indiana Wesleyan University-Marion",
+   "merge": [
+    {
+     "id": "bf2bb7e9-5364-5f72-842a-2d135fcb9f7b",
+     "name": "Indiana Wesleyan University, Marion"
+    }
+   ]
+  }
+ ]
+}

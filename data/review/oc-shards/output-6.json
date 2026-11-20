@@ -1,0 +1,3075 @@
+{
+  "generated": "2026-11-16",
+  "records": [
+    {
+      "id": "39230496-b2fc-53ca-9303-1726c4ac13da",
+      "slug": "harvard-university-39230496",
+      "name": "Harvard University",
+      "country_code": "US",
+      "programmes": {
+        "value": [
+          {
+            "name": "African and African American Studies",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Anthropology",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Applied Math",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Art, Film, and Visual Studies",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Astrophysics",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Biomedical Engineering",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Chemical and Physical Biology",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Chemistry",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Chemistry and Physics",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Classics",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Comparative Literature",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Comparative Study of Religion",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Computer Science",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Earth and Planetary Sciences",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "East Asian Studies",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Economics",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Electrical Engineering",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Energy, Climate, and the Environment",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Engineering Sciences",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "English",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Environmental Science and Engineering",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Environmental Science and Public Policy",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Folklore and Mythology",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Germanic Languages and Literature",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Government",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          }
+        ],
+        "source_url": "https://college.harvard.edu/academics/liberal-arts-sciences/concentrations",
+        "retrieved_at": "2026-11-16"
+      },
+      "documents": {
+        "value": [
+          "Common Application (or Coalition Application) with Harvard supplement",
+          "SAT or ACT scores (exceptional cases may use AP, IB or national exam results)",
+          "Translations of academic credentials or recommendation letters must include untranslated originals and translator details",
+          "English proficiency tests are not required for first-year applicants"
+        ],
+        "source_url": "https://college.harvard.edu/admissions/apply/international-applicants",
+        "retrieved_at": "2026-11-16"
+      },
+      "notes": [
+        "Programmes = Harvard College concentrations (majors); faculty, duration and requirements not stated on the concentrations page, so left null."
+      ]
+    },
+    {
+      "id": "22222222-2222-4222-8222-222222222222",
+      "slug": "mit",
+      "name": "Massachusetts Institute of Technology",
+      "country_code": "US",
+      "programmes": {
+        "value": [
+          {
+            "name": "Aerospace Engineering (16)",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "African and African Diaspora Studies (21)",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "American Studies (21)",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Ancient and Medieval Studies (21)",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Anthropology (21A)",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Archaeology and Materials (3-C)",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Architecture (4)",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Art and Design (4-B)",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Artificial Intelligence and Decision Making (6-4)",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Asian and Asian Diaspora Studies (21)",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Biological Engineering (20)",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Biology (7)",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Brain and Cognitive Sciences (9)",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Business Analytics (15-2)",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Chemical Engineering (10)",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Chemical-Biological Engineering (10-B)",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Chemistry (5)",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Chemistry and Biology (5-7)",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Civil and Environmental Engineering (1-ENG)",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Climate System Science and Engineering (1-12)",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Comparative Media Studies (CMS)",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Computation and Cognition (6-9)",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Computer Science and Engineering (6-3)",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Computer Science and Molecular Biology (6-7)",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Computer Science, Economics, and Data Science (6-14)",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          }
+        ],
+        "source_url": "https://mitadmissions.org/discover/the-mit-education/majors-minors/",
+        "retrieved_at": "2026-11-16"
+      },
+      "documents": {
+        "value": [
+          "Secondary School Report with transcript sent by high school counselor (three years of grades)",
+          "Predicted grades accepted if final grades not yet available",
+          "SAT or ACT required (paper or digital SAT accepted)",
+          "All application materials in English; translations by a professional service or teacher, not the applicant",
+          "English proficiency results strongly recommended for non-native speakers (under five years of English)"
+        ],
+        "source_url": "https://mitadmissions.org/apply/firstyear/international/",
+        "retrieved_at": "2026-11-16"
+      },
+      "notes": [
+        "Programmes are MIT course numbers from the admissions majors list; faculty, duration and requirements not stated, so left null.",
+        "English score minimums are on MIT's Tests & scores page, not fetched."
+      ]
+    },
+    {
+      "id": "11111111-1111-4111-8111-111111111111",
+      "slug": "stanford",
+      "name": "Stanford University",
+      "country_code": "US",
+      "programmes": {
+        "value": [
+          {
+            "name": "Aeronautics and Astronautics",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "African and African American Studies",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "African Studies",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "American Studies",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Anthropology",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Applied Physics",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Archaeology",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Art History",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Art Practice",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Asian American Studies",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Atmosphere/Energy",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Bioengineering",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Biology",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Biomechanical Engineering",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Biomedical Computation",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Chemical Engineering",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Chemistry",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Chicana/o - Latina/o Studies",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "China Studies",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Civil Engineering",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Classics",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Communication",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Community Health and Prevention Research",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Comparative Literature",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Computer Science",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          }
+        ],
+        "source_url": "https://majors.stanford.edu/majors",
+        "retrieved_at": "2026-11-16"
+      },
+      "documents": {
+        "value": [
+          "SAT or ACT required for fall 2026 and later",
+          "Transcripts and recommendations translated into English (applicant may not translate them)",
+          "Secondary school diploma required by enrollment, not at application",
+          "English proficiency exams not required"
+        ],
+        "source_url": "https://admission.stanford.edu/apply/international/index.html",
+        "retrieved_at": "2026-11-16",
+        "method": "search snippet - verify"
+      },
+      "notes": [
+        "Documents from a search snippet of the Stanford international page, not a fetched page; verify.",
+        "Programmes from the Stanford majors page (first 25 of the list shown)."
+      ]
+    },
+    {
+      "id": "6f13f9e9-cf5f-56ad-8384-39a9dc592d58",
+      "slug": "princeton-university-6f13f9e9",
+      "name": "Princeton University",
+      "country_code": "US",
+      "programmes": {
+        "value": null,
+        "source_url": "https://ua.princeton.edu/fields-study",
+        "retrieved_at": "2026-11-16",
+        "note": "ua.princeton.edu returned HTTP 403 (bot protection); not retrieved"
+      },
+      "documents": {
+        "value": [
+          "SAT or ACT required",
+          "TOEFL, IELTS Academic or PTE Academic required if the school does not teach in English"
+        ],
+        "source_url": "https://www.princeton.edu/admission-aid/international-students",
+        "retrieved_at": "2026-11-16",
+        "method": "search snippet - verify"
+      },
+      "notes": [
+        "Princeton programme list not retrieved: official page returned 403.",
+        "Document line is from a search snippet (page about 446 days old per snippet); verify."
+      ]
+    },
+    {
+      "id": "e67501b3-2e87-5598-b9e3-e28fe4101f68",
+      "slug": "university-of-california-berkeley-e67501b3",
+      "name": "University of California-Berkeley",
+      "country_code": "US",
+      "programmes": {
+        "value": null,
+        "source_url": "https://admissions.berkeley.edu/apply-to-berkeley/international-students/requirements-for-international-students/",
+        "retrieved_at": "2026-11-16",
+        "note": "No current official majors list retrieved; only a 2019 guide was seen, excluded as outdated"
+      },
+      "documents": {
+        "value": [
+          "Certificate of completion of secondary school allowing university entry in home country; IGCSE/O-level alone insufficient (e.g. two years A-levels or IB Diploma needed)",
+          "Grades reported exactly as on school records; do not convert",
+          "English proficiency: TOEFL 90, IELTS 6.5, or Duolingo 115 (or other listed alternatives)"
+        ],
+        "source_url": "https://admissions.berkeley.edu/apply-to-berkeley/international-students/requirements-for-international-students/",
+        "retrieved_at": "2026-11-16"
+      },
+      "notes": [
+        "Programme list not retrieved from an official current source."
+      ]
+    },
+    {
+      "id": "99fbcf31-606d-5dac-880e-83ca25acd942",
+      "slug": "california-institute-of-technology-99fbcf31",
+      "name": "California Institute of Technology",
+      "country_code": "US",
+      "programmes": {
+        "value": [
+          {
+            "name": "Applied and Computational Mathematics",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Applied Physics",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Astrophysics",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Bioengineering",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Biology",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Business, Economics, and Management",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Chemical Engineering",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Chemistry",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Computation and Neural Systems",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Computer Science",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Economics",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Electrical Engineering",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Engineering and Applied Science",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "English",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Environmental Science and Engineering",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Geological and Planetary Sciences",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "History",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "History and Philosophy of Science",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Information and Data Sciences",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Interdisciplinary Studies Program",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Materials Science",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Mathematics",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Mechanical Engineering",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Philosophy",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Physics",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          }
+        ],
+        "source_url": "https://www.admissions.caltech.edu/why-caltech/academics/majors-minors",
+        "retrieved_at": "2026-11-16"
+      },
+      "documents": {
+        "value": null,
+        "source_url": "https://www.admissions.caltech.edu/apply/international-applicants",
+        "retrieved_at": "2026-11-16",
+        "note": "HTTP 404 on guessed page; official international page not located"
+      },
+      "notes": [
+        "Programmes = Caltech options (majors) from the admissions majors page; faculty/duration/requirements not stated, left null.",
+        "Documents not retrieved: international page returned 404."
+      ]
+    },
+    {
+      "id": "1ad9abe1-60cd-55ec-b227-5c8001db0475",
+      "slug": "columbia-university-1ad9abe1",
+      "name": "Columbia University in the City of New York",
+      "country_code": "US",
+      "programmes": {
+        "value": [
+          {
+            "name": "African Studies",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "American Studies",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Anthropology",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Applied Mathematics",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Applied Physics",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Archaeological Studies",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Architecture",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Art",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Astronomy",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Astrophysics",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Biomedical Engineering",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Black Studies",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Chemical Engineering",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Chemistry",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Classical Civilization",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Classics",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Cognitive Science",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Comparative Literature",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Computer Science",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Computer Science and Economics",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Computer Science and Mathematics",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Computer Science and Psychology",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Computing and Linguistics",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Computing and the Arts",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Earth and Planetary Sciences",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          }
+        ],
+        "source_url": "https://undergrad.admissions.columbia.edu/academics/college/majors",
+        "retrieved_at": "2026-11-16"
+      },
+      "documents": {
+        "value": [
+          "Official certified English translation for any non-English transcripts or recommendations, submitted with originals",
+          "Self-translated documents not accepted",
+          "School profile included with the secondary school report",
+          "Final transcript with graduation date, sent directly from school, required before enrollment",
+          "External exam results (A Level, IB, AP etc.) only if required to graduate"
+        ],
+        "source_url": "https://undergrad.admissions.columbia.edu/apply/international",
+        "retrieved_at": "2026-11-16",
+        "method": "search snippet - verify",
+        "note": "Official page returned 403 on fetch; text from search snippet"
+      },
+      "notes": [
+        "Documents text is from a search snippet (fetch of official page 403), verify.",
+        "Programmes = first 25 of Columbia College majors list."
+      ]
+    },
+    {
+      "id": "7add53a9-8ddf-5e84-bd4d-a7c8638dbb95",
+      "slug": "university-of-chicago-7add53a9",
+      "name": "University of Chicago",
+      "country_code": "US",
+      "programmes": {
+        "value": null,
+        "source_url": "https://collegeadmissions.uchicago.edu/academics/areas-of-study/",
+        "retrieved_at": "2026-11-16",
+        "note": "Page fetched but returned only a title; majors not extracted. Catalog list at collegecatalog.uchicago.edu not fetched."
+      },
+      "documents": {
+        "value": null,
+        "source_url": "https://collegeadmissions.uchicago.edu/apply/international-applicants/",
+        "retrieved_at": "2026-11-16",
+        "note": "Fetched page had only title; first-year document list not retrieved"
+      },
+      "notes": [
+        "UChicago programmes and documents not retrieved from official pages; left null."
+      ]
+    },
+    {
+      "id": "0a670c6d-e20a-527f-851b-e2c1306cce70",
+      "slug": "yale-university-0a670c6d",
+      "name": "Yale University",
+      "country_code": "US",
+      "programmes": {
+        "value": [
+          {
+            "name": "African Studies",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "American Studies",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Anthropology",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Applied Mathematics",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Applied Physics",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Architecture",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Art",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Astronomy",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Astrophysics",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Biomedical Engineering",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Chemical Engineering",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Chemistry",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Classics",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Cognitive Science",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Comparative Literature",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Computer Science",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Economics",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Electrical Engineering",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "English",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Environmental Engineering",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Environmental Studies",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Ethics, Politics & Economics",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Film and Media Studies",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "French",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "History",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          }
+        ],
+        "source_url": "https://admissions.yale.edu/majors",
+        "retrieved_at": "2026-11-16"
+      },
+      "documents": {
+        "value": [
+          "All application materials in English; non-English transcripts and recommendations need a certified translation",
+          "Self-translated documents not accepted",
+          "English proficiency (TOEFL, IELTS, Cambridge English, DET or InitialView) required if non-native speaker without two years of secondary school taught in English",
+          "SAT or ACT required for first-year applicants; English proficiency scores do not satisfy the testing requirement"
+        ],
+        "source_url": "https://admissions.yale.edu/applying-yale-international-student",
+        "retrieved_at": "2026-11-16"
+      },
+      "notes": [
+        "Programmes = first 25 of Yale College majors list.",
+        "Yale's older international page conflicts on testing exemptions; current wording used."
+      ]
+    },
+    {
+      "id": "8488d97e-a227-5fbd-b7b4-33a1194df723",
+      "slug": "cornell-university-8488d97e",
+      "name": "Cornell University",
+      "country_code": "US",
+      "programmes": {
+        "value": [
+          {
+            "name": "Africana Studies",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Agricultural Sciences",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "American Studies",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Animal Science",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Anthropology",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Applied Economics and Management",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Archaeology",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Architecture",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Asian Studies",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Astronomy",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Atmospheric Sciences",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Biological Engineering",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Biological Sciences",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Biology & Society",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Biomedical Engineering",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Chemical Engineering",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Chemistry",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "China and Asia-Pacific Studies",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Civil Engineering",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Classics",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Cognitive Science",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Communication",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Comparative Literature",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Computer Science",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Design and Environmental Analysis",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          }
+        ],
+        "source_url": "https://www.cornell.edu/academics/fields.cfm",
+        "retrieved_at": "2026-11-16"
+      },
+      "documents": {
+        "value": [
+          "Common Application with Cornell supplement and application fee or waiver",
+          "Official high school transcript including in-progress courses",
+          "School report and counselor recommendation",
+          "Two teacher recommendations",
+          "SAT or ACT scores required for fall 2026 onward",
+          "Portfolio or design supplement where the program requires it",
+          "English language proficiency demonstrated by exam or other criteria"
+        ],
+        "source_url": "https://admissions.cornell.edu/how-to-apply/first-year-applicants/college-and-school-admissions-requirements",
+        "retrieved_at": "2026-11-16"
+      },
+      "notes": [
+        "Programmes = first 25 of Cornell fields of study; faculty and duration not stated, left null.",
+        "English thresholds vary by college (engineering vs Arts & Sciences); not extracted."
+      ]
+    },
+    {
+      "id": "d5ba03bb-65aa-55a6-8234-265ea05144fc",
+      "slug": "university-of-california-los-angeles-d5ba03bb",
+      "name": "University of California-Los Angeles",
+      "country_code": "US",
+      "programmes": {
+        "value": [
+          {
+            "name": "African American Studies (B.A.)",
+            "faculty": "The College",
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Anthropology (B.A.)",
+            "faculty": "The College",
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Asian American Studies (B.A.)",
+            "faculty": "The College",
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Biochemistry (B.S.)",
+            "faculty": "The College",
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Biology (B.S.)",
+            "faculty": "The College",
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Business Economics (B.A.)",
+            "faculty": "The College",
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Chemistry (B.S.)",
+            "faculty": "The College",
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Cognitive Science (B.S.)",
+            "faculty": "The College",
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Communication (B.A.)",
+            "faculty": "The College",
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Economics (B.A.)",
+            "faculty": "The College",
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "English (B.A.)",
+            "faculty": "The College",
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Environmental Science (B.S.)",
+            "faculty": "The College",
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "History (B.A.)",
+            "faculty": "The College",
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Linguistics (B.A.)",
+            "faculty": "The College",
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Mathematics (B.S.)",
+            "faculty": "The College",
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Neuroscience (B.S.)",
+            "faculty": "The College",
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Philosophy (B.A.)",
+            "faculty": "The College",
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Physics (B.S.)",
+            "faculty": "The College",
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Political Science (B.A.)",
+            "faculty": "The College",
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Psychology (B.A.)",
+            "faculty": "The College",
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Sociology (B.A.)",
+            "faculty": "The College",
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Statistics and Data Science (B.S.)",
+            "faculty": "The College",
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Computer Science (B.S.)",
+            "faculty": "Samueli School of Engineering",
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Electrical Engineering (B.S.)",
+            "faculty": "Samueli School of Engineering",
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Mechanical Engineering (B.S.)",
+            "faculty": "Samueli School of Engineering",
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Public Affairs (B.A.)",
+            "faculty": "Luskin School of Public Affairs",
+            "years": null,
+            "requires": null
+          }
+        ],
+        "source_url": "https://admission.ucla.edu/apply/majors",
+        "retrieved_at": "2026-11-16",
+        "note": "First 25 of the 140+ programmes listed on the page, in page order; duration and per-programme requirements are not stated on the fetched page."
+      },
+      "documents": {
+        "value": [
+          "UC Application (online, via UC Application portal)",
+          "Secondary school records showing subjects taken and grades received, plus any national/government certificates",
+          "External exam results reported in the UC Application's International External Exams section",
+          "English proficiency proof if English was not the language of instruction and fewer than 3 years of English study: TOEFL iBT, IELTS (7.5+), or Duolingo (135+) per UCLA minimums",
+          "Proof of sufficient funds (page lists about $80,739 for Fall 2026 plus $5,000 recommended)",
+          "Medical insurance for non-immigrant visa holders (on enrollment)"
+        ],
+        "source_url": "https://admission.ucla.edu/international",
+        "retrieved_at": "2026-11-16",
+        "note": "Transcripts are not sent at application; admitted applicants receive instructions in the admission packet. SAT/ACT not considered."
+      },
+      "notes": [
+        "Official pages fetched 2026-11-16 via WebFetch. Per-programme 'requires' not published on the majors page."
+      ]
+    },
+    {
+      "id": "894119e1-40c1-5589-8677-e1ed97388e59",
+      "slug": "university-of-pennsylvania-894119e1",
+      "name": "University of Pennsylvania",
+      "country_code": "US",
+      "programmes": {
+        "value": [
+          {
+            "name": "Africana Studies (BA)",
+            "faculty": "College of Arts and Sciences",
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Anthropology (BA)",
+            "faculty": "College of Arts and Sciences",
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Biochemistry (BA)",
+            "faculty": "College of Arts and Sciences",
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Biology (BA)",
+            "faculty": "College of Arts and Sciences",
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Chemistry (BA)",
+            "faculty": "College of Arts and Sciences",
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Cognitive Science (BA)",
+            "faculty": "College of Arts and Sciences",
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Communication (BA)",
+            "faculty": "College of Arts and Sciences",
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Economics (BA)",
+            "faculty": "College of Arts and Sciences",
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "English (BA)",
+            "faculty": "College of Arts and Sciences",
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "History (BA)",
+            "faculty": "College of Arts and Sciences",
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Mathematics (BA)",
+            "faculty": "College of Arts and Sciences",
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Neuroscience (BA)",
+            "faculty": "College of Arts and Sciences",
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Philosophy (BA)",
+            "faculty": "College of Arts and Sciences",
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Physics (BA)",
+            "faculty": "College of Arts and Sciences",
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Political Science (BA)",
+            "faculty": "College of Arts and Sciences",
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Psychology (BA)",
+            "faculty": "College of Arts and Sciences",
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Sociology (BA)",
+            "faculty": "College of Arts and Sciences",
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Artificial Intelligence (BSE)",
+            "faculty": "Penn Engineering",
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Bioengineering (BSE)",
+            "faculty": "Penn Engineering",
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Chemical and Biomolecular Engineering (BSE)",
+            "faculty": "Penn Engineering",
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Computer Engineering (BSE)",
+            "faculty": "Penn Engineering",
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Computer Science (BSE)",
+            "faculty": "Penn Engineering",
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Electrical Engineering (BSE)",
+            "faculty": "Penn Engineering",
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Materials Science and Engineering (BSE)",
+            "faculty": "Penn Engineering",
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Mechanical Engineering and Applied Mechanics (BSE)",
+            "faculty": "Penn Engineering",
+            "years": null,
+            "requires": null
+          }
+        ],
+        "source_url": "https://admissions.upenn.edu/academics/exploring-academics/majors-minors",
+        "retrieved_at": "2026-11-16",
+        "note": "First 25 of ~70 majors listed, in page order; durations and per-programme requirements not stated on the page."
+      },
+      "documents": {
+        "value": [
+          "Common App or Coalition Application (own application)",
+          "Teacher and school-official materials requested through the application",
+          "Official English translations of any non-English documents",
+          "Grades from all four years of secondary school (multiple transcripts if more than one school)",
+          "Predicted external exam results if the programme will not release final results before the deadline; final exam results before enrolment",
+          "Certified copies of national exam results if required for the pre-university programme (e.g. IGCSE, SPM)",
+          "English test (TOEFL code 2926, IELTS Academic, or Duolingo) unless exempt; official scores sent by the testing agency; IELTS Indicator, IELTS One Retake and MyBest TOEFL not accepted; tests taken on/after 1 Apr 2025 for 2026-27 cycle; no exact minimum stated"
+        ],
+        "source_url": "https://admissions.upenn.edu/how-to-apply/international-applicants/guidelines",
+        "retrieved_at": "2026-11-16"
+      },
+      "notes": [
+        "Official pages fetched 2026-11-16. Per-programme requirements and exact English minimums not published on fetched pages."
+      ]
+    },
+    {
+      "id": "f5c17f3c-ac83-5193-8c71-641147ad926c",
+      "slug": "johns-hopkins-university-f5c17f3c",
+      "name": "Johns Hopkins University",
+      "country_code": "US",
+      "programmes": {
+        "value": [
+          {
+            "name": "Africana Studies",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Anthropology",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Applied Mathematics and Statistics",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Archaeology",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Biology",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Biomedical Engineering",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Biophysics",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Chemical and Biomolecular Engineering",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Chemistry",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Civil Engineering",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Classics",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Cognitive Science",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Computer Engineering",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Computer Science",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Economics",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Electrical Engineering",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Environmental Engineering",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Environmental Science",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Earth and Planetary Sciences",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "History",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Materials Science and Engineering",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Mechanical Engineering",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Molecular and Cellular Biology",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Neuroscience",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Philosophy",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Physics",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          }
+        ],
+        "source_url": "https://apply.jhu.edu/academics/majors-minors-programs/",
+        "retrieved_at": "2026-11-16",
+        "note": "First 25 of ~60 majors on page, in page order; school, duration and requirements not shown on the page."
+      },
+      "documents": {
+        "value": [
+          "English proficiency test (TOEFL iBT, IELTS, Duolingo English Test or Cambridge English) recommended if primary language is not English or no English-medium school in the last 3 years; JHU page cites competitive levels, not hard cutoffs (TOEFL iBT 5 total, IELTS 7.0 each band, DET 120+, Cambridge C1 185+)",
+          "SAT or ACT: submit only if SAT EBRW below 690 or ACT Reading and English both below 30 (per JHU standardized testing page)"
+        ],
+        "source_url": "https://apply.jhu.edu/how-to-apply/application-deadlines-requirements/standardized-testing/",
+        "retrieved_at": "2026-11-16",
+        "note": "JHU international-applicants page returned 404; transcript and school-report requirements not found on fetched pages."
+      },
+      "notes": [
+        "Undergrad international documents page not retrieved (404); list incomplete."
+      ]
+    },
+    {
+      "id": "5d324277-c7c7-52eb-9d99-03367f122d16",
+      "slug": "university-of-washington-5d324277",
+      "name": "University of Washington-Seattle Campus",
+      "country_code": "US",
+      "programmes": {
+        "value": [
+          {
+            "name": "Anthropology",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Applied Mathematics",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Astronomy",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Atmospheric and Climate Science",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Biochemistry",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Bioengineering",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Biology",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Chemical Engineering",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Chemistry",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Civil Engineering",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Communication",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Computer Engineering",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Computer Science",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Economics",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Electrical & Computer Engineering",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Environmental Science & Terrestrial Resource Management",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Geography",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "History",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Informatics",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Linguistics",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Materials Science & Engineering",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Mathematics",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Mechanical Engineering",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Neuroscience",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Nursing",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Philosophy",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Physics",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          }
+        ],
+        "source_url": "https://admit.washington.edu/academics/majors/",
+        "retrieved_at": "2026-11-16",
+        "note": "First 25 of ~110 majors listed, in page order; admission criteria for capacity-constrained majors (e.g. Computer Science, Informatics, Nursing, Engineering) differ and are not detailed here."
+      },
+      "documents": {
+        "value": [
+          "Official TOEFL or IELTS score that meets the UW minimum (minimum score not stated on the first-year page; see the UW English proficiency page)",
+          "Do not send transcripts until requested by the Office of Admissions; admitted applicants who confirm enrolment must send final transcripts"
+        ],
+        "source_url": "https://admit.washington.edu/apply/first-year/",
+        "retrieved_at": "2026-11-16",
+        "note": "Funds requirement, application form and other documents not covered on the fetched page."
+      },
+      "notes": [
+        "UW international pages fetched 2026-11-16; English-proficiency minimum page not fetched."
+      ]
+    },
+    {
+      "id": "e48a723c-68b4-560e-b4a0-09be01682853",
+      "slug": "northwestern-university-e48a723c",
+      "name": "Northwestern University",
+      "country_code": "US",
+      "programmes": {
+        "value": [
+          {
+            "name": "Applied Mathematics",
+            "faculty": "McCormick School of Engineering",
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Artificial Intelligence",
+            "faculty": "McCormick School of Engineering",
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Biomedical Engineering",
+            "faculty": "McCormick School of Engineering",
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Chemical Engineering",
+            "faculty": "McCormick School of Engineering",
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Civil Engineering",
+            "faculty": "McCormick School of Engineering",
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Computer Science (BS)",
+            "faculty": "McCormick School of Engineering",
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Electrical Engineering",
+            "faculty": "McCormick School of Engineering",
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Environmental Engineering",
+            "faculty": "McCormick School of Engineering",
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Industrial Engineering",
+            "faculty": "McCormick School of Engineering",
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Materials Science and Engineering (BS)",
+            "faculty": "McCormick School of Engineering",
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Mechanical Engineering",
+            "faculty": "McCormick School of Engineering",
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Anthropology",
+            "faculty": "Weinberg College of Arts and Sciences",
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Biological Sciences",
+            "faculty": "Weinberg College of Arts and Sciences",
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Chemistry",
+            "faculty": "Weinberg College of Arts and Sciences",
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Cognitive Science",
+            "faculty": "Weinberg College of Arts and Sciences",
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Data Science",
+            "faculty": "Weinberg College of Arts and Sciences",
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Economics",
+            "faculty": "Weinberg College of Arts and Sciences",
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "English: Literature",
+            "faculty": "Weinberg College of Arts and Sciences",
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "History",
+            "faculty": "Weinberg College of Arts and Sciences",
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Mathematics",
+            "faculty": "Weinberg College of Arts and Sciences",
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Neuroscience",
+            "faculty": "Weinberg College of Arts and Sciences",
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Philosophy",
+            "faculty": "Weinberg College of Arts and Sciences",
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Physics and Astronomy",
+            "faculty": "Weinberg College of Arts and Sciences",
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Political Science",
+            "faculty": "Weinberg College of Arts and Sciences",
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Psychology",
+            "faculty": "Weinberg College of Arts and Sciences",
+            "years": null,
+            "requires": null
+          }
+        ],
+        "source_url": "https://admissions.northwestern.edu/academics/majors-minors/",
+        "retrieved_at": "2026-11-16",
+        "note": "First 25 of ~80 majors on page. Durations and per-programme requirements not stated."
+      },
+      "documents": {
+        "value": [
+          "Certified English translations of all original transcripts for foreign academic credentials (any translation service)",
+          "English proficiency proof if primary language or secondary schooling is not English: Duolingo English Test, IELTS (incl. IELTS Indicator), or TOEFL iBT (Northwestern TOEFL code 1565); scores officially sent by the testing organisation, not self-reported; no published minimum for first-year applicants",
+          "Secondary-school counselor/administrator recommendation and academic teacher recommendation"
+        ],
+        "source_url": "https://admissions.northwestern.edu/faqs/international-applicants/",
+        "retrieved_at": "2026-11-16"
+      },
+      "notes": [
+        "Official FAQ fetched 2026-11-16. International applicants follow the same application process as domestic applicants (Common App or Coalition)."
+      ]
+    },
+    {
+      "id": "a13696ab-e8a7-55d8-b39d-e25eba98c101",
+      "slug": "university-of-california-irvine-a13696ab",
+      "name": "University of California-Irvine",
+      "country_code": "US",
+      "programmes": {
+        "value": null,
+        "note": "Official UCI undergraduate majors list could not be retrieved (catalogue PDF returned 503 and ECONNREFUSED; admissions majors page returned no list). Not guessed."
+      },
+      "documents": {
+        "value": [
+          "Secondary education completion with certificate equivalent to a US high school diploma",
+          "English proficiency: TOEFL iBT minimum 4.5 (effective Jan 2026; 80 before), IELTS 6.5+, or Duolingo English Test 115+",
+          "Official score reports required on admission to verify application-reported scores",
+          "Academic English Placement Exam on arrival if native language is not English"
+        ],
+        "source_url": "https://admissions.uci.edu/apply/international-students.php",
+        "retrieved_at": "2026-11-16",
+        "note": "UCI does not request official transcripts until admitted. No financial-documentation requirement on page; no financial aid for international students."
+      },
+      "notes": [
+        "Programme list not retrieved."
+      ]
+    },
+    {
+      "id": "027e062a-68f8-5a97-b74a-4ad155208f4a",
+      "slug": "university-of-arizona-027e062a",
+      "name": "University of Arizona",
+      "country_code": "US",
+      "programmes": {
+        "value": null,
+        "note": "Official undergraduate majors list not retrieved (degree-search page returned no list; catalog page 404). Not guessed."
+      },
+      "documents": {
+        "value": [
+          "All documents submitted with the online application must be in English; certified English translation recommended, and final official transcripts must be translated before enrolment",
+          "English proficiency: TOEFL iBT 79 (before Jan 2026) or 4 (after Jan 2026 as listed), IELTS Academic 6.5, or Duolingo 110; scores must be officially sent and dated within 2 years of application",
+          "Some colleges (Engineering, Nursing, Fine Arts, Law, Eller) have additional GPA or coursework requirements"
+        ],
+        "source_url": "https://www.arizona.edu/admissions/undergraduate/international",
+        "retrieved_at": "2026-11-16",
+        "note": "Transcript and financial requirements not stated on that page."
+      },
+      "notes": [
+        "Programme list not retrieved; English minimums as printed on the official page (TOEFL figure as printed)."
+      ]
+    },
+    {
+      "id": "7297ee6e-31d9-5f06-a506-de580b9c5c1d",
+      "slug": "george-washington-university-7297ee6e",
+      "name": "George Washington University",
+      "country_code": "US",
+      "programmes": {
+        "value": null,
+        "note": "GWU majors page could not be fetched (fetch tool refused the domain). Search snippets mention Engineering and Applied Science, Business, Corcoran and Public Health majors, not verified."
+      },
+      "documents": {
+        "value": null,
+        "note": "Official page refused by fetch tool; search snippet only (method: search snippet - verify): Common App or Coalition, personal essay, counselor or teacher recommendation, English proof for non-native speakers, $80 fee, Funding Your GW Education form, full secondary transcripts with certified English translations. English minimums per snippet: TOEFL 90 old / 4.5 new, IELTS 6.5, PTE 61, Duolingo 120."
+      },
+      "notes": [
+        "Search snippet only, method: search snippet - verify."
+      ]
+    },
+    {
+      "id": "61ee643d-d90b-504a-9170-4595e9e045e3",
+      "slug": "boston-college-61ee643d",
+      "name": "Boston College",
+      "country_code": "US",
+      "programmes": {
+        "value": null,
+        "note": "Majors page (bc.edu) could not be fetched: fetch tool refused the domain. Search snippets name Morrissey College of Arts & Sciences majors, not verified against the page."
+      },
+      "documents": {
+        "value": null,
+        "note": "Official page refused by fetch tool; search snippet only: TOEFL/IELTS/Duolingo required for non-native speakers, exemption at SAT EBRW 650 or ACT English 29; recommended minimums IELTS 7.5, DET 130, TOEFL iBT 100 (5.0 new scale). Unverified."
+      },
+      "notes": [
+        "Search snippet only, method: search snippet - verify."
+      ]
+    },
+    {
+      "id": "14c47a79-b87d-511b-b436-245ee5be5e2e",
+      "slug": "virginia-commonwealth-university-14c47a79",
+      "name": "Virginia Commonwealth University",
+      "country_code": "US",
+      "programmes": {
+        "value": null,
+        "note": "Undergraduate majors list not retrieved (search budget exhausted before the majors list was found). Not guessed."
+      },
+      "documents": {
+        "value": [
+          "Copy of passport or visa documents",
+          "Official or officially certified grade reports for all secondary and higher school studies, with official English translation",
+          "Original or officially certified diplomas, certificates and national exam results",
+          "School records showing attendance dates, course list with grades, degrees and diplomas",
+          "Proof of English proficiency (waiver or test score)",
+          "$75 non-refundable application fee",
+          "Program-specific materials (e.g. SAT/ACT for mechanical engineering; SAT or GRE for nursing)"
+        ],
+        "source_url": "https://admissions.vcu.edu/apply-to-vcu/international/undergraduate/",
+        "retrieved_at": "2026-11-16"
+      },
+      "notes": [
+        "Programme list not retrieved; English minimums captured in notes for reference."
+      ],
+      "english_minimums": {
+        "value": "TOEFL iBT 4.0 (taken on/after 21 Jan 2026; 70 before); IELTS 6.0; Duolingo 105; PTE 53; SAT EBRW 500; ACT English 16",
+        "source_url": "https://admissions.vcu.edu/apply-to-vcu/international/undergraduate/",
+        "retrieved_at": "2026-11-16"
+      }
+    },
+    {
+      "id": "210dada7-d1b4-537c-b8ad-8c58326af358",
+      "slug": "temple-university-210dada7",
+      "name": "Temple University",
+      "country_code": "US",
+      "programmes": {
+        "value": null,
+        "note": "Majors list not retrieved (search budget exhausted). Not guessed."
+      },
+      "documents": {
+        "value": [
+          "Common App (Early Action or Regular Decision) with $55 fee unless waived",
+          "Official secondary school transcripts with English translations, from every secondary school attended",
+          "English proficiency score unless exempt",
+          "Proof of secondary school graduation (after admission and deposit)",
+          "Letters of recommendation optional (max two)",
+          "Audition, interview or portfolio only for certain Boyer, Tyler and Theater/Film/Media majors"
+        ],
+        "source_url": "https://admissions.temple.edu/apply/international-students/first-year-international-students",
+        "retrieved_at": "2026-11-16"
+      },
+      "notes": [
+        "Majors list not retrieved (search budget exhausted). Fund/financial documents not on fetched page."
+      ],
+      "english_minimums": {
+        "value": "TOEFL iBT 4.0 new scale (79 old; institution code 2906); IELTS 6.0; Duolingo 110; PTE Academic 53; Cambridge C1/C2 180; MET 56; LanguageCert 65; SAT EBRW 550",
+        "source_url": "https://admissions.temple.edu/apply/international-students/first-year-international-students",
+        "retrieved_at": "2026-11-16"
+      }
+    },
+    {
+      "id": "f973d34b-aa07-516d-9d50-a071413a3eca",
+      "slug": "missouri-university-of-science-and-technology-f973d34b",
+      "name": "Missouri University of Science and Technology",
+      "country_code": "US",
+      "programmes": {
+        "value": null,
+        "academic_year": "2027 intake (page undated)",
+        "note": "Only older data found: catalog degree-programs page timed out and the connection was refused on retry; the degrees page returned a single item. Programme list not retrieved; not guessed."
+      },
+      "documents": {
+        "value": [
+          "Official transcripts sent directly from the issuing institution (unofficial acceptable for decision; official required after offer)",
+          "WES evaluation may be requested (US equivalency evaluations only accepted)",
+          "Statement verifying financial support required to receive I-20 or DS-2019 (after admission)"
+        ],
+        "academic_year": "2027 intake (page undated)",
+        "source_url": "https://futurestudents.mst.edu/admissions/international/freshmen/",
+        "retrieved_at": "2026-11-16"
+      },
+      "notes": [
+        "Programme list not retrieved. Pathway Program minimums also published (TOEFL 3.5 / IELTS 5.5 / PTE 50 / Duolingo 105)."
+      ],
+      "english_minimums": {
+        "value": "TOEFL iBT 4.5 (80 if taken before 1 Jan 2026); IELTS 6.5; PTE 58; Duolingo 115; Cambridge B2/C1/C2 176; ACT English+Reading 37; SAT ERW 500; IB English HL 5; AP English Language 3",
+        "academic_year": "2027 intake; TOEFL cutoff dated 1 Jan 2026",
+        "source_url": "https://futurestudents.mst.edu/admissions/international/freshmen/",
+        "retrieved_at": "2026-11-16"
+      }
+    },
+    {
+      "id": "a5aa5750-d3cd-527d-b00a-33dc6c807b41",
+      "slug": "university-of-toledo-a5aa5750",
+      "name": "University of Toledo",
+      "country_code": "US",
+      "programmes": {
+        "value": null,
+        "academic_year": "2027 intake (page last updated 10/5/26)",
+        "note": "Majors list not on fetched pages; a search snippet describes pathways (pre-med, pre-law, pre-dental, pre-vet) rather than majors. No programme list retrieved; not guessed."
+      },
+      "documents": {
+        "value": [
+          "Official English translation of transcripts (high school or university)",
+          "English language proficiency proof (test options below)",
+          "Proof of financial resources sufficient for at least one full year of study (visa requirement)",
+          "Student visa from a U.S. Embassy or Consulate for full-time study"
+        ],
+        "academic_year": "2027 intake (page last updated 10/5/26)",
+        "source_url": "https://www.utoledo.edu/admission/international/englishlanguageproficiency/",
+        "retrieved_at": "2026-11-16"
+      },
+      "notes": [
+        "Freshman GPA and test thresholds by college are on utoledo.edu freshman page (not repeated here)."
+      ],
+      "english_minimums": {
+        "value": "TOEFL iBT 71 before 21 Jan 2026 / '4' after (flagged as possible typo, confirm); IELTS 6.0; PTE Academic 48; Duolingo 105; tests older than two years not accepted",
+        "academic_year": "2027 intake",
+        "source_url": "https://www.utoledo.edu/admission/international/englishlanguageproficiency/",
+        "retrieved_at": "2026-11-16"
+      }
+    },
+    {
+      "id": "141123a2-d2ef-52d9-b8f2-f6c881ac0aef",
+      "slug": "university-of-texas-at-arlington-141123a2",
+      "name": "The University of Texas at Arlington",
+      "country_code": "US",
+      "programmes": {
+        "value": null,
+        "academic_year": "2027 intake (page undated)",
+        "note": "Majors list not on fetched pages; catalog.uta.edu majors section not retrieved. Not guessed."
+      },
+      "documents": {
+        "value": [
+          "Common App (recommended) or ApplyTexas, with application fee",
+          "Non-U.S. transcripts uploaded for Foreign Credentials Service of America (FCSA) review",
+          "Proof of English skill if native language is not English (test options below)",
+          "Financial statement form with supporting documents (for I-20)",
+          "Transfer from F-1 status: school transfer notification before UTA initiates transfer"
+        ],
+        "academic_year": "2027 intake (page undated; financial form file name suggests 2026-27 cycle)",
+        "source_url": "https://www.uta.edu/admissions/apply/international-undergraduate/international-freshmen",
+        "retrieved_at": "2026-11-16"
+      },
+      "notes": [
+        "Programme list not retrieved."
+      ],
+      "english_minimums": {
+        "value": "TOEFL 4 (6-point scale) or 79 (120-point scale); IELTS 6.5; Duolingo 100 (105 for engineering)",
+        "academic_year": "2027 intake (page undated)",
+        "source_url": "https://www.uta.edu/admissions/apply/international-undergraduate/international-freshmen",
+        "retrieved_at": "2026-11-16"
+      }
+    },
+    {
+      "id": "9e6672b1-6e90-5460-bf59-91be34e74191",
+      "slug": "suny-downstate-health-sciences-university-9e6672b1",
+      "name": "SUNY Downstate Health Sciences University",
+      "country_code": "US",
+      "programmes": {
+        "value": null,
+        "note": "Only older data found: no undergraduate programme list or undergraduate international admissions page located (search returned graduate and professional pages only). Not guessed."
+      },
+      "documents": {
+        "value": null,
+        "note": "Not found for undergraduates. Search snippets (method: search snippet - verify, undated) mention a credential evaluation from a NACES agency for foreign college work and IELTS 6.5 for Health Professions and Nursing programmes. Not verified on an official undergraduate page."
+      },
+      "notes": [
+        "Undergraduate scope unclear: SUNY Downstate is mainly a health-sciences graduate school; no undergraduate page fetched."
+      ]
+    },
+    {
+      "id": "175cb34b-02e2-5db8-8b75-d212fce91b9b",
+      "slug": "university-of-massachusetts-boston-175cb34b",
+      "name": "University of Massachusetts-Boston",
+      "country_code": "US",
+      "programmes": {
+        "value": null,
+        "academic_year": "2027 intake",
+        "note": "Majors list page (catalog.umb.edu) returned HTTP 403 (bot protection); not retrieved. Search snippet lists Biology, Computer Science, Economics, Nursing, Management and Psychology, not verified."
+      },
+      "documents": {
+        "value": [
+          "Completed application",
+          "$60 application fee",
+          "Official high school record, leaving certificate and/or graduation examination results (or notarized copies)",
+          "Academic recommendation letter from school-based counsellor and/or teacher",
+          "500-word essay",
+          "Test scores (SAT/ACT optional under test-optional policy)"
+        ],
+        "academic_year": "2027 intake (page undated)",
+        "source_url": "https://www.umb.edu/admissions/international-students/apply-as-a-international-student/first-year/",
+        "retrieved_at": "2026-11-16"
+      },
+      "notes": [
+        "Programme list blocked (403)."
+      ],
+      "english_minimums": {
+        "value": "TOEFL 4 (taken after 21 Jan 2026) / 79 (before); IELTS 6.0; Duolingo 105; SAT ERW 480+; ACT Reading+English 34+",
+        "academic_year": "2027 intake; TOEFL cutoff 21 Jan 2026",
+        "source_url": "https://www.umb.edu/admissions/international-students/apply-as-a-international-student/first-year/",
+        "retrieved_at": "2026-11-16"
+      }
+    },
+    {
+      "id": "99c5a4b8-9a75-5635-8161-85f97f03dc3f",
+      "slug": "fordham-university-99c5a4b8",
+      "name": "Fordham University",
+      "country_code": "US",
+      "programmes": {
+        "value": null,
+        "note": "Majors list not retrieved (only the professional studies school list was found in search, not the Rose Hill / Lincoln Center list). Not guessed."
+      },
+      "documents": {
+        "value": null,
+        "academic_year": "2027 intake (page undated)",
+        "note": "Official international page redirects to a login page (loginp.fordham.edu) and was not followed. Not retrieved."
+      },
+      "notes": [
+        "Fetch blocked by login redirect; not followed."
+      ],
+      "english_minimums": {
+        "value": null,
+        "note": "Not retrieved (login redirect). Search snippet only: TOEFL iBT 4.5+ from Jan 2026, IELTS 7.0, DET 125, Pearson 65 (unverified)."
+      }
+    },
+    {
+      "id": "eff27116-f29e-5cc0-9d35-ce5bc27b2bad",
+      "slug": "depaul-university-eff27116",
+      "name": "DePaul University",
+      "country_code": "US",
+      "programmes": {
+        "value": null,
+        "note": "Majors list not retrieved: catalog.depaul.edu returned ECONNREFUSED on retry. Search snippet names business, economics, international studies and computing programmes; not verified."
+      },
+      "documents": {
+        "value": [
+          "Official final transcript from the most recently attended institution (for admitted students)",
+          "Proof of immunization (Tetanus/Diphtheria, Measles, Mumps, Rubella)",
+          "$200 non-refundable tuition deposit (freshmen only)",
+          "Common Application for Fall/Winter 2027 freshman entry",
+          "Transcripts/secondary school exams; for countries not on the English-transcript list, official transcripts in native language with word-for-word English translations"
+        ],
+        "academic_year": "2027 intake (page undated)",
+        "source_url": "https://www.depaul.edu/admission/international-admission/admitted-students/undergraduate",
+        "retrieved_at": "2026-11-16"
+      },
+      "notes": [
+        "GPA minimum conflicts across pages (2.75 on one, 2.5 on another); not stated as a documents item."
+      ],
+      "english_minimums": {
+        "value": "TOEFL iBT 80 or 4 (no subsection below 17 or 3.5); IELTS Academic 6.5; Duolingo 115; waiver for qualifying IB English A / AP English Language coursework; Paper TOEFL 59 (PdT) noted",
+        "academic_year": "2027 intake; TOEFL scale change 21 Jan 2026",
+        "source_url": "https://www.depaul.edu/admission/international-admission/freshman",
+        "retrieved_at": "2026-11-16"
+      }
+    },
+    {
+      "id": "33333333-3333-4333-8333-333333333333",
+      "slug": "oxford",
+      "name": "University of Oxford",
+      "country_code": "GB",
+      "programmes": {
+        "value": null,
+        "note": "Official Oxford pages returned HTTP 403 (bot protection). Skipped per rules; not retrieved."
+      },
+      "documents": {
+        "value": null,
+        "note": "Official Oxford international page returned HTTP 403. Not retrieved."
+      },
+      "notes": [
+        "Blocked by site (403); not bypassed."
+      ]
+    },
+    {
+      "id": "5ad45ea9-e51c-59e4-9ef7-6d3768be673c",
+      "slug": "imperial-college-london-5ad45ea9",
+      "name": "Imperial College London",
+      "country_code": "GB",
+      "programmes": {
+        "value": null,
+        "note": "Imperial undergraduate course page returned HTTP 403 (bot protection). Not retrieved."
+      },
+      "documents": {
+        "value": null,
+        "note": "Not retrieved (403)."
+      },
+      "notes": [
+        "Blocked by site (403); not bypassed."
+      ]
+    },
+    {
+      "id": "ae117645-e24c-5269-8ed1-b5b826e53932",
+      "slug": "university-of-cambridge-ae117645",
+      "name": "University of Cambridge",
+      "country_code": "GB",
+      "programmes": {
+        "value": null,
+        "note": "Cambridge course URL tried (cam.ac.uk/study/undergraduate/courses) returned HTTP 404. Correct page not yet found; no search budget left to locate it."
+      },
+      "documents": {
+        "value": null,
+        "note": "Not retrieved."
+      },
+      "notes": [
+        "Correct URL not found."
+      ]
+    },
+    {
+      "id": "4b7862dc-7567-5f81-af58-c01144412a88",
+      "slug": "university-college-london-4b7862dc",
+      "name": "University College London",
+      "country_code": "GB",
+      "programmes": {
+        "value": null,
+        "note": "UCL undergraduate degree page returned HTTP 403 (bot protection). Not retrieved."
+      },
+      "documents": {
+        "value": null,
+        "note": "Not retrieved (403)."
+      },
+      "notes": [
+        "Blocked by site (403); not bypassed."
+      ]
+    },
+    {
+      "id": "f2f2a71c-abeb-5dc7-b18b-aa8b00611b0a",
+      "slug": "university-of-edinburgh-f2f2a71c",
+      "name": "University of Edinburgh",
+      "country_code": "GB",
+      "programmes": {
+        "value": [
+          {
+            "name": "Accounting and Business MA (Hons)",
+            "faculty": null,
+            "years": null,
+            "requires": null,
+            "academic_year": "2027 entry"
+          },
+          {
+            "name": "Accounting and Finance MA (Hons)",
+            "faculty": null,
+            "years": null,
+            "requires": null,
+            "academic_year": "2027 entry"
+          },
+          {
+            "name": "Acoustics and Music Technology BSc (Hons)",
+            "faculty": null,
+            "years": null,
+            "requires": null,
+            "academic_year": "2027 entry"
+          },
+          {
+            "name": "Anatomy and Development BSc (Hons)",
+            "faculty": null,
+            "years": null,
+            "requires": null,
+            "academic_year": "2027 entry"
+          },
+          {
+            "name": "Ancient and Medieval History MA (Hons)",
+            "faculty": null,
+            "years": null,
+            "requires": null,
+            "academic_year": "2027 entry"
+          },
+          {
+            "name": "Ancient History MA (Hons)",
+            "faculty": null,
+            "years": null,
+            "requires": null,
+            "academic_year": "2027 entry"
+          },
+          {
+            "name": "Animation BA (Hons)",
+            "faculty": null,
+            "years": null,
+            "requires": null,
+            "academic_year": "2027 entry"
+          },
+          {
+            "name": "Applied Mathematics BSc (Hons)",
+            "faculty": null,
+            "years": null,
+            "requires": null,
+            "academic_year": "2027 entry"
+          },
+          {
+            "name": "Applied Mathematics MMath (Hons)",
+            "faculty": null,
+            "years": null,
+            "requires": null,
+            "academic_year": "2027 entry"
+          },
+          {
+            "name": "Applied Sport Science BSc (Hons)",
+            "faculty": null,
+            "years": null,
+            "requires": null,
+            "academic_year": "2027 entry"
+          },
+          {
+            "name": "Arabic and Ancient Greek MA (Hons)",
+            "faculty": null,
+            "years": null,
+            "requires": null,
+            "academic_year": "2027 entry"
+          },
+          {
+            "name": "Arabic and Business MA (Hons)",
+            "faculty": null,
+            "years": null,
+            "requires": null,
+            "academic_year": "2027 entry"
+          },
+          {
+            "name": "Arabic and French MA (Hons)",
+            "faculty": null,
+            "years": null,
+            "requires": null,
+            "academic_year": "2027 entry"
+          },
+          {
+            "name": "Arabic and History MA (Hons)",
+            "faculty": null,
+            "years": null,
+            "requires": null,
+            "academic_year": "2027 entry"
+          },
+          {
+            "name": "Arabic and Persian MA (Hons)",
+            "faculty": null,
+            "years": null,
+            "requires": null,
+            "academic_year": "2027 entry"
+          },
+          {
+            "name": "Arabic and Politics MA (Hons)",
+            "faculty": null,
+            "years": null,
+            "requires": null,
+            "academic_year": "2027 entry"
+          },
+          {
+            "name": "Arabic and Social Anthropology MA (Hons)",
+            "faculty": null,
+            "years": null,
+            "requires": null,
+            "academic_year": "2027 entry"
+          },
+          {
+            "name": "Arabic and Spanish MA (Hons)",
+            "faculty": null,
+            "years": null,
+            "requires": null,
+            "academic_year": "2027 entry"
+          },
+          {
+            "name": "Arabic with Islamic and Middle Eastern Studies MA (Hons)",
+            "faculty": null,
+            "years": null,
+            "requires": null,
+            "academic_year": "2027 entry"
+          },
+          {
+            "name": "Archaeology and Ancient History MA (Hons)",
+            "faculty": null,
+            "years": null,
+            "requires": null,
+            "academic_year": "2027 entry"
+          },
+          {
+            "name": "Archaeology and Social Anthropology MA (Hons)",
+            "faculty": null,
+            "years": null,
+            "requires": null,
+            "academic_year": "2027 entry"
+          },
+          {
+            "name": "Archaeology MA (Hons)",
+            "faculty": null,
+            "years": null,
+            "requires": null,
+            "academic_year": "2027 entry"
+          },
+          {
+            "name": "Architectural History and Archaeology MA (Hons)",
+            "faculty": null,
+            "years": null,
+            "requires": null,
+            "academic_year": "2027 entry"
+          },
+          {
+            "name": "Architectural History and Heritage MA (Hons)",
+            "faculty": null,
+            "years": null,
+            "requires": null,
+            "academic_year": "2027 entry"
+          },
+          {
+            "name": "Architecture BA/MA (Hons)",
+            "faculty": null,
+            "years": null,
+            "requires": null,
+            "academic_year": "2027 entry"
+          }
+        ],
+        "academic_year": "2027 entry",
+        "source_url": "https://study.ed.ac.uk/programmes/undergraduate-a-z",
+        "retrieved_at": "2026-11-16",
+        "note": "First 25 of the A-to-Z list (2027 entry), alphabetical; only the first 100k characters of the page were read. Requirements are per programme in the degree finder, not retrieved. Faculty not shown."
+      },
+      "documents": {
+        "value": null,
+        "note": "Not retrieved: international documents page not fetched. Only the UCAS deadline (13 Jan 2027) was seen in a snippet; deadlines are outside this shard's scope."
+      },
+      "notes": [
+        "Scope limited to programmes and documents."
+      ],
+      "english_minimums": {
+        "value": "Not on fetched page: the page says requirements vary by degree and refers to the degree finder. Snippet: IELTS and TOEFL must be no more than two years old.",
+        "academic_year": "2027 entry",
+        "source_url": "https://study.ed.ac.uk/undergraduate/entry-requirements/english-language",
+        "retrieved_at": "2026-11-16"
+      }
+    },
+    {
+      "id": "01649f44-22e4-5b85-adaa-81f3538aa083",
+      "slug": "king-s-college-london-university-of-london-01649f44",
+      "name": "King's College London, University of London",
+      "country_code": "GB",
+      "programmes": {
+        "value": null,
+        "academic_year": "2027 entry",
+        "note": "Course list not retrieved: search returned only course pages (English BA, English with Creative Writing, Global Media and Languages BA, English & Modern Languages with year abroad). Not guessed."
+      },
+      "documents": {
+        "value": null,
+        "note": "Not retrieved (no international documents page fetched)."
+      },
+      "notes": [
+        "English minimums are the band table only; course-to-band mapping per course page."
+      ],
+      "english_minimums": {
+        "value": "Band A (2027/28 entry): IELTS Academic 7.5 overall, 7.0 each skill; TOEFL iBT (from 21 Jan 2026) 5.5 overall, 5 each skill. Band B: IELTS Academic 7.0 overall, 6.5 each skill; TOEFL iBT (from 21 Jan 2026) 5 overall, 4.5 each skill. Band is set per course; English BA and English with Creative Writing are band B.",
+        "academic_year": "2027/28 entry",
+        "source_url": "https://www.kcl.ac.uk/study/undergraduate/how-to-apply/english-language-requirements",
+        "retrieved_at": "2026-11-16"
+      }
+    },
+    {
+      "id": "44444444-4444-4444-8444-444444444444",
+      "slug": "tum",
+      "name": "Technical University of Munich",
+      "country_code": "DE",
+      "programmes": {
+        "value": [
+          {
+            "name": "Aerospace (B.Sc.)",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Architecture (B.A.)",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Biochemistry (B.Sc.)",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Bioinformatics (B.Sc.)",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Chemical Biotechnology (B.Sc.)",
+            "faculty": null,
+            "years": null,
+            "requires": null
+          }
+        ],
+        "source_url": "https://www.tum.de/en/studies/degree-programs?tx_solr%5Bq%5D=&graduation=Bachelor",
+        "retrieved_at": "2026-11-16",
+        "note": "Only 10 of the list were returned by the fetch; only 'Aerospace (B.Sc.)' is marked 'taught fully in English' on the page. The other 4 shown are NOT verified as English-taught and need checking. Faculty and duration not shown. Incomplete (list paginated)."
+      },
+      "documents": {
+        "value": [
+          "Proof of secondary school education (authentic documents uploaded to TUMonline) - applicants with a non-German-system qualification",
+          "Preliminary documentation (VPD) via uni-assist if no German-system entrance qualification",
+          "Proof of German and/or English language skills depending on programme (levels on linked language-certificate page, not retrieved)"
+        ],
+        "source_url": "https://www.tum.de/en/studies/application/application-info-portal/application-international",
+        "retrieved_at": "2026-11-16",
+        "note": "Language levels and translation rules not on the fetched page."
+      },
+      "notes": [
+        "Partial: programme list paginated, English-taught status verified only for Aerospace."
+      ]
+    },
+    {
+      "id": "be141d50-5df3-5bd2-8b44-744166b2402b",
+      "slug": "middle-east-technical-university-be141d50",
+      "name": "Middle East Technical University",
+      "country_code": "TR",
+      "programmes": {
+        "value": [
+          {
+            "name": "Architecture",
+            "faculty": "Faculty of Architecture",
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "City and Regional Planning",
+            "faculty": "Faculty of Architecture",
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Industrial Design",
+            "faculty": "Faculty of Architecture",
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Biology",
+            "faculty": "Faculty of Arts and Sciences",
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Chemistry",
+            "faculty": "Faculty of Arts and Sciences",
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "History",
+            "faculty": "Faculty of Arts and Sciences",
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Mathematics",
+            "faculty": "Faculty of Arts and Sciences",
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Physics",
+            "faculty": "Faculty of Arts and Sciences",
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Psychology",
+            "faculty": "Faculty of Arts and Sciences",
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Sociology",
+            "faculty": "Faculty of Arts and Sciences",
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Statistics",
+            "faculty": "Faculty of Arts and Sciences",
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Business Administration",
+            "faculty": "Faculty of Economic and Administrative Sciences",
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Economics",
+            "faculty": "Faculty of Economic and Administrative Sciences",
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "International Relations",
+            "faculty": "Faculty of Economic and Administrative Sciences",
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Aerospace Engineering",
+            "faculty": "Faculty of Engineering",
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Chemical Engineering",
+            "faculty": "Faculty of Engineering",
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Civil Engineering",
+            "faculty": "Faculty of Engineering",
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Computer Engineering",
+            "faculty": "Faculty of Engineering",
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Electrical and Electronics Engineering",
+            "faculty": "Faculty of Engineering",
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Industrial Engineering",
+            "faculty": "Faculty of Engineering",
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Mechanical Engineering",
+            "faculty": "Faculty of Engineering",
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Metallurgical and Materials Engineering",
+            "faculty": "Faculty of Engineering",
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Petroleum and Natural Gas Engineering",
+            "faculty": "Faculty of Engineering",
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "Computer Education and Instructional Technology",
+            "faculty": "Faculty of Education",
+            "years": null,
+            "requires": null
+          },
+          {
+            "name": "English Language Teaching",
+            "faculty": "Faculty of Education",
+            "years": null,
+            "requires": null
+          }
+        ],
+        "source_url": "https://www.metu.edu.tr/undergraduate-programs-and-degrees",
+        "retrieved_at": "2026-11-16",
+        "note": "First 25 of the list on the page (Ankara campus, plus joint degrees and the Northern Cyprus campus omitted). The page does not state the language of instruction, so English-taught status is NOT verified for any programme. requires and years not on page."
+      },
+      "documents": {
+        "value": null,
+        "note": "METU international admissions page (iso.metu.edu.tr) was fetched but the document and English-test contents were not present in the fetched text (menu links only). Not verified."
+      },
+      "notes": [
+        "Programme language of instruction unverified; document list still needed."
+      ]
+    }
+  ]
+}

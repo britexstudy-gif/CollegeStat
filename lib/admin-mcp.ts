@@ -1,5 +1,10 @@
 import { z } from "zod";
 import { observationSchema } from "./research";
+import {
+  adminOutputSchemas,
+  adminToolMessages,
+  parseAdminToolResult,
+} from "./admin-tool-results";
 
 export const MCP_VERSION = "2025-06-18";
 const query = z.string().trim().max(160).default("");
@@ -90,6 +95,26 @@ export const adminTools = [
                 pattern: "^https://",
               },
               notes: { type: "string", maxLength: 2000 },
+              evidence: object({
+                scope: { type: "string", maxLength: 500 },
+                population: { type: "string", maxLength: 1000 },
+                reporting_period: { type: "string", maxLength: 100 },
+                publication_year: {
+                  anyOf: [
+                    { type: "integer", minimum: 1900, maximum: 2100 },
+                    { type: "null" },
+                  ],
+                },
+                retrieved_at: { type: "string", format: "date-time" },
+                source_record_id: { type: "string", maxLength: 200 },
+                raw_field: { type: "string", maxLength: 200 },
+                dictionary_url: {
+                  type: "string",
+                  format: "uri",
+                  pattern: "^https://",
+                },
+                license_note: { type: "string", maxLength: 500 },
+              }),
             },
             ["university_id", "metric", "year", "value", "unit", "source_url"],
           ),
@@ -100,6 +125,7 @@ export const adminTools = [
   },
 ].map((t) => ({
   ...t,
+  outputSchema: adminOutputSchemas[t.name as AdminTool],
   annotations: {
     readOnlyHint: t.name !== "stage_observations",
     destructiveHint: false,
@@ -182,10 +208,14 @@ export async function dispatchMCP(input: unknown, run: ToolRunner) {
     };
   try {
     const args = parseTool(call.data.name, call.data.arguments);
-    const data = await run(call.data.name as AdminTool, args);
+    const data = parseAdminToolResult(
+      call.data.name as AdminTool,
+      await run(call.data.name as AdminTool, args),
+    );
+    const structuredContent = { data };
     return reply({
-      content: [{ type: "text", text: JSON.stringify(data) }],
-      structuredContent: { data },
+      content: [{ type: "text", text: JSON.stringify(structuredContent) }],
+      structuredContent,
       isError: false,
     });
   } catch (e) {
@@ -196,9 +226,12 @@ export async function dispatchMCP(input: unknown, run: ToolRunner) {
           text:
             e instanceof z.ZodError
               ? "Invalid tool arguments"
-              : e instanceof Error
+              : e instanceof Error &&
+                  Object.values(adminToolMessages).some(
+                    (message) => message === e.message,
+                  )
                 ? e.message
-                : "Tool failed",
+                : "Tool failed. Retry or inspect the record in the staff console.",
         },
       ],
       isError: true,

@@ -1,0 +1,78 @@
+OpenAI Codex v0.169.0
+--------
+workdir: /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+model: gpt-6-luna
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: high
+reasoning summaries: none
+session id: 01a1ee88-a38d-7481-bdad-8672cf6bfecd
+--------
+user
+You are a careful admissions-data researcher. For each university below, find facts for an
+INTERNATIONAL applicant to a FIRST-YEAR BACHELOR'S degree starting in autumn 2027 (or the nearest
+published cycle). Use the live web. Rules:
+
+- Official sources only: the university's own website (its domain or subdomains), the national
+  application service (UCAS, Common App, OUAC, uni-assist, Studyinkorea, etc.) or a government
+  statistics office. Never use rankings sites, forums, agencies, Wikipedia or blogs.
+- Every value needs the exact page URL where you read it (source_url). If you could not verify a
+  value on an official page, leave it out (null or an empty list). Never guess or estimate.
+- english: the lowest overall score accepted for undergraduate entry, per test (IELTS Academic
+  overall, TOEFL iBT total, Duolingo, PTE). If programmes differ, give the general/lowest common
+  university minimum and say so in detail (e.g. "6.5 overall, no band below 6.0; some
+  programmes higher").
+- tuition: the yearly tuition for international (non-EU / overseas) undergraduates in the local
+  currency. If it varies by programme give amount = lowest and amount_max = highest, and the
+  academic_year the fee applies to (e.g. "2026/27"). If tuition is free, amount = 0.
+- application_fee: for international first-year applicants, local currency.
+- deadlines: the main 2027-entry first-year deadlines (ISO date YYYY-MM-DD) with the route
+  (e.g. "Common App, Regular Decision", "UCAS", "university portal"). Only dates actually
+  published; if only the 2026-entry date is published, include it and put "2026 entry" in title.
+- sat: policy for international applicants; p25/p75 total SAT only if the university publishes
+  them (Common Data Set or admissions profile).
+- acceptance_rate: only if officially published (CDS, admissions statistics page).
+- notes: one short line on anything important (e.g. "Foundation year required for 11-year
+  school certificates"), else "".
+
+Spend effort on the facts students need most: English minimum, tuition, deadlines. Keep each
+detail under 160 characters. Return only the JSON that matches the schema; use each
+university's id exactly as given.
+
+Universities:
+- id: 386b2a98-83aa-59b2-b6cd-e065eb77b1d8 | Universidade do Porto | Porto, PT | https://www.up.pt
+- id: 271dbaa2-9f49-59ac-8bf8-e8c7a604c2ae | Beijing Normal University | Beijing, CN | http://www.bnu.edu.cn/
+- id: d6b0bfe8-2f2e-5a31-8c8d-97a2c3c31ac2 | Maastricht University | Maastricht, NL | https://www.maastrichtuniversity.nl
+- id: 32d95a2a-7d14-572d-8c70-bc04da01f060 | Central European University | Vienna, AT | https://www.ceu.edu
+codex
+I’ll check each university’s official admissions and fee pages, prioritizing 2027-entry dates where published and using the nearest published cycle otherwise.
+web search: 
+web search: site:up.pt international students undergraduate tuition fees 2026 2027 English language admission deadline Universidade do Porto ...
+web search: 
+web search: site:english.bnu.edu.cn admission undergraduate international students tuition fee 2026 BNU English ...
+web search: 
+web search: site:ceu.edu admissions undergraduate 2026 application deadline BA 2027 tuition IELTS application fee SAT ...
+web search: 
+web search: site:ceu.edu BA undergraduate program admissions CEU Vienna application deadline 2026 ...
+web search: 
+web search: undergraduate.ceu.edu admissions 2026 BA application deadline application fee ...
+web search: 
+web search: https://www.ceu.edu/admissions/undergraduate
+web search: 
+web search: site:undergraduate.ceu.edu admissions application deadline ...
+web search: 
+web search: Central European University undergraduate tuition 2026 2027 site:ceu.edu/study ...
+web search: 
+web search: site:ceu.edu "Undergraduate Studies" "application deadline" ...
+web search: 
+web search: site:maastrichtuniversity.nl bachelor "IELTS academic" "TOEFL iBT" "PTE Academic" "Duolingo" 2027 ...
+web search: 
+web search: "CEU Undergraduate Admissions" "application deadline" Vienna ...
+web search: 
+web search: https://www.ceu.edu
+codex
+{"universities":[{"id":"386b2a98-83aa-59b2-b6cd-e065eb77b1d8","english":[],"tuition":{"amount":3500,"amount_max":16500,"currency":"EUR","period":"year","academic_year":"2026/27","detail":"International student fees vary by course.","source_url":"https://www.up.pt/portal/en/study/international-students/special-call-for-applications/"},"application_fee":null,"deadlines":[{"title":"2026/27 Phase 1 deadline","due_at":"2026-02-06","route":"University faculty portal","source_url":"https://www.up.pt/portal/en/study/international-students/special-call-for-applications/"},{"title":"2026/27 Phase 2 deadline","due_at":"2026-04-02","route":"University faculty portal","source_url":"https://www.up.pt/portal/en/study/international-students/special-call-for-applications/"},{"title":"2026/27 Phase 3 deadline","due_at":"2026-07-22","route":"University faculty portal","source_url":"https://www.up.pt/portal/en/study/international-students/special-call-for-applications/"}],"sat":null,"acceptance_rate":null,"notes":"Admission and language requirements are set by each faculty."},{"id":"271dbaa2-9f49-59ac-8bf8-e8c7a604c2ae","english":[],"tuition":{"amount":24000,"amount_max":27700,"currency":"CNY","period":"year","academic_year":"2027/28","detail":"Humanities and social sciences: CNY 24,000; science, engineering and arts: CNY 27,700.","source_url":"https://admission-is.bnu.edu.cn/english/admissionprogram/bachelordegreeprogram/admissionbrochure/index.html"},"application_fee":{"amount":500,"currency":"CNY","source_url":"https://admission-is.bnu.edu.cn/english/admissionprogram/bachelordegreeprogram/admissionbrochure/index.html"},"deadlines":[{"title":"2027 entry online application","due_at":"2027-03-15","route":"BNU international student application system","source_url":"https://admission-is.bnu.edu.cn/english/admissionprogram/bachelordegreeprogram/admissionbrochure/index.html"},{"title":"2027 entry paper documents","due_at":"2027-03-31","route":"Mail to BNU Admissions Office","source_url":"https://admission-is.bnu.edu.cn/english/admissionprogram/bachelordegreeprogram/admissionbrochure/index.html"}],"sat":null,"acceptance_rate":null,"notes":"Bachelor’s programmes are taught in Chinese; HSK 4 or 5 is required depending on major."},{"id":"d6b0bfe8-2f2e-5a31-8c8d-97a2c3c31ac2","english":[{"test":"IELTS","minimum":6.0,"detail":"6.0 overall; some programmes require more.","source_url":"https://www.maastrichtuniversity.nl/file/language-test-appendix-code-conduct-october-2025pdf"},{"test":"TOEFL iBT","minimum":80,"detail":"80 on the pre-2026 scale; 4.5 on the scale introduced in 2026. Programme requirements can vary.","source_url":"https://www.maastrichtuniversity.nl/education/bachelor/programmes/brain-science/admission-requirements"},{"test":"PTE Academic","minimum":59,"detail":"59 for Urban Sustainability Studies; requirements vary by programme.","source_url":"https://www.maastrichtuniversity.nl/education/bachelor/programmes/urban-sustainability-studies/admission-requirements"},{"test":"Cambridge C1/C2","minimum":169,"detail":"Cambridge English scale 169–175 accepted; programme requirements can vary.","source_url":"https://www.maastrichtuniversity.nl/file/language-test-appendix-code-conduct-october-2025pdf"}],"tuition":{"amount":13200,"amount_max":32000,"currency":"EUR","period":"year","academic_year":"2026/27","detail":"Non-EEA institutional bachelor fees vary by programme.","source_url":"https://www.maastrichtuniversity.nl/file/overzicht-instellingstarieven-bachelors-en-masters-2026-270pdf"},"application_fee":{"amount":100,"currency":"EUR","source_url":"https://www.maastrichtuniversity.nl/study/admission-enrolment/aanmelden-bij-universiteit-maastricht/handling-fee"},"deadlines":[{"title":"2027 entry non-EEA deadline, Econometrics and Operations Research","due_at":"2027-04-01","route":"Studielink and UM MyApplication portal","source_url":"https://www.maastrichtuniversity.nl/education/bachelor/programmes/econometrics-operations-research/admission-requirements"},{"title":"2027 entry deadline, International Business selection programme","due_at":"2027-01-15","route":"Studielink and UM MyApplication portal","source_url":"https://www.maastrichtuniversity.nl/education/bachelor/programmes/international-business/admission-requirements"}],"sat":null,"acceptance_rate":null,"notes":"Deadlines and English requirements vary by programme; the €100 handling fee applies to non-EU/EEA-curriculum diplomas."},{"id":"32d95a2a-7d14-572d-8c70-bc04da01f060","english":[],"tuition":null,"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":""}]}
+tokens used
+105,766
+{"universities":[{"id":"386b2a98-83aa-59b2-b6cd-e065eb77b1d8","english":[],"tuition":{"amount":3500,"amount_max":16500,"currency":"EUR","period":"year","academic_year":"2026/27","detail":"International student fees vary by course.","source_url":"https://www.up.pt/portal/en/study/international-students/special-call-for-applications/"},"application_fee":null,"deadlines":[{"title":"2026/27 Phase 1 deadline","due_at":"2026-02-06","route":"University faculty portal","source_url":"https://www.up.pt/portal/en/study/international-students/special-call-for-applications/"},{"title":"2026/27 Phase 2 deadline","due_at":"2026-04-02","route":"University faculty portal","source_url":"https://www.up.pt/portal/en/study/international-students/special-call-for-applications/"},{"title":"2026/27 Phase 3 deadline","due_at":"2026-07-22","route":"University faculty portal","source_url":"https://www.up.pt/portal/en/study/international-students/special-call-for-applications/"}],"sat":null,"acceptance_rate":null,"notes":"Admission and language requirements are set by each faculty."},{"id":"271dbaa2-9f49-59ac-8bf8-e8c7a604c2ae","english":[],"tuition":{"amount":24000,"amount_max":27700,"currency":"CNY","period":"year","academic_year":"2027/28","detail":"Humanities and social sciences: CNY 24,000; science, engineering and arts: CNY 27,700.","source_url":"https://admission-is.bnu.edu.cn/english/admissionprogram/bachelordegreeprogram/admissionbrochure/index.html"},"application_fee":{"amount":500,"currency":"CNY","source_url":"https://admission-is.bnu.edu.cn/english/admissionprogram/bachelordegreeprogram/admissionbrochure/index.html"},"deadlines":[{"title":"2027 entry online application","due_at":"2027-03-15","route":"BNU international student application system","source_url":"https://admission-is.bnu.edu.cn/english/admissionprogram/bachelordegreeprogram/admissionbrochure/index.html"},{"title":"2027 entry paper documents","due_at":"2027-03-31","route":"Mail to BNU Admissions Office","source_url":"https://admission-is.bnu.edu.cn/english/admissionprogram/bachelordegreeprogram/admissionbrochure/index.html"}],"sat":null,"acceptance_rate":null,"notes":"Bachelor’s programmes are taught in Chinese; HSK 4 or 5 is required depending on major."},{"id":"d6b0bfe8-2f2e-5a31-8c8d-97a2c3c31ac2","english":[{"test":"IELTS","minimum":6.0,"detail":"6.0 overall; some programmes require more.","source_url":"https://www.maastrichtuniversity.nl/file/language-test-appendix-code-conduct-october-2025pdf"},{"test":"TOEFL iBT","minimum":80,"detail":"80 on the pre-2026 scale; 4.5 on the scale introduced in 2026. Programme requirements can vary.","source_url":"https://www.maastrichtuniversity.nl/education/bachelor/programmes/brain-science/admission-requirements"},{"test":"PTE Academic","minimum":59,"detail":"59 for Urban Sustainability Studies; requirements vary by programme.","source_url":"https://www.maastrichtuniversity.nl/education/bachelor/programmes/urban-sustainability-studies/admission-requirements"},{"test":"Cambridge C1/C2","minimum":169,"detail":"Cambridge English scale 169–175 accepted; programme requirements can vary.","source_url":"https://www.maastrichtuniversity.nl/file/language-test-appendix-code-conduct-october-2025pdf"}],"tuition":{"amount":13200,"amount_max":32000,"currency":"EUR","period":"year","academic_year":"2026/27","detail":"Non-EEA institutional bachelor fees vary by programme.","source_url":"https://www.maastrichtuniversity.nl/file/overzicht-instellingstarieven-bachelors-en-masters-2026-270pdf"},"application_fee":{"amount":100,"currency":"EUR","source_url":"https://www.maastrichtuniversity.nl/study/admission-enrolment/aanmelden-bij-universiteit-maastricht/handling-fee"},"deadlines":[{"title":"2027 entry non-EEA deadline, Econometrics and Operations Research","due_at":"2027-04-01","route":"Studielink and UM MyApplication portal","source_url":"https://www.maastrichtuniversity.nl/education/bachelor/programmes/econometrics-operations-research/admission-requirements"},{"title":"2027 entry deadline, International Business selection programme","due_at":"2027-01-15","route":"Studielink and UM MyApplication portal","source_url":"https://www.maastrichtuniversity.nl/education/bachelor/programmes/international-business/admission-requirements"}],"sat":null,"acceptance_rate":null,"notes":"Deadlines and English requirements vary by programme; the €100 handling fee applies to non-EU/EEA-curriculum diplomas."},{"id":"32d95a2a-7d14-572d-8c70-bc04da01f060","english":[],"tuition":null,"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":""}]}

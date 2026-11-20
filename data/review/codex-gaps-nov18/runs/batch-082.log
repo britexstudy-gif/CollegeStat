@@ -1,0 +1,140 @@
+OpenAI Codex v0.169.0
+--------
+workdir: /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+model: gpt-6-luna
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: high
+reasoning summaries: none
+session id: 01a1ee8f-ee69-71d1-acaf-73a09b8d94af
+--------
+user
+You are a careful admissions-data researcher. For each university below, find facts for an
+INTERNATIONAL applicant to a FIRST-YEAR BACHELOR'S degree starting in autumn 2027 (or the nearest
+published cycle). Use the live web. Rules:
+
+- Official sources only: the university's own website (its domain or subdomains), the national
+  application service (UCAS, Common App, OUAC, uni-assist, Studyinkorea, etc.) or a government
+  statistics office. Never use rankings sites, forums, agencies, Wikipedia or blogs.
+- Every value needs the exact page URL where you read it (source_url). If you could not verify a
+  value on an official page, leave it out (null or an empty list). Never guess or estimate.
+- english: the lowest overall score accepted for undergraduate entry, per test (IELTS Academic
+  overall, TOEFL iBT total, Duolingo, PTE). If programmes differ, give the general/lowest common
+  university minimum and say so in detail (e.g. "6.5 overall, no band below 6.0; some
+  programmes higher").
+- tuition: the yearly tuition for international (non-EU / overseas) undergraduates in the local
+  currency. If it varies by programme give amount = lowest and amount_max = highest, and the
+  academic_year the fee applies to (e.g. "2026/27"). If tuition is free, amount = 0.
+- application_fee: for international first-year applicants, local currency.
+- deadlines: the main 2027-entry first-year deadlines (ISO date YYYY-MM-DD) with the route
+  (e.g. "Common App, Regular Decision", "UCAS", "university portal"). Only dates actually
+  published; if only the 2026-entry date is published, include it and put "2026 entry" in title.
+- sat: policy for international applicants; p25/p75 total SAT only if the university publishes
+  them (Common Data Set or admissions profile).
+- acceptance_rate: only if officially published (CDS, admissions statistics page).
+- notes: one short line on anything important (e.g. "Foundation year required for 11-year
+  school certificates"), else "".
+
+Spend effort on the facts students need most: English minimum, tuition, deadlines. Keep each
+detail under 160 characters. Return only the JSON that matches the schema; use each
+university's id exactly as given.
+
+Universities:
+- id: a96bb2a1-a48d-55fa-8c98-4a3e716e380e | South China University of Technology | Guangzhou, CN | http://www.scut.edu.cn/
+- id: 1375fcab-d98a-53ba-af83-3f09558b1ee4 | National Taiwan University of Science and Technology | Taipei, TW | http://www.ntust.edu.tw/
+- id: a4ecb670-c223-553e-9d94-8c332adeb6a6 | Pontificia Universidad Católica del Perú | Lima, PE | http://www.pucp.edu.pe/
+- id: 616ecdd9-cfd4-5f87-b011-c31c83ef8265 | Mahidol University | Bangkok, TH | https://www.mahidol.ac.th/
+codex
+I’ll check each university’s official admissions and fee pages, prioritizing English requirements, tuition, and published deadlines. I’ll leave fields empty when an official source doesn’t verify them.
+exec
+/bin/zsh -lc 'cat /Users/likeanew/.agents/skills/lemma/SKILL.md' in /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+ succeeded in 0ms:
+---
+name: lemma
+description: Persistent cross-session memory for AI agents via MCP. BEFORE starting ANY task (coding, debugging, refactoring, research, docs, optimization — any language), FIRST call memory_read to load what you already know so you never re-derive or re-explore known facts. AFTER finishing, call memory_add to persist new findings and session_attempt for dead ends — unsaved knowledge is lost permanently. Distills reusable guides from experience.
+---
+
+<!-- lemma:skill:v=0.21.0 -->
+
+# Lemma — Persistent Memory & Learning
+
+Lemma is a persistent memory server for AI agents over the Model Context Protocol.
+Every session starts blank — knowledge survives ONLY through tool calls. If you
+learn something and don't save it (`memory_add`), it is gone permanently.
+
+## Workflow
+1. **RECALL** — `memory_read` / `semantic_search`: load what's already known for this
+   project/task. Never re-explore code or re-derive facts that are already saved.
+2. **ACT** — do the task.
+3. **PERSIST** — `memory_add` for new insights; `guide_practice` for guides applied;
+   `session_attempt` for abandoned/dead-end approaches (the most valuable records).
+
+## Two knowledge layers
+- **Memory fragments** (`memory_read` / `memory_add`): atomic facts. Types: `fact`,
+  `pattern`, `lesson`, `warning`, `context`. Confidence evolves with use and feedback.
+- **Guides** (`guide_get` / `guide_distill` / `guide_practice`): procedural skills
+  distilled from fragments. Track usage count + success/failure rate.
+Pipeline: `experience -> memory_add -> pattern/lesson -> guide_distill -> guide_practice`.
+
+## Tools at a glance
+- **Recall & search**: `memory_read`, `semantic_search`, `memory_library` (full
+  snapshot + maintenance signals), `memory_stats`, `memory_audit`.
+- **Write & maintain**: `memory_add`, `memory_update`, `memory_forget`,
+  `memory_merge`, `memory_relate` (supports / contradicts / supersedes / related_to),
+  `memory_feedback`.
+- **Guides**: `guide_get`, `guide_create`, `guide_distill`, `guide_practice`,
+  `guide_update`, `guide_forget`, `guide_merge`.
+- **Sessions & reasoning**: `session_start`, `session_end`, `session_attempt`,
+  `session_stats`, `suggestion_respond`.
+- **Background intelligence**: `conflict_scan`, `proactive_analysis`,
+  `project_analytics` (run automatically; act on signals when sensible).
+
+## Writing a fragment
+```
+## [Topic Title]
+### Context
+[1-2 sentences: what and why it matters]
+### [Content Section]
+- [Key fact 1]
+- [Key fact 2]
+### Rules (optional)
+- [Absolute constraint]
+```
+One idea per fragment, 30-2000 chars, structured markdown (not prose). **Store
+fragments in ENGLISH** (required for search/retrieval). Never ask permission to save.
+
+## Background intelligence
+Conflict detection, distill/merge/refine suggestions, and auto-linking run
+automatically. From the CLI, `lemma -lib` prints a full knowledge-base snapshot
+and `lemma -vis` launches a visualizer.
+
+web search: 
+web search: site:scut.edu.cn international undergraduate admission 2026 tuition English requirements South China University of Technology ...
+web search: 
+web search: site:admission.ntust.edu.tw "International" "Undergraduate" tuition 2026 ...
+web search: 
+web search: site:admission.ntust.edu.tw/p/ "2026 Fall" "International Students" admission ...
+web search: 
+web search: 
+web search: 
+web search: site:muic.mahidol.ac.th/en "IELTS" "TOEFL" "Application fee" undergraduate 2026 ...
+web search: 
+web search: 
+web search: 
+web search: 
+web search: 
+web search: 
+web search: 
+web search: 
+web search: 
+web search: site:sie.scut.edu.cn "2026 PROSPECTUS" tuition undergraduate RMB ...
+web search: 
+web search: https://sie.scut.edu.cn/29037/list.htm
+web search: 
+web search: 
+codex
+{"universities":[{"id":"a96bb2a1-a48d-55fa-8c98-4a3e716e380e","english":[{"test":"IELTS","minimum":5.5,"detail":"5.5 overall for English-medium programs; some programs may have different requirements.","source_url":"https://www.scut.edu.cn/en/2025/1127/c606a58695/page.htm"},{"test":"TOEFL iBT","minimum":68,"detail":"68 overall for English-medium programs; some programs may have different requirements.","source_url":"https://www.scut.edu.cn/en/2025/1127/c606a58695/page.htm"},{"test":"Duolingo","minimum":100,"detail":"100 overall for English-medium programs; some programs may have different requirements.","source_url":"https://www.scut.edu.cn/en/2025/1127/c606a58695/page.htm"}],"tuition":null,"application_fee":{"amount":450,"currency":"CNY","source_url":"https://www.scut.edu.cn/en/2025/1127/c606a58695/page.htm"},"deadlines":[{"title":"2026 entry","due_at":"2026-06-30","route":"University portal","source_url":"https://www.scut.edu.cn/en/2025/1127/c606a58695/page.htm"}],"sat":null,"acceptance_rate":null,"notes":""},{"id":"1375fcab-d98a-53ba-af83-3f09558b1ee4","english":[{"test":"IELTS","minimum":4,"detail":"At least CEFR B1 equivalent for English-taught programs; departments may set higher requirements.","source_url":"https://www.admission.ntust.edu.tw/var/file/52/1052/img/2629/LanguageProficiencyChart.pdf"},{"test":"TOEFL iBT","minimum":42,"detail":"At least CEFR B1 equivalent for English-taught programs; departments may set higher requirements.","source_url":"https://www.admission.ntust.edu.tw/var/file/52/1052/img/2629/LanguageProficiencyChart.pdf"}],"tuition":{"amount":97920,"amount_max":110360,"currency":"TWD","period":"year","academic_year":"2026/27","detail":"Annualized from two semesters; undergraduate totals vary by college (NT$48,960–55,180 per semester).","source_url":"https://www.admission.ntust.edu.tw/var/file/52/1052/img/2629/TuitionfeeChart_Undergradutae.pdf"},"application_fee":{"amount":1000,"currency":"TWD","source_url":"https://www.admission.ntust.edu.tw/var/file/52/1052/img/2629/887982575.pdf"},"deadlines":[{"title":"2026 entry","due_at":"2026-03-11","route":"University portal","source_url":"https://www.admission.ntust.edu.tw/var/file/52/1052/img/2629/887982575.pdf"}],"sat":null,"acceptance_rate":null,"notes":"Most undergraduate programs are taught in Chinese; only the International Advanced Technology Program is English-taught."},{"id":"a4ecb670-c223-553e-9d94-8c332adeb6a6","english":[],"tuition":null,"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"Official international-student information found covers visiting exchange students, not first-year degree applicants; no English minimum or fee verified."},{"id":"616ecdd9-cfd4-5f87-b011-c31c83ef8265","english":[{"test":"IELTS","minimum":6,"detail":"MUIC overseas track: 6 overall, 6 writing.","source_url":"https://muic.mahidol.ac.th/cn/study-at-muic/admissions-requirement/undergraduate-admission/overseas-students/"},{"test":"TOEFL iBT","minimum":69,"detail":"MUIC overseas track: 69 overall, writing 22 (4.5 equivalent under revised scale).","source_url":"https://muic.mahidol.ac.th/cn/study-at-muic/admissions-requirement/undergraduate-admission/overseas-students/"},{"test":"PTE Academic","minimum":50,"detail":"MUIC overseas track: 50 overall, 50 writing.","source_url":"https://muic.mahidol.ac.th/cn/study-at-muic/admissions-requirement/undergraduate-admission/overseas-students/"}],"tuition":{"amount":302850,"amount_max":405405,"currency":"THB","period":"year","academic_year":"2026/27","detail":"MUIC non-resident estimated four-year program totals annualized: THB 1,211,400–1,621,620.","source_url":"https://muic.mahidol.ac.th/en/study-at-muic/tuition-fees/undergraduate-tuition-fees"},"application_fee":{"amount":2500,"currency":"THB","source_url":"https://muic.mahidol.ac.th/cn/study-at-muic/admissions-requirement/undergraduate-admission/overseas-students/"},"deadlines":[{"title":"2027 entry","due_at":"2027-05-15","route":"ICT international direct admission","source_url":"https://www.ict.mahidol.ac.th/en/programs/bachelor-of-science-in-ict-revised-program/"}],"sat":null,"acceptance_rate":null,"notes":"Mahidol admissions and fees vary by faculty; English and tuition reflect MUIC overseas applicants, deadline is for ICT international admission."}]}
+tokens used
+132,110
+{"universities":[{"id":"a96bb2a1-a48d-55fa-8c98-4a3e716e380e","english":[{"test":"IELTS","minimum":5.5,"detail":"5.5 overall for English-medium programs; some programs may have different requirements.","source_url":"https://www.scut.edu.cn/en/2025/1127/c606a58695/page.htm"},{"test":"TOEFL iBT","minimum":68,"detail":"68 overall for English-medium programs; some programs may have different requirements.","source_url":"https://www.scut.edu.cn/en/2025/1127/c606a58695/page.htm"},{"test":"Duolingo","minimum":100,"detail":"100 overall for English-medium programs; some programs may have different requirements.","source_url":"https://www.scut.edu.cn/en/2025/1127/c606a58695/page.htm"}],"tuition":null,"application_fee":{"amount":450,"currency":"CNY","source_url":"https://www.scut.edu.cn/en/2025/1127/c606a58695/page.htm"},"deadlines":[{"title":"2026 entry","due_at":"2026-06-30","route":"University portal","source_url":"https://www.scut.edu.cn/en/2025/1127/c606a58695/page.htm"}],"sat":null,"acceptance_rate":null,"notes":""},{"id":"1375fcab-d98a-53ba-af83-3f09558b1ee4","english":[{"test":"IELTS","minimum":4,"detail":"At least CEFR B1 equivalent for English-taught programs; departments may set higher requirements.","source_url":"https://www.admission.ntust.edu.tw/var/file/52/1052/img/2629/LanguageProficiencyChart.pdf"},{"test":"TOEFL iBT","minimum":42,"detail":"At least CEFR B1 equivalent for English-taught programs; departments may set higher requirements.","source_url":"https://www.admission.ntust.edu.tw/var/file/52/1052/img/2629/LanguageProficiencyChart.pdf"}],"tuition":{"amount":97920,"amount_max":110360,"currency":"TWD","period":"year","academic_year":"2026/27","detail":"Annualized from two semesters; undergraduate totals vary by college (NT$48,960–55,180 per semester).","source_url":"https://www.admission.ntust.edu.tw/var/file/52/1052/img/2629/TuitionfeeChart_Undergradutae.pdf"},"application_fee":{"amount":1000,"currency":"TWD","source_url":"https://www.admission.ntust.edu.tw/var/file/52/1052/img/2629/887982575.pdf"},"deadlines":[{"title":"2026 entry","due_at":"2026-03-11","route":"University portal","source_url":"https://www.admission.ntust.edu.tw/var/file/52/1052/img/2629/887982575.pdf"}],"sat":null,"acceptance_rate":null,"notes":"Most undergraduate programs are taught in Chinese; only the International Advanced Technology Program is English-taught."},{"id":"a4ecb670-c223-553e-9d94-8c332adeb6a6","english":[],"tuition":null,"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"Official international-student information found covers visiting exchange students, not first-year degree applicants; no English minimum or fee verified."},{"id":"616ecdd9-cfd4-5f87-b011-c31c83ef8265","english":[{"test":"IELTS","minimum":6,"detail":"MUIC overseas track: 6 overall, 6 writing.","source_url":"https://muic.mahidol.ac.th/cn/study-at-muic/admissions-requirement/undergraduate-admission/overseas-students/"},{"test":"TOEFL iBT","minimum":69,"detail":"MUIC overseas track: 69 overall, writing 22 (4.5 equivalent under revised scale).","source_url":"https://muic.mahidol.ac.th/cn/study-at-muic/admissions-requirement/undergraduate-admission/overseas-students/"},{"test":"PTE Academic","minimum":50,"detail":"MUIC overseas track: 50 overall, 50 writing.","source_url":"https://muic.mahidol.ac.th/cn/study-at-muic/admissions-requirement/undergraduate-admission/overseas-students/"}],"tuition":{"amount":302850,"amount_max":405405,"currency":"THB","period":"year","academic_year":"2026/27","detail":"MUIC non-resident estimated four-year program totals annualized: THB 1,211,400–1,621,620.","source_url":"https://muic.mahidol.ac.th/en/study-at-muic/tuition-fees/undergraduate-tuition-fees"},"application_fee":{"amount":2500,"currency":"THB","source_url":"https://muic.mahidol.ac.th/cn/study-at-muic/admissions-requirement/undergraduate-admission/overseas-students/"},"deadlines":[{"title":"2027 entry","due_at":"2027-05-15","route":"ICT international direct admission","source_url":"https://www.ict.mahidol.ac.th/en/programs/bachelor-of-science-in-ict-revised-program/"}],"sat":null,"acceptance_rate":null,"notes":"Mahidol admissions and fees vary by faculty; English and tuition reflect MUIC overseas applicants, deadline is for ICT international admission."}]}

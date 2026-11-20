@@ -1,0 +1,122 @@
+.dg {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  padding: 24px 28px;
+  border: 1px dashed color-mix(in srgb, var(--foreground) 18%, transparent);
+  border-radius: 22px;
+  background: color-mix(in srgb, var(--foreground) 2.5%, var(--background));
+}
+.dg-art {
+  flex: none;
+  width: 150px;
+  height: auto;
+}
+.dg-paper {
+  fill: var(--background);
+  stroke: color-mix(in srgb, var(--foreground) 16%, transparent);
+  stroke-width: 1.5;
+}
+.dg-line {
+  fill: color-mix(in srgb, var(--foreground) 22%, transparent);
+}
+.dg-dash {
+  fill: color-mix(in srgb, var(--foreground) 9%, transparent);
+}
+.dg-lens {
+  fill: none;
+  stroke: var(--cs-accent, #2563eb);
+  stroke-width: 5;
+}
+.dg-glass {
+  fill: color-mix(in srgb, var(--cs-accent, #2563eb) 14%, transparent);
+}
+.dg-handle {
+  stroke: var(--cs-accent, #2563eb);
+  stroke-width: 7;
+  stroke-linecap: round;
+}
+.dg-dot {
+  fill: color-mix(in srgb, var(--cs-accent, #2563eb) 45%, transparent);
+  animation: dg-float 3.2s ease-in-out infinite;
+}
+.dg-dot--2 {
+  animation-delay: -1.4s;
+}
+@keyframes dg-float {
+  50% {
+    translate: 0 -5px;
+  }
+}
+.dg-body {
+  display: grid;
+  gap: 10px;
+  min-width: 0;
+}
+.dg h2 {
+  font-size: 18px;
+  font-weight: 650;
+  letter-spacing: -0.015em;
+}
+.dg p {
+  color: color-mix(in srgb, var(--foreground) 62%, transparent);
+  font-size: 14px;
+  line-height: 1.55;
+}
+.dg ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.dg li {
+  padding: 3px 10px;
+  border: 1px dashed color-mix(in srgb, var(--foreground) 20%, transparent);
+  border-radius: 999px;
+  color: color-mix(in srgb, var(--foreground) 62%, transparent);
+  font-size: 12.5px;
+}
+.dg-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 4px;
+}
+.dg-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 36px;
+  padding: 0 14px;
+  border-radius: 999px;
+  background: var(--foreground);
+  color: var(--background);
+  font-size: 13.5px;
+  font-weight: 600;
+}
+.dg-btn.is-ghost {
+  border: 1px solid color-mix(in srgb, var(--foreground) 16%, transparent);
+  background: transparent;
+  color: var(--foreground);
+}
+.dg-btn svg {
+  width: 15px;
+  height: 15px;
+}
+@media (max-width: 640px) {
+  .dg {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+  .dg-art {
+    width: 120px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .dg-dot {
+    animation: none;
+  }
+}

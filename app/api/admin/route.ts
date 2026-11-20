@@ -23,7 +23,7 @@ const requestSchema = z.discriminatedUnion("action", [
   }),
   z.object({
     action: z.literal("verify"),
-    entity: z.string(),
+    entity: z.enum(Object.keys(entitySchemas) as [Entity, ...Entity[]]),
     id: z.string().uuid(),
   }),
   z.object({ action: z.literal("retry"), id: z.string().uuid() }),
@@ -115,6 +115,20 @@ export async function POST(request: Request) {
     if (error) throw error;
     return Response.json(data);
   } catch (e) {
+    if (
+      typeof e === "object" &&
+      e !== null &&
+      "code" in e &&
+      e.code === "22023" &&
+      "message" in e &&
+      (e.message ===
+        "Ranking observations require a dedicated ranking review workflow" ||
+        e.message ===
+          "Structured observations require a section-specific review workflow" ||
+        e.message ===
+          "Staged ranking entries require a dedicated ranking review workflow")
+    )
+      return Response.json({ error: e.message }, { status: 409 });
     return serverError("admin_operation_failed", e);
   }
 }

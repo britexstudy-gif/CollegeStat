@@ -1,0 +1,62 @@
+OpenAI Codex v0.169.0
+--------
+workdir: /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+model: gpt-6-luna
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: high
+reasoning summaries: none
+session id: 01a1ee8d-04d4-7e73-aa12-e1dc080c4abc
+--------
+user
+You are a careful admissions-data researcher. For each university below, find facts for an
+INTERNATIONAL applicant to a FIRST-YEAR BACHELOR'S degree starting in autumn 2027 (or the nearest
+published cycle). Use the live web. Rules:
+
+- Official sources only: the university's own website (its domain or subdomains), the national
+  application service (UCAS, Common App, OUAC, uni-assist, Studyinkorea, etc.) or a government
+  statistics office. Never use rankings sites, forums, agencies, Wikipedia or blogs.
+- Every value needs the exact page URL where you read it (source_url). If you could not verify a
+  value on an official page, leave it out (null or an empty list). Never guess or estimate.
+- english: the lowest overall score accepted for undergraduate entry, per test (IELTS Academic
+  overall, TOEFL iBT total, Duolingo, PTE). If programmes differ, give the general/lowest common
+  university minimum and say so in detail (e.g. "6.5 overall, no band below 6.0; some
+  programmes higher").
+- tuition: the yearly tuition for international (non-EU / overseas) undergraduates in the local
+  currency. If it varies by programme give amount = lowest and amount_max = highest, and the
+  academic_year the fee applies to (e.g. "2026/27"). If tuition is free, amount = 0.
+- application_fee: for international first-year applicants, local currency.
+- deadlines: the main 2027-entry first-year deadlines (ISO date YYYY-MM-DD) with the route
+  (e.g. "Common App, Regular Decision", "UCAS", "university portal"). Only dates actually
+  published; if only the 2026-entry date is published, include it and put "2026 entry" in title.
+- sat: policy for international applicants; p25/p75 total SAT only if the university publishes
+  them (Common Data Set or admissions profile).
+- acceptance_rate: only if officially published (CDS, admissions statistics page).
+- notes: one short line on anything important (e.g. "Foundation year required for 11-year
+  school certificates"), else "".
+
+Spend effort on the facts students need most: English minimum, tuition, deadlines. Keep each
+detail under 160 characters. Return only the JSON that matches the schema; use each
+university's id exactly as given.
+
+Universities:
+- id: 36f6d62c-f9a7-5a39-b4ee-d2b49cc75344 | Universidad Carlos III de Madrid | Madrid, ES | http://www.uc3m.es/
+- id: 549fb70d-61dc-5bd3-9a44-c0b95be6da05 | Jagiellonian University Cracow | Krakow, PL | http://www.uj.edu.pl/
+- id: 1e9ebf95-a619-5502-ad17-10055b5d49ba | Xiamen University | Xiamen, CN | http://www.xmu.edu.cn/
+- id: ee9de602-8b76-575b-a7da-f8af732286fd | Aalborg University | Aalborg, DK | https://www.aau.dk
+codex
+I’ll check each university’s official admissions and tuition pages, prioritizing the nearest published cycle when 2027 details aren’t available. I’ll return only verified facts and leave unsupported fields empty or null.
+web search: 
+web search: site:uc3m.es international undergraduate admission tuition 2026 2027 English requirements deadline ...
+web search: 
+web search: site:uc3m.es "International students" undergraduate admission English IELTS tuition bachelor ...
+web search: 
+web search: site:uc3m.es/bachelor-degree/admission "non-European Union" fees bachelor 2026 ...
+web search: 
+web search: site:en.aau.dk "Tuition fee" bachelor 2026 Applied Industrial Electronics annual ...
+codex
+{"universities":[{"id":"36f6d62c-f9a7-5a39-b4ee-d2b49cc75344","english":[],"tuition":{"amount":6822.6,"amount_max":8186.4,"currency":"EUR","period":"year","academic_year":"2026/27","detail":"60-credit first-enrolment tuition; varies by degree type. Excludes administrative fee, insurance and new-student file-opening fee.","source_url":"https://www.uc3m.es/bachelor-degree/admission/application/enrollment/prices/non-eu"},"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":""},{"id":"549fb70d-61dc-5bd3-9a44-c0b95be6da05","english":[],"tuition":null,"application_fee":{"amount":100,"currency":"PLN","source_url":"https://irk.uj.edu.pl/en-gb/offer/IiJM_C_26/programme/intern.rela.area.stud_s1s_C_en/?from=registration%3AIiJM_C_26"},"deadlines":[{"title":"2026 entry, International Relations and Area Studies round 1","due_at":"2026-03-09","route":"IRK, first- and long-cycle programmes for foreigners","source_url":"https://irk.uj.edu.pl/en-gb/offer/IiJM_C_26/programme/intern.rela.area.stud_s1s_C_en/?from=registration%3AIiJM_C_26"}],"sat":null,"acceptance_rate":null,"notes":"English proficiency for this programme is assessed by interview; some applicants may need to provide a certificate."},{"id":"1e9ebf95-a619-5502-ad17-10055b5d49ba","english":[{"test":"IELTS","minimum":6,"detail":"IELTS Academic overall 6.0; English-medium high school or other recognized equivalent may qualify.","source_url":"https://oec.xmu.edu.cn/en/Program1/Undergraduate_Programs.htm"},{"test":"TOEFL iBT","minimum":80,"detail":"TOEFL iBT 80; English-medium high school or other recognized equivalent may qualify.","source_url":"https://oec.xmu.edu.cn/en/Program1/Undergraduate_Programs.htm"}],"tuition":{"amount":24000,"amount_max":90000,"currency":"RMB","period":"year","academic_year":"2027/28","detail":"Published 2027 guide: Chinese-medium programs RMB 24,000–26,000; English-medium programs RMB 38,000–90,000 yearly.","source_url":"https://oec.xmu.edu.cn/en/Program1/Undergraduate_Programs.htm"},"application_fee":{"amount":400,"currency":"RMB","source_url":"https://oec.xmu.edu.cn/en/Program1/Undergraduate_Programs.htm"},"deadlines":[{"title":"2027 entry, Chinese Government Scholarship Type B","due_at":"2027-02-20","route":"XMU Online Application System","source_url":"https://oec.xmu.edu.cn/en/Program1/Undergraduate_Programs.htm"},{"title":"2027 entry, self-funded applicants","due_at":"2027-05-31","route":"XMU Online Application System","source_url":"https://oec.xmu.edu.cn/en/Program1/Undergraduate_Programs.htm"}],"sat":null,"acceptance_rate":null,"notes":"Applicants must submit a CSCA score report."},{"id":"ee9de602-8b76-575b-a7da-f8af732286fd","english":[{"test":"IELTS","minimum":6.5,"detail":"IELTS Academic overall 6.5, minimum 6.0 per section.","source_url":"https://www.en.aau.dk/education/apply/bachelor/non-eu-eea-admission-requirements"},{"test":"TOEFL iBT","minimum":85,"detail":"TOEFL iBT 85, minimum 20 per section.","source_url":"https://www.en.aau.dk/education/apply/bachelor/non-eu-eea-admission-requirements"},{"test":"Cambridge C1/C2","minimum":180,"detail":"C1 Advanced 180 / Grade C or C2 Proficiency 180 / Level C1.","source_url":"https://www.en.aau.dk/education/apply/bachelor/non-eu-eea-admission-requirements"}],"tuition":{"amount":55600,"amount_max":115700,"currency":"DKK","period":"year","academic_year":"2026","detail":"Rates for two semesters: Economics and Business Administration DKK 55,600; other listed bachelor's programmes DKK 115,700.","source_url":"https://www.en.aau.dk/education/apply/bachelor/finance-and-fees"},"application_fee":{"amount":150,"currency":"EUR","source_url":"https://www.en.aau.dk/education/apply/bachelor/finance-and-fees"},"deadlines":[{"title":"2027 entry","due_at":"2027-03-15","route":"optagelse.dk and AAU signature page","source_url":"https://www.en.aau.dk/education/apply/bachelor/non-eu-eea-admission-requirements"}],"sat":null,"acceptance_rate":null,"notes":"Most applicants with a non-EU/EEA secondary qualification also need one year of further education or equivalent supplementary studies."}]}
+tokens used
+46,972
+{"universities":[{"id":"36f6d62c-f9a7-5a39-b4ee-d2b49cc75344","english":[],"tuition":{"amount":6822.6,"amount_max":8186.4,"currency":"EUR","period":"year","academic_year":"2026/27","detail":"60-credit first-enrolment tuition; varies by degree type. Excludes administrative fee, insurance and new-student file-opening fee.","source_url":"https://www.uc3m.es/bachelor-degree/admission/application/enrollment/prices/non-eu"},"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":""},{"id":"549fb70d-61dc-5bd3-9a44-c0b95be6da05","english":[],"tuition":null,"application_fee":{"amount":100,"currency":"PLN","source_url":"https://irk.uj.edu.pl/en-gb/offer/IiJM_C_26/programme/intern.rela.area.stud_s1s_C_en/?from=registration%3AIiJM_C_26"},"deadlines":[{"title":"2026 entry, International Relations and Area Studies round 1","due_at":"2026-03-09","route":"IRK, first- and long-cycle programmes for foreigners","source_url":"https://irk.uj.edu.pl/en-gb/offer/IiJM_C_26/programme/intern.rela.area.stud_s1s_C_en/?from=registration%3AIiJM_C_26"}],"sat":null,"acceptance_rate":null,"notes":"English proficiency for this programme is assessed by interview; some applicants may need to provide a certificate."},{"id":"1e9ebf95-a619-5502-ad17-10055b5d49ba","english":[{"test":"IELTS","minimum":6,"detail":"IELTS Academic overall 6.0; English-medium high school or other recognized equivalent may qualify.","source_url":"https://oec.xmu.edu.cn/en/Program1/Undergraduate_Programs.htm"},{"test":"TOEFL iBT","minimum":80,"detail":"TOEFL iBT 80; English-medium high school or other recognized equivalent may qualify.","source_url":"https://oec.xmu.edu.cn/en/Program1/Undergraduate_Programs.htm"}],"tuition":{"amount":24000,"amount_max":90000,"currency":"RMB","period":"year","academic_year":"2027/28","detail":"Published 2027 guide: Chinese-medium programs RMB 24,000–26,000; English-medium programs RMB 38,000–90,000 yearly.","source_url":"https://oec.xmu.edu.cn/en/Program1/Undergraduate_Programs.htm"},"application_fee":{"amount":400,"currency":"RMB","source_url":"https://oec.xmu.edu.cn/en/Program1/Undergraduate_Programs.htm"},"deadlines":[{"title":"2027 entry, Chinese Government Scholarship Type B","due_at":"2027-02-20","route":"XMU Online Application System","source_url":"https://oec.xmu.edu.cn/en/Program1/Undergraduate_Programs.htm"},{"title":"2027 entry, self-funded applicants","due_at":"2027-05-31","route":"XMU Online Application System","source_url":"https://oec.xmu.edu.cn/en/Program1/Undergraduate_Programs.htm"}],"sat":null,"acceptance_rate":null,"notes":"Applicants must submit a CSCA score report."},{"id":"ee9de602-8b76-575b-a7da-f8af732286fd","english":[{"test":"IELTS","minimum":6.5,"detail":"IELTS Academic overall 6.5, minimum 6.0 per section.","source_url":"https://www.en.aau.dk/education/apply/bachelor/non-eu-eea-admission-requirements"},{"test":"TOEFL iBT","minimum":85,"detail":"TOEFL iBT 85, minimum 20 per section.","source_url":"https://www.en.aau.dk/education/apply/bachelor/non-eu-eea-admission-requirements"},{"test":"Cambridge C1/C2","minimum":180,"detail":"C1 Advanced 180 / Grade C or C2 Proficiency 180 / Level C1.","source_url":"https://www.en.aau.dk/education/apply/bachelor/non-eu-eea-admission-requirements"}],"tuition":{"amount":55600,"amount_max":115700,"currency":"DKK","period":"year","academic_year":"2026","detail":"Rates for two semesters: Economics and Business Administration DKK 55,600; other listed bachelor's programmes DKK 115,700.","source_url":"https://www.en.aau.dk/education/apply/bachelor/finance-and-fees"},"application_fee":{"amount":150,"currency":"EUR","source_url":"https://www.en.aau.dk/education/apply/bachelor/finance-and-fees"},"deadlines":[{"title":"2027 entry","due_at":"2027-03-15","route":"optagelse.dk and AAU signature page","source_url":"https://www.en.aau.dk/education/apply/bachelor/non-eu-eea-admission-requirements"}],"sat":null,"acceptance_rate":null,"notes":"Most applicants with a non-EU/EEA secondary qualification also need one year of further education or equivalent supplementary studies."}]}

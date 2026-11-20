@@ -1,6 +1,29 @@
 import identityRedirects from "@/data/published/identity-redirects.json";
 
 const uuid = /^[\da-f]{8}-[\da-f]{4}-[\da-f]{4}-[\da-f]{4}-[\da-f]{12}$/i;
+export const COMPARISON_GROUPS = [
+  "All",
+  "Overview",
+  "Admissions",
+  "Costs",
+  "Financial aid",
+  "Academics",
+  "Students",
+  "Outcomes",
+  "Rankings",
+  "Programs & research",
+] as const;
+export const comparisonSectionKey = (group: string) =>
+  group.toLowerCase().replaceAll(" & ", "-").replaceAll(" ", "-");
+export function comparisonSection(value: string | null): string {
+  const key = value?.toLowerCase().trim();
+  return (
+    ["Essentials", ...COMPARISON_GROUPS].find(
+      (group) =>
+        comparisonSectionKey(group) === key || group.toLowerCase() === key,
+    ) || "Essentials"
+  );
+}
 export function canonicalComparisonIDs(ids: readonly string[]) {
   const canonical = ids
     .map((id) => id.toLowerCase())

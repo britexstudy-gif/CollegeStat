@@ -1,0 +1,144 @@
+OpenAI Codex v0.169.0
+--------
+workdir: /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+model: gpt-6-luna
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: high
+reasoning summaries: none
+session id: 01a1ee99-9efe-7231-ab0c-3f30ffdc5d79
+--------
+user
+You are a careful admissions-data researcher. For each university below, find facts for an
+INTERNATIONAL applicant to a FIRST-YEAR BACHELOR'S degree starting in autumn 2027 (or the nearest
+published cycle). Use the live web. Rules:
+
+- Official sources only: the university's own website (its domain or subdomains), the national
+  application service (UCAS, Common App, OUAC, uni-assist, Studyinkorea, etc.) or a government
+  statistics office. Never use rankings sites, forums, agencies, Wikipedia or blogs.
+- Every value needs the exact page URL where you read it (source_url). If you could not verify a
+  value on an official page, leave it out (null or an empty list). Never guess or estimate.
+- english: the lowest overall score accepted for undergraduate entry, per test (IELTS Academic
+  overall, TOEFL iBT total, Duolingo, PTE). If programmes differ, give the general/lowest common
+  university minimum and say so in detail (e.g. "6.5 overall, no band below 6.0; some
+  programmes higher").
+- tuition: the yearly tuition for international (non-EU / overseas) undergraduates in the local
+  currency. If it varies by programme give amount = lowest and amount_max = highest, and the
+  academic_year the fee applies to (e.g. "2026/27"). If tuition is free, amount = 0.
+- application_fee: for international first-year applicants, local currency.
+- deadlines: the main 2027-entry first-year deadlines (ISO date YYYY-MM-DD) with the route
+  (e.g. "Common App, Regular Decision", "UCAS", "university portal"). Only dates actually
+  published; if only the 2026-entry date is published, include it and put "2026 entry" in title.
+- sat: policy for international applicants; p25/p75 total SAT only if the university publishes
+  them (Common Data Set or admissions profile).
+- acceptance_rate: only if officially published (CDS, admissions statistics page).
+- notes: one short line on anything important (e.g. "Foundation year required for 11-year
+  school certificates"), else "".
+
+Spend effort on the facts students need most: English minimum, tuition, deadlines. Keep each
+detail under 160 characters. Return only the JSON that matches the schema; use each
+university's id exactly as given.
+
+Universities:
+- id: 67dfca3c-5823-563f-93e9-bfc3b528e490 | Universität Potsdam | Potsdam, DE | http://www.uni-potsdam.de/
+- id: 47efdabd-702d-56a0-903e-ba43f360f28c | University of Canberra | Canberra, AU | http://www.canberra.edu.au/
+- id: ec7e29d9-f6cf-54d0-8a0b-03be7ec16751 | China Agricultural University | Beijing, CN | https://en.cau.edu.cn/
+- id: 6f2bd9a0-2fe1-5216-a34f-cfd1e5fcedd7 | Hunan University | Changsha, CN | https://www.hnu.edu.cn/
+codex
+I’ll check the persistent research notes first, then verify each university’s published international undergraduate requirements and fees on official pages.
+exec
+/bin/zsh -lc 'cat /Users/likeanew/.agents/skills/lemma/SKILL.md' in /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+ succeeded in 0ms:
+---
+name: lemma
+description: Persistent cross-session memory for AI agents via MCP. BEFORE starting ANY task (coding, debugging, refactoring, research, docs, optimization — any language), FIRST call memory_read to load what you already know so you never re-derive or re-explore known facts. AFTER finishing, call memory_add to persist new findings and session_attempt for dead ends — unsaved knowledge is lost permanently. Distills reusable guides from experience.
+---
+
+<!-- lemma:skill:v=0.21.0 -->
+
+# Lemma — Persistent Memory & Learning
+
+Lemma is a persistent memory server for AI agents over the Model Context Protocol.
+Every session starts blank — knowledge survives ONLY through tool calls. If you
+learn something and don't save it (`memory_add`), it is gone permanently.
+
+## Workflow
+1. **RECALL** — `memory_read` / `semantic_search`: load what's already known for this
+   project/task. Never re-explore code or re-derive facts that are already saved.
+2. **ACT** — do the task.
+3. **PERSIST** — `memory_add` for new insights; `guide_practice` for guides applied;
+   `session_attempt` for abandoned/dead-end approaches (the most valuable records).
+
+## Two knowledge layers
+- **Memory fragments** (`memory_read` / `memory_add`): atomic facts. Types: `fact`,
+  `pattern`, `lesson`, `warning`, `context`. Confidence evolves with use and feedback.
+- **Guides** (`guide_get` / `guide_distill` / `guide_practice`): procedural skills
+  distilled from fragments. Track usage count + success/failure rate.
+Pipeline: `experience -> memory_add -> pattern/lesson -> guide_distill -> guide_practice`.
+
+## Tools at a glance
+- **Recall & search**: `memory_read`, `semantic_search`, `memory_library` (full
+  snapshot + maintenance signals), `memory_stats`, `memory_audit`.
+- **Write & maintain**: `memory_add`, `memory_update`, `memory_forget`,
+  `memory_merge`, `memory_relate` (supports / contradicts / supersedes / related_to),
+  `memory_feedback`.
+- **Guides**: `guide_get`, `guide_create`, `guide_distill`, `guide_practice`,
+  `guide_update`, `guide_forget`, `guide_merge`.
+- **Sessions & reasoning**: `session_start`, `session_end`, `session_attempt`,
+  `session_stats`, `suggestion_respond`.
+- **Background intelligence**: `conflict_scan`, `proactive_analysis`,
+  `project_analytics` (run automatically; act on signals when sensible).
+
+## Writing a fragment
+```
+## [Topic Title]
+### Context
+[1-2 sentences: what and why it matters]
+### [Content Section]
+- [Key fact 1]
+- [Key fact 2]
+### Rules (optional)
+- [Absolute constraint]
+```
+One idea per fragment, 30-2000 chars, structured markdown (not prose). **Store
+fragments in ENGLISH** (required for search/retrieval). Never ask permission to save.
+
+## Background intelligence
+Conflict detection, distill/merge/refine suggestions, and auto-linking run
+automatically. From the CLI, `lemma -lib` prints a full knowledge-base snapshot
+and `lemma -vis` launches a visualizer.
+
+web search: 
+web search: site:uni-potsdam.de international bachelor admission English tuition semester contribution deadlines 2026 ...
+web search: 
+web search: site:canberra.edu.au "IELTS" "undergraduate" "6.0" international English requirements TOEFL PTE Duolingo ...
+web search: 
+web search: site:admissions.cau.edu.cn international undergraduate 2026 admission China Agricultural University tuition ...
+web search: 
+web search: Hunan University international undergraduate admission 2026 "tuition" official ...
+web search: 
+web search: 
+web search: 
+web search: 'International fee'
+web search: 
+web search: 
+web search: 
+web search: site:uni-potsdam.de/en "July 15, 2027" bachelor international application foreign qualification winter semester ...
+web search: 
+web search: site:canberra.edu.au/future-students/study-at-uc/international "application fee" ...
+web search: 
+web search: site:canberra.edu.au/course/ "International fee" "Bachelor" "2026" ...
+web search: 
+web search: site:canberra.edu.au/course "Bachelor of Arts" "2026" "Fees" international University of Canberra ...
+web search: 
+web search: 
+web search: 
+web search: 
+web search: 
+web search: site:www-en.hnu.edu.cn/__local "2026 Guidelines to Application" Hunan University international undergraduate ...
+codex
+{"universities":[{"id":"67dfca3c-5823-563f-93e9-bfc3b528e490","english":[],"tuition":{"amount":0,"amount_max":null,"currency":"EUR","period":"year","academic_year":"2027/28","detail":"No tuition fees for undergraduate degrees; semester fees still apply.","source_url":"https://www.uni-potsdam.de/en/studium/studying/financing-funding-housing/costs-at-a-glance"},"application_fee":null,"deadlines":[{"title":"2027/28 entry, restricted bachelor's programs","due_at":"2027-07-15","route":"PULS","source_url":"https://www.uni-potsdam.de/en/studium/dates-and-deadlines/application-and-enrollment-deadlines.html"}],"sat":null,"acceptance_rate":null,"notes":"Most bachelor's programs require German proficiency; foreign school qualifications must be officially recognized before applying."},{"id":"47efdabd-702d-56a0-903e-ba43f360f28c","english":[{"test":"IELTS","minimum":6.0,"detail":"6.0 overall, no band below 6.0 for standard undergraduate entry; some programs require higher scores.","source_url":"https://www.canberra.edu.au/future-students/entry-requirements-options/core-admission-requirements/english-language-requirements"},{"test":"TOEFL iBT","minimum":67,"detail":"67 total with section minimums: R16, L16, S19, W19 for standard undergraduate entry.","source_url":"https://www.canberra.edu.au/future-students/entry-requirements-options/core-admission-requirements/english-language-requirements"},{"test":"Duolingo","minimum":105,"detail":"105 overall; visa eligibility restrictions apply to using Duolingo as evidence.","source_url":"https://www.canberra.edu.au/future-students/entry-requirements-options/core-admission-requirements/english-language-requirements"},{"test":"PTE Academic","minimum":50,"detail":"50 overall; standard undergraduate equivalence also requires R48, L47, S54, W51.","source_url":"https://www.canberra.edu.au/future-students/entry-requirements-options/core-admission-requirements/english-language-requirements"},{"test":"Cambridge C1/C2","minimum":169,"detail":"Cambridge English Scale 169 for standard undergraduate entry; some programs require higher scores.","source_url":"https://www.canberra.edu.au/future-students/entry-requirements-options/core-admission-requirements/english-language-requirements"}],"tuition":{"amount":34000,"amount_max":45000,"currency":"AUD","period":"year","academic_year":"2026","detail":"Published 2026 annual fees across listed bachelor's courses; fees vary by course and may rise annually.","source_url":"https://www.canberra.edu.au/content/dam/uc/documents/agent-marketing-toolkit/international-course-guide/international-student-english-pricelist.pdf"},"application_fee":null,"deadlines":[{"title":"Semester 1 2027 entry, offshore international","due_at":"2026-11-30","route":"UC international application portal","source_url":"https://www.canberra.edu.au/about-uc/key-dates/"},{"title":"Semester 1 2027 entry, onshore international","due_at":"2027-01-30","route":"UC international application portal","source_url":"https://www.canberra.edu.au/about-uc/key-dates/"}],"sat":null,"acceptance_rate":null,"notes":""},{"id":"ec7e29d9-f6cf-54d0-8a0b-03be7ec16751","english":[],"tuition":{"amount":20000,"amount_max":null,"currency":"CNY","period":"year","academic_year":"2027","detail":"Tuition is RMB 20,000 per academic year; the published undergraduate guide requires Chinese proficiency.","source_url":"https://admissions.cau.edu.cn/art/2026/9/3/art_48600_1135194.html"},"application_fee":{"amount":400,"currency":"CNY","source_url":"https://admissions.cau.edu.cn/art/2026/9/3/art_48600_1135194.html"},"deadlines":[{"title":"2027 entry","due_at":"2027-05-31","route":"CAU international student application website","source_url":"https://admissions.cau.edu.cn/art/2026/9/3/art_48600_1135194.html"}],"sat":null,"acceptance_rate":null,"notes":"Undergraduate applicants need HSK 5 or higher and must submit CSCA results."},{"id":"6f2bd9a0-2fe1-5216-a34f-cfd1e5fcedd7","english":[],"tuition":{"amount":15000,"amount_max":17000,"currency":"CNY","period":"year","academic_year":"2025","detail":"Published 2025-entry Chinese-taught bachelor's fees: arts RMB 15,000; science and engineering RMB 17,000.","source_url":"https://www-en.hnu.edu.cn/__local/1/D4/C0/0A6AC6A418F491ADEC7EE62655D_437210C1_5304C.pdf"},"application_fee":{"amount":400,"currency":"CNY","source_url":"https://www-en.hnu.edu.cn/__local/1/D4/C0/0A6AC6A418F491ADEC7EE62655D_437210C1_5304C.pdf"},"deadlines":[{"title":"2025 entry (nearest published cycle)","due_at":"2025-07-18","route":"Hunan University international student portal","source_url":"https://www-en.hnu.edu.cn/__local/1/D4/C0/0A6AC6A418F491ADEC7EE62655D_437210C1_5304C.pdf"}],"sat":null,"acceptance_rate":null,"notes":"The published guide lists bachelor's programs as Chinese-taught and requires HSK 6 or proof of prior Chinese-medium study."}] }
+tokens used
+121,418
+{"universities":[{"id":"67dfca3c-5823-563f-93e9-bfc3b528e490","english":[],"tuition":{"amount":0,"amount_max":null,"currency":"EUR","period":"year","academic_year":"2027/28","detail":"No tuition fees for undergraduate degrees; semester fees still apply.","source_url":"https://www.uni-potsdam.de/en/studium/studying/financing-funding-housing/costs-at-a-glance"},"application_fee":null,"deadlines":[{"title":"2027/28 entry, restricted bachelor's programs","due_at":"2027-07-15","route":"PULS","source_url":"https://www.uni-potsdam.de/en/studium/dates-and-deadlines/application-and-enrollment-deadlines.html"}],"sat":null,"acceptance_rate":null,"notes":"Most bachelor's programs require German proficiency; foreign school qualifications must be officially recognized before applying."},{"id":"47efdabd-702d-56a0-903e-ba43f360f28c","english":[{"test":"IELTS","minimum":6.0,"detail":"6.0 overall, no band below 6.0 for standard undergraduate entry; some programs require higher scores.","source_url":"https://www.canberra.edu.au/future-students/entry-requirements-options/core-admission-requirements/english-language-requirements"},{"test":"TOEFL iBT","minimum":67,"detail":"67 total with section minimums: R16, L16, S19, W19 for standard undergraduate entry.","source_url":"https://www.canberra.edu.au/future-students/entry-requirements-options/core-admission-requirements/english-language-requirements"},{"test":"Duolingo","minimum":105,"detail":"105 overall; visa eligibility restrictions apply to using Duolingo as evidence.","source_url":"https://www.canberra.edu.au/future-students/entry-requirements-options/core-admission-requirements/english-language-requirements"},{"test":"PTE Academic","minimum":50,"detail":"50 overall; standard undergraduate equivalence also requires R48, L47, S54, W51.","source_url":"https://www.canberra.edu.au/future-students/entry-requirements-options/core-admission-requirements/english-language-requirements"},{"test":"Cambridge C1/C2","minimum":169,"detail":"Cambridge English Scale 169 for standard undergraduate entry; some programs require higher scores.","source_url":"https://www.canberra.edu.au/future-students/entry-requirements-options/core-admission-requirements/english-language-requirements"}],"tuition":{"amount":34000,"amount_max":45000,"currency":"AUD","period":"year","academic_year":"2026","detail":"Published 2026 annual fees across listed bachelor's courses; fees vary by course and may rise annually.","source_url":"https://www.canberra.edu.au/content/dam/uc/documents/agent-marketing-toolkit/international-course-guide/international-student-english-pricelist.pdf"},"application_fee":null,"deadlines":[{"title":"Semester 1 2027 entry, offshore international","due_at":"2026-11-30","route":"UC international application portal","source_url":"https://www.canberra.edu.au/about-uc/key-dates/"},{"title":"Semester 1 2027 entry, onshore international","due_at":"2027-01-30","route":"UC international application portal","source_url":"https://www.canberra.edu.au/about-uc/key-dates/"}],"sat":null,"acceptance_rate":null,"notes":""},{"id":"ec7e29d9-f6cf-54d0-8a0b-03be7ec16751","english":[],"tuition":{"amount":20000,"amount_max":null,"currency":"CNY","period":"year","academic_year":"2027","detail":"Tuition is RMB 20,000 per academic year; the published undergraduate guide requires Chinese proficiency.","source_url":"https://admissions.cau.edu.cn/art/2026/9/3/art_48600_1135194.html"},"application_fee":{"amount":400,"currency":"CNY","source_url":"https://admissions.cau.edu.cn/art/2026/9/3/art_48600_1135194.html"},"deadlines":[{"title":"2027 entry","due_at":"2027-05-31","route":"CAU international student application website","source_url":"https://admissions.cau.edu.cn/art/2026/9/3/art_48600_1135194.html"}],"sat":null,"acceptance_rate":null,"notes":"Undergraduate applicants need HSK 5 or higher and must submit CSCA results."},{"id":"6f2bd9a0-2fe1-5216-a34f-cfd1e5fcedd7","english":[],"tuition":{"amount":15000,"amount_max":17000,"currency":"CNY","period":"year","academic_year":"2025","detail":"Published 2025-entry Chinese-taught bachelor's fees: arts RMB 15,000; science and engineering RMB 17,000.","source_url":"https://www-en.hnu.edu.cn/__local/1/D4/C0/0A6AC6A418F491ADEC7EE62655D_437210C1_5304C.pdf"},"application_fee":{"amount":400,"currency":"CNY","source_url":"https://www-en.hnu.edu.cn/__local/1/D4/C0/0A6AC6A418F491ADEC7EE62655D_437210C1_5304C.pdf"},"deadlines":[{"title":"2025 entry (nearest published cycle)","due_at":"2025-07-18","route":"Hunan University international student portal","source_url":"https://www-en.hnu.edu.cn/__local/1/D4/C0/0A6AC6A418F491ADEC7EE62655D_437210C1_5304C.pdf"}],"sat":null,"acceptance_rate":null,"notes":"The published guide lists bachelor's programs as Chinese-taught and requires HSK 6 or proof of prior Chinese-medium study."}] }

@@ -2,12 +2,19 @@ import { globalCatalogue } from "../../server/global-catalogue";
 import { currentScholarships } from "../../server/scholarship-catalogue";
 import applicationDates from "../../data/published/application-dates-current.json";
 import requirements from "../../data/published/requirements-current.json";
+import reviewedPolicies from "../../data/published/reviewed-requirements-oct05.json";
+import reviewedApplications from "../../data/published/reviewed-application-rounds-oct05.json";
 const literal = (v: unknown) =>
   v == null
     ? "null"
-    : typeof v === "boolean"
+    : typeof v === "boolean" || typeof v === "number"
       ? String(v)
-      : "'" + String(v).replaceAll("'", "''") + "'";
+      : "'" +
+        (typeof v === "object" ? JSON.stringify(v) : String(v)).replaceAll(
+          "'",
+          "''",
+        ) +
+        "'";
 export function awardImportSQL() {
   const evidence = [
     "-- Reviewed October 2026 awards, application dates and entry requirements. Run after 01 and 02.",
@@ -52,6 +59,7 @@ export function awardImportSQL() {
         scholarship_id: award.id,
       });
   }
+  for (const program of reviewedApplications.programs) insert("programs", program);
   for (const deadline of applicationDates) {
     insert("data_sources", {
       id: deadline.source_id,
@@ -69,6 +77,8 @@ export function awardImportSQL() {
       due_date: deadline.due_at.length === 10 ? deadline.due_at : null,
     });
   }
+  // Programme-scoped requirements retain their FK and explicit scope.
+  for (const program of reviewedPolicies.programs) insert("programs", program);
   for (const requirement of requirements) {
     insert(
       "data_sources",

@@ -1,0 +1,132 @@
+OpenAI Codex v0.169.0
+--------
+workdir: /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+model: gpt-6-luna
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: high
+reasoning summaries: none
+session id: 01a1ee8d-d83c-7853-ab2d-18363bf231e7
+--------
+user
+You are a careful admissions-data researcher. For each university below, find facts for an
+INTERNATIONAL applicant to a FIRST-YEAR BACHELOR'S degree starting in autumn 2027 (or the nearest
+published cycle). Use the live web. Rules:
+
+- Official sources only: the university's own website (its domain or subdomains), the national
+  application service (UCAS, Common App, OUAC, uni-assist, Studyinkorea, etc.) or a government
+  statistics office. Never use rankings sites, forums, agencies, Wikipedia or blogs.
+- Every value needs the exact page URL where you read it (source_url). If you could not verify a
+  value on an official page, leave it out (null or an empty list). Never guess or estimate.
+- english: the lowest overall score accepted for undergraduate entry, per test (IELTS Academic
+  overall, TOEFL iBT total, Duolingo, PTE). If programmes differ, give the general/lowest common
+  university minimum and say so in detail (e.g. "6.5 overall, no band below 6.0; some
+  programmes higher").
+- tuition: the yearly tuition for international (non-EU / overseas) undergraduates in the local
+  currency. If it varies by programme give amount = lowest and amount_max = highest, and the
+  academic_year the fee applies to (e.g. "2026/27"). If tuition is free, amount = 0.
+- application_fee: for international first-year applicants, local currency.
+- deadlines: the main 2027-entry first-year deadlines (ISO date YYYY-MM-DD) with the route
+  (e.g. "Common App, Regular Decision", "UCAS", "university portal"). Only dates actually
+  published; if only the 2026-entry date is published, include it and put "2026 entry" in title.
+- sat: policy for international applicants; p25/p75 total SAT only if the university publishes
+  them (Common Data Set or admissions profile).
+- acceptance_rate: only if officially published (CDS, admissions statistics page).
+- notes: one short line on anything important (e.g. "Foundation year required for 11-year
+  school certificates"), else "".
+
+Spend effort on the facts students need most: English minimum, tuition, deadlines. Keep each
+detail under 160 characters. Return only the JSON that matches the schema; use each
+university's id exactly as given.
+
+Universities:
+- id: 9106d880-ee3e-5919-b900-fd5966b29e47 | Linköping University | Linköping, SE | http://www.liu.se/
+- id: 09917ea1-c3bc-548b-9542-fa434bec531a | Kyung Hee University | Seoul, KR | http://www.kyunghee.edu/
+- id: 6f703309-82ad-5bd4-8075-969d78edb967 | Shandong University | Jinan, CN | http://www.sdu.edu.cn/
+- id: 242cc455-5ee6-592e-9553-f0d47583a53b | City St George's, University of London | London, GB | https://www.citystgeorges.ac.uk/
+codex
+I’m checking official admissions and fee pages for each university’s international undergraduate requirements, then I’ll return only the requested JSON. I’ll also load the project memory first, as required by the available memory skill.
+exec
+/bin/zsh -lc 'cat /Users/likeanew/.agents/skills/lemma/SKILL.md' in /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+ succeeded in 0ms:
+---
+name: lemma
+description: Persistent cross-session memory for AI agents via MCP. BEFORE starting ANY task (coding, debugging, refactoring, research, docs, optimization — any language), FIRST call memory_read to load what you already know so you never re-derive or re-explore known facts. AFTER finishing, call memory_add to persist new findings and session_attempt for dead ends — unsaved knowledge is lost permanently. Distills reusable guides from experience.
+---
+
+<!-- lemma:skill:v=0.21.0 -->
+
+# Lemma — Persistent Memory & Learning
+
+Lemma is a persistent memory server for AI agents over the Model Context Protocol.
+Every session starts blank — knowledge survives ONLY through tool calls. If you
+learn something and don't save it (`memory_add`), it is gone permanently.
+
+## Workflow
+1. **RECALL** — `memory_read` / `semantic_search`: load what's already known for this
+   project/task. Never re-explore code or re-derive facts that are already saved.
+2. **ACT** — do the task.
+3. **PERSIST** — `memory_add` for new insights; `guide_practice` for guides applied;
+   `session_attempt` for abandoned/dead-end approaches (the most valuable records).
+
+## Two knowledge layers
+- **Memory fragments** (`memory_read` / `memory_add`): atomic facts. Types: `fact`,
+  `pattern`, `lesson`, `warning`, `context`. Confidence evolves with use and feedback.
+- **Guides** (`guide_get` / `guide_distill` / `guide_practice`): procedural skills
+  distilled from fragments. Track usage count + success/failure rate.
+Pipeline: `experience -> memory_add -> pattern/lesson -> guide_distill -> guide_practice`.
+
+## Tools at a glance
+- **Recall & search**: `memory_read`, `semantic_search`, `memory_library` (full
+  snapshot + maintenance signals), `memory_stats`, `memory_audit`.
+- **Write & maintain**: `memory_add`, `memory_update`, `memory_forget`,
+  `memory_merge`, `memory_relate` (supports / contradicts / supersedes / related_to),
+  `memory_feedback`.
+- **Guides**: `guide_get`, `guide_create`, `guide_distill`, `guide_practice`,
+  `guide_update`, `guide_forget`, `guide_merge`.
+- **Sessions & reasoning**: `session_start`, `session_end`, `session_attempt`,
+  `session_stats`, `suggestion_respond`.
+- **Background intelligence**: `conflict_scan`, `proactive_analysis`,
+  `project_analytics` (run automatically; act on signals when sensible).
+
+## Writing a fragment
+```
+## [Topic Title]
+### Context
+[1-2 sentences: what and why it matters]
+### [Content Section]
+- [Key fact 1]
+- [Key fact 2]
+### Rules (optional)
+- [Absolute constraint]
+```
+One idea per fragment, 30-2000 chars, structured markdown (not prose). **Store
+fragments in ENGLISH** (required for search/retrieval). Never ask permission to save.
+
+## Background intelligence
+Conflict detection, distill/merge/refine suggestions, and auto-linking run
+automatically. From the CLI, `lemma -lib` prints a full knowledge-base snapshot
+and `lemma -vis` launches a visualizer.
+
+web search: 
+web search: site:liu.se international bachelor's tuition English requirements application fee autumn 2027 Linköping University ...
+web search: 
+web search: site:admission.khu.ac.kr "Undergraduate" international admission 2026 IELTS tuition ...
+web search: 
+web search: 
+web search: 
+web search: site:citystgeorges.ac.uk/prospective-students/courses/undergraduate/ 2027 "International" "£" fee undergraduate 2027 City St George's ...
+web search: 
+web search: site:citystgeorges.ac.uk "Fees for year 2027 / 28" "International" ...
+web search: 
+web search: site:istudy.sdu.edu.cn/__local/ "2026 Application Instructions for International Students" "IELTS" ...
+web search: 
+web search: site:citystgeorges.ac.uk/prospective-students/courses/undergraduate 2027/28 "International" "£" "Fees and funding" MBBS ...
+web search: 
+web search: site:citystgeorges.ac.uk "£20,390" "2027 / 28" ...
+codex
+{"universities":[{"id":"9106d880-ee3e-5919-b900-fd5966b29e47","english":[{"test":"IELTS","minimum":0,"detail":"6.5 overall, no section below 5.5.","source_url":"https://liu.se/en/article/bachelor-s-level-requirements"},{"test":"TOEFL iBT","minimum":0,"detail":"90 total, with at least 20 in writing.","source_url":"https://liu.se/en/article/bachelor-s-level-requirements"}],"tuition":{"amount":607000,"amount_max":null,"currency":"SEK","period":"total","academic_year":"Autumn 2027 entry","detail":"Published total for the 180-credit Experimental and Industrial Biomedicine bachelor’s programme.","source_url":"https://liu.se/en/education/program/mgmb2"},"application_fee":{"amount":900,"currency":"SEK","source_url":"https://liu.se/en/article/application-and-tuition-fees"},"deadlines":[{"title":"Autumn 2027 application deadline","due_at":"2027-01-15","route":"University Admissions in Sweden","source_url":"https://liu.se/en/education/program/mgmb2"},{"title":"Autumn 2027 documents and application fee deadline","due_at":"2027-02-01","route":"University Admissions in Sweden","source_url":"https://liu.se/en/education/degree-studies"}],"sat":null,"acceptance_rate":null,"notes":"LiU lists one international bachelor’s programme taught in English."},{"id":"09917ea1-c3bc-548b-9542-fa434bec531a","english":[{"test":"IELTS","minimum":0,"detail":"6.0 for English-track programmes; Korean-track applicants use Korean proficiency requirements.","source_url":"https://iadmission.khu.ac.kr/upload/contents/202602/202602201249323600.pdf"},{"test":"TOEFL iBT","minimum":0,"detail":"80 for English-track programmes; Korean-track applicants use Korean proficiency requirements.","source_url":"https://iadmission.khu.ac.kr/upload/contents/202602/202602201249323600.pdf"}],"tuition":{"amount":4748400,"amount_max":6405400,"currency":"KRW","period":"semester","academic_year":"2025/26","detail":"Freshman tuition per semester; listed rates are based on Fall 2025 and vary by college.","source_url":"https://iadmission.khu.ac.kr/upload/contents/202508/202508270325379690.pdf"},"application_fee":{"amount":180000,"currency":"KRW","source_url":"https://iadmission.khu.ac.kr/upload/contents/202508/202508270325379690.pdf"},"deadlines":[{"title":"Spring 2027 entry, first intake application","due_at":"2026-08-28","route":"KHU international admissions portal","source_url":"https://kmc.khu.ac.kr/gglobalcenter/user/contents/view.do?menuNo=8000031"}],"sat":null,"acceptance_rate":null,"notes":"The published Spring 2027 intake is the nearest international first-year cycle found; fees reflect the prior published schedule."},{"id":"6f703309-82ad-5bd4-8075-969d78edb967","english":[{"test":"IELTS","minimum":0,"detail":"6.0 or above for English-taught programs (2025 published cycle).","source_url":"https://istudy.sdu.edu.cn/__local/B/4E/A8/9EF4311AF7E922536859C405D7E_767A888C_294CD.pdf"},{"test":"TOEFL iBT","minimum":0,"detail":"80 or above for English-taught programs (2025 published cycle).","source_url":"https://istudy.sdu.edu.cn/__local/B/4E/A8/9EF4311AF7E922536859C405D7E_767A888C_294CD.pdf"}],"tuition":{"amount":26000,"amount_max":45000,"currency":"RMB","period":"year","academic_year":"2026/27","detail":"International bachelor’s tuition varies by program and language; 2026–2027 program lists show English-medium fees up to RMB 45,000/year.","source_url":"https://istudy.sdu.edu.cn/__local/E/F1/88/25A9D42A40C6B38E3225C624A07_0226E56E_17768.pdf"},"application_fee":{"amount":400,"currency":"RMB","source_url":"https://istudy.sdu.edu.cn/English/Fees1.htm"},"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"English minimum is from the 2025 guide; the 2026 bachelor’s instructions are published but their image-based details were not text-verifiable."},{"id":"242cc455-5ee6-592e-9553-f0d47583a53b","english":[{"test":"IELTS","minimum":0,"detail":"Band 1 minimum: 6.0 overall, 5.5 each component; some courses require higher bands.","source_url":"https://www.citystgeorges.ac.uk/prospective-students/apply/entry-requirements/english-language-requirements"},{"test":"TOEFL iBT","minimum":0,"detail":"Band 1 minimum: 80 overall, with component minimums; some courses require higher bands.","source_url":"https://www.citystgeorges.ac.uk/prospective-students/apply/entry-requirements/english-language-requirements"},{"test":"PTE Academic","minimum":0,"detail":"Band 1 minimum: 60 overall, 54 each component; visa-sponsored applicants need 59 each component.","source_url":"https://www.citystgeorges.ac.uk/prospective-students/apply/entry-requirements/english-language-requirements"},{"test":"Cambridge C1/C2","minimum":0,"detail":"Band 1 minimum: 169 overall, 162 each component; some courses require higher bands.","source_url":"https://www.citystgeorges.ac.uk/prospective-students/apply/entry-requirements/english-language-requirements"}],"tuition":{"amount":20390,"amount_max":47380,"currency":"GBP","period":"year","academic_year":"2027/28","detail":"Published international undergraduate fees vary by course; BA English is £20,390 and MBBS is £47,380.","source_url":"https://www.citystgeorges.ac.uk/prospective-students/courses/undergraduate/medicine/2027"},"application_fee":{"amount":34.5,"currency":"GBP","source_url":"https://www.ucas.com/faqs/what-is-the-application-fee-for-the-2027-cycle"},"deadlines":[{"title":"2027 entry equal consideration deadline","due_at":"2027-01-13","route":"UCAS","source_url":"https://www.ucas.com/events/2027-entry-deadline-for-all-undergraduate-courses-except-those-with-a-15-october-deadline-475546"},{"title":"2027 entry medicine deadline","due_at":"2026-10-15","route":"UCAS","source_url":"https://www.citystgeorges.ac.uk/prospective-students/courses/undergraduate/medicine/2027"}],"sat":null,"acceptance_rate":null,"notes":"Most undergraduate courses use the January UCAS deadline; medicine has an October deadline."}] }
+tokens used
+93,284
+{"universities":[{"id":"9106d880-ee3e-5919-b900-fd5966b29e47","english":[{"test":"IELTS","minimum":0,"detail":"6.5 overall, no section below 5.5.","source_url":"https://liu.se/en/article/bachelor-s-level-requirements"},{"test":"TOEFL iBT","minimum":0,"detail":"90 total, with at least 20 in writing.","source_url":"https://liu.se/en/article/bachelor-s-level-requirements"}],"tuition":{"amount":607000,"amount_max":null,"currency":"SEK","period":"total","academic_year":"Autumn 2027 entry","detail":"Published total for the 180-credit Experimental and Industrial Biomedicine bachelor’s programme.","source_url":"https://liu.se/en/education/program/mgmb2"},"application_fee":{"amount":900,"currency":"SEK","source_url":"https://liu.se/en/article/application-and-tuition-fees"},"deadlines":[{"title":"Autumn 2027 application deadline","due_at":"2027-01-15","route":"University Admissions in Sweden","source_url":"https://liu.se/en/education/program/mgmb2"},{"title":"Autumn 2027 documents and application fee deadline","due_at":"2027-02-01","route":"University Admissions in Sweden","source_url":"https://liu.se/en/education/degree-studies"}],"sat":null,"acceptance_rate":null,"notes":"LiU lists one international bachelor’s programme taught in English."},{"id":"09917ea1-c3bc-548b-9542-fa434bec531a","english":[{"test":"IELTS","minimum":0,"detail":"6.0 for English-track programmes; Korean-track applicants use Korean proficiency requirements.","source_url":"https://iadmission.khu.ac.kr/upload/contents/202602/202602201249323600.pdf"},{"test":"TOEFL iBT","minimum":0,"detail":"80 for English-track programmes; Korean-track applicants use Korean proficiency requirements.","source_url":"https://iadmission.khu.ac.kr/upload/contents/202602/202602201249323600.pdf"}],"tuition":{"amount":4748400,"amount_max":6405400,"currency":"KRW","period":"semester","academic_year":"2025/26","detail":"Freshman tuition per semester; listed rates are based on Fall 2025 and vary by college.","source_url":"https://iadmission.khu.ac.kr/upload/contents/202508/202508270325379690.pdf"},"application_fee":{"amount":180000,"currency":"KRW","source_url":"https://iadmission.khu.ac.kr/upload/contents/202508/202508270325379690.pdf"},"deadlines":[{"title":"Spring 2027 entry, first intake application","due_at":"2026-08-28","route":"KHU international admissions portal","source_url":"https://kmc.khu.ac.kr/gglobalcenter/user/contents/view.do?menuNo=8000031"}],"sat":null,"acceptance_rate":null,"notes":"The published Spring 2027 intake is the nearest international first-year cycle found; fees reflect the prior published schedule."},{"id":"6f703309-82ad-5bd4-8075-969d78edb967","english":[{"test":"IELTS","minimum":0,"detail":"6.0 or above for English-taught programs (2025 published cycle).","source_url":"https://istudy.sdu.edu.cn/__local/B/4E/A8/9EF4311AF7E922536859C405D7E_767A888C_294CD.pdf"},{"test":"TOEFL iBT","minimum":0,"detail":"80 or above for English-taught programs (2025 published cycle).","source_url":"https://istudy.sdu.edu.cn/__local/B/4E/A8/9EF4311AF7E922536859C405D7E_767A888C_294CD.pdf"}],"tuition":{"amount":26000,"amount_max":45000,"currency":"RMB","period":"year","academic_year":"2026/27","detail":"International bachelor’s tuition varies by program and language; 2026–2027 program lists show English-medium fees up to RMB 45,000/year.","source_url":"https://istudy.sdu.edu.cn/__local/E/F1/88/25A9D42A40C6B38E3225C624A07_0226E56E_17768.pdf"},"application_fee":{"amount":400,"currency":"RMB","source_url":"https://istudy.sdu.edu.cn/English/Fees1.htm"},"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"English minimum is from the 2025 guide; the 2026 bachelor’s instructions are published but their image-based details were not text-verifiable."},{"id":"242cc455-5ee6-592e-9553-f0d47583a53b","english":[{"test":"IELTS","minimum":0,"detail":"Band 1 minimum: 6.0 overall, 5.5 each component; some courses require higher bands.","source_url":"https://www.citystgeorges.ac.uk/prospective-students/apply/entry-requirements/english-language-requirements"},{"test":"TOEFL iBT","minimum":0,"detail":"Band 1 minimum: 80 overall, with component minimums; some courses require higher bands.","source_url":"https://www.citystgeorges.ac.uk/prospective-students/apply/entry-requirements/english-language-requirements"},{"test":"PTE Academic","minimum":0,"detail":"Band 1 minimum: 60 overall, 54 each component; visa-sponsored applicants need 59 each component.","source_url":"https://www.citystgeorges.ac.uk/prospective-students/apply/entry-requirements/english-language-requirements"},{"test":"Cambridge C1/C2","minimum":0,"detail":"Band 1 minimum: 169 overall, 162 each component; some courses require higher bands.","source_url":"https://www.citystgeorges.ac.uk/prospective-students/apply/entry-requirements/english-language-requirements"}],"tuition":{"amount":20390,"amount_max":47380,"currency":"GBP","period":"year","academic_year":"2027/28","detail":"Published international undergraduate fees vary by course; BA English is £20,390 and MBBS is £47,380.","source_url":"https://www.citystgeorges.ac.uk/prospective-students/courses/undergraduate/medicine/2027"},"application_fee":{"amount":34.5,"currency":"GBP","source_url":"https://www.ucas.com/faqs/what-is-the-application-fee-for-the-2027-cycle"},"deadlines":[{"title":"2027 entry equal consideration deadline","due_at":"2027-01-13","route":"UCAS","source_url":"https://www.ucas.com/events/2027-entry-deadline-for-all-undergraduate-courses-except-those-with-a-15-october-deadline-475546"},{"title":"2027 entry medicine deadline","due_at":"2026-10-15","route":"UCAS","source_url":"https://www.citystgeorges.ac.uk/prospective-students/courses/undergraduate/medicine/2027"}],"sat":null,"acceptance_rate":null,"notes":"Most undergraduate courses use the January UCAS deadline; medicine has an October deadline."}] }

@@ -1,0 +1,68 @@
+OpenAI Codex v0.169.0
+--------
+workdir: /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+model: gpt-6-luna
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: high
+reasoning summaries: none
+session id: 01a1ee8c-f01e-70f2-b6da-5daef4861e68
+--------
+user
+You are a careful admissions-data researcher. For each university below, find facts for an
+INTERNATIONAL applicant to a FIRST-YEAR BACHELOR'S degree starting in autumn 2027 (or the nearest
+published cycle). Use the live web. Rules:
+
+- Official sources only: the university's own website (its domain or subdomains), the national
+  application service (UCAS, Common App, OUAC, uni-assist, Studyinkorea, etc.) or a government
+  statistics office. Never use rankings sites, forums, agencies, Wikipedia or blogs.
+- Every value needs the exact page URL where you read it (source_url). If you could not verify a
+  value on an official page, leave it out (null or an empty list). Never guess or estimate.
+- english: the lowest overall score accepted for undergraduate entry, per test (IELTS Academic
+  overall, TOEFL iBT total, Duolingo, PTE). If programmes differ, give the general/lowest common
+  university minimum and say so in detail (e.g. "6.5 overall, no band below 6.0; some
+  programmes higher").
+- tuition: the yearly tuition for international (non-EU / overseas) undergraduates in the local
+  currency. If it varies by programme give amount = lowest and amount_max = highest, and the
+  academic_year the fee applies to (e.g. "2026/27"). If tuition is free, amount = 0.
+- application_fee: for international first-year applicants, local currency.
+- deadlines: the main 2027-entry first-year deadlines (ISO date YYYY-MM-DD) with the route
+  (e.g. "Common App, Regular Decision", "UCAS", "university portal"). Only dates actually
+  published; if only the 2026-entry date is published, include it and put "2026 entry" in title.
+- sat: policy for international applicants; p25/p75 total SAT only if the university publishes
+  them (Common Data Set or admissions profile).
+- acceptance_rate: only if officially published (CDS, admissions statistics page).
+- notes: one short line on anything important (e.g. "Foundation year required for 11-year
+  school certificates"), else "".
+
+Spend effort on the facts students need most: English minimum, tuition, deadlines. Keep each
+detail under 160 characters. Return only the JSON that matches the schema; use each
+university's id exactly as given.
+
+Universities:
+- id: 89ed6caa-1b3c-54a8-b6b8-10ce5a8679af | University of Colorado Boulder | Boulder, US | http://www.colorado.edu/
+- id: c1ec3e2e-379b-5a56-928d-77bce982bc93 | Ulsan National Institute of Science and Technology | Ulsan, KR | http://www.unist.ac.kr/
+- id: c353b675-c43e-5507-88d6-7a1850a92f27 | Université Paris Cité | Paris, FR | https://u-paris.fr
+- id: c25402df-2dd8-5b86-b4f4-a2bbada8c01d | Sichuan University | Chengdu, CN | http://www.scu.edu.cn/
+codex
+I’ll check each university’s official admissions and fee pages, then return only the requested JSON. I’ll treat a value as unknown if I can’t verify it on an official source.
+web search: 
+web search: site:colorado.edu international undergraduate English proficiency tuition 2027 application deadline SAT admissions ...
+web search: 
+web search: site:colorado.edu tuition 2026-2027 nonresident undergraduate cost tuition fee application fee 2027 Common Data Set acceptance ...
+web search: 
+web search: site:admu-intl.unist.ac.kr "2027" "application fee" undergraduate UNIST foreign ...
+web search: 
+web search: 
+web search: 
+web search: 
+web search: 
+web search: site:colorado.edu/oda Common Data Set 2024-2025 CU Boulder acceptance rate first-year ...
+web search: 
+web search: site:colorado.edu/bursar/media "Group V" "FALL 2026" international tuition ...
+codex
+{"universities":[{"id":"89ed6caa-1b3c-54a8-b6b8-10ce5a8679af","english":[{"test":"IELTS","minimum":6.5,"detail":"6.5 overall; minimum overall score listed by the university.","source_url":"https://www.colorado.edu/admissions/process/international/plan/english-proficiency"},{"test":"TOEFL iBT","minimum":80,"detail":"80 on the pre-Jan 2026 scale; 4.0 on the post-Jan 2026 scale.","source_url":"https://www.colorado.edu/admissions/process/international/plan/english-proficiency"},{"test":"Duolingo","minimum":115,"detail":"115 overall.","source_url":"https://www.colorado.edu/admissions/process/international/plan/english-proficiency"},{"test":"PTE Academic","minimum":58,"detail":"58 overall.","source_url":"https://www.colorado.edu/admissions/process/international/plan/english-proficiency"},{"test":"Cambridge C1/C2","minimum":180,"detail":"180 overall, C1 Advanced or C2 Proficiency.","source_url":"https://www.colorado.edu/admissions/process/international/plan/english-proficiency"}],"tuition":{"amount":47182,"amount_max":51284,"currency":"USD","period":"year","academic_year":"2026/27","detail":"Annualized from Fall 2026/Spring 2027 rates for incoming Group V; varies by program tier.","source_url":"https://www.colorado.edu/bursar/media/1129"},"application_fee":{"amount":70,"currency":"USD","source_url":"https://www.colorado.edu/admissions/process/first-year/apply"},"deadlines":[{"title":"Fall 2027 Early Action","due_at":"2026-11-15","route":"Common Application","source_url":"https://www.colorado.edu/admissions/process/international/apply"},{"title":"Fall 2027 Regular Decision","due_at":"2027-01-15","route":"Common Application","source_url":"https://www.colorado.edu/admissions/process/international/apply"}],"sat":{"policy":"optional","p25":1300,"p75":1450,"source_url":"https://www.colorado.edu/admissions/process/first-year/plan"},"acceptance_rate":{"percent":76,"year":"2024","source_url":"https://www.colorado.edu/today/2024/09/19/cu-boulder-enrollment-driven-record-retention"},"notes":""},{"id":"c1ec3e2e-379b-5a56-928d-77bce982bc93","english":[],"tuition":null,"application_fee":{"amount":50000,"currency":"KRW","source_url":"https://admu-intl.unist.ac.kr/admission-eng/admissions/admissions.do?articleNo=306812&attachNo=591437&mode=download"},"deadlines":[{"title":"Fall 2027 application deadline","due_at":"2027-01-22","route":"Study in Korea","source_url":"https://admu-intl.unist.ac.kr/admission-eng/admissions/admissions.do?articleNo=306812&attachNo=591437&mode=download"}],"sat":{"policy":"optional","p25":null,"p75":null,"source_url":"https://admu-intl.unist.ac.kr/admission-eng/admissions/admissions.do?articleNo=306812&attachNo=591437&mode=download"},"acceptance_rate":null,"notes":"English test report required; the Fall 2027 guideline names TOEFL, IELTS, TEPS and TOEIC but gives no minimum scores. Scholarship may cover tuition."},{"id":"c353b675-c43e-5507-88d6-7a1850a92f27","english":[],"tuition":{"amount":178,"amount_max":null,"currency":"EUR","period":"year","academic_year":"2026/27","detail":"International non-EU Licence students pay the European rate for 2026/27; 2027/28 amounts are not published.","source_url":"https://u-paris.fr/droits-dinscription-tarifs-exonerations/"},"application_fee":null,"deadlines":[{"title":"DAP deadline, 2027 entry","due_at":"2026-12-15","route":"DAP / Campus France or university submission","source_url":"https://u-paris.fr/demande-dadmission-prealable/"}],"sat":null,"acceptance_rate":null,"notes":"First-year Bachelor’s applicants use DAP; a French language test is required."},{"id":"c25402df-2dd8-5b86-b4f4-a2bbada8c01d","english":[{"test":"TOEFL iBT","minimum":80,"detail":"For English-taught majors; native English speakers and applicants with an English-medium prior degree may be exempt.","source_url":"https://global.scu.edu.cn/oso/article/index/1094"},{"test":"IELTS","minimum":6.0,"detail":"For English-taught majors; native English speakers and applicants with an English-medium prior degree may be exempt.","source_url":"https://global.scu.edu.cn/oso/article/index/1094"}],"tuition":{"amount":17500,"amount_max":45000,"currency":"RMB","period":"year","academic_year":"2027 entry (fee page undated)","detail":"Annual tuition varies by major: RMB 17,500–45,000; other listed fields have intermediate rates.","source_url":"https://global.scu.edu.cn/oso/article/index/1095?lang=en"},"application_fee":{"amount":600,"currency":"RMB","source_url":"https://global.scu.edu.cn/oso/article/index/1084?lang=en"},"deadlines":[{"title":"Autumn 2027 undergraduate application","due_at":"2027-05-30","route":"University portal","source_url":"https://global.scu.edu.cn/oso/article/details/7c5388ac-3600-4fc2-ae35-e802e6e09432?lang=zh"}],"sat":null,"acceptance_rate":null,"notes":"English minimums apply only to English-taught majors; Chinese-taught majors generally require HSK 5."}] }
+tokens used
+56,026
+{"universities":[{"id":"89ed6caa-1b3c-54a8-b6b8-10ce5a8679af","english":[{"test":"IELTS","minimum":6.5,"detail":"6.5 overall; minimum overall score listed by the university.","source_url":"https://www.colorado.edu/admissions/process/international/plan/english-proficiency"},{"test":"TOEFL iBT","minimum":80,"detail":"80 on the pre-Jan 2026 scale; 4.0 on the post-Jan 2026 scale.","source_url":"https://www.colorado.edu/admissions/process/international/plan/english-proficiency"},{"test":"Duolingo","minimum":115,"detail":"115 overall.","source_url":"https://www.colorado.edu/admissions/process/international/plan/english-proficiency"},{"test":"PTE Academic","minimum":58,"detail":"58 overall.","source_url":"https://www.colorado.edu/admissions/process/international/plan/english-proficiency"},{"test":"Cambridge C1/C2","minimum":180,"detail":"180 overall, C1 Advanced or C2 Proficiency.","source_url":"https://www.colorado.edu/admissions/process/international/plan/english-proficiency"}],"tuition":{"amount":47182,"amount_max":51284,"currency":"USD","period":"year","academic_year":"2026/27","detail":"Annualized from Fall 2026/Spring 2027 rates for incoming Group V; varies by program tier.","source_url":"https://www.colorado.edu/bursar/media/1129"},"application_fee":{"amount":70,"currency":"USD","source_url":"https://www.colorado.edu/admissions/process/first-year/apply"},"deadlines":[{"title":"Fall 2027 Early Action","due_at":"2026-11-15","route":"Common Application","source_url":"https://www.colorado.edu/admissions/process/international/apply"},{"title":"Fall 2027 Regular Decision","due_at":"2027-01-15","route":"Common Application","source_url":"https://www.colorado.edu/admissions/process/international/apply"}],"sat":{"policy":"optional","p25":1300,"p75":1450,"source_url":"https://www.colorado.edu/admissions/process/first-year/plan"},"acceptance_rate":{"percent":76,"year":"2024","source_url":"https://www.colorado.edu/today/2024/09/19/cu-boulder-enrollment-driven-record-retention"},"notes":""},{"id":"c1ec3e2e-379b-5a56-928d-77bce982bc93","english":[],"tuition":null,"application_fee":{"amount":50000,"currency":"KRW","source_url":"https://admu-intl.unist.ac.kr/admission-eng/admissions/admissions.do?articleNo=306812&attachNo=591437&mode=download"},"deadlines":[{"title":"Fall 2027 application deadline","due_at":"2027-01-22","route":"Study in Korea","source_url":"https://admu-intl.unist.ac.kr/admission-eng/admissions/admissions.do?articleNo=306812&attachNo=591437&mode=download"}],"sat":{"policy":"optional","p25":null,"p75":null,"source_url":"https://admu-intl.unist.ac.kr/admission-eng/admissions/admissions.do?articleNo=306812&attachNo=591437&mode=download"},"acceptance_rate":null,"notes":"English test report required; the Fall 2027 guideline names TOEFL, IELTS, TEPS and TOEIC but gives no minimum scores. Scholarship may cover tuition."},{"id":"c353b675-c43e-5507-88d6-7a1850a92f27","english":[],"tuition":{"amount":178,"amount_max":null,"currency":"EUR","period":"year","academic_year":"2026/27","detail":"International non-EU Licence students pay the European rate for 2026/27; 2027/28 amounts are not published.","source_url":"https://u-paris.fr/droits-dinscription-tarifs-exonerations/"},"application_fee":null,"deadlines":[{"title":"DAP deadline, 2027 entry","due_at":"2026-12-15","route":"DAP / Campus France or university submission","source_url":"https://u-paris.fr/demande-dadmission-prealable/"}],"sat":null,"acceptance_rate":null,"notes":"First-year Bachelor’s applicants use DAP; a French language test is required."},{"id":"c25402df-2dd8-5b86-b4f4-a2bbada8c01d","english":[{"test":"TOEFL iBT","minimum":80,"detail":"For English-taught majors; native English speakers and applicants with an English-medium prior degree may be exempt.","source_url":"https://global.scu.edu.cn/oso/article/index/1094"},{"test":"IELTS","minimum":6.0,"detail":"For English-taught majors; native English speakers and applicants with an English-medium prior degree may be exempt.","source_url":"https://global.scu.edu.cn/oso/article/index/1094"}],"tuition":{"amount":17500,"amount_max":45000,"currency":"RMB","period":"year","academic_year":"2027 entry (fee page undated)","detail":"Annual tuition varies by major: RMB 17,500–45,000; other listed fields have intermediate rates.","source_url":"https://global.scu.edu.cn/oso/article/index/1095?lang=en"},"application_fee":{"amount":600,"currency":"RMB","source_url":"https://global.scu.edu.cn/oso/article/index/1084?lang=en"},"deadlines":[{"title":"Autumn 2027 undergraduate application","due_at":"2027-05-30","route":"University portal","source_url":"https://global.scu.edu.cn/oso/article/details/7c5388ac-3600-4fc2-ae35-e802e6e09432?lang=zh"}],"sat":null,"acceptance_rate":null,"notes":"English minimums apply only to English-taught majors; Chinese-taught majors generally require HSK 5."}] }

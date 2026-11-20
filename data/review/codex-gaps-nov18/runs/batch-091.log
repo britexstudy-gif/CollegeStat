@@ -1,0 +1,78 @@
+OpenAI Codex v0.169.0
+--------
+workdir: /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+model: gpt-6-luna
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: high
+reasoning summaries: none
+session id: 01a1ee92-7205-73b2-8fe2-e15aa9454ec2
+--------
+user
+You are a careful admissions-data researcher. For each university below, find facts for an
+INTERNATIONAL applicant to a FIRST-YEAR BACHELOR'S degree starting in autumn 2027 (or the nearest
+published cycle). Use the live web. Rules:
+
+- Official sources only: the university's own website (its domain or subdomains), the national
+  application service (UCAS, Common App, OUAC, uni-assist, Studyinkorea, etc.) or a government
+  statistics office. Never use rankings sites, forums, agencies, Wikipedia or blogs.
+- Every value needs the exact page URL where you read it (source_url). If you could not verify a
+  value on an official page, leave it out (null or an empty list). Never guess or estimate.
+- english: the lowest overall score accepted for undergraduate entry, per test (IELTS Academic
+  overall, TOEFL iBT total, Duolingo, PTE). If programmes differ, give the general/lowest common
+  university minimum and say so in detail (e.g. "6.5 overall, no band below 6.0; some
+  programmes higher").
+- tuition: the yearly tuition for international (non-EU / overseas) undergraduates in the local
+  currency. If it varies by programme give amount = lowest and amount_max = highest, and the
+  academic_year the fee applies to (e.g. "2026/27"). If tuition is free, amount = 0.
+- application_fee: for international first-year applicants, local currency.
+- deadlines: the main 2027-entry first-year deadlines (ISO date YYYY-MM-DD) with the route
+  (e.g. "Common App, Regular Decision", "UCAS", "university portal"). Only dates actually
+  published; if only the 2026-entry date is published, include it and put "2026 entry" in title.
+- sat: policy for international applicants; p25/p75 total SAT only if the university publishes
+  them (Common Data Set or admissions profile).
+- acceptance_rate: only if officially published (CDS, admissions statistics page).
+- notes: one short line on anything important (e.g. "Foundation year required for 11-year
+  school certificates"), else "".
+
+Spend effort on the facts students need most: English minimum, tuition, deadlines. Keep each
+detail under 160 characters. Return only the JSON that matches the schema; use each
+university's id exactly as given.
+
+Universities:
+- id: ad49510e-30fc-58dd-9cd9-0b45edf6758c | Gwangju Institute of Science and Technology | Gwangju, KR | http://www.gist.ac.kr/
+- id: d05a9aab-0d9b-5bf0-95c3-d909c7f30942 | American University in Cairo | Cairo, EG | http://www.aucegypt.edu/
+- id: fa9a3fbb-6893-59cf-917b-668bd1099861 | University of East Anglia | Norwich, GB | http://www.uea.ac.uk/
+- id: 5fc62bb7-0198-5a07-8830-2735c17fd1ea | Northeastern University | Boston, US | http://www.northeastern.edu/
+codex
+I’ll check official admissions and fee pages for each institution, prioritizing the latest published international first-year cycle and recording only verifiable values.
+web search: 
+web search: site:admission.gist.ac.kr 2027 international undergraduate admission English tuition GIST ...
+web search: 
+web search: site:admission.gist.ac.kr international undergraduate GIST 2026 admission guide tuition ...
+web search: 
+web search: site:admission.gist.ac.kr/intl undergraduate admissions international GIST bachelor's ...
+web search: 
+web search: 
+web search: 
+web search: site:aucegypt.edu "application fee" undergraduate $50 AUC admissions ...
+web search: 
+web search: site:admission.gist.ac.kr "undergraduate" international admission GIST ...
+web search: 
+web search: GIST international admissions undergraduate official Gwangju Institute of Science and Technology bachelor's international applicants ...
+web search: 
+web search: 
+web search: 
+web search: 'English proficiency'
+web search: 
+web search: 
+web search: 
+web search: site:uea.ac.uk "IELTS Academic" "6.0" "5.5" Undergraduate English requirements international 2027 ...
+web search: 
+web search: 
+codex
+{"universities":[{"id":"ad49510e-30fc-58dd-9cd9-0b45edf6758c","english":[],"tuition":{"amount":0,"amount_max":null,"currency":"KRW","period":"year","academic_year":"2026/27","detail":"International students' ₩4,050,000 semester tuition is fully waived for 8 semesters.","source_url":"https://www.gist.ac.kr/iuadm/img/main/2026_Undergraduate_Guide_for_Ebook_single.pdf"},"application_fee":null,"deadlines":[{"title":"Fall 2026 entry","due_at":"2026-01-23","route":"GIST online application system","source_url":"https://ewww.gist.ac.kr/iuadm/img/main/2026_Fall_Undergraduate_Admission_Guideline.pdf"}],"sat":{"policy":"accepted_alternative","p25":null,"p75":null,"source_url":"https://ewww.gist.ac.kr/iuadm/img/main/2026_Fall_Undergraduate_Admission_Guideline.pdf"},"acceptance_rate":null,"notes":"English test score report required, but no minimum published; international applicants must meet nationality eligibility rules."},{"id":"d05a9aab-0d9b-5bf0-95c3-d909c7f30942","english":[],"tuition":{"amount":17640,"amount_max":null,"currency":"USD","period":"year","academic_year":"2025/26","detail":"Annual tuition shown for 12 credits each fall and spring semester; international rate is $735 per credit hour.","source_url":"https://www.aucegypt.edu/admissions/consumer-information/cost-attendance"},"application_fee":null,"deadlines":[{"title":"Fall 2027 Early Admission","due_at":"2027-02-01","route":"AUC online application","source_url":"https://www.aucegypt.edu/admissions/undergraduate-requirements"},{"title":"Fall 2027 Regular Admission","due_at":"2027-06-01","route":"AUC online application","source_url":"https://www.aucegypt.edu/admissions/undergraduate-requirements"}],"sat":null,"acceptance_rate":null,"notes":"English scores determine placement; accepted students below composition level may need a university bridge English course."},{"id":"fa9a3fbb-6893-59cf-917b-668bd1099861","english":[{"test":"IELTS","minimum":6.0,"detail":"6.0 overall; minimum 5.5 in each component for some first-year modules; some courses require higher scores.","source_url":"https://assets.uea.ac.uk/f/185167/x/e97202ad18/nbs_ug_brochure_2024_main.pdf"}],"tuition":{"amount":22900,"amount_max":29300,"currency":"GBP","period":"year","academic_year":"2027/28","detail":"Overseas full-time undergraduate entrant fees vary by course; published range shown.","source_url":"https://assets.uea.ac.uk/f/185167/x/c8143ccfcc/fees_table_2027-28_home_international_new_entrants_v7.pdf"},"application_fee":{"amount":34.5,"currency":"GBP","source_url":"https://www.ucas.com/faqs/what-is-the-application-fee-for-the-2027-cycle"},"deadlines":[{"title":"2027 entry equal consideration","due_at":"2027-01-13","route":"UCAS","source_url":"https://www.ucas.com/events/2027-entry-deadline-for-all-undergraduate-courses-except-those-with-a-15-october-deadline-475546"}],"sat":null,"acceptance_rate":null,"notes":""},{"id":"5fc62bb7-0198-5a07-8830-2735c17fd1ea","english":[],"tuition":{"amount":71050,"amount_max":null,"currency":"USD","period":"year","academic_year":"2026/27","detail":"Estimated annual tuition for first-year Boston, New York City, and Oakland campus students.","source_url":"https://admissions.northeastern.edu/cost-financial-aid/"},"application_fee":{"amount":75,"currency":"USD","source_url":"https://admissions.northeastern.edu/application-information/first-year-applicants/"},"deadlines":[{"title":"Early Decision I / Early Action 2027 entry","due_at":"2026-11-01","route":"Common App or Coalition Application","source_url":"https://admissions.northeastern.edu/academics/specialized-entry-programs/admissions-deadlines-decisions/"},{"title":"Early Decision II / Regular Decision 2027 entry","due_at":"2027-01-01","route":"Common App or Coalition Application","source_url":"https://admissions.northeastern.edu/academics/specialized-entry-programs/admissions-deadlines-decisions/"}],"sat":{"policy":"optional","p25":1440,"p75":1510,"source_url":"https://uds.northeastern.edu/university-facts/common-data-set/"},"acceptance_rate":null,"notes":"No minimum English test scores; Northeastern publishes admitted-student score ranges, not cutoffs."}]}
+tokens used
+113,621
+{"universities":[{"id":"ad49510e-30fc-58dd-9cd9-0b45edf6758c","english":[],"tuition":{"amount":0,"amount_max":null,"currency":"KRW","period":"year","academic_year":"2026/27","detail":"International students' ₩4,050,000 semester tuition is fully waived for 8 semesters.","source_url":"https://www.gist.ac.kr/iuadm/img/main/2026_Undergraduate_Guide_for_Ebook_single.pdf"},"application_fee":null,"deadlines":[{"title":"Fall 2026 entry","due_at":"2026-01-23","route":"GIST online application system","source_url":"https://ewww.gist.ac.kr/iuadm/img/main/2026_Fall_Undergraduate_Admission_Guideline.pdf"}],"sat":{"policy":"accepted_alternative","p25":null,"p75":null,"source_url":"https://ewww.gist.ac.kr/iuadm/img/main/2026_Fall_Undergraduate_Admission_Guideline.pdf"},"acceptance_rate":null,"notes":"English test score report required, but no minimum published; international applicants must meet nationality eligibility rules."},{"id":"d05a9aab-0d9b-5bf0-95c3-d909c7f30942","english":[],"tuition":{"amount":17640,"amount_max":null,"currency":"USD","period":"year","academic_year":"2025/26","detail":"Annual tuition shown for 12 credits each fall and spring semester; international rate is $735 per credit hour.","source_url":"https://www.aucegypt.edu/admissions/consumer-information/cost-attendance"},"application_fee":null,"deadlines":[{"title":"Fall 2027 Early Admission","due_at":"2027-02-01","route":"AUC online application","source_url":"https://www.aucegypt.edu/admissions/undergraduate-requirements"},{"title":"Fall 2027 Regular Admission","due_at":"2027-06-01","route":"AUC online application","source_url":"https://www.aucegypt.edu/admissions/undergraduate-requirements"}],"sat":null,"acceptance_rate":null,"notes":"English scores determine placement; accepted students below composition level may need a university bridge English course."},{"id":"fa9a3fbb-6893-59cf-917b-668bd1099861","english":[{"test":"IELTS","minimum":6.0,"detail":"6.0 overall; minimum 5.5 in each component for some first-year modules; some courses require higher scores.","source_url":"https://assets.uea.ac.uk/f/185167/x/e97202ad18/nbs_ug_brochure_2024_main.pdf"}],"tuition":{"amount":22900,"amount_max":29300,"currency":"GBP","period":"year","academic_year":"2027/28","detail":"Overseas full-time undergraduate entrant fees vary by course; published range shown.","source_url":"https://assets.uea.ac.uk/f/185167/x/c8143ccfcc/fees_table_2027-28_home_international_new_entrants_v7.pdf"},"application_fee":{"amount":34.5,"currency":"GBP","source_url":"https://www.ucas.com/faqs/what-is-the-application-fee-for-the-2027-cycle"},"deadlines":[{"title":"2027 entry equal consideration","due_at":"2027-01-13","route":"UCAS","source_url":"https://www.ucas.com/events/2027-entry-deadline-for-all-undergraduate-courses-except-those-with-a-15-october-deadline-475546"}],"sat":null,"acceptance_rate":null,"notes":""},{"id":"5fc62bb7-0198-5a07-8830-2735c17fd1ea","english":[],"tuition":{"amount":71050,"amount_max":null,"currency":"USD","period":"year","academic_year":"2026/27","detail":"Estimated annual tuition for first-year Boston, New York City, and Oakland campus students.","source_url":"https://admissions.northeastern.edu/cost-financial-aid/"},"application_fee":{"amount":75,"currency":"USD","source_url":"https://admissions.northeastern.edu/application-information/first-year-applicants/"},"deadlines":[{"title":"Early Decision I / Early Action 2027 entry","due_at":"2026-11-01","route":"Common App or Coalition Application","source_url":"https://admissions.northeastern.edu/academics/specialized-entry-programs/admissions-deadlines-decisions/"},{"title":"Early Decision II / Regular Decision 2027 entry","due_at":"2027-01-01","route":"Common App or Coalition Application","source_url":"https://admissions.northeastern.edu/academics/specialized-entry-programs/admissions-deadlines-decisions/"}],"sat":{"policy":"optional","p25":1440,"p75":1510,"source_url":"https://uds.northeastern.edu/university-facts/common-data-set/"},"acceptance_rate":null,"notes":"No minimum English test scores; Northeastern publishes admitted-student score ranges, not cutoffs."}]}

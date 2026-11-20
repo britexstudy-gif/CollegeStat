@@ -1,0 +1,7 @@
+# Landing page refinement — Muse Spark 1.3 xhigh
+
+Continue CollegeStat. FIRST inspect pages-ui/discovery-landing.tsx, components/college/hero-background.tsx, existing PixelBlast, landing styles and current page sections. User wants a more deliberate, comfortable research/admissions landing page. Preserve PixelBlast, the existing central search, voice-search behavior, real campus media, current university carousel, scholarships, practice studio, ranking links, personal workspace and footer. Fix genuine hierarchy/spacing/responsive/contrast problems without duplicating sections or adding fake claims or stock-generated pictures. Keep the hero animation large, bounded, behind content, readable in black/blue dark mode and default light mode. Meaningful reduced-motion scroll transitions should not hide content until hover.
+
+Own ONLY pages-ui/discovery-landing.tsx, new landing-specific components and app/landing-refinement-oct09.css. Do not edit HeroBackground or PixelBlast, existing shared components, globals.css, dashboards, auth/provider, university pages, APIs, data, migrations or dependencies. Root will import your CSS. No hosted writes, credentials, account changes, model substitution, external messaging, full build or server restart. Never read .env or outputs/review-account.json.
+
+Use actual current functionality and reusable code-native components. Avoid visual churn and retain the existing feature set. Run scoped lint and typecheck; record concrete changes and limitations in outputs/muse-landing-refinement-oct09-report.md.

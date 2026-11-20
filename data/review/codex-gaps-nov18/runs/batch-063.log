@@ -1,0 +1,122 @@
+OpenAI Codex v0.169.0
+--------
+workdir: /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+model: gpt-6-luna
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: high
+reasoning summaries: none
+session id: 01a1ee8a-dd3e-7cc2-b208-c8523c354135
+--------
+user
+You are a careful admissions-data researcher. For each university below, find facts for an
+INTERNATIONAL applicant to a FIRST-YEAR BACHELOR'S degree starting in autumn 2027 (or the nearest
+published cycle). Use the live web. Rules:
+
+- Official sources only: the university's own website (its domain or subdomains), the national
+  application service (UCAS, Common App, OUAC, uni-assist, Studyinkorea, etc.) or a government
+  statistics office. Never use rankings sites, forums, agencies, Wikipedia or blogs.
+- Every value needs the exact page URL where you read it (source_url). If you could not verify a
+  value on an official page, leave it out (null or an empty list). Never guess or estimate.
+- english: the lowest overall score accepted for undergraduate entry, per test (IELTS Academic
+  overall, TOEFL iBT total, Duolingo, PTE). If programmes differ, give the general/lowest common
+  university minimum and say so in detail (e.g. "6.5 overall, no band below 6.0; some
+  programmes higher").
+- tuition: the yearly tuition for international (non-EU / overseas) undergraduates in the local
+  currency. If it varies by programme give amount = lowest and amount_max = highest, and the
+  academic_year the fee applies to (e.g. "2026/27"). If tuition is free, amount = 0.
+- application_fee: for international first-year applicants, local currency.
+- deadlines: the main 2027-entry first-year deadlines (ISO date YYYY-MM-DD) with the route
+  (e.g. "Common App, Regular Decision", "UCAS", "university portal"). Only dates actually
+  published; if only the 2026-entry date is published, include it and put "2026 entry" in title.
+- sat: policy for international applicants; p25/p75 total SAT only if the university publishes
+  them (Common Data Set or admissions profile).
+- acceptance_rate: only if officially published (CDS, admissions statistics page).
+- notes: one short line on anything important (e.g. "Foundation year required for 11-year
+  school certificates"), else "".
+
+Spend effort on the facts students need most: English minimum, tuition, deadlines. Keep each
+detail under 160 characters. Return only the JSON that matches the schema; use each
+university's id exactly as given.
+
+Universities:
+- id: 731c32c4-6abe-59b8-bfe1-c0df705c0612 | Universität Köln | Cologne, DE | http://www.uni-koeln.de/
+- id: 37e007e0-63ca-5a1a-a785-cef05c73ec9b | University of Milan | Milan, IT | https://www.unimi.it/
+- id: 29507709-c065-51f2-a63d-22ecc1ac26e4 | University of Warsaw | Warsaw, PL | http://en.uw.edu.pl/
+- id: d8313905-8074-5f4f-9575-92096465d73c | North Carolina State University at Raleigh | Raleigh, US | http://www.ncsu.edu/
+codex
+I’ll check the current official admissions and fee pages for each university, using the nearest published entry cycle where 2027 details are not yet available.
+exec
+/bin/zsh -lc 'cat /Users/likeanew/.agents/skills/lemma/SKILL.md' in /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+ succeeded in 0ms:
+---
+name: lemma
+description: Persistent cross-session memory for AI agents via MCP. BEFORE starting ANY task (coding, debugging, refactoring, research, docs, optimization — any language), FIRST call memory_read to load what you already know so you never re-derive or re-explore known facts. AFTER finishing, call memory_add to persist new findings and session_attempt for dead ends — unsaved knowledge is lost permanently. Distills reusable guides from experience.
+---
+
+<!-- lemma:skill:v=0.21.0 -->
+
+# Lemma — Persistent Memory & Learning
+
+Lemma is a persistent memory server for AI agents over the Model Context Protocol.
+Every session starts blank — knowledge survives ONLY through tool calls. If you
+learn something and don't save it (`memory_add`), it is gone permanently.
+
+## Workflow
+1. **RECALL** — `memory_read` / `semantic_search`: load what's already known for this
+   project/task. Never re-explore code or re-derive facts that are already saved.
+2. **ACT** — do the task.
+3. **PERSIST** — `memory_add` for new insights; `guide_practice` for guides applied;
+   `session_attempt` for abandoned/dead-end approaches (the most valuable records).
+
+## Two knowledge layers
+- **Memory fragments** (`memory_read` / `memory_add`): atomic facts. Types: `fact`,
+  `pattern`, `lesson`, `warning`, `context`. Confidence evolves with use and feedback.
+- **Guides** (`guide_get` / `guide_distill` / `guide_practice`): procedural skills
+  distilled from fragments. Track usage count + success/failure rate.
+Pipeline: `experience -> memory_add -> pattern/lesson -> guide_distill -> guide_practice`.
+
+## Tools at a glance
+- **Recall & search**: `memory_read`, `semantic_search`, `memory_library` (full
+  snapshot + maintenance signals), `memory_stats`, `memory_audit`.
+- **Write & maintain**: `memory_add`, `memory_update`, `memory_forget`,
+  `memory_merge`, `memory_relate` (supports / contradicts / supersedes / related_to),
+  `memory_feedback`.
+- **Guides**: `guide_get`, `guide_create`, `guide_distill`, `guide_practice`,
+  `guide_update`, `guide_forget`, `guide_merge`.
+- **Sessions & reasoning**: `session_start`, `session_end`, `session_attempt`,
+  `session_stats`, `suggestion_respond`.
+- **Background intelligence**: `conflict_scan`, `proactive_analysis`,
+  `project_analytics` (run automatically; act on signals when sensible).
+
+## Writing a fragment
+```
+## [Topic Title]
+### Context
+[1-2 sentences: what and why it matters]
+### [Content Section]
+- [Key fact 1]
+- [Key fact 2]
+### Rules (optional)
+- [Absolute constraint]
+```
+One idea per fragment, 30-2000 chars, structured markdown (not prose). **Store
+fragments in ENGLISH** (required for search/retrieval). Never ask permission to save.
+
+## Background intelligence
+Conflict detection, distill/merge/refine suggestions, and auto-linking run
+automatically. From the CLI, `lemma -lib` prints a full knowledge-base snapshot
+and `lemma -vis` launches a visualizer.
+
+web search: 
+web search: site:uni-koeln.de international applicants bachelor tuition semester contribution application deadlines 2026 2027 English language ...
+web search: 
+web search: site:welcome.uw.edu.pl bachelor admission English IELTS TOEFL PTE tuition 2026 University Warsaw international candidates ...
+web search: 
+web search: site:welcome.uw.edu.pl IELTS "B2" TOEFL University of Warsaw certificates IELTS score ...
+codex
+{"universities":[{"id":"731c32c4-6abe-59b8-bfe1-c0df705c0612","english":[],"tuition":{"amount":0,"amount_max":null,"currency":"EUR","period":"year","academic_year":"2026/27","detail":"No tuition fees; students pay a semester social contribution fee, recalculated each semester.","source_url":"https://uni-koeln.de/en/studying-teaching/international/study-in-cologne/costs-financing"},"application_fee":null,"deadlines":[{"title":"2026 entry","due_at":"2026-07-15","route":"uni-assist, winter semester; deadline published for the nearest cycle","source_url":"https://uni-koeln.de/en/studium-lehre/international/studium-in-koeln/internationale-bewerbungen/bachelor-studium-staatsexamen/bewerbungsverfahren-fuer-nicht-eu-buergerinnen/application-procedure-for-non-eu-citizens-with-formal-university-entrance-qualification-studienstart-international-integrale"}],"sat":null,"acceptance_rate":null,"notes":"Bachelor's programmes are taught in German; applicants with indirect university entrance qualifications must complete Studienstart International plus."},{"id":"37e007e0-63ca-5a1a-a785-cef05c73ec9b","english":[],"tuition":{"amount":346,"amount_max":4365.12,"currency":"EUR","period":"year","academic_year":"2026/27","detail":"First instalment (€146) plus second instalment; international fees vary by country group and programme area. Regional tax adjustment may apply.","source_url":"https://www.unimi.it/en/study/bachelor-and-master-study/fees-and-how-pay-them/fees-current-year"},"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"Non-EU students resident abroad applying to Italian-taught degrees must pass an Italian proficiency test."},{"id":"29507709-c065-51f2-a63d-22ecc1ac26e4","english":[],"tuition":null,"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"English-taught degree applicants must provide a University-recognized B2 English certificate; fees and deadlines vary by programme."},{"id":"d8313905-8074-5f4f-9575-92096465d73c","english":[{"test":"TOEFL iBT","minimum":80,"detail":"80 total for exams before 2026-01-21; exams on/after that date require 4.5 overall, minimum 4 per subscore.","source_url":"https://admissions.ncsu.edu/apply/international/first-year/"},{"test":"Duolingo","minimum":110,"detail":"110 on the current scale for full undergraduate admission.","source_url":"https://admissions.ncsu.edu/apply/international/first-year/"},{"test":"IELTS","minimum":6.5,"detail":"6.5 overall, minimum 6.0 in each subscore.","source_url":"https://admissions.ncsu.edu/apply/international/first-year/"},{"test":"PTE Academic","minimum":58,"detail":"58 for full undergraduate admission.","source_url":"https://admissions.ncsu.edu/apply/international/first-year/"}],"tuition":{"amount":37510,"amount_max":null,"currency":"USD","period":"year","academic_year":"2027/28","detail":"Published estimated tuition and fees for international students starting fall 2027; excludes living expenses and insurance.","source_url":"https://admissions.ncsu.edu/apply/international/first-year/"},"application_fee":{"amount":100,"currency":"USD","source_url":"https://admissions.ncsu.edu/apply/international/first-year/"},"deadlines":[{"title":"Fall 2027 Early Action","due_at":"2026-11-01","route":"Common App or Coalition on Scoir","source_url":"https://admissions.ncsu.edu/apply/international/first-year/"},{"title":"Fall 2027 Regular Decision","due_at":"2027-01-15","route":"Common App or Coalition on Scoir","source_url":"https://admissions.ncsu.edu/apply/international/first-year/"}],"sat":{"policy":"optional","p25":null,"p75":null,"source_url":"https://admissions.ncsu.edu/connect/frequently-asked-questions/"},"acceptance_rate":{"percent":41,"year":"Fall 2026","source_url":"https://admissions.ncsu.edu/apply/fast-facts/"},"notes":"Applicants with a reading subscore of 33+ on SAT can meet the English requirement without an English test."}] }
+tokens used
+46,715
+{"universities":[{"id":"731c32c4-6abe-59b8-bfe1-c0df705c0612","english":[],"tuition":{"amount":0,"amount_max":null,"currency":"EUR","period":"year","academic_year":"2026/27","detail":"No tuition fees; students pay a semester social contribution fee, recalculated each semester.","source_url":"https://uni-koeln.de/en/studying-teaching/international/study-in-cologne/costs-financing"},"application_fee":null,"deadlines":[{"title":"2026 entry","due_at":"2026-07-15","route":"uni-assist, winter semester; deadline published for the nearest cycle","source_url":"https://uni-koeln.de/en/studium-lehre/international/studium-in-koeln/internationale-bewerbungen/bachelor-studium-staatsexamen/bewerbungsverfahren-fuer-nicht-eu-buergerinnen/application-procedure-for-non-eu-citizens-with-formal-university-entrance-qualification-studienstart-international-integrale"}],"sat":null,"acceptance_rate":null,"notes":"Bachelor's programmes are taught in German; applicants with indirect university entrance qualifications must complete Studienstart International plus."},{"id":"37e007e0-63ca-5a1a-a785-cef05c73ec9b","english":[],"tuition":{"amount":346,"amount_max":4365.12,"currency":"EUR","period":"year","academic_year":"2026/27","detail":"First instalment (€146) plus second instalment; international fees vary by country group and programme area. Regional tax adjustment may apply.","source_url":"https://www.unimi.it/en/study/bachelor-and-master-study/fees-and-how-pay-them/fees-current-year"},"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"Non-EU students resident abroad applying to Italian-taught degrees must pass an Italian proficiency test."},{"id":"29507709-c065-51f2-a63d-22ecc1ac26e4","english":[],"tuition":null,"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"English-taught degree applicants must provide a University-recognized B2 English certificate; fees and deadlines vary by programme."},{"id":"d8313905-8074-5f4f-9575-92096465d73c","english":[{"test":"TOEFL iBT","minimum":80,"detail":"80 total for exams before 2026-01-21; exams on/after that date require 4.5 overall, minimum 4 per subscore.","source_url":"https://admissions.ncsu.edu/apply/international/first-year/"},{"test":"Duolingo","minimum":110,"detail":"110 on the current scale for full undergraduate admission.","source_url":"https://admissions.ncsu.edu/apply/international/first-year/"},{"test":"IELTS","minimum":6.5,"detail":"6.5 overall, minimum 6.0 in each subscore.","source_url":"https://admissions.ncsu.edu/apply/international/first-year/"},{"test":"PTE Academic","minimum":58,"detail":"58 for full undergraduate admission.","source_url":"https://admissions.ncsu.edu/apply/international/first-year/"}],"tuition":{"amount":37510,"amount_max":null,"currency":"USD","period":"year","academic_year":"2027/28","detail":"Published estimated tuition and fees for international students starting fall 2027; excludes living expenses and insurance.","source_url":"https://admissions.ncsu.edu/apply/international/first-year/"},"application_fee":{"amount":100,"currency":"USD","source_url":"https://admissions.ncsu.edu/apply/international/first-year/"},"deadlines":[{"title":"Fall 2027 Early Action","due_at":"2026-11-01","route":"Common App or Coalition on Scoir","source_url":"https://admissions.ncsu.edu/apply/international/first-year/"},{"title":"Fall 2027 Regular Decision","due_at":"2027-01-15","route":"Common App or Coalition on Scoir","source_url":"https://admissions.ncsu.edu/apply/international/first-year/"}],"sat":{"policy":"optional","p25":null,"p75":null,"source_url":"https://admissions.ncsu.edu/connect/frequently-asked-questions/"},"acceptance_rate":{"percent":41,"year":"Fall 2026","source_url":"https://admissions.ncsu.edu/apply/fast-facts/"},"notes":"Applicants with a reading subscore of 33+ on SAT can meet the English requirement without an English test."}] }

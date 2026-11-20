@@ -1,0 +1,130 @@
+OpenAI Codex v0.169.0
+--------
+workdir: /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+model: gpt-6-luna
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: high
+reasoning summaries: none
+session id: 01a1ee87-98ae-7252-9bfd-5b2dbd163b65
+--------
+user
+You are a careful admissions-data researcher. For each university below, find facts for an
+INTERNATIONAL applicant to a FIRST-YEAR BACHELOR'S degree starting in autumn 2027 (or the nearest
+published cycle). Use the live web. Rules:
+
+- Official sources only: the university's own website (its domain or subdomains), the national
+  application service (UCAS, Common App, OUAC, uni-assist, Studyinkorea, etc.) or a government
+  statistics office. Never use rankings sites, forums, agencies, Wikipedia or blogs.
+- Every value needs the exact page URL where you read it (source_url). If you could not verify a
+  value on an official page, leave it out (null or an empty list). Never guess or estimate.
+- english: the lowest overall score accepted for undergraduate entry, per test (IELTS Academic
+  overall, TOEFL iBT total, Duolingo, PTE). If programmes differ, give the general/lowest common
+  university minimum and say so in detail (e.g. "6.5 overall, no band below 6.0; some
+  programmes higher").
+- tuition: the yearly tuition for international (non-EU / overseas) undergraduates in the local
+  currency. If it varies by programme give amount = lowest and amount_max = highest, and the
+  academic_year the fee applies to (e.g. "2026/27"). If tuition is free, amount = 0.
+- application_fee: for international first-year applicants, local currency.
+- deadlines: the main 2027-entry first-year deadlines (ISO date YYYY-MM-DD) with the route
+  (e.g. "Common App, Regular Decision", "UCAS", "university portal"). Only dates actually
+  published; if only the 2026-entry date is published, include it and put "2026 entry" in title.
+- sat: policy for international applicants; p25/p75 total SAT only if the university publishes
+  them (Common Data Set or admissions profile).
+- acceptance_rate: only if officially published (CDS, admissions statistics page).
+- notes: one short line on anything important (e.g. "Foundation year required for 11-year
+  school certificates"), else "".
+
+Spend effort on the facts students need most: English minimum, tuition, deadlines. Keep each
+detail under 160 characters. Return only the JSON that matches the schema; use each
+university's id exactly as given.
+
+Universities:
+- id: 9d15b8ca-98f0-5557-960f-2560c5825df5 | American University of Beirut | Beirut, LB | http://www.aub.edu.lb/
+- id: 474dac6f-db67-501b-b2f6-ba59aed7dbea | Queensland University of Technology | Brisbane, AU | http://www.qut.edu.au/
+- id: ed63af95-2b42-5cd4-ac83-1ac27f151daa | University of Newcastle | Newcastle, AU | http://www.newcastle.edu.au/
+- id: 30573a6d-9a4d-582f-9089-9c360793f28e | Université Libre de Bruxelles | Brussels, BE | https://www.ulb.be/
+codex
+I’m checking the saved research context first, then I’ll verify the admissions facts on official university and application-service pages.
+exec
+/bin/zsh -lc 'cat /Users/likeanew/.agents/skills/lemma/SKILL.md' in /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+ succeeded in 0ms:
+---
+name: lemma
+description: Persistent cross-session memory for AI agents via MCP. BEFORE starting ANY task (coding, debugging, refactoring, research, docs, optimization — any language), FIRST call memory_read to load what you already know so you never re-derive or re-explore known facts. AFTER finishing, call memory_add to persist new findings and session_attempt for dead ends — unsaved knowledge is lost permanently. Distills reusable guides from experience.
+---
+
+<!-- lemma:skill:v=0.21.0 -->
+
+# Lemma — Persistent Memory & Learning
+
+Lemma is a persistent memory server for AI agents over the Model Context Protocol.
+Every session starts blank — knowledge survives ONLY through tool calls. If you
+learn something and don't save it (`memory_add`), it is gone permanently.
+
+## Workflow
+1. **RECALL** — `memory_read` / `semantic_search`: load what's already known for this
+   project/task. Never re-explore code or re-derive facts that are already saved.
+2. **ACT** — do the task.
+3. **PERSIST** — `memory_add` for new insights; `guide_practice` for guides applied;
+   `session_attempt` for abandoned/dead-end approaches (the most valuable records).
+
+## Two knowledge layers
+- **Memory fragments** (`memory_read` / `memory_add`): atomic facts. Types: `fact`,
+  `pattern`, `lesson`, `warning`, `context`. Confidence evolves with use and feedback.
+- **Guides** (`guide_get` / `guide_distill` / `guide_practice`): procedural skills
+  distilled from fragments. Track usage count + success/failure rate.
+Pipeline: `experience -> memory_add -> pattern/lesson -> guide_distill -> guide_practice`.
+
+## Tools at a glance
+- **Recall & search**: `memory_read`, `semantic_search`, `memory_library` (full
+  snapshot + maintenance signals), `memory_stats`, `memory_audit`.
+- **Write & maintain**: `memory_add`, `memory_update`, `memory_forget`,
+  `memory_merge`, `memory_relate` (supports / contradicts / supersedes / related_to),
+  `memory_feedback`.
+- **Guides**: `guide_get`, `guide_create`, `guide_distill`, `guide_practice`,
+  `guide_update`, `guide_forget`, `guide_merge`.
+- **Sessions & reasoning**: `session_start`, `session_end`, `session_attempt`,
+  `session_stats`, `suggestion_respond`.
+- **Background intelligence**: `conflict_scan`, `proactive_analysis`,
+  `project_analytics` (run automatically; act on signals when sensible).
+
+## Writing a fragment
+```
+## [Topic Title]
+### Context
+[1-2 sentences: what and why it matters]
+### [Content Section]
+- [Key fact 1]
+- [Key fact 2]
+### Rules (optional)
+- [Absolute constraint]
+```
+One idea per fragment, 30-2000 chars, structured markdown (not prose). **Store
+fragments in ENGLISH** (required for search/retrieval). Never ask permission to save.
+
+## Background intelligence
+Conflict detection, distill/merge/refine suggestions, and auto-linking run
+automatically. From the CLI, `lemma -lib` prints a full knowledge-base snapshot
+and `lemma -vis` launches a visualizer.
+
+web search: 
+web search: site:aub.edu.lb undergraduate admissions international English proficiency tuition 2026 2027 application fee deadline ...
+web search: 
+web search: site:qut.edu.au/study/international/applying English requirements IELTS undergraduate 6.5 application fee ...
+web search: 
+web search: site:newcastle.edu.au/study/international/english-language-requirements IELTS 6.5 undergraduate TOEFL PTE ...
+web search: 
+web search: site:aub.edu.lb tuition fees undergraduate 2026-27 credit tuition rate ...
+web search: 
+web search: 
+web search: 
+web search: site:aub.edu.lb/admissions/Pages/EnglishRequirements.aspx "IELTS" undergraduate "TOEFL" ...
+web search: 
+web search: site:newcastle.edu.au/__data/assets/pdf_file/0020/1102565/ "2027" "$" "Bachelor of Medical Science" annual fee Newcastle ...
+codex
+{"universities":[{"id":"9d15b8ca-98f0-5557-960f-2560c5825df5","english":[],"tuition":null,"application_fee":{"amount":50,"currency":"USD","source_url":"https://www.aub.edu.lb/admissions/Sophomore-freshmen/Pages/Apply-Freshmen.aspx"},"deadlines":[{"title":"Regular freshman admission, Fall 2027–28","due_at":"2026-12-20","route":"AUB application or Common App","source_url":"https://www.aub.edu.lb/admissions/Sophomore-freshmen/Pages/Apply-Freshmen.aspx"}],"sat":{"policy":"required","p25":null,"p75":null,"source_url":"https://www.aub.edu.lb/admissions/Sophomore-freshmen/Pages/Apply-Freshmen.aspx"},"acceptance_rate":null,"notes":"AUB lists undergraduate English test options, but its linked page did not expose score thresholds. Tuition is published per credit, not yearly."},{"id":"474dac6f-db67-501b-b2f6-ba59aed7dbea","english":[{"test":"IELTS","minimum":6.5,"detail":"6.5 overall, no subscore below 6.0; course requirements may vary.","source_url":"https://www.qut.edu.au/courses/bachelor-of-business-management"},{"test":"TOEFL iBT","minimum":79,"detail":"79 overall; section minima apply and may vary by course.","source_url":"https://www.qut.edu.au/courses/bachelor-of-business-management"},{"test":"PTE Academic","minimum":58,"detail":"58 overall; section minima apply and may vary by course.","source_url":"https://www.qut.edu.au/courses/bachelor-of-business-management"}],"tuition":null,"application_fee":{"amount":100,"currency":"AUD","source_url":"https://www.qut.edu.au/study/applying/international-applying"},"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"QUT says applications are open year-round; some courses have separate closing dates. 2027 fees are published by course."},{"id":"ed63af95-2b42-5cd4-ac83-1ac27f151daa","english":[{"test":"IELTS","minimum":6,"detail":"General undergraduate standard: 6.0 overall and minimum 6.0 in each section; some programs require higher scores.","source_url":"https://policies.newcastle.edu.au/document/view-current.php?id=166&version=7"},{"test":"TOEFL iBT","minimum":60,"detail":"General undergraduate standard: 60 overall; section minimums apply. Some programs require higher scores.","source_url":"https://policies.newcastle.edu.au/document/view-current.php?id=166&version=7"},{"test":"Duolingo","minimum":110,"detail":"110 overall; DET recognition is limited to eligible low-risk-country applicants.","source_url":"https://policies.newcastle.edu.au/document/view-current.php?id=166&version=7"},{"test":"PTE Academic","minimum":50,"detail":"50 overall; section minimums apply. Some programs require higher scores.","source_url":"https://policies.newcastle.edu.au/document/view-current.php?id=166&version=7"}],"tuition":null,"application_fee":null,"deadlines":[{"title":"Semester 1, 2027 application close","due_at":"2026-10-30","route":"University international application portal","source_url":"https://www.newcastle.edu.au/study/international/how-to-apply"}],"sat":null,"acceptance_rate":null,"notes":"2027 indicative annual fees vary by degree; the university publishes a program-by-program fee schedule."},{"id":"30573a6d-9a4d-582f-9089-9c360793f28e","english":[],"tuition":{"amount":1194,"amount_max":5369,"currency":"EUR","period":"year","academic_year":"2026/27","detail":"For non-EU students not assimilated: €1,194 if exempt from the extra contribution; otherwise €5,369.","source_url":"https://www.ulb.be/fr/inscriptions/frais-d-inscription"},"application_fee":{"amount":200,"currency":"EUR","source_url":"https://www.ulb.be/fr/preparer-un-dossier/informations-pour-les-etudiants-etrangers"},"deadlines":[{"title":"Non-European applicants, 2027 entry","due_at":"2027-03-31","route":"ULB online application","source_url":"https://www.ulb.be/en/prepare-your-application/submission-deadlines"}],"sat":null,"acceptance_rate":null,"notes":"ULB is French-speaking; some non-EU first-cycle applicants must prove French B2 if French was not in their final school curriculum."}] }
+tokens used
+101,531
+{"universities":[{"id":"9d15b8ca-98f0-5557-960f-2560c5825df5","english":[],"tuition":null,"application_fee":{"amount":50,"currency":"USD","source_url":"https://www.aub.edu.lb/admissions/Sophomore-freshmen/Pages/Apply-Freshmen.aspx"},"deadlines":[{"title":"Regular freshman admission, Fall 2027–28","due_at":"2026-12-20","route":"AUB application or Common App","source_url":"https://www.aub.edu.lb/admissions/Sophomore-freshmen/Pages/Apply-Freshmen.aspx"}],"sat":{"policy":"required","p25":null,"p75":null,"source_url":"https://www.aub.edu.lb/admissions/Sophomore-freshmen/Pages/Apply-Freshmen.aspx"},"acceptance_rate":null,"notes":"AUB lists undergraduate English test options, but its linked page did not expose score thresholds. Tuition is published per credit, not yearly."},{"id":"474dac6f-db67-501b-b2f6-ba59aed7dbea","english":[{"test":"IELTS","minimum":6.5,"detail":"6.5 overall, no subscore below 6.0; course requirements may vary.","source_url":"https://www.qut.edu.au/courses/bachelor-of-business-management"},{"test":"TOEFL iBT","minimum":79,"detail":"79 overall; section minima apply and may vary by course.","source_url":"https://www.qut.edu.au/courses/bachelor-of-business-management"},{"test":"PTE Academic","minimum":58,"detail":"58 overall; section minima apply and may vary by course.","source_url":"https://www.qut.edu.au/courses/bachelor-of-business-management"}],"tuition":null,"application_fee":{"amount":100,"currency":"AUD","source_url":"https://www.qut.edu.au/study/applying/international-applying"},"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"QUT says applications are open year-round; some courses have separate closing dates. 2027 fees are published by course."},{"id":"ed63af95-2b42-5cd4-ac83-1ac27f151daa","english":[{"test":"IELTS","minimum":6,"detail":"General undergraduate standard: 6.0 overall and minimum 6.0 in each section; some programs require higher scores.","source_url":"https://policies.newcastle.edu.au/document/view-current.php?id=166&version=7"},{"test":"TOEFL iBT","minimum":60,"detail":"General undergraduate standard: 60 overall; section minimums apply. Some programs require higher scores.","source_url":"https://policies.newcastle.edu.au/document/view-current.php?id=166&version=7"},{"test":"Duolingo","minimum":110,"detail":"110 overall; DET recognition is limited to eligible low-risk-country applicants.","source_url":"https://policies.newcastle.edu.au/document/view-current.php?id=166&version=7"},{"test":"PTE Academic","minimum":50,"detail":"50 overall; section minimums apply. Some programs require higher scores.","source_url":"https://policies.newcastle.edu.au/document/view-current.php?id=166&version=7"}],"tuition":null,"application_fee":null,"deadlines":[{"title":"Semester 1, 2027 application close","due_at":"2026-10-30","route":"University international application portal","source_url":"https://www.newcastle.edu.au/study/international/how-to-apply"}],"sat":null,"acceptance_rate":null,"notes":"2027 indicative annual fees vary by degree; the university publishes a program-by-program fee schedule."},{"id":"30573a6d-9a4d-582f-9089-9c360793f28e","english":[],"tuition":{"amount":1194,"amount_max":5369,"currency":"EUR","period":"year","academic_year":"2026/27","detail":"For non-EU students not assimilated: €1,194 if exempt from the extra contribution; otherwise €5,369.","source_url":"https://www.ulb.be/fr/inscriptions/frais-d-inscription"},"application_fee":{"amount":200,"currency":"EUR","source_url":"https://www.ulb.be/fr/preparer-un-dossier/informations-pour-les-etudiants-etrangers"},"deadlines":[{"title":"Non-European applicants, 2027 entry","due_at":"2027-03-31","route":"ULB online application","source_url":"https://www.ulb.be/en/prepare-your-application/submission-deadlines"}],"sat":null,"acceptance_rate":null,"notes":"ULB is French-speaking; some non-EU first-cycle applicants must prove French B2 if French was not in their final school curriculum."}] }

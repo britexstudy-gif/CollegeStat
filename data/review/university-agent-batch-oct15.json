@@ -1,0 +1,2815 @@
+{
+  "schemaVersion": 1,
+  "preparedAt": "2026-10-16",
+  "status": "prepared_candidates_only",
+  "uniqueUniversities": 100,
+  "preparedTasks": 200,
+  "executionTrackedIn": "outputs/university-agent-batch-oct15/*/receipt.json",
+  "publishedRecords": 0,
+  "opencodeModel": "opencode/muse-spark-1.3-contributor-free#xhigh",
+  "freebuffModel": "installed_default",
+  "universities": [
+    {
+      "task": "001",
+      "id": "22222222-2222-4222-8222-222222222222",
+      "slug": "mit",
+      "name": "Massachusetts Institute of Technology",
+      "website": "http://web.mit.edu/",
+      "countryCode": "US"
+    },
+    {
+      "task": "002",
+      "id": "5ad45ea9-e51c-59e4-9ef7-6d3768be673c",
+      "slug": "imperial-college-london-5ad45ea9",
+      "name": "Imperial College London",
+      "website": "http://www.imperial.ac.uk/",
+      "countryCode": "GB"
+    },
+    {
+      "task": "003",
+      "id": "11111111-1111-4111-8111-111111111111",
+      "slug": "stanford",
+      "name": "Stanford University",
+      "website": "http://www.stanford.edu/",
+      "countryCode": "US"
+    },
+    {
+      "task": "004",
+      "id": "33333333-3333-4333-8333-333333333333",
+      "slug": "oxford",
+      "name": "University of Oxford",
+      "website": "http://www.ox.ac.uk/",
+      "countryCode": "GB"
+    },
+    {
+      "task": "005",
+      "id": "39230496-b2fc-53ca-9303-1726c4ac13da",
+      "slug": "harvard-university-39230496",
+      "name": "Harvard University",
+      "website": "http://www.harvard.edu/",
+      "countryCode": "US"
+    },
+    {
+      "task": "006",
+      "id": "ae117645-e24c-5269-8ed1-b5b826e53932",
+      "slug": "university-of-cambridge-ae117645",
+      "name": "University of Cambridge",
+      "website": "http://www.cam.ac.uk/",
+      "countryCode": "GB"
+    },
+    {
+      "task": "007",
+      "id": "99fbcf31-606d-5dac-880e-83ca25acd942",
+      "slug": "california-institute-of-technology-99fbcf31",
+      "name": "California Institute of Technology",
+      "website": "http://www.caltech.edu/",
+      "countryCode": "US"
+    },
+    {
+      "task": "008",
+      "id": "6020a2b5-3788-5dd1-b3f2-b9c6c7c6f99b",
+      "slug": "ethz-eth-zurich-6020a2b5",
+      "name": "ETHZ - ETH Zurich",
+      "website": "http://www.ethz.ch/",
+      "countryCode": "CH"
+    },
+    {
+      "task": "009",
+      "id": "4b7862dc-7567-5f81-af58-c01144412a88",
+      "slug": "university-college-london-4b7862dc",
+      "name": "University College London",
+      "website": "http://www.ucl.ac.uk/",
+      "countryCode": "GB"
+    },
+    {
+      "task": "010",
+      "id": "c66c3755-66a2-57a0-a80e-da984c310d29",
+      "slug": "national-university-of-singapore-c66c3755",
+      "name": "National University of Singapore",
+      "website": "https://www.nus.edu.sg/",
+      "countryCode": "SG"
+    },
+    {
+      "task": "011",
+      "id": "b37d730b-421c-5ed6-a807-3d66e7ca21f7",
+      "slug": "the-university-of-hong-kong-b37d730b",
+      "name": "The University of Hong Kong",
+      "website": "https://www.hku.hk/",
+      "countryCode": "HK"
+    },
+    {
+      "task": "012",
+      "id": "f5a6d73a-5fd2-55de-83af-3da2c25e18ef",
+      "slug": "nanyang-technological-university-f5a6d73a",
+      "name": "Nanyang Technological University",
+      "website": "https://www.ntu.edu.sg",
+      "countryCode": "SG"
+    },
+    {
+      "task": "013",
+      "id": "79e1cf8b-6a97-5fef-ac23-aa6012197801",
+      "slug": "peking-university-79e1cf8b",
+      "name": "Peking University",
+      "website": "http://www.pku.edu.cn/",
+      "countryCode": "CN"
+    },
+    {
+      "task": "014",
+      "id": "519c66df-8779-5336-acda-2cba10f95c66",
+      "slug": "tsinghua-university-519c66df",
+      "name": "Tsinghua University",
+      "website": "http://www.tsinghua.edu.cn/",
+      "countryCode": "CN"
+    },
+    {
+      "task": "015",
+      "id": "894119e1-40c1-5589-8677-e1ed97388e59",
+      "slug": "university-of-pennsylvania-894119e1",
+      "name": "University of Pennsylvania",
+      "website": "http://www.upenn.edu/",
+      "countryCode": "US"
+    },
+    {
+      "task": "016",
+      "id": "8488d97e-a227-5fbd-b7b4-33a1194df723",
+      "slug": "cornell-university-8488d97e",
+      "name": "Cornell University",
+      "website": "http://www.cornell.edu/",
+      "countryCode": "US"
+    },
+    {
+      "task": "017",
+      "id": "0a670c6d-e20a-527f-851b-e2c1306cce70",
+      "slug": "yale-university-0a670c6d",
+      "name": "Yale University",
+      "website": "http://www.yale.edu/",
+      "countryCode": "US"
+    },
+    {
+      "task": "018",
+      "id": "7deae08f-080e-56cd-8aa8-ca05c941f0cc",
+      "slug": "the-chinese-university-of-hong-kong-7deae08f",
+      "name": "The Chinese University of Hong Kong",
+      "website": "https://www.cuhk.edu.hk/",
+      "countryCode": "HK"
+    },
+    {
+      "task": "019",
+      "id": "34f9bd5c-1c24-5d4f-880c-4a342627a148",
+      "slug": "unsw-sydney-34f9bd5c",
+      "name": "UNSW Sydney",
+      "website": "https://www.unsw.edu.au/",
+      "countryCode": "AU"
+    },
+    {
+      "task": "020",
+      "id": "f5c17f3c-ac83-5193-8c71-641147ad926c",
+      "slug": "johns-hopkins-university-f5c17f3c",
+      "name": "Johns Hopkins University",
+      "website": "http://www.jhu.edu/",
+      "countryCode": "US"
+    },
+    {
+      "task": "021",
+      "id": "e67501b3-2e87-5598-b9e3-e28fe4101f68",
+      "slug": "university-of-california-berkeley-e67501b3",
+      "name": "University of California-Berkeley",
+      "website": "http://www.berkeley.edu/",
+      "countryCode": "US"
+    },
+    {
+      "task": "022",
+      "id": "819bd7c2-cc38-5dc4-854d-2d59a8a9f4e5",
+      "slug": "epfl-epf-lausanne-819bd7c2",
+      "name": "EPFL - EPF Lausanne",
+      "website": "http://www.epfl.ch/",
+      "countryCode": "CH"
+    },
+    {
+      "task": "023",
+      "id": "6f8ca7da-1cba-56f4-89e6-4cffd48126ac",
+      "slug": "university-of-melbourne-6f8ca7da",
+      "name": "University of Melbourne",
+      "website": "http://www.unimelb.edu.au/",
+      "countryCode": "AU"
+    },
+    {
+      "task": "024",
+      "id": "7add53a9-8ddf-5e84-bd4d-a7c8638dbb95",
+      "slug": "university-of-chicago-7add53a9",
+      "name": "University of Chicago",
+      "website": "http://www.uchicago.edu/",
+      "countryCode": "US"
+    },
+    {
+      "task": "025",
+      "id": "44444444-4444-4444-8444-444444444444",
+      "slug": "tum",
+      "name": "Technische Universität München",
+      "website": "http://www.tum.de/",
+      "countryCode": "DE"
+    },
+    {
+      "task": "026",
+      "id": "5c9532a7-118a-5e2d-ab32-92ade2e776a5",
+      "slug": "fudan-university-5c9532a7",
+      "name": "Fudan University",
+      "website": "http://www.fudan.edu.cn/",
+      "countryCode": "CN"
+    },
+    {
+      "task": "027",
+      "id": "6f13f9e9-cf5f-56ad-8384-39a9dc592d58",
+      "slug": "princeton-university-6f13f9e9",
+      "name": "Princeton University",
+      "website": "http://www.princeton.edu/",
+      "countryCode": "US"
+    },
+    {
+      "task": "028",
+      "id": "c67598f4-8b91-53a9-a98a-ebd185ced219",
+      "slug": "university-of-sydney-c67598f4",
+      "name": "University of Sydney",
+      "website": "http://sydney.edu.au/",
+      "countryCode": "AU"
+    },
+    {
+      "task": "029",
+      "id": "14fa4c62-b910-520b-aa51-0bf334f02b1c",
+      "slug": "australian-national-university-14fa4c62",
+      "name": "Australian National University",
+      "website": "http://www.anu.edu.au/",
+      "countryCode": "AU"
+    },
+    {
+      "task": "030",
+      "id": "b48ecdd6-9331-5ee8-a4ad-7f5b046d5356",
+      "slug": "mcgill-university-b48ecdd6",
+      "name": "McGill University",
+      "website": "https://www.mcgill.ca",
+      "countryCode": "CA"
+    },
+    {
+      "task": "031",
+      "id": "66cc3fd0-3055-5d88-b1d0-586a11515643",
+      "slug": "monash-university-66cc3fd0",
+      "name": "Monash University",
+      "website": "http://www.monash.edu/",
+      "countryCode": "AU"
+    },
+    {
+      "task": "032",
+      "id": "55555555-5555-4555-8555-555555555555",
+      "slug": "toronto",
+      "name": "University of Toronto",
+      "website": "http://www.utoronto.ca/",
+      "countryCode": "CA"
+    },
+    {
+      "task": "033",
+      "id": "74996b5e-c39f-52f1-9e01-88f3051f155b",
+      "slug": "the-hong-kong-university-of-science-and-technology-74996b5e",
+      "name": "The Hong Kong University of Science and Technology",
+      "website": "https://hkust.edu.hk/",
+      "countryCode": "HK"
+    },
+    {
+      "task": "034",
+      "id": "c5ca35b6-8983-574d-89ec-d15da6afa1fe",
+      "slug": "universite-paris-sciences-et-lettres-c5ca35b6",
+      "name": "Université Paris Sciences et Lettres",
+      "website": "https://psl.eu",
+      "countryCode": "FR"
+    },
+    {
+      "task": "035",
+      "id": "f2f2a71c-abeb-5dc7-b18b-aa8b00611b0a",
+      "slug": "university-of-edinburgh-f2f2a71c",
+      "name": "University of Edinburgh",
+      "website": "http://www.ed.ac.uk/",
+      "countryCode": "GB"
+    },
+    {
+      "task": "036",
+      "id": "40dc3bce-f456-577e-9003-9c143d3b52bb",
+      "slug": "shanghai-jiaotong-university-40dc3bce",
+      "name": "Shanghai Jiaotong University",
+      "website": "http://www.sjtu.edu.cn/",
+      "countryCode": "CN"
+    },
+    {
+      "task": "037",
+      "id": "01649f44-22e4-5b85-adaa-81f3538aa083",
+      "slug": "king-s-college-london-university-of-london-01649f44",
+      "name": "King's College London, University of London",
+      "website": "http://www.kcl.ac.uk/",
+      "countryCode": "GB"
+    },
+    {
+      "task": "038",
+      "id": "6a9e2556-fc5f-56a2-bca0-9364f099818c",
+      "slug": "seoul-national-university-6a9e2556",
+      "name": "Seoul National University",
+      "website": "http://www.snu.ac.kr/",
+      "countryCode": "KR"
+    },
+    {
+      "task": "039",
+      "id": "11087dc1-5405-5bd2-a5e2-def936b94cf7",
+      "slug": "university-of-tokyo-11087dc1",
+      "name": "University of Tokyo",
+      "website": "http://www.u-tokyo.ac.jp/",
+      "countryCode": "JP"
+    },
+    {
+      "task": "040",
+      "id": "6e2ae583-50c4-53d5-a0ed-d11422c64773",
+      "slug": "university-of-manchester-6e2ae583",
+      "name": "University of Manchester",
+      "website": "http://www.manchester.ac.uk/",
+      "countryCode": "GB"
+    },
+    {
+      "task": "041",
+      "id": "c0386da4-95a0-567a-8f70-81b33c5c7f06",
+      "slug": "university-of-queensland-c0386da4",
+      "name": "University of Queensland",
+      "website": "http://www.uq.edu.au/",
+      "countryCode": "AU"
+    },
+    {
+      "task": "042",
+      "id": "b5f25065-0a86-517e-91f0-ff6bbe8c81d3",
+      "slug": "yonsei-university-b5f25065",
+      "name": "Yonsei University",
+      "website": "http://www.yonsei.ac.kr/",
+      "countryCode": "KR"
+    },
+    {
+      "task": "043",
+      "id": "1ad9abe1-60cd-55ec-b227-5c8001db0475",
+      "slug": "columbia-university-1ad9abe1",
+      "name": "Columbia University in the City of New York",
+      "website": "http://www.columbia.edu/",
+      "countryCode": "US"
+    },
+    {
+      "task": "044",
+      "id": "9f3cf72f-ca1e-5831-b48d-e5747fb631d6",
+      "slug": "institut-polytechnique-de-paris-9f3cf72f",
+      "name": "Institut Polytechnique de Paris",
+      "website": "https://www.ip-paris.fr",
+      "countryCode": "FR"
+    },
+    {
+      "task": "045",
+      "id": "e48a723c-68b4-560e-b4a0-09be01682853",
+      "slug": "northwestern-university-e48a723c",
+      "name": "Northwestern University",
+      "website": "http://www.northwestern.edu/",
+      "countryCode": "US"
+    },
+    {
+      "task": "046",
+      "id": "276cad09-4a66-51a1-9071-c1ffe923a508",
+      "slug": "university-of-british-columbia-276cad09",
+      "name": "University of British Columbia",
+      "website": "http://www.ubc.ca/",
+      "countryCode": "CA"
+    },
+    {
+      "task": "047",
+      "id": "d4f88b7a-d026-5860-8906-d9ebdc5df290",
+      "slug": "zhejiang-university-d4f88b7a",
+      "name": "Zhejiang University",
+      "website": "http://www.zju.edu.cn/",
+      "countryCode": "CN"
+    },
+    {
+      "task": "048",
+      "id": "1e3bb7ff-87ca-5331-a3ab-82b0d0b3484d",
+      "slug": "delft-university-of-technology-1e3bb7ff",
+      "name": "Delft University of Technology",
+      "website": "http://www.tudelft.nl/",
+      "countryCode": "NL"
+    },
+    {
+      "task": "049",
+      "id": "d5ba03bb-65aa-55a6-8234-265ea05144fc",
+      "slug": "university-of-california-los-angeles-d5ba03bb",
+      "name": "University of California-Los Angeles",
+      "website": "http://www.ucla.edu/",
+      "countryCode": "US"
+    },
+    {
+      "task": "050",
+      "id": "a74d45a9-657e-514c-ac03-c9d2f9200640",
+      "slug": "the-hong-kong-polytechnic-university-a74d45a9",
+      "name": "The Hong Kong Polytechnic University",
+      "website": "https://www.polyu.edu.hk/",
+      "countryCode": "HK"
+    },
+    {
+      "task": "051",
+      "id": "237842a4-aca1-5a19-b961-403c1e2e5381",
+      "slug": "university-of-michigan-ann-arbor-237842a4",
+      "name": "University of Michigan-Ann Arbor",
+      "website": "http://www.umich.edu/",
+      "countryCode": "US"
+    },
+    {
+      "task": "052",
+      "id": "c0bf548f-0413-5faa-8378-e3a8e622f80f",
+      "slug": "city-university-of-hong-kong-c0bf548f",
+      "name": "City University of Hong Kong",
+      "website": "https://www.cityu.edu.hk/",
+      "countryCode": "HK"
+    },
+    {
+      "task": "053",
+      "id": "6d72f6ce-a30c-54a4-8b99-97ae04a68a88",
+      "slug": "korea-university-6d72f6ce",
+      "name": "Korea University",
+      "website": "http://www.korea.ac.kr/",
+      "countryCode": "KR"
+    },
+    {
+      "task": "054",
+      "id": "8e7965f7-20be-56cb-9233-5daa3414b0fc",
+      "slug": "national-taiwan-university-8e7965f7",
+      "name": "National Taiwan University",
+      "website": "http://www.ntu.edu.tw/",
+      "countryCode": "TW"
+    },
+    {
+      "task": "055",
+      "id": "b7c4c075-d30e-53b3-80a8-7e7d751a47b7",
+      "slug": "carnegie-mellon-university-b7c4c075",
+      "name": "Carnegie Mellon University",
+      "website": "http://www.cmu.edu/",
+      "countryCode": "US"
+    },
+    {
+      "task": "056",
+      "id": "ee31891b-8bbc-5fb0-9bc5-e0122f0c55dd",
+      "slug": "universiti-malaya-ee31891b",
+      "name": "Universiti Malaya",
+      "website": "http://www.um.edu.my/",
+      "countryCode": "MY"
+    },
+    {
+      "task": "057",
+      "id": "ad695799-c6eb-5c4d-901c-a4b7d0b15407",
+      "slug": "university-of-bristol-ad695799",
+      "name": "University of Bristol",
+      "website": "https://www.bristol.ac.uk/",
+      "countryCode": "GB"
+    },
+    {
+      "task": "058",
+      "id": "cc300fc2-3770-5383-a663-b1ec31311b4d",
+      "slug": "new-york-university-cc300fc2",
+      "name": "New York University",
+      "website": "http://www.nyu.edu/",
+      "countryCode": "US"
+    },
+    {
+      "task": "059",
+      "id": "0214dadc-625b-5cdb-a2af-cd750bce896d",
+      "slug": "ku-leuven-0214dadc",
+      "name": "KU Leuven",
+      "website": "https://www.kuleuven.be",
+      "countryCode": "BE"
+    },
+    {
+      "task": "060",
+      "id": "e0088a48-e57b-58d4-bf07-2021931bc1a9",
+      "slug": "university-of-amsterdam-e0088a48",
+      "name": "University of Amsterdam",
+      "website": "http://www.uva.nl/",
+      "countryCode": "NL"
+    },
+    {
+      "task": "061",
+      "id": "3c2d87b3-5b20-5df8-99c0-1353112a63f2",
+      "slug": "ludwig-maximilians-universitat-munchen-3c2d87b3",
+      "name": "Ludwig-Maximilians-Universität München",
+      "website": "https://www.lmu.de",
+      "countryCode": "DE"
+    },
+    {
+      "task": "062",
+      "id": "3e655a74-c0c7-5a9b-884b-22aebd5e0d1e",
+      "slug": "london-school-of-economics-and-political-science-university-of-london-3e655a74",
+      "name": "London School of Economics and Political Science, University of London",
+      "website": "http://www.lse.ac.uk/",
+      "countryCode": "GB"
+    },
+    {
+      "task": "063",
+      "id": "72d90170-c326-5377-8295-5226875a04a1",
+      "slug": "king-fahad-university-of-petroleum-and-minerals-72d90170",
+      "name": "King Fahad University of Petroleum and Minerals",
+      "website": "http://www.kfupm.edu.sa/",
+      "countryCode": "SA"
+    },
+    {
+      "task": "064",
+      "id": "e943a9a4-853c-5554-ac7f-9887d0b2a91d",
+      "slug": "kyoto-university-e943a9a4",
+      "name": "Kyoto University",
+      "website": "http://www.kyoto-u.ac.jp/",
+      "countryCode": "JP"
+    },
+    {
+      "task": "065",
+      "id": "bb32340f-54ba-5885-82ba-4ae645d93930",
+      "slug": "korea-advanced-institute-of-science-technology-bb32340f",
+      "name": "Korea Advanced Institute of Science & Technology",
+      "website": "http://www.kaist.ac.kr/",
+      "countryCode": "KR"
+    },
+    {
+      "task": "066",
+      "id": "88fab389-ea96-5377-b015-69d9756ba9a9",
+      "slug": "brown-university-88fab389",
+      "name": "Brown University",
+      "website": "http://www.brown.edu/",
+      "countryCode": "US"
+    },
+    {
+      "task": "067",
+      "id": "6941fb87-c482-5aa1-9f3c-a5de7cf736dc",
+      "slug": "university-of-auckland-6941fb87",
+      "name": "University of Auckland",
+      "website": "http://www.auckland.ac.nz/",
+      "countryCode": "NZ"
+    },
+    {
+      "task": "068",
+      "id": "4b7a7f67-a5fa-5660-a95b-87588748c8e4",
+      "slug": "university-of-warwick-4b7a7f67",
+      "name": "University of Warwick",
+      "website": "http://www.warwick.ac.uk/",
+      "countryCode": "GB"
+    },
+    {
+      "task": "069",
+      "id": "1a5b82c1-d204-5c75-a433-ef5c17e2a9d2",
+      "slug": "university-of-birmingham-1a5b82c1",
+      "name": "University of Birmingham",
+      "website": "http://www.birmingham.ac.uk/index.aspx",
+      "countryCode": "GB"
+    },
+    {
+      "task": "070",
+      "id": "fb08c67d-bb79-53ff-bbfc-1313fa5602e3",
+      "slug": "duke-university-fb08c67d",
+      "name": "Duke University",
+      "website": "http://www.duke.edu/",
+      "countryCode": "US"
+    },
+    {
+      "task": "071",
+      "id": "bc0bcefc-cf3b-5fc7-bb41-76470ec9ff59",
+      "slug": "lund-university-bc0bcefc",
+      "name": "Lund University",
+      "website": "http://www.lu.se/",
+      "countryCode": "SE"
+    },
+    {
+      "task": "072",
+      "id": "e777849c-7be7-553b-90bf-d99502e7c52d",
+      "slug": "the-university-of-texas-at-austin-e777849c",
+      "name": "The University of Texas at Austin",
+      "website": "https://www.utexas.edu/",
+      "countryCode": "US"
+    },
+    {
+      "task": "073",
+      "id": "b3a81d8c-44ec-56d8-aa5f-b58d5fce6bfd",
+      "slug": "sorbonne-universite-b3a81d8c",
+      "name": "Sorbonne Université",
+      "website": "https://www.sorbonne-universite.fr",
+      "countryCode": "FR"
+    },
+    {
+      "task": "074",
+      "id": "f5cd8bb6-027a-504f-bc7e-19d3d4e017c7",
+      "slug": "university-of-illinois-urbana-champaign-f5cd8bb6",
+      "name": "University of Illinois Urbana-Champaign",
+      "website": "https://illinois.edu/",
+      "countryCode": "US"
+    },
+    {
+      "task": "075",
+      "id": "8e191d89-10ba-5f03-913b-836c9c7194a0",
+      "slug": "universite-paris-saclay-8e191d89",
+      "name": "Université Paris-Saclay",
+      "website": "https://www.universite-paris-saclay.fr/",
+      "countryCode": "FR"
+    },
+    {
+      "task": "076",
+      "id": "24e7d208-f222-510a-92a9-011aead2e2cc",
+      "slug": "university-of-western-australia-24e7d208",
+      "name": "University of Western Australia",
+      "website": "http://www.uwa.edu.au/",
+      "countryCode": "AU"
+    },
+    {
+      "task": "077",
+      "id": "2aa84135-ae94-568c-8721-5c06c836a3f2",
+      "slug": "university-of-leeds-2aa84135",
+      "name": "University of Leeds",
+      "website": "http://www.leeds.ac.uk/",
+      "countryCode": "GB"
+    },
+    {
+      "task": "078",
+      "id": "6a32c909-6d47-5097-a8a9-50e39d01408f",
+      "slug": "university-of-adelaide-6a32c909",
+      "name": "University of Adelaide",
+      "website": "http://www.adelaide.edu.au/",
+      "countryCode": "AU"
+    },
+    {
+      "task": "079",
+      "id": "61b5c222-f7d2-5ff7-a546-b186e73b945b",
+      "slug": "university-of-glasgow-61b5c222",
+      "name": "University of Glasgow",
+      "website": "http://www.gla.ac.uk/",
+      "countryCode": "GB"
+    },
+    {
+      "task": "080",
+      "id": "8db5368d-e619-5c47-a235-b8d3afff1258",
+      "slug": "university-of-california-san-diego-8db5368d",
+      "name": "University of California-San Diego",
+      "website": "http://www.ucsd.edu/",
+      "countryCode": "US"
+    },
+    {
+      "task": "081",
+      "id": "eec543ea-8898-575e-a968-7faa90285317",
+      "slug": "kth-royal-institute-of-technology-eec543ea",
+      "name": "KTH Royal Institute of Technology",
+      "website": "http://www.kth.se/",
+      "countryCode": "SE"
+    },
+    {
+      "task": "082",
+      "id": "3c3e72ae-5e23-550f-8280-25603d083bb5",
+      "slug": "the-university-of-sheffield-3c3e72ae",
+      "name": "The University of Sheffield",
+      "website": "https://www.sheffield.ac.uk/",
+      "countryCode": "GB"
+    },
+    {
+      "task": "083",
+      "id": "8ea2d1c3-ce48-518f-9417-7c08098cd6d5",
+      "slug": "universidad-de-buenos-aires-8ea2d1c3",
+      "name": "Universidad de Buenos Aires",
+      "website": "http://www.uba.ar/",
+      "countryCode": "AR"
+    },
+    {
+      "task": "084",
+      "id": "69452803-31fe-56a8-b2b4-c2a682cf4214",
+      "slug": "university-of-durham-69452803",
+      "name": "University of Durham",
+      "website": "http://www.dur.ac.uk/",
+      "countryCode": "GB"
+    },
+    {
+      "task": "085",
+      "id": "414b011a-c052-5872-b787-f47af96a0c8d",
+      "slug": "polytechnic-institute-of-milan-414b011a",
+      "name": "Polytechnic Institute of Milan",
+      "website": "http://www.polimi.it/",
+      "countryCode": "IT"
+    },
+    {
+      "task": "086",
+      "id": "eacacd15-de55-5ef0-b874-54d46d92b26c",
+      "slug": "university-of-technology-sydney-eacacd15",
+      "name": "University of Technology Sydney",
+      "website": "http://www.uts.edu.au/",
+      "countryCode": "AU"
+    },
+    {
+      "task": "087",
+      "id": "75f1a39c-5876-5365-a4e5-4f8190028c13",
+      "slug": "uppsala-university-75f1a39c",
+      "name": "Uppsala University",
+      "website": "http://www.uu.se/",
+      "countryCode": "SE"
+    },
+    {
+      "task": "088",
+      "id": "0aeeb18a-3be5-5bb9-9875-0bf4ce24d102",
+      "slug": "nanjing-university-0aeeb18a",
+      "name": "Nanjing University",
+      "website": "http://www.nju.edu.cn/",
+      "countryCode": "CN"
+    },
+    {
+      "task": "089",
+      "id": "e2e9494c-968c-55f4-8889-2ec1ac65fbdd",
+      "slug": "university-of-copenhagen-e2e9494c",
+      "name": "University of Copenhagen",
+      "website": "http://www.ku.dk/",
+      "countryCode": "DK"
+    },
+    {
+      "task": "090",
+      "id": "0cb61489-37dd-53a3-a9f2-53cbd5f1a0dd",
+      "slug": "pennsylvania-state-university-0cb61489",
+      "name": "Pennsylvania State University-Main Campus",
+      "website": "http://www.psu.edu/",
+      "countryCode": "US"
+    },
+    {
+      "task": "091",
+      "id": "5d324277-c7c7-52eb-9d99-03367f122d16",
+      "slug": "university-of-washington-5d324277",
+      "name": "University of Washington-Seattle Campus",
+      "website": "http://www.washington.edu/",
+      "countryCode": "US"
+    },
+    {
+      "task": "092",
+      "id": "2ef76bea-f0ec-5124-bd16-bfac73557290",
+      "slug": "boston-university-2ef76bea",
+      "name": "Boston University",
+      "website": "http://www.bu.edu/",
+      "countryCode": "US"
+    },
+    {
+      "task": "093",
+      "id": "b186f041-f090-5f21-b68a-5b22175d4b14",
+      "slug": "osaka-university-b186f041",
+      "name": "Osaka University",
+      "website": "http://www.osaka-u.ac.jp/",
+      "countryCode": "JP"
+    },
+    {
+      "task": "094",
+      "id": "74effccc-395b-52fb-8f50-2523f7897428",
+      "slug": "university-of-alberta-74effccc",
+      "name": "University of Alberta",
+      "website": "https://www.ualberta.ca",
+      "countryCode": "CA"
+    },
+    {
+      "task": "095",
+      "id": "1789110d-d2fe-546a-bb76-da8fc3c966d6",
+      "slug": "institute-of-science-tokyo-1789110d",
+      "name": "Institute of Science Tokyo",
+      "website": "https://www.isct.ac.jp",
+      "countryCode": "JP"
+    },
+    {
+      "task": "096",
+      "id": "0bfd2121-ebb3-562f-ad36-d6a5bf570d8b",
+      "slug": "university-of-nottingham-0bfd2121",
+      "name": "University of Nottingham",
+      "website": "http://www.nottingham.ac.uk/",
+      "countryCode": "GB"
+    },
+    {
+      "task": "097",
+      "id": "4257293d-ae04-50f0-a670-a46ee48a8e44",
+      "slug": "universitat-zurich-4257293d",
+      "name": "Universität Zürich",
+      "website": "https://www.uzh.ch/",
+      "countryCode": "CH"
+    },
+    {
+      "task": "098",
+      "id": "35a032fc-f24f-5a50-92ed-b818fca7f222",
+      "slug": "university-college-dublin-35a032fc",
+      "name": "University College Dublin",
+      "website": "http://www.ucd.ie/",
+      "countryCode": "IE"
+    },
+    {
+      "task": "099",
+      "id": "2eeda25f-2732-523e-b485-bab01ce33cd6",
+      "slug": "tohoku-university-2eeda25f",
+      "name": "Tohoku University",
+      "website": "http://www.tohoku.ac.jp/",
+      "countryCode": "JP"
+    },
+    {
+      "task": "100",
+      "id": "3d2122dd-542a-5bad-94e8-33090f53f6ad",
+      "slug": "queen-mary-university-of-london-3d2122dd",
+      "name": "Queen Mary University of London",
+      "website": "https://www.qmul.ac.uk/",
+      "countryCode": "GB"
+    }
+  ],
+  "tasks": [
+    {
+      "task": "001-opencode",
+      "universityTask": "001",
+      "universityId": "22222222-2222-4222-8222-222222222222",
+      "university": "Massachusetts Institute of Technology",
+      "provider": "opencode",
+      "scope": "academics_admissions_costs_rankings",
+      "prompt": "docs/agent-prompts/universities/001-opencode.md",
+      "promptSha256": "311756a50ebff83747ad4db34136ec6a3a2e7efffd7b8824898fa7c782510211"
+    },
+    {
+      "task": "001-freebuff",
+      "universityTask": "001",
+      "universityId": "22222222-2222-4222-8222-222222222222",
+      "university": "Massachusetts Institute of Technology",
+      "provider": "freebuff",
+      "scope": "identity_people_media",
+      "prompt": "docs/agent-prompts/universities/001-freebuff.md",
+      "promptSha256": "5dc5f8b6e7fbc1cb76ed01701d296a8163182db9ce9f047a0372f33d44a65d12"
+    },
+    {
+      "task": "002-opencode",
+      "universityTask": "002",
+      "universityId": "5ad45ea9-e51c-59e4-9ef7-6d3768be673c",
+      "university": "Imperial College London",
+      "provider": "opencode",
+      "scope": "academics_admissions_costs_rankings",
+      "prompt": "docs/agent-prompts/universities/002-opencode.md",
+      "promptSha256": "624d6244ecfb7d24a982be8489d33f2c99a19fcb0fab642db64946909dda57ab"
+    },
+    {
+      "task": "002-freebuff",
+      "universityTask": "002",
+      "universityId": "5ad45ea9-e51c-59e4-9ef7-6d3768be673c",
+      "university": "Imperial College London",
+      "provider": "freebuff",
+      "scope": "identity_people_media",
+      "prompt": "docs/agent-prompts/universities/002-freebuff.md",
+      "promptSha256": "80ef1d59df1838c57e110e83e66bdb9e7438c2bfe7a8ec885a2e50b40c60b218"
+    },
+    {
+      "task": "003-opencode",
+      "universityTask": "003",
+      "universityId": "11111111-1111-4111-8111-111111111111",
+      "university": "Stanford University",
+      "provider": "opencode",
+      "scope": "academics_admissions_costs_rankings",
+      "prompt": "docs/agent-prompts/universities/003-opencode.md",
+      "promptSha256": "d61ffab6754e4a720fc7e5eacc8cdda63a90e04548e7ebdfaa65ddb3aed2cbff"
+    },
+    {
+      "task": "003-freebuff",
+      "universityTask": "003",
+      "universityId": "11111111-1111-4111-8111-111111111111",
+      "university": "Stanford University",
+      "provider": "freebuff",
+      "scope": "identity_people_media",
+      "prompt": "docs/agent-prompts/universities/003-freebuff.md",
+      "promptSha256": "77036adc45433f4bba22a55cb8398cf6c7a9bd1a634c47fed896c6183c6c8494"
+    },
+    {
+      "task": "004-opencode",
+      "universityTask": "004",
+      "universityId": "33333333-3333-4333-8333-333333333333",
+      "university": "University of Oxford",
+      "provider": "opencode",
+      "scope": "academics_admissions_costs_rankings",
+      "prompt": "docs/agent-prompts/universities/004-opencode.md",
+      "promptSha256": "5cf6490373f322d371dc52bf89f114e8d7538997e26cdc003480c684cb37f147"
+    },
+    {
+      "task": "004-freebuff",
+      "universityTask": "004",
+      "universityId": "33333333-3333-4333-8333-333333333333",
+      "university": "University of Oxford",
+      "provider": "freebuff",
+      "scope": "identity_people_media",
+      "prompt": "docs/agent-prompts/universities/004-freebuff.md",
+      "promptSha256": "1fffe8d5774b43cca81030af3a9eb52c495fe649c3f490b535d893d23fa9c09d"
+    },
+    {
+      "task": "005-opencode",
+      "universityTask": "005",
+      "universityId": "39230496-b2fc-53ca-9303-1726c4ac13da",
+      "university": "Harvard University",
+      "provider": "opencode",
+      "scope": "academics_admissions_costs_rankings",
+      "prompt": "docs/agent-prompts/universities/005-opencode.md",
+      "promptSha256": "106ed3adb71470cc3d7457c691d5bded92d89b1d365468ff0805be231cf391d8"
+    },
+    {
+      "task": "005-freebuff",
+      "universityTask": "005",
+      "universityId": "39230496-b2fc-53ca-9303-1726c4ac13da",
+      "university": "Harvard University",
+      "provider": "freebuff",
+      "scope": "identity_people_media",
+      "prompt": "docs/agent-prompts/universities/005-freebuff.md",
+      "promptSha256": "ecc76ee9aa5c53a871ff0fc61c16cf54ce75dcb45bb633280c9d808e3a37e4b4"
+    },
+    {
+      "task": "006-opencode",
+      "universityTask": "006",
+      "universityId": "ae117645-e24c-5269-8ed1-b5b826e53932",
+      "university": "University of Cambridge",
+      "provider": "opencode",
+      "scope": "academics_admissions_costs_rankings",
+      "prompt": "docs/agent-prompts/universities/006-opencode.md",
+      "promptSha256": "2e3406ad73bc6883810c3ac28a296fc8bc8a23d7eff97e971cd28ef2e1979123"
+    },
+    {
+      "task": "006-freebuff",
+      "universityTask": "006",
+      "universityId": "ae117645-e24c-5269-8ed1-b5b826e53932",
+      "university": "University of Cambridge",
+      "provider": "freebuff",
+      "scope": "identity_people_media",
+      "prompt": "docs/agent-prompts/universities/006-freebuff.md",
+      "promptSha256": "1bd6e96efb2480833d6336c8917ee478b03574cca5c624bc1c21ec0e05d256b5"
+    },
+    {
+      "task": "007-opencode",
+      "universityTask": "007",
+      "universityId": "99fbcf31-606d-5dac-880e-83ca25acd942",
+      "university": "California Institute of Technology",
+      "provider": "opencode",
+      "scope": "academics_admissions_costs_rankings",
+      "prompt": "docs/agent-prompts/universities/007-opencode.md",
+      "promptSha256": "b0eabf6abc28a5d8b39172cbee03c897220de01d920f39e2db74e878c6e26b01"
+    },
+    {
+      "task": "007-freebuff",
+      "universityTask": "007",
+      "universityId": "99fbcf31-606d-5dac-880e-83ca25acd942",
+      "university": "California Institute of Technology",
+      "provider": "freebuff",
+      "scope": "identity_people_media",
+      "prompt": "docs/agent-prompts/universities/007-freebuff.md",
+      "promptSha256": "120945edd3e82e0ec73bae2456b403d61c9d256598ffead1c2c39bfd43a100c0"
+    },
+    {
+      "task": "008-opencode",
+      "universityTask": "008",
+      "universityId": "6020a2b5-3788-5dd1-b3f2-b9c6c7c6f99b",
+      "university": "ETHZ - ETH Zurich",
+      "provider": "opencode",
+      "scope": "academics_admissions_costs_rankings",
+      "prompt": "docs/agent-prompts/universities/008-opencode.md",
+      "promptSha256": "6a4dba0f7befb2a165131161bde4142f34082f107f179eadc438904d2e9ece56"
+    },
+    {
+      "task": "008-freebuff",
+      "universityTask": "008",
+      "universityId": "6020a2b5-3788-5dd1-b3f2-b9c6c7c6f99b",
+      "university": "ETHZ - ETH Zurich",
+      "provider": "freebuff",
+      "scope": "identity_people_media",
+      "prompt": "docs/agent-prompts/universities/008-freebuff.md",
+      "promptSha256": "d4d358cb6ce85cc79dd590929e3a0d448b3a64479d897610f96141bb1f6d26e1"
+    },
+    {
+      "task": "009-opencode",
+      "universityTask": "009",
+      "universityId": "4b7862dc-7567-5f81-af58-c01144412a88",
+      "university": "University College London",
+      "provider": "opencode",
+      "scope": "academics_admissions_costs_rankings",
+      "prompt": "docs/agent-prompts/universities/009-opencode.md",
+      "promptSha256": "f81d33b4dba299a0a9e59bcafe079a7912968b8c5995a418426193ba6800305c"
+    },
+    {
+      "task": "009-freebuff",
+      "universityTask": "009",
+      "universityId": "4b7862dc-7567-5f81-af58-c01144412a88",
+      "university": "University College London",
+      "provider": "freebuff",
+      "scope": "identity_people_media",
+      "prompt": "docs/agent-prompts/universities/009-freebuff.md",
+      "promptSha256": "0c8325d0842a2260d77b7c6a1c020e8c357814521a84b1a4ed3fba9da9d05b93"
+    },
+    {
+      "task": "010-opencode",
+      "universityTask": "010",
+      "universityId": "c66c3755-66a2-57a0-a80e-da984c310d29",
+      "university": "National University of Singapore",
+      "provider": "opencode",
+      "scope": "academics_admissions_costs_rankings",
+      "prompt": "docs/agent-prompts/universities/010-opencode.md",
+      "promptSha256": "badd517e155e7eeb13a16cf797d374095172be4cedbe077cf59402d9669528e4"
+    },
+    {
+      "task": "010-freebuff",
+      "universityTask": "010",
+      "universityId": "c66c3755-66a2-57a0-a80e-da984c310d29",
+      "university": "National University of Singapore",
+      "provider": "freebuff",
+      "scope": "identity_people_media",
+      "prompt": "docs/agent-prompts/universities/010-freebuff.md",
+      "promptSha256": "121ca907773ba120fe79ca385004c0f11bf7131217a20b33b1b3383364655339"
+    },
+    {
+      "task": "011-opencode",
+      "universityTask": "011",
+      "universityId": "b37d730b-421c-5ed6-a807-3d66e7ca21f7",
+      "university": "The University of Hong Kong",
+      "provider": "opencode",
+      "scope": "academics_admissions_costs_rankings",
+      "prompt": "docs/agent-prompts/universities/011-opencode.md",
+      "promptSha256": "21bcf1d1c7b670ad524b8ff6f4cccca6a2c4daba65144efdbfbd88c0c3b724e2"
+    },
+    {
+      "task": "011-freebuff",
+      "universityTask": "011",
+      "universityId": "b37d730b-421c-5ed6-a807-3d66e7ca21f7",
+      "university": "The University of Hong Kong",
+      "provider": "freebuff",
+      "scope": "identity_people_media",
+      "prompt": "docs/agent-prompts/universities/011-freebuff.md",
+      "promptSha256": "b7c44acad353ec4f22d990f9e07493c0c1b6936d8a8ba9901d6645b323938f86"
+    },
+    {
+      "task": "012-opencode",
+      "universityTask": "012",
+      "universityId": "f5a6d73a-5fd2-55de-83af-3da2c25e18ef",
+      "university": "Nanyang Technological University",
+      "provider": "opencode",
+      "scope": "academics_admissions_costs_rankings",
+      "prompt": "docs/agent-prompts/universities/012-opencode.md",
+      "promptSha256": "65e1bc583eee2aeb99d4803a4a1cf80bf4d9ac1118edb2bdf30c5a4ee3bb5f7c"
+    },
+    {
+      "task": "012-freebuff",
+      "universityTask": "012",
+      "universityId": "f5a6d73a-5fd2-55de-83af-3da2c25e18ef",
+      "university": "Nanyang Technological University",
+      "provider": "freebuff",
+      "scope": "identity_people_media",
+      "prompt": "docs/agent-prompts/universities/012-freebuff.md",
+      "promptSha256": "9bcf4480ca6d8cf223a154fdd3fbd250e215a3b7d1689bb30f516566194b66c6"
+    },
+    {
+      "task": "013-opencode",
+      "universityTask": "013",
+      "universityId": "79e1cf8b-6a97-5fef-ac23-aa6012197801",
+      "university": "Peking University",
+      "provider": "opencode",
+      "scope": "academics_admissions_costs_rankings",
+      "prompt": "docs/agent-prompts/universities/013-opencode.md",
+      "promptSha256": "2b4ead534242bb8643c9230ff94eebc9e0478817e6d9c4f7513df84e436d63e3"
+    },
+    {
+      "task": "013-freebuff",
+      "universityTask": "013",
+      "universityId": "79e1cf8b-6a97-5fef-ac23-aa6012197801",
+      "university": "Peking University",
+      "provider": "freebuff",
+      "scope": "identity_people_media",
+      "prompt": "docs/agent-prompts/universities/013-freebuff.md",
+      "promptSha256": "7c05dd7ea5c8fffba5ab07a87b5fbc611aa662a94822111b1e44fb8a190dbcea"
+    },
+    {
+      "task": "014-opencode",
+      "universityTask": "014",
+      "universityId": "519c66df-8779-5336-acda-2cba10f95c66",
+      "university": "Tsinghua University",
+      "provider": "opencode",
+      "scope": "academics_admissions_costs_rankings",
+      "prompt": "docs/agent-prompts/universities/014-opencode.md",
+      "promptSha256": "33ebd98788bdbe024d58de486d112f1bfbfa60e6e185acef03a42625b92b599e"
+    },
+    {
+      "task": "014-freebuff",
+      "universityTask": "014",
+      "universityId": "519c66df-8779-5336-acda-2cba10f95c66",
+      "university": "Tsinghua University",
+      "provider": "freebuff",
+      "scope": "identity_people_media",
+      "prompt": "docs/agent-prompts/universities/014-freebuff.md",
+      "promptSha256": "cc706af9d63f8cc9a666ae0488289dff2681297ab482497e41c8438228978957"
+    },
+    {
+      "task": "015-opencode",
+      "universityTask": "015",
+      "universityId": "894119e1-40c1-5589-8677-e1ed97388e59",
+      "university": "University of Pennsylvania",
+      "provider": "opencode",
+      "scope": "academics_admissions_costs_rankings",
+      "prompt": "docs/agent-prompts/universities/015-opencode.md",
+      "promptSha256": "a5887f82a24dd460759dcfa187858119b9cc15b590f0ac1a61ede67a4690a89f"
+    },
+    {
+      "task": "015-freebuff",
+      "universityTask": "015",
+      "universityId": "894119e1-40c1-5589-8677-e1ed97388e59",
+      "university": "University of Pennsylvania",
+      "provider": "freebuff",
+      "scope": "identity_people_media",
+      "prompt": "docs/agent-prompts/universities/015-freebuff.md",
+      "promptSha256": "ff948475471c80fb0f18c8341d3bc5772a8cf8bf35a5f18b58c68c24adb24212"
+    },
+    {
+      "task": "016-opencode",
+      "universityTask": "016",
+      "universityId": "8488d97e-a227-5fbd-b7b4-33a1194df723",
+      "university": "Cornell University",
+      "provider": "opencode",
+      "scope": "academics_admissions_costs_rankings",
+      "prompt": "docs/agent-prompts/universities/016-opencode.md",
+      "promptSha256": "7fc819e3e3ce6be929896097e61a53ca7b517f26fb24c1058f084bef7425f6b9"
+    },
+    {
+      "task": "016-freebuff",
+      "universityTask": "016",
+      "universityId": "8488d97e-a227-5fbd-b7b4-33a1194df723",
+      "university": "Cornell University",
+      "provider": "freebuff",
+      "scope": "identity_people_media",
+      "prompt": "docs/agent-prompts/universities/016-freebuff.md",
+      "promptSha256": "a0d7c4f0524af4a5e2be931c59ee39d7bd81273b5a78b144e8841f6ca6f32684"
+    },
+    {
+      "task": "017-opencode",
+      "universityTask": "017",
+      "universityId": "0a670c6d-e20a-527f-851b-e2c1306cce70",
+      "university": "Yale University",
+      "provider": "opencode",
+      "scope": "academics_admissions_costs_rankings",
+      "prompt": "docs/agent-prompts/universities/017-opencode.md",
+      "promptSha256": "ad505a227c68a358aa7bcadc14ec727d1199604b2ff1014dc63f148ed970d808"
+    },
+    {
+      "task": "017-freebuff",
+      "universityTask": "017",
+      "universityId": "0a670c6d-e20a-527f-851b-e2c1306cce70",
+      "university": "Yale University",
+      "provider": "freebuff",
+      "scope": "identity_people_media",
+      "prompt": "docs/agent-prompts/universities/017-freebuff.md",
+      "promptSha256": "a908a93f7285af275c22cc32712dd0ad8bf8f17b59eb049a4e15c1f6ca4a2775"
+    },
+    {
+      "task": "018-opencode",
+      "universityTask": "018",
+      "universityId": "7deae08f-080e-56cd-8aa8-ca05c941f0cc",
+      "university": "The Chinese University of Hong Kong",
+      "provider": "opencode",
+      "scope": "academics_admissions_costs_rankings",
+      "prompt": "docs/agent-prompts/universities/018-opencode.md",
+      "promptSha256": "9a17b1a0c38b47e40632d78f7c24b52eae068e07a5d31d0c69f45c1b893eea40"
+    },
+    {
+      "task": "018-freebuff",
+      "universityTask": "018",
+      "universityId": "7deae08f-080e-56cd-8aa8-ca05c941f0cc",
+      "university": "The Chinese University of Hong Kong",
+      "provider": "freebuff",
+      "scope": "identity_people_media",
+      "prompt": "docs/agent-prompts/universities/018-freebuff.md",
+      "promptSha256": "d049e33262a1891f9250326796aa45fe26fb619b4b2819cada0d9b651cc3f9ac"
+    },
+    {
+      "task": "019-opencode",
+      "universityTask": "019",
+      "universityId": "34f9bd5c-1c24-5d4f-880c-4a342627a148",
+      "university": "UNSW Sydney",
+      "provider": "opencode",
+      "scope": "academics_admissions_costs_rankings",
+      "prompt": "docs/agent-prompts/universities/019-opencode.md",
+      "promptSha256": "6f4142e899ec1e1df297418ec7cdc62e842d2a027c3652bef628ba8c07819e92"
+    },
+    {
+      "task": "019-freebuff",
+      "universityTask": "019",
+      "universityId": "34f9bd5c-1c24-5d4f-880c-4a342627a148",
+      "university": "UNSW Sydney",
+      "provider": "freebuff",
+      "scope": "identity_people_media",
+      "prompt": "docs/agent-prompts/universities/019-freebuff.md",
+      "promptSha256": "42b3004c82e99859367e481b6f154da2d2e5807f79edb38d4434ce28c216db97"
+    },
+    {
+      "task": "020-opencode",
+      "universityTask": "020",
+      "universityId": "f5c17f3c-ac83-5193-8c71-641147ad926c",
+      "university": "Johns Hopkins University",
+      "provider": "opencode",
+      "scope": "academics_admissions_costs_rankings",
+      "prompt": "docs/agent-prompts/universities/020-opencode.md",
+      "promptSha256": "b00168d8d591815e16904c910c5cd22c044f8db276e4e0eeaa615de252e14d2b"
+    },
+    {
+      "task": "020-freebuff",
+      "universityTask": "020",
+      "universityId": "f5c17f3c-ac83-5193-8c71-641147ad926c",
+      "university": "Johns Hopkins University",
+      "provider": "freebuff",
+      "scope": "identity_people_media",
+      "prompt": "docs/agent-prompts/universities/020-freebuff.md",
+      "promptSha256": "647754ad742ad514d6d4ccff16a1498da2cd70bdd90042777c8b8fa4caed40d3"
+    },
+    {
+      "task": "021-opencode",
+      "universityTask": "021",
+      "universityId": "e67501b3-2e87-5598-b9e3-e28fe4101f68",
+      "university": "University of California-Berkeley",
+      "provider": "opencode",
+      "scope": "academics_admissions_costs_rankings",
+      "prompt": "docs/agent-prompts/universities/021-opencode.md",
+      "promptSha256": "ed25f35795c0296addd035536ea7340d70a8e806c5ef5671d0d8b87cec51776d"
+    },
+    {
+      "task": "021-freebuff",
+      "universityTask": "021",
+      "universityId": "e67501b3-2e87-5598-b9e3-e28fe4101f68",
+      "university": "University of California-Berkeley",
+      "provider": "freebuff",
+      "scope": "identity_people_media",
+      "prompt": "docs/agent-prompts/universities/021-freebuff.md",
+      "promptSha256": "ea10c7cc20b1606b7930e5eef85fe777cbc3e32c33ed110e0d983fd37a4ccdf1"
+    },
+    {
+      "task": "022-opencode",
+      "universityTask": "022",
+      "universityId": "819bd7c2-cc38-5dc4-854d-2d59a8a9f4e5",
+      "university": "EPFL - EPF Lausanne",
+      "provider": "opencode",
+      "scope": "academics_admissions_costs_rankings",
+      "prompt": "docs/agent-prompts/universities/022-opencode.md",
+      "promptSha256": "ef921864452d9376bcd8846ccf9cf19e5b471c3c334db3e9967e79a0bd976bc0"
+    },
+    {
+      "task": "022-freebuff",
+      "universityTask": "022",
+      "universityId": "819bd7c2-cc38-5dc4-854d-2d59a8a9f4e5",
+      "university": "EPFL - EPF Lausanne",
+      "provider": "freebuff",
+      "scope": "identity_people_media",
+      "prompt": "docs/agent-prompts/universities/022-freebuff.md",
+      "promptSha256": "9e59191cf3a82a370bf34ef1083eaebc28fba54f08347c310b16ce7a0a8126fc"
+    },
+    {
+      "task": "023-opencode",
+      "universityTask": "023",
+      "universityId": "6f8ca7da-1cba-56f4-89e6-4cffd48126ac",
+      "university": "University of Melbourne",
+      "provider": "opencode",
+      "scope": "academics_admissions_costs_rankings",
+      "prompt": "docs/agent-prompts/universities/023-opencode.md",
+      "promptSha256": "7d17f4883173277cf5d47b95caa0c62858c569d50fa8ec41c018c2d38654e200"
+    },
+    {
+      "task": "023-freebuff",
+      "universityTask": "023",
+      "universityId": "6f8ca7da-1cba-56f4-89e6-4cffd48126ac",
+      "university": "University of Melbourne",
+      "provider": "freebuff",
+      "scope": "identity_people_media",
+      "prompt": "docs/agent-prompts/universities/023-freebuff.md",
+      "promptSha256": "d5e8dd8805359cbd90c4b6cbee5abbecdd5c2cb3989d7d6a88dd7d1ee8f1b9c3"
+    },
+    {
+      "task": "024-opencode",
+      "universityTask": "024",
+      "universityId": "7add53a9-8ddf-5e84-bd4d-a7c8638dbb95",
+      "university": "University of Chicago",
+      "provider": "opencode",
+      "scope": "academics_admissions_costs_rankings",
+      "prompt": "docs/agent-prompts/universities/024-opencode.md",
+      "promptSha256": "0ece03a795a411aa158574e4a729a058af61f4931fed7a71c55c3339a19a9c9b"
+    },
+    {
+      "task": "024-freebuff",
+      "universityTask": "024",
+      "universityId": "7add53a9-8ddf-5e84-bd4d-a7c8638dbb95",
+      "university": "University of Chicago",
+      "provider": "freebuff",
+      "scope": "identity_people_media",
+      "prompt": "docs/agent-prompts/universities/024-freebuff.md",
+      "promptSha256": "f72e54534f1b7c771dde49471be49c4994e949d1ee8755c11dfa00a3f40ab45f"
+    },
+    {
+      "task": "025-opencode",
+      "universityTask": "025",
+      "universityId": "44444444-4444-4444-8444-444444444444",
+      "university": "Technische Universität München",
+      "provider": "opencode",
+      "scope": "academics_admissions_costs_rankings",
+      "prompt": "docs/agent-prompts/universities/025-opencode.md",
+      "promptSha256": "7ff462975489c171ffcd361d8ae3e219a8c1749448cf28ec8574b6a7d85dcdd3"
+    },
+    {
+      "task": "025-freebuff",
+      "universityTask": "025",
+      "universityId": "44444444-4444-4444-8444-444444444444",
+      "university": "Technische Universität München",
+      "provider": "freebuff",
+      "scope": "identity_people_media",
+      "prompt": "docs/agent-prompts/universities/025-freebuff.md",
+      "promptSha256": "87217c6be3fabde9486fd799f5a14a3856735310c68747470714622729d92530"
+    },
+    {
+      "task": "026-opencode",
+      "universityTask": "026",
+      "universityId": "5c9532a7-118a-5e2d-ab32-92ade2e776a5",
+      "university": "Fudan University",
+      "provider": "opencode",
+      "scope": "academics_admissions_costs_rankings",
+      "prompt": "docs/agent-prompts/universities/026-opencode.md",
+      "promptSha256": "405daaeb7266cc8788dae84b007544428a4be54010391091169aa65231235273"
+    },
+    {
+      "task": "026-freebuff",
+      "universityTask": "026",
+      "universityId": "5c9532a7-118a-5e2d-ab32-92ade2e776a5",
+      "university": "Fudan University",
+      "provider": "freebuff",
+      "scope": "identity_people_media",
+      "prompt": "docs/agent-prompts/universities/026-freebuff.md",
+      "promptSha256": "4d20ee5a4631d5f1d55427cba0d49dce279841e685252e474aa0a170611eed15"
+    },
+    {
+      "task": "027-opencode",
+      "universityTask": "027",
+      "universityId": "6f13f9e9-cf5f-56ad-8384-39a9dc592d58",
+      "university": "Princeton University",
+      "provider": "opencode",
+      "scope": "academics_admissions_costs_rankings",
+      "prompt": "docs/agent-prompts/universities/027-opencode.md",
+      "promptSha256": "46681aca39e30c2e0856b98c54697812de55662bbe76eb61a44049696e45fe05"
+    },
+    {
+      "task": "027-freebuff",
+      "universityTask": "027",
+      "universityId": "6f13f9e9-cf5f-56ad-8384-39a9dc592d58",
+      "university": "Princeton University",
+      "provider": "freebuff",
+      "scope": "identity_people_media",
+      "prompt": "docs/agent-prompts/universities/027-freebuff.md",
+      "promptSha256": "81dc8e440a1c24f3abea3034597a9f038b3cd73ba6de7f30e179ccf47833a782"
+    },
+    {
+      "task": "028-opencode",
+      "universityTask": "028",
+      "universityId": "c67598f4-8b91-53a9-a98a-ebd185ced219",
+      "university": "University of Sydney",
+      "provider": "opencode",
+      "scope": "academics_admissions_costs_rankings",
+      "prompt": "docs/agent-prompts/universities/028-opencode.md",
+      "promptSha256": "aee9f40cd8944dbf0eec900c08069eafce5b2df7cf39e7ad9c5d225f03636d0d"
+    },
+    {
+      "task": "028-freebuff",
+      "universityTask": "028",
+      "universityId": "c67598f4-8b91-53a9-a98a-ebd185ced219",
+      "university": "University of Sydney",
+      "provider": "freebuff",
+      "scope": "identity_people_media",
+      "prompt": "docs/agent-prompts/universities/028-freebuff.md",
+      "promptSha256": "34c6009c8c9a5260e26e76b08dba5a9ab7eaf64ea08342a46205a1aa99b0da4e"
+    },
+    {
+      "task": "029-opencode",
+      "universityTask": "029",
+      "universityId": "14fa4c62-b910-520b-aa51-0bf334f02b1c",
+      "university": "Australian National University",
+      "provider": "opencode",
+      "scope": "academics_admissions_costs_rankings",
+      "prompt": "docs/agent-prompts/universities/029-opencode.md",
+      "promptSha256": "0891b307c1d3013190b4b2138893f9b3242464d2d303637161b01f6a64ed7536"
+    },
+    {
+      "task": "029-freebuff",
+      "universityTask": "029",
+      "universityId": "14fa4c62-b910-520b-aa51-0bf334f02b1c",
+      "university": "Australian National University",
+      "provider": "freebuff",
+      "scope": "identity_people_media",
+      "prompt": "docs/agent-prompts/universities/029-freebuff.md",
+      "promptSha256": "f0ff0915547b50313ad8562238c317cadc9915e2ed5541d4a13808f95f4ea921"
+    },
+    {
+      "task": "030-opencode",
+      "universityTask": "030",
+      "universityId": "b48ecdd6-9331-5ee8-a4ad-7f5b046d5356",
+      "university": "McGill University",
+      "provider": "opencode",
+      "scope": "academics_admissions_costs_rankings",
+      "prompt": "docs/agent-prompts/universities/030-opencode.md",
+      "promptSha256": "4d31e17acfaf6034981f9fd668e5a8678cabeefd0fcd71959e865152432fa09f"
+    },
+    {
+      "task": "030-freebuff",
+      "universityTask": "030",
+      "universityId": "b48ecdd6-9331-5ee8-a4ad-7f5b046d5356",
+      "university": "McGill University",
+      "provider": "freebuff",
+      "scope": "identity_people_media",
+      "prompt": "docs/agent-prompts/universities/030-freebuff.md",
+      "promptSha256": "4015f990567b6b16c92fd868a6ea7ad9426a79e68c9d01b0c88ac5b865541659"
+    },
+    {
+      "task": "031-opencode",
+      "universityTask": "031",
+      "universityId": "66cc3fd0-3055-5d88-b1d0-586a11515643",
+      "university": "Monash University",
+      "provider": "opencode",
+      "scope": "academics_admissions_costs_rankings",
+      "prompt": "docs/agent-prompts/universities/031-opencode.md",
+      "promptSha256": "738c7468a9f260256c691856cbbca3a0ee6b6d5f71c35f7f9bf325399022e1a1"
+    },
+    {
+      "task": "031-freebuff",
+      "universityTask": "031",
+      "universityId": "66cc3fd0-3055-5d88-b1d0-586a11515643",
+      "university": "Monash University",
+      "provider": "freebuff",
+      "scope": "identity_people_media",
+      "prompt": "docs/agent-prompts/universities/031-freebuff.md",
+      "promptSha256": "fe078611ec7856b32e4e9fb1694b3887d8bf08643e4db46f6a20a891b06d798e"
+    },
+    {
+      "task": "032-opencode",
+      "universityTask": "032",
+      "universityId": "55555555-5555-4555-8555-555555555555",
+      "university": "University of Toronto",
+      "provider": "opencode",
+      "scope": "academics_admissions_costs_rankings",
+      "prompt": "docs/agent-prompts/universities/032-opencode.md",
+      "promptSha256": "1bc3ddfb47639155f8b7bd69ef9b9cb9f7bdc42b940e1255c74e84cba13053f9"
+    },
+    {
+      "task": "032-freebuff",
+      "universityTask": "032",
+      "universityId": "55555555-5555-4555-8555-555555555555",
+      "university": "University of Toronto",
+      "provider": "freebuff",
+      "scope": "identity_people_media",
+      "prompt": "docs/agent-prompts/universities/032-freebuff.md",
+      "promptSha256": "f34daa3d102d240f21f4421302294eb2f57069dcbbfec693f6e53efcee901331"
+    },
+    {
+      "task": "033-opencode",
+      "universityTask": "033",
+      "universityId": "74996b5e-c39f-52f1-9e01-88f3051f155b",
+      "university": "The Hong Kong University of Science and Technology",
+      "provider": "opencode",
+      "scope": "academics_admissions_costs_rankings",
+      "prompt": "docs/agent-prompts/universities/033-opencode.md",
+      "promptSha256": "474ad17170fab70d25d92e92edde291be95c6c9a2d7749b272f1f95743357f71"
+    },
+    {
+      "task": "033-freebuff",
+      "universityTask": "033",
+      "universityId": "74996b5e-c39f-52f1-9e01-88f3051f155b",
+      "university": "The Hong Kong University of Science and Technology",
+      "provider": "freebuff",
+      "scope": "identity_people_media",
+      "prompt": "docs/agent-prompts/universities/033-freebuff.md",
+      "promptSha256": "17425701f59f11b415c1a78427381e1a9ec7104b974ac9623f7b28ab17ea4413"
+    },
+    {
+      "task": "034-opencode",
+      "universityTask": "034",
+      "universityId": "c5ca35b6-8983-574d-89ec-d15da6afa1fe",
+      "university": "Université Paris Sciences et Lettres",
+      "provider": "opencode",
+      "scope": "academics_admissions_costs_rankings",
+      "prompt": "docs/agent-prompts/universities/034-opencode.md",
+      "promptSha256": "bf9a75e12948031dc9f3eaf9a1429f97d85c8b68a0e79d16930829423acfb201"
+    },
+    {
+      "task": "034-freebuff",
+      "universityTask": "034",
+      "universityId": "c5ca35b6-8983-574d-89ec-d15da6afa1fe",
+      "university": "Université Paris Sciences et Lettres",
+      "provider": "freebuff",
+      "scope": "identity_people_media",
+      "prompt": "docs/agent-prompts/universities/034-freebuff.md",
+      "promptSha256": "857a9d6df0c987b656d59b4110547aad8f922ba4da5580a80e0ea1c09a456dde"
+    },
+    {
+      "task": "035-opencode",
+      "universityTask": "035",
+      "universityId": "f2f2a71c-abeb-5dc7-b18b-aa8b00611b0a",
+      "university": "University of Edinburgh",
+      "provider": "opencode",
+      "scope": "academics_admissions_costs_rankings",
+      "prompt": "docs/agent-prompts/universities/035-opencode.md",
+      "promptSha256": "140c98c597f2aeb72f6bd2706fd1ee826f0ea6b83363fbb85caa48f835c0ac7e"
+    },
+    {
+      "task": "035-freebuff",
+      "universityTask": "035",
+      "universityId": "f2f2a71c-abeb-5dc7-b18b-aa8b00611b0a",
+      "university": "University of Edinburgh",
+      "provider": "freebuff",
+      "scope": "identity_people_media",
+      "prompt": "docs/agent-prompts/universities/035-freebuff.md",
+      "promptSha256": "0a497b59239fef362e43c5800fd50d431bbc1d66cb855d2af3f95255baa3b093"
+    },
+    {
+      "task": "036-opencode",
+      "universityTask": "036",
+      "universityId": "40dc3bce-f456-577e-9003-9c143d3b52bb",
+      "university": "Shanghai Jiaotong University",
+      "provider": "opencode",
+      "scope": "academics_admissions_costs_rankings",
+      "prompt": "docs/agent-prompts/universities/036-opencode.md",
+      "promptSha256": "345449732621daf26d927a3bc7e4bda3086e3258a458929578135f198082f28a"
+    },
+    {
+      "task": "036-freebuff",
+      "universityTask": "036",
+      "universityId": "40dc3bce-f456-577e-9003-9c143d3b52bb",
+      "university": "Shanghai Jiaotong University",
+      "provider": "freebuff",
+      "scope": "identity_people_media",
+      "prompt": "docs/agent-prompts/universities/036-freebuff.md",
+      "promptSha256": "3d9c8a86e60732a39c6542dccec677eae951a59c53a507d5fa3e7cc461055cdb"
+    },
+    {
+      "task": "037-opencode",
+      "universityTask": "037",
+      "universityId": "01649f44-22e4-5b85-adaa-81f3538aa083",
+      "university": "King's College London, University of London",
+      "provider": "opencode",
+      "scope": "academics_admissions_costs_rankings",
+      "prompt": "docs/agent-prompts/universities/037-opencode.md",
+      "promptSha256": "196ca17b39899f082f767454b0e465a77067b4172aa1ab1151495fdd42a5ea01"
+    },
+    {
+      "task": "037-freebuff",
+      "universityTask": "037",
+      "universityId": "01649f44-22e4-5b85-adaa-81f3538aa083",
+      "university": "King's College London, University of London",
+      "provider": "freebuff",
+      "scope": "identity_people_media",
+      "prompt": "docs/agent-prompts/universities/037-freebuff.md",
+      "promptSha256": "aa1ccfdb5c658670780554373401b79ee6bce8f91e75cce251c08f100d543804"
+    },
+    {
+      "task": "038-opencode",
+      "universityTask": "038",
+      "universityId": "6a9e2556-fc5f-56a2-bca0-9364f099818c",
+      "university": "Seoul National University",
+      "provider": "opencode",
+      "scope": "academics_admissions_costs_rankings",
+      "prompt": "docs/agent-prompts/universities/038-opencode.md",
+      "promptSha256": "2ed0351508318fa7fd994fbfcc8f662ce92498cefb01286c342cd966a3d684a8"
+    },
+    {
+      "task": "038-freebuff",
+      "universityTask": "038",
+      "universityId": "6a9e2556-fc5f-56a2-bca0-9364f099818c",
+      "university": "Seoul National University",
+      "provider": "freebuff",
+      "scope": "identity_people_media",
+      "prompt": "docs/agent-prompts/universities/038-freebuff.md",
+      "promptSha256": "8c82a7f97153ad446114723b8c1f3bae04202b5e24b7fdeff23ddb98a5fd9640"
+    },
+    {
+      "task": "039-opencode",
+      "universityTask": "039",
+      "universityId": "11087dc1-5405-5bd2-a5e2-def936b94cf7",
+      "university": "University of Tokyo",
+      "provider": "opencode",
+      "scope": "academics_admissions_costs_rankings",
+      "prompt": "docs/agent-prompts/universities/039-opencode.md",
+      "promptSha256": "37aad77c44baeffb89a7821ea9d8e4204eabcfb4a494162aacd89799681c6997"
+    },
+    {
+      "task": "039-freebuff",
+      "universityTask": "039",
+      "universityId": "11087dc1-5405-5bd2-a5e2-def936b94cf7",
+      "university": "University of Tokyo",
+      "provider": "freebuff",
+      "scope": "identity_people_media",
+      "prompt": "docs/agent-prompts/universities/039-freebuff.md",
+      "promptSha256": "907b17d276d1aef0c8e729d211b0cb4b1a174509b52af41d765a2d3a5bb16954"
+    },
+    {
+      "task": "040-opencode",
+      "universityTask": "040",
+      "universityId": "6e2ae583-50c4-53d5-a0ed-d11422c64773",
+      "university": "University of Manchester",
+      "provider": "opencode",
+      "scope": "academics_admissions_costs_rankings",
+      "prompt": "docs/agent-prompts/universities/040-opencode.md",
+      "promptSha256": "a26485ba74dc4028d8c7c16b502f78b8ea7fe9adecdcfd7297755a005a6c727d"
+    },
+    {
+      "task": "040-freebuff",
+      "universityTask": "040",
+      "universityId": "6e2ae583-50c4-53d5-a0ed-d11422c64773",
+      "university": "University of Manchester",
+      "provider": "freebuff",
+      "scope": "identity_people_media",
+      "prompt": "docs/agent-prompts/universities/040-freebuff.md",
+      "promptSha256": "90ccf5eaf9f92706a4f9b142759a186667cf752183c25a57a7678fb43439872b"
+    },
+    {
+      "task": "041-opencode",
+      "universityTask": "041",
+      "universityId": "c0386da4-95a0-567a-8f70-81b33c5c7f06",
+      "university": "University of Queensland",
+      "provider": "opencode",
+      "scope": "academics_admissions_costs_rankings",
+      "prompt": "docs/agent-prompts/universities/041-opencode.md",
+      "promptSha256": "6efdbe9d0959c42e08449a999e3a87df59b5b20b2262b90dd2d92cc67979f2e7"
+    },
+    {
+      "task": "041-freebuff",
+      "universityTask": "041",
+      "universityId": "c0386da4-95a0-567a-8f70-81b33c5c7f06",
+      "university": "University of Queensland",
+      "provider": "freebuff",
+      "scope": "identity_people_media",
+      "prompt": "docs/agent-prompts/universities/041-freebuff.md",
+      "promptSha256": "ed1fe68a2981ca361d8fc3069cdeb0813a5859804491c88539ac8f6e85c1e82d"
+    },
+    {
+      "task": "042-opencode",
+      "universityTask": "042",
+      "universityId": "b5f25065-0a86-517e-91f0-ff6bbe8c81d3",
+      "university": "Yonsei University",
+      "provider": "opencode",
+      "scope": "academics_admissions_costs_rankings",
+      "prompt": "docs/agent-prompts/universities/042-opencode.md",
+      "promptSha256": "9dae88ebed9dce5a794ab43d18fd321dc7ac58b6cbc9333e0a7b96bc826a960f"
+    },
+    {
+      "task": "042-freebuff",
+      "universityTask": "042",
+      "universityId": "b5f25065-0a86-517e-91f0-ff6bbe8c81d3",
+      "university": "Yonsei University",
+      "provider": "freebuff",
+      "scope": "identity_people_media",
+      "prompt": "docs/agent-prompts/universities/042-freebuff.md",
+      "promptSha256": "5564a1fee67178d73902132ecd9cd377425bab0a4f1c7d19939da44cf9214bae"
+    },
+    {
+      "task": "043-opencode",
+      "universityTask": "043",
+      "universityId": "1ad9abe1-60cd-55ec-b227-5c8001db0475",
+      "university": "Columbia University in the City of New York",
+      "provider": "opencode",
+      "scope": "academics_admissions_costs_rankings",
+      "prompt": "docs/agent-prompts/universities/043-opencode.md",
+      "promptSha256": "041bea6b714750ecb1807d363962bed3a4cfae2086666252afe575720b05be4b"
+    },
+    {
+      "task": "043-freebuff",
+      "universityTask": "043",
+      "universityId": "1ad9abe1-60cd-55ec-b227-5c8001db0475",
+      "university": "Columbia University in the City of New York",
+      "provider": "freebuff",
+      "scope": "identity_people_media",
+      "prompt": "docs/agent-prompts/universities/043-freebuff.md",
+      "promptSha256": "72c06256eb97290f94b4d40c249cdda3af03990d37153ae5c62d82aca96b7afb"
+    },
+    {
+      "task": "044-opencode",
+      "universityTask": "044",
+      "universityId": "9f3cf72f-ca1e-5831-b48d-e5747fb631d6",
+      "university": "Institut Polytechnique de Paris",
+      "provider": "opencode",
+      "scope": "academics_admissions_costs_rankings",
+      "prompt": "docs/agent-prompts/universities/044-opencode.md",
+      "promptSha256": "7b42d932a1ac8171fc9f310ac1b706b8f46eba8517bd83223f6422c6c773dc97"
+    },
+    {
+      "task": "044-freebuff",
+      "universityTask": "044",
+      "universityId": "9f3cf72f-ca1e-5831-b48d-e5747fb631d6",
+      "university": "Institut Polytechnique de Paris",
+      "provider": "freebuff",
+      "scope": "identity_people_media",
+      "prompt": "docs/agent-prompts/universities/044-freebuff.md",
+      "promptSha256": "e240ee0e42f3800e833cb646f37b4da4a057df77f4779a252319ca2c8bdf9235"
+    },
+    {
+      "task": "045-opencode",
+      "universityTask": "045",
+      "universityId": "e48a723c-68b4-560e-b4a0-09be01682853",
+      "university": "Northwestern University",
+      "provider": "opencode",
+      "scope": "academics_admissions_costs_rankings",
+      "prompt": "docs/agent-prompts/universities/045-opencode.md",
+      "promptSha256": "ecf72c4e82e9c923ab53c2c6368a0b4300acc21025dc6a309254e4fd755d3766"
+    },
+    {
+      "task": "045-freebuff",
+      "universityTask": "045",
+      "universityId": "e48a723c-68b4-560e-b4a0-09be01682853",
+      "university": "Northwestern University",
+      "provider": "freebuff",
+      "scope": "identity_people_media",
+      "prompt": "docs/agent-prompts/universities/045-freebuff.md",
+      "promptSha256": "2ff754433a695a62cbbca52b6aea9a6adb744878b9c207a398006f68a92cf2a3"
+    },
+    {
+      "task": "046-opencode",
+      "universityTask": "046",
+      "universityId": "276cad09-4a66-51a1-9071-c1ffe923a508",
+      "university": "University of British Columbia",
+      "provider": "opencode",
+      "scope": "academics_admissions_costs_rankings",
+      "prompt": "docs/agent-prompts/universities/046-opencode.md",
+      "promptSha256": "65d33d48277c06e71baf87efe3d03132a462e10eb4d9be74a79de8920ab3c8f4"
+    },
+    {
+      "task": "046-freebuff",
+      "universityTask": "046",
+      "universityId": "276cad09-4a66-51a1-9071-c1ffe923a508",
+      "university": "University of British Columbia",
+      "provider": "freebuff",
+      "scope": "identity_people_media",
+      "prompt": "docs/agent-prompts/universities/046-freebuff.md",
+      "promptSha256": "b5af410af5ce7f29cdf18e7620e7c907bb1fe30902e79359c02a1975d809be93"
+    },
+    {
+      "task": "047-opencode",
+      "universityTask": "047",
+      "universityId": "d4f88b7a-d026-5860-8906-d9ebdc5df290",
+      "university": "Zhejiang University",
+      "provider": "opencode",
+      "scope": "academics_admissions_costs_rankings",
+      "prompt": "docs/agent-prompts/universities/047-opencode.md",
+      "promptSha256": "a4c3492c9500fb5260f4414bb1584348de66acdbfbf16edc2d3b212040ab51e8"
+    },
+    {
+      "task": "047-freebuff",
+      "universityTask": "047",
+      "universityId": "d4f88b7a-d026-5860-8906-d9ebdc5df290",
+      "university": "Zhejiang University",
+      "provider": "freebuff",
+      "scope": "identity_people_media",
+      "prompt": "docs/agent-prompts/universities/047-freebuff.md",
+      "promptSha256": "56f6b1313a67432156cde4534e1d09171dc167972cc9a285383c84a63fd8063c"
+    },
+    {
+      "task": "048-opencode",
+      "universityTask": "048",
+      "universityId": "1e3bb7ff-87ca-5331-a3ab-82b0d0b3484d",
+      "university": "Delft University of Technology",
+      "provider": "opencode",
+      "scope": "academics_admissions_costs_rankings",
+      "prompt": "docs/agent-prompts/universities/048-opencode.md",
+      "promptSha256": "089f036bcf3e5c86546eb54762a16552ef7d6537afc453d2971aecaf59f9a200"
+    },
+    {
+      "task": "048-freebuff",
+      "universityTask": "048",
+      "universityId": "1e3bb7ff-87ca-5331-a3ab-82b0d0b3484d",
+      "university": "Delft University of Technology",
+      "provider": "freebuff",
+      "scope": "identity_people_media",
+      "prompt": "docs/agent-prompts/universities/048-freebuff.md",
+      "promptSha256": "a59878a7738db862c968c54e7a8a8d060dffd86654523c37a83c50bcb47d5a8d"
+    },
+    {
+      "task": "049-opencode",
+      "universityTask": "049",
+      "universityId": "d5ba03bb-65aa-55a6-8234-265ea05144fc",
+      "university": "University of California-Los Angeles",
+      "provider": "opencode",
+      "scope": "academics_admissions_costs_rankings",
+      "prompt": "docs/agent-prompts/universities/049-opencode.md",
+      "promptSha256": "5010f1b995ea0c295fa8adbb1a36a41e5d25741831ac4838de4b7365e1401e39"
+    },
+    {
+      "task": "049-freebuff",
+      "universityTask": "049",
+      "universityId": "d5ba03bb-65aa-55a6-8234-265ea05144fc",
+      "university": "University of California-Los Angeles",
+      "provider": "freebuff",
+      "scope": "identity_people_media",
+      "prompt": "docs/agent-prompts/universities/049-freebuff.md",
+      "promptSha256": "5a3fd2e840e525c17c3722456bc42c50f300430f07dac7e7e45016f3e599a585"
+    },
+    {
+      "task": "050-opencode",
+      "universityTask": "050",
+      "universityId": "a74d45a9-657e-514c-ac03-c9d2f9200640",
+      "university": "The Hong Kong Polytechnic University",
+      "provider": "opencode",
+      "scope": "academics_admissions_costs_rankings",
+      "prompt": "docs/agent-prompts/universities/050-opencode.md",
+      "promptSha256": "25580f2c6efb01b516d673b69fa4308ea3ef33608be86e81f0d049b6a1b01826"
+    },
+    {
+      "task": "050-freebuff",
+      "universityTask": "050",
+      "universityId": "a74d45a9-657e-514c-ac03-c9d2f9200640",
+      "university": "The Hong Kong Polytechnic University",
+      "provider": "freebuff",
+      "scope": "identity_people_media",
+      "prompt": "docs/agent-prompts/universities/050-freebuff.md",
+      "promptSha256": "08a04a5d8208bd0b214aa98b6f18df2031578eda535b31c6c9682ec79acc0e1d"
+    },
+    {
+      "task": "051-opencode",
+      "universityTask": "051",
+      "universityId": "237842a4-aca1-5a19-b961-403c1e2e5381",
+      "university": "University of Michigan-Ann Arbor",
+      "provider": "opencode",
+      "scope": "academics_admissions_costs_rankings",
+      "prompt": "docs/agent-prompts/universities/051-opencode.md",
+      "promptSha256": "c13ccd29651e04c3bdafa0b46d691bccf0181cab9a6b258b958445d22bdee0cf"
+    },
+    {
+      "task": "051-freebuff",
+      "universityTask": "051",
+      "universityId": "237842a4-aca1-5a19-b961-403c1e2e5381",
+      "university": "University of Michigan-Ann Arbor",
+      "provider": "freebuff",
+      "scope": "identity_people_media",
+      "prompt": "docs/agent-prompts/universities/051-freebuff.md",
+      "promptSha256": "1791dd766ea832c384ebcfa2bf0b76a72e3a8dfefdfa6b690b2be030e154370f"
+    },
+    {
+      "task": "052-opencode",
+      "universityTask": "052",
+      "universityId": "c0bf548f-0413-5faa-8378-e3a8e622f80f",
+      "university": "City University of Hong Kong",
+      "provider": "opencode",
+      "scope": "academics_admissions_costs_rankings",
+      "prompt": "docs/agent-prompts/universities/052-opencode.md",
+      "promptSha256": "78af72cec97249ea28ed2854ce441f29e51807dbfb26d95b19d4da7652d97d9f"
+    },
+    {
+      "task": "052-freebuff",
+      "universityTask": "052",
+      "universityId": "c0bf548f-0413-5faa-8378-e3a8e622f80f",
+      "university": "City University of Hong Kong",
+      "provider": "freebuff",
+      "scope": "identity_people_media",
+      "prompt": "docs/agent-prompts/universities/052-freebuff.md",
+      "promptSha256": "cbdb70223a2d7151692a6591200841714d63216caa12710ac37ba236a3df9163"
+    },
+    {
+      "task": "053-opencode",
+      "universityTask": "053",
+      "universityId": "6d72f6ce-a30c-54a4-8b99-97ae04a68a88",
+      "university": "Korea University",
+      "provider": "opencode",
+      "scope": "academics_admissions_costs_rankings",
+      "prompt": "docs/agent-prompts/universities/053-opencode.md",
+      "promptSha256": "2981b83f0bf42ac7587448a641aa386f4f739647858edf14e1f02877cd63d228"
+    },
+    {
+      "task": "053-freebuff",
+      "universityTask": "053",
+      "universityId": "6d72f6ce-a30c-54a4-8b99-97ae04a68a88",
+      "university": "Korea University",
+      "provider": "freebuff",
+      "scope": "identity_people_media",
+      "prompt": "docs/agent-prompts/universities/053-freebuff.md",
+      "promptSha256": "c86e0c957360ae708d2c0802012203745cb4d95fd3d9aaf7dbc5fe4ea3c30db4"
+    },
+    {
+      "task": "054-opencode",
+      "universityTask": "054",
+      "universityId": "8e7965f7-20be-56cb-9233-5daa3414b0fc",
+      "university": "National Taiwan University",
+      "provider": "opencode",
+      "scope": "academics_admissions_costs_rankings",
+      "prompt": "docs/agent-prompts/universities/054-opencode.md",
+      "promptSha256": "4de03d6ec50d6e9a536ac308aebad0af90bf190ad457c2c01dfbb985b8724675"
+    },
+    {
+      "task": "054-freebuff",
+      "universityTask": "054",
+      "universityId": "8e7965f7-20be-56cb-9233-5daa3414b0fc",
+      "university": "National Taiwan University",
+      "provider": "freebuff",
+      "scope": "identity_people_media",
+      "prompt": "docs/agent-prompts/universities/054-freebuff.md",
+      "promptSha256": "5a070e70c39c9f95c3bb75e78541eb6b6794fa1246b2b643a8e644d8a047c0b7"
+    },
+    {
+      "task": "055-opencode",
+      "universityTask": "055",
+      "universityId": "b7c4c075-d30e-53b3-80a8-7e7d751a47b7",
+      "university": "Carnegie Mellon University",
+      "provider": "opencode",
+      "scope": "academics_admissions_costs_rankings",
+      "prompt": "docs/agent-prompts/universities/055-opencode.md",
+      "promptSha256": "5ba3a95426d17123aeef6f9fa49b9b458fa0a36e6513e72ce6131c5075e94899"
+    },
+    {
+      "task": "055-freebuff",
+      "universityTask": "055",
+      "universityId": "b7c4c075-d30e-53b3-80a8-7e7d751a47b7",
+      "university": "Carnegie Mellon University",
+      "provider": "freebuff",
+      "scope": "identity_people_media",
+      "prompt": "docs/agent-prompts/universities/055-freebuff.md",
+      "promptSha256": "76d16ef87b7cae7c90051c97fd759f90c906ff03e94afc01715a289cbd6d67a0"
+    },
+    {
+      "task": "056-opencode",
+      "universityTask": "056",
+      "universityId": "ee31891b-8bbc-5fb0-9bc5-e0122f0c55dd",
+      "university": "Universiti Malaya",
+      "provider": "opencode",
+      "scope": "academics_admissions_costs_rankings",
+      "prompt": "docs/agent-prompts/universities/056-opencode.md",
+      "promptSha256": "732678455a5e002a1bd69d807bbae448f7935a9505f210f27a3048e8ec780416"
+    },
+    {
+      "task": "056-freebuff",
+      "universityTask": "056",
+      "universityId": "ee31891b-8bbc-5fb0-9bc5-e0122f0c55dd",
+      "university": "Universiti Malaya",
+      "provider": "freebuff",
+      "scope": "identity_people_media",
+      "prompt": "docs/agent-prompts/universities/056-freebuff.md",
+      "promptSha256": "c807cf332755ac440fdfa1900a7e72161da72fe78051bff9b47193aeddaea626"
+    },
+    {
+      "task": "057-opencode",
+      "universityTask": "057",
+      "universityId": "ad695799-c6eb-5c4d-901c-a4b7d0b15407",
+      "university": "University of Bristol",
+      "provider": "opencode",
+      "scope": "academics_admissions_costs_rankings",
+      "prompt": "docs/agent-prompts/universities/057-opencode.md",
+      "promptSha256": "48456adc95241696c71168f398e08ee905b12a01bded2cf10c0498f1cccc48a1"
+    },
+    {
+      "task": "057-freebuff",
+      "universityTask": "057",
+      "universityId": "ad695799-c6eb-5c4d-901c-a4b7d0b15407",
+      "university": "University of Bristol",
+      "provider": "freebuff",
+      "scope": "identity_people_media",
+      "prompt": "docs/agent-prompts/universities/057-freebuff.md",
+      "promptSha256": "c1194efa742f176fd05276163bba6bbb02d90254fbb0eed53bfadcb586a8aa50"
+    },
+    {
+      "task": "058-opencode",
+      "universityTask": "058",
+      "universityId": "cc300fc2-3770-5383-a663-b1ec31311b4d",
+      "university": "New York University",
+      "provider": "opencode",
+      "scope": "academics_admissions_costs_rankings",
+      "prompt": "docs/agent-prompts/universities/058-opencode.md",
+      "promptSha256": "88b6c60b64bc56d38617da3644485f94ef09c6fccdf8a5669400ff844ec32fb8"
+    },
+    {
+      "task": "058-freebuff",
+      "universityTask": "058",
+      "universityId": "cc300fc2-3770-5383-a663-b1ec31311b4d",
+      "university": "New York University",
+      "provider": "freebuff",
+      "scope": "identity_people_media",
+      "prompt": "docs/agent-prompts/universities/058-freebuff.md",
+      "promptSha256": "6e57dc7de74227b2027aed9a3bd54b1707209ec6aa48173d059324b66b02e451"
+    },
+    {
+      "task": "059-opencode",
+      "universityTask": "059",
+      "universityId": "0214dadc-625b-5cdb-a2af-cd750bce896d",
+      "university": "KU Leuven",
+      "provider": "opencode",
+      "scope": "academics_admissions_costs_rankings",
+      "prompt": "docs/agent-prompts/universities/059-opencode.md",
+      "promptSha256": "1842261f48e003859d3d1b78376ad6a72927d09b776cfa99c01a6de5ba98f184"
+    },
+    {
+      "task": "059-freebuff",
+      "universityTask": "059",
+      "universityId": "0214dadc-625b-5cdb-a2af-cd750bce896d",
+      "university": "KU Leuven",
+      "provider": "freebuff",
+      "scope": "identity_people_media",
+      "prompt": "docs/agent-prompts/universities/059-freebuff.md",
+      "promptSha256": "c00438d9fecae10a4f462174d52065d36292363a8478cbb2d375db209ba9dc3d"
+    },
+    {
+      "task": "060-opencode",
+      "universityTask": "060",
+      "universityId": "e0088a48-e57b-58d4-bf07-2021931bc1a9",
+      "university": "University of Amsterdam",
+      "provider": "opencode",
+      "scope": "academics_admissions_costs_rankings",
+      "prompt": "docs/agent-prompts/universities/060-opencode.md",
+      "promptSha256": "8856cd77b4d54fbbb97ccff0c9ff8dfae668ae3eaf9cfda5afb511ff50e9df85"
+    },
+    {
+      "task": "060-freebuff",
+      "universityTask": "060",
+      "universityId": "e0088a48-e57b-58d4-bf07-2021931bc1a9",
+      "university": "University of Amsterdam",
+      "provider": "freebuff",
+      "scope": "identity_people_media",
+      "prompt": "docs/agent-prompts/universities/060-freebuff.md",
+      "promptSha256": "8bf1c9659ed3c845c26009781bd6730cedcd82444051347753aea458b76eb388"
+    },
+    {
+      "task": "061-opencode",
+      "universityTask": "061",
+      "universityId": "3c2d87b3-5b20-5df8-99c0-1353112a63f2",
+      "university": "Ludwig-Maximilians-Universität München",
+      "provider": "opencode",
+      "scope": "academics_admissions_costs_rankings",
+      "prompt": "docs/agent-prompts/universities/061-opencode.md",
+      "promptSha256": "ff9ad13faf8f82aa7f4e3b393cbcd679122d6db5cbb2124f9cf3c40e169d902a"
+    },
+    {
+      "task": "061-freebuff",
+      "universityTask": "061",
+      "universityId": "3c2d87b3-5b20-5df8-99c0-1353112a63f2",
+      "university": "Ludwig-Maximilians-Universität München",
+      "provider": "freebuff",
+      "scope": "identity_people_media",
+      "prompt": "docs/agent-prompts/universities/061-freebuff.md",
+      "promptSha256": "337110a371fb893aeaec8c01226765cef583d410c722d14015eb6a78328f3559"
+    },
+    {
+      "task": "062-opencode",
+      "universityTask": "062",
+      "universityId": "3e655a74-c0c7-5a9b-884b-22aebd5e0d1e",
+      "university": "London School of Economics and Political Science, University of London",
+      "provider": "opencode",
+      "scope": "academics_admissions_costs_rankings",
+      "prompt": "docs/agent-prompts/universities/062-opencode.md",
+      "promptSha256": "768c0cd7bbcbff4ab643e2d0be770f7487920aac839f9bd67446bc79e86cd370"
+    },
+    {
+      "task": "062-freebuff",
+      "universityTask": "062",
+      "universityId": "3e655a74-c0c7-5a9b-884b-22aebd5e0d1e",
+      "university": "London School of Economics and Political Science, University of London",
+      "provider": "freebuff",
+      "scope": "identity_people_media",
+      "prompt": "docs/agent-prompts/universities/062-freebuff.md",
+      "promptSha256": "c79f03c55acdec6d1c8799c93a594f6e37453ff2a2f028b22dc155eae418ccbe"
+    },
+    {
+      "task": "063-opencode",
+      "universityTask": "063",
+      "universityId": "72d90170-c326-5377-8295-5226875a04a1",
+      "university": "King Fahad University of Petroleum and Minerals",
+      "provider": "opencode",
+      "scope": "academics_admissions_costs_rankings",
+      "prompt": "docs/agent-prompts/universities/063-opencode.md",
+      "promptSha256": "d6b5ee4d9abb5ff3f3fe03b20aad48d1c06e40551af6138a69ab54ef9b1b6613"
+    },
+    {
+      "task": "063-freebuff",
+      "universityTask": "063",
+      "universityId": "72d90170-c326-5377-8295-5226875a04a1",
+      "university": "King Fahad University of Petroleum and Minerals",
+      "provider": "freebuff",
+      "scope": "identity_people_media",
+      "prompt": "docs/agent-prompts/universities/063-freebuff.md",
+      "promptSha256": "c1351299bd3cdde56dd40b2eef5004a16cb6ecf8f96411ad18a8ab1f280a85be"
+    },
+    {
+      "task": "064-opencode",
+      "universityTask": "064",
+      "universityId": "e943a9a4-853c-5554-ac7f-9887d0b2a91d",
+      "university": "Kyoto University",
+      "provider": "opencode",
+      "scope": "academics_admissions_costs_rankings",
+      "prompt": "docs/agent-prompts/universities/064-opencode.md",
+      "promptSha256": "f7dc81a76a59c799400f35fbc816268f7075fb3ff3769fc9e1669b4d8b0af5fd"
+    },
+    {
+      "task": "064-freebuff",
+      "universityTask": "064",
+      "universityId": "e943a9a4-853c-5554-ac7f-9887d0b2a91d",
+      "university": "Kyoto University",
+      "provider": "freebuff",
+      "scope": "identity_people_media",
+      "prompt": "docs/agent-prompts/universities/064-freebuff.md",
+      "promptSha256": "0c06d8f6a3d920390252f885a77eadf1562a76a918d237577bf040edff2dd7b9"
+    },
+    {
+      "task": "065-opencode",
+      "universityTask": "065",
+      "universityId": "bb32340f-54ba-5885-82ba-4ae645d93930",
+      "university": "Korea Advanced Institute of Science & Technology",
+      "provider": "opencode",
+      "scope": "academics_admissions_costs_rankings",
+      "prompt": "docs/agent-prompts/universities/065-opencode.md",
+      "promptSha256": "3eafb87baa7164b3aae9d728264de8861ef489c08b52f175b89f7fbf2b79b091"
+    },
+    {
+      "task": "065-freebuff",
+      "universityTask": "065",
+      "universityId": "bb32340f-54ba-5885-82ba-4ae645d93930",
+      "university": "Korea Advanced Institute of Science & Technology",
+      "provider": "freebuff",
+      "scope": "identity_people_media",
+      "prompt": "docs/agent-prompts/universities/065-freebuff.md",
+      "promptSha256": "b02cd64f39d69a1a5e2ec203ad935768453a30a84bd724c3bd9a6bd3d9abf5f2"
+    },
+    {
+      "task": "066-opencode",
+      "universityTask": "066",
+      "universityId": "88fab389-ea96-5377-b015-69d9756ba9a9",
+      "university": "Brown University",
+      "provider": "opencode",
+      "scope": "academics_admissions_costs_rankings",
+      "prompt": "docs/agent-prompts/universities/066-opencode.md",
+      "promptSha256": "c6bfd27aafc5d89ad48e2515357cfb8a4b20e369a7c9bbf8f5be3fa6a5f1424d"
+    },
+    {
+      "task": "066-freebuff",
+      "universityTask": "066",
+      "universityId": "88fab389-ea96-5377-b015-69d9756ba9a9",
+      "university": "Brown University",
+      "provider": "freebuff",
+      "scope": "identity_people_media",
+      "prompt": "docs/agent-prompts/universities/066-freebuff.md",
+      "promptSha256": "92e57f9f444949bca80453e11a9f0709c1685cda19236a5851bd14c56d8570a0"
+    },
+    {
+      "task": "067-opencode",
+      "universityTask": "067",
+      "universityId": "6941fb87-c482-5aa1-9f3c-a5de7cf736dc",
+      "university": "University of Auckland",
+      "provider": "opencode",
+      "scope": "academics_admissions_costs_rankings",
+      "prompt": "docs/agent-prompts/universities/067-opencode.md",
+      "promptSha256": "445a07b0f65c4a8ea0f2ed1f16de90efa067201ca86b2b0e7345e14cf8ae78d0"
+    },
+    {
+      "task": "067-freebuff",
+      "universityTask": "067",
+      "universityId": "6941fb87-c482-5aa1-9f3c-a5de7cf736dc",
+      "university": "University of Auckland",
+      "provider": "freebuff",
+      "scope": "identity_people_media",
+      "prompt": "docs/agent-prompts/universities/067-freebuff.md",
+      "promptSha256": "71461d8849d439c4602515c9a9ffd1cac528b124805db18546307fb65cc7fcba"
+    },
+    {
+      "task": "068-opencode",
+      "universityTask": "068",
+      "universityId": "4b7a7f67-a5fa-5660-a95b-87588748c8e4",
+      "university": "University of Warwick",
+      "provider": "opencode",
+      "scope": "academics_admissions_costs_rankings",
+      "prompt": "docs/agent-prompts/universities/068-opencode.md",
+      "promptSha256": "1ae79b6b9c2292cfe68c05aee350472f452eb4a97019f69b50622c4d0cbe283f"
+    },
+    {
+      "task": "068-freebuff",
+      "universityTask": "068",
+      "universityId": "4b7a7f67-a5fa-5660-a95b-87588748c8e4",
+      "university": "University of Warwick",
+      "provider": "freebuff",
+      "scope": "identity_people_media",
+      "prompt": "docs/agent-prompts/universities/068-freebuff.md",
+      "promptSha256": "50977d02fc479e9e2c5272ddc7194f39e620a65d0499b522d8b327224b03eeaa"
+    },
+    {
+      "task": "069-opencode",
+      "universityTask": "069",
+      "universityId": "1a5b82c1-d204-5c75-a433-ef5c17e2a9d2",
+      "university": "University of Birmingham",
+      "provider": "opencode",
+      "scope": "academics_admissions_costs_rankings",
+      "prompt": "docs/agent-prompts/universities/069-opencode.md",
+      "promptSha256": "3d9c636ec6d55a13eef4f72c90391ee6bc16aefd9792c2e2eff1bc5bd9bb8272"
+    },
+    {
+      "task": "069-freebuff",
+      "universityTask": "069",
+      "universityId": "1a5b82c1-d204-5c75-a433-ef5c17e2a9d2",
+      "university": "University of Birmingham",
+      "provider": "freebuff",
+      "scope": "identity_people_media",
+      "prompt": "docs/agent-prompts/universities/069-freebuff.md",
+      "promptSha256": "19190071fabae9901f888518fd6b26c86a0bd67b7947f05ad7ef4ca3a05cc10e"
+    },
+    {
+      "task": "070-opencode",
+      "universityTask": "070",
+      "universityId": "fb08c67d-bb79-53ff-bbfc-1313fa5602e3",
+      "university": "Duke University",
+      "provider": "opencode",
+      "scope": "academics_admissions_costs_rankings",
+      "prompt": "docs/agent-prompts/universities/070-opencode.md",
+      "promptSha256": "cce631c771fff19d37eeb2cf4cccb0a5e267dcf700bba88b8ab3a0a30ae51b6f"
+    },
+    {
+      "task": "070-freebuff",
+      "universityTask": "070",
+      "universityId": "fb08c67d-bb79-53ff-bbfc-1313fa5602e3",
+      "university": "Duke University",
+      "provider": "freebuff",
+      "scope": "identity_people_media",
+      "prompt": "docs/agent-prompts/universities/070-freebuff.md",
+      "promptSha256": "d17dc235fb1146469a813d779cdd845ad100c4ce97c7a7b90ab94f3c2e25d58b"
+    },
+    {
+      "task": "071-opencode",
+      "universityTask": "071",
+      "universityId": "bc0bcefc-cf3b-5fc7-bb41-76470ec9ff59",
+      "university": "Lund University",
+      "provider": "opencode",
+      "scope": "academics_admissions_costs_rankings",
+      "prompt": "docs/agent-prompts/universities/071-opencode.md",
+      "promptSha256": "01042e6d62948f89d64410ee6a33c3a8dfe98da353762fe0715f0d24e80bb2c7"
+    },
+    {
+      "task": "071-freebuff",
+      "universityTask": "071",
+      "universityId": "bc0bcefc-cf3b-5fc7-bb41-76470ec9ff59",
+      "university": "Lund University",
+      "provider": "freebuff",
+      "scope": "identity_people_media",
+      "prompt": "docs/agent-prompts/universities/071-freebuff.md",
+      "promptSha256": "b613ff3b40219813e6b370a6ae623b13dff96b3269161d940695a4b0e9fefa0d"
+    },
+    {
+      "task": "072-opencode",
+      "universityTask": "072",
+      "universityId": "e777849c-7be7-553b-90bf-d99502e7c52d",
+      "university": "The University of Texas at Austin",
+      "provider": "opencode",
+      "scope": "academics_admissions_costs_rankings",
+      "prompt": "docs/agent-prompts/universities/072-opencode.md",
+      "promptSha256": "db5cddeb06ee8edfcd71cb3fe08b28c9ba3dca39c70ece218a0f908781cef0d8"
+    },
+    {
+      "task": "072-freebuff",
+      "universityTask": "072",
+      "universityId": "e777849c-7be7-553b-90bf-d99502e7c52d",
+      "university": "The University of Texas at Austin",
+      "provider": "freebuff",
+      "scope": "identity_people_media",
+      "prompt": "docs/agent-prompts/universities/072-freebuff.md",
+      "promptSha256": "34a366b3de3f92e0e9783a09cdde295a1bb719cef76108af65cb576e9f49c9c2"
+    },
+    {
+      "task": "073-opencode",
+      "universityTask": "073",
+      "universityId": "b3a81d8c-44ec-56d8-aa5f-b58d5fce6bfd",
+      "university": "Sorbonne Université",
+      "provider": "opencode",
+      "scope": "academics_admissions_costs_rankings",
+      "prompt": "docs/agent-prompts/universities/073-opencode.md",
+      "promptSha256": "494bf3370a086ceccf2e0152f108f0f39c8b94be893a0c2e8017879f7301ae84"
+    },
+    {
+      "task": "073-freebuff",
+      "universityTask": "073",
+      "universityId": "b3a81d8c-44ec-56d8-aa5f-b58d5fce6bfd",
+      "university": "Sorbonne Université",
+      "provider": "freebuff",
+      "scope": "identity_people_media",
+      "prompt": "docs/agent-prompts/universities/073-freebuff.md",
+      "promptSha256": "a7c453d6310bc1df1feb5b445ab57ad2fa1fbbe4edf2474f3f97ad70f281e53c"
+    },
+    {
+      "task": "074-opencode",
+      "universityTask": "074",
+      "universityId": "f5cd8bb6-027a-504f-bc7e-19d3d4e017c7",
+      "university": "University of Illinois Urbana-Champaign",
+      "provider": "opencode",
+      "scope": "academics_admissions_costs_rankings",
+      "prompt": "docs/agent-prompts/universities/074-opencode.md",
+      "promptSha256": "0a6cf4db278b0d348f798c804287041eae6a98b67c0f1b0737290655324912c7"
+    },
+    {
+      "task": "074-freebuff",
+      "universityTask": "074",
+      "universityId": "f5cd8bb6-027a-504f-bc7e-19d3d4e017c7",
+      "university": "University of Illinois Urbana-Champaign",
+      "provider": "freebuff",
+      "scope": "identity_people_media",
+      "prompt": "docs/agent-prompts/universities/074-freebuff.md",
+      "promptSha256": "9d97f925381d05112f1d456fbcbd519b66de6cbbe1e5d0dd14d8c4c5852c9a4b"
+    },
+    {
+      "task": "075-opencode",
+      "universityTask": "075",
+      "universityId": "8e191d89-10ba-5f03-913b-836c9c7194a0",
+      "university": "Université Paris-Saclay",
+      "provider": "opencode",
+      "scope": "academics_admissions_costs_rankings",
+      "prompt": "docs/agent-prompts/universities/075-opencode.md",
+      "promptSha256": "cca9ba2c6ccd7186ee58858ddacfcd05f17c7b69fc6b01dc30e3a94e3edc2cb8"
+    },
+    {
+      "task": "075-freebuff",
+      "universityTask": "075",
+      "universityId": "8e191d89-10ba-5f03-913b-836c9c7194a0",
+      "university": "Université Paris-Saclay",
+      "provider": "freebuff",
+      "scope": "identity_people_media",
+      "prompt": "docs/agent-prompts/universities/075-freebuff.md",
+      "promptSha256": "75d87c694429f8b5688df71af544b2b2f462bb19b054759175bf57d4a3355684"
+    },
+    {
+      "task": "076-opencode",
+      "universityTask": "076",
+      "universityId": "24e7d208-f222-510a-92a9-011aead2e2cc",
+      "university": "University of Western Australia",
+      "provider": "opencode",
+      "scope": "academics_admissions_costs_rankings",
+      "prompt": "docs/agent-prompts/universities/076-opencode.md",
+      "promptSha256": "432ce9169723b4966fd91b38b6da49f3b491820ac26ad186a3175c3631dd7570"
+    },
+    {
+      "task": "076-freebuff",
+      "universityTask": "076",
+      "universityId": "24e7d208-f222-510a-92a9-011aead2e2cc",
+      "university": "University of Western Australia",
+      "provider": "freebuff",
+      "scope": "identity_people_media",
+      "prompt": "docs/agent-prompts/universities/076-freebuff.md",
+      "promptSha256": "1cf830af538de041a1cfd17e4a88b5a334b59a3c12a02085921e8389d69a3468"
+    },
+    {
+      "task": "077-opencode",
+      "universityTask": "077",
+      "universityId": "2aa84135-ae94-568c-8721-5c06c836a3f2",
+      "university": "University of Leeds",
+      "provider": "opencode",
+      "scope": "academics_admissions_costs_rankings",
+      "prompt": "docs/agent-prompts/universities/077-opencode.md",
+      "promptSha256": "8b6d17d2bf1915742bd9de41182147d173810a0275128cd7c91038eb872b0a02"
+    },
+    {
+      "task": "077-freebuff",
+      "universityTask": "077",
+      "universityId": "2aa84135-ae94-568c-8721-5c06c836a3f2",
+      "university": "University of Leeds",
+      "provider": "freebuff",
+      "scope": "identity_people_media",
+      "prompt": "docs/agent-prompts/universities/077-freebuff.md",
+      "promptSha256": "964ef2c0dd298bb45355a59b78542ab28bf436fa01a388c8f3909a519bf9e1f2"
+    },
+    {
+      "task": "078-opencode",
+      "universityTask": "078",
+      "universityId": "6a32c909-6d47-5097-a8a9-50e39d01408f",
+      "university": "University of Adelaide",
+      "provider": "opencode",
+      "scope": "academics_admissions_costs_rankings",
+      "prompt": "docs/agent-prompts/universities/078-opencode.md",
+      "promptSha256": "dd81c22eb85a1f7978b7d4140212585065cce60c1f44e1a4409c356bfd0996c7"
+    },
+    {
+      "task": "078-freebuff",
+      "universityTask": "078",
+      "universityId": "6a32c909-6d47-5097-a8a9-50e39d01408f",
+      "university": "University of Adelaide",
+      "provider": "freebuff",
+      "scope": "identity_people_media",
+      "prompt": "docs/agent-prompts/universities/078-freebuff.md",
+      "promptSha256": "a479ef51839c609e9ef8c6c6e3b4f16c16991c7acf01d4991ba7c77ca2ce4a3a"
+    },
+    {
+      "task": "079-opencode",
+      "universityTask": "079",
+      "universityId": "61b5c222-f7d2-5ff7-a546-b186e73b945b",
+      "university": "University of Glasgow",
+      "provider": "opencode",
+      "scope": "academics_admissions_costs_rankings",
+      "prompt": "docs/agent-prompts/universities/079-opencode.md",
+      "promptSha256": "ac3d08e06fd59650d587ce41032c1cc7b4568f665769f1d3800f084b3ccd10d5"
+    },
+    {
+      "task": "079-freebuff",
+      "universityTask": "079",
+      "universityId": "61b5c222-f7d2-5ff7-a546-b186e73b945b",
+      "university": "University of Glasgow",
+      "provider": "freebuff",
+      "scope": "identity_people_media",
+      "prompt": "docs/agent-prompts/universities/079-freebuff.md",
+      "promptSha256": "30cba44cb5513759344e393cce2f6ea74af58373c4f74adbd714ec617ab34eb7"
+    },
+    {
+      "task": "080-opencode",
+      "universityTask": "080",
+      "universityId": "8db5368d-e619-5c47-a235-b8d3afff1258",
+      "university": "University of California-San Diego",
+      "provider": "opencode",
+      "scope": "academics_admissions_costs_rankings",
+      "prompt": "docs/agent-prompts/universities/080-opencode.md",
+      "promptSha256": "66a2abadcf10111373de982116e8ff6fc533e1efe1676254e174d7ea0b240482"
+    },
+    {
+      "task": "080-freebuff",
+      "universityTask": "080",
+      "universityId": "8db5368d-e619-5c47-a235-b8d3afff1258",
+      "university": "University of California-San Diego",
+      "provider": "freebuff",
+      "scope": "identity_people_media",
+      "prompt": "docs/agent-prompts/universities/080-freebuff.md",
+      "promptSha256": "6a5c0b045aaa12860684ec5212c4bd96587e99157239a8587ed4d1e0db76bd7e"
+    },
+    {
+      "task": "081-opencode",
+      "universityTask": "081",
+      "universityId": "eec543ea-8898-575e-a968-7faa90285317",
+      "university": "KTH Royal Institute of Technology",
+      "provider": "opencode",
+      "scope": "academics_admissions_costs_rankings",
+      "prompt": "docs/agent-prompts/universities/081-opencode.md",
+      "promptSha256": "b39c8b4e1115ccabd00d59e19531a1941f71bb75e46994c0772c4cf154aeb7b2"
+    },
+    {
+      "task": "081-freebuff",
+      "universityTask": "081",
+      "universityId": "eec543ea-8898-575e-a968-7faa90285317",
+      "university": "KTH Royal Institute of Technology",
+      "provider": "freebuff",
+      "scope": "identity_people_media",
+      "prompt": "docs/agent-prompts/universities/081-freebuff.md",
+      "promptSha256": "012424257ed2f2071d0952446bb8706bd17d0969706c93ac2f92aee7aeefe635"
+    },
+    {
+      "task": "082-opencode",
+      "universityTask": "082",
+      "universityId": "3c3e72ae-5e23-550f-8280-25603d083bb5",
+      "university": "The University of Sheffield",
+      "provider": "opencode",
+      "scope": "academics_admissions_costs_rankings",
+      "prompt": "docs/agent-prompts/universities/082-opencode.md",
+      "promptSha256": "0edeaef11c808b03df6a016a02b0e6ab9d1530db71a335215de66833613552c1"
+    },
+    {
+      "task": "082-freebuff",
+      "universityTask": "082",
+      "universityId": "3c3e72ae-5e23-550f-8280-25603d083bb5",
+      "university": "The University of Sheffield",
+      "provider": "freebuff",
+      "scope": "identity_people_media",
+      "prompt": "docs/agent-prompts/universities/082-freebuff.md",
+      "promptSha256": "3084d71b07a178a2d2431e7cab632b898200beb69e93bb7c16d12b4a5d20f6ec"
+    },
+    {
+      "task": "083-opencode",
+      "universityTask": "083",
+      "universityId": "8ea2d1c3-ce48-518f-9417-7c08098cd6d5",
+      "university": "Universidad de Buenos Aires",
+      "provider": "opencode",
+      "scope": "academics_admissions_costs_rankings",
+      "prompt": "docs/agent-prompts/universities/083-opencode.md",
+      "promptSha256": "103163bb248f5c0ba7f1dc6652c5fb1f123f7f3ac753ccdeb9f624ffb5d7c08c"
+    },
+    {
+      "task": "083-freebuff",
+      "universityTask": "083",
+      "universityId": "8ea2d1c3-ce48-518f-9417-7c08098cd6d5",
+      "university": "Universidad de Buenos Aires",
+      "provider": "freebuff",
+      "scope": "identity_people_media",
+      "prompt": "docs/agent-prompts/universities/083-freebuff.md",
+      "promptSha256": "9fa2b21eb3cb4c27193220700c9589b04e674a4bf820a8f339ab4611a7759b0d"
+    },
+    {
+      "task": "084-opencode",
+      "universityTask": "084",
+      "universityId": "69452803-31fe-56a8-b2b4-c2a682cf4214",
+      "university": "University of Durham",
+      "provider": "opencode",
+      "scope": "academics_admissions_costs_rankings",
+      "prompt": "docs/agent-prompts/universities/084-opencode.md",
+      "promptSha256": "c989563c10f64838e63d0d1f4cfc0f97a89cffad645b7fdccdf09d8fe9d5148d"
+    },
+    {
+      "task": "084-freebuff",
+      "universityTask": "084",
+      "universityId": "69452803-31fe-56a8-b2b4-c2a682cf4214",
+      "university": "University of Durham",
+      "provider": "freebuff",
+      "scope": "identity_people_media",
+      "prompt": "docs/agent-prompts/universities/084-freebuff.md",
+      "promptSha256": "c5bd69db33a34f2aa698dc4ecb29933d38b4b0c3552b0148c976a448b2e70d74"
+    },
+    {
+      "task": "085-opencode",
+      "universityTask": "085",
+      "universityId": "414b011a-c052-5872-b787-f47af96a0c8d",
+      "university": "Polytechnic Institute of Milan",
+      "provider": "opencode",
+      "scope": "academics_admissions_costs_rankings",
+      "prompt": "docs/agent-prompts/universities/085-opencode.md",
+      "promptSha256": "3faaf605a0d4cb46eacd4a917246a0f8df31baeabd6205aef4116df39e410cb4"
+    },
+    {
+      "task": "085-freebuff",
+      "universityTask": "085",
+      "universityId": "414b011a-c052-5872-b787-f47af96a0c8d",
+      "university": "Polytechnic Institute of Milan",
+      "provider": "freebuff",
+      "scope": "identity_people_media",
+      "prompt": "docs/agent-prompts/universities/085-freebuff.md",
+      "promptSha256": "400b1d40bfd76ba54902698586e917d0daef50b53027c24078ac742c0c10852f"
+    },
+    {
+      "task": "086-opencode",
+      "universityTask": "086",
+      "universityId": "eacacd15-de55-5ef0-b874-54d46d92b26c",
+      "university": "University of Technology Sydney",
+      "provider": "opencode",
+      "scope": "academics_admissions_costs_rankings",
+      "prompt": "docs/agent-prompts/universities/086-opencode.md",
+      "promptSha256": "82ab8f33c0329a5b8af7343f274da307d60be3f87f0c5fd284a86feabbcf7dc2"
+    },
+    {
+      "task": "086-freebuff",
+      "universityTask": "086",
+      "universityId": "eacacd15-de55-5ef0-b874-54d46d92b26c",
+      "university": "University of Technology Sydney",
+      "provider": "freebuff",
+      "scope": "identity_people_media",
+      "prompt": "docs/agent-prompts/universities/086-freebuff.md",
+      "promptSha256": "c69e1626877a85d3b7cf7f2b518cd73aee4dcb7ab64db6ce33efe40dfbbfbb6a"
+    },
+    {
+      "task": "087-opencode",
+      "universityTask": "087",
+      "universityId": "75f1a39c-5876-5365-a4e5-4f8190028c13",
+      "university": "Uppsala University",
+      "provider": "opencode",
+      "scope": "academics_admissions_costs_rankings",
+      "prompt": "docs/agent-prompts/universities/087-opencode.md",
+      "promptSha256": "4bb143363509a0e7dfd1d5ebd337c97d21202a1f8e21c70a420e80598c7eb73e"
+    },
+    {
+      "task": "087-freebuff",
+      "universityTask": "087",
+      "universityId": "75f1a39c-5876-5365-a4e5-4f8190028c13",
+      "university": "Uppsala University",
+      "provider": "freebuff",
+      "scope": "identity_people_media",
+      "prompt": "docs/agent-prompts/universities/087-freebuff.md",
+      "promptSha256": "55ef46a0e60076c97006a437ebbd680c04a5dd047b4bda665b069d164842ad4a"
+    },
+    {
+      "task": "088-opencode",
+      "universityTask": "088",
+      "universityId": "0aeeb18a-3be5-5bb9-9875-0bf4ce24d102",
+      "university": "Nanjing University",
+      "provider": "opencode",
+      "scope": "academics_admissions_costs_rankings",
+      "prompt": "docs/agent-prompts/universities/088-opencode.md",
+      "promptSha256": "425915704b21fabf23c104d832e2a75f745c27b90b5a7ca985281c486b80d52d"
+    },
+    {
+      "task": "088-freebuff",
+      "universityTask": "088",
+      "universityId": "0aeeb18a-3be5-5bb9-9875-0bf4ce24d102",
+      "university": "Nanjing University",
+      "provider": "freebuff",
+      "scope": "identity_people_media",
+      "prompt": "docs/agent-prompts/universities/088-freebuff.md",
+      "promptSha256": "44df313de2b2eba87bbbfd8acf0b8bee7669c12648b65e6ec3514455473df76b"
+    },
+    {
+      "task": "089-opencode",
+      "universityTask": "089",
+      "universityId": "e2e9494c-968c-55f4-8889-2ec1ac65fbdd",
+      "university": "University of Copenhagen",
+      "provider": "opencode",
+      "scope": "academics_admissions_costs_rankings",
+      "prompt": "docs/agent-prompts/universities/089-opencode.md",
+      "promptSha256": "bc3e6960d8273f5915099eaf7d88f948d3a6745b2ae1bf368b8cbf06ed6d4d66"
+    },
+    {
+      "task": "089-freebuff",
+      "universityTask": "089",
+      "universityId": "e2e9494c-968c-55f4-8889-2ec1ac65fbdd",
+      "university": "University of Copenhagen",
+      "provider": "freebuff",
+      "scope": "identity_people_media",
+      "prompt": "docs/agent-prompts/universities/089-freebuff.md",
+      "promptSha256": "4079d075061aec23120d971d492e1268570ab2bb27937ace787caf8947d75a51"
+    },
+    {
+      "task": "090-opencode",
+      "universityTask": "090",
+      "universityId": "0cb61489-37dd-53a3-a9f2-53cbd5f1a0dd",
+      "university": "Pennsylvania State University-Main Campus",
+      "provider": "opencode",
+      "scope": "academics_admissions_costs_rankings",
+      "prompt": "docs/agent-prompts/universities/090-opencode.md",
+      "promptSha256": "dec6416435f4e9054dd5a56f6871304fa7095031960de175ffb26cc0cf997cb4"
+    },
+    {
+      "task": "090-freebuff",
+      "universityTask": "090",
+      "universityId": "0cb61489-37dd-53a3-a9f2-53cbd5f1a0dd",
+      "university": "Pennsylvania State University-Main Campus",
+      "provider": "freebuff",
+      "scope": "identity_people_media",
+      "prompt": "docs/agent-prompts/universities/090-freebuff.md",
+      "promptSha256": "64d3c0aec24916d42b992b2d9545f1b0fba86433ff1c7c2f7d3b239e07eefb3f"
+    },
+    {
+      "task": "091-opencode",
+      "universityTask": "091",
+      "universityId": "5d324277-c7c7-52eb-9d99-03367f122d16",
+      "university": "University of Washington-Seattle Campus",
+      "provider": "opencode",
+      "scope": "academics_admissions_costs_rankings",
+      "prompt": "docs/agent-prompts/universities/091-opencode.md",
+      "promptSha256": "3542ebbd093e3c48587e700900e337595cd3292b7809ec7ee96f3f7cccccdfee"
+    },
+    {
+      "task": "091-freebuff",
+      "universityTask": "091",
+      "universityId": "5d324277-c7c7-52eb-9d99-03367f122d16",
+      "university": "University of Washington-Seattle Campus",
+      "provider": "freebuff",
+      "scope": "identity_people_media",
+      "prompt": "docs/agent-prompts/universities/091-freebuff.md",
+      "promptSha256": "3a84c3e44b3f5d50fcddf8250530a7cedd00c74a3051d7a41073732ed581d59e"
+    },
+    {
+      "task": "092-opencode",
+      "universityTask": "092",
+      "universityId": "2ef76bea-f0ec-5124-bd16-bfac73557290",
+      "university": "Boston University",
+      "provider": "opencode",
+      "scope": "academics_admissions_costs_rankings",
+      "prompt": "docs/agent-prompts/universities/092-opencode.md",
+      "promptSha256": "de8c8c541768dd0e88b64c612fcfc766a438802656090404a141419a4695144c"
+    },
+    {
+      "task": "092-freebuff",
+      "universityTask": "092",
+      "universityId": "2ef76bea-f0ec-5124-bd16-bfac73557290",
+      "university": "Boston University",
+      "provider": "freebuff",
+      "scope": "identity_people_media",
+      "prompt": "docs/agent-prompts/universities/092-freebuff.md",
+      "promptSha256": "d8aa3802ae01a137e80b6dcbf1387c279f462b25dd224215c9abf9041f57a698"
+    },
+    {
+      "task": "093-opencode",
+      "universityTask": "093",
+      "universityId": "b186f041-f090-5f21-b68a-5b22175d4b14",
+      "university": "Osaka University",
+      "provider": "opencode",
+      "scope": "academics_admissions_costs_rankings",
+      "prompt": "docs/agent-prompts/universities/093-opencode.md",
+      "promptSha256": "a7717852b175dc696de627285f0c409dbcb3dc0a66d14a2efdae8018a93e57cc"
+    },
+    {
+      "task": "093-freebuff",
+      "universityTask": "093",
+      "universityId": "b186f041-f090-5f21-b68a-5b22175d4b14",
+      "university": "Osaka University",
+      "provider": "freebuff",
+      "scope": "identity_people_media",
+      "prompt": "docs/agent-prompts/universities/093-freebuff.md",
+      "promptSha256": "2213e7f9c4b2ede43206270e24eb40fec528accd43cb7dd13574002958cf2448"
+    },
+    {
+      "task": "094-opencode",
+      "universityTask": "094",
+      "universityId": "74effccc-395b-52fb-8f50-2523f7897428",
+      "university": "University of Alberta",
+      "provider": "opencode",
+      "scope": "academics_admissions_costs_rankings",
+      "prompt": "docs/agent-prompts/universities/094-opencode.md",
+      "promptSha256": "d3bdd9b6044bdef98a7e6656eb1a1f156f593a445f6dc1fb36718edecabc6a81"
+    },
+    {
+      "task": "094-freebuff",
+      "universityTask": "094",
+      "universityId": "74effccc-395b-52fb-8f50-2523f7897428",
+      "university": "University of Alberta",
+      "provider": "freebuff",
+      "scope": "identity_people_media",
+      "prompt": "docs/agent-prompts/universities/094-freebuff.md",
+      "promptSha256": "843e0bbdbbb48bae6b04411acd3844e48f4c487cb7801e9fd15bbe31b1ad86c6"
+    },
+    {
+      "task": "095-opencode",
+      "universityTask": "095",
+      "universityId": "1789110d-d2fe-546a-bb76-da8fc3c966d6",
+      "university": "Institute of Science Tokyo",
+      "provider": "opencode",
+      "scope": "academics_admissions_costs_rankings",
+      "prompt": "docs/agent-prompts/universities/095-opencode.md",
+      "promptSha256": "e564c7b0d9455a32a5a3a8bee14fd8c18b43acc326d5084f4eaf72f1ec58c0e2"
+    },
+    {
+      "task": "095-freebuff",
+      "universityTask": "095",
+      "universityId": "1789110d-d2fe-546a-bb76-da8fc3c966d6",
+      "university": "Institute of Science Tokyo",
+      "provider": "freebuff",
+      "scope": "identity_people_media",
+      "prompt": "docs/agent-prompts/universities/095-freebuff.md",
+      "promptSha256": "6ba95861d1dfb331923204fb3ccd14b6f12de9769bd703dc37c379f1f29634b1"
+    },
+    {
+      "task": "096-opencode",
+      "universityTask": "096",
+      "universityId": "0bfd2121-ebb3-562f-ad36-d6a5bf570d8b",
+      "university": "University of Nottingham",
+      "provider": "opencode",
+      "scope": "academics_admissions_costs_rankings",
+      "prompt": "docs/agent-prompts/universities/096-opencode.md",
+      "promptSha256": "2c3dac597eb9c1b92b1de1bb5ae55931c59cadcd8ad8f2b7d2877b576b72e30d"
+    },
+    {
+      "task": "096-freebuff",
+      "universityTask": "096",
+      "universityId": "0bfd2121-ebb3-562f-ad36-d6a5bf570d8b",
+      "university": "University of Nottingham",
+      "provider": "freebuff",
+      "scope": "identity_people_media",
+      "prompt": "docs/agent-prompts/universities/096-freebuff.md",
+      "promptSha256": "d20d4ca56dfa71e9897503b9ebb0f2a0df0a0dbe2fbe0cc45cf6d228625f026e"
+    },
+    {
+      "task": "097-opencode",
+      "universityTask": "097",
+      "universityId": "4257293d-ae04-50f0-a670-a46ee48a8e44",
+      "university": "Universität Zürich",
+      "provider": "opencode",
+      "scope": "academics_admissions_costs_rankings",
+      "prompt": "docs/agent-prompts/universities/097-opencode.md",
+      "promptSha256": "8485c070e7a780d1b93e9bcd893f21c4a867678e3a044efd1d5c7d36346e10ed"
+    },
+    {
+      "task": "097-freebuff",
+      "universityTask": "097",
+      "universityId": "4257293d-ae04-50f0-a670-a46ee48a8e44",
+      "university": "Universität Zürich",
+      "provider": "freebuff",
+      "scope": "identity_people_media",
+      "prompt": "docs/agent-prompts/universities/097-freebuff.md",
+      "promptSha256": "4f579b0d5bfb657b661216b0c40f03ca7bcb11b1dd633db817b28c27429aabfe"
+    },
+    {
+      "task": "098-opencode",
+      "universityTask": "098",
+      "universityId": "35a032fc-f24f-5a50-92ed-b818fca7f222",
+      "university": "University College Dublin",
+      "provider": "opencode",
+      "scope": "academics_admissions_costs_rankings",
+      "prompt": "docs/agent-prompts/universities/098-opencode.md",
+      "promptSha256": "5c202f14d02531c85763e8992677b22d4f6828be51c69699904bd219bae71402"
+    },
+    {
+      "task": "098-freebuff",
+      "universityTask": "098",
+      "universityId": "35a032fc-f24f-5a50-92ed-b818fca7f222",
+      "university": "University College Dublin",
+      "provider": "freebuff",
+      "scope": "identity_people_media",
+      "prompt": "docs/agent-prompts/universities/098-freebuff.md",
+      "promptSha256": "4cbaf4906fc45c8acc9298e56d34fb09d870609b03e62c10e4f61012af3a9ea6"
+    },
+    {
+      "task": "099-opencode",
+      "universityTask": "099",
+      "universityId": "2eeda25f-2732-523e-b485-bab01ce33cd6",
+      "university": "Tohoku University",
+      "provider": "opencode",
+      "scope": "academics_admissions_costs_rankings",
+      "prompt": "docs/agent-prompts/universities/099-opencode.md",
+      "promptSha256": "842ef0feaed02d3ad48ae1cba4f76f4673820fa321a3b3197f5fed0270d221f5"
+    },
+    {
+      "task": "099-freebuff",
+      "universityTask": "099",
+      "universityId": "2eeda25f-2732-523e-b485-bab01ce33cd6",
+      "university": "Tohoku University",
+      "provider": "freebuff",
+      "scope": "identity_people_media",
+      "prompt": "docs/agent-prompts/universities/099-freebuff.md",
+      "promptSha256": "313d05ab82de6db3356f15824f72c418e70b95787a91877c40d2d9baf25747a6"
+    },
+    {
+      "task": "100-opencode",
+      "universityTask": "100",
+      "universityId": "3d2122dd-542a-5bad-94e8-33090f53f6ad",
+      "university": "Queen Mary University of London",
+      "provider": "opencode",
+      "scope": "academics_admissions_costs_rankings",
+      "prompt": "docs/agent-prompts/universities/100-opencode.md",
+      "promptSha256": "7695baeb269f8021d7ce40b3e138e2ba4ce41e4e91f8b6dec8aad5a316069b85"
+    },
+    {
+      "task": "100-freebuff",
+      "universityTask": "100",
+      "universityId": "3d2122dd-542a-5bad-94e8-33090f53f6ad",
+      "university": "Queen Mary University of London",
+      "provider": "freebuff",
+      "scope": "identity_people_media",
+      "prompt": "docs/agent-prompts/universities/100-freebuff.md",
+      "promptSha256": "850fb8e9729ac1f956317917cea6a68ad86674c3fc11d80477032d1a4494b7da"
+    }
+  ]
+}

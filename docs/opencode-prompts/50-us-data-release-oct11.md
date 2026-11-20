@@ -1,0 +1,7 @@
+# CollegeStat bounded research task 50: us-data-release
+
+Research newest official College Scorecard and NCES IPEDS releases for admissions, costs, aid and outcomes. Existing installed aid is SFA2023-24; historical completions must not be presented as current programmes. Report release URLs, data dictionaries, periods/populations, licence and proposed fields. Primary education.gov/nces.ed.gov sources only. No API key, credentials, private records, downloads or imports.
+
+Use the requested Muse Spark 1.3 xhigh model. This is read-only research/presentation review. The existing repository and approved centred search hero/floating navbar remain in place. Owner asks for useful landing sections and folders, a compact student workspace, simpler staff navigation, accurate evidence and current data.
+
+You may write only your report at `outputs/muse-us-data-release-oct11.md`. Read only the explicitly named public files (if none are named, use primary web sources only). Do not read or transmit .env, credentials, account files, account deletion/export, private APIs/services, Obsidian vault, browser sessions, customer/student data or hosted rows. Do not run git mutations, install packages, SQL, migrations, server changes, scripts that read environment secrets or other agents. Never automatically approve a tool request. If a tool is unavailable or denied, report the limit; do not bypass it. Clearly distinguish research/recommendation from shipped features or installed data. Cite direct primary URLs, not search snippets.

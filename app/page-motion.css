@@ -1,0 +1,12 @@
+@keyframes college-section-enter {
+ from { opacity:0; transform:translate3d(0,14px,0) }
+ to { opacity:1; transform:translate3d(0,0,0) }
+}
+.page-motion-enter { animation:college-section-enter .65s cubic-bezier(.22,1,.36,1) backwards }
+.profile-page #university-panel { animation:college-section-enter .35s ease-out backwards }
+.steps-line>a,.open-rankings a,.landing-workspace-preview a { transition:transform .2s ease,background .2s ease,box-shadow .2s ease }
+@media(hover:hover){.steps-line>a:hover,.landing-workspace-preview a:hover {transform:translateY(-3px)}}
+@media(prefers-reduced-motion:reduce){
+ .page-motion-enter,.profile-page #university-panel {animation:none}
+ .steps-line>a,.open-rankings a,.landing-workspace-preview a {transition:none}
+}

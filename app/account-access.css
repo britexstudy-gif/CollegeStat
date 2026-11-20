@@ -1,0 +1,1144 @@
+/* Shared ranking and night palette rules retained from the existing account sheet. */
+.ranking-position.regional-primary {
+  color: #227458;
+}
+.dark {
+  color-scheme: dark;
+  --background: #090909;
+  --foreground: #f1f3f8;
+  --card: #111111;
+  --popover: #171717;
+  --muted: #1d1d1d;
+  --muted-foreground: #a1a8b6;
+  --border: #ffffff17;
+  --accent: #2361d929;
+  --primary: #699aff;
+  --page: #090909;
+  --ink: #f1f3f8;
+  --soft-ink: #a1a8b6;
+  --line: #ffffff17;
+  --blue: #699aff;
+  --cs-faint: #8e97a8;
+  --atlas-paper: #090909;
+}
+.dark body,
+.dark .site-main::before,
+.dark .auth-page {
+  background: #090909;
+}
+.dark .button-primary,
+.dark .engine-search button,
+.dark .finder-arrow {
+  background: #2364e8;
+  color: #fff;
+}
+.dark .button-secondary {
+  background: #181818;
+  color: #edf1fb;
+  border-color: var(--border);
+}
+.dark
+  :is(
+    .site-navigation,
+    .finder-window,
+    .search-dialog.finder-window[data-slot="dialog-content"],
+    .landing-finder
+  ) {
+  background: #101216bd;
+  color: #f1f3f8;
+  border-color: #ffffff22;
+}
+.dark .site-navigation .brand,
+.dark .site-navigation .nav-search {
+  color: #f1f3f8;
+}
+.dark .site-navigation nav a {
+  color: #aab2c2;
+}
+.dark .site-navigation nav a.active {
+  color: #91b4ff;
+  background: #2361d929;
+}
+.dark
+  :is(
+    .auth-input,
+    .auth-field > input,
+    .filter-input,
+    .filter-select,
+    .choice,
+    .profile-glass-tabs
+  ) {
+  background: #191919;
+  color: #edf1fb;
+  border-color: var(--border);
+}
+.dark .profile-glass-tabs button[aria-selected="true"] {
+  background: #2364e829;
+  color: #a4c5ff;
+}
+.dark
+  :is(
+    .student-workspace,
+    .admin-layout,
+    .mcp-toolbox,
+    .mcp-inspector,
+    .planner-week,
+    .staff-security,
+    .resource-tool,
+    .scholarship-award
+  ) {
+  background-color: var(--card);
+  border-color: var(--border);
+}
+.dark
+  :is(
+    .resource-task-bar a,
+    .resource-editorial-row,
+    .auth-reference .auth-form
+  ) {
+  color: var(--foreground);
+}
+.dark .ranking-position.regional-primary,
+.dark .regional-position {
+  color: #73c9a3;
+}
+.institution-type {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 9px;
+  border: 0.5px solid var(--border);
+  border-radius: 7px;
+  color: var(--foreground);
+  background: var(--muted);
+  font-size: 11px;
+  line-height: 1.2;
+  text-decoration: none;
+}
+.profile-hero .institution-type {
+  margin-bottom: 12px;
+}
+.institution-type-unknown {
+  color: var(--muted-foreground);
+}
+.institution-heading .institution-type {
+  margin-top: 7px;
+}
+.institution-type-switch {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin: 0 0 24px;
+}
+.institution-type-switch button {
+  background: transparent;
+  color: var(--muted-foreground);
+  border: 0.5px solid var(--border);
+  border-radius: 30px;
+  padding: 9px 15px;
+  font-size: 12px;
+}
+.institution-type-switch button[aria-pressed="true"] {
+  background: var(--primary);
+  color: var(--primary-foreground);
+  border-color: transparent;
+}
+.guide-plan-actions {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+.resource-portals {
+  margin: 24px 0 36px;
+  color: var(--foreground);
+}
+.resource-portals summary {
+  cursor: pointer;
+  font-size: 15px;
+}
+.resource-portal-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 18px;
+}
+.resource-portal-grid a {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 20px;
+  border-radius: 14px;
+  border: 0.5px solid var(--border);
+  background: var(--card);
+}
+.resource-portal-grid strong {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+}
+.resource-portal-grid span {
+  color: var(--muted-foreground);
+  font-size: 12px;
+  line-height: 1.6;
+}
+.scholarship-intro {
+  display: grid;
+  grid-template-columns: 1fr minmax(200px, 340px);
+  gap: 36px;
+  align-items: center;
+}
+.scholarship-intro img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 18px;
+}
+.scholarship-intro:not(:has(img)) {
+  display: block;
+}
+@media (max-width: 680px) {
+  .resource-portal-grid {
+    grid-template-columns: 1fr;
+  }
+  .scholarship-intro {
+    display: block;
+  }
+  .scholarship-intro img {
+    display: none;
+  }
+}
+.dark .institution-type-switch button[aria-pressed="true"] {
+  background: #2364e8;
+  color: white;
+}
+.ranking-system-directory {
+  margin: 36px 0;
+  padding: 22px 0;
+  border-top: 0.5px solid var(--border);
+}
+.ranking-system-directory summary {
+  cursor: pointer;
+  font-size: 15px;
+  color: var(--foreground);
+}
+.ranking-system-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 22px;
+}
+.ranking-system-grid a {
+  padding: 18px;
+  border: 0.5px solid var(--border);
+  border-radius: 14px;
+  background: var(--card);
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+.ranking-system-grid strong {
+  font-size: 14px;
+}
+.ranking-system-grid span {
+  color: var(--muted-foreground);
+  font-size: 12px;
+  line-height: 1.6;
+}
+@media (max-width: 900px) {
+  .ranking-system-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 500px) {
+  .ranking-system-grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* Green belongs to regional positions; ARWU is also a world ranking. */
+.rank-arwu strong {
+  color: var(--foreground);
+}
+.application-stages {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding: 8px 0 20px;
+  scrollbar-width: thin;
+}
+.application-stages button {
+  flex: 0 0 auto;
+  min-width: 104px;
+  padding: 12px 15px;
+  border: 0.5px solid var(--border);
+  border-radius: 14px;
+  background: var(--card);
+  text-align: left;
+  transition: background 0.2s;
+}
+.application-stages button span {
+  display: block;
+  font-size: 12px;
+  color: var(--muted-foreground);
+}
+.application-stages button strong {
+  display: block;
+  margin-top: 6px;
+  font-size: 22px;
+  font-weight: 600;
+}
+.application-stages button[aria-pressed="true"] {
+  background: var(--blue-light);
+  color: var(--blue);
+}
+.application-stages button[aria-pressed="true"] {
+  background: #edf2ff;
+}
+.dark .application-stages button[aria-pressed="true"] {
+  background: #2364e829;
+}
+
+/* Account access: one responsive frame, a credited campus image and one form.
+   The oct12 scope avoids inheriting obsolete full-page account layouts. */
+.auth-page {
+  background: var(--background);
+}
+.auth-workspace.auth-reference.oct12-auth {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 76px 36px 42px;
+}
+.oct12-auth.auth-reference .auth-layout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100dvh - 118px);
+  padding: 0;
+}
+.oct12-auth.auth-reference .auth-access-panel {
+  display: grid;
+  grid-template-columns: minmax(0, 0.94fr) minmax(0, 1fr);
+  width: 100%;
+  min-height: 720px;
+  padding: 10px;
+  gap: 0;
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  background: var(--card);
+  box-shadow: 0 20px 60px #1525460a;
+}
+.oct12-auth.auth-reference .auth-art {
+  position: relative;
+  display: block;
+  min-height: 680px;
+  padding: 0;
+  overflow: hidden;
+  border-radius: 16px;
+  color: #fff;
+  background: #12385e;
+}
+.oct12-auth.auth-reference .auth-art::after {
+  content: none;
+}
+.oct12-auth.auth-reference .auth-art-header {
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 26px;
+}
+.oct12-auth.auth-reference .auth-art-header .brand {
+  color: #fff;
+  font-size: 20px;
+  flex-shrink: 0;
+}
+.oct12-auth.auth-reference .auth-art-header .brand-mark {
+  filter: brightness(0) invert(1);
+}
+.oct12-auth.auth-reference .auth-art-header .brand-dot {
+  color: #fff;
+}
+.oct12-auth.auth-reference .auth-art-header > a:last-child {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  min-height: 38px;
+  padding: 9px 11px;
+  border: 1px solid #ffffff3d;
+  border-radius: 10px;
+  background: #071d3699;
+  color: #fff;
+  font-size: 11px;
+  white-space: nowrap;
+  text-decoration: none;
+}
+.oct12-auth.auth-reference .oct09-campus {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  z-index: 0;
+}
+.oct12-auth.auth-reference .oct09-campus-frame {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  aspect-ratio: auto;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+.oct12-auth.auth-reference .oct09-campus-frame img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 0;
+  filter: none;
+}
+.oct12-auth.auth-reference .oct09-campus-frame::after {
+  background: linear-gradient(
+    180deg,
+    #061b3b8c 0%,
+    #07244505 27%,
+    #08234452 42%,
+    #06172ce8 68%,
+    #06172cf5 100%
+  );
+}
+.oct12-auth.auth-reference .oct09-campus-brand {
+  display: none;
+}
+.oct12-auth.auth-reference .oct09-campus-credit {
+  position: absolute;
+  z-index: 3;
+  bottom: 18px;
+  left: 30px;
+  right: 30px;
+  margin: 0;
+  color: #e0e8f1;
+  font-size: 9px;
+  line-height: 1.6;
+}
+.oct12-auth.auth-reference .oct09-campus-credit span {
+  font-size: inherit;
+  letter-spacing: normal;
+  color: inherit;
+}
+.oct12-auth.auth-reference .oct09-campus-credit a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.oct12-auth.auth-reference .auth-art .auth-art-copy {
+  position: absolute;
+  z-index: 2;
+  left: 32px;
+  right: 32px;
+  bottom: 81px;
+  width: auto;
+  padding: 0;
+}
+.oct12-auth.auth-reference .auth-art-copy > span {
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: 0.14em;
+  color: #c6d9f3;
+}
+.oct12-auth.auth-reference .auth-art h2 {
+  margin: 16px 0 14px;
+  color: #fff;
+  font-size: clamp(29px, 3vw, 38px);
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: -0.04em;
+  text-wrap: balance;
+}
+.oct12-auth.auth-reference .auth-art p {
+  display: block;
+  max-width: 330px;
+  color: #dde6f1;
+  font-size: 13px;
+  line-height: 1.7;
+}
+.oct12-auth.auth-reference .auth-workspace-benefits {
+  display: grid;
+  gap: 12px;
+  padding: 20px 0 0;
+  margin: 0;
+  list-style: none;
+}
+.oct12-auth.auth-reference .auth-workspace-benefits li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #ecf2f9;
+  font-size: 12px;
+  line-height: 1.5;
+}
+.oct12-auth.auth-reference .auth-workspace-benefits li > svg {
+  flex: none;
+  color: #bcd6ff;
+}
+.oct12-auth.auth-reference .auth-workspace-benefits span {
+  color: inherit;
+  font-size: inherit;
+  letter-spacing: normal;
+}
+.oct12-auth.auth-reference .auth-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0;
+  min-width: 0;
+  padding: 38px clamp(26px, 4vw, 54px);
+  border-radius: 0;
+  background: none;
+  text-align: left;
+}
+.oct12-auth.auth-reference .auth-form > * {
+  order: initial;
+  width: 100%;
+  min-width: 0;
+  max-width: 430px;
+  margin-inline: auto;
+}
+.oct12-auth.auth-reference .auth-kicker {
+  display: block;
+  margin-bottom: 12px;
+  color: var(--muted-foreground);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  line-height: 1.6;
+}
+.oct12-auth.auth-reference .auth-form h1 {
+  margin-block: 0 10px;
+  color: var(--foreground);
+  font-size: clamp(30px, 3.2vw, 42px);
+  font-weight: 600;
+  letter-spacing: -0.055em;
+  line-height: 1.15;
+  text-wrap: balance;
+}
+.oct12-auth.auth-reference .auth-form > p {
+  color: var(--muted-foreground);
+  font-size: 13px;
+  line-height: 1.7;
+}
+.oct12-auth.auth-reference .auth-mode-nav {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-block: 14px 26px;
+  padding: 0;
+  background: none;
+  font-size: 12px;
+  line-height: 1.65;
+}
+.oct12-auth.auth-reference .auth-mode-nav :is(span, a) {
+  font-size: inherit;
+  padding: 0;
+}
+.oct12-auth.auth-reference .auth-mode-link,
+.oct12-auth.auth-reference .auth-back-link,
+.oct12-auth.auth-reference .auth-recovery {
+  color: var(--primary);
+  text-decoration: none;
+}
+.oct12-auth.auth-reference .auth-mode-link {
+  display: inline-block;
+  padding: 5px 0;
+  min-height: 24px;
+}
+.oct12-auth.auth-reference .auth-recovery {
+  padding: 5px 0;
+}
+.oct12-auth.auth-reference .auth-mode-link:hover,
+.oct12-auth.auth-reference .auth-back-link:hover,
+.oct12-auth.auth-reference .auth-recovery:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.oct12-auth.auth-reference .auth-back-link {
+  display: inline-block;
+  margin-block: 18px 24px;
+  font-size: 12px;
+}
+.oct12-auth.auth-reference .auth-providers {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 9px;
+  margin-block: 0 22px;
+}
+.oct12-auth.auth-reference .provider-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-width: 0;
+  min-height: 56px;
+  height: auto;
+  padding: 10px 8px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--card);
+  color: var(--foreground);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.3;
+  cursor: pointer;
+  transition:
+    border-color 140ms ease,
+    background 140ms ease;
+  box-shadow: none;
+}
+.oct12-auth.auth-reference .provider-button:hover:not(:disabled) {
+  background: color-mix(in srgb, var(--primary) 5%, var(--card));
+  border-color: color-mix(in srgb, var(--primary) 45%, var(--border));
+}
+.oct12-auth.auth-reference .provider-button:disabled {
+  opacity: 1;
+  cursor: not-allowed;
+  background: color-mix(in srgb, var(--muted) 35%, var(--card));
+}
+.oct12-auth.auth-reference .provider-button svg {
+  flex: none;
+  width: 18px;
+  height: 18px;
+  margin: 0;
+}
+.oct12-auth.auth-reference .provider-button > span {
+  display: grid;
+  min-width: 0;
+  gap: 4px;
+  text-align: left;
+}
+.oct12-auth.auth-reference .provider-button small {
+  color: var(--muted-foreground);
+  font-size: 9px;
+  font-weight: 400;
+  line-height: 1.45;
+}
+.oct12-auth.auth-reference .provider-availability {
+  display: block;
+  grid-column: 1 / -1;
+  margin: 2px 0 0;
+  color: var(--muted-foreground);
+  font-size: 10px;
+  line-height: 1.65;
+}
+.oct12-auth.auth-reference .auth-divider {
+  display: flex;
+  align-items: center;
+  grid-column: 1 / -1;
+  gap: 12px;
+  margin: 9px 0 0;
+  color: var(--muted-foreground);
+  font-size: 10px;
+  line-height: 1.5;
+}
+.oct12-auth.auth-reference .auth-divider span {
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+}
+.oct12-auth.auth-reference .auth-name-row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+.oct12-auth.auth-reference .auth-field {
+  display: grid;
+  position: relative;
+  gap: 8px;
+  margin-bottom: 20px;
+  min-width: 0;
+}
+.oct12-auth.auth-reference .auth-field label {
+  margin: 0;
+  color: var(--foreground);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.6;
+}
+.oct12-auth.auth-reference .auth-field label span {
+  color: var(--muted-foreground);
+  font-size: 10px;
+  font-weight: 400;
+}
+.oct12-auth.auth-reference .auth-input,
+.oct12-auth.auth-reference .auth-field > input {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  min-height: 52px;
+  min-width: 0;
+  padding: 0 13px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: color-mix(in srgb, var(--muted) 30%, var(--card));
+  color: var(--foreground);
+  transition:
+    border-color 140ms ease,
+    box-shadow 140ms ease;
+}
+.oct12-auth.auth-reference .auth-input > svg {
+  flex: none;
+  color: var(--muted-foreground);
+}
+.oct12-auth.auth-reference .auth-field input {
+  min-width: 0;
+  width: 100%;
+  min-height: 50px;
+  color: var(--foreground);
+  font-size: 16px;
+  caret-color: var(--primary);
+}
+.oct12-auth.auth-reference .auth-input input {
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: none;
+  box-shadow: none;
+}
+.oct12-auth.auth-reference .auth-field input::placeholder {
+  color: var(--muted-foreground);
+  opacity: 0.9;
+}
+.oct12-auth.auth-reference .auth-input input:is(:focus, :focus-visible) {
+  outline: none !important;
+  box-shadow: none !important;
+}
+.oct12-auth.auth-reference .auth-input:focus-within,
+.oct12-auth.auth-reference .auth-field > input:focus-visible {
+  outline: none;
+  border-color: var(--primary) !important;
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--primary) 15%, transparent) !important;
+}
+.oct12-auth.auth-reference .auth-password-toggle {
+  display: grid;
+  place-items: center;
+  flex: none;
+  min-width: 40px;
+  min-height: 44px;
+  margin-right: -6px;
+  padding: 0;
+  background: none;
+  color: var(--muted-foreground);
+  border: 0;
+  border-radius: 7px;
+}
+.oct12-auth.auth-reference .auth-recovery {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 11px;
+  line-height: 1.75;
+}
+.oct12-auth.auth-reference .auth-field small {
+  display: block;
+  color: var(--muted-foreground);
+  font-size: 10px;
+  line-height: 1.6;
+}
+.oct12-auth.auth-reference .auth-submit {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  width: 100%;
+  min-height: 52px;
+  padding: 0 18px;
+  margin: 4px 0 0;
+  border-radius: 10px;
+  color: #fff;
+  background: #205ce5;
+  font-size: 13px;
+  font-weight: 500;
+  box-shadow: 0 3px 8px #205ce519;
+  transition:
+    background 140ms ease,
+    box-shadow 140ms ease;
+}
+.oct12-auth.auth-reference .auth-submit:hover:not(:disabled) {
+  background: #164fcb;
+  box-shadow: 0 4px 12px #205ce526;
+}
+.oct12-auth.auth-reference .auth-submit svg {
+  display: block;
+  flex: none;
+}
+.oct12-auth.auth-reference .magic-link-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 10px;
+  margin-top: 12px;
+  background: transparent;
+  color: var(--foreground);
+  font-size: 11px;
+  text-align: center;
+}
+.oct12-auth.auth-reference .magic-link-button:disabled {
+  color: var(--muted-foreground);
+  opacity: 0.85;
+}
+.oct12-auth.auth-reference .auth-privacy {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin-top: 24px;
+  padding-top: 18px;
+  border-top: 1px solid var(--border);
+  color: var(--muted-foreground);
+  font-size: 10px;
+  line-height: 1.7;
+}
+.oct12-auth.auth-reference .auth-privacy svg {
+  flex: none;
+  margin-top: 1px;
+}
+.oct12-auth.auth-reference .auth-terms {
+  margin-top: 15px;
+  color: var(--muted-foreground);
+  font-size: 10px;
+  line-height: 1.75;
+  text-align: left;
+}
+.oct12-auth.auth-reference .auth-terms a {
+  color: var(--foreground);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.oct12-auth.auth-reference .inline-error {
+  margin-block: 12px 0;
+  font-size: 12px;
+  line-height: 1.7;
+}
+.oct12-auth.auth-reference .auth-sent {
+  padding: 24px 0;
+  text-align: left;
+}
+.oct12-auth.auth-reference .auth-sent > svg {
+  color: var(--primary);
+}
+.oct12-auth.auth-reference .auth-sent h3 {
+  margin-top: 16px;
+  font-size: 22px;
+}
+.oct12-auth.auth-reference .auth-sent p {
+  color: var(--muted-foreground);
+  font-size: 13px;
+  line-height: 1.8;
+  margin: 10px 0 16px;
+}
+.oct12-auth.auth-reference .auth-appearance {
+  position: absolute;
+  top: 22px;
+  right: 26px;
+}
+.oct12-auth.auth-reference :is(a, button):focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 3px;
+}
+.oct12-auth.auth-reference .auth-art :is(a, button):focus-visible {
+  outline-color: #fff;
+}
+.oct12-auth.auth-reference.staff-auth .auth-access-panel {
+  grid-template-columns: 1fr;
+  max-width: 510px;
+  min-height: 0;
+  padding: 0;
+}
+.oct12-auth.auth-reference.staff-auth .auth-form {
+  padding: 38px;
+}
+.oct12-auth.auth-reference .staff-auth-brand {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+.oct12-auth.auth-reference .staff-auth-brand > span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 9px;
+  border-radius: 7px;
+  background: var(--muted);
+  color: var(--muted-foreground);
+  font-size: 10px;
+}
+.oct12-auth.auth-reference .staff-auth-scope {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-block: 20px 24px;
+}
+.oct12-auth.auth-reference .staff-auth-scope > span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--muted-foreground);
+  font-size: 10px;
+}
+.oct12-auth.auth-reference .staff-auth-return {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 24px;
+  padding-top: 18px;
+  border-top: 1px solid var(--border);
+}
+.oct12-auth.auth-reference .staff-auth-return a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--muted-foreground);
+  font-size: 11px;
+}
+.oct12-auth.auth-reference .staff-account-recovery {
+  display: grid;
+  gap: 12px;
+  padding: 14px;
+  margin-bottom: 18px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+.dark .oct12-auth.auth-reference .auth-access-panel {
+  background: #111111;
+  box-shadow: 0 20px 60px #0003;
+}
+.dark .oct12-auth.auth-reference .auth-input,
+.dark .oct12-auth.auth-reference .auth-field > input {
+  background: #1b1b1b;
+}
+.dark .oct12-auth.auth-reference .auth-submit {
+  background: #2764ea;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .oct12-auth.auth-reference .auth-access-panel {
+    animation: auth-frame-arrive 350ms ease-out both;
+  }
+  .oct12-auth.auth-reference .auth-loading {
+    animation: auth-loading-spin 1s linear infinite;
+  }
+  @keyframes auth-frame-arrive {
+    from {
+      opacity: 0;
+      transform: translateY(6px);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+  @keyframes auth-loading-spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+}
+@media (max-width: 1000px) and (min-width: 761px) {
+  .auth-workspace.auth-reference.oct12-auth {
+    padding-inline: 22px;
+  }
+  .oct12-auth.auth-reference .auth-art-header {
+    padding: 23px;
+    flex-wrap: wrap;
+  }
+  .oct12-auth.auth-reference .auth-art-header .brand {
+    font-size: 19px;
+  }
+  .oct12-auth.auth-reference .auth-form {
+    padding: 34px 27px;
+  }
+  .oct12-auth.auth-reference .auth-providers {
+    grid-template-columns: 1fr;
+  }
+  .oct12-auth.auth-reference .provider-button {
+    justify-content: flex-start;
+    padding-inline: 14px;
+    min-height: 48px;
+  }
+  .oct12-auth.auth-reference .provider-button > span {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  .oct12-auth.auth-reference .auth-art .auth-art-copy {
+    left: 26px;
+    right: 26px;
+  }
+}
+@media (max-width: 760px) {
+  .auth-workspace.auth-reference.oct12-auth {
+    padding: 62px 18px 24px;
+    max-width: 570px;
+  }
+  .oct12-auth.auth-reference .auth-layout {
+    min-height: 0;
+    align-items: flex-start;
+  }
+  .oct12-auth.auth-reference .auth-access-panel {
+    grid-template-columns: 1fr;
+    min-height: 0;
+    gap: 0;
+    padding: 6px;
+    border-radius: 18px;
+  }
+  .oct12-auth.auth-reference .auth-art {
+    height: 77px;
+    min-height: 77px;
+    border-radius: 12px;
+    background: #1448b8;
+  }
+  .oct12-auth.auth-reference .auth-art-header {
+    position: relative;
+    padding: 19px 17px;
+  }
+  .oct12-auth.auth-reference .auth-art-header .brand {
+    font-size: 19px;
+  }
+  .oct12-auth.auth-reference .auth-art-header > a:last-child {
+    background: #ffffff12;
+    font-size: 10px;
+    min-height: 36px;
+    padding: 8px;
+  }
+  .oct12-auth.auth-reference .oct09-campus,
+  .oct12-auth.auth-reference .auth-art .auth-art-copy {
+    display: none;
+  }
+  .oct12-auth.auth-reference .auth-form {
+    padding: 30px 22px 25px;
+  }
+  .oct12-auth.auth-reference .auth-form h1 {
+    font-size: 34px;
+  }
+  .oct12-auth.auth-reference .auth-appearance {
+    top: 14px;
+    right: 20px;
+  }
+  .oct12-auth.auth-reference.staff-auth .auth-form {
+    padding: 30px 22px;
+  }
+}
+@media (max-width: 420px) {
+  .auth-workspace.auth-reference.oct12-auth {
+    padding-inline: 10px;
+  }
+  .oct12-auth.auth-reference .auth-art-header {
+    gap: 8px;
+    padding-inline: 13px;
+  }
+  .oct12-auth.auth-reference .auth-art-header .brand {
+    font-size: 17px;
+  }
+  .oct12-auth.auth-reference .auth-art-header .brand-mark {
+    width: 36px;
+  }
+  .oct12-auth.auth-reference .auth-form {
+    padding-inline: 17px;
+  }
+  .oct12-auth.auth-reference .auth-name-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .oct12-auth.auth-reference .auth-providers {
+    grid-template-columns: 1fr;
+  }
+  .oct12-auth.auth-reference .provider-button {
+    justify-content: flex-start;
+    min-height: 48px;
+    padding-inline: 13px;
+  }
+  .oct12-auth.auth-reference .provider-button > span {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .oct12-auth.auth-reference *,
+  .oct12-auth.auth-reference *::before,
+  .oct12-auth.auth-reference *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Directory quick filters: same chip language as the type switch. */
+.directory-quick {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 12px 0 18px;
+}
+.directory-quick button {
+  min-height: 32px;
+  padding: 0 13px;
+  border: 1px solid color-mix(in srgb, var(--foreground) 12%, transparent);
+  border-radius: 999px;
+  background: var(--card);
+  color: color-mix(in srgb, var(--foreground) 75%, transparent);
+  font-size: 12px;
+  cursor: pointer;
+  transition:
+    background 0.15s ease,
+    color 0.15s ease,
+    border-color 0.15s ease;
+}
+.directory-quick button:hover {
+  border-color: #245fe8;
+  color: #245fe8;
+}
+.directory-quick button[aria-pressed="true"] {
+  background: #245fe8;
+  border-color: #245fe8;
+  color: #fff;
+}
+.dark .directory-quick button[aria-pressed="true"] {
+  background: #8ab3ff;
+  border-color: #8ab3ff;
+  color: #0b1220;
+}
+@media (max-width: 640px) {
+  .directory-quick {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scrollbar-width: none;
+    margin-inline: -16px;
+    padding-inline: 16px;
+  }
+  .directory-quick button {
+    flex: none;
+  }
+}

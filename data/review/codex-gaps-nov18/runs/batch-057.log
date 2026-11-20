@@ -1,0 +1,122 @@
+OpenAI Codex v0.169.0
+--------
+workdir: /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+model: gpt-6-luna
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: high
+reasoning summaries: none
+session id: 01a1ee89-0498-77a3-8e14-f32197d190ec
+--------
+user
+You are a careful admissions-data researcher. For each university below, find facts for an
+INTERNATIONAL applicant to a FIRST-YEAR BACHELOR'S degree starting in autumn 2027 (or the nearest
+published cycle). Use the live web. Rules:
+
+- Official sources only: the university's own website (its domain or subdomains), the national
+  application service (UCAS, Common App, OUAC, uni-assist, Studyinkorea, etc.) or a government
+  statistics office. Never use rankings sites, forums, agencies, Wikipedia or blogs.
+- Every value needs the exact page URL where you read it (source_url). If you could not verify a
+  value on an official page, leave it out (null or an empty list). Never guess or estimate.
+- english: the lowest overall score accepted for undergraduate entry, per test (IELTS Academic
+  overall, TOEFL iBT total, Duolingo, PTE). If programmes differ, give the general/lowest common
+  university minimum and say so in detail (e.g. "6.5 overall, no band below 6.0; some
+  programmes higher").
+- tuition: the yearly tuition for international (non-EU / overseas) undergraduates in the local
+  currency. If it varies by programme give amount = lowest and amount_max = highest, and the
+  academic_year the fee applies to (e.g. "2026/27"). If tuition is free, amount = 0.
+- application_fee: for international first-year applicants, local currency.
+- deadlines: the main 2027-entry first-year deadlines (ISO date YYYY-MM-DD) with the route
+  (e.g. "Common App, Regular Decision", "UCAS", "university portal"). Only dates actually
+  published; if only the 2026-entry date is published, include it and put "2026 entry" in title.
+- sat: policy for international applicants; p25/p75 total SAT only if the university publishes
+  them (Common Data Set or admissions profile).
+- acceptance_rate: only if officially published (CDS, admissions statistics page).
+- notes: one short line on anything important (e.g. "Foundation year required for 11-year
+  school certificates"), else "".
+
+Spend effort on the facts students need most: English minimum, tuition, deadlines. Keep each
+detail under 160 characters. Return only the JSON that matches the schema; use each
+university's id exactly as given.
+
+Universities:
+- id: a17400c0-0fe9-5bd9-8830-59da10587c1f | Université Paris 1 Panthéon-Sorbonne | Paris, FR | https://www.pantheonsorbonne.fr
+- id: 7e066a2b-e773-5bc7-b7f1-4d4c1bc56f44 | University of Surrey | Guildford, GB | http://www.surrey.ac.uk/
+- id: 0a2ceb2f-9bd6-5ddf-bdfd-593d7ddf1056 | Dartmouth College | Hanover, US | http://www.dartmouth.edu/
+- id: c6b8935e-0e3b-522a-a5f0-03a1bc6c97e8 | University of Massachusetts-Amherst | Amherst, US | http://www.umass.edu/
+codex
+I’m checking the persistent research notes first, then I’ll verify each figure against official university or application-service pages and return only the requested JSON.
+exec
+/bin/zsh -lc 'cat /Users/likeanew/.agents/skills/lemma/SKILL.md' in /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+ succeeded in 0ms:
+---
+name: lemma
+description: Persistent cross-session memory for AI agents via MCP. BEFORE starting ANY task (coding, debugging, refactoring, research, docs, optimization — any language), FIRST call memory_read to load what you already know so you never re-derive or re-explore known facts. AFTER finishing, call memory_add to persist new findings and session_attempt for dead ends — unsaved knowledge is lost permanently. Distills reusable guides from experience.
+---
+
+<!-- lemma:skill:v=0.21.0 -->
+
+# Lemma — Persistent Memory & Learning
+
+Lemma is a persistent memory server for AI agents over the Model Context Protocol.
+Every session starts blank — knowledge survives ONLY through tool calls. If you
+learn something and don't save it (`memory_add`), it is gone permanently.
+
+## Workflow
+1. **RECALL** — `memory_read` / `semantic_search`: load what's already known for this
+   project/task. Never re-explore code or re-derive facts that are already saved.
+2. **ACT** — do the task.
+3. **PERSIST** — `memory_add` for new insights; `guide_practice` for guides applied;
+   `session_attempt` for abandoned/dead-end approaches (the most valuable records).
+
+## Two knowledge layers
+- **Memory fragments** (`memory_read` / `memory_add`): atomic facts. Types: `fact`,
+  `pattern`, `lesson`, `warning`, `context`. Confidence evolves with use and feedback.
+- **Guides** (`guide_get` / `guide_distill` / `guide_practice`): procedural skills
+  distilled from fragments. Track usage count + success/failure rate.
+Pipeline: `experience -> memory_add -> pattern/lesson -> guide_distill -> guide_practice`.
+
+## Tools at a glance
+- **Recall & search**: `memory_read`, `semantic_search`, `memory_library` (full
+  snapshot + maintenance signals), `memory_stats`, `memory_audit`.
+- **Write & maintain**: `memory_add`, `memory_update`, `memory_forget`,
+  `memory_merge`, `memory_relate` (supports / contradicts / supersedes / related_to),
+  `memory_feedback`.
+- **Guides**: `guide_get`, `guide_create`, `guide_distill`, `guide_practice`,
+  `guide_update`, `guide_forget`, `guide_merge`.
+- **Sessions & reasoning**: `session_start`, `session_end`, `session_attempt`,
+  `session_stats`, `suggestion_respond`.
+- **Background intelligence**: `conflict_scan`, `proactive_analysis`,
+  `project_analytics` (run automatically; act on signals when sensible).
+
+## Writing a fragment
+```
+## [Topic Title]
+### Context
+[1-2 sentences: what and why it matters]
+### [Content Section]
+- [Key fact 1]
+- [Key fact 2]
+### Rules (optional)
+- [Absolute constraint]
+```
+One idea per fragment, 30-2000 chars, structured markdown (not prose). **Store
+fragments in ENGLISH** (required for search/retrieval). Never ask permission to save.
+
+## Background intelligence
+Conflict detection, distill/merge/refine suggestions, and auto-linking run
+automatically. From the CLI, `lemma -lib` prints a full knowledge-base snapshot
+and `lemma -vis` launches a visualizer.
+
+web search: 
+web search: site:pantheonsorbonne.fr international admission bachelor tuition fees 2026 2027 English requirements ...
+web search: 
+web search: site:surrey.ac.uk/study/undergraduate/international-entry-requirements English language IELTS 6.5 international tuition 2026 2027 undergraduate ...
+web search: 
+web search: site:surrey.ac.uk "2026/27" "International" "Undergraduate" "£" tuition fee ...
+codex
+{"universities":[{"id":"a17400c0-0fe9-5bd9-8830-59da10587c1f","english":[{"test":"IELTS","minimum":6,"detail":"Economics International Track: 6.0 overall; this English test threshold is programme-specific, not university-wide.","source_url":"https://economie-licence-international-track.pantheonsorbonne.fr/en/admissions"},{"test":"TOEFL iBT","minimum":80,"detail":"Economics International Track: 80 overall (old TOEFL scale); requirements vary by programme.","source_url":"https://economie-licence-international-track.pantheonsorbonne.fr/en/admissions"}],"tuition":{"amount":2895,"amount_max":null,"currency":"EUR","period":"year","academic_year":"2026/27","detail":"Differentiated fee for non-EU students in national bachelor’s programmes; exemptions and exceptions apply.","source_url":"https://international.pantheonsorbonne.fr/en/differentiated-tuition-fees"},"application_fee":null,"deadlines":[{"title":"2027 entry (DAP dossier blanc)","due_at":"2026-12-15","route":"DAP dossier blanc","source_url":"https://formations.pantheonsorbonne.fr/fr/catalogue-des-formations/licence-L/licence-economie-KBTDQ2ZO/licence-international-track-en-anglais-M2KJMPBF.html"}],"sat":null,"acceptance_rate":null,"notes":"Application route and deadline depend on nationality, residence and diploma; DAP applies to some applicants with foreign diplomas."},{"id":"7e066a2b-e773-5bc7-b7f1-4d4c1bc56f44","english":[{"test":"IELTS","minimum":6,"detail":"Lowest verified course minimum: 6.0 overall with 5.5 in each element; other courses may require higher scores.","source_url":"https://www.surrey.ac.uk/undergraduate/aerospace-engineering"},{"test":"Duolingo","minimum":85,"detail":"Lowest listed equivalent: IELTS 5.5 overall with 5.0 each; Duolingo 85 in each component. Requirements vary by course.","source_url":"https://www.surrey.ac.uk/apply/international/english-language-requirements"},{"test":"PTE Academic","minimum":59,"detail":"Lowest listed equivalent: IELTS 5.5 overall with 5.0 each; PTE 59 overall and 54 in each component. Requirements vary by course.","source_url":"https://www.surrey.ac.uk/apply/international/english-language-requirements"}],"tuition":null,"application_fee":null,"deadlines":[{"title":"2027 entry (UCAS equal consideration)","due_at":"2027-01-13","route":"UCAS","source_url":"https://www.ucas.com/undergraduate/applying-university/when-apply"}],"sat":null,"acceptance_rate":null,"notes":""},{"id":"0a2ceb2f-9bd6-5ddf-bdfd-593d7ddf1056","english":[{"test":"IELTS","minimum":7,"detail":"No minimum required; Dartmouth says most successful applicants score above 7.","source_url":"https://admissions.dartmouth.edu/glossary-question/if-english-not-my-first-language-am-i-required-submit-language-proficiency-test"},{"test":"TOEFL iBT","minimum":5,"detail":"No minimum required; most successful applicants score 5 or above on the new TOEFL scale (tests from Jan. 21, 2026).","source_url":"https://admissions.dartmouth.edu/glossary-question/if-english-not-my-first-language-am-i-required-submit-language-proficiency-test"},{"test":"Duolingo","minimum":135,"detail":"No minimum required; Dartmouth says most successful applicants score above 135.","source_url":"https://admissions.dartmouth.edu/glossary-question/if-english-not-my-first-language-am-i-required-submit-language-proficiency-test"}],"tuition":{"amount":71697,"amount_max":null,"currency":"USD","period":"year","academic_year":"2026/27","detail":"Tuition only; Dartmouth's published 2026–27 cost of attendance.","source_url":"https://admissions.dartmouth.edu/estimate-your-cost/cost-attendance"},"application_fee":null,"deadlines":[{"title":"2027 entry, Early Decision","due_at":"2026-11-01","route":"Common App, Early Decision","source_url":"https://admissions.dartmouth.edu/apply-dartmouth"},{"title":"2027 entry, Regular Decision","due_at":"2027-01-02","route":"Common App, Regular Decision","source_url":"https://admissions.dartmouth.edu/apply-dartmouth"}],"sat":{"policy":"required","p25":1440,"p75":1550,"source_url":"https://www.dartmouth.edu/oir/pdfs/cds_2025-26.pdf"},"acceptance_rate":null,"notes":"International applicants whose first language is not English must submit an English exam if their curriculum has not been taught in English for at least two years."},{"id":"c6b8935e-0e3b-522a-a5f0-03a1bc6c97e8","english":[{"test":"IELTS","minimum":6.5,"detail":"First-year international minimum: 6.5 overall, no subscore below 6.0.","source_url":"https://www.umass.edu/admissions/english-language-proficiency"},{"test":"TOEFL iBT","minimum":80,"detail":"Tests before Jan. 21, 2026: 80 total, no subscore below 20; newer test scale: 4.5 total, no section below 4.","source_url":"https://www.umass.edu/admissions/english-language-proficiency"},{"test":"Duolingo","minimum":115,"detail":"First-year international applicants: 115 minimum.","source_url":"https://www.umass.edu/admissions/english-language-proficiency"}],"tuition":null,"application_fee":{"amount":90,"currency":"USD","source_url":"https://www.umass.edu/admissions/first-year-application-instructions"},"deadlines":[{"title":"2027 entry, Early Action","due_at":"2026-11-05","route":"Common App, Early Action","source_url":"https://www.umass.edu/admissions/undergraduate-admissions/apply/international-students/international-first-year"},{"title":"2027 entry, Regular Decision","due_at":"2027-01-15","route":"Common App, Regular Decision","source_url":"https://www.umass.edu/admissions/undergraduate-admissions/apply/international-students/international-first-year"}],"sat":{"policy":"optional","p25":null,"p75":null,"source_url":"https://www.umass.edu/admissions/test-optional-policy"},"acceptance_rate":null,"notes":""}] }
+tokens used
+40,396
+{"universities":[{"id":"a17400c0-0fe9-5bd9-8830-59da10587c1f","english":[{"test":"IELTS","minimum":6,"detail":"Economics International Track: 6.0 overall; this English test threshold is programme-specific, not university-wide.","source_url":"https://economie-licence-international-track.pantheonsorbonne.fr/en/admissions"},{"test":"TOEFL iBT","minimum":80,"detail":"Economics International Track: 80 overall (old TOEFL scale); requirements vary by programme.","source_url":"https://economie-licence-international-track.pantheonsorbonne.fr/en/admissions"}],"tuition":{"amount":2895,"amount_max":null,"currency":"EUR","period":"year","academic_year":"2026/27","detail":"Differentiated fee for non-EU students in national bachelor’s programmes; exemptions and exceptions apply.","source_url":"https://international.pantheonsorbonne.fr/en/differentiated-tuition-fees"},"application_fee":null,"deadlines":[{"title":"2027 entry (DAP dossier blanc)","due_at":"2026-12-15","route":"DAP dossier blanc","source_url":"https://formations.pantheonsorbonne.fr/fr/catalogue-des-formations/licence-L/licence-economie-KBTDQ2ZO/licence-international-track-en-anglais-M2KJMPBF.html"}],"sat":null,"acceptance_rate":null,"notes":"Application route and deadline depend on nationality, residence and diploma; DAP applies to some applicants with foreign diplomas."},{"id":"7e066a2b-e773-5bc7-b7f1-4d4c1bc56f44","english":[{"test":"IELTS","minimum":6,"detail":"Lowest verified course minimum: 6.0 overall with 5.5 in each element; other courses may require higher scores.","source_url":"https://www.surrey.ac.uk/undergraduate/aerospace-engineering"},{"test":"Duolingo","minimum":85,"detail":"Lowest listed equivalent: IELTS 5.5 overall with 5.0 each; Duolingo 85 in each component. Requirements vary by course.","source_url":"https://www.surrey.ac.uk/apply/international/english-language-requirements"},{"test":"PTE Academic","minimum":59,"detail":"Lowest listed equivalent: IELTS 5.5 overall with 5.0 each; PTE 59 overall and 54 in each component. Requirements vary by course.","source_url":"https://www.surrey.ac.uk/apply/international/english-language-requirements"}],"tuition":null,"application_fee":null,"deadlines":[{"title":"2027 entry (UCAS equal consideration)","due_at":"2027-01-13","route":"UCAS","source_url":"https://www.ucas.com/undergraduate/applying-university/when-apply"}],"sat":null,"acceptance_rate":null,"notes":""},{"id":"0a2ceb2f-9bd6-5ddf-bdfd-593d7ddf1056","english":[{"test":"IELTS","minimum":7,"detail":"No minimum required; Dartmouth says most successful applicants score above 7.","source_url":"https://admissions.dartmouth.edu/glossary-question/if-english-not-my-first-language-am-i-required-submit-language-proficiency-test"},{"test":"TOEFL iBT","minimum":5,"detail":"No minimum required; most successful applicants score 5 or above on the new TOEFL scale (tests from Jan. 21, 2026).","source_url":"https://admissions.dartmouth.edu/glossary-question/if-english-not-my-first-language-am-i-required-submit-language-proficiency-test"},{"test":"Duolingo","minimum":135,"detail":"No minimum required; Dartmouth says most successful applicants score above 135.","source_url":"https://admissions.dartmouth.edu/glossary-question/if-english-not-my-first-language-am-i-required-submit-language-proficiency-test"}],"tuition":{"amount":71697,"amount_max":null,"currency":"USD","period":"year","academic_year":"2026/27","detail":"Tuition only; Dartmouth's published 2026–27 cost of attendance.","source_url":"https://admissions.dartmouth.edu/estimate-your-cost/cost-attendance"},"application_fee":null,"deadlines":[{"title":"2027 entry, Early Decision","due_at":"2026-11-01","route":"Common App, Early Decision","source_url":"https://admissions.dartmouth.edu/apply-dartmouth"},{"title":"2027 entry, Regular Decision","due_at":"2027-01-02","route":"Common App, Regular Decision","source_url":"https://admissions.dartmouth.edu/apply-dartmouth"}],"sat":{"policy":"required","p25":1440,"p75":1550,"source_url":"https://www.dartmouth.edu/oir/pdfs/cds_2025-26.pdf"},"acceptance_rate":null,"notes":"International applicants whose first language is not English must submit an English exam if their curriculum has not been taught in English for at least two years."},{"id":"c6b8935e-0e3b-522a-a5f0-03a1bc6c97e8","english":[{"test":"IELTS","minimum":6.5,"detail":"First-year international minimum: 6.5 overall, no subscore below 6.0.","source_url":"https://www.umass.edu/admissions/english-language-proficiency"},{"test":"TOEFL iBT","minimum":80,"detail":"Tests before Jan. 21, 2026: 80 total, no subscore below 20; newer test scale: 4.5 total, no section below 4.","source_url":"https://www.umass.edu/admissions/english-language-proficiency"},{"test":"Duolingo","minimum":115,"detail":"First-year international applicants: 115 minimum.","source_url":"https://www.umass.edu/admissions/english-language-proficiency"}],"tuition":null,"application_fee":{"amount":90,"currency":"USD","source_url":"https://www.umass.edu/admissions/first-year-application-instructions"},"deadlines":[{"title":"2027 entry, Early Action","due_at":"2026-11-05","route":"Common App, Early Action","source_url":"https://www.umass.edu/admissions/undergraduate-admissions/apply/international-students/international-first-year"},{"title":"2027 entry, Regular Decision","due_at":"2027-01-15","route":"Common App, Regular Decision","source_url":"https://www.umass.edu/admissions/undergraduate-admissions/apply/international-students/international-first-year"}],"sat":{"policy":"optional","p25":null,"p75":null,"source_url":"https://www.umass.edu/admissions/test-optional-policy"},"acceptance_rate":null,"notes":""}] }

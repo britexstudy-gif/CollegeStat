@@ -1,0 +1,4387 @@
+{
+  "schemaVersion": 1,
+  "status": "finished",
+  "startedAt": "2026-10-16T03:13:38.488662+00:00",
+  "updatedAt": "2026-10-16T03:13:43.313558+00:00",
+  "batchId": "20261016T025811Z-a987f5",
+  "selectedUniversityCount": 40,
+  "sourceCount": 136,
+  "checkedSourceCount": 136,
+  "candidateSourceCheckNoFactVerification": true,
+  "reviewState": "availability_only_pending_native_fact_review",
+  "publishedRecords": 0,
+  "fields": [
+    "accommodation_cost",
+    "entry_requirement",
+    "financial_aid",
+    "language_exemption",
+    "language_requirement",
+    "living_cost",
+    "mandatory_fee",
+    "required_subject",
+    "tuition"
+  ],
+  "taskIds": [
+    "003-opencode",
+    "001-opencode",
+    "006-opencode",
+    "005-opencode",
+    "009-opencode",
+    "008-opencode",
+    "007-opencode",
+    "011-opencode",
+    "010-opencode",
+    "012-opencode",
+    "015-opencode",
+    "013-opencode",
+    "014-opencode",
+    "016-opencode",
+    "004-opencode",
+    "018-opencode",
+    "017-opencode",
+    "019-opencode",
+    "024-opencode",
+    "021-opencode",
+    "022-opencode",
+    "020-opencode",
+    "023-opencode",
+    "026-opencode",
+    "025-opencode",
+    "027-opencode",
+    "028-opencode",
+    "030-opencode",
+    "029-opencode",
+    "033-opencode",
+    "034-opencode",
+    "031-opencode",
+    "035-opencode",
+    "036-opencode",
+    "038-opencode",
+    "037-opencode",
+    "040-opencode",
+    "041-opencode",
+    "032-opencode",
+    "039-opencode"
+  ],
+  "excludedSources": [
+    {
+      "task": "005-opencode",
+      "universityId": "39230496-b2fc-53ca-9303-1726c4ac13da",
+      "university": "Harvard University",
+      "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/005-opencode.json",
+      "factIndex": 19,
+      "field": "accommodation_cost",
+      "url": "https://www.topuniversities.com/universities/harvard-university",
+      "reason": "University affiliation of this source domain requires separate review"
+    },
+    {
+      "task": "013-opencode",
+      "universityId": "79e1cf8b-6a97-5fef-ac23-aa6012197801",
+      "university": "Peking University",
+      "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/013-opencode.json",
+      "factIndex": 9,
+      "field": "language_requirement",
+      "url": "https://www.topuniversities.com/universities/peking-university",
+      "reason": "University affiliation of this source domain requires separate review"
+    },
+    {
+      "task": "013-opencode",
+      "universityId": "79e1cf8b-6a97-5fef-ac23-aa6012197801",
+      "university": "Peking University",
+      "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/013-opencode.json",
+      "factIndex": 12,
+      "field": "accommodation_cost",
+      "url": "https://www.topuniversities.com/universities/peking-university",
+      "reason": "University affiliation of this source domain requires separate review"
+    },
+    {
+      "task": "013-opencode",
+      "universityId": "79e1cf8b-6a97-5fef-ac23-aa6012197801",
+      "university": "Peking University",
+      "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/013-opencode.json",
+      "factIndex": 13,
+      "field": "living_cost",
+      "url": "https://www.topuniversities.com/universities/peking-university",
+      "reason": "University affiliation of this source domain requires separate review"
+    },
+    {
+      "task": "014-opencode",
+      "universityId": "519c66df-8779-5336-acda-2cba10f95c66",
+      "university": "Tsinghua University",
+      "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/014-opencode.json",
+      "factIndex": 3,
+      "field": "entry_requirement",
+      "url": "https://international.join-tsinghua.edu.cn/Admission1/Eligibility.htm",
+      "reason": "University affiliation of this source domain requires separate review"
+    },
+    {
+      "task": "014-opencode",
+      "universityId": "519c66df-8779-5336-acda-2cba10f95c66",
+      "university": "Tsinghua University",
+      "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/014-opencode.json",
+      "factIndex": 4,
+      "field": "language_requirement",
+      "url": "https://international.join-tsinghua.edu.cn/Admission1/Eligibility.htm",
+      "reason": "University affiliation of this source domain requires separate review"
+    },
+    {
+      "task": "014-opencode",
+      "universityId": "519c66df-8779-5336-acda-2cba10f95c66",
+      "university": "Tsinghua University",
+      "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/014-opencode.json",
+      "factIndex": 5,
+      "field": "language_exemption",
+      "url": "https://international.join-tsinghua.edu.cn/Admission1/Eligibility.htm",
+      "reason": "University affiliation of this source domain requires separate review"
+    },
+    {
+      "task": "014-opencode",
+      "universityId": "519c66df-8779-5336-acda-2cba10f95c66",
+      "university": "Tsinghua University",
+      "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/014-opencode.json",
+      "factIndex": 10,
+      "field": "tuition",
+      "url": "https://international.join-tsinghua.edu.cn/Admission1/Fees.htm",
+      "reason": "University affiliation of this source domain requires separate review"
+    },
+    {
+      "task": "014-opencode",
+      "universityId": "519c66df-8779-5336-acda-2cba10f95c66",
+      "university": "Tsinghua University",
+      "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/014-opencode.json",
+      "factIndex": 11,
+      "field": "mandatory_fee",
+      "url": "https://international.join-tsinghua.edu.cn/Admission1/Fees.htm",
+      "reason": "University affiliation of this source domain requires separate review"
+    },
+    {
+      "task": "026-opencode",
+      "universityId": "5c9532a7-118a-5e2d-ab32-92ade2e776a5",
+      "university": "Fudan University",
+      "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/026-opencode.json",
+      "factIndex": 6,
+      "field": "language_requirement",
+      "url": "https://www.topuniversities.com/universities/fudan-university",
+      "reason": "University affiliation of this source domain requires separate review"
+    },
+    {
+      "task": "026-opencode",
+      "universityId": "5c9532a7-118a-5e2d-ab32-92ade2e776a5",
+      "university": "Fudan University",
+      "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/026-opencode.json",
+      "factIndex": 7,
+      "field": "accommodation_cost",
+      "url": "https://www.topuniversities.com/universities/fudan-university",
+      "reason": "University affiliation of this source domain requires separate review"
+    },
+    {
+      "task": "026-opencode",
+      "universityId": "5c9532a7-118a-5e2d-ab32-92ade2e776a5",
+      "university": "Fudan University",
+      "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/026-opencode.json",
+      "factIndex": 8,
+      "field": "living_cost",
+      "url": "https://www.topuniversities.com/universities/fudan-university",
+      "reason": "University affiliation of this source domain requires separate review"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://admission.princeton.edu/apply/before-you-apply",
+      "references": [
+        {
+          "task": "027-opencode",
+          "universityId": "6f13f9e9-cf5f-56ad-8384-39a9dc592d58",
+          "university": "Princeton University",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/027-opencode.json",
+          "factIndex": 6,
+          "field": "entry_requirement"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:43.084453+00:00",
+      "httpStatus": 200,
+      "title": "Before You Apply | Princeton Admission",
+      "sha256": "82133a88c76c519a22b094446dc34ca6cdfaaa7bd91216aedf36a457b7072f1f",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/7f0d4ccf7441b9a539f9.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://admission.princeton.edu/apply/before-you-apply",
+      "contentType": "text/html",
+      "bytesRead": 123992,
+      "bodyMayBeTruncated": false,
+      "textLength": 10357,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://admission.princeton.edu/apply/international-students",
+      "references": [
+        {
+          "task": "027-opencode",
+          "universityId": "6f13f9e9-cf5f-56ad-8384-39a9dc592d58",
+          "university": "Princeton University",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/027-opencode.json",
+          "factIndex": 7,
+          "field": "language_requirement"
+        },
+        {
+          "task": "027-opencode",
+          "universityId": "6f13f9e9-cf5f-56ad-8384-39a9dc592d58",
+          "university": "Princeton University",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/027-opencode.json",
+          "factIndex": 8,
+          "field": "language_exemption"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:44.038799+00:00",
+      "httpStatus": 200,
+      "title": "International Students | Princeton Admission",
+      "sha256": "82b69dba9a46ff2160df362965e272305754c44fdeeb1c88a3e1c0f673d4471d",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/2962edaccdf447cf8393.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://admission.princeton.edu/apply/international-students",
+      "contentType": "text/html",
+      "bytesRead": 107576,
+      "bodyMayBeTruncated": false,
+      "textLength": 9959,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://admission.princeton.edu/cost-aid",
+      "references": [
+        {
+          "task": "027-opencode",
+          "universityId": "6f13f9e9-cf5f-56ad-8384-39a9dc592d58",
+          "university": "Princeton University",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/027-opencode.json",
+          "factIndex": 10,
+          "field": "tuition"
+        },
+        {
+          "task": "027-opencode",
+          "universityId": "6f13f9e9-cf5f-56ad-8384-39a9dc592d58",
+          "university": "Princeton University",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/027-opencode.json",
+          "factIndex": 14,
+          "field": "financial_aid"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:44.625524+00:00",
+      "httpStatus": 200,
+      "title": "Cost & Aid | Princeton Admission",
+      "sha256": "2d54dd0d7f016b8fbbd314cd9c2bdaac1d65044fdf351c2d3a95cff17790ab7d",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/55ed7349b82f92378224.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://admission.princeton.edu/cost-aid",
+      "contentType": "text/html",
+      "bytesRead": 110415,
+      "bodyMayBeTruncated": false,
+      "textLength": 9008,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://admission.princeton.edu/cost-aid/fees-payment-options",
+      "references": [
+        {
+          "task": "027-opencode",
+          "universityId": "6f13f9e9-cf5f-56ad-8384-39a9dc592d58",
+          "university": "Princeton University",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/027-opencode.json",
+          "factIndex": 11,
+          "field": "mandatory_fee"
+        },
+        {
+          "task": "027-opencode",
+          "universityId": "6f13f9e9-cf5f-56ad-8384-39a9dc592d58",
+          "university": "Princeton University",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/027-opencode.json",
+          "factIndex": 12,
+          "field": "accommodation_cost"
+        },
+        {
+          "task": "027-opencode",
+          "universityId": "6f13f9e9-cf5f-56ad-8384-39a9dc592d58",
+          "university": "Princeton University",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/027-opencode.json",
+          "factIndex": 13,
+          "field": "living_cost"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:45.503206+00:00",
+      "httpStatus": 200,
+      "title": "Fees & Payment Options | Princeton Admission",
+      "sha256": "bc288e8fb204c880a516fed4272a6b0d5b78c16eb936d9271548419b4b7d64b1",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/e51243595971cbc94337.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://admission.princeton.edu/cost-aid/fees-payment-options",
+      "contentType": "text/html",
+      "bytesRead": 81051,
+      "bodyMayBeTruncated": false,
+      "textLength": 6813,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://admission.stanford.edu/apply/first-year/testing.html",
+      "references": [
+        {
+          "task": "003-opencode",
+          "universityId": "11111111-1111-4111-8111-111111111111",
+          "university": "Stanford University",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/003-opencode.json",
+          "factIndex": 7,
+          "field": "entry_requirement"
+        },
+        {
+          "task": "003-opencode",
+          "universityId": "11111111-1111-4111-8111-111111111111",
+          "university": "Stanford University",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/003-opencode.json",
+          "factIndex": 8,
+          "field": "entry_requirement"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:24.342054+00:00",
+      "httpStatus": 200,
+      "title": "Standardized Testing : Stanford University",
+      "sha256": "1b907788c4f7acb4057d6c2c658e8612bfaf13043f810136656816c59762d2b9",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/ea1154b417f3546ce6af.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://admission.stanford.edu/apply/first-year/testing.html",
+      "contentType": "text/html",
+      "bytesRead": 40239,
+      "bodyMayBeTruncated": false,
+      "textLength": 7031,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://admission.stanford.edu/apply/international/",
+      "references": [
+        {
+          "task": "003-opencode",
+          "universityId": "11111111-1111-4111-8111-111111111111",
+          "university": "Stanford University",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/003-opencode.json",
+          "factIndex": 9,
+          "field": "language_exemption"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:24.342358+00:00",
+      "httpStatus": 200,
+      "title": "International Applicants : Stanford University",
+      "sha256": "7f8edd2ee3d1a1c03d2e2ed2b4979f2a99a2c4a431ce22c7788377ab4fb6c4c2",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/73e7df9fdf9a9e2283ae.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://admission.stanford.edu/apply/international/",
+      "contentType": "text/html",
+      "bytesRead": 50503,
+      "bodyMayBeTruncated": false,
+      "textLength": 11664,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://admissions.berkeley.edu/apply-to-berkeley/first-year-applicants-uc-berkeley/freshmen-requirements/",
+      "references": [
+        {
+          "task": "021-opencode",
+          "universityId": "e67501b3-2e87-5598-b9e3-e28fe4101f68",
+          "university": "University of California-Berkeley",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/021-opencode.json",
+          "factIndex": 5,
+          "field": "entry_requirement"
+        },
+        {
+          "task": "021-opencode",
+          "universityId": "e67501b3-2e87-5598-b9e3-e28fe4101f68",
+          "university": "University of California-Berkeley",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/021-opencode.json",
+          "factIndex": 6,
+          "field": "required_subject"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:38.236904+00:00",
+      "httpStatus": 200,
+      "title": "First-Year Requirements - Office of Undergraduate Admissions",
+      "sha256": "59253f64a718618d7902f93c37b7997e50dd69735dd6841f3b71ab6482b3b4e6",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/31d37b07fb171b37d30c.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://admissions.berkeley.edu/apply-to-berkeley/first-year-applicants-uc-berkeley/freshmen-requirements/",
+      "contentType": "text/html",
+      "bytesRead": 74228,
+      "bodyMayBeTruncated": false,
+      "textLength": 6010,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://admissions.berkeley.edu/apply-to-berkeley/international-students/requirements-for-international-students/",
+      "references": [
+        {
+          "task": "021-opencode",
+          "universityId": "e67501b3-2e87-5598-b9e3-e28fe4101f68",
+          "university": "University of California-Berkeley",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/021-opencode.json",
+          "factIndex": 7,
+          "field": "language_requirement"
+        },
+        {
+          "task": "021-opencode",
+          "universityId": "e67501b3-2e87-5598-b9e3-e28fe4101f68",
+          "university": "University of California-Berkeley",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/021-opencode.json",
+          "factIndex": 8,
+          "field": "language_exemption"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:38.295274+00:00",
+      "httpStatus": 200,
+      "title": "Requirements for International Students - Office of Undergraduate Admissions",
+      "sha256": "342e53e7804cadf812bc140e7f831b21671af143d99b624777f336d4c98dbff0",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/8aedc6bee6f0b61da480.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://admissions.berkeley.edu/apply-to-berkeley/international-students/requirements-for-international-students/",
+      "contentType": "text/html",
+      "bytesRead": 75464,
+      "bodyMayBeTruncated": false,
+      "textLength": 8249,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://admissions.berkeley.edu/cost/",
+      "references": [
+        {
+          "task": "021-opencode",
+          "universityId": "e67501b3-2e87-5598-b9e3-e28fe4101f68",
+          "university": "University of California-Berkeley",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/021-opencode.json",
+          "factIndex": 19,
+          "field": "financial_aid"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:39.257647+00:00",
+      "httpStatus": 200,
+      "title": "Cost - Office of Undergraduate Admissions",
+      "sha256": "85fc29ee58842a1a53d47db7fde7ae39484273580b336c74ee76e2a6ea5cc20a",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/cf62f99fe90244ee57a3.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://admissions.berkeley.edu/cost/",
+      "contentType": "text/html",
+      "bytesRead": 143419,
+      "bodyMayBeTruncated": false,
+      "textLength": 5444,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://admissions.cornell.edu/how-to-apply/first-year-applicants",
+      "references": [
+        {
+          "task": "016-opencode",
+          "universityId": "8488d97e-a227-5fbd-b7b4-33a1194df723",
+          "university": "Cornell University",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/016-opencode.json",
+          "factIndex": 13,
+          "field": "financial_aid"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:34.772170+00:00",
+      "httpStatus": 200,
+      "title": "First-Year Applicants | Undergraduate Admissions",
+      "sha256": "db9047a8e13b9c41fe2319b4dc70bbc7a56d76af021d37a93861998d42801e56",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/dba6229e9a17e54503bc.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://admissions.cornell.edu/how-to-apply/first-year-applicants",
+      "contentType": "text/html",
+      "bytesRead": 126611,
+      "bodyMayBeTruncated": false,
+      "textLength": 18872,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://admissions.cornell.edu/policies/standardized-testing-policy",
+      "references": [
+        {
+          "task": "016-opencode",
+          "universityId": "8488d97e-a227-5fbd-b7b4-33a1194df723",
+          "university": "Cornell University",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/016-opencode.json",
+          "factIndex": 6,
+          "field": "entry_requirement"
+        },
+        {
+          "task": "016-opencode",
+          "universityId": "8488d97e-a227-5fbd-b7b4-33a1194df723",
+          "university": "Cornell University",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/016-opencode.json",
+          "factIndex": 7,
+          "field": "language_requirement"
+        },
+        {
+          "task": "016-opencode",
+          "universityId": "8488d97e-a227-5fbd-b7b4-33a1194df723",
+          "university": "Cornell University",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/016-opencode.json",
+          "factIndex": 8,
+          "field": "language_exemption"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:33.998231+00:00",
+      "httpStatus": 200,
+      "title": "Standardized Testing Policy | Undergraduate Admissions",
+      "sha256": "e51e624a931e6b6ff07eae0f9aa349cf2cca5b469bb2b3df16a5e3dceca5bce3",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/e2fe9d69f68ee686078d.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://admissions.cornell.edu/policies/standardized-testing-policy",
+      "contentType": "text/html",
+      "bytesRead": 40797,
+      "bodyMayBeTruncated": false,
+      "textLength": 4718,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://admissions.upenn.edu/affording-penn/understanding-your-costs",
+      "references": [
+        {
+          "task": "015-opencode",
+          "universityId": "894119e1-40c1-5589-8677-e1ed97388e59",
+          "university": "University of Pennsylvania",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/015-opencode.json",
+          "factIndex": 9,
+          "field": "financial_aid"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:33.263153+00:00",
+      "httpStatus": 200,
+      "title": "Understanding Your Costs | Penn Admissions",
+      "sha256": "52616b1ead4dba039b88e128db9acb90ddbe0a5316c5748bab3ea05a7e0091a6",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/39989b18be057032e6a6.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://admissions.upenn.edu/affording-penn/understanding-your-costs",
+      "contentType": "text/html",
+      "bytesRead": 34876,
+      "bodyMayBeTruncated": false,
+      "textLength": 5370,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://admissions.upenn.edu/how-to-apply/first-year-applicants/application-requirements",
+      "references": [
+        {
+          "task": "015-opencode",
+          "universityId": "894119e1-40c1-5589-8677-e1ed97388e59",
+          "university": "University of Pennsylvania",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/015-opencode.json",
+          "factIndex": 5,
+          "field": "entry_requirement"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:33.075813+00:00",
+      "httpStatus": 200,
+      "title": "Application Requirements | Penn Admissions",
+      "sha256": "cd5cb5411ff10e67347aeab100676754ece573b6ee6fd18ba8cb864249f32416",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/e29c96b40c0bcaa51ec2.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://admissions.upenn.edu/how-to-apply/first-year-applicants/application-requirements",
+      "contentType": "text/html",
+      "bytesRead": 62143,
+      "bodyMayBeTruncated": false,
+      "textLength": 12327,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://admissions.upenn.edu/how-to-apply/international-applicants",
+      "references": [
+        {
+          "task": "015-opencode",
+          "universityId": "894119e1-40c1-5589-8677-e1ed97388e59",
+          "university": "University of Pennsylvania",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/015-opencode.json",
+          "factIndex": 6,
+          "field": "language_requirement"
+        },
+        {
+          "task": "015-opencode",
+          "universityId": "894119e1-40c1-5589-8677-e1ed97388e59",
+          "university": "University of Pennsylvania",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/015-opencode.json",
+          "factIndex": 7,
+          "field": "language_exemption"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:33.218311+00:00",
+      "httpStatus": 200,
+      "title": "International Applicants | Penn Admissions",
+      "sha256": "ef8332590c372feef33390d7e9e8008fbcaaeae2e716bdce99166fdc2b325a9b",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/eaf498a2b3f5233ff157.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://admissions.upenn.edu/how-to-apply/international-applicants",
+      "contentType": "text/html",
+      "bytesRead": 43111,
+      "bodyMayBeTruncated": false,
+      "textLength": 7858,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://admissions.yale.edu/requirements",
+      "references": [
+        {
+          "task": "017-opencode",
+          "universityId": "0a670c6d-e20a-527f-851b-e2c1306cce70",
+          "university": "Yale University",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/017-opencode.json",
+          "factIndex": 7,
+          "field": "entry_requirement"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:35.870552+00:00",
+      "httpStatus": 200,
+      "title": "Requirements | Undergraduate Admissions",
+      "sha256": "c48e44d6547ce943ad8aeb241bcf175df10681867a58190dbb3d8bdad8e7a629",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/7f51b30f15ac33b14719.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://admissions.yale.edu/requirements",
+      "contentType": "text/html",
+      "bytesRead": 73640,
+      "bodyMayBeTruncated": false,
+      "textLength": 4950,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://admissions.yale.edu/standardized-testing",
+      "references": [
+        {
+          "task": "017-opencode",
+          "universityId": "0a670c6d-e20a-527f-851b-e2c1306cce70",
+          "university": "Yale University",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/017-opencode.json",
+          "factIndex": 8,
+          "field": "entry_requirement"
+        },
+        {
+          "task": "017-opencode",
+          "universityId": "0a670c6d-e20a-527f-851b-e2c1306cce70",
+          "university": "Yale University",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/017-opencode.json",
+          "factIndex": 9,
+          "field": "language_requirement"
+        },
+        {
+          "task": "017-opencode",
+          "universityId": "0a670c6d-e20a-527f-851b-e2c1306cce70",
+          "university": "Yale University",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/017-opencode.json",
+          "factIndex": 10,
+          "field": "language_exemption"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:36.326977+00:00",
+      "httpStatus": 200,
+      "title": "Standardized Testing | Undergraduate Admissions",
+      "sha256": "accee93f6ea5091af65fb3524ab3f170e1e250f14b7a2a7f70a6635df3fc66ac",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/e06ee1b6e8858712d5b1.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://admissions.yale.edu/standardized-testing",
+      "contentType": "text/html",
+      "bytesRead": 88993,
+      "bodyMayBeTruncated": false,
+      "textLength": 6836,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://apply.jhu.edu/how-to-apply/application-deadlines-requirements/standardized-testing/",
+      "references": [
+        {
+          "task": "020-opencode",
+          "universityId": "f5c17f3c-ac83-5193-8c71-641147ad926c",
+          "university": "Johns Hopkins University",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/020-opencode.json",
+          "factIndex": 7,
+          "field": "entry_requirement"
+        },
+        {
+          "task": "020-opencode",
+          "universityId": "f5c17f3c-ac83-5193-8c71-641147ad926c",
+          "university": "Johns Hopkins University",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/020-opencode.json",
+          "factIndex": 8,
+          "field": "language_requirement"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:39.903707+00:00",
+      "httpStatus": 200,
+      "title": "Standardized Testing | Johns Hopkins University Admissions",
+      "sha256": "00735a0087af986d5eac279c08a393b049c2d68bc088f15265f7f0cca4c2d795",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/801fe4aa61c74c6f383e.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://apply.jhu.edu/how-to-apply/application-deadlines-requirements/standardized-testing/",
+      "contentType": "text/html",
+      "bytesRead": 153738,
+      "bodyMayBeTruncated": false,
+      "textLength": 7288,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://apply.jhu.edu/international-applicants/",
+      "references": [
+        {
+          "task": "020-opencode",
+          "universityId": "f5c17f3c-ac83-5193-8c71-641147ad926c",
+          "university": "Johns Hopkins University",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/020-opencode.json",
+          "factIndex": 9,
+          "field": "entry_requirement"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:40.125475+00:00",
+      "httpStatus": 200,
+      "title": "International Applicants | Johns Hopkins University Admissions",
+      "sha256": "2860e38fbb0cdd85cbdb1d8f410c279e1dba37078fc332cdfac4fff4f5db138f",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/4b19efb74f08756f6400.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://apply.jhu.edu/international-applicants/",
+      "contentType": "text/html",
+      "bytesRead": 287720,
+      "bodyMayBeTruncated": false,
+      "textLength": 33821,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://apply.jhu.edu/tuition-aid/estimate-your-college-costs/",
+      "references": [
+        {
+          "task": "020-opencode",
+          "universityId": "f5c17f3c-ac83-5193-8c71-641147ad926c",
+          "university": "Johns Hopkins University",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/020-opencode.json",
+          "factIndex": 16,
+          "field": "financial_aid"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:40.917234+00:00",
+      "httpStatus": 200,
+      "title": "Estimate Your College Costs | Johns Hopkins University Admissions",
+      "sha256": "d3386e5558f5c5819309b1f7c4bd797ab3c5b0007315ea733a385350dc0732eb",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/ec7473b69d696bf115a5.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://apply.jhu.edu/tuition-aid/estimate-your-college-costs/",
+      "contentType": "text/html",
+      "bytesRead": 162441,
+      "bodyMayBeTruncated": false,
+      "textLength": 6399,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://bursar.uchicago.edu/tuition-and-fees/tuition-and-fees-2025-26/tuition-and-fees-2025-26-college",
+      "references": [
+        {
+          "task": "024-opencode",
+          "universityId": "7add53a9-8ddf-5e84-bd4d-a7c8638dbb95",
+          "university": "University of Chicago",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/024-opencode.json",
+          "factIndex": 7,
+          "field": "tuition"
+        },
+        {
+          "task": "024-opencode",
+          "universityId": "7add53a9-8ddf-5e84-bd4d-a7c8638dbb95",
+          "university": "University of Chicago",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/024-opencode.json",
+          "factIndex": 8,
+          "field": "mandatory_fee"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:37.279127+00:00",
+      "httpStatus": 200,
+      "title": "Tuition and Fees 2025-26 College | University of Chicago",
+      "sha256": "9cda8174869d5fbfde22a60f1720e4834f00c061fc4c24732db8bd502ce3031c",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/8320e5506ee3bdb3f17f.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://bursar.uchicago.edu/tuition-and-fees/tuition-and-fees-2025-26/tuition-and-fees-2025-26-college",
+      "contentType": "text/html",
+      "bytesRead": 214687,
+      "bodyMayBeTruncated": false,
+      "textLength": 3406,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://catalog.caltech.edu/current/information-for-undergraduate-students/undergraduate-expenses/",
+      "references": [
+        {
+          "task": "007-opencode",
+          "universityId": "99fbcf31-606d-5dac-880e-83ca25acd942",
+          "university": "California Institute of Technology",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/007-opencode.json",
+          "factIndex": 13,
+          "field": "living_cost"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:30.447804+00:00",
+      "httpStatus": 200,
+      "title": "Undergraduate Expenses | Caltech Academic Catalog",
+      "sha256": "c3877489e33a1d98e559ca45af8bdbb457bdfe5796a05a010fed38ae1abbe297",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/d586cc1d9b020f6f0b29.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://catalog.caltech.edu/current/information-for-undergraduate-students/undergraduate-expenses/",
+      "contentType": "text/html",
+      "bytesRead": 218475,
+      "bodyMayBeTruncated": false,
+      "textLength": 26575,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://college.harvard.edu/admissions/apply",
+      "references": [
+        {
+          "task": "005-opencode",
+          "universityId": "39230496-b2fc-53ca-9303-1726c4ac13da",
+          "university": "Harvard University",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/005-opencode.json",
+          "factIndex": 15,
+          "field": "mandatory_fee"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:27.357495+00:00",
+      "httpStatus": 200,
+      "title": "Apply | Harvard Search TikTok Instagram Youtube Harvard College Search TikTok Instagram Youtube Harvard College",
+      "sha256": "f7bcb6ef173f04a46c7dddc2e9b33b037fd4a17377837e9021e716b6f1438921",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/22a832f4e8352ebe00d3.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://college.harvard.edu/admissions/apply",
+      "contentType": "text/html",
+      "bytesRead": 390656,
+      "bodyMayBeTruncated": false,
+      "textLength": 10938,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://college.harvard.edu/admissions/apply/application-requirements",
+      "references": [
+        {
+          "task": "005-opencode",
+          "universityId": "39230496-b2fc-53ca-9303-1726c4ac13da",
+          "university": "Harvard University",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/005-opencode.json",
+          "factIndex": 10,
+          "field": "entry_requirement"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:26.603867+00:00",
+      "httpStatus": 200,
+      "title": "Application Requirements | Harvard Search TikTok Instagram Youtube Harvard College Search TikTok Instagram Youtube Harvard College",
+      "sha256": "74f1a0f0dccda3d9178a0a7850eb85255260a8c039b97e45e851ad03c7abc9d6",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/35b32837681507647a94.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://college.harvard.edu/admissions/apply/application-requirements",
+      "contentType": "text/html",
+      "bytesRead": 418626,
+      "bodyMayBeTruncated": false,
+      "textLength": 27015,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://college.harvard.edu/admissions/apply/international-applicants",
+      "references": [
+        {
+          "task": "005-opencode",
+          "universityId": "39230496-b2fc-53ca-9303-1726c4ac13da",
+          "university": "Harvard University",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/005-opencode.json",
+          "factIndex": 11,
+          "field": "language_exemption"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:27.008304+00:00",
+      "httpStatus": 200,
+      "title": "International Applicants | Harvard Search TikTok Instagram Youtube Harvard College Search TikTok Instagram Youtube Harvard College",
+      "sha256": "6c398b395fb67e0cb1f963be66eee9d454f121d430943d1dbc1f5f93327d5c43",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/6483f4b3f1a50c05cf8f.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://college.harvard.edu/admissions/apply/international-applicants",
+      "contentType": "text/html",
+      "bytesRead": 402704,
+      "bodyMayBeTruncated": false,
+      "textLength": 18137,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://college.harvard.edu/financial-aid/how-aid-works",
+      "references": [
+        {
+          "task": "005-opencode",
+          "universityId": "39230496-b2fc-53ca-9303-1726c4ac13da",
+          "university": "Harvard University",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/005-opencode.json",
+          "factIndex": 17,
+          "field": "financial_aid"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:27.668046+00:00",
+      "httpStatus": 200,
+      "title": "How Aid Works | Harvard Search TikTok Instagram Youtube Harvard College Search TikTok Instagram Youtube Harvard College",
+      "sha256": "f0d32f9a7b9172b8f0dc4a337401d682840be9d2dbb3094d3e7a89f428247081",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/07c5bce7f13c96276d4e.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://college.harvard.edu/financial-aid/how-aid-works",
+      "contentType": "text/html",
+      "bytesRead": 397457,
+      "bodyMayBeTruncated": false,
+      "textLength": 14554,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://college.harvard.edu/guides/financial-aid-fact-sheet",
+      "references": [
+        {
+          "task": "005-opencode",
+          "universityId": "39230496-b2fc-53ca-9303-1726c4ac13da",
+          "university": "Harvard University",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/005-opencode.json",
+          "factIndex": 16,
+          "field": "tuition"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:27.598512+00:00",
+      "httpStatus": 200,
+      "title": "Financial Aid Fact Sheet | Harvard Harvard College Search TikTok Instagram Youtube Harvard College Search TikTok Instagram Youtube Harvard College",
+      "sha256": "173716306f9aa7061922459dd6710bf218c2690b40d3330d04833c4396a2eb8f",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/762c3042239942197733.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://college.harvard.edu/guides/financial-aid-fact-sheet",
+      "contentType": "text/html",
+      "bytesRead": 389250,
+      "bodyMayBeTruncated": false,
+      "textLength": 9813,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://en.sjtu.edu.cn/study-sjtu/prospective/degree-programs/278",
+      "references": [
+        {
+          "task": "036-opencode",
+          "universityId": "40dc3bce-f456-577e-9003-9c143d3b52bb",
+          "university": "Shanghai Jiaotong University",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/036-opencode.json",
+          "factIndex": 7,
+          "field": "required_subject"
+        },
+        {
+          "task": "036-opencode",
+          "universityId": "40dc3bce-f456-577e-9003-9c143d3b52bb",
+          "university": "Shanghai Jiaotong University",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/036-opencode.json",
+          "factIndex": 9,
+          "field": "language_exemption"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:55.672682+00:00",
+      "httpStatus": 200,
+      "title": "Study@SJTU - Shanghai Jiao Tong University",
+      "sha256": "be4b0e138f633f67c6c5eb8c25c7ebff076d2c60a0eb594d1e79fcda1011e7b6",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/9342f99b979a37b3562f.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://en.sjtu.edu.cn/study-sjtu/prospective/degree-programs/278",
+      "contentType": "text/html",
+      "bytesRead": 207921,
+      "bodyMayBeTruncated": false,
+      "textLength": 17132,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://en.sjtu.edu.cn/study-sjtu/prospective/degree-programs/387",
+      "references": [
+        {
+          "task": "036-opencode",
+          "universityId": "40dc3bce-f456-577e-9003-9c143d3b52bb",
+          "university": "Shanghai Jiaotong University",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/036-opencode.json",
+          "factIndex": 6,
+          "field": "entry_requirement"
+        },
+        {
+          "task": "036-opencode",
+          "universityId": "40dc3bce-f456-577e-9003-9c143d3b52bb",
+          "university": "Shanghai Jiaotong University",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/036-opencode.json",
+          "factIndex": 8,
+          "field": "language_requirement"
+        },
+        {
+          "task": "036-opencode",
+          "universityId": "40dc3bce-f456-577e-9003-9c143d3b52bb",
+          "university": "Shanghai Jiaotong University",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/036-opencode.json",
+          "factIndex": 10,
+          "field": "tuition"
+        },
+        {
+          "task": "036-opencode",
+          "universityId": "40dc3bce-f456-577e-9003-9c143d3b52bb",
+          "university": "Shanghai Jiaotong University",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/036-opencode.json",
+          "factIndex": 11,
+          "field": "mandatory_fee"
+        },
+        {
+          "task": "036-opencode",
+          "universityId": "40dc3bce-f456-577e-9003-9c143d3b52bb",
+          "university": "Shanghai Jiaotong University",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/036-opencode.json",
+          "factIndex": 12,
+          "field": "accommodation_cost"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:55.574491+00:00",
+      "httpStatus": 200,
+      "title": "Study@SJTU - Shanghai Jiao Tong University",
+      "sha256": "3125af65c3f6ab971588c4c2eec257928a2b1575f232dc4e1329c67055fabf3f",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/7e464de6056e4b2fbbaa.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://en.sjtu.edu.cn/study-sjtu/prospective/degree-programs/387",
+      "contentType": "text/html",
+      "bytesRead": 181050,
+      "bodyMayBeTruncated": false,
+      "textLength": 14452,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://ethz.ch/en/studies/financial.html",
+      "references": [
+        {
+          "task": "008-opencode",
+          "universityId": "6020a2b5-3788-5dd1-b3f2-b9c6c7c6f99b",
+          "university": "ETHZ - ETH Zurich",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/008-opencode.json",
+          "factIndex": 9,
+          "field": "tuition"
+        },
+        {
+          "task": "008-opencode",
+          "universityId": "6020a2b5-3788-5dd1-b3f2-b9c6c7c6f99b",
+          "university": "ETHZ - ETH Zurich",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/008-opencode.json",
+          "factIndex": 10,
+          "field": "living_cost"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:28.736203+00:00",
+      "httpStatus": 200,
+      "title": "Financial | ETH Zurich",
+      "sha256": "3f5475c5224659126191fbb94b2cfde23c290487f5df50a87df5add003187050",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/3750fca15e7baf3e7aff.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://ethz.ch/en/studies/financial.html",
+      "contentType": "text/html",
+      "bytesRead": 53384,
+      "bodyMayBeTruncated": false,
+      "textLength": 2885,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://ethz.ch/en/studies/master/application.html",
+      "references": [
+        {
+          "task": "008-opencode",
+          "universityId": "6020a2b5-3788-5dd1-b3f2-b9c6c7c6f99b",
+          "university": "ETHZ - ETH Zurich",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/008-opencode.json",
+          "factIndex": 3,
+          "field": "entry_requirement"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:28.508470+00:00",
+      "httpStatus": 200,
+      "title": "Application Master | ETH Zurich",
+      "sha256": "6c8355257d2b089dd6f8bc20e344698c2ca630342a8f571aab96f5168738c1a9",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/9f9b869d4a0f239b8843.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://ethz.ch/en/studies/master/application.html",
+      "contentType": "text/html",
+      "bytesRead": 51598,
+      "bodyMayBeTruncated": false,
+      "textLength": 4527,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://ethz.ch/en/studies/master/application/language-requirements.html",
+      "references": [
+        {
+          "task": "008-opencode",
+          "universityId": "6020a2b5-3788-5dd1-b3f2-b9c6c7c6f99b",
+          "university": "ETHZ - ETH Zurich",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/008-opencode.json",
+          "factIndex": 7,
+          "field": "language_requirement"
+        },
+        {
+          "task": "008-opencode",
+          "universityId": "6020a2b5-3788-5dd1-b3f2-b9c6c7c6f99b",
+          "university": "ETHZ - ETH Zurich",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/008-opencode.json",
+          "factIndex": 8,
+          "field": "language_exemption"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:28.707346+00:00",
+      "httpStatus": 200,
+      "title": "Language requirements | ETH Zurich",
+      "sha256": "70b47c081a45b6197d17daa2de257610df14bc28aef51c7c54e92118d1e04ed7",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/a7c8bb50a01ad02b129b.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://ethz.ch/en/studies/master/application/language-requirements.html",
+      "contentType": "text/html",
+      "bytesRead": 62274,
+      "bodyMayBeTruncated": false,
+      "textLength": 8206,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://ethz.ch/students/en/studies/financial.html",
+      "references": [
+        {
+          "task": "008-opencode",
+          "universityId": "6020a2b5-3788-5dd1-b3f2-b9c6c7c6f99b",
+          "university": "ETHZ - ETH Zurich",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/008-opencode.json",
+          "factIndex": 12,
+          "field": "financial_aid"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:29.033834+00:00",
+      "httpStatus": 200,
+      "title": "Financial – Student portal | ETH Zurich",
+      "sha256": "cb04c12ca36243b55276abc25d7f03dd60978ba157671d82abfde7695b93d930",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/4097d40a6510dd720738.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://ethz.ch/students/en/studies/financial.html",
+      "contentType": "text/html",
+      "bytesRead": 47644,
+      "bodyMayBeTruncated": false,
+      "textLength": 2573,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://finaid.cornell.edu/cost-to-attend",
+      "references": [
+        {
+          "task": "016-opencode",
+          "universityId": "8488d97e-a227-5fbd-b7b4-33a1194df723",
+          "university": "Cornell University",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/016-opencode.json",
+          "factIndex": 9,
+          "field": "tuition"
+        },
+        {
+          "task": "016-opencode",
+          "universityId": "8488d97e-a227-5fbd-b7b4-33a1194df723",
+          "university": "Cornell University",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/016-opencode.json",
+          "factIndex": 10,
+          "field": "mandatory_fee"
+        },
+        {
+          "task": "016-opencode",
+          "universityId": "8488d97e-a227-5fbd-b7b4-33a1194df723",
+          "university": "Cornell University",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/016-opencode.json",
+          "factIndex": 11,
+          "field": "accommodation_cost"
+        },
+        {
+          "task": "016-opencode",
+          "universityId": "8488d97e-a227-5fbd-b7b4-33a1194df723",
+          "university": "Cornell University",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/016-opencode.json",
+          "factIndex": 12,
+          "field": "living_cost"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:34.740925+00:00",
+      "httpStatus": 200,
+      "title": "Cost to Attend | Financial Aid",
+      "sha256": "77180ca9020b41b55cbb9e0719d4034e24d929f7bb0f24dee7f98aad81f1cd7a",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/00874176267737825067.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://finaid.cornell.edu/cost-to-attend",
+      "contentType": "text/html",
+      "bytesRead": 88570,
+      "bodyMayBeTruncated": false,
+      "textLength": 9001,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://finaid.yale.edu/affordability",
+      "references": [
+        {
+          "task": "017-opencode",
+          "universityId": "0a670c6d-e20a-527f-851b-e2c1306cce70",
+          "university": "Yale University",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/017-opencode.json",
+          "factIndex": 17,
+          "field": "financial_aid"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:36.565335+00:00",
+      "httpStatus": 200,
+      "title": "Making Yale Affordable. For Everyone. | Undergraduate Financial Aid",
+      "sha256": "9b2641cbce8280b0234d071537a307223b6ce33ccccc0c20894b582ef71f0538",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/a0b797d460b4782e275d.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://finaid.yale.edu/affordability",
+      "contentType": "text/html",
+      "bytesRead": 31546,
+      "bodyMayBeTruncated": false,
+      "textLength": 2800,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://finaid.yale.edu/coa",
+      "references": [
+        {
+          "task": "017-opencode",
+          "universityId": "0a670c6d-e20a-527f-851b-e2c1306cce70",
+          "university": "Yale University",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/017-opencode.json",
+          "factIndex": 12,
+          "field": "tuition"
+        },
+        {
+          "task": "017-opencode",
+          "universityId": "0a670c6d-e20a-527f-851b-e2c1306cce70",
+          "university": "Yale University",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/017-opencode.json",
+          "factIndex": 13,
+          "field": "mandatory_fee"
+        },
+        {
+          "task": "017-opencode",
+          "universityId": "0a670c6d-e20a-527f-851b-e2c1306cce70",
+          "university": "Yale University",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/017-opencode.json",
+          "factIndex": 14,
+          "field": "accommodation_cost"
+        },
+        {
+          "task": "017-opencode",
+          "universityId": "0a670c6d-e20a-527f-851b-e2c1306cce70",
+          "university": "Yale University",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/017-opencode.json",
+          "factIndex": 15,
+          "field": "living_cost"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:36.511997+00:00",
+      "httpStatus": 200,
+      "title": "Cost of Attendance | Undergraduate Financial Aid",
+      "sha256": "e34efa50b7e0eebcb80c0ab69ae33cb9d6109257c20aafd6bda3592a47d3a673",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/58ef439caaa4b7a28b7a.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://finaid.yale.edu/coa",
+      "contentType": "text/html",
+      "bytesRead": 36199,
+      "bodyMayBeTruncated": false,
+      "textLength": 2835,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://financialaid.berkeley.edu/how-aid-works/student-budgets-cost-of-attendance/",
+      "references": [
+        {
+          "task": "021-opencode",
+          "universityId": "e67501b3-2e87-5598-b9e3-e28fe4101f68",
+          "university": "University of California-Berkeley",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/021-opencode.json",
+          "factIndex": 15,
+          "field": "tuition"
+        },
+        {
+          "task": "021-opencode",
+          "universityId": "e67501b3-2e87-5598-b9e3-e28fe4101f68",
+          "university": "University of California-Berkeley",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/021-opencode.json",
+          "factIndex": 16,
+          "field": "mandatory_fee"
+        },
+        {
+          "task": "021-opencode",
+          "universityId": "e67501b3-2e87-5598-b9e3-e28fe4101f68",
+          "university": "University of California-Berkeley",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/021-opencode.json",
+          "factIndex": 17,
+          "field": "accommodation_cost"
+        },
+        {
+          "task": "021-opencode",
+          "universityId": "e67501b3-2e87-5598-b9e3-e28fe4101f68",
+          "university": "University of California-Berkeley",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/021-opencode.json",
+          "factIndex": 18,
+          "field": "living_cost"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:38.802653+00:00",
+      "httpStatus": 200,
+      "title": "Student Budgets (Cost of Attendance) - Financial Aid & Scholarships",
+      "sha256": "fd84f4ab9e5fb4c417b3e434a7f585d60bd29dcf897330da4bfbae6565fcc57e",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/d4b26be6ef56024f8129.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://financialaid.berkeley.edu/how-aid-works/student-budgets-cost-of-attendance/",
+      "contentType": "text/html",
+      "bytesRead": 282945,
+      "bodyMayBeTruncated": false,
+      "textLength": 24268,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://financialaid.stanford.edu/undergrad/budget/",
+      "references": [
+        {
+          "task": "003-opencode",
+          "universityId": "11111111-1111-4111-8111-111111111111",
+          "university": "Stanford University",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/003-opencode.json",
+          "factIndex": 10,
+          "field": "tuition"
+        },
+        {
+          "task": "003-opencode",
+          "universityId": "11111111-1111-4111-8111-111111111111",
+          "university": "Stanford University",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/003-opencode.json",
+          "factIndex": 11,
+          "field": "mandatory_fee"
+        },
+        {
+          "task": "003-opencode",
+          "universityId": "11111111-1111-4111-8111-111111111111",
+          "university": "Stanford University",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/003-opencode.json",
+          "factIndex": 12,
+          "field": "living_cost"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:24.342519+00:00",
+      "httpStatus": 200,
+      "title": "The Student Budget : Stanford University",
+      "sha256": "718db23185336121f6d073524db9a2c928329a5d21bf94f6973877ca72ca5d51",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/dcb4c55638723a97cba7.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://financialaid.stanford.edu/undergrad/budget/",
+      "contentType": "text/html",
+      "bytesRead": 27857,
+      "bodyMayBeTruncated": false,
+      "textLength": 5172,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://future.utoronto.ca/apply/english-language-requirements/",
+      "references": [
+        {
+          "task": "032-opencode",
+          "universityId": "55555555-5555-4555-8555-555555555555",
+          "university": "University of Toronto",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/032-opencode.json",
+          "factIndex": 8,
+          "field": "required_subject"
+        },
+        {
+          "task": "032-opencode",
+          "universityId": "55555555-5555-4555-8555-555555555555",
+          "university": "University of Toronto",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/032-opencode.json",
+          "factIndex": 9,
+          "field": "language_requirement"
+        },
+        {
+          "task": "032-opencode",
+          "universityId": "55555555-5555-4555-8555-555555555555",
+          "university": "University of Toronto",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/032-opencode.json",
+          "factIndex": 10,
+          "field": "language_exemption"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:13:38.495142+00:00",
+      "httpStatus": 200,
+      "title": "English Language Requirements | Future Students. University of Toronto",
+      "sha256": "a9b67d5a44c75c6719867283f98b2b4b91b5b12449b5a92b2da966e31182f3c6",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/fb9b1e75bf4745f58d4a.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://future.utoronto.ca/english-language-requirements",
+      "contentType": "text/html",
+      "bytesRead": 118664,
+      "bodyMayBeTruncated": false,
+      "textLength": 17142
+    },
+    {
+      "url": "https://future.utoronto.ca/apply/requirements/",
+      "references": [
+        {
+          "task": "032-opencode",
+          "universityId": "55555555-5555-4555-8555-555555555555",
+          "university": "University of Toronto",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/032-opencode.json",
+          "factIndex": 7,
+          "field": "entry_requirement"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:13:38.494838+00:00",
+      "httpStatus": 200,
+      "title": "Requirements | Future Students. University of Toronto",
+      "sha256": "6b977b851fa0f9d264731ab856accc6b9b1bab6a3591f863f1db70bf1f84fcbd",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/fc08a4658d5409205681.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://future.utoronto.ca/requirements",
+      "contentType": "text/html",
+      "bytesRead": 105429,
+      "bodyMayBeTruncated": false,
+      "textLength": 6095
+    },
+    {
+      "url": "https://future.utoronto.ca/fees/",
+      "references": [
+        {
+          "task": "032-opencode",
+          "universityId": "55555555-5555-4555-8555-555555555555",
+          "university": "University of Toronto",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/032-opencode.json",
+          "factIndex": 11,
+          "field": "tuition"
+        },
+        {
+          "task": "032-opencode",
+          "universityId": "55555555-5555-4555-8555-555555555555",
+          "university": "University of Toronto",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/032-opencode.json",
+          "factIndex": 13,
+          "field": "mandatory_fee"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:13:38.495289+00:00",
+      "httpStatus": 200,
+      "title": "University Fees | Future Students. University of Toronto",
+      "sha256": "8e252543844367dbdc65451b7e31d988a7f92789c6bde36b4a5bcf3c6f19c3b4",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/ebe98f4c996d7c73c065.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://future.utoronto.ca/fees",
+      "contentType": "text/html",
+      "bytesRead": 100485,
+      "bodyMayBeTruncated": false,
+      "textLength": 9293
+    },
+    {
+      "url": "https://future.utoronto.ca/finances/financial-aid/",
+      "references": [
+        {
+          "task": "032-opencode",
+          "universityId": "55555555-5555-4555-8555-555555555555",
+          "university": "University of Toronto",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/032-opencode.json",
+          "factIndex": 16,
+          "field": "financial_aid"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:13:38.495517+00:00",
+      "httpStatus": 200,
+      "title": "Financial Aid | Future Students. University of Toronto",
+      "sha256": "2f9a3a860898947a37baf024f86d63d5a5f07258941f7f248f69851749492800",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/b32f7de900e3e44fab39.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://future.utoronto.ca/financial-aid",
+      "contentType": "text/html",
+      "bytesRead": 125014,
+      "bodyMayBeTruncated": false,
+      "textLength": 9746
+    },
+    {
+      "url": "https://future.utoronto.ca/housing/",
+      "references": [
+        {
+          "task": "032-opencode",
+          "universityId": "55555555-5555-4555-8555-555555555555",
+          "university": "University of Toronto",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/032-opencode.json",
+          "factIndex": 14,
+          "field": "accommodation_cost"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:13:38.495455+00:00",
+      "httpStatus": 200,
+      "title": "Housing | Future Students. University of Toronto",
+      "sha256": "eddbf422e94720d9bc60059cc7eaaadf7fbf17b46f7f57864222dcb5a111687f",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/381c7900608ef04a6a09.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://future.utoronto.ca/housing",
+      "contentType": "text/html",
+      "bytesRead": 345311,
+      "bodyMayBeTruncated": false,
+      "textLength": 14058
+    },
+    {
+      "url": "https://grad.uchicago.edu/admissions/apply/english-language-requirements/",
+      "references": [
+        {
+          "task": "024-opencode",
+          "universityId": "7add53a9-8ddf-5e84-bd4d-a7c8638dbb95",
+          "university": "University of Chicago",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/024-opencode.json",
+          "factIndex": 5,
+          "field": "language_requirement"
+        },
+        {
+          "task": "024-opencode",
+          "universityId": "7add53a9-8ddf-5e84-bd4d-a7c8638dbb95",
+          "university": "University of Chicago",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/024-opencode.json",
+          "factIndex": 6,
+          "field": "language_exemption"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:37.275262+00:00",
+      "httpStatus": 200,
+      "title": "English Language Proficiency - UChicagoGRAD | The University of Chicago Toggle Submenu Icon Toggle Submenu Icon Toggle Submenu Icon Toggle Submenu Icon Toggle Submenu Icon Toggle Submenu Icon",
+      "sha256": "ecf3291dc858fcb029638b2cd2685d213355bfa3bca8aa9391907f85e69bb2c1",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/a70041a5ff17fc570a95.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://grad.uchicago.edu/admissions/apply/english-language-requirements/",
+      "contentType": "text/html",
+      "bytesRead": 1031534,
+      "bodyMayBeTruncated": false,
+      "textLength": 10709,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://isd.pku.edu.cn/en/campus_detail.php?id=700",
+      "references": [
+        {
+          "task": "013-opencode",
+          "universityId": "79e1cf8b-6a97-5fef-ac23-aa6012197801",
+          "university": "Peking University",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/013-opencode.json",
+          "factIndex": 10,
+          "field": "tuition"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:33.283749+00:00",
+      "httpStatus": 200,
+      "title": "Academic Guidance for Degree Students_International Student Office of Peking University Department of International Cooperation_keywords",
+      "sha256": "8d2423a64bb4b67ba4399facab67982737ec4b7253ed533d7743670b1860aa4e",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/f452bb14758fd91e2be3.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://isd.pku.edu.cn/en/campus_detail.php?id=700",
+      "contentType": "text/html",
+      "bytesRead": 47275,
+      "bodyMayBeTruncated": false,
+      "textLength": 6676,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://isd.pku.edu.cn/en/detail.php?id=818",
+      "references": [
+        {
+          "task": "013-opencode",
+          "universityId": "79e1cf8b-6a97-5fef-ac23-aa6012197801",
+          "university": "Peking University",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/013-opencode.json",
+          "factIndex": 6,
+          "field": "entry_requirement"
+        },
+        {
+          "task": "013-opencode",
+          "universityId": "79e1cf8b-6a97-5fef-ac23-aa6012197801",
+          "university": "Peking University",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/013-opencode.json",
+          "factIndex": 7,
+          "field": "required_subject"
+        },
+        {
+          "task": "013-opencode",
+          "universityId": "79e1cf8b-6a97-5fef-ac23-aa6012197801",
+          "university": "Peking University",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/013-opencode.json",
+          "factIndex": 8,
+          "field": "language_requirement"
+        },
+        {
+          "task": "013-opencode",
+          "universityId": "79e1cf8b-6a97-5fef-ac23-aa6012197801",
+          "university": "Peking University",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/013-opencode.json",
+          "factIndex": 11,
+          "field": "mandatory_fee"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:33.264443+00:00",
+      "httpStatus": 200,
+      "title": "2026 Undergraduate Program Entrance Examination",
+      "sha256": "949f564642f4208ebd59ea3cb708942b15c96a6ecca40496830ccada71ead0f8",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/dcabf469a821c8a8f2d9.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://isd.pku.edu.cn/en/detail.php?id=818",
+      "contentType": "text/html",
+      "bytesRead": 47207,
+      "bodyMayBeTruncated": false,
+      "textLength": 16946,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://join.hkust.edu.hk/admissions/international-qualifications",
+      "references": [
+        {
+          "task": "033-opencode",
+          "universityId": "74996b5e-c39f-52f1-9e01-88f3051f155b",
+          "university": "The Hong Kong University of Science and Technology",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/033-opencode.json",
+          "factIndex": 6,
+          "field": "entry_requirement"
+        },
+        {
+          "task": "033-opencode",
+          "universityId": "74996b5e-c39f-52f1-9e01-88f3051f155b",
+          "university": "The Hong Kong University of Science and Technology",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/033-opencode.json",
+          "factIndex": 7,
+          "field": "language_requirement"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:52.726577+00:00",
+      "httpStatus": 200,
+      "title": "International Qualifications | HKUST Undergraduate Admissions",
+      "sha256": "e8de4c31a5853dfd1b2d122473ddf1190425a6f0f7d0f8177080f0bfbeb8ab85",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/e1f0d5e17f42ec8ee732.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://join.hkust.edu.hk/admissions/international-qualifications",
+      "contentType": "text/html",
+      "bytesRead": 121760,
+      "bodyMayBeTruncated": false,
+      "textLength": 11892,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://join.hkust.edu.hk/fees-and-scholarships",
+      "references": [
+        {
+          "task": "033-opencode",
+          "universityId": "74996b5e-c39f-52f1-9e01-88f3051f155b",
+          "university": "The Hong Kong University of Science and Technology",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/033-opencode.json",
+          "factIndex": 8,
+          "field": "tuition"
+        },
+        {
+          "task": "033-opencode",
+          "universityId": "74996b5e-c39f-52f1-9e01-88f3051f155b",
+          "university": "The Hong Kong University of Science and Technology",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/033-opencode.json",
+          "factIndex": 9,
+          "field": "accommodation_cost"
+        },
+        {
+          "task": "033-opencode",
+          "universityId": "74996b5e-c39f-52f1-9e01-88f3051f155b",
+          "university": "The Hong Kong University of Science and Technology",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/033-opencode.json",
+          "factIndex": 10,
+          "field": "living_cost"
+        },
+        {
+          "task": "033-opencode",
+          "universityId": "74996b5e-c39f-52f1-9e01-88f3051f155b",
+          "university": "The Hong Kong University of Science and Technology",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/033-opencode.json",
+          "factIndex": 12,
+          "field": "financial_aid"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:52.732506+00:00",
+      "httpStatus": 200,
+      "title": "Fees and Scholarships | HKUST Undergraduate Admissions Map Earth",
+      "sha256": "9a6683048f894d8b8154f6aa2dca84fa2e409789409d7789ca5a88104a7e3364",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/2eef8764290fb06e01db.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://join.hkust.edu.hk/fees-and-scholarships",
+      "contentType": "text/html",
+      "bytesRead": 111908,
+      "bodyMayBeTruncated": false,
+      "textLength": 15699,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://mitadmissions.org/afford/cost-aid-basics/access-affordability/",
+      "references": [
+        {
+          "task": "001-opencode",
+          "universityId": "22222222-2222-4222-8222-222222222222",
+          "university": "Massachusetts Institute of Technology",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/001-opencode.json",
+          "factIndex": 14,
+          "field": "financial_aid"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:25.097436+00:00",
+      "httpStatus": 200,
+      "title": "How much it costs | MIT Admissions MIT logo Magnifying glass icon next to a menu icon",
+      "sha256": "19c9407bf24538dc665d08dbd95a0a65187e2061a87a66b1b04db023bdff71da",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/85ac2f1717b14d391f76.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://mitadmissions.org/afford/cost-aid-basics/access-affordability/",
+      "contentType": "text/html",
+      "bytesRead": 117360,
+      "bodyMayBeTruncated": false,
+      "textLength": 4749,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://mitadmissions.org/apply/firstyear/tests-scores/",
+      "references": [
+        {
+          "task": "001-opencode",
+          "universityId": "22222222-2222-4222-8222-222222222222",
+          "university": "Massachusetts Institute of Technology",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/001-opencode.json",
+          "factIndex": 6,
+          "field": "entry_requirement"
+        },
+        {
+          "task": "001-opencode",
+          "universityId": "22222222-2222-4222-8222-222222222222",
+          "university": "Massachusetts Institute of Technology",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/001-opencode.json",
+          "factIndex": 7,
+          "field": "language_requirement"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:24.342785+00:00",
+      "httpStatus": 200,
+      "title": "Tests & scores | MIT Admissions MIT logo Magnifying glass icon next to a menu icon",
+      "sha256": "d4e99d0cf752bade0770551d9cc285bf9fabcce1584005f46e54e1585edddf61",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/600fe783c80073e0936e.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://mitadmissions.org/apply/firstyear/tests-scores/",
+      "contentType": "text/html",
+      "bytesRead": 124859,
+      "bodyMayBeTruncated": false,
+      "textLength": 8217,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://programsandcourses.anu.edu.au/program/BACCT",
+      "references": [
+        {
+          "task": "029-opencode",
+          "universityId": "14fa4c62-b910-520b-aa51-0bf334f02b1c",
+          "university": "Australian National University",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/029-opencode.json",
+          "factIndex": 6,
+          "field": "entry_requirement"
+        },
+        {
+          "task": "029-opencode",
+          "universityId": "14fa4c62-b910-520b-aa51-0bf334f02b1c",
+          "university": "Australian National University",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/029-opencode.json",
+          "factIndex": 7,
+          "field": "required_subject"
+        },
+        {
+          "task": "029-opencode",
+          "universityId": "14fa4c62-b910-520b-aa51-0bf334f02b1c",
+          "university": "Australian National University",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/029-opencode.json",
+          "factIndex": 10,
+          "field": "tuition"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:49.861654+00:00",
+      "httpStatus": 200,
+      "title": "Bachelor of Accounting - ANU",
+      "sha256": "255a9f0ccc67768d77e45cb6756a02beea214884a89c6ee0fb69949ce0e434d3",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/aae934bf8c6e70bf9e6b.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://programsandcourses.anu.edu.au/program/BACCT",
+      "contentType": "text/html",
+      "bytesRead": 84883,
+      "bodyMayBeTruncated": false,
+      "textLength": 18513,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://psl.eu/vie-de-campus/paris-est-notre-campus/financer-ses-etudes",
+      "references": [
+        {
+          "task": "034-opencode",
+          "universityId": "c5ca35b6-8983-574d-89ec-d15da6afa1fe",
+          "university": "Université Paris Sciences et Lettres",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/034-opencode.json",
+          "factIndex": 6,
+          "field": "tuition"
+        },
+        {
+          "task": "034-opencode",
+          "universityId": "c5ca35b6-8983-574d-89ec-d15da6afa1fe",
+          "university": "Université Paris Sciences et Lettres",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/034-opencode.json",
+          "factIndex": 7,
+          "field": "mandatory_fee"
+        },
+        {
+          "task": "034-opencode",
+          "universityId": "c5ca35b6-8983-574d-89ec-d15da6afa1fe",
+          "university": "Université Paris Sciences et Lettres",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/034-opencode.json",
+          "factIndex": 8,
+          "field": "living_cost"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:53.296367+00:00",
+      "httpStatus": 200,
+      "title": "Financer ses études | PSL",
+      "sha256": "56212464609655c8b43b293191edd9cee97d98bcc6779d11e4f60297ab125d03",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/0ffbb8d43a45a830b639.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://psl.eu/vie-de-campus/paris-est-notre-campus/financer-ses-etudes",
+      "contentType": "text/html",
+      "bytesRead": 171565,
+      "bodyMayBeTruncated": false,
+      "textLength": 19237,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://sfs.jhu.edu/cost-tuition/",
+      "references": [
+        {
+          "task": "020-opencode",
+          "universityId": "f5c17f3c-ac83-5193-8c71-641147ad926c",
+          "university": "Johns Hopkins University",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/020-opencode.json",
+          "factIndex": 12,
+          "field": "tuition"
+        },
+        {
+          "task": "020-opencode",
+          "universityId": "f5c17f3c-ac83-5193-8c71-641147ad926c",
+          "university": "Johns Hopkins University",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/020-opencode.json",
+          "factIndex": 13,
+          "field": "mandatory_fee"
+        },
+        {
+          "task": "020-opencode",
+          "universityId": "f5c17f3c-ac83-5193-8c71-641147ad926c",
+          "university": "Johns Hopkins University",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/020-opencode.json",
+          "factIndex": 14,
+          "field": "accommodation_cost"
+        },
+        {
+          "task": "020-opencode",
+          "universityId": "f5c17f3c-ac83-5193-8c71-641147ad926c",
+          "university": "Johns Hopkins University",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/020-opencode.json",
+          "factIndex": 15,
+          "field": "living_cost"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:40.821489+00:00",
+      "httpStatus": 200,
+      "title": "Cost and Tuition | Johns Hopkins Student Financial Support",
+      "sha256": "2c835248409a073ec5f2d08367f8996e1b6927f804cdaef700656ac8e4957c94",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/32e01093f0da290c1f55.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://sfs.jhu.edu/cost-tuition/",
+      "contentType": "text/html",
+      "bytesRead": 105548,
+      "bodyMayBeTruncated": false,
+      "textLength": 8777,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://sfs.mit.edu/undergraduate-students/the-cost-of-attendance/coa/",
+      "references": [
+        {
+          "task": "001-opencode",
+          "universityId": "22222222-2222-4222-8222-222222222222",
+          "university": "Massachusetts Institute of Technology",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/001-opencode.json",
+          "factIndex": 10,
+          "field": "tuition"
+        },
+        {
+          "task": "001-opencode",
+          "universityId": "22222222-2222-4222-8222-222222222222",
+          "university": "Massachusetts Institute of Technology",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/001-opencode.json",
+          "factIndex": 11,
+          "field": "mandatory_fee"
+        },
+        {
+          "task": "001-opencode",
+          "universityId": "22222222-2222-4222-8222-222222222222",
+          "university": "Massachusetts Institute of Technology",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/001-opencode.json",
+          "factIndex": 12,
+          "field": "accommodation_cost"
+        },
+        {
+          "task": "001-opencode",
+          "universityId": "22222222-2222-4222-8222-222222222222",
+          "university": "Massachusetts Institute of Technology",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/001-opencode.json",
+          "factIndex": 13,
+          "field": "living_cost"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:24.342916+00:00",
+      "httpStatus": 200,
+      "title": "Cost of attendance | MIT Student Financial Services",
+      "sha256": "86ffc04210ba6b4ea1cef61ea41a9b9552cdc53ce2360a910c110760d3477ee8",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/eeac5b0db65d90a18361.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://sfs.mit.edu/undergraduate-students/the-cost-of-attendance/coa/",
+      "contentType": "text/html",
+      "bytesRead": 117205,
+      "bodyMayBeTruncated": false,
+      "textLength": 6151,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://studentaccount.utoronto.ca/tuition-fees/current-fall-winter-fee-refund-schedules/",
+      "references": [
+        {
+          "task": "032-opencode",
+          "universityId": "55555555-5555-4555-8555-555555555555",
+          "university": "University of Toronto",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/032-opencode.json",
+          "factIndex": 12,
+          "field": "tuition"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:13:38.495332+00:00",
+      "httpStatus": 200,
+      "title": "Tuition Fees & Schedules - University Registrar's Office",
+      "sha256": "487239d6b867da839bc78f2579b7c89f4252985163dbbeedbc5d24233506daa1",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/286353671e02a128dbf5.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://www.registrar.utoronto.ca/fees-payments/tuition-fee-schedules/",
+      "contentType": "text/html",
+      "bytesRead": 656581,
+      "bodyMayBeTruncated": false,
+      "textLength": 54419
+    },
+    {
+      "url": "https://study.anu.edu.au/accommodation/compare-residences",
+      "references": [
+        {
+          "task": "029-opencode",
+          "universityId": "14fa4c62-b910-520b-aa51-0bf334f02b1c",
+          "university": "Australian National University",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/029-opencode.json",
+          "factIndex": 13,
+          "field": "accommodation_cost"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:52.436592+00:00",
+      "httpStatus": 200,
+      "title": "Compare Residences | The Australian National University",
+      "sha256": "0905bf8638bdc1e3992b1c70dcd7679a5fcf4e1240f5eeaa8a2d23074c8a3994",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/a7f627d80d72a591187e.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://study.anu.edu.au/accommodation/compare-residences",
+      "contentType": "text/html",
+      "bytesRead": 63867,
+      "bodyMayBeTruncated": false,
+      "textLength": 3124,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://study.anu.edu.au/apply/english-language-requirements",
+      "references": [
+        {
+          "task": "029-opencode",
+          "universityId": "14fa4c62-b910-520b-aa51-0bf334f02b1c",
+          "university": "Australian National University",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/029-opencode.json",
+          "factIndex": 8,
+          "field": "language_requirement"
+        },
+        {
+          "task": "029-opencode",
+          "universityId": "14fa4c62-b910-520b-aa51-0bf334f02b1c",
+          "university": "Australian National University",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/029-opencode.json",
+          "factIndex": 9,
+          "field": "language_exemption"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:50.155208+00:00",
+      "httpStatus": 200,
+      "title": "English language requirements | The Australian National University",
+      "sha256": "2545ffd77b5021a9e68e9a1d3714bafb924656f420067cd8111ab2cb53c2e20f",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/ae299f69c61395ca9418.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://study.anu.edu.au/apply/english-language-requirements",
+      "contentType": "text/html",
+      "bytesRead": 44874,
+      "bodyMayBeTruncated": false,
+      "textLength": 2789,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://study.ed.ac.uk/undergraduate/entry-requirements/english-language",
+      "references": [
+        {
+          "task": "035-opencode",
+          "universityId": "f2f2a71c-abeb-5dc7-b18b-aa8b00611b0a",
+          "university": "University of Edinburgh",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/035-opencode.json",
+          "factIndex": 7,
+          "field": "language_requirement"
+        },
+        {
+          "task": "035-opencode",
+          "universityId": "f2f2a71c-abeb-5dc7-b18b-aa8b00611b0a",
+          "university": "University of Edinburgh",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/035-opencode.json",
+          "factIndex": 8,
+          "field": "language_exemption"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:54.656579+00:00",
+      "httpStatus": 200,
+      "title": "English language entry requirements | Undergraduate study | The University of Edinburgh",
+      "sha256": "41f565d51a4786f55f091fcdbf7d283dd09b9670a47464bca42e36021a1d49c8",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/93f2abea7457cca3341d.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://study.ed.ac.uk/undergraduate/entry-requirements/english-language",
+      "contentType": "text/html",
+      "bytesRead": 160078,
+      "bodyMayBeTruncated": false,
+      "textLength": 18519,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://study.ed.ac.uk/undergraduate/entry-requirements/english-welsh-northern-irish-qualifications/a-levels",
+      "references": [
+        {
+          "task": "035-opencode",
+          "universityId": "f2f2a71c-abeb-5dc7-b18b-aa8b00611b0a",
+          "university": "University of Edinburgh",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/035-opencode.json",
+          "factIndex": 5,
+          "field": "entry_requirement"
+        },
+        {
+          "task": "035-opencode",
+          "universityId": "f2f2a71c-abeb-5dc7-b18b-aa8b00611b0a",
+          "university": "University of Edinburgh",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/035-opencode.json",
+          "factIndex": 6,
+          "field": "required_subject"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:54.600738+00:00",
+      "httpStatus": 200,
+      "title": "A levels | Undergraduate study | The University of Edinburgh",
+      "sha256": "8bd98292d3374d69be785b1c4761fb8ec04263dbf4d81481c240777be2e44d7c",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/27b572ee499e44d5657f.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://study.ed.ac.uk/undergraduate/entry-requirements/english-welsh-northern-irish-qualifications/a-levels",
+      "contentType": "text/html",
+      "bytesRead": 138204,
+      "bodyMayBeTruncated": false,
+      "textLength": 13396,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://study.ed.ac.uk/undergraduate/fees-funding/fees-costs/england-wales-northern-ireland-republic-ireland",
+      "references": [
+        {
+          "task": "035-opencode",
+          "universityId": "f2f2a71c-abeb-5dc7-b18b-aa8b00611b0a",
+          "university": "University of Edinburgh",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/035-opencode.json",
+          "factIndex": 9,
+          "field": "tuition"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:55.034932+00:00",
+      "httpStatus": 200,
+      "title": "England, Wales, Northern Ireland and Republic of Ireland tuition fees and costs | Undergraduate study | The University of Edinburgh",
+      "sha256": "207597e20f21414f646c7932b9b7a89c5a930fabf11b8f188306b303fca123cd",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/b8e4af530e4d0592b556.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://study.ed.ac.uk/undergraduate/fees-funding/fees-costs/england-wales-northern-ireland-republic-ireland",
+      "contentType": "text/html",
+      "bytesRead": 134553,
+      "bodyMayBeTruncated": false,
+      "textLength": 11339,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://study.ed.ac.uk/undergraduate/fees-funding/fees-costs/international-eu-eea",
+      "references": [
+        {
+          "task": "035-opencode",
+          "universityId": "f2f2a71c-abeb-5dc7-b18b-aa8b00611b0a",
+          "university": "University of Edinburgh",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/035-opencode.json",
+          "factIndex": 11,
+          "field": "tuition"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:55.507486+00:00",
+      "httpStatus": 200,
+      "title": "International and EU/EEA tuition fees and other costs | Undergraduate study | The University of Edinburgh",
+      "sha256": "466c16048da0e0baf6cdcc83bd5bd93c172600f0477213e15908a59a3c6fe952",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/1f2d0163709cd28a89b9.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://study.ed.ac.uk/undergraduate/fees-funding/fees-costs/international-eu-eea",
+      "contentType": "text/html",
+      "bytesRead": 131884,
+      "bodyMayBeTruncated": false,
+      "textLength": 10138,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://study.ed.ac.uk/undergraduate/fees-funding/fees-costs/scotland",
+      "references": [
+        {
+          "task": "035-opencode",
+          "universityId": "f2f2a71c-abeb-5dc7-b18b-aa8b00611b0a",
+          "university": "University of Edinburgh",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/035-opencode.json",
+          "factIndex": 10,
+          "field": "tuition"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:55.050018+00:00",
+      "httpStatus": 200,
+      "title": "Scotland tuition fees and other costs | Undergraduate study | The University of Edinburgh",
+      "sha256": "9983d64752d8ef60f28e1a3c90949f25da15d8e6174d4e2a7dbc608a0b357213",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/63fd9954333c4413e582.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://study.ed.ac.uk/undergraduate/fees-funding/fees-costs/scotland",
+      "contentType": "text/html",
+      "bytesRead": 131493,
+      "bodyMayBeTruncated": false,
+      "textLength": 10173,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://study.ed.ac.uk/undergraduate/fees-funding/living-costs",
+      "references": [
+        {
+          "task": "035-opencode",
+          "universityId": "f2f2a71c-abeb-5dc7-b18b-aa8b00611b0a",
+          "university": "University of Edinburgh",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/035-opencode.json",
+          "factIndex": 12,
+          "field": "living_cost"
+        },
+        {
+          "task": "035-opencode",
+          "universityId": "f2f2a71c-abeb-5dc7-b18b-aa8b00611b0a",
+          "university": "University of Edinburgh",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/035-opencode.json",
+          "factIndex": 13,
+          "field": "accommodation_cost"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:55.571296+00:00",
+      "httpStatus": 200,
+      "title": "Living costs for undergraduate study | Undergraduate study | The University of Edinburgh",
+      "sha256": "e88ae548df79c8aa1549058a14836b4fab66bada1b764f9be1da91ae84889aaf",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/b27f9adc562e175d3041.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://study.ed.ac.uk/undergraduate/fees-funding/living-costs",
+      "contentType": "text/html",
+      "bytesRead": 162053,
+      "bodyMayBeTruncated": false,
+      "textLength": 18602,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://study.uq.edu.au/admissions/undergraduate/review-fees-and-financial-support",
+      "references": [
+        {
+          "task": "041-opencode",
+          "universityId": "c0386da4-95a0-567a-8f70-81b33c5c7f06",
+          "university": "University of Queensland",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/041-opencode.json",
+          "factIndex": 12,
+          "field": "mandatory_fee"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:59.630269+00:00",
+      "httpStatus": 200,
+      "title": "Review fees and financial support - Study - The University of Queensland",
+      "sha256": "d8f10674c9706dbdb6f801b7fea1e3449dc565cbe47b05cc98e24b1ef028ab89",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/21ef4b538226bca1cba4.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://study.uq.edu.au/admissions/undergraduate/review-fees-and-financial-support",
+      "contentType": "text/html",
+      "bytesRead": 142438,
+      "bodyMayBeTruncated": false,
+      "textLength": 16549,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://study.uq.edu.au/study-options/programs/bachelor-arts-2000",
+      "references": [
+        {
+          "task": "041-opencode",
+          "universityId": "c0386da4-95a0-567a-8f70-81b33c5c7f06",
+          "university": "University of Queensland",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/041-opencode.json",
+          "factIndex": 2,
+          "field": "entry_requirement"
+        },
+        {
+          "task": "041-opencode",
+          "universityId": "c0386da4-95a0-567a-8f70-81b33c5c7f06",
+          "university": "University of Queensland",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/041-opencode.json",
+          "factIndex": 3,
+          "field": "required_subject"
+        },
+        {
+          "task": "041-opencode",
+          "universityId": "c0386da4-95a0-567a-8f70-81b33c5c7f06",
+          "university": "University of Queensland",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/041-opencode.json",
+          "factIndex": 4,
+          "field": "language_requirement"
+        },
+        {
+          "task": "041-opencode",
+          "universityId": "c0386da4-95a0-567a-8f70-81b33c5c7f06",
+          "university": "University of Queensland",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/041-opencode.json",
+          "factIndex": 10,
+          "field": "tuition"
+        },
+        {
+          "task": "041-opencode",
+          "universityId": "c0386da4-95a0-567a-8f70-81b33c5c7f06",
+          "university": "University of Queensland",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/041-opencode.json",
+          "factIndex": 11,
+          "field": "tuition"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:59.576964+00:00",
+      "httpStatus": 200,
+      "title": "Bachelor of Arts - Study - The University of Queensland",
+      "sha256": "8e273dd9890c4e3e6b856d5f9f7abc58cb5f4bedea1b9d1acc00db62b636e8db",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/02aceebb0def345da9f4.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://study.uq.edu.au/study-options/programs/bachelor-arts-2000",
+      "contentType": "text/html",
+      "bytesRead": 372520,
+      "bodyMayBeTruncated": false,
+      "textLength": 90174,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://study.uq.edu.au/university-life/living-in-queensland/cost-living",
+      "references": [
+        {
+          "task": "041-opencode",
+          "universityId": "c0386da4-95a0-567a-8f70-81b33c5c7f06",
+          "university": "University of Queensland",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/041-opencode.json",
+          "factIndex": 13,
+          "field": "living_cost"
+        },
+        {
+          "task": "041-opencode",
+          "universityId": "c0386da4-95a0-567a-8f70-81b33c5c7f06",
+          "university": "University of Queensland",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/041-opencode.json",
+          "factIndex": 14,
+          "field": "accommodation_cost"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:12:00.037302+00:00",
+      "httpStatus": 200,
+      "title": "Cost of living as a student in Brisbane",
+      "sha256": "6491225c5f60f4a9a8461e9b0fd8f860979e22259ccf54f4f3e2239e68e172a1",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/23bf9d08fa33a323f70a.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://study.uq.edu.au/university-life/living-in-queensland/cost-living",
+      "contentType": "text/html",
+      "bytesRead": 131824,
+      "bodyMayBeTruncated": false,
+      "textLength": 15154,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://www.admissions.caltech.edu/afford",
+      "references": [
+        {
+          "task": "007-opencode",
+          "universityId": "99fbcf31-606d-5dac-880e-83ca25acd942",
+          "university": "California Institute of Technology",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/007-opencode.json",
+          "factIndex": 14,
+          "field": "financial_aid"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:30.536243+00:00",
+      "httpStatus": 200,
+      "title": "Afford - Undergraduate Admissions",
+      "sha256": "d8f21f2f25ca910e3210782b80600aa14ed7a4a58cb4ee26aef19768776f9340",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/cfd4cdd43047b490d798.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://www.admissions.caltech.edu/afford",
+      "contentType": "text/html",
+      "bytesRead": 252389,
+      "bodyMayBeTruncated": false,
+      "textLength": 9729,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://www.admissions.caltech.edu/apply/first-year-applicants/academic-requirements-for-first-year-applicants",
+      "references": [
+        {
+          "task": "007-opencode",
+          "universityId": "99fbcf31-606d-5dac-880e-83ca25acd942",
+          "university": "California Institute of Technology",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/007-opencode.json",
+          "factIndex": 7,
+          "field": "required_subject"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:29.641060+00:00",
+      "httpStatus": 200,
+      "title": "Academic Requirements for First-Year Applicants - Undergraduate Admissions",
+      "sha256": "4fbf457a471266a5328d84affc5517f306662cd80aca035f325557ff3b676138",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/40aeee3aa53a7032c256.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://www.admissions.caltech.edu/apply/first-year-applicants/academic-requirements-for-first-year-applicants",
+      "contentType": "text/html",
+      "bytesRead": 256244,
+      "bodyMayBeTruncated": false,
+      "textLength": 13460,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://www.admissions.caltech.edu/apply/first-year-applicants/application-requirements",
+      "references": [
+        {
+          "task": "007-opencode",
+          "universityId": "99fbcf31-606d-5dac-880e-83ca25acd942",
+          "university": "California Institute of Technology",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/007-opencode.json",
+          "factIndex": 6,
+          "field": "entry_requirement"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:29.336903+00:00",
+      "httpStatus": 200,
+      "title": "First-Year Application Requirements - Undergraduate Admissions",
+      "sha256": "014f4d188da0531c5b7b160b0f60ff0220e4512967d9e155b6538f2c0906aca3",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/794418f39a4a051fecff.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://www.admissions.caltech.edu/apply/first-year-applicants/application-requirements",
+      "contentType": "text/html",
+      "bytesRead": 242943,
+      "bodyMayBeTruncated": false,
+      "textLength": 10224,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://www.admissions.caltech.edu/apply/first-year-applicants/international-applicants",
+      "references": [
+        {
+          "task": "007-opencode",
+          "universityId": "99fbcf31-606d-5dac-880e-83ca25acd942",
+          "university": "California Institute of Technology",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/007-opencode.json",
+          "factIndex": 8,
+          "field": "language_requirement"
+        },
+        {
+          "task": "007-opencode",
+          "universityId": "99fbcf31-606d-5dac-880e-83ca25acd942",
+          "university": "California Institute of Technology",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/007-opencode.json",
+          "factIndex": 9,
+          "field": "language_exemption"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:30.303460+00:00",
+      "httpStatus": 200,
+      "title": "International Applicants - Undergraduate Admissions",
+      "sha256": "1377c9fa9b0283887be0f31deda45ffdeec3c2fef242c63040a8db84bbe75ac4",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/25cc6fb3c6e60c732387.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://www.admissions.caltech.edu/apply/first-year-applicants/international-applicants",
+      "contentType": "text/html",
+      "bytesRead": 269783,
+      "bodyMayBeTruncated": false,
+      "textLength": 16487,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://www.anu.edu.au/students/program-administration/fees-payments/estimated-cost-of-living-in-canberra",
+      "references": [
+        {
+          "task": "029-opencode",
+          "universityId": "14fa4c62-b910-520b-aa51-0bf334f02b1c",
+          "university": "Australian National University",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/029-opencode.json",
+          "factIndex": 12,
+          "field": "living_cost"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:51.095622+00:00",
+      "httpStatus": 200,
+      "title": "Estimated Cost of Living in Canberra | Australian National University",
+      "sha256": "f8c728880451a82554ced9b6e2aff846bb567e3a1817430c7faceaef8a773743",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/a40b324186609ed7a255.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://www.anu.edu.au/students/program-administration/fees-payments/estimated-cost-of-living-in-canberra",
+      "contentType": "text/html",
+      "bytesRead": 41213,
+      "bodyMayBeTruncated": false,
+      "textLength": 5652,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://www.anu.edu.au/students/program-administration/fees-payments/services-amenities-fee",
+      "references": [
+        {
+          "task": "029-opencode",
+          "universityId": "14fa4c62-b910-520b-aa51-0bf334f02b1c",
+          "university": "Australian National University",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/029-opencode.json",
+          "factIndex": 11,
+          "field": "mandatory_fee"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:50.677176+00:00",
+      "httpStatus": 200,
+      "title": "Services & amenities fee | Australian National University",
+      "sha256": "98da2a2f589196898cdc313b15008fd4d906b73772e5bfb6ff1c5c80a4c162cd",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/03e2fab757faf3ff72d2.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://www.anu.edu.au/students/program-administration/fees-payments/services-amenities-fee",
+      "contentType": "text/html",
+      "bytesRead": 57646,
+      "bodyMayBeTruncated": false,
+      "textLength": 16518,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://www.cs.ox.ac.uk/admissions/undergraduate/how_to_apply/home.html",
+      "references": [
+        {
+          "task": "004-opencode",
+          "universityId": "33333333-3333-4333-8333-333333333333",
+          "university": "University of Oxford",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/004-opencode.json",
+          "factIndex": 10,
+          "field": "entry_requirement"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:35.666260+00:00",
+      "httpStatus": 200,
+      "title": "Department of Computer Science, University of Oxford",
+      "sha256": "56e830c56bb866d5379421d01997ee9f57c59b9906de188c525ed356743f7c35",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/cbc84fccbec4d759dc64.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://www.cs.ox.ac.uk/admissions/undergraduate/how_to_apply/home.html",
+      "contentType": "text/html",
+      "bytesRead": 39977,
+      "bodyMayBeTruncated": false,
+      "textLength": 6062,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://www.cs.ox.ac.uk/pmp/study/apply.html",
+      "references": [
+        {
+          "task": "004-opencode",
+          "universityId": "33333333-3333-4333-8333-333333333333",
+          "university": "University of Oxford",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/004-opencode.json",
+          "factIndex": 9,
+          "field": "entry_requirement"
+        },
+        {
+          "task": "004-opencode",
+          "universityId": "33333333-3333-4333-8333-333333333333",
+          "university": "University of Oxford",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/004-opencode.json",
+          "factIndex": 11,
+          "field": "language_requirement"
+        },
+        {
+          "task": "004-opencode",
+          "universityId": "33333333-3333-4333-8333-333333333333",
+          "university": "University of Oxford",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/004-opencode.json",
+          "factIndex": 13,
+          "field": "mandatory_fee"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:35.088686+00:00",
+      "httpStatus": 200,
+      "title": "Software Engineering at Oxford | Applications for Postgraduate Study",
+      "sha256": "60abfb46467dfb280f4b5f16e8d93bbbe52caa13411d7af620c36a8db143d530",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/2c3a170093a7c1415c3f.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://www.cs.ox.ac.uk/professionalprogramme/study/apply.html",
+      "contentType": "text/html",
+      "bytesRead": 23699,
+      "bodyMayBeTruncated": false,
+      "textLength": 5867,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://www.cs.ox.ac.uk/pmp/study/fees.html",
+      "references": [
+        {
+          "task": "004-opencode",
+          "universityId": "33333333-3333-4333-8333-333333333333",
+          "university": "University of Oxford",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/004-opencode.json",
+          "factIndex": 12,
+          "field": "tuition"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:35.703365+00:00",
+      "httpStatus": 200,
+      "title": "Software Engineering at Oxford | Fees",
+      "sha256": "bf2a76b74c5f8aea1f0a9c10af3e3feca3257fb252e16037bae86f4fbde9b17a",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/93934b81b99eb4a33288.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://www.cs.ox.ac.uk/professionalprogramme/study/fees.html",
+      "contentType": "text/html",
+      "bytesRead": 17610,
+      "bodyMayBeTruncated": false,
+      "textLength": 1410,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://www.epfl.ch/education/admission/admission-2/bachelor-admission-criteria-and-application/",
+      "references": [
+        {
+          "task": "022-opencode",
+          "universityId": "819bd7c2-cc38-5dc4-854d-2d59a8a9f4e5",
+          "university": "EPFL - EPF Lausanne",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/022-opencode.json",
+          "factIndex": 2,
+          "field": "entry_requirement"
+        },
+        {
+          "task": "022-opencode",
+          "universityId": "819bd7c2-cc38-5dc4-854d-2d59a8a9f4e5",
+          "university": "EPFL - EPF Lausanne",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/022-opencode.json",
+          "factIndex": 3,
+          "field": "required_subject"
+        },
+        {
+          "task": "022-opencode",
+          "universityId": "819bd7c2-cc38-5dc4-854d-2d59a8a9f4e5",
+          "university": "EPFL - EPF Lausanne",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/022-opencode.json",
+          "factIndex": 4,
+          "field": "language_requirement"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:39.536348+00:00",
+      "httpStatus": 200,
+      "title": "Bachelor/CMS admission criteria & application ‒ Admission ‐ EPFL",
+      "sha256": "44d900e1d9fe809bdbef72908135fec4c2865477b77a1c678840da3b8a05042b",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/b102f6b9837bd6d44c92.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://www.epfl.ch/education/admission/admission-2/bachelor-admission-criteria-and-application/",
+      "contentType": "text/html",
+      "bytesRead": 93518,
+      "bodyMayBeTruncated": false,
+      "textLength": 23389,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://www.epfl.ch/education/admission/admission-2/master-admission-criteria-application/",
+      "references": [
+        {
+          "task": "022-opencode",
+          "universityId": "819bd7c2-cc38-5dc4-854d-2d59a8a9f4e5",
+          "university": "EPFL - EPF Lausanne",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/022-opencode.json",
+          "factIndex": 8,
+          "field": "entry_requirement"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:39.560309+00:00",
+      "httpStatus": 200,
+      "title": "Master admission criteria & application ‒ Admission ‐ EPFL",
+      "sha256": "121300d23f8b9a414b6e96edc73ac6a2e3e8f09baf224da9cf430f9398a05e96",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/b82df02a9a75746a4b8a.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://www.epfl.ch/education/admission/admission-2/master-admission-criteria-application/",
+      "contentType": "text/html",
+      "bytesRead": 74290,
+      "bodyMayBeTruncated": false,
+      "textLength": 9957,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://www.epfl.ch/education/studies/en/rules-and-procedures/tuition-fee/",
+      "references": [
+        {
+          "task": "022-opencode",
+          "universityId": "819bd7c2-cc38-5dc4-854d-2d59a8a9f4e5",
+          "university": "EPFL - EPF Lausanne",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/022-opencode.json",
+          "factIndex": 10,
+          "field": "tuition"
+        },
+        {
+          "task": "022-opencode",
+          "universityId": "819bd7c2-cc38-5dc4-854d-2d59a8a9f4e5",
+          "university": "EPFL - EPF Lausanne",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/022-opencode.json",
+          "factIndex": 11,
+          "field": "mandatory_fee"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:39.708004+00:00",
+      "httpStatus": 200,
+      "title": "Tuition fee and other fees ‒ Study management ‐ EPFL",
+      "sha256": "76c58894b943ebf1bb0231a770109a1a3cc78f470c7feb5bae8dc88b7c90ebf1",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/a8b1c71674f8cc6b6927.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://www.epfl.ch/education/studies/en/rules-and-procedures/study-taxes/tuition-fee-other-fees/",
+      "contentType": "text/html",
+      "bytesRead": 74287,
+      "bodyMayBeTruncated": false,
+      "textLength": 8043,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://www.finaid.caltech.edu/costs",
+      "references": [
+        {
+          "task": "007-opencode",
+          "universityId": "99fbcf31-606d-5dac-880e-83ca25acd942",
+          "university": "California Institute of Technology",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/007-opencode.json",
+          "factIndex": 10,
+          "field": "tuition"
+        },
+        {
+          "task": "007-opencode",
+          "universityId": "99fbcf31-606d-5dac-880e-83ca25acd942",
+          "university": "California Institute of Technology",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/007-opencode.json",
+          "factIndex": 11,
+          "field": "mandatory_fee"
+        },
+        {
+          "task": "007-opencode",
+          "universityId": "99fbcf31-606d-5dac-880e-83ca25acd942",
+          "university": "California Institute of Technology",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/007-opencode.json",
+          "factIndex": 12,
+          "field": "accommodation_cost"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:30.336980+00:00",
+      "httpStatus": 200,
+      "title": "Costs - Financial Aid",
+      "sha256": "2a4de8da07f0ad3a3d3e447c07ba0ec515f84994896870a406991796877f250a",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/1318d1e0127151e47902.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://www.finaid.caltech.edu/costs",
+      "contentType": "text/html",
+      "bytesRead": 181609,
+      "bodyMayBeTruncated": false,
+      "textLength": 5534,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://www.gs.cuhk.edu.hk/admissions/requirements",
+      "references": [
+        {
+          "task": "018-opencode",
+          "universityId": "7deae08f-080e-56cd-8aa8-ca05c941f0cc",
+          "university": "The Chinese University of Hong Kong",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/018-opencode.json",
+          "factIndex": 6,
+          "field": "entry_requirement"
+        },
+        {
+          "task": "018-opencode",
+          "universityId": "7deae08f-080e-56cd-8aa8-ca05c941f0cc",
+          "university": "The Chinese University of Hong Kong",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/018-opencode.json",
+          "factIndex": 7,
+          "field": "language_requirement"
+        },
+        {
+          "task": "018-opencode",
+          "universityId": "7deae08f-080e-56cd-8aa8-ca05c941f0cc",
+          "university": "The Chinese University of Hong Kong",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/018-opencode.json",
+          "factIndex": 8,
+          "field": "language_exemption"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:35.710276+00:00",
+      "httpStatus": 200,
+      "title": "Requirements | CUHK Graduate School",
+      "sha256": "1f5013354479ed6ec31e70108e06d60880c5527a246e4a89bc78fb197652c56f",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/724906cc8d4f570655fe.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://www.gs.cuhk.edu.hk/admissions/requirements",
+      "contentType": "text/html",
+      "bytesRead": 83520,
+      "bodyMayBeTruncated": false,
+      "textLength": 12990,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://www.gs.cuhk.edu.hk/admissions/scholarships-fees/fees",
+      "references": [
+        {
+          "task": "018-opencode",
+          "universityId": "7deae08f-080e-56cd-8aa8-ca05c941f0cc",
+          "university": "The Chinese University of Hong Kong",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/018-opencode.json",
+          "factIndex": 11,
+          "field": "tuition"
+        },
+        {
+          "task": "018-opencode",
+          "universityId": "7deae08f-080e-56cd-8aa8-ca05c941f0cc",
+          "university": "The Chinese University of Hong Kong",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/018-opencode.json",
+          "factIndex": 12,
+          "field": "mandatory_fee"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:35.833498+00:00",
+      "httpStatus": 200,
+      "title": "Fees | CUHK Graduate School",
+      "sha256": "4a218ae2cb2816dd87e2fc732f42711854532e56d0336113bfba8c4b9d06d9b6",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/6eb4a6345d37e724f31f.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://www.gs.cuhk.edu.hk/admissions/scholarships-fees/fees",
+      "contentType": "text/html",
+      "bytesRead": 74480,
+      "bodyMayBeTruncated": false,
+      "textLength": 8510,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://www.hku.hk/en/admission-aid/tuition-fee-scholarships",
+      "references": [
+        {
+          "task": "011-opencode",
+          "universityId": "b37d730b-421c-5ed6-a807-3d66e7ca21f7",
+          "university": "The University of Hong Kong",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/011-opencode.json",
+          "factIndex": 7,
+          "field": "tuition"
+        },
+        {
+          "task": "011-opencode",
+          "universityId": "b37d730b-421c-5ed6-a807-3d66e7ca21f7",
+          "university": "The University of Hong Kong",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/011-opencode.json",
+          "factIndex": 8,
+          "field": "tuition"
+        },
+        {
+          "task": "011-opencode",
+          "universityId": "b37d730b-421c-5ed6-a807-3d66e7ca21f7",
+          "university": "The University of Hong Kong",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/011-opencode.json",
+          "factIndex": 9,
+          "field": "tuition"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:31.274572+00:00",
+      "httpStatus": 200,
+      "title": "Tuition Fee & Scholarships | The University of Hong Kong (HKU)",
+      "sha256": "ef375bcba2f6a0afff401d82edc1c20b2c7a1aa0034f1bd7b48f5d710cc5ca0b",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/209e6df5b94d5d8bf1f9.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://www.hku.hk/en/admission-aid/tuition-fee-scholarships",
+      "contentType": "text/html",
+      "bytesRead": 114093,
+      "bodyMayBeTruncated": false,
+      "textLength": 5552,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://www.kcl.ac.uk/study/student-experience/living-expenses",
+      "references": [
+        {
+          "task": "037-opencode",
+          "universityId": "01649f44-22e4-5b85-adaa-81f3538aa083",
+          "university": "King's College London, University of London",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/037-opencode.json",
+          "factIndex": 9,
+          "field": "living_cost"
+        },
+        {
+          "task": "037-opencode",
+          "universityId": "01649f44-22e4-5b85-adaa-81f3538aa083",
+          "university": "King's College London, University of London",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/037-opencode.json",
+          "factIndex": 10,
+          "field": "accommodation_cost"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:57.347957+00:00",
+      "httpStatus": 200,
+      "title": "Living expenses | King's College London",
+      "sha256": "9463093eadcbcc3e1ff5571958aa886089aeb177fd2786a3b12b5a915438521c",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/ca1d3681f38c81843b40.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://www.kcl.ac.uk/study/student-experience/living-expenses",
+      "contentType": "text/html",
+      "bytesRead": 707727,
+      "bodyMayBeTruncated": false,
+      "textLength": 14761,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://www.kcl.ac.uk/study/undergraduate/courses/law-llb",
+      "references": [
+        {
+          "task": "037-opencode",
+          "universityId": "01649f44-22e4-5b85-adaa-81f3538aa083",
+          "university": "King's College London, University of London",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/037-opencode.json",
+          "factIndex": 2,
+          "field": "entry_requirement"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:56.525040+00:00",
+      "httpStatus": 200,
+      "title": "Law LLB | King's College London",
+      "sha256": "78567cecb5e4873093be4d7d86c305753ecad1e0e1fdd5cfc0aa41fa9b2f9a2c",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/6386b482565b494b16a7.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://www.kcl.ac.uk/study/undergraduate/courses/law-llb",
+      "contentType": "text/html",
+      "bytesRead": 452987,
+      "bodyMayBeTruncated": false,
+      "textLength": 11434,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://www.kcl.ac.uk/study/undergraduate/fees-and-funding/tuition-fees",
+      "references": [
+        {
+          "task": "037-opencode",
+          "universityId": "01649f44-22e4-5b85-adaa-81f3538aa083",
+          "university": "King's College London, University of London",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/037-opencode.json",
+          "factIndex": 8,
+          "field": "tuition"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:57.347725+00:00",
+      "httpStatus": 200,
+      "title": "Undergraduate tuition fees | King's College London",
+      "sha256": "ab0541a3f10e89e4082d2146c91b1d30048bb90ca5d188cf3a27201d64f15596",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/af8894b31a240dc95ecb.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://www.kcl.ac.uk/study/undergraduate/fees-and-funding/tuition-fees",
+      "contentType": "text/html",
+      "bytesRead": 628232,
+      "bodyMayBeTruncated": false,
+      "textLength": 11171,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://www.kcl.ac.uk/study/undergraduate/how-to-apply/english-language-requirements",
+      "references": [
+        {
+          "task": "037-opencode",
+          "universityId": "01649f44-22e4-5b85-adaa-81f3538aa083",
+          "university": "King's College London, University of London",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/037-opencode.json",
+          "factIndex": 6,
+          "field": "language_requirement"
+        },
+        {
+          "task": "037-opencode",
+          "universityId": "01649f44-22e4-5b85-adaa-81f3538aa083",
+          "university": "King's College London, University of London",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/037-opencode.json",
+          "factIndex": 7,
+          "field": "language_exemption"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:57.266064+00:00",
+      "httpStatus": 200,
+      "title": "Undergraduate English language entry requirements | King's College London",
+      "sha256": "cf63ed4413d03fabe6dee1236b59529a09ac535f2c0ec9dc16b3bbcba8e5a9c0",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/a2db613356d53f7de19b.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://www.kcl.ac.uk/study/undergraduate/how-to-apply/english-language-requirements",
+      "contentType": "text/html",
+      "bytesRead": 629864,
+      "bodyMayBeTruncated": false,
+      "textLength": 50644,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://www.manchester.ac.uk/study/accommodation/",
+      "references": [
+        {
+          "task": "040-opencode",
+          "universityId": "6e2ae583-50c4-53d5-a0ed-d11422c64773",
+          "university": "University of Manchester",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/040-opencode.json",
+          "factIndex": 10,
+          "field": "accommodation_cost"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:59.487130+00:00",
+      "httpStatus": 200,
+      "title": "Accommodation at The University of Manchester",
+      "sha256": "73702114b5d4a83114691cbe2f7107879f8167566b9a3ad7399773ab0ecab982",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/178fdb5d7612c5f52ebe.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://www.manchester.ac.uk/study/accommodation/",
+      "contentType": "text/html",
+      "bytesRead": 65001,
+      "bodyMayBeTruncated": false,
+      "textLength": 5756,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://www.manchester.ac.uk/study/international/admissions/",
+      "references": [
+        {
+          "task": "040-opencode",
+          "universityId": "6e2ae583-50c4-53d5-a0ed-d11422c64773",
+          "university": "University of Manchester",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/040-opencode.json",
+          "factIndex": 5,
+          "field": "entry_requirement"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:58.218467+00:00",
+      "httpStatus": 200,
+      "title": "International student admissions at The University of Manchester",
+      "sha256": "cd38007779b8f2d43b01d81565f2ac7b9d41b543e371ebea27caf6ad85a794a6",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/0cbc762362225f88bd2a.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://www.manchester.ac.uk/study/international/admissions/",
+      "contentType": "text/html",
+      "bytesRead": 58838,
+      "bodyMayBeTruncated": false,
+      "textLength": 4884,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://www.manchester.ac.uk/study/international/admissions/language-requirements/",
+      "references": [
+        {
+          "task": "040-opencode",
+          "universityId": "6e2ae583-50c4-53d5-a0ed-d11422c64773",
+          "university": "University of Manchester",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/040-opencode.json",
+          "factIndex": 6,
+          "field": "language_requirement"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:58.946936+00:00",
+      "httpStatus": 200,
+      "title": "English language requirements | International | The University of Manchester",
+      "sha256": "9d3d76dd2ba596770d4305a7754196f11ad07542b8b285c07c66f2ddb521d92d",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/a05a59f534e1988a2ae6.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://www.manchester.ac.uk/study/international/admissions/language-requirements/",
+      "contentType": "text/html",
+      "bytesRead": 76014,
+      "bodyMayBeTruncated": false,
+      "textLength": 13435,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://www.manchester.ac.uk/study/international/finance-and-scholarships/fees/",
+      "references": [
+        {
+          "task": "040-opencode",
+          "universityId": "6e2ae583-50c4-53d5-a0ed-d11422c64773",
+          "university": "University of Manchester",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/040-opencode.json",
+          "factIndex": 8,
+          "field": "tuition"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:59.223461+00:00",
+      "httpStatus": 200,
+      "title": "Fees for international students for The University of Manchester",
+      "sha256": "44052c40e85e36888efb1ab1fea68cf1366c726e7038fc4e92261486b5339d82",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/a059a5f4ef627c40d970.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://www.manchester.ac.uk/study/international/finance-and-scholarships/fees/",
+      "contentType": "text/html",
+      "bytesRead": 60123,
+      "bodyMayBeTruncated": false,
+      "textLength": 5086,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://www.manchester.ac.uk/study/undergraduate/fees-and-funding/cost-of-living/",
+      "references": [
+        {
+          "task": "040-opencode",
+          "universityId": "6e2ae583-50c4-53d5-a0ed-d11422c64773",
+          "university": "University of Manchester",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/040-opencode.json",
+          "factIndex": 9,
+          "field": "living_cost"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:59.307926+00:00",
+      "httpStatus": 200,
+      "title": "Cost of living | Undergraduate study at The University of Manchester",
+      "sha256": "ab9a02ff482a4b91107e883832649f1449650f9661aac9b2de7afa27031c2680",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/6f532e68d76568a651df.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://www.manchester.ac.uk/study/undergraduate/fees-and-funding/cost-of-living/",
+      "contentType": "text/html",
+      "bytesRead": 69743,
+      "bodyMayBeTruncated": false,
+      "textLength": 8271,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://www.manchester.ac.uk/study/undergraduate/fees-and-funding/uk-student-finance/",
+      "references": [
+        {
+          "task": "040-opencode",
+          "universityId": "6e2ae583-50c4-53d5-a0ed-d11422c64773",
+          "university": "University of Manchester",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/040-opencode.json",
+          "factIndex": 7,
+          "field": "tuition"
+        },
+        {
+          "task": "040-opencode",
+          "universityId": "6e2ae583-50c4-53d5-a0ed-d11422c64773",
+          "university": "University of Manchester",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/040-opencode.json",
+          "factIndex": 12,
+          "field": "financial_aid"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:58.979645+00:00",
+      "httpStatus": 200,
+      "title": "UK student finance | Undergraduate study at The University of Manchester",
+      "sha256": "cc3c8f97fc3a0ec9916b7b11a05c8a4d15cf0db079a9962a91ae25bc788cb9a7",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/144c2f76a6c597036438.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://www.manchester.ac.uk/study/undergraduate/fees-and-funding/uk-student-finance/",
+      "contentType": "text/html",
+      "bytesRead": 76235,
+      "bodyMayBeTruncated": false,
+      "textLength": 8802,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://www.mcgill.ca/student-accounts/tuition-charges/fallwinter-term-tuition-and-fees/undergraduate-fees",
+      "references": [
+        {
+          "task": "030-opencode",
+          "universityId": "b48ecdd6-9331-5ee8-a4ad-7f5b046d5356",
+          "university": "McGill University",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/030-opencode.json",
+          "factIndex": 8,
+          "field": "tuition"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:48.991782+00:00",
+      "httpStatus": 200,
+      "title": "| Student Accounts - McGill University",
+      "sha256": "960556b344dbab33adb5d40350f3e53fb9b6f8635648d3c260d2b87e49af2227",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/fb87923e1d600fc4a8a0.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://www.mcgill.ca/student-accounts/tuition-charges/fallwinter-term-tuition-and-fees/undergraduate-fees",
+      "contentType": "text/html",
+      "bytesRead": 45753,
+      "bodyMayBeTruncated": false,
+      "textLength": 3094,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://www.mcgill.ca/undergraduate-admissions/apply",
+      "references": [
+        {
+          "task": "030-opencode",
+          "universityId": "b48ecdd6-9331-5ee8-a4ad-7f5b046d5356",
+          "university": "McGill University",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/030-opencode.json",
+          "factIndex": 9,
+          "field": "mandatory_fee"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:49.591341+00:00",
+      "httpStatus": 200,
+      "title": "Apply | Undergraduate Admissions - McGill University",
+      "sha256": "a905ab6426592f8a49998f501ad7f1531d9e86344af99c52b4aa5765fd3c6221",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/534fd3432eeacc6bc09c.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://www.mcgill.ca/undergraduate-admissions/apply",
+      "contentType": "text/html",
+      "bytesRead": 55310,
+      "bodyMayBeTruncated": false,
+      "textLength": 4404,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://www.mcgill.ca/undergraduate-admissions/apply/english-proficiency",
+      "references": [
+        {
+          "task": "030-opencode",
+          "universityId": "b48ecdd6-9331-5ee8-a4ad-7f5b046d5356",
+          "university": "McGill University",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/030-opencode.json",
+          "factIndex": 6,
+          "field": "language_requirement"
+        },
+        {
+          "task": "030-opencode",
+          "universityId": "b48ecdd6-9331-5ee8-a4ad-7f5b046d5356",
+          "university": "McGill University",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/030-opencode.json",
+          "factIndex": 7,
+          "field": "language_exemption"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:48.979277+00:00",
+      "httpStatus": 200,
+      "title": "English language proficiency | Undergraduate Admissions - McGill University",
+      "sha256": "387ccd683052c74f5623a7455a0b9cfd2d0092f0e790dded7f52f8d9c5087da8",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/5bb455bedc25accf3f2e.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://www.mcgill.ca/undergraduate-admissions/apply/english-proficiency",
+      "contentType": "text/html",
+      "bytesRead": 58530,
+      "bodyMayBeTruncated": false,
+      "textLength": 7842,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://www.mcgill.ca/undergraduate-admissions/apply/requirements",
+      "references": [
+        {
+          "task": "030-opencode",
+          "universityId": "b48ecdd6-9331-5ee8-a4ad-7f5b046d5356",
+          "university": "McGill University",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/030-opencode.json",
+          "factIndex": 5,
+          "field": "entry_requirement"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:48.428358+00:00",
+      "httpStatus": 200,
+      "title": "Entrance requirements | Undergraduate Admissions - McGill University",
+      "sha256": "751d4280d43497d09003a96b5721ff766978b6367e9c7d5e530a5e6a2794cf28",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/fc45a82108afeff7d01f.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://www.mcgill.ca/undergraduate-admissions/apply/requirements",
+      "contentType": "text/html",
+      "bytesRead": 48155,
+      "bodyMayBeTruncated": false,
+      "textLength": 2563,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://www.monash.edu/accommodation/on-campus-accommodation/pricing",
+      "references": [
+        {
+          "task": "031-opencode",
+          "universityId": "66cc3fd0-3055-5d88-b1d0-586a11515643",
+          "university": "Monash University",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/031-opencode.json",
+          "factIndex": 10,
+          "field": "accommodation_cost"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:54.563638+00:00",
+      "httpStatus": 403,
+      "title": null,
+      "sha256": null,
+      "cacheTextPath": null,
+      "verificationState": "source_unavailable",
+      "errorType": "HTTPError",
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://www.monash.edu/admissions/entry-requirements/english-language",
+      "references": [
+        {
+          "task": "031-opencode",
+          "universityId": "66cc3fd0-3055-5d88-b1d0-586a11515643",
+          "university": "Monash University",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/031-opencode.json",
+          "factIndex": 6,
+          "field": "language_requirement"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:53.671971+00:00",
+      "httpStatus": 403,
+      "title": null,
+      "sha256": null,
+      "cacheTextPath": null,
+      "verificationState": "source_unavailable",
+      "errorType": "HTTPError",
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://www.monash.edu/students/admin/fees/other-costs/amenities",
+      "references": [
+        {
+          "task": "031-opencode",
+          "universityId": "66cc3fd0-3055-5d88-b1d0-586a11515643",
+          "university": "Monash University",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/031-opencode.json",
+          "factIndex": 8,
+          "field": "mandatory_fee"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:54.105429+00:00",
+      "httpStatus": 403,
+      "title": null,
+      "sha256": null,
+      "cacheTextPath": null,
+      "verificationState": "source_unavailable",
+      "errorType": "HTTPError",
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://www.monash.edu/study/fees-scholarships/fees",
+      "references": [
+        {
+          "task": "031-opencode",
+          "universityId": "66cc3fd0-3055-5d88-b1d0-586a11515643",
+          "university": "Monash University",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/031-opencode.json",
+          "factIndex": 7,
+          "field": "tuition"
+        },
+        {
+          "task": "031-opencode",
+          "universityId": "66cc3fd0-3055-5d88-b1d0-586a11515643",
+          "university": "Monash University",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/031-opencode.json",
+          "factIndex": 12,
+          "field": "financial_aid"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:54.104820+00:00",
+      "httpStatus": 403,
+      "title": null,
+      "sha256": null,
+      "cacheTextPath": null,
+      "verificationState": "source_unavailable",
+      "errorType": "HTTPError",
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://www.monash.edu/study/how-to-apply/entry-requirements",
+      "references": [
+        {
+          "task": "031-opencode",
+          "universityId": "66cc3fd0-3055-5d88-b1d0-586a11515643",
+          "university": "Monash University",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/031-opencode.json",
+          "factIndex": 5,
+          "field": "entry_requirement"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:53.651834+00:00",
+      "httpStatus": 403,
+      "title": null,
+      "sha256": null,
+      "cacheTextPath": null,
+      "verificationState": "source_unavailable",
+      "errorType": "HTTPError",
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://www.monash.edu/study/why-choose-monash/our-locations/life-in-melbourne/cost-of-living",
+      "references": [
+        {
+          "task": "031-opencode",
+          "universityId": "66cc3fd0-3055-5d88-b1d0-586a11515643",
+          "university": "Monash University",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/031-opencode.json",
+          "factIndex": 9,
+          "field": "living_cost"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:54.378700+00:00",
+      "httpStatus": 403,
+      "title": null,
+      "sha256": null,
+      "cacheTextPath": null,
+      "verificationState": "source_unavailable",
+      "errorType": "HTTPError",
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://www.ntu.edu.sg/admissions/undergraduate/admissions/general-admission-requirements",
+      "references": [
+        {
+          "task": "012-opencode",
+          "universityId": "f5a6d73a-5fd2-55de-83af-3da2c25e18ef",
+          "university": "Nanyang Technological University",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/012-opencode.json",
+          "factIndex": 2,
+          "field": "entry_requirement"
+        },
+        {
+          "task": "012-opencode",
+          "universityId": "f5a6d73a-5fd2-55de-83af-3da2c25e18ef",
+          "university": "Nanyang Technological University",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/012-opencode.json",
+          "factIndex": 3,
+          "field": "entry_requirement"
+        },
+        {
+          "task": "012-opencode",
+          "universityId": "f5a6d73a-5fd2-55de-83af-3da2c25e18ef",
+          "university": "Nanyang Technological University",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/012-opencode.json",
+          "factIndex": 4,
+          "field": "required_subject"
+        },
+        {
+          "task": "012-opencode",
+          "universityId": "f5a6d73a-5fd2-55de-83af-3da2c25e18ef",
+          "university": "Nanyang Technological University",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/012-opencode.json",
+          "factIndex": 5,
+          "field": "language_requirement"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:32.502611+00:00",
+      "httpStatus": 200,
+      "title": "General Admission Requirements | Undergraduate Admissions | NTU Singapore",
+      "sha256": "b13b55bf43cdf10f12f062d5c7eea6b1a969097a942e652c520e82f05c4596fa",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/1891af6abe961e1a8889.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://www.ntu.edu.sg/admissions/undergraduate/admissions/general-admission-requirements",
+      "contentType": "text/html",
+      "bytesRead": 133812,
+      "bodyMayBeTruncated": false,
+      "textLength": 23866,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://www.ntu.edu.sg/admissions/undergraduate/fees-and-funding/tuition-fees",
+      "references": [
+        {
+          "task": "012-opencode",
+          "universityId": "f5a6d73a-5fd2-55de-83af-3da2c25e18ef",
+          "university": "Nanyang Technological University",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/012-opencode.json",
+          "factIndex": 9,
+          "field": "tuition"
+        },
+        {
+          "task": "012-opencode",
+          "universityId": "f5a6d73a-5fd2-55de-83af-3da2c25e18ef",
+          "university": "Nanyang Technological University",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/012-opencode.json",
+          "factIndex": 10,
+          "field": "mandatory_fee"
+        },
+        {
+          "task": "012-opencode",
+          "universityId": "f5a6d73a-5fd2-55de-83af-3da2c25e18ef",
+          "university": "Nanyang Technological University",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/012-opencode.json",
+          "factIndex": 12,
+          "field": "financial_aid"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:32.523331+00:00",
+      "httpStatus": 200,
+      "title": "Tuition fees & grants | Undergraduate Admissions | NTU Singapore",
+      "sha256": "c94502f96d45b7175c92022d46f53815996103afdf7c923b87bcc8d12d9789bf",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/ca74048b78a63de37c4f.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://www.ntu.edu.sg/admissions/undergraduate/fees-and-funding/tuition-fees",
+      "contentType": "text/html",
+      "bytesRead": 105583,
+      "bodyMayBeTruncated": false,
+      "textLength": 13869,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://www.nus.edu.sg/oam/admissions/international-qualifications-for-foreigners/admission-requirements",
+      "references": [
+        {
+          "task": "010-opencode",
+          "universityId": "c66c3755-66a2-57a0-a80e-da984c310d29",
+          "university": "National University of Singapore",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/010-opencode.json",
+          "factIndex": 6,
+          "field": "entry_requirement"
+        },
+        {
+          "task": "010-opencode",
+          "universityId": "c66c3755-66a2-57a0-a80e-da984c310d29",
+          "university": "National University of Singapore",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/010-opencode.json",
+          "factIndex": 10,
+          "field": "language_exemption"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:31.405526+00:00",
+      "httpStatus": 200,
+      "title": null,
+      "sha256": "d02032286070b4dd9d8fbd985a7bdca8af8edf52b89ff177db3bfcb2c8a9c43d",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/79b559317cc85bc59c44.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://www.nus.edu.sg/oam/admissions/international-qualifications-for-foreigners/admission-requirements",
+      "contentType": "text/html",
+      "bytesRead": 212,
+      "bodyMayBeTruncated": false,
+      "textLength": 0,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://www.nus.edu.sg/oam/admissions/international-qualifications-for-foreigners/international-qualifications/international-a-level",
+      "references": [
+        {
+          "task": "010-opencode",
+          "universityId": "c66c3755-66a2-57a0-a80e-da984c310d29",
+          "university": "National University of Singapore",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/010-opencode.json",
+          "factIndex": 7,
+          "field": "entry_requirement"
+        },
+        {
+          "task": "010-opencode",
+          "universityId": "c66c3755-66a2-57a0-a80e-da984c310d29",
+          "university": "National University of Singapore",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/010-opencode.json",
+          "factIndex": 9,
+          "field": "language_requirement"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:31.461041+00:00",
+      "httpStatus": 200,
+      "title": null,
+      "sha256": "d02032286070b4dd9d8fbd985a7bdca8af8edf52b89ff177db3bfcb2c8a9c43d",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/a672c009bca4681f0187.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://www.nus.edu.sg/oam/admissions/international-qualifications-for-foreigners/international-qualifications/international-a-level",
+      "contentType": "text/html",
+      "bytesRead": 212,
+      "bodyMayBeTruncated": false,
+      "textLength": 0,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://www.nus.edu.sg/oam/admissions/programme-prerequisites",
+      "references": [
+        {
+          "task": "010-opencode",
+          "universityId": "c66c3755-66a2-57a0-a80e-da984c310d29",
+          "university": "National University of Singapore",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/010-opencode.json",
+          "factIndex": 8,
+          "field": "required_subject"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:32.015072+00:00",
+      "httpStatus": 200,
+      "title": null,
+      "sha256": "d02032286070b4dd9d8fbd985a7bdca8af8edf52b89ff177db3bfcb2c8a9c43d",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/5d1b34cf57607849ec5d.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://www.nus.edu.sg/oam/admissions/programme-prerequisites",
+      "contentType": "text/html",
+      "bytesRead": 212,
+      "bodyMayBeTruncated": false,
+      "textLength": 0,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://www.nus.edu.sg/oam/financial-aid/living-costs",
+      "references": [
+        {
+          "task": "010-opencode",
+          "universityId": "c66c3755-66a2-57a0-a80e-da984c310d29",
+          "university": "National University of Singapore",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/010-opencode.json",
+          "factIndex": 13,
+          "field": "living_cost"
+        },
+        {
+          "task": "010-opencode",
+          "universityId": "c66c3755-66a2-57a0-a80e-da984c310d29",
+          "university": "National University of Singapore",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/010-opencode.json",
+          "factIndex": 14,
+          "field": "accommodation_cost"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:32.040399+00:00",
+      "httpStatus": 200,
+      "title": null,
+      "sha256": "d02032286070b4dd9d8fbd985a7bdca8af8edf52b89ff177db3bfcb2c8a9c43d",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/e6164ef798085ec76522.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://www.nus.edu.sg/oam/financial-aid/living-costs",
+      "contentType": "text/html",
+      "bytesRead": 212,
+      "bodyMayBeTruncated": false,
+      "textLength": 0,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://www.nus.edu.sg/registrar/administrative-policies-procedures/undergraduate/undergraduate-fees",
+      "references": [
+        {
+          "task": "010-opencode",
+          "universityId": "c66c3755-66a2-57a0-a80e-da984c310d29",
+          "university": "National University of Singapore",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/010-opencode.json",
+          "factIndex": 11,
+          "field": "tuition"
+        },
+        {
+          "task": "010-opencode",
+          "universityId": "c66c3755-66a2-57a0-a80e-da984c310d29",
+          "university": "National University of Singapore",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/010-opencode.json",
+          "factIndex": 12,
+          "field": "mandatory_fee"
+        },
+        {
+          "task": "010-opencode",
+          "universityId": "c66c3755-66a2-57a0-a80e-da984c310d29",
+          "university": "National University of Singapore",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/010-opencode.json",
+          "factIndex": 15,
+          "field": "financial_aid"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:32.020974+00:00",
+      "httpStatus": 200,
+      "title": null,
+      "sha256": "d02032286070b4dd9d8fbd985a7bdca8af8edf52b89ff177db3bfcb2c8a9c43d",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/8adcd12b2bb297634f20.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://www.nus.edu.sg/registrar/administrative-policies-procedures/undergraduate/undergraduate-fees",
+      "contentType": "text/html",
+      "bytesRead": 212,
+      "bodyMayBeTruncated": false,
+      "textLength": 0,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://www.snu.ac.kr/academics/resources/tuition",
+      "references": [
+        {
+          "task": "038-opencode",
+          "universityId": "6a9e2556-fc5f-56a2-bca0-9364f099818c",
+          "university": "Seoul National University",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/038-opencode.json",
+          "factIndex": 7,
+          "field": "tuition"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:56.488486+00:00",
+      "httpStatus": 200,
+      "title": "등록금납부 - 학사행정 - 대학생활 - 서울대학교",
+      "sha256": "16b2fa790fe5cda2833abc1959ce4fcb9113899fa86b44eed3f2f813eaea8a1a",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/ab694d2c456669b59f10.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://www.snu.ac.kr/academics/resources/tuition",
+      "contentType": "text/html",
+      "bytesRead": 103454,
+      "bodyMayBeTruncated": false,
+      "textLength": 3328,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://www.stanford.edu/",
+      "references": [
+        {
+          "task": "003-opencode",
+          "universityId": "11111111-1111-4111-8111-111111111111",
+          "university": "Stanford University",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/003-opencode.json",
+          "factIndex": 13,
+          "field": "financial_aid"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:24.342658+00:00",
+      "httpStatus": 200,
+      "title": "Stanford University",
+      "sha256": "1f909490be235fd277c5b34dc615e3d6eb4a74c29e59a368b4177ebc5e3a2a81",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/eccb970ba1ac5bfc9cf0.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://www.stanford.edu/",
+      "contentType": "text/html",
+      "bytesRead": 754464,
+      "bodyMayBeTruncated": false,
+      "textLength": 10341,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://www.sydney.edu.au/study/applying/how-to-apply/international-students/english-language-requirements.html",
+      "references": [
+        {
+          "task": "028-opencode",
+          "universityId": "c67598f4-8b91-53a9-a98a-ebd185ced219",
+          "university": "University of Sydney",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/028-opencode.json",
+          "factIndex": 6,
+          "field": "language_requirement"
+        },
+        {
+          "task": "028-opencode",
+          "universityId": "c67598f4-8b91-53a9-a98a-ebd185ced219",
+          "university": "University of Sydney",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/028-opencode.json",
+          "factIndex": 7,
+          "field": "language_exemption"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:46.301277+00:00",
+      "httpStatus": 200,
+      "title": "English language requirements - The University of Sydney",
+      "sha256": "ea4aa87cb514be320057f83dd42202cd3423ccddf065c8ea79f2d1500f0ca184",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/8ad70d4ae54c8f872e29.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://www.sydney.edu.au/study/applying/how-to-apply/international-students/english-language-requirements.html",
+      "contentType": "text/html",
+      "bytesRead": 99355,
+      "bodyMayBeTruncated": false,
+      "textLength": 16298,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://www.sydney.edu.au/study/fees-and-loans/domestic-student-tuition-fees.html",
+      "references": [
+        {
+          "task": "028-opencode",
+          "universityId": "c67598f4-8b91-53a9-a98a-ebd185ced219",
+          "university": "University of Sydney",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/028-opencode.json",
+          "factIndex": 13,
+          "field": "financial_aid"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:47.850008+00:00",
+      "httpStatus": 200,
+      "title": "Domestic student tuition fees - The University of Sydney",
+      "sha256": "2ff862e7cc31373b4f54193c8321285ac184007a465733ee00b798ce6e52a997",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/1045653998ac2d4e37ba.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://www.sydney.edu.au/study/fees-and-loans/domestic-student-tuition-fees.html",
+      "contentType": "text/html",
+      "bytesRead": 52430,
+      "bodyMayBeTruncated": false,
+      "textLength": 3957,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://www.sydney.edu.au/study/fees-and-loans/international-student-tuition-fees.html",
+      "references": [
+        {
+          "task": "028-opencode",
+          "universityId": "c67598f4-8b91-53a9-a98a-ebd185ced219",
+          "university": "University of Sydney",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/028-opencode.json",
+          "factIndex": 8,
+          "field": "tuition"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:46.867999+00:00",
+      "httpStatus": 200,
+      "title": "International student tuition fees - The University of Sydney",
+      "sha256": "e0a2c3f1917e1785616eaf57c6fcfe736a96e11443facf99cd1725b343aba499",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/8e4ce34cb26a55da065f.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://www.sydney.edu.au/study/fees-and-loans/international-student-tuition-fees.html",
+      "contentType": "text/html",
+      "bytesRead": 104779,
+      "bodyMayBeTruncated": false,
+      "textLength": 8037,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://www.sydney.edu.au/study/fees-and-loans/other-costs.html",
+      "references": [
+        {
+          "task": "028-opencode",
+          "universityId": "c67598f4-8b91-53a9-a98a-ebd185ced219",
+          "university": "University of Sydney",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/028-opencode.json",
+          "factIndex": 9,
+          "field": "mandatory_fee"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:46.892346+00:00",
+      "httpStatus": 200,
+      "title": "Additional costs - The University of Sydney",
+      "sha256": "f1d3796ea32ae1ff3dd2ef8b350997cff180243d6bb7d3925b84d0ca635978bc",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/fa01208fcf2f24d9b4dc.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://www.sydney.edu.au/study/fees-and-loans/other-costs.html",
+      "contentType": "text/html",
+      "bytesRead": 47155,
+      "bodyMayBeTruncated": false,
+      "textLength": 3247,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://www.sydney.edu.au/study/fees-and-loans/other-costs/living-costs.html",
+      "references": [
+        {
+          "task": "028-opencode",
+          "universityId": "c67598f4-8b91-53a9-a98a-ebd185ced219",
+          "university": "University of Sydney",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/028-opencode.json",
+          "factIndex": 10,
+          "field": "living_cost"
+        },
+        {
+          "task": "028-opencode",
+          "universityId": "c67598f4-8b91-53a9-a98a-ebd185ced219",
+          "university": "University of Sydney",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/028-opencode.json",
+          "factIndex": 11,
+          "field": "accommodation_cost"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:47.500371+00:00",
+      "httpStatus": 200,
+      "title": "Living costs - The University of Sydney",
+      "sha256": "04c7d79f43e5ba6d2ac8f2a1f01ab7c4cefa44a3e3e9a2934d20adc0557e7a11",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/dca5b157ac67f68360a3.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://www.sydney.edu.au/study/fees-and-loans/other-costs/living-costs.html",
+      "contentType": "text/html",
+      "bytesRead": 75517,
+      "bodyMayBeTruncated": false,
+      "textLength": 6982,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://www.tsinghua.edu.cn/en/Admissions/International_Students1/Financial_Aid.htm",
+      "references": [
+        {
+          "task": "014-opencode",
+          "universityId": "519c66df-8779-5336-acda-2cba10f95c66",
+          "university": "Tsinghua University",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/014-opencode.json",
+          "factIndex": 14,
+          "field": "financial_aid"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:33.998060+00:00",
+      "httpStatus": 200,
+      "title": "Financial Aid-Tsinghua University",
+      "sha256": "b3088b4f1e098ed2b9df5ee693db57729bee6765fba3dc602422dbe53b15e95c",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/eb7a6e48a3ff14756696.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://www.tsinghua.edu.cn/en/Admissions/International_Students1/Financial_Aid.htm",
+      "contentType": "text/html",
+      "bytesRead": 26568,
+      "bodyMayBeTruncated": false,
+      "textLength": 3878,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://www.tum.de/en/studies/application/application-info-portal/admission-requirements/language-certificates",
+      "references": [
+        {
+          "task": "025-opencode",
+          "universityId": "44444444-4444-4444-8444-444444444444",
+          "university": "Technische Universität München",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/025-opencode.json",
+          "factIndex": 7,
+          "field": "language_requirement"
+        },
+        {
+          "task": "025-opencode",
+          "universityId": "44444444-4444-4444-8444-444444444444",
+          "university": "Technische Universität München",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/025-opencode.json",
+          "factIndex": 8,
+          "field": "language_exemption"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:40.983996+00:00",
+      "httpStatus": 200,
+      "title": "Language Certificates - TUM",
+      "sha256": "854072bdb44999e8a30004e65098efeaf7fbcc26fb2bbd4f942126e87a60fdf8",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/7b67f57c076873457dcd.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://www.tum.de/en/studies/application/application-info-portal/admission-requirements/language-certificates",
+      "contentType": "text/html",
+      "bytesRead": 411670,
+      "bodyMayBeTruncated": false,
+      "textLength": 36299,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://www.tum.de/en/studies/application/bachelor/application-bachelor",
+      "references": [
+        {
+          "task": "025-opencode",
+          "universityId": "44444444-4444-4444-8444-444444444444",
+          "university": "Technische Universität München",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/025-opencode.json",
+          "factIndex": 6,
+          "field": "entry_requirement"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:40.968406+00:00",
+      "httpStatus": 200,
+      "title": "Applying for a Bachelor's Degree Program - TUM",
+      "sha256": "c56ad1ac2d9631f137ffcddb568ff2b425d4d773eb0b06c3860bfe3d25f99382",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/afa9655b24f50eb0dcde.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://www.tum.de/en/studies/application/bachelor/application-bachelor",
+      "contentType": "text/html",
+      "bytesRead": 423123,
+      "bodyMayBeTruncated": false,
+      "textLength": 31553,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://www.tum.de/en/studies/fees",
+      "references": [
+        {
+          "task": "025-opencode",
+          "universityId": "44444444-4444-4444-8444-444444444444",
+          "university": "Technische Universität München",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/025-opencode.json",
+          "factIndex": 11,
+          "field": "living_cost"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:42.580454+00:00",
+      "httpStatus": 200,
+      "title": "Study fees and costs - TUM",
+      "sha256": "04461838f32b1f1fe497cb83c72123be3bbf6c56a10b75ccef7a7fcec9e32c4e",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/4be1011ceae13666b565.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://www.tum.de/en/studies/fees",
+      "contentType": "text/html",
+      "bytesRead": 398274,
+      "bodyMayBeTruncated": false,
+      "textLength": 28466,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://www.tum.de/en/studies/fees-and-financial-aid/campus-munich-garching-wzw-and-tum-asia",
+      "references": [
+        {
+          "task": "025-opencode",
+          "universityId": "44444444-4444-4444-8444-444444444444",
+          "university": "Technische Universität München",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/025-opencode.json",
+          "factIndex": 10,
+          "field": "mandatory_fee"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:41.833630+00:00",
+      "httpStatus": 200,
+      "title": "Campus Munich, Garching, WZW and TUM Asia - TUM",
+      "sha256": "d68b57447781798b3c2e424d555a2d9293aa6589f315db89a0bb39509888e200",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/144c582f6e818d6adf37.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://www.tum.de/en/studies/fees-and-financial-aid/campus-munich-garching-wzw-and-tum-asia",
+      "contentType": "text/html",
+      "bytesRead": 394255,
+      "bodyMayBeTruncated": false,
+      "textLength": 29144,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://www.tum.de/en/studies/fees/tuition",
+      "references": [
+        {
+          "task": "025-opencode",
+          "universityId": "44444444-4444-4444-8444-444444444444",
+          "university": "Technische Universität München",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/025-opencode.json",
+          "factIndex": 9,
+          "field": "tuition"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:40.994711+00:00",
+      "httpStatus": 200,
+      "title": "Tuition Fees for Students from Non-EU Countries - TUM",
+      "sha256": "2d51bbc3a12e5b69cce860733a822403bf819681ac3d49e5cb4a43134aae5e05",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/50ba733184a6001be411.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://www.tum.de/en/studies/fees/tuition",
+      "contentType": "text/html",
+      "bytesRead": 465025,
+      "bodyMayBeTruncated": false,
+      "textLength": 39841,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://www.u-tokyo.ac.jp/en/prospective-students/tuition_fees.html",
+      "references": [
+        {
+          "task": "039-opencode",
+          "universityId": "11087dc1-5405-5bd2-a5e2-def936b94cf7",
+          "university": "University of Tokyo",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/039-opencode.json",
+          "factIndex": 4,
+          "field": "tuition"
+        },
+        {
+          "task": "039-opencode",
+          "universityId": "11087dc1-5405-5bd2-a5e2-def936b94cf7",
+          "university": "University of Tokyo",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/039-opencode.json",
+          "factIndex": 5,
+          "field": "mandatory_fee"
+        },
+        {
+          "task": "039-opencode",
+          "universityId": "11087dc1-5405-5bd2-a5e2-def936b94cf7",
+          "university": "University of Tokyo",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/039-opencode.json",
+          "factIndex": 7,
+          "field": "financial_aid"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:13:39.760762+00:00",
+      "httpStatus": 200,
+      "title": "Admission Fee and Tuition | The University of Tokyo",
+      "sha256": "6be08921243cdeef841c82e23a610a8c1c6f0fd663ef04101bc02d8b5c36dd16",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/86341edc354c641b1262.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://www.u-tokyo.ac.jp/en/prospective-students/tuition_fees.html",
+      "contentType": "text/html",
+      "bytesRead": 46010,
+      "bodyMayBeTruncated": false,
+      "textLength": 7464
+    },
+    {
+      "url": "https://www.uchicago.edu/admissions/affordability",
+      "references": [
+        {
+          "task": "024-opencode",
+          "universityId": "7add53a9-8ddf-5e84-bd4d-a7c8638dbb95",
+          "university": "University of Chicago",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/024-opencode.json",
+          "factIndex": 9,
+          "field": "financial_aid"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:37.641357+00:00",
+      "httpStatus": 200,
+      "title": "Affordability | University of Chicago",
+      "sha256": "1ff0413c216387da2e3c2161a765307c52d41d9b8e71b1a48287de961dc9aa37",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/473cb3cc9ccca00b0f45.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://www.uchicago.edu/admissions/affordability",
+      "contentType": "text/html",
+      "bytesRead": 197145,
+      "bodyMayBeTruncated": false,
+      "textLength": 11610,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://www.ucl.ac.uk/prospective-students/undergraduate/degrees/computer-science-bsc-2026",
+      "references": [
+        {
+          "task": "009-opencode",
+          "universityId": "4b7862dc-7567-5f81-af58-c01144412a88",
+          "university": "University College London",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/009-opencode.json",
+          "factIndex": 6,
+          "field": "entry_requirement"
+        },
+        {
+          "task": "009-opencode",
+          "universityId": "4b7862dc-7567-5f81-af58-c01144412a88",
+          "university": "University College London",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/009-opencode.json",
+          "factIndex": 7,
+          "field": "required_subject"
+        },
+        {
+          "task": "009-opencode",
+          "universityId": "4b7862dc-7567-5f81-af58-c01144412a88",
+          "university": "University College London",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/009-opencode.json",
+          "factIndex": 10,
+          "field": "tuition"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:27.753512+00:00",
+      "httpStatus": 403,
+      "title": null,
+      "sha256": null,
+      "cacheTextPath": null,
+      "verificationState": "source_unavailable",
+      "errorType": "HTTPError",
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://www.ucl.ac.uk/study/prospective-students/undergraduate/how-apply/english-language-requirements",
+      "references": [
+        {
+          "task": "009-opencode",
+          "universityId": "4b7862dc-7567-5f81-af58-c01144412a88",
+          "university": "University College London",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/009-opencode.json",
+          "factIndex": 8,
+          "field": "language_requirement"
+        },
+        {
+          "task": "009-opencode",
+          "universityId": "4b7862dc-7567-5f81-af58-c01144412a88",
+          "university": "University College London",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/009-opencode.json",
+          "factIndex": 9,
+          "field": "language_exemption"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:28.164694+00:00",
+      "httpStatus": 403,
+      "title": null,
+      "sha256": null,
+      "cacheTextPath": null,
+      "verificationState": "source_unavailable",
+      "errorType": "HTTPError",
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://www.ucl.ac.uk/study/student-finances/cost-study/how-much-does-it-cost-study-ucl",
+      "references": [
+        {
+          "task": "009-opencode",
+          "universityId": "4b7862dc-7567-5f81-af58-c01144412a88",
+          "university": "University College London",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/009-opencode.json",
+          "factIndex": 11,
+          "field": "living_cost"
+        },
+        {
+          "task": "009-opencode",
+          "universityId": "4b7862dc-7567-5f81-af58-c01144412a88",
+          "university": "University College London",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/009-opencode.json",
+          "factIndex": 12,
+          "field": "accommodation_cost"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:28.351069+00:00",
+      "httpStatus": 403,
+      "title": null,
+      "sha256": null,
+      "cacheTextPath": null,
+      "verificationState": "source_unavailable",
+      "errorType": "HTTPError",
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://www.undergraduate.study.cam.ac.uk/apply/before/entry-requirements",
+      "references": [
+        {
+          "task": "006-opencode",
+          "universityId": "ae117645-e24c-5269-8ed1-b5b826e53932",
+          "university": "University of Cambridge",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/006-opencode.json",
+          "factIndex": 5,
+          "field": "language_requirement"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:25.823644+00:00",
+      "httpStatus": 200,
+      "title": "Entry requirements | Undergraduate Study",
+      "sha256": "85a5584b51e8efb7c609f3eb70c6b3658569a2e7bc9065eefe71a47eff302727",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/1461ed94036f736849cd.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://www.undergraduate.study.cam.ac.uk/apply/before/entry-requirements",
+      "contentType": "text/html",
+      "bytesRead": 88468,
+      "bodyMayBeTruncated": false,
+      "textLength": 12630,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://www.undergraduate.study.cam.ac.uk/courses/computer-science-ba-hons-meng",
+      "references": [
+        {
+          "task": "006-opencode",
+          "universityId": "ae117645-e24c-5269-8ed1-b5b826e53932",
+          "university": "University of Cambridge",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/006-opencode.json",
+          "factIndex": 3,
+          "field": "entry_requirement"
+        },
+        {
+          "task": "006-opencode",
+          "universityId": "ae117645-e24c-5269-8ed1-b5b826e53932",
+          "university": "University of Cambridge",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/006-opencode.json",
+          "factIndex": 4,
+          "field": "required_subject"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:25.274857+00:00",
+      "httpStatus": 200,
+      "title": "Computer Science, BA (Hons) and MEng | Undergraduate Study",
+      "sha256": "27d17377a425e203bf1e3a55bc1320d2cae0d5f3561199a16410fd20560337e0",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/798d31e4fd78cd525242.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://www.undergraduate.study.cam.ac.uk/courses/computer-science-ba-hons-meng",
+      "contentType": "text/html",
+      "bytesRead": 106691,
+      "bodyMayBeTruncated": false,
+      "textLength": 21957,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://www.undergraduate.study.cam.ac.uk/fees-funding/living-costs",
+      "references": [
+        {
+          "task": "006-opencode",
+          "universityId": "ae117645-e24c-5269-8ed1-b5b826e53932",
+          "university": "University of Cambridge",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/006-opencode.json",
+          "factIndex": 13,
+          "field": "living_cost"
+        },
+        {
+          "task": "006-opencode",
+          "universityId": "ae117645-e24c-5269-8ed1-b5b826e53932",
+          "university": "University of Cambridge",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/006-opencode.json",
+          "factIndex": 14,
+          "field": "accommodation_cost"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:26.137685+00:00",
+      "httpStatus": 200,
+      "title": "Living costs | Undergraduate Study",
+      "sha256": "cbf5ff73eb2b3883e16115d313d32a38c0cf271df939e07ae7a60230d7df1efc",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/7b0856da562bc8af1f56.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://www.undergraduate.study.cam.ac.uk/fees-funding/living-costs",
+      "contentType": "text/html",
+      "bytesRead": 84256,
+      "bodyMayBeTruncated": false,
+      "textLength": 11404,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://www.undergraduate.study.cam.ac.uk/fees-funding/scholarships-bursaries",
+      "references": [
+        {
+          "task": "006-opencode",
+          "universityId": "ae117645-e24c-5269-8ed1-b5b826e53932",
+          "university": "University of Cambridge",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/006-opencode.json",
+          "factIndex": 15,
+          "field": "financial_aid"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:26.252452+00:00",
+      "httpStatus": 200,
+      "title": "Scholarships and bursaries for Cambridge undergraduates | Undergraduate Study",
+      "sha256": "fa1784c41cc8adaf79ab62dfa2da2a883695755b155c23a76020f00508cacc73",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/49e27aea570a7f7ddcd6.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://www.undergraduate.study.cam.ac.uk/fees-funding/scholarships-bursaries",
+      "contentType": "text/html",
+      "bytesRead": 87921,
+      "bodyMayBeTruncated": false,
+      "textLength": 9975,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://www.undergraduate.study.cam.ac.uk/fees-funding/tuition-fees",
+      "references": [
+        {
+          "task": "006-opencode",
+          "universityId": "ae117645-e24c-5269-8ed1-b5b826e53932",
+          "university": "University of Cambridge",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/006-opencode.json",
+          "factIndex": 11,
+          "field": "tuition"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:25.902423+00:00",
+      "httpStatus": 200,
+      "title": "Tuition fees | Undergraduate Study",
+      "sha256": "581fb4245e9b4f3ebeef2029e461e377ffd7d593e52454eecf1a53951b39e58d",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/cb5c764e2877fc81208b.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://www.undergraduate.study.cam.ac.uk/fees-funding/tuition-fees",
+      "contentType": "text/html",
+      "bytesRead": 88886,
+      "bodyMayBeTruncated": false,
+      "textLength": 10527,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://www.undergraduate.study.cam.ac.uk/international-students/international-fees-and-costs",
+      "references": [
+        {
+          "task": "006-opencode",
+          "universityId": "ae117645-e24c-5269-8ed1-b5b826e53932",
+          "university": "University of Cambridge",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/006-opencode.json",
+          "factIndex": 12,
+          "field": "mandatory_fee"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:26.062883+00:00",
+      "httpStatus": 200,
+      "title": "International fees and costs | Undergraduate Study",
+      "sha256": "0b45ff00fb07fc86db3cb859108b73ab04b63566865bf4dcf3e5766442c1a66c",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/a8c48755a0841f2a826e.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://www.undergraduate.study.cam.ac.uk/international-students/international-fees-and-costs",
+      "contentType": "text/html",
+      "bytesRead": 89072,
+      "bodyMayBeTruncated": false,
+      "textLength": 9199,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://www.unsw.edu.au/study/how-to-apply/english-language-requirements",
+      "references": [
+        {
+          "task": "019-opencode",
+          "universityId": "34f9bd5c-1c24-5d4f-880c-4a342627a148",
+          "university": "UNSW Sydney",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/019-opencode.json",
+          "factIndex": 8,
+          "field": "language_requirement"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:36.820772+00:00",
+      "httpStatus": 200,
+      "title": "English language requirements | UNSW Sydney",
+      "sha256": "19fb2e76a36dc13dad7a9691d0eea77366bc2232defe096a8c5d2957b540f7f9",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/4c97c12caf00aecbb283.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://www.unsw.edu.au/study/how-to-apply/english-language-requirements",
+      "contentType": "text/html",
+      "bytesRead": 238439,
+      "bodyMayBeTruncated": false,
+      "textLength": 70429,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://www.unsw.edu.au/study/how-to-apply/fees",
+      "references": [
+        {
+          "task": "019-opencode",
+          "universityId": "34f9bd5c-1c24-5d4f-880c-4a342627a148",
+          "university": "UNSW Sydney",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/019-opencode.json",
+          "factIndex": 9,
+          "field": "tuition"
+        },
+        {
+          "task": "019-opencode",
+          "universityId": "34f9bd5c-1c24-5d4f-880c-4a342627a148",
+          "university": "UNSW Sydney",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/019-opencode.json",
+          "factIndex": 10,
+          "field": "mandatory_fee"
+        },
+        {
+          "task": "019-opencode",
+          "universityId": "34f9bd5c-1c24-5d4f-880c-4a342627a148",
+          "university": "UNSW Sydney",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/019-opencode.json",
+          "factIndex": 11,
+          "field": "living_cost"
+        },
+        {
+          "task": "019-opencode",
+          "universityId": "34f9bd5c-1c24-5d4f-880c-4a342627a148",
+          "university": "UNSW Sydney",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/019-opencode.json",
+          "factIndex": 12,
+          "field": "accommodation_cost"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:37.025915+00:00",
+      "httpStatus": 200,
+      "title": "Fees, student loans and financial support | UNSW Sydney",
+      "sha256": "35ab6bf786857e8210d8016f2a41b53d71e06d305b3b3e3dea74255611f6e764",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/71636e87a1c1260c2a9c.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://www.unsw.edu.au/study/how-to-apply/fees",
+      "contentType": "text/html",
+      "bytesRead": 139325,
+      "bodyMayBeTruncated": false,
+      "textLength": 13360,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://www.unsw.edu.au/study/how-to-apply/international",
+      "references": [
+        {
+          "task": "019-opencode",
+          "universityId": "34f9bd5c-1c24-5d4f-880c-4a342627a148",
+          "university": "UNSW Sydney",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/019-opencode.json",
+          "factIndex": 7,
+          "field": "entry_requirement"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:36.722254+00:00",
+      "httpStatus": 200,
+      "title": "How to apply | International students | UNSW Sydney",
+      "sha256": "2202c8a4ba17aec3a148e10c31ebf80498805dd089b818b1afb3ec87db574e20",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/8f6323ec7572ae996227.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://www.unsw.edu.au/study/how-to-apply/international",
+      "contentType": "text/html",
+      "bytesRead": 142577,
+      "bodyMayBeTruncated": false,
+      "textLength": 7761,
+      "reusedCachedAvailabilityCheck": true
+    },
+    {
+      "url": "https://yz.tsinghua.edu.cn/en/Costs/Miscellaneous_Expenses.htm",
+      "references": [
+        {
+          "task": "014-opencode",
+          "universityId": "519c66df-8779-5336-acda-2cba10f95c66",
+          "university": "Tsinghua University",
+          "report": "outputs/university-agent-batch-oct15/20261016T025811Z-a987f5/014-opencode.json",
+          "factIndex": 12,
+          "field": "accommodation_cost"
+        }
+      ],
+      "retrievedAt": "2026-10-16T03:11:33.605938+00:00",
+      "httpStatus": 200,
+      "title": "Miscellaneous Expenses-THU Graduate Admissions for International Students",
+      "sha256": "c5fa50317a438e503cf692203160b5ddecdfd482d6e34bea3c22733989136a73",
+      "cacheTextPath": "/tmp/collegestat-agent-source-review-oct16/dc11459f564a685542f3.txt",
+      "verificationState": "availability_only",
+      "finalUrl": "https://yz.tsinghua.edu.cn/en/Costs/Miscellaneous_Expenses.htm",
+      "contentType": "text/html",
+      "bytesRead": 17919,
+      "bodyMayBeTruncated": false,
+      "textLength": 1817,
+      "reusedCachedAvailabilityCheck": true
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+OpenAI Codex v0.169.0
+--------
+workdir: /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+model: gpt-6-luna
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: high
+reasoning summaries: none
+session id: 01a1ee7a-b8ab-7b13-98b6-e02fe95da284
+--------
+user
+You are a careful admissions-data researcher. For each university below, find facts for an
+INTERNATIONAL applicant to a FIRST-YEAR BACHELOR'S degree starting in autumn 2027 (or the nearest
+published cycle). Use the live web. Rules:
+
+- Official sources only: the university's own website (its domain or subdomains), the national
+  application service (UCAS, Common App, OUAC, uni-assist, Studyinkorea, etc.) or a government
+  statistics office. Never use rankings sites, forums, agencies, Wikipedia or blogs.
+- Every value needs the exact page URL where you read it (source_url). If you could not verify a
+  value on an official page, leave it out (null or an empty list). Never guess or estimate.
+- english: the lowest overall score accepted for undergraduate entry, per test (IELTS Academic
+  overall, TOEFL iBT total, Duolingo, PTE). If programmes differ, give the general/lowest common
+  university minimum and say so in detail (e.g. "6.5 overall, no band below 6.0; some
+  programmes higher").
+- tuition: the yearly tuition for international (non-EU / overseas) undergraduates in the local
+  currency. If it varies by programme give amount = lowest and amount_max = highest, and the
+  academic_year the fee applies to (e.g. "2026/27"). If tuition is free, amount = 0.
+- application_fee: for international first-year applicants, local currency.
+- deadlines: the main 2027-entry first-year deadlines (ISO date YYYY-MM-DD) with the route
+  (e.g. "Common App, Regular Decision", "UCAS", "university portal"). Only dates actually
+  published; if only the 2026-entry date is published, include it and put "2026 entry" in title.
+- sat: policy for international applicants; p25/p75 total SAT only if the university publishes
+  them (Common Data Set or admissions profile).
+- acceptance_rate: only if officially published (CDS, admissions statistics page).
+- notes: one short line on anything important (e.g. "Foundation year required for 11-year
+  school certificates"), else "".
+
+Spend effort on the facts students need most: English minimum, tuition, deadlines. Keep each
+detail under 160 characters. Return only the JSON that matches the schema; use each
+university's id exactly as given.
+
+Universities:
+- id: 3e655a74-c0c7-5a9b-884b-22aebd5e0d1e | London School of Economics and Political Science, University of London | London, GB | http://www.lse.ac.uk/
+- id: ee31891b-8bbc-5fb0-9bc5-e0122f0c55dd | Universiti Malaya | Kuala Lumpur, MY | http://www.um.edu.my/
+- id: e943a9a4-853c-5554-ac7f-9887d0b2a91d | Kyoto University | Kyoto, JP | http://www.kyoto-u.ac.jp/
+- id: 0214dadc-625b-5cdb-a2af-cd750bce896d | KU Leuven | Leuven, BE | https://www.kuleuven.be
+codex
+I’ll verify the current published undergraduate requirements and fees on official university or application-service pages, prioritizing English scores, tuition, and dated deadlines.
+web search: 
+web search: site:lse.ac.uk undergraduate international English language requirements IELTS TOEFL 2027 fees 2026 2027 ...
+web search: 
+web search: site:lse.ac.uk/study-at-lse/Undergraduate 2027 entry application deadline UCAS 2027 January 2027 tuition overseas fee ...
+web search: 
+web search: site:lse.ac.uk "2027/28" "overseas" undergraduate fee LSE tuition 2027 ...
+web search: 
+web search: site:kuleuven.be/english/study/apply/application-deadlines non-EEA deadline bachelor 2027 KU Leuven 1 February ...
+web search: 
+web search: site:info.lse.ac.uk "2027/28 Fee Levels" overseas undergraduate £ LSE ...
+codex
+{"universities":[{"id":"3e655a74-c0c7-5a9b-884b-22aebd5e0d1e","english":[{"test":"IELTS","minimum":7,"detail":"IELTS Academic: 7.0 overall and in each component.","source_url":"https://www.lse.ac.uk/study-at-lse/Undergraduate/Prospective-Students/How-to-Apply/English-language-requirements"},{"test":"TOEFL iBT","minimum":100,"detail":"100 overall; minimum 27 Writing, 25 Reading, 24 Listening, 24 Speaking.","source_url":"https://www.lse.ac.uk/study-at-lse/Undergraduate/Prospective-Students/How-to-Apply/English-language-requirements"},{"test":"PTE Academic","minimum":70,"detail":"70 overall and in all components.","source_url":"https://www.lse.ac.uk/study-at-lse/Undergraduate/Prospective-Students/How-to-Apply/English-language-requirements"}],"tuition":{"amount":30400,"amount_max":41900,"currency":"GBP","period":"year","academic_year":"2027/28","detail":"Overseas fee varies by programme; figures are programme-specific annual fees.","source_url":"https://info.lse.ac.uk/staff/divisions/Planning-Division/Table-of-Fees"},"application_fee":null,"deadlines":[{"title":"2027 entry equal consideration deadline","due_at":"2027-01-13","route":"UCAS","source_url":"https://www.lse.ac.uk/Study-at-LSE/Undergraduate/Prospective-Students/How-to-Apply"}],"sat":null,"acceptance_rate":null,"notes":"Apply through UCAS; LSE does not accept direct applications."},{"id":"ee31891b-8bbc-5fb0-9bc5-e0122f0c55dd","english":[{"test":"IELTS","minimum":5,"detail":"IELTS Academic 5.0 overall minimum; some programmes require higher scores.","source_url":"https://aasd.um.edu.my/faq-ug-international-admission"},{"test":"TOEFL iBT","minimum":60,"detail":"TOEFL iBT 60 minimum; some programmes require higher scores.","source_url":"https://aasd.um.edu.my/faq-ug-international-admission"},{"test":"PTE Academic","minimum":41,"detail":"PTE Academic 41 minimum; some programmes require higher scores.","source_url":"https://aasd.um.edu.my/faq-ug-international-admission"}],"tuition":null,"application_fee":{"amount":500,"currency":"MYR","source_url":"https://study.um.edu.my/faqs-amp-info"},"deadlines":[{"title":"2026 entry","due_at":"2026-08-30","route":"University application portal, conventional international undergraduate","source_url":"https://study.um.edu.my/how-to-apply"}],"sat":null,"acceptance_rate":null,"notes":"Published international fee schedule gives programme totals, not comparable annual tuition amounts."},{"id":"e943a9a4-853c-5554-ac7f-9887d0b2a91d","english":[],"tuition":{"amount":535800,"amount_max":null,"currency":"JPY","period":"year","academic_year":"2027","detail":"Standard undergraduate annual tuition; Kyoto iUP includes a six-month preparatory course with a separate fee.","source_url":"https://www.kyoto-u.ac.jp/en/current/how-to/tuition/tuition-and-fees"},"application_fee":null,"deadlines":[{"title":"October 2027 enrollment","due_at":"2026-12-03","route":"Kyoto iUP online application system","source_url":"https://www.iup.kyoto-u.ac.jp/apply/"}],"sat":null,"acceptance_rate":null,"notes":"Undergraduate routes vary; Kyoto iUP is a 4.5-year pathway with a preparatory course."},{"id":"0214dadc-625b-5cdb-a2af-cd750bce896d","english":[{"test":"IELTS","minimum":6.5,"detail":"IELTS Academic 6.5 minimum; programmes may require higher scores or subscores.","source_url":"https://www.kuleuven.be/english/study/apply/language-requirements/english-proficiency-tests"},{"test":"TOEFL iBT","minimum":79,"detail":"TOEFL iBT 79 minimum; programmes may require higher scores or subscores.","source_url":"https://www.kuleuven.be/english/study/apply/language-requirements/english-proficiency-tests"},{"test":"Cambridge C1/C2","minimum":176,"detail":"Cambridge Advanced (C1) or Proficiency (C2); minimum 176 overall.","source_url":"https://www.kuleuven.be/english/study/apply/language-requirements/english-proficiency-tests"}],"tuition":null,"application_fee":null,"deadlines":[{"title":"2027 entry, non-EEA Dutch-taught programmes","due_at":"2027-02-01","route":"KU Leuven application portal","source_url":"https://www.kuleuven.be/english/apply/application-instructions/apply-to-kuleuven"}],"sat":null,"acceptance_rate":null,"notes":"English-taught programmes can have programme-specific deadlines and tuition; check the selected programme."}]}
+tokens used
+45,239
+{"universities":[{"id":"3e655a74-c0c7-5a9b-884b-22aebd5e0d1e","english":[{"test":"IELTS","minimum":7,"detail":"IELTS Academic: 7.0 overall and in each component.","source_url":"https://www.lse.ac.uk/study-at-lse/Undergraduate/Prospective-Students/How-to-Apply/English-language-requirements"},{"test":"TOEFL iBT","minimum":100,"detail":"100 overall; minimum 27 Writing, 25 Reading, 24 Listening, 24 Speaking.","source_url":"https://www.lse.ac.uk/study-at-lse/Undergraduate/Prospective-Students/How-to-Apply/English-language-requirements"},{"test":"PTE Academic","minimum":70,"detail":"70 overall and in all components.","source_url":"https://www.lse.ac.uk/study-at-lse/Undergraduate/Prospective-Students/How-to-Apply/English-language-requirements"}],"tuition":{"amount":30400,"amount_max":41900,"currency":"GBP","period":"year","academic_year":"2027/28","detail":"Overseas fee varies by programme; figures are programme-specific annual fees.","source_url":"https://info.lse.ac.uk/staff/divisions/Planning-Division/Table-of-Fees"},"application_fee":null,"deadlines":[{"title":"2027 entry equal consideration deadline","due_at":"2027-01-13","route":"UCAS","source_url":"https://www.lse.ac.uk/Study-at-LSE/Undergraduate/Prospective-Students/How-to-Apply"}],"sat":null,"acceptance_rate":null,"notes":"Apply through UCAS; LSE does not accept direct applications."},{"id":"ee31891b-8bbc-5fb0-9bc5-e0122f0c55dd","english":[{"test":"IELTS","minimum":5,"detail":"IELTS Academic 5.0 overall minimum; some programmes require higher scores.","source_url":"https://aasd.um.edu.my/faq-ug-international-admission"},{"test":"TOEFL iBT","minimum":60,"detail":"TOEFL iBT 60 minimum; some programmes require higher scores.","source_url":"https://aasd.um.edu.my/faq-ug-international-admission"},{"test":"PTE Academic","minimum":41,"detail":"PTE Academic 41 minimum; some programmes require higher scores.","source_url":"https://aasd.um.edu.my/faq-ug-international-admission"}],"tuition":null,"application_fee":{"amount":500,"currency":"MYR","source_url":"https://study.um.edu.my/faqs-amp-info"},"deadlines":[{"title":"2026 entry","due_at":"2026-08-30","route":"University application portal, conventional international undergraduate","source_url":"https://study.um.edu.my/how-to-apply"}],"sat":null,"acceptance_rate":null,"notes":"Published international fee schedule gives programme totals, not comparable annual tuition amounts."},{"id":"e943a9a4-853c-5554-ac7f-9887d0b2a91d","english":[],"tuition":{"amount":535800,"amount_max":null,"currency":"JPY","period":"year","academic_year":"2027","detail":"Standard undergraduate annual tuition; Kyoto iUP includes a six-month preparatory course with a separate fee.","source_url":"https://www.kyoto-u.ac.jp/en/current/how-to/tuition/tuition-and-fees"},"application_fee":null,"deadlines":[{"title":"October 2027 enrollment","due_at":"2026-12-03","route":"Kyoto iUP online application system","source_url":"https://www.iup.kyoto-u.ac.jp/apply/"}],"sat":null,"acceptance_rate":null,"notes":"Undergraduate routes vary; Kyoto iUP is a 4.5-year pathway with a preparatory course."},{"id":"0214dadc-625b-5cdb-a2af-cd750bce896d","english":[{"test":"IELTS","minimum":6.5,"detail":"IELTS Academic 6.5 minimum; programmes may require higher scores or subscores.","source_url":"https://www.kuleuven.be/english/study/apply/language-requirements/english-proficiency-tests"},{"test":"TOEFL iBT","minimum":79,"detail":"TOEFL iBT 79 minimum; programmes may require higher scores or subscores.","source_url":"https://www.kuleuven.be/english/study/apply/language-requirements/english-proficiency-tests"},{"test":"Cambridge C1/C2","minimum":176,"detail":"Cambridge Advanced (C1) or Proficiency (C2); minimum 176 overall.","source_url":"https://www.kuleuven.be/english/study/apply/language-requirements/english-proficiency-tests"}],"tuition":null,"application_fee":null,"deadlines":[{"title":"2027 entry, non-EEA Dutch-taught programmes","due_at":"2027-02-01","route":"KU Leuven application portal","source_url":"https://www.kuleuven.be/english/apply/application-instructions/apply-to-kuleuven"}],"sat":null,"acceptance_rate":null,"notes":"English-taught programmes can have programme-specific deadlines and tuition; check the selected programme."}]}

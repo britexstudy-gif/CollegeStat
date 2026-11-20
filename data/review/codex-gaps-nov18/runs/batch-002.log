@@ -1,0 +1,156 @@
+OpenAI Codex v0.169.0
+--------
+workdir: /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+model: gpt-6-luna
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: high
+reasoning summaries: none
+session id: 01a1ee78-6d86-70f1-9b1c-a539fbfdc7c5
+--------
+user
+You are a careful admissions-data researcher. For each university below, find facts for an
+INTERNATIONAL applicant to a FIRST-YEAR BACHELOR'S degree starting in autumn 2027 (or the nearest
+published cycle). Use the live web. Rules:
+
+- Official sources only: the university's own website (its domain or subdomains), the national
+  application service (UCAS, Common App, OUAC, uni-assist, Studyinkorea, etc.) or a government
+  statistics office. Never use rankings sites, forums, agencies, Wikipedia or blogs.
+- Every value needs the exact page URL where you read it (source_url). If you could not verify a
+  value on an official page, leave it out (null or an empty list). Never guess or estimate.
+- english: the lowest overall score accepted for undergraduate entry, per test (IELTS Academic
+  overall, TOEFL iBT total, Duolingo, PTE). If programmes differ, give the general/lowest common
+  university minimum and say so in detail (e.g. "6.5 overall, no band below 6.0; some
+  programmes higher").
+- tuition: the yearly tuition for international (non-EU / overseas) undergraduates in the local
+  currency. If it varies by programme give amount = lowest and amount_max = highest, and the
+  academic_year the fee applies to (e.g. "2026/27"). If tuition is free, amount = 0.
+- application_fee: for international first-year applicants, local currency.
+- deadlines: the main 2027-entry first-year deadlines (ISO date YYYY-MM-DD) with the route
+  (e.g. "Common App, Regular Decision", "UCAS", "university portal"). Only dates actually
+  published; if only the 2026-entry date is published, include it and put "2026 entry" in title.
+- sat: policy for international applicants; p25/p75 total SAT only if the university publishes
+  them (Common Data Set or admissions profile).
+- acceptance_rate: only if officially published (CDS, admissions statistics page).
+- notes: one short line on anything important (e.g. "Foundation year required for 11-year
+  school certificates"), else "".
+
+Spend effort on the facts students need most: English minimum, tuition, deadlines. Keep each
+detail under 160 characters. Return only the JSON that matches the schema; use each
+university's id exactly as given.
+
+Universities:
+- id: b48ecdd6-9331-5ee8-a4ad-7f5b046d5356 | McGill University | Montreal, CA | https://www.mcgill.ca
+- id: c5ca35b6-8983-574d-89ec-d15da6afa1fe | Université Paris Sciences et Lettres | Paris, FR | https://psl.eu
+- id: 55555555-5555-4555-8555-555555555555 | University of Toronto | Toronto, Ontario, CA | https://www.utoronto.ca
+- id: 14fa4c62-b910-520b-aa51-0bf334f02b1c | Australian National University | Canberra, AU | http://www.anu.edu.au/
+codex
+I’ll check the saved research notes first, then verify each item against official university or application-service pages.
+exec
+/bin/zsh -lc 'cat /Users/likeanew/.agents/skills/lemma/SKILL.md' in /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+ succeeded in 0ms:
+---
+name: lemma
+description: Persistent cross-session memory for AI agents via MCP. BEFORE starting ANY task (coding, debugging, refactoring, research, docs, optimization — any language), FIRST call memory_read to load what you already know so you never re-derive or re-explore known facts. AFTER finishing, call memory_add to persist new findings and session_attempt for dead ends — unsaved knowledge is lost permanently. Distills reusable guides from experience.
+---
+
+<!-- lemma:skill:v=0.21.0 -->
+
+# Lemma — Persistent Memory & Learning
+
+Lemma is a persistent memory server for AI agents over the Model Context Protocol.
+Every session starts blank — knowledge survives ONLY through tool calls. If you
+learn something and don't save it (`memory_add`), it is gone permanently.
+
+## Workflow
+1. **RECALL** — `memory_read` / `semantic_search`: load what's already known for this
+   project/task. Never re-explore code or re-derive facts that are already saved.
+2. **ACT** — do the task.
+3. **PERSIST** — `memory_add` for new insights; `guide_practice` for guides applied;
+   `session_attempt` for abandoned/dead-end approaches (the most valuable records).
+
+## Two knowledge layers
+- **Memory fragments** (`memory_read` / `memory_add`): atomic facts. Types: `fact`,
+  `pattern`, `lesson`, `warning`, `context`. Confidence evolves with use and feedback.
+- **Guides** (`guide_get` / `guide_distill` / `guide_practice`): procedural skills
+  distilled from fragments. Track usage count + success/failure rate.
+Pipeline: `experience -> memory_add -> pattern/lesson -> guide_distill -> guide_practice`.
+
+## Tools at a glance
+- **Recall & search**: `memory_read`, `semantic_search`, `memory_library` (full
+  snapshot + maintenance signals), `memory_stats`, `memory_audit`.
+- **Write & maintain**: `memory_add`, `memory_update`, `memory_forget`,
+  `memory_merge`, `memory_relate` (supports / contradicts / supersedes / related_to),
+  `memory_feedback`.
+- **Guides**: `guide_get`, `guide_create`, `guide_distill`, `guide_practice`,
+  `guide_update`, `guide_forget`, `guide_merge`.
+- **Sessions & reasoning**: `session_start`, `session_end`, `session_attempt`,
+  `session_stats`, `suggestion_respond`.
+- **Background intelligence**: `conflict_scan`, `proactive_analysis`,
+  `project_analytics` (run automatically; act on signals when sensible).
+
+## Writing a fragment
+```
+## [Topic Title]
+### Context
+[1-2 sentences: what and why it matters]
+### [Content Section]
+- [Key fact 1]
+- [Key fact 2]
+### Rules (optional)
+- [Absolute constraint]
+```
+One idea per fragment, 30-2000 chars, structured markdown (not prose). **Store
+fragments in ENGLISH** (required for search/retrieval). Never ask permission to save.
+
+## Background intelligence
+Conflict detection, distill/merge/refine suggestions, and auto-linking run
+automatically. From the CLI, `lemma -lib` prints a full knowledge-base snapshot
+and `lemma -vis` launches a visualizer.
+
+web search: 
+web search: site:mcgill.ca undergraduate international English proficiency requirements IELTS TOEFL tuition 2026 2027 application deadlines SAT international ...
+web search: 
+web search: site:mcgill.ca undergraduate tuition fees 2026 2027 international tuition estimate application fee fall 2027 ...
+web search: 
+web search: site:study.anu.edu.au "IELTS" "overall" "6.5" undergraduate English language requirements ANU ...
+web search: 
+web search: site:mcgill.ca/undergraduate-admissions "application fee" undergraduate $ McGill 2026 2027 ...
+web search: 
+web search: 
+web search: 
+web search: 
+web search: 
+web search: 
+web search: 
+web search: site:policies.anu.edu.au English Language Admission Requirements IELTS 6.5 TOEFL 80 PTE 64 ANU ...
+web search: 
+web search: site:anu.edu.au/students/program-administration/fees-payments/international-tuition-fees 2027 fee rates international students ANU ...
+web search: 
+web search: site:iep.utoronto.ca/wp-content/uploads/2027-28-International-UAB.pdf "Tuition" "$" ...
+web search: 
+web search: 
+web search: 
+web search: site:future.utoronto.ca application fee international application fee $180 2027 ...
+web search: 
+web search: 
+web search: 
+web search: site:mcgill.ca/undergraduate-admissions/apply "High schools outside Canada" "January 15" "Fall 2027" deadline ...
+web search: 
+web search: site:studentaccount.utoronto.ca/tuition-fees international undergraduate 2026-2027 tuition 2026-27 fees table CAD arts science ...
+web search: 
+web search: University of Toronto 2026-2027 tuition fees international undergraduate 2026 2027 site:utoronto.ca "66,356" ...
+web search: 
+web search: site:future.utoronto.ca 2027 admissions SAT ACT optional U of T test optional 2027 ...
+web search: 
+web search: studentaccount.utoronto.ca tuition fees 2026-2027 international fee lookup 2026 2027
+web search: 
+web search: 
+web search: 
+web search: 
+codex
+{"universities":[{"id":"b48ecdd6-9331-5ee8-a4ad-7f5b046d5356","english":[{"test":"IELTS","minimum":6.5,"detail":"6.5 overall, no component below 6.0.","source_url":"https://www.mcgill.ca/undergraduate-admissions/apply/english-proficiency"},{"test":"TOEFL iBT","minimum":4,"detail":"Lowest is 4.0 on the new scale for Music; most programs require 4.5 or 5.0. Old-scale minimum: 79–80.","source_url":"https://www.mcgill.ca/undergraduate-admissions/apply/english-proficiency"},{"test":"Duolingo","minimum":125,"detail":"125 overall; B.Ed. TESL and B.Com. require 130.","source_url":"https://www.mcgill.ca/undergraduate-admissions/apply/english-proficiency"},{"test":"PTE Academic","minimum":65,"detail":"65 overall, no component below 60.","source_url":"https://www.mcgill.ca/undergraduate-admissions/apply/english-proficiency"},{"test":"Cambridge C1/C2","minimum":0,"detail":"C1 Advanced: Grade B or better; C2 Proficiency: Grade C or better.","source_url":"https://www.mcgill.ca/undergraduate-admissions/apply/english-proficiency"}],"tuition":{"amount":35561.1,"amount_max":71687.4,"currency":"CAD","period":"year","academic_year":"2026/27","detail":"International undergraduate tuition; varies by degree. Excludes other fees.","source_url":"https://www.mcgill.ca/student-accounts/files/student-accounts/new_intl_ugrad_degree_students_admitted_2026-27.pdf"},"application_fee":{"amount":140.16,"currency":"CAD","source_url":"https://www.mcgill.ca/undergraduate-admissions/apply"},"deadlines":[{"title":"Fall 2027 application deadline","due_at":"2027-01-15","route":"McGill Applicant Portal","source_url":"https://www.mcgill.ca/importantdates/channels/event/application-deadline-fall-2027-admission-undergraduate-programs-applicants-studying-or-who-last-370820"}],"sat":{"policy":"optional","p25":null,"p75":null,"source_url":"https://www.mcgill.ca/undergraduate-admissions/apply/requirements/us"},"acceptance_rate":null,"notes":"Fall 2027 SAT/ACT optionality is published for U.S.-curriculum applicants; requirements depend on high-school credential."},{"id":"c5ca35b6-8983-574d-89ec-d15da6afa1fe","english":[],"tuition":{"amount":19500,"amount_max":19500,"currency":"EUR","period":"year","academic_year":"2026/27","detail":"2026/27 non-EU tax residents: €19,500/year for the International Bachelor of Science in AI.","source_url":"https://psl.eu/en/education/international-bachelor-science-ai"},"application_fee":null,"deadlines":[{"title":"2027 entry, Études en France","due_at":"2026-12-15","route":"Études en France","source_url":"https://ibsai.psl.eu/admission"}],"sat":null,"acceptance_rate":null,"notes":"PSL fees and admissions vary by program; this is the English-taught International Bachelor of Science in AI, which expects C1 English."},{"id":"55555555-5555-4555-8555-555555555555","english":[{"test":"IELTS","minimum":6.5,"detail":"6.5 overall, no band below 6.0.","source_url":"https://future.utoronto.ca/english-language-requirements"},{"test":"TOEFL iBT","minimum":4.5,"detail":"4.5 overall, 4.5 Writing and 4.0 Speaking; pre-Jan. 21, 2026 scale: 89 overall, 22 Speaking and Writing.","source_url":"https://future.utoronto.ca/english-language-requirements"},{"test":"Duolingo","minimum":120,"detail":"120 overall, with 120 in Production.","source_url":"https://future.utoronto.ca/english-language-requirements"},{"test":"PTE Academic","minimum":65,"detail":"65 overall, no part below 60.","source_url":"https://future.utoronto.ca/english-language-requirements"},{"test":"Cambridge C1/C2","minimum":180,"detail":"180 overall, at least 170 in each component.","source_url":"https://future.utoronto.ca/english-language-requirements"}],"tuition":{"amount":53010,"amount_max":75770,"currency":"CAD","period":"year","academic_year":"2027/28","detail":"Published 2027-entry planning figures: Music low, Engineering high; 2027/28 figures are informational projections.","source_url":"https://planningandbudget.utoronto.ca/wp-content/uploads/2026/04/2026-27-Tuition-Fee-Report_FINAL.pdf"},"application_fee":{"amount":196,"currency":"CAD","source_url":"https://future.utoronto.ca/applications"},"deadlines":[{"title":"2027 entry application deadline","due_at":"2027-01-15","route":"OUAC / U of T International Application","source_url":"https://future.utoronto.ca/deadlines"},{"title":"2027 entry supplemental applications (some programs)","due_at":"2027-02-01","route":"Join U of T or Engineering Applicant Portal","source_url":"https://future.utoronto.ca/deadlines"}],"sat":{"policy":"optional","p25":null,"p75":null,"source_url":"https://future.utoronto.ca/requirements-international-high-schools"},"acceptance_rate":null,"notes":"Some programs have earlier supplemental deadlines; check the program-specific requirements."},{"id":"14fa4c62-b910-520b-aa51-0bf334f02b1c","english":[{"test":"IELTS","minimum":6.5,"detail":"6.5 overall, minimum 6.0 in each skill.","source_url":"https://policies.anu.edu.au/ppl/document/ANUP_000408"},{"test":"TOEFL iBT","minimum":81,"detail":"For 2027 study: 81 overall; minimum Reading 16, Writing 19, Listening 16, Speaking 19. Test-centre version only.","source_url":"https://policies.anu.edu.au/ppl/document/ANUP_000408"},{"test":"PTE Academic","minimum":64,"detail":"64 overall; minimum 60 in each communicative skill.","source_url":"https://policies.anu.edu.au/ppl/document/ANUP_000408"},{"test":"Cambridge C1/C2","minimum":169,"detail":"C1 Advanced: 169 overall; minimums apply to each skill.","source_url":"https://policies.anu.edu.au/ppl/document/ANUP_000408"}],"tuition":{"amount":51170,"amount_max":null,"currency":"AUD","period":"year","academic_year":"2027","detail":"Bachelor of Arts annual indicative international fee; tuition varies by program and courses.","source_url":"https://programsandcourses.anu.edu.au/2027/program/BARTS"},"application_fee":{"amount":150,"currency":"AUD","source_url":"https://study.anu.edu.au/apply/international-applications"},"deadlines":[{"title":"Semester 1, 2027 application deadline","due_at":"2026-12-15","route":"ANU online application portal","source_url":"https://study.anu.edu.au/apply/international-applications"}],"sat":null,"acceptance_rate":null,"notes":"Some programs have different deadlines or extra selection criteria; Australian, IB and NCEA applicants may use UAC."}] }
+tokens used
+180,452
+{"universities":[{"id":"b48ecdd6-9331-5ee8-a4ad-7f5b046d5356","english":[{"test":"IELTS","minimum":6.5,"detail":"6.5 overall, no component below 6.0.","source_url":"https://www.mcgill.ca/undergraduate-admissions/apply/english-proficiency"},{"test":"TOEFL iBT","minimum":4,"detail":"Lowest is 4.0 on the new scale for Music; most programs require 4.5 or 5.0. Old-scale minimum: 79–80.","source_url":"https://www.mcgill.ca/undergraduate-admissions/apply/english-proficiency"},{"test":"Duolingo","minimum":125,"detail":"125 overall; B.Ed. TESL and B.Com. require 130.","source_url":"https://www.mcgill.ca/undergraduate-admissions/apply/english-proficiency"},{"test":"PTE Academic","minimum":65,"detail":"65 overall, no component below 60.","source_url":"https://www.mcgill.ca/undergraduate-admissions/apply/english-proficiency"},{"test":"Cambridge C1/C2","minimum":0,"detail":"C1 Advanced: Grade B or better; C2 Proficiency: Grade C or better.","source_url":"https://www.mcgill.ca/undergraduate-admissions/apply/english-proficiency"}],"tuition":{"amount":35561.1,"amount_max":71687.4,"currency":"CAD","period":"year","academic_year":"2026/27","detail":"International undergraduate tuition; varies by degree. Excludes other fees.","source_url":"https://www.mcgill.ca/student-accounts/files/student-accounts/new_intl_ugrad_degree_students_admitted_2026-27.pdf"},"application_fee":{"amount":140.16,"currency":"CAD","source_url":"https://www.mcgill.ca/undergraduate-admissions/apply"},"deadlines":[{"title":"Fall 2027 application deadline","due_at":"2027-01-15","route":"McGill Applicant Portal","source_url":"https://www.mcgill.ca/importantdates/channels/event/application-deadline-fall-2027-admission-undergraduate-programs-applicants-studying-or-who-last-370820"}],"sat":{"policy":"optional","p25":null,"p75":null,"source_url":"https://www.mcgill.ca/undergraduate-admissions/apply/requirements/us"},"acceptance_rate":null,"notes":"Fall 2027 SAT/ACT optionality is published for U.S.-curriculum applicants; requirements depend on high-school credential."},{"id":"c5ca35b6-8983-574d-89ec-d15da6afa1fe","english":[],"tuition":{"amount":19500,"amount_max":19500,"currency":"EUR","period":"year","academic_year":"2026/27","detail":"2026/27 non-EU tax residents: €19,500/year for the International Bachelor of Science in AI.","source_url":"https://psl.eu/en/education/international-bachelor-science-ai"},"application_fee":null,"deadlines":[{"title":"2027 entry, Études en France","due_at":"2026-12-15","route":"Études en France","source_url":"https://ibsai.psl.eu/admission"}],"sat":null,"acceptance_rate":null,"notes":"PSL fees and admissions vary by program; this is the English-taught International Bachelor of Science in AI, which expects C1 English."},{"id":"55555555-5555-4555-8555-555555555555","english":[{"test":"IELTS","minimum":6.5,"detail":"6.5 overall, no band below 6.0.","source_url":"https://future.utoronto.ca/english-language-requirements"},{"test":"TOEFL iBT","minimum":4.5,"detail":"4.5 overall, 4.5 Writing and 4.0 Speaking; pre-Jan. 21, 2026 scale: 89 overall, 22 Speaking and Writing.","source_url":"https://future.utoronto.ca/english-language-requirements"},{"test":"Duolingo","minimum":120,"detail":"120 overall, with 120 in Production.","source_url":"https://future.utoronto.ca/english-language-requirements"},{"test":"PTE Academic","minimum":65,"detail":"65 overall, no part below 60.","source_url":"https://future.utoronto.ca/english-language-requirements"},{"test":"Cambridge C1/C2","minimum":180,"detail":"180 overall, at least 170 in each component.","source_url":"https://future.utoronto.ca/english-language-requirements"}],"tuition":{"amount":53010,"amount_max":75770,"currency":"CAD","period":"year","academic_year":"2027/28","detail":"Published 2027-entry planning figures: Music low, Engineering high; 2027/28 figures are informational projections.","source_url":"https://planningandbudget.utoronto.ca/wp-content/uploads/2026/04/2026-27-Tuition-Fee-Report_FINAL.pdf"},"application_fee":{"amount":196,"currency":"CAD","source_url":"https://future.utoronto.ca/applications"},"deadlines":[{"title":"2027 entry application deadline","due_at":"2027-01-15","route":"OUAC / U of T International Application","source_url":"https://future.utoronto.ca/deadlines"},{"title":"2027 entry supplemental applications (some programs)","due_at":"2027-02-01","route":"Join U of T or Engineering Applicant Portal","source_url":"https://future.utoronto.ca/deadlines"}],"sat":{"policy":"optional","p25":null,"p75":null,"source_url":"https://future.utoronto.ca/requirements-international-high-schools"},"acceptance_rate":null,"notes":"Some programs have earlier supplemental deadlines; check the program-specific requirements."},{"id":"14fa4c62-b910-520b-aa51-0bf334f02b1c","english":[{"test":"IELTS","minimum":6.5,"detail":"6.5 overall, minimum 6.0 in each skill.","source_url":"https://policies.anu.edu.au/ppl/document/ANUP_000408"},{"test":"TOEFL iBT","minimum":81,"detail":"For 2027 study: 81 overall; minimum Reading 16, Writing 19, Listening 16, Speaking 19. Test-centre version only.","source_url":"https://policies.anu.edu.au/ppl/document/ANUP_000408"},{"test":"PTE Academic","minimum":64,"detail":"64 overall; minimum 60 in each communicative skill.","source_url":"https://policies.anu.edu.au/ppl/document/ANUP_000408"},{"test":"Cambridge C1/C2","minimum":169,"detail":"C1 Advanced: 169 overall; minimums apply to each skill.","source_url":"https://policies.anu.edu.au/ppl/document/ANUP_000408"}],"tuition":{"amount":51170,"amount_max":null,"currency":"AUD","period":"year","academic_year":"2027","detail":"Bachelor of Arts annual indicative international fee; tuition varies by program and courses.","source_url":"https://programsandcourses.anu.edu.au/2027/program/BARTS"},"application_fee":{"amount":150,"currency":"AUD","source_url":"https://study.anu.edu.au/apply/international-applications"},"deadlines":[{"title":"Semester 1, 2027 application deadline","due_at":"2026-12-15","route":"ANU online application portal","source_url":"https://study.anu.edu.au/apply/international-applications"}],"sat":null,"acceptance_rate":null,"notes":"Some programs have different deadlines or extra selection criteria; Australian, IB and NCEA applicants may use UAC."}] }

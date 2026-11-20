@@ -1,0 +1,136 @@
+OpenAI Codex v0.169.0
+--------
+workdir: /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+model: gpt-6-luna
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: high
+reasoning summaries: none
+session id: 01a1ee86-3a47-7382-ab68-acc7220f3a7e
+--------
+user
+You are a careful admissions-data researcher. For each university below, find facts for an
+INTERNATIONAL applicant to a FIRST-YEAR BACHELOR'S degree starting in autumn 2027 (or the nearest
+published cycle). Use the live web. Rules:
+
+- Official sources only: the university's own website (its domain or subdomains), the national
+  application service (UCAS, Common App, OUAC, uni-assist, Studyinkorea, etc.) or a government
+  statistics office. Never use rankings sites, forums, agencies, Wikipedia or blogs.
+- Every value needs the exact page URL where you read it (source_url). If you could not verify a
+  value on an official page, leave it out (null or an empty list). Never guess or estimate.
+- english: the lowest overall score accepted for undergraduate entry, per test (IELTS Academic
+  overall, TOEFL iBT total, Duolingo, PTE). If programmes differ, give the general/lowest common
+  university minimum and say so in detail (e.g. "6.5 overall, no band below 6.0; some
+  programmes higher").
+- tuition: the yearly tuition for international (non-EU / overseas) undergraduates in the local
+  currency. If it varies by programme give amount = lowest and amount_max = highest, and the
+  academic_year the fee applies to (e.g. "2026/27"). If tuition is free, amount = 0.
+- application_fee: for international first-year applicants, local currency.
+- deadlines: the main 2027-entry first-year deadlines (ISO date YYYY-MM-DD) with the route
+  (e.g. "Common App, Regular Decision", "UCAS", "university portal"). Only dates actually
+  published; if only the 2026-entry date is published, include it and put "2026 entry" in title.
+- sat: policy for international applicants; p25/p75 total SAT only if the university publishes
+  them (Common Data Set or admissions profile).
+- acceptance_rate: only if officially published (CDS, admissions statistics page).
+- notes: one short line on anything important (e.g. "Foundation year required for 11-year
+  school certificates"), else "".
+
+Spend effort on the facts students need most: English minimum, tuition, deadlines. Keep each
+detail under 160 characters. Return only the JSON that matches the schema; use each
+university's id exactly as given.
+
+Universities:
+- id: 89e1ba5b-fd4e-5292-ab10-dc8500e7f29f | University of Calgary | Calgary, CA | http://www.ucalgary.ca/
+- id: 143b0eba-a5e6-54fb-95f9-2de2c7092213 | University of Florida | Gainesville, US | http://www.ufl.edu/
+- id: b719e149-7073-5173-a435-791b55891294 | Université de Lausanne | Lausanne, CH | http://www.unil.ch/
+- id: 6ae062a7-9cbc-5972-bbc0-8c064c4e91c0 | Chulalongkorn University | Bangkok, TH | https://www.chula.ac.th/
+codex
+I’m checking the required research memory first, then I’ll verify each university’s current admissions pages and return only the requested JSON.
+exec
+/bin/zsh -lc 'cat /Users/likeanew/.agents/skills/lemma/SKILL.md' in /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+ succeeded in 0ms:
+---
+name: lemma
+description: Persistent cross-session memory for AI agents via MCP. BEFORE starting ANY task (coding, debugging, refactoring, research, docs, optimization — any language), FIRST call memory_read to load what you already know so you never re-derive or re-explore known facts. AFTER finishing, call memory_add to persist new findings and session_attempt for dead ends — unsaved knowledge is lost permanently. Distills reusable guides from experience.
+---
+
+<!-- lemma:skill:v=0.21.0 -->
+
+# Lemma — Persistent Memory & Learning
+
+Lemma is a persistent memory server for AI agents over the Model Context Protocol.
+Every session starts blank — knowledge survives ONLY through tool calls. If you
+learn something and don't save it (`memory_add`), it is gone permanently.
+
+## Workflow
+1. **RECALL** — `memory_read` / `semantic_search`: load what's already known for this
+   project/task. Never re-explore code or re-derive facts that are already saved.
+2. **ACT** — do the task.
+3. **PERSIST** — `memory_add` for new insights; `guide_practice` for guides applied;
+   `session_attempt` for abandoned/dead-end approaches (the most valuable records).
+
+## Two knowledge layers
+- **Memory fragments** (`memory_read` / `memory_add`): atomic facts. Types: `fact`,
+  `pattern`, `lesson`, `warning`, `context`. Confidence evolves with use and feedback.
+- **Guides** (`guide_get` / `guide_distill` / `guide_practice`): procedural skills
+  distilled from fragments. Track usage count + success/failure rate.
+Pipeline: `experience -> memory_add -> pattern/lesson -> guide_distill -> guide_practice`.
+
+## Tools at a glance
+- **Recall & search**: `memory_read`, `semantic_search`, `memory_library` (full
+  snapshot + maintenance signals), `memory_stats`, `memory_audit`.
+- **Write & maintain**: `memory_add`, `memory_update`, `memory_forget`,
+  `memory_merge`, `memory_relate` (supports / contradicts / supersedes / related_to),
+  `memory_feedback`.
+- **Guides**: `guide_get`, `guide_create`, `guide_distill`, `guide_practice`,
+  `guide_update`, `guide_forget`, `guide_merge`.
+- **Sessions & reasoning**: `session_start`, `session_end`, `session_attempt`,
+  `session_stats`, `suggestion_respond`.
+- **Background intelligence**: `conflict_scan`, `proactive_analysis`,
+  `project_analytics` (run automatically; act on signals when sensible).
+
+## Writing a fragment
+```
+## [Topic Title]
+### Context
+[1-2 sentences: what and why it matters]
+### [Content Section]
+- [Key fact 1]
+- [Key fact 2]
+### Rules (optional)
+- [Absolute constraint]
+```
+One idea per fragment, 30-2000 chars, structured markdown (not prose). **Store
+fragments in ENGLISH** (required for search/retrieval). Never ask permission to save.
+
+## Background intelligence
+Conflict detection, distill/merge/refine suggestions, and auto-linking run
+automatically. From the CLI, `lemma -lib` prints a full knowledge-base snapshot
+and `lemma -vis` launches a visualizer.
+
+web search: 
+web search: site:ucalgary.ca international undergraduate tuition 2026 2027 English language proficiency IELTS deadline 2027 ...
+web search: 
+web search: site:ucalgary.ca international undergraduate tuition 2026-2027 fee estimator IELTS undergraduate English proficiency ...
+web search: 
+web search: site:ucalgary.ca/future-students/undergraduate English language proficiency requirements undergraduate IELTS TOEFL PTE Duolingo Calgary ...
+web search: 
+web search: site:unil.ch bachelor foreign students tuition fees CHF semester 2026 2027 application deadline ...
+web search: 
+web search: site:chula.ac.th tuition fee international undergraduate program 2026 fee rate Chulalongkorn ...
+web search: 
+web search: site:admissions.ufl.edu "IELTS" "Duolingo" minimum English proficiency undergraduate 2026 ...
+web search: 
+web search: site:admissions.ufl.edu "English Proficiency" freshman TOEFL UF admission IELTS 2026 ...
+web search: 
+web search: site:unil.ch/immatriculations taxes semestre CHF 580 étudiant bachelor UNIL ...
+web search: 
+web search: site:candidature.unil.ch "Semestre d'automne 2026" Bachelor délai inscription ...
+web search: 
+web search: 
+codex
+{"universities":[{"id":"89e1ba5b-fd4e-5292-ab10-dc8500e7f29f","english":[{"test":"IELTS","minimum":6.5,"detail":"6.5 overall; all other undergraduate programs. Nursing and Education require higher scores.","source_url":"https://calendar.ucalgary.ca/pages/e9845c2c03e84596bcaf892d52666fbf"},{"test":"TOEFL iBT","minimum":86,"detail":"86 for all other undergraduate programs on the pre-Jan 21, 2026 scale; 4.5 on the new scale.","source_url":"https://calendar.ucalgary.ca/pages/e9845c2c03e84596bcaf892d52666fbf"},{"test":"Duolingo","minimum":120,"detail":"120 for all other undergraduate programs; Nursing and Education require higher scores.","source_url":"https://calendar.ucalgary.ca/pages/e9845c2c03e84596bcaf892d52666fbf"},{"test":"PTE Academic","minimum":60,"detail":"60 for all other undergraduate programs; Nursing and Education require higher scores.","source_url":"https://calendar.ucalgary.ca/pages/e9845c2c03e84596bcaf892d52666fbf"},{"test":"Cambridge C1/C2","minimum":180,"detail":"C1 Advanced or C2 Proficiency: 180 for all other undergraduate programs.","source_url":"https://calendar.ucalgary.ca/pages/e9845c2c03e84596bcaf892d52666fbf"}],"tuition":{"amount":30782.1,"amount_max":41487.3,"currency":"CAD","period":"year","academic_year":"2026/27","detail":"Estimated tuition for 30 units (10 three-unit courses); varies by faculty. Program-specific fees may apply.","source_url":"https://calendar.ucalgary.ca/pages/b15b7e973a234197aded0daf61f34b9a"},"application_fee":{"amount":145,"currency":"CAD","source_url":"https://calendar.ucalgary.ca/pages/4e09a54142464876bbb6f6605f94d14d"},"deadlines":[{"title":"Fall 2027 undergraduate application deadline","due_at":"2027-03-01","route":"University of Calgary application","source_url":"https://discover.ucalgary.ca/portal/fallfaq"}],"sat":null,"acceptance_rate":null,"notes":""},{"id":"143b0eba-a5e6-54fb-95f9-2de2c7092213","english":[],"tuition":{"amount":34620,"amount_max":null,"currency":"USD","period":"year","academic_year":"2026/27","detail":"Estimated out-of-state tuition and fees for incoming freshmen based on 30 credits; international cost guide lists separate estimates.","source_url":"https://www.sfa.ufl.edu/cost/"},"application_fee":{"amount":30,"currency":"USD","source_url":"https://admissions.ufl.edu/apply/freshman/"},"deadlines":[{"title":"Early Decision, 2027 entry","due_at":"2026-10-15","route":"Common App","source_url":"https://admissions.ufl.edu/apply/freshman/deadlines"},{"title":"Early Action, 2027 entry","due_at":"2026-11-01","route":"Common App","source_url":"https://admissions.ufl.edu/apply/freshman/deadlines"},{"title":"Regular Decision, 2027 entry","due_at":"2027-01-15","route":"Common App","source_url":"https://admissions.ufl.edu/apply/freshman/deadlines"}],"sat":{"policy":"required","p25":1420,"p75":1520,"source_url":"https://admissions.ufl.edu/freshman-student-profile"},"acceptance_rate":null,"notes":"All first-year applicants must submit SAT, ACT, or CLT; UF does not publish an official acceptance-rate figure on the cited profile page."},{"id":"b719e149-7073-5173-a435-791b55891294","english":[],"tuition":null,"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":""},{"id":"6ae062a7-9cbc-5972-bbc0-8c064c4e91c0","english":[],"tuition":null,"application_fee":null,"deadlines":[{"title":"International Round 1 application closes","due_at":"2027-02-19","route":"University international program portal; dates vary by program","source_url":"https://ise.eng.chula.ac.th/news/ise-admission-foreign-students-ay2027"},{"title":"International Round 2 application closes","due_at":"2027-05-07","route":"University international program portal; dates vary by program","source_url":"https://ise.eng.chula.ac.th/news/ise-admission-foreign-students-ay2027"}],"sat":null,"acceptance_rate":null,"notes":"International bachelor admission requirements, English thresholds, application fees and tuition vary by program."}] }
+tokens used
+114,787
+{"universities":[{"id":"89e1ba5b-fd4e-5292-ab10-dc8500e7f29f","english":[{"test":"IELTS","minimum":6.5,"detail":"6.5 overall; all other undergraduate programs. Nursing and Education require higher scores.","source_url":"https://calendar.ucalgary.ca/pages/e9845c2c03e84596bcaf892d52666fbf"},{"test":"TOEFL iBT","minimum":86,"detail":"86 for all other undergraduate programs on the pre-Jan 21, 2026 scale; 4.5 on the new scale.","source_url":"https://calendar.ucalgary.ca/pages/e9845c2c03e84596bcaf892d52666fbf"},{"test":"Duolingo","minimum":120,"detail":"120 for all other undergraduate programs; Nursing and Education require higher scores.","source_url":"https://calendar.ucalgary.ca/pages/e9845c2c03e84596bcaf892d52666fbf"},{"test":"PTE Academic","minimum":60,"detail":"60 for all other undergraduate programs; Nursing and Education require higher scores.","source_url":"https://calendar.ucalgary.ca/pages/e9845c2c03e84596bcaf892d52666fbf"},{"test":"Cambridge C1/C2","minimum":180,"detail":"C1 Advanced or C2 Proficiency: 180 for all other undergraduate programs.","source_url":"https://calendar.ucalgary.ca/pages/e9845c2c03e84596bcaf892d52666fbf"}],"tuition":{"amount":30782.1,"amount_max":41487.3,"currency":"CAD","period":"year","academic_year":"2026/27","detail":"Estimated tuition for 30 units (10 three-unit courses); varies by faculty. Program-specific fees may apply.","source_url":"https://calendar.ucalgary.ca/pages/b15b7e973a234197aded0daf61f34b9a"},"application_fee":{"amount":145,"currency":"CAD","source_url":"https://calendar.ucalgary.ca/pages/4e09a54142464876bbb6f6605f94d14d"},"deadlines":[{"title":"Fall 2027 undergraduate application deadline","due_at":"2027-03-01","route":"University of Calgary application","source_url":"https://discover.ucalgary.ca/portal/fallfaq"}],"sat":null,"acceptance_rate":null,"notes":""},{"id":"143b0eba-a5e6-54fb-95f9-2de2c7092213","english":[],"tuition":{"amount":34620,"amount_max":null,"currency":"USD","period":"year","academic_year":"2026/27","detail":"Estimated out-of-state tuition and fees for incoming freshmen based on 30 credits; international cost guide lists separate estimates.","source_url":"https://www.sfa.ufl.edu/cost/"},"application_fee":{"amount":30,"currency":"USD","source_url":"https://admissions.ufl.edu/apply/freshman/"},"deadlines":[{"title":"Early Decision, 2027 entry","due_at":"2026-10-15","route":"Common App","source_url":"https://admissions.ufl.edu/apply/freshman/deadlines"},{"title":"Early Action, 2027 entry","due_at":"2026-11-01","route":"Common App","source_url":"https://admissions.ufl.edu/apply/freshman/deadlines"},{"title":"Regular Decision, 2027 entry","due_at":"2027-01-15","route":"Common App","source_url":"https://admissions.ufl.edu/apply/freshman/deadlines"}],"sat":{"policy":"required","p25":1420,"p75":1520,"source_url":"https://admissions.ufl.edu/freshman-student-profile"},"acceptance_rate":null,"notes":"All first-year applicants must submit SAT, ACT, or CLT; UF does not publish an official acceptance-rate figure on the cited profile page."},{"id":"b719e149-7073-5173-a435-791b55891294","english":[],"tuition":null,"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":""},{"id":"6ae062a7-9cbc-5972-bbc0-8c064c4e91c0","english":[],"tuition":null,"application_fee":null,"deadlines":[{"title":"International Round 1 application closes","due_at":"2027-02-19","route":"University international program portal; dates vary by program","source_url":"https://ise.eng.chula.ac.th/news/ise-admission-foreign-students-ay2027"},{"title":"International Round 2 application closes","due_at":"2027-05-07","route":"University international program portal; dates vary by program","source_url":"https://ise.eng.chula.ac.th/news/ise-admission-foreign-students-ay2027"}],"sat":null,"acceptance_rate":null,"notes":"International bachelor admission requirements, English thresholds, application fees and tuition vary by program."}] }

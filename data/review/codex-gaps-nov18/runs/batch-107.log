@@ -1,0 +1,132 @@
+OpenAI Codex v0.169.0
+--------
+workdir: /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+model: gpt-6-luna
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: high
+reasoning summaries: none
+session id: 01a1ee97-03a7-7451-b696-7ff00d7e5c3d
+--------
+user
+You are a careful admissions-data researcher. For each university below, find facts for an
+INTERNATIONAL applicant to a FIRST-YEAR BACHELOR'S degree starting in autumn 2027 (or the nearest
+published cycle). Use the live web. Rules:
+
+- Official sources only: the university's own website (its domain or subdomains), the national
+  application service (UCAS, Common App, OUAC, uni-assist, Studyinkorea, etc.) or a government
+  statistics office. Never use rankings sites, forums, agencies, Wikipedia or blogs.
+- Every value needs the exact page URL where you read it (source_url). If you could not verify a
+  value on an official page, leave it out (null or an empty list). Never guess or estimate.
+- english: the lowest overall score accepted for undergraduate entry, per test (IELTS Academic
+  overall, TOEFL iBT total, Duolingo, PTE). If programmes differ, give the general/lowest common
+  university minimum and say so in detail (e.g. "6.5 overall, no band below 6.0; some
+  programmes higher").
+- tuition: the yearly tuition for international (non-EU / overseas) undergraduates in the local
+  currency. If it varies by programme give amount = lowest and amount_max = highest, and the
+  academic_year the fee applies to (e.g. "2026/27"). If tuition is free, amount = 0.
+- application_fee: for international first-year applicants, local currency.
+- deadlines: the main 2027-entry first-year deadlines (ISO date YYYY-MM-DD) with the route
+  (e.g. "Common App, Regular Decision", "UCAS", "university portal"). Only dates actually
+  published; if only the 2026-entry date is published, include it and put "2026 entry" in title.
+- sat: policy for international applicants; p25/p75 total SAT only if the university publishes
+  them (Common Data Set or admissions profile).
+- acceptance_rate: only if officially published (CDS, admissions statistics page).
+- notes: one short line on anything important (e.g. "Foundation year required for 11-year
+  school certificates"), else "".
+
+Spend effort on the facts students need most: English minimum, tuition, deadlines. Keep each
+detail under 160 characters. Return only the JSON that matches the schema; use each
+university's id exactly as given.
+
+Universities:
+- id: 1409584c-c532-5fca-9088-e8ae5a470e17 | Vilnius University | Vilnius, LT | http://www.vu.lt/
+- id: c17e90b9-27b3-5cfa-ae44-689fb73156db | Belarusian State University | Minsk, BY | https://bsu.by/
+- id: 4c1e0a47-c955-52e2-ad76-93b89e41f7d8 | Universität Bayreuth | Bayreuth, DE | http://www.uni-bayreuth.de/
+- id: 5b41091e-0c04-5123-8ed9-b12e55660663 | Iowa State University | Ames, US | http://www.iastate.edu/
+codex
+I’m checking official admissions and fee pages for each university, using the nearest published entry cycle where 2027 details aren’t available.
+exec
+/bin/zsh -lc 'cat /Users/likeanew/.agents/skills/lemma/SKILL.md' in /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+ succeeded in 0ms:
+---
+name: lemma
+description: Persistent cross-session memory for AI agents via MCP. BEFORE starting ANY task (coding, debugging, refactoring, research, docs, optimization — any language), FIRST call memory_read to load what you already know so you never re-derive or re-explore known facts. AFTER finishing, call memory_add to persist new findings and session_attempt for dead ends — unsaved knowledge is lost permanently. Distills reusable guides from experience.
+---
+
+<!-- lemma:skill:v=0.21.0 -->
+
+# Lemma — Persistent Memory & Learning
+
+Lemma is a persistent memory server for AI agents over the Model Context Protocol.
+Every session starts blank — knowledge survives ONLY through tool calls. If you
+learn something and don't save it (`memory_add`), it is gone permanently.
+
+## Workflow
+1. **RECALL** — `memory_read` / `semantic_search`: load what's already known for this
+   project/task. Never re-explore code or re-derive facts that are already saved.
+2. **ACT** — do the task.
+3. **PERSIST** — `memory_add` for new insights; `guide_practice` for guides applied;
+   `session_attempt` for abandoned/dead-end approaches (the most valuable records).
+
+## Two knowledge layers
+- **Memory fragments** (`memory_read` / `memory_add`): atomic facts. Types: `fact`,
+  `pattern`, `lesson`, `warning`, `context`. Confidence evolves with use and feedback.
+- **Guides** (`guide_get` / `guide_distill` / `guide_practice`): procedural skills
+  distilled from fragments. Track usage count + success/failure rate.
+Pipeline: `experience -> memory_add -> pattern/lesson -> guide_distill -> guide_practice`.
+
+## Tools at a glance
+- **Recall & search**: `memory_read`, `semantic_search`, `memory_library` (full
+  snapshot + maintenance signals), `memory_stats`, `memory_audit`.
+- **Write & maintain**: `memory_add`, `memory_update`, `memory_forget`,
+  `memory_merge`, `memory_relate` (supports / contradicts / supersedes / related_to),
+  `memory_feedback`.
+- **Guides**: `guide_get`, `guide_create`, `guide_distill`, `guide_practice`,
+  `guide_update`, `guide_forget`, `guide_merge`.
+- **Sessions & reasoning**: `session_start`, `session_end`, `session_attempt`,
+  `session_stats`, `suggestion_respond`.
+- **Background intelligence**: `conflict_scan`, `proactive_analysis`,
+  `project_analytics` (run automatically; act on signals when sensible).
+
+## Writing a fragment
+```
+## [Topic Title]
+### Context
+[1-2 sentences: what and why it matters]
+### [Content Section]
+- [Key fact 1]
+- [Key fact 2]
+### Rules (optional)
+- [Absolute constraint]
+```
+One idea per fragment, 30-2000 chars, structured markdown (not prose). **Store
+fragments in ENGLISH** (required for search/retrieval). Never ask permission to save.
+
+## Background intelligence
+Conflict detection, distill/merge/refine suggestions, and auto-linking run
+automatically. From the CLI, `lemma -lib` prints a full knowledge-base snapshot
+and `lemma -vis` launches a visualizer.
+
+web search: 
+web search: site:vu.lt international bachelor admission tuition English requirements 2026 2027 ...
+web search: 
+web search: site:bsu.by "foreign" "Bachelor" admission Belarusian State University tuition 2026 ...
+web search: 
+web search: site:bsu.by/en/ "Admission" "foreign citizens" tuition fee bachelor ...
+web search: 
+web search: site:bsu.by/en "foreign applicants" Belarusian State University admissions ...
+web search: 
+web search: site:admissions.iastate.edu "Fall 2027" international priority deadline ...
+web search: 
+web search: site:admissions.iastate.edu international application fee undergraduate $55 fee ...
+web search: 
+web search: site:foreign.bsu.by "Прием" иностранные граждане БГУ стоимость обучения ...
+web search: 
+web search: site:uni-assist.de fees VPD 75 30 euros 2026 ...
+codex
+{"universities":[{"id":"1409584c-c532-5fca-9088-e8ae5a470e17","english":[{"test":"IELTS","minimum":6.0,"detail":"IELTS Academic 6.0+ for English-taught bachelor's programmes.","source_url":"https://www.vu.lt/en/language-skills"},{"test":"TOEFL iBT","minimum":4.0,"detail":"4.0+ on the TOEFL iBT scale introduced in 2026.","source_url":"https://www.vu.lt/en/language-skills"},{"test":"Duolingo","minimum":105,"detail":"105+ for English-taught bachelor's programmes.","source_url":"https://www.vu.lt/en/language-skills"},{"test":"PTE Academic","minimum":52,"detail":"52+ for English-taught bachelor's programmes.","source_url":"https://www.vu.lt/en/language-skills"},{"test":"Cambridge C1/C2","minimum":169,"detail":"Cambridge English Exam 169+ accepted.","source_url":"https://www.vu.lt/en/language-skills"}],"tuition":{"amount":3176,"amount_max":6000,"currency":"EUR","period":"year","academic_year":"2026/27","detail":"Published non-EU annual tuition range for programmes taught in a foreign language; 2027/28 rates not found.","source_url":"https://www.vu.lt/uploads/EN_Translation_U_C5_B_Esienio_student_C5_B3_pri_C4_97mimas_20262027_kainos_4fc92b1f67.pdf"},"application_fee":{"amount":100,"currency":"EUR","source_url":"https://www.vu.lt/en/admissions/admissions-to-bachelor-studies"},"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"The 2027-entry deadline is not yet published on the admissions page."},{"id":"c17e90b9-27b3-5cfa-ae44-689fb73156db","english":[],"tuition":null,"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":""},{"id":"4c1e0a47-c955-52e2-ad76-93b89e41f7d8","english":[],"tuition":{"amount":0,"amount_max":null,"currency":"EUR","period":"year","academic_year":"2026/27","detail":"No university tuition; semester contribution is charged separately.","source_url":"https://www.studierendenkanzlei.uni-bayreuth.de/en/prospective-students/application-enrolment/index.html"},"application_fee":{"amount":75,"currency":"EUR","source_url":"https://www.uni-assist.de/en/how-to-apply/pay-all-fees/handling-fees/"},"deadlines":[{"title":"Winter 2026/27 (published cycle)","due_at":"2026-07-15","route":"University portal; VPD via uni-assist required for foreign qualifications","source_url":"https://www.studierendenkanzlei.uni-bayreuth.de/en/prospective-students/international-applicants/degree-students/periods-and-deadlines/periods-and-deadlines-for-bachelors/index.php"}],"sat":null,"acceptance_rate":null,"notes":"Foreign qualifications require a uni-assist VPD; language requirements vary by programme."},{"id":"5b41091e-0c04-5123-8ed9-b12e55660663","english":[{"test":"IELTS","minimum":6,"detail":"6.0 overall, all subscores 5.5 or above.","source_url":"https://www.iastate.edu/admission-and-aid/admissions/international-admissions/english-proficiency-requirement"},{"test":"TOEFL iBT","minimum":71,"detail":"71 total, with at least 17 in Speaking and Writing; new scale: 4.0 total, bands 3.5+.","source_url":"https://www.iastate.edu/admission-and-aid/admissions/international-admissions/english-proficiency-requirement"},{"test":"Duolingo","minimum":105,"detail":"105 minimum.","source_url":"https://www.iastate.edu/admission-and-aid/admissions/international-admissions/english-proficiency-requirement"},{"test":"PTE Academic","minimum":48,"detail":"48 overall.","source_url":"https://www.iastate.edu/admission-and-aid/admissions/international-admissions/english-proficiency-requirement"}],"tuition":{"amount":31962,"amount_max":null,"currency":"USD","period":"year","academic_year":"2026/27","detail":"International undergraduate tuition estimate for most majors; mandatory fees are additional.","source_url":"https://financialaid.iastate.edu/getting-started/cost/cost-of-attendance/undergraduate-students/"},"application_fee":{"amount":65,"currency":"USD","source_url":"https://www.iastate.edu/admission-and-aid/admissions/international-students/international-undergraduate-application-information"},"deadlines":[],"sat":{"policy":"optional","p25":1153,"p75":1360,"source_url":"https://www.ir.iastate.edu/files/documents/cds/CDS-25-26.pdf"},"acceptance_rate":null,"notes":"International admission is rolling; the university recommends applying 6–8 weeks before the intended start."}] }
+tokens used
+80,645
+{"universities":[{"id":"1409584c-c532-5fca-9088-e8ae5a470e17","english":[{"test":"IELTS","minimum":6.0,"detail":"IELTS Academic 6.0+ for English-taught bachelor's programmes.","source_url":"https://www.vu.lt/en/language-skills"},{"test":"TOEFL iBT","minimum":4.0,"detail":"4.0+ on the TOEFL iBT scale introduced in 2026.","source_url":"https://www.vu.lt/en/language-skills"},{"test":"Duolingo","minimum":105,"detail":"105+ for English-taught bachelor's programmes.","source_url":"https://www.vu.lt/en/language-skills"},{"test":"PTE Academic","minimum":52,"detail":"52+ for English-taught bachelor's programmes.","source_url":"https://www.vu.lt/en/language-skills"},{"test":"Cambridge C1/C2","minimum":169,"detail":"Cambridge English Exam 169+ accepted.","source_url":"https://www.vu.lt/en/language-skills"}],"tuition":{"amount":3176,"amount_max":6000,"currency":"EUR","period":"year","academic_year":"2026/27","detail":"Published non-EU annual tuition range for programmes taught in a foreign language; 2027/28 rates not found.","source_url":"https://www.vu.lt/uploads/EN_Translation_U_C5_B_Esienio_student_C5_B3_pri_C4_97mimas_20262027_kainos_4fc92b1f67.pdf"},"application_fee":{"amount":100,"currency":"EUR","source_url":"https://www.vu.lt/en/admissions/admissions-to-bachelor-studies"},"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"The 2027-entry deadline is not yet published on the admissions page."},{"id":"c17e90b9-27b3-5cfa-ae44-689fb73156db","english":[],"tuition":null,"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":""},{"id":"4c1e0a47-c955-52e2-ad76-93b89e41f7d8","english":[],"tuition":{"amount":0,"amount_max":null,"currency":"EUR","period":"year","academic_year":"2026/27","detail":"No university tuition; semester contribution is charged separately.","source_url":"https://www.studierendenkanzlei.uni-bayreuth.de/en/prospective-students/application-enrolment/index.html"},"application_fee":{"amount":75,"currency":"EUR","source_url":"https://www.uni-assist.de/en/how-to-apply/pay-all-fees/handling-fees/"},"deadlines":[{"title":"Winter 2026/27 (published cycle)","due_at":"2026-07-15","route":"University portal; VPD via uni-assist required for foreign qualifications","source_url":"https://www.studierendenkanzlei.uni-bayreuth.de/en/prospective-students/international-applicants/degree-students/periods-and-deadlines/periods-and-deadlines-for-bachelors/index.php"}],"sat":null,"acceptance_rate":null,"notes":"Foreign qualifications require a uni-assist VPD; language requirements vary by programme."},{"id":"5b41091e-0c04-5123-8ed9-b12e55660663","english":[{"test":"IELTS","minimum":6,"detail":"6.0 overall, all subscores 5.5 or above.","source_url":"https://www.iastate.edu/admission-and-aid/admissions/international-admissions/english-proficiency-requirement"},{"test":"TOEFL iBT","minimum":71,"detail":"71 total, with at least 17 in Speaking and Writing; new scale: 4.0 total, bands 3.5+.","source_url":"https://www.iastate.edu/admission-and-aid/admissions/international-admissions/english-proficiency-requirement"},{"test":"Duolingo","minimum":105,"detail":"105 minimum.","source_url":"https://www.iastate.edu/admission-and-aid/admissions/international-admissions/english-proficiency-requirement"},{"test":"PTE Academic","minimum":48,"detail":"48 overall.","source_url":"https://www.iastate.edu/admission-and-aid/admissions/international-admissions/english-proficiency-requirement"}],"tuition":{"amount":31962,"amount_max":null,"currency":"USD","period":"year","academic_year":"2026/27","detail":"International undergraduate tuition estimate for most majors; mandatory fees are additional.","source_url":"https://financialaid.iastate.edu/getting-started/cost/cost-of-attendance/undergraduate-students/"},"application_fee":{"amount":65,"currency":"USD","source_url":"https://www.iastate.edu/admission-and-aid/admissions/international-students/international-undergraduate-application-information"},"deadlines":[],"sat":{"policy":"optional","p25":1153,"p75":1360,"source_url":"https://www.ir.iastate.edu/files/documents/cds/CDS-25-26.pdf"},"acceptance_rate":null,"notes":"International admission is rolling; the university recommends applying 6–8 weeks before the intended start."}] }

@@ -1,0 +1,26 @@
+# Notes, targets-1 (agent-gaps-nov19)
+
+- SNU (6a9e2556): English IELTS 6.0 / TOEFL iBT 80 and KRW 70,000 undergrad fee from en.snu.ac.kr FAQ (general international FAQ, not undergrad-only). Undergrad tuition and 2027 deadlines not found on official pages.
+- Paris-Saclay (8e191d89): 2026-27 fees "coming soon" on official page; only EUR 178 national rate (not international). Nothing included.
+- King Saud (dce3ec59): bachelor fee-based route for non-Saudi residents; no bachelor fee, English or deadline verified on ksu.edu.sa.
+- UKM (04c4aef9): International processing fee MYR 100 (USD 30) from join.ukm.my. No undergrad English minimum, tuition or 2027 deadline on official pages.
+- TU Eindhoven (835b45a6): IELTS 6.5 (6.0 per section), TOEFL iBT 4.5 on 1-6 scale from 21 Jan 2026 (90 before), and non-EEA bachelor fee EUR 22,400 for 2027/28 from tue.nl. No application fee or 2027 deadline found.
+- Al-Farabi (cb8de211): foreign applicant intake windows (May 15-Aug 20; Oct 16-Dec 5) given without a year, so not used. No bachelor tuition or English minimum verified.
+- IIT Madras (a2f62835): BS Data Science qualifier application last date 2027-01-29 (study.iitm.ac.in). International fee and BS English test not found.
+- UAB (bb49d73c): only exchange and partial degree pages; no non-EU degree fee, route or English minimum verified.
+- Tecnologico de Monterrey (1b35aa93): accepted tests listed (TOEFL iBT, B2 First, PET, Pearson) without minimum scores; fees and 2027 dates "coming soon".
+- Louvain School of Management (575d5e9a): UCLouvain pages show only 2026-entry non-EU deadlines and conflicting fees (EUR 200 vs 300); LSM IB page is stale. Nothing included.
+- ENS Lyon (48888524): non-EU direct entry not open for 2025-26; no fee, English or 2027 deadline verified.
+- Universite de Lausanne (b719e149): CHF 200 non-refundable fee for bachelor with foreign diploma. Deadlines are day/month without year, so not used.
+- IIT Kanpur (fa22ef60): only PG pages found (fee waiver for foreign nationals, PG deadline Nov 3 2026); nothing BTech-specific.
+- CEU (32d95a2a): bachelor English minimums (IELTS 6.5, TOEFL 88, PTE 59, C1/C2 180) and round deadlines (2026-10-15, 2027-02-02, 2027-04-15, 2027-07-15) for AY 2026/27 from ceu.edu; tuition EUR 8,000/year from tuition page (year label inferred). Application fee not verified.
+- NTNU (fab44467): IELTS 6.5 per section is only on the master's page, so omitted. No bachelor tuition or 2027 deadline.
+- University of Warsaw (29507709): 2026/27 fee PDF exists but per-programme amounts not extracted; no 2027 dates yet.
+- Sultan Qaboos (bdb1f2b9): Afaaq/exchange pages only; no undergrad fee, English minimum or deadline verified.
+- HUST (7e74da55): 2027 ISO guide lists fees and dates in search results, but the page could not be fetched; nothing cited. Re-run needed.
+- Bauman (0991bacc): programmes taught in Russian; only a preparatory-year fee (RUB 235,000) found, not bachelor tuition.
+- Koc (1848c4c4): international.ku.edu.tr returned HTTP 403; nothing cited.
+- University of Jordan (f951261f): official registration page rejected on fetch; fee figures from snippets only, not used.
+- PUCP (a4ecb670): official pages cover exchange students and convalidation only; no undergrad international admission data.
+- Cairo University (167202e2): only faculty-specific fees and exchange B2 requirement; nothing university-wide.
+- NTUA (f35c594a): search returned postgraduate calls only; nothing undergraduate verified.

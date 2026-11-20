@@ -1,0 +1,62 @@
+OpenAI Codex v0.169.0
+--------
+workdir: /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+model: gpt-6-luna
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: high
+reasoning summaries: none
+session id: 01a1ee9a-4e6f-7282-9a88-4531c2313743
+--------
+user
+You are a careful admissions-data researcher. For each university below, find facts for an
+INTERNATIONAL applicant to a FIRST-YEAR BACHELOR'S degree starting in autumn 2027 (or the nearest
+published cycle). Use the live web. Rules:
+
+- Official sources only: the university's own website (its domain or subdomains), the national
+  application service (UCAS, Common App, OUAC, uni-assist, Studyinkorea, etc.) or a government
+  statistics office. Never use rankings sites, forums, agencies, Wikipedia or blogs.
+- Every value needs the exact page URL where you read it (source_url). If you could not verify a
+  value on an official page, leave it out (null or an empty list). Never guess or estimate.
+- english: the lowest overall score accepted for undergraduate entry, per test (IELTS Academic
+  overall, TOEFL iBT total, Duolingo, PTE). If programmes differ, give the general/lowest common
+  university minimum and say so in detail (e.g. "6.5 overall, no band below 6.0; some
+  programmes higher").
+- tuition: the yearly tuition for international (non-EU / overseas) undergraduates in the local
+  currency. If it varies by programme give amount = lowest and amount_max = highest, and the
+  academic_year the fee applies to (e.g. "2026/27"). If tuition is free, amount = 0.
+- application_fee: for international first-year applicants, local currency.
+- deadlines: the main 2027-entry first-year deadlines (ISO date YYYY-MM-DD) with the route
+  (e.g. "Common App, Regular Decision", "UCAS", "university portal"). Only dates actually
+  published; if only the 2026-entry date is published, include it and put "2026 entry" in title.
+- sat: policy for international applicants; p25/p75 total SAT only if the university publishes
+  them (Common Data Set or admissions profile).
+- acceptance_rate: only if officially published (CDS, admissions statistics page).
+- notes: one short line on anything important (e.g. "Foundation year required for 11-year
+  school certificates"), else "".
+
+Spend effort on the facts students need most: English minimum, tuition, deadlines. Keep each
+detail under 160 characters. Return only the JSON that matches the schema; use each
+university's id exactly as given.
+
+Universities:
+- id: 20f1359f-5547-5f71-a81d-e5dba14dd836 | Kobe University | Kobe, JP | http://www.kobe-u.ac.jp/
+- id: 7d5328c9-e34e-5d6c-b356-b55163febca7 | Jinan University | Guangzhou, CN | https://english.jnu.edu.cn/
+- id: bfead38d-ccf8-5fad-b15f-9daf02565339 | Aristotle University of Thessaloniki | Thessaloniki, GR | https://www.auth.gr/
+- id: 1d5f4468-0ef3-5396-981f-935c40f359df | Université de Bordeaux | Bordeaux, FR | https://www.u-bordeaux.fr
+codex
+I’ll check official admissions and international fee pages for each institution, then return only verified fields with direct source URLs.
+web search: 
+web search: site:kobe-u.ac.jp international undergraduate admissions English proficiency tuition 2027 Kobe University ...
+web search: 
+web search: site:english.jnu.edu.cn "2026" undergraduate international students application fee tuition IELTS ...
+web search: 
+web search: Jinan University international undergraduate admission guide 2026 application fee tuition official english.jnu.edu.cn ...
+web search: 
+web search: 
+codex
+{"universities":[{"id":"20f1359f-5547-5f71-a81d-e5dba14dd836","english":[],"tuition":{"amount":535800,"amount_max":null,"currency":"JPY","period":"year","academic_year":"2026","detail":"Annual undergraduate tuition; the 2027-entry guide says its quoted fee applies to 2026.","source_url":"https://www.stin.kobe-u.ac.jp/jyukensei/pdf/D/D_2027_4_nyugaku_boshu_eng.pdf"},"application_fee":{"amount":17000,"currency":"JPY","source_url":"https://www.kobe-u.ac.jp/en/campus-life/tuition/about/"},"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"International undergraduate routes are faculty-specific and generally require Japanese; the published 2027 guide is for one faculty."},{"id":"7d5328c9-e34e-5d6c-b356-b55163febca7","english":[{"test":"IELTS","minimum":5.5,"detail":"For English-taught International School majors: 5.5 overall, no section below 5.0.","source_url":"https://zsb.jnu.edu.cn/2026/0113/c40322a849403/page.htm"},{"test":"TOEFL iBT","minimum":80,"detail":"For English-taught International School majors; minimum total score 80.","source_url":"https://zsb.jnu.edu.cn/2026/0113/c40322a849403/page.htm"}],"tuition":{"amount":19000,"amount_max":40000,"currency":"CNY","period":"year","academic_year":"2026","detail":"Annual range for international undergraduates, from general humanities to International School medicine.","source_url":"https://zsb.jnu.edu.cn/2026/0113/c40322a849403/page.htm"},"application_fee":null,"deadlines":[{"title":"2026 entry, application review admission","due_at":"2026-05-31","route":"University application portal","source_url":"https://zsb.jnu.edu.cn/2026/0113/c40322a849403/page.htm"},{"title":"2026 entry, joint entrance exam registration","due_at":"2026-03-15","route":"University application portal","source_url":"https://zsb.jnu.edu.cn/2026/0113/c40322a849403/page.htm"}],"sat":{"policy":"accepted_alternative","p25":null,"p75":null,"source_url":"https://zsb.jnu.edu.cn/2026/0113/c40322a849403/page.htm"},"acceptance_rate":null,"notes":"SAT 1030 is listed as an English-proficiency alternative for English-taught majors."},{"id":"bfead38d-ccf8-5fad-b15f-9daf02565339","english":[],"tuition":{"amount":6000,"amount_max":8000,"currency":"EUR","period":"year","academic_year":"2026/27","detail":"Annual fees vary by English-taught undergraduate programme: €6,000–€8,000; programme pages show published fees.","source_url":"https://www.envsen.auth.gr/admissions/faqs"},"application_fee":null,"deadlines":[{"title":"September 2027 entry; rolling applications","due_at":"2027-09-01","route":"University programme portal","source_url":"https://cese.auth.gr/admissions"}],"sat":null,"acceptance_rate":null,"notes":"English-taught undergraduate offerings are programme-specific; most university undergraduate courses are taught in Greek."},{"id":"1d5f4468-0ef3-5396-981f-935c40f359df","english":[],"tuition":{"amount":2902,"amount_max":2902,"currency":"EUR","period":"year","academic_year":"2026/27","detail":"Published differentiated fee for an international non-EU entrant in Licence; exemptions may apply.","source_url":"https://www.u-bordeaux.fr/formation/candidatures-et-inscriptions/cout-des-etudes/etudiants-extra-communautaires"},"application_fee":null,"deadlines":[{"title":"2027 entry, DAP Licence 1","due_at":"2026-12-15","route":"DAP / Études en France","source_url":"https://www.campusfrance.org/en/application-non-EU-student-living-in-EU"}],"sat":null,"acceptance_rate":null,"notes":"Most undergraduate courses are taught in French; the university cites French B2 for international applicants."}] }
+tokens used
+37,513
+{"universities":[{"id":"20f1359f-5547-5f71-a81d-e5dba14dd836","english":[],"tuition":{"amount":535800,"amount_max":null,"currency":"JPY","period":"year","academic_year":"2026","detail":"Annual undergraduate tuition; the 2027-entry guide says its quoted fee applies to 2026.","source_url":"https://www.stin.kobe-u.ac.jp/jyukensei/pdf/D/D_2027_4_nyugaku_boshu_eng.pdf"},"application_fee":{"amount":17000,"currency":"JPY","source_url":"https://www.kobe-u.ac.jp/en/campus-life/tuition/about/"},"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"International undergraduate routes are faculty-specific and generally require Japanese; the published 2027 guide is for one faculty."},{"id":"7d5328c9-e34e-5d6c-b356-b55163febca7","english":[{"test":"IELTS","minimum":5.5,"detail":"For English-taught International School majors: 5.5 overall, no section below 5.0.","source_url":"https://zsb.jnu.edu.cn/2026/0113/c40322a849403/page.htm"},{"test":"TOEFL iBT","minimum":80,"detail":"For English-taught International School majors; minimum total score 80.","source_url":"https://zsb.jnu.edu.cn/2026/0113/c40322a849403/page.htm"}],"tuition":{"amount":19000,"amount_max":40000,"currency":"CNY","period":"year","academic_year":"2026","detail":"Annual range for international undergraduates, from general humanities to International School medicine.","source_url":"https://zsb.jnu.edu.cn/2026/0113/c40322a849403/page.htm"},"application_fee":null,"deadlines":[{"title":"2026 entry, application review admission","due_at":"2026-05-31","route":"University application portal","source_url":"https://zsb.jnu.edu.cn/2026/0113/c40322a849403/page.htm"},{"title":"2026 entry, joint entrance exam registration","due_at":"2026-03-15","route":"University application portal","source_url":"https://zsb.jnu.edu.cn/2026/0113/c40322a849403/page.htm"}],"sat":{"policy":"accepted_alternative","p25":null,"p75":null,"source_url":"https://zsb.jnu.edu.cn/2026/0113/c40322a849403/page.htm"},"acceptance_rate":null,"notes":"SAT 1030 is listed as an English-proficiency alternative for English-taught majors."},{"id":"bfead38d-ccf8-5fad-b15f-9daf02565339","english":[],"tuition":{"amount":6000,"amount_max":8000,"currency":"EUR","period":"year","academic_year":"2026/27","detail":"Annual fees vary by English-taught undergraduate programme: €6,000–€8,000; programme pages show published fees.","source_url":"https://www.envsen.auth.gr/admissions/faqs"},"application_fee":null,"deadlines":[{"title":"September 2027 entry; rolling applications","due_at":"2027-09-01","route":"University programme portal","source_url":"https://cese.auth.gr/admissions"}],"sat":null,"acceptance_rate":null,"notes":"English-taught undergraduate offerings are programme-specific; most university undergraduate courses are taught in Greek."},{"id":"1d5f4468-0ef3-5396-981f-935c40f359df","english":[],"tuition":{"amount":2902,"amount_max":2902,"currency":"EUR","period":"year","academic_year":"2026/27","detail":"Published differentiated fee for an international non-EU entrant in Licence; exemptions may apply.","source_url":"https://www.u-bordeaux.fr/formation/candidatures-et-inscriptions/cout-des-etudes/etudiants-extra-communautaires"},"application_fee":null,"deadlines":[{"title":"2027 entry, DAP Licence 1","due_at":"2026-12-15","route":"DAP / Études en France","source_url":"https://www.campusfrance.org/en/application-non-EU-student-living-in-EU"}],"sat":null,"acceptance_rate":null,"notes":"Most undergraduate courses are taught in French; the university cites French B2 for international applicants."}] }

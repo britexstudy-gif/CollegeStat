@@ -30,6 +30,7 @@ const login = await db.auth.signInWithPassword({
 assert.equal(login.error, null, "review login");
 const headers = {
   "Content-Type": "application/json",
+  Origin: base,
   Accept: "application/json, text/event-stream",
   Authorization: "Bearer " + login.data.session.access_token,
 };
@@ -131,7 +132,7 @@ const cross = await request(
 assert.equal(cross.status, 403);
 const anonymous = await fetch(base + "/api/staff/mcp", {
   method: "POST",
-  headers: { "Content-Type": "application/json" },
+  headers: { "Content-Type": "application/json", Origin: base },
   body: "{}",
 });
 assert.equal(anonymous.status, 401);

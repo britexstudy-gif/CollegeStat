@@ -1,0 +1,38 @@
+/* Calm, consistent page headers inside the workspace (no giant slogans). */
+html body .workspace-studio .page-intro,
+html body .workspace-studio .ranking-studio-intro.rs-compact {
+  display: block;
+  margin: 0 0 22px;
+  padding: 0 0 18px;
+  border: 0;
+  border-bottom: 1px solid var(--op-line, #e5e8ef);
+  border-radius: 0;
+  background: none;
+  box-shadow: none;
+  min-height: 0;
+}
+html body .workspace-studio .page-intro h1,
+html body .workspace-studio .ranking-studio-intro.rs-compact h1 {
+  margin: 0;
+  font-size: 28px;
+  line-height: 1.15;
+  font-weight: 650;
+  letter-spacing: -0.03em;
+}
+html body .workspace-studio .page-intro p,
+html body .workspace-studio .ranking-studio-intro.rs-compact p {
+  max-width: 70ch;
+  margin: 6px 0 0;
+  font-size: 15px;
+  line-height: 1.55;
+  color: var(--op-muted, #64748b);
+}
+html body .workspace-studio .page-intro .eyebrow {
+  display: none;
+}
+html body .ranking-studio-intro.rs-compact {
+  padding-bottom: 18px;
+}
+html body .ranking-studio-intro.rs-compact h1 span {
+  color: inherit;
+}

@@ -1,0 +1,7 @@
+# Account and dashboard flow audit — Muse Spark 1.3 xhigh
+
+Read-only audit of current CollegeStat sign-in, sign-up, password reset, staff login, profile loading and dashboard access. Inspect current auth.tsx, provider.tsx, workspace/admin gates and account-owner helpers/tests. Root recently fixed hydration readiness, provider-request timeout, account-switch privacy and admin profile loading. Find remaining actual problems and evaluate the fixes. Do not rewrite working flows or claim OAuth/email/analytics work when unconfigured. Check keyboard/touch controls, redirect validation, loading/error states, source of staff authorization and owner isolation.
+
+Own ONLY outputs/muse-account-flow-audit-oct09-report.md and new focused test files if useful. All other application files are read-only. Do not inspect .env, private review accounts, passwords, tokens or model auth storage. Do not create/reset/use accounts, send mail, change hosted data, restart servers, build the project or substitute the specified model. Other agents are modifying landing and university pages: do not touch those files. Local public-only browser checks are allowed if the browser runtime is already installed.
+
+Deliver prioritized evidence-backed findings with file/line references, verification commands, and whether a finding blocks preview or requires provider configuration. Run any new focused tests. Root will implement fixes that survive review.

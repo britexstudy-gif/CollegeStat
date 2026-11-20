@@ -1,0 +1,62 @@
+OpenAI Codex v0.169.0
+--------
+workdir: /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+model: gpt-6-luna
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: high
+reasoning summaries: none
+session id: 01a1ee99-40e8-7d42-b95b-cdcf0a0bdd7c
+--------
+user
+You are a careful admissions-data researcher. For each university below, find facts for an
+INTERNATIONAL applicant to a FIRST-YEAR BACHELOR'S degree starting in autumn 2027 (or the nearest
+published cycle). Use the live web. Rules:
+
+- Official sources only: the university's own website (its domain or subdomains), the national
+  application service (UCAS, Common App, OUAC, uni-assist, Studyinkorea, etc.) or a government
+  statistics office. Never use rankings sites, forums, agencies, Wikipedia or blogs.
+- Every value needs the exact page URL where you read it (source_url). If you could not verify a
+  value on an official page, leave it out (null or an empty list). Never guess or estimate.
+- english: the lowest overall score accepted for undergraduate entry, per test (IELTS Academic
+  overall, TOEFL iBT total, Duolingo, PTE). If programmes differ, give the general/lowest common
+  university minimum and say so in detail (e.g. "6.5 overall, no band below 6.0; some
+  programmes higher").
+- tuition: the yearly tuition for international (non-EU / overseas) undergraduates in the local
+  currency. If it varies by programme give amount = lowest and amount_max = highest, and the
+  academic_year the fee applies to (e.g. "2026/27"). If tuition is free, amount = 0.
+- application_fee: for international first-year applicants, local currency.
+- deadlines: the main 2027-entry first-year deadlines (ISO date YYYY-MM-DD) with the route
+  (e.g. "Common App, Regular Decision", "UCAS", "university portal"). Only dates actually
+  published; if only the 2026-entry date is published, include it and put "2026 entry" in title.
+- sat: policy for international applicants; p25/p75 total SAT only if the university publishes
+  them (Common Data Set or admissions profile).
+- acceptance_rate: only if officially published (CDS, admissions statistics page).
+- notes: one short line on anything important (e.g. "Foundation year required for 11-year
+  school certificates"), else "".
+
+Spend effort on the facts students need most: English minimum, tuition, deadlines. Keep each
+detail under 160 characters. Return only the JSON that matches the schema; use each
+university's id exactly as given.
+
+Universities:
+- id: 28c2025e-e310-5fb0-ad88-d419230776ed | Chongqing University | Chongqing, CN | http://www.cqu.edu.cn/
+- id: 1c4ab872-19d6-5dd6-80bb-3c15b6f62c01 | Ben-Gurion University of the Negev | Beersheba, IL | http://www.bgu.ac.il/
+- id: 6efa7a81-d58b-5172-b014-89af89bf1ded | Université Laval | Québec, CA | http://www.ulaval.ca/
+- id: e5d95ac8-6709-506a-8203-17f676adaf58 | Universidad de Sevilla | Seville, ES | http://www.us.es/
+codex
+I’ll check each university’s official admissions and fee pages, prioritizing undergraduate English requirements, international tuition, and published deadlines.
+web search: 
+web search: site:cqu.edu.cn international undergraduate admission 2026 tuition English Chongqing University ...
+web search: 
+web search: site:bgu.ac.il/en international undergraduate admissions English proficiency tuition application deadline 2026 bachelor's ...
+web search: 
+web search: site:bgu.ac.il/en/study/undergraduate international students bachelor admission English IELTS TOEFL BGU ...
+web search: 
+web search: 
+codex
+{"universities":[{"id":"28c2025e-e310-5fb0-ad88-d419230776ed","english":[{"test":"IELTS","minimum":6,"detail":"IELTS 6.0 overall for English-taught programs; English-medium study proof is also accepted.","source_url":"https://study.cqu.edu.cn/info/1887/2789.htm"},{"test":"TOEFL iBT","minimum":80,"detail":"TOEFL iBT 80 for English-taught programs; English-medium study proof is also accepted.","source_url":"https://study.cqu.edu.cn/info/1887/2789.htm"}],"tuition":{"amount":18000,"amount_max":30000,"currency":"CNY","period":"year","academic_year":"2026/27","detail":"International bachelor’s fees vary by program and language of instruction; standards apply from autumn 2026.","source_url":"https://study.cqu.edu.cn/HOME/ADMISSION/Overview/Tuition_and_Accommodation_Fees.htm"},"application_fee":{"amount":600,"currency":"CNY","source_url":"https://study.cqu.edu.cn/info/1887/2789.htm"},"deadlines":[{"title":"2026 entry","due_at":"2026-05-31","route":"CQU online application system","source_url":"https://study.cqu.edu.cn/info/1887/2789.htm"}],"sat":null,"acceptance_rate":null,"notes":"The 2026 guide requires the CSCA undergraduate entrance test."},{"id":"1c4ab872-19d6-5dd6-80bb-3c15b6f62c01","english":[],"tuition":{"amount":15253.52,"amount_max":20612.5,"currency":"ILS","period":"year","academic_year":"2026/27","detail":"Published non-Israeli rates: reduced undergraduate tuition NIS 15,253.52; regular tuition NIS 20,612.50.","source_url":"https://www.bgu.ac.il/en/study/payments-lobby/payments-content/rates-and-services/"},"application_fee":null,"deadlines":[],"sat":{"policy":"accepted_alternative","p25":null,"p75":null,"source_url":"https://www.bgu.ac.il/en/study/content-pages/application-process/"},"acceptance_rate":null,"notes":"Undergraduates need an English placement exam; SAT Reading and Writing or the AMIR exam can determine placement."},{"id":"6efa7a81-d58b-5172-b014-89af89bf1ded","english":[],"tuition":{"amount":28232.96,"amount_max":null,"currency":"CAD","period":"year","academic_year":"2026/27","detail":"International undergraduate tuition for 30 credits per year; some exemptions may reduce the fee.","source_url":"https://www.ulaval.ca/experience-ulaval/planifiez-vos-etudes/cout-des-etudes-et-budget"},"application_fee":null,"deadlines":[{"title":"Fall 2027 international applicants","due_at":"2027-02-01","route":"Université Laval application portal; general deadline for international undergraduate programs","source_url":"https://www.ulaval.ca/en/admission/apply-for-admission/admission-application-deadlines"}],"sat":null,"acceptance_rate":null,"notes":""},{"id":"e5d95ac8-6709-506a-8203-17f676adaf58","english":[],"tuition":{"amount":757.2,"amount_max":null,"currency":"EUR","period":"year","academic_year":"2026/27","detail":"First enrollment: €12.62 per ECTS credit; €757.20 for a standard 60-credit year.","source_url":"https://cat.us.es/index.php/que-precios-debo-abonar-como-estudiante-internacional/que-precios-debo-abonar-como-estudiante"},"application_fee":null,"deadlines":[{"title":"2026 entry, phase for foreign applicants","due_at":"2026-03-19","route":"Andalusian university pre-registration, Fase de Extranjeros","source_url":"https://www.us.es/comunicaciones-oficiales/admision-en-grados-fase-extranjeros-curso-26-27"}],"sat":null,"acceptance_rate":null,"notes":"Foreign applicants need qualifying foreign secondary credentials or Spanish Bachillerato equivalency."}] }
+tokens used
+64,883
+{"universities":[{"id":"28c2025e-e310-5fb0-ad88-d419230776ed","english":[{"test":"IELTS","minimum":6,"detail":"IELTS 6.0 overall for English-taught programs; English-medium study proof is also accepted.","source_url":"https://study.cqu.edu.cn/info/1887/2789.htm"},{"test":"TOEFL iBT","minimum":80,"detail":"TOEFL iBT 80 for English-taught programs; English-medium study proof is also accepted.","source_url":"https://study.cqu.edu.cn/info/1887/2789.htm"}],"tuition":{"amount":18000,"amount_max":30000,"currency":"CNY","period":"year","academic_year":"2026/27","detail":"International bachelor’s fees vary by program and language of instruction; standards apply from autumn 2026.","source_url":"https://study.cqu.edu.cn/HOME/ADMISSION/Overview/Tuition_and_Accommodation_Fees.htm"},"application_fee":{"amount":600,"currency":"CNY","source_url":"https://study.cqu.edu.cn/info/1887/2789.htm"},"deadlines":[{"title":"2026 entry","due_at":"2026-05-31","route":"CQU online application system","source_url":"https://study.cqu.edu.cn/info/1887/2789.htm"}],"sat":null,"acceptance_rate":null,"notes":"The 2026 guide requires the CSCA undergraduate entrance test."},{"id":"1c4ab872-19d6-5dd6-80bb-3c15b6f62c01","english":[],"tuition":{"amount":15253.52,"amount_max":20612.5,"currency":"ILS","period":"year","academic_year":"2026/27","detail":"Published non-Israeli rates: reduced undergraduate tuition NIS 15,253.52; regular tuition NIS 20,612.50.","source_url":"https://www.bgu.ac.il/en/study/payments-lobby/payments-content/rates-and-services/"},"application_fee":null,"deadlines":[],"sat":{"policy":"accepted_alternative","p25":null,"p75":null,"source_url":"https://www.bgu.ac.il/en/study/content-pages/application-process/"},"acceptance_rate":null,"notes":"Undergraduates need an English placement exam; SAT Reading and Writing or the AMIR exam can determine placement."},{"id":"6efa7a81-d58b-5172-b014-89af89bf1ded","english":[],"tuition":{"amount":28232.96,"amount_max":null,"currency":"CAD","period":"year","academic_year":"2026/27","detail":"International undergraduate tuition for 30 credits per year; some exemptions may reduce the fee.","source_url":"https://www.ulaval.ca/experience-ulaval/planifiez-vos-etudes/cout-des-etudes-et-budget"},"application_fee":null,"deadlines":[{"title":"Fall 2027 international applicants","due_at":"2027-02-01","route":"Université Laval application portal; general deadline for international undergraduate programs","source_url":"https://www.ulaval.ca/en/admission/apply-for-admission/admission-application-deadlines"}],"sat":null,"acceptance_rate":null,"notes":""},{"id":"e5d95ac8-6709-506a-8203-17f676adaf58","english":[],"tuition":{"amount":757.2,"amount_max":null,"currency":"EUR","period":"year","academic_year":"2026/27","detail":"First enrollment: €12.62 per ECTS credit; €757.20 for a standard 60-credit year.","source_url":"https://cat.us.es/index.php/que-precios-debo-abonar-como-estudiante-internacional/que-precios-debo-abonar-como-estudiante"},"application_fee":null,"deadlines":[{"title":"2026 entry, phase for foreign applicants","due_at":"2026-03-19","route":"Andalusian university pre-registration, Fase de Extranjeros","source_url":"https://www.us.es/comunicaciones-oficiales/admision-en-grados-fase-extranjeros-curso-26-27"}],"sat":null,"acceptance_rate":null,"notes":"Foreign applicants need qualifying foreign secondary credentials or Spanish Bachillerato equivalency."}] }

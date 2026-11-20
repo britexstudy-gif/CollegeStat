@@ -81,8 +81,8 @@ test("percentage range accepts exact zero and bounds invalid or inverted input",
   assert.deepEqual(percentageRange(4.556, 74.91), [4.6, 74.9]);
 });
 
-test("ranking API identities keep the same edition and position as their displayed row", () => {
-  const table = rankingTable(
+test("ranking API identities keep the same edition and position as their displayed row", async () => {
+  const table = await rankingTable(
     new URLSearchParams("provider=qs&q=Stanford University"),
   );
   const stanford = table.rows.find((r) => r.university?.slug === "stanford")!;

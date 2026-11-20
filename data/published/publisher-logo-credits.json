@@ -1,0 +1,25 @@
+{
+ "checked_at": "2026-10-21",
+ "logos": [
+  {
+   "file": "usnews.svg",
+   "source": "https://commons.wikimedia.org/wiki/File:U.S._News_%26_World_Report_logo.svg",
+   "license": "Public domain (text logo)"
+  },
+  {
+   "file": "webometrics.png",
+   "source": "https://commons.wikimedia.org/wiki/File:Webometrics.png",
+   "license": "CC BY-SA 3.0, via Wikimedia Commons"
+  },
+  {
+   "file": "urap.png",
+   "source": "https://commons.wikimedia.org/wiki/File:URAP_(University_Ranking_By_Academic_Performance).png",
+   "license": "CC BY-SA 4.0, via Wikimedia Commons"
+  },
+  {
+   "file": "nirf.png",
+   "source": "https://www.nirfindia.org/ (site icon)",
+   "license": "Official site icon, used to identify the publisher"
+  }
+ ]
+}

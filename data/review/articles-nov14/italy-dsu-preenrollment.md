@@ -1,0 +1,38 @@
+---
+slug: "italy-dsu-preenrollment"
+title: "Italy: regional scholarships (DSU) and pre-enrollment"
+category: "money"
+summary: "Regional scholarship offices set their own rules; Universitaly explains the study pre-enrollment steps for international students."
+central_asia: true
+reading_minutes: 2
+sources: [{"title": "Universitaly: First steps in Italy", "url": "https://www.universitaly.it/en/first-steps"}, {"title": "Universitaly: International students procedures", "url": "https://www.universitaly.it/en/studenti-stranieri"}, {"title": "EDISU Piemonte: Scholarships and grants", "url": "https://edisu.piemonte.it/en/scholarships-and-grants/financial-benefits/scholarship-and-grants"}]
+source_url: "https://www.universitaly.it/en/first-steps"
+checked_at: "2026-11-14"
+verification_status: "staged"
+status: "draft"
+---
+
+## In short
+
+- DSU aid is run by regional offices, and each call has its own rules.
+- International students may need to prove family income and assets in a set format.
+- Contact your university before completing Universitaly pre-enrollment.
+
+## Regional aid is not one national scholarship
+
+Italian regions and local bodies publish calls for student support. For example, EDISU Piemonte runs an annual competition for students at eligible institutions in Piedmont. The call explains who can apply, benefits, documents, and dates. Other regions have separate offices and rules. [EDISU Piemonte](https://edisu.piemonte.it/en/scholarships-and-grants/financial-benefits/scholarship-and-grants)
+
+If you apply from outside Italy, read the section for international students. The office may ask for official records of family income and assets, plus translation or legal authentication. The exact documents, deadlines, and submission method come from the current regional call. Do not copy last year’s list.
+
+## Pre-enrollment and visa steps
+
+Universitaly says to choose a course, check its entry rules, contact the institution, and then complete pre-enrollment online with the agreed documents. If the institution accepts the request, it validates it for the visa process. This validation does not guarantee a visa; the Italian consulate decides the visa application. [Universitaly steps](https://www.universitaly.it/en/first-steps) [International student rules](https://www.universitaly.it/en/studenti-stranieri)
+
+Scholarship and admission steps can run at the same time, but their deadlines differ. Ask the university and regional office which tasks you must finish before arrival.
+
+## What to do next
+
+- [ ] Find the official regional scholarship office for your university.
+- [ ] Download the current call and list every required family document.
+- [ ] Ask the university about course admission and Universitaly pre-enrollment.
+- [ ] Check the Italian consulate’s visa list and deadline.

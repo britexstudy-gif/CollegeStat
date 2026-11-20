@@ -1,0 +1,2022 @@
+[
+  {
+    "university_id": "765d7982-ec3a-5780-99b0-8929c72036d5",
+    "name": "Birkbeck College, University of London",
+    "country": "GB",
+    "main_language_of_instruction": "English",
+    "programmes": [
+      {
+        "name": "Liberal Arts",
+        "field": "liberal arts",
+        "degree": "BA",
+        "duration_years": 3,
+        "language": "English",
+        "url": "https://www.bbk.ac.uk/courses/undergraduate/liberal-arts",
+        "source_url": "https://www.bbk.ac.uk/courses/undergraduate/liberal-arts",
+        "checked_at": "2026-11-14",
+        "verification_status": "staged"
+      }
+    ],
+    "tuition": {
+      "amount": 18500,
+      "currency": "GBP",
+      "academic_year": "2026/27",
+      "basis": "per academic year (illustrative full-time UG)",
+      "varies_by_programme": true,
+      "range_min": 18500,
+      "range_max": null,
+      "url": "https://www.bbk.ac.uk/international/finance/fees",
+      "source_url": "https://www.bbk.ac.uk/international/finance/fees",
+      "checked_at": "2026-11-14",
+      "verification_status": "staged"
+    },
+    "living_cost": {
+      "amount": null,
+      "currency": "GBP",
+      "url": "https://www.bbk.ac.uk/international/finance/fees",
+      "source_url": "https://www.bbk.ac.uk/international/finance/fees",
+      "checked_at": "2026-11-14",
+      "verification_status": "staged",
+      "basis": "published £12,000–£13,000/calendar year"
+    },
+    "application_fee": null,
+    "sources": [
+      "https://www.bbk.ac.uk/courses/undergraduate",
+      "https://www.bbk.ac.uk/courses/undergraduate/liberal-arts",
+      "https://www.bbk.ac.uk/international/finance/fees",
+      "https://www.bbk.ac.uk/international/finance/us-loans"
+    ],
+    "source_url": "https://www.bbk.ac.uk/courses/undergraduate",
+    "checked_at": "2026-11-14",
+    "verification_status": "staged"
+  },
+  {
+    "university_id": "e53f5fef-5c56-5863-9d18-b59c4819d7b4",
+    "name": "Cardiff Metropolitan University",
+    "country": "GB",
+    "main_language_of_instruction": "English (programme list includes some Welsh options; English subset not verified)",
+    "programmes": [],
+    "tuition": {
+      "amount": 16000,
+      "currency": "GBP",
+      "academic_year": "2026/27",
+      "basis": "per year; foundation health sciences £17,000 year 1; top-up one year",
+      "varies_by_programme": true,
+      "range_min": 16000,
+      "range_max": 17000,
+      "url": "https://www.cardiffmet.ac.uk/international-students/fees-and-finance/",
+      "source_url": "https://www.cardiffmet.ac.uk/international-students/fees-and-finance/",
+      "checked_at": "2026-11-14",
+      "verification_status": "staged"
+    },
+    "living_cost": null,
+    "application_fee": null,
+    "sources": [
+      "https://www.cardiffmet.ac.uk/courses/?courseType=undergraduate",
+      "https://www.cardiffmet.ac.uk/international-students/fees-and-finance/",
+      "https://www.cardiffmet.ac.uk/support/student-services/money-advice/planning-your-expenses/"
+    ],
+    "source_url": "https://www.cardiffmet.ac.uk/courses/?courseType=undergraduate",
+    "checked_at": "2026-11-14",
+    "verification_status": "staged"
+  },
+  {
+    "university_id": "44444444-4444-4444-8444-444444444444",
+    "name": "Technical University of Munich",
+    "country": "DE",
+    "main_language_of_instruction": "German, with specific English-taught degrees",
+    "programmes": [
+      {
+        "name": "Aerospace",
+        "field": "aerospace engineering",
+        "degree": "BSc",
+        "duration_years": 3,
+        "language": "English",
+        "url": "https://www.tum.de/en/studies/degree-programs/detail/aerospace-bachelor-of-science-bsc",
+        "source_url": "https://www.tum.de/en/studies/degree-programs/detail/aerospace-bachelor-of-science-bsc",
+        "checked_at": "2026-11-14",
+        "verification_status": "staged"
+      },
+      {
+        "name": "Management and Technology (Computer Engineering specialization)",
+        "field": "management/engineering",
+        "degree": "BSc",
+        "duration_years": 3,
+        "language": "English",
+        "url": "https://www.tum.de/en/studies/degree-programs/detail/management-and-technology-bachelor-of-science-bsc",
+        "source_url": "https://www.tum.de/en/studies/degree-programs/detail/management-and-technology-bachelor-of-science-bsc",
+        "checked_at": "2026-11-14",
+        "verification_status": "staged"
+      }
+    ],
+    "tuition": {
+      "amount": null,
+      "currency": "EUR",
+      "academic_year": "2027/28",
+      "basis": "per semester; annual fees range €4,600–€6,800",
+      "varies_by_programme": true,
+      "range_min": 4600,
+      "range_max": 6800,
+      "url": "https://www.tum.de/en/studies/fees/tuition",
+      "source_url": "https://www.tum.de/en/studies/fees/tuition",
+      "checked_at": "2026-11-14",
+      "verification_status": "staged"
+    },
+    "living_cost": {
+      "amount": null,
+      "currency": "EUR",
+      "url": "https://www.tum.de/en/studies/fees",
+      "source_url": "https://www.tum.de/en/studies/fees",
+      "checked_at": "2026-11-14",
+      "verification_status": "staged",
+      "basis": "published €1,300–€2,000/month (annual €15,600–€24,000)"
+    },
+    "application_fee": null,
+    "sources": [
+      "https://www.tum.de/en/studies/degree-programs",
+      "https://www.tum.de/en/studies/fees/tuition",
+      "https://www.tum.de/en/studies/fees"
+    ],
+    "source_url": "https://www.tum.de/en/studies/degree-programs",
+    "checked_at": "2026-11-14",
+    "verification_status": "staged"
+  },
+  {
+    "university_id": "fe2070ba-9e66-590c-b67f-3cef2d8983b4",
+    "name": "Ruprecht-Karls-Universität Heidelberg",
+    "country": "DE",
+    "main_language_of_instruction": "German, with English/German undergraduate programmes",
+    "programmes": [
+      {
+        "name": "American Studies",
+        "field": "American studies",
+        "degree": "BA",
+        "duration_years": 3,
+        "language": "English",
+        "url": "https://www.uni-heidelberg.de/en/study/all-subjects/american-studies/american-studies-bachelor-100",
+        "source_url": "https://www.uni-heidelberg.de/en/study/all-subjects/american-studies/american-studies-bachelor-100",
+        "checked_at": "2026-11-14",
+        "verification_status": "staged"
+      },
+      {
+        "name": "English Studies (50%)",
+        "field": "English studies",
+        "degree": "BA",
+        "duration_years": 3,
+        "language": "English",
+        "url": "https://www.uni-heidelberg.de/en/study/all-subjects/english-studies/english-studies-bachelor-50",
+        "source_url": "https://www.uni-heidelberg.de/en/study/all-subjects/english-studies/english-studies-bachelor-50",
+        "checked_at": "2026-11-14",
+        "verification_status": "staged"
+      }
+    ],
+    "tuition": {
+      "amount": 3000,
+      "currency": "EUR",
+      "academic_year": "2026/27",
+      "basis": "per year (non-EU fee €1,500/semester)",
+      "varies_by_programme": false,
+      "range_min": 3000,
+      "range_max": 3000,
+      "url": "https://www.uni-heidelberg.de/en/study-financing-for-international-students?overlay=menu",
+      "source_url": "https://www.uni-heidelberg.de/en/study-financing-for-international-students?overlay=menu",
+      "checked_at": "2026-11-14",
+      "verification_status": "staged"
+    },
+    "living_cost": {
+      "amount": 11904,
+      "currency": "EUR",
+      "url": "https://www.uni-heidelberg.de/en/study-financing-for-international-students?overlay=menu",
+      "source_url": "https://www.uni-heidelberg.de/en/study-financing-for-international-students?overlay=menu",
+      "checked_at": "2026-11-14",
+      "verification_status": "staged",
+      "basis": "annualized from official visa minimum €992/month"
+    },
+    "application_fee": {
+      "amount": 0,
+      "currency": "EUR",
+      "url": "https://www.sai.uni-heidelberg.de/en/study-at-sai/start-your-application-now",
+      "source_url": "https://www.sai.uni-heidelberg.de/en/study-at-sai/start-your-application-now",
+      "checked_at": "2026-11-14",
+      "verification_status": "staged"
+    },
+    "sources": [
+      "https://www.uni-heidelberg.de/en/study/fields-of-study/international-courses-and-courses-in-other-languages-than-german/degree-programmes-taught-in-english",
+      "https://www.uni-heidelberg.de/en/study/all-subjects/american-studies/american-studies-bachelor-100",
+      "https://www.uni-heidelberg.de/en/study/all-subjects/english-studies/english-studies-bachelor-50",
+      "https://www.uni-heidelberg.de/en/study-financing-for-international-students?overlay=menu"
+    ],
+    "source_url": "https://www.uni-heidelberg.de/en/study/fields-of-study/international-courses-and-courses-in-other-languages-than-german/degree-programmes-taught-in-english",
+    "checked_at": "2026-11-14",
+    "verification_status": "staged"
+  },
+  {
+    "university_id": "41845441-b6d6-52d1-9dde-3fde42120676",
+    "name": "Rheinische Friedrich-Wilhelms Universität Bonn",
+    "country": "DE",
+    "main_language_of_instruction": "German (no English UG degree verified)",
+    "programmes": [],
+    "tuition": {
+      "amount": 0,
+      "currency": "EUR",
+      "academic_year": null,
+      "basis": "per year; no tuition, semester contributions apply",
+      "varies_by_programme": false,
+      "range_min": 0,
+      "range_max": 0,
+      "url": "https://www.uni-bonn.de/en/studying/application-admission-and-enrollment/costs",
+      "source_url": "https://www.uni-bonn.de/en/studying/application-admission-and-enrollment/costs",
+      "checked_at": "2026-11-14",
+      "verification_status": "staged"
+    },
+    "living_cost": {
+      "amount": 12000,
+      "currency": "EUR",
+      "url": "https://www.uni-bonn.de/en/studying/international-students/costs-and-financing-for-international-students/page",
+      "source_url": "https://www.uni-bonn.de/en/studying/international-students/costs-and-financing-for-international-students/page",
+      "checked_at": "2026-11-14",
+      "verification_status": "staged",
+      "basis": "annualized from approx. €1,000/month"
+    },
+    "application_fee": {
+      "amount": 0,
+      "currency": "EUR",
+      "url": "https://www.uni-bonn.de/en/studying/application-admission-and-enrollment/costs",
+      "source_url": "https://www.uni-bonn.de/en/studying/application-admission-and-enrollment/costs",
+      "checked_at": "2026-11-14",
+      "verification_status": "staged"
+    },
+    "sources": [
+      "https://www.uni-bonn.de/en/studying/degree-programs/academic-degrees",
+      "https://www.uni-bonn.de/en/studying/application-admission-and-enrollment/costs",
+      "https://www.uni-bonn.de/en/studying/international-students/costs-and-financing-for-international-students/page"
+    ],
+    "source_url": "https://www.uni-bonn.de/en/studying/degree-programs/academic-degrees",
+    "checked_at": "2026-11-14",
+    "verification_status": "staged"
+  },
+  {
+    "university_id": "6e6859a3-38b6-5b10-965b-3f24ad7f40a1",
+    "name": "N. I. Lobachevsky State University of Nizhny Novgorod",
+    "country": "RU",
+    "main_language_of_instruction": null,
+    "programmes": [
+      {
+        "name": "Fundamental Computer Science and Information Technology",
+        "field": "computer science/information technology",
+        "degree": "BSc",
+        "duration_years": 4,
+        "language": "English",
+        "url": "https://eng.unn.ru/academic-programmes/degree-programmes-in-english-2",
+        "source_url": "https://eng.unn.ru/academic-programmes/degree-programmes-in-english-2",
+        "checked_at": "2026-11-14",
+        "verification_status": "staged"
+      },
+      {
+        "name": "International Economics",
+        "field": "economics",
+        "degree": "BA",
+        "duration_years": 4,
+        "language": "English",
+        "url": "https://eng.unn.ru/academic-programmes/degree-programmes-in-english-2",
+        "source_url": "https://eng.unn.ru/academic-programmes/degree-programmes-in-english-2",
+        "checked_at": "2026-11-14",
+        "verification_status": "staged"
+      },
+      {
+        "name": "International Relations",
+        "field": "international relations",
+        "degree": "BA",
+        "duration_years": 4,
+        "language": "English",
+        "url": "https://eng.unn.ru/academic-programmes/degree-programmes-2/bachelor-s-programmes/international-relations",
+        "source_url": "https://eng.unn.ru/academic-programmes/degree-programmes-2/bachelor-s-programmes/international-relations",
+        "checked_at": "2026-11-14",
+        "verification_status": "staged"
+      }
+    ],
+    "tuition": {
+      "amount": null,
+      "currency": "RUB",
+      "academic_year": "2026/27",
+      "basis": "per academic year; programme range",
+      "varies_by_programme": true,
+      "range_min": null,
+      "range_max": null,
+      "url": "https://eng.unn.ru/academic-programmes/degree-programmes-in-english-2",
+      "source_url": "https://eng.unn.ru/academic-programmes/degree-programmes-in-english-2",
+      "checked_at": "2026-11-14",
+      "verification_status": "staged"
+    },
+    "living_cost": null,
+    "application_fee": null,
+    "sources": [
+      "https://eng.unn.ru/academic-programmes/degree-programmes-in-english-2",
+      "https://eng.unn.ru/admissions/costs-and-scholarships/bachelor-s-track",
+      "https://eng.unn.ru/academic-programmes/degree-programmes-2/bachelor-s-programmes/international-relations"
+    ],
+    "source_url": "https://eng.unn.ru/academic-programmes/degree-programmes-in-english-2",
+    "checked_at": "2026-11-14",
+    "verification_status": "staged"
+  },
+  {
+    "university_id": "9d02e057-63ee-5ee9-aeef-4aa112d65d2a",
+    "name": "Khalifa University of Science, Technology and Research",
+    "country": "AE",
+    "main_language_of_instruction": "English",
+    "programmes": [
+      {
+        "name": "Aerospace Engineering",
+        "field": "engineering/science",
+        "degree": null,
+        "duration_years": null,
+        "language": "English",
+        "url": "https://www.ku.ac.ae/academics/undergraduate-programs",
+        "source_url": "https://www.ku.ac.ae/academics/undergraduate-programs",
+        "checked_at": "2026-11-14",
+        "verification_status": "staged"
+      },
+      {
+        "name": "Chemical Engineering",
+        "field": "engineering/science",
+        "degree": null,
+        "duration_years": null,
+        "language": "English",
+        "url": "https://www.ku.ac.ae/academics/undergraduate-programs",
+        "source_url": "https://www.ku.ac.ae/academics/undergraduate-programs",
+        "checked_at": "2026-11-14",
+        "verification_status": "staged"
+      },
+      {
+        "name": "Civil Engineering",
+        "field": "engineering/science",
+        "degree": null,
+        "duration_years": null,
+        "language": "English",
+        "url": "https://www.ku.ac.ae/academics/undergraduate-programs",
+        "source_url": "https://www.ku.ac.ae/academics/undergraduate-programs",
+        "checked_at": "2026-11-14",
+        "verification_status": "staged"
+      },
+      {
+        "name": "Electrical Engineering",
+        "field": "engineering/science",
+        "degree": null,
+        "duration_years": null,
+        "language": "English",
+        "url": "https://www.ku.ac.ae/academics/undergraduate-programs",
+        "source_url": "https://www.ku.ac.ae/academics/undergraduate-programs",
+        "checked_at": "2026-11-14",
+        "verification_status": "staged"
+      },
+      {
+        "name": "Engineering Systems and Management",
+        "field": "engineering/science",
+        "degree": null,
+        "duration_years": null,
+        "language": "English",
+        "url": "https://www.ku.ac.ae/academics/undergraduate-programs",
+        "source_url": "https://www.ku.ac.ae/academics/undergraduate-programs",
+        "checked_at": "2026-11-14",
+        "verification_status": "staged"
+      },
+      {
+        "name": "Mechanical Engineering",
+        "field": "engineering/science",
+        "degree": null,
+        "duration_years": null,
+        "language": "English",
+        "url": "https://www.ku.ac.ae/academics/undergraduate-programs",
+        "source_url": "https://www.ku.ac.ae/academics/undergraduate-programs",
+        "checked_at": "2026-11-14",
+        "verification_status": "staged"
+      },
+      {
+        "name": "Energy Engineering",
+        "field": "engineering/science",
+        "degree": null,
+        "duration_years": null,
+        "language": "English",
+        "url": "https://www.ku.ac.ae/academics/undergraduate-programs",
+        "source_url": "https://www.ku.ac.ae/academics/undergraduate-programs",
+        "checked_at": "2026-11-14",
+        "verification_status": "staged"
+      },
+      {
+        "name": "Petroleum Engineering",
+        "field": "engineering/science",
+        "degree": null,
+        "duration_years": null,
+        "language": "English",
+        "url": "https://www.ku.ac.ae/academics/undergraduate-programs",
+        "source_url": "https://www.ku.ac.ae/academics/undergraduate-programs",
+        "checked_at": "2026-11-14",
+        "verification_status": "staged"
+      },
+      {
+        "name": "Earth and Planetary Sciences",
+        "field": "engineering/science",
+        "degree": null,
+        "duration_years": null,
+        "language": "English",
+        "url": "https://www.ku.ac.ae/academics/undergraduate-programs",
+        "source_url": "https://www.ku.ac.ae/academics/undergraduate-programs",
+        "checked_at": "2026-11-14",
+        "verification_status": "staged"
+      },
+      {
+        "name": "Computer Engineering",
+        "field": "engineering/science",
+        "degree": null,
+        "duration_years": null,
+        "language": "English",
+        "url": "https://www.ku.ac.ae/academics/undergraduate-programs",
+        "source_url": "https://www.ku.ac.ae/academics/undergraduate-programs",
+        "checked_at": "2026-11-14",
+        "verification_status": "staged"
+      },
+      {
+        "name": "Robotics and Artificial Intelligence",
+        "field": "engineering/science",
+        "degree": null,
+        "duration_years": null,
+        "language": "English",
+        "url": "https://www.ku.ac.ae/academics/undergraduate-programs",
+        "source_url": "https://www.ku.ac.ae/academics/undergraduate-programs",
+        "checked_at": "2026-11-14",
+        "verification_status": "staged"
+      },
+      {
+        "name": "Computer Science",
+        "field": "engineering/science",
+        "degree": null,
+        "duration_years": null,
+        "language": "English",
+        "url": "https://www.ku.ac.ae/academics/undergraduate-programs",
+        "source_url": "https://www.ku.ac.ae/academics/undergraduate-programs",
+        "checked_at": "2026-11-14",
+        "verification_status": "staged"
+      },
+      {
+        "name": "Applied Mathematics and Statistics and Data Science",
+        "field": "engineering/science",
+        "degree": null,
+        "duration_years": null,
+        "language": "English",
+        "url": "https://www.ku.ac.ae/academics/undergraduate-programs",
+        "source_url": "https://www.ku.ac.ae/academics/undergraduate-programs",
+        "checked_at": "2026-11-14",
+        "verification_status": "staged"
+      }
+    ],
+    "tuition": {
+      "amount": 2500,
+      "currency": "AED",
+      "academic_year": null,
+      "basis": "per credit hour; annual approx AED81,250 at 12–16 credits",
+      "varies_by_programme": true,
+      "range_min": 81250,
+      "range_max": 81250,
+      "url": "https://www.ku.ac.ae/undergraduate-admissions",
+      "source_url": "https://www.ku.ac.ae/undergraduate-admissions",
+      "checked_at": "2026-11-14",
+      "verification_status": "staged"
+    },
+    "living_cost": null,
+    "application_fee": {
+      "amount": 0,
+      "currency": "AED",
+      "url": "https://www.ku.ac.ae/undergraduate-admission-faqs",
+      "source_url": "https://www.ku.ac.ae/undergraduate-admission-faqs",
+      "checked_at": "2026-11-14",
+      "verification_status": "staged"
+    },
+    "sources": [
+      "https://www.ku.ac.ae/academics/undergraduate-programs",
+      "https://www.ku.ac.ae/undergraduate-admissions",
+      "https://www.ku.ac.ae/undergraduate-admission-faqs",
+      "https://www.ku.ac.ae/fee-and-payment-guidelines"
+    ],
+    "source_url": "https://www.ku.ac.ae/academics/undergraduate-programs",
+    "checked_at": "2026-11-14",
+    "verification_status": "staged"
+  },
+  {
+    "university_id": "0949633f-4123-57e8-8e3d-8b762d4a588d",
+    "name": "Abu Dhabi University",
+    "country": "AE",
+    "main_language_of_instruction": "English",
+    "programmes": [
+      {
+        "name": "Undergraduate programmes (official international catalogue; see finder)",
+        "field": "varies",
+        "degree": null,
+        "duration_years": null,
+        "language": "English",
+        "url": "https://www.adu.ac.ae/admissions/admission-in-adu/international-students/financials/undergraduate-fees-for-international-students",
+        "source_url": "https://www.adu.ac.ae/admissions/admission-in-adu/international-students/financials/undergraduate-fees-for-international-students",
+        "checked_at": "2026-11-14",
+        "verification_status": "staged"
+      }
+    ],
+    "tuition": {
+      "amount": null,
+      "currency": "AED",
+      "academic_year": null,
+      "basis": "per credit; annual average AED46,515–64,470",
+      "varies_by_programme": true,
+      "range_min": 46515,
+      "range_max": 64470,
+      "url": "https://cdn.adu.ac.ae/images-container/docs/default-source/admissions-financials/all-tuition-fees-english.pdf",
+      "source_url": "https://cdn.adu.ac.ae/images-container/docs/default-source/admissions-financials/all-tuition-fees-english.pdf",
+      "checked_at": "2026-11-14",
+      "verification_status": "staged"
+    },
+    "living_cost": {
+      "amount": null,
+      "currency": "AED",
+      "url": "https://www.adu.ac.ae/admissions/admission-in-adu/international-students/financials/undergraduate-fees-for-international-students",
+      "source_url": "https://www.adu.ac.ae/admissions/admission-in-adu/international-students/financials/undergraduate-fees-for-international-students",
+      "checked_at": "2026-11-14",
+      "verification_status": "staged",
+      "basis": "housing AED14,200–32,600/year"
+    },
+    "application_fee": {
+      "amount": 300,
+      "currency": "AED",
+      "url": "https://www.adu.ac.ae/admissions/admission-in-adu/international-students/financials/undergraduate-fees-for-international-students",
+      "source_url": "https://www.adu.ac.ae/admissions/admission-in-adu/international-students/financials/undergraduate-fees-for-international-students",
+      "checked_at": "2026-11-14",
+      "verification_status": "staged"
+    },
+    "sources": [
+      "https://www.adu.ac.ae/admissions/admission-in-adu/international-students/financials/undergraduate-fees-for-international-students",
+      "https://cdn.adu.ac.ae/images-container/docs/default-source/admissions-financials/all-tuition-fees-english.pdf"
+    ],
+    "source_url": "https://www.adu.ac.ae/admissions/admission-in-adu/international-students/financials/undergraduate-fees-for-international-students",
+    "checked_at": "2026-11-14",
+    "verification_status": "staged"
+  },
+  {
+    "university_id": "b544b3bb-c8b8-54da-9086-18baf5a73672",
+    "name": "United Arab Emirates University",
+    "country": "AE",
+    "main_language_of_instruction": "English (individual program medium needs per-programme check)",
+    "programmes": [],
+    "tuition": {
+      "amount": null,
+      "currency": "AED",
+      "academic_year": null,
+      "basis": "per credit; AED1,900–3,000 by programme",
+      "varies_by_programme": true,
+      "range_min": 1900,
+      "range_max": 3000,
+      "url": "https://www.uaeu.ac.ae/en/student-services/iso/program_and_housing_rates.shtml",
+      "source_url": "https://www.uaeu.ac.ae/en/student-services/iso/program_and_housing_rates.shtml",
+      "checked_at": "2026-11-14",
+      "verification_status": "staged"
+    },
+    "living_cost": {
+      "amount": null,
+      "currency": "AED",
+      "url": "https://www.uaeu.ac.ae/en/student-services/iso/program_and_housing_rates.shtml",
+      "source_url": "https://www.uaeu.ac.ae/en/student-services/iso/program_and_housing_rates.shtml",
+      "checked_at": "2026-11-14",
+      "verification_status": "staged",
+      "basis": "housing AED5,000/semester"
+    },
+    "application_fee": {
+      "amount": 210,
+      "currency": "AED",
+      "url": "https://uaeu.ac.ae/en/admission/forms/financial-declaration-form.pdf",
+      "source_url": "https://uaeu.ac.ae/en/admission/forms/financial-declaration-form.pdf",
+      "checked_at": "2026-11-14",
+      "verification_status": "staged"
+    },
+    "sources": [
+      "https://www.uaeu.ac.ae/en/student-services/iso/program_and_housing_rates.shtml",
+      "https://uaeu.ac.ae/en/admission/forms/financial-declaration-form.pdf"
+    ],
+    "source_url": "https://www.uaeu.ac.ae/en/student-services/iso/program_and_housing_rates.shtml",
+    "checked_at": "2026-11-14",
+    "verification_status": "staged"
+  },
+  {
+    "university_id": "9e6e1d4a-e604-5b42-8e72-2f62326988c0",
+    "name": "University of Sharjah",
+    "country": "AE",
+    "main_language_of_instruction": null,
+    "programmes": [],
+    "tuition": null,
+    "living_cost": null,
+    "application_fee": {
+      "amount": 360,
+      "currency": "AED",
+      "url": "https://newsite-admin.sharjah.ac.ae/Admissions/Bachelors-Degree",
+      "source_url": "https://newsite-admin.sharjah.ac.ae/Admissions/Bachelors-Degree",
+      "checked_at": "2026-11-14",
+      "verification_status": "staged"
+    },
+    "sources": [
+      "https://newsite-admin.sharjah.ac.ae/Admissions/Bachelors-Degree"
+    ],
+    "source_url": "https://newsite-admin.sharjah.ac.ae/Admissions/Bachelors-Degree",
+    "checked_at": "2026-11-14",
+    "verification_status": "staged"
+  },
+  {
+    "university_id": "c66c3755-66a2-57a0-a80e-da984c310d29",
+    "name": "National University of Singapore",
+    "country": "SG",
+    "main_language_of_instruction": "English",
+    "programmes": [
+      {
+        "name": "Undergraduate programmes (see official finder; list capped pending extraction)",
+        "field": "varies",
+        "degree": null,
+        "duration_years": null,
+        "language": "English",
+        "url": "https://www.nus.edu.sg/oam/undergraduate-programmes",
+        "source_url": "https://www.nus.edu.sg/oam/undergraduate-programmes",
+        "checked_at": "2026-11-14",
+        "verification_status": "staged"
+      }
+    ],
+    "tuition": {
+      "amount": null,
+      "currency": "SGD",
+      "academic_year": "2026/27",
+      "basis": "per year; international fees vary by programme and tuition grant",
+      "varies_by_programme": true,
+      "range_min": 18900,
+      "range_max": 175500,
+      "url": "https://www.nus.edu.sg/registrar/docs/default-source/administrative-policies-procedures/ugtuitioncurrent.pdf",
+      "source_url": "https://www.nus.edu.sg/registrar/docs/default-source/administrative-policies-procedures/ugtuitioncurrent.pdf",
+      "checked_at": "2026-11-14",
+      "verification_status": "staged"
+    },
+    "living_cost": {
+      "amount": 11750,
+      "currency": "SGD",
+      "url": "https://www.nus.edu.sg/oam/docs/default-source/nus-publications/intlprospectus.pdf",
+      "source_url": "https://www.nus.edu.sg/oam/docs/default-source/nus-publications/intlprospectus.pdf",
+      "checked_at": "2026-11-14",
+      "verification_status": "staged",
+      "basis": "35-week estimate: S$6,000 living + S$5,750 accommodation"
+    },
+    "application_fee": {
+      "amount": 20,
+      "currency": "SGD",
+      "url": "https://nus.edu.sg/oam/admissions/application-overview",
+      "source_url": "https://nus.edu.sg/oam/admissions/application-overview",
+      "checked_at": "2026-11-14",
+      "verification_status": "staged"
+    },
+    "sources": [
+      "https://www.nus.edu.sg/oam/undergraduate-programmes",
+      "https://www.nus.edu.sg/registrar/docs/default-source/administrative-policies-procedures/ugtuitioncurrent.pdf",
+      "https://nus.edu.sg/oam/admissions/application-overview",
+      "https://www.nus.edu.sg/oam/docs/default-source/nus-publications/intlprospectus.pdf"
+    ],
+    "source_url": "https://www.nus.edu.sg/oam/undergraduate-programmes",
+    "checked_at": "2026-11-14",
+    "verification_status": "staged"
+  },
+  {
+    "university_id": "f5a6d73a-5fd2-55de-83af-3da2c25e18ef",
+    "name": "Nanyang Technological University",
+    "country": "SG",
+    "main_language_of_instruction": "English",
+    "programmes": [
+      {
+        "name": "Undergraduate degree programmes (see official finder; list capped pending extraction)",
+        "field": "varies",
+        "degree": null,
+        "duration_years": null,
+        "language": "English",
+        "url": "https://www.ntu.edu.sg/admissions/undergraduate-programmes",
+        "source_url": "https://www.ntu.edu.sg/admissions/undergraduate-programmes",
+        "checked_at": "2026-11-14",
+        "verification_status": "staged"
+      }
+    ],
+    "tuition": {
+      "amount": null,
+      "currency": "SGD",
+      "academic_year": "2026/27",
+      "basis": "per year; international fees vary by programme and tuition grant",
+      "varies_by_programme": true,
+      "range_min": 18050,
+      "range_max": 45600,
+      "url": "https://www.ntu.edu.sg/admissions/undergraduate/fees-and-funding/tuition-fees",
+      "source_url": "https://www.ntu.edu.sg/admissions/undergraduate/fees-and-funding/tuition-fees",
+      "checked_at": "2026-11-14",
+      "verification_status": "staged"
+    },
+    "living_cost": null,
+    "application_fee": {
+      "amount": 25,
+      "currency": "SGD",
+      "url": "https://www.ntu.edu.sg/admissions/undergraduate/admissions/application-process",
+      "source_url": "https://www.ntu.edu.sg/admissions/undergraduate/admissions/application-process",
+      "checked_at": "2026-11-14",
+      "verification_status": "staged"
+    },
+    "sources": [
+      "https://www.ntu.edu.sg/admissions/undergraduate-programmes",
+      "https://www.ntu.edu.sg/education/degree-programmes",
+      "https://www.ntu.edu.sg/admissions/undergraduate/fees-and-funding/tuition-fees",
+      "https://www.ntu.edu.sg/admissions/undergraduate/admissions/application-process"
+    ],
+    "source_url": "https://www.ntu.edu.sg/admissions/undergraduate-programmes",
+    "checked_at": "2026-11-14",
+    "verification_status": "staged"
+  },
+  {
+    "university_id": "a8c20c24-0173-5120-abee-6f63ee2944d3",
+    "name": "Singapore University of Technology and Design",
+    "country": "SG",
+    "main_language_of_instruction": "English",
+    "programmes": [
+      {
+        "name": "Undergraduate degree programmes",
+        "field": "design/technology",
+        "degree": "Bachelor",
+        "duration_years": null,
+        "language": "English",
+        "url": "https://www.sutd.edu.sg/programme-listing/",
+        "source_url": "https://www.sutd.edu.sg/programme-listing/",
+        "checked_at": "2026-11-14",
+        "verification_status": "staged"
+      }
+    ],
+    "tuition": {
+      "amount": null,
+      "currency": "SGD",
+      "academic_year": "2026",
+      "basis": "per academic year; tuition grant/no grant rates",
+      "varies_by_programme": true,
+      "range_min": 31600,
+      "range_max": 62076,
+      "url": "https://www.sutd.edu.sg/admissions/undergraduate/education-expenses/fees/tuition-fees/",
+      "source_url": "https://www.sutd.edu.sg/admissions/undergraduate/education-expenses/fees/tuition-fees/",
+      "checked_at": "2026-11-14",
+      "verification_status": "staged"
+    },
+    "living_cost": null,
+    "application_fee": null,
+    "sources": [
+      "https://www.sutd.edu.sg/admissions/undergraduate/education-expenses/fees/tuition-fees/",
+      "https://www.sutd.edu.sg/programme-listing/"
+    ],
+    "source_url": "https://www.sutd.edu.sg/admissions/undergraduate/education-expenses/fees/tuition-fees/",
+    "checked_at": "2026-11-14",
+    "verification_status": "staged"
+  },
+  {
+    "university_id": "5c15139b-369f-521f-9ea2-4ef8ae5fdcc3",
+    "name": "Singapore Management University",
+    "country": "SG",
+    "main_language_of_instruction": "English",
+    "programmes": [
+      {
+        "name": "Undergraduate degree programmes (official list; individual programme extraction pending)",
+        "field": "varies",
+        "degree": null,
+        "duration_years": null,
+        "language": "English",
+        "url": "https://admissions.smu.edu.sg/programmes",
+        "source_url": "https://admissions.smu.edu.sg/programmes",
+        "checked_at": "2026-11-14",
+        "verification_status": "staged"
+      }
+    ],
+    "tuition": {
+      "amount": null,
+      "currency": "SGD",
+      "academic_year": "2026/27",
+      "basis": "per academic year; varies by programme",
+      "varies_by_programme": true,
+      "range_min": null,
+      "range_max": null,
+      "url": "https://admissions.smu.edu.sg/financial-matters/tuition-fees-grant",
+      "source_url": "https://admissions.smu.edu.sg/financial-matters/tuition-fees-grant",
+      "checked_at": "2026-11-14",
+      "verification_status": "staged"
+    },
+    "living_cost": null,
+    "application_fee": null,
+    "sources": [
+      "https://admissions.smu.edu.sg/programmes",
+      "https://admissions.smu.edu.sg/faq/General",
+      "https://admissions.smu.edu.sg/financial-matters/tuition-fees-grant"
+    ],
+    "source_url": "https://admissions.smu.edu.sg/programmes",
+    "checked_at": "2026-11-14",
+    "verification_status": "staged"
+  },
+  {
+    "university_id": "66666666-6666-4666-8666-666666666666",
+    "name": "Westminster International University in Tashkent",
+    "country": "UZ",
+    "main_language_of_instruction": "English",
+    "programmes": [
+      {
+        "name": "BA (Hons) in International Relations and Law",
+        "field": "international relations/law",
+        "degree": "BA (Hons)",
+        "duration_years": 3,
+        "language": "English",
+        "url": "https://www.wiut.uz/undergraduate-programmes",
+        "source_url": "https://www.wiut.uz/undergraduate-programmes",
+        "checked_at": "2026-11-14",
+        "verification_status": "staged"
+      },
+      {
+        "name": "BSc (Hons) in Economics and its Pathways",
+        "field": "economics",
+        "degree": "BSc (Hons)",
+        "duration_years": 3,
+        "language": "English",
+        "url": "https://wiut.uz/economics",
+        "source_url": "https://wiut.uz/economics",
+        "checked_at": "2026-11-14",
+        "verification_status": "staged"
+      },
+      {
+        "name": "BSc (Hons) in Computer Science",
+        "field": "computer science",
+        "degree": "BSc (Hons)",
+        "duration_years": 3,
+        "language": "English",
+        "url": "https://www.wiut.uz/undergraduate-programmes",
+        "source_url": "https://www.wiut.uz/undergraduate-programmes",
+        "checked_at": "2026-11-14",
+        "verification_status": "staged"
+      },
+      {
+        "name": "BA (Hons) in Commercial Law",
+        "field": "law",
+        "degree": "BA (Hons)",
+        "duration_years": 3,
+        "language": "English",
+        "url": "https://www.wiut.uz/undergraduate-programmes",
+        "source_url": "https://www.wiut.uz/undergraduate-programmes",
+        "checked_at": "2026-11-14",
+        "verification_status": "staged"
+      },
+      {
+        "name": "BSc (Hons) in Finance",
+        "field": "finance",
+        "degree": "BSc (Hons)",
+        "duration_years": 3,
+        "language": "English",
+        "url": "https://www.wiut.uz/undergraduate-programmes",
+        "source_url": "https://www.wiut.uz/undergraduate-programmes",
+        "checked_at": "2026-11-14",
+        "verification_status": "staged"
+      },
+      {
+        "name": "BA (Hons) in Business Management and its Pathways",
+        "field": "business/management",
+        "degree": "BA (Hons)",
+        "duration_years": 3,
+        "language": "English",
+        "url": "https://www.wiut.uz/undergraduate-programmes",
+        "source_url": "https://www.wiut.uz/undergraduate-programmes",
+        "checked_at": "2026-11-14",
+        "verification_status": "staged"
+      },
+      {
+        "name": "BSc (Hons) in Business Information Systems",
+        "field": "information systems",
+        "degree": "BSc (Hons)",
+        "duration_years": 3,
+        "language": "English",
+        "url": "https://www.wiut.uz/undergraduate-programmes",
+        "source_url": "https://www.wiut.uz/undergraduate-programmes",
+        "checked_at": "2026-11-14",
+        "verification_status": "staged"
+      }
+    ],
+    "tuition": {
+      "amount": 38820000,
+      "currency": "UZS",
+      "academic_year": "2026/27",
+      "basis": "per academic year",
+      "varies_by_programme": false,
+      "range_min": 38820000,
+      "range_max": 38820000,
+      "url": "https://www.wiut.uz/tuition-fees",
+      "source_url": "https://www.wiut.uz/tuition-fees",
+      "checked_at": "2026-11-14",
+      "verification_status": "staged"
+    },
+    "living_cost": null,
+    "application_fee": null,
+    "sources": [
+      "https://www.wiut.uz/component/search/",
+      "https://www.wiut.uz/tuition-fees",
+      "https://www.wiut.uz/images/Documents%202025/Prospectus-2025_003_compressed.pdf"
+    ],
+    "source_url": "https://www.wiut.uz/component/search/",
+    "checked_at": "2026-11-14",
+    "verification_status": "staged"
+  },
+  {
+    "university_id": "9e20a5d2-bafa-5857-8f5d-4a89874bb2f1",
+    "name": "Inha University in Tashkent",
+    "country": "UZ",
+    "main_language_of_instruction": "English",
+    "programmes": [
+      {
+        "name": "Computer and Software Engineering",
+        "field": "computer science/software engineering",
+        "degree": "BSc",
+        "duration_years": 4,
+        "language": "English",
+        "url": "https://inha.uz/undergraduate/",
+        "source_url": "https://inha.uz/undergraduate/",
+        "checked_at": "2026-11-14",
+        "verification_status": "staged"
+      },
+      {
+        "name": "Information and Communication Engineering",
+        "field": "information and communications engineering",
+        "degree": "BSc",
+        "duration_years": 4,
+        "language": "English",
+        "url": "https://inha.uz/undergraduate/",
+        "source_url": "https://inha.uz/undergraduate/",
+        "checked_at": "2026-11-14",
+        "verification_status": "staged"
+      },
+      {
+        "name": "Business and Logistics (Artificial Intelligence specialization)",
+        "field": "business/logistics/artificial intelligence",
+        "degree": "Bachelor",
+        "duration_years": 4,
+        "language": "English",
+        "url": "https://inha.uz/undergraduate/",
+        "source_url": "https://inha.uz/undergraduate/",
+        "checked_at": "2026-11-14",
+        "verification_status": "staged"
+      },
+      {
+        "name": "Business and Logistics (Cyber Security specialization)",
+        "field": "business/logistics/cybersecurity",
+        "degree": "Bachelor",
+        "duration_years": 4,
+        "language": "English",
+        "url": "https://inha.uz/undergraduate/",
+        "source_url": "https://inha.uz/undergraduate/",
+        "checked_at": "2026-11-14",
+        "verification_status": "staged"
+      },
+      {
+        "name": "Business and Logistics (Data Engineering specialization)",
+        "field": "business/logistics/data engineering",
+        "degree": "Bachelor",
+        "duration_years": 4,
+        "language": "English",
+        "url": "https://inha.uz/undergraduate/",
+        "source_url": "https://inha.uz/undergraduate/",
+        "checked_at": "2026-11-14",
+        "verification_status": "staged"
+      },
+      {
+        "name": "Business Management",
+        "field": "business/management",
+        "degree": "Bachelor",
+        "duration_years": 4,
+        "language": "English",
+        "url": "https://inha.uz/undergraduate/",
+        "source_url": "https://inha.uz/undergraduate/",
+        "checked_at": "2026-11-14",
+        "verification_status": "staged"
+      },
+      {
+        "name": "Computer Engineering (Data Science)",
+        "field": "computer engineering/data science",
+        "degree": "Bachelor",
+        "duration_years": 4,
+        "language": "English",
+        "url": "https://inha.uz/undergraduate/",
+        "source_url": "https://inha.uz/undergraduate/",
+        "checked_at": "2026-11-14",
+        "verification_status": "staged"
+      }
+    ],
+    "tuition": {
+      "amount": 4000,
+      "currency": "USD",
+      "academic_year": "2026/27",
+      "basis": "per academic year",
+      "varies_by_programme": false,
+      "range_min": 4000,
+      "range_max": 4000,
+      "url": "https://inha.uz/prospective-students/admissions/application-guideline/",
+      "source_url": "https://inha.uz/prospective-students/admissions/application-guideline/",
+      "checked_at": "2026-11-14",
+      "verification_status": "staged"
+    },
+    "living_cost": null,
+    "application_fee": null,
+    "sources": [
+      "https://inha.uz/undergraduate/",
+      "https://inha.uz/prospective-students/admissions/application-guideline/",
+      "https://inha.uz/prospective-students/admissions/faq/"
+    ],
+    "source_url": "https://inha.uz/undergraduate/",
+    "checked_at": "2026-11-14",
+    "verification_status": "staged"
+  },
+  {
+    "university_id": "9485c68f-a900-55f2-870b-a072bed954a8",
+    "name": "Turin Polytechnic University In Tashkent",
+    "country": "UZ",
+    "main_language_of_instruction": "English",
+    "programmes": [
+      {
+        "name": "Mechanical Engineering",
+        "field": "mechanical engineering",
+        "degree": "BSc",
+        "duration_years": 4,
+        "language": "English",
+        "url": "https://polito.uz/course-catalog/",
+        "source_url": "https://polito.uz/course-catalog/",
+        "checked_at": "2026-11-14",
+        "verification_status": "staged"
+      },
+      {
+        "name": "Information and Communication Technology",
+        "field": "information technology/industrial automation",
+        "degree": "BSc",
+        "duration_years": 4,
+        "language": "English",
+        "url": "https://polito.uz/course-catalog/",
+        "source_url": "https://polito.uz/course-catalog/",
+        "checked_at": "2026-11-14",
+        "verification_status": "staged"
+      },
+      {
+        "name": "Civil Engineering and Architecture",
+        "field": "civil engineering/architecture",
+        "degree": "BSc",
+        "duration_years": 4,
+        "language": "English",
+        "url": "https://polito.uz/course-catalog/",
+        "source_url": "https://polito.uz/course-catalog/",
+        "checked_at": "2026-11-14",
+        "verification_status": "staged"
+      },
+      {
+        "name": "Mechatronics",
+        "field": "mechatronics",
+        "degree": "BSc",
+        "duration_years": 4,
+        "language": "English",
+        "url": "https://polito.uz/course-catalog/",
+        "source_url": "https://polito.uz/course-catalog/",
+        "checked_at": "2026-11-14",
+        "verification_status": "staged"
+      }
+    ],
+    "tuition": {
+      "amount": 28500000,
+      "currency": "UZS",
+      "academic_year": null,
+      "basis": "per academic year",
+      "varies_by_programme": false,
+      "range_min": 28500000,
+      "range_max": 28500000,
+      "url": "https://polito.uz/undergraduate-admission/",
+      "source_url": "https://polito.uz/undergraduate-admission/",
+      "checked_at": "2026-11-14",
+      "verification_status": "staged"
+    },
+    "living_cost": null,
+    "application_fee": null,
+    "sources": [
+      "https://polito.uz/course-catalog/",
+      "https://polito.uz/undergraduate-admission/"
+    ],
+    "source_url": "https://polito.uz/course-catalog/",
+    "checked_at": "2026-11-14",
+    "verification_status": "staged"
+  },
+  {
+    "university_id": "64e76836-ffb6-571c-8465-4a1b62caec45",
+    "name": "Ajou University in Tashkent",
+    "country": "UZ",
+    "main_language_of_instruction": "English (official site lists programs in English; primary-language policy not found)",
+    "programmes": [
+      {
+        "name": "Architecture",
+        "field": "architecture",
+        "degree": "Bachelor",
+        "duration_years": 4,
+        "language": "English",
+        "url": "https://info.ajou.uz/en",
+        "source_url": "https://info.ajou.uz/en",
+        "checked_at": "2026-11-14",
+        "verification_status": "staged"
+      },
+      {
+        "name": "Civil Systems Engineering",
+        "field": "civil engineering",
+        "degree": "Bachelor",
+        "duration_years": 4,
+        "language": "English",
+        "url": "https://info.ajou.uz/en",
+        "source_url": "https://info.ajou.uz/en",
+        "checked_at": "2026-11-14",
+        "verification_status": "staged"
+      },
+      {
+        "name": "Electrical and Computer Engineering",
+        "field": "electrical/computer engineering",
+        "degree": "Bachelor",
+        "duration_years": 4,
+        "language": "English",
+        "url": "https://info.ajou.uz/en",
+        "source_url": "https://info.ajou.uz/en",
+        "checked_at": "2026-11-14",
+        "verification_status": "staged"
+      },
+      {
+        "name": "AI Software",
+        "field": "computer science/artificial intelligence",
+        "degree": "Bachelor",
+        "duration_years": 4,
+        "language": "English",
+        "url": "https://info.ajou.uz/en",
+        "source_url": "https://info.ajou.uz/en",
+        "checked_at": "2026-11-14",
+        "verification_status": "staged"
+      },
+      {
+        "name": "Interior Design",
+        "field": "design",
+        "degree": "Bachelor",
+        "duration_years": 4,
+        "language": "English",
+        "url": "https://info.ajou.uz/en",
+        "source_url": "https://info.ajou.uz/en",
+        "checked_at": "2026-11-14",
+        "verification_status": "staged"
+      },
+      {
+        "name": "IT Business",
+        "field": "business/information technology",
+        "degree": "Bachelor",
+        "duration_years": 4,
+        "language": "English",
+        "url": "https://info.ajou.uz/en",
+        "source_url": "https://info.ajou.uz/en",
+        "checked_at": "2026-11-14",
+        "verification_status": "staged"
+      },
+      {
+        "name": "Business Administration",
+        "field": "business administration",
+        "degree": "Bachelor",
+        "duration_years": 4,
+        "language": "English",
+        "url": "https://info.ajou.uz/en",
+        "source_url": "https://info.ajou.uz/en",
+        "checked_at": "2026-11-14",
+        "verification_status": "staged"
+      },
+      {
+        "name": "English Philology and Management",
+        "field": "English/language studies/management",
+        "degree": "Bachelor",
+        "duration_years": 4,
+        "language": "English",
+        "url": "https://info.ajou.uz/en",
+        "source_url": "https://info.ajou.uz/en",
+        "checked_at": "2026-11-14",
+        "verification_status": "staged"
+      },
+      {
+        "name": "Korean Philology and Management",
+        "field": "Korean/language studies/management",
+        "degree": "Bachelor",
+        "duration_years": 4,
+        "language": "English",
+        "url": "https://info.ajou.uz/en",
+        "source_url": "https://info.ajou.uz/en",
+        "checked_at": "2026-11-14",
+        "verification_status": "staged"
+      }
+    ],
+    "tuition": {
+      "amount": null,
+      "currency": "USD",
+      "academic_year": "2026/27",
+      "basis": "per academic year",
+      "varies_by_programme": true,
+      "range_min": 1500,
+      "range_max": 2500,
+      "url": "https://info.ajou.uz/en",
+      "source_url": "https://info.ajou.uz/en",
+      "checked_at": "2026-11-14",
+      "verification_status": "staged"
+    },
+    "living_cost": null,
+    "application_fee": null,
+    "sources": [
+      "https://info.ajou.uz/en",
+      "https://www.ajou.uz/en/page/17"
+    ],
+    "source_url": "https://info.ajou.uz/en",
+    "checked_at": "2026-11-14",
+    "verification_status": "staged"
+  },
+  {
+    "university_id": "8b58712b-c508-53b2-9265-0be62b0cf121",
+    "name": "British Management University in Tashkent",
+    "country": "UZ",
+    "main_language_of_instruction": "English (degree partnerships/UK-validated; page does not explicitly state instruction language)",
+    "programmes": [
+      {
+        "name": "BSc in Accounting and Finance",
+        "field": "accounting/finance",
+        "degree": "BSc",
+        "duration_years": null,
+        "language": "English",
+        "url": "https://www.bmu-edu.uz/page/undergraduate-programmes",
+        "source_url": "https://www.bmu-edu.uz/page/undergraduate-programmes",
+        "checked_at": "2026-11-14",
+        "verification_status": "staged"
+      },
+      {
+        "name": "BSc in Management Information Systems",
+        "field": "information systems/business analytics",
+        "degree": "BSc",
+        "duration_years": null,
+        "language": "English",
+        "url": "https://www.bmu-edu.uz/page/undergraduate-programmes",
+        "source_url": "https://www.bmu-edu.uz/page/undergraduate-programmes",
+        "checked_at": "2026-11-14",
+        "verification_status": "staged"
+      },
+      {
+        "name": "BSc in Banking and Finance",
+        "field": "banking/finance",
+        "degree": "BSc",
+        "duration_years": null,
+        "language": "English",
+        "url": "https://www.bmu-edu.uz/page/undergraduate-programmes",
+        "source_url": "https://www.bmu-edu.uz/page/undergraduate-programmes",
+        "checked_at": "2026-11-14",
+        "verification_status": "staged"
+      },
+      {
+        "name": "BBA with Project Management",
+        "field": "business/project management",
+        "degree": "BBA",
+        "duration_years": null,
+        "language": "English",
+        "url": "https://www.bmu-edu.uz/page/undergraduate-programmes",
+        "source_url": "https://www.bmu-edu.uz/page/undergraduate-programmes",
+        "checked_at": "2026-11-14",
+        "verification_status": "staged"
+      },
+      {
+        "name": "BBA with Digital Marketing and e-Business",
+        "field": "marketing/e-business",
+        "degree": "BBA",
+        "duration_years": null,
+        "language": "English",
+        "url": "https://www.bmu-edu.uz/page/undergraduate-programmes",
+        "source_url": "https://www.bmu-edu.uz/page/undergraduate-programmes",
+        "checked_at": "2026-11-14",
+        "verification_status": "staged"
+      },
+      {
+        "name": "BBA with Logistics and Supply Chain Management",
+        "field": "logistics/supply chain",
+        "degree": "BBA",
+        "duration_years": null,
+        "language": "English",
+        "url": "https://www.bmu-edu.uz/page/undergraduate-programmes",
+        "source_url": "https://www.bmu-edu.uz/page/undergraduate-programmes",
+        "checked_at": "2026-11-14",
+        "verification_status": "staged"
+      },
+      {
+        "name": "BBA with Economics and Sustainable Development",
+        "field": "economics/sustainability",
+        "degree": "BBA",
+        "duration_years": null,
+        "language": "English",
+        "url": "https://www.bmu-edu.uz/page/undergraduate-programmes",
+        "source_url": "https://www.bmu-edu.uz/page/undergraduate-programmes",
+        "checked_at": "2026-11-14",
+        "verification_status": "staged"
+      },
+      {
+        "name": "BBA with Communication and Public Relations",
+        "field": "communications/public relations",
+        "degree": "BBA",
+        "duration_years": null,
+        "language": "English",
+        "url": "https://www.bmu-edu.uz/page/undergraduate-programmes",
+        "source_url": "https://www.bmu-edu.uz/page/undergraduate-programmes",
+        "checked_at": "2026-11-14",
+        "verification_status": "staged"
+      }
+    ],
+    "tuition": {
+      "amount": 42000000,
+      "currency": "UZS",
+      "academic_year": null,
+      "basis": "per academic year",
+      "varies_by_programme": false,
+      "range_min": 42000000,
+      "range_max": 42000000,
+      "url": "https://new2.bmu-edu.uz/page/admission-requirements-tuition-fees",
+      "source_url": "https://new2.bmu-edu.uz/page/admission-requirements-tuition-fees",
+      "checked_at": "2026-11-14",
+      "verification_status": "staged"
+    },
+    "living_cost": null,
+    "application_fee": null,
+    "sources": [
+      "https://www.bmu-edu.uz/page/undergraduate-programmes",
+      "https://bmu-edu.uz/news-detail/31",
+      "https://new2.bmu-edu.uz/page/admission-requirements-tuition-fees"
+    ],
+    "source_url": "https://www.bmu-edu.uz/page/undergraduate-programmes",
+    "checked_at": "2026-11-14",
+    "verification_status": "staged"
+  },
+  {
+    "university_id": "4c6c3693-a60d-5db2-9474-183c31cec805",
+    "name": "Russian Economic University after G.V. Plekhanov",
+    "country": "UZ",
+    "main_language_of_instruction": "Russian",
+    "programmes": [],
+    "tuition": null,
+    "living_cost": null,
+    "application_fee": null,
+    "sources": [
+      "https://www.rea.ru/"
+    ],
+    "source_url": "https://www.rea.ru/",
+    "checked_at": "2026-11-14",
+    "verification_status": "staged"
+  },
+  {
+    "university_id": "69434102-e5f5-5311-9294-2f101f81906f",
+    "name": "Nazarbayev University",
+    "country": "KZ",
+    "main_language_of_instruction": "English",
+    "programmes": [
+      {
+        "name": "Anthropology",
+        "field": "anthropology",
+        "degree": "BA",
+        "duration_years": 4,
+        "language": "English",
+        "url": "https://openday.nu.edu.kz/undergraduate_studyportals",
+        "source_url": "https://openday.nu.edu.kz/undergraduate_studyportals",
+        "checked_at": "2026-11-14",
+        "verification_status": "staged"
+      },
+      {
+        "name": "Biological Sciences",
+        "field": "biology",
+        "degree": "BSc",
+        "duration_years": 4,
+        "language": "English",
+        "url": "https://openday.nu.edu.kz/undergraduate_studyportals",
+        "source_url": "https://openday.nu.edu.kz/undergraduate_studyportals",
+        "checked_at": "2026-11-14",
+        "verification_status": "staged"
+      },
+      {
+        "name": "Chemistry",
+        "field": "chemistry",
+        "degree": "BSc",
+        "duration_years": 4,
+        "language": "English",
+        "url": "https://openday.nu.edu.kz/undergraduate_studyportals",
+        "source_url": "https://openday.nu.edu.kz/undergraduate_studyportals",
+        "checked_at": "2026-11-14",
+        "verification_status": "staged"
+      },
+      {
+        "name": "Computer Science",
+        "field": "computer science",
+        "degree": "BSc",
+        "duration_years": 4,
+        "language": "English",
+        "url": "https://openday.nu.edu.kz/undergraduate_studyportals",
+        "source_url": "https://openday.nu.edu.kz/undergraduate_studyportals",
+        "checked_at": "2026-11-14",
+        "verification_status": "staged"
+      },
+      {
+        "name": "Chemical and Materials Engineering",
+        "field": "chemical/materials engineering",
+        "degree": "BSc",
+        "duration_years": 4,
+        "language": "English",
+        "url": "https://openday.nu.edu.kz/undergraduate_studyportals",
+        "source_url": "https://openday.nu.edu.kz/undergraduate_studyportals",
+        "checked_at": "2026-11-14",
+        "verification_status": "staged"
+      },
+      {
+        "name": "Civil and Environmental Engineering",
+        "field": "civil/environmental engineering",
+        "degree": "BSc",
+        "duration_years": 4,
+        "language": "English",
+        "url": "https://openday.nu.edu.kz/undergraduate_studyportals",
+        "source_url": "https://openday.nu.edu.kz/undergraduate_studyportals",
+        "checked_at": "2026-11-14",
+        "verification_status": "staged"
+      },
+      {
+        "name": "Economics",
+        "field": "economics",
+        "degree": "BA",
+        "duration_years": 4,
+        "language": "English",
+        "url": "https://openday.nu.edu.kz/undergraduate_studyportals",
+        "source_url": "https://openday.nu.edu.kz/undergraduate_studyportals",
+        "checked_at": "2026-11-14",
+        "verification_status": "staged"
+      },
+      {
+        "name": "Electrical and Computer Engineering",
+        "field": "electrical/computer engineering",
+        "degree": "BSc",
+        "duration_years": 4,
+        "language": "English",
+        "url": "https://openday.nu.edu.kz/undergraduate_studyportals",
+        "source_url": "https://openday.nu.edu.kz/undergraduate_studyportals",
+        "checked_at": "2026-11-14",
+        "verification_status": "staged"
+      },
+      {
+        "name": "Geology",
+        "field": "geology",
+        "degree": "BSc",
+        "duration_years": 4,
+        "language": "English",
+        "url": "https://openday.nu.edu.kz/undergraduate_studyportals",
+        "source_url": "https://openday.nu.edu.kz/undergraduate_studyportals",
+        "checked_at": "2026-11-14",
+        "verification_status": "staged"
+      },
+      {
+        "name": "History",
+        "field": "history",
+        "degree": "BA",
+        "duration_years": 4,
+        "language": "English",
+        "url": "https://openday.nu.edu.kz/undergraduate_studyportals",
+        "source_url": "https://openday.nu.edu.kz/undergraduate_studyportals",
+        "checked_at": "2026-11-14",
+        "verification_status": "staged"
+      },
+      {
+        "name": "Mathematics",
+        "field": "mathematics",
+        "degree": "BSc",
+        "duration_years": 4,
+        "language": "English",
+        "url": "https://openday.nu.edu.kz/undergraduate_studyportals",
+        "source_url": "https://openday.nu.edu.kz/undergraduate_studyportals",
+        "checked_at": "2026-11-14",
+        "verification_status": "staged"
+      },
+      {
+        "name": "Mechanical and Aerospace Engineering",
+        "field": "mechanical/aerospace engineering",
+        "degree": "BSc",
+        "duration_years": 4,
+        "language": "English",
+        "url": "https://openday.nu.edu.kz/undergraduate_studyportals",
+        "source_url": "https://openday.nu.edu.kz/undergraduate_studyportals",
+        "checked_at": "2026-11-14",
+        "verification_status": "staged"
+      },
+      {
+        "name": "Mining Engineering",
+        "field": "mining engineering",
+        "degree": "BEng",
+        "duration_years": 4,
+        "language": "English",
+        "url": "https://openday.nu.edu.kz/undergraduate_studyportals",
+        "source_url": "https://openday.nu.edu.kz/undergraduate_studyportals",
+        "checked_at": "2026-11-14",
+        "verification_status": "staged"
+      },
+      {
+        "name": "Nursing",
+        "field": "nursing",
+        "degree": "BSN",
+        "duration_years": 4,
+        "language": "English",
+        "url": "https://openday.nu.edu.kz/undergraduate_studyportals",
+        "source_url": "https://openday.nu.edu.kz/undergraduate_studyportals",
+        "checked_at": "2026-11-14",
+        "verification_status": "staged"
+      },
+      {
+        "name": "Petroleum Engineering",
+        "field": "petroleum engineering",
+        "degree": "BEng",
+        "duration_years": 4,
+        "language": "English",
+        "url": "https://openday.nu.edu.kz/undergraduate_studyportals",
+        "source_url": "https://openday.nu.edu.kz/undergraduate_studyportals",
+        "checked_at": "2026-11-14",
+        "verification_status": "staged"
+      },
+      {
+        "name": "Physics",
+        "field": "physics",
+        "degree": "BSc",
+        "duration_years": 4,
+        "language": "English",
+        "url": "https://openday.nu.edu.kz/undergraduate_studyportals",
+        "source_url": "https://openday.nu.edu.kz/undergraduate_studyportals",
+        "checked_at": "2026-11-14",
+        "verification_status": "staged"
+      },
+      {
+        "name": "Political Science and International Relations",
+        "field": "political science/international relations",
+        "degree": "BA",
+        "duration_years": 4,
+        "language": "English",
+        "url": "https://openday.nu.edu.kz/undergraduate_studyportals",
+        "source_url": "https://openday.nu.edu.kz/undergraduate_studyportals",
+        "checked_at": "2026-11-14",
+        "verification_status": "staged"
+      },
+      {
+        "name": "Robotics and Mechatronics",
+        "field": "robotics/mechatronics",
+        "degree": "BSc",
+        "duration_years": 4,
+        "language": "English",
+        "url": "https://openday.nu.edu.kz/undergraduate_studyportals",
+        "source_url": "https://openday.nu.edu.kz/undergraduate_studyportals",
+        "checked_at": "2026-11-14",
+        "verification_status": "staged"
+      },
+      {
+        "name": "Sociology",
+        "field": "sociology",
+        "degree": "BA",
+        "duration_years": 4,
+        "language": "English",
+        "url": "https://openday.nu.edu.kz/undergraduate_studyportals",
+        "source_url": "https://openday.nu.edu.kz/undergraduate_studyportals",
+        "checked_at": "2026-11-14",
+        "verification_status": "staged"
+      },
+      {
+        "name": "World Languages, Literature and Culture",
+        "field": "languages/literature/culture",
+        "degree": "BA",
+        "duration_years": 4,
+        "language": "English",
+        "url": "https://openday.nu.edu.kz/undergraduate_studyportals",
+        "source_url": "https://openday.nu.edu.kz/undergraduate_studyportals",
+        "checked_at": "2026-11-14",
+        "verification_status": "staged"
+      }
+    ],
+    "tuition": {
+      "amount": 15000,
+      "currency": "USD",
+      "academic_year": "2026/27",
+      "basis": "per academic year",
+      "varies_by_programme": false,
+      "range_min": 15000,
+      "range_max": 15000,
+      "url": "https://nu.edu.kz/admissions/how-to-apply/foundation-undergraduate/regular-admissions/",
+      "source_url": "https://nu.edu.kz/admissions/how-to-apply/foundation-undergraduate/regular-admissions/",
+      "checked_at": "2026-11-14",
+      "verification_status": "staged"
+    },
+    "living_cost": {
+      "amount": 4800,
+      "currency": "USD",
+      "url": "https://nu.edu.kz/admissions/how-to-apply/foundation-undergraduate/regular-admissions/",
+      "source_url": "https://nu.edu.kz/admissions/how-to-apply/foundation-undergraduate/regular-admissions/",
+      "basis": "annualized from official monthly estimate of approx. $400",
+      "checked_at": "2026-11-14",
+      "verification_status": "staged"
+    },
+    "application_fee": null,
+    "sources": [
+      "https://nu.edu.kz/admissions/how-to-apply/foundation-undergraduate/regular-admissions/",
+      "https://openday.nu.edu.kz/undergraduate_studyportals"
+    ],
+    "source_url": "https://nu.edu.kz/admissions/how-to-apply/foundation-undergraduate/regular-admissions/",
+    "checked_at": "2026-11-14",
+    "verification_status": "staged"
+  },
+  {
+    "university_id": "3a93f754-56b1-5f5b-82c8-a50ea6d994e7",
+    "name": "Kazakhstan Institute of Management, Economics, and Strategic Research",
+    "country": "KZ",
+    "main_language_of_instruction": "English (programme directory / instruction statement not verified in accessible official source)",
+    "programmes": [],
+    "tuition": {
+      "amount": 163230,
+      "currency": "KZT",
+      "academic_year": "2026/27",
+      "basis": "per credit",
+      "varies_by_programme": false,
+      "range_min": null,
+      "range_max": null,
+      "url": "https://www.kimep.kz/prospective-students/files/2026/05/tuition_fees_ugrad_eng.pdf",
+      "source_url": "https://www.kimep.kz/prospective-students/files/2026/05/tuition_fees_ugrad_eng.pdf",
+      "checked_at": "2026-11-14",
+      "verification_status": "staged"
+    },
+    "living_cost": null,
+    "application_fee": null,
+    "sources": [
+      "https://www.kimep.kz/prospective-students/files/2026/05/tuition_fees_ugrad_eng.pdf",
+      "https://www.kimep.kz/prospective-students/files/2026/05/Tuition-and-fees-eng-2026-27.pdf"
+    ],
+    "source_url": "https://www.kimep.kz/prospective-students/files/2026/05/tuition_fees_ugrad_eng.pdf",
+    "checked_at": "2026-11-14",
+    "verification_status": "staged"
+  },
+  {
+    "university_id": "f0e54c4c-797b-5d73-ba3f-7f0483425c17",
+    "name": "Kazakh British Technical University",
+    "country": "KZ",
+    "main_language_of_instruction": "Kazakh, Russian and English (varies by programme; official list says English + Russian for some)",
+    "programmes": [],
+    "tuition": null,
+    "living_cost": null,
+    "application_fee": null,
+    "sources": [
+      "https://kbtu.edu.kz/en/internationalization/international-admissions-internationalization",
+      "https://kbtu.edu.kz/en/educational-programs-2026"
+    ],
+    "source_url": "https://kbtu.edu.kz/en/internationalization/international-admissions-internationalization",
+    "checked_at": "2026-11-14",
+    "verification_status": "staged"
+  },
+  {
+    "university_id": "1864081c-b337-55b6-8677-6a2c3828a8df",
+    "name": "Kazakh German University",
+    "country": "KZ",
+    "main_language_of_instruction": "Russian; English/German in some courses, not full English-medium bachelor programmes",
+    "programmes": [],
+    "tuition": {
+      "amount": 2500000,
+      "currency": "KZT",
+      "academic_year": null,
+      "basis": "per academic year",
+      "varies_by_programme": false,
+      "range_min": 2500000,
+      "range_max": 2500000,
+      "url": "https://dku.kz/en/stoimost-obucheniya-i-stipendii",
+      "source_url": "https://dku.kz/en/stoimost-obucheniya-i-stipendii",
+      "checked_at": "2026-11-14",
+      "verification_status": "staged"
+    },
+    "living_cost": null,
+    "application_fee": null,
+    "sources": [
+      "https://dku.kz/en/inostrannym-abiturientam",
+      "https://dku.kz/en/stoimost-obucheniya-i-stipendii"
+    ],
+    "source_url": "https://dku.kz/en/inostrannym-abiturientam",
+    "checked_at": "2026-11-14",
+    "verification_status": "staged"
+  },
+  {
+    "university_id": "48bb7649-d12f-5854-b7d9-f586e7b81d72",
+    "name": "American University of Central Asia",
+    "country": "KG",
+    "main_language_of_instruction": "English (American liberal arts; English-medium program detail not confirmed for every major)",
+    "programmes": [
+      {
+        "name": "Anthropology and International Development",
+        "field": "broad subject",
+        "degree": null,
+        "duration_years": null,
+        "language": "English",
+        "url": "https://auca.kg/en/ap/",
+        "source_url": "https://auca.kg/en/ap/",
+        "checked_at": "2026-11-14",
+        "verification_status": "staged"
+      },
+      {
+        "name": "Applied Mathematics and Informatics",
+        "field": "broad subject",
+        "degree": null,
+        "duration_years": null,
+        "language": "English",
+        "url": "https://auca.kg/en/ap/",
+        "source_url": "https://auca.kg/en/ap/",
+        "checked_at": "2026-11-14",
+        "verification_status": "staged"
+      },
+      {
+        "name": "Business Administration",
+        "field": "broad subject",
+        "degree": null,
+        "duration_years": null,
+        "language": "English",
+        "url": "https://auca.kg/en/ap/",
+        "source_url": "https://auca.kg/en/ap/",
+        "checked_at": "2026-11-14",
+        "verification_status": "staged"
+      },
+      {
+        "name": "Economics",
+        "field": "broad subject",
+        "degree": null,
+        "duration_years": null,
+        "language": "English",
+        "url": "https://auca.kg/en/ap/",
+        "source_url": "https://auca.kg/en/ap/",
+        "checked_at": "2026-11-14",
+        "verification_status": "staged"
+      },
+      {
+        "name": "Environmental Sustainability and Climate Science",
+        "field": "broad subject",
+        "degree": null,
+        "duration_years": null,
+        "language": "English",
+        "url": "https://auca.kg/en/ap/",
+        "source_url": "https://auca.kg/en/ap/",
+        "checked_at": "2026-11-14",
+        "verification_status": "staged"
+      },
+      {
+        "name": "International and Business Law",
+        "field": "broad subject",
+        "degree": null,
+        "duration_years": null,
+        "language": "English",
+        "url": "https://auca.kg/en/ap/",
+        "source_url": "https://auca.kg/en/ap/",
+        "checked_at": "2026-11-14",
+        "verification_status": "staged"
+      },
+      {
+        "name": "International and Comparative Politics",
+        "field": "broad subject",
+        "degree": null,
+        "duration_years": null,
+        "language": "English",
+        "url": "https://auca.kg/en/ap/",
+        "source_url": "https://auca.kg/en/ap/",
+        "checked_at": "2026-11-14",
+        "verification_status": "staged"
+      },
+      {
+        "name": "Journalism and Mass Communication",
+        "field": "broad subject",
+        "degree": null,
+        "duration_years": null,
+        "language": "English",
+        "url": "https://auca.kg/en/ap/",
+        "source_url": "https://auca.kg/en/ap/",
+        "checked_at": "2026-11-14",
+        "verification_status": "staged"
+      },
+      {
+        "name": "Liberal Arts and Sciences",
+        "field": "broad subject",
+        "degree": null,
+        "duration_years": null,
+        "language": "English",
+        "url": "https://auca.kg/en/ap/",
+        "source_url": "https://auca.kg/en/ap/",
+        "checked_at": "2026-11-14",
+        "verification_status": "staged"
+      },
+      {
+        "name": "Psychology",
+        "field": "broad subject",
+        "degree": null,
+        "duration_years": null,
+        "language": "English",
+        "url": "https://auca.kg/en/ap/",
+        "source_url": "https://auca.kg/en/ap/",
+        "checked_at": "2026-11-14",
+        "verification_status": "staged"
+      },
+      {
+        "name": "Sociology",
+        "field": "broad subject",
+        "degree": null,
+        "duration_years": null,
+        "language": "English",
+        "url": "https://auca.kg/en/ap/",
+        "source_url": "https://auca.kg/en/ap/",
+        "checked_at": "2026-11-14",
+        "verification_status": "staged"
+      },
+      {
+        "name": "Software Engineering",
+        "field": "broad subject",
+        "degree": null,
+        "duration_years": null,
+        "language": "English",
+        "url": "https://auca.kg/en/ap/",
+        "source_url": "https://auca.kg/en/ap/",
+        "checked_at": "2026-11-14",
+        "verification_status": "staged"
+      },
+      {
+        "name": "Television, Cinema and Media Arts",
+        "field": "broad subject",
+        "degree": null,
+        "duration_years": null,
+        "language": "English",
+        "url": "https://auca.kg/en/ap/",
+        "source_url": "https://auca.kg/en/ap/",
+        "checked_at": "2026-11-14",
+        "verification_status": "staged"
+      }
+    ],
+    "tuition": null,
+    "living_cost": null,
+    "application_fee": null,
+    "sources": [
+      "https://auca.kg/en/ap/",
+      "https://www.auca.kg/en/tuition_fees_payment/",
+      "https://www.auca.kg/en/undergrad/"
+    ],
+    "source_url": "https://auca.kg/en/ap/",
+    "checked_at": "2026-11-14",
+    "verification_status": "staged"
+  },
+  {
+    "university_id": "b99019e6-e35f-57b0-8522-f934f7ee60e5",
+    "name": "University of Central Asia",
+    "country": "KG",
+    "main_language_of_instruction": "English",
+    "programmes": [
+      {
+        "name": "Computer Science",
+        "field": "computer science",
+        "degree": "BSc",
+        "duration_years": 5,
+        "language": "English",
+        "url": "https://ucentralasia.org/admissions/undergraduate/undergraduate-programmes",
+        "source_url": "https://ucentralasia.org/admissions/undergraduate/undergraduate-programmes",
+        "checked_at": "2026-11-14",
+        "verification_status": "staged"
+      },
+      {
+        "name": "Communications and Media",
+        "field": "communications/media",
+        "degree": "BA",
+        "duration_years": 5,
+        "language": "English",
+        "url": "https://ucentralasia.org/admissions/undergraduate/undergraduate-programmes",
+        "source_url": "https://ucentralasia.org/admissions/undergraduate/undergraduate-programmes",
+        "checked_at": "2026-11-14",
+        "verification_status": "staged"
+      },
+      {
+        "name": "Earth and Environmental Sciences",
+        "field": "earth/environmental sciences",
+        "degree": "BSc",
+        "duration_years": 5,
+        "language": "English",
+        "url": "https://ucentralasia.org/schools/school-of-arts-and-sciences/undergraduate-programme/earth-and-environmental-science",
+        "source_url": "https://ucentralasia.org/schools/school-of-arts-and-sciences/undergraduate-programme/earth-and-environmental-science",
+        "checked_at": "2026-11-14",
+        "verification_status": "staged"
+      },
+      {
+        "name": "Global Economics",
+        "field": "economics",
+        "degree": "BA",
+        "duration_years": 5,
+        "language": "English",
+        "url": "https://ucentralasia.org/admissions/undergraduate/undergraduate-programmes",
+        "source_url": "https://ucentralasia.org/admissions/undergraduate/undergraduate-programmes",
+        "checked_at": "2026-11-14",
+        "verification_status": "staged"
+      }
+    ],
+    "tuition": {
+      "amount": 8000,
+      "currency": "USD",
+      "academic_year": null,
+      "basis": "per year (tuition, materials, housing, meals bundled)",
+      "varies_by_programme": false,
+      "range_min": 8000,
+      "range_max": 8000,
+      "url": "https://ucentralasia.org/admissions/undergraduate/undergraduate-programmes",
+      "source_url": "https://ucentralasia.org/admissions/undergraduate/undergraduate-programmes",
+      "checked_at": "2026-11-14",
+      "verification_status": "staged"
+    },
+    "living_cost": {
+      "amount": null,
+      "currency": "USD",
+      "url": "https://ucentralasia.org/admissions/undergraduate/undergraduate-programmes",
+      "source_url": "https://ucentralasia.org/admissions/undergraduate/undergraduate-programmes",
+      "basis": "included in $8,000 total annual cost, not separately itemized",
+      "checked_at": "2026-11-14",
+      "verification_status": "staged"
+    },
+    "application_fee": {
+      "amount": 15,
+      "currency": "USD",
+      "url": "https://ucentralasia.org/admissions/undergraduate/undergraduate-programmes",
+      "source_url": "https://ucentralasia.org/admissions/undergraduate/undergraduate-programmes",
+      "basis": "admissions test fee; online proctoring additional $38",
+      "checked_at": "2026-11-14",
+      "verification_status": "staged"
+    },
+    "sources": [
+      "https://ucentralasia.org/admissions/undergraduate/undergraduate-programmes",
+      "https://admissions.ucentralasia.org/explore/programs/"
+    ],
+    "source_url": "https://ucentralasia.org/admissions/undergraduate/undergraduate-programmes",
+    "checked_at": "2026-11-14",
+    "verification_status": "staged"
+  },
+  {
+    "university_id": "ece36c8b-699b-5db2-af92-bf6619f5c098",
+    "name": "Kyrgyz-Türkish Manas Üniversity",
+    "country": "KG",
+    "main_language_of_instruction": "Kyrgyz and Turkish; some programmes offer English components",
+    "programmes": [],
+    "tuition": null,
+    "living_cost": null,
+    "application_fee": null,
+    "sources": [
+      "https://manas.edu.kg/en/about_manas/aboutmanas",
+      "https://oidb.manas.edu.kg/en/faq/7"
+    ],
+    "source_url": "https://manas.edu.kg/en/about_manas/aboutmanas",
+    "checked_at": "2026-11-14",
+    "verification_status": "staged"
+  },
+  {
+    "university_id": "be81cb5c-6657-5124-bc3c-945fa7d4b724",
+    "name": "Kyrgyz Russian Slavic University",
+    "country": "KG",
+    "main_language_of_instruction": "Russian (English-medium bachelor programmes not verified)",
+    "programmes": [],
+    "tuition": null,
+    "living_cost": null,
+    "application_fee": null,
+    "sources": [
+      "https://krsu.edu.kg/"
+    ],
+    "source_url": "https://krsu.edu.kg/",
+    "checked_at": "2026-11-14",
+    "verification_status": "staged"
+  },
+  {
+    "university_id": "85061c78-c1ee-5e28-ac6b-b92da2ed3ab6",
+    "name": "Moscow State University",
+    "country": "TJ",
+    "main_language_of_instruction": null,
+    "programmes": [],
+    "tuition": null,
+    "living_cost": null,
+    "application_fee": null,
+    "sources": [
+      "https://www.msu.tj/"
+    ],
+    "source_url": "https://www.msu.tj/",
+    "checked_at": "2026-11-14",
+    "verification_status": "staged"
+  },
+  {
+    "university_id": "b34c4f2c-caf0-55a8-844e-b5e3426102de",
+    "name": "Russian-Tajik Slavonic University",
+    "country": "TJ",
+    "main_language_of_instruction": "Russian (English-medium bachelor programmes not verified)",
+    "programmes": [],
+    "tuition": null,
+    "living_cost": null,
+    "application_fee": null,
+    "sources": [
+      "http://www.rtsu.tj"
+    ],
+    "source_url": "http://www.rtsu.tj",
+    "checked_at": "2026-11-14",
+    "verification_status": "staged"
+  }
+]

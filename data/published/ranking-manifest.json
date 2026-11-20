@@ -2,15 +2,15 @@
   "arwu_2026_rows": 1000,
   "retrieved_at": "2026-09-28",
   "qs_2027_rows": 1504,
-  "linked": 4813,
+  "linked": 4820,
   "by_provider": {
-    "qs": 1853,
-    "the": 2017,
-    "arwu": 943
+    "qs": 1857,
+    "the": 2019,
+    "arwu": 944
   },
   "qs_pdf_rows": 502,
   "the_ranked_rows": 2191,
-  "unmatched": 384,
+  "unmatched": 377,
   "matching": "Unique exact normalized registered name or alias in the same country, with active ROR Education reconciliation; ambiguous identities remain unlinked.",
   "sources": [
     {

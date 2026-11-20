@@ -1,0 +1,169 @@
+{
+  "reviewed_at": "2026-10-05",
+  "registry_release": "ROR 2.13 · 2026-09-22",
+  "records": [
+    {
+      "ror": "https://ror.org/00rhgqg04",
+      "name": "Almaty Management University",
+      "country": "KZ",
+      "website": "https://almau.edu.kz",
+      "url": "https://almau.edu.kz",
+      "title": "Almaty Management University AlmaU - Almaty Management University",
+      "sha256": "f1dd2ef28d5339bb28b991a982fbcc875aa0c3f5dbcd70ca651ff1db3e182eb9",
+      "checked_at": "2026-10-05"
+    },
+    {
+      "ror": "https://ror.org/045mxyc94",
+      "name": "Turan University",
+      "country": "KZ",
+      "website": "https://turan-edu.kz",
+      "url": "https://www.turan-edu.kz/",
+      "title": "Turan University",
+      "sha256": "84764b5b697dd92bc9a50ad55a50041c2596450356945cc4b9506709411c976b",
+      "checked_at": "2026-10-05"
+    },
+    {
+      "ror": "https://ror.org/00v76vw28",
+      "name": "Tajik State University of Commerce",
+      "country": "TJ",
+      "website": "http://www.tguk.tj",
+      "url": "https://www.tguk.tj",
+      "title": "ДДТТ — Донишгоҳи давлатии тиҷорати Тоҷикистон",
+      "sha256": "cd74de54942ebe6c3638818c5936505a99cb6faa86a24786067e9da112e3181b",
+      "checked_at": "2026-10-05"
+    },
+    {
+      "ror": "https://ror.org/04bccg972",
+      "name": "Tajik National University",
+      "country": "TJ",
+      "website": "https://www.tnu.tj",
+      "url": "https://tnu.tj/index.php/tj/asos/",
+      "title": "tnu – Таджикский национальный университет",
+      "sha256": "c605fb9f6a7d915b103e58baf9fd78a532da1238b95ce3323d5353c4220c8763",
+      "checked_at": "2026-10-05"
+    },
+    {
+      "ror": "https://ror.org/0417k2898",
+      "name": "Innovative University of Eurasia",
+      "country": "KZ",
+      "website": "http://ineu.kz",
+      "url": "https://ineu.edu.kz/",
+      "title": "Инновациялық Еуразия Университеті",
+      "sha256": "8d23686872e8bfab220d9b0f0d1577c8f3c98643f62e0a8a5df84f30fee0f3c2",
+      "checked_at": "2026-10-05"
+    },
+    {
+      "ror": "https://ror.org/03nff2e18",
+      "name": "Kulyab State University named after Abuabdullo Rudaki",
+      "country": "TJ",
+      "website": "http://www.kgu.tj",
+      "url": "https://new.kgu.tj/tj",
+      "title": "Донишгоҳи давлатии Кӯлоб ба номи Абуабдуллоҳи Рӯдакӣ",
+      "sha256": "fce53351100f18086d696b60a492c2291648254c0735d640ad12f4540e3983a5",
+      "checked_at": "2026-10-05"
+    },
+    {
+      "ror": "https://ror.org/01gtvs751",
+      "name": "Ahmet Yesevi University",
+      "country": "KZ",
+      "website": "http://ayu.edu.kz/index.php/en",
+      "url": "https://ayu.edu.kz/index.php/en",
+      "title": "Ахмет Ясауи университеті | AYU",
+      "sha256": "5b6f5fef2ce2c0a016f8ac3355135ce25b332f7487c371e4e691b36970e3b466",
+      "checked_at": "2026-10-05"
+    },
+    {
+      "ror": "https://ror.org/00bad4666",
+      "name": "Andijan State University",
+      "country": "UZ",
+      "website": "https://www.adu.uz/",
+      "url": "https://www.adu.uz/",
+      "title": "Andijon davlat universiteti",
+      "sha256": "219ca238affa198e35781da70f7f55c2a8a32e676e48e6afeb9586a6c3c0d212",
+      "checked_at": "2026-10-05"
+    },
+    {
+      "ror": "https://ror.org/02r6cx512",
+      "name": "Khujand State University",
+      "country": "TJ",
+      "website": "http://hgu.tj/ru",
+      "url": "https://hgu.tj/ru",
+      "title": "Главная | HGU.TJ",
+      "sha256": "3b6ae27b3f486f7f2648e710d05736c82216b0d119a129c940b9a90bff7034f2",
+      "checked_at": "2026-10-05"
+    },
+    {
+      "ror": "https://ror.org/00y792711",
+      "name": "Technological University of Tajikistan",
+      "country": "TJ",
+      "website": "http://tut.tj",
+      "url": "https://tut.tj",
+      "title": "Донишгоҳи технологии Тоҷикистон",
+      "sha256": "184362bd2dbb03f23e6b256f8cc15e22eaecfdbda948c7f01fdc6902088d8ca3",
+      "checked_at": "2026-10-05"
+    },
+    {
+      "ror": "https://ror.org/04x7abt37",
+      "name": "International University of Central Asia",
+      "country": "KG",
+      "website": "http://iuca.kg/",
+      "url": "https://www.iuca.kg/en",
+      "title": "International University of Central Asia",
+      "sha256": "7e99053faa7201bb9041fb4ae97722bd7d730cfdadba89e2a28b7d10a70ec8c2",
+      "checked_at": "2026-10-05"
+    },
+    {
+      "ror": "https://ror.org/03gk5bm92",
+      "name": "Kazakh-American Free University",
+      "country": "KZ",
+      "website": "http://www.kafu.kz/en/",
+      "url": "https://kafu.edu.kz/en/",
+      "title": "Kazakh-American free university (KAFU) — education, KAFU, international programs, AI-Sana",
+      "sha256": "d6150c28aeea3294202959c40667f7688c7bcf2c7929e904fb45fc808c81fda9",
+      "checked_at": "2026-10-05"
+    },
+    {
+      "ror": "https://ror.org/034p3rp25",
+      "name": "Kazakhstan Medical University",
+      "country": "KZ",
+      "website": "http://www.ksph.kz/?lang=en",
+      "url": "https://ksph.edu.kz/en/?lang=en",
+      "title": "Home | Казахстанский Медицинский Университет \"ВШОЗ\"",
+      "sha256": "f64534b000a12ab74e3d3cb01411d778a76c422d19d370b09a633da0c5b1b68d",
+      "checked_at": "2026-10-05"
+    },
+    {
+      "ror": "https://ror.org/01f15r266",
+      "name": "Inha University in Tashkent",
+      "country": "UZ",
+      "website": "https://inha.uz/",
+      "url": "https://inha.uz/",
+      "checked_at": "2026-10-05",
+      "verification": "Official university homepage corroborates independent Tashkent institution, founded 2014."
+    },
+    {
+      "ror": "https://ror.org/04rrs4x54",
+      "name": "University of Central Asia",
+      "country": "KG",
+      "website": "https://ucentralasia.org/",
+      "url": "https://ucentralasia.org/about/about-uca",
+      "checked_at": "2026-10-05",
+      "verification": "Official institutional history describes private, nonprofit internationally chartered institution with campuses in Naryn and Khorog.",
+      "university_type": "Private"
+    }
+  ],
+  "excluded": [
+    {
+      "ror": "https://ror.org/03mw9fr44",
+      "reason": "Cached website now serves unrelated gambling content; do not publish."
+    },
+    {
+      "ror": "https://ror.org/02emvsg33",
+      "reason": "Third-party admissions agency is not an official university website."
+    },
+    {
+      "ror": "https://ror.org/050a13t43",
+      "reason": "Campus-qualified identity requires separate branch review."
+    }
+  ]
+}

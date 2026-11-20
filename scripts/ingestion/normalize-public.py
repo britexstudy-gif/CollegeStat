@@ -3,7 +3,7 @@
 Use bundled Python with openpyxl. Raw files are never changed. Full releases can be
 processed in streaming ZIP/CSV mode with the same dictionaries and ID crosswalk.
 """
-import csv, datetime, hashlib, html, io, json, pathlib, re, uuid, zipfile
+import collections, csv, datetime, hashlib, html, io, json, pathlib, re, sys, uuid, zipfile
 from html.parser import HTMLParser
 import openpyxl
 ROOT = pathlib.Path(__file__).resolve().parents[2]
@@ -16,6 +16,10 @@ NOW=datetime.datetime.now(datetime.timezone.utc).isoformat()
 RELEASE={'ror':'ROR API v2.1','openalex':'OpenAlex institution API snapshot '+NOW[:10],'wikidata':'Wikidata EntityData '+NOW[:10],'scorecard':'2023 institution API; 2026-06-10 dictionary','ipeds':'2023 annual survey','carnegie':'2025 public file','leiden':'Leiden Open Edition 2025, 2020–2023'}
 LICENSE={'ror':'CC0-1.0','openalex':'CC0-1.0','wikidata':'CC0-1.0 for structured Wikidata facts; Commons files have separate licenses','scorecard':'US government public data','ipeds':'US government public data','carnegie':'CC BY-NC-SA 4.0; local review only, no commercial publication','leiden':'CC0-1.0'}
 records=[]; reviews=[]; identities={}; summaries={}
+skipped_values=collections.Counter(); skipped_examples={}
+def log_skipped(raw):
+ key=str(raw)[:40]; skipped_values[key]+=1
+ if key not in skipped_examples and len(skipped_examples)<50: skipped_examples[key]=raw
 
 def uid(key):return str(uuid.uuid5(uuid.NAMESPACE_URL,'https://collegestat.app/import/'+key))
 def meta(source,filename):return json.loads((RAW/source/(filename+'.meta.json')).read_text())
@@ -32,11 +36,13 @@ def emit(source, slug, record_id, metric, value, unit=None, year=None, cohort=No
 
 def review(source,rid,reason,slug=None,candidates=None): reviews.append({'source':source,'source_record_id':str(rid),'reason':reason,'university_id':BY_SLUG[slug]['id'] if slug else None,'possible_university_ids':[BY_SLUG[x]['id'] for x in candidates or []]})
 def val(x):
-    if x is None:return None
-    s=str(x).strip()
-    if not s or s in ('-1','-2','-3','-4','-5','-6','-7','-8','-9','PrivacySuppressed','NULL','NA'):return None
+    if x is None: log_skipped(x); return None
+    s=str(x).strip().replace(',','').replace('\xa0','').strip()
+    if not s or s in ('–','—','-','N/A','NA','n/a','NULL','null','PrivacySuppressed',''):
+        log_skipped(x); return None
+    if s in ('-1','-2','-3','-4','-5','-6','-7','-8','-9'): log_skipped(x); return None
     try:return float(s) if '.' in s else int(s)
-    except ValueError:return None
+    except ValueError: log_skipped(x); return None
 
 def ziprows(name):
     with zipfile.ZipFile(RAW/'ipeds'/(name+'.zip')) as z:
@@ -205,7 +211,9 @@ if lp.exists():
         slug=next((s for s,i in identities.items() if i['ror']==rid),None)
         if not slug:continue
         source_id=str(r['id']);seen.add(slug)
-        for index,metric,unit in [(2,'publications_fractional_core','publications'),(3,'international_collaboration_publications','publications'),(4,'international_collaboration_share','%')]:
+        # The cached official table is scientific-impact, not collaboration:
+        # headers are P, P(top 5%), PP(top 5%). Preserve the provider's meaning.
+        for index,metric,unit in [(2,'publications_fractional_core','publications'),(3,'top_5_percent_publications_fractional_core','publications'),(4,'top_5_percent_publications_share_fractional_core','%')]:
             if index>=len(r['cells']):continue
             raw=r['cells'][index].replace(',','').rstrip('%')
             value=val(raw)
@@ -223,9 +231,10 @@ for source in RELEASE:
 if (RAW/'discover-uni/download-page.html.meta.json').exists():
     summaries['discover-uni']={'release':'2025/26 Discover Uni dataset','retrieved_at':NOW,'source_urls':['https://www.hesa.ac.uk/support/tools-and-downloads/unistats'],'files':[],'imported_records':0,'imported_universities':0,'rejected_records':0,'uncertain_matches':0,'review_items':0,'fields_populated':[],'license_note':'CC BY 4.0; HESA official download returned HTTP 403 from this environment','blocker':meta('discover-uni','download-page.html').get('error')}
 OUT.mkdir(parents=True,exist_ok=True);PUBLISHED.mkdir(parents=True,exist_ok=True)
-installed={'generated_at':NOW,'universities':identities,'source_records':sorted(records,key=lambda r:(r['source'],r['university_id'],r['metric'],r['id'])),'review_queue':reviews,'summary':summaries}
+installed={'generated_at':NOW,'universities':identities,'source_records':sorted(records,key=lambda r:(r['source'],r['university_id'],r['metric'],r['id'])),'review_queue':reviews,'summary':summaries,'skipped_numeric_values':dict(skipped_values),'skipped_examples':{k:str(v)[:80] for k,v in skipped_examples.items()}}
 (OUT/'installed.json').write_text(json.dumps(installed,indent=2,ensure_ascii=False)+'\n')
 # Checked ROR identifier joins and dictionary-backed observations may be used in local mode.
 public={'generated_at':NOW,'identities':identities,'records':[r for r in installed['source_records'] if r['publication_status']=='published' and r['source']!='carnegie'],'summary':summaries}
 (PUBLISHED/'imported.json').write_text(json.dumps(public,indent=2,ensure_ascii=False)+'\n')
 print(json.dumps({s:{k:v[k] for k in ['imported_records','rejected_records','uncertain_matches','review_items']} for s,v in summaries.items()},indent=2))
+if skipped_values: print(json.dumps({"skipped_numeric_values":dict(skipped_values)},indent=2),file=sys.stderr)

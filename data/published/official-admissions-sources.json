@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 2,
+  "purpose": "Redirect destinations for retired CollegeStat guide URLs. Not an article catalogue. No authored content or images.",
+  "records": [
+    {
+      "slug": "common-app-first-year",
+      "title": "Make your Common App feel manageable",
+      "provider": "Common App",
+      "url": "https://www.commonapp.org/apply/first-year-students/"
+    },
+    {
+      "slug": "ucas-personal-statement",
+      "title": "Turn your experience into a stronger personal statement",
+      "provider": "UCAS",
+      "url": "https://www.ucas.com/applying/applying-to-university/writing-your-personal-statement/how-to-write-your-personal-statement-for-2026-entry-onwards"
+    },
+    {
+      "slug": "singapore-nus",
+      "title": "Find your qualification route at NUS",
+      "provider": "National University of Singapore",
+      "url": "https://www.nus.edu.sg/oam/admissions/international-qualifications-for-foreigners"
+    },
+    {
+      "slug": "ucas-deadlines-2027",
+      "title": "The UCAS dates to put in your 2027 plan",
+      "provider": "UCAS",
+      "url": "https://www.ucas.com/events/2027-entry-deadline-for-all-undergraduate-courses-except-those-with-a-15-october-deadline-475546"
+    },
+    {
+      "slug": "us-undergraduate",
+      "title": "Your first steps toward studying in the United States",
+      "provider": "EducationUSA · U.S. Department of State",
+      "url": "https://educationusa.state.gov/your-5-steps-us-study/complete-your-application/undergraduate"
+    },
+    {
+      "slug": "uk-undergraduate",
+      "title": "A clearer route to a UK university",
+      "provider": "UCAS",
+      "url": "https://www.ucas.com/international/international-students/applying-to-university-as-an-international-student"
+    },
+    {
+      "slug": "germany-undergraduate",
+      "title": "Can your qualification take you to Germany?",
+      "provider": "DAAD / uni-assist",
+      "url": "https://www.daad.de/en/studying-in-germany/requirements/admission-database/"
+    },
+    {
+      "slug": "uni-assist-vpd",
+      "title": "Applying to Germany? Understand the VPD first",
+      "provider": "uni-assist",
+      "url": "https://www.uni-assist.de/en/how-to-apply/plan-your-application/vpd/"
+    },
+    {
+      "slug": "canada-undergraduate",
+      "title": "From shortlist to application: studying in Canada",
+      "provider": "EduCanada · Government of Canada",
+      "url": "https://www.educanada.ca/start-commencez/step-3-etape.aspx?lang=eng"
+    },
+    {
+      "slug": "france-undergraduate",
+      "title": "Understanding the Études en France application route",
+      "provider": "Campus France",
+      "url": "https://www.campusfrance.org/en/application-etudes-en-france-procedure?lang=en"
+    },
+    {
+      "slug": "sweden-undergraduate",
+      "title": "What you need for a bachelor’s degree in Sweden",
+      "provider": "University Admissions Sweden",
+      "url": "https://www.universityadmissions.se/en/entry-requirements/bachelors-requirements/"
+    },
+    {
+      "slug": "hong-kong-hkust",
+      "title": "Your international application to HKUST",
+      "provider": "Hong Kong University of Science and Technology",
+      "url": "https://join.hkust.edu.hk/admissions/international-qualifications?general_requirement=All"
+    },
+    {
+      "slug": "uni-assist-language",
+      "title": "Language evidence: prepare the right documents",
+      "provider": "uni-assist",
+      "url": "https://www.uni-assist.de/en/how-to-apply/assemble-your-documents/language-certificates/"
+    },
+    {
+      "slug": "uzbekistan-national",
+      "title": "Uzbekistan admissions: start with the official cycle",
+      "provider": "Bilim va malakalarni baholash agentligi",
+      "url": "https://uzbmb.uz/page/qabul2026_2027"
+    },
+    {
+      "slug": "uzbekistan-wiut",
+      "title": "Computer Science at WIUT: read the course requirements",
+      "provider": "Westminster International University in Tashkent",
+      "url": "https://www.wiut.uz/bsc-hons-in-computer-science"
+    },
+    {
+      "slug": "uae-federal",
+      "title": "Find the right admissions route in the UAE",
+      "provider": "Ministry of Higher Education and Scientific Research",
+      "url": "https://www.mohesr.gov.ae/En/EServices/ServiceCard/Napo/Pages/higher-education-institutions-list.aspx"
+    }
+  ]
+}

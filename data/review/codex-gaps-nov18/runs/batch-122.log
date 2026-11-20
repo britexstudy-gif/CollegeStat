@@ -1,0 +1,68 @@
+OpenAI Codex v0.169.0
+--------
+workdir: /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+model: gpt-6-luna
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: high
+reasoning summaries: none
+session id: 01a1ee9b-4056-7730-befa-932cfde9c28c
+--------
+user
+You are a careful admissions-data researcher. For each university below, find facts for an
+INTERNATIONAL applicant to a FIRST-YEAR BACHELOR'S degree starting in autumn 2027 (or the nearest
+published cycle). Use the live web. Rules:
+
+- Official sources only: the university's own website (its domain or subdomains), the national
+  application service (UCAS, Common App, OUAC, uni-assist, Studyinkorea, etc.) or a government
+  statistics office. Never use rankings sites, forums, agencies, Wikipedia or blogs.
+- Every value needs the exact page URL where you read it (source_url). If you could not verify a
+  value on an official page, leave it out (null or an empty list). Never guess or estimate.
+- english: the lowest overall score accepted for undergraduate entry, per test (IELTS Academic
+  overall, TOEFL iBT total, Duolingo, PTE). If programmes differ, give the general/lowest common
+  university minimum and say so in detail (e.g. "6.5 overall, no band below 6.0; some
+  programmes higher").
+- tuition: the yearly tuition for international (non-EU / overseas) undergraduates in the local
+  currency. If it varies by programme give amount = lowest and amount_max = highest, and the
+  academic_year the fee applies to (e.g. "2026/27"). If tuition is free, amount = 0.
+- application_fee: for international first-year applicants, local currency.
+- deadlines: the main 2027-entry first-year deadlines (ISO date YYYY-MM-DD) with the route
+  (e.g. "Common App, Regular Decision", "UCAS", "university portal"). Only dates actually
+  published; if only the 2026-entry date is published, include it and put "2026 entry" in title.
+- sat: policy for international applicants; p25/p75 total SAT only if the university publishes
+  them (Common Data Set or admissions profile).
+- acceptance_rate: only if officially published (CDS, admissions statistics page).
+- notes: one short line on anything important (e.g. "Foundation year required for 11-year
+  school certificates"), else "".
+
+Spend effort on the facts students need most: English minimum, tuition, deadlines. Keep each
+detail under 160 characters. Return only the JSON that matches the schema; use each
+university's id exactly as given.
+
+Universities:
+- id: 51a2525a-5ead-5459-8f6f-9353e4ca164f | University of Bradford | Bradford, GB | https://www.bradford.ac.uk/external
+- id: c90f73ab-2a12-5822-997f-f361530abbda | University of Jyväskylä | Jyväskylä, FI | http://www.jyu.fi/
+- id: 355b3456-971a-58ba-8f2b-eaf5d578e61f | Tomsk State University | Tomsk, RU | http://www.tsu.ru/
+- id: 67a8f8f0-5c6d-52ba-bb11-6c44a5ac56f1 | Abai State University | Almaty, KZ | http://www.kaznpu.kz/
+codex
+I’ll check the universities’ official admissions and fee pages, using the nearest published entry cycle where 2027 details are not available.
+web search: 
+web search: site:bradford.ac.uk international undergraduate English language requirements tuition 2026 2027 application deadline ...
+web search: 
+web search: site:bradford.ac.uk/international/entry-requirements IELTS TOEFL Duolingo PTE undergraduate ...
+web search: 
+web search: site:ucas.com undergraduate 2027 application deadline 13 January 2027 ...
+web search: 
+web search: site:ucas.com 2027 application fee undergraduate 2027 £ ...
+web search: 
+web search: 
+web search: 
+web search: 
+web search: 
+web search: 
+codex
+{"universities":[{"id":"51a2525a-5ead-5459-8f6f-9353e4ca164f","english":[{"test":"IELTS","minimum":0,"detail":"6.0 overall; no band below 5.5. Some courses require more.","source_url":"https://www.bradford.ac.uk/international/entry-requirements"},{"test":"TOEFL iBT","minimum":0,"detail":"80 overall; student-visa applicants need R18, W17, L17, S20 (published on legacy scale).","source_url":"https://www.bradford.ac.uk/international/entry-requirements"},{"test":"Duolingo","minimum":0,"detail":"110 overall; at least 100 in each subscore.","source_url":"https://www.bradford.ac.uk/international/entry-requirements"},{"test":"PTE Academic","minimum":0,"detail":"62 overall; at least 59 in each subtest. Degree-level entry.","source_url":"https://www.bradford.ac.uk/international/entry-requirements"},{"test":"Cambridge C1/C2","minimum":0,"detail":"C or above in Cambridge Advanced or Proficiency.","source_url":"https://www.bradford.ac.uk/international/entry-requirements"}],"tuition":{"amount":16100,"amount_max":16890,"currency":"GBP","period":"year","academic_year":"2026/27","detail":"Published 2026/27 international undergraduate rates vary by course: classroom £16,100; lab-based and Health £16,890.","source_url":"https://www.bradford.ac.uk/money/fees/undergraduate-international-students-including-eu-students"},"application_fee":{"amount":34.5,"currency":"GBP","source_url":"https://www.ucas.com/faqs/what-is-the-application-fee-for-the-2027-cycle"},"deadlines":[{"title":"2027 entry equal consideration deadline","due_at":"2027-01-13","route":"UCAS","source_url":"https://www.ucas.com/events/2027-entry-deadline-for-all-undergraduate-courses-except-those-with-a-15-october-deadline-475546"}],"sat":null,"acceptance_rate":null,"notes":""},{"id":"c90f73ab-2a12-5822-997f-f361530abbda","english":[{"test":"IELTS","minimum":0,"detail":"6.0 overall; no band below 5.5.","source_url":"https://www.jyu.fi/en/study-with-us/bachelors-degree-programmes/how-to-apply-for-international-bachelors-programmes/bachelors-applicants-how-to-prove-your-english-skills-2026"},{"test":"TOEFL iBT","minimum":0,"detail":"For tests from 21 Jan 2026: total 4, no section below 3.5 (new scale).","source_url":"https://www.jyu.fi/en/study-with-us/bachelors-degree-programmes/how-to-apply-for-international-bachelors-programmes/bachelors-applicants-how-to-prove-your-english-skills-2026"},{"test":"PTE Academic","minimum":0,"detail":"62 overall; Writing 61.","source_url":"https://www.jyu.fi/en/study-with-us/bachelors-degree-programmes/how-to-apply-for-international-bachelors-programmes/bachelors-applicants-how-to-prove-your-english-skills-2026"},{"test":"Cambridge C1/C2","minimum":0,"detail":"C1 Advanced: grade C; C2 Proficiency: Level C1.","source_url":"https://www.jyu.fi/en/study-with-us/bachelors-degree-programmes/how-to-apply-for-international-bachelors-programmes/bachelors-applicants-how-to-prove-your-english-skills-2026"}],"tuition":{"amount":10000,"amount_max":16000,"currency":"EUR","period":"year","academic_year":"2027/28","detail":"Non-EU/EEA bachelor's fees vary by programme: €10,000–€16,000 per academic year.","source_url":"https://www.jyu.fi/en/study-with-us/tuition-fees-and-other-financial-matters"},"application_fee":{"amount":100,"currency":"EUR","source_url":"https://www.jyu.fi/en/study-with-us/faq/faq-applying-for-bachelors-programme"},"deadlines":[{"title":"2027 entry application deadline","due_at":"2027-01-21","route":"Studyinfo.fi","source_url":"https://www.jyu.fi/en/study-with-us/bachelors-degree-programmes/how-to-apply-for-international-bachelors-programmes"}],"sat":null,"acceptance_rate":null,"notes":"English proof is programme-specific; Early Childhood Education uses SAT/ACT, and Immersive Software Engineering and AI uses university screening."},{"id":"355b3456-971a-58ba-8f2b-eaf5d578e61f","english":[],"tuition":{"amount":239000,"amount_max":502000,"currency":"RUB","period":"year","academic_year":"2026/27","detail":"First-year foreign-student bachelor's fees vary by programme; the published schedule spans ₽239,000–₽502,000.","source_url":"https://tsu.ru/upload/medialibrary/6ef/jq8krby1uuzjxytrwty7i3ufc9804cdz/760-OD-Ustanovlenie-stoimosti-na-2026_27-gg-dlya-studentov-1-kura.pdf"},"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":""},{"id":"67a8f8f0-5c6d-52ba-bb11-6c44a5ac56f1","english":[],"tuition":null,"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":""}]}
+tokens used
+65,405
+{"universities":[{"id":"51a2525a-5ead-5459-8f6f-9353e4ca164f","english":[{"test":"IELTS","minimum":0,"detail":"6.0 overall; no band below 5.5. Some courses require more.","source_url":"https://www.bradford.ac.uk/international/entry-requirements"},{"test":"TOEFL iBT","minimum":0,"detail":"80 overall; student-visa applicants need R18, W17, L17, S20 (published on legacy scale).","source_url":"https://www.bradford.ac.uk/international/entry-requirements"},{"test":"Duolingo","minimum":0,"detail":"110 overall; at least 100 in each subscore.","source_url":"https://www.bradford.ac.uk/international/entry-requirements"},{"test":"PTE Academic","minimum":0,"detail":"62 overall; at least 59 in each subtest. Degree-level entry.","source_url":"https://www.bradford.ac.uk/international/entry-requirements"},{"test":"Cambridge C1/C2","minimum":0,"detail":"C or above in Cambridge Advanced or Proficiency.","source_url":"https://www.bradford.ac.uk/international/entry-requirements"}],"tuition":{"amount":16100,"amount_max":16890,"currency":"GBP","period":"year","academic_year":"2026/27","detail":"Published 2026/27 international undergraduate rates vary by course: classroom £16,100; lab-based and Health £16,890.","source_url":"https://www.bradford.ac.uk/money/fees/undergraduate-international-students-including-eu-students"},"application_fee":{"amount":34.5,"currency":"GBP","source_url":"https://www.ucas.com/faqs/what-is-the-application-fee-for-the-2027-cycle"},"deadlines":[{"title":"2027 entry equal consideration deadline","due_at":"2027-01-13","route":"UCAS","source_url":"https://www.ucas.com/events/2027-entry-deadline-for-all-undergraduate-courses-except-those-with-a-15-october-deadline-475546"}],"sat":null,"acceptance_rate":null,"notes":""},{"id":"c90f73ab-2a12-5822-997f-f361530abbda","english":[{"test":"IELTS","minimum":0,"detail":"6.0 overall; no band below 5.5.","source_url":"https://www.jyu.fi/en/study-with-us/bachelors-degree-programmes/how-to-apply-for-international-bachelors-programmes/bachelors-applicants-how-to-prove-your-english-skills-2026"},{"test":"TOEFL iBT","minimum":0,"detail":"For tests from 21 Jan 2026: total 4, no section below 3.5 (new scale).","source_url":"https://www.jyu.fi/en/study-with-us/bachelors-degree-programmes/how-to-apply-for-international-bachelors-programmes/bachelors-applicants-how-to-prove-your-english-skills-2026"},{"test":"PTE Academic","minimum":0,"detail":"62 overall; Writing 61.","source_url":"https://www.jyu.fi/en/study-with-us/bachelors-degree-programmes/how-to-apply-for-international-bachelors-programmes/bachelors-applicants-how-to-prove-your-english-skills-2026"},{"test":"Cambridge C1/C2","minimum":0,"detail":"C1 Advanced: grade C; C2 Proficiency: Level C1.","source_url":"https://www.jyu.fi/en/study-with-us/bachelors-degree-programmes/how-to-apply-for-international-bachelors-programmes/bachelors-applicants-how-to-prove-your-english-skills-2026"}],"tuition":{"amount":10000,"amount_max":16000,"currency":"EUR","period":"year","academic_year":"2027/28","detail":"Non-EU/EEA bachelor's fees vary by programme: €10,000–€16,000 per academic year.","source_url":"https://www.jyu.fi/en/study-with-us/tuition-fees-and-other-financial-matters"},"application_fee":{"amount":100,"currency":"EUR","source_url":"https://www.jyu.fi/en/study-with-us/faq/faq-applying-for-bachelors-programme"},"deadlines":[{"title":"2027 entry application deadline","due_at":"2027-01-21","route":"Studyinfo.fi","source_url":"https://www.jyu.fi/en/study-with-us/bachelors-degree-programmes/how-to-apply-for-international-bachelors-programmes"}],"sat":null,"acceptance_rate":null,"notes":"English proof is programme-specific; Early Childhood Education uses SAT/ACT, and Immersive Software Engineering and AI uses university screening."},{"id":"355b3456-971a-58ba-8f2b-eaf5d578e61f","english":[],"tuition":{"amount":239000,"amount_max":502000,"currency":"RUB","period":"year","academic_year":"2026/27","detail":"First-year foreign-student bachelor's fees vary by programme; the published schedule spans ₽239,000–₽502,000.","source_url":"https://tsu.ru/upload/medialibrary/6ef/jq8krby1uuzjxytrwty7i3ufc9804cdz/760-OD-Ustanovlenie-stoimosti-na-2026_27-gg-dlya-studentov-1-kura.pdf"},"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":""},{"id":"67a8f8f0-5c6d-52ba-bb11-6c44a5ac56f1","english":[],"tuition":null,"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":""}]}

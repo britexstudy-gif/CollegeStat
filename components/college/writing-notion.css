@@ -1,0 +1,1032 @@
+/* Writing desk: one clean page. A centered title, a single toolbar row and
+ * the text. The page list and the help panel stay closed until asked for.
+ * Loaded after writing-tool.css and scoped to .wn. */
+.wn {
+  --wn-hover: color-mix(in srgb, var(--wd-ink) 7%, transparent);
+  --wn-active: color-mix(in srgb, var(--wd-ink) 10%, transparent);
+  --wn-size: 17.5px;
+  max-width: 1380px;
+  padding-top: 0;
+}
+
+/* Title row */
+.wn-top {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  align-items: center;
+  gap: 12px;
+  min-height: 44px;
+}
+.wn-side {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 0;
+}
+.wn-side.is-end {
+  justify-content: flex-end;
+}
+.wn .wn-doc {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 650;
+  letter-spacing: -0.01em;
+  color: var(--wd-ink);
+  text-align: center;
+}
+.wn-doc-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  max-width: 100%;
+  height: 34px;
+  padding: 0 10px;
+  border: 0;
+  border-radius: 8px;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+}
+.wn-doc-button:hover {
+  background: var(--wn-hover);
+}
+.wn-doc-button svg {
+  color: var(--wd-faint);
+}
+.wn .wt-type-select {
+  display: none;
+}
+.wn-saved {
+  overflow: hidden;
+  font-size: 12.5px;
+  color: var(--wd-faint);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.wn-saved b {
+  font-weight: 600;
+  color: var(--wd-muted);
+  font-variant-numeric: tabular-nums;
+}
+.wn-saved.is-over,
+.wn-saved.is-over b {
+  color: #dc2626;
+}
+
+/* Buttons shared by the title row and the toolbar */
+.wn-ghost {
+  position: relative;
+  display: inline-flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  min-width: 36px;
+  height: 36px;
+  padding: 0 8px;
+  border: 0;
+  border-radius: 8px;
+  background: transparent;
+  color: var(--wd-ink);
+  font: inherit;
+  cursor: pointer;
+  transition: background-color 0.12s ease;
+}
+.wn-ghost:hover:not(:disabled) {
+  background: var(--wn-hover);
+}
+.wn-ghost:disabled {
+  color: var(--wd-faint);
+  opacity: 0.55;
+  cursor: default;
+}
+.wn-ghost.is-on {
+  color: var(--wd-accent);
+}
+.wn-ghost small {
+  position: absolute;
+  top: 2px;
+  right: 1px;
+  min-width: 15px;
+  padding: 0 3px;
+  border-radius: 99px;
+  background: #f59e0b;
+  color: #111;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 15px;
+  text-align: center;
+}
+.wn :is(.wn-ghost, .wn-doc-button, .wn-check, .wn-new, .wn-group, .wn-plus, .wn-timer button):focus-visible {
+  outline: 2px solid var(--wd-accent);
+  outline-offset: 1px;
+}
+
+/* Toolbar */
+.wn-tools {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  margin: 2px 0 0;
+  padding: 6px 0 10px;
+  border-bottom: 1px solid var(--wd-line);
+}
+.wn-tools > i {
+  width: 1px;
+  height: 18px;
+  margin: 0 6px;
+  background: var(--wd-line);
+}
+.wn-check {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  height: 34px;
+  margin-left: 4px;
+  padding: 0 13px;
+  border: 0;
+  border-radius: 8px;
+  background: var(--wd-ink);
+  color: var(--wd-card);
+  font: inherit;
+  font-size: 13.5px;
+  font-weight: 600;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: opacity 0.12s ease;
+}
+.wn-check:hover {
+  opacity: 0.86;
+}
+.wn-timer {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  height: 34px;
+  padding: 0 4px;
+  border-radius: 8px;
+  background: var(--wn-hover);
+  color: var(--wd-ink);
+}
+.wn-timer b {
+  min-width: 46px;
+  font-size: 14px;
+  font-weight: 650;
+  font-variant-numeric: tabular-nums;
+  text-align: center;
+}
+.wn-timer button {
+  display: grid;
+  place-items: center;
+  width: 26px;
+  height: 26px;
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+}
+.wn-timer button:hover:not(:disabled) {
+  background: var(--wn-active);
+}
+.wn-timer button:disabled {
+  opacity: 0.4;
+}
+.wn-timer.is-low {
+  color: #b45309;
+}
+.wn-timer.is-done {
+  background: rgb(239 68 68 / 14%);
+  color: #dc2626;
+}
+html.dark .wn-timer.is-low {
+  color: #fbbf24;
+}
+html.dark .wn-timer.is-done {
+  color: #f87171;
+}
+
+/* Layout */
+.wn .wt-layout {
+  grid-template-columns: 232px minmax(0, 1fr) 340px;
+  gap: 0;
+}
+.wn.is-nav-closed .wt-layout {
+  grid-template-columns: minmax(0, 1fr) 340px;
+}
+.wn.is-rail-closed .wt-layout {
+  grid-template-columns: 232px minmax(0, 1fr);
+}
+.wn.is-nav-closed.is-rail-closed .wt-layout,
+.wn.is-focus .wt-layout {
+  grid-template-columns: minmax(0, 1fr);
+}
+.wn.is-nav-closed .wt-docs,
+.wn.is-rail-closed .wt-rail {
+  display: none;
+}
+
+/* Page list */
+.wn .wt-docs {
+  top: 84px;
+  gap: 10px;
+  max-height: calc(100vh - 104px);
+  overflow-y: auto;
+  padding: 16px 14px 16px 0;
+}
+.wn-new,
+.wn-group {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  width: 100%;
+  border: 0;
+  background: transparent;
+  font: inherit;
+  cursor: pointer;
+}
+.wn-new {
+  height: 32px;
+  padding: 0 8px;
+  border-radius: 7px;
+  color: var(--wd-muted);
+  font-size: 14px;
+  font-weight: 540;
+}
+.wn-new:hover {
+  background: var(--wn-hover);
+  color: var(--wd-ink);
+}
+.wn-group {
+  height: 26px;
+  padding: 0 8px;
+  border-radius: 6px;
+  color: var(--wd-faint);
+  font-size: 12px;
+  font-weight: 600;
+}
+.wn-group:hover {
+  background: var(--wn-hover);
+  color: var(--wd-muted);
+}
+.wn-group svg {
+  transition: transform 0.15s ease;
+}
+.wn-group[aria-expanded="true"] svg {
+  transform: rotate(90deg);
+}
+.wn .wt-docs ul {
+  gap: 1px;
+  margin-top: 2px;
+}
+.wn .wt-docs li button {
+  gap: 8px;
+  height: 31px;
+  min-height: 0;
+  padding: 0 8px;
+  border: 0;
+  border-radius: 7px;
+  background: transparent;
+  box-shadow: none;
+  color: var(--wd-muted);
+  font-size: 14px;
+  font-weight: 500;
+}
+.wn .wt-docs li button:hover {
+  background: var(--wn-hover);
+  color: var(--wd-ink);
+}
+.wn .wt-docs li button[aria-current="true"] {
+  background: var(--wn-active);
+  color: var(--wd-ink);
+  font-weight: 580;
+}
+.wn .wt-docs em {
+  color: var(--wd-faint);
+  font-size: 11.5px;
+  font-style: normal;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Page */
+.wn .wn-page {
+  display: block;
+  width: 100%;
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 22px 56px 80px;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  overflow: visible;
+}
+.wn-prompt-box {
+  margin: 0 0 22px;
+  padding: 14px 16px;
+  border: 1px solid var(--wd-line);
+  border-radius: 12px;
+  background: var(--wd-soft);
+}
+.wn-prompt-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 6px;
+}
+.wn-prompt-head b {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 8px;
+  font-size: 12.5px;
+  font-weight: 650;
+  color: var(--wd-muted);
+}
+.wn-prompt-head small {
+  font-weight: 500;
+  color: var(--wd-faint);
+}
+.wn-prompt-box > p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--wd-ink);
+}
+.wn-prompt-box > p.wt-muted {
+  font-size: 13.5px;
+  color: var(--wd-muted);
+}
+.wn-sections-note {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 12px;
+  margin: 0 0 18px;
+  font-size: 13.5px;
+  line-height: 1.5;
+  color: var(--wd-muted);
+}
+.wn-sections-note a,
+.wn-prompt-source {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--wd-accent);
+  font-size: 13px;
+  text-decoration: none;
+}
+.wn-prompt-source {
+  margin-right: auto;
+}
+.wn-prompt-list {
+  display: grid;
+  gap: 6px;
+  max-height: min(48vh, 420px);
+  margin: 0;
+  padding: 0 2px 0 0;
+  overflow-y: auto;
+  list-style: none;
+}
+.wn-prompt-list button {
+  display: grid;
+  grid-template-columns: 24px minmax(0, 1fr);
+  gap: 10px;
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+.wn-prompt-list button:hover {
+  background: var(--accent);
+}
+.wn-prompt-list button.is-on {
+  border-color: var(--primary);
+  background: color-mix(in srgb, var(--primary) 6%, transparent);
+}
+.wn-prompt-list span {
+  display: grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--muted);
+  font-size: 12px;
+  font-weight: 600;
+}
+.wn-prompt-list .is-on span {
+  background: var(--primary);
+  color: var(--primary-foreground);
+}
+.wn-prompt-list p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.wn-prompt-own {
+  display: grid;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 600;
+}
+.wn-prompt-own textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  resize: vertical;
+}
+.wn-prompt-own textarea:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 1px;
+}
+.wn-check small {
+  min-width: 18px;
+  padding: 0 5px;
+  border-radius: 99px;
+  background: color-mix(in srgb, var(--wd-card) 25%, transparent);
+  font-size: 11px;
+}
+.wn-check:disabled {
+  opacity: 0.7;
+  cursor: progress;
+}
+.wn-doc-button span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.wn .wn-toggle {
+  margin: 0 0 18px;
+}
+
+/* Editor */
+.wn .wn-page .wt-area {
+  margin: 0;
+}
+.wn .wt-backdrop,
+html body .workspace-studio .wn .wt-area textarea,
+.wn .wt-area textarea {
+  font-size: var(--wn-size);
+}
+.wn .wn-page > .wt-area .wt-backdrop,
+html body .workspace-studio .wn .wn-page > .wt-area textarea,
+.wn .wn-page > .wt-area textarea {
+  padding: 8px 0 24px;
+}
+.wn .wn-page > .wt-area textarea {
+  min-height: 46vh;
+}
+.wn .wn-page > .wt-area textarea::placeholder {
+  font-style: normal;
+}
+.wn .wt-sections {
+  padding: 0;
+}
+.wn-plus {
+  position: absolute;
+  left: -46px;
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  margin-top: 0;
+  border: 0;
+  border-radius: 8px;
+  background: transparent;
+  color: var(--wd-muted);
+  cursor: pointer;
+  transition:
+    top 0.12s ease,
+    background-color 0.12s ease,
+    color 0.12s ease;
+}
+.wn-plus:hover {
+  background: var(--wn-hover);
+  color: var(--wd-ink);
+}
+.wn .wn-page .wt-notice {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* Command menu ("/" or the + button) */
+.wn-slash {
+  position: absolute;
+  z-index: 20;
+  display: grid;
+  gap: 1px;
+  width: 300px;
+  max-height: 320px;
+  overflow-y: auto;
+  padding: 6px;
+  border: 1px solid var(--wd-line);
+  border-radius: 10px;
+  background: var(--wd-card);
+  box-shadow:
+    0 1px 2px rgb(15 23 42 / 6%),
+    0 14px 34px -8px rgb(15 23 42 / 22%);
+  animation: wn-pop 0.12s ease-out;
+}
+.wn-slash small {
+  padding: 4px 8px 6px;
+  font-size: 11.5px;
+  font-weight: 600;
+  color: var(--wd-faint);
+}
+.wn-slash p {
+  margin: 0;
+  padding: 8px;
+  font-size: 13.5px;
+  color: var(--wd-muted);
+}
+.wn-slash button {
+  display: grid;
+  grid-template-columns: 34px minmax(0, 1fr);
+  align-items: center;
+  gap: 10px;
+  padding: 6px 8px;
+  border: 0;
+  border-radius: 7px;
+  background: transparent;
+  color: var(--wd-ink);
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+.wn-slash button[aria-selected="true"] {
+  background: var(--wn-hover);
+}
+.wn-slash button i {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border: 1px solid var(--wd-line);
+  border-radius: 7px;
+  background: var(--wd-card);
+  color: var(--wd-muted);
+}
+.wn-slash button span {
+  display: grid;
+  min-width: 0;
+}
+.wn-slash strong {
+  font-size: 14px;
+  font-weight: 540;
+}
+.wn-slash em {
+  overflow: hidden;
+  font-size: 12.5px;
+  font-style: normal;
+  color: var(--wd-muted);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Selection bubble */
+.wn-bubble {
+  position: absolute;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  height: 36px;
+  padding: 3px;
+  border: 1px solid var(--wd-line);
+  border-radius: 9px;
+  background: var(--wd-card);
+  box-shadow:
+    0 1px 2px rgb(15 23 42 / 6%),
+    0 10px 26px -8px rgb(15 23 42 / 24%);
+  white-space: nowrap;
+  animation: wn-pop 0.12s ease-out;
+}
+.wn-bubble button {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 28px;
+  padding: 0 9px;
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  color: var(--wd-accent);
+  font: inherit;
+  font-size: 13.5px;
+  font-weight: 580;
+  cursor: pointer;
+}
+.wn-bubble button:hover {
+  background: var(--wn-hover);
+}
+.wn-bubble span {
+  padding: 0 9px;
+  border-left: 1px solid var(--wd-line);
+  font-size: 12.5px;
+  color: var(--wd-muted);
+  font-variant-numeric: tabular-nums;
+}
+@keyframes wn-pop {
+  from {
+    opacity: 0;
+    transform: translateY(3px);
+  }
+}
+
+/* Help panel */
+.wn .wt-rail {
+  top: 84px;
+  max-height: calc(100vh - 104px);
+  padding: 16px 0 16px 20px;
+  border-left: 1px solid var(--wd-line);
+}
+/* Text-only tabs that never clip: long labels (ru, de) scroll instead. */
+.wn .wt-tabs {
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.wn .wt-tabs button {
+  min-width: max-content;
+  padding: 0 10px;
+  white-space: nowrap;
+}
+.wn .wt-tabs button:focus-visible {
+  outline: 2px solid var(--wd-accent);
+  outline-offset: -2px;
+}
+.wn-comment > header {
+  align-items: center;
+}
+.wn-comment blockquote {
+  margin: 0 0 10px;
+  padding: 2px 0 2px 12px;
+  border-left: 3px solid #f5b83d;
+  font-family: "Charter", "Iowan Old Style", Georgia, serif;
+  font-size: 15px;
+  line-height: 1.55;
+  color: var(--wd-ink);
+}
+.wn .wt-ai small.wt-muted {
+  display: block;
+  margin-top: 8px;
+}
+
+/* Start screen uses the same calm width */
+.wn .wl {
+  max-width: 960px;
+  margin: 0 auto;
+  padding-top: 24px;
+}
+
+@media (max-width: 1240px) {
+  .wn .wt-layout,
+  .wn.is-nav-closed .wt-layout {
+    grid-template-columns: minmax(0, 1fr) 320px;
+  }
+  .wn.is-rail-closed .wt-layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .wn .wt-docs,
+  .wn-nav-toggle,
+  .wn-doc-button {
+    display: none;
+  }
+  .wn .wt-type-select {
+    display: inline-block;
+  }
+  .wn .wt-type-select select {
+    height: 34px;
+    border: 0;
+    background: transparent;
+    text-align: center;
+  }
+}
+@media (max-width: 960px) {
+  .wn .wt-layout,
+  .wn.is-nav-closed .wt-layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .wn .wt-rail {
+    max-height: none;
+    padding: 20px 0 0;
+    border-left: 0;
+    border-top: 1px solid var(--wd-line);
+  }
+  .wn .wn-page {
+    padding: 20px 0 40px 40px;
+  }
+  .wn-plus {
+    left: -40px;
+  }
+}
+@media (max-width: 600px) {
+  .wn-tools {
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  .wn-slash {
+    width: min(300px, calc(100vw - 80px));
+  }
+}
+/* Focus mode: only the page, the count, a running timer and the way out. */
+.wn.is-focus .wn-top .wn-ghost,
+.wn.is-focus .wn-tools > :not(.wn-timer, .wn-focus-btn),
+.wn.is-focus .wn-prompt-box,
+.wn.is-focus .wn-sections-note,
+.wn.is-focus .wt-outline {
+  display: none;
+}
+.wn.is-focus .wn-tools {
+  border-bottom-color: transparent;
+}
+
+/* Section essays (UCAS, activities) have no + button, so no gutter for it. */
+.wn .wt-section .wt-area:not(.is-compact) textarea,
+.wn .wt-section .wt-area:not(.is-compact) .wt-backdrop {
+  min-height: 120px;
+}
+@media (max-width: 960px) {
+  .wn .wn-page:has(> .wt-sections) {
+    padding-left: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .wn-slash,
+  .wn-bubble {
+    animation: none;
+  }
+  .wn-plus {
+    transition: none;
+  }
+}
+
+/* Small screens: the title is a native picker; keep the row uncluttered. */
+@media (max-width: 1240px) {
+  .wn .wt-type-select select {
+    max-width: 52vw;
+    padding: 0 26px 0 8px;
+    font-size: 15px;
+    font-weight: 650;
+    text-overflow: ellipsis;
+  }
+  .wn .wt-type-select svg {
+    top: 10px;
+    right: 6px;
+    pointer-events: none;
+  }
+}
+@media (max-width: 600px) {
+  /* Title and actions on one line, the word count small underneath. */
+  .wn-top {
+    grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-areas:
+      "doc end"
+      "count count";
+    row-gap: 0;
+  }
+  .wn-top .wn-doc {
+    grid-area: doc;
+  }
+  .wn-side.is-end {
+    grid-area: end;
+  }
+  .wn-side:not(.is-end) {
+    grid-area: count;
+    padding-left: 8px;
+  }
+  .wn-side:not(.is-end):empty {
+    display: none;
+  }
+  .wn .wn-doc {
+    text-align: left;
+  }
+  /* The toolbar scrolls sideways; fade the edge so it reads as "more". */
+  .wn-tools {
+    padding-right: 28px;
+    -webkit-mask-image: linear-gradient(90deg, #000 calc(100% - 32px), transparent);
+    mask-image: linear-gradient(90deg, #000 calc(100% - 32px), transparent);
+  }
+  .wn .wn-page {
+    padding-left: 34px;
+  }
+  .wn-plus {
+    left: -36px;
+  }
+}
+@media (max-width: 600px) {
+  /* Keep the main action reachable without scrolling the toolbar. */
+  .wn-tools .wn-check {
+    order: -1;
+    margin: 0 6px 0 0;
+  }
+}
+
+/* Word goal: a thin progress line with one encouraging sentence. */
+.wn-goal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 8px 0 0;
+  font-size: 12.5px;
+  color: var(--wd-muted);
+}
+
+.wn.is-focus .wn-goal {
+  display: none;
+}
+
+/* Nov 19: essay list, status chips, empty state, top fixes, mobile feedback sheet. */
+.wn-status {
+  display: inline-flex;
+  align-items: center;
+  height: 20px;
+  padding: 0 8px;
+  border-radius: 999px;
+  background: var(--wd-soft);
+  color: var(--wd-muted);
+  font-size: 11.5px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.wn-status.is-reviewed {
+  background: color-mix(in srgb, #5b8cff 16%, transparent);
+  color: color-mix(in srgb, #5b8cff 78%, var(--wd-ink));
+}
+.wn-status.is-final {
+  background: color-mix(in srgb, #16a34a 16%, transparent);
+  color: color-mix(in srgb, #16a34a 80%, var(--wd-ink));
+}
+.wn-goal {
+  flex-wrap: wrap;
+}
+.wn-final {
+  font-size: 12.5px;
+}
+.wn-final:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.wr-fixes {
+  padding: 12px;
+  border: 1px solid var(--wd-line);
+  border-radius: 12px;
+}
+.wr-fixes p {
+  margin: 0 0 4px;
+  font-size: 12.5px;
+}
+.wr-fixes ol {
+  padding-left: 0;
+  list-style: none;
+  gap: 8px;
+  counter-reset: fix;
+}
+.wr-fixes li {
+  counter-increment: fix;
+}
+.wr-fixes li button {
+  display: grid;
+  gap: 4px;
+  width: 100%;
+  padding: 8px 8px 8px 30px;
+  position: relative;
+  border: 0;
+  border-radius: 8px;
+  background: transparent;
+  color: var(--wd-ink);
+  text-align: left;
+  cursor: pointer;
+}
+.wr-fixes li button:hover {
+  background: var(--wn-hover);
+}
+.wr-fixes li button::before {
+  content: counter(fix);
+  position: absolute;
+  left: 6px;
+  top: 9px;
+  display: grid;
+  place-items: center;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--wd-ink);
+  color: var(--background);
+  font-size: 11px;
+  font-weight: 700;
+}
+.wr-fixes q {
+  font-family: "Charter", "Iowan Old Style", Georgia, serif;
+  font-size: 14px;
+  color: var(--wd-muted);
+  quotes: none;
+}
+.wr-fixes li button span {
+  font-size: 13.5px;
+  line-height: 1.5;
+}
+
+/* Feedback becomes a bottom sheet on phones and small tablets. */
+.wn-scrim,
+.wn-sheet-head {
+  display: none;
+}
+@media (max-width: 960px) {
+  .wn .wt-rail {
+    position: fixed;
+    inset: auto 0 0 0;
+    top: auto;
+    z-index: 60;
+    max-height: 78vh;
+    overflow-y: auto;
+    padding: 6px 16px 24px;
+    border: 1px solid var(--wd-line);
+    border-bottom: 0;
+    border-radius: 18px 18px 0 0;
+    background: var(--background);
+    box-shadow: 0 -12px 40px rgb(0 0 0 / 18%);
+  }
+  .wn.is-rail-closed .wt-rail {
+    display: none;
+  }
+  .wn-scrim {
+    display: block;
+    position: fixed;
+    inset: 0;
+    z-index: 59;
+    border: 0;
+    background: rgb(0 0 0 / 35%);
+    cursor: default;
+  }
+  .wn-sheet-head {
+    position: sticky;
+    top: -6px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 0;
+    background: var(--background);
+  }
+  .wn-sheet-head i {
+    width: 36px;
+    height: 4px;
+    border-radius: 999px;
+    background: var(--wd-line);
+  }
+  .wn-sheet-head button {
+    position: absolute;
+    right: -8px;
+  }
+  .wn.is-focus .wt-rail,
+  .wn.is-focus .wn-scrim {
+    display: none;
+  }
+}
+.wn .wt-docs li.is-uni button {
+  height: auto;
+  min-height: 31px;
+  padding: 5px 8px;
+}
+.wn .wt-docs li.is-uni small {
+  font-size: 11.5px;
+  text-transform: none;
+  letter-spacing: 0;
+  font-weight: 500;
+}
+.wn-all {
+  display: none;
+}
+@media (max-width: 1240px) {
+  .wn-all {
+    display: inline-grid;
+  }
+}
+
+/* Nov 19 (v2): the launcher is a quiet list, not a wall of cards.
+   Templates are one-line rows inside one panel; universities are rows with
+   their essays as pills; the "+" block inserter is hidden. */
+
+.wn-plus {
+  display: none !important;
+}
+

@@ -1,0 +1,361 @@
+{
+ "instructions": "For each item, open the candidate source_url pages (official pages only; skip on 403/captcha) and decide which value is correct for international first-year bachelor's applicants, 2027 entry. Answer with {id, pick: 0|1|'both'|'neither', corrected_value?, source_url, retrieved_at (YYYY-MM-DD), reason (one sentence)}. Never guess: if the pages do not settle it, answer 'neither' with the reason.",
+ "answer_file": "data/curated/review-answers.json",
+ "count": 9,
+ "items": [
+  {
+   "id": "8e4741ac3c8e78df",
+   "university": "King's College London, University of London",
+   "university_id": "01649f44-22e4-5b85-adaa-81f3538aa083",
+   "field": "ielts",
+   "status": "tie",
+   "rule": null,
+   "candidates": [
+    {
+     "value": {
+      "status": "required",
+      "overall": 7.5,
+      "component": 7,
+      "text": "Band A (2027/28 entry): IELTS Academic 7.5 overall, 7.0 each skill"
+     },
+     "source_url": "https://www.kcl.ac.uk/study/undergraduate/how-to-apply/english-language-requirements",
+     "method": "fetched",
+     "collector": "oc-shard-6",
+     "retrieved_at": "2026-11-16",
+     "academic_year": null
+    },
+    {
+     "value": {
+      "status": "required",
+      "overall": 7,
+      "component": 6.5,
+      "text": "Band B (most faculties) 7.0 overall, 6.5 each; Band D (selected NMES courses e.g. Computer Science BSc) 6.5 overall, 6.0 each; Band A 7.5/7.0"
+     },
+     "source_url": "https://www.kcl.ac.uk/study/undergraduate/how-to-apply/english-language-requirements",
+     "method": "fetched",
+     "collector": "nov15-research",
+     "retrieved_at": "2026-11-15",
+     "academic_year": null
+    }
+   ]
+  },
+  {
+   "id": "601d0785dedd7a97",
+   "university": "King's College London, University of London",
+   "university_id": "01649f44-22e4-5b85-adaa-81f3538aa083",
+   "field": "toefl",
+   "status": "tie",
+   "rule": null,
+   "candidates": [
+    {
+     "value": {
+      "status": "required",
+      "ibt": null,
+      "ibt_component": null,
+      "band_2026": 5.5,
+      "text": "TOEFL iBT (from 21 Jan 2026) 5.5 overall, 5 each skill. Band B: IELTS Academic 7.0 overall, 6.5 each skill"
+     },
+     "source_url": "https://www.kcl.ac.uk/study/undergraduate/how-to-apply/english-language-requirements",
+     "method": "fetched",
+     "collector": "oc-shard-6",
+     "retrieved_at": "2026-11-16",
+     "academic_year": null
+    },
+    {
+     "value": {
+      "status": "required",
+      "ibt": 100,
+      "ibt_component": null,
+      "band_2026": 5,
+      "text": "Band B: 100 (W25, others 23) old scale / 5.0 (4.5 each) new scale from 21 Jan 2026; Band D: 92 / 4.5"
+     },
+     "source_url": "https://www.kcl.ac.uk/study/undergraduate/how-to-apply/english-language-requirements",
+     "method": "fetched",
+     "collector": "nov15-research",
+     "retrieved_at": "2026-11-15",
+     "academic_year": null
+    }
+   ]
+  },
+  {
+   "id": "af2469bfaffbca53",
+   "university": "York University",
+   "university_id": "03761e91-07fb-5f9e-85dc-9aff4d5239a2",
+   "field": "deadlines.regular",
+   "status": "tie",
+   "rule": null,
+   "candidates": [
+    {
+     "value": {
+      "round": "regular",
+      "label": "Undergraduate application: summer entry",
+      "date": "2027-04-01",
+      "date_inferred": false,
+      "text": null,
+      "intake_year": 2027,
+      "source_url": "https://futurestudents.yorku.ca/requirements/deadlines",
+      "retrieved_at": "2026-11-14",
+      "method": "dataset",
+      "collector": "published/application-dates-segment-nov14"
+     },
+     "source_url": "https://futurestudents.yorku.ca/requirements/deadlines",
+     "method": "dataset",
+     "collector": "published/application-dates-segment-nov14",
+     "retrieved_at": "2026-11-14",
+     "academic_year": "2026/27"
+    },
+    {
+     "value": {
+      "round": "regular",
+      "label": "Undergraduate application: winter entry",
+      "date": "2026-11-18",
+      "date_inferred": false,
+      "text": null,
+      "intake_year": 2027,
+      "source_url": "https://futurestudents.yorku.ca/requirements/deadlines",
+      "retrieved_at": "2026-11-14",
+      "method": "dataset",
+      "collector": "published/application-dates-segment-nov14"
+     },
+     "source_url": "https://futurestudents.yorku.ca/requirements/deadlines",
+     "method": "dataset",
+     "collector": "published/application-dates-segment-nov14",
+     "retrieved_at": "2026-11-14",
+     "academic_year": "2026/27"
+    }
+   ]
+  },
+  {
+   "id": "3acdc1d6f3059045",
+   "university": "Shanghai Jiaotong University",
+   "university_id": "40dc3bce-f456-577e-9003-9c143d3b52bb",
+   "field": "tuition",
+   "status": "tie",
+   "rule": null,
+   "candidates": [
+    {
+     "value": {
+      "amount": 150000,
+      "range_min": null,
+      "range_max": null,
+      "currency": "CNY",
+      "period": "year",
+      "usd": 22482,
+      "fx": {
+       "usd_per_unit": 0.1498820147,
+       "date": "2026-11-13",
+       "source": "ECB euro reference rates (cross via EUR)"
+      },
+      "basis": "per year; insurance RMB 800/yr; no free housing (subsidy RMB 1,100/month)"
+     },
+     "source_url": "https://gc.sjtu.edu.cn/admission/international-undergraduate-admission/fees-and-scholarships/",
+     "method": "snippet",
+     "collector": "nov15-research",
+     "retrieved_at": "2026-11-15",
+     "academic_year": "2027/28"
+    },
+    {
+     "value": {
+      "amount": 120000,
+      "range_min": null,
+      "range_max": null,
+      "currency": "RMB",
+      "period": "year",
+      "usd": null,
+      "fx": null,
+      "basis": null
+     },
+     "source_url": "https://isc.sjtu.edu.cn/kindeditor/Upload/file/20250806/20250806155110_0171.pdf",
+     "method": "snippet",
+     "collector": "nov14-merged",
+     "retrieved_at": "2026-11-14",
+     "academic_year": null
+    }
+   ]
+  },
+  {
+   "id": "1f0f3f4ac01d3e21",
+   "university": "University of Science and Technology of China",
+   "university_id": "5f90631a-ee6a-587d-a542-5fb1d07d0705",
+   "field": "tuition",
+   "status": "tie",
+   "rule": null,
+   "candidates": [
+    {
+     "value": {
+      "amount": 26000,
+      "range_min": null,
+      "range_max": null,
+      "currency": "CNY",
+      "period": "year",
+      "usd": 3897,
+      "fx": {
+       "usd_per_unit": 0.1498820147,
+       "date": "2026-11-13",
+       "source": "ECB euro reference rates (cross via EUR)"
+      },
+      "basis": "per year + insurance RMB 800; dorm RMB 500–1,000/month"
+     },
+     "source_url": "https://ic.ustc.edu.cn/en/v7info.php?Nav_x=7",
+     "method": "snippet",
+     "collector": "nov15-research",
+     "retrieved_at": "2026-11-15",
+     "academic_year": null
+    },
+    {
+     "value": {
+      "amount": 26000,
+      "range_min": null,
+      "range_max": null,
+      "currency": "RMB",
+      "period": "year",
+      "usd": null,
+      "fx": null,
+      "basis": null
+     },
+     "source_url": "https://isa.ustc.edu.cn/xs/disp.asp?degree=0&menu1=07&menu2=01&ucode=195",
+     "method": "snippet",
+     "collector": "nov14-merged",
+     "retrieved_at": "2026-11-14",
+     "academic_year": null
+    }
+   ]
+  },
+  {
+   "id": "e9a1971efd9fe93b",
+   "university": "Nazarbayev University",
+   "university_id": "69434102-e5f5-5311-9294-2f101f81906f",
+   "field": "ielts",
+   "status": "tie",
+   "rule": null,
+   "candidates": [
+    {
+     "value": {
+      "status": "required",
+      "overall": 5.5,
+      "component": null,
+      "text": "Writing/Reading 5.5; Listening/Speaking 5.0. Undergraduate direct-entry thresholds differ."
+     },
+     "source_url": "https://nu.edu.kz/wp-content/uploads/2026/04/admission-policy-and-procedures-to-the-nazarbayev-university-foundation-year-program-and-undergraduate-program-of-nu-1.pdf",
+     "method": "dataset",
+     "collector": "published/requirements-current",
+     "retrieved_at": "2026-10-05",
+     "academic_year": null
+    },
+    {
+     "value": {
+      "status": "required",
+      "overall": 6,
+      "component": null,
+      "text": "Writing 6.0; other components 5.5. In-person only; Olympiad exceptions and study conditions apply."
+     },
+     "source_url": "https://nu.edu.kz/wp-content/uploads/2026/04/admission-policy-and-procedures-to-the-nazarbayev-university-foundation-year-program-and-undergraduate-program-of-nu-1.pdf",
+     "method": "dataset",
+     "collector": "published/requirements-current",
+     "retrieved_at": "2026-10-05",
+     "academic_year": null
+    }
+   ]
+  },
+  {
+   "id": "df0f9ec2e5c5c24f",
+   "university": "Hallmark University",
+   "university_id": "7c249bfb-2a84-5ac5-ae1c-afb48368b645",
+   "field": "founded_year",
+   "status": "tie",
+   "rule": null,
+   "candidates": [
+    {
+     "value": 1969,
+     "source_url": "https://www.wikidata.org/wiki/Q5643024#P571",
+     "method": "dataset",
+     "collector": "wikidata",
+     "retrieved_at": "2026-11-14",
+     "academic_year": null
+    },
+    {
+     "value": 1975,
+     "source_url": "https://www.wikidata.org/wiki/Q5643027#P571",
+     "method": "dataset",
+     "collector": "wikidata",
+     "retrieved_at": "2026-11-14",
+     "academic_year": null
+    }
+   ]
+  },
+  {
+   "id": "ca46e1aef6f6c15c",
+   "university": "University of Central Asia",
+   "university_id": "b99019e6-e35f-57b0-8522-f934f7ee60e5",
+   "field": "ielts",
+   "status": "tie",
+   "rule": null,
+   "candidates": [
+    {
+     "value": {
+      "status": "required",
+      "overall": 6,
+      "component": null,
+      "text": "Published preparatory placement band 6.0–6.5, instead of UCA’s English test. Higher scores have a separate direct-entry route; this is not a maximum accepted score."
+     },
+     "source_url": "https://admissions.ucentralasia.org/apply/stage-2/",
+     "method": "dataset",
+     "collector": "published/requirements-current",
+     "retrieved_at": "2026-10-05",
+     "academic_year": null
+    },
+    {
+     "value": {
+      "status": "required",
+      "overall": 7,
+      "component": null,
+      "text": "Accepted instead of UCA’s English test; direct entry is a separate pathway."
+     },
+     "source_url": "https://admissions.ucentralasia.org/apply/stage-2/",
+     "method": "dataset",
+     "collector": "published/requirements-current",
+     "retrieved_at": "2026-10-05",
+     "academic_year": null
+    }
+   ]
+  },
+  {
+   "id": "f39751107831faf7",
+   "university": "University of Central Asia",
+   "university_id": "b99019e6-e35f-57b0-8522-f934f7ee60e5",
+   "field": "toefl",
+   "status": "tie",
+   "rule": null,
+   "candidates": [
+    {
+     "value": {
+      "status": "required",
+      "ibt": 79,
+      "ibt_component": null,
+      "band_2026": null,
+      "text": "Published preparatory placement band 79–95 on the legacy scale. No new-scale mapping is given; confirm test dates. This is not a maximum accepted score."
+     },
+     "source_url": "https://admissions.ucentralasia.org/apply/stage-2/",
+     "method": "dataset",
+     "collector": "published/requirements-current",
+     "retrieved_at": "2026-10-05",
+     "academic_year": null
+    },
+    {
+     "value": {
+      "status": "required",
+      "ibt": 96,
+      "ibt_component": null,
+      "band_2026": null,
+      "text": "Published legacy minimum 96; confirm applicable test dates with admissions."
+     },
+     "source_url": "https://admissions.ucentralasia.org/apply/stage-2/",
+     "method": "dataset",
+     "collector": "published/requirements-current",
+     "retrieved_at": "2026-10-05",
+     "academic_year": null
+    }
+   ]
+  }
+ ]
+}

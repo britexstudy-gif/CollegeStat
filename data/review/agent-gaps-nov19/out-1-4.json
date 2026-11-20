@@ -1,0 +1,77 @@
+{
+ "universities": [
+  {
+   "id": "fa22ef60-0123-584c-b367-cc48cff224d1",
+   "english": [],
+   "tuition": null,
+   "application_fee": null,
+   "deadlines": [],
+   "sat": null,
+   "acceptance_rate": null,
+   "notes": "Searches only found PG/master's pages (fee waiver for foreign nationals, Nov 3 2026 PG date). No BTech fee, English minimum or 2027 deadline verified on."
+  },
+  {
+   "id": "32d95a2a-7d14-572d-8c70-bc04da01f060",
+   "english": [
+    {
+     "test": "IELTS",
+     "minimum": 6.5,
+     "detail": "IELTS Academic overall 6.5 (online IELTS 6.5 too); test no older than 2 years. Bachelor admissions page.",
+     "source_url": "https://www.ceu.edu/admissions/bachelor"
+    },
+    {
+     "test": "TOEFL iBT",
+     "minimum": 88,
+     "detail": "TOEFL internet-based 88; no older than 2 years. Page also lists 4.5 on the 1-6 scale for tests taken after 21 Jan 2026.",
+     "source_url": "https://www.ceu.edu/admissions/bachelor"
+    },
+    {
+     "test": "PTE Academic",
+     "minimum": 59,
+     "detail": "Pearson Test of English Academic 59; no older than 5 years.",
+     "source_url": "https://www.ceu.edu/admissions/bachelor"
+    },
+    {
+     "test": "Cambridge C1/C2",
+     "minimum": 180,
+     "detail": "Cambridge C1 Advanced or C2 Proficiency, score 180; no older than 5 years.",
+     "source_url": "https://www.ceu.edu/admissions/bachelor"
+    }
+   ],
+   "tuition": {
+    "amount": 8000,
+    "amount_max": null,
+    "currency": "EUR",
+    "period": "year",
+    "academic_year": "2026/27",
+    "detail": "Bachelor programmes EUR 8,000 per academic year (Sept-June). Year label taken from the page's 2026/27 cycle; fee table has no year printed.",
+    "source_url": "https://www.ceu.edu/admissions/tuition-fees"
+   },
+   "application_fee": null,
+   "deadlines": [],
+   "sat": null,
+   "acceptance_rate": null,
+   "notes": "Application fee not on the pages verified (search snippet said EUR 30, not confirmed). Intake is AY 2026/2027, not explicitly September 2027. Tuition year."
+  },
+  {
+   "id": "fab44467-aa34-5204-9560-df00c2dec3d1",
+   "english": [],
+   "tuition": null,
+   "application_fee": null,
+   "deadlines": [],
+   "sat": null,
+   "acceptance_rate": null,
+   "notes": "NTNU English requirement (IELTS 6.5 each section) is only verified on the master's section, so omitted. No bachelor tuition or 2027 deadline verified."
+  },
+  {
+   "id": "29507709-c065-51f2-a63d-22ecc1ac26e4",
+   "english": [],
+   "tuition": null,
+   "application_fee": null,
+   "deadlines": [],
+   "sat": null,
+   "acceptance_rate": null,
+   "notes": "Official 2026/27 fee schedule PDF exists but per-programme amounts were not extracted, so no lowest/highest range; 2027 intake dates not published yet."
+  }
+ ]
+}

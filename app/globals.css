@@ -1,7 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
-@import "tailwindcss";
+/* CSS cascade / import order — DO NOT REORDER BLINDLY.
+ * This file has ~31 @imports. In CSS, last-wins: later imports override
+ * earlier ones at equal specificity. Canonical tokens / layout live in:
+ * - tokens: :root --background/--foreground below (+ --page/--ink in open-design.css)
+ * - layout: .site-main max-width 1280px canonical in open-design.css
+ * - dark: :root.dark neutral tokens below (higher specificity than imported tokens)
+ * Risk: reordering imports silently flips overrides. Prefer @layer or
+ * higher-specificity selectors over moving imports or adding !important.
+ * Inter loads via a <link> in app/layout.tsx (not @import, which blocks
+ * rendering); maplibre CSS is imported by university-map.tsx only. */
+@import "tailwindcss" source(none);
 @import "tw-animate-css";
-@import "maplibre-gl/dist/maplibre-gl.css";
 @import "../vendor/shadcn-tailwind-4.13.0.css";
 @import "./design-system.css";
 @import "./research.css";
@@ -18,9 +26,51 @@
 @import "./workspace-polish.css";
 @import "./navigation.css";
 @import "./institution-cards.css";
-@import "./comparison-workspace.css";
 @import "./planner-console.css";
 @import "./staff-workbench.css";
+@import "./account-access.css";
+@import "./student-qualifications.css";
+@import "./refinement-oct05.css";
+@import "./dashboard-refinement.css";
+@import "./research-metrics.css";
+@import "./footer-refinement.css";
+@import "./landing-interactions.css";
+@import "./page-motion.css";
+@import "./admission-studio.css";
+@import "./landing-product-oct08.css";
+@import "./student-workspace-oct08.css";
+@import "./product-studio-preview.css";
+@import "./ranking-discovery-oct08.css";
+@import "./dashboard-account-oct09.css";
+@import "./landing-refinement-oct09.css";
+@import "./university-refinement-oct09.css";
+@import "./student-oneprep-oct09.css";
+@import "./admin-supabase-oct09.css";
+@import "./admission-planner.css";
+@import "./page-headers-v2.css";
+@import "./settings-v2.css";
+@import "../components/college/university-logo.css";
+
+/* Research receipts and agent prompts are not UI sources. Explicit roots keep
+ * collection batches from repeatedly rebuilding the global stylesheet. */
+@source "./";
+@source "../components";
+@source "../pages-ui";
+@source "../charts";
+@source "../lib";
+@source "../vendor";
+
+.workspace-route {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  min-height: 100dvh;
+}
+.workspace-route:focus, .admin-route:focus { outline: none; }
+
+/* Colour, type, spacing, radius, shadow and motion tokens: app/brand-tokens.css
+ * (loaded last by app/layout.tsx). */
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -40,10 +90,44 @@
   --color-border: var(--border);
   --color-input: var(--border);
   --color-ring: var(--primary);
+  /* sonner uses var(--radius); keep canonical base + scale */
+  --radius: 0.625rem;
   --radius-sm: 5px;
   --radius-md: 8px;
   --radius-lg: 12px;
   --radius-xl: 16px;
   --font-sans:
-    Poppins, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+/* Dated publisher updates are separate from the imported table edition. */
+
+/* Global skip link: hidden until focused, shared by every route. */
+.skip-link {
+  position: absolute;
+  left: 14px;
+  top: -60px;
+  z-index: 200;
+  background: var(--cs-accent);
+  color: var(--cs-on-accent);
+  font-size: 13px;
+  font-weight: 550;
+  padding: 10px 16px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+.skip-link:focus-visible {
+  top: 14px;
+  color: #fff;
+}
+
+
+/* Tailwind 4 defaults border colour to currentColor; give every bordered
+   element the theme border so outline buttons and dialogs aren't black. */
+@layer base {
+  *,
+  ::before,
+  ::after,
+  ::backdrop {
+    border-color: var(--color-border, currentColor);
+  }
 }

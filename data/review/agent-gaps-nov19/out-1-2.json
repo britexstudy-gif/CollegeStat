@@ -1,0 +1,65 @@
+{
+ "universities": [
+  {
+   "id": "835b45a6-e652-5e5e-937b-c365bb1d8e7a",
+   "english": [
+    {
+     "test": "IELTS",
+     "minimum": 6.5,
+     "detail": "IELTS Academic 6.5 overall, minimum 6.0 per section; one test date; online IELTS not accepted; valid 2 years.",
+     "source_url": "https://www.tue.nl/en/education/become-a-tue-student/admission-and-enrollment/language-proficiency-requirements"
+    },
+    {
+     "test": "TOEFL iBT",
+     "minimum": 4.5,
+     "detail": "From 21 Jan 2026 on the new 1-6 scale: overall 4.5, minimum 4.5 per section. Pre-2026 tests (old 120 scale): overall 90, 21 per section.",
+     "source_url": "https://www.tue.nl/en/education/become-a-tue-student/admission-and-enrollment/language-proficiency-requirements"
+    }
+   ],
+   "tuition": {
+    "amount": 22400,
+    "amount_max": null,
+    "currency": "EUR",
+    "period": "year",
+    "academic_year": "2027/28",
+    "detail": "Institutional fee for non-EEA bachelor's students (2027/28 listed; 2026/27 was EUR 18,600). Page does not say 'per year'.",
+    "source_url": "https://www.tue.nl/en/education/become-a-tue-student/tuition-fees-and-other-study-costs/tuition-fee"
+   },
+   "application_fee": null,
+   "deadlines": [],
+   "sat": null,
+   "acceptance_rate": null,
+   "notes": "Eindhoven English page applies to 2027-28 entry. No application fee or 2027 deadline found on official pages checked. PTE accepted but numeric minimum not."
+  },
+  {
+   "id": "cb8de211-5171-53eb-b568-a641f586fa0a",
+   "english": [],
+   "tuition": null,
+   "application_fee": null,
+   "deadlines": [],
+   "sat": null,
+   "acceptance_rate": null,
+   "notes": "Foreign applicant page lists autumn intake May 15 to Aug 20 and spring Oct 16 to Dec 5, but gives no year; not used. Bachelor tuition is in a PDF not read."
+  },
+  {
+   "id": "a2f62835-d825-5217-8e59-90ad384c3f8c",
+   "english": [],
+   "tuition": null,
+   "application_fee": null,
+   "deadlines": [],
+   "sat": null,
+   "acceptance_rate": null,
+   "notes": "Page gives only Indian category application fees and no international fee or international English test for BS. Deadline is for the January 2027 term."
+  },
+  {
+   "id": "bb49d73c-e3e8-5fa0-ad66-319e24608e25",
+   "english": [],
+   "tuition": null,
+   "application_fee": null,
+   "deadlines": [],
+   "sat": null,
+   "acceptance_rate": null,
+   "notes": "Only exchange-student and degree-page results found (e.g. EUR 17.69/credit not confirmed as international); no non-EU degree fee, admission route or language."
+  }
+ ]
+}

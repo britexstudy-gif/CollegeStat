@@ -79,9 +79,9 @@ test("old profile links resolve to the consolidated sections without losing cont
     Deadlines: "Admissions",
     Scholarships: "Costs",
     "Financial Aid": "Costs",
-    Students: "Campus",
-    Outcomes: "Campus",
-    People: "Research",
+    Students: "Sources",
+    Outcomes: "Sources",
+    People: "People",
   }))
     assert.equal(profileSection(legacy), current);
   assert.equal(profileSection(null), "Overview");
@@ -130,6 +130,7 @@ test("latest costs retain older-only categories and separate program, population
       .sort(),
     [
       "latest",
+      "undated",
       "housing",
       "domestic",
       "euro",
@@ -139,6 +140,103 @@ test("latest costs retain older-only categories and separate program, population
     ].sort(),
   );
   assert.equal(rows.length, 9);
+});
+
+test("newer costs do not hide independent evidence scopes or populations", () => {
+  const rows = [
+    cost("undergraduate-old", 2023, {
+      evidence: { scope: "Undergraduate", population: "Full-time" },
+    }),
+    cost("undergraduate-latest", 2024, {
+      amount: 12500,
+      source_url: "https://example.edu/undergraduate-fees",
+      evidence: { scope: "Undergraduate", population: "Full-time" },
+    }),
+    cost("part-time", 2022, {
+      evidence: { scope: "Undergraduate", population: "Part-time" },
+    }),
+    cost("postgraduate", 2025, {
+      evidence: { scope: "Postgraduate", population: "Full-time" },
+    }),
+    cost("population-only", 2021, {
+      evidence: { population: "Full-time" },
+    }),
+    cost("unscoped", 2026),
+  ];
+  const before = structuredClone(rows);
+  const selected = latestReportedCosts(rows);
+  assert.deepEqual(
+    selected.map((row) => row.id),
+    [
+      "undergraduate-latest",
+      "part-time",
+      "postgraduate",
+      "population-only",
+      "unscoped",
+    ],
+  );
+  assert.strictEqual(selected[0], rows[1]);
+  assert.equal(selected[0].amount, 12500);
+  assert.equal(
+    selected[0].source_url,
+    "https://example.edu/undergraduate-fees",
+  );
+  assert.deepEqual(rows, before);
+});
+
+test("same-year cost sources are retained within a scope without altering historical rows", () => {
+  const evidence = { scope: "Bachelor", population: "New entrants" };
+  const rows = [
+    cost("historical", 2024, { amount: 11200, evidence }),
+    cost("published-fees", 2025, {
+      amount: 12000,
+      source_id: "fees-source",
+      evidence,
+    }),
+    cost("published-budget", 2025, {
+      amount: 12100,
+      source_id: "budget-source",
+      evidence,
+    }),
+  ];
+  const before = structuredClone(rows);
+  assert.deepEqual(latestReportedCosts(rows), rows.slice(1));
+  assert.deepEqual(rows, before);
+});
+
+test("undated costs retain unknown reporting years beside the latest dated cost", () => {
+  const evidence = { scope: "Bachelor", population: "New entrants" };
+  const rows = [
+    cost("historical", 2023, { amount: 11000, evidence }),
+    cost("latest-dated", 2024, { amount: 12000, evidence }),
+    cost("undated-current-page", null, {
+      amount: 13250,
+      source_id: "current-fees",
+      source_url: "https://example.edu/current-fees",
+      evidence: {
+        ...evidence,
+        retrieved_at: "2026-10-10T00:00:00Z",
+        publication_year: 2025,
+      },
+    }),
+    cost("undated-other-source", null, {
+      amount: 13000,
+      source_id: "budget",
+      evidence,
+    }),
+  ];
+  const before = structuredClone(rows);
+  const selected = latestReportedCosts(rows);
+  assert.deepEqual(
+    selected.map((row) => row.id),
+    ["latest-dated", "undated-current-page", "undated-other-source"],
+  );
+  assert.strictEqual(selected[1], rows[2]);
+  assert.equal(selected[1].year, null);
+  assert.equal(selected[1].amount, 13250);
+  assert.equal(selected[1].evidence?.publication_year, 2025);
+  assert.equal(selected[1].source_url, "https://example.edu/current-fees");
+  assert.deepEqual(rows, before);
 });
 
 const award = (

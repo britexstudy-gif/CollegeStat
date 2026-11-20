@@ -1,7 +1,8 @@
-/* Shared surfaces: daylight neutrals and a readable, luminous slate night mode. */
+/* Shared surfaces: daylight neutrals and a readable, luminous slate night mode.
+ * Canonical dark --background: #111823 (enforced again in refinement-oct05.css). */
 :root {
   --background: #f7f7f5;
-  --foreground: #20252e;
+  --foreground: #242424;
   --card: #ffffff;
   --popover: #ffffff;
   --muted: #efefed;
@@ -11,11 +12,11 @@
   --primary: #4266c6;
 }
 .dark {
-  --background: #111823;
+  --background: #181818;
   --foreground: #edf1f8;
-  --card: #1a2433;
-  --popover: #202c3c;
-  --muted: #253246;
+  --card: #232323;
+  --popover: #2a2a2a;
+  --muted: #313131;
   --muted-foreground: #b1bed0;
   --border: #becce524;
   --accent: #739af01c;

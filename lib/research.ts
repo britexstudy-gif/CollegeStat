@@ -1,4 +1,4 @@
-import { universityRanks } from "./ranking-highlights";
+import { universityRanks, rankingPublishers } from "./ranking-highlights";
 import { matchesSearch } from "./search-text";
 import { z } from "zod";
 import {
@@ -13,7 +13,8 @@ import {
 } from "./domain";
 export const filterSchema = z.object({
   q: z.string().max(200).default(""),
-  country: z.string().max(2).default(""),
+  /** One ISO code, or several joined by commas (UZ,KZ). */
+  country: z.string().max(40).regex(/^([A-Za-z]{2})(,[A-Za-z]{2})*$/).or(z.literal("")).default(""),
   region: z.string().max(80).default(""),
   city: z.string().max(80).default(""),
   field: z.string().max(100).default(""),
@@ -29,7 +30,7 @@ export const filterSchema = z.object({
   aid: z.enum(["yes", ""]).default(""),
   scholarships: z.enum(["yes", ""]).default(""),
   sort: z
-    .enum(["rank", "rank_desc", "tuition", "tuition_desc", "admission", "admission_desc", "international", "international_asc"])
+    .enum(["rank", "rank_desc", "rank_the", "rank_arwu", "tuition", "tuition_desc", "admission", "admission_desc", "international", "international_asc"])
     .default("rank"),
   page: z.coerce.number().int().min(1).max(10000).default(1),
 });
@@ -435,7 +436,7 @@ export function filterUniversities(rows: University[], f: Filters) {
           u.region,
           ...(u.aliases || []),
         ]) &&
-        (!f.country || u.country_code === f.country) &&
+        (!f.country || f.country.split(",").includes(u.country_code)) &&
         (!f.region || u.region === f.region) &&
         (!f.city || u.city?.toLowerCase().includes(f.city.toLowerCase())) &&
         (!f.type || u.university_type === f.type) &&
@@ -485,10 +486,12 @@ export function filterUniversities(rows: University[], f: Filters) {
     })
     .sort((a, b) => {
       const byName = () => a.name.localeCompare(b.name) || a.id.localeCompare(b.id);
-      if (f.sort === "rank" || f.sort === "rank_desc") {
+      if (f.sort === "rank" || f.sort === "rank_desc" || f.sort === "rank_the" || f.sort === "rank_arwu") {
         // Compare one named publisher and edition; never blend ranking systems.
-        const ar = universityRanks(a).find(r => r.provider === "qs" && r.year === 2027)?.rank;
-        const br = universityRanks(b).find(r => r.provider === "qs" && r.year === 2027)?.rank;
+        const provider = f.sort === "rank_the" ? "the" : f.sort === "rank_arwu" ? "arwu" : "qs";
+        const year = rankingPublishers[provider].year;
+        const ar = universityRanks(a).find(r => r.provider === provider && r.year === year)?.rank;
+        const br = universityRanks(b).find(r => r.provider === provider && r.year === year)?.rank;
         if (ar == null || br == null) return ar == null && br == null ? byName() : ar == null ? 1 : -1;
         return (ar - br) * (f.sort === "rank_desc" ? -1 : 1) || byName();
       }
@@ -609,6 +612,17 @@ export const observationSchema = z
       .url()
       .refine((v) => v.startsWith("https://")),
     notes: z.string().max(2000).optional(),
+    evidence: z.object({
+      scope: z.string().max(500).optional(),
+      population: z.string().max(1000).optional(),
+      reporting_period: z.string().max(100).optional(),
+      publication_year: z.number().int().min(1900).max(2100).nullable().optional(),
+      retrieved_at: z.string().datetime({offset:true}).optional(),
+      source_record_id: z.string().max(200).optional(),
+      raw_field: z.string().max(200).optional(),
+      dictionary_url: z.string().url().startsWith("https://").optional(),
+      license_note: z.string().max(500).optional(),
+    }).optional(),
   })
   .superRefine((v, c) => {
     if (v.unit === "%" && (v.value < 0 || v.value > 100))

@@ -1,0 +1,136 @@
+OpenAI Codex v0.169.0
+--------
+workdir: /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+model: gpt-6-luna
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: high
+reasoning summaries: none
+session id: 01a1ee91-02e3-7553-803d-046f0f93de37
+--------
+user
+You are a careful admissions-data researcher. For each university below, find facts for an
+INTERNATIONAL applicant to a FIRST-YEAR BACHELOR'S degree starting in autumn 2027 (or the nearest
+published cycle). Use the live web. Rules:
+
+- Official sources only: the university's own website (its domain or subdomains), the national
+  application service (UCAS, Common App, OUAC, uni-assist, Studyinkorea, etc.) or a government
+  statistics office. Never use rankings sites, forums, agencies, Wikipedia or blogs.
+- Every value needs the exact page URL where you read it (source_url). If you could not verify a
+  value on an official page, leave it out (null or an empty list). Never guess or estimate.
+- english: the lowest overall score accepted for undergraduate entry, per test (IELTS Academic
+  overall, TOEFL iBT total, Duolingo, PTE). If programmes differ, give the general/lowest common
+  university minimum and say so in detail (e.g. "6.5 overall, no band below 6.0; some
+  programmes higher").
+- tuition: the yearly tuition for international (non-EU / overseas) undergraduates in the local
+  currency. If it varies by programme give amount = lowest and amount_max = highest, and the
+  academic_year the fee applies to (e.g. "2026/27"). If tuition is free, amount = 0.
+- application_fee: for international first-year applicants, local currency.
+- deadlines: the main 2027-entry first-year deadlines (ISO date YYYY-MM-DD) with the route
+  (e.g. "Common App, Regular Decision", "UCAS", "university portal"). Only dates actually
+  published; if only the 2026-entry date is published, include it and put "2026 entry" in title.
+- sat: policy for international applicants; p25/p75 total SAT only if the university publishes
+  them (Common Data Set or admissions profile).
+- acceptance_rate: only if officially published (CDS, admissions statistics page).
+- notes: one short line on anything important (e.g. "Foundation year required for 11-year
+  school certificates"), else "".
+
+Spend effort on the facts students need most: English minimum, tuition, deadlines. Keep each
+detail under 160 characters. Return only the JSON that matches the schema; use each
+university's id exactly as given.
+
+Universities:
+- id: f35c594a-8de3-586d-b5a0-d2fa7eeacfe3 | National Technical University of Athens | Athens, GR | https://www.ntua.gr/
+- id: b99788a4-2398-58cc-87a6-db75c8901baa | Sabanci University | Istanbul, TR | https://www.sabanciuniv.edu/
+- id: 7297ee6e-31d9-5f06-a506-de580b9c5c1d | George Washington University | Washington, US | http://www.gwu.edu/
+- id: 034346ca-9fd3-51b5-9c36-8e66c6378359 | University of Victoria | Victoria, CA | http://www.uvic.ca/
+codex
+I’m checking the required research memory first, then I’ll verify each school’s current official admissions and fee pages for international first-year entry.
+exec
+/bin/zsh -lc 'cat /Users/likeanew/.agents/skills/lemma/SKILL.md' in /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+ succeeded in 0ms:
+---
+name: lemma
+description: Persistent cross-session memory for AI agents via MCP. BEFORE starting ANY task (coding, debugging, refactoring, research, docs, optimization — any language), FIRST call memory_read to load what you already know so you never re-derive or re-explore known facts. AFTER finishing, call memory_add to persist new findings and session_attempt for dead ends — unsaved knowledge is lost permanently. Distills reusable guides from experience.
+---
+
+<!-- lemma:skill:v=0.21.0 -->
+
+# Lemma — Persistent Memory & Learning
+
+Lemma is a persistent memory server for AI agents over the Model Context Protocol.
+Every session starts blank — knowledge survives ONLY through tool calls. If you
+learn something and don't save it (`memory_add`), it is gone permanently.
+
+## Workflow
+1. **RECALL** — `memory_read` / `semantic_search`: load what's already known for this
+   project/task. Never re-explore code or re-derive facts that are already saved.
+2. **ACT** — do the task.
+3. **PERSIST** — `memory_add` for new insights; `guide_practice` for guides applied;
+   `session_attempt` for abandoned/dead-end approaches (the most valuable records).
+
+## Two knowledge layers
+- **Memory fragments** (`memory_read` / `memory_add`): atomic facts. Types: `fact`,
+  `pattern`, `lesson`, `warning`, `context`. Confidence evolves with use and feedback.
+- **Guides** (`guide_get` / `guide_distill` / `guide_practice`): procedural skills
+  distilled from fragments. Track usage count + success/failure rate.
+Pipeline: `experience -> memory_add -> pattern/lesson -> guide_distill -> guide_practice`.
+
+## Tools at a glance
+- **Recall & search**: `memory_read`, `semantic_search`, `memory_library` (full
+  snapshot + maintenance signals), `memory_stats`, `memory_audit`.
+- **Write & maintain**: `memory_add`, `memory_update`, `memory_forget`,
+  `memory_merge`, `memory_relate` (supports / contradicts / supersedes / related_to),
+  `memory_feedback`.
+- **Guides**: `guide_get`, `guide_create`, `guide_distill`, `guide_practice`,
+  `guide_update`, `guide_forget`, `guide_merge`.
+- **Sessions & reasoning**: `session_start`, `session_end`, `session_attempt`,
+  `session_stats`, `suggestion_respond`.
+- **Background intelligence**: `conflict_scan`, `proactive_analysis`,
+  `project_analytics` (run automatically; act on signals when sensible).
+
+## Writing a fragment
+```
+## [Topic Title]
+### Context
+[1-2 sentences: what and why it matters]
+### [Content Section]
+- [Key fact 1]
+- [Key fact 2]
+### Rules (optional)
+- [Absolute constraint]
+```
+One idea per fragment, 30-2000 chars, structured markdown (not prose). **Store
+fragments in ENGLISH** (required for search/retrieval). Never ask permission to save.
+
+## Background intelligence
+Conflict detection, distill/merge/refine suggestions, and auto-linking run
+automatically. From the CLI, `lemma -lib` prints a full knowledge-base snapshot
+and `lemma -vis` launches a visualizer.
+
+web search: 
+web search: site:ntua.gr international undergraduate admission English tuition 2026 2027 NTUA ...
+web search: 
+web search: site:ntua.gr foreign students undergraduate admission tuition Greek language international students ...
+web search: 
+web search: site:undergraduate.admissions.gwu.edu cost of attendance 2026-2027 tuition undergraduate GW international ...
+web search: 
+web search: site:uvic.ca/undergraduate "international" "Tuition" "2026-2027" undergraduate fees ...
+web search: 
+web search: 
+web search: 
+web search: site:irp.gwu.edu/sites/g/files "2026-2027" "Tuition and Fees" GW $72,770 ...
+web search: 
+web search: 
+web search: 
+web search: site:sl.sabanciuniv.edu "PTE Academic" "TOEFL" 85 ...
+web search: 
+web search: 
+web search: 
+web search: 
+codex
+{"universities":[{"id":"f35c594a-8de3-586d-b5a0-d2fa7eeacfe3","english":[],"tuition":null,"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"Foreign applicants use Greece’s special foreign-national admission category; NTUA’s standard diploma studies last five years."},{"id":"b99788a4-2398-58cc-87a6-db75c8901baa","english":[{"test":"TOEFL iBT","minimum":85, "detail":"85 to waive the Foundation Development Year; otherwise students must pass Sabancı’s English Language Assessment Exam.","source_url":"https://iro.sabanciuniv.edu/tr/tgyden-muafiyet-sinavlari"},{"test":"PTE Academic","minimum":71,"detail":"71 overall, minimum 67 in each part; qualifies for exemption from the Foundation Development Year.","source_url":"https://iro.sabanciuniv.edu/tr/tgyden-muafiyet-sinavlari"},{"test":"Cambridge C1/C2","minimum":0,"detail":"CAE or CPE grade C waives the Foundation Development Year; otherwise students must pass Sabancı’s English Language Assessment Exam.","source_url":"https://iro.sabanciuniv.edu/tr/tgyden-muafiyet-sinavlari"}],"tuition":{"amount":36500,"amount_max":null,"currency":"USD","period":"year","academic_year":"2026/27","detail":"International undergraduate annual tuition.","source_url":"https://iro.sabanciuniv.edu/en/tuition-fee"},"application_fee":{"amount":30,"currency":"USD","source_url":"https://iro.sabanciuniv.edu/en/application-requirements"},"deadlines":[{"title":"2026 entry","due_at":"2026-08-28","route":"Sabancı online application","source_url":"https://www.sabanciuniv.edu/en/academic-calendar?b=2027&c=13&d=en"}],"sat":{"policy":"accepted_alternative","p25":null,"p75":null,"source_url":"https://iro.sabanciuniv.edu/en/required-examdiploma-list"},"acceptance_rate":null,"notes":"Applicants submit an accepted exam or diploma; SAT 1100/1600 is one accepted option. IELTS is not accepted for English exemption in Turkey."},{"id":"7297ee6e-31d9-5f06-a506-de580b9c5c1d","english":[{"test":"IELTS","minimum":6.5,"detail":"6.5 overall.","source_url":"https://undergraduate.admissions.gwu.edu/apply/international-applicants"},{"test":"TOEFL iBT","minimum":4.5,"detail":"90 on tests taken before 2026-01-26; 4.5 on the new scale for tests taken after that date.","source_url":"https://undergraduate.admissions.gwu.edu/apply/international-applicants"},{"test":"Duolingo","minimum":120,"detail":"120 overall.","source_url":"https://undergraduate.admissions.gwu.edu/apply/international-applicants"},{"test":"PTE Academic","minimum":61,"detail":"61 overall.","source_url":"https://undergraduate.admissions.gwu.edu/apply/international-applicants"}],"tuition":{"amount":72000,"amount_max":null,"currency":"USD","period":"year","academic_year":"2026/27","detail":"Full-time main-campus undergraduate tuition for 12–18 credits per semester.","source_url":"https://studentaccounts.gwu.edu/undergraduate-tuition"},"application_fee":{"amount":80,"currency":"USD","source_url":"https://undergraduate.admissions.gwu.edu/apply/international-applicants"},"deadlines":[{"title":"Fall 2027 Early Decision I","due_at":"2026-11-01","route":"Common App or Coalition Application","source_url":"https://undergraduate.admissions.gwu.edu/apply/international-applicants"},{"title":"Fall 2027 Early Decision II and Regular Decision","due_at":"2027-01-05","route":"Common App or Coalition Application","source_url":"https://undergraduate.admissions.gwu.edu/apply/international-applicants"}],"sat":{"policy":"optional","p25":1310,"p75":1450,"source_url":"https://irp.gwu.edu/sites/g/files/zaxdzs6056/files/2026-04/CDS-PDF-2025-2026.pdf"},"acceptance_rate":{"percent":47.1,"year":"Fall 2025","source_url":"https://irp.gwu.edu/sites/g/files/zaxdzs6056/files/2026-04/CDS-PDF-2025-2026.pdf"},"notes":"The overall acceptance rate is calculated from the CDS’s 12,741 admits among 27,034 applicants."},{"id":"034346ca-9fd3-51b5-9c36-8e66c6378359","english":[{"test":"IELTS","minimum":6.5,"detail":"6.5 overall; no component below 6.0.","source_url":"https://www.uvic.ca/undergraduate/admissions/language-requirements/"},{"test":"TOEFL iBT","minimum":88,"detail":"88 overall with no section below 20; the new scale minimum is 4.5 overall with no section below 4.0.","source_url":"https://www.uvic.ca/undergraduate/admissions/language-requirements/"},{"test":"Duolingo","minimum":120,"detail":"120 overall; no subscore below 110.","source_url":"https://www.uvic.ca/undergraduate/admissions/language-requirements/"},{"test":"PTE Academic","minimum":65,"detail":"65 overall; no skill below 60.","source_url":"https://www.uvic.ca/undergraduate/admissions/language-requirements/"},{"test":"Cambridge C1/C2","minimum":180,"detail":"C1 Advanced or C2 Proficiency: 180 overall; no skill below 170.","source_url":"https://www.uvic.ca/undergraduate/admissions/language-requirements/"}],"tuition":{"amount":35448,"amount_max":47225,"currency":"CAD","period":"year","academic_year":"2025/26","detail":"Estimated first-year tuition for eight months; fees based on May 2025–January 2026 rates. Engineering highest; Computer Science is $40,841.","source_url":"https://www.uvic.ca/undergraduate/_assets/docs/uvic_international_students_guide.pdf"},"application_fee":{"amount":184,"currency":"CAD","source_url":"https://www.uvic.ca/undergraduate/admissions/how-to-apply/index.php"},"deadlines":[{"title":"September 2027 entry, most degree programs","due_at":"2027-01-31","route":"UVic application portal","source_url":"https://www.uvic.ca/undergraduate/admissions/application-deadlines/"}],"sat":null,"acceptance_rate":null,"notes":"Tuition estimate is based on 2025/26 rates; varies by program."}]}
+tokens used
+93,543
+{"universities":[{"id":"f35c594a-8de3-586d-b5a0-d2fa7eeacfe3","english":[],"tuition":null,"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"Foreign applicants use Greece’s special foreign-national admission category; NTUA’s standard diploma studies last five years."},{"id":"b99788a4-2398-58cc-87a6-db75c8901baa","english":[{"test":"TOEFL iBT","minimum":85, "detail":"85 to waive the Foundation Development Year; otherwise students must pass Sabancı’s English Language Assessment Exam.","source_url":"https://iro.sabanciuniv.edu/tr/tgyden-muafiyet-sinavlari"},{"test":"PTE Academic","minimum":71,"detail":"71 overall, minimum 67 in each part; qualifies for exemption from the Foundation Development Year.","source_url":"https://iro.sabanciuniv.edu/tr/tgyden-muafiyet-sinavlari"},{"test":"Cambridge C1/C2","minimum":0,"detail":"CAE or CPE grade C waives the Foundation Development Year; otherwise students must pass Sabancı’s English Language Assessment Exam.","source_url":"https://iro.sabanciuniv.edu/tr/tgyden-muafiyet-sinavlari"}],"tuition":{"amount":36500,"amount_max":null,"currency":"USD","period":"year","academic_year":"2026/27","detail":"International undergraduate annual tuition.","source_url":"https://iro.sabanciuniv.edu/en/tuition-fee"},"application_fee":{"amount":30,"currency":"USD","source_url":"https://iro.sabanciuniv.edu/en/application-requirements"},"deadlines":[{"title":"2026 entry","due_at":"2026-08-28","route":"Sabancı online application","source_url":"https://www.sabanciuniv.edu/en/academic-calendar?b=2027&c=13&d=en"}],"sat":{"policy":"accepted_alternative","p25":null,"p75":null,"source_url":"https://iro.sabanciuniv.edu/en/required-examdiploma-list"},"acceptance_rate":null,"notes":"Applicants submit an accepted exam or diploma; SAT 1100/1600 is one accepted option. IELTS is not accepted for English exemption in Turkey."},{"id":"7297ee6e-31d9-5f06-a506-de580b9c5c1d","english":[{"test":"IELTS","minimum":6.5,"detail":"6.5 overall.","source_url":"https://undergraduate.admissions.gwu.edu/apply/international-applicants"},{"test":"TOEFL iBT","minimum":4.5,"detail":"90 on tests taken before 2026-01-26; 4.5 on the new scale for tests taken after that date.","source_url":"https://undergraduate.admissions.gwu.edu/apply/international-applicants"},{"test":"Duolingo","minimum":120,"detail":"120 overall.","source_url":"https://undergraduate.admissions.gwu.edu/apply/international-applicants"},{"test":"PTE Academic","minimum":61,"detail":"61 overall.","source_url":"https://undergraduate.admissions.gwu.edu/apply/international-applicants"}],"tuition":{"amount":72000,"amount_max":null,"currency":"USD","period":"year","academic_year":"2026/27","detail":"Full-time main-campus undergraduate tuition for 12–18 credits per semester.","source_url":"https://studentaccounts.gwu.edu/undergraduate-tuition"},"application_fee":{"amount":80,"currency":"USD","source_url":"https://undergraduate.admissions.gwu.edu/apply/international-applicants"},"deadlines":[{"title":"Fall 2027 Early Decision I","due_at":"2026-11-01","route":"Common App or Coalition Application","source_url":"https://undergraduate.admissions.gwu.edu/apply/international-applicants"},{"title":"Fall 2027 Early Decision II and Regular Decision","due_at":"2027-01-05","route":"Common App or Coalition Application","source_url":"https://undergraduate.admissions.gwu.edu/apply/international-applicants"}],"sat":{"policy":"optional","p25":1310,"p75":1450,"source_url":"https://irp.gwu.edu/sites/g/files/zaxdzs6056/files/2026-04/CDS-PDF-2025-2026.pdf"},"acceptance_rate":{"percent":47.1,"year":"Fall 2025","source_url":"https://irp.gwu.edu/sites/g/files/zaxdzs6056/files/2026-04/CDS-PDF-2025-2026.pdf"},"notes":"The overall acceptance rate is calculated from the CDS’s 12,741 admits among 27,034 applicants."},{"id":"034346ca-9fd3-51b5-9c36-8e66c6378359","english":[{"test":"IELTS","minimum":6.5,"detail":"6.5 overall; no component below 6.0.","source_url":"https://www.uvic.ca/undergraduate/admissions/language-requirements/"},{"test":"TOEFL iBT","minimum":88,"detail":"88 overall with no section below 20; the new scale minimum is 4.5 overall with no section below 4.0.","source_url":"https://www.uvic.ca/undergraduate/admissions/language-requirements/"},{"test":"Duolingo","minimum":120,"detail":"120 overall; no subscore below 110.","source_url":"https://www.uvic.ca/undergraduate/admissions/language-requirements/"},{"test":"PTE Academic","minimum":65,"detail":"65 overall; no skill below 60.","source_url":"https://www.uvic.ca/undergraduate/admissions/language-requirements/"},{"test":"Cambridge C1/C2","minimum":180,"detail":"C1 Advanced or C2 Proficiency: 180 overall; no skill below 170.","source_url":"https://www.uvic.ca/undergraduate/admissions/language-requirements/"}],"tuition":{"amount":35448,"amount_max":47225,"currency":"CAD","period":"year","academic_year":"2025/26","detail":"Estimated first-year tuition for eight months; fees based on May 2025–January 2026 rates. Engineering highest; Computer Science is $40,841.","source_url":"https://www.uvic.ca/undergraduate/_assets/docs/uvic_international_students_guide.pdf"},"application_fee":{"amount":184,"currency":"CAD","source_url":"https://www.uvic.ca/undergraduate/admissions/how-to-apply/index.php"},"deadlines":[{"title":"September 2027 entry, most degree programs","due_at":"2027-01-31","route":"UVic application portal","source_url":"https://www.uvic.ca/undergraduate/admissions/application-deadlines/"}],"sat":null,"acceptance_rate":null,"notes":"Tuition estimate is based on 2025/26 rates; varies by program."}]}

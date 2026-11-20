@@ -1,0 +1,144 @@
+OpenAI Codex v0.169.0
+--------
+workdir: /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+model: gpt-6-luna
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: high
+reasoning summaries: none
+session id: 01a1ee80-319f-7523-869f-f6e41a7311c7
+--------
+user
+You are a careful admissions-data researcher. For each university below, find facts for an
+INTERNATIONAL applicant to a FIRST-YEAR BACHELOR'S degree starting in autumn 2027 (or the nearest
+published cycle). Use the live web. Rules:
+
+- Official sources only: the university's own website (its domain or subdomains), the national
+  application service (UCAS, Common App, OUAC, uni-assist, Studyinkorea, etc.) or a government
+  statistics office. Never use rankings sites, forums, agencies, Wikipedia or blogs.
+- Every value needs the exact page URL where you read it (source_url). If you could not verify a
+  value on an official page, leave it out (null or an empty list). Never guess or estimate.
+- english: the lowest overall score accepted for undergraduate entry, per test (IELTS Academic
+  overall, TOEFL iBT total, Duolingo, PTE). If programmes differ, give the general/lowest common
+  university minimum and say so in detail (e.g. "6.5 overall, no band below 6.0; some
+  programmes higher").
+- tuition: the yearly tuition for international (non-EU / overseas) undergraduates in the local
+  currency. If it varies by programme give amount = lowest and amount_max = highest, and the
+  academic_year the fee applies to (e.g. "2026/27"). If tuition is free, amount = 0.
+- application_fee: for international first-year applicants, local currency.
+- deadlines: the main 2027-entry first-year deadlines (ISO date YYYY-MM-DD) with the route
+  (e.g. "Common App, Regular Decision", "UCAS", "university portal"). Only dates actually
+  published; if only the 2026-entry date is published, include it and put "2026 entry" in title.
+- sat: policy for international applicants; p25/p75 total SAT only if the university publishes
+  them (Common Data Set or admissions profile).
+- acceptance_rate: only if officially published (CDS, admissions statistics page).
+- notes: one short line on anything important (e.g. "Foundation year required for 11-year
+  school certificates"), else "".
+
+Spend effort on the facts students need most: English minimum, tuition, deadlines. Keep each
+detail under 160 characters. Return only the JSON that matches the schema; use each
+university's id exactly as given.
+
+Universities:
+- id: a75ede9d-f2a9-5169-837d-38e810d35a6b | University of Bologna | Bologna, IT | http://www.unibo.it/
+- id: d83e0119-d533-524d-a890-6b7c91c8de71 | University of Bath | Bath, GB | http://www.bath.ac.uk/
+- id: 04c4aef9-ef8e-5981-ba20-50039aeceef5 | Universiti Kebangsaan Malaysia | Bangi, MY | http://www.ukm.my/
+- id: c770e637-838e-5f90-ae57-425b587061a0 | Macquarie University | Sydney, AU | http://www.mq.edu.au/
+codex
+I’m checking the stored research context first, then I’ll verify each university’s current official admissions and fee pages for the closest published cycle.
+exec
+/bin/zsh -lc 'cat /Users/likeanew/.agents/skills/lemma/SKILL.md' in /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+ succeeded in 0ms:
+---
+name: lemma
+description: Persistent cross-session memory for AI agents via MCP. BEFORE starting ANY task (coding, debugging, refactoring, research, docs, optimization — any language), FIRST call memory_read to load what you already know so you never re-derive or re-explore known facts. AFTER finishing, call memory_add to persist new findings and session_attempt for dead ends — unsaved knowledge is lost permanently. Distills reusable guides from experience.
+---
+
+<!-- lemma:skill:v=0.21.0 -->
+
+# Lemma — Persistent Memory & Learning
+
+Lemma is a persistent memory server for AI agents over the Model Context Protocol.
+Every session starts blank — knowledge survives ONLY through tool calls. If you
+learn something and don't save it (`memory_add`), it is gone permanently.
+
+## Workflow
+1. **RECALL** — `memory_read` / `semantic_search`: load what's already known for this
+   project/task. Never re-explore code or re-derive facts that are already saved.
+2. **ACT** — do the task.
+3. **PERSIST** — `memory_add` for new insights; `guide_practice` for guides applied;
+   `session_attempt` for abandoned/dead-end approaches (the most valuable records).
+
+## Two knowledge layers
+- **Memory fragments** (`memory_read` / `memory_add`): atomic facts. Types: `fact`,
+  `pattern`, `lesson`, `warning`, `context`. Confidence evolves with use and feedback.
+- **Guides** (`guide_get` / `guide_distill` / `guide_practice`): procedural skills
+  distilled from fragments. Track usage count + success/failure rate.
+Pipeline: `experience -> memory_add -> pattern/lesson -> guide_distill -> guide_practice`.
+
+## Tools at a glance
+- **Recall & search**: `memory_read`, `semantic_search`, `memory_library` (full
+  snapshot + maintenance signals), `memory_stats`, `memory_audit`.
+- **Write & maintain**: `memory_add`, `memory_update`, `memory_forget`,
+  `memory_merge`, `memory_relate` (supports / contradicts / supersedes / related_to),
+  `memory_feedback`.
+- **Guides**: `guide_get`, `guide_create`, `guide_distill`, `guide_practice`,
+  `guide_update`, `guide_forget`, `guide_merge`.
+- **Sessions & reasoning**: `session_start`, `session_end`, `session_attempt`,
+  `session_stats`, `suggestion_respond`.
+- **Background intelligence**: `conflict_scan`, `proactive_analysis`,
+  `project_analytics` (run automatically; act on signals when sensible).
+
+## Writing a fragment
+```
+## [Topic Title]
+### Context
+[1-2 sentences: what and why it matters]
+### [Content Section]
+- [Key fact 1]
+- [Key fact 2]
+### Rules (optional)
+- [Absolute constraint]
+```
+One idea per fragment, 30-2000 chars, structured markdown (not prose). **Store
+fragments in ENGLISH** (required for search/retrieval). Never ask permission to save.
+
+## Background intelligence
+Conflict detection, distill/merge/refine suggestions, and auto-linking run
+automatically. From the CLI, `lemma -lib` prints a full knowledge-base snapshot
+and `lemma -vis` launches a visualizer.
+
+web search: 
+web search: site:unibo.it international students tuition fees 2026 2027 English language requirements bachelor application deadline 2027 University Bologna ...
+web search: 
+web search: site:bath.ac.uk undergraduate English language requirements IELTS TOEFL 2026 University of Bath fees international 2027 undergraduate tuition range ...
+web search: 
+web search: site:mq.edu.au/study/international 2027 undergraduate entry English language requirements IELTS 6.5 application fee Macquarie ...
+web search: 
+web search: site:mq.edu.au/study/fees-and-costs 2027 international undergraduate annual fee bachelor 2027 Macquarie ...
+web search: 
+web search: site:mq.edu.au/__data/assets/pdf_file/0003/1366203/2027-Onshore-International-Student-Guide.pdf "AU$" "Bachelor of" "Indicative annual fee" ...
+web search: 
+web search: 
+web search: 
+web search: 
+web search: 
+web search: site:bath.ac.uk/corporate-information/english-language-requirements-for-qualifications-category-c Category C IELTS 6.5 TOEFL Duolingo PTE
+web search: 
+web search: 'IELTS'
+web search: 
+web search: 
+web search: 
+web search: 
+web search: 
+web search: 
+web search: 
+web search: site:ucas.com 2027 application fee undergraduate £2027 UCAS application fee ...
+web search: 
+web search: 
+codex
+{"universities":[{"id":"a75ede9d-f2a9-5169-837d-38e810d35a6b","english":[],"tuition":{"amount":157.04,"amount_max":null,"currency":"EUR","period":"year","academic_year":"2026/27","detail":"Minimum fixed fee; variable amount depends on programme and family finances. Full maximum varies by programme.","source_url":"https://www.unibo.it/en/study/enrolment-fees-and-other-procedures/degree-programmes/tuition-fees-and-exemptions"},"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"Language requirements and admission deadlines are set by each programme; some international programmes may require SAT."},{"id":"d83e0119-d533-524d-a890-6b7c91c8de71","english":[{"test":"IELTS","minimum":0,"detail":"6.5 overall, no component below 6.0; some courses require higher.","source_url":"https://www.bath.ac.uk/corporate-information/english-language-requirements-for-qualifications-category-c/"},{"test":"TOEFL iBT","minimum":0,"detail":"90 overall, 21 each component; for tests from 21 Jan 2026: 4.5 overall, 4.0 each. Some courses require higher.","source_url":"https://www.bath.ac.uk/corporate-information/english-language-requirements-for-qualifications-category-c/"},{"test":"Duolingo","minimum":0,"detail":"120 overall; subscores: Speaking 110, Writing 110, Reading 110, Listening 105. Some courses require higher.","source_url":"https://www.bath.ac.uk/corporate-information/english-language-requirements-for-qualifications-category-c/"},{"test":"PTE Academic","minimum":0,"detail":"62 overall, no component below 59; some courses require higher.","source_url":"https://www.bath.ac.uk/corporate-information/english-language-requirements-for-qualifications-category-c/"},{"test":"Cambridge C1/C2","minimum":0,"detail":"180 overall, no element below 169; some courses require higher.","source_url":"https://www.bath.ac.uk/corporate-information/english-language-requirements-for-qualifications-category-c/"}],"tuition":{"amount":26150,"amount_max":32950,"currency":"GBP","period":"year","academic_year":"2027/28","detail":"Overseas undergraduate annual fees range by course band.","source_url":"https://www.bath.ac.uk/corporate-information/tuition-fees-for-undergraduate-students-who-started-in-2025/"},"application_fee":{"amount":34.5,"currency":"GBP","source_url":"https://www.ucas.com/faqs/what-is-the-application-fee-for-the-2027-cycle"},"deadlines":[{"title":"2027 entry equal consideration","due_at":"2027-01-13","route":"UCAS","source_url":"https://www.bath.ac.uk/corporate-information/important-dates-for-undergraduate-applicants-starting-in-2027/"}],"sat":null,"acceptance_rate":null,"notes":""},{"id":"04c4aef9-ef8e-5981-ba20-50039aeceef5","english":[],"tuition":null,"application_fee":{"amount":100,"currency":"MYR","source_url":"https://join.ukm.my/?lang=en"},"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"International bachelor applicants need 12 years of schooling; English requirements are set by each faculty. Undergraduate intake opens in April for October."},{"id":"c770e637-838e-5f90-ae57-425b587061a0","english":[{"test":"IELTS","minimum":0,"detail":"6.5 overall, 6.0 each band for most undergraduate courses; some courses require higher.","source_url":"https://www.mq.edu.au/study/admissions-and-entry/apply/international/english-language-requirements"},{"test":"TOEFL iBT","minimum":0,"detail":"4.5 overall, 4.0 each (new scale) or 86 overall (old scale) for most undergraduate courses; some require higher.","source_url":"https://www.mq.edu.au/study/admissions-and-entry/apply/international/english-language-requirements"},{"test":"PTE Academic","minimum":0,"detail":"60 overall; 51 reading, 55 writing, 50 listening, 54 speaking for most undergraduate courses.","source_url":"https://www.mq.edu.au/study/admissions-and-entry/apply/international/english-language-requirements"},{"test":"Cambridge C1/C2","minimum":0,"detail":"180 overall, 169 each component for most undergraduate courses; some require higher.","source_url":"https://www.mq.edu.au/study/admissions-and-entry/apply/international/english-language-requirements"}],"tuition":{"amount":40400,"amount_max":62375,"currency":"AUD","period":"year","academic_year":"2027","detail":"Indicative annual international fees vary by degree; published 2027 bachelor guide range.","source_url":"https://www.mq.edu.au/__data/assets/pdf_file/0003/1366203/2027-Onshore-International-Student-Guide.pdf"},"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"International applicants generally apply directly to Macquarie or through an authorised agent; published 2027 guide lists February and July intakes."}] }
+tokens used
+159,729
+{"universities":[{"id":"a75ede9d-f2a9-5169-837d-38e810d35a6b","english":[],"tuition":{"amount":157.04,"amount_max":null,"currency":"EUR","period":"year","academic_year":"2026/27","detail":"Minimum fixed fee; variable amount depends on programme and family finances. Full maximum varies by programme.","source_url":"https://www.unibo.it/en/study/enrolment-fees-and-other-procedures/degree-programmes/tuition-fees-and-exemptions"},"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"Language requirements and admission deadlines are set by each programme; some international programmes may require SAT."},{"id":"d83e0119-d533-524d-a890-6b7c91c8de71","english":[{"test":"IELTS","minimum":0,"detail":"6.5 overall, no component below 6.0; some courses require higher.","source_url":"https://www.bath.ac.uk/corporate-information/english-language-requirements-for-qualifications-category-c/"},{"test":"TOEFL iBT","minimum":0,"detail":"90 overall, 21 each component; for tests from 21 Jan 2026: 4.5 overall, 4.0 each. Some courses require higher.","source_url":"https://www.bath.ac.uk/corporate-information/english-language-requirements-for-qualifications-category-c/"},{"test":"Duolingo","minimum":0,"detail":"120 overall; subscores: Speaking 110, Writing 110, Reading 110, Listening 105. Some courses require higher.","source_url":"https://www.bath.ac.uk/corporate-information/english-language-requirements-for-qualifications-category-c/"},{"test":"PTE Academic","minimum":0,"detail":"62 overall, no component below 59; some courses require higher.","source_url":"https://www.bath.ac.uk/corporate-information/english-language-requirements-for-qualifications-category-c/"},{"test":"Cambridge C1/C2","minimum":0,"detail":"180 overall, no element below 169; some courses require higher.","source_url":"https://www.bath.ac.uk/corporate-information/english-language-requirements-for-qualifications-category-c/"}],"tuition":{"amount":26150,"amount_max":32950,"currency":"GBP","period":"year","academic_year":"2027/28","detail":"Overseas undergraduate annual fees range by course band.","source_url":"https://www.bath.ac.uk/corporate-information/tuition-fees-for-undergraduate-students-who-started-in-2025/"},"application_fee":{"amount":34.5,"currency":"GBP","source_url":"https://www.ucas.com/faqs/what-is-the-application-fee-for-the-2027-cycle"},"deadlines":[{"title":"2027 entry equal consideration","due_at":"2027-01-13","route":"UCAS","source_url":"https://www.bath.ac.uk/corporate-information/important-dates-for-undergraduate-applicants-starting-in-2027/"}],"sat":null,"acceptance_rate":null,"notes":""},{"id":"04c4aef9-ef8e-5981-ba20-50039aeceef5","english":[],"tuition":null,"application_fee":{"amount":100,"currency":"MYR","source_url":"https://join.ukm.my/?lang=en"},"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"International bachelor applicants need 12 years of schooling; English requirements are set by each faculty. Undergraduate intake opens in April for October."},{"id":"c770e637-838e-5f90-ae57-425b587061a0","english":[{"test":"IELTS","minimum":0,"detail":"6.5 overall, 6.0 each band for most undergraduate courses; some courses require higher.","source_url":"https://www.mq.edu.au/study/admissions-and-entry/apply/international/english-language-requirements"},{"test":"TOEFL iBT","minimum":0,"detail":"4.5 overall, 4.0 each (new scale) or 86 overall (old scale) for most undergraduate courses; some require higher.","source_url":"https://www.mq.edu.au/study/admissions-and-entry/apply/international/english-language-requirements"},{"test":"PTE Academic","minimum":0,"detail":"60 overall; 51 reading, 55 writing, 50 listening, 54 speaking for most undergraduate courses.","source_url":"https://www.mq.edu.au/study/admissions-and-entry/apply/international/english-language-requirements"},{"test":"Cambridge C1/C2","minimum":0,"detail":"180 overall, 169 each component for most undergraduate courses; some require higher.","source_url":"https://www.mq.edu.au/study/admissions-and-entry/apply/international/english-language-requirements"}],"tuition":{"amount":40400,"amount_max":62375,"currency":"AUD","period":"year","academic_year":"2027","detail":"Indicative annual international fees vary by degree; published 2027 bachelor guide range.","source_url":"https://www.mq.edu.au/__data/assets/pdf_file/0003/1366203/2027-Onshore-International-Student-Guide.pdf"},"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"International applicants generally apply directly to Macquarie or through an authorised agent; published 2027 guide lists February and July intakes."}] }

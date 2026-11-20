@@ -1,0 +1,13 @@
+{
+  "id": "P006",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "We already pay for IELTS prep, and my son is building his shortlist with ChatGPT, EducationUSA and the universities' own websites. I'd use the free search and the one practice application, but I don't see a reason to pay yet when all the deadline and cost information is public anyway.",
+  "objection": "None of this is anything we can't do ourselves for free. Unlimited essay review for $99 sounds too good to be true, so I'd wonder who is actually reading the essays and whether they know what Oxford or Ivy admissions want.",
+  "would_change_my_mind": "If the free practice application caught a real mistake or missing item that ChatGPT and our own checking had missed, or if the essay reviewers had verifiable admissions or top-university credentials.",
+  "price_too_cheap": 20,
+  "price_cheap": 49,
+  "price_expensive": 149,
+  "price_too_expensive": 300
+}

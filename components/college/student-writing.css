@@ -1,0 +1,132 @@
+.account-writing-studio .writing-save-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.account-writing-studio .writing-toolbar {
+  gap: 14px;
+  flex-wrap: wrap;
+}
+.account-writing-studio .writing-layout {
+  align-items: start;
+}
+.account-writing-studio .writing-guide {
+  align-self: start;
+}
+.account-writing-studio .writing-save-status {
+  color: var(--muted-foreground);
+  font-size: 12px;
+  min-height: 18px;
+  margin: 12px 0 20px;
+}
+.account-writing-studio .writing-account-error {
+  color: var(--foreground);
+  background: var(--muted);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 13px;
+}
+.account-writing-studio .writing-account-error p {
+  margin: 0 0 8px;
+}
+.account-writing-studio .writing-version-history {
+  border-top: 1px solid var(--border);
+  padding-top: 18px;
+}
+.account-writing-studio .writing-history-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.account-writing-studio .writing-history-heading h3 {
+  font-size: 15px;
+  margin: 0;
+}
+.account-writing-studio .writing-history-heading span,
+.account-writing-studio .writing-version-history > p {
+  font-size: 12px;
+  color: var(--muted-foreground);
+}
+.account-writing-studio .writing-version-history ul {
+  list-style: none;
+  padding: 0;
+  margin: 12px 0;
+}
+.account-writing-studio .writing-version-history li {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: start;
+  gap: 12px;
+  border-bottom: 1px solid var(--border);
+  padding: 12px 0;
+}
+.account-writing-studio .writing-version-history li > div {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.account-writing-studio .writing-version-history summary {
+  font-size: 12px;
+  cursor: pointer;
+  overflow-wrap: anywhere;
+}
+.account-writing-studio .writing-version-history summary span {
+  color: var(--muted-foreground);
+  display: block;
+  margin-top: 4px;
+}
+.account-writing-studio .writing-version-history details p {
+  font-size: 13px;
+  line-height: 1.65;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  max-height: 240px;
+  overflow: auto;
+}
+.account-writing-studio .writing-version-confirm {
+  padding: 14px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--muted);
+  margin: 14px 0;
+}
+.account-writing-studio .writing-version-confirm p {
+  font-size: 13px;
+  line-height: 1.6;
+  margin: 0 0 12px;
+}
+.account-writing-studio .writing-version-confirm > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.account-writing-studio .writing-history-pages {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+  font-size: 12px;
+}
+.account-writing-studio .text-link:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+@media (max-width: 540px) {
+  .account-writing-studio .writing-save-actions {
+    width: 100%;
+  }
+  .account-writing-studio .writing-save-actions button {
+    flex: 1;
+    justify-content: center;
+  }
+  .account-writing-studio .writing-version-history li {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+  .account-writing-studio .writing-history-pages {
+    flex-wrap: wrap;
+  }
+}

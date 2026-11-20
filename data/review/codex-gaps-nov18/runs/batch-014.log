@@ -1,0 +1,74 @@
+OpenAI Codex v0.169.0
+--------
+workdir: /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+model: gpt-6-luna
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: high
+reasoning summaries: none
+session id: 01a1ee7c-04d0-7281-98c3-9c8a4527726a
+--------
+user
+You are a careful admissions-data researcher. For each university below, find facts for an
+INTERNATIONAL applicant to a FIRST-YEAR BACHELOR'S degree starting in autumn 2027 (or the nearest
+published cycle). Use the live web. Rules:
+
+- Official sources only: the university's own website (its domain or subdomains), the national
+  application service (UCAS, Common App, OUAC, uni-assist, Studyinkorea, etc.) or a government
+  statistics office. Never use rankings sites, forums, agencies, Wikipedia or blogs.
+- Every value needs the exact page URL where you read it (source_url). If you could not verify a
+  value on an official page, leave it out (null or an empty list). Never guess or estimate.
+- english: the lowest overall score accepted for undergraduate entry, per test (IELTS Academic
+  overall, TOEFL iBT total, Duolingo, PTE). If programmes differ, give the general/lowest common
+  university minimum and say so in detail (e.g. "6.5 overall, no band below 6.0; some
+  programmes higher").
+- tuition: the yearly tuition for international (non-EU / overseas) undergraduates in the local
+  currency. If it varies by programme give amount = lowest and amount_max = highest, and the
+  academic_year the fee applies to (e.g. "2026/27"). If tuition is free, amount = 0.
+- application_fee: for international first-year applicants, local currency.
+- deadlines: the main 2027-entry first-year deadlines (ISO date YYYY-MM-DD) with the route
+  (e.g. "Common App, Regular Decision", "UCAS", "university portal"). Only dates actually
+  published; if only the 2026-entry date is published, include it and put "2026 entry" in title.
+- sat: policy for international applicants; p25/p75 total SAT only if the university publishes
+  them (Common Data Set or admissions profile).
+- acceptance_rate: only if officially published (CDS, admissions statistics page).
+- notes: one short line on anything important (e.g. "Foundation year required for 11-year
+  school certificates"), else "".
+
+Spend effort on the facts students need most: English minimum, tuition, deadlines. Keep each
+detail under 160 characters. Return only the JSON that matches the schema; use each
+university's id exactly as given.
+
+Universities:
+- id: 61b5c222-f7d2-5ff7-a546-b186e73b945b | University of Glasgow | Glasgow, GB | http://www.gla.ac.uk/
+- id: 6a32c909-6d47-5097-a8a9-50e39d01408f | University of Adelaide | Adelaide, AU | http://www.adelaide.edu.au/
+- id: fe2070ba-9e66-590c-b67f-3cef2d8983b4 | Ruprecht-Karls-Universität Heidelberg | Heidelberg, DE | http://www.uni-heidelberg.de/
+- id: 5d324277-c7c7-52eb-9d99-03367f122d16 | University of Washington-Seattle Campus | Seattle, US | http://www.washington.edu/
+codex
+I’ll check each university’s official international admissions and fee pages, prioritizing English minimums, tuition, and published entry deadlines.
+web search: 
+web search: site:gla.ac.uk international undergraduate English language requirements IELTS fees 2026 2027 deadline ...
+web search: 
+web search: site:gla.ac.uk/study/international/undergraduate/ fees 2026 2027 international tuition IELTS undergraduate ...
+web search: 
+web search: site:gla.ac.uk "IELTS" undergraduate English language requirements Glasgow 6.5 ...
+web search: 
+web search: site:adelaide.edu.au/study/degrees/2027 "indicative of 2027 fees" "Bachelor" "International" ...
+web search: 
+web search: site:adelaide.edu.au/study/degrees/2027/bachelor "indicative of 2027 fees" ...
+web search: 
+web search: 
+web search: 
+web search: site:adelaide.edu.au/study/degrees/2027/bachelor-of-arts/int "2027 Annual Fee" ...
+web search: 
+web search: site:gla.ac.uk "English language requirements" "IELTS 6.0" undergraduate 2027 ...
+web search: 
+web search: site:uni-heidelberg.de/en "application fee" Heidelberg University application no fee ...
+web search: 
+web search: site:gla.ac.uk international USA undergraduate SAT admissions Glasgow SAT AP entry requirements ...
+codex
+{"universities":[{"id":"61b5c222-f7d2-5ff7-a546-b186e73b945b","english":[{"test":"IELTS","minimum":6.5,"detail":"IELTS Academic: 6.5 overall, no subtest below 6.0; programme requirements may vary.","source_url":"https://www.gla.ac.uk/undergraduate/degrees/englishlanguage/"},{"test":"TOEFL iBT","minimum":92,"detail":"For tests from 21 Jan 2026: 92 overall; subscore minimums apply. Programme requirements may vary.","source_url":"https://www.gla.ac.uk/undergraduate/degrees/englishlanguage/"},{"test":"PTE Academic","minimum":59,"detail":"59 overall and in each subtest; programme requirements may vary.","source_url":"https://www.gla.ac.uk/undergraduate/degrees/englishlanguage/"},{"test":"Cambridge C1/C2","minimum":176,"detail":"C1 Advanced or C2 Proficiency: 176 overall, no subtest below 169; programme requirements may vary.","source_url":"https://www.gla.ac.uk/undergraduate/degrees/englishlanguage/"}],"tuition":{"amount":27720,"amount_max":62730,"currency":"GBP","period":"year","academic_year":"2026/27","detail":"Published international undergraduate fees range from £27,720 to £62,730 per year by programme.","source_url":"https://webvhpool.gla.ac.uk/undergraduate/fees/intlfees/"},"application_fee":null,"deadlines":[{"title":"2027 entry: equal consideration","due_at":"2027-01-13","route":"UCAS","source_url":"https://www.gla.ac.uk/undergraduate/how-to-apply-for-an-undergraduate-degree/entry-requirements/admissions-guidance/"},{"title":"2027 entry: medicine, dentistry, veterinary; or Oxford/Cambridge applicants","due_at":"2026-10-15","route":"UCAS","source_url":"https://www.gla.ac.uk/undergraduate/how-to-apply-for-an-undergraduate-degree/ucas/"}],"sat":{"policy":"accepted_alternative","p25":null,"p75":null,"source_url":"https://www.gla.ac.uk/undergraduate/how-to-apply-for-an-undergraduate-degree/entry-requirements/admissions-guidance/"},"acceptance_rate":null,"notes":"SAT/AP may be used for some US qualification routes; SAT is not a general admission requirement."},{"id":"6a32c909-6d47-5097-a8a9-50e39d01408f","english":[{"test":"IELTS","minimum":6,"detail":"General undergraduate minimum is IELTS Academic 6.0 overall or equivalent; some degree pages set higher requirements.","source_url":"https://adelaide.edu.au/study/international-students/how-to-apply/entry-requirements/"}],"tuition":null,"application_fee":{"amount":150,"currency":"AUD","source_url":"https://adelaide.edu.au/study/international-students/how-to-apply/apply-now/"},"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"2027 undergraduate fees and course deadlines were not verified on an official page; check the chosen degree page."},{"id":"fe2070ba-9e66-590c-b67f-3cef2d8983b4","english":[],"tuition":{"amount":1500,"amount_max":null,"currency":"EUR","period":"semester","academic_year":"2026/27","detail":"Non-EU/EEA students with a foreign university entrance qualification; exemptions may apply.","source_url":"https://www.uni-heidelberg.de/en/study/management-of-studies/semester-fees/tuition-fees-for-international-students"},"application_fee":{"amount":0,"currency":"EUR","source_url":"https://www.sai.uni-heidelberg.de/en/study-at-sai/start-your-application-now"},"deadlines":[{"title":"2027 entry: restricted programmes or entrance examination","due_at":"2027-07-15","route":"heiCO university portal","source_url":"https://www.uni-heidelberg.de/en/study/management-of-studies/key-dates-deadlines/application-deadlines-for-the-1st-semester-of-undergraduate-degree-programmes"},{"title":"2027 entry: unrestricted programmes","due_at":"2027-10-31","route":"heiCO university portal","source_url":"https://www.uni-heidelberg.de/en/study/management-of-studies/key-dates-deadlines/application-deadlines-for-the-1st-semester-of-undergraduate-degree-programmes"}],"sat":null,"acceptance_rate":null,"notes":"Most bachelor's programmes are taught in German; DSH-2 is generally required by enrolment."},{"id":"5d324277-c7c7-52eb-9d99-03367f122d16","english":[{"test":"IELTS","minimum":6,"detail":"International first-year minimum IELTS score: 6.0.","source_url":"https://admit.washington.edu/apply/first-year/how-to-apply/english-proficiency/"},{"test":"TOEFL iBT","minimum":4,"detail":"Minimum 4.0 under the TOEFL iBT scale effective 21 Jan 2026.","source_url":"https://admit.washington.edu/apply/first-year/how-to-apply/english-proficiency/"},{"test":"Duolingo","minimum":110,"detail":"Minimum DET score: 110.","source_url":"https://admit.washington.edu/apply/first-year/how-to-apply/english-proficiency/"}],"tuition":{"amount":45789,"amount_max":null,"currency":"USD","period":"year","academic_year":"2026/27","detail":"Published Seattle non-resident tuition; international students pay non-resident tuition. Some majors may add fees.","source_url":"https://admit.washington.edu/costs/coa/"},"application_fee":{"amount":95,"currency":"USD","source_url":"https://admit.washington.edu/apply/first-year/how-to-apply/"},"deadlines":[{"title":"Autumn 2027 first-year application","due_at":"2026-11-15","route":"Common App","source_url":"https://admit.washington.edu/apply/first-year/"}],"sat":{"policy":"optional","p25":null,"p75":null,"source_url":"https://admit.washington.edu/apply/first-year/how-to-apply/test-scores/"},"acceptance_rate":null,"notes":""}] }
+tokens used
+79,579
+{"universities":[{"id":"61b5c222-f7d2-5ff7-a546-b186e73b945b","english":[{"test":"IELTS","minimum":6.5,"detail":"IELTS Academic: 6.5 overall, no subtest below 6.0; programme requirements may vary.","source_url":"https://www.gla.ac.uk/undergraduate/degrees/englishlanguage/"},{"test":"TOEFL iBT","minimum":92,"detail":"For tests from 21 Jan 2026: 92 overall; subscore minimums apply. Programme requirements may vary.","source_url":"https://www.gla.ac.uk/undergraduate/degrees/englishlanguage/"},{"test":"PTE Academic","minimum":59,"detail":"59 overall and in each subtest; programme requirements may vary.","source_url":"https://www.gla.ac.uk/undergraduate/degrees/englishlanguage/"},{"test":"Cambridge C1/C2","minimum":176,"detail":"C1 Advanced or C2 Proficiency: 176 overall, no subtest below 169; programme requirements may vary.","source_url":"https://www.gla.ac.uk/undergraduate/degrees/englishlanguage/"}],"tuition":{"amount":27720,"amount_max":62730,"currency":"GBP","period":"year","academic_year":"2026/27","detail":"Published international undergraduate fees range from £27,720 to £62,730 per year by programme.","source_url":"https://webvhpool.gla.ac.uk/undergraduate/fees/intlfees/"},"application_fee":null,"deadlines":[{"title":"2027 entry: equal consideration","due_at":"2027-01-13","route":"UCAS","source_url":"https://www.gla.ac.uk/undergraduate/how-to-apply-for-an-undergraduate-degree/entry-requirements/admissions-guidance/"},{"title":"2027 entry: medicine, dentistry, veterinary; or Oxford/Cambridge applicants","due_at":"2026-10-15","route":"UCAS","source_url":"https://www.gla.ac.uk/undergraduate/how-to-apply-for-an-undergraduate-degree/ucas/"}],"sat":{"policy":"accepted_alternative","p25":null,"p75":null,"source_url":"https://www.gla.ac.uk/undergraduate/how-to-apply-for-an-undergraduate-degree/entry-requirements/admissions-guidance/"},"acceptance_rate":null,"notes":"SAT/AP may be used for some US qualification routes; SAT is not a general admission requirement."},{"id":"6a32c909-6d47-5097-a8a9-50e39d01408f","english":[{"test":"IELTS","minimum":6,"detail":"General undergraduate minimum is IELTS Academic 6.0 overall or equivalent; some degree pages set higher requirements.","source_url":"https://adelaide.edu.au/study/international-students/how-to-apply/entry-requirements/"}],"tuition":null,"application_fee":{"amount":150,"currency":"AUD","source_url":"https://adelaide.edu.au/study/international-students/how-to-apply/apply-now/"},"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"2027 undergraduate fees and course deadlines were not verified on an official page; check the chosen degree page."},{"id":"fe2070ba-9e66-590c-b67f-3cef2d8983b4","english":[],"tuition":{"amount":1500,"amount_max":null,"currency":"EUR","period":"semester","academic_year":"2026/27","detail":"Non-EU/EEA students with a foreign university entrance qualification; exemptions may apply.","source_url":"https://www.uni-heidelberg.de/en/study/management-of-studies/semester-fees/tuition-fees-for-international-students"},"application_fee":{"amount":0,"currency":"EUR","source_url":"https://www.sai.uni-heidelberg.de/en/study-at-sai/start-your-application-now"},"deadlines":[{"title":"2027 entry: restricted programmes or entrance examination","due_at":"2027-07-15","route":"heiCO university portal","source_url":"https://www.uni-heidelberg.de/en/study/management-of-studies/key-dates-deadlines/application-deadlines-for-the-1st-semester-of-undergraduate-degree-programmes"},{"title":"2027 entry: unrestricted programmes","due_at":"2027-10-31","route":"heiCO university portal","source_url":"https://www.uni-heidelberg.de/en/study/management-of-studies/key-dates-deadlines/application-deadlines-for-the-1st-semester-of-undergraduate-degree-programmes"}],"sat":null,"acceptance_rate":null,"notes":"Most bachelor's programmes are taught in German; DSH-2 is generally required by enrolment."},{"id":"5d324277-c7c7-52eb-9d99-03367f122d16","english":[{"test":"IELTS","minimum":6,"detail":"International first-year minimum IELTS score: 6.0.","source_url":"https://admit.washington.edu/apply/first-year/how-to-apply/english-proficiency/"},{"test":"TOEFL iBT","minimum":4,"detail":"Minimum 4.0 under the TOEFL iBT scale effective 21 Jan 2026.","source_url":"https://admit.washington.edu/apply/first-year/how-to-apply/english-proficiency/"},{"test":"Duolingo","minimum":110,"detail":"Minimum DET score: 110.","source_url":"https://admit.washington.edu/apply/first-year/how-to-apply/english-proficiency/"}],"tuition":{"amount":45789,"amount_max":null,"currency":"USD","period":"year","academic_year":"2026/27","detail":"Published Seattle non-resident tuition; international students pay non-resident tuition. Some majors may add fees.","source_url":"https://admit.washington.edu/costs/coa/"},"application_fee":{"amount":95,"currency":"USD","source_url":"https://admit.washington.edu/apply/first-year/how-to-apply/"},"deadlines":[{"title":"Autumn 2027 first-year application","due_at":"2026-11-15","route":"Common App","source_url":"https://admit.washington.edu/apply/first-year/"}],"sat":{"policy":"optional","p25":null,"p75":null,"source_url":"https://admit.washington.edu/apply/first-year/how-to-apply/test-scores/"},"acceptance_rate":null,"notes":""}] }

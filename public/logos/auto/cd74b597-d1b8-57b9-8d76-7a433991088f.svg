@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="99.82" height="99.5"><svg xmlns="http://www.w3.org/2000/svg" id="SvgjsSvg1005" data-name="Ebene 2" viewBox="0 0 99.82 99.5">
+  <defs>
+    <style>
+      .cls-1{fill:#88c2e2}.cls-2{fill:#9dc53e}.cls-3{fill:#006376}
+    </style>
+  </defs>
+  <path d="M55.2 0h17.2v17.2H55.2z" class="cls-1"></path>
+  <path d="M55.2 27.4h17.2v17.2H55.2z" class="cls-2"></path>
+  <path d="M82.5 0h17.2v17.2H82.5z" class="cls-3"></path>
+  <path d="M27.5 0h17.2v17.2H27.5zm0 54.8h17.2V72H27.5z" class="cls-2"></path>
+  <path d="M0 54.8h17.2V72H0zm27.5-27.4h17.2v17.2H27.5z" class="cls-1"></path>
+  <path d="M0 27.4h17.2v17.2H0z" class="cls-2"></path>
+  <path d="M0 82.3h17.2v17.2H0zm67.63-20.94h19.49c4.24 0 7.42 1.01 9.54 3.03 2.11 2.02 3.17 4.89 3.17 8.62s-1.15 6.82-3.46 8.98c-2.3 2.16-5.82 3.23-10.54 3.23h-6.42V99.3H67.63V61.36Zm11.78 16.17h2.87c2.26 0 3.85-.39 4.76-1.18.91-.79 1.37-1.79 1.37-3.02s-.4-2.2-1.19-3.03c-.79-.83-2.29-1.24-4.48-1.24H79.4v8.46Z" class="cls-3"></path>
+</svg><style>@media (prefers-color-scheme: light) { :root { filter: none; } }
+@media (prefers-color-scheme: dark) { :root { filter: contrast(0.3846153846153846) brightness(4.5); } }
+</style></svg>

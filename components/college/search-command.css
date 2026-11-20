@@ -1,0 +1,130 @@
+/* Minimal universal search (⌘K) */
+[data-slot="dialog-content"].cmd {
+  --cmd-ink: #0a0a0a;
+  --cmd-muted: #737373;
+  --cmd-line: #ececec;
+  --cmd-bg: #ffffff;
+  --cmd-hover: #f5f5f5;
+  --cmd-accent: #2563eb;
+  top: 14vh !important;
+  translate: -50% 0 !important;
+  width: min(640px, calc(100vw - 32px)) !important;
+  max-width: none !important;
+  padding: 0 !important;
+  border: 1px solid var(--cmd-line) !important;
+  border-radius: 18px !important;
+  background: var(--cmd-bg) !important;
+  box-shadow: 0 30px 80px rgb(0 0 0 / 18%) !important;
+  overflow: hidden;
+  color: var(--cmd-ink);
+}
+html.dark [data-slot="dialog-content"].cmd {
+  --cmd-ink: #fafafa;
+  --cmd-muted: #a1a1a1;
+  --cmd-line: #262626;
+  --cmd-bg: #0f0f0f;
+  --cmd-hover: #1a1a1a;
+  --cmd-accent: #4d8dff;
+}
+.cmd-input {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 16px;
+  border-bottom: 1px solid var(--cmd-line);
+  color: var(--cmd-muted);
+}
+.cmd-input [data-slot="command-input-wrapper"] {
+  flex: 1;
+  border: 0 !important;
+  padding: 0 !important;
+}
+.cmd-input [data-slot="command-input-wrapper"] > svg {
+  display: none;
+}
+.cmd-input input,
+.cmd-input [cmdk-input] {
+  height: 56px !important;
+  width: 100%;
+  border: 0 !important;
+  outline: none !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  color: var(--cmd-ink) !important;
+  font-size: 16px !important;
+}
+.cmd kbd {
+  padding: 2px 6px;
+  border: 1px solid var(--cmd-line);
+  border-radius: 6px;
+  font: inherit;
+  font-size: 11px;
+  color: var(--cmd-muted);
+}
+.cmd-list {
+  max-height: min(60vh, 460px) !important;
+  padding: 6px 8px 10px !important;
+}
+.cmd [cmdk-group-heading] {
+  padding: 10px 10px 4px !important;
+  font-size: 11.5px !important;
+  font-weight: 600 !important;
+  color: var(--cmd-muted) !important;
+}
+.cmd [cmdk-item] {
+  display: flex !important;
+  align-items: center;
+  gap: 10px;
+  min-height: 40px;
+  padding: 6px 10px !important;
+  border-radius: 10px !important;
+  font-size: 14px !important;
+  color: var(--cmd-ink) !important;
+  cursor: pointer;
+}
+.cmd [cmdk-item] > svg {
+  flex: none;
+  color: var(--cmd-muted);
+}
+.cmd [cmdk-item][data-selected="true"] {
+  background: var(--cmd-hover) !important;
+}
+.cmd [cmdk-item][data-selected="true"] > svg:first-child {
+  color: var(--cmd-accent);
+}
+.cmd-two {
+  display: grid;
+  min-width: 0;
+}
+.cmd-two b {
+  font-weight: 560;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.cmd-two small {
+  font-size: 12px;
+  color: var(--cmd-muted);
+}
+.cmd-go {
+  margin-left: auto;
+}
+.cmd [cmdk-empty] {
+  padding: 28px 10px !important;
+  font-size: 13.5px;
+  text-align: center;
+  color: var(--cmd-muted);
+}
+.cmd-foot {
+  display: flex;
+  gap: 16px;
+  padding: 10px 16px;
+  border-top: 1px solid var(--cmd-line);
+  font-size: 12px;
+  color: var(--cmd-muted);
+}
+.cmd-foot span {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}

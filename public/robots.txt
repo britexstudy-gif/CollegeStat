@@ -1,0 +1,145 @@
+User-agent: *
+Allow: /api/public/
+Allow: /
+Disallow: /dashboard
+Disallow: /admin
+Disallow: /staff
+Disallow: /api/
+Disallow: /auth
+Disallow: /saved
+Disallow: /profile
+
+User-agent: GPTBot
+Allow: /api/public/
+Allow: /
+Disallow: /dashboard
+Disallow: /admin
+Disallow: /staff
+Disallow: /api/
+Disallow: /auth
+Disallow: /saved
+Disallow: /profile
+
+User-agent: OAI-SearchBot
+Allow: /api/public/
+Allow: /
+Disallow: /dashboard
+Disallow: /admin
+Disallow: /staff
+Disallow: /api/
+Disallow: /auth
+Disallow: /saved
+Disallow: /profile
+
+User-agent: ChatGPT-User
+Allow: /api/public/
+Allow: /
+Disallow: /dashboard
+Disallow: /admin
+Disallow: /staff
+Disallow: /api/
+Disallow: /auth
+Disallow: /saved
+Disallow: /profile
+
+User-agent: ClaudeBot
+Allow: /api/public/
+Allow: /
+Disallow: /dashboard
+Disallow: /admin
+Disallow: /staff
+Disallow: /api/
+Disallow: /auth
+Disallow: /saved
+Disallow: /profile
+
+User-agent: Claude-User
+Allow: /api/public/
+Allow: /
+Disallow: /dashboard
+Disallow: /admin
+Disallow: /staff
+Disallow: /api/
+Disallow: /auth
+Disallow: /saved
+Disallow: /profile
+
+User-agent: Claude-SearchBot
+Allow: /api/public/
+Allow: /
+Disallow: /dashboard
+Disallow: /admin
+Disallow: /staff
+Disallow: /api/
+Disallow: /auth
+Disallow: /saved
+Disallow: /profile
+
+User-agent: PerplexityBot
+Allow: /api/public/
+Allow: /
+Disallow: /dashboard
+Disallow: /admin
+Disallow: /staff
+Disallow: /api/
+Disallow: /auth
+Disallow: /saved
+Disallow: /profile
+
+User-agent: Perplexity-User
+Allow: /api/public/
+Allow: /
+Disallow: /dashboard
+Disallow: /admin
+Disallow: /staff
+Disallow: /api/
+Disallow: /auth
+Disallow: /saved
+Disallow: /profile
+
+User-agent: Google-Extended
+Allow: /api/public/
+Allow: /
+Disallow: /dashboard
+Disallow: /admin
+Disallow: /staff
+Disallow: /api/
+Disallow: /auth
+Disallow: /saved
+Disallow: /profile
+
+User-agent: Applebot-Extended
+Allow: /api/public/
+Allow: /
+Disallow: /dashboard
+Disallow: /admin
+Disallow: /staff
+Disallow: /api/
+Disallow: /auth
+Disallow: /saved
+Disallow: /profile
+
+User-agent: Bingbot
+Allow: /api/public/
+Allow: /
+Disallow: /dashboard
+Disallow: /admin
+Disallow: /staff
+Disallow: /api/
+Disallow: /auth
+Disallow: /saved
+Disallow: /profile
+
+User-agent: Googlebot
+Allow: /api/public/
+Allow: /
+Disallow: /dashboard
+Disallow: /admin
+Disallow: /staff
+Disallow: /api/
+Disallow: /auth
+Disallow: /saved
+Disallow: /profile
+
+Sitemap: https://collegestat.xyz/sitemap.xml
+# Machine-readable overview: https://collegestat.xyz/llms.txt

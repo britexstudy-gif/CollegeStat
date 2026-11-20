@@ -16,6 +16,7 @@ for (const path of [
   "/research",
   "/auth/sign-in",
   "/staff/college-console",
+  "/staff/college-console/sign-in",
   "/sources",
   "/methodology",
   "/statistics",
@@ -32,7 +33,7 @@ for (const path of [
 }
 const ai = await fetch(base + "/api/research", {
   method: "POST",
-  headers: { "Content-Type": "application/json" },
+  headers: { "Content-Type": "application/json", Origin: base },
   body: JSON.stringify({ question: "What does MIT report about tuition?" }),
   signal: AbortSignal.timeout(timeoutMs),
 });
@@ -46,14 +47,14 @@ assert.ok(
 console.log("PASS grounded research API");
 const denied = await fetch(base + "/api/admin", {
   method: "POST",
-  headers: { "Content-Type": "application/json" },
+  headers: { "Content-Type": "application/json", Origin: base },
   body: "{}",
 });
 assert.equal(denied.status, 401);
 console.log("PASS unauthenticated admin denial");
 const filtered = await fetch(base + "/api/research", {
   method: "POST",
-  headers: { "Content-Type": "application/json" },
+  headers: { "Content-Type": "application/json", Origin: base },
   body: JSON.stringify({
     question:
       "Computer science universities in Europe under $20k with scholarships and IELTS 7.0 or lower",
@@ -68,7 +69,7 @@ assert.deepEqual(result.evidence, []);
 console.log("PASS constrained research excludes unsupported matches");
 const malformed = await fetch(base + "/api/research", {
   method: "POST",
-  headers: { "Content-Type": "application/json" },
+  headers: { "Content-Type": "application/json", Origin: base },
   body: "{",
 });
 assert.equal(malformed.status, 400);
@@ -82,12 +83,26 @@ console.log("PASS public SEO and response hardening");
 const missing = await fetch(base + "/university/no-such-university");
 assert.equal(missing.status, 404);
 console.log("PASS missing university is a real 404");
-const catalog = await (
-  await fetch(base + "/api/catalog?mode=explore&page=2")
-).json();
+const catalogResponse = await fetch(base + "/api/catalog?mode=explore&page=2");
+assert.equal(catalogResponse.status, 200, "Directory page 2 API must be available");
+const catalog = await catalogResponse.json();
 assert.equal(catalog.universities.length, 24);
-assert.ok(catalog.total >= 5000 && catalog.total <= 10000);
+assert.ok(catalog.total >= 5000 && catalog.total <= 20000);
 console.log("PASS expanded directory page 2");
+const homeCatalogueResponse = await fetch(base + "/api/catalog");
+assert.equal(homeCatalogueResponse.status, 200);
+const homeCatalogue = await homeCatalogueResponse.json();
+assert.equal(homeCatalogue.total, catalog.total);
+assert.ok(homeCatalogue.countries > 200);
+assert.ok(homeCatalogue.universities.length > 0);
+assert.ok(homeCatalogue.universities.length <= 12);
+assert.ok(homeCatalogue.scholarships.length > 0);
+for (const card of homeCatalogue.universities) {
+  assert.ok(card.id && card.slug && card.name);
+  assert.deepEqual(card.university_programs, []);
+  assert.deepEqual(card.research, []);
+}
+console.log("PASS lightweight homepage catalogue retains identities and coverage");
 const lookup = await (
   await fetch(base + "/api/catalog?mode=search&q=Harvard")
 ).json();
@@ -97,13 +112,26 @@ const expanded = await fetch(base + "/university/" + harvard.slug);
 assert.equal(expanded.status, 200);
 const expandedHTML = await expanded.text();
 assert.ok(expandedHTML.includes("Harvard University"));
-assert.ok(expandedHTML.includes("How to apply"));
-assert.ok(expandedHTML.includes("ShanghaiRanking"));
-assert.ok(expandedHTML.includes("/logos/applications/common-app.svg"));
+assert.ok(expandedHTML.includes('id="section-Admissions"') && expandedHTML.includes('id="section-Academics"'));
+const expandedRankings = await (
+  await fetch(base + "/university/" + harvard.slug + "?tab=Rankings")
+).text();
+assert.ok(expandedRankings.includes("ShanghaiRanking"));
+const expandedApplications = await (
+  await fetch(base + "/university/" + harvard.slug + "?tab=Admissions")
+).text();
+assert.ok(expandedApplications.includes("/logos/applications/common-app.svg"));
 console.log("PASS downloaded profile and ranking badges render on server");
-const rankingRows = await (
-  await fetch(base + "/api/catalog?mode=rankings")
-).json();
+const nativeSearch = await fetch(
+  base + "/universities?interpret=1&q=Uzbekistan",
+);
+assert.equal(nativeSearch.status, 200);
+assert.equal(new URL(nativeSearch.url).pathname, "/universities");
+assert.equal(new URL(nativeSearch.url).searchParams.get("country"), "UZ");
+console.log("PASS hero search before client hydration preserves country filters");
+const rankingCatalogueResponse = await fetch(base + "/api/catalog?mode=rankings", { signal: AbortSignal.timeout(timeoutMs) });
+assert.equal(rankingCatalogueResponse.status, 200, "Ranking catalogue must respond successfully");
+const rankingRows = await rankingCatalogueResponse.json();
 assert.ok(rankingRows.length > 1400);
 console.log("PASS ranking catalogue");
 for (const asset of [
@@ -147,7 +175,7 @@ for (const [provider, total] of [
 const signIn = await (
   await fetch(base + "/auth/sign-in?next=%2Frankings%3Fprovider%3Dthe")
 ).text();
-assert.ok(signIn.includes("Back to browsing"));
+assert.ok(signIn.includes("Back to website"));
 console.log("PASS sign-in back navigation present");
 
 const smart = await (
@@ -179,8 +207,16 @@ assert.ok(mitData.research_identity);
 console.log("PASS profile research and program data");
 const home = await (await fetch(base + "/")).text();
 assert.ok(home.includes("University, country, or subject"));
-assert.ok(home.includes("Find scholarships and funding."));
-console.log("PASS direct home search and funding discovery");
+assert.ok(home.includes("Scholarships to explore."));
+assert.equal((home.match(/class="home-awards"/g) || []).length, 1);
+assert.ok(!home.includes('class="home-funding"'));
+assert.ok(home.includes("landing-admissions-routes"));
+assert.ok(home.includes('aria-label="Study destination"'));
+assert.ok(home.includes("Official guidance"));
+assert.ok(!home.includes("admission-studio-preview"));
+console.log(
+  "PASS direct home search, one scholarship section and official destination guidance",
+);
 for (const [tab, content] of [
   ["Admissions", "Application"],
   ["How to apply", "Application"],
@@ -188,8 +224,8 @@ for (const [tab, content] of [
   ["Scholarships", "Official funding programmes."],
   ["Academics", "course"],
   ["Research", "Research"],
-  ["Students", "ordinary week"],
-  ["Campus", "ordinary week"],
+  ["Students", "Official links for this profile"],
+  ["Campus", "Campus"],
   ["Sources", "Official links for this profile"],
 ]) {
   const r = await fetch(
@@ -208,7 +244,8 @@ const invalidGuide = await fetch(base + "/resources/no-such-guide");
 assert.equal(invalidGuide.status, 404);
 console.log("PASS invalid resource route is a real 404");
 assert.ok(
-  (await invalidGuide.text()).includes("/images/status/not-found-collage.webp"),
+  (await invalidGuide.text()).includes("recovery-map") &&
+    invalidGuide.status === 404,
 );
 const statusArtwork = await fetch(
   base + "/images/status/not-found-collage.webp",
@@ -241,17 +278,27 @@ const applyHTML = await (
   await fetch(base + "/university/mit?tab=Admissions")
 ).text();
 assert.ok(applyHTML.includes('aria-label="Application steps"'));
-assert.ok(applyHTML.includes("Requirements &amp; dates"));
+assert.ok(applyHTML.includes("Can you apply, and how?") && applyHTML.includes("Entry requirements"));
 assert.ok(!applyHTML.includes("/logos/applications/common-app.svg"));
 console.log("PASS own portal, ordered process, and requirements hierarchy");
-assert.ok(home.includes("/images/hero/blue-collage.webp"));
-// SSR intentionally shows the static poster until the browser checks motion preferences.
+assert.ok(home.includes("search-first-home"));
+assert.ok(!home.includes('src="/images/hero/blue-collage.webp"'));
+assert.ok(signIn.includes("oct09-campus") && signIn.includes("CC BY 3.0"), "Sign-in shows an actual attributed campus photograph");
+assert.ok(home.includes('aria-label="Switch to dark mode"'));
+const staffSignIn = await (
+  await fetch(base + "/staff/college-console/sign-in")
+).text();
+assert.ok(staffSignIn.includes("Staff sign in"));
+assert.ok(!staffSignIn.includes('href="/auth/sign-up'));
+// The approved artwork remains available for authentication without loading on the landing page.
 const collage = await fetch(base + "/images/hero/blue-collage-loop.mp4", {
   headers: { Range: "bytes=0-1023" },
 });
 assert.ok([200, 206].includes(collage.status));
 assert.ok(collage.headers.get("content-type")?.includes("video/mp4"));
-console.log("PASS restored blue collage and animation asset");
+console.log(
+  "PASS search-first landing, theme control and separate staff sign-in",
+);
 const compareHTML = await (
   await fetch(base + "/compare?ids=" + mitData.id + "," + harvard.id)
 ).text();
@@ -270,16 +317,27 @@ assert.ok(
 console.log("PASS populated comparison before hydration");
 assert.ok(applyHTML.includes('role="tablist"'));
 assert.ok(!applyHTML.includes("View section"));
-assert.ok(applyHTML.includes("What to confirm for your application"));
+assert.ok(applyHTML.includes("Course and applicant category matter") && applyHTML.includes("Published minimums apply to the stated course and applicant group."));
 assert.ok(programs.includes("Filter programs by first letter"));
 assert.ok(programs.includes("Official program listings"));
 console.log("PASS compact sections, requirements planner, Programs filters");
-const directorySearchHTML = await (
-  await fetch(base + "/universities?q=pro")
-).text();
-assert.ok(directorySearchHTML.includes("Search:"));
+const directorySearchResponse = await fetch(base + "/universities?q=pro", {
+  signal: AbortSignal.timeout(timeoutMs),
+});
+assert.equal(
+  directorySearchResponse.status,
+  200,
+  "Search-query directory must render successfully before label assertions",
+);
+assert.equal(new URL(directorySearchResponse.url).searchParams.get("q"), "pro");
+const directorySearchHTML = await directorySearchResponse.text();
+assert.match(
+  directorySearchHTML,
+  /<div class="active-filters"><button[^>]*>Search: “pro”</,
+  "Server HTML must retain the query as a readable, removable search chip",
+);
 assert.ok(!directorySearchHTML.includes("q: pro"));
-console.log("PASS readable search selection labels");
+console.log("PASS readable search selection labels before hydration");
 const oxfordApply = await (
   await fetch(base + "/university/oxford?tab=Admissions")
 ).text();

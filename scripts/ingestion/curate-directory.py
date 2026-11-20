@@ -3,9 +3,13 @@
 Run build-global.py first. Exact country + website joins only; no fuzzy merging.
 Each released directory preserves prior IDs/slugs when matched.
 """
-import csv, datetime, hashlib, io, json, pathlib, re, urllib.parse, uuid, zipfile
+import collections, csv, datetime, hashlib, io, json, pathlib, re, sys, urllib.parse, uuid, zipfile
 ROOT=pathlib.Path(__file__).resolve().parents[2]; RAW=ROOT/'data/raw'; OUT=ROOT/'data/published'
 TODAY=datetime.datetime.now(datetime.timezone.utc).date().isoformat()
+skipped_values=collections.Counter(); skipped_examples={}
+def log_skipped(field, raw):
+ key=f"{field}:{str(raw)[:40]}"; skipped_values[key]+=1
+ if key not in skipped_examples and len(skipped_examples)<50: skipped_examples[key]=raw
 def host(url):
  try:return (urllib.parse.urlparse(url if '://' in url else 'https://'+url).hostname or '').lower().removeprefix('www.')
  except ValueError:return ''
@@ -18,9 +22,16 @@ def rows(t):
   return list(csv.DictReader(io.TextIOWrapper(z.open(n),encoding='utf-8-sig',errors='replace')))
 def num(r,f,flag):
  if r.get(flag,'').strip() not in ['R','Z']:return None
+ raw=r.get(f)
+ if raw is None: log_skipped(f, raw); return None
+ s=str(raw).strip().replace(',','').replace('\xa0','').strip()
+ if not s or s in ('–','—','-','N/A','NA','n/a','NULL','null','PrivacySuppressed',''):
+  log_skipped(f, raw); return None
  try:
-  n=float(r[f]);return n if n>=0 else None
- except (ValueError,KeyError):return None
+  n=float(s);
+  if n<0: log_skipped(f, raw); return None
+  return n
+ except (ValueError,KeyError,TypeError): log_skipped(f, raw); return None
 p=RAW/'ror/v2.13-2026-09-22-ror-data.zip'
 assert hashlib.md5(p.read_bytes()).hexdigest()=='a935217de21e7983b977f5419f1a6b20','ROR checksum mismatch'
 with zipfile.ZipFile(p) as z: ror=json.loads(z.read(next(n for n in z.namelist() if n.endswith('.json'))))
@@ -90,3 +101,4 @@ assert 5000<=len(result)<=10000, f'Curated count outside requested bounds: {len(
 (OUT/'directory-countries.json').write_text(json.dumps(dict(sorted({r['country_code']:r['country'] for r in result}.items())),indent=2)+'\n')
 manifest=dict(source='ROR + IPEDS',retrieved_at=TODAY,ror_release='2.13 · 2026-09-22',ror_doi='https://doi.org/10.5281/zenodo.22902037',ror_license='CC0',institutions=len(result),catalogue_total=len(result)+sum(not any(u['id']==r for u in result) for r in refs),countries=len({r['country_code'] for r in result}),ror_linked=len(seen_ror),ipeds_linked=len(seen_unit),ipeds_year=2025,admissions_year=2024,identity_note='Active ROR Education records corroborated by exact country and official host, plus active IPEDS degree-granting four-year institutions and reviewed reference profiles. Registry inclusion is not accreditation.',sha256=hashlib.sha256((OUT/'global-directory.json').read_bytes()).hexdigest())
 (OUT/'directory-manifest.json').write_text(json.dumps(manifest,indent=2)+'\n');print(json.dumps(manifest,indent=2))
+if skipped_values: print(json.dumps({"skipped_numeric_values":dict(skipped_values),"skipped_examples":skipped_examples},indent=2),file=sys.stderr)

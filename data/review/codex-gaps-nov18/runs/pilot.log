@@ -1,0 +1,69 @@
+OpenAI Codex v0.169.0
+--------
+workdir: /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+model: gpt-6-luna
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: high
+reasoning summaries: none
+session id: 01a1ee76-647b-7d02-99e7-d2568143e145
+--------
+user
+You are a careful admissions-data researcher. For each university below, find facts for an
+INTERNATIONAL applicant to a FIRST-YEAR BACHELOR'S degree starting in autumn 2027 (or the nearest
+published cycle). Use the live web. Rules:
+
+- Official sources only: the university's own website (its domain or subdomains), the national
+  application service (UCAS, Common App, OUAC, uni-assist, Studyinkorea, etc.) or a government
+  statistics office. Never use rankings sites, forums, agencies, Wikipedia or blogs.
+- Every value needs the exact page URL where you read it (source_url). If you could not verify a
+  value on an official page, leave it out (null or an empty list). Never guess or estimate.
+- english: the lowest overall score accepted for undergraduate entry, per test (IELTS Academic
+  overall, TOEFL iBT total, Duolingo, PTE). If programmes differ, give the general/lowest common
+  university minimum and say so in detail (e.g. "6.5 overall, no band below 6.0; some
+  programmes higher").
+- tuition: the yearly tuition for international (non-EU / overseas) undergraduates in the local
+  currency. If it varies by programme give amount = lowest and amount_max = highest, and the
+  academic_year the fee applies to (e.g. "2026/27"). If tuition is free, amount = 0.
+- application_fee: for international first-year applicants, local currency.
+- deadlines: the main 2027-entry first-year deadlines (ISO date YYYY-MM-DD) with the route
+  (e.g. "Common App, Regular Decision", "UCAS", "university portal"). Only dates actually
+  published; if only the 2026-entry date is published, include it and put "2026 entry" in title.
+- sat: policy for international applicants; p25/p75 total SAT only if the university publishes
+  them (Common Data Set or admissions profile).
+- acceptance_rate: only if officially published (CDS, admissions statistics page).
+- notes: one short line on anything important (e.g. "Foundation year required for 11-year
+  school certificates"), else "".
+
+Spend effort on the facts students need most: English minimum, tuition, deadlines. Keep each
+detail under 160 characters. Return only the JSON that matches the schema; use each
+university's id exactly as given.
+
+Universities:
+- id: b48ecdd6-9331-5ee8-a4ad-7f5b046d5356 | McGill University | Montreal, CA | https://www.mcgill.ca
+- id: fe2070ba-9e66-590c-b67f-3cef2d8983b4 | Ruprecht-Karls-Universität Heidelberg | Heidelberg, DE | http://www.uni-heidelberg.de/
+- id: 6a9e2556-fc5f-56a2-bca0-9364f099818c | Seoul National University | Seoul, KR | http://www.snu.ac.kr/
+codex
+I’m checking each university’s official admissions and fee pages, prioritizing international undergraduate English requirements, tuition, and published entry dates.
+web search: 
+web search: site:mcgill.ca undergraduate international applicants English proficiency tuition 2026 2027 application deadline 2027 ...
+web search: 
+web search: site:mcgill.ca/undergraduate-admissions "Fall 2027" international deadlines application fee tuition ...
+web search: 
+web search: site:mcgill.ca/undergraduate-admissions/apply/requirements/international "January 15" "March 1" ...
+web search: 
+web search: site:uni-heidelberg.de/en/study/application-enrolment bachelor international "July 15" ...
+web search: 
+web search: 
+web search: 
+web search: 'Bachelor of Arts (BA)'
+web search: 
+web search: 
+web search: 
+web search: site:uni-heidelberg.de "does not charge application fees" Heidelberg application ...
+codex
+{"universities":[{"id":"b48ecdd6-9331-5ee8-a4ad-7f5b046d5356","english":[{"test":"IELTS","minimum":6.5,"detail":"6.5 overall, no component below 6.0.","source_url":"https://www.mcgill.ca/undergraduate-admissions/apply/english-proficiency"},{"test":"TOEFL iBT","minimum":79,"detail":"Lowest program minimum: 79–80 (Music); other undergraduate programs generally require 90 or more. New scale: Music 4.0.","source_url":"https://www.mcgill.ca/undergraduate-admissions/apply/english-proficiency"},{"test":"Duolingo","minimum":125,"detail":"125 overall; B.Ed. TESL and B.Com. require 130.","source_url":"https://www.mcgill.ca/undergraduate-admissions/apply/english-proficiency"},{"test":"PTE Academic","minimum":65,"detail":"65 overall, no component below 60.","source_url":"https://www.mcgill.ca/undergraduate-admissions/apply/english-proficiency"}],"tuition":{"amount":35561.1,"amount_max":74678.31,"currency":"CAD","period":"year","academic_year":"2026/27","detail":"Program-dependent annual tuition only; published rates for new international undergraduates, excluding other fees.","source_url":"https://www.mcgill.ca/student-accounts/files/student-accounts/new_intl_ugrad_degree_students_admitted_2026-27.pdf"},"application_fee":{"amount":140.16,"currency":"CAD","source_url":"https://www.mcgill.ca/student-accounts/tuition-fees/non-tuition-charges/other"},"deadlines":[{"title":"2027 entry application deadline","due_at":"2027-01-15","route":"McGill application portal","source_url":"https://www.mcgill.ca/undergraduate-admissions/files/undergraduate-admissions/insert-row-2027_final_oct_15.pdf"},{"title":"2027 entry supporting documents, if required","due_at":"2027-03-01","route":"McGill applicant portal","source_url":"https://www.mcgill.ca/undergraduate-admissions/files/undergraduate-admissions/insert-row-2027_final_oct_15.pdf"}],"sat":null,"acceptance_rate":null,"notes":""},{"id":"fe2070ba-9e66-590c-b67f-3cef2d8983b4","english":[],"tuition":{"amount":3000,"amount_max":3000,"currency":"EUR","period":"year","academic_year":"2026/27","detail":"Non-EU/EEA international students pay €1,500 per semester for bachelor's programmes; annual amount is two semesters.","source_url":"https://www.uni-heidelberg.de/en/study/management-of-studies/semester-fees/tuition-fees-for-international-students"},"application_fee":{"amount":0,"currency":"EUR","source_url":"https://www.sai.uni-heidelberg.de/en/study-at-sai/start-your-application-now"},"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"Undergraduate programmes are generally taught in German; very good German proficiency, usually DSH-2, is required."},{"id":"6a9e2556-fc5f-56a2-bca0-9364f099818c","english":[{"test":"IELTS","minimum":6,"detail":"IELTS Academic 6.0 or higher; English proficiency is one of the accepted ways to meet the language-proof requirement.","source_url":"https://en.snu.ac.kr/webdata/uploads/eng/file/2026/01/Admissions_for_Undergraduate_Fall_2026.pdf"},{"test":"TOEFL iBT","minimum":80,"detail":"80 total, or 4.0 for tests taken from January 21, 2026; English proficiency is one accepted language-proof option.","source_url":"https://en.snu.ac.kr/webdata/uploads/eng/file/2026/01/Admissions_for_Undergraduate_Fall_2026.pdf"}],"tuition":{"amount":4884000,"amount_max":10076000,"currency":"KRW","period":"year","academic_year":"2026","detail":"Annualized from the 2026 per-semester undergraduate tuition table; programme rates range from KRW 2,442,000 to 5,038,000 per semester.","source_url":"https://en.snu.ac.kr/webdata/uploads/eng/file/2026/01/Admissions_for_Undergraduate_Fall_2026.pdf"},"application_fee":{"amount":70000,"currency":"KRW","source_url":"https://en.snu.ac.kr/admission/overview/faq/admission"},"deadlines":[{"title":"2026 Fall entry application closes","due_at":"2026-03-05","route":"SNU Office of Admissions online application","source_url":"https://en.snu.ac.kr/admission/overview/notice?bbsidx=164704&md=v"}],"sat":{"policy":"optional","p25":null,"p75":null,"source_url":"https://en.snu.ac.kr/webdata/uploads/eng/file/2026/01/Admissions_for_Undergraduate_Fall_2026.pdf"},"acceptance_rate":null,"notes":"Fall 2027 dates were not published; deadline shown is for the nearest published fall cycle, 2026."}] }
+tokens used
+88,965
+{"universities":[{"id":"b48ecdd6-9331-5ee8-a4ad-7f5b046d5356","english":[{"test":"IELTS","minimum":6.5,"detail":"6.5 overall, no component below 6.0.","source_url":"https://www.mcgill.ca/undergraduate-admissions/apply/english-proficiency"},{"test":"TOEFL iBT","minimum":79,"detail":"Lowest program minimum: 79–80 (Music); other undergraduate programs generally require 90 or more. New scale: Music 4.0.","source_url":"https://www.mcgill.ca/undergraduate-admissions/apply/english-proficiency"},{"test":"Duolingo","minimum":125,"detail":"125 overall; B.Ed. TESL and B.Com. require 130.","source_url":"https://www.mcgill.ca/undergraduate-admissions/apply/english-proficiency"},{"test":"PTE Academic","minimum":65,"detail":"65 overall, no component below 60.","source_url":"https://www.mcgill.ca/undergraduate-admissions/apply/english-proficiency"}],"tuition":{"amount":35561.1,"amount_max":74678.31,"currency":"CAD","period":"year","academic_year":"2026/27","detail":"Program-dependent annual tuition only; published rates for new international undergraduates, excluding other fees.","source_url":"https://www.mcgill.ca/student-accounts/files/student-accounts/new_intl_ugrad_degree_students_admitted_2026-27.pdf"},"application_fee":{"amount":140.16,"currency":"CAD","source_url":"https://www.mcgill.ca/student-accounts/tuition-fees/non-tuition-charges/other"},"deadlines":[{"title":"2027 entry application deadline","due_at":"2027-01-15","route":"McGill application portal","source_url":"https://www.mcgill.ca/undergraduate-admissions/files/undergraduate-admissions/insert-row-2027_final_oct_15.pdf"},{"title":"2027 entry supporting documents, if required","due_at":"2027-03-01","route":"McGill applicant portal","source_url":"https://www.mcgill.ca/undergraduate-admissions/files/undergraduate-admissions/insert-row-2027_final_oct_15.pdf"}],"sat":null,"acceptance_rate":null,"notes":""},{"id":"fe2070ba-9e66-590c-b67f-3cef2d8983b4","english":[],"tuition":{"amount":3000,"amount_max":3000,"currency":"EUR","period":"year","academic_year":"2026/27","detail":"Non-EU/EEA international students pay €1,500 per semester for bachelor's programmes; annual amount is two semesters.","source_url":"https://www.uni-heidelberg.de/en/study/management-of-studies/semester-fees/tuition-fees-for-international-students"},"application_fee":{"amount":0,"currency":"EUR","source_url":"https://www.sai.uni-heidelberg.de/en/study-at-sai/start-your-application-now"},"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"Undergraduate programmes are generally taught in German; very good German proficiency, usually DSH-2, is required."},{"id":"6a9e2556-fc5f-56a2-bca0-9364f099818c","english":[{"test":"IELTS","minimum":6,"detail":"IELTS Academic 6.0 or higher; English proficiency is one of the accepted ways to meet the language-proof requirement.","source_url":"https://en.snu.ac.kr/webdata/uploads/eng/file/2026/01/Admissions_for_Undergraduate_Fall_2026.pdf"},{"test":"TOEFL iBT","minimum":80,"detail":"80 total, or 4.0 for tests taken from January 21, 2026; English proficiency is one accepted language-proof option.","source_url":"https://en.snu.ac.kr/webdata/uploads/eng/file/2026/01/Admissions_for_Undergraduate_Fall_2026.pdf"}],"tuition":{"amount":4884000,"amount_max":10076000,"currency":"KRW","period":"year","academic_year":"2026","detail":"Annualized from the 2026 per-semester undergraduate tuition table; programme rates range from KRW 2,442,000 to 5,038,000 per semester.","source_url":"https://en.snu.ac.kr/webdata/uploads/eng/file/2026/01/Admissions_for_Undergraduate_Fall_2026.pdf"},"application_fee":{"amount":70000,"currency":"KRW","source_url":"https://en.snu.ac.kr/admission/overview/faq/admission"},"deadlines":[{"title":"2026 Fall entry application closes","due_at":"2026-03-05","route":"SNU Office of Admissions online application","source_url":"https://en.snu.ac.kr/admission/overview/notice?bbsidx=164704&md=v"}],"sat":{"policy":"optional","p25":null,"p75":null,"source_url":"https://en.snu.ac.kr/webdata/uploads/eng/file/2026/01/Admissions_for_Undergraduate_Fall_2026.pdf"},"acceptance_rate":null,"notes":"Fall 2027 dates were not published; deadline shown is for the nearest published fall cycle, 2026."}] }

@@ -1,0 +1,88 @@
+{
+  "universities": 204,
+  "verified_records": 140,
+  "fields": {
+    "ielts": {
+      "filled": 48,
+      "verified": 44,
+      "parsed": 18,
+      "of": 204,
+      "filled_pct": 23.5,
+      "verified_pct": 21.6
+    },
+    "toefl": {
+      "filled": 39,
+      "verified": 36,
+      "parsed": 11,
+      "of": 204,
+      "filled_pct": 19.1,
+      "verified_pct": 17.6
+    },
+    "duolingo": {
+      "filled": 11,
+      "verified": 11,
+      "of": 204,
+      "filled_pct": 5.4,
+      "verified_pct": 5.4
+    },
+    "english_waivers": {
+      "filled": 58,
+      "verified": 49,
+      "of": 204,
+      "filled_pct": 28.4,
+      "verified_pct": 24
+    },
+    "application_route": {
+      "filled": 129,
+      "verified": 122,
+      "of": 204,
+      "filled_pct": 63.2,
+      "verified_pct": 59.8
+    },
+    "application_fee": {
+      "filled": 49,
+      "verified": 46,
+      "parsed": 40,
+      "of": 204,
+      "filled_pct": 24,
+      "verified_pct": 22.5
+    },
+    "deadlines": {
+      "filled": 94,
+      "verified": 89,
+      "parsed": 14,
+      "of": 204,
+      "filled_pct": 46.1,
+      "verified_pct": 43.6
+    },
+    "tuition": {
+      "filled": 86,
+      "verified": 77,
+      "parsed": 26,
+      "of": 204,
+      "filled_pct": 42.2,
+      "verified_pct": 37.7
+    },
+    "aid": {
+      "filled": 120,
+      "verified": 61,
+      "of": 204,
+      "filled_pct": 58.8,
+      "verified_pct": 29.9
+    },
+    "central_asian_scholarship": {
+      "filled": 0,
+      "verified": 0,
+      "of": 204,
+      "filled_pct": 0,
+      "verified_pct": 0
+    },
+    "foundation_year": {
+      "filled": 92,
+      "verified": 41,
+      "of": 204,
+      "filled_pct": 45.1,
+      "verified_pct": 20.1
+    }
+  }
+}

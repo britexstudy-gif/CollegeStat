@@ -1,0 +1,881 @@
+[
+ {
+  "id": "6a9e2556-fc5f-56a2-bca0-9364f099818c",
+  "slug": "seoul-national-university-6a9e2556",
+  "name": "Seoul National University",
+  "city": "Seoul",
+  "website": "http://www.snu.ac.kr/",
+  "country_code": "KR",
+  "qs": 38,
+  "have": {
+   "english": false,
+   "tuition": false,
+   "deadline": false
+  }
+ },
+ {
+  "id": "8e191d89-10ba-5f03-913b-836c9c7194a0",
+  "slug": "universite-paris-saclay-8e191d89",
+  "name": "Université Paris-Saclay",
+  "city": "Gif-sur-Yvette",
+  "website": "https://www.universite-paris-saclay.fr/",
+  "country_code": "FR",
+  "qs": 70,
+  "have": {
+   "english": false,
+   "tuition": false,
+   "deadline": false
+  }
+ },
+ {
+  "id": "dce3ec59-808e-5353-8d69-da5e8e8e29fe",
+  "slug": "king-saud-university-dce3ec59",
+  "name": "King Saud University",
+  "city": "Riyadh",
+  "website": "http://www.ksu.edu.sa/",
+  "country_code": "SA",
+  "qs": 107,
+  "have": {
+   "english": false,
+   "tuition": false,
+   "deadline": false
+  }
+ },
+ {
+  "id": "04c4aef9-ef8e-5981-ba20-50039aeceef5",
+  "slug": "universiti-kebangsaan-malaysia-04c4aef9",
+  "name": "Universiti Kebangsaan Malaysia",
+  "city": "Bangi",
+  "website": "http://www.ukm.my/",
+  "country_code": "MY",
+  "qs": 126,
+  "have": {
+   "english": false,
+   "tuition": false,
+   "deadline": false
+  }
+ },
+ {
+  "id": "835b45a6-e652-5e5e-937b-c365bb1d8e7a",
+  "slug": "eindhoven-university-of-technology-835b45a6",
+  "name": "Eindhoven University of Technology",
+  "city": "Eindhoven",
+  "website": "http://www.tue.nl/",
+  "country_code": "NL",
+  "qs": 140,
+  "have": {
+   "english": false,
+   "tuition": false,
+   "deadline": false
+  }
+ },
+ {
+  "id": "cb8de211-5171-53eb-b568-a641f586fa0a",
+  "slug": "al-farabi-kazakh-national-university-cb8de211",
+  "name": "Al-Farabi Kazakh National University",
+  "city": "Almaty",
+  "website": "https://farabi.university",
+  "country_code": "KZ",
+  "qs": 166,
+  "have": {
+   "english": false,
+   "tuition": false,
+   "deadline": false
+  }
+ },
+ {
+  "id": "a2f62835-d825-5217-8e59-90ad384c3f8c",
+  "slug": "indian-institute-of-technology-madras-a2f62835",
+  "name": "Indian Institute of Technology, Madras",
+  "city": "Chennai",
+  "website": "http://www.iitm.ac.in/",
+  "country_code": "IN",
+  "qs": 170,
+  "have": {
+   "english": false,
+   "tuition": false,
+   "deadline": false
+  }
+ },
+ {
+  "id": "bb49d73c-e3e8-5fa0-ad66-319e24608e25",
+  "slug": "universitat-autonoma-de-barcelona-bb49d73c",
+  "name": "Universitat Autònoma de Barcelona",
+  "city": "Cerdanyola del Vallès",
+  "website": "https://www.uab.cat",
+  "country_code": "ES",
+  "qs": 172,
+  "have": {
+   "english": false,
+   "tuition": false,
+   "deadline": false
+  }
+ },
+ {
+  "id": "1b35aa93-a1de-5a99-8c88-dd9613317e0f",
+  "slug": "tecnologico-de-monterrey-1b35aa93",
+  "name": "Tecnologico de Monterrey",
+  "city": "Monterrey",
+  "website": "https://www.tec.mx/",
+  "country_code": "MX",
+  "qs": 187,
+  "have": {
+   "english": false,
+   "tuition": false,
+   "deadline": false
+  }
+ },
+ {
+  "id": "575d5e9a-f98a-5ec3-bea3-7f7b8c05100a",
+  "slug": "louvain-school-of-management-575d5e9a",
+  "name": "Louvain School of Management",
+  "city": "Louvain-la-Neuve",
+  "website": "https://uclouvain.be/",
+  "country_code": "BE",
+  "qs": 191,
+  "have": {
+   "english": false,
+   "tuition": false,
+   "deadline": false
+  }
+ },
+ {
+  "id": "48888524-717e-5143-90bf-457f3f85ba30",
+  "slug": "ecole-normale-superieure-de-lyon-48888524",
+  "name": "Ecole Normale Supérieure de Lyon",
+  "city": "Lyon",
+  "website": "http://www.ens-lyon.fr/",
+  "country_code": "FR",
+  "qs": 205,
+  "have": {
+   "english": false,
+   "tuition": false,
+   "deadline": false
+  }
+ },
+ {
+  "id": "b719e149-7073-5173-a435-791b55891294",
+  "slug": "universite-de-lausanne-b719e149",
+  "name": "Université de Lausanne",
+  "city": "Lausanne",
+  "website": "http://www.unil.ch/",
+  "country_code": "CH",
+  "qs": 212,
+  "have": {
+   "english": false,
+   "tuition": false,
+   "deadline": false
+  }
+ },
+ {
+  "id": "fa22ef60-0123-584c-b367-cc48cff224d1",
+  "slug": "indian-institute-of-technology-kanpur-fa22ef60",
+  "name": "Indian Institute of Technology, Kanpur",
+  "city": "Kanpur",
+  "website": "http://www.iitk.ac.in/",
+  "country_code": "IN",
+  "qs": 221,
+  "have": {
+   "english": false,
+   "tuition": false,
+   "deadline": false
+  }
+ },
+ {
+  "id": "32d95a2a-7d14-572d-8c70-bc04da01f060",
+  "slug": "central-european-university-32d95a2a",
+  "name": "Central European University",
+  "city": "Vienna",
+  "website": "https://www.ceu.edu",
+  "country_code": "AT",
+  "qs": 239,
+  "have": {
+   "english": false,
+   "tuition": false,
+   "deadline": false
+  }
+ },
+ {
+  "id": "fab44467-aa34-5204-9560-df00c2dec3d1",
+  "slug": "norwegian-university-of-science-and-technology-fab44467",
+  "name": "Norwegian University of Science and Technology",
+  "city": "Trondheim",
+  "website": "https://www.ntnu.edu",
+  "country_code": "NO",
+  "qs": 264,
+  "have": {
+   "english": false,
+   "tuition": false,
+   "deadline": false
+  }
+ },
+ {
+  "id": "29507709-c065-51f2-a63d-22ecc1ac26e4",
+  "slug": "university-of-warsaw-29507709",
+  "name": "University of Warsaw",
+  "city": "Warsaw",
+  "website": "http://en.uw.edu.pl/",
+  "country_code": "PL",
+  "qs": 271,
+  "have": {
+   "english": false,
+   "tuition": false,
+   "deadline": false
+  }
+ },
+ {
+  "id": "bdb1f2b9-ffd0-5bac-9ba5-ca63a083289b",
+  "slug": "sultan-qaboos-university-bdb1f2b9",
+  "name": "Sultan Qaboos University",
+  "city": "Muscat",
+  "website": "http://www.squ.edu.om/",
+  "country_code": "OM",
+  "qs": 306,
+  "have": {
+   "english": false,
+   "tuition": false,
+   "deadline": false
+  }
+ },
+ {
+  "id": "7e74da55-7ed1-58a0-b41c-7eed8b466241",
+  "slug": "huazhong-university-of-science-and-technology-7e74da55",
+  "name": "Huazhong University of Science and Technology",
+  "city": "Wuhan",
+  "website": "http://english.hust.edu.cn/",
+  "country_code": "CN",
+  "qs": 307,
+  "have": {
+   "english": false,
+   "tuition": false,
+   "deadline": false
+  }
+ },
+ {
+  "id": "0991bacc-e0e4-576f-b984-074ecc122260",
+  "slug": "bauman-moscow-state-technical-university-0991bacc",
+  "name": "Bauman Moscow State Technical University",
+  "city": "Moscow",
+  "website": "http://www.bmstu.ru/",
+  "country_code": "RU",
+  "qs": 318,
+  "have": {
+   "english": false,
+   "tuition": false,
+   "deadline": false
+  }
+ },
+ {
+  "id": "1848c4c4-1bfb-5ae4-8322-6fda3dca4e50",
+  "slug": "koc-university-1848c4c4",
+  "name": "Koç University",
+  "city": "Istanbul",
+  "website": "http://www.ku.edu.tr/",
+  "country_code": "TR",
+  "qs": 323,
+  "have": {
+   "english": false,
+   "tuition": false,
+   "deadline": false
+  }
+ },
+ {
+  "id": "f951261f-1498-5510-9a26-1b64120fa020",
+  "slug": "university-of-jordan-f951261f",
+  "name": "University of Jordan",
+  "city": "Amman",
+  "website": "http://www.ju.edu.jo/",
+  "country_code": "JO",
+  "qs": 324,
+  "have": {
+   "english": false,
+   "tuition": false,
+   "deadline": false
+  }
+ },
+ {
+  "id": "a4ecb670-c223-553e-9d94-8c332adeb6a6",
+  "slug": "pontificia-universidad-catolica-del-peru-a4ecb670",
+  "name": "Pontificia Universidad Católica del Perú",
+  "city": "Lima",
+  "website": "http://www.pucp.edu.pe/",
+  "country_code": "PE",
+  "qs": 345,
+  "have": {
+   "english": false,
+   "tuition": false,
+   "deadline": false
+  }
+ },
+ {
+  "id": "167202e2-fb1f-5826-858e-0f841dfdacdf",
+  "slug": "cairo-university-167202e2",
+  "name": "Cairo University",
+  "city": "Giza",
+  "website": "http://www.cu.edu.eg/",
+  "country_code": "EG",
+  "qs": 347,
+  "have": {
+   "english": false,
+   "tuition": false,
+   "deadline": false
+  }
+ },
+ {
+  "id": "f35c594a-8de3-586d-b5a0-d2fa7eeacfe3",
+  "slug": "national-technical-university-of-athens-f35c594a",
+  "name": "National Technical University of Athens",
+  "city": "Athens",
+  "website": "https://www.ntua.gr/",
+  "country_code": "GR",
+  "qs": 355,
+  "have": {
+   "english": false,
+   "tuition": false,
+   "deadline": false
+  }
+ },
+ {
+  "id": "08d9be02-dd4b-5552-97ea-0017b28c332a",
+  "slug": "university-of-chinese-academy-of-sciences-08d9be02",
+  "name": "University of Chinese Academy of Sciences",
+  "city": "Beijing",
+  "website": "https://www.ucas.ac.cn",
+  "country_code": "CN",
+  "qs": 360,
+  "have": {
+   "english": false,
+   "tuition": false,
+   "deadline": false
+  }
+ },
+ {
+  "id": "f7f62a89-8455-5330-9cce-03f76a563dfc",
+  "slug": "pontificia-universidad-javeriana-f7f62a89",
+  "name": "Pontificia Universidad Javeriana",
+  "city": "Bogotá",
+  "website": "http://www.javeriana.edu.co/",
+  "country_code": "CO",
+  "qs": 371,
+  "have": {
+   "english": false,
+   "tuition": false,
+   "deadline": false
+  }
+ },
+ {
+  "id": "d827b4d9-5b8a-506f-abac-df3437f6347a",
+  "slug": "st-petersburg-state-university-d827b4d9",
+  "name": "St. Petersburg State University",
+  "city": "St Petersburg",
+  "website": "http://www.spbu.ru/",
+  "country_code": "RU",
+  "qs": 375,
+  "have": {
+   "english": false,
+   "tuition": false,
+   "deadline": false
+  }
+ },
+ {
+  "id": "5e2c8d0e-394c-543b-9d2e-2176866fd088",
+  "slug": "sharif-university-of-technology-5e2c8d0e",
+  "name": "Sharif University of Technology",
+  "city": "Tehran",
+  "website": "https://www.sharif.ir",
+  "country_code": "IR",
+  "qs": 375,
+  "have": {
+   "english": false,
+   "tuition": false,
+   "deadline": false
+  }
+ },
+ {
+  "id": "4780798a-9a67-5765-a85f-86a0a1501d14",
+  "slug": "institut-national-des-sciences-appliquees-de-lyon-4780798a",
+  "name": "Institut National des Sciences Appliquées de Lyon",
+  "city": "Lyon",
+  "website": "http://www.insa-lyon.fr/",
+  "country_code": "FR",
+  "qs": 406,
+  "have": {
+   "english": false,
+   "tuition": false,
+   "deadline": false
+  }
+ },
+ {
+  "id": "0c725fbe-d8f6-5985-ba7b-5538434ff8a2",
+  "slug": "universitat-ramon-llull-0c725fbe",
+  "name": "Universitat Ramon Llull",
+  "city": "Barcelona",
+  "website": "https://www.url.edu",
+  "country_code": "ES",
+  "qs": 436,
+  "have": {
+   "english": false,
+   "tuition": false,
+   "deadline": false
+  }
+ },
+ {
+  "id": "c17e90b9-27b3-5cfa-ae44-689fb73156db",
+  "slug": "belarusian-state-university-c17e90b9",
+  "name": "Belarusian State University",
+  "city": "Minsk",
+  "website": "https://bsu.by/",
+  "country_code": "BY",
+  "qs": 447,
+  "have": {
+   "english": false,
+   "tuition": false,
+   "deadline": false
+  }
+ },
+ {
+  "id": "1b1eb340-cc2a-5088-a2dd-a74fdeec85a0",
+  "slug": "jordan-university-of-science-and-technology-1b1eb340",
+  "name": "Jordan University of Science and Technology",
+  "city": "Irbid",
+  "website": "http://www.just.edu.jo/",
+  "country_code": "JO",
+  "qs": 449,
+  "have": {
+   "english": false,
+   "tuition": false,
+   "deadline": false
+  }
+ },
+ {
+  "id": "2a168154-1f87-5939-a46e-bd246659e517",
+  "slug": "shoolini-university-2a168154",
+  "name": "Shoolini University",
+  "city": "Solan",
+  "website": "https://shooliniuniversity.com",
+  "country_code": "IN",
+  "qs": 452,
+  "have": {
+   "english": false,
+   "tuition": false,
+   "deadline": false
+  }
+ },
+ {
+  "id": "34ebeddd-9eb9-50cc-8708-3d73ca7b863d",
+  "slug": "amirkabir-university-of-technology-34ebeddd",
+  "name": "Amirkabir University of Technology",
+  "city": "Tehran",
+  "website": "http://www.aut.ac.ir/",
+  "country_code": "IR",
+  "qs": 456,
+  "have": {
+   "english": false,
+   "tuition": false,
+   "deadline": false
+  }
+ },
+ {
+  "id": "c729cc19-397a-5cbd-840d-3fa6fcfc58eb",
+  "slug": "novosibirsk-state-university-c729cc19",
+  "name": "Novosibirsk State University",
+  "city": "Novosibirsk",
+  "website": "http://www.nsu.ru/",
+  "country_code": "RU",
+  "qs": 461,
+  "have": {
+   "english": false,
+   "tuition": false,
+   "deadline": false
+  }
+ },
+ {
+  "id": "44458433-4eb0-5724-86b1-f75137ac3c17",
+  "slug": "kyungpook-national-university-44458433",
+  "name": "Kyungpook National University",
+  "city": "Daegu",
+  "website": "https://knu.ac.kr",
+  "country_code": "KR",
+  "qs": 481,
+  "have": {
+   "english": false,
+   "tuition": false,
+   "deadline": false
+  }
+ },
+ {
+  "id": "6c498d0b-fbdf-59c8-9aa2-776be5789bea",
+  "slug": "duy-tan-university-6c498d0b",
+  "name": "Duy Tan University",
+  "city": "Da Nang",
+  "website": "https://duytan.edu.vn/",
+  "country_code": "VN",
+  "qs": 482,
+  "have": {
+   "english": false,
+   "tuition": false,
+   "deadline": false
+  }
+ },
+ {
+  "id": "f50f0b72-6c3f-50df-a463-900e49ac8db9",
+  "slug": "universiti-utara-malaysia-f50f0b72",
+  "name": "Universiti Utara Malaysia",
+  "city": "Jitra",
+  "website": "http://www.uum.edu.my/",
+  "country_code": "MY",
+  "qs": 491,
+  "have": {
+   "english": false,
+   "tuition": false,
+   "deadline": false
+  }
+ },
+ {
+  "id": "b2588f6b-9e0a-5529-b0ad-9707090f465e",
+  "slug": "iran-university-of-science-and-technology-tehran-b2588f6b",
+  "name": "Iran University of Science and Technology Tehran",
+  "city": "Tehran",
+  "website": "http://www.iust.ac.ir/",
+  "country_code": "IR",
+  "qs": 496,
+  "have": {
+   "english": false,
+   "tuition": false,
+   "deadline": false
+  }
+ },
+ {
+  "id": "67a8f8f0-5c6d-52ba-bb11-6c44a5ac56f1",
+  "slug": "abai-state-university-67a8f8f0",
+  "name": "Abai State University",
+  "city": "Almaty",
+  "website": "http://www.kaznpu.kz/",
+  "country_code": "KZ",
+  "qs": 634,
+  "have": {
+   "english": false,
+   "tuition": false,
+   "deadline": false
+  }
+ },
+ {
+  "id": "048d1b0e-b24f-5b2f-8645-d5f7692aa859",
+  "slug": "kazakh-national-agrarian-research-university-048d1b0e",
+  "name": "Kazakh National Agrarian Research University",
+  "city": "Almaty",
+  "website": "https://www.kaznaru.edu.kz",
+  "country_code": "KZ",
+  "qs": 781,
+  "have": {
+   "english": false,
+   "tuition": false,
+   "deadline": false
+  }
+ },
+ {
+  "id": "be81cb5c-6657-5124-bc3c-945fa7d4b724",
+  "slug": "kyrgyz-russian-slavic-university-be81cb5c",
+  "name": "Kyrgyz Russian Slavic University",
+  "city": "Bishkek",
+  "website": "http://www.krsu.edu.kg/",
+  "country_code": "KG",
+  "qs": 901,
+  "have": {
+   "english": false,
+   "tuition": false,
+   "deadline": false
+  }
+ },
+ {
+  "id": "5dc23d56-bad2-588d-808a-acc96c9279a1",
+  "slug": "tashkent-state-technical-university-5dc23d56",
+  "name": "Tashkent State Technical University",
+  "city": "Tashkent",
+  "website": "http://www.tdtu.uz/",
+  "country_code": "UZ",
+  "qs": 1001,
+  "have": {
+   "english": false,
+   "tuition": false,
+   "deadline": false
+  }
+ },
+ {
+  "id": "0d308b85-8556-5f87-ae2b-7a4c7abec74a",
+  "slug": "kyrgyz-national-university-0d308b85",
+  "name": "Kyrgyz National University",
+  "city": "Bishkek",
+  "website": "https://www.knu.kg/",
+  "country_code": "KG",
+  "qs": 1201,
+  "have": {
+   "english": false,
+   "tuition": false,
+   "deadline": false
+  }
+ },
+ {
+  "id": "f2e8e6c7-09ab-5ce1-955b-0215c6aa44f8",
+  "slug": "tashkent-state-transport-university-f2e8e6c7",
+  "name": "Tashkent State Transport University",
+  "city": "Tashkent",
+  "website": "https://tstu.uz",
+  "country_code": "UZ",
+  "qs": 1201,
+  "have": {
+   "english": false,
+   "tuition": false,
+   "deadline": false
+  }
+ },
+ {
+  "id": "dbde1b04-e231-50e5-b825-bed699deab78",
+  "slug": "tashkent-state-university-of-economics-dbde1b04",
+  "name": "Tashkent State University of Economics",
+  "city": "Tashkent",
+  "website": "https://tsue.uz",
+  "country_code": "UZ",
+  "qs": 1201,
+  "have": {
+   "english": false,
+   "tuition": false,
+   "deadline": false
+  }
+ },
+ {
+  "id": "6a0687a3-898f-5c15-bc6b-443388eb105f",
+  "slug": "abylai-khan-university-6a0687a3",
+  "name": "Abylai Khan University",
+  "city": "Almaty",
+  "website": "http://www.ablaikhan.kz/",
+  "country_code": "KZ",
+  "qs": 1401,
+  "have": {
+   "english": false,
+   "tuition": false,
+   "deadline": false
+  }
+ },
+ {
+  "id": "2b37715c-42c8-5b71-bcac-de87380cd149",
+  "slug": "yessenov-university-2b37715c",
+  "name": "Yessenov University",
+  "city": "Aktau",
+  "website": "http://yu.edu.kz/",
+  "country_code": "KZ",
+  "qs": 1401,
+  "have": {
+   "english": false,
+   "tuition": false,
+   "deadline": false
+  }
+ },
+ {
+  "id": "5ad45ea9-e51c-59e4-9ef7-6d3768be673c",
+  "slug": "imperial-college-london-5ad45ea9",
+  "name": "Imperial College London",
+  "city": "London",
+  "website": "http://www.imperial.ac.uk/",
+  "country_code": "GB",
+  "qs": 2
+ },
+ {
+  "id": "99fbcf31-606d-5dac-880e-83ca25acd942",
+  "slug": "california-institute-of-technology-99fbcf31",
+  "name": "California Institute of Technology",
+  "city": "Pasadena",
+  "website": "http://www.caltech.edu/",
+  "country_code": "US",
+  "qs": 7
+ },
+ {
+  "id": "c66c3755-66a2-57a0-a80e-da984c310d29",
+  "slug": "national-university-of-singapore-c66c3755",
+  "name": "National University of Singapore",
+  "city": "Singapore",
+  "website": "https://www.nus.edu.sg/",
+  "country_code": "SG",
+  "qs": 8
+ },
+ {
+  "id": "4b7862dc-7567-5f81-af58-c01144412a88",
+  "slug": "university-college-london-4b7862dc",
+  "name": "University College London",
+  "city": "London",
+  "website": "http://www.ucl.ac.uk/",
+  "country_code": "GB",
+  "qs": 8
+ },
+ {
+  "id": "b37d730b-421c-5ed6-a807-3d66e7ca21f7",
+  "slug": "the-university-of-hong-kong-b37d730b",
+  "name": "The University of Hong Kong",
+  "city": "Pok Fu Lam",
+  "website": "https://www.hku.hk/",
+  "country_code": "HK",
+  "qs": 11
+ },
+ {
+  "id": "f5a6d73a-5fd2-55de-83af-3da2c25e18ef",
+  "slug": "nanyang-technological-university-f5a6d73a",
+  "name": "Nanyang Technological University",
+  "city": "Singapore",
+  "website": "https://www.ntu.edu.sg",
+  "country_code": "SG",
+  "qs": 12
+ },
+ {
+  "id": "7add53a9-8ddf-5e84-bd4d-a7c8638dbb95",
+  "slug": "university-of-chicago-7add53a9",
+  "name": "University of Chicago",
+  "city": "Chicago",
+  "website": "http://www.uchicago.edu/",
+  "country_code": "US",
+  "qs": 13
+ },
+ {
+  "id": "79e1cf8b-6a97-5fef-ac23-aa6012197801",
+  "slug": "peking-university-79e1cf8b",
+  "name": "Peking University",
+  "city": "Beijing",
+  "website": "http://www.pku.edu.cn/",
+  "country_code": "CN",
+  "qs": 13
+ },
+ {
+  "id": "519c66df-8779-5336-acda-2cba10f95c66",
+  "slug": "tsinghua-university-519c66df",
+  "name": "Tsinghua University",
+  "city": "Beijing",
+  "website": "http://www.tsinghua.edu.cn/",
+  "country_code": "CN",
+  "qs": 14
+ },
+ {
+  "id": "894119e1-40c1-5589-8677-e1ed97388e59",
+  "slug": "university-of-pennsylvania-894119e1",
+  "name": "University of Pennsylvania",
+  "city": "Philadelphia",
+  "website": "http://www.upenn.edu/",
+  "country_code": "US",
+  "qs": 15
+ },
+ {
+  "id": "8488d97e-a227-5fbd-b7b4-33a1194df723",
+  "slug": "cornell-university-8488d97e",
+  "name": "Cornell University",
+  "city": "Ithaca",
+  "website": "http://www.cornell.edu/",
+  "country_code": "US",
+  "qs": 16
+ },
+ {
+  "id": "0a670c6d-e20a-527f-851b-e2c1306cce70",
+  "slug": "yale-university-0a670c6d",
+  "name": "Yale University",
+  "city": "New Haven",
+  "website": "http://www.yale.edu/",
+  "country_code": "US",
+  "qs": 16
+ },
+ {
+  "id": "e67501b3-2e87-5598-b9e3-e28fe4101f68",
+  "slug": "university-of-california-berkeley-e67501b3",
+  "name": "University of California-Berkeley",
+  "city": "Berkeley",
+  "website": "http://www.berkeley.edu/",
+  "country_code": "US",
+  "qs": 17
+ },
+ {
+  "id": "7deae08f-080e-56cd-8aa8-ca05c941f0cc",
+  "slug": "the-chinese-university-of-hong-kong-7deae08f",
+  "name": "The Chinese University of Hong Kong",
+  "city": "Hong Kong",
+  "website": "https://www.cuhk.edu.hk/",
+  "country_code": "HK",
+  "qs": 18
+ },
+ {
+  "id": "6f8ca7da-1cba-56f4-89e6-4cffd48126ac",
+  "slug": "university-of-melbourne-6f8ca7da",
+  "name": "University of Melbourne",
+  "city": "Melbourne",
+  "website": "http://www.unimelb.edu.au/",
+  "country_code": "AU",
+  "qs": 19
+ },
+ {
+  "id": "34f9bd5c-1c24-5d4f-880c-4a342627a148",
+  "slug": "unsw-sydney-34f9bd5c",
+  "name": "UNSW Sydney",
+  "city": "Sydney",
+  "website": "https://www.unsw.edu.au/",
+  "country_code": "AU",
+  "qs": 19
+ },
+ {
+  "id": "f5c17f3c-ac83-5193-8c71-641147ad926c",
+  "slug": "johns-hopkins-university-f5c17f3c",
+  "name": "Johns Hopkins University",
+  "city": "Baltimore",
+  "website": "http://www.jhu.edu/",
+  "country_code": "US",
+  "qs": 20
+ },
+ {
+  "id": "819bd7c2-cc38-5dc4-854d-2d59a8a9f4e5",
+  "slug": "epfl-epf-lausanne-819bd7c2",
+  "name": "EPFL - EPF Lausanne",
+  "city": "Lausanne",
+  "website": "http://www.epfl.ch/",
+  "country_code": "CH",
+  "qs": 22
+ },
+ {
+  "id": "44444444-4444-4444-8444-444444444444",
+  "slug": "tum",
+  "name": "Technical University of Munich",
+  "city": "Munich",
+  "website": "https://www.tum.de",
+  "country_code": "DE",
+  "qs": 22
+ },
+ {
+  "id": "6f13f9e9-cf5f-56ad-8384-39a9dc592d58",
+  "slug": "princeton-university-6f13f9e9",
+  "name": "Princeton University",
+  "city": "Princeton",
+  "website": "http://www.princeton.edu/",
+  "country_code": "US",
+  "qs": 25
+ },
+ {
+  "id": "01649f44-22e4-5b85-adaa-81f3538aa083",
+  "slug": "king-s-college-london-university-of-london-01649f44",
+  "name": "King's College London, University of London",
+  "city": "London",
+  "website": "http://www.kcl.ac.uk/",
+  "country_code": "GB",
+  "qs": 31
+ },
+ {
+  "id": "74996b5e-c39f-52f1-9e01-88f3051f155b",
+  "slug": "the-hong-kong-university-of-science-and-technology-74996b5e",
+  "name": "The Hong Kong University of Science and Technology",
+  "city": "Hong Kong",
+  "website": "https://hkust.edu.hk/",
+  "country_code": "HK",
+  "qs": 33
+ },
+ {
+  "id": "3c2d87b3-5b20-5df8-99c0-1353112a63f2",
+  "slug": "ludwig-maximilians-universitat-munchen-3c2d87b3",
+  "name": "Ludwig-Maximilians-Universität München",
+  "city": "Munich",
+  "website": "https://www.lmu.de",
+  "country_code": "DE",
+  "qs": 58
+ }
+]

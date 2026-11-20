@@ -1,0 +1,14 @@
+name: Feature request
+description: An idea for the data, tooling or website
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes: { label: What problem does this solve for students? }
+    validations: { required: true }
+  - type: textarea
+    id: idea
+    attributes: { label: Your idea }
+  - type: input
+    id: source
+    attributes: { label: Official data source for it, if it needs new data }

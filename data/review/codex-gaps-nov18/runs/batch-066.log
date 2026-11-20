@@ -1,0 +1,138 @@
+OpenAI Codex v0.169.0
+--------
+workdir: /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+model: gpt-6-luna
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: high
+reasoning summaries: none
+session id: 01a1ee8b-75c4-7903-af96-ea42f0d1900c
+--------
+user
+You are a careful admissions-data researcher. For each university below, find facts for an
+INTERNATIONAL applicant to a FIRST-YEAR BACHELOR'S degree starting in autumn 2027 (or the nearest
+published cycle). Use the live web. Rules:
+
+- Official sources only: the university's own website (its domain or subdomains), the national
+  application service (UCAS, Common App, OUAC, uni-assist, Studyinkorea, etc.) or a government
+  statistics office. Never use rankings sites, forums, agencies, Wikipedia or blogs.
+- Every value needs the exact page URL where you read it (source_url). If you could not verify a
+  value on an official page, leave it out (null or an empty list). Never guess or estimate.
+- english: the lowest overall score accepted for undergraduate entry, per test (IELTS Academic
+  overall, TOEFL iBT total, Duolingo, PTE). If programmes differ, give the general/lowest common
+  university minimum and say so in detail (e.g. "6.5 overall, no band below 6.0; some
+  programmes higher").
+- tuition: the yearly tuition for international (non-EU / overseas) undergraduates in the local
+  currency. If it varies by programme give amount = lowest and amount_max = highest, and the
+  academic_year the fee applies to (e.g. "2026/27"). If tuition is free, amount = 0.
+- application_fee: for international first-year applicants, local currency.
+- deadlines: the main 2027-entry first-year deadlines (ISO date YYYY-MM-DD) with the route
+  (e.g. "Common App, Regular Decision", "UCAS", "university portal"). Only dates actually
+  published; if only the 2026-entry date is published, include it and put "2026 entry" in title.
+- sat: policy for international applicants; p25/p75 total SAT only if the university publishes
+  them (Common Data Set or admissions profile).
+- acceptance_rate: only if officially published (CDS, admissions statistics page).
+- notes: one short line on anything important (e.g. "Foundation year required for 11-year
+  school certificates"), else "".
+
+Spend effort on the facts students need most: English minimum, tuition, deadlines. Keep each
+detail under 160 characters. Return only the JSON that matches the schema; use each
+university's id exactly as given.
+
+Universities:
+- id: c8d8878d-de01-555a-815a-26fbd0bd1d4b | Dalhousie University | Halifax, CA | https://www.dal.ca
+- id: a8cd3652-fbec-510c-85e6-a4c4372cc7a0 | University of Bergen | Bergen, NO | http://www.uib.no/
+- id: a0ed766a-ac85-5cc2-96d5-321d30e8b292 | University of Southern Denmark - SDU | Odense, DK | http://www.sdu.dk/
+- id: 9e6e1d4a-e604-5b42-8e72-2f62326988c0 | University of Sharjah | Sharjah, AE | http://www.sharjah.ac.ae/
+codex
+I’ll check official university and application-service pages for the nearest published cycle, then return only the requested JSON.
+exec
+/bin/zsh -lc 'cat /Users/likeanew/.agents/skills/lemma/SKILL.md' in /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+ succeeded in 0ms:
+---
+name: lemma
+description: Persistent cross-session memory for AI agents via MCP. BEFORE starting ANY task (coding, debugging, refactoring, research, docs, optimization — any language), FIRST call memory_read to load what you already know so you never re-derive or re-explore known facts. AFTER finishing, call memory_add to persist new findings and session_attempt for dead ends — unsaved knowledge is lost permanently. Distills reusable guides from experience.
+---
+
+<!-- lemma:skill:v=0.21.0 -->
+
+# Lemma — Persistent Memory & Learning
+
+Lemma is a persistent memory server for AI agents over the Model Context Protocol.
+Every session starts blank — knowledge survives ONLY through tool calls. If you
+learn something and don't save it (`memory_add`), it is gone permanently.
+
+## Workflow
+1. **RECALL** — `memory_read` / `semantic_search`: load what's already known for this
+   project/task. Never re-explore code or re-derive facts that are already saved.
+2. **ACT** — do the task.
+3. **PERSIST** — `memory_add` for new insights; `guide_practice` for guides applied;
+   `session_attempt` for abandoned/dead-end approaches (the most valuable records).
+
+## Two knowledge layers
+- **Memory fragments** (`memory_read` / `memory_add`): atomic facts. Types: `fact`,
+  `pattern`, `lesson`, `warning`, `context`. Confidence evolves with use and feedback.
+- **Guides** (`guide_get` / `guide_distill` / `guide_practice`): procedural skills
+  distilled from fragments. Track usage count + success/failure rate.
+Pipeline: `experience -> memory_add -> pattern/lesson -> guide_distill -> guide_practice`.
+
+## Tools at a glance
+- **Recall & search**: `memory_read`, `semantic_search`, `memory_library` (full
+  snapshot + maintenance signals), `memory_stats`, `memory_audit`.
+- **Write & maintain**: `memory_add`, `memory_update`, `memory_forget`,
+  `memory_merge`, `memory_relate` (supports / contradicts / supersedes / related_to),
+  `memory_feedback`.
+- **Guides**: `guide_get`, `guide_create`, `guide_distill`, `guide_practice`,
+  `guide_update`, `guide_forget`, `guide_merge`.
+- **Sessions & reasoning**: `session_start`, `session_end`, `session_attempt`,
+  `session_stats`, `suggestion_respond`.
+- **Background intelligence**: `conflict_scan`, `proactive_analysis`,
+  `project_analytics` (run automatically; act on signals when sensible).
+
+## Writing a fragment
+```
+## [Topic Title]
+### Context
+[1-2 sentences: what and why it matters]
+### [Content Section]
+- [Key fact 1]
+- [Key fact 2]
+### Rules (optional)
+- [Absolute constraint]
+```
+One idea per fragment, 30-2000 chars, structured markdown (not prose). **Store
+fragments in ENGLISH** (required for search/retrieval). Never ask permission to save.
+
+## Background intelligence
+Conflict detection, distill/merge/refine suggestions, and auto-linking run
+automatically. From the CLI, `lemma -lib` prints a full knowledge-base snapshot
+and `lemma -vis` launches a visualizer.
+
+web search: 
+web search: site:dal.ca international undergraduate admission English proficiency tuition 2026 2027 deadline 2027 ...
+web search: 
+web search: site:dal.ca 2026-2027 international undergraduate tuition fees Dalhousie tuition fee estimate ...
+web search: 
+web search: site:uib.no/en/studies bachelor tuition fees 2027 2028 UiB undergraduate programmes English ...
+web search: 
+web search: site:sharjah.ac.ae tuition fees undergraduate academic year 2026 2027 AED University of Sharjah ...
+web search: 
+web search: 
+web search: 
+web search: site:dal.ca "application fee" "undergraduate" CAD 2026 Dalhousie apply ...
+web search: 
+web search: 'College of'
+web search: 
+web search: site:uib.no "1 March" "international applicants" bachelor UiB Samordna opptak foreign education ...
+web search: 
+web search: site:sdu.dk/en/uddannelse/bachelor "EUR" tuition fee bachelor 2026 2027 ...
+web search: 
+web search: 
+web search: 
+web search: site:dal.ca "International Fee Schedule" "Guaranteed Tuition Model" undergraduate 2026 2027 ...
+codex
+{"universities":[{"id":"c8d8878d-de01-555a-815a-26fbd0bd1d4b","english":[{"test":"IELTS","minimum":6.5,"detail":"6.5 overall; no band below 6.0.","source_url":"https://www.dal.ca/admissions/how-to-apply/undergraduate-admissions/international-applicants/english-language-requirements.html"},{"test":"TOEFL iBT","minimum":90,"detail":"90/120 (4.5 on the new 1–6 scale); section minimums apply.","source_url":"https://www.dal.ca/admissions/how-to-apply/undergraduate-admissions/international-applicants/english-language-requirements.html"},{"test":"Duolingo","minimum":120,"detail":"120 overall.","source_url":"https://www.dal.ca/admissions/how-to-apply/undergraduate-admissions/international-applicants/english-language-requirements.html"},{"test":"PTE Academic","minimum":61,"detail":"61 overall; communicative skills scores 50.","source_url":"https://www.dal.ca/admissions/how-to-apply/undergraduate-admissions/international-applicants/english-language-requirements.html"},{"test":"Cambridge C1/C2","minimum":180,"detail":"180 overall.","source_url":"https://www.dal.ca/admissions/how-to-apply/undergraduate-admissions/international-applicants/english-language-requirements.html"}],"tuition":{"amount":30906,"amount_max":48594,"currency":"CAD","period":"year","academic_year":"2026/27","detail":"Tuition only; 2026/27 international guaranteed annual rates vary by eligible faculty. 2027/28 rates not published.","source_url":"https://www.dal.ca/admissions/cost-and-payment/tuition/international-tuition-guarantee.html"},"application_fee":{"amount":70,"currency":"CAD","source_url":"https://www.dal.ca/admissions/how-to-apply/undergraduate-admissions/dalhousie-students.html"},"deadlines":[{"title":"September 2027 entry: Nursing, Health Sciences, Medical Sciences, Social Work","due_at":"2027-02-15","route":"University application","source_url":"https://www.dal.ca/admissions/dates-and-deadlines.html"},{"title":"September 2027 entry: Environmental Design Studies (Architecture)","due_at":"2027-03-01","route":"University application","source_url":"https://www.dal.ca/admissions/dates-and-deadlines.html"},{"title":"September 2027 entry: offer deposit and English proficiency proof","due_at":"2027-05-01","route":"Dal Online / university portal","source_url":"https://www.dal.ca/admissions/dates-and-deadlines.html"}],"sat":null,"acceptance_rate":null,"notes":"Most programs have no published application cutoff; applications may be considered until classes start if space remains."},{"id":"a8cd3652-fbec-510c-85e6-a4c4372cc7a0","english":[],"tuition":null,"application_fee":null,"deadlines":[{"title":"2026 entry: most applicants","due_at":"2026-04-15","route":"NUCAS","source_url":"https://www.samordnaopptak.no/english/"}],"sat":null,"acceptance_rate":null,"notes":"Bachelor’s programmes are generally taught in Norwegian; applicants to Norwegian-taught programmes must document Norwegian proficiency."},{"id":"a0ed766a-ac85-5cc2-96d5-321d30e8b292","english":[{"test":"Cambridge C1/C2","minimum":180,"detail":"C1 Advanced: 180 minimum, if English was already completed in upper-secondary education.","source_url":"https://www.sdu.dk/en/uddannelse/bachelor/bachelor-admission/admission-requirements/language-requirements"}],"tuition":{"amount":10800,"amount_max":17300,"currency":"EUR","period":"year","academic_year":"2026/27","detail":"Non-EU/EEA tuition rates for September 2026 intake vary by faculty; exact fee is programme-specific.","source_url":"https://www.sdu.dk/en/uddannelse/fees_and_funding/tuition"},"application_fee":{"amount":200,"currency":"EUR","source_url":"https://www.sdu.dk/en/uddannelse/bachelor/bachelor-admission"},"deadlines":[{"title":"September 2027 entry","due_at":"2027-03-15","route":"Optagelse.dk (Danish national application system)","source_url":"https://www.sdu.dk/en/uddannelse/bachelor/bachelor-admission"}],"sat":null,"acceptance_rate":null,"notes":"IELTS, TOEFL and Duolingo tests are not accepted to satisfy the bachelor’s English B subject requirement."},{"id":"9e6e1d4a-e604-5b42-8e72-2f62326988c0","english":[{"test":"IELTS","minimum":4,"detail":"Lowest listed minimum; some programmes require 5.5 or higher.","source_url":"https://www.sharjah.ac.ae/Admissions/bachelors-degree"},{"test":"TOEFL iBT","minimum":31,"detail":"Lowest listed minimum; some programmes require 61 or higher.","source_url":"https://www.sharjah.ac.ae/Admissions/bachelors-degree"},{"test":"PTE Academic","minimum":29,"detail":"Lowest listed minimum; some programmes require 44 or higher.","source_url":"https://www.sharjah.ac.ae/Admissions/bachelors-degree"}],"tuition":{"amount":37660,"amount_max":130430,"currency":"AED","period":"year","academic_year":"2026/27","detail":"Annual undergraduate tuition varies by programme; published range includes medicine and dentistry.","source_url":"https://newsite-admin.sharjah.ac.ae/Admissions/Tuition-and-Fees/Admission-Tuition-Fees"},"application_fee":{"amount":360,"currency":"AED","source_url":"https://www.sharjah.ac.ae/Admissions/bachelors-degree"},"deadlines":[{"title":"Spring 2026/27 entry application closes","due_at":"2026-12-31","route":"University online admission portal","source_url":"https://www.sharjah.ac.ae/Admissions/bachelors-degree"}],"sat":null,"acceptance_rate":null,"notes":"Fall 2026/27 admission is closed; the published Spring 2026/27 application window is 23 November–31 December 2026."}] }
+tokens used
+99,206
+{"universities":[{"id":"c8d8878d-de01-555a-815a-26fbd0bd1d4b","english":[{"test":"IELTS","minimum":6.5,"detail":"6.5 overall; no band below 6.0.","source_url":"https://www.dal.ca/admissions/how-to-apply/undergraduate-admissions/international-applicants/english-language-requirements.html"},{"test":"TOEFL iBT","minimum":90,"detail":"90/120 (4.5 on the new 1–6 scale); section minimums apply.","source_url":"https://www.dal.ca/admissions/how-to-apply/undergraduate-admissions/international-applicants/english-language-requirements.html"},{"test":"Duolingo","minimum":120,"detail":"120 overall.","source_url":"https://www.dal.ca/admissions/how-to-apply/undergraduate-admissions/international-applicants/english-language-requirements.html"},{"test":"PTE Academic","minimum":61,"detail":"61 overall; communicative skills scores 50.","source_url":"https://www.dal.ca/admissions/how-to-apply/undergraduate-admissions/international-applicants/english-language-requirements.html"},{"test":"Cambridge C1/C2","minimum":180,"detail":"180 overall.","source_url":"https://www.dal.ca/admissions/how-to-apply/undergraduate-admissions/international-applicants/english-language-requirements.html"}],"tuition":{"amount":30906,"amount_max":48594,"currency":"CAD","period":"year","academic_year":"2026/27","detail":"Tuition only; 2026/27 international guaranteed annual rates vary by eligible faculty. 2027/28 rates not published.","source_url":"https://www.dal.ca/admissions/cost-and-payment/tuition/international-tuition-guarantee.html"},"application_fee":{"amount":70,"currency":"CAD","source_url":"https://www.dal.ca/admissions/how-to-apply/undergraduate-admissions/dalhousie-students.html"},"deadlines":[{"title":"September 2027 entry: Nursing, Health Sciences, Medical Sciences, Social Work","due_at":"2027-02-15","route":"University application","source_url":"https://www.dal.ca/admissions/dates-and-deadlines.html"},{"title":"September 2027 entry: Environmental Design Studies (Architecture)","due_at":"2027-03-01","route":"University application","source_url":"https://www.dal.ca/admissions/dates-and-deadlines.html"},{"title":"September 2027 entry: offer deposit and English proficiency proof","due_at":"2027-05-01","route":"Dal Online / university portal","source_url":"https://www.dal.ca/admissions/dates-and-deadlines.html"}],"sat":null,"acceptance_rate":null,"notes":"Most programs have no published application cutoff; applications may be considered until classes start if space remains."},{"id":"a8cd3652-fbec-510c-85e6-a4c4372cc7a0","english":[],"tuition":null,"application_fee":null,"deadlines":[{"title":"2026 entry: most applicants","due_at":"2026-04-15","route":"NUCAS","source_url":"https://www.samordnaopptak.no/english/"}],"sat":null,"acceptance_rate":null,"notes":"Bachelor’s programmes are generally taught in Norwegian; applicants to Norwegian-taught programmes must document Norwegian proficiency."},{"id":"a0ed766a-ac85-5cc2-96d5-321d30e8b292","english":[{"test":"Cambridge C1/C2","minimum":180,"detail":"C1 Advanced: 180 minimum, if English was already completed in upper-secondary education.","source_url":"https://www.sdu.dk/en/uddannelse/bachelor/bachelor-admission/admission-requirements/language-requirements"}],"tuition":{"amount":10800,"amount_max":17300,"currency":"EUR","period":"year","academic_year":"2026/27","detail":"Non-EU/EEA tuition rates for September 2026 intake vary by faculty; exact fee is programme-specific.","source_url":"https://www.sdu.dk/en/uddannelse/fees_and_funding/tuition"},"application_fee":{"amount":200,"currency":"EUR","source_url":"https://www.sdu.dk/en/uddannelse/bachelor/bachelor-admission"},"deadlines":[{"title":"September 2027 entry","due_at":"2027-03-15","route":"Optagelse.dk (Danish national application system)","source_url":"https://www.sdu.dk/en/uddannelse/bachelor/bachelor-admission"}],"sat":null,"acceptance_rate":null,"notes":"IELTS, TOEFL and Duolingo tests are not accepted to satisfy the bachelor’s English B subject requirement."},{"id":"9e6e1d4a-e604-5b42-8e72-2f62326988c0","english":[{"test":"IELTS","minimum":4,"detail":"Lowest listed minimum; some programmes require 5.5 or higher.","source_url":"https://www.sharjah.ac.ae/Admissions/bachelors-degree"},{"test":"TOEFL iBT","minimum":31,"detail":"Lowest listed minimum; some programmes require 61 or higher.","source_url":"https://www.sharjah.ac.ae/Admissions/bachelors-degree"},{"test":"PTE Academic","minimum":29,"detail":"Lowest listed minimum; some programmes require 44 or higher.","source_url":"https://www.sharjah.ac.ae/Admissions/bachelors-degree"}],"tuition":{"amount":37660,"amount_max":130430,"currency":"AED","period":"year","academic_year":"2026/27","detail":"Annual undergraduate tuition varies by programme; published range includes medicine and dentistry.","source_url":"https://newsite-admin.sharjah.ac.ae/Admissions/Tuition-and-Fees/Admission-Tuition-Fees"},"application_fee":{"amount":360,"currency":"AED","source_url":"https://www.sharjah.ac.ae/Admissions/bachelors-degree"},"deadlines":[{"title":"Spring 2026/27 entry application closes","due_at":"2026-12-31","route":"University online admission portal","source_url":"https://www.sharjah.ac.ae/Admissions/bachelors-degree"}],"sat":null,"acceptance_rate":null,"notes":"Fall 2026/27 admission is closed; the published Spring 2026/27 application window is 23 November–31 December 2026."}] }

@@ -1,0 +1,338 @@
+[
+ {
+  "id": "08d9be02-dd4b-5552-97ea-0017b28c332a",
+  "slug": "university-of-chinese-academy-of-sciences-08d9be02",
+  "name": "University of Chinese Academy of Sciences",
+  "city": "Beijing",
+  "website": "https://www.ucas.ac.cn",
+  "country_code": "CN",
+  "qs": 360,
+  "have": {
+   "english": false,
+   "tuition": false,
+   "deadline": false
+  }
+ },
+ {
+  "id": "f7f62a89-8455-5330-9cce-03f76a563dfc",
+  "slug": "pontificia-universidad-javeriana-f7f62a89",
+  "name": "Pontificia Universidad Javeriana",
+  "city": "Bogotá",
+  "website": "http://www.javeriana.edu.co/",
+  "country_code": "CO",
+  "qs": 371,
+  "have": {
+   "english": false,
+   "tuition": false,
+   "deadline": false
+  }
+ },
+ {
+  "id": "d827b4d9-5b8a-506f-abac-df3437f6347a",
+  "slug": "st-petersburg-state-university-d827b4d9",
+  "name": "St. Petersburg State University",
+  "city": "St Petersburg",
+  "website": "http://www.spbu.ru/",
+  "country_code": "RU",
+  "qs": 375,
+  "have": {
+   "english": false,
+   "tuition": false,
+   "deadline": false
+  }
+ },
+ {
+  "id": "5e2c8d0e-394c-543b-9d2e-2176866fd088",
+  "slug": "sharif-university-of-technology-5e2c8d0e",
+  "name": "Sharif University of Technology",
+  "city": "Tehran",
+  "website": "https://www.sharif.ir",
+  "country_code": "IR",
+  "qs": 375,
+  "have": {
+   "english": false,
+   "tuition": false,
+   "deadline": false
+  }
+ },
+ {
+  "id": "4780798a-9a67-5765-a85f-86a0a1501d14",
+  "slug": "institut-national-des-sciences-appliquees-de-lyon-4780798a",
+  "name": "Institut National des Sciences Appliquées de Lyon",
+  "city": "Lyon",
+  "website": "http://www.insa-lyon.fr/",
+  "country_code": "FR",
+  "qs": 406,
+  "have": {
+   "english": false,
+   "tuition": false,
+   "deadline": false
+  }
+ },
+ {
+  "id": "0c725fbe-d8f6-5985-ba7b-5538434ff8a2",
+  "slug": "universitat-ramon-llull-0c725fbe",
+  "name": "Universitat Ramon Llull",
+  "city": "Barcelona",
+  "website": "https://www.url.edu",
+  "country_code": "ES",
+  "qs": 436,
+  "have": {
+   "english": false,
+   "tuition": false,
+   "deadline": false
+  }
+ },
+ {
+  "id": "c17e90b9-27b3-5cfa-ae44-689fb73156db",
+  "slug": "belarusian-state-university-c17e90b9",
+  "name": "Belarusian State University",
+  "city": "Minsk",
+  "website": "https://bsu.by/",
+  "country_code": "BY",
+  "qs": 447,
+  "have": {
+   "english": false,
+   "tuition": false,
+   "deadline": false
+  }
+ },
+ {
+  "id": "1b1eb340-cc2a-5088-a2dd-a74fdeec85a0",
+  "slug": "jordan-university-of-science-and-technology-1b1eb340",
+  "name": "Jordan University of Science and Technology",
+  "city": "Irbid",
+  "website": "http://www.just.edu.jo/",
+  "country_code": "JO",
+  "qs": 449,
+  "have": {
+   "english": false,
+   "tuition": false,
+   "deadline": false
+  }
+ },
+ {
+  "id": "2a168154-1f87-5939-a46e-bd246659e517",
+  "slug": "shoolini-university-2a168154",
+  "name": "Shoolini University",
+  "city": "Solan",
+  "website": "https://shooliniuniversity.com",
+  "country_code": "IN",
+  "qs": 452,
+  "have": {
+   "english": false,
+   "tuition": false,
+   "deadline": false
+  }
+ },
+ {
+  "id": "34ebeddd-9eb9-50cc-8708-3d73ca7b863d",
+  "slug": "amirkabir-university-of-technology-34ebeddd",
+  "name": "Amirkabir University of Technology",
+  "city": "Tehran",
+  "website": "http://www.aut.ac.ir/",
+  "country_code": "IR",
+  "qs": 456,
+  "have": {
+   "english": false,
+   "tuition": false,
+   "deadline": false
+  }
+ },
+ {
+  "id": "c729cc19-397a-5cbd-840d-3fa6fcfc58eb",
+  "slug": "novosibirsk-state-university-c729cc19",
+  "name": "Novosibirsk State University",
+  "city": "Novosibirsk",
+  "website": "http://www.nsu.ru/",
+  "country_code": "RU",
+  "qs": 461,
+  "have": {
+   "english": false,
+   "tuition": false,
+   "deadline": false
+  }
+ },
+ {
+  "id": "44458433-4eb0-5724-86b1-f75137ac3c17",
+  "slug": "kyungpook-national-university-44458433",
+  "name": "Kyungpook National University",
+  "city": "Daegu",
+  "website": "https://knu.ac.kr",
+  "country_code": "KR",
+  "qs": 481,
+  "have": {
+   "english": false,
+   "tuition": false,
+   "deadline": false
+  }
+ },
+ {
+  "id": "6c498d0b-fbdf-59c8-9aa2-776be5789bea",
+  "slug": "duy-tan-university-6c498d0b",
+  "name": "Duy Tan University",
+  "city": "Da Nang",
+  "website": "https://duytan.edu.vn/",
+  "country_code": "VN",
+  "qs": 482,
+  "have": {
+   "english": false,
+   "tuition": false,
+   "deadline": false
+  }
+ },
+ {
+  "id": "f50f0b72-6c3f-50df-a463-900e49ac8db9",
+  "slug": "universiti-utara-malaysia-f50f0b72",
+  "name": "Universiti Utara Malaysia",
+  "city": "Jitra",
+  "website": "http://www.uum.edu.my/",
+  "country_code": "MY",
+  "qs": 491,
+  "have": {
+   "english": false,
+   "tuition": false,
+   "deadline": false
+  }
+ },
+ {
+  "id": "b2588f6b-9e0a-5529-b0ad-9707090f465e",
+  "slug": "iran-university-of-science-and-technology-tehran-b2588f6b",
+  "name": "Iran University of Science and Technology Tehran",
+  "city": "Tehran",
+  "website": "http://www.iust.ac.ir/",
+  "country_code": "IR",
+  "qs": 496,
+  "have": {
+   "english": false,
+   "tuition": false,
+   "deadline": false
+  }
+ },
+ {
+  "id": "67a8f8f0-5c6d-52ba-bb11-6c44a5ac56f1",
+  "slug": "abai-state-university-67a8f8f0",
+  "name": "Abai State University",
+  "city": "Almaty",
+  "website": "http://www.kaznpu.kz/",
+  "country_code": "KZ",
+  "qs": 634,
+  "have": {
+   "english": false,
+   "tuition": false,
+   "deadline": false
+  }
+ },
+ {
+  "id": "048d1b0e-b24f-5b2f-8645-d5f7692aa859",
+  "slug": "kazakh-national-agrarian-research-university-048d1b0e",
+  "name": "Kazakh National Agrarian Research University",
+  "city": "Almaty",
+  "website": "https://www.kaznaru.edu.kz",
+  "country_code": "KZ",
+  "qs": 781,
+  "have": {
+   "english": false,
+   "tuition": false,
+   "deadline": false
+  }
+ },
+ {
+  "id": "be81cb5c-6657-5124-bc3c-945fa7d4b724",
+  "slug": "kyrgyz-russian-slavic-university-be81cb5c",
+  "name": "Kyrgyz Russian Slavic University",
+  "city": "Bishkek",
+  "website": "http://www.krsu.edu.kg/",
+  "country_code": "KG",
+  "qs": 901,
+  "have": {
+   "english": false,
+   "tuition": false,
+   "deadline": false
+  }
+ },
+ {
+  "id": "5dc23d56-bad2-588d-808a-acc96c9279a1",
+  "slug": "tashkent-state-technical-university-5dc23d56",
+  "name": "Tashkent State Technical University",
+  "city": "Tashkent",
+  "website": "http://www.tdtu.uz/",
+  "country_code": "UZ",
+  "qs": 1001,
+  "have": {
+   "english": false,
+   "tuition": false,
+   "deadline": false
+  }
+ },
+ {
+  "id": "0d308b85-8556-5f87-ae2b-7a4c7abec74a",
+  "slug": "kyrgyz-national-university-0d308b85",
+  "name": "Kyrgyz National University",
+  "city": "Bishkek",
+  "website": "https://www.knu.kg/",
+  "country_code": "KG",
+  "qs": 1201,
+  "have": {
+   "english": false,
+   "tuition": false,
+   "deadline": false
+  }
+ },
+ {
+  "id": "f2e8e6c7-09ab-5ce1-955b-0215c6aa44f8",
+  "slug": "tashkent-state-transport-university-f2e8e6c7",
+  "name": "Tashkent State Transport University",
+  "city": "Tashkent",
+  "website": "https://tstu.uz",
+  "country_code": "UZ",
+  "qs": 1201,
+  "have": {
+   "english": false,
+   "tuition": false,
+   "deadline": false
+  }
+ },
+ {
+  "id": "dbde1b04-e231-50e5-b825-bed699deab78",
+  "slug": "tashkent-state-university-of-economics-dbde1b04",
+  "name": "Tashkent State University of Economics",
+  "city": "Tashkent",
+  "website": "https://tsue.uz",
+  "country_code": "UZ",
+  "qs": 1201,
+  "have": {
+   "english": false,
+   "tuition": false,
+   "deadline": false
+  }
+ },
+ {
+  "id": "6a0687a3-898f-5c15-bc6b-443388eb105f",
+  "slug": "abylai-khan-university-6a0687a3",
+  "name": "Abylai Khan University",
+  "city": "Almaty",
+  "website": "http://www.ablaikhan.kz/",
+  "country_code": "KZ",
+  "qs": 1401,
+  "have": {
+   "english": false,
+   "tuition": false,
+   "deadline": false
+  }
+ },
+ {
+  "id": "2b37715c-42c8-5b71-bcac-de87380cd149",
+  "slug": "yessenov-university-2b37715c",
+  "name": "Yessenov University",
+  "city": "Aktau",
+  "website": "http://yu.edu.kz/",
+  "country_code": "KZ",
+  "qs": 1401,
+  "have": {
+   "english": false,
+   "tuition": false,
+   "deadline": false
+  }
+ }
+]

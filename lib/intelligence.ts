@@ -40,28 +40,3 @@ export function similarity(a: University, b: University) {
   }
   return { score, reasons };
 }
-export function costBreakdown(u: University) {
-  const t = tuition(u);
-  if (!t) return null;
-  const records = u.costs.filter(
-    (c) =>
-      !c.program_id &&
-      c.year === t.year &&
-      c.currency === t.currency &&
-      c.period === t.period &&
-      c.student_category === t.student_category,
-  );
-  const seen = new Set<string>();
-  const items = records.filter((c) => {
-    if (seen.has(c.category)) return false;
-    seen.add(c.category);
-    return true;
-  });
-  return {
-    year: t.year,
-    currency: t.currency,
-    period: t.period,
-    studentCategory: t.student_category,
-    items,
-  };
-}

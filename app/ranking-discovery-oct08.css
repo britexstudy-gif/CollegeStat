@@ -1,0 +1,136 @@
+/* Identifying white publisher assets need their original contrasting field in either theme. */
+.publisher-identification.publisher-arwu,
+.dark .publisher-identification.publisher-arwu {
+  background: #ba1f34;
+  padding: 6px 9px;
+}
+.publisher-identification.publisher-leiden,
+.dark .publisher-identification.publisher-leiden {
+  background: #16345d;
+  padding: 6px;
+}
+/* Until the white artwork has painted, the name shows on the normal surface. */
+.publisher-identification.has-publisher-text:is(.publisher-arwu, .publisher-leiden),
+.dark .publisher-identification.has-publisher-text:is(.publisher-arwu, .publisher-leiden) {
+  background: transparent;
+}
+.rank-badges.compact .publisher-identification.publisher-arwu,
+.dark .rank-badges.compact .publisher-identification.publisher-arwu {
+  padding: 4px;
+}
+.publisher-identification .publisher-text-mark {
+  color: var(--foreground);
+  font-size: 14px;
+  font-weight: 650;
+  letter-spacing: -0.035em;
+  white-space: nowrap;
+}
+.open-home .open-rankings.ranking-systems-showcase {
+  grid-template-columns: minmax(220px, 0.62fr) minmax(0, 1.38fr);
+  align-items: start;
+  gap: 42px;
+}
+.ranking-systems-showcase .ranking-availability-note {
+  font-size: 12px;
+  line-height: 1.65;
+  margin-top: 24px;
+  color: var(--muted-foreground);
+}
+.ranking-showcase-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+.ranking-showcase-grid .ranking-system-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 186px;
+  gap: 0;
+  padding: 18px;
+  border: 0.5px solid var(--border);
+  border-radius: 16px;
+  color: var(--foreground);
+  background: var(--card);
+  text-decoration: none;
+  transition:
+    border-color 0.18s ease,
+    transform 0.18s ease;
+}
+.ranking-system-card .ranking-system-card-top,
+.ranking-system-card .ranking-system-card-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+.ranking-system-card-top .publisher-mark {
+  width: 82px;
+  height: 32px;
+}
+.ranking-system-card .ranking-system-edition {
+  color: var(--muted-foreground);
+  font-size: 10px;
+  white-space: nowrap;
+}
+.ranking-system-card h3 {
+  margin: 18px 0 7px;
+  color: var(--foreground);
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: -0.035em;
+}
+.ranking-system-card p {
+  margin: 0 0 16px;
+  color: var(--muted-foreground);
+  font-size: 12px;
+  line-height: 1.5;
+}
+.ranking-system-card .ranking-system-card-bottom {
+  margin-top: auto;
+  color: var(--muted-foreground);
+  font-size: 10px;
+}
+.ranking-system-card[data-availability="imported"] .ranking-system-card-bottom,
+.ranking-system-card[data-availability="partial"] .ranking-system-card-bottom {
+  color: var(--primary);
+}
+.ranking-system-card:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 3px;
+}
+@media (hover: hover) {
+  .ranking-showcase-grid .ranking-system-card:hover {
+    border-color: color-mix(in srgb, var(--primary) 50%, var(--border));
+    transform: translateY(-2px);
+  }
+}
+@media (max-width: 1100px) {
+  .ranking-showcase-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 850px) {
+  .open-home .open-rankings.ranking-systems-showcase {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 24px;
+  }
+  .ranking-systems-showcase .ranking-showcase-intro h2 br {
+    display: none;
+  }
+}
+@media (max-width: 460px) {
+  .ranking-showcase-grid .ranking-system-card {
+    min-height: 185px;
+    padding: 14px;
+  }
+  .ranking-system-card .ranking-system-card-top {
+    flex-wrap: wrap;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .ranking-showcase-grid .ranking-system-card {
+    transition: none;
+    transform: none;
+  }
+}

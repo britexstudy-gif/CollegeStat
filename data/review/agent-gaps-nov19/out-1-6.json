@@ -1,0 +1,44 @@
+{
+ "universities": [
+  {
+   "id": "f951261f-1498-5510-9a26-1b64120fa020",
+   "english": [],
+   "tuition": null,
+   "application_fee": null,
+   "deadlines": [],
+   "sat": null,
+   "acceptance_rate": null,
+   "notes": "Fee guide figures (USD 400/semester, USD 140 fee) come from search snippets; the official registration page was rejected on fetch, so nothing cited. Language."
+  },
+  {
+   "id": "a4ecb670-c223-553e-9d94-8c332adeb6a6",
+   "english": [],
+   "tuition": null,
+   "application_fee": null,
+   "deadlines": [],
+   "sat": null,
+   "acceptance_rate": null,
+   "notes": "Official pages only show exchange-student rules and convalidation equivalents (not admission minimums); no undergrad international fee or 2027 date verified."
+  },
+  {
+   "id": "167202e2-fb1f-5826-858e-0f841dfdacdf",
+   "english": [],
+   "tuition": null,
+   "application_fee": null,
+   "deadlines": [],
+   "sat": null,
+   "acceptance_rate": null,
+   "notes": "Only faculty-specific fees (e.g. USD 3,000/yr for one programme) and exchange B2 English found; no university-wide international undergrad fee, English."
+  },
+  {
+   "id": "f35c594a-8de3-586d-b5a0-d2fa7eeacfe3",
+   "english": [],
+   "tuition": null,
+   "application_fee": null,
+   "deadlines": [],
+   "sat": null,
+   "acceptance_rate": null,
+   "notes": "Results were postgraduate calls only (EUR 500/semester for non-EU postgrad, not used). No undergraduate tuition, fee, English minimum or 2027 date verified."
+  }
+ ]
+}

@@ -13,10 +13,10 @@ export async function POST(request: Request) {
     const auth = await adminAccess(request);
     const accept = request.headers.get("accept") || "";
     if (
-      !accept.includes("application/json") ||
+      !accept.includes("application/json") &&
       !accept.includes("text/event-stream")
     )
-      throw new HttpError(406, "Accept application/json and text/event-stream");
+      throw new HttpError(406, "Accept application/json or text/event-stream");
     if (!request.headers.get("content-type")?.includes("application/json"))
       throw new HttpError(415, "Use application/json");
     const version = request.headers.get("mcp-protocol-version");

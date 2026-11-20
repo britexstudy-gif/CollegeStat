@@ -1,0 +1,124 @@
+OpenAI Codex v0.169.0
+--------
+workdir: /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+model: gpt-6-luna
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: high
+reasoning summaries: none
+session id: 01a1ee90-ea89-7920-940b-56722dd1b302
+--------
+user
+You are a careful admissions-data researcher. For each university below, find facts for an
+INTERNATIONAL applicant to a FIRST-YEAR BACHELOR'S degree starting in autumn 2027 (or the nearest
+published cycle). Use the live web. Rules:
+
+- Official sources only: the university's own website (its domain or subdomains), the national
+  application service (UCAS, Common App, OUAC, uni-assist, Studyinkorea, etc.) or a government
+  statistics office. Never use rankings sites, forums, agencies, Wikipedia or blogs.
+- Every value needs the exact page URL where you read it (source_url). If you could not verify a
+  value on an official page, leave it out (null or an empty list). Never guess or estimate.
+- english: the lowest overall score accepted for undergraduate entry, per test (IELTS Academic
+  overall, TOEFL iBT total, Duolingo, PTE). If programmes differ, give the general/lowest common
+  university minimum and say so in detail (e.g. "6.5 overall, no band below 6.0; some
+  programmes higher").
+- tuition: the yearly tuition for international (non-EU / overseas) undergraduates in the local
+  currency. If it varies by programme give amount = lowest and amount_max = highest, and the
+  academic_year the fee applies to (e.g. "2026/27"). If tuition is free, amount = 0.
+- application_fee: for international first-year applicants, local currency.
+- deadlines: the main 2027-entry first-year deadlines (ISO date YYYY-MM-DD) with the route
+  (e.g. "Common App, Regular Decision", "UCAS", "university portal"). Only dates actually
+  published; if only the 2026-entry date is published, include it and put "2026 entry" in title.
+- sat: policy for international applicants; p25/p75 total SAT only if the university publishes
+  them (Common Data Set or admissions profile).
+- acceptance_rate: only if officially published (CDS, admissions statistics page).
+- notes: one short line on anything important (e.g. "Foundation year required for 11-year
+  school certificates"), else "".
+
+Spend effort on the facts students need most: English minimum, tuition, deadlines. Keep each
+detail under 160 characters. Return only the JSON that matches the schema; use each
+university's id exactly as given.
+
+Universities:
+- id: ace5a60e-1c96-5526-ab62-17f39fe13b3e | Brunel University Uxbridge | London, GB | http://www.brunel.ac.uk/
+- id: c2731c00-d254-53a5-bc2d-e7c05197c0f2 | Quaid-i-Azam University | Islamabad, PK | http://www.qau.edu.pk/
+- id: 765d7982-ec3a-5780-99b0-8929c72036d5 | Birkbeck College, University of London | London, GB | http://www.bbk.ac.uk/
+- id: 54702aaf-8cca-5928-aae1-03680c772c34 | Sunway University | Petaling Jaya, MY | https://sunwayuniversity.edu.my
+codex
+I’ll check the universities’ official admissions and fee pages for the latest published undergraduate cycle, and include only figures those sources verify.
+exec
+/bin/zsh -lc 'cat /Users/likeanew/.agents/skills/lemma/SKILL.md' in /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+ succeeded in 0ms:
+---
+name: lemma
+description: Persistent cross-session memory for AI agents via MCP. BEFORE starting ANY task (coding, debugging, refactoring, research, docs, optimization — any language), FIRST call memory_read to load what you already know so you never re-derive or re-explore known facts. AFTER finishing, call memory_add to persist new findings and session_attempt for dead ends — unsaved knowledge is lost permanently. Distills reusable guides from experience.
+---
+
+<!-- lemma:skill:v=0.21.0 -->
+
+# Lemma — Persistent Memory & Learning
+
+Lemma is a persistent memory server for AI agents over the Model Context Protocol.
+Every session starts blank — knowledge survives ONLY through tool calls. If you
+learn something and don't save it (`memory_add`), it is gone permanently.
+
+## Workflow
+1. **RECALL** — `memory_read` / `semantic_search`: load what's already known for this
+   project/task. Never re-explore code or re-derive facts that are already saved.
+2. **ACT** — do the task.
+3. **PERSIST** — `memory_add` for new insights; `guide_practice` for guides applied;
+   `session_attempt` for abandoned/dead-end approaches (the most valuable records).
+
+## Two knowledge layers
+- **Memory fragments** (`memory_read` / `memory_add`): atomic facts. Types: `fact`,
+  `pattern`, `lesson`, `warning`, `context`. Confidence evolves with use and feedback.
+- **Guides** (`guide_get` / `guide_distill` / `guide_practice`): procedural skills
+  distilled from fragments. Track usage count + success/failure rate.
+Pipeline: `experience -> memory_add -> pattern/lesson -> guide_distill -> guide_practice`.
+
+## Tools at a glance
+- **Recall & search**: `memory_read`, `semantic_search`, `memory_library` (full
+  snapshot + maintenance signals), `memory_stats`, `memory_audit`.
+- **Write & maintain**: `memory_add`, `memory_update`, `memory_forget`,
+  `memory_merge`, `memory_relate` (supports / contradicts / supersedes / related_to),
+  `memory_feedback`.
+- **Guides**: `guide_get`, `guide_create`, `guide_distill`, `guide_practice`,
+  `guide_update`, `guide_forget`, `guide_merge`.
+- **Sessions & reasoning**: `session_start`, `session_end`, `session_attempt`,
+  `session_stats`, `suggestion_respond`.
+- **Background intelligence**: `conflict_scan`, `proactive_analysis`,
+  `project_analytics` (run automatically; act on signals when sensible).
+
+## Writing a fragment
+```
+## [Topic Title]
+### Context
+[1-2 sentences: what and why it matters]
+### [Content Section]
+- [Key fact 1]
+- [Key fact 2]
+### Rules (optional)
+- [Absolute constraint]
+```
+One idea per fragment, 30-2000 chars, structured markdown (not prose). **Store
+fragments in ENGLISH** (required for search/retrieval). Never ask permission to save.
+
+## Background intelligence
+Conflict detection, distill/merge/refine suggestions, and auto-linking run
+automatically. From the CLI, `lemma -lib` prints a full knowledge-base snapshot
+and `lemma -vis` launches a visualizer.
+
+web search: 
+web search: site:brunel.ac.uk international undergraduate entry English language IELTS tuition fees 2026 2027 application deadline ...
+web search: 
+web search: site:brunel.ac.uk "2026/27" "International" undergraduate fees Brunel tuition ...
+web search: 
+web search: site:qau.edu.pk foreign students undergraduate admission deadline 2026 fall QAU admission ...
+web search: 
+web search: site:sunwayuniversity.edu.my "Tuition Fee" "International Student" bachelor Sunway 2026 RM ...
+codex
+{"universities":[{"id":"ace5a60e-1c96-5526-ab62-17f39fe13b3e","english":[{"test":"IELTS","minimum":6.0,"detail":"General course range starts at 6.0; some courses require higher scores or minimum sub-scores.","source_url":"https://www.brunel.ac.uk/international/English-Language-Requirements"},{"test":"TOEFL iBT","minimum":77,"detail":"General course range starts at TOEFL iBT 77; some courses require higher scores or minimum sub-scores.","source_url":"https://www.brunel.ac.uk/international/English-Language-Requirements"}],"tuition":null,"application_fee":null,"deadlines":[{"title":"September 2027 entry international application deadline","due_at":"2027-08-20","route":"UCAS","source_url":"https://www.brunel.ac.uk/international/applicants/how-to-apply-international-students/how-to-apply-for-an-undergraduate-course"}],"sat":null,"acceptance_rate":null,"notes":""},{"id":"c2731c00-d254-53a5-bc2d-e7c05197c0f2","english":[],"tuition":null,"application_fee":null,"deadlines":[{"title":"2026 entry undergraduate deadline","due_at":"2026-08-10","route":"QAU online application system","source_url":"https://qau.edu.pk/admissions-for-undergraduate-bs-ba-llb-pharm-d-morning-programme-on-regular-self-finance-basis-fall-semester-2026/"}],"sat":null,"acceptance_rate":null,"notes":"Foreign applicants are admitted under government and HEC guidelines; published fees and deadlines may vary by programme."},{"id":"765d7982-ec3a-5780-99b0-8929c72036d5","english":[{"test":"IELTS","minimum":6.5,"detail":"Usual requirement: 6.5 overall, no sub-test below 6.0.","source_url":"https://www.bbk.ac.uk/student-services/admissions/english-language-qualifications-and-tests"},{"test":"TOEFL iBT","minimum":79,"detail":"Before Jan 2026 scoring: 79 total with minimum subscores; TOEFL Home Edition not accepted.","source_url":"https://www.bbk.ac.uk/student-services/admissions/english-language-qualifications-and-tests"},{"test":"PTE Academic","minimum":62,"detail":"62 overall, minimum 60 in each sub-test; online test not accepted.","source_url":"https://www.bbk.ac.uk/student-services/admissions/english-language-qualifications-and-tests"}],"tuition":{"amount":19320,"amount_max":null,"currency":"GBP","period":"year","academic_year":"2027/28","detail":"International full-time fee shown for BA English; fees vary by course.","source_url":"https://www.bbk.ac.uk/courses/undergraduate/english"},"application_fee":null,"deadlines":[{"title":"2027 entry first UCAS deadline","due_at":"2027-01-13","route":"UCAS","source_url":"https://www.bbk.ac.uk/student-services/admissions/undergraduate/applications"}],"sat":null,"acceptance_rate":null,"notes":""},{"id":"54702aaf-8cca-5928-aae1-03680c772c34","english":[{"test":"IELTS","minimum":5.5,"detail":"Some bachelor programmes list IELTS 5.5, no band below 5.0; requirements vary by programme.","source_url":"https://sunwayuniversity.edu.my/sites/default/files/periodicals/pdfs/2026/su_ug_shtm_a4_pro_2026_-_fa_upd2_12_mar_2026_spreads.pdf"}],"tuition":null,"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"International applications and initial payment are due at least 8 weeks before intake."}] }
+tokens used
+49,442
+{"universities":[{"id":"ace5a60e-1c96-5526-ab62-17f39fe13b3e","english":[{"test":"IELTS","minimum":6.0,"detail":"General course range starts at 6.0; some courses require higher scores or minimum sub-scores.","source_url":"https://www.brunel.ac.uk/international/English-Language-Requirements"},{"test":"TOEFL iBT","minimum":77,"detail":"General course range starts at TOEFL iBT 77; some courses require higher scores or minimum sub-scores.","source_url":"https://www.brunel.ac.uk/international/English-Language-Requirements"}],"tuition":null,"application_fee":null,"deadlines":[{"title":"September 2027 entry international application deadline","due_at":"2027-08-20","route":"UCAS","source_url":"https://www.brunel.ac.uk/international/applicants/how-to-apply-international-students/how-to-apply-for-an-undergraduate-course"}],"sat":null,"acceptance_rate":null,"notes":""},{"id":"c2731c00-d254-53a5-bc2d-e7c05197c0f2","english":[],"tuition":null,"application_fee":null,"deadlines":[{"title":"2026 entry undergraduate deadline","due_at":"2026-08-10","route":"QAU online application system","source_url":"https://qau.edu.pk/admissions-for-undergraduate-bs-ba-llb-pharm-d-morning-programme-on-regular-self-finance-basis-fall-semester-2026/"}],"sat":null,"acceptance_rate":null,"notes":"Foreign applicants are admitted under government and HEC guidelines; published fees and deadlines may vary by programme."},{"id":"765d7982-ec3a-5780-99b0-8929c72036d5","english":[{"test":"IELTS","minimum":6.5,"detail":"Usual requirement: 6.5 overall, no sub-test below 6.0.","source_url":"https://www.bbk.ac.uk/student-services/admissions/english-language-qualifications-and-tests"},{"test":"TOEFL iBT","minimum":79,"detail":"Before Jan 2026 scoring: 79 total with minimum subscores; TOEFL Home Edition not accepted.","source_url":"https://www.bbk.ac.uk/student-services/admissions/english-language-qualifications-and-tests"},{"test":"PTE Academic","minimum":62,"detail":"62 overall, minimum 60 in each sub-test; online test not accepted.","source_url":"https://www.bbk.ac.uk/student-services/admissions/english-language-qualifications-and-tests"}],"tuition":{"amount":19320,"amount_max":null,"currency":"GBP","period":"year","academic_year":"2027/28","detail":"International full-time fee shown for BA English; fees vary by course.","source_url":"https://www.bbk.ac.uk/courses/undergraduate/english"},"application_fee":null,"deadlines":[{"title":"2027 entry first UCAS deadline","due_at":"2027-01-13","route":"UCAS","source_url":"https://www.bbk.ac.uk/student-services/admissions/undergraduate/applications"}],"sat":null,"acceptance_rate":null,"notes":""},{"id":"54702aaf-8cca-5928-aae1-03680c772c34","english":[{"test":"IELTS","minimum":5.5,"detail":"Some bachelor programmes list IELTS 5.5, no band below 5.0; requirements vary by programme.","source_url":"https://sunwayuniversity.edu.my/sites/default/files/periodicals/pdfs/2026/su_ug_shtm_a4_pro_2026_-_fa_upd2_12_mar_2026_spreads.pdf"}],"tuition":null,"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"International applications and initial payment are due at least 8 weeks before intake."}] }

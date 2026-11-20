@@ -10,7 +10,7 @@ const query = async <T>(p: string): Promise<T> =>
     await GET(new Request("https://collegestat.test/api/catalog?" + p))
   ).json() as Promise<T>;
 test("global identities have unique stable routes and comparison IDs", () => {
-  assert.ok(globalCatalogue.length >= 5000 && globalCatalogue.length <= 10000);
+  assert.ok(globalCatalogue.length >= 14000);
   assert.equal(
     new Set(globalCatalogue.map((u) => u.id)).size,
     globalCatalogue.length,

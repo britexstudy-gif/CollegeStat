@@ -1,0 +1,23 @@
+- Imperial College London (GB): no values. Official imperial.ac.uk pages returned 403; search excerpts (IELTS 6.5/7.0 tiers, overseas fees, 13 Jan 2027 UCAS) not verified, omitted.
+- Caltech (US): English IELTS 7, TOEFL 5 (post-2026-01-21 scale; pre-2026 was 100), Duolingo 130; tuition $68,574 (2026-27); RD 2027-01-04 and REA 2026-11-01. No application fee on page.
+- NUS (SG): English IELTS 6.5 (6.5 R/W), TOEFL iBT 92, PTE 62, C1 180 (NUS PDF). Tuition varies by faculty/nationality, omitted; dates page empty.
+- UCL (GB): no values. ucl.ac.uk English and UCAS pages returned 403/reset; search-only, omitted.
+- HKU (HK): IELTS 6.5 (6.0 W/S); TOEFL 5.0 post-2026 (95 before); composition fee HK$224,000-249,000 (2026-27). No fee/deadlines verified.
+- NTU (SG): IELTS 6.5 (6.5 W/S), TOEFL 90 (Home Ed.), PTE 55; subsidised fee S$21,400/yr non-ASEAN (AY2026/27, GST incl). Deadlines and fee not verified.
+- University of Chicago (US): no values; undergrad pages returned 404/empty. Search gave Nov 2 2026 / Jan 4 2027 deadlines, unverified, omitted.
+- Peking University (CN): no values; 2026 undergrad notice says tuition "further notice"; no English minimum on page.
+- Tsinghua (CN): no values; undergrad page has no tuition, English score or deadline.
+- UPenn (US): no values; undergrad English pages 404; search gave only LPS/summer rules.
+- Cornell (US): IELTS 7.5, TOEFL 100 (pre-2026) / 5.0 (post), Duolingo 130, C1/C2 191 ("minimum competitive" wording); required-materials deadlines 2026-11-13 (ED) and 2027-01-19 (RD). Fee not found.
+- Yale (US): no values; page publishes no minimum (only "most competitive" benchmarks), no deadlines found.
+- UC Berkeley (US): IELTS 6.5, TOEFL 90 (4.5 new scale), DET 115. No fee/deadlines on fetched page (Jan 31 is English-proof date, not app deadline).
+- CUHK (HK): IELTS 6.0; TOEFL 4.5/6 (post-2026; 80 before); tuition HK$230,000 (2027-28); online application fee HK$500; Advance round 2026-11-12, Regular 2027-01-07.
+- University of Melbourne (AU): no values; unimelb pages returned 403.
+- UNSW Sydney (AU): no values; only program-specific IELTS and per-UOC fee excerpts, not verified.
+- Johns Hopkins (US): no values; undergrad FAQ says tests recommended, no minimum. No fee/deadlines verified.
+- EPFL (CH): no English requirement (French B2 required). Application fee CHF 150 for foreign diploma. Tuition not verified; April 30 registration date has no year on page, omitted.
+- TUM (DE): IELTS 6.5, TOEFL iBT 88; page says certificate not needed for some Bachelor programmes. Uni-assist route; tuition and deadlines not found.
+- Princeton (US): no values; page says no minimum test score; Duolingo not accepted per current page.
+- King's College London (GB): IELTS 6.5 (6.0 each, Band D lowest), TOEFL 4.5 post-2026 (92 before), PTE 62; course band sets actual requirement. Tuition and fee not found.
+- HKUST (HK): tuition HK$215,000 per annum (2026-27, non-local) on registry page. English PDF unreadable, omitted. Fee and deadlines not verified.
+- LMU Munich (DE): German-taught; DSH/TestDaF required (not English). Closing dates 15 Jul / 15 Jan published without year, so omitted. Tuition not verified.

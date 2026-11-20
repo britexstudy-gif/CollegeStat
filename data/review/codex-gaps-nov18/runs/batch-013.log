@@ -1,0 +1,138 @@
+OpenAI Codex v0.169.0
+--------
+workdir: /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+model: gpt-6-luna
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: high
+reasoning summaries: none
+session id: 01a1ee7b-fe12-7940-85ca-e18df857d53d
+--------
+user
+You are a careful admissions-data researcher. For each university below, find facts for an
+INTERNATIONAL applicant to a FIRST-YEAR BACHELOR'S degree starting in autumn 2027 (or the nearest
+published cycle). Use the live web. Rules:
+
+- Official sources only: the university's own website (its domain or subdomains), the national
+  application service (UCAS, Common App, OUAC, uni-assist, Studyinkorea, etc.) or a government
+  statistics office. Never use rankings sites, forums, agencies, Wikipedia or blogs.
+- Every value needs the exact page URL where you read it (source_url). If you could not verify a
+  value on an official page, leave it out (null or an empty list). Never guess or estimate.
+- english: the lowest overall score accepted for undergraduate entry, per test (IELTS Academic
+  overall, TOEFL iBT total, Duolingo, PTE). If programmes differ, give the general/lowest common
+  university minimum and say so in detail (e.g. "6.5 overall, no band below 6.0; some
+  programmes higher").
+- tuition: the yearly tuition for international (non-EU / overseas) undergraduates in the local
+  currency. If it varies by programme give amount = lowest and amount_max = highest, and the
+  academic_year the fee applies to (e.g. "2026/27"). If tuition is free, amount = 0.
+- application_fee: for international first-year applicants, local currency.
+- deadlines: the main 2027-entry first-year deadlines (ISO date YYYY-MM-DD) with the route
+  (e.g. "Common App, Regular Decision", "UCAS", "university portal"). Only dates actually
+  published; if only the 2026-entry date is published, include it and put "2026 entry" in title.
+- sat: policy for international applicants; p25/p75 total SAT only if the university publishes
+  them (Common Data Set or admissions profile).
+- acceptance_rate: only if officially published (CDS, admissions statistics page).
+- notes: one short line on anything important (e.g. "Foundation year required for 11-year
+  school certificates"), else "".
+
+Spend effort on the facts students need most: English minimum, tuition, deadlines. Keep each
+detail under 160 characters. Return only the JSON that matches the schema; use each
+university's id exactly as given.
+
+Universities:
+- id: f5cd8bb6-027a-504f-bc7e-19d3d4e017c7 | University of Illinois Urbana-Champaign | Champaign, US | https://illinois.edu/
+- id: 24e7d208-f222-510a-92a9-011aead2e2cc | University of Western Australia | Perth, AU | http://www.uwa.edu.au/
+- id: 2aa84135-ae94-568c-8721-5c06c836a3f2 | University of Leeds | Leeds, GB | http://www.leeds.ac.uk/
+- id: eec543ea-8898-575e-a968-7faa90285317 | KTH Royal Institute of Technology | Stockholm, SE | http://www.kth.se/
+codex
+I’ll check official university and application-service pages for each school, prioritizing current English requirements, international tuition, and published deadlines. I’ll leave fields empty when the official sources don’t verify them.
+exec
+/bin/zsh -lc 'cat /Users/likeanew/.agents/skills/lemma/SKILL.md' in /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+ succeeded in 0ms:
+---
+name: lemma
+description: Persistent cross-session memory for AI agents via MCP. BEFORE starting ANY task (coding, debugging, refactoring, research, docs, optimization — any language), FIRST call memory_read to load what you already know so you never re-derive or re-explore known facts. AFTER finishing, call memory_add to persist new findings and session_attempt for dead ends — unsaved knowledge is lost permanently. Distills reusable guides from experience.
+---
+
+<!-- lemma:skill:v=0.21.0 -->
+
+# Lemma — Persistent Memory & Learning
+
+Lemma is a persistent memory server for AI agents over the Model Context Protocol.
+Every session starts blank — knowledge survives ONLY through tool calls. If you
+learn something and don't save it (`memory_add`), it is gone permanently.
+
+## Workflow
+1. **RECALL** — `memory_read` / `semantic_search`: load what's already known for this
+   project/task. Never re-explore code or re-derive facts that are already saved.
+2. **ACT** — do the task.
+3. **PERSIST** — `memory_add` for new insights; `guide_practice` for guides applied;
+   `session_attempt` for abandoned/dead-end approaches (the most valuable records).
+
+## Two knowledge layers
+- **Memory fragments** (`memory_read` / `memory_add`): atomic facts. Types: `fact`,
+  `pattern`, `lesson`, `warning`, `context`. Confidence evolves with use and feedback.
+- **Guides** (`guide_get` / `guide_distill` / `guide_practice`): procedural skills
+  distilled from fragments. Track usage count + success/failure rate.
+Pipeline: `experience -> memory_add -> pattern/lesson -> guide_distill -> guide_practice`.
+
+## Tools at a glance
+- **Recall & search**: `memory_read`, `semantic_search`, `memory_library` (full
+  snapshot + maintenance signals), `memory_stats`, `memory_audit`.
+- **Write & maintain**: `memory_add`, `memory_update`, `memory_forget`,
+  `memory_merge`, `memory_relate` (supports / contradicts / supersedes / related_to),
+  `memory_feedback`.
+- **Guides**: `guide_get`, `guide_create`, `guide_distill`, `guide_practice`,
+  `guide_update`, `guide_forget`, `guide_merge`.
+- **Sessions & reasoning**: `session_start`, `session_end`, `session_attempt`,
+  `session_stats`, `suggestion_respond`.
+- **Background intelligence**: `conflict_scan`, `proactive_analysis`,
+  `project_analytics` (run automatically; act on signals when sensible).
+
+## Writing a fragment
+```
+## [Topic Title]
+### Context
+[1-2 sentences: what and why it matters]
+### [Content Section]
+- [Key fact 1]
+- [Key fact 2]
+### Rules (optional)
+- [Absolute constraint]
+```
+One idea per fragment, 30-2000 chars, structured markdown (not prose). **Store
+fragments in ENGLISH** (required for search/retrieval). Never ask permission to save.
+
+## Background intelligence
+Conflict detection, distill/merge/refine suggestions, and auto-linking run
+automatically. From the CLI, `lemma -lib` prints a full knowledge-base snapshot
+and `lemma -vis` launches a visualizer.
+
+web search: 
+web search: site:admissions.illinois.edu international first year English proficiency tuition 2027 application deadline SAT ...
+web search: 
+web search: site:admissions.illinois.edu "IELTS" "Duolingo" "minimum" TOEFL international undergraduate ...
+web search: 
+web search: site:admissions.illinois.edu/international-requirements IELTS "6.5" TOEFL Duolingo minimum ...
+web search: 
+web search: site:admissions.illinois.edu "Duolingo English Test" "125" "IELTS" "7.5" first-year ...
+web search: 
+web search: site:uwa.edu.au "2027" undergraduate course fees international tuition fee UWA ...
+web search: 
+web search: site:illinois.edu Common Data Set 2024 2025 acceptance rate SAT 25th 75th undergraduate ...
+web search: 
+web search: site:kth.se bachelor ICT English requirements IELTS 6.5 TOEFL 90 Cambridge ...
+web search: 
+web search: site:courses.leeds.ac.uk "International fees" "2026" undergraduate £26, ...
+web search: 
+web search: site:courses.leeds.ac.uk "2026 course information" "International fees" "£" undergraduate ...
+web search: 
+web search: 
+web search: 
+web search: site:dair.illinois.edu "2025-26 Common Data Set" "Applicants" "Admitted" Illinois ...
+codex
+{"universities":[{"id":"f5cd8bb6-027a-504f-bc7e-19d3d4e017c7","english":[],"tuition":{"amount":36970,"amount_max":47800,"currency":"USD","period":"year","academic_year":"2026/27","detail":"International undergraduate tuition varies by college; listed range for Fall 2026–Spring 2027.","source_url":"https://www.cost.illinois.edu/Home/Cost/I/U/Compare/12/120268/120268"},"application_fee":{"amount":75,"currency":"USD","source_url":"https://www.admissions.illinois.edu/first-year-apply/"},"deadlines":[{"title":"Early Action","due_at":"2026-11-01","route":"Common App","source_url":"https://www.admissions.illinois.edu/first-year-dates"},{"title":"Regular Decision","due_at":"2027-01-05","route":"Common App","source_url":"https://www.admissions.illinois.edu/first-year-dates"}],"sat":{"policy":"optional","p25":1390,"p75":1520,"source_url":"https://enrollmentmanagement.illinois.edu/wp-content/uploads/2025/09/10thDay-FirstYear-Fall-2025-250919.pdf"},"acceptance_rate":null,"notes":""},{"id":"24e7d208-f222-510a-92a9-011aead2e2cc","english":[{"test":"IELTS","minimum":6.5,"detail":"6.5 overall, no band below 6.0; some courses require higher scores.","source_url":"https://www.uwa.edu.au/study/how-to-apply/pathways-and-eligibility/english-language-requirements"},{"test":"TOEFL iBT","minimum":82,"detail":"82 overall; speaking and writing 20+, listening and reading 17+ (0–120 scale).","source_url":"https://www.uwa.edu.au/study/how-to-apply/pathways-and-eligibility/english-language-requirements"},{"test":"Duolingo","minimum":125,"detail":"125 overall; speaking 115, writing 125, reading 115, listening 110.","source_url":"https://www.uwa.edu.au/study/how-to-apply/pathways-and-eligibility/english-language-requirements"},{"test":"PTE Academic","minimum":64,"detail":"64 overall, no band below 60.","source_url":"https://www.uwa.edu.au/study/how-to-apply/pathways-and-eligibility/english-language-requirements"},{"test":"Cambridge C1/C2","minimum":170,"detail":"170 overall; speaking and writing 175+, listening and reading 165+.","source_url":"https://www.uwa.edu.au/study/how-to-apply/pathways-and-eligibility/english-language-requirements"}],"tuition":{"amount":40900,"amount_max":58200,"currency":"AUD","period":"year","academic_year":"2027","detail":"International undergraduate annual fees vary by course; published 2027 course range.","source_url":"https://www.fees.uwa.edu.au/Browse/BrowseCourses?feeType=INTUG&feeYear=2027"},"application_fee":{"amount":150,"currency":"AUD","source_url":"https://www.uwa.edu.au/study/how-to-apply/international-applicants"},"deadlines":[{"title":"Semester 1 2027","due_at":"2027-01-11","route":"UWA application portal","source_url":"https://www.uwa.edu.au/study/how-to-apply/international-applicants"}],"sat":null,"acceptance_rate":null,"notes":""},{"id":"2aa84135-ae94-568c-8721-5c06c836a3f2","english":[{"test":"IELTS","minimum":6,"detail":"6.0 overall, at least 5.5 in each component; some courses require higher scores.","source_url":"https://www.leeds.ac.uk/undergraduate-how-to-apply/doc/entry-requirements"},{"test":"TOEFL iBT","minimum":80,"detail":"80 overall, reading 18, listening 17, speaking 20, writing 19 (pre-2026-01-21); 4 overall, each section 4+ thereafter.","source_url":"https://www.leeds.ac.uk/undergraduate-how-to-apply/doc/entry-requirements"},{"test":"PTE Academic","minimum":60,"detail":"60 overall, no component below 59.","source_url":"https://www.leeds.ac.uk/internationalentry"},{"test":"Cambridge C1/C2","minimum":169,"detail":"169 overall, no component below 162.","source_url":"https://www.leeds.ac.uk/internationalentry"}],"tuition":null,"application_fee":{"amount":34.5,"currency":"GBP","source_url":"https://www.ucas.com/faqs/what-is-the-application-fee-for-the-2027-cycle"},"deadlines":[{"title":"UCAS equal consideration","due_at":"2027-01-13","route":"UCAS","source_url":"https://www.leeds.ac.uk/undergraduate-applying/doc/application-timetable"},{"title":"Medicine, dentistry, veterinary medicine/science","due_at":"2026-10-15","route":"UCAS","source_url":"https://www.leeds.ac.uk/undergraduate-applying/doc/application-timetable"}],"sat":null,"acceptance_rate":null,"notes":""},{"id":"eec543ea-8898-575e-a968-7faa90285317","english":[{"test":"IELTS","minimum":6.5,"detail":"6.5 overall, no section below 5.5.","source_url":"https://www.kth.se/en/studies/bachelor/information-communication-technology/entry-requirements-for-information-communication-technology-1.450313"},{"test":"TOEFL iBT","minimum":90,"detail":"90 total with at least 20 in writing for tests through 2026-01-20; 4.5 total and at least 4 each section thereafter.","source_url":"https://www.kth.se/en/studies/bachelor/information-communication-technology/entry-requirements-for-information-communication-technology-1.450313"}],"tuition":{"amount":141000,"amount_max":null,"currency":"SEK","period":"year","academic_year":"2027","detail":"Annual equivalent for the 3-year ICT bachelor's programme; full programme fee SEK 423,000, charged by semester.","source_url":"https://www.kth.se/en/studies/bachelor/fees-1.646274"},"application_fee":{"amount":900,"currency":"SEK","source_url":"https://www.kth.se/en/studies/bachelor/information-communication-technology/how-to-apply-for-bachelor-s-studies-1.450312"},"deadlines":[{"title":"Application round 1: application deadline","due_at":"2027-01-15","route":"University Admissions portal","source_url":"https://www.kth.se/en/studies/bachelor/information-communication-technology/how-to-apply-for-bachelor-s-studies-1.450312"},{"title":"Application round 1: documents and fee deadline","due_at":"2027-02-01","route":"University Admissions portal","source_url":"https://www.kth.se/en/studies/bachelor/information-communication-technology/how-to-apply-for-bachelor-s-studies-1.450312"}],"sat":null,"acceptance_rate":{"percent":10,"year":"2024","source_url":"https://www.kth.se/en/studies/bachelor/information-communication-technology/entry-requirements-for-information-communication-technology-1.450313"},"notes":"KTH offers one English-taught bachelor's programme: Information and Communication Technology."}]}
+tokens used
+114,902
+{"universities":[{"id":"f5cd8bb6-027a-504f-bc7e-19d3d4e017c7","english":[],"tuition":{"amount":36970,"amount_max":47800,"currency":"USD","period":"year","academic_year":"2026/27","detail":"International undergraduate tuition varies by college; listed range for Fall 2026–Spring 2027.","source_url":"https://www.cost.illinois.edu/Home/Cost/I/U/Compare/12/120268/120268"},"application_fee":{"amount":75,"currency":"USD","source_url":"https://www.admissions.illinois.edu/first-year-apply/"},"deadlines":[{"title":"Early Action","due_at":"2026-11-01","route":"Common App","source_url":"https://www.admissions.illinois.edu/first-year-dates"},{"title":"Regular Decision","due_at":"2027-01-05","route":"Common App","source_url":"https://www.admissions.illinois.edu/first-year-dates"}],"sat":{"policy":"optional","p25":1390,"p75":1520,"source_url":"https://enrollmentmanagement.illinois.edu/wp-content/uploads/2025/09/10thDay-FirstYear-Fall-2025-250919.pdf"},"acceptance_rate":null,"notes":""},{"id":"24e7d208-f222-510a-92a9-011aead2e2cc","english":[{"test":"IELTS","minimum":6.5,"detail":"6.5 overall, no band below 6.0; some courses require higher scores.","source_url":"https://www.uwa.edu.au/study/how-to-apply/pathways-and-eligibility/english-language-requirements"},{"test":"TOEFL iBT","minimum":82,"detail":"82 overall; speaking and writing 20+, listening and reading 17+ (0–120 scale).","source_url":"https://www.uwa.edu.au/study/how-to-apply/pathways-and-eligibility/english-language-requirements"},{"test":"Duolingo","minimum":125,"detail":"125 overall; speaking 115, writing 125, reading 115, listening 110.","source_url":"https://www.uwa.edu.au/study/how-to-apply/pathways-and-eligibility/english-language-requirements"},{"test":"PTE Academic","minimum":64,"detail":"64 overall, no band below 60.","source_url":"https://www.uwa.edu.au/study/how-to-apply/pathways-and-eligibility/english-language-requirements"},{"test":"Cambridge C1/C2","minimum":170,"detail":"170 overall; speaking and writing 175+, listening and reading 165+.","source_url":"https://www.uwa.edu.au/study/how-to-apply/pathways-and-eligibility/english-language-requirements"}],"tuition":{"amount":40900,"amount_max":58200,"currency":"AUD","period":"year","academic_year":"2027","detail":"International undergraduate annual fees vary by course; published 2027 course range.","source_url":"https://www.fees.uwa.edu.au/Browse/BrowseCourses?feeType=INTUG&feeYear=2027"},"application_fee":{"amount":150,"currency":"AUD","source_url":"https://www.uwa.edu.au/study/how-to-apply/international-applicants"},"deadlines":[{"title":"Semester 1 2027","due_at":"2027-01-11","route":"UWA application portal","source_url":"https://www.uwa.edu.au/study/how-to-apply/international-applicants"}],"sat":null,"acceptance_rate":null,"notes":""},{"id":"2aa84135-ae94-568c-8721-5c06c836a3f2","english":[{"test":"IELTS","minimum":6,"detail":"6.0 overall, at least 5.5 in each component; some courses require higher scores.","source_url":"https://www.leeds.ac.uk/undergraduate-how-to-apply/doc/entry-requirements"},{"test":"TOEFL iBT","minimum":80,"detail":"80 overall, reading 18, listening 17, speaking 20, writing 19 (pre-2026-01-21); 4 overall, each section 4+ thereafter.","source_url":"https://www.leeds.ac.uk/undergraduate-how-to-apply/doc/entry-requirements"},{"test":"PTE Academic","minimum":60,"detail":"60 overall, no component below 59.","source_url":"https://www.leeds.ac.uk/internationalentry"},{"test":"Cambridge C1/C2","minimum":169,"detail":"169 overall, no component below 162.","source_url":"https://www.leeds.ac.uk/internationalentry"}],"tuition":null,"application_fee":{"amount":34.5,"currency":"GBP","source_url":"https://www.ucas.com/faqs/what-is-the-application-fee-for-the-2027-cycle"},"deadlines":[{"title":"UCAS equal consideration","due_at":"2027-01-13","route":"UCAS","source_url":"https://www.leeds.ac.uk/undergraduate-applying/doc/application-timetable"},{"title":"Medicine, dentistry, veterinary medicine/science","due_at":"2026-10-15","route":"UCAS","source_url":"https://www.leeds.ac.uk/undergraduate-applying/doc/application-timetable"}],"sat":null,"acceptance_rate":null,"notes":""},{"id":"eec543ea-8898-575e-a968-7faa90285317","english":[{"test":"IELTS","minimum":6.5,"detail":"6.5 overall, no section below 5.5.","source_url":"https://www.kth.se/en/studies/bachelor/information-communication-technology/entry-requirements-for-information-communication-technology-1.450313"},{"test":"TOEFL iBT","minimum":90,"detail":"90 total with at least 20 in writing for tests through 2026-01-20; 4.5 total and at least 4 each section thereafter.","source_url":"https://www.kth.se/en/studies/bachelor/information-communication-technology/entry-requirements-for-information-communication-technology-1.450313"}],"tuition":{"amount":141000,"amount_max":null,"currency":"SEK","period":"year","academic_year":"2027","detail":"Annual equivalent for the 3-year ICT bachelor's programme; full programme fee SEK 423,000, charged by semester.","source_url":"https://www.kth.se/en/studies/bachelor/fees-1.646274"},"application_fee":{"amount":900,"currency":"SEK","source_url":"https://www.kth.se/en/studies/bachelor/information-communication-technology/how-to-apply-for-bachelor-s-studies-1.450312"},"deadlines":[{"title":"Application round 1: application deadline","due_at":"2027-01-15","route":"University Admissions portal","source_url":"https://www.kth.se/en/studies/bachelor/information-communication-technology/how-to-apply-for-bachelor-s-studies-1.450312"},{"title":"Application round 1: documents and fee deadline","due_at":"2027-02-01","route":"University Admissions portal","source_url":"https://www.kth.se/en/studies/bachelor/information-communication-technology/how-to-apply-for-bachelor-s-studies-1.450312"}],"sat":null,"acceptance_rate":{"percent":10,"year":"2024","source_url":"https://www.kth.se/en/studies/bachelor/information-communication-technology/entry-requirements-for-information-communication-technology-1.450313"},"notes":"KTH offers one English-taught bachelor's programme: Information and Communication Technology."}]}

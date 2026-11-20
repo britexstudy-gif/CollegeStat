@@ -1,0 +1,13 @@
+{
+  "id": "P014",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "A website can't replace a person who talks to us. My child goes to the school counsellor and asks relatives who studied abroad, and I don't hand $99 by card to a site I've never heard of when those people help for free.",
+  "objection": "Nobody I know has used it, and I can't call anyone or sit with anyone to ask questions. The 'verified' promise sounds good, but who checks the checker, and would I really get my money back from a company abroad?",
+  "would_change_my_mind": "If the school counsellor or a relative who studied abroad told us they used it and it was right, and there was a real person we could talk to in Russian.",
+  "price_too_cheap": 10,
+  "price_cheap": 30,
+  "price_expensive": 70,
+  "price_too_expensive": 150
+}

@@ -1,0 +1,222 @@
+[
+ {
+  "id": "P001",
+  "name": "Sofia",
+  "age": 33,
+  "segment": "Affluent parent aiming for US/UK top universities",
+  "income": 137000,
+  "behaviour": "Telegram researcher",
+  "behaviour_how": "Reads study-abroad Telegram channels and asks in group chats before paying for anything.",
+  "objection": "Is it a real company? We heard of agencies taking money and disappearing",
+  "habit": "you pay for most things by Click/Payme or Kaspi, rarely by international card"
+ },
+ {
+  "id": "P002",
+  "name": "Kira",
+  "age": 42,
+  "segment": "Upper-middle parent aiming for UK/Europe/Canada with partial scholarship",
+  "income": 40000,
+  "behaviour": "Burned before",
+  "behaviour_how": "Knows someone who paid an agency and got nothing; distrusts online payments and promises.",
+  "objection": "Local agencies help for free, why pay?",
+  "habit": "your child takes IELTS prep at a learning centre after school"
+ },
+ {
+  "id": "P003",
+  "name": "Ada",
+  "age": 39,
+  "segment": "Upper-middle parent aiming for UK/Europe/Canada with partial scholarship",
+  "income": 43000,
+  "behaviour": "Trusts a local agency",
+  "behaviour_how": "Already talked to an agency in Tashkent or Almaty that is 'free' because universities pay it commission.",
+  "objection": "Paying online in dollars is hard or risky for us",
+  "habit": "your child is in 11th grade and the school says nothing about foreign applications"
+ },
+ {
+  "id": "P004",
+  "name": "Min",
+  "age": 35,
+  "segment": "Upper-middle parent aiming for UK/Europe/Canada with partial scholarship",
+  "income": 32000,
+  "behaviour": "Busy parent, wants it handled",
+  "behaviour_how": "Has little time, wants someone else to manage the process and report back.",
+  "objection": "We need help in Russian or Uzbek, the forms are English",
+  "habit": "you pay for most things by Click/Payme or Kaspi, rarely by international card"
+ },
+ {
+  "id": "P005",
+  "name": "Kofi",
+  "age": 49,
+  "segment": "Middle-income parent aiming for low-tuition Europe/Asia (Germany, Korea, Turkey, Poland)",
+  "income": 15000,
+  "behaviour": "Telegram researcher",
+  "behaviour_how": "Reads study-abroad Telegram channels and asks in group chats before paying for anything.",
+  "objection": "It doesn't guarantee admission, so what are we paying for?",
+  "habit": "your child is in 11th grade and the school says nothing about foreign applications"
+ },
+ {
+  "id": "P006",
+  "name": "Finn",
+  "age": 42,
+  "segment": "Affluent parent aiming for US/UK top universities",
+  "income": 118000,
+  "behaviour": "Price-sensitive, DIY",
+  "behaviour_how": "Uses free tools (ChatGPT, EducationUSA, university sites) and pays only if clearly worth it.",
+  "objection": "Our child can do it with ChatGPT and free sites",
+  "habit": "your child takes IELTS prep at a learning centre after school"
+ },
+ {
+  "id": "P007",
+  "name": "Cole",
+  "age": 50,
+  "segment": "Student doing it alone, parents support but don't manage it",
+  "income": 10000,
+  "behaviour": "Trusts a local agency",
+  "behaviour_how": "Already talked to an agency in Tashkent or Almaty that is 'free' because universities pay it commission.",
+  "objection": "Local agencies help for free, why pay?",
+  "habit": "your child is in 11th grade and the school says nothing about foreign applications"
+ },
+ {
+  "id": "P008",
+  "name": "Yara",
+  "age": 34,
+  "segment": "Middle-income parent aiming for low-tuition Europe/Asia (Germany, Korea, Turkey, Poland)",
+  "income": 10000,
+  "behaviour": "Price-sensitive, DIY",
+  "behaviour_how": "Uses free tools (ChatGPT, EducationUSA, university sites) and pays only if clearly worth it.",
+  "objection": "We don't know if the data is correct",
+  "habit": "your child takes IELTS prep at a learning centre after school"
+ },
+ {
+  "id": "P009",
+  "name": "Hugo",
+  "age": 43,
+  "segment": "Student doing it alone, parents support but don't manage it",
+  "income": 10000,
+  "behaviour": "Trusts a local agency",
+  "behaviour_how": "Already talked to an agency in Tashkent or Almaty that is 'free' because universities pay it commission.",
+  "objection": "Paying online in dollars is hard or risky for us",
+  "habit": "you pay for most things by Click/Payme or Kaspi, rarely by international card"
+ },
+ {
+  "id": "P010",
+  "name": "Eli",
+  "age": 44,
+  "segment": "Middle-income parent aiming for low-tuition Europe/Asia (Germany, Korea, Turkey, Poland)",
+  "income": 17000,
+  "behaviour": "Burned before",
+  "behaviour_how": "Knows someone who paid an agency and got nothing; distrusts online payments and promises.",
+  "objection": "A website can't replace a person who talks to us",
+  "habit": "a cousin's son studied in Korea/Germany and you ask his family for advice"
+ },
+ {
+  "id": "P011",
+  "name": "Mei",
+  "age": 21,
+  "segment": "Middle-income parent aiming for low-tuition Europe/Asia (Germany, Korea, Turkey, Poland)",
+  "income": 14000,
+  "behaviour": "Trusts a local agency",
+  "behaviour_how": "Already talked to an agency in Tashkent or Almaty that is 'free' because universities pay it commission.",
+  "objection": "Is it a real company? We heard of agencies taking money and disappearing",
+  "habit": "your child is in 11th grade and the school says nothing about foreign applications"
+ },
+ {
+  "id": "P012",
+  "name": "Ezra",
+  "age": 45,
+  "segment": "Middle-income parent aiming for low-tuition Europe/Asia (Germany, Korea, Turkey, Poland)",
+  "income": 13000,
+  "behaviour": "Ambitious, will pay for top results",
+  "behaviour_how": "Considers premium consultants (Crimson-type) and wants the best chance at elite schools.",
+  "objection": "It doesn't guarantee admission, so what are we paying for?",
+  "habit": "you read Telegram channels about studying abroad most evenings"
+ },
+ {
+  "id": "P013",
+  "name": "Aisha",
+  "age": 20,
+  "segment": "Student doing it alone, parents support but don't manage it",
+  "income": 14000,
+  "behaviour": "Asks the school or teacher",
+  "behaviour_how": "Relies on a school counsellor, English teacher or relatives who studied abroad.",
+  "objection": "Paying online in dollars is hard or risky for us",
+  "habit": "you saw ads from education agencies on Instagram"
+ },
+ {
+  "id": "P014",
+  "name": "Chloe",
+  "age": 49,
+  "segment": "Student doing it alone, parents support but don't manage it",
+  "income": 19000,
+  "behaviour": "Asks the school or teacher",
+  "behaviour_how": "Relies on a school counsellor, English teacher or relatives who studied abroad.",
+  "objection": "A website can't replace a person who talks to us",
+  "habit": "you saw ads from education agencies on Instagram"
+ },
+ {
+  "id": "P015",
+  "name": "Iris",
+  "age": 44,
+  "segment": "Middle-income parent aiming for low-tuition Europe/Asia (Germany, Korea, Turkey, Poland)",
+  "income": 18000,
+  "behaviour": "Telegram researcher",
+  "behaviour_how": "Reads study-abroad Telegram channels and asks in group chats before paying for anything.",
+  "objection": "A website can't replace a person who talks to us",
+  "habit": "you pay for most things by Click/Payme or Kaspi, rarely by international card"
+ },
+ {
+  "id": "P016",
+  "name": "Sol",
+  "age": 32,
+  "segment": "Upper-middle parent aiming for UK/Europe/Canada with partial scholarship",
+  "income": 37000,
+  "behaviour": "Price-sensitive, DIY",
+  "behaviour_how": "Uses free tools (ChatGPT, EducationUSA, university sites) and pays only if clearly worth it.",
+  "objection": "Our child can do it with ChatGPT and free sites",
+  "habit": "you pay for most things by Click/Payme or Kaspi, rarely by international card"
+ },
+ {
+  "id": "P017",
+  "name": "Julian",
+  "age": 20,
+  "segment": "Affluent parent aiming for US/UK top universities",
+  "income": 117000,
+  "behaviour": "Busy parent, wants it handled",
+  "behaviour_how": "Has little time, wants someone else to manage the process and report back.",
+  "objection": "We need help in Russian or Uzbek, the forms are English",
+  "habit": "your child takes IELTS prep at a learning centre after school"
+ },
+ {
+  "id": "P018",
+  "name": "Levi",
+  "age": 27,
+  "segment": "Middle-income parent aiming for low-tuition Europe/Asia (Germany, Korea, Turkey, Poland)",
+  "income": 11000,
+  "behaviour": "Price-sensitive, DIY",
+  "behaviour_how": "Uses free tools (ChatGPT, EducationUSA, university sites) and pays only if clearly worth it.",
+  "objection": "We need help in Russian or Uzbek, the forms are English",
+  "habit": "you pay for most things by Click/Payme or Kaspi, rarely by international card"
+ },
+ {
+  "id": "P019",
+  "name": "Isla",
+  "age": 16,
+  "segment": "Upper-middle parent aiming for UK/Europe/Canada with partial scholarship",
+  "income": 26000,
+  "behaviour": "Ambitious, will pay for top results",
+  "behaviour_how": "Considers premium consultants (Crimson-type) and wants the best chance at elite schools.",
+  "objection": "Local agencies help for free, why pay?",
+  "habit": "your child takes IELTS prep at a learning centre after school"
+ },
+ {
+  "id": "P020",
+  "name": "Poppy",
+  "age": 24,
+  "segment": "Upper-middle parent aiming for UK/Europe/Canada with partial scholarship",
+  "income": 19000,
+  "behaviour": "Telegram researcher",
+  "behaviour_how": "Reads study-abroad Telegram channels and asks in group chats before paying for anything.",
+  "objection": "Paying online in dollars is hard or risky for us",
+  "habit": "you pay for most things by Click/Payme or Kaspi, rarely by international card"
+ }
+]

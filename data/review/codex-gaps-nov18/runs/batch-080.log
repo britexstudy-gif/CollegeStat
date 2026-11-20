@@ -1,0 +1,132 @@
+OpenAI Codex v0.169.0
+--------
+workdir: /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+model: gpt-6-luna
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: high
+reasoning summaries: none
+session id: 01a1ee8f-402f-7880-8446-97b4e0e14e30
+--------
+user
+You are a careful admissions-data researcher. For each university below, find facts for an
+INTERNATIONAL applicant to a FIRST-YEAR BACHELOR'S degree starting in autumn 2027 (or the nearest
+published cycle). Use the live web. Rules:
+
+- Official sources only: the university's own website (its domain or subdomains), the national
+  application service (UCAS, Common App, OUAC, uni-assist, Studyinkorea, etc.) or a government
+  statistics office. Never use rankings sites, forums, agencies, Wikipedia or blogs.
+- Every value needs the exact page URL where you read it (source_url). If you could not verify a
+  value on an official page, leave it out (null or an empty list). Never guess or estimate.
+- english: the lowest overall score accepted for undergraduate entry, per test (IELTS Academic
+  overall, TOEFL iBT total, Duolingo, PTE). If programmes differ, give the general/lowest common
+  university minimum and say so in detail (e.g. "6.5 overall, no band below 6.0; some
+  programmes higher").
+- tuition: the yearly tuition for international (non-EU / overseas) undergraduates in the local
+  currency. If it varies by programme give amount = lowest and amount_max = highest, and the
+  academic_year the fee applies to (e.g. "2026/27"). If tuition is free, amount = 0.
+- application_fee: for international first-year applicants, local currency.
+- deadlines: the main 2027-entry first-year deadlines (ISO date YYYY-MM-DD) with the route
+  (e.g. "Common App, Regular Decision", "UCAS", "university portal"). Only dates actually
+  published; if only the 2026-entry date is published, include it and put "2026 entry" in title.
+- sat: policy for international applicants; p25/p75 total SAT only if the university publishes
+  them (Common Data Set or admissions profile).
+- acceptance_rate: only if officially published (CDS, admissions statistics page).
+- notes: one short line on anything important (e.g. "Foundation year required for 11-year
+  school certificates"), else "".
+
+Spend effort on the facts students need most: English minimum, tuition, deadlines. Keep each
+detail under 160 characters. Return only the JSON that matches the schema; use each
+university's id exactly as given.
+
+Universities:
+- id: 422c21d6-8c2d-55fa-819c-419e4d1b47ac | University of Illinois Chicago | Chicago, US | http://www.uic.edu/
+- id: 07277532-423a-5f50-815a-c8cc190fdd80 | Technion - Israel Institute of Technology | Haifa, IL | http://www.technion.ac.il/
+- id: cab4be1f-d402-5a38-8c20-6bebf5c04793 | Indian Institute of Technology, Roorkee | Roorkee, IN | http://www.iitr.ac.in/
+- id: 9702e410-fabe-5f00-952b-3f5bcbabb5c5 | Southeast University | Nanjing, CN | http://www.seu.edu.cn/
+codex
+I’ll verify these against official university and application-service pages, prioritizing entry English scores, international tuition, and published deadlines for the nearest available cycle.
+exec
+/bin/zsh -lc 'cat /Users/likeanew/.agents/skills/lemma/SKILL.md' in /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+ succeeded in 0ms:
+---
+name: lemma
+description: Persistent cross-session memory for AI agents via MCP. BEFORE starting ANY task (coding, debugging, refactoring, research, docs, optimization — any language), FIRST call memory_read to load what you already know so you never re-derive or re-explore known facts. AFTER finishing, call memory_add to persist new findings and session_attempt for dead ends — unsaved knowledge is lost permanently. Distills reusable guides from experience.
+---
+
+<!-- lemma:skill:v=0.21.0 -->
+
+# Lemma — Persistent Memory & Learning
+
+Lemma is a persistent memory server for AI agents over the Model Context Protocol.
+Every session starts blank — knowledge survives ONLY through tool calls. If you
+learn something and don't save it (`memory_add`), it is gone permanently.
+
+## Workflow
+1. **RECALL** — `memory_read` / `semantic_search`: load what's already known for this
+   project/task. Never re-explore code or re-derive facts that are already saved.
+2. **ACT** — do the task.
+3. **PERSIST** — `memory_add` for new insights; `guide_practice` for guides applied;
+   `session_attempt` for abandoned/dead-end approaches (the most valuable records).
+
+## Two knowledge layers
+- **Memory fragments** (`memory_read` / `memory_add`): atomic facts. Types: `fact`,
+  `pattern`, `lesson`, `warning`, `context`. Confidence evolves with use and feedback.
+- **Guides** (`guide_get` / `guide_distill` / `guide_practice`): procedural skills
+  distilled from fragments. Track usage count + success/failure rate.
+Pipeline: `experience -> memory_add -> pattern/lesson -> guide_distill -> guide_practice`.
+
+## Tools at a glance
+- **Recall & search**: `memory_read`, `semantic_search`, `memory_library` (full
+  snapshot + maintenance signals), `memory_stats`, `memory_audit`.
+- **Write & maintain**: `memory_add`, `memory_update`, `memory_forget`,
+  `memory_merge`, `memory_relate` (supports / contradicts / supersedes / related_to),
+  `memory_feedback`.
+- **Guides**: `guide_get`, `guide_create`, `guide_distill`, `guide_practice`,
+  `guide_update`, `guide_forget`, `guide_merge`.
+- **Sessions & reasoning**: `session_start`, `session_end`, `session_attempt`,
+  `session_stats`, `suggestion_respond`.
+- **Background intelligence**: `conflict_scan`, `proactive_analysis`,
+  `project_analytics` (run automatically; act on signals when sensible).
+
+## Writing a fragment
+```
+## [Topic Title]
+### Context
+[1-2 sentences: what and why it matters]
+### [Content Section]
+- [Key fact 1]
+- [Key fact 2]
+### Rules (optional)
+- [Absolute constraint]
+```
+One idea per fragment, 30-2000 chars, structured markdown (not prose). **Store
+fragments in ENGLISH** (required for search/retrieval). Never ask permission to save.
+
+## Background intelligence
+Conflict detection, distill/merge/refine suggestions, and auto-linking run
+automatically. From the CLI, `lemma -lib` prints a full knowledge-base snapshot
+and `lemma -vis` launches a visualizer.
+
+web search: 
+web search: site: uic.edu international undergraduate English proficiency IELTS TOEFL tuition 2026 2027 application deadline fall 2027 ...
+web search: 
+web search: site:admissions.uic.edu international undergraduate tuition 2026-2027 cost application fee deadline April 1 first year ...
+web search: 
+web search: site:iitr.ac.in "DASA" 2026 SAT undergraduate tuition ...
+web search: 
+web search: site:iitr.ac.in "foreign" "JEE Advanced" international undergraduate admission IIT Roorkee fee ...
+web search: 
+web search: site:iitr.ac.in "Fee Structure" "B.Tech" 2026 tuition IIT Roorkee ...
+web search: 
+web search: 
+web search: 
+web search: site:admissions.uic.edu "international" "tuition" undergraduate 2026 UIC cost 2026-2027 ...
+web search: 
+web search: 
+codex
+{"universities":[{"id":"422c21d6-8c2d-55fa-819c-419e4d1b47ac","english":[{"test":"IELTS","minimum":6.5,"detail":"6.5 overall; minimum 6.0 each band. Some programs may require higher scores.","source_url":"https://admissions.uic.edu/undergraduate/requirements-deadlines/international-requirements"},{"test":"TOEFL iBT","minimum":80,"detail":"80 total for tests before Jan 21, 2026; new format minimum 4.5. Some programs may require higher scores.","source_url":"https://admissions.uic.edu/undergraduate/requirements-deadlines/international-requirements"},{"test":"Duolingo","minimum":120,"detail":"120 total; accepted for Fall 2027 entry and later. Some programs may require higher scores.","source_url":"https://admissions.uic.edu/undergraduate/requirements-deadlines/international-requirements"},{"test":"PTE Academic","minimum":54,"detail":"54 overall. Some programs may require higher scores.","source_url":"https://admissions.uic.edu/undergraduate/requirements-deadlines/international-requirements"}],"tuition":{"amount":35596,"amount_max":38396,"currency":"USD","period":"year","academic_year":"2026/27","detail":"International undergraduate tuition and fees estimate; varies by program. Living costs excluded.","source_url":"https://ois.uic.edu/immigration/estimated-expenses/"},"application_fee":{"amount":170,"currency":"USD","source_url":"https://admissions.uic.edu/undergraduate/requirements-deadlines/international-requirements"},"deadlines":[{"title":"Fall 2027 Early Action","due_at":"2026-11-02","route":"Common App","source_url":"https://admissions.uic.edu/undergraduate/requirements-deadlines/deadlines"},{"title":"Fall 2027 Regular Decision","due_at":"2027-02-01","route":"Common App","source_url":"https://admissions.uic.edu/undergraduate/requirements-deadlines/deadlines"}],"sat":{"policy":"optional","p25":1108,"p75":1320,"source_url":"https://admissions.uic.edu/undergraduate/requirements-deadlines/first-year-requirements"},"acceptance_rate":null,"notes":""},{"id":"07277532-423a-5f50-815a-c8cc190fdd80","english":[],"tuition":{"amount":15254,"amount_max":null,"currency":"ILS","period":"year","academic_year":"2026/27","detail":"Annual tuition for non-citizens in the international BSc program; fees may change for 2027/28.","source_url":"https://int.technion.ac.il/programs/bsc-in-engineering-1st-year-in-english/costs/"},"application_fee":{"amount":513,"currency":"ILS","source_url":"https://int.technion.ac.il/programs/bsc-in-engineering-1st-year-in-english/admission-and-costs/"},"deadlines":[],"sat":{"policy":"required","p25":null,"p75":null,"source_url":"https://int.technion.ac.il/programs/bsc-in-engineering-1st-year-in-english/admission-and-costs/"},"acceptance_rate":null,"notes":"International BSc starts in English and transitions to Hebrew after year one; SAT, ACT or Israeli psychometric score required."},{"id":"cab4be1f-d402-5a38-8c20-6bebf5c04793","english":[],"tuition":{"amount":200000,"amount_max":400000,"currency":"INR","period":"year","academic_year":"2026/27","detail":"Foreign-national tuition: INR 200,000–400,000 yearly; top 20 eligible students from listed countries pay the Indian-student rate.","source_url":"https://iitr.ac.in/Academics/static/Institute_Fee/2026-27/UGIst.pdf"},"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"First-year admission is through JEE Advanced; 2027 exam date published, but registration dates are not yet available."},{"id":"9702e410-fabe-5f00-952b-3f5bcbabb5c5","english":[{"test":"IELTS","minimum":6,"detail":"Minimum 6.0 for English-taught programs; some programs may require higher scores.","source_url":"https://cis.seu.edu.cn/_upload/article/files/2d/c9/d078d2474634af26c4d4149f03a8/b9e258ef-4a63-47b1-bea3-9a1da573f801.pdf"},{"test":"TOEFL iBT","minimum":80,"detail":"Minimum 80 for English-taught programs; some programs may require higher scores.","source_url":"https://cis.seu.edu.cn/_upload/article/files/2d/c9/d078d2474634af26c4d4149f03a8/b9e258ef-4a63-47b1-bea3-9a1da573f801.pdf"},{"test":"Duolingo","minimum":100,"detail":"Minimum 100 for English-taught programs; some programs may require higher scores.","source_url":"https://cis.seu.edu.cn/_upload/article/files/2d/c9/d078d2474634af26c4d4149f03a8/b9e258ef-4a63-47b1-bea3-9a1da573f801.pdf"}],"tuition":{"amount":30000,"amount_max":50000,"currency":"CNY","period":"year","academic_year":"2027/28","detail":"English-taught undergraduate programs: CNY 30,000–50,000 per year, varying by program.","source_url":"https://cis.seu.edu.cn/_upload/article/files/0f/77/25e1b6864596852a1f98f4265835/a66738e4-f670-447a-8ef2-c6cd16e4b090.pdf"},"application_fee":{"amount":800,"currency":"CNY","source_url":"https://cis.seu.edu.cn/_upload/article/files/0f/77/25e1b6864596852a1f98f4265835/a66738e4-f670-447a-8ef2-c6cd16e4b090.pdf"},"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"2027 application batches run Nov 2026–Feb 2027, Mar–May 2027, and June 2027; the notice gives no exact closing dates."}]}
+tokens used
+62,429
+{"universities":[{"id":"422c21d6-8c2d-55fa-819c-419e4d1b47ac","english":[{"test":"IELTS","minimum":6.5,"detail":"6.5 overall; minimum 6.0 each band. Some programs may require higher scores.","source_url":"https://admissions.uic.edu/undergraduate/requirements-deadlines/international-requirements"},{"test":"TOEFL iBT","minimum":80,"detail":"80 total for tests before Jan 21, 2026; new format minimum 4.5. Some programs may require higher scores.","source_url":"https://admissions.uic.edu/undergraduate/requirements-deadlines/international-requirements"},{"test":"Duolingo","minimum":120,"detail":"120 total; accepted for Fall 2027 entry and later. Some programs may require higher scores.","source_url":"https://admissions.uic.edu/undergraduate/requirements-deadlines/international-requirements"},{"test":"PTE Academic","minimum":54,"detail":"54 overall. Some programs may require higher scores.","source_url":"https://admissions.uic.edu/undergraduate/requirements-deadlines/international-requirements"}],"tuition":{"amount":35596,"amount_max":38396,"currency":"USD","period":"year","academic_year":"2026/27","detail":"International undergraduate tuition and fees estimate; varies by program. Living costs excluded.","source_url":"https://ois.uic.edu/immigration/estimated-expenses/"},"application_fee":{"amount":170,"currency":"USD","source_url":"https://admissions.uic.edu/undergraduate/requirements-deadlines/international-requirements"},"deadlines":[{"title":"Fall 2027 Early Action","due_at":"2026-11-02","route":"Common App","source_url":"https://admissions.uic.edu/undergraduate/requirements-deadlines/deadlines"},{"title":"Fall 2027 Regular Decision","due_at":"2027-02-01","route":"Common App","source_url":"https://admissions.uic.edu/undergraduate/requirements-deadlines/deadlines"}],"sat":{"policy":"optional","p25":1108,"p75":1320,"source_url":"https://admissions.uic.edu/undergraduate/requirements-deadlines/first-year-requirements"},"acceptance_rate":null,"notes":""},{"id":"07277532-423a-5f50-815a-c8cc190fdd80","english":[],"tuition":{"amount":15254,"amount_max":null,"currency":"ILS","period":"year","academic_year":"2026/27","detail":"Annual tuition for non-citizens in the international BSc program; fees may change for 2027/28.","source_url":"https://int.technion.ac.il/programs/bsc-in-engineering-1st-year-in-english/costs/"},"application_fee":{"amount":513,"currency":"ILS","source_url":"https://int.technion.ac.il/programs/bsc-in-engineering-1st-year-in-english/admission-and-costs/"},"deadlines":[],"sat":{"policy":"required","p25":null,"p75":null,"source_url":"https://int.technion.ac.il/programs/bsc-in-engineering-1st-year-in-english/admission-and-costs/"},"acceptance_rate":null,"notes":"International BSc starts in English and transitions to Hebrew after year one; SAT, ACT or Israeli psychometric score required."},{"id":"cab4be1f-d402-5a38-8c20-6bebf5c04793","english":[],"tuition":{"amount":200000,"amount_max":400000,"currency":"INR","period":"year","academic_year":"2026/27","detail":"Foreign-national tuition: INR 200,000–400,000 yearly; top 20 eligible students from listed countries pay the Indian-student rate.","source_url":"https://iitr.ac.in/Academics/static/Institute_Fee/2026-27/UGIst.pdf"},"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"First-year admission is through JEE Advanced; 2027 exam date published, but registration dates are not yet available."},{"id":"9702e410-fabe-5f00-952b-3f5bcbabb5c5","english":[{"test":"IELTS","minimum":6,"detail":"Minimum 6.0 for English-taught programs; some programs may require higher scores.","source_url":"https://cis.seu.edu.cn/_upload/article/files/2d/c9/d078d2474634af26c4d4149f03a8/b9e258ef-4a63-47b1-bea3-9a1da573f801.pdf"},{"test":"TOEFL iBT","minimum":80,"detail":"Minimum 80 for English-taught programs; some programs may require higher scores.","source_url":"https://cis.seu.edu.cn/_upload/article/files/2d/c9/d078d2474634af26c4d4149f03a8/b9e258ef-4a63-47b1-bea3-9a1da573f801.pdf"},{"test":"Duolingo","minimum":100,"detail":"Minimum 100 for English-taught programs; some programs may require higher scores.","source_url":"https://cis.seu.edu.cn/_upload/article/files/2d/c9/d078d2474634af26c4d4149f03a8/b9e258ef-4a63-47b1-bea3-9a1da573f801.pdf"}],"tuition":{"amount":30000,"amount_max":50000,"currency":"CNY","period":"year","academic_year":"2027/28","detail":"English-taught undergraduate programs: CNY 30,000–50,000 per year, varying by program.","source_url":"https://cis.seu.edu.cn/_upload/article/files/0f/77/25e1b6864596852a1f98f4265835/a66738e4-f670-447a-8ef2-c6cd16e4b090.pdf"},"application_fee":{"amount":800,"currency":"CNY","source_url":"https://cis.seu.edu.cn/_upload/article/files/0f/77/25e1b6864596852a1f98f4265835/a66738e4-f670-447a-8ef2-c6cd16e4b090.pdf"},"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"2027 application batches run Nov 2026–Feb 2027, Mar–May 2027, and June 2027; the notice gives no exact closing dates."}]}

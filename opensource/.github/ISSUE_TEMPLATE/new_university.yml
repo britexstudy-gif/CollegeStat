@@ -1,0 +1,26 @@
+name: New university
+description: Suggest a university that is missing
+labels: [data, new-university]
+body:
+  - type: input
+    id: name
+    attributes: { label: University name (official, original language too) }
+    validations: { required: true }
+  - type: input
+    id: country
+    attributes: { label: Country }
+    validations: { required: true }
+  - type: input
+    id: website
+    attributes: { label: Official website }
+    validations: { required: true }
+  - type: input
+    id: admissions
+    attributes: { label: Official international admissions page URL }
+    validations: { required: true }
+  - type: textarea
+    id: facts
+    attributes: { label: Facts you already know, description: "Tuition, deadlines, IELTS. One line each with its official URL and date." }
+  - type: input
+    id: credit
+    attributes: { label: Name or handle for credit (optional) }

@@ -1,0 +1,19 @@
+{
+  "repository": "https://github.com/DavidHDev/react-bits",
+  "commit": "ca44b3f9ee180676a06d7de8ec6bea84cddff85b",
+  "retrieved_at": "2026-10-05",
+  "files_sha256": {
+    "LICENSE.md": "f4c33af6739191537738662d223b68d77bc226f4b57ea883e16481d8cc5c73c9",
+    "src/ts-default/Backgrounds/Threads/Threads.tsx": "60968f34b880a0461e58431742836a174b0c56a7d3c66fc98192c028451fdfac",
+    "src/ts-default/Backgrounds/Threads/Threads.css": "553118f93593a3c30109f2b911fe076f89ab7d43036cdee8dc951e4497d078e2",
+    "src/ts-default/Backgrounds/Aurora/Aurora.tsx": "f32479c351d336a2b0e360f2486ba474b82194bd0415219b5efdd91d0fedbf40"
+  },
+  "integration": "Aurora (auth) and DotGrid are integrated within the application, not offered for sale or standalone redistribution. PixelBlast and FolderFloat were removed on 15 November.",
+  "user_supplied_components": {
+    "ParticleText": {
+      "sha256": "cd7d33f48d898703f68ed96cb3a724bf61822cb5f7f9288c3686025624160ae5",
+      "adaptation": "Visibility-paused 30fps canvas with DOM fallback and reduced-motion behavior"
+    }
+  },
+  "aurora_retrieved_at": "2026-10-06"
+}

@@ -1,0 +1,17 @@
+# Article cover photographs
+
+Cover photos for CollegeStat guides, from Wikimedia Commons under the licence named, shown with a credit line on each article. Resized, compressed WebP derivatives (at most 1200 px wide, 150 KB); derivatives keep the original licence. Checked 16 Nov 2026.
+
+- `balanced-university-list.webp`: [People are walking over the footbridges at the campus Roeterseiland; free photo Amsterdam, 10-2021](https://commons.wikimedia.org/wiki/File:People_are_walking_over_the_footbridges_at_the_campus_Roeterseiland;_free_photo_Amsterdam,_10-2021.jpg) by Fons Heijnsbroek, [CC0](https://creativecommons.org/publicdomain/zero/1.0/deed.en).
+- `common-app-2026-27.webp`: [Study Areas on 3rd Floor at the HCC](https://commons.wikimedia.org/wiki/File:Study_Areas_on_3rd_Floor_at_the_HCC.jpg) by D00264450, [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0).
+- `common-app-essay-practical.webp`: [Smiling Student Working on Assignments at Desk](https://commons.wikimedia.org/wiki/File:Smiling_Student_Working_on_Assignments_at_Desk.jpg) by Heidy Garcia, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0).
+- `english-tests-central-asia.webp`: [Mathematics lecture at the Helsinki University of Technology](https://commons.wikimedia.org/wiki/File:Mathematics_lecture_at_the_Helsinki_University_of_Technology.jpg) by Tungsten, Public domain.
+- `germany-studienkolleg.webp`: [Aerial image of Ludwig-Maximilians-Universität München (view from the southeast)](https://commons.wikimedia.org/wiki/File:Aerial_image_of_Ludwig-Maximilians-Universit%C3%A4t_M%C3%BCnchen_(view_from_the_southeast).jpg) by Carsten Steger, [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0).
+- `kazakhstan-11-year-certificate.webp`: [Shymbulak, Almaty](https://commons.wikimedia.org/wiki/File:Shymbulak,_Almaty_(P1180200).jpg) by Matti Blume, [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.en).
+- `sat-central-asia.webp`: [Tashkent City at Night](https://commons.wikimedia.org/wiki/File:Tashkent_City_at_Night.jpg) by Drksll, [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0).
+- `south-korea-gks-direct.webp`: [Gyeonghoeru (Royal Banquet Hall) at Gyeongbokgung Palace, Seoul](https://commons.wikimedia.org/wiki/File:Gyeonghoeru_(Royal_Banquet_Hall)_at_Gyeongbokgung_Palace,_Seoul.jpg) by Frank Schulenburg, [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0).
+- `stipendium-hungaricum-central-asia.webp`: [Széchenyi Chain Bridge in Budapest at night](https://commons.wikimedia.org/wiki/File:Sz%C3%A9chenyi_Chain_Bridge_in_Budapest_at_night.jpg) by Wilfredor, [CC0](https://creativecommons.org/publicdomain/zero/1.0/deed.en).
+- `student-visa-basics.webp`: [DN Int'l Airport Jetstar Check-in](https://commons.wikimedia.org/wiki/File:DN_Int%27l_Airport_Jetstar_Check-in.jpg) by Dragfyre, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0).
+- `ucas-2027.webp`: [20130808 Kings College Chapel 01](https://commons.wikimedia.org/wiki/File:20130808_Kings_College_Chapel_01.jpg) by Dmitry Tonkonog, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0).
+- `us-need-based-aid-internationals.webp`: [Harvard Yard im Sommer](https://commons.wikimedia.org/wiki/File:Harvard_Yard_im_Sommer.jpg) by Marco Almbauer, Public domain.
+- `uzbekistan-11-year-certificate.webp`: [Registan Samarkand Uzbekistan](https://commons.wikimedia.org/wiki/File:Registan_Samarkand_Uzbekistan.JPG) by Stomac, [CC BY-SA 2.0 fr](https://creativecommons.org/licenses/by-sa/2.0/fr/deed.en).

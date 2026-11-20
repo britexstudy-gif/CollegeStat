@@ -1,0 +1,30 @@
+name: Data correction
+description: A value on CollegeStat is wrong or outdated
+labels: [data, correction]
+body:
+  - type: input
+    id: university
+    attributes: { label: University, placeholder: "Name or collegestat.xyz link" }
+    validations: { required: true }
+  - type: input
+    id: field
+    attributes: { label: Field, placeholder: "e.g. tuition, IELTS, deadline" }
+    validations: { required: true }
+  - type: input
+    id: current
+    attributes: { label: Current value shown }
+  - type: input
+    id: correct
+    attributes: { label: Correct value, description: "Include currency, period and academic year" }
+    validations: { required: true }
+  - type: input
+    id: source
+    attributes: { label: Official source URL, description: "The university's own page or an official government dataset" }
+    validations: { required: true }
+  - type: input
+    id: date
+    attributes: { label: Date you checked the page, placeholder: "YYYY-MM-DD" }
+    validations: { required: true }
+  - type: input
+    id: credit
+    attributes: { label: Name or handle for credit (optional) }

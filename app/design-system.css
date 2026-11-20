@@ -26,7 +26,10 @@
   --primary: var(--cs-blue);
 }
 
-/* Dark: deeper than before, translucent surfaces, brighter text */
+/* Dark: deeper than before, translucent surfaces, brighter text
+ * NOTE: .dark --background canonical is #111823 (see refinement.css,
+ * enforced in refinement-oct05.css last import). This file's --cs-bg #04070D
+ * predates unification — do not duplicate; canonical override wins. */
 .dark {
   --cs-bg: #04070D;
   --cs-surface: rgba(255, 255, 255, 0.028);
@@ -43,9 +46,9 @@
   --cs-shadow-lg: 0 4px 16px rgba(0, 0, 0, 0.55), 0 40px 100px rgba(0, 0, 0, 0.6);
   --background: var(--cs-bg);
   --foreground: var(--cs-ink);
-  --card: #0A111E;
+  --card: #121212;
   --card-foreground: var(--cs-ink);
-  --popover: #0B1322;
+  --popover: #141414;
   --popover-foreground: var(--cs-ink);
   --muted: rgba(255, 255, 255, 0.05);
   --muted-foreground: var(--cs-secondary);
@@ -75,7 +78,8 @@ body {
 .site-main {
   position: relative;
   min-height: 72vh;
-  max-width: 1200px;
+  /* Canonical width is 1280px (see open-design.css). Was 1200px — unified. */
+  max-width: 1280px;
   margin: 0 auto;
   padding: 30px 28px 110px;
 }
@@ -172,8 +176,9 @@ strong, b { font-variant-numeric: tabular-nums; }
   height: 20px;
   flex: none;
   margin-right: 9px;
+  color: var(--cs-logo);
 }
-.brand-dot, .brand-period { color: var(--cs-blue); }
+.brand-dot, .brand-period { color: var(--cs-logo); }
 
 .button {
   display: inline-flex; align-items: center; justify-content: center; gap: 8px;
@@ -225,12 +230,13 @@ strong, b { font-variant-numeric: tabular-nums; }
 }
 .dark .avatar { background: linear-gradient(135deg, rgba(122,162,247,.22), rgba(122,162,247,.08)); color: #C9DAFD; }
 
-.text-link { display: inline-flex; align-items: center; gap: 6px; color: var(--cs-blue-ink); font-weight: 600; font-size: 14px; }
+.text-link { display: inline-flex; align-items: center; gap: 6px; color: var(--cs-blue-ink); font-weight: 600; font-size: 14px; min-height: 26px; }
 .dark .text-link { color: #A9C2FB; }
 .text-link:hover { text-decoration: underline; text-underline-offset: 3px; }
 
 /* ---------- floating navbar ---------- */
-
+/* DEPRECATED: shell uses .site-navigation, see navigation.css.
+ * Kept for legacy routes only — do not extend .navbar, use .site-navigation. */
 .navbar {
   position: sticky; top: 14px; z-index: 40;
   max-width: 1200px; margin: 14px auto 0; padding: 0 10px 0 18px; height: 62px;
@@ -256,20 +262,6 @@ strong, b { font-variant-numeric: tabular-nums; }
 /* ---------- hero ---------- */
 
 .landing-hero { position: relative; display: grid; grid-template-columns: 1.04fr 0.96fr; gap: 52px; align-items: center; padding: 76px 8px 60px; }
-.hero-atmosphere {
-  position: absolute; inset: -60px -80px auto -80px; height: 620px; z-index: -1; pointer-events: none;
-  background:
-    radial-gradient(600px 400px at 20% 32%, rgba(37, 99, 235, 0.16), transparent 65%),
-    radial-gradient(520px 380px at 66% 20%, rgba(96, 165, 250, 0.14), transparent 65%),
-    radial-gradient(420px 300px at 46% 60%, rgba(167, 139, 250, 0.08), transparent 65%);
-  filter: blur(12px) saturate(130%);
-}
-.dark .hero-atmosphere {
-  background:
-    radial-gradient(640px 420px at 20% 32%, rgba(59, 110, 246, 0.28), transparent 66%),
-    radial-gradient(560px 400px at 66% 20%, rgba(96, 165, 250, 0.17), transparent 66%),
-    radial-gradient(460px 320px at 46% 62%, rgba(129, 140, 248, 0.12), transparent 66%);
-}
 .hero-copy .eyebrow, .eyebrow { display: flex; align-items: center; gap: 8px; font-size: 11px; font-weight: 700; letter-spacing: 1.7px; color: var(--cs-secondary); margin-bottom: 18px; }
 .tiny-square { width: 6px; height: 6px; border-radius: 1.5px; background: var(--cs-blue); display: inline-block; box-shadow: 0 0 10px rgba(37,99,235,.5); }
 .hero-copy h1 { font-size: clamp(48px, 5.6vw, 74px); line-height: 1.0; letter-spacing: -0.045em; font-weight: 750; }
@@ -441,11 +433,12 @@ strong, b { font-variant-numeric: tabular-nums; }
 .directory-filters { position: sticky; top: 94px; padding: 2px 22px 22px 0; border-right: 1px solid var(--cs-border); }
 .filter-heading { display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px; }
 .filter-heading span { font-size: 13px; font-weight: 700; }
-.filter-heading button { font-size: 12px; color: var(--cs-blue-ink); font-weight: 650; }
+.filter-heading button { font-size: 12px; color: var(--cs-blue-ink); font-weight: 650; min-height: 26px; padding: 3px 8px; border-radius: 8px; }
+.filter-heading button:hover { background: rgba(37, 99, 235, 0.08); }
 .filter-accordion [data-slot="accordion-item"] { border-bottom: 1px solid var(--cs-border); }
 .filter-accordion button { font-size: 14px; font-weight: 550; padding: 14px 0; }
 .filter-checkbox { display: flex; align-items: center; gap: 10px; font-size: 13px; margin-top: 15px; cursor: pointer; }
-.filter-footnote { margin-top: 18px; font-size: 12px; line-height: 1.65; color: var(--cs-faint); }
+.filter-footnote { margin-top: 18px; font-size: 12px; line-height: 1.65; color: var(--cs-secondary); }
 .directory-toolbar { display: flex; justify-content: space-between; align-items: center; gap: 14px; margin-bottom: 18px; }
 .directory-toolbar > span { font-size: 13px; color: var(--cs-secondary); }
 .directory-toolbar > span strong { color: var(--cs-ink); font-size: 16px; }
@@ -507,10 +500,11 @@ strong, b { font-variant-numeric: tabular-nums; }
 .ranking-badge span { font-weight: 500; color: var(--cs-secondary); font-size: 11px; }
 .ranking-unavailable { display: inline-block; margin-top: 15px; font-size: 12px; color: var(--cs-faint); }
 .university-card-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 22px 0 18px; }
+.university-stat { display: block; }
 .university-stat span { display: flex; align-items: center; gap: 5px; font-size: 12px; color: var(--cs-secondary); }
 .university-stat strong { display: block; font-size: 21px; letter-spacing: -0.02em; margin-top: 6px; font-variant-numeric: tabular-nums; font-weight: 700; }
 .university-stat strong.unavailable { font-size: 14px; font-weight: 500; color: var(--cs-faint); }
-.university-stat small { font-size: 11px; color: var(--cs-faint); }
+.university-stat small { font-size: 11px; color: var(--cs-secondary); }
 .source-trigger { all: unset; cursor: pointer; display: block; width: 100%; border-radius: 10px; }
 .source-trigger:focus-visible { outline: 2px solid var(--cs-blue); outline-offset: 3px; }
 .program-tags { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 20px; }
@@ -586,7 +580,7 @@ strong, b { font-variant-numeric: tabular-nums; }
 
 /* shadcn surfaces follow theme instead of staying white */
 .dark [data-slot="dialog-content"], .dark [data-slot="sheet-content"], .dark [data-slot="dropdown-menu-content"], .dark [data-slot="select-content"], .dark [data-slot="popover-content"], .dark [data-slot="command-dialog"] {
-  background: rgba(11, 19, 34, 0.92) !important;
+  background: rgba(20, 20, 20, 0.97) !important;
   border-color: rgba(255, 255, 255, 0.1) !important;
   color: var(--cs-ink);
 }

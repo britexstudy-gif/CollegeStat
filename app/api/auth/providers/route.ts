@@ -4,7 +4,10 @@ import { serverConfig, serviceClient } from "@/server/config";
 export async function GET() {
   const config = serverConfig();
   if (!config.url || !config.anon)
-    return Response.json({ available: null }, { status: 503 });
+    return Response.json(
+      { available: null },
+      { status: 503, headers: { "Cache-Control": "no-store" } },
+    );
   try {
     const response = await fetch(config.url + "/auth/v1/settings", {
       headers: { apikey: config.anon },

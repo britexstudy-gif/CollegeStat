@@ -1,0 +1,192 @@
+.support-message-form {
+  min-width: 0;
+  padding: 28px;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  background: var(--card);
+}
+.support-message-form fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 18px;
+  min-width: 0;
+}
+.support-message-form label {
+  display: grid;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.support-message-form input:not([type="checkbox"]),
+.support-message-form textarea,
+.support-message-form select {
+  width: 100%;
+  min-width: 0;
+  padding: 12px 14px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  color: var(--foreground);
+  background: var(--background);
+  font: inherit;
+}
+.support-message-form textarea {
+  resize: vertical;
+}
+/* Select and text inputs side by side must share one height. */
+.support-message-form input:not([type="checkbox"]),
+.support-message-form select {
+  height: 48px;
+}
+.support-message-form .support-message-intro {
+  margin: 0 0 18px;
+}
+.support-message-form input:focus-visible,
+.support-message-form textarea:focus-visible,
+.support-message-form select:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 3px;
+}
+.support-message-fields {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+.support-message-form small,
+.support-message-note {
+  color: var(--muted-foreground);
+  font-size: 12px;
+  font-weight: 400;
+}
+.support-message-form .support-message-consent {
+  grid-template-columns: auto 1fr;
+  align-items: start;
+  line-height: 1.6;
+}
+.support-message-consent input {
+  margin-top: 5px;
+  width: 16px;
+  height: 16px;
+  accent-color: var(--primary);
+}
+.support-message-trap {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+}
+.support-message-error {
+  color: var(--destructive);
+  line-height: 1.6;
+}
+.support-message-success {
+  display: grid;
+  gap: 14px;
+  justify-items: start;
+  overflow-wrap: anywhere;
+}
+.workspace-report-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 8px 10px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--muted-foreground);
+  background: var(--card);
+  font-size: 12px;
+}
+.workspace-report-button:hover,
+.workspace-report-button:focus-visible {
+  color: var(--foreground);
+  border-color: var(--primary);
+}
+.workspace-report-dialog {
+  max-height: min(90dvh, 850px);
+  overflow: auto;
+}
+.workspace-report-dialog .support-message-form {
+  padding: 0;
+  border: 0;
+}
+.staff-support-inbox {
+  padding: 24px;
+  max-width: 1200px;
+}
+.staff-inbox-toolbar {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.staff-inbox-message {
+  display: grid;
+  grid-template-columns: 1fr minmax(220px, 0.45fr);
+  gap: 24px;
+  padding: 24px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--card);
+  margin: 12px 0;
+}
+.staff-inbox-message h3 {
+  margin: 12px 0;
+  font-size: 19px;
+  overflow-wrap: anywhere;
+}
+.staff-inbox-message p {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  line-height: 1.65;
+}
+.staff-inbox-message small {
+  color: var(--muted-foreground);
+  display: block;
+  line-height: 1.8;
+}
+.staff-inbox-message label {
+  display: grid;
+  gap: 8px;
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+.staff-inbox-message textarea,
+.staff-inbox-message select,
+.staff-inbox-toolbar select {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 10px;
+  background: var(--background);
+  color: var(--foreground);
+  font: inherit;
+  width: 100%;
+}
+.staff-inbox-toolbar select {
+  width: auto;
+}
+@media (max-width: 700px) {
+  .support-message-fields,
+  .staff-inbox-message {
+    grid-template-columns: 1fr;
+  }
+  .support-message-form,
+  .staff-support-inbox {
+    padding: 18px;
+  }
+  .workspace-report-button span {
+    display: none;
+  }
+  .workspace-report-button {
+    padding: 8px;
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .workspace-report-button {
+    transition:
+      color 0.18s,
+      border-color 0.18s;
+  }
+}

@@ -1,0 +1,70 @@
+OpenAI Codex v0.169.0
+--------
+workdir: /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+model: gpt-6-luna
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: high
+reasoning summaries: none
+session id: 01a1ee85-be1e-7481-ad0e-facea87c11b1
+--------
+user
+You are a careful admissions-data researcher. For each university below, find facts for an
+INTERNATIONAL applicant to a FIRST-YEAR BACHELOR'S degree starting in autumn 2027 (or the nearest
+published cycle). Use the live web. Rules:
+
+- Official sources only: the university's own website (its domain or subdomains), the national
+  application service (UCAS, Common App, OUAC, uni-assist, Studyinkorea, etc.) or a government
+  statistics office. Never use rankings sites, forums, agencies, Wikipedia or blogs.
+- Every value needs the exact page URL where you read it (source_url). If you could not verify a
+  value on an official page, leave it out (null or an empty list). Never guess or estimate.
+- english: the lowest overall score accepted for undergraduate entry, per test (IELTS Academic
+  overall, TOEFL iBT total, Duolingo, PTE). If programmes differ, give the general/lowest common
+  university minimum and say so in detail (e.g. "6.5 overall, no band below 6.0; some
+  programmes higher").
+- tuition: the yearly tuition for international (non-EU / overseas) undergraduates in the local
+  currency. If it varies by programme give amount = lowest and amount_max = highest, and the
+  academic_year the fee applies to (e.g. "2026/27"). If tuition is free, amount = 0.
+- application_fee: for international first-year applicants, local currency.
+- deadlines: the main 2027-entry first-year deadlines (ISO date YYYY-MM-DD) with the route
+  (e.g. "Common App, Regular Decision", "UCAS", "university portal"). Only dates actually
+  published; if only the 2026-entry date is published, include it and put "2026 entry" in title.
+- sat: policy for international applicants; p25/p75 total SAT only if the university publishes
+  them (Common Data Set or admissions profile).
+- acceptance_rate: only if officially published (CDS, admissions statistics page).
+- notes: one short line on anything important (e.g. "Foundation year required for 11-year
+  school certificates"), else "".
+
+Spend effort on the facts students need most: English minimum, tuition, deadlines. Keep each
+detail under 160 characters. Return only the JSON that matches the schema; use each
+university's id exactly as given.
+
+Universities:
+- id: 0e43791e-b46f-5ae7-add6-e512644375e3 | Loughborough University | Loughborough, GB | http://www.lboro.ac.uk/
+- id: 82ab247b-2fe2-56ce-90a7-292c759b906f | University of Padua | Padua, IT | http://www.unipd.it/
+- id: 48888524-717e-5143-90bf-457f3f85ba30 | Ecole Normale Supérieure de Lyon | Lyon, FR | http://www.ens-lyon.fr/
+- id: 286aa6be-a3ea-54aa-bd17-a50958d97579 | Indian Institute of Technology Kharagpur | Kharagpur, IN | http://www.iitkgp.ac.in/
+codex
+I’ll check each institution’s official admissions, language, fees, and deadline pages, prioritizing the nearest published cycle and leaving unverifiable fields empty.
+web search: 
+web search: site:lboro.ac.uk international undergraduate English language requirements IELTS TOEFL fees 2026 2027 ...
+web search: 
+web search: site:lboro.ac.uk/study/undergraduate/fees-and-funding international fees 2026 2027 undergraduate ...
+web search: 
+web search: site:lboro.ac.uk "Duolingo English Test" "IELTS" undergraduate 2027 Loughborough standard ...
+web search: 
+web search: 
+web search: 
+web search: 
+web search: 
+web search: site:jeeadv.ac.in 2026 foreign candidates registration deadline JEE Advanced 2026 ...
+web search: 
+web search: 
+web search: 
+web search: 
+codex
+{"universities":[{"id":"0e43791e-b46f-5ae7-add6-e512644375e3","english":[{"test":"IELTS","minimum":6.5,"detail":"6.5 overall, no band below 6.0; some programmes require higher scores.","source_url":"https://www.lboro.ac.uk/study/apply/english-language-requirements/"},{"test":"TOEFL iBT","minimum":4.5,"detail":"For tests from 21 Jan 2026: 4.5 overall; writing/listening 4.5, speaking/reading 4.0. Older tests: 88 overall, 21 each section.","source_url":"https://www.lboro.ac.uk/study/apply/english-language-requirements/"},{"test":"Duolingo","minimum":120,"detail":"120 overall; speaking 110, writing 115, reading 110, listening 105.","source_url":"https://www.lboro.ac.uk/study/apply/english-language-requirements/"},{"test":"PTE Academic","minimum":65,"detail":"65 overall, no sub-test below 61.","source_url":"https://www.lboro.ac.uk/study/apply/english-language-requirements/"},{"test":"Cambridge C1/C2","minimum":180,"detail":"C1 Advanced: 180; C2 Proficiency: 200.","source_url":"https://www.lboro.ac.uk/study/apply/english-language-requirements/"}],"tuition":{"amount":25500,"amount_max":35000,"currency":"GBP","period":"year","academic_year":"2027/28","detail":"International undergraduate fees vary by course fee band; published range is £25,500–£35,000.","source_url":"https://www.lboro.ac.uk/study/undergraduate/fees-funding/fees/"},"application_fee":{"amount":34.5,"currency":"GBP","source_url":"https://www.ucas.com/faqs/what-is-the-application-fee-for-the-2027-cycle"},"deadlines":[{"title":"2027 entry equal consideration deadline","due_at":"2027-01-13","route":"UCAS","source_url":"https://www.ucas.com/applying/applying-to-university/dates-and-deadlines-for-uni-applications"},{"title":"2027 entry deadline for Oxford, Cambridge, medicine, dentistry and veterinary courses","due_at":"2026-10-15","route":"UCAS","source_url":"https://www.ucas.com/applying/applying-to-university/dates-and-deadlines-for-uni-applications"}],"sat":null,"acceptance_rate":null,"notes":""},{"id":"82ab247b-2fe2-56ce-90a7-292c759b906f","english":[{"test":"IELTS","minimum":6,"detail":"B2-level minimum for English-taught programmes; programme rules may set additional requirements.","source_url":"https://wwwassets.unipd.it/sites/default/files/2026-10/ELENCO%20CERTIFICAZIONI%20DI%20LINGUA%20INGLESE%20.docx.pdf"},{"test":"TOEFL iBT","minimum":4.5,"detail":"B2 minimum: 4.5 for tests from 21 Jan 2026; 86 for tests taken by 20 Jan 2026.","source_url":"https://wwwassets.unipd.it/sites/default/files/2026-10/ELENCO%20CERTIFICAZIONI%20DI%20LINGUA%20INGLESE%20.docx.pdf"},{"test":"Duolingo","minimum":115,"detail":"115 for B2; some programmes may require a higher level.","source_url":"https://wwwassets.unipd.it/sites/default/files/2026-10/ELENCO%20CERTIFICAZIONI%20DI%20LINGUA%20INGLESE%20.docx.pdf"},{"test":"PTE Academic","minimum":65,"detail":"65 for B2; some programmes may require a higher level.","source_url":"https://wwwassets.unipd.it/sites/default/files/2026-10/ELENCO%20CERTIFICAZIONI%20DI%20LINGUA%20INGLESE%20.docx.pdf"}],"tuition":{"amount":2790,"amount_max":2990,"currency":"EUR","period":"year","academic_year":"2026/27","detail":"Published fixed fees for non-EU students living outside Italy: €2,790 humanities; €2,990 scientific and primary teacher education.","source_url":"https://www.unipd.it/en/contribuzione-studentesca"},"application_fee":{"amount":60,"currency":"EUR","source_url":"https://www.unipd.it/en/studiare-inglese-come-fare-domanda"},"deadlines":[{"title":"2027/28 entry, call one (most programmes)","due_at":"2026-11-15","route":"University portal (apply.unipd.it)","source_url":"https://www.unipd.it/en/studiare-inglese-come-fare-domanda"},{"title":"2027/28 entry, call one for limited-place programmes (non-EU applicants outside Italy)","due_at":"2027-03-07","route":"University portal (apply.unipd.it)","source_url":"https://www.unipd.it/en/studiare-inglese-come-fare-domanda"}],"sat":null,"acceptance_rate":null,"notes":"Applicants need at least 12 years of schooling; shorter records require additional study or a foundation course."},{"id":"48888524-717e-5143-90bf-457f3f85ba30","english":[],"tuition":null,"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"No first-year bachelor's route found; ENS diploma admission is after prior university study. No ENS diploma year is open to international students in 2026/27."},{"id":"286aa6be-a3ea-54aa-bd17-a50958d97579","english":[],"tuition":{"amount":200000,"amount_max":600000,"currency":"INR","period":"year","academic_year":"2022/23","detail":"Official page lists ₹2 lakh/year for SAARC nationals and ₹6 lakh/year for other foreign students; fees may change.","source_url":"https://international.iitkgp.ac.in/admission/"},"application_fee":null,"deadlines":[{"title":"2026 entry (nearest published cycle)","due_at":"2026-05-02","route":"JEE Advanced, direct foreign-national registration","source_url":"https://jeeadv.ac.in/imp_dates.html"}],"sat":null,"acceptance_rate":null,"notes":"Foreign nationals apply for undergraduate programmes through JEE Advanced; the published tuition schedule is for 2022/23."}] }
+tokens used
+72,916
+{"universities":[{"id":"0e43791e-b46f-5ae7-add6-e512644375e3","english":[{"test":"IELTS","minimum":6.5,"detail":"6.5 overall, no band below 6.0; some programmes require higher scores.","source_url":"https://www.lboro.ac.uk/study/apply/english-language-requirements/"},{"test":"TOEFL iBT","minimum":4.5,"detail":"For tests from 21 Jan 2026: 4.5 overall; writing/listening 4.5, speaking/reading 4.0. Older tests: 88 overall, 21 each section.","source_url":"https://www.lboro.ac.uk/study/apply/english-language-requirements/"},{"test":"Duolingo","minimum":120,"detail":"120 overall; speaking 110, writing 115, reading 110, listening 105.","source_url":"https://www.lboro.ac.uk/study/apply/english-language-requirements/"},{"test":"PTE Academic","minimum":65,"detail":"65 overall, no sub-test below 61.","source_url":"https://www.lboro.ac.uk/study/apply/english-language-requirements/"},{"test":"Cambridge C1/C2","minimum":180,"detail":"C1 Advanced: 180; C2 Proficiency: 200.","source_url":"https://www.lboro.ac.uk/study/apply/english-language-requirements/"}],"tuition":{"amount":25500,"amount_max":35000,"currency":"GBP","period":"year","academic_year":"2027/28","detail":"International undergraduate fees vary by course fee band; published range is £25,500–£35,000.","source_url":"https://www.lboro.ac.uk/study/undergraduate/fees-funding/fees/"},"application_fee":{"amount":34.5,"currency":"GBP","source_url":"https://www.ucas.com/faqs/what-is-the-application-fee-for-the-2027-cycle"},"deadlines":[{"title":"2027 entry equal consideration deadline","due_at":"2027-01-13","route":"UCAS","source_url":"https://www.ucas.com/applying/applying-to-university/dates-and-deadlines-for-uni-applications"},{"title":"2027 entry deadline for Oxford, Cambridge, medicine, dentistry and veterinary courses","due_at":"2026-10-15","route":"UCAS","source_url":"https://www.ucas.com/applying/applying-to-university/dates-and-deadlines-for-uni-applications"}],"sat":null,"acceptance_rate":null,"notes":""},{"id":"82ab247b-2fe2-56ce-90a7-292c759b906f","english":[{"test":"IELTS","minimum":6,"detail":"B2-level minimum for English-taught programmes; programme rules may set additional requirements.","source_url":"https://wwwassets.unipd.it/sites/default/files/2026-10/ELENCO%20CERTIFICAZIONI%20DI%20LINGUA%20INGLESE%20.docx.pdf"},{"test":"TOEFL iBT","minimum":4.5,"detail":"B2 minimum: 4.5 for tests from 21 Jan 2026; 86 for tests taken by 20 Jan 2026.","source_url":"https://wwwassets.unipd.it/sites/default/files/2026-10/ELENCO%20CERTIFICAZIONI%20DI%20LINGUA%20INGLESE%20.docx.pdf"},{"test":"Duolingo","minimum":115,"detail":"115 for B2; some programmes may require a higher level.","source_url":"https://wwwassets.unipd.it/sites/default/files/2026-10/ELENCO%20CERTIFICAZIONI%20DI%20LINGUA%20INGLESE%20.docx.pdf"},{"test":"PTE Academic","minimum":65,"detail":"65 for B2; some programmes may require a higher level.","source_url":"https://wwwassets.unipd.it/sites/default/files/2026-10/ELENCO%20CERTIFICAZIONI%20DI%20LINGUA%20INGLESE%20.docx.pdf"}],"tuition":{"amount":2790,"amount_max":2990,"currency":"EUR","period":"year","academic_year":"2026/27","detail":"Published fixed fees for non-EU students living outside Italy: €2,790 humanities; €2,990 scientific and primary teacher education.","source_url":"https://www.unipd.it/en/contribuzione-studentesca"},"application_fee":{"amount":60,"currency":"EUR","source_url":"https://www.unipd.it/en/studiare-inglese-come-fare-domanda"},"deadlines":[{"title":"2027/28 entry, call one (most programmes)","due_at":"2026-11-15","route":"University portal (apply.unipd.it)","source_url":"https://www.unipd.it/en/studiare-inglese-come-fare-domanda"},{"title":"2027/28 entry, call one for limited-place programmes (non-EU applicants outside Italy)","due_at":"2027-03-07","route":"University portal (apply.unipd.it)","source_url":"https://www.unipd.it/en/studiare-inglese-come-fare-domanda"}],"sat":null,"acceptance_rate":null,"notes":"Applicants need at least 12 years of schooling; shorter records require additional study or a foundation course."},{"id":"48888524-717e-5143-90bf-457f3f85ba30","english":[],"tuition":null,"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"No first-year bachelor's route found; ENS diploma admission is after prior university study. No ENS diploma year is open to international students in 2026/27."},{"id":"286aa6be-a3ea-54aa-bd17-a50958d97579","english":[],"tuition":{"amount":200000,"amount_max":600000,"currency":"INR","period":"year","academic_year":"2022/23","detail":"Official page lists ₹2 lakh/year for SAARC nationals and ₹6 lakh/year for other foreign students; fees may change.","source_url":"https://international.iitkgp.ac.in/admission/"},"application_fee":null,"deadlines":[{"title":"2026 entry (nearest published cycle)","due_at":"2026-05-02","route":"JEE Advanced, direct foreign-national registration","source_url":"https://jeeadv.ac.in/imp_dates.html"}],"sat":null,"acceptance_rate":null,"notes":"Foreign nationals apply for undergraduate programmes through JEE Advanced; the published tuition schedule is for 2022/23."}] }

@@ -1,0 +1,64 @@
+OpenAI Codex v0.169.0
+--------
+workdir: /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+model: gpt-6-luna
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: high
+reasoning summaries: none
+session id: 01a1ee8d-0bde-71c3-9c34-02816fda3213
+--------
+user
+You are a careful admissions-data researcher. For each university below, find facts for an
+INTERNATIONAL applicant to a FIRST-YEAR BACHELOR'S degree starting in autumn 2027 (or the nearest
+published cycle). Use the live web. Rules:
+
+- Official sources only: the university's own website (its domain or subdomains), the national
+  application service (UCAS, Common App, OUAC, uni-assist, Studyinkorea, etc.) or a government
+  statistics office. Never use rankings sites, forums, agencies, Wikipedia or blogs.
+- Every value needs the exact page URL where you read it (source_url). If you could not verify a
+  value on an official page, leave it out (null or an empty list). Never guess or estimate.
+- english: the lowest overall score accepted for undergraduate entry, per test (IELTS Academic
+  overall, TOEFL iBT total, Duolingo, PTE). If programmes differ, give the general/lowest common
+  university minimum and say so in detail (e.g. "6.5 overall, no band below 6.0; some
+  programmes higher").
+- tuition: the yearly tuition for international (non-EU / overseas) undergraduates in the local
+  currency. If it varies by programme give amount = lowest and amount_max = highest, and the
+  academic_year the fee applies to (e.g. "2026/27"). If tuition is free, amount = 0.
+- application_fee: for international first-year applicants, local currency.
+- deadlines: the main 2027-entry first-year deadlines (ISO date YYYY-MM-DD) with the route
+  (e.g. "Common App, Regular Decision", "UCAS", "university portal"). Only dates actually
+  published; if only the 2026-entry date is published, include it and put "2026 entry" in title.
+- sat: policy for international applicants; p25/p75 total SAT only if the university publishes
+  them (Common Data Set or admissions profile).
+- acceptance_rate: only if officially published (CDS, admissions statistics page).
+- notes: one short line on anything important (e.g. "Foundation year required for 11-year
+  school certificates"), else "".
+
+Spend effort on the facts students need most: English minimum, tuition, deadlines. Keep each
+detail under 160 characters. Return only the JSON that matches the schema; use each
+university's id exactly as given.
+
+Universities:
+- id: 1a8e1949-ec0f-54e5-9eb2-c5ce1161f575 | Indiana University-Bloomington | Bloomington, US | https://bloomington.iu.edu/
+- id: bdb1f2b9-ffd0-5bac-9ba5-ca63a083289b | Sultan Qaboos University | Muscat, OM | http://www.squ.edu.om/
+- id: 7e74da55-7ed1-58a0-b41c-7eed8b466241 | Huazhong University of Science and Technology | Wuhan, CN | http://english.hust.edu.cn/
+- id: d88c7d81-10cb-52cc-9a90-1102d954fafc | Simon Fraser University | Burnaby, CA | https://www.sfu.ca
+codex
+I’ll check each university’s current official admissions and fee pages, using published 2027 dates where available and the nearest published cycle otherwise.
+web search: 
+web search: site:admissions.indiana.edu international freshman English proficiency tuition 2026 2027 deadline application fee SAT ...
+web search: 
+web search: site:admissions.indiana.edu/apply/freshman international application deadlines 2027 fee IU Bloomington ...
+web search: 
+web search: site:admissions.indiana.edu/apply/freshman "November 1" international freshman application fee ...
+web search: 
+web search: 
+web search: 
+web search: site:admissions.indiana.edu/apply freshman international English requirements IELTS Duolingo ...
+codex
+{"universities":[{"id":"1a8e1949-ec0f-54e5-9eb2-c5ce1161f575","english":[],"tuition":{"amount":42702.62,"amount_max":null,"currency":"USD","period":"year","academic_year":"2026/27","detail":"Nonresident annual tuition and mandatory fees; program differentials may apply.","source_url":"https://budget.iu.edu/assets/reports/feerates/2025-2027-tuition-and-fee-schedule-approved.pdf"},"application_fee":null,"deadlines":[{"title":"Regular decision","due_at":"2027-02-01","route":"Apply IU or Common Application","source_url":"https://admissions.indiana.edu/campaigns/apply/parent.html"}],"sat":null,"acceptance_rate":null,"notes":""},{"id":"bdb1f2b9-ffd0-5bac-9ba5-ca63a083289b","english":[],"tuition":null,"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"International undergraduate routes are limited to specified categories, including staff children, residents, and GCC scholarship applicants."},{"id":"7e74da55-7ed1-58a0-b41c-7eed8b466241","english":[],"tuition":null,"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"The 2027 international undergraduate application guide is published; detailed guide facts could not be verified from accessible official page content."},{"id":"d88c7d81-10cb-52cc-9a90-1102d954fafc","english":[{"test":"IELTS","minimum":6.5,"detail":"Academic; no part below 6.0.","source_url":"https://www.sfu.ca/students/calendar/2026/fall/fees-and-regulations/admission/undergraduate-admission.html"},{"test":"TOEFL iBT","minimum":4.5,"detail":"Current scale: 4.5 overall, minimum 4.0 each section. Tests before Jan. 21, 2026: 88 overall, minimum 20 each section.","source_url":"https://www.sfu.ca/students/calendar/2026/fall/fees-and-regulations/admission/undergraduate-admission.html"},{"test":"Duolingo","minimum":125,"detail":"Overall 125 or better.","source_url":"https://www.sfu.ca/students/calendar/2026/fall/fees-and-regulations/admission/undergraduate-admission.html"},{"test":"PTE Academic","minimum":65,"detail":"Overall 65; no part below 60.","source_url":"https://www.sfu.ca/students/calendar/2026/fall/fees-and-regulations/admission/undergraduate-admission.html"},{"test":"Cambridge C1/C2","minimum":176,"detail":"B2 First, C1 Advanced, or C2 Proficiency; overall 176, no part below 169.","source_url":"https://www.sfu.ca/students/calendar/2026/fall/fees-and-regulations/admission/undergraduate-admission.html"}],"tuition":null,"application_fee":{"amount":130,"currency":"CAD","source_url":"https://www.sfu.ca/students/calendar/2026/fall/fees-and-regulations/tuition-fees/undergraduate.html"},"deadlines":[{"title":"Fall 2027 high school applications","due_at":"2027-01-31","route":"EducationPlannerBC","source_url":"https://www.sfu.ca/students/admission/apply/"}],"sat":null,"acceptance_rate":null,"notes":""}]}
+tokens used
+44,535
+{"universities":[{"id":"1a8e1949-ec0f-54e5-9eb2-c5ce1161f575","english":[],"tuition":{"amount":42702.62,"amount_max":null,"currency":"USD","period":"year","academic_year":"2026/27","detail":"Nonresident annual tuition and mandatory fees; program differentials may apply.","source_url":"https://budget.iu.edu/assets/reports/feerates/2025-2027-tuition-and-fee-schedule-approved.pdf"},"application_fee":null,"deadlines":[{"title":"Regular decision","due_at":"2027-02-01","route":"Apply IU or Common Application","source_url":"https://admissions.indiana.edu/campaigns/apply/parent.html"}],"sat":null,"acceptance_rate":null,"notes":""},{"id":"bdb1f2b9-ffd0-5bac-9ba5-ca63a083289b","english":[],"tuition":null,"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"International undergraduate routes are limited to specified categories, including staff children, residents, and GCC scholarship applicants."},{"id":"7e74da55-7ed1-58a0-b41c-7eed8b466241","english":[],"tuition":null,"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"The 2027 international undergraduate application guide is published; detailed guide facts could not be verified from accessible official page content."},{"id":"d88c7d81-10cb-52cc-9a90-1102d954fafc","english":[{"test":"IELTS","minimum":6.5,"detail":"Academic; no part below 6.0.","source_url":"https://www.sfu.ca/students/calendar/2026/fall/fees-and-regulations/admission/undergraduate-admission.html"},{"test":"TOEFL iBT","minimum":4.5,"detail":"Current scale: 4.5 overall, minimum 4.0 each section. Tests before Jan. 21, 2026: 88 overall, minimum 20 each section.","source_url":"https://www.sfu.ca/students/calendar/2026/fall/fees-and-regulations/admission/undergraduate-admission.html"},{"test":"Duolingo","minimum":125,"detail":"Overall 125 or better.","source_url":"https://www.sfu.ca/students/calendar/2026/fall/fees-and-regulations/admission/undergraduate-admission.html"},{"test":"PTE Academic","minimum":65,"detail":"Overall 65; no part below 60.","source_url":"https://www.sfu.ca/students/calendar/2026/fall/fees-and-regulations/admission/undergraduate-admission.html"},{"test":"Cambridge C1/C2","minimum":176,"detail":"B2 First, C1 Advanced, or C2 Proficiency; overall 176, no part below 169.","source_url":"https://www.sfu.ca/students/calendar/2026/fall/fees-and-regulations/admission/undergraduate-admission.html"}],"tuition":null,"application_fee":{"amount":130,"currency":"CAD","source_url":"https://www.sfu.ca/students/calendar/2026/fall/fees-and-regulations/tuition-fees/undergraduate.html"},"deadlines":[{"title":"Fall 2027 high school applications","due_at":"2027-01-31","route":"EducationPlannerBC","source_url":"https://www.sfu.ca/students/admission/apply/"}],"sat":null,"acceptance_rate":null,"notes":""}]}

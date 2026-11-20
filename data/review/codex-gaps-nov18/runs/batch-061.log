@@ -1,0 +1,62 @@
+OpenAI Codex v0.169.0
+--------
+workdir: /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+model: gpt-6-luna
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: high
+reasoning summaries: none
+session id: 01a1ee8a-2a35-7f21-944b-287bebd4acc1
+--------
+user
+You are a careful admissions-data researcher. For each university below, find facts for an
+INTERNATIONAL applicant to a FIRST-YEAR BACHELOR'S degree starting in autumn 2027 (or the nearest
+published cycle). Use the live web. Rules:
+
+- Official sources only: the university's own website (its domain or subdomains), the national
+  application service (UCAS, Common App, OUAC, uni-assist, Studyinkorea, etc.) or a government
+  statistics office. Never use rankings sites, forums, agencies, Wikipedia or blogs.
+- Every value needs the exact page URL where you read it (source_url). If you could not verify a
+  value on an official page, leave it out (null or an empty list). Never guess or estimate.
+- english: the lowest overall score accepted for undergraduate entry, per test (IELTS Academic
+  overall, TOEFL iBT total, Duolingo, PTE). If programmes differ, give the general/lowest common
+  university minimum and say so in detail (e.g. "6.5 overall, no band below 6.0; some
+  programmes higher").
+- tuition: the yearly tuition for international (non-EU / overseas) undergraduates in the local
+  currency. If it varies by programme give amount = lowest and amount_max = highest, and the
+  academic_year the fee applies to (e.g. "2026/27"). If tuition is free, amount = 0.
+- application_fee: for international first-year applicants, local currency.
+- deadlines: the main 2027-entry first-year deadlines (ISO date YYYY-MM-DD) with the route
+  (e.g. "Common App, Regular Decision", "UCAS", "university portal"). Only dates actually
+  published; if only the 2026-entry date is published, include it and put "2026 entry" in title.
+- sat: policy for international applicants; p25/p75 total SAT only if the university publishes
+  them (Common Data Set or admissions profile).
+- acceptance_rate: only if officially published (CDS, admissions statistics page).
+- notes: one short line on anything important (e.g. "Foundation year required for 11-year
+  school certificates"), else "".
+
+Spend effort on the facts students need most: English minimum, tuition, deadlines. Keep each
+detail under 160 characters. Return only the JSON that matches the schema; use each
+university's id exactly as given.
+
+Universities:
+- id: fb839fd6-8704-5720-a463-2876d775b8f5 | Universitat Pompeu Fabra | Barcelona, ES | https://www.upf.edu
+- id: fab44467-aa34-5204-9560-df00c2dec3d1 | Norwegian University of Science and Technology | Trondheim, NO | https://www.ntnu.edu
+- id: 44fc5710-6980-5188-9d31-73c583212993 | Charles University Prague | Prague, CZ | http://www.cuni.cz/
+- id: a8c20c24-0173-5120-abee-6f63ee2944d3 | Singapore University of Technology and Design | Singapore, SG | https://www.sutd.edu.sg/
+codex
+I’ll check each university’s official admissions and fee pages, then return only the requested JSON. Where 2027 entry details are not published yet, I’ll use the nearest official cycle and label it.
+web search: 
+web search: site:upf.edu international bachelor's admission English tuition 2026 2027 application deadline ...
+web search: 
+web search: site:upf.edu "2026-27" "non-EU" tuition bachelor UPF application fee deadline ...
+web search: 
+web search: site: sutd.edu.sg undergraduate admissions international applicants 2027 application deadlines SAT English proficiency IELTS tuition fees ...
+web search: 
+web search: site:sutd.edu.sg/admissions/undergraduate/admission-requirements/international-qualifications "IELTS" score ...
+codex
+{"universities":[{"id":"fb839fd6-8704-5720-a463-2876d775b8f5","english":[],"tuition":{"amount":6800.32,"amount_max":null,"currency":"EUR","period":"year","academic_year":"2025/26","detail":"Non-EU/non-resident fee for Global Studies; fees vary by degree.","source_url":"https://www.upf.edu/en/web/humanitats/degree-in-global-studies"},"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"UPF says no specific English test is required for admission, except for Translation and Interpreting; B2 is recommended."},{"id":"fab44467-aa34-5204-9560-df00c2dec3d1","english":[],"tuition":null,"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"NTNU says its undergraduate programmes are taught in Norwegian and require Norwegian proficiency; it offers no bachelor's degrees in English."},{"id":"44fc5710-6980-5188-9d31-73c583212993","english":[{"test":"IELTS","minimum":6.5,"detail":"FSV English-taught programmes: IELTS 6.5; requirements vary by programme.","source_url":"https://is.cuni.cz/studium/eng/prijimacky/index.php?do=info_fakulta&fak=11230"},{"test":"TOEFL iBT","minimum":83,"detail":"FSV English-taught programmes: TOEFL iBT 83 (pre-Feb 2026 test scale); requirements vary by programme.","source_url":"https://is.cuni.cz/studium/eng/prijimacky/index.php?do=info_fakulta&fak=11230"}],"tuition":null,"application_fee":null,"deadlines":[{"title":"2027 entry, Economics and Finance","due_at":"2027-04-30","route":"Charles University application portal","source_url":"https://is.cuni.cz/studium/eng/prijimacky/index.php?do=detail_obor&id_obor=36346"},{"title":"2027 entry, Liberal Arts and Humanities","due_at":"2027-03-31","route":"Faculty of Humanities application","source_url":"https://fhs.cuni.cz/FHSENG-1659.html"},{"title":"2027 entry, Computer Science","due_at":"2027-04-30","route":"Faculty of Mathematics and Physics application","source_url":"https://www.mff.cuni.cz/en/admissions/admission-requirements-for-bachelor-s-programmes-in-english/2027-2028"}],"sat":null,"acceptance_rate":null,"notes":"English-degree fees, tests and deadlines vary by faculty and programme; listed deadlines are examples for published 2027 entry."},{"id":"a8c20c24-0173-5120-abee-6f63ee2944d3","english":[],"tuition":{"amount":30200,"amount_max":31600,"currency":"SGD","period":"year","academic_year":"2026","detail":"Subsidised international fees with Tuition Grant: ASEAN S$30,200; other international students S$31,600. Without grant: S$62,076.","source_url":"https://www.sutd.edu.sg/admissions/undergraduate/education-expenses/fees/tuition-fees/"},"application_fee":null,"deadlines":[{"title":"2026 entry","due_at":"2026-03-02","route":"SUTD online application, international qualifications except A-level","source_url":"https://www.sutd.edu.sg/admissions/undergraduate"}],"sat":{"policy":"accepted_alternative","p25":null,"p75":null,"source_url":"https://www.sutd.edu.sg/admissions/undergraduate/other-international-qualifications/criteria-for-admission/"},"acceptance_rate":null,"notes":"No prescribed English-test minimum; applicants whose qualification was not taught in English must submit an accepted test or SAT. International Tuition Grant has a 3-year work bond."}] }
+tokens used
+51,084
+{"universities":[{"id":"fb839fd6-8704-5720-a463-2876d775b8f5","english":[],"tuition":{"amount":6800.32,"amount_max":null,"currency":"EUR","period":"year","academic_year":"2025/26","detail":"Non-EU/non-resident fee for Global Studies; fees vary by degree.","source_url":"https://www.upf.edu/en/web/humanitats/degree-in-global-studies"},"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"UPF says no specific English test is required for admission, except for Translation and Interpreting; B2 is recommended."},{"id":"fab44467-aa34-5204-9560-df00c2dec3d1","english":[],"tuition":null,"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"NTNU says its undergraduate programmes are taught in Norwegian and require Norwegian proficiency; it offers no bachelor's degrees in English."},{"id":"44fc5710-6980-5188-9d31-73c583212993","english":[{"test":"IELTS","minimum":6.5,"detail":"FSV English-taught programmes: IELTS 6.5; requirements vary by programme.","source_url":"https://is.cuni.cz/studium/eng/prijimacky/index.php?do=info_fakulta&fak=11230"},{"test":"TOEFL iBT","minimum":83,"detail":"FSV English-taught programmes: TOEFL iBT 83 (pre-Feb 2026 test scale); requirements vary by programme.","source_url":"https://is.cuni.cz/studium/eng/prijimacky/index.php?do=info_fakulta&fak=11230"}],"tuition":null,"application_fee":null,"deadlines":[{"title":"2027 entry, Economics and Finance","due_at":"2027-04-30","route":"Charles University application portal","source_url":"https://is.cuni.cz/studium/eng/prijimacky/index.php?do=detail_obor&id_obor=36346"},{"title":"2027 entry, Liberal Arts and Humanities","due_at":"2027-03-31","route":"Faculty of Humanities application","source_url":"https://fhs.cuni.cz/FHSENG-1659.html"},{"title":"2027 entry, Computer Science","due_at":"2027-04-30","route":"Faculty of Mathematics and Physics application","source_url":"https://www.mff.cuni.cz/en/admissions/admission-requirements-for-bachelor-s-programmes-in-english/2027-2028"}],"sat":null,"acceptance_rate":null,"notes":"English-degree fees, tests and deadlines vary by faculty and programme; listed deadlines are examples for published 2027 entry."},{"id":"a8c20c24-0173-5120-abee-6f63ee2944d3","english":[],"tuition":{"amount":30200,"amount_max":31600,"currency":"SGD","period":"year","academic_year":"2026","detail":"Subsidised international fees with Tuition Grant: ASEAN S$30,200; other international students S$31,600. Without grant: S$62,076.","source_url":"https://www.sutd.edu.sg/admissions/undergraduate/education-expenses/fees/tuition-fees/"},"application_fee":null,"deadlines":[{"title":"2026 entry","due_at":"2026-03-02","route":"SUTD online application, international qualifications except A-level","source_url":"https://www.sutd.edu.sg/admissions/undergraduate"}],"sat":{"policy":"accepted_alternative","p25":null,"p75":null,"source_url":"https://www.sutd.edu.sg/admissions/undergraduate/other-international-qualifications/criteria-for-admission/"},"acceptance_rate":null,"notes":"No prescribed English-test minimum; applicants whose qualification was not taught in English must submit an accepted test or SAT. International Tuition Grant has a 3-year work bond."}] }

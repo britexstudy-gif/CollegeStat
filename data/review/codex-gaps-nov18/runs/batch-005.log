@@ -1,0 +1,82 @@
+OpenAI Codex v0.169.0
+--------
+workdir: /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+model: gpt-6-luna
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: high
+reasoning summaries: none
+session id: 01a1ee78-6d86-7e90-8fb5-646f8934e33c
+--------
+user
+You are a careful admissions-data researcher. For each university below, find facts for an
+INTERNATIONAL applicant to a FIRST-YEAR BACHELOR'S degree starting in autumn 2027 (or the nearest
+published cycle). Use the live web. Rules:
+
+- Official sources only: the university's own website (its domain or subdomains), the national
+  application service (UCAS, Common App, OUAC, uni-assist, Studyinkorea, etc.) or a government
+  statistics office. Never use rankings sites, forums, agencies, Wikipedia or blogs.
+- Every value needs the exact page URL where you read it (source_url). If you could not verify a
+  value on an official page, leave it out (null or an empty list). Never guess or estimate.
+- english: the lowest overall score accepted for undergraduate entry, per test (IELTS Academic
+  overall, TOEFL iBT total, Duolingo, PTE). If programmes differ, give the general/lowest common
+  university minimum and say so in detail (e.g. "6.5 overall, no band below 6.0; some
+  programmes higher").
+- tuition: the yearly tuition for international (non-EU / overseas) undergraduates in the local
+  currency. If it varies by programme give amount = lowest and amount_max = highest, and the
+  academic_year the fee applies to (e.g. "2026/27"). If tuition is free, amount = 0.
+- application_fee: for international first-year applicants, local currency.
+- deadlines: the main 2027-entry first-year deadlines (ISO date YYYY-MM-DD) with the route
+  (e.g. "Common App, Regular Decision", "UCAS", "university portal"). Only dates actually
+  published; if only the 2026-entry date is published, include it and put "2026 entry" in title.
+- sat: policy for international applicants; p25/p75 total SAT only if the university publishes
+  them (Common Data Set or admissions profile).
+- acceptance_rate: only if officially published (CDS, admissions statistics page).
+- notes: one short line on anything important (e.g. "Foundation year required for 11-year
+  school certificates"), else "".
+
+Spend effort on the facts students need most: English minimum, tuition, deadlines. Keep each
+detail under 160 characters. Return only the JSON that matches the schema; use each
+university's id exactly as given.
+
+Universities:
+- id: c0386da4-95a0-567a-8f70-81b33c5c7f06 | University of Queensland | Brisbane, AU | http://www.uq.edu.au/
+- id: 9f3cf72f-ca1e-5831-b48d-e5747fb631d6 | Institut Polytechnique de Paris | Palaiseau, FR | https://www.ip-paris.fr
+- id: e48a723c-68b4-560e-b4a0-09be01682853 | Northwestern University | Evanston, US | http://www.northwestern.edu/
+- id: b5f25065-0a86-517e-91f0-ff6bbe8c81d3 | Yonsei University | Seoul, KR | http://www.yonsei.ac.kr/
+codex
+I’m checking official admissions and fee pages for each university, prioritizing entry requirements, international tuition, and the latest published first-year deadlines.
+web search: 
+web search: site:uq.edu.au international undergraduate English language requirements IELTS TOEFL tuition fees 2027 undergraduate application deadlines ...
+web search: 
+web search: site:ip-paris.fr/en/education "Bachelor of Science" tuition admission international English ...
+web search: 
+web search: site:admissions.northwestern.edu/apply international TOEFL IELTS minimum score English proficiency undergraduate ...
+web search: 
+web search: site:ip-paris.fr/education/niveau-licence/bachelor-science "frais" OR "€" ...
+web search: 
+web search: site:study.uq.edu.au "2027" "AUD $" "Indicative annual fee" "international" bachelor ...
+web search: 
+web search: site:my.uq.edu.au/files "international fees" "2027" undergraduate tuition pdf ...
+web search: 
+web search: site:programmes.polytechnique.edu/en/bachelor tuition fees 2026 2027 bachelor euro ...
+web search: 
+web search: site:admission.yonsei.ac.kr/seoul/upload/guide "Application Fee Increase" "150,000" 2027 Yonsei ...
+web search: 
+web search: 
+web search: 
+web search: 
+web search: 
+web search: 'Applicants admitted'
+web search: 
+web search: site:enrollment.northwestern.edu/data/2025-2026.pdf "SAT Composite" ...
+web search: 
+web search: 
+web search: 
+web search: 
+codex
+{"universities":[{"id":"c0386da4-95a0-567a-8f70-81b33c5c7f06","english":[{"test":"IELTS","minimum":6.5,"detail":"6.5 overall, 6.0 in each sub-band; most programs, some require higher.","source_url":"https://study.uq.edu.au/admissions/english-language-requirements"},{"test":"TOEFL iBT","minimum":87,"detail":"87 total; section minimums apply. Some programs require higher.","source_url":"https://policies.uq.edu.au/download.php?associated=1&id=172"},{"test":"PTE Academic","minimum":64,"detail":"64 overall; section minimums apply. Some programs require higher.","source_url":"https://policies.uq.edu.au/download.php?associated=1&id=172"}],"tuition":null,"application_fee":{"amount":150,"currency":"AUD","source_url":"https://study.uq.edu.au/admissions/undergraduate/submit-your-application?studentType=international"},"deadlines":[{"title":"Semester 1, 2027 international application","due_at":"2026-11-30","route":"UQ application portal","source_url":"https://study.uq.edu.au/admissions/undergraduate/submit-your-application?studentType=international"}],"sat":null,"acceptance_rate":null,"notes":"International tuition is program-based; a complete 2027 undergraduate fee range was not verified."},{"id":"9f3cf72f-ca1e-5831-b48d-e5747fb631d6","english":[{"test":"IELTS","minimum":6.5,"detail":"6.5 overall, minimum 6 in each skill.","source_url":"https://programmes.polytechnique.edu/en/bachelor/admissions/admissions-criteria-and-procedure"},{"test":"TOEFL iBT","minimum":90,"detail":"90 total.","source_url":"https://programmes.polytechnique.edu/en/bachelor/admissions/admissions-criteria-and-procedure"},{"test":"Cambridge C1/C2","minimum":176,"detail":"Cambridge Advanced or Proficiency: grade B, minimum 169 in each skill.","source_url":"https://programmes.polytechnique.edu/en/bachelor/admissions/admissions-criteria-and-procedure"}],"tuition":{"amount":19600,"amount_max":null,"currency":"EUR","period":"year","academic_year":"2027/28","detail":"Annual non-EU tuition for the École Polytechnique Bachelor of Science.","source_url":"https://programmes.polytechnique.edu/en/bachelor/costs-and-funding/tuition-fees"},"application_fee":{"amount":105,"currency":"EUR","source_url":"https://programmes.polytechnique.edu/en/bachelor/admissions/admissions-criteria-and-procedure"},"deadlines":[{"title":"2027 entry, Round 2","due_at":"2027-01-06","route":"École Polytechnique Bachelor application portal","source_url":"https://programmes.polytechnique.edu/en/bachelor/admissions/admissions-criteria-and-procedure"},{"title":"2027 entry, Round 3","due_at":"2027-02-08","route":"École Polytechnique Bachelor application portal","source_url":"https://programmes.polytechnique.edu/en/bachelor/admissions/admissions-criteria-and-procedure"}],"sat":null,"acceptance_rate":null,"notes":"IP Paris directs Bachelor of Science applicants to École Polytechnique; the program is taught in English."},{"id":"e48a723c-68b4-560e-b4a0-09be01682853","english":[],"tuition":{"amount":71802,"amount_max":null,"currency":"USD","period":"year","academic_year":"2026/27","detail":"Full-time undergraduate tuition; international applicants follow the same admissions procedures.","source_url":"https://undergradaid.northwestern.edu/how-aid-works/cost-of-attendance/"},"application_fee":{"amount":75,"currency":"USD","source_url":"https://admissions.northwestern.edu/apply/application-deadlines.html"},"deadlines":[{"title":"2027 entry, Early Decision","due_at":"2026-11-01","route":"Common App, Early Decision","source_url":"https://admissions.northwestern.edu/apply/application-deadlines.html"},{"title":"2027 entry, Regular Decision","due_at":"2027-01-04","route":"Common App, Regular Decision","source_url":"https://admissions.northwestern.edu/apply/application-deadlines.html"}],"sat":{"policy":"optional","p25":1510,"p75":1560,"source_url":"https://enrollment.northwestern.edu/data/2024-2025.pdf"},"acceptance_rate":{"percent":7.4,"year":"Class of 2029","source_url":"https://enrollment.northwestern.edu/data/class-of-2029-facts-and-figures.pdf"},"notes":"English proficiency is required for some international applicants, but Northwestern publishes no minimum scores."},{"id":"b5f25065-0a86-517e-91f0-ff6bbe8c81d3","english":[],"tuition":{"amount":14562000,"amount_max":null,"currency":"KRW","period":"year","academic_year":"2026","detail":"International freshmen study in Global Basic Education Division for year one: KRW 7,388,000 first semester and 7,174,000 second.","source_url":"https://www.yonsei.ac.kr/sites/en_sc/down/2026_fee1.pdf"},"application_fee":{"amount":200000,"currency":"KRW","source_url":"https://admission.yonsei.ac.kr/seoul/upload/guide/20260529144906YVFHLB.PDF"},"deadlines":[{"title":"Spring 2027 entry application","due_at":"2026-09-17","route":"Yonsei Office of Admissions portal","source_url":"https://admission.yonsei.ac.kr/seoul/admission/html/counsel/noticeView.asp?BBS_NO=3520&s_code=BBS_SUBJECT&s_data=2&s_page=1&s_type="}],"sat":null,"acceptance_rate":null,"notes":"Spring 2027 is the latest exact-date general international first-year cycle found. UIC requires English-proficiency proof from AY 2027 but sets no minimum scores."}]}
+tokens used
+108,840
+{"universities":[{"id":"c0386da4-95a0-567a-8f70-81b33c5c7f06","english":[{"test":"IELTS","minimum":6.5,"detail":"6.5 overall, 6.0 in each sub-band; most programs, some require higher.","source_url":"https://study.uq.edu.au/admissions/english-language-requirements"},{"test":"TOEFL iBT","minimum":87,"detail":"87 total; section minimums apply. Some programs require higher.","source_url":"https://policies.uq.edu.au/download.php?associated=1&id=172"},{"test":"PTE Academic","minimum":64,"detail":"64 overall; section minimums apply. Some programs require higher.","source_url":"https://policies.uq.edu.au/download.php?associated=1&id=172"}],"tuition":null,"application_fee":{"amount":150,"currency":"AUD","source_url":"https://study.uq.edu.au/admissions/undergraduate/submit-your-application?studentType=international"},"deadlines":[{"title":"Semester 1, 2027 international application","due_at":"2026-11-30","route":"UQ application portal","source_url":"https://study.uq.edu.au/admissions/undergraduate/submit-your-application?studentType=international"}],"sat":null,"acceptance_rate":null,"notes":"International tuition is program-based; a complete 2027 undergraduate fee range was not verified."},{"id":"9f3cf72f-ca1e-5831-b48d-e5747fb631d6","english":[{"test":"IELTS","minimum":6.5,"detail":"6.5 overall, minimum 6 in each skill.","source_url":"https://programmes.polytechnique.edu/en/bachelor/admissions/admissions-criteria-and-procedure"},{"test":"TOEFL iBT","minimum":90,"detail":"90 total.","source_url":"https://programmes.polytechnique.edu/en/bachelor/admissions/admissions-criteria-and-procedure"},{"test":"Cambridge C1/C2","minimum":176,"detail":"Cambridge Advanced or Proficiency: grade B, minimum 169 in each skill.","source_url":"https://programmes.polytechnique.edu/en/bachelor/admissions/admissions-criteria-and-procedure"}],"tuition":{"amount":19600,"amount_max":null,"currency":"EUR","period":"year","academic_year":"2027/28","detail":"Annual non-EU tuition for the École Polytechnique Bachelor of Science.","source_url":"https://programmes.polytechnique.edu/en/bachelor/costs-and-funding/tuition-fees"},"application_fee":{"amount":105,"currency":"EUR","source_url":"https://programmes.polytechnique.edu/en/bachelor/admissions/admissions-criteria-and-procedure"},"deadlines":[{"title":"2027 entry, Round 2","due_at":"2027-01-06","route":"École Polytechnique Bachelor application portal","source_url":"https://programmes.polytechnique.edu/en/bachelor/admissions/admissions-criteria-and-procedure"},{"title":"2027 entry, Round 3","due_at":"2027-02-08","route":"École Polytechnique Bachelor application portal","source_url":"https://programmes.polytechnique.edu/en/bachelor/admissions/admissions-criteria-and-procedure"}],"sat":null,"acceptance_rate":null,"notes":"IP Paris directs Bachelor of Science applicants to École Polytechnique; the program is taught in English."},{"id":"e48a723c-68b4-560e-b4a0-09be01682853","english":[],"tuition":{"amount":71802,"amount_max":null,"currency":"USD","period":"year","academic_year":"2026/27","detail":"Full-time undergraduate tuition; international applicants follow the same admissions procedures.","source_url":"https://undergradaid.northwestern.edu/how-aid-works/cost-of-attendance/"},"application_fee":{"amount":75,"currency":"USD","source_url":"https://admissions.northwestern.edu/apply/application-deadlines.html"},"deadlines":[{"title":"2027 entry, Early Decision","due_at":"2026-11-01","route":"Common App, Early Decision","source_url":"https://admissions.northwestern.edu/apply/application-deadlines.html"},{"title":"2027 entry, Regular Decision","due_at":"2027-01-04","route":"Common App, Regular Decision","source_url":"https://admissions.northwestern.edu/apply/application-deadlines.html"}],"sat":{"policy":"optional","p25":1510,"p75":1560,"source_url":"https://enrollment.northwestern.edu/data/2024-2025.pdf"},"acceptance_rate":{"percent":7.4,"year":"Class of 2029","source_url":"https://enrollment.northwestern.edu/data/class-of-2029-facts-and-figures.pdf"},"notes":"English proficiency is required for some international applicants, but Northwestern publishes no minimum scores."},{"id":"b5f25065-0a86-517e-91f0-ff6bbe8c81d3","english":[],"tuition":{"amount":14562000,"amount_max":null,"currency":"KRW","period":"year","academic_year":"2026","detail":"International freshmen study in Global Basic Education Division for year one: KRW 7,388,000 first semester and 7,174,000 second.","source_url":"https://www.yonsei.ac.kr/sites/en_sc/down/2026_fee1.pdf"},"application_fee":{"amount":200000,"currency":"KRW","source_url":"https://admission.yonsei.ac.kr/seoul/upload/guide/20260529144906YVFHLB.PDF"},"deadlines":[{"title":"Spring 2027 entry application","due_at":"2026-09-17","route":"Yonsei Office of Admissions portal","source_url":"https://admission.yonsei.ac.kr/seoul/admission/html/counsel/noticeView.asp?BBS_NO=3520&s_code=BBS_SUBJECT&s_data=2&s_page=1&s_type="}],"sat":null,"acceptance_rate":null,"notes":"Spring 2027 is the latest exact-date general international first-year cycle found. UIC requires English-proficiency proof from AY 2027 but sets no minimum scores."}]}

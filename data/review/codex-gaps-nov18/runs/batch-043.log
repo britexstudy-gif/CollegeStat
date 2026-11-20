@@ -1,0 +1,138 @@
+OpenAI Codex v0.169.0
+--------
+workdir: /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+model: gpt-6-luna
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: high
+reasoning summaries: none
+session id: 01a1ee85-4086-7c53-ac51-69ec2c1cd77b
+--------
+user
+You are a careful admissions-data researcher. For each university below, find facts for an
+INTERNATIONAL applicant to a FIRST-YEAR BACHELOR'S degree starting in autumn 2027 (or the nearest
+published cycle). Use the live web. Rules:
+
+- Official sources only: the university's own website (its domain or subdomains), the national
+  application service (UCAS, Common App, OUAC, uni-assist, Studyinkorea, etc.) or a government
+  statistics office. Never use rankings sites, forums, agencies, Wikipedia or blogs.
+- Every value needs the exact page URL where you read it (source_url). If you could not verify a
+  value on an official page, leave it out (null or an empty list). Never guess or estimate.
+- english: the lowest overall score accepted for undergraduate entry, per test (IELTS Academic
+  overall, TOEFL iBT total, Duolingo, PTE). If programmes differ, give the general/lowest common
+  university minimum and say so in detail (e.g. "6.5 overall, no band below 6.0; some
+  programmes higher").
+- tuition: the yearly tuition for international (non-EU / overseas) undergraduates in the local
+  currency. If it varies by programme give amount = lowest and amount_max = highest, and the
+  academic_year the fee applies to (e.g. "2026/27"). If tuition is free, amount = 0.
+- application_fee: for international first-year applicants, local currency.
+- deadlines: the main 2027-entry first-year deadlines (ISO date YYYY-MM-DD) with the route
+  (e.g. "Common App, Regular Decision", "UCAS", "university portal"). Only dates actually
+  published; if only the 2026-entry date is published, include it and put "2026 entry" in title.
+- sat: policy for international applicants; p25/p75 total SAT only if the university publishes
+  them (Common Data Set or admissions profile).
+- acceptance_rate: only if officially published (CDS, admissions statistics page).
+- notes: one short line on anything important (e.g. "Foundation year required for 11-year
+  school certificates"), else "".
+
+Spend effort on the facts students need most: English minimum, tuition, deadlines. Keep each
+detail under 160 characters. Return only the JSON that matches the schema; use each
+university's id exactly as given.
+
+Universities:
+- id: bd6b20f6-b0b7-5062-b4ac-a403d08eadaf | National Cheng Kung University | Tainan, TW | https://web.ncku.edu.tw/
+- id: 5b24f3f6-adcb-53fb-a89e-4f25f33f8da2 | Universität Hamburg | Hamburg, DE | http://www.uni-hamburg.de/
+- id: bd783952-4538-5666-883f-e9c56a60f109 | University of Reading | Reading, GB | https://www.reading.ac.uk
+- id: 05ee90cf-19f9-5b65-8bf1-63aa1bb139ff | Waseda University | Tokyo, JP | https://www.waseda.jp/top/
+codex
+I’m checking the persistent research notes first, then I’ll verify each fact against official university or application-service pages.
+exec
+/bin/zsh -lc 'cat /Users/likeanew/.agents/skills/lemma/SKILL.md' in /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+ succeeded in 0ms:
+---
+name: lemma
+description: Persistent cross-session memory for AI agents via MCP. BEFORE starting ANY task (coding, debugging, refactoring, research, docs, optimization — any language), FIRST call memory_read to load what you already know so you never re-derive or re-explore known facts. AFTER finishing, call memory_add to persist new findings and session_attempt for dead ends — unsaved knowledge is lost permanently. Distills reusable guides from experience.
+---
+
+<!-- lemma:skill:v=0.21.0 -->
+
+# Lemma — Persistent Memory & Learning
+
+Lemma is a persistent memory server for AI agents over the Model Context Protocol.
+Every session starts blank — knowledge survives ONLY through tool calls. If you
+learn something and don't save it (`memory_add`), it is gone permanently.
+
+## Workflow
+1. **RECALL** — `memory_read` / `semantic_search`: load what's already known for this
+   project/task. Never re-explore code or re-derive facts that are already saved.
+2. **ACT** — do the task.
+3. **PERSIST** — `memory_add` for new insights; `guide_practice` for guides applied;
+   `session_attempt` for abandoned/dead-end approaches (the most valuable records).
+
+## Two knowledge layers
+- **Memory fragments** (`memory_read` / `memory_add`): atomic facts. Types: `fact`,
+  `pattern`, `lesson`, `warning`, `context`. Confidence evolves with use and feedback.
+- **Guides** (`guide_get` / `guide_distill` / `guide_practice`): procedural skills
+  distilled from fragments. Track usage count + success/failure rate.
+Pipeline: `experience -> memory_add -> pattern/lesson -> guide_distill -> guide_practice`.
+
+## Tools at a glance
+- **Recall & search**: `memory_read`, `semantic_search`, `memory_library` (full
+  snapshot + maintenance signals), `memory_stats`, `memory_audit`.
+- **Write & maintain**: `memory_add`, `memory_update`, `memory_forget`,
+  `memory_merge`, `memory_relate` (supports / contradicts / supersedes / related_to),
+  `memory_feedback`.
+- **Guides**: `guide_get`, `guide_create`, `guide_distill`, `guide_practice`,
+  `guide_update`, `guide_forget`, `guide_merge`.
+- **Sessions & reasoning**: `session_start`, `session_end`, `session_attempt`,
+  `session_stats`, `suggestion_respond`.
+- **Background intelligence**: `conflict_scan`, `proactive_analysis`,
+  `project_analytics` (run automatically; act on signals when sensible).
+
+## Writing a fragment
+```
+## [Topic Title]
+### Context
+[1-2 sentences: what and why it matters]
+### [Content Section]
+- [Key fact 1]
+- [Key fact 2]
+### Rules (optional)
+- [Absolute constraint]
+```
+One idea per fragment, 30-2000 chars, structured markdown (not prose). **Store
+fragments in ENGLISH** (required for search/retrieval). Never ask permission to save.
+
+## Background intelligence
+Conflict detection, distill/merge/refine suggestions, and auto-linking run
+automatically. From the CLI, `lemma -lib` prints a full knowledge-base snapshot
+and `lemma -vis` launches a visualizer.
+
+web search: 
+web search: site:admissions.ncku.edu.tw international undergraduate admission 2026 tuition English proficiency application fee deadline ...
+web search: 
+web search: site:admissions.ncku.edu.tw "2026" "International Student" undergraduate application fee tuition ...
+web search: 
+web search: NCKU international students admission 2026 fall undergraduate application "tuition" site:ncku.edu.tw ...
+web search: 
+web search: 
+web search: 
+web search: 'IELTS'
+web search: 
+web search: '學士班學費'
+web search: 
+web search: 
+web search: 
+web search: 
+web search: 
+web search: https://oia.ncku.edu.tw/var/file/32/1032/img/5027/EnglishProficiencyTestComparisonChart_20251029.pdf
+web search: 
+web search: site:waseda.jp "2027年度学部入学者" "授業料" 2027 JPY Waseda ...
+web search: 
+web search: site:uni-hamburg.de/en/campuscenter German language requirements C1 bachelor all programs Universität Hamburg ...
+codex
+{"universities":[{"id":"bd6b20f6-b0b7-5062-b4ac-a403d08eadaf","english":[{"test":"IELTS","minimum":0,"detail":"IELTS Academic 4.0+ aligns with general CEFR B1 minimum; departments may require higher scores. Chinese-taught programs require Chinese.","source_url":"https://oia.ncku.edu.tw/var/file/32/1032/img/5027/EnglishProficiencyTestComparisonChart_20251029.pdf"},{"test":"TOEFL iBT","minimum":42,"detail":"42 aligns with general CEFR B1 minimum; departments may require higher scores. Duolingo is not accepted.","source_url":"https://oia.ncku.edu.tw/var/file/32/1032/img/5027/EnglishProficiencyTestComparisonChart_20251029.pdf"}],"tuition":{"amount":90142,"amount_max":143782,"currency":"TWD","period":"year","academic_year":"2025/26","detail":"Annual tuition and miscellaneous fees; reference rates by college. 2026/27 rates were not yet announced.","source_url":"https://oia.ncku.edu.tw/var/file/32/1032/img/5041/NCKUAdmissionProspectusforInternationalStudentsFall2026Spring2027v5-3.pdf"},"application_fee":{"amount":2000,"currency":"TWD","source_url":"https://oia.ncku.edu.tw/p/404-1032-229817.php?Lang=en"},"deadlines":[{"title":"Fall 2026 entry (nearest published fall cycle)","due_at":"2026-03-15","route":"NCKU international student online application","source_url":"https://oia.ncku.edu.tw/p/404-1032-229817.php?Lang=en"}],"sat":null,"acceptance_rate":null,"notes":"Programs taught in Chinese require TOCFL A2 or higher; 2027 fall admission dates were not yet published."},{"id":"5b24f3f6-adcb-53fb-a89e-4f25f33f8da2","english":[{"test":"IELTS","minimum":5.5,"detail":"IELTS Academic 5.5 for select bachelor's courses requiring English B2; English requirements vary by program.","source_url":"https://www.uni-hamburg.de/en/campuscenter/bewerbung/bachelor-staatsexamen/fremdsprachenkenntnisse.html"},{"test":"TOEFL iBT","minimum":72,"detail":"TOEFL iBT 72 for select bachelor's courses requiring English B2; English requirements vary by program.","source_url":"https://www.uni-hamburg.de/en/campuscenter/bewerbung/bachelor-staatsexamen/fremdsprachenkenntnisse.html"},{"test":"PTE Academic","minimum":59,"detail":"PTE Academic 59 for select bachelor's courses requiring English B2; English requirements vary by program.","source_url":"https://www.uni-hamburg.de/en/campuscenter/bewerbung/bachelor-staatsexamen/fremdsprachenkenntnisse.html"}],"tuition":{"amount":0,"amount_max":null,"currency":"EUR","period":"year","academic_year":"2026/27","detail":"No tuition fees; mandatory semester contribution is charged separately.","source_url":"https://www.uni-hamburg.de/en/campuscenter/studienorganisation/studienverlauf/beitraege-gebuehren.html"},"application_fee":null,"deadlines":[{"title":"Winter semester 2026/27","due_at":"2026-07-15","route":"Universität Hamburg STiNE portal","source_url":"https://www.uni-hamburg.de/en/campuscenter/bewerbung/fristen-termine.html"}],"sat":null,"acceptance_rate":null,"notes":"Most bachelor's programs require German proficiency; the winter 2026/27 semester contribution is €402."},{"id":"bd783952-4538-5666-883f-e9c56a60f109","english":[{"test":"IELTS","minimum":6.5,"detail":"IELTS Academic 6.5 overall, no component below 5.5; some courses require higher scores.","source_url":"https://www.reading.ac.uk/ready-to-study/international-and-eu/english-language-requirements"},{"test":"TOEFL iBT","minimum":88,"detail":"88 total; minimums: Listening/Writing 17, Reading 18, Speaking 20.","source_url":"https://www.reading.ac.uk/ready-to-study/international-and-eu/english-language-requirements"},{"test":"Duolingo","minimum":115,"detail":"115 overall with no subscore below 90 plus a 10-week pre-sessional English course; direct-entry requirement is higher.","source_url":"https://www.reading.ac.uk/ready-to-study/international-and-eu/english-language-requirements"},{"test":"PTE Academic","minimum":69,"detail":"69 overall; component minimums vary by course (59 or 64).","source_url":"https://www.reading.ac.uk/ready-to-study/international-and-eu/english-language-requirements"},{"test":"Cambridge C1/C2","minimum":176,"detail":"C1 Advanced: grade B/176; C2 Proficiency: grade C/176; no element below 162.","source_url":"https://www.reading.ac.uk/ready-to-study/international-and-eu/english-language-requirements"}],"tuition":{"amount":26850,"amount_max":31800,"currency":"GBP","period":"year","academic_year":"2027/28","detail":"International undergraduate standard fees: non-laboratory to significant laboratory/workshop courses.","source_url":"https://www.reading.ac.uk/ready-to-study/study/Fees-and-funding/fees-and-funding-ug/international-undergraduate-student-fees"},"application_fee":{"amount":34.5,"currency":"GBP","source_url":"https://www.ucas.com/faqs/what-is-the-application-fee-for-the-2027-cycle"},"deadlines":[{"title":"2027 entry equal consideration","due_at":"2027-01-13","route":"UCAS","source_url":"https://www.reading.ac.uk/uor-forms/-/media/project/functions/university-of-reading-forms/uor-forms/documents/uor-ug-prospectus-2027.pdf"}],"sat":null,"acceptance_rate":null,"notes":""},{"id":"05ee90cf-19f9-5b65-8bf1-63aa1bb139ff","english":[],"tuition":null,"application_fee":null,"deadlines":[{"title":"September 2027 entry","due_at":"2027-01-28","route":"Waseda English-based undergraduate admissions portal","source_url":"https://www.waseda.jp/inst/admission/en/undergraduate/english/"}],"sat":{"policy":"accepted_alternative","p25":null,"p75":null,"source_url":"https://www.waseda.jp/inst/admission/en/undergraduate/english/"},"acceptance_rate":null,"notes":"English-based programs generally set no English test minimum; JCulP has a program-specific minimum. 2027 tuition is published but its fee table was inaccessible."}] }
+tokens used
+126,391
+{"universities":[{"id":"bd6b20f6-b0b7-5062-b4ac-a403d08eadaf","english":[{"test":"IELTS","minimum":0,"detail":"IELTS Academic 4.0+ aligns with general CEFR B1 minimum; departments may require higher scores. Chinese-taught programs require Chinese.","source_url":"https://oia.ncku.edu.tw/var/file/32/1032/img/5027/EnglishProficiencyTestComparisonChart_20251029.pdf"},{"test":"TOEFL iBT","minimum":42,"detail":"42 aligns with general CEFR B1 minimum; departments may require higher scores. Duolingo is not accepted.","source_url":"https://oia.ncku.edu.tw/var/file/32/1032/img/5027/EnglishProficiencyTestComparisonChart_20251029.pdf"}],"tuition":{"amount":90142,"amount_max":143782,"currency":"TWD","period":"year","academic_year":"2025/26","detail":"Annual tuition and miscellaneous fees; reference rates by college. 2026/27 rates were not yet announced.","source_url":"https://oia.ncku.edu.tw/var/file/32/1032/img/5041/NCKUAdmissionProspectusforInternationalStudentsFall2026Spring2027v5-3.pdf"},"application_fee":{"amount":2000,"currency":"TWD","source_url":"https://oia.ncku.edu.tw/p/404-1032-229817.php?Lang=en"},"deadlines":[{"title":"Fall 2026 entry (nearest published fall cycle)","due_at":"2026-03-15","route":"NCKU international student online application","source_url":"https://oia.ncku.edu.tw/p/404-1032-229817.php?Lang=en"}],"sat":null,"acceptance_rate":null,"notes":"Programs taught in Chinese require TOCFL A2 or higher; 2027 fall admission dates were not yet published."},{"id":"5b24f3f6-adcb-53fb-a89e-4f25f33f8da2","english":[{"test":"IELTS","minimum":5.5,"detail":"IELTS Academic 5.5 for select bachelor's courses requiring English B2; English requirements vary by program.","source_url":"https://www.uni-hamburg.de/en/campuscenter/bewerbung/bachelor-staatsexamen/fremdsprachenkenntnisse.html"},{"test":"TOEFL iBT","minimum":72,"detail":"TOEFL iBT 72 for select bachelor's courses requiring English B2; English requirements vary by program.","source_url":"https://www.uni-hamburg.de/en/campuscenter/bewerbung/bachelor-staatsexamen/fremdsprachenkenntnisse.html"},{"test":"PTE Academic","minimum":59,"detail":"PTE Academic 59 for select bachelor's courses requiring English B2; English requirements vary by program.","source_url":"https://www.uni-hamburg.de/en/campuscenter/bewerbung/bachelor-staatsexamen/fremdsprachenkenntnisse.html"}],"tuition":{"amount":0,"amount_max":null,"currency":"EUR","period":"year","academic_year":"2026/27","detail":"No tuition fees; mandatory semester contribution is charged separately.","source_url":"https://www.uni-hamburg.de/en/campuscenter/studienorganisation/studienverlauf/beitraege-gebuehren.html"},"application_fee":null,"deadlines":[{"title":"Winter semester 2026/27","due_at":"2026-07-15","route":"Universität Hamburg STiNE portal","source_url":"https://www.uni-hamburg.de/en/campuscenter/bewerbung/fristen-termine.html"}],"sat":null,"acceptance_rate":null,"notes":"Most bachelor's programs require German proficiency; the winter 2026/27 semester contribution is €402."},{"id":"bd783952-4538-5666-883f-e9c56a60f109","english":[{"test":"IELTS","minimum":6.5,"detail":"IELTS Academic 6.5 overall, no component below 5.5; some courses require higher scores.","source_url":"https://www.reading.ac.uk/ready-to-study/international-and-eu/english-language-requirements"},{"test":"TOEFL iBT","minimum":88,"detail":"88 total; minimums: Listening/Writing 17, Reading 18, Speaking 20.","source_url":"https://www.reading.ac.uk/ready-to-study/international-and-eu/english-language-requirements"},{"test":"Duolingo","minimum":115,"detail":"115 overall with no subscore below 90 plus a 10-week pre-sessional English course; direct-entry requirement is higher.","source_url":"https://www.reading.ac.uk/ready-to-study/international-and-eu/english-language-requirements"},{"test":"PTE Academic","minimum":69,"detail":"69 overall; component minimums vary by course (59 or 64).","source_url":"https://www.reading.ac.uk/ready-to-study/international-and-eu/english-language-requirements"},{"test":"Cambridge C1/C2","minimum":176,"detail":"C1 Advanced: grade B/176; C2 Proficiency: grade C/176; no element below 162.","source_url":"https://www.reading.ac.uk/ready-to-study/international-and-eu/english-language-requirements"}],"tuition":{"amount":26850,"amount_max":31800,"currency":"GBP","period":"year","academic_year":"2027/28","detail":"International undergraduate standard fees: non-laboratory to significant laboratory/workshop courses.","source_url":"https://www.reading.ac.uk/ready-to-study/study/Fees-and-funding/fees-and-funding-ug/international-undergraduate-student-fees"},"application_fee":{"amount":34.5,"currency":"GBP","source_url":"https://www.ucas.com/faqs/what-is-the-application-fee-for-the-2027-cycle"},"deadlines":[{"title":"2027 entry equal consideration","due_at":"2027-01-13","route":"UCAS","source_url":"https://www.reading.ac.uk/uor-forms/-/media/project/functions/university-of-reading-forms/uor-forms/documents/uor-ug-prospectus-2027.pdf"}],"sat":null,"acceptance_rate":null,"notes":""},{"id":"05ee90cf-19f9-5b65-8bf1-63aa1bb139ff","english":[],"tuition":null,"application_fee":null,"deadlines":[{"title":"September 2027 entry","due_at":"2027-01-28","route":"Waseda English-based undergraduate admissions portal","source_url":"https://www.waseda.jp/inst/admission/en/undergraduate/english/"}],"sat":{"policy":"accepted_alternative","p25":null,"p75":null,"source_url":"https://www.waseda.jp/inst/admission/en/undergraduate/english/"},"acceptance_rate":null,"notes":"English-based programs generally set no English test minimum; JCulP has a program-specific minimum. 2027 tuition is published but its fee table was inaccessible."}] }

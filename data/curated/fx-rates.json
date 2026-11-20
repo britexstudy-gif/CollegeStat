@@ -1,0 +1,186 @@
+{
+ "note": "USD per 1 unit of currency. ECB reference rates fetched from https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml; add rows (with date + source) for currencies not listed. Missing currencies (e.g. TWD, CLP, ARS, KGS, TJS) get no USD value and are flagged fx_missing.",
+ "as_of": "2026-11-13",
+ "rates": {
+  "USD": {
+   "usd_per_unit": 1,
+   "date": "2026-11-13",
+   "source": "identity"
+  },
+  "EUR": {
+   "usd_per_unit": 1.1052,
+   "date": "2026-11-13",
+   "source": "ECB euro reference rate"
+  },
+  "AUD": {
+   "usd_per_unit": 0.6785363458,
+   "date": "2026-11-13",
+   "source": "ECB euro reference rates (cross via EUR)"
+  },
+  "BRL": {
+   "usd_per_unit": 0.1765636233,
+   "date": "2026-11-13",
+   "source": "ECB euro reference rates (cross via EUR)"
+  },
+  "CAD": {
+   "usd_per_unit": 0.7013580404,
+   "date": "2026-11-13",
+   "source": "ECB euro reference rates (cross via EUR)"
+  },
+  "CHF": {
+   "usd_per_unit": 1.1927476797,
+   "date": "2026-11-13",
+   "source": "ECB euro reference rates (cross via EUR)"
+  },
+  "CNY": {
+   "usd_per_unit": 0.1498820147,
+   "date": "2026-11-13",
+   "source": "ECB euro reference rates (cross via EUR)"
+  },
+  "CZK": {
+   "usd_per_unit": 0.0452505732,
+   "date": "2026-11-13",
+   "source": "ECB euro reference rates (cross via EUR)"
+  },
+  "DKK": {
+   "usd_per_unit": 0.147840976,
+   "date": "2026-11-13",
+   "source": "ECB euro reference rates (cross via EUR)"
+  },
+  "GBP": {
+   "usd_per_unit": 1.3226582415,
+   "date": "2026-11-13",
+   "source": "ECB euro reference rates (cross via EUR)"
+  },
+  "HKD": {
+   "usd_per_unit": 0.1274534677,
+   "date": "2026-11-13",
+   "source": "ECB euro reference rates (cross via EUR)"
+  },
+  "HUF": {
+   "usd_per_unit": 0.0030229759,
+   "date": "2026-11-13",
+   "source": "ECB euro reference rates (cross via EUR)"
+  },
+  "IDR": {
+   "usd_per_unit": 5.48113e-05,
+   "date": "2026-11-13",
+   "source": "ECB euro reference rates (cross via EUR)"
+  },
+  "ILS": {
+   "usd_per_unit": 0.3114555446,
+   "date": "2026-11-13",
+   "source": "ECB euro reference rates (cross via EUR)"
+  },
+  "INR": {
+   "usd_per_unit": 0.0106108538,
+   "date": "2026-11-13",
+   "source": "ECB euro reference rates (cross via EUR)"
+  },
+  "ISK": {
+   "usd_per_unit": 0.008090776,
+   "date": "2026-11-13",
+   "source": "ECB euro reference rates (cross via EUR)"
+  },
+  "JPY": {
+   "usd_per_unit": 0.0062500707,
+   "date": "2026-11-13",
+   "source": "ECB euro reference rates (cross via EUR)"
+  },
+  "KRW": {
+   "usd_per_unit": 0.0007478685,
+   "date": "2026-11-13",
+   "source": "ECB euro reference rates (cross via EUR)"
+  },
+  "MXN": {
+   "usd_per_unit": 0.0537833774,
+   "date": "2026-11-13",
+   "source": "ECB euro reference rates (cross via EUR)"
+  },
+  "MYR": {
+   "usd_per_unit": 0.2446485888,
+   "date": "2026-11-13",
+   "source": "ECB euro reference rates (cross via EUR)"
+  },
+  "NOK": {
+   "usd_per_unit": 0.104565022,
+   "date": "2026-11-13",
+   "source": "ECB euro reference rates (cross via EUR)"
+  },
+  "NZD": {
+   "usd_per_unit": 0.5532085294,
+   "date": "2026-11-13",
+   "source": "ECB euro reference rates (cross via EUR)"
+  },
+  "PHP": {
+   "usd_per_unit": 0.0156708164,
+   "date": "2026-11-13",
+   "source": "ECB euro reference rates (cross via EUR)"
+  },
+  "PLN": {
+   "usd_per_unit": 0.25053839,
+   "date": "2026-11-13",
+   "source": "ECB euro reference rates (cross via EUR)"
+  },
+  "RON": {
+   "usd_per_unit": 0.2066026096,
+   "date": "2026-11-13",
+   "source": "ECB euro reference rates (cross via EUR)"
+  },
+  "SEK": {
+   "usd_per_unit": 0.0995003376,
+   "date": "2026-11-13",
+   "source": "ECB euro reference rates (cross via EUR)"
+  },
+  "SGD": {
+   "usd_per_unit": 0.776341669,
+   "date": "2026-11-13",
+   "source": "ECB euro reference rates (cross via EUR)"
+  },
+  "THB": {
+   "usd_per_unit": 0.0294853667,
+   "date": "2026-11-13",
+   "source": "ECB euro reference rates (cross via EUR)"
+  },
+  "TRY": {
+   "usd_per_unit": 0.0198538803,
+   "date": "2026-11-13",
+   "source": "ECB euro reference rates (cross via EUR)"
+  },
+  "ZAR": {
+   "usd_per_unit": 0.0589499736,
+   "date": "2026-11-13",
+   "source": "ECB euro reference rates (cross via EUR)"
+  },
+  "UZS": {
+   "usd_per_unit": 8.323e-05,
+   "date": "2026-11-14",
+   "source": "Central Bank of Uzbekistan official rates (as used in targets-latest-nov15)"
+  },
+  "RUB": {
+   "usd_per_unit": 0.01216793,
+   "date": "2026-11-14",
+   "source": "Central Bank of Uzbekistan official rates (as used in targets-latest-nov15)"
+  },
+  "KZT": {
+   "usd_per_unit": 0.00224481,
+   "date": "2026-11-14",
+   "source": "Central Bank of Uzbekistan official rates (as used in targets-latest-nov15)"
+  },
+  "AED": {
+   "usd_per_unit": 0.27227895,
+   "date": "2026-11-14",
+   "source": "Central Bank of Uzbekistan official rates (as used in targets-latest-nov15)"
+  },
+  "SAR": {
+   "usd_per_unit": 0.2666666667,
+   "date": "2026-11-13",
+   "source": "fixed peg 3.75 SAR/USD (Saudi Central Bank)"
+  },
+  "QAR": {
+   "usd_per_unit": 0.2747252747,
+   "date": "2026-11-13",
+   "source": "fixed peg 3.64 QAR/USD (Qatar Central Bank)"
+  }
+ }
+}

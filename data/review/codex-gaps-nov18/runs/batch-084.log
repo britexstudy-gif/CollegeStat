@@ -1,0 +1,132 @@
+OpenAI Codex v0.169.0
+--------
+workdir: /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+model: gpt-6-luna
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: high
+reasoning summaries: none
+session id: 01a1ee90-3ce2-7ad0-aaa0-88163a8db2a4
+--------
+user
+You are a careful admissions-data researcher. For each university below, find facts for an
+INTERNATIONAL applicant to a FIRST-YEAR BACHELOR'S degree starting in autumn 2027 (or the nearest
+published cycle). Use the live web. Rules:
+
+- Official sources only: the university's own website (its domain or subdomains), the national
+  application service (UCAS, Common App, OUAC, uni-assist, Studyinkorea, etc.) or a government
+  statistics office. Never use rankings sites, forums, agencies, Wikipedia or blogs.
+- Every value needs the exact page URL where you read it (source_url). If you could not verify a
+  value on an official page, leave it out (null or an empty list). Never guess or estimate.
+- english: the lowest overall score accepted for undergraduate entry, per test (IELTS Academic
+  overall, TOEFL iBT total, Duolingo, PTE). If programmes differ, give the general/lowest common
+  university minimum and say so in detail (e.g. "6.5 overall, no band below 6.0; some
+  programmes higher").
+- tuition: the yearly tuition for international (non-EU / overseas) undergraduates in the local
+  currency. If it varies by programme give amount = lowest and amount_max = highest, and the
+  academic_year the fee applies to (e.g. "2026/27"). If tuition is free, amount = 0.
+- application_fee: for international first-year applicants, local currency.
+- deadlines: the main 2027-entry first-year deadlines (ISO date YYYY-MM-DD) with the route
+  (e.g. "Common App, Regular Decision", "UCAS", "university portal"). Only dates actually
+  published; if only the 2026-entry date is published, include it and put "2026 entry" in title.
+- sat: policy for international applicants; p25/p75 total SAT only if the university publishes
+  them (Common Data Set or admissions profile).
+- acceptance_rate: only if officially published (CDS, admissions statistics page).
+- notes: one short line on anything important (e.g. "Foundation year required for 11-year
+  school certificates"), else "".
+
+Spend effort on the facts students need most: English minimum, tuition, deadlines. Keep each
+detail under 160 characters. Return only the JSON that matches the schema; use each
+university's id exactly as given.
+
+Universities:
+- id: 0949633f-4123-57e8-8e3d-8b762d4a588d | Abu Dhabi University | Abu Dhabi, AE | http://www.adu.ac.ae/
+- id: b86e106a-7e3d-534d-9f61-d111d5a49dfa | Beijing University of Aeronautics and Astronautics | Beijing, CN | http://www.buaa.edu.cn/
+- id: a32d9481-0ee7-518c-b118-bf5abdee9f53 | University of Münster | Münster, DE | https://www.uni-muenster.de/
+- id: 9915b963-b19f-55f6-8dd8-5067fa6d26d1 | Tsukuba University | Tsukuba, JP | http://www.tsukuba.ac.jp/
+codex
+I’ll check the official admissions and fee pages for each school, using the nearest published entry cycle where 2027 details aren’t available.
+exec
+/bin/zsh -lc 'cat /Users/likeanew/.agents/skills/lemma/SKILL.md' in /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+ succeeded in 0ms:
+---
+name: lemma
+description: Persistent cross-session memory for AI agents via MCP. BEFORE starting ANY task (coding, debugging, refactoring, research, docs, optimization — any language), FIRST call memory_read to load what you already know so you never re-derive or re-explore known facts. AFTER finishing, call memory_add to persist new findings and session_attempt for dead ends — unsaved knowledge is lost permanently. Distills reusable guides from experience.
+---
+
+<!-- lemma:skill:v=0.21.0 -->
+
+# Lemma — Persistent Memory & Learning
+
+Lemma is a persistent memory server for AI agents over the Model Context Protocol.
+Every session starts blank — knowledge survives ONLY through tool calls. If you
+learn something and don't save it (`memory_add`), it is gone permanently.
+
+## Workflow
+1. **RECALL** — `memory_read` / `semantic_search`: load what's already known for this
+   project/task. Never re-explore code or re-derive facts that are already saved.
+2. **ACT** — do the task.
+3. **PERSIST** — `memory_add` for new insights; `guide_practice` for guides applied;
+   `session_attempt` for abandoned/dead-end approaches (the most valuable records).
+
+## Two knowledge layers
+- **Memory fragments** (`memory_read` / `memory_add`): atomic facts. Types: `fact`,
+  `pattern`, `lesson`, `warning`, `context`. Confidence evolves with use and feedback.
+- **Guides** (`guide_get` / `guide_distill` / `guide_practice`): procedural skills
+  distilled from fragments. Track usage count + success/failure rate.
+Pipeline: `experience -> memory_add -> pattern/lesson -> guide_distill -> guide_practice`.
+
+## Tools at a glance
+- **Recall & search**: `memory_read`, `semantic_search`, `memory_library` (full
+  snapshot + maintenance signals), `memory_stats`, `memory_audit`.
+- **Write & maintain**: `memory_add`, `memory_update`, `memory_forget`,
+  `memory_merge`, `memory_relate` (supports / contradicts / supersedes / related_to),
+  `memory_feedback`.
+- **Guides**: `guide_get`, `guide_create`, `guide_distill`, `guide_practice`,
+  `guide_update`, `guide_forget`, `guide_merge`.
+- **Sessions & reasoning**: `session_start`, `session_end`, `session_attempt`,
+  `session_stats`, `suggestion_respond`.
+- **Background intelligence**: `conflict_scan`, `proactive_analysis`,
+  `project_analytics` (run automatically; act on signals when sensible).
+
+## Writing a fragment
+```
+## [Topic Title]
+### Context
+[1-2 sentences: what and why it matters]
+### [Content Section]
+- [Key fact 1]
+- [Key fact 2]
+### Rules (optional)
+- [Absolute constraint]
+```
+One idea per fragment, 30-2000 chars, structured markdown (not prose). **Store
+fragments in ENGLISH** (required for search/retrieval). Never ask permission to save.
+
+## Background intelligence
+Conflict detection, distill/merge/refine suggestions, and auto-linking run
+automatically. From the CLI, `lemma -lib` prints a full knowledge-base snapshot
+and `lemma -vis` launches a visualizer.
+
+web search: 
+web search: site:adu.ac.ae international undergraduate admissions English IELTS tuition application fee deadline 2026 ...
+web search: 
+web search: site:adu.ac.ae "Undergraduate Tuition And Fee Rates" "Academic Year 2026" Abu Dhabi ...
+web search: 
+web search: 
+web search: 
+web search: 
+web search: 
+web search: site:adu.ac.ae "IELTS" "5.0" undergraduate TOEFL 61 international Abu Dhabi University ...
+web search: 
+web search: 
+web search: 
+web search: site:adu.ac.ae "Application Deadline" "Fall" undergraduate 2026 ADU ...
+web search: 
+web search: site:uni-muenster.de undergraduate "application fee" non-EU University Münster ...
+codex
+{"universities":[{"id":"0949633f-4123-57e8-8e3d-8b762d4a588d","english":[{"test":"IELTS","minimum":5.0,"detail":"IELTS Academic 5.0 overall; undergraduate general minimum.","source_url":"https://www.adu.ac.ae/about-adu/our-profile1/frequently-asked-questions/admissions"},{"test":"TOEFL iBT","minimum":61,"detail":"61 total; undergraduate general minimum.","source_url":"https://www.adu.ac.ae/about-adu/our-profile1/frequently-asked-questions/admissions"}],"tuition":null,"application_fee":{"amount":315,"currency":"AED","source_url":"https://www.adu.ac.ae/about-adu/our-profile1/frequently-asked-questions/admissions"},"deadlines":[{"title":"Fall 2026 entry registration deadline for newly admitted students","due_at":"2026-08-28","route":"ADU portal","source_url":"https://www.adu.ac.ae/admissions/how-to-apply"}],"sat":null,"acceptance_rate":null,"notes":"2026/27 tuition is published per credit hour, not as an annual total (AED 1,300–2,085): https://cdn.adu.ac.ae/images-container/docs/default-source/admissions-financials/all-tuition-fees-english.pdf"},{"id":"b86e106a-7e3d-534d-9f61-d111d5a49dfa","english":[{"test":"IELTS","minimum":6.0,"detail":"IELTS 6.0 overall for English-taught programs; Chinese-taught programs require HSK 5.","source_url":"https://is.buaa.edu.cn/en/lxsq/Undergraduate.htm"},{"test":"TOEFL iBT","minimum":90,"detail":"TOEFL iBT 90 total for English-taught programs; Chinese-taught programs require HSK 5.","source_url":"https://is.buaa.edu.cn/en/lxsq/Undergraduate.htm"}],"tuition":{"amount":25000,"amount_max":80000,"currency":"RMB","period":"year","academic_year":"2027/28","detail":"International undergraduate tuition varies by program and campus; Chinese-taught majors start at RMB 25,000/year.","source_url":"https://is.buaa.edu.cn/en/lxsq/Undergraduate.htm"},"application_fee":{"amount":400,"currency":"RMB","source_url":"https://is.buaa.edu.cn/en/lxsq/Undergraduate.htm"},"deadlines":[{"title":"2027 entry","due_at":"2027-05-30","route":"Beihang Online Application System","source_url":"https://is.buaa.edu.cn/en/lxsq/Undergraduate.htm"}],"sat":null,"acceptance_rate":null,"notes":""},{"id":"a32d9481-0ee7-518c-b118-bf5abdee9f53","english":[],"tuition":{"amount":0,"amount_max":null,"currency":"EUR","period":"year","academic_year":"2027/28","detail":"No tuition for regular degree programs; semester contribution is charged separately.","source_url":"https://www.uni-muenster.de/international/en/studierende/general-information/cost-and-funding.html"},"application_fee":null,"deadlines":[{"title":"Winter 2027/28 entry, restricted-admission first-year bachelor's","due_at":"2027-05-31","route":"University application portal","source_url":"https://www.uni-muenster.de/studieninteressierte/en/fristenundtermine/index.html"},{"title":"Winter 2027/28 entry, non-restricted bachelor's","due_at":"2027-07-15","route":"University application portal","source_url":"https://www.uni-muenster.de/studieninteressierte/en/fristenundtermine/index.html"}],"sat":null,"acceptance_rate":null,"notes":"Most bachelor's programs require German, usually DSH-2; the Human Movement in Sports and Exercise bachelor's is the exception."},{"id":"9915b963-b19f-55f6-8dd8-5067fa6d26d1","english":[{"test":"IELTS","minimum":5.0,"detail":"IELTS Academic 5.0 overall for the 2027 International Social Studies first-year program.","source_url":"https://ac.tsukuba.ac.jp/wp/wp-content/uploads/2026/07/01_TISS_Application-guidelines-2027.pdf"},{"test":"TOEFL iBT","minimum":3.5,"detail":"For tests taken on or after 2026-01-21; tests taken earlier require 61 or higher for this program.","source_url":"https://ac.tsukuba.ac.jp/wp/wp-content/uploads/2026/07/01_TISS_Application-guidelines-2027.pdf"}],"tuition":{"amount":608800,"amount_max":null,"currency":"JPY","period":"year","academic_year":"2027/28","detail":"Annual tuition for international students in the 2027 International Social Studies program.","source_url":"https://ac.tsukuba.ac.jp/wp/wp-content/uploads/2026/07/01_TISS_Application-guidelines-2027.pdf"},"application_fee":{"amount":17000,"currency":"JPY","source_url":"https://ac.tsukuba.ac.jp/wp/wp-content/uploads/2026/07/01_TISS_Application-guidelines-2027.pdf"},"deadlines":[{"title":"2027 entry, International Social Studies","due_at":"2026-11-19","route":"University of Tsukuba English Programs Online Application","source_url":"https://ac.tsukuba.ac.jp/wp/wp-content/uploads/2026/07/01_TISS_Application-guidelines-2027.pdf"},{"title":"2027 entry, Interdisciplinary Program of Life and Environmental Sciences","due_at":"2026-11-19","route":"University application system","source_url":"https://ac.tsukuba.ac.jp/en/examinations/application-guidelines/"},{"title":"2027 entry, Interdisciplinary Engineering","due_at":"2026-11-04","route":"University application system","source_url":"https://www.ide.tsukuba.ac.jp/application-information"},{"title":"2027 entry, Global Issues","due_at":"2026-12-24","route":"University application system","source_url":"https://ac.tsukuba.ac.jp/en/examinations/application-guidelines/"}],"sat":{"policy":"optional","p25":null,"p75":null,"source_url":"https://ac.tsukuba.ac.jp/wp/wp-content/uploads/2026/07/01_TISS_Application-guidelines-2027.pdf"},"acceptance_rate":null,"notes":"Admissions scores and deadlines vary by English-taught program; SAT may be submitted as optional supporting material."}] }
+tokens used
+97,344
+{"universities":[{"id":"0949633f-4123-57e8-8e3d-8b762d4a588d","english":[{"test":"IELTS","minimum":5.0,"detail":"IELTS Academic 5.0 overall; undergraduate general minimum.","source_url":"https://www.adu.ac.ae/about-adu/our-profile1/frequently-asked-questions/admissions"},{"test":"TOEFL iBT","minimum":61,"detail":"61 total; undergraduate general minimum.","source_url":"https://www.adu.ac.ae/about-adu/our-profile1/frequently-asked-questions/admissions"}],"tuition":null,"application_fee":{"amount":315,"currency":"AED","source_url":"https://www.adu.ac.ae/about-adu/our-profile1/frequently-asked-questions/admissions"},"deadlines":[{"title":"Fall 2026 entry registration deadline for newly admitted students","due_at":"2026-08-28","route":"ADU portal","source_url":"https://www.adu.ac.ae/admissions/how-to-apply"}],"sat":null,"acceptance_rate":null,"notes":"2026/27 tuition is published per credit hour, not as an annual total (AED 1,300–2,085): https://cdn.adu.ac.ae/images-container/docs/default-source/admissions-financials/all-tuition-fees-english.pdf"},{"id":"b86e106a-7e3d-534d-9f61-d111d5a49dfa","english":[{"test":"IELTS","minimum":6.0,"detail":"IELTS 6.0 overall for English-taught programs; Chinese-taught programs require HSK 5.","source_url":"https://is.buaa.edu.cn/en/lxsq/Undergraduate.htm"},{"test":"TOEFL iBT","minimum":90,"detail":"TOEFL iBT 90 total for English-taught programs; Chinese-taught programs require HSK 5.","source_url":"https://is.buaa.edu.cn/en/lxsq/Undergraduate.htm"}],"tuition":{"amount":25000,"amount_max":80000,"currency":"RMB","period":"year","academic_year":"2027/28","detail":"International undergraduate tuition varies by program and campus; Chinese-taught majors start at RMB 25,000/year.","source_url":"https://is.buaa.edu.cn/en/lxsq/Undergraduate.htm"},"application_fee":{"amount":400,"currency":"RMB","source_url":"https://is.buaa.edu.cn/en/lxsq/Undergraduate.htm"},"deadlines":[{"title":"2027 entry","due_at":"2027-05-30","route":"Beihang Online Application System","source_url":"https://is.buaa.edu.cn/en/lxsq/Undergraduate.htm"}],"sat":null,"acceptance_rate":null,"notes":""},{"id":"a32d9481-0ee7-518c-b118-bf5abdee9f53","english":[],"tuition":{"amount":0,"amount_max":null,"currency":"EUR","period":"year","academic_year":"2027/28","detail":"No tuition for regular degree programs; semester contribution is charged separately.","source_url":"https://www.uni-muenster.de/international/en/studierende/general-information/cost-and-funding.html"},"application_fee":null,"deadlines":[{"title":"Winter 2027/28 entry, restricted-admission first-year bachelor's","due_at":"2027-05-31","route":"University application portal","source_url":"https://www.uni-muenster.de/studieninteressierte/en/fristenundtermine/index.html"},{"title":"Winter 2027/28 entry, non-restricted bachelor's","due_at":"2027-07-15","route":"University application portal","source_url":"https://www.uni-muenster.de/studieninteressierte/en/fristenundtermine/index.html"}],"sat":null,"acceptance_rate":null,"notes":"Most bachelor's programs require German, usually DSH-2; the Human Movement in Sports and Exercise bachelor's is the exception."},{"id":"9915b963-b19f-55f6-8dd8-5067fa6d26d1","english":[{"test":"IELTS","minimum":5.0,"detail":"IELTS Academic 5.0 overall for the 2027 International Social Studies first-year program.","source_url":"https://ac.tsukuba.ac.jp/wp/wp-content/uploads/2026/07/01_TISS_Application-guidelines-2027.pdf"},{"test":"TOEFL iBT","minimum":3.5,"detail":"For tests taken on or after 2026-01-21; tests taken earlier require 61 or higher for this program.","source_url":"https://ac.tsukuba.ac.jp/wp/wp-content/uploads/2026/07/01_TISS_Application-guidelines-2027.pdf"}],"tuition":{"amount":608800,"amount_max":null,"currency":"JPY","period":"year","academic_year":"2027/28","detail":"Annual tuition for international students in the 2027 International Social Studies program.","source_url":"https://ac.tsukuba.ac.jp/wp/wp-content/uploads/2026/07/01_TISS_Application-guidelines-2027.pdf"},"application_fee":{"amount":17000,"currency":"JPY","source_url":"https://ac.tsukuba.ac.jp/wp/wp-content/uploads/2026/07/01_TISS_Application-guidelines-2027.pdf"},"deadlines":[{"title":"2027 entry, International Social Studies","due_at":"2026-11-19","route":"University of Tsukuba English Programs Online Application","source_url":"https://ac.tsukuba.ac.jp/wp/wp-content/uploads/2026/07/01_TISS_Application-guidelines-2027.pdf"},{"title":"2027 entry, Interdisciplinary Program of Life and Environmental Sciences","due_at":"2026-11-19","route":"University application system","source_url":"https://ac.tsukuba.ac.jp/en/examinations/application-guidelines/"},{"title":"2027 entry, Interdisciplinary Engineering","due_at":"2026-11-04","route":"University application system","source_url":"https://www.ide.tsukuba.ac.jp/application-information"},{"title":"2027 entry, Global Issues","due_at":"2026-12-24","route":"University application system","source_url":"https://ac.tsukuba.ac.jp/en/examinations/application-guidelines/"}],"sat":{"policy":"optional","p25":null,"p75":null,"source_url":"https://ac.tsukuba.ac.jp/wp/wp-content/uploads/2026/07/01_TISS_Application-guidelines-2027.pdf"},"acceptance_rate":null,"notes":"Admissions scores and deadlines vary by English-taught program; SAT may be submitted as optional supporting material."}] }

@@ -1,0 +1,2181 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-16",
+  "status": "candidates_require_review",
+  "receipts": [
+    {
+      "university_id": "22222222-2222-4222-8222-222222222222",
+      "domain": "mit.edu",
+      "kind": "history",
+      "url": "https://facts.mit.edu/origins/",
+      "retrieved_at": "2026-10-16T03:07:47.989007+00:00",
+      "status": 200,
+      "final_url": "https://facts.mit.edu/origins/",
+      "content_type": "text/html",
+      "title": "Origins – MIT Facts",
+      "bytes": 51729,
+      "sha256": "d6be213be97095b37d8e4b489ea761895755c6479f0bc3fb1f0e02f604e7b0de",
+      "cache_file": "/var/folders/s7/l14g78kx35z66lhftvjc1qk80000gn/T/collegestat-university-enrichment-oct15/b3bfa21d6ca5cef674.html",
+      "youtube_ids_in_official_page": [],
+      "candidate_links": [
+        {
+          "url": "https://facts.mit.edu/origins/",
+          "label": "Admissions & Aid",
+          "tag": "a"
+        },
+        {
+          "url": "https://facts.mit.edu/undergraduate-admissions/",
+          "label": "Undergraduate Admissions",
+          "tag": "a"
+        },
+        {
+          "url": "https://facts.mit.edu/undergraduate-admissions/",
+          "label": "Undergraduate Admissions Overview",
+          "tag": "a"
+        },
+        {
+          "url": "https://facts.mit.edu/undergraduate-admissions/undergraduate-tuition/",
+          "label": "Undergraduate Tuition & Aid",
+          "tag": "a"
+        },
+        {
+          "url": "https://facts.mit.edu/graduate-student-admission/",
+          "label": "Graduate Admissions",
+          "tag": "a"
+        },
+        {
+          "url": "https://facts.mit.edu/graduate-student-admission/",
+          "label": "Graduate Admissions Overview",
+          "tag": "a"
+        },
+        {
+          "url": "https://facts.mit.edu/graduate-student-admission/graduate-tuition/",
+          "label": "Graduate Tuition & Aid",
+          "tag": "a"
+        },
+        {
+          "url": "https://facts.mit.edu/undergraduate-students/",
+          "label": "Undergraduate Students",
+          "tag": "a"
+        },
+        {
+          "url": "https://facts.mit.edu/graduate-students/",
+          "label": "Graduate Students",
+          "tag": "a"
+        },
+        {
+          "url": "https://facts.mit.edu/research-highlights/research-centers-labs-and-programs/",
+          "label": "Research Centers, Labs & Programs",
+          "tag": "a"
+        },
+        {
+          "url": "https://facts.mit.edu/research-highlights/research-centers-labs-and-programs/",
+          "label": "Research Centers, Labs & Programs Overview",
+          "tag": "a"
+        },
+        {
+          "url": "https://facts.mit.edu/research-highlights/research-centers-labs-and-programs/centers-labs-institutes/",
+          "label": "Centers, Labs & Institutes",
+          "tag": "a"
+        },
+        {
+          "url": "https://facts.mit.edu/research-highlights/research-centers-labs-and-programs/institute-initiatives/",
+          "label": "Institute Initiatives",
+          "tag": "a"
+        },
+        {
+          "url": "https://facts.mit.edu/research-highlights/research-centers-labs-and-programs/prominent-programs/",
+          "label": "Prominent Programs",
+          "tag": "a"
+        },
+        {
+          "url": "https://facts.mit.edu/origins/",
+          "label": "Admissions & Aid",
+          "tag": "a"
+        },
+        {
+          "url": "https://facts.mit.edu/undergraduate-admissions/",
+          "label": "Undergraduate Admissions",
+          "tag": "a"
+        },
+        {
+          "url": "https://facts.mit.edu/undergraduate-admissions/undergraduate-tuition/",
+          "label": "Undergraduate Tuition & Aid",
+          "tag": "a"
+        },
+        {
+          "url": "https://facts.mit.edu/graduate-student-admission/",
+          "label": "Graduate Admissions",
+          "tag": "a"
+        },
+        {
+          "url": "https://facts.mit.edu/graduate-student-admission/graduate-tuition/",
+          "label": "Graduate Tuition & Aid",
+          "tag": "a"
+        },
+        {
+          "url": "https://facts.mit.edu/undergraduate-students/",
+          "label": "Undergraduate Students",
+          "tag": "a"
+        },
+        {
+          "url": "https://facts.mit.edu/graduate-students/",
+          "label": "Graduate Students",
+          "tag": "a"
+        },
+        {
+          "url": "https://facts.mit.edu/research-highlights/research-centers-labs-and-programs/",
+          "label": "Research Centers, Labs & Programs",
+          "tag": "a"
+        },
+        {
+          "url": "https://facts.mit.edu/research-highlights/research-centers-labs-and-programs/centers-labs-institutes/",
+          "label": "Centers, Labs & Institutes",
+          "tag": "a"
+        },
+        {
+          "url": "https://facts.mit.edu/research-highlights/research-centers-labs-and-programs/institute-initiatives/",
+          "label": "Institute Initiatives",
+          "tag": "a"
+        },
+        {
+          "url": "https://facts.mit.edu/research-highlights/research-centers-labs-and-programs/prominent-programs/",
+          "label": "Prominent Programs",
+          "tag": "a"
+        },
+        {
+          "url": "https://facts.mit.edu/undergraduate-students/",
+          "label": "",
+          "tag": "a"
+        },
+        {
+          "url": "https://facts.mit.edu/undergraduate-students/",
+          "label": "Experiential learning",
+          "tag": "a"
+        }
+      ],
+      "history_context": [
+        ". The Institute admitted its first students in 1865, four years after the approval of its founding charter, and admitted its first woman student shortly thereafter, in 1871. MIT’s opening marked the culmination of an extended effort by William Barton Rogers, a distinguished natur",
+        "ion of an extended effort by William Barton Rogers, a distinguished natural scientist, to establish a new kind of independent educational institution relevant to an increasingly industrialized America. Rogers stressed the pragmatic and practicable. He believed that professional c"
+      ]
+    },
+    {
+      "university_id": "11111111-1111-4111-8111-111111111111",
+      "domain": "stanford.edu",
+      "kind": "history",
+      "url": "https://www.stanford.edu/about/history",
+      "retrieved_at": "2026-10-16T03:07:47.989649+00:00",
+      "status": 200,
+      "final_url": "https://www.stanford.edu/about/history",
+      "content_type": "text/html",
+      "title": "Our History | Stanford University",
+      "bytes": 594366,
+      "sha256": "77c95905712be57e3aad74700011cc74866bf25503c4209c246669aff1a31f52",
+      "cache_file": "/var/folders/s7/l14g78kx35z66lhftvjc1qk80000gn/T/collegestat-university-enrichment-oct15/530f7b9998fadb2b52.html",
+      "youtube_ids_in_official_page": [
+        "ewdPzMXqmQg"
+      ],
+      "candidate_links": [
+        {
+          "url": "https://admission.stanford.edu/",
+          "label": "Applicants",
+          "tag": "a"
+        },
+        {
+          "url": "https://bulletin.stanford.edu/programs?KhCQH=Graduate&page=1&pq=",
+          "label": "Graduate Programs",
+          "tag": "a"
+        },
+        {
+          "url": "https://admission.stanford.edu/",
+          "label": "Applicants",
+          "tag": "a"
+        },
+        {
+          "url": "https://admission.stanford.edu/",
+          "label": "Applicants",
+          "tag": "a"
+        },
+        {
+          "url": "https://admission.stanford.edu/",
+          "label": "Applicants",
+          "tag": "a"
+        },
+        {
+          "url": "https://admission.stanford.edu/",
+          "label": "Applicants",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.stanford.edu/admissions-aid",
+          "label": "Admissions & Aid",
+          "tag": "a"
+        },
+        {
+          "url": "https://admission.stanford.edu",
+          "label": "Undergraduate",
+          "tag": "a"
+        },
+        {
+          "url": "https://gradadmissions.stanford.edu/",
+          "label": "Graduate",
+          "tag": "a"
+        },
+        {
+          "url": "https://admission.stanford.edu/",
+          "label": "Applicants",
+          "tag": "a"
+        },
+        {
+          "url": "https://admission.stanford.edu/",
+          "label": "Applicants",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.youtube.com/embed/ewdPzMXqmQg?preload=metadata&enablejsapi=1&cc_load_policy=1&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1&color=white",
+          "label": "",
+          "tag": "iframe"
+        },
+        {
+          "url": "https://www.stanford.edu/admissions-aid",
+          "label": "Admissions & Aid",
+          "tag": "a"
+        },
+        {
+          "url": "https://admission.stanford.edu",
+          "label": "Apply",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.youtube.com/stanford",
+          "label": "YouTube",
+          "tag": "a"
+        },
+        {
+          "url": "https://admission.stanford.edu",
+          "label": "Apply",
+          "tag": "a"
+        },
+        {
+          "url": "https://adminguide.stanford.edu/chapter-1/subchapter-5/policy-1-5-4",
+          "label": "Trademarks",
+          "tag": "a"
+        }
+      ],
+      "history_context": [
+        "n West. Out of grief, a founding vision The founding grant View a PDF of the university's founding grant. Stanford University was founded in 1885 by Leland Stanford, a former California governor and U.S. senator, and his wife, Jane Lathrop Stanford, as a memorial to their only ch",
+        "The founding grant View a PDF of the university's founding grant. Stanford University was founded in 1885 by Leland Stanford, a former California governor and U.S. senator, and his wife, Jane Lathrop Stanford, as a memorial to their only child, Leland Stanford Jr. After young Lel",
+        "g grant View a PDF of the university's founding grant. Stanford University was founded in 1885 by Leland Stanford, a former California governor and U.S. senator, and his wife, Jane Lathrop Stanford, as a memorial to their only child, Leland Stanford Jr. After young Leland died of",
+        "ren.” The institution, legally named Leland Stanford Junior University, opened on Oct. 1, 1891. It was built on the Stanford family’s Palo Alto stock farm, an 8,180-acre property. The Stanfords and founding President David Starr Jordan aimed for their new university to be nonsect",
+        " on the Stanford family’s Palo Alto stock farm, an 8,180-acre property. The Stanfords and founding President David Starr Jordan aimed for their new university to be nonsectarian, coeducational, and affordable, to produce “cultured and useful graduates,” and to combine liberal art",
+        "d from the inalienable rights of man to life, liberty, and the pursuit of happiness. —The Founding Grant The Boston firm Shepley, Rutan, and Coolidge collaborated with Frederick Law Olmsted – best known for his design of New York City’s Central Park – to develop the university’s ",
+        "llenges, over the next 30 years, Stanford added graduate schools in law (1893), medicine (1907), and education (1917). University benefactor and trustee Herbert Hoover, the future U.S. president and a member of Stanford’s Pioneer Class of 1895, worked with leadership to professio",
+        "iversity operations in the 1920s and helped put Stanford on a sound financial footing. He founded an institute to collect global political material – today’s Hoover Institution Library & Archives – and led the creation of the Graduate School of Business, which opened in 1925. An ",
+        "iscoveries when it became home to the Stanford Artificial Intelligence Laboratory (SAIL), founded by John McCarthy and Les Earnest in 1963. SAIL researchers devised the first interactive system for computer design, as well as pioneering work on computer vision, robotics, laser pr",
+        "e justice on the U.S. Supreme Court . Stegner and his work were later memorialized by the establishment of a creative writing fellowship program in his name. Medical breakthroughs Stanford Hospital, which had moved from its original location in San Francisco to the Palo Alto camp",
+        "geRank. A year later, using computers in their dorm rooms as a data center, Page and Brin founded Google. Since 2000, Stanford researchers have unlocked transformational insights and invented new research methods that enabled advancements in cancer therapy, psychology, robotics, ",
+        "s – included offerings from Stanford computer scientists Daphne Koller and Andrew Ng, who founded Coursera in 2012. Today, more than 1.4 million people around the world access Stanford virtual instruction each year, much of it free. Stanford historian Clayborne Carson (left) and ",
+        " of concerts, exhibitions, and events each year. The Anderson Collection, which opened in 2014, is one of the world’s most outstanding private assemblies of modern and contemporary American art. | Andrew Brodhead Advancing the Frontier Stanford teams are expanding what’s known an",
+        "mmitment to helping solve problems associated with climate change, the university in 2022 established the Doerr School of Sustainability, the first new school at Stanford in more than 70 years. It was made possible by a $1.1 billion gift from venture capital leader John Doerr. Hi",
+        "cial Intelligence (HAI) was advocating for broader public engagement with the technology. Founded in 2019 by Stanford computer science Professor Fei-Fei Li, the institute aims to advance AI research, education, and policy to improve the human condition. It provides research fundi",
+        "ience that informs our understanding of cancer and converted that knowledge to action. In 1955, Stanford radiologist Henry Kaplan worked with campus physicists to develop the first medical linear accelerator in the Western Hemisphere, successfully treating a 2-year-old boy with a"
+      ]
+    },
+    {
+      "university_id": "39230496-b2fc-53ca-9303-1726c4ac13da",
+      "domain": "harvard.edu",
+      "kind": "history",
+      "url": "https://www.harvard.edu/about/history/",
+      "retrieved_at": "2026-10-16T03:07:47.990009+00:00",
+      "status": 200,
+      "final_url": "https://www.harvard.edu/about/history/",
+      "content_type": "text/html",
+      "title": "The history of Harvard University",
+      "bytes": 187349,
+      "sha256": "fd6ecbead9470bf916c9aeab9a8036301aae23583532a44b0e5a09efba6b6cca",
+      "cache_file": "/var/folders/s7/l14g78kx35z66lhftvjc1qk80000gn/T/collegestat-university-enrichment-oct15/66158e03a477a8c83d.html",
+      "youtube_ids_in_official_page": [],
+      "candidate_links": [
+        {
+          "url": "https://www.harvard.edu/federal-lawsuits/",
+          "label": "Learn about our lawsuits to protect our students and researchers",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.harvard.edu//programs/",
+          "label": "\n\t\t\t\t\tExplore Harvard's degree programs\t\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.harvard.edu//programs/?degree_levels=undergraduate",
+          "label": "\n\n\t\n\t\tUndergraduate Degrees\t\n\n\n",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.harvard.edu//programs/?degree_levels=graduate",
+          "label": "\n\n\t\n\t\tGraduate Degrees\t\n\n\n",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.harvard.edu/visit/tours/",
+          "label": "Tours",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.harvard.edu/visit/tour-providers/",
+          "label": "Tour Providers",
+          "tag": "a"
+        },
+        {
+          "url": "https://aaas.fas.harvard.edu/visual-retrospective",
+          "label": "\n\t\t\t\n\t\t\tLearn about Harvard’s African and African American Program\t\t\t\n\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://hunap.harvard.edu/land-acknowledgement",
+          "label": "\n\t\t\t\n\t\t\tLearn more from the Harvard University Native American Program\t\t\t\n\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://news.harvard.edu/gazette/story/2021/03/harvards-native-american-program-turns-50/",
+          "label": "\n\t\t\t\n\t\t\tLearn more about the program\t\t\t\n\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://peabody.harvard.edu/galleries/digging-veritas-students-17th-century-about-indian-college-students",
+          "label": "\n\t\t\t\n\t\t\tRead the biographies\t\t\t\n\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.youtube.com/harvard",
+          "label": "\n\t\t\t\t\tYouTube\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t",
+          "tag": "a"
+        }
+      ],
+      "history_context": [
+        "e Frequently asked history Harvard answers your most searched questions. When was Harvard founded? On October 28, 1636, Harvard, the first college in the American colonies, was founded. Who founded Harvard? Despite popular opinion (and a certain statue ) John Harvard did not foun",
+        "ry Harvard answers your most searched questions. When was Harvard founded? On October 28, 1636, Harvard, the first college in the American colonies, was founded. Who founded Harvard? Despite popular opinion (and a certain statue ) John Harvard did not found Harvard, but he was th",
+        "rd founded? On October 28, 1636, Harvard, the first college in the American colonies, was founded. Who founded Harvard? Despite popular opinion (and a certain statue ) John Harvard did not found Harvard, but he was the first major benefactor and he donated half of his estate and ",
+        "n October 28, 1636, Harvard, the first college in the American colonies, was founded. Who founded Harvard? Despite popular opinion (and a certain statue ) John Harvard did not found Harvard, but he was the first major benefactor and he donated half of his estate and his library o",
+        "e and his library of more than 400 books to the School. Harvard University was officially founded by a vote by the Great and General Court of the Massachusetts Bay Colony. Where is Harvard University located? While many think of Harvard Yard in Cambridge, Massachusetts as Harvard",
+        " for generations to come. Explore our Women’s History Month celebration Alice Hamilton In 1918, Alice Hamilton became the first woman to be appointed to Harvard’s faculty. Read more about Alice A complicated history While women weren’t taught at Harvard until 1879, they have alwa",
+        " Starting in 1959, Barbara Deming focused her activism on women’s and lesbian issues. She founded a program, now named for her, that supports feminist projects in arts and education. Read more about Barbara Black Women Oral History Project The project interviewed and recorded 72 ",
+        "ctual, W.E.B. Du Bois, the first African-American to earn a Ph.D. from Harvard, is also a founding father of American sociology. Learn more about W.E.B. Du Bois Eileen Jackson Southern The portrait of Eileen Jackson Southern was an authority on Renaissance and African American mu",
+        "on the site currently occupied by Matthews Hall. It was not until 1970 that a program was established to specifically address Native American issues. In early 1970, the American Indian Program (AIP) emerged on campus. Learn more about this history Acknowledgement of Land and Peop",
+        "urns 50 The Harvard University Native American Program celebrated its 50th anniversary in 2021. Learn how it started and the hopes for the future. Learn more about the program Short biographies of five Indian College students from the 17th century Read the biographies Harvard’s f",
+        "an history.\" Learn more about Philip The Project on Indigenous Governance and Development Founded in 1987, the project uses applied research and service to understand and foster the conditions under which sustained, self-determined social and economic development is achieved amon"
+      ]
+    },
+    {
+      "university_id": "99fbcf31-606d-5dac-880e-83ca25acd942",
+      "domain": "caltech.edu",
+      "kind": "history",
+      "url": "https://www.caltech.edu/about/legacy/history-milestones",
+      "retrieved_at": "2026-10-16T03:07:47.990223+00:00",
+      "status": 200,
+      "final_url": "https://www.caltech.edu/about/legacy/history-milestones",
+      "content_type": "text/html",
+      "title": "History & Milestones - www.caltech.edu",
+      "bytes": 242828,
+      "sha256": "d5f7528cda56db67fbd3558b8688e09fa997e0d3e793c0785be3d4ac130d1041",
+      "cache_file": "/var/folders/s7/l14g78kx35z66lhftvjc1qk80000gn/T/collegestat-university-enrichment-oct15/4db07598d42c0087d6.html",
+      "youtube_ids_in_official_page": [],
+      "candidate_links": [
+        {
+          "url": "https://www.caltech.edu/quick-links-students",
+          "label": "for Students",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.caltech.edu/about/leadership/academic-and-administrative-leadership",
+          "label": "Academic and Administrative Leadership",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.caltech.edu/about/visit/tours",
+          "label": "Tours",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.caltech.edu/about/offices-departments",
+          "label": "Administrative Offices & Departments",
+          "tag": "a"
+        },
+        {
+          "url": "https://sfp.caltech.edu/",
+          "label": "Student Research",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.caltech.edu/admissions-aid",
+          "label": "Admissions & Aid",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.admissions.caltech.edu/afford",
+          "label": "Cost & Aid",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.caltech.edu/admissions-aid",
+          "label": "\n            Admissions & Aid\n          ",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.caltech.edu/quick-links-students",
+          "label": "for Students",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.caltech.edu/about/leadership/academic-and-administrative-leadership",
+          "label": "\n        Academic and Administrative Leadership\n      ",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.caltech.edu/about/visit/tours",
+          "label": "\n        Tours\n      ",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.caltech.edu/about/offices-departments",
+          "label": "\n        Administrative Offices & Departments\n      ",
+          "tag": "a"
+        },
+        {
+          "url": "https://sfp.caltech.edu/",
+          "label": "\n        Student Research\n      ",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.admissions.caltech.edu/afford",
+          "label": "\n        Cost & Aid\n      ",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.caltech.edu/about/leadership/academic-and-administrative-leadership",
+          "label": "\n                  Academic and Administrative Leadership\n                ",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.caltech.edu/about/visit/tours",
+          "label": "\n                  Tours\n                ",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.caltech.edu/about/offices-departments",
+          "label": "\n                  Administrative Offices & Departments\n                ",
+          "tag": "a"
+        }
+      ],
+      "history_context": [
+        "ech Experts Guide Media Assets Filming News Crew Information Research Impact In September 1891, Pasadena philanthropist Amos Throop rented the Wooster Block building in Pasadena for the purpose of establishing Throop University, a forerunner to Caltech. In November of that year, ",
+        "ilanthropist Amos Throop rented the Wooster Block building in Pasadena for the purpose of establishing Throop University, a forerunner to Caltech. In November of that year, Throop University opened its doors with 31 students and a six-member faculty. Throop might have remained si",
+        "or of the Mount Wilson Observatory, Hale became a member of Throop's board of trustees in 1907 and began molding the school into a first-class institution for engineering and scientific research and education. By 1921, Hale had been joined by chemist Arthur A. Noyes and physicist",
+        "p Polytechnic Institute, a forerunner to Caltech. Pasadena philanthropist Amos Throop had established the school in November 1891, and astronomer George Ellery Hale, the first director of the Mount Wilson Laboratory and a member of Throop's board of trustees, appointed Scherer to",
+        "er to Caltech. Pasadena philanthropist Amos Throop had established the school in November 1891, and astronomer George Ellery Hale, the first director of the Mount Wilson Laboratory and a member of Throop's board of trustees, appointed Scherer to lead the fledgling university. Pri",
+        ". Prior to his arrival, Scherer had served as a Lutheran minister and teacher in Japan, cofounding the Japan Evangelical Lutheran Church in Tokyo in 1892. From 1904 to 1908 (the year he arrived at Throop) he was president of Newberry College in South Carolina. In 1913, Throop Pol",
+        "nd engineering research and education, recruiting faculty such as Thomas Hunt Morgan, who established the Division of Biology in 1928. Millikan remained at Caltech until his retirement in 1945. In his will, he left $100,000 (one-fifth of his estate) as an endowment fund for one o",
+        "9. During his presidency, Brown made significant changes to the undergraduate curriculum, establishing programs in independent studies and in applied physics, and turned the environmental engineering program into a degree option. He also developed a campus master plan, purchasing",
+        "sing the course offerings in that area but also partnering with the Huntington Library to establish joint appointments for humanities faculty. Goldberger also established the Summer Undergraduate Research Fellowship (SURF) program, which provides undergraduates the opportunity to",
+        "untington Library to establish joint appointments for humanities faculty. Goldberger also established the Summer Undergraduate Research Fellowship (SURF) program, which provides undergraduates the opportunity to collaborate with faculty on research projects that students initiate",
+        "oil. The event has yielded as much as 6,000 pounds of olives and 127 gallons of oil. 2013–2014 Edward M. Stolper, Interim President \"Caltech is not a big place. But in my view our small size . . . is a real advantage in that it leads to a sense of community that is very special. ",
+        "when the newly appointed president, Thomas F. Rosenbaum, arrived at the Institute in July 2014. 2014–2026 Thomas F. Rosenbaum \"Caltech's combination of absolute excellence, traversable disciplinary barriers, and soaring ambition is simply remarkable. It does not seem possible tha",
+        "he newly appointed president, Thomas F. Rosenbaum, arrived at the Institute in July 2014. 2014–2026 Thomas F. Rosenbaum \"Caltech's combination of absolute excellence, traversable disciplinary barriers, and soaring ambition is simply remarkable. It does not seem possible that a un",
+        " in my view it fundamentally comes down to Caltech's culture of fearlessness.\" On July 1, 2014, Thomas F. Rosenbaum took office as Caltech's ninth president. Rosenbaum received his bachelor's degree in physics from Harvard University and his MA and PhD in physics from Princeton U",
+        "t are best observed at temperatures near absolute zero. He was inaugurated on October 24, 2014. 2026 –present Ray Jayawardhana \"What sets Caltech apart is this extraordinary community with a can-do spirit and clarity of purpose. By its very design, the Institute creates a powerfu"
+      ]
+    },
+    {
+      "university_id": "ae117645-e24c-5269-8ed1-b5b826e53932",
+      "domain": "cam.ac.uk",
+      "kind": "history",
+      "url": "https://www.cam.ac.uk/about-the-university/history",
+      "retrieved_at": "2026-10-16T03:07:47.990367+00:00",
+      "status": 200,
+      "final_url": "https://www.cam.ac.uk/about-the-university/history",
+      "content_type": "text/html",
+      "title": "History | University of Cambridge",
+      "bytes": 148830,
+      "sha256": "3acc2f61369ea0daf566997f90f634b9fa028fe960eea847ba51d652023faf57",
+      "cache_file": "/var/folders/s7/l14g78kx35z66lhftvjc1qk80000gn/T/collegestat-university-enrichment-oct15/73e068040e020e7354.html",
+      "youtube_ids_in_official_page": [],
+      "candidate_links": [
+        {
+          "url": "https://www.cambridgestudents.cam.ac.uk/?ucam-ref=global-quick-links",
+          "label": "For Cambridge students",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.research-services.admin.cam.ac.uk/?ucam-ref=global-quick-links",
+          "label": "For our\n              researchers",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.undergraduate.study.cam.ac.uk/courses?ucam-ref=global-header",
+          "label": "Undergraduate courses",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.undergraduate.study.cam.ac.uk/finance?ucam-ref=global-header",
+          "label": "Fees and finance",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.postgraduate.study.cam.ac.uk/courses?ucam-ref=global-header",
+          "label": "Postgraduate courses",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.postgraduate.study.cam.ac.uk/funding?ucam-ref=global-header",
+          "label": "Fees and funding",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.internationalstudents.cam.ac.uk/?ucam-ref=global-header",
+          "label": "International\n                students",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.educ.cam.ac.uk/?ucam-ref=global-header",
+          "label": "Courses in education",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.equality.admin.cam.ac.uk/?ucam-ref=global-header",
+          "label": "Equality and diversity",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.admin.cam.ac.uk/whatson/?ucam-ref=global-header",
+          "label": "Events",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.cambridgestudents.cam.ac.uk/?ucam-ref=global-quick-links",
+          "label": "For Cambridge students",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.research-services.admin.cam.ac.uk/?ucam-ref=global-quick-links",
+          "label": "For our researchers",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.youtube.com/cambridgeuniversity",
+          "label": "YouTube",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.information-compliance.admin.cam.ac.uk/foi?ucam-ref=global-footer",
+          "label": "Freedom of information",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.governanceandcompliance.admin.cam.ac.uk/governance-and-strategy/anti-slavery-and-anti-trafficking?ucam-ref=global-footer",
+          "label": "Statement on Modern Slavery",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.educ.cam.ac.uk/?ucam-ref=global-footer",
+          "label": "Courses in education",
+          "tag": "a"
+        }
+      ],
+      "history_context": [
+        "s and leading academic centres, and a self-governed community of scholars. Established in 1209, the University is rich in history. Cambridge's famous Colleges and University buildings attract visitors from all over the world, while its museums and collections also hold many treas",
+        "enturies 1200s | 1300s | 1400s | 1500s | 1600s | 1700s | 1800s | 1900s | 2000s Year Event 1209 Groups of scholars congregate at the ancient Roman trading post of Cambridge for the purpose of study, the earliest record of the University. 1284 Peterhouse, the first College at Cambr",
+        "he earliest record of the University. 1284 Peterhouse, the first College at Cambridge, is founded by the Bishop of Ely. 1347 Mary, Countess of Pembroke, founds Pembroke College. 1446 Henry VI, founder of Eton and of King's College, Cambridge, lays the first stone of King's Colleg",
+        "ounds Trinity College, Cambridge. 1584 The Cambridge University Press, the world's oldest-established press, begins its unbroken record of publishing every year until the present. 1600 Dr William Gilbert of St John's publishes his 'De Magnete', a scientific work fundamental to th",
+        " to verify his gravitational theory. 1687 Isaac Newton publishes 'Principia Mathematica', establishing the fundamental principles of modern physics. 1704 The Plumian chair of Astronomy and Experimental Philosophy is endowed by Thomas Plume of Christ's. Subsequent incumbents inclu",
+        "nister, the first of which saw his vigorous prosecution of the Crimean war with Russia in 1855. 1812 Charles Babbage, while an undergraduate at Peterhouse, has his first ideas for a calculating machine and later starts work on his 'difference engine', which he never completed but",
+        "ature. 1906 JJ Thomson collects his Nobel prize for Physics for his work on the electron. 1907 Jawaharlal Nehru, Prime Minister of India 1947-1964, enters Trinity. 1911 Ludwig Wittgenstein arrives in Cambridge from Vienna to study philosophy with Russell. The work of the two men,",
+        "tion. Three years later, he shares his Nobel prize for Physics with his father, WH Bragg. 1918 Following the Armistice, Eric Milner-White, Dean of King's, institutes the first Festival of Nine Lessons and Carols, now broadcast worldwide from King's College Chapel each Christmas E",
+        " 40s, and 50s. 1933 Professor Paul Dirac receives his Nobel prize for Physics. One of the founding fathers of quantum theory, basic to physics, chemistry and mathematics, Dirac also suggested the existence of antimatter, the positron being the first antiparticle to be discovered.",
+        "rt of a massive enterprise, vastly expanding our knowledge of China and its civilisation. 1955 Sylvia Plath, Marshall Scholar at Newnham, continues correspondence to her mother, later to be published in the book, 'Letters Home'. 1958 Frederick Sanger of the University's Departmen",
+        "trument is later adapted to write the masks for today's electronic chips. 1962 Max Perutz establishes and directs the Medical Research Council's Laboratory of Molecular Biology in Cambridge, a notable example of close working relations between the University and other leading res",
+        "able example of close working relations between the University and other leading research establishments. Crick and Watson share the Nobel Prize for Physiology and Medicine for their discovery of the structure of DNA with Maurice Wilkins of the University of London. At the same c",
+        "sity's West Cambridge Site. Opening of the new BP Institute at Madingley Road, Cambridge. 2002 The William H Gates building opens, the first on the University's major new science and technology West Cambridge site. 2003 Professor Alison Richard becomes Vice-Chancellor. Work start",
+        "e University of Cambridge Local Examinations Syndicate) celebrates its 150th anniversary. 2009 The University of Cambridge celebrates its 800th anniversary. 2010 Professor Sir Leszek Borysiewicz becomes Vice-Chancellor. 2013 Development begins at North West Cambridge. The Institu",
+        "he Cambridge Centre for Advanced Research and Education in Singapore (Cambridge CARES) is established as The University's first research centre outside of the UK. 2015 The University of Cambridge Primary School, the first primary University Training School in the UK, opens for it",
+        "avendish Laboratory and Arts School and a new building on the site of the old Exam Halls. 2021 Launch of the Foundation Year in Arts, Humanities and Social Sciences – a free and fully-funded one year pre-degree course, designed to offer a stepping stone to Cambridge for those who"
+      ]
+    },
+    {
+      "university_id": "5ad45ea9-e51c-59e4-9ef7-6d3768be673c",
+      "domain": "imperial.ac.uk",
+      "kind": "history",
+      "url": "https://www.imperial.ac.uk/about/history/",
+      "retrieved_at": "2026-10-16T03:07:47.990758+00:00",
+      "status": 200,
+      "final_url": "https://www.imperial.ac.uk/about/history/",
+      "content_type": "text/html",
+      "title": "History | About | Imperial College London",
+      "bytes": 94949,
+      "sha256": "fd9d56dc407b6efab3a223d74c6fea4159550e6101371fc9882b1e2ec4ac79ef",
+      "cache_file": "/var/folders/s7/l14g78kx35z66lhftvjc1qk80000gn/T/collegestat-university-enrichment-oct15/18f7d669cc59e12edb.html",
+      "youtube_ids_in_official_page": [],
+      "candidate_links": [
+        {
+          "url": "https://www.imperial.ac.uk/study/courses/",
+          "label": "Course search",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.imperial.ac.uk/study/fees-and-funding/",
+          "label": "Fees and funding",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.imperial.ac.uk/study/student-life/",
+          "label": "Student life",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.imperial.ac.uk/study/international-students/",
+          "label": "International students",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.imperial.ac.uk/admin-services/",
+          "label": "Administrative and support services",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.imperial.ac.uk/students/graduation/",
+          "label": "Graduation",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.imperial.ac.uk/admin-services/governance/university-governance-structure/governance-structure/council/",
+          "label": "Council",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.imperial.ac.uk/admin-services/equality/",
+          "label": "Equality, diversity and inclusion",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.imperial.ac.uk/students/",
+          "label": "Current students",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.imperial.ac.uk/about/introducing-imperial/reporting-hub/student-lifecycle/",
+          "label": "Student Lifecycle",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.imperial.ac.uk/about/leadership-and-strategy/provost/vice-provost-education/",
+          "label": "Vice-Provost (Education and Student Experience)",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.imperial.ac.uk/about/leadership-and-strategy/provost/vice-provost-education/",
+          "label": "Vice-Provost (Education and Student Experience)",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.imperial.ac.uk/about/leadership-and-strategy/provost/vice-provost-education/the-central-education-office/education-and-student-experience-committee-/",
+          "label": "Education and Student Experience Committee ",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.imperial.ac.uk/about/leadership-and-strategy/provost/vice-provost-education/the-central-education-office/student-experience-forum/",
+          "label": "Student Experience Forum",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.imperial.ac.uk/about/leadership-and-strategy/provost/vice-provost-education/the-central-education-office/student-activities-board/",
+          "label": "Student Activities Board",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.imperial.ac.uk/about/leadership-and-strategy/provost/vice-provost-education/the-central-education-office/student-surveys-action-planning-group/",
+          "label": "Student Surveys Action Planning Group",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.imperial.ac.uk/about/leadership-and-strategy/provost/vice-provost-education/the-imperial-experience/the-student-awards-for-outstanding-achievement/",
+          "label": "The Student Awards for Outstanding Achievement",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.imperial.ac.uk/admin-services/enterprise/",
+          "label": "Enterprise Division",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.imperial.ac.uk/about/leadership-and-strategy/provost/academic-partnerships/scholarships-and-studentships-steering-committee/",
+          "label": "Scholarships and Studentships Steering Committee",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.imperial.ac.uk/about/leadership-and-strategy/provost/academic-partnerships/scholarships-and-studentships-steering-committee/scholarships-sub-groups/",
+          "label": "Scholarships sub-groups",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.imperial.ac.uk/admin-services/operational-improvement/",
+          "label": "Change and Operational Improvement",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.imperial.ac.uk/admin-services/library/",
+          "label": "Library Services",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.imperial.ac.uk/about/leadership-and-strategy/provost/academic-services/marketing-recruitment-admissions/",
+          "label": "Marketing, Outreach, Recruitment and Admissions",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.imperial.ac.uk/about/leadership-and-strategy/provost/academic-services/marketing-recruitment-admissions/about-us/",
+          "label": "About us",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.imperial.ac.uk/about/leadership-and-strategy/provost/academic-services/marketing-recruitment-admissions/marketing/",
+          "label": "Marketing",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.imperial.ac.uk/about/leadership-and-strategy/provost/academic-services/marketing-recruitment-admissions/recruitment/",
+          "label": "Recruitment",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.imperial.ac.uk/about/leadership-and-strategy/provost/academic-services/marketing-recruitment-admissions/recruitment/our-activities/",
+          "label": "Our activities",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.imperial.ac.uk/about/leadership-and-strategy/provost/academic-services/marketing-recruitment-admissions/recruitment/get-in-touch/",
+          "label": "Get in touch",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.imperial.ac.uk/about/leadership-and-strategy/provost/academic-services/marketing-recruitment-admissions/admissions/",
+          "label": "Admissions",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.imperial.ac.uk/about/leadership-and-strategy/provost/academic-services/marketing-recruitment-admissions/publications/",
+          "label": "Publications ",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.imperial.ac.uk/about/leadership-and-strategy/provost/academic-services/marketing-recruitment-admissions/events/",
+          "label": "Events",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.imperial.ac.uk/about/leadership-and-strategy/provost/academic-services/marketing-recruitment-admissions/data-privacy-policies/",
+          "label": "Data privacy policies",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.imperial.ac.uk/about/leadership-and-strategy/provost/academic-services/marketing-recruitment-admissions/data-privacy-policies/recruitment-marketing-data-privacy/",
+          "label": "Student Recruitment and Marketing data privacy notice",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.imperial.ac.uk/admin-services/registry/",
+          "label": "Registry",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.imperial.ac.uk/students/student-support-zone/",
+          "label": "Student Services",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.imperial.ac.uk/about/leadership-and-strategy/provost/provosts-visiting-professors-pvp-programme/",
+          "label": "Provost's Visiting Professors (PVP) Programme",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.imperial.ac.uk/about/leadership-and-strategy/provost/provosts-visiting-professors-pvp-programme/provosts-visiting-professors/",
+          "label": "Provost’s Visiting Professors",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.imperial.ac.uk/about/leadership-and-strategy/strategy/enabling-roadmap/great-support/student-lifecycle-portfolio/",
+          "label": "Student Lifecycle Portfolio",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.imperial.ac.uk/admin-services/operational-improvement/our-projects/greatservice/",
+          "label": "Great Service Programme",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.imperial.ac.uk/admin-services/equality/resources/report-and-support/",
+          "label": "Report and Support",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.imperial.ac.uk/admin-services/international-relations/international-relations-newsletters/",
+          "label": "Sign up to our newsletter",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.imperial.ac.uk/about/global/singapore/our-partners/#:~:text=Research%20programme%20partnerships-,IN,-%2DCYPHER",
+          "label": "Our partners",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.imperial.ac.uk/about/global/singapore/research/in-cypher/conference/programme/",
+          "label": "Programme",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.imperial.ac.uk/about/global/singapore/research/in-cypher/conference/programme/day-1-artificial-intelligence-and-medical/",
+          "label": "Day 1: Artificial Intelligence and Medical",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.imperial.ac.uk/about/global/singapore/research/in-cypher/conference/programme/day-2-hardware-security-and-cybersecurity/",
+          "label": "Day 2: Hardware Security and Cybersecurity",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.imperial.ac.uk/about/global/singapore/research/in-cypher/conference/programme/keynote-presentations/",
+          "label": "Keynote presentations",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.imperial.ac.uk/about/global/singapore/research/in-cypher/conference/programme/panel-discussions/",
+          "label": "Panel discussions",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.imperial.ac.uk/about/global/singapore/research/in-cypher/conference/programme/spotlight-talks/",
+          "label": "Spotlight talks",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.imperial.ac.uk/about/global/singapore/research/in-cypher/conference/programme/poster-presentations/",
+          "label": "Poster presentations",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.imperial.ac.uk/about/global/singapore/research/ai-for-science/ai-for-program-reasoning/",
+          "label": "AI for Program Reasoning",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.imperial.ac.uk/about/global/singapore/research/ai-for-science/ai-for-program-reasoning/our-research/",
+          "label": "Our research",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.imperial.ac.uk/about/global/singapore/research/ai-for-science/ai-for-program-reasoning/publications/",
+          "label": "Publications",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.imperial.ac.uk/about/global/singapore/about-us/meet-the-team/#:~:text=AI%20for%20Science%3A%20AI%20for%20Program%20Reasoning",
+          "label": "Meet the team",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.imperial.ac.uk/about/global/singapore/our-partners/#:~:text=Research%20(A*STAR)-,AI,-for%20Program%20Reasoning",
+          "label": "Our partners",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.imperial.ac.uk/about/global/imperial-global-development-lab/programmes/",
+          "label": "Programmes",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.imperial.ac.uk/about/sustainability/our-campuses/student-resources/",
+          "label": "Student resources",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.imperial.ac.uk/admin-services/human-resources/talent/courses-and-programmes/online-learning/e-learning-courses/safeguarding/",
+          "label": "Safeguarding at Imperial e-learning module",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.imperial.ac.uk/admin-services/international-relations/",
+          "label": "International Relations Office",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.imperial.ac.uk/admin-services/equality/activities/history-group/",
+          "label": "Imperial History Group",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.imperial.ac.uk/admin-services/equality/activities/history-group/",
+          "label": "Imperial History Group",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.imperial.ac.uk/admin-services/equality/activities/history-group/",
+          "label": "                \n                    Reflecting on our history\n                    Imperial has commissioned a group to examine the history of the College and to report on the present understanding and reception of the College’s legacy in the context of its present-day mission. \n                \n            ",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.imperial.ac.uk/admin-services/ict/self-service/digital-education-services/digital-education-platforms/canvas/",
+          "label": "Canvas",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.imperial.ac.uk/admin-services/ict/contact-ict-service-desk/",
+          "label": "Contact the Service Desk",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.imperial.ac.uk/admin-services/library/",
+          "label": "Library services",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.imperial.ac.uk/admin-services/",
+          "label": "Admin and support services ",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.youtube.com/user/imperialcollegevideo",
+          "label": "\r\n                                YouTube\r\n                                \r\n                                    \r\n                                \r\n                            ",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.imperial.ac.uk/admin-services/finance/purchasing/related-policy-statements/modern-slavery/",
+          "label": "Modern slavery statement",
+          "tag": "a"
+        }
+      ],
+      "history_context": [
+        "ntext of its present-day mission. Video archive blog Concrete Canoe 1980 Accommodation in 2009 The Missing Graduations: 2003 & 2007 to 2010 VIP’s visiting the TV Studio SK Campus Aerial Film: 1987 John Smith: 1980 More from Video archive blog Useful Links Popular links Canvas Con"
+      ]
+    },
+    {
+      "university_id": "6020a2b5-3788-5dd1-b3f2-b9c6c7c6f99b",
+      "domain": "ethz.ch",
+      "kind": "history",
+      "url": "https://ethz.ch/en/the-eth-zurich/portrait/history.html",
+      "retrieved_at": "2026-10-16T03:07:48.915089+00:00",
+      "status": 200,
+      "final_url": "https://ethz.ch/en/the-eth-zurich/portrait/history.html",
+      "content_type": "text/html",
+      "title": "History of ETH Zurich: Leading the way since 1855 | ETH Zurich",
+      "bytes": 64174,
+      "sha256": "1a5c8b1bb83942e2d5df2ce75d3db6f6d4782f7e9a5356e736fccaf7080918e0",
+      "cache_file": "/var/folders/s7/l14g78kx35z66lhftvjc1qk80000gn/T/collegestat-university-enrichment-oct15/c912bd721ef2b48b99.html",
+      "youtube_ids_in_official_page": [],
+      "candidate_links": [
+        {
+          "url": "https://ethz.ch/students/en.html",
+          "label": "Student portal",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.youtube.com/user/ethzurich",
+          "label": "",
+          "tag": "a"
+        },
+        {
+          "url": "https://ethz.ch/students/en.html",
+          "label": "Student portal",
+          "tag": "a"
+        },
+        {
+          "url": "https://inf.ethz.ch/",
+          "label": "\r\n                                 D-INFK\r\n                                Computer Science \r\n                            ",
+          "tag": "a"
+        },
+        {
+          "url": "https://mtec.ethz.ch/",
+          "label": "\r\n                                 D-MTEC\r\n                                Management, Technology and Economics \r\n                            ",
+          "tag": "a"
+        }
+      ],
+      "history_context": [
+        "History of ETH Zurich: Leading the way since 1855 | ETH Zurich Homepage Navigation Search Content Footer Contact Sitemap Header Services Student portal Alumni association Staffnet Contact Login Search Search en EN DE FR (TA) IT (TA) De",
+        "re here Homepage ETH Zurich Portrait History History of ETH Zurich: Leading the way since 1855 Ever since it was first founded, ETH Zurich has been a driving force behind Swiss industry, whose innovative products and services are in demand worldwide. High performers of the future",
+        "ortrait History History of ETH Zurich: Leading the way since 1855 Ever since it was first founded, ETH Zurich has been a driving force behind Swiss industry, whose innovative products and services are in demand worldwide. High performers of the future: students of the Federal Pol",
+        "nfidence. A brief overview of more than 150 years of ETH Zurich history Ever since it was founded under the name “Polytechnikum” back in 1855, ETH Zurich has been a national educational institution of international standing, attracting talent from all over the world. The successf",
+        "rs of ETH Zurich history Ever since it was founded under the name “Polytechnikum” back in 1855, ETH Zurich has been a national educational institution of international standing, attracting talent from all over the world. The successful combination of cosmopolitanism and strong co",
+        " external page e-manuscripta Bildarchiv Online (online image archival database) ETHistory 1855-2005 Contact ETH Zurich University Archives Phone +41 44 632 07 04 ETH Zurich ETH Library Rämistrasse 101 8092 \n                Zurich Schweiz Show more Show less Footer Recommended lin"
+      ]
+    },
+    {
+      "university_id": "44444444-4444-4444-8444-444444444444",
+      "domain": "tum.de",
+      "kind": "history",
+      "url": "https://www.tum.de/en/about-tum/facts-and-figures/history",
+      "retrieved_at": "2026-10-16T03:07:49.719189+00:00",
+      "status": 200,
+      "final_url": "https://www.tum.de/en/about-tum/facts-and-figures/history",
+      "content_type": "text/html",
+      "title": "History of Technical University of Munich (TUM) - TUMLoader",
+      "bytes": 484887,
+      "sha256": "e59a9410c3a93aebcf80fd43fc7ebce5ac466d09db826797b36707e1d0024e22",
+      "cache_file": "/var/folders/s7/l14g78kx35z66lhftvjc1qk80000gn/T/collegestat-university-enrichment-oct15/0debc463174366a786.html",
+      "youtube_ids_in_official_page": [
+        "MD19XsLYTKw"
+      ],
+      "candidate_links": [
+        {
+          "url": "https://www.tum.de/en/studies/degree-programs",
+          "label": "\n\t\t\t\tDegree Programs\n\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\tSee overview\n\t\t\t\t\n\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/studies/degree-programs?tx_solr%5Bq%5D=&graduation=Bachelor#tx-solr-search-form-pi-results-174899",
+          "label": "\n\t\t\t\t\t\t\tBachelor’s degree programs\n\t\t\t\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/studies/degree-programs?tx_solr%5Bq%5D=&graduation=Master#tx-solr-search-form-pi-results-174899",
+          "label": "\n\t\t\t\t\t\t\tMaster’s degree programs\n\t\t\t\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/studies/degree-programs/key-skill-programs",
+          "label": "\n\t\t\t\tKey Skill Programs\n\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\tSee overview\n\t\t\t\t\n\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/studies/degree-programs/key-skill-programs/plug-in-modules",
+          "label": "\n\t\t\t\t\t\t\tPlug-in Modules\n\t\t\t\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/studies/degree-programs/key-skill-programs/project-weeks",
+          "label": "\n\t\t\t\t\t\t\tProject Weeks\n\t\t\t\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/studies/degree-programs/key-skill-programs/lifelong-learning",
+          "label": "\n\t\t\t\t\t\t\tLifelong Learning\n\t\t\t\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://jobs.sap.com/content/Ausbildung-und-Studium/?locale=de_DE",
+          "label": "\n\t\t\t\t\t\t\tSAP Star Program\n\t\t\t\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/studies/from-school-to-university/offers-for-prospective-students",
+          "label": "\n\t\t\t\tOffers for prospective students\n\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\tSee overview\n\t\t\t\t\n\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/studies/from-school-to-university/offers-for-prospective-students/tum-open-campus",
+          "label": "\n\t\t\t\t\t\t\tTUM Open Campus\n\t\t\t\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/studies/from-school-to-university/offers-for-prospective-students/tum-student-talks",
+          "label": "\n\t\t\t\t\t\t\tTUM Student Talks\n\t\t\t\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/studies/from-school-to-university/offers-for-prospective-students/campustours",
+          "label": "\n\t\t\t\t\t\t\tCampustours\n\t\t\t\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/studies/from-school-to-university/offers-for-prospective-students/experience-lectures",
+          "label": "\n\t\t\t\t\t\t\tExperience lectures\n\t\t\t\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/studies/from-school-to-university/offers-for-prospective-students/meet-a-student",
+          "label": "\n\t\t\t\t\t\t\tMeet a student\n\t\t\t\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/studies/from-school-to-university/offers-for-prospective-students/offers-by-tum-schools",
+          "label": "\n\t\t\t\t\t\t\tOffers by TUM Schools\n\t\t\t\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/studies/from-school-to-university/fuer-leistungsstarke-schuelerinnen",
+          "label": "\n\t\t\t\t\t\t\tFor high-performing students\n\t\t\t\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/studies/application/application-info-portal/admission-requirements",
+          "label": "\n\t\t\t\t\t\t\tAdmission Requirements\n\t\t\t\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/studies/application/application-info-portal/admission-requirements/language-certificates",
+          "label": "\n\t\t\t\t\t\t\tLanguage Certificates\n\t\t\t\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/studies/application/enrollment-info-portal/deferring-admission",
+          "label": "\n\t\t\t\t\t\t\tDeferring Admission\n\t\t\t\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/studies/application/enrollment-info-portal/studentcard",
+          "label": "\n\t\t\t\t\t\t\tStudentCard\n\t\t\t\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/studies/fees",
+          "label": "\n\t\t\t\t\t\t\tSemester Fees and Semester Ticket\n\t\t\t\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/studies/application/bachelors-degree-programs",
+          "label": "\n\t\t\t\tBachelor's Degree Programs\n\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\tSee overview\n\t\t\t\t\n\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/studies/application/master",
+          "label": "\n\t\t\t\tMaster’s Degree Programs\n\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\tSee overview\n\t\t\t\t\n\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/studies/international-students",
+          "label": "\n\t\t\t\tInternational Students\n\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\tSee overview\n\t\t\t\t\n\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/studies/degree-programs",
+          "label": "\n\t\t\t\t\t\t\tDegree Programs\n\t\t\t\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/studies/application/application-info-portal/application-international",
+          "label": "\n\t\t\t\t\t\t\tApplication & Admission\n\t\t\t\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/studies/fees/tuition",
+          "label": "\n\t\t\t\t\t\t\tTuition Fees for Students from Non-EU Countries\n\t\t\t\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/studies/international-students/tutoringandbuddyprograms",
+          "label": "\n\t\t\t\t\t\t\tTutoring & Buddy Programs\n\t\t\t\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/studies/international-students/events-for-internationals",
+          "label": "\n\t\t\t\t\t\t\tEvents for Internationals\n\t\t\t\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/studies/international-students/languagesandinterculturalservices",
+          "label": "\n\t\t\t\t\t\t\tLanguage & Intercultural Services\n\t\t\t\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/studies/international-students/leisuretimeandnetworking",
+          "label": "\n\t\t\t\t\t\t\tLeisure Time & Networking\n\t\t\t\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/studies/international-students/ukraine",
+          "label": "\n\t\t\t\tUkraine – Support\n\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\tSee overview\n\t\t\t\t\n\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/studies/international-students/ukraine",
+          "label": "\n\t\t\t\t\t\t\tIntegration Program\n\t\t\t\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/studies/international-students/ukraine/applying-for-a-regular-degree-program",
+          "label": "\n\t\t\t\t\t\t\tApplying for a Regular Degree Program\n\t\t\t\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/studies/international-students/ukraine",
+          "label": "\n\t\t\t\t\t\t\tSupport for Students\n\t\t\t\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/studies/international-students/ukraine",
+          "label": "\n\t\t\t\t\t\t\tSupport for Scientists\n\t\t\t\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/studies/support-and-advice/support-during-studies/student-information",
+          "label": "\n\t\t\t\t\t\t\tStudent Information\n\t\t\t\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/studies/support-and-advice/support-during-studies/studentadvising",
+          "label": "\n\t\t\t\t\t\t\tGeneral Student Advising\n\t\t\t\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/studies/from-school-to-university/offers-for-prospective-students/tum-open-campus",
+          "label": "\n\t\t\t\t\t\t\tTUM Open Campus\n\t\t\t\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/studies/support-and-advice/support-during-studies/student-information",
+          "label": "\n\t\t\t\t\t\t\tStudent Information\n\t\t\t\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/studies/support-and-advice/support-during-studies/studentadvising",
+          "label": "\n\t\t\t\t\t\t\tGeneral Student Advising\n\t\t\t\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/studies/international-students",
+          "label": "\n\t\t\t\t\t\t\tInternational Students\n\t\t\t\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum4health.de",
+          "label": "\n\t\t\t\t\t\t\tStudent Health Management: TUM4Health\n\t\t\t\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/studies/fees",
+          "label": "\n\t\t\t\t\t\t\tFinancing your Studies\n\t\t\t\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/studies/fees",
+          "label": "\n\t\t\t\tFees & Scholarships\n\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\tSee overview\n\t\t\t\t\n\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://wiki.tum.de/display/docs/View+tuition+fee+status",
+          "label": "\n\t\t\t\t\t\t\tAdministration of Fees\n\t\t\t\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/studies/fees-and-financial-aid/scholarships",
+          "label": "\n\t\t\t\tScholarships\n\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\tSee overview\n\t\t\t\t\n\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/studies/fees-and-financial-aid/scholarships/tum-scholarships",
+          "label": "\n\t\t\t\t\t\t\tTUM Scholarships\n\t\t\t\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/studies/fees-and-financial-aid/scholarships/other-scholarships",
+          "label": "\n\t\t\t\t\t\t\tOther Scholarships\n\t\t\t\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/studies/fees-and-financial-aid/foundations",
+          "label": "\n\t\t\t\t\t\t\tFoundations\n\t\t\t\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/studies/fees-and-financial-aid/student-loans",
+          "label": "\n\t\t\t\t\t\t\tStudent Loans\n\t\t\t\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/studies/fees/tuition",
+          "label": "\n\t\t\t\tTuition Fees for Students from Non-EU Countries\n\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\tSee overview\n\t\t\t\t\n\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/studies/fees/tuition/scholarships-and-waivers",
+          "label": "\n\t\t\t\t\t\t\tScholarships and waivers for international students\n\t\t\t\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/studies/degree-programs/key-skill-programs/project-weeks",
+          "label": "\n\t\t\t\t\t\t\tProject Weeks\n\t\t\t\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/studies/teaching/awards-and-competitions/tuition-substitution-funds",
+          "label": "\n\t\t\t\t\t\t\tTuition Substitution Funds\n\t\t\t\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/studies/teaching/quality-management/developing-degree-programs",
+          "label": "\n\t\t\t\t\t\t\tDeveloping Degree Programs\n\t\t\t\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/studies/teaching/quality-management/administrative-offices",
+          "label": "\n\t\t\t\t\t\t\tAdministrative Offices\n\t\t\t\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/studies/support-and-advice/support-during-studies/student-information",
+          "label": "\n\t\t\t\t\t\t\tContacts\n\t\t\t\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/lifelong-learning/students",
+          "label": "\n\t\t\t\t\t\t\tOffers for our students\n\t\t\t\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.prolehre.tum.de/en/prolehre/programs-services/research-and-innovation/",
+          "label": "\n\t\t\t\t\t\t\tTUM ProLehre  Media and Didactics\n\t\t\t\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.lll.tum.de/about/digital-tools/",
+          "label": "\n\t\t\t\t\t\t\tDigital Programs of Executive and Professional Education\n\t\t\t\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/research/research-projects/priority-programs-pp",
+          "label": "\n\t\t\t\t\t\t\tPriority programs\n\t\t\t\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/innovation/entrepreneurship/for-entrepreneurship-enthusiasts/international-education-programs",
+          "label": "\n\t\t\t\t\t\t\tInternational Education Programs\n\t\t\t\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/innovation/entrepreneurship/for-founders-start-ups/international-programs",
+          "label": "\n\t\t\t\t\t\t\tInternational Programs\n\t\t\t\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/community/campus-life/student-clubs",
+          "label": "\n\t\t\t\tTUM Student Clubs\n\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\tSee overview\n\t\t\t\t\n\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/community/campus-life/student-clubs/einstieg-leicht-gemacht",
+          "label": "\n\t\t\t\t\t\t\tYour Easy Way In\n\t\t\t\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/community/campus-life/student-clubs-gallery",
+          "label": "\n\t\t\t\t\t\t\tTUM Student Club Gallery\n\t\t\t\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/about-tum/organization/administration-and-service-institutions",
+          "label": "\n\t\t\t\t\t\t\tAdministration and Service Institutions\n\t\t\t\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/about-tum/careers-and-jobs/postdocs/eurotechpostdoc2-program",
+          "label": "\n\t\t\t\t\t\t\tEuroTechPostdoc2 program\n\t\t\t\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/about-tum/contact-directions/feedback",
+          "label": "\n\t\t\t\t\t\t\tFeedback\n\t\t\t\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/prospective-students",
+          "label": "\n\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\n\n\t\t\t\t\t\n\t\t\t\t\t\tFor\n\t\t\t\t\t\tProspective Students\n\t\t\t\t\t\n\t\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/students",
+          "label": "\n\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\n\n\t\t\t\t\t\n\t\t\t\t\t\tFor\n\t\t\t\t\t\tStudents\n\t\t\t\t\t\n\t\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/studies/degree-programs",
+          "label": "\n\t\t\t\tDegree Programs\n\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/studies/degree-programs?tx_solr%5Bq%5D=&graduation=Bachelor#tx-solr-search-form-pi-results-174899",
+          "label": "\n\t\t\t\t\t\t\tBachelor’s degree programs\n\t\t\t\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/studies/degree-programs?tx_solr%5Bq%5D=&graduation=Master#tx-solr-search-form-pi-results-174899",
+          "label": "\n\t\t\t\t\t\t\tMaster’s degree programs\n\t\t\t\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/studies/degree-programs/key-skill-programs",
+          "label": "\n\t\t\t\tKey Skill Programs\n\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/studies/degree-programs/key-skill-programs/plug-in-modules",
+          "label": "\n\t\t\t\t\t\t\tPlug-in Modules\n\t\t\t\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/studies/degree-programs/key-skill-programs/project-weeks",
+          "label": "\n\t\t\t\t\t\t\tProject Weeks\n\t\t\t\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/studies/degree-programs/key-skill-programs/lifelong-learning",
+          "label": "\n\t\t\t\t\t\t\tLifelong Learning\n\t\t\t\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://jobs.sap.com/content/Ausbildung-und-Studium/?locale=de_DE",
+          "label": "\n\t\t\t\t\t\t\tSAP Star Program\n\t\t\t\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/studies/from-school-to-university/offers-for-prospective-students",
+          "label": "\n\t\t\t\tOffers for prospective students\n\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/studies/from-school-to-university/offers-for-prospective-students/tum-open-campus",
+          "label": "\n\t\t\t\t\t\t\tTUM Open Campus\n\t\t\t\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/studies/from-school-to-university/offers-for-prospective-students/tum-student-talks",
+          "label": "\n\t\t\t\t\t\t\tTUM Student Talks\n\t\t\t\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/studies/from-school-to-university/offers-for-prospective-students/campustours",
+          "label": "\n\t\t\t\t\t\t\tCampustours\n\t\t\t\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/studies/from-school-to-university/offers-for-prospective-students/experience-lectures",
+          "label": "\n\t\t\t\t\t\t\tExperience lectures\n\t\t\t\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/studies/from-school-to-university/offers-for-prospective-students/meet-a-student",
+          "label": "\n\t\t\t\t\t\t\tMeet a student\n\t\t\t\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/studies/from-school-to-university/offers-for-prospective-students/offers-by-tum-schools",
+          "label": "\n\t\t\t\t\t\t\tOffers by TUM Schools\n\t\t\t\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/studies/from-school-to-university/fuer-leistungsstarke-schuelerinnen",
+          "label": "\n\t\t\t\t\t\t\tFor high-performing students\n\t\t\t\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/studies/application/application-info-portal/admission-requirements",
+          "label": "\n\t\t\t\t\t\t\tAdmission Requirements\n\t\t\t\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/studies/application/application-info-portal/admission-requirements/language-certificates",
+          "label": "\n\t\t\t\t\t\t\tLanguage Certificates\n\t\t\t\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/studies/application/enrollment-info-portal/deferring-admission",
+          "label": "\n\t\t\t\t\t\t\tDeferring Admission\n\t\t\t\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/studies/application/enrollment-info-portal/studentcard",
+          "label": "\n\t\t\t\t\t\t\tStudentCard\n\t\t\t\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/studies/fees",
+          "label": "\n\t\t\t\t\t\t\tSemester Fees and Semester Ticket\n\t\t\t\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/studies/application/bachelors-degree-programs",
+          "label": "\n\t\t\t\tBachelor's Degree Programs\n\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/studies/application/master",
+          "label": "\n\t\t\t\tMaster’s Degree Programs\n\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/studies/international-students",
+          "label": "\n\t\t\t\tInternational Students\n\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/studies/degree-programs",
+          "label": "\n\t\t\t\t\t\t\tDegree Programs\n\t\t\t\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/studies/application/application-info-portal/application-international",
+          "label": "\n\t\t\t\t\t\t\tApplication & Admission\n\t\t\t\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/studies/fees/tuition",
+          "label": "\n\t\t\t\t\t\t\tTuition Fees for Students from Non-EU Countries\n\t\t\t\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/studies/international-students/tutoringandbuddyprograms",
+          "label": "\n\t\t\t\t\t\t\tTutoring & Buddy Programs\n\t\t\t\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/studies/international-students/events-for-internationals",
+          "label": "\n\t\t\t\t\t\t\tEvents for Internationals\n\t\t\t\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/studies/international-students/languagesandinterculturalservices",
+          "label": "\n\t\t\t\t\t\t\tLanguage & Intercultural Services\n\t\t\t\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/studies/international-students/leisuretimeandnetworking",
+          "label": "\n\t\t\t\t\t\t\tLeisure Time & Networking\n\t\t\t\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/studies/international-students/ukraine",
+          "label": "\n\t\t\t\tUkraine – Support\n\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/studies/international-students/ukraine",
+          "label": "\n\t\t\t\t\t\t\tIntegration Program\n\t\t\t\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/studies/international-students/ukraine/applying-for-a-regular-degree-program",
+          "label": "\n\t\t\t\t\t\t\tApplying for a Regular Degree Program\n\t\t\t\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/studies/international-students/ukraine",
+          "label": "\n\t\t\t\t\t\t\tSupport for Students\n\t\t\t\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/studies/international-students/ukraine",
+          "label": "\n\t\t\t\t\t\t\tSupport for Scientists\n\t\t\t\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/studies/support-and-advice/support-during-studies/student-information",
+          "label": "\n\t\t\t\t\t\t\tStudent Information\n\t\t\t\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/studies/support-and-advice/support-during-studies/studentadvising",
+          "label": "\n\t\t\t\t\t\t\tGeneral Student Advising\n\t\t\t\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/studies/from-school-to-university/offers-for-prospective-students/tum-open-campus",
+          "label": "\n\t\t\t\t\t\t\tTUM Open Campus\n\t\t\t\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/studies/support-and-advice/support-during-studies/student-information",
+          "label": "\n\t\t\t\t\t\t\tStudent Information\n\t\t\t\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/studies/support-and-advice/support-during-studies/studentadvising",
+          "label": "\n\t\t\t\t\t\t\tGeneral Student Advising\n\t\t\t\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/studies/international-students",
+          "label": "\n\t\t\t\t\t\t\tInternational Students\n\t\t\t\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum4health.de",
+          "label": "\n\t\t\t\t\t\t\tStudent Health Management: TUM4Health\n\t\t\t\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/studies/fees",
+          "label": "\n\t\t\t\t\t\t\tFinancing your Studies\n\t\t\t\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/studies/fees",
+          "label": "\n\t\t\t\tFees & Scholarships\n\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://wiki.tum.de/display/docs/View+tuition+fee+status",
+          "label": "\n\t\t\t\t\t\t\tAdministration of Fees\n\t\t\t\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/studies/fees-and-financial-aid/scholarships",
+          "label": "\n\t\t\t\tScholarships\n\t\t\t",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.tum.de/en/studies/fees-and-financial-aid/scholarships/tum-scholarships",
+          "label": "\n\t\t\t\t\t\t\tTUM Scholarships\n\t\t\t\t\t\t",
+          "tag": "a"
+        }
+      ],
+      "history_context": [
+        " in 1958/59. TUM ProLehre Medienproduktion Aerial view of the Garching research campus in 2021. In addition to the TUM research buildings in the fields of natural sciences, engineering, and entrepreneurship, the area is also home to non-university institutions such as the Fraunho",
+        "s and zenith or vertical angles. TUM Archiv The team of the \"Spieldose,” a puppet theater founded by architecture students at TUM in 1955, in their performance space in Munich's Künstlerhaus, 1960s. Markus Busjan / Spieldose Figures from the \"Spieldose - Mechanisches Theater Münc",
+        " The team of the \"Spieldose,” a puppet theater founded by architecture students at TUM in 1955, in their performance space in Munich's Künstlerhaus, 1960s. Markus Busjan / Spieldose Figures from the \"Spieldose - Mechanisches Theater München\" program almost 60 years later in 2015.",
+        "a laboratory on the inner city campus at the Chair of Security in Information Technology, 2021. TUM Archiv TUM students celebrating carnival in the 1960s. Andreas Heddergott / TUM TUM students celebrate the start of the new winter semester in 2022. Chronicle TUM Archiv Surveying ",
+        "2022. Chronicle TUM Archiv Surveying engineer Dr. Karl Max von Bauernfeind (1818 - 1894), founding director of the THM (beginning in 1868). With the aim of professionalizing technical and scientific education, King Ludwig II founded the “New Polytechnic School” in Munich in 1868.",
+        "er Dr. Karl Max von Bauernfeind (1818 - 1894), founding director of the THM (beginning in 1868). With the aim of professionalizing technical and scientific education, King Ludwig II founded the “New Polytechnic School” in Munich in 1868. It later became the Technische Hochschule ",
+        "68). With the aim of professionalizing technical and scientific education, King Ludwig II founded the “New Polytechnic School” in Munich in 1868. It later became the Technische Hochschule München. The first director was the surveying engineer Karl Max von Bauernfeind. The new bui",
+        "nd scientific education, King Ludwig II founded the “New Polytechnic School” in Munich in 1868. It later became the Technische Hochschule München. The first director was the surveying engineer Karl Max von Bauernfeind. The new building on Arcisstrasse, designed by architect Gottf",
+        "architect Gottfried v. Neureuther, was also occupied in the same year that the school was founded. See chronicle TUM Architekturmuseum Photograph of the main wing of the Munich Polytechnic School, built by Gottfried von Neureuther, (ca. 1874) TUM in figures 1868 (WS 1869/70) 0 St",
+        "e Munich Polytechnic School, built by Gottfried von Neureuther, (ca. 1874) TUM in figures 1868 (WS 1869/70) 0 Students 0 Professors 0 Percent international students Today 0 Students 0 Professors 0 Percent international students TUM Archive The TUM Archive collects, preserves, and",
+        "ehind the scenes (in English). Sign up now! To the event Previous slide Next slide Loader 1905: Women at technical universities in Bavaria TUM Archiv Astrid Eckert / TUM TUM Archiv Andreas Heddergott / TUM Women were permitted to study at the THM beginning in 1905. Agnes Mackense",
+        "TUM Archiv Andreas Heddergott / TUM Women were permitted to study at the THM beginning in 1905. Agnes Mackensen was the first female student to enroll, followed by Anna Boyksen in 1906 as the first female engineering student. In 1946, Liesel Beckmann was appointed the first femal",
+        "UM remains committed to education and transparency regarding its history. In May 2023, it established a commission of experts to draw up recommendations for how to deal with former members of the university convicted of Nazi crimes, as well as with the buildings and rooms that be",
+        "se goals they helped pursue, and that is a fact we have to face. Prof. Winfried Nerdinger Founding Director of the NS Documentation Center and TUM Emeritus of Excellence TUM Archiv \"We have to face up to history.\" A research project by TUM and the NS Documentation Center A team o",
+        ". The architectural historian Prof. Winfried Nerdinger, Emeritus of Excellence of TUM and founding director of the Munich Documentation Center for National Socialism, was head of the project and is still committed to coming to terms with this period at our university. Interview w",
+        "assung, Unbotmäßigkeit und Widerstand“ (Editors: Prof. Joachim Hagenauer , Martin Papst) (2014) About the book | Verlag C.H. Beck link to the BAdW page | online publications Book \"Die Technische Hochschule München im Nationalsozialismus\" (Editors: Wolfgang A. Herrmann, Winfried N"
+      ]
+    },
+    {
+      "university_id": "55555555-5555-4555-8555-555555555555",
+      "domain": "utoronto.ca",
+      "kind": "history",
+      "url": "https://www.utoronto.ca/about-u-of-t/history",
+      "retrieved_at": "2026-10-16T03:07:49.756124+00:00",
+      "status": "error",
+      "error": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "university_id": "66666666-6666-4666-8666-666666666666",
+      "domain": "wiut.uz",
+      "kind": "history",
+      "url": "https://www.wiut.uz/about-wiut",
+      "retrieved_at": "2026-10-16T03:07:49.837511+00:00",
+      "status": "error",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "university_id": "225b05b5-3c2b-5910-a8a9-6946b0fe9820",
+      "domain": "newuu.uz",
+      "kind": "history",
+      "url": "https://newuu.uz/en/about-university",
+      "retrieved_at": "2026-10-16T03:07:49.837714+00:00",
+      "status": "error",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "university_id": "9e20a5d2-bafa-5857-8f5d-4a89874bb2f1",
+      "domain": "inha.uz",
+      "kind": "history",
+      "url": "https://inha.uz/about/university/",
+      "retrieved_at": "2026-10-16T03:07:49.886229+00:00",
+      "status": 200,
+      "final_url": "https://inha.uz:443/about/quality-management-system/university-certification-information/",
+      "content_type": "text/html",
+      "title": "University Certification Information — INHA University in Tashkent",
+      "bytes": 157136,
+      "sha256": "19eac8de7263a56916149af730c69318add69be314a59f77f3ab4fdd16af9907",
+      "cache_file": "/var/folders/s7/l14g78kx35z66lhftvjc1qk80000gn/T/collegestat-university-enrichment-oct15/82e6b4b6f87a8fb5f5.html",
+      "youtube_ids_in_official_page": [],
+      "candidate_links": [
+        {
+          "url": "https://inha.uz:443/about/quality-management-system/university-certification-information/",
+          "label": "Courses",
+          "tag": "a"
+        },
+        {
+          "url": "https://inha.uz:443/about/quality-management-system/university-certification-information/",
+          "label": "English language courses",
+          "tag": "a"
+        },
+        {
+          "url": "https://inha.uz/continuing-education-center/cec-corp-courses/corporate-english/",
+          "label": "Corporate English",
+          "tag": "a"
+        },
+        {
+          "url": "https://inha.uz:443/about/quality-management-system/university-certification-information/",
+          "label": "KIDS Courses",
+          "tag": "a"
+        },
+        {
+          "url": "https://inha.uz/continuing-education-center/courses-for-kids/math-for-children/",
+          "label": "Math for Children",
+          "tag": "a"
+        },
+        {
+          "url": "https://inha.uz/continuing-education-center/courses-for-kids/english-for-children/",
+          "label": "English for Children",
+          "tag": "a"
+        },
+        {
+          "url": "https://inha.uz:443/about/quality-management-system/university-certification-information/",
+          "label": "Preparatory courses",
+          "tag": "a"
+        },
+        {
+          "url": "https://inha.uz/continuing-education-center/cec-corp-courses/",
+          "label": "Corporate Courses",
+          "tag": "a"
+        },
+        {
+          "url": "https://inha.uz/continuing-education-center/pre-university/courses/english/",
+          "label": "IELTS Preparation",
+          "tag": "a"
+        },
+        {
+          "url": "https://inha.uz/continuing-education-center/pre-university/ratings-of-pu-students/",
+          "label": "Ratings of PU attendees",
+          "tag": "a"
+        },
+        {
+          "url": "https://inha.uz/cyber-security-center/#eccouncil",
+          "label": "EC-Council – Certification Programs",
+          "tag": "a"
+        },
+        {
+          "url": "https://inha.uz/cyber-security-center/#comptia",
+          "label": "CompTIA Certification Programs",
+          "tag": "a"
+        },
+        {
+          "url": "https://inha.uz/foundation/admissions-guidelines-foundation/",
+          "label": "Admissions Guidelines",
+          "tag": "a"
+        },
+        {
+          "url": "https://inha.uz/foundation/tuitions-foundation/",
+          "label": "Tuitions",
+          "tag": "a"
+        },
+        {
+          "url": "https://inha.uz/prospective-students/admissions/application-guideline/",
+          "label": "Application Guideline 2026-2027",
+          "tag": "a"
+        },
+        {
+          "url": "https://inha.uz/program-overview-kor/",
+          "label": "Program overview",
+          "tag": "a"
+        },
+        {
+          "url": "https://inha.uz/prospective-students/admissions/tuitions/",
+          "label": "Tuitions",
+          "tag": "a"
+        },
+        {
+          "url": "https://inha.uz/prospective-students/admissions/scholarships/",
+          "label": "Scholarships",
+          "tag": "a"
+        },
+        {
+          "url": "https://inha.uz/prospective-students/admissions/faq/",
+          "label": "FAQ",
+          "tag": "a"
+        },
+        {
+          "url": "https://inha.uz/prospective-students/admissions/sample-exams/",
+          "label": "Exam Samples",
+          "tag": "a"
+        },
+        {
+          "url": "https://inha.uz/prospective-students/admissions/admission-contacts/",
+          "label": "Admission Contacts",
+          "tag": "a"
+        },
+        {
+          "url": "https://inha.uz/admissions-2026-guideline-for-uk-and-italy-programs/",
+          "label": "Application Guideline 2026-2027",
+          "tag": "a"
+        },
+        {
+          "url": "https://inha.uz/zp1k",
+          "label": "Program overview",
+          "tag": "a"
+        },
+        {
+          "url": "https://inha.uz/tuitions/",
+          "label": "Tuitions",
+          "tag": "a"
+        },
+        {
+          "url": "https://inha.uz/admission-contacts/",
+          "label": "Admission Contacts",
+          "tag": "a"
+        },
+        {
+          "url": "https://inha.uz/about-programm/",
+          "label": "Program overview",
+          "tag": "a"
+        },
+        {
+          "url": "https://inha.uz/tuitions-ity/",
+          "label": "Tuitions",
+          "tag": "a"
+        },
+        {
+          "url": "https://inha.uz/admission-contacts-italy/",
+          "label": "Admission Contacts",
+          "tag": "a"
+        },
+        {
+          "url": "https://inha.uz/mba-info/",
+          "label": "Program overview",
+          "tag": "a"
+        },
+        {
+          "url": "https://inha.uz/postgraduate/curriculum-and-course-introduction/",
+          "label": "Curriculum",
+          "tag": "a"
+        },
+        {
+          "url": "https://inha.uz/postgraduate/kontakty-m/",
+          "label": "Admission Contacts",
+          "tag": "a"
+        },
+        {
+          "url": "https://inha.uz/emva/",
+          "label": "Program overview",
+          "tag": "a"
+        },
+        {
+          "url": "https://inha.uz/admission-contacts-emba/",
+          "label": "Admission Contacts",
+          "tag": "a"
+        },
+        {
+          "url": "https://inha.uz:443/about/quality-management-system/university-certification-information/",
+          "label": "Administration",
+          "tag": "a"
+        },
+        {
+          "url": "https://inha.uz:443/about/quality-management-system/university-certification-information/",
+          "label": "Students",
+          "tag": "a"
+        },
+        {
+          "url": "https://inha.uz/undergraduate/iut-student-association/",
+          "label": "IUT Student association",
+          "tag": "a"
+        },
+        {
+          "url": "https://inha.uz/undergraduate/student-support-centre/",
+          "label": "Student Support Centre",
+          "tag": "a"
+        },
+        {
+          "url": "https://inha.uz/undergraduate/successful-students/",
+          "label": "Successful students",
+          "tag": "a"
+        },
+        {
+          "url": "https://api2.inha.uz/admin/upload/ckeditor_upload/Offerta_INHA.pdf",
+          "label": "Public offering",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.youtube.com/c/InhaUz",
+          "label": "\n YouTube\n",
+          "tag": "a"
+        },
+        {
+          "url": "https://admissions.inha.uz/",
+          "label": "Domestic Applicant",
+          "tag": "a"
+        },
+        {
+          "url": "https://foreign-admissions.inha.uz/",
+          "label": "International Applicant",
+          "tag": "a"
+        },
+        {
+          "url": "https://inha.uz/admissions/application-guideline/",
+          "label": "Application Guideline",
+          "tag": "a"
+        },
+        {
+          "url": "https://inha.uz/admissions/scholarships/",
+          "label": "Scholarships",
+          "tag": "a"
+        },
+        {
+          "url": "https://inha.uz/admissions/tuitions/",
+          "label": "Tuitions",
+          "tag": "a"
+        },
+        {
+          "url": "https://inha.uz/admissions/faq/",
+          "label": "FAQ",
+          "tag": "a"
+        },
+        {
+          "url": "https://inha.uz/undergraduate/successful-students/",
+          "label": "Successful students",
+          "tag": "a"
+        },
+        {
+          "url": "https://www.youtube.com/c/InhaUz",
+          "label": "",
+          "tag": "a"
+        },
+        {
+          "url": "https://inha.uz:443/about/quality-management-system/university-certification-information/",
+          "label": "Courses",
+          "tag": "a"
+        },
+        {
+          "url": "https://inha.uz:443/about/quality-management-system/university-certification-information/",
+          "label": "English language courses",
+          "tag": "a"
+        },
+        {
+          "url": "https://inha.uz/continuing-education-center/cec-corp-courses/corporate-english/",
+          "label": "Corporate English",
+          "tag": "a"
+        },
+        {
+          "url": "https://inha.uz:443/about/quality-management-system/university-certification-information/",
+          "label": "KIDS Courses",
+          "tag": "a"
+        },
+        {
+          "url": "https://inha.uz/continuing-education-center/courses-for-kids/math-for-children/",
+          "label": "Math for Children",
+          "tag": "a"
+        },
+        {
+          "url": "https://inha.uz/continuing-education-center/courses-for-kids/english-for-children/",
+          "label": "English for Children",
+          "tag": "a"
+        },
+        {
+          "url": "https://inha.uz:443/about/quality-management-system/university-certification-information/",
+          "label": "Preparatory courses",
+          "tag": "a"
+        },
+        {
+          "url": "https://inha.uz/continuing-education-center/cec-corp-courses/",
+          "label": "Corporate Courses",
+          "tag": "a"
+        },
+        {
+          "url": "https://inha.uz/continuing-education-center/pre-university/courses/english/",
+          "label": "IELTS Preparation",
+          "tag": "a"
+        },
+        {
+          "url": "https://inha.uz/continuing-education-center/pre-university/ratings-of-pu-students/",
+          "label": "Ratings of PU attendees",
+          "tag": "a"
+        },
+        {
+          "url": "https://inha.uz/cyber-security-center/#eccouncil",
+          "label": "EC-Council – Certification Programs",
+          "tag": "a"
+        },
+        {
+          "url": "https://inha.uz/cyber-security-center/#comptia",
+          "label": "CompTIA Certification Programs",
+          "tag": "a"
+        },
+        {
+          "url": "https://inha.uz/foundation/admissions-guidelines-foundation/",
+          "label": "Admissions Guidelines",
+          "tag": "a"
+        },
+        {
+          "url": "https://inha.uz/foundation/tuitions-foundation/",
+          "label": "Tuitions",
+          "tag": "a"
+        },
+        {
+          "url": "https://inha.uz/prospective-students/admissions/application-guideline/",
+          "label": "Application Guideline 2026-2027",
+          "tag": "a"
+        },
+        {
+          "url": "https://inha.uz/program-overview-kor/",
+          "label": "Program overview",
+          "tag": "a"
+        },
+        {
+          "url": "https://inha.uz/prospective-students/admissions/tuitions/",
+          "label": "Tuitions",
+          "tag": "a"
+        },
+        {
+          "url": "https://inha.uz/prospective-students/admissions/scholarships/",
+          "label": "Scholarships",
+          "tag": "a"
+        },
+        {
+          "url": "https://inha.uz/prospective-students/admissions/faq/",
+          "label": "FAQ",
+          "tag": "a"
+        },
+        {
+          "url": "https://inha.uz/prospective-students/admissions/sample-exams/",
+          "label": "Exam Samples",
+          "tag": "a"
+        },
+        {
+          "url": "https://inha.uz/prospective-students/admissions/admission-contacts/",
+          "label": "Admission Contacts",
+          "tag": "a"
+        },
+        {
+          "url": "https://inha.uz/admissions-2026-guideline-for-uk-and-italy-programs/",
+          "label": "Application Guideline 2026-2027",
+          "tag": "a"
+        },
+        {
+          "url": "https://inha.uz/zp1k",
+          "label": "Program overview",
+          "tag": "a"
+        },
+        {
+          "url": "https://inha.uz/tuitions/",
+          "label": "Tuitions",
+          "tag": "a"
+        },
+        {
+          "url": "https://inha.uz/admission-contacts/",
+          "label": "Admission Contacts",
+          "tag": "a"
+        },
+        {
+          "url": "https://inha.uz/about-programm/",
+          "label": "Program overview",
+          "tag": "a"
+        },
+        {
+          "url": "https://inha.uz/tuitions-ity/",
+          "label": "Tuitions",
+          "tag": "a"
+        },
+        {
+          "url": "https://inha.uz/admission-contacts-italy/",
+          "label": "Admission Contacts",
+          "tag": "a"
+        },
+        {
+          "url": "https://inha.uz/mba-info/",
+          "label": "Program overview",
+          "tag": "a"
+        },
+        {
+          "url": "https://inha.uz/postgraduate/curriculum-and-course-introduction/",
+          "label": "Curriculum",
+          "tag": "a"
+        },
+        {
+          "url": "https://inha.uz/postgraduate/kontakty-m/",
+          "label": "Admission Contacts",
+          "tag": "a"
+        },
+        {
+          "url": "https://inha.uz/emva/",
+          "label": "Program overview",
+          "tag": "a"
+        },
+        {
+          "url": "https://inha.uz/admission-contacts-emba/",
+          "label": "Admission Contacts",
+          "tag": "a"
+        },
+        {
+          "url": "https://inha.uz:443/about/quality-management-system/university-certification-information/",
+          "label": "Administration",
+          "tag": "a"
+        },
+        {
+          "url": "https://inha.uz:443/about/quality-management-system/university-certification-information/",
+          "label": "Students",
+          "tag": "a"
+        },
+        {
+          "url": "https://inha.uz/undergraduate/iut-student-association/",
+          "label": "IUT Student association",
+          "tag": "a"
+        },
+        {
+          "url": "https://inha.uz/undergraduate/student-support-centre/",
+          "label": "Student Support Centre",
+          "tag": "a"
+        },
+        {
+          "url": "https://inha.uz/undergraduate/successful-students/",
+          "label": "Successful students",
+          "tag": "a"
+        },
+        {
+          "url": "https://api2.inha.uz/admin/upload/ckeditor_upload/Offerta_INHA.pdf",
+          "label": "Public offering",
+          "tag": "a"
+        }
+      ],
+      "history_context": [
+        "udits were conducted by TIC in accordance with auditing and certification procedures from 2021 to 2023. In December 2023, a re-certification audit was conducted, confirming the University’s compliance with the requirements of the international quality management standard. The val"
+      ]
+    },
+    {
+      "university_id": "9485c68f-a900-55f2-870b-a072bed954a8",
+      "domain": "polito.uz",
+      "kind": "history",
+      "url": "https://polito.uz/about-us/",
+      "retrieved_at": "2026-10-16T03:07:50.128686+00:00",
+      "status": "error",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "university_id": "ce210bba-ca93-56fb-9456-51b8212c60f4",
+      "domain": "tuit.uz",
+      "kind": "history",
+      "url": "https://tuit.uz/en/universitet-tarixi",
+      "retrieved_at": "2026-10-16T03:07:50.136870+00:00",
+      "status": "error",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "university_id": "83647167-92a6-5f42-9507-1a7a62aebe83",
+      "domain": "nuu.uz",
+      "kind": "history",
+      "url": "https://nuu.uz/en/universitet-haqida/",
+      "retrieved_at": "2026-10-16T03:07:50.207803+00:00",
+      "status": "error",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "university_id": "c66c3755-66a2-57a0-a80e-da984c310d29",
+      "domain": "nus.edu.sg",
+      "kind": "history",
+      "url": "https://nus.edu.sg/about/history",
+      "retrieved_at": "2026-10-16T03:07:50.381007+00:00",
+      "status": 200,
+      "final_url": "https://nus.edu.sg/about/history",
+      "content_type": "text/html",
+      "title": "",
+      "bytes": 212,
+      "sha256": "d02032286070b4dd9d8fbd985a7bdca8af8edf52b89ff177db3bfcb2c8a9c43d",
+      "cache_file": "/var/folders/s7/l14g78kx35z66lhftvjc1qk80000gn/T/collegestat-university-enrichment-oct15/afaf5208bba7160ccb.html",
+      "youtube_ids_in_official_page": [],
+      "candidate_links": [],
+      "history_context": []
+    },
+    {
+      "university_id": "33333333-3333-4333-8333-333333333333",
+      "domain": "ox.ac.uk",
+      "kind": "history",
+      "url": "https://www.ox.ac.uk/about/organisation/history",
+      "retrieved_at": "2026-10-16T03:07:50.531772+00:00",
+      "status": "error",
+      "error": "HTTP Error 403: Forbidden"
+    }
+  ]
+}

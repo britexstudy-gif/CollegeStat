@@ -1,0 +1,126 @@
+OpenAI Codex v0.169.0
+--------
+workdir: /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+model: gpt-6-luna
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: high
+reasoning summaries: none
+session id: 01a1ee9a-91c5-7581-b7db-cbd4ace2b3b0
+--------
+user
+You are a careful admissions-data researcher. For each university below, find facts for an
+INTERNATIONAL applicant to a FIRST-YEAR BACHELOR'S degree starting in autumn 2027 (or the nearest
+published cycle). Use the live web. Rules:
+
+- Official sources only: the university's own website (its domain or subdomains), the national
+  application service (UCAS, Common App, OUAC, uni-assist, Studyinkorea, etc.) or a government
+  statistics office. Never use rankings sites, forums, agencies, Wikipedia or blogs.
+- Every value needs the exact page URL where you read it (source_url). If you could not verify a
+  value on an official page, leave it out (null or an empty list). Never guess or estimate.
+- english: the lowest overall score accepted for undergraduate entry, per test (IELTS Academic
+  overall, TOEFL iBT total, Duolingo, PTE). If programmes differ, give the general/lowest common
+  university minimum and say so in detail (e.g. "6.5 overall, no band below 6.0; some
+  programmes higher").
+- tuition: the yearly tuition for international (non-EU / overseas) undergraduates in the local
+  currency. If it varies by programme give amount = lowest and amount_max = highest, and the
+  academic_year the fee applies to (e.g. "2026/27"). If tuition is free, amount = 0.
+- application_fee: for international first-year applicants, local currency.
+- deadlines: the main 2027-entry first-year deadlines (ISO date YYYY-MM-DD) with the route
+  (e.g. "Common App, Regular Decision", "UCAS", "university portal"). Only dates actually
+  published; if only the 2026-entry date is published, include it and put "2026 entry" in title.
+- sat: policy for international applicants; p25/p75 total SAT only if the university publishes
+  them (Common Data Set or admissions profile).
+- acceptance_rate: only if officially published (CDS, admissions statistics page).
+- notes: one short line on anything important (e.g. "Foundation year required for 11-year
+  school certificates"), else "".
+
+Spend effort on the facts students need most: English minimum, tuition, deadlines. Keep each
+detail under 160 characters. Return only the JSON that matches the schema; use each
+university's id exactly as given.
+
+Universities:
+- id: ee88c356-309f-5390-ba9a-0570c89d1810 | Prince Sultan University | Riyadh, SA | http://www.psu.edu.sa/
+- id: 0272ce13-5809-543c-b131-9042a9cdcd35 | University of Electronic Science and Technology of China | Chengdu, CN | http://www.uestc.edu.cn/
+- id: f50f0b72-6c3f-50df-a463-900e49ac8db9 | Universiti Utara Malaysia | Jitra, MY | http://www.uum.edu.my/
+- id: a9d19bf8-a34f-5c13-afda-7415046be44d | Sogang University | Seoul, KR | http://www.sogang.ac.kr/
+codex
+I’ll check the available research context, then verify each university’s admissions facts against official pages and return only the requested JSON.
+exec
+/bin/zsh -lc 'cat /Users/likeanew/.agents/skills/lemma/SKILL.md' in /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+ succeeded in 0ms:
+---
+name: lemma
+description: Persistent cross-session memory for AI agents via MCP. BEFORE starting ANY task (coding, debugging, refactoring, research, docs, optimization — any language), FIRST call memory_read to load what you already know so you never re-derive or re-explore known facts. AFTER finishing, call memory_add to persist new findings and session_attempt for dead ends — unsaved knowledge is lost permanently. Distills reusable guides from experience.
+---
+
+<!-- lemma:skill:v=0.21.0 -->
+
+# Lemma — Persistent Memory & Learning
+
+Lemma is a persistent memory server for AI agents over the Model Context Protocol.
+Every session starts blank — knowledge survives ONLY through tool calls. If you
+learn something and don't save it (`memory_add`), it is gone permanently.
+
+## Workflow
+1. **RECALL** — `memory_read` / `semantic_search`: load what's already known for this
+   project/task. Never re-explore code or re-derive facts that are already saved.
+2. **ACT** — do the task.
+3. **PERSIST** — `memory_add` for new insights; `guide_practice` for guides applied;
+   `session_attempt` for abandoned/dead-end approaches (the most valuable records).
+
+## Two knowledge layers
+- **Memory fragments** (`memory_read` / `memory_add`): atomic facts. Types: `fact`,
+  `pattern`, `lesson`, `warning`, `context`. Confidence evolves with use and feedback.
+- **Guides** (`guide_get` / `guide_distill` / `guide_practice`): procedural skills
+  distilled from fragments. Track usage count + success/failure rate.
+Pipeline: `experience -> memory_add -> pattern/lesson -> guide_distill -> guide_practice`.
+
+## Tools at a glance
+- **Recall & search**: `memory_read`, `semantic_search`, `memory_library` (full
+  snapshot + maintenance signals), `memory_stats`, `memory_audit`.
+- **Write & maintain**: `memory_add`, `memory_update`, `memory_forget`,
+  `memory_merge`, `memory_relate` (supports / contradicts / supersedes / related_to),
+  `memory_feedback`.
+- **Guides**: `guide_get`, `guide_create`, `guide_distill`, `guide_practice`,
+  `guide_update`, `guide_forget`, `guide_merge`.
+- **Sessions & reasoning**: `session_start`, `session_end`, `session_attempt`,
+  `session_stats`, `suggestion_respond`.
+- **Background intelligence**: `conflict_scan`, `proactive_analysis`,
+  `project_analytics` (run automatically; act on signals when sensible).
+
+## Writing a fragment
+```
+## [Topic Title]
+### Context
+[1-2 sentences: what and why it matters]
+### [Content Section]
+- [Key fact 1]
+- [Key fact 2]
+### Rules (optional)
+- [Absolute constraint]
+```
+One idea per fragment, 30-2000 chars, structured markdown (not prose). **Store
+fragments in ENGLISH** (required for search/retrieval). Never ask permission to save.
+
+## Background intelligence
+Conflict detection, distill/merge/refine suggestions, and auto-linking run
+automatically. From the CLI, `lemma -lib` prints a full knowledge-base snapshot
+and `lemma -vis` launches a visualizer.
+
+web search: 
+web search: site:psu.edu.sa international undergraduate admissions tuition 2027 IELTS application fee Prince Sultan University ...
+web search: 
+web search: site:en.uestc.edu.cn "Tuition" undergraduate international 2026 CNY IELTS TOEFL ...
+web search: 
+web search: Sogang University international undergraduate admission guide 2026 official pdf tuition fee deadline ...
+web search: 
+web search: 
+web search: 
+web search: 'Tuition'
+codex
+{"universities":[{"id":"ee88c356-309f-5390-ba9a-0570c89d1810","english":[{"test":"IELTS","minimum":4,"detail":"Academic, 4.0 overall; Preparatory Year entry minimum.","source_url":"https://psu.edu.sa/en/admissions-Undergraduate-Admission"},{"test":"TOEFL iBT","minimum":25,"detail":"25/120 for tests before Jan 21, 2026; 2/6 for tests on or after that date.","source_url":"https://psu.edu.sa/en/admissions-Undergraduate-Admission"},{"test":"Duolingo","minimum":60,"detail":"60 overall.","source_url":"https://psu.edu.sa/en/admissions-Undergraduate-Admission"}],"tuition":null,"application_fee":{"amount":575,"currency":"SAR","source_url":"https://psu.edu.sa/en/admissions-Undergraduate-Admission"},"deadlines":[],"sat":{"policy":"optional","p25":null,"p75":null,"source_url":"https://psu.edu.sa/en/admissions-Undergraduate-Admission"},"acceptance_rate":null,"notes":"Applicants must be Saudi/GCC nationals or legal residents of Saudi Arabia; high-school entrants first enter the one-year Preparatory Year."},{"id":"0272ce13-5809-543c-b131-9042a9cdcd35","english":[{"test":"IELTS","minimum":5.5,"detail":"5.5 for English-taught programs; Chinese-taught programs require HSK5 ≥180.","source_url":"https://en.uestc.edu.cn/UESTC_Admission_Brochure-EN.pdf"},{"test":"TOEFL iBT","minimum":80,"detail":"80 for English-taught programs; Chinese-taught programs require HSK5 ≥180.","source_url":"https://en.uestc.edu.cn/UESTC_Admission_Brochure-EN.pdf"}],"tuition":{"amount":15000,"amount_max":45000,"currency":"CNY","period":"year","academic_year":"2026","detail":"2026 brochure: Chinese-taught undergrad CNY 15,000–45,000/year; English-taught CNY 20,000/year.","source_url":"https://en.uestc.edu.cn/UESTC_Admission_Brochure-EN.pdf"},"application_fee":{"amount":420,"currency":"CNY","source_url":"https://en.uestc.edu.cn/UESTC_Admission_Brochure-EN.pdf"},"deadlines":[{"title":"2026 entry","due_at":"2026-06-30","route":"University portal","source_url":"https://en.uestc.edu.cn/UESTC_Admission_Brochure-EN.pdf"}],"sat":null,"acceptance_rate":null,"notes":"CSCA score report required for bachelor's applicants; UESTC has no spring undergraduate intake."},{"id":"f50f0b72-6c3f-50df-a463-900e49ac8db9","english":[],"tuition":null,"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"University says English requirements depend on programme; the current international undergraduate page does not give minimum test scores or dated deadlines."},{"id":"a9d19bf8-a34f-5c13-afda-7415046be44d","english":[{"test":"IELTS","minimum":5.5,"detail":"5.5 overall; listed for selected English-track majors, not a university-wide English requirement.","source_url":"https://studyinkorea.go.kr/ko/search/universityInfo.do?tab=univ-basic-info&univCd=100205"},{"test":"TOEFL iBT","minimum":71,"detail":"71 total; listed for selected English-track majors, not a university-wide English requirement.","source_url":"https://studyinkorea.go.kr/ko/search/universityInfo.do?tab=univ-basic-info&univCd=100205"}],"tuition":{"amount":5245000,"amount_max":6794000,"currency":"KRW","period":"semester","academic_year":"2026","detail":"Official government university profile lists 2026 undergraduate tuition of KRW 5,245,000–6,794,000 per semester by field.","source_url":"https://studyinkorea.go.kr/ko/search/universityInfo.do?tab=univ-basic-info&univCd=100205"},"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"Guide page lists admission guides; a dated 2027 fall application deadline was not verified."}] }
+tokens used
+46,031
+{"universities":[{"id":"ee88c356-309f-5390-ba9a-0570c89d1810","english":[{"test":"IELTS","minimum":4,"detail":"Academic, 4.0 overall; Preparatory Year entry minimum.","source_url":"https://psu.edu.sa/en/admissions-Undergraduate-Admission"},{"test":"TOEFL iBT","minimum":25,"detail":"25/120 for tests before Jan 21, 2026; 2/6 for tests on or after that date.","source_url":"https://psu.edu.sa/en/admissions-Undergraduate-Admission"},{"test":"Duolingo","minimum":60,"detail":"60 overall.","source_url":"https://psu.edu.sa/en/admissions-Undergraduate-Admission"}],"tuition":null,"application_fee":{"amount":575,"currency":"SAR","source_url":"https://psu.edu.sa/en/admissions-Undergraduate-Admission"},"deadlines":[],"sat":{"policy":"optional","p25":null,"p75":null,"source_url":"https://psu.edu.sa/en/admissions-Undergraduate-Admission"},"acceptance_rate":null,"notes":"Applicants must be Saudi/GCC nationals or legal residents of Saudi Arabia; high-school entrants first enter the one-year Preparatory Year."},{"id":"0272ce13-5809-543c-b131-9042a9cdcd35","english":[{"test":"IELTS","minimum":5.5,"detail":"5.5 for English-taught programs; Chinese-taught programs require HSK5 ≥180.","source_url":"https://en.uestc.edu.cn/UESTC_Admission_Brochure-EN.pdf"},{"test":"TOEFL iBT","minimum":80,"detail":"80 for English-taught programs; Chinese-taught programs require HSK5 ≥180.","source_url":"https://en.uestc.edu.cn/UESTC_Admission_Brochure-EN.pdf"}],"tuition":{"amount":15000,"amount_max":45000,"currency":"CNY","period":"year","academic_year":"2026","detail":"2026 brochure: Chinese-taught undergrad CNY 15,000–45,000/year; English-taught CNY 20,000/year.","source_url":"https://en.uestc.edu.cn/UESTC_Admission_Brochure-EN.pdf"},"application_fee":{"amount":420,"currency":"CNY","source_url":"https://en.uestc.edu.cn/UESTC_Admission_Brochure-EN.pdf"},"deadlines":[{"title":"2026 entry","due_at":"2026-06-30","route":"University portal","source_url":"https://en.uestc.edu.cn/UESTC_Admission_Brochure-EN.pdf"}],"sat":null,"acceptance_rate":null,"notes":"CSCA score report required for bachelor's applicants; UESTC has no spring undergraduate intake."},{"id":"f50f0b72-6c3f-50df-a463-900e49ac8db9","english":[],"tuition":null,"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"University says English requirements depend on programme; the current international undergraduate page does not give minimum test scores or dated deadlines."},{"id":"a9d19bf8-a34f-5c13-afda-7415046be44d","english":[{"test":"IELTS","minimum":5.5,"detail":"5.5 overall; listed for selected English-track majors, not a university-wide English requirement.","source_url":"https://studyinkorea.go.kr/ko/search/universityInfo.do?tab=univ-basic-info&univCd=100205"},{"test":"TOEFL iBT","minimum":71,"detail":"71 total; listed for selected English-track majors, not a university-wide English requirement.","source_url":"https://studyinkorea.go.kr/ko/search/universityInfo.do?tab=univ-basic-info&univCd=100205"}],"tuition":{"amount":5245000,"amount_max":6794000,"currency":"KRW","period":"semester","academic_year":"2026","detail":"Official government university profile lists 2026 undergraduate tuition of KRW 5,245,000–6,794,000 per semester by field.","source_url":"https://studyinkorea.go.kr/ko/search/universityInfo.do?tab=univ-basic-info&univCd=100205"},"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"Guide page lists admission guides; a dated 2027 fall application deadline was not verified."}] }

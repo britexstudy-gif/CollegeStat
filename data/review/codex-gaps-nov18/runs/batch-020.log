@@ -1,0 +1,142 @@
+OpenAI Codex v0.169.0
+--------
+workdir: /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+model: gpt-6-luna
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: high
+reasoning summaries: none
+session id: 01a1ee7d-fb84-7ce2-af3e-81129db80a5c
+--------
+user
+You are a careful admissions-data researcher. For each university below, find facts for an
+INTERNATIONAL applicant to a FIRST-YEAR BACHELOR'S degree starting in autumn 2027 (or the nearest
+published cycle). Use the live web. Rules:
+
+- Official sources only: the university's own website (its domain or subdomains), the national
+  application service (UCAS, Common App, OUAC, uni-assist, Studyinkorea, etc.) or a government
+  statistics office. Never use rankings sites, forums, agencies, Wikipedia or blogs.
+- Every value needs the exact page URL where you read it (source_url). If you could not verify a
+  value on an official page, leave it out (null or an empty list). Never guess or estimate.
+- english: the lowest overall score accepted for undergraduate entry, per test (IELTS Academic
+  overall, TOEFL iBT total, Duolingo, PTE). If programmes differ, give the general/lowest common
+  university minimum and say so in detail (e.g. "6.5 overall, no band below 6.0; some
+  programmes higher").
+- tuition: the yearly tuition for international (non-EU / overseas) undergraduates in the local
+  currency. If it varies by programme give amount = lowest and amount_max = highest, and the
+  academic_year the fee applies to (e.g. "2026/27"). If tuition is free, amount = 0.
+- application_fee: for international first-year applicants, local currency.
+- deadlines: the main 2027-entry first-year deadlines (ISO date YYYY-MM-DD) with the route
+  (e.g. "Common App, Regular Decision", "UCAS", "university portal"). Only dates actually
+  published; if only the 2026-entry date is published, include it and put "2026 entry" in title.
+- sat: policy for international applicants; p25/p75 total SAT only if the university publishes
+  them (Common Data Set or admissions profile).
+- acceptance_rate: only if officially published (CDS, admissions statistics page).
+- notes: one short line on anything important (e.g. "Foundation year required for 11-year
+  school certificates"), else "".
+
+Spend effort on the facts students need most: English minimum, tuition, deadlines. Keep each
+detail under 160 characters. Return only the JSON that matches the schema; use each
+university's id exactly as given.
+
+Universities:
+- id: 2eeda25f-2732-523e-b485-bab01ce33cd6 | Tohoku University | Sendai, JP | http://www.tohoku.ac.jp/
+- id: 48429a40-059c-538c-ad95-c91c68b9cb1c | Utrecht University | Utrecht, NL | http://www.uu.nl/
+- id: 3d2122dd-542a-5bad-94e8-33090f53f6ad | Queen Mary University of London | London, GB | https://www.qmul.ac.uk/
+- id: f7aaf172-d973-5248-b3d6-83289c7c7451 | Rheinisch Westfälische Technische Hochschule Aachen | Aachen, DE | http://www.rwth-aachen.de/
+codex
+I’ll check each university’s official undergraduate admissions and fee pages, plus the relevant national application service where it applies. I’ll include only values I can verify for the published 2027 cycle or the nearest published cycle.
+exec
+/bin/zsh -lc 'cat /Users/likeanew/.agents/skills/lemma/SKILL.md' in /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+ succeeded in 0ms:
+---
+name: lemma
+description: Persistent cross-session memory for AI agents via MCP. BEFORE starting ANY task (coding, debugging, refactoring, research, docs, optimization — any language), FIRST call memory_read to load what you already know so you never re-derive or re-explore known facts. AFTER finishing, call memory_add to persist new findings and session_attempt for dead ends — unsaved knowledge is lost permanently. Distills reusable guides from experience.
+---
+
+<!-- lemma:skill:v=0.21.0 -->
+
+# Lemma — Persistent Memory & Learning
+
+Lemma is a persistent memory server for AI agents over the Model Context Protocol.
+Every session starts blank — knowledge survives ONLY through tool calls. If you
+learn something and don't save it (`memory_add`), it is gone permanently.
+
+## Workflow
+1. **RECALL** — `memory_read` / `semantic_search`: load what's already known for this
+   project/task. Never re-explore code or re-derive facts that are already saved.
+2. **ACT** — do the task.
+3. **PERSIST** — `memory_add` for new insights; `guide_practice` for guides applied;
+   `session_attempt` for abandoned/dead-end approaches (the most valuable records).
+
+## Two knowledge layers
+- **Memory fragments** (`memory_read` / `memory_add`): atomic facts. Types: `fact`,
+  `pattern`, `lesson`, `warning`, `context`. Confidence evolves with use and feedback.
+- **Guides** (`guide_get` / `guide_distill` / `guide_practice`): procedural skills
+  distilled from fragments. Track usage count + success/failure rate.
+Pipeline: `experience -> memory_add -> pattern/lesson -> guide_distill -> guide_practice`.
+
+## Tools at a glance
+- **Recall & search**: `memory_read`, `semantic_search`, `memory_library` (full
+  snapshot + maintenance signals), `memory_stats`, `memory_audit`.
+- **Write & maintain**: `memory_add`, `memory_update`, `memory_forget`,
+  `memory_merge`, `memory_relate` (supports / contradicts / supersedes / related_to),
+  `memory_feedback`.
+- **Guides**: `guide_get`, `guide_create`, `guide_distill`, `guide_practice`,
+  `guide_update`, `guide_forget`, `guide_merge`.
+- **Sessions & reasoning**: `session_start`, `session_end`, `session_attempt`,
+  `session_stats`, `suggestion_respond`.
+- **Background intelligence**: `conflict_scan`, `proactive_analysis`,
+  `project_analytics` (run automatically; act on signals when sensible).
+
+## Writing a fragment
+```
+## [Topic Title]
+### Context
+[1-2 sentences: what and why it matters]
+### [Content Section]
+- [Key fact 1]
+- [Key fact 2]
+### Rules (optional)
+- [Absolute constraint]
+```
+One idea per fragment, 30-2000 chars, structured markdown (not prose). **Store
+fragments in ENGLISH** (required for search/retrieval). Never ask permission to save.
+
+## Background intelligence
+Conflict detection, distill/merge/refine suggestions, and auto-linking run
+automatically. From the CLI, `lemma -lib` prints a full knowledge-base snapshot
+and `lemma -vis` launches a visualizer.
+
+web search: 
+web search: site:tohoku.ac.jp undergraduate international admission English language tuition 2027 application fee ...
+web search: 
+web search: site:admissions.tohoku.ac.jp/en/admissions/undergraduate/gateway_college 2027 application schedule English TOEFL IELTS fee ...
+web search: 
+web search: site:qmul.ac.uk undergraduate international fees 2027 overseas tuition fee 2027 ...
+web search: 
+web search: site:rwth-aachen.de international bachelor application deadlines winter semester 2026 2027 non EU ...
+web search: 
+web search: site:rwth-aachen.de "July 15" "international" bachelor application deadline winter semester RWTH ...
+web search: 
+web search: site:uu.nl "Institutional Fees Bachelors" "2027-2028" Utrecht PDF ...
+web search: 
+web search: 
+web search: 
+web search: 
+web search: 
+web search: site:admissions.tohoku.ac.jp/en "application fee" "Gateway College" 17,000 ...
+web search: 
+web search: 
+web search: 
+web search: site:qmul.ac.uk/undergraduate/feesandfunding/ "2027" "Overseas" undergraduate fee ...
+web search: 
+web search: site:rwth-aachen.de/en "international applicants" "July 15" Bachelor RWTH application deadline ...
+web search: 
+web search: site:rwth-aachen.de/en/studies "tuition fees" "no" RWTH University ...
+codex
+{"universities":[{"id":"2eeda25f-2732-523e-b485-bab01ce33cd6","english":[{"test":"IELTS","minimum":6.0,"detail":"6.0 overall; minimum for 2027 Gateway College fall entry.","source_url":"https://admissions.tohoku.ac.jp/en/admissions/undergraduate/gateway_college/"},{"test":"TOEFL iBT","minimum":80,"detail":"80 total; minimum for 2027 Gateway College fall entry.","source_url":"https://admissions.tohoku.ac.jp/en/admissions/undergraduate/gateway_college/"},{"test":"Duolingo","minimum":110,"detail":"110 total; minimum for 2027 Gateway College fall entry.","source_url":"https://admissions.tohoku.ac.jp/en/admissions/undergraduate/gateway_college/"},{"test":"Cambridge C1/C2","minimum":169,"detail":"B2/C1/C2 English qualifications accepted from 169; Gateway College fall entry.","source_url":"https://admissions.tohoku.ac.jp/en/admissions/undergraduate/gateway_college/"}],"tuition":{"amount":900000,"amount_max":null,"currency":"JPY","period":"year","academic_year":"2027","detail":"Annual international tuition planned for 2027 Gateway College intake.","source_url":"https://admissions.tohoku.ac.jp/ja/adcms/wp-content/uploads/2026/04/gwc-pamphlet.pdf"},"application_fee":null,"deadlines":[{"title":"2027 fall entry application window","due_at":"2027-01-14","route":"Tohoku University Admissions Center / TAO","source_url":"https://admissions.tohoku.ac.jp/en/admissions/undergraduate/gateway_college/"}],"sat":{"policy":"accepted_alternative","p25":null,"p75":null,"source_url":"https://admissions.tohoku.ac.jp/en/admissions/undergraduate/gateway_college/"},"acceptance_rate":null,"notes":"Gateway College is the English-taught international first-year route; Japanese-taught faculties have separate requirements."},{"id":"48429a40-059c-538c-ad95-c91c68b9cb1c","english":[{"test":"IELTS","minimum":6,"detail":"IELTS Academic 6.0 overall; minimum common EMI-ready threshold, with some programmes requiring higher scores.","source_url":"https://www.uu.nl/bachelors/algemene-informatie/hoe-werkt-inschrijven/engelse-taalvaardigheidseisen/emi-ready"},{"test":"TOEFL iBT","minimum":83,"detail":"83 total on the pre-2026 scale; programme and section requirements may vary.","source_url":"https://www.uu.nl/bachelors/algemene-informatie/hoe-werkt-inschrijven/engelse-taalvaardigheidseisen/emi-ready"},{"test":"Cambridge C1/C2","minimum":169,"detail":"C1 Advanced minimum 169; programme requirements may vary.","source_url":"https://www.uu.nl/bachelors/algemene-informatie/hoe-werkt-inschrijven/engelse-taalvaardigheidseisen/emi-ready"}],"tuition":{"amount":15100,"amount_max":33500,"currency":"EUR","period":"year","academic_year":"2027-2028","detail":"Non-EU/EEA bachelor fees vary by programme; published schedule range.","source_url":"https://www.uu.nl/media/130654"},"application_fee":{"amount":100,"currency":"EUR","source_url":"https://www.uu.nl/en/bachelors/general-information/how-to-apply/application-admission-faq-0"},"deadlines":[{"title":"2027 entry, non-EU applicants","due_at":"2027-04-01","route":"Studielink and OSIRIS Online Application","source_url":"https://www.uu.nl/en/bachelors/economics-and-business-economics/application-and-admission"},{"title":"2027 entry, selective or limited-enrolment programmes","due_at":"2027-01-15","route":"Studielink","source_url":"https://www.uu.nl/en/bachelors/general-information/how-to-apply/limited-enrolment"}],"sat":null,"acceptance_rate":null,"notes":"Programme deadlines and English requirements vary; selective programmes have earlier deadlines."},{"id":"3d2122dd-542a-5bad-94e8-33090f53f6ad","english":[{"test":"IELTS","minimum":6,"detail":"Lowest undergraduate band: IELTS Academic 6.0 overall, 5.5 each component; some programmes require more.","source_url":"https://www.qmul.ac.uk/international-students/englishlanguagerequirements/undergraduate-and-postgraduate-programmes/"},{"test":"TOEFL iBT","minimum":79,"detail":"79 total on the 0–120 scale at the 6.0-equivalent band; section minima apply and some programmes require more.","source_url":"https://www.qmul.ac.uk/international-students/englishlanguagerequirements/test-equivalencies/"},{"test":"Duolingo","minimum":110,"detail":"110 total at the IELTS 6.0-equivalent band; some programmes require more.","source_url":"https://www.qmul.ac.uk/international-students/englishlanguagerequirements/test-equivalencies/"},{"test":"PTE Academic","minimum":65,"detail":"65 total at the IELTS 6.0-equivalent band; some programmes require more.","source_url":"https://www.qmul.ac.uk/international-students/englishlanguagerequirements/test-equivalencies/"}],"tuition":null,"application_fee":{"amount":34.5,"currency":"GBP","source_url":"https://www.ucas.com/faqs/what-is-the-application-fee-for-the-2027-cycle"},"deadlines":[{"title":"2027 entry, medicine and dentistry","due_at":"2026-10-15","route":"UCAS","source_url":"https://www.qmul.ac.uk/undergraduate/apply/deadlines/index.html"},{"title":"2027 entry, most courses equal consideration","due_at":"2027-01-13","route":"UCAS","source_url":"https://www.qmul.ac.uk/undergraduate/apply/deadlines/index.html"}],"sat":null,"acceptance_rate":null,"notes":"The university states 2027–28 fees have not yet been set on some 2027 course pages."},{"id":"f7aaf172-d973-5248-b3d6-83289c7c7451","english":[],"tuition":{"amount":0,"amount_max":null,"currency":"EUR","period":"year","academic_year":"2026/27","detail":"No tuition fee; students still pay a semester contribution.","source_url":"https://www.asta.rwth-aachen.de/en/hochschulstaerkungsgesetz/"},"application_fee":{"amount":50,"currency":"EUR","source_url":"https://www.rwth-aachen.de/global/show_document.asp?id=aaaaaaaaaaaoytf"},"deadlines":[{"title":"2026 entry, winter semester international applicants","due_at":"2026-07-15","route":"RWTHonline","source_url":"https://www.rwth-aachen.de/global/show_document.asp?id=aaaaaaaabphbjaw"}],"sat":null,"acceptance_rate":null,"notes":"Most bachelor's programmes are German-taught; international applicants generally need German proficiency such as DSH-2 or TestDaF level 4."}]}
+tokens used
+113,991
+{"universities":[{"id":"2eeda25f-2732-523e-b485-bab01ce33cd6","english":[{"test":"IELTS","minimum":6.0,"detail":"6.0 overall; minimum for 2027 Gateway College fall entry.","source_url":"https://admissions.tohoku.ac.jp/en/admissions/undergraduate/gateway_college/"},{"test":"TOEFL iBT","minimum":80,"detail":"80 total; minimum for 2027 Gateway College fall entry.","source_url":"https://admissions.tohoku.ac.jp/en/admissions/undergraduate/gateway_college/"},{"test":"Duolingo","minimum":110,"detail":"110 total; minimum for 2027 Gateway College fall entry.","source_url":"https://admissions.tohoku.ac.jp/en/admissions/undergraduate/gateway_college/"},{"test":"Cambridge C1/C2","minimum":169,"detail":"B2/C1/C2 English qualifications accepted from 169; Gateway College fall entry.","source_url":"https://admissions.tohoku.ac.jp/en/admissions/undergraduate/gateway_college/"}],"tuition":{"amount":900000,"amount_max":null,"currency":"JPY","period":"year","academic_year":"2027","detail":"Annual international tuition planned for 2027 Gateway College intake.","source_url":"https://admissions.tohoku.ac.jp/ja/adcms/wp-content/uploads/2026/04/gwc-pamphlet.pdf"},"application_fee":null,"deadlines":[{"title":"2027 fall entry application window","due_at":"2027-01-14","route":"Tohoku University Admissions Center / TAO","source_url":"https://admissions.tohoku.ac.jp/en/admissions/undergraduate/gateway_college/"}],"sat":{"policy":"accepted_alternative","p25":null,"p75":null,"source_url":"https://admissions.tohoku.ac.jp/en/admissions/undergraduate/gateway_college/"},"acceptance_rate":null,"notes":"Gateway College is the English-taught international first-year route; Japanese-taught faculties have separate requirements."},{"id":"48429a40-059c-538c-ad95-c91c68b9cb1c","english":[{"test":"IELTS","minimum":6,"detail":"IELTS Academic 6.0 overall; minimum common EMI-ready threshold, with some programmes requiring higher scores.","source_url":"https://www.uu.nl/bachelors/algemene-informatie/hoe-werkt-inschrijven/engelse-taalvaardigheidseisen/emi-ready"},{"test":"TOEFL iBT","minimum":83,"detail":"83 total on the pre-2026 scale; programme and section requirements may vary.","source_url":"https://www.uu.nl/bachelors/algemene-informatie/hoe-werkt-inschrijven/engelse-taalvaardigheidseisen/emi-ready"},{"test":"Cambridge C1/C2","minimum":169,"detail":"C1 Advanced minimum 169; programme requirements may vary.","source_url":"https://www.uu.nl/bachelors/algemene-informatie/hoe-werkt-inschrijven/engelse-taalvaardigheidseisen/emi-ready"}],"tuition":{"amount":15100,"amount_max":33500,"currency":"EUR","period":"year","academic_year":"2027-2028","detail":"Non-EU/EEA bachelor fees vary by programme; published schedule range.","source_url":"https://www.uu.nl/media/130654"},"application_fee":{"amount":100,"currency":"EUR","source_url":"https://www.uu.nl/en/bachelors/general-information/how-to-apply/application-admission-faq-0"},"deadlines":[{"title":"2027 entry, non-EU applicants","due_at":"2027-04-01","route":"Studielink and OSIRIS Online Application","source_url":"https://www.uu.nl/en/bachelors/economics-and-business-economics/application-and-admission"},{"title":"2027 entry, selective or limited-enrolment programmes","due_at":"2027-01-15","route":"Studielink","source_url":"https://www.uu.nl/en/bachelors/general-information/how-to-apply/limited-enrolment"}],"sat":null,"acceptance_rate":null,"notes":"Programme deadlines and English requirements vary; selective programmes have earlier deadlines."},{"id":"3d2122dd-542a-5bad-94e8-33090f53f6ad","english":[{"test":"IELTS","minimum":6,"detail":"Lowest undergraduate band: IELTS Academic 6.0 overall, 5.5 each component; some programmes require more.","source_url":"https://www.qmul.ac.uk/international-students/englishlanguagerequirements/undergraduate-and-postgraduate-programmes/"},{"test":"TOEFL iBT","minimum":79,"detail":"79 total on the 0–120 scale at the 6.0-equivalent band; section minima apply and some programmes require more.","source_url":"https://www.qmul.ac.uk/international-students/englishlanguagerequirements/test-equivalencies/"},{"test":"Duolingo","minimum":110,"detail":"110 total at the IELTS 6.0-equivalent band; some programmes require more.","source_url":"https://www.qmul.ac.uk/international-students/englishlanguagerequirements/test-equivalencies/"},{"test":"PTE Academic","minimum":65,"detail":"65 total at the IELTS 6.0-equivalent band; some programmes require more.","source_url":"https://www.qmul.ac.uk/international-students/englishlanguagerequirements/test-equivalencies/"}],"tuition":null,"application_fee":{"amount":34.5,"currency":"GBP","source_url":"https://www.ucas.com/faqs/what-is-the-application-fee-for-the-2027-cycle"},"deadlines":[{"title":"2027 entry, medicine and dentistry","due_at":"2026-10-15","route":"UCAS","source_url":"https://www.qmul.ac.uk/undergraduate/apply/deadlines/index.html"},{"title":"2027 entry, most courses equal consideration","due_at":"2027-01-13","route":"UCAS","source_url":"https://www.qmul.ac.uk/undergraduate/apply/deadlines/index.html"}],"sat":null,"acceptance_rate":null,"notes":"The university states 2027–28 fees have not yet been set on some 2027 course pages."},{"id":"f7aaf172-d973-5248-b3d6-83289c7c7451","english":[],"tuition":{"amount":0,"amount_max":null,"currency":"EUR","period":"year","academic_year":"2026/27","detail":"No tuition fee; students still pay a semester contribution.","source_url":"https://www.asta.rwth-aachen.de/en/hochschulstaerkungsgesetz/"},"application_fee":{"amount":50,"currency":"EUR","source_url":"https://www.rwth-aachen.de/global/show_document.asp?id=aaaaaaaaaaaoytf"},"deadlines":[{"title":"2026 entry, winter semester international applicants","due_at":"2026-07-15","route":"RWTHonline","source_url":"https://www.rwth-aachen.de/global/show_document.asp?id=aaaaaaaabphbjaw"}],"sat":null,"acceptance_rate":null,"notes":"Most bachelor's programmes are German-taught; international applicants generally need German proficiency such as DSH-2 or TestDaF level 4."}]}

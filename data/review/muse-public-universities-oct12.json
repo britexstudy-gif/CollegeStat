@@ -1,0 +1,706 @@
+{
+  "status": "unverified_research_candidates",
+  "installed_records": 0,
+  "tasks": [
+    {
+      "task": "001",
+      "name": "Massachusetts Institute of Technology",
+      "website": "http://web.mit.edu/",
+      "prompt": "/tmp/collegestat-muse-public-oct12/prompt-001.md",
+      "report": "/tmp/collegestat-muse-public-oct12/report-001.md"
+    },
+    {
+      "task": "002",
+      "name": "Imperial College London",
+      "website": "http://www.imperial.ac.uk/",
+      "prompt": "/tmp/collegestat-muse-public-oct12/prompt-002.md",
+      "report": "/tmp/collegestat-muse-public-oct12/report-002.md"
+    },
+    {
+      "task": "003",
+      "name": "Stanford University",
+      "website": "http://www.stanford.edu/",
+      "prompt": "/tmp/collegestat-muse-public-oct12/prompt-003.md",
+      "report": "/tmp/collegestat-muse-public-oct12/report-003.md"
+    },
+    {
+      "task": "004",
+      "name": "University of Oxford",
+      "website": "http://www.ox.ac.uk/",
+      "prompt": "/tmp/collegestat-muse-public-oct12/prompt-004.md",
+      "report": "/tmp/collegestat-muse-public-oct12/report-004.md"
+    },
+    {
+      "task": "005",
+      "name": "Harvard University",
+      "website": "http://www.harvard.edu/",
+      "prompt": "/tmp/collegestat-muse-public-oct12/prompt-005.md",
+      "report": "/tmp/collegestat-muse-public-oct12/report-005.md"
+    },
+    {
+      "task": "006",
+      "name": "University of Cambridge",
+      "website": "http://www.cam.ac.uk/",
+      "prompt": "/tmp/collegestat-muse-public-oct12/prompt-006.md",
+      "report": "/tmp/collegestat-muse-public-oct12/report-006.md"
+    },
+    {
+      "task": "007",
+      "name": "California Institute of Technology",
+      "website": "http://www.caltech.edu/",
+      "prompt": "/tmp/collegestat-muse-public-oct12/prompt-007.md",
+      "report": "/tmp/collegestat-muse-public-oct12/report-007.md"
+    },
+    {
+      "task": "008",
+      "name": "ETHZ - ETH Zurich",
+      "website": "http://www.ethz.ch/",
+      "prompt": "/tmp/collegestat-muse-public-oct12/prompt-008.md",
+      "report": "/tmp/collegestat-muse-public-oct12/report-008.md"
+    },
+    {
+      "task": "009",
+      "name": "University College London",
+      "website": "http://www.ucl.ac.uk/",
+      "prompt": "/tmp/collegestat-muse-public-oct12/prompt-009.md",
+      "report": "/tmp/collegestat-muse-public-oct12/report-009.md"
+    },
+    {
+      "task": "010",
+      "name": "National University of Singapore",
+      "website": "https://www.nus.edu.sg/",
+      "prompt": "/tmp/collegestat-muse-public-oct12/prompt-010.md",
+      "report": "/tmp/collegestat-muse-public-oct12/report-010.md"
+    },
+    {
+      "task": "011",
+      "name": "The University of Hong Kong",
+      "website": "https://www.hku.hk/",
+      "prompt": "/tmp/collegestat-muse-public-oct12/prompt-011.md",
+      "report": "/tmp/collegestat-muse-public-oct12/report-011.md"
+    },
+    {
+      "task": "012",
+      "name": "Nanyang Technological University",
+      "website": "https://www.ntu.edu.sg",
+      "prompt": "/tmp/collegestat-muse-public-oct12/prompt-012.md",
+      "report": "/tmp/collegestat-muse-public-oct12/report-012.md"
+    },
+    {
+      "task": "013",
+      "name": "Peking University",
+      "website": "http://www.pku.edu.cn/",
+      "prompt": "/tmp/collegestat-muse-public-oct12/prompt-013.md",
+      "report": "/tmp/collegestat-muse-public-oct12/report-013.md"
+    },
+    {
+      "task": "014",
+      "name": "Tsinghua University",
+      "website": "http://www.tsinghua.edu.cn/",
+      "prompt": "/tmp/collegestat-muse-public-oct12/prompt-014.md",
+      "report": "/tmp/collegestat-muse-public-oct12/report-014.md"
+    },
+    {
+      "task": "015",
+      "name": "University of Pennsylvania",
+      "website": "http://www.upenn.edu/",
+      "prompt": "/tmp/collegestat-muse-public-oct12/prompt-015.md",
+      "report": "/tmp/collegestat-muse-public-oct12/report-015.md"
+    },
+    {
+      "task": "016",
+      "name": "Cornell University",
+      "website": "http://www.cornell.edu/",
+      "prompt": "/tmp/collegestat-muse-public-oct12/prompt-016.md",
+      "report": "/tmp/collegestat-muse-public-oct12/report-016.md"
+    },
+    {
+      "task": "017",
+      "name": "Yale University",
+      "website": "http://www.yale.edu/",
+      "prompt": "/tmp/collegestat-muse-public-oct12/prompt-017.md",
+      "report": "/tmp/collegestat-muse-public-oct12/report-017.md"
+    },
+    {
+      "task": "018",
+      "name": "The Chinese University of Hong Kong",
+      "website": "https://www.cuhk.edu.hk/",
+      "prompt": "/tmp/collegestat-muse-public-oct12/prompt-018.md",
+      "report": "/tmp/collegestat-muse-public-oct12/report-018.md"
+    },
+    {
+      "task": "019",
+      "name": "UNSW Sydney",
+      "website": "https://www.unsw.edu.au/",
+      "prompt": "/tmp/collegestat-muse-public-oct12/prompt-019.md",
+      "report": "/tmp/collegestat-muse-public-oct12/report-019.md"
+    },
+    {
+      "task": "020",
+      "name": "Johns Hopkins University",
+      "website": "http://www.jhu.edu/",
+      "prompt": "/tmp/collegestat-muse-public-oct12/prompt-020.md",
+      "report": "/tmp/collegestat-muse-public-oct12/report-020.md"
+    },
+    {
+      "task": "021",
+      "name": "University of California-Berkeley",
+      "website": "http://www.berkeley.edu/",
+      "prompt": "/tmp/collegestat-muse-public-oct12/prompt-021.md",
+      "report": "/tmp/collegestat-muse-public-oct12/report-021.md"
+    },
+    {
+      "task": "022",
+      "name": "EPFL - EPF Lausanne",
+      "website": "http://www.epfl.ch/",
+      "prompt": "/tmp/collegestat-muse-public-oct12/prompt-022.md",
+      "report": "/tmp/collegestat-muse-public-oct12/report-022.md"
+    },
+    {
+      "task": "023",
+      "name": "University of Melbourne",
+      "website": "http://www.unimelb.edu.au/",
+      "prompt": "/tmp/collegestat-muse-public-oct12/prompt-023.md",
+      "report": "/tmp/collegestat-muse-public-oct12/report-023.md"
+    },
+    {
+      "task": "024",
+      "name": "University of Chicago",
+      "website": "http://www.uchicago.edu/",
+      "prompt": "/tmp/collegestat-muse-public-oct12/prompt-024.md",
+      "report": "/tmp/collegestat-muse-public-oct12/report-024.md"
+    },
+    {
+      "task": "025",
+      "name": "Technische Universit\u00e4t M\u00fcnchen",
+      "website": "http://www.tum.de/",
+      "prompt": "/tmp/collegestat-muse-public-oct12/prompt-025.md",
+      "report": "/tmp/collegestat-muse-public-oct12/report-025.md"
+    },
+    {
+      "task": "026",
+      "name": "Fudan University",
+      "website": "http://www.fudan.edu.cn/",
+      "prompt": "/tmp/collegestat-muse-public-oct12/prompt-026.md",
+      "report": "/tmp/collegestat-muse-public-oct12/report-026.md"
+    },
+    {
+      "task": "027",
+      "name": "Princeton University",
+      "website": "http://www.princeton.edu/",
+      "prompt": "/tmp/collegestat-muse-public-oct12/prompt-027.md",
+      "report": "/tmp/collegestat-muse-public-oct12/report-027.md"
+    },
+    {
+      "task": "028",
+      "name": "University of Sydney",
+      "website": "http://sydney.edu.au/",
+      "prompt": "/tmp/collegestat-muse-public-oct12/prompt-028.md",
+      "report": "/tmp/collegestat-muse-public-oct12/report-028.md"
+    },
+    {
+      "task": "029",
+      "name": "Australian National University",
+      "website": "http://www.anu.edu.au/",
+      "prompt": "/tmp/collegestat-muse-public-oct12/prompt-029.md",
+      "report": "/tmp/collegestat-muse-public-oct12/report-029.md"
+    },
+    {
+      "task": "030",
+      "name": "McGill University",
+      "website": "https://www.mcgill.ca",
+      "prompt": "/tmp/collegestat-muse-public-oct12/prompt-030.md",
+      "report": "/tmp/collegestat-muse-public-oct12/report-030.md"
+    },
+    {
+      "task": "031",
+      "name": "Monash University",
+      "website": "http://www.monash.edu/",
+      "prompt": "/tmp/collegestat-muse-public-oct12/prompt-031.md",
+      "report": "/tmp/collegestat-muse-public-oct12/report-031.md"
+    },
+    {
+      "task": "032",
+      "name": "University of Toronto",
+      "website": "http://www.utoronto.ca/",
+      "prompt": "/tmp/collegestat-muse-public-oct12/prompt-032.md",
+      "report": "/tmp/collegestat-muse-public-oct12/report-032.md"
+    },
+    {
+      "task": "033",
+      "name": "The Hong Kong University of Science and Technology",
+      "website": "https://hkust.edu.hk/",
+      "prompt": "/tmp/collegestat-muse-public-oct12/prompt-033.md",
+      "report": "/tmp/collegestat-muse-public-oct12/report-033.md"
+    },
+    {
+      "task": "034",
+      "name": "Universit\u00e9 Paris Sciences et Lettres",
+      "website": "https://psl.eu",
+      "prompt": "/tmp/collegestat-muse-public-oct12/prompt-034.md",
+      "report": "/tmp/collegestat-muse-public-oct12/report-034.md"
+    },
+    {
+      "task": "035",
+      "name": "University of Edinburgh",
+      "website": "http://www.ed.ac.uk/",
+      "prompt": "/tmp/collegestat-muse-public-oct12/prompt-035.md",
+      "report": "/tmp/collegestat-muse-public-oct12/report-035.md"
+    },
+    {
+      "task": "036",
+      "name": "Shanghai Jiaotong University",
+      "website": "http://www.sjtu.edu.cn/",
+      "prompt": "/tmp/collegestat-muse-public-oct12/prompt-036.md",
+      "report": "/tmp/collegestat-muse-public-oct12/report-036.md"
+    },
+    {
+      "task": "037",
+      "name": "King's College London, University of London",
+      "website": "http://www.kcl.ac.uk/",
+      "prompt": "/tmp/collegestat-muse-public-oct12/prompt-037.md",
+      "report": "/tmp/collegestat-muse-public-oct12/report-037.md"
+    },
+    {
+      "task": "038",
+      "name": "Seoul National University",
+      "website": "http://www.snu.ac.kr/",
+      "prompt": "/tmp/collegestat-muse-public-oct12/prompt-038.md",
+      "report": "/tmp/collegestat-muse-public-oct12/report-038.md"
+    },
+    {
+      "task": "039",
+      "name": "University of Tokyo",
+      "website": "http://www.u-tokyo.ac.jp/",
+      "prompt": "/tmp/collegestat-muse-public-oct12/prompt-039.md",
+      "report": "/tmp/collegestat-muse-public-oct12/report-039.md"
+    },
+    {
+      "task": "040",
+      "name": "University of Manchester",
+      "website": "http://www.manchester.ac.uk/",
+      "prompt": "/tmp/collegestat-muse-public-oct12/prompt-040.md",
+      "report": "/tmp/collegestat-muse-public-oct12/report-040.md"
+    },
+    {
+      "task": "041",
+      "name": "University of Queensland",
+      "website": "http://www.uq.edu.au/",
+      "prompt": "/tmp/collegestat-muse-public-oct12/prompt-041.md",
+      "report": "/tmp/collegestat-muse-public-oct12/report-041.md"
+    },
+    {
+      "task": "042",
+      "name": "Yonsei University",
+      "website": "http://www.yonsei.ac.kr/",
+      "prompt": "/tmp/collegestat-muse-public-oct12/prompt-042.md",
+      "report": "/tmp/collegestat-muse-public-oct12/report-042.md"
+    },
+    {
+      "task": "043",
+      "name": "Columbia University in the City of New York",
+      "website": "http://www.columbia.edu/",
+      "prompt": "/tmp/collegestat-muse-public-oct12/prompt-043.md",
+      "report": "/tmp/collegestat-muse-public-oct12/report-043.md"
+    },
+    {
+      "task": "044",
+      "name": "Institut Polytechnique de Paris",
+      "website": "https://www.ip-paris.fr",
+      "prompt": "/tmp/collegestat-muse-public-oct12/prompt-044.md",
+      "report": "/tmp/collegestat-muse-public-oct12/report-044.md"
+    },
+    {
+      "task": "045",
+      "name": "Northwestern University",
+      "website": "http://www.northwestern.edu/",
+      "prompt": "/tmp/collegestat-muse-public-oct12/prompt-045.md",
+      "report": "/tmp/collegestat-muse-public-oct12/report-045.md"
+    },
+    {
+      "task": "046",
+      "name": "University of British Columbia",
+      "website": "http://www.ubc.ca/",
+      "prompt": "/tmp/collegestat-muse-public-oct12/prompt-046.md",
+      "report": "/tmp/collegestat-muse-public-oct12/report-046.md"
+    },
+    {
+      "task": "047",
+      "name": "Zhejiang University",
+      "website": "http://www.zju.edu.cn/",
+      "prompt": "/tmp/collegestat-muse-public-oct12/prompt-047.md",
+      "report": "/tmp/collegestat-muse-public-oct12/report-047.md"
+    },
+    {
+      "task": "048",
+      "name": "Delft University of Technology",
+      "website": "http://www.tudelft.nl/",
+      "prompt": "/tmp/collegestat-muse-public-oct12/prompt-048.md",
+      "report": "/tmp/collegestat-muse-public-oct12/report-048.md"
+    },
+    {
+      "task": "049",
+      "name": "University of California-Los Angeles",
+      "website": "http://www.ucla.edu/",
+      "prompt": "/tmp/collegestat-muse-public-oct12/prompt-049.md",
+      "report": "/tmp/collegestat-muse-public-oct12/report-049.md"
+    },
+    {
+      "task": "050",
+      "name": "The Hong Kong Polytechnic University",
+      "website": "https://www.polyu.edu.hk/",
+      "prompt": "/tmp/collegestat-muse-public-oct12/prompt-050.md",
+      "report": "/tmp/collegestat-muse-public-oct12/report-050.md"
+    },
+    {
+      "task": "051",
+      "name": "University of Michigan-Ann Arbor",
+      "website": "http://www.umich.edu/",
+      "prompt": "/tmp/collegestat-muse-public-oct12/prompt-051.md",
+      "report": "/tmp/collegestat-muse-public-oct12/report-051.md"
+    },
+    {
+      "task": "052",
+      "name": "City University of Hong Kong",
+      "website": "https://www.cityu.edu.hk/",
+      "prompt": "/tmp/collegestat-muse-public-oct12/prompt-052.md",
+      "report": "/tmp/collegestat-muse-public-oct12/report-052.md"
+    },
+    {
+      "task": "053",
+      "name": "Korea University",
+      "website": "http://www.korea.ac.kr/",
+      "prompt": "/tmp/collegestat-muse-public-oct12/prompt-053.md",
+      "report": "/tmp/collegestat-muse-public-oct12/report-053.md"
+    },
+    {
+      "task": "054",
+      "name": "National Taiwan University",
+      "website": "http://www.ntu.edu.tw/",
+      "prompt": "/tmp/collegestat-muse-public-oct12/prompt-054.md",
+      "report": "/tmp/collegestat-muse-public-oct12/report-054.md"
+    },
+    {
+      "task": "055",
+      "name": "Carnegie Mellon University",
+      "website": "http://www.cmu.edu/",
+      "prompt": "/tmp/collegestat-muse-public-oct12/prompt-055.md",
+      "report": "/tmp/collegestat-muse-public-oct12/report-055.md"
+    },
+    {
+      "task": "056",
+      "name": "Universiti Malaya",
+      "website": "http://www.um.edu.my/",
+      "prompt": "/tmp/collegestat-muse-public-oct12/prompt-056.md",
+      "report": "/tmp/collegestat-muse-public-oct12/report-056.md"
+    },
+    {
+      "task": "057",
+      "name": "University of Bristol",
+      "website": "https://www.bristol.ac.uk/",
+      "prompt": "/tmp/collegestat-muse-public-oct12/prompt-057.md",
+      "report": "/tmp/collegestat-muse-public-oct12/report-057.md"
+    },
+    {
+      "task": "058",
+      "name": "New York University",
+      "website": "http://www.nyu.edu/",
+      "prompt": "/tmp/collegestat-muse-public-oct12/prompt-058.md",
+      "report": "/tmp/collegestat-muse-public-oct12/report-058.md"
+    },
+    {
+      "task": "059",
+      "name": "KU Leuven",
+      "website": "https://www.kuleuven.be",
+      "prompt": "/tmp/collegestat-muse-public-oct12/prompt-059.md",
+      "report": "/tmp/collegestat-muse-public-oct12/report-059.md"
+    },
+    {
+      "task": "060",
+      "name": "University of Amsterdam",
+      "website": "http://www.uva.nl/",
+      "prompt": "/tmp/collegestat-muse-public-oct12/prompt-060.md",
+      "report": "/tmp/collegestat-muse-public-oct12/report-060.md"
+    },
+    {
+      "task": "061",
+      "name": "Ludwig-Maximilians-Universit\u00e4t M\u00fcnchen",
+      "website": "https://www.lmu.de",
+      "prompt": "/tmp/collegestat-muse-public-oct12/prompt-061.md",
+      "report": "/tmp/collegestat-muse-public-oct12/report-061.md"
+    },
+    {
+      "task": "062",
+      "name": "London School of Economics and Political Science, University of London",
+      "website": "http://www.lse.ac.uk/",
+      "prompt": "/tmp/collegestat-muse-public-oct12/prompt-062.md",
+      "report": "/tmp/collegestat-muse-public-oct12/report-062.md"
+    },
+    {
+      "task": "063",
+      "name": "King Fahad University of Petroleum and Minerals",
+      "website": "http://www.kfupm.edu.sa/",
+      "prompt": "/tmp/collegestat-muse-public-oct12/prompt-063.md",
+      "report": "/tmp/collegestat-muse-public-oct12/report-063.md"
+    },
+    {
+      "task": "064",
+      "name": "Kyoto University",
+      "website": "http://www.kyoto-u.ac.jp/",
+      "prompt": "/tmp/collegestat-muse-public-oct12/prompt-064.md",
+      "report": "/tmp/collegestat-muse-public-oct12/report-064.md"
+    },
+    {
+      "task": "065",
+      "name": "Korea Advanced Institute of Science & Technology",
+      "website": "http://www.kaist.ac.kr/",
+      "prompt": "/tmp/collegestat-muse-public-oct12/prompt-065.md",
+      "report": "/tmp/collegestat-muse-public-oct12/report-065.md"
+    },
+    {
+      "task": "066",
+      "name": "Brown University",
+      "website": "http://www.brown.edu/",
+      "prompt": "/tmp/collegestat-muse-public-oct12/prompt-066.md",
+      "report": "/tmp/collegestat-muse-public-oct12/report-066.md"
+    },
+    {
+      "task": "067",
+      "name": "University of Auckland",
+      "website": "http://www.auckland.ac.nz/",
+      "prompt": "/tmp/collegestat-muse-public-oct12/prompt-067.md",
+      "report": "/tmp/collegestat-muse-public-oct12/report-067.md"
+    },
+    {
+      "task": "068",
+      "name": "University of Warwick",
+      "website": "http://www.warwick.ac.uk/",
+      "prompt": "/tmp/collegestat-muse-public-oct12/prompt-068.md",
+      "report": "/tmp/collegestat-muse-public-oct12/report-068.md"
+    },
+    {
+      "task": "069",
+      "name": "University of Birmingham",
+      "website": "http://www.birmingham.ac.uk/index.aspx",
+      "prompt": "/tmp/collegestat-muse-public-oct12/prompt-069.md",
+      "report": "/tmp/collegestat-muse-public-oct12/report-069.md"
+    },
+    {
+      "task": "070",
+      "name": "Duke University",
+      "website": "http://www.duke.edu/",
+      "prompt": "/tmp/collegestat-muse-public-oct12/prompt-070.md",
+      "report": "/tmp/collegestat-muse-public-oct12/report-070.md"
+    },
+    {
+      "task": "071",
+      "name": "Lund University",
+      "website": "http://www.lu.se/",
+      "prompt": "/tmp/collegestat-muse-public-oct12/prompt-071.md",
+      "report": "/tmp/collegestat-muse-public-oct12/report-071.md"
+    },
+    {
+      "task": "072",
+      "name": "The University of Texas at Austin",
+      "website": "https://www.utexas.edu/",
+      "prompt": "/tmp/collegestat-muse-public-oct12/prompt-072.md",
+      "report": "/tmp/collegestat-muse-public-oct12/report-072.md"
+    },
+    {
+      "task": "073",
+      "name": "Sorbonne Universit\u00e9",
+      "website": "https://www.sorbonne-universite.fr",
+      "prompt": "/tmp/collegestat-muse-public-oct12/prompt-073.md",
+      "report": "/tmp/collegestat-muse-public-oct12/report-073.md"
+    },
+    {
+      "task": "074",
+      "name": "University of Illinois Urbana-Champaign",
+      "website": "https://illinois.edu/",
+      "prompt": "/tmp/collegestat-muse-public-oct12/prompt-074.md",
+      "report": "/tmp/collegestat-muse-public-oct12/report-074.md"
+    },
+    {
+      "task": "075",
+      "name": "Universit\u00e9 Paris-Saclay",
+      "website": "https://www.universite-paris-saclay.fr/",
+      "prompt": "/tmp/collegestat-muse-public-oct12/prompt-075.md",
+      "report": "/tmp/collegestat-muse-public-oct12/report-075.md"
+    },
+    {
+      "task": "076",
+      "name": "University of Western Australia",
+      "website": "http://www.uwa.edu.au/",
+      "prompt": "/tmp/collegestat-muse-public-oct12/prompt-076.md",
+      "report": "/tmp/collegestat-muse-public-oct12/report-076.md"
+    },
+    {
+      "task": "077",
+      "name": "University of Leeds",
+      "website": "http://www.leeds.ac.uk/",
+      "prompt": "/tmp/collegestat-muse-public-oct12/prompt-077.md",
+      "report": "/tmp/collegestat-muse-public-oct12/report-077.md"
+    },
+    {
+      "task": "078",
+      "name": "University of Adelaide",
+      "website": "http://www.adelaide.edu.au/",
+      "prompt": "/tmp/collegestat-muse-public-oct12/prompt-078.md",
+      "report": "/tmp/collegestat-muse-public-oct12/report-078.md"
+    },
+    {
+      "task": "079",
+      "name": "University of Glasgow",
+      "website": "http://www.gla.ac.uk/",
+      "prompt": "/tmp/collegestat-muse-public-oct12/prompt-079.md",
+      "report": "/tmp/collegestat-muse-public-oct12/report-079.md"
+    },
+    {
+      "task": "080",
+      "name": "University of California-San Diego",
+      "website": "http://www.ucsd.edu/",
+      "prompt": "/tmp/collegestat-muse-public-oct12/prompt-080.md",
+      "report": "/tmp/collegestat-muse-public-oct12/report-080.md"
+    },
+    {
+      "task": "081",
+      "name": "KTH Royal Institute of Technology",
+      "website": "http://www.kth.se/",
+      "prompt": "/tmp/collegestat-muse-public-oct12/prompt-081.md",
+      "report": "/tmp/collegestat-muse-public-oct12/report-081.md"
+    },
+    {
+      "task": "082",
+      "name": "The University of Sheffield",
+      "website": "https://www.sheffield.ac.uk/",
+      "prompt": "/tmp/collegestat-muse-public-oct12/prompt-082.md",
+      "report": "/tmp/collegestat-muse-public-oct12/report-082.md"
+    },
+    {
+      "task": "083",
+      "name": "Universidad de Buenos Aires",
+      "website": "http://www.uba.ar/",
+      "prompt": "/tmp/collegestat-muse-public-oct12/prompt-083.md",
+      "report": "/tmp/collegestat-muse-public-oct12/report-083.md"
+    },
+    {
+      "task": "084",
+      "name": "University of Durham",
+      "website": "http://www.dur.ac.uk/",
+      "prompt": "/tmp/collegestat-muse-public-oct12/prompt-084.md",
+      "report": "/tmp/collegestat-muse-public-oct12/report-084.md"
+    },
+    {
+      "task": "085",
+      "name": "Polytechnic Institute of Milan",
+      "website": "http://www.polimi.it/",
+      "prompt": "/tmp/collegestat-muse-public-oct12/prompt-085.md",
+      "report": "/tmp/collegestat-muse-public-oct12/report-085.md"
+    },
+    {
+      "task": "086",
+      "name": "University of Technology Sydney",
+      "website": "http://www.uts.edu.au/",
+      "prompt": "/tmp/collegestat-muse-public-oct12/prompt-086.md",
+      "report": "/tmp/collegestat-muse-public-oct12/report-086.md"
+    },
+    {
+      "task": "087",
+      "name": "Uppsala University",
+      "website": "http://www.uu.se/",
+      "prompt": "/tmp/collegestat-muse-public-oct12/prompt-087.md",
+      "report": "/tmp/collegestat-muse-public-oct12/report-087.md"
+    },
+    {
+      "task": "088",
+      "name": "Nanjing University",
+      "website": "http://www.nju.edu.cn/",
+      "prompt": "/tmp/collegestat-muse-public-oct12/prompt-088.md",
+      "report": "/tmp/collegestat-muse-public-oct12/report-088.md"
+    },
+    {
+      "task": "089",
+      "name": "University of Copenhagen",
+      "website": "http://www.ku.dk/",
+      "prompt": "/tmp/collegestat-muse-public-oct12/prompt-089.md",
+      "report": "/tmp/collegestat-muse-public-oct12/report-089.md"
+    },
+    {
+      "task": "090",
+      "name": "Pennsylvania State University-Main Campus",
+      "website": "http://www.psu.edu/",
+      "prompt": "/tmp/collegestat-muse-public-oct12/prompt-090.md",
+      "report": "/tmp/collegestat-muse-public-oct12/report-090.md"
+    },
+    {
+      "task": "091",
+      "name": "University of Washington-Seattle Campus",
+      "website": "http://www.washington.edu/",
+      "prompt": "/tmp/collegestat-muse-public-oct12/prompt-091.md",
+      "report": "/tmp/collegestat-muse-public-oct12/report-091.md"
+    },
+    {
+      "task": "092",
+      "name": "Boston University",
+      "website": "http://www.bu.edu/",
+      "prompt": "/tmp/collegestat-muse-public-oct12/prompt-092.md",
+      "report": "/tmp/collegestat-muse-public-oct12/report-092.md"
+    },
+    {
+      "task": "093",
+      "name": "Osaka University",
+      "website": "http://www.osaka-u.ac.jp/",
+      "prompt": "/tmp/collegestat-muse-public-oct12/prompt-093.md",
+      "report": "/tmp/collegestat-muse-public-oct12/report-093.md"
+    },
+    {
+      "task": "094",
+      "name": "University of Alberta",
+      "website": "https://www.ualberta.ca",
+      "prompt": "/tmp/collegestat-muse-public-oct12/prompt-094.md",
+      "report": "/tmp/collegestat-muse-public-oct12/report-094.md"
+    },
+    {
+      "task": "095",
+      "name": "Institute of Science Tokyo",
+      "website": "https://www.isct.ac.jp",
+      "prompt": "/tmp/collegestat-muse-public-oct12/prompt-095.md",
+      "report": "/tmp/collegestat-muse-public-oct12/report-095.md"
+    },
+    {
+      "task": "096",
+      "name": "University of Nottingham",
+      "website": "http://www.nottingham.ac.uk/",
+      "prompt": "/tmp/collegestat-muse-public-oct12/prompt-096.md",
+      "report": "/tmp/collegestat-muse-public-oct12/report-096.md"
+    },
+    {
+      "task": "097",
+      "name": "Universit\u00e4t Z\u00fcrich",
+      "website": "https://www.uzh.ch/",
+      "prompt": "/tmp/collegestat-muse-public-oct12/prompt-097.md",
+      "report": "/tmp/collegestat-muse-public-oct12/report-097.md"
+    },
+    {
+      "task": "098",
+      "name": "University College Dublin",
+      "website": "http://www.ucd.ie/",
+      "prompt": "/tmp/collegestat-muse-public-oct12/prompt-098.md",
+      "report": "/tmp/collegestat-muse-public-oct12/report-098.md"
+    },
+    {
+      "task": "099",
+      "name": "Tohoku University",
+      "website": "http://www.tohoku.ac.jp/",
+      "prompt": "/tmp/collegestat-muse-public-oct12/prompt-099.md",
+      "report": "/tmp/collegestat-muse-public-oct12/report-099.md"
+    },
+    {
+      "task": "100",
+      "name": "Queen Mary University of London",
+      "website": "https://www.qmul.ac.uk/",
+      "prompt": "/tmp/collegestat-muse-public-oct12/prompt-100.md",
+      "report": "/tmp/collegestat-muse-public-oct12/report-100.md"
+    }
+  ]
+}

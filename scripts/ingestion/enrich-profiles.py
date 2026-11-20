@@ -6,8 +6,9 @@ must have explicit reusable licensing. Cached batches make interrupted runs resu
 import argparse, concurrent.futures, datetime, hashlib, html, json, pathlib, re, subprocess, time, urllib.parse
 ROOT=pathlib.Path(__file__).resolve().parents[2]; OUT=ROOT/'data/published'; RAW=ROOT/'data/raw/profile-enrichment';RAW.mkdir(parents=True,exist_ok=True)
 TODAY=datetime.datetime.now(datetime.timezone.utc).date().isoformat()
-parser=argparse.ArgumentParser();parser.add_argument('--limit',type=int,default=0);parser.add_argument('--max-age-days',type=int,default=30);args=parser.parse_args()
+parser=argparse.ArgumentParser();parser.add_argument('--limit',type=int,default=0);parser.add_argument('--max-age-days',type=int,default=30);parser.add_argument('--ids',help='Comma-separated reviewed institution IDs; all other published records are preserved.');args=parser.parse_args()
 rows=json.loads((OUT/'global-directory.json').read_text());rows=[r for r in rows if r.get('external_ids',{}).get('wikidata')]
+if args.ids:rows=[r for r in rows if r['id'] in set(args.ids.split(','))]
 # Enrich featured and ranked profiles first, then the remainder in stable order.
 ranked={r['university_id'] for r in json.loads((OUT/'ranking-records.json').read_text())}
 rows.sort(key=lambda r:(r['id'] not in ranked,r['name']))

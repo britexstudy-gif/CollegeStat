@@ -1,0 +1,642 @@
+[
+ {
+  "id": "6020a2b5-3788-5dd1-b3f2-b9c6c7c6f99b",
+  "slug": "ethz-eth-zurich-6020a2b5",
+  "name": "ETHZ - ETH Zurich",
+  "country_code": "CH",
+  "website": "http://www.ethz.ch/",
+  "qs_rank": 7
+ },
+ {
+  "id": "c67598f4-8b91-53a9-a98a-ebd185ced219",
+  "slug": "university-of-sydney-c67598f4",
+  "name": "University of Sydney",
+  "country_code": "AU",
+  "website": "http://sydney.edu.au/",
+  "qs_rank": 25
+ },
+ {
+  "id": "c0386da4-95a0-567a-8f70-81b33c5c7f06",
+  "slug": "university-of-queensland-c0386da4",
+  "name": "University of Queensland",
+  "country_code": "AU",
+  "website": "http://www.uq.edu.au/",
+  "qs_rank": 40
+ },
+ {
+  "id": "a74d45a9-657e-514c-ac03-c9d2f9200640",
+  "slug": "the-hong-kong-polytechnic-university-a74d45a9",
+  "name": "The Hong Kong Polytechnic University",
+  "country_code": "HK",
+  "website": "https://www.polyu.edu.hk/",
+  "qs_rank": 50
+ },
+ {
+  "id": "cc300fc2-3770-5383-a663-b1ec31311b4d",
+  "slug": "new-york-university-cc300fc2",
+  "name": "New York University",
+  "country_code": "US",
+  "website": "http://www.nyu.edu/",
+  "qs_rank": 55
+ },
+ {
+  "id": "6941fb87-c482-5aa1-9f3c-a5de7cf736dc",
+  "slug": "university-of-auckland-6941fb87",
+  "name": "University of Auckland",
+  "country_code": "NZ",
+  "website": "http://www.auckland.ac.nz/",
+  "qs_rank": 65
+ },
+ {
+  "id": "4b7a7f67-a5fa-5660-a95b-87588748c8e4",
+  "slug": "university-of-warwick-4b7a7f67",
+  "name": "University of Warwick",
+  "country_code": "GB",
+  "website": "http://www.warwick.ac.uk/",
+  "qs_rank": 68
+ },
+ {
+  "id": "b3a81d8c-44ec-56d8-aa5f-b58d5fce6bfd",
+  "slug": "sorbonne-universite-b3a81d8c",
+  "name": "Sorbonne Université",
+  "country_code": "FR",
+  "website": "https://www.sorbonne-universite.fr",
+  "qs_rank": 72
+ },
+ {
+  "id": "eec543ea-8898-575e-a968-7faa90285317",
+  "slug": "kth-royal-institute-of-technology-eec543ea",
+  "name": "KTH Royal Institute of Technology",
+  "country_code": "SE",
+  "website": "http://www.kth.se/",
+  "qs_rank": 78
+ },
+ {
+  "id": "3c3e72ae-5e23-550f-8280-25603d083bb5",
+  "slug": "the-university-of-sheffield-3c3e72ae",
+  "name": "The University of Sheffield",
+  "country_code": "GB",
+  "website": "https://www.sheffield.ac.uk/",
+  "qs_rank": 82
+ },
+ {
+  "id": "75f1a39c-5876-5365-a4e5-4f8190028c13",
+  "slug": "uppsala-university-75f1a39c",
+  "name": "Uppsala University",
+  "country_code": "SE",
+  "website": "http://www.uu.se/",
+  "qs_rank": 87
+ },
+ {
+  "id": "e2e9494c-968c-55f4-8889-2ec1ac65fbdd",
+  "slug": "university-of-copenhagen-e2e9494c",
+  "name": "University of Copenhagen",
+  "country_code": "DK",
+  "website": "http://www.ku.dk/",
+  "qs_rank": 90
+ },
+ {
+  "id": "35a032fc-f24f-5a50-92ed-b818fca7f222",
+  "slug": "university-college-dublin-35a032fc",
+  "name": "University College Dublin",
+  "country_code": "IE",
+  "website": "http://www.ucd.ie/",
+  "qs_rank": 100
+ },
+ {
+  "id": "35ce761b-adcc-5c73-8bc4-a358b418afa6",
+  "slug": "technical-university-of-denmark-35ce761b",
+  "name": "Technical University of Denmark",
+  "country_code": "DK",
+  "website": "http://www.dtu.dk/",
+  "qs_rank": 105
+ },
+ {
+  "id": "a3e5ea6a-0e01-58d9-918a-9d90e12e575b",
+  "slug": "university-of-wisconsin-madison-a3e5ea6a",
+  "name": "University of Wisconsin-Madison",
+  "country_code": "US",
+  "website": "http://www.wisc.edu/",
+  "qs_rank": 110
+ },
+ {
+  "id": "5374c3c7-b54c-5f3e-bc82-39b7babedccf",
+  "slug": "university-of-california-davis-5374c3c7",
+  "name": "University of California-Davis",
+  "country_code": "US",
+  "website": "http://www.ucdavis.edu/",
+  "qs_rank": 114
+ },
+ {
+  "id": "710661ab-60ec-57bf-84bc-aa0b1e256a12",
+  "slug": "leiden-university-710661ab",
+  "name": "Leiden University",
+  "country_code": "NL",
+  "website": "http://www.leiden.edu/",
+  "qs_rank": 119
+ },
+ {
+  "id": "72c8eb2c-4178-5106-b3c2-a72e73dc074c",
+  "slug": "georgia-institute-of-technology-72c8eb2c",
+  "name": "Georgia Institute of Technology-Main Campus",
+  "country_code": "US",
+  "website": "http://www.gatech.edu/",
+  "qs_rank": 123
+ },
+ {
+  "id": "f68b940c-61ed-5be0-96e9-d70422a3f8bf",
+  "slug": "indian-institute-of-technology-bombay-f68b940c",
+  "name": "Indian Institute of Technology, Bombay",
+  "country_code": "IN",
+  "website": "http://www.iitb.ac.in/",
+  "qs_rank": 129
+ },
+ {
+  "id": "d038c396-227a-555b-b91c-9a0e1587e0c6",
+  "slug": "university-of-liverpool-d038c396",
+  "name": "University of Liverpool",
+  "country_code": "GB",
+  "website": "https://www.liverpool.ac.uk/",
+  "qs_rank": 139
+ },
+ {
+  "id": "55f4ba6f-3df3-5ee2-ac3a-d6e9e0a2b2fa",
+  "slug": "university-of-western-ontario-55f4ba6f",
+  "name": "University of Western Ontario",
+  "country_code": "CA",
+  "website": "http://www.uwo.ca/",
+  "qs_rank": 142
+ },
+ {
+  "id": "a002ead6-250c-572d-8773-015f9419b016",
+  "slug": "stockholm-university-a002ead6",
+  "name": "Stockholm University",
+  "country_code": "SE",
+  "website": "http://www.su.se/",
+  "qs_rank": 147
+ },
+ {
+  "id": "662ab476-2ba7-5439-bb0c-c7bf3f442c8d",
+  "slug": "university-of-basel-662ab476",
+  "name": "University of Basel",
+  "country_code": "CH",
+  "website": "http://www.unibas.ch/",
+  "qs_rank": 150
+ },
+ {
+  "id": "50c3f8cc-8595-5c76-b3cc-115e502bb710",
+  "slug": "university-of-north-carolina-at-chapel-hill-50c3f8cc",
+  "name": "University of North Carolina at Chapel Hill",
+  "country_code": "US",
+  "website": "http://www.unc.edu/",
+  "qs_rank": 158
+ },
+ {
+  "id": "9bff146e-eafa-54b3-a7b2-9d31faf1642d",
+  "slug": "universite-de-montreal-9bff146e",
+  "name": "Université de Montréal",
+  "country_code": "CA",
+  "website": "http://www.umontreal.ca/",
+  "qs_rank": 162
+ },
+ {
+  "id": "2bbd21b7-1de0-5911-ab9b-c954ac504ba6",
+  "slug": "wuhan-university-2bbd21b7",
+  "name": "Wuhan University",
+  "country_code": "CN",
+  "website": "http://www.whu.edu.cn/",
+  "qs_rank": 165
+ },
+ {
+  "id": "a2f62835-d825-5217-8e59-90ad384c3f8c",
+  "slug": "indian-institute-of-technology-madras-a2f62835",
+  "name": "Indian Institute of Technology, Madras",
+  "country_code": "IN",
+  "website": "http://www.iitm.ac.in/",
+  "qs_rank": 170
+ },
+ {
+  "id": "94b2dc51-40ef-5c82-846f-1d95690d7cf2",
+  "slug": "university-of-california-santa-barbara-94b2dc51",
+  "name": "University of California-Santa Barbara",
+  "country_code": "US",
+  "website": "http://www.ucsb.edu/",
+  "qs_rank": 173
+ },
+ {
+  "id": "9944c4eb-317b-540e-9abc-9c1942c6ae7c",
+  "slug": "emory-university-9944c4eb",
+  "name": "Emory University",
+  "country_code": "US",
+  "website": "http://www.emory.edu/",
+  "qs_rank": 182
+ },
+ {
+  "id": "4642dac4-82a7-5e31-ba21-c6fef606f411",
+  "slug": "technische-universitat-dresden-4642dac4",
+  "name": "Technische Universität Dresden",
+  "country_code": "DE",
+  "website": "https://tu-dresden.de",
+  "qs_rank": 185
+ },
+ {
+  "id": "da0be24d-7bc2-54bf-aceb-f9b40b808c6d",
+  "slug": "ohio-state-university-columbus-da0be24d",
+  "name": "Ohio State University-Main Campus",
+  "country_code": "US",
+  "website": "https://www.osu.edu/",
+  "qs_rank": 190
+ },
+ {
+  "id": "9f02a56c-9ab8-5777-abaf-de35e9192d5f",
+  "slug": "tu-wien-9f02a56c",
+  "name": "TU Wien",
+  "country_code": "AT",
+  "website": "https://www.tuwien.at",
+  "qs_rank": 191
+ },
+ {
+  "id": "4285e06f-015e-58b3-915e-e4a47128638f",
+  "slug": "university-of-otago-4285e06f",
+  "name": "University of Otago",
+  "country_code": "NZ",
+  "website": "http://www.otago.ac.nz/",
+  "qs_rank": 197
+ },
+ {
+  "id": "0e43791e-b46f-5ae7-add6-e512644375e3",
+  "slug": "loughborough-university-0e43791e",
+  "name": "Loughborough University",
+  "country_code": "GB",
+  "website": "http://www.lboro.ac.uk/",
+  "qs_rank": 203
+ },
+ {
+  "id": "24ac60cd-23ee-52e3-b391-359849041a9e",
+  "slug": "universitas-gadjah-mada-24ac60cd",
+  "name": "Universitas Gadjah Mada",
+  "country_code": "ID",
+  "website": "http://www.ugm.ac.id/",
+  "qs_rank": 206
+ },
+ {
+  "id": "0685b063-ce42-5129-b839-c71e3b46211f",
+  "slug": "tel-aviv-university-0685b063",
+  "name": "Tel Aviv University",
+  "country_code": "IL",
+  "website": "https://english.tau.ac.il/",
+  "qs_rank": 208
+ },
+ {
+  "id": "b719e149-7073-5173-a435-791b55891294",
+  "slug": "universite-de-lausanne-b719e149",
+  "name": "Université de Lausanne",
+  "country_code": "CH",
+  "website": "http://www.unil.ch/",
+  "qs_rank": 212
+ },
+ {
+  "id": "105c95ae-9e57-53d4-be2c-300449d80e35",
+  "slug": "massey-university-105c95ae",
+  "name": "Massey University",
+  "country_code": "NZ",
+  "website": "http://www.massey.ac.nz/",
+  "qs_rank": 215
+ },
+ {
+  "id": "fa22ef60-0123-584c-b367-cc48cff224d1",
+  "slug": "indian-institute-of-technology-kanpur-fa22ef60",
+  "name": "Indian Institute of Technology, Kanpur",
+  "country_code": "IN",
+  "website": "http://www.iitk.ac.in/",
+  "qs_rank": 221
+ },
+ {
+  "id": "30573a6d-9a4d-582f-9089-9c360793f28e",
+  "slug": "universite-libre-de-bruxelles-30573a6d",
+  "name": "Université Libre de Bruxelles",
+  "country_code": "BE",
+  "website": "https://www.ulb.be/",
+  "qs_rank": 227
+ },
+ {
+  "id": "3c93b208-6d77-51ff-9a3a-d9a201477355",
+  "slug": "la-trobe-university-3c93b208",
+  "name": "La Trobe University",
+  "country_code": "AU",
+  "website": "http://www.latrobe.edu.au/",
+  "qs_rank": 233
+ },
+ {
+  "id": "a0d2f406-7c53-5645-921f-ecb098e0a9be",
+  "slug": "university-of-rochester-a0d2f406",
+  "name": "University of Rochester",
+  "country_code": "US",
+  "website": "http://www.rochester.edu/",
+  "qs_rank": 236
+ },
+ {
+  "id": "32d95a2a-7d14-572d-8c70-bc04da01f060",
+  "slug": "central-european-university-32d95a2a",
+  "name": "Central European University",
+  "country_code": "AT",
+  "website": "https://www.ceu.edu",
+  "qs_rank": 239
+ },
+ {
+  "id": "15ff9275-1c2a-5820-9bab-4da296371714",
+  "slug": "albert-ludwigs-universitat-freiburg-15ff9275",
+  "name": "Albert-Ludwigs-Universität Freiburg",
+  "country_code": "DE",
+  "website": "http://www.uni-freiburg.de/",
+  "qs_rank": 245
+ },
+ {
+  "id": "c6b8935e-0e3b-522a-a5f0-03a1bc6c97e8",
+  "slug": "university-of-massachusetts-at-amherst-c6b8935e",
+  "name": "University of Massachusetts-Amherst",
+  "country_code": "US",
+  "website": "http://www.umass.edu/",
+  "qs_rank": 247
+ },
+ {
+  "id": "16a83abd-6892-5cac-b5b5-d704b7d49229",
+  "slug": "taylor-s-university-16a83abd",
+  "name": "Taylor's University",
+  "country_code": "MY",
+  "website": "https://university.taylors.edu.my/",
+  "qs_rank": 253
+ },
+ {
+  "id": "41a5c110-cdd3-57e4-bad5-8bfe253f3b0a",
+  "slug": "universidad-nacional-de-colombia-41a5c110",
+  "name": "Universidad Nacional de Colombia",
+  "country_code": "CO",
+  "website": "http://www.unal.edu.co/",
+  "qs_rank": 259
+ },
+ {
+  "id": "fb839fd6-8704-5720-a463-2876d775b8f5",
+  "slug": "universitat-pompeu-fabra-fb839fd6",
+  "name": "Universitat Pompeu Fabra",
+  "country_code": "ES",
+  "website": "https://www.upf.edu",
+  "qs_rank": 263
+ },
+ {
+  "id": "731c32c4-6abe-59b8-bfe1-c0df705c0612",
+  "slug": "universitat-koln-731c32c4",
+  "name": "Universität Köln",
+  "country_code": "DE",
+  "website": "http://www.uni-koeln.de/",
+  "qs_rank": 269
+ },
+ {
+  "id": "53208e9d-6b64-5e42-9d07-d0849a9beeda",
+  "slug": "university-of-galway-53208e9d",
+  "name": "University of Galway",
+  "country_code": "IE",
+  "website": "https://www.universityofgalway.ie/",
+  "qs_rank": 275
+ },
+ {
+  "id": "4033469f-02ba-5007-89dd-40c796f8a5cb",
+  "slug": "university-of-pittsburgh-4033469f",
+  "name": "University of Pittsburgh-Pittsburgh Campus",
+  "country_code": "US",
+  "website": "http://www.pitt.edu/",
+  "qs_rank": 279
+ },
+ {
+  "id": "a0ed766a-ac85-5cc2-96d5-321d30e8b292",
+  "slug": "university-of-southern-denmark-sdu-a0ed766a",
+  "name": "University of Southern Denmark - SDU",
+  "country_code": "DK",
+  "website": "http://www.sdu.dk/",
+  "qs_rank": 283
+ },
+ {
+  "id": "26c4ebed-4686-5089-864f-6771795bb5d8",
+  "slug": "swinburne-university-of-technology-26c4ebed",
+  "name": "Swinburne University of Technology",
+  "country_code": "AU",
+  "website": "https://www.swinburne.edu.au/",
+  "qs_rank": 291
+ },
+ {
+  "id": "58793794-34c5-5b71-b013-4388d7cfb907",
+  "slug": "university-of-notre-dame-58793794",
+  "name": "University of Notre Dame",
+  "country_code": "US",
+  "website": "http://www.nd.edu/",
+  "qs_rank": 294
+ },
+ {
+  "id": "89ed6caa-1b3c-54a8-b6b8-10ce5a8679af",
+  "slug": "university-of-colorado-at-boulder-89ed6caa",
+  "name": "University of Colorado Boulder",
+  "country_code": "US",
+  "website": "http://www.colorado.edu/",
+  "qs_rank": 299
+ },
+ {
+  "id": "36f6d62c-f9a7-5a39-b4ee-d2b49cc75344",
+  "slug": "universidad-carlos-iii-de-madrid-36f6d62c",
+  "name": "Universidad Carlos III de Madrid",
+  "country_code": "ES",
+  "website": "http://www.uc3m.es/",
+  "qs_rank": 301
+ },
+ {
+  "id": "bdb1f2b9-ffd0-5bac-9ba5-ca63a083289b",
+  "slug": "sultan-qaboos-university-bdb1f2b9",
+  "name": "Sultan Qaboos University",
+  "country_code": "OM",
+  "website": "http://www.squ.edu.om/",
+  "qs_rank": 306
+ },
+ {
+  "id": "09917ea1-c3bc-548b-9542-fa434bec531a",
+  "slug": "kyung-hee-university-09917ea1",
+  "name": "Kyung Hee University",
+  "country_code": "KR",
+  "website": "http://www.kyunghee.edu/",
+  "qs_rank": 309
+ },
+ {
+  "id": "04130047-2dde-5f12-bd18-d6472712e701",
+  "slug": "university-of-tasmania-04130047",
+  "name": "University of Tasmania",
+  "country_code": "AU",
+  "website": "https://www.utas.edu.au",
+  "qs_rank": 311
+ },
+ {
+  "id": "4a913ea2-abf9-5107-b6cc-86e5516b9c0f",
+  "slug": "l-n-gumilyov-eurasian-national-university-4a913ea2",
+  "name": "L.N. Gumilyov Eurasian National University",
+  "country_code": "KZ",
+  "website": "http://www.enu.kz/",
+  "qs_rank": 317
+ },
+ {
+  "id": "c0bfd9bb-3a59-5d48-8a4f-a455af468632",
+  "slug": "university-of-tehran-c0bfd9bb",
+  "name": "University of Tehran",
+  "country_code": "IR",
+  "website": "http://www.ut.ac.ir/",
+  "qs_rank": 322
+ },
+ {
+  "id": "fcbd953c-7b98-5226-beb5-4082969d9350",
+  "slug": "universidade-nova-de-lisboa-fcbd953c",
+  "name": "Universidade Nova de Lisboa",
+  "country_code": "PT",
+  "website": "http://www.unl.pt/",
+  "qs_rank": 327
+ },
+ {
+  "id": "d8d9923e-8437-5166-ab83-1610792d1967",
+  "slug": "indian-institute-of-technology-guwahati-d8d9923e",
+  "name": "Indian Institute of Technology Guwahati",
+  "country_code": "IN",
+  "website": "https://iitg.ac.in",
+  "qs_rank": 334
+ },
+ {
+  "id": "07277532-423a-5f50-815a-c8cc190fdd80",
+  "slug": "technion-israel-institute-of-technology-07277532",
+  "name": "Technion - Israel Institute of Technology",
+  "country_code": "IL",
+  "website": "http://www.technion.ac.il/",
+  "qs_rank": 334
+ },
+ {
+  "id": "1f395ae1-5b5e-50f0-882b-56186c66d614",
+  "slug": "university-of-oulu-1f395ae1",
+  "name": "University of Oulu",
+  "country_code": "FI",
+  "website": "http://www.oulu.fi/",
+  "qs_rank": 342
+ },
+ {
+  "id": "1375fcab-d98a-53ba-af83-3f09558b1ee4",
+  "slug": "national-taiwan-university-of-science-and-technology-1375fcab",
+  "name": "National Taiwan University of Science and Technology",
+  "country_code": "TW",
+  "website": "http://www.ntust.edu.tw/",
+  "qs_rank": 345
+ },
+ {
+  "id": "167202e2-fb1f-5826-858e-0f841dfdacdf",
+  "slug": "cairo-university-167202e2",
+  "name": "Cairo University",
+  "country_code": "EG",
+  "website": "http://www.cu.edu.eg/",
+  "qs_rank": 347
+ },
+ {
+  "id": "9915b963-b19f-55f6-8dd8-5067fa6d26d1",
+  "slug": "tsukuba-university-9915b963",
+  "name": "Tsukuba University",
+  "country_code": "JP",
+  "website": "http://www.tsukuba.ac.jp/",
+  "qs_rank": 350
+ },
+ {
+  "id": "f35c594a-8de3-586d-b5a0-d2fa7eeacfe3",
+  "slug": "national-technical-university-of-athens-f35c594a",
+  "name": "National Technical University of Athens",
+  "country_code": "GR",
+  "website": "https://www.ntua.gr/",
+  "qs_rank": 355
+ },
+ {
+  "id": "f1f09b3b-965c-56a5-9b96-dfb54d7483ce",
+  "slug": "university-of-liege-f1f09b3b",
+  "name": "University of Liège",
+  "country_code": "BE",
+  "website": "https://uliege.be/",
+  "qs_rank": 364
+ },
+ {
+  "id": "fe01fef8-4798-5e0b-b7b6-3d1cb3b1e8ee",
+  "slug": "western-sydney-university-fe01fef8",
+  "name": "Western Sydney University",
+  "country_code": "AU",
+  "website": "https://www.westernsydney.edu.au/",
+  "qs_rank": 370
+ },
+ {
+  "id": "5e2c8d0e-394c-543b-9d2e-2176866fd088",
+  "slug": "sharif-university-of-technology-5e2c8d0e",
+  "name": "Sharif University of Technology",
+  "country_code": "IR",
+  "website": "https://www.sharif.ir",
+  "qs_rank": 375
+ },
+ {
+  "id": "ad49510e-30fc-58dd-9cd9-0b45edf6758c",
+  "slug": "gwangju-institute-of-science-and-technology-ad49510e",
+  "name": "Gwangju Institute of Science and Technology",
+  "country_code": "KR",
+  "website": "http://www.gist.ac.kr/",
+  "qs_rank": 379
+ },
+ {
+  "id": "df1296f4-63d0-57c4-aadc-9fb97656eaf0",
+  "slug": "universita-cattolica-del-sacro-cuore-df1296f4",
+  "name": "Università Cattolica del Sacro Cuore",
+  "country_code": "IT",
+  "website": "https://www.unicatt.eu",
+  "qs_rank": 388
+ },
+ {
+  "id": "dec56bcd-1a03-5b64-8395-d8fe3a330641",
+  "slug": "universidad-politecnica-de-cataluna-dec56bcd",
+  "name": "Universidad Politécnica de Cataluna",
+  "country_code": "ES",
+  "website": "http://www.upc.edu/",
+  "qs_rank": 392
+ },
+ {
+  "id": "83031b3d-bda6-5b21-9cb2-7424d85cadee",
+  "slug": "university-of-pavia-83031b3d",
+  "name": "University of Pavia",
+  "country_code": "IT",
+  "website": "https://portale.unipv.it/it",
+  "qs_rank": 395
+ },
+ {
+  "id": "0dbf168e-db31-5d11-8535-b9ab25438314",
+  "slug": "university-of-california-riverside-0dbf168e",
+  "name": "University of California-Riverside",
+  "country_code": "US",
+  "website": "http://www.ucr.edu/",
+  "qs_rank": 398
+ },
+ {
+  "id": "0967e522-0906-507c-92a8-0ee1820ecd37",
+  "slug": "university-of-florence-0967e522",
+  "name": "University of Florence",
+  "country_code": "IT",
+  "website": "http://www.unifi.it/",
+  "qs_rank": 404
+ },
+ {
+  "id": "d569a38c-3ffc-590c-80ed-48b1621394e7",
+  "slug": "the-education-university-of-hong-kong-d569a38c",
+  "name": "The Education University of Hong Kong",
+  "country_code": "HK",
+  "website": "https://www.eduhk.hk/",
+  "qs_rank": 406
+ },
+ {
+  "id": "4b97e3f1-1c56-513b-ac25-8fcf0d01f383",
+  "slug": "auckland-university-of-technology-4b97e3f1",
+  "name": "Auckland University of Technology",
+  "country_code": "NZ",
+  "website": "http://www.aut.ac.nz/",
+  "qs_rank": 410
+ }
+]

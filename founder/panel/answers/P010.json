@@ -1,0 +1,13 @@
+{
+  "id": "P010",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "My neighbour paid an agency and got nothing, and this is a website I've never heard of asking for my card online. My cousin's family already went through Korea and Germany. I'll ask them for free, and maybe use the free search part.",
+  "objection": "Who's behind this? There's no person I can call or meet. If something goes wrong I'm chasing a refund from a website in another country, and $99 is almost a week of my pay.",
+  "would_change_my_mind": "Someone I know personally, like my cousin's family or a parent from my child's school, telling me they used it and it worked, and being able to talk to a real person in Russian or Uzbek before I pay.",
+  "price_too_cheap": 10,
+  "price_cheap": 30,
+  "price_expensive": 60,
+  "price_too_expensive": 100
+}

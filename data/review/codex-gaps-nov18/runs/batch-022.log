@@ -1,0 +1,241 @@
+OpenAI Codex v0.169.0
+--------
+workdir: /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+model: gpt-6-luna
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: high
+reasoning summaries: none
+session id: 01a1ee7e-1d56-7861-9cee-b3c4b633d18e
+--------
+user
+You are a careful admissions-data researcher. For each university below, find facts for an
+INTERNATIONAL applicant to a FIRST-YEAR BACHELOR'S degree starting in autumn 2027 (or the nearest
+published cycle). Use the live web. Rules:
+
+- Official sources only: the university's own website (its domain or subdomains), the national
+  application service (UCAS, Common App, OUAC, uni-assist, Studyinkorea, etc.) or a government
+  statistics office. Never use rankings sites, forums, agencies, Wikipedia or blogs.
+- Every value needs the exact page URL where you read it (source_url). If you could not verify a
+  value on an official page, leave it out (null or an empty list). Never guess or estimate.
+- english: the lowest overall score accepted for undergraduate entry, per test (IELTS Academic
+  overall, TOEFL iBT total, Duolingo, PTE). If programmes differ, give the general/lowest common
+  university minimum and say so in detail (e.g. "6.5 overall, no band below 6.0; some
+  programmes higher").
+- tuition: the yearly tuition for international (non-EU / overseas) undergraduates in the local
+  currency. If it varies by programme give amount = lowest and amount_max = highest, and the
+  academic_year the fee applies to (e.g. "2026/27"). If tuition is free, amount = 0.
+- application_fee: for international first-year applicants, local currency.
+- deadlines: the main 2027-entry first-year deadlines (ISO date YYYY-MM-DD) with the route
+  (e.g. "Common App, Regular Decision", "UCAS", "university portal"). Only dates actually
+  published; if only the 2026-entry date is published, include it and put "2026 entry" in title.
+- sat: policy for international applicants; p25/p75 total SAT only if the university publishes
+  them (Common Data Set or admissions profile).
+- acceptance_rate: only if officially published (CDS, admissions statistics page).
+- notes: one short line on anything important (e.g. "Foundation year required for 11-year
+  school certificates"), else "".
+
+Spend effort on the facts students need most: English minimum, tuition, deadlines. Keep each
+detail under 160 characters. Return only the JSON that matches the schema; use each
+university's id exactly as given.
+
+Universities:
+- id: dba5fd6f-9afd-5011-aab8-7d0e6cb6ac2a | Sungkyunkwan University | Suwon, KR | http://www.skku.edu/
+- id: 04cf5b15-066c-5320-848e-44bd11bb8aa8 | University of Qatar | Doha, QA | http://www.qu.edu.qa/
+- id: a3e5ea6a-0e01-58d9-918a-9d90e12e575b | University of Wisconsin-Madison | Madison, US | http://www.wisc.edu/
+- id: 21e26f0d-fd30-521e-a9f3-fb97b8452d78 | University of Roma "La Sapienza" | Rome, IT | http://www.uniroma1.it/
+codex
+I’ll verify the current official admissions pages for each university and use the nearest published cycle where 2027 details are not available. I’m applying the CollegeStat research/toolstack guidance and checking saved project memory first.
+exec
+/bin/zsh -lc 'cat /Users/likeanew/.agents/skills/lemma/SKILL.md && cat /Users/likeanew/.agents/skills/agent-toolstack/SKILL.md' in /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+ succeeded in 0ms:
+---
+name: lemma
+description: Persistent cross-session memory for AI agents via MCP. BEFORE starting ANY task (coding, debugging, refactoring, research, docs, optimization — any language), FIRST call memory_read to load what you already know so you never re-derive or re-explore known facts. AFTER finishing, call memory_add to persist new findings and session_attempt for dead ends — unsaved knowledge is lost permanently. Distills reusable guides from experience.
+---
+
+<!-- lemma:skill:v=0.21.0 -->
+
+# Lemma — Persistent Memory & Learning
+
+Lemma is a persistent memory server for AI agents over the Model Context Protocol.
+Every session starts blank — knowledge survives ONLY through tool calls. If you
+learn something and don't save it (`memory_add`), it is gone permanently.
+
+## Workflow
+1. **RECALL** — `memory_read` / `semantic_search`: load what's already known for this
+   project/task. Never re-explore code or re-derive facts that are already saved.
+2. **ACT** — do the task.
+3. **PERSIST** — `memory_add` for new insights; `guide_practice` for guides applied;
+   `session_attempt` for abandoned/dead-end approaches (the most valuable records).
+
+## Two knowledge layers
+- **Memory fragments** (`memory_read` / `memory_add`): atomic facts. Types: `fact`,
+  `pattern`, `lesson`, `warning`, `context`. Confidence evolves with use and feedback.
+- **Guides** (`guide_get` / `guide_distill` / `guide_practice`): procedural skills
+  distilled from fragments. Track usage count + success/failure rate.
+Pipeline: `experience -> memory_add -> pattern/lesson -> guide_distill -> guide_practice`.
+
+## Tools at a glance
+- **Recall & search**: `memory_read`, `semantic_search`, `memory_library` (full
+  snapshot + maintenance signals), `memory_stats`, `memory_audit`.
+- **Write & maintain**: `memory_add`, `memory_update`, `memory_forget`,
+  `memory_merge`, `memory_relate` (supports / contradicts / supersedes / related_to),
+  `memory_feedback`.
+- **Guides**: `guide_get`, `guide_create`, `guide_distill`, `guide_practice`,
+  `guide_update`, `guide_forget`, `guide_merge`.
+- **Sessions & reasoning**: `session_start`, `session_end`, `session_attempt`,
+  `session_stats`, `suggestion_respond`.
+- **Background intelligence**: `conflict_scan`, `proactive_analysis`,
+  `project_analytics` (run automatically; act on signals when sensible).
+
+## Writing a fragment
+```
+## [Topic Title]
+### Context
+[1-2 sentences: what and why it matters]
+### [Content Section]
+- [Key fact 1]
+- [Key fact 2]
+### Rules (optional)
+- [Absolute constraint]
+```
+One idea per fragment, 30-2000 chars, structured markdown (not prose). **Store
+fragments in ENGLISH** (required for search/retrieval). Never ask permission to save.
+
+## Background intelligence
+Conflict detection, distill/merge/refine suggestions, and auto-linking run
+automatically. From the CLI, `lemma -lib` prints a full knowledge-base snapshot
+and `lemma -vis` launches a visualizer.
+---
+name: agent-toolstack
+description: Use when working on the user's AI coding setup, or when a task involves OpenCode, MiMoCode, MCP servers, UI/design generation, animation, icons, browser testing, databases, or the CollegeStat project. Loads the verified MCP toolstack, config locations, known gotchas, and project context so you do not re-derive or re-explore what is already known.
+---
+
+# Agent Toolstack — Shared Knowledge (OpenCode + MiMoCode)
+
+Curated facts about this machine's AI coding setup. Read this before designing UI,
+wiring MCP servers, or touching config. Verified = checked against the live system
+(2026-10-17). Unverified = reported by a source, not confirmed here.
+
+## Environment
+
+- macOS (darwin), user `likeanew`, Apple Silicon.
+- Primary project: `/Users/likeanew/Documents/CollegeStat`
+  - `collegestat/` — the main app (48 entries, modified Oct 15).
+  - `AI-Setup/` — scratch workspace (empty as of 2026-10-17).
+- Two coding agents installed side by side: **OpenCode** (`~/.config/opencode`) and
+  **MiMoCode** (`~/.config/mimocode`, binary `~/.mimocode/bin/mimo`, v0.1.15).
+- Other agent configs present: `~/.codex` (Codex, 3.6 GB — large), `~/.cursor`,
+  `~/.gemini`, `~/.copilot`, `~/.agents`.
+
+## MCP config format (identical in OpenCode and MiMoCode)
+
+```jsonc
+{
+  "$schema": "https://opencode.ai/config.json",          // or https://mimo.xiaomi.com/mimocode/config.json
+  "mcp": {
+    "name":  { "type": "local",  "command": ["npx", "-y", "pkg"] },
+    "docs":  { "type": "remote", "url": "https://host/mcp" },
+    "off":   { "enabled": false }                          // disable without deleting
+  }
+}
+```
+
+**Do NOT use `"mcp_servers"` or a `command` string + `args` array.** That format is
+wrong for both tools. The correct key is `"mcp"` and `command` is an array.
+
+## Verified MCP toolstack (installed in both agents)
+
+| Server | What it gives you | When to use |
+|---|---|---|
+| `inspo` | 2,320 real-site captures: palettes, fonts, macrostructures, 68 reference components with copy-pasteable JSX. stdio via `inspo-mcp`; hosted `https://inspomcp.dev/api/mcp` also works. | Any UI/design task — call `recommend(brief)` first |
+| `shadcn` | Browse/view/install real shadcn/ui + any registry component. `npx shadcn@latest mcp`. | Component work — prevents hallucinated component code |
+| `context7` | Up-to-date library docs + code examples. Remote `https://mcp.context7.com/mcp`. | When unsure of an API/version |
+| `animotion` | 745 hand-crafted CSS3 animations + 9,740 real SVG icons (Lucide/Tabler/Heroicons/Bootstrap). `npx animotion-mcp`. | Animation + icons — kills AI-looking generated icons |
+| `gsap-master` | GSAP expert: intent→60fps code, plugins (SplitText, ScrollTrigger, DrawSVG), debugging, perf optimizer. `npx @vinhnguyen/gsap-mcp`. | Complex animation, scroll systems, text reveals |
+| `playwright` | Browser automation, screenshots, accessibility snapshots, speed/QA checks. Runs `--headless --isolated`. | Visual verification, E2E, performance |
+| `sequential-thinking` | Structured step-by-step reasoning. | Complex architecture / debugging |
+| `lemma` | Persistent local memory over MCP (confidence decay, guides, JSONL/SQLite). `npx lemma-mcp`. | Cross-session recall; `memory_read` first, `memory_add` after |
+| `supabase` / `prisma` / `github` | DB + GitHub. Remote, **require OAuth login** (`mimo mcp auth <name>`). | Backend / repo work once authenticated |
+
+### MCP gotchas (verified from the live log)
+
+- The 3 auth-required servers spam ~600 WARN lines per session until logged in.
+  Run `mimo mcp auth supabase` (and `prisma`, `github`) or set `"enabled": false`.
+- `shadcn` logs `MCP error -32601: Method not found` for `resources` — harmless;
+  the server exposes tools only, not the resources method OpenCode/MiMo probe.
+- Local servers spawn via `npx`; first run downloads the package (a few seconds).
+
+## Config & skill locations
+
+**OpenCode**
+- Global config: `~/.config/opencode/opencode.jsonc`
+- Skills: `~/.agents/skills/<name>/SKILL.md`, `~/.config/opencode/skills/<name>/SKILL.md`,
+  `.opencode/skills/`, `.claude/skills/` (project), plus `~/.claude/skills/`
+- Verify: `opencode mcp list`, `opencode debug config`, `opencode reload`
+
+**MiMoCode**
+- Global config: `~/.config/mimocode/mimocode.jsonc` (JSONC, merges over defaults)
+- Project config: `<project>/.mimocode/mimocode.jsonc`
+- Skills: `~/.agents/skills/<name>/SKILL.md` (global), `<project>/.mimocode/skills/`,
+  `.agents/skills/`, `.claude/skills/`, `.codex/skills/` (brand roots opt-in via env)
+- Agents/modes: `~/.config/mimocode/agent/<name>.md` or `<project>/.mimocode/agent/<name>.md`
+- Commands: `.mimocode/command/<name>.md`
+- Memory: `~/.local/share/mimocode/memory/projects/<project>/MEMORY.md`, `.../global/MEMORY.md`
+- Verify: `mimo mcp list`, `mimo debug config`, `mimo debug skill`, `mimo agent list`
+- Default model: `mimo/mimo-auto` (free, 1M context). Models: `mimo models`.
+
+**Shared skill path:** `~/.agents/skills/` is read by BOTH agents — put cross-tool
+knowledge here (this skill lives there).
+
+## Known issues on this machine (2026-10-17)
+
+- **GitLab auth expired** — `GitLabError: 401 Unauthorized` for `gitlab/duo-chat-fable-5`.
+  Re-authenticate GitLab; token last refreshed 2026-10-06.
+- **`.codex` is 3.6 GB** — `sessions/` alone is 2.3 GB (369 rollout `.jsonl.zst`
+  files), `thread_history_1.sqlite` 592 MB. Clean old sessions if disk is tight.
+- **Stale lock files** in `~/.codex` (0-byte `.sqlite-maintenance.lock`, empty
+  `*.sqlite-wal`, empty `AGENTS.md`, `transcription-history.jsonl`). Safe to remove.
+- **`.codex-global-state.json.bak`** is a byte-identical duplicate of the live state file.
+- **No DB corruption**: `opencode.db` (140 MB) and all Codex sqlite files pass
+  `PRAGMA integrity_check` / `quick_check`.
+- **OpenCode log** is 16 MB at `~/.local/share/opencode/log/opencode.log`; rotate if large.
+
+## Tools reported by awesome-opencode but NOT installable as-is
+
+`morph-fast-apply`, `crawlberg`, `harness-memory`, `flowdeck`, `honcho`,
+`opencode-mission-control` are GitHub-only repos, not npm packages — they need manual
+clone + plugin-file placement. `@seos/*` (AISEOS) is GitHub-only and unverified.
+`@inspo/mcp-server` does not exist on npm — the correct package is `inspo-mcp`.
+
+## Working conventions
+
+- Prefer real, verified tools over generated approximations: `inspo` for design,
+  `animotion` for icons/animations, `shadcn` for components, `context7` for APIs.
+- Keep config edits minimal and targeted; preserve JSONC comments and `$schema`.
+- After editing config, reload (`opencode reload`) or restart (`mimo`) before verifying.
+- Treat API keys as secrets: never echo them into logs, diffs, or responses.
+
+web search: 
+web search: site:admission.skku.edu 2026 international undergraduate admission English proficiency tuition application fee deadline ...
+web search: 
+web search: site:admission.skku.edu/eng "2026" "Undergraduate" admission international application fee deadline ...
+web search: 
+web search: Sungkyunkwan University 2026 international undergraduate admission guide English IELTS TOPIK application fee deadline pdf official ...
+web search: 
+web search: 
+web search: 
+web search: site:admission-global.skku.edu/eng/etc/bbs_list.html "2026 Fall Undergrad" "Application period" ...
+web search: 
+web search: 
+web search: 
+web search: site:admission-global.skku.edu "International Undergraduate students admission" "150,000" ...
+web search: 
+web search: site:admissions.wisc.edu "November 1, 2026" first-year Fall 2027 deadline ...
+codex
+{"universities":[{"id":"dba5fd6f-9afd-5011-aab8-7d0e6cb6ac2a","english":[],"tuition":null,"application_fee":null,"deadlines":[{"title":"2027 Spring first-year application (nearest published cycle)","due_at":"2026-08-21","route":"SKKU online application","source_url":"https://admission-global.skku.edu/eng/etc/bbs_list.html?bbsid=global_notice_re_eng&bltn_seq=53798&ctg_cd=Undergraduate&mode=view"}],"sat":null,"acceptance_rate":null,"notes":"English requirements vary by track and major; 2027 Spring is the nearest published freshman cycle."},{"id":"04cf5b15-066c-5320-848e-44bd11bb8aa8","english":[{"test":"IELTS","minimum":5.5,"detail":"5.5 meets the minimum English competency requirement for designated colleges; some programs require 6.0.","source_url":"https://www.qu.edu.qa/en-us/students/admission/undergraduate/competency-requirements/"},{"test":"TOEFL iBT","minimum":61,"detail":"61 meets the minimum English competency requirement for designated colleges; some programs require 68.","source_url":"https://www.qu.edu.qa/en-us/students/admission/undergraduate/competency-requirements/"}],"tuition":null,"application_fee":{"amount":200,"currency":"QAR","source_url":"https://foundation.qu.edu.qa/en-us/students/admission/undergraduate/apply"},"deadlines":[{"title":"2026 entry: international online application","due_at":"2026-03-25","route":"Qatar University online admissions application","source_url":"https://www.qu.edu.qa/en-us/students/admission/undergraduate/Pages/application-timeline.aspx"},{"title":"2026 entry: international student visa and admission documents","due_at":"2026-04-02","route":"Qatar University; submit documents","source_url":"https://www.qu.edu.qa/en-us/students/admission/undergraduate/Pages/application-timeline.aspx"}],"sat":null,"acceptance_rate":null,"notes":"Tuition is charged per credit hour and varies by course; the university does not publish one annual total."},{"id":"a3e5ea6a-0e01-58d9-918a-9d90e12e575b","english":[{"test":"IELTS","minimum":6.5,"detail":"6.5 minimum overall.","source_url":"https://admissions.wisc.edu/apply-as-a-freshman/"},{"test":"TOEFL iBT","minimum":4.5,"detail":"4.5 for tests dated Jan 21, 2026 or later; 80 for earlier test dates.","source_url":"https://admissions.wisc.edu/apply-as-a-freshman/"},{"test":"Duolingo","minimum":115,"detail":"115 minimum.","source_url":"https://admissions.wisc.edu/apply-as-a-freshman/"}],"tuition":{"amount":44232.12,"amount_max":null,"currency":"USD","period":"year","academic_year":"2026/27","detail":"Full-time nonresident undergraduate tuition; excludes segregated fees.","source_url":"https://bursar.wisc.edu/tuition-and-fees/fall-2026-increase"},"application_fee":{"amount":80,"currency":"USD","source_url":"https://admissions.wisc.edu/apply-as-a-freshman/"},"deadlines":[],"sat":{"policy":"optional","p25":null,"p75":null,"source_url":"https://admissions.wisc.edu/apply-as-a-freshman/"},"acceptance_rate":null,"notes":"SAT/ACT scores are optional through Spring 2028; the current deadline page does not specify 2027-entry calendar dates."},{"id":"21e26f0d-fd30-521e-a9f3-fb97b8452d78","english":[{"test":"IELTS","minimum":5.5,"detail":"5.5 overall is the lowest published for listed English-taught bachelor's programmes; some programmes require higher scores.","source_url":"https://www.uniroma1.it/sites/default/files/field_file_allegati/academic_requirements_movein_2026-2027_web_20260608.pdf"},{"test":"TOEFL iBT","minimum":72,"detail":"72 total is the lowest published for listed English-taught bachelor's programmes; some programmes require higher scores.","source_url":"https://www.uniroma1.it/sites/default/files/field_file_allegati/academic_requirements_movein_2026-2027_web_20260608.pdf"},{"test":"PTE Academic","minimum":42,"detail":"42 is the lowest published for listed English-taught bachelor's programmes; some programmes require higher scores.","source_url":"https://www.uniroma1.it/sites/default/files/field_file_allegati/academic_requirements_movein_2026-2027_web_20260608.pdf"}],"tuition":{"amount":300,"amount_max":1500,"currency":"EUR","period":"year","academic_year":"2026/27","detail":"Bachelor's tuition varies by country of residence; published range is €300–€1,500 per year.","source_url":"https://uniroma1.web.uniroma1.it/it/pagina/international-admissions-2026-2027"},"application_fee":{"amount":30,"currency":"EUR","source_url":"https://uniroma1.web.uniroma1.it/it/pagina/international-admissions-2026-2027"},"deadlines":[{"title":"2026 entry: visa-seeking international pre-selection","due_at":"2026-05-15","route":"MoveIN pre-selection","source_url":"https://www.uniroma1.it/sites/default/files/field_file_allegati/academic_requirements_movein_2026-2027_web_20260608.pdf"}],"sat":null,"acceptance_rate":null,"notes":"Bachelor's applicants need a high-school diploma after at least 12 years of study."}]}
+tokens used
+74,166
+{"universities":[{"id":"dba5fd6f-9afd-5011-aab8-7d0e6cb6ac2a","english":[],"tuition":null,"application_fee":null,"deadlines":[{"title":"2027 Spring first-year application (nearest published cycle)","due_at":"2026-08-21","route":"SKKU online application","source_url":"https://admission-global.skku.edu/eng/etc/bbs_list.html?bbsid=global_notice_re_eng&bltn_seq=53798&ctg_cd=Undergraduate&mode=view"}],"sat":null,"acceptance_rate":null,"notes":"English requirements vary by track and major; 2027 Spring is the nearest published freshman cycle."},{"id":"04cf5b15-066c-5320-848e-44bd11bb8aa8","english":[{"test":"IELTS","minimum":5.5,"detail":"5.5 meets the minimum English competency requirement for designated colleges; some programs require 6.0.","source_url":"https://www.qu.edu.qa/en-us/students/admission/undergraduate/competency-requirements/"},{"test":"TOEFL iBT","minimum":61,"detail":"61 meets the minimum English competency requirement for designated colleges; some programs require 68.","source_url":"https://www.qu.edu.qa/en-us/students/admission/undergraduate/competency-requirements/"}],"tuition":null,"application_fee":{"amount":200,"currency":"QAR","source_url":"https://foundation.qu.edu.qa/en-us/students/admission/undergraduate/apply"},"deadlines":[{"title":"2026 entry: international online application","due_at":"2026-03-25","route":"Qatar University online admissions application","source_url":"https://www.qu.edu.qa/en-us/students/admission/undergraduate/Pages/application-timeline.aspx"},{"title":"2026 entry: international student visa and admission documents","due_at":"2026-04-02","route":"Qatar University; submit documents","source_url":"https://www.qu.edu.qa/en-us/students/admission/undergraduate/Pages/application-timeline.aspx"}],"sat":null,"acceptance_rate":null,"notes":"Tuition is charged per credit hour and varies by course; the university does not publish one annual total."},{"id":"a3e5ea6a-0e01-58d9-918a-9d90e12e575b","english":[{"test":"IELTS","minimum":6.5,"detail":"6.5 minimum overall.","source_url":"https://admissions.wisc.edu/apply-as-a-freshman/"},{"test":"TOEFL iBT","minimum":4.5,"detail":"4.5 for tests dated Jan 21, 2026 or later; 80 for earlier test dates.","source_url":"https://admissions.wisc.edu/apply-as-a-freshman/"},{"test":"Duolingo","minimum":115,"detail":"115 minimum.","source_url":"https://admissions.wisc.edu/apply-as-a-freshman/"}],"tuition":{"amount":44232.12,"amount_max":null,"currency":"USD","period":"year","academic_year":"2026/27","detail":"Full-time nonresident undergraduate tuition; excludes segregated fees.","source_url":"https://bursar.wisc.edu/tuition-and-fees/fall-2026-increase"},"application_fee":{"amount":80,"currency":"USD","source_url":"https://admissions.wisc.edu/apply-as-a-freshman/"},"deadlines":[],"sat":{"policy":"optional","p25":null,"p75":null,"source_url":"https://admissions.wisc.edu/apply-as-a-freshman/"},"acceptance_rate":null,"notes":"SAT/ACT scores are optional through Spring 2028; the current deadline page does not specify 2027-entry calendar dates."},{"id":"21e26f0d-fd30-521e-a9f3-fb97b8452d78","english":[{"test":"IELTS","minimum":5.5,"detail":"5.5 overall is the lowest published for listed English-taught bachelor's programmes; some programmes require higher scores.","source_url":"https://www.uniroma1.it/sites/default/files/field_file_allegati/academic_requirements_movein_2026-2027_web_20260608.pdf"},{"test":"TOEFL iBT","minimum":72,"detail":"72 total is the lowest published for listed English-taught bachelor's programmes; some programmes require higher scores.","source_url":"https://www.uniroma1.it/sites/default/files/field_file_allegati/academic_requirements_movein_2026-2027_web_20260608.pdf"},{"test":"PTE Academic","minimum":42,"detail":"42 is the lowest published for listed English-taught bachelor's programmes; some programmes require higher scores.","source_url":"https://www.uniroma1.it/sites/default/files/field_file_allegati/academic_requirements_movein_2026-2027_web_20260608.pdf"}],"tuition":{"amount":300,"amount_max":1500,"currency":"EUR","period":"year","academic_year":"2026/27","detail":"Bachelor's tuition varies by country of residence; published range is €300–€1,500 per year.","source_url":"https://uniroma1.web.uniroma1.it/it/pagina/international-admissions-2026-2027"},"application_fee":{"amount":30,"currency":"EUR","source_url":"https://uniroma1.web.uniroma1.it/it/pagina/international-admissions-2026-2027"},"deadlines":[{"title":"2026 entry: visa-seeking international pre-selection","due_at":"2026-05-15","route":"MoveIN pre-selection","source_url":"https://www.uniroma1.it/sites/default/files/field_file_allegati/academic_requirements_movein_2026-2027_web_20260608.pdf"}],"sat":null,"acceptance_rate":null,"notes":"Bachelor's applicants need a high-school diploma after at least 12 years of study."}]}

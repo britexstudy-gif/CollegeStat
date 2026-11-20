@@ -6,9 +6,9 @@ export function DatasetRegister() {
       <div className="eyebrow">OPEN DATA FOUNDATIONS</div>
       <h2>Traceable data. A growing picture.</h2>
       <p>
-        These datasets support the import pipeline. Coverage shown in the
-        explorer reflects published records, not the size of an external
-        dataset.
+        Open datasets we draw on. Search results only include records we
+        have checked and published, so coverage can be smaller than the
+        original dataset.
       </p>
       {datasets.map((d) => (
         <article key={d.id}>

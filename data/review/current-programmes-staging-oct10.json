@@ -1,0 +1,147 @@
+{
+  "status": "hosted_private_review_only",
+  "project_id": "yfyqikmanpgnvyfthzwe",
+  "reviewed_at": "2026-10-10",
+  "staging_sql_sha256": "5319846b31ba34cd70bfacbee909f4815067e8f4cc9f5d4409e1868da14d465d",
+  "source_candidate_sha256": "e122e1319c3cd87747782d37885747d506da851db5ff3e4a8bf6a715cc3e6cbd",
+  "verification": {
+    "offers": [
+      {
+        "id": "f871fb8b-5eee-5942-88fa-7c6c339b974b",
+        "name": "BA (Hons) in Business Management",
+        "intakes": [
+          "September"
+        ],
+        "subject": "Business Management",
+        "language": null,
+        "source_url": "https://www.wiut.uz/business-management",
+        "verified_at": null,
+        "candidate_id": "8a977e62-f183-59b5-b7b7-2fec6b4fc858",
+        "degree_level": "Bachelor",
+        "retrieved_at": "2026-10-10T11:11:50Z",
+        "source_sha256": "9109b4bf33b3c98290b894c0b21bd1cfde746dfed5d2025fe1f45c2fb7a39d48",
+        "university_id": "66666666-6666-4666-8666-666666666666",
+        "reporting_year": null,
+        "duration_months": 36,
+        "source_provider": "Westminster International University in Tashkent",
+        "verification_status": "needs_review"
+      },
+      {
+        "id": "abb01cfc-5706-53cf-8e84-f7750fe034ff",
+        "name": "BSc (Hons) in Economics",
+        "intakes": [
+          "September"
+        ],
+        "subject": "Economics",
+        "language": null,
+        "source_url": "https://www.wiut.uz/economics",
+        "verified_at": null,
+        "candidate_id": "a2075918-aac1-5476-8cab-f606a8d63e4b",
+        "degree_level": "Bachelor",
+        "retrieved_at": "2026-10-10T11:11:51Z",
+        "source_sha256": "61b17b0b2c750a513202b0bacbbb62e55fe664881e498d1198efa0337ce303d8",
+        "university_id": "66666666-6666-4666-8666-666666666666",
+        "reporting_year": null,
+        "duration_months": 36,
+        "source_provider": "Westminster International University in Tashkent",
+        "verification_status": "needs_review"
+      },
+      {
+        "id": "c4a66051-0302-590e-b506-fc56a825adc4",
+        "name": "BSc (Hons) in Finance",
+        "intakes": [
+          "September"
+        ],
+        "subject": "Finance",
+        "language": null,
+        "source_url": "https://www.wiut.uz/finance",
+        "verified_at": null,
+        "candidate_id": "dc685b65-8b1a-5a0d-bd29-fbf05c1f216f",
+        "degree_level": "Bachelor",
+        "retrieved_at": "2026-10-10T11:11:51Z",
+        "source_sha256": "07050f9ae8b7143ba98f4a3ccc31974c9664066c155e4a3e524a204f8b6993d4",
+        "university_id": "66666666-6666-4666-8666-666666666666",
+        "reporting_year": null,
+        "duration_months": 36,
+        "source_provider": "Westminster International University in Tashkent",
+        "verification_status": "needs_review"
+      },
+      {
+        "id": "0bf7ff30-b1a0-5ae6-a289-183777b77d84",
+        "name": "Computer Science",
+        "intakes": [],
+        "subject": "Computer Science",
+        "language": null,
+        "source_url": "https://uwaterloo.ca/future-students/programs/computer-science",
+        "verified_at": null,
+        "candidate_id": "fd764037-7fb2-5740-81a2-e66325133d07",
+        "degree_level": "Bachelor",
+        "retrieved_at": "2026-10-10T11:11:54Z",
+        "source_sha256": "cd01da2b15bbe2e1241aa1bc8a7d4c676dd4f24e2013ee1b2aa3ba9211e27e65",
+        "university_id": "808b96a5-0e59-5215-a2f5-e7c3c5d2785a",
+        "reporting_year": null,
+        "duration_months": null,
+        "source_provider": "University of Waterloo",
+        "verification_status": "needs_review"
+      },
+      {
+        "id": "4f77c970-262e-5748-b999-d071f400c71e",
+        "name": "Data Science",
+        "intakes": [],
+        "subject": "Data Science",
+        "language": null,
+        "source_url": "https://uwaterloo.ca/future-students/programs/data-science",
+        "verified_at": null,
+        "candidate_id": "d44e33ce-7151-5d87-a836-b1346372ef98",
+        "degree_level": "Bachelor",
+        "retrieved_at": "2026-10-10T11:11:56Z",
+        "source_sha256": "8c19040492ca843c1e59e12241c9d6c97dc396af53f54eb45d3e4a7f6e1d1e47",
+        "university_id": "808b96a5-0e59-5215-a2f5-e7c3c5d2785a",
+        "reporting_year": null,
+        "duration_months": null,
+        "source_provider": "University of Waterloo",
+        "verification_status": "needs_review"
+      },
+      {
+        "id": "37072b72-5fb3-5f7f-82a3-ef0c5095eb64",
+        "name": "Software Engineering",
+        "intakes": [],
+        "subject": "Software Engineering",
+        "language": null,
+        "source_url": "https://uwaterloo.ca/future-students/programs/software-engineering",
+        "verified_at": null,
+        "candidate_id": "d0a5d1b7-d387-5451-9267-5dd9393da3a4",
+        "degree_level": "Bachelor",
+        "retrieved_at": "2026-10-10T11:11:58Z",
+        "source_sha256": "f300f61abfac10af3ffdb4e1d646428ef001785ab86d23c501ba20e7d9b6321c",
+        "university_id": "808b96a5-0e59-5215-a2f5-e7c3c5d2785a",
+        "reporting_year": null,
+        "duration_months": null,
+        "source_provider": "University of Waterloo",
+        "verification_status": "needs_review"
+      }
+    ],
+    "existing_wiut_cs": {
+      "id": "5762602e-a256-5202-9832-75f701bab7bc",
+      "status": "verified",
+      "source_url": "https://www.wiut.uz/bsc-hons-in-computer-science"
+    },
+    "new_public_offers": 0,
+    "published_universities": 14003
+  },
+  "anonymous_visible_new_offers": 0,
+  "new_public_offers": 0,
+  "schema_changes": 0,
+  "source_records_created": 0,
+  "notes": [
+    "Existing equivalent programs/university_programs reused; no alternate tables.",
+    "Unknown reporting year/language/campus remain null; no retrieval-as-year.",
+    "Existing verified WIUT Computer Science excluded; distinct English Bachelor and Master definitions preserved.",
+    "Six official source receipts independently fetched and hashed; no tuition amount guessed.",
+    "Insert-only SQL rejects identity/source/evidence/offer conflicts and duplicate NULL-language definitions."
+  ],
+  "reproduce": [
+    "python3 scripts/ingestion/review-current-degrees-oct10.py --out outputs/current-degrees-oct10",
+    "python3 scripts/database/prepare-current-programmes-staging-oct10.py --fetch"
+  ]
+}

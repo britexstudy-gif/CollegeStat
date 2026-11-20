@@ -1,0 +1,532 @@
+/* Shared CollegeStat identity: white and blue by day; black, blue and white at night. */
+/* Tokens live in app/brand-tokens.css. */
+html body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--cs-font);
+}
+html body :is(button, input, select, textarea) {
+  font-family: var(--cs-font);
+}
+html
+  body
+  :is(.site-main, .workspace-route, .admin-route, .auth-page)
+  :is(h1, h2, h3, h4, h5, h6, em, blockquote) {
+  font-family: var(--cs-font);
+  font-style: normal;
+}
+html body .site-main::before {
+  background: var(--background);
+}
+html body .site-main::after {
+  display: none;
+}
+html.dark :is(.site-navigation, .site-dock) {
+  background: #111111ed;
+  border-color: #292929;
+  box-shadow: 0 1px 0 #ffffff08;
+}
+html.dark .site-navigation :is(.sign-in-button, .nav-dashboard) {
+  background: var(--cs-accent);
+  color: #fff;
+  border-color: var(--cs-accent);
+}
+html.dark .site-dock a[aria-current="page"],
+html.dark .site-dock a.active {
+  background: var(--cs-accent-soft);
+  color: var(--cs-accent-text);
+}
+html.dark :is(.button-secondary, .choice, .filter-choice, .filter-chip) {
+  color: #ddd;
+  border-color: #333;
+  background: #171717;
+}
+
+/* Correct the stretched badge in the supplied screenshot. A badge has one anchor. */
+html body .startup-source-strip .publisher-mark {
+  background: transparent;
+  padding: 0;
+}
+html body .startup-source-strip > div {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 20px;
+}
+html body .startup-source-strip > div > a {
+  height: auto;
+  min-height: 36px;
+  opacity: 1;
+  color: var(--foreground);
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: -0.04em;
+}
+html body .startup-source-strip > div > a > svg {
+  width: 12px;
+  color: var(--muted-foreground);
+}
+html body .admin-studio .sb-workspace-brand .sb-rail-brand {
+  font-family: var(--cs-font);
+  font-style: normal;
+}
+html body .auth-studio.oct12-auth.auth-reference .auth-art h2 {
+  font-family: var(--cs-font);
+  font-weight: 550;
+  font-style: normal;
+}
+
+/* A flat sidebar: icons and labels, no intervening section headings. */
+html body .oneprep-workspace.workspace-studio {
+  --op-bg: #fafafa;
+  --op-surface: #fff;
+  --op-surface-2: #f6f6f6;
+  --op-ink: #1a1a1a;
+  --op-muted: #707070;
+  --op-faint: #888;
+  --op-line: #e8e8e8;
+  --op-line-strong: #d8d8d8;
+  --op-blue: var(--cs-accent);
+  --op-blue-ink: var(--cs-accent);
+  --op-blue-soft: var(--cs-accent-soft);
+}
+html body .workspace-studio .oneprep-workspace__sidebar {
+  padding: 22px 12px 12px;
+  width: 232px;
+  border-right-color: var(--op-line);
+}
+html body .workspace-studio .studio-nav-group {
+  margin: 0;
+  padding: 0;
+}
+html body .workspace-studio .oneprep-nav__group {
+  display: none;
+}
+html body .workspace-studio .oneprep-nav--primary .oneprep-nav__item {
+  min-height: 42px;
+  margin: 3px 0;
+  border-radius: 7px;
+  padding: 10px 12px;
+  font-size: 12px;
+  font-weight: 450;
+}
+html body .workspace-studio .oneprep-nav--primary .oneprep-nav__item.is-active {
+  background: var(--op-blue-soft);
+  color: var(--op-blue-ink);
+  font-weight: 550;
+}
+html body .workspace-studio .oneprep-nav__item svg {
+  width: 17px;
+  height: 17px;
+  stroke-width: 1.7;
+}
+html body .workspace-studio .studio-nav-more {
+  border: 0;
+  padding: 0;
+  margin: 3px 0;
+}
+html body .workspace-studio .studio-nav-more > summary {
+  min-height: 42px;
+  font-size: 12px;
+  padding: 10px 12px;
+}
+html body .workspace-studio .oneprep-workspace__content {
+  padding: 32px;
+}
+html body .workspace-studio .student-home__welcome {
+  margin-bottom: 24px;
+}
+html body .workspace-studio .student-home__welcome h1 {
+  font-size: 29px;
+  font-weight: 550;
+  letter-spacing: -0.045em;
+}
+html body .workspace-studio .student-home__stats {
+  gap: 16px;
+  margin-bottom: 20px;
+}
+html body .workspace-studio .student-home__stat {
+  border-radius: 10px;
+  min-height: 96px;
+  border: 1px solid var(--op-line);
+  padding: 20px;
+}
+html body .workspace-studio .student-home__stat-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 9px;
+  color: var(--op-blue-ink);
+  background: var(--op-blue-soft);
+}
+html body .workspace-studio .student-home__lead {
+  grid-template-columns: minmax(0, 1.5fr) minmax(250px, 1fr);
+  gap: 20px;
+}
+html body .workspace-studio .student-home__focus {
+  min-height: 290px;
+  padding: 28px;
+  background: var(--op-surface);
+  border-color: var(--op-line);
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+}
+html body .workspace-studio .student-home__focus h2 {
+  max-width: 85%;
+  margin: 21px 0 13px;
+  font-size: 27px;
+  font-weight: 550;
+  color: var(--op-ink);
+}
+html body .workspace-studio .student-home__focus .student-home__eyebrow {
+  color: var(--op-muted);
+  font-size: 10px;
+  letter-spacing: 0.025em;
+}
+html body .workspace-studio .student-home__focus-note {
+  max-width: 85%;
+  color: var(--op-muted) !important;
+  font-size: 12px !important;
+  line-height: 1.8;
+}
+html body .workspace-studio .student-home__primary {
+  background: var(--op-blue);
+  color: #fff;
+  min-height: 41px;
+  font-size: 12px;
+  font-weight: 500;
+}
+html body .workspace-studio .student-home__focus-progress {
+  width: 85%;
+}
+html body .workspace-studio .student-home__focus-bar {
+  background: var(--op-surface-2);
+}
+html body .workspace-studio .student-home__focus-bar > i {
+  background: var(--op-blue);
+}
+html body .workspace-studio .student-home__focus-progress > small {
+  color: var(--op-muted);
+}
+.dashboard-focus-mark {
+  position: absolute;
+  right: 25px;
+  top: 23px;
+  display: grid;
+  place-items: center;
+  width: 43px;
+  height: 43px;
+  border: 1px solid var(--op-line);
+  border-radius: 12px;
+  color: var(--op-blue-ink);
+  background: var(--op-surface-2);
+}
+html
+  body
+  .workspace-studio
+  :is(.student-home__tasks, .student-home__dates, .student-home__desk) {
+  border: 1px solid var(--op-line);
+  border-radius: 12px;
+  padding: 22px;
+}
+html body .workspace-studio .student-home__shortlist {
+  border: 1px solid var(--op-line);
+  border-radius: 12px;
+  overflow: hidden;
+}
+html body .workspace-studio .student-home__section-heading h2 {
+  font-size: 14px;
+  font-weight: 550;
+}
+html body .workspace-studio .student-home__tool {
+  border-radius: 8px;
+}
+html body .workspace-studio .student-home__tool > svg:first-child {
+  color: var(--op-blue-ink) !important;
+  background: var(--op-blue-soft);
+  border-radius: 8px;
+}
+html.dark body .oneprep-workspace.workspace-studio {
+  --op-bg: #0b0b0b;
+  --op-surface: #141414;
+  --op-surface-2: #202020;
+  --op-ink: #f2f2f2;
+  --op-muted: #a0a0a0;
+  --op-faint: #858585;
+  --op-line: #2b2b2b;
+  --op-line-strong: #414141;
+  --op-blue: var(--cs-accent);
+  --op-blue-ink: var(--cs-accent-text);
+  --op-blue-soft: var(--cs-accent-soft);
+}
+html.dark
+  body
+  .workspace-studio
+  :is(.oneprep-brand__mark, .student-home__primary) {
+  background: var(--cs-accent);
+  color: #fff;
+}
+html.dark
+  body
+  .workspace-studio
+  :is(
+    .student-sidebar__avatar,
+    .oneprep-nav__count,
+    .student-home__tool > svg:first-child,
+    .student-home__stat-icon
+  ) {
+  color: var(--cs-accent-text);
+  background: var(--cs-accent-soft);
+}
+html.dark body .workspace-studio .student-home__date-chip {
+  border-color: #aaa;
+}
+
+/* Auth, rankings and staff inherit the same neutral dark materials. */
+html.dark body :is(.rankings-studio, .profile-ranking-studio) {
+  --ranking-blue: var(--cs-accent-text);
+  --ranking-detail: #ccc;
+  --ranking-surface: #141414;
+  --ranking-line: #2b2b2b;
+}
+html.dark body .rankings-studio .ranking-studio-intro {
+  background: #141414;
+}
+html.dark body .supabase-console.admin-studio {
+  --sb-bg: #0b0b0b;
+  --sb-panel: #141414;
+  --sb-panel-2: #1b1b1b;
+  --sb-text: #eee;
+  --sb-muted: #a0a0a0;
+  --sb-faint: #858585;
+  --sb-border: #2b2b2b;
+  --sb-accent: var(--cs-accent-text);
+  --sb-accent-soft: var(--cs-accent-soft);
+}
+html.dark
+  body
+  .admin-studio
+  :is(.studio-admin-hero, .sb-workspace-brand .sb-rail-brand) {
+  background: #1b1b1b;
+  border-color: #333;
+  color: #eee;
+}
+html.dark
+  body
+  .admin-studio
+  :is(.studio-admin-hero h2, .studio-admin-hero p, .studio-admin-eyebrow) {
+  color: #eee;
+}
+html.dark body .admin-studio .studio-admin-hero a {
+  color: #111;
+  background: #ededed;
+}
+html.dark body .auth-page:has(.auth-studio) {
+  background: #0b0b0b;
+}
+html.dark body .auth-studio.oct12-auth.auth-reference .auth-access-panel {
+  background: #141414;
+  border-color: #2b2b2b;
+}
+html.dark
+  body
+  .auth-studio.oct12-auth.auth-reference
+  :is(.auth-input, .auth-field > input, .provider-button) {
+  background: #1c1c1c;
+  border-color: #363636;
+  color: #eee;
+}
+html.dark
+  body
+  .auth-studio.oct12-auth.auth-reference
+  :is(
+    .auth-kicker,
+    .magic-link-button,
+    .auth-privacy,
+    .auth-mode-nav a,
+    .auth-field a
+  ) {
+  color: #bdbdbd;
+  border-color: #333;
+}
+html.dark body .auth-studio.oct12-auth.auth-reference .auth-submit {
+  background: var(--cs-accent);
+  color: #fff;
+}
+html.dark
+  body
+  .auth-studio.oct12-auth.auth-reference
+  .auth-submit:hover:not(:disabled) {
+  background: #3e75f6;
+}
+html.dark
+  body
+  .auth-studio.oct12-auth.auth-reference
+  .oct09-campus-frame::after {
+  background: linear-gradient(0deg, #000e 0%, #0008 58%, #0000 100%);
+}
+html.dark body .auth-studio.oct12-auth.auth-reference .auth-art {
+  background: #141414;
+}
+html.dark
+  body
+  .auth-studio.oct12-auth.auth-reference
+  .auth-art-header
+  > a:last-child {
+  background: #0007;
+}
+html.dark
+  body
+  .auth-studio.oct12-auth.auth-reference
+  :is(
+    .auth-art p,
+    .auth-workspace-benefits li,
+    .auth-workspace-benefits li > svg,
+    .studio-auth-label
+  ) {
+  color: #eee;
+}
+html.dark body .recovery-simple {
+  --recovery-blue: var(--cs-accent-text);
+}
+html.dark body .recovery-simple .recovery-search button,
+html.dark body .recovery-simple .button-primary {
+  background: var(--cs-accent);
+  color: #fff;
+  border-color: var(--cs-accent);
+}
+@media (max-width: 1050px) {
+  html body .workspace-studio .oneprep-workspace__content {
+    padding: 26px;
+  }
+  html body .workspace-studio .student-home__lead {
+    grid-template-columns: minmax(0, 1.2fr) minmax(240px, 1fr);
+  }
+}
+@media (max-width: 800px) {
+  html body .startup-source-strip > div {
+    gap: 12px;
+  }
+  html body .startup-source-strip > div > a {
+    font-size: 14px;
+  }
+  html body .workspace-studio .oneprep-workspace__sidebar {
+    width: 232px;
+  }
+  html body .workspace-studio .student-home__lead {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 560px) {
+  html body .startup-source-strip > div {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    row-gap: 8px;
+  }
+  html body .startup-source-strip > div > a {
+    font-size: 14px;
+  }
+  html body .workspace-studio .oneprep-workspace__content {
+    padding: 22px 16px;
+  }
+  html body .workspace-studio .student-home__welcome h1 {
+    font-size: 25px;
+  }
+  html body .workspace-studio .student-home__focus {
+    padding: 23px;
+    min-height: 280px;
+  }
+  html body .workspace-studio .student-home__focus h2 {
+    font-size: 24px;
+  }
+  html body .workspace-studio .student-home__focus-note {
+    max-width: 100%;
+  }
+  .dashboard-focus-mark {
+    right: 20px;
+    top: 18px;
+    width: 36px;
+    height: 36px;
+  }
+  .dashboard-focus-mark > svg {
+    width: 21px;
+  }
+}
+html body .startup-external-reading {
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  gap: 0;
+}
+html body .startup-external-reading > article {
+  padding: 27px 27px 22px 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 230px;
+  border-right: 1px solid var(--border);
+}
+html body .startup-external-reading > article + article {
+  padding-left: 27px;
+}
+html body .startup-external-reading > article:last-child {
+  border-right: 0;
+}
+html body .startup-external-reading .startup-reading-provider {
+  margin-top: 0;
+  color: var(--muted-foreground);
+  font-size: 10px;
+  line-height: 1.6;
+}
+html body .startup-external-reading h3 {
+  font-size: 22px;
+  line-height: 1.4;
+  margin-top: 14px;
+  max-width: none;
+  font-weight: 500;
+  letter-spacing: -0.035em;
+}
+html body .startup-external-reading h3 a {
+  color: var(--foreground);
+}
+html body .startup-external-reading h3 svg {
+  display: inline;
+  margin-left: 7px;
+  color: var(--muted-foreground);
+  vertical-align: middle;
+  flex-shrink: 0;
+}
+html body .startup-external-reading > article > p {
+  color: var(--muted-foreground);
+  font-size: 11px;
+  line-height: 1.8;
+  margin-top: 14px;
+}
+html body .startup-external-reading > article > .startup-text-link {
+  margin-top: auto;
+  padding-top: 16px;
+  font-size: 11px;
+}
+@media (max-width: 560px) {
+  html body .startup-external-reading > article,
+  html body .startup-external-reading > article + article {
+    border-right: 0;
+    border-bottom: 1px solid var(--border);
+    padding: 24px 0;
+    min-height: 0;
+  }
+  html body .startup-external-reading > article:last-child {
+    border: 0;
+  }
+}
+
+/* Dark mode, bottom dock only (Nov 18): neutral black glass instead of navy. The top navbar's
+   glass is left as it is (owner rule). */
+html.dark .site-dock[data-glass] {
+  --glass-fill: rgba(18, 18, 18, 0.92);
+  --glass-line: rgba(255, 255, 255, 0.1);
+  --glass-shine: rgba(255, 255, 255, 0.07);
+}
+html.dark .site-dock[data-glass="rim"]::before {
+  background: rgba(18, 18, 18, 0.92) !important;
+}
+html.dark .site-dock a.active,
+html.dark .site-dock a[aria-current="page"] {
+  background: #262626 !important;
+  color: #fff !important;
+}

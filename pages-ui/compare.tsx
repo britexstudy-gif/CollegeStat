@@ -1,141 +1,284 @@
 "use client";
-import { useEffect, useState, type ReactNode } from "react";
-import Link from "next/link";
-import { useSearchParams, useRouter } from "next/navigation";
+import { workspaceHref } from "@/lib/workspace-navigation";
+import { Fragment, useEffect, useState } from "react";
+import { WorkspaceLink as Link } from "@/components/college/workspace-link";
+import { useSearchParams, useRouter, usePathname } from "next/navigation";
 import { toast } from "sonner";
-import {
-  Download,
-  Share2,
-  Plus,
-  X,
-  Bookmark,
-  Search,
-  ArrowLeft,
-  ArrowRight,
-  SlidersHorizontal,
-  RotateCcw,
-  ArrowUpRight,
-} from "lucide-react";
+import { ArrowUpRight, Link2, Plus, X } from "lucide-react";
 import { useCollege } from "@/components/college/provider";
-import { UniversityLogo, EmptyState } from "@/components/college/primitives";
-import { SourceDrawer, formatMetric } from "@/components/college/metrics";
+import { useT } from "@/components/college/i18n";
+import { UniversityLogo } from "@/components/college/primitives";
+import { Button } from "@/components/ui/button";
 import {
-  type University,
-  type Sourced,
-  countryName,
-  currency,
-} from "@/lib/domain";
+  CommandDialog,
+  CommandEmpty,
+  CommandInput,
+  CommandItem,
+  CommandList,
+} from "@/components/ui/command";
 import {
-  metricDefinitions,
-  valueOf,
-  convertCurrency,
-  type ExchangeRate,
-} from "@/lib/research";
-import { universitiesByIds, searchCatalogue } from "@/lib/supabase/catalogue";
+  Empty,
+  EmptyContent,
+  EmptyDescription,
+  EmptyHeader,
+  EmptyTitle,
+} from "@/components/ui/empty";
+import { Skeleton } from "@/components/ui/skeleton";
+import {
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from "@/components/ui/table";
+import { type University, type Sourced, countryName, currency, dateLabel } from "@/lib/domain";
+import { valueOf, type MetricKey } from "@/lib/research";
+import { publicRequest, searchCatalogue } from "@/lib/supabase/catalogue";
+import { establishedYear, institutionType } from "@/lib/institution-facts";
 import { getSupabase } from "@/lib/supabase/client";
-import { usesHostedCatalogue } from "@/lib/catalogue-mode";
-import { universityRanks, rankLabel } from "@/lib/ranking-highlights";
-import {
-  canonicalComparisonIDs,
-  moveComparisonID,
-  comparisonRowVisible,
-  csvCell,
-} from "@/lib/comparison";
-import {
-  regionalRanksForUniversity,
-  regionalRankLabel,
-} from "@/lib/regional-rankings";
-import { comparisonEvidence } from "@/lib/comparison-evidence";
-import { EvidenceBars } from "@/components/college/evidence-bars";
+import { rankLabel, rankingPublishers, universityRanks, type Publisher } from "@/lib/ranking-highlights";
+import { canonicalComparisonIDs } from "@/lib/comparison";
+import type { MessageKey } from "@/lib/i18n/messages";
 
-type Cell = {
-  key: string | null;
-  text: string;
-  detail?: string;
-  url?: string;
-  node: ReactNode;
-};
-type ComparisonRow = {
-  id: string;
-  group: string;
-  label: string;
-  cells: Cell[];
-};
-const essentialRows = new Set([
-  "location",
-  "type",
-  "founded",
-  "application",
-  "requirements",
-  "admission",
-  "tuition",
-  "enrollment",
-  "qs",
-  "the",
-  "arwu",
-  "linked-awards",
-]);
-const inCategory = (row: ComparisonRow, category: string) =>
-  category === "All" ||
-  (category === "Essentials"
-    ? essentialRows.has(row.id)
-    : row.group === category);
-const groups = [
-  "All",
-  "Overview",
-  "Admissions",
-  "Costs",
-  "Financial aid",
-  "Academics",
-  "Students",
-  "Outcomes",
-  "Rankings",
-  "Programs & research",
+const MAX = 4;
+const HEADING = "font-[family-name:Poppins,Montserrat,Inter,system-ui,sans-serif]";
+const PAIRS: { key: MessageKey; names: string[]; ids: string[] }[] = [
+  {
+    key: "cmp.pair.korea",
+    names: ["Seoul National", "Yonsei", "Korea University"],
+    ids: [
+      "6a9e2556-fc5f-56a2-bca0-9364f099818c",
+      "b5f25065-0a86-517e-91f0-ff6bbe8c81d3",
+      "6d72f6ce-a30c-54a4-8b99-97ae04a68a88",
+    ],
+  },
+  {
+    key: "cmp.pair.turkey",
+    names: ["METU", "Bilkent", "Koç"],
+    ids: [
+      "be141d50-5df3-5bd2-8b44-744166b2402b",
+      "6ba258c1-adba-5e46-9b8c-411b91c4b958",
+      "1848c4c4-1bfb-5ae4-8322-6fda3dca4e50",
+    ],
+  },
+  {
+    key: "cmp.pair.europe",
+    names: ["TU Munich", "Charles University", "Warsaw"],
+    ids: [
+      "44444444-4444-4444-8444-444444444444",
+      "44fc5710-6980-5188-9d31-73c583212993",
+      "29507709-c065-51f2-a63d-22ecc1ac26e4",
+    ],
+  },
+  {
+    key: "cmp.pair.home",
+    names: ["Nazarbayev", "WIUT", "AUCA"],
+    ids: [
+      "69434102-e5f5-5311-9294-2f101f81906f",
+      "66666666-6666-4666-8666-666666666666",
+      "48bb7649-d12f-5854-b7d9-f586e7b81d72",
+    ],
+  },
 ];
-const missing: Cell = {
-  key: null,
-  text: "Not reported",
-  node: <span className="comparison-missing">Not reported</span>,
+
+type Item = { text: string; sub?: string; url?: string };
+type Cell = { items: Item[]; num?: number | null; unit?: string; best?: boolean };
+type Row = {
+  id: string;
+  label: string;
+  better?: "low" | "high";
+  cells: (Cell | null)[];
 };
-function textCell(text: string | null | undefined, detail?: string): Cell {
-  return text
-    ? {
-        key: JSON.stringify([text, detail]),
-        text,
-        detail,
-        node: (
-          <>
-            <strong>{text}</strong>
-            {detail && <small>{detail}</small>}
-          </>
-        ),
-      }
-    : missing;
+type Group = { key: string; label: string; rows: Row[] };
+
+const sourceOf = (r?: Sourced | null) => r?.source_url || r?.data_sources?.url || undefined;
+const single = (text: string, extra: Partial<Item> = {}, num?: number | null, unit?: string): Cell => ({
+  items: [{ text, ...extra }],
+  num,
+  unit,
+});
+const year = (r?: Sourced | null) => (r?.year ? String(r.year) : undefined);
+const pct = (v: number) => v.toLocaleString("en", { maximumFractionDigits: 1 }) + "%";
+
+function metricCell(u: University, key: MetricKey, fmt: (n: number, currency?: string) => string): Cell | null {
+  const v = valueOf(u, key);
+  if (v.value == null) return null;
+  return single(fmt(v.value, v.currency), { sub: year(v.record), url: sourceOf(v.record) }, v.value, v.currency);
 }
-function linkCell(
-  text: string,
-  url: string | null | undefined,
-  detail?: string,
-): Cell {
-  return url
+
+const undergraduate = (text: string) =>
+  /undergrad|first-year|bachelor/i.test(text) || !/master|mba|phd|doctor|postgrad|graduate|foundation/i.test(text);
+
+function languageCell(u: University, kind: "IELTS" | "TOEFL"): Cell | null {
+  const req = u.requirements.find(
+    (r) =>
+      r.kind.toUpperCase() === kind &&
+      !r.program_id &&
+      r.minimum != null &&
+      undergraduate(r.label + " " + r.student_category),
+  );
+  if (req)
+    return single(
+      kind === "IELTS" ? req.minimum!.toFixed(1) : String(req.minimum),
+      { sub: kind === "TOEFL" ? req.label.replace(/^TOEFL\s*/i, "") : undefined, url: sourceOf(req) },
+      kind === "IELTS" ? req.minimum : null,
+    );
+  const a = u.admissions.find((a) => (kind === "IELTS" ? a.ielts_min : a.toefl_min) != null);
+  const min = a && (kind === "IELTS" ? a.ielts_min : a.toefl_min);
+  return a && min != null
+    ? single(kind === "IELTS" ? min.toFixed(1) : String(min), { sub: year(a), url: sourceOf(a) }, kind === "IELTS" ? min : null)
+    : null;
+}
+
+function costFor(u: University, category: string) {
+  const all = u.costs.filter((c) => c.category === category && !c.program_id && c.amount != null);
+  const preferred = all.filter((c) => /international/i.test(c.student_category));
+  return [...(preferred.length ? preferred : all)].sort((a, b) => (b.year ?? 0) - (a.year ?? 0))[0];
+}
+function livingCell(u: University): Cell | null {
+  const total = costFor(u, "total"),
+    tuition = costFor(u, "tuition"),
+    fees = costFor(u, "fees") ?? costFor(u, "mandatory_fees");
+  const housing = costFor(u, "housing") ?? costFor(u, "room_board"),
+    food = costFor(u, "food");
+  let amount: number | null = null,
+    record = total ?? housing;
+  if (total && tuition && total.currency === tuition.currency) {
+    const rest = total.amount - tuition.amount - (fees && fees.currency === total.currency ? fees.amount : 0);
+    if (rest > 0) amount = rest;
+  }
+  if (amount == null && housing) {
+    amount = housing.amount + (food && food.currency === housing.currency ? food.amount : 0);
+    record = housing;
+  }
+  return amount != null && record
+    ? single(currency(amount, record.currency), { sub: year(record), url: sourceOf(record) }, amount, record.currency)
+    : null;
+}
+function feeCell(u: University): Cell | null {
+  const fees = u.costs.filter((c) => c.category === "application_fee" && !c.program_id && c.amount != null);
+  const fee = fees.find((c) => /international|first-year|undergrad/i.test(c.student_category)) ?? fees[0];
+  return fee
+    ? single(currency(fee.amount, fee.currency), { sub: year(fee), url: sourceOf(fee) }, fee.amount, fee.currency)
+    : null;
+}
+function deadlineCell(u: University): Cell | null {
+  const today = new Date().toISOString().slice(0, 10);
+  const list = u.deadlines
+    .filter((d) => undergraduate(d.title + " " + d.student_category) && d.due_at)
+    .sort((a, b) => a.due_at.localeCompare(b.due_at));
+  const upcoming = list.filter((d) => d.due_at.slice(0, 10) >= today);
+  const shown = (upcoming.length ? upcoming : list.slice(-1)).slice(0, 2);
+  return shown.length
     ? {
-        key: JSON.stringify([text, detail, url]),
-        text,
-        detail,
-        url,
-        node: (
-          <a
-            href={url}
-            target={url.startsWith("/") ? undefined : "_blank"}
-            rel={url.startsWith("/") ? undefined : "noreferrer"}
-          >
-            {text}
-            <ArrowUpRight size={13} aria-hidden="true" />
-            {detail && <small>{detail}</small>}
-          </a>
-        ),
+        items: shown.map((d) => ({
+          text: dateLabel(d.due_at.slice(0, 10) + "T12:00:00"),
+          sub: d.title.replace(/^Undergraduate application:\s*/i, ""),
+          url: sourceOf(d),
+        })),
       }
-    : missing;
+    : null;
+}
+function rankCell(u: University, provider: Publisher): Cell | null {
+  const r = universityRanks(u).find((r) => r.provider === provider);
+  return r ? single(rankLabel(r), { sub: String(r.year), url: r.url }, r.rank) : null;
+}
+const text = (value: string | number | null | undefined): Cell | null =>
+  value == null || value === "" ? null : single(String(value));
+
+function buildGroups(rows: University[], t: ReturnType<typeof useT>): Group[] {
+  const groups: Group[] = [
+    {
+      key: "rankings",
+      label: t("cmp.g.rankings"),
+      rows: (["qs", "the", "arwu"] as const).map((p) => ({
+        id: p,
+        label: t("cmp.r.rank", { publisher: rankingPublishers[p].name }),
+        better: "low" as const,
+        cells: rows.map((u) => rankCell(u, p)),
+      })),
+    },
+    {
+      key: "costs",
+      label: t("cmp.g.costs"),
+      rows: [
+        { id: "tuition", label: t("cmp.r.tuition"), better: "low", cells: rows.map((u) => metricCell(u, "tuition", (n, c) => (c ? currency(n, c) : n.toLocaleString()))) },
+        { id: "living", label: t("cmp.r.living"), better: "low", cells: rows.map(livingCell) },
+        { id: "fee", label: t("cmp.r.fee"), better: "low", cells: rows.map(feeCell) },
+      ],
+    },
+    {
+      key: "admissions",
+      label: t("cmp.g.admissions"),
+      rows: [
+        { id: "admit", label: t("cmp.r.admit"), cells: rows.map((u) => metricCell(u, "admission", pct)) },
+        { id: "ielts", label: t("cmp.r.ielts"), better: "low", cells: rows.map((u) => languageCell(u, "IELTS")) },
+        { id: "toefl", label: t("cmp.r.toefl"), cells: rows.map((u) => languageCell(u, "TOEFL")) },
+        { id: "deadlines", label: t("cmp.r.deadlines"), cells: rows.map(deadlineCell) },
+      ],
+    },
+    {
+      key: "outcomes",
+      label: t("cmp.g.outcomes"),
+      rows: [
+        { id: "grad", label: t("cmp.r.graduation"), better: "high", cells: rows.map((u) => metricCell(u, "graduation_rate", pct)) },
+        { id: "employ", label: t("cmp.r.employment"), better: "high", cells: rows.map((u) => metricCell(u, "employment_rate", pct)) },
+      ],
+    },
+    {
+      key: "size",
+      label: t("cmp.g.size"),
+      rows: [
+        {
+          id: "students",
+          label: t("cmp.r.students"),
+          cells: rows.map(
+            (u) =>
+              metricCell(u, "enrollment", (n) => n.toLocaleString("en")) ??
+              (u.publisher_students?.students
+                ? single(u.publisher_students.students.toLocaleString("en"), { url: u.publisher_students.source_url })
+                : null),
+          ),
+        },
+        { id: "intl", label: t("cmp.r.intl"), cells: rows.map((u) => metricCell(u, "international_students", pct)) },
+        {
+          id: "ratio",
+          label: t("cmp.r.ratio"),
+          better: "low",
+          cells: rows.map(
+            (u) =>
+              metricCell(u, "student_faculty_ratio", (n) => n.toLocaleString("en", { maximumFractionDigits: 1 })) ??
+              (u.publisher_students?.student_staff_ratio != null
+                ? single(
+                    String(u.publisher_students.student_staff_ratio),
+                    { url: u.publisher_students.source_url },
+                    u.publisher_students.student_staff_ratio,
+                  )
+                : null),
+          ),
+        },
+        { id: "type", label: t("cmp.r.type"), cells: rows.map((u) => text(institutionType(u))) },
+        { id: "founded", label: t("cmp.r.founded"), cells: rows.map((u) => text(establishedYear(u))) },
+      ],
+    },
+  ];
+  return groups
+    .map((g) => ({ ...g, rows: g.rows.filter((r) => r.cells.some(Boolean)) }))
+    .filter((g) => g.rows.length)
+    .map((g) => ({
+      ...g,
+      rows: g.rows.map((r) => {
+        const nums = r.cells.map((c) => (c && c.num != null ? c : null));
+        const comparable = nums.filter(Boolean) as Cell[];
+        const sameUnit = new Set(comparable.map((c) => c.unit ?? "")).size === 1;
+        const values = comparable.map((c) => c.num as number);
+        if (r.better && comparable.length >= 2 && sameUnit && new Set(values).size > 1) {
+          const target = r.better === "low" ? Math.min(...values) : Math.max(...values);
+          return { ...r, cells: r.cells.map((c) => (c && c.num === target ? { ...c, best: true } : c)) };
+        }
+        return r;
+      }),
+    }));
 }
 
 export default function Compare({
@@ -145,79 +288,85 @@ export default function Compare({
   initialUniversities?: University[];
   initialError?: string;
 }) {
+  const t = useT();
   const s = useCollege(),
     params = useSearchParams(),
+    pathname = usePathname(),
     router = useRouter();
   const idsParam = params.get("ids"),
     share = params.get("share");
-  const selectedIDs = canonicalComparisonIDs(
-    idsParam !== null ? idsParam.split(",") : s.compare,
-  );
+  const selectedIDs = canonicalComparisonIDs(idsParam !== null ? idsParam.split(",") : s.compare).slice(0, MAX);
   const selectionKey = selectedIDs.join(",");
   const [rows, setRows] = useState(initialUniversities),
-    [loading, setLoading] = useState(
-      selectedIDs.length > 0 && !initialUniversities.length,
-    ),
+    [loading, setLoading] = useState(selectedIDs.length > 0 && !initialUniversities.length),
+    [error, setError] = useState(initialError),
+    [retry, setRetry] = useState(0),
+    [open, setOpen] = useState(false),
     [query, setQuery] = useState(""),
     [matches, setMatches] = useState<University[]>([]),
     [searching, setSearching] = useState(false),
-    [searchError, setSearchError] = useState(""),
-    [focus, setFocus] = useState("Essentials"),
-    [differences, setDifferences] = useState(false),
-    [hideMissing, setHideMissing] = useState(true),
-    [years, setYears] = useState(true),
-    [charts, setCharts] = useState(false),
-    [displayCurrency, setDisplayCurrency] = useState("original"),
-    [rates, setRates] = useState<ExchangeRate[]>([]),
-    [error, setError] = useState(initialError),
-    [retry, setRetry] = useState(0);
+    [searchError, setSearchError] = useState(false);
   const { setCompare } = s;
-  const updateSelection = (ids: string[]) => {
-    const next = canonicalComparisonIDs(ids);
+  const go = (ids: string[]) => {
+    const next = canonicalComparisonIDs(ids).slice(0, MAX);
     setCompare(next);
-    router.replace("/compare?ids=" + next.join(","), { scroll: false });
+    const q = new URLSearchParams(params.toString());
+    if (next.length) q.set("ids", next.join(","));
+    else q.delete("ids");
+    q.delete("share");
+    router.replace(workspaceHref("/compare" + (q.size ? "?" + q : "") + window.location.hash, pathname), {
+      scroll: false,
+    });
   };
   useEffect(() => {
-    setCompare(canonicalComparisonIDs(selectionKey.split(",")));
+    setCompare(canonicalComparisonIDs(selectionKey ? selectionKey.split(",") : []));
   }, [selectionKey, setCompare]);
   useEffect(() => {
     if (!share || idsParam !== null) return;
     let live = true;
     const db = getSupabase();
     if (!db) {
-      setError(
-        "This saved share link needs the account service. Ask for a direct comparison link.",
-      );
+      setError(t("cmp.error"));
       return;
     }
     setLoading(true);
-    void db
-      .rpc("read_shared_comparison", { share_id: share })
-      .then(({ data, error }) => {
-        if (!live) return;
-        setLoading(false);
-        if (error || !Array.isArray(data))
-          setError("This shared comparison is unavailable.");
-        else
-          router.replace(
-            "/compare?ids=" + canonicalComparisonIDs(data).join(","),
-            { scroll: false },
-          );
-      });
+    void db.rpc("read_shared_comparison", { share_id: share }).then(({ data, error }) => {
+      if (!live) return;
+      setLoading(false);
+      if (error || !Array.isArray(data)) setError(t("cmp.error"));
+      else
+        router.replace(
+          workspaceHref("/compare?ids=" + canonicalComparisonIDs(data).slice(0, MAX).join(","), pathname),
+          { scroll: false },
+        );
+    });
     return () => {
       live = false;
     };
-  }, [share, idsParam, router, retry]);
+  }, [share, idsParam, router, retry, pathname, t]);
   useEffect(() => {
     let live = true;
     if (share && idsParam === null) return;
     const ids = selectionKey ? selectionKey.split(",") : [];
-    setLoading(!!ids.length);
+    if (!ids.length) {
+      setRows([]);
+      setLoading(false);
+      setError("");
+      return;
+    }
+    if (retry === 0 && ids.every((id) => initialUniversities.some((u) => u.id === id))) {
+      setRows(ids.flatMap((id) => initialUniversities.filter((u) => u.id === id)));
+      setLoading(false);
+      setError("");
+      return;
+    }
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), 15000);
+    setLoading(true);
     setError("");
-    setRows((previous) =>
-      ids.flatMap((id) => previous.filter((u) => u.id === id)),
-    );
-    universitiesByIds(ids)
+    setRows((previous) => ids.flatMap((id) => previous.filter((u) => u.id === id)));
+    // Through the catalogue API so records carry the merged requirements, fees and dates.
+    publicRequest<University[]>("ids=" + encodeURIComponent(ids.join(",")), controller.signal)
       .then((result) => {
         if (live) {
           setRows(ids.flatMap((id) => result.filter((u) => u.id === id)));
@@ -226,852 +375,288 @@ export default function Compare({
       })
       .catch(() => {
         if (live) {
-          setRows([]);
           setLoading(false);
-          setError(
-            "Comparison could not be loaded. Your selection is kept; try again.",
-          );
+          setError(t("cmp.error"));
         }
-      });
+      })
+      .finally(() => clearTimeout(timeout));
     return () => {
       live = false;
+      clearTimeout(timeout);
+      controller.abort();
     };
-  }, [selectionKey, retry, share, idsParam]);
+  }, [selectionKey, retry, share, idsParam, initialUniversities, t]);
   useEffect(() => {
     let live = true;
     setMatches([]);
-    setSearchError("");
+    setSearchError(false);
+    if (query.trim().length < 2) {
+      setSearching(false);
+      return;
+    }
+    const controller = new AbortController();
     setSearching(true);
     const timer = setTimeout(() => {
-      void searchCatalogue(query.trim())
-        .then((result) => {
-          if (live) {
-            setMatches(result);
-            setSearching(false);
-          }
-        })
-        .catch(() => {
-          if (live) {
-            setSearchError(
-              "University search is unavailable. Try again or open the directory.",
-            );
-            setSearching(false);
-          }
-        });
-    }, 180);
+      void searchCatalogue(query.trim(), controller.signal)
+        .then((result) => live && (setMatches(result), setSearching(false)))
+        .catch(() => live && (setSearchError(true), setSearching(false)));
+    }, 220);
     return () => {
       live = false;
       clearTimeout(timer);
+      controller.abort();
     };
   }, [query]);
-  useEffect(() => {
-    if (!usesHostedCatalogue()) return;
-    let live = true;
-    void getSupabase()
-      ?.from("exchange_rates")
-      .select("*,data_sources(name,url)")
-      .order("observed_at", { ascending: false })
-      .limit(100)
-      .then(({ data, error }) => {
-        if (live && !error) setRates((data || []) as ExchangeRate[]);
-      });
-    return () => {
-      live = false;
-    };
-  }, []);
 
-  const comparisonRows: ComparisonRow[] = [];
-  const addRow = (id: string, group: string, label: string, cells: Cell[]) =>
-    comparisonRows.push({ id, group, label, cells });
-  addRow(
-    "location",
-    "Overview",
-    "Location",
-    rows.map((u) =>
-      textCell(
-        [u.city, countryName(u.country_code)].filter(Boolean).join(", "),
-      ),
-    ),
-  );
-  addRow(
-    "type",
-    "Overview",
-    "University type",
-    rows.map((u) => textCell(u.university_type)),
-  );
-  addRow(
-    "founded",
-    "Overview",
-    "Established",
-    rows.map((u) => textCell(u.founded_year ? String(u.founded_year) : null)),
-  );
-  addRow(
-    "requirements",
-    "Admissions",
-    "Application requirements",
-    rows.map((u) => {
-      const brief = u.application_brief;
-      const structured = u.requirements
-        .map((r) => r.label + (r.minimum != null ? ": " + r.minimum : ""))
-        .join(" · ");
-      const detail = brief
-        ? (brief.scope || "First-year undergraduate") +
-          " · checked " +
-          brief.checked_at
-        : structured ||
-          "Planning checklist; confirm exact requirements with the university";
-      const cell = linkCell(
-        brief?.requirements.slice(0, 2).join(" ") ||
-          structured ||
-          "View requirements checklist",
-        "/university/" + u.slug + "?tab=Admissions",
-        detail,
-      );
-      return {
-        ...cell,
-        node: (
-          <>
-            <Link
-              className="comparison-guidance-link"
-              href={"/university/" + u.slug + "?tab=Admissions"}
-            >
-              Application requirements <ArrowUpRight size={13} />
-            </Link>
-            <small>{detail}</small>
-            {(brief?.requirements.length || structured) && (
-              <details className="comparison-detail">
-                <summary>Read checklist</summary>
-                {brief?.requirements.length ? (
-                  <ul>
-                    {brief.requirements.map((item) => (
-                      <li key={item}>{item}</li>
-                    ))}
-                  </ul>
-                ) : (
-                  <p>{structured}</p>
-                )}
-              </details>
-            )}
-          </>
-        ),
-      };
-    }),
-  );
-  addRow(
-    "application",
-    "Admissions",
-    "Official application link",
-    rows.map((u) =>
-      linkCell(
-        u.application_url
-          ? "Application portal"
-          : u.admissions_url
-            ? "Admissions guidance"
-            : "University website",
-        u.application_url ||
-          u.admissions_url ||
-          u.official_web?.links.admissions?.url ||
-          u.website,
-      ),
-    ),
-  );
-  for (const m of metricDefinitions) {
-    addRow(
-      m.key,
-      m.group,
-      m.label,
-      rows.map((u) => {
-        const v = valueOf(u, m.key);
-        if (v.value == null) return missing;
-        const record = v.record;
-        let text = formatMetric(u, m.key),
-          conversionDetail = "";
-        if (displayCurrency !== "original" && v.currency) {
-          const conversion = convertCurrency(
-            v.value,
-            v.currency,
-            displayCurrency,
-            rates,
-          );
-          if (conversion) {
-            text =
-              (conversion.estimated ? "≈ " : "") +
-              currency(conversion.amount, displayCurrency);
-            conversionDetail =
-              "Original: " +
-              formatMetric(u, m.key) +
-              (conversion.rate ? " · rate " + conversion.rate.observed_at : "");
-          } else
-            conversionDetail =
-              "Original currency retained; no sourced conversion rate";
-        }
-        const cost =
-          record && "student_category" in record
-            ? (record as Sourced & {
-                student_category: string;
-                period?: string;
-                program_id?: string | null;
-              })
-            : undefined;
-        const detail = [
-          record?.year ? String(record.year) : "Reporting year not stated",
-          cost?.student_category,
-          cost?.period ? "per " + cost.period : undefined,
-          cost?.program_id ? "Programme-specific figure" : undefined,
-          record?.notes,
-          conversionDetail,
-        ]
-          .filter(Boolean)
-          .join(" · ");
-        return {
-          key: JSON.stringify([v.value, v.currency, detail]),
-          text,
-          detail,
-          url: record?.source_url || record?.data_sources?.url,
-          node: (
-            <>
-              <SourceDrawer label={m.label} record={record}>
-                <strong>{text}</strong>
-                {years && (
-                  <small>{record?.year || "Reporting year not stated"}</small>
-                )}
-              </SourceDrawer>
-              {(cost?.student_category || cost?.period) && (
-                <small>
-                  {[
-                    cost.student_category,
-                    cost.period && "per " + cost.period,
-                    cost.program_id && "programme-specific",
-                  ]
-                    .filter(Boolean)
-                    .join(" · ")}
-                </small>
-              )}
-              {conversionDetail && <small>{conversionDetail}</small>}
-              {(record?.source_url || record?.data_sources?.url) && (
-                <a
-                  className="comparison-source-link"
-                  href={record.source_url || record.data_sources?.url}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Source <ArrowUpRight size={12} aria-hidden="true" />
-                </a>
-              )}
-            </>
-          ),
-        };
-      }),
-    );
-  }
-  addRow(
-    "funding-link",
-    "Financial aid",
-    "Scholarships & funding",
-    rows.map((u) =>
-      linkCell(
-        "View funding options",
-        "/university/" + u.slug + "?tab=Costs",
-        u.financial_aid_url || u.official_web?.links.scholarships
-          ? "Official university funding link available"
-          : "University and external funding directories",
-      ),
-    ),
-  );
-  for (const provider of ["qs", "the", "arwu"] as const) {
-    addRow(
-      provider,
-      "Rankings",
-      provider.toUpperCase() + " · world overall",
-      rows.map((u) => {
-        const r = universityRanks(u).find((r) => r.provider === provider);
-        return r
-          ? linkCell(
-              rankLabel(r),
-              r.url,
-              r.year +
-                (r.country_position
-                  ? " · Country position " +
-                    r.country_position +
-                    " in this world table"
-                  : " · Publisher edition"),
-            )
-          : missing;
-      }),
-    );
-  }
-  for (const scope of ["Asia", "Europe"]) {
-    addRow(
-      "regional-" + scope,
-      "Rankings",
-      "QS · " + scope + " regional",
-      rows.map((u) => {
-        const rank = regionalRanksForUniversity(u).find(
-          (r) => r.scope === scope,
-        );
-        return rank
-          ? linkCell(
-              regionalRankLabel(rank.rank_label),
-              rank.source_url,
-              String(rank.year) + " · separate regional edition",
-            )
-          : missing;
-      }),
-    );
-  }
-  addRow(
-    "courses",
-    "Academics",
-    "Programs & entry routes",
-    rows.map((u) =>
-      linkCell("Explore programs", "/university/" + u.slug + "?tab=Academics"),
-    ),
-  );
-  addRow(
-    "reported-programs",
-    "Programs & research",
-    "Reported programme / qualification combinations",
-    rows.map((u) =>
-      u.reported_programs?.length
-        ? linkCell(
-            u.reported_programs.length.toLocaleString(),
-            "/university/" + u.slug + "?tab=Academics",
-            "IPEDS · completions, 2024–25; not a current course list",
-          )
-        : missing,
-    ),
-  );
-  addRow(
-    "subjects",
-    "Programs & research",
-    "Publisher subject areas",
-    rows.map((u) =>
-      u.publisher_students?.subjects?.length
-        ? linkCell(
-            u.publisher_students.subjects.join(" · "),
-            "/university/" + u.slug + "?tab=Academics",
-            "THE " + u.publisher_students.edition + " · broad subjects",
-          )
-        : missing,
-    ),
-  );
-  addRow(
-    "works",
-    "Programs & research",
-    "Indexed research works",
-    rows.map((u) =>
-      u.research_identity
-        ? linkCell(
-            u.research_identity.works_count.toLocaleString(),
-            "/university/" + u.slug + "?tab=Research",
-            "OpenAlex · all years · checked " +
-              u.research_identity.retrieved_at,
-          )
-        : missing,
-    ),
-  );
-  const extraEvidence = rows.map(comparisonEvidence);
-  const evidenceDefinitions = new Map(
-    extraEvidence.flatMap((items) =>
-      items.map((item) => [item.id, item] as const),
-    ),
-  );
-  for (const definition of evidenceDefinitions.values()) {
-    addRow(
-      definition.id,
-      definition.group,
-      definition.label,
-      extraEvidence.map((items) => {
-        const evidence = items.find((item) => item.id === definition.id);
-        return !evidence
-          ? missing
-          : evidence.url
-            ? linkCell(evidence.text, evidence.url, evidence.detail)
-            : textCell(evidence.text, evidence.detail);
-      }),
-    );
-  }
-  const ordered = groups
-    .slice(1)
-    .flatMap((group) => comparisonRows.filter((row) => row.group === group));
-  const visibleRows = ordered.filter(
-    (row) =>
-      inCategory(row, focus) &&
-      comparisonRowVisible(
-        row.cells.map((c) => c.key),
-        { onlyDifferences: differences, hideEmpty: hideMissing },
-      ),
-  );
-  const hiddenSelection = selectedIDs.filter(
-    (id) => !rows.some((u) => u.id === id),
-  );
-  const enabled = !loading && rows.length >= 2;
-  const shareComparison = async () => {
-    if (!enabled) return;
-    const url =
-      location.origin + "/compare?ids=" + rows.map((u) => u.id).join(",");
+  const groups = buildGroups(rows, t);
+  const missing = selectedIDs.filter((id) => !rows.some((u) => u.id === id));
+  const share_ = async () => {
+    const url = location.origin + "/compare?ids=" + rows.map((u) => u.id).join(",");
     try {
       await navigator.clipboard.writeText(url);
-      toast.success("Comparison link copied");
+      toast.success(t("cmp.copied"));
     } catch {
-      updateSelection(rows.map((u) => u.id));
-      toast("Share this page’s URL from your browser");
+      toast(t("cmp.copy_failed"));
     }
   };
-  const exportCSV = () => {
-    const lines = [
-      ["Metric", ...rows.map((u) => u.name)],
-      ...visibleRows.map((row) => [
-        row.group + " · " + row.label,
-        ...row.cells.map((cell) =>
-          [cell.text, cell.detail, cell.url].filter(Boolean).join(" | "),
-        ),
-      ]),
-    ];
-    const url = URL.createObjectURL(
-      new Blob([lines.map((row) => row.map(csvCell).join(",")).join("\n")], {
-        type: "text/csv;charset=utf-8",
-      }),
-    );
-    const a = document.createElement("a");
-    a.href = url;
-    a.download = "collegestat-comparison.csv";
-    a.click();
-    URL.revokeObjectURL(url);
-  };
-  const suggestions = matches.filter((u) => !selectedIDs.includes(u.id));
+  const results = matches.filter((u) => !selectedIDs.includes(u.id));
+  const cols = Math.max(rows.length, 1);
+  // The public navbar floats above the page; the dashboard has no sticky bar.
+  const stick = pathname.startsWith("/dashboard") ? "md:top-0" : "md:top-[92px]";
+
   return (
-    <div className="research-page compare-workspace">
-      <header className="page-intro">
-        <div className="eyebrow">YOUR DECISION WORKSPACE</div>
-        <h1>Compare universities.</h1>
-        <p>
-          Bring two to five universities together. Start with the essentials,
-          then explore what matters to you.
-        </p>
-      </header>
-      <section
-        className={
-          "comparison-builder" + (selectedIDs.length ? " has-selection" : "")
-        }
-        aria-label="Choose universities"
-      >
-        <div className="comparison-builder-heading">
-          <h2>Your universities</h2>
-          <span>{selectedIDs.length}/5 selected</span>
-          {selectedIDs.length > 0 && (
-            <button className="text-link" onClick={() => updateSelection([])}>
-              <RotateCcw size={14} />
-              Clear
-            </button>
-          )}
-        </div>
-        <div className="comparison-selected-list">
-          {rows.map((u, index) => (
-            <article key={u.id}>
-              <UniversityLogo university={u} size="sm" />
-              <div>
-                <Link href={"/university/" + u.slug}>{u.name}</Link>
-                <span>
-                  {[u.city, countryName(u.country_code)]
-                    .filter(Boolean)
-                    .join(" · ")}
-                </span>
-              </div>
-              <div className="comparison-selection-actions">
-                <button
-                  className="icon-button"
-                  disabled={index === 0}
-                  aria-label={"Move " + u.name + " left"}
-                  onClick={() =>
-                    updateSelection(moveComparisonID(selectedIDs, u.id, -1))
-                  }
-                >
-                  <ArrowLeft size={14} />
-                </button>
-                <button
-                  className="icon-button"
-                  disabled={index === rows.length - 1}
-                  aria-label={"Move " + u.name + " right"}
-                  onClick={() =>
-                    updateSelection(moveComparisonID(selectedIDs, u.id, 1))
-                  }
-                >
-                  <ArrowRight size={14} />
-                </button>
-                <button
-                  className="icon-button"
-                  aria-label={"Remove " + u.name + " from comparison"}
-                  onClick={() =>
-                    updateSelection(selectedIDs.filter((id) => id !== u.id))
-                  }
-                >
-                  <X size={15} />
-                </button>
-              </div>
-            </article>
-          ))}
-        </div>
-        <label
-          className="comparison-search-label"
-          htmlFor="comparison-university-search"
+    <div className="mx-auto w-full max-w-[1200px] pb-24 pt-6 md:pt-10">
+      <div className="grid gap-4">
+        <h1 className={`${HEADING} text-[clamp(32px,4vw,48px)] font-semibold leading-[1.08] tracking-[-0.035em]`}>
+          {t("cmp.title")}
+        </h1>
+        <p className="text-muted-foreground">{t("cmp.lede")}</p>
+      </div>
+      <div className="mt-6 flex flex-wrap items-center gap-2">
+        <Button
+          variant="outline"
+          className="rounded-full"
+          disabled={selectedIDs.length >= MAX}
+          onClick={() => setOpen(true)}
+          title={selectedIDs.length >= MAX ? t("cmp.add.full") : undefined}
         >
-          <Search size={17} aria-hidden="true" />
-          Add a university
-        </label>
-        <input
-          id="comparison-university-search"
-          className="filter-input"
-          placeholder="Search by university name, city or country"
-          value={query}
-          onChange={(event) => setQuery(event.target.value)}
-          disabled={selectedIDs.length >= 5}
-        />
-        <p className="caption" role="status">
-          {selectedIDs.length >= 5
-            ? "Five selected. Remove a university to add another."
-            : searching
-              ? "Searching universities…"
-              : searchError ||
-                (query.trim() && !suggestions.length
-                  ? "No new matches. Try another name or open the directory."
-                  : query.trim()
-                    ? "Choose a result to add it."
-                    : selectedIDs.length
-                      ? "Search to add another university."
-                      : "Start with a suggestion or search the full directory.")}
-        </p>
-        {selectedIDs.length < 5 && (!selectedIDs.length || query.trim()) && (
-          <div className="comparison-search-results">
-            {suggestions.slice(0, query.trim() ? 8 : 4).map((u) => (
-              <button
-                key={u.id}
-                onClick={() => {
-                  updateSelection([...selectedIDs, u.id]);
-                  setQuery("");
-                }}
-              >
-                <UniversityLogo university={u} size="sm" />
-                <span>
-                  <strong>{u.name}</strong>
-                  <small>
-                    {[u.city, countryName(u.country_code)]
-                      .filter(Boolean)
-                      .join(" · ")}
-                  </small>
-                </span>
-                <Plus size={17} aria-hidden="true" />
-              </button>
-            ))}
-          </div>
+          <Plus />
+          {t("cmp.add.label")}
+        </Button>
+        {rows.length >= 2 && (
+          <Button variant="ghost" onClick={share_}>
+            <Link2 />
+            {t("cmp.share")}
+          </Button>
         )}
-        <Link className="text-link" href="/universities">
-          Find universities with filters <ArrowUpRight size={14} />
-        </Link>
-      </section>
+        {selectedIDs.length > 0 && (
+          <Button variant="ghost" onClick={() => go([])}>
+            {t("cmp.clear")}
+          </Button>
+        )}
+      </div>
+      <CommandDialog
+        open={open}
+        onOpenChange={(v) => {
+          setOpen(v);
+          if (!v) setQuery("");
+        }}
+        title={t("cmp.add.label")}
+        description={t("cmp.add.placeholder")}
+        shouldFilter={false}
+      >
+        <CommandInput placeholder={t("cmp.add.placeholder")} value={query} onValueChange={setQuery} />
+        <CommandList>
+          {query.trim().length >= 2 && (
+            <CommandEmpty>
+              {searching ? t("cmp.add.searching") : searchError ? t("cmp.add.error") : t("cmp.add.none")}
+            </CommandEmpty>
+          )}
+          {results.slice(0, 8).map((u) => (
+            <CommandItem
+              key={u.id}
+              value={u.id}
+              onSelect={() => {
+                go([...selectedIDs, u.id]);
+                setOpen(false);
+                setQuery("");
+              }}
+              className="gap-3"
+            >
+              <UniversityLogo university={u} size="sm" />
+              <span className="min-w-0">
+                <span className="block truncate font-medium">{u.name}</span>
+                <span className="block truncate text-xs text-muted-foreground">
+                  {[u.city, countryName(u.country_code)].filter(Boolean).join(", ")}
+                </span>
+              </span>
+            </CommandItem>
+          ))}
+        </CommandList>
+      </CommandDialog>
+
       {error && (
-        <div role="alert" className="inline-error">
+        <div role="alert" className="mt-6 flex items-center gap-3 rounded-2xl border border-border p-4 text-sm">
           {error}
-          <button className="text-link" onClick={() => setRetry((v) => v + 1)}>
-            Try again
-          </button>
+          <Button size="sm" variant="outline" onClick={() => setRetry((v) => v + 1)}>
+            {t("cmp.retry")}
+          </Button>
         </div>
       )}
-      {loading && (
-        <p role="status" className="comparison-loading">
-          Loading your comparison…
-        </p>
-      )}
-      {!loading && !error && hiddenSelection.length > 0 && (
-        <p role="status" className="reference-note">
-          {hiddenSelection.length} selected institution(s) are unavailable in
-          this catalogue.{" "}
-          <button
-            className="text-link"
-            onClick={() => updateSelection(rows.map((u) => u.id))}
-          >
-            Remove unavailable choices
+      {!loading && !error && missing.length > 0 && (
+        <p role="status" className="mt-4 text-sm text-muted-foreground">
+          {t("cmp.unavailable", { n: missing.length })}{" "}
+          <button className="text-primary underline-offset-4 hover:underline" onClick={() => go(rows.map((u) => u.id))}>
+            {t("cmp.unavailable_remove")}
           </button>
         </p>
       )}
-      {rows.length > 0 ? (
+
+      {loading && rows.length === 0 ? (
+        <Skeleton className="mt-8 h-96 rounded-2xl" aria-label={t("cmp.loading")} />
+      ) : rows.length > 0 ? (
         <>
-          <div className="comparison-toolbar">
-            <div className="comparison-toolbar-title">
-              <SlidersHorizontal size={16} />
-              <strong>Make it your comparison</strong>
-              <span>{rows.length} universities</span>
-            </div>
-            <label>
-              <span>Currency</span>
-              <select
-                aria-label="Comparison currency"
-                value={displayCurrency}
-                onChange={(event) => setDisplayCurrency(event.target.value)}
-              >
-                <option value="original">Original currencies</option>
-                {["USD", "EUR", "GBP", "UZS"].map((code) => (
-                  <option key={code}>{code}</option>
-                ))}
-              </select>
-            </label>
-            <div className="comparison-export-actions">
-              <button
-                className="button button-secondary"
-                disabled={!enabled}
-                onClick={s.persistCompare}
-              >
-                <Bookmark size={15} />
-                Save
-              </button>
-              <button
-                className="button button-secondary"
-                disabled={!enabled}
-                onClick={shareComparison}
-              >
-                <Share2 size={15} />
-                Share
-              </button>
-              <button
-                className="button button-secondary"
-                disabled={!enabled || !visibleRows.length}
-                onClick={exportCSV}
-              >
-                <Download size={15} />
-                Export
-              </button>
-            </div>
-          </div>
-          <nav
-            className="comparison-categories"
-            aria-label="Comparison category"
-          >
-            {["Essentials", ...groups].map((group) => (
-              <button
-                key={group}
-                type="button"
-                aria-pressed={focus === group}
-                onClick={() => setFocus(group)}
-              >
-                {group === "All" ? "All information" : group}
-                <span>
-                  {
-                    ordered.filter(
-                      (row) =>
-                        inCategory(row, group) &&
-                        comparisonRowVisible(
-                          row.cells.map((c) => c.key),
-                          {
-                            onlyDifferences: differences,
-                            hideEmpty: hideMissing,
-                          },
-                        ),
-                    ).length
-                  }
-                </span>
-              </button>
-            ))}
-          </nav>
-          <div className="comparison-view-options">
-            {[
-              [differences, setDifferences, "Only differences"],
-              [hideMissing, setHideMissing, "Hide empty rows"],
-              [years, setYears, "Show years"],
-              [charts, setCharts, "Show charts"],
-            ].map(([value, set, label]) => (
-              <label key={String(label)}>
-                <input
-                  type="checkbox"
-                  checked={value as boolean}
-                  onChange={(event) =>
-                    (set as (value: boolean) => void)(event.target.checked)
-                  }
-                />
-                {label as string}
-              </label>
-            ))}
-            <span>{visibleRows.length} comparison rows</span>
-          </div>
-          {rows.length === 1 && (
-            <p className="reference-note">
-              Add one more university to compare side by side. Save, share and
-              export become available with two selections.
-            </p>
-          )}
-          {displayCurrency !== "original" && (
-            <p className="caption">
-              Conversions use stored source rates. Where no rate is available,
-              the original amount is shown. The export includes the displayed
-              value, original amount and source.
-            </p>
-          )}
-          {charts &&
-            (focus === "All" ||
-              focus === "Essentials" ||
-              focus === "Admissions" ||
-              focus === "Students") && (
-              <div className="comparison-graphs">
-                {(focus === "All" ||
-                  focus === "Essentials" ||
-                  focus === "Admissions") && (
-                  <EvidenceBars
-                    label="Admission rates · latest reported year"
-                    max={100}
-                    unit="%"
-                    rows={rows.map((u) => {
-                      const v = valueOf(u, "admission");
-                      return {
-                        label: u.short_name || u.name,
-                        value: v.value,
-                        detail: String(
-                          v.record?.year || "Reporting year not stated",
-                        ),
-                        url:
-                          v.record?.source_url || v.record?.data_sources?.url,
-                      };
-                    })}
-                  />
-                )}
-                {(focus === "All" ||
-                  focus === "Essentials" ||
-                  focus === "Students") && (
-                  <EvidenceBars
-                    label="Enrollment · latest reported figures"
-                    rows={rows.map((u) => {
-                      const v = valueOf(u, "enrollment");
-                      return {
-                        label: u.short_name || u.name,
-                        value: v.value,
-                        detail: String(
-                          v.record?.year || "Reporting year not stated",
-                        ),
-                        url:
-                          v.record?.source_url || v.record?.data_sources?.url,
-                      };
-                    })}
-                  />
-                )}
-              </div>
-            )}
-          <p className="comparison-scroll-hint">
-            Each figure opens its source. Missing values mean we have no
-            verified figure, never zero.
-          </p>
+          {rows.length === 1 && <p className="mt-6 text-sm text-muted-foreground">{t("cmp.one_more")}</p>}
           <div
-            className="table-wrap comparison-table-scroll"
-            tabIndex={0}
             role="region"
-            aria-label="University comparison table"
+            aria-label={t("cmp.region")}
+            tabIndex={0}
+            className="relative mt-6 max-h-[calc(100dvh-150px)] snap-x snap-mandatory scroll-pl-[104px] overflow-auto rounded-2xl border border-border bg-card md:max-h-none md:overflow-visible"
           >
-            <table className="research-table comparison-table">
-              <caption className="sr-only">
-                University comparison, {focus.toLowerCase()}; {rows.length}{" "}
-                universities
-              </caption>
-              <thead>
-                <tr>
-                  <th scope="col">
-                    <span className="comparison-table-label">
-                      {focus === "All" ? "All information" : focus}
-                    </span>
-                    <small>{visibleRows.length} points to compare</small>
-                  </th>
+            <table className="w-full border-separate border-spacing-0 text-sm" style={{ minWidth: `calc(104px + ${cols} * 224px)` }}>
+              <TableHeader>
+                <TableRow className="border-0 hover:bg-transparent">
+                  <TableHead className={`sticky left-0 top-0 z-30 w-[104px] rounded-tl-2xl border-b border-border bg-card ${stick} md:w-[200px]`} />
                   {rows.map((u) => (
-                    <th key={u.id} scope="col">
-                      <UniversityLogo university={u} size="sm" />
-                      <Link href={"/university/" + u.slug}>{u.name}</Link>
-                      <span>{countryName(u.country_code)}</span>
-                    </th>
+                    <TableHead
+                      key={u.id}
+                      scope="col"
+                      className={`sticky top-0 z-20 h-auto snap-start whitespace-normal border-b border-border bg-card p-3 text-left align-top last:rounded-tr-2xl ${stick}`}
+                    >
+                      <div className="flex items-start gap-3">
+                        <UniversityLogo university={u} size="md" />
+                        <div className="min-w-0 flex-1">
+                          <Link
+                            href={"/university/" + u.slug}
+                            className="line-clamp-2 font-semibold leading-snug text-foreground hover:underline"
+                          >
+                            {u.name}
+                          </Link>
+                          <p className="mt-0.5 truncate text-xs font-normal text-muted-foreground">
+                            {[u.city, countryName(u.country_code)].filter(Boolean).join(", ")}
+                          </p>
+                        </div>
+                        <Button
+                          variant="ghost"
+                          size="icon-xs"
+                          aria-label={t("cmp.remove", { name: u.name })}
+                          onClick={() => go(selectedIDs.filter((id) => id !== u.id))}
+                        >
+                          <X />
+                        </Button>
+                      </div>
+                    </TableHead>
                   ))}
-                </tr>
-              </thead>
-              <tbody>
-                {visibleRows.map((row, index) => (
-                  <ComparisonTableRow
-                    key={row.id}
-                    row={row}
-                    group={
-                      index === 0 || visibleRows[index - 1].group !== row.group
-                    }
-                  />
+                </TableRow>
+              </TableHeader>
+              <TableBody>
+                {groups.map((g) => (
+                  <Fragment key={g.key}>
+                    <TableRow className="border-0 hover:bg-transparent">
+                      <TableHead
+                        scope="rowgroup"
+                        className="sticky left-0 z-10 h-auto bg-muted px-3 py-2 text-left text-xs font-semibold text-muted-foreground"
+                      >
+                        {g.label}
+                      </TableHead>
+                      <TableCell colSpan={cols} className="bg-muted p-0" />
+                    </TableRow>
+                    {g.rows.map((r) => (
+                      <TableRow key={r.id} className="border-0 hover:bg-transparent">
+                        <TableHead
+                          scope="row"
+                          className="sticky left-0 z-10 h-auto whitespace-normal border-b border-border bg-card px-3 py-3 text-left align-top text-xs font-medium leading-snug text-muted-foreground md:text-sm"
+                        >
+                          {r.label}
+                        </TableHead>
+                        {r.cells.map((c, i) => (
+                          <TableCell
+                            key={rows[i].id}
+                            className="snap-start whitespace-normal border-b border-border p-1.5 align-top"
+                          >
+                            {c && (
+                              <div
+                                className={
+                                  "rounded-lg px-2 py-1.5 " +
+                                  (c.best ? "bg-primary/10 font-semibold text-foreground" : "")
+                                }
+                              >
+                                {c.items.map((it, k) => (
+                                  <div key={k} className={k ? "mt-1.5" : ""}>
+                                    <span className="tabular-nums">{it.text}</span>
+                                    {it.url && (
+                                      <a
+                                        href={it.url}
+                                        target="_blank"
+                                        rel="noreferrer"
+                                        aria-label={t("cmp.source")}
+                                        title={t("cmp.source")}
+                                        className="ml-1 inline-flex align-middle text-muted-foreground hover:text-primary"
+                                      >
+                                        <ArrowUpRight className="size-3.5" />
+                                      </a>
+                                    )}
+                                    {it.sub && (
+                                      <span className="block text-xs font-normal text-muted-foreground">{it.sub}</span>
+                                    )}
+                                  </div>
+                                ))}
+                              </div>
+                            )}
+                          </TableCell>
+                        ))}
+                      </TableRow>
+                    ))}
+                  </Fragment>
                 ))}
-              </tbody>
+              </TableBody>
             </table>
-            {!visibleRows.length && (
-              <div className="comparison-no-rows">
-                <h2>No rows match these filters.</h2>
-                <p>
-                  Try showing all categories, identical values or empty rows.
-                </p>
-                <button
-                  className="text-link"
-                  onClick={() => {
-                    setFocus("All");
-                    setDifferences(false);
-                    setHideMissing(false);
-                  }}
-                >
-                  Reset view filters
-                </button>
-              </div>
-            )}
           </div>
-          <p className="reference-note">
-            Compare the same student category and reporting year before judging
-            a difference. Rank bands and ties retain the publisher’s labels; an
-            unavailable rank is never assigned a guessed position.
-          </p>
-          {enabled && (
-            <Link
-              className="text-link"
-              href={"/research?ids=" + rows.map((u) => u.id).join(",")}
-            >
-              Explain this comparison <ArrowRight size={15} />
-            </Link>
+          {groups.length === 0 ? (
+            <p className="mt-4 text-sm text-muted-foreground">{t("cmp.nodata")}</p>
+          ) : (
+            rows.length >= 2 && <p className="mt-3 text-xs text-muted-foreground">{t("cmp.legend")}</p>
           )}
         </>
       ) : (
         !loading &&
         !error && (
-          <EmptyState
-            title="Choose your universities."
-            description="Search above or open the directory to build a comparison."
-            action={
-              <Link className="button button-primary" href="/universities">
-                Explore universities
-              </Link>
-            }
-          />
+          <Empty className="mt-8 items-stretch rounded-2xl border border-border p-6 md:p-10">
+            <EmptyHeader className="max-w-none items-start text-left">
+              <EmptyTitle className={`${HEADING} text-2xl font-semibold`}>{t("cmp.empty.title")}</EmptyTitle>
+              <EmptyDescription>{t("cmp.empty.lede")}</EmptyDescription>
+            </EmptyHeader>
+            <div className="grid gap-3 sm:grid-cols-2">
+              {PAIRS.map((p) => (
+                <button
+                  key={p.key}
+                  type="button"
+                  onClick={() => go(p.ids)}
+                  className="rounded-xl border border-border p-4 text-left transition hover:-translate-y-px hover:border-foreground/30"
+                >
+                  <span className="block font-semibold">{t(p.key)}</span>
+                  <span className="mt-1 block text-sm text-muted-foreground">{p.names.join(" · ")}</span>
+                </button>
+              ))}
+            </div>
+            <EmptyContent className="max-w-none items-start">
+              <Button asChild variant="outline" className="rounded-full">
+                <Link href="/universities">{t("cmp.browse")}</Link>
+              </Button>
+            </EmptyContent>
+          </Empty>
         )
       )}
     </div>
-  );
-}
-function ComparisonTableRow({
-  row,
-  group,
-}: {
-  row: ComparisonRow;
-  group: boolean;
-}) {
-  return (
-    <>
-      {group && (
-        <tr className="group-row">
-          <th colSpan={row.cells.length + 1}>{row.group}</th>
-        </tr>
-      )}
-      <tr>
-        <th scope="row">{row.label}</th>
-        {row.cells.map((cell, index) => (
-          <td
-            key={index}
-            data-availability={cell.key === null ? "missing" : "reported"}
-          >
-            {cell.node}
-          </td>
-        ))}
-      </tr>
-    </>
   );
 }

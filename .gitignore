@@ -69,3 +69,4 @@ next-env.d.ts
 
 # Reproducible local database import bundles
 /data/exports/
+/data/generated/

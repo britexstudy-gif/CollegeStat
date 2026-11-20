@@ -7,7 +7,7 @@ export function filterLabel(key: string, value: unknown) {
     case "q":
       return `Search: “${text}”`;
     case "country":
-      return countryName(text);
+      return text.split(",").map(countryName).join(", ");
     case "region":
       return `Region: ${text}`;
     case "city":

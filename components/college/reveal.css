@@ -1,0 +1,55 @@
+/* Scroll reveal (components/college/reveal.tsx). Only elements that start below the
+   fold get data-rv="wait"; everything else is visible from the first paint.
+   Text rises and un-blurs; picture frames open with a clip (no scaling, no zoom). */
+.rv[data-rv="wait"],
+[data-rv="wait"] {
+  opacity: 0;
+  filter: blur(var(--rv-blur, 6px));
+  transform: translateY(var(--rv-y, 18px));
+}
+.rv[data-rv="in"],
+[data-rv="in"] {
+  opacity: 1;
+  filter: none;
+  transform: none;
+  transition:
+    opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1) var(--rv-delay, 0ms),
+    filter 0.8s cubic-bezier(0.16, 1, 0.3, 1) var(--rv-delay, 0ms),
+    transform 0.9s cubic-bezier(0.16, 1, 0.3, 1) var(--rv-delay, 0ms);
+}
+/* Picture frames: a curtain that opens from the bottom, plus a short rise. */
+[data-rv-kind="frame"][data-rv="wait"] {
+  opacity: 1;
+  filter: none;
+  clip-path: inset(18% 0 0 0 round 24px);
+  transform: translateY(var(--rv-y, 28px));
+}
+[data-rv-kind="frame"][data-rv="in"] {
+  clip-path: inset(0 0 0 0 round 24px);
+  transition:
+    clip-path 1.1s cubic-bezier(0.16, 1, 0.3, 1) var(--rv-delay, 0ms),
+    transform 1.1s cubic-bezier(0.16, 1, 0.3, 1) var(--rv-delay, 0ms);
+}
+/* The capture inside slides in a beat later, so the frame and the screen read as two layers. */
+[data-rv-kind="frame"][data-rv="wait"] .lp-img {
+  opacity: 0;
+  translate: 40px 0;
+}
+[data-rv-kind="frame"][data-rv="in"] .lp-img {
+  opacity: 1;
+  translate: 0 0;
+  transition:
+    opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1) calc(var(--rv-delay, 0ms) + 180ms),
+    translate 1.1s cubic-bezier(0.16, 1, 0.3, 1) calc(var(--rv-delay, 0ms) + 180ms);
+}
+@media (prefers-reduced-motion: reduce) {
+  [data-rv],
+  [data-rv] .lp-img {
+    opacity: 1 !important;
+    filter: none !important;
+    clip-path: none !important;
+    transform: none !important;
+    translate: none !important;
+    transition: none !important;
+  }
+}

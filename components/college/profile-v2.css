@@ -1,0 +1,599 @@
+/* My profile (Nov 18): an applicant summary, not a form. The numbers a university reads first
+ * on one line, then academics, activities and honours as plain lists, with strength and goals
+ * at the side. Dashboard tokens (dash-kit.css), so light and dark follow the theme. */
+.pf2 {
+  gap: 28px;
+}
+.pf2-grow {
+  flex: 1;
+  min-width: 0;
+}
+
+/* Head */
+.pf2-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 18px 20px;
+}
+.pf2-id {
+  flex: 1;
+  min-width: 220px;
+}
+.pf2-id h1 {
+  font-family: var(--cs-font-display);
+  font-size: clamp(26px, 3vw, 34px);
+  font-weight: 650;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+}
+.pf2-id p {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 6px;
+  color: var(--dk-muted);
+  font-size: 14.5px;
+}
+.pf2-id p span + span::before {
+  content: "·";
+  margin: 0 8px;
+  color: var(--dk-faint);
+}
+.pf2-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.pf2-plan {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--dk-muted);
+  font-size: 13px;
+  font-weight: 500;
+}
+.pf2-plan svg {
+  width: 15px;
+  height: 15px;
+}
+.pf2-plan span {
+  color: var(--dk-faint);
+  font-weight: 400;
+}
+.pf2-plan:hover {
+  color: var(--dk-ink);
+}
+
+/* At a glance: the key numbers, hairline-separated, no boxes. */
+.pf2-glance {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  margin: 0;
+  border-top: 1px solid var(--dk-line);
+  border-bottom: 1px solid var(--dk-line);
+}
+.pf2-glance > div {
+  display: grid;
+  align-content: start;
+  gap: 2px;
+  padding: 18px 20px 18px 0;
+}
+.pf2-glance > div + div {
+  padding-left: 20px;
+  border-left: 1px solid var(--dk-line);
+}
+.pf2-glance dt {
+  color: var(--dk-muted);
+  font-size: 12.5px;
+}
+.pf2-glance dd {
+  margin: 0;
+}
+.pf2-glance dd.dk-num {
+  font-family: var(--cs-font-display);
+  font-size: 30px;
+  font-weight: 650;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+}
+.pf2-glance .is-muted dd.dk-num {
+  color: var(--dk-muted);
+}
+.pf2-sub {
+  color: var(--dk-faint);
+  font-size: 12.5px;
+}
+
+/* Body */
+.pf2-body {
+  display: grid;
+  grid-template-columns: minmax(0, 1.7fr) minmax(280px, 1fr);
+  gap: 40px;
+  align-items: start;
+}
+.pf2-main {
+  display: grid;
+  gap: 32px;
+  min-width: 0;
+}
+.pf2-side {
+  display: grid;
+  gap: 16px;
+  min-width: 0;
+}
+.pf2-sec-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+.pf2-sec-head h2 {
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+.pf2-edit {
+  color: var(--dk-muted);
+  font-size: 13px;
+}
+.pf2-edit:hover {
+  color: var(--dk-ink);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.pf2-add {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--dk-accent);
+  font-size: 13.5px;
+  font-weight: 500;
+}
+.pf2-add svg {
+  width: 14px;
+  height: 14px;
+}
+
+/* Academics: label / value rows on hairlines. */
+.pf2-rows {
+  margin: 0;
+}
+.pf2-row {
+  display: grid;
+  grid-template-columns: 150px minmax(0, 1fr);
+  gap: 16px;
+  padding: 11px 0;
+  border-top: 1px solid var(--dk-line);
+  font-size: 14px;
+}
+.pf2-row dt {
+  color: var(--dk-muted);
+}
+.pf2-row dd {
+  margin: 0;
+}
+
+/* Activities: numbered, role and place first, time on the right. */
+.pf2-acts,
+.pf2-honours {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.pf2-acts li,
+.pf2-honours li {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 12px 0;
+  border-top: 1px solid var(--dk-line);
+  font-size: 14px;
+}
+.pf2-act-n {
+  display: grid;
+  flex: none;
+  place-items: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 8px;
+  background: var(--dk-subtle, var(--dk-hover));
+  color: var(--dk-muted);
+  font-size: 12px;
+  font-weight: 600;
+}
+.pf2-acts strong {
+  display: block;
+  font-weight: 600;
+}
+.pf2-acts .pf2-grow span {
+  color: var(--dk-muted);
+  font-size: 13px;
+}
+.pf2-time {
+  flex: none;
+  color: var(--dk-muted);
+  font-size: 12.5px;
+  white-space: nowrap;
+}
+.pf2-medal {
+  flex: none;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--dk-line-strong);
+}
+.pf2-medal.is-gold {
+  background: #e0a526;
+}
+.pf2-medal.is-silver {
+  background: #a8b0bb;
+}
+.pf2-medal.is-bronze {
+  background: #c27c4a;
+}
+.pf2-medal.is-honourable {
+  background: var(--dk-accent);
+}
+.pf2-level {
+  flex: none;
+  padding: 2px 9px;
+  border-radius: 999px;
+  background: var(--dk-subtle, var(--dk-hover));
+  color: var(--dk-muted);
+  font-size: 12px;
+}
+
+/* Side cards */
+.pf2-card {
+  display: grid;
+  gap: 12px;
+  padding: 18px 20px;
+  border: 1px solid var(--dk-line);
+  border-radius: 16px;
+  background: var(--dk-panel);
+}
+.pf2-card .pf2-sec-head {
+  margin-bottom: 0;
+}
+.pf2-pct {
+  font-family: var(--cs-font-display);
+  font-size: 22px;
+  font-weight: 650;
+}
+.pf2-missing {
+  display: grid;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.pf2-missing a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--dk-accent);
+  font-size: 13.5px;
+}
+.pf2-missing svg {
+  width: 14px;
+  height: 14px;
+}
+.pf2-note {
+  color: var(--dk-ink);
+  font-size: 13.5px;
+}
+.pf2-fine {
+  padding-top: 10px;
+  border-top: 1px solid var(--dk-line);
+  color: var(--dk-faint);
+  font-size: 12px;
+  line-height: 1.5;
+}
+.pf2-goals {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+}
+.pf2-goals dt {
+  margin-bottom: 4px;
+  color: var(--dk-muted);
+  font-size: 12.5px;
+}
+.pf2-goals dd {
+  margin: 0;
+  font-size: 14px;
+}
+.pf2-flags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 14px;
+}
+
+@media (max-width: 900px) {
+  .pf2-body {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 28px;
+  }
+}
+@media (max-width: 600px) {
+  .pf2-actions {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .pf2-glance {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .pf2-glance > div,
+  .pf2-glance > div + div {
+    padding: 14px 12px;
+    border-left: 0;
+  }
+  .pf2-glance > div:nth-child(even) {
+    border-left: 1px solid var(--dk-line);
+  }
+  .pf2-glance > div:nth-child(n + 3) {
+    border-top: 1px solid var(--dk-line);
+  }
+  .pf2-glance dd.dk-num {
+    font-size: 24px;
+  }
+  .pf2-row {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 2px;
+  }
+  .pf2-acts li {
+    flex-wrap: wrap;
+  }
+  .pf2-time {
+    width: 100%;
+    padding-left: 40px;
+  }
+}
+
+/* Strength by part: one row per profile part, a dot per answer. */
+.pf2-parts {
+  display: grid;
+  gap: 2px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.pf2-parts li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 0;
+  font-size: 13.5px;
+}
+.pf2-parts svg {
+  flex: none;
+  width: 15px;
+  height: 15px;
+  color: var(--dk-muted);
+}
+.pf2-dots {
+  display: inline-flex;
+  gap: 3px;
+}
+.pf2-dots i {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--dk-line-strong, var(--dk-line));
+}
+.pf2-dots i.is-on {
+  background: var(--dk-accent);
+}
+.pf2-part-n {
+  width: 38px;
+  color: var(--dk-muted);
+  font-size: 12.5px;
+  text-align: right;
+}
+
+/* AI read */
+.pf2-ai .pf2-sec-head h2 {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+.pf2-ai .pf2-sec-head h2 svg {
+  width: 15px;
+  height: 15px;
+  color: var(--dk-accent);
+}
+.pf2-ai .pf2-edit {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+.pf2-ai .pf2-edit svg {
+  width: 12px;
+  height: 12px;
+}
+.pf2-ai .is-spin {
+  animation: r2-spin 1s linear infinite;
+}
+@keyframes r2-spin {
+  to {
+    rotate: 360deg;
+  }
+}
+.pf2-gaps {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+  padding: 10px 0 0;
+  border-top: 1px solid var(--dk-line);
+  list-style: none;
+}
+.pf2-gaps li {
+  display: flex;
+  gap: 8px;
+  font-size: 13.5px;
+}
+.pf2-gaps svg {
+  flex: none;
+  width: 15px;
+  height: 15px;
+  margin-top: 2px;
+  color: #e8590c;
+}
+.pf2-ai-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-self: start;
+  gap: 7px;
+  height: 36px;
+  padding: 0 14px;
+  border-radius: 999px;
+  background: var(--dk-ink);
+  color: var(--dk-panel);
+  font-size: 13px;
+  font-weight: 600;
+}
+.pf2-ai-btn svg {
+  width: 14px;
+  height: 14px;
+}
+.pf2-err {
+  color: var(--dk-danger, #dc2626);
+  font-size: 13px;
+}
+
+/* You and your list: one row per university, a mark per requirement. */
+.pf2-fit {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+.pf2-fit th,
+.pf2-fit td {
+  padding: 10px 0;
+  border-top: 1px solid var(--dk-line);
+  text-align: center;
+  vertical-align: middle;
+}
+.pf2-fit thead th {
+  padding-top: 0;
+  border-top: 0;
+  color: var(--dk-muted);
+  font-size: 12.5px;
+  font-weight: 500;
+}
+.pf2-fit th[scope="row"] {
+  text-align: left;
+  font-weight: 400;
+}
+.pf2-fit th:first-child {
+  width: 55%;
+}
+.pf2-fit-name {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+}
+.pf2-fit-name > span:not(.pf2-tier) {
+  overflow: hidden;
+  font-weight: 500;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.pf2-fit-name:hover > span:not(.pf2-tier) {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.pf2-tier {
+  flex: none;
+  padding: 1px 7px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 600;
+}
+.pf2-tier.is-reach {
+  background: color-mix(in srgb, #e8590c 12%, transparent);
+  color: #e8590c;
+}
+.pf2-tier.is-target {
+  background: color-mix(in srgb, var(--dk-accent) 12%, transparent);
+  color: var(--dk-accent);
+}
+.pf2-tier.is-likely {
+  background: color-mix(in srgb, #16a34a 12%, transparent);
+  color: #16a34a;
+}
+.pf2-mark {
+  display: inline-grid;
+  place-items: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  color: var(--dk-faint);
+}
+.pf2-mark svg {
+  width: 13px;
+  height: 13px;
+  stroke-width: 2.5;
+}
+.pf2-mark.is-ok {
+  background: color-mix(in srgb, #16a34a 14%, transparent);
+  color: #16a34a;
+}
+.pf2-mark.is-no {
+  background: color-mix(in srgb, #e8590c 14%, transparent);
+  color: #e8590c;
+}
+.pf2-band {
+  font-size: 12.5px;
+  font-weight: 500;
+}
+.pf2-band.is-below {
+  color: #e8590c;
+}
+.pf2-band.is-within {
+  color: var(--dk-accent);
+}
+.pf2-band.is-above {
+  color: #16a34a;
+}
+@media (max-width: 600px) {
+  .pf2-fit th:first-child {
+    width: auto;
+  }
+  .pf2-tier {
+    display: none;
+  }
+}
+.pf2-fit td.pf2-ready {
+  width: 150px;
+  text-align: right;
+}
+.pf2-ready {
+  color: var(--dk-muted);
+  font-size: 12.5px;
+  white-space: nowrap;
+}
+.pf2-ready-bar {
+  display: inline-block;
+  width: 80px;
+  height: 6px;
+  margin-right: 10px;
+  overflow: hidden;
+  border-radius: 6px;
+  background: var(--dk-subtle, var(--dk-line));
+  vertical-align: middle;
+}
+.pf2-ready-bar i {
+  display: block;
+  height: 100%;
+  border-radius: 6px;
+  background: var(--dk-accent);
+}
+.pf2-ready-bar i.is-full {
+  background: #16a34a;
+}
+.pf2-fit thead th:last-child {
+  text-align: right;
+}

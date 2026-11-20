@@ -1,0 +1,996 @@
+{
+ "generated": "2026-11-16",
+ "records": [
+  {
+   "id": "99bb5a9f-16ee-5a11-9d09-107f319ddf43",
+   "slug": "omsk-state-technical-university-99bb5a9f",
+   "name": "Omsk State Technical University",
+   "country_code": "RU",
+   "collector": "deepseek-ds-collect",
+   "tuition": {
+    "amount": null,
+    "currency": null,
+    "note": "not found on fetched official pages",
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "method": "fetched"
+   },
+   "deadlines": {
+    "value": null,
+    "note": "not found",
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "method": "fetched"
+   },
+   "platform": {
+    "value": null,
+    "note": "not found",
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "method": "fetched"
+   },
+   "english": {
+    "ielts": null,
+    "toefl_ibt": null,
+    "duolingo": null,
+    "note": "not found",
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "method": "fetched"
+   },
+   "sat_act": {
+    "value": null,
+    "note": "not found"
+   },
+   "acceptance_rate": {
+    "value": null,
+    "note": "not collected"
+   },
+   "documents": {
+    "value": null,
+    "note": "not found",
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "method": "fetched"
+   },
+   "programmes": {
+    "value": null,
+    "note": "not found",
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "method": "fetched"
+   },
+   "notes": [
+    "no readable official pages (site blocked, unreachable or robots-disallowed)"
+   ]
+  },
+  {
+   "id": "336148d3-f0b7-519c-98c8-aec6be0ea26a",
+   "slug": "warsaw-university-of-technology-336148d3",
+   "name": "Warsaw University of Technology",
+   "country_code": "PL",
+   "collector": "deepseek-ds-collect",
+   "tuition": {
+    "amount": null,
+    "currency": null,
+    "note": "not found on fetched official pages",
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "method": "fetched"
+   },
+   "deadlines": {
+    "value": null,
+    "note": "not found",
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "method": "fetched"
+   },
+   "platform": {
+    "value": null,
+    "note": "not found",
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "method": "fetched"
+   },
+   "english": {
+    "ielts": null,
+    "toefl_ibt": null,
+    "duolingo": null,
+    "note": "not found",
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "method": "fetched"
+   },
+   "sat_act": {
+    "value": null,
+    "note": "not found"
+   },
+   "acceptance_rate": {
+    "value": null,
+    "note": "not collected"
+   },
+   "documents": {
+    "value": null,
+    "note": "not found",
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "method": "fetched"
+   },
+   "programmes": {
+    "value": null,
+    "note": "not found",
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "method": "fetched"
+   },
+   "notes": [
+    "no readable official pages (site blocked, unreachable or robots-disallowed)"
+   ]
+  },
+  {
+   "id": "38a2e7d1-f28d-575f-a994-76619f04e87c",
+   "slug": "nantong-university-38a2e7d1",
+   "name": "Nantong University",
+   "country_code": "CN",
+   "collector": "deepseek-ds-collect",
+   "tuition": {
+    "amount": null,
+    "currency": null,
+    "note": "not found on fetched official pages",
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "method": "fetched"
+   },
+   "deadlines": {
+    "value": null,
+    "note": "not found",
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "method": "fetched"
+   },
+   "platform": {
+    "value": null,
+    "note": "not found",
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "method": "fetched"
+   },
+   "english": {
+    "ielts": null,
+    "toefl_ibt": null,
+    "duolingo": null,
+    "note": "not found",
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "method": "fetched"
+   },
+   "sat_act": {
+    "value": null,
+    "note": "not found"
+   },
+   "acceptance_rate": {
+    "value": null,
+    "note": "not collected"
+   },
+   "documents": {
+    "value": null,
+    "note": "not found",
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "method": "fetched"
+   },
+   "programmes": {
+    "value": null,
+    "note": "not found",
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "method": "fetched"
+   },
+   "notes": [
+    "no readable official pages (site blocked, unreachable or robots-disallowed)"
+   ]
+  },
+  {
+   "id": "df57be8f-c418-5bf6-b66f-ac7e097cf0a9",
+   "slug": "wuhan-university-of-science-and-technology-df57be8f",
+   "name": "Wuhan University of Science and Technology",
+   "country_code": "CN",
+   "collector": "deepseek-ds-collect",
+   "tuition": {
+    "amount": null,
+    "currency": null,
+    "note": "not found on fetched official pages",
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "method": "fetched"
+   },
+   "deadlines": {
+    "value": null,
+    "note": "not found",
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "method": "fetched"
+   },
+   "platform": {
+    "value": null,
+    "note": "not found",
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "method": "fetched"
+   },
+   "english": {
+    "ielts": null,
+    "toefl_ibt": null,
+    "duolingo": null,
+    "note": "not found",
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "method": "fetched"
+   },
+   "sat_act": {
+    "value": null,
+    "note": "not found"
+   },
+   "acceptance_rate": {
+    "value": null,
+    "note": "not collected"
+   },
+   "documents": {
+    "value": null,
+    "note": "not found",
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "method": "fetched"
+   },
+   "programmes": {
+    "value": null,
+    "note": "not found",
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "method": "fetched"
+   },
+   "notes": [
+    "no readable official pages (site blocked, unreachable or robots-disallowed)"
+   ]
+  },
+  {
+   "id": "21e26f0d-fd30-521e-a9f3-fb97b8452d78",
+   "slug": "university-of-roma-la-sapienza-21e26f0d",
+   "name": "University of Roma \"La Sapienza\"",
+   "country_code": "IT",
+   "collector": "deepseek-ds-collect",
+   "tuition": {
+    "amount": 300,
+    "currency": "EUR",
+    "academic_year": "2026/27",
+    "usd": null,
+    "fx_rate_usd_per_unit": null,
+    "fx_date": null,
+    "mandatory_fees": null,
+    "living_cost": null,
+    "note": "Range €300-1500/year according to country of residence; max fees unchanged",
+    "source_url": "http://www.uniroma1.it/en/en/admissions",
+    "retrieved_at": "2026-11-16",
+    "method": "fetched"
+   },
+   "deadlines": {
+    "value": [
+     {
+      "round": "Non-EU visa applicants",
+      "date": "2026-05-15",
+      "cycle": "2027 entry"
+     },
+     {
+      "round": "EU/EU-equivalent applicants",
+      "date": "2026-07-31",
+      "cycle": "2027 entry"
+     },
+     {
+      "round": "Pre-enrolment finalization",
+      "date": "2026-06-30",
+      "cycle": "2027 entry"
+     }
+    ],
+    "source_url": "http://www.uniroma1.it/en/en/admissions",
+    "retrieved_at": "2026-11-16",
+    "method": "fetched"
+   },
+   "platform": {
+    "value": "Direct portal",
+    "source_url": "http://www.uniroma1.it/en/en/admissions",
+    "retrieved_at": "2026-11-16",
+    "method": "fetched"
+   },
+   "english": {
+    "ielts": null,
+    "toefl_ibt": null,
+    "duolingo": null,
+    "note": "not found",
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "method": "fetched"
+   },
+   "sat_act": {
+    "value": null,
+    "note": "not found"
+   },
+   "acceptance_rate": {
+    "value": null,
+    "note": "not collected"
+   },
+   "documents": {
+    "value": null,
+    "note": "not found",
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "method": "fetched"
+   },
+   "programmes": {
+    "value": null,
+    "note": "not found",
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "method": "fetched"
+   },
+   "notes": [
+    "pages fetched: 7",
+    "tokens in/out: 2226/227"
+   ]
+  },
+  {
+   "id": "85f3ec1b-a36e-525c-b6db-80fa460c6add",
+   "slug": "eastern-institute-of-technology-ningbo-85f3ec1b",
+   "name": "Eastern Institute of Technology, Ningbo",
+   "country_code": "CN",
+   "collector": "deepseek-ds-collect",
+   "tuition": {
+    "amount": null,
+    "currency": null,
+    "note": "not found on fetched official pages",
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "method": "fetched"
+   },
+   "deadlines": {
+    "value": null,
+    "note": "not found",
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "method": "fetched"
+   },
+   "platform": {
+    "value": null,
+    "note": "not found",
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "method": "fetched"
+   },
+   "english": {
+    "ielts": null,
+    "toefl_ibt": null,
+    "duolingo": null,
+    "note": "not found",
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "method": "fetched"
+   },
+   "sat_act": {
+    "value": null,
+    "note": "not found"
+   },
+   "acceptance_rate": {
+    "value": null,
+    "note": "not collected"
+   },
+   "documents": {
+    "value": null,
+    "note": "not found",
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "method": "fetched"
+   },
+   "programmes": {
+    "value": null,
+    "note": "not found",
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "method": "fetched"
+   },
+   "notes": [
+    "pages fetched: 3",
+    "tokens in/out: 615/118"
+   ]
+  },
+  {
+   "id": "b79365ba-6a8b-5778-a0ca-0a6868f74169",
+   "slug": "universita-degli-studi-di-enna-kore-b79365ba",
+   "name": "Università degli Studi di Enna Kore",
+   "country_code": "IT",
+   "collector": "deepseek-ds-collect",
+   "tuition": {
+    "amount": null,
+    "currency": null,
+    "note": "not found on fetched official pages",
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "method": "fetched"
+   },
+   "deadlines": {
+    "value": null,
+    "note": "not found",
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "method": "fetched"
+   },
+   "platform": {
+    "value": null,
+    "note": "not found",
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "method": "fetched"
+   },
+   "english": {
+    "ielts": null,
+    "toefl_ibt": null,
+    "duolingo": null,
+    "note": "not found",
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "method": "fetched"
+   },
+   "sat_act": {
+    "value": null,
+    "note": "not found"
+   },
+   "acceptance_rate": {
+    "value": null,
+    "note": "not collected"
+   },
+   "documents": {
+    "value": null,
+    "note": "not found",
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "method": "fetched"
+   },
+   "programmes": {
+    "value": null,
+    "note": "not found",
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "method": "fetched"
+   },
+   "notes": [
+    "pages fetched: 8",
+    "tokens in/out: 876/118"
+   ]
+  },
+  {
+   "id": "4c6c3693-a60d-5db2-9474-183c31cec805",
+   "slug": "russian-economic-university-after-g-v-plekhanov-4c6c3693",
+   "name": "Russian Economic University after G.V. Plekhanov",
+   "country_code": "UZ",
+   "collector": "deepseek-ds-collect",
+   "tuition": {
+    "amount": null,
+    "currency": null,
+    "note": "not found on fetched official pages",
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "method": "fetched"
+   },
+   "deadlines": {
+    "value": null,
+    "note": "not found",
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "method": "fetched"
+   },
+   "platform": {
+    "value": null,
+    "note": "not found",
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "method": "fetched"
+   },
+   "english": {
+    "ielts": null,
+    "toefl_ibt": null,
+    "duolingo": null,
+    "note": "not found",
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "method": "fetched"
+   },
+   "sat_act": {
+    "value": null,
+    "note": "not found"
+   },
+   "acceptance_rate": {
+    "value": null,
+    "note": "not collected"
+   },
+   "documents": {
+    "value": null,
+    "note": "not found",
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "method": "fetched"
+   },
+   "programmes": {
+    "value": null,
+    "note": "not found",
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "method": "fetched"
+   },
+   "notes": [
+    "no readable official pages (site blocked, unreachable or robots-disallowed)"
+   ]
+  },
+  {
+   "id": "9bab4e8c-562d-59e7-8b66-05c72307dcbe",
+   "slug": "free-university-of-bozen-9bab4e8c",
+   "name": "Free University of Bozen",
+   "country_code": "IT",
+   "collector": "deepseek-ds-collect",
+   "tuition": {
+    "amount": 1200,
+    "currency": "EUR",
+    "academic_year": null,
+    "usd": null,
+    "fx_rate_usd_per_unit": null,
+    "fx_date": null,
+    "mandatory_fees": null,
+    "living_cost": null,
+    "note": "ca. €1200/year; 2 instalments of €600",
+    "source_url": "http://www.unibz.it/en/faculties/agricultural-environmental-food-sciences/bachelor-food-enogastronomy-sciences",
+    "retrieved_at": "2026-11-16",
+    "method": "fetched"
+   },
+   "deadlines": {
+    "value": null,
+    "note": "not found",
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "method": "fetched"
+   },
+   "platform": {
+    "value": "Direct portal",
+    "source_url": "http://www.unibz.it/en/faculties/agricultural-environmental-food-sciences/bachelor-food-enogastronomy-sciences",
+    "retrieved_at": "2026-11-16",
+    "method": "fetched"
+   },
+   "english": {
+    "ielts": null,
+    "toefl_ibt": null,
+    "duolingo": null,
+    "note": "not found",
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "method": "fetched"
+   },
+   "sat_act": {
+    "value": null,
+    "note": "not found"
+   },
+   "acceptance_rate": {
+    "value": null,
+    "note": "not collected"
+   },
+   "documents": {
+    "value": [
+     "language certificate",
+     "secondary school diploma",
+     "university degree/transcript (if applicable)"
+    ],
+    "source_url": "http://www.unibz.it/en/faculties/agricultural-environmental-food-sciences/bachelor-food-enogastronomy-sciences",
+    "retrieved_at": "2026-11-16",
+    "method": "fetched"
+   },
+   "programmes": {
+    "value": [
+     {
+      "name": "Food and Enogastronomy Sciences",
+      "faculty": null,
+      "years": null,
+      "requires": null
+     }
+    ],
+    "source_url": "http://www.unibz.it/en/faculties/agricultural-environmental-food-sciences/bachelor-food-enogastronomy-sciences",
+    "retrieved_at": "2026-11-16",
+    "method": "fetched"
+   },
+   "notes": [
+    "pages fetched: 6",
+    "tokens in/out: 2850/170"
+   ]
+  },
+  {
+   "id": "2b795475-5d25-502f-ac7e-ec1a761312c5",
+   "slug": "nagaoka-university-of-technology-2b795475",
+   "name": "Nagaoka University of Technology",
+   "country_code": "JP",
+   "collector": "deepseek-ds-collect",
+   "tuition": {
+    "amount": null,
+    "currency": null,
+    "note": "not found on fetched official pages",
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "method": "fetched"
+   },
+   "deadlines": {
+    "value": null,
+    "note": "not found",
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "method": "fetched"
+   },
+   "platform": {
+    "value": null,
+    "note": "not found",
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "method": "fetched"
+   },
+   "english": {
+    "ielts": null,
+    "toefl_ibt": null,
+    "duolingo": null,
+    "note": "not found",
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "method": "fetched"
+   },
+   "sat_act": {
+    "value": null,
+    "note": "not found"
+   },
+   "acceptance_rate": {
+    "value": null,
+    "note": "not collected"
+   },
+   "documents": {
+    "value": null,
+    "note": "not found",
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "method": "fetched"
+   },
+   "programmes": {
+    "value": null,
+    "note": "not found",
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "method": "fetched"
+   },
+   "notes": [
+    "pages fetched: 1",
+    "tokens in/out: 487/118"
+   ]
+  },
+  {
+   "id": "cf1fa9f3-d2fa-5ed5-ac1d-3090fc26f614",
+   "slug": "university-of-parma-cf1fa9f3",
+   "name": "University of Parma",
+   "country_code": "IT",
+   "collector": "deepseek-ds-collect",
+   "tuition": {
+    "amount": null,
+    "currency": null,
+    "note": "not found on fetched official pages",
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "method": "fetched"
+   },
+   "deadlines": {
+    "value": null,
+    "note": "not found",
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "method": "fetched"
+   },
+   "platform": {
+    "value": null,
+    "note": "not found",
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "method": "fetched"
+   },
+   "english": {
+    "ielts": null,
+    "toefl_ibt": null,
+    "duolingo": null,
+    "note": "not found",
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "method": "fetched"
+   },
+   "sat_act": {
+    "value": null,
+    "note": "not found"
+   },
+   "acceptance_rate": {
+    "value": null,
+    "note": "not collected"
+   },
+   "documents": {
+    "value": null,
+    "note": "not found",
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "method": "fetched"
+   },
+   "programmes": {
+    "value": null,
+    "note": "not found",
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "method": "fetched"
+   },
+   "notes": [
+    "pages fetched: 2",
+    "tokens in/out: 566/137"
+   ]
+  },
+  {
+   "id": "85061c78-c1ee-5e28-ac6b-b92da2ed3ab6",
+   "slug": "moscow-state-university-85061c78",
+   "name": "Moscow State University",
+   "country_code": "TJ",
+   "collector": "deepseek-ds-collect",
+   "tuition": {
+    "amount": null,
+    "currency": null,
+    "note": "not found on fetched official pages",
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "method": "fetched"
+   },
+   "deadlines": {
+    "value": null,
+    "note": "not found",
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "method": "fetched"
+   },
+   "platform": {
+    "value": null,
+    "note": "not found",
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "method": "fetched"
+   },
+   "english": {
+    "ielts": null,
+    "toefl_ibt": null,
+    "duolingo": null,
+    "note": "not found",
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "method": "fetched"
+   },
+   "sat_act": {
+    "value": null,
+    "note": "not found"
+   },
+   "acceptance_rate": {
+    "value": null,
+    "note": "not collected"
+   },
+   "documents": {
+    "value": null,
+    "note": "not found",
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "method": "fetched"
+   },
+   "programmes": {
+    "value": null,
+    "note": "not found",
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "method": "fetched"
+   },
+   "notes": [
+    "no readable official pages (site blocked, unreachable or robots-disallowed)"
+   ]
+  },
+  {
+   "id": "9eafdb74-529f-5b4a-b092-09a6594d14b2",
+   "slug": "tula-state-university-9eafdb74",
+   "name": "Tula State University",
+   "country_code": "RU",
+   "collector": "deepseek-ds-collect",
+   "tuition": {
+    "amount": null,
+    "currency": null,
+    "note": "not found on fetched official pages",
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "method": "fetched"
+   },
+   "deadlines": {
+    "value": null,
+    "note": "not found",
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "method": "fetched"
+   },
+   "platform": {
+    "value": null,
+    "note": "not found",
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "method": "fetched"
+   },
+   "english": {
+    "ielts": null,
+    "toefl_ibt": null,
+    "duolingo": null,
+    "note": "not found",
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "method": "fetched"
+   },
+   "sat_act": {
+    "value": null,
+    "note": "not found"
+   },
+   "acceptance_rate": {
+    "value": null,
+    "note": "not collected"
+   },
+   "documents": {
+    "value": null,
+    "note": "not found",
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "method": "fetched"
+   },
+   "programmes": {
+    "value": null,
+    "note": "not found",
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "method": "fetched"
+   },
+   "notes": [
+    "no readable official pages (site blocked, unreachable or robots-disallowed)"
+   ]
+  },
+  {
+   "id": "ece36c8b-699b-5db2-af92-bf6619f5c098",
+   "slug": "kyrgyz-turkish-manas-university-ece36c8b",
+   "name": "Kyrgyz-Türkish Manas Üniversity",
+   "country_code": "KG",
+   "collector": "deepseek-ds-collect",
+   "tuition": {
+    "amount": null,
+    "currency": null,
+    "note": "not found on fetched official pages",
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "method": "fetched"
+   },
+   "deadlines": {
+    "value": [
+     {
+      "round": "application",
+      "date": null,
+      "cycle": "2027 entry"
+     }
+    ],
+    "source_url": "https://www.manas.edu.kg/en/students/admission",
+    "retrieved_at": "2026-11-16",
+    "method": "fetched"
+   },
+   "platform": {
+    "value": null,
+    "note": "not found",
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "method": "fetched"
+   },
+   "english": {
+    "ielts": null,
+    "toefl_ibt": null,
+    "duolingo": null,
+    "note": "not found",
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "method": "fetched"
+   },
+   "sat_act": {
+    "value": null,
+    "note": "not found"
+   },
+   "acceptance_rate": {
+    "value": null,
+    "note": "not collected"
+   },
+   "documents": {
+    "value": null,
+    "note": "not found",
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "method": "fetched"
+   },
+   "programmes": {
+    "value": null,
+    "note": "not found",
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "method": "fetched"
+   },
+   "notes": [
+    "pages fetched: 1",
+    "tokens in/out: 595/137"
+   ]
+  },
+  {
+   "id": "a75ede9d-f2a9-5169-837d-38e810d35a6b",
+   "slug": "university-of-bologna-a75ede9d",
+   "name": "University of Bologna",
+   "country_code": "IT",
+   "collector": "deepseek-ds-collect",
+   "tuition": {
+    "amount": null,
+    "currency": null,
+    "note": "not found on fetched official pages",
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "method": "fetched"
+   },
+   "deadlines": {
+    "value": null,
+    "note": "not found",
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "method": "fetched"
+   },
+   "platform": {
+    "value": null,
+    "note": "not found",
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "method": "fetched"
+   },
+   "english": {
+    "ielts": null,
+    "toefl_ibt": null,
+    "duolingo": null,
+    "note": "not found",
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "method": "fetched"
+   },
+   "sat_act": {
+    "value": null,
+    "note": "not found"
+   },
+   "acceptance_rate": {
+    "value": null,
+    "note": "not collected"
+   },
+   "documents": {
+    "value": null,
+    "note": "not found",
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "method": "fetched"
+   },
+   "programmes": {
+    "value": null,
+    "note": "not found",
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "method": "fetched"
+   },
+   "notes": [
+    "no readable official pages (site blocked, unreachable or robots-disallowed)"
+   ]
+  }
+ ]
+}

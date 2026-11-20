@@ -1,0 +1,22 @@
+import type { CSSProperties, FC } from "react";
+declare const ParticleText: FC<{
+  text?: string;
+  particleSize?: number;
+  density?: number;
+  color?: string;
+  highlightColor?: string;
+  scatter?: number;
+  gatherDuration?: number;
+  stagger?: number;
+  pointerRepel?: number;
+  repelRadius?: number;
+  idleDrift?: number;
+  trigger?: "mount" | "hover" | "click" | "visible";
+  fontSize?: number | string;
+  fontWeight?: number | string;
+  fontFamily?: string;
+  glow?: boolean;
+  className?: string;
+  style?: CSSProperties;
+}>;
+export default ParticleText;

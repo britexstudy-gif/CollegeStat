@@ -10,7 +10,7 @@ process.argv = [
   process.execPath,
   fileURLToPath(cli),
   command,
-  ...(command === "dev" ? ["--port", "5173"] : []),
+  ...(command === "dev" ? ["--port", "5173", "--hostname", "127.0.0.1"] : []),
   ...args,
 ];
 await import(cli.href);

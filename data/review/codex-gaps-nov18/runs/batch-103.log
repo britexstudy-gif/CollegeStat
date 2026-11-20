@@ -1,0 +1,136 @@
+OpenAI Codex v0.169.0
+--------
+workdir: /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+model: gpt-6-luna
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: high
+reasoning summaries: none
+session id: 01a1ee95-e2f8-7ce1-9a1c-6ad414b96df3
+--------
+user
+You are a careful admissions-data researcher. For each university below, find facts for an
+INTERNATIONAL applicant to a FIRST-YEAR BACHELOR'S degree starting in autumn 2027 (or the nearest
+published cycle). Use the live web. Rules:
+
+- Official sources only: the university's own website (its domain or subdomains), the national
+  application service (UCAS, Common App, OUAC, uni-assist, Studyinkorea, etc.) or a government
+  statistics office. Never use rankings sites, forums, agencies, Wikipedia or blogs.
+- Every value needs the exact page URL where you read it (source_url). If you could not verify a
+  value on an official page, leave it out (null or an empty list). Never guess or estimate.
+- english: the lowest overall score accepted for undergraduate entry, per test (IELTS Academic
+  overall, TOEFL iBT total, Duolingo, PTE). If programmes differ, give the general/lowest common
+  university minimum and say so in detail (e.g. "6.5 overall, no band below 6.0; some
+  programmes higher").
+- tuition: the yearly tuition for international (non-EU / overseas) undergraduates in the local
+  currency. If it varies by programme give amount = lowest and amount_max = highest, and the
+  academic_year the fee applies to (e.g. "2026/27"). If tuition is free, amount = 0.
+- application_fee: for international first-year applicants, local currency.
+- deadlines: the main 2027-entry first-year deadlines (ISO date YYYY-MM-DD) with the route
+  (e.g. "Common App, Regular Decision", "UCAS", "university portal"). Only dates actually
+  published; if only the 2026-entry date is published, include it and put "2026 entry" in title.
+- sat: policy for international applicants; p25/p75 total SAT only if the university publishes
+  them (Common Data Set or admissions profile).
+- acceptance_rate: only if officially published (CDS, admissions statistics page).
+- notes: one short line on anything important (e.g. "Foundation year required for 11-year
+  school certificates"), else "".
+
+Spend effort on the facts students need most: English minimum, tuition, deadlines. Keep each
+detail under 160 characters. Return only the JSON that matches the schema; use each
+university's id exactly as given.
+
+Universities:
+- id: 828f04bc-48ef-5f99-9ad2-4acf10da27c9 | Université d'Aix-Marseille | Marseille, FR | http://www.univ-amu.fr/
+- id: 8d17296d-f1dc-560c-8688-e109b7d4e63b | University of Dundee | Dundee, GB | http://www.dundee.ac.uk/
+- id: f388a529-a9f0-5162-8f30-7ff79978a385 | Masaryk University | Brno, CZ | https://www.muni.cz/
+- id: 1a73288e-3c10-56ed-9055-1bc9f486ec07 | Universidad de Valencia | Valencia, ES | http://www.uv.es/
+codex
+I’ll check the existing research notes first, then verify each university’s current official admissions, language, fee, and deadline pages.
+exec
+/bin/zsh -lc 'cat /Users/likeanew/.agents/skills/lemma/SKILL.md' in /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+ succeeded in 0ms:
+---
+name: lemma
+description: Persistent cross-session memory for AI agents via MCP. BEFORE starting ANY task (coding, debugging, refactoring, research, docs, optimization — any language), FIRST call memory_read to load what you already know so you never re-derive or re-explore known facts. AFTER finishing, call memory_add to persist new findings and session_attempt for dead ends — unsaved knowledge is lost permanently. Distills reusable guides from experience.
+---
+
+<!-- lemma:skill:v=0.21.0 -->
+
+# Lemma — Persistent Memory & Learning
+
+Lemma is a persistent memory server for AI agents over the Model Context Protocol.
+Every session starts blank — knowledge survives ONLY through tool calls. If you
+learn something and don't save it (`memory_add`), it is gone permanently.
+
+## Workflow
+1. **RECALL** — `memory_read` / `semantic_search`: load what's already known for this
+   project/task. Never re-explore code or re-derive facts that are already saved.
+2. **ACT** — do the task.
+3. **PERSIST** — `memory_add` for new insights; `guide_practice` for guides applied;
+   `session_attempt` for abandoned/dead-end approaches (the most valuable records).
+
+## Two knowledge layers
+- **Memory fragments** (`memory_read` / `memory_add`): atomic facts. Types: `fact`,
+  `pattern`, `lesson`, `warning`, `context`. Confidence evolves with use and feedback.
+- **Guides** (`guide_get` / `guide_distill` / `guide_practice`): procedural skills
+  distilled from fragments. Track usage count + success/failure rate.
+Pipeline: `experience -> memory_add -> pattern/lesson -> guide_distill -> guide_practice`.
+
+## Tools at a glance
+- **Recall & search**: `memory_read`, `semantic_search`, `memory_library` (full
+  snapshot + maintenance signals), `memory_stats`, `memory_audit`.
+- **Write & maintain**: `memory_add`, `memory_update`, `memory_forget`,
+  `memory_merge`, `memory_relate` (supports / contradicts / supersedes / related_to),
+  `memory_feedback`.
+- **Guides**: `guide_get`, `guide_create`, `guide_distill`, `guide_practice`,
+  `guide_update`, `guide_forget`, `guide_merge`.
+- **Sessions & reasoning**: `session_start`, `session_end`, `session_attempt`,
+  `session_stats`, `suggestion_respond`.
+- **Background intelligence**: `conflict_scan`, `proactive_analysis`,
+  `project_analytics` (run automatically; act on signals when sensible).
+
+## Writing a fragment
+```
+## [Topic Title]
+### Context
+[1-2 sentences: what and why it matters]
+### [Content Section]
+- [Key fact 1]
+- [Key fact 2]
+### Rules (optional)
+- [Absolute constraint]
+```
+One idea per fragment, 30-2000 chars, structured markdown (not prose). **Store
+fragments in ENGLISH** (required for search/retrieval). Never ask permission to save.
+
+## Background intelligence
+Conflict detection, distill/merge/refine suggestions, and auto-linking run
+automatically. From the CLI, `lemma -lib` prints a full knowledge-base snapshot
+and `lemma -vis` launches a visualizer.
+
+web search: 
+web search: site:univ-amu.fr international undergraduate English language requirements tuition 2026 2027 application deadline first year ...
+web search: 
+web search: site:univ-amu.fr droits inscription étudiants extra communautaires licence 2026 2027 exonération ...
+web search: 
+web search: site:dundee.ac.uk/study/international/undergraduate tuition fees 2026 2027 international undergraduate fee Dundee ...
+web search: 
+web search: site:dundee.ac.uk/undergraduate "International" "£" "2027" "Fees and funding" undergraduate 2027 Dundee ...
+web search: 
+web search: site:dundee.ac.uk/undergraduate "International" "September 2027" "per year" tuition ...
+web search: 
+web search: 
+web search: 
+web search: 
+web search: 
+web search: 
+web search: 
+web search: site:dundee.ac.uk/undergraduate/ "£" "per year of study" "September 2027" Medicine international tuition ...
+web search: 
+web search: site:ucas.com 2027 entry application fee £ 2027 undergraduate 2027 ...
+codex
+{"universities":[{"id":"828f04bc-48ef-5f99-9ad2-4acf10da27c9","english":[],"tuition":{"amount":2895,"amount_max":null,"currency":"EUR","period":"year","academic_year":"2026/27","detail":"Differentiated first-cycle rate for non-EU students; exemptions may apply.","source_url":"https://www.univ-amu.fr/system/files/media-ressource/TX-DIRFOR-2115%20-%20Bar%C3%AAme%20des%20droits%20-%20avec%20exo%20partielle.pdf"},"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"Most degrees are taught in French; the university does not publish a general undergraduate English-test minimum."},{"id":"8d17296d-f1dc-560c-8688-e109b7d4e63b","english":[{"test":"IELTS","minimum":0,"detail":"6.0 overall; writing 6.0 and other bands 5.5 minimum in a 2027 course example. Some courses require more.","source_url":"https://www.dundee.ac.uk/undergraduate/computer-science/entry-requirements"},{"test":"TOEFL iBT","minimum":0,"detail":"80 total; writing 19, listening 17, reading 18, speaking 20 in a 2027 course example. Some courses require more.","source_url":"https://www.dundee.ac.uk/undergraduate/computer-science/entry-requirements"},{"test":"PTE Academic","minimum":0,"detail":"64 overall; writing 64 and other skills 59 minimum in a 2027 course example. Some courses require more.","source_url":"https://www.dundee.ac.uk/undergraduate/computer-science/entry-requirements"}],"tuition":null,"application_fee":{"amount":34.5,"currency":"GBP","source_url":"https://www.ucas.com/faqs/what-is-the-application-fee-for-the-2027-cycle"},"deadlines":[{"title":"Medicine and Dentistry (2027 entry)","due_at":"2026-10-15","route":"UCAS","source_url":"https://www.dundee.ac.uk/corporate-information/undergraduate-application-timeline"},{"title":"Equal consideration (2027 entry)","due_at":"2027-01-13","route":"UCAS","source_url":"https://www.dundee.ac.uk/corporate-information/undergraduate-application-timeline"},{"title":"Final international application deadline (2027 entry)","due_at":"2027-08-21","route":"University/UCAS application","source_url":"https://www.dundee.ac.uk/corporate-information/undergraduate-application-timeline"}],"sat":null,"acceptance_rate":null,"notes":"Tuition varies by course; published 2027 examples include £19,450 and higher fees, but a complete international undergraduate range was not verified."},{"id":"f388a529-a9f0-5162-8f30-7ff79978a385","english":[{"test":"IELTS","minimum":0,"detail":"IELTS Academic 5.5 overall accepted for English-taught FSS bachelor's programmes; B2 level required.","source_url":"https://www.fss.muni.cz/en/faculty-of-social-studies/admissions-and-study-programs/bachelors-studies"},{"test":"TOEFL iBT","minimum":0,"detail":"72 total with minimum section scores: reading 18, listening 17, speaking 20, writing 17; FSS programmes.","source_url":"https://www.fss.muni.cz/en/faculty-of-social-studies/admissions-and-study-programs/bachelors-studies"},{"test":"Duolingo","minimum":0,"detail":"105 minimum; FSS English-taught bachelor's programmes.","source_url":"https://www.fss.muni.cz/en/faculty-of-social-studies/admissions-and-study-programs/bachelors-studies"}],"tuition":{"amount":3500,"amount_max":null,"currency":"EUR","period":"year","academic_year":"2026/27","detail":"FSS English-taught bachelor's programmes starting Spring 2027; fees vary by faculty and programme.","source_url":"https://www.fss.muni.cz/en/faculty-of-social-studies/admissions-and-study-programs/bachelors-studies"},"application_fee":{"amount":800,"currency":"CZK","source_url":"https://www.fss.muni.cz/en/faculty-of-social-studies/admissions-and-study-programs/bachelors-studies"},"deadlines":[{"title":"Autumn 2027 entry","due_at":"2027-05-15","route":"Masaryk University e-application","source_url":"https://www.fss.muni.cz/en/faculty-of-social-studies/admissions-and-study-programs/bachelors-studies"}],"sat":null,"acceptance_rate":null,"notes":"English-test requirements and tuition differ by faculty and programme."},{"id":"1a73288e-3c10-56ed-9055-1bc9f486ec07","english":[],"tuition":null,"application_fee":null,"deadlines":[{"title":"International pre-registration deadline (2026-27 entry)","due_at":"2026-07-07","route":"Valencian Community pre-enrolment","source_url":"https://www.uv.es/uvweb/college/en/undergraduate-studies/admission/pre-enrolment/application-1285846109104.html"}],"sat":null,"acceptance_rate":null,"notes":"Non-EU applicants generally need official recognition of prior studies and UNEDasiss access accreditation."}] }
+tokens used
+104,589
+{"universities":[{"id":"828f04bc-48ef-5f99-9ad2-4acf10da27c9","english":[],"tuition":{"amount":2895,"amount_max":null,"currency":"EUR","period":"year","academic_year":"2026/27","detail":"Differentiated first-cycle rate for non-EU students; exemptions may apply.","source_url":"https://www.univ-amu.fr/system/files/media-ressource/TX-DIRFOR-2115%20-%20Bar%C3%AAme%20des%20droits%20-%20avec%20exo%20partielle.pdf"},"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"Most degrees are taught in French; the university does not publish a general undergraduate English-test minimum."},{"id":"8d17296d-f1dc-560c-8688-e109b7d4e63b","english":[{"test":"IELTS","minimum":0,"detail":"6.0 overall; writing 6.0 and other bands 5.5 minimum in a 2027 course example. Some courses require more.","source_url":"https://www.dundee.ac.uk/undergraduate/computer-science/entry-requirements"},{"test":"TOEFL iBT","minimum":0,"detail":"80 total; writing 19, listening 17, reading 18, speaking 20 in a 2027 course example. Some courses require more.","source_url":"https://www.dundee.ac.uk/undergraduate/computer-science/entry-requirements"},{"test":"PTE Academic","minimum":0,"detail":"64 overall; writing 64 and other skills 59 minimum in a 2027 course example. Some courses require more.","source_url":"https://www.dundee.ac.uk/undergraduate/computer-science/entry-requirements"}],"tuition":null,"application_fee":{"amount":34.5,"currency":"GBP","source_url":"https://www.ucas.com/faqs/what-is-the-application-fee-for-the-2027-cycle"},"deadlines":[{"title":"Medicine and Dentistry (2027 entry)","due_at":"2026-10-15","route":"UCAS","source_url":"https://www.dundee.ac.uk/corporate-information/undergraduate-application-timeline"},{"title":"Equal consideration (2027 entry)","due_at":"2027-01-13","route":"UCAS","source_url":"https://www.dundee.ac.uk/corporate-information/undergraduate-application-timeline"},{"title":"Final international application deadline (2027 entry)","due_at":"2027-08-21","route":"University/UCAS application","source_url":"https://www.dundee.ac.uk/corporate-information/undergraduate-application-timeline"}],"sat":null,"acceptance_rate":null,"notes":"Tuition varies by course; published 2027 examples include £19,450 and higher fees, but a complete international undergraduate range was not verified."},{"id":"f388a529-a9f0-5162-8f30-7ff79978a385","english":[{"test":"IELTS","minimum":0,"detail":"IELTS Academic 5.5 overall accepted for English-taught FSS bachelor's programmes; B2 level required.","source_url":"https://www.fss.muni.cz/en/faculty-of-social-studies/admissions-and-study-programs/bachelors-studies"},{"test":"TOEFL iBT","minimum":0,"detail":"72 total with minimum section scores: reading 18, listening 17, speaking 20, writing 17; FSS programmes.","source_url":"https://www.fss.muni.cz/en/faculty-of-social-studies/admissions-and-study-programs/bachelors-studies"},{"test":"Duolingo","minimum":0,"detail":"105 minimum; FSS English-taught bachelor's programmes.","source_url":"https://www.fss.muni.cz/en/faculty-of-social-studies/admissions-and-study-programs/bachelors-studies"}],"tuition":{"amount":3500,"amount_max":null,"currency":"EUR","period":"year","academic_year":"2026/27","detail":"FSS English-taught bachelor's programmes starting Spring 2027; fees vary by faculty and programme.","source_url":"https://www.fss.muni.cz/en/faculty-of-social-studies/admissions-and-study-programs/bachelors-studies"},"application_fee":{"amount":800,"currency":"CZK","source_url":"https://www.fss.muni.cz/en/faculty-of-social-studies/admissions-and-study-programs/bachelors-studies"},"deadlines":[{"title":"Autumn 2027 entry","due_at":"2027-05-15","route":"Masaryk University e-application","source_url":"https://www.fss.muni.cz/en/faculty-of-social-studies/admissions-and-study-programs/bachelors-studies"}],"sat":null,"acceptance_rate":null,"notes":"English-test requirements and tuition differ by faculty and programme."},{"id":"1a73288e-3c10-56ed-9055-1bc9f486ec07","english":[],"tuition":null,"application_fee":null,"deadlines":[{"title":"International pre-registration deadline (2026-27 entry)","due_at":"2026-07-07","route":"Valencian Community pre-enrolment","source_url":"https://www.uv.es/uvweb/college/en/undergraduate-studies/admission/pre-enrolment/application-1285846109104.html"}],"sat":null,"acceptance_rate":null,"notes":"Non-EU applicants generally need official recognition of prior studies and UNEDasiss access accreditation."}] }

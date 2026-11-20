@@ -1,0 +1,1090 @@
+/* Student sign-in / sign-up. Self-contained: high specificity so the older
+   layered auth rules (account-access, product-identity, …) don't leak in. */
+html body .auth-page:has(.ax) {
+  display: block;
+  min-height: 100dvh;
+  padding: 0;
+  background: var(--background, #fff);
+}
+html body .ax {
+  --ax-ink: #0f172a;
+  --ax-muted: #5b6475;
+  --ax-line: #e4e7ee;
+  --ax-field: #ffffff;
+  --ax-accent: #2a5ff0;
+  --ax-ring: #2a5ff033;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr);
+  min-height: 100dvh;
+  color: var(--ax-ink);
+  background: var(--background, #fff);
+}
+html.dark body .ax {
+  --ax-ink: #e7ebf3;
+  --ax-muted: #98a2b6;
+  --ax-line: #303030;
+  --ax-field: #141414;
+  --ax-accent: #4d8dff;
+  --ax-ring: #4d8dff40;
+}
+
+/* ── Form column ─────────────────────────────────────── */
+html body .ax .ax-main {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100dvh;
+  padding: 24px clamp(20px, 5vw, 64px);
+}
+html body .ax .ax-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+html body .ax .ax-top > div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+html body .ax .ax-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 12px;
+  border: 1px solid var(--ax-line);
+  border-radius: 10px;
+  color: var(--ax-muted);
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.15s, border-color 0.15s;
+}
+html body .ax .ax-back:hover {
+  color: var(--ax-ink);
+  border-color: color-mix(in srgb, var(--ax-ink) 25%, transparent);
+}
+html body .ax .ax-foot {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 18px;
+  color: var(--ax-muted);
+  font-size: 12.5px;
+}
+html body .ax .ax-foot a {
+  color: inherit;
+  text-decoration: none;
+}
+html body .ax .ax-foot a:hover {
+  color: var(--ax-ink);
+}
+
+html body .ax .auth-form {
+  align-self: center;
+  justify-self: center;
+  width: min(400px, 100%);
+  margin: 40px 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: none;
+  box-shadow: none;
+  animation: ax-in 0.5s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+html body .ax .auth-form h1 {
+  margin: 0 0 8px;
+  color: var(--ax-ink);
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.035em;
+}
+html body .ax .auth-form h1 + p {
+  margin: 0;
+  color: var(--ax-muted);
+  font-size: 15px;
+  line-height: 1.55;
+}
+html body .ax .auth-mode-nav {
+  display: flex;
+  gap: 6px;
+  margin: 14px 0 26px;
+  padding: 0;
+  background: none;
+  color: var(--ax-muted);
+  font-size: 14px;
+}
+html body .ax .auth-mode-link,
+html body .ax .auth-back-link,
+html body .ax .auth-recovery,
+html body .ax .auth-terms a,
+html body .ax .text-link {
+  color: var(--ax-accent);
+  font-weight: 600;
+  text-decoration: none;
+}
+html body .ax .auth-mode-link:hover,
+html body .ax .auth-recovery:hover {
+  text-decoration: underline;
+}
+html body .ax .auth-back-link {
+  display: inline-block;
+  margin: 14px 0 22px;
+  font-size: 14px;
+}
+
+/* Providers */
+html body .ax .auth-providers {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+  gap: 10px;
+  margin: 0 0 6px;
+}
+html body .ax .provider-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  height: 44px;
+  padding: 0 14px;
+  border: 1px solid var(--ax-line);
+  border-radius: 11px;
+  background: var(--ax-field);
+  color: var(--ax-ink);
+  font: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  box-shadow: 0 1px 2px #0f172a0d;
+  cursor: pointer;
+  transition: border-color 0.15s, transform 0.15s, box-shadow 0.15s;
+}
+html body .ax .provider-button:hover:not(:disabled) {
+  border-color: color-mix(in srgb, var(--ax-ink) 25%, transparent);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px #0f172a14;
+}
+html body .ax .provider-availability {
+  grid-column: 1 / -1;
+  margin: 0;
+  color: var(--ax-muted);
+  font-size: 13px;
+}
+html body .ax .auth-divider {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 14px 0 8px;
+  color: var(--ax-muted);
+  font-size: 12.5px;
+  white-space: nowrap;
+}
+html body .ax .auth-divider span {
+  flex: 1;
+  height: 1px;
+  background: var(--ax-line);
+}
+
+/* Fields */
+html body .ax form {
+  display: grid;
+  gap: 16px;
+}
+html body .ax .auth-name-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+html body .ax .auth-field {
+  position: relative;
+  display: grid;
+  gap: 7px;
+}
+html body .ax .auth-field label {
+  color: var(--ax-ink);
+  font-size: 13.5px;
+  font-weight: 600;
+}
+html body .ax .auth-field label span {
+  color: var(--ax-muted);
+  font-weight: 400;
+}
+html body .ax .auth-recovery {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 13px;
+}
+html body .ax .auth-input {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 46px;
+  padding: 0 6px 0 14px;
+  border: 1px solid var(--ax-line);
+  border-radius: 11px;
+  background: var(--ax-field);
+  color: var(--ax-muted);
+  box-shadow: 0 1px 2px #0f172a0a;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+html body .ax .auth-input:focus-within {
+  border-color: var(--ax-accent);
+  box-shadow: 0 0 0 4px var(--ax-ring);
+}
+html body .ax .auth-field > input {
+  height: 46px;
+  padding: 0 14px;
+  border: 1px solid var(--ax-line);
+  border-radius: 11px;
+  background: var(--ax-field);
+  color: var(--ax-ink);
+  font: inherit;
+  font-size: 15px;
+  outline: none;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+html body .ax .auth-field > input:focus {
+  border-color: var(--ax-accent);
+  box-shadow: 0 0 0 4px var(--ax-ring);
+}
+html body .ax .auth-input input {
+  flex: 1;
+  min-width: 0;
+  height: 100%;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--ax-ink);
+  font: inherit;
+  font-size: 15px;
+  outline: none;
+  box-shadow: none;
+}
+html body .ax .auth-input input::placeholder {
+  color: color-mix(in srgb, var(--ax-muted) 70%, transparent);
+}
+html body .ax .auth-password-toggle {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border: 0;
+  border-radius: 8px;
+  background: transparent;
+  color: var(--ax-muted);
+  cursor: pointer;
+}
+html body .ax .auth-password-toggle:hover {
+  background: color-mix(in srgb, var(--ax-ink) 6%, transparent);
+}
+html body .ax .auth-field small {
+  color: var(--ax-muted);
+  font-size: 12.5px;
+}
+html body .ax .auth-caps-lock {
+  color: #b45309 !important;
+}
+html body .ax .auth-submit {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  height: 46px;
+  margin: 4px 0 0;
+  border: 0;
+  border-radius: 11px;
+  background: linear-gradient(180deg, #3a6cf5, #2453e0);
+  color: #fff;
+  font: inherit;
+  font-size: 15px;
+  font-weight: 600;
+  box-shadow:
+    inset 0 1px 0 #ffffff33,
+    0 8px 20px -8px #2453e0aa;
+  cursor: pointer;
+  transition: transform 0.15s, box-shadow 0.15s, filter 0.15s;
+}
+html body .ax .auth-submit:hover:not(:disabled) {
+  transform: translateY(-1px);
+  filter: brightness(1.05);
+}
+html body .ax .auth-submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+html body .ax .auth-submit svg {
+  transition: transform 0.15s;
+}
+html body .ax .auth-submit:hover svg {
+  transform: translateX(2px);
+}
+html body .ax .inline-error {
+  margin: 0;
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: #fef2f2;
+  color: #b91c1c;
+  font-size: 13.5px;
+}
+html.dark body .ax .inline-error {
+  background: #3b1218;
+  color: #fca5a5;
+}
+html body .ax .auth-privacy {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 24px;
+  padding-top: 18px;
+  border-top: 1px solid var(--ax-line);
+  color: var(--ax-muted);
+  font-size: 12.5px;
+}
+html body .ax .auth-privacy svg {
+  color: #16a34a;
+}
+html body .ax .auth-terms {
+  margin: 10px 0 0;
+  color: var(--ax-muted);
+  font-size: 12.5px;
+}
+
+/* ── Showcase column ─────────────────────────────────── */
+html body .ax .ax-show {
+  position: relative;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  gap: 28px;
+  margin: 12px;
+  padding: clamp(28px, 4vw, 52px);
+  border-radius: 28px;
+  overflow: hidden;
+  color: #e9eefb;
+  background:
+    radial-gradient(60% 50% at 80% 10%, #3d6bff55, transparent 70%),
+    radial-gradient(50% 50% at 10% 90%, #7c3aed33, transparent 70%),
+    linear-gradient(180deg, #0c1530, #0a1024);
+  isolation: isolate;
+}
+html body .ax .ax-show::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-image:
+    linear-gradient(#ffffff0d 1px, transparent 1px),
+    linear-gradient(90deg, #ffffff0d 1px, transparent 1px);
+  background-size: 44px 44px;
+  mask-image: radial-gradient(70% 60% at 60% 50%, #000, transparent);
+}
+html body .ax .ax-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 11px;
+  border: 1px solid #ffffff26;
+  border-radius: 999px;
+  background: #ffffff0f;
+  color: #c9d6ff;
+  font-size: 12.5px;
+  font-weight: 500;
+}
+html body .ax .ax-show h2 {
+  max-width: 18ch;
+  margin: 16px 0 10px;
+  color: #fff;
+  font-size: clamp(26px, 2.6vw, 36px);
+  font-weight: 650;
+  line-height: 1.12;
+  letter-spacing: -0.035em;
+}
+html body .ax .ax-show-copy p {
+  max-width: 46ch;
+  margin: 0;
+  color: #aab6d3;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+html body .ax .ax-stage {
+  position: relative;
+  min-height: 330px;
+}
+html body .ax .ax-card {
+  position: absolute;
+  padding: 14px 16px;
+  border: 1px solid #ffffff1f;
+  border-radius: 16px;
+  background: #121c3bcc;
+  backdrop-filter: blur(14px);
+  box-shadow:
+    inset 0 1px 0 #ffffff14,
+    0 24px 50px -20px #000c;
+  font-size: 13px;
+  animation:
+    ax-in 0.7s cubic-bezier(0.22, 1, 0.36, 1) both,
+    ax-float 7s ease-in-out infinite;
+}
+html body .ax .ax-card-steps {
+  top: 0;
+  left: 0;
+  width: min(330px, 78%);
+  animation-delay: 0.1s, 0s;
+}
+html body .ax .ax-card-steps header {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-bottom: 10px;
+  color: #fff;
+  font-weight: 600;
+}
+html body .ax .ax-card-steps header svg {
+  color: #ffd166;
+}
+html body .ax .ax-card-steps em {
+  margin-left: auto;
+  padding: 2px 8px;
+  border-radius: 99px;
+  background: #ffffff14;
+  color: #c9d6ff;
+  font-size: 11.5px;
+  font-style: normal;
+}
+html body .ax .ax-card-steps ul {
+  display: grid;
+  gap: 7px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+html body .ax .ax-card-steps li {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 8px 10px;
+  border-radius: 10px;
+  background: #ffffff0a;
+  color: #dbe3f7;
+}
+html body .ax .ax-card-steps li.done {
+  color: #8b97b5;
+  text-decoration: line-through;
+}
+html body .ax .ax-card-steps li i {
+  display: grid;
+  place-items: center;
+  width: 18px;
+  height: 18px;
+  flex: none;
+  border: 1.5px dashed #4d8dff;
+  border-radius: 50%;
+}
+html body .ax .ax-card-steps li.done i {
+  border: 0;
+  background: #22c55e;
+  color: #fff;
+}
+html body .ax .ax-card-steps b {
+  margin-left: auto;
+  color: #ffd166;
+  font-size: 11.5px;
+  text-decoration: none;
+  display: inline-block;
+}
+html body .ax .ax-card-streak {
+  top: 26px;
+  right: 0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  animation-delay: 0.25s, 1.2s;
+}
+html body .ax .ax-flame {
+  font-size: 30px;
+  filter: drop-shadow(0 4px 10px #ff7a1a88);
+}
+html body .ax .ax-card-streak strong {
+  color: #ff9f43;
+  font-size: 24px;
+  letter-spacing: -0.02em;
+}
+html body .ax .ax-week {
+  display: flex;
+  gap: 4px;
+  margin-top: 6px;
+}
+html body .ax .ax-week span {
+  display: grid;
+  place-items: center;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #ffffff12;
+  color: #8b97b5;
+  font-size: 9.5px;
+  font-weight: 700;
+}
+html body .ax .ax-week span.on {
+  background: #ff7a1a;
+  color: #fff;
+}
+html body .ax .ax-card-uni {
+  bottom: 18px;
+  left: 8%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: min(360px, 84%);
+  animation-delay: 0.4s, 2.4s;
+}
+html body .ax .ax-card-uni img {
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  border-radius: 10px;
+  background: #fff;
+  object-fit: contain;
+}
+html body .ax .ax-card-uni > div {
+  display: grid;
+  gap: 2px;
+  min-width: 0;
+}
+html body .ax .ax-card-uni strong {
+  overflow: hidden;
+  color: #fff;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+html body .ax .ax-card-uni small {
+  color: #8b97b5;
+  font-size: 12px;
+}
+html body .ax .ax-chips {
+  display: flex;
+  gap: 5px;
+  margin-top: 4px;
+}
+html body .ax .ax-chips span {
+  padding: 1px 7px;
+  border-radius: 6px;
+  background: #3d6bff2e;
+  color: #b9caff;
+  font-size: 10.5px;
+  font-weight: 600;
+}
+html body .ax .ax-saved {
+  flex: none;
+  margin-left: auto;
+  color: #ffd166;
+  fill: #ffd166;
+}
+html body .ax .ax-card-ready {
+  right: 4%;
+  bottom: 96px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  animation-delay: 0.55s, 3.4s;
+}
+html body .ax .ax-card-ready svg {
+  width: 48px;
+  height: 48px;
+  transform: rotate(-90deg);
+}
+html body .ax .ax-card-ready circle {
+  fill: none;
+  stroke: #ffffff1a;
+  stroke-width: 5;
+}
+html body .ax .ax-card-ready circle + circle {
+  stroke: #4ade80;
+  stroke-linecap: round;
+}
+html body .ax .ax-card-ready div {
+  display: grid;
+}
+html body .ax .ax-card-ready strong {
+  color: #fff;
+  font-size: 20px;
+}
+html body .ax .ax-card-ready small {
+  color: #8b97b5;
+  font-size: 12px;
+}
+html body .ax .ax-proof {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 28px;
+  margin: 0;
+  padding: 18px 0 0;
+  border-top: 1px solid #ffffff17;
+  list-style: none;
+  color: #8b97b5;
+  font-size: 13px;
+}
+html body .ax .ax-proof strong {
+  margin-right: 4px;
+  color: #fff;
+}
+
+@keyframes ax-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes ax-float {
+  0%,
+  100% {
+    translate: 0 0;
+  }
+  50% {
+    translate: 0 -6px;
+  }
+}
+
+@media (max-width: 980px) {
+  html body .ax {
+    grid-template-columns: 1fr;
+  }
+  html body .ax .ax-show {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  html body .ax .auth-name-row {
+    grid-template-columns: 1fr;
+  }
+  html body .ax .ax-back span,
+  html body .ax .ax-back {
+    font-size: 12px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  html body .ax * {
+    animation: none !important;
+  }
+}
+
+/* Escape legacy page frames and spacing rules. */
+html body main.auth-page:has(.ax) {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+}
+html body .ax .auth-field,
+html body .ax .auth-name-row {
+  margin: 0;
+}
+html body .ax .auth-mode-nav span,
+html body .ax .auth-mode-nav a {
+  font-size: 14px;
+}
+html body .ax .ax-card-streak {
+  top: 150px;
+  right: 0;
+}
+html body .ax .ax-card-ready {
+  bottom: 120px;
+  right: 0;
+}
+html body .ax .ax-card-uni {
+  bottom: 0;
+}
+html body .ax .ax-stage {
+  min-height: 380px;
+}
+html body .ax {
+  width: 100%;
+}
+
+/* Minimal aurora panel (replaces the floating product cards). */
+html body .ax .ax-show {
+  grid-template-rows: 1fr auto;
+  align-content: end;
+  background: #05070f;
+}
+html body .ax .ax-show::before {
+  display: none;
+}
+html body .ax .ax-aurora {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  opacity: 0.95;
+}
+html body .ax .ax-aurora::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 35%, #05070fcc 80%);
+}
+html body .ax .ax-show-copy {
+  align-self: end;
+  animation: ax-in 0.8s 0.2s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+html body .ax .ax-show h2 {
+  max-width: 16ch;
+  font-size: clamp(30px, 3.2vw, 44px);
+}
+
+/* ── Talim-style refresh: centred form, segmented toggle, single-layer
+      fields, blue glow panel with numbered steps. ─────────────────── */
+html.dark body .ax,
+html.dark body .auth-page:has(.ax) {
+  --ax-field: #141414;
+  --ax-line: #262626;
+  background: #000;
+}
+html body .ax {
+  --ax-field: #f4f4f5;
+}
+html body .ax .auth-form {
+  width: min(380px, 100%);
+  margin: auto;
+  text-align: center;
+}
+html body .ax .auth-form h1 {
+  font-size: 28px;
+  font-weight: 650;
+  letter-spacing: -0.02em;
+}
+html body .ax .auth-form > p {
+  margin-top: 6px;
+  color: var(--ax-muted);
+  font-size: 14px;
+}
+html body .ax .ax-toggle {
+  display: inline-flex;
+  gap: 2px;
+  margin: 22px auto 18px;
+  padding: 4px;
+  border-radius: 12px;
+  background: var(--ax-field);
+}
+html body .ax .ax-toggle a {
+  padding: 7px 16px;
+  border-radius: 9px;
+  color: var(--ax-muted);
+  font-size: 14px;
+  font-weight: 550;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+}
+html body .ax .ax-toggle a[aria-current="page"] {
+  background: var(--ax-accent);
+  color: #fff;
+  box-shadow: 0 4px 14px rgb(37 99 235 / 35%);
+}
+html body .ax .auth-providers {
+  display: grid;
+  gap: 14px;
+  text-align: left;
+}
+html body .ax .provider-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  height: 46px;
+  border: 1px solid var(--ax-line);
+  border-radius: 12px;
+  background: #fff;
+  color: #111;
+  font-size: 15px;
+  font-weight: 600;
+  box-shadow: none;
+}
+html.dark body .ax .provider-button {
+  border-color: #fff;
+}
+html body .ax .provider-button:hover:not(:disabled) {
+  background: #f4f4f5;
+}
+html body .ax .auth-divider {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--ax-muted);
+  font-size: 12.5px;
+}
+html body .ax .auth-divider span {
+  flex: 1;
+  height: 1px;
+  background: var(--ax-line);
+}
+html body .ax form {
+  display: grid;
+  gap: 12px;
+  margin-top: 14px;
+  text-align: left;
+}
+html body .ax .auth-field > label {
+  font-size: 13px;
+  font-weight: 550;
+}
+html body .ax .auth-input {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 48px;
+  padding: 0 14px;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  background: var(--ax-field);
+  box-shadow: none;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+html body .ax .auth-input:focus-within {
+  border-color: var(--ax-accent);
+  box-shadow: 0 0 0 4px var(--ax-ring);
+}
+html body .ax .auth-input > svg {
+  flex: none;
+  color: var(--ax-muted);
+}
+html body .ax .auth-input input,
+html body .ax .auth-input input:focus,
+html body .ax .auth-input input:focus-visible {
+  flex: 1;
+  min-width: 0;
+  height: 100%;
+  padding: 0;
+  border: 0 !important;
+  outline: none !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  color: var(--ax-ink);
+  font-size: 15px;
+}
+html body .ax .auth-input input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 100px var(--ax-field) inset !important;
+  -webkit-text-fill-color: var(--ax-ink);
+}
+html body .ax .auth-password-toggle {
+  border: 0;
+  background: none;
+  color: var(--ax-muted);
+}
+html body .ax .auth-submit {
+  width: 100%;
+  height: 48px;
+  margin-top: 4px;
+  border-radius: 12px;
+  background: var(--ax-accent);
+  color: #fff;
+  font-size: 15px;
+  font-weight: 650;
+  box-shadow: 0 10px 24px rgb(37 99 235 / 28%);
+}
+html body .ax .auth-privacy,
+html body .ax .auth-terms {
+  justify-content: center;
+  text-align: center;
+}
+
+/* showcase panel */
+html body .ax .ax-show {
+  display: grid;
+  place-items: center;
+  margin: 16px;
+  border-radius: 28px;
+  background: #000;
+  color: #fff;
+  overflow: hidden;
+}
+html body .ax .ax-show-copy {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  justify-items: center;
+  gap: 10px;
+  width: min(380px, 85%);
+  text-align: center;
+}
+html body .ax .ax-brand-row {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+html body .ax .ax-brand-row strong {
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+html body .ax .ax-brand-row em {
+  padding: 2px 8px;
+  border-radius: 6px;
+  background: #fff;
+  color: #000;
+  font-style: normal;
+  font-size: 11px;
+  font-weight: 700;
+}
+html body .ax .ax-show-copy h2 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 650;
+  color: #fff;
+}
+html body .ax .ax-show-copy p {
+  margin: 0 0 12px;
+  color: rgb(255 255 255 / 65%);
+  font-size: 13.5px;
+}
+html body .ax .ax-steps {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 10px;
+  width: 100%;
+}
+html body .ax .ax-steps li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px;
+  border-radius: 12px;
+  background: rgb(255 255 255 / 8%);
+  color: rgb(255 255 255 / 85%);
+  font-size: 14.5px;
+  text-align: left;
+  backdrop-filter: blur(6px);
+  animation: ax-step 0.6s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+html body .ax .ax-steps li:nth-child(2) {
+  animation-delay: 0.1s;
+}
+html body .ax .ax-steps li:nth-child(3) {
+  animation-delay: 0.2s;
+}
+html body .ax .ax-steps li.is-on {
+  background: #fff;
+  color: #000;
+  font-weight: 600;
+}
+html body .ax .ax-steps li span {
+  display: grid;
+  place-items: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: rgb(255 255 255 / 15%);
+  font-size: 12px;
+  font-weight: 700;
+}
+html body .ax .ax-steps li.is-on span {
+  background: #000;
+  color: #fff;
+}
+html body .ax .ax-proof,
+html body .ax .ax-badge {
+  display: none;
+}
+@keyframes ax-step {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  html body .ax .ax-steps li {
+    animation: none;
+  }
+}
+html body .ax .auth-form .auth-providers {
+  grid-template-columns: minmax(0, 1fr) !important;
+}
+html body .ax .auth-form .auth-providers .provider-button {
+  grid-column: 1 / -1;
+  width: 100%;
+  max-width: none;
+  white-space: nowrap;
+}
+html body .ax .auth-form .auth-providers .provider-button {
+  justify-content: center !important;
+  padding: 0 16px;
+}
+/* A legacy design-system rule pushes the provider icon right with
+   margin-left:auto, which shoved "Continue with Google" off centre. */
+html body .ax .auth-form .auth-providers .provider-button svg {
+  margin-left: 0;
+}
+/* The page focuses <main> for screen readers on load; it is not a control,
+   so the browser's focus ring drew a frame around the whole viewport. */
+html body main.auth-page:focus {
+  outline: none;
+}
+
+/* Nov 17: sign-up asks name + country (two columns), sign-in switches between code and password. */
+html body .ax .auth-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+@media (max-width: 520px) {
+  html body .ax .auth-row {
+    grid-template-columns: 1fr;
+  }
+}
+html body .ax .auth-input select,
+html body .ax .auth-input select:focus,
+html body .ax .auth-input select:focus-visible {
+  flex: 1;
+  min-width: 0;
+  height: 100%;
+  padding: 0 22px 0 0;
+  border: 0 !important;
+  outline: none !important;
+  box-shadow: none !important;
+  appearance: none;
+  background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%2364748b' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E") no-repeat right 2px center !important;
+  color: var(--ax-ink);
+  font: inherit;
+  font-size: 15px;
+  cursor: pointer;
+}
+html body .ax .auth-input select:invalid {
+  color: var(--ax-muted);
+}
+html body .ax .auth-mode-switch {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  height: 44px;
+  margin-top: 10px;
+  border: 1px solid var(--ax-line);
+  border-radius: 12px;
+  background: transparent;
+  color: var(--ax-ink);
+  font-size: 14px;
+  font-weight: 600;
+  transition: background 0.15s, border-color 0.15s;
+}
+html body .ax .auth-mode-switch:hover:not(:disabled) {
+  border-color: color-mix(in srgb, var(--ax-ink) 30%, var(--ax-line));
+  background: var(--ax-field);
+}
+html body .ax .auth-mode-switch:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 4px var(--ax-ring);
+}
+html body .ax .auth-form {
+  padding-block: 28px 12px;
+}
+/* Code boxes: digits always in the page ink (an older layered rule tinted them navy in dark mode). */
+html body .ax [data-slot="input-otp-slot"] {
+  color: var(--ax-ink) !important;
+}

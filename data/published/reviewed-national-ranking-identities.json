@@ -1,0 +1,1346 @@
+{
+  "schema_version": 1,
+  "status": "private_identity_review_proposals_no_catalogue_or_hosted_writes",
+  "reviewed_at": "2026-10-09",
+  "source_receipt_sha256": "3d3b6830fd2270c7b18ad8afef69eb4f16a339ef962db645564ee2f6bc397b9f",
+  "catalogue_sha256": "8de07860467188c0918033fd246156656e9d4d6386b3465741952f594a5c1b2c",
+  "registry_source": {
+    "url": "https://doi.org/10.5281/zenodo.22902037",
+    "license": "CC0-1.0",
+    "sha256": "476988542f1bdd185f779386f90149371f58cb4ebdba326db3b7b428a468d4a5",
+    "retrieved_at": "2026-09-26"
+  },
+  "counts": {
+    "new_identity_proposals": 10,
+    "additional_existing_position_matches": 8,
+    "positions_with_new_identity_proposals": 12,
+    "held_positions": 159,
+    "new_universities_published": 0,
+    "hosted_writes": 0
+  },
+  "identity_proposals": [
+    {
+      "id": "6a448142-a24e-5482-93e1-f505ed2bab79",
+      "slug": "all-india-institute-of-medical-sciences-6a448142",
+      "name": "All India Institute of Medical Sciences",
+      "country_code": "IN",
+      "country": "India",
+      "city": "New Delhi",
+      "website": "https://www.aiims.edu/",
+      "domains": [
+        "aiims.edu"
+      ],
+      "ror": "https://ror.org/02dwcqs71",
+      "aliases": [
+        "AIIMS Delhi",
+        "All India Institute of Medical Sciences"
+      ],
+      "identity_source": "https://ror.org/02dwcqs71",
+      "identity_release": "ROR 2.13 · 2026-09-22",
+      "identity_retrieved_at": "2026-09-26",
+      "verification_status": "needs_review",
+      "publication_status": "review",
+      "evidence": {
+        "ranking_source_url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2163711&lang=1&reg=3",
+        "ranking_record_ids": [
+          "974c9030-0114-5faf-a033-595ae828135b",
+          "ded93916-5846-5d4e-b0be-a20047f9de41",
+          "6380a7b0-1a9a-57ea-b9d1-a2c5fdfbd263"
+        ],
+        "identity_source_url": "https://ror.org/02dwcqs71",
+        "registry_doi": "https://doi.org/10.5281/zenodo.22902037",
+        "registry_sha256": "476988542f1bdd185f779386f90149371f58cb4ebdba326db3b7b428a468d4a5",
+        "registry_license": "CC0-1.0",
+        "location_source": "GeoNames via ROR; CC BY 4.0; https://www.geonames.org/",
+        "basis": "Unique exact registered name/alias in publisher country; no existing ROR, registered hostname or name collision; no logo/ownership/admissions facts inferred"
+      }
+    },
+    {
+      "id": "7a552251-d87e-564b-a76f-de0a7e2f0dbf",
+      "slug": "psg-college-of-arts-science-7a552251",
+      "name": "PSG College of Arts & Science",
+      "country_code": "IN",
+      "country": "India",
+      "city": "Coimbatore",
+      "website": "https://www.psgcas.ac.in",
+      "domains": [
+        "psgcas.ac.in"
+      ],
+      "ror": "https://ror.org/043tv4788",
+      "aliases": [
+        "PSG College of Arts & Science",
+        "PSG College of Arts and Science",
+        "PSGCAS"
+      ],
+      "identity_source": "https://ror.org/043tv4788",
+      "identity_release": "ROR 2.13 · 2026-09-22",
+      "identity_retrieved_at": "2026-09-26",
+      "verification_status": "needs_review",
+      "publication_status": "review",
+      "evidence": {
+        "ranking_source_url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2163711&lang=1&reg=3",
+        "ranking_record_ids": [
+          "310854a4-338e-538b-8773-8efa50ffc92b"
+        ],
+        "identity_source_url": "https://ror.org/043tv4788",
+        "registry_doi": "https://doi.org/10.5281/zenodo.22902037",
+        "registry_sha256": "476988542f1bdd185f779386f90149371f58cb4ebdba326db3b7b428a468d4a5",
+        "registry_license": "CC0-1.0",
+        "location_source": "GeoNames via ROR; CC BY 4.0; https://www.geonames.org/",
+        "basis": "Unique exact registered name/alias in publisher country; no existing ROR, registered hostname or name collision; no logo/ownership/admissions facts inferred"
+      }
+    },
+    {
+      "id": "038b84f3-2e1e-5952-a971-e088369c8557",
+      "slug": "symbiosis-university-of-applied-sciences-038b84f3",
+      "name": "Symbiosis University of Applied Sciences",
+      "country_code": "IN",
+      "country": "India",
+      "city": "Indore",
+      "website": "https://www.suas.ac.in",
+      "domains": [
+        "suas.ac.in"
+      ],
+      "ror": "https://ror.org/03t7n7h72",
+      "aliases": [
+        "Symbiosis Indore",
+        "Symbiosis University of Applied Sciences"
+      ],
+      "identity_source": "https://ror.org/03t7n7h72",
+      "identity_release": "ROR 2.13 · 2026-09-22",
+      "identity_retrieved_at": "2026-09-26",
+      "verification_status": "needs_review",
+      "publication_status": "review",
+      "evidence": {
+        "ranking_source_url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2163711&lang=1&reg=3",
+        "ranking_record_ids": [
+          "030109b0-c1d1-5465-9954-d44700bc59fb"
+        ],
+        "identity_source_url": "https://ror.org/03t7n7h72",
+        "registry_doi": "https://doi.org/10.5281/zenodo.22902037",
+        "registry_sha256": "476988542f1bdd185f779386f90149371f58cb4ebdba326db3b7b428a468d4a5",
+        "registry_license": "CC0-1.0",
+        "location_source": "GeoNames via ROR; CC BY 4.0; https://www.geonames.org/",
+        "basis": "Unique exact registered name/alias in publisher country; no existing ROR, registered hostname or name collision; no logo/ownership/admissions facts inferred"
+      }
+    },
+    {
+      "id": "5297d05d-ffc4-558e-922a-bdfc04a47cbb",
+      "slug": "shri-vishwakarma-skill-university-5297d05d",
+      "name": "Shri Vishwakarma Skill University",
+      "country_code": "IN",
+      "country": "India",
+      "city": "Palwal",
+      "website": "https://svsu.ac.in",
+      "domains": [
+        "svsu.ac.in"
+      ],
+      "ror": "https://ror.org/03kbe9m86",
+      "aliases": [
+        "HVSU",
+        "Haryana Vishwakarma Skill University",
+        "SVSU",
+        "Shri Vishwakarma Skill University"
+      ],
+      "identity_source": "https://ror.org/03kbe9m86",
+      "identity_release": "ROR 2.13 · 2026-09-22",
+      "identity_retrieved_at": "2026-09-26",
+      "verification_status": "needs_review",
+      "publication_status": "review",
+      "evidence": {
+        "ranking_source_url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2163711&lang=1&reg=3",
+        "ranking_record_ids": [
+          "57e8d500-5df0-599b-90f1-b6b5ea33de31"
+        ],
+        "identity_source_url": "https://ror.org/03kbe9m86",
+        "registry_doi": "https://doi.org/10.5281/zenodo.22902037",
+        "registry_sha256": "476988542f1bdd185f779386f90149371f58cb4ebdba326db3b7b428a468d4a5",
+        "registry_license": "CC0-1.0",
+        "location_source": "GeoNames via ROR; CC BY 4.0; https://www.geonames.org/",
+        "basis": "Unique exact registered name/alias in publisher country; no existing ROR, registered hostname or name collision; no logo/ownership/admissions facts inferred"
+      }
+    },
+    {
+      "id": "aabd8756-987a-5a5d-b124-427fc40cdbe3",
+      "slug": "indian-institute-of-management-kozhikode-aabd8756",
+      "name": "Indian Institute of Management Kozhikode",
+      "country_code": "IN",
+      "country": "India",
+      "city": "Kozhikode",
+      "website": "https://www.iimk.ac.in/",
+      "domains": [
+        "iimk.ac.in"
+      ],
+      "ror": "https://ror.org/03m1xdc36",
+      "aliases": [
+        "IIM Kozhikode",
+        "IIMK",
+        "Indian Institute of Management Kozhikode"
+      ],
+      "identity_source": "https://ror.org/03m1xdc36",
+      "identity_release": "ROR 2.13 · 2026-09-22",
+      "identity_retrieved_at": "2026-09-26",
+      "verification_status": "needs_review",
+      "publication_status": "review",
+      "evidence": {
+        "ranking_source_url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2163711&lang=1&reg=3",
+        "ranking_record_ids": [
+          "416bca55-f8a1-5f17-8862-ed4d2b721a07"
+        ],
+        "identity_source_url": "https://ror.org/03m1xdc36",
+        "registry_doi": "https://doi.org/10.5281/zenodo.22902037",
+        "registry_sha256": "476988542f1bdd185f779386f90149371f58cb4ebdba326db3b7b428a468d4a5",
+        "registry_license": "CC0-1.0",
+        "location_source": "GeoNames via ROR; CC BY 4.0; https://www.geonames.org/",
+        "basis": "Unique exact registered name/alias in publisher country; no existing ROR, registered hostname or name collision; no logo/ownership/admissions facts inferred"
+      }
+    },
+    {
+      "id": "486fec07-8bf6-5dc0-b9b8-a7d86084204c",
+      "slug": "indian-institute-of-management-lucknow-486fec07",
+      "name": "Indian Institute of Management Lucknow",
+      "country_code": "IN",
+      "country": "India",
+      "city": "Lucknow",
+      "website": "https://www.iiml.ac.in",
+      "domains": [
+        "iiml.ac.in"
+      ],
+      "ror": "https://ror.org/05gfjrx96",
+      "aliases": [
+        "IIML",
+        "Indian Institute of Management Lucknow"
+      ],
+      "identity_source": "https://ror.org/05gfjrx96",
+      "identity_release": "ROR 2.13 · 2026-09-22",
+      "identity_retrieved_at": "2026-09-26",
+      "verification_status": "needs_review",
+      "publication_status": "review",
+      "evidence": {
+        "ranking_source_url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2163711&lang=1&reg=3",
+        "ranking_record_ids": [
+          "5680d162-316e-5473-b7ff-c2a7258e84bf"
+        ],
+        "identity_source_url": "https://ror.org/05gfjrx96",
+        "registry_doi": "https://doi.org/10.5281/zenodo.22902037",
+        "registry_sha256": "476988542f1bdd185f779386f90149371f58cb4ebdba326db3b7b428a468d4a5",
+        "registry_license": "CC0-1.0",
+        "location_source": "GeoNames via ROR; CC BY 4.0; https://www.geonames.org/",
+        "basis": "Unique exact registered name/alias in publisher country; no existing ROR, registered hostname or name collision; no logo/ownership/admissions facts inferred"
+      }
+    },
+    {
+      "id": "41b85a6d-fc3f-5db9-9f1e-c2ecdb4dc868",
+      "slug": "management-development-institute-41b85a6d",
+      "name": "Management Development Institute",
+      "country_code": "IN",
+      "country": "India",
+      "city": "Gurugram",
+      "website": "http://www.mdi.ac.in/",
+      "domains": [
+        "mdi.ac.in"
+      ],
+      "ror": "https://ror.org/05cstvk27",
+      "aliases": [
+        "MDI",
+        "Management Development Institute"
+      ],
+      "identity_source": "https://ror.org/05cstvk27",
+      "identity_release": "ROR 2.13 · 2026-09-22",
+      "identity_retrieved_at": "2026-09-26",
+      "verification_status": "needs_review",
+      "publication_status": "review",
+      "evidence": {
+        "ranking_source_url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2163711&lang=1&reg=3",
+        "ranking_record_ids": [
+          "04b0fb06-c58d-5cac-baf4-af8d1c93aa81"
+        ],
+        "identity_source_url": "https://ror.org/05cstvk27",
+        "registry_doi": "https://doi.org/10.5281/zenodo.22902037",
+        "registry_sha256": "476988542f1bdd185f779386f90149371f58cb4ebdba326db3b7b428a468d4a5",
+        "registry_license": "CC0-1.0",
+        "location_source": "GeoNames via ROR; CC BY 4.0; https://www.geonames.org/",
+        "basis": "Unique exact registered name/alias in publisher country; no existing ROR, registered hostname or name collision; no logo/ownership/admissions facts inferred"
+      }
+    },
+    {
+      "id": "c4478d26-4e6f-570b-9a65-09daf64ff2fe",
+      "slug": "institute-of-chemical-technology-c4478d26",
+      "name": "Institute of Chemical Technology",
+      "country_code": "IN",
+      "country": "India",
+      "city": "Mumbai",
+      "website": "http://www.ictmumbai.edu.in/",
+      "domains": [
+        "ictmumbai.edu.in"
+      ],
+      "ror": "https://ror.org/00ykac431",
+      "aliases": [
+        "ICT",
+        "Institute of Chemical Technology",
+        "University Department of Chemical Technology"
+      ],
+      "identity_source": "https://ror.org/00ykac431",
+      "identity_release": "ROR 2.13 · 2026-09-22",
+      "identity_retrieved_at": "2026-09-26",
+      "verification_status": "needs_review",
+      "publication_status": "review",
+      "evidence": {
+        "ranking_source_url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2163711&lang=1&reg=3",
+        "ranking_record_ids": [
+          "518dd2fa-aeae-5912-8842-4cb8fe760027"
+        ],
+        "identity_source_url": "https://ror.org/00ykac431",
+        "registry_doi": "https://doi.org/10.5281/zenodo.22902037",
+        "registry_sha256": "476988542f1bdd185f779386f90149371f58cb4ebdba326db3b7b428a468d4a5",
+        "registry_license": "CC0-1.0",
+        "location_source": "GeoNames via ROR; CC BY 4.0; https://www.geonames.org/",
+        "basis": "Unique exact registered name/alias in publisher country; no existing ROR, registered hostname or name collision; no logo/ownership/admissions facts inferred"
+      }
+    },
+    {
+      "id": "1e7a8c6d-df37-5859-9fef-dfa29116dc92",
+      "slug": "maulana-azad-institute-of-dental-sciences-1e7a8c6d",
+      "name": "Maulana Azad Institute of Dental Sciences",
+      "country_code": "IN",
+      "country": "India",
+      "city": "New Delhi",
+      "website": "http://maids.ac.in/home.html",
+      "domains": [
+        "maids.ac.in"
+      ],
+      "ror": "https://ror.org/00jx6qy10",
+      "aliases": [
+        "MAIDS",
+        "Maulana Azad Institute of Dental Sciences"
+      ],
+      "identity_source": "https://ror.org/00jx6qy10",
+      "identity_release": "ROR 2.13 · 2026-09-22",
+      "identity_retrieved_at": "2026-09-26",
+      "verification_status": "needs_review",
+      "publication_status": "review",
+      "evidence": {
+        "ranking_source_url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2163711&lang=1&reg=3",
+        "ranking_record_ids": [
+          "e10626df-fff9-5f9a-855d-195669f479a0"
+        ],
+        "identity_source_url": "https://ror.org/00jx6qy10",
+        "registry_doi": "https://doi.org/10.5281/zenodo.22902037",
+        "registry_sha256": "476988542f1bdd185f779386f90149371f58cb4ebdba326db3b7b428a468d4a5",
+        "registry_license": "CC0-1.0",
+        "location_source": "GeoNames via ROR; CC BY 4.0; https://www.geonames.org/",
+        "basis": "Unique exact registered name/alias in publisher country; no existing ROR, registered hostname or name collision; no logo/ownership/admissions facts inferred"
+      }
+    },
+    {
+      "id": "f72407ef-ba7a-5b73-b194-56de14b58c7a",
+      "slug": "nalsar-university-of-law-f72407ef",
+      "name": "Nalsar University of Law",
+      "country_code": "IN",
+      "country": "India",
+      "city": "Hyderabad",
+      "website": "https://www.nalsar.ac.in/",
+      "domains": [
+        "nalsar.ac.in"
+      ],
+      "ror": "https://ror.org/0539zen48",
+      "aliases": [
+        "NALSAR",
+        "Nalsar University of Law",
+        "National Academy of Legal Studies and Research"
+      ],
+      "identity_source": "https://ror.org/0539zen48",
+      "identity_release": "ROR 2.13 · 2026-09-22",
+      "identity_retrieved_at": "2026-09-26",
+      "verification_status": "needs_review",
+      "publication_status": "review",
+      "evidence": {
+        "ranking_source_url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2163711&lang=1&reg=3",
+        "ranking_record_ids": [
+          "cdc00cf0-dc81-5c47-bc00-2bc41d27fc6f"
+        ],
+        "identity_source_url": "https://ror.org/0539zen48",
+        "registry_doi": "https://doi.org/10.5281/zenodo.22902037",
+        "registry_sha256": "476988542f1bdd185f779386f90149371f58cb4ebdba326db3b7b428a468d4a5",
+        "registry_license": "CC0-1.0",
+        "location_source": "GeoNames via ROR; CC BY 4.0; https://www.geonames.org/",
+        "basis": "Unique exact registered name/alias in publisher country; no existing ROR, registered hostname or name collision; no logo/ownership/admissions facts inferred"
+      }
+    }
+  ],
+  "mappings": [
+    {
+      "record_id": "d8997849-3d98-573d-9435-974ec19e3508",
+      "university_id": "26ebf6e5-a612-55f5-bb38-64ba2e059762",
+      "ror": "https://ror.org/01yc7t268",
+      "status": "additional_existing_identity_match",
+      "basis": "Unique exact complete registered ROR name/alias in same country; existing unique ROR"
+    },
+    {
+      "record_id": "00ce7058-b86e-539e-81c7-5ffd5fb22b5a",
+      "university_id": "90d67088-a135-5fb8-844e-2cb2158327e4",
+      "ror": "https://ror.org/017c6at71",
+      "status": "additional_existing_identity_match",
+      "basis": "Unique exact complete registered ROR name/alias in same country; existing unique ROR"
+    },
+    {
+      "record_id": "ba0d32fa-a097-5b3e-a4c0-52d34063412b",
+      "university_id": "1be44a6c-a280-56b7-9908-f9239d0a5e04",
+      "ror": "https://ror.org/01nqk4x38",
+      "status": "additional_existing_identity_match",
+      "basis": "Unique exact complete registered ROR name/alias in same country; existing unique ROR"
+    },
+    {
+      "record_id": "bd03a81f-8b4f-5639-a6da-59b7b554c7c6",
+      "university_id": "b4e9c076-eb29-5515-9986-53e93d215a52",
+      "ror": "https://ror.org/02s1hvj37",
+      "status": "additional_existing_identity_match",
+      "basis": "Unique exact complete registered ROR name/alias in same country; existing unique ROR"
+    },
+    {
+      "record_id": "76050b56-db6b-548a-9407-6b164b0a9b45",
+      "university_id": "2c5a27f6-09f6-5ac8-9c34-bdbbbf5bade2",
+      "ror": "https://ror.org/02eak8n78",
+      "status": "additional_existing_identity_match",
+      "basis": "Unique exact complete registered ROR name/alias in same country; existing unique ROR"
+    },
+    {
+      "record_id": "2667ecf2-57b6-5d8f-b051-fa831f7321c1",
+      "university_id": "6fd9aabc-c05d-5c84-9d78-faeddddfe581",
+      "ror": "https://ror.org/051rrf637",
+      "status": "additional_existing_identity_match",
+      "basis": "Unique exact complete registered ROR name/alias in same country; existing unique ROR"
+    },
+    {
+      "record_id": "974c9030-0114-5faf-a033-595ae828135b",
+      "proposed_university_id": "6a448142-a24e-5482-93e1-f505ed2bab79",
+      "ror": "https://ror.org/02dwcqs71",
+      "status": "private_new_identity_proposal"
+    },
+    {
+      "record_id": "310854a4-338e-538b-8773-8efa50ffc92b",
+      "proposed_university_id": "7a552251-d87e-564b-a76f-de0a7e2f0dbf",
+      "ror": "https://ror.org/043tv4788",
+      "status": "private_new_identity_proposal"
+    },
+    {
+      "record_id": "0993ba1c-6c71-5a95-88ee-6f4727f2e940",
+      "university_id": "e48c6248-aca1-5c4d-80c7-0132d9ebf315",
+      "ror": "https://ror.org/02fzfx471",
+      "status": "additional_existing_identity_match",
+      "basis": "Unique exact complete registered ROR name/alias in same country; existing unique ROR"
+    },
+    {
+      "record_id": "030109b0-c1d1-5465-9954-d44700bc59fb",
+      "proposed_university_id": "038b84f3-2e1e-5952-a971-e088369c8557",
+      "ror": "https://ror.org/03t7n7h72",
+      "status": "private_new_identity_proposal"
+    },
+    {
+      "record_id": "57e8d500-5df0-599b-90f1-b6b5ea33de31",
+      "proposed_university_id": "5297d05d-ffc4-558e-922a-bdfc04a47cbb",
+      "ror": "https://ror.org/03kbe9m86",
+      "status": "private_new_identity_proposal"
+    },
+    {
+      "record_id": "416bca55-f8a1-5f17-8862-ed4d2b721a07",
+      "proposed_university_id": "aabd8756-987a-5a5d-b124-427fc40cdbe3",
+      "ror": "https://ror.org/03m1xdc36",
+      "status": "private_new_identity_proposal"
+    },
+    {
+      "record_id": "5680d162-316e-5473-b7ff-c2a7258e84bf",
+      "proposed_university_id": "486fec07-8bf6-5dc0-b9b8-a7d86084204c",
+      "ror": "https://ror.org/05gfjrx96",
+      "status": "private_new_identity_proposal"
+    },
+    {
+      "record_id": "04b0fb06-c58d-5cac-baf4-af8d1c93aa81",
+      "proposed_university_id": "41b85a6d-fc3f-5db9-9f1e-c2ecdb4dc868",
+      "ror": "https://ror.org/05cstvk27",
+      "status": "private_new_identity_proposal"
+    },
+    {
+      "record_id": "518dd2fa-aeae-5912-8842-4cb8fe760027",
+      "proposed_university_id": "c4478d26-4e6f-570b-9a65-09daf64ff2fe",
+      "ror": "https://ror.org/00ykac431",
+      "status": "private_new_identity_proposal"
+    },
+    {
+      "record_id": "ded93916-5846-5d4e-b0be-a20047f9de41",
+      "proposed_university_id": "6a448142-a24e-5482-93e1-f505ed2bab79",
+      "ror": "https://ror.org/02dwcqs71",
+      "status": "private_new_identity_proposal"
+    },
+    {
+      "record_id": "6380a7b0-1a9a-57ea-b9d1-a2c5fdfbd263",
+      "proposed_university_id": "6a448142-a24e-5482-93e1-f505ed2bab79",
+      "ror": "https://ror.org/02dwcqs71",
+      "status": "private_new_identity_proposal"
+    },
+    {
+      "record_id": "e10626df-fff9-5f9a-855d-195669f479a0",
+      "proposed_university_id": "1e7a8c6d-df37-5859-9fef-dfa29116dc92",
+      "ror": "https://ror.org/00jx6qy10",
+      "status": "private_new_identity_proposal"
+    },
+    {
+      "record_id": "51e41ce0-d345-5b39-9aa0-4d0f7886ca22",
+      "university_id": "bdc1f46c-92de-5ed1-bb58-dd28fdcfa65f",
+      "ror": "https://ror.org/00s2qq515",
+      "status": "additional_existing_identity_match",
+      "basis": "Unique exact complete registered ROR name/alias in same country; existing unique ROR"
+    },
+    {
+      "record_id": "cdc00cf0-dc81-5c47-bc00-2bc41d27fc6f",
+      "proposed_university_id": "f72407ef-ba7a-5b73-b194-56de14b58c7a",
+      "ror": "https://ror.org/0539zen48",
+      "status": "private_new_identity_proposal"
+    }
+  ],
+  "held": [
+    {
+      "record_id": "2fe9c8c5-fbe8-56d0-8f92-a7615cb10330",
+      "name": "Johns Hopkins U.a",
+      "reason": "aggregate_reporting_unit_not_a_single_profile"
+    },
+    {
+      "record_id": "332c77bd-7af2-521c-be4a-fe97577719e8",
+      "name": "Ohio State U.",
+      "reason": "missing_unique_official_UNITID_crosswalk"
+    },
+    {
+      "record_id": "4aa3a389-0a9d-5c7e-8a6a-2b7eaa663397",
+      "name": "U. Marylandb",
+      "reason": "aggregate_reporting_unit_not_a_single_profile"
+    },
+    {
+      "record_id": "41a0781a-5a12-52f0-9699-7b5c59dfda8e",
+      "name": "Texas A&M U., College Station and Health Science Center",
+      "reason": "aggregate_reporting_unit_not_a_single_profile"
+    },
+    {
+      "record_id": "c69f0380-72c0-531f-b310-ff420a53ca5e",
+      "name": "Vanderbilt U. and Vanderbilt U. Medical Center",
+      "reason": "aggregate_reporting_unit_not_a_single_profile"
+    },
+    {
+      "record_id": "e14cbd50-67cb-52c9-9854-8c34f929151d",
+      "name": "Pennsylvania State U., University Park and Hershey Medical Center",
+      "reason": "aggregate_reporting_unit_not_a_single_profile"
+    },
+    {
+      "record_id": "ce0ba61b-2e66-5864-8e3b-285ead452b4d",
+      "name": "U. Colorado Anschutz Medical Campus",
+      "reason": "missing_unique_official_UNITID_crosswalk"
+    },
+    {
+      "record_id": "e2d57b4c-fe04-5d3b-a09e-e4b4666581d2",
+      "name": "U. Cincinnati",
+      "reason": "missing_unique_official_UNITID_crosswalk"
+    },
+    {
+      "record_id": "483aebf4-ea75-504e-9fb1-8c0faf0b094c",
+      "name": "U. Nebraska, Lincoln and Medical Centerc",
+      "reason": "aggregate_reporting_unit_not_a_single_profile"
+    },
+    {
+      "record_id": "5dabdbb4-966e-541c-9b1a-897f332d04d5",
+      "name": "Uniformed Services U. of the Health Sciences",
+      "ror": "https://ror.org/04r3kq386",
+      "reason": "registered_name_already_present_identity_review_required"
+    },
+    {
+      "record_id": "6a831178-2cf1-5940-aebe-2d5fb1c8e284",
+      "name": "SUNY, U. Buffalo",
+      "reason": "missing_unique_official_UNITID_crosswalk"
+    },
+    {
+      "record_id": "3c0a3cbf-d72f-5d79-96e7-8d3662cfade0",
+      "name": "Scripps Research Institute",
+      "reason": "missing_unique_official_UNITID_crosswalk"
+    },
+    {
+      "record_id": "f2efcc82-dc8f-5b28-b1f6-6a3da8c89a4d",
+      "name": "U. Oklahomad",
+      "reason": "aggregate_reporting_unit_not_a_single_profile"
+    },
+    {
+      "record_id": "928c35c7-d89e-5466-9dd9-ca22991cbbc8",
+      "name": "SUNY, U. Albany",
+      "reason": "missing_unique_official_UNITID_crosswalk"
+    },
+    {
+      "record_id": "75fc225b-4b6a-5b87-b2eb-1984e71c5e55",
+      "name": "U. Connecticut",
+      "reason": "missing_unique_official_UNITID_crosswalk"
+    },
+    {
+      "record_id": "dce22656-3a20-5d64-90e0-bf9d23f0dbf6",
+      "name": "Dartmouth C. and Dartmouth Hitchcock Medical Center",
+      "reason": "aggregate_reporting_unit_not_a_single_profile"
+    },
+    {
+      "record_id": "382369f2-7855-5ecb-b2f9-97806f6469de",
+      "name": "Oregon State U.",
+      "reason": "missing_unique_official_UNITID_crosswalk"
+    },
+    {
+      "record_id": "5a069fbf-184a-5314-8528-9227697e7fe4",
+      "name": "SUNY, Stony Brook U.",
+      "reason": "missing_unique_official_UNITID_crosswalk"
+    },
+    {
+      "record_id": "1a87ef2b-15d2-552a-a339-3c1dd65356b1",
+      "name": "Woods Hole Oceanographic Institution",
+      "reason": "no_unique_exact_active_education_ROR",
+      "candidate_count": 0
+    },
+    {
+      "record_id": "e944e53b-4bf2-545d-9800-50b03a41b264",
+      "name": "U. New Hampshire",
+      "reason": "missing_unique_official_UNITID_crosswalk"
+    },
+    {
+      "record_id": "0aadb4ff-024a-5922-ae27-7b61dd161dbc",
+      "name": "U. Mississippi",
+      "reason": "missing_unique_official_UNITID_crosswalk"
+    },
+    {
+      "record_id": "1e85e05a-dcdb-52f9-8620-6c3711c8d794",
+      "name": "SUNY, Binghamton U.",
+      "reason": "missing_unique_official_UNITID_crosswalk"
+    },
+    {
+      "record_id": "188a5e2a-64d8-5ee0-bdc0-50d1759732b7",
+      "name": "Cold Spring Harbor Laboratory",
+      "reason": "no_unique_exact_active_education_ROR",
+      "candidate_count": 0
+    },
+    {
+      "record_id": "7b4fba7d-a4b3-53be-9e1d-adb4bdfee9b9",
+      "name": "William & Mary",
+      "reason": "missing_unique_official_UNITID_crosswalk"
+    },
+    {
+      "record_id": "54e80902-88df-5c1b-84fb-369d4e8c09c6",
+      "name": "Van Andel Research Institute",
+      "reason": "missing_unique_official_UNITID_crosswalk"
+    },
+    {
+      "record_id": "7fd166c6-29b4-5db4-aa91-48c257eaa751",
+      "name": "CUNY, Graduate Center",
+      "reason": "missing_unique_official_UNITID_crosswalk"
+    },
+    {
+      "record_id": "2a2d1f8b-229e-5e1e-be04-5afdcc976d3d",
+      "name": "U. California, Office of the President",
+      "reason": "missing_unique_official_UNITID_crosswalk"
+    },
+    {
+      "record_id": "4a8bfd4b-34cf-5ef9-8097-e376ffb4c291",
+      "name": "Touro U., New Yorke",
+      "reason": "aggregate_reporting_unit_not_a_single_profile"
+    },
+    {
+      "record_id": "502486dc-4d38-5442-85a8-f40a02c0c0a9",
+      "name": "CUNY, City C.",
+      "reason": "missing_unique_official_UNITID_crosswalk"
+    },
+    {
+      "record_id": "ffa2ba0f-6c5c-5e8c-8a03-8295ce397918",
+      "name": "Florida A&M U.",
+      "reason": "missing_unique_official_UNITID_crosswalk"
+    },
+    {
+      "record_id": "d2f41564-0497-5d76-8b42-bf62566822f4",
+      "name": "Ohio U.",
+      "reason": "missing_unique_official_UNITID_crosswalk"
+    },
+    {
+      "record_id": "b7c21ffc-5e5e-5049-92cb-bdc50545d0b0",
+      "name": "Western Michigan U. and Homer Stryker M.D. School of Medicine",
+      "reason": "missing_unique_official_UNITID_crosswalk"
+    },
+    {
+      "record_id": "aa46aea3-5193-5309-9c6c-6689d9872c61",
+      "name": "Kent State U.",
+      "reason": "missing_unique_official_UNITID_crosswalk"
+    },
+    {
+      "record_id": "d1b3ee30-9268-5594-949f-fed1e60311f1",
+      "name": "SUNY, Upstate Medical U.",
+      "reason": "missing_unique_official_UNITID_crosswalk"
+    },
+    {
+      "record_id": "029e2e21-dcfa-5092-884f-0491bb0288fd",
+      "name": "U. Maryland Center for Environmental Science",
+      "reason": "missing_unique_official_UNITID_crosswalk"
+    },
+    {
+      "record_id": "2049090f-621e-504d-b1e2-959f134c7cf2",
+      "name": "U.S. Air Force Academy",
+      "reason": "missing_unique_official_UNITID_crosswalk"
+    },
+    {
+      "record_id": "ed2bda22-b769-5489-8b1b-5b479d06a007",
+      "name": "CUNY, Hunter C.",
+      "reason": "missing_unique_official_UNITID_crosswalk"
+    },
+    {
+      "record_id": "3d2cb9fa-50c4-58cc-b9d3-68093dda6f3b",
+      "name": "SUNY, C. of Environmental Science and Forestry",
+      "reason": "missing_unique_official_UNITID_crosswalk"
+    },
+    {
+      "record_id": "152ab1e5-c3c3-550c-b55e-a5118149ab52",
+      "name": "SUNY, Downstate Health Sciences U.",
+      "reason": "missing_unique_official_UNITID_crosswalk"
+    },
+    {
+      "record_id": "81573e42-230a-5e07-9271-a0f8ea544474",
+      "name": "Embry-Riddle Aeronautical U.",
+      "reason": "missing_unique_official_UNITID_crosswalk"
+    },
+    {
+      "record_id": "8719ad3f-c300-5ab6-90b5-5cd0106c904b",
+      "name": "Desert Research Institute",
+      "reason": "missing_unique_official_UNITID_crosswalk"
+    },
+    {
+      "record_id": "30f174dc-2ff6-5364-86aa-720f6e896de5",
+      "name": "CUNY, Queens C.",
+      "reason": "missing_unique_official_UNITID_crosswalk"
+    },
+    {
+      "record_id": "9868a726-cafc-541c-9611-52e2c3d2d89d",
+      "name": "CUNY, Graduate School of Public Health and Health Policy",
+      "reason": "missing_unique_official_UNITID_crosswalk"
+    },
+    {
+      "record_id": "accb7f04-3158-5f5f-93d5-31ba7b8a4e97",
+      "name": "Miami U.",
+      "reason": "missing_unique_official_UNITID_crosswalk"
+    },
+    {
+      "record_id": "2e7363d4-115d-56bf-b69c-db04eadf1265",
+      "name": "U. Texas Health Science Center, Tyler",
+      "reason": "no_unique_exact_active_education_ROR",
+      "candidate_count": 0
+    },
+    {
+      "record_id": "ee8fd6dc-c15b-5154-94d1-7fef39432aca",
+      "name": "U. Akron",
+      "reason": "missing_unique_official_UNITID_crosswalk"
+    },
+    {
+      "record_id": "1501ddda-2c2c-51fe-a424-65056158e749",
+      "name": "U. Colorado Denver",
+      "reason": "missing_unique_official_UNITID_crosswalk"
+    },
+    {
+      "record_id": "c93c5d9b-f56f-5897-a044-bfbc42abff2a",
+      "name": "Wright State U.",
+      "reason": "missing_unique_official_UNITID_crosswalk"
+    },
+    {
+      "record_id": "3c0458dd-c5a2-5614-9b3c-dce80302c454",
+      "name": "CUNY, Advanced Science Research Center",
+      "reason": "missing_unique_official_UNITID_crosswalk"
+    },
+    {
+      "record_id": "b6dd0b68-074f-59b7-941f-ab30bb32081d",
+      "name": "U.S. Military Academy",
+      "reason": "missing_unique_official_UNITID_crosswalk"
+    },
+    {
+      "record_id": "ab02cac0-5c95-5bf2-a183-22f811418773",
+      "name": "CUNY, John Jay C. of Criminal Justice",
+      "reason": "missing_unique_official_UNITID_crosswalk"
+    },
+    {
+      "record_id": "909d0e4b-6de0-57d4-9f04-a24c66f37b26",
+      "name": "Bowling Green State U.",
+      "reason": "missing_unique_official_UNITID_crosswalk"
+    },
+    {
+      "record_id": "aad7b4c4-c290-563d-b03c-0e290571a26b",
+      "name": "CUNY, Brooklyn C.",
+      "reason": "missing_unique_official_UNITID_crosswalk"
+    },
+    {
+      "record_id": "9ecd3cd8-eac4-5102-9b34-f74ba8a7430f",
+      "name": "Midwestern U.",
+      "reason": "missing_unique_official_UNITID_crosswalk"
+    },
+    {
+      "record_id": "e9f9a761-28b6-55e0-aa3c-b8e792cd37e9",
+      "name": "U.S. Naval Academy",
+      "reason": "missing_unique_official_UNITID_crosswalk"
+    },
+    {
+      "record_id": "05935858-5996-5d91-ad54-a7fd9cf82282",
+      "name": "Southern U. and A&M C., Agricultural Research and Extension Center",
+      "reason": "missing_unique_official_UNITID_crosswalk"
+    },
+    {
+      "record_id": "ca47388d-0fc2-5cfb-b09e-a153ca3a0c1f",
+      "name": "U.S. Army War C.",
+      "reason": "missing_unique_official_UNITID_crosswalk"
+    },
+    {
+      "record_id": "af6f9224-1300-5570-b731-946082b8e036",
+      "name": "Memorial Sloan Kettering Cancer Center, Louis V. Gerstner Jr. Graduate S. of Biomedical Sciences",
+      "reason": "missing_unique_official_UNITID_crosswalk"
+    },
+    {
+      "record_id": "3cc23a8b-b117-5c13-b6ad-1885668230dc",
+      "name": "CUNY, Lehman C.",
+      "reason": "missing_unique_official_UNITID_crosswalk"
+    },
+    {
+      "record_id": "0827dbb1-849d-5e14-9f62-65cb93e35a28",
+      "name": "CUNY, Baruch C.",
+      "reason": "missing_unique_official_UNITID_crosswalk"
+    },
+    {
+      "record_id": "1efdaf5e-c96d-57df-86ce-620bd6c7ebc1",
+      "name": "Naval War C.",
+      "ror": "https://ror.org/01hehsy63",
+      "reason": "registered_name_already_present_identity_review_required"
+    },
+    {
+      "record_id": "d9fbad06-9ef8-5aa0-ae95-e8a043efa16a",
+      "name": "CUNY, C. Staten Island",
+      "reason": "missing_unique_official_UNITID_crosswalk"
+    },
+    {
+      "record_id": "89a1bc20-884b-5432-b7c2-6a40e59d1d65",
+      "name": "High Tech High Graduate School of Ed.",
+      "reason": "missing_unique_official_UNITID_crosswalk"
+    },
+    {
+      "record_id": "7956fa36-9acd-5290-9464-a665f6e95733",
+      "name": "U. Central del Caribe",
+      "reason": "missing_unique_official_UNITID_crosswalk"
+    },
+    {
+      "record_id": "00ec07c2-50c9-562a-9917-9dd6fbba8b59",
+      "name": "SUNY, C. of Optometry",
+      "reason": "missing_unique_official_UNITID_crosswalk"
+    },
+    {
+      "record_id": "9919e457-e436-56fb-bbaa-42bee321dae1",
+      "name": "SUNY, Oswego",
+      "reason": "missing_unique_official_UNITID_crosswalk"
+    },
+    {
+      "record_id": "14c4964d-7e24-5a48-a80f-54d6f7ce370f",
+      "name": "CUNY, New York City C. of Technology",
+      "reason": "missing_unique_official_UNITID_crosswalk"
+    },
+    {
+      "record_id": "ba4cbdb1-b748-5895-b4c6-cd034bcec598",
+      "name": "CUNY, system office",
+      "reason": "missing_unique_official_UNITID_crosswalk"
+    },
+    {
+      "record_id": "d2eb19cb-882e-51e4-a8e8-8f4a061f1da2",
+      "name": "SUNY, Buffalo State U.",
+      "reason": "missing_unique_official_UNITID_crosswalk"
+    },
+    {
+      "record_id": "0b85f0d4-0c31-57db-a4f7-3d6c07640fdc",
+      "name": "California Baptist U.",
+      "reason": "missing_unique_official_UNITID_crosswalk"
+    },
+    {
+      "record_id": "18d0dba1-dfc5-5f4a-a94b-dd1932f16956",
+      "name": "U.S. Coast Guard Academy",
+      "reason": "missing_unique_official_UNITID_crosswalk"
+    },
+    {
+      "record_id": "d8a807df-7efa-5b46-9ee9-75d311a732fb",
+      "name": "SUNY, C. Brockport",
+      "reason": "missing_unique_official_UNITID_crosswalk"
+    },
+    {
+      "record_id": "a8765f98-c9fe-5bb9-9300-1b55af554ba3",
+      "name": "SUNY, Geneseo",
+      "reason": "missing_unique_official_UNITID_crosswalk"
+    },
+    {
+      "record_id": "80c349ff-95ca-54b6-b2f1-d609f0890a87",
+      "name": "Biola U.",
+      "reason": "missing_unique_official_UNITID_crosswalk"
+    },
+    {
+      "record_id": "86b68bec-ca8f-595a-b778-c36c8faa1667",
+      "name": "U. Ana G. Mendez, Gurabo",
+      "reason": "missing_unique_official_UNITID_crosswalk"
+    },
+    {
+      "record_id": "fb07fdba-a098-573c-ade6-1894071fdf0f",
+      "name": "Saint John's U.",
+      "reason": "missing_unique_official_UNITID_crosswalk"
+    },
+    {
+      "record_id": "accbdde7-cb23-59ad-80c1-62a9109085d3",
+      "name": "Hartford International U. for Religion and Peace",
+      "reason": "missing_unique_official_UNITID_crosswalk"
+    },
+    {
+      "record_id": "25d4872b-75d0-5fbd-9fad-0be16dbc9ae5",
+      "name": "CUNY, York C.",
+      "reason": "missing_unique_official_UNITID_crosswalk"
+    },
+    {
+      "record_id": "4ab53329-b40b-5de2-a978-5dd6cdca848e",
+      "name": "SUNY, C. Plattsburgh",
+      "reason": "missing_unique_official_UNITID_crosswalk"
+    },
+    {
+      "record_id": "12d0e5fc-737e-5b33-982a-9e6c9b79e675",
+      "name": "U. North Carolina, general administration",
+      "reason": "missing_unique_official_UNITID_crosswalk"
+    },
+    {
+      "record_id": "0f714247-8dae-5cec-ab93-a6aa513ea932",
+      "name": "Graduate School of the Stowers Institute for Medical Research",
+      "reason": "missing_unique_official_UNITID_crosswalk"
+    },
+    {
+      "record_id": "0769a117-6e94-5ca0-82b6-95f7ce643cad",
+      "name": "SUNY, Polytechnic Institute",
+      "reason": "missing_unique_official_UNITID_crosswalk"
+    },
+    {
+      "record_id": "4d060a29-37e7-5163-ad65-26067bba0d31",
+      "name": "SUNY, Potsdam",
+      "reason": "missing_unique_official_UNITID_crosswalk"
+    },
+    {
+      "record_id": "ae926447-4d84-5718-960a-5a6c05faa533",
+      "name": "SUNY, Cobleskill",
+      "reason": "missing_unique_official_UNITID_crosswalk"
+    },
+    {
+      "record_id": "f21ee57a-d0a5-58f1-b63f-49fed06c1ede",
+      "name": "La Salle U.",
+      "reason": "missing_unique_official_UNITID_crosswalk"
+    },
+    {
+      "record_id": "39e2c945-8f35-5b3d-8043-ae103bc0d5f9",
+      "name": "CUNY, Medgar Evers C.",
+      "reason": "missing_unique_official_UNITID_crosswalk"
+    },
+    {
+      "record_id": "3c5e78b3-b0ed-5679-948b-1084febae703",
+      "name": "Lake Erie C. of Osteopathic Medicine",
+      "reason": "missing_unique_official_UNITID_crosswalk"
+    },
+    {
+      "record_id": "48113010-2bfb-5004-b7c8-18566efb216e",
+      "name": "U. Minnesota, Rochester",
+      "reason": "missing_unique_official_UNITID_crosswalk"
+    },
+    {
+      "record_id": "3baccd3a-fa75-5507-8085-d830ca73c55b",
+      "name": "Minerva U.",
+      "reason": "missing_unique_official_UNITID_crosswalk"
+    },
+    {
+      "record_id": "f994fe49-7e28-57f2-bf0a-9289c463e895",
+      "name": "Polytechnic U. Puerto Rico",
+      "reason": "missing_unique_official_UNITID_crosswalk"
+    },
+    {
+      "record_id": "1c337054-dceb-5de0-9ec0-fb5bb5fd30b3",
+      "name": "Fairleigh Dickinson U.",
+      "reason": "missing_unique_official_UNITID_crosswalk"
+    },
+    {
+      "record_id": "c3b9ac00-2b43-5c78-9181-54f291df2401",
+      "name": "Utica U.",
+      "reason": "missing_unique_official_UNITID_crosswalk"
+    },
+    {
+      "record_id": "a9abee79-480d-506e-b566-2f3f0ad91ba3",
+      "name": "SUNY, Old Westbury",
+      "reason": "missing_unique_official_UNITID_crosswalk"
+    },
+    {
+      "record_id": "50956a60-55ac-5679-9657-af423610399b",
+      "name": "SUNY, Farmingdale State C.",
+      "reason": "missing_unique_official_UNITID_crosswalk"
+    },
+    {
+      "record_id": "8c5719a4-a515-5243-969b-ac3295d2829f",
+      "name": "Sonoran U. Health Sciences",
+      "reason": "missing_unique_official_UNITID_crosswalk"
+    },
+    {
+      "record_id": "f7dcf3d8-5e1a-5e3e-8dd0-73344f83f020",
+      "name": "Salus U.",
+      "ror": "https://ror.org/00p82hn55",
+      "unitid": "214564",
+      "reason": "new_US_identity_requires_current_HD2025_corroboration"
+    },
+    {
+      "record_id": "22b92862-14f6-59df-8597-07e56e1e008f",
+      "name": "U. Minnesota, Crookston",
+      "reason": "missing_unique_official_UNITID_crosswalk"
+    },
+    {
+      "record_id": "77f7a169-37d3-5a2a-8e7d-617f17409814",
+      "name": "SUNY, New Paltz",
+      "reason": "missing_unique_official_UNITID_crosswalk"
+    },
+    {
+      "record_id": "da2fec31-b7f3-5d13-94c7-7d228c57a1b1",
+      "name": "U. Ana G. Mendez, Carolina",
+      "reason": "missing_unique_official_UNITID_crosswalk"
+    },
+    {
+      "record_id": "4c4a60db-8586-5621-9930-4f7bcdaf6924",
+      "name": "Albizu U.",
+      "reason": "missing_unique_official_UNITID_crosswalk"
+    },
+    {
+      "record_id": "bd8669e0-33db-5263-8256-c0aa5e2b8102",
+      "name": "Bryn Athyn C.",
+      "reason": "missing_unique_official_UNITID_crosswalk"
+    },
+    {
+      "record_id": "7556cd03-9a10-5f82-921b-8e9b3643b083",
+      "name": "American C. of Financial Services",
+      "reason": "missing_unique_official_UNITID_crosswalk"
+    },
+    {
+      "record_id": "f75d98c9-7b5f-5aa5-8ded-be2358c60495",
+      "name": "SUNY, C. Cortland",
+      "reason": "missing_unique_official_UNITID_crosswalk"
+    },
+    {
+      "record_id": "da3d89e3-81e9-5b74-b544-fd68ce48c2d4",
+      "name": "Life Chiropractic C.-West",
+      "reason": "missing_unique_official_UNITID_crosswalk"
+    },
+    {
+      "record_id": "7b3393bf-dfe5-5292-ba9d-e35d311fef4a",
+      "name": "Doane U.",
+      "reason": "missing_unique_official_UNITID_crosswalk"
+    },
+    {
+      "record_id": "3ee36d6b-a385-5a5a-9872-cd46fbbe2b93",
+      "name": "Arkansas C. of Health Education",
+      "reason": "missing_unique_official_UNITID_crosswalk"
+    },
+    {
+      "record_id": "06f8dae5-72eb-5da9-9f9e-6458fccba2e5",
+      "name": "National U. of Health Sciences",
+      "reason": "missing_unique_official_UNITID_crosswalk"
+    },
+    {
+      "record_id": "a9f0d155-d627-58c3-883f-9a57f6495488",
+      "name": "Alabama C., Osteopathic Medicine",
+      "reason": "missing_unique_official_UNITID_crosswalk"
+    },
+    {
+      "record_id": "abe2a101-7e4e-5986-af97-3290b06bd58b",
+      "name": "Indiana U., Kokomo",
+      "reason": "missing_unique_official_UNITID_crosswalk"
+    },
+    {
+      "record_id": "b20fb3a5-4aa0-52a5-924a-89dbb5c64197",
+      "name": "Jacksonville U.",
+      "reason": "missing_unique_official_UNITID_crosswalk"
+    },
+    {
+      "record_id": "45fc5565-ce53-5cbc-95cc-6a8758ae6d3c",
+      "name": "California U. of Science and Medicine",
+      "reason": "missing_unique_official_UNITID_crosswalk"
+    },
+    {
+      "record_id": "d86effe6-628a-5104-ac27-efba1977b4a4",
+      "name": "SUNY, Oneonta",
+      "reason": "missing_unique_official_UNITID_crosswalk"
+    },
+    {
+      "record_id": "30c045a0-a8d4-5e08-8d2c-dc89b03e450b",
+      "name": "Bard C.",
+      "reason": "missing_unique_official_UNITID_crosswalk"
+    },
+    {
+      "record_id": "01ca8ae1-62e9-5a54-acff-b36cdd6ed3da",
+      "name": "Life U.",
+      "reason": "missing_unique_official_UNITID_crosswalk"
+    },
+    {
+      "record_id": "91cee564-601d-5b86-8384-51b2fa8c8a94",
+      "name": "U. Ana G. Mendez, Cupey",
+      "reason": "missing_unique_official_UNITID_crosswalk"
+    },
+    {
+      "record_id": "784557fe-ece1-502d-8304-18b48d50c3b8",
+      "name": "SUNY, Purchase C.",
+      "reason": "missing_unique_official_UNITID_crosswalk"
+    },
+    {
+      "record_id": "1f29c64d-76ca-5838-ac4d-3c93e5659a6b",
+      "name": "Oral Roberts U.",
+      "reason": "missing_unique_official_UNITID_crosswalk"
+    },
+    {
+      "record_id": "1fa0516c-39a2-5df5-ade2-69f044ad4280",
+      "name": "Manchester U.",
+      "reason": "missing_unique_official_UNITID_crosswalk"
+    },
+    {
+      "record_id": "7a8b056b-4e55-5ef7-b023-da4fd5add2e9",
+      "name": "Indian Institute of Science, Bengaluru",
+      "reason": "no_unique_exact_active_education_ROR",
+      "candidate_count": 0
+    },
+    {
+      "record_id": "7c807092-9acc-5f16-9061-4b7f9d3ed51c",
+      "name": "Indian Institute of Science, Bengaluru",
+      "reason": "no_unique_exact_active_education_ROR",
+      "candidate_count": 0
+    },
+    {
+      "record_id": "26d5003f-6044-5f39-8b62-d57838bf96ef",
+      "name": "Hindu College, Delhi",
+      "ror": "https://ror.org/04xgbph11",
+      "reason": "registered_name_already_present_identity_review_required"
+    },
+    {
+      "record_id": "a25b7f97-ee80-51c3-870c-c926438e7547",
+      "name": "Miranda House, Delhi",
+      "reason": "no_unique_exact_active_education_ROR",
+      "candidate_count": 0
+    },
+    {
+      "record_id": "aad5c3d1-7305-5330-873e-5af11e9b445c",
+      "name": "Hans Raj College, Delhi",
+      "reason": "no_unique_exact_active_education_ROR",
+      "candidate_count": 0
+    },
+    {
+      "record_id": "f612ff2b-b7f4-5a67-a4da-9e0819ffbe43",
+      "name": "Kirori Mal College, Delhi",
+      "reason": "no_unique_exact_active_education_ROR",
+      "candidate_count": 0
+    },
+    {
+      "record_id": "8f876ed0-ec5f-5be1-9903-b138f780f5d3",
+      "name": "St. Stephens's College, Delhi",
+      "reason": "no_unique_exact_active_education_ROR",
+      "candidate_count": 0
+    },
+    {
+      "record_id": "aef0d03c-a55f-5936-982d-6df5573d95bf",
+      "name": "Rama Krishna Mission Vivekananda Centenary College, Kolkata",
+      "reason": "no_unique_exact_active_education_ROR",
+      "candidate_count": 0
+    },
+    {
+      "record_id": "0834c32b-15f5-51a1-a530-338adcc970a9",
+      "name": "Atma Ram Sanatan Dharm College, New Delhi",
+      "reason": "no_unique_exact_active_education_ROR",
+      "candidate_count": 0
+    },
+    {
+      "record_id": "152352ff-fb93-52df-b6b1-038f2688ce72",
+      "name": "St. Xavier`s College, Kolkata",
+      "reason": "no_unique_exact_active_education_ROR",
+      "candidate_count": 5
+    },
+    {
+      "record_id": "cdef9436-9b9f-5418-a2ff-cf05d1befa6c",
+      "name": "PSGR Krishnammal College for Women, Coimbatore",
+      "reason": "no_unique_exact_active_education_ROR",
+      "candidate_count": 0
+    },
+    {
+      "record_id": "160d2c17-e4bb-539e-ab89-6882827758bf",
+      "name": "Indian Institute of Science, Bengaluru",
+      "reason": "no_unique_exact_active_education_ROR",
+      "candidate_count": 0
+    },
+    {
+      "record_id": "8c48893a-ca39-50cd-8365-ea8bf9596ec6",
+      "name": "Indian Institute of Science, Bengaluru",
+      "reason": "no_unique_exact_active_education_ROR",
+      "candidate_count": 0
+    },
+    {
+      "record_id": "66e0916c-c5a5-5b8b-8376-9851c3c702f7",
+      "name": "Karnataka State Open University, Mysore",
+      "ror": "https://ror.org/00ecztp88",
+      "reason": "registered_name_already_present_identity_review_required"
+    },
+    {
+      "record_id": "d778d098-ae82-54e6-9de3-c89c271a9687",
+      "name": "U.P. Rajarshi Tandon Open University, Allahabad",
+      "reason": "no_unique_exact_active_education_ROR",
+      "candidate_count": 0
+    },
+    {
+      "record_id": "319190a0-eb2f-5dde-a32b-d4df38848ce7",
+      "name": "Symbiosis Skills and Professional University, Pune",
+      "reason": "no_unique_exact_active_education_ROR",
+      "candidate_count": 0
+    },
+    {
+      "record_id": "713e3243-dd05-56b8-8fd7-5dfb9d17cb14",
+      "name": "Kerala University, Thiruvananthapuram",
+      "reason": "no_unique_exact_active_education_ROR",
+      "candidate_count": 0
+    },
+    {
+      "record_id": "817c7eaa-1a85-5c7f-93c2-1750ca49f7ce",
+      "name": "Indian Agricultural Research Institute, New Delhi",
+      "reason": "no_unique_exact_active_education_ROR",
+      "candidate_count": 0
+    },
+    {
+      "record_id": "f075a1f6-ca55-5850-bfaa-7f5e839e4c78",
+      "name": "Indian Institute of Management Ahmedabad",
+      "ror": "https://ror.org/02egcpy68",
+      "reason": "registered_name_already_present_identity_review_required"
+    },
+    {
+      "record_id": "fb41e319-a5f3-539e-a61e-ec5196d4769e",
+      "name": "Indian Institute of Management Bangalore",
+      "ror": "https://ror.org/02xxpjq61",
+      "reason": "registered_name_already_present_identity_review_required"
+    },
+    {
+      "record_id": "f0f853fc-75be-5b67-a8fd-269c1f205cca",
+      "name": "Indian Institute of Management, Mumbai",
+      "ror": "https://ror.org/05q2acf12",
+      "reason": "registered_name_already_present_identity_review_required"
+    },
+    {
+      "record_id": "93af2c7d-847f-56a0-84c8-ce5ca9c738dd",
+      "name": "Indian Institute of Management Calcutta",
+      "ror": "https://ror.org/02zhewk16",
+      "reason": "registered_name_already_present_identity_review_required"
+    },
+    {
+      "record_id": "45a4924a-8336-50d7-a746-8e4273e46d6a",
+      "name": "Indian Institute of Management Indore",
+      "ror": "https://ror.org/02j8pmw82",
+      "reason": "registered_name_already_present_identity_review_required"
+    },
+    {
+      "record_id": "5f352a42-a0b2-554d-a620-3ae6646fa5d2",
+      "name": "XLRI - Xavier School of Management, Jamshedpur",
+      "reason": "no_unique_exact_active_education_ROR",
+      "candidate_count": 0
+    },
+    {
+      "record_id": "b320125e-1bab-5b98-b153-5dea051f1f47",
+      "name": "JSS College of Pharmacy, Ooty",
+      "ror": "https://ror.org/008jjc835",
+      "reason": "registered_website_already_present_identity_review_required"
+    },
+    {
+      "record_id": "cb52741e-9f2b-5e27-8264-51bc519f6052",
+      "name": "National Institute of Pharmaceutical Education and Research Hyderabad",
+      "reason": "no_unique_exact_active_education_ROR",
+      "candidate_count": 0
+    },
+    {
+      "record_id": "80686ad9-13ab-5f67-a76c-9759da11b274",
+      "name": "JSS College of Pharmacy, Mysuru",
+      "ror": "https://ror.org/008jjc835",
+      "reason": "registered_website_already_present_identity_review_required"
+    },
+    {
+      "record_id": "98ac7664-1ab3-5cff-b7eb-76a5d45b09f2",
+      "name": "Manipal College of Pharmaceutical Sciences, Manipal",
+      "reason": "no_unique_exact_active_education_ROR",
+      "candidate_count": 0
+    },
+    {
+      "record_id": "ddbb41d1-2c6e-517b-8275-71abd4f9310f",
+      "name": "National Institute of Pharmaceutical Education and Research, Mohali",
+      "reason": "no_unique_exact_active_education_ROR",
+      "candidate_count": 5
+    },
+    {
+      "record_id": "758942d8-2197-59eb-97be-309b707e5e5b",
+      "name": "S.R.M. Institute of Science and Technology, Chennai",
+      "reason": "no_unique_exact_active_education_ROR",
+      "candidate_count": 0
+    },
+    {
+      "record_id": "bde145ea-9617-5584-9914-a3ac5dc72bb2",
+      "name": "Post Graduate Institute of Medical Education and Research, Chandigarh",
+      "ror": "https://ror.org/009nfym65",
+      "reason": "registered_name_already_present_identity_review_required"
+    },
+    {
+      "record_id": "6dc27685-5a85-5136-8599-2a8e71b8579c",
+      "name": "Christian Medical College, Vellore",
+      "reason": "no_unique_exact_active_education_ROR",
+      "candidate_count": 2
+    },
+    {
+      "record_id": "f8bfd446-9a04-5ca4-ba00-f39c82c66739",
+      "name": "Jawaharlal Institute of Post Graduate Medical Education & Research, Puducherry",
+      "ror": "https://ror.org/02fq2px14",
+      "reason": "registered_name_already_present_identity_review_required"
+    },
+    {
+      "record_id": "f1d2e4c5-aba2-5a9f-bd12-46a7996af992",
+      "name": "Sanjay Gandhi Postgraduate Institute of Medical Sciences, Lucknow",
+      "reason": "no_unique_exact_active_education_ROR",
+      "candidate_count": 0
+    },
+    {
+      "record_id": "63b49289-1678-55f6-aa84-0559205e11e1",
+      "name": "Manipal College of Dental Sciences, Manipal",
+      "reason": "no_unique_exact_active_education_ROR",
+      "candidate_count": 0
+    },
+    {
+      "record_id": "ee3c2692-2ccb-5b9e-89a8-58e600a50f84",
+      "name": "National Law University, New Delhi",
+      "reason": "no_unique_exact_active_education_ROR",
+      "candidate_count": 0
+    },
+    {
+      "record_id": "5a1ace22-72f6-536c-aa3f-0936a1976c32",
+      "name": "The West Bengal National University of Juridical Sciences, Kolkata",
+      "ror": "https://ror.org/05enmgs39",
+      "reason": "registered_name_already_present_identity_review_required"
+    },
+    {
+      "record_id": "92279c90-e945-5d6e-ad76-2fad4029b29e",
+      "name": "Indian Institute of Engineering Science and Technology, Shibpur",
+      "ror": "https://ror.org/02ytfzr55",
+      "reason": "registered_name_already_present_identity_review_required"
+    },
+    {
+      "record_id": "766110a3-0650-533a-8177-649fc3dec71d",
+      "name": "Indian Agricultural Research Institute, New Delhi",
+      "reason": "no_unique_exact_active_education_ROR",
+      "candidate_count": 0
+    },
+    {
+      "record_id": "a4559776-1e22-5289-a1c4-43075060de56",
+      "name": "ICAR - National Dairy Research Institute, Karnal",
+      "reason": "no_unique_exact_active_education_ROR",
+      "candidate_count": 0
+    },
+    {
+      "record_id": "642f16bb-62f0-53ea-8899-4f7be4692fce",
+      "name": "Indian Veterinary Research Institute, Izatnagar",
+      "reason": "no_unique_exact_active_education_ROR",
+      "candidate_count": 0
+    }
+  ]
+}

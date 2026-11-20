@@ -1,0 +1,52 @@
+{
+ "run": "top20-staging",
+ "retrieved_at": "2026-10-15",
+ "status": "review_only_candidates",
+ "publication": "none",
+ "groups": [
+  {
+   "file": "top20-group-a.json",
+   "group": "A",
+   "universities": [
+    "Massachusetts Institute of Technology (MIT)",
+    "Imperial College London",
+    "Stanford University",
+    "University of Oxford",
+    "Harvard University"
+   ]
+  },
+  {
+   "file": "top20-group-b.json",
+   "group": "B",
+   "universities": [
+    "University of Cambridge",
+    "California Institute of Technology - Caltech",
+    "ETH Zurich",
+    "UCL - University College London",
+    "National University of Singapore - NUS"
+   ]
+  },
+  {
+   "file": "top20-group-c.json",
+   "group": "C",
+   "universities": [
+    "The University of Hong Kong - HKU",
+    "Nanyang Technological University - NTU Singapore",
+    "Peking University",
+    "Tsinghua University",
+    "University of Pennsylvania - UPenn"
+   ]
+  },
+  {
+   "file": "top20-group-d.json",
+   "group": "D",
+   "universities": [
+    "Cornell University",
+    "Yale University",
+    "The Chinese University of Hong Kong (CUHK)",
+    "University of New South Wales (UNSW Sydney)",
+    "Johns Hopkins University"
+   ]
+  }
+ ]
+}

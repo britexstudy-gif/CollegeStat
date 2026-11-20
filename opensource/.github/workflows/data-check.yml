@@ -1,0 +1,33 @@
+# DRAFT: copy to .github/workflows/ in the public repo.
+name: Data check
+on:
+  pull_request:
+    paths:
+      - "data/**"
+      - "scripts/data-ops/**"
+      - "scripts/ingest/**"
+permissions:
+  contents: read
+concurrency:
+  group: data-check-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  data-check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+      - run: npm ci
+      - run: npm run data:check
+      - name: Upload report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: data-check-report
+          path: |
+            data/curated/check-report.json
+            data/curated/coverage.md

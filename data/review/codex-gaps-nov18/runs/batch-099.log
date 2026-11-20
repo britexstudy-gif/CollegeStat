@@ -1,0 +1,124 @@
+OpenAI Codex v0.169.0
+--------
+workdir: /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+model: gpt-6-luna
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: high
+reasoning summaries: none
+session id: 01a1ee94-b6a0-7262-891b-c2ccaa40125c
+--------
+user
+You are a careful admissions-data researcher. For each university below, find facts for an
+INTERNATIONAL applicant to a FIRST-YEAR BACHELOR'S degree starting in autumn 2027 (or the nearest
+published cycle). Use the live web. Rules:
+
+- Official sources only: the university's own website (its domain or subdomains), the national
+  application service (UCAS, Common App, OUAC, uni-assist, Studyinkorea, etc.) or a government
+  statistics office. Never use rankings sites, forums, agencies, Wikipedia or blogs.
+- Every value needs the exact page URL where you read it (source_url). If you could not verify a
+  value on an official page, leave it out (null or an empty list). Never guess or estimate.
+- english: the lowest overall score accepted for undergraduate entry, per test (IELTS Academic
+  overall, TOEFL iBT total, Duolingo, PTE). If programmes differ, give the general/lowest common
+  university minimum and say so in detail (e.g. "6.5 overall, no band below 6.0; some
+  programmes higher").
+- tuition: the yearly tuition for international (non-EU / overseas) undergraduates in the local
+  currency. If it varies by programme give amount = lowest and amount_max = highest, and the
+  academic_year the fee applies to (e.g. "2026/27"). If tuition is free, amount = 0.
+- application_fee: for international first-year applicants, local currency.
+- deadlines: the main 2027-entry first-year deadlines (ISO date YYYY-MM-DD) with the route
+  (e.g. "Common App, Regular Decision", "UCAS", "university portal"). Only dates actually
+  published; if only the 2026-entry date is published, include it and put "2026 entry" in title.
+- sat: policy for international applicants; p25/p75 total SAT only if the university publishes
+  them (Common Data Set or admissions profile).
+- acceptance_rate: only if officially published (CDS, admissions statistics page).
+- notes: one short line on anything important (e.g. "Foundation year required for 11-year
+  school certificates"), else "".
+
+Spend effort on the facts students need most: English minimum, tuition, deadlines. Keep each
+detail under 160 characters. Return only the JSON that matches the schema; use each
+university's id exactly as given.
+
+Universities:
+- id: 6ba258c1-adba-5e46-9b8c-411b91c4b958 | Bilkent University | Ankara, TR | https://w3.bilkent.edu.tr/bilkent
+- id: 9e3df1a7-1525-55aa-b140-05bb27092557 | Czech Technical University of Prague | Prague, CZ | http://www.cvut.cz/
+- id: 55405d00-ab25-533d-a54d-3e6f9453f6cf | Bayerische Julius-Maximilians-Universität Würzburg | Würzburg, DE | http://www.uni-wuerzburg.de/
+- id: b44469a2-84e1-5d33-98af-269d20f2f756 | Universität Mannheim | Mannheim, DE | http://www.uni-mannheim.de/
+codex
+I’m checking official admissions and tuition pages for each university, prioritizing the current published cycle and recording only verifiable values. I’ll also load the project’s research memory first.
+exec
+/bin/zsh -lc 'cat /Users/likeanew/.agents/skills/lemma/SKILL.md' in /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+ succeeded in 0ms:
+---
+name: lemma
+description: Persistent cross-session memory for AI agents via MCP. BEFORE starting ANY task (coding, debugging, refactoring, research, docs, optimization — any language), FIRST call memory_read to load what you already know so you never re-derive or re-explore known facts. AFTER finishing, call memory_add to persist new findings and session_attempt for dead ends — unsaved knowledge is lost permanently. Distills reusable guides from experience.
+---
+
+<!-- lemma:skill:v=0.21.0 -->
+
+# Lemma — Persistent Memory & Learning
+
+Lemma is a persistent memory server for AI agents over the Model Context Protocol.
+Every session starts blank — knowledge survives ONLY through tool calls. If you
+learn something and don't save it (`memory_add`), it is gone permanently.
+
+## Workflow
+1. **RECALL** — `memory_read` / `semantic_search`: load what's already known for this
+   project/task. Never re-explore code or re-derive facts that are already saved.
+2. **ACT** — do the task.
+3. **PERSIST** — `memory_add` for new insights; `guide_practice` for guides applied;
+   `session_attempt` for abandoned/dead-end approaches (the most valuable records).
+
+## Two knowledge layers
+- **Memory fragments** (`memory_read` / `memory_add`): atomic facts. Types: `fact`,
+  `pattern`, `lesson`, `warning`, `context`. Confidence evolves with use and feedback.
+- **Guides** (`guide_get` / `guide_distill` / `guide_practice`): procedural skills
+  distilled from fragments. Track usage count + success/failure rate.
+Pipeline: `experience -> memory_add -> pattern/lesson -> guide_distill -> guide_practice`.
+
+## Tools at a glance
+- **Recall & search**: `memory_read`, `semantic_search`, `memory_library` (full
+  snapshot + maintenance signals), `memory_stats`, `memory_audit`.
+- **Write & maintain**: `memory_add`, `memory_update`, `memory_forget`,
+  `memory_merge`, `memory_relate` (supports / contradicts / supersedes / related_to),
+  `memory_feedback`.
+- **Guides**: `guide_get`, `guide_create`, `guide_distill`, `guide_practice`,
+  `guide_update`, `guide_forget`, `guide_merge`.
+- **Sessions & reasoning**: `session_start`, `session_end`, `session_attempt`,
+  `session_stats`, `suggestion_respond`.
+- **Background intelligence**: `conflict_scan`, `proactive_analysis`,
+  `project_analytics` (run automatically; act on signals when sensible).
+
+## Writing a fragment
+```
+## [Topic Title]
+### Context
+[1-2 sentences: what and why it matters]
+### [Content Section]
+- [Key fact 1]
+- [Key fact 2]
+### Rules (optional)
+- [Absolute constraint]
+```
+One idea per fragment, 30-2000 chars, structured markdown (not prose). **Store
+fragments in ENGLISH** (required for search/retrieval). Never ask permission to save.
+
+## Background intelligence
+Conflict detection, distill/merge/refine suggestions, and auto-linking run
+automatically. From the CLI, `lemma -lib` prints a full knowledge-base snapshot
+and `lemma -vis` launches a visualizer.
+
+web search: 
+web search: site:bilkent.edu.tr international undergraduate admission tuition 2026 2027 English proficiency application deadline SAT ...
+web search: 
+web search: site:w3.bilkent.edu.tr/international "IELTS" "TOEFL" undergraduate Bilkent proficiency ...
+web search: 
+web search: site:cvut.cz/en "tuition fee" "Bachelor" "CZK" English 2027 CTU ...
+web search: 
+web search: site:uni-assist.de "75 euros" application fee VPD ...
+codex
+{"universities":[{"id":"6ba258c1-adba-5e46-9b8c-411b91c4b958","english":[{"test":"IELTS","minimum":6.5,"detail":"6.5 overall, no section below 5.5.","source_url":"https://w3.bilkent.edu.tr/international/english-language-proficiency/"},{"test":"TOEFL iBT","minimum":87,"detail":"87 total.","source_url":"https://w3.bilkent.edu.tr/international/english-language-proficiency/"}],"tuition":{"amount":18400,"amount_max":null,"currency":"USD","period":"year","academic_year":"2026/27","detail":"International students admitted in 2026; 10% VAT included.","source_url":"https://w3.bilkent.edu.tr/en/international-and-other-students-tuition-fees/"},"application_fee":null,"deadlines":[{"title":"2026 entry","due_at":"2026-07-12","route":"Bilkent online application","source_url":"https://w3.bilkent.edu.tr/international/how-to-apply/"}],"sat":{"policy":"accepted_alternative","p25":null,"p75":null,"source_url":"https://w3.bilkent.edu.tr/international/how-to-apply/"},"acceptance_rate":null,"notes":"2027 entry dates and fees not yet published; SAT is one of the accepted international qualifications."},{"id":"9e3df1a7-1525-55aa-b140-05bb27092557","english":[{"test":"IELTS","minimum":5.5,"detail":"IELTS 5.5 or higher for FNSPE English-taught bachelor's admission; requirements vary by faculty.","source_url":"https://edu.fjfi.cvut.cz/edu/Vyhlaseni_Smernice_Prijimaci_Rizeni/2027_2028/FJFI_PD_2026_06_V01.pdf"}],"tuition":{"amount":110000,"amount_max":null,"currency":"CZK","period":"year","academic_year":"2027/28","detail":"FNSPE English-taught bachelor's programmes: CZK 55,000 per semester.","source_url":"https://fjfi.cvut.cz/en/applicants/bachelors-studies"},"application_fee":{"amount":1050,"currency":"CZK","source_url":"https://fjfi.cvut.cz/en/applicants/bachelors-degree/admission-procedure-bachelors-studies-and-follow-masters-studies"},"deadlines":[{"title":"2027 entry","due_at":"2027-06-30","route":"CTU online application (FNSPE)","source_url":"https://fjfi.cvut.cz/en/applicants/bachelors-degree/admission-procedure-bachelors-studies-and-follow-masters-studies"}],"sat":null,"acceptance_rate":null,"notes":"CTU deadlines, English requirements and fees vary by faculty; values shown are for FNSPE."},{"id":"55405d00-ab25-533d-a54d-3e6f9453f6cf","english":[],"tuition":{"amount":0,"amount_max":null,"currency":"EUR","period":"year","academic_year":"2026/27","detail":"No tuition fees; semester contribution is charged separately.","source_url":"https://www.uni-wuerzburg.de/en/international/studying-in-wuerzburg/join-us/"},"application_fee":{"amount":75,"currency":"EUR","source_url":"https://www.uni-assist.de/en/how-to-apply/plan-your-application/fees/"},"deadlines":[{"title":"2026 entry","due_at":"2026-07-15","route":"WueStudy; uni-assist VPD required for foreign qualifications","source_url":"https://www.hw.uni-wuerzburg.de/en/jp-ia/ba-in-diversity-ethics-and-religions/deadlines/"}],"sat":null,"acceptance_rate":null,"notes":"The English-taught BA Diversity, Ethics and Religions requires CEFR B1 English; its page does not specify test scores."},{"id":"b44469a2-84e1-5d33-98af-269d20f2f756","english":[{"test":"IELTS","minimum":6,"detail":"IELTS 6.0 for Business Informatics; requirements differ by programme and may be higher.","source_url":"https://www.uni-mannheim.de/en/academics/before-your-studies/applying/the-a-to-z-of-applying/bachelors-programs-language-requirements/"},{"test":"TOEFL iBT","minimum":79,"detail":"79 for Business Informatics; requirements differ by programme and may be higher.","source_url":"https://www.uni-mannheim.de/en/academics/before-your-studies/applying/the-a-to-z-of-applying/bachelors-programs-language-requirements/"}],"tuition":{"amount":3000,"amount_max":null,"currency":"EUR","period":"year","academic_year":"2026/27","detail":"Non-EU/EEA students: EUR 1,500 per semester; exemptions apply.","source_url":"https://www.uni-mannheim.de/en/academics/during-your-studies/organizing-your-studies/fees/tuition-fees-for-international-students"},"application_fee":null,"deadlines":[{"title":"2026 entry; selective bachelor's programmes","due_at":"2026-07-15","route":"University online application","source_url":"https://www.uni-mannheim.de/en/academics/dates/application-deadlines/?L=1"},{"title":"2026 entry; some bachelor's programmes","due_at":"2026-08-31","route":"University online application","source_url":"https://www.uni-mannheim.de/en/academics/dates/application-deadlines/?L=1"}],"sat":null,"acceptance_rate":null,"notes":"International bachelor applicants generally need German C1; bachelor programmes are not fully English-taught."}] }
+tokens used
+41,768
+{"universities":[{"id":"6ba258c1-adba-5e46-9b8c-411b91c4b958","english":[{"test":"IELTS","minimum":6.5,"detail":"6.5 overall, no section below 5.5.","source_url":"https://w3.bilkent.edu.tr/international/english-language-proficiency/"},{"test":"TOEFL iBT","minimum":87,"detail":"87 total.","source_url":"https://w3.bilkent.edu.tr/international/english-language-proficiency/"}],"tuition":{"amount":18400,"amount_max":null,"currency":"USD","period":"year","academic_year":"2026/27","detail":"International students admitted in 2026; 10% VAT included.","source_url":"https://w3.bilkent.edu.tr/en/international-and-other-students-tuition-fees/"},"application_fee":null,"deadlines":[{"title":"2026 entry","due_at":"2026-07-12","route":"Bilkent online application","source_url":"https://w3.bilkent.edu.tr/international/how-to-apply/"}],"sat":{"policy":"accepted_alternative","p25":null,"p75":null,"source_url":"https://w3.bilkent.edu.tr/international/how-to-apply/"},"acceptance_rate":null,"notes":"2027 entry dates and fees not yet published; SAT is one of the accepted international qualifications."},{"id":"9e3df1a7-1525-55aa-b140-05bb27092557","english":[{"test":"IELTS","minimum":5.5,"detail":"IELTS 5.5 or higher for FNSPE English-taught bachelor's admission; requirements vary by faculty.","source_url":"https://edu.fjfi.cvut.cz/edu/Vyhlaseni_Smernice_Prijimaci_Rizeni/2027_2028/FJFI_PD_2026_06_V01.pdf"}],"tuition":{"amount":110000,"amount_max":null,"currency":"CZK","period":"year","academic_year":"2027/28","detail":"FNSPE English-taught bachelor's programmes: CZK 55,000 per semester.","source_url":"https://fjfi.cvut.cz/en/applicants/bachelors-studies"},"application_fee":{"amount":1050,"currency":"CZK","source_url":"https://fjfi.cvut.cz/en/applicants/bachelors-degree/admission-procedure-bachelors-studies-and-follow-masters-studies"},"deadlines":[{"title":"2027 entry","due_at":"2027-06-30","route":"CTU online application (FNSPE)","source_url":"https://fjfi.cvut.cz/en/applicants/bachelors-degree/admission-procedure-bachelors-studies-and-follow-masters-studies"}],"sat":null,"acceptance_rate":null,"notes":"CTU deadlines, English requirements and fees vary by faculty; values shown are for FNSPE."},{"id":"55405d00-ab25-533d-a54d-3e6f9453f6cf","english":[],"tuition":{"amount":0,"amount_max":null,"currency":"EUR","period":"year","academic_year":"2026/27","detail":"No tuition fees; semester contribution is charged separately.","source_url":"https://www.uni-wuerzburg.de/en/international/studying-in-wuerzburg/join-us/"},"application_fee":{"amount":75,"currency":"EUR","source_url":"https://www.uni-assist.de/en/how-to-apply/plan-your-application/fees/"},"deadlines":[{"title":"2026 entry","due_at":"2026-07-15","route":"WueStudy; uni-assist VPD required for foreign qualifications","source_url":"https://www.hw.uni-wuerzburg.de/en/jp-ia/ba-in-diversity-ethics-and-religions/deadlines/"}],"sat":null,"acceptance_rate":null,"notes":"The English-taught BA Diversity, Ethics and Religions requires CEFR B1 English; its page does not specify test scores."},{"id":"b44469a2-84e1-5d33-98af-269d20f2f756","english":[{"test":"IELTS","minimum":6,"detail":"IELTS 6.0 for Business Informatics; requirements differ by programme and may be higher.","source_url":"https://www.uni-mannheim.de/en/academics/before-your-studies/applying/the-a-to-z-of-applying/bachelors-programs-language-requirements/"},{"test":"TOEFL iBT","minimum":79,"detail":"79 for Business Informatics; requirements differ by programme and may be higher.","source_url":"https://www.uni-mannheim.de/en/academics/before-your-studies/applying/the-a-to-z-of-applying/bachelors-programs-language-requirements/"}],"tuition":{"amount":3000,"amount_max":null,"currency":"EUR","period":"year","academic_year":"2026/27","detail":"Non-EU/EEA students: EUR 1,500 per semester; exemptions apply.","source_url":"https://www.uni-mannheim.de/en/academics/during-your-studies/organizing-your-studies/fees/tuition-fees-for-international-students"},"application_fee":null,"deadlines":[{"title":"2026 entry; selective bachelor's programmes","due_at":"2026-07-15","route":"University online application","source_url":"https://www.uni-mannheim.de/en/academics/dates/application-deadlines/?L=1"},{"title":"2026 entry; some bachelor's programmes","due_at":"2026-08-31","route":"University online application","source_url":"https://www.uni-mannheim.de/en/academics/dates/application-deadlines/?L=1"}],"sat":null,"acceptance_rate":null,"notes":"International bachelor applicants generally need German C1; bachelor programmes are not fully English-taught."}] }

@@ -1,0 +1,66 @@
+OpenAI Codex v0.169.0
+--------
+workdir: /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+model: gpt-6-luna
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: high
+reasoning summaries: none
+session id: 01a1ee9a-e53a-7a61-b095-36ed492b6997
+--------
+user
+You are a careful admissions-data researcher. For each university below, find facts for an
+INTERNATIONAL applicant to a FIRST-YEAR BACHELOR'S degree starting in autumn 2027 (or the nearest
+published cycle). Use the live web. Rules:
+
+- Official sources only: the university's own website (its domain or subdomains), the national
+  application service (UCAS, Common App, OUAC, uni-assist, Studyinkorea, etc.) or a government
+  statistics office. Never use rankings sites, forums, agencies, Wikipedia or blogs.
+- Every value needs the exact page URL where you read it (source_url). If you could not verify a
+  value on an official page, leave it out (null or an empty list). Never guess or estimate.
+- english: the lowest overall score accepted for undergraduate entry, per test (IELTS Academic
+  overall, TOEFL iBT total, Duolingo, PTE). If programmes differ, give the general/lowest common
+  university minimum and say so in detail (e.g. "6.5 overall, no band below 6.0; some
+  programmes higher").
+- tuition: the yearly tuition for international (non-EU / overseas) undergraduates in the local
+  currency. If it varies by programme give amount = lowest and amount_max = highest, and the
+  academic_year the fee applies to (e.g. "2026/27"). If tuition is free, amount = 0.
+- application_fee: for international first-year applicants, local currency.
+- deadlines: the main 2027-entry first-year deadlines (ISO date YYYY-MM-DD) with the route
+  (e.g. "Common App, Regular Decision", "UCAS", "university portal"). Only dates actually
+  published; if only the 2026-entry date is published, include it and put "2026 entry" in title.
+- sat: policy for international applicants; p25/p75 total SAT only if the university publishes
+  them (Common Data Set or admissions profile).
+- acceptance_rate: only if officially published (CDS, admissions statistics page).
+- notes: one short line on anything important (e.g. "Foundation year required for 11-year
+  school certificates"), else "".
+
+Spend effort on the facts students need most: English minimum, tuition, deadlines. Keep each
+detail under 160 characters. Return only the JSON that matches the schema; use each
+university's id exactly as given.
+
+Universities:
+- id: b2588f6b-9e0a-5529-b0ad-9707090f465e | Iran University of Science and Technology Tehran | Tehran, IR | http://www.iust.ac.ir/
+- id: ffe5cb62-1d6c-5165-aab8-15f4da340a25 | Justus-Liebig-Universität Gießen | Giessen, DE | https://www.uni-giessen.de
+- id: ea26ac95-89cf-52e8-ae36-36fbb94e2a82 | Universitas Padjadjaran | Bandung, ID | http://www.unpad.ac.id/
+- id: 9f102218-cb66-55ec-960c-356e75a1c8b6 | Institut Teknologi Sepuluh Nopember | Surabaya, ID | http://www.its.ac.id/
+codex
+I’ll check each university’s official admissions and international-fee pages, then return only the requested JSON. I’ll leave fields empty where official pages don’t publish a verifiable figure or date.
+web search: 
+web search: site:iust.ac.ir international undergraduate admission tuition English language Iran University Science Technology ...
+web search: 
+web search: site:iust.ac.ir "international students" bachelor admission IUST tuition ...
+web search: 
+web search: site:iust.ac.ir "international" "admission" "Bachelor" IUST Tehran ...
+web search: 
+web search: Iran University of Science and Technology international students admission undergraduate official IUST ...
+web search: 
+web search: 
+web search: 
+web search: site:uni-assist.de fees application 75 EUR first application international ...
+codex
+{"universities":[{"id":"b2588f6b-9e0a-5529-b0ad-9707090f465e","english":[],"tuition":null,"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":""},{"id":"ffe5cb62-1d6c-5165-aab8-15f4da340a25","english":[],"tuition":{"amount":0,"amount_max":null,"currency":"EUR","period":"year","academic_year":"2026/27","detail":"No tuition fees; students pay a separate semester contribution. Applies to JLU's English-taught BSc Environmental Sciences and Global Food Systems.","source_url":"https://www.uni-giessen.de/en/study/courses/fees"},"application_fee":{"amount":75,"currency":"EUR","source_url":"https://www.uni-assist.de/en/how-to-apply/pay-all-fees/handling-fees/"},"deadlines":[{"title":"2026 entry","due_at":"2026-08-15","route":"uni-assist, unrestricted English-taught BSc programmes","source_url":"https://www.uni-giessen.de/en/faculties/f09/studies/general/getting-started/application-bsc"},{"title":"2026 entry","due_at":"2026-07-15","route":"International applicants, restricted bachelor programmes","source_url":"https://www.uni-giessen.de/en/international-pages/study/bids/termine"}],"sat":null,"acceptance_rate":null,"notes":"English-taught BSc applicants need English C1 and basic German A2; no test-specific minimum scores are published."},{"id":"ea26ac95-89cf-52e8-ae36-36fbb94e2a82","english":[{"test":"IELTS","minimum":6,"detail":"Overall 6.0; applies to international IUP applicants from non-English-speaking countries.","source_url":"https://smup.unpad.ac.id/seleksi-kelas-international/"},{"test":"Duolingo","minimum":95,"detail":"Minimum score 95 for international IUP applicants from non-English-speaking countries.","source_url":"https://smup.unpad.ac.id/seleksi-kelas-international/"}],"tuition":{"amount":26000000,"amount_max":100000000,"currency":"IDR","period":"year","academic_year":"2026/27","detail":"Annualized from international IUP per-semester fees of IDR 13–50 million; excludes one-time development fees.","source_url":"https://info.admission.unpad.ac.id/program/undergraduate"},"application_fee":null,"deadlines":[{"title":"2027 entry, Batch 1","due_at":"2027-03-09","route":"Unpad International Undergraduate Program admission","source_url":"https://info.admission.unpad.ac.id/program/undergraduate"}],"sat":null,"acceptance_rate":null,"notes":""},{"id":"9f102218-cb66-55ec-960c-356e75a1c8b6","english":[{"test":"IELTS","minimum":6,"detail":"At least 6.0 overall; IUP minimum for international applicants.","source_url":"https://www.its.ac.id/admission/iup-2/"},{"test":"TOEFL iBT","minimum":61,"detail":"At least 61 total; IUP minimum for international applicants.","source_url":"https://www.its.ac.id/admission/iup-2/"},{"test":"Duolingo","minimum":95,"detail":"At least 95; IUP minimum for international applicants.","source_url":"https://www.its.ac.id/admission/iup-2/"}],"tuition":{"amount":4800,"amount_max":4800,"currency":"USD","period":"year","academic_year":"2026/27","detail":"IUP international tuition is USD 2,400 per semester; annualized for two semesters.","source_url":"https://www.its.ac.id/admission/en/iup/"},"application_fee":{"amount":100,"currency":"USD","source_url":"https://www.its.ac.id/admission/en/iup/"},"deadlines":[{"title":"2026 entry","due_at":"2026-07-27","route":"ITS International Undergraduate Program, Batch 4","source_url":"https://www.its.ac.id/admission/en/iup/"}],"sat":null,"acceptance_rate":null,"notes":"International applicants apply through the English-medium IUP; joint-degree tuition may differ."}]}
+tokens used
+55,508
+{"universities":[{"id":"b2588f6b-9e0a-5529-b0ad-9707090f465e","english":[],"tuition":null,"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":""},{"id":"ffe5cb62-1d6c-5165-aab8-15f4da340a25","english":[],"tuition":{"amount":0,"amount_max":null,"currency":"EUR","period":"year","academic_year":"2026/27","detail":"No tuition fees; students pay a separate semester contribution. Applies to JLU's English-taught BSc Environmental Sciences and Global Food Systems.","source_url":"https://www.uni-giessen.de/en/study/courses/fees"},"application_fee":{"amount":75,"currency":"EUR","source_url":"https://www.uni-assist.de/en/how-to-apply/pay-all-fees/handling-fees/"},"deadlines":[{"title":"2026 entry","due_at":"2026-08-15","route":"uni-assist, unrestricted English-taught BSc programmes","source_url":"https://www.uni-giessen.de/en/faculties/f09/studies/general/getting-started/application-bsc"},{"title":"2026 entry","due_at":"2026-07-15","route":"International applicants, restricted bachelor programmes","source_url":"https://www.uni-giessen.de/en/international-pages/study/bids/termine"}],"sat":null,"acceptance_rate":null,"notes":"English-taught BSc applicants need English C1 and basic German A2; no test-specific minimum scores are published."},{"id":"ea26ac95-89cf-52e8-ae36-36fbb94e2a82","english":[{"test":"IELTS","minimum":6,"detail":"Overall 6.0; applies to international IUP applicants from non-English-speaking countries.","source_url":"https://smup.unpad.ac.id/seleksi-kelas-international/"},{"test":"Duolingo","minimum":95,"detail":"Minimum score 95 for international IUP applicants from non-English-speaking countries.","source_url":"https://smup.unpad.ac.id/seleksi-kelas-international/"}],"tuition":{"amount":26000000,"amount_max":100000000,"currency":"IDR","period":"year","academic_year":"2026/27","detail":"Annualized from international IUP per-semester fees of IDR 13–50 million; excludes one-time development fees.","source_url":"https://info.admission.unpad.ac.id/program/undergraduate"},"application_fee":null,"deadlines":[{"title":"2027 entry, Batch 1","due_at":"2027-03-09","route":"Unpad International Undergraduate Program admission","source_url":"https://info.admission.unpad.ac.id/program/undergraduate"}],"sat":null,"acceptance_rate":null,"notes":""},{"id":"9f102218-cb66-55ec-960c-356e75a1c8b6","english":[{"test":"IELTS","minimum":6,"detail":"At least 6.0 overall; IUP minimum for international applicants.","source_url":"https://www.its.ac.id/admission/iup-2/"},{"test":"TOEFL iBT","minimum":61,"detail":"At least 61 total; IUP minimum for international applicants.","source_url":"https://www.its.ac.id/admission/iup-2/"},{"test":"Duolingo","minimum":95,"detail":"At least 95; IUP minimum for international applicants.","source_url":"https://www.its.ac.id/admission/iup-2/"}],"tuition":{"amount":4800,"amount_max":4800,"currency":"USD","period":"year","academic_year":"2026/27","detail":"IUP international tuition is USD 2,400 per semester; annualized for two semesters.","source_url":"https://www.its.ac.id/admission/en/iup/"},"application_fee":{"amount":100,"currency":"USD","source_url":"https://www.its.ac.id/admission/en/iup/"},"deadlines":[{"title":"2026 entry","due_at":"2026-07-27","route":"ITS International Undergraduate Program, Batch 4","source_url":"https://www.its.ac.id/admission/en/iup/"}],"sat":null,"acceptance_rate":null,"notes":"International applicants apply through the English-medium IUP; joint-degree tuition may differ."}]}

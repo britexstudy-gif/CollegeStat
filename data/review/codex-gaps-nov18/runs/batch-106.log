@@ -1,0 +1,80 @@
+OpenAI Codex v0.169.0
+--------
+workdir: /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+model: gpt-6-luna
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: high
+reasoning summaries: none
+session id: 01a1ee96-9557-7490-b548-fc4713f76d68
+--------
+user
+You are a careful admissions-data researcher. For each university below, find facts for an
+INTERNATIONAL applicant to a FIRST-YEAR BACHELOR'S degree starting in autumn 2027 (or the nearest
+published cycle). Use the live web. Rules:
+
+- Official sources only: the university's own website (its domain or subdomains), the national
+  application service (UCAS, Common App, OUAC, uni-assist, Studyinkorea, etc.) or a government
+  statistics office. Never use rankings sites, forums, agencies, Wikipedia or blogs.
+- Every value needs the exact page URL where you read it (source_url). If you could not verify a
+  value on an official page, leave it out (null or an empty list). Never guess or estimate.
+- english: the lowest overall score accepted for undergraduate entry, per test (IELTS Academic
+  overall, TOEFL iBT total, Duolingo, PTE). If programmes differ, give the general/lowest common
+  university minimum and say so in detail (e.g. "6.5 overall, no band below 6.0; some
+  programmes higher").
+- tuition: the yearly tuition for international (non-EU / overseas) undergraduates in the local
+  currency. If it varies by programme give amount = lowest and amount_max = highest, and the
+  academic_year the fee applies to (e.g. "2026/27"). If tuition is free, amount = 0.
+- application_fee: for international first-year applicants, local currency.
+- deadlines: the main 2027-entry first-year deadlines (ISO date YYYY-MM-DD) with the route
+  (e.g. "Common App, Regular Decision", "UCAS", "university portal"). Only dates actually
+  published; if only the 2026-entry date is published, include it and put "2026 entry" in title.
+- sat: policy for international applicants; p25/p75 total SAT only if the university publishes
+  them (Common Data Set or admissions profile).
+- acceptance_rate: only if officially published (CDS, admissions statistics page).
+- notes: one short line on anything important (e.g. "Foundation year required for 11-year
+  school certificates"), else "".
+
+Spend effort on the facts students need most: English minimum, tuition, deadlines. Keep each
+detail under 160 characters. Return only the JSON that matches the schema; use each
+university's id exactly as given.
+
+Universities:
+- id: cba3d1d1-b796-54bc-9bc4-c0f4f785a54a | University of Trento | Trento, IT | http://www.unitn.it/
+- id: 78831e5e-375b-5c37-8e3e-a8c7017b57ef | Higher School of Economics | Moscow, RU | http://www.hse.ru/
+- id: fae3f069-3d0b-5a89-a364-2aecc4e98d29 | Shanghai University | Shanghai, CN | http://www.shu.edu.cn/
+- id: c12cf89d-30c4-52cb-813c-469eaa0f2aba | University of Science and Technology Beijing | Beijing, CN | http://www.ustb.edu.cn/
+codex
+I’m checking official admissions, tuition, and language pages for each university, prioritizing the latest published cycle where 2027 details aren’t available.
+web search: 
+web search: site:unitn.it international undergraduate English language requirements tuition 2026 2027 bachelor deadline ...
+web search: 
+web search: site:unitn.it/en "IELTS" "undergraduate" admission English language requirements bachelor's ...
+web search: 
+web search: 
+web search: 
+web search: site:corsi.unitn.it/en undergraduate "Application fee" "Deadline" "2026/2027" non-Europeans ...
+web search: 
+web search: 
+web search: 
+web search: 'Application Period'
+web search: 
+web search: 
+web search: 
+web search: 
+web search: 
+web search: site:unitn.it "IELTS" "B2" "TOEFL" certificate UniTrento admission language level ...
+web search: 
+web search: 'Application Period'
+web search: 
+web search: 
+web search: 
+web search: site:corsi.unitn.it/en "Bachelor" "admission non-Europeans" "2026" University Trento ...
+web search: 
+web search: site:unitn.it/en "Accepted certificates for admission to study programs" IELTS TOEFL B2
+codex
+{"universities":[{"id":"cba3d1d1-b796-54bc-9bc4-c0f4f785a54a","english":[],"tuition":{"amount":0,"amount_max":4500,"currency":"EUR","period":"year","academic_year":"2026/27","detail":"Non-EU first-year tuition is score-based: exemption to €4,500.","source_url":"https://www.unitn.it/en/study/fees-scholarships-accommodation/tuition-fees/non-eu-citizens/degree-programmes-english"},"application_fee":null,"deadlines":[{"title":"2026 entry","due_at":"2026-03-23","route":"UniTrento portal, first session; non-EU applicants","source_url":"https://corsi.unitn.it/en/computer-science-bachelor/enrollment/admission-and-enrollment"}],"sat":null,"acceptance_rate":null,"notes":"Published 2026/27 bachelor deadlines are for the Computer Science and Information Engineering area; non-EU applicants use the first session."},{"id":"78831e5e-375b-5c37-8e3e-a8c7017b57ef","english":[],"tuition":{"amount":460000,"amount_max":1000000,"currency":"RUB","period":"year","academic_year":"2025/26","detail":"Moscow undergraduate programmes range from ₽460,000 to ₽1,000,000 per year.","source_url":"https://admissions.hse.ru/en/undergraduate-apply/fees/"},"application_fee":null,"deadlines":[{"title":"2027 entry, International Olympiad registration","due_at":"2027-02-02","route":"Sodruzhestvo / HSE International Olympiad","source_url":"https://admissions.hse.ru/en/undergraduate-apply/"},{"title":"2026 entry","due_at":"2026-08-03","route":"Fee-paying international admissions; programmes based on selection events","source_url":"https://admissions.hse.ru/en/feepaid2026_ba"}],"sat":null,"acceptance_rate":null,"notes":"Fee-paying admissions require programme-specific entrance selection; the 2027 dates published are for tuition-free Olympiad admission."},{"id":"fae3f069-3d0b-5a89-a364-2aecc4e98d29","english":[{"test":"IELTS","minimum":5.0,"detail":"IELTS Academic 5.0 for three bilingual majors; English-taught programmes generally require 6.5.","source_url":"https://apply.shu.edu.cn/upload/shangda/2/2/e/Application%20for%20Undergraduate%20Programs%20of%20Shanghai%20University%202026-2027.pdf"},{"test":"TOEFL iBT","minimum":60,"detail":"TOEFL 60 for three bilingual majors; English-taught programmes generally require 90.","source_url":"https://apply.shu.edu.cn/upload/shangda/2/2/e/Application%20for%20Undergraduate%20Programs%20of%20Shanghai%20University%202026-2027.pdf"},{"test":"Duolingo","minimum":120,"detail":"Minimum for English-taught programmes; three bilingual majors list IELTS 5 or TOEFL 60 instead.","source_url":"https://apply.shu.edu.cn/upload/shangda/2/2/e/Application%20for%20Undergraduate%20Programs%20of%20Shanghai%20University%202026-2027.pdf"},{"test":"Cambridge C1/C2","minimum":180,"detail":"CAE or CPE 180 for English-taught programmes.","source_url":"https://apply.shu.edu.cn/upload/shangda/2/2/e/Application%20for%20Undergraduate%20Programs%20of%20Shanghai%20University%202026-2027.pdf"}],"tuition":{"amount":21000,"amount_max":32000,"currency":"CNY","period":"year","academic_year":"2026/27","detail":"Varies by programme: humanities ¥21,000; science/engineering/economics/management ¥24,000; arts ¥32,000; English/bilingual ¥30,000.","source_url":"https://apply.shu.edu.cn/upload/shangda/2/2/e/Application%20for%20Undergraduate%20Programs%20of%20Shanghai%20University%202026-2027.pdf"},"application_fee":{"amount":500,"currency":"CNY","source_url":"https://apply.shu.edu.cn/upload/shangda/2/2/e/Application%20for%20Undergraduate%20Programs%20of%20Shanghai%20University%202026-2027.pdf"},"deadlines":[{"title":"2026 entry","due_at":"2026-06-30","route":"Shanghai University international application portal","source_url":"https://apply.shu.edu.cn/upload/shangda/2/2/e/Application%20for%20Undergraduate%20Programs%20of%20Shanghai%20University%202026-2027.pdf"}],"sat":null,"acceptance_rate":null,"notes":"The 2026/27 guide lists programme-specific language requirements and tuition."},{"id":"c12cf89d-30c4-52cb-813c-469eaa0f2aba","english":[{"test":"IELTS","minimum":5.5,"detail":"IELTS 5.5 for English-taught bachelor programmes; official English proficiency letter also accepted.","source_url":"https://iscen.ustb.edu.cn/Admissions/d780f74ecee54776bbd398d023609f9a.htm"},{"test":"TOEFL iBT","minimum":70,"detail":"TOEFL 70 for English-taught bachelor programmes; official English proficiency letter also accepted.","source_url":"https://iscen.ustb.edu.cn/Admissions/d780f74ecee54776bbd398d023609f9a.htm"}],"tuition":{"amount":23300,"amount_max":null,"currency":"CNY","period":"year","academic_year":"2027/28","detail":"English-taught bachelor tuition is ¥23,300 per year.","source_url":"https://iscen.ustb.edu.cn/Admissions/d780f74ecee54776bbd398d023609f9a.htm"},"application_fee":{"amount":600,"currency":"CNY","source_url":"https://iscen.ustb.edu.cn/Admissions/d780f74ecee54776bbd398d023609f9a.htm"},"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"The 2027 English-taught bachelor listing covers Environmental Engineering and Materials Science and Engineering."}] }
+tokens used
+128,599
+{"universities":[{"id":"cba3d1d1-b796-54bc-9bc4-c0f4f785a54a","english":[],"tuition":{"amount":0,"amount_max":4500,"currency":"EUR","period":"year","academic_year":"2026/27","detail":"Non-EU first-year tuition is score-based: exemption to €4,500.","source_url":"https://www.unitn.it/en/study/fees-scholarships-accommodation/tuition-fees/non-eu-citizens/degree-programmes-english"},"application_fee":null,"deadlines":[{"title":"2026 entry","due_at":"2026-03-23","route":"UniTrento portal, first session; non-EU applicants","source_url":"https://corsi.unitn.it/en/computer-science-bachelor/enrollment/admission-and-enrollment"}],"sat":null,"acceptance_rate":null,"notes":"Published 2026/27 bachelor deadlines are for the Computer Science and Information Engineering area; non-EU applicants use the first session."},{"id":"78831e5e-375b-5c37-8e3e-a8c7017b57ef","english":[],"tuition":{"amount":460000,"amount_max":1000000,"currency":"RUB","period":"year","academic_year":"2025/26","detail":"Moscow undergraduate programmes range from ₽460,000 to ₽1,000,000 per year.","source_url":"https://admissions.hse.ru/en/undergraduate-apply/fees/"},"application_fee":null,"deadlines":[{"title":"2027 entry, International Olympiad registration","due_at":"2027-02-02","route":"Sodruzhestvo / HSE International Olympiad","source_url":"https://admissions.hse.ru/en/undergraduate-apply/"},{"title":"2026 entry","due_at":"2026-08-03","route":"Fee-paying international admissions; programmes based on selection events","source_url":"https://admissions.hse.ru/en/feepaid2026_ba"}],"sat":null,"acceptance_rate":null,"notes":"Fee-paying admissions require programme-specific entrance selection; the 2027 dates published are for tuition-free Olympiad admission."},{"id":"fae3f069-3d0b-5a89-a364-2aecc4e98d29","english":[{"test":"IELTS","minimum":5.0,"detail":"IELTS Academic 5.0 for three bilingual majors; English-taught programmes generally require 6.5.","source_url":"https://apply.shu.edu.cn/upload/shangda/2/2/e/Application%20for%20Undergraduate%20Programs%20of%20Shanghai%20University%202026-2027.pdf"},{"test":"TOEFL iBT","minimum":60,"detail":"TOEFL 60 for three bilingual majors; English-taught programmes generally require 90.","source_url":"https://apply.shu.edu.cn/upload/shangda/2/2/e/Application%20for%20Undergraduate%20Programs%20of%20Shanghai%20University%202026-2027.pdf"},{"test":"Duolingo","minimum":120,"detail":"Minimum for English-taught programmes; three bilingual majors list IELTS 5 or TOEFL 60 instead.","source_url":"https://apply.shu.edu.cn/upload/shangda/2/2/e/Application%20for%20Undergraduate%20Programs%20of%20Shanghai%20University%202026-2027.pdf"},{"test":"Cambridge C1/C2","minimum":180,"detail":"CAE or CPE 180 for English-taught programmes.","source_url":"https://apply.shu.edu.cn/upload/shangda/2/2/e/Application%20for%20Undergraduate%20Programs%20of%20Shanghai%20University%202026-2027.pdf"}],"tuition":{"amount":21000,"amount_max":32000,"currency":"CNY","period":"year","academic_year":"2026/27","detail":"Varies by programme: humanities ¥21,000; science/engineering/economics/management ¥24,000; arts ¥32,000; English/bilingual ¥30,000.","source_url":"https://apply.shu.edu.cn/upload/shangda/2/2/e/Application%20for%20Undergraduate%20Programs%20of%20Shanghai%20University%202026-2027.pdf"},"application_fee":{"amount":500,"currency":"CNY","source_url":"https://apply.shu.edu.cn/upload/shangda/2/2/e/Application%20for%20Undergraduate%20Programs%20of%20Shanghai%20University%202026-2027.pdf"},"deadlines":[{"title":"2026 entry","due_at":"2026-06-30","route":"Shanghai University international application portal","source_url":"https://apply.shu.edu.cn/upload/shangda/2/2/e/Application%20for%20Undergraduate%20Programs%20of%20Shanghai%20University%202026-2027.pdf"}],"sat":null,"acceptance_rate":null,"notes":"The 2026/27 guide lists programme-specific language requirements and tuition."},{"id":"c12cf89d-30c4-52cb-813c-469eaa0f2aba","english":[{"test":"IELTS","minimum":5.5,"detail":"IELTS 5.5 for English-taught bachelor programmes; official English proficiency letter also accepted.","source_url":"https://iscen.ustb.edu.cn/Admissions/d780f74ecee54776bbd398d023609f9a.htm"},{"test":"TOEFL iBT","minimum":70,"detail":"TOEFL 70 for English-taught bachelor programmes; official English proficiency letter also accepted.","source_url":"https://iscen.ustb.edu.cn/Admissions/d780f74ecee54776bbd398d023609f9a.htm"}],"tuition":{"amount":23300,"amount_max":null,"currency":"CNY","period":"year","academic_year":"2027/28","detail":"English-taught bachelor tuition is ¥23,300 per year.","source_url":"https://iscen.ustb.edu.cn/Admissions/d780f74ecee54776bbd398d023609f9a.htm"},"application_fee":{"amount":600,"currency":"CNY","source_url":"https://iscen.ustb.edu.cn/Admissions/d780f74ecee54776bbd398d023609f9a.htm"},"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"The 2027 English-taught bachelor listing covers Environmental Engineering and Materials Science and Engineering."}] }

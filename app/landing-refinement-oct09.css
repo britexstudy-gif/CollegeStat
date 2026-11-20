@@ -1,0 +1,61 @@
+/* Root-owned landing correction. Keep the working catalogue, PixelBlast and
+   interactions; scope the composition so other pages keep their own layout. */
+.campus-carousel .campus-explore-caption {
+  color: var(--muted-foreground);
+  font-size: 13px;
+  line-height: 1.7;
+  margin: 12px 0 0;
+}
+.campus-carousel .campus-card-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: center;
+  margin-top: 17px;
+  padding-top: 13px;
+  border-top: 1px solid var(--border);
+}
+.campus-carousel .campus-card-actions a {
+  display: inline-flex;
+  gap: 5px;
+  align-items: center;
+  font-size: 12px;
+  color: var(--muted-foreground);
+}
+.campus-carousel .campus-card-actions button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  min-height: 34px;
+  padding: 5px 10px;
+  border: 1px solid var(--border);
+  border-radius: 7px;
+  font-size: 12px;
+  background: var(--card);
+  color: var(--foreground);
+}
+.campus-carousel .campus-card-actions button[aria-pressed="true"] {
+  color: var(--primary);
+  border-color: color-mix(in srgb, var(--primary) 35%, var(--border));
+  background: var(--accent);
+}
+.campus-carousel .campus-card-actions button:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 3px;
+}
+.carousel-footer-links {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+.campus-carousel .carousel-compare-link {
+  color: var(--primary);
+}
+@media (max-width: 640px) {
+  .carousel-footer-links {
+    gap: 10px;
+  }
+}
+/* Purposeful controls and a compact editorial rhythm for the funding section. */

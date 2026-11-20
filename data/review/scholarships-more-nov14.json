@@ -1,0 +1,578 @@
+[
+  {
+    "id": "876d9295-5397-5840-b5f5-6d823bda5db8",
+    "slug": "uchicago-international-merit-scholarships",
+    "name": "University of Chicago Merit Scholarships for International First-Year Students",
+    "description": "International first-year applicants are automatically considered for merit scholarships. Awards may be partial tuition, one-time, or renewable; amounts vary by award.",
+    "amount": null,
+    "currency": "USD",
+    "funding_type": "partial",
+    "country_code": "US",
+    "level": "Bachelor",
+    "international": true,
+    "deadline": null,
+    "application_url": "https://collegeadmissions.uchicago.edu/apply/international-applicants/",
+    "published": false,
+    "year": 2027,
+    "source_id": "a2aac193-e123-5db6-a722-2d65ab2eac1f",
+    "source_url": "https://collegeadmissions.uchicago.edu/apply/international-applicants/",
+    "verification_status": "staged",
+    "verified_at": null,
+    "notes": "Official page says international first-year applicants are eligible for need-based and merit-based aid; all applicants are automatically considered for merit scholarships.",
+    "data_sources": {
+      "id": "a2aac193-e123-5db6-a722-2d65ab2eac1f",
+      "name": "University of Chicago Merit Scholarships for International First-Year Students · official university source",
+      "organization": "University of Chicago",
+      "url": "https://collegeadmissions.uchicago.edu/apply/international-applicants/",
+      "source_type": "scholarship",
+      "license_notes": "Paraphrased official public scholarship guidance.",
+      "retrieved_at": "2026-11-14T00:00:00Z"
+    },
+    "university_scholarships": [],
+    "eligible_nationalities": "International first-year applicants; no nationality exclusions stated on the cited page.",
+    "central_asia_eligible": true,
+    "coverage": {
+      "tuition": true,
+      "living": null,
+      "travel": null,
+      "insurance": null
+    },
+    "deadlines": [
+      {
+        "label": "Admission application deadline; see current first-year admissions calendar",
+        "date": null,
+        "cycle_year": 2027
+      }
+    ],
+    "how_to_apply": [
+      "Submit a first-year application to the University of Chicago; merit consideration is automatic."
+    ],
+    "documents": [
+      "Undergraduate admission application and supporting materials required by UChicago."
+    ],
+    "university_ids": [
+      "7add53a9-8ddf-5e84-bd4d-a7c8638dbb95"
+    ],
+    "checked_at": "2026-11-14",
+    "review_note": "Staged from the official university page; unspecified award values and dates remain null."
+  },
+  {
+    "id": "d651b359-9711-5e36-a01f-29be725bcfdb",
+    "slug": "usc-undergraduate-admission-merit-scholarships",
+    "name": "USC Undergraduate Admission Merit Scholarships for International Students",
+    "description": "International first-year applicants who apply by the appropriate deadline are eligible for competitive USC undergraduate merit scholarships. Awards are partial and do not cover the full cost of attendance.",
+    "amount": null,
+    "currency": "USD",
+    "funding_type": "partial",
+    "country_code": "US",
+    "level": "Bachelor",
+    "international": true,
+    "deadline": null,
+    "application_url": "https://admission.usc.edu/scholarship-guide/",
+    "published": false,
+    "year": 2027,
+    "source_id": "4a317e7b-da04-5888-a140-b6e572573a36",
+    "source_url": "https://admission.usc.edu/prospective-students/how-to-apply/international-students/",
+    "verification_status": "staged",
+    "verified_at": null,
+    "notes": "USC says all international applicants who apply by the appropriate deadline are eligible; no USC merit scholarship covers full cost of attendance.",
+    "data_sources": {
+      "id": "4a317e7b-da04-5888-a140-b6e572573a36",
+      "name": "USC Undergraduate Admission Merit Scholarships for International Students · official university source",
+      "organization": "University of Southern California",
+      "url": "https://admission.usc.edu/prospective-students/how-to-apply/international-students/",
+      "source_type": "scholarship",
+      "license_notes": "Paraphrased official public scholarship guidance.",
+      "retrieved_at": "2026-11-14T00:00:00Z"
+    },
+    "university_scholarships": [],
+    "eligible_nationalities": "International first-year applicants; no nationality exclusions stated on the cited page.",
+    "central_asia_eligible": true,
+    "coverage": {
+      "tuition": true,
+      "living": null,
+      "travel": null,
+      "insurance": null
+    },
+    "deadlines": [
+      {
+        "label": "Scholarship consideration deadline; see current USC scholarship guide",
+        "date": null,
+        "cycle_year": 2027
+      }
+    ],
+    "how_to_apply": [
+      "Apply for first-year admission by the appropriate USC merit scholarship deadline.",
+      "Review the USC Scholarship Guide if selected."
+    ],
+    "documents": [
+      "Undergraduate admission application and supporting materials required by USC."
+    ],
+    "university_ids": [
+      "ce0c7503-d037-57dc-98ed-2818fa72fe75"
+    ],
+    "checked_at": "2026-11-14",
+    "review_note": "Staged from the official university page; unspecified award values and dates remain null."
+  },
+  {
+    "id": "c907fdaa-0a4e-517e-b98f-948d81fc4231",
+    "slug": "northwestern-international-undergraduate-need-based-aid",
+    "name": "Northwestern University Need-Based Aid for International Undergraduates",
+    "description": "Need-based financial aid is available to international students seeking undergraduate degrees. Northwestern says it meets 100% of admitted first-year students’ demonstrated need for all four years.",
+    "amount": null,
+    "currency": "USD",
+    "funding_type": "full",
+    "country_code": "US",
+    "level": "Bachelor",
+    "international": true,
+    "deadline": null,
+    "application_url": "https://admissions.northwestern.edu/apply/identities/international.html",
+    "published": false,
+    "year": 2027,
+    "source_id": "9298946c-9f99-5153-9cc3-ede1251201b6",
+    "source_url": "https://admissions.northwestern.edu/apply/identities/international.html",
+    "verification_status": "staged",
+    "verified_at": null,
+    "notes": "Northwestern is need-aware for international students; source states 100% demonstrated need for admitted first-year students for four years.",
+    "data_sources": {
+      "id": "9298946c-9f99-5153-9cc3-ede1251201b6",
+      "name": "Northwestern University Need-Based Aid for International Undergraduates · official university source",
+      "organization": "Northwestern University",
+      "url": "https://admissions.northwestern.edu/apply/identities/international.html",
+      "source_type": "scholarship",
+      "license_notes": "Paraphrased official public scholarship guidance.",
+      "retrieved_at": "2026-11-14T00:00:00Z"
+    },
+    "university_scholarships": [],
+    "eligible_nationalities": "International undergraduate applicants; no nationality exclusions stated on the cited page.",
+    "central_asia_eligible": true,
+    "coverage": {
+      "tuition": true,
+      "living": true,
+      "travel": null,
+      "insurance": null
+    },
+    "deadlines": [
+      {
+        "label": "Submit aid materials with admission application; check current application calendar",
+        "date": null,
+        "cycle_year": 2027
+      }
+    ],
+    "how_to_apply": [
+      "Apply for first-year undergraduate admission.",
+      "Request need-based financial aid and submit required financial documents through the applicant process."
+    ],
+    "documents": [
+      "Financial aid application and supporting financial documents; exact requirements are provided in the applicant process."
+    ],
+    "university_ids": [
+      "e48a723c-68b4-560e-b4a0-09be01682853"
+    ],
+    "checked_at": "2026-11-14",
+    "review_note": "Staged from the official university page; unspecified award values and dates remain null."
+  },
+  {
+    "id": "d7a64c78-d571-5d12-bbf3-246a4d9565c7",
+    "slug": "arizona-global-wildcat-first-year-2026",
+    "name": "University of Arizona Global Wildcat First-Year Tuition Award",
+    "description": "The University of Arizona offers a competitive undergraduate tuition scholarship to selected international first-year students. Students must be admitted and apply by the applicable deadline; award amount varies by offer.",
+    "amount": null,
+    "currency": "USD",
+    "funding_type": "partial",
+    "country_code": "US",
+    "level": "Bachelor",
+    "international": true,
+    "deadline": null,
+    "application_url": "https://financialaid.arizona.edu/resources/azaidsmart/incoming-students",
+    "published": false,
+    "year": 2027,
+    "source_id": "7e5a42af-919b-5f38-8215-112c7f60604e",
+    "source_url": "https://financialaid.arizona.edu/2026-2027-terms-and-conditions",
+    "verification_status": "staged",
+    "verified_at": null,
+    "notes": null,
+    "data_sources": {
+      "id": "7e5a42af-919b-5f38-8215-112c7f60604e",
+      "name": "University of Arizona Global Wildcat First-Year Tuition Award · official university source",
+      "organization": "University of Arizona",
+      "url": "https://financialaid.arizona.edu/2026-2027-terms-and-conditions",
+      "source_type": "scholarship",
+      "license_notes": "Paraphrased official public scholarship guidance.",
+      "retrieved_at": "2026-11-14T00:00:00Z"
+    },
+    "university_scholarships": [],
+    "eligible_nationalities": "International first-year applicants to the University of Arizona; GPA and test score criteria apply.",
+    "central_asia_eligible": true,
+    "coverage": {
+      "tuition": true,
+      "living": null,
+      "travel": null,
+      "insurance": null
+    },
+    "deadlines": [
+      {
+        "label": "See current cohort or application cycle deadline on official page",
+        "date": null,
+        "cycle_year": 2027
+      }
+    ],
+    "how_to_apply": [
+      "Complete the University of Arizona admission application.",
+      "Submit a scholarship application by the current cohort deadline; award selection is competitive."
+    ],
+    "documents": [
+      "Undergraduate admission application; scholarship application; academic records and test scores as required."
+    ],
+    "university_ids": [
+      "027e062a-68f8-5a97-b74a-4ad155208f4a"
+    ],
+    "checked_at": "2026-11-14",
+    "review_note": "Staged; unstated deadline and award details are null."
+  },
+  {
+    "id": "ef806bca-5cf7-5bc0-8443-9891dec3d76f",
+    "slug": "arizona-global-wildcat-transfer-2026",
+    "name": "University of Arizona Global Wildcat Transfer Tuition Award",
+    "description": "A competitive undergraduate tuition award for international transfer students pursuing their first bachelor’s degree. The official terms list $2,500–$10,000 and require a 3.00 college GPA and at least 12 transferable units.",
+    "amount": 2500,
+    "currency": "USD",
+    "funding_type": "partial",
+    "country_code": "US",
+    "level": "Bachelor",
+    "international": true,
+    "deadline": null,
+    "application_url": "https://financialaid.arizona.edu/2026-2027-terms-and-conditions",
+    "published": false,
+    "year": 2027,
+    "source_id": "7e5a42af-919b-5f38-8215-112c7f60604e",
+    "source_url": "https://financialaid.arizona.edu/2026-2027-terms-and-conditions",
+    "verification_status": "staged",
+    "verified_at": null,
+    "notes": null,
+    "data_sources": {
+      "id": "7e5a42af-919b-5f38-8215-112c7f60604e",
+      "name": "University of Arizona Global Wildcat Transfer Tuition Award · official university source",
+      "organization": "University of Arizona",
+      "url": "https://financialaid.arizona.edu/2026-2027-terms-and-conditions",
+      "source_type": "scholarship",
+      "license_notes": "Paraphrased official public scholarship guidance.",
+      "retrieved_at": "2026-11-14T00:00:00Z"
+    },
+    "university_scholarships": [],
+    "eligible_nationalities": "International transfer students pursuing their first bachelor’s degree; at least 3.00 cumulative college GPA and 12 transferable units.",
+    "central_asia_eligible": true,
+    "coverage": {
+      "tuition": true,
+      "living": false,
+      "travel": false,
+      "insurance": false
+    },
+    "deadlines": [
+      {
+        "label": "See current cohort or application cycle deadline on official page",
+        "date": null,
+        "cycle_year": 2027
+      }
+    ],
+    "how_to_apply": [
+      "Complete the University of Arizona admission application and meet the transfer eligibility requirements."
+    ],
+    "documents": [
+      "College transcripts documenting at least 12 transferable units and cumulative GPA."
+    ],
+    "university_ids": [
+      "027e062a-68f8-5a97-b74a-4ad155208f4a"
+    ],
+    "checked_at": "2026-11-14",
+    "review_note": "Staged; unstated deadline and award details are null."
+  },
+  {
+    "id": "32192569-edc5-552b-a773-070805c7769f",
+    "slug": "global-depaul-scholarship-international",
+    "name": "Global DePaul Scholarship for International Freshmen",
+    "description": "Merit award for international freshmen based on high-school GPA. DePaul lists awards of $12,000–$32,000, automatic consideration with the admission application, and renewal up to four years subject to academic standing and full-time enrollment.",
+    "amount": 12000,
+    "currency": "USD",
+    "funding_type": "partial",
+    "country_code": "US",
+    "level": "Bachelor",
+    "international": true,
+    "deadline": null,
+    "application_url": "https://www.depaul.edu/admission/international-admission/freshman",
+    "published": false,
+    "year": 2027,
+    "source_id": "87b0486a-5358-5f38-9c4c-ef7c481fa604",
+    "source_url": "https://www.depaul.edu/admission/international-admission/freshman",
+    "verification_status": "staged",
+    "verified_at": null,
+    "notes": null,
+    "data_sources": {
+      "id": "87b0486a-5358-5f38-9c4c-ef7c481fa604",
+      "name": "Global DePaul Scholarship for International Freshmen · official university source",
+      "organization": "DePaul University",
+      "url": "https://www.depaul.edu/admission/international-admission/freshman",
+      "source_type": "scholarship",
+      "license_notes": "Paraphrased official public scholarship guidance.",
+      "retrieved_at": "2026-11-14T00:00:00Z"
+    },
+    "university_scholarships": [],
+    "eligible_nationalities": "International freshman applicants; award based on high-school GPA.",
+    "central_asia_eligible": true,
+    "coverage": {
+      "tuition": true,
+      "living": false,
+      "travel": false,
+      "insurance": false
+    },
+    "deadlines": [
+      {
+        "label": "See current cohort or application cycle deadline on official page",
+        "date": null,
+        "cycle_year": 2027
+      }
+    ],
+    "how_to_apply": [
+      "Submit the Common Application to DePaul; no separate scholarship application is required."
+    ],
+    "documents": [
+      "Common Application and official academic records required for international freshman admission."
+    ],
+    "university_ids": [
+      "eff27116-f29e-5cc0-9d35-ce5bc27b2bad"
+    ],
+    "checked_at": "2026-11-14",
+    "review_note": "Staged; unstated deadline and award details are null."
+  },
+  {
+    "id": "f5415f42-370e-5da4-990c-feb0c7646a8c",
+    "slug": "gw-international-undergraduate-institutional-aid",
+    "name": "George Washington University International Undergraduate Need-Based Grant",
+    "description": "Continuing undergraduate international students who have earned at least 30 GW credits and maintained a 2.0 GPA may apply for institutional need-based assistance. Eligible students may receive a need-based grant up to $10,000, subject to prior GW grant and scholarship aid.",
+    "amount": 10000,
+    "currency": "USD",
+    "funding_type": "partial",
+    "country_code": "US",
+    "level": "Bachelor",
+    "international": true,
+    "deadline": null,
+    "application_url": "https://financialaid.gwu.edu/policy-international-student-aid",
+    "published": false,
+    "year": 2026,
+    "source_id": "daefe7ba-5aed-559f-bdb1-da9c8ef3e712",
+    "source_url": "https://financialaid.gwu.edu/policy-international-student-aid",
+    "verification_status": "staged",
+    "verified_at": null,
+    "notes": null,
+    "data_sources": {
+      "id": "daefe7ba-5aed-559f-bdb1-da9c8ef3e712",
+      "name": "George Washington University International Undergraduate Need-Based Grant · official university source",
+      "organization": "George Washington University",
+      "url": "https://financialaid.gwu.edu/policy-international-student-aid",
+      "source_type": "scholarship",
+      "license_notes": "Paraphrased official public scholarship guidance.",
+      "retrieved_at": "2026-11-14T00:00:00Z"
+    },
+    "university_scholarships": [],
+    "eligible_nationalities": "International undergraduate students enrolled at GW with at least 30 earned credits and a minimum 2.0 GPA.",
+    "central_asia_eligible": true,
+    "coverage": {
+      "tuition": true,
+      "living": null,
+      "travel": false,
+      "insurance": false
+    },
+    "deadlines": [
+      {
+        "label": "See current cohort or application cycle deadline on official page",
+        "date": null,
+        "cycle_year": 2027
+      }
+    ],
+    "how_to_apply": [
+      "After earning at least 30 GW credits and a 2.0 GPA, apply for institutional financial assistance through the Office of Student Financial Assistance."
+    ],
+    "documents": [
+      "Institutional financial assistance application; supporting financial documents as requested by GW."
+    ],
+    "university_ids": [
+      "7297ee6e-31d9-5f06-a506-de580b9c5c1d"
+    ],
+    "checked_at": "2026-11-14",
+    "review_note": "Staged; unstated deadline and award details are null."
+  },
+  {
+    "id": "e9b36d77-3701-5451-95e5-fbc5e3bb382d",
+    "slug": "nu-abay-kunanbayev-international",
+    "name": "Nazarbayev University Abay Kunanbayev Scholarship for International Candidates",
+    "description": "Nazarbayev University offers this scholarship to international candidates who pass selection and are recommended for admission to a program. It covers tuition, basic medical insurance and a monthly stipend.",
+    "amount": null,
+    "currency": "USD",
+    "funding_type": "full",
+    "country_code": "KZ",
+    "level": "Bachelor",
+    "international": true,
+    "deadline": null,
+    "application_url": "https://nu.edu.kz/admissions/how-to-apply/foundation-undergraduate/regular-admissions/",
+    "published": false,
+    "year": 2027,
+    "source_id": "8b639992-67d5-535e-bc33-26ae5fa12081",
+    "source_url": "https://nu.edu.kz/other/frequently-asked-questions/admissions/",
+    "verification_status": "staged",
+    "verified_at": null,
+    "notes": "Official FAQ names the award and specifies tuition, basic medical insurance and monthly stipend.",
+    "data_sources": {
+      "id": "8b639992-67d5-535e-bc33-26ae5fa12081",
+      "name": "Nazarbayev University Abay Kunanbayev Scholarship for International Candidates · official university source",
+      "organization": "Nazarbayev University",
+      "url": "https://nu.edu.kz/other/frequently-asked-questions/admissions/",
+      "source_type": "scholarship",
+      "license_notes": "Paraphrased official public university guidance.",
+      "retrieved_at": "2026-11-14T00:00:00Z"
+    },
+    "university_scholarships": [],
+    "eligible_nationalities": "International candidates who are not citizens of Kazakhstan and are recommended for admission to a Nazarbayev University program.",
+    "central_asia_eligible": true,
+    "coverage": {
+      "tuition": true,
+      "living": true,
+      "travel": false,
+      "insurance": true
+    },
+    "deadlines": [
+      {
+        "label": "See current admissions and aid-cycle dates on official university pages",
+        "date": null,
+        "cycle_year": 2027
+      }
+    ],
+    "how_to_apply": [
+      "Apply to the relevant Nazarbayev University program and complete its selection process.",
+      "No separate scholarship documents are required; successful candidates recommended for admission are considered by the University."
+    ],
+    "documents": [
+      "Program admission documents; no additional scholarship documents are required per the official FAQ."
+    ],
+    "university_ids": [
+      "69434102-e5f5-5311-9294-2f101f81906f"
+    ],
+    "checked_at": "2026-11-14",
+    "review_note": "Staged from official university guidance; unlisted values and dates remain null."
+  },
+  {
+    "id": "0b519593-7444-5abb-8ac5-e597bd1d6c5c",
+    "slug": "nu-citizenship-based-international-partial-award",
+    "name": "Nazarbayev University Citizenship-Based Partial Scholarships for International Candidates",
+    "description": "International candidates recommended for admission may also receive university partial scholarships based on citizenship. The University states coverage ranges from 50% to 90% of tuition; individual eligibility and amount depend on citizenship.",
+    "amount": null,
+    "currency": "USD",
+    "funding_type": "partial",
+    "country_code": "KZ",
+    "level": "Bachelor",
+    "international": true,
+    "deadline": null,
+    "application_url": "https://nu.edu.kz/admissions/how-to-apply/foundation-undergraduate/regular-admissions/",
+    "published": false,
+    "year": 2027,
+    "source_id": "8b639992-67d5-535e-bc33-26ae5fa12081",
+    "source_url": "https://nu.edu.kz/other/frequently-asked-questions/admissions/",
+    "verification_status": "staged",
+    "verified_at": null,
+    "notes": "Tuition percentage is stated as 50–90%; monetary amount is not stated.",
+    "data_sources": {
+      "id": "8b639992-67d5-535e-bc33-26ae5fa12081",
+      "name": "Nazarbayev University Citizenship-Based Partial Scholarships for International Candidates · official university source",
+      "organization": "Nazarbayev University",
+      "url": "https://nu.edu.kz/other/frequently-asked-questions/admissions/",
+      "source_type": "scholarship",
+      "license_notes": "Paraphrased official public university guidance.",
+      "retrieved_at": "2026-11-14T00:00:00Z"
+    },
+    "university_scholarships": [],
+    "eligible_nationalities": "International candidates; citizenship-based eligibility and award level vary by nationality.",
+    "central_asia_eligible": true,
+    "coverage": {
+      "tuition": true,
+      "living": false,
+      "travel": false,
+      "insurance": null
+    },
+    "deadlines": [
+      {
+        "label": "See current admissions and aid-cycle dates on official university pages",
+        "date": null,
+        "cycle_year": 2027
+      }
+    ],
+    "how_to_apply": [
+      "Apply to the relevant Nazarbayev University program and complete selection.",
+      "Candidates recommended for admission are considered for citizenship-based awards; the official FAQ says no separate scholarship documents are required."
+    ],
+    "documents": [
+      "Program admission documents; no additional scholarship documents are required per the official FAQ."
+    ],
+    "university_ids": [
+      "69434102-e5f5-5311-9294-2f101f81906f"
+    ],
+    "checked_at": "2026-11-14",
+    "review_note": "Staged from official university guidance; unlisted values and dates remain null."
+  },
+  {
+    "id": "a40baafc-789c-57d7-a4f8-9ca705f30d38",
+    "slug": "auca-undergraduate-need-based-financial-aid-cis",
+    "name": "American University of Central Asia Undergraduate Need-Based Financial Aid for CIS Students",
+    "description": "AUCA offers undergraduate financial aid based on financial need and academic achievements. Prospective and current students from CIS countries may apply; aid amount is determined by the university and renewal requirements apply.",
+    "amount": null,
+    "currency": "USD",
+    "funding_type": "partial",
+    "country_code": "KG",
+    "level": "Bachelor",
+    "international": true,
+    "deadline": null,
+    "application_url": "https://www.auca.kg/en/financial_aid/",
+    "published": false,
+    "year": 2027,
+    "source_id": "decbdc0e-b2b3-59c0-9f35-1cbccf911135",
+    "source_url": "https://www.auca.kg/en/financial_aid/",
+    "verification_status": "staged",
+    "verified_at": null,
+    "notes": "The cited page lists undergraduate need-based and merit aid and CIS eligibility but does not state an award value.",
+    "data_sources": {
+      "id": "decbdc0e-b2b3-59c0-9f35-1cbccf911135",
+      "name": "American University of Central Asia Undergraduate Need-Based Financial Aid for CIS Students · official university source",
+      "organization": "American University of Central Asia",
+      "url": "https://www.auca.kg/en/financial_aid/",
+      "source_type": "scholarship",
+      "license_notes": "Paraphrased official public university guidance.",
+      "retrieved_at": "2026-11-14T00:00:00Z"
+    },
+    "university_scholarships": [],
+    "eligible_nationalities": "Prospective and current undergraduate students from CIS countries.",
+    "central_asia_eligible": true,
+    "coverage": {
+      "tuition": null,
+      "living": null,
+      "travel": null,
+      "insurance": null
+    },
+    "deadlines": [
+      {
+        "label": "See current admissions and aid-cycle dates on official university pages",
+        "date": null,
+        "cycle_year": 2027
+      }
+    ],
+    "how_to_apply": [
+      "Submit the AUCA financial aid application before the deadline stated by AUCA.",
+      "Review the financial aid program details and renewal requirements on the official AUCA page."
+    ],
+    "documents": [
+      "Financial aid application and supporting documents specified by AUCA; exact document list varies by aid type."
+    ],
+    "university_ids": [
+      "48bb7649-d12f-5854-b7d9-f586e7b81d72"
+    ],
+    "checked_at": "2026-11-14",
+    "review_note": "Staged from official university guidance; unlisted values and dates remain null."
+  }
+]

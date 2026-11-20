@@ -18,10 +18,24 @@ def rows(table):
         yield from csv.DictReader(io.TextIOWrapper(z.open(name), encoding='utf-8-sig', errors='replace'))
 def number(row, field, flag=None):
     if flag and row.get(flag, '').strip() not in ('R', 'Z'): return None
+    raw = row.get(field, '')
+    if raw is None: return None
+    s = str(raw).strip().replace(',', '').replace('\xa0', '').strip()
+    if not s or s in ('–', '—', '-', 'N/A', 'NA', 'n/a', 'NULL', 'null', 'PrivacySuppressed', ''):
+        return None
     try:
-        n = float(row.get(field, ''))
+        n = float(s)
         return n if n >= 0 else None
-    except ValueError: return None
+    except (ValueError, TypeError): return None
+def coord(value):
+    """Safe latitude/longitude parse: None on blank/en-dash/em-dash/N/A, else float."""
+    if value is None: return None
+    s = str(value).strip().replace(',', '').replace('\xa0', '').strip()
+    if not s or s in ('–', '—', '-', 'N/A', 'NA', 'n/a', 'NULL', 'null', 'PrivacySuppressed', ''):
+        return None
+    try:
+        return float(s)
+    except (ValueError, TypeError): return None
 def slug(name):
     return re.sub('[^a-z0-9]+', '-', unicodedata.normalize('NFKD', name).encode('ascii', 'ignore').decode().lower()).strip('-')[:130] or 'university'
 hipo = json.loads((RAW / 'hipo/universities.json').read_text())
@@ -48,7 +62,7 @@ for raw in hipo:
     item = dict(id=uid, slug=ref['slug'] if ref else slug(raw['name']) + '-' + uid[:8], name=raw['name'].strip(), country_code=raw['alpha_two_code'], country=raw['country'], website=urls[0], state=raw.get('state-province'), domains=raw['domains'])
     if ipeds:
         units.add(ipeds['UNITID'])
-        item.update(unitid=ipeds['UNITID'], city=ipeds['CITY'], state=ipeds['STABBR'], university_type='Public' if ipeds['CONTROL'] == '1' else 'Private', latitude=float(ipeds['LATITUDE']), longitude=float(ipeds['LONGITUD']), admissions_url=ipeds['ADMINURL'].strip())
+        item.update(unitid=ipeds['UNITID'], city=ipeds['CITY'], state=ipeds['STABBR'], university_type='Public' if ipeds['CONTROL'] == '1' else 'Private', latitude=coord(ipeds.get('LATITUDE')), longitude=coord(ipeds.get('LONGITUD')), admissions_url=ipeds['ADMINURL'].strip())
         cost = fees.get(ipeds['UNITID'], {})
         population = enroll.get(ipeds['UNITID'], {})
         admission = admissions.get(ipeds['UNITID'], {})

@@ -137,5 +137,854 @@
       "Follow the university’s application instructions and country-specific qualification guidance for your intended intake."
     ],
     "scholarships": []
+  },
+  "22222222-2222-4222-8222-222222222222": {
+    "checked_at": "2026-10-18",
+    "scope": "International first-year / undergraduate applicants",
+    "requirements_source": "https://mitadmissions.org/apply/firstyear/international/",
+    "requirements": [
+      "International applicants use the same first-year process as domestic applicants, normally applying at the start of their final year of secondary school.",
+      "A Secondary School Report with transcript (about three years of grades plus national exam results such as IB, A Levels or CBSE; predicted grades accepted) must come from the school counselor or another school official.",
+      "SAT or ACT scores are required; MIT publishes no cutoff scores.",
+      "An English proficiency test is strongly recommended for applicants with fewer than five years of English use; MIT lists minimums of TOEFL 90 (pre-21 Jan 2026 format), IELTS 7, PTE 65, Cambridge English 185 and Duolingo 120.",
+      "All application materials must be in English; translations may not be done by the applicant."
+    ],
+    "scholarships": [
+      {
+        "name": "MIT Scholarship (need-based)",
+        "eligibility": "Students who apply for financial aid and complete the CSS Profile are automatically considered; awards are based solely on demonstrated need.",
+        "url": "https://sfs.mit.edu/undergraduate-students/types-of-aid/mit-scholarship/"
+      },
+      {
+        "name": "Need-blind, full-need financial aid for international students",
+        "eligibility": "MIT says it admits international applicants need-blind and meets the full demonstrated need of all admitted students, foreign and domestic.",
+        "url": "https://mitadmissions.org/help/faq/international-admissions/"
+      }
+    ]
+  },
+  "5ad45ea9-e51c-59e4-9ef7-6d3768be673c": {
+    "checked_at": "2026-10-18",
+    "scope": "International first-year / undergraduate applicants",
+    "requirements_source": "https://www.imperial.ac.uk/study/apply/undergraduate/entry-requirements/",
+    "requirements": [
+      "Apply through UCAS (up to five choices), with a single personal statement and one academic reference.",
+      "Applicants need a qualification accepted as equivalent to A-levels and must meet course-specific subject requirements; most apply with predicted grades.",
+      "Some courses require an admissions test (e.g. ESAT, TMUA, UCAT) and some include an interview.",
+      "All applicants must meet Imperial's English language requirement, even native speakers; minimum scores are set on a separate English-language page."
+    ],
+    "scholarships": [
+      {
+        "name": "Imperial Inspires Scholarships",
+        "eligibility": "For students paying the Overseas tuition rate who apply via UCAS to an eligible full-time undergraduate course in Engineering, Natural Sciences, Medicine or the Business School (2027 entry); £15,000 per year.",
+        "url": "https://www.imperial.ac.uk/study/fees-and-funding/imperial-inspires-scholarships/"
+      },
+      {
+        "name": "IB Excellence Scholarships",
+        "eligibility": "Overseas-fee students taking the IB Diploma and applying to undergraduate courses in Engineering, Natural Sciences or the Business School, nominated by departments; £5,000 per year (page describes 2026 entry).",
+        "url": "https://www.imperial.ac.uk/study/fees-and-funding/undergraduate/bursaries-grants-scholarships/ib-excellence/"
+      }
+    ]
+  },
+  "11111111-1111-4111-8111-111111111111": {
+    "checked_at": "2026-10-18",
+    "scope": "International first-year / undergraduate applicants",
+    "requirements_source": "https://admission.stanford.edu/apply/international/index.html",
+    "requirements": [
+      "International students follow the standard first-year application instructions (Common App referenced) and are admitted for fall entry only.",
+      "Transcripts and official marks or predictions must be sent by the school, with English translations not made by the applicant.",
+      "SAT or ACT scores are required.",
+      "English proficiency tests are not required (scores may be self-reported), but fluency in English is a prerequisite.",
+      "Teacher recommendations and a counselor recommendation (or another school official if no counselor) are required, translated into English if needed."
+    ],
+    "scholarships": [
+      {
+        "name": "Need-based financial aid for international students",
+        "eligibility": "International applicants must request aid on the admission application; Stanford meets the full demonstrated need of admitted students, but requesting aid is a factor in admission for non-US citizens and aid cannot be requested later.",
+        "url": "https://financialaid.stanford.edu/undergrad/how/international.html"
+      }
+    ]
+  },
+  "33333333-3333-4333-8333-333333333333": {
+    "checked_at": "2026-10-18",
+    "scope": "International first-year / undergraduate applicants",
+    "requirements_source": "https://www.magd.ox.ac.uk/considering-magdalen/student-life/international-students/",
+    "requirements": [
+      "Oxford accepts undergraduate applicants worldwide; admission is highly competitive and courses are specialised.",
+      "Applicants need an excellent general education, strong English, and eligibility to enter university in their home country.",
+      "International applicants pay the higher overseas fee rate and must show the College they have sufficient funding before enrolling."
+    ],
+    "scholarships": [
+      {
+        "name": "Reach Oxford Scholarship",
+        "eligibility": "For highly able students from developing countries who cannot study for a degree at home for political, financial or facility reasons, who hold an Oxford offer and have outstanding results; not awarded every year.",
+        "url": "https://www.magd.ox.ac.uk/considering-magdalen/student-life/international-students/"
+      }
+    ]
+  },
+  "39230496-b2fc-53ca-9303-1726c4ac13da": {
+    "checked_at": "2026-10-18",
+    "scope": "International first-year / undergraduate applicants",
+    "requirements_source": "https://college.harvard.edu/admissions/apply/international-applicants",
+    "requirements": [
+      "Apply via the Common Application plus Harvard's supplement (five short-answer questions); requirements are the same for international and domestic applicants.",
+      "A Secondary School Report with transcript, a Midyear Report, and two teacher recommendations from different academic subjects are required.",
+      "SAT or ACT is required; in exceptional cases (cost or access barriers) AP, IB, A-level or national exam results/predictions can substitute.",
+      "English tests (TOEFL, IELTS, Duolingo) are not required and do not meet the testing requirement, though scores may be submitted.",
+      "Translated documents must be accompanied by the untranslated originals and may not be translated by the applicant."
+    ],
+    "scholarships": [
+      {
+        "name": "Harvard need-based financial aid",
+        "eligibility": "Same aid policy for all applicants regardless of citizenship: admission is made without regard to aid application and Harvard meets each admitted student's demonstrated need, including a travel allowance.",
+        "url": "https://college.harvard.edu/admissions/apply/international-applicants"
+      }
+    ]
+  },
+  "ae117645-e24c-5269-8ed1-b5b826e53932": {
+    "checked_at": "2026-10-18",
+    "scope": "International first-year / undergraduate applicants",
+    "requirements_source": "https://www.undergraduate.study.cam.ac.uk/international-students/international-applications",
+    "requirements": [
+      "All applicants, including international students, apply through UCAS using the same process; offers are made on predicted grades supplied by the referee.",
+      "A-levels and the IB Diploma are the main qualifications considered, but equivalent national qualifications are accepted.",
+      "Most international applicants pay a £60 application fee, waived for some countries.",
+      "Selection is based on academic achievement and potential; overseas-fee payers receive no priority. Some courses require admission tests (e.g. UCAT, LNAT, ESAT, TMUA)."
+    ],
+    "scholarships": [
+      {
+        "name": "Cambridge Trust (Cambridge Commonwealth, European and International Trust)",
+        "eligibility": "Means-tested awards for overseas students who have received a College offer; applications are only possible after an offer.",
+        "url": "https://www.undergraduate.study.cam.ac.uk/international-students/financial-support"
+      },
+      {
+        "name": "College awards for overseas students",
+        "eligibility": "Some Colleges offer partial financial support to overseas students, with eligibility varying by College.",
+        "url": "https://www.undergraduate.study.cam.ac.uk/international-students/financial-support"
+      },
+      {
+        "name": "International Disabled Students' Fund",
+        "eligibility": "Offer holders and students classed as international for fees can seek help with academic-related disability support costs.",
+        "url": "https://www.undergraduate.study.cam.ac.uk/international-students/financial-support"
+      }
+    ]
+  },
+  "6020a2b5-3788-5dd1-b3f2-b9c6c7c6f99b": {
+    "checked_at": "2026-10-18",
+    "scope": "International first-year / undergraduate applicants",
+    "requirements_source": "https://ethz.ch/en/studies/bachelor/application/non-swiss-matriculation-certificate/admission-prerequisites.html",
+    "requirements": [
+      "Applications with non-Swiss school-leaving certificates are submitted through ETH's eApply portal.",
+      "Depending on the certificate, admission is granted without exam, or after a reduced (4-subject) or comprehensive (8-subject) entrance examination; certificate-specific rules follow swissuniversities and ETH's country list.",
+      "Teaching is mainly in German: a recognised German C1 certificate (or Goethe/ÖSD C2) must be submitted by 31 March unless exempt (e.g. native speakers or German/Austrian school-leaving certificates)."
+    ],
+    "scholarships": [
+      {
+        "name": "ETH Scholarship (need-based)",
+        "eligibility": "International Bachelor students may apply via eSTIP after passing the first-year examination (Basisprüfung).",
+        "url": "https://ethz.ch/students/en/studies/financial/scholarships/cost-of-living/international-students.html"
+      },
+      {
+        "name": "Solidarity Fund for Foreign Students",
+        "eligibility": "Foreign students with a B permit in their first Bachelor's or Master's programme at ETH; Bachelor students must have passed the first-year exam and meet credit thresholds.",
+        "url": "https://ethz.ch/students/en/studies/financial/scholarships/solidarity-fund.html"
+      }
+    ]
+  },
+  "99fbcf31-606d-5dac-880e-83ca25acd942": {
+    "checked_at": "2026-10-18",
+    "scope": "International first-year / undergraduate applicants",
+    "requirements_source": "https://www.admissions.caltech.edu/apply/first-year-applicants/international-applicants",
+    "requirements": [
+      "SAT or ACT scores are required, plus AP or IB scores if taken.",
+      "Official transcripts with grades and predicted results must be sent by the school, with English translations of any non-English documents.",
+      "Two teacher recommendations: one from a STEM teacher and one from a humanities or social-science teacher.",
+      "Non-native English speakers (unless taught primarily in English) must submit an English test: IELTS 7 (7 per section), TOEFL 100 (25 per section; or 5 on post-Jan 2026 format) or Duolingo 130."
+    ],
+    "scholarships": [
+      {
+        "name": "Caltech need-based financial aid",
+        "eligibility": "Caltech meets the full demonstrated need of admitted students, but international admission is need-aware and aid must be requested when applying for admission.",
+        "url": "https://www.admissions.caltech.edu/apply/first-year-applicants/international-applicants"
+      }
+    ]
+  },
+  "c66c3755-66a2-57a0-a80e-da984c310d29": {
+    "checked_at": "2026-10-18",
+    "scope": "International first-year / undergraduate applicants",
+    "requirements_source": "https://www.nus.edu.sg/oam/docs/default-source/nus-publications/intlprospectus.pdf?sfvrsn=867e648c_49",
+    "requirements": [
+      "Apply online through NUS's international application form (S$20 fee), listing up to eight programme choices, with passport copy and results.",
+      "Requirements are set per qualification: e.g. IB Diploma, A-Levels, or a completed high-school diploma (such as the American diploma) supported by standardised test scores like SAT/ACT; some national qualifications need minimum grades (e.g. German Abitur 2.0 or better).",
+      "Some qualifications must be supplemented with an English test; NUS's list sets minimums such as IELTS Academic 6.5 (overall, reading, writing), PTE Academic 62, C1 Advanced 180 and TOEFL iBT 4.5 (new scale); Law requires higher English (e.g. IELTS 7.0 or TOEFL iBT 100).",
+      "Shortlisted applicants to selected programmes may have to attend admission tests and/or interviews."
+    ],
+    "scholarships": [
+      {
+        "name": "NUS International Undergraduate Scholarship",
+        "eligibility": "Open to citizens of all countries except Singapore who are exceptional international students with outstanding achievements.",
+        "url": "https://www.nus.edu.sg/oam/docs/default-source/nus-publications/intlprospectus.pdf?sfvrsn=867e648c_49"
+      },
+      {
+        "name": "ASEAN Undergraduate Scholarship",
+        "eligibility": "For citizens of ASEAN countries other than Singapore, across all undergraduate programmes.",
+        "url": "https://www.nus.edu.sg/oam/docs/default-source/nus-publications/intlprospectus.pdf?sfvrsn=867e648c_49"
+      },
+      {
+        "name": "MOE Tuition Grant",
+        "eligibility": "Awarded competitively to international students to subsidise fees, in return for working for a Singapore entity for three years after graduation; those without it pay non-subsidised fees and cannot get NUS/MOE aid.",
+        "url": "https://www.nus.edu.sg/oam/docs/default-source/nus-publications/intlprospectus.pdf?sfvrsn=867e648c_49"
+      }
+    ]
+  },
+  "b37d730b-421c-5ed6-a807-3d66e7ca21f7": {
+    "checked_at": "2026-10-18",
+    "scope": "International first-year / undergraduate applicants",
+    "requirements_source": "https://admissions.hku.hk/apply/international-qualifications",
+    "requirements": [
+      "Holders of international qualifications (non-local students, or local students without HKDSE) apply directly to HKU online through the International/Non-JUPAS Admissions Scheme; HKU does not authorise agents.",
+      "Minimum requirements depend on your qualification (e.g. GCE/International A-level, IB, SAT/AP) and programme, including subject and English language requirements shown in HKU's admissions-standards tool.",
+      "Decisions also weigh interview performance, personal statement, references and other documents; shortlisted applicants may be interviewed between November and January.",
+      "For 2027 entry, applications opened 23 Sept 2026 with a first-round deadline of 25 Nov 2026 (noon HKT); later applications are reviewed on a rolling basis, and predicted/actual grades must be entered."
+    ],
+    "scholarships": [
+      {
+        "name": "HKU Entrance Scholarships",
+        "eligibility": "Merit-based entrance awards for international students that may cover full tuition plus accommodation and a living allowance.",
+        "url": "https://admissions.hku.hk/explore/news/university-of-hong-kong-offers-entrance-scholarships-international-students-realise"
+      },
+      {
+        "name": "Belt and Road Scholarship (HKSAR Government Scholarship Fund)",
+        "eligibility": "For nationals of participating Belt and Road countries who show contributions to their community, leadership and commitment to Hong Kong; worth up to full non-local tuition (deadline 31 Jan 2027).",
+        "url": "https://admissions.hku.hk/fees-and-scholarships/scholarships/belt-and-road-scholarship"
+      }
+    ]
+  },
+  "f5a6d73a-5fd2-55de-83af-3da2c25e18ef": {
+    "checked_at": "2026-10-18",
+    "scope": "International first-year / undergraduate applicants",
+    "requirements_source": "https://www.ntu.edu.sg/admissions/undergraduate/admission-guide/international-qualifications",
+    "requirements": [
+      "Apply through NTU's online admissions portal; for AY2027 the window opens 15 Oct 2026 and closes 20 Jan or 19 Mar 2027 depending on qualification.",
+      "Qualification rules apply: IB applicants must give NTU direct IBO access to their transcript; UK A-Level applicants should normally have four A2 subjects in one sitting; programme-specific subject requirements apply.",
+      "An English test is mandatory for some systems (e.g. Gao Kao, HKDSE, CSAT, GSAT, Vietnam) and where English was not a main subject; minimums include IELTS 6.5 (writing and speaking 6.5), TOEFL iBT 90 (writing/speaking 25), PTE 55, C1 Advanced 170, SAT 1250 or ACT with Writing 30.",
+      "Scores must arrive by the application deadline; pending results must be uploaded within 3 days of release."
+    ],
+    "scholarships": [
+      {
+        "name": "Nanyang Global Scholarship",
+        "eligibility": "Open to all nationalities with outstanding A-Level, IB, polytechnic or Year 12-equivalent results plus strong co-curricular and leadership records; covers subsidised tuition and allowances.",
+        "url": "https://www.ntu.edu.sg/admissions/undergraduate/scholarships/scholarship-opportunities/detail/nanyang-scholarship"
+      },
+      {
+        "name": "ASEAN Undergraduate Scholarship",
+        "eligibility": "For citizens or permanent residents of ASEAN countries other than Singapore with outstanding results and leadership potential, entering a first full-time degree.",
+        "url": "https://www.ntu.edu.sg/admissions/undergraduate/scholarships/scholarship-opportunities/detail/asean-undergraduate-scholarship"
+      },
+      {
+        "name": "NTU Science and Technology Undergraduate Scholarship",
+        "eligibility": "For citizens of Asian countries/regions other than Singapore entering a full-time Computing, Engineering or Science degree with outstanding Year 12-equivalent results.",
+        "url": "https://www.ntu.edu.sg/admissions/undergraduate/scholarships-and-awards/scholarship-opportunities/detail/ntu-science-and-technology-undergraduate-scholarship"
+      }
+    ]
+  },
+  "7add53a9-8ddf-5e84-bd4d-a7c8638dbb95": {
+    "checked_at": "2026-10-18",
+    "scope": "International first-year / undergraduate applicants",
+    "requirements_source": "https://collegeadmissions.uchicago.edu/apply/international-applicants/",
+    "requirements": [
+      "International students use the same application forms and process as other applicants, listing activities and awards on the Common Application.",
+      "A Secondary School Report and transcript are required (any school administrator may complete it if there is no counselor); grades should not be converted to a 4.0 scale, and non-English documents need official translations.",
+      "English proficiency scores are optional: applicants may submit any English exam they feel reflects their ability, or none if their application already shows mastery.",
+      "Applicants who may ever need need-based aid must apply for it at the same time as applying for admission."
+    ],
+    "scholarships": [
+      {
+        "name": "Need-based and merit-based aid for international first-years",
+        "eligibility": "First-year international applicants can receive need-based and merit aid; UChicago commits to meeting 100% of demonstrated need for admitted students who apply for aid with their admission application.",
+        "url": "https://collegeadmissions.uchicago.edu/apply/international-applicants/"
+      },
+      {
+        "name": "Odyssey Scholarship (extended to international students)",
+        "eligibility": "UChicago has extended its Odyssey Scholarship program to international undergraduates, replacing loans with scholarships and funding enrichment opportunities.",
+        "url": "https://prospects.uchicago.edu/register/intl-announcement"
+      }
+    ]
+  },
+  "79e1cf8b-6a97-5fef-ac23-aa6012197801": {
+    "checked_at": "2026-10-18",
+    "scope": "International first-year / undergraduate applicants",
+    "requirements_source": "https://isd.pku.edu.cn/en/detail.php?id=813",
+    "requirements": [
+      "Open to non-Chinese citizens holding a valid foreign passport, generally aged 18–25, who have completed high school; extra nationality conditions apply to applicants of Chinese origin.",
+      "Apply online at studyatpku.com (\"Written Test Exemption Application for Undergraduate Program\"), paying an 800 RMB fee; 2026 entry had two rounds (Dec 2025–Feb 2026 and Jun–Jul 2026).",
+      "Applicants submit national or international university-entrance exam scores meeting PKU's score requirements, plus a high-school transcript and Chinese proficiency proof (undergraduate teaching is in Chinese; HSK 6 above 210 is cited for Chinese-taught programmes).",
+      "Two recommendation letters, a personal statement, a commitment letter and a self-introduction video are required; shortlisted applicants sit a secondary examination."
+    ],
+    "scholarships": [
+      {
+        "name": "Peking University Scholarship for International Students",
+        "eligibility": "Merit-based award for admitted self-funded full-time international undergraduates with no other scholarship; covers tuition, living allowance and insurance, with no separate application needed.",
+        "url": "https://isd.pku.edu.cn/en/detail.php?id=525"
+      },
+      {
+        "name": "Beijing Government Scholarship",
+        "eligibility": "For international students meeting PKU admission requirements (undergraduates up to age 25) on fee-paying programmes who hold no other Chinese government or PKU scholarship; Types A–C cover tuition and varying extras.",
+        "url": "https://isd.pku.edu.cn/en/detail.php?id=765"
+      },
+      {
+        "name": "Chinese Government Scholarship – Bilateral Program (Type A)",
+        "eligibility": "Applicants who pass PKU's initial eligibility check apply through the scholarship authority in their home country; Chinese-taught undergraduate programmes require HSK 6 (210+).",
+        "url": "https://isd.pku.edu.cn/en/detail.php?id=763"
+      }
+    ]
+  },
+  "519c66df-8779-5336-acda-2cba10f95c66": {
+    "checked_at": "2026-10-18",
+    "scope": "International first-year / undergraduate applicants",
+    "requirements_source": "https://goglobal.tsinghua.edu.cn/en/tutorial/VaQRQPgaQr",
+    "requirements": [
+      "Applicants must be foreign citizens in good health with a high-school graduation certificate (Chinese citizens with foreign permanent residence are not eligible).",
+      "Academic strength is shown through transcripts, national graduation/matriculation exam results and international tests such as SAT, ACT, A-Level, AP or IB.",
+      "Chinese proficiency of HSK 5 (each section over 60) is required; HSK 4 is accepted if Level 5 is reached within the first year. Non-native English speakers must also submit an English test score (e.g. TOEFL/IELTS).",
+      "Apply via Tsinghua's online application system; applications are reviewed and shortlisted applicants are interviewed (outstanding applicants may receive an offer without interview)."
+    ],
+    "scholarships": [
+      {
+        "name": "Chinese Government Scholarship",
+        "eligibility": "Open to international degree and non-degree students; full awards cover tuition, accommodation, a stipend and insurance, applied for via the local Chinese embassy/consulate with Tsinghua as first choice.",
+        "url": "https://www.tsinghua.edu.cn/en/Admissions/International_Students1/Financial_Aid.htm"
+      },
+      {
+        "name": "Beijing Government Scholarship",
+        "eligibility": "Outstanding international first-year undergraduates can receive full, half or partial tuition awards for the first year, applied for through the online application system.",
+        "url": "https://www.zsc.tsinghua.edu.cn/en/Join_Zhishan_College/Scholarships_and_Financial_Aid.htm"
+      },
+      {
+        "name": "Tsinghua University Institutional Scholarship",
+        "eligibility": "Donor-funded scholarships open to international students; detailed criteria are not stated on the page.",
+        "url": "https://www.zsc.tsinghua.edu.cn/en/Join_Zhishan_College/Scholarships_and_Financial_Aid.htm"
+      }
+    ]
+  },
+  "894119e1-40c1-5589-8677-e1ed97388e59": {
+    "checked_at": "2026-10-18",
+    "scope": "International first-year / undergraduate applicants",
+    "requirements_source": "https://admissions.upenn.edu/how-to-apply/international-applicants",
+    "requirements": [
+      "Apply with the Common App, Coalition Application or QuestBridge; international and domestic applicants follow the same process.",
+      "Submit complete official secondary records for every grade level (predicted scores accepted), with certified translations and no third-party recalculation.",
+      "English proficiency is required unless English is the native language or the main language of instruction for at least three years; TOEFL iBT, IELTS Academic or Duolingo accepted, with competitive benchmarks around TOEFL 100 (or 5 new scale), IELTS 7 and Duolingo 130 (not formal minimums).",
+      "Penn uses a comprehensive review with no explicit course requirements or minimum test scores."
+    ],
+    "scholarships": [
+      {
+        "name": "Penn need-based international financial aid",
+        "eligibility": "International applicants (non-citizens/non-permanent residents of the US, Canada and Mexico) may request aid when applying; admission is need-aware, and admitted aid recipients get 100% of demonstrated need met for four years.",
+        "url": "https://admissions.upenn.edu/affording-penn/international-aid"
+      }
+    ]
+  },
+  "8488d97e-a227-5fbd-b7b4-33a1194df723": {
+    "checked_at": "2026-10-18",
+    "scope": "International first-year / undergraduate applicants",
+    "requirements_source": "https://admissions.cornell.edu/how-to-apply/first-year-international-applicants",
+    "requirements": [
+      "Apply via the Common Application plus the Cornell supplement with college/school-specific essays.",
+      "An official transcript (with mid-year grades when available) and a school report from the counselor are required.",
+      "One counselor recommendation and two teacher recommendations are required.",
+      "SAT or ACT scores are required, and international applicants must demonstrate English proficiency through an approved exam or other criteria (minimums are on Cornell's testing policy page)."
+    ],
+    "scholarships": [
+      {
+        "name": "Cornell need-based aid for international students",
+        "eligibility": "International applicants who submit the CSS Profile with their admission application (ED 1 Nov 2026 / RD 2 Jan 2027) are considered; admission is need-aware and Cornell meets 100% of admitted students' demonstrated need.",
+        "url": "https://finaid.cornell.edu/first-year-and-transfer-students-international"
+      }
+    ]
+  },
+  "0a670c6d-e20a-527f-851b-e2c1306cce70": {
+    "checked_at": "2026-10-18",
+    "scope": "International first-year / undergraduate applicants",
+    "requirements_source": "https://admissions.yale.edu/international",
+    "requirements": [
+      "International applicants complete the same application and requirements as all other applicants and receive the same whole-person review.",
+      "SAT or ACT scores are required; international leaving exams and English tests do not satisfy this.",
+      "An English test (TOEFL, IELTS, Cambridge English, Duolingo or InitialView) is required unless the applicant has completed at least two years of secondary school taught in English; no minimum scores are listed.",
+      "All materials, including transcripts and recommendations, must be in English, with certified (not self-made) translations."
+    ],
+    "scholarships": [
+      {
+        "name": "Yale need-based financial aid",
+        "eligibility": "Yale admits international students need-blind and meets 100% of demonstrated need with the same aid as domestic students, including housing, meals and travel allowances.",
+        "url": "https://admissions.yale.edu/international"
+      }
+    ]
+  },
+  "e67501b3-2e87-5598-b9e3-e28fe4101f68": {
+    "checked_at": "2026-10-18",
+    "scope": "International first-year / undergraduate applicants",
+    "requirements_source": "https://admissions.berkeley.edu/apply-to-berkeley/international-students/requirements-for-international-students/",
+    "requirements": [
+      "Applicants must complete secondary school with a certificate that qualifies them for university entry in their country; IGCSE/O-levels alone are not enough (e.g. A-levels with at least three exams or the IB Diploma are needed).",
+      "Grades must be reported exactly as shown on the school record, without conversion; extra national exam results (e.g. French Baccalaureate, ATAR) are submitted after admission.",
+      "English proficiency must be shown by 31 January: TOEFL 90 (4.5 new scale), IELTS 6.5 or Duolingo 115, or alternatives such as AP English 3+, IB English, or 3+ years of English-medium schooling.",
+      "Optional InitialView interview materials may be sent by 30 November but cannot replace an English test score."
+    ],
+    "scholarships": [
+      {
+        "name": "Regents' and Chancellor's Scholarship",
+        "eligibility": "All applicants, including international first-year and transfer students, are automatically considered through a holistic review of top applicants.",
+        "url": "https://financialaid.berkeley.edu/types-of-aid-at-berkeley/scholarships/regents-and-chancellors-scholarship/"
+      },
+      {
+        "name": "Robinson International Scholars Program",
+        "eligibility": "Need-based award for admitted international students who are refugees or stateless people from Sub-Saharan Africa or other developing nations (or graduated from school there), on top of the Regents' and Chancellor's Scholarship.",
+        "url": "https://financialaid.berkeley.edu/types-of-aid-at-berkeley/scholarships/regents-and-chancellors-scholarship/international-student-scholarships/"
+      },
+      {
+        "name": "International Leaders Scholarship",
+        "eligibility": "Need-based award for admitted international students with academic excellence and leadership, with priority for Peruvian residents.",
+        "url": "https://financialaid.berkeley.edu/types-of-aid-at-berkeley/scholarships/regents-and-chancellors-scholarship/international-student-scholarships/"
+      }
+    ]
+  },
+  "7deae08f-080e-56cd-8aa8-ca05c941f0cc": {
+    "checked_at": "2026-10-18",
+    "scope": "International first-year / undergraduate applicants",
+    "requirements_source": "https://admission.cuhk.edu.hk/application/overseas-other-qualifications-non-local-international-team/requirements/",
+    "requirements": [
+      "Non-local applicants needing a Hong Kong student visa apply through the International Students Admissions Scheme and must meet general, language and programme-specific requirements.",
+      "General minimums include IB Diploma 30/45, GCE/International A-level 3AL (or 2AL+2AS), or a US diploma with SAT 1190 / ACT 24 plus two AP tests at grade 3; other national qualifications have their own minimums.",
+      "English minimums include IELTS Academic 6.0 overall, TOEFL iBT 80 (or 4.5 on the post-Jan 2026 scale), SAT EBRW 590 or ACT ELA 23, among other accepted qualifications.",
+      "Admission is competitive; meeting minimums does not guarantee an offer."
+    ],
+    "scholarships": [
+      {
+        "name": "CUHK Admission Scholarships",
+        "eligibility": "New non-local undergraduates with excellent academic or non-academic records are identified automatically (no application); awards range from HK$5,000 to full tuition, some with allowances.",
+        "url": "https://admission.cuhk.edu.hk/fees-financing-your-studies/scholarships/admission-scholarships-for-undergraduates-only/"
+      },
+      {
+        "name": "HKSAR Government Scholarship",
+        "eligibility": "CUHK nominates outstanding first-year undergraduates, including non-local students, to the Education Bureau; no application required.",
+        "url": "https://admission.cuhk.edu.hk/fees-financing-your-studies/scholarships/admission-scholarships-for-undergraduates-only/"
+      },
+      {
+        "name": "Belt and Road Scholarship",
+        "eligibility": "For outstanding new students from Indonesia, Kazakhstan, Malaysia, Mongolia, Myanmar and Thailand, with a separate award for other Belt and Road countries.",
+        "url": "https://admission.cuhk.edu.hk/fees-financing-your-studies/scholarships/admission-scholarships-for-undergraduates-only/"
+      }
+    ]
+  },
+  "34f9bd5c-1c24-5d4f-880c-4a342627a148": {
+    "checked_at": "2026-10-18",
+    "scope": "International first-year / undergraduate applicants",
+    "requirements_source": "https://www.unsw.edu.au/study/international-students/admissions-info",
+    "requirements": [
+      "Apply online via the UNSW Applicant Portal (directly or through an agent; UAC International is also mentioned); places are allocated on academic merit and capacity.",
+      "Each degree has an indicative international ATAR (2027 table); predicted IB, A-Level, CBSE and similar results are accepted for full offers if at least 2 points above the requirement, and SAT/AP/ACT results can earn early offers.",
+      "A new International Admissions Diversity Pathway gives passport holders from eligible countries 5 extra points toward their international ATAR (minimum 75).",
+      "Applicants must meet UNSW's English requirements (listed per degree); conditional offers can be met with English results or UNSW College's UEEC course."
+    ],
+    "scholarships": [
+      {
+        "name": "International Student Award",
+        "eligibility": "Citizens of eligible countries starting in 2026 or 2027 receive a 20% contribution toward tuition fees each year; combinable with other awards.",
+        "url": "https://www.unsw.edu.au/study/your-future/international-scholarships"
+      },
+      {
+        "name": "International Scientia Coursework Scholarship",
+        "eligibility": "For international students with high academic achievement plus leadership and extracurricular involvement; application required (full tuition or $20,000 per year).",
+        "url": "https://www.unsw.edu.au/study/your-future/international-scholarships"
+      },
+      {
+        "name": "Australia's Global University Award",
+        "eligibility": "High-achieving international applicants are considered automatically for a one-off $10,000 tuition payment.",
+        "url": "https://www.unsw.edu.au/study/your-future/international-scholarships"
+      }
+    ]
+  },
+  "f5c17f3c-ac83-5193-8c71-641147ad926c": {
+    "checked_at": "2026-10-18",
+    "scope": "International first-year / undergraduate applicants",
+    "requirements_source": "https://apply.jhu.edu/international-applicants/",
+    "requirements": [
+      "Apply with the Common Application or the Coalition Application on Scoir; there is no separate international application.",
+      "Submit official academic records for the equivalent of US grades 9–11 plus any O-level, A-level or IB results, with verified English translations.",
+      "Standardized testing is required, and an English test (TOEFL, IELTS, Duolingo or Cambridge) is recommended for non-native speakers without three recent years of English-medium schooling; no minimums listed.",
+      "All international applicants must submit the Certification of Finances form via the applicant portal, or the application is incomplete."
+    ],
+    "scholarships": [
+      {
+        "name": "Need-based financial aid for international students",
+        "eligibility": "International applicants who indicate aid on their application and submit the CSS Profile (or JHU's own form) are considered; admission is need-aware and Hopkins meets 100% of demonstrated need without loans.",
+        "url": "https://apply.jhu.edu/international-applicants/"
+      },
+      {
+        "name": "Merit scholarships for international citizens",
+        "eligibility": "All applicants are automatically considered for a small number of merit scholarships offered to international citizens each year.",
+        "url": "https://apply.jhu.edu/international-applicants/"
+      }
+    ]
+  },
+  "819bd7c2-cc38-5dc4-854d-2d59a8a9f4e5": {
+    "checked_at": "2026-10-18",
+    "scope": "International first-year / undergraduate applicants",
+    "requirements_source": "https://www.epfl.ch/education/admission/admission-2/bachelor-admission-criteria/",
+    "requirements": [
+      "The online application form opens in November; first-year Bachelor places are capped at 3,000 and EU/EFTA/UK and IB holders are ranked by general average.",
+      "EU/EFTA certificates need at least 12 years of schooling, six of seven required subjects including maths and physics at the highest level, and at least 80% in maths, physics and overall; the IB Diploma needs HL maths, physics and a third science, 38/42 points and 6/7 in maths and physics.",
+      "Holders of certificates from other countries may be admitted only to the preparatory Cours de mathématiques spéciales (if meeting equivalent criteria) or via the EPFL entrance exam.",
+      "Bachelor programmes require French at CEFR B2 (C1 highly recommended); applicants who did not study French in upper secondary school must prove their level."
+    ],
+    "scholarships": [
+      {
+        "name": "EPFL social scholarship",
+        "eligibility": "Need-based, last-resort support for students who have completed the first-year cycle and at least one year at EPFL and face an unexpected change in financial circumstances; full funding must be secured before enrolling.",
+        "url": "https://www.epfl.ch/education/studies/en/epfl-social-scholarship/"
+      }
+    ]
+  },
+  "44444444-4444-4444-8444-444444444444": {
+    "checked_at": "2026-10-18",
+    "scope": "International first-year / undergraduate applicants",
+    "requirements_source": "https://www.tum.de/en/studies/application/application-info-portal/admission-requirements",
+    "requirements": [
+      "Applicants need a recognised university entrance qualification; foreign qualifications can be assessed via uni-assist, and applications are submitted through TUM's online application.",
+      "Most Bachelor's programmes use an aptitude assessment whose procedure depends on the programme.",
+      "German-taught programmes require proof of German, e.g. DSH-2, TestDaF 4 in all sections, DSD II (B2), telc C1 Hochschule or Goethe/ÖSD C2.",
+      "For English-taught programmes, English is either checked in the aptitude assessment or shown with TOEFL iBT 88, IELTS Academic 6.5, PTE 65 or Cambridge CAE/CPE (A–C)."
+    ],
+    "scholarships": [
+      {
+        "name": "TUM Deutschlandstipendium",
+        "eligibility": "Open to admitted or enrolled TUM students including internationals, with an entrance-qualification grade of at least 2.40; recipients must be resident in Germany with a German bank account (next round summer 2027).",
+        "url": "https://www.tum.de/en/studies/fees-and-financial-aid/scholarships/tum-scholarships/deutschlandstipendium/application"
+      },
+      {
+        "name": "TUM Scholarship for International Students",
+        "eligibility": "Bavarian-funded merit-and-need award (€500–€1,800 per semester) for students ineligible for BAföG due to nationality, from the 3rd semester of a Bachelor's.",
+        "url": "https://www.tum.de/en/studies/fees-and-financial-aid/scholarships/tum-scholarships/scholarship-for-international-students-of-tum"
+      }
+    ]
+  },
+  "6f13f9e9-cf5f-56ad-8384-39a9dc592d58": {
+    "checked_at": "2026-10-18",
+    "scope": "International first-year / undergraduate applicants",
+    "requirements_source": "https://admission.princeton.edu/apply/international-students",
+    "requirements": [
+      "Transcripts are read in the context of the home education system and should include internal grades and external exam results (IGCSE, A-Level, IB, national exams), with predicted or achieved results sent as available.",
+      "A School Report from the counselor (or principal/dean), a Midyear Report where applicable, and a graded written paper in English are required.",
+      "An English test (TOEFL, IELTS Academic, Duolingo or PTE Academic) is required unless English is the native language or the applicant had at least three years of English-medium secondary school; no minimums listed.",
+      "Forms in other languages must be officially translated (school staff may translate)."
+    ],
+    "scholarships": [
+      {
+        "name": "Princeton need-based financial aid",
+        "eligibility": "Admission is need-blind and international students receive the same need-based, grant-only aid policy as US students.",
+        "url": "https://admission.princeton.edu/apply/international-students"
+      }
+    ]
+  },
+  "c67598f4-8b91-53a9-a98a-ebd185ced219": {
+    "checked_at": "2026-10-18",
+    "scope": "International first-year / undergraduate applicants",
+    "requirements_source": "https://www.sydney.edu.au/study/applying/how-to-apply/international-students.html",
+    "requirements": [
+      "Apply directly from the course page or through an authorised agent (Year 12/IB students studying in Australia apply via UAC), paying a processing fee.",
+      "Applicants must meet academic entry requirements (recognised overseas qualifications and entry scores) and the Australian Government's Genuine Student requirement; a Taylors College preparation programme is an option for others.",
+      "Submit official transcripts/certificates, proof of English proficiency, passport and any programme-specific items (e.g. personal statement or portfolio), with accredited translations of non-English documents."
+    ],
+    "scholarships": [
+      {
+        "name": "Sydney International Undergraduate Academic Excellence Scholarship",
+        "eligibility": "For international students applying for a first full-time single undergraduate degree with no prior tertiary study; covers 100% of tuition for up to 4 years, subject to a 65 average.",
+        "url": "https://www.sydney.edu.au/scholarships/e/sydney-international-undergraduate-academic-excellence-scholarship.html"
+      },
+      {
+        "name": "Vice-Chancellor's International Scholarships Scheme",
+        "eligibility": "International students with an unconditional offer to a bachelor's or coursework master's degree are automatically considered on merit; one-off awards up to $60,000.",
+        "url": "https://www.sydney.edu.au/scholarships/e/vice-chancellor-international-scholarships-scheme.html"
+      },
+      {
+        "name": "Sydney International Student Award",
+        "eligibility": "Citizens of eligible countries admitted to a full-time degree starting in 2027 receive a 20% tuition reduction, with a personal statement required.",
+        "url": "https://www.sydney.edu.au/study/fees-and-loans/scholarships/sydney-international-student-award.html"
+      }
+    ]
+  },
+  "5c9532a7-118a-5e2d-ab32-92ade2e776a5": {
+    "checked_at": "2026-10-18",
+    "scope": "International first-year / undergraduate applicants",
+    "requirements_source": "https://econ.fudan.edu.cn/uipe/info/1005/1004.htm",
+    "requirements": [
+      "Applicants must be non-Chinese citizens with foreign passports who have finished high school, are healthy and have no criminal record; extra nationality rules apply to children of Chinese citizens.",
+      "Apply online at istudent.fudan.edu.cn/apply with an 800 RMB fee; applicants sit the CSCA assessment (Maths in English for this programme) and attend an interview.",
+      "Documents include the high-school diploma and transcript, CSCA score report, two English recommendation letters, proof of funds and a no-criminal-record certificate.",
+      "English test needed unless schooled in English: minimums TOEFL 90, IELTS 6.5, Duolingo 110 or PTE Academic 61."
+    ],
+    "scholarships": [
+      {
+        "name": "Fudan University International Students' Scholarship",
+        "eligibility": "Awarded by the university to excellent applicants based on academic performance and admission evaluation results.",
+        "url": "https://econ.fudan.edu.cn/uipe/info/1005/1004.htm"
+      }
+    ]
+  },
+  "b48ecdd6-9331-5ee8-a4ad-7f5b046d5356": {
+    "checked_at": "2026-10-18",
+    "scope": "International first-year / undergraduate applicants",
+    "requirements_source": "https://www.mcgill.ca/undergraduate-admissions/apply/requirements/international/ib",
+    "requirements": [
+      "Apply online through McGill's applicant portal (opens 1 October; application deadline 15 January, supporting documents by 1 March).",
+      "Upload the high-school transcript (with mid-year results), any GCSE/IGCSE/O-Level or MYP results, and predicted or final results; e.g. IB applicants need at least 5 in each subject, with typical program ranges such as 33–36 (Arts) or 35–39 (Science) out of 42.",
+      "Proof of English proficiency is required unless the applicant attended school for at least four years in a country where English is the primary language; test results are due by the supporting-documents deadline.",
+      "Some programs or scholarship/aid applicants need extra items such as French proficiency, CASPer, recommendation letters or a personal statement."
+    ],
+    "scholarships": [
+      {
+        "name": "McGill Entrance Scholarship Program",
+        "eligibility": "Merit-based awards for newly admitted first-year, first-degree full-time undergraduates, including US and international students; the renewable Major award requires a separate application by 21 January.",
+        "url": "https://www.mcgill.ca/studentaid/scholarships-aid/future-undergrads"
+      },
+      {
+        "name": "Need-based financial aid (loans and bursaries)",
+        "eligibility": "Undergraduates from Canada, the US and abroad can apply for need-based bursaries and loans based on financial need or hardship.",
+        "url": "https://www.mcgill.ca/studentaid/scholarships-aid/international-students"
+      }
+    ]
+  },
+  "c5ca35b6-8983-574d-89ec-d15da6afa1fe": {
+    "checked_at": "2026-10-18",
+    "scope": "International first-year / undergraduate applicants",
+    "requirements_source": "https://psl.eu/en/international-admissions-procedures-psl",
+    "requirements": [
+      "Applicants with a French or European baccalaureate, and EU/EEA/Swiss citizens, apply through the national Parcoursup platform.",
+      "Non-EU applicants in 'Études en France' countries with a foreign diploma apply via Parcoursup (CPES), the EEF/Campus France portal (e.g. Sustainability Sciences, International BSc in AI, Dauphine-PSL) or the I-BE³ platform, depending on the programme.",
+      "Non-EU applicants outside EEF countries use the DAP procedure for some programmes, Parcoursup for CPES, or programme-specific platforms; admitted students must obtain a student visa.",
+      "The PSL Classes Internationales preparatory year requires three years of transcripts, a one-page personal statement and a CV."
+    ],
+    "scholarships": [
+      {
+        "name": "Dauphine-PSL Hardship Assistance",
+        "eligibility": "Enrolled Dauphine-PSL students facing financial difficulties can apply via MyDauphine; no nationality restriction is stated.",
+        "url": "https://dauphine.psl.eu/en/training/scholarships-and-social-assistance"
+      },
+      {
+        "name": "Tuition Scholarship – Dauphine London Bachelor's",
+        "eligibility": "Academic- and need-based support for students enrolled in Dauphine's London bachelor's programme.",
+        "url": "https://dauphine.psl.eu/en/training/scholarships-and-social-assistance"
+      }
+    ]
+  },
+  "55555555-5555-4555-8555-555555555555": {
+    "checked_at": "2026-10-18",
+    "scope": "International first-year / undergraduate applicants",
+    "requirements_source": "https://future.utoronto.ca/international-students",
+    "requirements": [
+      "Apply through the Ontario Universities' Application Centre (OUAC), then use U of T's applicant portal to upload documents and complete forms; the process is the same for international and Canadian applicants.",
+      "Requirements vary by program; all applicants need senior-level English and any program prerequisites, assessed within the curriculum they are completing.",
+      "Applicants must meet U of T's English language requirement (minimum scores are on a separate page); some programs also require supplemental applications."
+    ],
+    "scholarships": [
+      {
+        "name": "Lester B. Pearson International Scholarship",
+        "eligibility": "International students in their final year of secondary school (or graduated no earlier than June 2026) who are nominated by their school and start in Sept 2027; covers tuition, books, fees and residence for four years.",
+        "url": "https://future.utoronto.ca/pearson-scholarships"
+      },
+      {
+        "name": "President's Scholars of Excellence Program",
+        "eligibility": "About 150 top direct-entry first-year applicants, domestic and international, are considered automatically.",
+        "url": "https://future.utoronto.ca/scholarships-international-students"
+      },
+      {
+        "name": "Arts & Science Global Scholarship",
+        "eligibility": "Selected outstanding international students admitted to Arts & Science, with financial need possibly considered; covers international tuition, incidental and UHIP fees for up to four years.",
+        "url": "https://future.utoronto.ca/scholarships-international-students"
+      }
+    ]
+  },
+  "14fa4c62-b910-520b-aa51-0bf334f02b1c": {
+    "checked_at": "2026-10-18",
+    "scope": "International first-year / undergraduate applicants",
+    "requirements_source": "https://study.anu.edu.au/apply/international-applications",
+    "requirements": [
+      "Australian Year 12, IB Diploma and NZ NCEA students apply via UAC International; all others apply directly through ANU's online portal (AUD$150 fee, up to three preferences).",
+      "Applicants must meet the minimum indicative entry scores for their program plus any additional selection criteria; conditional offers may be made while documents are outstanding.",
+      "Evidence of meeting ANU's English language requirements is required (minimum scores on a separate page).",
+      "Semester 1, 2027 applications close 15 December 2026; OSHC health cover is mandatory for student-visa holders."
+    ],
+    "scholarships": [
+      {
+        "name": "ANU Chancellor's International Scholarship",
+        "eligibility": "Commencing overseas students with an offer to an eligible program are assessed automatically on merit for a 25% or 50% tuition reduction depending on region.",
+        "url": "https://study.anu.edu.au/scholarships/find-scholarship/anu-chancellors-international-scholarship"
+      },
+      {
+        "name": "International Merit Award",
+        "eligibility": "International undergraduates with a Selection Rank of 85 (or equivalent) or higher, from countries not eligible for the Vice-Chancellor's award, are considered automatically for a 20–50% tuition reduction (2026 intake).",
+        "url": "https://study.anu.edu.au/scholarships/find-scholarship/international-merit-award"
+      }
+    ]
+  },
+  "01649f44-22e4-5b85-adaa-81f3538aa083": {
+    "checked_at": "2026-10-18",
+    "scope": "International first-year / undergraduate applicants",
+    "requirements_source": "https://www.kcl.ac.uk/study/undergraduate/how-to-apply/entry-requirements",
+    "requirements": [
+      "Apply through UCAS; requirements are set as specific qualifications and grades per course (no UCAS tariff points), with referees supplying predicted grades.",
+      "Accepted qualifications include three A-levels, the IB Diploma (e.g. 36 points / 18 at HL ≈ AAA), and US routes combining APs with SAT/ACT or at least five APs.",
+      "English requirements are banded by course: e.g. Band B IELTS 7.0 (6.5 each skill) or TOEFL iBT 100; Band D IELTS 6.5 (6.0 each skill) or TOEFL iBT 92, with exemptions for some majority-English-speaking nationals.",
+      "Applicants who don't meet standard requirements can consider King's International Foundation Programme."
+    ],
+    "scholarships": [
+      {
+        "name": "King's International Hardship Fund",
+        "eligibility": "Limited fund for enrolled international and EU students who face financial difficulty despite having had adequate funding; awards up to £6,000.",
+        "url": "https://self-service.kcl.ac.uk/article/KA-01819/en-us"
+      }
+    ]
+  },
+  "74996b5e-c39f-52f1-9e01-88f3051f155b": {
+    "checked_at": "2026-10-18",
+    "scope": "International first-year / undergraduate applicants",
+    "requirements_source": "https://join.hkust.edu.hk/admissions/international-qualifications/application-procedures",
+    "requirements": [
+      "Holders of international qualifications (e.g. SAT/ACT/AP, A-Level/IAL, IB, French/European Baccalaureate) must meet general, programme-specific and English language requirements.",
+      "Apply via the HKUST Online Application System (HKD600 fee), choosing up to two options; for 2027 entry the priority deadline is 25 Nov 2026, with rolling review afterwards and final close 30 Jun 2027.",
+      "Submit a personal statement, school reports from Grade 10 onward, proof of English proficiency (IELTS, TOEFL, Duolingo, PTE or qualifications such as IB/A-Level), public exam results and at least one academic referee; IB/A-Level counsellors provide predicted grades.",
+      "Interviews may be arranged and are required by some programmes."
+    ],
+    "scholarships": [
+      {
+        "name": "Global Learners Scholarship",
+        "eligibility": "All undergraduate applicants from underrepresented nationalities are automatically considered for a renewable full tuition waiver.",
+        "url": "https://join.hkust.edu.hk/global-learners-scholarship"
+      },
+      {
+        "name": "University Admissions Scholarships (merit)",
+        "eligibility": "All applicants are automatically considered on academic merit and non-academic achievements; no separate application.",
+        "url": "https://join.hkust.edu.hk/fees-and-scholarships"
+      },
+      {
+        "name": "Future Leaders Award",
+        "eligibility": "Application-based non-academic scholarship listed for non-local applicants; a separate application is required (detailed criteria on a linked page).",
+        "url": "https://join.hkust.edu.hk/fees-and-scholarships"
+      }
+    ]
+  },
+  "f2f2a71c-abeb-5dc7-b18b-aa8b00611b0a": {
+    "checked_at": "2026-10-18",
+    "scope": "International first-year / undergraduate applicants",
+    "requirements_source": "https://study.ed.ac.uk/undergraduate/applying",
+    "requirements": [
+      "Full-time undergraduate applications go through UCAS; selection is made by colleges/schools and applicants are compared with others of the same fee status.",
+      "Each degree sets its own subject and grade requirements; a wide range of international qualifications is accepted, and some subjects use interviews, tests or portfolios.",
+      "All applicants must show English competency; scores vary by degree, IELTS/TOEFL must be under two years old, and C1 Advanced/C2 Proficiency require 176 overall with 162 per component.",
+      "An unsuitable personal statement is cited as a reason applications can be unsuccessful."
+    ],
+    "scholarships": [
+      {
+        "name": "Edinburgh Global Undergraduate Mathematics Scholarships",
+        "eligibility": "For international applicants to mathematics with outstanding academic performance.",
+        "url": "https://registryservices.ed.ac.uk/student-funding/undergraduate/international"
+      },
+      {
+        "name": "Global Talent Fund BIG Scholarships",
+        "eligibility": "For students from anywhere in the world who have won a medal at an international Olympiad.",
+        "url": "https://registryservices.ed.ac.uk/student-funding/undergraduate/international"
+      },
+      {
+        "name": "Asylum Seeker Scholarship",
+        "eligibility": "For applicants seeking asylum who are most in need; covers tuition fees and living costs (two awards for 2026-27).",
+        "url": "https://registryservices.ed.ac.uk/student-funding/undergraduate/international"
+      }
+    ]
+  },
+  "6e2ae583-50c4-53d5-a0ed-d11422c64773": {
+    "checked_at": "2026-10-18",
+    "scope": "International first-year / undergraduate applicants",
+    "requirements_source": "https://www.manchester.ac.uk/study/undergraduate/applying/",
+    "requirements": [
+      "Apply through UCAS (from 1 Sept 2026 for 2027 entry); the academic reference must be complete before UCAS accepts the application.",
+      "Equal-consideration deadline is 13 January 2027 (15 October 2026 for Medicine and Dentistry); final UCAS deadline 30 June 2027.",
+      "Applicants must meet general and course-specific entry requirements; many overseas qualifications are accepted (see country-specific pages), with foundation courses as an alternative route.",
+      "English requirements are usually equivalent to IELTS 6.0–7.0 depending on the course (5.5 for foundation courses)."
+    ],
+    "scholarships": [
+      {
+        "name": "Global Futures Scholarship",
+        "eligibility": "Partial merit-based awards for residents of listed countries holding an offer for a full-time on-campus course starting September 2027; criteria vary by region.",
+        "url": "https://www.manchester.ac.uk/study/international/finance-and-scholarships/funding/global-futures-scholarship/"
+      },
+      {
+        "name": "Humanitarian Scholarship",
+        "eligibility": "Supports people forced to flee their homes due to armed conflict and persecution; no awards currently open (2027/28 details may be posted later).",
+        "url": "https://www.manchester.ac.uk/study/international/finance-and-scholarships/funding/humanitarian-scholarship/"
+      }
+    ]
+  },
+  "11087dc1-5405-5bd2-a5e2-def936b94cf7": {
+    "checked_at": "2026-10-18",
+    "scope": "International first-year / undergraduate applicants",
+    "requirements_source": "https://www.u-tokyo.ac.jp/en/prospective-students/traditional.html",
+    "requirements": [
+      "Graduates of overseas high schools apply to the traditional (Japanese-taught) undergraduate programmes through the Special Screening Tests; detailed guidelines are published only in Japanese.",
+      "A high level of Japanese proficiency is required because most courses are taught in Japanese.",
+      "English-taught degree options are PEAK (four-year, at Komaba) and the Global Science Course, a 3rd-year transfer programme for students with at least two years of study at a university outside Japan."
+    ],
+    "scholarships": [
+      {
+        "name": "Japanese Government (MEXT) Scholarship",
+        "eligibility": "Applied for via Japanese embassy recommendation (or university recommendation for some categories); undergraduates first take a one-year preparatory course and may not be placed at UTokyo.",
+        "url": "https://www.u-tokyo.ac.jp/en/prospective-students/mext_scholarship.html"
+      },
+      {
+        "name": "Global Science Course support",
+        "eligibility": "All admitted GSC transfer students receive a monthly JPY 150,000 scholarship and fully supported accommodation.",
+        "url": "https://www.u-tokyo.ac.jp/en/prospective-students/undergraduate_english.html"
+      }
+    ]
+  },
+  "40dc3bce-f456-577e-9003-9c143d3b52bb": {
+    "checked_at": "2026-10-18",
+    "scope": "International first-year / undergraduate applicants",
+    "requirements_source": "https://gc.sjtu.edu.cn/admission/international-undergraduate-admission/application-requirements/",
+    "requirements": [
+      "Open to foreign-passport holders who have completed (or will complete) high school; apply through the Common App, then complete steps in the SJTU Portal (Early Action 1 Nov 2026, Regular 31 Mar 2027).",
+      "A CSCA score with Mathematics is required (can be submitted by 30 June 2027 after pre-admission), plus one of SAT/ACT, A-Level (Maths A+) or IB (Maths HL 5+/SL 7+) or another national exam.",
+      "Non-native English speakers need TOEFL iBT 90 (4.5 new scale), IELTS 6.0 or Duolingo 120; all students must reach HSK 4 to graduate.",
+      "Submit transcripts from every high school, two recommended English recommendation letters, and a financial statement of at least CNY 100,000."
+    ],
+    "scholarships": [
+      {
+        "name": "International Chinese Language Teachers Scholarship",
+        "eligibility": "For pre-admitted students to the Bachelor's in International Chinese Language Education with HSK 5 (200+) and HSKK intermediate (60+).",
+        "url": "https://global.sjtu.edu.cn/en/study-sjtu/prospective/scholarships/63"
+      },
+      {
+        "name": "Chinese Government Scholarship / SJTU Scholarship",
+        "eligibility": "Listed as available to international students on SJTU's scholarship page; eligibility details are not given there.",
+        "url": "https://global.sjtu.edu.cn/en/study-sjtu/prospective/scholarships/63"
+      }
+    ]
+  },
+  "1ad9abe1-60cd-55ec-b227-5c8001db0475": {
+    "checked_at": "2026-10-18",
+    "scope": "International first-year / undergraduate applicants",
+    "requirements_source": "https://undergrad.admissions.columbia.edu/apply/international",
+    "requirements": [
+      "Apply via the Common Application or Coalition Application on Scoir (QuestBridge for finalists) plus Columbia-specific questions; the process is largely the same regardless of citizenship.",
+      "A Secondary School Report (transcript, counselor recommendation, school profile, midyear report) and two teacher recommendations are required; non-English documents need official translations with originals.",
+      "Any curriculum is accepted; external exam results (A Level, IB, AP, national exams) must be submitted if required to graduate.",
+      "Applicants must be comfortable with rapid, idiomatic spoken English (separate English proficiency requirements); InitialView/Vericant videos are optional. Columbia is test-optional for 2026-27 and reinstates testing from the 2027-28 cycle."
+    ],
+    "scholarships": [
+      {
+        "name": "Columbia need-based international financial aid",
+        "eligibility": "International applicants who request aid with their application are reviewed need-aware; Columbia meets 100% of demonstrated need for admitted students with grants and work-study, no loans.",
+        "url": "https://undergrad.admissions.columbia.edu/apply/international/aid"
+      }
+    ]
   }
 }

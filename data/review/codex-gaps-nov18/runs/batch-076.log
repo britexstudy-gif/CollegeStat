@@ -1,0 +1,70 @@
+OpenAI Codex v0.169.0
+--------
+workdir: /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+model: gpt-6-luna
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: high
+reasoning summaries: none
+session id: 01a1ee8d-f05e-7d73-8346-f11a4a1b6027
+--------
+user
+You are a careful admissions-data researcher. For each university below, find facts for an
+INTERNATIONAL applicant to a FIRST-YEAR BACHELOR'S degree starting in autumn 2027 (or the nearest
+published cycle). Use the live web. Rules:
+
+- Official sources only: the university's own website (its domain or subdomains), the national
+  application service (UCAS, Common App, OUAC, uni-assist, Studyinkorea, etc.) or a government
+  statistics office. Never use rankings sites, forums, agencies, Wikipedia or blogs.
+- Every value needs the exact page URL where you read it (source_url). If you could not verify a
+  value on an official page, leave it out (null or an empty list). Never guess or estimate.
+- english: the lowest overall score accepted for undergraduate entry, per test (IELTS Academic
+  overall, TOEFL iBT total, Duolingo, PTE). If programmes differ, give the general/lowest common
+  university minimum and say so in detail (e.g. "6.5 overall, no band below 6.0; some
+  programmes higher").
+- tuition: the yearly tuition for international (non-EU / overseas) undergraduates in the local
+  currency. If it varies by programme give amount = lowest and amount_max = highest, and the
+  academic_year the fee applies to (e.g. "2026/27"). If tuition is free, amount = 0.
+- application_fee: for international first-year applicants, local currency.
+- deadlines: the main 2027-entry first-year deadlines (ISO date YYYY-MM-DD) with the route
+  (e.g. "Common App, Regular Decision", "UCAS", "university portal"). Only dates actually
+  published; if only the 2026-entry date is published, include it and put "2026 entry" in title.
+- sat: policy for international applicants; p25/p75 total SAT only if the university publishes
+  them (Common Data Set or admissions profile).
+- acceptance_rate: only if officially published (CDS, admissions statistics page).
+- notes: one short line on anything important (e.g. "Foundation year required for 11-year
+  school certificates"), else "".
+
+Spend effort on the facts students need most: English minimum, tuition, deadlines. Keep each
+detail under 160 characters. Return only the JSON that matches the schema; use each
+university's id exactly as given.
+
+Universities:
+- id: 6bb7e28d-2e25-5601-995b-224c09630410 | Southern University of Science and Technology | Shenzhen, CN | https://sustech.edu.cn
+- id: 0991bacc-e0e4-576f-b984-074ecc122260 | Bauman Moscow State Technical University | Moscow, RU | http://www.bmstu.ru/
+- id: d63eb7ed-7d2c-5ce5-8b86-2b85f75101a4 | Université Grenoble Alpes | Saint-Martin-d'Hères, FR | https://www.univ-grenoble-alpes.fr
+- id: c0bfd9bb-3a59-5d48-8a4f-a455af468632 | University of Tehran | Tehran, IR | http://www.ut.ac.ir/
+codex
+I’ll check each university’s official international admissions and fee pages, prioritizing published English requirements, tuition, and entry deadlines. I’ll leave fields empty when the official sources don’t publish them.
+web search: 
+web search: site:sustech.edu.cn international undergraduate admissions 2026 tuition English proficiency deadline ...
+web search: 
+web search: site:sustech.edu.cn international undergraduate tuition fee RMB 2026 application deadline SUSTech international admissions ...
+web search: 
+web search: site:ut.ac.ir "International" "admission" "Bachelor" University of Tehran English ...
+web search: 
+web search: University of Tehran international admissions official English undergraduate foreign students site:ut.ac.ir ...
+web search: 
+web search: University of Tehran international students admission official site:ut.ac.ir international admissions ...
+web search: 
+web search: https://admissions.ut.ac.ir/en/page/7391/admission-requirements
+web search: 
+web search: 
+web search: 
+web search: 
+codex
+{"universities":[{"id":"6bb7e28d-2e25-5601-995b-224c09630410","english":[{"test":"IELTS","minimum":6.0,"detail":"6.0 overall; university minimum.","source_url":"https://infoadmin.sustech.edu.cn/application"},{"test":"TOEFL iBT","minimum":75,"detail":"75 total; university minimum.","source_url":"https://infoadmin.sustech.edu.cn/application"},{"test":"Duolingo","minimum":95,"detail":"95; university minimum.","source_url":"https://infoadmin.sustech.edu.cn/application"}],"tuition":null,"application_fee":null,"deadlines":[],"sat":{"policy":"optional","p25":null,"p75":null,"source_url":"https://infoadmin.sustech.edu.cn/application"},"acceptance_rate":null,"notes":"CSCA Math and Physics reports are mandatory for undergraduate applicants."},{"id":"0991bacc-e0e4-576f-b984-074ecc122260","english":[],"tuition":null,"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"Instruction is in Russian; official pages describe Russian preparation for foreign applicants but publish no English-test minimum."},{"id":"d63eb7ed-7d2c-5ce5-8b86-2b85f75101a4","english":[],"tuition":{"amount":2902,"amount_max":null,"currency":"EUR","period":"year","academic_year":"2026/27","detail":"Differentiated first bachelor's degree fee for non-EU/EEA students; exemptions may apply.","source_url":"https://etudier.univ-grenoble-alpes.fr/en/apply-and-register/cost-of-education/tuition-fees-for-international-students/amount-of-tuition-fees-for-international-students.kjsp?RH=1752246203211"},"application_fee":null,"deadlines":[{"title":"DAP blanche application deadline (2027 entry)","due_at":"2026-12-15","route":"DAP blanche","source_url":"https://etudier.univ-grenoble-alpes.fr/en/apply-and-register/application/all-procedures/apply-with-a-preliminary-admission-application-from-dap-blanche/"}],"sat":null,"acceptance_rate":null,"notes":"DAP L1 is a French-language route; the French proficiency test is required except for listed exemptions."},{"id":"c0bfd9bb-3a59-5d48-8a4f-a455af468632","english":[],"tuition":{"amount":1050,"amount_max":1800,"currency":"EUR","period":"semester","academic_year":"Current; page updated 2026-11-02","detail":"Per semester for non-Afghan international students without Iranian residence permits; varies by field and country.","source_url":"https://admissions.ut.ac.ir/en/page/7396/tuition-fee-for-international-students"},"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"Courses are taught in Persian; applicants without proficiency may need Persian language study."}] }
+tokens used
+92,320
+{"universities":[{"id":"6bb7e28d-2e25-5601-995b-224c09630410","english":[{"test":"IELTS","minimum":6.0,"detail":"6.0 overall; university minimum.","source_url":"https://infoadmin.sustech.edu.cn/application"},{"test":"TOEFL iBT","minimum":75,"detail":"75 total; university minimum.","source_url":"https://infoadmin.sustech.edu.cn/application"},{"test":"Duolingo","minimum":95,"detail":"95; university minimum.","source_url":"https://infoadmin.sustech.edu.cn/application"}],"tuition":null,"application_fee":null,"deadlines":[],"sat":{"policy":"optional","p25":null,"p75":null,"source_url":"https://infoadmin.sustech.edu.cn/application"},"acceptance_rate":null,"notes":"CSCA Math and Physics reports are mandatory for undergraduate applicants."},{"id":"0991bacc-e0e4-576f-b984-074ecc122260","english":[],"tuition":null,"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"Instruction is in Russian; official pages describe Russian preparation for foreign applicants but publish no English-test minimum."},{"id":"d63eb7ed-7d2c-5ce5-8b86-2b85f75101a4","english":[],"tuition":{"amount":2902,"amount_max":null,"currency":"EUR","period":"year","academic_year":"2026/27","detail":"Differentiated first bachelor's degree fee for non-EU/EEA students; exemptions may apply.","source_url":"https://etudier.univ-grenoble-alpes.fr/en/apply-and-register/cost-of-education/tuition-fees-for-international-students/amount-of-tuition-fees-for-international-students.kjsp?RH=1752246203211"},"application_fee":null,"deadlines":[{"title":"DAP blanche application deadline (2027 entry)","due_at":"2026-12-15","route":"DAP blanche","source_url":"https://etudier.univ-grenoble-alpes.fr/en/apply-and-register/application/all-procedures/apply-with-a-preliminary-admission-application-from-dap-blanche/"}],"sat":null,"acceptance_rate":null,"notes":"DAP L1 is a French-language route; the French proficiency test is required except for listed exemptions."},{"id":"c0bfd9bb-3a59-5d48-8a4f-a455af468632","english":[],"tuition":{"amount":1050,"amount_max":1800,"currency":"EUR","period":"semester","academic_year":"Current; page updated 2026-11-02","detail":"Per semester for non-Afghan international students without Iranian residence permits; varies by field and country.","source_url":"https://admissions.ut.ac.ir/en/page/7396/tuition-fee-for-international-students"},"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"Courses are taught in Persian; applicants without proficiency may need Persian language study."}] }

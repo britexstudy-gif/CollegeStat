@@ -1,0 +1,78 @@
+OpenAI Codex v0.169.0
+--------
+workdir: /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+model: gpt-6-luna
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: high
+reasoning summaries: none
+session id: 01a1ee87-5580-7312-9d9b-5c0ac0db39b3
+--------
+user
+You are a careful admissions-data researcher. For each university below, find facts for an
+INTERNATIONAL applicant to a FIRST-YEAR BACHELOR'S degree starting in autumn 2027 (or the nearest
+published cycle). Use the live web. Rules:
+
+- Official sources only: the university's own website (its domain or subdomains), the national
+  application service (UCAS, Common App, OUAC, uni-assist, Studyinkorea, etc.) or a government
+  statistics office. Never use rankings sites, forums, agencies, Wikipedia or blogs.
+- Every value needs the exact page URL where you read it (source_url). If you could not verify a
+  value on an official page, leave it out (null or an empty list). Never guess or estimate.
+- english: the lowest overall score accepted for undergraduate entry, per test (IELTS Academic
+  overall, TOEFL iBT total, Duolingo, PTE). If programmes differ, give the general/lowest common
+  university minimum and say so in detail (e.g. "6.5 overall, no band below 6.0; some
+  programmes higher").
+- tuition: the yearly tuition for international (non-EU / overseas) undergraduates in the local
+  currency. If it varies by programme give amount = lowest and amount_max = highest, and the
+  academic_year the fee applies to (e.g. "2026/27"). If tuition is free, amount = 0.
+- application_fee: for international first-year applicants, local currency.
+- deadlines: the main 2027-entry first-year deadlines (ISO date YYYY-MM-DD) with the route
+  (e.g. "Common App, Regular Decision", "UCAS", "university portal"). Only dates actually
+  published; if only the 2026-entry date is published, include it and put "2026 entry" in title.
+- sat: policy for international applicants; p25/p75 total SAT only if the university publishes
+  them (Common Data Set or admissions profile).
+- acceptance_rate: only if officially published (CDS, admissions statistics page).
+- notes: one short line on anything important (e.g. "Foundation year required for 11-year
+  school certificates"), else "".
+
+Spend effort on the facts students need most: English minimum, tuition, deadlines. Keep each
+detail under 160 characters. Return only the JSON that matches the schema; use each
+university's id exactly as given.
+
+Universities:
+- id: d06467f5-b2a0-5604-9251-677d567e2661 | Indian Institute of Science Bangalore | Bengaluru, IN | https://www.iisc.ac.in/
+- id: 950f15f4-f20d-5931-8a5c-025e070ede38 | University of Ottawa | Ottawa, CA | http://www.uottawa.ca/
+- id: 1fbbb9a8-792c-55dd-928d-89643917b70f | University College Cork | Cork, IE | http://www.ucc.ie/
+- id: fa22ef60-0123-584c-b367-cc48cff224d1 | Indian Institute of Technology, Kanpur | Kanpur, IN | http://www.iitk.ac.in/
+codex
+I’ll check the universities’ official admissions and fee pages, prioritizing the nearest published cycle where 2027 details are not yet available. I’ll return only verified values with direct source URLs.
+web search: 
+web search: site:iisc.ac.in undergraduate international admissions 2027 English proficiency tuition BSc IISc ...
+web search: 
+web search: site:uottawa.ca "English-language proficiency" undergraduate IELTS TOEFL Duolingo ...
+web search: 
+web search: site:iisc.ac.in "foreign nationals" "Bachelor of Science (Research)" SAT ACT admission 2026 ...
+web search: 
+web search: site:ucc.ie/en/international/noneu-ug/english "IELTS" undergraduate 6.5 ...
+web search: 
+web search: 
+web search: 
+web search: site:ucc.ie/en/international/studyatucc/undergraduateprogrammes application fee 2026 ...
+web search: 
+web search: 'IELTS'
+web search: 
+web search: site:bs-ug.iisc.ac.in international students tuition fees INR 2026 IISc BSc Research foreign nationals ...
+web search: 
+web search: 
+web search: 
+web search: 
+web search: 
+web search: 
+web search: 
+web search: site:uottawa.ca/study/undergraduate-studies/language-requirements IELTS "6.5" "writing" direct entry ...
+codex
+{"universities":[{"id":"d06467f5-b2a0-5604-9251-677d567e2661","english":[],"tuition":{"amount":80000,"amount_max":null,"currency":"INR","period":"year","academic_year":"2026/27","detail":"Annual tuition for the BSc (Research); published fee schedule does not separate international rates.","source_url":"https://bs-ug.iisc.ac.in/admissions/fee-structure"},"application_fee":{"amount":0,"currency":"INR","source_url":"https://oir.iisc.ac.in/index.php/bachelor-of-science-research-program-2026-2027/"},"deadlines":[{"title":"2026 entry application deadline","due_at":"2026-06-07","route":"IISc admissions portal","source_url":"https://bs-ug.iisc.ac.in/admissions/news-and-updates"}],"sat":{"policy":"accepted_alternative","p25":null,"p75":null,"source_url":"https://oir.iisc.ac.in/index.php/bachelor-of-science-research-program-2026-2027/"},"acceptance_rate":null,"notes":"Foreign applicants need 10+2-equivalent Physics, Chemistry and Mathematics; SAT/ACT route includes an interview."},{"id":"950f15f4-f20d-5931-8a5c-025e070ede38","english":[{"test":"IELTS","minimum":6.5,"detail":"6.5 overall and 6.5 writing for direct entry.","source_url":"https://www.uottawa.ca/study/undergraduate-studies/language-requirements"},{"test":"TOEFL iBT","minimum":86,"detail":"86 total, writing 22 for tests before Jan 21, 2026; new scale requires 4.5 overall and writing.","source_url":"https://www.uottawa.ca/study/undergraduate-studies/language-requirements"},{"test":"Duolingo","minimum":120,"detail":"120 overall and 120 literacy for direct entry.","source_url":"https://www.uottawa.ca/study/undergraduate-studies/language-requirements"},{"test":"PTE Academic","minimum":60,"detail":"60 overall and 60 writing for direct entry.","source_url":"https://www.uottawa.ca/study/undergraduate-studies/language-requirements"},{"test":"Cambridge C1/C2","minimum":176,"detail":"176 overall; no writing threshold listed.","source_url":"https://www.uottawa.ca/study/undergraduate-studies/language-requirements"}],"tuition":{"amount":63164.3,"amount_max":null,"currency":"CAD","period":"year","academic_year":"2026/27","detail":"Published example for a full-time first-year international undergraduate: $31,582.15 tuition per term for two terms; program fees vary.","source_url":"https://www.uottawa.ca/study/fees-financial-support/university-fees/estimating-total-university-fees"},"application_fee":{"amount":156,"currency":"CAD","source_url":"https://www.uottawa.ca/study/fees-financial-support/university-fees/administrative-fees"},"deadlines":[{"title":"Recommended application date (Fall 2027)","due_at":"2027-01-15","route":"OUAC","source_url":"https://www.uottawa.ca/study/undergraduate-studies/application-deadlines"}],"sat":null,"acceptance_rate":null,"notes":"Deadlines vary by program and applicant category; most international programs close in May."},{"id":"1fbbb9a8-792c-55dd-928d-89643917b70f","english":[{"test":"IELTS","minimum":6.5,"detail":"6.5 overall, minimum 6.0 in each band; some programmes require higher scores.","source_url":"https://www.ucc.ie/en/study/comparison/english/undergraduate/"},{"test":"TOEFL iBT","minimum":4.5,"detail":"For tests from Jan 21, 2026: 4.5 overall and each section; older tests require 90 overall, min 20 each section.","source_url":"https://www.ucc.ie/en/study/comparison/english/undergraduate/"},{"test":"Duolingo","minimum":120,"detail":"120 overall, minimum 110 in each section; some programmes require higher scores.","source_url":"https://www.ucc.ie/en/study/comparison/english/undergraduate/"},{"test":"PTE Academic","minimum":63,"detail":"63 overall, minimum 59 in each communicative skill; some programmes require higher scores.","source_url":"https://www.ucc.ie/en/study/comparison/english/undergraduate/"},{"test":"Cambridge C1/C2","minimum":176,"detail":"176+ overall, minimum 169 per skill for most colleges; some programmes require higher scores.","source_url":"https://www.ucc.ie/en/study/comparison/english/undergraduate/"}],"tuition":{"amount":19514,"amount_max":55214,"currency":"EUR","period":"year","academic_year":"2027/28","detail":"Total annual Non-EU fees including capitation; range for first-year undergraduate degrees, varies by programme.","source_url":"https://www.ucc.ie/en/financeoffice/fees/schedules/internationalundergraduatefees202728/"},"application_fee":{"amount":50,"currency":"EUR","source_url":"https://www.ucc.ie/en/international/studyatucc/undergraduateprogrammes/"},"deadlines":[{"title":"Non-EU undergraduate application deadline (2027 entry)","due_at":"2027-05-31","route":"UCCApply","source_url":"https://www.ucc.ie/en/international/studyatucc/undergraduateprogrammes/"},{"title":"Applied Psychology deadline (2027 entry)","due_at":"2027-03-20","route":"UCCApply","source_url":"https://www.ucc.ie/en/international/studyatucc/undergraduateprogrammes/"},{"title":"Pharmacy deadline (2027 entry)","due_at":"2027-03-01","route":"UCCApply","source_url":"https://www.ucc.ie/en/international/studyatucc/undergraduateprogrammes/"}],"sat":null,"acceptance_rate":null,"notes":"Medicine and Dentistry applications go through designated agents; some competitive programmes may close earlier when full."},{"id":"fa22ef60-0123-584c-b367-cc48cff224d1","english":[],"tuition":null,"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"IIT Kanpur's current foreign-national admissions page covers postgraduate programmes; I could not verify an international first-year undergraduate route or fees."}]}
+tokens used
+93,652
+{"universities":[{"id":"d06467f5-b2a0-5604-9251-677d567e2661","english":[],"tuition":{"amount":80000,"amount_max":null,"currency":"INR","period":"year","academic_year":"2026/27","detail":"Annual tuition for the BSc (Research); published fee schedule does not separate international rates.","source_url":"https://bs-ug.iisc.ac.in/admissions/fee-structure"},"application_fee":{"amount":0,"currency":"INR","source_url":"https://oir.iisc.ac.in/index.php/bachelor-of-science-research-program-2026-2027/"},"deadlines":[{"title":"2026 entry application deadline","due_at":"2026-06-07","route":"IISc admissions portal","source_url":"https://bs-ug.iisc.ac.in/admissions/news-and-updates"}],"sat":{"policy":"accepted_alternative","p25":null,"p75":null,"source_url":"https://oir.iisc.ac.in/index.php/bachelor-of-science-research-program-2026-2027/"},"acceptance_rate":null,"notes":"Foreign applicants need 10+2-equivalent Physics, Chemistry and Mathematics; SAT/ACT route includes an interview."},{"id":"950f15f4-f20d-5931-8a5c-025e070ede38","english":[{"test":"IELTS","minimum":6.5,"detail":"6.5 overall and 6.5 writing for direct entry.","source_url":"https://www.uottawa.ca/study/undergraduate-studies/language-requirements"},{"test":"TOEFL iBT","minimum":86,"detail":"86 total, writing 22 for tests before Jan 21, 2026; new scale requires 4.5 overall and writing.","source_url":"https://www.uottawa.ca/study/undergraduate-studies/language-requirements"},{"test":"Duolingo","minimum":120,"detail":"120 overall and 120 literacy for direct entry.","source_url":"https://www.uottawa.ca/study/undergraduate-studies/language-requirements"},{"test":"PTE Academic","minimum":60,"detail":"60 overall and 60 writing for direct entry.","source_url":"https://www.uottawa.ca/study/undergraduate-studies/language-requirements"},{"test":"Cambridge C1/C2","minimum":176,"detail":"176 overall; no writing threshold listed.","source_url":"https://www.uottawa.ca/study/undergraduate-studies/language-requirements"}],"tuition":{"amount":63164.3,"amount_max":null,"currency":"CAD","period":"year","academic_year":"2026/27","detail":"Published example for a full-time first-year international undergraduate: $31,582.15 tuition per term for two terms; program fees vary.","source_url":"https://www.uottawa.ca/study/fees-financial-support/university-fees/estimating-total-university-fees"},"application_fee":{"amount":156,"currency":"CAD","source_url":"https://www.uottawa.ca/study/fees-financial-support/university-fees/administrative-fees"},"deadlines":[{"title":"Recommended application date (Fall 2027)","due_at":"2027-01-15","route":"OUAC","source_url":"https://www.uottawa.ca/study/undergraduate-studies/application-deadlines"}],"sat":null,"acceptance_rate":null,"notes":"Deadlines vary by program and applicant category; most international programs close in May."},{"id":"1fbbb9a8-792c-55dd-928d-89643917b70f","english":[{"test":"IELTS","minimum":6.5,"detail":"6.5 overall, minimum 6.0 in each band; some programmes require higher scores.","source_url":"https://www.ucc.ie/en/study/comparison/english/undergraduate/"},{"test":"TOEFL iBT","minimum":4.5,"detail":"For tests from Jan 21, 2026: 4.5 overall and each section; older tests require 90 overall, min 20 each section.","source_url":"https://www.ucc.ie/en/study/comparison/english/undergraduate/"},{"test":"Duolingo","minimum":120,"detail":"120 overall, minimum 110 in each section; some programmes require higher scores.","source_url":"https://www.ucc.ie/en/study/comparison/english/undergraduate/"},{"test":"PTE Academic","minimum":63,"detail":"63 overall, minimum 59 in each communicative skill; some programmes require higher scores.","source_url":"https://www.ucc.ie/en/study/comparison/english/undergraduate/"},{"test":"Cambridge C1/C2","minimum":176,"detail":"176+ overall, minimum 169 per skill for most colleges; some programmes require higher scores.","source_url":"https://www.ucc.ie/en/study/comparison/english/undergraduate/"}],"tuition":{"amount":19514,"amount_max":55214,"currency":"EUR","period":"year","academic_year":"2027/28","detail":"Total annual Non-EU fees including capitation; range for first-year undergraduate degrees, varies by programme.","source_url":"https://www.ucc.ie/en/financeoffice/fees/schedules/internationalundergraduatefees202728/"},"application_fee":{"amount":50,"currency":"EUR","source_url":"https://www.ucc.ie/en/international/studyatucc/undergraduateprogrammes/"},"deadlines":[{"title":"Non-EU undergraduate application deadline (2027 entry)","due_at":"2027-05-31","route":"UCCApply","source_url":"https://www.ucc.ie/en/international/studyatucc/undergraduateprogrammes/"},{"title":"Applied Psychology deadline (2027 entry)","due_at":"2027-03-20","route":"UCCApply","source_url":"https://www.ucc.ie/en/international/studyatucc/undergraduateprogrammes/"},{"title":"Pharmacy deadline (2027 entry)","due_at":"2027-03-01","route":"UCCApply","source_url":"https://www.ucc.ie/en/international/studyatucc/undergraduateprogrammes/"}],"sat":null,"acceptance_rate":null,"notes":"Medicine and Dentistry applications go through designated agents; some competitive programmes may close earlier when full."},{"id":"fa22ef60-0123-584c-b367-cc48cff224d1","english":[],"tuition":null,"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"IIT Kanpur's current foreign-national admissions page covers postgraduate programmes; I could not verify an international first-year undergraduate route or fees."}]}

@@ -1,0 +1,68 @@
+OpenAI Codex v0.169.0
+--------
+workdir: /private/tmp/claude-501/-Users-likeanew-Documents-CollegeStat/9441e680-0d40-4c1b-955e-c39e4b6d14aa/scratchpad/codex-work
+model: gpt-6-luna
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: high
+reasoning summaries: none
+session id: 01a1ee88-4258-7260-97cc-3a3d7a9eb54a
+--------
+user
+You are a careful admissions-data researcher. For each university below, find facts for an
+INTERNATIONAL applicant to a FIRST-YEAR BACHELOR'S degree starting in autumn 2027 (or the nearest
+published cycle). Use the live web. Rules:
+
+- Official sources only: the university's own website (its domain or subdomains), the national
+  application service (UCAS, Common App, OUAC, uni-assist, Studyinkorea, etc.) or a government
+  statistics office. Never use rankings sites, forums, agencies, Wikipedia or blogs.
+- Every value needs the exact page URL where you read it (source_url). If you could not verify a
+  value on an official page, leave it out (null or an empty list). Never guess or estimate.
+- english: the lowest overall score accepted for undergraduate entry, per test (IELTS Academic
+  overall, TOEFL iBT total, Duolingo, PTE). If programmes differ, give the general/lowest common
+  university minimum and say so in detail (e.g. "6.5 overall, no band below 6.0; some
+  programmes higher").
+- tuition: the yearly tuition for international (non-EU / overseas) undergraduates in the local
+  currency. If it varies by programme give amount = lowest and amount_max = highest, and the
+  academic_year the fee applies to (e.g. "2026/27"). If tuition is free, amount = 0.
+- application_fee: for international first-year applicants, local currency.
+- deadlines: the main 2027-entry first-year deadlines (ISO date YYYY-MM-DD) with the route
+  (e.g. "Common App, Regular Decision", "UCAS", "university portal"). Only dates actually
+  published; if only the 2026-entry date is published, include it and put "2026 entry" in title.
+- sat: policy for international applicants; p25/p75 total SAT only if the university publishes
+  them (Common Data Set or admissions profile).
+- acceptance_rate: only if officially published (CDS, admissions statistics page).
+- notes: one short line on anything important (e.g. "Foundation year required for 11-year
+  school certificates"), else "".
+
+Spend effort on the facts students need most: English minimum, tuition, deadlines. Keep each
+detail under 160 characters. Return only the JSON that matches the schema; use each
+university's id exactly as given.
+
+Universities:
+- id: 70e1a87c-2f12-5f1d-bb22-0fd12687ea0d | Universidade Estadual de Campinas | Campinas, BR | http://www.unicamp.br/
+- id: a7b217c5-bb66-5ad7-8c78-da5f37cbdfe6 | Universidad de Los Andes | Bogotá, CO | http://www.uniandes.edu.co/
+- id: c7885845-c6f9-52dc-afb5-9fb93ba18f70 | Tianjin University | Tianjin, CN | http://www.tju.edu.cn/
+- id: a0d2f406-7c53-5645-921f-ecb098e0a9be | University of Rochester | Rochester, US | http://www.rochester.edu/
+codex
+I’ll check each university’s official admissions and tuition pages first, then return only the requested JSON. For unpublished 2027 details, I’ll use a clearly labeled 2026 cycle only where an official page gives a date.
+web search: 
+web search: site:unicamp.br ingresso estudante internacional graduação 2027 língua inglesa tuition ...
+web search: 
+web search: site:admissions.rochester.edu first-year deadlines 2027 application fee international English proficiency IELTS Rochester ...
+web search: 
+web search: site:admissions.rochester.edu/applying/international-students English scores IELTS Duolingo minimum Rochester ...
+web search: 
+web search: site:admissions.rochester.edu "application fee" "first-year" $ Rochester ...
+web search: 
+web search: 
+web search: 
+web search: "2027 TJU Bachelor Program" tuition RMB application fee ...
+web search: 
+web search: site:comvest.unicamp.br vestibular 2027 calendário inscrições taxa 2026 ...
+codex
+{"universities":[{"id":"70e1a87c-2f12-5f1d-bb22-0fd12687ea0d","english":[],"tuition":{"amount":0,"amount_max":null,"currency":"BRL","period":"year","academic_year":"2027","detail":"Undergraduate courses are tuition-free.","source_url":"https://www.internationaloffice.unicamp.br/en/estrangeiros/estudantes-estrangeiros/formas-de-ingresso/"},"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"The national entrance exam is in Portuguese; foreign applicants may apply through PEC-G if eligible."},{"id":"a7b217c5-bb66-5ad7-8c78-da5f37cbdfe6","english":[],"tuition":{"amount":53720000,"amount_max":76440000,"currency":"COP","period":"year","academic_year":"2026","detail":"Annualized from 2026 semester rates: COP 26,860,000 for most programs; COP 38,220,000 for Medicine.","source_url":"https://matriculas.uniandes.edu.co/pregrado/valores-pregrado"},"application_fee":null,"deadlines":[{"title":"2027-1 January entry, final application deadline","due_at":"2026-12-07","route":"Uniandes undergraduate admissions portal","source_url":"https://registroapps.uniandes.edu.co/SisAdmisiones/Pregrado/"}],"sat":null,"acceptance_rate":null,"notes":"Applicants with foreign secondary credentials need a recognized international exam or ICFES-equivalent test and must validate their diploma."},{"id":"c7885845-c6f9-52dc-afb5-9fb93ba18f70","english":[{"test":"IELTS","minimum":6,"detail":"6 overall for English-taught programs; only 3 undergraduate programs are taught in English for 2027-28.","source_url":"https://en.tju.edu.cn/info/1017/11196.htm"},{"test":"TOEFL iBT","minimum":80,"detail":"80 total for English-taught programs; only 3 undergraduate programs are taught in English for 2027-28.","source_url":"https://en.tju.edu.cn/info/1017/11196.htm"}],"tuition":{"amount":20000,"amount_max":130000,"currency":"CNY","period":"year","academic_year":"2027-2028","detail":"General programs CNY 20,000; other programs CNY 26,000; specified partner institutes CNY 100,000–130,000/year.","source_url":"https://sie.tju.edu.cn/en/xwxm/UNDERGRADUATE/202609/t20260930_324729.html"},"application_fee":{"amount":500,"currency":"CNY","source_url":"https://sie.tju.edu.cn/en/xwxm/UNDERGRADUATE/202609/t20260930_324729.html"},"deadlines":[{"title":"2027 undergraduate entry","due_at":"2027-05-31","route":"Tianjin University international student application system","source_url":"https://en.tju.edu.cn/info/1017/11196.htm"}],"sat":null,"acceptance_rate":null,"notes":"Most undergraduate programs are taught in Chinese and require HSK 5 or above."},{"id":"a0d2f406-7c53-5645-921f-ecb098e0a9be","english":[],"tuition":{"amount":71750,"amount_max":71750,"currency":"USD","period":"year","academic_year":"2026-2027","detail":"Published undergraduate tuition is USD 71,750/year across the listed schools.","source_url":"https://adminfinance.rochester.edu/resources/2026-2027-tuition-and-fees-for-undergraduates/"},"application_fee":{"amount":50,"currency":"USD","source_url":"https://admissions.rochester.edu/applying/first-year-students/"},"deadlines":[{"title":"Early Decision I, 2027 entry","due_at":"2026-11-01","route":"Common App or Coalition for College Application","source_url":"https://admissions.rochester.edu/applying/dates-and-deadlines/"},{"title":"Priority scholarship, 2027 entry","due_at":"2026-12-01","route":"Common App or Coalition for College Application","source_url":"https://admissions.rochester.edu/applying/dates-and-deadlines/"},{"title":"Early Decision II, 2027 entry","due_at":"2027-01-05","route":"Common App or Coalition for College Application","source_url":"https://admissions.rochester.edu/applying/dates-and-deadlines/"},{"title":"Regular Decision, 2027 entry","due_at":"2027-01-05","route":"Common App or Coalition for College Application","source_url":"https://admissions.rochester.edu/applying/dates-and-deadlines/"}],"sat":{"policy":"optional","p25":1400,"p75":1510,"source_url":"https://www.rochester.edu/provost/wp-content/uploads/2026/06/CDS-2025-26-completed-for-web.pdf"},"acceptance_rate":null,"notes":"English test scores are recommended rather than a published minimum; international applicants may request a proficiency waiver."}] }
+tokens used
+64,522
+{"universities":[{"id":"70e1a87c-2f12-5f1d-bb22-0fd12687ea0d","english":[],"tuition":{"amount":0,"amount_max":null,"currency":"BRL","period":"year","academic_year":"2027","detail":"Undergraduate courses are tuition-free.","source_url":"https://www.internationaloffice.unicamp.br/en/estrangeiros/estudantes-estrangeiros/formas-de-ingresso/"},"application_fee":null,"deadlines":[],"sat":null,"acceptance_rate":null,"notes":"The national entrance exam is in Portuguese; foreign applicants may apply through PEC-G if eligible."},{"id":"a7b217c5-bb66-5ad7-8c78-da5f37cbdfe6","english":[],"tuition":{"amount":53720000,"amount_max":76440000,"currency":"COP","period":"year","academic_year":"2026","detail":"Annualized from 2026 semester rates: COP 26,860,000 for most programs; COP 38,220,000 for Medicine.","source_url":"https://matriculas.uniandes.edu.co/pregrado/valores-pregrado"},"application_fee":null,"deadlines":[{"title":"2027-1 January entry, final application deadline","due_at":"2026-12-07","route":"Uniandes undergraduate admissions portal","source_url":"https://registroapps.uniandes.edu.co/SisAdmisiones/Pregrado/"}],"sat":null,"acceptance_rate":null,"notes":"Applicants with foreign secondary credentials need a recognized international exam or ICFES-equivalent test and must validate their diploma."},{"id":"c7885845-c6f9-52dc-afb5-9fb93ba18f70","english":[{"test":"IELTS","minimum":6,"detail":"6 overall for English-taught programs; only 3 undergraduate programs are taught in English for 2027-28.","source_url":"https://en.tju.edu.cn/info/1017/11196.htm"},{"test":"TOEFL iBT","minimum":80,"detail":"80 total for English-taught programs; only 3 undergraduate programs are taught in English for 2027-28.","source_url":"https://en.tju.edu.cn/info/1017/11196.htm"}],"tuition":{"amount":20000,"amount_max":130000,"currency":"CNY","period":"year","academic_year":"2027-2028","detail":"General programs CNY 20,000; other programs CNY 26,000; specified partner institutes CNY 100,000–130,000/year.","source_url":"https://sie.tju.edu.cn/en/xwxm/UNDERGRADUATE/202609/t20260930_324729.html"},"application_fee":{"amount":500,"currency":"CNY","source_url":"https://sie.tju.edu.cn/en/xwxm/UNDERGRADUATE/202609/t20260930_324729.html"},"deadlines":[{"title":"2027 undergraduate entry","due_at":"2027-05-31","route":"Tianjin University international student application system","source_url":"https://en.tju.edu.cn/info/1017/11196.htm"}],"sat":null,"acceptance_rate":null,"notes":"Most undergraduate programs are taught in Chinese and require HSK 5 or above."},{"id":"a0d2f406-7c53-5645-921f-ecb098e0a9be","english":[],"tuition":{"amount":71750,"amount_max":71750,"currency":"USD","period":"year","academic_year":"2026-2027","detail":"Published undergraduate tuition is USD 71,750/year across the listed schools.","source_url":"https://adminfinance.rochester.edu/resources/2026-2027-tuition-and-fees-for-undergraduates/"},"application_fee":{"amount":50,"currency":"USD","source_url":"https://admissions.rochester.edu/applying/first-year-students/"},"deadlines":[{"title":"Early Decision I, 2027 entry","due_at":"2026-11-01","route":"Common App or Coalition for College Application","source_url":"https://admissions.rochester.edu/applying/dates-and-deadlines/"},{"title":"Priority scholarship, 2027 entry","due_at":"2026-12-01","route":"Common App or Coalition for College Application","source_url":"https://admissions.rochester.edu/applying/dates-and-deadlines/"},{"title":"Early Decision II, 2027 entry","due_at":"2027-01-05","route":"Common App or Coalition for College Application","source_url":"https://admissions.rochester.edu/applying/dates-and-deadlines/"},{"title":"Regular Decision, 2027 entry","due_at":"2027-01-05","route":"Common App or Coalition for College Application","source_url":"https://admissions.rochester.edu/applying/dates-and-deadlines/"}],"sat":{"policy":"optional","p25":1400,"p75":1510,"source_url":"https://www.rochester.edu/provost/wp-content/uploads/2026/06/CDS-2025-26-completed-for-web.pdf"},"acceptance_rate":null,"notes":"English test scores are recommended rather than a published minimum; international applicants may request a proficiency waiver."}] }

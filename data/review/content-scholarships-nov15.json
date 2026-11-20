@@ -1,0 +1,2819 @@
+{
+ "schemaVersion": 1,
+ "checked_at": "2026-11-16",
+ "purpose": "Overlay for scholarship pages: duplicate aliases, hidden records, catalogue-verified university links, licensed hero images and hand-checked facts from official sources.",
+ "aliases": {
+  "turkiye-burslari": "turkiye-burslari-bachelor",
+  "stipendium-hungaricum": "stipendium-hungaricum-bachelor",
+  "mext-undergraduate-students-scholarship": "mext-undergrad-2027",
+  "gks-u-2027-embassy": "global-korea-scholarship-undergraduate",
+  "mit-need-based-financial-aid": "mit-international-aid",
+  "harvard-college-need-based-financial-aid": "harvard-international-aid",
+  "yale-need-based-financial-aid": "yale-international-aid",
+  "princeton-need-based-financial-aid": "princeton-international-aid",
+  "dartmouth-need-based-aid-international": "dartmouth-international-aid",
+  "eth-zurich-excellence-scholarship-esop": "eth-esop",
+  "ntu-nanyang-global-scholarship": "ntu-nanyang-global",
+  "kaist-international-undergraduate-scholarship": "kaist-undergrad-scholarship",
+  "ubc-international-major-entrance-scholarship": "ubc-imes-2027",
+  "reach-oxford-scholarship": "reach-oxford",
+  "reach-oxford-2027": "reach-oxford",
+  "lester-b-pearson-international-scholarship": "pearson",
+  "toronto-pearson-2027": "pearson",
+  "ubc-international-scholars-program": "ubc-international-scholars",
+  "knight-hennessy-scholars": "knight-hennessy",
+  "nus-international-undergraduate": "nus-international",
+  "padua-international-excellence-scholarship": "padua-international-excellence-2027"
+ },
+ "hidden": [
+  "australia-awards-scholarships-africa",
+  "australia-awards-scholarships-indonesia",
+  "hku-hon-ping-entrance-scholarship-nigeria",
+  "mastercard-foundation-scholars-program",
+  "mastercard-foundation-scholars-edinburgh",
+  "mastercard-foundation-scholars-mcgill",
+  "kcl-said-foundation-scholarships",
+  "nottingham-developing-solutions-masters-scholarship",
+  "uppsala-anders-wall-scholarship",
+  "snu-korean-war-memorial",
+  "ntu-asean-ug",
+  "nus-asean-undergraduate",
+  "nus-goh-keng-swee",
+  "groningen-eric-bleumink-fund"
+ ],
+ "records": {
+  "harvard-international-aid": {
+   "universities": [
+    {
+     "slug": "harvard-university-39230496",
+     "name": "Harvard University"
+    }
+   ],
+   "image": {
+    "src": "/images/scholarships/harvard-sanders.webp",
+    "alt": "Sanders Theatre Harvard University",
+    "credit": "chensiyuan",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Sanders_theater_2009y.JPG"
+   }
+  },
+  "princeton-international-aid": {
+   "universities": [
+    {
+     "slug": "princeton-university-6f13f9e9",
+     "name": "Princeton University"
+    }
+   ],
+   "image": {
+    "src": "/images/scholarships/princeton-international-aid.webp",
+    "alt": "Nassau Hall Princeton",
+    "credit": "Smallbones",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Nassau_Hall_Princeton.JPG"
+   }
+  },
+  "yale-international-aid": {
+   "universities": [
+    {
+     "slug": "yale-university-0a670c6d",
+     "name": "Yale University"
+    }
+   ],
+   "image": {
+    "src": "/images/scholarships/yale-international-aid.webp",
+    "alt": "Yale-Old-Campus-Courtyard-Harkness-Tower",
+    "credit": "Gunnar Klack",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:2014-04-17-Yale-Old-Campus-Courtyard-Harkness-Tower.jpg"
+   }
+  },
+  "mit-international-aid": {
+   "universities": [
+    {
+     "slug": "mit",
+     "name": "Massachusetts Institute of Technology"
+    }
+   ],
+   "image": {
+    "src": "/images/scholarships/mit-international-aid.webp",
+    "alt": "Great dome of MIT, Feb 2021",
+    "credit": "Peacearth",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Great_dome_of_MIT,_Feb_2021.jpg"
+   }
+  },
+  "stanford-international-aid": {
+   "universities": [
+    {
+     "slug": "stanford",
+     "name": "Stanford University"
+    }
+   ],
+   "image": {
+    "src": "/images/scholarships/stanford-international-aid.webp",
+    "alt": "Stanford University from Hoover Tower May 2011 001",
+    "credit": "King of Hearts",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Stanford_University_from_Hoover_Tower_May_2011_001.jpg"
+   }
+  },
+  "reach-oxford": {
+   "universities": [
+    {
+     "slug": "oxford",
+     "name": "University of Oxford"
+    }
+   ],
+   "image": {
+    "src": "/images/scholarships/reach-oxford.webp",
+    "alt": "Radcliffe Camera Oxford 2018 03",
+    "credit": "Julian Herzog (Website)",
+    "licence": "CC BY 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by/4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Radcliffe_Camera_Oxford_2018_03.jpg"
+   }
+  },
+  "hill-foundation-oxford-2027": {
+   "universities": [
+    {
+     "slug": "oxford",
+     "name": "University of Oxford"
+    }
+   ]
+  },
+  "ocis-oxford-2027": {
+   "universities": [
+    {
+     "slug": "oxford",
+     "name": "University of Oxford"
+    }
+   ]
+  },
+  "simon-june-li-oxford-2027": {
+   "universities": [
+    {
+     "slug": "oxford",
+     "name": "University of Oxford"
+    }
+   ]
+  },
+  "cambridge-global-impact-ug": {
+   "universities": [
+    {
+     "slug": "university-of-cambridge-ae117645",
+     "name": "University of Cambridge"
+    }
+   ],
+   "image": {
+    "src": "/images/scholarships/cambridge-st-johns.webp",
+    "alt": "The tower of the Second Court, leading towards the Third Court of St John's College, Cambridge, England. Statue of Mary Talbot, Countess of Shrewsbury (1556–1632) the wife of Gilbert Talbot, 7th Earl of Shrewsbury. A white marble copy of this statue ",
+    "credit": "Diliff",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:St_John%27s_College_Second_Court,_Cambridge,_UK_-_Diliff.jpg"
+   }
+  },
+  "cambridge-trust-undergrad-pool": {
+   "universities": [
+    {
+     "slug": "university-of-cambridge-ae117645",
+     "name": "University of Cambridge"
+    }
+   ],
+   "image": {
+    "src": "/images/scholarships/cambridge-st-johns.webp",
+    "alt": "The tower of the Second Court, leading towards the Third Court of St John's College, Cambridge, England. Statue of Mary Talbot, Countess of Shrewsbury (1556–1632) the wife of Gilbert Talbot, 7th Earl of Shrewsbury. A white marble copy of this statue ",
+    "credit": "Diliff",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:St_John%27s_College_Second_Court,_Cambridge,_UK_-_Diliff.jpg"
+   }
+  },
+  "ucl-global-undergraduate": {
+   "universities": [
+    {
+     "slug": "university-college-london-4b7862dc",
+     "name": "University College London"
+    }
+   ]
+  },
+  "ubc-imes-2027": {
+   "universities": [
+    {
+     "slug": "university-of-british-columbia-276cad09",
+     "name": "University of British Columbia"
+    }
+   ],
+   "image": {
+    "src": "/images/scholarships/ubc-irving-k-barber.webp",
+    "alt": "The Irving K. Barber Learning Centre of the University of British Columbia.",
+    "credit": "CjayD",
+    "licence": "CC BY 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by/2.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Irving_K._Barber_Library.jpg"
+   }
+  },
+  "ubc-ois-2027": {
+   "universities": [
+    {
+     "slug": "university-of-british-columbia-276cad09",
+     "name": "University of British Columbia"
+    }
+   ],
+   "image": {
+    "src": "/images/scholarships/ubc-irving-k-barber.webp",
+    "alt": "The Irving K. Barber Learning Centre of the University of British Columbia.",
+    "credit": "CjayD",
+    "licence": "CC BY 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by/2.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Irving_K._Barber_Library.jpg"
+   }
+  },
+  "ubc-donald-wehrung": {
+   "universities": [
+    {
+     "slug": "university-of-british-columbia-276cad09",
+     "name": "University of British Columbia"
+    }
+   ],
+   "image": {
+    "src": "/images/scholarships/ubc-irving-k-barber.webp",
+    "alt": "The Irving K. Barber Learning Centre of the University of British Columbia.",
+    "credit": "CjayD",
+    "licence": "CC BY 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by/2.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Irving_K._Barber_Library.jpg"
+   }
+  },
+  "ubc-karen-mckellin": {
+   "universities": [
+    {
+     "slug": "university-of-british-columbia-276cad09",
+     "name": "University of British Columbia"
+    }
+   ],
+   "image": {
+    "src": "/images/scholarships/ubc-irving-k-barber.webp",
+    "alt": "The Irving K. Barber Learning Centre of the University of British Columbia.",
+    "credit": "CjayD",
+    "licence": "CC BY 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by/2.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Irving_K._Barber_Library.jpg"
+   }
+  },
+  "ubc-international-impact": {
+   "universities": [
+    {
+     "slug": "university-of-british-columbia-276cad09",
+     "name": "University of British Columbia"
+    }
+   ],
+   "image": {
+    "src": "/images/scholarships/ubc-irving-k-barber.webp",
+    "alt": "The Irving K. Barber Learning Centre of the University of British Columbia.",
+    "credit": "CjayD",
+    "licence": "CC BY 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by/2.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Irving_K._Barber_Library.jpg"
+   }
+  },
+  "ubc-vantage-one-excellence": {
+   "universities": [
+    {
+     "slug": "university-of-british-columbia-276cad09",
+     "name": "University of British Columbia"
+    }
+   ],
+   "image": {
+    "src": "/images/scholarships/ubc-irving-k-barber.webp",
+    "alt": "The Irving K. Barber Learning Centre of the University of British Columbia.",
+    "credit": "CjayD",
+    "licence": "CC BY 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by/2.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Irving_K._Barber_Library.jpg"
+   }
+  },
+  "pearson": {
+   "universities": [
+    {
+     "slug": "toronto",
+     "name": "University of Toronto"
+    }
+   ],
+   "image": {
+    "src": "/images/scholarships/uoft-convocation-hall.webp",
+    "alt": "Convocation Hall, Facing North",
+    "credit": "KTMAR",
+    "licence": "CC BY 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by/3.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Facing_North.jpg"
+   }
+  },
+  "korea-anam-global": {
+   "universities": [
+    {
+     "slug": "korea-university-6d72f6ce",
+     "name": "Korea University"
+    }
+   ],
+   "image": {
+    "src": "/images/scholarships/korea-challenge-c.webp",
+    "alt": "Korea University Anam Campus",
+    "credit": "Mannaa mohamed",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Korea_University_Anam_Campus.jpg"
+   }
+  },
+  "korea-global-leader-a": {
+   "universities": [
+    {
+     "slug": "korea-university-6d72f6ce",
+     "name": "Korea University"
+    }
+   ],
+   "image": {
+    "src": "/images/scholarships/korea-challenge-c.webp",
+    "alt": "Korea University Anam Campus",
+    "credit": "Mannaa mohamed",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Korea_University_Anam_Campus.jpg"
+   }
+  },
+  "korea-global-leader-b": {
+   "universities": [
+    {
+     "slug": "korea-university-6d72f6ce",
+     "name": "Korea University"
+    }
+   ],
+   "image": {
+    "src": "/images/scholarships/korea-ku-stem.webp",
+    "alt": "Aegineung Park in Science Campus of Korea University",
+    "credit": "Cho's",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Aegineung_Park_in_Science_Campus_of_Korea_University_-_panoramio.jpg"
+   }
+  },
+  "korea-ku-stem": {
+   "universities": [
+    {
+     "slug": "korea-university-6d72f6ce",
+     "name": "Korea University"
+    }
+   ],
+   "image": {
+    "src": "/images/scholarships/korea-ku-stem.webp",
+    "alt": "Aegineung Park in Science Campus of Korea University",
+    "credit": "Cho's",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Aegineung_Park_in_Science_Campus_of_Korea_University_-_panoramio.jpg"
+   }
+  },
+  "korea-bright-future": {
+   "universities": [
+    {
+     "slug": "korea-university-6d72f6ce",
+     "name": "Korea University"
+    }
+   ],
+   "image": {
+    "src": "/images/scholarships/korea-ku-stem.webp",
+    "alt": "Aegineung Park in Science Campus of Korea University",
+    "credit": "Cho's",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Aegineung_Park_in_Science_Campus_of_Korea_University_-_panoramio.jpg"
+   }
+  },
+  "korea-global-friends": {
+   "universities": [
+    {
+     "slug": "korea-university-6d72f6ce",
+     "name": "Korea University"
+    }
+   ]
+  },
+  "snu-glo-harmony": {
+   "universities": [
+    {
+     "slug": "seoul-national-university-6a9e2556",
+     "name": "Seoul National University"
+    }
+   ],
+   "image": {
+    "src": "/images/scholarships/snu-tuition-scholarship.webp",
+    "alt": "Library in Seoul National University School of Law",
+    "credit": "EllalineSeoul",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Library_in_Seoul_National_University_School_of_Law.jpg"
+   }
+  },
+  "snu-gks-self-financed": {
+   "universities": [
+    {
+     "slug": "seoul-national-university-6a9e2556",
+     "name": "Seoul National University"
+    }
+   ],
+   "image": {
+    "src": "/images/scholarships/snu-gks-self-financed.webp",
+    "alt": "Seoul National University Yeongeon Campus at Naksan Park view",
+    "credit": "U2em",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Seoul_National_University_Yeongeon_Campus_at_Naksan_Park_view.jpg"
+   }
+  },
+  "snu-korean-war-memorial": {
+   "universities": [
+    {
+     "slug": "seoul-national-university-6a9e2556",
+     "name": "Seoul National University"
+    }
+   ]
+  },
+  "postech-undergrad-tuition-waiver": {
+   "universities": [
+    {
+     "slug": "pohang-university-of-science-and-technology-bfa7cdcc",
+     "name": "Pohang University of Science and Technology"
+    }
+   ],
+   "image": {
+    "src": "/images/scholarships/postech-undergrad-tuition-waiver.webp",
+    "alt": "GIFT POSTECH New Building",
+    "credit": "Graduate Institute of Ferrous Technology",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:GIFT_POSTECH_New_Building.jpg"
+   }
+  },
+  "kaist-undergrad-scholarship": {
+   "universities": [
+    {
+     "slug": "korea-advanced-institute-of-science-technology-bb32340f",
+     "name": "Korea Advanced Institute of Science & Technology"
+    }
+   ],
+   "image": {
+    "src": "/images/scholarships/kaist-undergrad-scholarship.webp",
+    "alt": "IBS–KAIST Campus Building",
+    "credit": "Rickinasia",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:IBS%E2%80%93KAIST_Campus_Building.jpg"
+   }
+  },
+  "ntu-nanyang-global": {
+   "universities": [
+    {
+     "slug": "nanyang-technological-university-f5a6d73a",
+     "name": "Nanyang Technological University"
+    }
+   ],
+   "image": {
+    "src": "/images/scholarships/ntu-nanyang-global.webp",
+    "alt": "The Hive, NTU (I)",
+    "credit": "This Photo was taken by Supanut Arunoprayote. Feel free to use any of my images, but pleas",
+    "licence": "CC BY 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by/4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:The_Hive,_NTU_(I).jpg"
+   }
+  },
+  "ntu-merit": {
+   "universities": [
+    {
+     "slug": "nanyang-technological-university-f5a6d73a",
+     "name": "Nanyang Technological University"
+    }
+   ],
+   "image": {
+    "src": "/images/scholarships/ntu-merit.webp",
+    "alt": "Nanyang Business School Campus Building - 3",
+    "credit": "Belmond",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Nanyang_Business_School_Campus_Building_-_3.jpg"
+   }
+  },
+  "ntu-science-tech": {
+   "universities": [
+    {
+     "slug": "nanyang-technological-university-f5a6d73a",
+     "name": "Nanyang Technological University"
+    }
+   ]
+  },
+  "ntu-asean-ug": {
+   "universities": [
+    {
+     "slug": "nanyang-technological-university-f5a6d73a",
+     "name": "Nanyang Technological University"
+    }
+   ]
+  },
+  "nus-international": {
+   "universities": [
+    {
+     "slug": "national-university-of-singapore-c66c3755",
+     "name": "National University of Singapore"
+    }
+   ],
+   "image": {
+    "src": "/images/scholarships/nus-utown.webp",
+    "alt": "University Town Skyline from Northwest Kent Ridge Campus, National University of Singapore, February 2020",
+    "credit": "Joshua Rommel Hayag Vargas",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:University_Town_Skyline_from_Northwest_Kent_Ridge_Campus,_National_University_of_Singapore,_February_2020.jpg"
+   }
+  },
+  "nus-asean-undergraduate": {
+   "universities": [
+    {
+     "slug": "national-university-of-singapore-c66c3755",
+     "name": "National University of Singapore"
+    }
+   ],
+   "image": {
+    "src": "/images/scholarships/nus-utown.webp",
+    "alt": "University Town Skyline from Northwest Kent Ridge Campus, National University of Singapore, February 2020",
+    "credit": "Joshua Rommel Hayag Vargas",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:University_Town_Skyline_from_Northwest_Kent_Ridge_Campus,_National_University_of_Singapore,_February_2020.jpg"
+   }
+  },
+  "bristol-think-big-2027": {
+   "universities": [
+    {
+     "slug": "university-of-bristol-ad695799",
+     "name": "University of Bristol"
+    }
+   ],
+   "image": {
+    "src": "/images/scholarships/bristol-think-big-2027.webp",
+    "alt": "2013 Bark at Ee' Gromit Charity sculpture at The Wills Memorial Building in Bristol, England (November 14th 2026)",
+    "credit": "Vintage Fan 5678",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:2013_Bark_at_Ee%27_Gromit_Charity_sculpture_at_The_Wills_Memorial_Building_in_Bristol,_England_(November_14th_2026).jpg"
+   }
+  },
+  "padua-international-excellence-2027": {
+   "universities": [
+    {
+     "slug": "university-of-padua-82ab247b",
+     "name": "University of Padua"
+    }
+   ],
+   "image": {
+    "src": "/images/scholarships/padua-international-excellence-2027.webp",
+    "alt": "Padua, Palazzo del Bo, Cortile Antico",
+    "credit": "Armin Kleiner",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Padua,_Palazzo_del_Bo,_Cortile_Antico.jpg"
+   }
+  },
+  "padua-regional-dsu": {
+   "universities": [
+    {
+     "slug": "university-of-padua-82ab247b",
+     "name": "University of Padua"
+    }
+   ],
+   "image": {
+    "src": "/images/scholarships/padua-regional-dsu.webp",
+    "alt": "Palazzo Bo - Wikigita Padova 16 settembre 2022 f08",
+    "credit": "Marco Chemello (Wikimedia Italia)",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Palazzo_Bo_-_Wikigita_Padova_16_settembre_2022_f08.jpg"
+   }
+  },
+  "polimi-dsu-bachelor": {
+   "universities": [
+    {
+     "slug": "polytechnic-institute-of-milan-414b011a",
+     "name": "Polytechnic Institute of Milan"
+    }
+   ],
+   "image": {
+    "src": "/images/scholarships/polimi-dsu-bachelor.webp",
+    "alt": "MI-Milano-1963-piazza-Leonardo-da-Vinci",
+    "credit": "Albertomos",
+    "licence": "Public domain",
+    "licence_url": null,
+    "source_url": "https://commons.wikimedia.org/wiki/File:MI-Milano-1963-piazza-Leonardo-da-Vinci.jpg"
+   }
+  },
+  "sabanci-international-admission": {
+   "universities": [
+    {
+     "slug": "sabanci-university-b99788a4",
+     "name": "Sabanci University"
+    }
+   ],
+   "image": {
+    "src": "/images/scholarships/sabanci-international-admission.webp",
+    "alt": "Sabancı Üniversitesi Giriş",
+    "credit": "Kadı",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Sabanc%C4%B1_%C3%9Cniversitesi_Giri%C5%9F.jpg"
+   }
+  },
+  "metu-international-tuition-waiver": {
+   "universities": [
+    {
+     "slug": "middle-east-technical-university-be141d50",
+     "name": "Middle East Technical University"
+    }
+   ],
+   "image": {
+    "src": "/images/scholarships/metu-international-tuition-waiver.webp",
+    "alt": "ODTÜ Vişnelik-Ankara",
+    "credit": "bynyalcin",
+    "licence": "CC BY 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by/3.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:ODT%C3%9C_Vi%C5%9Fnelik-Ankara.jpg"
+   }
+  },
+  "bilkent-international-undergrad": {
+   "universities": [
+    {
+     "slug": "bilkent-university-6ba258c1",
+     "name": "Bilkent University"
+    }
+   ],
+   "image": {
+    "src": "/images/scholarships/bilkent-international-undergrad.webp",
+    "alt": "Bilkent-University",
+    "credit": "Bilkent University",
+    "licence": "CC BY 2.5",
+    "licence_url": "https://creativecommons.org/licenses/by/2.5",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Bilkent-University.jpg"
+   }
+  },
+  "pku-international-students-scholarship": {
+   "universities": [
+    {
+     "slug": "peking-university-79e1cf8b",
+     "name": "Peking University"
+    }
+   ],
+   "image": {
+    "src": "/images/scholarships/pku-international-students-scholarship.webp",
+    "alt": "West Gate of Peking University original",
+    "credit": "維基小霸王",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:West_Gate_of_Peking_University_original.JPG"
+   }
+  },
+  "pku-beijing-government-scholarship": {
+   "universities": [
+    {
+     "slug": "peking-university-79e1cf8b",
+     "name": "Peking University"
+    }
+   ],
+   "image": {
+    "src": "/images/scholarships/pku-beijing-government-scholarship.webp",
+    "alt": "Autumn in Peking University's Weiming Lake Island 002",
+    "credit": "星外之神",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Autumn_in_Peking_University%27s_Weiming_Lake_Island_002.jpg"
+   }
+  },
+  "pku-international-academic-award": {
+   "universities": [
+    {
+     "slug": "peking-university-79e1cf8b",
+     "name": "Peking University"
+    }
+   ],
+   "image": {
+    "src": "/images/scholarships/pku-international-academic-award.webp",
+    "alt": "South gate of Peking University Changping Campus",
+    "credit": "N509FZ",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:South_gate_of_Peking_University_Changping_Campus_(20210303165858).jpg"
+   }
+  },
+  "cuhk-admission-scholarships-nonlocal": {
+   "universities": [
+    {
+     "slug": "the-chinese-university-of-hong-kong-7deae08f",
+     "name": "The Chinese University of Hong Kong"
+    }
+   ],
+   "image": {
+    "src": "/images/scholarships/cuhk-admission-scholarships-nonlocal.webp",
+    "alt": "Chinese University of Hong Kong 香港中文大學",
+    "credit": "Citobun",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Chinese_University_of_Hong_Kong_%E9%A6%99%E6%B8%AF%E4%B8%AD%E6%96%87%E5%A4%A7%E5%AD%B8.JPG"
+   }
+  },
+  "cuhk-belt-road-kazakhstan": {
+   "universities": [
+    {
+     "slug": "the-chinese-university-of-hong-kong-7deae08f",
+     "name": "The Chinese University of Hong Kong"
+    }
+   ],
+   "image": {
+    "src": "/images/scholarships/cuhk-belt-road-kazakhstan.webp",
+    "alt": "CUHK University Mall 20221024",
+    "credit": "Will629",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:CUHK_University_Mall_20221024.jpg"
+   }
+  },
+  "cuhk-vice-chancellor-excellence": {
+   "universities": [
+    {
+     "slug": "the-chinese-university-of-hong-kong-7deae08f",
+     "name": "The Chinese University of Hong Kong"
+    }
+   ],
+   "image": {
+    "src": "/images/scholarships/cuhk-admission-scholarships-nonlocal.webp",
+    "alt": "Chinese University of Hong Kong 香港中文大學",
+    "credit": "Citobun",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Chinese_University_of_Hong_Kong_%E9%A6%99%E6%B8%AF%E4%B8%AD%E6%96%87%E5%A4%A7%E5%AD%B8.JPG"
+   }
+  },
+  "hku-entrance-scholarships-nonlocal": {
+   "universities": [
+    {
+     "slug": "the-university-of-hong-kong-b37d730b",
+     "name": "The University of Hong Kong"
+    }
+   ],
+   "image": {
+    "src": "/images/scholarships/hku-campus.webp",
+    "alt": "香港大學(梅堂及儀禮堂) The University of Hong Kong (Eliot Hall & Meng Wah Complex)",
+    "credit": "Baycrest",
+    "licence": "CC BY-SA 2.5",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/2.5",
+    "source_url": "https://commons.wikimedia.org/wiki/File:The_University_of_Hong_Kong.jpg"
+   }
+  },
+  "cityuhk-international-entrance": {
+   "universities": [
+    {
+     "slug": "city-university-of-hong-kong-c0bf548f",
+     "name": "City University of Hong Kong"
+    }
+   ],
+   "image": {
+    "src": "/images/scholarships/cityuhk-international-entrance.webp",
+    "alt": "View of Kowloon Tong district taken from the Run Run Shaw CMC",
+    "credit": "PrzemekJaczewski",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:View_of_Kowloon_Tong_district_taken_from_the_Run_Run_Shaw_CMC.jpg"
+   }
+  },
+  "dtu-ntu-president-award": {
+   "universities": [
+    {
+     "slug": "nanyang-technological-university-f5a6d73a",
+     "name": "Nanyang Technological University"
+    }
+   ],
+   "image": {
+    "src": "/images/scholarships/dtu-ntu-president-award.webp",
+    "alt": "School of Art, Design and Media, Nanyang Technological University, Singapore - 20151028",
+    "credit": "Iloventu.",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:School_of_Art,_Design_and_Media,_Nanyang_Technological_University,_Singapore_-_20151028.jpg"
+   }
+  },
+  "ntu-cn-yang": {
+   "universities": [
+    {
+     "slug": "nanyang-technological-university-f5a6d73a",
+     "name": "Nanyang Technological University"
+    }
+   ],
+   "image": {
+    "src": "/images/scholarships/ntu-cn-yang.webp",
+    "alt": "The Hive (view from Koufu)",
+    "credit": "Lyslee555",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:The_Hive_(view_from_Koufu).JPG"
+   }
+  },
+  "caltech-international-aid": {
+   "universities": [
+    {
+     "slug": "california-institute-of-technology-99fbcf31",
+     "name": "California Institute of Technology"
+    }
+   ],
+   "image": {
+    "src": "/images/scholarships/caltech-international-aid.webp",
+    "alt": "Beckman Institute Auditorium Caltech 2019",
+    "credit": "Antony-22",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Beckman_Institute_Auditorium_Caltech_2019.jpg"
+   }
+  },
+  "cornell-international-aid": {
+   "universities": [
+    {
+     "slug": "cornell-university-8488d97e",
+     "name": "Cornell University"
+    }
+   ],
+   "image": {
+    "src": "/images/scholarships/cornell-international-aid.webp",
+    "alt": "Cornell University - Towers",
+    "credit": "P. Hughes",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Cornell_University_-_Towers.jpg"
+   }
+  },
+  "nus-science-tech-undergrad": {
+   "universities": [
+    {
+     "slug": "national-university-of-singapore-c66c3755",
+     "name": "National University of Singapore"
+    }
+   ],
+   "image": {
+    "src": "/images/scholarships/nus-utown.webp",
+    "alt": "University Town Skyline from Northwest Kent Ridge Campus, National University of Singapore, February 2020",
+    "credit": "Joshua Rommel Hayag Vargas",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:University_Town_Skyline_from_Northwest_Kent_Ridge_Campus,_National_University_of_Singapore,_February_2020.jpg"
+   }
+  },
+  "snu-tuition-scholarship": {
+   "universities": [
+    {
+     "slug": "seoul-national-university-6a9e2556",
+     "name": "Seoul National University"
+    }
+   ],
+   "image": {
+    "src": "/images/scholarships/snu-tuition-scholarship.webp",
+    "alt": "Library in Seoul National University School of Law",
+    "credit": "EllalineSeoul",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Library_in_Seoul_National_University_School_of_Law.jpg"
+   }
+  },
+  "korea-challenge-c": {
+   "universities": [
+    {
+     "slug": "korea-university-6d72f6ce",
+     "name": "Korea University"
+    }
+   ],
+   "image": {
+    "src": "/images/scholarships/korea-challenge-c.webp",
+    "alt": "Korea University Anam Campus",
+    "credit": "Mannaa mohamed",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Korea_University_Anam_Campus.jpg"
+   }
+  },
+  "utoronto-utsc-international-scholar": {
+   "universities": [
+    {
+     "slug": "toronto",
+     "name": "University of Toronto"
+    }
+   ],
+   "image": {
+    "src": "/images/scholarships/uoft-convocation-hall.webp",
+    "alt": "Convocation Hall, Facing North",
+    "credit": "KTMAR",
+    "licence": "CC BY 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by/3.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Facing_North.jpg"
+   }
+  },
+  "utoronto-utm-international-scholar": {
+   "universities": [
+    {
+     "slug": "toronto",
+     "name": "University of Toronto"
+    }
+   ],
+   "image": {
+    "src": "/images/scholarships/uoft-convocation-hall.webp",
+    "alt": "Convocation Hall, Facing North",
+    "credit": "KTMAR",
+    "licence": "CC BY 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by/3.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Facing_North.jpg"
+   }
+  },
+  "cuhk-hksar-government-scholarship": {
+   "universities": [
+    {
+     "slug": "the-chinese-university-of-hong-kong-7deae08f",
+     "name": "The Chinese University of Hong Kong"
+    }
+   ],
+   "image": {
+    "src": "/images/scholarships/cuhk-belt-road-kazakhstan.webp",
+    "alt": "CUHK University Mall 20221024",
+    "credit": "Will629",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:CUHK_University_Mall_20221024.jpg"
+   }
+  },
+  "nus-goh-keng-swee": {
+   "universities": [
+    {
+     "slug": "national-university-of-singapore-c66c3755",
+     "name": "National University of Singapore"
+    }
+   ],
+   "image": {
+    "src": "/images/scholarships/nus-utown.webp",
+    "alt": "University Town Skyline from Northwest Kent Ridge Campus, National University of Singapore, February 2020",
+    "credit": "Joshua Rommel Hayag Vargas",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:University_Town_Skyline_from_Northwest_Kent_Ridge_Campus,_National_University_of_Singapore,_February_2020.jpg"
+   }
+  },
+  "tsinghua-international-freshman": {
+   "universities": [
+    {
+     "slug": "tsinghua-university-519c66df",
+     "name": "Tsinghua University"
+    }
+   ],
+   "image": {
+    "src": "/images/scholarships/tsinghua-international-freshman.webp",
+    "alt": "View of Grand Auditorium of Tsinghua University",
+    "credit": "Dquai",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:View_of_Grand_Auditorium_of_Tsinghua_University.jpg"
+   }
+  },
+  "koc-international-undergrad": {
+   "universities": [
+    {
+     "slug": "koc-university-1848c4c4",
+     "name": "Koç University"
+    }
+   ],
+   "image": {
+    "src": "/images/scholarships/koc-international-undergrad.webp",
+    "alt": "Koç University Rumelifeneri Campus",
+    "credit": "Delphic Ephemera",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Ko%C3%A7_University_Rumelifeneri_Campus.jpg"
+   }
+  },
+  "eth-esop": {
+   "universities": [
+    {
+     "slug": "ethz-eth-zurich-6020a2b5",
+     "name": "ETHZ - ETH Zurich"
+    }
+   ],
+   "image": {
+    "src": "/images/scholarships/eth-zurich-campus.webp",
+    "alt": "This is the main building of ETH Zurich.",
+    "credit": "Nemanja Skoric",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:ETH_Zurich,_Main_building.jpg"
+   }
+  },
+  "ubc-international-scholars": {
+   "universities": [
+    {
+     "slug": "university-of-british-columbia-276cad09",
+     "name": "University of British Columbia"
+    }
+   ],
+   "image": {
+    "src": "/images/scholarships/ubc-irving-k-barber.webp",
+    "alt": "The Irving K. Barber Learning Centre of the University of British Columbia.",
+    "credit": "CjayD",
+    "licence": "CC BY 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by/2.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Irving_K._Barber_Library.jpg"
+   }
+  },
+  "knight-hennessy": {
+   "universities": [
+    {
+     "slug": "stanford",
+     "name": "Stanford University"
+    }
+   ],
+   "image": {
+    "src": "/images/scholarships/knight-hennessy.webp",
+    "alt": "Stanford Oval May 2011 panorama",
+    "credit": "King of Hearts",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Stanford_Oval_May_2011_panorama.jpg"
+   }
+  },
+  "rhodes-scholarship": {
+   "universities": [
+    {
+     "slug": "oxford",
+     "name": "University of Oxford"
+    }
+   ],
+   "image": {
+    "src": "/images/scholarships/rhodes-scholarship.webp",
+    "alt": "Rhodes House, Oxford 2026-01-18",
+    "credit": "The wub",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Rhodes_House,_Oxford_2026-01-18.jpg"
+   }
+  },
+  "gates-cambridge-scholarship": {
+   "universities": [
+    {
+     "slug": "university-of-cambridge-ae117645",
+     "name": "University of Cambridge"
+    }
+   ],
+   "image": {
+    "src": "/images/scholarships/cambridge-st-johns.webp",
+    "alt": "The tower of the Second Court, leading towards the Third Court of St John's College, Cambridge, England. Statue of Mary Talbot, Countess of Shrewsbury (1556–1632) the wife of Gilbert Talbot, 7th Earl of Shrewsbury. A white marble copy of this statue ",
+    "credit": "Diliff",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:St_John%27s_College_Second_Court,_Cambridge,_UK_-_Diliff.jpg"
+   }
+  },
+  "clarendon-scholarships": {
+   "universities": [
+    {
+     "slug": "oxford",
+     "name": "University of Oxford"
+    }
+   ],
+   "image": {
+    "src": "/images/scholarships/clarendon-scholarships.webp",
+    "alt": "Clarendon Building, Oxford, England - May 2010",
+    "credit": "Diliff",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Clarendon_Building,_Oxford,_England_-_May_2010.jpg"
+   }
+  },
+  "melbourne-international-undergraduate-scholarship": {
+   "universities": [
+    {
+     "slug": "university-of-melbourne-6f8ca7da",
+     "name": "University of Melbourne"
+    }
+   ],
+   "image": {
+    "src": "/images/scholarships/melbourne-international-undergraduate-scholarship.webp",
+    "alt": "Old Arts Building, University of Melbourne",
+    "credit": "cogdogblog",
+    "licence": "CC0",
+    "licence_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Old_Arts_Building,_University_of_Melbourne_(2650386749).jpg"
+   }
+  },
+  "imperial-presidents-phd-scholarships": {
+   "universities": [
+    {
+     "slug": "imperial-college-london-5ad45ea9",
+     "name": "Imperial College London"
+    }
+   ],
+   "image": {
+    "src": "/images/scholarships/imperial-presidents-phd-scholarships.webp",
+    "alt": "Imperial College London Exhibition Road frontage",
+    "credit": "Man vyi",
+    "licence": "Public domain",
+    "licence_url": null,
+    "source_url": "https://commons.wikimedia.org/wiki/File:Imperial_College_London_Exhibition_Road_frontage.jpg"
+   }
+  },
+  "uva-amsterdam-merit-scholarship-law": {
+   "universities": [
+    {
+     "slug": "university-of-amsterdam-e0088a48",
+     "name": "University of Amsterdam"
+    }
+   ],
+   "image": {
+    "src": "/images/scholarships/uva-amsterdam-merit-scholarship-law.webp",
+    "alt": "Amsterdam - Oudemanhuispoort - University of Amsterdam Law Faculty - Inside Court 1757 by G.Maybaum - View NW",
+    "credit": "Txllxt TxllxT",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Amsterdam_-_Oudemanhuispoort_-_University_of_Amsterdam_Law_Faculty_-_Inside_Court_1757_by_G.Maybaum_-_View_NW.jpg"
+   }
+  },
+  "yenching-academy-scholarship": {
+   "universities": [
+    {
+     "slug": "peking-university-79e1cf8b",
+     "name": "Peking University"
+    }
+   ],
+   "image": {
+    "src": "/images/scholarships/yenching-academy-scholarship.webp",
+    "alt": "博雅塔",
+    "credit": "2502project",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:%E5%8D%9A%E9%9B%85%E5%A1%94.jpg"
+   }
+  },
+  "schwarzman-scholars": {
+   "universities": [
+    {
+     "slug": "tsinghua-university-519c66df",
+     "name": "Tsinghua University"
+    }
+   ],
+   "image": {
+    "src": "/images/scholarships/schwarzman-scholars.webp",
+    "alt": "Tsinghua University - snowy path to white gate",
+    "credit": "me (w:User:pfctdayelise)",
+    "licence": "CC BY-SA 2.5",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/2.5",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Tsinghua_University_-_snowy_path_to_white_gate.JPG"
+   }
+  },
+  "sydney-vice-chancellors-international-scholarships": {
+   "universities": [
+    {
+     "slug": "university-of-sydney-c67598f4",
+     "name": "University of Sydney"
+    }
+   ],
+   "image": {
+    "src": "/images/scholarships/sydney-vice-chancellors-international-scholarships.webp",
+    "alt": "Quadrangle, University of Sydney",
+    "credit": "Sun jess",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Quadrangle,_University_of_Sydney.jpg"
+   }
+  },
+  "sydney-international-student-award": {
+   "universities": [
+    {
+     "slug": "university-of-sydney-c67598f4",
+     "name": "University of Sydney"
+    }
+   ],
+   "image": {
+    "src": "/images/scholarships/sydney-rtp-international-research-scholarships.webp",
+    "alt": "Sydney Medical School - Anderson Stuart Building",
+    "credit": "Jason Tong",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Sydney_Medical_School_-_Anderson_Stuart_Building.jpg"
+   }
+  },
+  "sydney-rtp-international-research-scholarships": {
+   "universities": [
+    {
+     "slug": "university-of-sydney-c67598f4",
+     "name": "University of Sydney"
+    }
+   ],
+   "image": {
+    "src": "/images/scholarships/sydney-rtp-international-research-scholarships.webp",
+    "alt": "Sydney Medical School - Anderson Stuart Building",
+    "credit": "Jason Tong",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Sydney_Medical_School_-_Anderson_Stuart_Building.jpg"
+   }
+  },
+  "anu-chancellors-international-scholarship": {
+   "universities": [
+    {
+     "slug": "australian-national-university-14fa4c62",
+     "name": "Australian National University"
+    }
+   ],
+   "image": {
+    "src": "/images/scholarships/anu-chancellors-international-scholarship.webp",
+    "alt": "Main entrance of University House September 2017",
+    "credit": "Nick-D",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Main_entrance_of_University_House_September_2017.jpg"
+   }
+  },
+  "unsw-international-scholarships-term-1-2027": {
+   "universities": [
+    {
+     "slug": "unsw-sydney-34f9bd5c",
+     "name": "UNSW Sydney"
+    }
+   ],
+   "image": {
+    "src": "/images/scholarships/unsw-international-scholarships-term-1-2027.webp",
+    "alt": "Anzac Corps Memorial at UNSW Kensington campus",
+    "credit": "José R. Ferrer Paris",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Anzac_Corps_Memorial_at_UNSW_Kensington_campus.jpg"
+   }
+  },
+  "melbourne-graduate-research-scholarships": {
+   "universities": [
+    {
+     "slug": "university-of-melbourne-6f8ca7da",
+     "name": "University of Melbourne"
+    }
+   ],
+   "image": {
+    "src": "/images/scholarships/melbourne-international-undergraduate-scholarship.webp",
+    "alt": "Old Arts Building, University of Melbourne",
+    "credit": "cogdogblog",
+    "licence": "CC0",
+    "licence_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Old_Arts_Building,_University_of_Melbourne_(2650386749).jpg"
+   }
+  },
+  "monash-international-leadership-scholarship": {
+   "universities": [
+    {
+     "slug": "monash-university-66cc3fd0",
+     "name": "Monash University"
+    }
+   ],
+   "image": {
+    "src": "/images/scholarships/monash-international-leadership-scholarship.webp",
+    "alt": "Woodside Building for Technology and Design, Monash University, Clayton campus",
+    "credit": "Monash Information Technology",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Woodside_Building_for_Technology_and_Design,_Monash_University,_Clayton_campus.jpg"
+   }
+  },
+  "glasgow-global-leadership-scholarship": {
+   "universities": [
+    {
+     "slug": "university-of-glasgow-61b5c222",
+     "name": "University of Glasgow"
+    }
+   ],
+   "image": {
+    "src": "/images/scholarships/glasgow-global-leadership-scholarship.webp",
+    "alt": "University of Glasgow, East Quadrangle - landscape",
+    "credit": "Stinglehammer",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:University_of_Glasgow,_East_Quadrangle_-_landscape.jpg"
+   }
+  },
+  "tu-delft-justus-louise-van-effen-excellence-scholarship": {
+   "universities": [
+    {
+     "slug": "delft-university-of-technology-1e3bb7ff",
+     "name": "Delft University of Technology"
+    }
+   ],
+   "image": {
+    "src": "/images/scholarships/tu-delft-justus-louise-van-effen-excellence-scholarship.webp",
+    "alt": "Library Delft 7",
+    "credit": "Mecanoo",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Library_Delft_7.jpg"
+   }
+  },
+  "lund-university-global-scholarship": {
+   "universities": [
+    {
+     "slug": "lund-university-bc0bcefc",
+     "name": "Lund University"
+    }
+   ],
+   "image": {
+    "src": "/images/scholarships/lund-university-global-scholarship.webp",
+    "alt": "Lund University Main Building",
+    "credit": "Einaz80",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Lund_University_Main_Building.jpg"
+   }
+  },
+  "unige-excellence-master-fellowships": {
+   "universities": [
+    {
+     "slug": "university-of-geneva-26fd17cb",
+     "name": "University of Geneva"
+    }
+   ],
+   "image": {
+    "src": "/images/scholarships/unige-excellence-master-fellowships.webp",
+    "alt": "Université de Genève - Bâtiment des Bastions",
+    "credit": "Grototoro",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Universit%C3%A9_de_Gen%C3%A8ve_-_B%C3%A2timent_des_Bastions.JPG"
+   }
+  },
+  "bowdoin-need-blind-aid-international": {
+   "universities": [
+    {
+     "slug": "bowdoin-college-d5d20074",
+     "name": "Bowdoin College"
+    }
+   ],
+   "image": {
+    "src": "/images/scholarships/bowdoin-need-blind-aid-international.webp",
+    "alt": "Maine Hall - Bowdoin College - IMG 7814",
+    "credit": "Daderot",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Maine_Hall_-_Bowdoin_College_-_IMG_7814.JPG"
+   }
+  },
+  "mastercard-foundation-scholars-edinburgh": {
+   "universities": [
+    {
+     "slug": "university-of-edinburgh-f2f2a71c",
+     "name": "University of Edinburgh"
+    }
+   ]
+  },
+  "mastercard-foundation-scholars-mcgill": {
+   "universities": [
+    {
+     "slug": "mcgill-university-b48ecdd6",
+     "name": "McGill University"
+    }
+   ],
+   "image": {
+    "src": "/images/scholarships/mcgill-downtown.webp",
+    "alt": "McGill University downtown campus August 2017 01",
+    "credit": "Arild Vågen",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:McGill_University_downtown_campus_August_2017_01.jpg"
+   }
+  },
+  "mccall-macbain-scholarships": {
+   "universities": [
+    {
+     "slug": "mcgill-university-b48ecdd6",
+     "name": "McGill University"
+    }
+   ],
+   "image": {
+    "src": "/images/scholarships/mcgill-downtown.webp",
+    "alt": "McGill University downtown campus August 2017 01",
+    "credit": "Arild Vågen",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:McGill_University_downtown_campus_August_2017_01.jpg"
+   }
+  },
+  "cambridge-trust-international-scholarship": {
+   "universities": [
+    {
+     "slug": "university-of-cambridge-ae117645",
+     "name": "University of Cambridge"
+    }
+   ],
+   "image": {
+    "src": "/images/scholarships/cambridge-st-johns.webp",
+    "alt": "The tower of the Second Court, leading towards the Third Court of St John's College, Cambridge, England. Statue of Mary Talbot, Countess of Shrewsbury (1556–1632) the wife of Gilbert Talbot, 7th Earl of Shrewsbury. A white marble copy of this statue ",
+    "credit": "Diliff",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:St_John%27s_College_Second_Court,_Cambridge,_UK_-_Diliff.jpg"
+   }
+  },
+  "groningen-eric-bleumink-fund": {
+   "universities": [
+    {
+     "slug": "university-of-groningen-9dae6bd4",
+     "name": "University of Groningen"
+    }
+   ]
+  },
+  "uppsala-university-global-scholarship": {
+   "universities": [
+    {
+     "slug": "uppsala-university-75f1a39c",
+     "name": "Uppsala University"
+    }
+   ],
+   "image": {
+    "src": "/images/scholarships/uppsala-university-global-scholarship.webp",
+    "alt": "Carolina Rediviva in summer",
+    "credit": "Dr. Mirko Junge",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Carolina_Rediviva_in_summer.jpg"
+   }
+  },
+  "uppsala-anders-wall-scholarship": {
+   "universities": [
+    {
+     "slug": "uppsala-university-75f1a39c",
+     "name": "Uppsala University"
+    }
+   ]
+  },
+  "university-of-twente-scholarship": {
+   "universities": [
+    {
+     "slug": "university-of-twente-fa82b5bb",
+     "name": "University of Twente"
+    }
+   ],
+   "image": {
+    "src": "/images/scholarships/university-of-twente-scholarship.webp",
+    "alt": "University-of-twente-letters",
+    "credit": "Pollus Fornerod",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:University-of-twente-letters.jpg"
+   }
+  },
+  "weizmann-institute-graduate-fellowships": {
+   "universities": [
+    {
+     "slug": "weizmann-institute-of-science-8626e12e",
+     "name": "Weizmann Institute of Science"
+    }
+   ],
+   "image": {
+    "src": "/images/scholarships/weizmann-institute-graduate-fellowships.webp",
+    "alt": "120193 rechovot beit haim weizman PikiWiki Israel",
+    "credit": "israel zeller ישראל זלר",
+    "licence": "CC BY 2.5",
+    "licence_url": "https://creativecommons.org/licenses/by/2.5",
+    "source_url": "https://commons.wikimedia.org/wiki/File:120193_rechovot_beit_haim_weizman_PikiWiki_Israel.jpg"
+   }
+  },
+  "paris-saclay-international-masters-scholarship": {
+   "universities": [
+    {
+     "slug": "universite-paris-saclay-8e191d89",
+     "name": "Université Paris-Saclay"
+    }
+   ],
+   "image": {
+    "src": "/images/scholarships/paris-saclay-international-masters-scholarship.webp",
+    "alt": "Moulon Campus juin24-2",
+    "credit": "Jmex",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Moulon_Campus_juin24-2.jpg"
+   }
+  },
+  "dartmouth-international-aid": {
+   "universities": [
+    {
+     "slug": "dartmouth-college-0a2ceb2f",
+     "name": "Dartmouth College"
+    }
+   ],
+   "image": {
+    "src": "/images/scholarships/dartmouth-international-aid.webp",
+    "alt": "Dartmouth College campus  34, crop 1",
+    "credit": "Kane5187",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Dartmouth_College_campus_2007-10-20_34,_crop_1.jpg"
+   }
+  },
+  "uoft-arts-science-global-scholarship": {
+   "universities": [
+    {
+     "slug": "toronto",
+     "name": "University of Toronto"
+    }
+   ],
+   "image": {
+    "src": "/images/scholarships/uoft-convocation-hall.webp",
+    "alt": "Convocation Hall, Facing North",
+    "credit": "KTMAR",
+    "licence": "CC BY 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by/3.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Facing_North.jpg"
+   }
+  },
+  "uoft-presidents-scholars-of-excellence": {
+   "universities": [
+    {
+     "slug": "toronto",
+     "name": "University of Toronto"
+    }
+   ],
+   "image": {
+    "src": "/images/scholarships/uoft-convocation-hall.webp",
+    "alt": "Convocation Hall, Facing North",
+    "credit": "KTMAR",
+    "licence": "CC BY 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by/3.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Facing_North.jpg"
+   }
+  },
+  "york-international-automatic-entrance-scholarships": {
+   "universities": [
+    {
+     "slug": "york-university-03761e91",
+     "name": "York University"
+    }
+   ],
+   "image": {
+    "src": "/images/scholarships/york-international-automatic-entrance-scholarships.webp",
+    "alt": "York University (Toronto)",
+    "credit": "Blagov at English Wikipedia",
+    "licence": "Public domain",
+    "licence_url": null,
+    "source_url": "https://commons.wikimedia.org/wiki/File:York_University_(Toronto).jpg"
+   }
+  },
+  "oxford-weidenfeld-hoffmann-scholarships": {
+   "universities": [
+    {
+     "slug": "oxford",
+     "name": "University of Oxford"
+    }
+   ],
+   "image": {
+    "src": "/images/scholarships/oxford-weidenfeld-hoffmann-scholarships.webp",
+    "alt": "Divinity School Interior 3, Bodleian Library, Oxford, UK - Diliff",
+    "credit": "Diliff",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Divinity_School_Interior_3,_Bodleian_Library,_Oxford,_UK_-_Diliff.jpg"
+   }
+  },
+  "exeter-excellence-scholarships": {
+   "universities": [
+    {
+     "slug": "university-of-exeter-a6433838",
+     "name": "University of Exeter"
+    }
+   ],
+   "image": {
+    "src": "/images/scholarships/exeter-excellence-scholarships.webp",
+    "alt": "University of Exeter Reed Hall Gardens",
+    "credit": "Myself Benjamin Evans",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source_url": "https://commons.wikimedia.org/wiki/File:University_of_Exeter_Reed_Hall_Gardens.jpg"
+   }
+  },
+  "nottingham-international-postgraduate-masters-scholarship": {
+   "universities": [
+    {
+     "slug": "university-of-nottingham-0bfd2121",
+     "name": "University of Nottingham"
+    }
+   ],
+   "image": {
+    "src": "/images/scholarships/nottingham-international-postgraduate-masters-scholarship.webp",
+    "alt": "University Park MMB «76 Trent Building",
+    "credit": "mattbuck (category)",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:University_Park_MMB_%C2%AB76_Trent_Building.jpg"
+   }
+  },
+  "nottingham-developing-solutions-masters-scholarship": {
+   "universities": [
+    {
+     "slug": "university-of-nottingham-0bfd2121",
+     "name": "University of Nottingham"
+    }
+   ]
+  },
+  "oxford-ertegun-graduate-scholarships": {
+   "universities": [
+    {
+     "slug": "oxford",
+     "name": "University of Oxford"
+    }
+   ],
+   "image": {
+    "src": "/images/scholarships/oxford-ertegun-graduate-scholarships.webp",
+    "alt": "Sheldonian Theatre Oxford 2023 03",
+    "credit": "Julian Herzog (Website)",
+    "licence": "CC BY 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by/4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Sheldonian_Theatre_Oxford_2023_03.jpg"
+   }
+  },
+  "oxford-pershing-square-graduate-scholarships": {
+   "universities": [
+    {
+     "slug": "oxford",
+     "name": "University of Oxford"
+    }
+   ],
+   "image": {
+    "src": "/images/scholarships/oxford-pershing-square-graduate-scholarships.webp",
+    "alt": "Saïd Business School, Oxford",
+    "credit": "Stephen McKay",
+    "licence": "CC BY-SA 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/2.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Sa%C3%AFd_Business_School,_Oxford_-_geograph.org.uk_-_7007948.jpg"
+   }
+  },
+  "uchicago-international-merit-scholarships": {
+   "universities": [
+    {
+     "slug": "university-of-chicago-7add53a9",
+     "name": "University of Chicago"
+    }
+   ]
+  },
+  "usc-undergraduate-admission-merit-scholarships": {
+   "universities": [
+    {
+     "slug": "university-of-southern-california-ce0c7503",
+     "name": "University of Southern California"
+    }
+   ]
+  },
+  "northwestern-international-undergraduate-need-based-aid": {
+   "universities": [
+    {
+     "slug": "northwestern-university-e48a723c",
+     "name": "Northwestern University"
+    }
+   ]
+  },
+  "arizona-global-wildcat-first-year-2026": {
+   "universities": [
+    {
+     "slug": "university-of-arizona-027e062a",
+     "name": "University of Arizona"
+    }
+   ]
+  },
+  "arizona-global-wildcat-transfer-2026": {
+   "universities": [
+    {
+     "slug": "university-of-arizona-027e062a",
+     "name": "University of Arizona"
+    }
+   ]
+  },
+  "global-depaul-scholarship-international": {
+   "universities": [
+    {
+     "slug": "depaul-university-eff27116",
+     "name": "DePaul University"
+    }
+   ]
+  },
+  "gw-international-undergraduate-institutional-aid": {
+   "universities": [
+    {
+     "slug": "george-washington-university-7297ee6e",
+     "name": "George Washington University"
+    }
+   ]
+  },
+  "nu-abay-kunanbayev-international": {
+   "universities": [
+    {
+     "slug": "nazarbayev-university-69434102",
+     "name": "Nazarbayev University"
+    }
+   ]
+  },
+  "nu-citizenship-based-international-partial-award": {
+   "universities": [
+    {
+     "slug": "nazarbayev-university-69434102",
+     "name": "Nazarbayev University"
+    }
+   ]
+  },
+  "auca-undergraduate-need-based-financial-aid-cis": {
+   "universities": [
+    {
+     "slug": "american-university-of-central-asia-48bb7649",
+     "name": "American University of Central Asia"
+    },
+    {
+     "slug": "university-of-central-asia-b99019e6",
+     "name": "University of Central Asia"
+    }
+   ]
+  },
+  "global-korea-scholarship-undergraduate": {
+   "verification_status": "verified",
+   "name": "Global Korea Scholarship for Undergraduate Degrees (GKS-U)",
+   "provider": "Government of Korea (NIIED)",
+   "level": "Bachelor",
+   "funding_type": "full",
+   "amount_headline": "₩1,200,000 a month + tuition + flights",
+   "covers": "Tuition (NIIED pays up to ₩5 million a semester, the university covers the rest), a one-year Korean language course, an economy flight and ₩14,400,000 a year for living costs during the degree.",
+   "coverage": {
+    "tuition": true,
+    "living": true,
+    "travel": true,
+    "insurance": true
+   },
+   "coverage_notes": {
+    "tuition": "Up to ₩5 million a semester from NIIED; the university pays any amount above it and the admission fee",
+    "living": "₩14,400,000 a year in the degree (₩13,560,000 in the language year); includes housing and health insurance",
+    "travel": "Economy flight to Korea and home after the degree",
+    "insurance": "Paid from the monthly allowance"
+   },
+   "central_asia_eligible": true,
+   "ca_note": "All four countries are on the 2027 embassy-track list: Kazakhstan 4 places, Uzbekistan 3, Kyrgyzstan 3, Tajikistan 2. More places exist through the university track.",
+   "age": "Under 25 (for the 2027 round: born on or after 1 March 2002)",
+   "grades": "One of: 80% or higher, top 20% of the class, or a CGPA of at least 2.64/4.0 (2.80/4.3, 2.91/4.5, 3.23/5.0)",
+   "english": "Not required. TOPIK (Korean) and TOEFL or IELTS scores earn points in the evaluation; TOPIK level 3 or higher also adds bonus points.",
+   "deadline": null,
+   "deadline_note": "The 2027 round closed: embassy track online deadline was 30 September 2026, university track in November 2026. Students finishing school in 2027 apply in the 2028 round, expected in September 2027 (entry March 2028).",
+   "deadlines": [
+    {
+     "label": "Embassy track: online application (2027 round)",
+     "date": "2026-09-30"
+    },
+    {
+     "label": "First-round results",
+     "date": "2026-10-16"
+    },
+    {
+     "label": "Final results",
+     "date": "2027-01-07"
+    }
+   ],
+   "how_to_apply": [
+    "Download the GKS-U guidelines from Study in Korea when the round opens (usually September).",
+    "Choose the embassy track (Korean embassy in your country) or the university track (apply straight to a Korean university).",
+    "Pick up to three universities from the list for your track and prepare your documents.",
+    "Submit online by the embassy or university deadline; keep an apostilled copy of your school certificate.",
+    "Pass the first round (documents, sometimes an interview), then the university round and NIIED's final check.",
+    "If selected, you start with one year of Korean language study, then your 4-year degree."
+   ],
+   "documents": [
+    "Application form and personal statement",
+    "Study plan",
+    "One recommendation letter",
+    "School certificate and transcripts (apostilled or consular-certified)",
+    "Passport copy",
+    "TOPIK or English score report, if you have one",
+    "Medical assessment (after selection)"
+   ],
+   "faq": [
+    {
+     "q": "Can I apply from Uzbekistan, Kazakhstan, Kyrgyzstan or Tajikistan?",
+     "a": "Yes. All four countries had embassy-track places in the 2027 round (Kazakhstan 4, Uzbekistan 3, Kyrgyzstan 3, Tajikistan 2). The university track is also open to them."
+    },
+    {
+     "q": "Do I need to speak Korean?",
+     "a": "No. The first year is a Korean language course. If you already hold TOPIK level 5 or 6 you skip it and start the degree."
+    },
+    {
+     "q": "I finish school in 2027. Which round is mine?",
+     "a": "The 2028 round. It usually opens in September of the year before entry, so expect applications around September 2027 for March 2028 entry."
+    },
+    {
+     "q": "Can I apply to both tracks?",
+     "a": "Not at the same time. If you fail the first round of the embassy track you can still apply to the university track if its deadline has not passed."
+    }
+   ],
+   "application_url": "https://www.studyinkorea.go.kr/ko/plan/gksNoticeRead.do?bbsId=BBSMSTR_000000000461&nttId=4522",
+   "source_url": "https://studyinkorea.go.kr/cmm/fms/FileDown.do?atchFileId=FILE_000000000673717&fileSn=1",
+   "sources": [
+    {
+     "title": "2027 GKS-U notice (Study in Korea)",
+     "url": "https://www.studyinkorea.go.kr/ko/plan/gksNoticeRead.do?bbsId=BBSMSTR_000000000461&nttId=4522"
+    },
+    {
+     "title": "2027 GKS-U application guidelines (PDF)",
+     "url": "https://studyinkorea.go.kr/cmm/fms/FileDown.do?atchFileId=FILE_000000000673717&fileSn=1"
+    },
+    {
+     "title": "2027 GKS-U university track notice",
+     "url": "https://www.studyinkorea.go.kr/en/plan/gksNoticeRead.do?bbsId=BBSMSTR_000000000461&nttId=4527"
+    }
+   ],
+   "video": {
+    "id": "XlC1FKfygBI",
+    "title": "NIIED promotional video (English)",
+    "channel": "NIIED"
+   },
+   "checked_at": "2026-11-16",
+   "browse_country": "KR",
+   "image": {
+    "src": "/images/scholarships/global-korea-scholarship-undergraduate.webp",
+    "alt": "Lotte World Tower and Namsan Tower in Seoul",
+    "credit": "Arturbraun",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Lotte_World_Tower_and_Namsan_Tower_in_Seoul.jpg"
+   }
+  },
+  "mext-undergrad-2027": {
+   "verification_status": "verified",
+   "name": "Japanese Government (MEXT) Scholarship for Undergraduate Students",
+   "provider": "Government of Japan (MEXT)",
+   "funding_type": "full",
+   "amount_headline": "¥117,000 a month + tuition + flights",
+   "covers": "Tuition, entrance and exam fees at a Japanese national university, ¥117,000 a month and a return economy flight. Usually one preparatory year (Japanese language) before the degree.",
+   "coverage": {
+    "tuition": true,
+    "living": true,
+    "travel": true,
+    "insurance": null
+   },
+   "coverage_notes": {
+    "tuition": "Entrance exam, matriculation and tuition fees waived",
+    "living": "¥117,000 a month (plus ¥2,000–3,000 in some regions)",
+    "travel": "Economy flight to Japan and home after the degree"
+   },
+   "central_asia_eligible": true,
+   "ca_note": "Open to nationals of countries with diplomatic relations with Japan, which includes Uzbekistan, Kazakhstan, Kyrgyzstan and Tajikistan. You apply through the Japanese embassy in your own country.",
+   "age": "For the 2027 round: born on or after 2 April 2002",
+   "grades": "12 years of school finished (or finishing) by March of the entry year. Each embassy sets its own written exams (usually maths, English and Japanese; sciences for science majors).",
+   "english": "No fixed score; the embassy exam tests English",
+   "deadline": null,
+   "deadline_note": "The 2027 round (arrival April 2027) took applications in spring 2026. If you finish school in 2027, your round is MEXT 2028: embassies usually recruit in April–May 2027, with exams May–August.",
+   "deadlines": [],
+   "how_to_apply": [
+    "In spring, check the Japanese embassy website in your country for the undergraduate MEXT call.",
+    "Read the guidelines, pick a field (social sciences/humanities or natural sciences) and up to three majors.",
+    "Send the application form, certificates and health form to the embassy by its deadline. Never send them to MEXT directly.",
+    "Sit the embassy's written exams and interview (first screening, May–August).",
+    "If recommended, MEXT places you in a preparatory year in Japan, then at a national university."
+   ],
+   "documents": [
+    "Application form (MEXT format) with photo",
+    "Certificate of health signed by a doctor",
+    "School transcript for the last 3 years",
+    "Graduation or expected-graduation certificate",
+    "Recommendation letter from your school principal",
+    "Exam certificates (e.g. IELTS, SAT), if you have them"
+   ],
+   "faq": [
+    {
+     "q": "Can students from Central Asia apply?",
+     "a": "Yes. Applicants need the nationality of a country with diplomatic relations with Japan, and all four Central Asian countries qualify. Apply through the Japanese embassy in your country."
+    },
+    {
+     "q": "Do I need to know Japanese?",
+     "a": "No, but you must be willing to learn it and study in Japanese. Most scholars spend the first year on a Japanese language and subjects course."
+    },
+    {
+     "q": "How much is the monthly allowance?",
+     "a": "¥117,000 a month in the 2027 guidelines, plus ¥2,000–3,000 in some designated regions. MEXT notes the amount can change with the budget."
+    },
+    {
+     "q": "When should a 2027 school graduate apply?",
+     "a": "In the MEXT 2028 round. Embassies usually announce it in April–May of the year before arrival, so watch for spring 2027."
+    }
+   ],
+   "application_url": "https://www.studyinjapan.go.jp/en/smap-stopj-applications-undergraduate.html",
+   "source_url": "https://www.mext.go.jp/content/20260420-mxt-kotokoku01-000049232_02.pdf",
+   "sources": [
+    {
+     "title": "MEXT 2027 undergraduate guidelines (PDF)",
+     "url": "https://www.mext.go.jp/content/20260420-mxt-kotokoku01-000049232_02.pdf"
+    },
+    {
+     "title": "Study in Japan: undergraduate embassy route",
+     "url": "https://www.studyinjapan.go.jp/en/smap-stopj-applications-undergraduate.html"
+    }
+   ],
+   "video": {
+    "id": "_oZQkfkhqrg",
+    "title": "Study in Japan: official film by MEXT",
+    "channel": "MEXT"
+   },
+   "checked_at": "2026-11-16",
+   "browse_country": "JP",
+   "image": {
+    "src": "/images/scholarships/mext-undergrad-2027.webp",
+    "alt": "Tokyo Tower, Minato City",
+    "credit": "David Kernan",
+    "licence": "CC BY 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by/4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Tokyo_Tower,_Minato_City.jpg"
+   }
+  },
+  "turkiye-burslari-bachelor": {
+   "verification_status": "verified",
+   "provider": "Government of Türkiye (YTB)",
+   "amount_headline": "6,500 TL a month + tuition + housing",
+   "covers": "Tuition, a university place, 6,500 TL a month for undergraduates, a one-year Turkish course, a dormitory place, health insurance and a flight at the start and end of studies.",
+   "coverage": {
+    "tuition": true,
+    "living": true,
+    "travel": true,
+    "insurance": true
+   },
+   "coverage_notes": {
+    "tuition": "Tuition paid and a university place arranged",
+    "living": "6,500 TL a month for bachelor's students (double for Merit scholars); free dormitory",
+    "travel": "One flight at the start and one when you graduate",
+    "insurance": "Health insurance"
+   },
+   "central_asia_eligible": true,
+   "ca_note": "Open to citizens of all countries except Türkiye.",
+   "grades": "No single minimum on the programme page. The Merit track asks for a 90% average plus exam results.",
+   "english": "Not required for most programmes; you take a one-year Turkish course. English-taught programmes may ask for a certificate.",
+   "deadline": "2027-02-20",
+   "deadline_note": "Applications run every year from 10 January to 20 February in the online TBBS system. Confirm the 2027 dates when the call opens.",
+   "deadlines": [
+    {
+     "label": "Applications open (usual date)",
+     "date": "2027-01-10"
+    },
+    {
+     "label": "Applications close (usual date)",
+     "date": "2027-02-20"
+    }
+   ],
+   "how_to_apply": [
+    "Create an account in the Türkiye Scholarships application system (TBBS) when it opens on 10 January.",
+    "Choose up to 12 bachelor's programmes at Turkish universities.",
+    "Fill in the form, write the motivation answers and upload your documents.",
+    "Submit before 20 February.",
+    "If shortlisted, attend an interview (in person or online), usually in spring.",
+    "Results come in summer; you start with a Turkish language year."
+   ],
+   "documents": [
+    "Passport or national ID",
+    "Recent photo",
+    "School certificate or expected-graduation letter",
+    "Transcript",
+    "National exam results (e.g. UNT, ORT), SAT or similar, if you have them",
+    "Language certificate if a programme asks for it"
+   ],
+   "faq": [
+    {
+     "q": "Can I apply before I finish school?",
+     "a": "Yes. Students in their final school year can apply with a transcript and submit the diploma later."
+    },
+    {
+     "q": "Do I need IELTS?",
+     "a": "Usually not. Most programmes teach in Turkish after a one-year Turkish course that the scholarship pays for."
+    },
+    {
+     "q": "How much is the stipend?",
+     "a": "6,500 TL a month for undergraduates, according to the programme page. Merit scholars get twice that."
+    }
+   ],
+   "sources": [
+    {
+     "title": "Türkiye Scholarships: full-time programmes",
+     "url": "https://www.turkiyeburslari.gov.tr/fulltimeprograms"
+    }
+   ],
+   "video": {
+    "id": "d5vyy8CUP7Q",
+    "title": "Your education journey starts here",
+    "channel": "Türkiye Bursları"
+   },
+   "checked_at": "2026-11-16",
+   "browse_country": "TR",
+   "image": {
+    "src": "/images/scholarships/turkiye-burslari-bachelor.webp",
+    "alt": "Sultanahmet ferry on the Bosphorus in Istanbul, Turkey 001",
+    "credit": "Moonik",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Sultanahmet_ferry_on_the_Bosphorus_in_Istanbul,_Turkey_001.jpg"
+   }
+  },
+  "stipendium-hungaricum-bachelor": {
+   "verification_status": "verified",
+   "provider": "Government of Hungary (Tempus Public Foundation)",
+   "amount_headline": "HUF 43,700 a month + free tuition + housing",
+   "covers": "Free tuition, HUF 43,700 a month for 12 months a year, a free dormitory place or HUF 40,000 a month towards rent, and health insurance. The money is a contribution, not your full living cost.",
+   "coverage": {
+    "tuition": true,
+    "living": true,
+    "travel": false,
+    "insurance": true
+   },
+   "coverage_notes": {
+    "tuition": "Tuition-free",
+    "living": "HUF 43,700 a month (about €110) and a dorm place or HUF 40,000 a month for housing",
+    "insurance": "Hungarian health care plus up to HUF 65,000 a year of extra insurance"
+   },
+   "central_asia_eligible": true,
+   "ca_note": "Uzbekistan, Kazakhstan, Kyrgyzstan and Tajikistan are all on the official list of sending partners. You must also be nominated by your country's ministry, and the levels and fields on offer differ by country.",
+   "english": "Set by each university (many English-taught programmes ask for IELTS 5.5–6.0 or similar)",
+   "deadline": null,
+   "deadline_note": "There is one deadline a year, in mid-January (the 2026/27 call closed on 15 January 2026). Expect the 2027/28 deadline around mid-January 2027; confirm on the official site.",
+   "deadlines": [
+    {
+     "label": "2026/27 call: applications to Tempus and your sending partner",
+     "date": "2026-01-15"
+    },
+    {
+     "label": "2026/27 call: results",
+     "date": "2026-06-30"
+    }
+   ],
+   "how_to_apply": [
+    "Check what your country's sending partner (usually the ministry of education) offers this year.",
+    "Pick up to two programmes in the Study Finder on stipendiumhungaricum.hu.",
+    "Apply online to Tempus Public Foundation and do any separate step your ministry asks for, by the January deadline.",
+    "Your ministry nominates candidates; then the universities run their own entrance exams or interviews (spring).",
+    "Results are published by the end of June; you apply for a visa in summer."
+   ],
+   "documents": [
+    "Online application",
+    "School certificate and transcripts",
+    "Language certificate",
+    "Medical certificate",
+    "Passport copy",
+    "Motivation letter"
+   ],
+   "faq": [
+    {
+     "q": "Is my country eligible?",
+     "a": "Uzbekistan, Kazakhstan, Kyrgyzstan and Tajikistan are all sending partners. Each partner decides which levels and how many places it offers, so check your ministry's notice."
+    },
+    {
+     "q": "Is the stipend enough to live on?",
+     "a": "No. The official site says the money is only a contribution to living costs, so plan some savings of your own, especially in Budapest."
+    },
+    {
+     "q": "Do I have to learn Hungarian?",
+     "a": "Full-time bachelor's and master's students take a free compulsory Hungarian course, but you can study your degree in English."
+    }
+   ],
+   "sources": [
+    {
+     "title": "Stipendium Hungaricum: what the scholarship covers",
+     "url": "https://stipendiumhungaricum.hu/about/"
+    },
+    {
+     "title": "Stipendium Hungaricum: sending partners",
+     "url": "https://stipendiumhungaricum.hu/partners/"
+    },
+    {
+     "title": "Stipendium Hungaricum: how to apply",
+     "url": "https://stipendiumhungaricum.hu/apply/"
+    }
+   ],
+   "video": {
+    "id": "8Bkqt08pBH0",
+    "title": "Study in Hungary: the place to be, the place to study",
+    "channel": "Study in Hungary"
+   },
+   "checked_at": "2026-11-16",
+   "browse_country": "HU",
+   "image": {
+    "src": "/images/scholarships/stipendium-hungaricum-bachelor.webp",
+    "alt": "Hungarian Parliament Building 2023-9",
+    "credit": "Pierre Blaché",
+    "licence": "CC0",
+    "licence_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Hungarian_Parliament_Building_2023-9.jpg"
+   }
+  },
+  "csc-type-a-bachelor": {
+   "verification_status": "verified",
+   "name": "Chinese Government Scholarship (CSC), bilateral route for bachelor's",
+   "provider": "Government of China (China Scholarship Council)",
+   "covers": "Tuition, a dormitory place, a monthly living allowance and medical insurance, through the Chinese embassy in your country.",
+   "coverage": {
+    "tuition": true,
+    "living": true,
+    "travel": false,
+    "insurance": true
+   },
+   "central_asia_eligible": true,
+   "ca_note": "The scholarship is open to non-Chinese citizens; bachelor's applicants go through the Chinese embassy (or the agency it names) in their own country.",
+   "grades": "From the 2027/28 round, bachelor's applicants need a valid CSCA exam score report",
+   "english": "Set by the university (Chinese-taught programmes ask for HSK)",
+   "deadline": null,
+   "deadline_note": "Each embassy sets its own deadline for the 2027/28 round; published examples fall in February 2027 (Indonesia: 14 February 2027). CSCA exam sittings run in November–December 2026 and January 2027.",
+   "deadlines": [],
+   "how_to_apply": [
+    "Find the 2027/28 scholarship notice of the Chinese embassy in your country and note its agency number and deadline.",
+    "Choose universities and programmes; ask them for a pre-admission letter.",
+    "Register for the CSCA exam and get your score report before the deadline.",
+    "Fill in the online application at campuschina.org with the embassy's agency number and upload documents.",
+    "Send paper copies to the embassy only if its notice asks for them. Results come in summer."
+   ],
+   "sources": [
+    {
+     "title": "Campus China: application system",
+     "url": "https://www.campuschina.org/"
+    },
+    {
+     "title": "Example 2027/28 embassy notice (Chinese Embassy in Indonesia)",
+     "url": "https://id.china-embassy.gov.cn/eng/sgdt/202610/t20261027_12047753.htm"
+    }
+   ],
+   "application_url": "https://www.campuschina.org/",
+   "source_url": "https://id.china-embassy.gov.cn/eng/sgdt/202610/t20261027_12047753.htm",
+   "checked_at": "2026-11-16",
+   "browse_country": "CN",
+   "image": {
+    "src": "/images/scholarships/csc-type-a-bachelor.webp",
+    "alt": "Beijing CBD Skyline (20190104160952)",
+    "credit": "N509FZ",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Beijing_CBD_Skyline_(20190104160952).jpg"
+   }
+  },
+  "el-yurt-umidi-bachelor": {
+   "verification_status": "verified",
+   "provider": "El-yurt umidi Foundation (Government of Uzbekistan)",
+   "funding_type": "full",
+   "amount_headline": "Full tuition + living + flights",
+   "covers": "Full tuition paid to the university, visas, a return flight, a monthly allowance for housing, food and books, and international medical insurance. Costs you already paid are not refunded.",
+   "coverage": {
+    "tuition": true,
+    "living": true,
+    "travel": true,
+    "insurance": true
+   },
+   "coverage_notes": {
+    "tuition": "Paid directly to the university",
+    "living": "Monthly allowance for housing, food and study materials",
+    "travel": "Visa and return flight",
+    "insurance": "International medical insurance"
+   },
+   "eligible_nationalities": [
+    "UZ"
+   ],
+   "central_asia_eligible": null,
+   "ca_note": "For citizens of Uzbekistan only.",
+   "english": "A language certificate that meets the Foundation's rules (IELTS, TOEFL or TestDaF)",
+   "grades": "An unconditional offer from a foreign university: top-100 universities get a fast priority route; universities up to the top 500 in priority fields go through an open competition",
+   "deadline": null,
+   "deadline_note": "Competitions open in sessions at least twice a year; dates are announced by the Foundation.",
+   "how_to_apply": [
+    "Get an unconditional offer from a foreign university that is on the Foundation's list.",
+    "Get your language certificate (IELTS, TOEFL or TestDaF).",
+    "Wait for a session to open and apply online on the Foundation's platform.",
+    "Top-100 offers go through a short priority procedure; others take part in the competition (tests and interview).",
+    "Sign the contract: after graduating you work 3–5 years in Uzbekistan, or repay twice the cost."
+   ],
+   "faq": [
+    {
+     "q": "Do I have to come back to Uzbekistan?",
+     "a": "Yes. Graduates must return and work 3 to 5 years in ministries, state organisations or universities. Otherwise they repay double the cost."
+    },
+    {
+     "q": "Do I need the university offer first?",
+     "a": "Yes. The Foundation asks for an official unconditional offer from the foreign university."
+    }
+   ],
+   "sources": [
+    {
+     "title": "my.gov.uz: El-yurt umidi scholarship",
+     "url": "https://my.gov.uz/en/life-situations/82c89d3d-0e93-4ef9-b04c-d8b67cec66ba"
+    }
+   ],
+   "checked_at": "2026-11-16",
+   "image": {
+    "src": "/images/scholarships/el-yurt-umidi-bachelor.webp",
+    "alt": "TashkentCity",
+    "credit": "Solijonovm1996",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:TashkentCity.jpg"
+   }
+  },
+  "bolashak-bachelor-olympiad-2027": {
+   "verification_status": "verified",
+   "provider": "Government of Kazakhstan (Center for International Programs)",
+   "ca_note": "For citizens of Kazakhstan only. Since 2026 the bachelor's category is only for winners and prize-winners of approved international school Olympiads and science-project competitions.",
+   "grades": "A winner's or prize-winner's diploma from an approved international Olympiad or science-project competition, in a field that matches your planned degree",
+   "faq": [
+    {
+     "q": "Can any good student get Bolashak for a bachelor's?",
+     "a": "No. Since 2026 the bachelor's category is only for winners and prize-winners of approved international Olympiads and science-project competitions."
+    }
+   ],
+   "sources": [
+    {
+     "title": "gov.kz: Bolashak international scholarship",
+     "url": "https://www.gov.kz/situations/8/intro?lang=en"
+    }
+   ],
+   "checked_at": "2026-11-16",
+   "image": {
+    "src": "/images/scholarships/bolashak-bachelor-olympiad-2027.webp",
+    "alt": "Baiterek metro station, Astana, 2026",
+    "credit": "Bdx",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Baiterek_metro_station,_Astana,_2026.jpg"
+   }
+  },
+  "chevening-scholarships": {
+   "undergrad": false,
+   "central_asia_eligible": true,
+   "ca_note": "Uzbekistan, Kazakhstan, Kyrgyzstan and Tajikistan all have Chevening country pages. The award is for a one-year master's in the UK after a bachelor's degree and work experience, so it is not for school leavers.",
+   "sources": [
+    {
+     "title": "Chevening in Uzbekistan",
+     "url": "https://www.chevening.org/scholarship/uzbekistan/"
+    },
+    {
+     "title": "Chevening in Kazakhstan",
+     "url": "https://www.chevening.org/scholarship/kazakhstan/"
+    },
+    {
+     "title": "Chevening in Kyrgyzstan",
+     "url": "https://www.chevening.org/scholarship/kyrgyzstan/"
+    },
+    {
+     "title": "Chevening in Tajikistan",
+     "url": "https://www.chevening.org/scholarship/tajikistan/"
+    }
+   ],
+   "checked_at": "2026-11-16",
+   "image": {
+    "src": "/images/scholarships/chevening-scholarships.webp",
+    "alt": "Palace of Westminster, London - Feb 2007",
+    "credit": "Diliff",
+    "licence": "CC BY-SA 2.5",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/2.5",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Palace_of_Westminster,_London_-_Feb_2007.jpg"
+   }
+  },
+  "fulbright-foreign-student-program": {
+   "undergrad": false,
+   "image": {
+    "src": "/images/scholarships/fulbright-foreign-student-program.webp",
+    "alt": "Lincoln Memorial east side",
+    "credit": "Martin Falbisoner",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Lincoln_Memorial_east_side.JPG"
+   }
+  },
+  "erasmus-mundus-joint-masters-scholarships": {
+   "undergrad": false,
+   "image": {
+    "src": "/images/scholarships/erasmus-mundus-joint-masters-scholarships.webp",
+    "alt": "Berlaymont building Brussels",
+    "credit": "KenSwe72",
+    "licence": "CC BY 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by/4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Berlaymont_building_Brussels.jpg"
+   }
+  },
+  "global-ugrad-central-asia": {
+   "undergrad": true,
+   "exchange": true,
+   "image": {
+    "src": "/images/scholarships/global-ugrad-central-asia.webp",
+    "alt": "Iowa Old Capitol Museum, Iowa City - University of Iowa",
+    "credit": "Tony Webster from Minneapolis, Minnesota, United States",
+    "licence": "CC BY 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by/2.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Iowa_Old_Capitol_Museum,_Iowa_City_-_University_of_Iowa_(42696029261).jpg"
+   }
+  },
+  "erasmus-plus-credit-mobility": {
+   "exchange": true,
+   "image": {
+    "src": "/images/scholarships/erasmus-plus-credit-mobility.webp",
+    "alt": "The Berlaymont illuminated with Ukrainian flag's colours (P-070336-00-01)",
+    "credit": "Lukasz Kobus",
+    "licence": "CC BY 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by/4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:The_Berlaymont_illuminated_with_Ukrainian_flag%27s_colours_(P-070336-00-01).jpg"
+   }
+  },
+  "jasso-exchange-support": {
+   "exchange": true,
+   "image": {
+    "src": "/images/scholarships/jasso-exchange-support.webp",
+    "alt": "Waseda University - Okuma Auditorium -",
+    "credit": "XIIIfromTOKYO",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Waseda_University_-_Okuma_Auditorium_-.JPG"
+   }
+  },
+  "romania-mfa-non-eu-2027": {
+   "image": {
+    "src": "/images/scholarships/romania-mfa-non-eu-2027.webp",
+    "alt": "Ateneul Român 1",
+    "credit": "Pudelek (Marcin Szala)",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Ateneul_Rom%C3%A2n_1.jpg"
+   }
+  },
+  "czech-government-scholarships-developing-countries": {
+   "image": {
+    "src": "/images/scholarships/czech-government-scholarships-developing-countries.webp",
+    "alt": "Charles University, Prague",
+    "credit": "Slyronit",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Charles_University,_Prague.jpg"
+   }
+  },
+  "deutschlandstipendium": {
+   "image": {
+    "src": "/images/scholarships/deutschlandstipendium.webp",
+    "alt": "Heidelberg Universitätsbibliothek 2003",
+    "credit": "Jan Beckendorf",
+    "licence": "CC BY-SA 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/2.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Heidelberg_Universitätsbibliothek_2003.jpg"
+   }
+  },
+  "global-korea-scholarship-graduate": {
+   "image": {
+    "src": "/images/scholarships/global-korea-scholarship-graduate.webp",
+    "alt": "Seoul National University Yeongeon Campus at Naksan Park view",
+    "credit": "U2em",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Seoul_National_University_Yeongeon_Campus_at_Naksan_Park_view.jpg"
+   }
+  },
+  "nl-scholarship": {
+   "image": {
+    "src": "/images/scholarships/nl-scholarship.webp",
+    "alt": "Delft, straatzicht de Oude Delft vanaf de Bagijnhofbrug foto6-  12.08",
+    "credit": "Michielverbeek",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Delft,_straatzicht_de_Oude_Delft_vanaf_de_Bagijnhofbrug_foto6-_2016-03-13_12.08.JPG"
+   }
+  },
+  "swiss-government-excellence-scholarships": {
+   "image": {
+    "src": "/images/scholarships/swiss-government-excellence-scholarships.webp",
+    "alt": "Bern Federal Palace Central Dome  18-43",
+    "credit": "Axel Tschentscher",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Bern_Federal_Palace_Central_Dome_2019-10-16_18-43.jpg"
+   }
+  },
+  "eiffel-excellence-scholarship": {
+   "image": {
+    "src": "/images/scholarships/eiffel-excellence-scholarship.webp",
+    "alt": "Université Paris-Sorbonne Rue de Jacques",
+    "credit": "New York-air",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Universit%C3%A9_Paris-Sorbonne_Rue_de_Jacques.jpg"
+   }
+  },
+  "swedish-institute-scholarships-global-professionals": {
+   "image": {
+    "src": "/images/scholarships/swedish-institute-scholarships-global-professionals.webp",
+    "alt": "Stockholm University campus building",
+    "credit": "Astra Travasso",
+    "licence": "CC BY 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by/4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Stockholm_University_campus_building.jpg"
+   }
+  },
+  "commonwealth-masters-scholarships": {
+   "image": {
+    "src": "/images/scholarships/commonwealth-masters-scholarships.webp",
+    "alt": "Senate House, University of London 2",
+    "credit": "Paul the Archivist",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Senate_House,_University_of_London_2.jpg"
+   }
+  },
+  "government-of-ireland-international-education-scholarships": {
+   "image": {
+    "src": "/images/scholarships/government-of-ireland-international-education-scholarships.webp",
+    "alt": "Trinity College, Dublin, Ireland (Front Square)",
+    "credit": "The original uploader was Jasonm at English Wikipedia.",
+    "licence": "CC BY-SA 2.5",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/2.5",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Trinity_College,_Dublin,_Ireland_(Front_Square).jpg"
+   }
+  },
+  "lse-graduate-support-scheme": {
+   "image": {
+    "src": "/images/scholarships/lse-graduate-support-scheme.webp",
+    "alt": "Centre Building, LSE from LSE Square",
+    "credit": "Shadowssettle",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Centre_Building,_LSE_from_LSE_Square.jpg"
+   }
+  },
+  "aga-khan-foundation-international-scholarship-programme": {
+   "image": {
+    "src": "/images/scholarships/aga-khan-foundation-international-scholarship-programme.webp",
+    "alt": "Graz University-Library reading-room",
+    "credit": "Dr. Marcus Gossler",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Graz_University-Library_reading-room.jpg"
+   }
+  },
+  "joint-japan-world-bank-graduate-scholarship": {
+   "image": {
+    "src": "/images/scholarships/joint-japan-world-bank-graduate-scholarship.webp",
+    "alt": "World Bank building at Washington",
+    "credit": "Shiny Things",
+    "licence": "CC BY 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by/2.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:World_Bank_building_at_Washington.jpg"
+   }
+  },
+  "mext-research-students-scholarship": {
+   "image": {
+    "src": "/images/scholarships/mext-research-students-scholarship.webp",
+    "alt": "Yasuda Auditorium - Tokyo University 4",
+    "credit": "Kakidai",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Yasuda_Auditorium_-_Tokyo_University_4.jpg"
+   }
+  },
+  "emjm-mundus-journalism": {
+   "image": {
+    "src": "/images/scholarships/emjm-mundus-journalism.webp",
+    "alt": "Campus Aarhus C (Bygning A) 02",
+    "credit": "RhinoMind",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Campus_Aarhus_C_(Bygning_A)_02.jpg"
+   }
+  },
+  "emjm-radmep": {
+   "image": {
+    "src": "/images/scholarships/emjm-radmep.webp",
+    "alt": "Univerzita Karlova v Praze Právnická fakulta",
+    "credit": "Mister No",
+    "licence": "CC BY 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by/3.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Univerzita_Karlova_v_Praze_Pr%C3%A1vnick%C3%A1_fakulta_-_panoramio.jpg"
+   }
+  },
+  "emjm-tfmasa": {
+   "image": {
+    "src": "/images/scholarships/emjm-tfmasa.webp",
+    "alt": "Paris, Sainte-Ursule de la Sorbonne -- 2014 -- 1661",
+    "credit": "Dietmar Rabich",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Paris,_Sainte-Ursule_de_la_Sorbonne_--_2014_--_1661.jpg"
+   }
+  },
+  "emjm-international-law-security-peace": {
+   "image": {
+    "src": "/images/scholarships/emjm-international-law-security-peace.webp",
+    "alt": "La haye palais paix jardin face",
+    "credit": "Velvet",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:La_haye_palais_paix_jardin_face.JPG"
+   }
+  },
+  "emjm-steps": {
+   "image": {
+    "src": "/images/scholarships/emjm-steps.webp",
+    "alt": "Coimbra University Tower 2",
+    "credit": "Elapsed at English Wikipedia",
+    "licence": "Public domain",
+    "licence_url": null,
+    "source_url": "https://commons.wikimedia.org/wiki/File:Coimbra_University_Tower_2.jpg"
+   }
+  },
+  "emjm-multidiverse": {
+   "image": {
+    "src": "/images/scholarships/emjm-multidiverse.webp",
+    "alt": "Warsaw 2023 109 University Main Gate",
+    "credit": "Scotch Mist",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Warsaw_2023_109_University_Main_Gate.jpg"
+   }
+  },
+  "emjm-cybersure": {
+   "image": {
+    "src": "/images/scholarships/emjm-cybersure.webp",
+    "alt": "Tartu Ülikooli peahoone 2012",
+    "credit": "Ivar Leidus",
+    "licence": "CC BY-SA 3.0 ee",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/ee/deed.en",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Tartu_%C3%9Clikooli_peahoone_2012.jpg"
+   }
+  },
+  "emjm-choreomundus": {
+   "image": {
+    "src": "/images/scholarships/emjm-choreomundus.webp",
+    "alt": "Polytech - Cézeaux - UCA",
+    "credit": "Université Clermont Auvergne",
+    "licence": "CC BY-SA 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/2.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Polytech_-_C%C3%A9zeaux_-_UCA.jpg"
+   }
+  },
+  "emjm-emmir": {
+   "image": {
+    "src": "/images/scholarships/emjm-emmir.webp",
+    "alt": "UniOLWechloy",
+    "credit": "WilfriedC (Wilfried Cordes)",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:UniOLWechloy.JPG"
+   }
+  },
+  "emjm-globed": {
+   "image": {
+    "src": "/images/scholarships/emjm-globed.webp",
+    "alt": "The Cloisters at the University of Glasgow",
+    "credit": "Atreides83",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:The_Cloisters_at_the_University_of_Glasgow.jpg"
+   }
+  },
+  "hong-kong-phd-fellowship-scheme": {
+   "image": {
+    "src": "/images/scholarships/hong-kong-phd-fellowship-scheme.webp",
+    "alt": "International Commerce Centre on Victoria Harbour",
+    "credit": "Wilfredor",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "source_url": "https://commons.wikimedia.org/wiki/File:International_Commerce_Centre_on_Victoria_Harbour.jpg"
+   }
+  },
+  "kaust-fellowship": {
+   "image": {
+    "src": "/images/scholarships/kaust-fellowship.webp",
+    "alt": "KAUST Campus",
+    "credit": "juhotski",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:KAUST_Campus_-_panoramio.jpg"
+   }
+  },
+  "taiwan-moe-scholarship": {
+   "image": {
+    "src": "/images/scholarships/taiwan-moe-scholarship.webp",
+    "alt": "NTU Royal Palm Boulevard 20140407",
+    "credit": "Daderot",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "source_url": "https://commons.wikimedia.org/wiki/File:NTU_Royal_Palm_Boulevard_20140407.jpg"
+   }
+  },
+  "adb-japan-scholarship-program": {
+   "image": {
+    "src": "/images/scholarships/adb-japan-scholarship-program.webp",
+    "alt": "Asian Development Bank headquarters",
+    "credit": "Eugene Alvin Villar (seav)",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Asian_Development_Bank_headquarters.jpg"
+   }
+  },
+  "heinrich-boell-foundation-scholarships": {
+   "image": {
+    "src": "/images/scholarships/heinrich-boell-foundation-scholarships.webp",
+    "alt": "Berlin-Mitte Humboldt-Uni 05-2014",
+    "credit": "A.Savin",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Berlin-Mitte_Humboldt-Uni_05-2014.jpg"
+   }
+  },
+  "nawa-banach-scholarship-programme": {
+   "image": {
+    "src": "/images/scholarships/nawa-banach-scholarship-programme.webp",
+    "alt": "Krakow- Collegium Novum- brama wejsciowa 02",
+    "credit": "Jar.ciurus",
+    "licence": "CC BY-SA 3.0 pl",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/pl/deed.en",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Krakow-_Collegium_Novum-_brama_wejsciowa_02.jpg"
+   }
+  },
+  "kcl-business-school-global-scholarships": {
+   "image": {
+    "src": "/images/scholarships/kcl-business-school-global-scholarships.webp",
+    "alt": "Strand Building, King's College London",
+    "credit": "Shadowssettle",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Strand_Building,_King%27s_College_London.jpg"
+   }
+  },
+  "brunei-government-scholarship-2027": {
+   "image": {
+    "src": "/images/scholarships/brunei-government-scholarship-2027.webp",
+    "alt": "Universiti Brunei Darussalam 2 October 2024 09",
+    "credit": "Pangalau",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Universiti_Brunei_Darussalam_2_October_2024_09.jpg"
+   }
+  },
+  "russian-government-quota": {
+   "image": {
+    "src": "/images/scholarships/russian-government-quota.webp",
+    "alt": "Moscow State University crop",
+    "credit": "Dmitry A. Mottl (cropped by King of Hearts)",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Moscow_State_University_crop.jpg"
+   }
+  },
+  "brown-international-aid": {
+   "image": {
+    "src": "/images/scholarships/brown-international-aid.webp",
+    "alt": "Brown's University Hall in 2007",
+    "credit": "Kenneth C. Zirkel",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Brown%27s_University_Hall_in_2007.jpg"
+   }
+  },
+  "jasso-honors-privately-financed": {
+   "image": {
+    "src": "/images/scholarships/jasso-honors-privately-financed.webp",
+    "alt": "Kyoto University Clock Tower",
+    "credit": "Soraie8288",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Kyoto_University_Clock_Tower.jpg"
+   }
+  },
+  "emjm-deai": {
+   "image": {
+    "src": "/images/scholarships/emjm-deai.webp",
+    "alt": "Coats of arms of alumnus on the walls of the Archiginnasio of Bologna. Italy",
+    "credit": "Ввласенко",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Coats_of_arms_of_alumnus_on_the_walls_of_the_Archiginnasio_of_Bologna._Italy.jpg"
+   }
+  },
+  "emjm-sucat": {
+   "image": {
+    "src": "/images/scholarships/emjm-sucat.webp",
+    "alt": "Fachada escuelas mayores Universidad de Salamanca",
+    "credit": "Nacaru",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Fachada_escuelas_mayores_Universidad_de_Salamanca.jpg"
+   }
+  },
+  "emjm-maisi": {
+   "image": {
+    "src": "/images/scholarships/emjm-maisi.webp",
+    "alt": "Central library of the Catholic University of Leuven (DSCF4528)",
+    "credit": "Trougnouf (Benoit Brummer)",
+    "licence": "CC BY 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by/4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Central_library_of_the_Catholic_University_of_Leuven_(DSCF4528).jpg"
+   }
+  },
+  "emjm-europubhealth-plus": {
+   "image": {
+    "src": "/images/scholarships/emjm-europubhealth-plus.webp",
+    "alt": "Firth Court 070416",
+    "credit": "Paolo Margari from Sheffield, United Kingdom / Italy",
+    "licence": "CC BY-SA 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/2.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Firth_Court_070416.jpg"
+   }
+  },
+  "epfl-master-excellence-fellowships": {
+   "image": {
+    "src": "/images/scholarships/epfl-master-excellence-fellowships.webp",
+    "alt": "EPFL Rolex Learning Center-008",
+    "credit": "Fridolin freudenfett",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:EPFL_Rolex_Learning_Center-008.jpg"
+   }
+  },
+  "sciences-po-emile-boutmy-scholarship": {
+   "image": {
+    "src": "/images/scholarships/sciences-po-emile-boutmy-scholarship.webp",
+    "alt": "Salles de lecture 27 rue Saint Guillaume",
+    "credit": "Eva.arfwedson",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Salles_de_lecture_27_rue_Saint_Guillaume.jpg"
+   }
+  },
+  "polimi-merit-based-international-scholarships": {
+   "image": {
+    "src": "/images/scholarships/polimi-merit-based-international-scholarships.webp",
+    "alt": "Library of Engeneering of the Polytechnic University of Milan",
+    "credit": "Jwslubbock",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Library_of_Engeneering_of_the_Polytechnic_University_of_Milan.jpg"
+   }
+  },
+  "chinese-government-scholarship-university-program": {
+   "image": {
+    "src": "/images/scholarships/chinese-government-scholarship-university-program.webp",
+    "alt": "Guanghua Tower of Fudan University",
+    "credit": "谢宇杰",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Guanghua_Tower_of_Fudan_University.jpg"
+   }
+  },
+  "nawa-general-anders-2027": {
+   "image": {
+    "src": "/images/scholarships/nawa-general-anders-2027.webp",
+    "alt": "Warsaw University Library 2010 02",
+    "credit": "Szczebrzeszynski",
+    "licence": "Public domain",
+    "licence_url": null,
+    "source_url": "https://commons.wikimedia.org/wiki/File:Warsaw_University_Library_2010_02.jpg"
+   }
+  },
+  "tajikistan-durakhshandagon-2027": {
+   "image": {
+    "src": "/images/scholarships/tajikistan-durakhshandagon-2027.webp",
+    "alt": "Dushanbe park",
+    "credit": "Nikolamikovic82",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Dushanbe_park.jpg"
+   }
+  },
+  "emjm-ediss": {
+   "image": {
+    "src": "/images/scholarships/emjm-ediss.webp",
+    "alt": "Falmer House, University of Sussex",
+    "credit": "Paul Gillett",
+    "licence": "CC BY-SA 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/2.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Falmer_House,_University_of_Sussex_-_geograph.org.uk_-_2899584.jpg"
+   }
+  },
+  "invest-your-talent-in-italy": {
+   "image": {
+    "src": "/images/scholarships/invest-your-talent-in-italy.webp",
+    "alt": "Politecnico di Torino",
+    "credit": "Ravanellidiciamo",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Politecnico_di_Torino.JPG"
+   }
+  },
+  "italian-government-maeci-scholarships": {
+   "image": {
+    "src": "/images/scholarships/padua-international-excellence-2027.webp",
+    "alt": "Padua, Palazzo del Bo, Cortile Antico",
+    "credit": "Armin Kleiner",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Padua,_Palazzo_del_Bo,_Cortile_Antico.jpg"
+   }
+  }
+ }
+}

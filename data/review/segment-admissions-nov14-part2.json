@@ -1,0 +1,3286 @@
+[
+  {
+    "university_id": "3158b0fa-0d63-5ac9-b57c-821510d9b1f8",
+    "name": "Universität Konstanz",
+    "country": "DE",
+    "english_ielts": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_toefl_ibt": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_duolingo": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_waivers": {
+      "value": "No university-wide IELTS/TOEFL minimum for bachelor applicants established; language proof is programme-specific. Konstanz states no bachelor programmes are currently taught in English.",
+      "source_url": "https://www.uni-konstanz.de/en/study/before-you-study/application-and-enrolment/faq-application-process/",
+      "checked_at": "2026-11-14"
+    },
+    "application_route": {
+      "value": "Direct online application through ZEuS; restricted programmes may require prior Hochschulstart/DoSV registration.",
+      "source_url": "https://www.uni-konstanz.de/en/study/before-you-study/application-and-enrolment/bachelors-degree-and-first-state-examination-in-law/higher-education-entrance-qualification-earned-in-the-eu-or-in-switzerland-1/",
+      "checked_at": "2026-11-14"
+    },
+    "application_fee": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "deadlines": {
+      "value": "Latest published recurring dates: winter semester 15 July (restricted) or 15 September (open); summer 15 January / 15 March. Page does not label a 2027 cycle.",
+      "source_url": "https://www.uni-konstanz.de/en/study/before-you-study/application-and-enrolment/bachelors-degree-and-first-state-examination-in-the-law/higher-education-entrance-qualification-earned-in-the-eu-or-in-switzerland-1/",
+      "checked_at": "2026-11-14"
+    },
+    "international_tuition": {
+      "value": "€1,709 per semester for non-EU/EEA degree-seeking students, effective summer semester 2026; €3,418 per academic year if two semesters. Semester contribution separate.",
+      "source_url": "https://www.uni-konstanz.de/en/international-office/study-in-konstanz/degree-studies/fees-and-scholarships/",
+      "checked_at": "2026-11-14"
+    },
+    "international_aid": {
+      "value": "Yes; university lists scholarships for academically strong students and hardship emergency aid; eligibility varies.",
+      "source_url": "https://www.uni-konstanz.de/en/international-office/study-in-konstanz/degree-studies/fees-and-scholarships/",
+      "checked_at": "2026-11-14"
+    },
+    "central_asian_cis_scholarships": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "foundation_for_11_year_schooling": {
+      "value": "No institution-run foundation year found on reviewed admissions pages; applicants may need a Studienkolleg depending on qualification recognition.",
+      "source_url": "https://www.uni-konstanz.de/en/study/before-you-study/application-and-enrolment/bachelors-degree-and-first-state-examination-in-law/higher-education-entrance-qualification-earned-in-the-eu-or-in-switzerland-1/",
+      "checked_at": "2026-11-14"
+    },
+    "verification_status": "staged",
+    "sources": [
+      "https://www.uni-konstanz.de/en/international-office/study-in-konstanz/degree-studies/fees-and-scholarships/",
+      "https://www.uni-konstanz.de/en/study/before-you-study/application-and-enrolment/bachelors-degree-and-first-state-examination-in-law/higher-education-entrance-qualification-earned-in-the-eu-or-in-switzerland-1/",
+      "https://www.uni-konstanz.de/en/study/before-you-study/application-and-enrolment/faq-application-process/"
+    ]
+  },
+  {
+    "university_id": "c7351cbe-4440-5eda-afe1-ec99b332fbcc",
+    "name": "Universität Hannover",
+    "country": "DE",
+    "english_ielts": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_toefl_ibt": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_duolingo": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_waivers": {
+      "value": "International applicants to all bachelor programmes must provide German B1 at application and C1 by enrollment; programme-specific foreign language tests can apply. No universal English test minimum published.",
+      "source_url": "https://www.uni-hannover.de/en/studium/vor-dem-studium/bewerbung-zulassung/voraussetzungen-zum-studium/sprachnachweise",
+      "checked_at": "2026-11-14"
+    },
+    "application_route": {
+      "value": "Direct university application portal for bachelor programmes; international certificates may require uni-assist VPD/grade conversion.",
+      "source_url": "https://www.uni-hannover.de/en/studium/vor-dem-studium/bewerbung-zulassung/voraussetzungen-zum-studium/zulassungsarten",
+      "checked_at": "2026-11-14"
+    },
+    "application_fee": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "deadlines": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "international_tuition": {
+      "value": "No international undergraduate tuition amount verified; semester fee is €453.16 for winter semester 2026/27 (semester contribution, not tuition).",
+      "source_url": "https://www.uni-hannover.de/en/studium/finanzierung-foerderung/studienkosten/",
+      "checked_at": "2026-11-14"
+    },
+    "international_aid": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "central_asian_cis_scholarships": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "foundation_for_11_year_schooling": {
+      "value": "No university foundation programme found; university entrance qualification must be recognized.",
+      "source_url": "https://www.uni-hannover.de/en/studium/vor-dem-studium/bewerbung-zulassung/voraussetzungen-zum-studium/zulassungsarten",
+      "checked_at": "2026-11-14"
+    },
+    "verification_status": "staged",
+    "sources": [
+      "https://www.uni-hannover.de/en/studium/vor-dem-studium/bewerbung-zulassung/voraussetzungen-zum-studium/sprachnachweise",
+      "https://www.uni-hannover.de/en/studium/vor-dem-studium/bewerbung-zulassung/voraussetzungen-zum-studium/zulassungsarten",
+      "https://www.uni-hannover.de/en/studium/finanzierung-foerderung/studienkosten/"
+    ]
+  },
+  {
+    "university_id": "d5073301-45d5-536d-a8ae-432cda22fa82",
+    "name": "Rheinland-Pfälzische Technische Universität Kaiserslautern-Landau",
+    "country": "DE",
+    "english_ielts": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_toefl_ibt": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_duolingo": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_waivers": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "application_route": {
+      "value": "RPTU application portal; international HZB assessed by RPTU at Kaiserslautern (evaluation fee) or uni-assist at Landau, depending on campus/programme.",
+      "source_url": "https://rptu.de/en/studies/prior-to-studies/application",
+      "checked_at": "2026-11-14"
+    },
+    "application_fee": {
+      "value": "€60 certificate evaluation fee for international HZB at Kaiserslautern; Landau uses uni-assist (fee charged by uni-assist).",
+      "source_url": "https://rptu.de/en/studies/prior-to-studies/application",
+      "checked_at": "2026-11-14"
+    },
+    "deadlines": {
+      "value": "For international school qualifications, winter-semester deadlines vary by campus/admission mode: 15 June for non-EU restricted and open Landau; 15 July Kaiserslautern restricted; page gives recurring dates without cycle year.",
+      "source_url": "https://rptu.de/en/studies/prior-to-studies/application",
+      "checked_at": "2026-11-14"
+    },
+    "international_tuition": {
+      "value": "Annual international bachelor tuition not established; official page identifies the semester fee as stated in admission letter, and lists €381.80 semester fee for winter 2026/27.",
+      "source_url": "https://rptu.de/en/studies/during-studies/re-registration",
+      "checked_at": "2026-11-14"
+    },
+    "international_aid": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "central_asian_cis_scholarships": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "foundation_for_11_year_schooling": {
+      "value": "Yes if the foreign HZB does not permit direct entry: Studienkolleg / Feststellungsprüfung required; RPTU says the assessment test is not held at RPTU.",
+      "source_url": "https://rptu.de/en/studies/prior-to-studies/application",
+      "checked_at": "2026-11-14"
+    },
+    "verification_status": "staged",
+    "sources": [
+      "https://rptu.de/en/studies/prior-to-studies/application",
+      "https://rptu.de/en/studies/during-studies/re-registration"
+    ]
+  },
+  {
+    "university_id": "fa57b1bc-e7b1-52a9-8a4f-c13c80c4ce70",
+    "name": "Universität Augsburg",
+    "country": "DE",
+    "english_ielts": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_toefl_ibt": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_duolingo": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_waivers": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "application_route": {
+      "value": "Direct VIBS portal application; foreign credentials require a uni-assist VPD, which can take 6–8 weeks.",
+      "source_url": "https://www.uni-augsburg.de/en/studium/bewerbung/bewerbung/internationale-bewerber/",
+      "checked_at": "2026-11-14"
+    },
+    "application_fee": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "deadlines": {
+      "value": "Summer semester 2027: foreign-credential applications for restricted programmes and Studienkolleg due 15 January 2027; open-admission applications due 17 March 2027.",
+      "source_url": "https://www.uni-augsburg.de/en/studium/bewerbung/bewerbung/internationale-bewerber/",
+      "checked_at": "2026-11-14"
+    },
+    "international_tuition": {
+      "value": "No tuition fees currently charged; semester contribution applies. Academic year not stated on page.",
+      "source_url": "https://www.uni-augsburg.de/en/studium/studieren-augsburg/stipendien/",
+      "checked_at": "2026-11-14"
+    },
+    "international_aid": {
+      "value": "Yes; university posts open scholarship calls via International Office news; specific international eligibility varies.",
+      "source_url": "https://www.uni-augsburg.de/en/studium/studieren-augsburg/stipendien/",
+      "checked_at": "2026-11-14"
+    },
+    "central_asian_cis_scholarships": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "foundation_for_11_year_schooling": {
+      "value": "Yes; preparatory college (Studienkolleg) admission route is described for international applicants.",
+      "source_url": "https://www.uni-augsburg.de/en/studium/bewerbung/bewerbung/internationale-bewerber/",
+      "checked_at": "2026-11-14"
+    },
+    "verification_status": "staged",
+    "sources": [
+      "https://www.uni-augsburg.de/en/studium/bewerbung/bewerbung/internationale-bewerber/",
+      "https://www.uni-augsburg.de/en/studium/studieren-augsburg/stipendien/"
+    ]
+  },
+  {
+    "university_id": "216baefb-01e2-5251-86f0-b97b52adb6ed",
+    "name": "Phillips-Universität Marburg",
+    "country": "DE",
+    "english_ielts": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_toefl_ibt": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_duolingo": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_waivers": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "application_route": {
+      "value": "Apply through uni-assist for first-year undergraduate international applications; uni-assist forwards assessment to Marburg.",
+      "source_url": "https://www.uni-marburg.de/en/studying/before-studying/application-admission-deadlines/undergraduate-application/admissions-process",
+      "checked_at": "2026-11-14"
+    },
+    "application_fee": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "deadlines": {
+      "value": "Latest published recurring windows for foreign school certificates: winter open admission 1 May–15 August; restricted 1 May–15 July; Studienkolleg 1 March–15 April. Page does not label cycle year.",
+      "source_url": "https://www.uni-marburg.de/en/studying/before-studying/application-admission-deadlines/deadlines",
+      "checked_at": "2026-11-14"
+    },
+    "international_tuition": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "international_aid": {
+      "value": "No regular bachelor scholarship system for foreign students identified on reviewed university page; programme page states there is no regular system at BA level.",
+      "source_url": "https://www.uni-marburg.de/en/fb10/languages-literatures/studying",
+      "checked_at": "2026-11-14"
+    },
+    "central_asian_cis_scholarships": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "foundation_for_11_year_schooling": {
+      "value": "Yes; official deadline page has a Studienkolleg application track (eligibility depends on certificate assessment).",
+      "source_url": "https://www.uni-marburg.de/en/studying/before-studying/application-admission-deadlines/deadlines",
+      "checked_at": "2026-11-14"
+    },
+    "verification_status": "staged",
+    "sources": [
+      "https://www.uni-marburg.de/en/studying/before-studying/application-admission-deadlines/deadlines",
+      "https://www.uni-marburg.de/en/studying/before-studying/application-admission-deadlines/undergraduate-application/admissions-process",
+      "https://www.uni-marburg.de/en/fb10/languages-literatures/studying"
+    ]
+  },
+  {
+    "university_id": "6a9e2556-fc5f-56a2-bca0-9364f099818c",
+    "name": "Seoul National University",
+    "country": "KR",
+    "english_ielts": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_toefl_ibt": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_duolingo": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_waivers": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "application_route": {
+      "value": "Direct application through SNU online application portal (international freshman application).",
+      "source_url": "https://en.snu.ac.kr/admission/undergraduate/application",
+      "checked_at": "2026-11-14"
+    },
+    "application_fee": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "deadlines": {
+      "value": "Spring 2027 application: 6–9 July 2026; recommendation letters due 10 July 2026.",
+      "source_url": "https://en.snu.ac.kr/admission/overview/notice?bbsidx=170606&md=v",
+      "checked_at": "2026-11-14"
+    },
+    "international_tuition": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "international_aid": {
+      "value": "Yes; SNU lists GKS for international undergraduate applicants, covering tuition, living allowance and airfare; apply through national embassy process.",
+      "source_url": "https://en.snu.ac.kr/admission/undergraduate/scholarships/before_admission",
+      "checked_at": "2026-11-14"
+    },
+    "central_asian_cis_scholarships": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "foundation_for_11_year_schooling": {
+      "value": "No foundation route found in the reviewed international freshman information; foreign applicants are assessed on secondary credentials.",
+      "source_url": "https://en.snu.ac.kr/admission/undergraduate/application",
+      "checked_at": "2026-11-14"
+    },
+    "verification_status": "staged",
+    "sources": [
+      "https://en.snu.ac.kr/admission/undergraduate/application",
+      "https://en.snu.ac.kr/admission/undergraduate/scholarships/before_admission"
+    ]
+  },
+  {
+    "university_id": "b5f25065-0a86-517e-91f0-ff6bbe8c81d3",
+    "name": "Yonsei University",
+    "country": "KR",
+    "english_ielts": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_toefl_ibt": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_duolingo": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_waivers": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "application_route": {
+      "value": "Direct online application through Yonsei Office of Admissions (JinhakApply portal).",
+      "source_url": "https://admission.yonsei.ac.kr/seoul/admission/html/counsel/noticeView.asp?BBS_NO=3520&s_data=2027",
+      "checked_at": "2026-11-14"
+    },
+    "application_fee": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "deadlines": {
+      "value": "Spring 2027 international admission: online application 1–17 September 2026; original documents due 30 September 2026.",
+      "source_url": "https://admission.yonsei.ac.kr/seoul/admission/html/counsel/noticeView.asp?BBS_NO=3520&s_data=2027",
+      "checked_at": "2026-11-14"
+    },
+    "international_tuition": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "international_aid": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "central_asian_cis_scholarships": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "foundation_for_11_year_schooling": {
+      "value": "No foundation year for 11-year certificates verified; the reviewed international freshman track requires high-school graduation/equivalent, but certificate equivalence is not detailed here.",
+      "source_url": "https://admission.yonsei.ac.kr/seoul/admission/html/counsel/noticeView.asp?BBS_NO=3520&s_data=2027",
+      "checked_at": "2026-11-14"
+    },
+    "verification_status": "staged",
+    "sources": [
+      "https://admission.yonsei.ac.kr/seoul/admission/html/counsel/noticeView.asp?BBS_NO=3520&s_data=2027"
+    ]
+  },
+  {
+    "university_id": "6d72f6ce-a30c-54a4-8b99-97ae04a68a88",
+    "name": "Korea University",
+    "country": "KR",
+    "english_ielts": {
+      "value": "IELTS Academic accepted. IELTS 7.0 is specified for assignment to some intended majors after first year; this is not stated as a universal freshman admission minimum.",
+      "source_url": "https://oia.korea.ac.kr/_res/oia/etc/Application_Guide_for_Fall_2026_Freshman%28ENG%29.pdf",
+      "checked_at": "2026-11-14"
+    },
+    "english_toefl_ibt": {
+      "value": "TOEFL iBT accepted. Score 100 required for assignment to some majors; not a universal admission minimum.",
+      "source_url": "https://oia.korea.ac.kr/_res/oia/etc/Application_Guide_for_Fall_2026_Freshman%28ENG%29.pdf",
+      "checked_at": "2026-11-14"
+    },
+    "english_duolingo": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_waivers": {
+      "value": "Applicants who completed all secondary education in English may submit school transcript and medium-of-instruction confirmation; for Spring 2027 all applicants must meet an accepted proficiency pathway.",
+      "source_url": "https://oia.korea.ac.kr/_res/oia/etc/Application_Guide_for_Fall_2026_Freshman%28ENG%29.pdf",
+      "checked_at": "2026-11-14"
+    },
+    "application_route": {
+      "value": "Direct online application via Korea University Office of International Affairs website.",
+      "source_url": "https://oia.korea.ac.kr/_res/oia/etc/Application_Guide_for_Fall_2026_Freshman%28ENG%29.pdf",
+      "checked_at": "2026-11-14"
+    },
+    "application_fee": {
+      "value": "KRW 150,000 humanities/science; KRW 200,000 art & design (Fall 2026 guide).",
+      "source_url": "https://oia.korea.ac.kr/_res/oia/etc/Application_Guide_for_Fall_2026_Freshman%28ENG%29.pdf",
+      "checked_at": "2026-11-14"
+    },
+    "deadlines": {
+      "value": "Fall 2026 guide online application window 2–27 March 2026; guide includes 2027 pre-announcement but this calendar is Fall 2026 cycle.",
+      "source_url": "https://oia.korea.ac.kr/_res/oia/etc/Application_Guide_for_Fall_2026_Freshman%28ENG%29.pdf",
+      "checked_at": "2026-11-14"
+    },
+    "international_tuition": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "international_aid": {
+      "value": "Yes; merit-based international undergraduate awards include full/partial tuition scholarships; selection based on admission evaluation.",
+      "source_url": "https://oia.korea.ac.kr/_res/oia/etc/Application_Guide_for_Fall_2026_Freshman%28ENG%29.pdf",
+      "checked_at": "2026-11-14"
+    },
+    "central_asian_cis_scholarships": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "foundation_for_11_year_schooling": {
+      "value": "No foundation option established in the freshman guide; requires completion of a regular secondary curriculum equivalent to Korean high school.",
+      "source_url": "https://oia.korea.ac.kr/_res/oia/etc/Application_Guide_for_Fall_2026_Freshman%28ENG%29.pdf",
+      "checked_at": "2026-11-14"
+    },
+    "verification_status": "staged",
+    "sources": [
+      "https://oia.korea.ac.kr/_res/oia/etc/Application_Guide_for_Fall_2026_Freshman%28ENG%29.pdf"
+    ]
+  },
+  {
+    "university_id": "bb32340f-54ba-5885-82ba-4ae645d93930",
+    "name": "Korea Advanced Institute of Science & Technology",
+    "country": "KR",
+    "english_ielts": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_toefl_ibt": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_duolingo": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_waivers": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "application_route": {
+      "value": "Direct KAIST international undergraduate online application.",
+      "source_url": "https://admission.kaist.ac.kr/intl-undergraduate/application/ApplicationGuide/ApplicationTimeline",
+      "checked_at": "2026-11-14"
+    },
+    "application_fee": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "deadlines": {
+      "value": "2027 admission: Spring early application 22 Sep–22 Oct 2026; Fall early 10 Nov 2026–14 Jan 2027; Fall regular same dates shown for regular track? Official timeline table lists Nov 10–Jan 14 2027.",
+      "source_url": "https://admission.kaist.ac.kr/intl-undergraduate/application/ApplicationGuide/ApplicationTimeline",
+      "checked_at": "2026-11-14"
+    },
+    "international_tuition": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "international_aid": {
+      "value": "Yes; KAIST scholarship available to international admits, full tuition exemption for 8 semesters, KRW 350,000 monthly living expenses and health insurance; no separate application.",
+      "source_url": "https://admission.kaist.ac.kr/intl-undergraduate/support/scholarships/kaist/",
+      "checked_at": "2026-11-14"
+    },
+    "central_asian_cis_scholarships": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "foundation_for_11_year_schooling": {
+      "value": "No foundation route identified; high-school graduation by February/August 2027 required for respective entry term.",
+      "source_url": "https://admission.kaist.ac.kr/intl-undergraduate/before/sub02",
+      "checked_at": "2026-11-14"
+    },
+    "verification_status": "staged",
+    "sources": [
+      "https://admission.kaist.ac.kr/intl-undergraduate/application/ApplicationGuide/ApplicationTimeline",
+      "https://admission.kaist.ac.kr/intl-undergraduate/support/scholarships/kaist/",
+      "https://admission.kaist.ac.kr/intl-undergraduate/before/sub02"
+    ]
+  },
+  {
+    "university_id": "dba5fd6f-9afd-5011-aab8-7d0e6cb6ac2a",
+    "name": "Sungkyunkwan University",
+    "country": "KR",
+    "english_ielts": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_toefl_ibt": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_duolingo": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_waivers": {
+      "value": "The 2027 spring international freshmen guide covers language evidence by track; no general IELTS/TOEFL minimum established from the official guide landing page.",
+      "source_url": "https://skb.skku.edu/oiss/admission_undergraduate.do?articleNo=227497&attachNo=204363&mode=download",
+      "checked_at": "2026-11-14"
+    },
+    "application_route": {
+      "value": "Direct online application through SKKU international admissions; 2027 Spring freshmen round 1 applications ran 12–21 August 2026, with documents due 4 September 2026.",
+      "source_url": "https://admission-global.skku.edu/eng/etc/bbs_list.html?ctg_cd=Undergraduate",
+      "checked_at": "2026-11-14"
+    },
+    "application_fee": {
+      "value": "KRW150,000 for international freshman special admission (2027 Spring guide).",
+      "source_url": "https://oiss.skku.edu/oiss/admission_undergraduate.do?articleNo=227497&attachNo=204362&mode=download",
+      "checked_at": "2026-11-14"
+    },
+    "deadlines": {
+      "value": "2027 Spring entry: round 1 online application 12–21 August 2026; round 2 4–13 November 2026; document deadlines 4 September and 27 November 2026, respectively.",
+      "source_url": "https://oiss.skku.edu/oiss/admission_undergraduate.do?articleNo=227492&mode=view",
+      "checked_at": "2026-11-14"
+    },
+    "international_tuition": {
+      "value": "2026 first-semester reference tuition (includes KRW198,000 admission fee): KRW5,380,000 humanities/social sciences/business; KRW6,212,000 natural sciences; KRW6,990,000 engineering; KRW7,412,000 global economics; KRW8,264,000 global business. 2027 may change.",
+      "source_url": "https://oiss.skku.edu/oiss/admission_undergraduate.do?articleNo=227497&attachNo=204362&mode=download",
+      "checked_at": "2026-11-14"
+    },
+    "international_aid": {
+      "value": "Yes; 2027 Spring guide revises new-student scholarships; SKKU also lists international merit scholarships (20–50% tuition) and merit/need-based awards for enrolled undergraduates.",
+      "source_url": "https://oiss.skku.edu/oiss/scholarship.do",
+      "checked_at": "2026-11-14"
+    },
+    "central_asian_cis_scholarships": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "foundation_for_11_year_schooling": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "verification_status": "staged",
+    "sources": [
+      "https://oiss.skku.edu/oiss/admission_undergraduate.do?articleNo=227492&mode=view",
+      "https://oiss.skku.edu/oiss/admission_undergraduate.do?articleNo=227497&attachNo=204362&mode=download",
+      "https://oiss.skku.edu/oiss/scholarship.do"
+    ]
+  },
+  {
+    "university_id": "bfa7cdcc-650a-54d9-baa6-0eaeaa6428a9",
+    "name": "Pohang University of Science and Technology",
+    "country": "KR",
+    "english_ielts": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_toefl_ibt": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_duolingo": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_waivers": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "application_route": {
+      "value": "POSTECH International Undergraduate Admissions application; Spring 2027 international guide publishes direct cycle calendar, but application portal destination is not shown in the reviewed page.",
+      "source_url": "https://adm-iu.postech.ac.kr/user/comm/menu/3317587a17a23d4dacdb9ffc4762bf4a/content/index.do",
+      "checked_at": "2026-11-14"
+    },
+    "application_fee": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "deadlines": {
+      "value": "Spring 2027 international admission application: 25 August–2 September 2026. Fall 2027 application planned for late March–early April 2027; detailed guide not yet published.",
+      "source_url": "https://adm-iu.postech.ac.kr/user/comm/menu/3317587a17a23d4dacdb9ffc4762bf4a/content/index.do",
+      "checked_at": "2026-11-14"
+    },
+    "international_tuition": {
+      "value": "Tuition amount not listed in reviewed source; all admitted international students receive a full tuition waiver beginning first semester, renewable up to 8 semesters under academic criteria.",
+      "source_url": "https://www.postech.ac.kr/eng/admission-aid/scholarship_information.do",
+      "checked_at": "2026-11-14"
+    },
+    "international_aid": {
+      "value": "Yes; all admitted international freshmen receive full tuition waiver; monthly living allowance KRW 500,000, arrival support up to KRW 2,500,000; eligible applicants automatically considered.",
+      "source_url": "https://adm-iu.postech.ac.kr/user/comm/menu/e2afb97fa1b8f43c574be0dabef78f87/content/index.do",
+      "checked_at": "2026-11-14"
+    },
+    "central_asian_cis_scholarships": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "foundation_for_11_year_schooling": {
+      "value": "No foundation year identified. International eligibility requires high school graduation; one track requires completion of all 12 years of schooling outside Korea.",
+      "source_url": "https://adm-iu.postech.ac.kr/user/comm/menu/3317587a17a23d4dacdb9ffc4762bf4a/content/index.do",
+      "checked_at": "2026-11-14"
+    },
+    "verification_status": "staged",
+    "sources": [
+      "https://adm-iu.postech.ac.kr/user/comm/menu/3317587a17a23d4dacdb9ffc4762bf4a/content/index.do",
+      "https://adm-iu.postech.ac.kr/user/comm/menu/e2afb97fa1b8f43c574be0dabef78f87/content/index.do"
+    ]
+  },
+  {
+    "university_id": "4905a534-c722-5951-bcd1-2a676a636ead",
+    "name": "Hanyang University",
+    "country": "KR",
+    "english_ielts": {
+      "value": "English-track requirements: IELTS 6.5 for International Studies; IELTS 6.0 for Data Science and Business English Track. Other tracks do not require an English score in this guide.",
+      "source_url": "https://oia.hanyang.ac.kr/files/attach/filebox/2026/01/22/84577760f898a555afede08054809e43.pdf",
+      "checked_at": "2026-11-14"
+    },
+    "english_toefl_ibt": {
+      "value": "English-track requirements: TOEFL iBT 89 for International Studies; 80 for Data Science and Business English Track.",
+      "source_url": "https://oia.hanyang.ac.kr/files/attach/filebox/2026/01/22/84577760f898a555afede08054809e43.pdf",
+      "checked_at": "2026-11-14"
+    },
+    "english_duolingo": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_waivers": {
+      "value": "Applicants from countries designated English-speaking by Korea’s Ministry of Foreign Affairs are exempt from official English test-score submission for English tracks.",
+      "source_url": "https://oia.hanyang.ac.kr/files/attach/filebox/2026/01/22/84577760f898a555afede08054809e43.pdf",
+      "checked_at": "2026-11-14"
+    },
+    "application_route": {
+      "value": "Direct online application through Hanyang’s Office of International Affairs admissions process.",
+      "source_url": "https://oia.hanyang.ac.kr/",
+      "checked_at": "2026-11-14"
+    },
+    "application_fee": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "deadlines": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "international_tuition": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "international_aid": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "central_asian_cis_scholarships": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "foundation_for_11_year_schooling": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "verification_status": "staged",
+    "sources": [
+      "https://oia.hanyang.ac.kr/",
+      "https://oia.hanyang.ac.kr/files/attach/filebox/2026/01/22/84577760f898a555afede08054809e43.pdf"
+    ]
+  },
+  {
+    "university_id": "51820d13-7d29-5698-a7aa-4284497d2a3e",
+    "name": "Sejong University",
+    "country": "KR",
+    "english_ielts": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_toefl_ibt": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_duolingo": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_waivers": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "application_route": {
+      "value": "Direct online application through Sejong One Stop Service Center (sos.sejong.ac.kr).",
+      "source_url": "https://en.sejong.ac.kr/eng/academics/Undergraduate_School.do",
+      "checked_at": "2026-11-14"
+    },
+    "application_fee": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "deadlines": {
+      "value": "Spring 2027 guide: Round 1 applications 7–21 September 2026; Round 2 22 October–13 November 2026, 5 PM KST.",
+      "source_url": "https://en.sejong.ac.kr/eng/academics/Undergraduate_School.do",
+      "checked_at": "2026-11-14"
+    },
+    "international_tuition": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "international_aid": {
+      "value": "Yes; international undergraduate students can receive first-semester tuition reductions of 30–80% depending on category, and TOPIK excellence awards are listed for 2026-2.",
+      "source_url": "https://en.sejong.ac.kr/cms/etcResourceDown.do?key=%24cms%24OIGw9gRghiAECyBTAJgSyrKA7ZsDCYAtoQK5aoDGUALqmFrAPoBMADM8wHSsBs3A7JwAOyAGZA&site=%24cms%24KYOw5kA",
+      "checked_at": "2026-11-14"
+    },
+    "central_asian_cis_scholarships": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "foundation_for_11_year_schooling": {
+      "value": "No foundation year identified; guide requires at least 12 years of formal education before enrollment, or completed secondary education.",
+      "source_url": "https://en.sejong.ac.kr/cms/etcResourceDown.do?key=%24cms%24OIGw9gRghiAECyBTAJgSyrKA7ZsDCYAtoQK5aoDGUALqmFrAPoBMADM8wHSsBs3A7JwAOyAGZA&site=%24cms%24KYOw5kA",
+      "checked_at": "2026-11-14"
+    },
+    "verification_status": "staged",
+    "sources": [
+      "https://en.sejong.ac.kr/eng/academics/Undergraduate_School.do",
+      "https://en.sejong.ac.kr/cms/etcResourceDown.do?key=%24cms%24OIGw9gRghiAECyBTAJgSyrKA7ZsDCYAtoQK5aoDGUALqmFrAPoBMADM8wHSsBs3A7JwAOyAGZA&site=%24cms%24KYOw5kA"
+    ]
+  },
+  {
+    "university_id": "2816fd44-0c83-51d8-bd8b-f4ef1620c529",
+    "name": "Pusan National University",
+    "country": "KR",
+    "english_ielts": {
+      "value": "IELTS 5.5 for Department of Global Studies in latest fetched English-language undergraduate admissions reference; not a university-wide freshman minimum.",
+      "source_url": "https://international.pusan.ac.kr/sites/international/download/brochure/005-Admissons%20For%20International%20Student%28English%29.pdf",
+      "checked_at": "2026-11-14"
+    },
+    "english_toefl_ibt": {
+      "value": "TOEFL iBT 80 for Department of Global Studies in latest fetched English-language undergraduate admissions reference; not a university-wide freshman minimum.",
+      "source_url": "https://international.pusan.ac.kr/sites/international/download/brochure/005-Admissons%20For%20International%20Student%28English%29.pdf",
+      "checked_at": "2026-11-14"
+    },
+    "english_duolingo": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_waivers": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "application_route": {
+      "value": "Direct international admissions via JinhakApply; 2027 spring admissions guide says application opens 12 October 2026.",
+      "source_url": "https://international.pusan.ac.kr/bbs/international/2089/1459481/artclView.do",
+      "checked_at": "2026-11-14"
+    },
+    "application_fee": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "deadlines": {
+      "value": "Spring 2027 admissions: online application opens 12 October 2026; exact closing date not extracted from the guide page.",
+      "source_url": "https://international.pusan.ac.kr/bbs/international/2089/1459481/artclView.do",
+      "checked_at": "2026-11-14"
+    },
+    "international_tuition": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "international_aid": {
+      "value": "Yes; merit-based international undergraduate scholarships include entrance tuition waivers tied to TOPIK and academic scholarships for continuing students.",
+      "source_url": "https://international.pusan.ac.kr/international/15218/subview.do",
+      "checked_at": "2026-11-14"
+    },
+    "central_asian_cis_scholarships": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "foundation_for_11_year_schooling": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "verification_status": "staged",
+    "sources": [
+      "https://international.pusan.ac.kr/bbs/international/2089/1459481/artclView.do",
+      "https://international.pusan.ac.kr/international/15218/subview.do",
+      "https://international.pusan.ac.kr/sites/international/download/brochure/005-Admissons%20For%20International%20Student%28English%29.pdf"
+    ]
+  },
+  {
+    "university_id": "e35bbbf8-981e-5933-92bc-577864b48785",
+    "name": "University of Ulsan",
+    "country": "KR",
+    "english_ielts": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_toefl_ibt": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_duolingo": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_waivers": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "application_route": {
+      "value": "Undergraduate international admissions are handled by the International Office; application portal and fee were not exposed on the reviewed official page.",
+      "source_url": "https://international.ulsan.ac.kr/international/397",
+      "checked_at": "2026-11-14"
+    },
+    "application_fee": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "deadlines": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "international_tuition": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "international_aid": {
+      "value": "Yes; latest retrieved international freshman guide shows first-semester tuition waivers of 50% at TOPIK 3, 70% at TOPIK 4, and 100% at TOPIK 5 or above.",
+      "source_url": "https://iphak.ulsan.ac.kr/upload/board/2025/10/20/960c8cc2-352d-48eb-9e68-125d49605641.pdf",
+      "checked_at": "2026-11-14"
+    },
+    "central_asian_cis_scholarships": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "foundation_for_11_year_schooling": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "verification_status": "staged",
+    "sources": [
+      "https://international.ulsan.ac.kr/international/397",
+      "https://iphak.ulsan.ac.kr/upload/board/2025/10/20/960c8cc2-352d-48eb-9e68-125d49605641.pdf"
+    ]
+  },
+  {
+    "university_id": "f069dcf3-4383-5fe9-9975-58800a95464e",
+    "name": "Chungbuk National University",
+    "country": "KR",
+    "english_ielts": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_toefl_ibt": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_duolingo": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_waivers": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "application_route": {
+      "value": "Direct online application through JinhakApply for international admissions; CBNU publishes separate spring and fall guides.",
+      "source_url": "https://oia.cbnu.ac.kr/home/sub.do?menukey=7676",
+      "checked_at": "2026-11-14"
+    },
+    "application_fee": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "deadlines": {
+      "value": "2027 Spring international undergraduate guide was posted 2 October 2026; exact application period is in the linked English guide PDF.",
+      "source_url": "https://oia.cbnu.ac.kr/home/sub.do?menukey=7676",
+      "checked_at": "2026-11-14"
+    },
+    "international_tuition": {
+      "value": "Per-semester tuition in current official table: KRW 2,029,000 for humanities/social sciences/business; KRW 2,494,000 for natural sciences; other faculties differ. Current table does not state academic year.",
+      "source_url": "https://oia.cbnu.ac.kr/home/sub.do?menukey=7867",
+      "checked_at": "2026-11-14"
+    },
+    "international_aid": {
+      "value": "GKS government scholarship route is available to eligible international undergraduates; university-specific aid not established from reviewed guide page.",
+      "source_url": "https://oia.cbnu.ac.kr/home/sub.do?menukey=7676",
+      "checked_at": "2026-11-14"
+    },
+    "central_asian_cis_scholarships": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "foundation_for_11_year_schooling": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "verification_status": "staged",
+    "sources": [
+      "https://oia.cbnu.ac.kr/home/sub.do?menukey=7676",
+      "https://oia.cbnu.ac.kr/home/sub.do?menukey=7867"
+    ]
+  },
+  {
+    "university_id": "9a78fb5f-7d20-52c4-a5f0-300b10478988",
+    "name": "University of Seoul",
+    "country": "KR",
+    "english_ielts": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_toefl_ibt": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_duolingo": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_waivers": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "application_route": {
+      "value": "Direct international freshman application through UOS online application link (UwayApply).",
+      "source_url": "https://oia.uos.ac.kr/oia/web/contents/OIA_Admission_01",
+      "checked_at": "2026-11-14"
+    },
+    "application_fee": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "deadlines": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "international_tuition": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "international_aid": {
+      "value": "Yes; official UOS FAQ says international freshman scholarships are selected by admission scores without separate application; top 10% full tuition, next 10% half tuition in guide materials.",
+      "source_url": "https://uos.ac.kr/eng/web/bbs/uosen_faq01/list",
+      "checked_at": "2026-11-14"
+    },
+    "central_asian_cis_scholarships": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "foundation_for_11_year_schooling": {
+      "value": null,
+      "source_url": "https://oia.uos.ac.kr/oia/web/file/download/uu/183d1cc283af4ac5bd619e46fbf4bfd6",
+      "checked_at": "2026-11-14"
+    },
+    "verification_status": "staged",
+    "sources": [
+      "https://oia.uos.ac.kr/oia/web/file/download/uu/183d1cc283af4ac5bd619e46fbf4bfd6",
+      "https://oia.uos.ac.kr/oia/web/contents/OIA_Admission_01",
+      "https://uos.ac.kr/eng/web/contents/UOS_CampusLife_03_03",
+      "https://uos.ac.kr/eng/web/bbs/uosen_faq01/list"
+    ]
+  },
+  {
+    "university_id": "f7630121-7518-5453-a60d-413b847dbaa0",
+    "name": "Seoul National University of Science and Technology",
+    "country": "KR",
+    "english_ielts": {
+      "value": "IELTS 5.5 minimum for specified English-track undergraduate majors (MSDE, ITM, Business Administration, Global IT Convergence); departments may differ.",
+      "source_url": "https://global.seoultech.ac.kr/apply/undergraduate",
+      "checked_at": "2026-11-14"
+    },
+    "english_toefl_ibt": {
+      "value": "TOEFL iBT 71 minimum for specified English-track undergraduate majors; departments may differ.",
+      "source_url": "https://global.seoultech.ac.kr/apply/undergraduate",
+      "checked_at": "2026-11-14"
+    },
+    "english_duolingo": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_waivers": {
+      "value": "Applicants from countries where English is an official language are exempt from English proficiency requirements for English track.",
+      "source_url": "https://global.seoultech.ac.kr/apply/undergraduate",
+      "checked_at": "2026-11-14"
+    },
+    "application_route": {
+      "value": "Direct online application via SeoulTech Office of International Affairs UwayApply application portal.",
+      "source_url": "https://global.seoultech.ac.kr/apply/undergraduate",
+      "checked_at": "2026-11-14"
+    },
+    "application_fee": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "deadlines": {
+      "value": "Spring 2027 international undergraduate: Round 1 7 September–2 October 2026; Round 2 9–18 November 2026.",
+      "source_url": "https://global.seoultech.ac.kr/notice/notice?bidx=895056&bnum=58432&do=commonview",
+      "checked_at": "2026-11-14"
+    },
+    "international_tuition": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "international_aid": {
+      "value": "Yes; merit aid includes first-semester tuition reductions based on Korean/English test scores. A separate Key Partner Countries scholarship supports eligible ODA-recipient nationalities; list/eligibility should be checked in current guide.",
+      "source_url": "https://global.seoultech.ac.kr/apply/scholar",
+      "checked_at": "2026-11-14"
+    },
+    "central_asian_cis_scholarships": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "foundation_for_11_year_schooling": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "verification_status": "staged",
+    "sources": [
+      "https://global.seoultech.ac.kr/notice/notice?bidx=895056&bnum=58432&do=commonview",
+      "https://global.seoultech.ac.kr/apply/undergraduate",
+      "https://global.seoultech.ac.kr/apply/scholar"
+    ]
+  },
+  {
+    "university_id": "154701f8-0abc-5d4e-877c-72c6d80c501f",
+    "name": "Woosong University",
+    "country": "KR",
+    "english_ielts": {
+      "value": "No universal freshman IELTS minimum published; proof of English is required, while programme-specific English-track scholarship bands start at IELTS 5.5.",
+      "source_url": "https://english.wsu.ac.kr/page/index.jsp?code=eng0301",
+      "checked_at": "2026-11-14"
+    },
+    "english_toefl_ibt": {
+      "value": "No universal freshman TOEFL iBT minimum published; proof of English is required, programme-specific English-track scholarship bands start at TOEFL iBT 46.",
+      "source_url": "https://english.wsu.ac.kr/site/main_eng/images/Application%20Guide%20Booklets_en_2026_v2.pdf",
+      "checked_at": "2026-11-14"
+    },
+    "english_duolingo": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_waivers": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "application_route": {
+      "value": "Direct online application through Woosong International Admissions.",
+      "source_url": "https://english.wsu.ac.kr/page/index.jsp?code=eng0301",
+      "checked_at": "2026-11-14"
+    },
+    "application_fee": {
+      "value": "USD 50 one-time application fee (international undergraduate admissions).",
+      "source_url": "https://english.wsu.ac.kr/page/index.jsp?code=eng0301",
+      "checked_at": "2026-11-14"
+    },
+    "deadlines": {
+      "value": "Spring intake 2027: 16 January 2027 for applications from outside Korea; Fall intake 2027: 10 July 2027.",
+      "source_url": "https://english.wsu.ac.kr/page/index.jsp?code=eng0301",
+      "checked_at": "2026-11-14"
+    },
+    "international_tuition": {
+      "value": "2026 academic year annual bachelor tuition varies by programme: USD 6,400–12,592 per year; includes Fall, Winter, Spring and Summer semesters where indicated.",
+      "source_url": "https://english.wsu.ac.kr/page/index.jsp?code=eng0302",
+      "checked_at": "2026-11-14"
+    },
+    "international_aid": {
+      "value": "Yes; first-semester undergraduate admission scholarships usually 30–70% tuition by academic standing, English level and extracurricular record; continuing merit scholarships 30–100%.",
+      "source_url": "https://english.wsu.ac.kr/page/index.jsp?code=eng0303",
+      "checked_at": "2026-11-14"
+    },
+    "central_asian_cis_scholarships": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "foundation_for_11_year_schooling": {
+      "value": null,
+      "source_url": "https://english.wsu.ac.kr/page/index.jsp?code=eng0301",
+      "checked_at": "2026-11-14"
+    },
+    "verification_status": "staged",
+    "sources": [
+      "https://english.wsu.ac.kr/page/index.jsp?code=eng0301",
+      "https://english.wsu.ac.kr/page/index.jsp?code=eng0302",
+      "https://english.wsu.ac.kr/page/index.jsp?code=eng0303",
+      "https://english.wsu.ac.kr/site/main_eng/images/Application%20Guide%20Booklets_en_2026_v2.pdf"
+    ]
+  },
+  {
+    "university_id": "addc1a48-bb2b-5c8e-845b-32ce68f2c3a7",
+    "name": "Istanbul Technical University",
+    "country": "TR",
+    "english_ielts": {
+      "value": "IELTS is not accepted by ITU for English proficiency exams taken on or after 24 December 2022, per current official Senate policy.",
+      "source_url": "https://www.sis.itu.edu.tr/EN/regulations/valid-english-tests-and-minimum-scores.php",
+      "checked_at": "2026-11-14"
+    },
+    "english_toefl_ibt": {
+      "value": "For the 2026–27 academic-year English equivalence table, TOEFL iBT 72–90 (old scale) / 4–4.5 (new scale) allows entry to English courses; 91+ / 5–5.5 supports exemption from preparatory English. Applies to English placement, not admission. ",
+      "source_url": "https://www.sis.itu.edu.tr/EN/regulations/valid-english-tests-and-minimum-scores.php",
+      "checked_at": "2026-11-14"
+    },
+    "english_duolingo": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_waivers": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "application_route": {
+      "value": "Direct online application through ITU Registrar’s Office international undergraduate application system.",
+      "source_url": "https://www.sis.itu.edu.tr/EN/student/intenational-students/application.php",
+      "checked_at": "2026-11-14"
+    },
+    "application_fee": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "deadlines": {
+      "value": "2026–27 international undergraduate second-round applications: 21–26 August 2026; this is latest published cycle, not 2027 entry.",
+      "source_url": "https://www.sis.itu.edu.tr/duyuru_ekler/yabanci/202711/EN/202711.php",
+      "checked_at": "2026-11-14"
+    },
+    "international_tuition": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "international_aid": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "central_asian_cis_scholarships": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "foundation_for_11_year_schooling": {
+      "value": "No 11-year school foundation route established in reviewed pages; applicants need a secondary diploma equivalent to Turkish high school. English preparatory study may be required for language proficiency only.",
+      "source_url": "https://www.sis.itu.edu.tr/EN/student/intenational-students/application.php",
+      "checked_at": "2026-11-14"
+    },
+    "verification_status": "staged",
+    "sources": [
+      "https://www.sis.itu.edu.tr/EN/student/intenational-students/application.php",
+      "https://www.sis.itu.edu.tr/EN/regulations/valid-english-tests-and-minimum-scores.php",
+      "https://www.sis.itu.edu.tr/EN/student/tuition-fee/fees/20271020/tutionfees.php"
+    ]
+  },
+  {
+    "university_id": "1848c4c4-1bfb-5ae4-8322-6fda3dca4e50",
+    "name": "Koç University",
+    "country": "TR",
+    "english_ielts": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_toefl_ibt": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_duolingo": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_waivers": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "application_route": {
+      "value": "Direct online application via apply.ku.edu.tr (Koç University international undergraduate portal).",
+      "source_url": "https://international.ku.edu.tr/wp-content/uploads/2024/08/KU-UGRD-INT-Fall-2024-Leaflet-A4-ENG-merged_compressed.pdf",
+      "checked_at": "2026-11-14"
+    },
+    "application_fee": {
+      "value": "USD 20 non-refundable fee per 2024 international undergraduate leaflet (latest published fee source located).",
+      "source_url": "https://international.ku.edu.tr/wp-content/uploads/2024/08/KU-UGRD-INT-Fall-2024-Leaflet-A4-ENG-merged_compressed.pdf",
+      "checked_at": "2026-11-14"
+    },
+    "deadlines": {
+      "value": "2024 leaflet: undergraduate application period January–July, late deadline August; latest published dates found in this source are for 2024 cycle.",
+      "source_url": "https://international.ku.edu.tr/wp-content/uploads/2024/08/KU-UGRD-INT-Fall-2024-Leaflet-A4-ENG-merged_compressed.pdf",
+      "checked_at": "2026-11-14"
+    },
+    "international_tuition": {
+      "value": "2024 leaflet lists USD 21,500 per academic year for all colleges except Medicine (USD 29,500); most recent published fee source located, not a 2027 rate.",
+      "source_url": "https://international.ku.edu.tr/wp-content/uploads/2024/08/KU-UGRD-INT-Fall-2024-Leaflet-A4-ENG-merged_compressed.pdf",
+      "checked_at": "2026-11-14"
+    },
+    "international_aid": {
+      "value": "Yes; 2020–21 university policy described need-based and merit scholarships, considered automatically for merit and combinable up to full tuition. Later 2024 leaflet lists merit awards of 25–100%; no 2027 details located.",
+      "source_url": "https://international.ku.edu.tr/wp-content/uploads/2020/05/Ko%C3%A7-University-Need-Based-and-Merit-Based-Undergraduate-Scholarships-for-International-Students-2020-21.pdf",
+      "checked_at": "2026-11-14"
+    },
+    "central_asian_cis_scholarships": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "foundation_for_11_year_schooling": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "verification_status": "staged",
+    "sources": [
+      "https://international.ku.edu.tr/wp-content/uploads/2024/08/KU-UGRD-INT-Fall-2024-Leaflet-A4-ENG-merged_compressed.pdf",
+      "https://registrar.ku.edu.tr/wp-content/uploads/2024/03/Entry-Qualifications.pdf",
+      "https://international.ku.edu.tr/wp-content/uploads/2020/05/Ko%C3%A7-University-Need-Based-and-Merit-Based-Undergraduate-Scholarships-for-International-Students-2020-21.pdf"
+    ]
+  },
+  {
+    "university_id": "be141d50-5df3-5bd2-8b44-744166b2402b",
+    "name": "Middle East Technical University",
+    "country": "TR",
+    "english_ielts": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_toefl_ibt": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_duolingo": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_waivers": {
+      "value": "English score is optional at application. At registration, valid TOEFL/PTE or the METU English Proficiency Exam may exempt students from prep; IELTS taken on/after 24 Dec 2022 is not accepted. Native speakers educated in English may receive exemption with approval.",
+      "source_url": "https://iso.metu.edu.tr/en/node/47",
+      "checked_at": "2026-11-14"
+    },
+    "application_route": {
+      "value": "Direct online application through METU International Students Office application portal.",
+      "source_url": "https://iso.metu.edu.tr/en/application-dates",
+      "checked_at": "2026-11-14"
+    },
+    "application_fee": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "deadlines": {
+      "value": "2026–27 undergraduate international applications: 1 June–12 July 2026; additional application period 26–28 August 2026 for listed programmes.",
+      "source_url": "https://iso.metu.edu.tr/en/application-dates",
+      "checked_at": "2026-11-14"
+    },
+    "international_tuition": {
+      "value": "2026–27: USD 1,200/semester for engineering, architecture, and listed sciences (USD 2,400/year); USD 800/semester for education, economics/admin, sociology, psychology, history and philosophy (USD 1,600/year).",
+      "source_url": "https://iso.metu.edu.tr/en/system/files/pre-arrival_guideline_2026.pdf",
+      "checked_at": "2026-11-14"
+    },
+    "international_aid": {
+      "value": "Yes; tuition waivers/discounts are awarded annually for academic success; limited need-based meal, dormitory and cash aid is also available to international students by application.",
+      "source_url": "https://iso.metu.edu.tr/en/scholarship-opportunities",
+      "checked_at": "2026-11-14"
+    },
+    "central_asian_cis_scholarships": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "foundation_for_11_year_schooling": {
+      "value": "No foundation year for school-certificate equivalence established; a one-year Basic English preparatory programme is available for admitted students who do not meet English placement requirements.",
+      "source_url": "https://iso.metu.edu.tr/en/node/47",
+      "checked_at": "2026-11-14"
+    },
+    "verification_status": "staged",
+    "sources": [
+      "https://iso.metu.edu.tr/en/application-dates",
+      "https://iso.metu.edu.tr/en/node/47",
+      "https://iso.metu.edu.tr/en/system/files/pre-arrival_guideline_2026.pdf",
+      "https://iso.metu.edu.tr/en/scholarship-opportunities",
+      "https://oidb.metu.edu.tr/en/fees"
+    ]
+  },
+  {
+    "university_id": "e847d6a1-1b09-5113-8aa2-2567e83e57f4",
+    "name": "Boğaziçi University",
+    "country": "TR",
+    "english_ielts": {
+      "value": "IELTS Academic overall 6.5, with Writing 6.5, for English proficiency; applicants below this attend the university English Preparatory Program.",
+      "source_url": "https://intl.bogazici.edu.tr/required-documents-undergraduate-application",
+      "checked_at": "2026-11-14"
+    },
+    "english_toefl_ibt": {
+      "value": "TOEFL iBT 79 total and Writing 22; TOEFL Home Edition not accepted.",
+      "source_url": "https://intl.bogazici.edu.tr/required-documents-undergraduate-application",
+      "checked_at": "2026-11-14"
+    },
+    "english_duolingo": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_waivers": {
+      "value": "Yes; exemption may be available under other criteria, with official exemption confirmation from YADYOK required; details are programme-specific.",
+      "source_url": "https://intl.bogazici.edu.tr/required-documents-undergraduate-application",
+      "checked_at": "2026-11-14"
+    },
+    "application_route": {
+      "value": "Direct international undergraduate application through Boğaziçi candidate admissions portal.",
+      "source_url": "https://adaylar.bogazici.edu.tr/en-EN/Home",
+      "checked_at": "2026-11-14"
+    },
+    "application_fee": {
+      "value": "EUR 100 (or TRY equivalent) per programme; non-refundable.",
+      "source_url": "https://intl.bogazici.edu.tr/required-documents-undergraduate-application",
+      "checked_at": "2026-11-14"
+    },
+    "deadlines": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "international_tuition": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "international_aid": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "central_asian_cis_scholarships": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "foundation_for_11_year_schooling": {
+      "value": "No 11-year certificate foundation route found in reviewed admissions source; an English preparatory year is for language proficiency only.",
+      "source_url": "https://intl.bogazici.edu.tr/required-documents-undergraduate-application",
+      "checked_at": "2026-11-14"
+    },
+    "verification_status": "staged",
+    "sources": [
+      "https://intl.bogazici.edu.tr/required-documents-undergraduate-application"
+    ]
+  },
+  {
+    "university_id": "b99788a4-2398-58cc-87a6-db75c8901baa",
+    "name": "Sabanci University",
+    "country": "TR",
+    "english_ielts": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_toefl_ibt": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_duolingo": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_waivers": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "application_route": {
+      "value": "Direct online application through Sabancı University International Undergraduate application portal.",
+      "source_url": "https://iro.sabanciuniv.edu/en/how-to-apply",
+      "checked_at": "2026-11-14"
+    },
+    "application_fee": {
+      "value": "USD 30, paid online; non-refundable.",
+      "source_url": "https://iro.sabanciuniv.edu/en/application-requirements",
+      "checked_at": "2026-11-14"
+    },
+    "deadlines": {
+      "value": "2026–2027 cycle: application starts January 1, 2026; international admissions operate on rolling reviews; official calendar lists final deadline 28 August 2026.",
+      "source_url": "https://www.sabanciuniv.edu/en/academic-calendar?b=2027&c=16&d=en",
+      "checked_at": "2026-11-14"
+    },
+    "international_tuition": {
+      "value": "USD 36,500 per academic year for international undergraduate students, 2026–2027.",
+      "source_url": "https://iro.sabanciuniv.edu/en/tuition-fee",
+      "checked_at": "2026-11-14"
+    },
+    "international_aid": {
+      "value": "Yes; merit-based tuition waivers for outstanding applicants (25%, 40%, 50%, 60%, 75%); applicants can state scholarship need in application.",
+      "source_url": "https://iro.sabanciuniv.edu/en/tuition-fee",
+      "checked_at": "2026-11-14"
+    },
+    "central_asian_cis_scholarships": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "foundation_for_11_year_schooling": {
+      "value": "No secondary-school foundation for 11-year credentials identified. Sabancı’s Foundation Development Year is the first undergraduate year for common courses and major selection, not an external foundation year.",
+      "source_url": "https://iro.sabanciuniv.edu/en/degree-students/frequently-asked-questions/admission-applications",
+      "checked_at": "2026-11-14"
+    },
+    "verification_status": "staged",
+    "sources": [
+      "https://iro.sabanciuniv.edu/en/how-to-apply",
+      "https://iro.sabanciuniv.edu/en/application-requirements",
+      "https://iro.sabanciuniv.edu/en/tuition-fee",
+      "https://iro.sabanciuniv.edu/en/degree-students/frequently-asked-questions/admission-applications"
+    ]
+  },
+  {
+    "university_id": "6ba258c1-adba-5e46-9b8c-411b91c4b958",
+    "name": "Bilkent University",
+    "country": "TR",
+    "english_ielts": {
+      "value": "IELTS Academic overall 6.5, minimum 5.5 in each section; this is an English proficiency/placement requirement for registration.",
+      "source_url": "https://w3.bilkent.edu.tr/international/english-language-proficiency/",
+      "checked_at": "2026-11-14"
+    },
+    "english_toefl_ibt": {
+      "value": "TOEFL iBT 87 total for English proficiency/placement at registration.",
+      "source_url": "https://w3.bilkent.edu.tr/international/english-language-proficiency/",
+      "checked_at": "2026-11-14"
+    },
+    "english_duolingo": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_waivers": {
+      "value": "Yes; students may take Bilkent’s own PAE exam at arrival/registration; students not meeting proficiency attend English Prep.",
+      "source_url": "https://w3.bilkent.edu.tr/international/english-language-proficiency/",
+      "checked_at": "2026-11-14"
+    },
+    "application_route": {
+      "value": "Direct online application through Bilkent University International Students undergraduate portal.",
+      "source_url": "https://w3.bilkent.edu.tr/international/how-to-apply/",
+      "checked_at": "2026-11-14"
+    },
+    "application_fee": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "deadlines": {
+      "value": "Fall 2026–2027 international undergraduate application: 2 February–12 July 2026.",
+      "source_url": "https://w3.bilkent.edu.tr/international/how-to-apply/",
+      "checked_at": "2026-11-14"
+    },
+    "international_tuition": {
+      "value": "USD 18,400 annual fee for students admitted in 2026, 2026–2027 academic year (including 10% VAT).",
+      "source_url": "https://w3.bilkent.edu.tr/bilkent/international-and-other-students-tuition-fees/",
+      "checked_at": "2026-11-14"
+    },
+    "international_aid": {
+      "value": "Yes; international applicants may receive need-based partial/full tuition waivers (20–100%); continuing merit awards also available.",
+      "source_url": "https://w3.bilkent.edu.tr/international/scholarships-for-international-students/",
+      "checked_at": "2026-11-14"
+    },
+    "central_asian_cis_scholarships": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "foundation_for_11_year_schooling": {
+      "value": "No 11-year certificate preparatory route identified; applicants are assessed through accepted secondary credentials/exams. English preparatory programme is for English proficiency only.",
+      "source_url": "https://w3.bilkent.edu.tr/international/how-to-apply/",
+      "checked_at": "2026-11-14"
+    },
+    "verification_status": "staged",
+    "sources": [
+      "https://w3.bilkent.edu.tr/international/how-to-apply/",
+      "https://w3.bilkent.edu.tr/bilkent/international-and-other-students-tuition-fees/",
+      "https://w3.bilkent.edu.tr/international/english-language-proficiency/",
+      "https://w3.bilkent.edu.tr/international/scholarships-for-international-students/"
+    ]
+  },
+  {
+    "university_id": "02d798aa-1481-5e86-b3ee-9833e4ebe604",
+    "name": "Hacettepe University",
+    "country": "TR",
+    "english_ielts": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_toefl_ibt": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_duolingo": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_waivers": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "application_route": {
+      "value": "Direct online application through Hacettepe International Student application system; university warns applicants to apply personally and says it has no agency partners.",
+      "source_url": "https://internationalstudents.hacettepe.edu.tr/en/application?section=required-documents",
+      "checked_at": "2026-11-14"
+    },
+    "application_fee": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "deadlines": {
+      "value": "2026–2027 international applications are ongoing on official page; exact application windows were not confirmed in the retrieved official pages.",
+      "source_url": "https://internationalstudent.hacettepe.edu.tr/en/home",
+      "checked_at": "2026-11-14"
+    },
+    "international_tuition": {
+      "value": "2026–2027 annual fees vary by faculty: USD 12,000 Medicine; USD 8,000 Dentistry/Pharmacy; USD 7,500 Engineering/Architecture/Computer & Information Sciences; USD 4,000–5,000 most other faculties.",
+      "source_url": "https://internationalstudents.hacettepe.edu.tr/file/70a8bd57-14fb-4a1b-8a75-301fb5178ecb",
+      "checked_at": "2026-11-14"
+    },
+    "international_aid": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "central_asian_cis_scholarships": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "foundation_for_11_year_schooling": {
+      "value": null,
+      "source_url": "https://internationalstudents.hacettepe.edu.tr/en/application?section=required-documents",
+      "checked_at": "2026-11-14"
+    },
+    "verification_status": "staged",
+    "sources": [
+      "https://internationalstudent.hacettepe.edu.tr/en/home",
+      "https://internationalstudents.hacettepe.edu.tr/en/application?section=required-documents",
+      "https://internationalstudents.hacettepe.edu.tr/file/70a8bd57-14fb-4a1b-8a75-301fb5178ecb"
+    ]
+  },
+  {
+    "university_id": "6f0c60bd-d32a-52d1-a831-32855b7f4132",
+    "name": "Bahçeşehir University",
+    "country": "TR",
+    "english_ielts": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_toefl_ibt": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_duolingo": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_waivers": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "application_route": {
+      "value": "Direct online application; specific international application portal was not established on the reviewed pages.",
+      "source_url": "https://exchange.bau.edu.tr/future-students/frequently-asked-questions/",
+      "checked_at": "2026-11-14"
+    },
+    "application_fee": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "deadlines": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "international_tuition": {
+      "value": "2026–2027 annual tuition varies by undergraduate school: USD 8,500 most schools; USD 9,000 Engineering & Natural Sciences; USD 12,000 AI Engineering; USD 28,000 Medicine; USD 24,000 Dentistry; USD 15,000 Pharmacy; Pilotage USD 9,000 + EUR 22,000.",
+      "source_url": "https://int.bau.edu.tr/admission/tuition-fees/",
+      "checked_at": "2026-11-14"
+    },
+    "international_aid": {
+      "value": "Yes; a related BAU incoming-undergraduate FAQ states the listed standard tuition includes a 50% international student scholarship; medicine may receive partial awards. This applies to the source’s international program context.",
+      "source_url": "https://exchange.bau.edu.tr/future-students/frequently-asked-questions/",
+      "checked_at": "2026-11-14"
+    },
+    "central_asian_cis_scholarships": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "foundation_for_11_year_schooling": {
+      "value": "No 11-year certificate foundation route established; the FAQ mentions a one-year language preparation class if needed, not academic foundation.",
+      "source_url": "https://exchange.bau.edu.tr/future-students/frequently-asked-questions/",
+      "checked_at": "2026-11-14"
+    },
+    "verification_status": "staged",
+    "sources": [
+      "https://int.bau.edu.tr/admission/tuition-fees/",
+      "https://exchange.bau.edu.tr/future-students/frequently-asked-questions/"
+    ]
+  },
+  {
+    "university_id": "57e342f6-f01c-599e-9c87-f6468b633a65",
+    "name": "Istinye University",
+    "country": "TR",
+    "english_ielts": {
+      "value": "IELTS Academic 6.0 for exemption from English preparatory study / entry to English-medium degree coursework.",
+      "source_url": "https://international.istinye.edu.tr/en/language-exam-exemption-criteria",
+      "checked_at": "2026-11-14"
+    },
+    "english_toefl_ibt": {
+      "value": "TOEFL iBT 75 for exemption from English preparatory study / entry to English-medium degree coursework.",
+      "source_url": "https://international.istinye.edu.tr/en/language-exam-exemption-criteria",
+      "checked_at": "2026-11-14"
+    },
+    "english_duolingo": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_waivers": {
+      "value": "Yes; English-medium high-school graduates with transcript evidence are exempt from English proficiency exam; listed recognized exam scores also exempt.",
+      "source_url": "https://international.istinye.edu.tr/en/language-exam-exemption-criteria",
+      "checked_at": "2026-11-14"
+    },
+    "application_route": {
+      "value": "Direct online application through Istinye University international application system.",
+      "source_url": "https://international.istinye.edu.tr/en/how-apply-isu",
+      "checked_at": "2026-11-14"
+    },
+    "application_fee": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "deadlines": {
+      "value": "2026–2027 undergraduate fall intake: applications 21 January–31 October 2026; final registration 1 July–31 October 2026.",
+      "source_url": "https://international.istinye.edu.tr/en/application-calendar",
+      "checked_at": "2026-11-14"
+    },
+    "international_tuition": {
+      "value": "2026–2027 annual tuition is program-specific: e.g. Medicine USD 23,000–29,000; Dentistry USD 20,000–24,500; Pharmacy USD 14,000–15,000; many other bachelor programmes USD 8,000–12,000. Full-payment discount may apply.",
+      "source_url": "https://international.istinye.edu.tr/en/quotas-and-tuition-fees",
+      "checked_at": "2026-11-14"
+    },
+    "international_aid": {
+      "value": "No scholarships or tuition discounts are offered to applicants at admission; after completing one academic year, undergraduates may receive merit scholarships based on GPA and rank.",
+      "source_url": "https://international.istinye.edu.tr/en/how-apply-isu",
+      "checked_at": "2026-11-14"
+    },
+    "central_asian_cis_scholarships": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "foundation_for_11_year_schooling": {
+      "value": null,
+      "source_url": "https://international.istinye.edu.tr/en/how-apply-isu",
+      "checked_at": "2026-11-14"
+    },
+    "verification_status": "staged",
+    "sources": [
+      "https://international.istinye.edu.tr/en/how-apply-isu",
+      "https://international.istinye.edu.tr/en/quotas-and-tuition-fees",
+      "https://international.istinye.edu.tr/en/language-exam-exemption-criteria",
+      "https://international.istinye.edu.tr/en/application-calendar"
+    ]
+  },
+  {
+    "university_id": "4c76e35e-3fd9-5783-a4d1-c59a70af146f",
+    "name": "Tobb Economics and Technology University",
+    "country": "TR",
+    "english_ielts": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_toefl_ibt": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_duolingo": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_waivers": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "application_route": {
+      "value": "Direct online application through TOBB ETÜ International Student portal.",
+      "source_url": "https://www.etu.edu.tr/en/ogrenci-isleri/sayfa/international-student-apply-now",
+      "checked_at": "2026-11-14"
+    },
+    "application_fee": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "deadlines": {
+      "value": "2026–2027 international undergraduate application: 2 February–16 August 2026.",
+      "source_url": "https://www.etu.edu.tr/en/ogrenci-isleri/sayfa/international-student-apply-now",
+      "checked_at": "2026-11-14"
+    },
+    "international_tuition": {
+      "value": "USD 16,500 annual fee for undergraduate programmes except Medicine (USD 23,100 annual); source fee table presents current annual rates without a cycle label.",
+      "source_url": "https://www.etu.edu.tr/en/uluslararasi/sayfa/tuition-fees-and-scholarship-opportunities",
+      "checked_at": "2026-11-14"
+    },
+    "international_aid": {
+      "value": "Yes; merit-only international scholarships with 25%, 50%, 75% or full tuition awards; no need-based aid or extra living/dorm scholarship for international students stated.",
+      "source_url": "https://www.etu.edu.tr/en/uluslararasi/sayfa/tuition-fees-and-scholarship-opportunities",
+      "checked_at": "2026-11-14"
+    },
+    "central_asian_cis_scholarships": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "foundation_for_11_year_schooling": {
+      "value": "No academic foundation route identified; English preparatory school is available/required for some programs as language preparation, not 11-year certificate foundation.",
+      "source_url": "https://www.etu.edu.tr/en/sayfa/frequently-asked-questions",
+      "checked_at": "2026-11-14"
+    },
+    "verification_status": "staged",
+    "sources": [
+      "https://www.etu.edu.tr/en/ogrenci-isleri/sayfa/international-student-apply-now",
+      "https://www.etu.edu.tr/en/uluslararasi/sayfa/tuition-fees-and-scholarship-opportunities",
+      "https://www.etu.edu.tr/en/sayfa/frequently-asked-questions"
+    ]
+  },
+  {
+    "university_id": "7378b152-1f4d-580b-8fb4-a411fee7ce24",
+    "name": "Beykent University",
+    "country": "TR",
+    "english_ielts": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_toefl_ibt": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_duolingo": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_waivers": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "application_route": {
+      "value": "Online international undergraduate application; official page lists eligibility and required documents but application fee/portal URL was not extracted.",
+      "source_url": "https://www.beykent.edu.tr/en/exchange/international-students/application-and-registration/candidate-student-for-associate-and-bachelor-degree",
+      "checked_at": "2026-11-14"
+    },
+    "application_fee": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "deadlines": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "international_tuition": {
+      "value": "2026–2027 annual fees are programme-specific and presented through the university’s international tuition calculator; the page returned no text price for the selected programme, so amount is unknown.",
+      "source_url": "https://www.beykent.edu.tr/en/exchange/international-students/application-and-registration/international-student-tuition-calculator",
+      "checked_at": "2026-11-14"
+    },
+    "international_aid": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "central_asian_cis_scholarships": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "foundation_for_11_year_schooling": {
+      "value": null,
+      "source_url": "https://www.beykent.edu.tr/en/exchange/international-students/application-and-registration/candidate-student-for-associate-and-bachelor-degree",
+      "checked_at": "2026-11-14"
+    },
+    "verification_status": "staged",
+    "sources": [
+      "https://www.beykent.edu.tr/en/exchange/international-students/application-and-registration/candidate-student-for-associate-and-bachelor-degree",
+      "https://www.beykent.edu.tr/en/exchange/international-students/application-and-registration/international-student-tuition-calculator"
+    ]
+  },
+  {
+    "university_id": "16228b97-9cee-5208-8805-ce8d33c6c634",
+    "name": "Gaziosmanpasa University",
+    "country": "TR",
+    "english_ielts": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_toefl_ibt": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_duolingo": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_waivers": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "application_route": {
+      "value": "Apply online via Tokat Gaziosmanpaşa University’s International Student application system; deadlines are announced per-cycle.",
+      "source_url": "https://iso.gop.edu.tr/Icerik.aspx?d=en-us&m=basvuru_ve_kayit&mk=37055",
+      "checked_at": "2026-11-14"
+    },
+    "application_fee": {
+      "value": "No application/preference/registration fees; tuition fee is paid only when first-year students start classes.",
+      "source_url": "https://iso.gop.edu.tr/duyuruDetay.aspx?d=en-US&id=52017&m=duyuru_detay&mk=36044",
+      "checked_at": "2026-11-14"
+    },
+    "deadlines": {
+      "value": "No exact cycle dates established from the reviewed official pages; the university publishes an announcement/calendar each year.",
+      "source_url": "https://iso.gop.edu.tr/Icerik.aspx?d=en-us&m=basvuru_ve_kayit&mk=37055",
+      "checked_at": "2026-11-14"
+    },
+    "international_tuition": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "international_aid": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "central_asian_cis_scholarships": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "foundation_for_11_year_schooling": {
+      "value": "Yes, Turkish language preparatory education is required for students lacking Turkish proficiency; no separate academic foundation year for 11-year certificates established.",
+      "source_url": "https://iso.gop.edu.tr/duyuruDetay.aspx?d=en-US&id=52017&m=duyuru_detay&mk=36044",
+      "checked_at": "2026-11-14"
+    },
+    "verification_status": "staged",
+    "sources": [
+      "https://iso.gop.edu.tr/Icerik.aspx?d=en-us&m=basvuru_ve_kayit&mk=37055",
+      "https://iso.gop.edu.tr/TumDuyurular.aspx?d=en-US&mk=36065&m=duyuru_tum_idari",
+      "https://iso.gop.edu.tr/duyuruDetay.aspx?d=en-US&id=52017&m=duyuru_detay&mk=36044"
+    ]
+  },
+  {
+    "university_id": "33db8963-84c5-5b82-8917-6e639c33e947",
+    "name": "Kütahya Dumlupınar Üniversitesi",
+    "country": "TR",
+    "english_ielts": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_toefl_ibt": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_duolingo": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_waivers": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "application_route": {
+      "value": "University’s International Student Office manages admission; current 2026–2027 application portal details not confirmed in reviewed pages.",
+      "source_url": "https://iro.dpu.edu.tr/en/index/sayfa/20031/international-students",
+      "checked_at": "2026-11-14"
+    },
+    "application_fee": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "deadlines": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "international_tuition": {
+      "value": "2025–2026 annual fees for new international students: TRY 20,000–48,000 by faculty; e.g. Engineering/Architecture TRY 38,000, Education TRY 26,000, Fine Arts TRY 48,000.",
+      "source_url": "https://iro.dpu.edu.tr/en/index/sayfa/20376/tuition-fees",
+      "checked_at": "2026-11-14"
+    },
+    "international_aid": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "central_asian_cis_scholarships": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "foundation_for_11_year_schooling": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "verification_status": "staged",
+    "sources": [
+      "https://iro.dpu.edu.tr/en/index/sayfa/20376/tuition-fees",
+      "https://iro.dpu.edu.tr/en/index/sayfa/20031/international-students"
+    ]
+  },
+  {
+    "university_id": "f88ac902-e770-5b17-b078-edef67cc5234",
+    "name": "Trakya University",
+    "country": "TR",
+    "english_ielts": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_toefl_ibt": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_duolingo": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_waivers": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "application_route": {
+      "value": "International applications are submitted under the university’s current international admission procedure; fee, direct portal and deadline not established on the reviewed English page.",
+      "source_url": "https://student-en.trakya.edu.tr/pages/application-and-admission",
+      "checked_at": "2026-11-14"
+    },
+    "application_fee": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "deadlines": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "international_tuition": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "international_aid": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "central_asian_cis_scholarships": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "foundation_for_11_year_schooling": {
+      "value": null,
+      "source_url": "https://student-en.trakya.edu.tr/pages/application-and-admission",
+      "checked_at": "2026-11-14"
+    },
+    "verification_status": "staged",
+    "sources": [
+      "https://student-en.trakya.edu.tr/pages/application-and-admission"
+    ]
+  },
+  {
+    "university_id": "ee31891b-8bbc-5fb0-9bc5-e0122f0c55dd",
+    "name": "Universiti Malaya",
+    "country": "MY",
+    "english_ielts": {
+      "value": "IELTS Academic 5.0 minimum in the latest located international undergraduate brochure (2024/25 intake; programme requirements may be higher).",
+      "source_url": "https://study.um.edu.my/doc/brochures/UG%20International%202024.pdf",
+      "checked_at": "2026-11-14"
+    },
+    "english_toefl_ibt": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_duolingo": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_waivers": {
+      "value": "English-medium prior education/test alternatives are accepted on a programme-specific basis; see current programme requirements.",
+      "source_url": "https://aasd.um.edu.my/faq-ug-international-admission",
+      "checked_at": "2026-11-14"
+    },
+    "application_route": {
+      "value": "Direct application via Universiti Malaya application portal; conventional international undergraduate 2026/27 applications listed 7 September 2026–30 January 2027.",
+      "source_url": "https://study.um.edu.my/how-to-apply",
+      "checked_at": "2026-11-14"
+    },
+    "application_fee": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "deadlines": {
+      "value": "Latest published cycle: 2026/27 conventional international undergraduate intake opened 7 September 2026 and closes 30 January 2027; some programmes have earlier deadlines.",
+      "source_url": "https://study.um.edu.my/how-to-apply",
+      "checked_at": "2026-11-14"
+    },
+    "international_tuition": {
+      "value": "Programme-specific. Official 2025/26 international fee schedule is linked by the university; no single annual amount applies.",
+      "source_url": "https://study.um.edu.my/doc/tution-fee/Fee%20Structure%2C%20UG%2C%20Local%2C%20SATU%20-%20Updated%2022%20Oct%202025.pdf?_t=1761184221",
+      "checked_at": "2026-11-14"
+    },
+    "international_aid": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "central_asian_cis_scholarships": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "foundation_for_11_year_schooling": {
+      "value": "UM offers international foundation programmes, but the reviewed materials do not confirm eligibility with an 11-year certificate alone.",
+      "source_url": "https://study.um.edu.my/doc/brochures/brochure-foundation-03.05.2026.pdf",
+      "checked_at": "2026-11-14"
+    },
+    "verification_status": "staged",
+    "sources": [
+      "https://study.um.edu.my/doc/brochures/UG%20International%202024.pdf",
+      "https://aasd.um.edu.my/faq-ug-international-admission",
+      "https://study.um.edu.my/how-to-apply",
+      "https://study.um.edu.my/doc/tution-fee/Fee%20Structure%2C%20UG%2C%20Local%2C%20SATU%20-%20Updated%2022%20Oct%202025.pdf?_t=1761184221",
+      "https://study.um.edu.my/doc/brochures/brochure-foundation-03.05.2026.pdf"
+    ]
+  },
+  {
+    "university_id": "b865e086-9fba-5fd2-8b1f-9be60d97baf4",
+    "name": "Universiti Sains Malaysia",
+    "country": "MY",
+    "english_ielts": {
+      "value": "IELTS/IELTS Online 5.0 minimum; some programmes set higher requirements.",
+      "source_url": "https://admission.usm.my/undergraduate/undergraduate-international",
+      "checked_at": "2026-11-14"
+    },
+    "english_toefl_ibt": {
+      "value": "TOEFL iBT 40 minimum; some programmes set higher requirements.",
+      "source_url": "https://admission.usm.my/undergraduate/undergraduate-international",
+      "checked_at": "2026-11-14"
+    },
+    "english_duolingo": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_waivers": {
+      "value": "Candidates from institutions where English is the medium of instruction may submit an authorization letter instead of a test score.",
+      "source_url": "https://admission.usm.my/undergraduate/undergraduate-international",
+      "checked_at": "2026-11-14"
+    },
+    "application_route": {
+      "value": "Direct online application through International@USM / POHON@USM, the USM direct international channel.",
+      "source_url": "https://admission.usm.my/index.php/undergraduate/undergraduate-international/how-to-apply-international",
+      "checked_at": "2026-11-14"
+    },
+    "application_fee": {
+      "value": "RM100 processing fee per application (from USM international application instructions).",
+      "source_url": "https://admission.usm.my/index.php/undergraduate/undergraduate-international/how-to-apply-international",
+      "checked_at": "2026-11-14"
+    },
+    "deadlines": {
+      "value": "USM 2026/27 prospectus is published; undergraduate applications follow programme cut-off dates. Exact general cycle close date not displayed on reviewed page.",
+      "source_url": "https://admission.usm.my/course-ug-international",
+      "checked_at": "2026-11-14"
+    },
+    "international_tuition": {
+      "value": "Programme-specific. Official 2025/26 fee schedule lists examples such as USD4,500/year for electrical engineering; full schedule varies by programme.",
+      "source_url": "https://admission.usm.my/undergraduate/undergraduate-international/fee-ugi",
+      "checked_at": "2026-11-14"
+    },
+    "international_aid": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "central_asian_cis_scholarships": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "foundation_for_11_year_schooling": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "verification_status": "staged",
+    "sources": [
+      "https://admission.usm.my/undergraduate/undergraduate-international",
+      "https://admission.usm.my/index.php/undergraduate/undergraduate-international/how-to-apply-international",
+      "https://admission.usm.my/course-ug-international",
+      "https://admission.usm.my/undergraduate/undergraduate-international/fee-ugi"
+    ]
+  },
+  {
+    "university_id": "04c4aef9-ef8e-5981-ba20-50039aeceef5",
+    "name": "Universiti Kebangsaan Malaysia",
+    "country": "MY",
+    "english_ielts": {
+      "value": "IELTS 6.0 for programmes taught in English in UKM’s official international-student requirements document (document publication year not stated; confirm programme-specific rules).",
+      "source_url": "https://smp.ukm.my/kemasukan/bwarga/dokumen/REQUIREMENTS.pdf",
+      "checked_at": "2026-11-14"
+    },
+    "english_toefl_ibt": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_duolingo": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_waivers": {
+      "value": "Applicants unable to submit required proficiency may take UKM language proficiency courses; requirements vary by programme.",
+      "source_url": "https://smp.ukm.my/kemasukan/bwarga/dokumen/REQUIREMENTS.pdf",
+      "checked_at": "2026-11-14"
+    },
+    "application_route": {
+      "value": "Direct UKM online application; international full-time applications are announced annually, typically February–May.",
+      "source_url": "https://www.ukm.my/portal/undergraduate-programmes/",
+      "checked_at": "2026-11-14"
+    },
+    "application_fee": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "deadlines": {
+      "value": "Latest official portal says international full-time applications open February–May each year; no 2027 dates posted on the reviewed page.",
+      "source_url": "https://www.ukm.my/portal/undergraduate-programmes/",
+      "checked_at": "2026-11-14"
+    },
+    "international_tuition": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "international_aid": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "central_asian_cis_scholarships": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "foundation_for_11_year_schooling": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "verification_status": "staged",
+    "sources": [
+      "https://smp.ukm.my/kemasukan/bwarga/dokumen/REQUIREMENTS.pdf",
+      "https://www.ukm.my/portal/undergraduate-programmes/"
+    ]
+  },
+  {
+    "university_id": "cf17178b-4486-5b1c-84d1-1ef2b3ac9e37",
+    "name": "Universiti Putra Malaysia",
+    "country": "MY",
+    "english_ielts": {
+      "value": "IELTS 5.5 minimum.",
+      "source_url": "https://akademik.upm.edu.my/upload/dokumen/menul320250417184027Undergraduate_Programmes_Brochure_for_International_Students.pdf",
+      "checked_at": "2026-11-14"
+    },
+    "english_toefl_ibt": {
+      "value": "TOEFL iBT 60 minimum.",
+      "source_url": "https://akademik.upm.edu.my/upload/dokumen/menul320250417184027Undergraduate_Programmes_Brochure_for_International_Students.pdf",
+      "checked_at": "2026-11-14"
+    },
+    "english_duolingo": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_waivers": {
+      "value": "Several equivalent English tests accepted; programme-specific alternatives apply.",
+      "source_url": "https://akademik.upm.edu.my/upload/dokumen/menul320250417184027Undergraduate_Programmes_Brochure_for_International_Students.pdf",
+      "checked_at": "2026-11-14"
+    },
+    "application_route": {
+      "value": "Direct online application through UPM international applicant portal.",
+      "source_url": "https://smp.upm.edu.my/smp/action/applicant/international/b4register",
+      "checked_at": "2026-11-14"
+    },
+    "application_fee": {
+      "value": "USD65 non-refundable processing fee.",
+      "source_url": "https://smp.upm.edu.my/smp/action/applicant/international/b4register",
+      "checked_at": "2026-11-14"
+    },
+    "deadlines": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "international_tuition": {
+      "value": "Tuition is listed by programme and semester in the official 2025 international undergraduate brochure; no single general annual amount.",
+      "source_url": "https://akademik.upm.edu.my/upload/dokumen/menul320250417184027Undergraduate_Programmes_Brochure_for_International_Students.pdf",
+      "checked_at": "2026-11-14"
+    },
+    "international_aid": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "central_asian_cis_scholarships": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "foundation_for_11_year_schooling": {
+      "value": "UPM advertises an international Foundation Studies programme; its stated entry qualification is O-Level or equivalent, so confirm whether a particular 11-year certificate is accepted.",
+      "source_url": "https://akademik.upm.edu.my/upload/dokumen/menul320250417184027Undergraduate_Programmes_Brochure_for_International_Students.pdf",
+      "checked_at": "2026-11-14"
+    },
+    "verification_status": "staged",
+    "sources": [
+      "https://akademik.upm.edu.my/upload/dokumen/menul320250417184027Undergraduate_Programmes_Brochure_for_International_Students.pdf",
+      "https://smp.upm.edu.my/smp/action/applicant/international/b4register"
+    ]
+  },
+  {
+    "university_id": "1042123a-851e-532f-9355-fdee1624b0e5",
+    "name": "Universiti Teknologi Malaysia",
+    "country": "MY",
+    "english_ielts": {
+      "value": "IELTS Academic 5.5 minimum (general published requirement; faculty/programme requirements can differ).",
+      "source_url": "https://fke.utm.my/undergraduate/apply-for-undergraduate-admission-international-student/",
+      "checked_at": "2026-11-14"
+    },
+    "english_toefl_ibt": {
+      "value": "TOEFL iBT above 59 (faculty admissions page).",
+      "source_url": "https://fke.utm.my/undergraduate/apply-for-undergraduate-admission-international-student/",
+      "checked_at": "2026-11-14"
+    },
+    "english_duolingo": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_waivers": {
+      "value": "English requirement may be met after admission within four semesters under the cited faculty page; alternative English qualifications accepted.",
+      "source_url": "https://fke.utm.my/undergraduate/apply-for-undergraduate-admission-international-student/",
+      "checked_at": "2026-11-14"
+    },
+    "application_route": {
+      "value": "Direct UTM international admissions portal.",
+      "source_url": "https://admission.utm.my/undergraduate-international/",
+      "checked_at": "2026-11-14"
+    },
+    "application_fee": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "deadlines": {
+      "value": "February 2027 intake applications: 1 November–31 December 2026.",
+      "source_url": "https://admission.utm.my/undergraduate-international/",
+      "checked_at": "2026-11-14"
+    },
+    "international_tuition": {
+      "value": "Programme-specific total tuition in current official schedule; examples for 8-semester degrees: engineering RM75,000 (estimated USD18,000), computing RM71,000 (USD17,000), science RM63,000 (USD15,000).",
+      "source_url": "https://admission.utm.my/programme-fees-ug-international/",
+      "checked_at": "2026-11-14"
+    },
+    "international_aid": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "central_asian_cis_scholarships": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "foundation_for_11_year_schooling": {
+      "value": "Yes; UTM International Undergraduate Foundation/Bridging programme is listed, with separate fees and entry conditions.",
+      "source_url": "https://admission.utm.my/international-undergraduate-foundation-fees/",
+      "checked_at": "2026-11-14"
+    },
+    "verification_status": "staged",
+    "sources": [
+      "https://fke.utm.my/undergraduate/apply-for-undergraduate-admission-international-student/",
+      "https://admission.utm.my/undergraduate-international/",
+      "https://admission.utm.my/programme-fees-ug-international/",
+      "https://admission.utm.my/international-undergraduate-foundation-fees/"
+    ]
+  },
+  {
+    "university_id": "ec736339-6243-5c10-bbb4-68f27b54ec75",
+    "name": "UCSI University",
+    "country": "MY",
+    "english_ielts": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_toefl_ibt": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_duolingo": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_waivers": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "application_route": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "application_fee": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "deadlines": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "international_tuition": {
+      "value": "Official international fee schedule is programme-specific; the current PDF does not expose a single annual tuition amount for the entire university.",
+      "source_url": "https://www.ucsiuniversity.edu.my/sites/default/files/ucsi_international_fee_structures.pdf",
+      "checked_at": "2026-11-14"
+    },
+    "international_aid": {
+      "value": "Yes; UCSI lists scholarships for international students; award eligibility and amounts depend on programme and academic record.",
+      "source_url": "https://www.ucsiuniversity.edu.my/sites/default/files/ucsi_international_fee_structures.pdf",
+      "checked_at": "2026-11-14"
+    },
+    "central_asian_cis_scholarships": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "foundation_for_11_year_schooling": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "verification_status": "staged",
+    "sources": [
+      "https://www.ucsiuniversity.edu.my/sites/default/files/ucsi_international_fee_structures.pdf"
+    ]
+  },
+  {
+    "university_id": "046ea39b-3706-5972-a7d6-be4e67d63b59",
+    "name": "Management and Science University",
+    "country": "MY",
+    "english_ielts": {
+      "value": "IELTS 5.0 minimum for the cited international bachelor programme; other degree programmes can differ.",
+      "source_url": "https://www.msu.edu.my/faculty-information-sciences-engineering/bachelor-computer-engineering.php",
+      "checked_at": "2026-11-14"
+    },
+    "english_toefl_ibt": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_duolingo": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_waivers": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "application_route": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "application_fee": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "deadlines": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "international_tuition": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "international_aid": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "central_asian_cis_scholarships": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "foundation_for_11_year_schooling": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "verification_status": "staged",
+    "sources": [
+      "https://www.msu.edu.my/faculty-information-sciences-engineering/bachelor-computer-engineering.php"
+    ]
+  },
+  {
+    "university_id": "111f9e35-cc2d-5bfe-a33b-6bc7bebfdc52",
+    "name": "Multimedia University",
+    "country": "MY",
+    "english_ielts": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_toefl_ibt": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_duolingo": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_waivers": {
+      "value": "International students lacking minimum English competency may enroll in MMU English Proficiency Programme; refer to programme-specific test thresholds.",
+      "source_url": "https://www.mmu.edu.my/wp-content/uploads/2025/04/General-Guide-International.pdf",
+      "checked_at": "2026-11-14"
+    },
+    "application_route": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "application_fee": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "deadlines": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "international_tuition": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "international_aid": {
+      "value": "Yes; MMU Merit (International) Scholarship is listed for undergraduate international students; 2026 application deadline shown as 2 October 2026.",
+      "source_url": "https://www.mmu.edu.my/fee-structure-international/financial-assistance/",
+      "checked_at": "2026-11-14"
+    },
+    "central_asian_cis_scholarships": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "foundation_for_11_year_schooling": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "verification_status": "staged",
+    "sources": [
+      "https://www.mmu.edu.my/wp-content/uploads/2025/04/General-Guide-International.pdf",
+      "https://www.mmu.edu.my/fee-structure-international/financial-assistance/"
+    ]
+  },
+  {
+    "university_id": "55d2f2a4-c929-5e5b-8c50-b4221a15d9de",
+    "name": "Universiti Malaysia Perlis",
+    "country": "MY",
+    "english_ielts": {
+      "value": "IELTS 5.0 minimum.",
+      "source_url": "https://www.unimap.edu.my/images/admission/International_guidelineFORM/ENTRY%20REQUIREMENTS%20FOR%20ACADEMIC.pdf",
+      "checked_at": "2026-11-14"
+    },
+    "english_toefl_ibt": {
+      "value": "TOEFL iBT 40 minimum.",
+      "source_url": "https://www.unimap.edu.my/images/admission/International_guidelineFORM/ENTRY%20REQUIREMENTS%20FOR%20ACADEMIC.pdf",
+      "checked_at": "2026-11-14"
+    },
+    "english_duolingo": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_waivers": {
+      "value": "Applicants below the English requirement must complete the university’s English and Pre-University Preparatory Programme (EPPP).",
+      "source_url": "https://admission.unimap.edu.my/eppp.php",
+      "checked_at": "2026-11-14"
+    },
+    "application_route": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "application_fee": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "deadlines": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "international_tuition": {
+      "value": "Per year after first-year fees: RM3,520 for Business & Communication or RM4,520 for Engineering & Technology; year one includes RM5,380 non-recurring fees. Schedule year not labelled.",
+      "source_url": "https://www.unimap.edu.my/images/admission/TUITION_FEE_SCHEDULE_FOR_INTERNATIONAL_STUDENTS.pdf",
+      "checked_at": "2026-11-14"
+    },
+    "international_aid": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "central_asian_cis_scholarships": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "foundation_for_11_year_schooling": {
+      "value": "Yes; UniMAP EPPP lasts six months and is for international applicants needing English preparation; does not establish academic equivalency acceptance for a given certificate.",
+      "source_url": "https://admission.unimap.edu.my/eppp.php",
+      "checked_at": "2026-11-14"
+    },
+    "verification_status": "staged",
+    "sources": [
+      "https://www.unimap.edu.my/images/admission/International_guidelineFORM/ENTRY%20REQUIREMENTS%20FOR%20ACADEMIC.pdf",
+      "https://admission.unimap.edu.my/eppp.php",
+      "https://www.unimap.edu.my/images/admission/TUITION_FEE_SCHEDULE_FOR_INTERNATIONAL_STUDENTS.pdf"
+    ]
+  },
+  {
+    "university_id": "4a1a5857-20a1-541b-ace2-4e4943f3a4e8",
+    "name": "Universiti Kuala Lumpur",
+    "country": "MY",
+    "english_ielts": {
+      "value": "IELTS 5.0–6.0 depending on bachelor discipline; typical engineering/IT 5.0, business 5.5, medicine 6.0.",
+      "source_url": "https://www.unikl.edu.my/entry-requirement-international-student-2/",
+      "checked_at": "2026-11-14"
+    },
+    "english_toefl_ibt": {
+      "value": "Programme-specific; official entry page lists TOEFL iBT values but includes inconsistent values across disciplines, so no general score stated.",
+      "source_url": "https://www.unikl.edu.my/entry-requirement-international-student-2/",
+      "checked_at": "2026-11-14"
+    },
+    "english_duolingo": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_waivers": {
+      "value": "UniKL English Language Intensive Programme is assigned if no English proficiency certificate is provided.",
+      "source_url": "https://www.unikl.edu.my/international-admission/",
+      "checked_at": "2026-11-14"
+    },
+    "application_route": {
+      "value": "Direct online application through UniKL International Admissions.",
+      "source_url": "https://www.unikl.edu.my/international-admission/",
+      "checked_at": "2026-11-14"
+    },
+    "application_fee": {
+      "value": "RM2,200 initial enrollment fee is required to initiate student visa processing (not identified as an application fee).",
+      "source_url": "https://www.unikl.edu.my/international-admission/",
+      "checked_at": "2026-11-14"
+    },
+    "deadlines": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "international_tuition": {
+      "value": "Programme-specific. Example international cybersecurity bachelor: RM70,399 total tuition for six semesters; no single university-wide annual amount.",
+      "source_url": "https://www.unikl.edu.my/programme/bachelor-of-information-technology-hons-in-computer-system-security/",
+      "checked_at": "2026-11-14"
+    },
+    "international_aid": {
+      "value": "UniKL international booklet reports 50% scholarship for eligible students; current eligibility should be checked with admissions.",
+      "source_url": "https://www.unikl.edu.my/wp-content/uploads/2023/08/UniKL-International-Booklet-UG-PG-2023.pdf",
+      "checked_at": "2026-11-14"
+    },
+    "central_asian_cis_scholarships": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "foundation_for_11_year_schooling": {
+      "value": "Bachelor entry generally requires 12 years of schooling; 11-year schooling is specified for diploma routes, not a bachelor foundation route.",
+      "source_url": "https://www.unikl.edu.my/entry-requirement-international-student-2/",
+      "checked_at": "2026-11-14"
+    },
+    "verification_status": "staged",
+    "sources": [
+      "https://www.unikl.edu.my/entry-requirement-international-student-2/",
+      "https://www.unikl.edu.my/international-admission/",
+      "https://www.unikl.edu.my/programme/bachelor-of-information-technology-hons-in-computer-system-security/",
+      "https://www.unikl.edu.my/wp-content/uploads/2023/08/UniKL-International-Booklet-UG-PG-2023.pdf"
+    ]
+  },
+  {
+    "university_id": "519c66df-8779-5336-acda-2cba10f95c66",
+    "name": "Tsinghua University",
+    "country": "CN",
+    "english_ielts": {
+      "value": "English-taught applicants whose native language is not English must submit IELTS/other official proof; no university-wide minimum found on 2027 eligibility page.",
+      "source_url": "https://international.join-tsinghua.edu.cn/Admission1/Eligibility.htm",
+      "checked_at": "2026-11-14"
+    },
+    "english_toefl_ibt": {
+      "value": "English-taught applicants whose native language is not English must submit TOEFL/other official proof; no university-wide minimum found on 2027 eligibility page.",
+      "source_url": "https://international.join-tsinghua.edu.cn/Admission1/Eligibility.htm",
+      "checked_at": "2026-11-14"
+    },
+    "english_duolingo": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_waivers": {
+      "value": "English native speakers are exempt from the cited English-test submission requirement; language of instruction is programme dependent.",
+      "source_url": "https://international.join-tsinghua.edu.cn/Admission1/Eligibility.htm",
+      "checked_at": "2026-11-14"
+    },
+    "application_route": {
+      "value": "Direct online application through Tsinghua’s International Student Application System.",
+      "source_url": "https://international.join-tsinghua.edu.cn/Admission1/Eligibility.htm",
+      "checked_at": "2026-11-14"
+    },
+    "application_fee": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "deadlines": {
+      "value": "2027 cycle: application period is generally November 2026–April 2027 for Chinese Government Scholarship (varies by country); university programme deadlines vary.",
+      "source_url": "https://international.join-tsinghua.edu.cn/Admission1/Freshmen_Scholarships1.htm",
+      "checked_at": "2026-11-14"
+    },
+    "international_tuition": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "international_aid": {
+      "value": "Yes; Tsinghua International Undergraduate Freshmen Scholarship (full/half/partial first-year tuition), and Chinese Government Scholarship routes.",
+      "source_url": "https://international.join-tsinghua.edu.cn/Admission1/Freshmen_Scholarships1.htm",
+      "checked_at": "2026-11-14"
+    },
+    "central_asian_cis_scholarships": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "foundation_for_11_year_schooling": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "verification_status": "staged",
+    "sources": [
+      "https://international.join-tsinghua.edu.cn/Admission1/Eligibility.htm",
+      "https://international.join-tsinghua.edu.cn/Admission1/Freshmen_Scholarships1.htm"
+    ]
+  },
+  {
+    "university_id": "79e1cf8b-6a97-5fef-ac23-aa6012197801",
+    "name": "Peking University",
+    "country": "CN",
+    "english_ielts": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_toefl_ibt": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_duolingo": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_waivers": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "application_route": {
+      "value": "Direct online application to PKU International Students Division through the applicable undergraduate route (entrance examination or without written examination).",
+      "source_url": "https://isd.pku.edu.cn/en/undergraduate_program.php",
+      "checked_at": "2026-11-14"
+    },
+    "application_fee": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "deadlines": {
+      "value": "2026 entry is the latest complete official undergraduate cycle located; no general 2027 undergraduate dates located as of 14 November 2026.",
+      "source_url": "https://www.isd.pku.edu.cn/en/detail.php?id=818",
+      "checked_at": "2026-11-14"
+    },
+    "international_tuition": {
+      "value": "Official academic guidance lists undergraduate tuition at RMB26,000 or RMB30,000/year depending on discipline; English-taught/special programmes have separate rates.",
+      "source_url": "https://www.isd.pku.edu.cn/en/campus_detail.php?id=700",
+      "checked_at": "2026-11-14"
+    },
+    "international_aid": {
+      "value": "Yes; Peking University Scholarship for International Students can cover full/partial tuition, insurance, and living expenses.",
+      "source_url": "https://www.isd.pku.edu.cn/en/detail.php?id=818",
+      "checked_at": "2026-11-14"
+    },
+    "central_asian_cis_scholarships": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "foundation_for_11_year_schooling": {
+      "value": "Yes; PKU Yuke/Pre-university provides one to two years of preparatory training for eligible high-school graduates and successful completers may enter undergraduate programmes.",
+      "source_url": "https://isd.pku.edu.cn/en/undergraduate_program.php",
+      "checked_at": "2026-11-14"
+    },
+    "verification_status": "staged",
+    "sources": [
+      "https://isd.pku.edu.cn/en/undergraduate_program.php",
+      "https://www.isd.pku.edu.cn/en/detail.php?id=818",
+      "https://www.isd.pku.edu.cn/en/campus_detail.php?id=700"
+    ]
+  },
+  {
+    "university_id": "d4f88b7a-d026-5860-8906-d9ebdc5df290",
+    "name": "Zhejiang University",
+    "country": "CN",
+    "english_ielts": {
+      "value": "For 2027 English-taught MBBS: IELTS Academic 6.0 overall, minimum 5.0 each component; other English-taught programmes list proof requirements individually.",
+      "source_url": "https://iczu.zju.edu.cn/_upload/article/files/c9/7e/7814085c40f2a430addf18fd4553/291c6d13-dfab-41be-9d98-116e62a17387.pdf",
+      "checked_at": "2026-11-14"
+    },
+    "english_toefl_ibt": {
+      "value": "For 2027 English-taught MBBS: TOEFL iBT 75, minimum 15 in each section; other programmes vary.",
+      "source_url": "https://iczu.zju.edu.cn/_upload/article/files/c9/7e/7814085c40f2a430addf18fd4553/291c6d13-dfab-41be-9d98-116e62a17387.pdf",
+      "checked_at": "2026-11-14"
+    },
+    "english_duolingo": {
+      "value": "For 2027 English-taught MBBS: Duolingo 100 minimum.",
+      "source_url": "https://iczu.zju.edu.cn/_upload/article/files/c9/7e/7814085c40f2a430addf18fd4553/291c6d13-dfab-41be-9d98-116e62a17387.pdf",
+      "checked_at": "2026-11-14"
+    },
+    "english_waivers": {
+      "value": "Some English-taught programmes waive a separate test for applicants with IB/A-level/international standardized scores or full English-medium high school; programme-specific.",
+      "source_url": "https://iczu.zju.edu.cn/_upload/article/files/c9/7e/7814085c40f2a430addf18fd4553/291c6d13-dfab-41be-9d98-116e62a17387.pdf",
+      "checked_at": "2026-11-14"
+    },
+    "application_route": {
+      "value": "Direct application via Zhejiang University International Student Application System.",
+      "source_url": "https://iczu.zju.edu.cn/admissions/2026/1027/c94185a3219716/page.htm",
+      "checked_at": "2026-11-14"
+    },
+    "application_fee": {
+      "value": "RMB800, non-refundable, for the 2027 undergraduate application.",
+      "source_url": "https://iczu.zju.edu.cn/admissions/2026/1027/c94185a3219716/page.htm",
+      "checked_at": "2026-11-14"
+    },
+    "deadlines": {
+      "value": "2027 entry: general application through 28 February 2027; some programmes close 31 May 2027.",
+      "source_url": "https://iczu.zju.edu.cn/admissions/2026/1027/c94185a3219716/page.htm",
+      "checked_at": "2026-11-14"
+    },
+    "international_tuition": {
+      "value": "2027 tuition varies by programme: Chinese-taught examples RMB19,800/year; English-taught programmes RMB68,000–140,000/year.",
+      "source_url": "https://iczu.zju.edu.cn/_upload/article/files/c9/7e/7814085c40f2a430addf18fd4553/291c6d13-dfab-41be-9d98-116e62a17387.pdf",
+      "checked_at": "2026-11-14"
+    },
+    "international_aid": {
+      "value": "Yes; Chinese Government Scholarship (country-specific, Chinese-taught only), Zhejiang Government Scholarship (RMB20,000 for one year, Chinese-taught), and selected English-taught programme scholarships.",
+      "source_url": "https://iczu.zju.edu.cn/admissionsen/95568/list.htm",
+      "checked_at": "2026-11-14"
+    },
+    "central_asian_cis_scholarships": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "foundation_for_11_year_schooling": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "verification_status": "staged",
+    "sources": [
+      "https://iczu.zju.edu.cn/_upload/article/files/c9/7e/7814085c40f2a430addf18fd4553/291c6d13-dfab-41be-9d98-116e62a17387.pdf",
+      "https://iczu.zju.edu.cn/admissions/2026/1027/c94185a3219716/page.htm",
+      "https://iczu.zju.edu.cn/admissionsen/95568/list.htm"
+    ]
+  },
+  {
+    "university_id": "5c9532a7-118a-5e2d-ab32-92ade2e776a5",
+    "name": "Fudan University",
+    "country": "CN",
+    "english_ielts": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_toefl_ibt": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_duolingo": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_waivers": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "application_route": {
+      "value": "Direct online application via Fudan International Students Office application system (2027 English-taught guide).",
+      "source_url": "https://iso.fudan.edu.cn/isoenglish/2c/a9/c51327a797865/page.htm",
+      "checked_at": "2026-11-14"
+    },
+    "application_fee": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "deadlines": {
+      "value": "2027 English-taught international undergraduate admission information published 3 November 2026; deadline not established from reviewed official notice.",
+      "source_url": "https://iso.fudan.edu.cn/isoenglish/2c/a9/c51327a797865/page.htm",
+      "checked_at": "2026-11-14"
+    },
+    "international_tuition": {
+      "value": "2027 English-taught undergraduate tuition is programme-specific: RMB100,000–140,000 per year across the listed programs.",
+      "source_url": "https://iso.fudan.edu.cn/_upload/article/files/07/37/45fe56074904993107db5420bf54/13a71a09-184f-49a7-8915-08d51320a358.pdf",
+      "checked_at": "2026-11-14"
+    },
+    "international_aid": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "central_asian_cis_scholarships": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "foundation_for_11_year_schooling": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "verification_status": "staged",
+    "sources": [
+      "https://iso.fudan.edu.cn/isoenglish/2c/a9/c51327a797865/page.htm",
+      "https://iso.fudan.edu.cn/_upload/article/files/07/37/45fe56074904993107db5420bf54/13a71a09-184f-49a7-8915-08d51320a358.pdf",
+      "https://iso.fudan.edu.cn/isoenglish/16199/list.htm"
+    ]
+  },
+  {
+    "university_id": "40dc3bce-f456-577e-9003-9c143d3b52bb",
+    "name": "Shanghai Jiaotong University",
+    "country": "CN",
+    "english_ielts": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_toefl_ibt": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_duolingo": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_waivers": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "application_route": {
+      "value": "Direct online application through SJTU International Student Center; programme-specific application system and routes.",
+      "source_url": "https://isc.sjtu.edu.cn/",
+      "checked_at": "2026-11-14"
+    },
+    "application_fee": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "deadlines": {
+      "value": "2026 international undergraduate Chinese-taught route opened 8 December 2025 and closed 5 February 2026; programme-specific 2027 deadlines not confirmed.",
+      "source_url": "https://isc.sjtu.edu.cn/CN/show.aspx?info_id=1671&info_lb=133",
+      "checked_at": "2026-11-14"
+    },
+    "international_tuition": {
+      "value": "For English-taught undergraduate programs, official fee notice lists RMB120,000 per academic year (2025 notice); Chinese-taught fees vary by programme.",
+      "source_url": "https://isc.sjtu.edu.cn/kindeditor/Upload/file/20250806/20250806155110_0171.pdf",
+      "checked_at": "2026-11-14"
+    },
+    "international_aid": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "central_asian_cis_scholarships": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "foundation_for_11_year_schooling": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "verification_status": "staged",
+    "sources": [
+      "https://isc.sjtu.edu.cn/",
+      "https://isc.sjtu.edu.cn/CN/show.aspx?info_id=1671&info_lb=133",
+      "https://isc.sjtu.edu.cn/kindeditor/Upload/file/20250806/20250806155110_0171.pdf"
+    ]
+  },
+  {
+    "university_id": "5f90631a-ee6a-587d-a542-5fb1d07d0705",
+    "name": "University of Science and Technology of China",
+    "country": "CN",
+    "english_ielts": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_toefl_ibt": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_duolingo": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_waivers": {
+      "value": "USTC guide says English-taught programme applicants must provide English proficiency proof; it does not state universal IELTS/TOEFL thresholds. Chinese-taught programmes require HSK.",
+      "source_url": "https://isa.ustc.edu.cn/xs/disp.asp?degree=0&menu1=07&menu2=01&ucode=195",
+      "checked_at": "2026-11-14"
+    },
+    "application_route": {
+      "value": "Direct online application to USTC International College; official undergraduate page lists online application.",
+      "source_url": "https://isa.ustc.edu.cn/xs/disp.asp?degree=0&menu1=07&menu2=01&ucode=195",
+      "checked_at": "2026-11-14"
+    },
+    "application_fee": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "deadlines": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "international_tuition": {
+      "value": "Latest undergraduate international admissions fee information located on USTC site is from a 2020 guide: RMB26,000 per academic year. Treat as dated; no current 2027 figure found.",
+      "source_url": "https://isa.ustc.edu.cn/xs/disp.asp?degree=0&menu1=07&menu2=01&ucode=195",
+      "checked_at": "2026-11-14"
+    },
+    "international_aid": {
+      "value": "Yes; the same older USTC undergraduate admissions guide says excellent applicants may apply for a USTC Scholarship covering tuition, insurance, monthly RMB2,500 stipend, and dorm fee; current cycle details not found.",
+      "source_url": "https://isa.ustc.edu.cn/xs/disp.asp?degree=0&menu1=07&menu2=01&ucode=195",
+      "checked_at": "2026-11-14"
+    },
+    "central_asian_cis_scholarships": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "foundation_for_11_year_schooling": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "verification_status": "staged",
+    "sources": [
+      "https://isa.ustc.edu.cn/xs/disp.asp?degree=0&menu1=07&menu2=01&ucode=195",
+      "https://isa.ustc.edu.cn/xs/list.asp?menu1=02&menu2=02"
+    ]
+  },
+  {
+    "university_id": "98208ca6-3d01-5ce9-b57c-d1724f5ebdab",
+    "name": "Tongji University",
+    "country": "CN",
+    "english_ielts": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_toefl_ibt": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_duolingo": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "english_waivers": {
+      "value": "English-taught programme requirements are separate; Chinese-taught programme requires HSK5 score 180 unless the applicant completed high school in Chinese.",
+      "source_url": "https://study.tongji.edu.cn/__local/3/31/29/5548C243E9F9B76ACEB35E3A6BC_C30B8827_37323.pdf",
+      "checked_at": "2026-11-14"
+    },
+    "application_route": {
+      "value": "Direct online application through Tongji University Online Registration System.",
+      "source_url": "https://study.tongji.edu.cn/__local/3/31/29/5548C243E9F9B76ACEB35E3A6BC_C30B8827_37323.pdf",
+      "checked_at": "2026-11-14"
+    },
+    "application_fee": {
+      "value": "RMB600 application fee (Tongji current international-student fee schedule).",
+      "source_url": "https://study.tongji.edu.cn/en/CURRENT_STUDENTS/Free_Costs.htm",
+      "checked_at": "2026-11-14"
+    },
+    "deadlines": {
+      "value": "For Fall 2027 bachelor’s entry, self-funded / Shanghai Municipal Government Scholarship application window is 10 December 2026–31 March 2027. 2026 guide had 20 January–31 March 2026.",
+      "source_url": "https://study.tongji.edu.cn/en/info/1010/1224.htm",
+      "checked_at": "2026-11-14"
+    },
+    "international_tuition": {
+      "value": "Annual tuition in current official fee schedule: Chinese-taught undergraduate programs RMB20,000–28,700/year by subject; English-taught architecture RMB33,800/year, civil engineering RMB35,000/year, MBBS RMB45,000/year.",
+      "source_url": "https://study.tongji.edu.cn/en/CURRENT_STUDENTS/Free_Costs.htm",
+      "checked_at": "2026-11-14"
+    },
+    "international_aid": {
+      "value": "Yes; Chinese Government Scholarship bilateral / Silk Road Program for Chinese-taught undergraduates, Shanghai Municipal Government Scholarship for Chinese-taught undergraduates, and Tongji International Student Excellence Scholarship for English-taught undergraduates.",
+      "source_url": "https://study.tongji.edu.cn/__local/3/31/29/5548C243E9F9B76ACEB35E3A6BC_C30B8827_37323.pdf",
+      "checked_at": "2026-11-14"
+    },
+    "central_asian_cis_scholarships": {
+      "value": null,
+      "source_url": null,
+      "checked_at": "2026-11-14"
+    },
+    "foundation_for_11_year_schooling": {
+      "value": "Yes, Tongji offers a pre-university program; current fee schedule lists semester 1 RMB14,500 and semester 2 RMB19,350. The 2026 admission guide also says some applicants may be adjusted to preparatory studies after review.",
+      "source_url": "https://study.tongji.edu.cn/en/CURRENT_STUDENTS/Free_Costs.htm",
+      "checked_at": "2026-11-14"
+    },
+    "verification_status": "staged",
+    "sources": [
+      "https://study.tongji.edu.cn/__local/3/31/29/5548C243E9F9B76ACEB35E3A6BC_C30B8827_37323.pdf",
+      "https://study.tongji.edu.cn/en/CURRENT_STUDENTS/Free_Costs.htm",
+      "https://study.tongji.edu.cn/en/info/1010/1224.htm"
+    ]
+  }
+]

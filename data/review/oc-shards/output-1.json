@@ -1,0 +1,5424 @@
+{
+ "generated": "2026-11-16",
+ "records": [
+  {
+   "id": "6020a2b5-3788-5dd1-b3f2-b9c6c7c6f99b",
+   "slug": "ethz-eth-zurich-6020a2b5",
+   "name": "ETHZ - ETH Zurich",
+   "country_code": "CH",
+   "tuition": {
+    "amount": 4380,
+    "currency": "CHF",
+    "academic_year": "2026/27 (threefold rate, CHF 2,190 per semester; annual figure = 2 semesters, computed)",
+    "usd": null,
+    "fx_rate_usd_per_unit": null,
+    "fx_date": null,
+    "mandatory_fees": {
+     "value": "Application fee not found on fetched page",
+     "source_url": "https://ethz.ch/students/en/studies/financial/tuition-fees.html",
+     "retrieved_at": "2026-11-16"
+    },
+    "living_cost": null,
+    "source_url": "https://ethz.ch/students/en/studies/financial/tuition-fees.html",
+    "retrieved_at": "2026-11-16",
+    "note": "Official page: threefold fee for foreign students applies from autumn 2025 semester. USD not converted (no FX source fetched)."
+   },
+   "deadlines": {
+    "value": [
+     {
+      "round": "Bachelor international applicants",
+      "date": "1 Dec 2026 - 31 Mar 2027",
+      "cycle": "autumn 2027 (Sept 2027)"
+     }
+    ],
+    "academic_year": "2027/28",
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "method": "search snippet - verify",
+    "note": "Third-party only; conflicting sources; official ETH bachelor admission page 404."
+   },
+   "platform": {
+    "value": null,
+    "academic_year": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "english": {
+    "ielts": null,
+    "toefl_ibt": null,
+    "duolingo": null,
+    "academic_year": "2027/28",
+    "note": "Conflicting third-party: English programmes IELTS 7.0 / TOEFL 95+; German-taught C1 (or B2 per another source). Unresolved.",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "sat_act": {
+    "value": null,
+    "note": "not verified"
+   },
+   "acceptance_rate": {
+    "value": null,
+    "note": "not verified"
+   },
+   "documents": {
+    "value": null,
+    "note": "not verified"
+   },
+   "programmes": {
+    "value": null,
+    "note": "not verified"
+   },
+   "notes": [
+    "Bachelor's programmes mostly German-taught per third party."
+   ]
+  },
+  {
+   "id": "c67598f4-8b91-53a9-a98a-ebd185ced219",
+   "slug": "university-of-sydney-c67598f4",
+   "name": "University of Sydney",
+   "country_code": "AU",
+   "tuition": {
+    "amount": null,
+    "currency": "AUD",
+    "academic_year": "2026 entry: A$49,200-A$65,900/yr range (by study area); 2027 entry: A$51,700-A$69,200",
+    "usd": null,
+    "fx_rate_usd_per_unit": null,
+    "fx_date": null,
+    "mandatory_fees": null,
+    "living_cost": null,
+    "source_url": "https://www.sydney.edu.au/study/fees-and-loans/international-student-tuition-fees.html",
+    "retrieved_at": "2026-11-16",
+    "note": "Official 'indicative only' guide figures, 48 credit points per year. Per-course figures on course pages. USD not converted."
+   },
+   "deadlines": {
+    "value": null,
+    "academic_year": null,
+    "note": "Sydney closing dates for 2027 not confirmed; third-party conflicting (31 Oct vs mid-Jan).",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "platform": {
+    "value": null,
+    "academic_year": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "english": {
+    "ielts": "6.5 overall, no band below 6.0 (course-specific higher, e.g. 7.0 for some BA/Social Work)",
+    "toefl_ibt": null,
+    "duolingo": null,
+    "academic_year": "current requirement (year not stated on snippet)",
+    "note": "From official Sydney English requirements page as surfaced in search; test must be within 2 years.",
+    "source_url": "https://www.sydney.edu.au/study/how-to-apply/international-students/english-language-requirements.html",
+    "retrieved_at": "2026-11-16",
+    "method": "search snippet - verify"
+   },
+   "sat_act": {
+    "value": null,
+    "note": "not verified"
+   },
+   "acceptance_rate": {
+    "value": null,
+    "note": "not verified"
+   },
+   "documents": {
+    "value": null,
+    "note": "not verified"
+   },
+   "programmes": {
+    "value": null,
+    "note": "not verified"
+   },
+   "notes": [
+    "Only tuition retrieved."
+   ]
+  },
+  {
+   "id": "c0386da4-95a0-567a-8f70-81b33c5c7f06",
+   "slug": "university-of-queensland-c0386da4",
+   "name": "University of Queensland",
+   "country_code": "AU",
+   "tuition": {
+    "amount": null,
+    "currency": "AUD",
+    "academic_year": "2026",
+    "usd": null,
+    "fx_rate_usd_per_unit": null,
+    "fx_date": null,
+    "mandatory_fees": null,
+    "living_cost": null,
+    "source_url": "https://study.uq.edu.au/apply/undergraduate/international/fees",
+    "retrieved_at": "2026-11-16",
+    "note": "Official page says fees are program-based with an indicative annual fee on each program page; no AUD figure on this page. Third-party figures not used."
+   },
+   "deadlines": {
+    "value": [
+     {
+      "round": "Semester 1 direct application",
+      "date": "30 Nov 2026",
+      "cycle": "Semester 1 2027 (classes start 22 Feb 2027)"
+     }
+    ],
+    "academic_year": "2027",
+    "source_url": "https://study.uq.edu.au/sites/default/files/2026-09/International-minimum-entry-score-guide.pdf",
+    "retrieved_at": "2026-11-16",
+    "method": "search snippet - verify",
+    "note": "Some programmes have other dates; late applications not guaranteed."
+   },
+   "platform": {
+    "value": null,
+    "academic_year": null,
+    "note": "Conflicting: third-party says direct; UQ page says QTAC for undergraduate. Unresolved.",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "english": {
+    "ielts": "6.5 overall, no band below 6.0 (minimum; some programmes higher)",
+    "toefl_ibt": null,
+    "duolingo": null,
+    "academic_year": "2027",
+    "note": "Third-party and UQ guide snippet; check programme page.",
+    "source_url": "https://study.uq.edu.au/sites/default/files/2026-09/International-minimum-entry-score-guide.pdf",
+    "retrieved_at": "2026-11-16",
+    "method": "search snippet - verify"
+   },
+   "sat_act": {
+    "value": null,
+    "note": "not verified"
+   },
+   "acceptance_rate": {
+    "value": null,
+    "note": "not verified"
+   },
+   "documents": {
+    "value": null,
+    "note": "not verified"
+   },
+   "programmes": {
+    "value": null,
+    "note": "not verified"
+   },
+   "notes": [
+    "Only tuition policy retrieved; program-level fees need program pages."
+   ]
+  },
+  {
+   "id": "a74d45a9-657e-514c-ac03-c9d2f9200640",
+   "slug": "the-hong-kong-polytechnic-university-a74d45a9",
+   "name": "The Hong Kong Polytechnic University",
+   "country_code": "HK",
+   "tuition": {
+    "amount": 240000,
+    "currency": "HKD",
+    "academic_year": "per academic year (year not stated on page)",
+    "usd": null,
+    "fx_rate_usd_per_unit": null,
+    "fx_date": null,
+    "mandatory_fees": {
+     "value": "Application fee HKD 600",
+     "source_url": "https://www.polyu.edu.hk/study/ug/fees-and-scholarships/fees-ug",
+     "retrieved_at": "2026-11-16"
+    },
+    "living_cost": null,
+    "source_url": "https://www.polyu.edu.hk/study/ug/fees-and-scholarships/fees-ug",
+    "retrieved_at": "2026-11-16",
+    "note": "Non-local tuition. Academic year not named on page; USD not converted."
+   },
+   "deadlines": {
+    "value": null,
+    "academic_year": null,
+    "note": "Only older data found (2026 entry info sheet: early round 19 Nov 2025; applications until 15 May 2026). 2027 entry dates not found.",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "platform": {
+    "value": null,
+    "academic_year": null,
+    "note": "Not confirmed for non-local applicants (JUPAS vs direct unresolved)",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "english": {
+    "ielts": "6.0 overall (one sitting)",
+    "toefl_ibt": null,
+    "duolingo": null,
+    "academic_year": "2027 (entry page)",
+    "note": "TOEFL iBT figure only older data found (2025 non-JUPAS page: TOEFL iBT 80, IELTS 6); not used.",
+    "source_url": "https://www.polyu.edu.hk/study/2027/international-other-qualifications-english-language-requirements",
+    "retrieved_at": "2026-11-16",
+    "method": "search snippet - verify"
+   },
+   "sat_act": {
+    "value": null,
+    "note": "not verified"
+   },
+   "acceptance_rate": {
+    "value": null,
+    "note": "not verified"
+   },
+   "documents": {
+    "value": null,
+    "note": "not verified"
+   },
+   "programmes": {
+    "value": null,
+    "note": "not verified"
+   },
+   "notes": [
+    "Fee page fetched; international-qualification subpage not yet checked."
+   ]
+  },
+  {
+   "id": "cc300fc2-3770-5383-a663-b1ec31311b4d",
+   "slug": "new-york-university-cc300fc2",
+   "name": "New York University",
+   "country_code": "US",
+   "tuition": {
+    "amount": null,
+    "currency": "USD",
+    "academic_year": "2026-27",
+    "usd": null,
+    "fx_rate_usd_per_unit": null,
+    "fx_date": null,
+    "mandatory_fees": null,
+    "living_cost": null,
+    "source_url": "https://www.nyu.edu/admissions/financial-aid-and-scholarships/cost-of-attendance.html",
+    "retrieved_at": "2026-11-16",
+    "note": "Official page returned empty content. Third-party/bulletin figures not used."
+   },
+   "deadlines": {
+    "value": [
+     {
+      "round": "Early Decision I",
+      "date": "1 Nov 2026",
+      "cycle": "Fall 2027"
+     },
+     {
+      "round": "Early Decision II",
+      "date": "1 Jan 2027",
+      "cycle": "Fall 2027"
+     },
+     {
+      "round": "Regular Decision",
+      "date": "5 Jan 2027",
+      "cycle": "Fall 2027"
+     }
+    ],
+    "academic_year": "2027/28 (Fall 2027)",
+    "source_url": "https://collegedunia.com/usa/university/1713-new-york-university-new-york-city/admission",
+    "retrieved_at": "2026-11-16",
+    "method": "search snippet - verify",
+    "note": "Third-party table; verify on NYU official admissions page."
+   },
+   "platform": {
+    "value": null,
+    "academic_year": null,
+    "note": "Common Application not verified on fetched NYU page",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "english": {
+    "ielts": null,
+    "toefl_ibt": null,
+    "duolingo": null,
+    "academic_year": "2027/28",
+    "note": "Conflicting: TOEFL iBT 100 / IELTS 7.0-7.5 (third-party) vs NYU bulletin saying no minimum score. Unresolved.",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "sat_act": {
+    "value": null,
+    "note": "not verified"
+   },
+   "acceptance_rate": {
+    "value": null,
+    "note": "not verified"
+   },
+   "documents": {
+    "value": null,
+    "note": "not verified"
+   },
+   "programmes": {
+    "value": null,
+    "note": "not verified"
+   },
+   "notes": [
+    "Official pages returned empty content; retry needed."
+   ]
+  },
+  {
+   "id": "6941fb87-c482-5aa1-9f3c-a5de7cf736dc",
+   "slug": "university-of-auckland-6941fb87",
+   "name": "University of Auckland",
+   "country_code": "NZ",
+   "tuition": {
+    "amount": null,
+    "currency": "NZD",
+    "academic_year": "2027",
+    "usd": null,
+    "fx_rate_usd_per_unit": null,
+    "fx_date": null,
+    "mandatory_fees": {
+     "value": "Student Services Fee NZD 9.65 per point (about NZD 1,158 per full-time year), academic year 2027",
+     "source_url": "https://www.auckland.ac.nz/en/study/fees-and-money-matters/tuition-fees/international-student-fees/undergraduate-international-fees.html",
+     "retrieved_at": "2026-11-16"
+    },
+    "living_cost": null,
+    "source_url": "https://www.auckland.ac.nz/en/study/fees-and-money-matters/tuition-fees/international-student-fees/undergraduate-international-fees.html",
+    "retrieved_at": "2026-11-16",
+    "method": "fetched",
+    "note": "Fetched official 2027 page: tuition is estimated per programme (120 points). Examples: Bachelor of Communications NZD 49,681.60-51,020.40; Bachelor of Science NZD 49,581.60-60,909.60. No single figure."
+   },
+   "deadlines": {
+    "value": null,
+    "note": "Official apply page 404; not verified",
+    "academic_year": null,
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "platform": {
+    "value": null,
+    "note": "not verified",
+    "academic_year": null,
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "english": {
+    "ielts": null,
+    "toefl_ibt": null,
+    "duolingo": null,
+    "academic_year": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "sat_act": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "acceptance_rate": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "documents": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "programmes": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "notes": [
+    "Auckland admissions page 404; deadlines and English requirements still open."
+   ]
+  },
+  {
+   "id": "4b7a7f67-a5fa-5660-a95b-87588748c8e4",
+   "slug": "university-of-warwick-4b7a7f67",
+   "name": "University of Warwick",
+   "country_code": "GB",
+   "tuition": {
+    "amount": 27870,
+    "currency": "GBP",
+    "academic_year": "2026/27 (Band 1; Band 2 = GBP 35,530)",
+    "usd": null,
+    "fx_rate_usd_per_unit": null,
+    "fx_date": null,
+    "mandatory_fees": null,
+    "living_cost": null,
+    "source_url": "https://warwick.ac.uk/services/finance/studentfinance/fees/overseasfees/",
+    "retrieved_at": "2026-11-16",
+    "method": "search snippet - verify",
+    "note": "Band 1 GBP 27,870; Band 2 (e.g. Economics, Chemistry, Engineering) GBP 35,530; Medicine GBP 32,510. 2027-28 fees not yet set. USD not converted."
+   },
+   "deadlines": {
+    "value": null,
+    "academic_year": null,
+    "note": "Not confirmed for 2027 entry; UCAS international deadline not found.",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "platform": {
+    "value": null,
+    "academic_year": null,
+    "note": "Not verified (UCAS route expected but not confirmed)",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "english": {
+    "ielts": null,
+    "toefl_ibt": null,
+    "duolingo": null,
+    "academic_year": null,
+    "note": "Official Warwick page gives IELTS UKVI Academic window for Sept 2026 entry only; third-party 6.5 overall (6.0 each) not confirmed for 2027. Unresolved.",
+    "source_url": "https://warwick.ac.uk/study/undergraduate/applying/english-language-requirements/",
+    "retrieved_at": "2026-11-16",
+    "method": "search snippet - verify"
+   },
+   "sat_act": {
+    "value": null,
+    "note": "not verified"
+   },
+   "acceptance_rate": {
+    "value": null,
+    "note": "not verified"
+   },
+   "documents": {
+    "value": null,
+    "note": "not verified"
+   },
+   "programmes": {
+    "value": null,
+    "note": "not verified"
+   },
+   "notes": [
+    "Tuition from search snippet of official Warwick page; not fetched."
+   ]
+  },
+  {
+   "id": "b3a81d8c-44ec-56d8-aa5f-b58d5fce6bfd",
+   "slug": "sorbonne-universite-b3a81d8c",
+   "name": "Sorbonne Université",
+   "country_code": "FR",
+   "tuition": {
+    "amount": 2902,
+    "currency": "EUR",
+    "academic_year": "2026-27 (licence, differentiated rate for non-EU)",
+    "usd": null,
+    "fx_rate_usd_per_unit": null,
+    "fx_date": null,
+    "mandatory_fees": {
+     "value": "Standard national rate EUR 178 for EU students",
+     "source_url": null,
+     "retrieved_at": "2026-11-16"
+    },
+    "living_cost": null,
+    "source_url": "https://www.sorbonne-universite.fr/en/education/study-sorbonne-university/enrolment-procedures-and-tuition-fees",
+    "retrieved_at": "2026-11-16",
+    "method": "search snippet - verify",
+    "note": "Figure taken from secondary/national-rate reporting; Sorbonne's own table not seen. Exemptions possible via application."
+   },
+   "deadlines": {
+    "value": null,
+    "academic_year": null,
+    "note": "Only older data found (2025/26 cycle: Campus France deadline 15 Dec 2025; decisions 31 May 2026). 2027 dates not found.",
+    "source_url": "https://www.sorbonne-universite.fr/en/education/study-sorbonne-university/degree-seeking-students/international-application-and",
+    "retrieved_at": "2026-11-16",
+    "method": "search snippet - verify"
+   },
+   "platform": {
+    "value": "Campus France procedure (students in countries with a Campus France office); DAP for others",
+    "academic_year": "procedure as listed on official Sorbonne page (cycle year not stated)",
+    "note": "Route per official Sorbonne international application page; not confirmed for 2027 cycle.",
+    "source_url": "https://www.sorbonne-universite.fr/en/education/study-sorbonne-university/degree-seeking-students/international-application-and/campus",
+    "retrieved_at": "2026-11-16",
+    "method": "search snippet - verify"
+   },
+   "english": {
+    "ielts": null,
+    "toefl_ibt": null,
+    "duolingo": null,
+    "academic_year": null,
+    "note": "Language is French: Sciences L1 requires B2 French; Physics requires C1 (TCF/DELF/DALF). English test not applicable.",
+    "source_url": "https://sciences.sorbonne-universite.fr/en/apply/licences/first-year-licence-l1",
+    "retrieved_at": "2026-11-16",
+    "method": "search snippet - verify"
+   },
+   "sat_act": {
+    "value": null,
+    "note": "not verified"
+   },
+   "acceptance_rate": {
+    "value": null,
+    "note": "not verified"
+   },
+   "documents": {
+    "value": null,
+    "note": "not verified"
+   },
+   "programmes": {
+    "value": null,
+    "note": "not verified"
+   },
+   "notes": [
+    "Tuition from search snippet; verify on Sorbonne enrolment page."
+   ]
+  },
+  {
+   "id": "eec543ea-8898-575e-a968-7faa90285317",
+   "slug": "kth-royal-institute-of-technology-eec543ea",
+   "name": "KTH Royal Institute of Technology",
+   "country_code": "SE",
+   "tuition": {
+    "amount": 122000,
+    "currency": "SEK",
+    "academic_year": "per academic year (60 ECTS), year not stated on page",
+    "usd": null,
+    "fx_rate_usd_per_unit": null,
+    "fx_date": null,
+    "mandatory_fees": {
+     "value": "Application fee SEK 900 (via University Admissions)",
+     "source_url": "https://www.kth.se/en/studies/bachelor/fees-1.646274",
+     "retrieved_at": "2026-11-16"
+    },
+    "living_cost": null,
+    "source_url": "https://www.kth.se/en/studies/bachelor/fees-1.646274",
+    "retrieved_at": "2026-11-16",
+    "method": "search snippet - verify",
+    "note": "CONFLICT: a second KTH ICT programme page gives SEK 402,000 for the full programme. Verify per programme before use."
+   },
+   "deadlines": {
+    "value": null,
+    "academic_year": null,
+    "note": "Round 1 (non-EU priority) dates conflict across KTH pages (closed 15 Jan; 15 Mar-15 Apr); 2027 not confirmed.",
+    "source_url": "https://www.kth.se/en/studies/bachelor/how-to-apply-1.450312",
+    "retrieved_at": "2026-11-16",
+    "method": "search snippet - verify"
+   },
+   "platform": {
+    "value": "University Admissions (universityadmissions.se)",
+    "academic_year": "2027 (per KTH application info; year not explicit)",
+    "note": "SEK 900 application fee for non-EU/EEA applicants.",
+    "source_url": "https://www.kth.se/en/studies/bachelor/how-to-apply-1.450312",
+    "retrieved_at": "2026-11-16",
+    "method": "search snippet - verify"
+   },
+   "english": {
+    "ielts": null,
+    "toefl_ibt": null,
+    "duolingo": null,
+    "academic_year": null,
+    "note": "Bachelor's English table not found; IELTS 6.5 (no section below 5.5) from master's/general guides only. Unresolved for bachelor's.",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "sat_act": {
+    "value": null,
+    "note": "not verified"
+   },
+   "acceptance_rate": {
+    "value": null,
+    "note": "not verified"
+   },
+   "documents": {
+    "value": null,
+    "note": "not verified"
+   },
+   "programmes": {
+    "value": null,
+    "note": "not verified"
+   },
+   "notes": [
+    "Fee conflict between KTH pages; not resolved."
+   ]
+  },
+  {
+   "id": "3c3e72ae-5e23-550f-8280-25603d083bb5",
+   "slug": "the-university-of-sheffield-3c3e72ae",
+   "name": "The University of Sheffield",
+   "country_code": "GB",
+   "tuition": {
+    "amount": null,
+    "currency": "GBP",
+    "academic_year": "2026/27 range GBP 25,000-32,100 (non-Medicine/Dentistry); Medicine GBP 47,575; Dentistry GBP 50,925",
+    "usd": null,
+    "fx_rate_usd_per_unit": null,
+    "fx_date": null,
+    "mandatory_fees": null,
+    "living_cost": null,
+    "source_url": "https://www.sheffield.ac.uk/registration/tuitionfees/undergraduate_overseas_students",
+    "retrieved_at": "2026-11-16",
+    "method": "search snippet - verify",
+    "note": "Range per official page as reported in search; course-level band not confirmed. USD not converted."
+   },
+   "deadlines": {
+    "value": null,
+    "academic_year": null,
+    "note": "UCAS 2027 international deadline not found in results.",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "platform": {
+    "value": null,
+    "academic_year": null,
+    "note": "Not verified (UCAS expected)",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "english": {
+    "ielts": "6.5 overall, 5.5 each component (UG)",
+    "toefl_ibt": null,
+    "duolingo": null,
+    "academic_year": "2027 (current, per third-party verified 24 Mar 2026)",
+    "note": "Third-party IELTS.international listing; official Sheffield entry page not extracted.",
+    "source_url": "https://www.ielts.international/en/universities/united-kingdom/university-of-sheffield",
+    "retrieved_at": "2026-11-16",
+    "method": "search snippet - verify"
+   },
+   "sat_act": {
+    "value": null,
+    "note": "not verified"
+   },
+   "acceptance_rate": {
+    "value": null,
+    "note": "not verified"
+   },
+   "documents": {
+    "value": null,
+    "note": "not verified"
+   },
+   "programmes": {
+    "value": null,
+    "note": "not verified"
+   },
+   "notes": [
+    "Official fee page listed in search; main page fetch returned no fee table."
+   ]
+  },
+  {
+   "id": "75f1a39c-5876-5365-a4e5-4f8190028c13",
+   "slug": "uppsala-university-75f1a39c",
+   "name": "Uppsala University",
+   "country_code": "SE",
+   "tuition": {
+    "amount": 297000,
+    "currency": "SEK",
+    "academic_year": "Total programme fee for spring 2027 start (programme-specific, e.g. Urban and Regional Planning BA)",
+    "usd": null,
+    "fx_rate_usd_per_unit": null,
+    "fx_date": null,
+    "mandatory_fees": {
+     "value": "Application fee SEK 900 (likely; master's page figure, bachelor figure unconfirmed)",
+     "source_url": "https://www.uu.se/en/study/bachelors-studies/fees",
+     "retrieved_at": "2026-11-16",
+     "method": "search snippet - verify"
+    },
+    "living_cost": null,
+    "source_url": "https://www.uu.se/en/study/programme/bachelors-programme-urban-and-regional-planning",
+    "retrieved_at": "2026-11-16",
+    "method": "search snippet - verify",
+    "note": "Per-programme total, not a university-wide annual rate. Verify per programme."
+   },
+   "deadlines": {
+    "value": [
+     {
+      "round": "Spring 2027 application (Global English Studies; Science & Technology Foundation Semester)",
+      "date": "15 Oct 2026",
+      "cycle": "spring 2027"
+     }
+    ],
+    "academic_year": "spring 2027",
+    "source_url": "https://www.uu.se/en/study/programme/bachelors-programme-global-english-studies",
+    "retrieved_at": "2026-11-16",
+    "method": "search snippet - verify",
+    "note": "Autumn 2027 deadline not confirmed; verify on universityadmissions.se."
+   },
+   "platform": {
+    "value": "universityadmissions.se",
+    "academic_year": "2027",
+    "note": "Per Uppsala application guidance",
+    "source_url": "https://www.uu.se/en/study/bachelors-studies/application",
+    "retrieved_at": "2026-11-16",
+    "method": "search snippet - verify"
+   },
+   "english": {
+    "ielts": "6.5 overall, no section below 5.5",
+    "toefl_ibt": null,
+    "duolingo": null,
+    "academic_year": "current (page not year-stamped)",
+    "note": "Uppsala official entry requirements: English 6 / level 2 equivalent; some aggregators list 6.5 without component minimum.",
+    "source_url": "https://www.uu.se/en/study/bachelors-studies/application/entry-requirements",
+    "retrieved_at": "2026-11-16",
+    "method": "search snippet - verify"
+   },
+   "sat_act": {
+    "value": null,
+    "note": "not verified"
+   },
+   "acceptance_rate": {
+    "value": null,
+    "note": "not verified"
+   },
+   "documents": {
+    "value": null,
+    "note": "not verified"
+   },
+   "programmes": {
+    "value": null,
+    "note": "not verified"
+   },
+   "notes": [
+    "Only programme-level fees seen."
+   ]
+  },
+  {
+   "id": "e2e9494c-968c-55f4-8889-2ec1ac65fbdd",
+   "slug": "university-of-copenhagen-e2e9494c",
+   "name": "University of Copenhagen",
+   "country_code": "DK",
+   "tuition": {
+    "amount": null,
+    "currency": "DKK",
+    "academic_year": "2027 (not published found)",
+    "usd": null,
+    "fx_rate_usd_per_unit": null,
+    "fx_date": null,
+    "mandatory_fees": null,
+    "living_cost": null,
+    "source_url": "https://www.ku.dk/studies/admission/application-and-tuition-fees",
+    "retrieved_at": "2026-11-16",
+    "method": "search snippet - verify",
+    "note": "Bachelor's degrees are Danish-taught; non-EU students pay fees unless exempt. No official bachelor amount found. EUR 10,000/yr figure is from an international bachelor's page for a different track, not used."
+   },
+   "deadlines": {
+    "value": [
+     {
+      "round": "Non-EU upper-secondary applicants (quota 2)",
+      "date": "15 Mar 12:00 CET",
+      "cycle": "not stated on page (2027 intake assumed)"
+     }
+    ],
+    "academic_year": "not stated",
+    "source_url": "https://studies.ku.dk/bachelor/admission-requirements/non-eu-eea",
+    "retrieved_at": "2026-11-16",
+    "method": "search snippet - verify",
+    "note": "KU bachelor's are Danish-taught; the 'International bachelor' pages are for master's. Year not stated."
+   },
+   "platform": {
+    "value": null,
+    "academic_year": null,
+    "note": "Not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "english": {
+    "ielts": null,
+    "toefl_ibt": null,
+    "duolingo": null,
+    "academic_year": null,
+    "note": "Bachelor's Danish-taught; no English test requirement found. Master's pages cite English B (no IELTS). Third-party IELTS 6.5/TOEFL 83 not confirmed.",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "sat_act": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "acceptance_rate": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "documents": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "programmes": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "notes": [
+    "Official bachelor's fee amount not located."
+   ]
+  },
+  {
+   "id": "35a032fc-f24f-5a50-92ed-b818fca7f222",
+   "slug": "university-college-dublin-35a032fc",
+   "name": "University College Dublin",
+   "country_code": "IE",
+   "tuition": {
+    "amount": null,
+    "currency": "EUR",
+    "academic_year": "2026/27 (range EUR 22,600-29,500 per third-party)",
+    "usd": null,
+    "fx_rate_usd_per_unit": null,
+    "fx_date": null,
+    "mandatory_fees": null,
+    "living_cost": null,
+    "source_url": "https://www.ucd.ie/students/fees/noneucoursefees/internationalnon-euundergraduatefees20252026",
+    "retrieved_at": "2026-11-16",
+    "method": "search snippet - verify",
+    "note": "Official 2026/27 non-EU undergraduate page not retrieved (only 2025/26 URL in results). Third-party range not used as official."
+   },
+   "deadlines": {
+    "value": null,
+    "academic_year": null,
+    "note": "Single third-party source (15 July deadline, rolling from 1 Oct); not confirmed on UCD page.",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "platform": {
+    "value": "Direct application to UCD (ucd.ie/apply); not via CAO for non-EU",
+    "academic_year": "2027 (current process; year not stated)",
+    "note": "From UCD search snippet.",
+    "source_url": "https://www.ucd.ie/global",
+    "retrieved_at": "2026-11-16",
+    "method": "search snippet - verify"
+   },
+   "english": {
+    "ielts": "6.5 overall, no band below 6.0 (some programmes higher)",
+    "toefl_ibt": null,
+    "duolingo": null,
+    "academic_year": "current (not year-stamped)",
+    "note": "IDP/third-party; UCD English requirements page not retrieved.",
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "method": "search snippet - verify"
+   },
+   "sat_act": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "acceptance_rate": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "documents": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "programmes": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "notes": [
+    "Official UCD 2026/27 non-EU undergraduate fee table not retrieved."
+   ]
+  },
+  {
+   "id": "35ce761b-adcc-5c73-8bc4-a358b418afa6",
+   "slug": "technical-university-of-denmark-35ce761b",
+   "name": "Technical University of Denmark",
+   "country_code": "DK",
+   "tuition": {
+    "amount": 15000,
+    "currency": "EUR",
+    "academic_year": "per academic year (BSc General Engineering, year not stated)",
+    "usd": null,
+    "fx_rate_usd_per_unit": null,
+    "fx_date": null,
+    "mandatory_fees": null,
+    "living_cost": null,
+    "source_url": "https://dtu.dk/english/education/undergraduate/general-engineering/admission-and-deadlines/fees-funding-and-permits",
+    "retrieved_at": "2026-11-16",
+    "method": "search snippet - verify",
+    "note": "EUR 7,500 per semester. No undergraduate fee waiver. Other DKK estimates are third-party."
+   },
+   "deadlines": {
+    "value": [
+     {
+      "round": "Quota 2 / non-EU application and fee deadline",
+      "date": "15 Mar 12:00 (noon)",
+      "cycle": "2027 intake (per DTU bachelor deadlines page snippet)"
+     }
+    ],
+    "academic_year": "2027/28",
+    "source_url": "https://dtu.dk/english/education/undergraduate/general-engineering/admission-and-deadlines/deadlines-and-important-dates",
+    "retrieved_at": "2026-11-16",
+    "method": "search snippet - verify",
+    "note": "Application fee EUR 100 due by 15 March. Autumn teaching start 30 Aug 2027 per snippet."
+   },
+   "platform": {
+    "value": null,
+    "academic_year": null,
+    "note": "Not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "english": {
+    "ielts": null,
+    "toefl_ibt": null,
+    "duolingo": null,
+    "academic_year": null,
+    "note": "No bachelor-specific minimum found; MSc requires IELTS Academic only. Older 2022 guide 6.5 not used.",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "sat_act": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "acceptance_rate": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "documents": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "programmes": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "notes": [
+    "Only one programme's fee page seen."
+   ]
+  },
+  {
+   "id": "a3e5ea6a-0e01-58d9-918a-9d90e12e575b",
+   "slug": "university-of-wisconsin-madison-a3e5ea6a",
+   "name": "University of Wisconsin-Madison",
+   "country_code": "US",
+   "tuition": {
+    "amount": null,
+    "currency": null,
+    "academic_year": null,
+    "usd": null,
+    "fx_rate_usd_per_unit": null,
+    "fx_date": null,
+    "mandatory_fees": null,
+    "living_cost": null,
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "note": "not verified"
+   },
+   "deadlines": {
+    "value": [
+     {
+      "round": "Fall Early Action",
+      "date": "1 Nov 2026",
+      "cycle": "Fall 2027"
+     },
+     {
+      "round": "Fall Regular Decision",
+      "date": "15 Jan 2027",
+      "cycle": "Fall 2027"
+     }
+    ],
+    "academic_year": "2027/28",
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "method": "search snippet - verify",
+    "note": "Aggregator only (artinfoland); not on official UW page."
+   },
+   "platform": {
+    "value": null,
+    "academic_year": null,
+    "note": "Common App not confirmed; UW system page refers to Universities of Wisconsin Application (system-wide, unverified)",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "english": {
+    "ielts": "6.5 overall, no band below 6.0",
+    "toefl_ibt": "80",
+    "duolingo": "115",
+    "academic_year": "current (not year-stamped)",
+    "note": "Aggregator figures; UW official undergraduate page not retrieved. Graduate 7.0/92 not applicable.",
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "method": "search snippet - verify"
+   },
+   "sat_act": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "acceptance_rate": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "documents": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "programmes": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "notes": [
+    "Official 2026-27 nonresident undergraduate tuition not confirmed by search; sources conflict (USD 42,531 is 2025-26 prior-year figure)."
+   ]
+  },
+  {
+   "id": "5374c3c7-b54c-5f3e-bc82-39b7babedccf",
+   "slug": "university-of-california-davis-5374c3c7",
+   "name": "University of California-Davis",
+   "country_code": "US",
+   "tuition": {
+    "amount": 39270,
+    "currency": "USD",
+    "academic_year": "2026-27 entering cohort (nonresident supplemental tuition only)",
+    "usd": 39270,
+    "fx_rate_usd_per_unit": 1,
+    "fx_date": "2026-11-16",
+    "mandatory_fees": {
+     "value": "Systemwide tuition and fees USD 15,588; international student administrative fee USD 414 (total with supplemental ~USD 55,272/yr before campus costs)",
+     "source_url": "https://www.ucdavis.edu/sites/default/files/media/documents/F27_International_One_Pager.pdf",
+     "retrieved_at": "2026-11-16"
+    },
+    "living_cost": null,
+    "source_url": "https://www.ucdavis.edu/sites/default/files/media/documents/F27_International_One_Pager.pdf",
+    "retrieved_at": "2026-11-16",
+    "method": "search snippet - verify",
+    "note": "Official Finance page garbled in snippet; a 2026-27 financial aid table shows USD 34,200 (earlier cohort). Cost of attendance not settled."
+   },
+   "deadlines": {
+    "value": [
+     {
+      "round": "UC application window (all UC campuses)",
+      "date": "1 Oct - 30 Nov 2026",
+      "cycle": "Fall 2027"
+     }
+    ],
+    "academic_year": "2027/28",
+    "source_url": "https://www.ucdavis.edu/sites/default/files/media/documents/F26_International_One_Pager_digital_FINAL.pdf",
+    "retrieved_at": "2026-11-16",
+    "method": "search snippet - verify",
+    "note": "Per UCLA International Admission Guide 2026 and a third-party summary; UC Davis one-pager lists Oct 1-Dec 1 for prior cycle. Confirm on UC application site."
+   },
+   "platform": {
+    "value": "UC application (University of California system)",
+    "academic_year": "2027/28",
+    "note": "UC systemwide application.",
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "method": "search snippet - verify"
+   },
+   "english": {
+    "ielts": "7.0 (UC Davis physics department page; central UC page not retrieved)",
+    "toefl_ibt": "80 (same source)",
+    "duolingo": null,
+    "academic_year": "current (not year-stamped)",
+    "note": "Third-party guide gives IELTS 6.5 / Duolingo 115; conflicts.",
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "method": "search snippet - verify"
+   },
+   "sat_act": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "acceptance_rate": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "documents": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "programmes": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "notes": [
+    "Cost of attendance conflicting; verify with UC Davis finance page."
+   ]
+  },
+  {
+   "id": "710661ab-60ec-57bf-84bc-aa0b1e256a12",
+   "slug": "leiden-university-710661ab",
+   "name": "Leiden University",
+   "country_code": "NL",
+   "tuition": {
+    "amount": 14700,
+    "currency": "EUR",
+    "academic_year": "2027/28 (non-EEA institutional fee, Archaeology/Humanities/Governance/Law/Social and Behavioural Sciences; Science EUR 19,200; LUC The Hague EUR 18,050 + EUR 3,070 institutional fee)",
+    "usd": null,
+    "fx_rate_usd_per_unit": null,
+    "fx_date": null,
+    "mandatory_fees": {
+     "value": "Statutory fee for first-year bachelor (EEA/Swiss/Suriname or eligible non-EEA) EUR 2,771 for 2027/28",
+     "academic_year": "2027/28",
+     "source_url": "https://www.universiteitleiden.nl/en/education/admission-and-application/bachelors/tuition-fee",
+     "retrieved_at": "2026-11-16"
+    },
+    "living_cost": null,
+    "source_url": "https://www.universiteitleiden.nl/en/education/admission-and-application/bachelors/tuition-fee",
+    "retrieved_at": "2026-11-16",
+    "method": "fetched",
+    "note": "2026/27 figure not on the page; page lists 2027/28 (newest published). Medicine/LUMC EUR 31,400 (Medicine) and 19,200 (Biomedical Sciences) 2027/28."
+   },
+   "deadlines": {
+    "value": [
+     {
+      "round": "Matching-module programmes",
+      "date": "1 May",
+      "cycle": "academic year not stated on page (entry for 2027 intake assumed by page context)"
+     },
+     {
+      "round": "Student visa or residence permit required",
+      "date": "1 April",
+      "cycle": "not stated"
+     },
+     {
+      "round": "Numerus fixus programmes",
+      "date": "15 January",
+      "cycle": "not stated"
+     },
+     {
+      "round": "Leiden University College The Hague",
+      "date": "15 March (early bird 1 December)",
+      "cycle": "not stated"
+     }
+    ],
+    "academic_year": "not stated on page",
+    "source_url": "https://www.universiteitleiden.nl/en/education/admission-and-application/bachelors/application-deadlines",
+    "retrieved_at": "2026-11-16",
+    "method": "fetched"
+   },
+   "platform": {
+    "value": "Studielink (registration), then uSis (second step)",
+    "academic_year": "not stated on page",
+    "source_url": "https://www.universiteitleiden.nl/en/education/admission-and-application/bachelors/application-deadlines",
+    "retrieved_at": "2026-11-16",
+    "method": "fetched"
+   },
+   "english": {
+    "ielts": null,
+    "toefl_ibt": null,
+    "duolingo": null,
+    "academic_year": null,
+    "note": "Not found on fetched pages",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "sat_act": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "acceptance_rate": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "documents": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "programmes": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "notes": [
+    "Deadlines page does not state year; treat as current cycle, verify."
+   ]
+  },
+  {
+   "id": "72c8eb2c-4178-5106-b3c2-a72e73dc074c",
+   "slug": "georgia-institute-of-technology-72c8eb2c",
+   "name": "Georgia Institute of Technology-Main Campus",
+   "country_code": "US",
+   "tuition": {
+    "amount": 37326,
+    "currency": "USD",
+    "academic_year": "2026-27 (first-year international, tuition and fees)",
+    "usd": 37326,
+    "fx_rate_usd_per_unit": 1,
+    "fx_date": "2026-11-16",
+    "mandatory_fees": null,
+    "living_cost": {
+     "value": "Estimated total incl. housing USD 56,520 (international) per brochure"
+    },
+    "source_url": "https://admission.gatech.edu/images/pdf/2026/Prospective-Student-Brochure-Aug2026.pdf",
+    "retrieved_at": "2026-11-16",
+    "method": "search snippet - verify",
+    "note": "Out-of-state rate USD 36,120; international USD 37,326. Bursar per-term PDFs not read."
+   },
+   "deadlines": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "platform": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "english": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "sat_act": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "acceptance_rate": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "documents": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "programmes": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "notes": [
+    "Deadlines/platform not checked."
+   ]
+  },
+  {
+   "id": "f68b940c-61ed-5be0-96e9-d70422a3f8bf",
+   "slug": "indian-institute-of-technology-bombay-f68b940c",
+   "name": "Indian Institute of Technology, Bombay",
+   "country_code": "IN",
+   "tuition": {
+    "amount": null,
+    "currency": null,
+    "academic_year": null,
+    "usd": null,
+    "fx_rate_usd_per_unit": null,
+    "fx_date": null,
+    "mandatory_fees": null,
+    "living_cost": null,
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "note": "not verified"
+   },
+   "deadlines": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "platform": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "english": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "sat_act": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "acceptance_rate": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "documents": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "programmes": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "notes": [
+    "Only Indian-category fees surfaced; foreign-national BTech fee not found."
+   ]
+  },
+  {
+   "id": "d038c396-227a-555b-b91c-9a0e1587e0c6",
+   "slug": "university-of-liverpool-d038c396",
+   "name": "University of Liverpool",
+   "country_code": "GB",
+   "tuition": {
+    "amount": null,
+    "currency": null,
+    "academic_year": null,
+    "usd": null,
+    "fx_rate_usd_per_unit": null,
+    "fx_date": null,
+    "mandatory_fees": null,
+    "living_cost": null,
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "note": "not verified"
+   },
+   "deadlines": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "platform": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "english": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "sat_act": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "acceptance_rate": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "documents": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "programmes": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "notes": [
+    "Liverpool official international fees page 404 after redirect; 2026/27 undergraduate international fees not retrieved."
+   ]
+  },
+  {
+   "id": "55f4ba6f-3df3-5ee2-ac3a-d6e9e0a2b2fa",
+   "slug": "university-of-western-ontario-55f4ba6f",
+   "name": "University of Western Ontario",
+   "country_code": "CA",
+   "tuition": {
+    "amount": null,
+    "currency": "CAD",
+    "academic_year": "2026-27",
+    "usd": null,
+    "fx_rate_usd_per_unit": null,
+    "fx_date": null,
+    "mandatory_fees": {
+     "value": "International student health plan (UHIP) CAD 948 per year (per official per-course schedule)",
+     "source_url": "https://registrar.uwo.ca/Student_finances/fees_refunds/2026-27-UGRD-Fee-Schedule---Per-Course-International.pdf",
+     "retrieved_at": "2026-11-16",
+     "method": "search snippet - verify"
+    },
+    "living_cost": null,
+    "source_url": "https://registrar.uwo.ca/Student_finances/fees_refunds/2026-27-UGRD-Fee-Schedule---FT-International1.pdf",
+    "retrieved_at": "2026-11-16",
+    "method": "search snippet - verify",
+    "note": "Official draft 2026-27 schedules exist but general FT international line not read. Program-specific figures vary (e.g. 62,733 law)."
+   },
+   "deadlines": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "platform": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "english": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "sat_act": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "acceptance_rate": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "documents": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "programmes": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "notes": [
+    "Draft fee schedules; figures may change."
+   ]
+  },
+  {
+   "id": "a002ead6-250c-572d-8773-015f9419b016",
+   "slug": "stockholm-university-a002ead6",
+   "name": "Stockholm University",
+   "country_code": "SE",
+   "tuition": {
+    "amount": null,
+    "currency": "SEK",
+    "academic_year": "not stated on official page",
+    "usd": null,
+    "fx_rate_usd_per_unit": null,
+    "fx_date": null,
+    "mandatory_fees": {
+     "value": "Application fee SEK 900 per semester applied for (academic year not stated)",
+     "source_url": "https://www.su.se/english/education/how-to-apply/costs-fees-and-scholarships",
+     "retrieved_at": "2026-11-16",
+     "method": "fetched"
+    },
+    "living_cost": null,
+    "source_url": "https://www.su.se/english/education/how-to-apply/costs-fees-and-scholarships",
+    "retrieved_at": "2026-11-16",
+    "method": "fetched",
+    "note": "Page gives per-academic-year bands SEK 90,000 (Humanities/Social Sciences/Law) and SEK 140,000 (Sciences) with no year stated, so treated as undated and not used as latest figure. Programme-specific prices in course catalogue."
+   },
+   "deadlines": {
+    "value": null,
+    "note": "Autumn/spring 2027 deadline not found on fetched page",
+    "academic_year": null,
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "platform": {
+    "value": null,
+    "note": "Application fee paid via universityadmissions.se; application platform not named on page",
+    "academic_year": null,
+    "source_url": "https://www.su.se/english/education/how-to-apply/costs-fees-and-scholarships",
+    "retrieved_at": "2026-11-16"
+   },
+   "english": {
+    "ielts": null,
+    "toefl_ibt": null,
+    "duolingo": null,
+    "academic_year": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "sat_act": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "acceptance_rate": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "documents": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "programmes": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "notes": [
+    "Undated tuition band only."
+   ]
+  },
+  {
+   "id": "662ab476-2ba7-5439-bb0c-c7bf3f442c8d",
+   "slug": "university-of-basel-662ab476",
+   "name": "University of Basel",
+   "country_code": "CH",
+   "tuition": {
+    "amount": 850,
+    "currency": "CHF",
+    "academic_year": "per semester (2026, third-party)",
+    "usd": null,
+    "fx_rate_usd_per_unit": null,
+    "fx_date": null,
+    "mandatory_fees": {
+     "value": "CHF 50 per semester compulsory fees; application fee CHF 100 (third-party)"
+    },
+    "living_cost": null,
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "method": "search snippet - verify",
+    "note": "Official Basel page not retrieved; figures from secondary sites only."
+   },
+   "deadlines": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "platform": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "english": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "sat_act": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "acceptance_rate": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "documents": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "programmes": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "notes": [
+    "Unverified third-party tuition."
+   ]
+  },
+  {
+   "id": "50c3f8cc-8595-5c76-b3cc-115e502bb710",
+   "slug": "university-of-north-carolina-at-chapel-hill-50c3f8cc",
+   "name": "University of North Carolina at Chapel Hill",
+   "country_code": "US",
+   "tuition": {
+    "amount": null,
+    "currency": null,
+    "academic_year": null,
+    "usd": null,
+    "fx_rate_usd_per_unit": null,
+    "fx_date": null,
+    "mandatory_fees": null,
+    "living_cost": null,
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "note": "not verified"
+   },
+   "deadlines": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "platform": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "english": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "sat_act": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "acceptance_rate": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "documents": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "programmes": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "notes": [
+    "Official 2026-27 out-of-state cost of attendance not found; UNC-CH nonresident rate reportedly raised 10% for 2026-27 (unconfirmed)."
+   ]
+  },
+  {
+   "id": "9bff146e-eafa-54b3-a7b2-9d31faf1642d",
+   "slug": "universite-de-montreal-9bff146e",
+   "name": "Université de Montréal",
+   "country_code": "CA",
+   "tuition": {
+    "amount": null,
+    "currency": null,
+    "academic_year": null,
+    "usd": null,
+    "fx_rate_usd_per_unit": null,
+    "fx_date": null,
+    "mandatory_fees": null,
+    "living_cost": null,
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "note": "not verified"
+   },
+   "deadlines": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "platform": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "english": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "sat_act": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "acceptance_rate": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "documents": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "programmes": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "notes": [
+    "Official UdeM international tuition table not retrieved; Quebec non-admissible programmes list exists but not read."
+   ]
+  },
+  {
+   "id": "2bbd21b7-1de0-5911-ab9b-c954ac504ba6",
+   "slug": "wuhan-university-2bbd21b7",
+   "name": "Wuhan University",
+   "country_code": "CN",
+   "tuition": {
+    "amount": null,
+    "currency": null,
+    "academic_year": null,
+    "usd": null,
+    "fx_rate_usd_per_unit": null,
+    "fx_date": null,
+    "mandatory_fees": null,
+    "living_cost": null,
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "note": "not verified"
+   },
+   "deadlines": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "platform": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "english": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "sat_act": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "acceptance_rate": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "documents": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "programmes": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "notes": [
+    "No official 2026 fee schedule found; aggregator figures (English-taught ~RMB 23,000-40,000/yr) not used."
+   ]
+  },
+  {
+   "id": "a2f62835-d825-5217-8e59-90ad384c3f8c",
+   "slug": "indian-institute-of-technology-madras-a2f62835",
+   "name": "Indian Institute of Technology, Madras",
+   "country_code": "IN",
+   "tuition": {
+    "amount": null,
+    "currency": null,
+    "academic_year": null,
+    "usd": null,
+    "fx_rate_usd_per_unit": null,
+    "fx_date": null,
+    "mandatory_fees": null,
+    "living_cost": null,
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "note": "not verified"
+   },
+   "deadlines": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "platform": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "english": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "sat_act": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "acceptance_rate": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "documents": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "programmes": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "notes": [
+    "Official 2026 fee circular (fees.iitm.ac.in) listed but not read; foreign-national BS fee only seen via third-party (INR 568,000) - not used."
+   ]
+  },
+  {
+   "id": "94b2dc51-40ef-5c82-846f-1d95690d7cf2",
+   "slug": "university-of-california-santa-barbara-94b2dc51",
+   "name": "University of California-Santa Barbara",
+   "country_code": "US",
+   "tuition": {
+    "amount": 56965,
+    "currency": "USD",
+    "academic_year": "2026-27 (cohort first enrolled 2026-27, total nonresident charges)",
+    "usd": 56965,
+    "fx_rate_usd_per_unit": 1,
+    "fx_date": "2026-11-16",
+    "mandatory_fees": {
+     "value": "Includes resident-equivalent systemwide tuition and fees USD 15,588 plus nonresident supplemental tuition USD 39,270 (campus total)"
+    },
+    "living_cost": null,
+    "source_url": "https://ucop.edu/operating-budget/_files/fees/202627/2026-27-total-charges-by-campus.pdf",
+    "retrieved_at": "2026-11-16",
+    "method": "search snippet - verify",
+    "note": "Cohort-specific; returning students keep entering-cohort rate. Health insurance and living costs not included."
+   },
+   "deadlines": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "platform": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "english": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "sat_act": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "acceptance_rate": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "documents": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "programmes": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "notes": [
+    "Campus total from UCOP table as surfaced in search; PDF not opened."
+   ]
+  },
+  {
+   "id": "9944c4eb-317b-540e-9abc-9c1942c6ae7c",
+   "slug": "emory-university-9944c4eb",
+   "name": "Emory University",
+   "country_code": "US",
+   "tuition": {
+    "amount": 70300,
+    "currency": "USD",
+    "academic_year": "2026-27 (private; same for domestic and international)",
+    "usd": 70300,
+    "fx_rate_usd_per_unit": 1,
+    "fx_date": "2026-11-16",
+    "mandatory_fees": {
+     "value": "Tuition and required fees per Emory announcement; international visa form lists USD 71,448 tuition and fees"
+    },
+    "living_cost": null,
+    "source_url": "https://news.emory.edu/stories/2026/03/emory-sets-undergraduate-tuition-2026-27-academic-year-affirms-commitment-expanding",
+    "retrieved_at": "2026-11-16",
+    "method": "search snippet - verify",
+    "note": "Tuition 70,300 per official announcement; combined tuition+fees+room+board 93,128."
+   },
+   "deadlines": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "platform": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "english": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "sat_act": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "acceptance_rate": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "documents": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "programmes": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "notes": [
+    "Official tuition from Emory announcement (snippet)."
+   ]
+  },
+  {
+   "id": "4642dac4-82a7-5e31-ba21-c6fef606f411",
+   "slug": "technische-universitat-dresden-4642dac4",
+   "name": "Technische Universität Dresden",
+   "country_code": "DE",
+   "tuition": {
+    "amount": 0,
+    "currency": "EUR",
+    "academic_year": "2026/27 (public bachelor tuition-free per aggregator)",
+    "usd": 0,
+    "fx_rate_usd_per_unit": null,
+    "fx_date": null,
+    "mandatory_fees": {
+     "value": "Semester contribution EUR 361 for winter 2026/27 (incl. EUR 234.18 semester ticket), per VisaFlow citing tu-dresden.de",
+     "source_url": "https://www.visaflow.app/universities/tu-dresden",
+     "retrieved_at": "2026-11-16",
+     "method": "search snippet - verify"
+    },
+    "living_cost": null,
+    "source_url": "https://www.mygermanuniversity.com/universities/Technische-Universitaet-Dresden/tuition-free",
+    "retrieved_at": "2026-11-16",
+    "method": "search snippet - verify",
+    "note": "Tuition-free per aggregator; official tu-dresden.de page not retrieved. Blocked-account figure (EUR 11,904) unverified."
+   },
+   "deadlines": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "platform": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "english": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "sat_act": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "acceptance_rate": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "documents": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "programmes": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "notes": [
+    "Verify tuition-free status on tu-dresden.de."
+   ]
+  },
+  {
+   "id": "da0be24d-7bc2-54bf-aceb-f9b40b808c6d",
+   "slug": "ohio-state-university-columbus-da0be24d",
+   "name": "Ohio State University-Main Campus",
+   "country_code": "US",
+   "tuition": {
+    "amount": 44271,
+    "currency": "USD",
+    "academic_year": "2026-27 (nonresident billed tuition and fees, Columbus)",
+    "usd": 44271,
+    "fx_rate_usd_per_unit": 1,
+    "fx_date": "2026-11-16",
+    "mandatory_fees": {
+     "value": "Included in billed figure per official costs page; international undergraduate fee USD 1,551.50 and nonresident surcharge USD 15,110.50 on registrar table (split unclear)"
+    },
+    "living_cost": null,
+    "source_url": "https://undergrad.osu.edu/costs",
+    "retrieved_at": "2026-11-16",
+    "method": "search snippet - verify",
+    "note": "Ohio residents USD 14,050. Housing/food not from official page."
+   },
+   "deadlines": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "platform": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "english": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "sat_act": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "acceptance_rate": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "documents": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "programmes": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "notes": [
+    "Registrar split unclear; verify on registrar page."
+   ]
+  },
+  {
+   "id": "9f02a56c-9ab8-5777-abaf-de35e9192d5f",
+   "slug": "tu-wien-9f02a56c",
+   "name": "TU Wien",
+   "country_code": "AT",
+   "tuition": {
+    "amount": 726.72,
+    "currency": "EUR",
+    "academic_year": "per semester (not dated on page; same figure cited for 2026/27)",
+    "usd": null,
+    "fx_rate_usd_per_unit": null,
+    "fx_date": null,
+    "mandatory_fees": {
+     "value": "Plus ÖH/Students' Union fee per semester (amount not captured)"
+    },
+    "living_cost": null,
+    "source_url": "https://www.tuwien.at/en/studies/admission/tuition-fee/tuition-fee",
+    "retrieved_at": "2026-11-16",
+    "method": "search snippet - verify",
+    "note": "Non-EU rate; regular EU/Austrian rate EUR 363.36. Exemptions exist (developing countries list not verified)."
+   },
+   "deadlines": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "platform": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "english": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "sat_act": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "acceptance_rate": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "documents": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "programmes": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "notes": [
+    "Official TU Wien page seen in search results."
+   ]
+  },
+  {
+   "id": "4285e06f-015e-58b3-915e-e4a47128638f",
+   "slug": "university-of-otago-4285e06f",
+   "name": "University of Otago",
+   "country_code": "NZ",
+   "tuition": {
+    "amount": null,
+    "currency": "NZD",
+    "academic_year": "2027 intake (programme-specific)",
+    "usd": null,
+    "fx_rate_usd_per_unit": null,
+    "fx_date": null,
+    "mandatory_fees": null,
+    "living_cost": null,
+    "source_url": "https://www.otago.ac.nz/courses/fees/international-tuition-fees/health-sciences",
+    "retrieved_at": "2026-11-16",
+    "method": "search snippet - verify",
+    "note": "Official per-programme figures: HSFY NZD 45,415/yr; Agricultural Innovation NZD 48,720/yr. Humanities table not captured. BCom/BA third-party figures not used. Max 5% annual increase for continuing students."
+   },
+   "deadlines": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "platform": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "english": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "sat_act": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "acceptance_rate": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "documents": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "programmes": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "notes": [
+    "No single university-wide rate; per-division tables."
+   ]
+  },
+  {
+   "id": "0e43791e-b46f-5ae7-add6-e512644375e3",
+   "slug": "loughborough-university-0e43791e",
+   "name": "Loughborough University",
+   "country_code": "GB",
+   "tuition": {
+    "amount": null,
+    "currency": "GBP",
+    "academic_year": "2026-27 (programme-specific)",
+    "usd": null,
+    "fx_rate_usd_per_unit": null,
+    "fx_date": null,
+    "mandatory_fees": null,
+    "living_cost": null,
+    "source_url": "https://lboro.ac.uk/study/undergraduate/fees-funding/fees/international-fees-2026-27/",
+    "retrieved_at": "2026-11-16",
+    "method": "search snippet - verify",
+    "note": "Official table for 2026-27 seen partially: Accounting and Finance BSc GBP 25,950; Aeronautical Engineering BEng GBP 30,700; Fashion Design and Technology BA GBP 24,700. Full table not read."
+   },
+   "deadlines": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "platform": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "english": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "sat_act": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "acceptance_rate": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "documents": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "programmes": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "notes": [
+    "Programme-level fees only."
+   ]
+  },
+  {
+   "id": "24ac60cd-23ee-52e3-b391-359849041a9e",
+   "slug": "universitas-gadjah-mada-24ac60cd",
+   "name": "Universitas Gadjah Mada",
+   "country_code": "ID",
+   "tuition": {
+    "amount": null,
+    "currency": null,
+    "academic_year": null,
+    "usd": null,
+    "fx_rate_usd_per_unit": null,
+    "fx_date": null,
+    "mandatory_fees": null,
+    "living_cost": null,
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "note": "not verified"
+   },
+   "deadlines": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "platform": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "english": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "sat_act": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "acceptance_rate": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "documents": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "programmes": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "notes": [
+    "Official 2026 IDR tuition figures not extracted: Factsheet 2026/27 PDF was unreadable (compressed). Faculty-level IDR figures from third-party/faculty pages not used as official."
+   ]
+  },
+  {
+   "id": "0685b063-ce42-5129-b839-c71e3b46211f",
+   "slug": "tel-aviv-university-0685b063",
+   "name": "Tel Aviv University",
+   "country_code": "IL",
+   "tuition": {
+    "amount": 15500,
+    "currency": "USD",
+    "academic_year": "2026-27 (range USD 15,500-17,500; BA Liberal Arts = 15,500)",
+    "usd": 15500,
+    "fx_rate_usd_per_unit": 1,
+    "fx_date": "2026-11-16",
+    "mandatory_fees": {
+     "value": "USD 150 non-refundable application fee; USD 300 annual student services fee"
+    },
+    "living_cost": null,
+    "source_url": "https://international.tau.ac.il/node/558?tab=3",
+    "retrieved_at": "2026-11-16",
+    "method": "search snippet - verify",
+    "note": "Shekel booklet (NIS 16,443 vs 12,168 conflicting) not used. Indexed to inflation; figures may shift."
+   },
+   "deadlines": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "platform": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "english": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "sat_act": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "acceptance_rate": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "documents": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "programmes": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "notes": [
+    "Official USD range on TAU international fees page (snippet)."
+   ]
+  },
+  {
+   "id": "b719e149-7073-5173-a435-791b55891294",
+   "slug": "universite-de-lausanne-b719e149",
+   "name": "Université de Lausanne",
+   "country_code": "CH",
+   "tuition": {
+    "amount": 1160,
+    "currency": "CHF",
+    "academic_year": "2026-27 (CHF 580 per semester, per secondary sources)",
+    "usd": null,
+    "fx_rate_usd_per_unit": null,
+    "fx_date": null,
+    "mandatory_fees": {
+     "value": "Non-Swiss with foreign diploma: CHF 200 application charge (secondary source)"
+    },
+    "living_cost": null,
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "method": "search snippet - verify",
+    "note": "Official UNIL fee page not found; figure from third-party guides only."
+   },
+   "deadlines": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "platform": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "english": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "sat_act": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "acceptance_rate": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "documents": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "programmes": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "notes": [
+    "Unverified third-party tuition."
+   ]
+  },
+  {
+   "id": "105c95ae-9e57-53d4-be2c-300449d80e35",
+   "slug": "massey-university-105c95ae",
+   "name": "Massey University",
+   "country_code": "NZ",
+   "tuition": {
+    "amount": null,
+    "currency": null,
+    "academic_year": null,
+    "usd": null,
+    "fx_rate_usd_per_unit": null,
+    "fx_date": null,
+    "mandatory_fees": null,
+    "living_cost": null,
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "note": "not verified"
+   },
+   "deadlines": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "platform": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "english": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "sat_act": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "acceptance_rate": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "documents": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "programmes": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "notes": [
+    "Official Massey 2027 international undergraduate fee table not retrieved; third-party NZD 35,250-39,230 listings not used. Toroa scholarship NZD 10,000 (Feb 2027) noted."
+   ]
+  },
+  {
+   "id": "fa22ef60-0123-584c-b367-cc48cff224d1",
+   "slug": "indian-institute-of-technology-kanpur-fa22ef60",
+   "name": "Indian Institute of Technology, Kanpur",
+   "country_code": "IN",
+   "tuition": {
+    "amount": null,
+    "currency": null,
+    "academic_year": null,
+    "usd": null,
+    "fx_rate_usd_per_unit": null,
+    "fx_date": null,
+    "mandatory_fees": null,
+    "living_cost": null,
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "note": "not verified"
+   },
+   "deadlines": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "platform": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "english": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "sat_act": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "acceptance_rate": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "documents": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "programmes": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "notes": [
+    "Official DoSA foreign-national fee document not retrieved; third-party USD 2,000 not used."
+   ]
+  },
+  {
+   "id": "30573a6d-9a4d-582f-9089-9c360793f28e",
+   "slug": "universite-libre-de-bruxelles-30573a6d",
+   "name": "Université Libre de Bruxelles",
+   "country_code": "BE",
+   "tuition": {
+    "amount": null,
+    "currency": "EUR",
+    "academic_year": "2026-27 (non-EU)",
+    "usd": null,
+    "fx_rate_usd_per_unit": null,
+    "fx_date": null,
+    "mandatory_fees": {
+     "value": "Full-rate minerval EUR 1,194 (from 2026-27) plus non-EU supplement EUR 4,175 per secondary source (total ~EUR 5,369)"
+    },
+    "living_cost": null,
+    "source_url": "https://www.ulb.be/en/enrolment/tuition-fees",
+    "retrieved_at": "2026-11-16",
+    "method": "search snippet - verify",
+    "note": "Official ULB non-EU table did not render; total is secondary-source only."
+   },
+   "deadlines": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "platform": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "english": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "sat_act": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "acceptance_rate": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "documents": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "programmes": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "notes": [
+    "Verify non-EU total on ulb.be."
+   ]
+  },
+  {
+   "id": "3c93b208-6d77-51ff-9a3a-d9a201477355",
+   "slug": "la-trobe-university-3c93b208",
+   "name": "La Trobe University",
+   "country_code": "AU",
+   "tuition": {
+    "amount": null,
+    "currency": null,
+    "academic_year": null,
+    "usd": null,
+    "fx_rate_usd_per_unit": null,
+    "fx_date": null,
+    "mandatory_fees": null,
+    "living_cost": null,
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "note": "not verified"
+   },
+   "deadlines": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "platform": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "english": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "sat_act": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "acceptance_rate": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "documents": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "programmes": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "notes": [
+    "Official La Trobe 2027 fee table not retrieved; third-party A$32,000-46,000 range not used."
+   ]
+  },
+  {
+   "id": "a0d2f406-7c53-5645-921f-ecb098e0a9be",
+   "slug": "university-of-rochester-a0d2f406",
+   "name": "University of Rochester",
+   "country_code": "US",
+   "tuition": {
+    "amount": 69030,
+    "currency": "USD",
+    "academic_year": "2026-27 (per Financial Aid cost table, unconfirmed)",
+    "usd": 69030,
+    "fx_rate_usd_per_unit": 1,
+    "fx_date": "2026-11-16",
+    "mandatory_fees": {
+     "value": "Mandatory fees USD 1,452 (same table)"
+    },
+    "living_cost": {
+     "value": "Housing USD 12,328 residential / 5,716 off-campus (same table)"
+    },
+    "source_url": "https://www.rochester.edu/financial-aid/undergraduate-tuition-expenses",
+    "retrieved_at": "2026-11-16",
+    "method": "search snippet - verify",
+    "note": "Conflicting: FA handbook shows USD 71,750 for 2025-26 tuition. Verify with Bursar."
+   },
+   "deadlines": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "platform": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "english": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "sat_act": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "acceptance_rate": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "documents": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "programmes": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "notes": [
+    "Tuition conflicts across University pages; verify."
+   ]
+  },
+  {
+   "id": "32d95a2a-7d14-572d-8c70-bc04da01f060",
+   "slug": "central-european-university-32d95a2a",
+   "name": "Central European University",
+   "country_code": "AT",
+   "tuition": {
+    "amount": null,
+    "currency": null,
+    "academic_year": null,
+    "usd": null,
+    "fx_rate_usd_per_unit": null,
+    "fx_date": null,
+    "mandatory_fees": null,
+    "living_cost": null,
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "note": "not verified"
+   },
+   "deadlines": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "platform": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "english": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "sat_act": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "acceptance_rate": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "documents": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "programmes": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "notes": [
+    "Official CEU fee schedule not found; third-party EUR 8,000 vs 12,000 conflict, not used."
+   ]
+  },
+  {
+   "id": "15ff9275-1c2a-5820-9bab-4da296371714",
+   "slug": "albert-ludwigs-universitat-freiburg-15ff9275",
+   "name": "Albert-Ludwigs-Universität Freiburg",
+   "country_code": "DE",
+   "tuition": {
+    "amount": 3000,
+    "currency": "EUR",
+    "academic_year": "per year (EUR 1,500 per semester, Non-EU/EEA, Summer 2026 notice)",
+    "usd": null,
+    "fx_rate_usd_per_unit": null,
+    "fx_date": null,
+    "mandatory_fees": {
+     "value": "Semester contribution EUR 190 per semester (in addition)"
+    },
+    "living_cost": null,
+    "source_url": "https://uni-freiburg.de/studium/im-studium/semesterbeitrag-studiengebuehren/",
+    "retrieved_at": "2026-11-16",
+    "method": "search snippet - verify",
+    "note": "Baden-Wuerttemberg Landeshochschulgebuehrengesetz; EU/EEA exempt. Year-2026/27 figure not confirmed; amount is EUR 1,500 x 2 semesters (computed)."
+   },
+   "deadlines": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "platform": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "english": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "sat_act": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "acceptance_rate": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "documents": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "programmes": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "notes": [
+    "Fee confirmed from official Rueckmeldung notice (Summer 2026) per search."
+   ]
+  },
+  {
+   "id": "c6b8935e-0e3b-522a-a5f0-03a1bc6c97e8",
+   "slug": "university-of-massachusetts-at-amherst-c6b8935e",
+   "name": "University of Massachusetts-Amherst",
+   "country_code": "US",
+   "tuition": {
+    "amount": null,
+    "currency": null,
+    "academic_year": null,
+    "usd": null,
+    "fx_rate_usd_per_unit": null,
+    "fx_date": null,
+    "mandatory_fees": null,
+    "living_cost": null,
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "note": "not verified"
+   },
+   "deadlines": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "platform": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "english": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "sat_act": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "acceptance_rate": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "documents": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "programmes": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "notes": [
+    "Official 2026-27 nonresident/international undergraduate total not finalized on fetched page; out-of-state estimate USD 21,493 on Global Launch page not used as tuition (labelled estimate)."
+   ]
+  },
+  {
+   "id": "16a83abd-6892-5cac-b5b5-d704b7d49229",
+   "slug": "taylor-s-university-16a83abd",
+   "name": "Taylor's University",
+   "country_code": "MY",
+   "tuition": {
+    "amount": null,
+    "currency": null,
+    "academic_year": null,
+    "usd": null,
+    "fx_rate_usd_per_unit": null,
+    "fx_date": null,
+    "mandatory_fees": null,
+    "living_cost": null,
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "note": "not verified"
+   },
+   "deadlines": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "platform": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "english": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "sat_act": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "acceptance_rate": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "documents": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "programmes": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "notes": [
+    "Official 2026 USD schedule not found (Taylor's PDF in results is 2025 Sept intake); aggregator figures conflict, not used."
+   ]
+  },
+  {
+   "id": "41a5c110-cdd3-57e4-bad5-8bfe253f3b0a",
+   "slug": "universidad-nacional-de-colombia-41a5c110",
+   "name": "Universidad Nacional de Colombia",
+   "country_code": "CO",
+   "tuition": {
+    "amount": null,
+    "currency": null,
+    "academic_year": null,
+    "usd": null,
+    "fx_rate_usd_per_unit": null,
+    "fx_date": null,
+    "mandatory_fees": null,
+    "living_cost": null,
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "note": "not verified"
+   },
+   "deadlines": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "platform": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "english": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "sat_act": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "acceptance_rate": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "documents": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "programmes": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "notes": [
+    "Tuition set by PBM socioeconomic tariff; no foreign-national amount found."
+   ]
+  },
+  {
+   "id": "fb839fd6-8704-5720-a463-2876d775b8f5",
+   "slug": "universitat-pompeu-fabra-fb839fd6",
+   "name": "Universitat Pompeu Fabra",
+   "country_code": "ES",
+   "tuition": {
+    "amount": null,
+    "currency": null,
+    "academic_year": null,
+    "usd": null,
+    "fx_rate_usd_per_unit": null,
+    "fx_date": null,
+    "mandatory_fees": null,
+    "living_cost": null,
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "note": "not verified"
+   },
+   "deadlines": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "platform": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "english": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "sat_act": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "acceptance_rate": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "documents": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "programmes": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "notes": [
+    "UPF 2026-27 undergraduate non-EU price not found on navigation pages; master's per-credit rate not applicable."
+   ]
+  },
+  {
+   "id": "731c32c4-6abe-59b8-bfe1-c0df705c0612",
+   "slug": "universitat-koln-731c32c4",
+   "name": "Universität Köln",
+   "country_code": "DE",
+   "tuition": {
+    "amount": null,
+    "currency": null,
+    "academic_year": null,
+    "usd": null,
+    "fx_rate_usd_per_unit": null,
+    "fx_date": null,
+    "mandatory_fees": null,
+    "living_cost": null,
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "note": "not verified"
+   },
+   "deadlines": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "platform": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "english": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "sat_act": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "acceptance_rate": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "documents": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "programmes": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "notes": [
+    "Bachelor tuition reportedly none (NRW); semester contribution EUR 335.65 is 2025/26 third-party figure, not official 2026/27."
+   ]
+  },
+  {
+   "id": "53208e9d-6b64-5e42-9d07-d0849a9beeda",
+   "slug": "university-of-galway-53208e9d",
+   "name": "University of Galway",
+   "country_code": "IE",
+   "tuition": {
+    "amount": null,
+    "currency": "EUR",
+    "academic_year": "2026/27 (per-course; examples: Commerce (International) EUR 19,390/yr; BCom International Hotel Management EUR 15,640/yr; Commerce (International with French) EUR 28,340/yr)",
+    "usd": null,
+    "fx_rate_usd_per_unit": null,
+    "fx_date": null,
+    "mandatory_fees": null,
+    "living_cost": null,
+    "source_url": "https://www.universityofgalway.ie/courses/fees-and-funding/fees",
+    "retrieved_at": "2026-11-16",
+    "method": "search snippet - verify",
+    "note": "Non-EU fee varies by course; full table not read. Non-EU students pay 50% before registration. Fees rise ~1.8% in 2026 per QA312 policy."
+   },
+   "deadlines": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "platform": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "english": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "sat_act": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "acceptance_rate": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "documents": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "programmes": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "notes": [
+    "Multiple course-level examples from official fee pages; single figure not given."
+   ]
+  },
+  {
+   "id": "4033469f-02ba-5007-89dd-40c796f8a5cb",
+   "slug": "university-of-pittsburgh-4033469f",
+   "name": "University of Pittsburgh-Pittsburgh Campus",
+   "country_code": "US",
+   "tuition": {
+    "amount": null,
+    "currency": null,
+    "academic_year": null,
+    "usd": null,
+    "fx_rate_usd_per_unit": null,
+    "fx_date": null,
+    "mandatory_fees": null,
+    "living_cost": null,
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "note": "not verified"
+   },
+   "deadlines": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "platform": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "english": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "sat_act": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "acceptance_rate": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "documents": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "programmes": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "notes": [
+    "Official Pitt 2026-27 nonresident undergraduate table not captured; third-party USD 41,662 not used."
+   ]
+  },
+  {
+   "id": "a0ed766a-ac85-5cc2-96d5-321d30e8b292",
+   "slug": "university-of-southern-denmark-sdu-a0ed766a",
+   "name": "University of Southern Denmark - SDU",
+   "country_code": "DK",
+   "tuition": {
+    "amount": null,
+    "currency": "EUR",
+    "academic_year": "Sept 2026 intake (2027 rate not published)",
+    "usd": null,
+    "fx_rate_usd_per_unit": null,
+    "fx_date": null,
+    "mandatory_fees": {
+     "value": "Application fee EUR 200 (non-EU/EEA), deducted from first tuition payment"
+    },
+    "living_cost": null,
+    "source_url": "https://www.sdu.dk/en/uddannelse/bachelor/bachelor-admission/tuition-fees",
+    "retrieved_at": "2026-11-16",
+    "method": "search snippet - verify",
+    "note": "Engineering EUR 17,300/yr; Business and Social Sciences EUR 15,000/yr (official bachelor pages, per search). Programme-dependent."
+   },
+   "deadlines": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "platform": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "english": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "sat_act": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "acceptance_rate": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "documents": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "programmes": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "notes": [
+    "Programme-level EUR amounts; no single rate."
+   ]
+  },
+  {
+   "id": "26c4ebed-4686-5089-864f-6771795bb5d8",
+   "slug": "swinburne-university-of-technology-26c4ebed",
+   "name": "Swinburne University of Technology",
+   "country_code": "AU",
+   "tuition": {
+    "amount": null,
+    "currency": "AUD",
+    "academic_year": "2027 (indicative)",
+    "usd": null,
+    "fx_rate_usd_per_unit": null,
+    "fx_date": null,
+    "mandatory_fees": null,
+    "living_cost": null,
+    "source_url": "https://www.swinburne.edu.au/downloads/Undergraduate-Course-Fees-2027-International.pdf",
+    "retrieved_at": "2026-11-16",
+    "method": "search snippet - verify",
+    "note": "Official 2027 international undergraduate sheet labelled indicative/TBA. Bachelor of Arts shown at AUD 37,800/yr in snippet; not used as a university-wide figure."
+   },
+   "deadlines": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "platform": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "english": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "sat_act": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "acceptance_rate": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "documents": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "programmes": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "notes": [
+    "2027 fees labelled indicative."
+   ]
+  },
+  {
+   "id": "58793794-34c5-5b71-b013-4388d7cfb907",
+   "slug": "university-of-notre-dame-58793794",
+   "name": "University of Notre Dame",
+   "country_code": "US",
+   "tuition": {
+    "amount": 69280,
+    "currency": "USD",
+    "academic_year": "2026-27 (average undergraduate budget, tuition line)",
+    "usd": 69280,
+    "fx_rate_usd_per_unit": 1,
+    "fx_date": "2026-11-16",
+    "mandatory_fees": {
+     "value": "Mandatory fees USD 514"
+    },
+    "living_cost": {
+     "value": "Housing and food USD 18,992; books 1,250; personal 1,200; transportation 750; average total budget USD 91,986"
+    },
+    "source_url": "https://financialaid.nd.edu/cost-of-attendance/",
+    "retrieved_at": "2026-11-16",
+    "method": "search snippet - verify",
+    "note": "Not international-specific; domestic and international share the published tuition."
+   },
+   "deadlines": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "platform": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "english": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "sat_act": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "acceptance_rate": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "documents": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "programmes": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "notes": [
+    "Average budget from official aid page snippet."
+   ]
+  },
+  {
+   "id": "89ed6caa-1b3c-54a8-b6b8-10ce5a8679af",
+   "slug": "university-of-colorado-at-boulder-89ed6caa",
+   "name": "University of Colorado Boulder",
+   "country_code": "US",
+   "tuition": {
+    "amount": null,
+    "currency": null,
+    "academic_year": null,
+    "usd": null,
+    "fx_rate_usd_per_unit": null,
+    "fx_date": null,
+    "mandatory_fees": null,
+    "living_cost": null,
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "note": "not verified"
+   },
+   "deadlines": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "platform": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "english": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "sat_act": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "acceptance_rate": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "documents": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "programmes": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "notes": [
+    "CU Boulder Group U international sheet (colorado.edu/bursar/media/1125) not readable; secondary figures conflict (USD 48,222 vs 46,058 vs 45,019 nonresident)."
+   ]
+  },
+  {
+   "id": "36f6d62c-f9a7-5a39-b4ee-d2b49cc75344",
+   "slug": "universidad-carlos-iii-de-madrid-36f6d62c",
+   "name": "Universidad Carlos III de Madrid",
+   "country_code": "ES",
+   "tuition": {
+    "amount": null,
+    "currency": null,
+    "academic_year": null,
+    "usd": null,
+    "fx_rate_usd_per_unit": null,
+    "fx_date": null,
+    "mandatory_fees": null,
+    "living_cost": null,
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "note": "not verified"
+   },
+   "deadlines": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "platform": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "english": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "sat_act": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "acceptance_rate": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "documents": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "programmes": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "notes": [
+    "Official 2026-27 non-EU grado price table not captured (page text cut off); not used."
+   ]
+  },
+  {
+   "id": "bdb1f2b9-ffd0-5bac-9ba5-ca63a083289b",
+   "slug": "sultan-qaboos-university-bdb1f2b9",
+   "name": "Sultan Qaboos University",
+   "country_code": "OM",
+   "tuition": {
+    "amount": null,
+    "currency": null,
+    "academic_year": null,
+    "usd": null,
+    "fx_rate_usd_per_unit": null,
+    "fx_date": null,
+    "mandatory_fees": null,
+    "living_cost": null,
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "note": "not verified"
+   },
+   "deadlines": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "platform": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "english": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "sat_act": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "acceptance_rate": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "documents": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "programmes": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "notes": [
+    "No official SQU fee schedule found; Afaaq per-credit OMR 180-300 (fee-paying track) and older OMR 1,500-1,800 figures conflict; not used."
+   ]
+  },
+  {
+   "id": "09917ea1-c3bc-548b-9542-fa434bec531a",
+   "slug": "kyung-hee-university-09917ea1",
+   "name": "Kyung Hee University",
+   "country_code": "KR",
+   "tuition": {
+    "amount": 4977400,
+    "currency": "KRW",
+    "academic_year": "Fall 2026 (lower bound; range KRW 4,977,400-6,718,400 by college)",
+    "usd": null,
+    "fx_rate_usd_per_unit": null,
+    "fx_date": null,
+    "mandatory_fees": null,
+    "living_cost": null,
+    "source_url": "https://www.timeshighereducation.com/sites/default/files/institution_downloads/guidelines_for_undergraduate_international_admission.pdf",
+    "retrieved_at": "2026-11-16",
+    "method": "search snippet - verify",
+    "note": "Figure via third-party summary of university guide; 2027 not published. Leap Scholar KRW 7-10m conflicts."
+   },
+   "deadlines": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "platform": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "english": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "sat_act": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "acceptance_rate": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "documents": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "programmes": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "notes": [
+    "Fall 2026 figure only; 2027 not found."
+   ]
+  },
+  {
+   "id": "04130047-2dde-5f12-bd18-d6472712e701",
+   "slug": "university-of-tasmania-04130047",
+   "name": "University of Tasmania",
+   "country_code": "AU",
+   "tuition": {
+    "amount": null,
+    "currency": "AUD",
+    "academic_year": "2027 (programme-specific)",
+    "usd": null,
+    "fx_rate_usd_per_unit": null,
+    "fx_date": null,
+    "mandatory_fees": null,
+    "living_cost": null,
+    "source_url": "https://www.utas.edu.au/fees",
+    "retrieved_at": "2026-11-16",
+    "method": "search snippet - verify",
+    "note": "UTAS states fees are AUD annual and indicative, CPI-indexed. Official course tables not read; third-party figures not used."
+   },
+   "deadlines": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "platform": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "english": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "sat_act": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "acceptance_rate": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "documents": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "programmes": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "notes": [
+    "Programme-level only."
+   ]
+  },
+  {
+   "id": "4a913ea2-abf9-5107-b6cc-86e5516b9c0f",
+   "slug": "l-n-gumilyov-eurasian-national-university-4a913ea2",
+   "name": "L.N. Gumilyov Eurasian National University",
+   "country_code": "KZ",
+   "tuition": {
+    "amount": null,
+    "currency": null,
+    "academic_year": null,
+    "usd": null,
+    "fx_rate_usd_per_unit": null,
+    "fx_date": null,
+    "mandatory_fees": null,
+    "living_cost": null,
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "note": "not verified"
+   },
+   "deadlines": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "platform": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "english": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "sat_act": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "acceptance_rate": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "documents": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "programmes": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "notes": [
+    "Official ENU fee schedule not found; third-party USD 4,400-5,000 not used as official."
+   ]
+  },
+  {
+   "id": "c0bfd9bb-3a59-5d48-8a4f-a455af468632",
+   "slug": "university-of-tehran-c0bfd9bb",
+   "name": "University of Tehran",
+   "country_code": "IR",
+   "tuition": {
+    "amount": null,
+    "currency": "EUR",
+    "academic_year": "2026/27 (not confirmed)",
+    "usd": null,
+    "fx_rate_usd_per_unit": null,
+    "fx_date": null,
+    "mandatory_fees": null,
+    "living_cost": null,
+    "source_url": "https://admissions.ut.ac.ir/en/page/7396/tuition-fee-for-international-students",
+    "retrieved_at": "2026-11-16",
+    "method": "search snippet - verify",
+    "note": "Official page lists per-semester EUR tuition for international students; undergraduate row not captured. Third-party EUR 1,050-2,000 per semester not used."
+   },
+   "deadlines": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "platform": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "english": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "sat_act": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "acceptance_rate": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "documents": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "programmes": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "notes": [
+    "Undergraduate row on official tuition page not captured."
+   ]
+  },
+  {
+   "id": "fcbd953c-7b98-5226-beb5-4082969d9350",
+   "slug": "universidade-nova-de-lisboa-fcbd953c",
+   "name": "Universidade Nova de Lisboa",
+   "country_code": "PT",
+   "tuition": {
+    "amount": 7000,
+    "currency": "EUR",
+    "academic_year": "2026/27",
+    "usd": null,
+    "fx_rate_usd_per_unit": null,
+    "fx_date": null,
+    "mandatory_fees": {
+     "value": "Taxa de matricula EUR 35; school insurance EUR 2.59",
+     "academic_year": "2026/27"
+    },
+    "living_cost": null,
+    "source_url": "https://www.fct.unl.pt/sites/default/files/despacho_14_2026_propinas_26_27.pdf",
+    "retrieved_at": "2026-11-16",
+    "method": "search snippet - verify",
+    "note": "Faculty-level figure (FCT NOVA) from a listing citing Despacho 14/2026; not university-wide; other NOVA faculties may differ."
+   },
+   "deadlines": {
+    "value": null,
+    "note": "not verified",
+    "academic_year": null,
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "platform": {
+    "value": null,
+    "note": "not verified",
+    "academic_year": null,
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "english": {
+    "ielts": null,
+    "toefl_ibt": null,
+    "duolingo": null,
+    "academic_year": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "sat_act": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "acceptance_rate": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "documents": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "programmes": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "notes": [
+    "Faculty-specific fee only."
+   ]
+  },
+  {
+   "id": "d8d9923e-8437-5166-ab83-1610792d1967",
+   "slug": "indian-institute-of-technology-guwahati-d8d9923e",
+   "name": "Indian Institute of Technology Guwahati",
+   "country_code": "IN",
+   "tuition": {
+    "amount": 300000,
+    "currency": "INR",
+    "academic_year": "2026/27 (per semester, foreign nationals non-SAARC; SAARC INR 150,000)",
+    "usd": null,
+    "fx_rate_usd_per_unit": null,
+    "fx_date": null,
+    "mandatory_fees": null,
+    "living_cost": null,
+    "source_url": "https://iitg.ac.in/acad/admission/fresher/ug_fee_pay_2026.pdf",
+    "retrieved_at": "2026-11-16",
+    "method": "search snippet - verify",
+    "note": "INR 300,000 per semester is the per-semester amount (annual = 2 semesters, not computed here). Also in IITG FACT SHEET 2025. Foreign-national page undated per summary."
+   },
+   "deadlines": {
+    "value": [
+     {
+      "round": "JEE (Advanced) route for foreign nationals; July 2026 portal closed",
+      "date": "not stated",
+      "cycle": "2026 entry"
+     }
+    ],
+    "academic_year": "2026/27",
+    "source_url": "https://motion.ac.in/examinfo/tag/iit-guwahati-fee-structure/",
+    "retrieved_at": "2026-11-16",
+    "method": "search snippet - verify",
+    "note": "Only that the July 2026 portal closed; no 2027 date found."
+   },
+   "platform": {
+    "value": "JEE (Advanced) route; direct admission for foreign nationals",
+    "academic_year": "2026/27",
+    "source_url": "https://motion.ac.in/examinfo/tag/iit-guwahati-fee-structure/",
+    "retrieved_at": "2026-11-16",
+    "method": "search snippet - verify"
+   },
+   "english": {
+    "ielts": null,
+    "toefl_ibt": null,
+    "duolingo": null,
+    "academic_year": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "sat_act": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "acceptance_rate": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "documents": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "programmes": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "notes": [
+    "Fees per semester; no 2027 intake date found."
+   ]
+  },
+  {
+   "id": "07277532-423a-5f50-815a-c8cc190fdd80",
+   "slug": "technion-israel-institute-of-technology-07277532",
+   "name": "Technion - Israel Institute of Technology",
+   "country_code": "IL",
+   "tuition": {
+    "amount": 15000,
+    "currency": "USD",
+    "academic_year": "2026/27",
+    "usd": 15000,
+    "fx_rate_usd_per_unit": 1,
+    "fx_date": "2026-11-16",
+    "mandatory_fees": {
+     "value": "Campus fees NIS 1,230 (academic year 2026/27, payment regulations)",
+     "academic_year": "2026/27"
+    },
+    "living_cost": {
+     "value": "Dorms NIS 15,600; insurance NIS 5,100 (2026/27 contact page)",
+     "academic_year": "2026/27"
+    },
+    "source_url": "https://slimud.technion.ac.il/files/2026/08/Payments-Regulations-2026-2027.pdf",
+    "retrieved_at": "2026-11-16",
+    "method": "search snippet - verify",
+    "note": "Paid in four USD 3,750 instalments; exchange rate fixed on 15 Aug 2026."
+   },
+   "deadlines": {
+    "value": null,
+    "note": "not verified",
+    "academic_year": null,
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "platform": {
+    "value": null,
+    "note": "Technion International School own application; platform not verified",
+    "academic_year": null,
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "english": {
+    "ielts": null,
+    "toefl_ibt": null,
+    "duolingo": null,
+    "academic_year": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "sat_act": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "acceptance_rate": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "documents": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "programmes": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "notes": [
+    "Payment regulations PDF listed in search; not opened."
+   ]
+  },
+  {
+   "id": "1f395ae1-5b5e-50f0-882b-56186c66d614",
+   "slug": "university-of-oulu-1f395ae1",
+   "name": "University of Oulu",
+   "country_code": "FI",
+   "tuition": {
+    "amount": 10000,
+    "currency": "EUR",
+    "academic_year": "2027/28 (applies to autumn 2027 entry per tuition page wording; page not year-stamped)",
+    "usd": null,
+    "fx_rate_usd_per_unit": null,
+    "fx_date": null,
+    "mandatory_fees": null,
+    "living_cost": null,
+    "source_url": "https://www.oulu.fi/en/apply/how-apply/applying-bachelors-programmes",
+    "retrieved_at": "2026-11-16",
+    "method": "search snippet - verify",
+    "note": "Annual fee EUR 10,000 on the general bachelor's page. Early-bird discount and partial waivers exist. Programme-specific tables not read."
+   },
+   "deadlines": {
+    "value": [
+     {
+      "round": "Rolling admission, International Business Management",
+      "date": "1 Oct 2026 - 25 Feb 2027",
+      "cycle": "autumn 2027"
+     },
+     {
+      "round": "Joint application",
+      "date": "7-21 Jan 2027",
+      "cycle": "autumn 2027"
+     },
+     {
+      "round": "Tuition fee payment",
+      "date": "13 Jul 2027",
+      "cycle": "2027-28"
+     }
+    ],
+    "academic_year": "2027/28",
+    "source_url": "https://www.oulu.fi/en/bachelors-admissions-deadlines",
+    "retrieved_at": "2026-11-16",
+    "method": "search snippet - verify"
+   },
+   "platform": {
+    "value": null,
+    "note": "Application platform not verified",
+    "academic_year": null,
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "english": {
+    "ielts": null,
+    "toefl_ibt": null,
+    "duolingo": null,
+    "academic_year": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "sat_act": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "acceptance_rate": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "documents": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "programmes": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "notes": [
+    "Deadlines from snippet of oulu.fi bachelor's deadlines page."
+   ]
+  },
+  {
+   "id": "1375fcab-d98a-53ba-af83-3f09558b1ee4",
+   "slug": "national-taiwan-university-of-science-and-technology-1375fcab",
+   "name": "National Taiwan University of Science and Technology",
+   "country_code": "TW",
+   "tuition": {
+    "amount": 48960,
+    "currency": "TWD",
+    "academic_year": "2026/27 (per semester, effective 1 Aug 2026; low end of NT$48,960-55,180)",
+    "usd": null,
+    "fx_rate_usd_per_unit": null,
+    "fx_date": null,
+    "mandatory_fees": null,
+    "living_cost": null,
+    "source_url": "https://admission.ntust.edu.tw/var/file/52/1052/img/2629/133514445.pdf",
+    "retrieved_at": "2026-11-16",
+    "method": "search snippet - verify",
+    "note": "Figure reported by third-party summary citing NTUST international fee schedule; official document not opened."
+   },
+   "deadlines": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "platform": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "english": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "sat_act": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "acceptance_rate": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "documents": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "programmes": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "notes": [
+    "Per-semester figures; official schedule not opened."
+   ]
+  },
+  {
+   "id": "167202e2-fb1f-5826-858e-0f841dfdacdf",
+   "slug": "cairo-university-167202e2",
+   "name": "Cairo University",
+   "country_code": "EG",
+   "tuition": {
+    "amount": null,
+    "currency": null,
+    "academic_year": null,
+    "usd": null,
+    "fx_rate_usd_per_unit": null,
+    "fx_date": null,
+    "mandatory_fees": null,
+    "living_cost": null,
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "note": "not verified"
+   },
+   "deadlines": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "platform": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "english": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "sat_act": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "acceptance_rate": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "documents": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "programmes": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "notes": [
+    "No official Cairo University 2026/27 foreign-student undergraduate fee found; third-party ranges (EGP 5,000-150,000) conflict and are not used."
+   ]
+  },
+  {
+   "id": "9915b963-b19f-55f6-8dd8-5067fa6d26d1",
+   "slug": "tsukuba-university-9915b963",
+   "name": "Tsukuba University",
+   "country_code": "JP",
+   "tuition": {
+    "amount": 535800,
+    "currency": "JPY",
+    "academic_year": "2026",
+    "usd": null,
+    "fx_rate_usd_per_unit": null,
+    "fx_date": null,
+    "mandatory_fees": {
+     "value": "One-off admission fee JPY 282,000 (2026, undergraduate and graduate, third-party summary)",
+     "academic_year": "2026"
+    },
+    "living_cost": null,
+    "source_url": "https://www.tsukuba.ac.jp/en/admissions/fees-tuition/fees-tuition-students/",
+    "retrieved_at": "2026-11-16",
+    "method": "search snippet - verify",
+    "note": "Same rate for domestic and international in 2026 per official page. Official page says international tuition from 1 Apr 2027 will be revised; new rate JPY 608,800 is third-party only and not used."
+   },
+   "deadlines": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "platform": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "english": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "sat_act": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "acceptance_rate": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "documents": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "programmes": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "notes": [
+    "Revised 2027 rate not confirmed."
+   ]
+  },
+  {
+   "id": "f35c594a-8de3-586d-b5a0-d2fa7eeacfe3",
+   "slug": "national-technical-university-of-athens-f35c594a",
+   "name": "National Technical University of Athens",
+   "country_code": "GR",
+   "tuition": {
+    "amount": null,
+    "currency": null,
+    "academic_year": null,
+    "usd": null,
+    "fx_rate_usd_per_unit": null,
+    "fx_date": null,
+    "mandatory_fees": null,
+    "living_cost": null,
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "note": "not verified"
+   },
+   "deadlines": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "platform": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "english": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "sat_act": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "acceptance_rate": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "documents": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "programmes": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "notes": [
+    "NTUA undergraduate non-EU fee not found; third-party says Greek-taught undergraduates free but applicability to non-EU unconfirmed; postgraduate 500 EUR/semester not applicable."
+   ]
+  },
+  {
+   "id": "f1f09b3b-965c-56a5-9b96-dfb54d7483ce",
+   "slug": "university-of-liege-f1f09b3b",
+   "name": "University of Liège",
+   "country_code": "BE",
+   "tuition": {
+    "amount": null,
+    "currency": null,
+    "academic_year": null,
+    "usd": null,
+    "fx_rate_usd_per_unit": null,
+    "fx_date": null,
+    "mandatory_fees": null,
+    "living_cost": null,
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "note": "not verified"
+   },
+   "deadlines": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "platform": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "english": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "sat_act": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "acceptance_rate": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "documents": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "programmes": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "notes": [
+    "ULiege 2026-27 non-EU bachelor fee not read from official page; third-party EUR 4,175 supplement conflicts with UMONS EUR 2,505 figure; not used."
+   ]
+  },
+  {
+   "id": "fe01fef8-4798-5e0b-b7b6-3d1cb3b1e8ee",
+   "slug": "western-sydney-university-fe01fef8",
+   "name": "Western Sydney University",
+   "country_code": "AU",
+   "tuition": {
+    "amount": null,
+    "currency": null,
+    "academic_year": null,
+    "usd": null,
+    "fx_rate_usd_per_unit": null,
+    "fx_date": null,
+    "mandatory_fees": null,
+    "living_cost": null,
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "note": "not verified"
+   },
+   "deadlines": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "platform": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "english": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "sat_act": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "acceptance_rate": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "documents": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "programmes": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "notes": [
+    "Official 2027 international undergraduate fee PDF (ug-intl-fees-2027.pdf) listed but amounts not captured; third-party AUD 35,868-40,916 per year not used. Official 2027 scholarships AUD 10,000 or 5,000 per year noted."
+   ]
+  },
+  {
+   "id": "5e2c8d0e-394c-543b-9d2e-2176866fd088",
+   "slug": "sharif-university-of-technology-5e2c8d0e",
+   "name": "Sharif University of Technology",
+   "country_code": "IR",
+   "tuition": {
+    "amount": null,
+    "currency": null,
+    "academic_year": null,
+    "usd": null,
+    "fx_rate_usd_per_unit": null,
+    "fx_date": null,
+    "mandatory_fees": null,
+    "living_cost": null,
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "note": "not verified"
+   },
+   "deadlines": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "platform": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "english": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "sat_act": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "acceptance_rate": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "documents": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "programmes": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "notes": [
+    "Only undated official figure found (EUR 1,000 per semester plus EUR 20 per unit, no year stated); not used as latest. Third-party USD/EUR listings conflict. Sanctions and banking caveat noted by third party."
+   ]
+  },
+  {
+   "id": "ad49510e-30fc-58dd-9cd9-0b45edf6758c",
+   "slug": "gwangju-institute-of-science-and-technology-ad49510e",
+   "name": "Gwangju Institute of Science and Technology",
+   "country_code": "KR",
+   "tuition": {
+    "amount": 4050000,
+    "currency": "KRW",
+    "academic_year": "2026 (per semester, undergraduate guide)",
+    "usd": null,
+    "fx_rate_usd_per_unit": null,
+    "fx_date": null,
+    "mandatory_fees": null,
+    "living_cost": null,
+    "source_url": "https://ewww.gist.ac.kr/iuadm/img/main/2026_Undergraduate_Guide_for_Ebook_single.pdf",
+    "retrieved_at": "2026-11-16",
+    "method": "search snippet - verify",
+    "note": "Gross tuition per semester per 2026 undergraduate guide, stated as fully waived for international students. Graduate and older-cycle figures not used."
+   },
+   "deadlines": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "platform": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "english": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "sat_act": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "acceptance_rate": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "documents": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "programmes": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "notes": [
+    "Tuition waived for international undergraduates per guide; net charge 0 as stated."
+   ]
+  },
+  {
+   "id": "df1296f4-63d0-57c4-aadc-9fb97656eaf0",
+   "slug": "universita-cattolica-del-sacro-cuore-df1296f4",
+   "name": "Università Cattolica del Sacro Cuore",
+   "country_code": "IT",
+   "tuition": {
+    "amount": null,
+    "currency": null,
+    "academic_year": null,
+    "usd": null,
+    "fx_rate_usd_per_unit": null,
+    "fx_date": null,
+    "mandatory_fees": null,
+    "living_cost": null,
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "note": "not verified"
+   },
+   "deadlines": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "platform": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "english": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "sat_act": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "acceptance_rate": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "documents": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "programmes": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "notes": [
+    "2026/27 non-EU tuition not extracted; official first-year fee rules PDF (Normativa 2026/2027) listed but not read. Older 2025 EUR 4,100 and scholarship figures not used."
+   ]
+  },
+  {
+   "id": "dec56bcd-1a03-5b64-8395-d8fe3a330641",
+   "slug": "universidad-politecnica-de-cataluna-dec56bcd",
+   "name": "Universidad Politécnica de Cataluna",
+   "country_code": "ES",
+   "tuition": {
+    "amount": null,
+    "currency": null,
+    "academic_year": null,
+    "usd": null,
+    "fx_rate_usd_per_unit": null,
+    "fx_date": null,
+    "mandatory_fees": null,
+    "living_cost": null,
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "note": "not verified"
+   },
+   "deadlines": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "platform": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "english": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "sat_act": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "acceptance_rate": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "documents": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "programmes": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "notes": [
+    "UPC 2026-27 non-EU undergraduate price not found; 2024-25 EUR 42.56 per credit is older data (only older data found 2024/25); master's rate not applicable."
+   ]
+  },
+  {
+   "id": "83031b3d-bda6-5b21-9cb2-7424d85cadee",
+   "slug": "university-of-pavia-83031b3d",
+   "name": "University of Pavia",
+   "country_code": "IT",
+   "tuition": {
+    "amount": null,
+    "currency": null,
+    "academic_year": null,
+    "usd": null,
+    "fx_rate_usd_per_unit": null,
+    "fx_date": null,
+    "mandatory_fees": null,
+    "living_cost": null,
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "note": "not verified"
+   },
+   "deadlines": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "platform": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "english": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "sat_act": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "acceptance_rate": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "documents": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "programmes": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "notes": [
+    "Official 2026/27 non-EU amount not found (comprehensive contribution tables by ISEE band not captured); installment dates for 2026/27 noted but not used as fee."
+   ]
+  },
+  {
+   "id": "0dbf168e-db31-5d11-8535-b9ab25438314",
+   "slug": "university-of-california-riverside-0dbf168e",
+   "name": "University of California-Riverside",
+   "country_code": "US",
+   "tuition": {
+    "amount": null,
+    "currency": null,
+    "academic_year": null,
+    "usd": null,
+    "fx_rate_usd_per_unit": null,
+    "fx_date": null,
+    "mandatory_fees": null,
+    "living_cost": null,
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "note": "not verified"
+   },
+   "deadlines": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "platform": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "english": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "sat_act": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "acceptance_rate": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "documents": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "programmes": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "notes": [
+    "2026/27 UCR campus figure not captured. Systemwide 2026/27 nonresident undergraduate total per LAO: USD 54,848 (includes NRST USD 39,270); UCOP campus table row not read."
+   ]
+  },
+  {
+   "id": "0967e522-0906-507c-92a8-0ee1820ecd37",
+   "slug": "university-of-florence-0967e522",
+   "name": "University of Florence",
+   "country_code": "IT",
+   "tuition": {
+    "amount": null,
+    "currency": null,
+    "academic_year": null,
+    "usd": null,
+    "fx_rate_usd_per_unit": null,
+    "fx_date": null,
+    "mandatory_fees": null,
+    "living_cost": null,
+    "source_url": null,
+    "retrieved_at": "2026-11-16",
+    "note": "not verified"
+   },
+   "deadlines": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "platform": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "english": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "sat_act": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "acceptance_rate": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "documents": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "programmes": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "notes": [
+    "2026/27 extra-EU bachelor fee not extracted; fees set by ISEE/residence bands in manifesto 26/27 annexes, not read."
+   ]
+  },
+  {
+   "id": "d569a38c-3ffc-590c-80ed-48b1621394e7",
+   "slug": "the-education-university-of-hong-kong-d569a38c",
+   "name": "The Education University of Hong Kong",
+   "country_code": "HK",
+   "tuition": {
+    "amount": 180000,
+    "currency": "HKD",
+    "academic_year": "2026/27",
+    "usd": null,
+    "fx_rate_usd_per_unit": null,
+    "fx_date": null,
+    "mandatory_fees": null,
+    "living_cost": null,
+    "source_url": "https://eduhk.hk/gao/articles/36",
+    "retrieved_at": "2026-11-16",
+    "method": "search snippet - verify",
+    "note": "Non-local undergraduate tuition HKD 180,000 per academic year, payable in two instalments; corroborated by a second EdUHK 2026/27 document for UGC-funded programmes. Subject to change."
+   },
+   "deadlines": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "platform": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "english": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "sat_act": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "acceptance_rate": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "documents": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "programmes": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "notes": [
+    "Official EdUHK non-local page; fetch not run."
+   ]
+  },
+  {
+   "id": "4b97e3f1-1c56-513b-ac25-8fcf0d01f383",
+   "slug": "auckland-university-of-technology-4b97e3f1",
+   "name": "Auckland University of Technology",
+   "country_code": "NZ",
+   "tuition": {
+    "amount": null,
+    "currency": "NZD",
+    "academic_year": "2027 (indicative)",
+    "usd": null,
+    "fx_rate_usd_per_unit": null,
+    "fx_date": null,
+    "mandatory_fees": {
+     "value": "Student services levy included in example figure (2027 indicative)",
+     "academic_year": "2027"
+    },
+    "living_cost": null,
+    "source_url": "https://www.aut.ac.nz/__data/assets/pdf_file/0004/708925/International-Student-Fees-2027-v1.pdf",
+    "retrieved_at": "2026-11-16",
+    "method": "search snippet - verify",
+    "note": "Official AUT 2027 indicative PDF: example 120-point BA (Culinary Arts, Event Management, Global Tourism) about NZD 38,359.67 per year. Programme-level only; third-party ranges not used."
+   },
+   "deadlines": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "platform": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "english": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "sat_act": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "acceptance_rate": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "documents": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "programmes": {
+    "value": null,
+    "note": "not verified",
+    "source_url": null,
+    "retrieved_at": "2026-11-16"
+   },
+   "notes": [
+    "Programme-level example from official 2027 indicative fee PDF."
+   ]
+  }
+ ]
+}

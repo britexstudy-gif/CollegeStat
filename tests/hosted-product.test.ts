@@ -14,7 +14,7 @@ test('authentication preserves a research query while refusing external redirect
   assert.equal(p.get('returnTo'),route);
   for(const bad of ['https://evil.test','//evil.test','/\\evil.test','/auth/sign-in']) {
     const q=new URL(signInHref(bad),'https://collegestat.test').searchParams;
-    assert.equal(q.get('next'),'/profile');
+    assert.equal(q.get('next'),'/dashboard');
   }
   assert.ok(isStaffPath(STAFF_PATH+'/requirements'));
   assert.ok(!isStaffPath(STAFF_PATH+'-public'));
