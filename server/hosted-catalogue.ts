@@ -15,6 +15,7 @@ import {
 } from "@/lib/supabase/catalogue";
 import { publicReadCache } from "./public-read-cache";
 import { sharedRead } from "./shared-read-cache";
+import { d1Explore, d1HomeSummary, d1Search, d1Universities } from "./d1-catalogue";
 import { cardPreview, discoveryPreview } from "./discovery-preview";
 import { withAutoLogo } from "./auto-logos";
 import { abortable } from "@/lib/abortable";
@@ -83,7 +84,10 @@ export async function hostedUniversities(ids: string[], preview = false) {
   return loadHostedUniversities(selected, false);
 }
 async function loadHostedUniversities(selected: string[], preview: boolean) {
-  const { data, error } = await publicDatabase()
+  const fromD1 = await d1Universities<University>(selected, preview ? "card" : "doc");
+  const { data, error } = fromD1
+    ? { data: fromD1, error: null }
+    : await publicDatabase()
     .from("universities")
     .select<string>(preview ? discoverySelect : universitySelect)
     .eq("published", true)
@@ -115,9 +119,12 @@ export async function hostedExplore(filters: Filters): Promise<ExplorerResult> {
   );
 }
 async function loadHostedExplore(filters: Filters): Promise<ExplorerResult> {
-  const { data, error } = await publicDatabase()
-    .rpc("explore_universities", { filters, page_number: filters.page })
-    .abortSignal(AbortSignal.timeout(15000));
+  const fromD1 = await d1Explore(filters);
+  const { data, error } = fromD1
+    ? { data: fromD1, error: null }
+    : await publicDatabase()
+        .rpc("explore_universities", { filters, page_number: filters.page })
+        .abortSignal(AbortSignal.timeout(15000));
   if (error) throw new Error("Search could not be loaded.");
   const page = Math.min(filters.page, Math.max(1, Math.ceil(data.total / 24)));
   if (page !== filters.page) return hostedExplore({ ...filters, page });
@@ -157,6 +164,8 @@ async function loadHostedSearch(query: string) {
       return hosted;
     }
   }
+  const fromD1 = await d1Search(query);
+  if (fromD1) return hostedUniversities(fromD1, true);
   const { data, error } = await publicDatabase()
     .rpc("search_universities", { search_term: query, result_limit: 8 })
     .abortSignal(AbortSignal.timeout(15000));
@@ -170,6 +179,15 @@ type PublicCatalogue = Catalogue & { total: number; countries: number };
 // One bounded public entry only. Never cache an authenticated user's data.
 const catalogueCache = publicReadCache<PublicCatalogue>(1, PUBLIC_READ_TTL_MS);
 async function loadHostedCatalogue(): Promise<PublicCatalogue> {
+  const fromD1 = await d1HomeSummary<Scholarship>();
+  if (fromD1)
+    return {
+      mode: "supabase",
+      universities: await hostedUniversities(fromD1.ids, true),
+      scholarships: fromD1.scholarships,
+      total: fromD1.total,
+      countries: fromD1.countries,
+    };
   const db = publicDatabase();
   const summary = async () => {
     const result = await db

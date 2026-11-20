@@ -1,4 +1,5 @@
 import redirects from "@/data/published/identity-redirects.json";
+import { d1UniversityBySlug, d1Universities } from "./d1-catalogue";
 import { cache } from "react";
 import { createClient } from "@supabase/supabase-js";
 import { publicConfig } from "./public-config";
@@ -40,12 +41,15 @@ export async function publicUniversities(ids: string[]) {
   const db = createClient(config.url, config.anon, {
     auth: { persistSession: false },
   });
-  const { data, error } = await db
-    .from("universities")
-    .select(universitySelect)
-    .eq("published", true)
-    .in("id", selected)
-    .abortSignal(AbortSignal.timeout(PROFILE_READ_TIMEOUT_MS));
+  const fromD1 = await d1Universities<University>(selected, "doc");
+  const { data, error } = fromD1
+    ? { data: fromD1, error: null }
+    : await db
+        .from("universities")
+        .select(universitySelect)
+        .eq("published", true)
+        .in("id", selected)
+        .abortSignal(AbortSignal.timeout(PROFILE_READ_TIMEOUT_MS));
   if (error) throw new Error("Public comparison unavailable");
   const rows = (data as unknown as University[]).map(normalizeUniversity);
   // Compare renders logos for these rows; resolve them so the icon map stays server-side.
@@ -117,6 +121,13 @@ async function loadPublicUniversity(slug: string, forPage = false) {
   if (!config.url || !config.anon)
     throw new Error("Public catalogue is not connected");
   const row = await (forPage ? pageProfileCache : profileCache)(config.url + ":" + slug, async () => {
+    const fromD1 = await d1UniversityBySlug<University>(slug);
+    if (fromD1 !== undefined) {
+      if (!fromD1) return null;
+      // pageSelect leaves the research metrics to the client (lib/profile-defer.ts).
+      const doc = forPage ? { ...fromD1, research_metrics: undefined } : fromD1;
+      return normalizeUniversity(doc as University);
+    }
     const db = createClient(config.url, config.anon, {
       auth: { persistSession: false },
     });

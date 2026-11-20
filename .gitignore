@@ -70,3 +70,7 @@ next-env.d.ts
 # Reproducible local database import bundles
 /data/exports/
 /data/generated/
+
+# D1 build inputs/outputs (scripts/d1)
+/data/d1-export/
+/data/d1-build/

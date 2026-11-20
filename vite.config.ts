@@ -13,6 +13,11 @@ const localBindingConfig = (mode: string) => ({
   compatibility_flags: ["nodejs_compat"],
   // The Worker reads large read-only datasets from its static assets (server/asset-data.ts).
   assets: { binding: "ASSETS", html_handling: "none" as const },
+  // The public university catalogue (server/d1-catalogue.ts, scripts/d1). Production
+  // only: the dev server keeps reading Supabase.
+  ...(mode === "production"
+    ? { d1_databases: [{ binding: "CATALOGUE", database_name: "collegestat", database_id: "493039e0-d3fc-45e3-9563-09031e04a1df" }] }
+    : {}),
   // No Smart Placement: most requests are edge-cache hits, which must stay
   // at the visitor's edge. Fix database latency by moving Supabase closer instead.
 });
