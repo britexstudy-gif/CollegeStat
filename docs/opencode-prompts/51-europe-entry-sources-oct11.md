@@ -1,7 +1,0 @@
-# CollegeStat bounded research task 51: europe-entry-sources
-
-Research exact current official applicant qualification and English-language guidance for UCAS, uni-assist and one German university. Distinguish country credential recognition from programme admission and required from recommended documents. Report URL, cycle, population, alternatives/waivers and unstated fields. Primary official sources only; no universal score guesses or DB publication.
-
-Use the requested Muse Spark 1.3 xhigh model. This is read-only research/presentation review. The existing repository and approved centred search hero/floating navbar remain in place. Owner asks for useful landing sections and folders, a compact student workspace, simpler staff navigation, accurate evidence and current data.
-
-You may write only your report at `outputs/muse-europe-entry-sources-oct11.md`. Read only the explicitly named public files (if none are named, use primary web sources only). Do not read or transmit .env, credentials, account files, account deletion/export, private APIs/services, Obsidian vault, browser sessions, customer/student data or hosted rows. Do not run git mutations, install packages, SQL, migrations, server changes, scripts that read environment secrets or other agents. Never automatically approve a tool request. If a tool is unavailable or denied, report the limit; do not bypass it. Clearly distinguish research/recommendation from shipped features or installed data. Cite direct primary URLs, not search snippets.

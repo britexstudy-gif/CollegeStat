@@ -1,7 +1,0 @@
-# CollegeStat bounded research task 52: global-entry-sources
-
-Research exact current official undergraduate international admission routes and qualification/language guidance for Waterloo, NUS and WIUT. Distinguish qualification, test policy, programme prerequisites, exemptions and reporting cycle. Report primary URLs and ambiguities. No scrape of protected question banks, automatic publication, invented reporting years or scores.
-
-Use the requested Muse Spark 1.3 xhigh model. This is read-only research/presentation review. The existing repository and approved centred search hero/floating navbar remain in place. Owner asks for useful landing sections and folders, a compact student workspace, simpler staff navigation, accurate evidence and current data.
-
-You may write only your report at `outputs/muse-global-entry-sources-oct11.md`. Read only the explicitly named public files (if none are named, use primary web sources only). Do not read or transmit .env, credentials, account files, account deletion/export, private APIs/services, Obsidian vault, browser sessions, customer/student data or hosted rows. Do not run git mutations, install packages, SQL, migrations, server changes, scripts that read environment secrets or other agents. Never automatically approve a tool request. If a tool is unavailable or denied, report the limit; do not bypass it. Clearly distinguish research/recommendation from shipped features or installed data. Cite direct primary URLs, not search snippets.

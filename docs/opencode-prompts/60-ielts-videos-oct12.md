@@ -1,8 +1,0 @@
-# Public-source research 60 — ielts-videos
-
-Research only public official sources for CollegeStat. Do not read repository source code, checkpoints, credentials, environment/account files or any private student data. No application edits, downloads, SQL, imports or changes to existing reports. Never expose secrets. Write only outputs/muse-ielts-videos-oct12.md.
-
-Task: IELTS, British Council, IDP official practice and video resources for listening, reading, writing, speaking. Only official owner/YouTube links, type/date/format and guidance distinctions. No copied tasks or official band promises.
-
-Use primary publishers only. For each candidate retain official URL, provider/owner, title, subject/category, scope/population, reporting/publication date if stated, retrieval date, reuse limits and confidence. A YouTube search result or third-party repost is not a verified official video. Report unavailable dates/permissions as unknown. Return a concise usable link inventory plus gaps, not generic prose or invented facts. User requests more useful certificates, application rehearsal and a separate Articles library; prep is optional. No paid purchases or messaging.
-

@@ -1,5 +1,0 @@
-# CollegeStat public research 58: application-design-patterns
-
-Research primary GOV.UK Design System, USWDS and W3C guidance for application forms, task lists, summary lists, tables, navigation and disclosure. Propose useful admissions dashboard components and accessible low-motion feedback. Use public web only; do not inspect staff/account source or private dashboards. Keep private preparation optional, distinguish personal target dates from official deadlines.
-
-Write your report only to outputs/muse-application-design-patterns-oct11.md. Use primary official URLs and exact retrieval/reporting dates. Do not read .env, credentials, private account/student records, auth/account/export files, private APIs, browser sessions, Obsidian files or hosted data. No app edits, SQL, imports, migrations, installs, server changes, Git mutations or automatic approvals. Owner uses Obsidian as memory; root will reconcile your public research into it. Clearly identify unavailable sources and research versus implementation.

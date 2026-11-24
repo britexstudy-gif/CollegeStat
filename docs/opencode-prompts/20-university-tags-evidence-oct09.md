@@ -1,9 +1,0 @@
-# Sourced university tags — Muse Spark 1.3 xhigh
-
-Owner explicitly requests Muse to tag universities with images, institution type and additional information. Work in the existing CollegeStat repository. FIRST inspect global-directory.json, lib/official-logos.ts, lib/scholarship-media.ts, current media audit, cached IPEDS HD dictionary and HD data and docs/current checkpoint. Do not read credentials, .env or account stores.
-
-Own ONLY a new scripts/ingestion/review-university-tags-oct09.py, tests/test_university_tags_oct09.py and outputs/university-tags-evening-oct09/ and outputs/muse-university-tags-evening-oct09-report.md. No other code changes, no hosted writes, no network crawling or new datasets. Others are redesigning landing, profiles and dashboard.
-
-Generate reproducible review candidates for exact unique US UNITID matches using official cached IPEDS HD CONTROL ownership fields validated against the cached official dictionary. Retain original source URL/retrieval date/archive checksum/dictionary evidence. Exclude ambiguous identities, unsupported missing values and no-evidence claims. Compare installed ownership types and output only truly new or correcting candidates with exact before/after values. Do not assume ROR implies public/private. For media, use only already attributed verified official/Wikimedia candidates and report exact UUID/licence evidence; no guessed logos or downloaded random photos. Never publish automatically. Include tests for ambiguous IDs, CONTROL code mapping and provenance. If cached release lacks dictionary, fail closed and report rather than guessing.
-
-Create compact outputs candidates, count report and command to reproduce; no candidate gets an invented verified date. Keep report clear about pending versus installed. Finish the narrow task.

@@ -1,7 +1,0 @@
-# CollegeStat bounded research task 54: comparison-clarity
-
-Inspect only components/college/ranking-context.tsx, lib/profile-navigation.ts and app/comparison-workspace.css. Review university comparison clarity: scopes, periods, populations, currency, partial data and pie/trend misuse. Propose useful compact components, without accessing any account/session/export/service/API files or changing app/data. No fabricated scores or admission probabilities.
-
-Use the requested Muse Spark 1.3 xhigh model. This is read-only research/presentation review. The existing repository and approved centred search hero/floating navbar remain in place. Owner asks for useful landing sections and folders, a compact student workspace, simpler staff navigation, accurate evidence and current data.
-
-You may write only your report at `outputs/muse-comparison-clarity-oct11.md`. Read only the explicitly named public files (if none are named, use primary web sources only). Do not read or transmit .env, credentials, account files, account deletion/export, private APIs/services, Obsidian vault, browser sessions, customer/student data or hosted rows. Do not run git mutations, install packages, SQL, migrations, server changes, scripts that read environment secrets or other agents. Never automatically approve a tool request. If a tool is unavailable or denied, report the limit; do not bypass it. Clearly distinguish research/recommendation from shipped features or installed data. Cite direct primary URLs, not search snippets.
